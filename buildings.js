@@ -28,30 +28,33 @@ const Buildings = (() => {
 
   // ---- two-storey pavilion (楼阁) with 平座, upper 歇山 ----
   function pavilion(o) {
-    const w = 800, h = 560, S = new Sheet(w, h), cx = w / 2;
+    const S = o.S || new Sheet(800, 560), cx = o.cx ?? S.w / 2, k = o.k || 1;
     const W = o.bays * o.bw, x0 = cx - W / 2, x1 = x0 + W;
-    const yG = h - 34, yP = yG - o.platH;
-    platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, true);
+    const yG = o.yG ?? S.h - 34, yP = yG - o.platH;
+    platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, true, !o.S);
     const { yL } = colonnade(S, x0, yP, o.bays, o.bw, o.colH, o.fills);
     const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, 2, 1);
-    const yE1 = top - 9, ov = o.overhang;
-    const bw2 = W + 30, bx0 = cx - bw2 / 2, bx1 = cx + bw2 / 2, yT = yE1 - o.skirtH;
-    skirtRoof(S, x0 - ov, x1 + ov, yE1, bx0, bx1, yT, { k: 46 });
+    const yE1 = top - 9 * k, ov = o.overhang;
+    const bw2 = W + 30 * k, bx0 = cx - bw2 / 2, bx1 = cx + bw2 / 2, yT = yE1 - o.skirtH;
+    skirtRoof(S, x0 - ov, x1 + ov, yE1, bx0, bx1, yT, { k: 46 * k, lift: 12 * k });
     // 平座
-    const pzTop = bracketBand(S, bx0 + 8, bx1 - 8, yT, 0.9, o.bays + 1, 1, 1);
-    S.stroke('frame', rect(bx0, pzTop - 5, bw2, 5));
-    railing(S, bx0 + 4, bx1 - 4, pzTop - 5, 15);
-    const yP2 = pzTop - 20;
+    const pzTop = bracketBand(S, bx0 + 8 * k, bx1 - 8 * k, yT, 0.9 * k, o.bays + 1, 1, 1);
+    S.stroke('frame', rect(bx0, pzTop - 5 * k, bw2, 5 * k));
+    railing(S, bx0 + 4 * k, bx1 - 4 * k, pzTop - 5 * k, 15 * k);
+    const yP2 = pzTop - 20 * k;
     const W2 = W - 2 * o.inset, x20 = cx - W2 / 2;
     const { yL: yL2 } = colonnade(S, x20, yP2, o.bays, W2 / o.bays, o.colH2, o.fills2);
     const top2 = bracketBand(S, x20, x20 + W2, yL2, o.bracketS, o.bays + 1, 2, 1);
-    const yE2 = top2 - 9;
-    const roof = gableHipRoof(S, cx, x20 - ov, x20 + W2 + ov, yE2, { ridgeW: W2 * 0.55, roofH: o.roofH, gableH: o.gableH, lift: 13, chiwen: 18, k: 50 });
-    S.note(roof.xr0 + 4, roof.yB, '歇山 · 山花', 'l');
-    S.note(bx1 - 2, pzTop - 12, '平座 · 勾阑', 'r');
-    S.note(x1 + ov - 6, yE1 - 6, '腰檐', 'r');
-    S.note(x0 - 4, yL - 18, '斗拱', 'l');
-    S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
+    const yE2 = top2 - 9 * k;
+    const roof = gableHipRoof(S, cx, x20 - ov, x20 + W2 + ov, yE2, { ridgeW: W2 * 0.55, roofH: o.roofH, gableH: o.gableH, lift: 13 * k, chiwen: o.chiwen || 18, k: 50 * k });
+    if (!o.quiet) {
+      S.note(roof.xr0 + 4, roof.yB, '歇山 · 山花', 'l');
+      S.note(bx1 - 2, pzTop - 12, '平座 · 勾阑', 'r');
+      S.note(x1 + ov - 6, yE1 - 6, '腰檐', 'r');
+      S.note(x0 - 4, yL - 18, '斗拱', 'l');
+      S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
+    }
+    S.top = roof.yR - (o.chiwen || 18);
     return S;
   }
 
@@ -286,6 +289,250 @@ const Buildings = (() => {
     return S;
   }
 
+  // ---- shared: corbelled brick eave (叠涩), stepping out `outL` courses then back in to `wIn` ----
+  function brickEave(S, cx, w, y, outStep, outL, inL, wIn, courseH = 6, cls = '') {
+    let ww = w;
+    for (let k = 0; k < outL; k++) { ww += outStep * 2; S.stroke('roof', rect(cx - ww / 2, y - courseH, ww, courseH), k === outL - 1 ? 'eave' : cls); y -= courseH; }
+    for (let k = 1; k <= inL; k++) { const lw = ww + (wIn - ww) * k / inL; S.stroke('roof', rect(cx - lw / 2, y - courseH, lw, courseH), cls); y -= courseH; }
+    return y;
+  }
+  // wall of one tower storey: 4 or 8 sides, with an opening on the front face and side-face windows
+  function towerWall(S, cx, w, y, hh, o = {}) {
+    const sides = o.sides || 8, f = sides === 8 ? 0.207 * w : w / 2;
+    let d = rect(cx - w / 2, y - hh, w, hh);
+    if (sides === 8) d += line(cx - f, y - hh, cx - f, y) + line(cx + f, y - hh, cx + f, y);
+    S.stroke('frame', d, o.cls || 'col');
+    let inf = '';
+    const arch = (x, yb, ww, ah) => `M${r(x - ww / 2)},${r(yb)}v${r(-(ah - ww / 2))}a${r(ww / 2)},${r(ww / 2)} 0 0 1 ${r(ww)},0v${r(ah - ww / 2)}z`;
+    const lattice = (x0, y0, ww, ah, s = 5) => { let q = rect(x0, y0, ww, ah); for (let x = x0 + s; x < x0 + ww - 1; x += s) q += line(x, y0, x, y0 + ah); for (let yy = y0 + s; yy < y0 + ah - 1; yy += s) q += line(x0, yy, x0 + ww, yy); return q; };
+    const dw = o.doorW || Math.min(f * 0.9, hh * 0.5), dh = o.doorH || hh * 0.72;
+    if (o.door === 'arch') inf += arch(cx, y - 3, dw, dh) + line(cx, y - 3, cx, y - 3 - dh + dw / 2);
+    else if (o.door === 'door') inf += rect(cx - dw / 2, y - 3 - dh, dw, dh) + line(cx, y - 3 - dh, cx, y - 3);
+    else if (o.door === 'lattice') inf += lattice(cx - dw / 2, y - 3 - dh, dw, dh, 5);
+    if (sides === 8 && o.win && o.win !== 'none') {
+      for (const sx of [-1, 1]) {
+        const a = cx + sx * (f + 6), b = cx + sx * (w / 2 - 6), x0 = Math.min(a, b), ww = Math.abs(b - a);
+        if (ww < 8) continue;
+        const wh = Math.min(hh * 0.5, ww * 0.9), y0 = y - 3 - dh * 0.55 - wh / 2;
+        if (o.win === 'blind') inf += rect(x0 + 1, y0, ww - 2, wh) + rect(x0 + 4, y0 + 3, ww - 8, wh - 6);
+        else if (o.win === 'lattice') inf += lattice(x0 + 1, y0, ww - 2, wh, 4);
+        else if (o.win === 'arch') inf += arch((x0 + x0 + ww) / 2, y0 + wh, Math.min(ww * 0.6, wh * 0.7), wh);
+      }
+    }
+    if (inf) S.stroke('frame', inf, 'thin');
+    return y - hh;
+  }
+  function stupaTop(S, cx, y, o = {}) { // 覆钵 + 相轮 + 宝珠, returns top y
+    const bw = o.bulbW || 40, bh = o.bulbH || bw * 0.8;
+    let d = `M${r(cx - bw * .32)},${r(y)}c${r(-bw * .3)},${r(-bh * .2)} ${r(-bw * .3)},${r(-bh * .8)} ${r(-bw * .05)},${r(-bh * .92)}q${r(bw * .37)},${r(-bh * .12)} ${r(bw * .74)},0c${r(bw * .25)},${r(bh * .12)} ${r(bw * .25)},${r(bh * .6)} ${r(-bw * .05)},${r(bh * .92)}z`;
+    y -= bh;
+    const rings = o.rings || 5, rh = o.ringH || 5;
+    for (let i = 0; i < rings; i++) { const rw = (o.ringW || 16) - i * 1.8; d += `M${r(cx - rw / 2)},${r(y)}a${r(rw / 2)},${r(rh / 2)} 0 1 0 ${r(rw)},0a${r(rw / 2)},${r(rh / 2)} 0 1 0 ${r(-rw)},0`; y -= rh; }
+    d += `M${r(cx - 4)},${r(y - 4)}a4,4 0 1 0 8,0a4,4 0 1 0 -8,0`; y -= 9;
+    S.stroke('ornament', d, 'orn');
+    return y;
+  }
+
+  // ---- generic multi-storey tower: 楼阁式 / 密檐式, brick or timber eaves ----
+  function tierTower(o) {
+    const S = o.S || new Sheet(o.w || 560, o.h || 800), cx = o.cx ?? S.w / 2, yG = o.yG ?? S.h - 30;
+    const sides = o.sides || 8;
+    let y = yG;
+    (o.base || []).forEach((b, i) => { platform(S, cx - b.w / 2, cx + b.w / 2, y - b.h, b.h, i === 0 && b.stairs !== false, i === 0 && !o.S); y -= b.h; });
+    const n = o.storeys.length;
+    o.storeys.forEach((st, i) => {
+      const next = o.storeys[i + 1];
+      if (st.balcony) {
+        const bw = st.w + st.balcony;
+        if (st.balconyStyle === 'brick') { y = brickEave(S, cx, st.w - 4, y, 4, 2, 0, 0, 4); S.stroke('frame', rect(cx - bw / 2, y - 4, bw, 4)); y -= 4; }
+        else { const top = octBrackets(S, cx, bw - 16, y, st.bsB || 0.6, 1); S.stroke('frame', rect(cx - bw / 2, top - 4, bw, 4)); y = top - 4; }
+        railing(S, cx - bw / 2 + 3, cx + bw / 2 - 3, y, st.railH || 10); y -= st.railH || 10;
+        if (st.noteBalcony) S.note(cx + bw / 2 + 4, y + 6, st.noteBalcony, 'r');
+      }
+      y = towerWall(S, cx, st.w, y, st.wallH, { sides, door: st.door, win: st.win, doorW: st.doorW, doorH: st.doorH, cls: st.wallCls });
+      if (st.noteWall) S.note(cx - st.w / 2 - 2, y + st.wallH * 0.5, st.noteWall, 'l');
+      if (st.bs) { y = octBrackets(S, cx, st.w, y, st.bs, st.tiers || 2, !!st.dense); if (st.noteBs) S.note(cx + st.w / 2 + 6, y + 8, st.noteBs, 'r'); }
+      const last = i === n - 1;
+      if (st.eave === 'tile') {
+        const yE = y - (st.rafter ?? 6);
+        const wTop = last ? (o.top && o.top.w) || st.w * 0.8 : (next.w + (next.balcony || 0));
+        y = octEave(S, cx, st.w, yE, st.over, wTop, st.band, st.lift ?? 10);
+        if (st.noteEave) S.note(cx + st.w / 2 + st.over - 4, yE - 5, st.noteEave, 'r');
+      } else if (st.eave === 'brick') {
+        const wIn = last ? (o.top && o.top.w) || st.w * 0.7 : next.w + (next.balcony ? next.balcony + 8 : 0);
+        const yBefore = y;
+        y = brickEave(S, cx, st.w, y, st.outStep || 5, st.outL || 3, st.inL ?? 2, wIn, st.courseH || 6);
+        if (st.noteEave) S.note(cx + st.w / 2 + (st.outStep || 5) * (st.outL || 3) - 2, yBefore - 6, st.noteEave, 'r');
+      }
+    });
+    // top
+    const T = o.top || {};
+    if (T.type === 'pyramid') {
+      const st = o.storeys[n - 1], xa = cx - st.w / 2 - st.over, xb = cx + st.w / 2 + st.over, lift = st.lift ?? 10, ew = xb - xa, fi = 0.207 * ew;
+      const yE = y + st.band, yA = yE - T.h;
+      S.fill('roof', `M${r(cx)},${r(yA)}${sag(cx, yA, xb, yE - lift, 0.3, 0.7)}${eaveRev(xa, xb, yE, lift, 30)}${sag(xa, yE - lift, cx, yA, 0.7, 0.3)}z`);
+      S.stroke('roof', `M${r(cx)},${r(yA)}${sag(cx, yA, xa, yE - lift, 0.3, 0.7)}M${r(cx)},${r(yA)}${sag(cx, yA, xb, yE - lift, 0.3, 0.7)}M${r(cx)},${r(yA)}${sag(cx, yA, cx - fi, yE - 2, 0.3, 0.7)}M${r(cx)},${r(yA)}${sag(cx, yA, cx + fi, yE - 2, 0.3, 0.7)}`, 'ridge');
+      y = yA;
+      if (T.sha) { const sh = sha(S, cx, y, T.sha); y = sh.top; }
+      else y = stupaTop(S, cx, y, T.stupa || { bulbW: 22, rings: 3, ringW: 12 });
+    } else if (T.type === 'cap') {
+      // brick stepped cap then a stupa-form finial
+      let ww = T.w || o.storeys[n - 1].w * 0.7;
+      for (let k = 0; k < (T.courses || 4); k++) { ww -= (T.step || 12); S.stroke('roof', rect(cx - ww / 2, y - 6, ww, 6)); y -= 6; }
+      y = stupaTop(S, cx, y, T.stupa || {});
+    }
+    if (T.note) S.note(cx + 10, y + 16, T.note, 'r');
+    S.top = y;
+    if (!o.S) S.dim = { x0: cx - (o.base ? o.base[0].w / 2 : o.storeys[0].w / 2), x1: cx + (o.base ? o.base[0].w / 2 : o.storeys[0].w / 2), y: yG + 16, label: o.dimLabel, v: o.vLabel ? { x: cx - (o.base ? o.base[0].w / 2 : o.storeys[0].w / 2) - 40, y0: yG, y1: y - 4, label: o.vLabel } : undefined };
+    return S;
+  }
+
+  // ---- 塔楼对峙 (正定开元寺): square 密檐 pagoda beside a two-storey bell tower ----
+  function kaiyuan(o) {
+    const S = new Sheet(800, 560), yG = 526;
+    S.stroke('base', line(40, yG, 760, yG), 'ground');
+    tierTower({ ...o.tower, S, cx: 250, yG });
+    S.note(250 + 6, S.top + 10, '塔刹', 'r');
+    pavilion({ ...o.tower2, S, cx: 590, yG, quiet: true });
+    S.note(590 - 60, yG - 28, '钟楼 · 唐', 'l');
+    S.note(250 + o.tower.storeys[0].w / 2 + 4, yG - o.tower.storeys[0].wallH * 0.55, '须弥塔 · 九级密檐', 'r');
+    S.dim = { x0: 250 - o.tower.base[0].w / 2, x1: 250 + o.tower.base[0].w / 2, y: yG + 16, label: o.dimLabel, v: { x: 250 - o.tower.base[0].w / 2 - 40, y0: yG, y1: S.top - 4, label: o.vLabel } };
+    S.dim2 = { x0: 590 - o.tower2.bays * o.tower2.bw / 2 - o.tower2.platPad, x1: 590 + o.tower2.bays * o.tower2.bw / 2 + o.tower2.platPad, y: yG + 16, label: o.dimLabel2 };
+    return S;
+  }
+
+  // ---- 华塔 (广惠寺): octagonal lower storeys, four hexagonal side chambers, flower-cluster top ----
+  function huaTa(o) {
+    const S = new Sheet(560, 800), cx = 280, yG = 770;
+    platform(S, cx - 250, cx + 250, yG - 14, 14, true);
+    let y = yG - 14;
+    const w1 = o.w1, wingW = o.wingW, wingH = o.wingH;
+    // wings (六角套室) first, then the main body over them
+    for (const sx of [-1, 1]) {
+      const wx = cx + sx * (w1 / 2 + wingW * 0.28);
+      towerWall(S, wx, wingW, y, wingH, { sides: 8, door: 'arch', doorW: 18, doorH: 40, win: 'none' });
+      const top = octBrackets(S, wx, wingW, y - wingH, 0.55, 2, true);
+      const yT = octEave(S, wx, wingW, top - 5, 18, wingW * 0.55, 22, 8);
+      S.stroke('frame', rect(wx - wingW * 0.3, yT - 6, wingW * 0.6, 6));
+      stupaTop(S, wx, yT - 6, { bulbW: 26, bulbH: 26, rings: 2, ringW: 10, ringH: 4 });
+      if (sx > 0) S.note(wx + wingW / 2 - 4, y - wingH * 0.5, '六角套室 · 四隅', 'r');
+    }
+    // main storey 1
+    S.fill('frame', rect(cx - w1 / 2, y - o.h1 - 40, w1, o.h1 + 40), 'occlude');
+    y = towerWall(S, cx, w1, y, o.h1, { sides: 8, door: 'arch', doorW: 36, doorH: 84, win: 'blind' });
+    S.note(cx - 18, yG - 14 - 50, '券门', 'l');
+    y = octBrackets(S, cx, w1, y, 0.7, 2, true);
+    S.note(cx + w1 / 2 + 4, y + 8, '仿木砖斗拱', 'r');
+    const w2 = o.w2;
+    y = octEave(S, cx, w1, y - 6, 34, w2 + 20, 30, 10);
+    // storey 2 with 平座
+    let top = octBrackets(S, cx, w2 + 4, y, 0.6, 1); S.stroke('frame', rect(cx - (w2 + 20) / 2, top - 4, w2 + 20, 4)); y = top - 4;
+    railing(S, cx - (w2 + 20) / 2 + 3, cx + (w2 + 20) / 2 - 3, y, 10); y -= 10;
+    S.note(cx + (w2 + 20) / 2 + 4, y + 6, '平座', 'r');
+    y = towerWall(S, cx, w2, y, o.h2, { sides: 8, door: 'door', doorW: 24, doorH: o.h2 - 8, win: 'lattice' });
+    y = octBrackets(S, cx, w2, y, 0.65, 2, true);
+    const w3 = o.w3;
+    y = octEave(S, cx, w2, y - 6, 26, w3 + 14, 24, 9);
+    // storey 3 (short) with brick balcony, then the flower body
+    top = octBrackets(S, cx, w3 + 2, y, 0.5, 1); S.stroke('frame', rect(cx - (w3 + 14) / 2, top - 4, w3 + 14, 4)); y = top - 4;
+    railing(S, cx - (w3 + 14) / 2 + 3, cx + (w3 + 14) / 2 - 3, y, 8); y -= 8;
+    y = towerWall(S, cx, w3, y, o.h3, { sides: 8, door: 'arch', doorW: 14, doorH: o.h3 - 6, win: 'none' });
+    y = brickEave(S, cx, w3, y, 4, 2, 1, w3 + 6, 5);
+    // flower body: bulging cone with tiers of niches and figures
+    const fh = o.flowerH, fw = o.flowerW, yb = y, yt = y - fh;
+    const outline = `M${r(cx - fw * .42)},${r(yb)}q${r(-fw * .12)},${r(-fh * .12)} ${r(-fw * .06)},${r(-fh * .3)}c${r(fw * .08)},${r(-fh * .35)} ${r(fw * .2)},${r(-fh * .6)} ${r(fw * .36)},${r(-fh * .7)}` +
+      `h${r(fw * .24)}c${r(fw * .16)},${r(fh * .1)} ${r(fw * .28)},${r(fh * .35)} ${r(fw * .36)},${r(fh * .7)}q${r(fw * .06)},${r(fh * .18)} ${r(-fw * .06)},${r(fh * .3)}z`;
+    S.fill('frame', outline, 'occlude');
+    S.stroke('frame', outline, 'col');
+    // width of the body at height t (0 bottom → 1 top), approximating the outline
+    const wAt = t => fw * (0.84 - 0.36 * Math.pow(t, 1.4)) * (t < 0.3 ? 1 + 0.12 * (t / 0.3) : 1.12 - 0.12 * ((t - 0.3) / 0.7) * 0.4);
+    let dec = '';
+    const tiers = o.tiers || 8;
+    for (let k = 0; k < tiers; k++) {
+      const t0 = k / tiers, t1 = (k + 1) / tiers, yy = yb - fh * t0, yy1 = yb - fh * t1, ww = wAt((t0 + t1) / 2) * 0.92;
+      const cells = Math.max(3, Math.round(ww / 16)), cw = ww / cells;
+      for (let c = 0; c < cells; c++) {
+        const x = cx - ww / 2 + cw * (c + 0.5), hh = (yy - yy1) * 0.7;
+        if ((c + k) % 2 === 0) dec += `M${r(x - cw * .32)},${r(yy - 3)}v${r(-hh * .6)}a${r(cw * .32)},${r(cw * .32)} 0 0 1 ${r(cw * .64)},0v${r(hh * .6)}`; // 佛龛
+        else dec += `M${r(x - cw * .3)},${r(yy - 4)}q${r(cw * .1)},${r(-hh * .5)} ${r(cw * .3)},${r(-hh * .5)}q${r(cw * .2)},0 ${r(cw * .3)},${r(hh * .5)}M${r(x - cw * .12)},${r(yy - 4 - hh * .5)}q${r(cw * .12)},${r(-hh * .25)} ${r(cw * .24)},0`; // 狮象/力士 blob
+      }
+      dec += line(cx - ww / 2, yy1 + 2, cx + ww / 2, yy1 + 2);
+    }
+    S.stroke('frame', dec, 'thin');
+    S.note(cx + fw * 0.4, yb - fh * 0.45, '花束形塔身 · 狮象佛龛', 'r');
+    y = yt;
+    // 刹座: small octagonal pavilion with a tile eave, then a conical 刹
+    const w4 = o.w4;
+    y = towerWall(S, cx, w4, y, o.h4, { sides: 8, door: 'arch', doorW: 10, doorH: o.h4 - 6, win: 'none' });
+    y = octBrackets(S, cx, w4, y, 0.5, 2, true);
+    y = octEave(S, cx, w4, y - 4, 16, w4 * 0.5, 18, 8);
+    const ch = o.coneH;
+    let sd = `M${r(cx - w4 * .25)},${r(y)}L${r(cx - 3)},${r(y - ch)}h6L${r(cx + w4 * .25)},${r(y)}z`;
+    for (let k = 1; k <= 4; k++) { const tt = k / 5, lw = w4 * .5 * (1 - tt); sd += `M${r(cx - lw / 2)},${r(y - ch * tt)}h${r(lw)}`; }
+    sd += `M${r(cx - 4)},${r(y - ch - 4)}a4,4 0 1 0 8,0a4,4 0 1 0 -8,0`;
+    S.stroke('ornament', sd, 'orn');
+    y -= ch + 8;
+    S.note(cx + 8, y + 10, '刹座 · 塔刹', 'r');
+    S.dim = { x0: cx - 250, x1: cx + 250, y: yG + 16, label: o.dimLabel, v: { x: cx - 270, y0: yG, y1: y - 4, label: o.vLabel } };
+    return S;
+  }
+
+  // ---- 单层方塔 (修定寺塔): a cube faced with patterned bricks, corbelled eave, stepped roof, stupa finial ----
+  function cubeStupa(o) {
+    const S = new Sheet(640, 800), cx = 320, yG = 770;
+    platform(S, cx - 210, cx + 210, yG - 16, 16, true);
+    let y = yG - 16;
+    // 须弥座 with sculpted panels
+    const bw = o.baseW;
+    S.stroke('base', rect(cx - bw / 2, y - 12, bw, 12)); y -= 12;
+    let pd = rect(cx - bw / 2 + 10, y - 40, bw - 20, 40);
+    for (let k = 1; k < 6; k++) pd += line(cx - bw / 2 + 10 + (bw - 20) * k / 6, y - 40, cx - bw / 2 + 10 + (bw - 20) * k / 6, y);
+    for (let k = 0; k < 6; k++) { const px = cx - bw / 2 + 10 + (bw - 20) * (k + .5) / 6; pd += `M${r(px - 6)},${r(y - 8)}q6,-26 12,0`; }
+    S.stroke('base', pd, 'thin'); y -= 40;
+    S.stroke('base', rect(cx - bw / 2, y - 12, bw, 12)); y -= 12;
+    S.note(cx + bw / 2 - 2, y + 30, '须弥座 · 砖雕', 'r');
+    // body with slight batter
+    const w0 = o.bodyW, w1 = o.bodyW - 10, H = o.bodyH, yT = y - H;
+    S.stroke('frame', `M${r(cx - w0 / 2)},${r(y)}L${r(cx - w1 / 2)},${r(yT)}L${r(cx + w1 / 2)},${r(yT)}L${r(cx + w0 / 2)},${r(y)}z`, 'col');
+    // corner strips (力士 / 青龙白虎) and frieze band
+    const cs = 16, fz = 30;
+    let fr = line(cx - w0 / 2 + cs, y, cx - w1 / 2 + cs, yT) + line(cx + w0 / 2 - cs, y, cx + w1 / 2 - cs, yT) + line(cx - w1 / 2, yT + fz, cx + w1 / 2, yT + fz) + line(cx - w1 / 2, yT + fz + 6, cx + w1 / 2, yT + fz + 6);
+    for (let k = 0; k < 4; k++) { const yy = y - 20 - k * 60; for (const sx of [-1, 1]) { const px = cx + sx * (w0 / 2 - cs / 2 - 1); fr += `M${r(px - 4)},${r(yy)}q4,-14 8,0q-4,6 -8,0`; } }
+    for (let x = cx - w1 / 2 + cs + 10; x < cx + w1 / 2 - cs - 4; x += 18) fr += `M${r(x - 5)},${r(yT + fz - 4)}q5,-18 10,0`;
+    S.stroke('frame', fr, 'thin');
+    // diamond lattice of patterned bricks
+    const dx = o.cellW, dy = o.cellH, x0 = cx - w1 / 2 + cs, x1 = cx + w1 / 2 - cs, yb = y - 4, yt = yT + fz + 10;
+    let lat = '';
+    for (let yy = yb; yy > yt + dy / 2; yy -= dy) {
+      for (let x = x0 + dx / 2; x < x1; x += dx) { if (yy - dy < yt) continue; lat += `M${r(x)},${r(yy)}l${r(dx / 2)},${r(-dy / 2)}l${r(-dx / 2)},${r(-dy / 2)}l${r(-dx / 2)},${r(dy / 2)}z`; }
+      const off = ((yb - yy) / dy) % 2 === 1;
+      if (off) { /* second lattice offset for the 菱形 mesh */ }
+    }
+    for (let yy = yb - dy / 2; yy > yt + dy; yy -= dy) for (let x = x0 + dx; x < x1 - dx / 2 + 1; x += dx) lat += `M${r(x)},${r(yy)}m0,-3a3,3 0 1 0 0.1,0`;
+    S.stroke('frame', lat, 'tile');
+    S.note(cx + w1 / 2 - cs - 6, y - H * 0.55, '模制花砖 · 菱形网格', 'r');
+    // 券门 on the south face
+    const dw = o.doorW, dh = o.doorH;
+    S.fill('frame', rect(cx - dw / 2 - 4, y - dh - 8, dw + 8, dh + 8), 'occlude');
+    S.stroke('frame', `M${r(cx - dw / 2)},${r(y)}v${r(-(dh - dw / 2))}a${r(dw / 2)},${r(dw / 2)} 0 0 1 ${r(dw)},0v${r(dh - dw / 2)}z` + `M${r(cx - dw / 2 - 4)},${r(y)}v${r(-(dh - dw / 2))}a${r(dw / 2 + 4)},${r(dw / 2 + 4)} 0 0 1 ${r(dw + 8)},0v${r(dh - dw / 2)}` + line(cx, y, cx, y - dh + dw / 2));
+    S.note(cx + dw / 2 + 4, y - dh * 0.3, '券门', 'r');
+    y = yT;
+    // corbelled eave stepping out, then the stepped 四注 roof
+    const yEave = y;
+    y = brickEave(S, cx, w1, y, o.eaveStep, o.eaveL, 0, 0, 8);
+    S.note(cx - w1 / 2 - o.eaveStep * o.eaveL + 2, yEave - 10, '叠涩出檐', 'l', 24);
+    let ww = w1 + o.eaveStep * o.eaveL * 2;
+    for (let k = 0; k < o.roofL; k++) { ww -= o.roofStep * 2; S.stroke('roof', rect(cx - ww / 2, y - 7, ww, 7), k === o.roofL - 1 ? '' : 'thin'); y -= 7; }
+    S.note(cx - ww / 2 - 30, y + 20, '四注顶 · 叠涩收分', 'l');
+    // 刹座 with 山花蕉叶, then the 覆钵
+    S.stroke('ornament', rect(cx - 26, y - 14, 52, 14) + `M${r(cx - 26)},${r(y - 14)}q-6,-10 -2,-22q8,10 12,22M${r(cx + 26)},${r(y - 14)}q6,-10 2,-22q-8,10 -12,22M${r(cx - 8)},${r(y - 14)}q4,-14 8,-22q4,8 8,22`, 'orn');
+    y -= 14;
+    y = stupaTop(S, cx, y, { bulbW: 56, bulbH: 66, rings: 4, ringW: 22, ringH: 6 });
+    S.note(cx + 30, y + 40, '覆钵式塔刹', 'r');
+    S.dim = { x0: cx - w0 / 2, x1: cx + w0 / 2, y: yG + 16, label: o.dimLabel, v: { x: cx - w0 / 2 - 90, y0: yG, y1: y - 4, label: o.vLabel } };
+    return S;
+  }
+
   // ---- hero: section through a bracket set with 昂, eave and rafters ----
   function bracketSection() {
     const w = 760, h = 400, S = new Sheet(w, h), cx = 430, yB = 352;
@@ -374,6 +621,11 @@ const Buildings = (() => {
       const v = el('text', { x: d.v.x - 10, y: (d.v.y0 + d.v.y1) / 2, 'text-anchor': 'middle', transform: `rotate(-90 ${d.v.x - 10} ${(d.v.y0 + d.v.y1) / 2})` });
       v.textContent = d.v.label; g.appendChild(v);
     }
+    if (S.dim2) {
+      const e = S.dim2;
+      g.appendChild(el('path', { d: `M${e.x0},${e.y - 6}v12M${e.x1},${e.y - 6}v12M${e.x0},${e.y}H${e.x1}` }));
+      const t2 = el('text', { x: (e.x0 + e.x1) / 2, y: e.y + 18, 'text-anchor': 'middle' }); t2.textContent = e.label; g.appendChild(t2);
+    }
     return g;
   }
   function render(S, opts = {}) {
@@ -400,5 +652,5 @@ const Buildings = (() => {
     svg.classList.add('primed');
   }
 
-  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, bracketSection, render, prime };
+  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, tierTower, kaiyuan, huaTa, cubeStupa, bracketSection, render, prime };
 })();
