@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>proof</title>
+<link rel="stylesheet" href="style.css">
+<style>body{padding:16px}.p{display:grid;grid-template-columns:1fr;gap:24px}.p figure{margin:0;max-width:1100px}.p .draft{filter:none}.p h4{margin:0 0 6px;font-weight:400}</style>
+</head><body><div class="p" id="p"></div>
+<script src="draft.js"></script><script src="buildings.js"></script><script src="sites.js"></script>
+<script>
+const want = new URLSearchParams(location.search).get('fig');
+const list = [{ id: 'hero', name: '斗拱剖面', draw: () => Buildings.bracketSection() }, ...SITES];
+for (const s of list) {
+  if (want && s.id !== want) continue;
+  const f = document.createElement('figure'); f.innerHTML = `<h4 class="mono">${s.id} · ${s.name}</h4>`;
+  const svg = Buildings.render(s.draw(), { ghost: false }); f.appendChild(svg); document.getElementById('p').appendChild(f);
+  svg.style.setProperty('--acc', 'var(--gold)'); svg.classList.add('drawn');
+  svg.querySelectorAll('.notes .note').forEach(n => n.style.opacity = 1); svg.querySelector('.dims').style.opacity = 1;
+}
+</script></body></html>
