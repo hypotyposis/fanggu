@@ -131,7 +131,7 @@
       });
     });
     const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'huata']), unified = new Set(['shuanglin', 'tiantan', 'feihong']);
-    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], wenfeng: [0], longxing: [1], lingxiao: [0, -30], liaodi: [0, 40], liuhe: [1], kaishan: [1, -34], huayan: [0], yingxian: [1, 34], shanhua: [1, -16], huata: [1, 26], shuanglin: [1, -30], tiantan: [0], feihong: [1, 40] };
+    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], wenfeng: [0, -8], longxing: [1], lingxiao: [0, -36], liaodi: [0, 50], liuhe: [1], kaishan: [1, -34], huayan: [0], yingxian: [1, 34], shanhua: [1, 10], huata: [1, 40], shuanglin: [1, -30], tiantan: [0], feihong: [1, 40] };
     const mid = { name: '', y: 130 };
     SITES.forEach(s => {
       const ln = unified.has(s.id) ? mid : north.has(s.id) ? lanes[0] : lanes[1];
