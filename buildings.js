@@ -12,9 +12,9 @@ const Buildings = (() => {
     platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, true);
     if (o.platH > 30) S.stroke('base', line(x0 - o.platPad + 10, yP + o.platH * 0.5, x1 + o.platPad - 10, yP + o.platH * 0.5), 'thin');
     const { yL } = colonnade(S, x0, yP, o.bays, o.bw, o.colH, o.fills, { lower: o.lower });
-    const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, o.tiers || 2, o.interm ?? 1);
+    const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, o.tiers || 2, o.interm ?? 1, { intermS: o.intermS, intermTiers: o.intermTiers, intermLudou: o.intermLudou, ang: o.ang, intermAng: o.intermAng });
     const yE = top - 9, xa = x0 - o.overhang, xb = x1 + o.overhang;
-    const ro = { ridgeW: W * o.ridgeRatio, roofH: o.roofH, lift: o.lift || 14, chiwen: o.chiwen, chiStyle: o.chiStyle, gableH: o.gableH, k: o.k || 60 };
+    const ro = { ridgeW: W * o.ridgeRatio, roofH: o.roofH, lift: o.lift || 14, chiwen: o.chiwen, chiStyle: o.chiStyle, gableH: o.gableH, k: o.k || 60, ridgeOrn: o.ridgeOrn };
     const roof = o.roof === 'hip' ? hipRoof(S, cx, xa, xb, yE, ro) : o.roof === 'gable' ? gableRoof(S, cx, xa, xb, yE, ro) : gableHipRoof(S, cx, xa, xb, yE, ro);
     // notes
     S.note(roof.xr1, roof.yR - (o.chiwen || 20) * 0.6, o.chiStyle === 'tang' ? '鸱尾' : '鸱吻', 'r');
@@ -59,7 +59,7 @@ const Buildings = (() => {
   }
 
   // ---- octagonal storey helpers ----
-  function octColonnade(S, cx, w, yP, colH, kind = 'door') {
+  function octColonnade(S, cx, w, yP, colH, kind = 'door', plain = false) {
     const f = 0.207 * w, yL = yP - colH;
     let d = '';
     for (const x of [cx - w / 2, cx - f, cx + f, cx + w / 2]) d += line(x, yP, x, yL);
@@ -71,7 +71,7 @@ const Buildings = (() => {
       inf += rect(cx - dw / 2, yL + 6, dw, dh) + line(cx, yL + 6, cx, yP);
     }
     // side-face windows (直棂窗)
-    for (const sx of [-1, 1]) {
+    if (!plain) for (const sx of [-1, 1]) {
       const wx0 = cx + sx * (f + 8), wx1 = cx + sx * (w / 2 - 8);
       const a = Math.min(wx0, wx1), b = Math.max(wx0, wx1), wh = Math.min(colH * 0.55, 26);
       if (b - a > 10) { inf += rect(a, yL + 7, b - a, wh); for (let x = a + 5; x < b - 3; x += 5) inf += line(x, yL + 7, x, yL + 7 + wh); }
@@ -128,7 +128,7 @@ const Buildings = (() => {
     let y = yG - 30;
     // storey 1 with 副阶周匝
     const s1 = o.storeys[0];
-    let yL = octColonnade(S, cx, s1.porch, y, s1.colH, 'door');
+    let yL = octColonnade(S, cx, s1.porch, y, s1.colH, 'door', true);
     let top = octBrackets(S, cx, s1.porch, yL, s1.bs, 2);
     let yE = top - 7;
     let yT = octEave(S, cx, s1.porch, yE, s1.over, s1.w, s1.band);
@@ -252,13 +252,13 @@ const Buildings = (() => {
     const yG = h - 34, yP = yG - o.platH;
     platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, false);
     const { yL } = colonnade(S, x0, yP, o.bays, o.bw, o.colH, o.fills);
-    const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, 2, 1);
+    const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, 2, 1, { ang: o.ang || 0, intermAng: o.ang || 0 });
     const yE1 = top - 9, ov = o.overhang;
     const W2 = W - 2 * o.bw, x20 = cx - W2 / 2, yT = yE1 - o.skirtH;
     skirtRoof(S, x0 - ov, x1 + ov, yE1, x20 - 10, x20 + W2 + 10, yT, { k: 56 });
     // upper storey
     const { yL: yL2 } = colonnade(S, x20, yT, o.bays - 2, o.bw, o.colH2, o.fills2);
-    const top2 = bracketBand(S, x20, x20 + W2, yL2, o.bracketS, o.bays - 1, 2, 1);
+    const top2 = bracketBand(S, x20, x20 + W2, yL2, o.bracketS, o.bays - 1, 2, 1, { ang: o.ang || 0, intermAng: o.ang || 0 });
     const yE2 = top2 - 9;
     const roof = gableHipRoof(S, cx, x20 - ov, x20 + W2 + ov, yE2, { ridgeW: W2 * 0.55, roofH: o.roofH, gableH: o.gableH, lift: 14, chiwen: o.chiwen || 22, k: 60 });
     // 抱厦 in front, gable facing the viewer
@@ -270,7 +270,7 @@ const Buildings = (() => {
     S.fill('frame', `M${r(cx)},${r(yA - 2)}L${r(cx + gw / 2 + 3)},${r(yB)}${sag(cx + gw / 2 + 3, yB, pxb, pyE - plift, 0.3, 0.7)}${eaveRev(pxa, pxb, pyE, plift, 40)}${sag(pxa, pyE - plift, cx - gw / 2 - 3, yB, 0.7, 0.3)}z` +
       rect(px0 - 6, pyE, pW + 12, yP - pyE), 'occlude');
     colonnade(S, px0, yP, pb, o.bw, o.porchColH, ['win', 'door', 'win']);
-    bracketBand(S, px0, px1, pyL, o.bracketS * 0.9, pb + 1, 2, 1);
+    bracketBand(S, px0, px1, pyL, o.bracketS * 0.9, pb + 1, 2, 1, { ang: o.ang || 0, intermAng: o.ang || 0 });
     // porch roof fill + lines
     S.fill('roof', `M${r(cx)},${r(yA)}L${r(cx + gw / 2)},${r(yB)}${sag(cx + gw / 2, yB, pxb, pyE - plift, 0.3, 0.7)}${eaveRev(pxa, pxb, pyE, plift, 40)}${sag(pxa, pyE - plift, cx - gw / 2, yB, 0.7, 0.3)}z`);
     S.stroke('roof', eave(pxa, pxb, pyE, plift, 40), 'eave');

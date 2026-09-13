@@ -42,7 +42,7 @@ const SITES = [
     facts: ['<b>面阔七间</b>，单檐庑殿。斗拱高度近柱高之半，出檐近四米——后世再没有这样的比例。', '唐代<b>建筑、塑像、壁画、题记</b>同存一殿，梁思成称之为"四绝"。', '殿前的经幢刻有"大中十一年"，是断代的另一件铁证。'],
     quote: '"这是我们这些年的搜寻中所遇到的唯一唐代木建筑……国内古建筑之第一瑰宝。" <b>——梁思成《记五台山佛光寺的建筑》</b>',
     caption: ['立面示意 · 面阔七间', '单檐庑殿'],
-    draw: () => Buildings.hall({ bays: 7, bw: 80, colH: 96, fills: ['win', 'door', 'door', 'door', 'door', 'door', 'win'], roof: 'hip', bracketS: 2.3, tiers: 2, interm: 1, overhang: 96, roofH: 150, ridgeRatio: .62, platH: 20, platPad: 48, lift: 12, chiwen: 36, chiStyle: 'tang', puzuo: '七铺作 · 双杪双下昂', dimLabel: '面阔 34.0 m' }),
+    draw: () => Buildings.hall({ bays: 7, bw: 80, colH: 96, fills: ['win', 'door', 'door', 'door', 'door', 'door', 'win'], roof: 'hip', bracketS: 2.2, tiers: 3, interm: 1, intermS: .5, intermTiers: 2, intermLudou: false, ang: 2, overhang: 96, roofH: 150, ridgeRatio: .62, ridgeOrn: true, platH: 20, platPad: 48, lift: 12, chiwen: 36, chiStyle: 'tang', puzuo: '七铺作 · 双杪双下昂 · 补间出双杪', dimLabel: '面阔 34.0 m' }),
   },
   {
     id: 'wenfeng', name: '文峰塔', sub: '原名天宁寺塔', dyn: 'zhou', tag: '周', era: '广顺二年', year: 952, place: '河南安阳 · 老城', placeKey: 'anyang',
@@ -57,7 +57,7 @@ const SITES = [
     lede: '隋开皇六年始建的龙藏寺，到宋太祖手里被敕令扩建，铸起二十一米的铜观音。它是北宋官式建筑保存最完整的一处。',
     facts: ['<b>摩尼殿</b>（皇祐四年，1052）平面十字形，四面出抱厦，山面朝前，重檐歇山——梁思成称"海内孤例"。', '<b>大悲阁</b>内千手千眼观音铜像高 21.3 米，四十二臂，宋开宝四年铸，宋代铜铸之最。', '<b>转轮藏</b>是现存最早的可转动藏经架，本身就是一座宋代小木作的楼阁。', '摩尼殿内明代悬塑<b>倒坐观音</b>，鲁迅曾把它的照片摆在案头，称为"东方美神"。'],
     caption: ['摩尼殿立面示意 · 面阔七间', '重檐歇山 · 抱厦四出'],
-    draw: () => Buildings.crossHall({ bays: 7, bw: 74, colH: 84, fills: ['wall', 'win', 'door', 'door', 'door', 'win', 'wall'], fills2: ['wall', 'win', 'win', 'win', 'wall'], bracketS: 1.5, overhang: 62, skirtH: 56, colH2: 36, roofH: 142, gableH: 56, porchColH: 72, porchOver: 30, gableW: 132, porchRise: 44, gableRise: 56, chiwen: 30, platH: 22, platPad: 40, dimLabel: '面阔 35.0 m' }),
+    draw: () => Buildings.crossHall({ bays: 7, bw: 74, colH: 84, fills: ['wall', 'win', 'door', 'door', 'door', 'win', 'wall'], fills2: ['wall', 'win', 'win', 'win', 'wall'], bracketS: 1.5, ang: 1, overhang: 62, skirtH: 56, colH2: 36, roofH: 142, gableH: 56, porchColH: 72, porchOver: 30, gableW: 132, porchRise: 44, gableRise: 56, chiwen: 30, platH: 22, platPad: 40, dimLabel: '面阔 35.0 m' }),
   },
   {
     id: 'lingxiao', name: '天宁寺凌霄塔', sub: '正定 · 塔心柱', dyn: 'song', tag: '宋', era: '唐始建 · 宋庆历五年重修', year: 1045, place: '河北正定 · 古城', placeKey: 'zhengding',
@@ -67,9 +67,9 @@ const SITES = [
     tall: true,
     draw: () => Buildings.tierTower({ w: 560, h: 860, base: [{ w: 300, h: 16 }],
       storeys: [
-        { w: 236, wallH: 96, door: 'arch', doorW: 26, doorH: 52, win: 'none', bs: .6, dense: true, eave: 'tile', over: 30, band: 22, lift: 9, rafter: 5, noteWall: '砖砌 · 宋' },
-        ...[224, 212, 200].map((w, i) => ({ w, wallH: 30, door: 'win', doorW: 12, doorH: 16, win: 'none', bs: .6, dense: true, eave: 'tile', over: 30 - i * 2, band: 21, lift: 9, rafter: 5, noteBs: i === 1 ? '仿木砖斗拱' : undefined })),
-        ...[186, 170, 154, 138, 122].map((w, i) => ({ w, wallH: 22, door: 'win', doorW: 12, doorH: 13, win: 'none', bs: .7, tiers: 2, eave: 'tile', over: 34 - i * 2, band: 19, lift: 11, rafter: 5, noteWallR: i === 1 ? '金 · 塔心柱自此而上' : undefined, noteEave: i === 3 ? '木檐 · 斗拱' : undefined }))],
+        { w: 236, wallH: 136, door: 'arch', doorW: 26, doorH: 56, win: 'none', bs: .6, dense: true, eave: 'tile', over: 30, band: 22, lift: 9, rafter: 5, noteWall: '砖砌 · 宋' },
+        ...[224, 212, 200].map((w, i) => ({ w, wallH: 26, door: 'win', doorW: 12, doorH: 16, win: 'none', bs: .6, dense: true, eave: 'tile', over: 30 - i * 2, band: 21, lift: 9, rafter: 5, noteBs: i === 1 ? '仿木砖斗拱' : undefined })),
+        ...[186, 170, 154, 138, 122].map((w, i) => ({ w, wallH: 19, door: 'win', doorW: 12, doorH: 13, win: 'none', bs: .7, tiers: 2, eave: 'tile', over: 34 - i * 2, band: 19, lift: 11, rafter: 5, noteWallR: i === 1 ? '金 · 塔心柱自此而上' : undefined, noteEave: i === 3 ? '木檐 · 斗拱' : undefined }))],
       top: { type: 'pyramid', h: 46, w: 50, stupa: { bulbW: 22, bulbH: 20, rings: 3, ringW: 12 }, note: '塔刹' }, dimLabel: '八角 · 九层', vLabel: '通高 41 m' }),
   },
   {
@@ -119,7 +119,7 @@ const SITES = [
     lede: '辽代的大雄宝殿，金代的三圣殿、山门和普贤阁，沿一条中轴线完整排开——这是现存规模最大、布局最完整的辽金寺院。',
     facts: ['<b>大雄宝殿</b>为辽构，面阔七间，殿内辽金彩塑三十三尊：五方佛端坐，二十四诸天分列两侧。', '<b>三圣殿</b>（金天会六年至皇统三年，1128–1143）减柱造，硕大的斜拱层层张开，如花绽放。', '<b>普贤阁</b>是金代的两层楼阁，平座勾阑，歇山顶，是研究辽金楼阁的少数实例。'],
     caption: ['普贤阁立面示意 · 面阔三间', '两层楼阁 · 平座 · 歇山'],
-    draw: () => Buildings.pavilion({ bays: 3, bw: 80, colH: 84, fills: ['wall', 'door', 'wall'], fills2: ['win', 'win', 'win'], bracketS: 1.5, overhang: 54, skirtH: 44, inset: 14, colH2: 58, roofH: 126, gableH: 44, platH: 20, platPad: 36, dimLabel: '面阔 10.6 m' }),
+    draw: () => Buildings.pavilion({ bays: 3, bw: 80, colH: 84, fills: ['wall', 'door', 'wall'], fills2: ['wall', 'door', 'wall'], bracketS: 1.5, overhang: 54, skirtH: 44, inset: 14, colH2: 58, roofH: 126, gableH: 44, platH: 20, platPad: 36, dimLabel: '面阔 10.6 m' }),
   },
   {
     id: 'huata', name: '广惠寺华塔', sub: '花塔', dyn: 'liao', tag: '金', era: '唐始建 · 金大定年间重修', year: 1161, yearLabel: '金大定', place: '河北正定 · 古城', placeKey: 'zhengding',
@@ -134,7 +134,7 @@ const SITES = [
     lede: '北魏始建的中都寺，北齐武平二年（571）重修，现存殿宇多为明初重建。它以彩塑闻名：十座殿堂里两千余尊明代彩塑，被称为"东方彩塑艺术长廊"。',
     facts: ['寺外围墙为明代所筑，形如堡垒；内分三进院落、十座殿堂。', '<b>天王殿</b>前廊立四大金刚，各高三米余；<b>千佛殿</b>内的<b>韦驮</b>像扭身按剑，是明代彩塑的名作。', '全寺彩塑二千零五十二尊，完好者一千五百六十六尊，大者丈余、小者尺许。'],
     caption: ['天王殿立面示意 · 面阔五间', '单檐悬山 · 前廊四金刚'],
-    draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 92, fills: ['figure', 'figure', 'door', 'figure', 'figure'], roof: 'gable', bracketS: 1.1, tiers: 1, interm: 1, overhang: 56, roofH: 108, ridgeRatio: 1, platH: 18, platPad: 30, chiwen: 22, lift: 6, puzuo: '明式', dimLabel: '面阔五间' }),
+    draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 92, fills: ['figure', 'figure', 'door', 'figure', 'figure'], roof: 'gable', bracketS: 1.1, tiers: 1, interm: 1, overhang: 56, roofH: 96, ridgeRatio: 1, platH: 18, platPad: 30, chiwen: 22, lift: 6, puzuo: '明式', dimLabel: '面阔五间' }),
   },
   {
     id: 'tiantan', name: '北京天坛', sub: '祈年殿', dyn: 'ming', tag: '明清', era: '永乐十八年始建 · 光绪二十二年重建', year: 1420, place: '北京 · 天坛', placeKey: 'beijing',
@@ -150,10 +150,10 @@ const SITES = [
     facts: ['中国现存最大、最完整的<b>琉璃塔</b>；一层外有木构回廊，塔身逐层急剧收分。', '各层檐下琉璃仿木斗拱、佛龛、力士、盘龙，色彩至今未褪。', '1986 年版《西游记》"唐僧扫塔"一集即在此拍摄；下寺元代壁画则早年流散海外。'],
     caption: ['立面示意 · 八角十三级', '琉璃 · 一层回廊'],
     tall: true,
-    draw: () => Buildings.tierTower({ w: 560, h: 800, base: [{ w: 300, h: 14 }],
+    draw: () => Buildings.tierTower({ w: 560, h: 820, base: [{ w: 440, h: 14 }],
       storeys: [
-        { w: 210, wallH: 42, door: 'arch', doorW: 22, doorH: 32, win: 'none', bs: .8, tiers: 2, eave: 'tile', over: 48, band: 24, lift: 11, rafter: 5, noteEave: '木构回廊 · 副阶' },
-        ...Array.from({ length: 12 }, (_, i) => ({ w: 200 * Math.pow(.925, i), wallH: 22 - i * .4, door: 'arch', doorW: 10, doorH: 12, win: 'blind', bs: .42, dense: true, eave: 'brick', outStep: 4, outL: 3, inL: 1, courseH: 4, noteBs: i === 4 ? '琉璃仿木斗拱' : undefined, noteWall: i === 8 ? '佛龛 · 力士' : undefined }))],
+        { w: 300, wallH: 40, door: 'door', doorW: 22, doorH: 32, win: 'lattice', bs: .7, tiers: 1, eave: 'tile', over: 56, band: 26, lift: 12, rafter: 5, noteEave: '木构回廊 · 副阶' },
+        ...Array.from({ length: 12 }, (_, i) => ({ w: 200 * Math.pow(.925, i), wallH: i ? 22 - i * .4 : 36, door: 'arch', doorW: 10, doorH: 12, win: 'blind', bs: .42, dense: true, eave: 'brick', outStep: 4, outL: 3, inL: 1, courseH: 4, noteBs: i === 4 ? '琉璃仿木斗拱' : undefined, noteWall: i === 8 ? '佛龛 · 力士' : undefined }))],
       top: { type: 'cap', w: 60, courses: 2, step: 8, stupa: { bulbW: 20, bulbH: 18, rings: 5, ringW: 12, ringH: 4 }, note: '塔刹' }, dimLabel: '八角 · 十三级', vLabel: '通高 47.31 m' }),
   },
 ];

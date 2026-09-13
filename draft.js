@@ -57,10 +57,11 @@ const Draft = (() => {
   }
 
   // Front-view bracket set (斗拱) as one path. Base at yBase, grows upward. s = scale.
-  function bracketPath(x, yBase, s, tiers = 2) {
+  function bracketPath(x, yBase, s, tiers = 2, opt = {}) {
     let d = '';
-    // 栌斗
-    d += `M${r(x - 7 * s)},${r(yBase)}l${r(1.5 * s)},${r(-6 * s)}h${r(11 * s)}l${r(1.5 * s)},${r(6 * s)}z`;
+    const ludou = opt.ludou !== false;
+    // 栌斗 (a 补间 without one sits straight on the 柱头枋)
+    if (ludou) d += `M${r(x - 7 * s)},${r(yBase)}l${r(1.5 * s)},${r(-6 * s)}h${r(11 * s)}l${r(1.5 * s)},${r(6 * s)}z`;
     let y = yBase - 6 * s;
     const arms = [30, 46, 60];
     const blocks = [[-12, 0, 12], [-19, -6, 6, 19], [-25, -8, 8, 25]];
@@ -74,19 +75,28 @@ const Draft = (() => {
       }
       y -= 4 * s;
     }
-    return { d, top: y };
+    // 昂嘴: lever beaks projecting toward the viewer — solid wedges in front of the arms
+    let ang = '';
+    for (let k = 0; k < (opt.ang || 0); k++) {
+      const yb = yBase - 6 * s - 8 * s * (tiers - 2 - k) - 2 * s;
+      ang += `M${r(x - 3.6 * s)},${r(yb)}l${r(3.6 * s)},${r(6.5 * s)}l${r(3.6 * s)},${r(-6.5 * s)}z`;
+    }
+    return { d, top: y, ang };
   }
   const bracketH = (s, tiers = 2) => 6 * s + tiers * 8 * s;
 
-  function bracketBand(sheet, x0, x1, yBase, s, n, tiers = 2, interm = 1) {
-    // n columns → n positions plus `interm` intermediate sets per bay (补间铺作)
+  function bracketBand(sheet, x0, x1, yBase, s, n, tiers = 2, interm = 1, opt = {}) {
+    // n columns → n 柱头铺作 plus `interm` 补间铺作 per bay; 补间 may be smaller, 栌斗-less and 昂-less
     const bays = n - 1, bw = (x1 - x0) / bays;
-    let d = '';
+    const iS = opt.intermS ?? 0.9, iTiers = opt.intermTiers ?? tiers, iLudou = opt.intermLudou !== false;
+    let d = '', beaks = '';
     for (let i = 0; i < n; i++) {
-      d += bracketPath(x0 + i * bw, yBase, s, tiers).d;
-      if (i < bays) for (let j = 1; j <= interm; j++) d += bracketPath(x0 + i * bw + bw * j / (interm + 1), yBase, s * 0.9, tiers).d;
+      const p = bracketPath(x0 + i * bw, yBase, s, tiers, { ang: opt.ang || 0 });
+      d += p.d; beaks += p.ang;
+      if (i < bays) for (let j = 1; j <= interm; j++) { const q = bracketPath(x0 + i * bw + bw * j / (interm + 1), yBase, s * iS, iTiers, { ludou: iLudou, ang: opt.intermAng || 0 }); d += q.d; beaks += q.ang; }
     }
     sheet.stroke('bracket', d, 'brk');
+    if (beaks) { sheet.fill('bracket', beaks, 'occlude'); sheet.stroke('bracket', beaks, 'ang'); }
     // 柱头枋 / 撩檐枋 — the beam riding on top of the band
     const top = yBase - bracketH(s, tiers);
     sheet.stroke('bracket', rect(x0 - 24 * s, top - 4 * s, (x1 - x0) + 48 * s, 4 * s));
@@ -163,6 +173,7 @@ const Draft = (() => {
     const orn = o.chiStyle === 'tang' ? chiwei : chiwen;
     orn(sheet, xr0, yR, o.chiwen || 20, 1);
     orn(sheet, xr1, yR, o.chiwen || 20, -1);
+    if (o.ridgeOrn) sheet.stroke('ornament', `M${r(cx - 7)},${r(yR)}l2,-6h10l2,6zM${r(cx)},${r(yR - 6)}q-6,-8 0,-16q6,8 0,16`, 'orn'); // 火珠
     return { yR, xr0, xr1 };
   }
 
