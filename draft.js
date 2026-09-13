@@ -138,6 +138,11 @@ const Draft = (() => {
         inf += rect(bx + 6, yL + 7, bw - 12, wh);
         for (let x = bx + 12; x < bx + bw - 8; x += 6) inf += line(x, yL + 7, x, yL + 7 + wh);
         inf += line(bx, yL + 7 + wh + 4, bx + bw, yL + 7 + wh + 4); // 窗台
+      } else if (kind === 'figure') { // a guardian statue standing in an open bay
+        const fw = bw * 0.42, fh = colH * 0.78, fx = bx + bw / 2, hr = fw * 0.2;
+        inf += `M${r(fx)},${r(yP - fh)}m${r(-hr)},0a${r(hr)},${r(hr)} 0 1 0 ${r(hr * 2)},0a${r(hr)},${r(hr)} 0 1 0 ${r(-hr * 2)},0`;
+        inf += `M${r(fx - fw / 2)},${r(yP)}v${r(-fh * 0.5)}q0,${r(-fh * 0.2)} ${r(fw * 0.22)},${r(-fh * 0.26)}h${r(fw * 0.56)}q${r(fw * 0.22)},${r(fh * 0.06)} ${r(fw * 0.22)},${r(fh * 0.26)}v${r(fh * 0.5)}z`;
+        inf += line(bx, yP - 6, bx + bw, yP - 6);
       } else {
         inf += line(bx, yP - 6, bx + bw, yP - 6); // 地栿
       }
@@ -175,6 +180,18 @@ const Draft = (() => {
     return { yR, yB, xr0, xr1 };
   }
 
+  // 悬山 (overhanging gable): ridge and eave both run the full width; 博风 edges seen end-on.
+  function gableRoof(sheet, cx, xa, xb, yE, o) {
+    const { roofH, chiwen: ch = 18 } = o, yR = yE - roofH;
+    sheet.fill('roof', `M${r(xa)},${r(yR)}L${r(xb)},${r(yR)}L${r(xb)},${r(yE - (o.lift ?? 5))}${eaveRev(xa, xb, yE, o.lift ?? 5, 40)}z`);
+    tiles(sheet, xa + 8, xb - 8, yR, xa + 8, xb - 8, yE, 26);
+    sheet.stroke('roof', eave(xa, xb, yE, o.lift ?? 5, 40), 'eave');
+    sheet.stroke('roof', `M${r(xa)},${r(yR)}V${r(yE)}M${r(xa + 5)},${r(yR + 3)}V${r(yE - 2)}M${r(xb)},${r(yR)}V${r(yE)}M${r(xb - 5)},${r(yR + 3)}V${r(yE - 2)}`, 'ridge'); // 博风板
+    sheet.stroke('roof', rect(xa, yR, xb - xa, 5), 'ridge');
+    chiwen(sheet, xa + 10, yR, ch, 1);
+    chiwen(sheet, xb - 10, yR, ch, -1);
+    return { yR, xr0: xa + 10, xr1: xb - 10 };
+  }
   // Skirt roof (腰檐 / 副阶): eave at yE spanning xa..xb, rising to a narrower top xt0..xt1 at yT.
   function skirtRoof(sheet, xa, xb, yE, xt0, xt1, yT, o = {}) {
     const { lift = 12, k = 50 } = o;
@@ -185,5 +202,5 @@ const Draft = (() => {
     sheet.stroke('roof', line(xt0, yT, xt1, yT), 'thin');
   }
 
-  return { Sheet, LAYERS, r, rect, line, eave, eaveRev, sag, chiwen, chiwei, tiles, bracketPath, bracketH, bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, skirtRoof };
+  return { Sheet, LAYERS, r, rect, line, eave, eaveRev, sag, chiwen, chiwei, tiles, bracketPath, bracketH, bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, gableRoof, skirtRoof };
 })();

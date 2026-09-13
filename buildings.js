@@ -2,7 +2,7 @@
  * plus the SVG renderer and the stroke-draw priming used by the page. */
 const Buildings = (() => {
   const { Sheet, r, rect, line, eave, eaveRev, sag, chiwen, tiles, bracketPath, bracketH,
-    bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, skirtRoof } = Draft;
+    bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, gableRoof, skirtRoof } = Draft;
 
   // ---- single-storey hall: 庑殿 or 歇山 ----
   function hall(o) {
@@ -15,11 +15,11 @@ const Buildings = (() => {
     const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, o.tiers || 2, o.interm ?? 1);
     const yE = top - 9, xa = x0 - o.overhang, xb = x1 + o.overhang;
     const ro = { ridgeW: W * o.ridgeRatio, roofH: o.roofH, lift: o.lift || 14, chiwen: o.chiwen, chiStyle: o.chiStyle, gableH: o.gableH, k: o.k || 60 };
-    const roof = o.roof === 'hip' ? hipRoof(S, cx, xa, xb, yE, ro) : gableHipRoof(S, cx, xa, xb, yE, ro);
+    const roof = o.roof === 'hip' ? hipRoof(S, cx, xa, xb, yE, ro) : o.roof === 'gable' ? gableRoof(S, cx, xa, xb, yE, ro) : gableHipRoof(S, cx, xa, xb, yE, ro);
     // notes
     S.note(roof.xr1, roof.yR - (o.chiwen || 20) * 0.6, o.chiStyle === 'tang' ? '鸱尾' : '鸱吻', 'r');
     S.note(x1 + 12, yL - bracketH(o.bracketS, o.tiers || 2) / 2, '斗拱 · ' + (o.puzuo || '五铺作'), 'r');
-    S.note(xa + 8, yE - 8, o.roof === 'hip' ? '庑殿 · 出檐' : '歇山 · 戗脊', 'l');
+    S.note(xa + 8, yE - 8, o.roof === 'hip' ? '庑殿 · 出檐' : o.roof === 'gable' ? '悬山 · 博风' : '歇山 · 戗脊', 'l');
     S.note(x0 + 2, yP - o.colH * 0.55, '侧脚 · 生起', 'l');
     S.note(cx + o.bw * 0.5, yP + o.platH * 0.5, '台基 · 踏道', 'r');
     S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
@@ -351,6 +351,7 @@ const Buildings = (() => {
       }
       y = towerWall(S, cx, st.w, y, st.wallH, { sides, door: st.door, win: st.win, doorW: st.doorW, doorH: st.doorH, cls: st.wallCls });
       if (st.noteWall) S.note(cx - st.w / 2 - 2, y + st.wallH * 0.5, st.noteWall, 'l');
+      if (st.noteWallR) S.note(cx + st.w / 2 + 2, y + st.wallH * 0.5, st.noteWallR, 'r');
       if (st.bs) { y = octBrackets(S, cx, st.w, y, st.bs, st.tiers || 2, !!st.dense); if (st.noteBs) S.note(cx + st.w / 2 + 6, y + 8, st.noteBs, 'r'); }
       const last = i === n - 1;
       if (st.eave === 'tile') {
@@ -533,6 +534,63 @@ const Buildings = (() => {
     return S;
   }
 
+  // ---- round triple-eave hall on a three-tier circular terrace (祈年殿) ----
+  function roundHall(o) {
+    const S = new Sheet(800, 560), cx = 400, yG = 526;
+    let y = yG;
+    S.stroke('base', line(30, yG, 770, yG), 'ground');
+    // terrace tiers with balustrades and a central stair
+    o.tiers.forEach((t, i) => {
+      S.stroke('base', rect(cx - t.w / 2, y - t.h, t.w, t.h));
+      const stairW = 70 + i * 8;
+      S.stroke('base', `M${r(cx - stairW / 2)},${r(y - t.h)}v${r(t.h)}M${r(cx + stairW / 2)},${r(y - t.h)}v${r(t.h)}` + [1, 2, 3].map(k => line(cx - stairW / 2, y - t.h + t.h * k / 4, cx + stairW / 2, y - t.h + t.h * k / 4)).join(''), 'thin');
+      y -= t.h;
+      // balustrade: posts + rail along the tier edge, broken at the stair
+      const next = o.tiers[i + 1], inner = next ? next.w / 2 : o.drums[0].w / 2 + 14;
+      let br = '';
+      for (const sx of [-1, 1]) {
+        const a = cx + sx * (stairW / 2 + 6), b = cx + sx * (t.w / 2 - 4);
+        br += line(a, y - t.rail, b, y - t.rail) + line(a, y - t.rail * 0.55, b, y - t.rail * 0.55);
+        for (let x = Math.min(a, b); x <= Math.max(a, b); x += 14) br += line(x, y - t.rail - 3, x, y);
+      }
+      S.stroke('base', br, 'thin');
+      if (i === 0) S.note(cx - t.w / 2 + 10, y - t.rail * 0.6, '三层圆坛 · 汉白玉栏', 'l');
+    });
+    // drums and conical roofs
+    const roofFor = (wE, wTop, yE, band, lift = 4) => {
+      const xa = cx - wE / 2, xb = cx + wE / 2, t0 = cx - wTop / 2, t1 = cx + wTop / 2, yT = yE - band;
+      S.fill('roof', `M${r(t0)},${r(yT)}L${r(t1)},${r(yT)}${sag(t1, yT, xb, yE - lift, 0.35, 0.65)}${eaveRev(xa, xb, yE, lift, 26)}${sag(xa, yE - lift, t0, yT, 0.65, 0.35)}z`);
+      tiles(S, t0, t1, yT, xa + 20, xb - 20, yE, 22);
+      S.stroke('roof', eave(xa, xb, yE, lift, 26), 'eave');
+      S.stroke('roof', `M${r(t0)},${r(yT)}${sag(t0, yT, xa, yE - lift, 0.35, 0.65)}M${r(t1)},${r(yT)}${sag(t1, yT, xb, yE - lift, 0.35, 0.65)}`, 'ridge');
+      return yT;
+    };
+    o.drums.forEach((d, i) => {
+      // drum wall: lattice doors all round, seen as repeated panels
+      let w = rect(cx - d.w / 2, y - d.h, d.w, d.h);
+      const n = Math.max(3, Math.round(d.w / 34)), pw = d.w / n;
+      for (let k = 0; k <= n; k++) w += line(cx - d.w / 2 + pw * k, y - d.h, cx - d.w / 2 + pw * k, y);
+      if (i === 0) for (let k = 0; k < n; k++) { const px = cx - d.w / 2 + pw * k + 4; for (let yy = y - d.h + 6; yy < y - d.h * 0.45; yy += 6) w += line(px, yy, px + pw - 8, yy); }
+      S.stroke('frame', w, i ? 'thin' : 'col');
+      if (i === 0) S.note(cx - d.w / 2 + 6, y - d.h * 0.5, '隔扇 · 十二檐柱', 'l');
+      y -= d.h;
+      const top = octBrackets(S, cx, d.w, y, d.bs, 2, true);
+      const yE = top - 6;
+      const next = o.drums[i + 1];
+      y = roofFor(d.w + 2 * d.over, next ? next.w : o.topW, yE, d.band);
+      if (i === 1) S.note(cx + d.w / 2 + d.over - 6, yE - 6, '三重檐 · 蓝琉璃', 'r');
+    });
+    // top cone to the gilded 宝顶
+    const yA = y - o.coneH, xa = cx - o.topW / 2, xb = cx + o.topW / 2;
+    S.fill('roof', `M${r(cx)},${r(yA)}${sag(cx, yA, xb, y, 0.35, 0.65)}L${r(xa)},${r(y)}${sag(xa, y, cx, yA, 0.65, 0.35)}z`);
+    S.stroke('roof', `M${r(xa)},${r(y)}${sag(xa, y, cx, yA, 0.65, 0.35)}${sag(cx, yA, xb, y, 0.35, 0.65)}`, 'ridge');
+    let bd = rect(cx - 8, yA - 10, 16, 10) + `M${r(cx - 12)},${r(yA - 10)}h24` + `M${r(cx - 11)},${r(yA - 22)}a11,12 0 1 0 22,0a11,12 0 1 0 -22,0`;
+    S.stroke('ornament', bd, 'orn');
+    S.note(cx + 12, yA - 24, '鎏金宝顶', 'r');
+    S.dim = { x0: cx - o.tiers[0].w / 2, x1: cx + o.tiers[0].w / 2, y: yG + 16, label: o.dimLabel, v: { x: cx - o.tiers[0].w / 2 - 40, y0: yG, y1: yA - 36, label: o.vLabel } };
+    return S;
+  }
+
   // ---- hero: section through a bracket set with 昂, eave and rafters ----
   function bracketSection() {
     const w = 760, h = 400, S = new Sheet(w, h), cx = 430, yB = 352;
@@ -652,5 +710,5 @@ const Buildings = (() => {
     svg.classList.add('primed');
   }
 
-  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, tierTower, kaiyuan, huaTa, cubeStupa, bracketSection, render, prime };
+  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, tierTower, kaiyuan, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
 })();

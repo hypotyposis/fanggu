@@ -53,8 +53,8 @@
   // ---- map ----
   (function map() {
     const svg = $('#mapsvg');
-    const W = 450, H = 700, pad = { l: 44, r: 30, t: 40, b: 44 };
-    const lat0 = 29.4, lat1 = 40.7, lon0 = 112.2, lon1 = 121.2, cosL = Math.cos(35.5 * Math.PI / 180);
+    const W = 505, H = 700, pad = { l: 44, r: 30, t: 40, b: 44 };
+    const lat0 = 29.4, lat1 = 40.7, lon0 = 111.3, lon1 = 121.4, cosL = Math.cos(35.5 * Math.PI / 180);
     const kLat = (H - pad.t - pad.b) / (lat1 - lat0), kLon = kLat * cosL;
     const X = lon => pad.l + (lon - lon0) * kLon, Y = lat => pad.t + (lat1 - lat) * kLat;
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
@@ -62,11 +62,11 @@
     for (let lat = 30; lat <= 40; lat += 2) { svg.appendChild(sv('line', { class: 'grid', x1: pad.l, x2: X(lon1), y1: Y(lat), y2: Y(lat) })); svg.appendChild(sv('text', { x: pad.l - 6, y: Y(lat) + 4, 'text-anchor': 'end' }, `${lat}°N`)); }
     for (let lon = 113; lon <= 121; lon += 2) { svg.appendChild(sv('line', { class: 'grid', x1: X(lon), x2: X(lon), y1: pad.t, y2: Y(lat0) })); svg.appendChild(sv('text', { x: X(lon), y: Y(lat0) + 18, 'text-anchor': 'middle' }, `${lon}°E`)); }
     svg.appendChild(sv('rect', { class: 'frame', x: pad.l, y: pad.t, width: X(lon1) - pad.l, height: Y(lat0) - pad.t }));
-    svg.appendChild(sv('text', { class: 'prov', x: X(112.5), y: Y(37.4) }, '山西'));
-    svg.appendChild(sv('text', { class: 'prov', x: X(116.4), y: Y(39.7) }, '河北'));
+    svg.appendChild(sv('text', { class: 'prov', x: X(111.6), y: Y(39.75) }, '山西'));
+    svg.appendChild(sv('text', { class: 'prov', x: X(117.2), y: Y(38.5) }, '河北'));
     svg.appendChild(sv('text', { class: 'prov', x: X(112.6), y: Y(34.6) }, '河南'));
     svg.appendChild(sv('text', { class: 'prov', x: X(116.5), y: Y(31.4) }, '浙江'));
-    const route = sv('path', { class: 'route draw', d: [...PLACES].sort((a, b) => b.lat - a.lat).map((p, i) => `${i ? 'L' : 'M'}${X(p.lon).toFixed(1)},${Y(p.lat).toFixed(1)}`).join('') });
+    const route = sv('path', { class: 'route draw', d: ROUTE.map(k => PLACES.find(p => p.key === k)).map((p, i) => `${i ? 'L' : 'M'}${X(p.lon).toFixed(1)},${Y(p.lat).toFixed(1)}`).join('') });
     svg.appendChild(route);
     PLACES.forEach(p => {
       const g = sv('g', { class: 'pt', 'data-key': p.key, tabindex: 0, role: 'link' });
@@ -100,15 +100,26 @@
   // ---- timeline ----
   (function timeline() {
     const svg = $('#tlsvg');
-    const W = 1100, H = 262, l = 70, rgt = 30, y0 = 600, y1 = 1200;
-    const X = yr => l + (yr - y0) / (y1 - y0) * (W - l - rgt);
+    const W = 1100, H = 262, l = 70, rgt = 30, y0 = 600, yb = 1250, y1 = 1912, split = 0.68;
+    const span = W - l - rgt;
+    const X = yr => yr <= yb ? l + (yr - y0) / (yb - y0) * span * split : l + span * split + (yr - yb) / (y1 - yb) * span * (1 - split);
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     svg.setAttribute('aria-label', '七处古迹的年代与南北朝代对照');
     const lanes = [
       { name: '北', y: 92, bars: [{ n: '辽', s: 907, e: 1125, c: 'var(--cinnabar)' }, { n: '金', s: 1115, e: 1234, c: 'var(--amber)' }] },
       { name: '南', y: 168, bars: [{ n: '唐', s: 618, e: 907, c: 'var(--gold)' }, { n: '五代', s: 907, e: 960, c: 'var(--ash)' }, { n: '北宋', s: 960, e: 1127, c: 'var(--verdigris)' }, { n: '南宋', s: 1127, e: 1279, c: 'var(--verdigris)' }] },
     ];
-    for (let yr = 600; yr <= 1200; yr += 100) { svg.appendChild(sv('line', { class: 'axis', x1: X(yr), x2: X(yr), y1: 40, y2: 232, 'stroke-dasharray': '2 5' })); svg.appendChild(sv('text', { x: X(yr), y: 252, 'text-anchor': 'middle' }, String(yr))); }
+    for (const yr of [600, 700, 800, 900, 1000, 1100, 1200, 1300, 1500, 1700, 1900]) { svg.appendChild(sv('line', { class: 'axis', x1: X(yr), x2: X(yr), y1: 40, y2: 232, 'stroke-dasharray': '2 5' })); svg.appendChild(sv('text', { x: X(yr), y: 252, 'text-anchor': 'middle' }, String(yr))); }
+    // axis break at 1250: the right third is compressed
+    svg.appendChild(sv('path', { class: 'axis', d: `M${X(yb) - 6},${232}l4,-8l4,16l4,-8`, fill: 'none', 'stroke-dasharray': 'none' }));
+    svg.appendChild(sv('text', { x: X(yb), y: 252, 'text-anchor': 'middle' }, '⋯'));
+    // unified dynasties after the Song–Jin split: one bar across both lanes
+    for (const b of [{ n: '元', s: 1271, e: 1368, c: 'var(--paper-3)' }, { n: '明', s: 1368, e: 1644, c: 'var(--lapis)' }, { n: '清', s: 1644, e: 1912, c: 'var(--ash)' }]) {
+      svg.appendChild(sv('rect', { class: 'bar', x: X(b.s), y: 76, width: X(b.e) - X(b.s), height: 108, fill: b.c }));
+      const nw = X(b.e) - X(b.s) < 70;
+      svg.appendChild(sv('text', { class: 'bar-name' + (nw ? ' sm' : ''), x: nw ? (X(b.s) + X(b.e)) / 2 : X(b.e) - 8, y: 176, 'text-anchor': nw ? 'middle' : 'end' }, b.n));
+      svg.appendChild(sv('text', { x: X(b.e) - 6, y: 70, 'text-anchor': 'end' }, `${b.s}–${b.e}`));
+    }
     lanes.forEach(ln => {
       svg.appendChild(sv('text', { class: 'lane-name', x: 14, y: ln.y + 5 }, ln.name));
       ln.bars.forEach(b => {
@@ -119,17 +130,19 @@
         svg.appendChild(sv('text', { x: X(e) - 6, y: ln.y - 22, 'text-anchor': 'end' }, `${b.s}–${b.e}`));
       });
     });
-    const north = new Set(['huayan', 'yingxian', 'shanhua', 'huata']);
-    const UP = { kaiyuan: false, xiuding: true, nanchan: false, foguang: true, wenfeng: false, longxing: true, liaodi: false, liuhe: false, huayan: true, yingxian: false, shanhua: true, huata: false };
+    const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'huata']), unified = new Set(['shuanglin', 'tiantan', 'feihong']);
+    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], wenfeng: [0], longxing: [1], lingxiao: [0, -30], liaodi: [0, 40], liuhe: [1], kaishan: [1, -34], huayan: [0], yingxian: [1, 34], shanhua: [1, -16], huata: [1, 26], shuanglin: [1, -30], tiantan: [0], feihong: [1, 40] };
+    const mid = { name: '', y: 130 };
     SITES.forEach(s => {
-      const ln = north.has(s.id) ? lanes[0] : lanes[1];
-      const x = X(s.year), up = !!UP[s.id];
+      const ln = unified.has(s.id) ? mid : north.has(s.id) ? lanes[0] : lanes[1];
+      const [u, dx = 0] = TL[s.id] || [0];
+      const x = X(s.year), up = !!u;
       const g = sv('g', { class: 'mk', 'data-for': s.id, tabindex: 0, role: 'link' });
-      const ty = up ? ln.y - 44 : ln.y + 44;
-      g.appendChild(sv('line', { x1: x, x2: x, y1: ln.y, y2: ty + (up ? 8 : -8) }));
+      const ty = up ? ln.y - 44 : ln.y + 44, tx = x + dx;
+      g.appendChild(sv('line', { x1: x, x2: tx, y1: ln.y, y2: ty + (up ? 8 : -8) }));
       g.appendChild(sv('circle', { cx: x, cy: ln.y, r: 5, fill: DYN[s.dyn].acc }));
-      g.appendChild(sv('text', { class: 'nm', x, y: up ? ty - 2 : ty + 14, 'text-anchor': 'middle' }, s.name));
-      g.appendChild(sv('text', { class: 'yr', x, y: up ? ty + 6 : ty - 2 + 14 + 14, 'text-anchor': 'middle' }, String(s.yearLabel || s.year)));
+      g.appendChild(sv('text', { class: 'nm', x: tx, y: up ? ty - 2 : ty + 14, 'text-anchor': 'middle' }, s.name));
+      g.appendChild(sv('text', { class: 'yr', x: tx, y: up ? ty + 6 : ty - 2 + 14 + 14, 'text-anchor': 'middle' }, String(s.yearLabel || s.year)));
       g.addEventListener('click', () => location.hash = s.id);
       g.addEventListener('keydown', e => { if (e.key === 'Enter') g.click(); });
       svg.appendChild(g);

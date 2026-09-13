@@ -4,6 +4,7 @@ const DYN = {
   zhou: { glyph: '周', name: '后周', acc: 'var(--ash)' },
   song: { glyph: '宋', name: '宋', acc: 'var(--verdigris)' },
   liao: { glyph: '辽', name: '辽 · 金', acc: 'var(--cinnabar)' },
+  ming: { glyph: '明', name: '明 · 清', acc: 'var(--lapis)' },
 };
 
 const SITES = [
@@ -59,6 +60,19 @@ const SITES = [
     draw: () => Buildings.crossHall({ bays: 7, bw: 74, colH: 84, fills: ['wall', 'win', 'door', 'door', 'door', 'win', 'wall'], fills2: ['wall', 'win', 'win', 'win', 'wall'], bracketS: 1.5, overhang: 62, skirtH: 56, colH2: 36, roofH: 142, gableH: 56, porchColH: 72, porchOver: 30, gableW: 132, porchRise: 44, gableRise: 56, chiwen: 30, platH: 22, platPad: 40, dimLabel: '面阔 35.0 m' }),
   },
   {
+    id: 'lingxiao', name: '天宁寺凌霄塔', sub: '正定 · 塔心柱', dyn: 'song', tag: '宋', era: '唐始建 · 宋庆历五年重修', year: 1045, place: '河北正定 · 古城', placeKey: 'zhengding',
+    lede: '唐代宗年间始建，宋庆历五年（1045）在唐塔残址上重修，金皇统五年（1145）再修上部。下面四层是宋代的砖，上面五层是金代的砖木——它把两个朝代叠在了一座塔上。',
+    facts: ['八角<b>九层</b>楼阁式，砖木混构，高 41 米，立于八角形台基之上。', '第四层中心竖一根直达塔顶的<b>木塔心柱</b>，各层以八根放射状扒梁与外檐相连，这种做法国内现存仅此一例。', '与开元寺须弥塔、广惠寺华塔、临济寺澄灵塔并称"正定四塔"，此行见其三。'],
+    caption: ['立面示意 · 八角九层', '下四层砖 · 上五层砖木'],
+    tall: true,
+    draw: () => Buildings.tierTower({ w: 560, h: 860, base: [{ w: 300, h: 16 }],
+      storeys: [
+        { w: 236, wallH: 96, door: 'arch', doorW: 26, doorH: 52, win: 'none', bs: .6, dense: true, eave: 'tile', over: 30, band: 22, lift: 9, rafter: 5, noteWall: '砖砌 · 宋' },
+        ...[224, 212, 200].map((w, i) => ({ w, wallH: 30, door: 'win', doorW: 12, doorH: 16, win: 'none', bs: .6, dense: true, eave: 'tile', over: 30 - i * 2, band: 21, lift: 9, rafter: 5, noteBs: i === 1 ? '仿木砖斗拱' : undefined })),
+        ...[186, 170, 154, 138, 122].map((w, i) => ({ w, wallH: 22, door: 'win', doorW: 12, doorH: 13, win: 'none', bs: .7, tiers: 2, eave: 'tile', over: 34 - i * 2, band: 19, lift: 11, rafter: 5, noteWallR: i === 1 ? '金 · 塔心柱自此而上' : undefined, noteEave: i === 3 ? '木檐 · 斗拱' : undefined }))],
+      top: { type: 'pyramid', h: 46, w: 50, stupa: { bulbW: 22, bulbH: 20, rings: 3, ringW: 12 }, note: '塔刹' }, dimLabel: '八角 · 九层', vLabel: '通高 41 m' }),
+  },
+  {
     id: 'liaodi', name: '定州开元寺塔', sub: '料敌塔', dyn: 'song', tag: '宋', era: '咸平四年始建 · 至和二年成', year: 1055, place: '河北定州 · 古城', placeKey: 'dingzhou',
     lede: '宋真宗咸平四年（1001）开工，至和二年（1055）落成，前后五十四年。八十三米七，是中国现存最高的砖塔；定州地处宋辽边境，登塔可望契丹军情，故名"料敌"。',
     facts: ['八角<b>十一层</b>楼阁式砖塔，通高 <b>83.7 米</b>，逐层收分，塔内有梯可登顶。', '每层券门与假窗交错，叠涩砖檐之上再起平座，层层如此，全靠砖砌。', '清光绪十年（1884）东北面塔身坍塌，缺口豁开百余年，二十世纪末才修复完整，故有"缺憾之美"之说。'],
@@ -77,6 +91,13 @@ const SITES = [
     draw: () => Buildings.tierTower({ w: 560, h: 900, base: [{ w: 380, h: 14 }],
       storeys: Array.from({ length: 13 }, (_, i) => ({ w: 330 * Math.pow(.925, i), wallH: i ? 14 : 22, door: 'lattice', doorW: 14, doorH: 11, win: 'lattice', balcony: i ? 14 : 0, bsB: .4, railH: 6, bs: .5, tiers: 1, eave: 'tile', over: 30 - i * 1.1, band: 11, lift: 12, rafter: 4, noteEave: i === 0 ? '副阶 · 木檐' : undefined, noteBalcony: i === 6 ? '平座勾阑' : undefined, noteWall: i === 3 ? '砖身 · 格窗' : undefined })),
       top: { type: 'pyramid', h: 34, w: 60, stupa: { bulbW: 24, bulbH: 22, rings: 3, ringW: 12 }, note: '宝顶' }, dimLabel: '外十三层 · 内七层', vLabel: '通高 59.89 m' }),
+  },
+  {
+    id: 'kaishan', name: '高碑店开善寺', sub: '大雄宝殿', dyn: 'liao', tag: '辽', era: '辽', year: 1020, yearLabel: '辽', place: '河北高碑店 · 新城', placeKey: 'gaobeidian',
+    lede: '现存八座辽代木构之一。它不大，却把辽代的手法都用上了：减柱、移柱，殿内只留四根柱子；斗拱硕大，高度近柱高的三分之一。',
+    facts: ['<b>面阔五间</b> 25.8 米，进深三间 14.5 米，高 12.08 米，单檐庑殿。', '檐柱一周施斗拱三十朵：柱头十二、补间十四、转角四；斗拱总高 1.41 米，与柱高之比 1 : 3.41。', '殿内用<b>减柱造</b>与移柱造，仅立柱四根，空间因此开阔。'],
+    caption: ['立面示意 · 面阔五间', '单檐庑殿 · 减柱造'],
+    draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 96, fills: ['wall', 'win', 'door', 'win', 'wall'], roof: 'hip', bracketS: 2.0, tiers: 2, interm: 1, overhang: 84, roofH: 156, ridgeRatio: .56, platH: 20, platPad: 46, lift: 14, chiwen: 30, puzuo: '五铺作 · 补间十四', dimLabel: '面阔 25.8 m' }),
   },
   {
     id: 'huayan', name: '华严寺', sub: '薄伽教藏殿 · 大雄宝殿', dyn: 'liao', tag: '辽', era: '重熙七年', year: 1038, place: '山西大同 · 古城', placeKey: 'datong',
@@ -108,6 +129,33 @@ const SITES = [
     tall: true,
     draw: () => Buildings.huaTa({ w1: 250, h1: 176, wingW: 96, wingH: 120, w2: 190, h2: 56, w3: 120, h3: 30, flowerH: 170, flowerW: 150, tiers: 8, w4: 70, h4: 26, coneH: 44, dimLabel: '一主四副 · 六角套室', vLabel: '通高 40.5 m' }),
   },
+  {
+    id: 'shuanglin', name: '平遥双林寺', sub: '天王殿 · 彩塑', dyn: 'ming', tag: '明', era: '北齐武平二年重修 · 明初重建', year: 1400, yearLabel: '明初', place: '山西平遥 · 桥头村', placeKey: 'pingyao',
+    lede: '北魏始建的中都寺，北齐武平二年（571）重修，现存殿宇多为明初重建。它以彩塑闻名：十座殿堂里两千余尊明代彩塑，被称为"东方彩塑艺术长廊"。',
+    facts: ['寺外围墙为明代所筑，形如堡垒；内分三进院落、十座殿堂。', '<b>天王殿</b>前廊立四大金刚，各高三米余；<b>千佛殿</b>内的<b>韦驮</b>像扭身按剑，是明代彩塑的名作。', '全寺彩塑二千零五十二尊，完好者一千五百六十六尊，大者丈余、小者尺许。'],
+    caption: ['天王殿立面示意 · 面阔五间', '单檐悬山 · 前廊四金刚'],
+    draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 92, fills: ['figure', 'figure', 'door', 'figure', 'figure'], roof: 'gable', bracketS: 1.1, tiers: 1, interm: 1, overhang: 56, roofH: 108, ridgeRatio: 1, platH: 18, platPad: 30, chiwen: 22, lift: 6, puzuo: '明式', dimLabel: '面阔五间' }),
+  },
+  {
+    id: 'tiantan', name: '北京天坛', sub: '祈年殿', dyn: 'ming', tag: '明清', era: '永乐十八年始建 · 光绪二十二年重建', year: 1420, place: '北京 · 天坛', placeKey: 'beijing',
+    lede: '明永乐十八年（1420）建大祀殿，嘉靖年间改为三重檐圆殿，乾隆时换上蓝瓦、改名祈年殿。光绪十五年（1889）雷火焚毁，六年后按原样重建——今天看到的，是 1896 年的木头。',
+    facts: ['圆形三重檐攒尖，蓝琉璃瓦，鎏金宝顶；<b>直径 32.72 米，通高 38 米</b>，立于三层汉白玉圆坛之上。', '殿内二十八根柱子：四根龙井柱象四季，十二根金柱象十二月，十二根檐柱象十二时辰。', '全殿无大梁，靠柱、枋、斗拱层层承托攒尖顶，是明清官式木构的极致。'],
+    caption: ['祈年殿立面示意 · 圆形三重檐', '攒尖 · 三层圆坛'],
+    draw: () => Buildings.roundHall({ tiers: [{ w: 700, h: 22, rail: 14 }, { w: 600, h: 22, rail: 14 }, { w: 500, h: 22, rail: 14 }],
+      drums: [{ w: 260, h: 62, bs: .7, over: 44, band: 40 }, { w: 200, h: 38, bs: .65, over: 40, band: 36 }, { w: 148, h: 32, bs: .6, over: 36, band: 34 }], topW: 104, coneH: 26, dimLabel: '祈谷坛 · 三层', vLabel: '通高 38 m' }),
+  },
+  {
+    id: 'feihong', name: '广胜寺飞虹塔', sub: '洪洞 · 琉璃塔', dyn: 'ming', tag: '明', era: '正德十年始建 · 嘉靖六年成', year: 1527, place: '山西洪洞 · 霍山', placeKey: 'hongtong',
+    lede: '明正德十年（1515）动工，嘉靖六年（1527）完成。八角十三级，通高 47.31 米，通体贴五色琉璃：赤橙黄绿青蓝紫，日光下如一道彩虹，故名飞虹。',
+    facts: ['中国现存最大、最完整的<b>琉璃塔</b>；一层外有木构回廊，塔身逐层急剧收分。', '各层檐下琉璃仿木斗拱、佛龛、力士、盘龙，色彩至今未褪。', '1986 年版《西游记》"唐僧扫塔"一集即在此拍摄；下寺元代壁画则早年流散海外。'],
+    caption: ['立面示意 · 八角十三级', '琉璃 · 一层回廊'],
+    tall: true,
+    draw: () => Buildings.tierTower({ w: 560, h: 800, base: [{ w: 300, h: 14 }],
+      storeys: [
+        { w: 210, wallH: 42, door: 'arch', doorW: 22, doorH: 32, win: 'none', bs: .8, tiers: 2, eave: 'tile', over: 48, band: 24, lift: 11, rafter: 5, noteEave: '木构回廊 · 副阶' },
+        ...Array.from({ length: 12 }, (_, i) => ({ w: 200 * Math.pow(.925, i), wallH: 22 - i * .4, door: 'arch', doorW: 10, doorH: 12, win: 'blind', bs: .42, dense: true, eave: 'brick', outStep: 4, outL: 3, inL: 1, courseH: 4, noteBs: i === 4 ? '琉璃仿木斗拱' : undefined, noteWall: i === 8 ? '佛龛 · 力士' : undefined }))],
+      top: { type: 'cap', w: 60, courses: 2, step: 8, stupa: { bulbW: 20, bulbH: 18, rings: 5, ringW: 12, ringH: 4 }, note: '塔刹' }, dimLabel: '八角 · 十三级', vLabel: '通高 47.31 m' }),
+  },
 ];
 
 const CHAPTERS = [
@@ -115,15 +163,21 @@ const CHAPTERS = [
   { key: 'zhou', years: '951 — 960', blurb: '五代五十三年，中原少有木构留存。砖塔以它不易焚毁的身体，替这段乱世留下了记号。' },
   { key: 'song', years: '960 — 1279', blurb: '两宋三百年：摩尼殿早《营造法式》半个世纪已见其规制；砖塔在定州砌到八十三米，到江南又与木檐混构。' },
   { key: 'liao', years: '907 — 1234', blurb: '契丹与女真承唐制而益壮：减柱、移柱以扩展佛殿空间，斜拱如花，殿阁之巨为北地独有；金人重修的华塔，则把一座砖塔堆成一束花。' },
+  { key: 'ming', years: '1368 — 1912', blurb: '官式定型，琉璃盛行：砖塔披上五色琉璃，圆殿以蓝瓦象天，彩塑在晋中的小寺里达到极盛。' },
 ];
 
 const PLACES = [
   { key: 'datong', name: '大同', lat: 40.094, lon: 113.287, prov: '山西' },
   { key: 'yingxian', name: '应县', lat: 39.554, lon: 113.187, prov: '山西' },
   { key: 'wutai', name: '五台', lat: 38.75, lon: 113.25, prov: '山西', side: 'l' },
+  { key: 'pingyao', name: '平遥', lat: 37.20, lon: 112.18, prov: '山西', side: 'r' },
+  { key: 'hongtong', name: '洪洞', lat: 36.30, lon: 111.80, prov: '山西', side: 'r' },
+  { key: 'beijing', name: '北京', lat: 39.88, lon: 116.41, prov: '北京', side: 'r' },
+  { key: 'gaobeidian', name: '高碑店', lat: 39.33, lon: 115.87, prov: '河北', side: 'r' },
   { key: 'dingzhou', name: '定州', lat: 38.516, lon: 114.990, prov: '河北', side: 'r' },
   { key: 'zhengding', name: '正定', lat: 38.146, lon: 114.574, prov: '河北', side: 'l' },
-  { key: 'anyang', name: '安阳', lat: 36.096, lon: 114.352, prov: '河南', side: 'l' },
+  { key: 'anyang', name: '安阳', lat: 36.096, lon: 114.352, prov: '河南', side: 'r' },
   { key: 'hangzhou', name: '杭州', lat: 30.198, lon: 120.130, prov: '浙江', side: 'l' },
 ];
 
+const ROUTE = ['datong', 'yingxian', 'wutai', 'pingyao', 'hongtong', 'anyang', 'zhengding', 'dingzhou', 'gaobeidian', 'beijing', 'hangzhou'];
