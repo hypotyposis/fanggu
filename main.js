@@ -24,7 +24,7 @@
     const wrap = h('div', { class: 'wrap' });
     wrap.appendChild(h('div', { class: 'chapter-head' }, `<h2>${d.name}</h2><div class="about"><span class="mono">${ch.years}</span><p>${ch.blurb}</p></div>`));
     SITES.filter(s => s.dyn === ch.key).forEach((s, i) => {
-      const art = h('article', { class: 'site' + (i % 2 ? ' flip' : '') + (s.tall ? ' tall' : ''), id: s.id, 'data-year': s.year });
+      const art = h('article', { class: 'site' + (i % 2 ? ' flip' : '') + (s.tall ? ' tall' : '') + (s.lost ? ' lost' : ''), id: s.id, 'data-year': s.year });
       const fig = h('div', { class: 'site-fig' });
       const figure = h('figure');
       let svg = null;
@@ -67,16 +67,18 @@
   // ---- map ----
   (function map() {
     const svg = $('#mapsvg');
-    const W = 560, H = 700, pad = { l: 44, r: 30, t: 40, b: 44 };
-    const lat0 = 28.8, lat1 = 40.7, lon0 = 111.3, lon1 = 122.6, cosL = Math.cos(35.5 * Math.PI / 180);
+    const W = 670, H = 700, pad = { l: 44, r: 30, t: 40, b: 44 };
+    const lat0 = 28.8, lat1 = 40.7, lon0 = 108.2, lon1 = 122.6, cosL = Math.cos(35.5 * Math.PI / 180);
     const kLat = (H - pad.t - pad.b) / (lat1 - lat0), kLon = kLat * cosL;
     const X = lon => pad.l + (lon - lon0) * kLon, Y = lat => pad.t + (lat1 - lat) * kLat;
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     svg.setAttribute('aria-label', '五处古迹的位置示意图');
     for (let lat = 30; lat <= 40; lat += 2) { svg.appendChild(sv('line', { class: 'grid', x1: pad.l, x2: X(lon1), y1: Y(lat), y2: Y(lat) })); svg.appendChild(sv('text', { x: pad.l - 6, y: Y(lat) + 4, 'text-anchor': 'end' }, `${lat}°N`)); }
-    for (let lon = 113; lon <= 121; lon += 2) { svg.appendChild(sv('line', { class: 'grid', x1: X(lon), x2: X(lon), y1: pad.t, y2: Y(lat0) })); svg.appendChild(sv('text', { x: X(lon), y: Y(lat0) + 18, 'text-anchor': 'middle' }, `${lon}°E`)); }
+    for (let lon = 109; lon <= 121; lon += 2) { svg.appendChild(sv('line', { class: 'grid', x1: X(lon), x2: X(lon), y1: pad.t, y2: Y(lat0) })); svg.appendChild(sv('text', { x: X(lon), y: Y(lat0) + 18, 'text-anchor': 'middle' }, `${lon}°E`)); }
     svg.appendChild(sv('rect', { class: 'frame', x: pad.l, y: pad.t, width: X(lon1) - pad.l, height: Y(lat0) - pad.t }));
     svg.appendChild(sv('text', { class: 'prov', x: X(111.6), y: Y(39.75) }, '山西'));
+    svg.appendChild(sv('text', { class: 'prov', x: X(108.6), y: Y(36.2) }, '陕西'));
+    svg.appendChild(sv('text', { class: 'prov', x: X(117.6), y: Y(33.2) }, '江苏'));
     svg.appendChild(sv('text', { class: 'prov', x: X(117.2), y: Y(38.5) }, '河北'));
     svg.appendChild(sv('text', { class: 'prov', x: X(113.6), y: Y(33.5) }, '河南'));
     svg.appendChild(sv('text', { class: 'prov', x: X(116.5), y: Y(31.4) }, '浙江'));
@@ -146,9 +148,9 @@
         svg.appendChild(sv('text', { x: X(e) - 6, y: ln.y + 26, 'text-anchor': 'end' }, `${b.s}–${b.e}`));
       });
     });
-    const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'chunhua', 'huata']), unified = new Set(['jiutian', 'xiayu', 'shuanglin', 'tiantan', 'feihong', 'xitai']);
+    const north = new Set(['kaishan', 'huayan', 'yingxian', 'tianning', 'shanhua', 'chunhua', 'huata']), unified = new Set(['jiutian', 'xiayu', 'shuanglin', 'tiantan', 'baoen', 'feihong', 'xitai']);
     // [row, dx]: north labels stack above the north lane, everything else below its lane
-    const TL = { kaiyuan: [0], longmenshiku: [2], xiuding: [1], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], baoguo: [0, -4], lingxiao: [0, 6], fotou: [2], liaodi: [1, 8], jiutian: [1, -12], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0, 10], shuanglin: [1], tiantan: [2], feihong: [1], xitai: [0] };
+    const TL = { kaiyuan: [0], longmenshiku: [2], xian: [0, 10], xiuding: [1], gongchen: [1, -14], tianning: [2, -6], baoen: [0, 14], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], baoguo: [0, -4], lingxiao: [0, 6], fotou: [2], liaodi: [1, 8], jiutian: [1, -12], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0, 10], shuanglin: [1], tiantan: [2], feihong: [1], xitai: [0] };
     const mid = { name: '', y: 130, below: 62 };
     SITES.forEach(s => {
       const ln = unified.has(s.id) ? mid : north.has(s.id) ? lanes[0] : lanes[1];

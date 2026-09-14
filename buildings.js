@@ -104,10 +104,11 @@ const Buildings = (() => {
     S.stroke('frame', inf, 'thin');
     return yL;
   }
-  function octBrackets(S, cx, w, yBase, s, tiers = 2, dense = false) {
+  function octBrackets(S, cx, w, yBase, s, tiers = 2, dense = false, sq = 0) {
     const f = 0.207 * w;
     let d = '';
     let xs = [cx - w / 2, cx - f, cx + f, cx + w / 2, cx - (w / 2 + f) / 2, cx + (w / 2 + f) / 2, cx];
+    if (sq) { xs = []; for (let k = 0; k <= sq; k++) xs.push(cx - w / 2 + w * k / sq); }
     if (dense) { xs = []; const n = Math.round(w / 22); for (let k = 0; k <= n; k++) xs.push(cx - w / 2 + w * k / n); }
     for (const x of xs) d += bracketPath(x, yBase, s, tiers).d;
     S.stroke('bracket', d, 'brk');
@@ -328,6 +329,8 @@ const Buildings = (() => {
     const sides = o.sides || 8, f = sides === 8 ? 0.207 * w : w / 2;
     let d = rect(cx - w / 2, y - hh, w, hh);
     if (sides === 8) d += line(cx - f, y - hh, cx - f, y) + line(cx + f, y - hh, cx + f, y);
+    if (o.pil) for (let k = 1; k < o.pil; k++) d += line(cx - w / 2 + w * k / o.pil, y - hh, cx - w / 2 + w * k / o.pil, y);
+    if (o.lintel) d += line(cx - w / 2, y - hh + 6, cx + w / 2, y - hh + 6);
     S.stroke('frame', d, o.cls || 'col');
     let inf = '';
     const arch = (x, yb, ww, ah) => `M${r(x - ww / 2)},${r(yb)}v${r(-(ah - ww / 2))}a${r(ww / 2)},${r(ww / 2)} 0 0 1 ${r(ww)},0v${r(ah - ww / 2)}z`;
@@ -376,10 +379,10 @@ const Buildings = (() => {
         railing(S, cx - bw / 2 + 3, cx + bw / 2 - 3, y, st.railH || 10); y -= st.railH || 10;
         if (st.noteBalcony) S.note(cx + bw / 2 + 4, y + 6, st.noteBalcony, 'r');
       }
-      y = towerWall(S, cx, st.w, y, st.wallH, { sides, door: st.door, win: st.win, doorW: st.doorW, doorH: st.doorH, cls: st.wallCls });
+      y = towerWall(S, cx, st.w, y, st.wallH, { sides, door: st.door, win: st.win, doorW: st.doorW, doorH: st.doorH, cls: st.wallCls, pil: st.pil, lintel: st.lintel });
       if (st.noteWall) S.note(cx - st.w / 2 - 2, y + st.wallH * 0.5, st.noteWall, 'l');
       if (st.noteWallR) S.note(cx + st.w / 2 + 2, y + st.wallH * 0.5, st.noteWallR, 'r');
-      if (st.bs) { y = octBrackets(S, cx, st.w, y, st.bs, st.tiers || 2, !!st.dense); if (st.noteBs) S.note(cx + st.w / 2 + 6, y + 8, st.noteBs, 'r'); }
+      if (st.bs) { y = octBrackets(S, cx, st.w, y, st.bs, st.tiers || 2, !!st.dense, sides === 4 ? (st.pil || 3) : 0); if (st.noteBs) S.note(cx + st.w / 2 + 6, y + 8, st.noteBs, 'r'); }
       const last = i === n - 1;
       if (st.eave === 'tile') {
         const yE = y - (st.rafter ?? 6);
@@ -396,18 +399,18 @@ const Buildings = (() => {
     // top
     const T = o.top || {};
     if (T.type === 'pyramid') {
-      const st = o.storeys[n - 1], xa = cx - st.w / 2 - st.over, xb = cx + st.w / 2 + st.over, lift = st.lift ?? 10, ew = xb - xa, fi = 0.207 * ew;
-      const yE = y + st.band, yA = yE - T.h;
+      const st = o.storeys[n - 1], over = st.over ?? (st.outStep || 5) * (st.outL || 3), xa = cx - st.w / 2 - over, xb = cx + st.w / 2 + over, lift = st.eave === 'tile' ? (st.lift ?? 10) : 2, ew = xb - xa, fi = 0.207 * ew;
+      const yE = st.eave === 'tile' ? y + st.band : y + 4, yA = yE - T.h;
       S.fill('roof', `M${r(cx)},${r(yA)}${sag(cx, yA, xb, yE - lift, 0.3, 0.7)}${eaveRev(xa, xb, yE, lift, 30)}${sag(xa, yE - lift, cx, yA, 0.7, 0.3)}z`);
       S.stroke('roof', `M${r(cx)},${r(yA)}${sag(cx, yA, xa, yE - lift, 0.3, 0.7)}M${r(cx)},${r(yA)}${sag(cx, yA, xb, yE - lift, 0.3, 0.7)}M${r(cx)},${r(yA)}${sag(cx, yA, cx - fi, yE - 2, 0.3, 0.7)}M${r(cx)},${r(yA)}${sag(cx, yA, cx + fi, yE - 2, 0.3, 0.7)}`, 'ridge');
       y = yA;
       if (T.sha) { const sh = sha(S, cx, y, T.sha); y = sh.top; }
-      else y = stupaTop(S, cx, y, T.stupa || { bulbW: 22, rings: 3, ringW: 12 });
+      else if (T.stupa !== null) y = stupaTop(S, cx, y, T.stupa || { bulbW: 22, rings: 3, ringW: 12 });
     } else if (T.type === 'cap') {
       // brick stepped cap then a stupa-form finial
       let ww = T.w || o.storeys[n - 1].w * 0.7;
       for (let k = 0; k < (T.courses || 4); k++) { ww -= (T.step || 12); S.stroke('roof', rect(cx - ww / 2, y - 6, ww, 6)); y -= 6; }
-      y = stupaTop(S, cx, y, T.stupa || {});
+      if (T.stupa !== null) y = stupaTop(S, cx, y, T.stupa || {});
     }
     if (T.note) S.note(cx + 10, y + 16, T.note, 'r');
     S.top = y;
@@ -426,6 +429,22 @@ const Buildings = (() => {
     S.note(250 + o.tower.storeys[0].w / 2 + 4, yG - o.tower.storeys[0].wallH * 0.55, '须弥塔 · 九级密檐', 'r');
     S.dim = { x0: 250 - o.tower.base[0].w / 2, x1: 250 + o.tower.base[0].w / 2, y: yG + 16, label: o.dimLabel, v: { x: 250 - o.tower.base[0].w / 2 - 40, y0: yG, y1: S.top - 4, label: o.vLabel } };
     S.dim2 = { x0: 590 - o.tower2.bays * o.tower2.bw / 2 - o.tower2.platPad, x1: 590 + o.tower2.bays * o.tower2.bw / 2 + o.tower2.platPad, y: yG + 16, label: o.dimLabel2 };
+    return S;
+  }
+
+  // ---- two towers to one scale on a shared ground line ----
+  function towerPair(o) {
+    const S = new Sheet(800, 560), yG = 526;
+    S.stroke('base', line(30, yG, 770, yG), 'ground');
+    tierTower({ ...o.a, S, cx: o.ax, yG }); const aTop = S.top;
+    tierTower({ ...o.b, S, cx: o.bx, yG }); const bTop = S.top;
+    S.note(o.ax + o.a.storeys[0].w / 2 + 4, yG - 60, o.aNote, 'r');
+    S.note(o.bx + o.b.storeys[0].w / 2 + 4, yG - 40, o.bNote, 'r');
+    const aw = o.a.base ? o.a.base[0].w : o.a.storeys[0].w, bw = o.b.base ? o.b.base[0].w : o.b.storeys[0].w;
+    S.dim = { x0: o.ax - aw / 2, x1: o.ax + aw / 2, y: yG + 16, label: o.aDim, v: { x: o.ax - aw / 2 - 34, y0: yG, y1: aTop - 4, label: o.aV } };
+    S.dim2 = { x0: o.bx - bw / 2, x1: o.bx + bw / 2, y: yG + 16, label: o.bDim };
+    S.stroke('base', `M${r(o.bx + bw / 2 + 28)},${r(yG)}h12M${r(o.bx + bw / 2 + 28)},${r(bTop - 4)}h12M${r(o.bx + bw / 2 + 34)},${r(yG)}V${r(bTop - 4)}`, 'thin');
+    S.label(o.bx + bw / 2 + 34, bTop - 28, o.bV);
     return S;
   }
 
@@ -902,5 +921,5 @@ const Buildings = (() => {
     svg.classList.add('primed');
   }
 
-  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, stage, grotto, tierTower, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
+  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, stage, grotto, tierTower, towerPair, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
 })();

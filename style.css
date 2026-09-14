@@ -143,7 +143,7 @@ a { color: inherit; }
 section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 
 /* ---------- map ---------- */
-#map .wrap { display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
+#map .wrap { display: grid; grid-template-columns: minmax(300px, 470px) 1fr; gap: clamp(32px, 6vw, 96px); align-items: start; }
 .map { width: 100%; height: auto; display: block; }
 .map .grid { stroke: rgba(235, 226, 204, .09); stroke-width: 1; stroke-dasharray: 2 5; }
 .map .frame { fill: none; stroke: rgba(214, 171, 92, .25); stroke-width: 1; }
@@ -212,6 +212,8 @@ section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .site-fig figure { margin: 0; }
 .site-fig figcaption { margin-top: 12px; display: flex; justify-content: space-between; gap: 16px; }
 .site-fig .draft { filter: drop-shadow(0 0 22px rgba(214, 171, 92, .06)); }
+.site.lost .draft.drawn .ink { opacity: .55; }
+.site.lost .draft.drawn .ink .stroke { stroke-dasharray: none; }
 /* an externally drawn plate (black or dark lines on white/transparent) tinted to the page's gold */
 .site-fig img.plate { display: block; width: 100%; height: auto; mix-blend-mode: screen; filter: invert(1) sepia(1) saturate(2.6) hue-rotate(-12deg) brightness(.92) contrast(1.05); opacity: .96; }
 .site-fig img.plate.raw { mix-blend-mode: normal; filter: drop-shadow(0 0 22px rgba(214, 171, 92, .06)); opacity: 1; }
