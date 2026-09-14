@@ -282,32 +282,34 @@ const Buildings = (() => {
     const W2 = W - 2 * o.bw, x20 = cx - W2 / 2, yT = yE1 - o.skirtH;
     skirtRoof(S, x0 - ov, x1 + ov, yE1, x20 - 10, x20 + W2 + 10, yT, { k: 56 });
     // upper storey
-    const { yL: yL2 } = colonnade(S, x20, yT, o.bays - 2, o.bw, o.colH2, o.fills2);
+    const { yL: yL2 } = colonnade(S, x20, yT, o.bays - 2, o.bw, o.colH2, o.fills2, { lower: false });
     const top2 = bracketBand(S, x20, x20 + W2, yL2, o.bracketS, o.bays - 1, 2, 1, { ang: o.ang || 0, intermAng: o.ang || 0 });
     const yE2 = top2 - 9;
     const roof = gableHipRoof(S, cx, x20 - ov, x20 + W2 + ov, yE2, { ridgeW: W2 * 0.55, roofH: o.roofH, gableH: o.gableH, lift: 14, chiwen: o.chiwen || 22, k: 60 });
-    // 抱厦 in front, gable facing the viewer
-    const pb = 3, pW = pb * o.bw, px0 = cx - pW / 2, px1 = cx + pW / 2, pov = o.porchOver || 44;
-    const pyL = yP - o.porchColH;
-    const pTop = pyL - bracketH(o.bracketS * 0.9, 2) - 4, pyE = pTop - 8;
-    const pxa = px0 - pov, pxb = px1 + pov, plift = 12, gw = o.gableW, yB = pyE - o.porchRise, yA = yB - o.gableRise;
-    // occluder: porch roof + body
-    S.fill('frame', `M${r(cx)},${r(yA - 2)}L${r(cx + gw / 2 + 3)},${r(yB)}${sag(cx + gw / 2 + 3, yB, pxb, pyE - plift, 0.3, 0.7)}${eaveRev(pxa, pxb, pyE, plift, 40)}${sag(pxa, pyE - plift, cx - gw / 2 - 3, yB, 0.7, 0.3)}z` +
-      rect(px0 - 6, pyE, pW + 12, yP - pyE), 'occlude');
-    colonnade(S, px0, yP, pb, o.bw, o.porchColH, ['win', 'door', 'win']);
-    bracketBand(S, px0, px1, pyL, o.bracketS * 0.9, pb + 1, 2, 1, { ang: o.ang || 0, intermAng: o.ang || 0 });
-    // porch roof fill + lines
-    S.fill('roof', `M${r(cx)},${r(yA)}L${r(cx + gw / 2)},${r(yB)}${sag(cx + gw / 2, yB, pxb, pyE - plift, 0.3, 0.7)}${eaveRev(pxa, pxb, pyE, plift, 40)}${sag(pxa, pyE - plift, cx - gw / 2, yB, 0.7, 0.3)}z`);
-    S.stroke('roof', eave(pxa, pxb, pyE, plift, 40), 'eave');
-    S.stroke('roof', `M${r(cx - gw / 2)},${r(yB)}${sag(cx - gw / 2, yB, pxa, pyE - plift, 0.3, 0.7)}M${r(cx + gw / 2)},${r(yB)}${sag(cx + gw / 2, yB, pxb, pyE - plift, 0.3, 0.7)}`, 'ridge');
-    // 山花: 博风板 + 悬鱼 + slats
-    let g = `M${r(cx - gw / 2)},${r(yB)}L${r(cx)},${r(yA)}L${r(cx + gw / 2)},${r(yB)}z`;
-    g += `M${r(cx - gw / 2 - 2)},${r(yB + 4)}L${r(cx)},${r(yA - 4)}L${r(cx + gw / 2 + 2)},${r(yB + 4)}`;
-    g += `M${r(cx)},${r(yA + 6)}c-8,8 -8,20 0,26c8,-6 8,-18 0,-26z`;           // 悬鱼
-    for (let x = cx - gw / 2 + 12; x < cx + gw / 2 - 6; x += 10) { const t = Math.abs(x - cx) / (gw / 2); g += line(x, yB - 2, x, yA + (yB - yA) * t + 6); }
-    S.stroke('roof', g, 'thin');
-    S.stroke('roof', line(cx - gw / 2, yB, cx + gw / 2, yB), 'ridge');
-    S.note(cx, yA + 24, '抱厦 · 山面向前', 'l', 150);
+    if (o.porch !== false) {
+      // 抱厦 in front, gable facing the viewer
+      const pb = 3, pW = pb * o.bw, px0 = cx - pW / 2, px1 = cx + pW / 2, pov = o.porchOver || 44;
+      const pyL = yP - o.porchColH;
+      const pTop = pyL - bracketH(o.bracketS * 0.9, 2) - 4, pyE = pTop - 8;
+      const pxa = px0 - pov, pxb = px1 + pov, plift = 12, gw = o.gableW, yB = pyE - o.porchRise, yA = yB - o.gableRise;
+      // occluder: porch roof + body
+      S.fill('frame', `M${r(cx)},${r(yA - 2)}L${r(cx + gw / 2 + 3)},${r(yB)}${sag(cx + gw / 2 + 3, yB, pxb, pyE - plift, 0.3, 0.7)}${eaveRev(pxa, pxb, pyE, plift, 40)}${sag(pxa, pyE - plift, cx - gw / 2 - 3, yB, 0.7, 0.3)}z` +
+        rect(px0 - 6, pyE, pW + 12, yP - pyE), 'occlude');
+      colonnade(S, px0, yP, pb, o.bw, o.porchColH, ['win', 'door', 'win']);
+      bracketBand(S, px0, px1, pyL, o.bracketS * 0.9, pb + 1, 2, 1, { ang: o.ang || 0, intermAng: o.ang || 0 });
+      // porch roof fill + lines
+      S.fill('roof', `M${r(cx)},${r(yA)}L${r(cx + gw / 2)},${r(yB)}${sag(cx + gw / 2, yB, pxb, pyE - plift, 0.3, 0.7)}${eaveRev(pxa, pxb, pyE, plift, 40)}${sag(pxa, pyE - plift, cx - gw / 2, yB, 0.7, 0.3)}z`);
+      S.stroke('roof', eave(pxa, pxb, pyE, plift, 40), 'eave');
+      S.stroke('roof', `M${r(cx - gw / 2)},${r(yB)}${sag(cx - gw / 2, yB, pxa, pyE - plift, 0.3, 0.7)}M${r(cx + gw / 2)},${r(yB)}${sag(cx + gw / 2, yB, pxb, pyE - plift, 0.3, 0.7)}`, 'ridge');
+      // 山花: 博风板 + 悬鱼 + slats
+      let g = `M${r(cx - gw / 2)},${r(yB)}L${r(cx)},${r(yA)}L${r(cx + gw / 2)},${r(yB)}z`;
+      g += `M${r(cx - gw / 2 - 2)},${r(yB + 4)}L${r(cx)},${r(yA - 4)}L${r(cx + gw / 2 + 2)},${r(yB + 4)}`;
+      g += `M${r(cx)},${r(yA + 6)}c-8,8 -8,20 0,26c8,-6 8,-18 0,-26z`;           // 悬鱼
+      for (let x = cx - gw / 2 + 12; x < cx + gw / 2 - 6; x += 10) { const t = Math.abs(x - cx) / (gw / 2); g += line(x, yB - 2, x, yA + (yB - yA) * t + 6); }
+      S.stroke('roof', g, 'thin');
+      S.stroke('roof', line(cx - gw / 2, yB, cx + gw / 2, yB), 'ridge');
+      S.note(cx, yA + 24, '抱厦 · 山面向前', 'l', 150);
+    }
     S.note(roof.xr1, roof.yR - 12, '重檐歇山', 'r');
     S.note(x0 - ov + 10, yE1 - 6, '下檐', 'l');
     S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
@@ -616,6 +618,40 @@ const Buildings = (() => {
     return S;
   }
 
+  // ---- 祠庙戏台 (宁海): a one-bay stage raised on posts, balustrade at the lip, 歇山 roof with sweeping 翘角 ----
+  function stage(o) {
+    const S = new Sheet(800, 560), cx = 400, yG = 526;
+    const W = o.w, x0 = cx - W / 2, x1 = cx + W / 2, yF = yG - o.stageH;
+    S.stroke('base', line(x0 - 90, yG, x1 + 90, yG), 'ground');
+    let posts = '';
+    for (const x of [x0 + 4, cx - W * 0.2, cx + W * 0.2, x1 - 4]) posts += `M${r(x)},${r(yG)}V${r(yF - 8)}M${r(x - 8)},${r(yG)}h16M${r(x - 6)},${r(yG - 6)}h12`;
+    S.stroke('base', posts, 'col');
+    S.stroke('base', rect(x0 - 12, yF - 8, W + 24, 8));
+    S.stroke('base', line(x0 - 6, yF - 4, x1 + 6, yF - 4), 'thin');
+    railing(S, x0 - 8, x1 + 8, yF - 8, o.railH);
+    S.note(x1 + 8, yF - 8 - o.railH * 0.5, '台口勾阑 · 雕花', 'r');
+    const { yL } = colonnade(S, x0, yF - 8, 1, W, o.colH, ['open']);
+    // 挂落 valance and the 匾额
+    let gl = rect(x0 + 6, yL + 5, W - 12, 14);
+    for (let x = x0 + 12; x < x1 - 8; x += 7) gl += line(x, yL + 5, x, yL + 19);
+    for (let x = x0 + 9; x < x1 - 8; x += 7) gl += line(x, yL + 12, x + 7, yL + 12);
+    S.stroke('frame', gl, 'thin');
+    S.stroke('frame', rect(cx - 44, yL + 24, 88, 24) + line(cx - 36, yL + 36, cx + 36, yL + 36), 'thin');
+    S.note(cx + 44, yL + 36, '匾额 · 台内藻井', 'r');
+    // 牛腿: carved knee brackets on the outer face of the columns
+    S.stroke('bracket', `M${r(x0)},${r(yL + 10)}q-22,2 -26,-24q16,12 26,-4zM${r(x1)},${r(yL + 10)}q22,2 26,-24q-16,12 -26,-4z`, 'brk2');
+    const top = bracketBand(S, x0, x1, yL, o.bracketS, 2, 1, 3, { intermS: 1 });
+    const yE = top - 9;
+    const roof = gableHipRoof(S, cx, x0 - o.overhang, x1 + o.overhang, yE, { ridgeW: W * .6, roofH: o.roofH, gableH: o.gableH, lift: o.lift, chiwen: o.chiwen, k: o.k || 80 });
+    S.stroke('ornament', `M${r(cx - 8)},${r(roof.yR)}l2,-8h12l2,8zM${r(cx)},${r(roof.yR - 8)}v-12m-6,0h12m-6,0m-4,-8h8`, 'orn'); // 脊刹
+    S.note(x0 - o.overhang + 4, yE - o.lift - 4, '翘角 · 浙东做法', 'l');
+    S.note(roof.xr1, roof.yR - o.chiwen * 0.6, '鸱吻 · 脊刹', 'r');
+    S.note(x0 - 10, yL - 6, '牛腿', 'l');
+    S.note(x1 - 4, yG - o.stageH * 0.5, '台下 · 架空', 'r');
+    S.dim = { x0: x0 - 12, x1: x1 + 12, y: yG + 18, label: o.dimLabel, v: { x: x0 - o.overhang - 30, y0: yG, y1: yF - 8, label: o.vLabel } };
+    return S;
+  }
+
   // ---- hero: section through a bracket set with 昂, eave and rafters ----
   function bracketSection() {
     const w = 760, h = 400, S = new Sheet(w, h), cx = 430, yB = 352;
@@ -735,5 +771,5 @@ const Buildings = (() => {
     svg.classList.add('primed');
   }
 
-  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, tierTower, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
+  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, stage, tierTower, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
 })();
