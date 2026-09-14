@@ -89,7 +89,8 @@
     const ul = $('#places');
     PLACES.forEach(p => {
       const ss = SITES.filter(s => s.placeKey === p.key);
-      const li = h('li', { 'data-key': p.key }, `<b>${p.name}</b><span class="sites">${ss.map(s => `<a href="#${s.id}">${s.name}</a>`).join('')}</span><span class="mono">${p.prov} · ${ss.map(s => s.year).join(' / ')}</span>`);
+      const yrs = ss.length > 3 ? `${Math.min(...ss.map(s => s.year))} – ${Math.max(...ss.map(s => s.year))}` : ss.map(s => s.yearLabel || s.year).join(' / ');
+      const li = h('li', { 'data-key': p.key }, `<b>${p.name}</b><span class="sites">${ss.map(s => `<a href="#${s.id}">${s.name}</a>`).join('')}</span><span class="mono">${p.prov} · ${yrs}</span>`);
       ul.appendChild(li);
     });
     const focus = key => { svg.classList.toggle('focus', !!key); svg.querySelectorAll('.pt').forEach(g => g.classList.toggle('on', g.dataset.key === key)); ul.querySelectorAll('li').forEach(li => li.classList.toggle('on', li.dataset.key === key)); };

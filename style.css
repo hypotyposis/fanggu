@@ -151,12 +151,14 @@ section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .map .pt { transition: opacity .3s; cursor: pointer; }
 .map.focus .pt:not(.on) { opacity: .28; }
 .places { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-.places li { display: grid; grid-template-columns: 90px 1fr auto; gap: 18px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid rgba(235, 226, 204, .1); transition: padding-left .3s, border-color .3s; }
+.places li { display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; gap: 18px; align-items: baseline; padding: 20px 0; border-bottom: 1px solid rgba(235, 226, 204, .1); transition: padding-left .3s, border-color .3s; }
 .places li:hover, .places li.on { padding-left: 10px; border-color: var(--acc); }
 .places li b { font-size: 22px; font-weight: 500; letter-spacing: .1em; color: var(--paper); }
 .places li .sites a { text-decoration: none; color: var(--paper-2); transition: color .25s; }
 .places li .sites a:hover { color: var(--gold); }
 .places li .sites a + a::before { content: "·"; margin: 0 .5em; color: var(--paper-3); }
+.places li .sites { line-height: 1.9; }
+.places li .mono { white-space: nowrap; }
 .map-note { margin-top: 34px; max-width: 34em; color: var(--paper-2); font-size: 15.5px; }
 
 /* ---------- timeline ---------- */
