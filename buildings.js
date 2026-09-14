@@ -25,6 +25,7 @@ const Buildings = (() => {
       S.note(xa + 8, yE - 8, o.roof === 'hip' ? '庑殿 · 出檐' : o.roof === 'gable' ? '悬山 · 博风' : '歇山 · 戗脊', 'l');
       if (!inset) S.note(x0 + 2, yP - o.colH * 0.55, '侧脚 · 生起', 'l');
       S.note(cx + o.bw * 0.5, yP + o.platH * 0.5, '台基 · 踏道', 'r');
+      if (o.ridgeNote) S.note(cx, roof.yR + 2, o.ridgeNote, 'l', 70);
       S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
     }
     if (inset) {

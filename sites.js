@@ -184,10 +184,10 @@ const SITES = [
   },
   {
     id: 'jiutian', name: '九天圣母庙', short: '圣母庙', sub: '献殿 · 东河村', dyn: 'yuan', tag: '宋元', era: '宋建中靖国元年重修 · 献殿元构', year: 1300, yearLabel: '元', place: '山西平顺 · 浊漳河谷 · 东河村', placeKey: 'pingshun',
-    lede: '唐代创建，圣母殿北宋初重建，建中靖国元年（1101）全庙重修。殿前的元代献殿最特别：正脊与开间垂直，进深五间比面阔三间还长，顶上用的是等级最高的庑殿——从院里看过去，看到的是庑殿的山面。',
+    lede: '唐代创建，圣母殿北宋初重建，建中靖国元年（1101）全庙重修。殿前的元代献殿最特别：进深五间比面阔三间还长，正脊顺着进深方向，顶上用的是等级最高的庑殿。从院里正面看到的是它的山面，所以这里画的是它的长边——正脊与两只鸱吻都在这一面。',
     facts: ['<b>献殿</b>元构，面阔三间、进深五间，四周十六根抹角砂石方柱，四面开敞；斗拱四铺作单杪，立在一米高的青石台基上。', '献殿、正殿、舞楼三座殿顶的角檐相互穿插，当地称"勾心斗角"。', '<b>圣母殿</b>宋构，面阔三间单檐歇山；一座村庙里宋、元、明、清四朝木构前后相接。'],
-    caption: ['献殿立面示意 · 面阔三间 · 进深五间', '庑殿顶 · 山面朝前 · 元'],
-    draw: () => Buildings.hall({ bays: 3, bw: 96, colH: 96, fills: ['open', 'open', 'open'], roof: 'hip', bracketS: 1.5, tiers: 1, interm: 1, intermS: .8, overhang: 76, roofH: 150, ridgeRatio: .03, lift: 16, chiwen: 26, platH: 30, platPad: 36, puzuo: '四铺作 · 单杪 · 石柱', dimLabel: '面阔三间 · 正脊与开间垂直' }),
+    caption: ['献殿侧立面示意 · 进深五间', '庑殿顶 · 正脊沿进深 · 元'],
+    draw: () => Buildings.hall({ bays: 5, bw: 76, colH: 96, fills: ['open', 'open', 'open', 'open', 'open'], roof: 'hip', bracketS: 1.5, tiers: 1, interm: 1, intermS: .8, overhang: 72, roofH: 140, ridgeRatio: .5, lift: 16, chiwen: 26, platH: 30, platPad: 34, puzuo: '四铺作 · 单杪 · 石柱', ridgeNote: '正脊沿进深 · 院内正面见山面', dimLabel: '进深五间（面阔三间在另一面）' }),
   },
   {
     id: 'shuanglin', name: '平遥双林寺', short: '双林寺', sub: '天王殿 · 彩塑', dyn: 'ming', tag: '明', era: '北齐武平二年重修 · 明初重建', year: 1400, yearLabel: '明初', place: '山西平遥 · 桥头村', placeKey: 'pingyao',
