@@ -26,8 +26,14 @@
       const art = h('article', { class: 'site' + (i % 2 ? ' flip' : '') + (s.tall ? ' tall' : ''), id: s.id, 'data-year': s.year });
       const fig = h('div', { class: 'site-fig' });
       const figure = h('figure');
-      const svg = B.render(s.draw(), { label: s.name + ' 立面示意' });
-      figure.appendChild(svg);
+      let svg = null;
+      if (s.image) {
+        const im = s.image;
+        figure.appendChild(h('img', { class: 'plate' + (im.tint === false ? ' raw' : ''), src: im.src, alt: im.alt || s.name, loading: 'lazy', ...(im.width ? { width: im.width, height: im.height } : {}) }));
+      } else {
+        svg = B.render(s.draw(), { label: s.name + ' 立面示意' });
+        figure.appendChild(svg);
+      }
       figure.appendChild(h('figcaption', {}, `<span class="mono">${s.caption[0]}</span><span class="mono">${s.caption[1]}</span>`));
       fig.appendChild(figure);
       const txt = h('div', { class: 'site-text' });
@@ -39,7 +45,7 @@
         ${s.quote ? `<p class="quote">${s.quote}</p>` : ''}`;
       art.append(fig, txt);
       wrap.appendChild(art);
-      drafts.push(svg);
+      if (svg) drafts.push(svg);
     });
     sec.appendChild(wrap);
     sitesRoot.appendChild(sec);
@@ -166,6 +172,14 @@
   };
   const curIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) setCurrent(e.target.id); }), { rootMargin: '-45% 0px -45% 0px' });
   arts.forEach(a => curIO.observe(a));
+
+  // back to top: appears once the hero has scrolled away
+  const totop = $('#totop');
+  if (totop) {
+    const tick = () => totop.classList.toggle('show', scrollY > innerHeight * 0.9);
+    addEventListener('scroll', tick, { passive: true }); tick();
+    totop.addEventListener('click', () => scrollTo({ top: 0, behavior: reduced ? 'auto' : 'smooth' }));
+  }
 
   if (!reduced && matchMedia('(hover: hover)').matches) {
     let raf = 0;

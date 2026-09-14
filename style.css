@@ -126,6 +126,16 @@ a { color: inherit; }
 .rail li.on a::before { transform: scale(1.8); box-shadow: 0 0 10px var(--gold); }
 .rail:hover li a span, .rail li.on a span { opacity: 1; transform: none; }
 
+/* ---------- back to top ---------- */
+.totop {
+  position: fixed; right: 22px; bottom: 22px; z-index: 25; width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--cinnabar); background: rgba(16, 15, 13, .85); color: var(--paper); cursor: pointer;
+  font-family: var(--brush); font-size: 20px; line-height: 1; padding: 0; backdrop-filter: blur(6px);
+  opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity .3s, transform .3s, background .25s, color .25s;
+}
+.totop.show { opacity: 1; transform: none; pointer-events: auto; }
+.totop:hover, .totop:focus-visible { background: var(--cinnabar); color: var(--paper); }
+
 /* ---------- section chrome ---------- */
 .sec-head { display: flex; align-items: baseline; gap: 22px; margin-bottom: 36px; }
 .sec-head h2 { font-size: clamp(30px, 3.4vw, 44px); font-weight: 500; letter-spacing: .12em; margin: 0; }
@@ -202,6 +212,9 @@ section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .site-fig figure { margin: 0; }
 .site-fig figcaption { margin-top: 12px; display: flex; justify-content: space-between; gap: 16px; }
 .site-fig .draft { filter: drop-shadow(0 0 22px rgba(214, 171, 92, .06)); }
+/* an externally drawn plate (black or dark lines on white/transparent) tinted to the page's gold */
+.site-fig img.plate { display: block; width: 100%; height: auto; mix-blend-mode: screen; filter: invert(1) sepia(1) saturate(2.6) hue-rotate(-12deg) brightness(.92) contrast(1.05); opacity: .96; }
+.site-fig img.plate.raw { mix-blend-mode: normal; filter: none; }
 .site-text .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin-bottom: 18px; }
 .site-text .dyn { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--acc); color: var(--acc); font-family: var(--brush); font-size: 22px; line-height: 1; }
 .site-text .dyn.two { width: auto; padding: 0 8px; letter-spacing: .1em; }

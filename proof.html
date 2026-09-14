@@ -10,6 +10,7 @@ const list = [{ id: 'hero', name: '斗拱剖面', draw: () => Buildings.bracketS
 for (const s of list) {
   if (want && s.id !== want) continue;
   const f = document.createElement('figure'); f.innerHTML = `<h4 class="mono">${s.id} · ${s.name}</h4>`;
+  if (s.image) { const im = document.createElement('img'); im.className = 'plate' + (s.image.tint === false ? ' raw' : ''); im.src = s.image.src; f.classList.add('site-fig'); f.appendChild(im); document.getElementById('p').appendChild(f); continue; }
   const svg = Buildings.render(s.draw(), { ghost: false }); f.appendChild(svg); document.getElementById('p').appendChild(f);
   svg.style.setProperty('--acc', 'var(--gold)'); svg.classList.add('drawn');
   svg.querySelectorAll('.notes .note').forEach(n => n.style.opacity = 1); svg.querySelector('.dims').style.opacity = 1;
