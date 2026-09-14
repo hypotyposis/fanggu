@@ -11,6 +11,7 @@ const Draft = (() => {
     stroke(layer, d, cls = '') { this.items.push({ kind: 'stroke', layer, d, cls }); return this; }
     fill(layer, d, cls = 'wash') { this.items.push({ kind: 'fill', layer, d, cls }); return this; }
     note(x, y, text, side = 'r', len = 34) { this.notes.push({ x: r(x), y: r(y), text, side, len }); return this; }
+    label(x, y, text) { (this.labels ||= []).push({ x: r(x), y: r(y), text }); return this; }
   }
 
   // ---------- primitives ----------

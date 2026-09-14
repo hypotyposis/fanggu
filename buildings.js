@@ -652,6 +652,136 @@ const Buildings = (() => {
     return S;
   }
 
+  // ---- 石窟大龛 (龙门奉先寺): cliff niche, nine figures as scaled silhouettes, and a head sketch ----
+  function figStanding(S, x, yB, H, kind) {
+    const sw = { disciple: .2, bodhisattva: .22, king: .28, warrior: .32 }[kind] * H, fw = { disciple: .2, bodhisattva: .2, king: .26, warrior: .28 }[kind] * H;
+    const hr = H * .055, yS = yB - H * .8, yH = yB - H + hr;   // shoulder line, head centre
+    let d = '';
+    // individual niche behind the figure
+    const nw = Math.max(sw, fw) * 1.35, nh = H * 1.08;
+    S.stroke('base', `M${r(x - nw / 2)},${r(yB)}V${r(yB - nh * .55)}Q${r(x - nw / 2)},${r(yB - nh)} ${r(x)},${r(yB - nh)}Q${r(x + nw / 2)},${r(yB - nh)} ${r(x + nw / 2)},${r(yB - nh * .55)}V${r(yB)}`, 'thin');
+    if (kind === 'disciple' || kind === 'bodhisattva') S.stroke('frame', `M${r(x - hr * 1.7)},${r(yH)}a${r(hr * 1.7)},${r(hr * 1.7)} 0 1 0 ${r(hr * 3.4)},0a${r(hr * 1.7)},${r(hr * 1.7)} 0 1 0 ${r(-hr * 3.4)},0`, 'thin');
+    // body
+    const body = `M${r(x - sw / 2)},${r(yS)}C${r(x - sw / 2 - H * .02)},${r(yS + H * .2)} ${r(x - fw / 2)},${r(yB - H * .3)} ${r(x - fw / 2)},${r(yB)}H${r(x + fw / 2)}C${r(x + fw / 2)},${r(yB - H * .3)} ${r(x + sw / 2 + H * .02)},${r(yS + H * .2)} ${r(x + sw / 2)},${r(yS)}Q${r(x)},${r(yS - H * .05)} ${r(x - sw / 2)},${r(yS)}z`;
+    S.fill('frame', body, 'occlude');
+    d += body;
+    // head with the type's headgear
+    d += `M${r(x - hr)},${r(yH)}a${r(hr)},${r(hr * 1.15)} 0 1 0 ${r(hr * 2)},0a${r(hr)},${r(hr * 1.15)} 0 1 0 ${r(-hr * 2)},0`;
+    if (kind === 'bodhisattva') d += `M${r(x - hr * .8)},${r(yH - hr * 1.1)}l${r(hr * .3)},${r(-hr * .9)}h${r(hr)}l${r(hr * .3)},${r(hr * .9)}`; // 宝冠
+    if (kind === 'king') d += `M${r(x - hr * .9)},${r(yH - hr * .9)}q${r(hr * .9)},${r(-hr * 1.2)} ${r(hr * 1.8)},0`;              // 盔
+    if (kind === 'warrior') d += `M${r(x - hr * .4)},${r(yH - hr * 1.1)}q${r(hr * .4)},${r(-hr * .8)} ${r(hr * .8)},0`;            // 发髻
+    // type details
+    if (kind === 'disciple') d += `M${r(x - fw * .18)},${r(yS + H * .22)}q${r(fw * .18)},${r(H * .05)} ${r(fw * .36)},0` + `M${r(x - fw * .3)},${r(yB - H * .34)}q${r(fw * .3)},${r(H * .04)} ${r(fw * .6)},0`;
+    if (kind === 'bodhisattva') d += `M${r(x - sw * .32)},${r(yS + H * .04)}q${r(sw * .32)},${r(H * .16)} ${r(sw * .64)},0M${r(x)},${r(yS + H * .12)}v${r(H * .3)}` + `M${r(x - fw * .3)},${r(yB - H * .3)}q${r(fw * .3)},${r(H * .05)} ${r(fw * .6)},0`;
+    if (kind === 'king') { d += `M${r(x - sw * .42)},${r(yS + H * .08)}h${r(sw * .84)}M${r(x - sw * .36)},${r(yS + H * .28)}h${r(sw * .72)}M${r(x - sw * .15)},${r(yS + H * .1)}q${r(sw * .15)},${r(H * .08)} ${r(sw * .3)},0`;
+      d += `M${r(x - fw * .55)},${r(yB)}q${r(fw * .1)},${r(-H * .1)} ${r(fw * .35)},${r(-H * .06)}q${r(fw * .1)},${r(-H * .04)} ${r(fw * .15)},${r(H * .02)}`; // 踏鬼
+      d += `M${r(x - fw * .5)},${r(yB - H * .06)}a${r(H * .03)},${r(H * .03)} 0 1 0 ${r(H * .06)},0a${r(H * .03)},${r(H * .03)} 0 1 0 ${r(-H * .06)},0`; }
+    if (kind === 'warrior') d += `M${r(x + sw * .45)},${r(yS + H * .05)}q${r(sw * .3)},${r(-H * .2)} ${r(sw * .1)},${r(-H * .42)}` + `M${r(x - sw * .4)},${r(yS + H * .3)}h${r(sw * .8)}M${r(x - sw * .2)},${r(yS + H * .06)}q${r(sw * .2)},${r(H * .1)} ${r(sw * .4)},0`;
+    S.stroke('frame', d, 'col');
+  }
+  function buddhaSeated(S, x, yB, H) {
+    const hh = H * .233, hr = hh * .42, yTop = yB - H, yH = yTop + hh * .55;
+    // 身光 and 头光 on the cliff behind
+    S.stroke('base', `M${r(x - H * .5)},${r(yB)}V${r(yB - H * .55)}Q${r(x - H * .5)},${r(yTop - H * .12)} ${r(x)},${r(yTop - H * .14)}Q${r(x + H * .5)},${r(yTop - H * .12)} ${r(x + H * .5)},${r(yB - H * .55)}V${r(yB)}`, 'thin');
+    const R = H * .3;
+    let halo = `M${r(x - R)},${r(yH)}a${r(R)},${r(R)} 0 1 0 ${r(2 * R)},0a${r(R)},${r(R)} 0 1 0 ${r(-2 * R)},0`;
+    for (let i = 0; i < 24; i++) { const a0 = i / 24 * Math.PI * 2, a1 = (i + .5) / 24 * Math.PI * 2, a2 = (i + 1) / 24 * Math.PI * 2; halo += `M${r(x + R * Math.cos(a0))},${r(yH + R * Math.sin(a0))}L${r(x + R * 1.07 * Math.cos(a1))},${r(yH + R * 1.07 * Math.sin(a1))}L${r(x + R * Math.cos(a2))},${r(yH + R * Math.sin(a2))}`; }
+    const Ri = R * .72; halo += `M${r(x - Ri)},${r(yH)}a${r(Ri)},${r(Ri)} 0 1 0 ${r(2 * Ri)},0a${r(Ri)},${r(Ri)} 0 1 0 ${r(-2 * Ri)},0`;
+    S.stroke('frame', halo, 'thin');
+    // lotus seat
+    S.stroke('frame', `M${r(x - H * .46)},${r(yB)}h${r(H * .92)}M${r(x - H * .44)},${r(yB)}v${r(-H * .07)}h${r(H * .88)}v${r(H * .07)}` + Array.from({ length: 9 }, (_, i) => `M${r(x - H * .4 + i * H * .1)},${r(yB - H * .07)}q${r(H * .05)},${r(-H * .05)} ${r(H * .1)},0`).join(''), 'thin');
+    const yL = yB - H * .07;
+    // body: lap → torso → shoulders → neck → head
+    const lapW = H * .8, torsoW = H * .42, shW = H * .5, yWaist = yL - H * .26, yShoulder = yL - H * .56, yNeck = yTop + hh;
+    const body = `M${r(x - lapW / 2)},${r(yL)}V${r(yL - H * .1)}Q${r(x - lapW / 2)},${r(yL - H * .16)} ${r(x - torsoW / 2)},${r(yWaist)}C${r(x - torsoW / 2 - H * .02)},${r(yWaist - H * .12)} ${r(x - shW / 2)},${r(yShoulder + H * .08)} ${r(x - shW / 2)},${r(yShoulder)}Q${r(x - shW / 2 + H * .06)},${r(yNeck)} ${r(x - hh * .28)},${r(yNeck)}` +
+      `H${r(x + hh * .28)}Q${r(x + shW / 2 - H * .06)},${r(yNeck)} ${r(x + shW / 2)},${r(yShoulder)}C${r(x + shW / 2)},${r(yShoulder + H * .08)} ${r(x + torsoW / 2 + H * .02)},${r(yWaist - H * .12)} ${r(x + torsoW / 2)},${r(yWaist)}Q${r(x + lapW / 2)},${r(yL - H * .16)} ${r(x + lapW / 2)},${r(yL - H * .1)}V${r(yL)}z`;
+    S.fill('frame', body, 'occlude');
+    let d = body;
+    // head: plump oval with 肉髻 and long ears
+    d += `M${r(x - hr)},${r(yH + hh * .05)}a${r(hr)},${r(hh * .47)} 0 1 0 ${r(hr * 2)},0a${r(hr)},${r(hh * .47)} 0 1 0 ${r(-hr * 2)},0`;
+    d += `M${r(x - hr * .5)},${r(yTop + hh * .1)}q${r(hr * .5)},${r(-hh * .22)} ${r(hr)},0`;
+    d += `M${r(x - hr * 1.02)},${r(yH - hh * .1)}q${r(-hr * .3)},${r(hh * .3)} ${r(-hr * .06)},${r(hh * .5)}M${r(x + hr * 1.02)},${r(yH - hh * .1)}q${r(hr * .3)},${r(hh * .3)} ${r(hr * .06)},${r(hh * .5)}`;
+    // robe folds
+    for (let i = 0; i < 3; i++) { const t = .12 + i * .1; d += `M${r(x - torsoW * .36)},${r(yShoulder + H * t)}q${r(torsoW * .36)},${r(H * .09)} ${r(torsoW * .72)},0`; }
+    for (let i = 0; i < 3; i++) { const y = yL - H * .04 - i * H * .05; d += `M${r(x - lapW * .42)},${r(y)}q${r(lapW * .42)},${r(H * .04)} ${r(lapW * .84)},0`; }
+    S.stroke('frame', d, 'col');
+    return { yH, hr };
+  }
+  // hand-set line sketch of the Vairocana head in a 200 × 240 box centred at (cx, cy), scale s
+  function vairocanaHead(S, cx, cy, s) {
+    const P = (x, y) => `${r(cx + x * s)},${r(cy + y * s)}`;
+    const M = (x, y) => 'M' + P(x, y), L = (x, y) => 'L' + P(x, y), C = (a, b, c, d, e, f) => 'C' + P(a, b) + ' ' + P(c, d) + ' ' + P(e, f), Q = (a, b, c, d) => 'Q' + P(a, b) + ' ' + P(c, d);
+    // 头光: flame ring, lotus ring
+    let halo = '';
+    const R1 = 118, R2 = 104;
+    for (let i = 0; i < 28; i++) { const a0 = i / 28 * Math.PI * 2, a1 = (i + .5) / 28 * Math.PI * 2, a2 = (i + 1) / 28 * Math.PI * 2; halo += M(R1 * Math.cos(a0), R1 * Math.sin(a0) - 20) + Q(R1 * 1.09 * Math.cos(a1), R1 * 1.09 * Math.sin(a1) - 20, R1 * Math.cos(a2), R1 * Math.sin(a2) - 20); }
+    halo += M(-R2, -20) + `a${r(R2 * s)},${r(R2 * s)} 0 1 0 ${r(2 * R2 * s)},0a${r(R2 * s)},${r(R2 * s)} 0 1 0 ${r(-2 * R2 * s)},0`;
+    for (let i = 0; i < 16; i++) { const a0 = i / 16 * Math.PI * 2, a1 = (i + .5) / 16 * Math.PI * 2, a2 = (i + 1) / 16 * Math.PI * 2; halo += M(R2 * .9 * Math.cos(a0), R2 * .9 * Math.sin(a0) - 20) + Q(R2 * .76 * Math.cos(a1), R2 * .76 * Math.sin(a1) - 20, R2 * .9 * Math.cos(a2), R2 * .9 * Math.sin(a2) - 20); }
+    S.stroke('ornament', halo, 'thin');
+    // occluder for the head over the halo
+    S.fill('ornament', M(-60, -40) + C(-62, -80, -30, -96, 0, -96) + C(30, -96, 62, -80, 60, -40) + C(66, 0, 58, 44, 30, 62) + C(14, 72, -14, 72, -30, 62) + C(-58, 44, -66, 0, -60, -40) + 'z' + M(-22, -92) + C(-22, -118, 22, -118, 22, -92) + 'z', 'occlude');
+    let d = '';
+    // hair cap and 肉髻 with wave lines
+    d += M(-60, -40) + C(-62, -80, -30, -96, 0, -96) + C(30, -96, 62, -80, 60, -40);
+    d += M(-22, -92) + C(-22, -118, 22, -118, 22, -92);
+    d += M(-14, -104) + Q(0, -110, 14, -104) + M(-50, -66) + Q(-30, -74, -10, -70) + Q(10, -66, 30, -72) + Q(44, -76, 52, -66) + M(-44, -80) + Q(-24, -88, -4, -84) + Q(16, -80, 36, -86);
+    // face outline
+    d += M(-60, -40) + C(-66, 0, -58, 44, -30, 62) + C(-14, 72, 14, 72, 30, 62) + C(58, 44, 66, 0, 60, -40);
+    // hairline on the forehead
+    d += M(-56, -46) + C(-30, -58, 30, -58, 56, -46);
+    for (let x = -48; x <= 48; x += 12) d += M(x, -52 + Math.abs(x) * .1) + `q${r(3 * s)},${r(-4 * s)} ${r(6 * s)},0`;
+    // brows and nose
+    d += M(-50, -22) + C(-38, -35, -14, -33, -4, -22) + C(-6, -8, -9, 4, -13, 14);
+    d += M(50, -22) + C(38, -35, 14, -33, 4, -22) + C(6, -8, 9, 4, 13, 14);
+    d += M(-13, 14) + C(-8, 21, 8, 21, 13, 14) + M(-13, 14) + Q(-17, 10, -14, 6) + M(13, 14) + Q(17, 10, 14, 6);
+    // eyes, downcast and almost closed
+    d += M(-46, -12) + C(-38, -21, -20, -21, -12, -12) + M(-44, -11) + C(-36, -7, -22, -7, -14, -11) + M(-36, -15) + Q(-30, -11, -24, -15);
+    d += M(46, -12) + C(38, -21, 20, -21, 12, -12) + M(44, -11) + C(36, -7, 22, -7, 14, -11) + M(36, -15) + Q(30, -11, 24, -15);
+    // mouth and chin
+    d += M(-2, 22) + Q(0, 27, -1, 31) + M(-15, 36) + C(-8, 31, 8, 31, 15, 36) + M(-14, 36) + C(-6, 43, 6, 43, 14, 36) + M(-17, 35) + `l${r(-3 * s)},${r(1 * s)}` + M(17, 35) + `l${r(3 * s)},${r(1 * s)}`;
+    d += M(-14, 52) + C(-6, 48, 6, 48, 14, 52);
+    // ears with long lobes
+    d += M(-60, -30) + C(-80, -34, -84, 6, -72, 28) + C(-68, 36, -62, 34, -60, 26) + M(-66, -18) + C(-73, -6, -72, 10, -66, 16) + M(-70, 28) + C(-78, 44, -72, 60, -62, 54) + Q(-58, 50, -60, 40);
+    d += M(60, -30) + C(80, -34, 84, 6, 72, 28) + C(68, 36, 62, 34, 60, 26) + M(66, -18) + C(73, -6, 72, 10, 66, 16) + M(70, 28) + C(78, 44, 72, 60, 62, 54) + Q(58, 50, 60, 40);
+    // neck with 三道, shoulders and robe edge
+    d += M(-30, 64) + C(-32, 84, -34, 100, -36, 118) + M(30, 64) + C(32, 84, 34, 100, 36, 118);
+    d += M(-30, 78) + C(-12, 86, 12, 86, 30, 78) + M(-32, 92) + C(-12, 100, 12, 100, 32, 92);
+    d += M(-104, 118) + C(-72, 100, -44, 108, -36, 118) + M(104, 118) + C(72, 100, 44, 108, 36, 118) + M(-36, 118) + C(-16, 112, 16, 112, 36, 118);
+    S.stroke('ornament', d, 'col');
+    return { top: cy - 118 * s - 20 * s, box: { x0: cx - 104 * s, x1: cx + 104 * s, y0: cy - 118 * s, y1: cy + 118 * s } };
+  }
+  function grotto(o) {
+    const S = new Sheet(960, 600), cx = 335, yB = 560;
+    const H = o.buddhaH;                                  // px height of the Vairocana
+    // cliff niche around the ensemble
+    const xa = 28, xb = 642, yTop = yB - H * 1.32;
+    let cliff = `M${r(xa)},${r(yB)}V${r(yB - H * .8)}Q${r(xa + 10)},${r(yTop + 20)} ${r(xa + 190)},${r(yTop)}Q${r(cx)},${r(yTop - 24)} ${r(xb - 190)},${r(yTop)}Q${r(xb - 10)},${r(yTop + 20)} ${r(xb)},${r(yB - H * .8)}V${r(yB)}`;
+    let seed = 7; const rnd = () => (seed = (seed * 9301 + 49297) % 233280) / 233280;
+    for (let i = 0; i < 26; i++) { const x = xa + 12 + rnd() * (xb - xa - 24), y = yTop + 14 + rnd() * 70; cliff += `M${r(x)},${r(y)}l${r(6 + rnd() * 10)},${r(-3 + rnd() * 6)}`; }
+    S.stroke('base', cliff, 'thin');
+    S.stroke('base', line(xa - 10, yB, xb + 10, yB), 'ground');
+    S.stroke('base', line(xa, yB + 8, xb, yB + 8), 'thin');
+    const scale = H / 17.14; // px per metre
+    const f = o.figures; // [{kind, m (height in metres), dx (metres from centre), name}]
+    f.forEach(g => figStanding(S, cx + g.dx * scale, yB, g.m * scale, g.kind));
+    const b = buddhaSeated(S, cx, yB, H);
+    f.forEach(g => { if (g.name) S.label(cx + g.dx * scale, yB + 20, g.name); });
+    S.label(cx, yB + 20, '卢舍那');
+    S.note(cx + H * .3, b.yH - H * .18, '头光 · 莲瓣火焰', 'r');
+    S.note(cx - H * .3, yB - H * .1, '结跏趺坐 · 莲座', 'l');
+    // head sketch inset
+    const hx = 786, hy = 296, hs = 1.05;
+    vairocanaHead(S, hx, hy, hs);
+    S.note(hx + 24 * hs, hy - 106 * hs, '肉髻 · 波状发', 'r');
+    S.note(hx + 70 * hs, hy + 40 * hs, '耳长 1.9 m', 'rd');
+    S.note(hx + 30 * hs, hy + 88 * hs, '三道', 'rd');
+    const dx0 = hx + 130 * hs;
+    S.stroke('base', `M${r(dx0 - 4)},${r(hy - 118 * hs)}h8M${r(dx0 - 4)},${r(hy + 62 * hs)}h8M${r(dx0)},${r(hy - 118 * hs)}V${r(hy + 62 * hs)}`, 'thin');
+    S.label(dx0, hy + 78 * hs, '头高 4 m');
+    S.dim = { x0: xa, x1: xb, y: yB + 44, label: o.dimLabel, v: { x: 12, y0: yB, y1: yB - H, label: o.vLabel } };
+    return S;
+  }
+
   // ---- hero: section through a bracket set with 昂, eave and rafters ----
   function bracketSection() {
     const w = 760, h = 400, S = new Sheet(w, h), cx = 430, yB = 352;
@@ -731,7 +861,7 @@ const Buildings = (() => {
   }
   function dims(S) {
     const g = el('g', { class: 'dims' });
-    if (!S.dim) return g;
+    if (!S.dim) { for (const lb of S.labels || []) { const t3 = el('text', { x: lb.x, y: lb.y, 'text-anchor': 'middle' }); t3.textContent = lb.text; g.appendChild(t3); } return g; }
     const d = S.dim;
     g.appendChild(el('path', { d: `M${d.x0},${d.y - 6}v12M${d.x1},${d.y - 6}v12M${d.x0},${d.y}H${d.x1}` }));
     const t = el('text', { x: (d.x0 + d.x1) / 2, y: d.y + 18, 'text-anchor': 'middle' }); t.textContent = d.label; g.appendChild(t);
@@ -740,6 +870,7 @@ const Buildings = (() => {
       const v = el('text', { x: d.v.x - 10, y: (d.v.y0 + d.v.y1) / 2, 'text-anchor': 'middle', transform: `rotate(-90 ${d.v.x - 10} ${(d.v.y0 + d.v.y1) / 2})` });
       v.textContent = d.v.label; g.appendChild(v);
     }
+    for (const lb of S.labels || []) { const t3 = el('text', { x: lb.x, y: lb.y, 'text-anchor': 'middle' }); t3.textContent = lb.text; g.appendChild(t3); }
     if (S.dim2) {
       const e = S.dim2;
       g.appendChild(el('path', { d: `M${e.x0},${e.y - 6}v12M${e.x1},${e.y - 6}v12M${e.x0},${e.y}H${e.x1}` }));
@@ -771,5 +902,5 @@ const Buildings = (() => {
     svg.classList.add('primed');
   }
 
-  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, stage, tierTower, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
+  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, stage, grotto, tierTower, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
 })();

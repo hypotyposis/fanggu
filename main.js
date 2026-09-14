@@ -64,7 +64,7 @@
     svg.appendChild(sv('rect', { class: 'frame', x: pad.l, y: pad.t, width: X(lon1) - pad.l, height: Y(lat0) - pad.t }));
     svg.appendChild(sv('text', { class: 'prov', x: X(111.6), y: Y(39.75) }, '山西'));
     svg.appendChild(sv('text', { class: 'prov', x: X(117.2), y: Y(38.5) }, '河北'));
-    svg.appendChild(sv('text', { class: 'prov', x: X(112.6), y: Y(34.6) }, '河南'));
+    svg.appendChild(sv('text', { class: 'prov', x: X(113.6), y: Y(33.5) }, '河南'));
     svg.appendChild(sv('text', { class: 'prov', x: X(116.5), y: Y(31.4) }, '浙江'));
     const route = sv('path', { class: 'route draw', d: ROUTE.map(k => PLACES.find(p => p.key === k)).map((p, i) => `${i ? 'L' : 'M'}${X(p.lon).toFixed(1)},${Y(p.lat).toFixed(1)}`).join('') });
     svg.appendChild(route);
@@ -134,7 +134,7 @@
     });
     const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'chunhua', 'huata']), unified = new Set(['jiutian', 'xiayu', 'shuanglin', 'tiantan', 'feihong', 'xitai']);
     // [row, dx]: north labels stack above the north lane, everything else below its lane
-    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], baoguo: [0, -4], lingxiao: [0, 6], fotou: [2], liaodi: [1, 8], jiutian: [1, -12], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0, 10], shuanglin: [1], tiantan: [2], feihong: [1], xitai: [0] };
+    const TL = { kaiyuan: [0], longmenshiku: [2], xiuding: [1], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], baoguo: [0, -4], lingxiao: [0, 6], fotou: [2], liaodi: [1, 8], jiutian: [1, -12], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0, 10], shuanglin: [1], tiantan: [2], feihong: [1], xitai: [0] };
     const mid = { name: '', y: 130, below: 62 };
     SITES.forEach(s => {
       const ln = unified.has(s.id) ? mid : north.has(s.id) ? lanes[0] : lanes[1];
