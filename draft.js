@@ -36,6 +36,18 @@ const Draft = (() => {
       `M${r(x)},${r(y)}v${r(-h)}c0,${r(-w * 0.9)} ${r(dir * w)},${r(-w * 0.9)} ${r(dir * w)},${r(-w * 0.15)}` +
       `l${r(-dir * w * 0.45)},${r(w * 0.1)}M${r(x)},${r(y - h * 0.55)}h${r(dir * w * 0.6)}`, 'orn');
   }
+  // 瓦当 row along an eave: semicircles sampled along the same curve as eave()
+  function eaveTiles(s, xa, xb, y, lift, k, pitch = 9) {
+    const pts = [];
+    const q = (x0, y0, cx1, cy1, x1, y1, t) => [(1 - t) * (1 - t) * x0 + 2 * (1 - t) * t * cx1 + t * t * x1, (1 - t) * (1 - t) * y0 + 2 * (1 - t) * t * cy1 + t * t * y1];
+    const n = Math.max(2, Math.round(k / pitch));
+    for (let i = 0; i < n; i++) pts.push(q(xa, y - lift, xa + k * 0.55, y, xa + k, y, i / n));
+    for (let x = xa + k; x < xb - k; x += pitch) pts.push([x, y]);
+    for (let i = 0; i <= n; i++) pts.push(q(xb - k, y, xb - k * 0.55, y, xb, y - lift, i / n));
+    let d = '';
+    for (const [px, py] of pts) d += `M${r(px - 3)},${r(py)}a3,3 0 0 0 6,0`;
+    s.stroke('roof', d, 'wadang');
+  }
   // 鸱尾 (Tang fish-tail fin) at a ridge end; dir = +1 left end (curls right), -1 right end.
   function chiwei(s, x, y, h, dir) {
     const w = h * 0.62;
@@ -148,6 +160,8 @@ const Draft = (() => {
         inf += rect(bx + 6, yL + 7, bw - 12, wh);
         for (let x = bx + 12; x < bx + bw - 8; x += 6) inf += line(x, yL + 7, x, yL + 7 + wh);
         inf += line(bx, yL + 7 + wh + 4, bx + bw, yL + 7 + wh + 4); // 窗台
+      } else if (kind === 'open') {
+        inf += line(bx, yP - 4, bx + bw, yP - 4); // open bay: only the sill
       } else if (kind === 'figure') { // a guardian statue standing in an open bay
         const fw = bw * 0.42, fh = colH * 0.78, fx = bx + bw / 2, hr = fw * 0.2;
         inf += `M${r(fx)},${r(yP - fh)}m${r(-hr)},0a${r(hr)},${r(hr)} 0 1 0 ${r(hr * 2)},0a${r(hr)},${r(hr)} 0 1 0 ${r(-hr * 2)},0`;
@@ -168,9 +182,15 @@ const Draft = (() => {
     sheet.fill('roof', `M${r(xr0)},${r(yR)}L${r(xr1)},${r(yR)}${sag(xr1, yR, xb, yE - lift)}${eaveRev(xa, xb, yE, lift, k)}${sag(xa, yE - lift, xr0, yR, 0.72, 0.22)}z`);
     tiles(sheet, xr0, xr1, yR, xa + k * 0.6, xb - k * 0.6, yE);
     sheet.stroke('roof', eave(xa, xb, yE, lift, k), 'eave');
+    eaveTiles(sheet, xa, xb, yE, lift, k);
     sheet.stroke('roof', `M${r(xr0)},${r(yR)}${sag(xr0, yR, xa, yE - lift)}M${r(xr1)},${r(yR)}${sag(xr1, yR, xb, yE - lift)}`, 'ridge');
-    sheet.stroke('roof', rect(xr0, yR, ridgeW, 5), 'ridge');
     const orn = o.chiStyle === 'tang' ? chiwei : chiwen;
+    if (ridgeW < 12) { // hip end seen head-on: the ridge runs away from the viewer
+      sheet.stroke('roof', rect(cx - 5, yR, 10, 5), 'ridge');
+      orn(sheet, cx - 3, yR, o.chiwen || 20, 1);
+      return { yR, xr0: cx, xr1: cx };
+    }
+    sheet.stroke('roof', rect(xr0, yR, ridgeW, 5), 'ridge');
     orn(sheet, xr0, yR, o.chiwen || 20, 1);
     orn(sheet, xr1, yR, o.chiwen || 20, -1);
     if (o.ridgeOrn) sheet.stroke('ornament', `M${r(cx - 7)},${r(yR)}l2,-6h10l2,6zM${r(cx)},${r(yR - 6)}q-6,-8 0,-16q6,8 0,16`, 'orn'); // 火珠
@@ -183,6 +203,7 @@ const Draft = (() => {
     sheet.fill('roof', `M${r(xr0)},${r(yR)}L${r(xr1)},${r(yR)}L${r(xr1 + sl)},${r(yB)}${sag(xr1 + sl, yB, xb, yE - lift)}${eaveRev(xa, xb, yE, lift, k)}${sag(xa, yE - lift, xr0 - sl, yB, 0.72, 0.22)}z`);
     tiles(sheet, xr0, xr1, yR, xa + k * 0.6, xb - k * 0.6, yE);
     sheet.stroke('roof', eave(xa, xb, yE, lift, k), 'eave');
+    eaveTiles(sheet, xa, xb, yE, lift, k);
     sheet.stroke('roof', `M${r(xr0)},${r(yR)}L${r(xr0 - sl)},${r(yB)}${sag(xr0 - sl, yB, xa, yE - lift)}M${r(xr1)},${r(yR)}L${r(xr1 + sl)},${r(yB)}${sag(xr1 + sl, yB, xb, yE - lift)}`, 'ridge');
     sheet.stroke('roof', rect(xr0, yR, ridgeW, 5), 'ridge');
     const orn = o.chiStyle === 'tang' ? chiwei : chiwen;
@@ -193,15 +214,56 @@ const Draft = (() => {
 
   // 悬山 (overhanging gable): ridge and eave both run the full width; 博风 edges seen end-on.
   function gableRoof(sheet, cx, xa, xb, yE, o) {
-    const { roofH, chiwen: ch = 18 } = o, yR = yE - roofH;
-    sheet.fill('roof', `M${r(xa)},${r(yR)}L${r(xb)},${r(yR)}L${r(xb)},${r(yE - (o.lift ?? 5))}${eaveRev(xa, xb, yE, o.lift ?? 5, 40)}z`);
-    tiles(sheet, xa + 8, xb - 8, yR, xa + 8, xb - 8, yE, 26);
-    sheet.stroke('roof', eave(xa, xb, yE, o.lift ?? 5, 40), 'eave');
-    sheet.stroke('roof', `M${r(xa)},${r(yR)}V${r(yE)}M${r(xa + 5)},${r(yR + 3)}V${r(yE - 2)}M${r(xb)},${r(yR)}V${r(yE)}M${r(xb - 5)},${r(yR + 3)}V${r(yE - 2)}`, 'ridge'); // 博风板
+    const { roofH, chiwen: ch = 18, lift = 5 } = o, yR = yE - roofH, band = 8, k = 40;
+    sheet.fill('roof', `M${r(xa)},${r(yR)}L${r(xb)},${r(yR)}L${r(xb)},${r(yE - lift)}${eaveRev(xa, xb, yE, lift, k)}z`);
+    tiles(sheet, xa + band + 8, xb - band - 8, yR, xa + band + 8, xb - band - 8, yE, 26);
+    sheet.stroke('roof', eave(xa, xb, yE, lift, k), 'eave');
+    eaveTiles(sheet, xa, xb, yE, lift, k);
+    // 垂脊 running down the gable edge over the 博风板, with 排山勾滴 along its inner side and a 垂兽 at the foot
+    let d = '';
+    for (const [xo, dir] of [[xa, 1], [xb, -1]]) {
+      const xi = xo + dir * band;
+      d += `M${r(xo)},${r(yR)}V${r(yE - lift)}M${r(xi)},${r(yR + 5)}V${r(yE - lift - 10)}`;
+      for (let y = yR + 10; y < yE - lift - 12; y += 8) d += `M${r(xi)},${r(y - 3)}a3,3 0 0 ${dir > 0 ? 1 : 0} 0,6`;
+      d += `M${r(xi)},${r(yE - lift - 10)}q${r(dir * 4)},-2 ${r(dir * 6)},-10`; // 垂兽
+    }
+    sheet.stroke('roof', d, 'ridge');
     sheet.stroke('roof', rect(xa, yR, xb - xa, 5), 'ridge');
-    chiwen(sheet, xa + 10, yR, ch, 1);
-    chiwen(sheet, xb - 10, yR, ch, -1);
-    return { yR, xr0: xa + 10, xr1: xb - 10 };
+    chiwen(sheet, xa + band, yR, ch, 1);
+    chiwen(sheet, xb - band, yR, ch, -1);
+    if (o.ridgeOrn) sheet.stroke('ornament', `M${r(cx - 7)},${r(yR)}l2,-6h10l2,6zM${r(cx)},${r(yR - 6)}q-6,-8 0,-16q6,8 0,16`, 'orn');
+    return { yR, xr0: xa + band, xr1: xb - band };
+  }
+  // 山面 (gable end) of a 悬山 hall: 博风板 with 悬鱼 and 惹草 over the gable wall, roof overhanging the wall (出际)
+  function gableEnd(sheet, cx, yG, o) {
+    const d = o.depth, x0 = cx - d / 2, x1 = cx + d / 2, yP = yG - o.platH;
+    platform(sheet, x0 - 12, x1 + 12, yP, o.platH, false, false);
+    sheet.stroke('frame', rect(x0, yP - o.colH, d, o.colH), 'thin');
+    sheet.stroke('frame', line(x0, yP, x0, yP - o.colH) + line(x1, yP, x1, yP - o.colH), 'col');
+    sheet.stroke('frame', rect(x0 - 4, yP - o.colH - 5, d + 8, 5));
+    const yE = yP - o.colH - 16, ea = x0 - o.ov, eb = x1 + o.ov, yA = yE - o.roofH, bw = 9;
+    const slope = (x, y, tx, ty) => `Q${r(x + (tx - x) * 0.3)},${r(y + (ty - y) * 0.72)} ${r(tx)},${r(ty)}`;
+    const outline = `M${r(ea)},${r(yE)}${slope(ea, yE, cx, yA)}${slope(cx, yA, eb, yE)}`;
+    sheet.fill('roof', outline + `L${r(eb)},${r(yE + 6)}L${r(ea)},${r(yE + 6)}z`);
+    sheet.stroke('roof', outline, 'eave');
+    sheet.stroke('roof', `M${r(ea + bw * 0.6)},${r(yE + 6)}${slope(ea + bw * 0.6, yE + 6, cx, yA + bw)}${slope(cx, yA + bw, eb - bw * 0.6, yE + 6)}`, 'ridge'); // 博风板 inner edge
+    sheet.stroke('roof', line(ea, yE, ea, yE + 6) + line(eb, yE, eb, yE + 6), 'ridge');
+    // 悬鱼 at the apex, 惹草 on each board
+    let orn = `M${r(cx)},${r(yA + bw)}c-9,10 -9,26 0,34c9,-8 9,-24 0,-34M${r(cx)},${r(yA + bw + 20)}m-3,0a3,3 0 1 0 6,0a3,3 0 1 0 -6,0`;
+    for (const t of [0.42]) {
+      for (const [sx, sy, tx, ty] of [[ea, yE, cx, yA], [eb, yE, cx, yA]]) {
+        const px = sx + (tx - sx) * t, py = sy + (ty - sy) * t + bw * 0.8;
+        orn += `M${r(px)},${r(py)}q${r(sx < cx ? 7 : -7)},6 ${r(sx < cx ? 3 : -3)},14q${r(sx < cx ? -6 : 6)},-6 ${r(sx < cx ? -3 : 3)},-14z`;
+      }
+    }
+    sheet.stroke('ornament', orn, 'orn');
+    // rafter ends showing under the overhang
+    let rf = '';
+    for (const [sx, sy] of [[ea, yE], [eb, yE]]) for (let t = 0.12; t < 0.95; t += 0.16) { const px = sx + (cx - sx) * t, py = sy + (yA - sy) * t; rf += `M${r(px)},${r(py + 10)}l0,4`; }
+    sheet.stroke('roof', rf, 'thin');
+    sheet.note(cx + 6, yA + bw + 18, '悬鱼 · 博风板', 'r');
+    sheet.note(x1 + 2, yP - o.colH * 0.5, '山面 · 出际', 'r');
+    return { yA };
   }
   // Skirt roof (腰檐 / 副阶): eave at yE spanning xa..xb, rising to a narrower top xt0..xt1 at yT.
   function skirtRoof(sheet, xa, xb, yE, xt0, xt1, yT, o = {}) {
@@ -209,9 +271,10 @@ const Draft = (() => {
     sheet.fill('roof', `M${r(xt0)},${r(yT)}L${r(xt1)},${r(yT)}${sag(xt1, yT, xb, yE - lift, 0.3, 0.7)}${eaveRev(xa, xb, yE, lift, k)}${sag(xa, yE - lift, xt0, yT, 0.7, 0.3)}z`);
     tiles(sheet, xt0, xt1, yT, xa + k * 0.6, xb - k * 0.6, yE);
     sheet.stroke('roof', eave(xa, xb, yE, lift, k), 'eave');
+    eaveTiles(sheet, xa, xb, yE, lift, k);
     sheet.stroke('roof', `M${r(xt0)},${r(yT)}${sag(xt0, yT, xa, yE - lift, 0.3, 0.7)}M${r(xt1)},${r(yT)}${sag(xt1, yT, xb, yE - lift, 0.3, 0.7)}`, 'ridge');
     sheet.stroke('roof', line(xt0, yT, xt1, yT), 'thin');
   }
 
-  return { Sheet, LAYERS, r, rect, line, eave, eaveRev, sag, chiwen, chiwei, tiles, bracketPath, bracketH, bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, gableRoof, skirtRoof };
+  return { Sheet, LAYERS, r, rect, line, eave, eaveRev, eaveTiles, sag, chiwen, chiwei, tiles, bracketPath, bracketH, bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, gableRoof, gableEnd, skirtRoof };
 })();

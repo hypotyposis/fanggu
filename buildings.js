@@ -2,11 +2,12 @@
  * plus the SVG renderer and the stroke-draw priming used by the page. */
 const Buildings = (() => {
   const { Sheet, r, rect, line, eave, eaveRev, sag, chiwen, tiles, bracketPath, bracketH,
-    bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, gableRoof, skirtRoof } = Draft;
+    bracketBand, railing, platform, colonnade, hipRoof, gableHipRoof, gableRoof, gableEnd, skirtRoof } = Draft;
 
   // ---- single-storey hall: 庑殿 or 歇山 ----
   function hall(o) {
-    const S = o.S || new Sheet(o.w || 800, o.h || 560), cx = o.cx ?? S.w / 2;
+    const inset = o.roof === 'gable' && !o.S && o.gableEnd !== false;
+    const S = o.S || new Sheet(o.w || (inset ? 960 : 800), o.h || 560), cx = o.cx ?? (inset ? 400 : S.w / 2);
     const W = o.bays * o.bw, x0 = cx - W / 2, x1 = x0 + W;
     const yG = o.yG ?? S.h - 34, yP = yG - o.platH;
     platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, true, !o.S);
@@ -19,11 +20,16 @@ const Buildings = (() => {
     // notes
     if (!o.quiet) {
       S.note(roof.xr1, roof.yR - (o.chiwen || 20) * 0.6, o.chiStyle === 'tang' ? '鸱尾' : '鸱吻', 'r');
-      S.note(x1 + 12, yL - bracketH(o.bracketS, o.tiers || 2) / 2, '斗拱 · ' + (o.puzuo || '五铺作'), 'r');
+      if (inset) S.note(x0 - 12, yL - bracketH(o.bracketS, o.tiers || 2) / 2, '斗拱 · ' + (o.puzuo || '五铺作'), 'l');
+      else S.note(x1 + 12, yL - bracketH(o.bracketS, o.tiers || 2) / 2, '斗拱 · ' + (o.puzuo || '五铺作'), 'r');
       S.note(xa + 8, yE - 8, o.roof === 'hip' ? '庑殿 · 出檐' : o.roof === 'gable' ? '悬山 · 博风' : '歇山 · 戗脊', 'l');
-      S.note(x0 + 2, yP - o.colH * 0.55, '侧脚 · 生起', 'l');
+      if (!inset) S.note(x0 + 2, yP - o.colH * 0.55, '侧脚 · 生起', 'l');
       S.note(cx + o.bw * 0.5, yP + o.platH * 0.5, '台基 · 踏道', 'r');
       S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
+    }
+    if (inset) {
+      const gx = xb + 130;
+      gableEnd(S, gx, yG, { depth: o.depth || W * 0.5, colH: o.colH, platH: o.platH, roofH: o.roofH * 0.96, ov: o.overhang * 0.55 });
     }
     S.top = roof.yR - (o.chiwen || 20);
     S.span = { x0: x0 - o.platPad, x1: x1 + o.platPad };

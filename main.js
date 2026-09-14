@@ -131,9 +131,9 @@
         svg.appendChild(sv('text', { x: X(e) - 6, y: ln.y + 26, 'text-anchor': 'end' }, `${b.s}–${b.e}`));
       });
     });
-    const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'chunhua', 'huata']), unified = new Set(['xiayu', 'shuanglin', 'tiantan', 'feihong']);
+    const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'chunhua', 'huata']), unified = new Set(['jiutian', 'xiayu', 'shuanglin', 'tiantan', 'feihong']);
     // [row, dx]: north labels stack above the north lane, everything else below its lane
-    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], lingxiao: [0], fotou: [2], liaodi: [1, 8], jiutian: [0], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0], shuanglin: [1], tiantan: [0], feihong: [1] };
+    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], lingxiao: [0], fotou: [2], liaodi: [1, 8], jiutian: [1, -12], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0, 10], shuanglin: [1], tiantan: [0], feihong: [1] };
     const mid = { name: '', y: 130, below: 62 };
     SITES.forEach(s => {
       const ln = unified.has(s.id) ? mid : north.has(s.id) ? lanes[0] : lanes[1];

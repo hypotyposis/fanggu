@@ -50,7 +50,7 @@ const SITES = [
     lede: '五代十国五十三年，全国留下的木构只有五座，三座在浊漳河谷。龙门寺西配殿是其中最早的一座，也是唯一一座悬山顶——三间小殿，阑额不出头，柱上没有普拍枋，仍是唐人的做法。',
     facts: ['后唐同光三年（925）建，一说清泰二年（935）；<b>面阔三间</b>，进深四椽，单檐悬山。', '龙门寺一寺之内，五代、宋、金、元、明、清六朝建筑齐聚：大雄宝殿宋绍圣五年（1098），天王殿金，燃灯佛殿元。', '斗拱只在柱头，斗口跳，无补间——比南禅寺还要简省。'],
     caption: ['西配殿立面示意 · 面阔三间', '单檐悬山 · 五代'],
-    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['win', 'door', 'win'], roof: 'gable', bracketS: 1.4, tiers: 1, interm: 0, overhang: 52, roofH: 92, ridgeRatio: 1, chiwen: 16, ridgeOrn: true, lift: 4, platH: 14, platPad: 26, puzuo: '斗口跳 · 无补间', dimLabel: '面阔三间' }),
+    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['win', 'door', 'win'], roof: 'gable', bracketS: 1.4, tiers: 1, interm: 0, overhang: 52, roofH: 92, ridgeRatio: 1, chiwen: 16, ridgeOrn: true, lift: 4, platH: 14, platPad: 26, depth: 150, puzuo: '斗口跳 · 无补间', dimLabel: '面阔三间 · 进深四椽' }),
   },
   {
     id: 'tiantai', name: '天台庵', short: '天台庵', sub: '王曲村', dyn: 'zhou', tag: '五代', era: '后唐长兴四年', year: 933, place: '山西平顺 · 浊漳河谷 · 王曲村', placeKey: 'pingshun',
@@ -122,13 +122,6 @@ const SITES = [
       top: { type: 'cap', w: 120, courses: 3, step: 10, stupa: { bulbW: 30, bulbH: 28, rings: 5, ringW: 18, ringH: 5 }, note: '铁刹' }, dimLabel: '八角 · 十一层', vLabel: '通高 83.7 m' }),
   },
   {
-    id: 'jiutian', name: '九天圣母庙', short: '圣母庙', sub: '圣母殿 · 东河村', dyn: 'song', tag: '宋', era: '建中靖国元年重修', year: 1101, place: '山西平顺 · 浊漳河谷 · 东河村', placeKey: 'pingshun',
-    lede: '唐代创建，圣母殿北宋初重建，建中靖国元年（1101）全庙重修。一座村庙里，宋殿、元廊、明清戏楼前后相接，四朝木构挤在一个院子里。',
-    facts: ['<b>圣母殿</b>面阔三间，单檐歇山，宋构；斗拱五铺作，单杪单昂。', '庙内碑刻记有历代重修，元、明、清各有增建，院内戏楼是清代的。', '祀九天圣母，是晋东南民间信仰与宋金建筑并存的实例。'],
-    caption: ['圣母殿立面示意 · 面阔三间', '单檐歇山 · 北宋'],
-    draw: () => Buildings.hall({ bays: 3, bw: 108, colH: 88, fills: ['win', 'door', 'win'], roof: 'gablehip', bracketS: 1.6, tiers: 2, ang: 1, interm: 1, intermS: .8, overhang: 76, roofH: 130, ridgeRatio: .45, gableH: 42, lift: 16, chiwen: 24, platH: 20, platPad: 34, puzuo: '五铺作 · 单杪单昂', dimLabel: '面阔三间' }),
-  },
-  {
     id: 'liuhe', name: '杭州六和塔', short: '六和塔', sub: '月轮山 · 钱塘江', dyn: 'song', tag: '宋', era: '南宋绍兴二十六年重建', year: 1156, place: '浙江杭州 · 月轮山', placeKey: 'hangzhou',
     lede: '北宋开宝三年（970）吴越王为镇钱塘江潮而建；现存砖身为南宋绍兴二十六年（1156）重建、隆兴元年（1163）竣工。外围那十三层木檐，是清光绪二十五年（1899）加上去的。',
     facts: ['砖木混构，八角，<b>通高 59.89 米</b>；砖身七层，外檐十三层，"外十三内七"，每层平座勾阑环绕。', '塔内须弥座砖雕的花卉、飞禽与走兽纹样，与《营造法式》所载图样相合，是研究宋代建筑的实物。', '梁思成 1934 年曾为它拟过"瘦身"方案：拆去光绪木檐，恢复宋塔原貌，终未实施。'],
@@ -187,14 +180,21 @@ const SITES = [
     lede: '浊漳河谷里祀大禹的小庙，元至元二年（1336）建。一进院落：山门上倒座着戏台，正殿三间是元代的，东西配殿明清补建——一座村庙的完整格局。',
     facts: ['正殿<b>面阔三间</b>，单檐悬山，元构；用材粗放，梁架多自然弯材，是元代地方做法。', '山门为明代建筑，上层倒座戏台面向正殿。', '俗称禹王庙，浊漳河屡有水患，祀禹以镇之。'],
     caption: ['正殿立面示意 · 面阔三间', '单檐悬山 · 元'],
-    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['win', 'door', 'win'], roof: 'gable', bracketS: 1.3, tiers: 1, interm: 1, intermS: .8, overhang: 50, roofH: 96, ridgeRatio: 1, chiwen: 18, lift: 5, platH: 16, platPad: 28, puzuo: '元 · 四铺作', dimLabel: '面阔三间' }),
+    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['win', 'door', 'win'], roof: 'gable', bracketS: 1.3, tiers: 1, interm: 1, intermS: .8, overhang: 50, roofH: 96, ridgeRatio: 1, chiwen: 18, lift: 5, platH: 16, platPad: 28, depth: 170, puzuo: '元 · 四铺作', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'jiutian', name: '九天圣母庙', short: '圣母庙', sub: '献殿 · 东河村', dyn: 'yuan', tag: '宋元', era: '宋建中靖国元年重修 · 献殿元构', year: 1300, yearLabel: '元', place: '山西平顺 · 浊漳河谷 · 东河村', placeKey: 'pingshun',
+    lede: '唐代创建，圣母殿北宋初重建，建中靖国元年（1101）全庙重修。殿前的元代献殿最特别：正脊与开间垂直，进深五间比面阔三间还长，顶上用的是等级最高的庑殿——从院里看过去，看到的是庑殿的山面。',
+    facts: ['<b>献殿</b>元构，面阔三间、进深五间，四周十六根抹角砂石方柱，四面开敞；斗拱四铺作单杪，立在一米高的青石台基上。', '献殿、正殿、舞楼三座殿顶的角檐相互穿插，当地称"勾心斗角"。', '<b>圣母殿</b>宋构，面阔三间单檐歇山；一座村庙里宋、元、明、清四朝木构前后相接。'],
+    caption: ['献殿立面示意 · 面阔三间 · 进深五间', '庑殿顶 · 山面朝前 · 元'],
+    draw: () => Buildings.hall({ bays: 3, bw: 96, colH: 96, fills: ['open', 'open', 'open'], roof: 'hip', bracketS: 1.5, tiers: 1, interm: 1, intermS: .8, overhang: 76, roofH: 150, ridgeRatio: .03, lift: 16, chiwen: 26, platH: 30, platPad: 36, puzuo: '四铺作 · 单杪 · 石柱', dimLabel: '面阔三间 · 正脊与开间垂直' }),
   },
   {
     id: 'shuanglin', name: '平遥双林寺', short: '双林寺', sub: '天王殿 · 彩塑', dyn: 'ming', tag: '明', era: '北齐武平二年重修 · 明初重建', year: 1400, yearLabel: '明初', place: '山西平遥 · 桥头村', placeKey: 'pingyao',
     lede: '北魏始建的中都寺，北齐武平二年（571）重修，现存殿宇多为明初重建。它以彩塑闻名：十座殿堂里两千余尊明代彩塑，被称为"东方彩塑艺术长廊"。',
     facts: ['寺外围墙为明代所筑，形如堡垒；内分三进院落、十座殿堂。', '<b>天王殿</b>前廊立四大金刚，各高三米余；<b>千佛殿</b>内的<b>韦驮</b>像扭身按剑，是明代彩塑的名作。', '全寺彩塑二千零五十二尊，完好者一千五百六十六尊，大者丈余、小者尺许。'],
     caption: ['天王殿立面示意 · 面阔五间', '单檐悬山 · 前廊四金刚'],
-    draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 92, fills: ['figure', 'figure', 'door', 'figure', 'figure'], roof: 'gable', bracketS: 1.1, tiers: 1, interm: 1, overhang: 56, roofH: 96, ridgeRatio: 1, platH: 18, platPad: 30, chiwen: 22, lift: 6, puzuo: '明式', dimLabel: '面阔五间' }),
+    draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 92, fills: ['figure', 'figure', 'door', 'figure', 'figure'], roof: 'gable', bracketS: 1.1, tiers: 1, interm: 1, overhang: 56, roofH: 96, ridgeRatio: 1, platH: 18, platPad: 30, chiwen: 22, lift: 6, gableEnd: false, puzuo: '明式', dimLabel: '面阔五间' }),
   },
   {
     id: 'tiantan', name: '北京天坛', short: '天坛', sub: '祈年殿', dyn: 'ming', tag: '明清', era: '永乐十八年始建 · 光绪二十二年重建', year: 1420, place: '北京 · 天坛', placeKey: 'beijing',
