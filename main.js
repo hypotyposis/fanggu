@@ -14,6 +14,7 @@
   requestAnimationFrame(() => requestAnimationFrame(() => heroSvg.classList.add('drawn')));
 
   // ---- sites by chapter ----
+  const drawIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('drawn'); drawIO.unobserve(e.target); } }), { threshold: .3 });
   const sitesRoot = $('#sites');
   const drafts = [];
   CHAPTERS.forEach(ch => {
@@ -29,12 +30,19 @@
       let svg = null;
       if (s.image) {
         const im = s.image;
-        figure.appendChild(h('img', { class: 'plate' + (im.tint === false ? ' raw' : ''), src: im.src, alt: im.alt || s.name, loading: 'lazy', ...(im.width ? { width: im.width, height: im.height } : {}) }));
+        const img = h('img', { class: 'plate' + (im.tint === false ? ' raw' : ''), src: im.src, alt: im.alt || s.name, loading: 'lazy', ...(im.width ? { width: im.width, height: im.height } : {}) });
+        img.addEventListener('error', () => { // plate missing: fall back to the generated drawing
+          const fb = B.render(s.draw(), { label: s.name + ' 立面示意' });
+          img.replaceWith(fb); B.prime(fb); drawIO.observe(fb);
+          if (im.caption) figure.querySelector('figcaption').innerHTML = `<span class="mono">${s.caption[0]}</span><span class="mono">${s.caption[1]}</span>`;
+        });
+        figure.appendChild(img);
       } else {
         svg = B.render(s.draw(), { label: s.name + ' 立面示意' });
         figure.appendChild(svg);
       }
-      figure.appendChild(h('figcaption', {}, `<span class="mono">${s.caption[0]}</span><span class="mono">${s.caption[1]}</span>`));
+      const cap = (s.image && s.image.caption) || s.caption;
+      figure.appendChild(h('figcaption', {}, `<span class="mono">${cap[0]}</span><span class="mono">${cap[1]}</span>`));
       fig.appendChild(figure);
       const txt = h('div', { class: 'site-text' });
       txt.innerHTML = `
@@ -160,7 +168,6 @@
   })();
 
   // ---- observers: draw on reveal, rail highlight, parallax ----
-  const drawIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('drawn'); drawIO.unobserve(e.target); } }), { threshold: .3 });
   drafts.forEach(svg => drawIO.observe(svg));
 
   const arts = [...document.querySelectorAll('article.site')];
