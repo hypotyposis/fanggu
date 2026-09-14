@@ -6,10 +6,10 @@ const Buildings = (() => {
 
   // ---- single-storey hall: 庑殿 or 歇山 ----
   function hall(o) {
-    const w = o.w || 800, h = o.h || 560, S = new Sheet(w, h), cx = w / 2;
+    const S = o.S || new Sheet(o.w || 800, o.h || 560), cx = o.cx ?? S.w / 2;
     const W = o.bays * o.bw, x0 = cx - W / 2, x1 = x0 + W;
-    const yG = h - 34, yP = yG - o.platH;
-    platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, true);
+    const yG = o.yG ?? S.h - 34, yP = yG - o.platH;
+    platform(S, x0 - o.platPad, x1 + o.platPad, yP, o.platH, true, !o.S);
     if (o.platH > 30) S.stroke('base', line(x0 - o.platPad + 10, yP + o.platH * 0.5, x1 + o.platPad - 10, yP + o.platH * 0.5), 'thin');
     const { yL } = colonnade(S, x0, yP, o.bays, o.bw, o.colH, o.fills, { lower: o.lower });
     const top = bracketBand(S, x0, x1, yL, o.bracketS, o.bays + 1, o.tiers || 2, o.interm ?? 1, { intermS: o.intermS, intermTiers: o.intermTiers, intermLudou: o.intermLudou, ang: o.ang, intermAng: o.intermAng });
@@ -17,12 +17,30 @@ const Buildings = (() => {
     const ro = { ridgeW: W * o.ridgeRatio, roofH: o.roofH, lift: o.lift || 14, chiwen: o.chiwen, chiStyle: o.chiStyle, gableH: o.gableH, k: o.k || 60, ridgeOrn: o.ridgeOrn };
     const roof = o.roof === 'hip' ? hipRoof(S, cx, xa, xb, yE, ro) : o.roof === 'gable' ? gableRoof(S, cx, xa, xb, yE, ro) : gableHipRoof(S, cx, xa, xb, yE, ro);
     // notes
-    S.note(roof.xr1, roof.yR - (o.chiwen || 20) * 0.6, o.chiStyle === 'tang' ? '鸱尾' : '鸱吻', 'r');
-    S.note(x1 + 12, yL - bracketH(o.bracketS, o.tiers || 2) / 2, '斗拱 · ' + (o.puzuo || '五铺作'), 'r');
-    S.note(xa + 8, yE - 8, o.roof === 'hip' ? '庑殿 · 出檐' : o.roof === 'gable' ? '悬山 · 博风' : '歇山 · 戗脊', 'l');
-    S.note(x0 + 2, yP - o.colH * 0.55, '侧脚 · 生起', 'l');
-    S.note(cx + o.bw * 0.5, yP + o.platH * 0.5, '台基 · 踏道', 'r');
-    S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
+    if (!o.quiet) {
+      S.note(roof.xr1, roof.yR - (o.chiwen || 20) * 0.6, o.chiStyle === 'tang' ? '鸱尾' : '鸱吻', 'r');
+      S.note(x1 + 12, yL - bracketH(o.bracketS, o.tiers || 2) / 2, '斗拱 · ' + (o.puzuo || '五铺作'), 'r');
+      S.note(xa + 8, yE - 8, o.roof === 'hip' ? '庑殿 · 出檐' : o.roof === 'gable' ? '悬山 · 博风' : '歇山 · 戗脊', 'l');
+      S.note(x0 + 2, yP - o.colH * 0.55, '侧脚 · 生起', 'l');
+      S.note(cx + o.bw * 0.5, yP + o.platH * 0.5, '台基 · 踏道', 'r');
+      S.dim = { x0: x0 - o.platPad, x1: x1 + o.platPad, y: yG + 18, label: o.dimLabel };
+    }
+    S.top = roof.yR - (o.chiwen || 20);
+    S.span = { x0: x0 - o.platPad, x1: x1 + o.platPad };
+    return S;
+  }
+
+  // ---- a brick pagoda beside a small hall on one ground line (原起寺) ----
+  function towerAndHall(o) {
+    const S = new Sheet(800, 560), yG = 526;
+    S.stroke('base', line(40, yG, 760, yG), 'ground');
+    tierTower({ ...o.tower, S, cx: o.towerX || 230, yG });
+    const tTop = S.top;
+    hall({ ...o.hall, S, cx: o.hallX || 560, yG, quiet: true });
+    if (o.towerNote) S.note((o.towerX || 230) + o.tower.storeys[0].w / 2 + 4, yG - o.tower.storeys[0].wallH * 0.5 - (o.tower.base ? o.tower.base[0].h : 0), o.towerNote, 'r');
+    if (o.hallNote) S.note((o.hallX || 560) + o.hall.bays * o.hall.bw / 2 + o.hall.overhang - 6, S.top + 40, o.hallNote, 'r');
+    S.dim = { x0: (o.towerX || 230) - o.tower.base[0].w / 2, x1: (o.towerX || 230) + o.tower.base[0].w / 2, y: yG + 16, label: o.dimLabel, v: { x: (o.towerX || 230) - o.tower.base[0].w / 2 - 40, y0: yG, y1: tTop - 4, label: o.vLabel } };
+    S.dim2 = { x0: S.span.x0, x1: S.span.x1, y: yG + 16, label: o.dimLabel2 };
     return S;
   }
 
@@ -710,5 +728,5 @@ const Buildings = (() => {
     svg.classList.add('primed');
   }
 
-  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, tierTower, kaiyuan, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
+  return { hall, pavilion, woodPagoda, brickPagoda, crossHall, tierTower, kaiyuan, towerAndHall, huaTa, cubeStupa, roundHall, bracketSection, render, prime };
 })();

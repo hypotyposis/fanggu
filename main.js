@@ -19,7 +19,7 @@
   CHAPTERS.forEach(ch => {
     const d = DYN[ch.key];
     const sec = h('section', { class: 'chapter', id: 'ch-' + ch.key, style: `--acc:${d.acc}` });
-    sec.appendChild(h('div', { class: 'glyph', 'aria-hidden': 'true' }, d.glyph));
+    sec.appendChild(h('div', { class: 'glyph' + (d.glyph.length > 1 ? ' two' : ''), 'aria-hidden': 'true' }, d.glyph));
     const wrap = h('div', { class: 'wrap' });
     wrap.appendChild(h('div', { class: 'chapter-head' }, `<h2>${d.name}</h2><div class="about"><span class="mono">${ch.years}</span><p>${ch.blurb}</p></div>`));
     SITES.filter(s => s.dyn === ch.key).forEach((s, i) => {
@@ -77,8 +77,9 @@
       g.appendChild(sv('circle', { class: 'halo h2', cx: x, cy: y, r: 6 }));
       g.appendChild(sv('circle', { class: 'core', cx: x, cy: y, r: 4 }));
       const right = p.side !== 'l';
-      g.appendChild(sv('text', { class: 'name', x: x + (right ? 12 : -12), y: y + 5, 'text-anchor': right ? 'start' : 'end' }, p.name));
-      g.appendChild(sv('text', { class: 'coord', x: x + (right ? 12 : -12), y: y + 20, 'text-anchor': right ? 'start' : 'end' }, `${p.lat.toFixed(2)}N ${p.lon.toFixed(2)}E`));
+      const dy = p.dy || 0;
+      g.appendChild(sv('text', { class: 'name', x: x + (right ? 12 : -12), y: y + 5 + dy, 'text-anchor': right ? 'start' : 'end' }, p.name));
+      g.appendChild(sv('text', { class: 'coord', x: x + (right ? 12 : -12), y: y + 20 + dy, 'text-anchor': right ? 'start' : 'end' }, `${p.lat.toFixed(2)}N ${p.lon.toFixed(2)}E`));
       svg.appendChild(g);
       g.addEventListener('click', () => location.hash = SITES.find(s => s.placeKey === p.key).id);
       g.addEventListener('keydown', e => { if (e.key === 'Enter') g.click(); });
@@ -100,7 +101,7 @@
   // ---- timeline ----
   (function timeline() {
     const svg = $('#tlsvg');
-    const W = 1100, H = 262, l = 70, rgt = 30, y0 = 600, yb = 1250, y1 = 1912, split = 0.68;
+    const W = 1100, H = 318, l = 70, rgt = 30, y0 = 600, yb = 1250, y1 = 1912, split = 0.68;
     const span = W - l - rgt;
     const X = yr => yr <= yb ? l + (yr - y0) / (yb - y0) * span * split : l + span * split + (yr - yb) / (y1 - yb) * span * (1 - split);
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
@@ -109,10 +110,10 @@
       { name: '北', y: 92, bars: [{ n: '辽', s: 907, e: 1125, c: 'var(--cinnabar)' }, { n: '金', s: 1115, e: 1234, c: 'var(--amber)' }] },
       { name: '南', y: 168, bars: [{ n: '唐', s: 618, e: 907, c: 'var(--gold)' }, { n: '五代', s: 907, e: 960, c: 'var(--ash)' }, { n: '北宋', s: 960, e: 1127, c: 'var(--verdigris)' }, { n: '南宋', s: 1127, e: 1279, c: 'var(--verdigris)' }] },
     ];
-    for (const yr of [600, 700, 800, 900, 1000, 1100, 1200, 1300, 1500, 1700, 1900]) { svg.appendChild(sv('line', { class: 'axis', x1: X(yr), x2: X(yr), y1: 40, y2: 232, 'stroke-dasharray': '2 5' })); svg.appendChild(sv('text', { x: X(yr), y: 252, 'text-anchor': 'middle' }, String(yr))); }
+    for (const yr of [600, 700, 800, 900, 1000, 1100, 1200, 1300, 1500, 1700, 1900]) { svg.appendChild(sv('line', { class: 'axis', x1: X(yr), x2: X(yr), y1: 40, y2: 290, 'stroke-dasharray': '2 5' })); svg.appendChild(sv('text', { x: X(yr), y: 308, 'text-anchor': 'middle' }, String(yr))); }
     // axis break at 1250: the right third is compressed
-    svg.appendChild(sv('path', { class: 'axis', d: `M${X(yb) - 6},${232}l4,-8l4,16l4,-8`, fill: 'none', 'stroke-dasharray': 'none' }));
-    svg.appendChild(sv('text', { x: X(yb), y: 252, 'text-anchor': 'middle' }, '⋯'));
+    svg.appendChild(sv('path', { class: 'axis', d: `M${X(yb) - 6},${290}l4,-8l4,16l4,-8`, fill: 'none', 'stroke-dasharray': 'none' }));
+    svg.appendChild(sv('text', { x: X(yb), y: 308, 'text-anchor': 'middle' }, '⋯'));
     // unified dynasties after the Song–Jin split: one bar across both lanes
     for (const b of [{ n: '元', s: 1271, e: 1368, c: 'var(--paper-3)' }, { n: '明', s: 1368, e: 1644, c: 'var(--lapis)' }, { n: '清', s: 1644, e: 1912, c: 'var(--ash)' }]) {
       svg.appendChild(sv('rect', { class: 'bar', x: X(b.s), y: 76, width: X(b.e) - X(b.s), height: 108, fill: b.c }));
@@ -127,22 +128,24 @@
         svg.appendChild(sv('rect', { class: 'bar', x: X(s), y: ln.y - 16, width: X(e) - X(s), height: 32, fill: b.c }));
         const narrow = X(e) - X(s) < 90;
         svg.appendChild(sv('text', { class: 'bar-name' + (narrow ? ' sm' : ''), x: narrow ? (X(s) + X(e)) / 2 : X(s) + 10, y: ln.y + (narrow ? 6 : 9), 'text-anchor': narrow ? 'middle' : 'start' }, b.n));
-        svg.appendChild(sv('text', { x: X(e) - 6, y: ln.y - 22, 'text-anchor': 'end' }, `${b.s}–${b.e}`));
+        svg.appendChild(sv('text', { x: X(e) - 6, y: ln.y + 26, 'text-anchor': 'end' }, `${b.s}–${b.e}`));
       });
     });
-    const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'huata']), unified = new Set(['shuanglin', 'tiantan', 'feihong']);
-    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], wenfeng: [0, -8], longxing: [1], lingxiao: [0, -36], liaodi: [0, 50], liuhe: [1], kaishan: [1, -34], huayan: [0], yingxian: [1, 34], shanhua: [1, 10], huata: [1, 40], shuanglin: [1, -30], tiantan: [0], feihong: [1, 40] };
-    const mid = { name: '', y: 130 };
+    const north = new Set(['kaishan', 'huayan', 'yingxian', 'shanhua', 'chunhua', 'huata']), unified = new Set(['xiayu', 'shuanglin', 'tiantan', 'feihong']);
+    // [row, dx]: north labels stack above the north lane, everything else below its lane
+    const TL = { kaiyuan: [0], xiuding: [1], nanchan: [0], foguang: [1], longmen: [0, -6], tiantai: [2, -6], dayun: [1, 6], wenfeng: [0, 12], longxing: [2, 6], yuanqi: [1, 6], lingxiao: [0], fotou: [2], liaodi: [1, 8], jiutian: [0], liuhe: [1], kaishan: [0, -4], huayan: [1], yingxian: [0, 8], shanhua: [1], chunhua: [0], huata: [2], xiayu: [0], shuanglin: [1], tiantan: [0], feihong: [1] };
+    const mid = { name: '', y: 130, below: 62 };
     SITES.forEach(s => {
       const ln = unified.has(s.id) ? mid : north.has(s.id) ? lanes[0] : lanes[1];
-      const [u, dx = 0] = TL[s.id] || [0];
-      const x = X(s.year), up = !!u;
+      const [row = 0, dx = 0] = TL[s.id] || [];
+      const x = X(s.year), tx = x + dx, above = ln === lanes[0];
+      const off = (ln.below || 40) + row * 26;
       const g = sv('g', { class: 'mk', 'data-for': s.id, tabindex: 0, role: 'link' });
-      const ty = up ? ln.y - 44 : ln.y + 44, tx = x + dx;
-      g.appendChild(sv('line', { x1: x, x2: tx, y1: ln.y, y2: ty + (up ? 8 : -8) }));
+      const nmY = above ? ln.y - off - 2 : ln.y + off + 10, yrY = above ? ln.y - off + 10 : ln.y + off + 22;
+      g.appendChild(sv('line', { x1: x, x2: tx, y1: above ? ln.y - 6 : ln.y + 6, y2: above ? ln.y - off + 14 : ln.y + off - 2 }));
       g.appendChild(sv('circle', { cx: x, cy: ln.y, r: 5, fill: DYN[s.dyn].acc }));
-      g.appendChild(sv('text', { class: 'nm', x: tx, y: up ? ty - 2 : ty + 14, 'text-anchor': 'middle' }, s.name));
-      g.appendChild(sv('text', { class: 'yr', x: tx, y: up ? ty + 6 : ty - 2 + 14 + 14, 'text-anchor': 'middle' }, String(s.yearLabel || s.year)));
+      g.appendChild(sv('text', { class: 'nm', x: tx, y: nmY, 'text-anchor': 'middle' }, s.short || s.name));
+      g.appendChild(sv('text', { class: 'yr', x: tx, y: yrY, 'text-anchor': 'middle' }, String(s.yearLabel || s.year)));
       g.addEventListener('click', () => location.hash = s.id);
       g.addEventListener('keydown', e => { if (e.key === 'Enter') g.click(); });
       svg.appendChild(g);

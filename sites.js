@@ -1,7 +1,8 @@
 /* sites.js — the seven sites, their chapters, places and drawing parameters. */
 const DYN = {
   tang: { glyph: '唐', name: '唐', acc: 'var(--gold)' },
-  zhou: { glyph: '周', name: '后周', acc: 'var(--ash)' },
+  zhou: { glyph: '五代', name: '五代', acc: 'var(--ash)' },
+  yuan: { glyph: '元', name: '元', acc: 'var(--amber)' },
   song: { glyph: '宋', name: '宋', acc: 'var(--verdigris)' },
   liao: { glyph: '辽', name: '辽 · 金', acc: 'var(--cinnabar)' },
   ming: { glyph: '明', name: '明 · 清', acc: 'var(--lapis)' },
@@ -9,7 +10,7 @@ const DYN = {
 
 const SITES = [
   {
-    id: 'kaiyuan', name: '正定开元寺', sub: '须弥塔 · 钟楼', dyn: 'tang', tag: '唐', era: '贞观十年始建', year: 636, place: '河北正定 · 古城', placeKey: 'zhengding',
+    id: 'kaiyuan', name: '正定开元寺', short: '开元寺', sub: '须弥塔 · 钟楼', dyn: 'tang', tag: '唐', era: '贞观十年始建', year: 636, place: '河北正定 · 古城', placeKey: 'zhengding',
     lede: '塔与钟楼在大殿前左右对峙，是唐代寺院从"以塔为中心"转向"以殿为中心"的过渡实例。这样的布局，全国只剩这一处。',
     facts: ['<b>须弥塔</b>：唐贞观十年（636）始建，方形九级密檐，通高 42.5 米，素面无饰，是唐代密檐方塔的典型。', '<b>钟楼</b>：中国现存唯一的唐代钟楼，两层三间，重檐歇山，高 14 米；下层砖墙，上层木构。', '1933 年梁思成、林徽因来正定，在这里判定钟楼下层为唐代遗构。'],
     caption: ['立面示意 · 塔楼对峙', '方形密檐 · 重檐歇山'],
@@ -22,7 +23,7 @@ const SITES = [
       dimLabel: '须弥塔 · 方形九级', vLabel: '通高 42.5 m', dimLabel2: '钟楼 · 高 14 m' }),
   },
   {
-    id: 'xiuding', name: '修定寺塔', sub: '唐塔 · 清凉山', dyn: 'tang', tag: '唐', era: '北齐始建 · 唐重修', year: 700, yearLabel: '唐', place: '河南安阳 · 清凉山', placeKey: 'anyang',
+    id: 'xiuding', name: '修定寺塔', short: '修定寺', sub: '唐塔 · 清凉山', dyn: 'tang', tag: '唐', era: '北齐始建 · 唐重修', year: 700, yearLabel: '唐', place: '河南安阳 · 清凉山', placeKey: 'anyang',
     lede: '一座单层方形砖塔，通体嵌满 3775 块模制花砖：菱形、矩形、三角形拼成一张浮雕的网。考古学家称它"真正的中国第一华塔"。',
     facts: ['北齐天保元年（550）初建，唐代重修；现存塔身花砖皆唐代烧制，故称唐塔。', '<b>通高 20 米</b>，塔身高 9.3 米、宽 8.3 米，近于一个立方体；上覆叠涩出檐与四注攒尖顶，顶立覆钵式塔刹。', '花砖上有力士、飞天、青龙、白虎、僧侣与缠枝纹，七十余种图样，拼缝严丝合缝。'],
     caption: ['立面示意 · 单层方塔', '模制花砖 · 叠涩檐'],
@@ -30,19 +31,40 @@ const SITES = [
     draw: () => Buildings.cubeStupa({ baseW: 300, bodyW: 320, bodyH: 340, cellW: 26, cellH: 32, doorW: 60, doorH: 120, eaveStep: 11, eaveL: 6, roofL: 11, roofStep: 17, dimLabel: '塔身宽 8.3 m', vLabel: '通高 20 m' }),
   },
   {
-    id: 'nanchan', name: '南禅寺大殿', dyn: 'tang', tag: '唐', era: '建中三年', year: 782, place: '山西五台 · 李家庄', placeKey: 'wutai',
+    id: 'nanchan', name: '南禅寺大殿', short: '南禅寺', dyn: 'tang', tag: '唐', era: '建中三年', year: 782, place: '山西五台 · 李家庄', placeKey: 'wutai',
     lede: '中国现存最早的木构建筑。唐武宗会昌灭法，天下寺院拆毁殆尽，它因为地处偏僻的小村而逃过一劫。',
     facts: ['<b>面阔三间</b>，单檐歇山，屋面平缓，出檐深远，是典型的唐代小殿。', '殿内<b>十七尊唐塑</b>与建筑同龄，是大陆唐塑最完整的一堂。', '现存唐代木构仅四座，皆在山西——此行见其二。'],
     caption: ['立面示意 · 面阔三间', '单檐歇山'],
     draw: () => Buildings.hall({ bays: 3, bw: 118, colH: 84, fills: ['win', 'door', 'win'], roof: 'gablehip', bracketS: 1.9, tiers: 2, interm: 0, overhang: 96, roofH: 150, ridgeRatio: .48, gableH: 54, platH: 18, platPad: 40, lift: 16, chiwen: 40, chiStyle: 'tang', puzuo: '五铺作 · 无补间', dimLabel: '面阔 11.62 m' }),
   },
   {
-    id: 'foguang', name: '佛光寺东大殿', dyn: 'tang', tag: '唐', era: '大中十一年', year: 857, place: '山西五台 · 豆村', placeKey: 'wutai',
+    id: 'foguang', name: '佛光寺东大殿', short: '佛光寺', dyn: 'tang', tag: '唐', era: '大中十一年', year: 857, place: '山西五台 · 豆村', placeKey: 'wutai',
     lede: '1937 年 6 月，梁思成、林徽因在殿内梁下读出"女弟子宁公遇"的题记，日本学者"中国已无唐构"的断言就此作废。',
     facts: ['<b>面阔七间</b>，单檐庑殿。斗拱高度近柱高之半，出檐近四米——后世再没有这样的比例。', '唐代<b>建筑、塑像、壁画、题记</b>同存一殿，梁思成称之为"四绝"。', '殿前的经幢刻有"大中十一年"，是断代的另一件铁证。'],
     quote: '"这是我们这些年的搜寻中所遇到的唯一唐代木建筑……国内古建筑之第一瑰宝。" <b>——梁思成《记五台山佛光寺的建筑》</b>',
     caption: ['立面示意 · 面阔七间', '单檐庑殿'],
     draw: () => Buildings.hall({ bays: 7, bw: 80, colH: 96, fills: ['win', 'door', 'door', 'door', 'door', 'door', 'win'], roof: 'hip', bracketS: 2.2, tiers: 3, interm: 1, intermS: .5, intermTiers: 2, intermLudou: false, ang: 2, overhang: 96, roofH: 150, ridgeRatio: .62, ridgeOrn: true, platH: 20, platPad: 48, lift: 12, chiwen: 36, chiStyle: 'tang', puzuo: '七铺作 · 双杪双下昂 · 补间出双杪', dimLabel: '面阔 34.0 m' }),
+  },
+  {
+    id: 'longmen', name: '龙门寺西配殿', short: '龙门寺', dyn: 'zhou', tag: '五代', era: '后唐同光三年', year: 925, place: '山西平顺 · 浊漳河谷 · 源头村', placeKey: 'pingshun',
+    lede: '五代十国五十三年，全国留下的木构只有五座，三座在浊漳河谷。龙门寺西配殿是其中最早的一座，也是唯一一座悬山顶——三间小殿，阑额不出头，柱上没有普拍枋，仍是唐人的做法。',
+    facts: ['后唐同光三年（925）建，一说清泰二年（935）；<b>面阔三间</b>，进深四椽，单檐悬山。', '龙门寺一寺之内，五代、宋、金、元、明、清六朝建筑齐聚：大雄宝殿宋绍圣五年（1098），天王殿金，燃灯佛殿元。', '斗拱只在柱头，斗口跳，无补间——比南禅寺还要简省。'],
+    caption: ['西配殿立面示意 · 面阔三间', '单檐悬山 · 五代'],
+    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['win', 'door', 'win'], roof: 'gable', bracketS: 1.4, tiers: 1, interm: 0, overhang: 52, roofH: 92, ridgeRatio: 1, chiwen: 16, ridgeOrn: true, lift: 4, platH: 14, platPad: 26, puzuo: '斗口跳 · 无补间', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'tiantai', name: '天台庵', short: '天台庵', sub: '王曲村', dyn: 'zhou', tag: '五代', era: '后唐长兴四年', year: 933, place: '山西平顺 · 浊漳河谷 · 王曲村', placeKey: 'pingshun',
+    lede: '一座三间的小殿，长期被当作"四座唐构"之一。2014 年修缮时在梁上发现题记，才知它建于后唐长兴四年（933）——晚了唐朝二十六年，却仍是唐人的样子。',
+    facts: ['<b>面阔三间</b>，单檐歇山，前檐四柱立在墙外，出檐深远，翘角高扬。', '斗拱极简，柱头只用斗口跳，没有补间；殿内彻上露明，梁架一目了然。', '殿前有唐代石幢、明清碑刻；殿身虽小，却是浊漳河谷三座五代建筑里最"唐"的一座。'],
+    caption: ['立面示意 · 面阔三间', '单檐歇山 · 五代'],
+    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 80, fills: ['win', 'door', 'win'], roof: 'gablehip', bracketS: 1.3, tiers: 1, interm: 0, overhang: 92, roofH: 122, ridgeRatio: .36, gableH: 42, lift: 22, chiwen: 24, ridgeOrn: true, platH: 24, platPad: 40, puzuo: '斗口跳 · 出檐深远', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'dayun', name: '大云院弥陀殿', short: '大云院', dyn: 'zhou', tag: '五代', era: '后晋天福五年', year: 940, place: '山西平顺 · 浊漳河谷 · 实会村', placeKey: 'pingshun',
+    lede: '后晋天福五年（940）建的弥陀殿，殿内留着二十余平方米的五代壁画——中国现存寺观壁画里，五代的只此一处。',
+    facts: ['<b>面阔三间</b>，进深六椽，单檐歇山；斗拱五铺作双杪，每间用补间一朵。', '殿内东壁与扇面墙背面的<b>五代壁画</b>《维摩经变》等，是唐宋之间壁画的孤本。', '寺前双林寺式的石经幢与山门皆为后代，但弥陀殿的梁架仍是五代原物。'],
+    caption: ['弥陀殿立面示意 · 面阔三间', '单檐歇山 · 五代'],
+    draw: () => Buildings.hall({ bays: 3, bw: 110, colH: 90, fills: ['win', 'door', 'win'], roof: 'gablehip', bracketS: 1.7, tiers: 2, interm: 1, intermS: .7, overhang: 80, roofH: 130, ridgeRatio: .42, gableH: 40, lift: 14, chiwen: 26, platH: 26, platPad: 44, puzuo: '五铺作 · 双杪 · 补间一朵', dimLabel: '面阔三间' }),
   },
   {
     id: 'wenfeng', name: '文峰塔', sub: '原名天宁寺塔', dyn: 'zhou', tag: '周', era: '广顺二年', year: 952, place: '河南安阳 · 老城', placeKey: 'anyang',
@@ -60,7 +82,17 @@ const SITES = [
     draw: () => Buildings.crossHall({ bays: 7, bw: 74, colH: 84, fills: ['wall', 'win', 'door', 'door', 'door', 'win', 'wall'], fills2: ['wall', 'win', 'win', 'win', 'wall'], bracketS: 1.5, ang: 1, overhang: 62, skirtH: 56, colH2: 36, roofH: 142, gableH: 56, porchColH: 72, porchOver: 30, gableW: 132, porchRise: 44, gableRise: 56, chiwen: 30, platH: 22, platPad: 40, dimLabel: '面阔 35.0 m' }),
   },
   {
-    id: 'lingxiao', name: '天宁寺凌霄塔', sub: '正定 · 塔心柱', dyn: 'song', tag: '宋', era: '唐始建 · 宋庆历五年重修', year: 1045, place: '河北正定 · 古城', placeKey: 'zhengding',
+    id: 'yuanqi', name: '潞城原起寺', short: '原起寺', sub: '大雄宝殿 · 青龙塔', dyn: 'song', tag: '宋', era: '唐天宝六年创建 · 现存宋构', year: 1000, yearLabel: '宋', place: '山西潞城 · 浊漳河畔 · 辛安村', placeKey: 'pingshun',
+    lede: '寺在浊漳河边一座孤峰的顶上，唐天宝六年（747）创建。现存大雄宝殿与青龙塔都是宋代的：一殿一塔并立在崖顶，从河谷仰望，塔影先入眼。',
+    facts: ['<b>大雄宝殿</b>面阔三间，单檐歇山，翘角高扬，是晋东南宋殿的典型。', '<b>青龙塔</b>八角七级楼阁式砖塔，宋构；塔与殿并列于寺东，不在中轴线上。', '寺内存唐代石经幢、北魏残碑，"悟空"游戏走红后，这里成了取景地之一。'],
+    caption: ['立面示意 · 殿塔并立', '单檐歇山 · 八角七级'],
+    draw: () => Buildings.towerAndHall({ towerX: 220, hallX: 560,
+      tower: { sides: 8, base: [{ w: 130, h: 10 }], storeys: Array.from({ length: 7 }, (_, i) => ({ w: 114 * Math.pow(.93, i), wallH: 33 - i * 1.5, door: 'arch', doorW: 10, doorH: 14 - i, win: 'none', eave: 'brick', outStep: 4, outL: 3, inL: 1, courseH: 4 })), top: { type: 'cap', w: 50, courses: 2, step: 8, stupa: { bulbW: 18, bulbH: 16, rings: 3, ringW: 10, ringH: 4 } } },
+      hall: { bays: 3, bw: 72, colH: 60, fills: ['wall', 'door', 'wall'], roof: 'gablehip', bracketS: 1.1, tiers: 2, interm: 1, intermS: .8, overhang: 56, roofH: 92, ridgeRatio: .42, gableH: 30, lift: 14, chiwen: 18, platH: 14, platPad: 28 },
+      towerNote: '青龙塔 · 宋', hallNote: '大雄宝殿 · 宋', dimLabel: '八角七级', vLabel: '青龙塔', dimLabel2: '面阔三间' }),
+  },
+  {
+    id: 'lingxiao', name: '天宁寺凌霄塔', short: '凌霄塔', sub: '正定 · 塔心柱', dyn: 'song', tag: '宋', era: '唐始建 · 宋庆历五年重修', year: 1045, place: '河北正定 · 古城', placeKey: 'zhengding',
     lede: '唐代宗年间始建，宋庆历五年（1045）在唐塔残址上重修，金皇统五年（1145）再修上部。下面四层是宋代的砖，上面五层是金代的砖木——它把两个朝代叠在了一座塔上。',
     facts: ['八角<b>九层</b>楼阁式，砖木混构，高 41 米，立于八角形台基之上。', '第四层中心竖一根直达塔顶的<b>木塔心柱</b>，各层以八根放射状扒梁与外檐相连，这种做法国内现存仅此一例。', '与开元寺须弥塔、广惠寺华塔、临济寺澄灵塔并称"正定四塔"，此行见其三。'],
     caption: ['立面示意 · 八角九层', '下四层砖 · 上五层砖木'],
@@ -73,7 +105,14 @@ const SITES = [
       top: { type: 'pyramid', h: 46, w: 50, stupa: { bulbW: 22, bulbH: 20, rings: 3, ringW: 12 }, note: '塔刹' }, dimLabel: '八角 · 九层', vLabel: '通高 41 m' }),
   },
   {
-    id: 'liaodi', name: '定州开元寺塔', sub: '料敌塔', dyn: 'song', tag: '宋', era: '咸平四年始建 · 至和二年成', year: 1055, place: '河北定州 · 古城', placeKey: 'dingzhou',
+    id: 'fotou', name: '平顺佛头寺', short: '佛头寺', sub: '车当村', dyn: 'song', tag: '宋', era: '北宋', year: 1050, yearLabel: '北宋', place: '山西平顺 · 浊漳河南岸 · 车当村', placeKey: 'pingshun',
+    lede: '浊漳河南岸的一座小寺，只剩一座北宋佛殿。殿只有三间、一百三十一平方米，却完整地保留着宋代的梁架，殿内四壁是元代的二十四诸天。',
+    facts: ['<b>面阔三间</b>，进深四椽，单檐歇山；柱头铺作四铺作，补间一朵。', '殿内<b>元代壁画</b>二十四诸天，是浊漳河谷少见的元代壁画。', '与淳化寺、九天圣母庙、回龙寺同为平顺境内的宋金庙宇。'],
+    caption: ['佛殿立面示意 · 面阔三间', '单檐歇山 · 北宋'],
+    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['wall', 'door', 'wall'], roof: 'gablehip', bracketS: 1.5, tiers: 2, interm: 1, intermS: .8, overhang: 74, roofH: 122, ridgeRatio: .42, gableH: 38, lift: 16, chiwen: 22, platH: 16, platPad: 30, puzuo: '四铺作 · 补间一朵', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'liaodi', name: '定州开元寺塔', short: '料敌塔', sub: '料敌塔', dyn: 'song', tag: '宋', era: '咸平四年始建 · 至和二年成', year: 1055, place: '河北定州 · 古城', placeKey: 'dingzhou',
     lede: '宋真宗咸平四年（1001）开工，至和二年（1055）落成，前后五十四年。八十三米七，是中国现存最高的砖塔；定州地处宋辽边境，登塔可望契丹军情，故名"料敌"。',
     facts: ['八角<b>十一层</b>楼阁式砖塔，通高 <b>83.7 米</b>，逐层收分，塔内有梯可登顶。', '每层券门与假窗交错，叠涩砖檐之上再起平座，层层如此，全靠砖砌。', '清光绪十年（1884）东北面塔身坍塌，缺口豁开百余年，二十世纪末才修复完整，故有"缺憾之美"之说。'],
     caption: ['立面示意 · 八角十一层', '砖构 · 叠涩檐 · 平座'],
@@ -83,7 +122,14 @@ const SITES = [
       top: { type: 'cap', w: 120, courses: 3, step: 10, stupa: { bulbW: 30, bulbH: 28, rings: 5, ringW: 18, ringH: 5 }, note: '铁刹' }, dimLabel: '八角 · 十一层', vLabel: '通高 83.7 m' }),
   },
   {
-    id: 'liuhe', name: '杭州六和塔', sub: '月轮山 · 钱塘江', dyn: 'song', tag: '宋', era: '南宋绍兴二十六年重建', year: 1156, place: '浙江杭州 · 月轮山', placeKey: 'hangzhou',
+    id: 'jiutian', name: '九天圣母庙', short: '圣母庙', sub: '圣母殿 · 东河村', dyn: 'song', tag: '宋', era: '建中靖国元年重修', year: 1101, place: '山西平顺 · 浊漳河谷 · 东河村', placeKey: 'pingshun',
+    lede: '唐代创建，圣母殿北宋初重建，建中靖国元年（1101）全庙重修。一座村庙里，宋殿、元廊、明清戏楼前后相接，四朝木构挤在一个院子里。',
+    facts: ['<b>圣母殿</b>面阔三间，单檐歇山，宋构；斗拱五铺作，单杪单昂。', '庙内碑刻记有历代重修，元、明、清各有增建，院内戏楼是清代的。', '祀九天圣母，是晋东南民间信仰与宋金建筑并存的实例。'],
+    caption: ['圣母殿立面示意 · 面阔三间', '单檐歇山 · 北宋'],
+    draw: () => Buildings.hall({ bays: 3, bw: 108, colH: 88, fills: ['win', 'door', 'win'], roof: 'gablehip', bracketS: 1.6, tiers: 2, ang: 1, interm: 1, intermS: .8, overhang: 76, roofH: 130, ridgeRatio: .45, gableH: 42, lift: 16, chiwen: 24, platH: 20, platPad: 34, puzuo: '五铺作 · 单杪单昂', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'liuhe', name: '杭州六和塔', short: '六和塔', sub: '月轮山 · 钱塘江', dyn: 'song', tag: '宋', era: '南宋绍兴二十六年重建', year: 1156, place: '浙江杭州 · 月轮山', placeKey: 'hangzhou',
     lede: '北宋开宝三年（970）吴越王为镇钱塘江潮而建；现存砖身为南宋绍兴二十六年（1156）重建、隆兴元年（1163）竣工。外围那十三层木檐，是清光绪二十五年（1899）加上去的。',
     facts: ['砖木混构，八角，<b>通高 59.89 米</b>；砖身七层，外檐十三层，"外十三内七"，每层平座勾阑环绕。', '塔内须弥座砖雕的花卉、飞禽与走兽纹样，与《营造法式》所载图样相合，是研究宋代建筑的实物。', '梁思成 1934 年曾为它拟过"瘦身"方案：拆去光绪木檐，恢复宋塔原貌，终未实施。'],
     caption: ['立面示意 · 外十三层', '砖身七层 · 木檐 · 平座'],
@@ -93,7 +139,7 @@ const SITES = [
       top: { type: 'pyramid', h: 34, w: 60, stupa: { bulbW: 24, bulbH: 22, rings: 3, ringW: 12 }, note: '宝顶' }, dimLabel: '外十三层 · 内七层', vLabel: '通高 59.89 m' }),
   },
   {
-    id: 'kaishan', name: '高碑店开善寺', sub: '大雄宝殿', dyn: 'liao', tag: '辽', era: '辽', year: 1020, yearLabel: '辽', place: '河北高碑店 · 新城', placeKey: 'gaobeidian',
+    id: 'kaishan', name: '高碑店开善寺', short: '开善寺', sub: '大雄宝殿', dyn: 'liao', tag: '辽', era: '辽', year: 1020, yearLabel: '辽', place: '河北高碑店 · 新城', placeKey: 'gaobeidian',
     lede: '现存八座辽代木构之一。它不大，却把辽代的手法都用上了：减柱、移柱，殿内只留四根柱子；斗拱硕大，高度近柱高的三分之一。',
     facts: ['<b>面阔五间</b> 25.8 米，进深三间 14.5 米，高 12.08 米，单檐庑殿。', '檐柱一周施斗拱三十朵：柱头十二、补间十四、转角四；斗拱总高 1.41 米，与柱高之比 1 : 3.41。', '殿内用<b>减柱造</b>与移柱造，仅立柱四根，空间因此开阔。'],
     caption: ['立面示意 · 面阔五间', '单檐庑殿 · 减柱造'],
@@ -107,7 +153,7 @@ const SITES = [
     draw: () => Buildings.hall({ bays: 9, bw: 64, colH: 92, fills: ['wall', 'wall', 'win', 'win', 'door', 'win', 'win', 'wall', 'wall'], roof: 'hip', bracketS: 1.6, tiers: 2, interm: 1, overhang: 62, roofH: 194, ridgeRatio: .6, platH: 46, platPad: 44, lift: 18, chiwen: 44, puzuo: '五铺作 · 双杪', dimLabel: '面阔 53.9 m' }),
   },
   {
-    id: 'yingxian', name: '应县木塔', sub: '佛宫寺释迦塔', dyn: 'liao', tag: '辽', era: '清宁二年', year: 1056, place: '山西朔州 · 应县', placeKey: 'yingxian',
+    id: 'yingxian', name: '应县木塔', short: '木塔', sub: '佛宫寺释迦塔', dyn: 'liao', tag: '辽', era: '清宁二年', year: 1056, place: '山西朔州 · 应县', placeKey: 'yingxian',
     lede: '六十七米、纯木、九百七十年。它是世界上现存最高、最古老的木塔，经历过多次地震与炮击，至今仍立在桑干河畔。',
     facts: ['八角五层六檐，<b>明五暗四</b>共九层；一层副阶周匝，外观六重檐。', '全塔用<b>五十四种斗拱</b>，被称为"斗拱博物馆"；各层以平座相接，逐层收分。', '一层释迦坐像高十一米；1974 年在塔内佛像中发现辽代<b>佛牙舍利</b>与经卷。', '通高 <b>67.31 米</b>，与意大利比萨斜塔、法国埃菲尔铁塔并称"世界三大奇塔"。'],
     caption: ['立面示意 · 八角五层', '楼阁式 · 六檐'],
@@ -122,7 +168,14 @@ const SITES = [
     draw: () => Buildings.pavilion({ bays: 3, bw: 80, colH: 84, fills: ['wall', 'door', 'wall'], fills2: ['wall', 'door', 'wall'], bracketS: 1.5, overhang: 54, skirtH: 44, inset: 14, colH2: 58, roofH: 126, gableH: 44, platH: 20, platPad: 36, dimLabel: '面阔 10.6 m' }),
   },
   {
-    id: 'huata', name: '广惠寺华塔', sub: '花塔', dyn: 'liao', tag: '金', era: '唐始建 · 金大定年间重修', year: 1161, yearLabel: '金大定', place: '河北正定 · 古城', placeKey: 'zhengding',
+    id: 'chunhua', name: '平顺淳化寺', short: '淳化寺', sub: '正殿 · 阳高村', dyn: 'liao', tag: '金', era: '金大定九年前', year: 1160, yearLabel: '金', place: '山西平顺 · 浊漳河谷 · 阳高村', placeKey: 'pingshun',
+    lede: '北齐创建的老寺，只剩一座金代正殿。殿前两座北宋开宝三年（970）的石经幢，刻着《尊胜陀罗尼经》与《金刚经》，比殿还老两百年。',
+    facts: ['正殿<b>面阔三间</b>，进深六椽，单檐歇山，彻上露明造。', '斗拱<b>四铺作单杪</b>，昂作批竹式——宋金之际的做法。', '年代据碑记在金大定九年（1169）之前。'],
+    caption: ['正殿立面示意 · 面阔三间', '单檐歇山 · 金'],
+    draw: () => Buildings.hall({ bays: 3, bw: 104, colH: 88, fills: ['win', 'door', 'win'], roof: 'gablehip', bracketS: 1.5, tiers: 1, ang: 1, interm: 1, intermS: .8, overhang: 70, roofH: 124, ridgeRatio: .45, gableH: 38, lift: 14, chiwen: 22, platH: 18, platPad: 32, puzuo: '四铺作 · 单杪 · 批竹昂', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'huata', name: '广惠寺华塔', short: '华塔', sub: '花塔', dyn: 'liao', tag: '金', era: '唐始建 · 金大定年间重修', year: 1161, yearLabel: '金大定', place: '河北正定 · 古城', placeKey: 'zhengding',
     lede: '中国现存华塔里最华丽的一座：下面三层是八角楼阁，四隅各抱一座六角小塔，最上一层收成一束"花"，狮、象、菩萨、力士层层簇拥着塔刹。',
     facts: ['唐代始建，金大定年间重修；通高 <b>40.5 米</b>（一说 33.35 米），四层，砖砌仿木。', '第一层<b>四隅六角套室</b>与主塔相连，各有券门，顶为覆钵；"一主四副"的组合别处未见。', '第四层<b>花束形塔身</b>：八面塑狮、象、佛龛、力士，交错排布，共八层，华塔之名由此而来。', '与开元寺须弥塔、天宁寺凌霄塔、临济寺澄灵塔并称"正定四塔"。'],
     caption: ['立面示意 · 四层华塔', '八角楼阁 · 六角套室 · 花束塔身'],
@@ -130,14 +183,21 @@ const SITES = [
     draw: () => Buildings.huaTa({ w1: 250, h1: 176, wingW: 96, wingH: 120, w2: 190, h2: 56, w3: 120, h3: 30, flowerH: 170, flowerW: 150, tiers: 8, w4: 70, h4: 26, coneH: 44, dimLabel: '一主四副 · 六角套室', vLabel: '通高 40.5 m' }),
   },
   {
-    id: 'shuanglin', name: '平遥双林寺', sub: '天王殿 · 彩塑', dyn: 'ming', tag: '明', era: '北齐武平二年重修 · 明初重建', year: 1400, yearLabel: '明初', place: '山西平遥 · 桥头村', placeKey: 'pingyao',
+    id: 'xiayu', name: '夏禹神祠', short: '禹王庙', sub: '侯壁村', dyn: 'yuan', tag: '元', era: '元至元二年', year: 1336, place: '山西平顺 · 浊漳河谷 · 侯壁村', placeKey: 'pingshun',
+    lede: '浊漳河谷里祀大禹的小庙，元至元二年（1336）建。一进院落：山门上倒座着戏台，正殿三间是元代的，东西配殿明清补建——一座村庙的完整格局。',
+    facts: ['正殿<b>面阔三间</b>，单檐悬山，元构；用材粗放，梁架多自然弯材，是元代地方做法。', '山门为明代建筑，上层倒座戏台面向正殿。', '俗称禹王庙，浊漳河屡有水患，祀禹以镇之。'],
+    caption: ['正殿立面示意 · 面阔三间', '单檐悬山 · 元'],
+    draw: () => Buildings.hall({ bays: 3, bw: 100, colH: 84, fills: ['win', 'door', 'win'], roof: 'gable', bracketS: 1.3, tiers: 1, interm: 1, intermS: .8, overhang: 50, roofH: 96, ridgeRatio: 1, chiwen: 18, lift: 5, platH: 16, platPad: 28, puzuo: '元 · 四铺作', dimLabel: '面阔三间' }),
+  },
+  {
+    id: 'shuanglin', name: '平遥双林寺', short: '双林寺', sub: '天王殿 · 彩塑', dyn: 'ming', tag: '明', era: '北齐武平二年重修 · 明初重建', year: 1400, yearLabel: '明初', place: '山西平遥 · 桥头村', placeKey: 'pingyao',
     lede: '北魏始建的中都寺，北齐武平二年（571）重修，现存殿宇多为明初重建。它以彩塑闻名：十座殿堂里两千余尊明代彩塑，被称为"东方彩塑艺术长廊"。',
     facts: ['寺外围墙为明代所筑，形如堡垒；内分三进院落、十座殿堂。', '<b>天王殿</b>前廊立四大金刚，各高三米余；<b>千佛殿</b>内的<b>韦驮</b>像扭身按剑，是明代彩塑的名作。', '全寺彩塑二千零五十二尊，完好者一千五百六十六尊，大者丈余、小者尺许。'],
     caption: ['天王殿立面示意 · 面阔五间', '单檐悬山 · 前廊四金刚'],
     draw: () => Buildings.hall({ bays: 5, bw: 100, colH: 92, fills: ['figure', 'figure', 'door', 'figure', 'figure'], roof: 'gable', bracketS: 1.1, tiers: 1, interm: 1, overhang: 56, roofH: 96, ridgeRatio: 1, platH: 18, platPad: 30, chiwen: 22, lift: 6, puzuo: '明式', dimLabel: '面阔五间' }),
   },
   {
-    id: 'tiantan', name: '北京天坛', sub: '祈年殿', dyn: 'ming', tag: '明清', era: '永乐十八年始建 · 光绪二十二年重建', year: 1420, place: '北京 · 天坛', placeKey: 'beijing',
+    id: 'tiantan', name: '北京天坛', short: '天坛', sub: '祈年殿', dyn: 'ming', tag: '明清', era: '永乐十八年始建 · 光绪二十二年重建', year: 1420, place: '北京 · 天坛', placeKey: 'beijing',
     lede: '明永乐十八年（1420）建大祀殿，嘉靖年间改为三重檐圆殿，乾隆时换上蓝瓦、改名祈年殿。光绪十五年（1889）雷火焚毁，六年后按原样重建——今天看到的，是 1896 年的木头。',
     facts: ['圆形三重檐攒尖，蓝琉璃瓦，鎏金宝顶；<b>直径 32.72 米，通高 38 米</b>，立于三层汉白玉圆坛之上。', '殿内二十八根柱子：四根龙井柱象四季，十二根金柱象十二月，十二根檐柱象十二时辰。', '全殿无大梁，靠柱、枋、斗拱层层承托攒尖顶，是明清官式木构的极致。'],
     caption: ['祈年殿立面示意 · 圆形三重檐', '攒尖 · 三层圆坛'],
@@ -145,7 +205,7 @@ const SITES = [
       drums: [{ w: 260, h: 62, bs: .7, over: 44, band: 40 }, { w: 200, h: 38, bs: .65, over: 40, band: 36 }, { w: 148, h: 32, bs: .6, over: 36, band: 34 }], topW: 104, coneH: 26, dimLabel: '祈谷坛 · 三层', vLabel: '通高 38 m' }),
   },
   {
-    id: 'feihong', name: '广胜寺飞虹塔', sub: '洪洞 · 琉璃塔', dyn: 'ming', tag: '明', era: '正德十年始建 · 嘉靖六年成', year: 1527, place: '山西洪洞 · 霍山', placeKey: 'hongtong',
+    id: 'feihong', name: '广胜寺飞虹塔', short: '飞虹塔', sub: '洪洞 · 琉璃塔', dyn: 'ming', tag: '明', era: '正德十年始建 · 嘉靖六年成', year: 1527, place: '山西洪洞 · 霍山', placeKey: 'hongtong',
     lede: '明正德十年（1515）动工，嘉靖六年（1527）完成。八角十三级，通高 47.31 米，通体贴五色琉璃：赤橙黄绿青蓝紫，日光下如一道彩虹，故名飞虹。',
     facts: ['中国现存最大、最完整的<b>琉璃塔</b>；一层外有木构回廊，塔身逐层急剧收分。', '各层檐下琉璃仿木斗拱、佛龛、力士、盘龙，色彩至今未褪。', '1986 年版《西游记》"唐僧扫塔"一集即在此拍摄；下寺元代壁画则早年流散海外。'],
     caption: ['立面示意 · 八角十三级', '琉璃 · 一层回廊'],
@@ -160,9 +220,10 @@ const SITES = [
 
 const CHAPTERS = [
   { key: 'tang', years: '618 — 907', blurb: '雄大疏朗。斗拱可达柱高之半，屋面平缓，出檐深远，柱有侧脚生起——盛唐的尺度感，后世再未复现。' },
-  { key: 'zhou', years: '951 — 960', blurb: '五代五十三年，中原少有木构留存。砖塔以它不易焚毁的身体，替这段乱世留下了记号。' },
+  { key: 'zhou', years: '907 — 960', blurb: '五代五十三年，全国留下的木构只有五座，三座挤在浊漳河谷的几个村子里；砖塔则以不易焚毁的身体，替这段乱世留下另一种记号。' },
   { key: 'song', years: '960 — 1279', blurb: '两宋三百年：摩尼殿早《营造法式》半个世纪已见其规制；砖塔在定州砌到八十三米，到江南又与木檐混构。' },
   { key: 'liao', years: '907 — 1234', blurb: '契丹与女真承唐制而益壮：减柱、移柱以扩展佛殿空间，斜拱如花，殿阁之巨为北地独有；金人重修的华塔，则把一座砖塔堆成一束花。' },
+  { key: 'yuan', years: '1271 — 1368', blurb: '元人用材粗放，梁架常见弯木，村庙里的正殿与戏台却把日常的信仰和娱乐搭在了一个院子里。' },
   { key: 'ming', years: '1368 — 1912', blurb: '官式定型，琉璃盛行：砖塔披上五色琉璃，圆殿以蓝瓦象天，彩塑在晋中的小寺里达到极盛。' },
 ];
 
@@ -171,7 +232,8 @@ const PLACES = [
   { key: 'yingxian', name: '应县', lat: 39.554, lon: 113.187, prov: '山西' },
   { key: 'wutai', name: '五台', lat: 38.75, lon: 113.25, prov: '山西', side: 'l' },
   { key: 'pingyao', name: '平遥', lat: 37.20, lon: 112.18, prov: '山西', side: 'r' },
-  { key: 'hongtong', name: '洪洞', lat: 36.30, lon: 111.80, prov: '山西', side: 'r' },
+  { key: 'hongtong', name: '洪洞', lat: 36.30, lon: 111.80, prov: '山西', side: 'r', dy: -14 },
+  { key: 'pingshun', name: '平顺', lat: 36.20, lon: 113.44, prov: '山西', side: 'l', dy: 14 },
   { key: 'beijing', name: '北京', lat: 39.88, lon: 116.41, prov: '北京', side: 'r' },
   { key: 'gaobeidian', name: '高碑店', lat: 39.33, lon: 115.87, prov: '河北', side: 'r' },
   { key: 'dingzhou', name: '定州', lat: 38.516, lon: 114.990, prov: '河北', side: 'r' },
@@ -180,4 +242,4 @@ const PLACES = [
   { key: 'hangzhou', name: '杭州', lat: 30.198, lon: 120.130, prov: '浙江', side: 'l' },
 ];
 
-const ROUTE = ['datong', 'yingxian', 'wutai', 'pingyao', 'hongtong', 'anyang', 'zhengding', 'dingzhou', 'gaobeidian', 'beijing', 'hangzhou'];
+const ROUTE = ['datong', 'yingxian', 'wutai', 'pingyao', 'hongtong', 'pingshun', 'anyang', 'zhengding', 'dingzhou', 'gaobeidian', 'beijing', 'hangzhou'];

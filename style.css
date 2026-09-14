@@ -171,7 +171,7 @@ section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .tl .mk line { stroke: var(--paper-3); stroke-width: 1; }
 .tl .mk text { fill: var(--paper-2); }
 .tl .mk .yr { font-size: 10.5px; fill: var(--paper-3); }
-.tl .mk .nm { font-family: var(--serif); font-size: 12.5px; letter-spacing: .06em; }
+.tl .mk .nm { font-family: var(--serif); font-size: 12px; letter-spacing: .04em; }
 .tl .mk:hover text, .tl .mk.on text { fill: var(--gold); }
 .tl .mk:hover circle { r: 6; }
 .tl-wrap { overflow-x: auto; padding-bottom: 8px; }
@@ -185,6 +185,7 @@ section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
   color: rgba(235, 226, 204, .025); -webkit-text-stroke: 1px rgba(235, 226, 204, .16); pointer-events: none; user-select: none; letter-spacing: -.05em; z-index: 0;
 }
 .chapter:nth-of-type(even) .glyph { right: auto; left: -2vw; }
+.chapter .glyph.two { font-size: clamp(150px, 22vw, 340px); letter-spacing: -.02em; }
 .chapter-head { position: relative; z-index: 1; display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: end; margin-bottom: clamp(32px, 5vw, 64px); }
 .chapter-head h2 { margin: 0; font-family: var(--brush); font-weight: 400; font-size: clamp(64px, 8vw, 108px); line-height: 1; color: var(--acc); }
 .chapter-head .about { padding-bottom: 14px; }
