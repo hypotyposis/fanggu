@@ -214,7 +214,7 @@ section.block { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
 .site-fig .draft { filter: drop-shadow(0 0 22px rgba(214, 171, 92, .06)); }
 /* an externally drawn plate (black or dark lines on white/transparent) tinted to the page's gold */
 .site-fig img.plate { display: block; width: 100%; height: auto; mix-blend-mode: screen; filter: invert(1) sepia(1) saturate(2.6) hue-rotate(-12deg) brightness(.92) contrast(1.05); opacity: .96; }
-.site-fig img.plate.raw { mix-blend-mode: normal; filter: none; }
+.site-fig img.plate.raw { mix-blend-mode: normal; filter: drop-shadow(0 0 22px rgba(214, 171, 92, .06)); opacity: 1; }
 .site-text .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin-bottom: 18px; }
 .site-text .dyn { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--acc); color: var(--acc); font-family: var(--brush); font-size: 22px; line-height: 1; }
 .site-text .dyn.two { width: auto; padding: 0 8px; letter-spacing: .1em; }
