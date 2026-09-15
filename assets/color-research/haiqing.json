@@ -1,0 +1,66 @@
+{
+  "id": "haiqing",
+  "name": "海清寺阿育王塔",
+  "subject": "连云港海清寺阿育王塔",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/haiqing.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/haiqing-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 连云港海清寺阿育王塔.\nOBSERVED MATERIAL COLORS: Viewed 2013 ordinary daylight complete tower photo. Nine-level brick tower body weathered buff-grey/grey-brown brick with pale mortar stripes and light abrasion; corbelled projecting ledges markedly darker charcoal brown-grey, not timber eaves. Lowest tall wall has darker weathered brick near ground. Small dome-like top cap muted pale ochre stone, thin metal pin dark. Window recesses dark, no copied red rail inserts where absent in master. Sun warms the brick, but illustration should remain muted grey-beige natural masonry, not golden tower.\nSPECIFIC GEOMETRY LOCK: Preserve all NINE source tower levels, octagonal facets, large tall first storey, deep stepped corbel ledges, distinctive bracket band just above first storey and low dome cap with thin pin. Do not add curved wooden roofs or a long spire. Preserve source arch openings and blank plaque rectangle, no added lettering, side tablets, burner, people or trees. Sparse original brick indications, avoid dense surface pattern.\nPreserve original aspect ratio 1024:1536.",
+  "material_observations": "Viewed 2013 ordinary daylight complete tower photo. Nine-level brick tower body weathered buff-grey/grey-brown brick with pale mortar stripes and light abrasion; corbelled projecting ledges markedly darker charcoal brown-grey, not timber eaves. Lowest tall wall has darker weathered brick near ground. Small dome-like top cap muted pale ochre stone, thin metal pin dark. Window recesses dark, no copied red rail inserts where absent in master. Sun warms the brick, but illustration should remain muted grey-beige natural masonry, not golden tower.",
+  "references": {
+    "original_record": "assets/research/haiqing.json",
+    "selected_photo_files": [
+      "assets/references/haiqing-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:The_Pogoda_in_Haiqing_Temple_of_Lianyungang_2013-01.JPG",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/The_Pogoda_in_Haiqing_Temple_of_Lianyungang_2013-01.JPG",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "date": "2013-01-14",
+        "reference_file": "assets/references/haiqing-photo.jpg",
+        "reference_dimensions": {
+          "width": 960,
+          "height": 1280
+        }
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/haiqing.json",
+  "output": "assets/colored/haiqing.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-37182bd3-4740-4298-9c75-54c9ca3f5ebd.png",
+  "width": 1024,
+  "height": 1536,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 连云港海清寺阿育王塔.\nOBSERVED MATERIAL COLORS: Viewed 2013 ordinary daylight complete tower photo. Nine-level brick tower body weathered buff-grey/grey-brown brick with pale mortar stripes and light abrasion; corbelled projecting ledges markedly darker charcoal brown-grey, not timber eaves. Lowest tall wall has darker weathered brick near ground. Small dome-like top cap muted pale ochre stone, thin metal pin dark. Window recesses dark, no copied red rail inserts where absent in master. Sun warms the brick, but illustration should remain muted grey-beige natural masonry, not golden tower.\nSPECIFIC GEOMETRY LOCK: Preserve all NINE source tower levels, octagonal facets, large tall first storey, deep stepped corbel ledges, distinctive bracket band just above first storey and low dome cap with thin pin. Do not add curved wooden roofs or a long spire. Preserve source arch openings and blank plaque rectangle, no added lettering, side tablets, burner, people or trees. Sparse original brick indications, avoid dense surface pattern.\nPreserve original aspect ratio 1024:1536.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/haiqing.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/haiqing-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-37182bd3-4740-4298-9c75-54c9ca3f5ebd.png",
+      "generated_at": "2026-09-15T12:26:38.583707+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2013日间实拍、样本及输出；九级八面叠涩砖塔、高首层、特殊斗栱砖带和低圆顶保持。",
+      "浅灰褐砖身和较深灰褐叠涩檐分区依据照片，未添木构曲檐或想象的塔刹。",
+      "原空匾与拱门保留，未加入红栏、题字、香炉或树木。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

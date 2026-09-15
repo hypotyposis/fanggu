@@ -1,0 +1,88 @@
+{
+  "id": "hn_jidu",
+  "name": "济渎庙",
+  "subject": "济渎庙寝宫 · 正立面",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hn_jidu.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/hn_jidu-wiki-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/hn_jidu-photo-rest.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 济渎庙寝宫 · 正立面.\nOBSERVED MATERIAL COLORS: Viewed 2025 frontal daylight and 2016 close angled photographs of the Resting Hall. Roof has present ochre-yellow glazed tile rows mixed with worn green glaze; edges and ornate ridge green with ochre relief dragons and finial. Brackets and upper heavy beams are dark grey-brown old wood, pale cream plaster frieze behind. Columns and lattice-panel doors worn muted brown-red paint with exposed pale timber. Outer two end-bay walls neutral grey brick. Bases and stairs cool pale grey stone. Existing blue sign is absent in master and must not be added; no lettering or gold from shrine objects.\nSPECIFIC GEOMETRY LOCK: Five-bay hall, exactly six front column positions, three central closed lattice-door bays and solid side bays. Single eave low broad roof and original finial, no added eaves or veranda. Preserve the sparse roof guide lines instead of a dense tile grid. Follow master closed doors, do not add open black portal or statue from photo; no plaque, trees, incense burner, red ribbons or people.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Viewed 2025 frontal daylight and 2016 close angled photographs of the Resting Hall. Roof has present ochre-yellow glazed tile rows mixed with worn green glaze; edges and ornate ridge green with ochre relief dragons and finial. Brackets and upper heavy beams are dark grey-brown old wood, pale cream plaster frieze behind. Columns and lattice-panel doors worn muted brown-red paint with exposed pale timber. Outer two end-bay walls neutral grey brick. Bases and stairs cool pale grey stone. Existing blue sign is absent in master and must not be added; no lettering or gold from shrine objects.",
+  "references": {
+    "original_record": "assets/research/hn_jidu.json",
+    "selected_photo_files": [
+      "assets/references/hn_jidu-wiki-photo.jpg",
+      "assets/references/hn_jidu-photo-rest.jpg"
+    ],
+    "photo_sources": [
+      {
+        "title": "20250716 Jidu Temple 05.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/20250716_Jidu_Temple_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/20250716_Jidu_Temple_05.jpg/1280px-20250716_Jidu_Temple_05.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2025-07-16 19:46:29",
+        "reference_file": "assets/references/hn_jidu-wiki-photo.jpg",
+        "description": "Resting Hall, Jidu Temple",
+        "source_page": "https://commons.wikimedia.org/wiki/File:20250716_Jidu_Temple_05.jpg",
+        "dimensions": [
+          1280,
+          853
+        ]
+      },
+      {
+        "title": "Jidu Resting Palace Jiyuan.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Jidu_Resting_Palace_Jiyuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Jidu_Resting_Palace_Jiyuan.jpg/1280px-Jidu_Resting_Palace_Jiyuan.jpg",
+        "author": "Xin",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2016-08-02 17:55:30",
+        "reference_file": "assets/references/hn_jidu-photo-rest.jpg",
+        "description": "​济渎庙寝宫",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Jidu_Resting_Palace_Jiyuan.jpg",
+        "dimensions": [
+          1280,
+          853
+        ]
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/hn_jidu.json",
+  "output": "assets/colored/hn_jidu.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-9e310af2-b7db-4f47-8b0c-2bf972ab80e5.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 济渎庙寝宫 · 正立面.\nOBSERVED MATERIAL COLORS: Viewed 2025 frontal daylight and 2016 close angled photographs of the Resting Hall. Roof has present ochre-yellow glazed tile rows mixed with worn green glaze; edges and ornate ridge green with ochre relief dragons and finial. Brackets and upper heavy beams are dark grey-brown old wood, pale cream plaster frieze behind. Columns and lattice-panel doors worn muted brown-red paint with exposed pale timber. Outer two end-bay walls neutral grey brick. Bases and stairs cool pale grey stone. Existing blue sign is absent in master and must not be added; no lettering or gold from shrine objects.\nSPECIFIC GEOMETRY LOCK: Five-bay hall, exactly six front column positions, three central closed lattice-door bays and solid side bays. Single eave low broad roof and original finial, no added eaves or veranda. Preserve the sparse roof guide lines instead of a dense tile grid. Follow master closed doors, do not add open black portal or statue from photo; no plaque, trees, incense burner, red ribbons or people.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hn_jidu.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/hn_jidu-wiki-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/hn_jidu-photo-rest.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-9e310af2-b7db-4f47-8b0c-2bf972ab80e5.png",
+      "generated_at": "2026-09-15T11:45:52.450661+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看两张寝宫日间照片、线稿、样本及结果；五间六柱、三组闭合隔扇门、两侧实墙与中央阶梯保留。",
+      "现存黄绿釉屋面、绿底赭龙正脊、褪色红木门柱、灰褐大斗栱及灰砖石材已区分。",
+      "生成增加可辨瓦列和砖线，轮廓未变；无匾、题字、树和香炉。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sx_fusheng",
+  "name": "新绛福胜寺",
+  "subject": "新绛福胜寺弥陀殿北立面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_fusheng.png",
+    "assets/references/sx_fusheng-back-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Fusheng Temple Amitabha Hall, NORTH/rear elevation, Xinj iang Guang village. Keep exact two roof levels, upper smaller three-bay volume with plain infill, lower broad surrounding eave, central four-panel door, flanking solid wall panels and open narrow side corridors with original posts; retain full platform and short central stairs. Current rear-photo material colors: weathered grey/dark grey-brown roof tiles and ridge ornaments, plain walls muted beige/taupe old plaster, posts and brackets dark brown-grey wood, central door dark subdued maroon-brown with black upper slats. Upper wall panels same beige/taupe, not red. Lower base grey masonry and neutral stone. No gold or green roof invention, do not swap to the front elevation or sculpture. Remove trees, lantern, side halls, courtyard balustrade and any signage; black gaps stay black.",
+  "material_observations": [
+    "福胜寺弥陀殿北立面两层屋檐为灰褐瓦，墙体米褐旧灰层，柱和斗栱暗褐。",
+    "中央四扇门下部暗红褐，上部格窗深暗；台基灰砖石，侧面廊柱褐色，不取院树和灰暗天空。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/sx_fusheng-back-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:弥陀殿背景.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%E5%BC%A5%E9%99%80%E6%AE%BF%E8%83%8C%E6%99%AF.jpg/960px-%E5%BC%A5%E9%99%80%E6%AE%BF%E8%83%8C%E6%99%AF.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/sx_fusheng.json",
+  "output": "assets/colored/sx_fusheng.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "北立面两层屋檐、上部小三间、下部四扇门与两侧开廊对应原稿。",
+      "灰褐瓦面、米褐墙灰、褐木与暗红褐门扇对应实拍后立面。",
+      "未误换为前殿或彩塑，无院树、灯笼、栏杆和文字。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T13:31:06.478Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-6087935b-1632-44b2-9ba7-a430edf057cf.png",
+  "generated_at": "2026-09-15T13:34:37.444Z",
+  "completed_at": "2026-09-15T13:37:04.833Z"
+}

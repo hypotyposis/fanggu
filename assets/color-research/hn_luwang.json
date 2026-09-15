@@ -1,0 +1,59 @@
+{
+  "id": "hn_luwang",
+  "name": "潞简王墓",
+  "subject": "潞简王墓 · 潞藩佳城石坊",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_luwang.png",
+    "assets/references/hn_luwang-photo-2.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 潞简王墓 · 潞藩佳城石坊.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST line master's exact OUTER roofless stone gateway of Prince Jian of Lu mausoleum: central three openings, four structural posts, TWO separate tall dragon-carved pillars outside, low bases, top small surviving beast and low seated lions. Current material is virtually all cool neutral gray stone with some light gray-white wear and darker gray recesses, faint natural gray-brown staining. NO red timber, gold carvings, colored glaze, tiled roofs, painted decoration or warm sepia filter. Stone reliefs remain same stone color with subtle matte shading just enough to read. All open spans near-black background. Preserve complete steps and every outer column, leave inscription panels blank. Do not add modern steel braces, safety wires, distant tomb buildings, trees, people or carved lettering.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看线稿与2024年8月3日正面日间实拍，潞藩佳城外石坊及两根独立石柱均为灰石，浅灰磨损与深灰凹处，少量自然灰褐污痕。现物无红木或彩釉；图稿不带现代钢支架、金属护线和碑文字。",
+  "references": [
+    {
+      "title": "20240803 Mausoleum of the Prince Jian of Lu 05.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/20240803_Mausoleum_of_the_Prince_Jian_of_Lu_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/20240803_Mausoleum_of_the_Prince_Jian_of_Lu_05.jpg/1280px-20240803_Mausoleum_of_the_Prince_Jian_of_Lu_05.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2024-08-03 15:42:54",
+      "reference_file": "assets/references/hn_luwang-photo-2.jpg",
+      "description": "Mausoleum of the Prince Jian of Lu",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20240803_Mausoleum_of_the_Prince_Jian_of_Lu_05.jpg",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "file": "assets/references/hn_luwang-photo-2.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/hn_luwang.json",
+  "output": "assets/colored/hn_luwang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d8634ecf-4fce-408b-a483-d8d05c33c0e3.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：三门四结构柱、两根独立外柱、狮子与低台阶完整，灰石色及石雕浅深变化对应实拍。空白额板无字，无瓦顶或现代钢支架；颜色保持天然石材而非暖金。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 潞简王墓 · 潞藩佳城石坊.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST line master's exact OUTER roofless stone gateway of Prince Jian of Lu mausoleum: central three openings, four structural posts, TWO separate tall dragon-carved pillars outside, low bases, top small surviving beast and low seated lions. Current material is virtually all cool neutral gray stone with some light gray-white wear and darker gray recesses, faint natural gray-brown staining. NO red timber, gold carvings, colored glaze, tiled roofs, painted decoration or warm sepia filter. Stone reliefs remain same stone color with subtle matte shading just enough to read. All open spans near-black background. Preserve complete steps and every outer column, leave inscription panels blank. Do not add modern steel braces, safety wires, distant tomb buildings, trees, people or carved lettering.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/hn_luwang.png",
+        "assets/references/hn_luwang-photo-2.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d8634ecf-4fce-408b-a483-d8d05c33c0e3.png",
+      "output": "assets/colored/hn_luwang.png"
+    }
+  ]
+}

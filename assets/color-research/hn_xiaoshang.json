@@ -1,0 +1,38 @@
+{
+  "id": "hn_xiaoshang",
+  "name": "小商桥",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_xiaoshang.png",
+    "assets/references/hn_xiaoshang-museum-0.jpg",
+    "assets/references/hn_xiaoshang-photo-03.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nXiaoshang stone arch bridge: color exact frontal elevation with three arch openings as drawn. Main arch voussoirs and spandrel blocks deep weathered muted brick-red/reddish sandstone brown, narrow joints pale cream-grey, NOT grey throughout. Balustrade, lion tops, deck coping and upper courses neutral grey granite/stone. Underside arch surfaces dark reddish grey. No river scene or green reflections, all openings flat background black. Keep the drawing's lions, carvings, arch shapes and width exactly.",
+  "material_observations": "侧面桥拱和腹石为现状红褐色，栏杆与顶部桥面灰石，拱内暗灰褐，白浅色勾缝。两张实拍均证实此色区分。",
+  "references": [
+    {
+      "source_page": "https://zynbg.xcu.edu.cn/info/1033/1577.htm",
+      "image_url": "https://zynbg.xcu.edu.cn/virtual_attach_file.vsb?afc=TU4nt7MlMVozT2ojlnVUNCZnmVVLNCwsM8-PMN-ZUlW7nz-0gihFp2hmCIa0n1yiMkyan1y4oRr2Mm-iozQVUmLDL4NPo7Q2LNLaUzL8M8MFUllbUNVRL4rFLzLaM47Jqjfjo4OeoDb1QYhXptQ0g47aL4L0LzlsMYbw62X8c&oid=1125709680&tid=1033&nid=1577&e=.jpg",
+      "author": "图片带“大河客户端”水印；许昌学院中原农耕文化博物馆转载，单张未署摄影者",
+      "license": "未声明开放许可",
+      "reference_file": "assets/references/hn_xiaoshang-museum-0.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20240818_Xiaoshang_Bridge_03.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/20240818_Xiaoshang_Bridge_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/hn_xiaoshang-photo-03.jpg",
+      "date": "2024-08-18 14:39:25"
+    }
+  ],
+  "output": "assets/colored/hn_xiaoshang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-4f48b119-c49d-41e2-aa73-3c597505a4b5.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": "逐图目检：三孔侧立面、狮顶栏杆保持，红褐桥腹拱券、灰石栏杆和浅色勾缝与两张照片一致，无水景。",
+  "completed_at": "2026-09-15T10:45:02.985Z"
+}

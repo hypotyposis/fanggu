@@ -1,0 +1,85 @@
+{
+  "id": "qingzhou",
+  "subject": "辽庆州白塔",
+  "caption": [
+    "辽庆州白塔",
+    "八角七级，北立面"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a fine-line heritage architecture plate for 访古. Image 1 is the STYLE MASTER: match its delicate slightly organic black contours, restrained detail, large white empty surfaces and even visual density. Never copy the Buddha shape. Image 2 is the SUBJECT: the actual north facade of the Liao Qingzhou White Pagoda (Shakyamuni Relic Pagoda) in Bairin Right Banner, Inner Mongolia. Image 3 shows the full south view of the same pagoda, ONLY to clarify the apex/short finial and complete proportions.\nDraw the real MAIN PAGODA alone, seen nearly straight on toward the north face. An octagonal masonry pavilion pagoda with EXACTLY SEVEN tall occupied storeys, gently diminishing upward; seven main eaved roofs, brick imitation timber bracket clusters, and thinner balcony bands below the openings. A central arched doorway on each north-facing storey, with selectively outlined guardian figures and simple frame panels on the tall lowest walls. The tall first floor stands on a low ornamental octagonal plinth with lotus mouldings. Small short apex pole, NOT a giant stupa spire. Keep the actual seven-floor proportions and width relationships, but correct the severe upward camera convergence in photo 2, verticals vertical. Show three octagonal faces, central face symmetric, only minimal perspective.\nThe separate small foreground stupa in photo 3 is NOT part of the north elevation and must NOT be drawn. Remove prayer flags, hanging fabric, wires, modern railings, people, plants, pavement grids, sky and unrelated structures. Every wall and opening remains pure WHITE, drawn only in fine BLACK outlines. No solid dark doors, grey shading, shadows, hatching, texture, gradient or color. Simplify ornaments and brackets heavily but keep their positions. Large roof/wall areas should be blank; do not draw every brick or tile.\nPortrait 1024×1536, entire seven-storey tower centered at about 82% canvas height with ample side and top/bottom white margins, base and apex fully uncut. Only a few light ground contour lines. No labels, letters, text, plaques, dimensions, watermark, frame or border.",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/qingzhou.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qingzhou-north-photo.jpg",
+    "assets/references/qingzhou-photo.jpg"
+  ],
+  "source_note": "已核实为内蒙古巴林右旗索博日嘎的辽庆州白塔（辽释迦佛舍利塔）。采用BabelStone2017年北面完整塔身为主体，南面照片补充顶端及比例。原照明显仰视，重绘校正透视、去除经幡与电线；南面独立小覆钵塔不属于北立面，未画入。",
+  "verification": "七个主楼层及七道主檐；北立面门洞、首层天王轮廓、须弥/莲花基座；完整基座与小型塔刹，白底细黑线。",
+  "site_recommendation": {
+    "name": "辽庆州白塔",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽 · 重熙十六至十八年",
+    "year": 1049,
+    "place": "内蒙古 · 巴林右旗",
+    "latlon": [
+      44.204372,
+      118.520645
+    ],
+    "lede": "辽庆州城的白塔立于草原，七级塔身以砖仿木。门窗、天王浮雕与层层斗拱交织，保存了契丹佛塔精细而华丽的面貌。",
+    "facts": [
+      "始建于重熙十六年（1047），重熙十八年（1049）竣工。",
+      "八角七级楼阁式塔，砖雕斗拱上承木质檐椽。",
+      "位于辽庆州城遗址西北部，亦称释迦佛舍利塔。"
+    ],
+    "basis": [
+      {
+        "url": "https://www.blyq.gov.cn/zjbl/jqjd/202304/t20230426_2043610.html",
+        "supports": "官方身份、时代、起讫年、八角七级、砖木结构及形制。"
+      },
+      {
+        "url": "https://www.chinawiki.net/thread/48/37848.html",
+        "supports": "塔址经纬度；用于地图近似定位。"
+      }
+    ]
+  },
+  "historical_sources": [
+    {
+      "url": "https://www.blyq.gov.cn/zjbl/jqjd/202304/t20230426_2043610.html",
+      "title": "辽释迦佛舍利塔",
+      "publisher": "巴林右旗人民政府"
+    },
+    {
+      "url": "https://chifeng.gov.cn/zjcf/cycf/lyxx/202308/t20230824_2113951.html",
+      "title": "白塔，草原的梵呗与传奇",
+      "publisher": "赤峰市人民政府"
+    }
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Qingzhou_White_Pagoda_2017_north_side.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Qingzhou_White_Pagoda_2017_north_side.jpg/960px-Qingzhou_White_Pagoda_2017_north_side.jpg?download=1",
+      "reference_file": "assets/references/qingzhou-north-photo.jpg",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Qingzhou_White_Pagoda_2017_south_side.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Qingzhou_White_Pagoda_2017_south_side.jpg/500px-Qingzhou_White_Pagoda_2017_south_side.jpg?download=1",
+      "reference_file": "assets/references/qingzhou-photo.jpg",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Qingzhou_White_Pagoda_2017_north_side.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Qingzhou_White_Pagoda_2017_north_side.jpg/960px-Qingzhou_White_Pagoda_2017_north_side.jpg?download=1",
+  "author": "BabelStone",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+}

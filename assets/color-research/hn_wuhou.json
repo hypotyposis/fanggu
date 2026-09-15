@@ -1,0 +1,58 @@
+{
+  "id": "hn_wuhou",
+  "name": "南阳武侯祠",
+  "subject": "南阳武侯祠 · 大拜殿檐下局部",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_wuhou.png",
+    "assets/references/hn_wuhou-sswh-0.jpg",
+    "assets/references/hn_wuhou-sswh-1.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 南阳武侯祠 · 大拜殿檐下局部.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST master exactly as THREE-BAY UNDER-EAVE INTERIOR/VERANDA DETAIL, four main front posts plus rear posts, three hanging blank panels, three door openings, three stair flights. No full roof or extra building. Timber posts, simple transverse beams, door frames and panels are worn muted vermilion/deep red; some worn pale gray patches at bottoms. Overhead rafters alternate subdued red and weathered gray-green. Main carved painted friezes/brackets carry deep cobalt blue, jade green, pale cream and small muted yellow/ochre existing designs, without invented large murals. Lattice deep red with very thin ochre/cream edges. Flat blank hanging panels can be pale cream with dark frame; vertical couplet tablets pale cream or muted maroon, ALL WITHOUT CHARACTERS, including any small writing. Stone steps, base and post-footings neutral gray. Door voids dark, no statues added. Vignette outer edges within original margins; don't add lanterns, signs, trees, people or incense burner.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看原稿与陈静摄两张日间/普通檐下实拍。所绘为大拜殿中央三间檐下局部；柱梁、门扇和部分椽子为红漆，彩枋深蓝青绿配乳白和赭黄细饰，门框红、格扇有浅黄边。立匾、横匾照片含文字，生成仅留素色底；石阶柱础灰色。拍摄日期未知，2022-06-15为文章发布路径日期。",
+  "references": [
+    {
+      "title": "hn_wuhou-sswh-0.jpg",
+      "image_url": "https://p1.itc.cn/images01/20220615/0ad19f8d0ed44faa8c98f23c20817578.jpeg",
+      "download_url": "https://p1.itc.cn/images01/20220615/0ad19f8d0ed44faa8c98f23c20817578.jpeg",
+      "author": "陈静 摄；南阳声速文化刊载",
+      "license": "未声明开放许可",
+      "license_url": "",
+      "reference_file": "assets/references/hn_wuhou-sswh-0.jpg",
+      "source_page": "https://www.sohu.com/a/557493990_120326960",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "date": "未知"
+    },
+    {
+      "title": "hn_wuhou-sswh-1.jpg",
+      "image_url": "https://p3.itc.cn/images01/20220615/805725fda69d4713ba4089de73a0d28f.jpeg",
+      "download_url": "https://p3.itc.cn/images01/20220615/805725fda69d4713ba4089de73a0d28f.jpeg",
+      "author": "陈静 摄；南阳声速文化刊载",
+      "license": "未声明开放许可",
+      "license_url": "",
+      "reference_file": "assets/references/hn_wuhou-sswh-1.jpg",
+      "source_page": "https://www.sohu.com/a/557493990_120326960",
+      "dimensions": [
+        1080,
+        810
+      ],
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/hn_wuhou.png",
+  "prepared_at": "2026-09-15T19:42:36.558627+08:00",
+  "original_research": "assets/research/hn_wuhou.json",
+  "visual_review": "已查看生成输出并对照原稿：四根主前柱与后排柱、三处门口、三张横匾及三段石阶保持，所有匾联留空。红木、蓝绿枋彩、灰石台阶分区成立；仅绘檐下局部，未增全屋顶、灯笼或塑像。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-da07cda6-2711-433f-86d4-f902b45db69d.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-da07cda6-2711-433f-86d4-f902b45db69d.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T19:44:36.160775+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T19:46:36.172404+08:00"
+}

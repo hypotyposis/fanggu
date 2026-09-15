@@ -1,0 +1,62 @@
+{
+  "id": "fotou",
+  "name": "平顺佛头寺",
+  "subject": "平顺佛头寺",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/fotou.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/fotou-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 平顺佛头寺.\nOBSERVED MATERIAL COLORS: Input photo reference is a 2024 newspaper PAGE: use ONLY its large TOP building photograph as architecture color reference, and the small real bracket-detail photos for grey-brown old timber. Main hall roof neutral dark grey clay tiles; thin edge/ridge bands dull green glaze with restrained ochre dragon decorations, local rust-red ceramic finial. Front brick walls pale tan/ochre with paler wear and some muted red lower bricks. Door old grey-brown plank wood; window bars pale weathered wood-grey within brown frames. Bracket layer dark grey-brown timber with faded earthy red underside and tan plaster behind. Low stone platform light grey-tan. Ignore all newspaper graphic colors.\nSPECIFIC GEOMETRY LOCK: Color original three-bay hall, one plain closed plank door and two barred windows, exact deep bracket layer and decorative ridge. Keep two low rectangular stones at foot of windows and low plain plinth, no new staircase absent in line. No entire newspaper page, captions, article text, photo frame, cartoons, murals, columns, flags, people or landscape. Sparse quiet wall and roof texture. Geometry solely image1; newspaper only reference for corresponding building areas.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Input photo reference is a 2024 newspaper PAGE: use ONLY its large TOP building photograph as architecture color reference, and the small real bracket-detail photos for grey-brown old timber. Main hall roof neutral dark grey clay tiles; thin edge/ridge bands dull green glaze with restrained ochre dragon decorations, local rust-red ceramic finial. Front brick walls pale tan/ochre with paler wear and some muted red lower bricks. Door old grey-brown plank wood; window bars pale weathered wood-grey within brown frames. Bracket layer dark grey-brown timber with faded earthy red underside and tan plaster behind. Low stone platform light grey-tan. Ignore all newspaper graphic colors.",
+  "references": {
+    "original_record": "assets/research/fotou.json",
+    "selected_photo_files": [
+      "assets/references/fotou-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202412/t20241205_2990619.shtml",
+        "image_url": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202412/W020241205302993868987_ORIGIN.jpg",
+        "author": "长治日报视觉中心",
+        "license": "未标明开放许可；仅作形制参考",
+        "license_url": null,
+        "date": "未知（原记录未明确提供）",
+        "source_note": "长治日报2024-12-05第6版上部正面照片。按现存金代大殿几何重绘；仅用于建筑形制参考，未复用原照片版面或文字。 项目旧正文断代为北宋、壁画为元，所引长治日报则标为金构明画；本轮按参考图更新图注，正文年代留待专门核订。"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/fotou.json",
+  "output": "assets/colored/fotou.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-6a6fa8d1-92c0-4838-bd54-de6063c038c9.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 平顺佛头寺.\nOBSERVED MATERIAL COLORS: Input photo reference is a 2024 newspaper PAGE: use ONLY its large TOP building photograph as architecture color reference, and the small real bracket-detail photos for grey-brown old timber. Main hall roof neutral dark grey clay tiles; thin edge/ridge bands dull green glaze with restrained ochre dragon decorations, local rust-red ceramic finial. Front brick walls pale tan/ochre with paler wear and some muted red lower bricks. Door old grey-brown plank wood; window bars pale weathered wood-grey within brown frames. Bracket layer dark grey-brown timber with faded earthy red underside and tan plaster behind. Low stone platform light grey-tan. Ignore all newspaper graphic colors.\nSPECIFIC GEOMETRY LOCK: Color original three-bay hall, one plain closed plank door and two barred windows, exact deep bracket layer and decorative ridge. Keep two low rectangular stones at foot of windows and low plain plinth, no new staircase absent in line. No entire newspaper page, captions, article text, photo frame, cartoons, murals, columns, flags, people or landscape. Sparse quiet wall and roof texture. Geometry solely image1; newspaper only reference for corresponding building areas.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/fotou.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/fotou-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-6a6fa8d1-92c0-4838-bd54-de6063c038c9.png",
+      "generated_at": "2026-09-15T12:51:33.183900+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、报纸所嵌大殿实拍与斗栱细照、样本及输出；三间一门两窗、檐下铺作和低台两块石件保留。",
+      "灰瓦绿赭脊、浅赭砖墙与褐灰老木依对应照片取色，未套用报纸图形配色。",
+      "未加入版面、文字、漫画、壁画或额外阶梯；主体轮廓完整。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

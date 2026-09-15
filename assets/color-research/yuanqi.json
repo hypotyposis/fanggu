@@ -1,0 +1,72 @@
+{
+  "id": "yuanqi",
+  "name": "潞城原起寺",
+  "subject": "原起寺青龙塔与大雄宝殿",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/yuanqi.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/yuanqi-tower-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/yuanqi-hall-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 原起寺青龙塔与大雄宝殿.\nOBSERVED MATERIAL COLORS: Viewed April 2026 daylight photos. LEFT Qinglong Tower: brick body and imitation timber brackets are natural pale ochre/sandy tan masonry, white-grey mortar and darker grey-tan weathered eave tiles; little dull green glaze on a few eave end ornaments; lower arch surround has faint faded pink-red brick band. Finial weathered brown metal/stone, no shiny gold. RIGHT main hall: roof grey clay tile, ridge localized green and ochre glaze, eave brackets and timber frieze dark muted brick red/burgundy, grey-brown brick front walls, door and window frames brown-red. Plinth grey stone. Do not confuse foreground incense pavilion with main hall.\nSPECIFIC GEOMETRY LOCK: Keep precisely the line master's LEFT seven-eave octagonal tower with tiny upper finial and chains, RIGHT three-bay compact main hall with two barred windows and central closed double-door. Preserve comparative spacing and independent bases. Do not remove tower levels, add foreground incense pavilion, text plaque, red fire equipment or outside scenery. Tiny existing green glaze limited to ornaments, no green tower body.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Viewed April 2026 daylight photos. LEFT Qinglong Tower: brick body and imitation timber brackets are natural pale ochre/sandy tan masonry, white-grey mortar and darker grey-tan weathered eave tiles; little dull green glaze on a few eave end ornaments; lower arch surround has faint faded pink-red brick band. Finial weathered brown metal/stone, no shiny gold. RIGHT main hall: roof grey clay tile, ridge localized green and ochre glaze, eave brackets and timber frieze dark muted brick red/burgundy, grey-brown brick front walls, door and window frames brown-red. Plinth grey stone. Do not confuse foreground incense pavilion with main hall.",
+  "references": {
+    "original_record": "assets/research/yuanqi.json",
+    "selected_photo_files": [
+      "assets/references/yuanqi-tower-photo.jpg",
+      "assets/references/yuanqi-hall-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_02.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20260405_Yuanqi_Temple_02.jpg/960px-20260405_Yuanqi_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原记录未明确提供）"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_04.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20260405_Yuanqi_Temple_04.jpg/960px-20260405_Yuanqi_Temple_04.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原记录未明确提供）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/yuanqi.json",
+  "output": "assets/colored/yuanqi.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-bccabe7d-73a5-4311-8aea-998cbe1c01fe.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 原起寺青龙塔与大雄宝殿.\nOBSERVED MATERIAL COLORS: Viewed April 2026 daylight photos. LEFT Qinglong Tower: brick body and imitation timber brackets are natural pale ochre/sandy tan masonry, white-grey mortar and darker grey-tan weathered eave tiles; little dull green glaze on a few eave end ornaments; lower arch surround has faint faded pink-red brick band. Finial weathered brown metal/stone, no shiny gold. RIGHT main hall: roof grey clay tile, ridge localized green and ochre glaze, eave brackets and timber frieze dark muted brick red/burgundy, grey-brown brick front walls, door and window frames brown-red. Plinth grey stone. Do not confuse foreground incense pavilion with main hall.\nSPECIFIC GEOMETRY LOCK: Keep precisely the line master's LEFT seven-eave octagonal tower with tiny upper finial and chains, RIGHT three-bay compact main hall with two barred windows and central closed double-door. Preserve comparative spacing and independent bases. Do not remove tower levels, add foreground incense pavilion, text plaque, red fire equipment or outside scenery. Tiny existing green glaze limited to ornaments, no green tower body.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/yuanqi.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/yuanqi-tower-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/yuanqi-hall-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-bccabe7d-73a5-4311-8aea-998cbe1c01fe.png",
+      "generated_at": "2026-09-15T11:53:24.515040+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看两张2026实拍、原稿、样本及输出；左侧塔七道檐、右侧三间一门两窗及分离基座保持。",
+      "青龙塔淡赭砖石、灰瓦、局部绿釉，与大殿红褐木构、灰砖墙和绿赭脊饰已分别取色。",
+      "没有把照片前部香亭、标牌或灭火设备画进大殿，原组合轮廓完整。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

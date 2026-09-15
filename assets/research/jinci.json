@@ -1,0 +1,106 @@
+{
+  "id": "jinci",
+  "subject": "晋祠圣母殿",
+  "caption": [
+    "晋祠 · 圣母殿",
+    "北宋 · 七间重檐与八根盘龙柱"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:20250602_Jinci_Bowuguan_(151554).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/20250602_Jinci_Bowuguan_%28151554%29.jpg/1280px-20250602_Jinci_Bowuguan_%28151554%29.jpg",
+  "author": "Yumeto；Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250602_Jinci_Bowuguan_(151554).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/20250602_Jinci_Bowuguan_%28151554%29.jpg/1280px-20250602_Jinci_Bowuguan_%28151554%29.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/jinci-photo.jpg",
+      "date": "2025-06-02",
+      "role": "正面柱廊、斗栱与上下两檐细节"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:晴天下的晋祠圣母殿.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E6%99%B4%E5%A4%A9%E4%B8%8B%E7%9A%84%E6%99%8B%E7%A5%A0%E5%9C%A3%E6%AF%8D%E6%AE%BF.jpg/1280px-%E6%99%B4%E5%A4%A9%E4%B8%8B%E7%9A%84%E6%99%8B%E7%A5%A0%E5%9C%A3%E6%AF%8D%E6%AE%BF.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/jinci-wide-photo.jpg",
+      "date": "2024-05-22",
+      "role": "完整重檐歇山屋顶轮廓"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jinci-photo.jpg",
+    "assets/references/jinci-wide-photo.jpg"
+  ],
+  "source_note": "正面照片辨识柱廊与雕龙；宽景照片补足被树遮挡的完整双檐屋顶。最终核对七开间、八根前檐盘龙柱、两层屋檐，去除鱼沼飞梁与周围建筑，以单座圣母殿为图版主体。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: JINCI SAINT MOTHER'S HALL 晋祠圣母殿, Taiyuan, northern Song, present hall repaired 1102. Image 2 is a close actual FRONT photo for all facade and bracket detail. Image 3 is a wider actual front-left photo for the whole roof outline, partially obscured by trees. Draw the hall alone in a straight-on facade, not the bridge or complex. EXACTLY TWO eave/roof tiers: high upper hip-and-gable roof above a low surrounding lower roof, with clearly separated bracket bands. EXACTLY SEVEN front porch bays separated by EIGHT tall round timber columns; every one of the eight front columns bears ONE slender coiling carved dragon with its head near the top, a few sweeping contour coils, NO densely drawn scales. Wide central porch opening and six other porch openings; facade is recessed deeply behind the open colonnade. Tall upper bracket zone between the two roofs, rich but selected structural outline detail. Preserve the sweeping roof corners, long straight main ridge with curled ends, and small ornamental pagoda at ridge center seen in the photographs. Don't add a third roof, another building or extra bays. Retain only a low rectangular stone terrace and three central approach steps; remove the entire projecting fishpond bridge and long balustrades. Remove ALL trees, people, lawn, modern signs, lettering and long hanging boards; the architecture must be clearly visible with clean white gaps. Match master delicate thin contours with white surfaces and restrained density. Roofs mostly white with at most 12 fine guiding lines per roof, NOT full rows of roof tiles; no shadows or dense hatching, no colors or wood grain. Landscape 1536×1024, complete hall centered at 82% width with 9% white margin each side, base and every roof corner uncut.",
+  "generated_file": "assets/generated/jinci.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "太原晋祠圣母殿：宋代宫苑的木构诗篇",
+      "url": "https://arch.xmu.edu.cn/info/1161/19204.htm",
+      "publisher": "厦门大学建筑与土木工程学院",
+      "evidence": "崇宁元年1102年地震后重修，形成现今主体格局；重檐歇山、面阔七间、进深六间、副阶周匝。"
+    },
+    {
+      "title": "听得见的博物馆：晋祠圣母殿",
+      "url": "https://www.sohu.com/a/437470988_258481",
+      "author": "晋祠博物馆 樊晓静",
+      "publisher": "山西广播电视台相关节目",
+      "evidence": "北宋崇宁元年1102年重修圣母殿；上下檐、柱头及补间斗栱形制各异。"
+    },
+    {
+      "title": "古建不语 一眼千年",
+      "url": "https://www.jccq.gov.cn/mobile/zwzx_mobile/sxyw_mobile/202506/t20250604_2150568.shtml",
+      "publisher": "晋城市城区人民政府转载报道",
+      "evidence": "圣母殿为北宋主殿，殿前8根木雕盘龙柱。"
+    },
+    {
+      "title": "圣母殿正面照片坐标",
+      "url": "https://commons.wikimedia.org/wiki/File:20250602_Jinci_Bowuguan_(151554).jpg",
+      "evidence": "照片拍摄点37.709000,112.434906，近圣母殿正前方；用于该殿附近地图定位。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "晋祠",
+    "subtitle": "圣母殿",
+    "dyn": "song",
+    "dynasty": "北宋",
+    "year": 1102,
+    "yearLabel": "1102年重修",
+    "yearExact": true,
+    "yearNote": "1102是现存殿宇大修纪年，并非晋祠始建年；创建年代存在984年及天圣年间等不同表述，避免将其混用。",
+    "place": "山西 · 太原",
+    "placeKey": "taiyuan",
+    "location": "山西省太原市晋源区晋祠博物馆圣母殿",
+    "lat": 37.709,
+    "lon": 112.434906,
+    "latlon_source": "https://commons.wikimedia.org/wiki/File:20250602_Jinci_Bowuguan_(151554).jpg",
+    "latlon_note": "圣母殿正前方摄影点，作为附近定位",
+    "lede": "两重飞檐下，八条木雕龙盘绕前柱。圣母殿以深广的柱廊和层叠斗栱，留下北宋殿堂的空间秩序。",
+    "facts": [
+      {
+        "label": "七间重檐",
+        "text": "圣母殿面阔七间、进深六间，采用重檐歇山顶。"
+      },
+      {
+        "label": "副阶周匝",
+        "text": "殿外四周围廊，前廊尤其深广；八根前檐柱上装饰木雕盘龙。"
+      },
+      {
+        "label": "重修纪年",
+        "text": "北宋崇宁元年（1102）重修，现存主体格局由此形成；图示为圣母殿，不含鱼沼飞梁。"
+      }
+    ]
+  }
+}

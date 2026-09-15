@@ -1,0 +1,109 @@
+{
+  "id": "sx_wubian",
+  "subject": "太谷无边寺白塔",
+  "caption": [
+    "无边寺 · 白塔",
+    "北宋元祐五年 · 八角楼阁塔"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Taigu_Wubian_Si_2013.08.27_07-28-52.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Taigu_Wubian_Si_2013.08.27_07-28-52.jpg/960px-Taigu_Wubian_Si_2013.08.27_07-28-52.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_wubian-photo.jpg",
+    "assets/references/sx_wubian-base-photo.jpg"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/sx_wubian-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Taigu_Wubian_Si_2013.08.27_07-28-52.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Taigu_Wubian_Si_2013.08.27_07-28-52.jpg/960px-Taigu_Wubian_Si_2013.08.27_07-28-52.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2013-08-27",
+      "dimensions": {
+        "width": 960,
+        "height": 1440
+      }
+    },
+    {
+      "file": "assets/references/sx_wubian-base-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Taigu_Wubian_Si_2013.08.27_08-55-10.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Taigu_Wubian_Si_2013.08.27_08-55-10.jpg/960px-Taigu_Wubian_Si_2013.08.27_08-55-10.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2013-08-27",
+      "dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "source_note": "远景实照负责外部轮廓，南面底层实照补门口小屋顶及台基；将视角调整至南面近正面。实物上部短层、塔刹与平座轮廓均依实照，不将外七层误画成七座等高标准屋楼；台基与平座的凸出线不另算层。输入输出已目视检查，主agent已独立复核：六个带门窗高层与莲座下无窗短层的实拍轮廓对应，底层小屋顶另有实照支持。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the actual WHITE PAGODA of WUBIAN TEMPLE, TAIGU, SHANXI 太谷无边寺白塔. Photo2 is the primary distant complete tower view showing SEVEN exterior storeys; photo3 documents the actual SOUTH base doorway and its small projecting entrance roof. Preserve the tapering OCTAGONAL tower, exactly SEVEN tall masonry body storeys, with arched door/window openings and the actual double rhythm of broad projecting eaves plus narrow flat balcony/plinth courses between storeys. Do NOT confuse balcony cornices with extra storeys. Reproduce seven main storeys from bottom to top and the distinctive substantial carved LOTUS-BASED STONE FINIAL above the top roof, not a metal ring mast. Each storey generally has a visible central arched opening and narrow side-face arched openings or false straight-bar windows; retain the real uneven arrangement rather than an ornate generic pattern. Preserve the projecting rows of brick imitation-wood dougong beneath main eaves with just a few simple structural outlines. Reconstruct only obstructed continuation of masonry and low polygonal footing using photo3. On south front at lowest storey include the small actual pitched hip-and-gable porch roof over the arched doorway, as photo3 shows; no independent hall. Upright nearfrontal view with slight side visible, no exaggerated perspective. All plaster walls blank white, no white plaster texture cracks; remove trees, courtyard halls, urban buildings, flags, powerlines, floodlights, modern signs and red wraps. Thin outlines only; arch openings remain white. Very restrained roof line count, no dense brickwork or hatching. Portrait1024x1536 entire seven-storey tower and finial uncut about83%height, slender width matches real tower, generous whitespace.\nCRITICAL COUNT: The real tower has SEVEN WINDOWED BODY LEVELS BELOW the blank lotus-finial pedestal. From bottom upward: level1 has the ground arched door and its small porch; level2 has an arched window; level3 has an arched window; level4 has an arched window; level5 has an arched window; level6 has an arched window; level7 has an arched window. THEN ABOVE those seven windowed levels is the short BLANK pedestal plus the lotus stone finial. The blank finial pedestal is NOT the seventh body level. Make seven clearly countable window/door bands, one per storey. Do not shorten to six. Still keep the original tower taper and matching paired balcony/eave profiles.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-4392407d-cb4c-42e3-8c00-5c6a56515199.png",
+  "generated_file": "assets/generated/sx_wubian.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "无边寺",
+      "url": "https://www.cchfound.com/product/3089.html",
+      "publisher": "中国华夏文化遗产基金会",
+      "evidence": "北宋元祐五年1090续修时建白塔，八角七层楼阁式砖塔、内九层，檐和平座有砖雕仿木斗栱，顶部尊胜石幢；寺院其他建筑经历明清修葺。"
+    },
+    {
+      "title": "无边寺",
+      "url": "https://zh.wikipedia.org/wiki/无边寺",
+      "publisher": "维基百科，援引国家文物局《全国重点文物保护单位》第六批第Ⅳ卷及古建筑调查著作",
+      "evidence": "区别1090白塔与1904—1906寺院重修；提供对象坐标。"
+    }
+  ],
+  "coordinates": {
+    "lat": 37.42222,
+    "lon": 112.55167,
+    "source": "https://zh.wikipedia.org/wiki/无边寺",
+    "note": "无边寺对象坐标37°25′20″N112°33′06″E。"
+  },
+  "site_recommendation": {
+    "id": "sx_wubian",
+    "name": "太谷无边寺",
+    "short": "无边寺",
+    "sub": "白塔 · 太谷古城",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "song",
+    "tag": "北宋",
+    "era": "北宋 · 元祐五年",
+    "year": 1090,
+    "yearLabel": "1090",
+    "yearApprox": false,
+    "place": "山西太谷 · 南寺街",
+    "province": "山西",
+    "placeName": "太谷",
+    "placeKey": "sx_taigu",
+    "lat": 37.42222,
+    "lon": 112.55167,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/无边寺",
+    "lede": "太谷古城中的白塔收分舒缓，八角塔身以砖雕斗栱、出檐和平座模拟楼阁。宋代塔与后来重修的寺院，共同构成城市天际线中的旧地标。",
+    "facts": [
+      {
+        "label": "元祐白塔",
+        "text": "现存白塔建于北宋元祐五年，即1090年，不能将寺院西晋创建传说作为塔的年代。"
+      },
+      {
+        "label": "外七内九",
+        "text": "塔为八角楼阁式，文保资料记外观七层、内部九层，砖雕檐座模拟木构斗栱。"
+      },
+      {
+        "label": "寺塔沿革",
+        "text": "寺院经明清修葺，晚清火灾后重修殿宇；图版单取保存宋代风格的白塔。"
+      }
+    ]
+  }
+}

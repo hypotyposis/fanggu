@@ -1,0 +1,48 @@
+{
+  "id": "hb_zdwenmiao",
+  "name": "正定县文庙大成殿",
+  "subject": "正定县文庙大成殿 · 大成殿正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hb_zdwenmiao.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/hb_zdwenmiao-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: hb_zdwenmiao.\nOBSERVED MATERIAL COLORS: Normal daytime photo: gray tiled roof/ridge with a SMALL subdued green tile/patch near central roof; red-ochre painted columns, brackets and central door/window boards, cream-white upper infill, gray beige brick lower walls and outer square blocks. Small central hanging plaque is blue with a narrow ochre frame but MUST blank, no lettering. Gray stone platform. No imported warm-gold tint.\nSPECIFIC GEOMETRY LOCK: Five bays, central three opened timber facade and two solid side wall blocks. Exactly two barred windows and one center open doorway. Preserve central plaque shape blank with blue field and subdued frame, avoid creating extra blue column banners absent in linework. Roof complete and wide; no text, trees or lights.",
+  "material_observations": "Normal daytime photo: gray tiled roof/ridge with a SMALL subdued green tile/patch near central roof; red-ochre painted columns, brackets and central door/window boards, cream-white upper infill, gray beige brick lower walls and outer square blocks. Small central hanging plaque is blue with a narrow ochre frame but MUST blank, no lettering. Gray stone platform. No imported warm-gold tint.",
+  "references": {
+    "original_record": "assets/research/hb_zdwenmiao.json",
+    "selected_photo_files": [
+      "assets/references/hb_zdwenmiao-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%8E%BF%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF2018%EF%BC%882%EF%BC%89.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/%E6%AD%A3%E5%AE%9A%E5%8E%BF%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF2018%EF%BC%882%EF%BC%89.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source_note": "2018年实拍，保留五间、四根外露柱与两端墙面，中央门、两侧窗及低台阶。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/hb_zdwenmiao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-a80ce170-3bec-4dca-836b-88a578027f37.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "与原稿对照：五间墙面、中央入口、两侧竖棂窗及外侧封闭墙格保留，屋顶轮廓与台阶未变。",
+      "按日间实照表现灰瓦、砖红木构、灰砖墙、浅色抹灰；蓝底金边牌匾保持无字。",
+      "整殿留边完整，暗底平静，无新增人物或环境。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

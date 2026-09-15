@@ -1,0 +1,47 @@
+{
+  "id": "hn_baolun",
+  "name": "宝轮寺塔",
+  "subject": "宝轮寺塔 · 南立面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_baolun.png",
+    "assets/references/hn_baolun-wiki-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Baolun Temple Pagoda, south elevation. Preserve line master's exact thirteen narrow straight corbelled eaves, alternating tiny arches and square vents, separate ringed finial, high base chamber and centered arched entrance, complete pedestal and steps. Photo shows weathered buff/yellowish-grey masonry, subtly warmer tan upper shaft with darker grey-brown eave bands, pale grey-beige lower chamber; finial light grey-beige masonry. Door restrained ochre-brown wood, recess black. Translate photographed masonry neutrally, no yellow gold plating, no red brick substitution. Keep restrained fine contours and matte colors, do not copy trees, people or long forecourt.",
+  "material_observations": [
+    "宝轮寺塔照片为低饱和黄褐、灰米色砖体，塔身上部檐层较深褐灰，底座较浅灰。",
+    "塔顶浅灰米色小塔刹，南面券门木扇可见赭黄棕色，开口深暗。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hn_baolun-wiki-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Baolun_Temple_Pagoda,_Jin_Dynasty,_1177_AD,_Sanmenxia_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Baolun_Temple_Pagoda%2C_Jin_Dynasty%2C_1177_AD%2C_Sanmenxia_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Gary Todd",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2015-03-20 16:55:18",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/hn_baolun.json",
+  "output": "assets/colored/hn_baolun.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "十三层直线密檐、交替方孔和券孔、高基座及中央券门均保留，塔刹到底座完整。",
+      "灰米和黄褐砖体、深灰檐层与浅灰下部基础区分；门扇棕色，未画成金塔。",
+      "线条清楚、哑光纹理适量，深色背景无文字与周边场景。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T11:44:50.913Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-c7516d99-875a-421a-8b7c-c83f5efe1364.png",
+  "generated_at": "2026-09-15T11:46:05.497Z",
+  "completed_at": "2026-09-15T11:47:48.634Z"
+}

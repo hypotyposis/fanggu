@@ -1,0 +1,73 @@
+{
+  "id": "chongsheng",
+  "name": "大理崇圣寺三塔",
+  "subject": "大理崇圣寺三塔：千寻塔、南塔、北塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/chongsheng.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongsheng-front-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongsheng-side-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongsheng-north-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: chongsheng.\nOBSERVED MATERIAL COLORS: Daylight photos show three pale ivory/cream plastered masonry towers with muted beige aging, not gold. The side tower close photo under cloud clarifies stone-white/cream faces and darker gray-brown drip weathering under projecting ledges; dark gray metal finials. Main tower light cream, small towers pale stone beige, dark niches and neutral gray stone platforms. Correct warm sunlight in distant view, no orange filter.\nSPECIFIC GEOMETRY LOCK: Three separate towers in original composition: 16-tier square main tower centered and 10-tier octagonal smaller towers left and right. Preserve each tier exactly, relative size, existing crown and original margins. No duplicated levels or trees. Plaques blank. Color fields restrained, delicate weathering only, no dense random spots.",
+  "material_observations": "Daylight photos show three pale ivory/cream plastered masonry towers with muted beige aging, not gold. The side tower close photo under cloud clarifies stone-white/cream faces and darker gray-brown drip weathering under projecting ledges; dark gray metal finials. Main tower light cream, small towers pale stone beige, dark niches and neutral gray stone platforms. Correct warm sunlight in distant view, no orange filter.",
+  "references": {
+    "original_record": "assets/research/chongsheng.json",
+    "selected_photo_files": [
+      "assets/references/chongsheng-front-photo.jpg",
+      "assets/references/chongsheng-side-photo.jpg",
+      "assets/references/chongsheng-north-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Three_Pagodas_Front_View.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Three_Pagodas_Front_View.jpg",
+        "author": "Tdxiang",
+        "date": "2007-04-21（首次上传）",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "reference_file": "assets/references/chongsheng-front-photo.jpg",
+        "role": "千寻塔东面和三塔方位关系，远景小塔下部受树遮挡"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Left_leaning_Pagoda.JPG",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Left_leaning_Pagoda.JPG",
+        "author": "Tdxiang",
+        "date": "2007-04-21（首次上传）",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "reference_file": "assets/references/chongsheng-side-photo.jpg",
+        "role": "南侧小塔全高十层近照、八角轮廓和塔基"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+        "author": "wanghongliu",
+        "date": "2002-05-16",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "reference_file": "assets/references/chongsheng-north-photo.jpg",
+        "role": "明确标注北塔的实景，核对独立北塔轮廓，基部部分受树遮挡"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/chongsheng.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-089182c7-d2a6-4e08-bd48-0d3277f238ca.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看线稿、三张分别对应三塔的日间照片、样本和输出。",
+      "中塔十六层及两小塔各十层、相对高度与间距保留。",
+      "浅米白塔身、灰石台、深灰塔刹与小龛对应照片；无山景或新文字。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

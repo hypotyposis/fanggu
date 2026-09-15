@@ -1,0 +1,96 @@
+{
+  "id": "sx_jiezhou_guandi",
+  "subject": "解州关帝庙崇宁殿",
+  "caption": [
+    "解州关帝庙 · 崇宁殿",
+    "清代 · 七间重檐大殿"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:20260504_Haizhou_Emperor_Guan_Temple_11.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/20260504_Haizhou_Emperor_Guan_Temple_11.jpg/960px-20260504_Haizhou_Emperor_Guan_Temple_11.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_jiezhou_guandi-photo.jpg"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/sx_jiezhou_guandi-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260504_Haizhou_Emperor_Guan_Temple_11.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/20260504_Haizhou_Emperor_Guan_Temple_11.jpg/960px-20260504_Haizhou_Emperor_Guan_Temple_11.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2026-05-04",
+      "dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "source_note": "真实近正面崇宁殿照片为几何输入，保留七间石柱廊、重檐歇山、前台石栏及两根高石柱；移除密集游客与香炉遮挡，仅概括实照可确认台基，不补现代园区或其他殿。输入输出已目視核对。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the actual CHONGNING HALL in HAIZHOU / XIEZHOU GUANDI TEMPLE, YUNCHENG 解州关帝庙崇宁殿. Photo2 is a real complete nearly frontal photograph. Preserve exactly SEVEN front bays with EIGHT stone facade columns, ONE monumental rectangular hall, TWO eaves and a HIP-AND-GABLE roof. The very broad lower roof is a continuous perimeter veranda roof; the upper roof is steep and taller, long straight ridge with tall curled end dragons and a small central ridge ornament. Preserve the actual low short strip between upper and lower roofs and blank outlined central plaques. Stone facade columns carry carved dragons: suggest just a few curling contours, NOT dark textured cylinders. The hall stands on a large raised stone-and-brick terrace with a low carved STONE BALUSTRADE across its front. Reproduce the TWO tall slender dragon/guardian-topped stone posts at the center front terrace, and the lower railing posts, as photographed; keep the hall columns behind distinct. Remove foreground incense burner and its modern pitched canopy, all tourists, trees, temporary barriers, wiring, lamps and signage. Let the visible portions of the rectangular terrace establish its continuous plain base; no invented front temple gate or giant central staircase, no isolated side pavilions. Keep the true hall proportions and seven bays; no extra storey. Very sparse outlines of roof slopes and sculpted ornament, avoid the photo's colored tile pattern, keep all surfaces WHITE including deep veranda. Landscape1536x1024 complete hall and immediate terrace about82%width and75%height, entire apex and base uncut, clear white margin.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-39d7a9a0-2c74-45bb-b91e-88d57e00777c.png",
+  "generated_file": "assets/generated/sx_jiezhou_guandi.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "运城关公故里文化旅游景区",
+      "url": "https://www.yuncheng.gov.cn/doc/2020/07/21/71093.shtml",
+      "publisher": "运城市人民政府",
+      "evidence": "解州祖庙现存建筑多明清重修，崇宁殿为中轴主殿；页面区分解州祖庙与常平家庙，本条仅采用解州资料。"
+    },
+    {
+      "title": "解州关帝庙",
+      "url": "https://zh.wikipedia.org/wiki/解州关帝庙",
+      "publisher": "维基百科，援引全国重点文物保护单位及山西古建筑调查著作",
+      "evidence": "1702年火灾后重建，崇宁殿面阔七间进深六间、重檐歇山；所绘主体属清，不按589建庙传说或1104关羽封号断代。"
+    }
+  ],
+  "coordinates": {
+    "lat": 34.91056,
+    "lon": 110.84333,
+    "source": "https://zh.wikipedia.org/wiki/解州关帝庙",
+    "note": "解州关帝庙对象坐标34°54′38″N110°50′36″E，非城东常平家庙。"
+  },
+  "site_recommendation": {
+    "id": "sx_jiezhou_guandi",
+    "name": "解州关帝庙",
+    "short": "关帝庙",
+    "sub": "崇宁殿 · 关帝祖庙",
+    "types": [
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清 · 崇宁殿",
+    "year": 1725,
+    "yearLabel": "清 · 康熙火后重建",
+    "yearApprox": true,
+    "yearNote": "1725仅作18世纪前期重建阶段的约略排序，不是崇宁殿精确竣工年；1702是庙宇火灾年份。",
+    "place": "山西运城 · 解州镇",
+    "province": "山西",
+    "placeName": "运城",
+    "placeKey": "sx_yuncheng",
+    "lat": 34.91056,
+    "lon": 110.84333,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/解州关帝庙",
+    "lede": "崇宁殿以七间大殿和环绕石柱廊承接祖庙的中轴，重檐之下龙柱、石栏与历代题匾共同展现关公信仰的礼仪空间。",
+    "facts": [
+      {
+        "label": "现存清构",
+        "text": "庙宇历经重建，现存主殿按清代木构登记，早期建庙记载不作为这座大殿的年代。"
+      },
+      {
+        "label": "七间大殿",
+        "text": "崇宁殿面阔七间、进深六间，重檐歇山，廊柱与石栏以龙纹装饰。"
+      },
+      {
+        "label": "祖庙格局",
+        "text": "崇宁殿位于解州祖庙前朝区中轴，北面还有春秋楼；本图单取崇宁殿。"
+      }
+    ]
+  }
+}

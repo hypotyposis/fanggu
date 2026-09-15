@@ -1,0 +1,33 @@
+{
+  "id": "shisi",
+  "name": "景宁时思寺",
+  "subject": "景宁时思寺大殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/shisi.png",
+    "assets/references/shisi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nShisi Temple main hall, preserve both roof tiers, exposed stacked upper bracket sets, three central door openings, two side windows and rubble foundation. Roof tiles neutral grey with small weathered lighter edges, old timber dark grey-brown with limited worn reddish brown on boards, never red-painted all over. Upper horizontal plaster infill and lower side panels chalky white. Grey/brown fieldstone base, pale grey steps. Openings flat near-black. Keep exact front elevation and sparse source details, no surrounding bell tower, grass, trees, signs or golden cast.",
+  "material_observations": "双檐灰瓦与灰白脊瓦，梁柱、板壁旧灰褐木色，白色抹灰填墙与腰墙，基座灰褐乱石、台阶灰石。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:景宁时思寺大殿,_2022-09-29_01.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "date": "2022-09-29",
+      "reference_file": "assets/references/shisi-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/shisi.png",
+  "width": 1536,
+  "height": 1024,
+  "worker": "main",
+  "prepared_at": "2026-09-15T11:54:14.375Z",
+  "input_review": "本任务已逐张实看线稿、列出的实拍和佛光寺风格样本。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-2a4c72da-1c35-44ef-a402-286d114cc8b4.png",
+  "generated_at": "2026-09-15T12:05:43.919717+00:00",
+  "visual_review": "已实看：双檐、叠层斗拱、三门两窗和乱石基保持；灰瓦、旧褐木、白墙分区吻合，门窗内为近黑。 未做色彩校准或逐像素对齐。",
+  "completed_at": "2026-09-15T12:18:32.131332+00:00"
+}

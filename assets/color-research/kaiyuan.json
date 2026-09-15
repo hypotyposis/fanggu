@@ -1,0 +1,57 @@
+{
+  "id": "kaiyuan",
+  "name": "正定开元寺",
+  "subject": "正定开元寺须弥塔与钟楼",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/kaiyuan.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/kaiyuan-tower-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/kaiyuan-bell-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: kaiyuan.\nOBSERVED MATERIAL COLORS: Tower photo: tall tower gray-tan weathered brick, slightly warm sunlit faces and darker charcoal-brown eave courses, dark weathered finial. DO NOT copy red porch building in foreground; it is not in drawing. Bell tower photo: gray ceramic tiled roofs, rust red-orange plaster ground-storey walls, reddish walnut timber upper-storey doors/posts/railing, dark brown brackets and gray stone platform. Current colors differ between the two buildings.\nSPECIFIC GEOMETRY LOCK: Preserve exactly two buildings: nine-eave square Xumi pagoda at left and two-roof bell tower at right, existing front-elevation spacing and relative height. Pagoda stays unpainted brick; bell tower lower wall clearly muted red-orange with a dark doorway. Do not add foreground porch, trees or text.",
+  "material_observations": "Tower photo: tall tower gray-tan weathered brick, slightly warm sunlit faces and darker charcoal-brown eave courses, dark weathered finial. DO NOT copy red porch building in foreground; it is not in drawing. Bell tower photo: gray ceramic tiled roofs, rust red-orange plaster ground-storey walls, reddish walnut timber upper-storey doors/posts/railing, dark brown brackets and gray stone platform. Current colors differ between the two buildings.",
+  "references": {
+    "original_record": "assets/research/kaiyuan.json",
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg/960px-20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg/960px-20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "selected_photo_files": [
+      "/Users/fuxiangyu/Workspace/fanggu/assets/references/kaiyuan-tower-photo.jpg",
+      "/Users/fuxiangyu/Workspace/fanggu/assets/references/kaiyuan-bell-photo.jpg"
+    ],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 中的实拍为本次颜色输入。"
+  },
+  "output": "assets/colored/kaiyuan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-adc4aa7f-2221-49a1-8d62-d395435da542.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看线稿、须弥塔与钟楼两张实拍、风格样本与结果。",
+      "左塔九重檐与右钟楼双层屋顶、相对高度和间距保留。",
+      "砖塔灰褐、深檐；钟楼灰瓦、红褐木及朱红下墙分区对应实物，未增附属红房。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

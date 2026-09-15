@@ -1,0 +1,112 @@
+{
+  "id": "taimiao",
+  "subject": "北京太庙享殿（前殿）",
+  "caption": [
+    "北京太庙 · 享殿",
+    "十一间面阔 · 三层须弥座"
+  ],
+  "generation_tool": "Built-in image_gen.imagegen",
+  "generated_file": "assets/generated/taimiao.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-4c59b019-011f-4b1d-bcdc-9bb39a397c9e.png",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/taimiao-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, generous white space, and light visual density. Image 2 is the real subject geometry ONLY: Beijing Imperial Ancestral Temple, Taimiao, the FRONT HALL / Hall for Worship of Ancestors (享殿). It is not the Hall of Supreme Harmony.\nDraw the actual main hall from this frontal photograph as a refined sparse BLACK INK ON PURE WHITE architectural line drawing. Preserve this hall's unusually broad low horizontal silhouette, ELEVEN bays across the front facade, a single occupied floor with TWO roof eaves, double-eaved fully HIP roof (重檐庑殿顶), long horizontal top ridge with large upturned ridge ends, and relatively shallow THREE-TIER white-marble pedestal with balustrades. The real pedestal rises only about3.46m, much shallower than the tall Taihe Hall pedestal. Preserve the grouped front steps: broad central imperial ramp with adjacent stairs and side flights, all on the low three-tier base. Each of ELEVEN facade bays is bounded by columns; central doors and side window panels remain individually readable. Preserve wide roof overhangs and the relative distance between upper and lower eaves as photographed. Only show the central main hall and its complete three-tier platform, omit neighboring side halls.\nAll surfaces remain WHITE. Doors/windows are sparse outlines, not black fills. Selectively draw a few bracket clusters and ridge ornaments; use widely spaced fine roof slope lines, not every tile; omit dense lattice grids and dense carved dragon patterns. No solid shadows, grey shading, crosshatching, pencil grain, texture, gradient, color, gold or dark background.\nShow the complete building centered and symmetrical, nearly straight-on facade with vertical verticals and minimal perspective. Landscape1536×1024; entire building and base about82% of canvas width, balanced white margins on every side, all eave corners, ridge, steps and pedestal uncut. Only a few short ground lines. Remove people, foliage, modern signs, surrounding buildings, courtyard paving, sky and all text. Omit the hanging plaque's writing completely; no calligraphy, labels, captions, watermark, border or frame. This is an architectural fine-line plate, not a photoreal render.",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Main_hall_of_Imperial_Ancestral_Temple.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Main_hall_of_Imperial_Ancestral_Temple.jpg/1280px-The_Main_hall_of_Imperial_Ancestral_Temple.jpg?download=1",
+      "author": "Legolas1024 (Kwangming Lee)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/taimiao-photo.jpg",
+      "description": "北京太庙享殿南立面，2015年10月24日。Commons明确中文说明北京太庙享殿；正面完整、檐口与台基均可辨。"
+    }
+  ],
+  "source_note": "参考照片已view_image核实是北京太庙享殿，不是太和殿。两殿同为十一间与重檐庑殿顶，享殿台基较低、殿身比例横长。太庙管理机构记进深六间，部分二手资料写四间，本条采用管理机构六间，不据二手差异改写。照片中游客、侧配殿、庭院与字牌已去除。",
+  "verification": {
+    "reference_images_viewed": true,
+    "generated_image_viewed": true,
+    "facade_bays": 11,
+    "roof": "重檐庑殿顶；两道檐口",
+    "platform": "三层较低须弥座与正面踏步均完整",
+    "no_text": true,
+    "uncropped": true,
+    "style": "细黑线、白底、门窗不填黑；对密集雕饰作概括"
+  },
+  "site_recommendation": {
+    "name": "北京太庙",
+    "short": "太庙",
+    "sub": "享殿 · 前殿",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "嘉靖复建",
+    "year": 1545,
+    "yearLabel": "1545年复建",
+    "yearApprox": false,
+    "place": "北京 · 天安门东侧",
+    "placeKey": "beijing",
+    "lat": 39.91,
+    "lon": 116.3936111,
+    "lede": "太庙享殿以十一间长檐铺展在三层白石台基上。这里曾是皇帝祭祖行礼之所，巨大的楠木柱与重檐庑殿顶共同撑起庄严的宗庙空间。",
+    "facts": [
+      "太庙初建于永乐十八年（1420）；本条按享殿嘉靖二十四年（1545）复建纪年。",
+      "享殿面阔十一间、进深六间，采用黄琉璃瓦重檐庑殿顶。",
+      "大殿立于三层汉白玉须弥座上，殿内保存六十八根整根楠木大柱。"
+    ],
+    "basis": [
+      {
+        "url": "https://whg.bjzgh.org/whgcc/jzww/202502/20250227/j_2025022712342100017406308811545979.html",
+        "supports": "北京市劳动人民文化宫官方：享殿身份、十一间面阔六间进深、重檐庑殿顶、三层须弥座及六十八根楠木柱。"
+      },
+      {
+        "url": "https://s.visitbeijing.com.cn/attraction/119894",
+        "supports": "北京旅游官方条目明确前殿嘉靖二十年火毁、二十四年复建。"
+      },
+      {
+        "url": "https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/543386147/2024081616023072234.pdf",
+        "supports": "北京市文物局2023文丛研究：嘉靖二十四年重建享殿、寝殿，推测现存主体此后无较大改动。"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Imperial_Ancestral_Temple",
+        "supports": "太庙遗址近似地图坐标39°54′36″N、116°23′37″E；用于整个太庙而非精密测量。"
+      }
+    ]
+  },
+  "historical_sources": [
+    {
+      "title": "享殿（大殿）",
+      "url": "https://whg.bjzgh.org/whgcc/jzww/202502/20250227/j_2025022712342100017406308811545979.html",
+      "publisher": "北京市劳动人民文化宫",
+      "note": "现存主体形制采用管理机构发布的十一间、六间口径。"
+    },
+    {
+      "title": "太庙",
+      "url": "https://s.visitbeijing.com.cn/attraction/119894",
+      "publisher": "北京旅游网",
+      "note": "前殿1541年火毁、1545年复建。"
+    },
+    {
+      "title": "2023年文丛（第157页有关太庙营缮研究）",
+      "url": "https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/543386147/2024081616023072234.pdf",
+      "publisher": "北京市文物局",
+      "note": "检索到的正文记1545年重建享殿及寝殿，清代主要为保养性修缮。"
+    },
+    {
+      "title": "从《卯洞集》解开太庙享殿重建之谜",
+      "url": "https://xinwen.bjd.com.cn/content/s69832416d5dedd6a22dbc7db.html",
+      "publisher": "北京号个人投稿，李忠义",
+      "note": "作者以木材数量与史料疑点提出享殿为1420年原构的不同推断。网页明示仅代表作者观点；此说与文物局研究和官方旅游沿用的1545年复建口径不同，暂不据此改写主体纪年。"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:The_Main_hall_of_Imperial_Ancestral_Temple.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Main_hall_of_Imperial_Ancestral_Temple.jpg/1280px-The_Main_hall_of_Imperial_Ancestral_Temple.jpg?download=1",
+  "author": "Legolas1024 (Kwangming Lee)",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

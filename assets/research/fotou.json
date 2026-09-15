@@ -1,0 +1,25 @@
+{
+  "id": "fotou",
+  "subject": "平顺佛头寺",
+  "source_page": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202412/t20241205_2990619.shtml",
+  "image_url": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202412/W020241205302993868987_ORIGIN.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fotou-photo.jpg"
+  ],
+  "source_note": "长治日报2024-12-05第6版上部正面照片。按现存金代大殿几何重绘；仅用于建筑形制参考，未复用原照片版面或文字。 项目旧正文断代为北宋、壁画为元，所引长治日报则标为金构明画；本轮按参考图更新图注，正文年代留待专门核订。",
+  "author": "长治日报视觉中心",
+  "license": "未标明开放许可；仅作形制参考",
+  "license_url": null,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: Fotou Temple 佛头寺 main hall in Chedang village, Pingshun. Image 2 is a newspaper page: use ONLY the large TOP architectural photo for subject geometry; IGNORE all text, graphics, small inset pictures, human figure and pagoda. Draw the complete temple from that photo as a refined almost straight-on facade. Exactly THREE bays, one central plain wooden double door, two broad windows with slender vertical bars, simple untextured masonry front, low stone plinth. Preserve broad single hip-and-gable roof with gracefully upturned corners, carved long ridge band with small central finial and two ridge end beasts, deep roof brackets. Give roof only 8 thin light directional lines; preserve ornament outlines selectively, no tile texture, no shadow fills, brick plane white. Remove wires, flags, foliage and nearby structures. Landscape 1536×1024 with complete roof and base, building width 82%, pure white background.\n",
+  "generated_file": "assets/generated/fotou.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "caption": [
+    "佛殿线稿 · 面阔三间",
+    "单檐歇山 · 现存金构"
+  ]
+}

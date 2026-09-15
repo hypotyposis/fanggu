@@ -1,0 +1,82 @@
+{
+  "id": "hb_puning",
+  "name": "普宁寺",
+  "subject": "普宁寺 · 大乘阁完整立面",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_puning.png",
+    "assets/references/hb_puning-front-photo.jpg",
+    "assets/references/hb_puning-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 普宁寺 · 大乘阁完整立面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the six unevenly spaced eave levels of THIS line master, three visible vase finials, broad square stepped hall, main doorway arrangement and all three stair flights. Material evidence primarily November2025 front photo: ochre/yellow glazed tile rims and ridges, roof fields subdued ochre mixed gray weathering; muted vermilion and rose-red plaster/wood at lower broad facade and doors; uppermost two window-storey wall fields warm light gray/cream, NOT all red. Window frames/lattice are muted gold/cream around dark brown screens with red-brown surrounds. Blue-green and dark blue painted beam bands with restrained pale ochre motifs below each eave. Three top vases are matte oxidized gray-bronze, not shiny gold bulbs. Terrace and rails gray-beige stone. Use 2011 angle photo only secondary material/structure confirmation; prioritize2025 facade colors. No Tibetan side towers, planters, incense burners, signage, lettering or vegetation.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "实看2025-11正面及2011侧面照片：瓦檐和脊饰黄赭色，木门窗下层朱红/暗粉红，较高两层窗间墙为暖灰乳白，窗框偏淡金黄、棕色格扇；梁枋青蓝绿彩画。三枚宝瓶灰铜色无金色高光。台阶栏杆灰米色石材。以2025清晰正面为主要设色依据，旧侧照只辅助。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%AE%E5%AE%81%E5%AF%BA%E5%A4%A7%E4%B9%98%E4%B9%8B%E9%98%812025.11.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E6%99%AE%E5%AE%81%E5%AF%BA%E5%A4%A7%E4%B9%98%E4%B9%8B%E9%98%812025.11.jpg",
+      "author": "ScareCriterion12",
+      "date": "2 November 2025, 13:45:10",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/hb_puning-front-photo.jpg",
+      "reference_dimensions": {
+        "width": 7711,
+        "height": 5213
+      }
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Puning_Temple%2C_Hall_of_Mahayana.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Puning_Temple%2C_Hall_of_Mahayana.jpg",
+      "author": "AleBo",
+      "date": "26 July 2011",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "license": "CC BY-SA 3.0",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Puning_Temple%2C_Hall_of_Mahayana.jpg/500px-Puning_Temple%2C_Hall_of_Mahayana.jpg",
+      "reference_file": "assets/references/hb_puning-photo.jpg",
+      "reference_dimensions": {
+        "width": 500,
+        "height": 667
+      }
+    }
+  ],
+  "output": "assets/colored/hb_puning.png",
+  "prepared_at": "2026-09-15T20:06:39.308534+08:00",
+  "original_research": "assets/research/hb_puning.json",
+  "visual_review": "已实看原线稿、2025正面和2011辅助照、初版与修订版。六重檐不等距层级、三枚灰铜宝瓶、七组下层窗与三梯保持。黄赭檐瓦、朱红下层、浅灰上层、青蓝绿梁枋及灰石栏杆相符。初版蓝匾内多余类文字符号经内置imagegen局部修订去除，复看已为空蓝底；无人物、香炉、树及文字。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-046aea77-4adf-4896-bdb4-33a79c3db06c.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-046aea77-4adf-4896-bdb4-33a79c3db06c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T12:21:02.063508+00:00",
+  "width": 1536,
+  "height": 1024,
+  "revision": {
+    "status": "complete",
+    "prompt": "Use case: precise-object-edit. Image1 is the original black/white architectural geometry master. Image2 is the already colored version needing ONE tiny correction. Return image2 with all shapes, colors, scale, texture, roof levels, three vase finials and stone stairs exactly preserved. ONLY remove the little gold calligraphic glyph inside the small blue rectangular plaque at the central axis near the top (under the two side pavilion roof edges, above the highest window row). Make its interior an entirely PLAIN, EMPTY blue field, keeping its thin ochre border. NO character, symbol, ornament or lettering inside that rectangle. Do not redesign anything else. Preserve1536x1024 and flat nearblack background. This is not a recolor or new illustration, only erase one glyph.",
+    "input_images": [
+      "assets/generated/hb_puning.png",
+      "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-b3af8c36-172b-47fd-b304-9b505f73db41.png"
+    ],
+    "prepared_at": "2026-09-15T12:18:17.220890+00:00",
+    "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-046aea77-4adf-4896-bdb4-33a79c3db06c.png",
+    "reviewed_at": "2026-09-15T20:22:04.349920+08:00"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 普宁寺 · 大乘阁完整立面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the six unevenly spaced eave levels of THIS line master, three visible vase finials, broad square stepped hall, main doorway arrangement and all three stair flights. Material evidence primarily November2025 front photo: ochre/yellow glazed tile rims and ridges, roof fields subdued ochre mixed gray weathering; muted vermilion and rose-red plaster/wood at lower broad facade and doors; uppermost two window-storey wall fields warm light gray/cream, NOT all red. Window frames/lattice are muted gold/cream around dark brown screens with red-brown surrounds. Blue-green and dark blue painted beam bands with restrained pale ochre motifs below each eave. Three top vases are matte oxidized gray-bronze, not shiny gold bulbs. Terrace and rails gray-beige stone. Use 2011 angle photo only secondary material/structure confirmation; prioritize2025 facade colors. No Tibetan side towers, planters, incense burners, signage, lettering or vegetation.\nPreserve original canvas aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/hb_puning.png",
+        "assets/references/hb_puning-front-photo.jpg",
+        "assets/references/hb_puning-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-b3af8c36-172b-47fd-b304-9b505f73db41.png",
+      "accepted": false,
+      "reason": "六重檐、三枚灰铜宝瓶、三梯及分材质设色均正确，但上层小蓝匾增加类文字金色符号，应去除后再complete。"
+    }
+  ],
+  "reviewed_at": "2026-09-15T20:22:04.349920+08:00"
+}

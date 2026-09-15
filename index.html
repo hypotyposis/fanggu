@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>访古</title>
-<meta name="description" content="三十二处从唐到清的殿、塔与石窟，以线描立面记下走过的古迹。">
+<meta name="description" content="一部私人的古迹图鉴：收藏想去的殿塔与石窟，记录走过的地方，以细线描留住千年。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20260915-arrival4">
 </head>
 <body>
 
@@ -27,13 +27,12 @@
     <nav>
       <a href="#map">行迹</a>
       <a href="#timeline">年表</a>
-      <a href="#sites">卅二处</a>
-      <a href="#colophon">跋</a>
+      <a href="#atlas">图鉴</a>
+      <a href="#wishlist">心愿单</a>
     </nav>
   </div>
 </header>
 
-<aside class="rail" aria-label="年代导航"><ol id="rail"></ol></aside>
 <button class="totop" id="totop" type="button" aria-label="返回顶部" title="返回顶部">顶</button>
 
 <main id="top">
@@ -42,13 +41,14 @@
       <div class="hero-text">
         <svg class="stamp" aria-hidden="true"><use href="#seal"/></svg>
         <div class="eyebrow">
-          <span class="mono">山西 · 陕西 · 河北 · 河南 · 北京 · 江苏 · 浙江</span>
-          <span class="mono">636 — 1896</span>
-          <span class="mono">三十二处殿塔</span>
+          <span class="mono">殿阁 · 古塔 · 石刻 · 山河之间</span>
+          <span class="mono" id="heritage-span">东汉 — 今</span>
+          <span class="mono" id="hero-count">二百处古迹</span>
         </div>
         <h1><span>访</span><span>古</span></h1>
-        <p class="sub">从唐到清，<em>一千二百年</em>的木与砖。我走过的三十二处殿塔与石窟，以实测立面的笔意，重画一遍。</p>
-        <div class="scroll-hint"><i></i><span class="mono">向下 · 斗拱剖面先行</span></div>
+        <p class="sub">从汉阙到层叠殿阁，<em>石与木</em>记下漫长岁月。走过的留作行迹，向往的收入心愿；一部慢慢写满的古迹图鉴。</p>
+        <a class="hero-link" href="#atlas">翻开我的图鉴 <span aria-hidden="true">↗</span></a>
+        <div class="scroll-hint"><i></i><span class="mono">向下 · 从一攒斗拱开始</span></div>
       </div>
       <div class="hero-fig" id="hero-fig"></div>
     </div>
@@ -60,34 +60,95 @@
         <svg class="map" id="mapsvg"></svg>
       </div>
       <div>
-        <div class="sec-head"><h2>行迹</h2><span class="mono">十八地 · 三十二处 · 北纬 29°–40°</span></div>
+        <div class="sec-head"><h2>行迹</h2><span class="mono" id="map-summary">二十四地 · 四十四处</span></div>
         <ul class="places" id="places"></ul>
-        <p class="map-note">西安在关中，南京、杭州、临安、宁波、宁海在江南，其余十二地都落在太行山两侧：大同、应县、五台、平遥、洪洞在山西高原，平顺一县的浊漳河谷里挤着八处，北京、高碑店、定州、正定在太行东麓，安阳在豫北平原，洛阳在伊阙。晋北的三处相隔不过一百五十公里，却横跨唐、辽两代三百年。</p>
+        <p class="map-note">这里只留下已经到访的古迹。地图按图鉴中的已知坐标绘制，连线为地点示意，不代表游览顺序。心愿中的古迹在打卡到访后落图。</p>
       </div>
     </div>
   </section>
 
   <section class="block" id="timeline">
     <div class="wrap">
-      <div class="sec-head"><h2>年表</h2><span class="mono">公元 600 — 1912 · 南北两线 · 元以后合一</span></div>
-      <div class="tl-wrap"><svg class="tl" id="tlsvg"></svg></div>
-      <p class="tl-note">同一时段，中原换了唐、五代、宋，北方则由契丹的辽到女真的金。晋北在辽金治下，所以大同、应县的殿塔是辽金样式；五台的两座唐构则是幸存于会昌灭法之外的孤本。元以后南北合一，年表右段压缩了比例。</p>
+      <div class="sec-head tl-heading"><h2>年表</h2><span class="mono">东汉至今 · 中日对照</span><label class="tl-picker"><span class="sr-only">选择朝代或时代</span><select id="tl-period"></select></label></div>
+      <div class="tl-wrap" tabindex="0" role="region" aria-label="年代总览，窄屏可左右滚动"><svg class="tl" id="tlsvg"></svg></div>
+      <div class="tl-legend"><span><i class="legend-dot filled"></i>已到访</span><span><i class="legend-dot"></i>尚未到访</span><span><i class="legend-count">3</i>相邻年份聚合</span><span class="tl-hint">点选朝代或圆点，展开古迹</span><span class="tl-pan-hint">← 左右滑动年表 →</span></div>
+      <div class="tl-preview" id="tl-preview" role="tooltip" hidden></div>
+      <section class="tl-reading" aria-labelledby="tl-selection-title">
+        <div class="tl-reading-head"><div><h3 id="tl-selection-title">全部时期</h3><span id="tl-result" aria-live="polite"></span><button id="tl-reset" type="button" hidden>查看全部</button></div><div class="tl-pagination" role="group" aria-label="年表古迹翻页"><button id="tl-prev" type="button" aria-label="上一页古迹">←</button><span id="tl-page" aria-live="polite"></span><button id="tl-next" type="button" aria-label="下一页古迹">→</button></div></div>
+        <div class="tl-cards" id="tl-cards"></div>
+      </section>
+      <details class="tl-notes" id="tl-notes"><summary>读图说明</summary><p>点选朝代色带，可查看该朝代的全部收录；宋、辽金、明清沿用图鉴中的合并分类。中国部分将南北并立政权分列，统一时期横跨两线；北汉等北地五代遗存置于北侧，十国另标延续至979年。日本单列，仅展示涉及已收录建筑的时代，空白不代表没有历史时期。</p><p>600年以前与1250年以后的时间比例经过压缩，折线表示尺度变化。邻近年份的古迹合为一个数字圆点，点选后可逐一细读；聚合点实心表示其中全部已到访，具体状态见卡片。年表依据现存主体年代，部分仅作约略定位，确切纪年与重修沿革以详情为准。</p></details>
     </div>
   </section>
 
-  <div id="sites"></div>
+  <section class="block atlas" id="atlas" aria-labelledby="atlas-title">
+    <div class="wrap">
+      <div class="atlas-heading">
+        <div><span class="mono">我的收藏 · 尚有山河可访</span><h2 id="atlas-title">古迹图鉴</h2><p>以线描寄心愿，以设色记到访。亲眼见过，为古迹添一重颜色。</p></div>
+        <button class="journal-button primary" id="add-wish" type="button">从图鉴选心愿</button>
+      </div>
+      <div class="collection-tabs" role="group" aria-label="按到访状态筛选">
+        <button type="button" data-filter="all" aria-pressed="true">全部收录 <b id="count-all">200</b></button>
+        <button type="button" data-filter="wishlist" aria-pressed="false">心愿单 <b id="count-wishlist">65</b></button>
+        <button type="button" data-filter="visited" aria-pressed="false">已到访 <b id="count-visited">44</b></button>
+        <button type="button" data-filter="unvisited" aria-pressed="false">未到访 <b id="count-unvisited">156</b></button>
+      </div>
+      <div class="atlas-tools">
+        <label class="atlas-search"><span>寻一处古迹</span><input type="search" id="atlas-search" placeholder="按名称、地点搜索" maxlength="120" aria-label="搜索古迹名称或地点"></label>
+        <label><span>国家</span><select id="atlas-country"><option value="all">全部国家</option></select></label>
+        <label class="dynasty-select"><span>朝代 / 时代</span><select id="atlas-dynasty"><option value="all">全部时代</option></select></label>
+        <label><span>地区</span><select id="atlas-region"><option value="all">全部地区</option></select></label>
+        <label><span>省份 / 都道府县</span><select id="atlas-province"><option value="all">全部省份与府县</option></select></label>
+        <label><span>建筑类型</span><select id="atlas-type"><option value="all">全部类型</option></select></label>
+      </div>
+      <div class="atlas-filter-summary"><span class="mono" id="atlas-result" role="status" aria-live="polite"></span><button type="button" id="atlas-reset" hidden>清除筛选</button></div>
+      <p class="journal-error" id="storage-error" role="alert" hidden></p>
+      <div class="atlas-grid" id="atlas-grid"></div>
+      <div class="atlas-empty" id="atlas-empty" hidden><span class="empty-glyph" aria-hidden="true">待</span><h3 id="empty-title"></h3><p id="empty-description"></p><button class="journal-button" id="empty-action" type="button"></button></div>
+      <button type="button" class="journal-button load-more" id="atlas-more" hidden>继续翻阅</button>
+      <details id="legacy-records" class="legacy-records" hidden><summary>旧记录待关联</summary><p>这些旧心愿仍保存在备份中。选好对应的库内古迹，便能接上图版；尚未入库的可以先留在这里。</p><div id="legacy-list"></div></details>
+      <div class="backup-row"><p>心愿与打卡保存在当前浏览器。换设备前，记得留一份备份。</p><div><button type="button" id="export-records">导出备份</button><button type="button" id="import-records">导入备份</button><input type="file" id="backup-file" accept=".json,application/json" hidden></div></div>
+    </div>
+  </section>
+
 </main>
+
+<dialog class="journal-dialog" id="visit-dialog" aria-labelledby="visit-title">
+  <form id="visit-form">
+    <div class="dialog-head"><span class="mono">到访记</span><button class="dialog-close" type="button" data-close aria-label="关闭打卡记录">×</button></div>
+    <h2 id="visit-title">在此留一枚印记</h2><p class="dialog-intro" id="visit-place"></p>
+    <label>到访日期 <span class="optional">记不清可以留空</span><input type="date" name="visitedOn"></label>
+    <label>到访笔记 <span class="optional">选填</span><textarea name="note" rows="4" maxlength="12000" placeholder="记下那天看见的光、木纹与泥塑。"></textarea></label>
+    <p class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="journal-button" id="visit-to-wish">改为想去</button><button type="submit" class="journal-button primary">保存到访</button></div>
+  </form>
+</dialog>
+<dialog class="journal-dialog" id="import-dialog" aria-labelledby="import-title">
+  <div class="dialog-head"><span class="mono">续上旧笺</span><button class="dialog-close" type="button" data-close aria-label="关闭备份导入">×</button></div>
+  <h2 id="import-title">导入访古备份</h2><p id="import-preview"></p><p class="dialog-intro">与当前图鉴合并。已有的同一条记录采用备份中的状态、日期与笔记，其余记录保留。</p>
+  <p class="form-error" role="alert" hidden></p><div class="dialog-actions"><button class="journal-button" type="button" data-close>取消</button><button class="journal-button primary" type="button" id="confirm-import">合并导入</button></div>
+</dialog>
+<div class="journal-toast" id="journal-toast" role="status" aria-live="polite" hidden></div>
 
 <footer id="colophon">
   <div class="wrap">
-    <p>跋 · 各图为按立面比例意写的线描，非实测图；开间、铺作数与屋顶比例已对照正面照片核过，尺寸与年代据文物公布资料。三十二处之中，唐殿唐塔并石窟六、五代殿塔五、宋殿宋塔七、辽金殿塔七、元殿二、明清殿塔五。<br><span class="mono">绘于 2026 · 纸上一灯，檐下千年。</span></p>
+    <p>跋 · 各图参照照片，以 AI 统一重绘为细线稿，非实测图；已毁的报恩寺塔参照土山湾旧塔模型。原有条目沿用项目资料，新增条目的年代与形制另行核对，参考差异记于图版来源。<span id="catalog-summary">现收录二百处古迹。</span><br><span class="mono">绘于 2026 · 纸上一灯，檐下千年。 · <a href="sources.html">图版来源</a> · <a href="proof.html?view=grid">线稿总览</a> · <a href="color-proof.html">设色总览</a></span></p>
     <svg class="seal" aria-hidden="true"><use href="#seal"/></svg>
   </div>
 </footer>
 
 <script src="draft.js"></script>
 <script src="buildings.js"></script>
-<script src="sites.js"></script>
-<script src="main.js"></script>
+<script src="sites.js?v=20260915-timeline1"></script>
+<script src="plates.js?v=20260915-timeline1"></script>
+<script src="colored-plates.js?v=20260915-colors1"></script>
+<script src="artwork.js?v=20260915-colors1"></script>
+<script src="library.js?v=20260915-arrival1"></script>
+<script src="catalog.js?v=20260915-timeline1"></script>
+<script src="navigation.js?v=20260915-timeline1"></script>
+<script src="visit-slider.js?v=20260915-arrival4"></script>
+<script src="journal.js?v=20260915-arrival1"></script>
+<script src="timeline.js?v=20260915-colors1"></script>
+<script src="main.js?v=20260915-timeline1"></script>
+<script src="atlas.js?v=20260915-arrival4"></script>
 </body>
 </html>

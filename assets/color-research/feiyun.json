@@ -1,0 +1,59 @@
+{
+  "id": "feiyun",
+  "name": "万荣东岳庙",
+  "subject": "万荣东岳庙飞云楼·南立面",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/feiyun.png",
+    "assets/references/feiyun-photo.jpg",
+    "assets/references/feiyun-news-photo.jpg",
+    "assets/references/feiyun-gov-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 万荣东岳庙飞云楼·南立面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: FIRST master is exact Feiyun Tower SOUTH front three visible stories, ground-level open passage and two upper gallery stories, with complex interlocking projecting eaves. Preserve ALL original roof bands, small front balconies, posts and proportions; do not add another floor. Mostly weathered natural timber, muted gray-brown and cool taupe columns/brackets/beams with darker brown undersides; NOT freshly red-painted timber and NOT gilded. All roof tile fields aged gray and gray-brown clay, small surviving ridge ornaments include extremely restrained olive/jade and pale ochre ceramic accents only, no all-green or gold roofs. Two solid flank walls at ground are faded muted brick-red masonry/plaster as photos, not gray timber. Timber rails weathered brown-gray, footing stones neutral gray. First photo good material close-up in cloudy daylight; second shows whole front and red wall positions; third only confirms red wall and timber gray-brown under neutral daylight, DO NOT rotate to its diagonal view. No plaque/couplet words, plaques absent from master stay absent. No vegetation, bells beyond existing ones, lanterns, people or neighboring temple.\nPreserve original canvas aspect ratio 1024:1536.",
+  "material_observations": "已实看三层飞云楼南立面原稿、2024正面近照、2026年9月央广网实拍及政府斜侧照。柱梁栏杆斗栱为灰褐、灰棕风化老木，檐内深褐；瓦面灰褐，局部脊饰有很少浅赭灰绿。底部两侧实墙红色，与木构分开。2024阴天照片为老木主色依据，2026照有光晕不用于整体色温，斜侧照只核对材料。",
+  "references": [
+    {
+      "source_page": "https://www.cnr.cn/sx/sxgz/20260907/t20260907_527807017.shtml",
+      "image_url": "https://mediabluk.cnr.cn/img/cnr/CNRCDP/2026/0831/ac4d7bd42f974f77b7f173b8f55035cc11.jpg?auth=20693eba66eb7b2a0e5b15cc0c549022&scale=1.78",
+      "author": "温雅慧（央广网记者）",
+      "license": "Copyright; no open reuse license stated",
+      "license_url": "https://www.cnr.cn/sx/sxgz/20260907/t20260907_527807017.shtml",
+      "reference_file": "assets/references/feiyun-news-photo.jpg",
+      "description": "2026年9月新闻实拍南立面，完整檐口与底层通道。仅为AI线稿的建筑几何参考；不宣称摄影开放许可。",
+      "date": "未知"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%A3%9E%E4%BA%91%E6%A5%BC%E6%AD%A3%E9%9D%A2%E7%89%B9%E5%86%99.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/%E9%A3%9E%E4%BA%91%E6%A5%BC%E6%AD%A3%E9%9D%A2%E7%89%B9%E5%86%99.jpg/960px-%E9%A3%9E%E4%BA%91%E6%A5%BC%E6%AD%A3%E9%9D%A2%E7%89%B9%E5%86%99.jpg?download=1",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/feiyun-photo.jpg",
+      "description": "2024年飞云楼正面特写，补充上部檐口、斗栱和栏杆。",
+      "date": "未知"
+    },
+    {
+      "source_page": "https://www.yuncheng.gov.cn/doc/2020/07/21/71080.shtml",
+      "image_url": "https://www.yuncheng.gov.cn/uploadfiles/202004/22/2020042216215850679211.jpg",
+      "author": "运城市人民政府网站供图，未单独署摄影者",
+      "license": "No open image license stated",
+      "license_url": "https://www.yuncheng.gov.cn/doc/2020/07/21/71080.shtml",
+      "reference_file": "assets/references/feiyun-gov-photo.jpg",
+      "description": "初稿用斜侧视角，核实十字歇山与抱厦。最终生成改用两张南立面照片，避免角度混合。",
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/feiyun.png",
+  "prepared_at": "2026-09-15T19:50:43.660457+08:00",
+  "original_research": "assets/research/feiyun.json",
+  "visual_review": "已实看生成图，核对底层通道及两个上层合计三层、原稿交叠檐口、小阳台与中心山花保持。木构灰褐、瓦灰、底部红墙和石础分清，未补额外明层；牌匾和楹联未加入，完整竖幅无字无树。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-e123656d-6575-4c68-9d2e-eb77d68902d7.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-e123656d-6575-4c68-9d2e-eb77d68902d7.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T19:52:33.408870+08:00",
+  "width": 1024,
+  "height": 1536,
+  "reviewed_at": "2026-09-15T19:54:14.017182+08:00"
+}

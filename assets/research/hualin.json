@@ -1,0 +1,81 @@
+{
+  "id": "hualin",
+  "subject": "福州华林寺大殿",
+  "source_page": "https://commons.wikimedia.org/wiki/File:福州华林寺大殿外部2018（2）.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%E7%A6%8F%E5%B7%9E%E5%8D%8E%E6%9E%97%E5%AF%BA%E5%A4%A7%E6%AE%BF%E5%A4%96%E9%83%A82018%EF%BC%882%EF%BC%89.jpg",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:福州华林寺大殿外部2018（2）.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/%E7%A6%8F%E5%B7%9E%E5%8D%8E%E6%9E%97%E5%AF%BA%E5%A4%A7%E6%AE%BF%E5%A4%96%E9%83%A82018%EF%BC%882%EF%BC%89.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/hualin-photo.jpg",
+      "note": "文件名含2018，但Commons拍摄日期与EXIF为2019-03-17。正面大殿完整实景。"
+    }
+  ],
+  "source_note": "照片为福州华林寺大殿正面，非广州华林寺；依据实景绘三间、四前檐柱、单檐歇山与高大斗栱，去人树与背景。964年是历史营造年代，2019年仅为照片拍摄年代。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hualin-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER: use ONLY its elegant delicate thin black contour lines, slight organic variation, sparse detail and large white areas. Do NOT copy its Buddha subject. Image 2 is the sole SUBJECT GEOMETRY reference: the actual MAIN HALL of HUALIN TEMPLE (华林寺大殿), Fuzhou, Fujian, founded in 964, NOT a temple in Guangzhou.\nDraw this exact hall from the photograph, centered in a straight-on front view with upright verticals. Preserve the three front bays formed by four robust front columns, the open porch and three large rectangular door openings behind it, the unusually large projecting bracket sets, low broad single-eave hip-and-gable roof, short raised central ridge and its two distinctive curled ridge ends. This is ONE roof level, not a two-storey pavilion. Preserve the low wide stone platform and the single central flight of steps. Retain visible geometry of brackets using fine simplified outlines. Door openings remain white with only a few interior frame lines. Keep the complete roof corners and complete platform within the image. The roof's planes should remain mostly blank white, with only a FEW selective thin curved tile seams, not all tiles.\nCreate refined sparse BLACK INK ON PURE WHITE linework. Confident very fine contours and even finer selective internal details. Match the master visual density, no thick outline, no solid dark areas, no shading, no grey wash, no crosshatching, no hatching, no pencil texture, no gradients, no gold or any color. Use no more detail than necessary to identify the hall. Remove people, trees, lawn, surrounding buildings, poles, wires, modern signs and all lettering. No plaque text, no watermark, no caption, no border.\nLandscape 1536 x 1024. Entire isolated building occupies about 82 percent of canvas width. Balanced generous white margins around all sides, roof and base uncut. Only a few short ground lines. The reference photo dictates proportions and architecture; do not invent additional bays, roofs, elaborate carvings, statues, or doors.",
+  "generated_file": "assets/generated/hualin.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-ab2987f1-a0b3-4772-9be9-b31da59a4067.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "华林寺大殿线稿 · 面阔三间",
+    "单檐歇山 · 北宋乾德二年"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.fujian.gov.cn/zwgk/ztzl/sxzygwzxsgzx/sdjj/wvjj/202404/t20240423_6437956.htm",
+      "publisher": "福建省人民政府（福建日报）",
+      "supports": "964年由吴越郡守鲍修让建、初名越山吉祥禅院、1444年改名、1982年国保。"
+    },
+    {
+      "source_page": "https://www.fuzhou.gov.cn/zgfzzt/lswhmcgwh/zwgk/ztzl/bhqy/202406/t20240621_4847171.htm",
+      "publisher": "福州市历史文化名城管委会",
+      "supports": "鼓楼区屏山南麓、964年、大殿18根木柱、斗栱用材硕大及唐五代与闽地特征。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Hualin_Temple_(Fuzhou)",
+      "publisher": "Wikimedia Commons",
+      "supports": "寺院位置26°06′11.57″N、119°17′31.55″E。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "福州华林寺",
+    "short": "华林寺",
+    "sub": "大殿",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋乾德二年",
+    "year": 964,
+    "yearLabel": "964年 · 吴越营建",
+    "place": "福建福州 · 鼓楼区 · 屏山南麓",
+    "placeKey": "fuzhou",
+    "lat": 26.103214,
+    "lon": 119.292097,
+    "coords": [
+      119.292097,
+      26.103214
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Hualin_Temple_(Fuzhou)",
+    "coordinate_note": "寺院近似位置，非单体测绘坐标。",
+    "lede": "屏山南麓，华林寺大殿以四根粗壮前檐柱托起宽阔屋面。北宋乾德二年，吴越郡守鲍修让营建这座寺院；硕大的斗栱与深远的出檐，留下唐五代木构和闽地营造的痕迹。",
+    "facts": [
+      "始建于964年，初名越山吉祥禅院，由吴越国福州郡守鲍修让营建；1444年改称华林寺。",
+      "现存大殿正面三间、单檐歇山，18根木柱共同构成殿身，斗栱用材硕大。",
+      "1982年列入第二批全国重点文物保护单位。"
+    ]
+  },
+  "verification": "已检查真实输入和生成输出：正面三间、四前檐柱、三开口、单檐歇山、大尺度斗栱及中央台阶；全屋顶与台基完整，黑线白底。"
+}

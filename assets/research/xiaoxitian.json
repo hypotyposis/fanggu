@@ -1,0 +1,114 @@
+{
+  "id": "xiaoxitian",
+  "subject": "隰县小西天大雄宝殿中央主龛、悬塑楼阁与群像局部",
+  "caption": [
+    "小西天 · 大雄宝殿悬塑局部",
+    "明末清初 · 主龛与天宫楼阁"
+  ],
+  "source_page": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/c.html",
+  "image_url": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/20241007280264a0653a474aad48ced09b1a97c7_2024101073ed6f8df562452788f9b0ae4a3e262b.jpg",
+  "author": "王学涛（新华社）",
+  "license": "未查到开放许可；新华社页面标注 All Rights Reserved",
+  "license_url": null,
+  "sources": [
+    {
+      "source_page": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/c.html",
+      "image_url": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/20241007280264a0653a474aad48ced09b1a97c7_2024101073ed6f8df562452788f9b0ae4a3e262b.jpg",
+      "author": "王学涛（新华社）",
+      "license": "版权保留；未公布开放再利用许可",
+      "license_url": null,
+      "reference_file": "assets/references/xiaoxitian-photo.jpg",
+      "dimensions": {
+        "width": 1007,
+        "height": 755
+      },
+      "date": "2024-09-05",
+      "role": "大雄宝殿中央主龛、左右悬挂阁楼及其上方天宫群像的近正面实拍"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xiaoxitian-photo.jpg"
+  ],
+  "source_note": "新华社2024年9月5日实拍，非展览数字复原模型。只选大雄宝殿中央主龛及周围悬塑的局部，不代表全堂；图示保留端坐主尊、两位胁侍、左右悬挂阁楼与上方横向天宫群像，简化密集纹饰与微小塑像，不用完整新造金字塔式楼阁取代墙面悬塑。参考照片版权未明确开放，据实记录。",
+  "prompt": "Create a precise photographic-geometry-to-line-art translation for 访古. Image 1 is the ONLY line STYLE guide (delicate Vairocana contour drawing). Image 2 is the ONLY subject geometry reference: an actual frontal photograph of the central hanging-sculpture niches inside Xiaoxitian 大雄宝殿, Xi County, Shanxi, photographed by Wang Xuetao / Xinhua. Keep the sculptural forms where they actually appear in this photograph.\n\nSelect the central Buddha niche and its immediate two hanging pavilion columns, plus the photographed heavenly palaces directly above. Preserve the fact that these sculptures form a SECTION OF A CONTINUOUS WALL, not an independent ornamental object. The upper palace composition is BROAD AND HORIZONTAL with densely overlapping roofs and tiny groups of figures; it must NOT taper into a pyramid of nine separate uniform pavilions and must NOT have a newly invented central roof finial at its top. Let a few uppermost forms naturally fade into white to mark the selected detail. The real central scalloped arch is relatively low and rectangular above, with the open niche BELOW it. Above the arch a horizontal decorative beam, bracket band and a long row of small standing figures form one balcony. Higher roofs overlap in the irregular arrangement actually seen in the photo. Draw about three visible height bands of overlapping heavenly roofs, selectively simplified, not three stacked identical generic temple modules.\n\nThe main Buddha in the lower center sits broad and low with palms together before the chest in the exact photographed gesture. Preserve its robe silhouette and proportion to the two slim crowned standing attendants. The photographed lotus seat is broad and shallow; DO NOT enlarge it into a tall three-tier flower pedestal. The two standing attendants tilt their heads toward the Buddha, each with one hand extended inward. Preserve the two slender flanking suspended tower-like sculptures, their actual eave spacing and figures. These hanging structures frame the niche, not independent regular pagodas grounded beside it. Do not invent additional standalone statues, clouds beneath the attendants, elaborate new lotus bases, or a mandala. Omit the partially cut neighboring large seated Buddhas on either side, while keeping the sense of a local wall section. Leave all shadow recesses WHITE.\n\nPortrait 1024x1536, central chosen wall section with generous clear white around the contours; organic fading of a few peripheral detail lines, no rectangular border. Fine BLACK contours on PURE WHITE, same restrained delicate line character as image 1. Do NOT copy the Buddha shape from the style master. Keep clear white unshaded faces and robes, modest sculptural detail, selectively simplified drapery and ornament. NO dark shadow patches, no filled blacks, no dense hatching, no gray shading, no photographic texture, no color. Do not draw every small roof tile, bead, flower, garment pattern or miniature figure; simplify secondary details but preserve their positions and overall layered arrangement. NO text, lettering, labels, watermark, inscriptions, framing or invented architecture. The goal is an elegant accurate detail of Xiaoxitian's exuberant hanging-sculpture interior, with recognizable layered heavenly palaces and main niche, in the same white-space-rich contour language as the Longmen master.",
+  "generated_file": "assets/generated/xiaoxitian.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-8bc0ff8b-0982-4b82-8aff-d289e5a4db35.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "generation_history": [
+    {
+      "status": "rejected",
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-d4f3d426-790f-4cef-8e59-8249539a4b85.png",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its delicate, slightly organic thin black contours, mostly white surfaces, restrained internal details, and elegant spaciousness. Image 2 is the real SUBJECT PHOTOGRAPH: the hanging polychrome sculpture inside Daxiong Baodian at Xiaoxitian / Qianfo An in Xi County, Shanxi. This is NOT an ordinary standalone Buddha statue. Render an unmistakable part of the actual sculptural environment.\n\nComposition: a portrait 1024x1536 illustration of the central main niche in this photograph, including the central seated principal Buddha with joined hands before the chest, its two smaller standing attendants, the two flanking tall tiered suspended miniature pavilion structures, and the remarkable heavenly-palace canopy ABOVE the principal Buddha. Retain the actual scalloped curtain-like arch over the niche, suspended tassels, a line of tiny standing figures on the balcony above it, and at least THREE vertically overlapping rows of miniature palace roofs and groups of figures above, arranged as in the photo. The flanking hanging pavilion structures each have several visible projecting eaves and small figures in the openings; preserve their stepped vertical silhouettes and hanging nature. This combination of the large lower seated Buddha, nearby standing attendants, suspended tiered side towers, and dense-in-composition but light-in-ink multi-level heavenly palaces is essential to identify Xiaoxitian. Do not substitute a freestanding temple, generic mandala, isolated Buddha, or invented symmetrical pagoda pair. Follow the photo's actual proportions and local asymmetries. The selected composition is a detail, not an invented full view of the whole hall. Do not reconstruct unseen side bays; omit the partially seen neighboring large seated Buddhas, modern signs, barriers and photographic watermark from this focused drawing. Finish the chosen central composition gracefully on white, without an arbitrary rectangular crop.\n\nCreate refined sparse BLACK INK ON PURE WHITE. Use confident fine contours and a few finer inner details. Translate the many colored carvings into selective outline gestures; preserve the layered masses, miniature roof silhouettes, faces and human poses, but simplify ornament vigorously. Keep all surfaces and the deep recess behind the main statue WHITE. No black shadow patches, no black under-eave bands, no gray wash, no crosshatching, no stippling, no charcoal, no pencil texture, no engraved texture, no photographic residue, no gradient, no color. Do not outline every bead, tile, flower, or patterned cloth. Clean serene white faces and robes like the style master. Generous 8-10% white margin surrounding the chosen group; all tiered tower tips and uppermost chosen pavilion roofs inside the canvas. No lettering, text, labels, calligraphy, watermark, captions, frame, or border. The white will be made transparent and the ink assigned the project's Ming/Qing dynasty color by a later separate process.",
+      "reason": "上方天宫被规整成独立尖顶金字塔，莲座夸大，未保持连续悬塑墙面局部关系，故重新生成。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "山西·临汾感悟晋南民俗之旅",
+      "url": "https://zhuanti.mct.gov.cn/xcss2024_shjlzzxc/shanxi/detail/6795.html",
+      "publisher": "中华人民共和国文化和旅游部",
+      "evidence": "小西天即千佛庵，位于隰县城西凤凰山巅；明崇祯二年（1629）创建；以明代彩色悬塑著称，精华位于大雄宝殿。"
+    },
+    {
+      "title": "走进临汾之隰县小西天",
+      "url": "https://ywtycb.gaj.linfen.gov.cn/site/public/showZjlf.aspx?id=2016062917222806250110",
+      "publisher": "临汾市公安局",
+      "evidence": "大雄宝殿内为木骨泥质悬塑，贴金敷彩，所处殿堂面积169.6平方米；现存悬塑归入明清彩塑艺术。"
+    },
+    {
+      "title": "国慶節連休、山西省の小西天に多くの観光客　懸塑が人気",
+      "url": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/c.html",
+      "publisher": "新华社",
+      "evidence": "小西天为明末至清初营造的寺院；大雄宝殿不足170平方米而容纳约两千尊悬塑。该组照片为2024年9月5日现场摄影。"
+    },
+    {
+      "title": "千佛庵",
+      "url": "https://zh.wikipedia.org/wiki/千佛庵",
+      "publisher": "维基百科（书目补充）",
+      "evidence": "条目将悬塑制作描述为明末崇祯至清顺治；寺址坐标36.70158611,110.92665889。避免把1629年创建直接当作每件悬塑的制作年份。"
+    },
+    {
+      "title": "国务院关于公布第四批全国重点文物保护单位的通知",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/content_2721166.htm",
+      "publisher": "国务院 / 中国政府网",
+      "evidence": "第四批国保千佛庵编号4-134，时代明；原链接本次返回403，名单条目由千佛庵资料交叉确认。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "小西天",
+    "short": "小西天",
+    "sub": "满堂悬塑 · 千佛庵",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明末清初 · 悬塑",
+    "year": 1650,
+    "yearApprox": true,
+    "yearLabel": "明末清初",
+    "yearNote": "1650仅用于明末清初悬塑营造阶段的约略年表定位，非中央主尊有纪年的完成日期；1629是寺院创建年，不混作造像年。",
+    "place": "山西隰县 · 凤凰山",
+    "placeKey": "xixian",
+    "lat": 36.70158611,
+    "lon": 110.92665889,
+    "latlon_source": "https://zh.wikipedia.org/wiki/千佛庵",
+    "lede": "主尊端坐，天宫从头顶层层展开。悬起的楼阁、群像与帷幔，把不足一百七十平方米的殿堂塑成了立体佛国。",
+    "facts": [
+      {
+        "label": "木骨泥塑",
+        "text": "大雄宝殿以木骨泥质悬塑构成群像，再贴金敷彩，人物、楼阁与装饰层层叠置。"
+      },
+      {
+        "label": "方寸佛国",
+        "text": "殿堂面积约169.6平方米，容纳近两千尊彩塑；大小人物与天宫建筑共同营造纵深。"
+      },
+      {
+        "label": "明末清初",
+        "text": "寺院创建于明代，现存悬塑属于明末清初营造阶段。图版取中央主龛及天宫楼阁局部。"
+      }
+    ]
+  }
+}

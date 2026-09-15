@@ -1,0 +1,68 @@
+{
+  "id": "luohanshuangta",
+  "subject": "苏州罗汉院双塔与正殿石柱遗迹",
+  "caption": [
+    "罗汉院双塔 · 石柱遗迹",
+    "北宋 · 太平兴国七年始建"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/luohan-final-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:苏州罗汉院双塔及正殿遗址.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/%E8%8B%8F%E5%B7%9E%E7%BD%97%E6%B1%89%E9%99%A2%E5%8F%8C%E5%A1%94%E5%8F%8A%E6%AD%A3%E6%AE%BF%E9%81%97%E5%9D%80.jpg",
+      "author": "Acot一杯茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/luohan-final-photo.jpg"
+  ],
+  "source_note": "以2017年双塔及正殿石柱遗址照片为准，概括两座七级八面塔，并选取两根石柱、两处柱础提示遗址；不复原已毁正殿。首稿缺一层，经image_gen修正为每塔七层，实际输入与两轮提示词均保留。",
+  "historical_sources": [
+    {
+      "title": "Twin Pagodas",
+      "publisher": "苏州市政府英文网",
+      "url": "https://english.suzhou.gov.cn/szsenglish/szgt/201611/6686f2c8ad96475f8a1c59db89a72b78.shtml"
+    }
+  ],
+  "prompt": "Use case: style transfer. Create one fine architectural line illustration of 苏州罗汉院双塔及正殿遗址. Image1 is ONLY the sparse delicate contour style master, not subject geometry. Image2 is the actual twin pagodas and surviving stone columns photographed on-site. Show BOTH actual complete tall slender OCTAGONAL SEVEN-STOREY pagodas, side by side separated by roughly two tower widths; preserve seven main eave levels and the distinct large elongated stacked-ring iron spires on both, actual tall lower walls and minimal bracket forms, no balconies invented. Perspective corrected to near frontal with vertical towers. Include only the TWO low-to-midheight stone columns seen beside the central path in middle distance, and TWO short broken column bases further forward, as spare contextual traces of the former hall; no reconstructed hall or surrounding walls. Keep towers dominant and unblocked, do not include giant perspective foreground pillars. Remove trees, shrubbery, sky, tourists, grass, wires, fences, plaques and buildings behind. Architectural ornament sparse: very thin black contour main roof edge, columns, occasional bracket shapes and hollow white outlined doorways only. ALL surfaces PURE WHITE, no yellow or red pigment, no dark holes, no brick or roof tile textures, no grey shading and no crosshatching. No repeated dense parallel lines. Match master's delicate organic line weight and ample white space. Landscape1536x1024, whole towers and complete spires fit inside canvas with at least7%top/bottom breathing room. No labels, text, border or watermark.",
+  "prompt_history": [
+    "Use case: style transfer. Create one fine architectural line illustration of 苏州罗汉院双塔及正殿遗址. Image1 is ONLY the sparse delicate contour style master, not subject geometry. Image2 is the actual twin pagodas and surviving stone columns photographed on-site. Show BOTH actual complete tall slender OCTAGONAL SEVEN-STOREY pagodas, side by side separated by roughly two tower widths; preserve seven main eave levels and the distinct large elongated stacked-ring iron spires on both, actual tall lower walls and minimal bracket forms, no balconies invented. Perspective corrected to near frontal with vertical towers. Include only the TWO low-to-midheight stone columns seen beside the central path in middle distance, and TWO short broken column bases further forward, as spare contextual traces of the former hall; no reconstructed hall or surrounding walls. Keep towers dominant and unblocked, do not include giant perspective foreground pillars. Remove trees, shrubbery, sky, tourists, grass, wires, fences, plaques and buildings behind. Architectural ornament sparse: very thin black contour main roof edge, columns, occasional bracket shapes and hollow white outlined doorways only. ALL surfaces PURE WHITE, no yellow or red pigment, no dark holes, no brick or roof tile textures, no grey shading and no crosshatching. No repeated dense parallel lines. Match master's delicate organic line weight and ample white space. Landscape1536x1024, whole towers and complete spires fit inside canvas with at least7%top/bottom breathing room. No labels, text, border or watermark.",
+    "Correct image1, the Luohan Twin Pagodas draft. Image2 is the REAL PHOTOGRAPH for accuracy. The draft mistakenly has only SIX main roofs on each tower. Each actual pagoda must have SEVEN STOREYS with SEVEN MAIN EAVE ROOFS, under the long ringed spire. Add the missing actual occupied tier and its roof to EACH tower. Carefully count seven roof silhouettes: one above the tall first storey, then six more on the progressively shorter upper storeys. Preserve the tall first-storey brick shaft and modest mid-shaft band; this band is NOT a roof and must not count as one of seven. Match overall actual slender taper and equal twin heights while fitting entirety into the canvas; shrink both compositions slightly to get7%topmargin. Keep TWO surviving low-middleheight stone columns beside path and TWO broken bases in front. Keep extremely light spare black-on-white contour style, white hollow doorways, no brick tile texture, no hatching, no caption. Accurate seven main roof eaves per tower is the primary correction. The complete selected scene, no temple hall rebuilt."
+  ],
+  "final_edit_references": [
+    "assets/generated/luohanshuangta-draft.png",
+    "assets/references/luohan-final-photo.jpg"
+  ],
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-65b37c47-3362-4f54-98a9-fae4d5875d0d.png",
+  "generated_file": "assets/generated/luohanshuangta.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "site_recommendation": {
+    "name": "苏州罗汉院双塔及正殿遗址",
+    "short": "罗汉院双塔",
+    "sub": "七级八面双塔 · 宋代石柱",
+    "dyn": "song",
+    "tag": "北宋",
+    "era": "太平兴国七年起建",
+    "year": 982,
+    "yearLabel": "982年起建",
+    "place": "江苏苏州 · 定慧寺巷",
+    "province": "江苏",
+    "placeKey": "suzhou",
+    "lat": 31.3088611,
+    "lon": 120.6296667,
+    "latlon_source": "https://commons.wikimedia.org/wiki/Category:Twin_pagodas_of_Suzhou",
+    "lede": "两座细长砖塔并立，长长的铁刹伸向天空。它们身旁的正殿已经消失，石柱与柱础仍在原址留下殿堂的尺度。",
+    "facts": [
+      "<b>双塔</b>北宋太平兴国七年（982）起建，至雍熙年间完成，均为七级八面楼阁式塔。",
+      "<b>砖仿木</b>塔身层层收分，以柱、枋、斗栱与砖檐表现楼阁形制，长塔刹形成鲜明轮廓。",
+      "<b>正殿遗址</b>殿宇已毁，石柱与雕刻柱础留存；图版选取其中少量遗构，与双塔并置呈现。"
+    ]
+  }
+}

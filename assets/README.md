@@ -1,14 +1,31 @@
-# assets
+# 图版
 
-Hand-drawn or AI-drawn plates that replace a generated elevation.
+图片、生成原稿、参考照片与 PDF 暂留本地，不随 Git 推送；目录结构保持不变。仓库保留来源、署名、许可、提示词和图版清单。新克隆需从本地素材副本补齐图片后预览，完整图版测试和重新生成还需要参考照片及原稿。
 
-Reference one from `sites.js`:
+## 设色图
 
-```js
-image: { src: 'assets/longmen.png', alt: '奉先寺卢舍那大佛线稿', width: 2400, height: 1500 }
-```
+`colored/` 保存 197 张新增设色 PNG，另外三张既有小样位于 `color-studies/v1/`。设色图按现存实物照片区分灰瓦、旧木、砖石、现存彩绘与鎏金，保留原线稿的构图及残损；统一使用暗底、细轮廓和哑光矿物设色风格。报恩寺塔等历史对象沿用原图明确标示的现存模型参考，不将其理解为现存古塔。
 
-- Deliver black lines on white; convert to gold-on-transparent before committing
-  (line darkness → alpha, RGB = 214,171,92) and set `tint: false` — the CSS
-  blend fallback for untouched files breaks inside stacking contexts.
-- Landscape plates around 16:10; tall plates (towers) around 7:10.
+`color-research/` 中逐图保存实际输入、完整提示词、参考照片署名与许可、颜色判断和输出目检。`color-references/` 保存补充参考。使用 `node scripts/collect-colored-plates.mjs --require-complete` 检查 197 张新增图并生成 `colored-plates.js` 和完整提示词清单；此脚本仅汇总与验证，不改色或转码。
+
+网页根据到访状态选择图像：未到访保留朝代色线稿，到访显示实物设色。`color-proof.html` 可查看所有设色图与线稿对照。原线稿生产流程如下。
+
+- `longmen-vairocana.png`：原有卢舍那大佛，保持不变。
+- `references/longmen-style-black.png`：从原图透明度提取的黑线白底母版，每次生成都作为风格输入。
+- `references/*-photo.*`：建筑照片或历史图像，仅作为形状与比例参考。
+- `generated/<id>.png`：内置 imagegen 原始输出，黑线白底。
+- `plates/<id>.png`：网页交付版，颜色读取 `sites.js` 的朝代映射与 `style.css` 的原有色板，线深转换为透明度，去掉 1% 的白底噪声。
+- `research/<id>.json`：参考页面、原图、作者、许可、角度说明、最终提示词与生成工具。
+- `research/STYLE.md`：共用风格规范。
+
+在项目目录运行 `node scripts/prepare-plates.mjs`，生成朝代配色图版、`plates.js` 和 `sources.html`。原稿、朝代映射、样式色板或转换脚本更新时，自动重新处理。横图通常为 1536×1024，竖塔为 1024×1536，实际尺寸写入清单以避免布局跳动。
+
+网页使用 `tint: false`，保留 PNG 透明度，无需 CSS 混色。旧版参数 SVG 保留作历史资料；新条目需备齐图版和考据记录后才能入库。
+
+朝代配色：东汉 `#b79d77`、北魏 `#ac8fa6`、南朝 `#b58d67`、北齐 `#bf8390`、隋 `#90aab6`、唐 `#d6ab5c`、五代 `#8f8caa`、宋 `#7aa899`、辽金 `#c8442b`、元 `#c98a3f`、明清 `#7290bd`、近现代 `#a6b0b4`。首页斗拱属唐，保留金色。
+
+日本时代配色：飞鸟 `#c2ad78`、奈良 `#9caa76`、平安 `#b79aca`、镰仓 `#68a6ad`、江户 `#bd8e7b`。首批六处的绘制对象、最终文件与参考记录见 [日本古寺图版](research/japan-plates.md)。
+
+江浙新增23张及各自完整提示词、实拍来源与年代说明见 [江浙图版](research/jiangzhe-plates.md)。
+
+河南、河北、山西新增82张及来源、所绘部位与年代说明见 [三省补遗图版](research/north200-plates.md)。新图继续以同一卢舍那母版为风格输入，主体层数、开间与残损按实拍核对。

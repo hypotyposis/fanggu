@@ -1,0 +1,66 @@
+{
+  "id": "jiwang",
+  "subject": "万荣稷王庙正殿",
+  "source_page": "https://www.wanrong.gov.cn/doc/2025/03/12/511568.shtml",
+  "image_url": "https://www.wanrong.gov.cn/uploadfiles/202503/12/2025031216421137025886-thumbnail.jpg",
+  "author": "摄影作者未署名（万荣县人民政府发布）",
+  "license": "原页面未声明开放许可；用于建筑形制参考",
+  "license_url": null,
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jiwang-photo.jpg"
+  ],
+  "source_note": "以太赵村万荣稷王庙的现存北宋正殿为主体，非稷山县稷王庙。官方2025年正面照片中有横幅和香炉遮挡，生成时移除，保留五间庑殿、前廊与当心间东侧雕龙柱。北宋天圣纪年作为排序依据，页面以北宋标示。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for Chinese heritage atlas 访古.\nImage 1 is STYLE ONLY: the Vairocana master, use its delicate confident fine black contours and spacious white interiors, never its Buddha subject. Image 2 is SUBJECT GEOMETRY: the real main hall of JIWANG TEMPLE 稷王庙 at Taizhao village, WANRONG COUNTY, Shanxi, China. This is NOT the much larger Jishan Jiwang Temple. Draw exactly this modest broad Northern Song hall, a single-eave HIP roof 庑殿, FIVE bays and SIX front eave columns, low rectangular platform and shallow three-part front steps. Match the photographed front shape and proportions, five visible bay openings behind the open front veranda, central door, side doorway/window arrangement. The front inner column at viewer right of the middle bay has light spiral dragon-carving contours; do not add dragons on every column. Preserve the modest pair of curled ridge ends and slim clustered central ridge finial shown in photo. Correct slight perspective into a centered near frontal elevation, keep complete roof, eave tips and foundation.\nREMOVE the bright temporary banner entirely, all Chinese lettering, lanterns, drum, incense burners and tables, modern gold poles, tree, shrubs, rubbish bins, background buildings and paving texture. Use the visible adjacent structure to continue the simple horizontal beam behind banner, not invented ornate brackets. Retain the original timber framework, not the modern decorations. Pure white background, landscape 1536x1024, building occupies 82% width with generous white margins.\nRefined sparse BLACK INK ON PURE WHITE. Very fine outer contours with lighter finer structural lines. All surfaces and doorway voids remain WHITE, never black fills. Roof slope mostly white, only 12 to 16 widely spaced thin curved slope lines, no dense roof tile grids. Draw dougong as selective clear outlines; preserve structural count and silhouette, no heavy ink. No shadows, grey wash, hatching, crosshatching, gradients, grain, dense brick courses, color, gold, typography, frame, border or watermark. A few short ground lines only. Calm consistent visual density with style master.",
+  "generated_file": "assets/generated/jiwang.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-64a5e435-5926-4736-b9db-8ac51560a9a4.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "万荣稷王庙 · 正殿",
+    "五间庑殿 · 北宋遗构"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.wanrong.gov.cn/doc/2025/03/12/511568.shtml",
+      "publisher": "万荣县人民政府《万荣稷王庙》",
+      "supports": "北宋庑殿顶正殿，始创不晚于天圣元年1023；奉祀后稷、俗称无梁殿、2001国保。文中《营造法式》收录及唯一性宣传不采用。"
+    },
+    {
+      "source_page": "https://www.zgbk.com/ecph/words?ID=229536&SiteID=1&SubID=96116&Type=bkzyb",
+      "publisher": "中国大百科全书《万荣稷王庙》",
+      "supports": "北宋建筑；太赵村地点；2001第五批国保。"
+    },
+    {
+      "source_page": "https://www.wikidata.org/wiki/Q10865166",
+      "publisher": "Wikidata Q10865166",
+      "supports": "园区近似坐标。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "万荣稷王庙",
+    "short": "稷王庙",
+    "sub": "正殿 · 无梁殿",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋遗构",
+    "year": 1023,
+    "yearLabel": "北宋",
+    "yearApprox": true,
+    "year_note": "1023为天圣元年题记对应纪年及官方始创年代上限；显示北宋，避免把寺庙创建与全部现存构件混作精确同年。",
+    "place": "山西万荣 · 南张乡 · 太赵村",
+    "placeKey": "wanrong",
+    "lat": 35.449444,
+    "lon": 110.774444,
+    "lede": "低展的庑殿屋顶覆盖五间立面，深廊将祭祀空间围在其中。这里奉祀农耕始祖后稷，正殿以不设通长大梁的构架，留下北宋营造的一种独特解法。",
+    "facts": [
+      "<b>北宋遗构</b>：官方资料将正殿定为北宋建筑，记庙宇始创不晚于天圣元年（1023）。",
+      "<b>五间庑殿</b>：正殿面阔五间，采用单檐庑殿顶，柱头与补间铺作承托深檐。",
+      "<b>无梁殿</b>：俗称源自殿内没有通长大梁，仍是木构梁架，并非砖石无梁殿。2001年列入第五批全国重点文物保护单位。"
+    ]
+  },
+  "verification": "已检查官方正面参考照与生成图：五间六前柱、单檐庑殿、中央三件脊饰和单根雕龙柱保留；去除横幅、现代杂物；全建筑无裁切。"
+}

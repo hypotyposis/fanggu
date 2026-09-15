@@ -1,0 +1,92 @@
+{
+  "id": "yuhuang",
+  "subject": "蔚州玉皇阁",
+  "caption": [
+    "蔚州玉皇阁 · 正面",
+    "三檐两层 · 面阔五间"
+  ],
+  "source_note": "用户明确确认原称「蔚县玉皇庙」是蔚州玉皇阁（靖边楼），非蔚县西高庄玉皇庙。HaziiDozen2024年南立面照片为主；北立面辅助确认两层楼阁、腰檐与上层回廊；Fymking完整远景辅助确认全屋顶。输出只画玉皇阁大殿，去除邻近钟鼓楼、院落陈设、牌匾文字和游客，不将北城墙误画为巨大城门台座。",
+  "site_recommendation": {
+    "name": "蔚州玉皇阁",
+    "short": "玉皇阁",
+    "sub": "靖边楼",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "洪武十年始建",
+    "year": 1377,
+    "place": "河北蔚县 · 北城墙",
+    "latlon": [
+      39.8486583,
+      114.56389
+    ],
+    "lede": "蔚州古城北墙上，靖边楼以三道檐口展开，却只有上下两层。上层回廊绕阁一周，城防楼阁与玉皇信仰在这里叠合。",
+    "facts": [
+      "明洪武十年（1377）建，又称靖边楼，是蔚州古城北城垣上的标志性楼阁。",
+      "大殿面阔五间，三檐两层，歇山琉璃顶；一道腰檐使两层楼阁形成三檐外观。",
+      "上层设围绕建筑的木构游廊，下层有围廊；现存建筑保存了明清多次修缮的历史层次。"
+    ],
+    "basis": [
+      {
+        "url": "https://wenwu.hebei.gov.cn/system/2023/08/18/030242561.shtml",
+        "supports": "河北省文物局：正式名称、靖边楼别称、北墙位置、1377建、三檐两层歇山顶。"
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/蔚州玉皇阁",
+        "supports": "五间大殿、回廊形制与地图坐标；条目列赵鸣1997《古城名刹蔚州玉皇阁》及河北古建文献。"
+      }
+    ]
+  },
+  "user_alias": "蔚县玉皇庙",
+  "verification": "两层功能空间、三条连续檐口、面阔五间核心与上层回廊；完整屋脊/檐角/台基，黑线白面。",
+  "prompt": "Use case: precise-object-edit. Image1 is the thin-line STYLE MASTER; image2 is the real south facade of Yuzhou Yuhuang Pavilion; image3 is its real north facade; image4 is the generated draft to correct. This historic pavilion has THREE continuous eave roofs (three distinct roof edges), not two. Draft currently has only TWO roof eaves. ADD ONE continuous narrow tiled WAIST ROOF across the full width, between the uppermost roof and the balustraded upper gallery. The three roofs should be at roughly 25%, 39%, and 60% down the building silhouette. The added middle eave projects beyond both sides and has upturned corners, same long horizontal shape as the other two, but shallower roof depth. A short timber wall/bracket strip remains between the top roof and middle roof; the open balustraded gallery is BELOW the added middle roof and above the existing lowest roof. This creates exactly THREE roofs while keeping only TWO functional storeys, matching the real photos. Keep the bottom colonnade, central doorway and five-bay hall structure. Do not add a new occupied wall storey or a fourth roof. Entire main pavilion only, all eave corners and base uncut on landscape1536×1024, white outer margins. Maintain fine black line style and white surfaces, no color, fill, dark shadows, hatching, words or labels.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural plate for 访古.\nImage 1 is the STYLE MASTER only: match the delicate slightly organic black contours, restrained detail and generous white surfaces of the existing Vairocana Buddha drawing. Image2 is the SUBJECT front (south) facade: the MAIN HALL of Yuzhou Yuhuang Pavilion 蔚州玉皇阁, also called Jingbian Tower 靖边楼, on the north city wall of Yu County, Hebei. Image3 is a distant side view of the SAME building to clarify complete roof outlines and proportions; image4 is the north facade to clarify the wraparound gallery and the three eaves. This is NOT the Xigaozhuang Jade Emperor Temple.\nDraw only the complete central main pavilion, nearly straight-on from the SOUTH, correcting the tilt and convergence of image2. Preserve its broad rectangular FIVE-BAY main hall and TWO functional storeys, with THREE long horizontal eave bands: the top hip-and-gable roof, a projecting waist eave at upper gallery level, and the lowest eave above the ground-floor colonnade. There are exactly three continuous eave bands, not three occupied floors. The upper floor has a continuous wooden balustraded gallery with numerous slender posts, matching the source rhythm; the five structural bays of the core must not be confused with the smaller gallery-post intervals. The lower floor has a deep colonnaded porch, central open doorway and plain masonry panels behind slender timber columns. Preserve the upturned roof corners, slender ridge and selectively outlined ridge beasts carrying vessels. Omit calligraphy plaques and their lettering. Keep the bracket clusters as sparse fine outlines; preserve the overall proportion and complete sill/plinth at ground level.\nRemove neighboring bell/drum pavilions and roofs, foreground vessel, people, overhead wires, signage, paving grids, snow and courtyard distractions. Do not add a central projecting pavilion, porch roof or giant city-wall gate beneath the building. Main hall alone on its low simple plinth.\nPure BLACK fine-line ink on pure WHITE. Every surface, doorway and shadowed porch stays WHITE; no solid dark shapes, no grey shading, no hatching, no texture, no gradient, no color. Roofs predominantly blank, only a few selected tile-direction lines; avoid drawing every tile or dense masonry grid. Landscape1536×1024, complete pavilion centered at about82% canvas width, balanced white margins on all sides, neither apex nor eave tips nor base cropped. Minimal ground lines. No labels, text, dimension lines, watermark, border or frame.",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yuhuang-photo.jpg",
+    "assets/references/yuhuang-north-photo.jpg",
+    "assets/generated/yuhuang-draft.png"
+  ],
+  "initial_reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yuhuang-photo.jpg",
+    "assets/references/yuhuang-alt-photo.jpg",
+    "assets/references/yuhuang-north-photo.jpg"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg/500px-%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg?download=1",
+      "reference_file": "assets/references/yuhuang-photo.jpg",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%8E%89%E7%9A%87%E9%98%81-%E8%94%9A%E5%8E%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/%E7%8E%89%E7%9A%87%E9%98%81-%E8%94%9A%E5%8E%BF.jpg/960px-%E7%8E%89%E7%9A%87%E9%98%81-%E8%94%9A%E5%8E%BF.jpg?download=1",
+      "reference_file": "assets/references/yuhuang-alt-photo.jpg",
+      "author": "Fymking",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%8C%97%E9%9D%A2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%8C%97%E9%9D%A2.jpg/960px-%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%8C%97%E9%9D%A2.jpg?download=1",
+      "reference_file": "assets/references/yuhuang-north-photo.jpg",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg/500px-%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg?download=1",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/yuhuang.png",
+  "dimensions": [
+    1584,
+    993
+  ]
+}

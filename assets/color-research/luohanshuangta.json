@@ -1,0 +1,62 @@
+{
+  "id": "luohanshuangta",
+  "name": "苏州罗汉院双塔及正殿遗址",
+  "subject": "苏州罗汉院双塔与正殿石柱遗迹",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/luohanshuangta.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/luohan-final-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 苏州罗汉院双塔与正殿石柱遗迹.\nOBSERVED MATERIAL COLORS: Viewed daylight 2017 site photo: twin towers have ochre-yellow painted plaster wall panels bounded by muted terracotta/rose-red vertical frames, horizontal beams and brackets. Small roof tiles charcoal dark grey with slight cool cast, not green-glazed gold roofs. Very tall ringed metal finials black/charcoal. Openings black shadow. Stone hall remains and plinths neutral weathered grey with pale worn edges, pathway slate-grey/tan stone. Tree shadows should not turn the illustrated yellow panels to black. Existing polychrome clearly observed, not historical conjecture.\nSPECIFIC GEOMETRY LOCK: Two towers exactly seven eave roofs each, preserve the original tall ringed finials and seven-storey identities. Retain exactly the two selected standing broken stone shafts, two low broken column bases and central trapezoid path already drawn; no grass or trees, no reconstructed hall. Keep all margins and comparative placement unchanged. Do not add extra tiny roof or duplicated floor. Colors moderate in saturation.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Viewed daylight 2017 site photo: twin towers have ochre-yellow painted plaster wall panels bounded by muted terracotta/rose-red vertical frames, horizontal beams and brackets. Small roof tiles charcoal dark grey with slight cool cast, not green-glazed gold roofs. Very tall ringed metal finials black/charcoal. Openings black shadow. Stone hall remains and plinths neutral weathered grey with pale worn edges, pathway slate-grey/tan stone. Tree shadows should not turn the illustrated yellow panels to black. Existing polychrome clearly observed, not historical conjecture.",
+  "references": {
+    "original_record": "assets/research/luohanshuangta.json",
+    "selected_photo_files": [
+      "assets/references/luohan-final-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "file": "assets/references/luohan-final-photo.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:苏州罗汉院双塔及正殿遗址.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/%E8%8B%8F%E5%B7%9E%E7%BD%97%E6%B1%89%E9%99%A2%E5%8F%8C%E5%A1%94%E5%8F%8A%E6%AD%A3%E6%AE%BF%E9%81%97%E5%9D%80.jpg",
+        "author": "Acot一杯茶",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原记录未明确提供）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/luohanshuangta.json",
+  "output": "assets/colored/luohanshuangta.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-7d71380e-52b5-4e39-85e6-2ddd1c6a127b.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 苏州罗汉院双塔与正殿石柱遗迹.\nOBSERVED MATERIAL COLORS: Viewed daylight 2017 site photo: twin towers have ochre-yellow painted plaster wall panels bounded by muted terracotta/rose-red vertical frames, horizontal beams and brackets. Small roof tiles charcoal dark grey with slight cool cast, not green-glazed gold roofs. Very tall ringed metal finials black/charcoal. Openings black shadow. Stone hall remains and plinths neutral weathered grey with pale worn edges, pathway slate-grey/tan stone. Tree shadows should not turn the illustrated yellow panels to black. Existing polychrome clearly observed, not historical conjecture.\nSPECIFIC GEOMETRY LOCK: Two towers exactly seven eave roofs each, preserve the original tall ringed finials and seven-storey identities. Retain exactly the two selected standing broken stone shafts, two low broken column bases and central trapezoid path already drawn; no grass or trees, no reconstructed hall. Keep all margins and comparative placement unchanged. Do not add extra tiny roof or duplicated floor. Colors moderate in saturation.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/luohanshuangta.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/luohan-final-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-7d71380e-52b5-4e39-85e6-2ddd1c6a127b.png",
+      "generated_at": "2026-09-15T11:49:57.914625+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、双塔遗址实拍、样本及生成结果；两座七檐塔、高金属塔刹、两根残柱、两处柱础和原有中路保留。",
+      "黄墙红框与灰黑瓦、塔刹依据日间照片；遗址柱础为灰石，没有重建正殿或增画草木。",
+      "原稿塔层轮廓和并列构图保持，颜色为实物现状的适度降饱和转译。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

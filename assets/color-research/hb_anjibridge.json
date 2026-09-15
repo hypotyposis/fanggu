@@ -1,0 +1,48 @@
+{
+  "id": "hb_anjibridge",
+  "name": "赵州桥（安济桥）",
+  "subject": "赵州桥（安济桥） · 敞肩石拱桥侧立面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hb_anjibridge.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/hb_anjibridge-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: hb_anjibridge.\nOBSERVED MATERIAL COLORS: Daytime bridge photo: pale gray-beige stone parapet, muted gray/taupe main arch blocks, darker gray under the arch and modest ochre weathered patches toward abutments. Some reflected green/cool shadows in photograph are environmental light, not green paint. Make understated neutral gray limestone with restrained tan aging; no red brick or gold.\nSPECIFIC GEOMETRY LOCK: Canvas 2005:784 extremely wide aspect ratio. Keep exact low segmental main arch plus TWO shoulder arches on EACH side, four small total. Keep all parapet posts, full ends and gaps, no river, reflection or landscape. Do not compress to standard landscape.",
+  "material_observations": "Daytime bridge photo: pale gray-beige stone parapet, muted gray/taupe main arch blocks, darker gray under the arch and modest ochre weathered patches toward abutments. Some reflected green/cool shadows in photograph are environmental light, not green paint. Make understated neutral gray limestone with restrained tan aging; no red brick or gold.",
+  "references": {
+    "original_record": "assets/research/hb_anjibridge.json",
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Zhaozhou_or_Anji_Bridge.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Zhaozhou_or_Anji_Bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "author": "wanghongliu and Xyklone",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "source_note": "wanghongliu原照、Xyklone裁切，CC0。完整侧立面核对一主拱与四腹拱，河面与背景省略。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "selected_photo_files": [
+      "/Users/fuxiangyu/Workspace/fanggu/assets/references/hb_anjibridge-photo.jpg"
+    ],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 中的实拍为本次颜色输入。"
+  },
+  "output": "assets/colored/hb_anjibridge.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-81b49a32-3d2d-41e2-a6b2-a6785905aac2.png",
+  "width": 2006,
+  "height": 784,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看原稿、日间实拍、风格样本与结果。",
+      "宽画幅、一大拱及两肩各两小拱保留，桥端与栏柱完整。",
+      "灰褐石色、较浅栏板与暗拱腹区分明确，无河面或文字。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "baoen",
+  "name": "南京大报恩寺塔",
+  "subject": "南京大报恩寺旧琉璃塔（据1915年土山湾模型绘制）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/baoen.png",
+    "assets/references/baoen-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 南京大报恩寺旧琉璃塔（据1915年土山湾模型绘制）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: IMPORTANT: the destroyed Nanjing Porcelain Tower has no present original exterior. This plate represents the existing 1915 Tushanwan MODEL already used for the line master, not a factual reconstruction of the lost Ming tower and not the modern glass tower. Color the present museum MODEL as photographed: warm ochre-yellow glazed miniature roof fields bordered in dark green; dark reddish-brown upright framing, brown/cream wall panels; pale celadon/ivory miniature balustrades; lower panels cream with subtle green-turquoise framed areas; base masonry and stair treads burgundy-brown with pale ivory/gray stair rails. Apex ring assembly dark brown/black with small aged gold crown and chains. Keep current model polychromy as an understated MATTE illustration without specular shine; do not create a gold overall wash. Preserve all 9 storeys, lower auxiliary eave, thin chains and complete base from Image1. No interior exhibit background, red curtain, replica neighboring towers, text or invented complex mural figures in the blank line panels.\nPreserve the original line master aspect ratio 1024:1536.",
+  "material_observations": "此条原塔已毁，依原研究1915年土山湾模型、2024年馆内实拍取模型现色，不称明塔原色复原。模型黄釉瓦配深绿边、暗红褐柱，栏杆浅青白，底层米白/绿边装饰；阶道紫红褐，塔刹深褐并有金色顶珠及链饰。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Porcelain_Tower_of_Nanking_Model.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Porcelain_Tower_of_Nanking_Model.jpg/1280px-Porcelain_Tower_of_Nanking_Model.jpg",
+      "author": "ScribblingGeek",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "assets/references/baoen-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/baoen.json",
+  "output": "assets/colored/baoen.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-65766db9-a0ac-4c2d-8463-d0f8a5adf301.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已查看：旧模型的九层塔身、下部副檐、塔刹链条及全台阶保留；黄瓦绿边、浅青白栏杆和紫红褐台阶对应模型，未画现代玻璃塔或红色展厅。明确这是1915年模型现色的艺术转译，无法据此断言已毁明塔的原色。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 南京大报恩寺旧琉璃塔（据1915年土山湾模型绘制）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: IMPORTANT: the destroyed Nanjing Porcelain Tower has no present original exterior. This plate represents the existing 1915 Tushanwan MODEL already used for the line master, not a factual reconstruction of the lost Ming tower and not the modern glass tower. Color the present museum MODEL as photographed: warm ochre-yellow glazed miniature roof fields bordered in dark green; dark reddish-brown upright framing, brown/cream wall panels; pale celadon/ivory miniature balustrades; lower panels cream with subtle green-turquoise framed areas; base masonry and stair treads burgundy-brown with pale ivory/gray stair rails. Apex ring assembly dark brown/black with small aged gold crown and chains. Keep current model polychromy as an understated MATTE illustration without specular shine; do not create a gold overall wash. Preserve all 9 storeys, lower auxiliary eave, thin chains and complete base from Image1. No interior exhibit background, red curtain, replica neighboring towers, text or invented complex mural figures in the blank line panels.\nPreserve the original line master aspect ratio 1024:1536.",
+      "input_images": [
+        "assets/generated/baoen.png",
+        "assets/references/baoen-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-65766db9-a0ac-4c2d-8463-d0f8a5adf301.png",
+      "output": "assets/colored/baoen.png"
+    }
+  ]
+}

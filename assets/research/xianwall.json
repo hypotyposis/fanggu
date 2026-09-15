@@ -1,0 +1,136 @@
+{
+  "id": "xianwall",
+  "subject": "西安城墙安定门箭楼西立面及中央单券门洞墙段",
+  "caption": [
+    "西安城墙 · 安定门箭楼与中央券洞",
+    "明代城垣 · 明清及近现代修葺"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Anding_Gate_of_Xi%27an_City_Wall_(Oct_2,_2024).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Anding_Gate_of_Xi%27an_City_Wall_%28Oct_2%2C_2024%29.jpg/1280px-Anding_Gate_of_Xi%27an_City_Wall_%28Oct_2%2C_2024%29.jpg",
+  "author": "Bob Wehn",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xianwall-photo.jpg",
+    "assets/references/xianwall-westgate-photo.jpg"
+  ],
+  "references": [
+    {
+      "file": "assets/references/xianwall-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anding_Gate_of_Xi%27an_City_Wall_(Oct_2,_2024).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Anding_Gate_of_Xi%27an_City_Wall_%28Oct_2%2C_2024%29.jpg/1280px-Anding_Gate_of_Xi%27an_City_Wall_%28Oct_2%2C_2024%29.jpg",
+      "author": "Bob Wehn",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": {
+        "width": 1280,
+        "height": 961
+      },
+      "date": "2024-10-02",
+      "note": "安定门箭楼西侧近正面实拍；用于总体比例、屋盖、四排十二列箭窗和墙段关系。"
+    },
+    {
+      "file": "assets/references/xianwall-westgate-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:WestGate_,xi%27an,China_-_panoramio.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/WestGate_%2Cxi%27an%2CChina_-_panoramio.jpg/1280px-WestGate_%2Cxi%27an%2CChina_-_panoramio.jpg",
+      "author": "miumiu熊",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "dimensions": {
+        "width": 1280,
+        "height": 960
+      },
+      "date": "2012-03-25",
+      "note": "同一箭楼外立面的近距离斜视实拍，补充中央单券洞、墙台和屋脊细部。摄影原来自Panoramio，Commons已审核许可。"
+    }
+  ],
+  "source_note": "选西安正西门安定门的箭楼、中央原门洞及短墙段，以近正面照片为构图、近距离照片补充结构；不含两侧近现代道路券洞和远处附属门楼。现存城垣按明洪武时期主体登记，安定门楼经明清及近现代多次修葺。未使用2014年复建的永宁门箭楼。将两张摄影共同转成线稿、去除交通树木并适度校正视角，非测绘图。",
+  "prompt": "Use case: precise architectural correction of an existing line illustration. Image1 is the illustration to EDIT; image2 is the consistent Longmen fine-line STYLE MASTER; images3and4 are real photographs of Xi'an Anding Gate archery tower for facts. Preserve image1's single roof, full wide composition, line style, central round arch and blank white treatment. CRITICAL CORRECTION: the REAL building has FOUR ROWS of TWELVE square arrow windows,48 total, as you can clearly count in photos3and4. Image1 mistakenly has only THREE rows. ADD ONE COMPLETE FOURTH ROW of12 matching outlined square windows directly BELOW the current third row. The windows are precisely aligned in12 vertical columns: row1has12,row2has12,row3has12,row4has12. Expand the tower's masonry wall face vertically by one existing row pitch, approximately60pixels at1536x1024, moving its bottom cornice, city-wall base, central arch, flank parapets and ground baseline downward by that same amount. Keep the roof and first3windowrows unmoved. The entire base must remain inside the image with ample white margin. A total of4matching horizontal window rows must be visible between roof and base; the fourth row is essential to this named monument. No black fills inside windows or arch, no extra roof tiers. Keep all other features and exact fine-line quality unchanged. Retain landscape1536x1024, purewhitebackground, no text.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: ONLY the west-facing exterior of ANDING GATE'S ARCHERY TOWER and the central city-wall gateway segment below it, Xi'an 西安城墙安定门箭楼及中央券洞墙段. Image2 gives the actual near-frontal overall proportions; image3 is a closer oblique view of the SAME west archery-tower exterior and clearly shows its central arch and base. Use image2's almost straight-on viewpoint, correcting camera tilt. Keep the very WIDE, HORIZONTAL rectangular masonry archery-tower body, with exactly ONE projecting hip-and-gable tiled roof and ONE eave level. It is not a multi-eave pagoda or an open-column palace. Preserve precisely FOUR horizontal rows of TWELVE small square arrow windows per row on the front,48 total, evenly spaced as photographed. Each arrow slit is a white little rectangle outlined in fine black with a tiny sill stroke, NEVER filled black. Four subtle horizontal bands between the window rows. A long straight horizontal roof ridge, modest upturned corners and the photographed small ridge-end ornaments; no giant center finial or extra roofs. Below the tower retain the broad tall slightly battered blank brick city-wall base, with exactly ONE SMALL CENTRAL ROUND-ARCHED passage extending to ground level; the central arch has only thin concentric arch-joint outlines and an empty white opening, no black interior, no portcullis. Keep the real proportions: masonry base about40%of total silhouette height, roofed tower about60%; central arch about40%of base height and about one-twelfth of tower width. Extend a SHORT stretch of the actual lower city-wall parapet on either side to make the fortified-wall setting clear, each flank only about20%of tower width. Keep side parapets simple and low as in photo, not invented fantasy battlements. The subject is an explicitly selected CENTRAL WALL SEGMENT: exclude the modern road archways farther to either side, the distant auxiliary small roof buildings on the wall, modern side pavilions and any other gates. Do not invent exposed ends or stone buttresses; side wall strokes may end softly after the selected segment. The entire depicted segment must fit within the canvas, no cropping the roof. Remove all traffic, trees, leaves, people, signs, flags, bollards, lamp poles, parked cars, wires and road markings. Most masonry surfaces are completely WHITE, with only10 or fewer short scattered pale horizontal brick-joint suggestions, no continuous brick grid. Roof also broad white planes with15 sparse fine tile-guiding strokes, not individual tiles. Important style: much less internal texture than the photograph, same graceful delicate organic fine-line language as image1. Landscape1536x1024, selected wall and tower centered at82%canvaswidth and75%canvasheight, balanced generous white margins. No text.",
+  "generation_attempts": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: ONLY the west-facing exterior of ANDING GATE'S ARCHERY TOWER and the central city-wall gateway segment below it, Xi'an 西安城墙安定门箭楼及中央券洞墙段. Image2 gives the actual near-frontal overall proportions; image3 is a closer oblique view of the SAME west archery-tower exterior and clearly shows its central arch and base. Use image2's almost straight-on viewpoint, correcting camera tilt. Keep the very WIDE, HORIZONTAL rectangular masonry archery-tower body, with exactly ONE projecting hip-and-gable tiled roof and ONE eave level. It is not a multi-eave pagoda or an open-column palace. Preserve precisely FOUR horizontal rows of TWELVE small square arrow windows per row on the front,48 total, evenly spaced as photographed. Each arrow slit is a white little rectangle outlined in fine black with a tiny sill stroke, NEVER filled black. Four subtle horizontal bands between the window rows. A long straight horizontal roof ridge, modest upturned corners and the photographed small ridge-end ornaments; no giant center finial or extra roofs. Below the tower retain the broad tall slightly battered blank brick city-wall base, with exactly ONE SMALL CENTRAL ROUND-ARCHED passage extending to ground level; the central arch has only thin concentric arch-joint outlines and an empty white opening, no black interior, no portcullis. Keep the real proportions: masonry base about40%of total silhouette height, roofed tower about60%; central arch about40%of base height and about one-twelfth of tower width. Extend a SHORT stretch of the actual lower city-wall parapet on either side to make the fortified-wall setting clear, each flank only about20%of tower width. Keep side parapets simple and low as in photo, not invented fantasy battlements. The subject is an explicitly selected CENTRAL WALL SEGMENT: exclude the modern road archways farther to either side, the distant auxiliary small roof buildings on the wall, modern side pavilions and any other gates. Do not invent exposed ends or stone buttresses; side wall strokes may end softly after the selected segment. The entire depicted segment must fit within the canvas, no cropping the roof. Remove all traffic, trees, leaves, people, signs, flags, bollards, lamp poles, parked cars, wires and road markings. Most masonry surfaces are completely WHITE, with only10 or fewer short scattered pale horizontal brick-joint suggestions, no continuous brick grid. Roof also broad white planes with15 sparse fine tile-guiding strokes, not individual tiles. Important style: much less internal texture than the photograph, same graceful delicate organic fine-line language as image1. Landscape1536x1024, selected wall and tower centered at82%canvaswidth and75%canvasheight, balanced generous white margins. No text.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xianwall-photo.jpg",
+        "assets/references/xianwall-westgate-photo.jpg"
+      ],
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-8c5669dc-df56-417f-8f14-13ecdeb1e4ba.png",
+      "status": "未采用；初稿误画为三排箭窗，已检查并纠正。"
+    },
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise architectural correction of an existing line illustration. Image1 is the illustration to EDIT; image2 is the consistent Longmen fine-line STYLE MASTER; images3and4 are real photographs of Xi'an Anding Gate archery tower for facts. Preserve image1's single roof, full wide composition, line style, central round arch and blank white treatment. CRITICAL CORRECTION: the REAL building has FOUR ROWS of TWELVE square arrow windows,48 total, as you can clearly count in photos3and4. Image1 mistakenly has only THREE rows. ADD ONE COMPLETE FOURTH ROW of12 matching outlined square windows directly BELOW the current third row. The windows are precisely aligned in12 vertical columns: row1has12,row2has12,row3has12,row4has12. Expand the tower's masonry wall face vertically by one existing row pitch, approximately60pixels at1536x1024, moving its bottom cornice, city-wall base, central arch, flank parapets and ground baseline downward by that same amount. Keep the roof and first3windowrows unmoved. The entire base must remain inside the image with ample white margin. A total of4matching horizontal window rows must be visible between roof and base; the fourth row is essential to this named monument. No black fills inside windows or arch, no extra roof tiers. Keep all other features and exact fine-line quality unchanged. Retain landscape1536x1024, purewhitebackground, no text.",
+      "reference_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-8c5669dc-df56-417f-8f14-13ecdeb1e4ba.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/xianwall-photo.jpg",
+        "assets/references/xianwall-westgate-photo.jpg"
+      ],
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-884db20e-8232-4959-96ed-614a0400340b.png",
+      "status": "采用；目视核对四排、每排十二孔，共四十八孔，单屋檐及中央单券洞正确。"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-884db20e-8232-4959-96ed-614a0400340b.png",
+  "generated_file": "assets/generated/xianwall.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "西安地铁6号线站名探究（安定门站）",
+      "url": "https://xadfz.xa.gov.cn/xadq/yxxa/2081926328441991170.html",
+      "publisher": "西安市地方志办公室",
+      "evidence": "援引首轮《莲湖区志》：安定门建于明洪武七至十一年（1374—1378），具有城楼、箭楼、闸楼及城墙三道；明清多次较大规模整修，清末闸楼毁，现安定门箭楼、城楼格局保存完整。"
+    },
+    {
+      "title": "西安城墙",
+      "url": "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c5565cbd81235fc1efa.html",
+      "publisher": "西安曲江新区管理委员会",
+      "evidence": "现存城墙主体建于1374—1378年，在唐皇城基础上兴建，厚度大于高度；明隆庆期包砖，清乾隆及1983年以来多次整修。"
+    },
+    {
+      "title": "西安城墙：安定门、玉祥门",
+      "url": "https://www.xakpw.com/single/24255",
+      "publisher": "西安市科学技术馆 / 西安科普网，转载西安市政协《西安文化遗产辑录》",
+      "evidence": "安定门为西门，明代扩城时门位略南移；文章明确图示西门箭楼，并说明正门两侧各另辟三券洞。用于确认图版取景和现存箭楼遗构。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "西安城墙",
+    "short": "西安城墙",
+    "sub": "安定门箭楼 · 明代城垣",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明 · 洪武七至十一年",
+    "year": 1378,
+    "yearLabel": "1374—1378",
+    "yearApprox": false,
+    "yearNote": "1378为明代城垣主体竣工年，仅代表本条城墙主体年代；箭楼与墙面经明清及近现代多次修葺，不断言所绘每个构件均为明初原物。",
+    "place": "陕西西安 · 安定门",
+    "placeKey": "xian",
+    "lat": 34.26097,
+    "lon": 108.92041,
+    "latlon_source": "https://zh.wikipedia.org/wiki/安定门_(西安)",
+    "latlon_note": "点位为安定门区域。",
+    "lede": "厚重墙台托起宽阔箭楼，四排箭窗横向展开，一孔门洞穿过城防。安定门保留的西城门格局，让西安城墙的尺度与守御意图清晰可读。",
+    "facts": [
+      {
+        "label": "明代城垣",
+        "text": "现存城墙主体于洪武七至十一年（1374—1378）兴建，在早期城址基础上拓筑，后来逐步包砖加固。"
+      },
+      {
+        "label": "安定门段",
+        "text": "图版取正西门箭楼与中央单券门洞；宽阔楼身设四排箭窗，厚墙与门楼共同构成防御空间。"
+      },
+      {
+        "label": "历代修葺",
+        "text": "安定门历经明清及近现代多次整修，仍保存箭楼、城楼与瓮城相连的城防格局。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "gongzhu",
+  "name": "繁峙公主寺",
+  "subject": "繁峙公主寺大雄宝殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/gongzhu.png",
+    "assets/references/gongzhu-photo.jpg",
+    "assets/references/gongzhu-secondary-photo.jpg",
+    "assets/references/gongzhu-door-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 繁峙公主寺大雄宝殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: This is Gongzhu Temple DAXIONG Hall, not the different Pilu hall. Preserve first master's three-bay broad gabled hall, six central lattice door leaves, solid side wall bays, no added bracket clusters. Single roof is weathered unglazed gray-brown tiles, NOT gold or green glazed; gray/earth-colored ridge and small central finial. Side plaster walls muted brick-red/terracotta (not white), timber posts/beams and six carved doors worn dusty russet-red with exposed gray-brown grain; upper beam has very restrained worn blue-green pigment traces. Plaque remains blank, reddish surround. Pale cool gray stone low plinth and central steps. Neutralize yellow sunlight cast; do not repaint gray tiles beige-gold. No flags, courtyard, statues, lettering or trees.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看线稿与同殿四张实拍：2023年9月2日参观照片中屋瓦灰褐、侧面山墙及正面次间为砖红抹灰，六扇雕花隔扇及柱枋呈褪色红褐木作，上枋局部有旧蓝绿彩痕；灰石台基。照片有日照暖感，设色回到材料本色。",
+  "references": [
+    {
+      "source_page": "https://blog.sina.com.cn/s/blog_a19f8cff01033km0.html",
+      "image_url": "https://s15.sinaimg.cn/mw690/002XvxVRzy8igkH7Ih2c8&690",
+      "author": "猫耳山maoershan",
+      "license": "原页面未声明开放许可；照片用于建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/gongzhu-photo.jpg",
+      "note": "博文2024年9月24日发表于新浪，记录2023年9月2日现场参观。全院正面中，后部三间悬山建筑为大雄宝殿；用于整体外轮廓、开间、墙体与比例。",
+      "file": "assets/references/gongzhu-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://blog.sina.com.cn/s/blog_a19f8cff01033km0.html",
+      "image_url": "https://s15.sinaimg.cn/mw690/002XvxVRzy8igkJdGg070&690",
+      "author": "猫耳山maoershan",
+      "license": "原页面未声明开放许可；照片用于建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/gongzhu-secondary-photo.jpg",
+      "note": "博文2024年9月24日发表于新浪，记录2023年9月2日现场参观。大雄宝殿屋顶正面，确认一座中脊刹、两端鸱吻、悬山屋面及不施斗栱的梁枋。",
+      "file": "assets/references/gongzhu-secondary-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://blog.sina.com.cn/s/blog_a19f8cff01033km0.html",
+      "image_url": "https://s15.sinaimg.cn/mw690/002XvxVRzy8igkK07Wva7&690",
+      "author": "猫耳山maoershan",
+      "license": "原页面未声明开放许可；照片用于建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/gongzhu-door-photo.jpg",
+      "note": "博文2024年9月24日发表于新浪，记录2023年9月2日现场参观。同殿中央六扇隔扇近照，核验门扇数量与格心；生成简化窗棂纹样。",
+      "file": "assets/references/gongzhu-door-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/gongzhu.json",
+  "output": "assets/colored/gongzhu.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-f8c1feea-8f96-44f6-af4d-aebdd6b2e950.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：三间立面、六扇隔扇、单檐悬山与中央小脊刹完整，红墙与褪红木门清晰。瓦顶为灰褐土色，较阴影中的实拍更亮，但无金色琉璃光泽，灰石台基及残蓝绿梁彩可辨。未误画毗卢殿。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 繁峙公主寺大雄宝殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: This is Gongzhu Temple DAXIONG Hall, not the different Pilu hall. Preserve first master's three-bay broad gabled hall, six central lattice door leaves, solid side wall bays, no added bracket clusters. Single roof is weathered unglazed gray-brown tiles, NOT gold or green glazed; gray/earth-colored ridge and small central finial. Side plaster walls muted brick-red/terracotta (not white), timber posts/beams and six carved doors worn dusty russet-red with exposed gray-brown grain; upper beam has very restrained worn blue-green pigment traces. Plaque remains blank, reddish surround. Pale cool gray stone low plinth and central steps. Neutralize yellow sunlight cast; do not repaint gray tiles beige-gold. No flags, courtyard, statues, lettering or trees.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/gongzhu.png",
+        "assets/references/gongzhu-photo.jpg",
+        "assets/references/gongzhu-secondary-photo.jpg",
+        "assets/references/gongzhu-door-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-f8c1feea-8f96-44f6-af4d-aebdd6b2e950.png",
+      "output": "assets/colored/gongzhu.png"
+    }
+  ]
+}

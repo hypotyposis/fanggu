@@ -1,0 +1,68 @@
+{
+  "id": "shisi",
+  "subject": "景宁时思寺大殿",
+  "caption": [
+    "时思寺 · 大殿",
+    "元至正十六年 · 重檐歇山"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:景宁时思寺大殿,_2022-09-29_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/%E6%99%AF%E5%AE%81%E6%97%B6%E6%80%9D%E5%AF%BA%E5%A4%A7%E6%AE%BF%2C_2022-09-29_01.jpg/1280px-%E6%99%AF%E5%AE%81%E6%97%B6%E6%80%9D%E5%AF%BA%E5%A4%A7%E6%AE%BF%2C_2022-09-29_01.jpg",
+  "author": "Siyuwj",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/shisi-photo.jpg"
+  ],
+  "reference_dimensions": {
+    "width": 1280,
+    "height": 854
+  },
+  "source_note": "2022-09-29正面实拍，选大殿，不含清代钟楼或梅氏宗祠。两层屋檐、中央三扇门、两侧窗与白色腰墙、上檐斗栱带及中央石阶已目视核对。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the MAIN HALL (大殿) of Shisi Temple 时思寺 in Daji, Jingning, Zhejiang, NOT its bell tower. Faithfully preserve the actual near-frontal facade in image 2. Small almost square hall, exactly TWO roof/eave tiers with very broad and gently lifted corners, a high white band between the two eaves punctuated by a row of exposed multi-tier timber bracket sets. Upper hip-and-gable roof with a low straight ridge, no fantasy ornament or added pagoda finial. Lower facade has a wide central open three-panel doorway, with one large rectangular window bay on each side above white lower wall panels. Preserve slender plain wooden columns, modest uneven stone podium, and five broad central approach steps. The true building's identifiable feature is its deep upper brackets spaced across a white horizontal wall zone, above a much lower projecting roof. Keep structural lines delicate, all white infill and dark timber surfaces white with contour only. Roof tiles selectively suggested with 10-12 fine lines, not all tile rows. Remove adjacent halls, trees, grass, boundary walls, signage. Landscape1536x1024, complete hall centered at82%width, roof and steps uncut.",
+  "generated_file": "assets/generated/shisi.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-60789521-2a7f-4e46-8f91-21a3c415f8ec.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "丽博观古·处州遗存——时思寺",
+      "url": "https://www.lishui.gov.cn/art/2021/1/4/art_1229268129_57311343.html",
+      "publisher": "丽水市博物馆 / 丽水市人民政府",
+      "evidence": "大殿建于元至正十六年（1356），重檐歇山顶，保留大量元代构件；整寺包括元明清不同时期建筑。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "时思寺",
+    "short": "时思寺",
+    "sub": "大殿 · 山村元构",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元 · 至正十六年",
+    "year": 1356,
+    "yearLabel": "1356年",
+    "place": "浙江景宁 · 大漈",
+    "placeKey": "jingning",
+    "lat": 27.80944,
+    "lon": 119.58722,
+    "latlon_source": "https://zh.wikipedia.org/wiki/时思寺",
+    "lede": "两层飞檐之间，深远的斗栱在白壁上排开。时思寺大殿以轻巧的木构和低低的石阶，藏在大漈山村的古寺中。",
+    "facts": [
+      {
+        "label": "元代大殿",
+        "text": "大殿建于元至正十六年（1356），至今保留大量元代构件。"
+      },
+      {
+        "label": "重檐歇山",
+        "text": "上下两层屋檐舒展，上檐斗栱露出完整层次，中央门洞与两侧窗形成简明立面。"
+      },
+      {
+        "label": "多时并存",
+        "text": "寺内钟楼、三清殿与梅氏宗祠形成跨越元明清的建筑群，图版专取元代大殿。"
+      }
+    ]
+  }
+}

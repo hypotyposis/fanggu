@@ -1,0 +1,56 @@
+{
+  "id": "geyuan",
+  "name": "涞源阁院寺",
+  "subject": "涞源阁院寺文殊殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/geyuan.png",
+    "assets/references/geyuan-survey-photo.jpg",
+    "assets/references/geyuan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSubject: Geyuan Temple Wenshu Hall THREE-bay front from the exact line master, retaining all lattice screens and very low pitched roof. Roof neutral grey-brown aged tiles, brackets dark grey-brown timber. Beam/frieze panels carry extremely faded dark green/blue-green with pale worn outlines; no legible text. Facade columns and lattice door frames weathered muted dusty RED/PINK-BROWN remnants over grey-brown timber, lattice bars lighter faded grey-brown; no newly painted vermilion. Lower solid panels retain dull reddish-brown. Platform pale neutral grey stone. Do not color hall bright orange from the separate courtyard wall in the photo, which is absent from drawing. Preserve all three door bays and blank plaques, no lettering. Landscape1536x1024.",
+  "material_observations": [
+    "文殊殿为灰瓦旧顶，斗栱和梁枋深灰褐，局部彩画可见褪色青绿。",
+    "门扇、格心框架和柱为褪色粉褐/暗红漆与灰褐裸木交杂。",
+    "台基浅灰石；照片院墙橙红不属于线稿主体，不移到殿身。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/geyuan-survey-photo.jpg",
+      "source_page": "https://www.sohu.com/a/209232802_653164",
+      "image_url": "https://5b0988e595225.cdn.sohucs.com/images/20171208/b1a6c4ea911c469ab5e6e01833ee9036.jpeg",
+      "author": "爱塔传奇",
+      "license": "原页面未声明开放许可；照片用于建筑形制参考",
+      "license_url": null,
+      "date": "未知",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    },
+    {
+      "file": "assets/references/geyuan-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Geyuan_Temple_2.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Geyuan_Temple_2.JPG",
+      "author": "Zeus1234",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "未知",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/geyuan.json",
+  "output": "assets/colored/geyuan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-e8ff8472-3a00-4cab-a843-17a8126c56b2.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "保留三间格扇立面、低坡屋面、四根前柱与浅台基。",
+      "灰瓦、粉褐残漆、灰褐旧木与梁枋褪色青绿可分辨，未加院墙或匾额文字。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T07:52:00.864Z"
+}

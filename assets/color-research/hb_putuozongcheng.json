@@ -1,0 +1,76 @@
+{
+  "id": "hb_putuozongcheng",
+  "name": "普陀宗乘之庙",
+  "subject": "普陀宗乘之庙 · 大红台完整正面及上部实存屋顶",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_putuozongcheng.png",
+    "assets/color-references/hb_putuozongcheng-2025-15.jpg",
+    "assets/references/hb_putuozongcheng-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 普陀宗乘之庙 · 大红台完整正面及上部实存屋顶.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the exact line drawing of the great flat-front RED TERRACE, tapered rectangle, five rows of square blind windows, five central glazed niches, two visible small double-eaved pavilion roofs above parapet; stepped lower WHITE terraces and left sloping access remain exact. DO NOT add a pitched roof over the giant block.2025 photograph is primary broad-color evidence: matte dusty vermilion/rose-red huge upper wall, alternately pale cream square blind panels and dark inset squares, offwhite lower terrace walls with dull red-brown blank blindwindow panels and pale surrounds.2007 close photo supports material placement: central glazed five-niche column and top arched parapet alternate olivegreen/turquoise and pale ochre/cream. Roof surfaces of the two small top pavilions are largely shadowed dark olive/gray with subdued ochre/light clay ridgeedge accents, not giant bright golden roofs; timber below muted dark red and bluegreen. Red thin copingbands atop lower white terraces with gray/greenish copingedges. Preserve all window positions, use small plain square color panels not extra holes. Plaster broadflat lightly grained, NO heavy chips or exposed brick invented from old film flaws. Remove flags, poles, people, vegetation, mountains, courtyard and all lettering. Do not transpose palace/golden-roof detail from other buildings.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "实看既有2007近正面、1991远景，以及补充2025-09-01照片15。2025大红台墙为暗粉朱红，方形盲窗有浅白面与深色凹面；中央龛带黄赭与青绿琉璃，白台白灰墙、红褐窗面，顶缘红褐窄带。两座上部小阁屋面多在阴影，概括灰橄榄屋面与浅赭脊边，不据远照虚构精细金铜层。1991旧片仅核白台关系、不用于精确现状斑驳。当前照片远景有树挡下部，2007图作材质位置补证；不宣称2026逐砖实测色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Putuo_Zongcheng_Temple_15.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Putuo_Zongcheng_Temple_15.jpg/1280px-Putuo_Zongcheng_Temple_15.jpg",
+      "author": "H2v5o68z",
+      "date": "2025-09-01 12:14:14",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/color-references/hb_putuozongcheng-2025-15.jpg",
+      "use": "大红台上墙现状主色与小阁轮廓，树挡白台部分不推测细节"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Red_building_Putuo_Zongcheng_Temple.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Red_building_Putuo_Zongcheng_Temple.JPG",
+      "author": "Gisling",
+      "date": "October 2007",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/hb_putuozongcheng-photo.jpg",
+      "reference_dimensions": {
+        "width": 2224,
+        "height": 1330
+      }
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Vorderansicht_Putuo-Zongcheng-Tempel_Chengde.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Vorderansicht_Putuo-Zongcheng-Tempel_Chengde.jpg",
+      "author": "Herbert wie",
+      "date": "April 1991",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/hb_putuozongcheng-front-photo.jpg",
+      "reference_dimensions": {
+        "width": 3089,
+        "height": 2048
+      },
+      "role": "research_context_not_generation_input",
+      "usage_note": "此照片作为研究背景保留，未作为本次图像生成输入；实际生成输入以 input_images 为准。"
+    }
+  ],
+  "output": "assets/colored/hb_putuozongcheng.png",
+  "prepared_at": "2026-09-15T20:23:01.499241+08:00",
+  "original_research": "assets/research/hb_putuozongcheng.json",
+  "visual_review": "已实看线稿、2007近景/1991远景、2025补充正面照及输出。大红台五排方窗、中央五龛、两个小阁屋顶、下白台及左侧斜阶关系保持，未添加汉式大殿屋顶。朱红墙、白灰台、浅白与暗红方窗、黄赭青绿龛带分材质对应；小阁屋面为深灰绿、脊边淡赭，无整座涂金。轻微墙面颗粒为画风细化，无树、旗杆、人物、文字。2025照树挡白台且屋面较远，精细材质不作实测承诺。",
+  "excluded_reference_candidates": {
+    "1": "山门，非大红台",
+    "12": "五塔门，非大红台",
+    "16": "台内通道，非外立面",
+    "17": "院内殿堂，非外立面",
+    "19": "内部廊楼，非外立面"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-0e4a556e-ed47-4fde-bd33-5a9557c4f1b1.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-0e4a556e-ed47-4fde-bd33-5a9557c4f1b1.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:24:19.693776+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T20:25:24.103792+08:00",
+  "reference_usage_note": "references 可包含研究背景照片；标注 role=research_context_not_generation_input 的照片未送入本次图像生成，实际生成输入以 input_images 为准。"
+}

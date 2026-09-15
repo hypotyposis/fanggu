@@ -1,0 +1,553 @@
+{
+  "batch": "hebei-expansion",
+  "checked_on": "2026-09-15",
+  "phase": "confirmed_generation",
+  "target_count": 25,
+  "ids": [
+    "hb_linji",
+    "hb_zdwenmiao",
+    "hb_anjibridge",
+    "hb_tuoluoni",
+    "hb_daodejing",
+    "hb_qingxiling",
+    "hb_yicihui",
+    "hb_ciyunge",
+    "hb_beiyue",
+    "hb_xiude",
+    "hb_dzgongyuan",
+    "hb_bishushanzhuang",
+    "hb_puning",
+    "hb_putuozongcheng",
+    "hb_qingdongling",
+    "hb_jingjue",
+    "hb_nanansi",
+    "hb_shijia",
+    "hb_xuanhuaqingyuan",
+    "hb_jimingyi",
+    "hb_wahuang",
+    "hb_xtkaiyuan",
+    "hb_puli",
+    "hb_cangzhoulion",
+    "hb_jingzhouta"
+  ],
+  "candidates": [
+    {
+      "id": "hb_linji",
+      "name": "临济寺澄灵塔",
+      "place": "正定",
+      "placeKey": "hb_zhengding",
+      "draw_subject": "八角九级密檐砖塔",
+      "period": "辽金",
+      "era": "金 · 1185年大修形制",
+      "year": 1185,
+      "yearApprox": false,
+      "research_note": "现状保持金大定二十五年大修后外观；1985年重装塔刹。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "root"
+    },
+    {
+      "id": "hb_zdwenmiao",
+      "name": "正定县文庙大成殿",
+      "place": "正定",
+      "placeKey": "hb_zhengding",
+      "draw_subject": "五间三进深单檐歇山大成殿",
+      "period": "五代",
+      "era": "晚唐至五代；国保列五代",
+      "year": 930,
+      "yearApprox": true,
+      "research_note": "年代依结构断代；不使用明洪武七年县文庙建置年。与府文庙不同。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "root"
+    },
+    {
+      "id": "hb_anjibridge",
+      "name": "安济桥",
+      "place": "赵县",
+      "placeKey": "hb_zhaoxian",
+      "draw_subject": "一主拱、四小拱的完整敞肩石桥侧立面",
+      "period": "隋",
+      "era": "隋代",
+      "year": 610,
+      "yearApprox": true,
+      "research_note": "省文物局简介为605—616；常见595—605记载需在成稿年注解释，排序年只作约值。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "root"
+    },
+    {
+      "id": "hb_tuoluoni",
+      "name": "赵州陀罗尼经幢",
+      "place": "赵县",
+      "placeKey": "hb_zhaoxian",
+      "draw_subject": "七级八角石经幢、完整台基与顶刹",
+      "period": "宋",
+      "era": "北宋 · 1038",
+      "year": 1038,
+      "yearApprox": false,
+      "research_note": "原开元寺已毁，选独立现存经幢；不与正定开元寺混淆。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "root"
+    },
+    {
+      "id": "hb_daodejing",
+      "name": "龙兴观道德经幢",
+      "place": "易县",
+      "placeKey": "hb_yixian",
+      "draw_subject": "现存唐代石经幢",
+      "period": "唐",
+      "era": "唐 · 738",
+      "year": 738,
+      "yearApprox": false,
+      "research_note": "龙兴观已毁，只有经幢与碑遗存；按现状绘制，不补失部。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "root"
+    },
+    {
+      "id": "hb_qingxiling",
+      "name": "清西陵",
+      "place": "易县",
+      "placeKey": "hb_yixian",
+      "draw_subject": "泰陵隆恩殿正立面",
+      "period": "明清",
+      "era": "清 · 1730—1736",
+      "year": 1736,
+      "yearApprox": false,
+      "research_note": "全陵群一条，以泰陵隆恩殿为代表；故宫称1736建成，与1737入葬分别记载。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://www.dpm.org.cn/court/system/236383.html"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_qingxiling.png",
+      "research_file": "assets/research/hb_qingxiling.json",
+      "final_year": 1736,
+      "final_yearLabel": "清 · 1730—1736"
+    },
+    {
+      "id": "hb_yicihui",
+      "name": "义慈惠石柱",
+      "place": "定兴",
+      "placeKey": "hb_dingxing",
+      "draw_subject": "北齐石柱及柱顶三间石殿",
+      "period": "北齐",
+      "era": "北齐 · 562",
+      "year": 562,
+      "yearApprox": false,
+      "research_note": "现址定兴县高里乡石柱村；旧国保所在地易县是旧行政标注。北魏木柱前身与北齐石构分开。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://zx.bjfsh.gov.cn/docs/20180829181129110213.pdf",
+        "https://www.icomoschina.org.cn/Upload/File/202107/20210721151439_3189.pdf"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_yicihui.png",
+      "research_file": "assets/research/hb_yicihui.json",
+      "final_year": 562,
+      "final_yearLabel": "北齐 · 562"
+    },
+    {
+      "id": "hb_ciyunge",
+      "name": "慈云阁",
+      "place": "定兴",
+      "placeKey": "hb_dingxing",
+      "draw_subject": "现存两层三间楼阁",
+      "period": "元",
+      "era": "元 · 1306",
+      "year": 1306,
+      "yearApprox": false,
+      "research_note": "原大悲阁群只存此阁；元大德十年重建。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_ciyunge.png",
+      "research_file": "assets/research/hb_ciyunge.json",
+      "final_year": 1306,
+      "final_yearLabel": "元 · 1306"
+    },
+    {
+      "id": "hb_beiyue",
+      "name": "北岳庙",
+      "place": "曲阳",
+      "placeKey": "hb_quyang",
+      "draw_subject": "德宁之殿正立面（含回廊、台基）",
+      "period": "元",
+      "era": "元 · 1347重建",
+      "year": 1347,
+      "yearApprox": false,
+      "research_note": "省文物局以至正七年1347列现殿；县方志有至元七年1270完工记载，需并记营建阶段。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://www.quyang.gov.cn/d/fangzhiquyang/7390.html"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_beiyue.png",
+      "research_file": "assets/research/hb_beiyue.json",
+      "final_year": 1347,
+      "final_yearLabel": "元代"
+    },
+    {
+      "id": "hb_xiude",
+      "name": "修德寺塔",
+      "place": "曲阳",
+      "placeKey": "hb_quyang",
+      "draw_subject": "现存楼阁与花塔混合式砖塔",
+      "period": "宋",
+      "era": "北宋 · 约1020",
+      "year": 1020,
+      "yearApprox": true,
+      "research_note": "县方志称1020塔落成；省文物局只定宋且记六级/刹无存，后续实照核对现存层位，不能照七层通说补造。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://quyang.gov.cn/d/fangzhiquyang/7311.html"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_xiude.png",
+      "research_file": "assets/research/hb_xiude.json",
+      "final_year": 1020,
+      "final_yearLabel": "北宋 · 约1020"
+    },
+    {
+      "id": "hb_dzgongyuan",
+      "name": "定州贡院",
+      "place": "定州",
+      "placeKey": "hb_dingzhou",
+      "draw_subject": "魁阁号舍完整正立面",
+      "period": "明清",
+      "era": "清 · 1738始建、1834扩建",
+      "year": 1834,
+      "yearApprox": true,
+      "research_note": "拟用现存魁阁号舍所呈清代扩建形制；独栋精确创建年需在照片阶段进一步核定。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_dzgongyuan.png",
+      "research_file": "assets/research/hb_dzgongyuan.json",
+      "final_year": 1834,
+      "final_yearLabel": "清 · 1738始建、1834扩建"
+    },
+    {
+      "id": "hb_bishushanzhuang",
+      "name": "承德避暑山庄",
+      "place": "承德",
+      "placeKey": "hb_chengde",
+      "draw_subject": "澹泊敬诚殿正立面",
+      "period": "明清",
+      "era": "清 · 1754楠木改建",
+      "year": 1754,
+      "yearApprox": false,
+      "research_note": "山庄整组一条，1711殿创建与1754现主体改建分开。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://www.bishushanzhuang.com.cn/index.php/scenic/spot_view/id/77.html"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_bishushanzhuang.png",
+      "research_file": "assets/research/hb_bishushanzhuang.json",
+      "final_year": 1754,
+      "final_yearLabel": "清 · 1754楠木改建"
+    },
+    {
+      "id": "hb_puning",
+      "name": "普宁寺",
+      "place": "承德",
+      "placeKey": "hb_chengde",
+      "draw_subject": "大乘阁完整立面",
+      "period": "明清",
+      "era": "清 · 1755—1758",
+      "year": 1758,
+      "yearApprox": false,
+      "research_note": "汉藏建筑群一条，不另拆大佛；大乘阁为代表。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_puning.png",
+      "research_file": "assets/research/hb_puning.json",
+      "final_year": 1758,
+      "final_yearLabel": "清 · 1755—1758"
+    },
+    {
+      "id": "hb_putuozongcheng",
+      "name": "普陀宗乘之庙",
+      "place": "承德",
+      "placeKey": "hb_chengde",
+      "draw_subject": "大红台完整正面及上部实存屋顶",
+      "period": "明清",
+      "era": "清 · 1767—1771",
+      "year": 1771,
+      "yearApprox": false,
+      "research_note": "独立寺庙群一条，不与须弥福寿之庙混作一条或拆院凑数。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_putuozongcheng.png",
+      "research_file": "assets/research/hb_putuozongcheng.json",
+      "final_year": 1771,
+      "final_yearLabel": "清 · 1767—1771"
+    },
+    {
+      "id": "hb_qingdongling",
+      "name": "清东陵",
+      "place": "遵化",
+      "placeKey": "hb_zunhua",
+      "draw_subject": "孝陵神道石牌坊",
+      "period": "明清",
+      "era": "清 · 1663—1668",
+      "year": 1664,
+      "yearApprox": true,
+      "research_note": "全陵群一条。孝陵1663动工，1664主体完工、1668附属完成；具体牌坊年代在成稿再核。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://www.dpm.org.cn/court/system/236374.html"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_qingdongling.png",
+      "research_file": "assets/research/hb_qingdongling.json",
+      "final_year": 1672,
+      "final_yearLabel": "清 · 康熙十一年（1672）"
+    },
+    {
+      "id": "hb_jingjue",
+      "name": "净觉寺",
+      "place": "玉田",
+      "placeKey": "hb_yutian",
+      "draw_subject": "现存清代正殿正立面",
+      "period": "明清",
+      "era": "清代重修遗构",
+      "year": 1800,
+      "yearApprox": true,
+      "research_note": "省文物局列清；绝不按传说唐代创建给现殿着色。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_jingjue.png",
+      "research_file": "assets/research/hb_jingjue.json",
+      "final_year": 1800,
+      "final_yearLabel": "清代重修遗构"
+    },
+    {
+      "id": "hb_nanansi",
+      "name": "南安寺塔",
+      "place": "蔚县",
+      "placeKey": "hb_yuxian",
+      "draw_subject": "十三层密檐砖塔",
+      "period": "辽金",
+      "era": "辽代",
+      "year": 1100,
+      "yearApprox": true,
+      "research_note": "按形制断辽；清1706包砌塔座及1986局部修补分别记录。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_nanansi.png",
+      "research_file": "assets/research/hb_nanansi.json",
+      "final_year": 1100,
+      "final_yearLabel": "辽 · 年代约值"
+    },
+    {
+      "id": "hb_shijia",
+      "name": "释迦寺",
+      "place": "蔚县",
+      "placeKey": "hb_yuxian",
+      "draw_subject": "三间单檐歇山大雄宝殿",
+      "period": "元",
+      "era": "元代",
+      "year": 1300,
+      "yearApprox": true,
+      "research_note": "元殿结构断代，其他明代殿宇不混入主体。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_shijia.png",
+      "research_file": "assets/research/hb_shijia.json",
+      "final_year": 1300,
+      "final_yearLabel": "元代"
+    },
+    {
+      "id": "hb_xuanhuaqingyuan",
+      "name": "宣化清远楼",
+      "place": "宣化",
+      "placeKey": "hb_xuanhua",
+      "draw_subject": "十字歇山三重檐钟楼及砖台",
+      "period": "明清",
+      "era": "明 · 1482",
+      "year": 1482,
+      "yearApprox": false,
+      "research_note": "仅选宣化城楼代表一条，不再增加镇朔楼、五龙壁。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_xuanhuaqingyuan.png",
+      "research_file": "assets/research/hb_xuanhuaqingyuan.json",
+      "final_year": 1482,
+      "final_yearLabel": "明 · 1482"
+    },
+    {
+      "id": "hb_jimingyi",
+      "name": "鸡鸣驿城",
+      "place": "怀来",
+      "placeKey": "hb_huailai",
+      "draw_subject": "东门城台与两翼古城墙",
+      "period": "明清",
+      "era": "明 · 1420起建",
+      "year": 1420,
+      "yearApprox": true,
+      "research_note": "画保留城台和城墙的主体；近现代修复城楼在metadata分列，不能将整座屋顶称为明代原构。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_jimingyi.png",
+      "research_file": "assets/research/hb_jimingyi.json",
+      "final_year": 1420,
+      "final_yearLabel": "明 · 1420起建"
+    },
+    {
+      "id": "hb_wahuang",
+      "name": "娲皇宫及石刻",
+      "place": "涉县",
+      "placeKey": "hb_shexian",
+      "draw_subject": "悬崖前娲皇阁及承托石券",
+      "period": "明清",
+      "era": "明清阁楼主体",
+      "year": 1550,
+      "yearApprox": true,
+      "research_note": "所绘阁楼按明清，不把北齐石窟刻经年混作阁楼年。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_wahuang.png",
+      "research_file": "assets/research/hb_wahuang.json",
+      "final_year": 1600,
+      "final_yearLabel": "明清 · 年代约值"
+    },
+    {
+      "id": "hb_xtkaiyuan",
+      "name": "邢台开元寺",
+      "place": "邢台",
+      "placeKey": "hb_xingtai",
+      "draw_subject": "古开元寺菩萨殿（第三殿/释迦牟尼殿），完整正面及四根滚龙石柱",
+      "period": "明清",
+      "era": "明 · 1518重修",
+      "year": 1518,
+      "yearApprox": false,
+      "research_note": "毗卢殿1988火毁、1997重修，不选。改用明正德十三年重修的菩萨殿及四根有1518铭文的滚龙石柱。须与东侧2013新寺区分。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+        "https://zh.wikipedia.org/wiki/开元寺_(邢台市)"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_xtkaiyuan.png",
+      "research_file": "assets/research/hb_xtkaiyuan.json",
+      "final_year": 1518,
+      "final_yearLabel": "明 · 1518重修"
+    },
+    {
+      "id": "hb_puli",
+      "name": "普利寺塔",
+      "place": "临城",
+      "placeKey": "hb_lincheng",
+      "draw_subject": "方形七层砖塔与高石台基",
+      "period": "宋",
+      "era": "北宋 · 1051",
+      "year": 1051,
+      "yearApprox": false,
+      "research_note": "省文物局明确皇祐三年；保留现存七层，不误用其他同名塔。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_puli.png",
+      "research_file": "assets/research/hb_puli.json",
+      "final_year": 1051,
+      "final_yearLabel": "北宋 · 1051"
+    },
+    {
+      "id": "hb_cangzhoulion",
+      "name": "沧州铁狮子",
+      "place": "沧县",
+      "placeKey": "hb_cangxian",
+      "draw_subject": "旧州现存铁狮原物（保留残缺）",
+      "period": "五代",
+      "era": "后周 · 953",
+      "year": 953,
+      "yearApprox": false,
+      "research_note": "不使用狮城公园2011放大复制品；真实残缺、背负莲盆和必要支撑状态按实照。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_cangzhoulion.png",
+      "research_file": "assets/research/hb_cangzhoulion.json",
+      "final_year": 953,
+      "final_yearLabel": "后周 · 953"
+    },
+    {
+      "id": "hb_jingzhouta",
+      "name": "开福寺舍利塔",
+      "place": "景县",
+      "placeKey": "hb_jingxian",
+      "draw_subject": "八角十三层楼阁式塔",
+      "period": "宋",
+      "era": "北宋 · 1079",
+      "year": 1079,
+      "yearApprox": false,
+      "research_note": "省局公元1079与元丰三年并列有纪年笔误，正确应元丰二年；以1079为准并核碑记来源。",
+      "historical_sources": [
+        "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+      ],
+      "owner": "plates_towers",
+      "generated": true,
+      "generated_file": "assets/generated/hb_jingzhouta.png",
+      "research_file": "assets/research/hb_jingzhouta.json",
+      "final_year": 1079,
+      "final_yearLabel": "北宋 · 1079"
+    }
+  ],
+  "generation_started": true,
+  "selection_notes": [
+    "全部新增id与placeKey以hb_开头。",
+    "清东陵、清西陵、避暑山庄各一条；宣化仅选清远楼，已有10项不拆分复用。",
+    "25项覆盖石家庄、保定（含定州）、承德、唐山、张家口、邯郸、邢台、沧州、衡水。",
+    "日期有争议者先保留约值/区间，正式metadata随实拍主体继续核对。",
+    "未给任何条目设置visited/wishlist状态，状态交root。"
+  ],
+  "plates_towers_completed": true,
+  "plates_towers_completed_count": 20
+}

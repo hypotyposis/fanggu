@@ -1,0 +1,62 @@
+{
+  "id": "lingxiao",
+  "name": "天宁寺凌霄塔",
+  "subject": "正定天宁寺凌霄塔",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/lingxiao.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/lingxiao-full-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 正定天宁寺凌霄塔.\nOBSERVED MATERIAL COLORS: Viewed 2025 daylight complete Lingxiao Tower photo. Lower four storeys grey brick with faded terracotta/red imitation framing on lower levels; fourth tall brick storey particularly plain neutral brown-grey. Upper five timber storeys have warm muted ochre/cream infill panels, dark reddish-brown wood pillars and brackets. All nine roof/eave surfaces dark neutral grey clay tile. Deep recesses charcoal; huge ringed iron finial and guy supports charcoal black. Base grey masonry, central gateway frame muted terracotta red. No green-glazed roofs or gold tower.\nSPECIFIC GEOMETRY LOCK: Preserve precisely nine source roof/storey levels: four tall masonry lower bodies and FIVE shorter timber top bodies. Keep octagonal front, exact original bracket silhouette, source barred openings and giant ringed finial with support cables. Do not add exterior balconies absent in master, alter roof count, copy trees/poles or create a different viewpoint. Preserve portrait full tower and margins. Existing red framing subordinate to grey brick, no all-red tower.\nPreserve original aspect ratio 1024:1536.",
+  "material_observations": "Viewed 2025 daylight complete Lingxiao Tower photo. Lower four storeys grey brick with faded terracotta/red imitation framing on lower levels; fourth tall brick storey particularly plain neutral brown-grey. Upper five timber storeys have warm muted ochre/cream infill panels, dark reddish-brown wood pillars and brackets. All nine roof/eave surfaces dark neutral grey clay tile. Deep recesses charcoal; huge ringed iron finial and guy supports charcoal black. Base grey masonry, central gateway frame muted terracotta red. No green-glazed roofs or gold tower.",
+  "references": {
+    "original_record": "assets/research/lingxiao.json",
+    "selected_photo_files": [
+      "assets/references/lingxiao-full-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Lingxiao_Pagoda_of_Tianning_Temple_02.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/20250118_Lingxiao_Pagoda_of_Tianning_Temple_02.jpg/500px-20250118_Lingxiao_Pagoda_of_Tianning_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原记录未明确提供）",
+        "source_note": "近正面带少量侧面，九层与上五层木结构可辨，树木遮挡部分底层。"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/lingxiao.json",
+  "output": "assets/colored/lingxiao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-68afd587-cfeb-4d4c-b64f-2845265dd7b9.png",
+  "width": 1024,
+  "height": 1536,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 正定天宁寺凌霄塔.\nOBSERVED MATERIAL COLORS: Viewed 2025 daylight complete Lingxiao Tower photo. Lower four storeys grey brick with faded terracotta/red imitation framing on lower levels; fourth tall brick storey particularly plain neutral brown-grey. Upper five timber storeys have warm muted ochre/cream infill panels, dark reddish-brown wood pillars and brackets. All nine roof/eave surfaces dark neutral grey clay tile. Deep recesses charcoal; huge ringed iron finial and guy supports charcoal black. Base grey masonry, central gateway frame muted terracotta red. No green-glazed roofs or gold tower.\nSPECIFIC GEOMETRY LOCK: Preserve precisely nine source roof/storey levels: four tall masonry lower bodies and FIVE shorter timber top bodies. Keep octagonal front, exact original bracket silhouette, source barred openings and giant ringed finial with support cables. Do not add exterior balconies absent in master, alter roof count, copy trees/poles or create a different viewpoint. Preserve portrait full tower and margins. Existing red framing subordinate to grey brick, no all-red tower.\nPreserve original aspect ratio 1024:1536.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/lingxiao.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/lingxiao-full-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-68afd587-cfeb-4d4c-b64f-2845265dd7b9.png",
+      "generated_at": "2026-09-15T12:39:02.054902+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2025实拍、样本及输出；九层塔的下四层高砖身与上五层较矮木构、九道檐及铁塔刹拉索保留。",
+      "下部灰砖配褪红构架，上部米黄填墙配红褐木构，灰瓦和黑铁顶对应实拍材料分段。",
+      "原门窗数量和侧面比例保持，没有增添回廊、树、电杆或文字。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

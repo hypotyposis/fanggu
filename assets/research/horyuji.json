@@ -1,0 +1,126 @@
+{
+  "id": "horyuji",
+  "subject": "日本奈良法隆寺金堂单体",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Horyu-ji_kondo02_2000b.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Horyu-ji_kondo02_2000b.jpg",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "license_url": "https://creativecommons.org/licenses/by/2.5/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Horyu-ji_kondo02_2000b.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Horyu-ji_kondo02_2000b.jpg",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/",
+      "reference_file": "assets/references/horyuji-photo.jpg",
+      "date": "2005-10-22",
+      "dimensions": [
+        1890,
+        1260
+      ],
+      "note": "金堂南面完整正面实景。文件页多重授权，选用CC BY 2.5；按照片重绘为细线图，去除人物、树木、线缆及邻接回廊。"
+    }
+  ],
+  "additional_sources": [],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/horyuji-photo.jpg",
+    "assets/references/horyuji-initial-line.png"
+  ],
+  "initial_reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/horyuji-photo.jpg"
+  ],
+  "final_reference_files": [
+    "assets/references/horyuji-initial-line.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/horyuji-photo.jpg"
+  ],
+  "source_note": "仅画西院金堂，不包含五重塔。670年旧伽蓝火灾后现西院重建，现存主体按7世纪后半叶、飞鸟时代登记；607为寺院创建沿革，不是金堂现存木构确切建成年。文化厅登记桁行五间、梁间四间、二重、初重附裳阶、入母屋造、本瓦葺、裳阶板葺。图版保留实际正面两层瓦顶、低板葺裳阶、上层栏杆与檐角支撑，外层格栅分格不等同主体结构开间。",
+  "prompt": "Use case: precise-object-edit / style-transfer. Image1 is the EDIT TARGET, a generated line illustration of the actual Horyuji Kondo. Image2 is the original Buddha STYLE MASTER. Image3 is the same Horyuji Kondo real frontal photo, geometry confirmation only. Keep exactly the architecture already drawn: two tiled roof levels, the lower shallow board-covered mokoshi apron, upper geometric balustrade and corner supports, the central doorway flanked by four lattice panels on EACH side, and the two-level stone plinth and central stairs. Do not add or remove any architectural panel, roof or column.\nMake this existing drawing markedly LIGHTER AND SPARSER like the Buddha drawing, retaining its fine identifying contours. ERASE at least80percent of the current repeated tile-direction lines within BOTH roof planes, leaving only6 or7 widely spaced direction strokes in each. ERASE75percent of the dense under-eave rafter strokes, retaining a few evenly separated structural hints. In each of the eight front lattice window panels, use only FIVE to SEVEN fine vertical strokes, not the current dense barcode. Keep all surfaces pure WHITE and no hatching. Retain the upper geometric railing lightly.\nReduce the ENTIRE architectural drawing uniformly to occupy about78percent of canvas width. The entire drawn building including all roof tips and ground lines MUST fit inside horizontal x=170 to x=1366 on the1536pixel-wide canvas, with abundant WHITE margin outside. Never crop the tips. Preserve aspect ratio and center atx768, and keep generous white above and below. Do not stretch or rearrange individual parts. A single coherent smaller hall floating comfortably in a white field. Full canvas1536x1024. No words, captions, frames or watermark.\n",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSubject: ONLY the Kondo (Golden Hall) of Horyuji Temple, Ikaruga, Nara, Japan (法隆寺金堂). Image1 is the Buddha STYLE MASTER ONLY, Image2 is the precise actual FRONT photograph of this hall, which is the complete geometry authority. Do not draw the nearby five-storey pagoda, gates, corridor, or other buildings. This is an Asuka-period JAPANESE hall: preserve its actual roof curvature, deep eaves, white plaster framed with timber, and distinctive column and bracket layout. Do not convert it into a generic Chinese palace.\nPreserve the exact front silhouette: TWO distinct broad tiled roof levels above, with the upper roof distinctly narrower and steeper than the lower one; below these, a THIRD very shallow BOARD-COVERED MOKOSHI apron at ground-floor head height. The small lower board apron is not an additional storey and must not be replaced by a broad tiled roof. The uppermost roof is Japanese irimoya (hip-and-gable); keep the real restrained ridge and modest upturns, not giant swallowtail tips or Chinese dragon ridge ornaments. No central roof finial. Preserve the visible upper railing with its repeated small geometric pattern, cloud-shaped bracket groups and the slender corner eave supports, selectively simplified. The lower main hall is historically five structural bays wide; the outer mokoshi facade seen in the photo has one central doorway flanked by FOUR rectangular lattice-screen divisions on each side over plain lower infill panels. Match these actual repeated divisions. Upper structure is a narrower body above the broad lower tier, not a tower with additional storeys.\nShow the full hall on its low two-level stone plinth with the central short stone staircase. The full facade has generous broad horizontal proportions. Keep all roof corners, plinth edges and stair foot complete within the composition. Remove people, hanging electrical cables, ropes, exterior modern signs, surrounding trees and all adjacent corridor roofs. No lettering, crests, labels, watermarks or text. Keep the central door white in outline, not a black hole.\nSimplification is essential: large roof planes must remain nearly blank white with only 6 to10 well-spaced fine direction lines per roof plane, never a repeated every-tile grid. The mokoshi roof likewise has just a few spaced board seams. Represent the lattice screens with a few vertical lines per panel, not dense stripes. Draw the bracket silhouette and a few internal joints without hatching or black shadow. Preserve the identifying upper balustrade as a thin light pattern without heavy fill. Use the mother's delicate restrained contour weight, no engraving density. Landscape1536x1024, almost exactly front elevation as the real photo, verticals vertical, entire hall occupying around80percent of canvas width with at least120pixels clear white at left and right.\n",
+  "caption": [
+    "法隆寺 · 金堂正面",
+    "飞鸟时代 · 二重入母屋造与裳阶"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://kunishitei.bunka.go.jp/heritage/detail/102/2681",
+      "publisher": "日本文化厅 · 国指定文化财等数据库",
+      "supports": "金堂登记飞鸟时代；五间×四间，二重，初重裳阶，入母屋造、本瓦葺，裳阶板葺；670旧伽蓝火灾后移地建现西院，云斗云肘木与上层栏杆形制。"
+    },
+    {
+      "source_page": "https://online.bunka.go.jp/suisensyo/horyuji/MAINTEXT/3a-j.html",
+      "publisher": "日本文化厅 · 法隆寺世界遗产申报资料",
+      "supports": "原伽蓝670年火灾，7世纪后半至8世纪初移址重建成现西院；区分初创与重建。"
+    },
+    {
+      "source_page": "https://online.bunka.go.jp/suisensyo/horyuji/MAINTEXT/3b-j.html",
+      "publisher": "日本文化厅 · 法隆寺世界遗产申报资料",
+      "supports": "西院金堂、五重塔、中门、回廊等古代木构的遗产价值。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "法隆寺",
+    "short": "法隆寺",
+    "sub": "斑鸠 · 金堂",
+    "country": "JP",
+    "dyn": "jp_asuka",
+    "tag": "飞鸟",
+    "era": "飞鸟时代 · 7世纪后半叶",
+    "year": 690,
+    "yearLabel": "7世纪后半叶",
+    "yearApprox": true,
+    "year_note": "690是7世纪后半叶的近似排序点，非确切施工或竣工年；不取607建寺年。",
+    "place": "日本 · 奈良县 · 斑鸠町",
+    "placeKey": "nara",
+    "lat": 34.614261,
+    "lon": 135.7344,
+    "coords": [
+      135.7344,
+      34.614261
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Golden_Hall,_Horyu-ji",
+    "coordinate_note": "金堂类别公开位置34°36′51.34″N、135°44′03.84″E换算；公开地图近似位置，非测绘定位。",
+    "lede": "两重瓦顶下，法隆寺金堂以云形斗栱、上层栏杆和低矮裳阶组成鲜明轮廓。这座飞鸟时代木构与庭院西侧的五重塔相对，保留了早期东亚佛寺空间的线索。",
+    "facts": [
+      "寺院始建于607年；现存金堂属于670年火灾后重建的西院伽蓝，年代列7世纪后半叶。",
+      "主体桁行五间、梁间四间，为二重入母屋造（歇山顶）；初重外围附板葺裳阶，形成下方较浅的檐线。",
+      "云斗云肘木、略带鼓胀的圆柱与上层几何栏杆，是金堂外观的重要特征。"
+    ]
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSubject: ONLY the Kondo (Golden Hall) of Horyuji Temple, Ikaruga, Nara, Japan (法隆寺金堂). Image1 is the Buddha STYLE MASTER ONLY, Image2 is the precise actual FRONT photograph of this hall, which is the complete geometry authority. Do not draw the nearby five-storey pagoda, gates, corridor, or other buildings. This is an Asuka-period JAPANESE hall: preserve its actual roof curvature, deep eaves, white plaster framed with timber, and distinctive column and bracket layout. Do not convert it into a generic Chinese palace.\nPreserve the exact front silhouette: TWO distinct broad tiled roof levels above, with the upper roof distinctly narrower and steeper than the lower one; below these, a THIRD very shallow BOARD-COVERED MOKOSHI apron at ground-floor head height. The small lower board apron is not an additional storey and must not be replaced by a broad tiled roof. The uppermost roof is Japanese irimoya (hip-and-gable); keep the real restrained ridge and modest upturns, not giant swallowtail tips or Chinese dragon ridge ornaments. No central roof finial. Preserve the visible upper railing with its repeated small geometric pattern, cloud-shaped bracket groups and the slender corner eave supports, selectively simplified. The lower main hall is historically five structural bays wide; the outer mokoshi facade seen in the photo has one central doorway flanked by FOUR rectangular lattice-screen divisions on each side over plain lower infill panels. Match these actual repeated divisions. Upper structure is a narrower body above the broad lower tier, not a tower with additional storeys.\nShow the full hall on its low two-level stone plinth with the central short stone staircase. The full facade has generous broad horizontal proportions. Keep all roof corners, plinth edges and stair foot complete within the composition. Remove people, hanging electrical cables, ropes, exterior modern signs, surrounding trees and all adjacent corridor roofs. No lettering, crests, labels, watermarks or text. Keep the central door white in outline, not a black hole.\nSimplification is essential: large roof planes must remain nearly blank white with only 6 to10 well-spaced fine direction lines per roof plane, never a repeated every-tile grid. The mokoshi roof likewise has just a few spaced board seams. Represent the lattice screens with a few vertical lines per panel, not dense stripes. Draw the bracket silhouette and a few internal joints without hatching or black shadow. Preserve the identifying upper balustrade as a thin light pattern without heavy fill. Use the mother's delicate restrained contour weight, no engraving density. Landscape1536x1024, almost exactly front elevation as the real photo, verticals vertical, entire hall occupying around80percent of canvas width with at least120pixels clear white at left and right.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/horyuji-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-1d5a076a-85f8-4cbe-86e8-7055ac7fe7bb.png",
+      "accepted": false,
+      "note": "建筑主体成立，屋面与格栅重复线偏密、左右留白不足。"
+    },
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image1 is the EDIT TARGET, a generated line illustration of the actual Horyuji Kondo. Image2 is the original Buddha STYLE MASTER. Image3 is the same Horyuji Kondo real frontal photo, geometry confirmation only. Keep exactly the architecture already drawn: two tiled roof levels, the lower shallow board-covered mokoshi apron, upper geometric balustrade and corner supports, the central doorway flanked by four lattice panels on EACH side, and the two-level stone plinth and central stairs. Do not add or remove any architectural panel, roof or column.\nMake this existing drawing markedly LIGHTER AND SPARSER like the Buddha drawing, retaining its fine identifying contours. ERASE at least80percent of the current repeated tile-direction lines within BOTH roof planes, leaving only6 or7 widely spaced direction strokes in each. ERASE75percent of the dense under-eave rafter strokes, retaining a few evenly separated structural hints. In each of the eight front lattice window panels, use only FIVE to SEVEN fine vertical strokes, not the current dense barcode. Keep all surfaces pure WHITE and no hatching. Retain the upper geometric railing lightly.\nReduce the ENTIRE architectural drawing uniformly to occupy about78percent of canvas width. The entire drawn building including all roof tips and ground lines MUST fit inside horizontal x=170 to x=1366 on the1536pixel-wide canvas, with abundant WHITE margin outside. Never crop the tips. Preserve aspect ratio and center atx768, and keep generous white above and below. Do not stretch or rearrange individual parts. A single coherent smaller hall floating comfortably in a white field. Full canvas1536x1024. No words, captions, frames or watermark.\n",
+      "reference_files": [
+        "assets/references/horyuji-initial-line.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/horyuji-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-4a1d9d05-5f81-4d67-844a-efa529672223.png",
+      "accepted": true,
+      "note": "保留形制与分格，减少屋瓦、椽条、格栅线密度并缩小居中留白。"
+    }
+  ],
+  "verification": "已view_image核验真实正面照片、母版、初稿及最终原稿。最终单体完整，2层瓦顶加低板葺裳阶，中央门两侧各4格外层格栅，上层栏杆与檐角支撑保留；屋面大面积留白，未画五重塔、邻接回廊、人物、文字或黑色填充。",
+  "generated_file": "assets/generated/horyuji.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-4a1d9d05-5f81-4d67-844a-efa529672223.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

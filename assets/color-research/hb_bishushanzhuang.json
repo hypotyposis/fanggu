@@ -1,0 +1,41 @@
+{
+  "id": "hb_bishushanzhuang",
+  "name": "承德避暑山庄",
+  "subject": "承德避暑山庄 · 澹泊敬诚殿正立面",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_bishushanzhuang.png",
+    "assets/references/hb_bishushanzhuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 承德避暑山庄 · 澹泊敬诚殿正立面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Exact geometry: seven-bay low single-storey nanmu hall, single low sweeping juanpeng roof without main ridge dragons, plain eight veranda columns and seven door groups, three short stairs. The 2025 photograph shows gray clay tiles, subdued dark walnut/chestnut-brown natural nanmu timber posts and lintels, reddish-brown thin door frames with darker lattice and panel recesses. NOT bright red palace columns. A slim dull red fascia below roof and tiny pale green/blue painted rafter ends are visible, restrict those colors to these existing edges, not full elaborate painted friezes. Low platform and steps are cool gray stone with modest warm-gray highlights. Do not transfer pine-tree shadows, foliage, garden or surrounding wings; no plaque, dragons, extra roof tiers or bright gold.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "实看2025-11-02澹泊敬诚殿照片：屋面灰瓦，木柱梁与楠木门窗为深棕、灰褐和少量红褐色，檐口细红边、少量淡青蓝椽头，非大面积朱红彩画。石台阶灰色。松树遮挡仅影响局部现状，结构沿既有七间线稿；不把树影变作材料纹理。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%89%BF%E5%BE%B7%E9%81%BF%E6%9A%91%E5%B1%B1%E5%BA%84%E6%BE%B9%E6%B3%8A%E6%95%AC%E8%AF%9A%E6%AE%BF2025.11.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/%E6%89%BF%E5%BE%B7%E9%81%BF%E6%9A%91%E5%B1%B1%E5%BA%84%E6%BE%B9%E6%B3%8A%E6%95%AC%E8%AF%9A%E6%AE%BF2025.11.jpg",
+      "author": "ScareCriterion12",
+      "date": "2 November 2025, 08:04:17",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/hb_bishushanzhuang-photo.jpg",
+      "reference_dimensions": {
+        "width": 8256,
+        "height": 5504
+      }
+    }
+  ],
+  "output": "assets/colored/hb_bishushanzhuang.png",
+  "prepared_at": "2026-09-15T20:06:39.308008+08:00",
+  "original_research": "assets/research/hb_bishushanzhuang.json",
+  "visual_review": "已实看线稿、2025实照、输出和风格样图；七间八柱、单檐低矮卷棚屋面及三处短阶关系保留。灰瓦、深棕楠木和褐红门窗，细朱边/淡色椽头，灰石台阶分材质一致。无龙脊、额外楼层、松树、文字。木纹与瓦纹是适度材质细化。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-00bde2c9-f7b8-4b35-8668-49734da75dae.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-00bde2c9-f7b8-4b35-8668-49734da75dae.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:14:25.389486+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T20:18:17.111884+08:00"
+}

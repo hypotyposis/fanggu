@@ -1,0 +1,112 @@
+{
+  "id": "hb_jingjue",
+  "subject": "净觉寺 · 现存清代正殿正立面",
+  "caption": [
+    "玉田净觉寺 · 香阜宫",
+    "正殿与前出卷棚抱厦正面"
+  ],
+  "source_page": "https://www.sina.cn/news/detail/4557036378922088.html",
+  "image_url": "https://wx2.sinaimg.cn/middle/4bd2d497ly1gjflei479qj21ts3y84qt.jpg",
+  "sources": [
+    {
+      "source_page": "https://www.sina.cn/news/detail/4557036378922088.html",
+      "image_url": "https://wx2.sinaimg.cn/middle/4bd2d497ly1gjflei479qj21ts3y84qt.jpg",
+      "author": "蓝灯心绒",
+      "license": "版权未注明开放许可；仅作实景形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/hb_jingjue-sina4-photo.jpg",
+      "reference_dimensions": {
+        "width": 319,
+        "height": 690
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_jingjue-sina4-photo.jpg"
+  ],
+  "ref_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_jingjue-sina4-photo.jpg"
+  ],
+  "source_note": "省文物局列清；绝不按传说唐代创建给现殿着色。",
+  "prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  Subject: Xiangfu Gong main hall 香阜宫 of Jingjue Temple, Yutian county, Hebei. The second supplied image is a REAL PHOTO that is rotated sideways; mentally turn it upright before drawing. Recreate the exact visible main hall in this photo: broad main single xieshan roof behind a lower full-width projecting roll-top porch roof (juanpeng baosha), flat white stone columns along the porch, central door, full central stair flight between carved stone handrails, low platform and the two small flanking entry openings. This is NOT the detached middle pagoda-like archway, not the entrance gateway with round windows, and not the rear double-eave Daxiong hall. The projecting front porch makes two visible roof levels but the main hall is not a tower. Keep the porch broad, its lightly rounded ridge and shaped corners, main upper hip-gable ridge and ornaments. Simplify carving and tile patterns greatly. Remove all plaques, written characters, signs, incense burners and visitors. Frontal upright landscape illustration, complete roofs and staircase, generous white margins.",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  Subject: Xiangfu Gong main hall 香阜宫 of Jingjue Temple, Yutian county, Hebei. The second supplied image is a REAL PHOTO that is rotated sideways; mentally turn it upright before drawing. Recreate the exact visible main hall in this photo: broad main single xieshan roof behind a lower full-width projecting roll-top porch roof (juanpeng baosha), flat white stone columns along the porch, central door, full central stair flight between carved stone handrails, low platform and the two small flanking entry openings. This is NOT the detached middle pagoda-like archway, not the entrance gateway with round windows, and not the rear double-eave Daxiong hall. The projecting front porch makes two visible roof levels but the main hall is not a tower. Keep the porch broad, its lightly rounded ridge and shaped corners, main upper hip-gable ridge and ornaments. Simplify carving and tile patterns greatly. Remove all plaques, written characters, signs, incense burners and visitors. Frontal upright landscape illustration, complete roofs and staircase, generous white margins.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_jingjue-sina4-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-0257d0e8-915d-4788-8c12-6089ea500082.png",
+      "accepted": true
+    }
+  ],
+  "generated_file": "assets/generated/hb_jingjue.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "历史年代与现存主体依据",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "署名实地建筑记录，明确香阜宫与后殿之别",
+      "url": "https://www.sina.cn/news/detail/4557036378922088.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "净觉寺",
+    "short": "净觉寺",
+    "sub": "香阜宫与前出卷棚抱厦",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代重修遗构",
+    "year": 1800,
+    "yearLabel": "清代重修遗构",
+    "yearApprox": true,
+    "yearNote": "省文物局以清代认定现存寺院建筑；1800仅为清代约值排序，未找到香阜宫单栋精确营建年，不使用唐代创建传说作现构纪年。",
+    "province": "河北",
+    "country": "CN",
+    "place": "河北 · 玉田",
+    "placeKey": "hb_yutian",
+    "placeName": "玉田",
+    "lat": 39.81121,
+    "lon": 117.92016,
+    "coordinate_source": "维基百科《净觉寺（玉田）》39°48′40.356″N,117°55′12.576″E，作为寺院独立地点近似定位：https://zh.wikipedia.org/wiki/净觉寺_(玉田) 。",
+    "lede": "玉田净觉寺的正殿香阜宫前出卷棚抱厦，石柱、木架与宽阔屋面相接，呈现清代重修寺院细致的装饰和构造。",
+    "facts": [
+      {
+        "label": "断代",
+        "text": "现存主体按清代遗构收录，年代取约值；寺院早期创建记载不等于现殿营建年。"
+      },
+      {
+        "label": "正殿",
+        "text": "所绘香阜宫为歇山顶木构正殿，前有卷棚抱厦，与后院重檐歇山大雄宝殿不同。"
+      },
+      {
+        "label": "院落",
+        "text": "寺内山门、过门碑楼和钟鼓楼形制各异，本图只选正殿，不将碑楼误作塔或主殿。"
+      }
+    ],
+    "types": [
+      "hall"
+    ]
+  },
+  "coordinates": {
+    "lat": 39.81121,
+    "lon": 117.92016,
+    "source": "维基百科《净觉寺（玉田）》39°48′40.356″N,117°55′12.576″E，作为寺院独立地点近似定位：https://zh.wikipedia.org/wiki/净觉寺_(玉田) 。"
+  },
+  "quality_check": {
+    "viewed_inputs": true,
+    "viewed_output": true,
+    "complete_silhouette": true,
+    "notes": "参考蓝灯心绒2020署名手机实拍，原片横向存储已由内置imagegen辨正；两重可见屋面、门廊和台阶完整，无字。"
+  },
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-0257d0e8-915d-4788-8c12-6089ea500082.png",
+  "checked_on": "2026-09-15"
+}

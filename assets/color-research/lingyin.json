@@ -1,0 +1,79 @@
+{
+  "id": "lingyin",
+  "name": "杭州灵隐寺石塔与经幢",
+  "subject": "灵隐寺石塔与经幢 · 各取一座对照",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/lingyin.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/lingyin-color-tower.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/lingyin-color-pillar.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 灵隐寺石塔与经幢 · 各取一座对照.\nOBSERVED MATERIAL COLORS: Two contemporary photographs dated 23 April 2026 show Lingyin's west stone pagoda and east stone dharani pillar. The left pagoda's aged carved stone is muted warm grey/brown-grey with a faint dusty mauve cast, lighter worn exposed relief edges, and deep charcoal grey under each carved eave. Treat both roofs and shafts as carved stone, not glazed tiles or timber. The right dharani pillar has a much paler cooler grey long inscription shaft, subtle cream/beige wear on some cap faces, darker weathered charcoal/brown-grey layered cap and ledge shadows, and sparse muted grey-green growth only at damp joins/ledges. No gilt or painted red structure is supported. Color photographs guide material translation only; the master was drawn from 1918 historical photographs, so modern repaired geometry and inscriptions must not replace the historic master's simplified shapes.\nSPECIFIC GEOMETRY LOCK: Keep the exact landscape comparative plate in image 1: precisely ONE taller nine-storey octagonal stone pagoda on the left, and ONE shorter dharani stone pillar on the right; keep all nine diminishing occupied pagoda tiers, the original damaged low top including small irregular remnant, thin stone roof contours, square base, carved bracket outlines, and small opening locations. On the right retain the long largely plain faceted shaft, its exact height and width, layered stepped base and ornate short stacked cap with the original incomplete top outline. Preserve alignment of bases, relative heights, inter-object gap and all margins; these are an illustrative comparison, not measured original site placement. Do not turn the pillar into another pagoda, add/repair finials, add dense scripture or figures absent from the line master, or import 2026 reconstruction shapes. Remove all yellow temple walls, gates, plants, fences, cameras and people seen only in reference photos.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Two contemporary photographs dated 23 April 2026 show Lingyin's west stone pagoda and east stone dharani pillar. The left pagoda's aged carved stone is muted warm grey/brown-grey with a faint dusty mauve cast, lighter worn exposed relief edges, and deep charcoal grey under each carved eave. Treat both roofs and shafts as carved stone, not glazed tiles or timber. The right dharani pillar has a much paler cooler grey long inscription shaft, subtle cream/beige wear on some cap faces, darker weathered charcoal/brown-grey layered cap and ledge shadows, and sparse muted grey-green growth only at damp joins/ledges. No gilt or painted red structure is supported. Color photographs guide material translation only; the master was drawn from 1918 historical photographs, so modern repaired geometry and inscriptions must not replace the historic master's simplified shapes.",
+  "references": {
+    "original_record": "assets/research/lingyin.json",
+    "selected_photo_files": [
+      "assets/references/lingyin-color-tower.jpg",
+      "assets/references/lingyin-color-pillar.jpg"
+    ],
+    "photo_sources": [
+      {
+        "file": "assets/references/lingyin-color-tower.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260423_Stone_Pagodas_of_Lingyin_Temple_01.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/20260423_Stone_Pagodas_of_Lingyin_Temple_01.jpg/960px-20260423_Stone_Pagodas_of_Lingyin_Temple_01.jpg",
+        "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/20260423_Stone_Pagodas_of_Lingyin_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "2026-04-23",
+        "description": "杭州灵隐寺西石塔；当前实拍作石材颜色参考。"
+      },
+      {
+        "file": "assets/references/lingyin-color-pillar.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260423_Stone_Dhvaja_of_Lingyin_Temple_03.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/20260423_Stone_Dhvaja_of_Lingyin_Temple_03.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "2026-04-23",
+        "description": "杭州灵隐寺东侧石经幢；当前实拍作石材颜色参考。"
+      }
+    ],
+    "additional_sources": [],
+    "note": "两张2026年彩照均已实际查看。图版几何仍锁定由1918年黑白照片概括的原线稿；2026年对应石塔、经幢的现状材色用于艺术转译，不以现代修缮形制替换历史轮廓，也不宣称1918年颜色考证。",
+    "historical_geometry_record": "assets/research/lingyin.json"
+  },
+  "original_research": "assets/research/lingyin.json",
+  "output": "assets/colored/lingyin.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-fc142204-c09c-4194-b32c-0149c6e9aae2.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 灵隐寺石塔与经幢 · 各取一座对照.\nOBSERVED MATERIAL COLORS: Two contemporary photographs dated 23 April 2026 show Lingyin's west stone pagoda and east stone dharani pillar. The left pagoda's aged carved stone is muted warm grey/brown-grey with a faint dusty mauve cast, lighter worn exposed relief edges, and deep charcoal grey under each carved eave. Treat both roofs and shafts as carved stone, not glazed tiles or timber. The right dharani pillar has a much paler cooler grey long inscription shaft, subtle cream/beige wear on some cap faces, darker weathered charcoal/brown-grey layered cap and ledge shadows, and sparse muted grey-green growth only at damp joins/ledges. No gilt or painted red structure is supported. Color photographs guide material translation only; the master was drawn from 1918 historical photographs, so modern repaired geometry and inscriptions must not replace the historic master's simplified shapes.\nSPECIFIC GEOMETRY LOCK: Keep the exact landscape comparative plate in image 1: precisely ONE taller nine-storey octagonal stone pagoda on the left, and ONE shorter dharani stone pillar on the right; keep all nine diminishing occupied pagoda tiers, the original damaged low top including small irregular remnant, thin stone roof contours, square base, carved bracket outlines, and small opening locations. On the right retain the long largely plain faceted shaft, its exact height and width, layered stepped base and ornate short stacked cap with the original incomplete top outline. Preserve alignment of bases, relative heights, inter-object gap and all margins; these are an illustrative comparison, not measured original site placement. Do not turn the pillar into another pagoda, add/repair finials, add dense scripture or figures absent from the line master, or import 2026 reconstruction shapes. Remove all yellow temple walls, gates, plants, fences, cameras and people seen only in reference photos.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/lingyin.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/lingyin-color-tower.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/lingyin-color-pillar.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-fc142204-c09c-4194-b32c-0149c6e9aae2.png",
+      "generated_at": "2026-09-15T13:20:59.200236+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "左九层八角石塔、右长身经幢的双体并置、相对高度、间距及各自残存顶部与底脚与线稿一致。",
+      "实看2026年两张实景彩照：石塔采用较暖灰褐风化石色，经幢长柱采用较浅冷灰色，檐与叠置幢冠暗灰层次清楚；未借用背景黄墙或树木绿色。",
+      "维持1918年照片形成的原线稿几何，只借2026年现状材色；不是1918年颜色复原，也未将现代修缮形制替换进图版。",
+      "黑色纯净背景，无场景、人物、文字；纹理为照片支持的艺术概括而非文物表面测绘。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

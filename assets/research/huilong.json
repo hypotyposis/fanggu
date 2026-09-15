@@ -1,0 +1,86 @@
+{
+  "id": "huilong",
+  "subject": "平顺侯壁村回龙寺正殿",
+  "caption": [
+    "正殿线稿 · 面阔三间",
+    "单檐悬山 · 宋金之际"
+  ],
+  "source_page": "https://www.sohu.com/a/800467484_428863",
+  "image_url": "https://q7.itc.cn/images01/20240813/c3b008276adb46b7914204da315d5dcf.jpeg",
+  "author": "申威隆（文章署名；图片水印为“关中拍客”）",
+  "license": "未标明开放许可；仅作形制参考",
+  "license_url": null,
+  "sources": [
+    {
+      "role": "主参考：2024年正面实拍",
+      "source_page": "https://www.sohu.com/a/800467484_428863",
+      "image_url": "https://q7.itc.cn/images01/20240813/c3b008276adb46b7914204da315d5dcf.jpeg",
+      "author": "申威隆（文章署名；图片水印为“关中拍客”）",
+      "license": "未标明开放许可；仅作形制参考",
+      "license_url": null,
+      "file": "assets/references/huilong-photo.jpg",
+      "dimensions": {
+        "width": 1080,
+        "height": 720
+      }
+    },
+    {
+      "role": "辅助参考：侧面核对悬山屋顶",
+      "source_page": "https://www.sohu.com/a/800467484_428863",
+      "image_url": "https://q6.itc.cn/images01/20240813/a07f5311eb5140218bdb682c9ccccfcd.jpeg",
+      "author": "申威隆（文章署名；图片水印为“关中拍客”）",
+      "license": "未标明开放许可；仅作形制参考",
+      "license_url": null,
+      "file": "assets/references/huilong-side-photo.jpg",
+      "dimensions": {
+        "width": 1080,
+        "height": 720
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/huilong-photo.jpg",
+    "assets/references/huilong-side-photo.jpg"
+  ],
+  "source_note": "确认为山西平顺县阳高乡侯壁村、浊漳河南岸的回龙寺。2024年正面照片核对三开间、前廊两根八角石柱与两侧包墙柱位置，两窗夹门及四道门簪；侧面照片核对悬山屋顶。生成后检查三开间及两根独立前廊柱，完整轮廓未裁切。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the actual HUILONG TEMPLE main hall 回龙寺正殿 at HOUBI VILLAGE 侯壁村, Pingshun County, on the Zhuozhang River, Shanxi, Jin-era. Image 2 is its actual almost frontal photograph (2024) and controls the full facade. Image 3 shows its side exterior to confirm the simple suspended-gable roof, not a hip-and-gable roof. Draw the small SINGLE STOREY, exactly THREE BAY building, a deep open front porch with EXACTLY TWO slender octagonal stone columns inside the facade, standing between TWO masonry end piers/walls. So FOUR roof support positions across the front: left rectangular masonry pier, slender octagonal column, slender octagonal column, right rectangular masonry pier. Behind this porch are two squared barred windows flanking ONE closed double doorway, with 4 round door studs across the lintel; plain masonry wall. Two long horizontal timber beams cross above the porch, simple ancient brackets ONLY over the four support positions, no intermediate dougong clusters. The octagonal stone columns have small square stepped bases; preserve them. Low rectangular stone plinth with one/two shallow steps, not a grand staircase. Roof is a single broad suspended-gable (悬山) sloping roof, simple LONG rectangular roof plane and gently lifted eave ends. There are no diagonal hip ridges, no central front gable, no second roof tier. Preserve the squat ridge-end ornaments and small upturned outer tip ornaments seen in Image 2. Give a clean complete straight-on elevation at facade level, full roof edges uncropped despite the photo touching them. Remove the perimeter walls obscuring the sides, all mountains/sky, fire extinguishers, brooms, signs, litter and supplies. Remove inscriptions and watermark. Delicate thin organic ink outline like Image 1. Sparse line density: walls white and untextured, roof white with only 8-12 widely spaced contours; don't fill every roof tile. No dark fills or shading under eaves or inside windows. Landscape 1536×1024, entire hall occupying 82% width with complete silhouette and 9% empty margin each side.",
+  "generated_file": "assets/generated/huilong.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "recommended_content": {
+    "name": "回龙寺",
+    "placeKey": "pingshun",
+    "dynasty": "jin",
+    "era": "北宋末—金初",
+    "date_note": "国保公布年代为金；研究及木柱外皮碳十四测年转述为北宋晚期至金初。未找到可独立查验的测年原报告，不采用精确建造年。",
+    "body": "浊漳河南岸的侯壁村，回龙寺仅存一座正殿。三间悬山小殿前设廊，两根石柱承接古朴斗栱；柱头不设普柏枋、阑额至角柱不出头，保留着早期营造手法。殿内尚有清代壁画。",
+    "architecture": "单檐悬山 · 面阔三间 · 进深四椽 · 前廊两根八角石柱"
+  },
+  "historical_sources": [
+    {
+      "title": "国务院关于核定并公布第六批全国重点文物保护单位的通知",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html",
+      "publisher": "文化和旅游部（转载国务院文件）",
+      "evidence": "第六批393，Ⅲ－96，回龙寺，时代金，山西省平顺县。"
+    },
+    {
+      "title": "长治市：寻访金代回龙寺",
+      "url": "https://www.sohu.com/a/800467484_428863",
+      "author": "申威隆",
+      "published": "2024-08-13",
+      "evidence": "说明三开间四椽、前檐明间两根八角石柱，并结合建筑形制及木柱外皮碳十四测年结果，判断北宋晚期至金初；这是作者转述，未据此编造确定年代。"
+    },
+    {
+      "title": "山西平顺两座金元国保抢修完毕",
+      "url": "https://collection.sina.com.cn/yjjj/20140525/0844152743.shtml",
+      "publisher": "新华社（太原晚报／新浪转载）",
+      "published": "2014-05-25",
+      "author": "王学涛、晏国政",
+      "evidence": "回龙寺仅存金代风格佛殿，单檐悬山、三间四椽；柱头不施普柏枋、阑额至角柱不出头，抢修工程完成。"
+    }
+  ]
+}

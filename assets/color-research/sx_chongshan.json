@@ -1,0 +1,71 @@
+{
+  "id": "sx_chongshan",
+  "name": "太原崇善寺",
+  "subject": "太原崇善寺大悲殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_chongshan.png",
+    "assets/references/sx_chongshan-photo.jpg",
+    "assets/references/sx_chongshan-alt-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 太原崇善寺大悲殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Taiyuan Chongshan Temple Dabeidian only. Photographs show cool gray tile roofs with subdued pale green-gray glazed eave discs; upper timber/bracket structure is weathered gray-brown with dark, sparse blue-green pigment traces. Lower columns and window frames are mostly grayish weathered wood, while lower wall panels retain muted dusty burgundy-red paint. The lattice window panes look pale ivory/white with dark grids; these are closed panels, not all empty gaps. Center door is aged dark brown-gray, discreet muted red trim; gray stone column bases and platform. Preserve exactly 7 bays and 8 front columns, two roofs, central blank hanging plaque. Do not color the foreground unrelated bright red column, lamps, flags or incense furniture from photo.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "查看两张2013日间大悲殿照。灰瓦略青绿瓦当，梁架灰褐旧木、暗蓝绿残彩；下部裙板褪色酒红，窗格灰褐配浅白窗面，台基灰石。照片前景鲜红柱属邻殿，未作为大悲殿柱色。",
+  "references": [
+    {
+      "file": "assets/references/sx_chongshan-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Taiyuan_Chongshan_Si_2013.08.27_15-15-44.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Taiyuan_Chongshan_Si_2013.08.27_15-15-44.jpg/960px-Taiyuan_Chongshan_Si_2013.08.27_15-15-44.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2013-08-27",
+      "dimensions": {
+        "width": 960,
+        "height": 640
+      },
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "file": "assets/references/sx_chongshan-alt-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Taiyuan_Chongshan_Si_2013.08.27_15-15-17.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Taiyuan_Chongshan_Si_2013.08.27_15-15-17.jpg/960px-Taiyuan_Chongshan_Si_2013.08.27_15-15-17.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2013-08-27",
+      "dimensions": {
+        "width": 960,
+        "height": 640
+      },
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/sx_chongshan.json",
+  "output": "assets/colored/sx_chongshan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-bc2f9574-cdf0-48a8-8774-ed1604ea854f.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已查看：七间八柱、两重檐和中央门保持；屋瓦冷灰、构架灰褐、裙板暗红，窗面浅白并保留细格；未把前景邻殿红柱、香炉或彩旗引入。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 太原崇善寺大悲殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Taiyuan Chongshan Temple Dabeidian only. Photographs show cool gray tile roofs with subdued pale green-gray glazed eave discs; upper timber/bracket structure is weathered gray-brown with dark, sparse blue-green pigment traces. Lower columns and window frames are mostly grayish weathered wood, while lower wall panels retain muted dusty burgundy-red paint. The lattice window panes look pale ivory/white with dark grids; these are closed panels, not all empty gaps. Center door is aged dark brown-gray, discreet muted red trim; gray stone column bases and platform. Preserve exactly 7 bays and 8 front columns, two roofs, central blank hanging plaque. Do not color the foreground unrelated bright red column, lamps, flags or incense furniture from photo.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/sx_chongshan.png",
+        "assets/references/sx_chongshan-photo.jpg",
+        "assets/references/sx_chongshan-alt-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-bc2f9574-cdf0-48a8-8774-ed1604ea854f.png",
+      "output": "assets/colored/sx_chongshan.png"
+    }
+  ]
+}

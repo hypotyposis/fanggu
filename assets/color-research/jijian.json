@@ -1,0 +1,55 @@
+{
+  "id": "jijian",
+  "name": "寂鉴寺石殿",
+  "subject": "苏州天池山寂鉴寺西天寺石殿（1357）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jijian.png",
+    "assets/references/jijian-photo.jpg",
+    "assets/references/jijian-second-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nJijian Temple Xitiansi STONE hall, preserve exact three-bay low hall, large stone roof slabs, upturned stone edges, FOUR stone columns and original door openings. All structural posts/beams/roof/ridge are weathered grey-beige stone, no wood brackets or roof tiles. Roof slab surface darker grey-brown with restrained irregular dull olive moss patches as photos; stone facade neutral grey-tan with limited ochre staining. Door frames and two narrow central panels faded dark red paint, opened side wooden door leaves weathered grey-brown. Preserve all slots in narrow panels; interiors black. Do not copy yellow adjacent temple walls, tree, statues, objects, gold text or inscription.",
+  "material_observations": "石殿主体灰米、灰褐风化石材，石板屋面较深灰褐且有局部暗绿苔，门框与中间竖板残暗红漆，侧门旧灰褐木。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:寂鉴寺石殿外部2023.3_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/%E5%AF%82%E9%89%B4%E5%AF%BA%E7%9F%B3%E6%AE%BF%E5%A4%96%E9%83%A82023.3_%281%29.jpg/1280px-%E5%AF%82%E9%89%B4%E5%AF%BA%E7%9F%B3%E6%AE%BF%E5%A4%96%E9%83%A82023.3_%281%29.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/jijian-photo.jpg",
+      "dimensions": [
+        1280,
+        829
+      ],
+      "date": "2024-03-03（页面EXIF；文件名误写2023.3）",
+      "note": "西天寺石殿实景；第一张为完整正面，第二张为无树干遮挡的较近前视；共同作几何依据。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:寂鉴寺石殿外部2023.3_(2).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/%E5%AF%82%E9%89%B4%E5%AF%BA%E7%9F%B3%E6%AE%BF%E5%A4%96%E9%83%A82023.3_%282%29.jpg/1280px-%E5%AF%82%E9%89%B4%E5%AF%BA%E7%9F%B3%E6%AE%BF%E5%A4%96%E9%83%A82023.3_%282%29.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/jijian-second-photo.jpg",
+      "dimensions": [
+        1280,
+        751
+      ],
+      "date": "2024-03-03（页面EXIF；文件名误写2023.3）",
+      "note": "西天寺石殿实景；第一张为完整正面，第二张为无树干遮挡的较近前视；共同作几何依据。"
+    }
+  ],
+  "output": "assets/colored/jijian.png",
+  "width": 1536,
+  "height": 1024,
+  "worker": "main",
+  "prepared_at": "2026-09-15T11:54:14.380Z",
+  "input_review": "本任务已逐张实看线稿、列出的实拍和佛光寺风格样本。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-ac7da533-8da7-4c3c-9673-fc738333aaec.png",
+  "generated_at": "2026-09-15T12:04:49.692516+00:00",
+  "visual_review": "已实看：三间石殿、四柱、大片石板屋面与翘角保持；灰米石身、局部暗绿苔、褪红门板及灰褐侧门对应两张实拍；无邻殿黄墙、树木及室内陈设。 未做色彩校准或逐像素对齐。",
+  "completed_at": "2026-09-15T12:18:32.132029+00:00"
+}

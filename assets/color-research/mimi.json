@@ -1,0 +1,42 @@
+{
+  "id": "mimi",
+  "name": "繁峙秘密寺",
+  "subject": "繁峙秘密寺文殊殿",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/mimi.png",
+    "assets/references/mimi-front-photo.jpg",
+    "assets/references/mimi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 繁峙秘密寺文殊殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST line master's five-bay hall, SIX front column axes, single broad flush-gable roof, central doorway, low lateral white railings and centered stairs. Roof tiles and ridge beasts pale weathered neutral gray, gable piers gray brick. Timber posts and door frames faded dusty red/maroon with gray-brown exposed wood; lattice subdued gray wood over dark recesses. Two narrow painted horizontal board bands are weathered gray-brown and faded muted green/turquoise with tiny dusty pink/ochre traces, not brilliant gold. Terrace masonry pale gray-buff, stair treads neutral gray, stone rails chalk white with gray aging. No added plaque, figures, text, incense burner or foreground stele. Not a gold hall. Existing empty central door remains dark; retain original full facade and margins.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看五间文殊殿原稿、近正面及远景实拍和风格样本。屋瓦、脊兽灰白，山墙柱墩灰砖；柱和门褪色暗红/粉红，旧木灰褐。廊下木板画为灰褐底、残绿青及细小淡红赭痕。台基浅灰赭石、台阶灰石、栏杆白灰。照片正常日间，近景摄影时间未知，2016年页面发布信息不冒作拍摄日期。",
+  "references": [
+    {
+      "source_page": "https://loloto.pixnet.net/blog/post/44597695",
+      "image_url": "https://pic.pimg.tw/loloto/1480691881-579212381_l.jpg",
+      "author": "Boyce／Master旅人時光",
+      "license": "照片未标注开放许可；仅作建筑形制研究参考",
+      "date": "未知"
+    },
+    {
+      "source_page": "https://www.sohu.com/a/895155741_121124715",
+      "image_url": "https://q2.itc.cn/q_70/images03/20250514/b8a9a4956b2743e69367ad1d58b1976e.jpeg",
+      "author": "中式营造（图中署名，搜狐《考察遇建》刊载）",
+      "license": "未标注开放许可",
+      "supports": "文殊殿全貌、台基与五间立面。",
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/mimi.png",
+  "prepared_at": "2026-09-15T19:38:30.402556+08:00",
+  "original_research": "assets/research/mimi.json",
+  "visual_review": "已实看本次生成图：五间六柱轴、单檐硬山、两道窄画板及中央阶梯完整；灰瓦、褪红木作、残青绿色画板及灰白栏台材料分区正确。装饰与风化纹理较线稿更丰富，属艺术概括；未添匾字、香炉或碑亭。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-570f8e57-adcf-4afd-8a0f-9f75ea472ea8.png",
+  "generated_at": "2026-09-15T19:40:59.421336+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T19:41:40.351990+08:00"
+}

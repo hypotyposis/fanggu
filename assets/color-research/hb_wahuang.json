@@ -1,0 +1,75 @@
+{
+  "id": "hb_wahuang",
+  "name": "娲皇宫及石刻",
+  "subject": "娲皇宫及石刻 · 悬崖前娲皇阁及承托石券",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_wahuang.png",
+    "assets/references/hb_wahuang-pavilion-photo.jpg",
+    "assets/references/hb_wahuang-pavilion2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 娲皇宫及石刻 · 悬崖前娲皇阁及承托石券.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST line's exact front view of Wahuang Pavilion: three stepped upper roof bands plus the lowest broad porch roof, tall front posts and low stone railing. It is a close upward-view cliff pavilion, not a full lofty stone arch bridge complex. Current materials from photos: tiles and ridge ornaments gray/charcoal with tiny dark green tile-edge tones, NOT yellow tile; posts muted dusky red. Painted under-eave brackets and beams alternate deep cobalt blue, dark jade green, pale cream outline and small ochre motif accents, dark red rafters. Dark open porch behind. Railing and platform weathered pale gray stone, sparse rock behind gray-buff and neutral taupe. Tint only limited rock around line outline, keep external background near-black and generous margins. No red lanterns, lettering, smoke, people, foreground neighboring roofs or added arch supports. Important keep all FOUR roof bands and broad front porch as master; requested original canvas aspect ratio exactly 4:3, not a tall pagoda.\nPreserve the original line master aspect ratio 1448:1086.",
+  "material_observations": "已查看原稿及2025年5月3日两张近正面仰视实拍。灰黑瓦、暗红柱、蓝绿斗栱与浅色饰线，石栏浅灰、岩壁灰黄褐，均可辨；排除红灯笼、香烟及游客，不把灯笼红误染屋面。所画限现稿的阁体与前廊，保持四道檐带。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wahuang_Pavilion_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Wahuang_Pavilion_1.jpg",
+      "author": "H2v5o68z",
+      "date": "3 May 2025, 12:58:12",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license": "CC0 1.0",
+      "reference_file": "assets/references/hb_wahuang-pavilion-photo.jpg",
+      "reference_dimensions": {
+        "width": 4000,
+        "height": 3000
+      },
+      "file": "assets/references/hb_wahuang-pavilion-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wahuang_Pavilion_2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Wahuang_Pavilion_2.jpg",
+      "author": "H2v5o68z",
+      "date": "3 May 2025, 12:58:29",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license": "CC0 1.0",
+      "reference_file": "assets/references/hb_wahuang-pavilion2-photo.jpg",
+      "reference_dimensions": {
+        "width": 4000,
+        "height": 3000
+      },
+      "file": "assets/references/hb_wahuang-pavilion2-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/hb_wahuang.json",
+  "output": "assets/colored/hb_wahuang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d3ea4d08-adf8-44da-a021-7eb891bc7b93.png",
+  "width": 1448,
+  "height": 1086,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：四道檐带、下层前廊和六前柱石栏完整，红木、蓝绿斗栱、灰瓦分区对应实拍，未加灯笼或文字。灰褐岩片比原线稿线条更多，但保留为周围暗底中的局部；画布保持4:3原比例。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 娲皇宫及石刻 · 悬崖前娲皇阁及承托石券.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST line's exact front view of Wahuang Pavilion: three stepped upper roof bands plus the lowest broad porch roof, tall front posts and low stone railing. It is a close upward-view cliff pavilion, not a full lofty stone arch bridge complex. Current materials from photos: tiles and ridge ornaments gray/charcoal with tiny dark green tile-edge tones, NOT yellow tile; posts muted dusky red. Painted under-eave brackets and beams alternate deep cobalt blue, dark jade green, pale cream outline and small ochre motif accents, dark red rafters. Dark open porch behind. Railing and platform weathered pale gray stone, sparse rock behind gray-buff and neutral taupe. Tint only limited rock around line outline, keep external background near-black and generous margins. No red lanterns, lettering, smoke, people, foreground neighboring roofs or added arch supports. Important keep all FOUR roof bands and broad front porch as master; requested original canvas aspect ratio exactly 4:3, not a tall pagoda.\nPreserve the original line master aspect ratio 1448:1086.",
+      "input_images": [
+        "assets/generated/hb_wahuang.png",
+        "assets/references/hb_wahuang-pavilion-photo.jpg",
+        "assets/references/hb_wahuang-pavilion2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d3ea4d08-adf8-44da-a021-7eb891bc7b93.png",
+      "output": "assets/colored/hb_wahuang.png"
+    }
+  ]
+}

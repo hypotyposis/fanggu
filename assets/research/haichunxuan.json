@@ -1,0 +1,76 @@
+{
+  "subject": "东台海春轩塔",
+  "caption": [
+    "海春轩塔 · 七级八角",
+    "唐代古塔 · 宋代修葺"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/haichunxuan-photo.jpg",
+      "source_page": "https://jsnews.jschina.com.cn/kjwt/202510/t20251020_s68f5f34be4b0b84e8c6fc3e2.shtml",
+      "image_url": "https://jcdn.xhby.net/dams-res/editing/image/202510/20/yZogoOa6uUiyImpDhuSyqnzc.jpeg?image_process=resize%2Cw_800%2Fformat%2Cjpg",
+      "author": "图片署名：盐城发布、盐城文旅、盐城宣传（交汇点新闻 / 中国江苏网）",
+      "license": "来源页未标注开放许可；仅作为建筑形制参考",
+      "license_url": "https://jsnews.jschina.com.cn/kjwt/202510/t20251020_s68f5f34be4b0b84e8c6fc3e2.shtml"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "第七批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
+    },
+    {
+      "title": "海春轩塔入选淮盐文物主题游径",
+      "url": "https://www.dongtai.gov.cn/art/2024/7/19/art_7763_4213979.html"
+    },
+    {
+      "title": "海春轩塔入选第七批国保",
+      "url": "https://mzzjj.yancheng.gov.cn/art/2013/5/14/art_2279_598795.html"
+    },
+    {
+      "title": "西溪景区",
+      "url": "https://www.dongtai.gov.cn/art/2022/1/18/art_7679_1073663.html"
+    }
+  ],
+  "source_note": "据中国江苏网实拍概括七层砖塔现状。国保名单断代为唐，地方资料记建于唐、修于宋；尉迟敬德监造是县志传说，不据此虚设627为确切开工年。",
+  "site_recommendation": {
+    "name": "东台海春轩塔",
+    "short": "海春轩塔",
+    "sub": "西溪 · 广福寺塔",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐建宋修 · 始建确年待考",
+    "year": 750,
+    "yearLabel": "唐建宋修",
+    "yearApprox": true,
+    "yearNote": "750仅作唐代中段的年表约略定位，不代表有证据的营建年；尉迟敬德监造仅作为传说沿革。",
+    "place": "江苏东台 · 西溪",
+    "province": "江苏",
+    "placeKey": "dongtai",
+    "lat": 32.83400416,
+    "lon": 120.2833575,
+    "latlon_source": "https://zh.wikipedia.org/wiki/海春轩塔",
+    "lede": "西溪水畔，七级砖檐层层收分，塔身轮廓简朴而陡峭。海春轩塔见证了江淮盐场与海岸变迁，也留下唐建宋修的长期累积。",
+    "facts": [
+      "<b>断代</b>国保名录列为唐代，地方资料记宋代修葺；具体始建年尚不据传说定论。",
+      "<b>形制</b>七层八角砖塔，高约20.8米，低层墙身高大，上层密集收分并设小龛。",
+      "<b>名称</b>又称广福寺塔、尉迟塔；县志所记尉迟敬德监造为传说沿革，现存砖身与外部轮廓须结合历代修缮理解。"
+    ]
+  },
+  "id": "haichunxuan",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/haichunxuan-photo.jpg"
+  ],
+  "prompt": "Use case: style transfer, a single architectural contour illustration of 东台海春轩塔 Haichunxuan Pagoda. Image1 is ONLY the fine-line style master. Image2 is ONLY the actual monument geometry. Draw exactly this squat tapered OCTAGONAL SEVEN-STOREY solid-looking brick pagoda: tall plain bottom shaft with the photographed blank recessed panel, six shorter diminishing upper wall sections with small arched niches, seven close-set overhanging modest flat brick eaves, pyramidal tiled cap with short gourd-shaped finial. Match its simple broad pyramidal silhouette and steep taper, NO timber balconies, NO curved flying eaves, NO giant generic multi-ring spire, NO additional tiers. Remove sky, birds, trees, fences, nearby temple, lawn and signs. Draw complete structure uncut and approximately frontal, vertical edges vertical, fine BLACK organic outlines on pure WHITE; all niches white with black outline only. Keep broad white wall planes and only main eave edge contours, OMIT ALL brick texture, repetitive tile textures, hatched eave shadows and gradients. Extremely spare and elegant, comparable in visual density to image1; no heavy engraving. Portrait1024x1536, tower about80% canvas height with ample top/bottom/side margins. No text or framing.",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/haichunxuan.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-255081fd-6734-4217-aa4a-b0a5509255b6.png"
+}

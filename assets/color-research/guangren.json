@@ -1,0 +1,49 @@
+{
+  "id": "guangren",
+  "name": "芮城广仁王庙",
+  "subject": "芮城广仁王庙正殿（龙王殿）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/guangren.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/guangren-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: guangren.\nOBSERVED MATERIAL COLORS: Overcast daylight shows ordinary gray roof tiles and ridge ornaments, deep muted wine-red painted brackets and beam strips, off-white plaster panels among them, ochre/tan exposed brick front wall, dark burgundy window bars and door surround. Plinth is dark gray brick with tan worn patches; central steps neutral gray stone. All matte, not golden overall.\nSPECIFIC GEOMETRY LOCK: Wide five-bay single-roof hall front, three openings: one door and two barred windows. Keep six bracket groups and broad low roof. No visible free columns should be invented over the solid wall. Roof ornaments gray, masonry muted ochre, door dark.",
+  "material_observations": "Overcast daylight shows ordinary gray roof tiles and ridge ornaments, deep muted wine-red painted brackets and beam strips, off-white plaster panels among them, ochre/tan exposed brick front wall, dark burgundy window bars and door surround. Plinth is dark gray brick with tan worn patches; central steps neutral gray stone. All matte, not golden overall.",
+  "references": {
+    "original_record": "assets/research/guangren.json",
+    "selected_photo_files": [
+      "assets/references/guangren-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:广仁王庙正面.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/%E5%B9%BF%E4%BB%81%E7%8E%8B%E5%BA%99%E6%AD%A3%E9%9D%A2.jpg",
+        "author": "Patrick20242023",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "reference_file": "assets/references/guangren-photo.jpg",
+        "note": "2024年4月1日摄，Commons精确文件页核实；现状正面，左檐树木遮挡处以同栋清楚右檐作对称轮廓补全。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/guangren.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-66ead40d-09b5-4325-b398-583e7fe8cf0b.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看线稿、阴天正面实拍、风格样本与输出。",
+      "保持单檐宽殿、两窗一门与六组铺作，未添立柱。",
+      "灰瓦、褐黄砖、暗红梁枋门窗、灰砖石台与照片分区对应；无文字景物。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

@@ -1,0 +1,102 @@
+{
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "id": "jinhuatianning",
+  "subject": "金华天宁寺大殿",
+  "caption": [
+    "金华天宁寺 · 大殿",
+    "元延祐五年 · 单檐歇山"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:202308_Great_Hall_of_Tianning_Temple,_Jinhua.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/202308_Great_Hall_of_Tianning_Temple%2C_Jinhua.jpg/1280px-202308_Great_Hall_of_Tianning_Temple%2C_Jinhua.jpg",
+  "author": "MNXANL",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jinhuatianning-photo.jpg",
+    "assets/references/jinhuatianning-alt-photo.jpg"
+  ],
+  "reference_dimensions": [
+    {
+      "file": "assets/references/jinhuatianning-photo.jpg",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "file": "assets/references/jinhuatianning-alt-photo.jpg",
+      "width": 1280,
+      "height": 853
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jinhuatianning-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:202308_Great_Hall_of_Tianning_Temple,_Jinhua.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/202308_Great_Hall_of_Tianning_Temple%2C_Jinhua.jpg/1280px-202308_Great_Hall_of_Tianning_Temple%2C_Jinhua.jpg",
+      "author": "MNXANL",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "file": "assets/references/jinhuatianning-alt-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jinhua_Tianning_Si_2012.02.18_14-48-51.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Jinhua_Tianning_Si_2012.02.18_14-48-51.jpg/1280px-Jinhua_Tianning_Si_2012.02.18_14-48-51.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "source_note": "2023及2012正面照片相互补足树木遮挡处，核对单檐、三开间、宽明间、窗格及中央石阶。仅绘大殿，移除树木和周边建筑。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: only the surviving MAIN HALL of Tianning Temple in Jinhua, Zhejiang 金华天宁寺大殿. Image2 is a 2023 frontal photo with trees partly obscuring corners; image3 is a 2012 frontal photo with better full roof contour. Preserve the exact THREE structural bays, central bay wider than the side bays; a central doorway with two door leaves on either side, a horizontal row of square transom windows above, and two tall lattice-window panels in each side bay over low white infill. Exactly ONE roof/eave tier, hipped-and-gabled with strongly lifted corners and two small ridge-end ornaments. Plain exposed large bracket sets run across a narrow white band immediately below the eaves. Compact square hall sitting on one low stone podium with a broad central flight of steps. No second roof, no bell tower, no surrounding pavilions. Remove ALL trees, bushes, tree supports, signs, rear buildings, fences and people. White surfaces within every window grid, no fill/shadow. Grid simplified to a few thin vertical and horizontal marks, not dense black pattern. Roof mostly white with at most 14 faint curved guiding lines. Landscape1536x1024, complete hall at82%width with blank margin around all roof tips and base.",
+  "generated_file": "assets/generated/jinhuatianning.png",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-23cbd7d9-8719-422c-9959-43a6df80eba6.png",
+  "historical_sources": [
+    {
+      "title": "全国重点文物保护单位——金华天宁寺大殿环境整治工程文物影响评估报告",
+      "url": "https://qccdata.qichacha.com/tenderV2Attach/a4fc826c8e9c6db0723c3cfbda62441f.pdf",
+      "publisher": "浙江省古建筑设计研究院，金华市文物局委托，2018年11月",
+      "evidence": "已下载并读取原PDF封面、委托单位及报告第6—8页：元延祐五年（1318）重建，面阔和进深各三间，单檐歇山顶；东首三椽栿下有元代重建墨书题记，现存宋代构件。",
+      "local_file": "assets/research/jinhuatianning-engineering.pdf"
+    },
+    {
+      "title": "天宁寺大殿",
+      "url": "https://www.zgbk.com/ecph/words?ID=288770&SiteID=1",
+      "publisher": "中国大百科全书出版社",
+      "evidence": "可公开读取的条目摘要确认为中国元代佛教寺院建筑，位于金华飘萍路，1988年列入第三批全国重点文物保护单位。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "金华天宁寺",
+    "short": "天宁寺",
+    "sub": "大殿 · 三间元构",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元 · 延祐五年",
+    "year": 1318,
+    "yearLabel": "1318年",
+    "place": "浙江金华 · 古城",
+    "placeKey": "jinhua",
+    "lat": 29.102694,
+    "lon": 119.654278,
+    "latlon_source": "https://zh.wikipedia.org/wiki/天宁寺_(金华)",
+    "lede": "一层长檐高挑，两侧收起轻快的翼角。金华天宁寺大殿只用三间尺度，把宽明间、花格窗与檐下斗栱组织得端正而舒展。",
+    "facts": [
+      {
+        "label": "墨书记年",
+        "text": "梁栿墨书留有元延祐五年（1318）重建题记，成为现存大殿定年的直接线索。"
+      },
+      {
+        "label": "三间单檐",
+        "text": "大殿面阔三间，采用单檐歇山顶，宽明间与侧间窗格形成清晰层次。"
+      },
+      {
+        "label": "国保元构",
+        "text": "天宁寺大殿于1988年列入第三批全国重点文物保护单位，是金华古城的重要元代遗构。"
+      }
+    ]
+  }
+}

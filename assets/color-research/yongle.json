@@ -1,0 +1,47 @@
+{
+  "id": "yongle",
+  "name": "芮城永乐宫",
+  "subject": "芮城永乐宫三清殿（无极殿）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/yongle.png",
+    "assets/references/yongle-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Yongle Palace Sanqing/Wuji Hall, Ruicheng. Keep exact line master's broad seven-bay facade, eight front columns, five middle lattice door groups and two solid end wall bays, low single hip roof, dragons on ridge ends and central broad ramp flanked by two staircases. Roof pale neutral grey clay tiles with dark green glazed ridge/eave strips, tiny green and ochre ceramic ornaments; only faint scattered green glazed tiles within grey roof if visible. Front columns near-black dark brown, door/window wood muted medium dark brown, lattice backing grey-beige. End plaster walls muted deep red, under-eave brackets almost black weathered timber with grey-cream faded painted trims. Foundation grey brick and steps/ramp light grey stone. No hanging calligraphy sign, curtains, lions, incense towers, outdoor altar, trees or people.",
+  "material_observations": [
+    "永乐宫三清殿瓦面浅灰，檐口与脊饰暗绿釉，脊上有少量赭黄装饰。",
+    "柱为近黑褐木色，五间隔扇门窗为暗褐木、格心浅灰米；两端墙体暗红，台基灰砖、中央斜面灰石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/yongle-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:无极之殿正照.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%E6%97%A0%E6%9E%81%E4%B9%8B%E6%AE%BF%E6%AD%A3%E7%85%A7.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/yongle.json",
+  "output": "assets/colored/yongle.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "七开间、五组中间门窗、两端实墙与中央坡道及两侧阶梯对应原稿。",
+      "灰瓦、绿赭脊饰、近黑木柱、棕色隔扇与暗红端墙保留实拍分区。",
+      "主体完整，细线和哑光色面可辨，无牌匾、石狮或香炉等新增物。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T12:25:27.276Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-38b32518-a161-4832-bf8f-0d2ac8704bf6.png",
+  "generated_at": "2026-09-15T12:28:04.536Z",
+  "completed_at": "2026-09-15T12:37:34.592Z"
+}

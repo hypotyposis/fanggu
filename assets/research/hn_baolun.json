@@ -1,0 +1,134 @@
+{
+  "id": "hn_baolun",
+  "subject": "宝轮寺塔 · 南立面",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Baolun_Temple_Pagoda,_Jin_Dynasty,_1177_AD,_Sanmenxia_1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Baolun_Temple_Pagoda%2C_Jin_Dynasty%2C_1177_AD%2C_Sanmenxia_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Gary Todd",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "sources": [
+    {
+      "title": "Baolun Temple Pagoda, Jin Dynasty, 1177 AD, Sanmenxia 1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Baolun_Temple_Pagoda%2C_Jin_Dynasty%2C_1177_AD%2C_Sanmenxia_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Baolun_Temple_Pagoda%2C_Jin_Dynasty%2C_1177_AD%2C_Sanmenxia_1.jpg/1280px-Baolun_Temple_Pagoda%2C_Jin_Dynasty%2C_1177_AD%2C_Sanmenxia_1.jpg",
+      "author": "Gary Todd",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2015-03-20 16:55:18",
+      "reference_file": "assets/references/hn_baolun-wiki-photo.jpg",
+      "description": "Jin Dynasty, Sanmenxia City, Henan, China. Complete indexed photo collection at WorldHistoryPics.com.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Baolun_Temple_Pagoda,_Jin_Dynasty,_1177_AD,_Sanmenxia_1.jpg",
+      "dimensions": [
+        1280,
+        853
+      ]
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_baolun-wiki-photo.jpg",
+    "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-c93400e9-5ac7-470b-83fb-1fc36c2979a7.png"
+  ],
+  "source_note": "依实拍绘现存塔。修正首稿上部多一重檐；最终为上部十三道主要出檐，下部台座檐口单独计，已由父agent独立逐级核对。",
+  "prompt": "Use case: image editing and precise architectural count correction. Image 1 is the sparse thin-black-line on white style master. Image 2 is the actual Baolun Temple Pagoda photograph. Image 3 is the first generated drawing, which is WRONG because it has FIFTEEN major eave stages including the base roof, while the real pagoda has THIRTEEN. Edit image 3 only to correct the tower, using the photo as geometry. Remove TWO complete upper middle low storeys and their corresponding roof bands. The result must have: 1 broad low first storey with arched door and its eave; 1 tall second storey with three narrow window/niche marks and its eave; 11 additional low storeys/eave stages above them; finally the finial, which is not counted as a storey. TOTAL 1+1+11=13. Count this carefully before finishing. Reduce the tower height by the removed two stages rather than stretching all remaining stages. Keep the exact clean sparse black line on pure white style, base silhouette, square plan and door. Keep all upper surfaces white and remove any filled dark holes. Match the compact real silhouette and narrow taper from photo 2, no extra crown roofs. Pure white portrait1024x1536 with wide blank margins, no labels or numbers in image, no hatching or shading.\n",
+  "generated_file": "assets/generated/hn_baolun.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-3fcb0dcf-7aaa-4b7b-8988-7294cb4dc550.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "宝轮寺塔 · 南立面",
+    "金大定十七年（1177） · 方形十三层密檐砖塔"
+  ],
+  "historical_sources": [
+    {
+      "url": "https://www.hada.gov.cn/2022/06-29/154859.html",
+      "title": "河南省档案馆：宝轮寺塔",
+      "supports": "1177重建、正方形十三级密檐、高26.5米、台基台座及回声。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "宝轮寺塔",
+    "short": "宝轮塔",
+    "sub": "十三重檐收成修长塔影",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金 · 大定十七年",
+    "year": 1177,
+    "yearLabel": "1177",
+    "yearApprox": false,
+    "yearNote": "按现存金代重建塔登记，不以唐代旧寺创建年代代替塔年代。",
+    "place": "河南 · 三门峡市湖滨区",
+    "placeName": "三门峡",
+    "placeKey": "hn_sanmenxia",
+    "lat": 34.79166667,
+    "lon": 111.14861111,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/宝轮寺塔",
+    "lede": "金大定十七年，僧智秀重建宝轮寺塔。方形塔身层层收分，十三道密檐在古陕州城内勾出修长轮廓。",
+    "facts": [
+      {
+        "label": "金代重建",
+        "text": "现存塔建于1177年；唐代寺塔沿革与这座金塔分别记录。"
+      },
+      {
+        "label": "十三密檐",
+        "text": "塔高26.5米，砖檐以菱角牙子和叠涩出挑，底部另设台基、台座。"
+      },
+      {
+        "label": "塔内通道",
+        "text": "塔内设塔心室及梯道；回声特点使其俗称蛤蟆塔。"
+      }
+    ],
+    "types": [
+      "pagoda"
+    ],
+    "id": "hn_baolun",
+    "country": "CN",
+    "province": "河南",
+    "caption": [
+      "宝轮寺塔 · 南立面",
+      "金大定十七年（1177） · 方形十三层密檐砖塔"
+    ]
+  },
+  "coordinates": {
+    "lat": 34.79166667,
+    "lng": 111.14861111,
+    "source": "https://zh.wikipedia.org/wiki/宝轮寺塔",
+    "note": "公开地图古迹点位，非测绘成果。"
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT-SPECIFIC INSTRUCTIONS:\nDraw ONLY Baolun Temple Pagoda 宝轮寺塔 in Sanmenxia, Henan, the surviving 1177 Jin brick pagoda. Photo 2 is a clear complete FRONT view. Keep exactly THIRTEEN storeys/eave stages as actually visible, square plan, broad low first storey/pedestal with a central arched door, a taller second tier with a central rectangular window and two narrow blind vertical niches, then the upper densely stacked low storeys with tapering straight corbel eaves and small alternate arched/square holes, crowned by a small bottle-shaped finial. Trace the source silhouette carefully and count the major eave stages from base to tip; do not invent a round or octagonal plan or extra roof. Frontal facade with just a little side depth. Keep the tower taper close to straight rather than rounded like Qiyun. Draw only 2-3 parallel outlines per eave and a few brick-arch outlines around openings; no wall brick grid, no repetitive dog-tooth engraving. All wall planes blank white. Remove trees, people, city background and long path; keep only tower, its modest plinth and a few steps immediately beneath. Full uncut tower with generous white side and top/bottom margins on portrait 1024x1536, sparse thin contour lines. No solid dark doorway, text, shading or hatching.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_baolun-wiki-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-c93400e9-5ac7-470b-83fb-1fc36c2979a7.png",
+      "review": "上部多一重檐，作为修改输入保留。"
+    },
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: image editing and precise architectural count correction. Image 1 is the sparse thin-black-line on white style master. Image 2 is the actual Baolun Temple Pagoda photograph. Image 3 is the first generated drawing, which is WRONG because it has FIFTEEN major eave stages including the base roof, while the real pagoda has THIRTEEN. Edit image 3 only to correct the tower, using the photo as geometry. Remove TWO complete upper middle low storeys and their corresponding roof bands. The result must have: 1 broad low first storey with arched door and its eave; 1 tall second storey with three narrow window/niche marks and its eave; 11 additional low storeys/eave stages above them; finally the finial, which is not counted as a storey. TOTAL 1+1+11=13. Count this carefully before finishing. Reduce the tower height by the removed two stages rather than stretching all remaining stages. Keep the exact clean sparse black line on pure white style, base silhouette, square plan and door. Keep all upper surfaces white and remove any filled dark holes. Match the compact real silhouette and narrow taper from photo 2, no extra crown roofs. Pure white portrait1024x1536 with wide blank margins, no labels or numbers in image, no hatching or shading.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_baolun-wiki-photo.jpg",
+        "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-c93400e9-5ac7-470b-83fb-1fc36c2979a7.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-3fcb0dcf-7aaa-4b7b-8988-7294cb4dc550.png"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体对应实拍",
+      "层数/开间与轮廓核对",
+      "完整留白",
+      "黑线白底，保持母版风格"
+    ],
+    "independent_check": "父agent逐级核对实照与最终图：上部13道主要出檐，另有台座檐口，对应实照。"
+  }
+}

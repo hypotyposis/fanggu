@@ -1,0 +1,66 @@
+{
+  "id": "songyangyanqing",
+  "name": "松阳延庆寺塔",
+  "subject": "松阳延庆寺塔",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/songyangyanqing.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/songyangyanqing-alt-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 松阳延庆寺塔.\nOBSERVED MATERIAL COLORS: Viewed 2022 ordinary daylight complete tower photo. Roofs charcoal grey clay tiles; timber brackets, posts, balcony rails and horizontal bands muted deep red-brown weathered wood. Masonry/plastered tower wall panels pale cream/tan with darker weathering near edges. Lower first-floor infill cream, central closed doors dark grey-brown. Tall iron finial and supporting chains charcoal/black. Base grey stone. Photo has deep eave shade; lighten just enough for legible structure without inventing bright gold or blue-glazed roofing.\nSPECIFIC GEOMETRY LOCK: Exactly seven tower storeys but EIGHT visible eave roofs because lowest storey has an additional surrounding eave. Count and retain all eight source roof silhouettes, six visible upper balcony rail bands, very tall metal spire and support chains, closed central base door and outer posts. No reduced tower levels, no added story. No trees, hedges, path beyond source baseline or sky; preserve portrait margins.\nPreserve original aspect ratio 1024:1536.",
+  "material_observations": "Viewed 2022 ordinary daylight complete tower photo. Roofs charcoal grey clay tiles; timber brackets, posts, balcony rails and horizontal bands muted deep red-brown weathered wood. Masonry/plastered tower wall panels pale cream/tan with darker weathering near edges. Lower first-floor infill cream, central closed doors dark grey-brown. Tall iron finial and supporting chains charcoal/black. Base grey stone. Photo has deep eave shade; lighten just enough for legible structure without inventing bright gold or blue-glazed roofing.",
+  "references": {
+    "original_record": "assets/research/songyangyanqing.json",
+    "selected_photo_files": [
+      "assets/references/songyangyanqing-alt-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_of_Yanqing_Temple,_2022-09-30_02.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Pagoda_of_Yanqing_Temple%2C_2022-09-30_02.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "2022-09-30",
+        "reference_file": "assets/references/songyangyanqing-alt-photo.jpg",
+        "reference_dimensions": {
+          "width": 960,
+          "height": 641
+        }
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/songyangyanqing.json",
+  "output": "assets/colored/songyangyanqing.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-aba5d69c-7b43-47ee-bda1-9b435e035cde.png",
+  "width": 1024,
+  "height": 1536,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 松阳延庆寺塔.\nOBSERVED MATERIAL COLORS: Viewed 2022 ordinary daylight complete tower photo. Roofs charcoal grey clay tiles; timber brackets, posts, balcony rails and horizontal bands muted deep red-brown weathered wood. Masonry/plastered tower wall panels pale cream/tan with darker weathering near edges. Lower first-floor infill cream, central closed doors dark grey-brown. Tall iron finial and supporting chains charcoal/black. Base grey stone. Photo has deep eave shade; lighten just enough for legible structure without inventing bright gold or blue-glazed roofing.\nSPECIFIC GEOMETRY LOCK: Exactly seven tower storeys but EIGHT visible eave roofs because lowest storey has an additional surrounding eave. Count and retain all eight source roof silhouettes, six visible upper balcony rail bands, very tall metal spire and support chains, closed central base door and outer posts. No reduced tower levels, no added story. No trees, hedges, path beyond source baseline or sky; preserve portrait margins.\nPreserve original aspect ratio 1024:1536.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/songyangyanqing.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/songyangyanqing-alt-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-aba5d69c-7b43-47ee-bda1-9b435e035cde.png",
+      "generated_at": "2026-09-15T11:53:24.519924+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2022实拍、样本与输出；七层塔和底层副阶形成的八道檐、六层可见栏杆、塔刹链条保持。",
+      "灰黑屋瓦与塔刹、红褐木构栏杆、浅米抹灰塔壁及灰石基按照片分区；未复制树林环境。",
+      "底层闭门与台阶完整，画像多了适量瓦纹和墙面老化，没有多层或少层。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

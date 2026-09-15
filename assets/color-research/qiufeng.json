@@ -1,0 +1,35 @@
+{
+  "id": "qiufeng",
+  "name": "万荣后土祠",
+  "subject": "万荣后土祠秋风楼",
+  "owner": "main",
+  "worker": "recover_c_extension",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/qiufeng.png",
+    "assets/references/qiufeng-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 万荣后土祠秋风楼.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Qiufeng tower: preserve exact1024:1536 upright shape, THREE timber storeys each with central projecting gable, middle paired circularwindows, upper wood balconies, tall plainbrick podium with pierced parapet and closed centraldoublewooddoor at bottom. Do not add a stone grandstair or extra levels. Actual photo: gray ceramic rooftiles with muted green weathered glazed tips and tiny warm ochre ridge accents; ornate old timber columns/brackets/balconies largely graybrown and darkweathered gray with faint residual mutedred/green, NOT bright red or gold. Gable trianglefields dark brown, hanging fish ornaments gray wood. Main storey infill walls warm graytan plaster; roundwindows and arched opening on lowest tower level darkopen. Tall podium predominantly pale buff/beigebrick with graybase weathering, perforated parapet palegraybeige brick with realdark small quatrefoil holes; bottomdoor darkbrown timber, door surround graystone, small stepsgray. Keep all four main roofcorner profiles and gables unchanged. No lettering on plaquepanels, no signageboards, watermark, plants or courtyard.\nPreserve original canvas aspect ratio 1024:1536.",
+  "material_observations": "实看报道正面照片：秋风楼三层木作以灰褐旧木、灰瓦与少量绿色琉璃边为主，山花下垂鱼灰色，隔墙灰赭；中层圆窗及底层小券洞为暗洞。高台基米黄色砖、灰色砖石基脚，透空栏板灰米色，底门深棕木。表层旧色按照片概括，未用朝代染色，无牌匾文字和前景告示。",
+  "references": [
+    {
+      "source_page": "https://www.ycpeace.gov.cn/a/wenyuan/biaolihedong/20210705/22699.html",
+      "image_url": "https://www.ycpeace.gov.cn/ueditor/php/upload/image/20210705/1625451196361747.jpg",
+      "author": "运城晚报／运城新闻网（未署摄影者）",
+      "license": "照片未标注开放许可；仅作建筑形制研究参考",
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/qiufeng.png",
+  "prepared_at": "2026-09-15T20:34:34.900865+08:00",
+  "original_research": "assets/research/qiufeng.json",
+  "visual_review": "已实看正面照片、线稿、输出与风格样图：三层木楼与三处前山花、中层双圆窗、底层券洞及高砖台透空栏、底门小阶保留。屋瓦灰绿边，木柱梁枋灰褐残红，墙与砖台米赭，门深棕，实际开口保持暗色。灰绿黄赭均受材质区分，未整体涂金。无牌匾文字、告示牌、水印、人物和植物。砖瓦纹理为风格化材质细化。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-77f6fa58-4305-4b7f-8d29-e399a683f9c3.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-77f6fa58-4305-4b7f-8d29-e399a683f9c3.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:35:39.278023+08:00",
+  "width": 1024,
+  "height": 1536,
+  "reviewed_at": "2026-09-15T20:38:12.240835+08:00"
+}

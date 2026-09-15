@@ -1,0 +1,51 @@
+{
+  "id": "duanliang",
+  "name": "虎丘二山门",
+  "subject": "苏州虎丘云岩寺二山门（断梁殿）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/duanliang.png",
+    "assets/references/duanliang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nHuqiu second gate Duanliang Hall: keep very upswept roof, big central round arch, two little circular openings and four blank stone tablets. Dominant wall plaster muted mustard/saffron YELLOW as actually present, not gold. Roof deep charcoal-grey tile; narrow eaves fascia old red-brown, structural wood deep brown. Ridge ceramic limited blue-green and dull ochre details, side stone tablets slate grey, bases grey stone. Central opening and circular holes black. No inscriptions, park scenery, lens flare or people.",
+  "material_observations": "二山门现状黄色粉墙、黑灰瓦，檐下深褐木，脊饰少量深蓝绿与赭黄，石碑及台阶灰石。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:苏州虎丘断梁殿2019.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%E8%8B%8F%E5%B7%9E%E8%99%8E%E4%B8%98%E6%96%AD%E6%A2%81%E6%AE%BF2019.jpg/1280px-%E8%8B%8F%E5%B7%9E%E8%99%8E%E4%B8%98%E6%96%AD%E6%A2%81%E6%AE%BF2019.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/duanliang-photo.jpg",
+      "dimensions": [
+        1280,
+        826
+      ],
+      "date": "2019-08-11",
+      "note": "正面实拍；重绘去除树木、人物、书写与铺地纹理。"
+    }
+  ],
+  "output": "assets/colored/duanliang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-5e82f253-0448-4fbb-a9c8-d83842cc117d.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实看原线稿、2019年实拍、画法样本及恢复原件；一拱门、两圆窗、四块空白碑面与翘檐保持。",
+      "黄色粉墙、黑灰瓦、红褐檐下、蓝绿和赭黄脊饰对应实拍；洞口近黑，无人物文字。"
+    ],
+    "limitations": "依据已有实拍进行艺术转译；未做色彩校准、实地复核或逐像素几何验证。"
+  },
+  "recovered_at": "2026-09-15T11:35:51.273378+00:00",
+  "recovery": {
+    "source_task": "01a09e2d-a458-73d0-bb60-eb2b3a86e6bd",
+    "prompt_source": "assets/color-research/recovery/original-calls.json",
+    "prepared_at": "2026-09-15T10:55:50.818Z",
+    "output_association": "原任务最后一批调用及生成时间对应，逐图与线稿、实拍核对主体；该批结果未回传至旧对话"
+  },
+  "worker": "main"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "huayan",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Datong_Huayan_Si_2013.08.29_08-27-51.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Datong_Huayan_Si_2013.08.29_08-27-51.jpg/1280px-Datong_Huayan_Si_2013.08.29_08-27-51.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/huayan-photo.jpg",
+    "assets/references/huayan-front-photo.jpg"
+  ],
+  "subject": "大同华严寺大雄宝殿",
+  "source_note": "以2013年前方远景核整体轮廓、台基，与2024年月台前近景核三道壸门；正面九间十柱。移除月台亭子、幡杆、香炉、碑刻板与游客。非测绘复原。",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "additional_sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:华严寺大雄宝殿月台上望向雨中的大雄宝殿.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/%E5%8D%8E%E4%B8%A5%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF%E6%9C%88%E5%8F%B0%E4%B8%8A%E6%9C%9B%E5%90%91%E9%9B%A8%E4%B8%AD%E7%9A%84%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg/1280px-%E5%8D%8E%E4%B8%A5%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF%E6%9C%88%E5%8F%B0%E4%B8%8A%E6%9C%9B%E5%90%91%E9%9B%A8%E4%B8%AD%E7%9A%84%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nLandscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room.\nSubject: 大同华严寺大雄宝殿, Main Hall of Upper Huayan Temple in Datong. Image 2 gives full width, silhouette and high stone platform. Image 3 is a close front photo of its central facade: use it for the actual three distinctive scallop-shaped arched doorways and tall wall proportions, not the cropping. Depict the MAIN SINGLE HALL with exactly NINE facade bays under ONE very broad low hipped roof, huge upstanding chiwen at both ridge ends; only THREE door openings across facade, central and one to each side separated by blank wall bays; preserve the shaped door outlines and small rectangular upper transom panels. Remove the two separate pavilion structures on the terrace, flagpoles, incense burner, statues, visitors and trees. Preserve the tall simple platform and broad central stair but omit elaborate railing density. No extra buildings. Full front elevation centered and uncropped. All walls and door openings white. Very sparse structural detailing and no dense tile grid.\nCRITICAL COUNT: the facade MUST have exactly TEN upright timber column axes creating NINE distinct bays. Layout from left to right: [blank wall] [blank wall] [scalloped door+transom] [blank wall] [central scalloped door+transom] [blank wall] [scalloped door+transom] [blank wall] [blank wall]. Thus THREE bays to the left of center are not sufficient: there must be FOUR bays each side of center. Keep the building a long low nine-bay hall. The platform walls must remain blank: remove the inset stone inscriptions entirely, do not convert them into windows. Roof detailing only sparse fine ribs, no wood-grain hatch.",
+  "generated_file": "assets/generated/huayan.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "validation_note": "首稿七间不通过；第二稿确认九间十柱与三道壸门。"
+}

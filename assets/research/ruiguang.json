@@ -1,0 +1,75 @@
+{
+  "subject": "苏州瑞光塔",
+  "caption": [
+    "瑞光塔 · 七级八面",
+    "北宋塔身 · 木檐后修"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/ruiguang-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ruiguang_Pagoda,_Suzhou.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Ruiguang_Pagoda%2C_Suzhou.jpg",
+      "author": "钉钉",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "瑞光塔究竟建于何时？（苏州新闻网稿）",
+      "url": "https://www.szdushi.com.cn/bianmin/baitai/198046.shtml"
+    },
+    {
+      "title": "两宋时期苏州瑞光塔的修缮工程",
+      "url": "https://www.jgcm.ac.cn/jah/cn/article/pdf/preview/10.12329/20969368.2021.01008.pdf"
+    }
+  ],
+  "source_note": "以2020年实际塔身与修复木檐的整体照片为形状依据，生成后再次简化密集瓦线、斗栱及窗内填黑，保留七层完整比例。现状木檐不称北宋原物。",
+  "site_recommendation": {
+    "name": "苏州瑞光塔",
+    "short": "瑞光塔",
+    "sub": "盘门 · 七级八面楼阁式塔",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "song",
+    "tag": "北宋",
+    "era": "景德元年至天圣八年营建",
+    "year": 1004,
+    "yearLabel": "1004—1030",
+    "place": "江苏苏州 · 盘门",
+    "province": "江苏",
+    "placeKey": "suzhou",
+    "lat": 31.2916667,
+    "lon": 120.6138889,
+    "latlon_source": "https://commons.wikimedia.org/wiki/Category:Ruiguang_Pagoda",
+    "lede": "盘门旁，七级塔檐逐层收起，塔身与外部木构共同形成江南楼阁式塔的轮廓。它经历宋代改修和近现代复原，年代要从早期砖身读起。",
+    "facts": [
+      "<b>北宋营造</b>景德元年（1004）奠基，天圣八年（1030）建成，其后又经改建与修缮。",
+      "<b>七级八面</b>砖身承重，外部木檐与回廊展露楼阁形制；现状包含近现代修复部分。",
+      "<b>塔藏珍宝</b>塔内出土的真珠舍利宝幢等文物现藏苏州博物馆，可与塔的营造沿革对照阅读。"
+    ]
+  },
+  "id": "ruiguang",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ruiguang-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. One fine-line architectural illustration of 苏州瑞光塔, the actual Ruiguang Pagoda photographed in image2. Image1 is ONLY the thin contour style master, image2 ONLY the actual building geometry. Sparse BLACK INK on PURE WHITE, delicate organic contour lines and few structural interior lines, generous unmarked white surfaces; no shading, hatching, greys, filled doors or black roof patches. Draw the entire octagonal SEVEN-storey brick-and-timber pagoda, including the wide lower pent-roof colonnade, seven diminishing main eave roofs, intermediate balcony railings and photographed slender central spire. The ground-floor peripheral roof is part of the first storey, not an extra storey. Preserve the distinct slender tall proportions, opening positions, curving roof profiles, top taper and current restored timber eaves as seen. Approximately frontal view, verticals vertical, ground-level framing, remove all trees, tourists, wires, lamps, neighboring roofs and sky. Suggest brackets only in a few fine contours, omit repeated roof tile and brick texture, do not fabricate stone carvings or additional storeys. Portrait1024x1536, the whole tower and spire centered at about80%height with 10%top andbottom margins. No text or labels, frame or watermark.",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/ruiguang.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "prompt_history": [
+    "Use case: style-transfer. One fine-line architectural illustration of 苏州瑞光塔, the actual Ruiguang Pagoda photographed in image2. Image1 is ONLY the thin contour style master, image2 ONLY the actual building geometry. Sparse BLACK INK on PURE WHITE, delicate organic contour lines and few structural interior lines, generous unmarked white surfaces; no shading, hatching, greys, filled doors or black roof patches. Draw the entire octagonal SEVEN-storey brick-and-timber pagoda, including the wide lower pent-roof colonnade, seven diminishing main eave roofs, intermediate balcony railings and photographed slender central spire. The ground-floor peripheral roof is part of the first storey, not an extra storey. Preserve the distinct slender tall proportions, opening positions, curving roof profiles, top taper and current restored timber eaves as seen. Approximately frontal view, verticals vertical, ground-level framing, remove all trees, tourists, wires, lamps, neighboring roofs and sky. Suggest brackets only in a few fine contours, omit repeated roof tile and brick texture, do not fabricate stone carvings or additional storeys. Portrait1024x1536, the whole tower and spire centered at about80%height with 10%top andbottom margins. No text or labels, frame or watermark.",
+    "Edit image1, the draft Ruiguang Pagoda illustration. Image2 is ONLY the sparse Longmen style reference. Keep exactly the same accurate SEVEN-storey tower silhouette, spire, platforms, eave positions and balconies. Reduce detail and line weight very strongly to the master's airy thin organic contours. ALL window and door interiors must be PURE WHITE, retain only their outline. Remove ALL parallel soffit hatch stripes, nearly all roof tile lines (at most 3 faint roofing strokes per entire roof face), most tiny bracket subdivisions and ALL gray shading. Keep few clean structural bracket shapes, columns, main eave edges and railings. This is a spare contour drawing, not detailed engraving or blueprint. Every surface must remain clean white, delicate black contours, large white planes. Portrait samecomposition completeuncut."
+  ],
+  "final_edit_prompt": "Edit image1, the draft Ruiguang Pagoda illustration. Image2 is ONLY the sparse Longmen style reference. Keep exactly the same accurate SEVEN-storey tower silhouette, spire, platforms, eave positions and balconies. Reduce detail and line weight very strongly to the master's airy thin organic contours. ALL window and door interiors must be PURE WHITE, retain only their outline. Remove ALL parallel soffit hatch stripes, nearly all roof tile lines (at most 3 faint roofing strokes per entire roof face), most tiny bracket subdivisions and ALL gray shading. Keep few clean structural bracket shapes, columns, main eave edges and railings. This is a spare contour drawing, not detailed engraving or blueprint. Every surface must remain clean white, delicate black contours, large white planes. Portrait samecomposition completeuncut.",
+  "final_edit_references": [
+    "assets/generated/ruiguang-draft.png",
+    "assets/references/longmen-style-black.png"
+  ],
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-6f775d1f-7e24-4962-a67c-0073a983ebad.png"
+}

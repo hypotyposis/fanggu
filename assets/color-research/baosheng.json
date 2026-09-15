@@ -1,0 +1,67 @@
+{
+  "id": "baosheng",
+  "name": "保圣寺",
+  "subject": "甪直保圣寺罗汉塑像单尊与相邻山石塑壁局部",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/baosheng.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/baosheng-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 甪直保圣寺罗汉塑像单尊与相邻山石塑壁局部.\nOBSERVED MATERIAL COLORS: The 2004 color photograph documents a repaired present-state clay/plaster arhat and its attached sculpted rock wall. Predominant muted grey-green and grey plaster with worn pale cream/off-white grounds. Dark brown-black beard/moustache and diagonal collar. Thin surviving maroon/red pigment remnants follow portions of robe folds and sleeve edges, with sparse subdued red traces on adjacent rocks; extensive irregular pale grey/cream wear, charcoal crevices, a few dark chipped facial patches. Preserve these specific residual layers with restrained fine sparse texture; do not reconstruct a fresh complete historical polychromy. Rock and figure belong to the same weathered plaster environment. Photograph age and indoor lighting prevent calibrated original pigment conclusions.\nSPECIFIC GEOMETRY LOCK: Copy the original portrait composition precisely: exactly one seated bald bearded arhat, its crossed legs and broad robe silhouette, damaged/missing hands within the two raised ragged sleeves, low base and adjoining irregular sculpted rock wall on both sides and extending above the head. Keep the fragment's irregular open top and edges, facial damage, sleeve tears, original pose and spacing. Do not restore hands, fingers, mudras, body parts, full hall, or additional arhats. No gilding. Model only extant pigment remnants at the locations supported by the photograph; retain clear ink linework rather than broad camouflage patches.\nPreserve original aspect ratio 1024:1536.",
+  "material_observations": "The 2004 color photograph documents a repaired present-state clay/plaster arhat and its attached sculpted rock wall. Predominant muted grey-green and grey plaster with worn pale cream/off-white grounds. Dark brown-black beard/moustache and diagonal collar. Thin surviving maroon/red pigment remnants follow portions of robe folds and sleeve edges, with sparse subdued red traces on adjacent rocks; extensive irregular pale grey/cream wear, charcoal crevices, a few dark chipped facial patches. Preserve these specific residual layers with restrained fine sparse texture; do not reconstruct a fresh complete historical polychromy. Rock and figure belong to the same weathered plaster environment. Photograph age and indoor lighting prevent calibrated original pigment conclusions.",
+  "references": {
+    "original_record": "assets/research/baosheng.json",
+    "selected_photo_files": [
+      "assets/references/baosheng-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "file": "assets/references/baosheng-photo.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Arhat_sculpture_in_Bao_Sheng_Temple,_Luzhi,_Suzhou.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Arhat_sculpture_in_Bao_Sheng_Temple%2C_Luzhi%2C_Suzhou.jpg",
+        "author": "Gisling",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "date": "2004",
+        "dimensions": {
+          "width": 471,
+          "height": 736
+        },
+        "note": "保圣寺罗汉单尊近正面照片，完整身体与局部山石塑壁可辨。原照片描述的唐杨惠之署名为传统归属，本条年代另据1961国保原始名单北宋。"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/baosheng.json",
+  "output": "assets/colored/baosheng.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-95d0a6b6-2935-43f1-988f-1acf6e3b29d7.png",
+  "width": 1024,
+  "height": 1536,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 甪直保圣寺罗汉塑像单尊与相邻山石塑壁局部.\nOBSERVED MATERIAL COLORS: The 2004 color photograph documents a repaired present-state clay/plaster arhat and its attached sculpted rock wall. Predominant muted grey-green and grey plaster with worn pale cream/off-white grounds. Dark brown-black beard/moustache and diagonal collar. Thin surviving maroon/red pigment remnants follow portions of robe folds and sleeve edges, with sparse subdued red traces on adjacent rocks; extensive irregular pale grey/cream wear, charcoal crevices, a few dark chipped facial patches. Preserve these specific residual layers with restrained fine sparse texture; do not reconstruct a fresh complete historical polychromy. Rock and figure belong to the same weathered plaster environment. Photograph age and indoor lighting prevent calibrated original pigment conclusions.\nSPECIFIC GEOMETRY LOCK: Copy the original portrait composition precisely: exactly one seated bald bearded arhat, its crossed legs and broad robe silhouette, damaged/missing hands within the two raised ragged sleeves, low base and adjoining irregular sculpted rock wall on both sides and extending above the head. Keep the fragment's irregular open top and edges, facial damage, sleeve tears, original pose and spacing. Do not restore hands, fingers, mudras, body parts, full hall, or additional arhats. No gilding. Model only extant pigment remnants at the locations supported by the photograph; retain clear ink linework rather than broad camouflage patches.\nPreserve original aspect ratio 1024:1536.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/baosheng.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/baosheng-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-95d0a6b6-2935-43f1-988f-1acf6e3b29d7.png",
+      "generated_at": "2026-09-15T13:14:11.984853+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "核对线稿，单尊罗汉、缺失双手的残袖、交腿衣褶、相邻塑壁破损外轮廓和低台均保留。",
+      "依据2004年现状照片，灰绿与灰白塑层、深色须眉衣领、衣褶和岩壁局部暗红残彩清晰可辨；未补全手印或恢复通体彩绘。",
+      "表面磨损纹理比稀疏线稿更丰富，属照片支持的艺术概括；不是逐处缺损测绘。黑底，无场景或文字。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

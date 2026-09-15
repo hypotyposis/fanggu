@@ -1,0 +1,67 @@
+{
+  "id": "chongming",
+  "name": "高平崇明寺",
+  "subject": "高平崇明寺中佛殿",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/chongming.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongming-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongming-side-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 高平崇明寺中佛殿.\nOBSERVED MATERIAL COLORS: Both daylight official photos identify the small central THREE-bay hall. Use the less-saturated side photo to judge material: roof field neutral dark grey clay tile; narrow ridge glazed dull green with worn yellow-ochre green ridge beasts. Massive layered brackets weathered dark grey-brown wood with limited faded dark burgundy on underside beam/purlin strips. Wall upper band muted dark brick-red plaster, bottom band dark grey/grey-brown brick. Two windows have charcoal wood bars. Two thin outside eave props dark grey-brown, not bright red. Door frame worn dark grey wood; existing closed door drawn in master muted dark brown. Stone plinth and steps neutral grey. Front photo bright sky and warm pavement not palette sources.\nSPECIFIC GEOMETRY LOCK: Lock three-bay small Central Buddha Hall, one central paired door, two barred windows, massive bracket stacks and two thin far outer eave props. Keep low shallow roof, ridge beasts and low plinth with central short stairs. Do not add five bays, columns across the wall, steles, lanterns, couplets, trees or adjacent halls. Use restrained weathering, no dense camouflage patches.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Both daylight official photos identify the small central THREE-bay hall. Use the less-saturated side photo to judge material: roof field neutral dark grey clay tile; narrow ridge glazed dull green with worn yellow-ochre green ridge beasts. Massive layered brackets weathered dark grey-brown wood with limited faded dark burgundy on underside beam/purlin strips. Wall upper band muted dark brick-red plaster, bottom band dark grey/grey-brown brick. Two windows have charcoal wood bars. Two thin outside eave props dark grey-brown, not bright red. Door frame worn dark grey wood; existing closed door drawn in master muted dark brown. Stone plinth and steps neutral grey. Front photo bright sky and warm pavement not palette sources.",
+  "references": {
+    "original_record": "assets/research/chongming.json",
+    "selected_photo_files": [
+      "assets/references/chongming-photo.jpg",
+      "assets/references/chongming-side-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291192.shtml",
+        "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128424036361396.jpg",
+        "author": "文旅高平（发布；摄影者未单独注明）",
+        "license": "未标明开放许可；仅作建筑形制参考"
+      },
+      {
+        "source_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291192.shtml",
+        "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128424036766124.jpg",
+        "author": "文旅高平（发布；摄影者未单独注明）",
+        "license": "未标明开放许可；仅作建筑形制参考"
+      }
+    ],
+    "note": "Only selected_photo_files were viewed as color inputs; no independent color calibration."
+  },
+  "output": "assets/colored/chongming.png",
+  "original_research": "assets/research/chongming.json",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-69d7dd7a-ee4b-424b-8c0e-29e232dc5edd.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 高平崇明寺中佛殿.\nOBSERVED MATERIAL COLORS: Both daylight official photos identify the small central THREE-bay hall. Use the less-saturated side photo to judge material: roof field neutral dark grey clay tile; narrow ridge glazed dull green with worn yellow-ochre green ridge beasts. Massive layered brackets weathered dark grey-brown wood with limited faded dark burgundy on underside beam/purlin strips. Wall upper band muted dark brick-red plaster, bottom band dark grey/grey-brown brick. Two windows have charcoal wood bars. Two thin outside eave props dark grey-brown, not bright red. Door frame worn dark grey wood; existing closed door drawn in master muted dark brown. Stone plinth and steps neutral grey. Front photo bright sky and warm pavement not palette sources.\nSPECIFIC GEOMETRY LOCK: Lock three-bay small Central Buddha Hall, one central paired door, two barred windows, massive bracket stacks and two thin far outer eave props. Keep low shallow roof, ridge beasts and low plinth with central short stairs. Do not add five bays, columns across the wall, steles, lanterns, couplets, trees or adjacent halls. Use restrained weathering, no dense camouflage patches.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/chongming.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongming-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/chongming-side-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-69d7dd7a-ee4b-424b-8c0e-29e232dc5edd.png",
+      "generated_at": "2026-09-15T11:41:39.126442+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、两张实拍、样本与生成结果。三间、一门两窗及两侧细支柱保留，深远出檐和台阶完整。",
+      "暗灰瓦、灰褐斗栱、红抹灰上墙与灰砖下墙依据实拍分区；绿脊与少量赭釉脊兽保留，无文字和院景。",
+      "新增少量瓦砖纹理较原稿丰富，整体轮廓与开间不变；未宣称逐像素对齐。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

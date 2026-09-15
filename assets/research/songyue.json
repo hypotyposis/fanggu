@@ -1,0 +1,131 @@
+{
+  "id": "songyue",
+  "subject": "登封嵩岳寺塔",
+  "caption": [
+    "嵩岳寺塔 · 正面",
+    "十二边形 · 十五层密檐"
+  ],
+  "generation_tool": "Built-in image_gen.imagegen",
+  "generated_file": "assets/generated/songyue.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-5608f204-7ee6-4361-8e9d-b03b0c83cac0.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/songyue-full-photo.jpg",
+    "assets/references/songyue-winter-photo.jpg",
+    "assets/references/songyue-photo.jpg"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the existing Songyue pagoda drawing to EDIT; Image2 is our fine black contour style MASTER; Image3 and4 are actual Songyue pagoda photographs. Keep its existing contour style, twelve-sided rounded taper, lower niche capitals, finial, clean white background and centered composition. Make TWO precise geometry corrections: (1) there are only14 main eave ledges in image1. Insert ONE extra narrow eave-and-wall band near the top, between the topmostband and the current secondband. Final total MUST be15 large eave ledges (do not count7 little finial rings). The inserted newband matches neighboring taper and thin lines; keep all14 existing eaves. (2) The central pointed arched doorway must extend downward through the low plain lowerbody to meet the bottom base landing; it is a tall open archway through both lowertiers, not a smallniche sitting on a blank lowplatform. Extend two fine vertical jambs toground and leave white interior. Remove the centralplinth-horizontal lines across doorway opening. All otherbody panels and surrounding ground remain unchanged. Fit entire tower with moretopmargin so finial staysuncut. Black fine lines onwhite, nofills, nohatching, noletters, nopeople. Portrait1024x1536.",
+  "initial_prompt": "Use case: style-transfer. Make one sparse fine-line heritage illustration. Image1 is the Vairocana STYLE MASTER: match its delicate organic thin black contours and generous untouched white areas. Images2 and3 are the actual Songyue Temple Pagoda in Dengfeng, Henan, in near-frontal views; image4 is a close photograph of its lower pagoda body. They are SUBJECT GEOMETRY references only.\nDraw the complete historic SONGYUE PAGODA, twelve-sided plan, distinctive broad curving tapered silhouette, fifteen closely spaced corbelled eaves above the tall first body. Exactly FIFTEEN main eave ledges, gradually narrowing upward; separate the seven small rings of the finial from the15 large pagoda eaves. Keep the complete lotus finial and jewel at the apex, the tall lowermost body with central pointed arch entrance, twelve-sided corner pilasters with lotus/fire-jewel capitals, flanking pointed-arch niche panels and little lions below niches as seen in photo4. The first body has a plain lower wall and richly outlined upper niches; do not replace it with many tall storeys. Show several subtly angled faces to convey twelve-sided geometry, but maintain a centered frontal elevation with vertical verticals. Remove all trees and fill obscured geometry consistently from visible adjacent repeated facets and detail reference.\nPure WHITE background with BLACK fine lines only. All surfaces white, all doorways white inside. No fills, shading, hatching, texture, shadow, color, text, inscription, watermark or frame. Only one or two fine lines per corbelled eave edge, do not draw all horizontal brick courses. Use minimal tiny niche outlines in the upper bands and sparse body contours, not dense brickwork. Remove surrounding buildings, people, modern gates, sky, courtyard, signs and broad approach stairway. Preserve just the pagoda's low plinth and one short ground line.\nPortrait1024x1536, complete pagoda centered occupies about82% of height with generous margins and full uncut apex and base. Match master lineweight and light density.",
+  "final_edit_reference_files": [
+    "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-3e7649f3-9c4b-40f3-8b87-9a4bf930927f.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longmen-style-black.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/songyue-full-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/songyue-photo.jpg"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20240525_Pagoda_of_Songyue_Temple_02.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/20240525_Pagoda_of_Songyue_Temple_02.jpg/960px-20240525_Pagoda_of_Songyue_Temple_02.jpg?download=1",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/songyue-full-photo.jpg",
+      "description": "2024年5月25日完整塔身近正面，树林下部遮挡由细节照片补充。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Songyue_Pagoda_in_Nov_2014.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Songyue_Pagoda_in_Nov_2014.jpg/960px-Songyue_Pagoda_in_Nov_2014.jpg?download=1",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/songyue-winter-photo.jpg",
+      "description": "2014年11月嵩岳寺塔全貌，辅助整体比例。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_of_Songyue_Temple%2C_2015-09-25_08.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Pagoda_of_Songyue_Temple%2C_2015-09-25_08.jpg/1280px-Pagoda_of_Songyue_Temple%2C_2015-09-25_08.jpg?download=1",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/songyue-photo.jpg",
+      "description": "2015年9月25日底层券门、壁柱和火焰形龛楣细节。"
+    }
+  ],
+  "source_note": "真实完整外观照片与底层细节联合参考。最终imagegen编辑将初稿14层密檐修正为15层，并使四正面之一的券门贯通下部平壁至地面。十二边形以多个浅折面概括，所有门龛留白。",
+  "verification": {
+    "reference_images_viewed": true,
+    "generated_image_viewed": true,
+    "uncropped": true,
+    "style": "黑色细线、白色留白、去除现代环境；艺术概括，不作测绘复原"
+  },
+  "site_recommendation": {
+    "name": "嵩岳寺塔",
+    "short": "嵩岳寺塔",
+    "sub": "十二边形密檐砖塔",
+    "dyn": "bei",
+    "tag": "北魏",
+    "era": "北魏晚期",
+    "year": 520,
+    "yearLabel": "6世纪初",
+    "yearApprox": true,
+    "place": "河南 · 登封",
+    "placeKey": "dengfeng",
+    "lat": 34.5016111,
+    "lon": 113.0159167,
+    "lede": "十五层砖檐沿曲线层层收起，使嵩岳寺塔的轮廓近于一支挺立的笔。十二边形塔身与火焰形门楣，保存着中国早期佛塔吸收多种造型语言的痕迹。",
+    "facts": [
+      "塔建于北魏晚期；2021年文保研究将营造期考定于511至520年之间，旧说常记523年。",
+      "平面为十二边形，塔身上叠十五层密檐，轮廓曲线向上收分。",
+      "底层四正面设券门，其余八面设塔形壁龛，塔顶有莲瓣与相轮组成的塔刹。"
+    ],
+    "basis": [
+      {
+        "url": "https://www.dengfeng.gov.cn/gtwh/5265834.jhtml",
+        "supports": "十二边平面、十五层密檐、券门壁龛与塔刹形制。"
+      },
+      {
+        "url": "https://hrczh.cass.cn/lszg/lszg_wscl/202502/t20250218_5846868.shtml",
+        "supports": "检索正文记录营造时间为511年12月至520年；采用6世纪初的概括纪年。"
+      },
+      {
+        "url": "https://www.xinhuanet.com/2021-01/21/c_1127008078.htm",
+        "supports": "河南省文物建筑保护研究院2021年专著研究与断代背景。"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Pagoda_of_Songyue_Temple",
+        "supports": "地图近似坐标"
+      }
+    ]
+  },
+  "historical_sources": [
+    {
+      "title": "嵩岳寺塔 高层筒体结构的先驱",
+      "url": "https://www.dengfeng.gov.cn/gtwh/5265834.jhtml",
+      "publisher": "登封市人民政府",
+      "note": "十二边平面、十五层密檐、券门壁龛与塔刹形制。"
+    },
+    {
+      "title": "跨越千年的北魏嵩岳寺塔营造揭秘",
+      "url": "https://hrczh.cass.cn/lszg/lszg_wscl/202502/t20250218_5846868.shtml",
+      "publisher": "中国历史研究院",
+      "note": "检索正文记录营造时间为511年12月至520年；采用6世纪初的概括纪年。"
+    },
+    {
+      "title": "《嵩岳寺塔》出版 揭开尘封1500年的建塔始末",
+      "url": "https://www.xinhuanet.com/2021-01/21/c_1127008078.htm",
+      "publisher": "新华网",
+      "note": "河南省文物建筑保护研究院2021年专著研究与断代背景。"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:20240525_Pagoda_of_Songyue_Temple_02.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/20240525_Pagoda_of_Songyue_Temple_02.jpg/960px-20240525_Pagoda_of_Songyue_Temple_02.jpg?download=1",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_file": "assets/references/songyue-full-photo.jpg",
+  "description": "2024年5月25日完整塔身近正面，树林下部遮挡由细节照片补充。"
+}

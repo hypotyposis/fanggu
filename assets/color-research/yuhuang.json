@@ -1,0 +1,51 @@
+{
+  "id": "yuhuang",
+  "name": "蔚州玉皇阁",
+  "subject": "蔚州玉皇阁",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/yuhuang.png",
+    "assets/references/yuhuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 蔚州玉皇阁.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Main daylight photo shows the SOUTH facade of Yuzhou Yuhuang Pavilion. Weathered wooden brackets and upper balustrade are gray-brown/tan, lower columns retain faded dark vermilion, lower masonry infill is charcoal gray brick. Roof tile fields are subdued gray-green, with narrow green glazed ridge and eave borders, and dull reddish-brown undersides. Preserve the line drawing's three eave bands, long upper balcony and all open bays, not the other buildings. Use this non-snow daylight photo, not a snowy or warm-filter view. Retain only sparse existing muted blue/green paint within the structural bands.\nPreserve the original line master aspect ratio 1584:993.",
+  "material_observations": "2024年南立面日间照：下檐柱褪色暗红，墙体深灰砖，上层栏杆和斗栱灰褐旧木，瓦面灰绿、脊檐有绿色琉璃边。另看冬日背面，因积雪与偏暖色温未用作取色输入。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg/500px-%E8%94%9A%E5%B7%9E%E7%8E%89%E7%9A%87%E9%98%81%E5%A4%A7%E6%AE%BF.jpg?download=1",
+      "reference_file": "assets/references/yuhuang-photo.jpg",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "file": "assets/references/yuhuang-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/yuhuang.json",
+  "output": "assets/colored/yuhuang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-79b61386-d670-4616-a5cd-f73630500011.png",
+  "width": 1584,
+  "height": 993,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已查看输出：三道檐带、上层长栏杆与下层中门完整，灰绿瓦、灰褐木与褪色红柱可区分；台基浅灰，牌匾文字未引入，背景和开口为近黑。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 蔚州玉皇阁.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Main daylight photo shows the SOUTH facade of Yuzhou Yuhuang Pavilion. Weathered wooden brackets and upper balustrade are gray-brown/tan, lower columns retain faded dark vermilion, lower masonry infill is charcoal gray brick. Roof tile fields are subdued gray-green, with narrow green glazed ridge and eave borders, and dull reddish-brown undersides. Preserve the line drawing's three eave bands, long upper balcony and all open bays, not the other buildings. Use this non-snow daylight photo, not a snowy or warm-filter view. Retain only sparse existing muted blue/green paint within the structural bands.\nPreserve the original line master aspect ratio 1584:993.",
+      "input_images": [
+        "assets/generated/yuhuang.png",
+        "assets/references/yuhuang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-79b61386-d670-4616-a5cd-f73630500011.png",
+      "output": "assets/colored/yuhuang.png"
+    }
+  ]
+}

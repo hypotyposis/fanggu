@@ -1,0 +1,48 @@
+{
+  "id": "longmen",
+  "name": "龙门寺西配殿",
+  "subject": "龙门寺西配殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/longmen.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longmen-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: longmen.\nOBSERVED MATERIAL COLORS: Daylight courtyard photo: the SMALL hall at center is subject. Roof neutral weathered gray tiles with slight muted green moss traces between rows, gray ridge ornaments. Timber beams/brackets dark gray-brown with dull faded dark-red traces, front wall beige-tan brick, window/door frames weathered gray brown and pale light between window bars, doorway near-black. Do not borrow colors from foreground temple or red railings.\nSPECIFIC GEOMETRY LOCK: Single small west hall only. Original three bays with two barred windows and open center double-door, four bracket sets, central ridge ornament. Keep the existing unobstructed frontal composition, no tree, shrub, fence or other buildings. Tiny moss traces only; no green glazed roof or extra roof texture.",
+  "material_observations": "Daylight courtyard photo: the SMALL hall at center is subject. Roof neutral weathered gray tiles with slight muted green moss traces between rows, gray ridge ornaments. Timber beams/brackets dark gray-brown with dull faded dark-red traces, front wall beige-tan brick, window/door frames weathered gray brown and pale light between window bars, doorway near-black. Do not borrow colors from foreground temple or red railings.",
+  "references": {
+    "original_record": "assets/research/longmen.json",
+    "selected_photo_files": [
+      "assets/references/longmen-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Longmen_Temple_Pingshun.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Longmen_Temple_Pingshun.jpg/960px-Longmen_Temple_Pingshun.jpg",
+        "author": "Xin (Halazhang)",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source_note": "2016-07-27 中央小殿正面；遮挡处依据三间、中央门与双窗对称补全；不绘右侧大雄宝殿。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/longmen.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-486479a6-23aa-4454-a3a8-81a20fa6a2a5.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "与原稿对照：三间正面、双窗中门、低缓单檐、中央宝刹及两端鸱吻完整保留。",
+      "灰瓦带少量苔色、灰褐旧木、浅褐灰砖的材质区分对应所看实照；未按唐代色板统一着色。",
+      "暗底与门洞一致，人物植被及额外文字均未加入。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

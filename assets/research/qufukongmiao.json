@@ -1,0 +1,163 @@
+{
+  "id": "qufukongmiao",
+  "subject": "曲阜孔庙大成殿",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20230612_Dacheng_Dian,_Qufu_Kongmiao.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/20230612_Dacheng_Dian%2C_Qufu_Kongmiao.jpg/1280px-20230612_Dacheng_Dian%2C_Qufu_Kongmiao.jpg",
+  "author": "Yumeto",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20230612_Dacheng_Dian,_Qufu_Kongmiao.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/20230612_Dacheng_Dian%2C_Qufu_Kongmiao.jpg/1280px-20230612_Dacheng_Dian%2C_Qufu_Kongmiao.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/qufukongmiao-geometry-photo.jpg",
+      "note": "2023年6月12日正面，原图下载429，使用同一Commons1280px预览，已查看。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Dacheng_Hall.JPG",
+      "author": "Gisling",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/references/qufukongmiao-photo.jpg",
+      "note": "2008年10月近正面照片，用于石龙柱、台基与两重屋顶；左前树与前景人群去除。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "author": "Алый Король",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/qufukongmiao-secondary-photo.jpg",
+      "note": "2011年1月23日正面，用于十根前檐石龙柱与中央阶道、门窗；不把照片裁切当作建筑边缘。"
+    }
+  ],
+  "additional_sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Dacheng_Hall.JPG",
+      "author": "Gisling",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/references/qufukongmiao-photo.jpg",
+      "note": "2008年10月近正面照片，用于石龙柱、台基与两重屋顶；左前树与前景人群去除。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "author": "Алый Король",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/qufukongmiao-secondary-photo.jpg",
+      "note": "2011年1月23日正面，用于十根前檐石龙柱与中央阶道、门窗；不把照片裁切当作建筑边缘。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qufukongmiao-geometry-photo.jpg",
+    "assets/references/qufukongmiao-photo.jpg",
+    "assets/references/qufukongmiao-secondary-photo.jpg",
+    "assets/references/qufukongmiao-initial-line.png"
+  ],
+  "source_note": "3张经过view_image的同殿实景；以1730雍正重建现存大成殿为主体，非孔庙前478创建年代。照片靠近主体，左右部分檐角裁切，需仅延长对称屋檐保证完整。",
+  "prompt": "Use case: precise-object-edit / style-transfer. Image1 is the black-on-white architectural drawing of Qufu Confucius Temple Dacheng Hall that was just generated. It is the EDIT TARGET. Image2 is the original Buddha line STYLE MASTER only. Image3 is the actual photo of this same Dacheng Hall for geometry verification. Make ONE composition correction to the drawing: uniformly reduce the entire illustrated building, terrace, staircase and stone balustrades to occupy exactly80percent of the1536pixel-wide canvas, preserving the same central axis, proportions, bay count and structure. The entire drawing must fit comfortably inside a bounding box with left edge at150pixels and right edge at1386pixels. Do NOT stretch any building parts. Do NOT move outer columns inward. Do NOT add or remove any column: keep exactlyTEN front stone dragon columns and NINE bays, the same two eave levels, dragon ramp, stairs, balustrades and roof ornaments. Give generous pure WHITE margins of at least150pixels on both left and right. Roof tips and terrace edge must have clear whitespace beyond them. Keep elegant fine black lines on purewhite, no shading. Also simplify repetitive tile-direction lines: erase about70percent of the parallel lines inside both large roof planes, retaining only spaced directional hints; leave outline, ridges and eaves unchanged. All other geometry and ornament should stay the same. No people, no labels or text, no watermark. Full canvas1536x1024.\n",
+  "caption": [
+    "曲阜孔庙大成殿正面 · 据实景照片重绘",
+    "清雍正八年（1730）重建竣工 · 九间重檐歇山顶"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.qfwbw.cn/wbzy/jd/2016-03-24/2818.html",
+      "publisher": "曲阜文博网",
+      "supports": "1724火灾，1730重建竣工；现存大成殿即雍正重建。"
+    },
+    {
+      "source_page": "https://qfwhjssfq.jining.gov.cn/art/2016/4/21/art_31772_1469949.html",
+      "publisher": "曲阜文化建设示范区推进办公室",
+      "supports": "面阔九间、进深五间；孔庙主体大成殿。"
+    },
+    {
+      "source_page": "https://shandong-chorography.org/database/zzmj/section/25/article/50/",
+      "publisher": "山东地情档案《孔子志》",
+      "supports": "雍正1725兴工至1730竣工，现存大成殿与宋明创建修建阶段区分。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "曲阜孔庙",
+    "short": "曲阜孔庙",
+    "sub": "曲阜 · 大成殿",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清雍正八年",
+    "year": 1730,
+    "yearApprox": false,
+    "yearLabel": "1730年重建竣工",
+    "place": "山东 · 济宁 · 曲阜",
+    "placeKey": "济宁",
+    "lat": 35.595844,
+    "lon": 116.984863,
+    "coords": [
+      116.984863,
+      35.595844
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/File:20230612_Dacheng_Dian,_Qufu_Kongmiao.jpg",
+    "coordinate_note": "Commons实景照片拍摄位置35°35′45.04″N116°59′05.51″E，位于大成殿前露台，作为条目的近似定位；不声称建筑中心或测绘坐标。",
+    "lede": "大成殿居于曲阜孔庙中轴，两重歇山檐下立着盘龙石柱。殿前的露台与阶道，把祭孔仪式的行进和空间秩序连在一起。",
+    "facts": [
+      "现存大成殿在雍正二年（1724）火灾后重建，雍正八年（1730）竣工。",
+      "大殿面阔九间、进深五间，采用重檐歇山顶，黄琉璃瓦覆顶。",
+      "前檐十根石柱深雕盘龙，殿前石台阶与露台构成祭孔空间。"
+    ]
+  },
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/qufukongmiao.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-0c944249-4897-4f59-9826-39240e398fab.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSubject: ONLY Dacheng Hall of the Temple of Confucius at Qufu, Shandong (曲阜孔庙大成殿), rebuilt in1730. Image1 is STYLE ONLY. Images2,3,4 show the SAME actual hall, with cropped edges to be extended only to the authentic matching symmetrical roof ends. Preserve a NINE-BAY facade with EXACTLY TEN visible stone dragon columns in a single front row, and two roof tiers: a double-eaved HIP-AND-GABLE roof (重檐歇山顶). This is NOT the nine-bay hipped-roof hall at Dai Temple. Draw the broad upper roof with long ridge, two massive ridge-end ornaments and small corner ridge ornaments, and a second lower surrounding eave, both with gracefully lifted outer corners. No center finial, no third roof tier, no balcony. Keep the long shallow front porch, plain rear wall containing red-in-photo framed geometric lattice doors, and ten stone columns with selectively outlined coiling dragons, easily recognizable as carved stone columns, without filling tiny scales. The lower roof is wider than upper roof. Keep a wide stepped stone terrace with a central broad stairway split by a flat carved stone dragon ramp. Retain historic low stone balustrades as sparse outlines on both sides of central stairs and across the terrace; remove only modern black metal guardrails. The overall silhouette is broad and low, around2to1 width-to-height including roofs and terrace; not a tall pagoda. Remove foreground trees, people, umbrella stalls, incense burner in front of the middle door, signs, signage, flags, lights and all surrounding temple buildings. Keep only empty silhouettes of the central vertical plaque between eaves and small horizontal plaque above the central doorway; absolutely no writing or calligraphy. Reduce elaborate bracket bands and lattice doors to representative fine lines; surfaces all WHITE without black shadow fills. Roof planes are large white fields with ONLY a few separated roof-direction contour strokes; no every-tile repetition and no dense hatch. Full complete exterior from ridge to terrace base, approximately straight-on facade level, centered and vertical, at least8percent whitespace left/right and balanced margin above/below, landscape1536x1024.\n",
+  "initial_reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qufukongmiao-geometry-photo.jpg",
+    "assets/references/qufukongmiao-photo.jpg",
+    "assets/references/qufukongmiao-secondary-photo.jpg"
+  ],
+  "final_reference_files": [
+    "assets/references/qufukongmiao-initial-line.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/qufukongmiao-geometry-photo.jpg"
+  ],
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "purpose": "从母版+3张真实照片生成建筑线稿",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSubject: ONLY Dacheng Hall of the Temple of Confucius at Qufu, Shandong (曲阜孔庙大成殿), rebuilt in1730. Image1 is STYLE ONLY. Images2,3,4 show the SAME actual hall, with cropped edges to be extended only to the authentic matching symmetrical roof ends. Preserve a NINE-BAY facade with EXACTLY TEN visible stone dragon columns in a single front row, and two roof tiers: a double-eaved HIP-AND-GABLE roof (重檐歇山顶). This is NOT the nine-bay hipped-roof hall at Dai Temple. Draw the broad upper roof with long ridge, two massive ridge-end ornaments and small corner ridge ornaments, and a second lower surrounding eave, both with gracefully lifted outer corners. No center finial, no third roof tier, no balcony. Keep the long shallow front porch, plain rear wall containing red-in-photo framed geometric lattice doors, and ten stone columns with selectively outlined coiling dragons, easily recognizable as carved stone columns, without filling tiny scales. The lower roof is wider than upper roof. Keep a wide stepped stone terrace with a central broad stairway split by a flat carved stone dragon ramp. Retain historic low stone balustrades as sparse outlines on both sides of central stairs and across the terrace; remove only modern black metal guardrails. The overall silhouette is broad and low, around2to1 width-to-height including roofs and terrace; not a tall pagoda. Remove foreground trees, people, umbrella stalls, incense burner in front of the middle door, signs, signage, flags, lights and all surrounding temple buildings. Keep only empty silhouettes of the central vertical plaque between eaves and small horizontal plaque above the central doorway; absolutely no writing or calligraphy. Reduce elaborate bracket bands and lattice doors to representative fine lines; surfaces all WHITE without black shadow fills. Roof planes are large white fields with ONLY a few separated roof-direction contour strokes; no every-tile repetition and no dense hatch. Full complete exterior from ridge to terrace base, approximately straight-on facade level, centered and vertical, at least8percent whitespace left/right and balanced margin above/below, landscape1536x1024.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/qufukongmiao-geometry-photo.jpg",
+        "assets/references/qufukongmiao-photo.jpg",
+        "assets/references/qufukongmiao-secondary-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-75e60f56-a3c3-4f00-aa0a-3b96138a0338.png",
+      "accepted": false,
+      "note": "形制可用，但左右留白不足。"
+    },
+    {
+      "generation_tool": "built-in image_gen",
+      "purpose": "保持结构只缩小构图并减少屋面重复瓦线",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image1 is the black-on-white architectural drawing of Qufu Confucius Temple Dacheng Hall that was just generated. It is the EDIT TARGET. Image2 is the original Buddha line STYLE MASTER only. Image3 is the actual photo of this same Dacheng Hall for geometry verification. Make ONE composition correction to the drawing: uniformly reduce the entire illustrated building, terrace, staircase and stone balustrades to occupy exactly80percent of the1536pixel-wide canvas, preserving the same central axis, proportions, bay count and structure. The entire drawing must fit comfortably inside a bounding box with left edge at150pixels and right edge at1386pixels. Do NOT stretch any building parts. Do NOT move outer columns inward. Do NOT add or remove any column: keep exactlyTEN front stone dragon columns and NINE bays, the same two eave levels, dragon ramp, stairs, balustrades and roof ornaments. Give generous pure WHITE margins of at least150pixels on both left and right. Roof tips and terrace edge must have clear whitespace beyond them. Keep elegant fine black lines on purewhite, no shading. Also simplify repetitive tile-direction lines: erase about70percent of the parallel lines inside both large roof planes, retaining only spaced directional hints; leave outline, ridges and eaves unchanged. All other geometry and ornament should stay the same. No people, no labels or text, no watermark. Full canvas1536x1024.\n",
+      "reference_files": [
+        "assets/references/qufukongmiao-initial-line.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/qufukongmiao-geometry-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-0c944249-4897-4f59-9826-39240e398fab.png",
+      "accepted": true
+    }
+  ],
+  "verification": "已view_image核验母版、3张真实照片、初稿与最终PNG。前檐10根石龙柱形成9开间，2重屋顶、两端鸱吻、中央御路及台基成立；全结构居中，左右留白充足，细线屋面已简化，人物、树木、香炉、文字与现代黑护栏已去除。"
+}

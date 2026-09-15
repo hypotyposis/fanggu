@@ -1,0 +1,59 @@
+{
+  "id": "longxingchuang",
+  "name": "杭州龙兴寺经幢",
+  "subject": "杭州龙兴寺经幢 · 唐代幢身局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/longxingchuang.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longxing-detail-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longxing-detail2-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: longxingchuang.\nOBSERVED MATERIAL COLORS: Daylight through protective glass: surviving shaft is deep slate gray stone, large pale gray worn fracture bands; lotus collar on top pale gray stone with charcoal recesses. Main shaft fractures light gray and some white mineral wear, not beige or golden. Glass reflections of green trees, red wood enclosure and the separated RED upper stone are NOT part of depicted fragment; exclude their colors.\nSPECIFIC GEOMETRY LOCK: Only the damaged long shaft with its single lotus collar. Preserve jagged bottom, big branching crack paths and cropped fragment as original. No rebuilt cap, no new text. Calm graphite-gray planes, selected pale fracture regions; no camouflage spots or dense invented pitting.",
+  "material_observations": "Daylight through protective glass: surviving shaft is deep slate gray stone, large pale gray worn fracture bands; lotus collar on top pale gray stone with charcoal recesses. Main shaft fractures light gray and some white mineral wear, not beige or golden. Glass reflections of green trees, red wood enclosure and the separated RED upper stone are NOT part of depicted fragment; exclude their colors.",
+  "references": {
+    "original_record": "assets/research/longxingchuang.json",
+    "selected_photo_files": [
+      "assets/references/longxing-detail-photo.jpg",
+      "assets/references/longxing-detail2-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "file": "assets/references/longxing-detail-photo.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260803_Stone_Pillar_of_Longxing_Temple_03.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/20260803_Stone_Pillar_of_Longxing_Temple_03.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      },
+      {
+        "file": "assets/references/longxing-detail2-photo.jpg",
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260803_Stone_Pillar_of_Longxing_Temple_04.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/20260803_Stone_Pillar_of_Longxing_Temple_04.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/longxingchuang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-6f6bf135-056c-4279-9c13-1a3a410ebc6c.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看线稿、两张日间玻璃罩内近照、样本和输出。",
+      "保留幢身残片、莲瓣圈、分叉裂隙与不规则断口。",
+      "深灰石与浅灰裂隙区分，不复制玻璃树影或分离的红色上部，也未添文字。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "yuanqi",
+  "subject": "原起寺青龙塔与大雄宝殿",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_02.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20260405_Yuanqi_Temple_02.jpg/960px-20260405_Yuanqi_Temple_02.jpg",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20260405_Yuanqi_Temple_02.jpg/960px-20260405_Yuanqi_Temple_02.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20260405_Yuanqi_Temple_04.jpg/960px-20260405_Yuanqi_Temple_04.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yuanqi-tower-photo.jpg",
+    "assets/references/yuanqi-hall-photo.jpg"
+  ],
+  "source_note": "以2026-04-05两张同地点实拍核对青龙塔八角七级与大殿三开间。大殿原照前有香亭遮挡，未将香亭混入主体。模型曾少绘一层，经内置imagegen局部修正，最终逐层目视数清七道塔檐。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: a paired plate of YUANQI TEMPLE 原起寺: Qinglong Pagoda 青龙塔 at LEFT and the Main Hall 大雄宝殿 at RIGHT, on a shared ground baseline with a blank gap. Image 2 shows the complete actual octagonal seven-storey brick Qinglong pagoda from its front corner. Image 3 shows the Main Hall from its left front corner; the hall is the large hip-and-gable building at the LEFT/REAR of that photo, NOT the small four-column incense pavilion overlapping it at right. Recompose each subject nearly straight-on, eliminating the foreground pavilion entirely. Pagoda exactly SEVEN projecting eave tiers above a tall ground chamber with one arched doorway, octagonal shaft, distinctive repeated masonry dougong brackets under each of the seven eaves, gently diminishing silhouette, long ringed finial on lotus with two delicate support chains. No wooden balconies. Stylize bracket shapes into restrained outlines, no brick courses or masonry texture; just 2-3 contour lines per eave, no solid dark areas. Hall: single roof, exactly THREE bays, central double door flanked by one square straight-bar window on each side, plain masonry facade with no exposed porch columns, wide swept eaves, hip-and-gable roof with ornamental dragonlike ridge ends, modest stone plinth and three front steps. No second roof or protruding porch. Outline the correct actual hall from Image 3, not a generic hall. Pagoda total height about 1.9 times hall total height, hall width about 2.3 times pagoda width, landscape canvas 1536×1024, tallest finial at 10% and baseline at 89%, all parts fully visible with 8% blank margins. Delicate thin consistent organic pen stroke. Both roof and masonry surfaces are blank white with sparing structural lines, do not render complete tile or brick patterns. Remove ALL surrounding trees, buildings, railings, signs, fire equipment, trash cans, inscriptions, people, and distant scenery.\nMOST IMPORTANT ACCURACY CHECK: In the tower photograph the seven eaves are clearly visible. Draw the tower roof ridges centered at these SEVEN approximate y coordinates on the 1024px canvas: y=180, y=260, y=340, y=420, y=500, y=580, y=660. The tall arch-door chamber runs down from the lowest seventh roof at y=660 to the baseline at y=930. Finial is ABOVE the top roof at y=180. There MUST be seven separate projecting roofs, not six, not eight; seven bracket bands. Before finishing, count all seven complete roof tiers from top to bottom. Each top six roofs is separated from next by clear white neck space. The bottom seventh roof rests above the much taller arched-door chamber. Simplify fine details as needed to preserve exact seven roof silhouette. Generate fresh from the actual photo geometry.",
+  "edit_prompt": "Edit the supplied line drawing of a pagoda and hall. The PAGODA on the left needs exactly ONE ADDITIONAL ROOF EAVE added between its current lowest roof and the arched door. All SIX existing roofs from the top down must remain. Insert a NEW SEVENTH roof complete with its own bracket band at roughly y=715 (image is 1024 high), spanning x=145 to x=430. It is an EXTRA tier, so the result must have MORE tiers than this input. Reduce the tall ground-floor wall and shorten the doorway slightly to make space for that new eave. Do not replace or move away any of the existing six roof eaves. The new lowest roof should be a little wider than the roof directly above it, and have the same octagonal corner perspective and brick dougong outlines. The final tower has SEVEN eaves at y about 180, 250, 330, 410, 500, 600, and the NEW one at 715. Keep the right-hand hall exactly unchanged and preserve image size, pure white background and delicate black contour style. No labels or numbers or other changes.",
+  "generated_file": "assets/generated/yuanqi.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  }
+}

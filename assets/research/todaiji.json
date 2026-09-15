@@ -1,0 +1,116 @@
+{
+  "id": "todaiji",
+  "subject": "日本奈良东大寺南大门单体",
+  "source_page": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+  "image_url": "https://www.todaiji.or.jp/wp-content/uploads/2022/02/nandaimon00.jpg",
+  "author": "东大寺官网（单张摄影作者未标注）",
+  "license": "All Rights Reserved · 东大寺版权所有；页脚明确未经协议授权不得下载使用、复制、转载或加工，非开放许可",
+  "license_url": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+  "sources": [
+    {
+      "source_page": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+      "image_url": "https://www.todaiji.or.jp/wp-content/uploads/2022/02/nandaimon00.jpg",
+      "author": "东大寺官网（单张摄影作者未标注）",
+      "license": "All Rights Reserved · 东大寺版权所有；页脚明确未经协议授权不得下载使用、复制、转载或加工，非开放许可",
+      "license_url": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+      "reference_file": "assets/references/todaiji-official-root-photo.jpg",
+      "dimensions": [
+        1000,
+        563
+      ],
+      "note": "寺院官网南大门完整正面实景，作为现存建筑几何参考。重绘保留门体而去除人物、植被、灯牌、文字与院落背景；不声称来源照片具有开放授权。"
+    }
+  ],
+  "additional_sources": [],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/todaiji-official-root-photo.jpg",
+    "assets/references/todaiji-initial-line.png"
+  ],
+  "initial_reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/todaiji-official-root-photo.jpg"
+  ],
+  "final_reference_files": [
+    "assets/references/todaiji-initial-line.png",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "依据寺院官网正面实照重绘现存南大门，不画东大寺大佛殿。寺院明确1199年上梁、1203年与金刚力士像同时竣工；建筑为入母屋造五间三户二重门，大佛样。18大柱是整体柱数，不是正面柱数；实景正面六柱形成五间，中央三间为通道。",
+  "prompt": "Use case: precise-object-edit / style-transfer. Image1 is the generated Todaiji Nandaimon drawing to EDIT. Image2 is the original Buddha STYLE MASTER. Keep the gate's exact architecture and geometry unchanged: two broad tiled roof levels, six giant front columns forming five bays, three open central passageways, two solid outer compartments with upper lattice screens, continuous horizontal tie beams, blank plaque, and low plinth with central steps. Do not change the passage count, column count, bay count or roof layers.\nChange ONLY visual density and framing. Erase the dense repetitive lines representing each individual tile in BOTH roof planes, leaving at most8 widely separated delicate roof-direction strokes per level. The roof surfaces should be mostly BLANK WHITE like the areas of the Buddha drawing. Retain ridge contours and eave edges. Reduce the repeated side under-eave rafter lines to a few representative strokes. Remove all fine woodgrain marks from the six large columns and keep them WHITE inside their fine contours. Simplify each of the two lattice screens to only8 thin vertical strokes. Preserve the actual large structural tie-beam and projecting bracket outlines, but no hatch or dark fill.\nUniformly scale the ENTIRE gate drawing down so its complete widest roof tips span fromx170 tox1366 of the1536pixel canvas: approximately78percent width, without changing aspect ratio or relative architectural sizes. Center it atx768 and leave generous purewhite above ridge and below steps. There must be visibly ample blank margin beyond every corner. Remove the3thin modern lightning rods projecting vertically above the roof ridge; retain the historic ridges. No text, frame, labels, trees or people. Canvas1536x1024, sparse fine black ink on pureWHITE.\n",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSubject: ONLY the Nandaimon (Great South Gate) of Todaiji Temple, Nara, Japan (东大寺南大门), rebuilt1199–1203 in the Japanese Daibutsuyo style. Image1 is the Buddha STYLE MASTER ONLY. Image2 is the verified actual frontal official photograph of this gate and is the geometry authority. Preserve its Japanese medieval gate silhouette, exposed massive wooden structure and restrained roof shape; do not turn it into a Chinese palace, a pagoda or a closed Buddha hall.\nDraw the entire gate approximately straight-on, verticals vertical, minimal perspective, complete ridge-to-stair silhouette. It has EXACTLY TWO broad hipped-and-gabled tiled roof levels (Japanese irimoya), whose deep projecting eaves dominate the horizontal silhouette; the upper roof is only slightly narrower than the lower level. Preserve the shallow visible roof planes, broad exposed undersides with layered horizontal timber beams and projecting bracket arms, the long plain ridge, and modest raised tips visible in the photograph. No third roof, no lower mokoshi apron, no balcony railing, no central finial, no massive dragon roof ornaments.\nThe front has EXACTLY SIX large round timber columns creating FIVE bays. The THREE CENTRAL BAYS are tall OPEN PASSAGEWAYS, and the TWO END BAYS are enclosed timber compartments for guardian statues: solid low timber panels with small vertical lattice screens above. Do not draw five open doors. Keep all THREE open passages as WHITE empty space with only a few structural depth lines; remove all landscape and distant buildings seen through them. Do not add a column at the center axis. The gate has18major columns TOTAL in depth; do not depict18columns across the front. Preserve the continuous verticality of the tall shafts, the conspicuous horizontal tie-beam courses penetrating and tying the frame, and the bracket arms protruding from the column lines. Use lightly outlined wood, no filled black timber or shadow.\nAt the center between the two eave levels, keep the simple rectangular shape of the suspended horizontal plaque but make it BLANK, with no Chinese or Japanese text. Keep a simple low stone foundation and broad central shallow stairway. Remove the front lanterns and their small canopy stands, people, trees, signs, lamps, fences, ropes, wall surroundings and all neighboring architecture. Do not add visible guardian figures outside the two end compartments.\nVisual density must match the sparse Buddha mother image: exterior contours slightly stronger, a few fine internal structural lines, every broad surface pure WHITE. Within each tiled roof plane use ONLY6 to8 separated directional strokes, no every-tile grid. Under the eaves, show just the main beam and bracket outline without repeated dense rafter hatch. Wood panels have at most2to3 spaced seams. Lattice screens have only6to8 fine vertical strokes. Keep no woodgrain or grey shading. Full canvas1536x1024 landscape. Reduce the whole gate to fit comfortably within x=150 to x=1386, about80percent of the canvas width, centered; full upper and lower roof tips, foundation edges, and stair foot uncut, clear white around every edge.\n",
+  "generated_file": "assets/generated/todaiji.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-f331d112-4907-4e40-abf8-25f92f0e451b.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "东大寺 · 南大门正面",
+    "镰仓时代 · 1199—1203年重建"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+      "publisher": "东大寺官方网站",
+      "supports": "1199年上梁、1203年与仁王像同时竣工；重源重建，大佛样；入母屋造、五间三户二重门，18根大圆柱、门高25.46米。",
+      "note": "中文页将大佛样误写为“大佛像”，本条按建筑术语规范为大佛样；1199上梁与1203竣工分别记录。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "东大寺",
+    "short": "东大寺",
+    "sub": "奈良 · 南大门",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "镰仓时代",
+    "year": 1203,
+    "yearLabel": "1199—1203",
+    "yearApprox": false,
+    "year_note": "1199为上梁年，1203为门与金刚力士像竣工年；时间轴用1203，非东大寺8世纪初创年。",
+    "type": "gate",
+    "typeLabel": "山门",
+    "place": "日本 · 奈良县 · 奈良市",
+    "placeKey": "nara",
+    "lat": 34.685789,
+    "lon": 135.8398,
+    "coords": [
+      135.8398,
+      34.685789
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Nandaimon,_Todaiji",
+    "coordinate_note": "南大门类别公开点位34°41′08.84″N、135°50′23.28″E换算；公开地图近似位置。",
+    "lede": "南大门以贯通高处的圆柱和层层横贯的梁木显出大佛样的结构力量。三条通道穿过宽阔的两重屋檐下，两侧仁王像守住通往东大寺的入口。",
+    "facts": [
+      "现存南大门由重源主持重建，1199年上梁，1203年与门内金刚力士像同时竣工。",
+      "山门采用入母屋造（歇山顶），正面五间、中央三户，具有两重屋檐，是大佛样建筑的重要遗存。",
+      "全门共有18根大圆柱，正面六柱划分五间；据寺院资料，门高自基坛以上为25.46米。"
+    ]
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSubject: ONLY the Nandaimon (Great South Gate) of Todaiji Temple, Nara, Japan (东大寺南大门), rebuilt1199–1203 in the Japanese Daibutsuyo style. Image1 is the Buddha STYLE MASTER ONLY. Image2 is the verified actual frontal official photograph of this gate and is the geometry authority. Preserve its Japanese medieval gate silhouette, exposed massive wooden structure and restrained roof shape; do not turn it into a Chinese palace, a pagoda or a closed Buddha hall.\nDraw the entire gate approximately straight-on, verticals vertical, minimal perspective, complete ridge-to-stair silhouette. It has EXACTLY TWO broad hipped-and-gabled tiled roof levels (Japanese irimoya), whose deep projecting eaves dominate the horizontal silhouette; the upper roof is only slightly narrower than the lower level. Preserve the shallow visible roof planes, broad exposed undersides with layered horizontal timber beams and projecting bracket arms, the long plain ridge, and modest raised tips visible in the photograph. No third roof, no lower mokoshi apron, no balcony railing, no central finial, no massive dragon roof ornaments.\nThe front has EXACTLY SIX large round timber columns creating FIVE bays. The THREE CENTRAL BAYS are tall OPEN PASSAGEWAYS, and the TWO END BAYS are enclosed timber compartments for guardian statues: solid low timber panels with small vertical lattice screens above. Do not draw five open doors. Keep all THREE open passages as WHITE empty space with only a few structural depth lines; remove all landscape and distant buildings seen through them. Do not add a column at the center axis. The gate has18major columns TOTAL in depth; do not depict18columns across the front. Preserve the continuous verticality of the tall shafts, the conspicuous horizontal tie-beam courses penetrating and tying the frame, and the bracket arms protruding from the column lines. Use lightly outlined wood, no filled black timber or shadow.\nAt the center between the two eave levels, keep the simple rectangular shape of the suspended horizontal plaque but make it BLANK, with no Chinese or Japanese text. Keep a simple low stone foundation and broad central shallow stairway. Remove the front lanterns and their small canopy stands, people, trees, signs, lamps, fences, ropes, wall surroundings and all neighboring architecture. Do not add visible guardian figures outside the two end compartments.\nVisual density must match the sparse Buddha mother image: exterior contours slightly stronger, a few fine internal structural lines, every broad surface pure WHITE. Within each tiled roof plane use ONLY6 to8 separated directional strokes, no every-tile grid. Under the eaves, show just the main beam and bracket outline without repeated dense rafter hatch. Wood panels have at most2to3 spaced seams. Lattice screens have only6to8 fine vertical strokes. Keep no woodgrain or grey shading. Full canvas1536x1024 landscape. Reduce the whole gate to fit comfortably within x=150 to x=1386, about80percent of the canvas width, centered; full upper and lower roof tips, foundation edges, and stair foot uncut, clear white around every edge.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/todaiji-official-root-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-6fd30275-9680-420d-9d60-8ef4fff8a26c.png",
+      "accepted": false,
+      "note": "门体、五间三户及两重檐正确，但瓦纹和木纹偏密，左右留白不足。"
+    },
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit / style-transfer. Image1 is the generated Todaiji Nandaimon drawing to EDIT. Image2 is the original Buddha STYLE MASTER. Keep the gate's exact architecture and geometry unchanged: two broad tiled roof levels, six giant front columns forming five bays, three open central passageways, two solid outer compartments with upper lattice screens, continuous horizontal tie beams, blank plaque, and low plinth with central steps. Do not change the passage count, column count, bay count or roof layers.\nChange ONLY visual density and framing. Erase the dense repetitive lines representing each individual tile in BOTH roof planes, leaving at most8 widely separated delicate roof-direction strokes per level. The roof surfaces should be mostly BLANK WHITE like the areas of the Buddha drawing. Retain ridge contours and eave edges. Reduce the repeated side under-eave rafter lines to a few representative strokes. Remove all fine woodgrain marks from the six large columns and keep them WHITE inside their fine contours. Simplify each of the two lattice screens to only8 thin vertical strokes. Preserve the actual large structural tie-beam and projecting bracket outlines, but no hatch or dark fill.\nUniformly scale the ENTIRE gate drawing down so its complete widest roof tips span fromx170 tox1366 of the1536pixel canvas: approximately78percent width, without changing aspect ratio or relative architectural sizes. Center it atx768 and leave generous purewhite above ridge and below steps. There must be visibly ample blank margin beyond every corner. Remove the3thin modern lightning rods projecting vertically above the roof ridge; retain the historic ridges. No text, frame, labels, trees or people. Canvas1536x1024, sparse fine black ink on pureWHITE.\n",
+      "reference_files": [
+        "assets/references/todaiji-initial-line.png",
+        "assets/references/longmen-style-black.png"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-f331d112-4907-4e40-abf8-25f92f0e451b.png",
+      "accepted": true,
+      "note": "保持六柱五间三通道，将瓦面与柱面纹理简化、删除现代避雷杆，并缩小居中留白。"
+    }
+  ],
+  "verification": "已view_image核验官网实景、母版、初稿与最终PNG。最终两重檐、正面六大柱、五间与中央三条开口通道正确，两端为木板与格栅围合；梁木水平层次保留，屋面稀疏无密集瓦格或黑填色，全部檐角及台基完整留白。未画人物、树木、门后远景、灯牌、匾额文字或避雷杆。"
+}

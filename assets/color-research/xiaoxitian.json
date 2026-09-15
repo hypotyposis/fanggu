@@ -1,0 +1,57 @@
+{
+  "id": "xiaoxitian",
+  "name": "隰县小西天",
+  "subject": "隰县小西天大雄宝殿中央主龛、悬塑楼阁与群像局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xiaoxitian.png",
+    "assets/references/xiaoxitian-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 隰县小西天大雄宝殿中央主龛、悬塑楼阁与群像局部.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST line master's exact SELECTED CENTRAL Xiaoxitian hanging-sculpture group: central seated Buddha with hands together, two standing attendants, two narrow hanging multi-level miniature towers beside them, horizontal palace group above and hanging scrolls. Follow CURRENT indoor photograph, not an imaginary restored full temple. Central Buddha face and skin worn muted antique gold with gray-brown patina, hair blue-black; robe largely warm gray-brown with broad surviving muted gold sections and dusty red edging, not uniform brilliant golden robe. Attendants have antique gold faces, faded teal/jade green outer garments, dusty red/pink hanging scarves/skirts and gray-cream inner sections. Upper palace roofs/framing largely aged jade/teal green, maroon/red rails and tiny muted gold figurines/details; hanging towers green/cream roofs with muted red borders, tiny figures varied pale gray/green/gold. Pendant floral scrolls dusty rose and cream with green areas. All subtle grain/matte pigment, retain quiet dark void behind main Buddha and original crop. Gold only where actual gilding survives; never make all ornament yellow. No words, photo watermark, additional neighboring huge Buddha statues, or new architecture.\nPreserve the original line master aspect ratio 1024:1536.",
+  "material_observations": "已查看原线稿及新华社2024年9月5日正常室内实拍，非数字复原。主尊面、袍衣局部残金，衣身灰褐配红边；两胁侍可见青绿披帛外衣、暗红裙带和残金面部。上方与两旁悬塑天宫多青绿、红与浅色边，微型像有金色；保持中央局部及两胁侍，排除照片两边其他大佛。",
+  "references": [
+    {
+      "source_page": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/c.html",
+      "image_url": "https://jp.xinhuanet.com/20241007/280264a0653a474aad48ced09b1a97c7/20241007280264a0653a474aad48ced09b1a97c7_2024101073ed6f8df562452788f9b0ae4a3e262b.jpg",
+      "author": "王学涛（新华社）",
+      "license": "版权保留；未公布开放再利用许可",
+      "license_url": null,
+      "reference_file": "assets/references/xiaoxitian-photo.jpg",
+      "dimensions": {
+        "width": 1007,
+        "height": 755
+      },
+      "date": "2024-09-05",
+      "role": "大雄宝殿中央主龛、左右悬挂阁楼及其上方天宫群像的近正面实拍",
+      "file": "assets/references/xiaoxitian-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/xiaoxitian.json",
+  "output": "assets/colored/xiaoxitian.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c87d8cf8-504a-4d54-832d-eefbf4d6d08b.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：中央合掌主尊、两位胁侍、两旁各三层悬塑小阁及横向天宫组保留。青绿、红粉、灰衣与残金分布依据实拍；佛面与衣纹为艺术概括，未宣称古代原色复原。无新增两侧大佛或文字，局部构图暗部留白一致。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 隰县小西天大雄宝殿中央主龛、悬塑楼阁与群像局部.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST line master's exact SELECTED CENTRAL Xiaoxitian hanging-sculpture group: central seated Buddha with hands together, two standing attendants, two narrow hanging multi-level miniature towers beside them, horizontal palace group above and hanging scrolls. Follow CURRENT indoor photograph, not an imaginary restored full temple. Central Buddha face and skin worn muted antique gold with gray-brown patina, hair blue-black; robe largely warm gray-brown with broad surviving muted gold sections and dusty red edging, not uniform brilliant golden robe. Attendants have antique gold faces, faded teal/jade green outer garments, dusty red/pink hanging scarves/skirts and gray-cream inner sections. Upper palace roofs/framing largely aged jade/teal green, maroon/red rails and tiny muted gold figurines/details; hanging towers green/cream roofs with muted red borders, tiny figures varied pale gray/green/gold. Pendant floral scrolls dusty rose and cream with green areas. All subtle grain/matte pigment, retain quiet dark void behind main Buddha and original crop. Gold only where actual gilding survives; never make all ornament yellow. No words, photo watermark, additional neighboring huge Buddha statues, or new architecture.\nPreserve the original line master aspect ratio 1024:1536.",
+      "input_images": [
+        "assets/generated/xiaoxitian.png",
+        "assets/references/xiaoxitian-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c87d8cf8-504a-4d54-832d-eefbf4d6d08b.png",
+      "output": "assets/colored/xiaoxitian.png"
+    }
+  ]
+}

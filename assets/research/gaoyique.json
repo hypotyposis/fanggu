@@ -1,0 +1,88 @@
+{
+  "id": "gaoyique",
+  "subject": "雅安高颐阙西侧子母阙近正视",
+  "caption": [
+    "高颐阙 · 西侧子母阙",
+    "近正视 · 东汉建安十四年"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gaoyi_Que%28Front%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Gaoyi_Que%28Front%29.jpg",
+      "author": "Song Yanbo",
+      "date": "2018-02-07",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/gaoyique-front-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gao_Yi_Que1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Gao_Yi_Que1.jpg",
+      "author": "Zeus1234",
+      "date": "2009-07-22",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/gaoyique-photo.jpg"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gaoyique-front-photo.jpg",
+    "assets/references/gaoyique-photo.jpg"
+  ],
+  "source_note": "已查看2018年Song Yanbo近正面与2009年Zeus1234斜侧实照。绘保存较完整的西侧子母阙，不将东阙复原为对称完整形态。采用照片原有主左耳右布局；照片命名Front不足以单独证实绝对方位，最终caption只称近正视。生成时提示词north为当时依据题铭所作的暂定判断，未将其作为最终方向结论。保留共基座、主阙四层阙身、仿木斗栱及较低耳阙、实际断裂接缝。摄影中的保护钢架和文字已省略。AI线描转绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER (Vairocana Buddha contour drawing): match its elegant delicate slightly organic thin black lines, sparse detail and generous white spaces. Image 2 is the primary SUBJECT GEOMETRY: the actual surviving western compound Gao Yi Que 高颐阙 at Ya'an, Sichuan, photographed in 2018 from the inscription-bearing north side. Image 3 is a supporting angled photograph of the SAME compound que for roof and base depth.\nDraw this ONE western compound stone que, consisting of the tall main tower on LEFT and its attached much shorter child/ear tower on RIGHT, linked at the side and sharing a low elongated rectangular base. This is NOT two free-standing independent gate towers. Preserve its exact unequal outline, main rectangular shaft made of four stone courses with shallow stone-carved columns, elaborate stepped interlocking bracket-like blocks above the shaft, a low carved frieze immediately below its single broad stone hip-roof cap, and the small attached ear tower's single lower stone roof. The small tower's roof sits approximately at the level of the bottom of the main bracket assembly. Preserve the actual worn roof profile, slightly curved tile-shaped stone eaves, existing tall central ridge-end profile, visible stepped corner blocks and a few representative relief figures in very spare contour. Keep existing broken edges and the visible large central joint/gap in the bracket assembly, do not reconstruct missing carved pieces. Remove all inscriptions.\nCreate refined sparse BLACK INK ON PURE WHITE line drawing. All surfaces WHITE. Fine outer contours with even finer structural lines. No black shadow fills, no grey wash, no crosshatching, no pencil texture, no dense stonegrain or brick patterns. Architectural structure matters more than reproducing every carving. Do not add a second complete eastern que or any pavilion.\nPortrait 1024×1536, approximately frontal eye-level, verticals vertical, mild visible side depth. Complete combined monument centered occupying 82% canvas height with full roof ends and base safely inside margins. Only a few short ground lines. Remove protective steel roof, trees, surrounding buildings, fences, people, wheelchairs, paving and signs. No letters, captions, labels, dimensions, watermark, border, frame or color.",
+  "generated_file": "assets/generated/gaoyique.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-e0837b5f-6386-4012-8beb-25c7f954917d.png",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "龙年说“龙”系列报道（二）：石器之“龙”",
+      "url": "https://www.yaan.gov.cn/zhangzhe/show/a812aca8-1f51-441b-9363-8ebcb9cc0524.html",
+      "publisher": "雅安市人民政府",
+      "supports": "青江街道汉碑路社区；东汉建安十四年209；双阙并立，西阙较完整、东阙残缺；神话及历史题材石刻。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "高颐阙",
+      "url": "https://wgtl.yaan.gov.cn/xinwen/show/145c283b51c60aa8d8400fb0331d08b1.html",
+      "publisher": "雅安市文化广播电视体育和旅游局",
+      "supports": "东阙已残、西阙完整；仿木石结构，209年高颐去世后立碑建阙。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "高颐墓阙及石刻",
+      "url": "https://zh.wikipedia.org/wiki/高颐墓阙及石刻",
+      "supports": "坐标30.02333,103.05278；主阙5.9米、阙身四层，连接耳阙；据《四川汉代石阙》转述。"
+    }
+  ],
+  "verification": {
+    "input": "2018近正面与2009斜侧照片均view_image检查。",
+    "output": "已view_image核验：西侧子母阙两部分均在，主高耳低、共基座；檐口和基座未裁切，黑细线白底，无现代保护建筑。"
+  },
+  "site_recommendation": {
+    "name": "高颐阙",
+    "short": "高颐阙",
+    "sub": "雅安 · 石刻子母阙",
+    "dyn": "han",
+    "tag": "东汉",
+    "era": "东汉 · 建安十四年",
+    "year": 209,
+    "yearLabel": "209年",
+    "yearApprox": false,
+    "place": "四川 · 雅安 · 雨城",
+    "placeKey": "四川",
+    "lat": 30.02333,
+    "lon": 103.05278,
+    "lede": "雅安汉碑路旁，高颐墓前的石阙将汉代木构形制凝在红砂岩中。西阙保存着主阙与耳阙相连的高低轮廓。",
+    "facts": [
+      "建于东汉建安十四年（209），为益州太守高颐墓前的仪仗建筑。",
+      "原为东西双阙，西侧子母阙保存较完整；图版按实照绘西阙，不复原残损东阙。",
+      "石阙以斗栱、楼部和屋檐模拟木构，雕刻中兼见历史故事、神兽与出行题材。"
+    ]
+  }
+}

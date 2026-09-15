@@ -1,0 +1,53 @@
+{
+  "id": "hb_cangzhoulion",
+  "name": "沧州铁狮子",
+  "subject": "沧州铁狮子 · 旧州现存铁狮原物（保留残缺）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hb_cangzhoulion.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/hb_cangzhoulion-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: hb_cangzhoulion.\nOBSERVED MATERIAL COLORS: The ORIGINAL Cangzhou Iron Lion in daylight is severely weathered cast iron, dull dark grey-brown with restrained rusty reddish and ochre patches, not gold or green bronze. Lotus basin and curled mane are same corroded iron. Existing steel supporting tubes are faded brick-red/red oxide paint, darker at joints. Platform is neutral pale grey stone. Apply calm matte planes with subtle grain; do not reproduce all photographic pitting as dense noise.\nSPECIFIC GEOMETRY LOCK: Keep all original drawing geometry, direction facing right, broken open mouth and missing parts, back lotus basin, leg cracks, and EVERY visible red steel support tube and brace. The support is integral to this current-state drawing and MUST NOT be removed. Dark background visible through mouth and underbody gaps. No repairs, no new whole teeth or restored tail, no environment.",
+  "material_observations": "The ORIGINAL Cangzhou Iron Lion in daylight is severely weathered cast iron, dull dark grey-brown with restrained rusty reddish and ochre patches, not gold or green bronze. Lotus basin and curled mane are same corroded iron. Existing steel supporting tubes are faded brick-red/red oxide paint, darker at joints. Platform is neutral pale grey stone. Apply calm matte planes with subtle grain; do not reproduce all photographic pitting as dense noise.",
+  "references": {
+    "original_record": "assets/research/hb_cangzhoulion.json",
+    "selected_photo_files": [
+      "assets/references/hb_cangzhoulion-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E6%B2%A7%E5%B7%9E%E9%93%81%E7%8B%AE%E5%AD%902020_%284%29.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/%E6%B2%A7%E5%B7%9E%E9%93%81%E7%8B%AE%E5%AD%902020_%284%29.jpg",
+        "author": "ScareCriterion12",
+        "date": "19 September 2020, 15:13:30",
+        "source": "Own work",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "license": "CC BY-SA 4.0",
+        "reference_file": "assets/references/hb_cangzhoulion-photo.jpg",
+        "reference_dimensions": {
+          "width": 5846,
+          "height": 3724
+        }
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/hb_cangzhoulion.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-eabc0148-622e-4ca7-8776-5322eead6902.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "向右侧面的残狮、背部莲盆、断口裂缝与原稿所含支撑架均保留。",
+      "狮体为哑光灰褐铁锈色，支撑架为褪色红漆钢管，灰石底座对应现状照片。",
+      "嘴部和支架间透空保留，未补回缺失部位或加入现代新狮。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

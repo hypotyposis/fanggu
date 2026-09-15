@@ -1,0 +1,39 @@
+{
+  "id": "sx_jishan_qinglong",
+  "name": "稷山青龙寺",
+  "subject": "稷山青龙寺腰殿西壁三世佛壁画局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_jishan_qinglong.png",
+    "assets/references/sx_jishan_qinglong-mural-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nJishan Qinglong Temple waist hall western-wall Three Buddhas mural detail: exactly THREE main seated Buddhas, TWO disciples between them, TWO small attendant figures at the outer ends, all lotus bases, clouds and central canopy as line master. This is a FLAT PAINTED MURAL, no sculptural stone or gold statues. Match faded surviving mural colors: left and right Buddha outer robes muted burgundy/plum red, inner folds cool grey-green and dark blue-grey with small ivory details. Center Buddha robes predominantly chalky grey-white with dark charcoal/blue-green folds. Faces/chests/hands faded warm ochre pigment, hair dark slate. Lotus petals pale grey-green/ivory, plinths dark muted blue-green and maroon with restrained ochre details. Halos faded beige-grey, central halo pale grey-green. Disciples muted grey-green, side attendants dark blue-green/maroon, clouds very faded grey-beige. Keep thin legible painted contours. Do not invent fresh gold or bright saturated restoration; do not copy photo's large wall cracks or add complete rectangular wall. All surrounding empty space flat #100f0d; color only existing drawn elements.",
+  "material_observations": "照片中的三佛面部为褪色土黄，左右佛衣以暗紫红、灰青绿为主，中佛衣灰白和深灰青；莲瓣灰绿与灰白，圆光灰米与灰绿。整体是现存平面壁画残彩。",
+  "references": [
+    {
+      "file": "assets/references/sx_jishan_qinglong-mural-photo.jpg",
+      "source_page": "https://www.thepaper.cn/newsDetail_forward_28025318",
+      "image_url": "https://imagepphcloud.thepaper.cn/pph/image/313/236/249.jpg",
+      "author": "稷山县文物保护中心公众号，摄影者未单独署名",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 677,
+        "height": 355
+      },
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/sx_jishan_qinglong.png",
+  "width": 1536,
+  "height": 1024,
+  "worker": "main",
+  "prepared_at": "2026-09-15T12:12:49.417Z",
+  "input_review": "本任务已实际查看所有输入图；按具体图版主体记录现存实拍色区。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-c09157c4-37a1-424a-917e-403971294538.png",
+  "generated_at": "2026-09-15T12:24:13.116780+00:00",
+  "visual_review": "已实看：三主佛、两弟子、两端胁侍、莲台和宝盖保留平面壁画布局；左右暗紫红与灰绿、中间灰白深青、土黄面部对应残彩照片，无金塑效果或整面墙体。照片分辨率有限，色区为艺术概括。 未作色彩校准或逐像素对齐。",
+  "completed_at": "2026-09-15T12:38:37.811505+00:00"
+}

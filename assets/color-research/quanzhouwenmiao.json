@@ -1,0 +1,35 @@
+{
+  "id": "quanzhouwenmiao",
+  "name": "泉州府文庙",
+  "subject": "泉州府文庙大成殿",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/quanzhouwenmiao.png",
+    "assets/references/quanzhouwenmiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 泉州府文庙大成殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep EXACT wide original aspect ratio1678:937 and all contours: two hipped roof tiers with upward curls and small central ornament, seven bays, eight total front supports including central carved stone columns, three open central doorways, low platform and broad centersteps plus two short sides. Photo color: muted terracotta-ochre / sandy orange tile fields with thin pale yellow ribs, green glazed eave edges and small colored ridge ornaments (blue, offwhite, muted red/green). Timber rafters/beams dark maroon and redbrown. Door panels muted dusty rose-red with offwhite/gray light borders and dark lattice. All stone columns including carved dragons and outer square/round plain supports pale warmgray stone, NEVER red wooden columns. End wallpanels ivory-gray stone/plaster relief with restrained pale rose-beige details. Podium steps coolgray stone. Slim band betweenroof tiers sparse bluegreen/ochre ornament. No dense carving invented, signageletters, trees, people or incenseburners.\nPreserve original canvas aspect ratio 1678:937.",
+  "material_observations": "实看2019-03-15正面照：屋瓦偏赭橙、浅黄脊线，檐边局部绿色琉璃，屋脊小型多色饰件；门扇为暗粉朱红、浅灰边框，梁枋深红褐。龙柱与两端素柱均灰白石材，侧端壁板浅灰米白。台阶灰石；香炉、树和人物不入图。保持1678×937线稿宽比例。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Confucian_Temple_Dacheng_Hall_2019_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Quanzhou_Confucian_Temple_Dacheng_Hall_2019_%281%29.jpg/1280px-Quanzhou_Confucian_Temple_Dacheng_Hall_2019_%281%29.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/quanzhouwenmiao.png",
+  "prepared_at": "2026-09-15T20:13:39.262290+08:00",
+  "original_research": "assets/research/quanzhouwenmiao.json",
+  "visual_review": "已实看实照、线稿、输出和风格样图；1678×937宽图比例保留，双檐七间、四根雕龙柱和四根素石柱依线稿保留，中央三门与低台阶关系一致。灰白石柱未染红，门扇暗粉红、瓦面浅赭橙、绿檐边及多色脊饰有照片依据。无香炉、树、人、文字；瓦纹细化未增加屋顶或结构。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-8fbff715-8ced-4833-bb86-7dce07166a04.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-8fbff715-8ced-4833-bb86-7dce07166a04.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:16:31.835579+08:00",
+  "width": 1678,
+  "height": 937,
+  "reviewed_at": "2026-09-15T20:18:17.112671+08:00"
+}

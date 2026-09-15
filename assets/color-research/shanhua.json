@@ -1,0 +1,56 @@
+{
+  "id": "shanhua",
+  "name": "善化寺",
+  "subject": "大同善化寺普贤阁",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/shanhua.png",
+    "assets/references/shanhua-photo.jpg",
+    "assets/references/shanhua-front-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Puxian Pavilion, Shanhua Temple. Retain line drawing's exact two-storey three-bay pavilion, two roof eaves, middle open balcony, three small ridge finials, central upper double door and open lower doorway. Photos show actual grey ceramic tile roofs and grey ridge ornaments; weathered dark grey-brown timber brackets/columns, faded red-brown balcony railing; dusty red-pink plaster walls on both levels. Pale grey brick skirts, grey-and-muted-tan stone terrace and grey stairs. Upper door dark brown aged wood, lower opening near-black empty as line master. Do not add the photo's plaque, sculpture, tree or incense burner. Do not turn old grey timber into gold or apply bright new vermilion throughout.",
+  "material_observations": [
+    "善化寺普贤阁两张日间照片均见灰瓦、朱红至粉红墙体，灰褐色旧柱及斗栱。",
+    "木栏杆是风化暗红褐，底部墙裙浅灰砖，台基灰黄石材；原稿未画匾额及殿内塑像。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/shanhua-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg/1280px-%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    },
+    {
+      "file": "assets/references/shanhua-front-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Datong_Shanhua_Si_2013.08.29_12-39-50.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Datong_Shanhua_Si_2013.08.29_12-39-50.jpg/1280px-Datong_Shanhua_Si_2013.08.29_12-39-50.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "未知",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/shanhua.json",
+  "output": "assets/colored/shanhua.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-ba2f0a34-09a8-4a71-9902-21d6620b1c01.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "两层两檐与平座栏杆、三枚脊顶饰保持原稿，完整未裁切。",
+      "红粉抹墙、深灰褐旧木与灰瓦、浅砖墙裙分别设色。",
+      "主门洞保持近黑，未增加殿内象塑、匾额或庭院树木。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T09:49:04.875Z"
+}

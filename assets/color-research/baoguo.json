@@ -1,0 +1,62 @@
+{
+  "id": "baoguo",
+  "name": "宁波保国寺",
+  "subject": "宁波保国寺大殿",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/baoguo.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/baoguo-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 宁波保国寺大殿.\nOBSERVED MATERIAL COLORS: Viewed 2012 ordinary daylight full main hall photo. Both upper and subsidiary roofs grey clay tiles, partly warm buff-grey in sunlight; ridge screens and ornaments grey-brown ceramic masonry, not gold. Visible columns, lower eave beam strip, window frames and wall/door panels dark muted red-brown. Recessed brackets and upper band dark brown timber. Door and window interior apertures near-black, stone plinth and steps muted grey. Warm natural photo exposure does not justify a uniform yellow cast; use neutral grey roofing.\nSPECIFIC GEOMETRY LOCK: Preserve original two-eave profile including later surrounding lower eave, broad main roof and distinctive upturned tips. Keep all front posts including thin outer props, original central entrance, window groupings, blank wall panels, low plinth and central steps. Do not add lake, railing, palm, new signboard, text, figures or side buildings. Original central entry may remain open dark without statue. Restrained calm texture.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "Viewed 2012 ordinary daylight full main hall photo. Both upper and subsidiary roofs grey clay tiles, partly warm buff-grey in sunlight; ridge screens and ornaments grey-brown ceramic masonry, not gold. Visible columns, lower eave beam strip, window frames and wall/door panels dark muted red-brown. Recessed brackets and upper band dark brown timber. Door and window interior apertures near-black, stone plinth and steps muted grey. Warm natural photo exposure does not justify a uniform yellow cast; use neutral grey roofing.",
+  "references": {
+    "original_record": "assets/research/baoguo.json",
+    "selected_photo_files": [
+      "assets/references/baoguo-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Daxiong_Hall_in_Baoguo_Temple.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Daxiong_Hall_in_Baoguo_Temple.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "date": "未知（原记录未明确提供）",
+        "source_note": "2012年宁波保国寺大殿前方略低斜视照片，保留现状副阶重檐，正面化重绘并移除池塘绿化。"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/baoguo.json",
+  "output": "assets/colored/baoguo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-df0a6662-3764-48bf-b457-a7ca376225fb.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 宁波保国寺大殿.\nOBSERVED MATERIAL COLORS: Viewed 2012 ordinary daylight full main hall photo. Both upper and subsidiary roofs grey clay tiles, partly warm buff-grey in sunlight; ridge screens and ornaments grey-brown ceramic masonry, not gold. Visible columns, lower eave beam strip, window frames and wall/door panels dark muted red-brown. Recessed brackets and upper band dark brown timber. Door and window interior apertures near-black, stone plinth and steps muted grey. Warm natural photo exposure does not justify a uniform yellow cast; use neutral grey roofing.\nSPECIFIC GEOMETRY LOCK: Preserve original two-eave profile including later surrounding lower eave, broad main roof and distinctive upturned tips. Keep all front posts including thin outer props, original central entrance, window groupings, blank wall panels, low plinth and central steps. Do not add lake, railing, palm, new signboard, text, figures or side buildings. Original central entry may remain open dark without statue. Restrained calm texture.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/baoguo.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/baoguo-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-df0a6662-3764-48bf-b457-a7ca376225fb.png",
+      "generated_at": "2026-09-15T11:58:07.473009+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2012实拍、样本与结果；现状副阶重檐、尖翘檐角、全部前柱及两组窗与中央入口保留。",
+      "灰瓦灰陶脊饰、深红褐木构墙窗与灰石台基依照照片，没有金色釉面处理。",
+      "未加入池塘、绿化、题字或人像，原立面及边缘完整。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

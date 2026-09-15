@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>访古 · 设色小样</title>
+  <meta name="description" content="卢舍那大佛、佛光寺东大殿与应县木塔的矿物淡彩设色小样。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono&display=swap">
+  <link rel="stylesheet" href="style.css?v=20260915-timeline1">
+  <link rel="stylesheet" href="color-studies.css?v=1">
+  <script src="color-studies.js?v=1" defer></script>
+</head>
+<body class="color-study">
+  <header class="study-top">
+    <a href="index.html#atlas">← 访古图鉴</a>
+    <span>图版试色 <span class="study-number">/ 01</span></span>
+  </header>
+  <main class="study-main">
+    <div class="study-intro">
+      <div><p class="study-kicker">矿物淡彩 · 三处小样</p><h1>把走过的地方，慢慢填满。</h1></div>
+      <p>未到访时，以线勾勒。<br>亲眼见过，让石与木有了颜色。</p>
+    </div>
+
+    <div class="study-selector" role="group" aria-label="选择设色小样">
+      <button type="button" data-study="longmenshiku" aria-pressed="true"><span>01</span>卢舍那大佛</button>
+      <button type="button" data-study="foguang" aria-pressed="false"><span>02</span>佛光寺东大殿</button>
+      <button type="button" data-study="yingxian" aria-pressed="false"><span>03</span>应县木塔</button>
+    </div>
+
+    <section class="study-viewer" aria-label="图版对照" data-mode="compare">
+      <div class="study-toolbar">
+        <span class="study-period" id="study-period">唐 · 暖金</span>
+        <div class="study-modes" role="group" aria-label="图版显示方式">
+          <button type="button" data-mode="compare" aria-pressed="true">并排对照</button>
+          <button type="button" data-mode="line" aria-pressed="false">线稿</button>
+          <button type="button" data-mode="color" aria-pressed="false">设色</button>
+        </div>
+      </div>
+      <div class="study-stage" id="study-stage">
+        <figure class="study-original">
+          <figcaption><span class="study-status">未到访</span><span>留白 · 线稿</span></figcaption>
+          <div class="study-image"><img id="line-image" src="assets/longmen-vairocana.png" alt="卢舍那大佛 · 原始线稿" width="1024" height="1536"></div>
+        </figure>
+        <figure class="study-filled">
+          <figcaption><span class="study-status filled" id="filled-status">已到访</span><span id="filled-caption">设色 · 小样</span></figcaption>
+          <div class="study-image">
+            <img class="study-underlay" id="underlay-image" src="assets/longmen-vairocana.png" alt="" width="1024" height="1536" aria-hidden="true">
+            <img class="study-color-image" id="color-image" src="assets/color-studies/v1/longmenshiku-colored.png" alt="卢舍那大佛 · 矿物淡彩设色小样" width="1024" height="1536">
+            <span class="study-seal" aria-hidden="true">亲<br>见</span>
+          </div>
+        </figure>
+      </div>
+      <div class="study-caption">
+        <div><h2 id="study-name">卢舍那大佛</h2><p id="study-description">砂岩的暖意，落在衣褶与眉眼之间。</p></div>
+        <ul class="study-palette" id="study-palette" aria-label="设色用色"></ul>
+      </div>
+    </section>
+
+    <div class="study-action">
+      <div><button type="button" id="preview-checkin">预览打卡 <span aria-hidden="true">↗</span></button><span id="preview-message" role="status" aria-live="polite">试着让这一页有了颜色</span></div>
+      <p>仅预览图版效果，不更改到访记录。</p>
+    </div>
+    <footer class="study-footer">
+      <p>保留朝代色，以材质补充层次。细线、哑光色面与少许颗粒，组成同一套图版语言。</p>
+      <a href="assets/color-studies/v1/README.md">小样说明与提示词 ↗</a>
+      <a href="color-proof.html">浏览全部设色图版 ↗</a>
+    </footer>
+    <noscript><p>开启 JavaScript 可切换三处小样及预览设色。<a href="assets/color-studies/v1/README.md">查看全部图版文件</a></p></noscript>
+  </main>
+</body>
+</html>

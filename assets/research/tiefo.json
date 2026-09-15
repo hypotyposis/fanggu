@@ -1,0 +1,90 @@
+{
+  "id": "tiefo",
+  "subject": "高平铁佛寺正殿",
+  "caption": [
+    "正殿线稿 · 面阔三间",
+    "单檐悬山 · 明代"
+  ],
+  "source_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291338.shtml",
+  "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128643518407179.jpg",
+  "author": "卢鹏宇 / 人民网",
+  "license": "版权所有；原图未声明开放许可",
+  "license_url": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+  "sources": [
+    {
+      "source_page": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "mirror_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291338.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128643518407179.jpg",
+      "original_image_url": "http://sx.people.com.cn/NMediaFile/2025/0425/LOCAL1745545034442RZUSPKDYGQ.jpg",
+      "reference_file": "assets/references/tiefo-photo.jpg",
+      "author": "卢鹏宇 / 人民网",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "caption": "正殿全景",
+      "role": "subject geometry",
+      "rights_note": "照片仅作为建筑几何研究与重绘参考；生成线稿是独立绘制，不代表照片获授开放许可。"
+    },
+    {
+      "source_page": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "mirror_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291338.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128643519217528.png",
+      "original_image_url": "http://sx.people.com.cn/NMediaFile/2025/0425/LOCAL17455459557332SJYKQ0WDK.jpg",
+      "reference_file": "assets/references/tiefo-ridge-photo.png",
+      "author": "卢鹏宇 / 人民网",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "caption": "狮驼宝瓶",
+      "role": "ridge ornament geometry",
+      "rights_note": "同一篇摄影报道末尾统一署名「摄影：人民网 卢鹏宇」。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tiefo-photo.jpg",
+    "assets/references/tiefo-ridge-photo.png",
+    "assets/generated/tiefo-draft.png"
+  ],
+  "source_note": "主参考来自高平市政府「高平国保系列——铁佛寺」，明确地址高平市米山镇米西村，并将该图标注为「正殿全景」。已对照人民网原报道同一照片核实摄影署名。主照片近正面、略仰视；两侧厢房遮挡少量檐角，重绘去除厢房及现代陈设、校正透视，保留三间立面、一门两窗、单檐悬山及前檐斗拱。另用同一报道狮驼宝瓶特写修正脊饰。",
+  "prompt": "Use case: precise-object-edit. Image 1 is the thin contour STYLE MASTER. Image 2 is the real main hall of Tiefo Temple in Gaoping's Mixi village. Image 3 is a close-up photograph of its distinctive central ridge ornament, a lion carrying a tall double-bulb ceremonial vase. Image 4 is the draft to edit. Preserve the draft's single-storey three-bay facade, one central door, two lattice windows, seven bracket clusters, single-eave roof and overall fine black line style. Correct ONLY the central ridge ornament: replace the draft's plain sitting lion with a tiny STANDING side-facing lion that carries a tall vertical double-bulb vase on its back, as in photo 3. This whole lion-and-vase detail is modest, about 11% of total building height, never giant. Remove the diagonal guy wires radiating from the centre ornament; retain an empty white sky. Reduce the full building size slightly so both roof corners have at least 8% of canvas width as white margin on each side. Keep the complete apex and base inside a landscape 1536x1024 image. All contours remain thin black, all surfaces pure white; no grey fill, shadow, color, text or labels. Do not add buildings, roofs, doors, statues, signs or extra ornament.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: the authentic MAIN HALL (zhengdian) of Tiefo Temple in Mixi Village, Mishan Town, Gaoping, Shanxi, China. Do not draw the Buddha from the style master.\nCreate a refined sparse BLACK INK ON PURE WHITE line drawing of this exact main hall as seen frontally in photo 2. It is a modest single-storey THREE-BAY hall: one central rectangular doorway and exactly one broad lattice window on each side; substantial plain masonry walls, exposed projecting timber dougong bracket clusters above a deep lintel, and a single-eave overhanging gable roof (xuanshan). Preserve the broad low roof silhouette, ceramic ridge end beasts and the distinctive tiny lion bearing a vase at ridge centre. DO NOT turn it into a hip-and-gable roof or create a second storey, porch, column arcade, additional bays, windows, or doors. Side courtyard buildings partly obscure the ends: omit them and complete only the main hall's simple side outlines and low stone plinth. Remove foreground pots, temporary barriers, modern signage, fire equipment, cables and surrounding buildings. Do not draw the interior statues through the open door; keep the doorway as a white outlined opening.\nUse confident fine contours with a few finer internal structural lines. All surfaces remain WHITE. No solid black openings, shadows, grey shading, crosshatching, pencil grain, texture or gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly dynasty-colored in the website. Selectively draw a few representative roof ribs and bracket profiles, not every tile or brick. The big roof planes and walls must remain predominantly blank, matching the master’s calm spacing. Draw sparse simplified lattice in each side window.\nShow the complete hall, centered, straight-on facade elevation, verticals vertical and minimal perspective; only a few short ground lines. Landscape 1536×1024; building occupies approximately 82% of width, roof ornaments and base uncut with balanced breathing room. No text, letters, labels, calligraphy, dimensions, captions, watermark, frame or border.",
+  "generated_file": "assets/generated/tiefo.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "verification": "完整三间正殿、一门两窗、单层悬山顶和七组可见斗拱；中央狮驼宝瓶已按特写补正；无阴影填充，无周边建筑与现代陈设。",
+  "content_suggestion": {
+    "name": "高平铁佛寺",
+    "dynasty": "明",
+    "year": 1522,
+    "era": "明 · 嘉靖元年重修",
+    "location": "山西 · 高平",
+    "description": "米西村街巷中的小寺，三间大殿以悬山顶与琉璃脊饰收束。殿内保存明代二十四诸天彩塑，以铁丝塑造须发、飘带和冠饰，在紧凑的空间中展现各异神态。",
+    "structure": "面阔三间，进深六椽，单檐悬山顶，琉璃脊饰，柱头斗拱五踩双昂。",
+    "history": "创建年代不详。金大定七年（1167）铸造铁佛并重修寺院，明嘉靖元年（1522）、万历三年（1575）及清代均有修缮，现存建筑为明清风格。嘉靖十五年（1536）殿内中央主尊彩塑妆彩开光题记不可直接当作全部二十四诸天的确切塑成年。"
+  },
+  "historical_sources": [
+    {
+      "url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291338.shtml",
+      "publisher": "高平市人民政府 / 文旅高平",
+      "supports": "米西村身份；1167、1522、1575修缮；建筑三间六椽悬山形制；二十四诸天为明代佛教彩塑。"
+    },
+    {
+      "url": "https://www.sxgp.gov.cn/xwzx_358/jcdt_363/202410/t20241012_2047140.shtml",
+      "publisher": "高平市人民政府",
+      "supports": "金柱墨书嘉靖十五年1536开光题记；彩塑年代说明。"
+    },
+    {
+      "url": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "publisher": "人民网山西频道",
+      "supports": "实景照片摄影卢鹏宇；屋脊狮驼宝瓶；梁架及前檐斗拱明代风格。"
+    }
+  ],
+  "coordinates": {
+    "lat": 35.76581,
+    "lng": 112.96838,
+    "source": "https://zh.wikipedia.org/wiki/高平铁佛寺",
+    "note": "维基百科寺址坐标，仅用于地图定位，非实测建筑控制点。"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "foguang",
+  "subject": "佛光寺东大殿",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:佛光寺东大殿右侧面.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/%E4%BD%9B%E5%85%89%E5%AF%BA%E4%B8%9C%E5%A4%A7%E6%AE%BF%E5%8F%B3%E4%BE%A7%E9%9D%A2.jpg/960px-%E4%BD%9B%E5%85%89%E5%AF%BA%E4%B8%9C%E5%A4%A7%E6%AE%BF%E5%8F%B3%E4%BE%A7%E9%9D%A2.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_page": "https://k.sina.cn/article_3960624673_pec12562102700tqv6.html",
+      "image_url": "https://n.sinaimg.cn/sinakd20122/384/w2048h1536/20200918/b021-izmihnt0794769.jpg",
+      "author": "遗产君",
+      "license": "未标明开放许可；仅作形制参考",
+      "license_url": null
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/foguang-detail-photo.jpg",
+    "assets/references/foguang-roof-photo.jpg"
+  ],
+  "source_note": "使用右前方照片核对七开间与门窗，再用正面航拍补足被树遮挡的庑殿屋顶完整轮廓。只绘上层东大殿，排除文殊殿等搜索误标素材。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:佛光寺东大殿右侧面.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/%E4%BD%9B%E5%85%89%E5%AF%BA%E4%B8%9C%E5%A4%A7%E6%AE%BF%E5%8F%B3%E4%BE%A7%E9%9D%A2.jpg/960px-%E4%BD%9B%E5%85%89%E5%AF%BA%E4%B8%9C%E5%A4%A7%E6%AE%BF%E5%8F%B3%E4%BE%A7%E9%9D%A2.jpg",
+  "author": "Patrick20242023；遗产君",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: Foguang Temple EAST GREAT HALL 佛光寺东大殿, Shanxi, Tang 857. Image 2 is its actual facade photographed obliquely from the right, showing the doors, windows, columns, and bracket system. Image 3 is an aerial frontal photo of the same hall at the uppermost terrace, for whole silhouette and roof geometry. Draw ONLY THAT UPPER HALL, removing all trees, stairs down the mountain, surrounding halls and tower. Image 3's trees obscure some sections; Image 2 supplies their actual geometry. Compose a COMPLETE STRAIGHT-ON facade, exactly SEVEN bays separated by EIGHT timber column lines: from left to right window, double door, double door, central open rectangular door, double door, double door, window. Both end bays have barred windows above short plain masonry sill. Single WIDE hipped roof (庑殿, NOT hip-and-gable), broad smooth roof plane, long central ridge with tall curled ornamental ends; no central projecting porch, no second roof tier. Tall robust simple Tang dougong, with alternating primary and smaller intermediate bracket clusters. Roof and walls mostly WHITE; just 10 fine sparse roof-contour strokes, simplified selective bracket detail, no roof tile field, no door nail pattern, no wood grain. Low stone plinth and 3 modest front steps only. Landscape 1536×1024, complete roof and base with 9% white margin on either side, building has majestic width-to-height ratio.",
+  "generated_file": "assets/generated/foguang.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  }
+}

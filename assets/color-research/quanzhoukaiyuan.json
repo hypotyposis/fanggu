@@ -1,0 +1,61 @@
+{
+  "id": "quanzhoukaiyuan",
+  "name": "泉州开元寺",
+  "subject": "泉州开元寺大雄宝殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/quanzhoukaiyuan.png",
+    "assets/references/quanzhoukaiyuan-photo.jpg",
+    "assets/references/quanzhoukaiyuan-courtyard2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 泉州开元寺大雄宝殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST master's wide Quanzhou Kaiyuan Daxiong hall, two roof tiers, shallow broad roof curvature, small central ridge pagoda ornament and dragons (this tiny ornament is not a third roof/story), exact column and doorway/window rhythm and central stair. Roof tiles earthy muted orange-red/terracotta with pale weathering, NOT imperial gold/yellow. Ridge relief decoration includes restrained blue, white, red and green ceramic patches, central small pagoda pale gray-green/ochre. Upper lattice band and wooden beams/posts dark maroon red-brown. Main front stone columns pale warm-gray granite, do NOT paint them all vermilion; small colored painted brackets above in dark burgundy/blue-green with light details. Rear facade wood dark red-brown, lower wall infill pale gray stone; rectangular/circular lattice windows dark neutral. Base and stairs gray granite, stair side strips very muted dusty red as photo. No text/banner, donation tables, incense burner, tree, people or twin towers.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看原稿及2023近正面、2012院落远景日间实拍。大殿屋瓦为橙红陶瓦，屋脊剪瓷/彩饰蓝白红绿，主前柱浅灰花岗石，梁和通风木栅深紫红褐，基座及台阶灰石。与故宫黄瓦红柱不同，不把石柱刷红；小脊塔只作脊饰。",
+  "references": [
+    {
+      "file": "assets/references/quanzhoukaiyuan-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20231021_Daxiong_Baodian,_Kaiyuan_Si.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/20231021_Daxiong_Baodian%2C_Kaiyuan_Si.jpg/1280px-20231021_Daxiong_Baodian%2C_Kaiyuan_Si.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "file": "assets/references/quanzhoukaiyuan-courtyard2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kaiyuan_Temple_-_main_courtyard_-_DSCF8574.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Kaiyuan_Temple_-_main_courtyard_-_DSCF8574.JPG/1280px-Kaiyuan_Temple_-_main_courtyard_-_DSCF8574.JPG",
+      "author": "Vmenkov",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/quanzhoukaiyuan.json",
+  "output": "assets/colored/quanzhoukaiyuan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-cb827c83-1b8c-48b9-bd58-f401984cb63a.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：两层屋檐、脊中小塔、左右龙饰、石柱与三道主要门洞保持。橙红陶瓦和浅色石柱区别于北方黄瓦红柱，通风木栅暗红、蓝白脊饰和灰阶对应实拍；未增东西塔或匾字。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 泉州开元寺大雄宝殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST master's wide Quanzhou Kaiyuan Daxiong hall, two roof tiers, shallow broad roof curvature, small central ridge pagoda ornament and dragons (this tiny ornament is not a third roof/story), exact column and doorway/window rhythm and central stair. Roof tiles earthy muted orange-red/terracotta with pale weathering, NOT imperial gold/yellow. Ridge relief decoration includes restrained blue, white, red and green ceramic patches, central small pagoda pale gray-green/ochre. Upper lattice band and wooden beams/posts dark maroon red-brown. Main front stone columns pale warm-gray granite, do NOT paint them all vermilion; small colored painted brackets above in dark burgundy/blue-green with light details. Rear facade wood dark red-brown, lower wall infill pale gray stone; rectangular/circular lattice windows dark neutral. Base and stairs gray granite, stair side strips very muted dusty red as photo. No text/banner, donation tables, incense burner, tree, people or twin towers.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/quanzhoukaiyuan.png",
+        "assets/references/quanzhoukaiyuan-photo.jpg",
+        "assets/references/quanzhoukaiyuan-courtyard2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-cb827c83-1b8c-48b9-bd58-f401984cb63a.png",
+      "output": "assets/colored/quanzhoukaiyuan.png"
+    }
+  ]
+}

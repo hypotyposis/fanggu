@@ -1,0 +1,69 @@
+{
+  "id": "yongle",
+  "subject": "芮城永乐宫三清殿（无极殿）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:无极之殿正照.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%E6%97%A0%E6%9E%81%E4%B9%8B%E6%AE%BF%E6%AD%A3%E7%85%A7.jpg",
+  "author": "Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_note": "以2024年4月1日三清殿正面实拍为主体，非龙虎殿或纯阳殿。保留七间立面、五间门扇、两端实墙、两巨型龙吻及中央御路；去除现代防火设施、香炉、树木、牌匾和门口塑料帘。三清殿木构按中统三年1262通行纪年，壁画1325另列，20世纪60年代整体迁建不改元代归属。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yongle-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the Chinese heritage atlas 访古.\nImage1 is the STYLE MASTER ONLY, delicate fine black Vairocana contour drawing. Image2 is SUBJECT GEOMETRY, the real SANQING HALL 三清殿, also called WUJI HALL 无极殿, at YONGLE PALACE 永乐宫 in Ruicheng Shanxi. Draw THIS hall, not the palace gate or Chunyang hall.\nCentered complete straight-on front elevation of the grand yet low and broad Yuan-period main hall. Preserve SEVEN structural bays, with FIVE central wood panel/lattice door bays and a plain plaster wall bay at each outer end, exactly as photographed. Preserve its single-eave HIP roof 庑殿顶, broad swept roof and deep overhang, distinctly large curled dragon ridge-end ornaments at the two ends of the short top ridge, and the smaller sparse ornaments on the hips. There is NO central pagoda finial on this roof: do not invent one. Use the actual silhouette and elegant proportions, correct slight lens perspective, all verticals upright. Preserve the wide brick platform below and shallow front stairs divided by a broad central sloping paved ceremonial ramp. Keep all seven bays clear, the building and both eave tips uncut.\nRemove the hanging plaque and all lettering, trees, side buildings, bronze incense burners, lions, fences, red barriers, stools, firefighting cabinets, motorbike, people and modern plastic strips covering the central door. Reconstruct only simple lattice doors aligned to the clearly visible adjacent doors. Do not invent new carvings. Main structure only, a few short ground lines.\nLandscape1536x1024, hall occupying82% canvas width with generous clean margins. PURE WHITE background and WHITE surfaces/voids. Very thin confident BLACK contours with still finer selective structure lines, calm sparse architectural linework matching image1. Roof is largely white with 12-16 widely spaced thin slope lines, no dense tile grid. Indicate bracket groups selectively in fine contours, no dark fills. Lattice is suggested lightly, not a dense black pattern. No shadows, grey wash, broad ink, crosshatching, pencil grain, weathered texture, gradients, color, gold, lettering, watermark, borders, labels or frames.",
+  "generated_file": "assets/generated/yongle.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-bb8ac2cb-303a-43e0-ba56-22e45f07b1df.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "永乐宫 · 三清殿正面",
+    "七间庑殿 · 中统三年"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.dpm.org.cn/Uploads/File/pdf/b0/92/44/b092445caaf07bb0e8654b9e8cea4f70.pdf",
+      "publisher": "故宫博物院公开研究论文",
+      "supports": "表列三清殿建造纪年1262，六铺作三抄计心重栱。"
+    },
+    {
+      "source_page": "https://www.yuncheng.gov.cn/doc/2020/07/21/71097.shtml",
+      "publisher": "运城市人民政府《永乐宫》",
+      "supports": "三清殿又名无极殿，元代殿宇与龙吻、《朝元图》1325绘成。"
+    },
+    {
+      "source_page": "https://www.cafa.com.cn/cn/figures/article/details/813345",
+      "publisher": "中央美术学院艺术资讯网·王其钧",
+      "supports": "元中统三年重建主要建筑，整体迁建保护。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Yongle_Palace",
+      "publisher": "Wikimedia Commons",
+      "supports": "园区近似坐标34°43′24″N,110°41′15″E。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "芮城永乐宫",
+    "short": "永乐宫",
+    "sub": "三清殿 · 无极殿",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "蒙元 · 中统三年",
+    "year": 1262,
+    "yearApprox": false,
+    "place": "山西芮城 · 古魏镇",
+    "placeKey": "ruicheng",
+    "lat": 34.723333,
+    "lon": 110.6875,
+    "lede": "三清殿的长檐从两侧缓缓挑起，巨大的琉璃龙吻守在正脊两端。殿内《朝元图》把数百神祇排列成恢宏行列，元代木构与壁画在同一空间相互映照。",
+    "facts": [
+      "<b>七间庑殿</b>：三清殿又名无极殿，是永乐宫主殿，面阔七间、单檐庑殿顶，按中统三年（1262）纪年。",
+      "<b>朝元图</b>：殿内壁画绘成于1325年，与建筑营造年代分别记录。",
+      "<b>迁建保护</b>：为配合三门峡水库工程，20世纪60年代宫殿和壁画迁至现址，保存了原有殿宇与壁画。"
+    ]
+  },
+  "verification": "已检查原始照片和生成输出：七间结构、五中间格扇与两端实墙、庑殿双龙吻、无中央塔刹、中央御路及台阶均吻合，无遮挡杂物和裁切。"
+}

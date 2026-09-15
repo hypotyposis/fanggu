@@ -1,0 +1,40 @@
+{
+  "id": "sx_jiexiu_chenghuang",
+  "name": "介休城隍庙",
+  "subject": "介休城隍庙前殿倒座戏台",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_jiexiu_chenghuang.png",
+    "assets/references/sx_jiexiu_chenghuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 介休城隍庙前殿倒座戏台.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master exact Jiexiu Chenghuang temple reversed-facing stage: three-bay front projecting pavilion joined to barrel-ridged rear hall with left curved gable, high brick stage plinth and central undercroft opening, two short side arch gates. Main roof tile field weathered neutral gray with pale green glazed edges; central front sloped roof has subdued yellow-ochre diamond motif bordered faint blue/green, retain. Ridge elaborate sculptures and THREE vase-like finials mix aged green/teal, ochre-yellow, small cobalt-blue and gray-white glaze, not uniform gold. Carved hanging friezes, columns and doors mostly dark weathered gray-brown timber with very faint worn maroon tints, not freshly painted red. Left tall rear gable wall muted red-brown brick; main high stage plinth and lower side arch walls neutral weathered gray brick, upper side panels subtle red-brown/gray weathering. Front low rail pale gray stone, gray base. No construction materials, workers, scooters, wires, extra neighboring colored temple roofs or lettering. Preserve original slightly angled view and blank arch plaques.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看原稿与Zhangzhugang 2013-08-24日间实拍。倒座戏台主瓦灰色、青绿边，中央有黄赭菱形纹和淡蓝绿边；屋脊及三宝瓶饰有青绿、黄赭、蓝白釉。雕花枋柱门深灰褐老木，左侧大山墙红褐砖，台基及短拱门灰砖、栏杆灰石。工地堆料、人员、电线和相邻庙屋不纳入。",
+  "references": [
+    {
+      "file": "assets/references/sx_jiexiu_chenghuang-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Chenghuang_Miao_2013.08.24_07-53-15.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Jiexiu_Chenghuang_Miao_2013.08.24_07-53-15.jpg/960px-Jiexiu_Chenghuang_Miao_2013.08.24_07-53-15.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2013-08-24",
+      "dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "output": "assets/colored/sx_jiexiu_chenghuang.png",
+  "prepared_at": "2026-09-15T19:57:00.593809+08:00",
+  "original_research": "assets/research/sx_jiexiu_chenghuang.json",
+  "visual_review": "已实看输出并对照先前实看的线稿、实拍与风格样图：保留三间前出戏台、左侧曲线山墙、三个宝瓶脊饰、两侧券门及台基中央洞口，视角比例一致。灰瓦绿剪边和蓝黄菱形、蓝绿赭色琉璃脊饰、灰褐旧木与残朱红、左侧红砖山墙及灰砖台基均有照片依据。新增砖瓦纹理为材质细化，无人物、树、文字。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-2bfabbbe-14ac-4144-ba29-b1180b75c9be.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-2bfabbbe-14ac-4144-ba29-b1180b75c9be.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:02:13.836871+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T20:05:14.752574+08:00"
+}

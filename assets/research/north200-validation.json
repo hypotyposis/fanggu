@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-15",
+  "catalog_count": 200,
+  "added_count": 82,
+  "province_totals": { "河南": 34, "河北": 35, "山西": 70 },
+  "new_entry_status": "unvisited",
+  "automated_checks": { "command": "node --test tests/*.test.cjs", "passed": 26, "failed": 0 },
+  "browser_checks": {
+    "personal_records_before": { "visited": 44, "wishlist": 66 },
+    "personal_records_after": { "visited": 44, "wishlist": 66 },
+    "timeline_markers": 200,
+    "overlapping_timeline_label_pairs": 0,
+    "detail_articles": 200,
+    "source_page_entries": 200,
+    "section_order": ["hero", "map", "timeline", "atlas"],
+    "province_filters": "34 / 35 / 70, matching catalog data",
+    "isolated_test": "Separate local origin: Zhaozhou Bridge wishlist → visited → reload; note preserved, new town added to map; clearing visit date accepted.",
+    "console_errors": 0
+  },
+  "artwork_checks": "All 82 additions have photo references, built-in image_gen originals, metadata and dynasty-tinted transparent plates. Tower levels, hall bays and surviving damage reviewed by the generating agent; selected plates independently checked by the parent."
+}

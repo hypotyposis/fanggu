@@ -1,0 +1,48 @@
+{
+  "id": "nanchan",
+  "name": "南禅寺大殿",
+  "subject": "南禅寺大殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/nanchan.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/nanchan-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: nanchan.\nOBSERVED MATERIAL COLORS: Daylight real hall: roof and ridge ornaments neutral weathered gray ceramic, posts and brackets dark gray-brown old timber, door/window surrounds faded reddish brown, upper wall panels muted cream/clay beige, lower infill tan-gray brick; stone plinth gray beige. Window slats weathered brown with pale light backing; central open doorway almost black. Current warm timber, not bright vermilion or gold.\nSPECIFIC GEOMETRY LOCK: Preserve single very shallow broad roof, four columns making three bays, two side barred windows and central doorway, original huge eave sweep and steps. Do not paint roof ridge gold. Do not add tile grid where drawing is sparse. Keep original framing and blank background.",
+  "material_observations": "Daylight real hall: roof and ridge ornaments neutral weathered gray ceramic, posts and brackets dark gray-brown old timber, door/window surrounds faded reddish brown, upper wall panels muted cream/clay beige, lower infill tan-gray brick; stone plinth gray beige. Window slats weathered brown with pale light backing; central open doorway almost black. Current warm timber, not bright vermilion or gold.",
+  "references": {
+    "original_record": "assets/research/nanchan.json",
+    "selected_photo_files": [
+      "assets/references/nanchan-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:南禅寺大殿正面.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/%E5%8D%97%E7%A6%85%E5%AF%BA%E5%A4%A7%E6%AE%BF%E6%AD%A3%E9%9D%A2.jpg",
+        "author": "Patrick20242023",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source_note": "2024-05-22 正面照片。目视核对三开间、四柱、中央门与两侧直棂窗、单檐歇山低缓屋面。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/nanchan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-e3b057ab-f195-4cbf-9d0c-5dafed6022a3.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看线稿、日间实拍、风格样本及输出。",
+      "三间四前柱、单层宽浅屋顶、两窗一门及中阶保留。",
+      "灰瓦、深旧木、褪红门窗、土色墙和灰石台明确区分；无文字或人物。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

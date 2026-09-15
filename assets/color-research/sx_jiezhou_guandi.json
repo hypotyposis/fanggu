@@ -1,0 +1,40 @@
+{
+  "id": "sx_jiezhou_guandi",
+  "name": "解州关帝庙",
+  "subject": "解州关帝庙崇宁殿",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_jiezhou_guandi.png",
+    "assets/references/sx_jiezhou_guandi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 解州关帝庙崇宁殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master Chongning hall seven-bay facade, two roof tiers, all carved stone dragon columns, TWO tall separate front stone columns with beast capitals, full stone terrace and carved balustrade. Roof tiles are current strongly weathered pale gray/whitish jade-green glaze with darker green tile edges and an orange-russet diamond-shaped patch centered within the UPPER roof field, not entire orange roof. Ridge ends and small central finial muted gray-green/brown. Lower roof same pale gray-green aged tile. Under-eave painted bracket bands dark blue/jade/gray-green with restrained cream/ochre details; central blank plaque dark red-brown with muted ochre frame, no letters. Front carved columns and two tall pillars gray stone, NOT red timber. Rear doors dark red-brown in shadow. Balcony balustrade and base pale neutral gray stone with darker brick-gray retaining terrace wall. Preserve all seven bays and existing geometry, no added central stairs, incense pavilion, smoke, tourists, trees or writing.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看原线稿、Windmemories 2026-05-04日间近正面照和风格样本。崇宁殿瓦面灰白风化青绿琉璃，上瓦面中央有橙褐菱形区域，瓦边较深绿。石龙柱、前方两根独立石柱和栏台均灰石；梁枋深蓝青绿配少量浅赭，后门暗红褐。游客、香烟与前方香炉亭不在原稿范围，不借入。",
+  "references": [
+    {
+      "file": "assets/references/sx_jiezhou_guandi-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260504_Haizhou_Emperor_Guan_Temple_11.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/20260504_Haizhou_Emperor_Guan_Temple_11.jpg/960px-20260504_Haizhou_Emperor_Guan_Temple_11.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2026-05-04",
+      "dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "output": "assets/colored/sx_jiezhou_guandi.png",
+  "prepared_at": "2026-09-15T19:42:36.559787+08:00",
+  "original_research": "assets/research/sx_jiezhou_guandi.json",
+  "visual_review": "已view_image实看生成图：七间石柱廊、两重檐、前方两根独立高石柱及石栏台完整。灰绿琉璃和上屋面橙褐菱形区、蓝绿斗栱、灰石龙柱与暗红后门对应照片，未加入香炉亭、人群或文字。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-eaa72039-db23-47e5-b54c-fc522d112670.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-eaa72039-db23-47e5-b54c-fc522d112670.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T19:44:36.158088+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T19:46:36.172949+08:00"
+}

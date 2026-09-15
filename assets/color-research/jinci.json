@@ -1,0 +1,40 @@
+{
+  "id": "jinci",
+  "name": "晋祠",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jinci.png",
+    "assets/references/jinci-photo.jpg",
+    "assets/references/jinci-wide-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nJinci Shengmu Hall: preserve double-eaved wide hall and EIGHT front dragon-wrapped columns. Roofs muted weathered turquoise/grey-green glazed tiles with limited exposed tan-grey worn patches; rim brighter blue-green, ridge ornament green with dull ochre ceramic details. Upper bracket stories deep brown old wood, front posts faded terracotta/red-brown, carved dragons pale weathered grey-brown wood (NOT gold dragons). Dark recesses behind, pale grey stone plinth/steps. No water bridge, railing, plaques, trees or crowds absent from line drawing.",
+  "material_observations": "圣母殿重檐屋面为灰绿、青绿琉璃与局部褪釉灰褐色，脊饰黄绿；檐下旧木深褐，八根盘龙柱褪色赭红、木龙灰褐。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250602_Jinci_Bowuguan_(151554).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/20250602_Jinci_Bowuguan_%28151554%29.jpg/1280px-20250602_Jinci_Bowuguan_%28151554%29.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/jinci-photo.jpg",
+      "date": "2025-06-02"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:晴天下的晋祠圣母殿.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E6%99%B4%E5%A4%A9%E4%B8%8B%E7%9A%84%E6%99%8B%E7%A5%A0%E5%9C%A3%E6%AF%8D%E6%AE%BF.jpg/1280px-%E6%99%B4%E5%A4%A9%E4%B8%8B%E7%9A%84%E6%99%8B%E7%A5%A0%E5%9C%A3%E6%AF%8D%E6%AE%BF.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/jinci-wide-photo.jpg",
+      "date": "2024-05-22"
+    }
+  ],
+  "output": "assets/colored/jinci.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-d8f245b4-dee4-41fc-8f9f-71a0ca6b0531.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": "逐图目检：两层屋檐、八根盘龙柱保持；屋面灰青绿琉璃、赭红褪色柱、灰褐木龙与深色梁架，未将木龙画成金龙。",
+  "completed_at": "2026-09-15T11:01:04.886Z"
+}

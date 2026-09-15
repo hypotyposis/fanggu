@@ -1,0 +1,30 @@
+{
+  "id": "hb_jingzhouta",
+  "name": "开福寺舍利塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_jingzhouta.png",
+    "assets/references/hb_jingzhouta-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nJingzhou Kaifu Temple pagoda: preserve thirteen floors, all original arches and brick imitation brackets. Main brick faces light warm grey/taupe-beige, cornices and brackets dark grey-brown weathered masonry, black window recesses. Top metal gourd has muted green patina above darker brown lattice spire; cap below beige-grey. Small restrained weathering, no trees growing on roof, no banners or external buildings.",
+  "material_observations": "十三层八角砖塔暖灰米褐塔面，砖斗拱与檐口较深灰褐，刹顶葫芦铜绿；保留砖石原色而非琉璃金色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%AF%E5%B7%9E%E5%A1%94_Jingzhou_Pagoda.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%E6%99%AF%E5%B7%9E%E5%A1%94_Jingzhou_Pagoda.JPG",
+      "author": "Inhorw",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/hb_jingzhouta-photo.jpg",
+      "date": "21 May 2014, 11:24:11"
+    }
+  ],
+  "output": "assets/colored/hb_jingzhouta.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-dd998b9e-10d9-46fc-9f4d-7d28a8203ef7.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "逐图目检：十三层及原斗拱、长塔刹保持，浅暖灰砖身、深灰檐口与顶端铜绿分区明确，无金色塔身。",
+  "completed_at": "2026-09-15T10:14:11.201Z"
+}

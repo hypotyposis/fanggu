@@ -1,0 +1,58 @@
+{
+  "id": "jingtusi",
+  "name": "应县净土寺",
+  "subject": "应县净土寺大雄宝殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jingtusi.png",
+    "assets/references/jingtusi-photo.jpg",
+    "assets/references/jingtusi-roof-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Jingtu Temple's Mahavira Hall in Yingxian, exact three-bay facade and four front columns from line master. Preserve closed central lattice doors, two side windows, nine upper transom panels, roof silhouette and end ornaments. Current photo shows pale grey roof with irregular restrained green glazed tile rows/patches and green eave-end tiles; green ridge with ochre-yellow ceramic relief, not gold gilding. Timber facade dark weathered grey-brown, remnants of dark red paint; lattice pale grey over dark interiors, lower door panels very dark red-brown. Under-eave painting subdued dark brown/black with aged cream and faded grey-green outlines. Lower walls grey brick, steps neutral grey stone. Keep ornamental line-master panels subtle, do not paint blank surfaces as bright gilding. No plaques, text, ribbons, tree trunks, foreground incense tower or lanterns.",
+  "material_observations": [
+    "两张实拍屋顶为浅灰瓦与绿釉瓦分布交错，脊饰绿底黄赭纹。",
+    "门窗及柱为风化深褐木，残存暗红漆；格栅偏浅灰，檐下旧彩画呈褐黑底及褪色米白、浅绿细纹，台基灰砖石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jingtusi-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250604_Jingtu_Si_(090819).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/20250604_Jingtu_Si_%28090819%29.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2025-06-04",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    },
+    {
+      "file": "assets/references/jingtusi-roof-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jing_Tu_Temple_in_Yingxian_2011-07.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Jing_Tu_Temple_in_Yingxian_2011-07.JPG",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2011-07-07",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/jingtusi.json",
+  "output": "assets/colored/jingtusi.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "三开间、四前柱、中央隔扇、左右窗组及九扇上部横披保留；屋脊与台阶完整。",
+      "灰瓦绿釉瓦分布、绿赭脊饰、深褐旧木及浅灰格栅对应照片，未复制蓝牌或红绸。",
+      "细线及哑光颗粒符合样本，背景深色无周边场景和文字。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T11:48:55.413Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-c4618f4d-605e-4516-a3e5-ef94c994757d.png",
+  "generated_at": "2026-09-15T11:53:20.620Z",
+  "completed_at": "2026-09-15T12:02:34.525Z"
+}

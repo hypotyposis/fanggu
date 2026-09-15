@@ -1,0 +1,74 @@
+{
+  "id": "sx_longshan",
+  "name": "龙山石窟",
+  "subject": "龙山三天大法师窟 · 主尊局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/sx_longshan.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/sx_longshan-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: sx_longshan.\nOBSERVED MATERIAL COLORS: Neutral ambient cave light photo. The CENTRAL seated figure only: dark gray-brown stone garment with pale gray weathered patches; eroded face/topknot lighter medium gray, muted stone beige circular nimbus behind shoulders. Sparse pale mineral deposits, no strong intact polychromy or gilt. Face and robe remain stone, not flesh and cloth.\nSPECIFIC GEOMETRY LOCK: One central seated Daoist figure and its circular stone nimbus only; retain eroded facial features and missing hands within sleeves, no repaired anatomy. Exclude standing attendants and cave wall. Do not make halo glow. Keep original selected crop and margins.\n\nTARGETED CORRECTION: The prior attempt overdid mottling. Surface must be 85-90% calm matte continuous graphite/gray-brown stone planes. NO camouflage spots, NO random blotches, NO dense repeated white speckles. A few pale worn areas at actual face erosion and sleeve edges only. Facial features remain worn and smooth, not covered in spotted pattern. Mineral-pigment fine grain is microscopic, not visible blotches. Keep halo pale neutral stone gray-beige with almost uniform quiet surface, not gold.",
+  "material_observations": "Neutral ambient cave light photo. The CENTRAL seated figure only: dark gray-brown stone garment with pale gray weathered patches; eroded face/topknot lighter medium gray, muted stone beige circular nimbus behind shoulders. Sparse pale mineral deposits, no strong intact polychromy or gilt. Face and robe remain stone, not flesh and cloth.",
+  "references": {
+    "original_record": "assets/research/sx_longshan.json",
+    "selected_photo_files": [
+      "assets/references/sx_longshan-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Taiyuan_longshanshiku.JPG",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Taiyuan_longshanshiku.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "author": "Halazhang",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "source_note": "Halazhang于2014年实拍，现场牌明确“三天大法师窟（唐窟）”。仅绘中央坐像，底座被牌遮挡部分省略，不凭空复原。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/sx_longshan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-99fbbcbb-e6e9-49bb-8409-98647d7cf5ef.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看原线稿、普通洞内实拍、风格样本、首版和修订版。",
+      "修订版降低全身高对比斑点，保留灰褐石衣、较浅风化面部、非发光石质圆背光。",
+      "主尊单体、残手与原稿局部构图保留，未加两侧侍像或修复五官。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a",
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: sx_longshan.\nOBSERVED MATERIAL COLORS: Neutral ambient cave light photo. The CENTRAL seated figure only: dark gray-brown stone garment with pale gray weathered patches; eroded face/topknot lighter medium gray, muted stone beige circular nimbus behind shoulders. Sparse pale mineral deposits, no strong intact polychromy or gilt. Face and robe remain stone, not flesh and cloth.\nSPECIFIC GEOMETRY LOCK: One central seated Daoist figure and its circular stone nimbus only; retain eroded facial features and missing hands within sleeves, no repaired anatomy. Exclude standing attendants and cave wall. Do not make halo glow. Keep original selected crop and margins.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/sx_longshan.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/sx_longshan-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-dcc0ff18-b6f8-4fbb-81da-a842dacb2e45.png",
+      "review": "已查看；满身高对比斑点过密，偏離實拍較平靜灰石表面，因此定向减少纹理。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: sx_longshan.\nOBSERVED MATERIAL COLORS: Neutral ambient cave light photo. The CENTRAL seated figure only: dark gray-brown stone garment with pale gray weathered patches; eroded face/topknot lighter medium gray, muted stone beige circular nimbus behind shoulders. Sparse pale mineral deposits, no strong intact polychromy or gilt. Face and robe remain stone, not flesh and cloth.\nSPECIFIC GEOMETRY LOCK: One central seated Daoist figure and its circular stone nimbus only; retain eroded facial features and missing hands within sleeves, no repaired anatomy. Exclude standing attendants and cave wall. Do not make halo glow. Keep original selected crop and margins.\n\nTARGETED CORRECTION: The prior attempt overdid mottling. Surface must be 85-90% calm matte continuous graphite/gray-brown stone planes. NO camouflage spots, NO random blotches, NO dense repeated white speckles. A few pale worn areas at actual face erosion and sleeve edges only. Facial features remain worn and smooth, not covered in spotted pattern. Mineral-pigment fine grain is microscopic, not visible blotches. Keep halo pale neutral stone gray-beige with almost uniform quiet surface, not gold.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/sx_longshan.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/sx_longshan-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-99fbbcbb-e6e9-49bb-8409-98647d7cf5ef.png",
+      "review": [
+        "已实际查看原线稿、普通洞内实拍、风格样本、首版和修订版。",
+        "修订版降低全身高对比斑点，保留灰褐石衣、较浅风化面部、非发光石质圆背光。",
+        "主尊单体、残手与原稿局部构图保留，未加两侧侍像或修复五官。"
+      ]
+    }
+  ]
+}

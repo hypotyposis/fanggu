@@ -1,0 +1,118 @@
+{
+  "id": "kiyomizu",
+  "subject": "京都清水寺本堂与清水舞台",
+  "caption": [
+    "清水寺 · 本堂与清水舞台",
+    "南面近正视 · 江户宽永十年（1633）"
+  ],
+  "source_page": "https://www.kiyomizudera.or.jp/en/learn/",
+  "image_url": "https://www.kiyomizudera.or.jp/en/img/learn/pic_03_01.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kiyomizu-official-whole.jpg",
+    "assets/references/kiyomizu-official-support.jpg",
+    "assets/references/kiyomizu-front-photo.jpg"
+  ],
+  "sources": [
+    {
+      "source_page": "https://www.kiyomizudera.or.jp/en/learn/",
+      "image_url": "https://www.kiyomizudera.or.jp/en/img/learn/pic_03_01.jpg",
+      "author": "清水寺官网（摄影未单独署名）",
+      "license": "© Kiyomizu-dera Temple；页面未提供开放许可，仅作建筑几何参考",
+      "license_url": "https://www.kiyomizudera.or.jp/en/learn/",
+      "reference_file": "assets/references/kiyomizu-official-whole.jpg",
+      "note": "官网 THE WOODEN STAGE ON THE CLIFF 主体照片；正面本堂与舞台，下部被树木部分遮挡。",
+      "reference_dimensions": {
+        "width": 1560,
+        "height": 887
+      }
+    },
+    {
+      "source_page": "https://www.kiyomizudera.or.jp/en/learn/",
+      "image_url": "https://www.kiyomizudera.or.jp/en/img/learn/pic_03_02.jpg",
+      "author": "清水寺官网（摄影未单独署名）",
+      "license": "© Kiyomizu-dera Temple；页面未提供开放许可，仅作建筑几何参考",
+      "license_url": "https://www.kiyomizudera.or.jp/en/learn/",
+      "reference_file": "assets/references/kiyomizu-official-support.jpg",
+      "note": "官网 Kake-zukuri 照片；低角度核实高柱、横贯木和伸出柱面的构件。",
+      "reference_dimensions": {
+        "width": 1332,
+        "height": 888
+      }
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Main_Hall%2C_Kiyomizu-dera_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Main_Hall%2C_Kiyomizu-dera_01.jpg",
+      "author": "Motokoka",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/kiyomizu-front-photo.jpg",
+      "date": "2011-03-26",
+      "note": "京都清水寺本堂近正面照片；参考屋顶与檐口轮廓，移除照片中邻塔、树木和游客。",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "source_note": "以寺方官网正面照片定本堂轮廓，以官网悬造近照补舞台木架，Commons照片交叉核实两侧小破风。绘图简化重复构件并移除植被遮挡，系风格化建筑图鉴而非测绘复原。所有使用的实照及母版均经 view_image 检查。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing: use ONLY its elegant delicate slightly organic thin black contours, restrained structural detail and extensive white space.\nImage 2 is the frontal SUBJECT GEOMETRY reference: the 1633 MAIN HALL (Hondo) and projecting Kiyomizu Stage of Kiyomizu-dera in KYOTO, JAPAN. Image 3 is a close-up geometry reference for the tall wooden support frame under this same stage. Image 4 is another actual photograph for the main hall roof and stage proportions.\nDraw ONLY the complete MAIN HALL and the ENTIRE projecting wooden stage, including the supporting pillars and horizontal nuki rails down to their separate stone feet on the sloping terrain. Use the almost straight-on southern facade from image 2. Retain the very large curved hipped roof, horizontal ridge, smooth Japanese cypress-bark roof surface, and the TWO small triangular ornamental gables at the left and right ends of the front facade. Do not invent a third central gable. Below the roof retain the open timber hall facade, projecting rectangular central stage and its simple low balustrade. The stage stands about 13m above the slope and is supported by a deep rectilinear timber grid: long vertical unbroken zelkova posts joined by multiple levels of horizontal through-rails. Image 3 shows how the rails penetrate the posts and project slightly beyond them. This tall grid is a defining feature; draw its full height, make it clearly legible. Keep the realistic stage width versus roof width shown in the photo; the stage is centered, with flanking hall verandas behind it. Preserve the structural rhythm and the uneven sloping footings; do not turn the bottom into a broad masonry plinth or a generic palace stair.\nStyle: sparse fine BLACK INK ON PURE WHITE. Surfaces and all structural voids stay WHITE, including the roof and hall interior. Use confident thin contour lines and a few finer inner lines. Absolutely no black fills, gray shading, hatch, pencil grain, wood texture or gradients. Roof is a broad quiet white shape with only edge contours; no tile grid, no dense repeated roof-surface strokes. Simplify tiny carvings and balustrade repetition. Match image 1 line weight and airiness.\nComposition: landscape 1536x1024, near-frontal with verticals vertical, whole building approximately 82% of image width, full roof ridge, eave corners and ALL lower wooden support feet completely inside the frame. Generous white margin on every side. Remove the trees and foreground foliage to reveal the reference-supported structural grid. Remove tourists, curtains with writing, signs, neighboring buildings, other temple halls and ALL PAGODAS. No three-storey pagoda. Only a few short ground lines indicating the slope. No labels, lettering, calligraphy, dimensions, captions, watermark, frame or border.",
+  "generated_file": "assets/generated/kiyomizu.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c15ea71f-b184-472e-9b42-4635f20a1563.png",
+  "historical_sources": [
+    {
+      "title": "清水寺官网 · Visit · Hondo",
+      "url": "https://www.kiyomizudera.or.jp/en/visit/",
+      "supports": "现存本堂重建于1633年，位于音羽山陡坡；本堂供奉十一面千手观音。"
+    },
+    {
+      "title": "清水寺官网 · Learn · Main Hall",
+      "url": "https://www.kiyomizudera.or.jp/en/learn/",
+      "supports": "现舞台1633年重建；舞台近13米高，18根榉木柱以横贯木连接；本堂为桧皮葺寄栋造，舞台为供奉观音的表演空间。官网历史部分778年为建寺年，与所绘1633年主体区分。"
+    },
+    {
+      "title": "Commons · Main Hall, Kiyomizu-dera",
+      "url": "https://commons.wikimedia.org/wiki/Category:Main_Hall,_Kiyomizu-dera",
+      "supports": "本堂对象位置34°59′41.35″N、135°47′05.64″E及京都府京都市东山区地址。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "清水寺",
+    "short": "清水寺",
+    "sub": "京都 · 本堂与清水舞台",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "江户时代 · 宽永十年",
+    "year": 1633,
+    "yearLabel": "1633 重建",
+    "yearApprox": false,
+    "place": "日本 · 京都府 · 京都市东山区",
+    "placeKey": "kyoto",
+    "lat": 34.9948194,
+    "lon": 135.7849,
+    "coords": [
+      135.7849,
+      34.9948194
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Main_Hall,_Kiyomizu-dera",
+    "coordinate_note": "本堂对象公开坐标换算，近似地图定位。",
+    "lede": "清水寺本堂以宽大的桧皮屋顶覆在音羽山坡上，檐前的清水舞台向崖外伸出。舞台下成列的高木柱与横贯木交织，显露出日本悬造建筑的支撑方式。",
+    "facts": [
+      "寺院始建于778年；图中现存本堂与舞台重建于1633年，按江户时代登记。",
+      "本堂为桧皮葺寄栋造，南面两侧的小破风与中央伸出的舞台构成主要轮廓。",
+      "清水舞台距地面近13米，由18根榉木柱与横贯木连接支撑，原用于向观音奉献艺能表演。"
+    ]
+  },
+  "quality_check": {
+    "viewed_inputs": true,
+    "viewed_output": true,
+    "complete_silhouette": true,
+    "notes": "本堂宽大主屋顶、左右两处小破风、中央舞台及下部横竖木架、柱脚均完整；无三重塔、游客与文字；白色屋面留白。"
+  }
+}

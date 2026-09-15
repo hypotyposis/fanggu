@@ -1,0 +1,34 @@
+{
+  "id": "todaiji",
+  "name": "东大寺",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/todaiji.png",
+    "assets/references/todaiji-official-root-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Todaiji Nandaimon (Great South Gate) alone, NOT Todaiji's Great Buddha Hall. Preserve Image 1's two roofs, prominent horizontal through-beams and repeated bracket tiers, six main facade columns, three open portals and closed side wooden bays, blank centered plaque. PHOTO MATERIALS: medium grey tiled roofs and ridge; aged exposed timber weathered grey-brown with dark chocolate-brown recesses; side plank walls dark brown, upper infill surfaces pale grey-beige; steps/platform light grey. Existing plaque is muted yellow-ochre with dark border but KEEP IT BLANK with no inscription. Open central passages must remain near-black, no distant temple scene. No red lacquer, gold roofs, lamps, signboards or visitors.",
+  "material_observations": "东大寺官网南大门日光照：两重屋面中灰瓦，通贯木构褐灰、深褐；两侧下层板门深灰棕，上部墙面灰米色，台阶浅灰；现物匾底为黄赭，文字省略。",
+  "references": [
+    {
+      "source_page": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+      "image_url": "https://www.todaiji.or.jp/wp-content/uploads/2022/02/nandaimon00.jpg",
+      "author": "东大寺官网（单张摄影作者未标注）",
+      "license": "All Rights Reserved · 东大寺版权所有；页脚明确未经协议授权不得下载使用、复制、转载或加工，非开放许可",
+      "license_url": "https://www.todaiji.or.jp/zh/information/nandaimon/",
+      "reference_file": "assets/references/todaiji-official-root-photo.jpg",
+      "dimensions": [
+        1000,
+        563
+      ],
+      "note": "寺院官网南大门完整正面实景，作为现存建筑几何参考。重绘保留门体而去除人物、植被、灯牌、文字与院落背景；不声称来源照片具有开放授权。"
+    }
+  ],
+  "output": "assets/colored/todaiji.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-046f3e8d-66f3-4e31-9734-5d718f6b7b80.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": "已查看输出：南大门两重檐、六柱与三通道、通贯横梁、空白匾额及两侧板壁保留；灰瓦、褐灰旧木、灰米色墙面和淡黄匾底取自现物，无大佛殿或游客。",
+  "completed_at": "2026-09-15"
+}

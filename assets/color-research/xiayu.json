@@ -1,0 +1,52 @@
+{
+  "id": "xiayu",
+  "name": "夏禹神祠",
+  "subject": "夏禹神祠正殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xiayu.png",
+    "assets/references/xiayu-photo.jpg",
+    "assets/references/xiayu-paper-photo.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nXiayu shrine main hall: exact three bays and two stone altar tables, large central carved stone altar. Roof grey clay tile, ridge beasts have localized mustard-yellow/green glazed ceramic. Old wood posts grey-brown with sparse faded red patches, beams very dark brown with subtle old painted remnants, wall infill warm grey-brown aged brick with limited ochre. Stone tables and plinth neutral light grey; lower brick grey. Ignore strong green cast/overexposure of newspaper photo. No lanterns, red ribbons, people, sky or added background.",
+  "material_observations": "现有两张照片中可见灰瓦与黄绿琉璃脊饰，梁架暗灰褐且有残彩，前部石柱灰色并残留褪红；墙体灰黄旧砖，供桌、中央供台及台阶灰石。报纸图偏绿、过曝，主要用于分区佐证。前柱材质按原线稿研究记录纠正为石柱。",
+  "references": [
+    {
+      "source_page": "https://www.sina.cn/news/detail/5279930356076236.html",
+      "image_url": "https://wx2.sinaimg.cn/middle/706b9ed2ly1ibhsnt4rtzj23282aonpe.jpg",
+      "author": "第二次崭新的人生",
+      "license": "原页面未注明开放许可；照片仅作建筑形制参考",
+      "date": "未知（沿用原研究来源说明）"
+    },
+    {
+      "source_page": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202506/P020250623318969561645.pdf",
+      "author": "长治日报视觉中心（山西晚报 2025年6月23日）",
+      "license": "原页面未注明开放许可；照片仅作建筑形制参考",
+      "date": "未知（沿用原研究来源说明）"
+    }
+  ],
+  "output": "assets/colored/xiayu.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-3a77662d-9da5-413b-9b15-96a4700484aa.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实看原线稿、正面照片、报纸补图、画法样本及恢复原件；三间殿、两侧石供桌和中央供台保持。",
+      "灰瓦、黄绿局部琉璃、灰黄砖墙、灰色供台和旧色梁架对应，未带入灯笼人物。",
+      "原生成提示词误称前柱为木柱；原研究记录明载中间为石柱，成图呈灰色残红，本次恢复研究说明已纠正材质描述，提示词作为历史原文保留。"
+    ],
+    "limitations": "依据已有实拍进行艺术转译；未做色彩校准、实地复核或逐像素几何验证。"
+  },
+  "recovered_at": "2026-09-15T11:35:51.273378+00:00",
+  "recovery": {
+    "source_task": "01a09e2d-a458-73d0-bb60-eb2b3a86e6bd",
+    "prompt_source": "assets/color-research/recovery/original-calls.json",
+    "prepared_at": "2026-09-15T10:55:50.818Z",
+    "output_association": "原任务最后一批调用及生成时间对应，逐图与线稿、实拍核对主体；该批结果未回传至旧对话"
+  },
+  "worker": "main"
+}

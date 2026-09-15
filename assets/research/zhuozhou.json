@@ -1,0 +1,110 @@
+{
+  "id": "zhuozhou",
+  "subject": "涿州双塔（云居寺塔与智度寺塔）",
+  "caption": [
+    "云居寺塔 · 智度寺塔",
+    "北塔六层 · 南塔五层"
+  ],
+  "source_note": "云居寺塔与智度寺塔已分别核对Commons照片及国际在线当日实景报道。组合为同基线对照图，非现场同一视点。左北塔六层、右南塔五层；近拍略有仰视且智度寺底部不全，以2023年完整双塔航拍补足塔刹及台座轮廓。去掉民居、树木、游客、电线和临时金属楼梯，重绘正面，保留仿木斗拱、券门和斜面直棂窗。为保持整图可读性，首层高度与复杂基座有所简化，不作为测绘复原。",
+  "site_recommendation": {
+    "name": "涿州双塔",
+    "short": "涿州双塔",
+    "sub": "云居寺塔 · 智度寺塔",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "十一世纪",
+    "year": 1031,
+    "place": "河北涿州 · 古城",
+    "latlon": [
+      39.49806,
+      115.96528
+    ],
+    "lede": "两座辽塔南北相望，把木构楼阁的柱、窗与斗拱凝固在砖中。北塔六层，南塔五层，高低不同的轮廓组成涿州古城的标志。",
+    "facts": [
+      "北为云居寺塔，六层；南为智度寺塔，五层。两塔同为八角楼阁式仿木构砖塔。",
+      "智度寺塔建于辽太平十一年（1031），高44米；各正面为券门，斜面为假直棂窗。",
+      "云居寺塔建造年代有重熙年间与大安八年等不同考证，本条保留十一世纪概称，不将争议年份写成定论。"
+    ],
+    "basis": [
+      {
+        "url": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+        "supports": "现场报道、涿州市文旅局信息：双塔身份、智度塔1031年、五层44米、圆券门与斜面直棂窗。"
+      },
+      {
+        "url": "https://www.visitbeijing.com.cn/article/4OZpHZU0e8O?device=amp",
+        "supports": "双塔建筑介绍及云居塔年代争议说明。"
+      },
+      {
+        "url": "https://img.dpm.org.cn/Uploads/File/2024/09/09/u66de63ff336bf.pdf",
+        "supports": "《公元11至17世纪北京地区》研究表列云居塔重熙六/七年（1037–1038），与传统1092说法不同。"
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/涿州双塔",
+        "supports": "地图坐标；该页年代文字存在大安八年对应1160的明显换算错误，未作为建塔年份依据。"
+      }
+    ]
+  },
+  "verification": "完整左六层、右五层及两塔刹、基座；每层门洞可辨。首层与台座比例作示意性简化。",
+  "prompt": "Use case: precise-object-edit. Image 1 is the fine-line STYLE MASTER, image 2 is the real FIVE-STOREY Zhidu Temple Pagoda in Zhuozhou, image 3 is the full real silhouette of both pagodas (Zhidu is foreground right), image 4 is the black-and-white draft to edit.\nOnly edit the RIGHT tower. Keep the LEFT six-storey tower completely unchanged. The right tower currently has FOUR separate arched wall-storeys, which is wrong. Make the right tower FIVE storeys by duplicating its SECOND storey counted from the TOP and inserting that duplicated full wall-and-roof unit immediately beneath it. There must be FIVE complete arched openings stacked vertically on the front of the right tower, one per occupied floor. FIVE arch openings means FIVE storeys and FIVE main roof eaves on the right, above its pedestal. Do not put the fifth opening inside the pedestal. Keep a reasonable tall first floor. Preserve its octagonal geometry, small bulb finial, white surfaces, black fine contours and sparse decoration. Fit both complete towers to landscape1536x1024 with equal ground baseline and white outer margins, left remaining about1.27 times right's total height. No new elements elsewhere, no text, no grey or black fills.",
+  "initial_prompt": "Use case: style-transfer. Asset type: paired architectural line illustration for the Chinese heritage collection 访古. Image 1 is the shared STYLE MASTER only: match its elegant fine black slightly organic contours, selective internal lines, broad white surfaces and calm visual density. Do not draw the Buddha.\nSUBJECT GEOMETRY: image 2 is the SIX-storey Yunju Temple Pagoda (the north pagoda) in Zhuozhou, Hebei; image 3 is the FIVE-storey Zhidu Temple Pagoda (the south pagoda) in the same city; image 4 provides the arched FRONT face and pedestal of Zhidu; image 5 is an aerial photograph of both, showing the COMPLETE roofs, finials, pedestals and actual silhouettes. In image 5 the SIX-storey taller Yunju pagoda is BACK LEFT, and the FIVE-storey shorter Zhidu pagoda is FRONT RIGHT. This is NOT the similarly named Yunju pagoda at Fangshan.\nDraw BOTH complete octagonal pavilion-style brick pagodas side by side on a plain white landscape 1536×1024 plate: Yunju on the LEFT, Zhidu on the RIGHT, aligned at the same baseline. Yunju should be about 1.27 times Zhidu's height (55.69m versus44m). Each seen nearly straight on toward an ARCHED DOOR face, with narrow diagonal side faces and corrected camera perspective. Yunju has EXACTLY SIX tall occupied storeys and SIX main roofs, Zhidu has EXACTLY FIVE tall occupied storeys and FIVE main roofs. Do not count a pedestal cornice or thin balcony band as an additional storey. Both show imitation timber columns, brick bracket groups and moulded wall frames; central arched openings in frontal face, simple vertical-bar false windows on diagonal side faces. Brick Sumeru plinths with sparse panel reliefs. Their broad eight-sided pyramidal top roofs must be included (not flat truncations). Preserve Yunju's small finial profile from photo 5 and Zhidu's distinctive white rounded bulb finial above a short pedestal. No giant spires, no extra roofs.\nRemove modern signs, people, tree branches, wires, houses, temporary stairs and railings. Keep all surfaces including arched openings WHITE with fine BLACK outlines, absolutely no dark fills, cast shadows, grey shading, crosshatching, pencil texture, brick-course grids or gradients. Simplify dougong and tile details, show only a few representative roof ribs and selective contours; no dense textural coverage. Keep both entire silhouettes inside the image with ample whitespace, the pair occupies about 72% canvas width and the taller pagoda about82% image height. A few simple ground lines only. No labels, text, letters, plaques, dimensions, watermark or frame.",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zhuozhou-zhidu-full-photo.jpg",
+    "assets/references/zhuozhou-twins-full-photo.jpg",
+    "assets/generated/zhuozhou-draft2.png"
+  ],
+  "initial_reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zhuozhou-yunju-photo.jpg",
+    "assets/references/zhuozhou-zhidu-photo.jpg",
+    "assets/references/zhuozhou-zhidu-full-photo.jpg",
+    "assets/references/zhuozhou-twins-full-photo.jpg"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg/960px-%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+      "reference_file": "assets/references/zhuozhou-yunju-photo.jpg",
+      "author": "Redpipe",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg/960px-%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg",
+      "reference_file": "assets/references/zhuozhou-zhidu-photo.jpg",
+      "author": "Redpipe",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "source_page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "image_url": "https://p2.cri.cn/M00/72/47/rBABCWQ2cOeAANv8AAAAAAAAAAA118.6240x4160.jpg",
+      "reference_file": "assets/references/zhuozhou-zhidu-full-photo.jpg",
+      "author": "熊华明 / 国际在线",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "caption": "智度寺塔完整立面与底层"
+    },
+    {
+      "source_page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "image_url": "https://p2.cri.cn/M00/72/3E/rBABCmQ2cQmAEiEXAAAAAAAAAAA602.4652x2617.jpg",
+      "reference_file": "assets/references/zhuozhou-twins-full-photo.jpg",
+      "author": "熊华明 / 国际在线",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "caption": "双塔全景；用于塔刹和基座轮廓"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg/960px-%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+  "author": "Redpipe",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/zhuozhou.png",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

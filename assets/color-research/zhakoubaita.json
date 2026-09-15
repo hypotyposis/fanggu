@@ -1,0 +1,52 @@
+{
+  "id": "zhakoubaita",
+  "name": "闸口白塔",
+  "subject": "杭州闸口白塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/zhakoubaita.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/zhakoubaita-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: zhakoubaita.\nOBSERVED MATERIAL COLORS: Zhakou White Pagoda is worn pale grey/ivory stone with muted beige-grey warmth, not pure painted white. Cracked eaves and reliefs have slightly darker grey recesses and sparse earth discoloration; upper finial ring assembly is near-black grey metal with dull weathering. Large base blocks are darker sandy grey-brown stone. No colorful glaze, no red paint or gold. Keep color subtle with open calm surfaces and fine micrograin.\nSPECIFIC GEOMETRY LOCK: Preserve the original slender NINE-story stone pagoda with every broken irregular eave corner, cracks, small sculpted niches, ribbed/stacked dark finial and wide polygonal block plinth. Do not straighten or restore missing eaves; keep current asymmetry and same oblique perspective.",
+  "material_observations": "Zhakou White Pagoda is worn pale grey/ivory stone with muted beige-grey warmth, not pure painted white. Cracked eaves and reliefs have slightly darker grey recesses and sparse earth discoloration; upper finial ring assembly is near-black grey metal with dull weathering. Large base blocks are darker sandy grey-brown stone. No colorful glaze, no red paint or gold. Keep color subtle with open calm surfaces and fine micrograin.",
+  "references": {
+    "original_record": "assets/research/zhakoubaita.json",
+    "selected_photo_files": [
+      "assets/references/zhakoubaita-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:杭州閘口白塔_White_Pagoda_in_Zhakou.JPG",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/%E6%9D%AD%E5%B7%9E%E9%96%98%E5%8F%A3%E7%99%BD%E5%A1%94_White_Pagoda_in_Zhakou.JPG",
+        "author": "Inhorw",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "2014-03-11",
+        "reference_file": "assets/references/zhakoubaita-photo.jpg",
+        "reference_dimensions": {
+          "width": 960,
+          "height": 1280
+        }
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/zhakoubaita.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-d7e184f0-a53e-4b19-9501-56b1d2509c23.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "九级石塔及残损檐角、佛龛、细长塔刹和宽台座保留。",
+      "浅灰米白石身、较深砂灰基座、深灰金属刹的区分符合实照。",
+      "未修复不规则残檐，整体暗底留白完整。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "wangbao",
+  "subject": "高平王报二郎庙金代戏台正面",
+  "caption": [
+    "王报二郎庙 · 金代戏台",
+    "金 · 大定二十三年（1183）"
+  ],
+  "source_page": "https://www.sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291268.shtml",
+  "image_url": "https://www.sxgp.gov.cn/zjgp/fjms_425/202511/W020251128589762715042.jpg",
+  "author": "原页面未署摄影作者（文旅高平 / 高平市人民政府发布）",
+  "license": "未明确开放许可",
+  "license_url": null,
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/wangbao-stage-photo.jpg"
+  ],
+  "reference_dimensions": {
+    "width": 1080,
+    "height": 720
+  },
+  "source_note": "实际正面照片可辨认山花朝前的单檐歇山顶、前檐两根粗圆柱、两朵补间铺作和须弥台基。生成仅选戏台，移除两侧后建门屋及现代设施；台基雕饰作线条概括。输入及输出已目视检查。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: only the surviving JIN-DYNASTY OPERA STAGE of Erlang Temple at Wangbao, Gaoping 高平王报二郎庙戏台, shown directly frontally in image2. Preserve its exceptionally distinctive orientation: the triangular GABLE faces the viewer above one wide open stage bay. Exactly ONE roof/eave tier, hip-and-gable with very shallow sweeping lower roofline, symmetrical strongly lifted outer corners, small triangular front gable with a hanging pendant centered in its triangle. NOT a conventional hall with a long horizontal ridge facing the viewer. TWO massive round FRONT columns over cylindrical stone bases; two rear columns can be hinted only if visible. One deep open bay with plain white back wall and side walls drawn only by outlines; no doors or windows within the stage. Exactly TWO intermediate bracket clusters above the front bay, plus corner brackets. Large plain timber beam spans the single bay. Keep low rectangular Sumeru stone stage platform, three main horizontal bands and four tiny human/lotus relief suggestions in the narrow middle band, no inscription lettering. Remove the flanking gateway houses, lanterns, barriers, signs, bins and redcurtains. Preserve only the one freestanding stage with its solidbackandshortsidewalls. Roof white with10 fine tileguides max, NOT every tile. Big deep opening remains purewhite, NO darkstagefill or masonrygrid. Landscape1536x1024, single complete stage centered at78%width and80%height with generous white margin.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-c4e67e50-e02d-4503-93f1-91c3e80b7c66.png",
+  "generated_file": "assets/generated/wangbao.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "高平国保系列——二郎庙",
+      "url": "https://www.sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291268.shtml",
+      "publisher": "高平市人民政府 / 文旅高平",
+      "evidence": "创建年代不详，现存戏台为金代，其余建筑经明清重修。戏台台基题记记金大定二十三年（1183），山花朝前，单檐歇山九脊顶、四根石础圆柱、每面两朵补间铺作。"
+    },
+    {
+      "title": "中国现存最古老戏台——王报戏台",
+      "url": "https://www.sxgp.gov.cn/zjgp/fjms_425/202603/t20260321_2332603.shtml",
+      "publisher": "高平市人民政府转载人民日报",
+      "evidence": "戏台建于1183年，是国内现存最早的戏台实物；一间见方，约5米乘5米，位于院南、坐南朝北。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "王报二郎庙",
+    "short": "二郎庙",
+    "sub": "金代戏台 · 山花朝前",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金 · 大定二十三年",
+    "year": 1183,
+    "yearLabel": "1183",
+    "yearApprox": false,
+    "place": "山西高平 · 王报村",
+    "placeKey": "gaoping",
+    "lat": 35.86556,
+    "lon": 112.85361,
+    "latlon_source": "https://zh.wikipedia.org/wiki/二郎庙_(高平)",
+    "lede": "山花朝前，一间小小戏台托起舒展的歇山顶。王报二郎庙把金代的演剧空间留在院落南端，台基上的大定纪年仍可追认。",
+    "facts": [
+      {
+        "label": "金代戏台",
+        "text": "须弥座台基题记记大定二十三年（1183），现存戏台的年代明确；庙内其余建筑多经明清重修。"
+      },
+      {
+        "label": "山花朝前",
+        "text": "一间见方的戏台把歇山顶山花朝向观众，四根圆柱与粗壮铺作承托屋盖，形制颇有辨识度。"
+      },
+      {
+        "label": "古台遗存",
+        "text": "官方介绍称其为国内现存最早的戏台实物，坐南朝北，见证早期乡村庙会与演剧空间。"
+      }
+    ]
+  }
+}

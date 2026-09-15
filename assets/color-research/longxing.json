@@ -1,0 +1,60 @@
+{
+  "id": "longxing",
+  "name": "隆兴寺",
+  "subject": "正定隆兴寺摩尼殿",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/longxing.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longxing-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 正定隆兴寺摩尼殿.\nOBSERVED MATERIAL COLORS: 2025 daylight frontal Mani Hall photo: large roof fields weathered muted pale clay/buff-grey tiles with green-glazed eave edge, sloping edge and ridge strips; localized worn ochre glaze on ridge end ornaments. Projecting central gable has red-painted barge boards and hanging ornament. Brackets and beams are dark charcoal brown worn timber; main columns, door frames, lattice door panels and broad side plaster walls muted red. Lower wall/plinth bases grey masonry, stairs pale grey stone. Upper low slat openings deep brown; interior near-black. Do not borrow overall gold from style sample.\nSPECIFIC GEOMETRY LOCK: Preserve original master broad double-eaved hall and distinctive central projecting peaked porch, four front porch columns, exact windows and central entrance, blank wide sidewalls, complete lateral eave tips and stairs. Do not add plaque absent in line master, text, trees, signs, incense burner or inner sculpture. Lock all original line geometry and margins.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "2025 daylight frontal Mani Hall photo: large roof fields weathered muted pale clay/buff-grey tiles with green-glazed eave edge, sloping edge and ridge strips; localized worn ochre glaze on ridge end ornaments. Projecting central gable has red-painted barge boards and hanging ornament. Brackets and beams are dark charcoal brown worn timber; main columns, door frames, lattice door panels and broad side plaster walls muted red. Lower wall/plinth bases grey masonry, stairs pale grey stone. Upper low slat openings deep brown; interior near-black. Do not borrow overall gold from style sample.",
+  "references": {
+    "original_record": "assets/research/longxing.json",
+    "selected_photo_files": [
+      "assets/references/longxing-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Longxing_Temple_-_Mani_Hall_01.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/20250118_Longxing_Temple_-_Mani_Hall_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未单独注明；来源照片标示2025年"
+      }
+    ],
+    "note": "Only selected_photo_files were viewed as color inputs; no independent color calibration."
+  },
+  "output": "assets/colored/longxing.png",
+  "original_research": "assets/research/longxing.json",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-11df3121-ada9-4e4a-b3d5-7b6f2b4ca336.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 正定隆兴寺摩尼殿.\nOBSERVED MATERIAL COLORS: 2025 daylight frontal Mani Hall photo: large roof fields weathered muted pale clay/buff-grey tiles with green-glazed eave edge, sloping edge and ridge strips; localized worn ochre glaze on ridge end ornaments. Projecting central gable has red-painted barge boards and hanging ornament. Brackets and beams are dark charcoal brown worn timber; main columns, door frames, lattice door panels and broad side plaster walls muted red. Lower wall/plinth bases grey masonry, stairs pale grey stone. Upper low slat openings deep brown; interior near-black. Do not borrow overall gold from style sample.\nSPECIFIC GEOMETRY LOCK: Preserve original master broad double-eaved hall and distinctive central projecting peaked porch, four front porch columns, exact windows and central entrance, blank wide sidewalls, complete lateral eave tips and stairs. Do not add plaque absent in line master, text, trees, signs, incense burner or inner sculpture. Lock all original line geometry and margins.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/longxing.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/longxing-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-11df3121-ada9-4e4a-b3d5-7b6f2b4ca336.png",
+      "generated_at": "2026-09-15T11:41:39.126445+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2025日间实拍、样本与生成结果。重檐、中央三角抱厦及四柱、中央入口和两侧整墙保留。",
+      "灰米瓦、绿釉檐脊、红山花和红柱门墙、深灰褐斗栱、灰石基对应实拍；没有照搬样本的整体金调。",
+      "原稿未画的匾额、香炉与树木没有增加，主体和留白完整。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

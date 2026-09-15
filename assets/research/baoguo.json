@@ -1,0 +1,21 @@
+{
+  "id": "baoguo",
+  "subject": "宁波保国寺大殿",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Daxiong_Hall_in_Baoguo_Temple.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Daxiong_Hall_in_Baoguo_Temple.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/baoguo-photo.jpg"
+  ],
+  "source_note": "2012年宁波保国寺大殿前方略低斜视照片，保留现状副阶重檐，正面化重绘并移除池塘绿化。",
+  "author": "Siyuwj",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nLandscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room.\nSubject: 宁波保国寺大殿 (Baoguo Temple, Ningbo, Zhejiang), specifically the hall in image 2, not Beijing or Emei temples. Front elevation based on the slightly oblique low viewpoint reference: preserve this broad double-eaved hip-and-gable roof, its emphatically raised corners, modest timber columns and simple three-bay inner hall beneath the wider later outer eave. Center the building and correct camera roll and perspective without redesign. Remove foreground garden pond and shrubs, people, side walls and adjacent buildings. Simple platform only. Leave roof surfaces largely white: only 10-14 fine curved roof ribs per plane, no tile grids. Leave lattice as sparse outline geometry. All openings white.",
+  "generated_file": "assets/generated/baoguo.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

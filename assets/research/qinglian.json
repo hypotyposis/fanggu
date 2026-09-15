@@ -1,0 +1,87 @@
+{
+  "id": "qinglian",
+  "subject": "晋城青莲寺上寺释迦殿",
+  "sources": [
+    {
+      "source_page": "https://www.sohu.com/a/338260432_653164",
+      "image_url": "https://5b0988e595225.cdn.sohucs.com/q_70%2Cc_zoom%2Cw_640/images/20190903/40f918441aa44adf822f40b72aa6fbad.jpeg",
+      "author": "爱塔传奇",
+      "license": "原页面未注明开放许可；照片仅作建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/qinglian-photo.jpg",
+      "note": "2019年原创文章中的释迦殿棚前照片；画面有爱塔传奇署名。"
+    },
+    {
+      "source_page": "https://blog.sina.com.cn/s/blog_a19f8cff01033kms.html",
+      "image_url": "https://s15.sinaimg.cn/mw690/002XvxVRzy8l5ZUIVhP75&690",
+      "author": "猫耳山maoershan",
+      "license": "原页面未注明开放许可；照片仅作建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/qinglian-winter-photo.jpg",
+      "note": "2024冬游纪实，2025-01-13发布；核对石柱、门窗、台基及侧面登台方式。"
+    }
+  ],
+  "source_note": "采用加设临时保护棚之前的三间释迦殿照片核屋面，以2024冬季近景核方形抹棱石柱、两窗夹门及高台基。正面化绘制并去除香炉、碑罩、独立碑石和临时棚架；不是下寺复建殿，也不是上寺五间后法堂。照片未标明开放许可。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qinglian-photo.jpg",
+    "assets/references/qinglian-winter-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the SONG-DYNASTY SHAKYAMUNI HALL 释迦殿 in the UPPER QINGLIAN TEMPLE 青莲上寺, Zezhou near Jincheng, built 1089. Image 2 is the actual hall before installation of a modern protective canopy; use it for the complete roof silhouette. Image 3 is the same hall in winter, with its roof cropped and with scaffold poles; use only its stone-column geometry, central doorway, barred windows and raised plinth. Draw this exact SINGLE-STOREY THREE-BAY hall as a centered front elevation: FOUR front column axes defining THREE equal-width bays. All four supports are square chamfered STONE COLUMNS, not round wooden poles. Central bay: tall rectangular closed plain double door in a carved rectangular stone surround. Left and right bays: one broad rectangular vertical-bar window each above a low blank sill wall. Preserve the very broad, gently sloping SINGLE hip-and-gable roof with deep projecting eaves and graceful upturned tips, modest ridge-end ornaments and a shallow decorated ridge crest as actually seen in image2. DO NOT add a pagoda finial above the ridge. Preserve only the four large column-top dougong sets and visible understated beam edges; there are NO extra intermediate freestanding bracket sets. Draw the high simple rectangular masonry platform, about 1.66m above ground under a 9.4m-wide facade. Leave the entire FRONT FACE of the platform solid and uninterrupted, since access is from the sides; DO NOT invent a central front staircase. Any side access can be omitted in this straight-on illustration. Remove EVERYTHING standing in front of or beside the hall: huge bronze pagoda-shaped incense burner, glass protective stele display cases, all independent stone steles and stone pillars, temporary metal protective canopy and scaffold poles, poles, signs, trees, shrubs, people, foreground ropes and neighbouring buildings. No broad empty courtyard. Only depict the hall and its rectangular stone podium. Remove the blue name plaque and all calligraphy rather than reproducing letters. Roof planes are white with only 8-12 widely spaced thin guiding contours, NO roof tile grid. Walls and plinth are empty white, NO brick courses or weathering texture. Stone-carved ornament is suggested by only a few sparse fine curves. Landscape 1536×1024, complete roof, corners and podium inside the frame, approximately 82% canvas width, balanced generous margins. Match the delicate sparse thin-line organic clarity of image1. No shaded interior, no dense engraving, no filled black areas.\n",
+  "generated_file": "assets/generated/qinglian.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "上寺释迦殿线稿 · 面阔三间",
+    "单檐歇山 · 北宋元祐四年"
+  ],
+  "site_recommendation": {
+    "name": "晋城青莲寺",
+    "short": "青莲寺",
+    "sub": "上寺释迦殿",
+    "dyn": "song",
+    "tag": "宋",
+    "year": 1089,
+    "era": "北宋元祐四年",
+    "place": "山西泽州 · 金村镇 · 硖石山",
+    "placeKey": "zezhou",
+    "coords": [
+      112.989167,
+      35.458056
+    ],
+    "coords_note": "寺院中心近似坐标，非释迦殿单体测绘点。Commons类别公布35°27′29″N、112°59′21″E。",
+    "lede": "硖石山腰，青莲寺分作上下两院。上寺的释迦殿以北宋元祐四年的石刻题记定年，三间小殿立在高台上，方形石柱托起深远的檐口；下寺则保存着珍贵的唐代彩塑。",
+    "facts": [
+      "释迦殿面阔三间、进深六椽，单檐歇山；石柱与石门框题记保存北宋元祐四年（1089）的建造线索。",
+      "四周采用方形抹棱石柱，柱头五铺作单抄单昂；明间施门，两次间置直棂窗。",
+      "寺分上下两院；1988年公布为第三批全国重点文物保护单位。上寺释迦殿存四尊宋塑，下寺弥勒殿存六尊唐塑。"
+    ]
+  },
+  "factual_sources": [
+    {
+      "source_page": "https://www.jcgov.gov.cn/mljc/yzjc/zmjd/200710/t20071025_939421.shtml",
+      "publisher": "晋城市人民政府",
+      "supports": "释迦殿1089年、殿内四尊宋塑、上下院区分与下寺六尊唐塑。原页将元祐误写为元祜，此处规范为元祐。"
+    },
+    {
+      "source_page": "https://www.jcgov.gov.cn/dtxx/ztzl/2023ncsmp/jcmpbzjc/csmp_gjz/202307/t20230707_1820095.shtml",
+      "publisher": "晋城市人民政府",
+      "supports": "金村镇硖石山南麓、寺南庄村与丹河位置关系、1988年第三批国保。"
+    },
+    {
+      "source_page": "https://www.sohu.com/a/338260432_653164",
+      "publisher": "爱塔传奇",
+      "supports": "实拍及石柱碑铭释读；三间六椽、无补间铺作、五铺作单抄单昂；区分释迦殿与后法堂。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Qinglian_Temple",
+      "publisher": "Wikimedia Commons",
+      "supports": "寺院中心坐标35°27′29″N、112°59′21″E。"
+    }
+  ],
+  "verification": "已查看生成结果：三间四柱，两次间直棂窗，中间板门，单层屋檐，无补间铺作；高台基正面未编造中央阶梯。屋脊与台基完整，黑线白底，供统一朝代配色。",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-050d12b5-da9f-4c43-b0d7-5b7df86601a6.png"
+}

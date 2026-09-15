@@ -1,0 +1,52 @@
+{
+  "id": "taimiao",
+  "name": "北京太庙",
+  "subject": "北京太庙享殿（前殿）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/taimiao.png",
+    "assets/references/taimiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 北京太庙享殿（前殿）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: This is Beijing Imperial Ancestral Temple XIANGDIAN/Front Hall, NOT Forbidden City's Hall of Supreme Harmony. Preserve FIRST master extremely broad ELEVEN-bay facade, two hip roofs, comparatively low terrace with its exact three stair runs and existing central stone ramp. Current materials: both roof fields and ridge ornaments muted yellow-orange/ochre glazed ceramic; columns, doors and lattice panels vermilion/deep red. Both long under-eave painted frieze bands have dark cobalt blue, jade green, pale cream line pattern and limited existing yellow accents, not all gold; restrained matching colors on brackets. Terrace, balustrades, stairways and central ramp cool ivory white marble with soft gray weathering, not golden sandstone. No added giant stair platform, side halls, people, plaque lettering or flags. Bright daylight color reference neutralized into matte local colors, no blue sky cast.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看享殿原线稿和2015年10月24日日间正面实拍。黄橙琉璃瓦、红门红柱、蓝底绿与浅色纹样的两道梁枋、灰白石栏台阶分明。保持太庙享殿横长十一间及较低台基，不借太和殿的高台造型；颜色按现貌而非年代主色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Main_hall_of_Imperial_Ancestral_Temple.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/The_Main_hall_of_Imperial_Ancestral_Temple.jpg/1280px-The_Main_hall_of_Imperial_Ancestral_Temple.jpg?download=1",
+      "author": "Legolas1024 (Kwangming Lee)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/taimiao-photo.jpg",
+      "description": "北京太庙享殿南立面，2015年10月24日。Commons明确中文说明北京太庙享殿；正面完整、檐口与台基均可辨。",
+      "file": "assets/references/taimiao-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/taimiao.json",
+  "output": "assets/colored/taimiao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-93cce1d8-ad5d-4842-bfe2-622128e57a65.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：享殿横长十一间、两道庑殿檐与三处台阶保持；黄瓦、红门柱、蓝绿梁枋和白灰石栏分区清楚。中央御路饰纹有艺术细化，但无新台层、游客和字牌；整体未混为太和殿。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 北京太庙享殿（前殿）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: This is Beijing Imperial Ancestral Temple XIANGDIAN/Front Hall, NOT Forbidden City's Hall of Supreme Harmony. Preserve FIRST master extremely broad ELEVEN-bay facade, two hip roofs, comparatively low terrace with its exact three stair runs and existing central stone ramp. Current materials: both roof fields and ridge ornaments muted yellow-orange/ochre glazed ceramic; columns, doors and lattice panels vermilion/deep red. Both long under-eave painted frieze bands have dark cobalt blue, jade green, pale cream line pattern and limited existing yellow accents, not all gold; restrained matching colors on brackets. Terrace, balustrades, stairways and central ramp cool ivory white marble with soft gray weathering, not golden sandstone. No added giant stair platform, side halls, people, plaque lettering or flags. Bright daylight color reference neutralized into matte local colors, no blue sky cast.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/taimiao.png",
+        "assets/references/taimiao-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-93cce1d8-ad5d-4842-bfe2-622128e57a65.png",
+      "output": "assets/colored/taimiao.png"
+    }
+  ]
+}

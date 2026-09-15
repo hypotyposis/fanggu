@@ -1,0 +1,83 @@
+{
+  "id": "qufukongmiao",
+  "name": "曲阜孔庙",
+  "subject": "曲阜孔庙大成殿",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/qufukongmiao.png",
+    "assets/references/qufukongmiao-geometry-photo.jpg",
+    "assets/references/qufukongmiao-secondary-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 曲阜孔庙大成殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve FIRST line master Dacheng Hall nine bays with TEN carved front stone dragon columns, two shallow hip roof tiers, two-layer balustrade terrace and central stone dragon ramp flanked by steps. Roofs actual yellow-orange/ochre glazed ceramic with weathered gray bands, not blue/green tile. Ridge figures and ends ochre ceramic. Ten dragon columns, balustrades and ramp pale gray stone with faint natural buff staining, not painted red. Doors and rear walls muted deep crimson/red-brown. Under-eave bracket bands weathered dark gray-green with restrained blue, pale jade outlines and tiny ochre motif details. Upper vertical blank plaque deep blue with muted gold frame, lower horizontal blank plaque dark blue with ochre frame, NO LETTERS. No copying tourists, umbrella, incense pavilion, iron ramp handrail or exterior trees. Exact original bay rhythm, every roof tip and stair remains complete.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看原稿、2023-06-12、2008年10月及2011-01-23三张日间同殿实拍。两重屋面黄橙琉璃带灰色风化；十根龙柱与栏台、御路为灰石，门和后壁深红，梁枋旧彩深灰绿配青蓝、浅青线与赭色细饰，匾底蓝而边金。以2023近照为主，2011照补阴影部位，拍照色温不视为文保色准。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20230612_Dacheng_Dian,_Qufu_Kongmiao.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/20230612_Dacheng_Dian%2C_Qufu_Kongmiao.jpg/1280px-20230612_Dacheng_Dian%2C_Qufu_Kongmiao.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/qufukongmiao-geometry-photo.jpg",
+      "note": "2023年6月12日正面，原图下载429，使用同一Commons1280px预览，已查看。",
+      "date": "未知"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Dacheng_Hall.JPG",
+      "author": "Gisling",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/references/qufukongmiao-photo.jpg",
+      "note": "2008年10月近正面照片，用于石龙柱、台基与两重屋顶；左前树与前景人群去除。",
+      "date": "未知",
+      "role": "research_context_not_generation_input",
+      "usage_note": "此照片作为研究背景保留，未作为本次图像生成输入；实际生成输入以 input_images 为准。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "author": "Алый Король",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/qufukongmiao-secondary-photo.jpg",
+      "note": "2011年1月23日正面，用于十根前檐石龙柱与中央阶道、门窗；不把照片裁切当作建筑边缘。",
+      "date": "未知"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Dacheng_Hall.JPG",
+      "author": "Gisling",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/references/qufukongmiao-photo.jpg",
+      "note": "2008年10月近正面照片，用于石龙柱、台基与两重屋顶；左前树与前景人群去除。",
+      "date": "未知",
+      "role": "research_context_not_generation_input",
+      "usage_note": "此照片作为研究背景保留，未作为本次图像生成输入；实际生成输入以 input_images 为准。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF2.jpg",
+      "author": "Алый Король",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/qufukongmiao-secondary-photo.jpg",
+      "note": "2011年1月23日正面，用于十根前檐石龙柱与中央阶道、门窗；不把照片裁切当作建筑边缘。",
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/qufukongmiao.png",
+  "prepared_at": "2026-09-15T19:46:36.274516+08:00",
+  "original_research": "assets/research/qufukongmiao.json",
+  "visual_review": "已实看生成图：十根前檐龙柱、九间及两重檐、中央御路与左右阶栏保持；黄橙屋瓦、灰石柱栏、红门及灰绿青蓝梁枋区分清楚。主体占幅较原稿稍大，但全檐角与栏台完整，空白蓝匾无字，无游客、香炉或护栏。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-19255ad5-820d-4df3-a26f-30eeff6f20eb.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-19255ad5-820d-4df3-a26f-30eeff6f20eb.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T19:48:53.769836+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T19:50:43.520961+08:00",
+  "reference_usage_note": "references 可包含研究背景照片；标注 role=research_context_not_generation_input 的照片未送入本次图像生成，实际生成输入以 input_images 为准。"
+}

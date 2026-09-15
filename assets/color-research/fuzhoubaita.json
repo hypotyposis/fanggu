@@ -1,0 +1,78 @@
+{
+  "id": "fuzhoubaita",
+  "name": "福州白塔",
+  "subject": "福州白塔（报恩定光多宝塔）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/fuzhoubaita.png",
+    "assets/references/fuzhoubaita-main-photo.jpg",
+    "assets/references/fuzhoubaita-complete-photo.jpg",
+    "assets/references/fuzhoubaita-full-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 福州白塔（报恩定光多宝塔）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve the FIRST line master's complete SEVEN-story octagonal Fuzhou White Pagoda and small gourd finial, all current window openings, simplified balconies and bottom central steps. This tower is actually white plastered: main walls, engaged columns, lotus capitals, underside cornices and rails are cool chalk white/soft neutral ivory, with light gray aging, NOT yellow, buff, red or green. Roof edging tiles dark gray, tiny black-gray contour detailing. Finial weathered brown-gray metal/ceramic tones as distant photo, not gold. Main pointed doorway dark reddish-brown wood in near-black recess, upper small openings gray dark shadow. Foundation/steps natural gray stone. Retain restrained mostly achromatic palette appropriate to the real white tower, keep linework neutral gray rather than gold. Do NOT import colorful foreground temple, blue sky, vegetation, signs or lettering from third photo; third photo used only to confirm tower's upper profile and finial color.\nPreserve the original line master aspect ratio 1024:1536.",
+  "material_observations": "已查看七层线稿和2012年近景两张、2019年远景一张日间照片。塔身现为白色粉刷，柱与莲瓣柱头及檐腹同为白/浅灰，檐瓦灰黑，底部门洞深褐，台阶灰石，葫芦刹暗灰褐。2019照片前景寺院彩色屋脊不属于白塔，明确排除。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fuzhou_Yushan_20120304-07.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Fuzhou_Yushan_20120304-07.jpg/960px-Fuzhou_Yushan_20120304-07.jpg?download=1",
+      "reference_file": "assets/references/fuzhoubaita-main-photo.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "2012年3月4日，白塔七层塔身全貌近景。仰视导致塔刹遮住，底部略裁切，由另两张照片补充。",
+      "file": "assets/references/fuzhoubaita-main-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fuzhou_Yushan_20120304-12.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fuzhou_Yushan_20120304-12.jpg/960px-Fuzhou_Yushan_20120304-12.jpg?download=1",
+      "reference_file": "assets/references/fuzhoubaita-complete-photo.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "2012年3月4日，白塔正面低层和入口台阶；柱头莲纹、尖拱入口和须弥座落地关系清楚。",
+      "file": "assets/references/fuzhoubaita-complete-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:72239-Fuzhou_%2849222838261%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/72239-Fuzhou_%2849222838261%29.jpg/960px-72239-Fuzhou_%2849222838261%29.jpg?download=1",
+      "reference_file": "assets/references/fuzhoubaita-full-photo.jpg",
+      "author": "xiquinhosilva（Xiquinho Silva）",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "2019年12月7日，从定光寺望白塔上部，细小葫芦塔刹完整，用作塔刹和上部比例参考。前景寺庙不绘入。",
+      "file": "assets/references/fuzhoubaita-full-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/fuzhoubaita.json",
+  "output": "assets/colored/fuzhoubaita.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-1bc074a2-4f99-41e8-a3e3-224bd9a6f0ee.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图并核对七层：白色粉刷塔身与莲瓣柱头、灰黑檐瓦、暗灰塔刹、深褐底门均对应实拍。轮廓和台阶完整，保留简化栏杆；未把前景寺院彩绘借入白塔，未加文字。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 福州白塔（报恩定光多宝塔）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Preserve the FIRST line master's complete SEVEN-story octagonal Fuzhou White Pagoda and small gourd finial, all current window openings, simplified balconies and bottom central steps. This tower is actually white plastered: main walls, engaged columns, lotus capitals, underside cornices and rails are cool chalk white/soft neutral ivory, with light gray aging, NOT yellow, buff, red or green. Roof edging tiles dark gray, tiny black-gray contour detailing. Finial weathered brown-gray metal/ceramic tones as distant photo, not gold. Main pointed doorway dark reddish-brown wood in near-black recess, upper small openings gray dark shadow. Foundation/steps natural gray stone. Retain restrained mostly achromatic palette appropriate to the real white tower, keep linework neutral gray rather than gold. Do NOT import colorful foreground temple, blue sky, vegetation, signs or lettering from third photo; third photo used only to confirm tower's upper profile and finial color.\nPreserve the original line master aspect ratio 1024:1536.",
+      "input_images": [
+        "assets/generated/fuzhoubaita.png",
+        "assets/references/fuzhoubaita-main-photo.jpg",
+        "assets/references/fuzhoubaita-complete-photo.jpg",
+        "assets/references/fuzhoubaita-full-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-1bc074a2-4f99-41e8-a3e3-224bd9a6f0ee.png",
+      "output": "assets/colored/fuzhoubaita.png"
+    }
+  ]
+}

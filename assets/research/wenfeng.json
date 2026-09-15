@@ -1,0 +1,24 @@
+{
+  "id": "wenfeng",
+  "subject": "安阳文峰塔",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "verification": "Five eaves widening upward, intact bell-shaped top stupa, complete base and apex.",
+  "prompt": "Use case: precise-object-edit. Image 1 thin black contour style master; image 2 real Anyang Wenfeng Pagoda reference; image 3 five-eave draft to refine. Keep the draft's exact FIVE roof eaves, front door, stupa, base and all five storeys. Change ONLY the horizontal taper of the upper five-eave body: make each successive upper eave wider than the eave below. At bottom (roof 1) width 520; roof 2 width 560; roof 3 width 600; roof 4 width 640; top roof 5 width 680. The top eave must be visibly wider than the bottom eave, a clear upside-down taper / inverted truncated pyramid, matching the unique actual Wenfeng Pagoda. Keep bottom tall chamber width unchanged, let the upper floors expand upward naturally. Do not change the count: still five eaves and four short wall tiers above the first-floor chamber. Keep all linework black, surfaces pure white, minimal detail. No text, no added roofs. Complete building within portrait 1024×1536 margins.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: Tian Ning / Wenfeng Pagoda in Anyang 河南安阳文峰塔, as image 2. Octagonal brick tower with EXACTLY FIVE eave levels, its unique REVERSE TAPER: the tiers widen upward, uppermost roof widest. A tall first wall storey on circular lotus pedestal carries four very compressed upper levels with small central arched openings. On the roof stands ONE Tibetan-style white stupa: bell/bulb body, square neck, tapering ringed spire. Match the silhouette in the photo rather than an ordinary tapered pagoda. Centered FRONT elevation, central flat face and angled adjacent faces, minimal perspective. Full base and spire, 82% height on portrait 1024×1536. Ornament represented only by selective fine contour suggestions around base, cornices and door, not every figure or brick. Exactly five broad cornice/eave bands below the rooftop stupa. Two to four structural lines per cornice, no masonry joints or text, no shaded fills.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20250831_Tianning_Temple_Pagoda%2C_Anyang_08.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/20250831_Tianning_Temple_Pagoda%2C_Anyang_08.jpg/500px-20250831_Tianning_Temple_Pagoda%2C_Anyang_08.jpg?download=1",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/wenfeng-front-photo.jpg",
+    "assets/generated/wenfeng-draft2.png"
+  ],
+  "source_note": "2025年近正面照片。保留五层、逐层向上扩大的特殊倒收分轮廓、顶部覆钵塔及首层雕饰；去除环境干扰，校正照片仰视。",
+  "generated_file": "assets/generated/wenfeng.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ]
+}

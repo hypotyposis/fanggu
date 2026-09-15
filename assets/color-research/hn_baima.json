@@ -1,0 +1,56 @@
+{
+  "id": "hn_baima",
+  "name": "白马寺齐云塔",
+  "subject": "白马寺齐云塔 · 方形十三层密檐塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_baima.png",
+    "assets/references/hn_baima-photo-3.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Qiyun Pagoda, White Horse Temple. Preserve original exact square-plan thirteen-tier dense-eave pagoda, slight side perspective and small double-bulb finial, all tiny arched vents and straight corbelled eaves. It is orange-red/terracotta-brown fired brick, weathered and low saturation; dark grey-brown eave lips and lower base, mortar pale grey, the blocked first-storey rectangular doorway pale neutral grey cement/stone as photo. Finial dark rusty-grey metal. Do not make this a white plaster pagoda or a wooden temple; no curved new roofs, no gold. No red lantern, adjacent pavilion, offerings, steles, vegetation or sky. Fine engraving and restrained matte brick colors.",
+  "material_observations": [
+    "齐云塔日间实拍为赤赭色砖塔，密檐砖层略深、檐边呈深灰污色。",
+    "下部基座灰褐砖，首层封堵入口浅灰，塔刹是深灰褐小型金属构件。"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20251018_Qiyun_Pagoda.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/20251018_Qiyun_Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "file": "assets/references/hn_baima-photo-3.jpg",
+      "date": "2025-10-18 17:12:02",
+      "note": "恢复时已实际查看本地实拍；作为现存材料颜色的艺术转译依据。"
+    }
+  ],
+  "original_research": "assets/research/hn_baima.json",
+  "output": "assets/colored/hn_baima.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-5fac508e-53ca-4f2f-99e7-57f2e770c826.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实看原始线稿、齐云塔实拍、佛光寺风格样本和晚期生成 PNG。",
+      "十三重直线密檐、方形塔身左侧透视、顶部葫芦式塔刹及完整台基对应原稿。",
+      "赤赭色砖体、深灰檐口和下部基座、浅灰封门对应实拍；未误画为白塔或木塔。",
+      "细线与哑光色面可见，深色背景无树木、供桌、灯笼或文字。"
+    ],
+    "limitations": "人工对照，非严格像素配准或文保级色彩校准。"
+  },
+  "recovery": {
+    "session_id": "01a09e30-b2ba-7a50-8dee-1147a4c83e46",
+    "session_file": "/Users/fuxiangyu/.codex/sessions/2026/09/14/rollout-2026-09-14T12-33-06-01a09e30-b2ba-7a50-8dee-1147a4c83e46.jsonl",
+    "spec_line": 4298,
+    "generation_call_line": 4302,
+    "generation_call_id": "call_mRzibvOrUIsRDfFIqGZpatfR",
+    "prompt_reconstruction": "原会话 common + 两个换行 + 逐项 extra；common 与已入库同批 huata 提示词前缀完全匹配。",
+    "association": "原会话此批 yanshan/hn_baima 中仅 hn_baima 未返回 output_hint；同目录稍晚生成的唯一未入库竖图，经实看与齐云塔母版逐层和门洞构图吻合。路径关联由调用顺序、时间、唯一剩余输出和视觉主体交叉推断。",
+    "original_sha256": "125e553f7110d75cccab1500aa0b7e407b6f4db3b657e84f086060d081218894"
+  },
+  "completed_at": "2026-09-15T11:42:05.836770+00:00"
+}

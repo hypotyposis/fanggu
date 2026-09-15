@@ -1,0 +1,50 @@
+{
+  "id": "toji",
+  "name": "东寺",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/toji.png",
+    "assets/references/toji-whole-photo.jpg",
+    "assets/references/toji-alt-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nKyoto Toji five-story pagoda. Preserve EXACTLY five roof levels, all balcony railings and the tall ringed finial from image 1. Tile roofs charcoal neutral grey, aged timber deep brown with restrained warmer brown railings, base grey stone. Metal finial very dark brown/grey with muted green patina near top, no invented gold. Photo is underexposed: lift timber into legible dark brown but don't treat black shadows as black paint. No vegetation.",
+  "material_observations": "五重塔灰瓦、深褐旧木，栏杆局部温棕；相轮深色金属且顶端有铜绿。参考曝光较暗，应提亮结构可读性但不改成新朱漆。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:To-ji_Pagoda_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/To-ji_Pagoda_01.jpg",
+      "author": "MomoyamaResearch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/toji-whole-photo.jpg",
+      "date": "2019-03-16（文件说明）；EXIF为2019-02-13",
+      "note": "五重塔全貌，裸枝遮挡但五层屋顶、初层门窗及塔基可辨；文件说明误记1643，年代采用寺方官网1644。",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1280
+      }
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_To-ji_Pagode_09.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kyoto_To-ji_Pagode_09.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/toji-alt-photo.jpg",
+      "date": "2018-04-10",
+      "note": "同塔上部屋顶与完整相轮补充细节照；不用于判断总层数。",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1309
+      }
+    }
+  ],
+  "output": "assets/colored/toji.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-aac9ec68-a649-4ce1-b992-f3a973c03424.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "逐图目检：五个屋顶与长相轮完整，木材棕褐、瓦灰、相轮铜绿，右侧台阶及原构图保留，无树木或金色屋顶。",
+  "completed_at": "2026-09-15T09:46:12.901Z"
+}

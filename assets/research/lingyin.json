@@ -1,0 +1,72 @@
+{
+  "subject": "灵隐寺石塔与经幢 · 各取一座对照",
+  "caption": [
+    "石塔与经幢 · 对照线稿",
+    "吴越 · 960 · 969年"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/lingyin-tower-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lingyin_Temple_(The_octagonal_nine-story_stone_pagoda).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Lingyin_Temple_%28The_octagonal_nine-story_stone_pagoda%29.jpg",
+      "author": "关野贞（Sekino Tadashi）",
+      "license": "公有领域 · PD-Japan-oldphoto / PD-1996",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-Japan-oldphoto"
+    },
+    {
+      "file": "assets/references/lingyin-pillar-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lingyin_Temple_(a_Stone_Pillar_on_the_left).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Lingyin_Temple_%28a_Stone_Pillar_on_the_left%29.jpg",
+      "author": "关野贞（Sekino Tadashi）",
+      "license": "公有领域 · PD-Japan-oldphoto / PD-1996",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-Japan-oldphoto"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "灵隐寺石塔和经幢",
+      "url": "https://www.hzzx.gov.cn/hzzx/content/2010-10/26/content_5137938.htm"
+    }
+  ],
+  "source_note": "依据1918年两张实拍分别概括一座九层石塔及一座经幢，并置供形制对照；非原址相对位置与比例测绘。保留存世残损轮廓，未补全塔刹；木构大殿不在本图版内。",
+  "site_recommendation": {
+    "name": "杭州灵隐寺石塔与经幢",
+    "short": "灵隐石塔经幢",
+    "sub": "九层石塔 · 陀罗尼经幢",
+    "types": [
+      "pagoda",
+      "pillar"
+    ],
+    "dyn": "zhou",
+    "tag": "吴越",
+    "era": "吴越 · 960年石塔、969年经幢",
+    "year": 960,
+    "yearLabel": "960 · 969",
+    "place": "浙江杭州 · 灵隐寺",
+    "province": "浙江",
+    "placeKey": "hangzhou",
+    "lat": 30.243137,
+    "lon": 120.096662,
+    "latlon_source": "https://authority.dila.edu.tw/place/search.php?code=PL000000011596",
+    "lede": "石塔将层层木檐凝固为石，经幢则把经文与佛像叠置于长柱之上。灵隐寺留下的这组吴越遗存，年代跨过北宋立国，仍属于钱氏治下的江南。",
+    "facts": [
+      "<b>石塔</b>建于960年，现存两座，八角九层，以石材表现楼阁的柱、枋、斗栱与出檐。",
+      "<b>经幢</b>建于969年，亦存两座，幢身刻经，台座与上部构件层叠；与石塔分属不同营造纪年。",
+      "<b>图版</b>从石塔与经幢各选一座，依据历史实拍并置对照；现寺内木构殿堂另有后世重建沿革。"
+    ]
+  },
+  "id": "lingyin",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/lingyin-tower-photo.jpg",
+    "assets/references/lingyin-pillar-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Create ONE refined heritage line-art plate for 灵隐寺石塔与经幢, an explicitly comparative pair, not a reconstruction of their arrangement. Image 1 is ONLY the style master: delicate, slightly organic, restrained black contour drawing with extensive pure-white negative space. Image 2 is a real 1918 photograph of the actual Lingyin octagonal NINE-storey stone pagoda; image 3 is a real 1918 photograph of its dharani stone pillar. Draw the complete pictured stone pagoda on the left and the complete pictured sutra pillar on the right, separated, with bases aligned, pagoda taller than pillar. Retain the actual different silhouettes: pagoda nine distinct diminishing occupied tiers, low projecting carved stone eaves, bracket outlines, octagonal faceted shaft, square base, damaged existing short top; pillar long largely plain inscription shaft, stepped carved bases and shorter ornamented stacked cap. Do not replace pillar with another pagoda. Preserve observed surviving condition, do not invent tall spires or missing figures. Remove trees, railings, ropes, neighboring halls, rubble, shadows, photographic texture. Minimal structural detail only, no brick texture, no filled dark windows, no shading or crosshatching. All surfaces pure white, fine black contours only, no grey fills, no text, labels, frame or watermark. Approximately frontal, verticals vertical. Landscape 1536x1024, both complete subjects with 9% top and bottom margin and generous side margin. Match master fine line weight; NOT an engravings-style dense drawing.",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/lingyin.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-2999903a-2bd2-46da-bb42-d15554b47465.png"
+}

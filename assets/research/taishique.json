@@ -1,0 +1,100 @@
+{
+  "id": "taishique",
+  "subject": "登封太室阙·西阙南面",
+  "caption": [
+    "太室阙 · 西阙南面",
+    "东汉元初五年"
+  ],
+  "generation_tool": "Built-in image_gen.imagegen",
+  "generated_file": "assets/generated/taishique.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-b52f522e-6b97-4e6e-81e5-12275dda3c02.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/taishique-1907-photo.webp",
+    "assets/references/taishique-photo.jpg"
+  ],
+  "prompt": "Use case: precise-object-edit and style-transfer. Image1 is the previous Taishi westque line drawing to EDIT. Image2 is the exact original1907 westque south-face photograph, and Image3 is our fine-contour style MASTER. Preserve image1 stone course arrangement, complete irregular silhouette, mainandchildroof shapes, proportions and nearfront viewpoint. ONLY simplify rendering: REMOVE ALL invented figures, seated Buddhas, animals and trees carved on broad stone panels; leave those panels blankwhite. Preserve just two sparse thin rows of circular nipple motifs on upperband and a few curved traces on low border. REMOVE all grey grain, dots, cracks texture, under-eave shading and hatching; every surface purewhite, fine black contours and sparse joints only, using master's clean delicate lineweight. Keep actual worn edges and distinctive double-height roof. Do not restore lostroofportions. Add about10% more margin above andbelow by slightly reducing subjectscale. Portrait1024x1536, purewhitebackground, nolettering, nopeople, noframe.",
+  "initial_prompt": "Use case: style-transfer. One heritage collection plate. Image1 is the STYLE MASTER only: match its extremely delicate fine black contours, selective detail and generous white space. Other images are SUBJECT GEOMETRY references. Pure WHITE background, BLACK fine lines only, surfaces stay WHITE. No fills, grey shading, hatching, stone grain, cracks everywhere, solid shadows, color, text, lettering, labels, borders, watermarks. Draw the complete ancient stone monument, its old worn edges and actual surviving roof pieces. Exclude every person, barrier, sign, modern protection building, ceiling, window, tree and background. No reconstruction of lost parts. Keep a few major stone joints and a few faint outline motifs from the carved panels; never densely texture or decorate every panel. All inscriptions omitted. Center isolated monument with verticals vertical, balanced margins, apex and base uncut, about80%height. Portrait1024x1536. Subject: the WEST TOWER of TAISHI QUE, Dengfeng, East Han118CE. Image2 is the1907 south-face photograph of this exact tower, showing its complete unprotected ancient body; image3 supplements current stone details. Draw ONE west que only: a broad upright block-built slab tower whose taller main part is at viewer right and low subsidiary projection at left, with worn stone imitations of tiled hip roofs, lower subsidiary eave at left and higher main eave and ridged roof at right. Preserve exact stepped silhouette and broad facade proportions visible in the1907 photo. Remove the man sitting on the eave and infer only the small roof edge he obscures from the intact adjacent roof. Sparse lines for a few carved concentric-ring bands; no readable inscription. This is an East Han stone que, not a pagoda or temple hall. Minimal near-frontal perspective, narrow left side face as in actualphoto.",
+  "final_edit_reference_files": [
+    "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-e223c82a-1ddf-46b6-b4b2-71bc5d932286.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/taishique-1907-photo.webp",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longmen-style-black.png"
+  ],
+  "sources": [
+    {
+      "source_page": "https://gujianzhu.wiki/architecture/taishique/",
+      "image_url": "https://gujianzhu.wiki/_astro/%E8%A5%BF%E9%98%99%E5%8D%97%E9%9D%A2.DA1fhc2T_1NpBM7.webp",
+      "author": "Édouard Chavannes（沙畹，1865–1918）",
+      "license": "Public domain — historical photograph (1907; author died 1918)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "reference_file": "assets/references/taishique-1907-photo.webp",
+      "description": "1907年西阙南面，《北中国考古图录》；现代档案网站转录。照片原作公版；该网站自身编辑文字标示CC BY-NC-ND4.0，不将该编辑许可混作照片许可。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Left_part_of_Taishi_Que%2C_2015-09-25.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Left_part_of_Taishi_Que%2C_2015-09-25.JPG/1280px-Left_part_of_Taishi_Que%2C_2015-09-25.JPG?download=1",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/taishique-photo.jpg",
+      "description": "2015年西阙现状；近景细节参考，现代保护建筑不绘入。"
+    }
+  ],
+  "source_note": "主体是西阙南面，以沙畹1907年无遮挡照片为轮廓参考，当代照片核对现存石质构件。去除人像及现代保护房；石刻采用少量纹样概括，非拓片复刻。最终经imagegen清除初稿的多余人物纹饰与灰色石纹。",
+  "verification": {
+    "reference_images_viewed": true,
+    "generated_image_viewed": true,
+    "uncropped": true,
+    "style": "黑色细线、白色留白、去除现代环境；艺术概括，不作测绘复原"
+  },
+  "site_recommendation": {
+    "name": "太室阙",
+    "short": "太室阙",
+    "sub": "西阙 · 中岳庙神道阙",
+    "dyn": "han",
+    "tag": "东汉",
+    "era": "元初五年",
+    "year": 118,
+    "yearLabel": "118年",
+    "yearApprox": false,
+    "place": "河南 · 登封",
+    "placeKey": "dengfeng",
+    "lat": 34.4518694,
+    "lon": 113.0678028,
+    "lede": "中岳庙前的石阙把汉代屋宇凝固在石头里。母阙与子阙高低相接，残存的石檐和阙铭，仍指向两千年前的祭山礼仪。",
+    "facts": [
+      "建于东汉元初五年（118），为太室山庙前神道阙。",
+      "东西两阙相对，每阙由高低相连的母阙和子阙组成。",
+      "石块模拟木构屋顶，阙身留存画像石、乳钉纹及汉代铭文。"
+    ],
+    "basis": [
+      {
+        "url": "https://www.dengfeng.gov.cn/hqwh/5266240.jhtml",
+        "supports": "118年、子母阙、石质仿木四阿顶及阙铭。"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Taishi_Que",
+        "supports": "地图近似坐标"
+      }
+    ]
+  },
+  "historical_sources": [
+    {
+      "title": "太室阙 我国现存最早的庙阙",
+      "url": "https://www.dengfeng.gov.cn/hqwh/5266240.jhtml",
+      "publisher": "登封市人民政府",
+      "note": "118年、子母阙、石质仿木四阿顶及阙铭。"
+    }
+  ],
+  "source_page": "https://gujianzhu.wiki/architecture/taishique/",
+  "image_url": "https://gujianzhu.wiki/_astro/%E8%A5%BF%E9%98%99%E5%8D%97%E9%9D%A2.DA1fhc2T_1NpBM7.webp",
+  "author": "Édouard Chavannes（沙畹，1865–1918）",
+  "license": "Public domain — historical photograph (1907; author died 1918)",
+  "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "reference_file": "assets/references/taishique-1907-photo.webp",
+  "description": "1907年西阙南面，《北中国考古图录》；现代档案网站转录。照片原作公版；该网站自身编辑文字标示CC BY-NC-ND4.0，不将该编辑许可混作照片许可。"
+}

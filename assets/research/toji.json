@@ -1,0 +1,148 @@
+{
+  "id": "toji",
+  "subject": "京都东寺五重塔",
+  "caption": [
+    "东寺 · 五重塔",
+    "近正视 · 江户宽永二十一年（1644）"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:To-ji_Pagoda_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/To-ji_Pagoda_01.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/toji-whole-photo.jpg",
+    "assets/references/toji-alt-photo.jpg"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:To-ji_Pagoda_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/To-ji_Pagoda_01.jpg",
+      "author": "MomoyamaResearch",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/toji-whole-photo.jpg",
+      "date": "2019-03-16（文件说明）；EXIF为2019-02-13",
+      "note": "五重塔全貌，裸枝遮挡但五层屋顶、初层门窗及塔基可辨；文件说明误记1643，年代采用寺方官网1644。",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1280
+      }
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_To-ji_Pagode_09.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kyoto_To-ji_Pagode_09.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/toji-alt-photo.jpg",
+      "date": "2018-04-10",
+      "note": "同塔上部屋顶与完整相轮补充细节照；不用于判断总层数。",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1309
+      }
+    }
+  ],
+  "source_note": "实际全塔照片确定五层轮廓，局部照片仅补日本屋檐与相轮细节。先后三次候选稿误画四层，均弃用；最终以精准追加顶层的内置编辑校正为五个独立屋顶，已目检确认。线条省略木材纹理与密集瓦面，几何作图鉴级简化。",
+  "prompt": "Use case: precise-object-edit. Image 1 is a drawing that is MISSING ITS UPPERMOST WOODEN ROOFED STOREY. Add that missing uppermost storey. The attached image has FOUR large roofs. Keep all FOUR EXISTING LARGE ROOFS, including the current upper roof, unchanged in count. Above the current upper roof, ADD AN ENTIRE NEW SMALLER WOODEN STOREY WITH A COMPLETE WIDE HIP ROOF. Move the existing metal finial upward so it sits on this NEW fifth top roof. A roof is a broad sloping plane with sweeping eaves, not a flat balcony or bracket band. The added new roof must be about 85 percent the width of the current upper roof and visibly separate, with an actual timber wall and bracket space beneath it. Do NOT replace, merge or remove any of the four existing roofs. Final total must be FIVE complete large overhanging wooden roofs and then the metal finial. Fit this by slightly shrinking the entire corrected pagoda within the original portrait canvas. Image 2 is the actual five-storey Toji pagoda photo to validate the roof count and Japanese proportions. Image 3 is our style master. Keep the black delicate linework and pure white background, broad unfilled white roof planes, complete low stone base and all stairs, full long finial, no text or numbers. Do not add shading, color, dense tiling or surroundings. The only architectural change is to ADD the missing UPPERMOST ROOFED STOREY above the existing uppermost roof.",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail and generous blank areas. The Buddha is STYLE ONLY.\nImage 2 is the SUBJECT GEOMETRY reference: the complete 1644 five-storey wooden pagoda at Toji temple (教王護国寺五重塔), Kyoto, Japan. Image 3 is a close view of the SAME pagoda for the upper roofs and long sorin finial.\nDraw this Japanese wooden pagoda, preserving its five square storeys and exactly FIVE distinct broad gently-curved tiled roofs, stacked with gradual taper. The lowest storey and its wide first roof MUST be present, not replaced by foliage or omitted. Keep the tall thin sorin above the fifth roof, including its nine separated horizontal rings, ornamental upper shaft and jewel tip. Preserve Japanese roof slopes, shallow eave-tip uplift, delicate corner ornaments, balcony railings on upper storeys, dark timber frame interpreted as outlines only, the tall ground floor with its central closed doors, and low stone plinth with short entrance steps visible in image 2. Do not turn it into a Chinese pagoda, do not add a sixth roof, do not exaggerate the taper.\nComposition: portrait 1024 x 1536, isolated centered full pagoda occupying about 82% of canvas height. Near-frontal slight oblique view with verticals kept vertical and minimal perspective; all five eaves, finial tip, steps and plinth must be completely inside canvas with generous top/bottom margin. Use image 2 to resolve the COMPLETE silhouette even though branches cross it; remove all branches, trees, bushes, benches, modern fence, signs and background walls.\nCreate refined sparse BLACK INK ON PURE WHITE linework. All surfaces remain WHITE. Fine contours with only a few finer internal structural lines. Roof planes should be predominantly white with only a few selective tile-edge marks near eaves, no repeated parallel roofing lines or tile grid. Under-eaves, doors, openings, finial rings and timber remain unfilled white. Simplify repeated rafters and brackets to a few representative shapes, avoiding dense comb textures. No solid black regions, no grey tones, no shading, no crosshatching, no pencil grain, no material texture, no gradients, no color. A few short ground lines only. No lettering, calligraphy, captions, labels, dimensions, watermark, frame or border. Keep visual density and slender line weight consistent with image 1.",
+      "input_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/toji-whole-photo.jpg",
+        "assets/references/toji-alt-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-7283df2a-035e-445b-afaf-8875f9bb520f.png",
+      "accepted": false,
+      "reason": "四层屋顶，弃用"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Correct the architecture in Image 1, the generated line drawing: it mistakenly has only FOUR roofs. The real TOJI PAGODA must have exactly FIVE roofs. Image 2 is our fine black-line style master. Image 3 is the actual FULL five-storey pagoda reference; Image 4 shows upper details. INSERT ONE COMPLETE ADDITIONAL MIDDLE STOREY WITH ITS OWN BROAD HIP ROOF, wood-wall section and balcony. The resulting vertical stack from bottom to top must visibly be: tall ground-floor room + ROOF ONE; shorter second-storey room + ROOF TWO; third-storey room + ROOF THREE; fourth-storey room + ROOF FOUR; fifth-storey room + ROOF FIVE; then long nine-ring sorin. FIVE clearly separated big eave-roof silhouettes must be countable. Preserve the current refined thin black linework, all-white roof planes, low stone plinth, door/steps, gentle taper, Japanese roof geometry and unfilled spaces. Keep the entire finial and base within the 1024x1536 portrait canvas, reduce individual storey heights and roof widths proportionally to fit the corrected five-storey tower with breathing room. Do not add labels or numbers. Do not change this into a Chinese pagoda. No trees, people, fences, textures, shading, dense tile grid, solid dark areas, words, watermark or border. Double-check FIVE roofs before finishing.",
+      "input_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-7283df2a-035e-445b-afaf-8875f9bb520f.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/toji-whole-photo.jpg",
+        "assets/references/toji-alt-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-01e32d8f-1e82-4057-86d1-dbc311bb1deb.png",
+      "accepted": false,
+      "reason": "仅加阳台，仍四层屋顶，弃用"
+    },
+    {
+      "prompt": "Use case: style-transfer. Draw the real FIVE-STORIED TOJI PAGODA in Kyoto, Japan, from the attached full-building photograph.\nImage 1 is the fine black-line STYLE master only. Image 2 shows the actual complete Toji pagoda; its five roofs are visible behind bare branches. Image 3 is the same tower's upper roofs and finial.\nCRITICAL GEOMETRY: Exactly FIVE separate large roofs, each with its own overhanging hip roof plane. Counting FROM BOTTOM: roof 1 (widest) above the tall ground-floor door chamber; roof 2 above a shorter upper room; roof 3 above another room; roof 4 above another room; roof 5 (narrowest) above the top room; and a long metal sorin above roof 5. A balcony railing does NOT count as a roof. In this 1024x1536 portrait design, reserve the upper part for the finial, then place the five distinct eave lines at approximately y=490, y=680, y=870, y=1060, and y=1250; below the lowest roof is the tall door chamber down to the stone base around y=1410. These five stacked roof planes must be immediately countable. No written numbers in the image.\nKeep the modest taper, very broad Japanese timber-pagoda eaves, gently curving roof slopes, square plan, upper-storey open railings, projecting timber bracket groups, low stone plinth and short entrance steps. Preserve the actual long sorin with nine round horizontal rings, upper ornament and jewel tip; everything from tip to plinth remains in frame. Near frontal, slight oblique, verticals vertical, not dramatic low-angle. Remove ALL trees, branches, bushes, fences, benches, signs and background buildings.\nUse the master image's sparse fine black ink contours on pure white. The five roof planes and all wall planes remain almost entirely white: roof outlines only plus a few tile-end marks, no dense tile ribs or repeated surface lines. Use only sparse simplified bracket and rafter outlines. Every doorway, window and structural space remains white, not solid black. No gray shading, texture, hatching, pencil grain, color, gradient or shadow. No words, labels, captions, watermark or frame. Keep the full monument centered, complete, with breathing room and a few short ground lines. Do not produce four roofs; all FIVE must be visible.",
+      "input_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/toji-whole-photo.jpg",
+        "assets/references/toji-alt-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-58f2c6c7-86e9-44a4-8741-4fb831cdcae3.png",
+      "accepted": false,
+      "reason": "重新生成仍为四层屋顶，用于下一步校正"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is a drawing that is MISSING ITS UPPERMOST WOODEN ROOFED STOREY. Add that missing uppermost storey. The attached image has FOUR large roofs. Keep all FOUR EXISTING LARGE ROOFS, including the current upper roof, unchanged in count. Above the current upper roof, ADD AN ENTIRE NEW SMALLER WOODEN STOREY WITH A COMPLETE WIDE HIP ROOF. Move the existing metal finial upward so it sits on this NEW fifth top roof. A roof is a broad sloping plane with sweeping eaves, not a flat balcony or bracket band. The added new roof must be about 85 percent the width of the current upper roof and visibly separate, with an actual timber wall and bracket space beneath it. Do NOT replace, merge or remove any of the four existing roofs. Final total must be FIVE complete large overhanging wooden roofs and then the metal finial. Fit this by slightly shrinking the entire corrected pagoda within the original portrait canvas. Image 2 is the actual five-storey Toji pagoda photo to validate the roof count and Japanese proportions. Image 3 is our style master. Keep the black delicate linework and pure white background, broad unfilled white roof planes, complete low stone base and all stairs, full long finial, no text or numbers. Do not add shading, color, dense tiling or surroundings. The only architectural change is to ADD the missing UPPERMOST ROOFED STOREY above the existing uppermost roof.",
+      "input_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-58f2c6c7-86e9-44a4-8741-4fb831cdcae3.png",
+        "assets/references/toji-whole-photo.jpg",
+        "assets/references/longmen-style-black.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-57c3419f-8ddf-40bf-ad21-fd9489053fd4.png",
+      "accepted": true,
+      "reason": "已校正为五个独立瓦屋顶，相轮、塔基与台阶完整"
+    }
+  ],
+  "generated_file": "assets/generated/toji.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-57c3419f-8ddf-40bf-ad21-fd9489053fd4.png",
+  "historical_sources": [
+    {
+      "title": "东寺官网 · 五重塔",
+      "url": "https://toji.or.jp/smp/guide/gojunoto/",
+      "supports": "国宝五重塔为江户时代宽永21年（1644）木造、本瓦葺，高约55米；经历四次烧毁后现塔为第五代；初层内部围绕心柱布置密教造像。"
+    },
+    {
+      "title": "Commons · Five-storied Pagoda, Toji",
+      "url": "https://commons.wikimedia.org/wiki/Category:Five-storied_Pagoda,_Toji",
+      "supports": "五重塔对象位置34°58′47.53″N、135°44′55.32″E；所在地京都市南区九条町。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "东寺",
+    "short": "东寺",
+    "sub": "京都 · 五重塔",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "江户时代 · 宽永二十一年",
+    "year": 1644,
+    "yearLabel": "1644 重建",
+    "yearApprox": false,
+    "place": "日本 · 京都府 · 京都市南区",
+    "placeKey": "kyoto",
+    "lat": 34.9798694,
+    "lon": 135.7487,
+    "coords": [
+      135.7487,
+      34.9798694
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Five-storied_Pagoda,_Toji",
+    "coordinate_note": "采用五重塔对象坐标34°58′47.53″N、135°44′55.32″E换算；比寺院整体地图点更贴近所绘塔体。",
+    "lede": "东寺五重塔以五层宽展的瓦檐逐级收分，细长相轮立在塔顶。约55米高的木塔是京都南部醒目的古建筑，其轮廓沿袭了日本佛塔的层层出檐与栏杆形式。",
+    "facts": [
+      "现存五重塔重建于1644年，为历经四次火灾后的第五代塔；不以寺院或初塔创建年代登记。",
+      "塔为五层方形木构，本瓦葺，五层宽檐上立完整相轮，总高约55米。",
+      "初层内部以贯通各层的心柱象征大日如来，周围配置如来与菩萨像，形成密教空间。"
+    ]
+  },
+  "quality_check": {
+    "viewed_inputs": true,
+    "viewed_output": true,
+    "complete_silhouette": true,
+    "roof_count": 5,
+    "notes": "最终PNG目检从下向上五个独立宽屋顶、四处层间栏杆、初层门窗、相轮和台基完整；无树木遮挡、无文字和填色。"
+  }
+}

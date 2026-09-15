@@ -1,0 +1,176 @@
+{
+  "id": "xianzhonggu",
+  "subject": "西安钟楼与鼓楼并置合绘（左钟楼、右鼓楼）",
+  "caption": [
+    "西安钟楼 · 鼓楼",
+    "双主体组合图，并非实景相邻"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "author": "Gary Todd",
+      "date": "2011-03-13",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/xianzhonggu-bell-alt-photo.jpg",
+      "role": "钟楼日间近正面，攒尖顶、三重檐及台基台阶"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Drum_Tower_of_Xi%27an.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/The_Drum_Tower_of_Xi%27an.JPG",
+      "author": "Wang Zhongyin（Bt4wang）",
+      "date": "2010-06-23",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-south-photo.jpg",
+      "role": "鼓楼长边南立面近斜视，长台基、正中券洞与横向屋脊；此面无双侧正面台阶"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "author": "源義信",
+      "date": "2023-10-09",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-front-photo.jpg",
+      "role": "鼓楼山面照片，只用于核对歇山屋顶与三道檐线；初次生成参考"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xianzhonggu-bell-alt-photo.jpg",
+    "assets/references/xianzhonggu-drum-south-photo.jpg",
+    "assets/references/xianzhonggu-drum-front-photo.jpg"
+  ],
+  "source_note": "逐张查看钟楼Gary Todd 2011近正面、鼓楼Wang Zhongyin 2010南面斜正视、源義信2023鼓楼山面照片。图版将两座建筑分开并置：钟楼方形台基、四角攒尖顶；鼓楼长方形台基、长屋脊歇山顶。现实两楼并非图中近距离排列。首稿将鼓楼山面的楼梯错置到南面，定向编辑已移除，并稀疏化过密屋瓦线。最终按照片现存形态描绘，省略街景、文字和游客，不代表测绘正立面。",
+  "prompt": "Use case: precise-object-edit. Image 1 is the current two-tower drawing to correct. Image 2 is the sparse thin-line style master. Image 3 is the actual Bell Tower reference; Image 4 is the actual Drum Tower south facade reference.\nKeep exactly two complete buildings, their different roof forms, THREE visible eave lines each, all floor and column counts, comparative sizes and the white background.\n1. On the RIGHT DRUM TOWER ONLY, REMOVE the invented paired front stair flights and all stair balustrades from the broad front face of the raised platform. The actual SOUTH facade in Image 4 has NO paired front stair flights. It is a PLAIN tall rectangular brick wall with ONE central arched passage. Keep the simple railing around the platform top; leave the large wall surface white, with only outer boundary and arch outlines. Do NOT remove the stair flights on the LEFT BELL TOWER: those stairs are in its reference photo.\n2. Simplify line density on BOTH buildings, especially roofs. Remove about 85 percent of tightly repeated roof tile ribs, leaving at most 6–10 widely spaced very fine roof-direction lines on each large roof slope and mainly white roof surfaces. Reduce repetitive bracket and balustrade miniature details to a few light structural strokes. Preserve the unmistakable roof silhouettes, corner ornaments, finial, long ridge, roof tips, columns and main balconies. Make roof and bracket interiors as sparse as the style master. Do not add shading or grey wash.\n3. Give the whole composition a little more horizontal breathing room: maintain a clear gap between the two monuments and at least 5 percent canvas white margin outside each extreme base/roof edge. Keep bases roughly level.\nPure thin BLACK linework on pure WHITE, all arch interiors and windows WHITE, no solid dark under-eave bands, no hatch, brick-grid or pencil texture. No text, frame or labels. Landscape1536×1024.",
+  "initial_prompt": "Use case: style-transfer. Asset type: ONE coordinated fine-line architectural plate for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER: match the Vairocana Buddha drawing's elegant thin slightly organic contours, sparse details and generous white surfaces. Image 2 is SUBJECT GEOMETRY for Xi'an BELL TOWER 钟楼, a near-frontal daylight photo. Image 3 is SUBJECT GEOMETRY for Xi'an DRUM TOWER 鼓楼, showing its long south facade and east gable. Image 4 is the actual Drum Tower's short gable end, only to clarify roof shape; do NOT use the short end as the primary facade.\nCreate a wide comparative composition of exactly TWO distinct complete monuments: BELL TOWER on the LEFT, DRUM TOWER on the RIGHT. This is an editorial pairing, not a continuous real street scene. Separate them with a clear generous white gap. Put bases on roughly the same baseline, both at a consistent architectural scale. Bell Tower approx 36m tall on 35.5m-wide square platform; Drum Tower approx 33–35m tall on a 53m-wide rectangular platform. Therefore the right Drum Tower should be about 1.45 times as wide as the left Bell Tower but slightly shorter.\nLEFT Bell Tower: compact square brick platform with one visible central arched passage and small side depth; retain the actual symmetrical stair flights and stone parapet visible in Image 2. Above it, a square two-floor timber pavilion with THREE distinct projecting eave levels. Top roof is FOUR-SIDED PYRAMIDAL / four-corner tent roof converging to ONE central pointed cup-shaped finial. No horizontal top ridge or gable triangle on Bell Tower. Preserve the actual five-bay central facade plus peripheral corridor columns, open upper balcony, thin columns and the broad empty panels between structural members.\nRIGHT Drum Tower: broad RECTANGULAR brick platform, a single central arched passage on the long SOUTH facade. Above it a long rectangular two-floor timber hall, main facade seven bays plus surrounding corridor; show the long south facade almost head-on with a small glimpse of the right gable to clarify the architecture. Its roof is HIP-AND-GABLE XIESHAN with a LONG HORIZONTAL RIDGE, and the upper storey has double eaves plus the lower floor's separate waist roof, giving THREE visible eave lines. It must NOT have the Bell Tower's single pyramidal apex. Preserve the long balcony, slender colonnade and a few simple outlined small drums behind the bottom colonnade, omitting all lettering. Retain rectangular outline plaque as an EMPTY panel if visible. Do not replace this with Beijing Drum Tower.\nRefined sparse BLACK INK ON PURE WHITE. Thin confident outlines with a few finer structural lines. All wall, roof, door, window, arch-passage and balcony areas remain WHITE inside outlines. No black shadows, no grey wash, no hatching, no solid dark under-eaves, no brick grids, no dense roof tile fill, no stone/pencil texture. Hint at a few roof ridges and bracket units only, do not copy every tile or decorative painting.\nLandscape 1536×1024. Both complete top ornaments, all roof tips, stairs and full platform bases inside the canvas, total group about 83% width, ample top/bottom and side margins. Near-frontal facade-level view, verticals vertical, restrained side depth. Only a few short ground lines below each separate monument. Remove traffic, people, trees, street lamps, modern signs, barriers, flowerbeds, neighbouring buildings and sky. No labels, letters, calligraphy, captions, dimensions, watermark, frame, border or color. Do not merge or duplicate buildings and do not omit either monument.",
+  "edit_prompts": [
+    "Use case: precise-object-edit. Image 1 is the current two-tower drawing to correct. Image 2 is the sparse thin-line style master. Image 3 is the actual Bell Tower reference; Image 4 is the actual Drum Tower south facade reference.\nKeep exactly two complete buildings, their different roof forms, THREE visible eave lines each, all floor and column counts, comparative sizes and the white background.\n1. On the RIGHT DRUM TOWER ONLY, REMOVE the invented paired front stair flights and all stair balustrades from the broad front face of the raised platform. The actual SOUTH facade in Image 4 has NO paired front stair flights. It is a PLAIN tall rectangular brick wall with ONE central arched passage. Keep the simple railing around the platform top; leave the large wall surface white, with only outer boundary and arch outlines. Do NOT remove the stair flights on the LEFT BELL TOWER: those stairs are in its reference photo.\n2. Simplify line density on BOTH buildings, especially roofs. Remove about 85 percent of tightly repeated roof tile ribs, leaving at most 6–10 widely spaced very fine roof-direction lines on each large roof slope and mainly white roof surfaces. Reduce repetitive bracket and balustrade miniature details to a few light structural strokes. Preserve the unmistakable roof silhouettes, corner ornaments, finial, long ridge, roof tips, columns and main balconies. Make roof and bracket interiors as sparse as the style master. Do not add shading or grey wash.\n3. Give the whole composition a little more horizontal breathing room: maintain a clear gap between the two monuments and at least 5 percent canvas white margin outside each extreme base/roof edge. Keep bases roughly level.\nPure thin BLACK linework on pure WHITE, all arch interiors and windows WHITE, no solid dark under-eave bands, no hatch, brick-grid or pencil texture. No text, frame or labels. Landscape1536×1024."
+  ],
+  "generation_steps": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: ONE coordinated fine-line architectural plate for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER: match the Vairocana Buddha drawing's elegant thin slightly organic contours, sparse details and generous white surfaces. Image 2 is SUBJECT GEOMETRY for Xi'an BELL TOWER 钟楼, a near-frontal daylight photo. Image 3 is SUBJECT GEOMETRY for Xi'an DRUM TOWER 鼓楼, showing its long south facade and east gable. Image 4 is the actual Drum Tower's short gable end, only to clarify roof shape; do NOT use the short end as the primary facade.\nCreate a wide comparative composition of exactly TWO distinct complete monuments: BELL TOWER on the LEFT, DRUM TOWER on the RIGHT. This is an editorial pairing, not a continuous real street scene. Separate them with a clear generous white gap. Put bases on roughly the same baseline, both at a consistent architectural scale. Bell Tower approx 36m tall on 35.5m-wide square platform; Drum Tower approx 33–35m tall on a 53m-wide rectangular platform. Therefore the right Drum Tower should be about 1.45 times as wide as the left Bell Tower but slightly shorter.\nLEFT Bell Tower: compact square brick platform with one visible central arched passage and small side depth; retain the actual symmetrical stair flights and stone parapet visible in Image 2. Above it, a square two-floor timber pavilion with THREE distinct projecting eave levels. Top roof is FOUR-SIDED PYRAMIDAL / four-corner tent roof converging to ONE central pointed cup-shaped finial. No horizontal top ridge or gable triangle on Bell Tower. Preserve the actual five-bay central facade plus peripheral corridor columns, open upper balcony, thin columns and the broad empty panels between structural members.\nRIGHT Drum Tower: broad RECTANGULAR brick platform, a single central arched passage on the long SOUTH facade. Above it a long rectangular two-floor timber hall, main facade seven bays plus surrounding corridor; show the long south facade almost head-on with a small glimpse of the right gable to clarify the architecture. Its roof is HIP-AND-GABLE XIESHAN with a LONG HORIZONTAL RIDGE, and the upper storey has double eaves plus the lower floor's separate waist roof, giving THREE visible eave lines. It must NOT have the Bell Tower's single pyramidal apex. Preserve the long balcony, slender colonnade and a few simple outlined small drums behind the bottom colonnade, omitting all lettering. Retain rectangular outline plaque as an EMPTY panel if visible. Do not replace this with Beijing Drum Tower.\nRefined sparse BLACK INK ON PURE WHITE. Thin confident outlines with a few finer structural lines. All wall, roof, door, window, arch-passage and balcony areas remain WHITE inside outlines. No black shadows, no grey wash, no hatching, no solid dark under-eaves, no brick grids, no dense roof tile fill, no stone/pencil texture. Hint at a few roof ridges and bracket units only, do not copy every tile or decorative painting.\nLandscape 1536×1024. Both complete top ornaments, all roof tips, stairs and full platform bases inside the canvas, total group about 83% width, ample top/bottom and side margins. Near-frontal facade-level view, verticals vertical, restrained side depth. Only a few short ground lines below each separate monument. Remove traffic, people, trees, street lamps, modern signs, barriers, flowerbeds, neighbouring buildings and sky. No labels, letters, calligraphy, captions, dimensions, watermark, frame, border or color. Do not merge or duplicate buildings and do not omit either monument.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xianzhonggu-bell-alt-photo.jpg",
+        "assets/references/xianzhonggu-drum-south-photo.jpg",
+        "assets/references/xianzhonggu-drum-front-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-57f3c623-ec5f-42e2-afb4-ca85d843cfbc.png",
+      "result": "两主体齐全；鼓楼南面误加双侧楼梯、瓦线过密，未采用。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is the current two-tower drawing to correct. Image 2 is the sparse thin-line style master. Image 3 is the actual Bell Tower reference; Image 4 is the actual Drum Tower south facade reference.\nKeep exactly two complete buildings, their different roof forms, THREE visible eave lines each, all floor and column counts, comparative sizes and the white background.\n1. On the RIGHT DRUM TOWER ONLY, REMOVE the invented paired front stair flights and all stair balustrades from the broad front face of the raised platform. The actual SOUTH facade in Image 4 has NO paired front stair flights. It is a PLAIN tall rectangular brick wall with ONE central arched passage. Keep the simple railing around the platform top; leave the large wall surface white, with only outer boundary and arch outlines. Do NOT remove the stair flights on the LEFT BELL TOWER: those stairs are in its reference photo.\n2. Simplify line density on BOTH buildings, especially roofs. Remove about 85 percent of tightly repeated roof tile ribs, leaving at most 6–10 widely spaced very fine roof-direction lines on each large roof slope and mainly white roof surfaces. Reduce repetitive bracket and balustrade miniature details to a few light structural strokes. Preserve the unmistakable roof silhouettes, corner ornaments, finial, long ridge, roof tips, columns and main balconies. Make roof and bracket interiors as sparse as the style master. Do not add shading or grey wash.\n3. Give the whole composition a little more horizontal breathing room: maintain a clear gap between the two monuments and at least 5 percent canvas white margin outside each extreme base/roof edge. Keep bases roughly level.\nPure thin BLACK linework on pure WHITE, all arch interiors and windows WHITE, no solid dark under-eave bands, no hatch, brick-grid or pencil texture. No text, frame or labels. Landscape1536×1024.",
+      "input_target": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-57f3c623-ec5f-42e2-afb4-ca85d843cfbc.png",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xianzhonggu-bell-alt-photo.jpg",
+        "assets/references/xianzhonggu-drum-south-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-0cfa02a1-4cf5-4781-82f5-7dbad255e1c7.png",
+      "result": "最终采用；已移除鼓楼南面错置楼梯、保留钟楼实照台阶，明显减少屋面纹理。"
+    }
+  ],
+  "generated_file": "assets/generated/xianzhonggu.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-0cfa02a1-4cf5-4781-82f5-7dbad255e1c7.png",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "西安市钟楼、鼓楼保护规划编制项目竞争性磋商文件，第30页",
+      "url": "https://www.ccgp-shaanxi.gov.cn/gpx-bid-file/610101/gpx-template/2022/9/16/8a69c63182a325380183445762b3798d.pdf?accessCode=6710df08da6a2a882c1fda758e34170b",
+      "publisher": "西安市钟鼓楼保管所／陕西省政府采购网",
+      "date": "2022-08",
+      "supports": "钟楼三重四面攒尖、35.5米方形台基与四面券洞；鼓楼洪武十三年1380，台基52.98×38.5米长方形、南北券洞、面阔七间进深三间有周廊，二层重檐歇山并一层腰檐。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "西安地铁6号线站名探究",
+      "url": "https://xadfz.xa.gov.cn/xadq/yxxa/2081926328441991170.html",
+      "publisher": "西安市地方志办公室",
+      "supports": "钟楼洪武十七年1384始建于广济街口，万历十年1582迁现址；三层重檐、二层楼身和四角攒尖。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "Bell Tower, Drum Tower",
+      "url": "https://en.xa.gov.cn/CultureTravel/Attractions/1691691501245550594.html",
+      "publisher": "西安市人民政府英文网",
+      "date": "2019-01-31",
+      "supports": "钟楼1384始建、1582迁建；鼓楼早四年、清代1699与1740修葺；两楼用于报时。英文文中的鼓楼square base与专业保护规划相矛盾，台基形状依保管所规划及实照取长方形。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "西安钟楼",
+      "url": "https://zh.wikipedia.org/wiki/西安钟楼",
+      "supports": "钟楼坐标34.26101,108.94238；1582迁建重新建基座，楼体迁移沿革；以《钟楼东迁歌》转述辅助说明。"
+    },
+    {
+      "title": "西安鼓楼",
+      "url": "https://zh.wikipedia.org/wiki/西安鼓楼",
+      "supports": "鼓楼近似坐标34.26167,108.93861；现代陈列鼓属于展示设施。"
+    }
+  ],
+  "dating_note": "一条合并记录涵盖鼓楼1380始建、钟楼1384始建；排序year1380取鼓楼沿革起点，不是两楼共有竣工年。钟楼1582迁至现址并重筑基座，单列迁建事件，绝不将现址台基记成1384。明清屡经修葺，图版对应现状。",
+  "subject_dates": [
+    {
+      "name": "西安鼓楼",
+      "year": 1380,
+      "event": "明洪武十三年始建",
+      "repairs": [
+        1699,
+        1740
+      ]
+    },
+    {
+      "name": "西安钟楼",
+      "year": 1384,
+      "event": "明洪武十七年原址始建",
+      "relocation_year": 1582,
+      "relocation_note": "万历十年迁建现址，现址基座另筑；该日期不与原址始建混同"
+    }
+  ],
+  "subject_coordinates": [
+    {
+      "name": "西安钟楼",
+      "lat": 34.26101,
+      "lon": 108.94238,
+      "source": "https://zh.wikipedia.org/wiki/西安钟楼"
+    },
+    {
+      "name": "西安鼓楼",
+      "lat": 34.26167,
+      "lon": 108.93861,
+      "source": "https://zh.wikipedia.org/wiki/西安鼓楼"
+    }
+  ],
+  "verification": {
+    "input": "全部实际输入照片与母版已view_image检查，两楼分别有清晰照片。",
+    "output": "最终PNG已view_image核验：恰好两座，钟楼方台攒尖、鼓楼长台歇山，均含三道檐线、完整楼顶与基座；鼓楼南面无错加台阶，细线稀疏黑白，无街景文字。"
+  },
+  "site_recommendation": {
+    "name": "西安钟楼 · 鼓楼",
+    "short": "钟鼓楼",
+    "sub": "西安 · 晨钟暮鼓",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "洪武始建 · 万历迁建",
+    "year": 1380,
+    "yearLabel": "1380 · 1384（1582迁建）",
+    "yearApprox": false,
+    "place": "陕西西安 · 府城中心",
+    "placeKey": "xian",
+    "lat": 34.26,
+    "lon": 108.94,
+    "lede": "钟楼以攒尖顶立在街道交会处，鼓楼的长屋脊横展于北院门南端。两座明代楼阁曾以钟鼓声报告城中时辰。",
+    "facts": [
+      "鼓楼始建于1380年，钟楼始建于1384年；钟楼于1582年迁至现址并另筑基座，不能把现址台基等同原址始建年代。",
+      "钟楼为方台上的三重檐四角攒尖楼阁；鼓楼台基呈长方形，楼身面阔七间、有周廊，上层为重檐歇山顶。",
+      "图版将钟楼与鼓楼分别取近正面并置，保留各自完整轮廓；这是双主体组合图，并非两楼实际相邻的景象。"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "hongfu",
+  "subject": "定襄洪福寺大雄宝殿（毗卢殿）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:大雄宝殿正面.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF%E6%AD%A3%E9%9D%A2.jpg",
+  "author": "Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:大雄宝殿正面.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/hongfu-photo.jpg",
+      "note": "2024年5月22日摄，精确Commons文件页核实；定襄洪福寺大雄宝殿正面。"
+    }
+  ],
+  "source_note": "以正面实拍重绘五开间悬山顶大殿，去除挡住门窗的碑、人物及旁殿。殿本身未发现建造纪年，残经幢1132年不直接作为大殿建年。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hongfu-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSubject-specific instructions: Draw ONLY the central main Mahavira Hall of Hongfu Temple, Dingxiang County, Shanxi (定襄洪福寺大雄宝殿/毗卢殿) shown in Image 2. This is a broad, LOW five-bay hall, with SIX facade column axes, a single-eaved overhanging gable roof (悬山顶), not a hip-and-gable or hipped roof. Preserve the gently upswept roof profile, the paired ridge-end ornaments and a small central ridge finial, the low dense structural bracket band (simplified to readable thin outlines). The facade has a CENTRAL doorway; the two adjacent bays have lattice-panel doors, the two OUTER bays have straight vertical-bar windows over solid low walls. Draw the individual five structural bays accurately rather than turning the fenestration into extra bays. The stone platform has a short central stair with sloping plain cheeks. Remove the standing stone stelae that obstruct the facade, all people, side buildings, foreground stacked bricks, plants, information boards and ALL lettering. Keep the whole complete central hall and its platform with generous white margins. Use only sparse roof ridge/tile-direction indications, no tile grid, no masonry hatch, no dark door fill. Refine to the delicate contour line weight of Image 1; plain white surface everywhere. Requested output landscape 1536x1024.",
+  "generated_file": "assets/generated/hongfu.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-1ece4c76-6b5a-42a6-aeb5-939c76171325.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "洪福寺大雄宝殿正面 · 据实景照片重绘",
+    "金代遗构 · 面阔五间，单檐悬山顶"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.sxgp.gov.cn/xwzx_358/wjsd_1324/202409/t20240909_2031721.shtml",
+      "publisher": "高平市人民政府转载文博报道",
+      "supports": "洪福寺现存正殿为金代所建。"
+    },
+    {
+      "source_page": "https://www.xzrbw.com/info/3078/360455.htm",
+      "publisher": "忻州日报网，2024-02-26",
+      "supports": "宏道镇北社东村；面阔五间、七檩六椽、悬山顶；殿内九尊泥塑；2001年全国重点文物保护单位。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "洪福寺",
+    "short": "洪福寺",
+    "sub": "定襄 · 大雄宝殿",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金代",
+    "year": 1200,
+    "yearApprox": true,
+    "yearLabel": "金代遗构",
+    "year_note": "1200仅用于金代条目近似排序；现存大殿确切建造年不详，不能把1132年经幢直接当作殿年。",
+    "place": "山西 · 忻州 · 定襄",
+    "placeKey": "忻州",
+    "lat": 38.629167,
+    "lon": 113.055278,
+    "coords": [
+      113.055278,
+      38.629167
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Hongfu_Temple_(Dingxiang)",
+    "coordinate_note": "Commons地标坐标38°37′45″N113°03′19″E，非测绘坐标。",
+    "lede": "北社村高台上的金代大殿，以低缓悬山屋面、疏阔五间门窗和殿内彩塑，保留了五台山南麓古寺的气息。",
+    "facts": [
+      "现存大雄宝殿为金代遗构，确切建造年份尚无题记证实。",
+      "正殿面阔五间，七檩六椽，采用单檐悬山顶。",
+      "殿内保存九尊泥塑像；洪福寺于2001年列入全国重点文物保护单位。"
+    ]
+  },
+  "verification": "已查看母版、2024年真实正面照片及生成PNG；核对五开间六柱轴、中央入口、两侧隔扇与尽间直棂窗、单檐悬山轮廓、中央台阶，主体完整。"
+}

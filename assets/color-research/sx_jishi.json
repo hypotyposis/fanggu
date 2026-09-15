@@ -1,0 +1,47 @@
+{
+  "id": "sx_jishi",
+  "name": "高平姬氏民居",
+  "subject": "高平姬氏民居元代正房",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_jishi.png",
+    "assets/references/sx_jishi-gov0.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Yuan-period Ji family house in Zhongzhuang, Gaoping. Preserve modest THREE-bay residence, four front posts, small central two-leaf square-grid door, paired square-grid windows, low plain single roof and tiny ridge-center ornament, simple shallow stone doorstep. Follow existing sparse line master roof treatment; do not add temple ornament or dense roof grid. Actual walls grey-brown brick with soft worn off-white plaster remnants; posts muted grey-beige, horizontal lintels/weathered wood deep grey-brown, infill strip pale beige-grey. Windows and door frame dark grey-brown wood, faint dark maroon on lower central door panels; window backing pale grey with only slight blue-grey indication from photo. Roof neutral grey tiles. Low stone plinth warm grey/tan. No red couplets, warning signs, locks, chains, side courtyard buildings or overgrown plants; keep all original quiet geometry.",
+  "material_observations": [
+    "姬氏民居主屋屋面和素脊灰瓦，门窗框深灰褐旧木，中央门下部残存暗褐红色。",
+    "砖墙灰褐并带片状灰白墙面残层，柱面灰米色，檐下横梁暗褐、间壁米灰，台沿黄灰石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/sx_jishi-gov0.jpg",
+      "source_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291190.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128420666428228.jpg",
+      "author": "文旅高平，高平市人民政府转载；原摄影者未单独署名",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/sx_jishi.json",
+  "output": "assets/colored/sx_jishi.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "三间四柱、中央小双扇方格门及两侧各双窗组、低素瓦顶对应原稿。",
+      "灰褐砖墙与灰白残灰层、褐木门框、浅灰柱面及黄灰台沿分区对应实拍。",
+      "保留朴素民居比例，未加寺庙脊兽、春联、标牌或院墙。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T12:37:35.009Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-cd14e758-dda5-4e3d-9b5c-099180b29ba5.png",
+  "generated_at": "2026-09-15T12:48:00.184Z",
+  "completed_at": "2026-09-15T13:05:03.447Z"
+}

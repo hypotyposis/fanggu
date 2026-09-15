@@ -1,0 +1,47 @@
+{
+  "id": "hb_linji",
+  "name": "临济寺澄灵塔",
+  "subject": "临济寺澄灵塔 · 八角九级密檐塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_linji.png",
+    "assets/references/hb_linji-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Chengling Pagoda at Linji Temple. Preserve octagonal shaft with NINE tiered eaves, lower false-door relief, lotus band and full layered pedestal, tall ringed metal finial and its original thin support wires. Material from photo: weathered muted buff/ochre-brown BRICK shaft, deeper neutral grey-brown lower pedestal, grey/dark-green glazed eave lips and very small ridge beasts. Finial base beige stone/brick; upper ring-and-bulb finial dark rusty brown metal, NOT gold. Warm sunlight does not mean gold plating. Keep all openings and reliefs as masonry, not red wood doors. Exact profile and original contours; no trees, vegetation, camera pole, sky, writing or glowing halo.",
+  "material_observations": [
+    "澄灵塔塔身为黄褐砖，日照面偏暖；基座为深灰褐砖石。",
+    "九重檐口瓦饰呈灰黑与暗绿釉色，塔刹下部浅褐砖石、上部褐黑金属，垂线为深灰细线。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_linji-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Chengling_Pagoda_of_Linji_Temple_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/20250118_Chengling_Pagoda_of_Linji_Temple_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2025-01-18",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/hb_linji.json",
+  "output": "assets/colored/hb_linji.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "八角塔身、九重密檐、上部环形塔刹及拉索、下部门面与莲座对应线稿。",
+      "黄褐砖身、深灰基座和灰绿檐饰可分辨，金属塔刹为褐黑色。",
+      "无额外树木、摄影设备或文字；深色背景、完整塔身。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T12:02:34.844Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-2186a851-2519-4a64-8731-2521a331dd77.png",
+  "generated_at": "2026-09-15T12:08:12.503Z",
+  "completed_at": "2026-09-15T12:13:23.593Z"
+}

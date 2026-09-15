@@ -1,0 +1,564 @@
+{
+  "batch": "shanxi-expansion",
+  "date": "2026-09-15",
+  "approved_by": "root",
+  "existing_shanxi_count": 40,
+  "target_additions": 30,
+  "notes": [
+    "与sites.js山西40项按遗产群组去重，未拆现有小西天/广胜寺等群组重复入库。",
+    "太原双塔正确名称为永祚寺双塔，非天宁寺。",
+    "此为确认清单，candidate_era与candidate_subject在照片核实后由逐条research JSON定稿；不得用未定稿阶段字段直接上线。",
+    "所有新id及新地点key以sx_开头；不设置initialStatus。",
+    "最终主体、年代与类型已从逐条research JSON同步，候选字段仅保留初始研究轨迹；法兴寺后续交由plates_towers完成。"
+  ],
+  "items": [
+    {
+      "id": "sx_yungang",
+      "name": "云冈石窟",
+      "candidate_subject": "第20窟露天大佛",
+      "candidate_era": "北魏",
+      "placeName": "大同",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "grotto"
+      ],
+      "subject": "云冈第20窟 · 主尊坐像",
+      "era": "北魏 · 昙曜五窟时期",
+      "yearLabel": "约460—470",
+      "metadata_file": "assets/research/sx_yungang.json",
+      "generated_file": "assets/generated/sx_yungang.png"
+    },
+    {
+      "id": "sx_tianlongshan",
+      "name": "天龙山石窟",
+      "candidate_subject": "代表窟现存石造像，父任务选定",
+      "candidate_era": "东魏—唐",
+      "placeName": "太原",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%A4%A9%E9%BE%99%E5%B1%B1%E7%9F%B3%E7%AA%9F",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "grotto"
+      ],
+      "subject": "天龙山第16窟 · 石刻前廊",
+      "era": "北齐 · 第16窟",
+      "yearLabel": "北齐",
+      "metadata_file": "assets/research/sx_tianlongshan.json",
+      "generated_file": "assets/generated/sx_tianlongshan.png"
+    },
+    {
+      "id": "sx_longshan",
+      "name": "龙山石窟",
+      "candidate_subject": "道教石窟代表龛",
+      "candidate_era": "元",
+      "placeName": "太原",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E9%BE%99%E5%B1%B1%E7%9F%B3%E7%AA%9F",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "grotto"
+      ],
+      "subject": "龙山三天大法师窟 · 主尊局部",
+      "era": "唐代龛像 · 后有元代扩凿",
+      "yearLabel": "唐代",
+      "metadata_file": "assets/research/sx_longshan.json",
+      "generated_file": "assets/generated/sx_longshan.png"
+    },
+    {
+      "id": "sx_chongfu",
+      "name": "朔州崇福寺",
+      "candidate_subject": "弥陀殿",
+      "candidate_era": "金",
+      "placeName": "朔州",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%B4%87%E7%A6%8F%E5%AF%BA_(%E6%9C%94%E5%B7%9E)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "崇福寺弥陀殿 · 正面",
+      "era": "金 · 皇统三年",
+      "yearLabel": "1143",
+      "metadata_file": "assets/research/sx_chongfu.json",
+      "generated_file": "assets/generated/sx_chongfu.png"
+    },
+    {
+      "id": "sx_zhenguo",
+      "name": "平遥镇国寺",
+      "candidate_subject": "万佛殿",
+      "candidate_era": "北汉·963",
+      "placeName": "平遥",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E9%95%87%E5%9B%BD%E5%AF%BA_(%E5%B9%B3%E9%81%A5)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "镇国寺万佛殿 · 正面",
+      "era": "北汉 · 天会七年",
+      "yearLabel": "963",
+      "metadata_file": "assets/research/sx_zhenguo.json",
+      "generated_file": "assets/generated/sx_zhenguo.png"
+    },
+    {
+      "id": "sx_pingyaowenmiao",
+      "name": "平遥文庙",
+      "candidate_subject": "大成殿",
+      "candidate_era": "金·1163",
+      "placeName": "平遥",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%B9%B3%E9%81%A5%E6%96%87%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "平遥文庙 · 大成殿正面",
+      "era": "金 · 1163",
+      "yearLabel": "1163",
+      "metadata_file": "assets/research/sx_pingyaowenmiao.json",
+      "generated_file": "assets/generated/sx_pingyaowenmiao.png"
+    },
+    {
+      "id": "sx_pingyaowall",
+      "name": "平遥城墙",
+      "candidate_subject": "城门与墙段",
+      "candidate_era": "明",
+      "placeName": "平遥",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%B9%B3%E9%81%A5%E5%9F%8E%E5%A2%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "wall"
+      ],
+      "subject": "平遥城墙 · 迎薰门及相邻墙段",
+      "era": "明清 · 明清",
+      "yearLabel": "明清",
+      "metadata_file": "assets/research/sx_pingyaowall.json",
+      "generated_file": "assets/generated/sx_pingyaowall.png"
+    },
+    {
+      "id": "sx_yongzuo",
+      "name": "太原永祚寺双塔",
+      "candidate_subject": "文峰塔、宣文塔",
+      "candidate_era": "明",
+      "placeName": "太原",
+      "owner": "root",
+      "research_page": "https://zh.wikipedia.org/wiki/%E6%B0%B8%E7%A5%9A%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "pagoda"
+      ],
+      "subject": "太原永祚寺双塔 · 文峰塔与宣文塔",
+      "era": "明 · 明万历",
+      "yearLabel": "明万历",
+      "metadata_file": "assets/research/sx_yongzuo.json",
+      "generated_file": "assets/generated/sx_yongzuo.png"
+    },
+    {
+      "id": "sx_chongshan",
+      "name": "太原崇善寺",
+      "candidate_subject": "大悲殿",
+      "candidate_era": "明洪武",
+      "placeName": "太原",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%B4%87%E5%96%84%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "太原崇善寺大悲殿",
+      "era": "明洪武 · 大悲殿",
+      "yearLabel": "明洪武",
+      "metadata_file": "assets/research/sx_chongshan.json",
+      "generated_file": "assets/generated/sx_chongshan.png"
+    },
+    {
+      "id": "sx_jiexiu_houtu",
+      "name": "介休后土庙",
+      "candidate_subject": "三清楼或后土殿",
+      "candidate_era": "明清",
+      "placeName": "介休",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E4%BB%8B%E4%BC%91%E5%90%8E%E5%9C%9F%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "pavilion",
+        "stage"
+      ],
+      "subject": "介休后土庙三清楼北面戏台与八字影壁",
+      "era": "明清 · 三清楼戏台",
+      "yearLabel": "明正德 · 清代修缮",
+      "metadata_file": "assets/research/sx_jiexiu_houtu.json",
+      "generated_file": "assets/generated/sx_jiexiu_houtu.png"
+    },
+    {
+      "id": "sx_jiexiu_chenghuang",
+      "name": "介休城隍庙",
+      "candidate_subject": "寝殿或戏台",
+      "candidate_era": "明清",
+      "placeName": "介休",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E4%BB%8B%E4%BC%91%E5%9F%8E%E9%9A%8D%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "stage"
+      ],
+      "subject": "介休城隍庙前殿倒座戏台",
+      "era": "清 · 倒座戏台",
+      "yearLabel": "清 · 历次修复",
+      "metadata_file": "assets/research/sx_jiexiu_chenghuang.json",
+      "generated_file": "assets/generated/sx_jiexiu_chenghuang.png"
+    },
+    {
+      "id": "sx_wubian",
+      "name": "太谷无边寺白塔",
+      "candidate_subject": "白塔",
+      "candidate_era": "宋",
+      "placeName": "太谷",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E6%97%A0%E8%BE%B9%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "pagoda"
+      ],
+      "subject": "太谷无边寺白塔",
+      "era": "北宋 · 元祐五年",
+      "yearLabel": "1090",
+      "metadata_file": "assets/research/sx_wubian.json",
+      "generated_file": "assets/generated/sx_wubian.png"
+    },
+    {
+      "id": "sx_yuci_chenghuang",
+      "name": "榆次城隍庙",
+      "candidate_subject": "玄鉴楼",
+      "candidate_era": "元—明",
+      "placeName": "榆次",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E6%A6%86%E6%AC%A1%E5%9F%8E%E9%9A%8D%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "pavilion",
+        "stage"
+      ],
+      "subject": "榆次城隍庙玄鉴楼北侧乐楼与戏台组合",
+      "era": "明 · 玄鉴楼与乐楼",
+      "yearLabel": "1497—约1523",
+      "metadata_file": "assets/research/sx_yuci_chenghuang.json",
+      "generated_file": "assets/generated/sx_yuci_chenghuang.png"
+    },
+    {
+      "id": "sx_taifu",
+      "name": "汾阳太符观",
+      "candidate_subject": "昊天玉皇上帝殿",
+      "candidate_era": "金·1200",
+      "placeName": "汾阳",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%A4%AA%E7%AC%A6%E8%A7%82",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "汾阳太符观昊天玉皇上帝殿",
+      "era": "金 · 昊天玉皇上帝殿",
+      "yearLabel": "金",
+      "metadata_file": "assets/research/sx_taifu.json",
+      "generated_file": "assets/generated/sx_taifu.png"
+    },
+    {
+      "id": "sx_jiezhou_guandi",
+      "name": "解州关帝庙",
+      "candidate_subject": "崇宁殿",
+      "candidate_era": "清",
+      "placeName": "运城",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E8%A7%A3%E5%B7%9E%E5%85%B3%E5%B8%9D%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "解州关帝庙崇宁殿",
+      "era": "清 · 崇宁殿",
+      "yearLabel": "清 · 康熙火后重建",
+      "metadata_file": "assets/research/sx_jiezhou_guandi.json",
+      "generated_file": "assets/generated/sx_jiezhou_guandi.png"
+    },
+    {
+      "id": "sx_xinjiang_longxing",
+      "name": "新绛龙兴寺塔",
+      "candidate_subject": "龙兴寺塔现存全貌",
+      "candidate_era": "元—清（逐层核对）",
+      "placeName": "新绛",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E9%BE%99%E5%85%B4%E5%AF%BA_(%E6%96%B0%E7%BB%9B)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "pagoda"
+      ],
+      "subject": "新绛龙兴寺塔",
+      "era": "清 · 乾隆重修增层",
+      "yearLabel": "1784重修",
+      "metadata_file": "assets/research/sx_xinjiang_longxing.json",
+      "generated_file": "assets/generated/sx_xinjiang_longxing.png"
+    },
+    {
+      "id": "sx_jiangzhou_datang",
+      "name": "绛州大堂",
+      "candidate_subject": "正堂",
+      "candidate_era": "元",
+      "placeName": "新绛",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E7%BB%9B%E5%B7%9E%E5%A4%A7%E5%A0%82",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "绛州大堂元代正堂南立面",
+      "era": "元 · 州署正堂",
+      "yearLabel": "元代",
+      "metadata_file": "assets/research/sx_jiangzhou_datang.json",
+      "generated_file": "assets/generated/sx_jiangzhou_datang.png"
+    },
+    {
+      "id": "sx_fusheng",
+      "name": "新绛福胜寺",
+      "candidate_subject": "弥陀殿",
+      "candidate_era": "元",
+      "placeName": "新绛",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E7%A6%8F%E8%83%9C%E5%AF%BA_(%E6%96%B0%E7%BB%9B)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall",
+        "statue"
+      ],
+      "subject": "新绛福胜寺弥陀殿北立面",
+      "era": "元 · 弥陀殿",
+      "yearLabel": "元代 · 明代修缮",
+      "metadata_file": "assets/research/sx_fusheng.json",
+      "generated_file": "assets/generated/sx_fusheng.png"
+    },
+    {
+      "id": "sx_jishan_qinglong",
+      "name": "稷山青龙寺",
+      "candidate_subject": "腰殿",
+      "candidate_era": "元",
+      "placeName": "稷山",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E9%9D%92%E9%BE%99%E5%AF%BA_(%E7%A8%B7%E5%B1%B1)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "mural",
+        "hall"
+      ],
+      "subject": "稷山青龙寺腰殿西壁三世佛壁画局部",
+      "era": "元末—明初 · 腰殿壁画",
+      "yearLabel": "约1356—1368",
+      "metadata_file": "assets/research/sx_jishan_qinglong.json",
+      "generated_file": "assets/generated/sx_jishan_qinglong.png"
+    },
+    {
+      "id": "sx_jishan_jiwang",
+      "name": "稷山稷王庙",
+      "candidate_subject": "大殿",
+      "candidate_era": "清",
+      "placeName": "稷山",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E7%A8%B7%E5%B1%B1%E7%A8%B7%E7%8E%8B%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall",
+        "pavilion"
+      ],
+      "subject": "稷山稷王庙献殿、钟鼓楼及后稷楼上檐",
+      "era": "清 · 道光重建",
+      "yearLabel": "1843重建",
+      "metadata_file": "assets/research/sx_jishan_jiwang.json",
+      "generated_file": "assets/generated/sx_jishan_jiwang.png"
+    },
+    {
+      "id": "sx_macun",
+      "name": "马村砖雕墓",
+      "candidate_subject": "明确编号墓室或砖雕局部",
+      "candidate_era": "金",
+      "placeName": "稷山",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E9%A9%AC%E6%9D%91%E7%A0%96%E9%9B%95%E5%A2%93",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "tomb"
+      ],
+      "subject": "马村一号墓妇人启门砖雕壁面局部",
+      "era": "金代 · 仿木砖雕墓室",
+      "yearLabel": "金代前期",
+      "metadata_file": "assets/research/sx_macun.json",
+      "generated_file": "assets/generated/sx_macun.png"
+    },
+    {
+      "id": "sx_dingcun",
+      "name": "丁村民居",
+      "candidate_subject": "明确院号的明代民居正房",
+      "candidate_era": "明清",
+      "placeName": "襄汾",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E4%B8%81%E6%9D%91%E6%B0%91%E5%B1%85",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "residence"
+      ],
+      "subject": "丁村民居丁坤大院院内厅堂与厢房片段",
+      "era": "清乾隆时期 · 丁坤大院",
+      "yearLabel": "清乾隆时期",
+      "metadata_file": "assets/research/sx_dingcun.json",
+      "generated_file": "assets/generated/sx_dingcun.png"
+    },
+    {
+      "id": "sx_zezhou_yuhuang",
+      "name": "泽州玉皇庙",
+      "candidate_subject": "二十八宿代表彩塑或玉皇殿",
+      "candidate_era": "元塑／宋殿分别核对",
+      "placeName": "泽州",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E7%8E%89%E7%9A%87%E5%BA%99_(%E6%B3%BD%E5%B7%9E)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "sculpture"
+      ],
+      "subject": "府城玉皇庙二十八宿彩塑之虚日鼠",
+      "era": "元代 · 二十八宿彩塑",
+      "yearLabel": "元代",
+      "metadata_file": "assets/research/sx_zezhou_yuhuang.json",
+      "generated_file": "assets/generated/sx_zezhou_yuhuang.png"
+    },
+    {
+      "id": "sx_haihui",
+      "name": "阳城海会寺双塔",
+      "candidate_subject": "小塔与琉璃大塔",
+      "candidate_era": "唐—明（分别核对）",
+      "placeName": "阳城",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E6%B5%B7%E4%BC%9A%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "pagoda"
+      ],
+      "subject": "阳城海会寺小砖塔与明代琉璃大塔",
+      "era": "明嘉靖—隆庆 · 琉璃大塔",
+      "yearLabel": "嘉靖—隆庆",
+      "metadata_file": "assets/research/sx_haihui.json",
+      "generated_file": "assets/generated/sx_haihui.png"
+    },
+    {
+      "id": "sx_kaihua",
+      "name": "高平开化寺",
+      "candidate_subject": "大雄宝殿",
+      "candidate_era": "北宋·1073",
+      "placeName": "高平",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%BC%80%E5%8C%96%E5%AF%BA_(%E9%AB%98%E5%B9%B3)",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall",
+        "mural"
+      ],
+      "subject": "高平开化寺大雄宝殿",
+      "era": "北宋熙宁六年 · 大雄宝殿",
+      "yearLabel": "1073",
+      "metadata_file": "assets/research/sx_kaihua.json",
+      "generated_file": "assets/generated/sx_kaihua.png"
+    },
+    {
+      "id": "sx_youxian",
+      "name": "高平游仙寺",
+      "candidate_subject": "毗卢殿",
+      "candidate_era": "北宋·994",
+      "placeName": "高平",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E6%B8%B8%E4%BB%99%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "高平游仙寺毗卢殿",
+      "era": "北宋淳化时期 · 毗卢殿",
+      "yearLabel": "约990—994",
+      "metadata_file": "assets/research/sx_youxian.json",
+      "generated_file": "assets/generated/sx_youxian.png"
+    },
+    {
+      "id": "sx_jishi",
+      "name": "高平姬氏民居",
+      "candidate_subject": "元代正房",
+      "candidate_era": "元·1334",
+      "placeName": "高平",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%A7%AC%E6%B0%8F%E6%B0%91%E5%B1%85",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "residence"
+      ],
+      "subject": "高平姬氏民居元代正房",
+      "era": "元至元三十一年",
+      "yearLabel": "1294",
+      "metadata_file": "assets/research/sx_jishi.json",
+      "generated_file": "assets/generated/sx_jishi.png"
+    },
+    {
+      "id": "sx_xixi_erxian",
+      "name": "陵川西溪二仙庙",
+      "candidate_subject": "后殿",
+      "candidate_era": "金",
+      "placeName": "陵川",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E8%A5%BF%E6%BA%AA%E4%BA%8C%E4%BB%99%E5%BA%99",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall"
+      ],
+      "subject": "陵川西溪二仙庙后殿（正殿）",
+      "era": "金代 · 后殿",
+      "yearLabel": "1142年起重建",
+      "metadata_file": "assets/research/sx_xixi_erxian.json",
+      "generated_file": "assets/generated/sx_xixi_erxian.png"
+    },
+    {
+      "id": "sx_faxing",
+      "name": "长子法兴寺",
+      "candidate_subject": "圆觉殿",
+      "candidate_era": "宋（近现代迁建另记）",
+      "placeName": "长子",
+      "owner": "plates_towers",
+      "research_page": "https://zh.wikipedia.org/wiki/%E6%B3%95%E5%85%B4%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "sculpture"
+      ],
+      "subject": "山西长子法兴寺圆觉殿中央释迦牟尼坐像及莲座、台座",
+      "era": "北宋 · 政和元年宋塑",
+      "yearLabel": "1111 · 宋塑",
+      "metadata_file": "assets/research/sx_faxing.json",
+      "generated_file": "assets/generated/sx_faxing.png"
+    },
+    {
+      "id": "sx_chongqing",
+      "name": "长子崇庆寺",
+      "candidate_subject": "千佛殿",
+      "candidate_era": "北宋·1016",
+      "placeName": "长子",
+      "owner": "plates_north",
+      "research_page": "https://zh.wikipedia.org/wiki/%E5%B4%87%E5%BA%86%E5%AF%BA",
+      "research_state": "实拍、内置image_gen图版与完整元数据已交付",
+      "types": [
+        "hall",
+        "sculpture"
+      ],
+      "subject": "长子崇庆寺千佛殿",
+      "era": "北宋大中祥符九年 · 千佛殿",
+      "yearLabel": "1016",
+      "metadata_file": "assets/research/sx_chongqing.json",
+      "generated_file": "assets/generated/sx_chongqing.png"
+    }
+  ],
+  "completed_count": 30
+}

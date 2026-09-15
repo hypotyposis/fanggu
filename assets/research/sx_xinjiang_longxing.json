@@ -1,0 +1,109 @@
+{
+  "id": "sx_xinjiang_longxing",
+  "subject": "新绛龙兴寺塔",
+  "caption": [
+    "新绛龙兴寺 · 龙兴宝塔",
+    "清乾隆重修 · 八角十三级"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:龙兴寺塔侧照.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/%E9%BE%99%E5%85%B4%E5%AF%BA%E5%A1%94%E4%BE%A7%E7%85%A7.jpg/960px-%E9%BE%99%E5%85%B4%E5%AF%BA%E5%A1%94%E4%BE%A7%E7%85%A7.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_xinjiang_longxing-photo.jpg",
+    "assets/references/sx_xinjiang_longxing-base-photo.jpg",
+    "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-ca1a3052-a722-44cc-9985-f14b4d5d060d.png"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/sx_xinjiang_longxing-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:龙兴寺塔侧照.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/%E9%BE%99%E5%85%B4%E5%AF%BA%E5%A1%94%E4%BE%A7%E7%85%A7.jpg/960px-%E9%BE%99%E5%85%B4%E5%AF%BA%E5%A1%94%E4%BE%A7%E7%85%A7.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": {
+        "width": 960,
+        "height": 1280
+      }
+    },
+    {
+      "file": "assets/references/sx_xinjiang_longxing-base-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:龙兴寺塔门.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/%E9%BE%99%E5%85%B4%E5%AF%BA%E5%A1%94%E9%97%A8.jpg/960px-%E9%BE%99%E5%85%B4%E5%AF%BA%E5%A1%94%E9%97%A8.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "source_note": "全塔侧照互补底部门口实照，调整俯仰但保留十三层逐级缩短及叠涩砖檐。首稿错误画十四层，最终image_gen同时输入首稿进行定点减层；已目视逐层确认十三道主要檐层，完整未裁切。第四输入为本次AI自生成草稿，不是第三方摄影。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the actual LONGXING TEMPLE PAGODA, XINJIANG COUNTY, SHANXI 新绛龙兴寺塔. Photo2 is the full tower from a steep angle; photo3 documents its actual front base entrance. Render the tower straight and upright, nearly frontal with two side faces visible, moderate perspective corrected, preserving the exact THIRTEEN EXTERIOR STOREYS / THIRTEEN projecting polygonal brick eave cornices. Octagonal brick tapering tower, extremely plain masonry and straight horizontal stepped brick cornices, NOT a wooden pavilion pagoda and NOT curving tiled Chinese roofs. The bottom storey is exceptionally tall with a large arched doorway and three plain rectangular inscription panels around it; the next several stages are spacious plain masonry bands with small arched openings on alternating faces, whereas upper stages become progressively shorter and very closely spaced. Lower first eave cornice has a few prominent brick bracket dentils; above it use the actual stacked flat corbel courses. Preserve thirteen tiers without uniformizing the unequal heights. At apex preserve the small original rounded finial and omit the modern safety metal railing and lightning equipment; don't invent a tall lotus spire. Photo3 supplies base footing continuation beneath photo2 cropped edge; ground is almost level and entrance is a simple arch, no porch or grand stair. All bricks and openings WHITE; no dense brick texture, only sparse thin perimeter and eave lines and outlines of windows. Remove adjacent hall, all trees, sky, floodlights, wires and written inscriptions. Do not add balustrades, columns or ornamental roof crests. Portrait1024x1536 centered whole tower at82%height and45%width, complete apex and footing, generous margins.\nImage4 is the PREVIOUS GENERATED DRAWING to correct. It has FOURTEEN projecting eave cornices; this is one too many. Keep its style, base door, lower proportions and all other shapes. REMOVE EXACTLY ONE of the tiny short TOP storeys, including its projecting eave band. The previous second-highest eave becomes the new highest eave and the existing small rounded finial sits directly on its new top roof. Thus the corrected pagoda has exactly THIRTEEN eave cornices, not fourteen. Do not merely shrink the tower or leave all fourteen layers. Check the count from the broad lowest bracket cornice upward before finishing. Image2 remains the authentic photo.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-0bb2fd8b-253e-4e07-b6df-51d9784ee2cc.png",
+  "generated_file": "assets/generated/sx_xinjiang_longxing.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "关公故里 晋是好运｜新绛龙兴寺：古塔名碑写传奇",
+      "url": "https://www.thepaper.cn/newsDetail_forward_19778010",
+      "publisher": "澎湃号·政务，2022年山西省旅游发展大会宣传资料",
+      "evidence": "塔原八级，清乾隆四十九年1784重修，包青砖增至十三级，高42.4米；所绘外观按清重修增层记录，非唐代原貌。"
+    },
+    {
+      "title": "龙兴寺（新绛）",
+      "url": "https://zh.wikipedia.org/wiki/龙兴寺_(新绛)",
+      "publisher": "维基百科，援引文保资料及古建筑调查著作",
+      "evidence": "提供寺院对象坐标，区分元代大殿、清代十三层塔及1991山门廊房新建。"
+    }
+  ],
+  "coordinates": {
+    "lat": 35.618123,
+    "lon": 111.21962,
+    "source": "https://zh.wikipedia.org/wiki/龙兴寺_(新绛)",
+    "note": "龙兴寺对象坐标35°37′5.243″N111°13′10.632″E。"
+  },
+  "site_recommendation": {
+    "id": "sx_xinjiang_longxing",
+    "name": "新绛龙兴寺",
+    "short": "龙兴寺",
+    "sub": "龙兴宝塔 · 绛州城",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清 · 乾隆重修增层",
+    "year": 1784,
+    "yearLabel": "1784重修",
+    "yearApprox": false,
+    "yearNote": "此年为现存十三层外观的清代重修增层纪年；不将寺院唐代沿革或塔内早期遗存直接等同于外观年代。",
+    "place": "山西新绛 · 北大街",
+    "province": "山西",
+    "placeName": "新绛",
+    "placeKey": "sx_xinjiang",
+    "lat": 35.618123,
+    "lon": 111.21962,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/龙兴寺_(新绛)",
+    "lede": "龙兴宝塔以平直叠涩的砖檐逐级收束，十三层塔影立在绛州城北高地。现存包砖外观与增高层数，记录了清代对早期古塔的重修。",
+    "facts": [
+      {
+        "label": "十三层塔",
+        "text": "宝塔平面八角，十三层逐渐缩短，塔身以叠涩砖檐分层，整体高约42米。"
+      },
+      {
+        "label": "清代增修",
+        "text": "资料记乾隆四十九年1784重修时包青砖并由八级增至十三级，图版按这一现存外观断代。"
+      },
+      {
+        "label": "古寺层积",
+        "text": "龙兴寺另存元代大殿、彩塑与碧落碑，各类遗存年代不同，本图只绘宝塔。"
+      }
+    ]
+  }
+}

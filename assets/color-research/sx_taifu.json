@@ -1,0 +1,58 @@
+{
+  "id": "sx_taifu",
+  "name": "汾阳太符观",
+  "subject": "汾阳太符观昊天玉皇上帝殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_taifu.png",
+    "assets/references/sx_taifu-photo.jpg",
+    "assets/references/sx_taifu-alt-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Taifu Guan Haotian Jade Emperor Hall, Fenyang. Keep exact line composition: three bays, central double studded door with two ring handles, two side tall barred windows, small blank side plaques, blank hanging central plaque and tall central ridge ornament. Current photo colors: muted dark red plaster walls, weathered deep brown door and grey-brown window bars; pale grey-beige columns and wall plinth; grey stone terrace and stairs. Roof mainly grey tiles with turquoise-green glazed eave/ridge borders and a clearly visible restrained turquoise-green DIAMOND pattern in middle roof area, as in BOTH photos. Ridge ornaments green/ochre aged ceramic, not gold. Under-eave wood dark grey-brown. Keep all plaques blank dull brown/grey, no copied inscriptions or sign text. No trees, incense burner, forecourt, fences, statues or red ceremonial ribbons.",
+  "material_observations": [
+    "太符观昊天殿为灰瓦、青绿釉边瓦，屋面中央有青绿色菱形瓦面图案，两张实拍均可见。",
+    "正面墙体暗红，门为深褐旧木，柱与下部墙基灰米色，窗棂风化褐灰；台基灰石、脊饰有绿与赭色。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/sx_taifu-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:太符观-2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/%E5%A4%AA%E7%AC%A6%E8%A7%82-2.jpg/960px-%E5%A4%AA%E7%AC%A6%E8%A7%82-2.jpg",
+      "author": "Fymking",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    },
+    {
+      "file": "assets/references/sx_taifu-alt-photo.jpg",
+      "source_page": "https://www.qings.com/memory/onroad/413452/",
+      "image_url": "https://www.qings.com/wp-content/uploads/2023/12/IMG_8113-800x600.jpg",
+      "author": "青の日记（网站署名，摄影者未单列）",
+      "license": "未明确开放许可",
+      "license_url": null,
+      "date": "2023-06-11（游记日期；2023-12-08更新）",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/sx_taifu.json",
+  "output": "assets/colored/sx_taifu.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "三间殿身、两直棂窗、门钉双扇门、空白匾与中央高脊饰对应线稿。",
+      "实拍的青绿菱形瓦面图案和檐边、灰瓦、红墙及深褐木门保留，石台基灰米色。",
+      "没有复制香炉、院树、铁栏或文字，线条与哑光色面统一。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T12:13:24.058Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-69f09082-5da3-4dd0-ae6a-546b7f7fa7a2.png",
+  "generated_at": "2026-09-15T12:19:26.045Z",
+  "completed_at": "2026-09-15T12:20:46.066Z"
+}

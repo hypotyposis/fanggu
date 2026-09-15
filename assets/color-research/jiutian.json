@@ -1,0 +1,47 @@
+{
+  "id": "jiutian",
+  "name": "九天圣母庙",
+  "subject": "九天圣母庙献殿 · 长边侧立面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jiutian.png",
+    "assets/references/jiutian-photo.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Jiutian Holy Mother Temple offering hall, long side elevation. Preserve EXACT six front columns and SIX foreground steles: one in each end brick surround plus four freestanding steles, all blank as line master; retain all original bases, open column gaps and low broad roof. Existing columns faded red-brown painted wood, worn lower patches grey-white; metal hoops dark grey. Brackets/beams dark weathered brown, roof tiles and ridge ornaments neutral grey, no gold/green invention. Steles and carved bases pale grey stone, end brick surrounds grey-brown, platform grey stone. Only original beams visible behind gaps; remainder black, not scenery. The photo has sun glare: exclude glare and use neutral material colors. No inscriptions on stones, trees, neighbouring roof, trash can, metal support frame or floodlights.",
+  "material_observations": [
+    "九天圣母庙献殿六根前柱红褐漆面磨损，下端有灰白残层，斗栱梁木暗褐。",
+    "瓦顶与脊饰灰色，六块前景石碑及座为浅灰石，两端包碑砖墙灰褐，石台灰色；照片有日光眩光，取结构材料色不复制光晕。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jiutian-photo.png",
+      "source_page": "https://www.meipian.cn/5lhpx9wi",
+      "image_url": "https://ss-mpvolc.meipian.me/users/8944862/71569b5de0c341cd8cdee1edfcd2dfb6soi__jpeg.heic",
+      "author": "小鸟（美篇）",
+      "license": "原页面未注明开放许可；照片仅作形制参考",
+      "license_url": null,
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/jiutian.json",
+  "output": "assets/colored/jiutian.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "六根前柱、六碑与各碑座、两端包碑砖墙和开敞长侧面对应原稿。",
+      "磨损红褐柱、灰白柱脚残层、灰瓦与浅灰石碑分区对应实拍，排除了照片眩光。",
+      "石碑保持无字，未加垃圾桶、金属支架、周边屋顶或绿植。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T13:05:03.667Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-b6793981-873c-4805-8a48-215ac6d72b96.png",
+  "generated_at": "2026-09-15T13:10:43.838Z",
+  "completed_at": "2026-09-15T13:12:13.681Z"
+}

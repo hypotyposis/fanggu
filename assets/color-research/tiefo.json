@@ -1,0 +1,73 @@
+{
+  "id": "tiefo",
+  "name": "高平铁佛寺",
+  "subject": "高平铁佛寺正殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/tiefo.png",
+    "assets/references/tiefo-photo.jpg",
+    "assets/references/tiefo-ridge-photo.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 高平铁佛寺正殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the FIRST line master's Gaoping Tiefo main hall facade with one central open doorway, two lattice windows, single broad roof and seven main bracket groups. Roof field is unglazed gray clay tiles with weathered pale gray ridges. Only roof edges, ridge reliefs and lion-vase central ornament have colorful surviving glaze: aged muted turquoise/green, pale cream and ochre; central stacked vase has small orange-russet lobes bordered dark blue-green. Lion itself worn pale stone/cream with green patches. Do NOT color whole roof green or gold. Weathered brackets and beam are dark gray-brown timber, facade upper plaster slate-gray, lower wall gray-brown brick, window framing faded deep brown-maroon and lattice near-black gray wood; opened doors very dark. Low step/base gray stone. Exclude courtyard furniture, banners, extinguishers, plaques/text and side buildings; maintain blank doorway as master without inventing interior statues.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看正殿原线稿、2025人民网/高平政府全景与狮驼宝瓶近照。主体瓦为灰色，彩釉集中于脊及边缘，含风化青绿、乳白、黄赭，宝瓶局部橙红与深青。前檐老木灰褐，墙面上部灰抹面、下部灰褐砖，窗门深褐。仅画现正殿，不把二十四诸天补进空门。",
+  "references": [
+    {
+      "source_page": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "mirror_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291338.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128643518407179.jpg",
+      "original_image_url": "http://sx.people.com.cn/NMediaFile/2025/0425/LOCAL1745545034442RZUSPKDYGQ.jpg",
+      "reference_file": "assets/references/tiefo-photo.jpg",
+      "author": "卢鹏宇 / 人民网",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "caption": "正殿全景",
+      "role": "subject geometry",
+      "rights_note": "照片仅作为建筑几何研究与重绘参考；生成线稿是独立绘制，不代表照片获授开放许可。",
+      "file": "assets/references/tiefo-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "mirror_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291338.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128643519217528.png",
+      "original_image_url": "http://sx.people.com.cn/NMediaFile/2025/0425/LOCAL17455459557332SJYKQ0WDK.jpg",
+      "reference_file": "assets/references/tiefo-ridge-photo.png",
+      "author": "卢鹏宇 / 人民网",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "http://sx.people.com.cn/n2/2025/0425/c189132-41208420.html",
+      "caption": "狮驼宝瓶",
+      "role": "ridge ornament geometry",
+      "rights_note": "同一篇摄影报道末尾统一署名「摄影：人民网 卢鹏宇」。",
+      "file": "assets/references/tiefo-ridge-photo.png",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/tiefo.json",
+  "output": "assets/colored/tiefo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-6b5d57e6-f654-45e7-b7c8-9ce448ee7059.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：一门两窗、七组前檐斗栱及狮驼宝瓶保留。灰瓦屋面与彩釉脊饰分开，宝瓶橙青局部、灰褐木构和灰墙符合实拍；门洞未添加塑像，檐口与台基完整。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 高平铁佛寺正殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the FIRST line master's Gaoping Tiefo main hall facade with one central open doorway, two lattice windows, single broad roof and seven main bracket groups. Roof field is unglazed gray clay tiles with weathered pale gray ridges. Only roof edges, ridge reliefs and lion-vase central ornament have colorful surviving glaze: aged muted turquoise/green, pale cream and ochre; central stacked vase has small orange-russet lobes bordered dark blue-green. Lion itself worn pale stone/cream with green patches. Do NOT color whole roof green or gold. Weathered brackets and beam are dark gray-brown timber, facade upper plaster slate-gray, lower wall gray-brown brick, window framing faded deep brown-maroon and lattice near-black gray wood; opened doors very dark. Low step/base gray stone. Exclude courtyard furniture, banners, extinguishers, plaques/text and side buildings; maintain blank doorway as master without inventing interior statues.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/tiefo.png",
+        "assets/references/tiefo-photo.jpg",
+        "assets/references/tiefo-ridge-photo.png",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-6b5d57e6-f654-45e7-b7c8-9ce448ee7059.png",
+      "output": "assets/colored/tiefo.png"
+    }
+  ]
+}

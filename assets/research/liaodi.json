@@ -1,0 +1,23 @@
+{
+  "id": "liaodi",
+  "subject": "定州开元寺料敌塔",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Liaodi_Pagoda_1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Dingzhou_Liaodi_Pagoda_1.jpg/960px-Dingzhou_Liaodi_Pagoda_1.jpg",
+  "reference_file": "assets/references/liaodi-photo.jpg",
+  "author": "Angus Cepka (Zeus1234)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/liaodi-photo.jpg"
+  ],
+  "source_note": "北立面接近正面，十一层完整可辨，底部附属门楼及电线在重绘时移除。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: Liaodi Pagoda 料敌塔 at Kaiyuan Temple in Dingzhou, as photo 2. Exactly ELEVEN occupied storeys on an octagonal plan, evenly diminishing upwards, each with central arched door and side blind window outlines. Tall slender brick pavilion tower, white plaster-like wall fields, horizontal stepped brick cornice and low parapet/platform each storey, NO sweeping wooden upturned tiled roofs. Lotus-shaped top and small finial match the reference silhouette. Full frontal elevation with central flat face plus two narrow adjacent faces; slight camera tilt corrected. Entire tower plus small plain stepped base, 82% image height on portrait 1024×1536. Omit the gate, street, trees, buildings, wires and people. Count eleven large wall tiers before rendering. Draw each cornice in 2–3 fine lines only, very sparse contour detail; NO brick grids, joint patterns, grey fills, repetitive hatch stripes or surface weathering.",
+  "generated_file": "assets/generated/liaodi.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "verification": "Checked against photograph for silhouette, full framing and defining storey structure."
+}

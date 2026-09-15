@@ -1,0 +1,24 @@
+{
+  "id": "tianning",
+  "subject": "北京天宁寺塔",
+  "author": "BabelStone (Andrew West)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "verification": "Complete tower, thirteen exterior eave tiers above the tall sculpted first chamber, no cropping.",
+  "prompt": "Use case: precise-object-edit. Image 1 black ink contour STYLE MASTER, image 2 Beijing Tianning Pagoda reference photograph, image 3 draft to edit. Image 3 currently has FOURTEEN exterior roof bands. REMOVE EXACTLY ONE roof band from the middle of the dense-eave upper shaft: remove the SEVENTH tier counting from the top (approximately 32% down the whole image), and join the neighboring wall/cornice rhythms. Keep all other THIRTEEN roofs intact. Only remove that one tier; do not add anything. Maintain the same apex, round finial, tall decorated bottom chamber, lotus seat and stepped pedestal; keep the complete tower framed within white margins on portrait 1024×1536. Final dense-eave tower has THIRTEEN total roof bands, matching the real photograph. Same elegant fine black line-only drawing, every surface white, no text or dark shading.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: Beijing Tianning Temple Pagoda 北京天宁寺塔 in photo 2. Octagonal Liao brick DENSE-EAVES pagoda: tall carved first-storey chamber above a broad stepped Sumeru plinth and lotus seat, followed by exactly THIRTEEN closely spaced roof cornices/eaves total, progressively narrower and closer toward the round jewel finial. The 13 cornices form one long narrow tapered upper section; they are not 13 tall occupied storeys. First storey has central arched recessed doorway flanked by standing guardian relief figures, side faces with vertical blind-lattice windows. Preserve the photo's proportions and identifiable silhouette. Frontal architectural elevation with central doorway centered, complete base and round finial, 82% height on portrait 1024×1536. Only outlines for doors, figures, brackets and lotus; no black shadows, no surface brick texture, no exhaustive carving. Cornices and selective brackets with delicate contours, 3–4 main strokes per band, mostly white open space.",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Tianning_Temple_Pagoda.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Tianning_Temple_Pagoda.jpg/960px-Tianning_Temple_Pagoda.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tianning-photo.jpg",
+    "assets/generated/tianning-draft2.png"
+  ],
+  "source_note": "接近正面的三个可见立面，完整塔身。按实物保留十三层密檐、首层造像、仰莲座及阶梯台基；逐次修正檐数。",
+  "generated_file": "assets/generated/tianning.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ]
+}

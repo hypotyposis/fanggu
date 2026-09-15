@@ -1,0 +1,108 @@
+{
+  "id": "sx_jiangzhou_datang",
+  "subject": "绛州大堂元代正堂南立面",
+  "caption": [
+    "绛州大堂 · 州署正堂",
+    "元代 · 七间悬山"
+  ],
+  "source_page": "https://www.sohu.com/a/989395289_797934",
+  "image_url": "https://q0.itc.cn/images01/20260224/7ce4b106a19e41aeaefc3ee01cd9ef1f.jpeg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_jiangzhou_datang-front-photo.jpg",
+    "assets/references/sx_jiangzhou_datang-photo.jpg"
+  ],
+  "sources": [
+    {
+      "file": "assets/references/sx_jiangzhou_datang-front-photo.jpg",
+      "source_page": "https://www.sohu.com/a/989395289_797934",
+      "image_url": "https://q0.itc.cn/images01/20260224/7ce4b106a19e41aeaefc3ee01cd9ef1f.jpeg",
+      "author": "亮点的旅行",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 2000,
+        "height": 1333
+      }
+    },
+    {
+      "file": "assets/references/sx_jiangzhou_datang-photo.jpg",
+      "source_page": "https://www.yuncheng.gov.cn/doc/2020/07/21/71115.shtml",
+      "image_url": "https://www.yuncheng.gov.cn/uploadfiles/202004/22/2020042216414335385968.jpg",
+      "author": "运城市人民政府网站，摄影者未署名",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 600,
+        "height": 398
+      }
+    }
+  ],
+  "source_note": "以南立面完整实照为主体，政府网站近侧面补足大额、减柱与悬山檐端。保留两端封闭山墙间与中部五个不等宽敞口；去除现代玻璃考古保护罩，不复原已毁抱厦。二次生成减少瓦垄密度；现稿轮廓完整，两端留白较窄，最终网站容器可统一缩放。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the actual JIANGZHOU DATANG, main hall of the ancient prefectural yamen at XINJIANG, SHANXI 绛州大堂, exactly the broad weathered hall in photo2. Photo3 is official side-angle detail of the SAME hall, confirming massive weathered raw timber columns and bracket sets. One single-storey exceptionally WIDE hall with a very long SINGLE-EAVED XUANSHAN overhanging-gable tiled roof, not hipped Chinese palace roofs. EXACTLY SEVEN historical facade bays: the far LEFT and far RIGHT END BAYS are solid broad plaster walls, enclosing FIVE OPEN MIDDLE BAYS. Those five open bays are arranged WIDE–NARROW–WIDE–NARROW–WIDE with FOUR freestanding front columns dividing them; wall-end supports are partly merged with the two solid end walls. Do NOT invent a uniform seven-bay free-standing colonnade. The thick slightly irregular columns and massive continuous timber lintels, and the seventeen large front bracket groups are the main visual features. Keep the roof's very long horizontal ridge with two small curled end finials, shallow slope and modest uplift. Continue only the few pixels of outer eave edges cropped in photo2, preserving the actual overhanging gable silhouette supported by photo3. Remove the modern GLASS ARCHAEOLOGICAL COVER in foreground, all modern steel posts, red lanterns, painted calligraphy, loudspeakers, fire extinguishers, notice boards, visitor fences, trees and watermark. Do NOT reconstruct the historical now-lost projecting porch. Keep only a low plain stone foundation and sparse short ground line directly below the existing building. The five open bays remain WHITE with just minimal actual rear structural outlines; no black cavities. All plaster, wood, tiles blank white inside thin delicate black outlines, few roof slope lines rather than every tile. Entire long hall centered landscape1536x1024 about84%width and60%height with generous blank margins and all roof tips visible.\nFRAMING OVERRIDE: Landscape1536x1024. Entire building including both projecting eave tips and plinth MUST stay inside the middle80% of the width, leaving at least150pixels pure white blank margin on BOTH left and right. Scale the architecture down to fit; do not crop. Very sparse roof lines, omit most tile courses; do not engrave woodgrain or brick texture.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-113ed138-369c-4ebd-b2a5-7c231484911d.png",
+  "generated_file": "assets/generated/sx_jiangzhou_datang.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "绛州大堂",
+      "url": "https://www.yuncheng.gov.cn/doc/2020/07/21/71115.shtml",
+      "publisher": "运城市人民政府",
+      "evidence": "现主体元代遗构，面阔七间进深八椽，单檐悬山顶；减柱造，前檐十七朵五铺作双下昂斗拱，原三间抱厦已毁。"
+    },
+    {
+      "title": "绛州大堂",
+      "url": "https://zh.wikipedia.org/wiki/绛州大堂",
+      "publisher": "维基百科",
+      "evidence": "对象坐标；屋顶形制以政府文保说明及实拍的悬山为准。"
+    }
+  ],
+  "coordinates": {
+    "lat": 35.61444,
+    "lon": 111.21472,
+    "source": "https://zh.wikipedia.org/wiki/绛州大堂",
+    "note": "古迹对象坐标。"
+  },
+  "site_recommendation": {
+    "id": "sx_jiangzhou_datang",
+    "name": "绛州大堂",
+    "short": "绛州大堂",
+    "sub": "州署正堂 · 七间悬山",
+    "types": [
+      "hall"
+    ],
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元 · 州署正堂",
+    "year": 1300,
+    "yearLabel": "元代",
+    "yearApprox": true,
+    "yearNote": "1300仅为元代遗构的年表约略定位，并非确切竣工年。",
+    "place": "山西新绛 · 绛州署",
+    "province": "山西",
+    "placeName": "新绛",
+    "placeKey": "sx_xinjiang",
+    "lat": 35.61444,
+    "lon": 111.21472,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/绛州大堂",
+    "lede": "绛州大堂以一条舒展的悬山屋脊统领七间立面。粗大的木柱、长额与不等宽的开间，留下元代州署正堂朴实而开阔的空间。",
+    "facts": [
+      {
+        "label": "元代州署",
+        "text": "现存大堂主体为元代遗构，是地方官署正堂的珍贵实例，后世多次修缮。"
+      },
+      {
+        "label": "七间悬山",
+        "text": "大堂面阔七间、进深八椽，单檐悬山顶；两端封墙，中部敞口呈不等宽柱网。"
+      },
+      {
+        "label": "减柱大额",
+        "text": "前檐十七朵斗拱承托出檐，以减柱和长额获得宽阔空间；原有前抱厦已毁。"
+      }
+    ]
+  }
+}

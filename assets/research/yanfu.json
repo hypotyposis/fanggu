@@ -1,0 +1,69 @@
+{
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "id": "yanfu",
+  "subject": "武义延福寺大殿",
+  "caption": [
+    "延福寺 · 大殿",
+    "元延祐四年 · 重檐歇山"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Wuyi_Yanfu_Si_20120219-17.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Wuyi_Yanfu_Si_20120219-17.jpg/1280px-Wuyi_Yanfu_Si_20120219-17.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yanfu-photo.jpg"
+  ],
+  "reference_dimensions": {
+    "width": 1280,
+    "height": 853
+  },
+  "source_note": "2012-02-19实拍，近正面大殿；已核对宽阔明间、两侧窄间、上下双檐、侧间花窗及低石台。画中移除前池栏杆、香炉和树木，檐下阴影改为白底轮廓。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: main hall of Yanfu Temple 延福寺 at Taocun, Wuyi County, Zhejiang. Preserve the exact photographed near-frontal double-eaved hip-and-gable silhouette. FIVE facade bays: unusually WIDE CENTRAL bay with the main entrance, TWO narrower bays on each side. Next-to-central side bays each have one small geometric lattice window above a white lower wall; outermost bays plain white infill divided by timber. Exactly TWO sweeping roof tiers; upper roof steep center section and long low sweeping corners, lower roof an uninterrupted gentle arc. The exposed upper bracket zone is low and shaded in photograph; show only fine outlines against white, no shadow. Door shutter details and low stone foundation kept. Remove the entire foreground pond, railing, incense burner, tourists, side buildings, trees and hill. Architectural illustration of the one complete hall alone; small low podium and only a few approach step lines. Roof surfaces mostly white with sparse suggesting lines rather than full tile pattern. Landscape1536x1024, building82%width, clear margins, no text.",
+  "generated_file": "assets/generated/yanfu.png",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-75d921ec-89bd-4252-9196-67f275df7594.png",
+  "historical_sources": [
+    {
+      "title": "延福寺相关古建介绍",
+      "url": "https://m.thepaper.cn/newsDetail_forward_32855952",
+      "publisher": "武义发布（武义县人民政府新闻办公室）",
+      "evidence": "大殿于元延祐四年（1317）由怀法、德环募资重建，历时七年；重檐歇山，保有宋代构件。年份取本轮重建的起年。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "武义延福寺",
+    "short": "延福寺",
+    "sub": "大殿 · 江南元构",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元 · 延祐四年重建",
+    "year": 1317,
+    "yearLabel": "1317年重建起",
+    "place": "浙江武义 · 桃溪陶村",
+    "placeKey": "wuyi",
+    "lat": 28.712177,
+    "lon": 119.601982,
+    "latlon_source": "https://commons.wikimedia.org/wiki/File:Wuyi_Yanfu_Si_20120219-17.jpg",
+    "latlon_note": "近殿摄影点坐标，用于寺址地图约略定位。",
+    "lede": "上下两层飞檐把殿身舒展开，宽阔明间与两侧花窗收成简净的正面。武义延福寺的元代大殿，仍保存着更早的木构记忆。",
+    "facts": [
+      {
+        "label": "元代重建",
+        "text": "现存大殿的重建始于元延祐四年（1317），由僧人怀法、德环募资兴修。"
+      },
+      {
+        "label": "重檐歇山",
+        "text": "两层屋檐间露出木构斗栱，宽阔中央明间与两侧较窄间构成立面节奏。"
+      },
+      {
+        "label": "宋元相接",
+        "text": "殿内保有宋代构件，所见形制与元代重建共同留下跨越时代的营造痕迹。"
+      }
+    ]
+  }
+}

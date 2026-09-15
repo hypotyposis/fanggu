@@ -1,0 +1,60 @@
+{
+  "id": "anyue",
+  "name": "安岳石刻",
+  "subject": "安岳毗卢洞水月观音（紫竹观音）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-90fe90ea-9678-483b-b44f-754abda8cab1.png",
+    "assets/references/anyue-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Edit ONLY the first colored atlas image. Photo 2 shows the real surviving sculpture; last image is the desired refined plate rendering style. Preserve every silhouette, pose, margin, face contour, folds, bamboo, halo and all existing color locations of the first image. REDUCE the excessive mottled artificial weathering on the face, chest, shoulders, hands and pale robes by about 80 percent. These areas should be calm matte pale ochre or ivory/grey with only very subtle mineral grain and a few restrained faint signs of age. The face must read clearly and serenely, not spotted or pockmarked. Keep actual blue-green sash/borders, dusty pink remnants, dark blue-grey lotus, dull ochre crown. Do not recolor skin like a living person or add gold. The blue-grey halo may keep limited paint wear, but soften its all-over random speckles too. Retain thin engraved contours and gently flat fill; no photorealism. Flat #100f0d background, original 1024x1536 composition, no glow or scene.",
+  "material_observations": "水月观音现存彩绘：面胸浅土黄、双手足浅灰白，衣裙粉白、灰白和少量粉红，飘带与裙缘有蓝绿残彩；莲座深灰蓝，宝冠为暗赭金，竹纹青绿。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:毗卢洞石刻造像.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/%E6%AF%97%E5%8D%A2%E6%B4%9E%E7%9F%B3%E5%88%BB%E9%80%A0%E5%83%8F.jpg/1280px-%E6%AF%97%E5%8D%A2%E6%B4%9E%E7%9F%B3%E5%88%BB%E9%80%A0%E5%83%8F.jpg",
+      "author": "Nekitarc",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/anyue-photo.jpg",
+      "date": "2017-09-02",
+      "role": "真实雕像近正面照，原始像素724×771；下载服务放大为1280宽参考"
+    }
+  ],
+  "output": "assets/colored/anyue.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-3682ccfe-a697-456f-859c-97008004a295.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实看原线稿、2017年实拍、画法样本、初稿与修正版；不对称坐姿、双手双足、莲台和竹枝保持。",
+      "脸胸比初稿明显减轻人工斑驳，仍为浅土黄与灰白；蓝绿衣缘、淡粉残彩、灰蓝莲台沿用照片取色。",
+      "背光与衣裙仍有适量斑驳，属于沿用小样风格的艺术转译。"
+    ],
+    "limitations": "依据已有实拍进行艺术转译；未做色彩校准、实地复核或逐像素几何验证。"
+  },
+  "recovered_at": "2026-09-15T11:35:51.273378+00:00",
+  "recovery": {
+    "source_task": "01a09e2d-a458-73d0-bb60-eb2b3a86e6bd",
+    "prompt_source": "assets/color-research/recovery/original-calls.json",
+    "prepared_at": "2026-09-15T10:18:48.741Z",
+    "output_association": "原任务最后一批调用及生成时间对应，逐图与线稿、实拍核对主体；该批结果未回传至旧对话"
+  },
+  "worker": "main",
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nMONUMENT-SPECIFIC REQUIREMENTS:\nAnyue Pilu Cave Water-Moon Guanyin, actual surviving polychromy. Preserve relaxed asymmetric seated pose, raised viewer-left knee, hanging opposite leg, hands, robes, lotus and sparse bamboo exactly as drawing. Face/chest muted pale ochre stone pigment, arms/legs/hands pale grey ivory, NOT living pink flesh. Draperies chalky white/light grey with limited old dusty pink areas, waist sash and narrow borders muted cobalt blue and blue-green remnants. Crown and jewelry dull ochre with small blue-green accents, not polished gold. Lotus dark grey-blue with pale tips; circular halo muted worn blue-grey with pale edge, bamboo dull deep green. Matte aged stone, sparse gentle wear, serene original face, no invented flame ring or extra figures.",
+      "input_images": [
+        "assets/generated/anyue.png",
+        "assets/references/anyue-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-90fe90ea-9678-483b-b44f-754abda8cab1.png",
+      "review": "原任务认定初稿面胸和衣裙斑驳过重；本次查看确认，采用已生成的定向减纹理版本。"
+    }
+  ]
+}

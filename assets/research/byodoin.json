@@ -1,0 +1,131 @@
+{
+  "id": "byodoin",
+  "subject": "日本宇治平等院凤凰堂的中堂与左右翼廊、端部楼阁完整正面",
+  "caption": [
+    "平等院 · 凤凰堂正面与两翼",
+    "平安时代 · 1053年"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Hall,_Byodo-in,_November_2016_-01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg/1280px-Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg",
+  "author": "Martin Falbisoner",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/byodoin-front-photo.jpg",
+    "assets/references/byodoin-photo.jpg"
+  ],
+  "references": [
+    {
+      "file": "assets/references/byodoin-front-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Hall,_Byodo-in,_November_2016_-01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg/1280px-Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-11-18",
+      "dimensions": {
+        "width": 1280,
+        "height": 669
+      },
+      "note": "从阿字池前侧斜向拍摄，完整显露中堂、左右翼廊与端部楼阁、中央双凤。作为主要主体照片；生成时调整为近正面。Commons描述中1153为误记，断代以寺方官网1053为准。"
+    },
+    {
+      "file": "assets/references/byodoin-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Hall.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Phoenix_Hall.jpg/1280px-Phoenix_Hall.jpg",
+      "author": "Sergei Semenov (Sergeisemenov)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-10-12",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "note": "完整斜正面实拍，补充两翼端楼、宝珠及廊下柱列关系；不作为创建年代来源。"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/byodoin-front-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Hall,_Byodo-in,_November_2016_-01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg/1280px-Phoenix_Hall%2C_Byodo-in%2C_November_2016_-01.jpg",
+      "author": "Martin Falbisoner",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-11-18",
+      "dimensions": {
+        "width": 1280,
+        "height": 669
+      },
+      "note": "从阿字池前侧斜向拍摄，完整显露中堂、左右翼廊与端部楼阁、中央双凤。作为主要主体照片；生成时调整为近正面。Commons描述中1153为误记，断代以寺方官网1053为准。"
+    },
+    {
+      "file": "assets/references/byodoin-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Hall.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Phoenix_Hall.jpg/1280px-Phoenix_Hall.jpg",
+      "author": "Sergei Semenov (Sergeisemenov)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-10-12",
+      "dimensions": {
+        "width": 1280,
+        "height": 853
+      },
+      "note": "完整斜正面实拍，补充两翼端楼、宝珠及廊下柱列关系；不作为创建年代来源。"
+    }
+  ],
+  "source_note": "使用两张经目视核对的2016年凤凰堂实拍与卢舍那线稿母版生成。将实拍斜视调整为近正面，保留中堂、左右翼廊、两端楼阁、双凤与宝珠。轮廓完整，无人、树木与倒影；后方不在正面视野中的尾廊不作臆绘。本图取凤凰堂正面，不表示平等院全寺布局。现存主体1053年创建，所绘外观包含历史维修及2014年修缮后的状态；屋脊现置凤凰为1968年换置的第二代，非原件。输入及输出均已目视检查。root另下载的官方补充图未传入本次生成，因此不列入实际reference_files。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: the COMPLETE PHOENIX HALL of BYODO-IN, UJI, JAPAN 宇治平等院鳳凰堂, including its CENTRAL AMIDA HALL AND BOTH FULL WING CORRIDORS with their END PAVILIONS. Images2and3 show the real 1053 Japanese building after conservation, not a Chinese temple. Make a carefully straight-on ELEVATION-LIKE view from across the pond, correcting the oblique camera angles in the real photos while preserving the exact connected forms, bay rhythm, roof geometry and proportions. Keep both sides balanced at their true equal dimensions: left and right open raised wing corridors extend from the central hall, each ending in the distinctive projecting front-facing gabled pavilion with a small square hipped-roof tower rising behind it. The wings have long horizontal galleries and delicate balcony railings with tall slender supporting posts beneath. Do not turn the wing corridors into enclosed Chinese side halls. The tall central Amida hall has a great gently curved irimoya hip-and-gable tiled roof over an upper wall zone and a much lower surrounding lean-to eave, with its three principal facade bays, open central doorway, framed side doors and narrow front stairs. Preserve exactly TWO small PHOENIX BIRDS on the TWO ENDS of the central upper roof ridge, and the modest jewel finials atop BOTH side tower roofs. These are phoenixes, not Chinese dragon ridge monsters. Preserve the recognizably Japanese shallow roof sweeps, bargeboards, bracket profiles, open undercroft and delicate railings as actually photographed. Keep all roof planes purewhite with sparse10to15 tile-guide lines per major roof maximum; selective simplified bracket contours instead of drawing every repetitive element. Central doorway and all other openings stay WHITE, outlined only; no black hall interiors. Both extreme wing ends, both upper tower finials and both phoenix ornaments must be fully visible inside generous margins. Exclude rear tail corridor which is not visible from this front viewpoint rather than inventing it. Remove all trees, shrubs, fences, tourists, signs, stone lantern, surrounding buildings, water reflections and sky. Only two or three short flowing lines may suggest the pond's island edge beneath the low masonry bases, with the rest purewhite. Wide landscape1536x1024, building about88%width and60%height, enough blank white margin above and below. Fine organic contour drawing consistent with image1, not a dense engraving or architectural CAD blueprint. No text.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-4135a075-c7b7-414c-b944-97eb409f028a.png",
+  "generated_file": "assets/generated/byodoin.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "建筑｜凤凰堂",
+      "url": "https://www.byodoin.or.jp/ch1/learn/architecture/",
+      "publisher": "世界遗产平等院官方网站",
+      "evidence": "寺方明确阿弥陀堂由藤原赖通于1053年建造。堂立于阿字池岛上，坐西朝东，参拜者隔池面向西方；外形及屋脊双凤使其在江户时代被称为凤凰堂。官网另载1101年全面铺瓦、1968年更换凤凰原件保护、2014年平成修理完成，断代与修缮年代据此分别登记。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "平等院",
+    "short": "平等院",
+    "sub": "凤凰堂 · 净土庭园",
+    "country": "JP",
+    "province": "京都府",
+    "type": "hall",
+    "dyn": "jp_heian",
+    "tag": "平安",
+    "era": "平安时代 · 凤凰堂",
+    "year": 1053,
+    "yearLabel": "1053年",
+    "yearApprox": false,
+    "yearNote": "1053为所绘凤凰堂的建造年。寺院创建1052与堂宇建造分开；现状包含1101年屋面调整及后世修缮，双凤现置品于1968年换置，不将全部表面构件视作1053年原件。",
+    "place": "日本京都 · 宇治",
+    "placeKey": "uji",
+    "lat": 34.889283,
+    "lon": 135.80765,
+    "latlon_source": "https://commons.wikimedia.org/wiki/Category:Phoenix_Hall",
+    "latlon_note": "采用凤凰堂对象坐标34°53′21.42″N、135°48′27.54″E，非摄影机位置。",
+    "lede": "阿字池对岸，中堂与两翼廊如振翅的鸟展开，屋脊双凤相望。藤原赖通于1053年营造的阿弥陀堂，把平安时代的净土想象安放在宇治水面之上。",
+    "facts": [
+      {
+        "label": "平安遗构",
+        "text": "凤凰堂建于1053年，由藤原赖通营造，现存中堂与翼廊体现平安时代后期的阿弥陀堂布局。"
+      },
+      {
+        "label": "双凤与两翼",
+        "text": "左右翼廊围合中堂，屋脊上立一对凤凰；凤凰堂之名在江户时代逐渐通行，屋顶现置凤凰为1968年换置品。"
+      },
+      {
+        "label": "隔池礼佛",
+        "text": "建筑坐西朝东，参拜者在阿字池东岸面向西方礼佛，庭园与佛堂共同表达西方净土的意象。"
+      }
+    ]
+  }
+}

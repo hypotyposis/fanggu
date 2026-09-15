@@ -1,0 +1,48 @@
+{
+  "id": "gongchen",
+  "name": "临安功臣塔",
+  "subject": "临安功臣塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/gongchen.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/gongchen-full-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: gongchen.\nOBSERVED MATERIAL COLORS: Overcast daytime photo shows tower primarily cool gray weathered masonry, dark charcoal eave ledges/finial, paler gray patches on body and some muted rusty-red remnants within a few upper doorway recesses. Not golden, not warm sandstone. Keep generally neutral gray stone/brick and dark openings with minimal rusty traces only inside.\nSPECIFIC GEOMETRY LOCK: Five square storeys with short ledges, rectangular openings and two bulb finial. Preserve oblique angle and tall narrow silhouette with complete base as drawing. Do not copy forest or add a roof pavilion. Calm semi-flat gray fields, small grain, not all-over random blotches.",
+  "material_observations": "Overcast daytime photo shows tower primarily cool gray weathered masonry, dark charcoal eave ledges/finial, paler gray patches on body and some muted rusty-red remnants within a few upper doorway recesses. Not golden, not warm sandstone. Keep generally neutral gray stone/brick and dark openings with minimal rusty traces only inside.",
+  "references": {
+    "original_record": "assets/research/gongchen.json",
+    "selected_photo_files": [
+      "assets/references/gongchen-full-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Gongchen_bagoda.JPG",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Gongchen_bagoda.JPG/960px-Gongchen_bagoda.JPG?download=1",
+        "author": "Dirrival",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "source_note": "2009年照片，近正面兼侧立面，底层局部被树遮挡；重绘保留五层、矩形开口与砖仿木轮廓，底部仅补简洁台基。",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 列表中的照片是本次实际颜色输入。"
+  },
+  "output": "assets/colored/gongchen.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-a270bf51-7deb-49cb-a6a9-a6c7b4003e54.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看线稿、阴天实拍、样本与输出。",
+      "方形五层、矩形门洞、窄檐及葫芦塔顶保持。",
+      "以中冷灰砖石和深灰檐为主，局部门框保留淡锈红；未添树林或金色涂层。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

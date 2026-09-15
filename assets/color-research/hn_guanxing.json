@@ -1,0 +1,47 @@
+{
+  "id": "hn_guanxing",
+  "name": "登封观星台",
+  "subject": "登封观星台 · 台体与石圭正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_guanxing.png",
+    "assets/references/hn_guanxing_front-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Gaocheng Astronomical Observatory, Dengfeng, front platform and stone gnomon scale. Preserve exact twin sloping masonry faces, vertical central slot, upper twin walls with one arch opening each, tiled coping, original thin crossbar and both long side stairways with front inward angled retaining walls; long stone measurement bar projecting centrally towards viewer with its two grooves. Real material neutral mid-grey to grey-brown aged brick, some muted beige individual bricks, darker grey tile coping and recess; capstones and measuring stone pale neutral grey. The upper openings and central deep slot are dark. Small crossbar dark brown/grey. No invented Chinese palace colors, roof tiers, gold, red paint or vegetated scenery. Keep clear thin masonry contours and only gentle sparse pigment variation, not heavy photographic grunge.",
+  "material_observations": [
+    "观星台台体为中灰至灰褐色砖，中央狭槽深暗；顶端墙垛与灰瓦顶为深灰色。",
+    "左右梯道与扶墙灰砖灰石，石圭长条面浅灰，圭端砖基灰褐；没有红木或金饰。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hn_guanxing_front-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:1276_AD_Yuan_Dynasty_Gaocheng_Astronomical_Observatory,_Dengfeng,_China_(10202299644).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/1276_AD_Yuan_Dynasty_Gaocheng_Astronomical_Observatory%2C_Dengfeng%2C_China_%2810202299644%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Gary Todd from Xinzheng, China",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/hn_guanxing.json",
+  "output": "assets/colored/hn_guanxing.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "双侧斜坡台体、中央深槽与横杆、两顶端券窗、两侧梯道和前伸双槽石圭对应线稿。",
+      "主体为灰砖、米灰石材，中央暗槽与浅灰测量面明确；没有强加红色木构或金饰。",
+      "完整留边、深色背景，无树木、草坪或标牌。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T12:25:27.397Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-17dff3fc-eb31-4dad-9ca6-9823df9bad25.png",
+  "generated_at": "2026-09-15T12:28:56.868Z",
+  "completed_at": "2026-09-15T12:37:34.806Z"
+}

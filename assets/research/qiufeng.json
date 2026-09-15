@@ -1,0 +1,65 @@
+{
+  "generation_tool": "built-in image_gen",
+  "license": "照片未标注开放许可；仅作建筑形制研究参考",
+  "license_url": "",
+  "id": "qiufeng",
+  "subject": "万荣后土祠秋风楼",
+  "source_page": "https://www.ycpeace.gov.cn/a/wenyuan/biaolihedong/20210705/22699.html",
+  "image_url": "https://www.ycpeace.gov.cn/ueditor/php/upload/image/20210705/1625451196361747.jpg",
+  "author": "运城晚报／运城新闻网（未署摄影者）",
+  "source_note": "以公开报道中的完整正面照片为据，保留三层木楼、各层中央歇山山花、高台基与中层圆窗。清同治九年1870重建纪年据人民日报海外版2020年8月14日第12版；汉代《秋风辞》与元代碑刻不作为现楼建筑纪年。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qiufeng-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-35aa1783-9507-451a-b76b-7811fdde3210.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "后土祠 · 秋风楼正面",
+    "三层楼阁 · 清代重建"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://paper.people.com.cn/rmrbhwb/images/2020-08/14/12/rmrbhwb2020081412.pdf",
+      "publisher": "人民日报海外版·梁冬《祈盼丰收拜后土》",
+      "supports": "现存秋风楼为清同治九年1870第三次重建；三层，高32.6米，28根悬柱，高台基、砖砌花栏。"
+    },
+    {
+      "source_page": "https://www.ycpeace.gov.cn/a/wenyuan/biaolihedong/20210705/22699.html",
+      "publisher": "运城晚报《访秋风楼》",
+      "supports": "建筑正面照片、三层楼阁、台基与内藏秋风辞碑；文章认为始建无确切记载。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Wanrong_Houtu_Temple",
+      "publisher": "Wikimedia Commons",
+      "supports": "后土祠园区坐标35°20′37″N,110°28′44″E。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "万荣后土祠",
+    "short": "秋风楼",
+    "sub": "秋风楼",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清 · 同治九年重建",
+    "year": 1870,
+    "yearLabel": "1870年重建",
+    "yearApprox": false,
+    "place": "山西万荣 · 荣河镇 · 庙前村",
+    "placeKey": "wanrong",
+    "lat": 35.343611,
+    "lon": 110.478889,
+    "lede": "高台之上，三层楼阁以交叠的山花与飞檐向上舒展。秋风楼因收藏汉武帝《秋风辞》碑而得名，楼身的轻巧与台基的厚重形成鲜明呼应。",
+    "facts": [
+      "<b>清代重建</b>：现楼按清同治九年（1870）重建纪年；楼内汉代诗文、元代碑刻与建筑年代分别记录。",
+      "<b>三层楼阁</b>：高约32.6米，木楼立于高大台基上，各层中央山花与飞檐层叠。",
+      "<b>秋风辞碑</b>：楼内保存《秋风辞》刻石，延续了后土祠与汉代祭祀的历史联系。"
+    ]
+  },
+  "verification": "已检查照片和生成输出：三层木楼、高台基、中层双圆窗、底层木楼拱形入口和台基矩形入口均保留，无遮挡、无文字、无裁切。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line Chinese heritage illustration for 访古.\nImage1 is the STYLE MASTER ONLY: copy its fine, restrained, slightly organic black contour lines and white negative space. Image2 is the SUBJECT PHOTO: the actual QIUFENG TOWER 秋风楼 at HOUTU TEMPLE 后土祠 in WANRONG, Shanxi. Preserve this exact photographed frontal facade, NOT a generic pagoda or Feiyun Tower.\nDraw a centered complete near straight-on front elevation. This is a TALL THREE-STOREY WOODEN PAVILION on a HIGH SQUARE BRICK TERRACE. Three main projecting roof/eave tiers in decreasing widths upward, each with its specific central projecting triangular gable, the largest upper gable rising above the highest eave. Preserve the complex crossed/gabled roof silhouette, upturned eave ends, sparse actual small ridge animals, and the central pinnacle. Keep each facade level's distinct openings and columns: bottom pavilion floor has a small central arch door and an open wrap-around veranda; middle has two round windows beside its central entrance, open timber frames and railing; upper has the rectangular open timber column grid and railing. The square brick terrace is a substantial roughly one-quarter of total height, with its perforated masonry parapet at the top and a centered narrow RECTANGULAR ground entrance with a few shallow steps. Do not turn the ground entrance into an arch. Preserve proportions from the photo; do not add extra stories or erase the unusual three stacked front gables.\nClean white background, portrait1024x1536, complete structure occupies82% height, all roof ornaments and terrace base visible with generous margins. Correct the slight lens tilt, upright verticals. Remove every caption, plaque and letter, watermark, incense burners, tables, modern bins, people, sky, trees, background buildings and courtyard pavement texture. The original architecture only.\nVery fine BLACK contours on PURE WHITE. Mostly white walls, roof planes and door/window voids, never fill the openings black. Use sparse selected bracket structure outlines, only a few roof slope and ridge lines, small clean railing patterns without heavy darkness. No dense tile/brick grids, no grey shading, shadow fill, wash, hatching, crosshatching, pencil grain, colored ink, gradients, decorative frame, labels or invented features. Match the master's delicate sparse line weight and calm clarity.",
+  "generated_file": "assets/generated/qiufeng.png"
+}

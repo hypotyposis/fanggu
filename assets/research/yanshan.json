@@ -1,0 +1,104 @@
+{
+  "id": "yanshan",
+  "subject": "繁峙岩山寺文殊殿（南殿）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Fanshi_Yanshansi_20171005.085004.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Fanshi_Yanshansi_20171005.085004.jpg",
+  "author": "Acot一杯茶",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fanshi_Yanshansi_20171005.085004.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Fanshi_Yanshansi_20171005.085004.jpg",
+      "author": "Acot一杯茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/yanshan-photo.jpg",
+      "note": "拍摄EXIF为2017年10月5日；页摘要Date为2018年3月18日文件修改时间，作者为Acot一杯茶，上传者古海岸遗址不是作者。屋顶正面参照。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yanshan_Temple,_Fanshi,_2020-09-07_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Yanshan_Temple%2C_Fanshi%2C_2020-09-07_01.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/yanshan-secondary-photo.jpg",
+      "note": "2020年9月7日拍摄同一座文殊殿；补正面墙体门窗和台基。"
+    }
+  ],
+  "additional_sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yanshan_Temple,_Fanshi,_2020-09-07_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Yanshan_Temple%2C_Fanshi%2C_2020-09-07_01.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/yanshan-secondary-photo.jpg",
+      "note": "2020年9月7日拍摄同一座文殊殿；补正面墙体门窗和台基。"
+    }
+  ],
+  "source_note": "两张真实正面照片。文殊殿为金代遗构，元延祐二年1315有重建题记，资料解释为重修；寺1158创建、壁画1167完成均不直接等于现存木构的确切建年。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yanshan-photo.jpg",
+    "assets/references/yanshan-secondary-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSubject: ONLY the Manjushri Hall (South Hall) of Yanshan Temple at Tianyan village, Fanshi County, Shanxi (繁峙岩山寺文殊殿/南殿), shown in Images2 and3. Both are real photos of the SAME building; Image2 provides the unobscured central roof outline, Image3 the full frontal wall and step proportions. Preserve the long LOW single hip-and-gable roof, the long plain central ridge with paired small ridge-end beasts, no tall central finial, and the small single-tier spaced brackets below the eaves. The structure is FIVE bays wide, front timber columns enclosed in the solid walls; do NOT draw a freestanding column porch. Facade is a long plain plaster wall with ONE central framed two-leaf plank door and exactly TWO small rectangular straight vertical-bar windows one on either side. Keep broad blank wall fields to the left, right and below windows, and the pair of small polygonal projecting door-head blocks. These are NOT extra windows. Keep the whole shallow stone plinth and a few central steps. Remove trees, tree branches across the right roof, humans, all inscriptions and plaques, extinguishers, wires, side buildings and forecourt paving. Infer only the unobscured matching roof contour where branches cross, without adding structures. All surfaces WHITE, no red walls, no roof grey, door panels WHITE with only outlines. Only a few separated fine roof-direction lines; no continuous grid, no dense decorative hatch or brick texture. Landscape1536x1024, centered corrected frontal composition, facade-level, full roof and plinth, at least7percent white side margins. Match the fine slightly organic and sparse line quality of the Buddha master.",
+  "generated_file": "assets/generated/yanshan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-67cd064d-98d4-48c4-b993-81421861489c.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "岩山寺文殊殿正面 · 据实景照片重绘",
+    "金代遗构，元延祐二年（1315）重修 · 五间单檐歇山顶"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.sxwhzyw.cn/pd566364658.html",
+      "publisher": "山西文化资源网",
+      "supports": "文殊殿金代遗构、元1315题记修葺；五间六椽单檐歇山，四铺作；1167壁画完成。"
+    },
+    {
+      "source_page": "https://whly.hebei.gov.cn/c/2019-06-06/558324.html",
+      "publisher": "河北省文化和旅游厅，2019-06-06",
+      "supports": "岩山寺1158年创建；王逵壁画及佛传故事，宫廷与社会生活。"
+    },
+    {
+      "source_page": "https://www.sxwhzyw.cn/pd531576658.html",
+      "publisher": "山西文化资源网《宋、辽、金木构建筑一览表》",
+      "supports": "岩山寺文殊殿列金代，繁峙县东山乡天岩村。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "岩山寺",
+    "short": "岩山寺",
+    "sub": "繁峙 · 文殊殿",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金代，元代重修",
+    "year": 1167,
+    "yearApprox": true,
+    "yearLabel": "金代遗构 · 元代重修",
+    "year_note": "1167仅为金代阶段的排序锚点，对应殿内壁画完成，证明绘画空间当时存在，不标为木构确切建年；元1315重修有梁架题记。",
+    "place": "山西 · 忻州 · 繁峙",
+    "placeKey": "忻州",
+    "lat": 39.2291,
+    "lon": 113.6534,
+    "coords": [
+      113.6534,
+      39.2291
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Yanshan_Temple_(Fanshi)",
+    "coordinate_note": "Commons地标39°13′44.76″N113°39′12.24″E，非测绘坐标。",
+    "lede": "天岩村的文殊殿在山中收起院落喧声。宽阔素墙与平缓屋檐之内，金代壁画把佛传故事和人间市井留在同一面墙上。",
+    "facts": [
+      "现存文殊殿为金代遗构，梁下留有元延祐二年（1315）重修题记。",
+      "文殊殿面阔五间、进深六椽，单檐歇山顶，斗拱为四铺作。",
+      "殿内金代壁画完成于大定七年（1167），为画师王逵等人的作品。"
+    ]
+  },
+  "verification": "已view_image查看母版、两张同殿正面照片和生成PNG；五间宽体、中央双扇板门、两直棂窗、歇山屋脊、低台阶与封闭墙面对应实景，树与人物已去除。"
+}

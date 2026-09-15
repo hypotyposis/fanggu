@@ -1,0 +1,86 @@
+{
+  "id": "duanliang",
+  "subject": "苏州虎丘云岩寺二山门（断梁殿）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:苏州虎丘断梁殿2019.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%E8%8B%8F%E5%B7%9E%E8%99%8E%E4%B8%98%E6%96%AD%E6%A2%81%E6%AE%BF2019.jpg/1280px-%E8%8B%8F%E5%B7%9E%E8%99%8E%E4%B8%98%E6%96%AD%E6%A2%81%E6%AE%BF2019.jpg",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:苏州虎丘断梁殿2019.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%E8%8B%8F%E5%B7%9E%E8%99%8E%E4%B8%98%E6%96%AD%E6%A2%81%E6%AE%BF2019.jpg/1280px-%E8%8B%8F%E5%B7%9E%E8%99%8E%E4%B8%98%E6%96%AD%E6%A2%81%E6%AE%BF2019.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/duanliang-photo.jpg",
+      "dimensions": [
+        1280,
+        826
+      ],
+      "date": "2019-08-11",
+      "note": "正面实拍；重绘去除树木、人物、书写与铺地纹理。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/duanliang-photo.jpg"
+  ],
+  "source_note": "依据三间二山门正面实拍，保留一个中央圆拱门洞和两圆窗；断梁纪年采用苏州园林局明确的1338，未采用网络另见1344。地图暂用虎丘景区公开近似点。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: Broken Beam Hall / Duanliang Dian, the SECOND gate of Yunyan Temple on Tiger Hill in Suzhou, as in Image 2. A broad low three-bay gate under exactly ONE single-eave hip-and-gable roof with dramatic but authentic sweeping upturned ends. Preserve its central round-headed arch passage, the two small circular windows one on each side, plain plaster wall planes, timber columns and the tall narrow stele-shaped panels. These are not three archways: exactly ONE central opening. The gate spans three structural bays. Keep the horizontal roof ridge decoration as a few thin outlines, remove all legible writing. Render plaque and stele surfaces blank white. Show complete outer eave tips and ground base with at least 120px blank margins on the left/right and enough above/below. Avoid densely drawing roof tiles: no tiled grid and no repeated parallel lines over the roof, only 5-8 short selective tile contours per large roof plane. No shaded dark passage. The opening and recessed planes are white. Prioritize structural silhouette over ornament; approximately the same very sparse ink density as the master.",
+  "generated_file": "assets/generated/duanliang.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-00d471c3-14b2-4243-9345-4aa0e0daac23.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "虎丘二山门 · 断梁殿正面",
+    "元至元四年（1338）重建 · 三间单檐歇山"
+  ],
+  "historical_sources": [
+    {
+      "title": "苏州市园林和绿化管理局：虎丘二山门",
+      "url": "https://ylj.suzhou.gov.cn/szsylj/ylwh/201604/2d16bdab91944770b5c70449f18d26e2.shtml",
+      "supports": "现存二山门于元至元四年1338重建，三开间；脊檩两段相接，俗称断梁殿。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "虎丘二山门",
+    "short": "断梁殿",
+    "sub": "苏州 · 虎丘断梁殿",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元 · 至元四年重建",
+    "year": 1338,
+    "yearLabel": "1338",
+    "yearApprox": false,
+    "place": "江苏 · 苏州 · 虎丘",
+    "province": "江苏",
+    "placeKey": "suzhou",
+    "lat": 31.3379444,
+    "lon": 120.5763056,
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Yunyan_Pagoda",
+    "coordinate_note": "使用虎丘景区内云岩寺塔公开点位作景区级近似定位；二山门在塔南侧，本点不是门体测绘中心。",
+    "lede": "虎丘二山门以一架横展的歇山屋顶覆盖三间门身，中央圆拱与两侧圆窗形成简练的正面。“断梁”之名来自分段对接的脊檩。",
+    "facts": [
+      "据苏州市园林和绿化管理局记载，现存二山门于元至元四年（1338）重建。",
+      "门身面阔三间，单檐歇山；中央圆拱门洞与左右圆窗构成正面开口。",
+      "“断梁”指脊檩以两段圆木相接的构造，并非整殿没有梁，也不是断裂后悬空。"
+    ]
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: Broken Beam Hall / Duanliang Dian, the SECOND gate of Yunyan Temple on Tiger Hill in Suzhou, as in Image 2. A broad low three-bay gate under exactly ONE single-eave hip-and-gable roof with dramatic but authentic sweeping upturned ends. Preserve its central round-headed arch passage, the two small circular windows one on each side, plain plaster wall planes, timber columns and the tall narrow stele-shaped panels. These are not three archways: exactly ONE central opening. The gate spans three structural bays. Keep the horizontal roof ridge decoration as a few thin outlines, remove all legible writing. Render plaque and stele surfaces blank white. Show complete outer eave tips and ground base with at least 120px blank margins on the left/right and enough above/below. Avoid densely drawing roof tiles: no tiled grid and no repeated parallel lines over the roof, only 5-8 short selective tile contours per large roof plane. No shaded dark passage. The opening and recessed planes are white. Prioritize structural silhouette over ornament; approximately the same very sparse ink density as the master.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/duanliang-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-00d471c3-14b2-4243-9345-4aa0e0daac23.png",
+      "accepted": true
+    }
+  ],
+  "verification": "已查看母版、所有输入照片及生成结果；主体完整，屋顶层数与开口对应，黑细线白底。"
+}

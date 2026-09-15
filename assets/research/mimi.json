@@ -1,0 +1,80 @@
+{
+  "generation_tool": "built-in image_gen",
+  "license": "照片未标注开放许可；仅作建筑形制研究参考",
+  "license_url": "",
+  "id": "mimi",
+  "subject": "繁峙秘密寺文殊殿",
+  "source_page": "https://loloto.pixnet.net/blog/post/44597695",
+  "image_url": "https://pic.pimg.tw/loloto/1480691881-579212381_l.jpg",
+  "author": "Boyce／Master旅人時光",
+  "source_note": "以实地游记所摄文殊殿近正面照为立面主体，结合中式营造署名远景核对五间硬山殿、前廊木板画与中央台阶。原页面表示欢迎转载，但未标注标准开放许可。绘制现状建筑，去除前景香炉和碑亭；清代文殊殿归属据故宫博物院公开研究及第六批国保名单，不以寺院早期创建纪年替代。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/mimi-photo.jpg",
+    "assets/references/mimi-front-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "source_page": "https://www.sohu.com/a/895155741_121124715",
+      "image_url": "https://q2.itc.cn/q_70/images03/20250514/b8a9a4956b2743e69367ad1d58b1976e.jpeg",
+      "author": "中式营造（图中署名，搜狐《考察遇建》刊载）",
+      "license": "未标注开放许可",
+      "supports": "文殊殿全貌、台基与五间立面。"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-e52d022e-31de-4054-a602-b4db0fb8a940.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "秘密寺 · 文殊殿正面",
+    "五间硬山 · 清代遗构"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://img.dpm.org.cn/Uploads/file/2025/12/22/1766400347tqOqhQoPl218985.pdf",
+      "publisher": "故宫博物院·李静杰《连子图像的形成与发展》",
+      "supports": "明确记载山西繁峙秘密寺清代文殊殿前廊木板画。"
+    },
+    {
+      "source_page": "https://zjdy.zjdafw.gov.cn/zjzb/ZJZB-2006-25-21.pdf",
+      "publisher": "第六批全国重点文物保护单位名单",
+      "supports": "秘密寺列为清代，2006年公布（6-477）。"
+    },
+    {
+      "source_page": "https://dlbs.liberal.ntu.edu.tw/jp/search/search_detail.jsp?seq=551446",
+      "publisher": "台湾大学佛学数位图书馆·李静杰论文著录",
+      "supports": "《繁峙秘密寺清代壁画反映的五台山信仰》研究资料。"
+    },
+    {
+      "source_page": "https://zh.wikipedia.org/wiki/秘密寺",
+      "publisher": "维基百科",
+      "supports": "地图使用寺区近似坐标39.07833N,113.34083E。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "繁峙秘密寺",
+    "short": "秘密寺",
+    "sub": "文殊殿 · 秘魔岩",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代遗构",
+    "year": 1700,
+    "yearLabel": "清代",
+    "yearApprox": true,
+    "place": "山西繁峙 · 岩头乡 · 秘魔岩",
+    "placeKey": "fanshi",
+    "lat": 39.07833,
+    "lon": 113.34083,
+    "lede": "秘魔岩下，文殊殿以宽阔而朴素的前廊面向山谷。木柱、格扇和檐下画板构成五间立面，清代彩绘保存着这一带的文殊信仰。",
+    "facts": [
+      "<b>五间硬山</b>：图版选取文殊殿，面阔五间，前设木构廊，中央台阶通向高起的殿基。",
+      "<b>清代彩绘</b>：殿前廊木板画与殿内壁画呈现五台山信仰；按现存清代主体归类。",
+      "<b>全国重点文保</b>：秘密寺于2006年列入第六批全国重点文物保护单位。"
+    ]
+  },
+  "verification": "已检查两张实景及生成输出：五间硬山、六组柱轴、中央门与对称格扇、檐下窄木板和中央阶梯一致；删除了挡住建筑的香炉与碑亭。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural image for heritage atlas 访古.\nImage1 is the STYLE MASTER ONLY: match the elegant very thin Vairocana black contours and calm large white spaces. Images2 and3 are actual SUBJECT PHOTOGRAPHS of WENSHU HALL 文殊殿, also historically called PUGUANGMING HALL, at MIMI TEMPLE 秘密寺 / 秘魔寺 in Fanzhi County, Shanxi. Use image3 close front for facade details and image2 wider view for the complete proportions. Not other Wenshu halls or the newly reconstructed grand hall of the temple.\nDraw exactly this modest wide Qing-period FIVE-BAY SINGLE-EAVE FLUSH-GABLE HALL 硬山殿, with a straight broad ridge and modest curled ends, raised brick gable-end walls at the left and right. Keep the exposed simple wooden post-and-beam veranda across the FIVE bays, SIX front column axes (the outer ones meet the gable walls), no ornate projecting dougong system. Show ONE central open doorway, its two slender lattice side panels, and the surrounding symmetrical lattice door/window sets with solid rectangular lower panels. Preserve the two tiers of narrow horizontal painted panel boards under the veranda beam, but suggest with only a few light outlines, not detailed figures and not text. No hanging plaque, inscriptions or calligraphy. The high stone terrace and one CENTERED straight flight of stairs with simple white stone balustrades at the sides are present and must be kept, with matching short terrace parapets at left/right. Terrace occupies about20% total building height; do not exaggerate it into a fortress.\nRemove the large foreground incense burner, standalone roofed stele at right, trees, cliffs, mountains, neighboring temple buildings, people, wires and tourist objects. Main hall only, straight-on facade, upright verticals, roof and base complete. Landscape1536x1024, hall occupies82% width, generous clean white margins. A few short ground strokes.\nRefined sparse BLACK INK ON PURE WHITE, all walls and openings kept WHITE without dark fill. Very thin clean outlines, fine selective structure, large blank roof plane with at most16 widely spaced light slope lines, no dense tile rows or masonry grid. Lattice suggested in a few sparse lines, not a dark mesh. No grey shading, hatch, crosshatch, shadows, wash, pencil grain, solid ink, gradients, color, gold, typography, watermark, borders or invented features. Keep visual density and line delicacy consistent with image1.",
+  "generated_file": "assets/generated/mimi.png"
+}

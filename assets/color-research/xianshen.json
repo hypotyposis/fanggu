@@ -1,0 +1,71 @@
+{
+  "id": "xianshen",
+  "name": "介休祆神楼",
+  "subject": "介休祆神楼过街楼与乐楼组合近正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xianshen.png",
+    "assets/references/xianshen-nlc-000.jpg",
+    "assets/references/xianshen-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 介休祆神楼过街楼与乐楼组合近正面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master's complex Xianshenlou in exact slightly angled view, paired top gables, intersecting multiple eaves, projecting front pavilion, connected rear music hall, long ground posts and short gray side wall. Current photo material palette: weathered timber predominantly faded reddish brown/maroon with deep brown bracket undersides and framing; NOT brightly gilded. Roof tile fields weathered charcoal gray and subdued pale gray-green, edging/ridges jade-green glaze and very limited ochre ridge ornaments, NOT brilliant turquoise entire roofs from unrelated adjacent gate. Triangular gables dark void with faded red hanging center ornaments. Lattice screens dark brown, lower side wall gray brick, bases and steps gray stone. Preserve all roof intersections and the open street passage; no banners/characters, modern chains, lions, tourists, cars or extra gate. The final Foguang input provides brush technique only; do not borrow its roof form or warm palette.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看原稿、国家图书馆调研实拍与2020年10月27日实拍。祆神楼柱枋暗红褐旧木，斗栱深褐；瓦面灰/灰绿、檐边青绿琉璃，脊饰少量黄赭。右侧另一个鲜青色门顶属于邻构，不能染给整座楼。侧墙灰砖、石台灰色；原稿复合楼体与过街空间完整。",
+  "references": [
+    {
+      "file": "assets/references/xianshen-nlc-000.jpg",
+      "source_page": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+      "image_url": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+      "author": "国家图书馆赴介休调研小组",
+      "license": "未明确开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 796,
+        "height": 597
+      },
+      "note": "《文津流觞》第63期文章第1页（印刷页87）图1原嵌入照片，直接由PDF提取。近正面略斜视角为主体布局参考。",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "file": "assets/references/xianshen-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xianshenlou.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Xianshenlou.jpg/1280px-Xianshenlou.jpg",
+      "author": "Wishva de Silva",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": {
+        "width": 1280,
+        "height": 960
+      },
+      "note": "2020-10-27实拍，补充柱列、铺作、重檐和复合楼体转角关系。生成改变视角、移除环境、转为细线插画。",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/xianshen.json",
+  "output": "assets/colored/xianshen.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-ea03c2d4-6e41-4319-8c49-67b2c555318c.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：复合山花、交错重檐、正面突出楼与右侧乐楼保持，灰瓦青绿檐边、褪红木架及灰砖侧墙对应照片。全部檐角和台阶未裁切，未新增相邻鲜青门楼或街道物件。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 介休祆神楼过街楼与乐楼组合近正面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master's complex Xianshenlou in exact slightly angled view, paired top gables, intersecting multiple eaves, projecting front pavilion, connected rear music hall, long ground posts and short gray side wall. Current photo material palette: weathered timber predominantly faded reddish brown/maroon with deep brown bracket undersides and framing; NOT brightly gilded. Roof tile fields weathered charcoal gray and subdued pale gray-green, edging/ridges jade-green glaze and very limited ochre ridge ornaments, NOT brilliant turquoise entire roofs from unrelated adjacent gate. Triangular gables dark void with faded red hanging center ornaments. Lattice screens dark brown, lower side wall gray brick, bases and steps gray stone. Preserve all roof intersections and the open street passage; no banners/characters, modern chains, lions, tourists, cars or extra gate. The final Foguang input provides brush technique only; do not borrow its roof form or warm palette.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/xianshen.png",
+        "assets/references/xianshen-nlc-000.jpg",
+        "assets/references/xianshen-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-ea03c2d4-6e41-4319-8c49-67b2c555318c.png",
+      "output": "assets/colored/xianshen.png"
+    }
+  ]
+}

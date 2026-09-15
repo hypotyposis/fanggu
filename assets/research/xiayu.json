@@ -1,0 +1,30 @@
+{
+  "id": "xiayu",
+  "subject": "夏禹神祠正殿",
+  "sources": [
+    {
+      "source_page": "https://www.sina.cn/news/detail/5279930356076236.html",
+      "image_url": "https://wx2.sinaimg.cn/middle/706b9ed2ly1ibhsnt4rtzj23282aonpe.jpg",
+      "author": "第二次崭新的人生",
+      "license": "原页面未注明开放许可；照片仅作建筑形制参考"
+    },
+    {
+      "source_page": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202506/P020250623318969561645.pdf",
+      "author": "长治日报视觉中心（山西晚报 2025年6月23日）",
+      "license": "原页面未注明开放许可；照片仅作建筑形制参考"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xiayu-photo.jpg",
+    "assets/references/xiayu-paper-photo.png"
+  ],
+  "source_note": "正面照片核对门窗与斗拱，地方报纸正殿照片核对台基与两侧石供桌。因院落狭窄拍摄角度偏低，完整屋面依据同庙全景的悬山轮廓补足；为艺术重绘，不是测绘复原。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for Chinese heritage collection 访古. Image 1 is STYLE ONLY, the Vairocana Buddha contour master. Match its elegant delicate organic thin lines, spare selective internal contours and broad pure-white empty surfaces. Do not draw the Buddha. Images 2 and 3 show the ACTUAL SUBJECT: the main hall 正殿 of Xiayu Shenci 夏禹神祠 in Houbi village, Pingshun, Shanxi. Draw this modest Yuan hall as a calm centered near-frontal elevation. Image 2 controls the facade geometry: THREE bays with central entrance and two flanking vertical-bar windows, TWO freestanding central stone columns and the two outer wall-edge supports, rugged broad carved bracket sets, restrained eave line and roof ornaments. Image 3 controls the full low raised platform, TWO rectangular stone offering tables positioned under the side windows, and central forward-projecting ceremonial dais with side steps. Make entire building visible, drawing the single suspended-gable roof (悬山) as a shallow simple pitched roof above the photographed eave, straight ridge with matching curled dragon ends and small middle finial. Not a palace and not a hip-gable roof. Preserve compact proportions. No adjacent buildings, people, lanterns, signage, calligraphy, wires, tree or sky. No text or watermark. BLACK INK ON PURE WHITE only, no colors. All openings and roof surfaces remain WHITE, outlines only. No dark fills, crosshatching, shadows, grey shading, stippling, texture, tiled grids or dense brickwork. Use a few roof-direction strokes and selective bracket outlines. Landscape 1536x1024; complete hall and plinth about82% canvas width, roof tips and base uncut, generous white margins, verticals vertical, simple short ground line. Keep sparse master-level detail and thin consistent strokes.",
+  "generated_file": "assets/generated/xiayu.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

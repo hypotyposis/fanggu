@@ -1,0 +1,48 @@
+{
+  "id": "sx_zezhou_yuhuang",
+  "name": "泽州玉皇庙",
+  "subject": "府城玉皇庙二十八宿彩塑之虚日鼠",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_zezhou_yuhuang.png",
+    "assets/references/sx_zezhou_yuhuang-xurishu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSPECIFIC SUBJECT: The standing polychrome clay statue of Xu Ri Shu (虚日鼠) among the Twenty-Eight Lunar Mansions at Fucheng / Zezhou Yuhuang Temple. This is exactly the single full standing figure in Image 1, including the small brown-ochre MOUSE resting on the viewer-left bent sleeve at chest height. Preserve the mouse's existing size, position and silhouette, the raised bent-finger hand near the chest, every robe fold, the swept-back hair and completed full hem. No throne, pedestal, halo, extra animal or person. The photo's pale grey-white worn face, neck, hand and pale hair with darker surviving streaks are clay/pigment, not pink living skin. Color the outer robe with the reference's aged muted teal-green sweeps, deep weathered brown patches and dark maroon/rust-red borders. Retain broad grey-white inner sleeves and chest, deep red trim, muted warm brick-ochre red center skirt with its subtle extant geometric textile pattern, and grey-white bow/tassel. Show only restrained small remnants of ochre/gilt where present; never turn this into a gold statue. Keep the existing weathered polychromy legible with matte modest shading and thin contours. Isolated complete figure on perfectly flat near-black background, original portrait 1024x1536 framing and margins. Do not import the photo's white backdrop or cropped hem.",
+  "material_observations": [
+    "面、颈与举手为灰白彩塑表面，头发浅灰并残留暗色；画面左侧袖上小鼠为黄褐色。",
+    "外披青绿与暗红褐色相间，内衣灰白，衣缘深红，前裙赭红带低调几何纹样，系带灰白；按现存脱彩分布设色，不统一施金。",
+    "线稿完整衣摆与褶皱、抬手及袖上小鼠的位置是结构依据，参考照只用于现存彩绘材质。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/sx_zezhou_yuhuang-xurishu-photo.jpg",
+      "source_page": "https://www.jcgov.gov.cn/mljc/lswh/fwzwhyc/202309/t20230913_1853269.shtml",
+      "image_url": "https://www.jcgov.gov.cn/mljc/lswh/fwzwhyc/202309/W020230913363197507131.jpg",
+      "author": "晋城新闻客户端，晋城市人民政府转载；摄影者未单独署名",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "date": "未知",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/sx_zezhou_yuhuang.json",
+  "output": "assets/colored/sx_zezhou_yuhuang.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看生成结果并与线稿、实拍对照：完整单尊站姿、手势、袖上小鼠及衣摆保持，未增加光背或台座。",
+      "灰白面手、青绿外披、暗红衣缘、赭红几何纹裙及白色系带与实拍材质分布相符。",
+      "细线与哑光颗粒表达清楚，近黑背景无文字；整体颜色作插画化转译，非严格像素配准。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T13:41:45.574Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-178b91d6-7a7e-45e3-97e9-c74e559faede.png",
+  "generated_at": "2026-09-15T13:42:54.437Z",
+  "completed_at": "2026-09-15T13:44:22.521Z"
+}

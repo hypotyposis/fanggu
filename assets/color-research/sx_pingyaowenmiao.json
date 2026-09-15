@@ -1,0 +1,45 @@
+{
+  "id": "sx_pingyaowenmiao",
+  "name": "平遥文庙",
+  "subject": "平遥文庙 · 大成殿正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_pingyaowenmiao.png",
+    "assets/references/sx_pingyaowenmiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Dacheng Hall of Pingyao Confucian Temple. First line image controls exact five-bay facade, six front columns, four window groups flanking central black door, low single roof, carved grey stone balustrade across front and two side staircases. Current colors from photo: weathered muted dark vermilion/red-brown wood columns, lattice windows and wall panels; lattice backing softly off-white; roof neutral grey tiles and only small dark-green/ochre glazed chiwen at ridge ends; shaded bracket wood dark brown, frieze with very subdued aged blue-green paint. Stone balustrades, terrace and stairs pale neutral grey with limited aged beige patches. No golden pillars, no ceremonial parasols, ribbons, plaques, inscriptions or crowds. Preserve original side stairs and simplified carved rail panels exactly.",
+  "material_observations": [
+    "平遥文庙大成殿实拍屋顶灰瓦、脊端少量绿黄釉，柱和门窗为暗朱红木构。",
+    "隔扇格心背面浅白，梁枋可见暗绿蓝彩画；月台栏板及两侧梯道为灰石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/sx_pingyaowenmiao-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hall_of_Great_Acomplishement_in_the_Confucious_Temple_of_Pingyao.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Hall_of_Great_Acomplishement_in_the_Confucious_Temple_of_Pingyao.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Gisling",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "date": "未知",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/sx_pingyaowenmiao.json",
+  "output": "assets/colored/sx_pingyaowenmiao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-1be298b6-5588-4ef7-a1c0-01214fab47af.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "五开间六柱、中央门洞、四组隔扇及左右阶梯保留。",
+      "灰瓦、红木构、暗绿蓝梁枋和浅灰石栏区分清楚。",
+      "石栏简化纹饰沿原稿，未加入匾额、幡旗或游人。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T11:11:09.012Z"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "qimuque",
+  "subject": "登封启母阙·西阙南面",
+  "caption": [
+    "启母阙 · 西阙南面",
+    "残存阙顶 · 东汉石刻"
+  ],
+  "generation_tool": "Built-in image_gen.imagegen",
+  "generated_file": "assets/generated/qimuque.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-2b603e94-ffb2-40b6-a7e6-d867b1f593b9.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qimuque-close-photo.jpg",
+    "assets/references/qimuque-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. One heritage collection plate. Image1 is the STYLE MASTER only: match its extremely delicate fine black contours, selective detail and generous white space. Other images are SUBJECT GEOMETRY references. Pure WHITE background, BLACK fine lines only, surfaces stay WHITE. No fills, grey shading, hatching, stone grain, cracks everywhere, solid shadows, color, text, lettering, labels, borders, watermarks. Draw the complete ancient stone monument, its old worn edges and actual surviving roof pieces. Exclude every person, barrier, sign, modern protection building, ceiling, window, tree and background. No reconstruction of lost parts. Keep a few major stone joints and a few faint outline motifs from the carved panels; never densely texture or decorate every panel. All inscriptions omitted. Center isolated monument with verticals vertical, balanced margins, apex and base uncut, about80%height. Portrait1024x1536. Subject: one standing QIMU QUE (also called KAIMU QUE), East Han123CE, Dengfeng. Image2 is a full near-frontal view of the selected surviving stone que. Draw exactly this individual stone body: rectangular broad lower body built of large block courses, a stepped narrower upper portion with missing upper left part, and at top right a single surviving worn protruding stone roof fragment with its curved/slightly upturned profile. Keep the intentionally asymmetric ruined top exactly as photo; DO NOT restore a symmetrical roof and DO NOT add roof parts where lost. Major joints, one row of very faint carved interlaced circles at shoulder level and a few selected animal/figure contour hints near lower carved panels, not texture. Image3 supplements site context only: do not draw otherque or any modern shelter. Frontal elevation, preserve actual batterededges and broad stone footings. Omit colored rope across middle, signs and readable panel inscription.",
+  "initial_prompt": "Use case: style-transfer. One heritage collection plate. Image1 is the STYLE MASTER only: match its extremely delicate fine black contours, selective detail and generous white space. Other images are SUBJECT GEOMETRY references. Pure WHITE background, BLACK fine lines only, surfaces stay WHITE. No fills, grey shading, hatching, stone grain, cracks everywhere, solid shadows, color, text, lettering, labels, borders, watermarks. Draw the complete ancient stone monument, its old worn edges and actual surviving roof pieces. Exclude every person, barrier, sign, modern protection building, ceiling, window, tree and background. No reconstruction of lost parts. Keep a few major stone joints and a few faint outline motifs from the carved panels; never densely texture or decorate every panel. All inscriptions omitted. Center isolated monument with verticals vertical, balanced margins, apex and base uncut, about80%height. Portrait1024x1536. Subject: one standing QIMU QUE (also called KAIMU QUE), East Han123CE, Dengfeng. Image2 is a full near-frontal view of the selected surviving stone que. Draw exactly this individual stone body: rectangular broad lower body built of large block courses, a stepped narrower upper portion with missing upper left part, and at top right a single surviving worn protruding stone roof fragment with its curved/slightly upturned profile. Keep the intentionally asymmetric ruined top exactly as photo; DO NOT restore a symmetrical roof and DO NOT add roof parts where lost. Major joints, one row of very faint carved interlaced circles at shoulder level and a few selected animal/figure contour hints near lower carved panels, not texture. Image3 supplements site context only: do not draw otherque or any modern shelter. Frontal elevation, preserve actual batterededges and broad stone footings. Omit colored rope across middle, signs and readable panel inscription.",
+  "final_edit_reference_files": null,
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250920_Qimu_Que_02.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/20250920_Qimu_Que_02.jpg/500px-20250920_Qimu_Que_02.jpg?download=1",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/qimuque-close-photo.jpg",
+      "description": "2025年9月20日西阙南面，完整近正面；与沙畹1907年西阙南面原图逐块石缝、圈纹和残顶比对一致。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20231119_Qimu_Que.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/20231119_Qimu_Que.jpg/500px-20231119_Qimu_Que.jpg?download=1",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/qimuque-photo.jpg",
+      "description": "2023年11月19日双阙保护房内现状，用于遗址身份与残顶比例辅助核实。"
+    }
+  ],
+  "source_note": "用户别称“后母阙”校正为通行名称启母阙（开母阙）。本图西阙南面，通过沙畹1907年同方向历史影像的圈纹、石缝及右上残顶逐项比对确定。保留左上缺失和右上残檐，未补成完整对称古构。保护房梁柱和绳栏被移除。",
+  "verification": {
+    "reference_images_viewed": true,
+    "generated_image_viewed": true,
+    "uncropped": true,
+    "style": "黑色细线、白色留白、去除现代环境；艺术概括，不作测绘复原"
+  },
+  "site_recommendation": {
+    "name": "启母阙",
+    "short": "启母阙",
+    "sub": "西阙 · 启母庙神道阙",
+    "dyn": "han",
+    "tag": "东汉",
+    "era": "延光二年",
+    "year": 123,
+    "yearLabel": "123年",
+    "yearApprox": false,
+    "place": "河南 · 登封",
+    "placeKey": "dengfeng",
+    "lat": 34.4741694,
+    "lon": 113.0413111,
+    "lede": "启母阙立在嵩山万岁峰下，通向早已不存的启母庙。残顶与不齐的石块保留了时间的痕迹，阙铭则把大禹治水的传说带入汉代人的祭祀世界。",
+    "facts": [
+      "东汉延光二年（123）由颍川太守朱宠建造，为启母庙前神道阙。",
+      "通行名称为启母阙，也称开母阙；用户所写“后母阙”据地名语境校正于此。",
+      "西阙北面保存启母阙铭与请雨铭；本图绘其南面，按现存残顶形态保留缺失。"
+    ],
+    "basis": [
+      {
+        "url": "https://wwj.zhengzhou.gov.cn/country/3174902.jhtml",
+        "supports": "123年、朱宠建、启母庙神道阙及两篇阙铭位置。"
+      },
+      {
+        "url": "https://www.dengfeng.gov.cn/hqwh/5266313.jhtml",
+        "supports": "启母阙形制、画像及历史价值。"
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/启母阙",
+        "supports": "地图近似坐标"
+      }
+    ]
+  },
+  "historical_sources": [
+    {
+      "title": "〖登封〗启母阙",
+      "url": "https://wwj.zhengzhou.gov.cn/country/3174902.jhtml",
+      "publisher": "郑州市文物局",
+      "note": "123年、朱宠建、启母庙神道阙及两篇阙铭位置。"
+    },
+    {
+      "title": "启母阙 汉代艺术家的大胆艺术创造",
+      "url": "https://www.dengfeng.gov.cn/hqwh/5266313.jhtml",
+      "publisher": "登封市人民政府",
+      "note": "启母阙形制、画像及历史价值。"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:20250920_Qimu_Que_02.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/20250920_Qimu_Que_02.jpg/500px-20250920_Qimu_Que_02.jpg?download=1",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_file": "assets/references/qimuque-close-photo.jpg",
+  "description": "2025年9月20日西阙南面，完整近正面；与沙畹1907年西阙南面原图逐块石缝、圈纹和残顶比对一致。",
+  "aliases": [
+    "开母阙"
+  ],
+  "user_aliases": [
+    "后母阙"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "id": "hb_puli",
+  "subject": "普利寺塔 · 方形七层砖塔与高石台基",
+  "caption": [
+    "临城普利寺塔",
+    "方形七层塔身与平坐檐；不绘外围高台全貌"
+  ],
+  "source_page": "https://www.sohu.com/a/412958697_109503",
+  "image_url": "https://p1.itc.cn/images01/20200814/1bab672a9e2a49e1bd8f8f5a2755921c.jpeg",
+  "sources": [
+    {
+      "source_page": "https://www.sohu.com/a/412958697_109503",
+      "image_url": "https://p1.itc.cn/images01/20200814/1bab672a9e2a49e1bd8f8f5a2755921c.jpeg",
+      "author": "路灯摄影",
+      "license": "版权未注明开放许可；仅作实景形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/hb_puli-2-photo.jpg",
+      "reference_dimensions": {
+        "width": 720,
+        "height": 518
+      }
+    },
+    {
+      "source_page": "https://www.sohu.com/a/412958697_109503",
+      "image_url": "https://p0.itc.cn/images01/20200813/e94571dd307843e5aaf49b1f141c14b4.jpeg",
+      "author": "路灯摄影",
+      "license": "版权未注明开放许可；仅作实景形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/hb_puli-6-photo.jpg",
+      "reference_dimensions": {
+        "width": 720,
+        "height": 992
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_puli-2-photo.jpg",
+    "assets/references/hb_puli-6-photo.jpg"
+  ],
+  "ref_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_puli-2-photo.jpg",
+    "assets/references/hb_puli-6-photo.jpg"
+  ],
+  "source_note": "采用原摄影者路灯摄影两张实拍，原文没有开放许可。图版只选择塔身及直接底脚，外围5.83米高石台不在构图中；七层与平坐附加檐分别计数。",
+  "prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  Subject: Puli Temple Pagoda in Lincheng, Hebei, a square-plan Northern Song brick pagoda, not an octagonal pagoda. Exactly reproduce the PHOTO geometry: tall broad lowest storey with a central arch doorway and small Buddha niche panels; distinct heavy projecting brick bracket eaves, an extra intermediate collar/eave band above the lowest storey, a band of larger standing guardian figures above this; then the closely stacked square upper storeys tapering toward a small stacked bead finial. It is officially seven storeys; preserve ALL projecting eave bands visible in the reference, including the extra collar, without inventing or removing a storey. Use photo 2 as the near-frontal silhouette and finial reference; photo 3 as lower doorway and lower body reference. For the grid of many Buddha panels use small very light loose symbolic outlines, never dense black texture; drastically simplify bracket repetition. Keep complete doorway, a low schematic stone plinth and all finial rings, ample white margins. Portrait plate, very slightly side-visible near frontal. No vegetation, parapet in foreground, tourists, barriers or surrounding temple.",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  Subject: Puli Temple Pagoda in Lincheng, Hebei, a square-plan Northern Song brick pagoda, not an octagonal pagoda. Exactly reproduce the PHOTO geometry: tall broad lowest storey with a central arch doorway and small Buddha niche panels; distinct heavy projecting brick bracket eaves, an extra intermediate collar/eave band above the lowest storey, a band of larger standing guardian figures above this; then the closely stacked square upper storeys tapering toward a small stacked bead finial. It is officially seven storeys; preserve ALL projecting eave bands visible in the reference, including the extra collar, without inventing or removing a storey. Use photo 2 as the near-frontal silhouette and finial reference; photo 3 as lower doorway and lower body reference. For the grid of many Buddha panels use small very light loose symbolic outlines, never dense black texture; drastically simplify bracket repetition. Keep complete doorway, a low schematic stone plinth and all finial rings, ample white margins. Portrait plate, very slightly side-visible near frontal. No vegetation, parapet in foreground, tourists, barriers or surrounding temple.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_puli-2-photo.jpg",
+        "assets/references/hb_puli-6-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-b5ba58bf-0a2c-4f56-8bfe-979dc00f4f00.png",
+      "accepted": true
+    }
+  ],
+  "generated_file": "assets/generated/hb_puli.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "历史年代与现存主体依据",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "name": "普利寺塔",
+    "short": "普利寺塔",
+    "sub": "方形七层塔身与平坐檐",
+    "dyn": "song",
+    "tag": "北宋",
+    "era": "北宋 · 1051",
+    "year": 1051,
+    "yearLabel": "北宋 · 1051",
+    "yearApprox": false,
+    "yearNote": "省文物局明确皇祐三年；保留现存七层，不误用其他同名塔。",
+    "province": "河北",
+    "country": "CN",
+    "place": "河北 · 临城",
+    "placeKey": "hb_lincheng",
+    "placeName": "临城",
+    "lat": 37.43778,
+    "lon": 114.50167,
+    "coordinate_source": "维基百科《普利寺塔》37°26′16″N,114°30′06″E，公开塔址近似坐标：https://zh.wikipedia.org/wiki/普利寺塔 。",
+    "lede": "普利寺已不存，方形砖塔仍立在临城的高石台上。底层的千佛雕砖与第二层的立像带，使逐层收分的塔身有了鲜明层次。",
+    "facts": [
+      {
+        "label": "纪年",
+        "text": "河北省文物局定为北宋皇祐三年（1051）；明嘉靖、万历修葺后仍保留宋塔形制。"
+      },
+      {
+        "label": "层制",
+        "text": "塔身七层，二层下另设平坐，三层以上渐近密檐；辨层时不把平坐檐当成独立楼层。"
+      },
+      {
+        "label": "砖雕",
+        "text": "首层墙面嵌方形佛像雕砖，二层设立佛及转角力士；本图简化密集纹饰以保留轮廓。"
+      }
+    ],
+    "types": [
+      "pagoda"
+    ]
+  },
+  "coordinates": {
+    "lat": 37.43778,
+    "lon": 114.50167,
+    "source": "维基百科《普利寺塔》37°26′16″N,114°30′06″E，公开塔址近似坐标：https://zh.wikipedia.org/wiki/普利寺塔 。"
+  },
+  "quality_check": {
+    "viewed_inputs": true,
+    "viewed_output": true,
+    "complete_silhouette": true,
+    "notes": "对照两张实拍核对方形、七层主体及二层下额外平坐檐，完整塔刹与塔身底脚；佛龛以浅线简化。"
+  },
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-b5ba58bf-0a2c-4f56-8bfe-979dc00f4f00.png",
+  "checked_on": "2026-09-15"
+}

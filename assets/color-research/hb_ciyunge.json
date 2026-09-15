@@ -1,0 +1,48 @@
+{
+  "id": "hb_ciyunge",
+  "name": "慈云阁",
+  "subject": "慈云阁 · 现存两层三间楼阁",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_ciyunge.png",
+    "assets/references/hb_ciyunge-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSPECIFIC SUBJECT: Ciyun Pavilion (慈云阁), the existing two-storey three-bay pavilion. Preserve exactly Image 1's oblique front-and-right-side composition, its TWO storeys and TWO grey-tiled roofs, the complete upper hipped pyramidal roof and small finial, tiny corner hanging bells, all brackets, upper long horizontal barred windows, lower lattice doors with transoms, column locations and shallow rectangular stone base. The photo clips the roof apex; do not clip or reconstruct Image 1's complete apex. Use neutral muted grey clay tiles, aged grey-brown and subtly grey-green brackets, faded red/brown timber columns with exposed grey-brown wear, muted red lower plaster walls, reddish-brown timber lattice doors, tan/cream and faded grey-blue/green frieze bands beneath the eaves, dark brown upper window bars and black recesses. The upper wall timber and carved frieze remain faded beige/brown with muted red vertical posts. Translate current material colors under neutral light, without copying the photo's overcast yellow-grey cast or inventing bright freshly painted decoration. Keep wall fields plain as in the line drawing, no text/signs/plaques. Do not add the photo's foreground iron fence, drying clothes, vehicles, cables, neighbors, people or street ground. Complete solitary pavilion on flat near-black #100f0d, preserve the original landscape 1536x1024 framing and margins.",
+  "material_observations": [
+    "现存两层三间楼阁，两层灰瓦屋面，木构及斗栱呈灰褐、暗灰绿，柱与下层墙面为褪色暗红。",
+    "下层木格门为红褐色，上层横向栏窗为褐色木条与暗窗洞，檐下浅米灰带有淡灰蓝绿旧彩。",
+    "线稿斜侧视角、两层檐口、上层完整攒尖顶与宝顶、檐角小铃和浅石台基保持；不复制照片中的铁栏、晾衣、车辆、电线及邻屋。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_ciyunge-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%85%B4%E6%85%88%E4%BA%91%E9%98%81.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E5%AE%9A%E5%85%B4%E6%85%88%E4%BA%91%E9%98%81.jpg",
+      "author": "Redpipe",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2 January 2012, 16:14:48",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/hb_ciyunge.json",
+  "output": "assets/colored/hb_ciyunge.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看生成结果并与线稿、实拍对照：两层两檐、上层三窗、下层四扇格门与三横窗、顶上宝顶及石台基保持。",
+      "灰瓦、褪色红墙柱、褐色格门和米灰带旧彩符合参考；未复制前景铁栏、晾衣、电线或邻屋。",
+      "细轮廓与哑光矿物色感、近黑背景一致，无文字牌匾；材质纹理为插画化表达。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T13:41:45.705Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-7100d646-e44c-4dcf-9806-597a73aeee69.png",
+  "generated_at": "2026-09-15T13:43:47.452Z",
+  "completed_at": "2026-09-15T13:44:22.736Z"
+}

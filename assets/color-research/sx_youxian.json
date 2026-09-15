@@ -1,0 +1,66 @@
+{
+  "id": "sx_youxian",
+  "name": "高平游仙寺",
+  "subject": "高平游仙寺毗卢殿",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/sx_youxian.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/sx_youxian-flickr-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 高平游仙寺毗卢殿.\nOBSERVED MATERIAL COLORS: The 2008 daylight photo shows Pilu Hall: neutral grey clay roof and grey ridge beasts, dark weathered brown brackets and beams with faint deep burgundy remnants under eaves. Door and two lattice windows aged muted grey-brown wood, no fresh red paint. Thick front brick walls light grey with beige worn areas; lower courses darker charcoal brown-grey. Stone terrace and steps warm grey/tan, not red. Overall photo is softly lit; retain clear material separation without a gold filter.\nSPECIFIC GEOMETRY LOCK: Keep three-bay hall with closed central four-panel door, two four-panel lattice windows, upper geometric central transom and thick wall flush with columns. Do not create front veranda, free-standing front columns, extra doors or new brick texture everywhere. Roof remains sparse restrained lines, keep ridge silhouette and central finial. No signs, labels, copied text, adjoining buildings or wires.\nPreserve original aspect ratio 1536:1024.",
+  "material_observations": "The 2008 daylight photo shows Pilu Hall: neutral grey clay roof and grey ridge beasts, dark weathered brown brackets and beams with faint deep burgundy remnants under eaves. Door and two lattice windows aged muted grey-brown wood, no fresh red paint. Thick front brick walls light grey with beige worn areas; lower courses darker charcoal brown-grey. Stone terrace and steps warm grey/tan, not red. Overall photo is softly lit; retain clear material separation without a gold filter.",
+  "references": {
+    "original_record": "assets/research/sx_youxian.json",
+    "selected_photo_files": [
+      "assets/references/sx_youxian-flickr-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "file": "assets/references/sx_youxian-flickr-photo.jpg",
+        "source_page": "https://www.flickr.com/photos/24164990%40N07/4403576088",
+        "image_url": "https://live.staticflickr.com/4016/4403576088_38400131c2_b.jpg",
+        "author": "Vincent H P Liu（Vincent LIU）",
+        "license": "All rights reserved（Flickr license 0）",
+        "license_url": "https://www.flickrhelp.com/hc/en-us/articles/10710266545556-Using-Flickr-images-shared-by-other-members",
+        "dimensions": {
+          "width": 1024,
+          "height": 768
+        },
+        "date": "未知（原记录未明确提供）"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/sx_youxian.json",
+  "output": "assets/colored/sx_youxian.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-68d9e258-b3fa-41f1-9f0e-2aa0f6445242.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 高平游仙寺毗卢殿.\nOBSERVED MATERIAL COLORS: The 2008 daylight photo shows Pilu Hall: neutral grey clay roof and grey ridge beasts, dark weathered brown brackets and beams with faint deep burgundy remnants under eaves. Door and two lattice windows aged muted grey-brown wood, no fresh red paint. Thick front brick walls light grey with beige worn areas; lower courses darker charcoal brown-grey. Stone terrace and steps warm grey/tan, not red. Overall photo is softly lit; retain clear material separation without a gold filter.\nSPECIFIC GEOMETRY LOCK: Keep three-bay hall with closed central four-panel door, two four-panel lattice windows, upper geometric central transom and thick wall flush with columns. Do not create front veranda, free-standing front columns, extra doors or new brick texture everywhere. Roof remains sparse restrained lines, keep ridge silhouette and central finial. No signs, labels, copied text, adjoining buildings or wires.\nPreserve original aspect ratio 1536:1024.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/sx_youxian.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/sx_youxian-flickr-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-68d9e258-b3fa-41f1-9f0e-2aa0f6445242.png",
+      "generated_at": "2026-09-15T11:49:57.914889+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2008毗卢殿实拍、样本和结果；三间一门两窗、贴柱厚墙和中央横披保留，无新增前廊。",
+      "灰瓦、灰砖墙、暗灰褐旧木和局部暗红檐下与现拍对应；平台为灰褐石材。",
+      "纹理与窗格细节较原稿丰富，主体轮廓与开口未变；无标牌文字及邻殿。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

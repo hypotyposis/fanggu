@@ -1,0 +1,114 @@
+{
+  "id": "fenghuangsi",
+  "subject": "杭州凤凰寺元代核心礼拜殿（后窑殿）屋顶群与可见上部",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Mosque_07_2013-11.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Phoenix_Mosque_07_2013-11.JPG",
+  "author": "猫猫的日记本",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Mosque_07_2013-11.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Phoenix_Mosque_07_2013-11.JPG",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/fenghuangsi-core-photo.jpg",
+      "dimensions": [
+        4320,
+        3240
+      ],
+      "date": "2013-11-24",
+      "note": "东北侧天桥拍摄后窑殿（三攒尖顶）近景；主几何参考。重绘删除邻楼、树木和前殿，只保留照片可见的礼拜殿上部。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Phoenix_Mosque_05_2013-11.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Phoenix_Mosque_05_2013-11.JPG",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/fenghuangsi-hall-photo.jpg",
+      "dimensions": [
+        4320,
+        3240
+      ],
+      "date": "2013-11-24",
+      "note": "东北侧天桥远景，核对三顶与前方后加礼堂的位置关系；不把前方平顶建筑混作元殿。重绘删除邻楼、树木和前殿，只保留照片可见的礼拜殿上部。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fenghuangsi-core-photo.jpg",
+    "assets/references/fenghuangsi-hall-photo.jpg"
+  ],
+  "source_note": "照片可见元代核心殿三座相连攒尖顶及其下多边形墙带，殿下半部被后加前殿等遮挡。依主agent确认改作明确标注的屋顶群上部研究图，不虚构门窗、柱列或台基。模型照片仅辅助确认建筑群关系，没有作为生成输入。屋面是现状艺术概括，现存殿曾经明清及近现代多次修理。 形制资料存在角数表述差异：政协旧文概称三座八角顶，文物局旧页的二手转录细分中八旁六；本图以实际三顶轮廓为准，页面事实不强列角数。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: Fenghuang Mosque historical Yuan PRAYER HALL ROOF GROUP (杭州凤凰寺元代礼拜殿 / 后窑殿上部), ONLY the three connected distinctive Chinese pyramidal dome-cover roofs visible clearly in actual photo2. Photo3 is a more distant real view of the same roofs for context. Both are photographs of the actual surviving hall, not models. This illustration is explicitly an ARCHITECTURAL UPPER-STRUCTURE STUDY: do not fabricate the lower facade hidden behind later front buildings. Show the complete identifiable three-roof group and the white polygonal drum/wall bands immediately beneath those roofs, with a few lines of the connecting low skirt roofs where visible. End the study at the lowest connecting eave line; NO invented ground-level doors, windows, columns or foundation. Do not include the later flat-roof front hall, modern street gate, surrounding apartments or nearby wing roofs.\nThere are EXACTLY THREE separate pointed roof peaks and THREE gourd-shaped finials in one left-to-right group. The middle roof is taller and larger, EIGHT-SIDED, with TWO roof/eave levels separated by a plain white polygonal wall band. Each flanking roof is lower and smaller, SIX-SIDED, with exactly ONE principal pointed roof. All three roofs have curved concave slopes and restrained authentic upturned tips. The three volumes are physically CONNECTED at their bottom wall/skirt roof level, not three freestanding pagodas or three isolated pavilions. Do not add a fourth roof peak. Keep the source visible general view, slightly elevated near frontal, but align left and right corresponding peaks symmetrically so the group reads clearly; preserve center-eave overlap over the flanking roof edges.\nUse extremely SPARSE fine black contours on pure WHITE. Keep only the roof external contour, polygonal ridges, gourd finial rings and main eave outlines. Each roof plane stays blank WHITE except at most3short isolated tile suggestions across each complete roof. No every-tile stripes, no roof-grid pattern, no grey roof texture, no dark fill under eaves, no hatching, no lettering or labels. Delete overhead lines, antennas, vegetation and everything surrounding the roof group. The complete group including both widest flanking eave tips must occupy only78percent of the1536x1024canvas width, centered with ample purewhite margin around ALL edges, and generous white space below. An intentional roof-group study with all three finials/eaves fully visible, delicate sparse contour quality matching the Buddha master. Do not draw a false ground line underneath these roof portions.",
+  "generated_file": "assets/generated/fenghuangsi.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-475b8fac-1e4c-467a-980a-c72420f51dd1.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "凤凰寺礼拜殿 · 实景可见屋顶群",
+    "元代核心殿，历代修缮 · 三攒尖顶与上部墙身"
+  ],
+  "historical_sources": [
+    {
+      "title": "杭州政协：伊斯兰圣寺 阿老丁遗风——凤凰寺巡礼",
+      "url": "https://www.hzzx.gov.cn/hzzx/content/2011-06/15/content_5140992.htm",
+      "supports": "现存礼拜殿为元代阿老丁重建遗物，砖券穹顶三间，中央顶重檐；明清及1953、1964、1981等修缮分别记载。"
+    },
+    {
+      "title": "河北省民族事务委员会转载道中华：杭州凤凰寺",
+      "url": "https://mw.hebei.gov.cn/system/2023/12/26/030269986.shtml",
+      "supports": "检索返回正文记1670年碑涉及1281之前旧寺，元代重建及明清、新中国增修；此网页直接打开超时，未据其推断不可见构件。"
+    },
+    {
+      "title": "凤凰寺条目转录浙江省文物局旧页的形制说明",
+      "url": "https://zh.wikipedia.org/wiki/凤凰寺",
+      "supports": "二手转录原浙江文物局旧页：中间重檐八角、两侧单檐六角；旧页存档本次未取回。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "凤凰寺礼拜殿",
+    "short": "凤凰寺",
+    "sub": "杭州 · 元代砖券穹顶殿",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代重建 · 历代修缮",
+    "year": 1281,
+    "yearLabel": "元代重建",
+    "yearApprox": true,
+    "year_note": "1281作现存元代核心礼拜殿的约略排序点；碑文纪年与后续明清、近现代修缮另行注明，不把所有外观构件归为1281原物。",
+    "place": "浙江 · 杭州 · 中山中路",
+    "province": "浙江",
+    "placeKey": "hangzhou",
+    "lat": 30.247778,
+    "lon": 120.165556,
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Phoenix_Mosque",
+    "coordinate_note": "寺院公开对象坐标30°14′52″N、120°09′56″E换算。",
+    "lede": "凤凰寺礼拜殿以砖券和穹顶构成三间内部空间，外覆相连的三座攒尖顶。图版取实拍可见的屋顶群，中央重檐高起，两侧较低，呈现杭州清真古寺的独特轮廓。",
+    "facts": [
+      "现存核心礼拜殿源于元代阿老丁捐资重建，明清及近现代又多次修缮。",
+      "殿内以砖砌拱券连接三个穹顶空间；外覆三座相连攒尖顶，中央较高且作重檐，两侧较低。",
+      "本图只表现实景可核的礼拜殿屋顶与上部墙身，不复原被后加建筑遮挡的下半立面，也不画现代门厅。"
+    ]
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: Fenghuang Mosque historical Yuan PRAYER HALL ROOF GROUP (杭州凤凰寺元代礼拜殿 / 后窑殿上部), ONLY the three connected distinctive Chinese pyramidal dome-cover roofs visible clearly in actual photo2. Photo3 is a more distant real view of the same roofs for context. Both are photographs of the actual surviving hall, not models. This illustration is explicitly an ARCHITECTURAL UPPER-STRUCTURE STUDY: do not fabricate the lower facade hidden behind later front buildings. Show the complete identifiable three-roof group and the white polygonal drum/wall bands immediately beneath those roofs, with a few lines of the connecting low skirt roofs where visible. End the study at the lowest connecting eave line; NO invented ground-level doors, windows, columns or foundation. Do not include the later flat-roof front hall, modern street gate, surrounding apartments or nearby wing roofs.\nThere are EXACTLY THREE separate pointed roof peaks and THREE gourd-shaped finials in one left-to-right group. The middle roof is taller and larger, EIGHT-SIDED, with TWO roof/eave levels separated by a plain white polygonal wall band. Each flanking roof is lower and smaller, SIX-SIDED, with exactly ONE principal pointed roof. All three roofs have curved concave slopes and restrained authentic upturned tips. The three volumes are physically CONNECTED at their bottom wall/skirt roof level, not three freestanding pagodas or three isolated pavilions. Do not add a fourth roof peak. Keep the source visible general view, slightly elevated near frontal, but align left and right corresponding peaks symmetrically so the group reads clearly; preserve center-eave overlap over the flanking roof edges.\nUse extremely SPARSE fine black contours on pure WHITE. Keep only the roof external contour, polygonal ridges, gourd finial rings and main eave outlines. Each roof plane stays blank WHITE except at most3short isolated tile suggestions across each complete roof. No every-tile stripes, no roof-grid pattern, no grey roof texture, no dark fill under eaves, no hatching, no lettering or labels. Delete overhead lines, antennas, vegetation and everything surrounding the roof group. The complete group including both widest flanking eave tips must occupy only78percent of the1536x1024canvas width, centered with ample purewhite margin around ALL edges, and generous white space below. An intentional roof-group study with all three finials/eaves fully visible, delicate sparse contour quality matching the Buddha master. Do not draw a false ground line underneath these roof portions.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/fenghuangsi-core-photo.jpg",
+        "assets/references/fenghuangsi-hall-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-475b8fac-1e4c-467a-980a-c72420f51dd1.png",
+      "accepted": true
+    }
+  ],
+  "verification": "已view_image核验全部两张实际输入照片及生成PNG；三顶完整，中央重檐、两侧较低单主顶，均有葫芦刹，轮廓细线稀疏且无填黑。下缘止于连接檐线，未补造隐藏门窗或现代前殿。",
+  "depiction_scope": "礼拜殿屋顶群与照片可见上部墙带；不包含完整地面层立面"
+}

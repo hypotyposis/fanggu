@@ -1,0 +1,25 @@
+{
+  "id": "liuhe",
+  "subject": "杭州六和塔",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Liuhe_Pagoda.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Liuhe_Pagoda.jpg",
+  "reference_file": "assets/references/liuhe-photo.jpg",
+  "author": "Bob Brooks",
+  "license": "Attribution only",
+  "license_url": "https://commons.wikimedia.org/wiki/File:Liuhe_Pagoda.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/liuhe-photo.jpg",
+    "assets/generated/liuhe-draft.png"
+  ],
+  "source_note": "正面照片可辨十三外檐，底部牌坊和树木移除，线稿补正十三檐。",
+  "prompt": "Use case: precise-object-edit. Image 1 style master; image 2 actual Liuhe Pagoda photograph; image 3 draft to edit. The draft drawing has twelve occupied wall tiers and twelve roof eaves. Please INSERT ONE additional short occupied tier with its own roof eave near the top of the tower (between the second and third roofs from the top), bringing the total to THIRTEEN exterior eaves and thirteen wall tiers. Each visible tier has its own central rectangular window. Do not alter or remove any of the twelve existing tiers. Preserve graceful thin black contour lines on pure white, no filled windows or shading. Retain complete tower including spire and broad porch and steps, keep upright central perspective, with comfortable margins. Roof surfaces white, no labels. Final count thirteen separate roof levels, matching the actual photo.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: Hangzhou Liuhe Pagoda 杭州六和塔, photograph 2. Faithful FRONT ELEVATION of this octagonal wood-and-brick monument. Exterior has EXACTLY THIRTEEN separate upturned roof eaves: stack 13 clearly separated roof bands from the wide first porch roof to the smallest top roof. Alternating tall and short exposed wall bands and continuous balcony railings, strong taper in width, matching photo. Small pyramidal uppermost roof and little jewel finial. Use only thin roof outline and a few panel/railing lines; all panels and roof surfaces white and unshaded. Correct low camera perspective, remove trees, pailou/gateway, people and background. Full tower complete on modest stone plinth with centered entrance, 82% portrait 1024×1536 height. Maintain THIRTEEN clearly countable exterior eaves. Keep inner windows outlined and blank rather than dark. No dense tile pattern or repetitive internal texture.",
+  "generated_file": "assets/generated/liuhe.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "verification": "Final image visually checked for full monument and correct tier count."
+}

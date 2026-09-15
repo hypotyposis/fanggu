@@ -1,0 +1,125 @@
+{
+  "id": "hn_fengxue",
+  "subject": "风穴寺七祖塔 · 西南近正面",
+  "source_page": "https://www.ruzhou.gov.cn/contents/37778/502031.html",
+  "image_url": "https://www.ruzhou.gov.cn/upload/images/2022/7/19c63a5886db36a4ab47fc8e2c840bb7.jpg",
+  "author": "汝州市人民政府网页刊载，单张未署摄影者",
+  "license": "未声明开放许可",
+  "license_url": "",
+  "sources": [
+    {
+      "title": "hn_fengxue-official-photo.jpg",
+      "image_url": "https://www.ruzhou.gov.cn/upload/images/2022/7/19c63a5886db36a4ab47fc8e2c840bb7.jpg",
+      "download_url": "https://www.ruzhou.gov.cn/upload/images/2022/7/19c63a5886db36a4ab47fc8e2c840bb7.jpg",
+      "author": "汝州市人民政府网页刊载，单张未署摄影者",
+      "license": "未声明开放许可",
+      "license_url": "",
+      "reference_file": "assets/references/hn_fengxue-official-photo.jpg",
+      "source_page": "https://www.ruzhou.gov.cn/contents/37778/502031.html",
+      "dimensions": [
+        2448,
+        3264
+      ]
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_fengxue-official-photo.jpg"
+  ],
+  "source_note": "实际官方实拍为略仰视斜正面，转为竖直线条清楚的近正面图；九道主要出檐逐层核对。塔刹相轮单独处理，不计为塔层。去树木及邻殿，不补造亭式台基。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT-SPECIFIC INSTRUCTIONS:\nDraw ONLY Fengxue Temple QIZU PAGODA 七祖塔 in Ruzhou, Tang dynasty 738, as identified in actual reference photo 2. Square-plan NINE-TIER corbelled dense-eaves brick tower. Exactly NINE major projecting eave tiers above the unusually tall lower shaft, plus separate metal finial with stacked small circular rings and a pointed mast. Preserve the authentic tall near-vertical lower shaft, its simple arched entrance and inset rectangular plaque (blank), and tapered stepped upper tower. Show one front face with a narrow adjacent side, straighten verticals but keep enough corner depth to identify square plan. All nine main eave projections individually countable. Simplify each corbelled eave to THREE to FOUR contour lines, rather than drawing each brick course. Blank white masonry, no dense brickwork. Remove all trees, weeds, foreground pavilion, steles, trash bin, modern signs. Do not invent a Chinese timber pavilion base. Plain low tower base only as supported by the actual photo. Portrait1024x1536, generous12percent top bottom margins, entire finial and base in canvas, sparse very fine ink contours.\n",
+  "generated_file": "assets/generated/hn_fengxue.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-13909f94-49e9-493a-814d-570b7a7207ff.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "风穴寺七祖塔 · 西南近正面",
+    "唐开元二十六年（738） · 方形九层密檐砖塔"
+  ],
+  "historical_sources": [
+    {
+      "url": "https://www.ruzhou.gov.cn/contents/37778/502031.html",
+      "title": "汝州市人民政府：风穴寺",
+      "supports": "738年、方形九层密檐、高24.17米及现状照片。"
+    },
+    {
+      "url": "https://www.ruzhou.gov.cn/contents/37795/505349.html",
+      "title": "汝州市人民政府：风穴寺暨塔林",
+      "supports": "七祖塔为唐代九层方形密檐式空心砖塔。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "风穴寺",
+    "short": "风穴寺",
+    "sub": "九重密檐下的盛唐塔影",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐 · 开元二十六年",
+    "year": 738,
+    "yearLabel": "738",
+    "yearApprox": false,
+    "yearNote": "按七祖塔现存唐代主体年代登记，不混宋代悬钟阁和金代中佛殿。",
+    "place": "河南 · 汝州市骑岭乡",
+    "placeName": "汝州",
+    "placeKey": "hn_ruzhou",
+    "lat": 34.22785,
+    "lon": 112.89092,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/风穴寺",
+    "coordinate_note": "风穴寺公开遗产点位，塔位于寺院中心；非塔身测绘坐标。",
+    "lede": "七祖塔居风穴寺中心，为纪念贞禅师而建。高耸的方形下层托起九重密檐，塔刹相轮仍保留清楚轮廓。",
+    "facts": [
+      {
+        "label": "盛唐塔身",
+        "text": "七祖塔建于唐开元二十六年（738），为贞禅师舍利塔。"
+      },
+      {
+        "label": "方形九层",
+        "text": "塔高24.17米，方形空心砖塔，外檐层层收分，轮廓略呈弧线。"
+      },
+      {
+        "label": "时代并存",
+        "text": "寺内另有宋代悬钟阁、金代中佛殿；这张图版专绘唐塔。"
+      }
+    ],
+    "types": [
+      "pagoda"
+    ],
+    "id": "hn_fengxue",
+    "country": "CN",
+    "province": "河南",
+    "caption": [
+      "风穴寺七祖塔 · 西南近正面",
+      "唐开元二十六年（738） · 方形九层密檐砖塔"
+    ]
+  },
+  "coordinates": {
+    "lat": 34.22785,
+    "lng": 112.89092,
+    "source": "https://zh.wikipedia.org/wiki/风穴寺",
+    "note": "风穴寺公开遗产点位，塔位于寺院中心；非塔身测绘坐标。"
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT-SPECIFIC INSTRUCTIONS:\nDraw ONLY Fengxue Temple QIZU PAGODA 七祖塔 in Ruzhou, Tang dynasty 738, as identified in actual reference photo 2. Square-plan NINE-TIER corbelled dense-eaves brick tower. Exactly NINE major projecting eave tiers above the unusually tall lower shaft, plus separate metal finial with stacked small circular rings and a pointed mast. Preserve the authentic tall near-vertical lower shaft, its simple arched entrance and inset rectangular plaque (blank), and tapered stepped upper tower. Show one front face with a narrow adjacent side, straighten verticals but keep enough corner depth to identify square plan. All nine main eave projections individually countable. Simplify each corbelled eave to THREE to FOUR contour lines, rather than drawing each brick course. Blank white masonry, no dense brickwork. Remove all trees, weeds, foreground pavilion, steles, trash bin, modern signs. Do not invent a Chinese timber pavilion base. Plain low tower base only as supported by the actual photo. Portrait1024x1536, generous12percent top bottom margins, entire finial and base in canvas, sparse very fine ink contours.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_fengxue-official-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-13909f94-49e9-493a-814d-570b7a7207ff.png"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体对应实拍",
+      "层数/开间与轮廓核对",
+      "完整留白",
+      "黑线白底，保持母版风格"
+    ]
+  }
+}

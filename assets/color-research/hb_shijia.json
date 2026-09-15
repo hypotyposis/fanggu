@@ -1,0 +1,47 @@
+{
+  "id": "hb_shijia",
+  "name": "释迦寺",
+  "subject": "释迦寺 · 三间单檐歇山大雄宝殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_shijia.png",
+    "assets/references/hb_shijia-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Shijia Temple Mahavira Hall in Yuxian. Preserve exact three-bay broad single hip-and-gable roof, four front columns, central open doorway with original lattice door panels around it, original grid/window groups, two stone lions on lotus pedestals, full terrace and central stone stairway. Photograph shows weathered grey-brown old timber facade with muted worn red-brown remnants, grey main roof/ridge and small ornaments, NOT colored glazed palace roof. Under-eave wood dark grey-brown, lions and bases pale buff-grey stone with simple soft shadow. Ground terrace grey stone, platform dark grey brick. Keep the tiny exposed side wall strips muted red as in photo, not broad bright red wall. No blue plaque, hanging calligraphy strips, printed stone sign, timber accessibility ramp, vegetation or neighboring halls. The original stone steps stay stone.",
+  "material_observations": [
+    "释迦寺大雄殿屋顶与小脊兽灰色，正面门窗柱为风化灰褐旧木并残留暗红。",
+    "两只石狮及莲座为浅灰米色石材，月台和台阶灰石，台基深灰砖；侧墙只有少量暗红。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_shijia-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%87%8A%E8%BF%A6%E5%AF%BA%E4%B8%AD%E6%AE%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/%E9%87%8A%E8%BF%A6%E5%AF%BA%E4%B8%AD%E6%AE%BF.jpg",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "1 August 2024, 17:10:01",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/hb_shijia.json",
+  "output": "assets/colored/hb_shijia.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "三间四柱、中央开门、左右门窗组和两只莲座石狮对应原稿，保留石台阶。",
+      "灰褐木构及残红、灰瓦、浅灰石狮、深灰砖基与照片分区相符。",
+      "完整留边，无蓝牌、条幅文字、无障碍木坡道或周边树木。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T13:16:25.222Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-54e1f078-1011-46e7-bf35-4bd5ce669e8f.png",
+  "generated_at": "2026-09-15T13:19:50.061Z",
+  "completed_at": "2026-09-15T13:21:59.083Z"
+}

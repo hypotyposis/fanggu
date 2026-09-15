@@ -1,0 +1,59 @@
+{
+  "id": "hn_zhongyue",
+  "name": "嵩山中岳庙",
+  "subject": "嵩山中岳庙 · 峻极殿中央立面局部",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_zhongyue.png",
+    "assets/color-references/hn_zhongyue-guan.jpg",
+    "assets/references/hn_zhongyue4-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 嵩山中岳庙 · 峻极殿中央立面局部.\nSPECIFIC MATERIAL MAP AND INVARIANTS: FIRST master is a FIVE-CENTRAL-BAY DETAIL of larger Junji hall, not whole nine-bay building. Preserve its two partial roof bands, SIX front posts, cropped sides that fade into background, five blank low horizontal plaque shapes and one upper vertical plaque, centered staircase and blank central stone ramp. Photo 2 non-snow photograph shows actual yellow-orange ochre glazed tiles and red facade; Photo 3 snow-covered 2026 front photo is ONLY for visible UNSNOWED facade pigment, never snow as material. Roof planes MUST be aged muted yellow-orange ochre throughout with restrained gray weathering, NO snow, white roof, frost or winter. Posts, doors and lower wall deep muted vermilion/red; fine pale ochre panel edges. Upper carved beam and bracket bands weathered blue, jade-green, maroon red with pale cream and ochre details, muted saturation. Plaques alternate deep blue/maroon/near-black fields with narrow muted ochre frames and absolutely NO WORDS. Upper plaque dark teal-blue framed ochre. Stone railings and stair ramp medium pale gray, plinth gray stone. Keep original partial left/right edges; no adding full wing bays, roof tips absent from master, trees, incense burner, snow, people, gate or shrine.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看原稿、2026-01-20积雪正面照、guan 2008-06-07无雪斜侧照以及其他候选照片。2026屋面覆雪被排除为瓦色依据；无雪同殿照可见黄橙琉璃檐瓦、红柱红门与灰石台栏，政府同殿说明亦记黄琉璃瓦。2026未覆雪的枋彩可辨蓝青绿红及浅金赭细饰，匾底蓝、暗红、黑。所绘五间中央局部，使用旧照仅辅助确认未变的材料类别，不宣称2026逐瓦状态或色彩校准。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260120_Zhongyue_Temple_12.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/20260120_Zhongyue_Temple_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2026-01-20",
+      "use": "仅未覆雪立面彩画参考，雪覆盖屋面不作瓦色依据"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%B2%B3%E5%A4%A7%E6%AE%BF_-_panoramio_-_guan.jpg",
+      "author": "guan",
+      "date": "2008-06-07",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/color-references/hn_zhongyue-guan.jpg",
+      "use": "无雪同殿照，黄橙琉璃檐瓦、红木门柱和灰石台栏；黄昏阴影不作整体色温"
+    },
+    {
+      "source_page": "https://www.dengfeng.gov.cn/rsdwh/5257749.jhtml",
+      "author": "郑州晚报／登封市政府",
+      "date": "2023-09-07 (publication)",
+      "use": "文字佐证同殿覆黄琉璃瓦"
+    }
+  ],
+  "output": "assets/colored/hn_zhongyue.png",
+  "prepared_at": "2026-09-15T19:59:04.132802+08:00",
+  "original_research": "assets/research/hn_zhongyue.json",
+  "visual_review": "已实看输出并对照先前实看的线稿、覆雪立面照、无雪同殿材料照和风格样图：保留中央五间六柱、两带屋顶的裁取片段与两侧淡出，台基栏杆及中央阶梯关系正确。黄橙瓦、朱红木作、青蓝绿彩画及灰白石栏分材质设色；无雪、树、人、文字。中央御路增加了浅雕纹样细化，照片有同类雕饰，未改变坡道轮廓。无雪照片为2008年斜角证据，未据此宣称逐瓦现状或精确色校准。",
+  "excluded_references": [
+    "hn_zhongyue-daylight.jpg与既有院内侧视照重复，屋顶主体不可见",
+    "hn_zhongyue-15299.jpg为室内神像",
+    "hn_zhongyue-20250601-06.jpg为鹿",
+    "hn_zhongyue-20250601-07.jpg为树与别处小殿",
+    "hn_zhongyue-20250601-08.jpg为单檐殿，非所画重檐峻极殿"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-f05807b3-59a5-4a3d-8944-6906c2bdc43c.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-f05807b3-59a5-4a3d-8944-6906c2bdc43c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:02:13.841559+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T20:05:14.752165+08:00"
+}

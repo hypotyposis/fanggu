@@ -1,0 +1,72 @@
+{
+  "id": "longxingchuang",
+  "subject": "杭州龙兴寺经幢 · 唐代幢身局部",
+  "caption": [
+    "龙兴寺经幢 · 幢身局部",
+    "唐开成二年 · 837年"
+  ],
+  "source_note": "选取2026年透过保护罩拍摄的唐代八角幢身局部，保留裂缝与残损承托石轮廓；删除玻璃反光、树木与保护亭，不重构照片未完整显露的上部与台基。图版明确为局部。上部构件的清修史另记。",
+  "sources": [
+    {
+      "file": "assets/references/longxing-detail-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260803_Stone_Pillar_of_Longxing_Temple_03.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/20260803_Stone_Pillar_of_Longxing_Temple_03.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "file": "assets/references/longxing-detail2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260803_Stone_Pillar_of_Longxing_Temple_04.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/20260803_Stone_Pillar_of_Longxing_Temple_04.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "龙兴寺经幢",
+      "publisher": "杭州文保中心",
+      "url": "https://wbdl.hzwbzx.cn/house?id=45"
+    }
+  ],
+  "prompt": "Use case: style-transfer. One illustration of the ORIGINAL TANG STONE SHAFT DETAIL of 杭州龙兴寺经幢. This plate is deliberately a DETAIL STUDY, not a fabricated complete monument. Image1 is ONLY the very sparse thin-line style master. Image2 is the actual surviving stone pillar closeup; image3 shows its shaft continuation. Draw the tall octagonal weathered shaft and its directly attached worn flared lotus-shaped supporting stone at the top, following exactly the visible large contours. Show about the same section as image2, but omit the disconnected cropped carving at the very top of that photo: begin with the low worn attached supporting stone immediately above the main inscribed shaft. Main shaft has faceted sides and a few unmistakable long fracture/repair seams; reproduce these main crack shapes as thin lines. Do NOT transcribe the sutra text, no fake writing, merely very few worn short vertical traces, predominantly pure white shaft planes. The lower end of the shaft should subtly break off/fade at the bottom of the study, no invented base or pedestal. No complete upper tower, no invented finial or stacked caps, no protective pavilion or glass box. Remove reflections, foliage, tourists, text signs, courtyard, casing. BLACK INK fine delicate organic contours on PURE WHITE only, no shadow, no grey planes, no hatching or stone texture. Full selected fragment kept within ample white margin, elegant archaeological detail plate, portrait1024x1536. No text, dimensions, border or watermark.",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/longxing-detail-photo.jpg",
+    "assets/references/longxing-detail2-photo.jpg"
+  ],
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-c3359e48-03ce-48e0-96ce-0ab771fe4219.png",
+  "generated_file": "assets/generated/longxingchuang.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "site_recommendation": {
+    "name": "杭州龙兴寺经幢",
+    "short": "龙兴寺经幢",
+    "sub": "唐代石幢 · 幢身局部",
+    "types": [
+      "pillar"
+    ],
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "开成二年 · 上部清修",
+    "year": 837,
+    "yearLabel": "837年",
+    "place": "浙江杭州 · 延安路",
+    "province": "浙江",
+    "placeKey": "hangzhou",
+    "lat": 30.266667,
+    "lon": 120.158333,
+    "latlon_source": "https://commons.wikimedia.org/wiki/Category:The_Sutra_Pillar_of_Longxing_Temple_in_Hangzhou",
+    "lede": "繁华街边，一根八角石幢仍承载着唐人的刻经。裂缝穿过幢面，字迹与补缝相互交叠，让千余年的保存与修护都留在同一块石头上。",
+    "facts": [
+      "<b>唐代纪年</b>经幢立于开成二年（837），幢上另见大中五年（851）题记，原有两座，现存一座。",
+      "<b>后世修补</b>幢身、基座等保有唐代构件，上部为清代修补；现存整体不能笼统视为837年原貌。",
+      "<b>局部图版</b>选取八角幢身与承托石，表现所见裂缝与残损；经文以稀疏笔痕概括，不作可读释文。"
+    ]
+  }
+}

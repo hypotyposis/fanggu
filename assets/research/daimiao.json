@@ -1,0 +1,102 @@
+{
+  "id": "daimiao",
+  "subject": "泰安岱庙天贶殿",
+  "source_page": "https://commons.wikimedia.org/wiki/File:天贶殿_-_Tiankuang_Hall_-_2012.06_-_panoramio.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/%E5%A4%A9%E8%B4%B6%E6%AE%BF_-_Tiankuang_Hall_-_2012.06_-_panoramio.jpg",
+  "author": "rheins",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:天贶殿_-_Tiankuang_Hall_-_2012.06_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/%E5%A4%A9%E8%B4%B6%E6%AE%BF_-_Tiankuang_Hall_-_2012.06_-_panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/references/daimiao-geometry-photo.jpg",
+      "note": "2012年6月27日真实完整正面；上层庑殿和下层檐轮廓完整，前面两角亭应去除。来源原Panoramio，Commons2017核验许可。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:50151-%E5%B2%B1%E5%BA%99%E5%AE%8B%E5%A4%A9%E8%B4%B6%E6%AE%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/50151-%E5%B2%B1%E5%BA%99%E5%AE%8B%E5%A4%A9%E8%B4%B6%E6%AE%BF.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "reference_file": "assets/references/daimiao-secondary-photo.jpg",
+      "note": "2018年11月3日正面中央细节，补梁枋、门窗和柱列；两侧裁切，不用于整体轮廓。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/daimiao-geometry-photo.jpg"
+  ],
+  "source_note": "以2012年完整正面实照为几何输入，近照辅助核对细部；去除前景小亭、香炉、游人和灯笼。现存木构按泰安市博物馆研究归于清式，并以康熙碑所记1677年重修告成作清代形制的约略时间定位，不认定全部现存构件同时完成。",
+  "prompt": "Use case: style-transfer. Asset type: a single architectural line-art plate for the Chinese heritage collection 访古. Image 1 is STYLE ONLY: match the delicate fine black outlines, organic confidence and generous empty white areas of the Vairocana drawing. Image 2 is SUBJECT GEOMETRY ONLY: the complete front of Tian Kuang Hall (天贶殿), Dai Temple in Tai'an, Shandong, NOT Dacheng Hall at Qufu and NOT the Forbidden City. Preserve this very wide, low nine-bay facade with ten plain round front columns, two broad hipped roof eaves, low upper wall between eaves, gently rising roof corners, central vertical plaque shape, lattice doors, platform and steps. The ridge ends and roof shapes must follow the actual photograph. Show the main hall only; remove the two foreground side pavilions, large central incense burner, tourists, lanterns, signage, modern barriers, sky and all writing. Do not add sculpted dragon columns (this hall has plain round columns). Do not invent an extra storey or third roof. Draw an upright near-orthographic frontal elevation, complete ridge ornaments, side eaves and base inside the canvas. Landscape 1536x1024; architecture about 85% of width with clear white margins. Use very thin black contour lines on pure white. All surfaces, doors and roof planes remain white; a few finer lines suggest brackets, lattice and roof structure without rendering every tile. No black fill, no gray shading, no hatching, no color, no texture, no shadows, no labels or captions or frame or watermark. Sparse line density consistent with the style reference; fine outlines will later be tinted to the website's Ming-Qing blue palette and white made transparent.",
+  "caption": [
+    "岱庙天贶殿正面 · 九间重檐庑殿",
+    "宋代创建 · 现存清代重修形制"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://taian.iqilu.com/taiangushi/2023/1026/5535978.shtml",
+      "publisher": "泰安市博物馆赵祥明，泰安日报2023-10-26，齐鲁网转载",
+      "supports": "现存木构尺度规格与构件符合清工程做法；九间五进布局与部分斗栱保留宋法特征；重檐庑殿；壁画清初重绘。web.open超时但curl已成功全文保存在/tmp/daimiao-museum.html并读取。"
+    },
+    {
+      "source_page": "https://tsgw.taian.gov.cn/art/2021/6/13/art_198322_10286362.html",
+      "publisher": "泰山风景名胜区管理委员会",
+      "supports": "1009年宋代扩建，1547火灾后清代修缮；九间五进重檐庑殿，殿为泰山神宫殿。"
+    },
+    {
+      "source_page": "https://tsgw.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=248db37ea92346319cec2030c05645d6.pdf",
+      "publisher": "山东农业大学专业硕士论文，泰山管委会存档",
+      "supports": "论文第41页从梁架斗拱形制推测清乾隆重建。只作为清代形制的补充，不将推测确切化。"
+    },
+    {
+      "source_page": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2030.html",
+      "publisher": "泰山风景名胜区管理委员会",
+      "title": "清康熙“重修东岳庙记”碑",
+      "supports": "碑阳记康熙丁巳年（1677）五月告成；碑阴详记拆修大殿、保留可用梁柱、更换檩枋及椽板琉璃构件，壁面重新绘制。1678为立碑年。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "岱庙",
+    "short": "岱庙",
+    "sub": "泰安 · 天贶殿",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代重修",
+    "year": 1677,
+    "yearApprox": true,
+    "yearLabel": "清代重修",
+    "year_note": "1677为碑记所载康熙朝岱庙重修告成年，作为现存清式形制的约略排序依据；以后仍经修缮，不将全体现存构件定为同年。",
+    "place": "山东 · 泰安",
+    "placeKey": "泰安",
+    "lat": 36.195,
+    "lon": 117.125,
+    "coords": [
+      117.125,
+      36.195
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Dai_Temple",
+    "coordinate_note": "Commons岱庙地标36°11′42″N117°07′30″E，非殿堂测绘。",
+    "lede": "泰山脚下，天贶殿以两重宽檐展开祭岳礼制的尺度。从宋代创建到清代重修，梁架、门窗与壁画叠合着不同年代的记忆。",
+    "facts": [
+      "天贶殿是岱庙主殿，供奉泰山神，宋代创建后历经修葺。",
+      "大殿面阔九间、进深五间，重檐庑殿顶，上覆黄琉璃瓦。",
+      "现存木构架的尺度与构件做法体现清代特征，殿内壁画清初重绘。",
+      "康熙碑记载1677年重修告成，大殿保留可用梁柱并更换损坏构件；年表据此作约略定位，后世修缮另计。"
+    ]
+  },
+  "supporting_reference_files": [
+    "assets/references/daimiao-secondary-photo.jpg"
+  ],
+  "generated_file": "assets/generated/daimiao.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-af8fa012-2d5e-4f9d-ad23-a612a32bcdfc.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "verification": "已查看实照与生成：九间十柱、两重庑殿宽檐、素圆柱与台基完整；无前景小亭、香炉、游人、灯笼及文字，黑线白底，整体横阔比例保留。"
+}

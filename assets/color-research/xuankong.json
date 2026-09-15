@@ -1,0 +1,75 @@
+{
+  "id": "xuankong",
+  "name": "浑源悬空寺",
+  "subject": "浑源悬空寺现存明清崖壁建筑群",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xuankong.png",
+    "assets/references/xuankong-photo.jpg",
+    "assets/references/xuankong-wide-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 浑源悬空寺现存明清崖壁建筑群.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master's exact Hanging Temple layout: left low walled court and small pavilions, middle three-story south tower, rising connector bridge on very long slender posts, right higher three-story north tower, plus only existing sparse cliff lines. Buildings' timber posts, balustrades and doors aged muted deep red-maroon/brown, long thin supports weathered dark brown. Roofs differ as photographed: the central tower and front small pavilion caps have muted ochre-yellow tiles with green edges, left low long corridor and some rear pavilions gray/green tiles; right tower eaves mostly gray-green with narrow ochre edging. No blanket gold across all roofs. Wall infill dusky red, stone masonry podium pale gray-buff mixed blocks, cliff muted neutral taupe/gray-brown stone. Tint only rock areas defined in original with extremely light/sparse flat pigment; do NOT fill entire dark background with a huge photoreal cliff, preserve generous near-black breathing room around the composition and original line bounds. No trees, people, inscriptions, sky, giant shadows or expanded mountain.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看原线稿及2025年两张日间实拍。现建筑暗红褐木构与栏杆，细长支柱深褐；不同屋面有黄瓦绿边或灰绿瓦，不能全染黄。左台墙灰黄石块，上方墙体暗红；崖壁灰褐浅赭。保留原稿少量岩层和两飞楼高差，不把背景扩成完整照片山景。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250604_Xuankong_Si_(110136).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/20250604_Xuankong_Si_%28110136%29.jpg/1280px-20250604_Xuankong_Si_%28110136%29.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xuankong-photo.jpg",
+      "dimensions": {
+        "width": 1280,
+        "height": 960
+      },
+      "date": "2025-06-04",
+      "role": "完整建筑组合、山崖位置关系与高差",
+      "file": "assets/references/xuankong-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hanging_Temple_03.2025.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Hanging_Temple_03.2025.jpg/1280px-Hanging_Temple_03.2025.jpg",
+      "author": "Dudva",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/xuankong-wide-photo.jpg",
+      "dimensions": {
+        "width": 1280,
+        "height": 960
+      },
+      "date": "2025-03-23",
+      "role": "近正面楼阁、步道、支撑柱细节",
+      "file": "assets/references/xuankong-wide-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/xuankong.json",
+  "output": "assets/colored/xuankong.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c5b98b25-d303-4edd-8d5d-088a23e16499.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：左院、中南楼、右北楼及高架栈道的高差和长支柱对应原稿，红褐木架与黄绿/灰绿瓦区别可辨。崖壁设色较初始稀疏线条更实，但保持灰褐材料、独立收边和周围暗底；无扩成照片山景，无游客和字刻。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 浑源悬空寺现存明清崖壁建筑群.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master's exact Hanging Temple layout: left low walled court and small pavilions, middle three-story south tower, rising connector bridge on very long slender posts, right higher three-story north tower, plus only existing sparse cliff lines. Buildings' timber posts, balustrades and doors aged muted deep red-maroon/brown, long thin supports weathered dark brown. Roofs differ as photographed: the central tower and front small pavilion caps have muted ochre-yellow tiles with green edges, left low long corridor and some rear pavilions gray/green tiles; right tower eaves mostly gray-green with narrow ochre edging. No blanket gold across all roofs. Wall infill dusky red, stone masonry podium pale gray-buff mixed blocks, cliff muted neutral taupe/gray-brown stone. Tint only rock areas defined in original with extremely light/sparse flat pigment; do NOT fill entire dark background with a huge photoreal cliff, preserve generous near-black breathing room around the composition and original line bounds. No trees, people, inscriptions, sky, giant shadows or expanded mountain.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/xuankong.png",
+        "assets/references/xuankong-photo.jpg",
+        "assets/references/xuankong-wide-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c5b98b25-d303-4edd-8d5d-088a23e16499.png",
+      "output": "assets/colored/xuankong.png"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "chongming",
+  "subject": "高平崇明寺中佛殿",
+  "sources": [
+    {
+      "source_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291192.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128424036361396.jpg",
+      "author": "文旅高平（发布；摄影者未单独注明）",
+      "license": "未标明开放许可；仅作建筑形制参考"
+    },
+    {
+      "source_page": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291192.shtml",
+      "image_url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/W020251128424036766124.jpg",
+      "author": "文旅高平（发布；摄影者未单独注明）",
+      "license": "未标明开放许可；仅作建筑形制参考"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/chongming-photo.jpg",
+    "assets/references/chongming-side-photo.jpg"
+  ],
+  "source_note": "官方文旅图片核对三间中佛殿，避开五间后殿。正面图核门窗、外檐细柱与屋面，侧面核巨大铺作层及深出檐；重绘去除石碑、灯笼和邻殿。",
+  "caption": [
+    "中佛殿线稿 · 面阔三间",
+    "七铺作 · 单檐歇山 · 北宋"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is STYLE ONLY, the Vairocana Buddha contour master. Match the master's elegant delicate slightly organic thin black strokes, sparse detail and broad empty white surfaces. Image 2 is SUBJECT GEOMETRY: the actual Central Buddha Hall 中佛殿 at Chongming Temple 崇明寺, Guojiazhuang village, Gaoping, Shanxi. Image 3 is its side view to confirm the deep eaves and large bracket stacks. Draw ONLY this small Northern Song hall from image2, exactly THREE bays with a plain central double doorway between TWO rectangular vertical-bar windows, squat largely solid wall body, broad HUGE overhanging shallow hipped-gable roof (歇山) on massive tall layered dougong bracket sets. Preserve the distinction between the short wall-embedded main columns and the TWO very thin later eave support posts at the far left and far right outside the wall; do not invent an open central colonnade or extra doors. Retain the broad bracket-layer silhouette, very low flat roof pitch, raised ridge beasts at either end and small central ridge finial. Keep roof broad and sweeping as photo, not steep and not a palace. A simple low stone terrace with a modest central short stair. Remove ALL foreground stone steles including the large square one at the right and the little one beside the entrance; don't mistake them for columns. Remove side buildings, lanterns, couplets, plaques, people, debris, foliage, wires, paving texture and sky. Straighten low wide-angle perspective into a calm near-frontal elevation, verticals vertical. BLACK INK ON PURE WHITE. Fine outline-only contours, sparing internal structural lines. All walls, roof, windows and eave undersides remain WHITE, no filled shadows, no grey shading, crosshatching, dense brick grid or texture. Only a few spaced roof-direction strokes, selected simple curls for carved ornament. No calligraphy, letters, measurements, labels, arrows, watermark, frame or borders. Landscape1536x1024, complete building with roof corners and plinth fully within 82% canvas width and generous margins. It should look drawn by the same hand as the Buddha master, retaining actual architectural identity.",
+  "generated_file": "assets/generated/chongming.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "historical_sources": [
+    {
+      "title": "高平国保系列——崇明寺",
+      "url": "https://sxgp.gov.cn/zjgp/fjms_425/202511/t20251128_2291192.shtml",
+      "publisher": "文旅高平／高平市人民政府",
+      "evidence": "中佛殿开宝四年（971），三间六椽、歇山、双杪双下昂七铺作；殿内无内柱，双栿系统有断梁。"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "chongsheng",
+  "subject": "大理崇圣寺三塔：千寻塔、南塔、北塔",
+  "caption": [
+    "崇圣寺三塔 · 东向组合视图",
+    "千寻塔十六层，南北小塔各十层"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Three_Pagodas_Front_View.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Three_Pagodas_Front_View.jpg",
+      "author": "Tdxiang",
+      "date": "2007-04-21（首次上传）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/chongsheng-front-photo.jpg",
+      "role": "千寻塔东面和三塔方位关系，远景小塔下部受树遮挡"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Left_leaning_Pagoda.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Left_leaning_Pagoda.JPG",
+      "author": "Tdxiang",
+      "date": "2007-04-21（首次上传）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/chongsheng-side-photo.jpg",
+      "role": "南侧小塔全高十层近照、八角轮廓和塔基"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+      "author": "wanghongliu",
+      "date": "2002-05-16",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/chongsheng-north-photo.jpg",
+      "role": "明确标注北塔的实景，核对独立北塔轮廓，基部部分受树遮挡"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/chongsheng-front-photo.jpg",
+    "assets/references/chongsheng-side-photo.jpg",
+    "assets/references/chongsheng-north-photo.jpg"
+  ],
+  "source_note": "已逐张view_image核对真实三塔参考。用千寻塔东面正照确定中央方塔和两小塔相对位置；南塔全高近照核对十层、八角轮廓和塔基；北塔独立实照核对其存在与轮廓。整合为去植被的近正面组合图，不表现摄影的树木遮挡和透视缩短。三塔全部保留，不是三张同形塔复制。原稿小塔误为八层，内置imagegen定向改为十层，再调整相对大小。未使用另存的1995候选或CEphoto远景作为生成输入。AI线描转绘。",
+  "prompt": "Use case: precise-object-edit. Image 1 is the approved three-pagoda black fine-line drawing. Image 2 is the line-style master. Images 3, 4 and 5 are the original actual tower photographs.\nChange ONLY the overall scale of the TWO SMALL SIDE TOWERS. The layer counts are now CORRECT: CENTRAL SIXTEEN, LEFT TEN, RIGHT TEN. Preserve ALL those layers and every other structure.\nUniformly shrink each complete side tower (finial + ten-storey body + plinth together) to 87 percent of its current size, keeping the bottom center of its base anchored at its current place. The central tower must remain completely unchanged. This should move the side towers' finial tips down from around y=320 to around y=405 in this 1536×1024 canvas; their bases remain at about y=955. This makes the small towers close to the real 42.19m / 69.13m = 61% height relationship. Keep both ten-storey stacks: do NOT remove any of the ten cornices, simply scale the whole small towers, making each slightly narrower and shorter. Keep left and right tower center positions unchanged.\nEverything else stays unchanged: exactly three complete towers, central square sixteen-level tower, each side octagonal ten-level tower, pure white ground/background, delicate thin black lines, no shading/solid fills, no text or frames. Landscape1536×1024.",
+  "initial_prompt": "Use case: style-transfer. Asset type: ONE coordinated fine-line architectural plate for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER: the Vairocana Buddha contour drawing. Match its delicate slightly organic thin ink lines, sparse internal detail and generous white spaces. Image 2 is SUBJECT GEOMETRY and east-facing group arrangement: actual Chongsheng Temple Three Pagodas 崇圣寺三塔, Dali, with the square Qianxun Pagoda centered. Image 3 is a full-height close photograph of the SOUTH small octagonal pagoda, seen on the left of the east-facing group. Image 4 verifies the actual NORTH small octagonal pagoda, seen on the right of the east-facing group. Photos determine architecture, never the Buddha silhouette.\nDraw exactly THREE complete separate historic pagodas, all visible in one balanced landscape composition: tall square QIANXUN tower in center, shorter octagonal SOUTH tower at left, shorter octagonal NORTH tower at right. Leave clear white gaps between towers; align their base region with small depth offset, center tower slightly in front. Respect height ratio: central tower 69.13m, both small towers 42.19m, so each small tower roughly 61% of central full height. Do not make three identical towers.\nCOUNT CAREFULLY: the central square dense-eaved brick tower has EXACTLY SIXTEEN storeys/eave levels, consisting of one conspicuously tall first storey plus fifteen progressively narrowing upper levels, then its separate slender ringed finial. A broad flat central front face with minimal side depth, no octagonal corners on this central tower. On each upper level use one small outlined central arched niche/window and sparse small flank niches where in photo; omit inscriptions on the lower front screen. Keep the high plain first storey, modest base and correct tall narrow tapered silhouette.\nEach of the TWO small towers is OCTAGONAL with EXACTLY TEN storeys/eave levels: a tall plain first storey with outlined arched openings, plus nine diminishing upper storeys. Show three visible octagonal facets, protruding polygonal cornices, a few small stylized columns/niche outlines per stage, and the actual slender gourd finial. Follow south tower full-height reference for the ten-level rhythm and base, and north tower reference for its own silhouette. Keep their wider faceted profiles distinct from the square central tower. Simplify carving heavily, but never omit a storey.\nCreate refined sparse BLACK INK ON PURE WHITE line drawing: confident fine outlines and a few finer structural lines. All walls, doors, windows, niches, roofs and finials remain WHITE inside outlines. No dark fills or broad black cornice bands, no grey shading, no hatching, no brick grids, no pencil grain, no stone texture, no dense tile repetitions. Outline silhouette and storey-count take priority.\nLandscape 1536×1024; tallest apex and all three bases fully visible with at least 8% top/bottom margin and generous side margins, near-frontal architectural elevation with verticals vertical. No perspective convergence. Only a few short ground lines. Remove ALL trees, bushes, modern temples, foreground screens/signs, flags, tourists, mountains, lake, sky and photography text. No letters, calligraphy, captions, labels, dimensions, watermark, frame, border, gold or other color. Do not crop or omit any of the three towers.",
+  "edit_prompts": [
+    "Use case: precise-object-edit. Edit Image 1, the current black-line Three Pagodas plate. Image 2 is the thin-line style master. Image 3 is the actual full-height south small tower photograph. Image 4 is the actual north tower photograph. Image 5 verifies the central tower geometry.\nMake ONE targeted structural correction: both small towers in Image 1 currently show only EIGHT storey/eave levels; BOTH must show EXACTLY TEN. Keep the central sixteen-storey square Qianxun tower completely unchanged, its base, apex, width, every line and window unchanged. Keep the three-tower layout, small-tower total heights and white margins unchanged.\nFor the left and right small octagonal towers only, retain their tall plain first storey, polygonal low base and slender gourd finial, and replace their stack of seven short upper storeys with NINE slightly shorter upper storeys, giving TEN storeys in total on EACH small tower. Count from bottom: 1 tall plain base-level storey + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 uppermost short stage = ten distinct roof/eave levels before the separate finial. Add TWO additional short upper stages to EACH existing small tower while keeping each tower's overall height the same. Do not count the finial or plinth as a storey. Each small tower must have TEN distinct projecting polygonal cornices.\nUse the actual small-tower photos to keep their slightly curved tapered octagonal silhouette and three visible facets. Simplify each upper stage to fine outline cornice, a few vertical dividing lines and outlined niche details. Keep the same BLACK INK ON PURE WHITE palette, sparse delicate contour style and all-white windows. Do not add dense brick/roof textures, black fills, grey shadows, labels or text. Do not edit the central tower, do not crop, add a fourth tower, or join the towers. Output landscape 1536×1024.",
+    "Use case: precise-object-edit. Image 1 is the approved three-pagoda black fine-line drawing. Image 2 is the line-style master. Images 3, 4 and 5 are the original actual tower photographs.\nChange ONLY the overall scale of the TWO SMALL SIDE TOWERS. The layer counts are now CORRECT: CENTRAL SIXTEEN, LEFT TEN, RIGHT TEN. Preserve ALL those layers and every other structure.\nUniformly shrink each complete side tower (finial + ten-storey body + plinth together) to 87 percent of its current size, keeping the bottom center of its base anchored at its current place. The central tower must remain completely unchanged. This should move the side towers' finial tips down from around y=320 to around y=405 in this 1536×1024 canvas; their bases remain at about y=955. This makes the small towers close to the real 42.19m / 69.13m = 61% height relationship. Keep both ten-storey stacks: do NOT remove any of the ten cornices, simply scale the whole small towers, making each slightly narrower and shorter. Keep left and right tower center positions unchanged.\nEverything else stays unchanged: exactly three complete towers, central square sixteen-level tower, each side octagonal ten-level tower, pure white ground/background, delicate thin black lines, no shading/solid fills, no text or frames. Landscape1536×1024."
+  ],
+  "generation_steps": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: ONE coordinated fine-line architectural plate for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER: the Vairocana Buddha contour drawing. Match its delicate slightly organic thin ink lines, sparse internal detail and generous white spaces. Image 2 is SUBJECT GEOMETRY and east-facing group arrangement: actual Chongsheng Temple Three Pagodas 崇圣寺三塔, Dali, with the square Qianxun Pagoda centered. Image 3 is a full-height close photograph of the SOUTH small octagonal pagoda, seen on the left of the east-facing group. Image 4 verifies the actual NORTH small octagonal pagoda, seen on the right of the east-facing group. Photos determine architecture, never the Buddha silhouette.\nDraw exactly THREE complete separate historic pagodas, all visible in one balanced landscape composition: tall square QIANXUN tower in center, shorter octagonal SOUTH tower at left, shorter octagonal NORTH tower at right. Leave clear white gaps between towers; align their base region with small depth offset, center tower slightly in front. Respect height ratio: central tower 69.13m, both small towers 42.19m, so each small tower roughly 61% of central full height. Do not make three identical towers.\nCOUNT CAREFULLY: the central square dense-eaved brick tower has EXACTLY SIXTEEN storeys/eave levels, consisting of one conspicuously tall first storey plus fifteen progressively narrowing upper levels, then its separate slender ringed finial. A broad flat central front face with minimal side depth, no octagonal corners on this central tower. On each upper level use one small outlined central arched niche/window and sparse small flank niches where in photo; omit inscriptions on the lower front screen. Keep the high plain first storey, modest base and correct tall narrow tapered silhouette.\nEach of the TWO small towers is OCTAGONAL with EXACTLY TEN storeys/eave levels: a tall plain first storey with outlined arched openings, plus nine diminishing upper storeys. Show three visible octagonal facets, protruding polygonal cornices, a few small stylized columns/niche outlines per stage, and the actual slender gourd finial. Follow south tower full-height reference for the ten-level rhythm and base, and north tower reference for its own silhouette. Keep their wider faceted profiles distinct from the square central tower. Simplify carving heavily, but never omit a storey.\nCreate refined sparse BLACK INK ON PURE WHITE line drawing: confident fine outlines and a few finer structural lines. All walls, doors, windows, niches, roofs and finials remain WHITE inside outlines. No dark fills or broad black cornice bands, no grey shading, no hatching, no brick grids, no pencil grain, no stone texture, no dense tile repetitions. Outline silhouette and storey-count take priority.\nLandscape 1536×1024; tallest apex and all three bases fully visible with at least 8% top/bottom margin and generous side margins, near-frontal architectural elevation with verticals vertical. No perspective convergence. Only a few short ground lines. Remove ALL trees, bushes, modern temples, foreground screens/signs, flags, tourists, mountains, lake, sky and photography text. No letters, calligraphy, captions, labels, dimensions, watermark, frame, border, gold or other color. Do not crop or omit any of the three towers.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/chongsheng-front-photo.jpg",
+        "assets/references/chongsheng-side-photo.jpg",
+        "assets/references/chongsheng-north-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-fcdceb8e-8b8a-4f6a-bd4f-9014673b4ce7.png",
+      "result": "三塔完整，中塔16层；小塔被简化成8层，未采用。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Edit Image 1, the current black-line Three Pagodas plate. Image 2 is the thin-line style master. Image 3 is the actual full-height south small tower photograph. Image 4 is the actual north tower photograph. Image 5 verifies the central tower geometry.\nMake ONE targeted structural correction: both small towers in Image 1 currently show only EIGHT storey/eave levels; BOTH must show EXACTLY TEN. Keep the central sixteen-storey square Qianxun tower completely unchanged, its base, apex, width, every line and window unchanged. Keep the three-tower layout, small-tower total heights and white margins unchanged.\nFor the left and right small octagonal towers only, retain their tall plain first storey, polygonal low base and slender gourd finial, and replace their stack of seven short upper storeys with NINE slightly shorter upper storeys, giving TEN storeys in total on EACH small tower. Count from bottom: 1 tall plain base-level storey + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 uppermost short stage = ten distinct roof/eave levels before the separate finial. Add TWO additional short upper stages to EACH existing small tower while keeping each tower's overall height the same. Do not count the finial or plinth as a storey. Each small tower must have TEN distinct projecting polygonal cornices.\nUse the actual small-tower photos to keep their slightly curved tapered octagonal silhouette and three visible facets. Simplify each upper stage to fine outline cornice, a few vertical dividing lines and outlined niche details. Keep the same BLACK INK ON PURE WHITE palette, sparse delicate contour style and all-white windows. Do not add dense brick/roof textures, black fills, grey shadows, labels or text. Do not edit the central tower, do not crop, add a fourth tower, or join the towers. Output landscape 1536×1024.",
+      "input_target": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-fcdceb8e-8b8a-4f6a-bd4f-9014673b4ce7.png",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-5e11ecf0-1ad5-47eb-9404-4cf9aab25be2.png",
+      "result": "层数改为16/10/10，小塔相对高度偏大。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is the approved three-pagoda black fine-line drawing. Image 2 is the line-style master. Images 3, 4 and 5 are the original actual tower photographs.\nChange ONLY the overall scale of the TWO SMALL SIDE TOWERS. The layer counts are now CORRECT: CENTRAL SIXTEEN, LEFT TEN, RIGHT TEN. Preserve ALL those layers and every other structure.\nUniformly shrink each complete side tower (finial + ten-storey body + plinth together) to 87 percent of its current size, keeping the bottom center of its base anchored at its current place. The central tower must remain completely unchanged. This should move the side towers' finial tips down from around y=320 to around y=405 in this 1536×1024 canvas; their bases remain at about y=955. This makes the small towers close to the real 42.19m / 69.13m = 61% height relationship. Keep both ten-storey stacks: do NOT remove any of the ten cornices, simply scale the whole small towers, making each slightly narrower and shorter. Keep left and right tower center positions unchanged.\nEverything else stays unchanged: exactly three complete towers, central square sixteen-level tower, each side octagonal ten-level tower, pure white ground/background, delicate thin black lines, no shading/solid fills, no text or frames. Landscape1536×1024.",
+      "input_target": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-5e11ecf0-1ad5-47eb-9404-4cf9aab25be2.png",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-9a65c3f7-efe6-4aae-ac5d-353063e83e25.png",
+      "result": "最终采用；三塔完整，16/10/10层，方形与八角区别清晰，小塔高度约为中塔六成。"
+    }
+  ],
+  "generated_file": "assets/generated/chongsheng.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-9a65c3f7-efe6-4aae-ac5d-353063e83e25.png",
+  "generation_tool": "Built-in image_gen.imagegen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "崇圣寺三塔（5A）",
+      "url": "https://www.dali.gov.cn/dlzrmzf/c101724/pc/content/1968887530844688384/content_1968887530844688384.html",
+      "publisher": "大理白族自治州人民政府",
+      "supports": "主塔南诏劝丰佑时期823–859，方形十六级69.13米；南北塔大理国时期、各八角十级42.19米；古城北郊苍山东坡。页面亦记小塔1108–1172，项目概括为大理国时期，避免将其与主塔同年。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "云南漾濞6.4级地震未对大理三塔主体安全结构造成损坏",
+      "url": "https://www.dalisanta.com/content/read/400.html",
+      "publisher": "崇圣寺三塔景区，转载大理州人民政府网",
+      "supports": "主塔南诏时期与南北小塔大理国时期分期；16与10级、69.13与42.19米。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "崇圣寺三塔",
+      "url": "https://zh.wikipedia.org/wiki/崇圣寺三塔",
+      "supports": "坐标25.7084889,100.1459389；三塔断代存在不同说法，南北塔常描述为楼阁式，故正文只用八角十层而不执一种类型。"
+    }
+  ],
+  "dating_note": "以代表建筑千寻塔归tang组，tag为南诏。year840只是823–859区间的排序约值，不是考古证实的竣工年；两小塔另记大理国时期，不能三塔共用840年。",
+  "verification": {
+    "input": "母版及三张实际输入照片已view_image检查。",
+    "output": "最终PNG已view_image检查：三座全部含刹与基座；中塔方形16道檐，小塔各八角10道檐；稀疏黑线白底、无阴影文字。"
+  },
+  "site_recommendation": {
+    "name": "崇圣寺三塔",
+    "short": "崇圣寺三塔",
+    "sub": "大理 · 千寻塔与南北二塔",
+    "dyn": "tang",
+    "tag": "南诏",
+    "era": "南诏 · 大理国",
+    "year": 840,
+    "yearLabel": "9世纪（千寻塔）",
+    "yearApprox": true,
+    "place": "云南 · 大理",
+    "placeKey": "云南",
+    "lat": 25.7084889,
+    "lon": 100.1459389,
+    "lede": "苍山东麓，千寻塔与南北两座小塔鼎足而立。中央方塔挺拔，两侧八角小塔稍矮，留下南诏与大理国佛塔的不同轮廓。",
+    "facts": [
+      "千寻塔一般系于南诏劝丰佑时期（823—859），为方形十六层砖塔，高69.13米；图鉴以它的约年排序。",
+      "南北两塔另系大理国时期，各为八角十层、高42.19米，不与千寻塔合记为同年建成。",
+      "图版从东向组合三塔，中央为千寻塔，左为南塔、右为北塔；三座塔刹、塔身和基座均完整入画。"
+    ]
+  }
+}

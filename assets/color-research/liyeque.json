@@ -1,0 +1,30 @@
+{
+  "id": "liyeque",
+  "name": "李业阙",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/liyeque.png",
+    "assets/references/liyeque-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Li Ye Que at Zitong, existing solitary stone gateway pillar, with the existing later replacement cap. Keep exact single tall tapered pillar, large blank panel areas, slightly flared replacement cap with upturned ends and one central round ornament, damaged low base as Image 1. MATERIAL OBSERVATION from Image 2: shaft stone is warm orange-buff and muted brown, with irregular charcoal-grey weather-darkening patches at the middle and lower panel; cap is lighter muted grey-beige, base grey-brown. Keep the cap visibly more neutral than the warmer shaft. Use subdued warm sandstone, not gold/bronze and not terracotta paint. Do NOT copy white inscriptions in photo: all panel areas must remain unlettered. No shelter, second pillar, walls, railings or companions.",
+  "material_observations": "李业阙实拍：单阙阙身为暖土黄、赭褐石材，中部有不规则灰黑风化区；后配帽顶更浅、更灰，基部灰褐。铭文不转写。照片摄于 2015 年，取可见现存材料色，不作汉代复原。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9D%8E%E4%B8%9A%E9%98%99%E7%85%A7%E7%89%87.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%E6%9D%8E%E4%B8%9A%E9%98%99%E7%85%A7%E7%89%87.JPG",
+      "author": "Nekitarc（CrB_Nekit）",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2015-02-21",
+      "reference_file": "assets/references/liyeque-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/liyeque.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-c7e60757-f839-4b14-b7d8-6f77b5a0f17b.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已查看生成图：保留单阙、后配帽顶、无字面板与低矮残基；暖赭褐阙身、偏浅灰帽顶及局部灰黑表面可辨，暗背景，无新增保护亭。作为照片材料色的插画转译通过；非像素对齐或文保级色彩复原。",
+  "completed_at": "2026-09-15"
+}

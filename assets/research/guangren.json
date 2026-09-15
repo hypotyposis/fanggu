@@ -1,0 +1,82 @@
+{
+  "id": "guangren",
+  "subject": "芮城广仁王庙正殿（龙王殿）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:广仁王庙正面.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/%E5%B9%BF%E4%BB%81%E7%8E%8B%E5%BA%99%E6%AD%A3%E9%9D%A2.jpg",
+  "author": "Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:广仁王庙正面.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/%E5%B9%BF%E4%BB%81%E7%8E%8B%E5%BA%99%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/guangren-photo.jpg",
+      "note": "2024年4月1日摄，Commons精确文件页核实；现状正面，左檐树木遮挡处以同栋清楚右檐作对称轮廓补全。"
+    }
+  ],
+  "source_note": "按实拍现状描绘唐代木构正殿，不是复原唐代墙面或屋顶；墙体、门窗、屋面与翼角后世有改修。五开间而两尽间较窄，柱包墙内；仅柱头斗拱，无补间。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/guangren-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSubject: ONLY Guangrenwang Temple main Dragon King Hall at Zhonglongquan, Ruicheng, Shanxi (芮城广仁王庙正殿), as shown in photo Image2. Preserve its very low, wide, shallow single hip-and-gable roof, central long ridge with two small inward-curled ridge ends, broad upturned eaves, a single narrow tier of sparse large brackets, plain masonry facade, high plain rectangular platform and short CENTRAL stairs. The wooden structure is FIVE bays, the two OUTER bays are very narrow, less than half of the three central bay widths. There are exactly SIX column-head bracket axes across the front and NO intermediate bracket sets between columns. Columns are enclosed by the plain current masonry facade, DO NOT show free-standing front columns. The facade has ONE open central doorway and exactly TWO rectangular windows, one on each side with simple VERTICAL BARS. The outer narrow bays are blank solid walls. Do not turn this into a three-bay hall or insert extra windows. Draw the visible present-day building, not a speculative Tang reconstruction. Remove the tree that obscures the left eave, infer only its mirrored corresponding roof contour from the clear right eave; remove surroundings, boundary walls, paving grid, sky, signs, wires and plants. Wall surfaces must be WHITE and almost blank, without brick grid. Roof must be WHITE, with only a few fine contour and tile-direction lines, not every tile. Door interior white, no black fill. Match the master fine elegant open contour drawing. Full monument centered, straight-on facade-level with verticals upright, at least7percent lateral white margins, no cropping. Landscape1536x1024.",
+  "generated_file": "assets/generated/guangren.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-c9c78956-14f5-44b0-8caf-a9cf97a42cc5.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "广仁王庙正殿正面 · 据实景照片重绘",
+    "唐代木构 · 五间单檐歇山顶，墙面及屋面历经修缮"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.yuncheng.gov.cn/doc/2024/05/28/451744.shtml",
+      "publisher": "运城市人民政府，2024-05-28",
+      "supports": "中龙泉村古魏城遗址附近，现存唐代正殿；殿内无柱，梁架露明。"
+    },
+    {
+      "source_page": "https://www.sohu.com/a/765137110_121124384",
+      "publisher": "贺大龙（山西省古建筑保护研究所）《文物》2014年第8期论文转载",
+      "supports": "实测五间、进深四椽、五铺作双抄无补间，唐代梁架斗拱；唐大和六年832碑叙重建并结合木构风格定年；屋面墙体后修。"
+    },
+    {
+      "source_page": "https://www.jgcm.ac.cn/jah/cn/article/pdf/preview/10.12329/20969368.2024.01010.pdf",
+      "publisher": "《建筑史学刊》2024年第1期《晋阳古城二号建筑基址一号殿复原研究》",
+      "supports": "对比表列芮城广仁王庙为832年木构。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "广仁王庙",
+    "short": "广仁王庙",
+    "sub": "芮城 · 龙王殿",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐大和年间",
+    "year": 832,
+    "yearLabel": "832年 · 唐代木构",
+    "year_note": "832为结合大和六年龙泉记与现存构架的通行定年；部分旧资料列831，非全殿每一构件均为原物。",
+    "place": "山西 · 运城 · 芮城",
+    "placeKey": "运城",
+    "lat": 34.7303,
+    "lon": 110.682,
+    "coords": [
+      110.682,
+      34.7303
+    ],
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Five_Dragons_Temple",
+    "coordinate_note": "Commons地标34°43′49.08″N110°40′55.2″E，非测绘坐标。",
+    "lede": "古魏城旁的龙泉高台上，五龙庙以一座小巧的唐代木构正殿守着地方水神信仰；梁架简练，屋坡舒缓。",
+    "facts": [
+      "正殿为唐代木构遗存，通常据唐大和六年（832）碑与构架特征定年。",
+      "大殿面阔五间、进深四椽，殿内无柱，梁架全部露明。",
+      "斗拱只置柱头、不设补间；现状墙面、门窗及屋面有后世修缮。"
+    ]
+  },
+  "verification": "已view_image核查母版、2024正面实拍与输出；五间六柱头轴、无补间斗拱、中央门及两侧直棂窗、平缓歇山轮廓、台基踏步准确；一张2018备选未用于生成并已移除。"
+}

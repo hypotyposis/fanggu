@@ -1,0 +1,98 @@
+{
+  "id": "sx_chongfu",
+  "subject": "崇福寺弥陀殿 · 正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%B4%87%E7%A6%8F%E5%AF%BA%E5%BC%A5%E9%99%80%E6%AE%BF%E8%BF%9C%E6%99%AF.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/%E5%B4%87%E7%A6%8F%E5%AF%BA%E5%BC%A5%E9%99%80%E6%AE%BF%E8%BF%9C%E6%99%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_chongfu-photo.jpg"
+  ],
+  "source_note": "采用2024弥陀殿实拍。保留七间八柱、单檐歇山、台基与中央阶梯；首稿细节过密，内置编辑减少瓦垄及门窗纹样。",
+  "prompt": "Edit image 1 (Chongfu Amitabha Hall draft) using image 2 solely as the line STYLE MASTER. Preserve the actual architecture exactly: seven bays, eight columns, one very wide roof and same roof ornaments, same single front stair. Change ONLY line economy and framing. Scale the entire hall down about 12% so there is generous white space on all four sides and neither roof tip crowds the frame. DELETE almost all roof tile lines: the roof surface should be a huge WHITE empty plane, with only FOUR light short curves across the entire roof to suggest roofing. DELETE the dense tiny lattice meshes, keep just 2–3 large sparse geometric motifs per window panel and main rectangular frames. Simplify every bracket cluster to a few main outlines and remove tiny repetitive details. Keep all openings white, no shading whatsoever, no gray, no hatching. Use very fine organic lines like image 2, not a detailed blueprint. Retain the Jin hall's broad low silhouette, 7 bays / 8 columns, ornaments, stair, and weathered old structure. Nothing else.",
+  "generated_file": "assets/generated/sx_chongfu.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-5a2dd707-8d3c-491f-8888-39f7ab974f4d.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "崇福寺弥陀殿 · 正面",
+    "七间单檐歇山 · 金"
+  ],
+  "historical_sources": [
+    {
+      "title": "北京大学 · 试析替木式短栱",
+      "url": "https://fh.pku.edu.cn/docs/2018-11/20181115003739924038.pdf"
+    }
+  ],
+  "site_recommendation": {
+    "id": "sx_chongfu",
+    "name": "朔州崇福寺",
+    "short": "崇福寺",
+    "sub": "弥陀殿 · 金代木构",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金 · 皇统三年",
+    "year": 1143,
+    "yearLabel": "1143",
+    "yearApprox": false,
+    "yearNote": "采用现存弥陀殿营建纪年；殿内彩绘、塑像与后世修缮另有分期。",
+    "placeName": "朔州",
+    "lat": 39.3131,
+    "lon": 112.425739,
+    "types": [
+      "hall"
+    ],
+    "lede": "宽阔低缓的屋顶落在七间柱网上，檐下铺作疏朗而厚重。崇福寺弥陀殿将金代木构与殿内彩塑、壁画保存于同一空间。",
+    "facts": [
+      "弥陀殿始建于金皇统三年（1143），图版按现存殿宇断代。",
+      "面阔七间、进深四间，单檐歇山顶；正面八柱分出清楚的柱网。",
+      "本图选弥陀殿正面，省去庭院供具与植被；殿内彩塑和壁画未绘入。"
+    ],
+    "caption": [
+      "崇福寺弥陀殿 · 正面",
+      "七间单檐歇山 · 金"
+    ],
+    "country": "CN",
+    "province": "山西",
+    "place": "山西 · 朔州",
+    "placeKey": "sx_shuozhou",
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Chongfu_Temple"
+  },
+  "coordinates": {
+    "lat": 39.3131,
+    "lng": 112.425739,
+    "source": "https://commons.wikimedia.org/wiki/Category:Chongfu_Temple"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Create one fine-line heritage illustration for 访古.\nImage 1 is STYLE ONLY: match the Vairocana master's delicate slightly organic thin contour lines and sparse elegant visual density. Image 2 is SUBJECT GEOMETRY: the real Amitabha Hall (弥陀殿) at Chongfu Temple, Shuozhou, Shanxi, a Jin dynasty hall.\nDraw the entire single hall centered, near-straight frontal elevation, landscape 1536x1024. Preserve its very broad low SINGLE-EAVED hip-and-gable roof, raised ridge ends and small ridge ornaments, deep bracket layer, and SEVEN front bays divided by EIGHT structural columns (outermost side bays are partly hidden by foliage in the photo; extend only the same documented seven-bay facade rhythm). Center doorway plus matching lattice door panels in the five middle bays; broad high stone platform and central single stair flight. The roof must have one eave line, NOT a double-eave hall or gate. Make verticals vertical, minimal low-eye perspective, entire roof and platform uncut with about 10% margin.\nBLACK fine ink contours on PURE WHITE. All surfaces and window/door interiors remain WHITE. No black fills, shadows, gray shading, hatching, dense tile/brick textures, blueprint grids or gradients. Only a few roof/stone outlines and selected key bracket silhouettes. Remove trees, tourists, incense burner, lions, fences, modern signs and all lettering including plaque text. No other buildings, no sky, no frame, no labels. Do not invent missing decoration. Keep original monument proportions while matching the style master's airy line economy.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sx_chongfu-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-034dd0dd-277a-4808-8499-333f3350fbfc.png"
+    },
+    {
+      "prompt": "Edit image 1 (Chongfu Amitabha Hall draft) using image 2 solely as the line STYLE MASTER. Preserve the actual architecture exactly: seven bays, eight columns, one very wide roof and same roof ornaments, same single front stair. Change ONLY line economy and framing. Scale the entire hall down about 12% so there is generous white space on all four sides and neither roof tip crowds the frame. DELETE almost all roof tile lines: the roof surface should be a huge WHITE empty plane, with only FOUR light short curves across the entire roof to suggest roofing. DELETE the dense tiny lattice meshes, keep just 2–3 large sparse geometric motifs per window panel and main rectangular frames. Simplify every bracket cluster to a few main outlines and remove tiny repetitive details. Keep all openings white, no shading whatsoever, no gray, no hatching. Use very fine organic lines like image 2, not a detailed blueprint. Retain the Jin hall's broad low silhouette, 7 bays / 8 columns, ornaments, stair, and weathered old structure. Nothing else.",
+      "reference_files": [
+        "assets/generated/sx_chongfu-draft.png",
+        "assets/references/longmen-style-black.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-5a2dd707-8d3c-491f-8888-39f7ab974f4d.png"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实拍主体与残缺对应",
+      "无裁切",
+      "黑线白底与母版一致"
+    ]
+  }
+}

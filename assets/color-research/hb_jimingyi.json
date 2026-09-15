@@ -1,0 +1,55 @@
+{
+  "id": "hb_jimingyi",
+  "name": "鸡鸣驿城",
+  "subject": "鸡鸣驿城 · 东门城台与两翼古城墙",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_jimingyi.png",
+    "assets/references/hb_jimingyi-east-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 鸡鸣驿城 · 东门城台与两翼古城墙.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Jimingyi east gate: current walls are warm but muted tawny/brown-gray brick, not standard uniform blue-gray. The lower irregular rubble buttress stones are mixed pale buff, gray, brown and faded pinkish beige, with dark gray mortar. Roofs are gray-brown tiles; small gatehouse has restrained dark vermilion posts and framing with dark brown/gray timber and dark greenish decorative bands. Preserve the exact two-eaved pavilion, gateway and flanking wall shapes in the line drawing; the broken side strokes are editorial cropping, not newly destroyed masonry. Neutralize excessive warmth from the photograph while retaining genuinely brown masonry. No street paving expansion, people, signs, cafe or extra fences.\nPreserve the original line master aspect ratio 1448:1086.",
+  "material_observations": "2024年日间东门图，砖墙偏灰褐/土褐，左下毛石混浅黄灰、灰褐和淡粉灰，门楼暗红柱配灰褐瓦与深色梁。不同于平遥较冷的灰砖，不统一填灰；断线是局部画法而非文物残毁。",
+  "references": [
+    {
+      "source_page": "https://www.beijinghikers.com/photos-and-news/yu-county-overnight-trip-2024-10/",
+      "image_url": "https://static.beijinghikers.com/photos/20241005-YuCountyOvernight/20241005-YuCountyOvernight_%281045%29.jpg",
+      "author": "Beijing Hikers（页面未单列摄影者）",
+      "license": "版权归原作者；未注明开放许可",
+      "license_url": "https://www.beijinghikers.com/photos-and-news/yu-county-overnight-trip-2024-10/",
+      "reference_file": "assets/references/hb_jimingyi-east-photo.jpg",
+      "reference_dimensions": {
+        "width": 720,
+        "height": 540
+      },
+      "file": "assets/references/hb_jimingyi-east-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/hb_jimingyi.json",
+  "output": "assets/colored/hb_jimingyi.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-65963f64-91da-4ab2-b2ab-e1b09313a160.png",
+  "width": 1448,
+  "height": 1086,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已查看：中央券门、左右墙体转折与双檐楼保持，砖墙褐灰，毛石有灰/黄/淡粉灰差异，红木楼与灰瓦可辨；无餐棚、游客或牌文，边缘沿原稿局部断线。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 鸡鸣驿城 · 东门城台与两翼古城墙.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Jimingyi east gate: current walls are warm but muted tawny/brown-gray brick, not standard uniform blue-gray. The lower irregular rubble buttress stones are mixed pale buff, gray, brown and faded pinkish beige, with dark gray mortar. Roofs are gray-brown tiles; small gatehouse has restrained dark vermilion posts and framing with dark brown/gray timber and dark greenish decorative bands. Preserve the exact two-eaved pavilion, gateway and flanking wall shapes in the line drawing; the broken side strokes are editorial cropping, not newly destroyed masonry. Neutralize excessive warmth from the photograph while retaining genuinely brown masonry. No street paving expansion, people, signs, cafe or extra fences.\nPreserve the original line master aspect ratio 1448:1086.",
+      "input_images": [
+        "assets/generated/hb_jimingyi.png",
+        "assets/references/hb_jimingyi-east-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-65963f64-91da-4ab2-b2ab-e1b09313a160.png",
+      "output": "assets/colored/hb_jimingyi.png"
+    }
+  ]
+}

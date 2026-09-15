@@ -1,0 +1,56 @@
+{
+  "id": "rulong",
+  "name": "如龙桥",
+  "subject": "庆元月山如龙桥完整侧立面、木拱下缘与桥头钟楼",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/rulong.png",
+    "assets/references/rulong-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 庆元月山如龙桥完整侧立面、木拱下缘与桥头钟楼.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST line master's complete side elevation of Rulong covered bridge: long boarded corridor, lower south/left entrance roof, small central raised roof, taller THREE-eave north/right tower, visible lower timber arch rim and both rubble abutments. Current weathered timber planks are predominantly cool silver-gray and charcoal gray with restrained faded brown streaks and darker structural beams, NOT fresh yellow wood or red paint. All roof tiles and ridge ornaments dark gray-brown unglazed clay; tower posts gray weathered timber. Irregular stone abutments mix muted gray, pale gray-buff and some dusky warm-brown river stones; steps stone gray. Arch void remains near-black, no invented internal arch framing beyond master visible rim. Only the few line water marks as subtle gray strokes; no river landscape, background second stone bridge, mountains, plants or people. Preserve broad flat quiet color blocks and master geometry.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看线稿与2022年9月30日侧面日间实拍。如龙桥外护板大多银灰、深灰风化木，夹少量褐色木纹；瓦屋顶灰黑，构架深灰褐，桥台卵石为灰/灰褐混色。保持左低右高非对称屋顶及可见木拱下缘，排除远处另一石桥与山水景物。",
+  "references": [
+    {
+      "file": "assets/references/rulong-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9C%88%E5%B1%B1%E5%A6%82%E9%BE%99%E6%A1%A5,_2022-09-30_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/%E6%9C%88%E5%B1%B1%E5%A6%82%E9%BE%99%E6%A1%A5%2C_2022-09-30_02.jpg/1280px-%E6%9C%88%E5%B1%B1%E5%A6%82%E9%BE%99%E6%A1%A5%2C_2022-09-30_02.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2022-09-30",
+      "dimensions": {
+        "width": 1280,
+        "height": 854
+      },
+      "note": "完整侧向实拍，近处如龙桥的板壁、木拱下缘、南端入口和北端高楼均可辨；河道远处另有石桥，生成时删除该背景桥。",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/rulong.json",
+  "output": "assets/colored/rulong.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-57334521-6f55-4e0b-8078-941e62876e5c.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：左低右高三重檐钟楼、中央凸起小顶、长廊护板和木拱下缘与原稿一致，银灰老木、灰黑瓦及灰褐卵石区分清楚。未补透视拱架，桥下只留简化水线，无第二座石桥或山景。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 庆元月山如龙桥完整侧立面、木拱下缘与桥头钟楼.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST line master's complete side elevation of Rulong covered bridge: long boarded corridor, lower south/left entrance roof, small central raised roof, taller THREE-eave north/right tower, visible lower timber arch rim and both rubble abutments. Current weathered timber planks are predominantly cool silver-gray and charcoal gray with restrained faded brown streaks and darker structural beams, NOT fresh yellow wood or red paint. All roof tiles and ridge ornaments dark gray-brown unglazed clay; tower posts gray weathered timber. Irregular stone abutments mix muted gray, pale gray-buff and some dusky warm-brown river stones; steps stone gray. Arch void remains near-black, no invented internal arch framing beyond master visible rim. Only the few line water marks as subtle gray strokes; no river landscape, background second stone bridge, mountains, plants or people. Preserve broad flat quiet color blocks and master geometry.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/rulong.png",
+        "assets/references/rulong-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-57334521-6f55-4e0b-8078-941e62876e5c.png",
+      "output": "assets/colored/rulong.png"
+    }
+  ]
+}

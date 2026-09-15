@@ -1,0 +1,76 @@
+{
+  "id": "fuzhouwuta",
+  "subject": "福州乌塔（崇妙保圣坚牢塔）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Black_pagoda.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Black_pagoda.JPG",
+  "author": "GnuDoyng",
+  "license": "Public domain — PD-self",
+  "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "additional_sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:崇妙保圣坚牢塔_东侧_乌塔公园.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/%E5%B4%87%E5%A6%99%E4%BF%9D%E5%9C%A3%E5%9D%9A%E7%89%A2%E5%A1%94_%E4%B8%9C%E4%BE%A7_%E4%B9%8C%E5%A1%94%E5%85%AC%E5%9B%AD.jpg",
+      "author": "董辰兴",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "supports": "2019年塔身石构、栏板和层檐"
+    }
+  ],
+  "source_note": "以2009年公版实拍七层完整塔身为主，2019年东侧照片核对现状。矫正仰视、去除树木与灯具，塔基仅据露出部分与官方须弥座描述作简化轮廓，不补画现代公园平台。照片上塔身花岗石外观虽深，图版仍采用五代灰紫细线，保持朝代配色。",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fuzhouwuta-pd-photo.jpg",
+    "assets/references/fuzhouwuta-east-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: one fine-line Chinese heritage plate for 访古.\nImage1 is the STYLE MASTER only: reproduce the delicate thin black contours, calm white space and selective fine detail. Images2 and3 are ACTUAL SUBJECT PHOTOGRAPHS of the BLACK PAGODA 乌塔 / CHONGMIAO BAOSHENG JIANLAO PAGODA 崇妙保圣坚牢塔 in Fuzhou, Fujian. Preserve this specific octagonal STONE pagoda, not the white pagoda, Luoxing pagoda or Beijing's Wuta.\nCreate a centered complete near-frontal elevation, correcting the severe looking-up perspective to upright verticals. The monument has EXACTLY SEVEN tall occupied storeys, EXACTLY SEVEN broad projecting stone tiled eaves, the seventh is the top conical octagonal roof. Each of the seven storeys has a visible faceted stone wall and projecting balcony with solid low stone parapet; successive storeys gradually taper. The stone eaves imitate wooden architecture and have gently lifted corners, a few tiny seated stone figures at corners as faint outlines. Preserve broad shallow eaves, three front-facing planes of the octagon, rectangular openings and framed niche panels (very tiny Buddha outlines only where legible). Walls stay white, no solid dark apertures. The first storey is slightly taller; its center has one rectangular doorway, the adjacent faces framed panels. Keep the low layered octagonal Sumeru stone plinth suggested by the visible base, no invented tall platform or staircase. The top has a small traditionally stacked bulb/gourd-shaped finial, not a huge many-ring mast. No eighth floor. Count exactly seven visible eave tiers from top to bottom before completing.\nUse subject image2 chiefly for the complete seven-storey silhouette and parapets, image3 for present stone geometry. Remove all foliage, modern temporary tarps, rubble, white park balustrades, billboards, neighboring roofs, floodlights, electric poles and lightning wires. The pagoda alone, no context.\nPortrait1024x1536. Entire pagoda INCLUDING finial and base fits comfortably inside image, roughly82% height with white margins. Thin confident BLACK contour on PURE WHITE, some still finer selected structural lines. Predominantly white surfaces and voids. Sparse indications of stone slab joins and roof courses, not dense tiles. No shading, hatch, crosshatch, grey wash, grain, shadows, black fill, solid color, gold, inscriptions, text, watermark, border or frame. Match image1's elegant restrained fine-line plate style.",
+  "generation_tool": "built-in image_gen",
+  "generated_file": "assets/generated/fuzhouwuta.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-f7bc6de7-cfb5-46ab-be07-0537ed74f6fb.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "福州乌塔 · 崇妙保圣坚牢塔",
+    "七层八角 · 五代石塔"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://www.gl.gov.cn/xjwz/rw/glmp/201701/t20170116_1703681.htm",
+      "publisher": "福州市鼓楼区人民政府《乌塔》",
+      "supports": "941兴建，944终止于七层；高32.86米、八角花岗石、回廊栏板及葫芦刹。"
+    },
+    {
+      "source_page": "https://www.fuzhou.gov.cn/zgfzhd/znhd/swwj/wwjz/202506/t20250627_5039533.htm",
+      "publisher": "福州市人民政府·市文物局",
+      "supports": "全国重点文物保护单位崇妙保圣坚牢塔形制及941开工。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Chongmiao_Baosheng_Jianlao_Pagoda",
+      "publisher": "Wikimedia Commons",
+      "supports": "塔址坐标26°04′49.61″N,119°17′44.09″E。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "福州乌塔",
+    "short": "乌塔",
+    "sub": "崇妙保圣坚牢塔",
+    "dyn": "zhou",
+    "tag": "五代",
+    "year": 944,
+    "yearLabel": "941—944年",
+    "yearApprox": false,
+    "era": "闽 · 永隆年间",
+    "place": "福建福州 · 鼓楼区 · 乌山东麓",
+    "placeKey": "fuzhou",
+    "lat": 26.08044863,
+    "lon": 119.29558039,
+    "lede": "花岗石叠成七层楼阁，每层都有窄窄的回廊和栏板。乌塔以深沉石色得名，与于山白塔相对，成为福州古城两座熟悉的地标。",
+    "facts": [
+      "<b>五代闽国</b>：941年兴建，原计划九层，944年王延羲遇害后停在七层；现塔按七层完成时登记。",
+      "<b>石仿木构</b>：八角七层花岗石塔，高约32.86米，转角设倚柱，层层石檐外挑。",
+      "<b>回廊与佛龛</b>：塔外栏板围合回廊，塔壁开门设龛，顶部以葫芦形塔刹收束。"
+    ]
+  },
+  "verification": "两张实际照片与成图均已检查：七层七道主檐、逐层收分、八角三可见面、石栏板和葫芦刹；无多加层数、文字、树木与裁切。"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "hn_baima",
+  "subject": "白马寺齐云塔 · 方形十三层密檐塔",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20251018_Qiyun_Pagoda.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/20251018_Qiyun_Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sources": [
+    {
+      "title": "20251018 Qiyun Pagoda.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/20251018_Qiyun_Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/20251018_Qiyun_Pagoda.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2025-10-18 17:12:02",
+      "reference_file": "assets/references/hn_baima-photo-3.jpg",
+      "description": "Qiyun Pagoda, White Horse Temple",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20251018_Qiyun_Pagoda.jpg",
+      "dimensions": [
+        1200,
+        1800
+      ]
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_baima-photo-3.jpg"
+  ],
+  "source_note": "采用2025实拍完整塔身，消除相机倾斜、树木与近旁殿宇。保留十三重密檐和真实方形收分；2010施工照未作为生成输入。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT-SPECIFIC INSTRUCTIONS:\nDraw ONLY the actual Qiyun Pagoda 齐云塔 east of White Horse Temple in Luoyang, its surviving Jin dynasty tower, from photo 2. Exactly THIRTEEN major stepped eave tiers from the first broad eave above the tall base storey to the tiny top tier, plus the separate small gourd finial above. Square plan, one main face with a narrow left side visible, tall lower storey with central rectangular closed doorway, tapered upper levels and modest pointed ventilation openings, brick corbel eaves. Keep all 13 eave tiers individually countable. Use only two or three contour lines for each projecting eave, rather than each course of bricks. The broad wall surfaces and roof ledges stay entirely blank white. Correct camera tilt to vertical. Keep the authentic narrow gently curving taper; no upturned Chinese timber-roof corners. Remove neighboring pavilion, incense altar, steles, plants, lanterns, scaffolding, all signs and lettering. Full tower and stepped pedestal with 12 percent white margin above and below, portrait 1024x1536. This is architectural line art, not a detailed engraved texture.\n",
+  "generated_file": "assets/generated/hn_baima.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-7fc3b54f-c9b3-4c68-9fb9-e3427f68fab5.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "白马寺齐云塔 · 方形十三层密檐塔",
+    "金大定十五年（1175）重建"
+  ],
+  "historical_sources": [
+    {
+      "title": "文化瀍河：白马寺寺院建筑（引用金代建塔碑）",
+      "url": "https://www.thepaper.cn/newsDetail_forward_24588074",
+      "supports": "现塔1175年重建，十三层四方形密檐、塔刹与塔院沿革。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "白马寺齐云塔",
+    "short": "齐云塔",
+    "sub": "白马寺 · 金代砖塔",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金 · 大定十五年",
+    "year": 1175,
+    "yearLabel": "1175",
+    "yearApprox": false,
+    "yearNote": "金代重建碑记明确1175年，非白马寺创建的68年。",
+    "place": "河南 · 洛阳 · 白马寺东塔院",
+    "placeKey": "hn_luoyang",
+    "placeName": "洛阳",
+    "lat": 34.72187,
+    "lon": 112.60412,
+    "coordinate_source": "https://mapcarta.com/W1028861021",
+    "coordinate_note": "OpenStreetMap way 1028861021塔体公开点位。",
+    "lede": "白马寺东侧的齐云塔用十三重密檐收出柔和曲线。方形塔身层层内收，保留金代重建的砖塔形制，与寺院的东汉创建历史分别相承。",
+    "facts": [
+      {
+        "label": "重建纪年",
+        "text": "塔旁金代《重修河南府左街东白马寺释迦舍利塔记》记载大定十五年（1175）重建。"
+      },
+      {
+        "label": "形制",
+        "text": "四方形密檐式砖塔共十三层，自第六层起逐层内收，顶部置宝瓶式塔刹。"
+      },
+      {
+        "label": "寺塔关系",
+        "text": "齐云塔院位于白马寺东南；现塔沿革与后世新建塔院殿宇分别记录。"
+      }
+    ],
+    "types": [
+      "pagoda"
+    ],
+    "id": "hn_baima",
+    "country": "CN",
+    "province": "河南",
+    "caption": [
+      "白马寺齐云塔 · 方形十三层密檐塔",
+      "金大定十五年（1175）重建"
+    ]
+  },
+  "coordinates": {
+    "lat": 34.72187,
+    "lng": 112.60412,
+    "source": "https://mapcarta.com/W1028861021",
+    "note": "OpenStreetMap way 1028861021塔体公开点位。"
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT-SPECIFIC INSTRUCTIONS:\nDraw ONLY the actual Qiyun Pagoda 齐云塔 east of White Horse Temple in Luoyang, its surviving Jin dynasty tower, from photo 2. Exactly THIRTEEN major stepped eave tiers from the first broad eave above the tall base storey to the tiny top tier, plus the separate small gourd finial above. Square plan, one main face with a narrow left side visible, tall lower storey with central rectangular closed doorway, tapered upper levels and modest pointed ventilation openings, brick corbel eaves. Keep all 13 eave tiers individually countable. Use only two or three contour lines for each projecting eave, rather than each course of bricks. The broad wall surfaces and roof ledges stay entirely blank white. Correct camera tilt to vertical. Keep the authentic narrow gently curving taper; no upturned Chinese timber-roof corners. Remove neighboring pavilion, incense altar, steles, plants, lanterns, scaffolding, all signs and lettering. Full tower and stepped pedestal with 12 percent white margin above and below, portrait 1024x1536. This is architectural line art, not a detailed engraved texture.\n",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_baima-photo-3.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-7fc3b54f-c9b3-4c68-9fb9-e3427f68fab5.png"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体对应实拍",
+      "层数/开间与轮廓核对",
+      "完整留白",
+      "黑线白底，保持母版风格"
+    ]
+  }
+}

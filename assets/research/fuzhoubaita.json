@@ -1,0 +1,119 @@
+{
+  "id": "fuzhoubaita",
+  "subject": "福州白塔（报恩定光多宝塔）",
+  "caption": [
+    "福州白塔 · 定光塔",
+    "七层八角 · 明代重建"
+  ],
+  "generation_tool": "Built-in image_gen.imagegen",
+  "generated_file": "assets/generated/fuzhoubaita.png",
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c5cfd324-0ef3-4a88-908c-63500415602f.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fuzhoubaita-main-photo.jpg",
+    "assets/references/fuzhoubaita-complete-photo.jpg",
+    "assets/references/fuzhoubaita-full-photo.jpg"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the Fuzhou White Pagoda line illustration to EDIT; image2 is the line-style MASTER and image3 the actualpagoda photograph forreference. Keep image1 architecture unchanged: exactly SEVEN storeys and7eaves, its straightfrontaloctagonalgeometry, smallgourdfinial, lotuscapitals, railings, doorpositions and completebase. Make ONLY renderingcleanup andmargin adjustment. Remove EVERY greyfill, gradient, shadow and shading under all eaves and inside all doors, especially the smallarched upperdoorheads: replace all ofthese filledareas with pureWHITE and preserve their fewfineBLACK boundarylines. This must be a purewhiteground delicatecontourdrawing, zero greyareas, no renderlighting, no solidfill. Simplify each balcony railing to lightfineoutlines with just sparse selectedverticalbars; no greylinecloud. Keep overallfineblacklineweight matched toimage2. Slightlyreduce towerscale to80-84%canvasheight toprovide calm equal topandbottommargins. Portrait1024x1536; sevenfloors andsevenroofs, no othergeometrychange, no lettering orborder.",
+  "initial_prompt": "Use case: style-transfer. One refined sparse BLACK INK ON PURE WHITE fine-line architectural plate for 访古. Image1 is the Vairocana STYLE MASTER: match delicate, slightly organic thin black contours, very sparse details, large untouched white areas. Image2 is the actual FUZHOU WHITE PAGODA (Bao'en Dingguang Duobao Pagoda) full-height body, Image3 shows its exact front entrance and lowest pedestal, Image4 shows the upper body and original gourd-shaped finial from further away; all three are SUBJECT GEOMETRY ONLY. The ornate low temple roof in image4 is a different building; omit it completely.\nDraw only the complete Fuzhou white pagoda in its surviving Ming1548 form, seven-storey octagonal masonry tower. EXACTLY SEVEN occupied wall storeys and SEVEN shallow principal eave ledges fromground to top; the groundfloor is storey1, with its large pointedarch doorway, then six upper wallstoreys stepping narrower upwards. Keep broad whitewall faces, slim engagedpilasters at octagonal corners with small stylized lotus capitals, understated near-horizontal projectingeaves with only slightlyraised corners. Very narrow balconies/metalrailings above the eaves are sparse outlined bars, not thick ornament. Some frontwall upperopenings have a simple rectangular recess above a roundarched door; copy photo3 selective opening rhythm. Finial above the seventhroof is the SMALL slender stacked-gourd ornament seen in image4, complete and uncut, not a huge stupa. Keep its real dimensions relative totower. Draw the front doorway fromphoto3, white inside, low plinth and just a couple of stone steps. Do not draw the foreground sculpturepanels, plants, benches, or adjacent temple. Omit plaque and all writing.\nCentered calm nearlyfront elevation with one full centralfacade and two narrow angledfaces visible to convey octagonalplan. Correct extreme upwardkeystone in closephotos: verticalsvertical, gentlytapering actualtower, no oversizedbottomfloor. Fullheight including completeapex andbase fits within82%of1536pxcanvasheight; portrait1024x1536, balanced broad white margins. Fineblackoutlinesonly, allwallareas/dooropenings/eaveundersides WHITE. No solidblack, greys, fills, shading, crosshatching, pencilgrain, densebrickcourses, dense roof tilelines, texture, color, sky, people, foliage, text, label, frame, watermark. All sevenstoreys individuallyreadable, roofcountchecked.",
+  "final_edit_reference_files": [
+    "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d52f37d6-7a7e-40fb-8e62-9a8da13e453f.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longmen-style-black.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/fuzhoubaita-main-photo.jpg"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fuzhou_Yushan_20120304-07.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Fuzhou_Yushan_20120304-07.jpg/960px-Fuzhou_Yushan_20120304-07.jpg?download=1",
+      "reference_file": "assets/references/fuzhoubaita-main-photo.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "2012年3月4日，白塔七层塔身全貌近景。仰视导致塔刹遮住，底部略裁切，由另两张照片补充。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fuzhou_Yushan_20120304-12.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fuzhou_Yushan_20120304-12.jpg/960px-Fuzhou_Yushan_20120304-12.jpg?download=1",
+      "reference_file": "assets/references/fuzhoubaita-complete-photo.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "2012年3月4日，白塔正面低层和入口台阶；柱头莲纹、尖拱入口和须弥座落地关系清楚。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:72239-Fuzhou_%2849222838261%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/72239-Fuzhou_%2849222838261%29.jpg/960px-72239-Fuzhou_%2849222838261%29.jpg?download=1",
+      "reference_file": "assets/references/fuzhoubaita-full-photo.jpg",
+      "author": "xiquinhosilva（Xiquinho Silva）",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "description": "2019年12月7日，从定光寺望白塔上部，细小葫芦塔刹完整，用作塔刹和上部比例参考。前景寺庙不绘入。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "白塔",
+      "url": "https://www.gl.gov.cn/xjwz/rw/glmp/201609/t20160902_1703643.htm",
+      "publisher": "福州市鼓楼区人民政府",
+      "note": "正式名报恩定光多宝塔，904年始建、1548年重建，现存七层八面与葫芦状塔刹。按明代现存塔身纪年。"
+    },
+    {
+      "title": "Category:Bao'en Dingguang Duobao Pagoda",
+      "url": "https://commons.wikimedia.org/wiki/Category:Bao%27en_Dingguang_Duobao_Pagoda",
+      "publisher": "Wikimedia Commons / Wikidata",
+      "note": "遗址近似坐标26°04′51″N119°18′03″E。"
+    }
+  ],
+  "source_note": "原始三张真实照片分别核对整体七层塔身、底层入口台阶与上部葫芦刹。以南向券门立面为主体，去除定光寺屋顶、字牌、盆栽和寺前石栏。塔立面及拱门保持留白，最终内置imagegen编辑简化栏杆并减轻灰色层次。904年为初建背景；现存塔身按1548年重建归明代，不以唐代原塔复原。",
+  "verification": {
+    "reference_images_viewed": true,
+    "generated_image_viewed": true,
+    "storeys": 7,
+    "eave_count": 7,
+    "plan": "八角",
+    "finial": "小型葫芦状塔刹",
+    "uncropped": true
+  },
+  "site_recommendation": {
+    "name": "福州白塔",
+    "short": "白塔",
+    "sub": "报恩定光多宝塔",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "嘉靖二十七年",
+    "year": 1548,
+    "yearLabel": "1548年重建",
+    "yearApprox": false,
+    "place": "福建 · 福州",
+    "placeKey": "fuzhou",
+    "lat": 26.0808333,
+    "lon": 119.3008333,
+    "lede": "于山西麓的白塔以七层素白塔身向上收起，与乌山乌塔遥相对望。浅出檐口、细长壁柱和小小葫芦刹，让这座城市地标显得清朗而克制。",
+    "facts": [
+      "白塔正名报恩定光多宝塔，最初由王审知于唐天祐元年（904）兴建。",
+      "现存塔身为明嘉靖二十七年（1548）重建，本条按这一现存主体年代分类。",
+      "塔为七层八角砖塔，顶部葫芦状塔刹；1991年公布为福建省级文物保护单位。"
+    ],
+    "basis": [
+      {
+        "url": "https://www.gl.gov.cn/xjwz/rw/glmp/201609/t20160902_1703643.htm",
+        "supports": "正式名报恩定光多宝塔，904年始建、1548年重建，现存七层八面与葫芦状塔刹。按明代现存塔身纪年。"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Bao%27en_Dingguang_Duobao_Pagoda",
+        "supports": "遗址近似坐标26°04′51″N119°18′03″E。"
+      }
+    ]
+  },
+  "source_page": "https://commons.wikimedia.org/wiki/File:Fuzhou_Yushan_20120304-07.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Fuzhou_Yushan_20120304-07.jpg/960px-Fuzhou_Yushan_20120304-07.jpg?download=1",
+  "reference_file": "assets/references/fuzhoubaita-main-photo.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "description": "2012年3月4日，白塔七层塔身全貌近景。仰视导致塔刹遮住，底部略裁切，由另两张照片补充。"
+}

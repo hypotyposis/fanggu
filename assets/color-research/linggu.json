@@ -1,0 +1,75 @@
+{
+  "id": "linggu",
+  "name": "灵谷寺无梁殿",
+  "subject": "南京灵谷寺无梁殿单体正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/linggu.png",
+    "assets/references/linggu-front-photo.jpg",
+    "assets/references/linggu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 南京灵谷寺无梁殿单体正面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Nanjing Linggu Temple BEAMLESS masonry hall: walls and brick-built imitation brackets are pale gray-buff, mixed with subdued gray-brown masonry; arch voussoirs are slightly lighter sandy stone. Both low roof planes are weathered neutral gray tiles; all three small roof stupas are pale gray, not gold. The steps are medium gray stone; window lattice muted gray. This is a largely monochrome unpainted masonry monument, not red timber. Preserve 3 round door arches, 2 smaller end windows and 3 ridge stupas. Keep broad semi-flat color planes with very restrained texture, not dense individual brick rendering. No plaques from the photos.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "两张2017日间照互证：主体砖作灰黄、灰褐，券口浅沙灰，屋瓦深浅灰，台阶灰石。斗栱为砖作仿木，不应套红木色；三个脊上塔饰亦灰石色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beamless_Hall,_Nanjing,_Nov_2017_(1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Beamless_Hall%2C_Nanjing%2C_Nov_2017_%281%29.jpg/1280px-Beamless_Hall%2C_Nanjing%2C_Nov_2017_%281%29.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/linggu-front-photo.jpg",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "date": "2017-11-27",
+      "note": "完整正面，树木局部遮挡；与近景共同核定三个圆拱与两重檐。",
+      "file": "assets/references/linggu-front-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:无梁殿正面.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/%E6%97%A0%E6%A2%81%E6%AE%BF%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "西安兵马俑",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/linggu-photo.jpg",
+      "dimensions": [
+        4160,
+        3120
+      ],
+      "date": "2017-05-29",
+      "note": "正面局部实拍补充门洞轮廓，未单独用来推断完整殿体。",
+      "file": "assets/references/linggu-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/linggu.json",
+  "output": "assets/colored/linggu.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-9c52d199-fd58-4042-93ba-e1866c9ff908.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已查看：保留三个圆券门、两小窗、低重檐及三个塔形脊饰；灰瓦与灰黄砖石分色明确，没有误染成红木殿，门洞为近黑，无新增文字或树影。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 南京灵谷寺无梁殿单体正面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Nanjing Linggu Temple BEAMLESS masonry hall: walls and brick-built imitation brackets are pale gray-buff, mixed with subdued gray-brown masonry; arch voussoirs are slightly lighter sandy stone. Both low roof planes are weathered neutral gray tiles; all three small roof stupas are pale gray, not gold. The steps are medium gray stone; window lattice muted gray. This is a largely monochrome unpainted masonry monument, not red timber. Preserve 3 round door arches, 2 smaller end windows and 3 ridge stupas. Keep broad semi-flat color planes with very restrained texture, not dense individual brick rendering. No plaques from the photos.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/linggu.png",
+        "assets/references/linggu-front-photo.jpg",
+        "assets/references/linggu-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-9c52d199-fd58-4042-93ba-e1866c9ff908.png",
+      "output": "assets/colored/linggu.png"
+    }
+  ]
+}

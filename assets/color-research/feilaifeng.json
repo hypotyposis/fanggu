@@ -1,0 +1,56 @@
+{
+  "id": "feilaifeng",
+  "name": "飞来峰造像",
+  "subject": "杭州飞来峰第68龛布袋弥勒及邻近四尊罗汉（局部）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/feilaifeng.png",
+    "assets/references/feilaifeng-photo.jpg",
+    "assets/references/feilaifeng-full-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSubject: Feilai Feng niche68 carved STONE Budai Maitreya and exactly FOUR neighboring arhats on right, with the selected rock outline in the master. All figures are weathered grey limestone, NOT gold or polychrome statues. Pale cool/warm GREY on protruding faces/belly/hands, medium charcoal-grey recessed folds; lightly mottled grey-brown rock backdrop within drawn rock boundary with very restrained faint olive weathering. No invented colored robes or skin peach. Paint only existing rock region, keep outside boundary flat #100f0d, no scenic cave expansion, vegetation or additional figures. Preserve wide smiling pose and four small disciples. Landscape1536x1024.",
+  "material_observations": [
+    "布袋弥勒与邻近罗汉均为未见金箔的灰石本色，凸出皮肤较浅灰，衣褶暗灰。",
+    "崖面灰褐，局部有很淡苔绿和黑灰风化；不保留照片植被。",
+    "线稿只含弥勒与四尊罗汉及有限岩面，未展开整龛。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/feilaifeng-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20090608_Hangzhou_Feilai_Feng_9060.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/20090608_Hangzhou_Feilai_Feng_9060.jpg/1280px-20090608_Hangzhou_Feilai_Feng_9060.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2009-06-08",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    },
+    {
+      "file": "assets/references/feilaifeng-full-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maitreya_and_disciples_carving_in_Feilai_Feng_Caves.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Maitreya_and_disciples_carving_in_Feilai_Feng_Caves.jpg/1280px-Maitreya_and_disciples_carving_in_Feilai_Feng_Caves.jpg",
+      "author": "Miguel A. Monjas (Mr. Tickle)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2005-07-26",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/feilaifeng.json",
+  "output": "assets/colored/feilaifeng.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-8676bdf9-7b48-42af-8fc6-ba31f842d622.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "仅有原稿中的弥勒与四尊罗汉，选定岩面轮廓保留。",
+      "像身和岩体按灰石设色，无金箔或彩衣；岩体以外保持近黑背景。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T07:20:01.786Z"
+}

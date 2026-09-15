@@ -1,0 +1,149 @@
+{
+  "id": "hb_nanansi",
+  "subject": "南安寺塔 · 十三层密檐砖塔",
+  "caption": [
+    "蔚县南安寺塔",
+    "八角十三层密檐塔与仰莲塔座"
+  ],
+  "source_page": "https://www.sohu.com/a/889332697_121124404",
+  "image_url": "https://q3.itc.cn/q_70/images03/20250426/2d52aaf3a14d440caed64cddad9d142a.png",
+  "sources": [
+    {
+      "source_page": "https://www.sohu.com/a/889332697_121124404",
+      "image_url": "https://q3.itc.cn/q_70/images03/20250426/2d52aaf3a14d440caed64cddad9d142a.png",
+      "author": "张家口文旅／张家口市考古所供稿；摄影者未单列",
+      "license": "版权未注明开放许可；仅作实景形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/hb_nanansi-gov1-photo.png",
+      "reference_dimensions": {
+        "width": 581,
+        "height": 775
+      }
+    },
+    {
+      "source_page": "https://www.sohu.com/a/889332697_121124404",
+      "image_url": "https://q7.itc.cn/q_70/images03/20250426/761a52ae5aff4bbbb1ba26bdd1565145.png",
+      "author": "张家口文旅／张家口市考古所供稿；摄影者未单列",
+      "license": "版权未注明开放许可；仅作实景形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/hb_nanansi-gov2-photo.png",
+      "reference_dimensions": {
+        "width": 830,
+        "height": 601
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_nanansi-gov1-photo.png",
+    "assets/references/hb_nanansi-gov2-photo.png"
+  ],
+  "ref_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_nanansi-gov1-photo.png",
+    "assets/references/hb_nanansi-gov2-photo.png"
+  ],
+  "source_note": "主照和细部照由张家口文旅／市考古所供稿，原刊未标独立摄影者或开放许可。外围民居移除；基础最下部以简化轮廓呈现，非考古复原。",
+  "prompt": "Make ONE geometrical change to this drawing. INSERT ONE additional complete thin projecting polygonal eave / roof tier between the two existing upper-middle tiers. Do not remove any tier. Current diagram has 12 eaves; new output MUST have 13 eaves. Keep the existing 12 eaves and add a clearly visible 13th. Extend the upper stack vertically by the height of one tier, shifting the finial upward into available white margin, if needed. The new tier must have the same width interpolation and thin corbelled brick outline as its adjacent tiers. Do not change anything else: retain current no-bracket upper roofs, lower carved body, three lotus rows, stone pedestal and fine pure black outlines on white. Do not add numbers or labels. The only visual change is one extra eave, all existing ones retained. Count the roof corners before returning.",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  Subject: Nan'an Temple Pagoda, Yuxian/蔚县, Hebei. Exactly this Liao octagonal SOLID dense-eave brick pagoda, not a generic multistorey tower. Primary photograph shows accurate entire silhouette: a broad octagonal two-part pedestal, THREE rows of large upturned lotus petals, one unusually tall first body storey with a centered arched false door and tiny pagoda-shaped corner pilasters, then EXACTLY THIRTEEN closely spaced projecting eaves in total above that first body, tapering only gently. The thirteen include the lowest main projecting eave over the tall body and the highest cap-like broad eave; do NOT add an extra fourteenth. There are no rows of storey windows in the dense upper part. Keep the narrow neck, lotus top and complete iron stacked finial as seen. Secondary real photo clarifies base and lotus detail. Reduce Buddha ornament and brickwork to sparse contours and a few hints, no texture grids. Show full pedestal down to a simple low stone footing without surrounding rooftops. Near frontal, two adjacent narrow sides visible, portrait plate, all apex and base safely inside broad white margins, fine sparse black line.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_nanansi-gov1-photo.png",
+        "assets/references/hb_nanansi-gov2-photo.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-1fa10edc-5295-4cd6-b06f-c3b622c6109f.png",
+      "accepted": false,
+      "reason": "初稿仅12檐，上层误加斗拱"
+    },
+    {
+      "prompt": "Correct this Nan'an Temple Pagoda line drawing using the accompanying real photograph. The current illustration has only TWELVE main roof/eave tiers. Insert EXACTLY ONE additional tier into the middle of the close-spaced upper stack, so the final drawing has THIRTEEN eave edges from lowest roof over tall body through the highest broad roof beneath the neck. Retain all other existing twelve tiers. Count carefully. Critically, this is a Liao masonry dense-eave pagoda: upper eaves are corbelled brick bands and have NO timber dougong bracket groups underneath. Remove the repeated hanging bracket blobs under the upper twelve small eaves; draw clean fine layered masonry contours there instead. Keep rich simplified brackets ONLY under the lowest main eave. Match actual photograph's gently tapered smooth octagonal drum, tall first storey, lotus-supported body and complete thin finial. Lotus pedestal has three rows of petals, not two. Preserve full base and generous margins. Pure delicate black outline on white; no hatching, no fill, no text, no dense texture.",
+      "reference_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-1fa10edc-5295-4cd6-b06f-c3b622c6109f.png",
+        "assets/references/hb_nanansi-gov1-photo.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-bd6cbf69-c30b-4567-b40f-fe856c0154ac.png",
+      "accepted": false,
+      "reason": "去除上层误加斗拱并修三周莲瓣；仍仅12道檐，继续修正"
+    },
+    {
+      "prompt": "Make ONE geometrical change to this drawing. INSERT ONE additional complete thin projecting polygonal eave / roof tier between the two existing upper-middle tiers. Do not remove any tier. Current diagram has 12 eaves; new output MUST have 13 eaves. Keep the existing 12 eaves and add a clearly visible 13th. Extend the upper stack vertically by the height of one tier, shifting the finial upward into available white margin, if needed. The new tier must have the same width interpolation and thin corbelled brick outline as its adjacent tiers. Do not change anything else: retain current no-bracket upper roofs, lower carved body, three lotus rows, stone pedestal and fine pure black outlines on white. Do not add numbers or labels. The only visual change is one extra eave, all existing ones retained. Count the roof corners before returning.",
+      "reference_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-bd6cbf69-c30b-4567-b40f-fe856c0154ac.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-98996381-9606-4fca-b834-1bb81ca81bae.png",
+      "accepted": true,
+      "reason": "最终13道檐，完整塔刹与塔座"
+    }
+  ],
+  "generated_file": "assets/generated/hb_nanansi.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "历史年代与现存主体依据",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "张家口文旅（市考古所供稿）：南安寺塔形制与原始实拍",
+      "url": "https://www.sohu.com/a/889332697_121124404"
+    }
+  ],
+  "site_recommendation": {
+    "name": "南安寺塔",
+    "short": "南安寺塔",
+    "sub": "十三层密檐砖塔",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽代",
+    "year": 1100,
+    "yearLabel": "辽 · 年代约值",
+    "yearApprox": true,
+    "yearNote": "省文物局根据外观形式推定辽代；1100只作辽代约值排序。1706为清代包砌塔座与重修，1986修补局部炮损檐角。",
+    "province": "河北",
+    "country": "CN",
+    "place": "河北 · 蔚县",
+    "placeKey": "hb_yuxian",
+    "placeName": "蔚县",
+    "lat": 39.8369444,
+    "lon": 114.5641667,
+    "coordinate_source": "Commons Category:Pagoda of Nan'an Temple 公布39°50′13″N,114°33′51″E，塔址近似坐标：https://commons.wikimedia.org/wiki/Category:Pagoda_of_Nan%27an_Temple 。",
+    "lede": "南安寺塔在蔚州旧城屋顶间升起。高首层立在仰莲座上，十三道密檐轻轻收分，铁刹将轮廓延向空中。",
+    "facts": [
+      {
+        "label": "断代",
+        "text": "现存八角密檐砖塔按形制定为辽代，创建确年未明；图鉴用约值。"
+      },
+      {
+        "label": "十三檐",
+        "text": "塔为实心，首层较高，四正面作假门、四隅作盲窗；上部十三道砖檐紧密叠置。"
+      },
+      {
+        "label": "修缮层次",
+        "text": "现塔座有清康熙四十五年（1706）包砌，东侧受炮损的局部檐角于1986年修补。"
+      }
+    ],
+    "types": [
+      "pagoda"
+    ]
+  },
+  "coordinates": {
+    "lat": 39.8369444,
+    "lon": 114.5641667,
+    "source": "Commons Category:Pagoda of Nan'an Temple 公布39°50′13″N,114°33′51″E，塔址近似坐标：https://commons.wikimedia.org/wiki/Category:Pagoda_of_Nan%27an_Temple 。"
+  },
+  "quality_check": {
+    "viewed_inputs": true,
+    "viewed_output": true,
+    "complete_silhouette": true,
+    "notes": "最终图已逐层数明13道主檐；上层无误加木斗拱，三周莲瓣与完整铁刹、塔座均保留。"
+  },
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-98996381-9606-4fca-b834-1bb81ca81bae.png",
+  "checked_on": "2026-09-15",
+  "initial_prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  Subject: Nan'an Temple Pagoda, Yuxian/蔚县, Hebei. Exactly this Liao octagonal SOLID dense-eave brick pagoda, not a generic multistorey tower. Primary photograph shows accurate entire silhouette: a broad octagonal two-part pedestal, THREE rows of large upturned lotus petals, one unusually tall first body storey with a centered arched false door and tiny pagoda-shaped corner pilasters, then EXACTLY THIRTEEN closely spaced projecting eaves in total above that first body, tapering only gently. The thirteen include the lowest main projecting eave over the tall body and the highest cap-like broad eave; do NOT add an extra fourteenth. There are no rows of storey windows in the dense upper part. Keep the narrow neck, lotus top and complete iron stacked finial as seen. Secondary real photo clarifies base and lotus detail. Reduce Buddha ornament and brickwork to sparse contours and a few hints, no texture grids. Show full pedestal down to a simple low stone footing without surrounding rooftops. Near frontal, two adjacent narrow sides visible, portrait plate, all apex and base safely inside broad white margins, fine sparse black line.",
+  "final_prompt": "Make ONE geometrical change to this drawing. INSERT ONE additional complete thin projecting polygonal eave / roof tier between the two existing upper-middle tiers. Do not remove any tier. Current diagram has 12 eaves; new output MUST have 13 eaves. Keep the existing 12 eaves and add a clearly visible 13th. Extend the upper stack vertically by the height of one tier, shifting the finial upward into available white margin, if needed. The new tier must have the same width interpolation and thin corbelled brick outline as its adjacent tiers. Do not change anything else: retain current no-bracket upper roofs, lower carved body, three lotus rows, stone pedestal and fine pure black outlines on white. Do not add numbers or labels. The only visual change is one extra eave, all existing ones retained. Count the roof corners before returning."
+}

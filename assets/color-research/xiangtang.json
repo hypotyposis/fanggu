@@ -1,0 +1,51 @@
+{
+  "id": "xiangtang",
+  "name": "响堂山石窟",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xiangtang.png",
+    "assets/references/xiangtang-uchicago-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Northern Xiangtangshan Cave 9 main Buddha with its existing flame mandorla. Exact outline Image 1 including missing forearms, large broken chest/cheek surface patches, fragmented small flying attendants, lotus plinth and low stepped base. CURRENT COLORS in Photo 2: Buddha itself grey-brown stone, face darker brown, robe faded taupe with a faint dusty pink cast on knees and pale grey exposed broken areas. The SURVIVING PAINTED FLAME MANDORLA is a key distinction: alternating faded TURQUOISE/sea-green flame areas, deep muted BLUE gaps, small dusty ROSE/RED flame areas and off-white outlines; circular halo narrow pale blue/pink/cream bands. Apply that surviving color distribution within the SIMPLIFIED flame lines already drawn; don't copy dense new patterns. No gold body, no restoration of damage, no all-grey halo. Base weathered grey-brown. Keep matte, restrained and line-led.",
+  "material_observations": "芝加哥大学项目实拍：北响堂大佛洞主尊为灰褐石色，面部深棕褐，剥蚀处浅灰；现存背光保留青绿、深蓝、暗红与粉白边纹，不能一律画成裸石。",
+  "references": [
+    {
+      "file": "assets/references/xiangtang-uchicago-photo.jpg",
+      "source_page": "https://xts.uchicago.edu/zh-hans/node/93",
+      "image_url": "https://xts.uchicago.edu/sites/default/files/cave-photos/NC%20central%20pillar%20front%28W%29_0_0.jpg",
+      "author": "芝加哥大学响堂山石窟项目（页面未署单张摄影者）",
+      "license": "未明确开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 720,
+        "height": 540
+      },
+      "note": "研究项目原图题为“北洞中心柱正面（西侧）”，是主尊、手部残损与火焰背光的近正面实拍。非数字复原图。"
+    },
+    {
+      "file": "assets/references/xiangtang-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%93%8D%E5%A0%82%E5%B1%B1%E5%A4%A7%E4%BD%9B%E6%B4%9E_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%E5%8C%97%E5%93%8D%E5%A0%82%E5%B1%B1%E5%A4%A7%E4%BD%9B%E6%B4%9E_2.jpg/960px-%E5%8C%97%E5%93%8D%E5%A0%82%E5%B1%B1%E5%A4%A7%E4%BD%9B%E6%B4%9E_2.jpg",
+      "author": "H2v5o68z",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "2025-05-07",
+      "dimensions": {
+        "width": 960,
+        "height": 1280
+      },
+      "note": "同一正面主尊的近距离斜视照片，补足莲花座、台基及实际缺损形态。Commons作者字段H2v5o68z，上传历史用户名호고호。",
+      "role": "research_context_not_generation_input",
+      "usage_note": "此照片作为研究背景保留，未作为本次图像生成输入；实际生成输入以 input_images 为准。"
+    }
+  ],
+  "output": "assets/colored/xiangtang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-5eff3c9e-a4cf-4106-81b6-ff6066751422.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已查看输出：主尊现存断臂、胸部和脸部残损保留；灰褐石身与青绿、深蓝、暗红、粉白的现存背光彩绘区分清楚，没有把火焰纹当作金色发光体。",
+  "completed_at": "2026-09-15",
+  "reference_usage_note": "references 可包含研究背景照片；标注 role=research_context_not_generation_input 的照片未送入本次图像生成，实际生成输入以 input_images 为准。"
+}

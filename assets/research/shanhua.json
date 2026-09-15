@@ -1,0 +1,31 @@
+{
+  "id": "shanhua",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg/1280px-%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/shanhua-photo.jpg",
+    "assets/references/shanhua-front-photo.jpg"
+  ],
+  "subject": "大同善化寺普贤阁",
+  "source_note": "以2024年雨中正面照和2013年正面照交叉补足树木遮挡，保留双层屋檐、楼层间平座、三间立面和顶部三枚宝塔式装饰。",
+  "author": "Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "additional_sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Datong_Shanhua_Si_2013.08.29_12-39-50.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Datong_Shanhua_Si_2013.08.29_12-39-50.jpg/1280px-Datong_Shanhua_Si_2013.08.29_12-39-50.jpg"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Images 2 and 3 are complementary current photos as SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nLandscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room.\nSubject: 善化寺普贤阁, Puxian Pavilion at Shanhua Temple, Datong. Use the two photographs of the SAME pavilion to recover geometry hidden by trees. Tall three-bay pavilion with two tiled roof tiers, an intermediate open wooden balcony, and a central ground-floor tall door framed by blank walls; a smaller central upper-floor door flanked by blank wall bays. Distinctive three small finials at center of top ridge, with chiwen at ridge ends. Exactly two eaved roof levels; the balcony projects as a flat timber deck between, it is NOT a third tiled roof. Keep bay number and proportions. All openings white. Remove trees and statues inside door. Full frontal symmetry, show simple base and central stair. Landscape 1536×1024, pavilion centered at about 75% canvas height, generous blank side margins.",
+  "generated_file": "assets/generated/shanhua.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

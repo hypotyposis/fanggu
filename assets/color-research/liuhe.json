@@ -1,0 +1,44 @@
+{
+  "id": "liuhe",
+  "name": "杭州六和塔",
+  "subject": "杭州六和塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/liuhe.png",
+    "assets/references/liuhe-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSubject: Liuhe Pagoda, retain EXACTLY the THIRTEEN exterior eave tiers in the drawing and complete base. Photo shows weathered dull reddish-brown/salmon red walls and timber/window framing, deep charcoal GREY tiled roofs, muted grey-brown railings and brackets, dark recesses. Ground platform and railings neutral weathered grey stone. No green roof, gold overlay or bright vermilion. The old daytime photograph has low contrast; translate stable material divisions without importing magenta cast. Preserve every drawn opening and tier. Portrait1024x1536.",
+  "material_observations": [
+    "十三层外檐呈深灰瓦色，塔身壁面和木窗框为褪色暗赭红。",
+    "檐下与栏杆较深灰褐，门窗洞口昏暗；底部台阶、栏板灰石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/liuhe-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Liuhe_Pagoda.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Liuhe_Pagoda.jpg",
+      "author": "Bob Brooks",
+      "license": "Attribution only",
+      "license_url": "https://commons.wikimedia.org/wiki/File:Liuhe_Pagoda.jpg",
+      "date": "未知",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/liuhe.json",
+  "output": "assets/colored/liuhe.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-17c95bcf-11c0-4a0d-98d6-06eec78c7677.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "逐层比对原线稿，十三道外檐和完整塔刹、基座保留。",
+      "塔身暗赭红与灰瓦分区清楚，没有整塔金色覆盖或添加园林。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T06:54:02.786Z"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "yingxian",
+  "subject": "应县木塔",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Fogong_Pagoda_1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Fogong_Pagoda_1.jpg/500px-Fogong_Pagoda_1.jpg?download=1",
+  "reference_file": "assets/references/yingxian-full-photo.jpg",
+  "author": "Patrick Streule",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yingxian-full-photo.jpg",
+    "assets/generated/yingxian-draft.png"
+  ],
+  "source_note": "南向近正面全塔照；五层六檐，重绘补回首层副檐，删除匾额文字。",
+  "prompt": "Use case: style-transfer with a precise architectural correction. Image 1 is the black-on-white fine contour STYLE MASTER. Image 2 is the actual Yingxian Wooden Pagoda photograph. Image 3 is the draft illustration to edit. The draft has only five roof eaves, missing the double eave of the bottom floor. ADD ONE ADDITIONAL LOW PORCH ROOF midway across the bottom floor, below the existing lowest roof, so the bottom floor has TWO roof eaves just as photo 2. Preserve ALL FIVE existing roof eaves above; do not delete or merge any. The added lowest porch roof sits in front of the first floor entrance and extends wider than the roof above it, supported by an outer ring of timber columns. In final output exactly SIX roof outlines will be visible from base to top, with the bottom TWO close together and four upper full floors above. Keep delicate black fine lines on pure white, all surfaces unshaded white, full tower centered on portrait 1024×1536, remove all text. Preserve tower finial, balconies and understated bracket contours. Keep generous white margins, full base and tip uncut.",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: Pagoda of Fogong Temple / Yingxian Wooden Pagoda 应县木塔 as photograph 2. Preserve octagonal timber architecture, exactly FIVE visible main storeys and SIX outward roof eaves: the first storey has TWO roof eaves because of its surrounding low porch, and upper four storeys each have one main roof. Thus exactly SIX roof silhouettes overall, not nine. The four upper floors have projecting wooden balconies and distinctive large dougong brackets, and progressively narrower width. A slender multi-ring metal finial on low polygon pyramidal roof. Main front central face and symmetrical adjacent octagon facets. Full front elevation, corrected perspective; complete stone plinth and steps, tower 82% of portrait 1024×1536 height, full apex and base with margins. Remove trees, people, boards' text, background and all calligraphy; retain plaques only as blank thin rectangles if structurally needed. Reduce timber texture and roof tile detail: mostly outlines, white roofs, no dark under-eave shadows, restrained simplified brackets. Aim delicate fine contour elegance.",
+  "generated_file": "assets/generated/yingxian.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "verification": "Final image visually checked for full monument and correct tier count."
+}

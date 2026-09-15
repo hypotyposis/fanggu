@@ -1,0 +1,45 @@
+{
+  "id": "yuanjue",
+  "name": "浑源圆觉寺",
+  "subject": "浑源圆觉寺塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/yuanjue.png",
+    "assets/references/yuanjue-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Yuanjue Temple pagoda in Hunyuan. Keep first drawing's exact nine dense eaves, uppermost tall cap shape, octagonal masonry lower body, arched openings, carved pedestal and delicate openwork wire-like metal finial with bird at top. Color from photo: muted earthy tan/yellow-brown fired brick, occasional dusty reddish brick around lower storey, dark grey-brown eave tiles and age-darkened base. All imitation brackets and reliefs are brick, not painted wood. Finial and small bells are dark weathered iron. Preserve thin open finial silhouette against near-black, do not fill it into a solid bulb, no gold. No adjacent halls, fence, weeds, signs, construction earth or sky.",
+  "material_observations": [
+    "圆觉寺塔实拍为土黄褐砖塔，密檐及台基边缘深灰褐，首层砖面局部偏粉赭。",
+    "精细镂空金属塔刹与顶部风鸟为近黑铁色，雕刻不施彩绘。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/yuanjue-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hunyuan_Yuanjue_Si_Ta_2013.08.30_10-30-59.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Hunyuan_Yuanjue_Si_Ta_2013.08.30_10-30-59.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2013-08-30",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/yuanjue.json",
+  "output": "assets/colored/yuanjue.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-1853a19f-0ba6-4ba4-b934-13b72bce7b92.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "九层密檐和镂空刹顶与原稿相符，风鸟及塔基完整。",
+      "土黄褐砖体与深灰褐檐口保留，塔刹为暗铁色且中间镂空。",
+      "无施工围挡、周边殿宇或绿植。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T10:18:48.725Z"
+}

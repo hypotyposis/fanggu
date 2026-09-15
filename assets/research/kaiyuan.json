@@ -1,0 +1,38 @@
+{
+  "id": "kaiyuan",
+  "subject": "正定开元寺须弥塔与钟楼",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg/960px-20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg/960px-20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kaiyuan-tower-photo.jpg",
+    "assets/references/kaiyuan-bell-photo.jpg"
+  ],
+  "source_note": "两主体分别参考真实近正面照片，统一基线。须弥塔方形九层；钟楼两层三开间，移除藤蔓与现代附加建筑。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg/960px-20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+  "author": "Windmemories；Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: a paired plate for Zhengding KAIYUAN TEMPLE 正定开元寺 showing BOTH the Xumi Pagoda 须弥塔 and the Bell Tower 钟楼. Image 2 is the actual square Xumi Pagoda; Image 3 is the actual Bell Tower front. Keep both subjects in a single coherent fine-line illustration with shared baseline, pagoda at left, bell tower at right, separate complete silhouettes and a generous blank gap. Pagoda height approximately 2.5 times bell tower height for a readable comparison. Pagoda: EXACTLY NINE STOREYS / NINE broad projecting brick eave bands, square shaft seen nearly face-on, tall lower shaft and eight receding upper sections, tiny rectangular openings on axis, stepped masonry finial; no balconies or timber rails. Remove the modern small red entrance hut attached to its base; original pagoda outline and simple door only. Bell tower: EXACTLY TWO roof tiers and THREE facade bays, lower solid wall with rectangular central door, upper timber floor with three door/window bays, small balcony railing, deep eaves and hip-and-gable roof. Do not add floors. Both monuments have no surface brick pattern; all surfaces white, outline-only openings, a few fine structural lines. Remove people, trees, wires, fences, lamps, signs and all adjacent buildings. Landscape 1536×1024 with BOTH full monuments uncut, pagoda apex at 10% canvas height, base at 89%, balanced overall plate width and generous blank margins.",
+  "generated_file": "assets/generated/kaiyuan.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  }
+}

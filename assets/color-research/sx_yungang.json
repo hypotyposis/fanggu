@@ -1,0 +1,28 @@
+{
+  "id": "sx_yungang",
+  "name": "云冈石窟",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_yungang.png",
+    "assets/references/sx_yungang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Yungang Cave 20 main seated Buddha ONLY, same isolated close full figure with partial battered base as Image 1. Preserve straight topknot/head band, elongated earlobes, facial features, broad bare RIGHT shoulder at viewer LEFT, folded robe at viewer RIGHT, fragmented forearms/hands and low uneven base. STONE COLOR from main LARGE seated statue in Image 2: mostly light grey to cool grey-beige, pale grey head and chest with subtle grey-brown horizontal weather bands, darker charcoal-grey weathering below chest and within robe folds; damaged lower arms/base pale grey. No living flesh color, painted colored robe, gilding or gold. Smooth matte semi-flat planes, narrow lines and restrained sparse mineral grain. Do not copy cliff, halo carvings, side Buddha, holes absent from line drawing, or reconstruct broken arms.",
+  "material_observations": "云冈第20窟主尊正面彩照：头胸部以浅灰、灰褐石色为主，胸下和衣褶有较深灰黑层状风化带，下部残损灰白；无整身金色、红色衣袍。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F%E7%AC%AC20%E7%AA%9F%E6%AD%A3%E9%9D%A2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E4%BA%91%E5%86%88%E7%9F%B3%E7%AA%9F%E7%AC%AC20%E7%AA%9F%E6%AD%A3%E9%9D%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "output": "assets/colored/sx_yungang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-a6c936bf-1c4d-4a1a-ada8-43ac8cb085f3.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已查看输出：只绘第20窟主尊，面部、裸露右肩、衣褶、残手和不齐基部保留；以浅灰石、灰褐及深灰风化带设色，无金身、彩色衣袍、胁侍或背景石壁。",
+  "completed_at": "2026-09-15"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "quanzhouwenmiao",
+  "subject": "泉州府文庙大成殿",
+  "caption": [
+    "泉州府文庙 · 大成殿",
+    "清乾隆二十六年 · 保留宋式重檐庑殿"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Confucian_Temple_Dacheng_Hall_2019_(1).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Quanzhou_Confucian_Temple_Dacheng_Hall_2019_%281%29.jpg/1280px-Quanzhou_Confucian_Temple_Dacheng_Hall_2019_%281%29.jpg",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/quanzhouwenmiao-photo.jpg"
+  ],
+  "reference_dimensions": {
+    "width": 1280,
+    "height": 715
+  },
+  "source_note": "2019-03-15完整正面实拍。已检查七开间、双檐庑殿轮廓、石柱、宽台阶与两侧壁面；去除前景香炉、游客、两庑和树木，柱上雕龙作适度轮廓概括。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: only the Dacheng Hall of Quanzhou Confucian Temple 泉州府文庙大成殿, the exact frontal seven-bay wide hall shown in image2. Exactly TWO sweeping roof tiers, a double-eaved HIPPED roof, wide horizontal main ridge with symmetrical curled ridge ends and a very small central ridge ornament; a narrow long band of exposed brackets between roofs. SEVEN facade bays, six front stone dragon columns across the central five bays, outermost bays with white masonry walls, central three open doorways. Preserve photographed low stone podium, broad central steps and two small flanking step flights at the platform edge. Six stone dragon columns are identifiable with a few thin curved sculptural outlines, no dense dragon texture. No invented extra columns or roof tiers. Remove trees, people, incense burners, courtyard furniture, side corridors and modern plaque lettering. Use exceptionally sparse delicate contours, broad white roof surfaces with only a few suggestive curved lines, no tile grid and no solid shading even under eaves. Landscape1536x1024, wide low hall complete at86%canvaswidth with generous margins.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-f4b15c55-64f1-4bbd-91c3-f321233e5ea7.png",
+  "generated_file": "assets/generated/quanzhouwenmiao.png",
+  "dimensions": {
+    "width": 1678,
+    "height": 937
+  },
+  "historical_sources": [
+    {
+      "title": "泉州：百年泮宫重修近尾声 府文庙大成殿维修即将招投标",
+      "url": "https://www.quanzhou.gov.cn/zfb/xxgk/zfxxgkzl/qzdt/qzyw/201308/t20130820_141051.htm",
+      "publisher": "泉州市人民政府转载泉州晚报，报道市文广新局修缮工程",
+      "evidence": "大成殿建成于清乾隆二十六年（1761），仍保留宋咸淳年间重建的结构特点。按现殿定年为清，不能直接将宋式形制等同于宋代现存木构。"
+    },
+    {
+      "title": "泉州府文庙",
+      "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/201609/t20160913_372291.htm",
+      "publisher": "泉州市人民政府",
+      "evidence": "大成殿面阔七间、进深五间、重檐庑殿，殿前石雕龙柱；府文庙兼有文庙与府学体系。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "泉州府文庙",
+    "short": "泉州文庙",
+    "sub": "大成殿 · 宋式清构",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清 · 乾隆二十六年",
+    "year": 1761,
+    "yearLabel": "1761年",
+    "place": "福建泉州 · 鲤城",
+    "placeKey": "quanzhou",
+    "lat": 24.90889,
+    "lon": 118.58556,
+    "latlon_source": "https://zh.wikipedia.org/wiki/泉州府文庙",
+    "lede": "宽阔的双檐压住七间殿身，石雕龙柱在檐下舒展。泉州府文庙大成殿经清代重建，仍沿袭宋式庑殿的庄重骨架。",
+    "facts": [
+      {
+        "label": "清代现殿",
+        "text": "大成殿建成于清乾隆二十六年（1761），保留宋咸淳年间重建时的结构特点。"
+      },
+      {
+        "label": "七间庑殿",
+        "text": "大成殿面阔七间、进深五间，采用重檐庑殿顶，殿前石雕龙柱是立面特征。"
+      },
+      {
+        "label": "庙学一体",
+        "text": "泉州府文庙兼有祭孔与府学功能，见证古城的儒学教育传统；图版专取大成殿。"
+      }
+    ]
+  }
+}

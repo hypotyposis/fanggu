@@ -1,0 +1,40 @@
+{
+  "id": "sx_dingcun",
+  "name": "丁村民居",
+  "subject": "丁村民居丁坤大院院内厅堂与厢房片段",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_dingcun.png",
+    "assets/references/sx_dingcun-QSC2703.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 丁村民居丁坤大院院内厅堂与厢房片段.\nSPECIFIC MATERIAL MAP AND INVARIANTS: This is Ding Kun courtyard fragment: central single-storey three-bay hall with TWO front round wood posts on carved stone bases, tall inner walls of two side wings in converging perspective, center narrow doorway sees small rear doorway. Keep every existing edge and the open/cropped near ends of both wings, do not invent enclosed courtyard plan. Photo shows dull gray/taupe fired-clay roof tiles, gray-blue brick sidewalls with slight warm variation, weathered red-brown timber/lattice doors and dark brown carved lintels/brackets; postbases and platform neutralgray worn stone. Do NOT reproduce vivid red lanterns, banners or wallcouplets; these were removed in line master and are not wood pigment. Preserve front courtyard void dark like background; don't add stoneblocks or full pavement grid.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "实看丁坤大院院内照片，灰瓦、青灰砖厢房、褐红旧木门与深棕木雕，灰色石础台阶；两根木柱保留褐红底色，照片上鲜红对联灯笼均属可移动附物，不进入设色图。院心不补铺地图案或石块。",
+  "references": [
+    {
+      "file": "assets/references/sx_dingcun-QSC2703.jpg",
+      "source_page": "https://www.qings.com/memory/onroad/414632/",
+      "image_url": "https://www.qings.com/wp-content/uploads/2024/05/QSC2703-800x534.jpg",
+      "author": "青の日记，摄影者未单独署名",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 800,
+        "height": 534
+      },
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/sx_dingcun.png",
+  "prepared_at": "2026-09-15T20:13:39.261512+08:00",
+  "original_research": "assets/research/sx_dingcun.json",
+  "visual_review": "已实看院内实照、线稿、输出和风格样图；中央三间厅堂两柱、石础、两侧厢房围合视角与穿堂小门保留。灰瓦青灰砖、褐红旧木、灰色石基颜色有实照依据，院心保持深色留空。砖缝比原稿丰富，属于材质细化；没有添加灯笼、对联、铺地石块、人物或文字。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-cecfd53d-8782-423e-9860-b35a19b49c89.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-cecfd53d-8782-423e-9860-b35a19b49c89.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:16:31.849946+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T20:18:17.112357+08:00"
+}

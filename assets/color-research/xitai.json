@@ -1,0 +1,45 @@
+{
+  "id": "xitai",
+  "name": "宁海古戏台",
+  "subject": "宁海岙胡胡氏宗祠 · 戏台与勾连廊内部",
+  "owner": "main",
+  "worker": "recover_c_extension",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xitai.png",
+    "assets/references/xitai-alt-photo.jpg",
+    "assets/references/xitai-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 宁海岙胡胡氏宗祠 · 戏台与勾连廊内部.\nSPECIFIC MATERIAL MAP AND INVARIANTS: This is an INTERIOR looking up under Aohu Hu ancestral stage caisson and linked corridors, not an exteriorbuilding! Preserve exact cropped ceilingcurves, diagonalgreatbeams, two massive front columns and four thinner visible rear/sideposts, backwall and curtainfolds, allperspective edges and original cropping.2017 photos show black/charcoal painted columns extensively worn to graywood, dark round stonepostbases, diagonal beams faded gray-red-brown with exposedwood, carved spandrels and frieze relief pale graywood/cream with faded red outlines. Caisson painted timber alternates muted mint/turquoise-green, warm offwhite and muted vermilion/burgundy strips, small blue/pale ochre ornament; aged localizedcolor, NOT gold caisson. Backstage curtains are DEEP BURGUNDY RED fabric exactly in the folded shapes already in line1; upperbackwall weathered pale gray plaster/wood without inscriptions; keep centerbig blank horizontal panel plainlightgray and no sign. Floor graystone muted green-gray reflectedlight, a shallow subdued floorplane across bottom acceptable matchingline strokes, no new paving grid. Behind openvoids nearblack. Exclude all letters, ancestral plaque, lanterns/lighting, people, tricycle, tiedredplastic and visiblemodernitems not in line. No gold overlay.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "实看2017-05-29两张岙胡胡氏宗祠内部照：柱为磨损露灰木的黑漆柱，础灰黑；大梁灰红褐，雕刻淡灰木与米白，藻井及勾连廊椽板有浅青绿、灰白、暗红与少量蓝赭彩画。后景深酒红帷幕在线稿保留，应按织物设色；上壁灰白，地面灰石带轻微青灰。删除照片匾额文字、灯笼、游客和车辆，保持线稿裁切内部视角。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hu%27s_Ancestral_Temple_in_Aohu,_2017-05-29_05.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Hu%27s_Ancestral_Temple_in_Aohu%2C_2017-05-29_05.jpg/960px-Hu%27s_Ancestral_Temple_in_Aohu%2C_2017-05-29_05.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hu%27s_Ancestral_Temple_in_Aohu,_2017-05-29_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Hu%27s_Ancestral_Temple_in_Aohu%2C_2017-05-29_04.jpg/960px-Hu%27s_Ancestral_Temple_in_Aohu%2C_2017-05-29_04.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/xitai.png",
+  "prepared_at": "2026-09-15T20:30:33.003075+08:00",
+  "original_research": "assets/research/xitai.json",
+  "visual_review": "已实看两张2017内部照片、线稿、输出及风格样图。藻井半圆裁切、斜大梁与前后柱列、勾连廊和后帷幕关系保持。黑灰磨损柱、灰褐大梁、灰白青绿暗红藻井彩画、酒红布帘与灰石地面材质对应。未外观化戏台、未整体涂金；无匾额文字、灯具、灯笼、游客、车辆。木面与地面纹理为照片磨损的风格化概括。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-e895ff23-36cf-4b3f-bcc4-fb249435fc6a.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-e895ff23-36cf-4b3f-bcc4-fb249435fc6a.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T20:32:37.429752+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T20:34:34.785383+08:00"
+}

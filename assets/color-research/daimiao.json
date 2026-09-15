@@ -1,0 +1,65 @@
+{
+  "id": "daimiao",
+  "name": "岱庙天贶殿",
+  "subject": "泰安岱庙天贶殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/daimiao.png",
+    "assets/references/daimiao-geometry-photo.jpg",
+    "assets/references/daimiao-secondary-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 泰安岱庙天贶殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master Tiankuang hall of Dai Temple, its broad NINE-bay facade, low TWO roof bands, ten front posts and series of short low central steps. Do NOT replace with tall Forbidden City hall. Current photos: glazed roof tiles muted orange-yellow/ochre with gray-white weathering, red columns and dark vermilion lattice doors. Long painted friezes faded dark blue and jade green with thin ochre/gold geometric/dragon accents, brackets mostly dark weathered gray-green and brown. Stone plinth and steps pale neutral gray, lower wall blocks gray-brown. Existing small central upper plaque should stay blank dark red with green border without letters. No red lanterns, foreground pavilions, incense burner, text, blue sky, people or extra railings. Neutral matte local material colors rather than photo warm shadow or overall gold cast.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看原线稿、2012完整正面与2018日间近照。天贶殿两重黄橙琉璃屋瓦有灰白风化，红柱与深红隔扇、蓝绿梁枋金赭细饰，低灰石台阶；斗栱在阴影中偏灰绿褐。按九间低阔殿形设色，排除前方小亭灯笼和香炉。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:天贶殿_-_Tiankuang_Hall_-_2012.06_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/%E5%A4%A9%E8%B4%B6%E6%AE%BF_-_Tiankuang_Hall_-_2012.06_-_panoramio.jpg",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "reference_file": "assets/references/daimiao-geometry-photo.jpg",
+      "note": "2012年6月27日真实完整正面；上层庑殿和下层檐轮廓完整，前面两角亭应去除。来源原Panoramio，Commons2017核验许可。",
+      "file": "assets/references/daimiao-geometry-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:50151-%E5%B2%B1%E5%BA%99%E5%AE%8B%E5%A4%A9%E8%B4%B6%E6%AE%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/50151-%E5%B2%B1%E5%BA%99%E5%AE%8B%E5%A4%A9%E8%B4%B6%E6%AE%BF.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "reference_file": "assets/references/daimiao-secondary-photo.jpg",
+      "note": "2018年11月3日正面中央细节，补梁枋、门窗和柱列；两侧裁切，不用于整体轮廓。",
+      "file": "assets/references/daimiao-secondary-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/daimiao.json",
+  "output": "assets/colored/daimiao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-f96c6dab-d46c-4fb9-9559-84061e0d71f3.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：天贶殿九间十柱、两道低阔屋顶和多段短阶对应原稿。黄橙瓦带灰白风化、红柱门、蓝绿梁枋和灰石台基完整；上匾保持无字，未加入灯笼香炉。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 泰安岱庙天贶殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master Tiankuang hall of Dai Temple, its broad NINE-bay facade, low TWO roof bands, ten front posts and series of short low central steps. Do NOT replace with tall Forbidden City hall. Current photos: glazed roof tiles muted orange-yellow/ochre with gray-white weathering, red columns and dark vermilion lattice doors. Long painted friezes faded dark blue and jade green with thin ochre/gold geometric/dragon accents, brackets mostly dark weathered gray-green and brown. Stone plinth and steps pale neutral gray, lower wall blocks gray-brown. Existing small central upper plaque should stay blank dark red with green border without letters. No red lanterns, foreground pavilions, incense burner, text, blue sky, people or extra railings. Neutral matte local material colors rather than photo warm shadow or overall gold cast.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/daimiao.png",
+        "assets/references/daimiao-geometry-photo.jpg",
+        "assets/references/daimiao-secondary-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-f96c6dab-d46c-4fb9-9559-84061e0d71f3.png",
+      "output": "assets/colored/daimiao.png"
+    }
+  ]
+}

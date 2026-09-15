@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>古迹细读 · 访古</title>
+<meta name="description" content="一部私人的古迹图鉴：收藏想去的殿塔与石窟，记录走过的地方，以细线描留住千年。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css?v=20260915-arrival4">
+</head>
+<body class="detail-body">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="seal" viewBox="0 0 100 100">
+    <rect x="4" y="4" width="92" height="92" rx="6" fill="#c8442b"/>
+    <rect x="11" y="11" width="78" height="78" rx="3" fill="none" stroke="#ebe2cc" stroke-width="2.5" stroke-dasharray="26 4 12 3"/>
+    <text x="50" y="42" text-anchor="middle" font-family="Ma Shan Zheng, Noto Serif SC, serif" font-size="30" fill="#ebe2cc">访古</text>
+    <text x="50" y="80" text-anchor="middle" font-family="Ma Shan Zheng, Noto Serif SC, serif" font-size="30" fill="#ebe2cc">之印</text>
+  </symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="detail-back" id="detail-back" href="index.html#atlas">← 返回图鉴</a>
+    <a class="brand" href="index.html"><svg class="seal" aria-hidden="true"><use href="#seal"/></svg><b>访古</b></a>
+  </div>
+</header>
+<main class="detail-page">
+  <div class="detail-glyph" id="detail-glyph" aria-hidden="true"></div>
+  <div class="wrap">
+    <div id="detail-content"><p class="detail-geography mono" id="detail-geography"></p></div>
+    <section class="detail-missing" id="detail-missing" hidden>
+      <span class="empty-glyph" aria-hidden="true">寻</span>
+      <h1>还没有找到这处古迹</h1>
+      <p>这条链接可能有误，回到图鉴再寻一寻。</p>
+      <a class="journal-button" href="index.html#atlas">返回古迹图鉴</a>
+    </section>
+    <p class="journal-error" id="storage-error" role="alert" hidden></p>
+    <noscript><p>请启用 JavaScript 以查看图版、古迹资料与到访记录。</p><a href="index.html#atlas">返回图鉴</a></noscript>
+  </div>
+</main>
+<dialog class="journal-dialog" id="visit-dialog" aria-labelledby="visit-title">
+  <form id="visit-form">
+    <div class="dialog-head"><span class="mono">到访记</span><button class="dialog-close" type="button" data-close aria-label="关闭打卡记录">×</button></div>
+    <h2 id="visit-title">在此留一枚印记</h2><p class="dialog-intro" id="visit-place"></p>
+    <label>到访日期 <span class="optional">记不清可以留空</span><input type="date" name="visitedOn"></label>
+    <label>到访笔记 <span class="optional">选填</span><textarea name="note" rows="4" maxlength="12000" placeholder="记下那天看见的光、木纹与泥塑。"></textarea></label>
+    <p class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="journal-button" id="visit-to-wish">改为想去</button><button type="submit" class="journal-button primary">保存到访</button></div>
+  </form>
+</dialog>
+<div class="journal-toast" id="journal-toast" role="status" aria-live="polite" hidden></div>
+<footer class="detail-footer"><div class="wrap"><p class="mono">各图参照照片绘为细线稿，非实测图。 · 纸上一灯，檐下千年。</p></div></footer>
+<script src="sites.js?v=20260915-timeline1"></script>
+<script src="plates.js?v=20260915-timeline1"></script>
+<script src="colored-plates.js?v=20260915-colors1"></script>
+<script src="artwork.js?v=20260915-colors1"></script>
+<script src="library.js?v=20260915-arrival1"></script>
+<script src="catalog.js?v=20260915-timeline1"></script>
+<script src="navigation.js?v=20260915-timeline1"></script>
+<script src="visit-slider.js?v=20260915-arrival4"></script>
+<script src="journal.js?v=20260915-arrival1"></script>
+<script src="detail.js?v=20260915-arrival4"></script>
+</body>
+</html>

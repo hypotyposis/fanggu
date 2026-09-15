@@ -1,0 +1,67 @@
+{
+  "id": "xianzhonggu",
+  "name": "西安钟楼 · 鼓楼",
+  "subject": "西安钟楼与鼓楼并置合绘（左钟楼、右鼓楼）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xianzhonggu.png",
+    "assets/references/xianzhonggu-bell-alt-photo.jpg",
+    "assets/references/xianzhonggu-drum-front-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 西安钟楼与鼓楼并置合绘（左钟楼、右鼓楼）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Two buildings stay separate in the drawing, left BELL TOWER and right DRUM TOWER. Both have medium gray brick bases, pale gray stone balustrades, muted dark-red timber columns, weathered dark green/teal painted bracket and beam areas, and off-white ground-floor wall panels. Left Bell Tower: subdued green-gray glazed roofs and only its small existing finial gold. Right Drum Tower: charcoal-gray roof slopes, muted red-brown gable, small existing gold gable motif, dark wood and blue-green beam details; drums already drawn have pale ivory skins with dark-red surrounds. Keep all THREE eave bands on each, LEFT pyramidal roof and RIGHT long ridge. Stairways remain on LEFT only. Interpret the normal overcast photographs without copying deep exposure shadows. No additional lettering or traffic.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "分别核对2011钟楼和2023鼓楼阴天照。钟楼灰绿屋瓦、暗红柱、浅灰墙及灰砖台基，宝顶呈金色。鼓楼屋瓦近深灰，红褐柱/山面、青蓝梁饰，鼓面米白；两楼石栏浅灰。2010鼓楼背光照仅辅助身份，不作主色输入。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "author": "Gary Todd",
+      "date": "2011-03-13",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/xianzhonggu-bell-alt-photo.jpg",
+      "role": "钟楼日间近正面，攒尖顶、三重檐及台基台阶",
+      "file": "assets/references/xianzhonggu-bell-alt-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "author": "源義信",
+      "date": "2023-10-09",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-front-photo.jpg",
+      "role": "鼓楼山面照片，只用于核对歇山屋顶与三道檐线；初次生成参考",
+      "file": "assets/references/xianzhonggu-drum-front-photo.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/xianzhonggu.json",
+  "output": "assets/colored/xianzhonggu.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-30aa4f4e-d27a-497c-9a7a-6bb25dc84631.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "输出已查看：左钟楼攒尖、右鼓楼长脊，各三道檐带，左台阶右无台阶；灰绿与深灰瓦不同，红柱、灰台基、米白鼓面清楚，金色仅作原有小宝顶及少量装饰，背景近黑。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 西安钟楼与鼓楼并置合绘（左钟楼、右鼓楼）.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Two buildings stay separate in the drawing, left BELL TOWER and right DRUM TOWER. Both have medium gray brick bases, pale gray stone balustrades, muted dark-red timber columns, weathered dark green/teal painted bracket and beam areas, and off-white ground-floor wall panels. Left Bell Tower: subdued green-gray glazed roofs and only its small existing finial gold. Right Drum Tower: charcoal-gray roof slopes, muted red-brown gable, small existing gold gable motif, dark wood and blue-green beam details; drums already drawn have pale ivory skins with dark-red surrounds. Keep all THREE eave bands on each, LEFT pyramidal roof and RIGHT long ridge. Stairways remain on LEFT only. Interpret the normal overcast photographs without copying deep exposure shadows. No additional lettering or traffic.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/xianzhonggu.png",
+        "assets/references/xianzhonggu-bell-alt-photo.jpg",
+        "assets/references/xianzhonggu-drum-front-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-30aa4f4e-d27a-497c-9a7a-6bb25dc84631.png",
+      "output": "assets/colored/xianzhonggu.png"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sx_faxing",
+  "name": "长子法兴寺",
+  "subject": "山西长子法兴寺圆觉殿中央释迦牟尼坐像及莲座、台座",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_faxing.png",
+    "assets/references/sx_faxing-photo.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSubject: Faxing Temple's CENTRAL seated crowned Buddha only, including its lotus pedestal and rectangular altar already drawn. Real photograph shows existing GOLD surface on face, hands, chest and robe; retain as muted matte ochre-gold, NOT shiny chrome. Headband is deep muted cobalt blue, crown has small muted red/green/gold areas. Lotus petals alternate dark rusty red, blue-grey and faded grey-green; blue-bordered altar friezes with faded ochre and vermilion panels; lowest stone steps neutral grey. Preserve the raised right hand and left hand on knee, exact isolated figure and base; never import the two flanking statues or carpet. Portrait1024x1536.",
+  "material_observations": [
+    "室内主尊面、胸、手和衣褶可见现存金色表面，髻冠下缘为蓝色。",
+    "宝冠混合暗红、绿与金色；莲瓣有暗赭红、蓝灰、灰绿分区。",
+    "台座可见蓝色横枋、赭红与黄褐嵌板，底部灰白石阶；不复制地毯或两旁侍像。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/sx_faxing-photo.png",
+      "source_page": "https://www.xinchanfeng.com/1-10/20494.html",
+      "image_url": "https://www.xinchanfeng.com/wp-content/uploads/2022/10/2022100513281357-605x1024.png",
+      "author": "摄影者未署名；原图水印为“中国文化基金会”。新禅风（编辑志斌）转载禅林网图文",
+      "license": "未明示开放许可",
+      "license_url": null,
+      "date": "网页发布2022-10-05；摄影日期未注明",
+      "note": "已实际查看本地实拍；仅依照片作材质设色，不宣称文保级色彩校准。"
+    }
+  ],
+  "original_research": "assets/research/sx_faxing.json",
+  "output": "assets/colored/sx_faxing.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-28a74c24-12dc-4df8-9a1c-99ec749d1fdb.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主尊坐姿、举手、莲座与完整台座均保留，未加入左右侍像。",
+      "现存金色像身、蓝冠带及蓝红灰绿莲瓣得到区分；黑底无文字。"
+    ],
+    "limitations": "人工对照图稿与实拍检查；非严格像素配准，照片色温和曝光存在差异。"
+  },
+  "completed_at": "2026-09-15T06:46:59.525Z"
+}

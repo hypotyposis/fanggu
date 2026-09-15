@@ -1,0 +1,131 @@
+{
+  "id": "hb_jingzhouta",
+  "subject": "开福寺舍利塔 · 八角十三层楼阁式塔",
+  "caption": [
+    "景州塔正面",
+    "十三层八角塔身与铁刹网、铜葫芦"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%AF%E5%B7%9E%E5%A1%94_Jingzhou_Pagoda.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%E6%99%AF%E5%B7%9E%E5%A1%94_Jingzhou_Pagoda.JPG",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%AF%E5%B7%9E%E5%A1%94_Jingzhou_Pagoda.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/%E6%99%AF%E5%B7%9E%E5%A1%94_Jingzhou_Pagoda.JPG",
+      "author": "Inhorw",
+      "date": "21 May 2014, 11:24:11",
+      "source": "Own work",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/hb_jingzhouta-photo.jpg",
+      "reference_dimensions": {
+        "width": 1704,
+        "height": 2272
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_jingzhouta-photo.jpg"
+  ],
+  "ref_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_jingzhouta-photo.jpg"
+  ],
+  "source_note": "依据Inhorw于2014年拍摄的原塔。首稿十二层，编辑后十四层，最终再次针对性编辑并逐层核对为十三层。省文物局简介将1079误配元丰三年，采用公元1079并以元丰二年记载核对。",
+  "prompt": "Use case: precise-object-edit. Image 1 is the drawing to correct; image 2 is the actual Jingzhou Pagoda. The current drawing has FOURTEEN floors: a tall ground entry plus thirteen smaller upper arched-window floors. The real tower has THIRTEEN floors. Remove precisely ONE of the low repeating upper floors: delete the storey immediately above the tall ground entrance, including that storey's arched window and upper cornice. Bring all floors above it downward. Leave the other twelve floors and the ground entrance intact, giving 13 total. IMPORTANT count from the ground entrance upwards to the top: 1,2,3,4,5,6,7,8,9,10,11,12,13; no printed numbers. Change only this floor-count correction. Maintain the tower's slim octagonal taper, finial, pure-white surfaces, delicate black outlines, white window interiors and original complete platform. Do not add anything, do not fill or shade. Full figure with margin.",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one architectural heritage illustration for 访古. Image 1 is ONLY the STYLE MASTER, the existing Vairocana contour drawing. Image 2 and any further images are actual monument photographs and ONLY define subject geometry. Match the master's delicate, slightly organic thin black contours, sparse interior strokes, generous white surfaces and restrained visual density. Pure BLACK INK ON PURE WHITE. No black fills, shading, gray wash, hatching, pencil texture, dense brick or tile grids, color, text, labels, watermark or borders. Structural bays, eaves and silhouette must match the real monument. Reduce repetitive detail; do not trace every roof tile or brick. Openings stay white inside fine outlines. Complete apex and full base uncut, generous margins, centered near-frontal, reduced perspective. Remove tourists, trees, vegetation, fences, wires, vehicles, signs and surrounding modern structures. Ground consists of a few thin strokes.  SUBJECT: the JINGZHOU PAGODA (Kaifu Temple Sarira Pagoda), Jing County, Hebei. Preserve the actual tall tapering OCTAGONAL THIRTEEN-STOREY brick tower in photo. EXACTLY 13 visible storeys and 13 main projecting eave bands from ground to the small top, followed by the original tall tapering finial and stacked bronze-gourd tip. The first floor is noticeably tall with its arched entrance at ground level; an extra waist moulding on its top is NOT another floor. Above are twelve diminishing storeys, each with an arched opening framed lightly and a horizontal projecting brick bracket cornice. Follow photo silhouette and progressive narrowing. Portrait 1024x1536, near-frontal three facets visible, full finial and original ground base, 9 percent margin at top and bottom. Remove surrounding temples, trees, tents, lamps and visitors; tiny roof vegetation also removed. Keep tower shaft blank white except outlines of arched openings and selected brick/bracket details; absolutely no dark fills inside arches, no dense brickwork, no hatching.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_jingzhouta-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-706d4b76-5605-4fb2-8f5b-8783a4b3bca6.png",
+      "accepted": false,
+      "reason": "十二层"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is an existing thin black line drawing of the Jingzhou Pagoda and is the EDIT TARGET; image 2 is the real pagoda geometry reference; image 3 is the Vairocana STYLE MASTER only. Correct exactly ONE structural mistake: the drawing currently has TWELVE storeys/arched-window levels, but the real pagoda must have THIRTEEN. Insert ONE additional full windowed storey and its projecting cornice between the tall lowest entrance floor and the next upper floor. Keep all twelve existing floors as well, making thirteen total: one tall ground doorway floor plus TWELVE windowed upper floors. Compress upper storey heights slightly if necessary to retain the canvas and complete finial. Keep taper, octagonal plan, thin sparse contours, white surfaces, white arched openings, small platform and generous blank background. Do not remove another storey when adding one. Count 13 arched openings along the central axis before finishing. No words or numbering, no gray, shading or dense masonry. Follow original photo's finial more closely: a tapering openwork iron cage above a low cap and stacked bronze gourds, instead of a broad miniature roof. Entire tip and base uncut.",
+      "reference_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-706d4b76-5605-4fb2-8f5b-8783a4b3bca6.png",
+        "assets/references/hb_jingzhouta-photo.jpg",
+        "assets/references/longmen-style-black.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-3549e52a-bd30-489d-9f68-9d2c3536a9a1.png",
+      "accepted": false,
+      "reason": "十四层"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is the drawing to correct; image 2 is the actual Jingzhou Pagoda. The current drawing has FOURTEEN floors: a tall ground entry plus thirteen smaller upper arched-window floors. The real tower has THIRTEEN floors. Remove precisely ONE of the low repeating upper floors: delete the storey immediately above the tall ground entrance, including that storey's arched window and upper cornice. Bring all floors above it downward. Leave the other twelve floors and the ground entrance intact, giving 13 total. IMPORTANT count from the ground entrance upwards to the top: 1,2,3,4,5,6,7,8,9,10,11,12,13; no printed numbers. Change only this floor-count correction. Maintain the tower's slim octagonal taper, finial, pure-white surfaces, delicate black outlines, white window interiors and original complete platform. Do not add anything, do not fill or shade. Full figure with margin.",
+      "reference_files": [
+        "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-3549e52a-bd30-489d-9f68-9d2c3536a9a1.png",
+        "assets/references/hb_jingzhouta-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d2207764-3939-4619-afc5-6a11b285a5ad.png",
+      "accepted": true
+    }
+  ],
+  "generated_file": "assets/generated/hb_jingzhouta.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "历史年代与现存主体依据",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "name": "开福寺舍利塔",
+    "short": "开福寺舍利塔",
+    "sub": "八角十三层楼阁式塔",
+    "dyn": "song",
+    "tag": "北宋",
+    "era": "北宋 · 1079",
+    "year": 1079,
+    "yearLabel": "北宋 · 1079",
+    "yearApprox": false,
+    "yearNote": "省局公元1079与元丰三年并列有纪年笔误，正确应元丰二年；以1079为准并核碑记来源。",
+    "province": "河北",
+    "country": "CN",
+    "place": "河北 · 景县",
+    "placeKey": "hb_jingxian",
+    "placeName": "景县",
+    "lat": 37.69258,
+    "lon": 116.26308,
+    "coordinate_source": "https://zh.wikipedia.org/wiki/景州塔",
+    "lede": "十三层八角砖塔逐级收分，层层券窗与仿木斗拱檐带，在景州城中立起清楚的宋塔轮廓。",
+    "facts": [
+      {
+        "label": "年代",
+        "text": "现存塔身按北宋元丰二年（1079）重建纪年，金、明及近现代均有维修。"
+      },
+      {
+        "label": "层数",
+        "text": "塔为八角十三层楼阁式砖塔，高约63.85米，各层以券门和仿木斗拱檐带组织立面。"
+      },
+      {
+        "label": "塔刹",
+        "text": "塔顶保留铁刹网与叠置铜葫芦，国保名称为开福寺舍利塔，俗称景州塔。"
+      }
+    ],
+    "types": [
+      "pagoda"
+    ]
+  },
+  "coordinates": {
+    "lat": 37.69258,
+    "lon": 116.26308,
+    "source": "https://zh.wikipedia.org/wiki/景州塔"
+  },
+  "quality_check": {
+    "viewed_inputs": true,
+    "viewed_output": true,
+    "complete_silhouette": true,
+    "notes": "最终逐一数出中央13个券洞/层位；塔刹、台基完整，白底细线。"
+  },
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-d2207764-3939-4619-afc5-6a11b285a5ad.png",
+  "checked_on": "2026-09-15"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "hb_tuoluoni",
+  "name": "赵州陀罗尼经幢",
+  "subject": "赵州陀罗尼经幢 · 七级石经幢",
+  "worker": "worker_a",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hb_tuoluoni.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/hb_tuoluoni-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 赵州陀罗尼经幢 · 七级石经幢.\nOBSERVED MATERIAL COLORS: Viewed 2020 overcast daylight photo of the actual seven-section dharani pillar. Carved collars, lotus, projecting heads and upper pavilions warm pale beige/tan sandstone, selected shaft faces cooler pale grey with tan streaks. Main lowest shaft slightly darker grey vertical weathering below collar; broken rocklike support and two broad carved bases pale grey-beige. Small top bud darker grey-brown and metal rod dark. No gilding, paint or bright color; not one uniform golden stone. Source inscriptions are worn and shall remain understated non-legible surface traces.\nSPECIFIC GEOMETRY LOCK: Keep exact seven-stage carved pillar from original with all lotus collars, projecting heads, pavilion caps, long shaft intervals, broken lower bracketlike stone fragments and broad two-ring base. Do not repair broken edges, invent readable sutra text or add garlands absent from master. All negative spaces stay dark flat background. No fences, traffic poles, shops, trees, power cables or labels. Quiet broad stone planes and slight real wear only.\nPreserve original aspect ratio 1024:1536.",
+  "material_observations": "Viewed 2020 overcast daylight photo of the actual seven-section dharani pillar. Carved collars, lotus, projecting heads and upper pavilions warm pale beige/tan sandstone, selected shaft faces cooler pale grey with tan streaks. Main lowest shaft slightly darker grey vertical weathering below collar; broken rocklike support and two broad carved bases pale grey-beige. Small top bud darker grey-brown and metal rod dark. No gilding, paint or bright color; not one uniform golden stone. Source inscriptions are worn and shall remain understated non-legible surface traces.",
+  "references": {
+    "original_record": "assets/research/hb_tuoluoni.json",
+    "selected_photo_files": [
+      "assets/references/hb_tuoluoni-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E8%B5%B5%E5%B7%9E%E9%99%80%E7%BD%97%E5%B0%BC%E7%BB%8F%E5%B9%A22021_(1).jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/%E8%B5%B5%E5%B7%9E%E9%99%80%E7%BD%97%E5%B0%BC%E7%BB%8F%E5%B9%A22021_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "未知（原记录未明确提供）",
+        "source_note": "ScareCriterion12于2020年拍摄，文件名为2021上传年份。按实际层段与残损绘制，经文仅作浅淡纹理，不作为释文。"
+      }
+    ],
+    "additional_sources": [],
+    "note": "仅 selected_photo_files 为本次实际查看的实拍颜色依据。"
+  },
+  "original_research": "assets/research/hb_tuoluoni.json",
+  "output": "assets/colored/hb_tuoluoni.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-dcd55a33-c7a4-448f-92e6-acf614f27bd4.png",
+  "width": 1024,
+  "height": 1536,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 赵州陀罗尼经幢 · 七级石经幢.\nOBSERVED MATERIAL COLORS: Viewed 2020 overcast daylight photo of the actual seven-section dharani pillar. Carved collars, lotus, projecting heads and upper pavilions warm pale beige/tan sandstone, selected shaft faces cooler pale grey with tan streaks. Main lowest shaft slightly darker grey vertical weathering below collar; broken rocklike support and two broad carved bases pale grey-beige. Small top bud darker grey-brown and metal rod dark. No gilding, paint or bright color; not one uniform golden stone. Source inscriptions are worn and shall remain understated non-legible surface traces.\nSPECIFIC GEOMETRY LOCK: Keep exact seven-stage carved pillar from original with all lotus collars, projecting heads, pavilion caps, long shaft intervals, broken lower bracketlike stone fragments and broad two-ring base. Do not repair broken edges, invent readable sutra text or add garlands absent from master. All negative spaces stay dark flat background. No fences, traffic poles, shops, trees, power cables or labels. Quiet broad stone planes and slight real wear only.\nPreserve original aspect ratio 1024:1536.",
+      "input_images": [
+        "/Users/fuxiangyu/Workspace/fanggu/assets/generated/hb_tuoluoni.png",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/references/hb_tuoluoni-photo.jpg",
+        "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-170e-7fd3-80d4-bd9b40a06394/exec-dcd55a33-c7a4-448f-92e6-acf614f27bd4.png",
+      "generated_at": "2026-09-15T12:39:02.050459+00:00"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "style_sample_viewed": true,
+    "checks": [
+      "已实际查看原稿、2020实拍、样本及结果；七级经幢的莲座、人兽头、段柱、上部小亭与底部破石均保留。",
+      "雕刻较暖浅砂色、幢身灰白风化色、底台浅灰米色与照片相符；未鎏金也没有高饱和装饰。",
+      "断口与基座裂缝保留，经文只作弱刻痕，没有新文字或街景。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  }
+}

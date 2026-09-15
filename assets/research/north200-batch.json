@@ -1,0 +1,472 @@
+{
+  "date": "2026-09-15",
+  "baseline_count": 118,
+  "added_count": 82,
+  "total_count": 200,
+  "initialStatus": "unvisited",
+  "groups": {
+    "河南": [
+      "hn_chuzu",
+      "hn_zhongyue",
+      "hn_guanxing",
+      "hn_huishan",
+      "hn_tieta",
+      "hn_fanta",
+      "hn_kfhuiguan",
+      "hn_gongyi",
+      "hn_kangbaiwan",
+      "hn_baima",
+      "hn_guanlin",
+      "hn_lingquan",
+      "hn_xiaonanhai",
+      "hn_dapishan",
+      "hn_bigan",
+      "hn_luwang",
+      "hn_jidu",
+      "hn_fengxian",
+      "hn_fengxue",
+      "hn_xiangshan",
+      "hn_shedian",
+      "hn_wuhou",
+      "hn_chongfa",
+      "hn_zkguandi",
+      "hn_yuzhoutianning",
+      "hn_baolun",
+      "hn_xiaoshang"
+    ],
+    "河北": [
+      "hb_linji",
+      "hb_zdwenmiao",
+      "hb_anjibridge",
+      "hb_tuoluoni",
+      "hb_daodejing",
+      "hb_qingxiling",
+      "hb_yicihui",
+      "hb_ciyunge",
+      "hb_beiyue",
+      "hb_xiude",
+      "hb_dzgongyuan",
+      "hb_bishushanzhuang",
+      "hb_puning",
+      "hb_putuozongcheng",
+      "hb_qingdongling",
+      "hb_jingjue",
+      "hb_nanansi",
+      "hb_shijia",
+      "hb_xuanhuaqingyuan",
+      "hb_jimingyi",
+      "hb_wahuang",
+      "hb_xtkaiyuan",
+      "hb_puli",
+      "hb_cangzhoulion",
+      "hb_jingzhouta"
+    ],
+    "山西": [
+      "sx_yungang",
+      "sx_tianlongshan",
+      "sx_longshan",
+      "sx_chongfu",
+      "sx_zhenguo",
+      "sx_pingyaowenmiao",
+      "sx_pingyaowall",
+      "sx_yongzuo",
+      "sx_chongshan",
+      "sx_jiexiu_houtu",
+      "sx_jiexiu_chenghuang",
+      "sx_wubian",
+      "sx_yuci_chenghuang",
+      "sx_taifu",
+      "sx_jiezhou_guandi",
+      "sx_xinjiang_longxing",
+      "sx_jiangzhou_datang",
+      "sx_fusheng",
+      "sx_jishan_qinglong",
+      "sx_jishan_jiwang",
+      "sx_macun",
+      "sx_dingcun",
+      "sx_zezhou_yuhuang",
+      "sx_haihui",
+      "sx_kaihua",
+      "sx_youxian",
+      "sx_jishi",
+      "sx_xixi_erxian",
+      "sx_faxing",
+      "sx_chongqing"
+    ]
+  },
+  "ids": [
+    "hn_chuzu",
+    "hn_zhongyue",
+    "hn_guanxing",
+    "hn_huishan",
+    "hn_tieta",
+    "hn_fanta",
+    "hn_kfhuiguan",
+    "hn_gongyi",
+    "hn_kangbaiwan",
+    "hn_baima",
+    "hn_guanlin",
+    "hn_lingquan",
+    "hn_xiaonanhai",
+    "hn_dapishan",
+    "hn_bigan",
+    "hn_luwang",
+    "hn_jidu",
+    "hn_fengxian",
+    "hn_fengxue",
+    "hn_xiangshan",
+    "hn_shedian",
+    "hn_wuhou",
+    "hn_chongfa",
+    "hn_zkguandi",
+    "hn_yuzhoutianning",
+    "hn_baolun",
+    "hn_xiaoshang",
+    "hb_linji",
+    "hb_zdwenmiao",
+    "hb_anjibridge",
+    "hb_tuoluoni",
+    "hb_daodejing",
+    "hb_qingxiling",
+    "hb_yicihui",
+    "hb_ciyunge",
+    "hb_beiyue",
+    "hb_xiude",
+    "hb_dzgongyuan",
+    "hb_bishushanzhuang",
+    "hb_puning",
+    "hb_putuozongcheng",
+    "hb_qingdongling",
+    "hb_jingjue",
+    "hb_nanansi",
+    "hb_shijia",
+    "hb_xuanhuaqingyuan",
+    "hb_jimingyi",
+    "hb_wahuang",
+    "hb_xtkaiyuan",
+    "hb_puli",
+    "hb_cangzhoulion",
+    "hb_jingzhouta",
+    "sx_yungang",
+    "sx_tianlongshan",
+    "sx_longshan",
+    "sx_chongfu",
+    "sx_zhenguo",
+    "sx_pingyaowenmiao",
+    "sx_pingyaowall",
+    "sx_yongzuo",
+    "sx_chongshan",
+    "sx_jiexiu_houtu",
+    "sx_jiexiu_chenghuang",
+    "sx_wubian",
+    "sx_yuci_chenghuang",
+    "sx_taifu",
+    "sx_jiezhou_guandi",
+    "sx_xinjiang_longxing",
+    "sx_jiangzhou_datang",
+    "sx_fusheng",
+    "sx_jishan_qinglong",
+    "sx_jishan_jiwang",
+    "sx_macun",
+    "sx_dingcun",
+    "sx_zezhou_yuhuang",
+    "sx_haihui",
+    "sx_kaihua",
+    "sx_youxian",
+    "sx_jishi",
+    "sx_xixi_erxian",
+    "sx_faxing",
+    "sx_chongqing"
+  ],
+  "map_groups_added": [
+    {
+      "key": "hn_开封",
+      "name": "开封",
+      "prov": "河南",
+      "lat": 34.79523,
+      "lon": 114.357012
+    },
+    {
+      "key": "hn_gongyi",
+      "name": "巩义",
+      "prov": "河南",
+      "lat": 34.788729,
+      "lon": 112.985619
+    },
+    {
+      "key": "hn_xunxian",
+      "name": "浚县",
+      "prov": "河南",
+      "lat": 35.663,
+      "lon": 114.556761
+    },
+    {
+      "key": "hn_weihui",
+      "name": "卫辉",
+      "prov": "河南",
+      "lat": 35.463389,
+      "lon": 114.080611
+    },
+    {
+      "key": "hn_xinxiang",
+      "name": "新乡",
+      "prov": "河南",
+      "lat": 35.41921,
+      "lon": 113.92035
+    },
+    {
+      "key": "hn_jiyuan",
+      "name": "济源",
+      "prov": "河南",
+      "lat": 35.104722,
+      "lon": 112.575
+    },
+    {
+      "key": "hn_ruzhou",
+      "name": "汝州",
+      "prov": "河南",
+      "lat": 34.22785,
+      "lon": 112.89092
+    },
+    {
+      "key": "hn_pingdingshan",
+      "name": "平顶山",
+      "prov": "河南",
+      "lat": 33.813056,
+      "lon": 113.192931
+    },
+    {
+      "key": "hn_sheqi",
+      "name": "社旗",
+      "prov": "河南",
+      "lat": 33.057558,
+      "lon": 112.939975
+    },
+    {
+      "key": "hn_nanyang",
+      "name": "南阳",
+      "prov": "河南",
+      "lat": 32.980192,
+      "lon": 112.501578
+    },
+    {
+      "key": "hn_yongcheng",
+      "name": "永城",
+      "prov": "河南",
+      "lat": 33.942175,
+      "lon": 116.373177
+    },
+    {
+      "key": "hn_zhoukou",
+      "name": "周口",
+      "prov": "河南",
+      "lat": 33.633261,
+      "lon": 114.640111
+    },
+    {
+      "key": "hn_yuzhou",
+      "name": "禹州",
+      "prov": "河南",
+      "lat": 34.16734,
+      "lon": 113.46337
+    },
+    {
+      "key": "hn_sanmenxia",
+      "name": "三门峡",
+      "prov": "河南",
+      "lat": 34.791667,
+      "lon": 111.148611
+    },
+    {
+      "key": "hn_linying",
+      "name": "临颍",
+      "prov": "河南",
+      "lat": 33.718333,
+      "lon": 113.961667
+    },
+    {
+      "key": "hb_赵县",
+      "name": "赵县",
+      "prov": "河北",
+      "lat": 37.733778,
+      "lon": 114.765972
+    },
+    {
+      "key": "hb_易县",
+      "name": "易县",
+      "prov": "河北",
+      "lat": 39.355843,
+      "lon": 115.418318
+    },
+    {
+      "key": "hb_dingxing",
+      "name": "定兴",
+      "prov": "河北",
+      "lat": 39.291871,
+      "lon": 115.717729
+    },
+    {
+      "key": "hb_quyang",
+      "name": "曲阳",
+      "prov": "河北",
+      "lat": 38.619675,
+      "lon": 114.690165
+    },
+    {
+      "key": "hb_chengde",
+      "name": "承德",
+      "prov": "河北",
+      "lat": 41.002881,
+      "lon": 117.9364
+    },
+    {
+      "key": "hb_zunhua",
+      "name": "遵化",
+      "prov": "河北",
+      "lat": 40.146,
+      "lon": 117.6815
+    },
+    {
+      "key": "hb_yutian",
+      "name": "玉田",
+      "prov": "河北",
+      "lat": 39.81121,
+      "lon": 117.92016
+    },
+    {
+      "key": "hb_xuanhua",
+      "name": "宣化",
+      "prov": "河北",
+      "lat": 40.6125,
+      "lon": 115.05611
+    },
+    {
+      "key": "hb_huailai",
+      "name": "怀来",
+      "prov": "河北",
+      "lat": 40.45135,
+      "lon": 115.3088
+    },
+    {
+      "key": "hb_shexian",
+      "name": "涉县",
+      "prov": "河北",
+      "lat": 36.643333,
+      "lon": 113.617222
+    },
+    {
+      "key": "hb_xingtai",
+      "name": "邢台",
+      "prov": "河北",
+      "lat": 37.0736,
+      "lon": 114.50577
+    },
+    {
+      "key": "hb_lincheng",
+      "name": "临城",
+      "prov": "河北",
+      "lat": 37.43778,
+      "lon": 114.50167
+    },
+    {
+      "key": "hb_cangxian",
+      "name": "沧县",
+      "prov": "河北",
+      "lat": 38.206056,
+      "lon": 117.015889
+    },
+    {
+      "key": "hb_jingxian",
+      "name": "景县",
+      "prov": "河北",
+      "lat": 37.69258,
+      "lon": 116.26308
+    },
+    {
+      "key": "sx_shuozhou",
+      "name": "朔州",
+      "prov": "山西",
+      "lat": 39.3131,
+      "lon": 112.425739
+    },
+    {
+      "key": "sx_taigu",
+      "name": "太谷",
+      "prov": "山西",
+      "lat": 37.42222,
+      "lon": 112.55167
+    },
+    {
+      "key": "sx_yuci",
+      "name": "榆次",
+      "prov": "山西",
+      "lat": 37.67881,
+      "lon": 112.746
+    },
+    {
+      "key": "sx_fenyang",
+      "name": "汾阳",
+      "prov": "山西",
+      "lat": 37.344444,
+      "lon": 111.9175
+    },
+    {
+      "key": "sx_yuncheng",
+      "name": "运城",
+      "prov": "山西",
+      "lat": 34.91056,
+      "lon": 110.84333
+    },
+    {
+      "key": "sx_xinjiang",
+      "name": "新绛",
+      "prov": "山西",
+      "lat": 35.661688,
+      "lon": 111.200707
+    },
+    {
+      "key": "sx_jishan",
+      "name": "稷山",
+      "prov": "山西",
+      "lat": 35.592517,
+      "lon": 110.93836
+    },
+    {
+      "key": "sx_xiangfen",
+      "name": "襄汾",
+      "prov": "山西",
+      "lat": 35.84111,
+      "lon": 111.41333
+    },
+    {
+      "key": "sx_zezhou",
+      "name": "泽州",
+      "prov": "山西",
+      "lat": 35.54639,
+      "lon": 112.93667
+    },
+    {
+      "key": "sx_yangcheng",
+      "name": "阳城",
+      "prov": "山西",
+      "lat": 35.50167,
+      "lon": 112.56
+    },
+    {
+      "key": "sx_lingchuan",
+      "name": "陵川",
+      "prov": "山西",
+      "lat": 35.76389,
+      "lon": 113.25222
+    },
+    {
+      "key": "sx_zhangzi",
+      "name": "长子",
+      "prov": "山西",
+      "lat": 35.982502,
+      "lon": 112.933193
+    }
+  ],
+  "map_note": "单体实拍与坐标出处保存在对应研究JSON。已有城镇分组保持原位置，新城镇按本批单体坐标均值落点；地图表示已到访城镇，不用于现场导航。",
+  "review_note": "按现存主体或实际所绘局部登记年代；跨期与不确定纪年在yearNote及形制资料中说明。"
+}

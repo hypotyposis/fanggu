@@ -1,0 +1,30 @@
+{
+  "id": "qimuque",
+  "name": "登封启母阙",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/qimuque.png",
+    "assets/references/qimuque-close-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Qimu Que western pillar south face, its very distinctive stepped broken asymmetric top rising at RIGHT. Preserve source drawing's partial remaining cap, missing upper-left part, carved ring band and the very faint two animal reliefs in lower course, broad stone plinth. MATERIAL: pale weathered grey-beige stone with a few light muted ochre patches, most obvious on the small upper-right carved band; recesses and old erosion dark grey. Photo is indoors beneath warm wood roof: use a restrained neutral grey-brown stone interpretation, not an all-over golden cast. No reconstruction, no roof shelter, visitor barriers, labels or signage. Thin contour, mostly calm semi-flat mineral colors and sparse weathering; no dense all-over artificial mottling.",
+  "material_observations": "启母阙室内彩照：主体为浅灰褐石材，上部局部残存土赭调、浅赭灰阙顶，凹刻与接缝深灰。实物在暖顶棚下拍摄，避免把整座画成金黄。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250920_Qimu_Que_02.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/20250920_Qimu_Que_02.jpg/500px-20250920_Qimu_Que_02.jpg?download=1",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/qimuque-close-photo.jpg",
+      "description": "2025年9月20日西阙南面，完整近正面；与沙畹1907年西阙南面原图逐块石缝、圈纹和残顶比对一致。"
+    }
+  ],
+  "output": "assets/colored/qimuque.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e2d-a458-73d0-bb60-eb2b3a86e6bd/exec-dc0c2117-8c19-46be-90df-0c2a6042b071.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已查看输出：右侧残顶、左上缺失、套环纹与下层浅浮雕保留；浅灰褐主色与上部小面积赭灰可辨，未补全残缺，也未带入标牌、隔离带。",
+  "completed_at": "2026-09-15"
+}

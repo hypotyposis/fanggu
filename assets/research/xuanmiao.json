@@ -1,0 +1,132 @@
+{
+  "id": "xuanmiao",
+  "subject": "苏州玄妙观三清殿（非山门）",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Suzhou_Xuanmiao_Guan_2015.04.23_17-53-17.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Suzhou_Xuanmiao_Guan_2015.04.23_17-53-17.jpg/1280px-Suzhou_Xuanmiao_Guan_2015.04.23_17-53-17.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Suzhou_Xuanmiao_Guan_2015.04.23_17-53-17.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Suzhou_Xuanmiao_Guan_2015.04.23_17-53-17.jpg/1280px-Suzhou_Xuanmiao_Guan_2015.04.23_17-53-17.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xuanmiao-front2-photo.jpg",
+      "dimensions": [
+        1280,
+        853
+      ],
+      "date": "2015-04-23",
+      "note": "三清殿前左斜视，核对完整主体；排除之前下载的山门照片。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:San_Qing_Dian.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/San_Qing_Dian.jpg",
+      "author": "Gisling（唐戈）",
+      "license": "CC BY 2.5（作者提供的多许可之一）",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/",
+      "reference_file": "assets/references/xuanmiao-sanqing-photo.jpg",
+      "dimensions": [
+        1200,
+        900
+      ],
+      "date": "2006-10",
+      "note": "三清殿前右斜视，与第一张共同核对两檐、檐角及前脸；不描绘前方香炉亭。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xuanmiao-front2-photo.jpg",
+    "assets/references/xuanmiao-sanqing-photo.jpg",
+    "assets/references/xuanmiao-initial-line.png"
+  ],
+  "source_note": "两张相向实景共同核对真正九间三清殿；初稿中央三门误落于同一大间，第二次内置imagegen改为十根前柱、九间并清除密集瓦纹。早先下载山门照片未用作任何生成输入。",
+  "prompt": "Use case: precise architectural edit and style transfer. Image1 is the first generated Sanqing Hall drawing to correct. Image2 is the sparse Buddha style master, image3 is the real photograph of the Sanqing Hall for geometry. Keep the actual existing two-eave hip-and-gable roof silhouette, dragon ridge ends and bottle-with-three-halberds finial, and the long low proportions. Change the lower facade to have precisely NINE structural bays separated by TEN visible timber columns. Currently the drawing wrongly has only EIGHT columns and SEVEN structural bays, treating all three central door groups as one oversized bay. Correct this: ten evenly spaced front columns from the left end to the right end, creating nine near-equal bays; bays1,2,3 are windows, bays4,5,6 are door groups, bays7,8,9 are windows. Each of the THREE central door bays must be visibly separated from its neighbor by a full-height round timber column aligned with a bracket above it, same type as other columns. Do not add extra windows or extra bays at the sides. Window heads are plain rectangular with restrained simple vertical bars, not elaborate Islamic cusps. Keep a few subtle mullions only, all surfaces white.\nErase at least90percent of the repeated tile-direction lines in both roof planes, leaving no more than6 short isolated very thin strokes per entire roof level. All large roof planes should be nearly blank pure white, matching the master density. Reduce each door and window lattice to just6spaced vertical lines and2horizontal lines; no grid texture. Simplify the tiny continuous ornamental scroll bands and repeated under-eave lines into sparse structural contours. No solid black, no grey fill, no hatch, no text. Uniformly scale the whole corrected building down so the farthest eave tips lie between x150 and x1386 on1536x1024white canvas; all nine bays together within this span, generous top/bottom space. Do not crop or change number of roof levels. Save refined thin black-line illustration on white.\n",
+  "generated_file": "assets/generated/xuanmiao.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-026bd595-8884-4eb5-958b-7cd9b2a3fcf0.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "玄妙观 · 三清殿正面",
+    "南宋淳熙六年（1179） · 九间重檐歇山"
+  ],
+  "historical_sources": [
+    {
+      "title": "道教文化中心资料库：苏州玄妙观",
+      "url": "https://zh.daoinfo.org/index.php?mobileaction=toggle_view_desktop&title=蘇州玄妙觀&variant=zh-hans",
+      "supports": "三清殿1179，面阔九间、进深六间，重檐九脊；据此区别玄妙观山门。"
+    },
+    {
+      "title": "苏州市文化广电和旅游局：文物保护单位名录",
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/whbf/list_tt.shtml",
+      "supports": "玄妙观三清殿的国保身份与宋代断代。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "玄妙观三清殿",
+    "short": "玄妙观",
+    "sub": "苏州 · 南宋九间大殿",
+    "dyn": "song",
+    "tag": "南宋",
+    "era": "南宋 · 淳熙六年",
+    "year": 1179,
+    "yearLabel": "1179",
+    "yearApprox": false,
+    "place": "江苏 · 苏州 · 观前街",
+    "province": "江苏",
+    "placeKey": "suzhou",
+    "lat": 31.314444,
+    "lon": 120.621944,
+    "coordinate_source": "https://commons.wikimedia.org/wiki/Category:Xuanmiao_Temple_(Suzhou)",
+    "coordinate_note": "公开寺观对象点31°18′52″N、120°37′19″E换算。",
+    "lede": "玄妙观三清殿以九间宽阔殿身托起两重歇山檐，长脊上的鸱吻与平升三戟将轮廓引向天空。这座南宋大殿仍是苏州古城中尺度醒目的早期木构。",
+    "facts": [
+      "三清殿重建于南宋淳熙六年（1179），不能与玄妙观最初创建年代混为一谈。",
+      "殿宇面阔九间、进深六间，重檐歇山，立于宽阔台基上。",
+      "图版选取三清殿单体，保留重檐和长脊轮廓，排除观前山门与殿前香炉亭。"
+    ]
+  },
+  "generation_history": [
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: ONLY the large SANQING HALL of Xuanmiao Taoist Temple in Suzhou (玄妙观三清殿), rebuilt1179, shown in Image2(front-left oblique) and Image3(front-right oblique). Draw the grand long NINE-BAY main hall, not the small entrance gate and not the freestanding incense burner pavilion in front. The two photos are opposing views of the same wide hall and establish its complete symmetrical facade. Precisely NINE bays across the building (ten frontal column positions), with THREE central door bays and three flanking window/wall bays on EACH side. The upper great roof is broad and deep, over a narrower separate lower skirt roof wrapping the building: exactly TWO eave levels, traditional DOUBLE-EAVED HIP-AND-GABLE roof. Preserve the long decorated high ridge, the two monumental dragon-like ridge end ornaments, and the small central bottle-with-three-halberds ridge finial as sparse outlines, no modern lightning rods. Upper roof width nearly as wide as lower roof. Preserve the large open horizontal band beneath upper eaves and blank hanging vertical tablet above the center, but no dark fill. Keep actual long low horizontal hall proportions, not a narrow five-bay gate. Use the photos to place plain side-wall bases with window panels and the central doors, a low stone plinth with central steps. Remove all incense pavilion, fences, trees, scooters, people, hanging lanterns, stone lions, signage, lettering and courtyard objects. Complete outer eave tips from corresponding opposite-side photo and symmetry. Front elevation almost straight-on with verticals vertical, no extra wings. Window grids simplified to5to6very thin strokes per window; roof surfaces entirely white except at most6short separated tile-direction contours per roof. No repetitive stripes or tile lattice. Reduce ornamental density strongly, keep only main bracket silhouettes. Composition1536x1024, complete eave-to-eave width fits within x150 and x1386, generous white margins. Match the sparse delicate organic contours of mother.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xuanmiao-front2-photo.jpg",
+        "assets/references/xuanmiao-sanqing-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-855de8e8-a84a-43b2-9c0f-4021fbafff0b.png",
+      "accepted": false,
+      "note": "初稿中央三个门组置于同一结构间，且瓦纹过密，已纠正。"
+    },
+    {
+      "generation_tool": "built-in image_gen",
+      "prompt": "Use case: precise architectural edit and style transfer. Image1 is the first generated Sanqing Hall drawing to correct. Image2 is the sparse Buddha style master, image3 is the real photograph of the Sanqing Hall for geometry. Keep the actual existing two-eave hip-and-gable roof silhouette, dragon ridge ends and bottle-with-three-halberds finial, and the long low proportions. Change the lower facade to have precisely NINE structural bays separated by TEN visible timber columns. Currently the drawing wrongly has only EIGHT columns and SEVEN structural bays, treating all three central door groups as one oversized bay. Correct this: ten evenly spaced front columns from the left end to the right end, creating nine near-equal bays; bays1,2,3 are windows, bays4,5,6 are door groups, bays7,8,9 are windows. Each of the THREE central door bays must be visibly separated from its neighbor by a full-height round timber column aligned with a bracket above it, same type as other columns. Do not add extra windows or extra bays at the sides. Window heads are plain rectangular with restrained simple vertical bars, not elaborate Islamic cusps. Keep a few subtle mullions only, all surfaces white.\nErase at least90percent of the repeated tile-direction lines in both roof planes, leaving no more than6 short isolated very thin strokes per entire roof level. All large roof planes should be nearly blank pure white, matching the master density. Reduce each door and window lattice to just6spaced vertical lines and2horizontal lines; no grid texture. Simplify the tiny continuous ornamental scroll bands and repeated under-eave lines into sparse structural contours. No solid black, no grey fill, no hatch, no text. Uniformly scale the whole corrected building down so the farthest eave tips lie between x150 and x1386 on1536x1024white canvas; all nine bays together within this span, generous top/bottom space. Do not crop or change number of roof levels. Save refined thin black-line illustration on white.\n",
+      "reference_files": [
+        "assets/references/xuanmiao-initial-line.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/xuanmiao-front2-photo.jpg"
+      ],
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-026bd595-8884-4eb5-958b-7cd9b2a3fcf0.png",
+      "accepted": true,
+      "note": "十柱九间、两重檐；屋面稀疏化。"
+    }
+  ],
+  "verification": "已查看母版、所有输入照片及生成结果；主体完整，屋顶层数与开口对应，黑细线白底。",
+  "initial_prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: ONLY the large SANQING HALL of Xuanmiao Taoist Temple in Suzhou (玄妙观三清殿), rebuilt1179, shown in Image2(front-left oblique) and Image3(front-right oblique). Draw the grand long NINE-BAY main hall, not the small entrance gate and not the freestanding incense burner pavilion in front. The two photos are opposing views of the same wide hall and establish its complete symmetrical facade. Precisely NINE bays across the building (ten frontal column positions), with THREE central door bays and three flanking window/wall bays on EACH side. The upper great roof is broad and deep, over a narrower separate lower skirt roof wrapping the building: exactly TWO eave levels, traditional DOUBLE-EAVED HIP-AND-GABLE roof. Preserve the long decorated high ridge, the two monumental dragon-like ridge end ornaments, and the small central bottle-with-three-halberds ridge finial as sparse outlines, no modern lightning rods. Upper roof width nearly as wide as lower roof. Preserve the large open horizontal band beneath upper eaves and blank hanging vertical tablet above the center, but no dark fill. Keep actual long low horizontal hall proportions, not a narrow five-bay gate. Use the photos to place plain side-wall bases with window panels and the central doors, a low stone plinth with central steps. Remove all incense pavilion, fences, trees, scooters, people, hanging lanterns, stone lions, signage, lettering and courtyard objects. Complete outer eave tips from corresponding opposite-side photo and symmetry. Front elevation almost straight-on with verticals vertical, no extra wings. Window grids simplified to5to6very thin strokes per window; roof surfaces entirely white except at most6short separated tile-direction contours per roof. No repetitive stripes or tile lattice. Reduce ornamental density strongly, keep only main bracket silhouettes. Composition1536x1024, complete eave-to-eave width fits within x150 and x1386, generous white margins. Match the sparse delicate organic contours of mother.",
+  "initial_reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xuanmiao-front2-photo.jpg",
+    "assets/references/xuanmiao-sanqing-photo.jpg"
+  ],
+  "final_reference_files": [
+    "assets/references/xuanmiao-initial-line.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/xuanmiao-front2-photo.jpg"
+  ]
+}

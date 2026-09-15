@@ -1,0 +1,102 @@
+{
+  "id": "xianshen",
+  "subject": "介休祆神楼过街楼与乐楼组合近正面",
+  "caption": [
+    "介休祆神楼 · 过街楼与乐楼",
+    "清 · 顺治末至康熙初重建"
+  ],
+  "source_page": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+  "image_url": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+  "author": "国家图书馆赴介休调研小组（论文作者赵依澍；文内注记插图为调研小组实地拍摄）",
+  "license": "未明确开放许可；另一结构参考为 CC BY-SA 4.0",
+  "license_url": null,
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xianshen-nlc-000.jpg",
+    "assets/references/xianshen-photo.jpg"
+  ],
+  "references": [
+    {
+      "file": "assets/references/xianshen-nlc-000.jpg",
+      "source_page": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+      "image_url": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+      "author": "国家图书馆赴介休调研小组",
+      "license": "未明确开放许可",
+      "license_url": null,
+      "dimensions": {
+        "width": 796,
+        "height": 597
+      },
+      "note": "《文津流觞》第63期文章第1页（印刷页87）图1原嵌入照片，直接由PDF提取。近正面略斜视角为主体布局参考。"
+    },
+    {
+      "file": "assets/references/xianshen-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xianshenlou.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Xianshenlou.jpg/1280px-Xianshenlou.jpg",
+      "author": "Wishva de Silva",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": {
+        "width": 1280,
+        "height": 960
+      },
+      "note": "2020-10-27实拍，补充柱列、铺作、重檐和复合楼体转角关系。生成改变视角、移除环境、转为细线插画。"
+    }
+  ],
+  "source_note": "母版及两张实景照片共同输入。采用国家图书馆实拍图的近正面斜视角，保留凸字形复合楼体、并列顶层山花、突出过街楼、相接乐楼与交错重檐；不是轴测复原或测绘图。屋瓦与格扇以细线概括，移除现代环境及前景附属物。输入输出已目视检查。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject: Jiexiu Xianshen Tower 介休祆神楼, the actual COMPOUND GATE/THEATRE/STREET-PASSAGE TOWER in images2and3. Image2 is the preferred near-frontal, slightly oblique full shape; image3 supplies clearer structural details from a stronger oblique angle. Keep the image2 viewpoint. This is a contiguous T-shaped, multi-roof COMPOSITE building, not a symmetrical standalone pagoda. Its left/front projecting square street-passage pavilion connects continuously into the wider, set-back theatre mass on the right. Preserve TWO separate top gables visible side by side, the taller hipped-gable crowns, the smaller gable over the projecting front balcony, the interlaced upward-sweeping eave corners, and all four apparent levels of eave/balcony lines as actually visible in image2. Keep the conspicuous low uninterrupted sweeping roof in front, raised on tall slender round columns with three open passage bays below it; these pillars have modest cylindrical stone bases on a low plinth. Upper windows and balcony openings remain white rectangles, outlined with selective lattice strokes. The wider right/rear mass has its own stacked eave lines and a ground-level plain brick wall, connected at the inner corner. Preserve the asymmetrical compound outline, no invented left wing or extra tower. Reduce foreshortening very slightly but do not flatten the connected parts into a generic temple front. Keep tiny outlines suggesting ridge-end beasts, finials, hanging corner bells and bracket clusters; simplify repetitive bracket and tile detail to about20% of the photographed density. Roof planes and shaded eave undersides MUST stay broad WHITE areas, with only a handful of long faint tile-guiding strokes; never black fills, hatch shadows, dense brick grids or full tile nets. No text on plaques or banners. Remove modern buildings behind, lower-right neighboring green-roof hall that obscures the tower, modern signs, tourists, motorcycles, parked cars, utility cables, chains, fences, and foreground lion statues. Do not add symmetrical stairs; retain a few short low platform outlines as seen. Show the complete compound tower and all upward-curled roof tips with generous pure-white margin, a landscape1536x1024 composition, approximately82%imageheight and82%width, matching image1's restrained fine organic contour weight.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-5b0c92d1-5be7-441a-96a8-7f3b613da067.png",
+  "generated_file": "assets/generated/xianshen.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "historical_sources": [
+    {
+      "title": "从历代《介休方志》看祆神楼与三结义庙的“前世今生”",
+      "url": "https://www.nlc.cn/migrated/www.nlc.cn/newhxjy/wjsy/wjls/wjqcsy/wjd63q/201811/P020181123501145064276.pdf",
+      "publisher": "国家图书馆《文津流觞》第63期，赵依澍，2018",
+      "evidence": "依据县志及现场调研辨析：现见祆神楼与三结义庙为清代重建重修，顺治十六年（1659）火灾后于1660—1668年间重建，清中期再修。文章区分明嘉靖改祀与清代重建，指出把改建年记为万历有误。建筑平面呈凸字形，前部过街楼与后部山门、戏楼相连。",
+      "local_file": "assets/research/xianshen-history.pdf"
+    },
+    {
+      "title": "祆神楼",
+      "url": "https://zh.wikipedia.org/wiki/祆神楼",
+      "publisher": "维基百科（辅助定位及题记记录，不作为主要断代依据）",
+      "evidence": "提供建筑坐标；引《山西古建筑地图》等记载乐楼琉璃脊题记康熙六年（1667）。本条保守采用国家图书馆实地研究给出的清初重建范围，不直接采创建传说年代。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "介休祆神楼",
+    "short": "祆神楼",
+    "sub": "过街楼与乐楼 · 复合楼阁",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清 · 顺治末至康熙初",
+    "year": 1664,
+    "yearLabel": "顺治末—康熙初",
+    "yearApprox": true,
+    "yearNote": "时间轴1664仅为1660—1668重建范围的约略中点；不作为确切建造年份。现存主体依国家图书馆实地研究定为清初重建，勿用宋代创建传说或明代改祀年着色。",
+    "place": "山西介休 · 东关",
+    "placeKey": "jiexiu",
+    "lat": 37.03417,
+    "lon": 111.92444,
+    "latlon_source": "https://zh.wikipedia.org/wiki/祆神楼",
+    "lede": "街道从楼下穿过，戏台在门楼上展开。祆神楼把不同用途叠进相连的楼阁，琉璃重檐与山花交错，勾出介休城里特别的天际线。",
+    "facts": [
+      {
+        "label": "清初重建",
+        "text": "现存楼阁为顺治末至康熙初重建，后来又经修缮；楼名与早期祆神信仰的历史，不等同于现存木构年代。"
+      },
+      {
+        "label": "三者合一",
+        "text": "过街楼、山门与乐楼组成凸字形建筑，前部通行、后部入庙，上层兼作戏台。"
+      },
+      {
+        "label": "重檐交错",
+        "text": "相接的歇山屋顶、突出山花与层层挑檐形成复合轮廓，琉璃脊饰和木构铺作彼此映衬。"
+      }
+    ]
+  }
+}

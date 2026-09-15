@@ -1,0 +1,21 @@
+{
+  "id": "tiantan",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Hall_of_Prayer_for_Good_Harvest_full_exterior_view.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hall_of_Prayer_for_Good_Harvest_full_exterior_view.jpg/1280px-Hall_of_Prayer_for_Good_Harvest_full_exterior_view.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tiantan-photo.jpg"
+  ],
+  "subject": "北京天坛祈年殿",
+  "source_note": "2014年南侧正面实景，祈年殿三重圆檐与三层圆坛完整保留，去除游客与院落设施。",
+  "author": "Daniel Case",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nLandscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room.\nSubject: 北京天坛祈年殿 (Hall of Prayer for Good Harvests, Temple of Heaven). Preserve the photograph's south-facing axial view: exactly THREE blue-roofed concentric circular conical roof tiers (rendered outline only), gold orb finial (outline only), round columned drum and three circular stone terrace levels with a central stair. Correct perspective lightly. Remove all tourists, lamps, kiosks, guard boxes and trees. Keep terrace curved contours and sparse baluster indications; eliminate tiny carved detail. Keep roof concentric smooth contours and a limited handful of radial ribs, not tile grids. Temple and all three terrace tiers fully visible, canvas 1536×1024, central temple height about 65% of canvas and terraces span 82% width. Pure white openings, no black fills, no text.",
+  "generated_file": "assets/generated/tiantan.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ]
+}

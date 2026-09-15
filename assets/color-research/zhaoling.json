@@ -1,0 +1,102 @@
+{
+  "id": "zhaoling",
+  "name": "仙游昭灵宫",
+  "subject": "福建仙游顶东湖村东湖昭灵宫现存单殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/zhaoling.png",
+    "assets/references/zhaoling-photo-245.jpg",
+    "assets/references/zhaoling-photo-285.jpg",
+    "assets/references/zhaoling-photo-280.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 福建仙游顶东湖村东湖昭灵宫现存单殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the FIRST line master's single hip-and-gable roof, central small pagoda-like ridge finial, inclined wooden rainboards with a central cutout and curved veranda bench railings. The inclined lower band is WOODEN rainboarding, not a second tiled roof. Roof tiles are weathered dark charcoal gray, gray ridge with small restrained moss olive tints. Veranda posts, panels, rails and rainboard have worn dusty muted rose-purple/maroon paint revealing gray-brown timber; close photo shows faint faded green weathered strips along board joins, use extremely subdued accents. Foundation is mottled cool gray and pale stone with darker damp-weathered areas, stair treads gray. No imperial vermilion, no green glazed tile roof, no additional roofs, no vegetation, people or text. All wood remains worn and muted rather than vividly restored.\nPreserve the original line master aspect ratio 1536:1024.",
+  "material_observations": "已查看线稿和实访视频04:05、04:45、04:40原帧。昭灵宫瓦顶为深灰，檐下斜板是木挡雨板，其现色为褪色粉紫红/红褐并有很淡的绿痕，回廊美人靠同为褪色木作。基座为灰白石材、台阶偏深灰。保持单檐，不将挡雨板画作第二道瓦檐。",
+  "references": [
+    {
+      "source_page": "https://jingxuan.douyin.com/m/video/7680507695450855909",
+      "image_url": "https://v26-web.douyinvod.com/1b677cd0cc050f68aeda8eb8398b4612/6aa829f6/video/tos/cn/tos-cn-ve-15c000-ce/okc7ipSfIIe0SAzJUqVBWG0DLEBKOq7egA2L67/?a=6383&ch=26&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=2397&bt=2397&cs=0&ds=6&ft=khMy6h8Koss1CZE5nzNQjViZn37bKQJEo5Zzdug3p8_TO_Q9H6KM&mime_type=video_mp4&qs=1&rc=ODxpNTU8ZzZlZjVoODc4aUBpamlucnQ5cnFkZDMzbGkzNUBiMl82MDMxNi4xNV8xLjFiYSNjaWliMmRjNV9hLS1kLTRzcw%3D%3D&btag=80000e00038000&cquery=100z_100o_100w_100B_100x&dy_q=1789394272&feature_id=37f92ebd2877ae8e7eba995d406c5150&l=202609142157523F0DCFE1283602B24E2B",
+      "author": "不正经艺术",
+      "license": "原页面未声明开放许可；视频画面用于建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/zhaoling-photo-245.jpg",
+      "media_type": "video_frame",
+      "timestamp": "04:05",
+      "timestamp_seconds": 245,
+      "publication_date": "2026-09-01",
+      "dimensions": [
+        576,
+        1024
+      ],
+      "note": "完整前侧全景，主要轮廓依据。从作者公开可播放视频按时间戳提取原始帧，未做图像内容修改；媒体URL有时效，稳定来源为source_page。",
+      "file": "assets/references/zhaoling-photo-245.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://jingxuan.douyin.com/m/video/7680507695450855909",
+      "image_url": "https://v26-web.douyinvod.com/1b677cd0cc050f68aeda8eb8398b4612/6aa829f6/video/tos/cn/tos-cn-ve-15c000-ce/okc7ipSfIIe0SAzJUqVBWG0DLEBKOq7egA2L67/?a=6383&ch=26&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=2397&bt=2397&cs=0&ds=6&ft=khMy6h8Koss1CZE5nzNQjViZn37bKQJEo5Zzdug3p8_TO_Q9H6KM&mime_type=video_mp4&qs=1&rc=ODxpNTU8ZzZlZjVoODc4aUBpamlucnQ5cnFkZDMzbGkzNUBiMl82MDMxNi4xNV8xLjFiYSNjaWliMmRjNV9hLS1kLTRzcw%3D%3D&btag=80000e00038000&cquery=100z_100o_100w_100B_100x&dy_q=1789394272&feature_id=37f92ebd2877ae8e7eba995d406c5150&l=202609142157523F0DCFE1283602B24E2B",
+      "author": "不正经艺术",
+      "license": "原页面未声明开放许可；视频画面用于建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/zhaoling-photo-285.jpg",
+      "media_type": "video_frame",
+      "timestamp": "04:45",
+      "timestamp_seconds": 285,
+      "publication_date": "2026-09-01",
+      "dimensions": [
+        576,
+        1024
+      ],
+      "note": "接近正面的完整空拍全景，辅助核对整体比例。从作者公开可播放视频按时间戳提取原始帧，未做图像内容修改；媒体URL有时效，稳定来源为source_page。",
+      "file": "assets/references/zhaoling-photo-285.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    },
+    {
+      "source_page": "https://jingxuan.douyin.com/m/video/7680507695450855909",
+      "image_url": "https://v26-web.douyinvod.com/1b677cd0cc050f68aeda8eb8398b4612/6aa829f6/video/tos/cn/tos-cn-ve-15c000-ce/okc7ipSfIIe0SAzJUqVBWG0DLEBKOq7egA2L67/?a=6383&ch=26&cr=3&dr=0&lr=all&cd=0%7C0%7C0%7C3&cv=1&br=2397&bt=2397&cs=0&ds=6&ft=khMy6h8Koss1CZE5nzNQjViZn37bKQJEo5Zzdug3p8_TO_Q9H6KM&mime_type=video_mp4&qs=1&rc=ODxpNTU8ZzZlZjVoODc4aUBpamlucnQ5cnFkZDMzbGkzNUBiMl82MDMxNi4xNV8xLjFiYSNjaWliMmRjNV9hLS1kLTRzcw%3D%3D&btag=80000e00038000&cquery=100z_100o_100w_100B_100x&dy_q=1789394272&feature_id=37f92ebd2877ae8e7eba995d406c5150&l=202609142157523F0DCFE1283602B24E2B",
+      "author": "不正经艺术",
+      "license": "原页面未声明开放许可；视频画面用于建筑形制参考",
+      "license_url": null,
+      "reference_file": "assets/references/zhaoling-photo-280.jpg",
+      "media_type": "video_frame",
+      "timestamp": "04:40",
+      "timestamp_seconds": 280,
+      "publication_date": "2026-09-01",
+      "dimensions": [
+        576,
+        1024
+      ],
+      "note": "正面入口、斜挡雨板与栏板细节；照片两侧裁切。从作者公开可播放视频按时间戳提取原始帧，未做图像内容修改；媒体URL有时效，稳定来源为source_page。",
+      "file": "assets/references/zhaoling-photo-280.jpg",
+      "photographed_at": "原来源未注明则未知；以现有实拍所见状态取色"
+    }
+  ],
+  "original_research": "assets/research/zhaoling.json",
+  "output": "assets/colored/zhaoling.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c8ca5f5f-ec13-4bbf-8d81-c425b7cc33ed.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "viewed": true,
+    "source_viewed": true,
+    "line_viewed": true,
+    "style_sample_viewed": true,
+    "result": "已实际查看生成图：保持单檐瓦顶及脊中塔饰，下部斜木挡雨板与中央开口、左右美人靠和石阶完整。灰瓦、褪粉紫红木作及淡绿条痕、灰石基座均对应视频现貌；未误增第二重瓦檐，未加入人物与文字。",
+    "limitations": "依据实拍的艺术转译；未宣称像素级配准、文保级颜色校准或历史原色复原。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 福建仙游顶东湖村东湖昭灵宫现存单殿.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep the FIRST line master's single hip-and-gable roof, central small pagoda-like ridge finial, inclined wooden rainboards with a central cutout and curved veranda bench railings. The inclined lower band is WOODEN rainboarding, not a second tiled roof. Roof tiles are weathered dark charcoal gray, gray ridge with small restrained moss olive tints. Veranda posts, panels, rails and rainboard have worn dusty muted rose-purple/maroon paint revealing gray-brown timber; close photo shows faint faded green weathered strips along board joins, use extremely subdued accents. Foundation is mottled cool gray and pale stone with darker damp-weathered areas, stair treads gray. No imperial vermilion, no green glazed tile roof, no additional roofs, no vegetation, people or text. All wood remains worn and muted rather than vividly restored.\nPreserve the original line master aspect ratio 1536:1024.",
+      "input_images": [
+        "assets/generated/zhaoling.png",
+        "assets/references/zhaoling-photo-245.jpg",
+        "assets/references/zhaoling-photo-285.jpg",
+        "assets/references/zhaoling-photo-280.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-c8ca5f5f-ec13-4bbf-8d81-c425b7cc33ed.png",
+      "output": "assets/colored/zhaoling.png"
+    }
+  ]
+}

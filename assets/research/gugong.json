@@ -1,0 +1,112 @@
+{
+  "id": "gugong",
+  "subject": "北京故宫太和殿",
+  "caption": [
+    "故宫 · 太和殿",
+    "十一间面阔 · 重檐庑殿顶"
+  ],
+  "generation_tool": "Built-in image_gen.imagegen",
+  "generated_file": "assets/generated/gugong.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "original_generated_file": "/Users/fuxiangyu/.codex/generated_images/01a09e30-e3e5-7622-845e-45107c7d9452/exec-00bc5c2b-110b-4cf0-b379-db1a07ea2491.png",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gugong-photo.jpg",
+    "assets/references/gugong-wide-photo.jpg"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage1 is the STYLE MASTER, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained details and broad blank white areas. Images2 and3 show the actual SAME subject, the HALL OF SUPREME HARMONY / TAIHE DIAN (太和殿) in Beijing's Forbidden City: Image2 is the frontal facade reference; Image3 is the wider frontal view confirming the complete three-tier platform silhouette. These two photos are geometry references only.\nCreate a refined sparse BLACK INK ON PURE WHITE line drawing of this actual Taihe Hall, not Taihe Gate and not the Imperial Ancestral Temple. Preserve ELEVEN facade bays defined by12 front column positions (central bay broadest, five bays on each side, narrow terminal bays); a single occupied hall with TWO roof eaves; its steep monumental double-eaved FULL HIP ROOF (重檐庑殿顶, not hip-and-gable); high curved hip corners; long ridge ending in large chiwen finials, and TEN small running beasts along each visible front corner ridge, drawn as tiny simple contour silhouettes. Keep the real proportions of its tall upper roof and compressed lower roof, as in the photographs.\nPreserve the lofty THREE-TIER white-marble terrace, about8m high below the26.9m hall, with three separate stepped levels of stone balustrades; central stone imperial ramp between parallel stairs and the side stair flights. The whole front terrace is much wider than the hall as visible in image3. Include its complete outer contour and both ends, but OMIT the two small side gate buildings and the red rear wall seen in photo3. The terrace must not become the low shallow pedestal of Taimiao. Front door/window openings are set behind the prominent column row.\nAll surfaces stay WHITE, including all windows, doorway interiors, roof and under-eaves. Fine unfilled contours only. Draw structural edges and selectively simplified bracket clusters, a few widely spaced roof slope lines, and sparse door/window divisions; no dense roof-tile comb, full lattice meshes, brick patterns, busy cloud carving or photographic texture. Avoid grey shading, black fills, crosshatching, gradients, color and gold. Remove tourists, sky, paving, rail barriers, modern signs, wires, inscription plaque text and surrounding architecture.\nComposition: landscape1536×1024, straight-on south facade, verticals vertical, nearly orthographic with minimal perspective. Entire building plus broad complete terrace centered, no clipping anywhere. Keep white side margins at least80pixels and generous white above/below, whole terrace width about85% of canvas. Only a short fine ground baseline. No words, calligraphy, labels, captions, watermark, border or frame.",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_(20241127120000).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hall_of_Supreme_Harmony_%2820241127120000%29.jpg/1280px-Hall_of_Supreme_Harmony_%2820241127120000%29.jpg?download=1",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/gugong-photo.jpg",
+      "description": "太和殿南立面正面近景；2024年11月27日。主体和两层檐口完整，台基外端在此近景中超出画面。"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_and_Mid_L-R_gates_(20241127120000).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hall_of_Supreme_Harmony_and_Mid_L-R_gates_%2820241127120000%29.jpg/1280px-Hall_of_Supreme_Harmony_and_Mid_L-R_gates_%2820241127120000%29.jpg?download=1",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/gugong-wide-photo.jpg",
+      "description": "同日广角正面图，用于补足太和殿三层台基的完整范围；未画两侧中左门、中右门及周围墙体。"
+    }
+  ],
+  "source_note": "两张照片都明确为北京故宫太和殿，已逐张查看。近景用于十一间立面、重檐庑殿屋顶；广角用于完整高台基。图版按同一卢舍那母版生成黑线白底。屋面、窗格和雕饰经过概括，不作为测绘图或逐件构件记录。",
+  "verification": {
+    "reference_images_viewed": true,
+    "generated_image_viewed": true,
+    "facade_bays": 11,
+    "roof": "重檐庑殿顶；两道檐口",
+    "platform": "三层高台基，完整外轮廓和中央丹陛",
+    "no_text": true,
+    "uncropped": true,
+    "style": "细黑线、白底、门窗不填黑；装饰概括表达"
+  },
+  "site_recommendation": {
+    "name": "北京故宫",
+    "short": "故宫",
+    "sub": "太和殿",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "康熙重建",
+    "year": 1697,
+    "yearLabel": "1697年竣工",
+    "yearApprox": false,
+    "place": "北京 · 紫禁城",
+    "placeKey": "beijing",
+    "lat": 39.9158889,
+    "lon": 116.3906667,
+    "lede": "太和殿立在三层汉白玉台基上，以十一间面阔与重檐庑殿顶统领外朝。宽阔的丹陛将殿宇托向高处，今天的形制来自康熙年间的重建。",
+    "facts": [
+      "现存太和殿于康熙三十四年（1695）兴工，三十六年（1697）竣工。",
+      "面阔十一间、进深五间，为紫禁城外朝三大殿之首。",
+      "屋顶为重檐庑殿顶，檐角走兽增至十个；殿内曾举行即位、大婚等重要典礼。"
+    ],
+    "basis": [
+      {
+        "url": "https://www.dpm.org.cn/subject_600/buildingdetails/253792.html",
+        "supports": "故宫博物院：1695年兴工，两年后完成，形成现存形制。"
+      },
+      {
+        "url": "https://www.dpm.org.cn/explore/building/236465.html",
+        "supports": "故宫博物院：十一间面阔、五间进深、重檐庑殿顶、十走兽、典礼用途。"
+      },
+      {
+        "url": "https://commons.wikimedia.org/wiki/Category:Hall_of_Supreme_Harmony_(Forbidden_City)",
+        "supports": "主体坐标39°54′57.2″N、116°23′26.4″E；不使用照片拍摄位置代替建筑位置。"
+      }
+    ]
+  },
+  "historical_sources": [
+    {
+      "title": "重建太和殿",
+      "url": "https://www.dpm.org.cn/subject_600/buildingdetails/253792.html",
+      "publisher": "故宫博物院",
+      "note": "1695兴工、两年后竣工。year取1697，并以yearLabel注明竣工，避免与1420初建混用。"
+    },
+    {
+      "title": "太和殿",
+      "url": "https://www.dpm.org.cn/explore/building/236465.html",
+      "publisher": "故宫博物院",
+      "note": "现存形制、间数、屋顶与典礼用途。"
+    },
+    {
+      "title": "关于紫禁城琉璃瓦款识的调查",
+      "url": "https://www.dpm.org.cn/Uploads/File/2018/06/05/u5b1666c1cd4b9.pdf",
+      "publisher": "故宫博物院",
+      "note": "文中进一步明确1695重建至1697建成。"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Hall_of_Supreme_Harmony_(20241127120000).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Hall_of_Supreme_Harmony_%2820241127120000%29.jpg/1280px-Hall_of_Supreme_Harmony_%2820241127120000%29.jpg?download=1",
+  "author": "N509FZ",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hongfu",
+  "name": "定襄洪福寺",
+  "subject": "定襄洪福寺大雄宝殿（毗卢殿）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hongfu.png",
+    "assets/references/hongfu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: Hongfu Temple Mahavira/Pilu Hall, Dingxiang. Keep exact five bays, six front columns, central open doorway with one slim lattice leaf on each side, four-part door groups beside it, barred end windows, single low roof with small central ridge ornament and two end chiwen. Material colors from photo: very dark red-brown painted timber doors/windows/columns, weathered grey-brown under-eave brackets and fascia with faint old patterns. Pale neutral grey roof tiles; ridge dark green glazed strip with restrained ochre ornament. Pale grey and buff irregular stone foundation, neutral grey steps. Window recesses black, door lattice pale grey backing where visible. Do not copy steles, blue plaque, people or neighbouring halls; keep original blank surround.",
+  "material_observations": [
+    "洪福寺大雄殿五间木构正面为深暗红褐门窗与柱，檐下斗栱风化灰褐。",
+    "屋面浅灰瓦，脊饰暗绿底与零星黄赭彩釉；台基黄灰石块，中央阶石偏灰。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hongfu-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:大雄宝殿正面.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "Patrick20242023",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2024-05-22",
+      "note": "本次已实际查看本地实拍，以可见现存材料颜色作艺术转译。"
+    }
+  ],
+  "original_research": "assets/research/hongfu.json",
+  "output": "assets/colored/hongfu.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "五开间和六柱、中央开门、两组隔扇和两侧直棂窗保留，石阶与台基完整。",
+      "深红褐木构、灰褐斗栱、灰瓦及少量绿赭脊饰对应照片。",
+      "石台基黄灰分区自然，细线哑光风格统一，无匾额与游人。"
+    ],
+    "limitations": "人工对照线稿与实拍，非严格像素配准或文保级色彩校准。"
+  },
+  "prepared_at": "2026-09-15T12:02:34.956Z",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-4268-7a02-b7a0-efedb7eea792/exec-d442ce97-57ff-4e1a-b506-ec06708cbf72.png",
+  "generated_at": "2026-09-15T12:07:17.879Z",
+  "completed_at": "2026-09-15T12:13:23.815Z"
+}

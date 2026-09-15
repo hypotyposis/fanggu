@@ -1,0 +1,42 @@
+{
+  "id": "hn_zkguandi",
+  "name": "周口关帝庙",
+  "subject": "周口关帝庙 · 山门正面",
+  "owner": "worker_c",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_zkguandi.png",
+    "assets/references/hn_zkguandi-official-1.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\nSUBJECT: 周口关帝庙 · 山门正面.\nSPECIFIC MATERIAL MAP AND INVARIANTS: Keep FIRST master frontmost Zhoukou Guandi temple mountain gate ONLY: five facade divisions, THREE doorways with center open, two round windows in flanking solid wall bays, one broad roof and central stair. Use roof of FRONT gate in photo, green glazed tile field with aged pale green/gray-white patches, subdued yellow-ochre glazed edge and ridge ornaments. Front side walls neutral gray brick with pale gray stone lower base. Three portal surrounds and wooden columns muted red/russet; closed side double doors dark faded red with very small dull brass/ochre bosses, center doorway dark. Round window frames muted red-brown, bars dark gray. Long upper frieze under eave is weathered blue-gray/teal with limited pale cream and red details. Stone base/steps pale gray. No extra structures behind, modern skyline, gate fences, signs, stools, trees, people or characters. Do not take the gray roof of side buildings as the gate color.\nPreserve original canvas aspect ratio 1536:1024.",
+  "material_observations": "已实看原稿及周口市政府公开日间航拍。最前山门屋面为绿色琉璃、夹浅灰绿风化，边脊少量黄赭；侧墙灰砖、门框柱及门板暗红，两侧圆窗外框红褐，檐下横枋灰蓝青，台基台阶灰石。原稿为前门独立正面，不取背后殿宇和灰瓦配房色；摄影者和拍摄日期未知。",
+  "references": [
+    {
+      "title": "hn_zkguandi-official-1.png",
+      "image_url": "https://www.zhoukou.gov.cn/sitesources/zksrmzf/upload/9dd93d7a6aa9af106050f00ce586ebf9/1727344641080.png",
+      "download_url": "https://www.zhoukou.gov.cn/sitesources/zksrmzf/upload/9dd93d7a6aa9af106050f00ce586ebf9/1727344641080.png",
+      "author": "周口市人民政府刊载，单张未署摄影者",
+      "license": "未声明开放许可",
+      "license_url": "",
+      "reference_file": "assets/references/hn_zkguandi-official-1.png",
+      "source_page": "https://www.zhoukou.gov.cn/page_pc/zjzk/zkyx/lyjd/article3315521dac254a19a1fac27103dffde1.html",
+      "dimensions": [
+        948,
+        626
+      ],
+      "date": "未知"
+    }
+  ],
+  "output": "assets/colored/hn_zkguandi.png",
+  "prepared_at": "2026-09-15T19:46:36.275864+08:00",
+  "original_research": "assets/research/hn_zkguandi.json",
+  "visual_review": "已实看生成图：五段立面、三门两圆窗、单屋顶及中央阶梯完整。绿琉璃屋面与黄赭边脊、灰砖、褪红木门柱对应政府照片前山门；无后部寺群、城市背景、陈设或文字。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-a2345e0c-ac55-48bb-aa5e-8088b62141fc.png",
+  "output_hint": "Generated images are saved to /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889 as /Users/fuxiangyu/.codex/generated_images/01a0a4d8-7bf7-7fc0-8721-b472f57ad889/exec-a2345e0c-ac55-48bb-aa5e-8088b62141fc.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+  "generated_at": "2026-09-15T19:48:53.767241+08:00",
+  "width": 1536,
+  "height": 1024,
+  "reviewed_at": "2026-09-15T19:50:43.523008+08:00"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "guanyintang",
+  "subject": "长治观音堂观音主像及天宫悬塑局部",
+  "caption": [
+    "长治观音堂 · 观音与天宫悬塑局部",
+    "明万历年间 · 彩塑与悬塑"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sculpture_of_Guanyintang,_Changzhi.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Sculpture_of_Guanyintang%2C_Changzhi.jpg/1280px-Sculpture_of_Guanyintang%2C_Changzhi.jpg",
+  "author": "1969社论",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/guanyintang-sculpture-photo.jpg"
+  ],
+  "reference_dimensions": {
+    "width": 1280,
+    "height": 960
+  },
+  "source_note": "2024-10-06实拍的中央观音主像与身后微型宫殿、悬塑宝盖局部。保留支膝坐姿、冠饰圆光、两侧天宫及卷云悬塑；图注明确为局部，不臆造整殿全景。输入输出已目视检查，暗色凹处改为白底，细部适度概括。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink the relevant dynasty color in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nSubject is NOT an exterior temple: draw a faithful cropped interior sculptural ensemble from Guanyin Hall 观音堂 at Liangjiazhuang, Changzhi, exactly the niche region photographed in image2. Retain the identifiable central crowned Guanyin in a relaxed pose, head tilted slightly, circular halo, viewer-left knee lifted with forearm resting toward that knee, the draped other leg descending. Retain the two miniature heavenly palace pavilions directly behind the shoulders, each with curled roofs, pillars, tiny lattice doors and standing small attendants on the surrounding balconies. Above the central crown retain the photographed suspended canopy with its small pavilion and huge flowing cloud-scroll wings. Around the main figure retain a selective dozen small standing figures, cliff contours and curling cloud ribbons in their actual photographed positions. Do not replace the ensemble with a generic symmetrical Buddha or invent an isolated lotus seat. This is an explicitly PARTIAL NICHE VIEW, not a reconstruction of the entire hall: follow the image2 crop boundaries, with main figure's lower drapery naturally dissolving into only a few fine contour lines at the lower edge of the ensemble. Put the complete selected ensemble inside blank margins; no hard rectangular crop frame. Preserve the tiny asymmetries and hanging cloud patterns of the photo. Render all main figures, pavilion doors and background recesses as WHITE with delicate black contours; NO solid black cavities. Cut the density of tiny jewelry and painted decoration to about20% of reference, keep large clear white areas, a fine restrained line-weight matching image1. NO hatching or grey texture, NO labels or photographed wires/microphone. Portrait1024x1536, central ensemble82%height with generous white margin.",
+  "generation_tool": "built-in image_gen",
+  "generation_original": "/Users/fuxiangyu/.codex/generated_images/01a09e30-b2ba-7a50-8dee-1147a4c83e46/exec-bdf0edfb-f718-4bc3-bc96-19fa861fe025.png",
+  "generated_file": "assets/generated/guanyintang.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "historical_sources": [
+    {
+      "title": "悬塑瑰宝 满堂华彩——第五批全国重点文物保护单位观音堂掠影",
+      "url": "https://www.changzhi.gov.cn/ztzl/cjwmwz/tpxw_6120/202404/t20240426_2892104.shtml",
+      "publisher": "长治市人民政府 / 长治日报",
+      "evidence": "观音堂位于潞州区梁家庄村，始建明万历年间，三间殿内现存约五百尊塑像，分布三壁及梁架、门窗顶部，彩塑悬塑相间、儒释道共融。"
+    },
+    {
+      "title": "用多学科手段解析长治观音堂明代壁塑制作工艺",
+      "url": "https://www.sina.cn/news/detail/5248214073871547.html",
+      "publisher": "考古汇（山西省考古研究院官方微博）",
+      "evidence": "观音堂始建明万历十年（1582），现存彩塑中东墙三主像及南北墙较低层为圆塑，高处小像为壁塑；研究对象明确为明代壁塑。"
+    }
+  ],
+  "site_recommendation": {
+    "name": "长治观音堂",
+    "short": "观音堂",
+    "sub": "明代悬塑 · 梁家庄",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明 · 万历年间",
+    "year": 1582,
+    "yearApprox": true,
+    "yearLabel": "明万历年间",
+    "yearNote": "1582为建堂记录，仅用于万历期塑像在时间轴的约略定位，不视为每尊塑像确切完成年。",
+    "place": "山西长治 · 梁家庄",
+    "placeKey": "changzhi",
+    "lat": 36.22785,
+    "lon": 113.076681,
+    "latlon_source": "https://commons.wikimedia.org/wiki/Category:Changzhi_Guanyin_Tang",
+    "lede": "观音倚膝而坐，微缩天宫在身后层层展开，卷云与群像悬向梁架。长治观音堂把一个繁密的信仰世界，安放在三间小殿之中。",
+    "facts": [
+      {
+        "label": "明代遗塑",
+        "text": "观音堂建于明万历年间，现存彩塑、壁塑保留明代工艺；图版取中央观音与天宫局部。"
+      },
+      {
+        "label": "圆塑悬塑",
+        "text": "主尊与低处群像多为圆塑，高处小像依附墙壁、梁架与门窗顶部，组成层叠空间。"
+      },
+      {
+        "label": "三教共融",
+        "text": "小殿内约五百尊塑像汇集儒、释、道题材，大小错落，体现民间庙堂的复合信仰。"
+      }
+    ]
+  }
+}
