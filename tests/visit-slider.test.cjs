@@ -57,13 +57,20 @@ function setup({ loaded = true, failing = false } = {}) {
   return { api, site, storage, library, parent, image, wrapper, color, ritual, range, hint, retry, timers, updates, load,
     fail: value => { fail = value; }, saves: () => saves,
     progress: () => wrapper.style.get('--visit-progress'),
+    colorOpacity: () => wrapper.style.get('--visit-opacity'),
+    lineOpacity: () => wrapper.style.get('--visit-line-opacity'),
     drag: (x = 224) => { range.emit('pointerdown', { clientX: 24 }); range.emit('pointermove', { clientX: x }); },
     release: (x = 224) => range.emit('pointerup', { clientX: x }) };
 }
 
 test('partial drag reveals color reversibly; reaching the end alone never saves', () => {
   const s = setup(); s.drag(124);
-  assert.equal(s.progress(), '50%'); assert.equal(s.saves(), 0);
+  assert.equal(s.progress(), '50%'); assert.equal(s.lineOpacity(), '1'); assert.equal(s.saves(), 0);
+  s.range.emit('pointermove', { clientX: 204 });
+  assert.equal(s.progress(), '90%'); assert.equal(s.lineOpacity(), '0.5');
+  s.range.emit('pointermove', { clientX: 224 });
+  assert.equal(s.colorOpacity(), '1'); assert.equal(s.lineOpacity(), '0');
+  s.range.emit('pointermove', { clientX: 124 });
   s.release(124); assert.equal(s.progress(), '0%'); assert.equal(s.storage.getItem(KEY), null);
   s.drag(); assert.equal(s.progress(), '100%'); assert.equal(s.saves(), 0);
   s.range.emit('pointermove', { clientX: 74 }); assert.equal(s.progress(), '25%');

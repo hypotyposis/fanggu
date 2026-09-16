@@ -39,7 +39,7 @@
     previewButton.disabled = false;
     status.textContent = '已到访';
     status.classList.add('filled');
-    imageCaption.textContent = '设色 · 小样';
+    imageCaption.textContent = '设色 · 正式版';
     previewMessage.textContent = '试着让这一页有了颜色';
   }
 
@@ -66,8 +66,8 @@
     lineImage.src = study.line;
     lineImage.alt = study.name + ' · 原始线稿';
     underlayImage.src = study.line;
-    colorImage.src = 'assets/color-studies/v1/' + id + '-colored.png';
-    colorImage.alt = study.name + ' · 矿物淡彩设色小样';
+    colorImage.src = COLORED_PLATES[id].src;
+    colorImage.alt = study.name + ' · 矿物淡彩设色正式版';
     [lineImage, underlayImage, colorImage].forEach(image => {
       image.width = study.width;
       image.height = study.height;
@@ -111,7 +111,7 @@
       viewer.classList.add('preview-playing');
       status.textContent = '已到访';
       status.classList.add('filled');
-      imageCaption.textContent = '设色 · 小样';
+      imageCaption.textContent = '设色 · 正式版';
       previewMessage.textContent = '这一处，亲眼见过了';
     }, 450));
     previewTimers.push(setTimeout(() => {

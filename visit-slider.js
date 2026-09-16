@@ -53,7 +53,10 @@ const FangguVisit = (() => {
       progress = Math.max(0, Math.min(100, value));
       range.value = String(Math.round(progress));
       for (const node of [wrapper, ritual]) node.style.setProperty('--visit-progress', `${progress}%`);
-      // Scrub the three-study preview's full-image fade, preserving its line underlay.
+      // Keep the line drawing legible for most of the ritual, then remove it
+      // before the endpoint so the completed frame matches the colored plate.
+      const lineOpacity = progress <= 80 ? 1 : (100 - progress) / 20;
+      wrapper.style.setProperty('--visit-line-opacity', String(lineOpacity));
       wrapper.style.setProperty('--visit-opacity', String(progress / 100));
       label.textContent = progress >= 100 ? '松手 · 留印' : progress > 0 ? '慢慢为古迹添色' : '向右拖动 · 设色';
       range.setAttribute('aria-valuetext', progress >= 100 ? '设色完成，松开即记录到访' : `设色 ${Math.round(progress)}%，拖至尽头记录到访`);

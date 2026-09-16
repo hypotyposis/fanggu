@@ -1,4 +1,12 @@
 .color-proof::before, .color-proof::after { display: none; }
+.color-proof { --proof-background: #282723; }
+.color-proof[data-background="light"] { --proof-background: #f0e8d8; }
+.color-proof[data-background="checker"] { --proof-background: repeating-conic-gradient(#ddd7cc 0% 25%, #f5f0e7 0% 50%) 0 0 / 24px 24px; }
+.color-tile img, .color-comparison img { background: var(--proof-background); }
+.proof-backgrounds { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 24px 0; font-size: 12px; }
+.proof-backgrounds > span { color: var(--paper-2); margin-right: 12px; }
+.proof-backgrounds button[aria-pressed="true"] { color: var(--gold); border-color: var(--gold); }
+.proof-hint { font-size: 12px; color: var(--paper-3); }
 .color-top, .color-main { width: min(1220px, calc(100% - 64px)); margin-inline: auto; }
 .color-top { display: flex; justify-content: space-between; padding: 24px 0; border-bottom: 1px solid var(--gold-dim); font-size: 13px; }
 .color-proof a { color: var(--paper-2); text-decoration: none; }

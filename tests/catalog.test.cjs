@@ -12,9 +12,9 @@ additions.push('guanyintang','guanque','xianshen','chongsheng','dule','qufukongm
 additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshodaiji','byodoin','todaiji','kiyomizu','toji');
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
-additions.push(...northernExpansion.ids);
-test('all 200 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 200); assert.equal(new Set(SITES.map(s => s.id )).size, 200);
+additions.push(...northernExpansion.ids, 'sd_pizhi');
+test('all 201 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 201); assert.equal(new Set(SITES.map(s => s.id )).size, 201);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -50,6 +50,21 @@ test('all researched additions have source-backed imagegen plates in their origi
     assert(meta.reference_files.length >= 2);
     for (const file of meta.reference_files) assert(fs.existsSync(path.resolve(root,file)), file);
     assert.equal(site.image.color, colours[DYN[site.dyn].acc.match(/var\(([^)]+)\)/)[1]]);
+  }
+});
+
+test('Pizhi addition is unvisited, mapped to Shandong and uses recorded white originals', () => {
+  const site = SITES.find(s => s.id === 'sd_pizhi');
+  assert.equal(site.initialStatus, 'unvisited');
+  assert.equal(site.dyn, 'song'); assert.equal(site.yearApprox, true);
+  assert.equal(PLACES.find(p => p.key === site.placeKey).prov, '山东');
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  assert.equal(queue.entries.filter(s => s.id === site.id).length, 1);
+  assert.equal(queue.count, queue.entries.length);
+  for (const folder of ['research', 'color-research']) {
+    const meta = JSON.parse(read(`assets/${folder}/sd_pizhi.json`));
+    assert.equal(meta.background_preparation.method, 'white-matte-v1');
+    assert.equal(meta.status, 'complete');
   }
 });
 

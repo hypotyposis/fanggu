@@ -1,0 +1,51 @@
+{
+  "matteRgb": [
+    11,
+    10,
+    8
+  ],
+  "tolerancePerChannel": 12,
+  "backgroundSeeds": [
+    [
+      479,
+      182
+    ],
+    [
+      544,
+      185
+    ],
+    [
+      409,
+      183
+    ],
+    [
+      613,
+      186
+    ]
+  ],
+  "transparentPixels": 1056285,
+  "opaquePixels": 516579,
+  "rgbUnchanged": true,
+  "source": "assets/colored/baoen.png",
+  "sourceSha256": "67fbb64726f46e8ad2effa872c663f5da8df67a1d2711d4d8504f069b40a4184",
+  "output": "assets/transparency-studies/baoen-v1/baoen-transparent.png",
+  "outputSha256": "ece141d35ad312c8bdb4794b622e486a2c53addabdb764ca123940c0b56cb3ed",
+  "width": 1024,
+  "height": 1536,
+  "mode": "RGBA",
+  "method": "edge-connected matte flood fill with explicitly reviewed background seeds",
+  "visualReview": {
+    "status": "sample_ready",
+    "checked": [
+      "Full illustration composited on ivory #f0e8d8 and charcoal #282723",
+      "Finial and four chain gaps at 2.5x; bells, eaves, windows and base visually reviewed",
+      "Original dimensions and every RGB value unchanged; true alpha 0/255 verified",
+      "Four manually reviewed background seeds remove enclosed air, representative architectural dark pixels remain opaque"
+    ],
+    "limitations": [
+      "Binary alpha retains the original fine dark contour; it does not reconstruct subpixel antialiasing lost against the original dark matte",
+      "This sample has not replaced the production illustration; other monuments require individual mask review"
+    ]
+  },
+  "alphaCoveragePercent": 67.16
+}

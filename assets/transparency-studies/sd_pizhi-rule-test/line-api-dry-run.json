@@ -1,0 +1,19 @@
+{
+  "background": "transparent",
+  "endpoint": "/v1/images/edits",
+  "image": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/longmen-style-black.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/sd_pizhi-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/sd_pizhi-photo-2.jpg"
+  ],
+  "model": "gpt-image-2.5-sunburst",
+  "n": 1,
+  "output_format": "png",
+  "outputs": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/transparency-studies/sd_pizhi-rule-test/line-api-attempt-1.png"
+  ],
+  "outputs_downscaled": null,
+  "prompt": "Use case: style-transfer. Create one fine-line architectural illustration of Pizhi Pagoda (\u8f9f\u652f\u5854), Lingyan Temple, Changqing, Jinan, China, for the heritage collection \u8bbf\u53e4.\n\nImage 1 is the STYLE MASTER ONLY: match its elegant, delicate, slightly organic thin ink contours, restrained detail, generous blank areas and consistent visual density. Ignore its white background and Buddha shape. Images 2 and 3 are photographs of the ACTUAL SUBJECT and determine geometry only.\n\nDraw the slender tapering octagonal brick pagoda shown in the photos: nine storeys and twelve eaves, with double eaves on each of the lowest three storeys and single eaves on each of the upper six. Preserve its shallow brick eaves, small corbel brackets, arched openings, blind panels, low stone plinth, iron finial and delicate supporting chains. No swooping wooden pavilion roofs or extra tiers. Show the complete tower centered, approximately straight-on at facade level, verticals vertical, minimal perspective, about 82% of the portrait canvas height, with apex and base uncut.\n\nDraw ONLY fine black ink strokes. All unmarked areas remain empty, including enclosed masonry surfaces, spaces inside doors and windows, and spaces between ornaments and chains. Do not make a white filled silhouette of the tower. Use outlines for apertures, without dark fills. Simplify brick joints and ornaments selectively. No shadows, shading, crosshatching, pencil grain, paper texture, glow or ground shadow. Ignore reference backdrops. Remove tourists, foliage, fences, paths, sky, mountains, nearby buildings, tombs and walls. No text, captions, watermark, border or transparency grid.",
+  "quality": "high",
+  "size": "1024x1536"
+}

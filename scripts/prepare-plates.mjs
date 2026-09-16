@@ -5,12 +5,14 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'no
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import vm from 'node:vm';
+import { recolorLinePlate } from './line-plate.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const legacy = JSON.parse(readFileSync(path.join(root, 'assets/research/legacy-line-originals.json'), 'utf8')).sha256BySource;
 const { SITES: sites, DYN: dynasties } = vm.runInNewContext(readFileSync(path.join(root, 'sites.js'), 'utf8') + '\n({ SITES, DYN })');
 const css = readFileSync(path.join(root, 'style.css'), 'utf8');
 const palette = Object.fromEntries([...css.matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(match => [match[1], match[2]]));
-const paletteUpdated = Math.max(...['sites.js', 'style.css', 'scripts/prepare-plates.mjs'].map(file => statSync(path.join(root, file)).mtimeMs));
+const paletteUpdated = Math.max(...['sites.js', 'style.css', 'scripts/prepare-plates.mjs', 'scripts/line-plate.mjs', 'scripts/white-matte.py'].map(file => statSync(path.join(root, file)).mtimeMs));
 const plates = {};
 const sources = [];
 mkdirSync(path.join(root, 'assets/plates'), { recursive: true });
@@ -26,13 +28,11 @@ for (const { id, dyn } of [{ id: 'hero', dyn: 'tang' }, ...sites]) {
   const color = palette[token];
   if (!color) throw new Error(`Missing dynasty color for ${id} (${dyn})`);
   const target = path.join(root, `assets/plates/${id}.png`);
-  if (!existsSync(target) || statSync(target).mtimeMs < Math.max(statSync(original).mtimeMs, paletteUpdated)) {
-    execFileSync('magick', [original, '-background', 'white', '-alpha', 'remove', '-alpha', 'off',
-      '-colorspace', 'gray', '-negate', '-level', '1%,100%', '-alpha', 'copy', '-colorspace', 'sRGB',
-      '-channel', 'RGB', '-fill', color, '-colorize', '100%', '+channel', '-depth', '8', target]);
+  const metadata = JSON.parse(readFileSync(metadataFile, 'utf8'));
+  if (!existsSync(target) || statSync(target).mtimeMs < Math.max(statSync(original).mtimeMs, statSync(metadataFile).mtimeMs, paletteUpdated)) {
+    recolorLinePlate(original, target, color, legacy[`assets/generated/${id}.png`], metadata.background_preparation);
   }
   const [width, height] = execFileSync('magick', ['identify', '-format', '%w %h', target], { encoding: 'utf8' }).split(' ').map(Number);
-  const metadata = JSON.parse(readFileSync(metadataFile, 'utf8'));
   plates[id] = { src: `assets/plates/${id}.png`, alt: `${metadata.subject} · 线稿`, width, height, color, tint: false };
   if (metadata.caption) {
     if (!Array.isArray(metadata.caption) || metadata.caption.length !== 2 || metadata.caption.some(part => typeof part !== 'string')) {

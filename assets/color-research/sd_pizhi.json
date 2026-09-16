@@ -1,0 +1,100 @@
+{
+  "id": "sd_pizhi",
+  "name": "济南灵岩寺辟支塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sd_pizhi.png",
+    "assets/references/sd_pizhi-photo.jpg",
+    "assets/references/sd_pizhi-photo-2.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Color the Pizhi Pagoda line illustration for the heritage atlas 访古.\nImage 1 is the exact LINE DRAWING COMPOSITION MASTER: retain its silhouette, position, all nine storeys and twelve eaves, masonry brackets, openings, stone base, finial and supporting chains, proportions, complete framing and portrait 1024x1536 canvas. Images 2 and 3 are photographs of the real monument for material colors only. Image 4 is a STYLE SAMPLE for delicate dark contours and restrained matte mineral-pigment planes, not its architecture, warm palette or backdrop.\nPresent-day material colors: tower masonry light grey-beige and muted grey-brown; brick eaves and brackets dark charcoal grey-brown; selected arched door surrounds and blind panels faded brick-red/ochre-red; stone base cool light grey; iron finial and chains dark neutral grey. Keep shadowed doorway recesses dark. No automatic gold, sepia filter, bright fresh vermilion or invented restoration. Fine contour lines remain visible, modest pigment grain only on the subject, two or three restrained shadow values. Illustrated, not photorealistic.\nBACKGROUND: a completely flat, opaque, pure WHITE #FFFFFF canvas. All canvas outside the pagoda and all true open-air spaces between finial chains are pure white. No grey paper, texture, vignette, glow, checkerboard, sky or ground shadow. Preserve the building's light stone as material, surrounded by clear thin contours. Ignore reference backgrounds. The white background will be removed later by a local script.\nNo scene, people, trees, fences, text, calligraphy, UI, border or watermark. Keep apex and base uncut.",
+  "material_observations": "两张实拍已实际查看：主体砖墙灰褐、米灰，檐部和仿木斗拱深灰褐，门窗装饰局部暗赭红，铁刹深灰；第一张日照偏暖，第二张阴天用于控制暖色。按现存材料设色，不复原彩绘。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jinan_2009_1487.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Jinan_2009_1487.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2009",
+      "reference_file": "assets/references/sd_pizhi-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_at_Lingyan_Si.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Pagoda_at_Lingyan_Si.jpg/960px-Pagoda_at_Lingyan_Si.jpg",
+      "author": "M. Weitzel / Matt314",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2007-04-01",
+      "reference_file": "assets/references/sd_pizhi-photo-2.jpg"
+    }
+  ],
+  "output": "assets/colored/sd_pizhi.png",
+  "note": "用户无 API Key，已明确改用内置 imagegen 生成白底，再脚本去底。先前透明生成失败记录保留。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-ff30a1e7-a20d-4315-a39c-50fdc9b9065b.png",
+  "width": 1024,
+  "height": 1536,
+  "generation_attempts": [
+    {
+      "attempt": 1,
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-03f693a4-02ec-434b-8245-08945255b5dc.png",
+      "saved_file": "assets/transparency-studies/sd_pizhi-rule-test/color-attempt-1.png",
+      "sha256": "6d70079fd6286a5a8a3d5f3279cffec1c42bcafb671197f49da5d30c1f2998f6",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion illustration of Pizhi Pagoda at Lingyan Temple, Jinan, for the heritage atlas 访古.\n\nINPUT ROLES: Image 1 is the exact LINE DRAWING COMPOSITION MASTER. Keep its tower geometry and position. Its white tower surfaces and surrounding halo are defects to remove/replace, NOT a desired backdrop. Images 2 and 3 are photographs of the real monument and determine its present material colors only. Image 4 is the colored STYLE SAMPLE: borrow its fine contour drawing and restrained matte pigment planes, never its architecture, palette, backdrop or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, portrait 1024x1536 canvas, all nine storeys and twelve eaves (lower three storeys double-eaved), openings, proportions, verticals, iron finial and fine chains. Do not switch to the photos' viewpoint. Do not add tiles, curved pavilion roofs or extra tiers. Keep the whole apex and base uncut.\n\nCOLOR THE PRESENT OBJECT: the photographed Pizhi Pagoda is aged masonry, light grey-beige and muted grey-brown bricks; the projecting eaves and small corbel brackets are darker charcoal grey-brown from age and shadow. Arched doorway surrounds, blind window panels and some niche frames have restrained faded brick-red/ochre-red remnants, not bright fresh vermilion. Stone base is cool pale grey. Iron finial and support chains are dark neutral grey. Keep the natural material separation. Use the neutral overcast photo to temper the sunny photo's warm exposure. No gold or dynasty-colored overlay. Preserve dark architectural recesses.\n\nSTYLE: elegant fine dark material-colored contours with matte semi-flat mineral-gouache color planes, modest fine pigment grain and two or three restrained shadow values. Illustrated, not photorealistic; linework stays visible. No oil paint, dense fake damage, heavy cartoon outlines, artificial sepia, glow or dramatic lighting.\n\nCRITICAL BACKGROUND: create an isolated TRANSPARENT-BACKGROUND PNG ASSET. Output an RGBA PNG with REAL alpha transparency. All canvas outside the tower, all sky spaces between the finial and fine chains, and all real see-through gaps must be alpha 0. Tower masonry surfaces must be opaque alpha 255, with antialiased alpha at the silhouette. Remove the entire halo and all ground shadow from Image 1. Do not confuse dark doors or shadowed brick recesses with empty sky. No black, white, grey, colored or paper backdrop, NO PAINTED CHECKERBOARD, no transparency grid, halo, vignette or scene. The ORIGINAL PNG itself must have transparent pixels; no later background-removal step is intended. No trees, people, fences, landscape, captions, characters, labels, UI, watermark or border.",
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "status": "rejected",
+      "reason": "RGB 原件没有 alpha，灰白棋盘格为绘制的背景。"
+    },
+    {
+      "attempt": 2,
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-3f6da099-41d3-4fd8-b0e8-2fe55e8a6ae4.png",
+      "saved_file": "assets/transparency-studies/sd_pizhi-rule-test/color-attempt-2.png",
+      "sha256": "b7683305b718113ec81cdf097f8838604eea0a17a09aa2d9a424c386e1d39ae2",
+      "prompt": "Remove the background from this pagoda illustration. Return an isolated pagoda cutout as a PNG with a real transparent background encoded in its alpha channel. Keep the pagoda's colors, thin outlines, nine storeys, twelve eaves, iron finial, fine chains and base exactly as drawn. Preserve opaque masonry and the dark doorway. Empty space outside the pagoda and between the finial chains must be fully transparent. Keep the original 1024x1536 canvas. Clean antialiased edges. No shadow or glow.",
+      "input_images": [
+        "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-03f693a4-02ec-434b-8245-08945255b5dc.png"
+      ],
+      "mode": "RGB",
+      "alpha_extrema": null,
+      "status": "rejected",
+      "reason": "定向去背景重试仍返回 RGB，只有画出来的灰白棋盘格，无 alpha。"
+    },
+    {
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-ff30a1e7-a20d-4315-a39c-50fdc9b9065b.png",
+      "saved_file": "assets/colored/sd_pizhi.png",
+      "prompt": "Use case: precise-object-edit. Color the Pizhi Pagoda line illustration for the heritage atlas 访古.\nImage 1 is the exact LINE DRAWING COMPOSITION MASTER: retain its silhouette, position, all nine storeys and twelve eaves, masonry brackets, openings, stone base, finial and supporting chains, proportions, complete framing and portrait 1024x1536 canvas. Images 2 and 3 are photographs of the real monument for material colors only. Image 4 is a STYLE SAMPLE for delicate dark contours and restrained matte mineral-pigment planes, not its architecture, warm palette or backdrop.\nPresent-day material colors: tower masonry light grey-beige and muted grey-brown; brick eaves and brackets dark charcoal grey-brown; selected arched door surrounds and blind panels faded brick-red/ochre-red; stone base cool light grey; iron finial and chains dark neutral grey. Keep shadowed doorway recesses dark. No automatic gold, sepia filter, bright fresh vermilion or invented restoration. Fine contour lines remain visible, modest pigment grain only on the subject, two or three restrained shadow values. Illustrated, not photorealistic.\nBACKGROUND: a completely flat, opaque, pure WHITE #FFFFFF canvas. All canvas outside the pagoda and all true open-air spaces between finial chains are pure white. No grey paper, texture, vignette, glow, checkerboard, sky or ground shadow. Preserve the building's light stone as material, surrounded by clear thin contours. Ignore reference backgrounds. The white background will be removed later by a local script.\nNo scene, people, trees, fences, text, calligraphy, UI, border or watermark. Keep apex and base uncut.",
+      "input_images": [
+        "assets/generated/sd_pizhi.png",
+        "assets/references/sd_pizhi-photo.jpg",
+        "assets/references/sd_pizhi-photo-2.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "mode": "RGB",
+      "status": "accepted_white_source",
+      "method": "white-background-then-script"
+    }
+  ],
+  "visual_review": "实际查看新设色原件：塔身与白底线稿保持相同构图，砖墙灰褐、檐下深灰褐、门窗框赭红、铁刹深灰、石座灰白；塔尖及底座未裁切，无文字，背景为近纯白。按用户授权以脚本去底，交付版待用户人工审阅，不宣称精确像素配准或文保色彩复原。",
+  "previous_transparency_test": {
+    "status": "failed_after_targeted_retry",
+    "requirement": "native alpha in original imagegen PNG, no script cutout"
+  },
+  "completed_at": "2026-09-16",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e37d141e8c9680ff7e968a17d3d800b3706476776302e577ad18d69aeba9f40f",
+    "seeds": [
+      [
+        478,
+        153
+      ],
+      [
+        540,
+        153
+      ]
+    ]
+  }
+}

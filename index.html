@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css?v=20260915-arrival4">
+<link rel="stylesheet" href="style.css?v=20260916-reveal1">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><svg class="seal" aria-hidden="true"><use href="#seal"/></svg><b>访古</b></a>
     <nav>
-      <a href="#map">行迹</a>
+      <a href="#map">地图</a>
       <a href="#timeline">年表</a>
       <a href="#atlas">图鉴</a>
       <a href="#wishlist">心愿单</a>
@@ -43,10 +43,10 @@
         <div class="eyebrow">
           <span class="mono">殿阁 · 古塔 · 石刻 · 山河之间</span>
           <span class="mono" id="heritage-span">东汉 — 今</span>
-          <span class="mono" id="hero-count">二百处古迹</span>
+          <span class="mono" id="hero-count">二百零一处古迹</span>
         </div>
         <h1><span>访</span><span>古</span></h1>
-        <p class="sub">从汉阙到层叠殿阁，<em>石与木</em>记下漫长岁月。走过的留作行迹，向往的收入心愿；一部慢慢写满的古迹图鉴。</p>
+        <p class="sub">从汉阙到层叠殿阁，<em>石与木</em>记下漫长岁月。亲见的盖上印记，向往的收入心愿；一部慢慢写满的古迹图鉴。</p>
         <a class="hero-link" href="#atlas">翻开我的图鉴 <span aria-hidden="true">↗</span></a>
         <div class="scroll-hint"><i></i><span class="mono">向下 · 从一攒斗拱开始</span></div>
       </div>
@@ -54,16 +54,13 @@
     </div>
   </section>
 
-  <section class="block" id="map">
+  <section class="block" id="map" aria-labelledby="map-title">
     <div class="wrap">
-      <div>
-        <svg class="map" id="mapsvg"></svg>
-      </div>
-      <div>
-        <div class="sec-head"><h2>行迹</h2><span class="mono" id="map-summary">二十四地 · 四十四处</span></div>
-        <ul class="places" id="places"></ul>
-        <p class="map-note">这里只留下已经到访的古迹。地图按图鉴中的已知坐标绘制，连线为地点示意，不代表游览顺序。心愿中的古迹在打卡到访后落图。</p>
-      </div>
+      <div class="sec-head"><h2 id="map-title">到访地图</h2><span class="mono" id="map-summary"></span></div>
+      <figure class="map-figure">
+        <svg class="map" id="mapsvg" role="group"></svg>
+        <figcaption class="map-note" id="map-note">点亮已经到访的地方，点选地点细读古迹。</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -88,10 +85,10 @@
         <button class="journal-button primary" id="add-wish" type="button">从图鉴选心愿</button>
       </div>
       <div class="collection-tabs" role="group" aria-label="按到访状态筛选">
-        <button type="button" data-filter="all" aria-pressed="true">全部收录 <b id="count-all">200</b></button>
+        <button type="button" data-filter="all" aria-pressed="true">全部收录 <b id="count-all">201</b></button>
         <button type="button" data-filter="wishlist" aria-pressed="false">心愿单 <b id="count-wishlist">65</b></button>
         <button type="button" data-filter="visited" aria-pressed="false">已到访 <b id="count-visited">44</b></button>
-        <button type="button" data-filter="unvisited" aria-pressed="false">未到访 <b id="count-unvisited">156</b></button>
+        <button type="button" data-filter="unvisited" aria-pressed="false">未到访 <b id="count-unvisited">157</b></button>
       </div>
       <div class="atlas-tools">
         <label class="atlas-search"><span>寻一处古迹</span><input type="search" id="atlas-search" placeholder="按名称、地点搜索" maxlength="120" aria-label="搜索古迹名称或地点"></label>
@@ -131,24 +128,24 @@
 
 <footer id="colophon">
   <div class="wrap">
-    <p>跋 · 各图参照照片，以 AI 统一重绘为细线稿，非实测图；已毁的报恩寺塔参照土山湾旧塔模型。原有条目沿用项目资料，新增条目的年代与形制另行核对，参考差异记于图版来源。<span id="catalog-summary">现收录二百处古迹。</span><br><span class="mono">绘于 2026 · 纸上一灯，檐下千年。 · <a href="sources.html">图版来源</a> · <a href="proof.html?view=grid">线稿总览</a> · <a href="color-proof.html">设色总览</a></span></p>
+    <p>跋 · 各图参照照片，以 AI 统一重绘为细线稿，非实测图；已毁的报恩寺塔参照土山湾旧塔模型。原有条目沿用项目资料，新增条目的年代与形制另行核对，参考差异记于图版来源。<span id="catalog-summary">现收录二百零一处古迹。</span><br><span class="mono">绘于 2026 · 纸上一灯，檐下千年。 · <a href="sources.html">图版来源</a> · <a href="proof.html?view=grid">线稿总览</a> · <a href="color-proof.html">设色总览</a></span></p>
     <svg class="seal" aria-hidden="true"><use href="#seal"/></svg>
   </div>
 </footer>
 
 <script src="draft.js"></script>
 <script src="buildings.js"></script>
-<script src="sites.js?v=20260915-timeline1"></script>
-<script src="plates.js?v=20260915-timeline1"></script>
-<script src="colored-plates.js?v=20260915-colors1"></script>
+<script src="sites.js?v=20260916-pizhi-white1"></script>
+<script src="plates.js?v=20260916-pizhi-white1"></script>
+<script src="colored-plates.js?v=20260916-pizhi-white1"></script>
 <script src="artwork.js?v=20260915-colors1"></script>
 <script src="library.js?v=20260915-arrival1"></script>
 <script src="catalog.js?v=20260915-timeline1"></script>
 <script src="navigation.js?v=20260915-timeline1"></script>
-<script src="visit-slider.js?v=20260915-arrival4"></script>
-<script src="journal.js?v=20260915-arrival1"></script>
+<script src="visit-slider.js?v=20260916-reveal1"></script>
+<script src="journal.js?v=20260916-map1"></script>
 <script src="timeline.js?v=20260915-colors1"></script>
-<script src="main.js?v=20260915-timeline1"></script>
+<script src="main.js?v=20260916-map1"></script>
 <script src="atlas.js?v=20260915-arrival4"></script>
 </body>
 </html>

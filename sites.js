@@ -6918,6 +6918,47 @@ SITES.push({
 
 SITES.find(site => site.id === 'gugong').types.push('palace');
 
+SITES.push({
+  "id": "sd_pizhi",
+  "types": [
+    "pagoda"
+  ],
+  "initialStatus": "unvisited",
+  "country": "CN",
+  "placeKey": "sd_changqing",
+  "name": "济南灵岩寺辟支塔",
+  "short": "辟支塔",
+  "sub": "八角九层 · 十二重檐砖塔",
+  "dyn": "song",
+  "tag": "北宋",
+  "era": "淳化五年重建 · 嘉祐年间告成",
+  "year": 1057,
+  "yearLabel": "北宋 · 嘉祐年间",
+  "yearApprox": true,
+  "yearNote": "塔铭记淳化五年（994）重建；1057—1058 年造像题记提供嘉祐年间落成的依据，1057 用于年表约略定位。",
+  "place": "山东济南 · 长清灵岩寺",
+  "lede": "辟支塔立在灵岩寺山色之间，八角塔身逐层收分。下三层各有两重砖檐，上六层各出一檐，九层塔身叠出十二重檐影；铁刹与细链在塔顶收住轮廓。",
+  "facts": [
+    "现存塔为北宋重建。塔铭记淳化五年（994）开工，嘉祐年间的造像题记为落成年代提供依据。",
+    "八角九层，下三层重檐、上六层单檐，共十二重檐；砖砌檐部以仿木构细节组织轮廓。",
+    "图版依据现存塔的日间照片绘制，保留灰褐砖石、深色檐部和局部赭红门窗框，不作历史彩绘复原。"
+  ],
+  "tall": true,
+  "caption": [
+    "八角九层 · 下三层重檐",
+    "北宋重建 · 现存砖塔"
+  ],
+  "legacyNames": [
+    "辟支塔",
+    "灵岩寺辟支塔",
+    "济南灵岩寺"
+  ],
+  "legacyPlaces": [
+    "济南",
+    "长清"
+  ]
+});
+
 SITES.sort((a, b) => Object.keys(DYN).indexOf(a.dyn) - Object.keys(DYN).indexOf(b.dyn) || a.year - b.year);
 
 const CHAPTERS = [
@@ -7053,8 +7094,4 @@ PLACES.push({"key": "hn_开封", "name": "开封", "prov": "河南", "lat": 34.7
 {"key": "sx_lingchuan", "name": "陵川", "prov": "山西", "lat": 35.76389, "lon": 113.25222},
 {"key": "sx_zhangzi", "name": "长子", "prov": "山西", "lat": 35.982502, "lon": 112.933193});
 
-const ROUTE = ['datong', 'yingxian', 'wutai', 'pingyao', 'hongtong', 'xian', 'luoyang', 'jincheng', 'gaoping', 'pingshun', 'anyang', 'zhengding', 'dingzhou', 'gaobeidian', 'beijing', 'nanjing', 'hangzhou', 'linan', 'ningbo', 'ninghai', "yixian", "zhuozhou", "laiyuan", "dazu", "anyue", "yuxian", "taiyuan", "qingzhou", "fuzhou", "xixian", "hunyuan", "jingning", "dingxiang", "wuyi", "jinhua", "dengfeng", "ruicheng", "wanrong", "chaoyang", "fanshi", "quanzhou", "changzhi", "yongji", "jiexiu", "dali", "jizhou", "qufu", "yaan", "zitong", "taian", "fengfeng", "xianyou", "jp_ikaruga", "jp_nara", "jp_uji", "jp_kyoto"];
-
-ROUTE.push("huzhou", "songyang", "suzhou", "lianyungang", "tianchishan", "dongshan_suzhou", "xinchang", "luzhi", "qingyuan_zj", "shaoxing", "dongtai");
-
-ROUTE.push("hn_\u5f00\u5c01", "hn_gongyi", "hn_xunxian", "hn_weihui", "hn_xinxiang", "hn_jiyuan", "hn_ruzhou", "hn_pingdingshan", "hn_sheqi", "hn_nanyang", "hn_yongcheng", "hn_zhoukou", "hn_yuzhou", "hn_sanmenxia", "hn_linying", "hb_\u8d75\u53bf", "hb_\u6613\u53bf", "hb_dingxing", "hb_quyang", "hb_chengde", "hb_zunhua", "hb_yutian", "hb_xuanhua", "hb_huailai", "hb_shexian", "hb_xingtai", "hb_lincheng", "hb_cangxian", "hb_jingxian", "sx_shuozhou", "sx_taigu", "sx_yuci", "sx_fenyang", "sx_yuncheng", "sx_xinjiang", "sx_jishan", "sx_xiangfen", "sx_zezhou", "sx_yangcheng", "sx_lingchuan", "sx_zhangzi");
+PLACES.push({ key: "sd_changqing", name: "长清", prov: "山东", country: "CN", lat: 36.364722, lon: 116.979722 });

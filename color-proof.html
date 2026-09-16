@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>设色图版 · 访古</title>
   <meta name="description" content="以现存古迹的石、木、砖与彩绘为依据，查看线稿与设色图版。">
-  <link rel="stylesheet" href="style.css?v=20260915-colors1">
-  <link rel="stylesheet" href="color-proof.css?v=1">
+  <link rel="stylesheet" href="style.css?v=20260916-transparent1">
+  <link rel="stylesheet" href="color-proof.css?v=20260916-transparent1">
 </head>
 <body class="color-proof">
 <header class="color-top"><a href="index.html#atlas">← 返回图鉴</a><a href="color-studies.html">三处小样 ↗</a></header>
 <main class="color-main">
-  <div class="color-intro"><p class="mono">石与木的本色</p><h1>一处古迹，两张图版。</h1><p>以线勾勒，以色记游。设色参考现存实物，朝代色仍留在线稿里。</p></div>
+  <div class="color-intro"><p class="mono">石与木的本色</p><h1>透明图版，逐张校对。</h1><p>切换背景查看轮廓与空隙，点开图版对照原图。<span id="color-review-summary"></span></p></div>
+  <div class="proof-backgrounds" role="group" aria-label="审图背景"><span>审图背景</span><button type="button" data-background="dark" aria-pressed="false">深色</button><button type="button" data-background="light" aria-pressed="false">浅色</button><button type="button" data-background="checker" aria-pressed="true">棋盘格</button></div>
   <section class="color-browser" aria-label="浏览全部图版">
     <div class="color-filters"><label>寻找古迹<input id="color-search" type="search" placeholder="名称或地区"></label><label>时代<select id="color-period"><option value="all">全部时代</option></select></label><div class="color-modes" role="group" aria-label="显示方式"><button type="button" data-mode="color" aria-pressed="true">设色</button><button type="button" data-mode="line" aria-pressed="false">线稿</button></div></div>
     <p id="color-count" class="mono" role="status"></p>
@@ -22,17 +23,18 @@
   <section id="color-single" hidden aria-label="单处图版对照">
     <a id="color-all" href="color-proof.html">← 全部图版</a>
     <div class="color-single-heading"><div><p id="single-era" class="mono"></p><h2 id="single-name"></h2></div><a id="single-detail">细读古迹 ↗</a></div>
-    <div class="color-comparison"><figure><figcaption>未到访 · 线稿</figcaption><img id="single-line" alt=""></figure><figure><figcaption>已到访 · 设色</figcaption><img id="single-color" class="colored-plate" alt=""></figure></div>
-    <div class="color-single-links"><a id="single-original">打开设色原图 ↗</a><a id="single-research">设色依据与绘图记录 ↗</a></div>
+    <div class="color-comparison"><figure><figcaption><label>对照图 <select id="single-reference"><option value="original">原始设色</option><option value="line">线稿</option></select></label></figcaption><img id="single-line" alt=""></figure><figure><figcaption id="single-review">透明设色</figcaption><img id="single-color" class="colored-plate" alt=""></figure></div>
+    <div class="color-single-links"><a id="single-avif">打开透明 AVIF ↗</a><a id="single-original">打开设色原图 ↗</a><a id="single-research">设色依据与绘图记录 ↗</a><span id="single-id" class="mono"></span></div>
+    <p class="proof-hint">可用键盘 ← → 逐张浏览。发现问题时记下古迹名称或 ID。</p>
     <div id="single-sources" class="color-source-credits"></div>
     <nav class="color-pages" aria-label="逐张浏览"><a id="single-prev">← 前一处</a><span id="single-page" class="mono"></span><a id="single-next">后一处 →</a></nav>
   </section>
   <footer class="color-footer">图版依据实拍作艺术转译。浏览、对照图版不会改变心愿单或到访记录。</footer>
   <noscript>请开启 JavaScript 浏览图版；<a href="assets/color-research/queue.json">完整制作清单</a>。</noscript>
 </main>
-<script src="sites.js?v=20260915-colors1"></script>
-<script src="plates.js?v=20260915-colors1"></script>
-<script src="colored-plates.js?v=20260915-colors1"></script>
-<script src="color-proof.js?v=1"></script>
+<script src="sites.js?v=20260916-pizhi-white1"></script>
+<script src="plates.js?v=20260916-pizhi-white1"></script>
+<script src="colored-plates.js?v=20260916-pizhi-white1"></script>
+<script src="color-proof.js?v=20260916-approved1"></script>
 </body>
 </html>

@@ -1,0 +1,133 @@
+{
+  "id": "sd_pizhi",
+  "subject": "济南灵岩寺辟支塔",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jinan_2009_1487.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Jinan_2009_1487.jpg",
+  "author": "G41rn8",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_pizhi-photo.jpg",
+    "assets/references/sd_pizhi-photo-2.jpg"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jinan_2009_1487.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Jinan_2009_1487.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2009",
+      "reference_file": "assets/references/sd_pizhi-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_at_Lingyan_Si.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Pagoda_at_Lingyan_Si.jpg/960px-Pagoda_at_Lingyan_Si.jpg",
+      "author": "M. Weitzel / Matt314",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2007-04-01",
+      "reference_file": "assets/references/sd_pizhi-photo-2.jpg"
+    }
+  ],
+  "source_note": "两张实拍用于主体形制；卢舍那母版仅用于细线风格。辟支塔八角九层、十二重檐，下三层重檐。已实际查看两张日间照片，塔身为灰褐、米灰砖石，檐部深灰褐，门窗装饰残留暗赭红，铁刹暗灰。第二张阴天照片可辅助避免第一张阳光下的偏暖曝光。",
+  "history_sources": [
+    {
+      "url": "https://ygx.sxu.edu.cn/db/%E6%9C%9F%E5%88%8A/minsyj/mins2014/1404pdf/1404011.pdf",
+      "title": "《北宋前期山东地区的佛教结社初探》，民俗研究 2014 年第 4 期",
+      "note": "塔铭记淳化五年（994）重建，1057—1058 年造像题记说明约嘉祐年间落成；不采用照片英文说明的 1063 年作为唯一精确日期。"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Draw Pizhi Pagoda (辟支塔) at Lingyan Temple, Jinan, Shandong, China, as one refined fine-line heritage atlas illustration.\nImage 1 is ONLY the line-style master: match its delicate, slightly organic thin black ink contours and restrained detail. Images 2 and 3 are photographs of the actual pagoda and determine geometry.\nPreserve its slender tapering octagonal brick tower: nine storeys, twelve projecting eaves, with double eaves on each of the lowest three storeys and one eave on each of the upper six. Preserve shallow straight brick eaves and tiny corbel brackets, arched apertures, blind panels, low stone plinth, iron finial and supporting chains. No swooping pavilion roofs or extra tiers.\nShow the whole tower centered with verticals vertical and reduced perspective. Portrait 1024x1536, tower occupies about 82% of height, apex and base uncut.\nDraw sparse fine BLACK INK LINES on a perfectly flat, pure WHITE (#FFFFFF) opaque background. All spaces between lines, both inside and outside the tower, are pure white. Doors and windows are outlines without dark fill. Selectively simplify masonry joints and ornaments. No gray shading, paper texture, gradient, glow, cast shadow or broad filled areas. The entire canvas is opaque white wherever there is no black stroke. No checkerboard.\nRemove people, plants, fences, paths, mountains, sky, other buildings and walls. No text, labels, watermark or border.",
+  "generated_file": "assets/generated/sd_pizhi.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "caption": [
+    "八角九层 · 下三层重檐",
+    "北宋重建 · 现存砖塔"
+  ],
+  "generation_attempts": [
+    {
+      "attempt": 1,
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-ade20bed-489d-4259-a244-d8ee9065bae1.png",
+      "saved_file": "assets/transparency-studies/sd_pizhi-rule-test/line-attempt-1.png",
+      "sha256": "23891ceb6e32689c508ae2e7f5287d15f6bbb0ec19c2da7b952518f6212f4290",
+      "prompt": "Use case: style-transfer.\nAsset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nCreate the PIZHI PAGODA (辟支塔) at Lingyan Temple, Changqing, Jinan, Shandong, China.\n\nINPUT ROLES: Image 1 is ONLY the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin ink lines, restrained detail, generous blank areas and consistent visual density. Ignore its white background and Buddha geometry. Images 2 and 3 are photographs of the actual Pizhi Pagoda and are SUBJECT GEOMETRY ONLY.\n\nSUBJECT: preserve the actual slender tapering octagonal masonry pagoda shown in the two photos: NINE storeys, TWELVE eaves in total, with double eaves on each of the lowest three storeys and single eaves on each of the upper six. Preserve the straight shallow brick eaves and small corbel brackets, central arched openings and adjacent blind panels, the low stone plinth, iron finial with its delicate supporting chains. This is a brick pagoda, not a wooden Chinese pavilion tower: no swooping curved tile roofs. Do not invent extra tiers. Show the complete tower, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Portrait 1024x1536, the entire pagoda occupies about 82% of canvas height, apex and base uncut, balanced generous margins.\n\nDRAWING: refined sparse BLACK INK fine contours, with a few finer internal structural lines. Use outlines for doors and windows, no filled dark apertures. Do not fill the masonry surfaces: ALL unmarked surfaces within the tower and ALL canvas outside the strokes remain truly transparent. Selectively simplify brick joints and ornaments. No solid shadows, no grey shading, crosshatching, pencil grain, paper texture, gradient or color. Remove people, trees, bushes, fence, cars, paths, sky, nearby buildings, stone graves, wall and mountain. No labels, letters, captions, watermark, frame or border.\n\nCRITICAL OUTPUT REQUIREMENT: this is a TRANSPARENT-BACKGROUND PNG ASSET, with real transparency encoded in an RGBA PNG alpha channel. Output only the isolated black ink strokes. Empty canvas pixels and spaces between strokes must have alpha=0; ink strokes must have visible nonzero alpha and antialiased alpha edges. A white or black background is NOT acceptable. A grey checkerboard PAINTED into RGB is NOT transparency and must NOT be generated. Do not draw any transparency grid or backdrop. Ignore the backgrounds of every reference. The ORIGINAL generated PNG itself must be transparent; no later background removal is intended.",
+      "mode": "RGBA",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "transparent_pixels": 1176101,
+      "status": "rejected",
+      "reason": "原件虽含真实 alpha，但塔内白色实体面和外缘光晕仍保留，不能作为仅笔画的线稿。"
+    },
+    {
+      "attempt": 2,
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-5830e026-f24a-44c5-9bac-8290b4d4b202.png",
+      "saved_file": "assets/transparency-studies/sd_pizhi-rule-test/line-attempt-2.png",
+      "sha256": "b1adaed7578e31290a11d7b659501f8af4f904870fb47941870e0a21352f9995",
+      "prompt": "Use case: background-extraction / precise-object-edit.\nImage 1 is the LINE ART TO CORRECT. Images 2 and 3 are only original style and actual Pizhi pagoda geometry references.\nChange ONLY the transparency treatment of Image 1. Preserve all its existing tower contour lines, exact composition, scale, storeys and eaves.\nExtract ONLY the thin BLACK INK STROKES into a truly transparent PNG layer. Delete ALL white/off-white filled paper and masonry planes everywhere INSIDE the tower, including all enclosed regions between lines. Delete the whole exterior grey/white halo and ALL ground shadow. All blank surfaces inside and outside the tower must be 100% transparent (alpha 0), leaving ONLY the ink stroke skeleton visible. Preserve fine strokes and antialiased edge alpha.\nOutput a 1024x1536 RGBA PNG directly, with only black line RGB and native alpha transparency. Solid black stroke centers should have alpha 255, empty spaces alpha 0. DO NOT create a filled white tower silhouette. DO NOT draw a glow, background, white matte, black matte, checkerboard or transparency grid. The PNG itself must encode real transparency; no subsequent background removal is intended. No new drawing, no new texture, no labels.",
+      "mode": "RGB",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "alpha_extrema": null,
+      "transparent_pixels": 0,
+      "status": "rejected",
+      "reason": "返回 RGB 文件，无 alpha 通道，背景是绘制的棋盘格。"
+    },
+    {
+      "original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-7b9dfa69-3d69-449e-b353-8f3a69ceade0.png",
+      "saved_file": "assets/generated/sd_pizhi.png",
+      "prompt": "Use case: style-transfer. Draw Pizhi Pagoda (辟支塔) at Lingyan Temple, Jinan, Shandong, China, as one refined fine-line heritage atlas illustration.\nImage 1 is ONLY the line-style master: match its delicate, slightly organic thin black ink contours and restrained detail. Images 2 and 3 are photographs of the actual pagoda and determine geometry.\nPreserve its slender tapering octagonal brick tower: nine storeys, twelve projecting eaves, with double eaves on each of the lowest three storeys and one eave on each of the upper six. Preserve shallow straight brick eaves and tiny corbel brackets, arched apertures, blind panels, low stone plinth, iron finial and supporting chains. No swooping pavilion roofs or extra tiers.\nShow the whole tower centered with verticals vertical and reduced perspective. Portrait 1024x1536, tower occupies about 82% of height, apex and base uncut.\nDraw sparse fine BLACK INK LINES on a perfectly flat, pure WHITE (#FFFFFF) opaque background. All spaces between lines, both inside and outside the tower, are pure white. Doors and windows are outlines without dark fill. Selectively simplify masonry joints and ornaments. No gray shading, paper texture, gradient, glow, cast shadow or broad filled areas. The entire canvas is opaque white wherever there is no black stroke. No checkerboard.\nRemove people, plants, fences, paths, mountains, sky, other buildings and walls. No text, labels, watermark or border.",
+      "mode": "RGB",
+      "status": "accepted_white_source",
+      "method": "white-background-then-script"
+    }
+  ],
+  "visual_review": "实际查看：完整八角砖塔，细线描绘层檐、门窗、刹链；塔尖及底座未裁切，无文字，背景为白色。按用户最新授权由脚本将白底及线间留白转换为透明。形制为艺术转译，非实测图。",
+  "previous_transparency_test": {
+    "requirement": "Original imagegen PNG must contain real alpha transparency; do not remove a background after generation.",
+    "status": "failed_after_targeted_retry"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a4c4-2eae-7fd3-ab2e-c03000698012/exec-7b9dfa69-3d69-449e-b353-8f3a69ceade0.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "08b501679c50d20c9f753536730cfe50fed25927cda3fb2a6f90f57d63d55b14",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jinan_2009_1487.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Jinan_2009_1487.jpg",
+      "author": "G41rn8",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2009",
+      "reference_file": "assets/references/sd_pizhi-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_at_Lingyan_Si.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Pagoda_at_Lingyan_Si.jpg/960px-Pagoda_at_Lingyan_Si.jpg",
+      "author": "M. Weitzel / Matt314",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "date": "2007-04-01",
+      "reference_file": "assets/references/sd_pizhi-photo-2.jpg"
+    }
+  ],
+  "coordinate_source": {
+    "url": "https://commons.wikimedia.org/wiki/Category:Lingyan_Temple_(Jinan)",
+    "note": "灵岩寺寺址近似坐标，用于长清地点标记，非塔基实测定位。"
+  }
+}

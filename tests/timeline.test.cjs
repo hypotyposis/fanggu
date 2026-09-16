@@ -8,8 +8,8 @@ const groups = timeline.clusters(SITES, DYN);
 
 test('compact clusters retain every monument exactly once and keep the country and political lanes', () => {
   const ids = groups.flatMap(group => group.sites.map(site => site.id));
-  assert.equal(ids.length, 200);
-  assert.equal(new Set(ids).size, 200);
+  assert.equal(ids.length, 201);
+  assert.equal(new Set(ids).size, 201);
   assert.deepEqual([...ids].sort(), Array.from(SITES, site => site.id).sort());
   assert.equal(timeline.lane(SITES.find(site => site.id === 'sx_zhenguo'), DYN), 'north');
   assert.equal(timeline.lane(SITES.find(site => site.id === 'horyuji'), DYN), 'japan');
@@ -22,7 +22,7 @@ test('compact clusters retain every monument exactly once and keep the country a
 test('dense future additions do not overlap point hit targets or add vertical rows', () => {
   const larger = Array.from({ length: 10 }, (_, i) => SITES.map(site => ({ ...site, id: `${site.id}_${i}` }))).flat();
   const packed = timeline.clusters(larger, DYN);
-  assert.equal(packed.reduce((n, group) => n + group.sites.length, 0), 2000);
+  assert.equal(packed.reduce((n, group) => n + group.sites.length, 0), larger.length);
   for (const lane of ['north', 'south', 'japan']) {
     const row = packed.filter(group => group.lane === lane);
     for (let i = 1; i < row.length; i++) assert(row[i].x - row[i - 1].x >= 32);

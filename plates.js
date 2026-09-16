@@ -704,6 +704,18 @@ const PLATES = {
     "color": "#7aa899",
     "tint": false
   },
+  "sd_pizhi": {
+    "src": "assets/plates/sd_pizhi.png",
+    "alt": "济南灵岩寺辟支塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "八角九层 · 下三层重檐",
+      "北宋重建 · 现存砖塔"
+    ]
+  },
   "hn_xiangshan": {
     "src": "assets/plates/hn_xiangshan.png",
     "alt": "香山寺大悲观音大士塔 · 现状可见塔身 · 线稿",

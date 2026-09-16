@@ -48,7 +48,7 @@ const FangguJournal = (() => {
       event.preventDefault(); const form = event.currentTarget;
       try {
         library.setRecord(visiting, { status: 'visited', visitedOn: form.elements.visitedOn.value, note: form.elements.note.value });
-        $('#visit-dialog').close(); onChange(); toast('到访已记下，可在“已到访”与行迹中查看');
+        $('#visit-dialog').close(); onChange(); toast('到访已记下，可在“已到访”与地图中查看');
       } catch (error) { formError($('#visit-dialog'), error); }
     });
     $('#visit-to-wish').addEventListener('click', () => {
