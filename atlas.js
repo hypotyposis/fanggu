@@ -4,7 +4,7 @@
   const $ = selector => document.querySelector(selector);
   const el = (tag, className, text) => { const node = document.createElement(tag); if (className) node.className = className; if (text != null) node.textContent = text; return node; };
   const catalog = FangguCatalog.classify(SITES, PLACES);
-  const { library, statusNames, button, arrival, toast, open, formError } = FangguJournal.create(catalog, render);
+  const { library, statusNames, button, arrival, reviewSummary, toast, open, formError } = FangguJournal.create(catalog, render);
   let filter = location.hash === '#wishlist' ? 'wishlist' : 'all', limit = 12;
   let backup = '', previousRecords = '';
   const facetIds = { country: 'atlas-country', dynasty: 'atlas-dynasty', region: 'atlas-region', province: 'atlas-province', type: 'atlas-type' };
@@ -46,6 +46,8 @@
     body.append(el('p', 'card-kind', site.types.map(type => FangguCatalog.types[type]).join(' · ')));
     const excerpt = note;
     if (excerpt) body.append(el('p', 'card-note', excerpt));
+    const review = library.review(site.id), summary = reviewSummary(site.id, true);
+    if (summary) body.append(summary);
     if (status === 'visited') body.append(el('p', 'card-date mono', visitedOn ? `${visitedOn} 到访` : '已到访 · 日期未记'));
     const actions = el('div', 'card-actions');
     if (status === 'visited') actions.append(button('到访记录', 'visit', site.id));
@@ -54,6 +56,7 @@
     } else {
       actions.append(button('加入心愿单', 'wish', site.id, 'card-button emphasized'));
     }
+    actions.append(button(review.rating != null || review.text ? '编辑评价' : '写短评 / 打分', 'review', site.id));
     { const read = el('a', 'card-read', '细读 ↗'); read.href = FangguNavigation.detailURL(site.id); actions.append(read); }
     if (status !== 'visited') body.append(arrival(site, image));
     body.append(actions); article.append(visual, body); return article;
@@ -145,7 +148,9 @@
     try {
       if (file.size > 2_000_000) throw new Error('请选择小于 2 MB 的访古 JSON 备份');
       backup = await file.text(); const parsed = library.parseBackup(backup);
-      $('#import-preview').textContent = `这份备份包含 ${Object.keys(parsed.records).length} 条心愿或到访记录${parsed.customSites.length ? `，另保留 ${parsed.customSites.length} 条旧版登记资料` : ''}。同名旧心愿会自动关联图版，其余可手动匹配。`;
+      const reviews = Object.values(parsed.reviews).filter(review => review.rating != null || review.text).length;
+      const cleared = Object.keys(parsed.reviews).length - reviews;
+      $('#import-preview').textContent = `这份备份包含 ${Object.keys(parsed.records).length} 条心愿或到访记录、${reviews} 条评价${cleared ? `，另含 ${cleared} 条评价清除记录（会清除当前同一处的评价）` : ''}${parsed.customSites.length ? `，另保留 ${parsed.customSites.length} 条旧版登记资料` : ''}。同名旧心愿会自动关联图版，其余可手动匹配。`;
       open($('#import-dialog'));
     } catch (error) { toast(error.message); }
   });

@@ -37,19 +37,19 @@
   const arrivalSlot = el('div', 'detail-arrival');
   figure.append(image, caption, arrivalSlot); fig.append(figure);
   const text = el('div', 'site-text');
-  // Editorial HTML is curated in sites.js; personal notes below only use textContent.
+  // Editorial HTML is curated in sites.js; personal notes and reviews only use textContent.
   text.innerHTML = `<div class="meta"><span class="dyn${site.tag.length > 1 ? ' two' : ''}">${site.tag}</span><span class="mono">${site.era}${site.yearApprox ? '' : ` · ${site.year}`}</span><span class="mono">${site.place}</span></div>
     <h1>${site.name}${site.sub ? `<small>${site.sub}</small>` : ''}</h1>
     <p class="lede">${site.lede}</p>
     <ul>${site.facts.map(fact => `<li>${fact}</li>`).join('')}</ul>
     ${site.quote ? `<p class="quote">${site.quote}</p>` : ''}`;
-  const record = el('section', 'detail-record'); record.setAttribute('aria-label', '我的心愿与到访记录');
+  const record = el('section', 'detail-record'); record.setAttribute('aria-label', '我的记录与评价');
   const links = el('div', 'detail-links');
   const proof = el('a', '', '放大图版 ↗'); proof.href = `proof.html?fig=${encodeURIComponent(site.id)}`;
   const sources = el('a', '', '图版来源 ↗'); sources.href = site.id === 'longmenshiku' ? 'sources.html' : `sources.html#${encodeURIComponent(site.id)}`;
   links.append(proof, sources); text.append(record, links); article.append(fig, text);
   $('#detail-content').append(article);
-  const { library, statusNames, button, arrival } = FangguJournal.create(catalog, renderRecord);
+  const { library, statusNames, button, arrival, reviewSummary } = FangguJournal.create(catalog, renderRecord);
   function renderRecord() {
     const personal = library.record(site.id);
     FangguVisit.clear(image);
@@ -65,6 +65,7 @@
     if (personal.status !== 'visited') strip.append(button(personal.status === 'wishlist' ? '移出心愿单' : '加入心愿单', personal.status === 'wishlist' ? 'unwish' : 'wish', site.id));
     record.replaceChildren(strip);
     if (personal.note) record.append(el('p', 'detail-note', personal.note));
+    record.append(reviewSummary(site.id));
     const warning = $('#storage-error'); warning.textContent = library.error(); warning.hidden = !library.error();
   }
   renderRecord();

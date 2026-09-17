@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css?v=20260916-reveal1">
+<link rel="stylesheet" href="style.css?v=20260917-reviews1">
 </head>
 <body>
 
@@ -104,7 +104,7 @@
       <div class="atlas-empty" id="atlas-empty" hidden><span class="empty-glyph" aria-hidden="true">待</span><h3 id="empty-title"></h3><p id="empty-description"></p><button class="journal-button" id="empty-action" type="button"></button></div>
       <button type="button" class="journal-button load-more" id="atlas-more" hidden>继续翻阅</button>
       <details id="legacy-records" class="legacy-records" hidden><summary>旧记录待关联</summary><p>这些旧心愿仍保存在备份中。选好对应的库内古迹，便能接上图版；尚未入库的可以先留在这里。</p><div id="legacy-list"></div></details>
-      <div class="backup-row"><p>心愿与打卡保存在当前浏览器。换设备前，记得留一份备份。</p><div><button type="button" id="export-records">导出备份</button><button type="button" id="import-records">导入备份</button><input type="file" id="backup-file" accept=".json,application/json" hidden></div></div>
+      <div class="backup-row"><p>心愿、打卡与评价保存在当前浏览器。换设备前，记得留一份备份。</p><div><button type="button" id="export-records">导出备份</button><button type="button" id="import-records">导入备份</button><input type="file" id="backup-file" accept=".json,application/json" hidden></div></div>
     </div>
   </section>
 
@@ -121,8 +121,19 @@
 </dialog>
 <dialog class="journal-dialog" id="import-dialog" aria-labelledby="import-title">
   <div class="dialog-head"><span class="mono">续上旧笺</span><button class="dialog-close" type="button" data-close aria-label="关闭备份导入">×</button></div>
-  <h2 id="import-title">导入访古备份</h2><p id="import-preview"></p><p class="dialog-intro">与当前图鉴合并。已有的同一条记录采用备份中的状态、日期与笔记，其余记录保留。</p>
+  <h2 id="import-title">导入访古备份</h2><p id="import-preview"></p><p class="dialog-intro">与当前图鉴合并。同一条记录采用备份中的状态、日期与笔记；同一处评价采用备份值，其余保留。旧版备份不覆盖当前评价。</p>
   <p class="form-error" role="alert" hidden></p><div class="dialog-actions"><button class="journal-button" type="button" data-close>取消</button><button class="journal-button primary" type="button" id="confirm-import">合并导入</button></div>
+</dialog>
+<dialog class="journal-dialog" id="review-dialog" aria-labelledby="review-title">
+  <form id="review-form">
+    <div class="dialog-head"><span class="mono">我的评价</span><button class="dialog-close" type="button" data-close aria-label="关闭评价">×</button></div>
+    <h2 id="review-title">为古迹留几句话</h2><p class="dialog-intro" id="review-place"></p>
+    <fieldset class="rating-field"><legend>我的评分 <span class="optional">选填</span></legend><div class="rating-picker" id="review-stars"></div><div class="rating-caption"><span id="review-rating-label" role="status">未评分</span><button type="button" class="card-button" id="review-unrate">取消评分</button></div></fieldset>
+    <label>短评 <span class="optional">选填，最多 500 字符</span><textarea name="shortReview" rows="4" maxlength="500" aria-describedby="review-count" placeholder="哪一处细节打动了你？也可以记下遗憾。"></textarea></label>
+    <p class="review-count mono" id="review-count">0 / 500</p>
+    <p class="dialog-intro review-privacy">仅保存在当前浏览器，导出备份时一并保存。</p>
+    <p class="form-error" role="alert" hidden></p><div class="dialog-actions review-actions"><button type="button" class="journal-button" id="review-clear" hidden>清除评价</button><button type="button" class="journal-button" data-close>取消</button><button type="submit" class="journal-button primary">保存评价</button></div>
+  </form>
 </dialog>
 <div class="journal-toast" id="journal-toast" role="status" aria-live="polite" hidden></div>
 
@@ -139,13 +150,13 @@
 <script src="plates.js?v=20260916-pizhi-white1"></script>
 <script src="colored-plates.js?v=20260916-pizhi-white1"></script>
 <script src="artwork.js?v=20260915-colors1"></script>
-<script src="library.js?v=20260915-arrival1"></script>
+<script src="library.js?v=20260917-reviews1"></script>
 <script src="catalog.js?v=20260915-timeline1"></script>
 <script src="navigation.js?v=20260915-timeline1"></script>
 <script src="visit-slider.js?v=20260916-reveal1"></script>
-<script src="journal.js?v=20260916-map1"></script>
+<script src="journal.js?v=20260917-reviews1"></script>
 <script src="timeline.js?v=20260915-colors1"></script>
 <script src="main.js?v=20260916-map1"></script>
-<script src="atlas.js?v=20260915-arrival4"></script>
+<script src="atlas.js?v=20260917-reviews1"></script>
 </body>
 </html>
