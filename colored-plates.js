@@ -4426,6 +4426,144 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sh_tangchuang": {
+    "src": "assets/colored-transparent-avif/sh_tangchuang.avif",
+    "originalSrc": "assets/colored/sh_tangchuang.png",
+    "transparentSrc": "assets/colored-transparent/sh_tangchuang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "松江唐经幢 · 佛顶尊胜陀罗尼经幢 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sh_tangchuang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "date": "2015-03-21"
+      }
+    ]
+  },
+  "sh_longhuata": {
+    "src": "assets/colored-transparent-avif/sh_longhuata.avif",
+    "originalSrc": "assets/colored/sh_longhuata.png",
+    "transparentSrc": "assets/colored-transparent/sh_longhuata.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "龙华塔 · 八面七层 · 砖木楼阁塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sh_longhuata.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20191113_Longhua_Pagoda-1.jpg",
+        "author": "Balon Greyjoy",
+        "license": "CC0 1.0",
+        "date": "2019-11-13"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:2011_Longhua_Pagoda.JPG",
+        "author": "J. Patrick Fischer",
+        "license": "CC BY-SA 3.0",
+        "date": "2011-12-28"
+      }
+    ]
+  },
+  "sh_fangta": {
+    "src": "assets/colored-transparent-avif/sh_fangta.avif",
+    "originalSrc": "assets/colored/sh_fangta.png",
+    "transparentSrc": "assets/colored-transparent/sh_fangta.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "松江兴圣教寺塔 · 方塔园 · 九层方塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sh_fangta.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Square_Tower_of_Songjiang.jpg",
+        "author": "Kgbkgbkgb",
+        "license": "CC BY-SA 3.0",
+        "date": "2010-01-12"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Fangta_Park_Songjiang.JPG",
+        "author": "Heights",
+        "license": "CC BY-SA 3.0",
+        "date": "2009-08-09"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%85%B4%E5%9C%A3%E6%95%99%E5%AF%BA%E5%A1%94.jpg",
+        "author": "Acot一杯茶",
+        "license": "CC BY-SA 4.0",
+        "date": "2017-07-28"
+      }
+    ]
+  },
+  "sh_zhenru": {
+    "src": "assets/colored-transparent-avif/sh_zhenru.avif",
+    "originalSrc": "assets/colored/sh_zhenru.png",
+    "transparentSrc": "assets/colored-transparent/sh_zhenru.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "真如寺大殿 · 三间单檐歇山 · 元代木构 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sh_zhenru.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Zhenrusi_Dadian.JPG",
+        "author": "Fayhoo",
+        "license": "CC BY-SA 3.0",
+        "date": "2016-01-23"
+      }
+    ]
+  },
+  "sx_doudafu": {
+    "src": "assets/colored-transparent-avif/sx_doudafu.avif",
+    "originalSrc": "assets/colored/sx_doudafu.png",
+    "transparentSrc": "assets/colored-transparent/sx_doudafu.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_doudafu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:窦大夫祠-1.jpg",
+        "author": "Fymking",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-08-26"
+      }
+    ]
+  },
+  "sx_jiulongbi": {
+    "src": "assets/colored-transparent-avif/sx_jiulongbi.avif",
+    "originalSrc": "assets/colored/sx_jiulongbi.png",
+    "transparentSrc": "assets/colored-transparent/sx_jiulongbi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_jiulongbi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
+        "author": "Chlukoe",
+        "license": "CC0 1.0",
+        "date": "2013-06-25"
+      }
+    ]
+  },
   "ah_xuguo": {
     "src": "assets/colored-transparent-avif/ah_xuguo.avif",
     "originalSrc": "assets/colored/ah_xuguo.png",
@@ -4495,46 +4633,6 @@ globalThis.COLORED_PLATES = {
         "author": "三猎",
         "license": "CC BY-SA 4.0",
         "date": "2016-06-24"
-      }
-    ]
-  },
-  "sx_doudafu": {
-    "src": "assets/colored-transparent-avif/sx_doudafu.avif",
-    "originalSrc": "assets/colored/sx_doudafu.png",
-    "transparentSrc": "assets/colored-transparent/sx_doudafu.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 设色图",
-    "width": 1536,
-    "height": 1024,
-    "tint": false,
-    "record": "assets/color-research/sx_doudafu.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:窦大夫祠-1.jpg",
-        "author": "Fymking",
-        "license": "CC BY-SA 4.0",
-        "date": "2012-08-26"
-      }
-    ]
-  },
-  "sx_jiulongbi": {
-    "src": "assets/colored-transparent-avif/sx_jiulongbi.avif",
-    "originalSrc": "assets/colored/sx_jiulongbi.png",
-    "transparentSrc": "assets/colored-transparent/sx_jiulongbi.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 设色图",
-    "width": 1536,
-    "height": 1024,
-    "tint": false,
-    "record": "assets/color-research/sx_jiulongbi.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
-        "author": "Chlukoe",
-        "license": "CC0 1.0",
-        "date": "2013-06-25"
       }
     ]
   },

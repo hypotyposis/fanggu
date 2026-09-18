@@ -1,0 +1,107 @@
+{
+  "id": "sh_longhuata",
+  "subject": "龙华塔 · 八面七层 · 砖木楼阁塔",
+  "status": "complete",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_longhuata-full-photo.jpg",
+    "assets/references/sh_longhuata-photo.jpg",
+    "assets/generated/sh_longhuata-attempt-2.png",
+    "assets/generated/sh_longhuata-attempt-3.png"
+  ],
+  "input_images": [
+    "assets/generated/sh_longhuata-attempt-3.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_longhuata-full-photo.jpg"
+  ],
+  "source_note": "两张日间实拍互补，复核七层砖木楼阁、铁刹及栏杆。底层被院墙和树木遮挡的局部依据对称结构作艺术概括；去掉现代墙门和街景。按977年塔主体定位，外檐和栏杆的后修另述，不以三国始建传说断代。",
+  "prompt": "Use case: precise-object-edit. Make Image 1 a strictly NEUTRAL GRAYSCALE black-and-white ink drawing with absolutely no colored pixels.\nPreserve its existing complete Longhua Pagoda geometry exactly: SEVEN distinct roofs, six balcony levels, bottom columned floor, same finial and chains, same portrait 1024x1536 canvas. Change ONLY the ink neutrality and simplify fine dense roof marks slightly. Image 2 is the thin black contour style master; Image 3 is the real monument and must not contribute any COLOR or scenery.\nPure white opaque background and white interior paper surfaces, pure BLACK ink and neutral grayscale antialiasing. RGB channels at every pixel should be equal (R=G=B), with no blue, warm grey or chromatic fringes. No color or gold anywhere. Flat solid #FFFFFF canvas; no alpha transparency, halo, shadow, grey surface fill, texture, grain, gradient, hatching or checkerboard. Keep the exact seven roofs and full apex/base uncut. No text or scene.",
+  "generated_file": "assets/generated/sh_longhuata.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-f1c2b4e3-7b5b-49c3-b30e-b7f978a64ea5.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "八面七层 · 砖木楼阁式",
+    "吴越重建 · 北宋纪年（977）"
+  ],
+  "historical_sources": [
+    {
+      "title": "徐汇区档案局 · 浦西天际线：从龙华塔到徐家汇中心",
+      "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_daj_bmdt/20231026/525592.html"
+    }
+  ],
+  "visual_review": "实际查看最终白底原稿，逐檐数出七重屋顶、六层上部平座及底层柱廊；铁刹与基座完整，无文字，白底无光晕。斗拱与遮挡部分为艺术概括，不宣称精确测绘；新增交付待用户审阅。",
+  "completed_at": "2026-09-18",
+  "generation_attempts": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the Vairocana STYLE MASTER: borrow only its elegant delicate thin black contour linework, sparse detail and generous blank spaces. Image 2 is the real Longhua Pagoda in Shanghai, SUBJECT GEOMETRY ONLY.\nDraw the complete actual SEVEN-STOREY OCTAGONAL brick-and-timber Longhua Pagoda. Keep exactly seven occupied tower levels and seven roofs, each with surrounding timber balcony, strongly upturned polygonal tiled eaves and lattice-pattern balustrades; lower level partly hidden by modern wall in the photo must be shown as a simple lower tower level within the existing tower envelope, without inventing an extra terrace pavilion. Upper levels progressively taper. Preserve its slender ringed iron finial, small top ornament and fine supporting chains, as photographed. Keep the distinctive octagonal outline; do not turn it into a square tower. Present a slightly oblique near-front elevation showing adjacent faces, reduce the photo's upward convergence so verticals remain vertical.\nCenter the complete pagoda on portrait 1024×1536 canvas, about 82% canvas height, roof apex and low stone footing entirely uncut, clear top and bottom breathing room. Remove modern compound wall and gate, signage, trees, people, cars, adjoining temple, street and lamps. A few short footing contours only. Use sparse tile and structural marks rather than dense repeated roof tiles.\nPerfectly flat opaque PURE WHITE #FFFFFF background. Fine BLACK INK outlines only. All unmarked surfaces inside and outside the tower pure white. Doors and shadowed recesses outlines without black fills. No broad grey shading, shadows, hatching, texture, grain, paper, gradients, colors, halo, cast shadow or checkerboard. No letters, calligraphy, labels, dimensions, watermark, frame or border. White canvas is removed later by script.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sh_longhuata-photo.jpg"
+      ],
+      "saved_file": "assets/generated/sh_longhuata-attempt-1.png",
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-0db02e62-fa85-493d-b212-cd55aa457a33.png",
+      "status": "rejected",
+      "reason": "RGBA 原件存在灰填充与光晕，alpha 最大值248，没有不透明主体；檐数不足。"
+    },
+    {
+      "prompt": "Use case: style-transfer. Make ONE BLACK LINE ON WHITE architectural plate of the real Longhua Pagoda, Shanghai.\nImage 1 gives only the delicate sparse black contour STYLE. Images 2 and 3 are GEOMETRY references of the SAME real pagoda. The photo shows SIX upper occupied floors WITH balconies, PLUS the lowest ground-floor storey under the broad lowest tiled roof partly behind the compound wall. This means EXACTLY SEVEN tiled eave roofs in total: SIX balcony levels stacked above ONE ground level. Each of the six balconies is immediately BELOW its own upper roof. The ground level has its seventh low broad eave above an open colonnade and masonry entrance. Count ALL SEVEN roofs. Do not omit the ground-level roof.\nNear-front slight oblique view of the OCTAGONAL pagoda; preserve its upward tapered seven levels, curved tiled roofs with upturned corners, pierced angular timber railings, thin iron spire with ring disks, and supporting chains. Straighten vertical convergence. Complete pagoda top to simple low stone footing, centered portrait 1024x1536, approximately 82% height with clean margins. Remove compound wall, gate, tree branches, signs, modern street and surroundings. Use only selected structural contours, restrained roof marks and a few short ground lines.\nCRITICAL: Output an OPAQUE RGB-looking white sheet. Perfectly flat solid PURE WHITE #FFFFFF over every blank exterior and every unmarked interior surface. BLACK INK STROKES only. Building surfaces must also be pure white with thin black contours, not grey filled surfaces. No transparency in this original, no alpha fades, no glow, halo, shading, solid shadows, color, grey backdrop, gradient, checkerboard or paper texture. No letters, labels or watermark. The white paper will later be removed by our script.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sh_longhuata-full-photo.jpg",
+        "assets/references/sh_longhuata-photo.jpg"
+      ],
+      "saved_file": "assets/generated/sh_longhuata-attempt-2.png",
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-72d2321d-2075-4db4-a3ab-67bf02f4f920.png",
+      "status": "rejected",
+      "reason": "白底原件合格，但目检只有六重屋顶，少一层。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Correct the Longhua Pagoda line illustration in Image 1.\nImage 1 currently contains ONLY SIX tiled roof tiers, which is an error. INSERT ONE ADDITIONAL complete balcony storey AND its own tiled roof between the current third and fourth roofs from the top. After this edit there MUST BE EXACTLY SEVEN distinct projecting tiled roofs, six balcony storeys and the lowest columned ground storey. Do not merely stretch or relabel the six-tier drawing: visibly add the missing roof and balcony. Compress the existing floors slightly so all seven fit on the same portrait 1024x1536 canvas. Image 3 is the real SEVEN-tier Longhua Pagoda geometry evidence; Image 2 is thin contour STYLE only.\nKeep the octagonal tower, distinctive curled tiled eaves, pierced timber railings, door openings, slender metal finial and chains, simple ground level and small footing. No extra floor beyond these seven roofs. Keep the whole apex and base uncut with margins.\nBLACK INK outlines on completely flat OPAQUE PURE WHITE #FFFFFF paper, including every blank interior surface and exterior region. No transparency or alpha fading in this original. Simplify the current heavy roof detail to a few fine structural contours and sparse tile lines. No filled grey surfaces, dark backdrop, shadow, glow, halo, grain, hatching, gradient, checkerboard, color or paper texture. No text, people, trees, frame or watermark.",
+      "input_images": [
+        "assets/generated/sh_longhuata-attempt-2.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/sh_longhuata-full-photo.jpg"
+      ],
+      "saved_file": "assets/generated/sh_longhuata-attempt-3.png",
+      "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-9cb5b512-98e6-4780-907a-4172b8d59a14.png",
+      "status": "rejected",
+      "reason": "目检七层七檐，但白底处理器拒绝极少量彩色边缘：超过中性黑线阈值的像素167个。继续由imagegen重出中性线稿，不降低校验阈值。"
+    }
+  ],
+  "visualReview": "pending_user",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20191113_Longhua_Pagoda-1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/20191113_Longhua_Pagoda-1.jpg/960px-20191113_Longhua_Pagoda-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reference_file": "assets/references/sh_longhuata-full-photo.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "2019-11-13"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:2011_Longhua_Pagoda.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2011_Longhua_Pagoda.JPG/960px-2011_Longhua_Pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/2011_Longhua_Pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_longhuata-photo.jpg",
+      "author": "J. Patrick Fischer",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2011-12-28"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:20191113_Longhua_Pagoda-1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/20191113_Longhua_Pagoda-1.jpg/960px-20191113_Longhua_Pagoda-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+  "author": "Balon Greyjoy",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f1145488bacf8caa8f39980b8d4c1829b264cec2b0b65aec2520cc9236d9a141",
+    "seeds": []
+  }
+}

@@ -324,6 +324,18 @@ const PLATES = {
     "color": "#d6ab5c",
     "tint": false
   },
+  "sh_tangchuang": {
+    "src": "assets/plates/sh_tangchuang.png",
+    "alt": "松江唐经幢 · 佛顶尊胜陀罗尼经幢 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "八角石幢 · 层叠雕刻",
+      "唐 · 大中十三年（859）"
+    ]
+  },
   "gongchen": {
     "src": "assets/plates/gongchen.png",
     "alt": "临安功臣塔 · 线稿",
@@ -514,6 +526,18 @@ const PLATES = {
     "caption": [
       "开封繁塔 · 现存三层主体与小塔",
       "宋 · 974 · 后世修补"
+    ]
+  },
+  "sh_longhuata": {
+    "src": "assets/plates/sh_longhuata.png",
+    "alt": "龙华塔 · 八面七层 · 砖木楼阁塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "八面七层 · 砖木楼阁式",
+      "吴越重建 · 北宋纪年（977）"
     ]
   },
   "luohanshuangta": {
@@ -750,6 +774,18 @@ const PLATES = {
     "caption": [
       "景州塔正面",
       "十三层八角塔身与铁刹网、铜葫芦"
+    ]
+  },
+  "sh_fangta": {
+    "src": "assets/plates/sh_fangta.png",
+    "alt": "松江兴圣教寺塔 · 方塔园 · 九层方塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "方形九层 · 砖木塔",
+      "北宋 · 熙宁、元祐年间"
     ]
   },
   "qinglian": {
@@ -1438,6 +1474,18 @@ const PLATES = {
     "caption": [
       "金华天宁寺 · 大殿",
       "元延祐五年 · 单檐歇山"
+    ]
+  },
+  "sh_zhenru": {
+    "src": "assets/plates/sh_zhenru.png",
+    "alt": "真如寺大殿 · 三间单檐歇山 · 元代木构 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "大殿正立面 · 面阔三间",
+      "元 · 延祐七年（1320）"
     ]
   },
   "xiayu": {
