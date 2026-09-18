@@ -1,0 +1,43 @@
+# 河南续补 · 2026-09-18
+
+本次新增妙乐寺塔、法王寺塔、北宋皇陵和浚县碧霞宫。河南收录量由34处增至38处，全库由201处增至205处，四处均默认未到访。既有ID、心愿、打卡及笔记逻辑不变。批次ID见[增量清单](henan-additions-2026-09-18.json)。
+
+| 古迹 | 所绘主体与纪年 | 线稿考据与真实提示词 | 设色记录与真实提示词 |
+| --- | --- | --- | --- |
+| 妙乐寺塔 | 全塔；955为后周重修年，归五代北轨 | [线稿记录](hn_miaole.json) | [设色记录](../color-research/hn_miaole.json) |
+| 法王寺塔 | 唐塔十五重密檐与现状残损塔顶局部；750仅作约略定位，显示“唐代” | [线稿记录](hn_fawang.json) | [设色记录](../color-research/hn_fawang.json) |
+| 北宋皇陵 | 永昭陵文官石像（东列南一）；1063为永昭陵营建年 | [线稿记录](hn_songling.json) | [设色记录](../color-research/hn_songling.json) |
+| 浚县碧霞宫 | 正殿前部拜殿立面；1542为正殿始建纪年，后世续修形成现貌 | [线稿记录](hn_bixia.json) | [设色记录](../color-research/hn_bixia.json) |
+
+年代和形制资料分别采用河南省文物局、郑州市文物局、巩义市基层政务公开及淇河文化研究中心资料，原链接逐图登记。四张主要实拍均来自Wikimedia Commons的Windmemories作品，按CC BY-SA 4.0记录署名、许可和拍摄日期；来源页与实际图片地址均保留在JSON中。武陟新增地点使用妙乐寺塔照片相机位置作近似点，其他三处沿用已有城市地点。
+
+图版为艺术意写。法王寺塔下部被树遮挡，仅画可核实的上部；不复原隐藏券门、台基或已失塔刹。宋陵以一件原存石像代表陵区，不采用现代复建门阙。碧霞宫仅画照片可见前部拜殿，台缘与侧阶作概括，不复原遮住的御路或未见后屋面。
+
+## 原件与交付
+
+全部使用内置imagegen，无API Key。线稿参考[卢舍那母版](../references/longmen-style-black.png)，设色参考[佛光寺风格样本](../color-studies/v1/foguang-colored.png)的技法，颜色依据对应实拍现貌。
+
+每个ID均保留：
+
+- `assets/references/<id>-photo.jpg`：实拍参考；法王寺另存两张核查照片，未作为生成输入。
+- `assets/generated/<id>.png`：纯白底黑线原件；`assets/plates/<id>.png`：朝代色透明线稿。
+- `assets/colored/<id>.png`：纯白底设色原件；`assets/colored-transparent/<id>.png`与`assets/colored-transparent-avif/<id>.avif`：透明交付副本。
+- 逐图JSON的`generation_history`：每次真实提示词、输入、生成原路径与接受／拒绝原因。拒绝首稿另存`generated/drafts/`或`colored/drafts/`。
+
+妙乐寺首版线稿带透明灰雾，拒绝后重试取得白底；法王寺首版只有十三重密檐，拒绝后修正为十五重。妙乐寺、宋陵与法王寺设色首稿带透明灰雾，均拒绝后重试取得白底原件。未把这些首稿宣称为合格透明图。
+
+最终线稿按中性灰度生成笔画alpha并着朝代色；设色仅去除与外部连通的近白底及已查看的透空种子，再在最外层轮廓去白边。妙乐寺左右链条围合的真实透空登记种子`[465,229]`及`[559,260]`。逐图`background_preparation`均绑定实际原件SHA-256；浅色石材、实心石座与深暗门龛保留。AVIF采用Q85、4:4:4，原件完整保留。
+
+图片被Git忽略，已同步至本地素材副本；当前仓库未找到独立部署目录，本次未发布网站。全部四张新增设色标记`pending_user`，等待用户图版验收；既有200张`approved_user`交付记录完全相同。此前辟支塔亦为待审，全库共5张待用户审阅。
+
+## 本次验证
+
+- `node scripts/prepare-plates.mjs`：成功生成线稿与来源清单。
+- `python3 -B scripts/prepare-colored-avif.py`：205处透明设色交付齐备，新图真实透明且主体可见。
+- `node scripts/collect-colored-plates.mjs --require-complete`：202／202队列完成，加3张正式版覆盖全库205处；没有缺图待办。
+- `node --test tests/*.test.cjs`：58项通过，0失败。含新增河南筛选、主体断代、源哈希、默认状态、旧记录保留及备份往返检查。
+- `python3 -B tests/test_transparency.py`：9项通过。
+- 浏览器：河南筛选显示38处，新增名称搜索、四处详情、图版尺寸与加载、唐代年表分页、Back恢复河南筛选与搜索词，以及四张设色棋盘格对照已查看。妙乐寺键盘终点打卡保存并在刷新后显示设色，测试记录随后通过UI恢复未到访。测试使用独立本地预览端口。
+- `git diff --check`与本次Markdown本地链接检查通过。
+
+尚未验证真实触屏拖动体验；程序与代理目检不代表用户已验收，风化细节、台阶和雕刻均为艺术概括。

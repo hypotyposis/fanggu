@@ -2299,6 +2299,54 @@ const PLATES = {
       "东寺 · 五重塔",
       "近正视 · 江户宽永二十一年（1644）"
     ]
+  },
+  "hn_miaole": {
+    "src": "assets/plates/hn_miaole.png",
+    "alt": "武陟妙乐寺塔 · 十三级方形密檐砖塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "武陟妙乐寺塔 · 十三级密檐",
+      "后周 · 955年重修"
+    ]
+  },
+  "hn_fawang": {
+    "src": "assets/plates/hn_fawang.png",
+    "alt": "登封法王寺塔 · 十五重密檐与塔顶局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "法王寺塔 · 十五重密檐与塔顶局部",
+      "唐代 · 建塔确年未定"
+    ]
+  },
+  "hn_songling": {
+    "src": "assets/plates/hn_songling.png",
+    "alt": "北宋皇陵永昭陵 · 文官石像（东列南一） · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "永昭陵 · 文官石像（东列南一）",
+      "北宋 · 1063年营陵"
+    ]
+  },
+  "hn_bixia": {
+    "src": "assets/plates/hn_bixia.png",
+    "alt": "浚县碧霞宫 · 正殿前部拜殿立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "碧霞宫 · 正殿前部拜殿立面",
+      "明代始建 · 明清续修"
+    ]
   }
 };
 

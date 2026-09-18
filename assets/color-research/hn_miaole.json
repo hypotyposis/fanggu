@@ -1,0 +1,66 @@
+{
+  "id": "hn_miaole",
+  "name": "妙乐寺塔",
+  "subject": "武陟妙乐寺塔 · 十三级方形密檐砖塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/colored/drafts/hn_miaole-v1.png",
+    "assets/generated/hn_miaole.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is a colored Miaole pagoda illustration TO CORRECT. Preserve its exact tower geometry, current photographed color distribution and all thirteen principal eave tiers above the ornamental band plus the separate lower base cornice. CHANGE ONLY BACKGROUND: replace the unwanted translucent gray/brown haze with perfectly flat OPAQUE PURE WHITE RGB(255,255,255). Every exterior pixel and actual open-air space between finial chains and rings must be pure white, not transparent. The production original must be RGB PNG or alpha255 EVERYWHERE. Eliminate haze, glow, ground shadow, gradient and black background completely. Keep pale gray-beige lower masonry, muted dusty tan/pink-brown upper masonry, dark gray-brown brick eaves, dark old metal finial and chains; preserve dark niches as solid subject material. Thin contours and modest matte mineral gouache, no additional brick detail, overall sepia filter or gold restoration. Image2 is the approved line geometry. Canvas1024x1536 with same complete subject and margins. This is an opaque white-paper illustration, not a transparent cutout.",
+  "material_observations": [
+    "下部灰米色砖，上部暗粉褐残面，檐底灰褐，小龛深暗。",
+    "金属塔刹灰黑、局部灰绿，不复原鎏金。"
+  ],
+  "references": [
+    {
+      "reference_file": "assets/references/hn_miaole-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260220_Pagoda_of_Miaole_Temple_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/20260220_Pagoda_of_Miaole_Temple_01.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2026-02-20",
+      "note": "实际查看，现貌材料色的艺术概括，非色彩测绘。"
+    }
+  ],
+  "original_research": "assets/research/hn_miaole.json",
+  "output": "assets/colored/hn_miaole.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-f96e1440-a0c8-4dd8-bb08-f2353f08a7b8.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "completed_at": "2026-09-18",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+    "seeds": [[465, 229], [559, 260]]
+  },
+  "visual_review": "已查看重试白底原件。十三重主要密檐加单独下层台座檐口、塔刹与链条保留；灰米色下塔身与粉褐上部区分。首稿含透明灰雾拒绝交付。去底后仍须核对透空与白边，用户尚未验收。",
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject-specific observations: Color ONLY the Miaole Temple pagoda from Image1, retaining thirteen principal projecting eaves ABOVE the ornamental corbel band plus the separate lower base cornice, its blank tall square lower shaft, exact small niches, finial rings and chains. Image2 shows the actual present tower in ordinary sunlight: the lower exposed masonry is pale weathered gray-beige with a few sparse joints; upper masonry and thin plaster remnants are muted dusty tan/pink-brown; projecting corbel eaves are darker gray-brown, with weathered light edges. Keep variation between lower brick and upper aged plaster, without an overall orange or gold filter. Niches retain dark recessed interiors, do not punch them out as transparency. Finial and chains are dark weathered metal with subdued green-gray patina, no shiny gold restoration. Preserve silhouette and composition exactly. Canvas1024x1536. Perfectly flat OPAQUE WHITE #FFFFFF background and all actual open-air finial/chain gaps; RGB PNG or alpha255 everywhere, no native transparency, haze, halo or ground shadow. Last image is technique only, not a color palette.",
+      "input_images": [
+        "assets/generated/hn_miaole.png",
+        "assets/references/hn_miaole-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-bb3abb73-c99e-47fe-8d3d-214631e906af.png",
+      "saved_file": "assets/colored/drafts/hn_miaole-v1.png",
+      "status": "rejected",
+      "reason": "透明灰雾，非白底原件。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image1 is a colored Miaole pagoda illustration TO CORRECT. Preserve its exact tower geometry, current photographed color distribution and all thirteen principal eave tiers above the ornamental band plus the separate lower base cornice. CHANGE ONLY BACKGROUND: replace the unwanted translucent gray/brown haze with perfectly flat OPAQUE PURE WHITE RGB(255,255,255). Every exterior pixel and actual open-air space between finial chains and rings must be pure white, not transparent. The production original must be RGB PNG or alpha255 EVERYWHERE. Eliminate haze, glow, ground shadow, gradient and black background completely. Keep pale gray-beige lower masonry, muted dusty tan/pink-brown upper masonry, dark gray-brown brick eaves, dark old metal finial and chains; preserve dark niches as solid subject material. Thin contours and modest matte mineral gouache, no additional brick detail, overall sepia filter or gold restoration. Image2 is the approved line geometry. Canvas1024x1536 with same complete subject and margins. This is an opaque white-paper illustration, not a transparent cutout.",
+      "input_images": [
+        "assets/colored/drafts/hn_miaole-v1.png",
+        "assets/generated/hn_miaole.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-f96e1440-a0c8-4dd8-bb08-f2353f08a7b8.png",
+      "status": "accepted_white_source",
+      "method": "white-background-then-script"
+    }
+  ]
+}

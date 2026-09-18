@@ -8789,6 +8789,196 @@
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
+    "hn_miaole": {
+      "source": "assets/colored/hn_miaole.png",
+      "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+      "sourceBytes": 1828667,
+      "input": "assets/colored-transparent/hn_miaole.png",
+      "inputSha256": "39f54ef7ee4c61b0a2a6b1e4aaa03ad49f34a1d3f9019594264bef03994903ed",
+      "inputBytes": 1753797,
+      "src": "assets/colored-transparent-avif/hn_miaole.avif",
+      "sha256": "03e4baca064fbd267cba6c894e03af7e88134f591a2869e5511e7a8cb98d0d7a",
+      "bytes": 178809,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1110649,
+        "opaquePixels": 448020,
+        "meanError": 0.011288324991861979,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [
+          [
+            465,
+            229
+          ],
+          [
+            559,
+            260
+          ]
+        ],
+        "edgeDecontaminatedPixels": 5718,
+        "transparentPixels": 1115617,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.235,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+        "seeds": [
+          [
+            465,
+            229
+          ],
+          [
+            559,
+            260
+          ]
+        ],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "hn_fawang": {
+      "source": "assets/colored/hn_fawang.png",
+      "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
+      "sourceBytes": 2003663,
+      "input": "assets/colored-transparent/hn_fawang.png",
+      "inputSha256": "cb7a9ec7d26255a2fae4116b19f64902d5dcada2006caea93c61721b6d240602",
+      "inputBytes": 1781030,
+      "src": "assets/colored-transparent-avif/hn_fawang.avif",
+      "sha256": "1d37474bb63f3a0f2fd1e412506450460f68013bba7b459c44281394ff0445d1",
+      "bytes": 193111,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1031901,
+        "opaquePixels": 527309,
+        "meanError": 0.011096318562825521,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 5405,
+        "transparentPixels": 1036683,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.684,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "hn_songling": {
+      "source": "assets/colored/hn_songling.png",
+      "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
+      "sourceBytes": 1655074,
+      "input": "assets/colored-transparent/hn_songling.png",
+      "inputSha256": "78de25125db664ed876846837123db5344fb72b64be8589e40f0321291fca030",
+      "inputBytes": 1621848,
+      "src": "assets/colored-transparent-avif/hn_songling.avif",
+      "sha256": "40053b0d19faa61828b9b97aea9dad92b94fbc700bc37d0b4ae31e5f014cb278",
+      "bytes": 148139,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1158141,
+        "opaquePixels": 407523,
+        "meanError": 0.005472819010416667,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 3534,
+        "transparentPixels": 1159872,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.654,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "hn_bixia": {
+      "source": "assets/colored/hn_bixia.png",
+      "sourceSha256": "2d3141111b4ab8ba2163cffddb0ca47af0ff14b31555f0a5bdcf0704159ca39b",
+      "sourceBytes": 2353114,
+      "input": "assets/colored-transparent/hn_bixia.png",
+      "inputSha256": "49a7394f2ab36b150a542dd8a44cfe6a20a9eecb7153e5a910b4a4063e515134",
+      "inputBytes": 2235003,
+      "src": "assets/colored-transparent-avif/hn_bixia.avif",
+      "sha256": "39235a02a7c5a4b25f47cd63f93fe9dccf6a0473231a8e5e1231a83877b452c9",
+      "bytes": 301008,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 779193,
+        "opaquePixels": 781847,
+        "meanError": 0.00902557373046875,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 4650,
+        "transparentPixels": 782825,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.695,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "2d3141111b4ab8ba2163cffddb0ca47af0ff14b31555f0a5bdcf0704159ca39b",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

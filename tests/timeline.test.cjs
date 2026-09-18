@@ -8,8 +8,8 @@ const groups = timeline.clusters(SITES, DYN);
 
 test('compact clusters retain every monument exactly once and keep the country and political lanes', () => {
   const ids = groups.flatMap(group => group.sites.map(site => site.id));
-  assert.equal(ids.length, 201);
-  assert.equal(new Set(ids).size, 201);
+  assert.equal(ids.length, 205);
+  assert.equal(new Set(ids).size, 205);
   assert.deepEqual([...ids].sort(), Array.from(SITES, site => site.id).sort());
   assert.equal(timeline.lane(SITES.find(site => site.id === 'sx_zhenguo'), DYN), 'north');
   assert.equal(timeline.lane(SITES.find(site => site.id === 'horyuji'), DYN), 'japan');

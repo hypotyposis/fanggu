@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 198,
+  "count": 202,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -4493,6 +4493,91 @@
       ],
       "output": "assets/colored/sd_pizhi.png",
       "record": "assets/color-research/sd_pizhi.json"
+    },
+    {
+      "id": "hn_miaole",
+      "name": "妙乐寺塔",
+      "subject": "武陟妙乐寺塔 · 十三级方形密檐砖塔",
+      "sub": "后周重修 · 方形密檐砖塔",
+      "place": "河南 · 焦作 · 武陟县",
+      "dyn": "zhou",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/hn_miaole.png",
+      "displayLine": "assets/plates/hn_miaole.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hn_miaole.json",
+      "candidateReferences": [
+        "assets/references/hn_miaole-photo.jpg"
+      ],
+      "output": "assets/colored/hn_miaole.png",
+      "record": "assets/color-research/hn_miaole.json"
+    },
+    {
+      "id": "hn_fawang",
+      "name": "法王寺塔",
+      "subject": "登封法王寺塔 · 十五重密檐与塔顶局部",
+      "sub": "唐代大塔 · 上部局部",
+      "place": "河南 · 登封 · 嵩山",
+      "dyn": "tang",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/hn_fawang.png",
+      "displayLine": "assets/plates/hn_fawang.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hn_fawang.json",
+      "candidateReferences": [
+        "assets/references/hn_fawang-photo.jpg"
+      ],
+      "output": "assets/colored/hn_fawang.png",
+      "record": "assets/color-research/hn_fawang.json"
+    },
+    {
+      "id": "hn_songling",
+      "name": "北宋皇陵",
+      "subject": "北宋皇陵永昭陵 · 文官石像（东列南一）",
+      "sub": "永昭陵 · 文官石像",
+      "place": "河南 · 巩义 · 永昭陵",
+      "dyn": "song",
+      "types": [
+        "tomb",
+        "sculpture"
+      ],
+      "line": "assets/generated/hn_songling.png",
+      "displayLine": "assets/plates/hn_songling.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hn_songling.json",
+      "candidateReferences": [
+        "assets/references/hn_songling-photo.jpg"
+      ],
+      "output": "assets/colored/hn_songling.png",
+      "record": "assets/color-research/hn_songling.json"
+    },
+    {
+      "id": "hn_bixia",
+      "name": "浚县碧霞宫",
+      "subject": "浚县碧霞宫 · 正殿前部拜殿立面",
+      "sub": "正殿前部 · 拜殿立面",
+      "place": "河南 · 鹤壁 · 浚县浮丘山",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/hn_bixia.png",
+      "displayLine": "assets/plates/hn_bixia.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_bixia.json",
+      "candidateReferences": [
+        "assets/references/hn_bixia-photo.jpg"
+      ],
+      "output": "assets/colored/hn_bixia.png",
+      "record": "assets/color-research/hn_bixia.json"
     }
   ]
 }

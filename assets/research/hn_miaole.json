@@ -1,0 +1,122 @@
+{
+  "id": "hn_miaole",
+  "subject": "武陟妙乐寺塔 · 十三级方形密檐砖塔",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20260220_Pagoda_of_Miaole_Temple_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/20260220_Pagoda_of_Miaole_Temple_01.jpg",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_miaole-photo.jpg"
+  ],
+  "source_note": "Windmemories于2026年2月20日实拍。图版仅保留十三层方形密檐塔及现状金属塔刹；底部供台和现代周边省略，不补画照片未见的另一面门洞。",
+  "prompt": "Use case: precise-object-edit. Image 1 is the Miaole pagoda line drawing TO CORRECT. Keep its exact tower silhouette, thirteen main eave tiers, niche positions, complete finial with chains and plain lower shaft. Change ONLY the image background and line clarity. Place all the thin ink strokes onto a perfectly flat OPAQUE WHITE canvas (#FFFFFF), including all spaces inside the tower and between its lines. This must look like black architectural contours printed on a completely white blank sheet, with NO gray filled masonry planes. The original image has unwanted translucent gray haze; eliminate that haze completely. Output an RGB PNG, or RGBA with alpha255 EVERYWHERE: this production original must have NO transparency anywhere. Canvas 1024x1536. All empty pixels are pure RGB(255,255,255) and all tower strokes dark neutral black. No black backdrop, transparent background, glow, gradient, shadows, paper texture, color, checkerboard, text, or watermark. Image2 is the real tower geometry only and Image3 is line style only. White background is mandatory.",
+  "generated_file": "assets/generated/hn_miaole.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "武陟妙乐寺塔 · 十三级密檐",
+    "后周 · 955年重修"
+  ],
+  "historical_sources": [
+    {
+      "title": "河南省文物局 · 武陟妙乐寺塔：遗世独立的隐士高人",
+      "url": "https://wwj.henan.gov.cn/2019/11-27/1554909.html"
+    }
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260220_Pagoda_of_Miaole_Temple_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/20260220_Pagoda_of_Miaole_Temple_01.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2026-02-20",
+      "reference_file": "assets/references/hn_miaole-photo.jpg"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_miaole",
+    "name": "妙乐寺塔",
+    "short": "妙乐寺塔",
+    "sub": "后周重修 · 方形密檐砖塔",
+    "dyn": "zhou",
+    "tag": "五代",
+    "era": "后周 · 显德二年重修",
+    "year": 955,
+    "yearLabel": "955",
+    "yearApprox": false,
+    "yearNote": "采用后周显德二年（955）重修纪年，塔的早期沿革另述，不按传说年代定位。",
+    "place": "河南 · 焦作 · 武陟县",
+    "placeKey": "hn_wuzhi",
+    "placeName": "武陟",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "timelineLane": "north",
+    "legacyNames": [
+      "妙乐寺真身舍利塔",
+      "佛祖真身舍利塔"
+    ],
+    "lede": "十三重砖檐在方形塔身上逐级收分，环形塔刹与细链在高处连成轻巧的轮廓。妙乐寺已不复旧貌，古塔仍保留五代砖作的沉稳尺度。",
+    "facts": [
+      "<b>重修纪年</b> 现存塔按后周显德二年（955）重修登记；早期寺塔沿革不作为现存主体的精确竣工年。",
+      "<b>形制</b> 方形中空砖塔，十三级密檐叠涩，南面各层小龛与下部砖雕形成疏密不同的层次。",
+      "<b>图版范围</b> 依据2026年实拍保留塔身、密檐与塔刹，省略供台、人物和周边建筑；塔刹相轮不计入塔层。"
+    ],
+    "caption": [
+      "武陟妙乐寺塔 · 十三级密檐",
+      "后周 · 955年重修"
+    ]
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-ce92b55d-1064-494a-b7ee-ae58ca498e65.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c0d9cf7c41f5eb7a3e3b685e5c2a008c7aae3f90b051257e0ce2376a6b31d404",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "十三重主要出檐与下部另计的台座檐口已逐级核对。",
+      "塔刹、细链、小龛和方形塔身完整；无人物、文字和周边背景。",
+      "接受重试的纯白底原稿；首稿透明灰雾拒绝交付。"
+    ],
+    "limitations": "叠涩线条为艺术概括，非测绘图。"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine-line heritage atlas plate for 访古. Image 1 is ONLY the LINE STYLE MASTER; match its delicate sparse organic black contours and generous blank planes, never its Buddha shape. Image 2 is the ACTUAL SUBJECT GEOMETRY: Miaole Temple Pagoda (妙乐寺塔), Wuzhi, Henan, a square thirteen-storey dense-eaved masonry tower rebuilt in 955. Draw exactly THIRTEEN main projecting eave tiers above the tall plain lower brick shaft, matching the photograph. Small central arched niches between tiers, corbel ornamental band above the lowest main eave, tall ringed metal finial and fine supporting chains; finial rings are not tower storeys. Preserve slightly oblique nearly frontal view with two square faces, straighten verticals. Do not invent a doorway on the photographed blank lower face. Entire tower, finial and flat base fit with margins. Portrait 1024x1536, approximately 82% canvas height. Simplify all masonry to very sparse short joints; use a few thin eave lines rather than filling the surfaces. Pure thin BLACK INK outlines on perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked planes inside and outside the drawing stay pure white; niches outlined without dark fill. No grey shading, solid shadows, color, paper texture, gradient, halo, ground shadow, checkerboard, text or watermark. Remove people, altar, offerings, fences, trees, red walls, sky, modern fixtures and adjacent monuments. One isolated tower only; no reconstruction of historical surroundings.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_miaole-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-f5ccf11e-ffa0-49dd-abf7-886e7419d715.png",
+      "saved_file": "assets/generated/drafts/hn_miaole-v1.png",
+      "status": "rejected",
+      "reason": "含透明灰雾和面填充，未取得要求的白底原件。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is the Miaole pagoda line drawing TO CORRECT. Keep its exact tower silhouette, thirteen main eave tiers, niche positions, complete finial with chains and plain lower shaft. Change ONLY the image background and line clarity. Place all the thin ink strokes onto a perfectly flat OPAQUE WHITE canvas (#FFFFFF), including all spaces inside the tower and between its lines. This must look like black architectural contours printed on a completely white blank sheet, with NO gray filled masonry planes. The original image has unwanted translucent gray haze; eliminate that haze completely. Output an RGB PNG, or RGBA with alpha255 EVERYWHERE: this production original must have NO transparency anywhere. Canvas 1024x1536. All empty pixels are pure RGB(255,255,255) and all tower strokes dark neutral black. No black backdrop, transparent background, glow, gradient, shadows, paper texture, color, checkerboard, text, or watermark. Image2 is the real tower geometry only and Image3 is line style only. White background is mandatory.",
+      "reference_files": [
+        "assets/generated/drafts/hn_miaole-v1.png",
+        "assets/references/hn_miaole-photo.jpg",
+        "assets/references/longmen-style-black.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-ce92b55d-1064-494a-b7ee-ae58ca498e65.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "generation_input_files": [
+    "assets/generated/drafts/hn_miaole-v1.png",
+    "assets/references/hn_miaole-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ]
+}

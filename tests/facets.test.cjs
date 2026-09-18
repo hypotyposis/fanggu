@@ -115,7 +115,7 @@ test('new wishes seed alongside saved visits and removed wishes without overwrit
 test('82 northern additions remain unvisited while existing personal records survive expansion and backup', () => {
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/north200-batch.json'), 'utf8'));
   assert.equal(batch.ids.length, 82);
-  for (const [province, added, total] of [['河南', 27, 34], ['河北', 25, 35], ['山西', 30, 70]]) {
+  for (const [province, added, total] of [['河南', 27, 38], ['河北', 25, 35], ['山西', 30, 70]]) {
     assert.equal(batch.groups[province].length, added);
     assert.equal(find({ province }).length, total);
   }
@@ -140,4 +140,26 @@ test('82 northern additions remain unvisited while existing personal records sur
   assert.equal(restored.record('sx_yungang').note, '第20窟大佛');
   assert.equal(restored.record('sx_yungang').visitedOn, '');
   assert.equal(restored.record('sx_chongfu').status, 'unvisited');
+});
+
+test('Henan continuation joins filters and records without overwriting saved journal entries', () => {
+  const { ids } = JSON.parse(fs.readFileSync(require.resolve('../assets/research/henan-additions-2026-09-18.json'), 'utf8'));
+  for (const id of ids) assert(find({ province: '河南', country: 'CN', status: 'unvisited' }).includes(id));
+  assert(find({ province: '河南', type: 'pagoda', dynasty: 'tang' }).includes('hn_fawang'));
+  assert(find({ province: '河南', type: 'tomb', dynasty: 'song' }).includes('hn_songling'));
+  assert(find({ province: '河南', type: 'sculpture' }).includes('hn_songling'));
+  const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
+  const before = create(catalog.filter(site => !ids.includes(site.id)), storage);
+  before.setRecord('xiuding', { status: 'visited', visitedOn: '', note: '砖雕细看' });
+  const after = create(catalog, storage);
+  assert.equal(after.record('xiuding').note, '砖雕细看');
+  for (const id of ids) {
+    assert.equal(after.record(id).status, 'unvisited');
+    assert.equal(after.record(id).visitedOn, '');
+  }
+  after.setRecord('hn_miaole', { status: 'visited', visitedOn: '', note: '塔刹与十三层砖檐' });
+  const restored = create(catalog, { getItem: () => null, setItem() {} });
+  restored.import(after.export());
+  assert.equal(restored.record('hn_miaole').note, '塔刹与十三层砖檐');
+  assert.equal(restored.record('hn_fawang').status, 'unvisited');
 });

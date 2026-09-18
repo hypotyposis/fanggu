@@ -4426,6 +4426,86 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "hn_miaole": {
+    "src": "assets/colored-transparent-avif/hn_miaole.avif",
+    "originalSrc": "assets/colored/hn_miaole.png",
+    "transparentSrc": "assets/colored-transparent/hn_miaole.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "武陟妙乐寺塔 · 十三级方形密檐砖塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_miaole.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260220_Pagoda_of_Miaole_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2026-02-20"
+      }
+    ]
+  },
+  "hn_fawang": {
+    "src": "assets/colored-transparent-avif/hn_fawang.avif",
+    "originalSrc": "assets/colored/hn_fawang.png",
+    "transparentSrc": "assets/colored-transparent/hn_fawang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "登封法王寺塔 · 十五重密檐与塔顶局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_fawang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250629_Pagoda_1_of_Fawang_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2025-06-29"
+      }
+    ]
+  },
+  "hn_songling": {
+    "src": "assets/colored-transparent-avif/hn_songling.avif",
+    "originalSrc": "assets/colored/hn_songling.png",
+    "transparentSrc": "assets/colored-transparent/hn_songling.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "北宋皇陵永昭陵 · 文官石像（东列南一） · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_songling.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250809_Yongzhao_Mausoleum_30.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2025-08-09"
+      }
+    ]
+  },
+  "hn_bixia": {
+    "src": "assets/colored-transparent-avif/hn_bixia.avif",
+    "originalSrc": "assets/colored/hn_bixia.png",
+    "transparentSrc": "assets/colored-transparent/hn_bixia.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "浚县碧霞宫 · 正殿前部拜殿立面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_bixia.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20241201_Bixia_Gong_07.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2024-12-01"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

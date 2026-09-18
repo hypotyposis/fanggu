@@ -1,0 +1,115 @@
+{
+  "id": "hn_songling",
+  "subject": "北宋皇陵永昭陵 · 文官石像（东列南一）",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20250809_Yongzhao_Mausoleum_30.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/20250809_Yongzhao_Mausoleum_30.jpg",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_songling-photo.jpg"
+  ],
+  "source_note": "Windmemories于2025年8月9日实拍，来源页明确标注永昭陵文官石像（东列南一）。独立绘此一像与两段石座，省略草木与围栏，不将石刻与现代复建门阙组合；不修复冠顶、面部和表面风化。",
+  "prompt": "Use case: style-transfer. Asset type: one museum fine-line heritage atlas illustration for 访古. Image1 is ONLY the line style master; match its delicate sparse black contours, restrained detail and white open planes. Image2 is the specific SUBJECT GEOMETRY: the civil official stone statue (east row, first from south) at Yongzhao Mausoleum, Northern Song imperial tombs, Gongyi, Henan. Draw ONLY this ONE weathered standing official, exact tall narrow crown, softly rounded shoulders, broad long robe, both hands holding a long tablet vertically at the chest, wide hanging sleeves, feet concealed under robe, plain rectangular stone plinth on its lower footing. Preserve present eroded facial features and broken irregular crown top; do NOT restore pristine missing details or add hat wings, beard or inscriptions. Outline a few actual robe folds and a very small selection of weathered contours; no dense speckling. Straight nearly frontal full statue and both plinth blocks, portrait 1024x1536, statue about82% of canvas height with ample margins. Render thin dark neutral BLACK INK LINES on an absolutely flat OPAQUE WHITE #FFFFFF canvas. This original must be RGB or RGBA alpha255 everywhere, with NO transparency. All empty areas inside and outside the figure stay pure white, no gray stone fill. No shading, gradients, paper texture, color, cast shadow, glow or checkerboard. Remove grass, trees, fencing, pavement, curb, sky and all other background. No text, label, watermark, border or neighboring statues.",
+  "generated_file": "assets/generated/hn_songling.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "永昭陵 · 文官石像（东列南一）",
+    "北宋 · 1063年营陵"
+  ],
+  "historical_sources": [
+    {
+      "title": "巩义市基层政务公开 · 永昭陵景区简介",
+      "url": "https://gy.jiceng.zhengzhou.gov.cn/029002001/7904116.jhtml"
+    },
+    {
+      "title": "郑州市文物局 · 守望宋陵（遗存与复建说明）",
+      "url": "https://wwj.zhengzhou.gov.cn/xqdt/9420469.jhtml"
+    }
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250809_Yongzhao_Mausoleum_30.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/20250809_Yongzhao_Mausoleum_30.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2025-08-09",
+      "reference_file": "assets/references/hn_songling-photo.jpg"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_songling",
+    "name": "北宋皇陵",
+    "short": "北宋皇陵",
+    "sub": "永昭陵 · 文官石像",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋 · 嘉祐八年",
+    "year": 1063,
+    "yearLabel": "1063",
+    "yearApprox": false,
+    "yearNote": "1063为永昭陵营建纪年，所绘为陵前原存文官石像；不表示宋陵各陵同年建成，也不将现代复建门阙归为宋构。",
+    "place": "河南 · 巩义 · 永昭陵",
+    "placeKey": "hn_gongyi",
+    "placeName": "巩义",
+    "types": [
+      "tomb",
+      "sculpture"
+    ],
+    "tall": true,
+    "legacyNames": [
+      "宋陵",
+      "巩义宋陵",
+      "永昭陵",
+      "宋仁宗永昭陵"
+    ],
+    "lede": "长袍垂落，双手执笏，文官石像以肃立的姿态守在永昭陵神道旁。风化削弱了细部，却没有抹去北宋陵寝仪仗中庄重而安静的人物轮廓。",
+    "facts": [
+      "<b>陵墓年代</b> 永昭陵为宋仁宗赵祯陵墓，始建于1063年；本条以它的原存石刻代表北宋皇陵，不拆分各陵计数。",
+      "<b>石刻遗存</b> 宋陵神道以人物与动物石像组织仪仗秩序，石雕是研究宋代雕塑和皇家丧葬制度的实物资料。",
+      "<b>图版范围</b> 选永昭陵东列自南数第一件文官石像，依据2025年实拍保留冠顶残损、执笏姿态与石座，不收录现代复建门阙。"
+    ],
+    "caption": [
+      "永昭陵 · 文官石像（东列南一）",
+      "北宋 · 1063年营陵"
+    ]
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-75adc6c0-f8a4-449a-b88e-6b3b30fa5029.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6dc61148fa4cc1bfe01b80e5c087b095cd5aa22163b7d08d6c2b6c960356fa37",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "冠顶现状残损、圆肩、执笏姿态、垂袖与两段石座核对。",
+      "单体石像完整，草木与围栏省略，风化纹路作少量概括。",
+      "纯白底细黑线，无背景、文字或灰面。"
+    ],
+    "limitations": "艺术意写，非测绘图。"
+  },
+  "generation_input_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_songling-photo.jpg"
+  ],
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one museum fine-line heritage atlas illustration for 访古. Image1 is ONLY the line style master; match its delicate sparse black contours, restrained detail and white open planes. Image2 is the specific SUBJECT GEOMETRY: the civil official stone statue (east row, first from south) at Yongzhao Mausoleum, Northern Song imperial tombs, Gongyi, Henan. Draw ONLY this ONE weathered standing official, exact tall narrow crown, softly rounded shoulders, broad long robe, both hands holding a long tablet vertically at the chest, wide hanging sleeves, feet concealed under robe, plain rectangular stone plinth on its lower footing. Preserve present eroded facial features and broken irregular crown top; do NOT restore pristine missing details or add hat wings, beard or inscriptions. Outline a few actual robe folds and a very small selection of weathered contours; no dense speckling. Straight nearly frontal full statue and both plinth blocks, portrait 1024x1536, statue about82% of canvas height with ample margins. Render thin dark neutral BLACK INK LINES on an absolutely flat OPAQUE WHITE #FFFFFF canvas. This original must be RGB or RGBA alpha255 everywhere, with NO transparency. All empty areas inside and outside the figure stay pure white, no gray stone fill. No shading, gradients, paper texture, color, cast shadow, glow or checkerboard. Remove grass, trees, fencing, pavement, curb, sky and all other background. No text, label, watermark, border or neighboring statues.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_songling-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-75adc6c0-f8a4-449a-b88e-6b3b30fa5029.png",
+      "status": "accepted_white_source"
+    }
+  ]
+}
