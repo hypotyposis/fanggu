@@ -4498,6 +4498,46 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sx_doudafu": {
+    "src": "assets/colored-transparent-avif/sx_doudafu.avif",
+    "originalSrc": "assets/colored/sx_doudafu.png",
+    "transparentSrc": "assets/colored-transparent/sx_doudafu.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_doudafu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:窦大夫祠-1.jpg",
+        "author": "Fymking",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-08-26"
+      }
+    ]
+  },
+  "sx_jiulongbi": {
+    "src": "assets/colored-transparent-avif/sx_jiulongbi.avif",
+    "originalSrc": "assets/colored/sx_jiulongbi.png",
+    "transparentSrc": "assets/colored-transparent/sx_jiulongbi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_jiulongbi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
+        "author": "Chlukoe",
+        "license": "CC0 1.0",
+        "date": "2013-06-25"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",
