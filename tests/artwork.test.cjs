@@ -31,6 +31,7 @@ test('missing or failed colored art falls back to its existing line plate', () =
   art.apply(image, site, 'wishlist'); assert.equal(image.src, site.image.src);
 });
 test('every transparent AVIF traces to its lossless companion and retained PNG master', () => {
+  assert.deepEqual(Object.keys(context.COLORED_PLATES).sort(), Array.from(sites, site => site.id).sort());
   const delivery = JSON.parse(read('assets/color-research/avif-manifest.json'));
   assert.equal(delivery.settings.quality, 85);
   assert.equal(delivery.settings.subsampling, '4:4:4');

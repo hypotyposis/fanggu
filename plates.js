@@ -2419,6 +2419,42 @@ const PLATES = {
       "碧霞宫 · 正殿前部拜殿立面",
       "明代始建 · 明清续修"
     ]
+  },
+  "ah_xuguo": {
+    "src": "assets/plates/ah_xuguo.png",
+    "alt": "许国石坊 · 一侧正立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "许国石坊 · 一侧正立面",
+      "明 · 1584 · 四面八柱石坊"
+    ]
+  },
+  "ah_zhenfeng": {
+    "src": "assets/plates/ah_zhenfeng.png",
+    "alt": "振风塔 · 七层八角塔身与底层附檐 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "振风塔 · 七层八角塔身与底层附檐",
+      "明 · 隆庆年间 · 后世修缮现状"
+    ]
+  },
+  "ah_huaxilou": {
+    "src": "assets/plates/ah_huaxilou.png",
+    "alt": "花戏楼 · 院内中央戏台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "花戏楼 · 院内中央戏台",
+      "清 · 1676增建 · 后世重修"
+    ]
   }
 };
 
