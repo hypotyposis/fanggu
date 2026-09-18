@@ -7285,10 +7285,60 @@ PLACES.push({"key": "hn_开封", "name": "开封", "prov": "河南", "lat": 34.7
 
 PLACES.push({ key: "sd_changqing", name: "长清", prov: "山东", country: "CN", lat: 36.364722, lon: 116.979722 });
 
-// 河南补遗：纪年对应所绘主体，个人状态默认未到访。
-PLACES.push({ key: "hn_wuzhi", name: "武陟", prov: "河南", country: "CN", lat: 35.074947, lon: 113.320503 });
-SITES.push(
-{
+// 安徽补遗：以现存所绘主体断代，新增条目默认未到访。
+SITES.push({
+  id: 'ah_xuguo', name: '许国石坊', short: '许国石坊', sub: '大学士坊 · 正立面',
+  dyn: 'ming', tag: '明', era: '万历十二年', year: 1584, yearLabel: '1584', yearApprox: false,
+  yearNote: '采用石坊营建年；图版只绘八柱四面石坊的一侧正立面。',
+  place: '安徽 · 黄山 · 歙县', placeKey: 'ah_shexian', country: 'CN', types: ['gate'], initialStatus: 'unvisited',
+  legacyNames: ['大学士坊', '八脚牌楼', '许国牌坊'],
+  lede: '八根石柱围起四面牌坊，许国石坊把一座平面的门楼变成可穿行的石构空间。梁枋、斗栱与石狮都从同一种灰石中雕出，仍立在徽州古城的街口。',
+  facts: [
+    '建于明万历十二年（1584），为大学士许国而立，又称大学士坊；1988年列为全国重点文物保护单位。',
+    '四面八柱，前后为三间四柱三楼，左右为单间双柱三楼，共同围成长方形；石构仿木的梁枋与斗栱之间遍饰雕刻。',
+    '图版仅绘一侧正立面，呈现四根前柱与三处通道，不把八根柱子排成一列；省略铭文与街市背景。'
+  ],
+  caption: ['许国石坊 · 一侧正立面', '明 · 1584 · 四面八柱石坊'],
+}, {
+  id: 'ah_zhenfeng', name: '安庆振风塔', short: '振风塔', sub: '迎江寺 · 七层八角砖石塔',
+  dyn: 'ming', tag: '明', era: '隆庆年间 · 后世修缮', year: 1570, yearLabel: '约1570', yearApprox: true,
+  yearNote: '按明隆庆年间所绘塔身断代，以通行建成纪年1570定位；地方文献另有1572年建成说。附檐、屋面与塔刹呈现照片中的修缮后状态。',
+  place: '安徽 · 安庆 · 迎江寺', placeKey: 'ah_anqing', country: 'CN', types: ['pagoda'], initialStatus: 'unvisited',
+  legacyNames: ['振风塔', '迎江寺塔', '安庆万佛塔'], tall: true,
+  lede: '振风塔立在长江北岸的迎江寺内，七层白色塔身与深灰檐带逐层收分。楼层之间的平座和小券洞，让厚重的砖石有了层层向上的节奏。',
+  facts: [
+    '现存塔身为明隆庆年间营建，通行建成纪年为隆庆四年（1570）；后世屡经修缮，2006年列为全国重点文物保护单位。',
+    '八角七层楼阁式砖石塔，檐下以砖石仿木构件出挑，各层设平座栏杆与券形开口；底层附檐不另计一层塔身。',
+    '图版依据实拍核对塔身与底层轮廓，以较新照片取色；红色塔刹、深灰屋面与浅色墙面为修缮后现状，不作为明代原貌复原。'
+  ],
+  caption: ['振风塔 · 七层八角塔身与底层附檐', '明 · 隆庆年间 · 后世修缮现状'],
+}, {
+  id: 'ah_huaxilou', name: '亳州花戏楼', short: '花戏楼', sub: '大关帝庙 · 院内戏台',
+  dyn: 'ming', tag: '清', era: '康熙十五年', year: 1676, yearLabel: '1676', yearApprox: false,
+  yearNote: '采用院内戏台增建年1676，不以大关帝庙始建年1656代替；木雕、彩绘与屋面经历后续重修。',
+  place: '安徽 · 亳州 · 谯城', placeKey: 'ah_bozhou', country: 'CN', types: ['stage'], initialStatus: 'unvisited',
+  legacyNames: ['亳州大关帝庙', '亳州山陕会馆'],
+  lede: '红柱托起青绿琉璃的屋顶，浅色木雕从檐下层层垂落。花戏楼把戏文刻进梁枋与挂落，是山陕药商在亳州留下的一座会馆戏台。',
+  facts: [
+    '大关帝庙始建于清顺治十三年（1656），山陕商人在康熙十五年（1676）增建戏楼，后又多次扩建重修；花戏楼1988年列为全国重点文物保护单位。',
+    '戏台坐南朝北，舞台向院内突出，檐下木雕与彩绘多表现戏文故事；砖雕山门、铁旗杆与戏台木雕是不同部位。',
+    '图版只绘院内中央戏台及台下通道，保留琉璃屋顶、红柱与挂落的材料颜色，不将山门牌坊或两侧看楼混入主体。'
+  ],
+  caption: ['花戏楼 · 院内中央戏台', '清 · 1676增建 · 后世重修'],
+});
+
+PLACES.push(
+  { key: 'ah_shexian', name: '歙县', prov: '安徽', country: 'CN', lat: 29.867639, lon: 118.430556 },
+  { key: 'ah_anqing', name: '安庆', prov: '安徽', country: 'CN', lat: 30.503631, lon: 117.049300 },
+  { key: 'ah_bozhou', name: '亳州', prov: '安徽', country: 'CN', lat: 33.886389, lon: 115.767500 }
+);
+PLACES.push(
+{"key":"sh_songjiang","name":"松江","prov":"上海","country":"CN","lat":31.0065,"lon":121.2417},
+{"key":"shanghai","name":"上海","prov":"上海","country":"CN","lat":31.2304,"lon":121.4737}
+);
+
+// 河南补遗：新增条目默认未到访。
+SITES.push({
   "id": "hn_miaole",
   "name": "妙乐寺塔",
   "short": "妙乐寺塔",
@@ -7441,58 +7491,12 @@ SITES.push(
   "country": "CN",
   "province": "河南",
   "initialStatus": "unvisited"
-}
-
-);
-PLACES.push(
-{"key":"sh_songjiang","name":"松江","prov":"上海","country":"CN","lat":31.0065,"lon":121.2417},
-{"key":"shanghai","name":"上海","prov":"上海","country":"CN","lat":31.2304,"lon":121.4737}
-
-);
-// 安徽补遗：以现存所绘主体断代，新增条目默认未到访。
-SITES.push({
-  id: 'ah_xuguo', name: '许国石坊', short: '许国石坊', sub: '大学士坊 · 正立面',
-  dyn: 'ming', tag: '明', era: '万历十二年', year: 1584, yearLabel: '1584', yearApprox: false,
-  yearNote: '采用石坊营建年；图版只绘八柱四面石坊的一侧正立面。',
-  place: '安徽 · 黄山 · 歙县', placeKey: 'ah_shexian', country: 'CN', types: ['gate'], initialStatus: 'unvisited',
-  legacyNames: ['大学士坊', '八脚牌楼', '许国牌坊'],
-  lede: '八根石柱围起四面牌坊，许国石坊把一座平面的门楼变成可穿行的石构空间。梁枋、斗栱与石狮都从同一种灰石中雕出，仍立在徽州古城的街口。',
-  facts: [
-    '建于明万历十二年（1584），为大学士许国而立，又称大学士坊；1988年列为全国重点文物保护单位。',
-    '四面八柱，前后为三间四柱三楼，左右为单间双柱三楼，共同围成长方形；石构仿木的梁枋与斗栱之间遍饰雕刻。',
-    '图版仅绘一侧正立面，呈现四根前柱与三处通道，不把八根柱子排成一列；省略铭文与街市背景。'
-  ],
-  caption: ['许国石坊 · 一侧正立面', '明 · 1584 · 四面八柱石坊'],
-}, {
-  id: 'ah_zhenfeng', name: '安庆振风塔', short: '振风塔', sub: '迎江寺 · 七层八角砖石塔',
-  dyn: 'ming', tag: '明', era: '隆庆年间 · 后世修缮', year: 1570, yearLabel: '约1570', yearApprox: true,
-  yearNote: '按明隆庆年间所绘塔身断代，以通行建成纪年1570定位；地方文献另有1572年建成说。附檐、屋面与塔刹呈现照片中的修缮后状态。',
-  place: '安徽 · 安庆 · 迎江寺', placeKey: 'ah_anqing', country: 'CN', types: ['pagoda'], initialStatus: 'unvisited',
-  legacyNames: ['振风塔', '迎江寺塔', '安庆万佛塔'], tall: true,
-  lede: '振风塔立在长江北岸的迎江寺内，七层白色塔身与深灰檐带逐层收分。楼层之间的平座和小券洞，让厚重的砖石有了层层向上的节奏。',
-  facts: [
-    '现存塔身为明隆庆年间营建，通行建成纪年为隆庆四年（1570）；后世屡经修缮，2006年列为全国重点文物保护单位。',
-    '八角七层楼阁式砖石塔，檐下以砖石仿木构件出挑，各层设平座栏杆与券形开口；底层附檐不另计一层塔身。',
-    '图版依据实拍核对塔身与底层轮廓，以较新照片取色；红色塔刹、深灰屋面与浅色墙面为修缮后现状，不作为明代原貌复原。'
-  ],
-  caption: ['振风塔 · 七层八角塔身与底层附檐', '明 · 隆庆年间 · 后世修缮现状'],
-}, {
-  id: 'ah_huaxilou', name: '亳州花戏楼', short: '花戏楼', sub: '大关帝庙 · 院内戏台',
-  dyn: 'ming', tag: '清', era: '康熙十五年', year: 1676, yearLabel: '1676', yearApprox: false,
-  yearNote: '采用院内戏台增建年1676，不以大关帝庙始建年1656代替；木雕、彩绘与屋面经历后续重修。',
-  place: '安徽 · 亳州 · 谯城', placeKey: 'ah_bozhou', country: 'CN', types: ['stage'], initialStatus: 'unvisited',
-  legacyNames: ['亳州大关帝庙', '亳州山陕会馆'],
-  lede: '红柱托起青绿琉璃的屋顶，浅色木雕从檐下层层垂落。花戏楼把戏文刻进梁枋与挂落，是山陕药商在亳州留下的一座会馆戏台。',
-  facts: [
-    '大关帝庙始建于清顺治十三年（1656），山陕商人在康熙十五年（1676）增建戏楼，后又多次扩建重修；花戏楼1988年列为全国重点文物保护单位。',
-    '戏台坐南朝北，舞台向院内突出，檐下木雕与彩绘多表现戏文故事；砖雕山门、铁旗杆与戏台木雕是不同部位。',
-    '图版只绘院内中央戏台及台下通道，保留琉璃屋顶、红柱与挂落的材料颜色，不将山门牌坊或两侧看楼混入主体。'
-  ],
-  caption: ['花戏楼 · 院内中央戏台', '清 · 1676增建 · 后世重修'],
 });
-
-PLACES.push(
-  { key: 'ah_shexian', name: '歙县', prov: '安徽', country: 'CN', lat: 29.867639, lon: 118.430556 },
-  { key: 'ah_anqing', name: '安庆', prov: '安徽', country: 'CN', lat: 30.503631, lon: 117.049300 },
-  { key: 'ah_bozhou', name: '亳州', prov: '安徽', country: 'CN', lat: 33.886389, lon: 115.767500 }
-);
+PLACES.push({
+  "key": "hn_wuzhi",
+  "name": "武陟",
+  "prov": "河南",
+  "country": "CN",
+  "lat": 35.074947,
+  "lon": 113.320503
+});

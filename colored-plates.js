@@ -4426,126 +4426,6 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
-  "hn_miaole": {
-    "src": "assets/colored-transparent-avif/hn_miaole.avif",
-    "originalSrc": "assets/colored/hn_miaole.png",
-    "transparentSrc": "assets/colored-transparent/hn_miaole.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "武陟妙乐寺塔 · 十三级方形密檐砖塔 · 设色图",
-    "width": 1024,
-    "height": 1536,
-    "tint": false,
-    "record": "assets/color-research/hn_miaole.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:20260220_Pagoda_of_Miaole_Temple_01.jpg",
-        "author": "Windmemories",
-        "license": "CC BY-SA 4.0",
-        "date": "2026-02-20"
-      }
-    ]
-  },
-  "hn_fawang": {
-    "src": "assets/colored-transparent-avif/hn_fawang.avif",
-    "originalSrc": "assets/colored/hn_fawang.png",
-    "transparentSrc": "assets/colored-transparent/hn_fawang.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "登封法王寺塔 · 十五重密檐与塔顶局部 · 设色图",
-    "width": 1024,
-    "height": 1536,
-    "tint": false,
-    "record": "assets/color-research/hn_fawang.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:20250629_Pagoda_1_of_Fawang_Temple_01.jpg",
-        "author": "Windmemories",
-        "license": "CC BY-SA 4.0",
-        "date": "2025-06-29"
-      }
-    ]
-  },
-  "hn_songling": {
-    "src": "assets/colored-transparent-avif/hn_songling.avif",
-    "originalSrc": "assets/colored/hn_songling.png",
-    "transparentSrc": "assets/colored-transparent/hn_songling.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "北宋皇陵永昭陵 · 文官石像（东列南一） · 设色图",
-    "width": 1024,
-    "height": 1536,
-    "tint": false,
-    "record": "assets/color-research/hn_songling.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:20250809_Yongzhao_Mausoleum_30.jpg",
-        "author": "Windmemories",
-        "license": "CC BY-SA 4.0",
-        "date": "2025-08-09"
-      }
-    ]
-  },
-  "hn_bixia": {
-    "src": "assets/colored-transparent-avif/hn_bixia.avif",
-    "originalSrc": "assets/colored/hn_bixia.png",
-    "transparentSrc": "assets/colored-transparent/hn_bixia.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "浚县碧霞宫 · 正殿前部拜殿立面 · 设色图",
-    "width": 1536,
-    "height": 1024,
-    "tint": false,
-    "record": "assets/color-research/hn_bixia.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:20241201_Bixia_Gong_07.jpg",
-        "author": "Windmemories",
-        "license": "CC BY-SA 4.0",
-        "date": "2024-12-01"
-      }
-    ]
-  },
-  "sx_doudafu": {
-    "src": "assets/colored-transparent-avif/sx_doudafu.avif",
-    "originalSrc": "assets/colored/sx_doudafu.png",
-    "transparentSrc": "assets/colored-transparent/sx_doudafu.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 设色图",
-    "width": 1536,
-    "height": 1024,
-    "tint": false,
-    "record": "assets/color-research/sx_doudafu.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:窦大夫祠-1.jpg",
-        "author": "Fymking",
-        "license": "CC BY-SA 4.0",
-        "date": "2012-08-26"
-      }
-    ]
-  },
-  "sx_jiulongbi": {
-    "src": "assets/colored-transparent-avif/sx_jiulongbi.avif",
-    "originalSrc": "assets/colored/sx_jiulongbi.png",
-    "transparentSrc": "assets/colored-transparent/sx_jiulongbi.png",
-    "transparent": true,
-    "visualReview": "pending_user",
-    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 设色图",
-    "width": 1536,
-    "height": 1024,
-    "tint": false,
-    "record": "assets/color-research/sx_jiulongbi.json",
-    "references": [
-      {
-        "page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
-        "author": "Chlukoe",
-        "license": "CC0 1.0",
-        "date": "2013-06-25"
-      }
-    ]
-  },
   "sh_tangchuang": {
     "src": "assets/colored-transparent-avif/sh_tangchuang.avif",
     "originalSrc": "assets/colored/sh_tangchuang.png",
@@ -4644,6 +4524,46 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sx_doudafu": {
+    "src": "assets/colored-transparent-avif/sx_doudafu.avif",
+    "originalSrc": "assets/colored/sx_doudafu.png",
+    "transparentSrc": "assets/colored-transparent/sx_doudafu.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_doudafu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:窦大夫祠-1.jpg",
+        "author": "Fymking",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-08-26"
+      }
+    ]
+  },
+  "sx_jiulongbi": {
+    "src": "assets/colored-transparent-avif/sx_jiulongbi.avif",
+    "originalSrc": "assets/colored/sx_jiulongbi.png",
+    "transparentSrc": "assets/colored-transparent/sx_jiulongbi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_jiulongbi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
+        "author": "Chlukoe",
+        "license": "CC0 1.0",
+        "date": "2013-06-25"
+      }
+    ]
+  },
   "ah_xuguo": {
     "src": "assets/colored-transparent-avif/ah_xuguo.avif",
     "originalSrc": "assets/colored/ah_xuguo.png",
@@ -4713,6 +4633,86 @@ globalThis.COLORED_PLATES = {
         "author": "三猎",
         "license": "CC BY-SA 4.0",
         "date": "2016-06-24"
+      }
+    ]
+  },
+  "hn_miaole": {
+    "src": "assets/colored-transparent-avif/hn_miaole.avif",
+    "originalSrc": "assets/colored/hn_miaole.png",
+    "transparentSrc": "assets/colored-transparent/hn_miaole.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "武陟妙乐寺塔 · 十三级方形密檐砖塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_miaole.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260220_Pagoda_of_Miaole_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2026-02-20"
+      }
+    ]
+  },
+  "hn_fawang": {
+    "src": "assets/colored-transparent-avif/hn_fawang.avif",
+    "originalSrc": "assets/colored/hn_fawang.png",
+    "transparentSrc": "assets/colored-transparent/hn_fawang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "登封法王寺塔 · 十五重密檐与塔顶局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_fawang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250629_Pagoda_1_of_Fawang_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2025-06-29"
+      }
+    ]
+  },
+  "hn_songling": {
+    "src": "assets/colored-transparent-avif/hn_songling.avif",
+    "originalSrc": "assets/colored/hn_songling.png",
+    "transparentSrc": "assets/colored-transparent/hn_songling.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "北宋皇陵永昭陵 · 文官石像（东列南一） · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_songling.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250809_Yongzhao_Mausoleum_30.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2025-08-09"
+      }
+    ]
+  },
+  "hn_bixia": {
+    "src": "assets/colored-transparent-avif/hn_bixia.avif",
+    "originalSrc": "assets/colored/hn_bixia.png",
+    "transparentSrc": "assets/colored-transparent/hn_bixia.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "浚县碧霞宫 · 正殿前部拜殿立面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_bixia.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20241201_Bixia_Gong_07.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2024-12-01"
       }
     ]
   },

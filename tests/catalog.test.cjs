@@ -12,13 +12,15 @@ additions.push('guanyintang','guanque','xianshen','chongsheng','dule','qufukongm
 additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshodaiji','byodoin','todaiji','kiyomizu','toji');
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
-const shanghaiExpansion = JSON.parse(read('assets/research/shanghai-batch.json'));
-const henanAdditions = JSON.parse(read('assets/research/henan-additions-2026-09-18.json'));
-additions.push(...northernExpansion.ids, 'sd_pizhi', ...henanAdditions.ids, 'sx_doudafu', 'sx_jiulongbi', 'sh_fangta', 'sh_longhuata', 'sh_tangchuang', 'sh_zhenru');
+additions.push(...northernExpansion.ids, 'sd_pizhi', 'sx_doudafu', 'sx_jiulongbi');
 const anhuiExpansion = JSON.parse(read('assets/research/anhui-batch.json'));
 additions.push(...anhuiExpansion.ids);
+const shanghaiExpansion = JSON.parse(read('assets/research/shanghai-batch.json'));
+additions.push(...shanghaiExpansion.ids);
+const henanAdditions = JSON.parse(read('assets/research/henan-additions-2026-09-18.json'));
+additions.push(...henanAdditions.ids);
 test('all 214 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 214); assert.equal(new Set(SITES.map(s => s.id )).size, 214);
+  assert.equal(SITES.length, 214); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -26,6 +28,33 @@ test('all 214 catalogue entries have a real PNG, matching dimensions and a map l
     assert.equal(bytes.readUInt32BE(16), site.image.width); assert.equal(bytes.readUInt32BE(20), site.image.height);
     assert(PLACES.some(p => p.key === site.placeKey && Number.isFinite(p.lat) && Number.isFinite(p.lon)), `${site.id} has no location`);
   }
+});
+
+test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', () => {
+  const { createHash } = require('node:crypto');
+  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  assert.equal(shanghaiExpansion.count, shanghaiExpansion.ids.length);
+  assert.equal(queue.count, queue.entries.length);
+  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, site => site.id).sort());
+  for (const id of shanghaiExpansion.ids) {
+    const site = SITES.find(site => site.id === id);
+    assert.equal(site.initialStatus, 'unvisited');
+    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, '上海');
+    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      assert.equal(meta.status, 'complete');
+      assert(meta.historical_sources.length > 0);
+      const bytes = fs.readFileSync(path.join(root, meta.generated_file || meta.output));
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+      assert.equal(meta.background_preparation.sourceSha256, createHash('sha256').update(bytes).digest('hex'));
+    }
+  }
+  assert.equal(SITES.find(site => site.id === 'sh_tangchuang').year, 859);
+  assert.equal(SITES.find(site => site.id === 'sh_longhuata').year, 977);
+  assert.equal(SITES.find(site => site.id === 'sh_fangta').yearApprox, true);
+  assert.equal(SITES.find(site => site.id === 'sh_zhenru').year, 1320);
 });
 test('early monuments have distinct dynasty colours and dates covered by the expanded chronology', () => {
   assert.notEqual(DYN.han.acc, DYN.bei.acc);
@@ -70,42 +99,6 @@ test('Pizhi addition is unvisited, mapped to Shandong and uses recorded white or
     assert.equal(meta.background_preparation.method, 'white-matte-v1');
     assert.equal(meta.status, 'complete');
   }
-});
-
-test('Henan additions preserve subject dates, registration and source-bound white originals', () => {
-  const { createHash } = require('node:crypto');
-  const queue = JSON.parse(read('assets/color-research/queue.json'));
-  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
-  assert.equal(SITES.filter(s => PLACES.find(p => p.key === s.placeKey)?.prov === '河南').length, 38);
-  assert.equal(queue.count, queue.entries.length);
-  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, s => s.id).sort());
-  for (const id of henanAdditions.ids) {
-    const site = SITES.find(s => s.id === id);
-    assert.equal(site.initialStatus, 'unvisited');
-    assert.equal(site.country, 'CN');
-    assert.equal(PLACES.find(p => p.key === site.placeKey).prov, '河南');
-    assert.equal(queue.entries.filter(s => s.id === id).length, 1);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
-    for (const folder of ['research', 'color-research']) {
-      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
-      const original = fs.readFileSync(path.join(root, folder === 'research' ? meta.generated_file : meta.output));
-      assert.equal(meta.status, 'complete');
-      assert.equal(meta.background_preparation.method, 'white-matte-v1');
-      assert.equal(meta.background_preparation.sourceSha256, createHash('sha256').update(original).digest('hex'));
-      assert(meta.generation_history.every(attempt => attempt.prompt && attempt.original_file));
-    }
-  }
-  const miaole = SITES.find(s => s.id === 'hn_miaole');
-  assert.equal(miaole.dyn, 'zhou'); assert.equal(miaole.year, 955); assert.equal(miaole.timelineLane, 'north');
-  const fawang = SITES.find(s => s.id === 'hn_fawang');
-  assert.equal(fawang.dyn, 'tang'); assert.equal(fawang.yearApprox, true); assert.equal(fawang.yearLabel, '唐代');
-  assert.match(fawang.yearNote, /不代表确切建塔年/);
-  const songling = SITES.find(s => s.id === 'hn_songling');
-  assert.equal(songling.year, 1063); assert(songling.types.includes('tomb') && songling.types.includes('sculpture'));
-  assert.match(songling.sub, /永昭陵.*文官石像/);
-  const bixia = SITES.find(s => s.id === 'hn_bixia');
-  assert.equal(bixia.year, 1542); assert.equal(bixia.yearLabel, '1542起');
-  assert.match(bixia.yearNote, /始建.*重修/);
 });
 
 test('Shanxi additions have hash-bound white originals and complete transparent deliveries', () => {
@@ -161,33 +154,6 @@ test('Japanese temple subjects use their surviving construction dates and Japane
   assert(SITES.find(site => site.id === 'toshodaiji').yearApprox);
 });
 
-test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', () => {
-  const { createHash } = require('node:crypto');
-  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
-  const queue = JSON.parse(read('assets/color-research/queue.json'));
-  assert.equal(shanghaiExpansion.count, shanghaiExpansion.ids.length);
-  assert.equal(queue.count, queue.entries.length);
-  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, site => site.id).sort());
-  for (const id of shanghaiExpansion.ids) {
-    const site = SITES.find(site => site.id === id);
-    assert.equal(site.initialStatus, 'unvisited');
-    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, '上海');
-    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
-    for (const folder of ['research', 'color-research']) {
-      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
-      assert.equal(meta.status, 'complete');
-      assert(meta.historical_sources.length > 0);
-      const bytes = fs.readFileSync(path.join(root, meta.generated_file || meta.output));
-      assert.equal(meta.background_preparation.method, 'white-matte-v1');
-      assert.equal(meta.background_preparation.sourceSha256, createHash('sha256').update(bytes).digest('hex'));
-    }
-  }
-  assert.equal(SITES.find(site => site.id === 'sh_tangchuang').year, 859);
-  assert.equal(SITES.find(site => site.id === 'sh_longhuata').year, 977);
-  assert.equal(SITES.find(site => site.id === 'sh_fangta').yearApprox, true);
-  assert.equal(SITES.find(site => site.id === 'sh_zhenru').year, 1320);
-});
-
 test('Anhui subjects have dated research and complete queued line/color deliveries', () => {
   assert.equal(anhuiExpansion.ids.length, 3);
   const queue = JSON.parse(read('assets/color-research/queue.json'));
@@ -210,4 +176,40 @@ test('Anhui subjects have dated research and complete queued line/color deliveri
   assert.equal(SITES.find(site => site.id === 'ah_huaxilou').year, 1676);
   assert.equal(SITES.find(site => site.id === 'ah_huaxilou').types[0], 'stage');
   assert.equal(SITES.find(site => site.id === 'ah_zhenfeng').yearApprox, true);
+});
+
+test('Henan additions preserve subject dates, registration and source-bound white originals', () => {
+  const { createHash } = require('node:crypto');
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
+  assert.equal(SITES.filter(s => PLACES.find(p => p.key === s.placeKey)?.prov === '河南').length, 38);
+  assert.equal(queue.count, queue.entries.length);
+  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, s => s.id).sort());
+  for (const id of henanAdditions.ids) {
+    const site = SITES.find(s => s.id === id);
+    assert.equal(site.initialStatus, 'unvisited');
+    assert.equal(site.country, 'CN');
+    assert.equal(PLACES.find(p => p.key === site.placeKey).prov, '河南');
+    assert.equal(queue.entries.filter(s => s.id === id).length, 1);
+    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      const original = fs.readFileSync(path.join(root, folder === 'research' ? meta.generated_file : meta.output));
+      assert.equal(meta.status, 'complete');
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+      assert.equal(meta.background_preparation.sourceSha256, createHash('sha256').update(original).digest('hex'));
+      assert(meta.generation_history.every(attempt => attempt.prompt && attempt.original_file));
+    }
+  }
+  const miaole = SITES.find(s => s.id === 'hn_miaole');
+  assert.equal(miaole.dyn, 'zhou'); assert.equal(miaole.year, 955); assert.equal(miaole.timelineLane, 'north');
+  const fawang = SITES.find(s => s.id === 'hn_fawang');
+  assert.equal(fawang.dyn, 'tang'); assert.equal(fawang.yearApprox, true); assert.equal(fawang.yearLabel, '唐代');
+  assert.match(fawang.yearNote, /不代表确切建塔年/);
+  const songling = SITES.find(s => s.id === 'hn_songling');
+  assert.equal(songling.year, 1063); assert(songling.types.includes('tomb') && songling.types.includes('sculpture'));
+  assert.match(songling.sub, /永昭陵.*文官石像/);
+  const bixia = SITES.find(s => s.id === 'hn_bixia');
+  assert.equal(bixia.year, 1542); assert.equal(bixia.yearLabel, '1542起');
+  assert.match(bixia.yearNote, /始建.*重修/);
 });

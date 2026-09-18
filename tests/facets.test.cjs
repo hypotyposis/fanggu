@@ -9,6 +9,28 @@ const catalog = facets.classify(SITES, PLACES);
 const library = create(catalog, { getItem: () => null, setItem() {} });
 const find = filters => Array.from(library.all().filter(site => facets.matches(site, filters)), site => site.id).sort();
 
+test('Anhui additions support region, province, type and alias filters without seeding visits', () => {
+  const ids = ['ah_huaxilou', 'ah_xuguo', 'ah_zhenfeng'];
+  assert.deepEqual(find({ country: 'CN', region: 'east', province: '安徽' }), ids);
+  assert(facets.provinces(catalog, 'east', 'CN').includes('安徽'));
+  assert.deepEqual(find({ province: '安徽', type: 'gate', query: '八脚牌楼' }), ['ah_xuguo']);
+  assert.deepEqual(find({ province: '安徽', type: 'pagoda' }), ['ah_zhenfeng']);
+  assert.deepEqual(find({ province: '安徽', type: 'stage' }), ['ah_huaxilou']);
+  assert.deepEqual(find({ province: '安徽', status: 'visited' }), []);
+  for (const id of ids) assert.equal(library.record(id).status, 'unvisited');
+  const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
+  const before = create(catalog.filter(site => !ids.includes(site.id)), storage);
+  before.setRecord('xianwall', { status: 'visited', visitedOn: '2025-05-01', note: '原有行记' });
+  const after = create(catalog, storage);
+  assert.equal(after.record('xianwall').note, '原有行记');
+  after.setStatus('ah_xuguo', 'wishlist');
+  const restored = create(catalog, { getItem: () => null, setItem() {} });
+  restored.import(after.export());
+  assert.equal(restored.record('ah_xuguo').status, 'wishlist');
+  assert.equal(restored.record('ah_huaxilou').status, 'unvisited');
+  assert.equal(restored.record('xianwall').note, '原有行记');
+});
+
 test('Shanghai filtering and expansion preserve prior records and blank arrival dates', () => {
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/shanghai-batch.json'), 'utf8'));
   assert.deepEqual(find({ country: 'CN', region: 'east', province: '上海' }), [...batch.ids].sort());
@@ -168,28 +190,6 @@ test('82 northern additions remain unvisited while existing personal records sur
   assert.equal(restored.record('sx_chongfu').status, 'unvisited');
 });
 
-test('Henan continuation joins filters and records without overwriting saved journal entries', () => {
-  const { ids } = JSON.parse(fs.readFileSync(require.resolve('../assets/research/henan-additions-2026-09-18.json'), 'utf8'));
-  for (const id of ids) assert(find({ province: '河南', country: 'CN', status: 'unvisited' }).includes(id));
-  assert(find({ province: '河南', type: 'pagoda', dynasty: 'tang' }).includes('hn_fawang'));
-  assert(find({ province: '河南', type: 'tomb', dynasty: 'song' }).includes('hn_songling'));
-  assert(find({ province: '河南', type: 'sculpture' }).includes('hn_songling'));
-  const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
-  const before = create(catalog.filter(site => !ids.includes(site.id)), storage);
-  before.setRecord('xiuding', { status: 'visited', visitedOn: '', note: '砖雕细看' });
-  const after = create(catalog, storage);
-  assert.equal(after.record('xiuding').note, '砖雕细看');
-  for (const id of ids) {
-    assert.equal(after.record(id).status, 'unvisited');
-    assert.equal(after.record(id).visitedOn, '');
-  }
-  after.setRecord('hn_miaole', { status: 'visited', visitedOn: '', note: '塔刹与十三层砖檐' });
-  const restored = create(catalog, { getItem: () => null, setItem() {} });
-  restored.import(after.export());
-  assert.equal(restored.record('hn_miaole').note, '塔刹与十三层砖檐');
-  assert.equal(restored.record('hn_fawang').status, 'unvisited');
-});
-
 test('Shanxi screens are distinct from fortifications and additions preserve saved records', () => {
   assert.deepEqual(find({ province: '山西', type: 'screen' }), ['sx_jiulongbi']);
   assert(!find({ type: 'wall' }).includes('sx_jiulongbi'));
@@ -214,24 +214,24 @@ test('Shanxi screens are distinct from fortifications and additions preserve sav
   assert.equal(restored.record('sx_jiulongbi').status, 'wishlist');
 });
 
-test('Anhui additions support region, province, type and alias filters without seeding visits', () => {
-  const ids = ['ah_huaxilou', 'ah_xuguo', 'ah_zhenfeng'];
-  assert.deepEqual(find({ country: 'CN', region: 'east', province: '安徽' }), ids);
-  assert(facets.provinces(catalog, 'east', 'CN').includes('安徽'));
-  assert.deepEqual(find({ province: '安徽', type: 'gate', query: '八脚牌楼' }), ['ah_xuguo']);
-  assert.deepEqual(find({ province: '安徽', type: 'pagoda' }), ['ah_zhenfeng']);
-  assert.deepEqual(find({ province: '安徽', type: 'stage' }), ['ah_huaxilou']);
-  assert.deepEqual(find({ province: '安徽', status: 'visited' }), []);
-  for (const id of ids) assert.equal(library.record(id).status, 'unvisited');
+test('Henan continuation joins filters and records without overwriting saved journal entries', () => {
+  const { ids } = JSON.parse(fs.readFileSync(require.resolve('../assets/research/henan-additions-2026-09-18.json'), 'utf8'));
+  for (const id of ids) assert(find({ province: '河南', country: 'CN', status: 'unvisited' }).includes(id));
+  assert(find({ province: '河南', type: 'pagoda', dynasty: 'tang' }).includes('hn_fawang'));
+  assert(find({ province: '河南', type: 'tomb', dynasty: 'song' }).includes('hn_songling'));
+  assert(find({ province: '河南', type: 'sculpture' }).includes('hn_songling'));
   const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
   const before = create(catalog.filter(site => !ids.includes(site.id)), storage);
-  before.setRecord('xianwall', { status: 'visited', visitedOn: '2025-05-01', note: '原有行记' });
+  before.setRecord('xiuding', { status: 'visited', visitedOn: '', note: '砖雕细看' });
   const after = create(catalog, storage);
-  assert.equal(after.record('xianwall').note, '原有行记');
-  after.setStatus('ah_xuguo', 'wishlist');
+  assert.equal(after.record('xiuding').note, '砖雕细看');
+  for (const id of ids) {
+    assert.equal(after.record(id).status, 'unvisited');
+    assert.equal(after.record(id).visitedOn, '');
+  }
+  after.setRecord('hn_miaole', { status: 'visited', visitedOn: '', note: '塔刹与十三层砖檐' });
   const restored = create(catalog, { getItem: () => null, setItem() {} });
   restored.import(after.export());
-  assert.equal(restored.record('ah_xuguo').status, 'wishlist');
-  assert.equal(restored.record('ah_huaxilou').status, 'unvisited');
-  assert.equal(restored.record('xianwall').note, '原有行记');
+  assert.equal(restored.record('hn_miaole').note, '塔刹与十三层砖檐');
+  assert.equal(restored.record('hn_fawang').status, 'unvisited');
 });
