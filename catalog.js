@@ -18,7 +18,7 @@
   const types = {
     hall: '殿堂', pagoda: '古塔', pavilion: '楼阁', stage: '戏台',
     grotto: '石窟石刻', que: '石阙', wall: '城墙城防', sculpture: '彩塑雕塑', gate: '门坊', bridge: '桥梁', pillar: '经幢',
-    tomb: '陵墓', residence: '宅第民居', mural: '壁画', observatory: '天文台', stele: '碑刻', palace: '宫苑',
+    tomb: '陵墓', residence: '宅第民居', mural: '壁画', observatory: '天文台', stele: '碑刻', palace: '宫苑', screen: '照壁',
   };
   function classify(sites, places) {
     const geography = new Map(places.map(place => [place.key, place]));
@@ -32,7 +32,7 @@
   function matches(site, filters = {}) {
     const { status = 'all', dynasty = 'all', country = 'all', region = 'all', province = 'all', type = 'all', query = '' } = filters;
     const statusMatch = status === 'all' || (status === 'unvisited' ? site.record.status !== 'visited' : site.record.status === status);
-    const typeAliases = { sculpture: '彩塑悬塑 造像 雕塑', gate: '山门 牌坊 牌楼' };
+    const typeAliases = { sculpture: '彩塑悬塑 造像 雕塑', gate: '山门 牌坊 牌楼', screen: '影壁 琉璃照壁' };
     const search = [site.name, site.short, site.place, site.sub, ...(site.legacyNames || []), countries[site.country], site.province, regions[site.region]?.name, ...site.types.map(type => `${types[type]} ${typeAliases[type] || ''}`)].join(' ').toLocaleLowerCase();
     return statusMatch && (dynasty === 'all' || site.dyn === dynasty)
       && (country === 'all' || site.country === country) && (region === 'all' || site.region === region) && (province === 'all' || site.province === province)

@@ -1,0 +1,66 @@
+{
+  "id": "hn_fawang",
+  "name": "法王寺塔",
+  "subject": "登封法王寺塔 · 十五重密檐与塔顶局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/colored/drafts/hn_fawang-v1.png",
+    "assets/generated/hn_fawang.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the colored Fawang Temple upper pagoda study TO CORRECT. Preserve exactly FIFTEEN principal projecting eaves, their spacing, arch niches, two square faces, broken squat crown and thin modern rod. CHANGE BACKGROUND ONLY: replace all unwanted translucent gray-brown haze with perfectly flat OPAQUE PURE WHITE RGB(255,255,255) sheet. Exterior blank canvas must be solid white, not transparent. RGB PNG or alpha255 EVERYWHERE is mandatory. All tower masonry remains opaque subdued light gray-beige/dusty pale brown, darker gray-brown eave undersides, opaque dark arch recesses. Last unfinished lower edge must close the colored masonry along Image2's irregular drawn crop boundary, leaving pure opaque white beyond it; no fuzzy fade or ghostly material. No intact restored finial or reconstructed hidden lower base. Image2 approved line geometry. Same1024x1536 complete composition and margins. No gray/black backdrop, transparency, gradient, haze, glow, shadow, paper texture, trees, sky or text. It is an opaque white-paper illustration, not a transparent cutout.",
+  "material_observations": [
+    "砖塔现貌浅灰米、低饱和浅土褐，叠涩檐底较深灰褐，风化檐缘浅色。",
+    "残损塔顶灰褐、小拱孔暗灰，保留现状细杆；不复原唐代塔刹或施金色滤镜。"
+  ],
+  "references": [
+    {
+      "reference_file": "assets/references/hn_fawang-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250629_Pagoda_1_of_Fawang_Temple_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/20250629_Pagoda_1_of_Fawang_Temple_01.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2025-06-29",
+      "note": "实际查看照片，形制和材料色依据现貌。"
+    }
+  ],
+  "original_research": "assets/research/hn_fawang.json",
+  "output": "assets/colored/hn_fawang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-66449a2a-bb09-401b-90dd-9113ddb412bc.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "completed_at": "2026-09-18",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
+    "seeds": []
+  },
+  "visual_review": "已查看重试白底原件，十五重主要密檐逐级核对；保留残损塔顶与细杆、暗色拱孔、局部下缘，不绘隐藏台基与券门。浅灰米砖体和较深灰褐檐底区分，风化纹理艺术概括。首稿含透明灰雾拒绝交付。用户尚未验收。",
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject observations: Color ONLY the Fawang Temple pagoda UPPER TOWER DETAIL from Image1; exactly FIFTEEN principal projecting corbel eaves and corresponding narrow courses, small central niches, present squat broken ornamental crown and modern thin rod. Keep the same unfinished short lower edge, no reconstructed hidden base or tall ancient finial. Photo2 actual brick is subdued warm light gray-beige/dusty pale brown, with darker neutral gray-brown eave undersides, light weathered edges; small arch recesses are opaque dark gray. Crown weathered gray-brown. NO strong orange, gold or automatic Tang dynasty overlay. Last sample technique only. Existing1024x1536 composition exact, counted fifteen eaves unchanged. All exterior and actual open-air spaces MUST be pure RGB255 white, completely OPAQUE WHITE PAPER BACKGROUND; RGB PNG or alpha255 EVERYWHERE, no transparent cutout, haze, gradient, glow, sky, trees, shadow or paper texture.",
+      "input_images": [
+        "assets/generated/hn_fawang.png",
+        "assets/references/hn_fawang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-d6230bad-57e4-41ce-91ed-ee7a6f7f2654.png",
+      "saved_file": "assets/colored/drafts/hn_fawang-v1.png",
+      "status": "rejected",
+      "reason": "透明灰雾，非白底原件；下缘含模糊退晕。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image1 is the colored Fawang Temple upper pagoda study TO CORRECT. Preserve exactly FIFTEEN principal projecting eaves, their spacing, arch niches, two square faces, broken squat crown and thin modern rod. CHANGE BACKGROUND ONLY: replace all unwanted translucent gray-brown haze with perfectly flat OPAQUE PURE WHITE RGB(255,255,255) sheet. Exterior blank canvas must be solid white, not transparent. RGB PNG or alpha255 EVERYWHERE is mandatory. All tower masonry remains opaque subdued light gray-beige/dusty pale brown, darker gray-brown eave undersides, opaque dark arch recesses. Last unfinished lower edge must close the colored masonry along Image2's irregular drawn crop boundary, leaving pure opaque white beyond it; no fuzzy fade or ghostly material. No intact restored finial or reconstructed hidden lower base. Image2 approved line geometry. Same1024x1536 complete composition and margins. No gray/black backdrop, transparency, gradient, haze, glow, shadow, paper texture, trees, sky or text. It is an opaque white-paper illustration, not a transparent cutout.",
+      "input_images": [
+        "assets/colored/drafts/hn_fawang-v1.png",
+        "assets/generated/hn_fawang.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-66449a2a-bb09-401b-90dd-9113ddb412bc.png",
+      "status": "accepted_white_source",
+      "method": "white-background-then-script"
+    }
+  ]
+}

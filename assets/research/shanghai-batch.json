@@ -1,0 +1,92 @@
+{
+  "created": "2026-09-18",
+  "province": "上海",
+  "count": 4,
+  "ids": [
+    "sh_tangchuang",
+    "sh_longhuata",
+    "sh_fangta",
+    "sh_zhenru"
+  ],
+  "defaultStatus": "unvisited",
+  "places": [
+    {
+      "key": "sh_songjiang",
+      "name": "松江",
+      "prov": "上海",
+      "country": "CN",
+      "lat": 31.0065,
+      "lon": 121.2417
+    },
+    {
+      "key": "shanghai",
+      "name": "上海",
+      "prov": "上海",
+      "country": "CN",
+      "lat": 31.2304,
+      "lon": 121.4737
+    }
+  ],
+  "entries": [
+    {
+      "id": "sh_tangchuang",
+      "name": "松江唐经幢",
+      "subject": "佛顶尊胜陀罗尼经幢",
+      "dyn": "tang",
+      "year": 859,
+      "yearLabel": "859",
+      "yearApprox": false,
+      "placeKey": "sh_songjiang",
+      "types": [
+        "pillar"
+      ],
+      "lineRecord": "assets/research/sh_tangchuang.json",
+      "colorRecord": "assets/color-research/sh_tangchuang.json"
+    },
+    {
+      "id": "sh_longhuata",
+      "name": "龙华塔",
+      "subject": "八面七层 · 砖木楼阁塔",
+      "dyn": "song",
+      "year": 977,
+      "yearLabel": "977",
+      "yearApprox": false,
+      "placeKey": "shanghai",
+      "types": [
+        "pagoda"
+      ],
+      "lineRecord": "assets/research/sh_longhuata.json",
+      "colorRecord": "assets/color-research/sh_longhuata.json"
+    },
+    {
+      "id": "sh_fangta",
+      "name": "松江兴圣教寺塔",
+      "subject": "方塔园 · 九层方塔",
+      "dyn": "song",
+      "year": 1080,
+      "yearLabel": "1068—1093",
+      "yearApprox": true,
+      "placeKey": "sh_songjiang",
+      "types": [
+        "pagoda"
+      ],
+      "lineRecord": "assets/research/sh_fangta.json",
+      "colorRecord": "assets/color-research/sh_fangta.json"
+    },
+    {
+      "id": "sh_zhenru",
+      "name": "真如寺大殿",
+      "subject": "三间单檐歇山 · 元代木构",
+      "dyn": "yuan",
+      "year": 1320,
+      "yearLabel": "1320",
+      "yearApprox": false,
+      "placeKey": "shanghai",
+      "types": [
+        "hall"
+      ],
+      "lineRecord": "assets/research/sh_zhenru.json",
+      "colorRecord": "assets/color-research/sh_zhenru.json"
+    }
+  ]
+}

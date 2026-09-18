@@ -1,0 +1,82 @@
+{
+  "id": "sx_jiulongbi",
+  "subject": "大同九龙壁 · 九龙琉璃照壁正面",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/9dragonwall_Datong_Shanxi.jpg",
+  "author": "Chlukoe",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_jiulongbi-photo.jpg"
+  ],
+  "source_note": "Chlukoe于2013-06-25拍摄的全壁正面，左上屋檐有柳枝遮挡；图版简化浮雕轮廓并移除植被、围栏与倒影池，不补绘代王府。",
+  "prompt": "Change ONLY the size and canvas margins of this Nine Dragon Wall BLACK INK line plate. Preserve the entire illustration without any detail changes, exactly nine dragon heads and figures, same relief and roof cap and base. On the SAME landscape 1536x1024 OPAQUE PURE WHITE #FFFFFF canvas, scale the whole complete wall drawing down so its leftmost and rightmost base edges lie at x=120 and x=1416 respectively. Center the wall horizontally and vertically. Add 120 pixel pure-white margins at both ends; no line may touch the canvas edge. Keep the same low wide proportions; no stretching. Do not redraw the dragons, change their number, invent structures or add anything. Thin BLACK INK contours, every non-ink pixel including all wall blank surfaces opaque white. No alpha transparency, grey wash, shading, paper texture, text, gradient or shadow.",
+  "input_images": [
+    "assets/generated/sx_jiulongbi-candidate.png"
+  ],
+  "generated_file": "assets/generated/sx_jiulongbi.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-482306db-93ed-41e5-a82a-08be7f623c44.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "大同九龙壁 · 九龙琉璃照壁正面",
+    "明 · 洪武二十五年（1392）"
+  ],
+  "historical_sources": [
+    {
+      "title": "故宫博物院 · 大同九龙壁",
+      "url": "https://www.dpm.org.cn/lemmas/241443.html"
+    },
+    {
+      "title": "大同市人民政府 · Nine-Dragon Wall",
+      "url": "https://www.dt.gov.cn/english/placestovisit/202501/916d3d6f6ec14655978f5a3212ee06b6.shtml"
+    }
+  ],
+  "coordinates": {
+    "lat": 40.0917972,
+    "lng": 113.2967222,
+    "source": "摄影来源页标注40°05′30.47″N、113°17′48.20″E；单体坐标，不改变既有大同城市归并点。",
+    "source_page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "57cb8b4e000eaa6bc430df9d44633893872f055fed18888f8f6431911e72f05e",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural heritage plate for 访古.\nImage 1 is a STYLE MASTER only, the Vairocana contour drawing: borrow elegant delicate slightly organic thin black contours and sparse internal detail, never its figure geometry. Image 2 is the actual Datong Nine Dragon Wall (大同九龙壁), and determines the subject geometry. Draw only this entire long Ming glazed-ceramic screen wall, from its left end to its right end, seen straight-on, centered with verticals vertical. Preserve its extremely wide low 45.5m by 8m overall proportions, continuous low hip-roof cap, ridge ornaments, horizontal frieze, the nine large dragon relief compositions across the face, and tiered rectangular base. EXACTLY NINE dragon figures across the wall, one central dragon with four on either side, positions and broad coiled silhouettes matching the photograph. Do not make nine separate standing statues or divide the wall into nine framed rectangular panels. Relief contours are simplified, clouds and waves selectively indicated. Remove obstructing willow branches, fence, lawn, water basin, people and modern background; do not invent dragons or decorative architecture.\nRender crisp fine BLACK INK lines on a perfectly flat OPAQUE PURE WHITE #FFFFFF canvas. Every blank surface inside and outside the wall is white, ALL pixels fully opaque, absolutely NO transparent output or alpha removal. No shaded wall fill, crosshatching, grey wash, pencil grain, paper texture, gradient, color, gold, halo, shadow or checkerboard. Sparse roof strokes and relief outlines, generous white surfaces, no labels, letters, calligraphy, captions, watermark, frame or border. We remove the WHITE by script ourselves later.\nLandscape 1536x1024, complete wall occupies about 86% of width. Preserve the real very wide proportions with lots of white space above and below, do not stretch it vertically to fill the canvas. Roof corners and base uncut, at least 7% side margin. Only a few thin ground lines.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sx_jiulongbi-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-f35a08d0-f180-4de8-88a8-e93a649ce5c7.png",
+      "saved_file": "assets/generated/sx_jiulongbi-candidate.png",
+      "status": "rejected",
+      "reason": "九龙可辨，但底座左右留白不足。"
+    },
+    {
+      "prompt": "Change ONLY the size and canvas margins of this Nine Dragon Wall BLACK INK line plate. Preserve the entire illustration without any detail changes, exactly nine dragon heads and figures, same relief and roof cap and base. On the SAME landscape 1536x1024 OPAQUE PURE WHITE #FFFFFF canvas, scale the whole complete wall drawing down so its leftmost and rightmost base edges lie at x=120 and x=1416 respectively. Center the wall horizontally and vertically. Add 120 pixel pure-white margins at both ends; no line may touch the canvas edge. Keep the same low wide proportions; no stretching. Do not redraw the dragons, change their number, invent structures or add anything. Thin BLACK INK contours, every non-ink pixel including all wall blank surfaces opaque white. No alpha transparency, grey wash, shading, paper texture, text, gradient or shadow.",
+      "reference_files": [
+        "assets/generated/sx_jiulongbi-candidate.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-482306db-93ed-41e5-a82a-08be7f623c44.png",
+      "saved_file": "assets/generated/sx_jiulongbi.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际查看最终原件，九条主要龙形与中央龙位置可辨，连续壁身未拆成九格。",
+      "低矮长壁、屋顶与底座完整，两端有留白，无文字，白底黑线。"
+    ],
+    "limitations": "浮雕、瓦纹与兽饰进行了简化，非逐砖复刻或实测图；照片左上遮挡的屋檐依对称轮廓规整，待用户审图。"
+  }
+}

@@ -260,18 +260,6 @@ const PLATES = {
       "唐代古塔 · 宋代修葺"
     ]
   },
-  "nx_xumishan": {
-    "src": "assets/plates/nx_xumishan.png",
-    "alt": "须弥山第5窟 · 弥勒大佛胸膝局部 · 线稿",
-    "width": 1024,
-    "height": 1536,
-    "color": "#d6ab5c",
-    "tint": false,
-    "caption": [
-      "须弥山第5窟 · 弥勒大佛胸膝局部",
-      "唐代造像 · 依实拍保留风化"
-    ]
-  },
   "nanchan": {
     "src": "assets/plates/nanchan.png",
     "alt": "南禅寺大殿 · 线稿",
@@ -335,6 +323,18 @@ const PLATES = {
     "height": 1024,
     "color": "#d6ab5c",
     "tint": false
+  },
+  "sh_tangchuang": {
+    "src": "assets/plates/sh_tangchuang.png",
+    "alt": "松江唐经幢 · 佛顶尊胜陀罗尼经幢 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "八角石幢 · 层叠雕刻",
+      "唐 · 大中十三年（859）"
+    ]
   },
   "gongchen": {
     "src": "assets/plates/gongchen.png",
@@ -526,6 +526,18 @@ const PLATES = {
     "caption": [
       "开封繁塔 · 现存三层主体与小塔",
       "宋 · 974 · 后世修补"
+    ]
+  },
+  "sh_longhuata": {
+    "src": "assets/plates/sh_longhuata.png",
+    "alt": "龙华塔 · 八面七层 · 砖木楼阁塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "八面七层 · 砖木楼阁式",
+      "吴越重建 · 北宋纪年（977）"
     ]
   },
   "luohanshuangta": {
@@ -762,6 +774,18 @@ const PLATES = {
     "caption": [
       "景州塔正面",
       "十三层八角塔身与铁刹网、铜葫芦"
+    ]
+  },
+  "sh_fangta": {
+    "src": "assets/plates/sh_fangta.png",
+    "alt": "松江兴圣教寺塔 · 方塔园 · 九层方塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "方形九层 · 砖木塔",
+      "北宋 · 熙宁、元祐年间"
     ]
   },
   "qinglian": {
@@ -1272,30 +1296,6 @@ const PLATES = {
       "金代 · 三间单檐歇山"
     ]
   },
-  "nx_xixialing": {
-    "src": "assets/plates/nx_xixialing.png",
-    "alt": "西夏陵3号陵 · 现存夯土陵塔 · 线稿",
-    "width": 1536,
-    "height": 1024,
-    "color": "#c6ac85",
-    "tint": false,
-    "caption": [
-      "西夏陵3号陵 · 现存夯土陵塔",
-      "西夏遗址 · 非原貌复原"
-    ]
-  },
-  "nx_108towers": {
-    "src": "assets/plates/nx_108towers.png",
-    "alt": "青铜峡一百零八塔 · 最上三行七塔局部 · 线稿",
-    "width": 1536,
-    "height": 1024,
-    "color": "#c6ac85",
-    "tint": false,
-    "caption": [
-      "一百零八塔 · 最上三行七塔局部",
-      "西夏始建说 · 后世重修现貌"
-    ]
-  },
   "yongle": {
     "src": "assets/plates/yongle.png",
     "alt": "芮城永乐宫三清殿（无极殿） · 线稿",
@@ -1476,6 +1476,18 @@ const PLATES = {
       "元延祐五年 · 单檐歇山"
     ]
   },
+  "sh_zhenru": {
+    "src": "assets/plates/sh_zhenru.png",
+    "alt": "真如寺大殿 · 三间单檐歇山 · 元代木构 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "大殿正立面 · 面阔三间",
+      "元 · 延祐七年（1320）"
+    ]
+  },
   "xiayu": {
     "src": "assets/plates/xiayu.png",
     "alt": "夏禹神祠正殿 · 线稿",
@@ -1494,6 +1506,18 @@ const PLATES = {
     "caption": [
       "虎丘二山门 · 断梁殿正面",
       "元至元四年（1338）重建 · 三间单檐歇山"
+    ]
+  },
+  "sx_doudafu": {
+    "src": "assets/plates/sx_doudafu.png",
+    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "太原窦大夫祠 · 献亭与大殿正面",
+      "元 · 至正三年（1343）重建"
     ]
   },
   "hb_beiyue": {
@@ -1626,6 +1650,18 @@ const PLATES = {
     "caption": [
       "崇善寺 · 大悲殿",
       "明洪武 · 七间重檐庑殿"
+    ]
+  },
+  "sx_jiulongbi": {
+    "src": "assets/plates/sx_jiulongbi.png",
+    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "大同九龙壁 · 九龙琉璃照壁正面",
+      "明 · 洪武二十五年（1392）"
     ]
   },
   "shuanglin": {
@@ -2334,6 +2370,126 @@ const PLATES = {
     "caption": [
       "东寺 · 五重塔",
       "近正视 · 江户宽永二十一年（1644）"
+    ]
+  },
+  "ah_xuguo": {
+    "src": "assets/plates/ah_xuguo.png",
+    "alt": "许国石坊 · 一侧正立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "许国石坊 · 一侧正立面",
+      "明 · 1584 · 四面八柱石坊"
+    ]
+  },
+  "ah_zhenfeng": {
+    "src": "assets/plates/ah_zhenfeng.png",
+    "alt": "振风塔 · 七层八角塔身与底层附檐 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "振风塔 · 七层八角塔身与底层附檐",
+      "明 · 隆庆年间 · 后世修缮现状"
+    ]
+  },
+  "ah_huaxilou": {
+    "src": "assets/plates/ah_huaxilou.png",
+    "alt": "花戏楼 · 院内中央戏台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "花戏楼 · 院内中央戏台",
+      "清 · 1676增建 · 后世重修"
+    ]
+  },
+  "hn_miaole": {
+    "src": "assets/plates/hn_miaole.png",
+    "alt": "武陟妙乐寺塔 · 十三级方形密檐砖塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "武陟妙乐寺塔 · 十三级密檐",
+      "后周 · 955年重修"
+    ]
+  },
+  "hn_fawang": {
+    "src": "assets/plates/hn_fawang.png",
+    "alt": "登封法王寺塔 · 十五重密檐与塔顶局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "法王寺塔 · 十五重密檐与塔顶局部",
+      "唐代 · 建塔确年未定"
+    ]
+  },
+  "hn_songling": {
+    "src": "assets/plates/hn_songling.png",
+    "alt": "北宋皇陵永昭陵 · 文官石像（东列南一） · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "永昭陵 · 文官石像（东列南一）",
+      "北宋 · 1063年营陵"
+    ]
+  },
+  "hn_bixia": {
+    "src": "assets/plates/hn_bixia.png",
+    "alt": "浚县碧霞宫 · 正殿前部拜殿立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "碧霞宫 · 正殿前部拜殿立面",
+      "明代始建 · 明清续修"
+    ]
+  },
+  "nx_xumishan": {
+    "src": "assets/plates/nx_xumishan.png",
+    "alt": "须弥山第5窟 · 弥勒大佛胸膝局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "须弥山第5窟 · 弥勒大佛胸膝局部",
+      "唐代造像 · 依实拍保留风化"
+    ]
+  },
+  "nx_xixialing": {
+    "src": "assets/plates/nx_xixialing.png",
+    "alt": "西夏陵3号陵 · 现存夯土陵塔 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c6ac85",
+    "tint": false,
+    "caption": [
+      "西夏陵3号陵 · 现存夯土陵塔",
+      "西夏遗址 · 非原貌复原"
+    ]
+  },
+  "nx_108towers": {
+    "src": "assets/plates/nx_108towers.png",
+    "alt": "青铜峡一百零八塔 · 最上三行七塔局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c6ac85",
+    "tint": false,
+    "caption": [
+      "一百零八塔 · 最上三行七塔局部",
+      "西夏始建说 · 后世重修现貌"
     ]
   }
 };

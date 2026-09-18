@@ -1,0 +1,61 @@
+{
+  "id": "sh_tangchuang",
+  "subject": "松江唐经幢 · 佛顶尊胜陀罗尼经幢",
+  "status": "complete",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_tangchuang-photo.jpg",
+    "assets/references/sh_tangchuang-input.png"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_tangchuang-input.png"
+  ],
+  "source_note": "以西侧完整实拍核对经幢的八角长幢身、层叠台座及上部华盖。经文不摹写，风化浮雕仅作轮廓概括，现代金属围栏及校园背景移除。JPEG原参考含MPO多图信息，实际生成输入为无损转存的RGB PNG。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, the Vairocana Buddha contour drawing. Match its elegant delicate slightly organic thin lines, sparse restrained detail and generous blank areas. Image 2 is SUBJECT GEOMETRY ONLY: the actual Tang dharani pillar in Songjiang, Shanghai, built in 859. Preserve this stone pillar's identifying silhouette, proportions and existing weathered parts.\nDraw the COMPLETE tall single stone dharani pillar, centered, in a near-front elevation with very little perspective, vertical shaft vertical. Its long octagonal inscribed shaft occupies the middle. Below it, a low polygonal plinth supports several sculpted round and octagonal stone lotus/wave relief bases alternating with short waist drums, and an octagonal stone miniature railing platform immediately below the tall shaft. Above the shaft, retain the actual layered carved caps, beaded rounded drum, lotus forms, small octagonal waist eave, short dragon-carved cylinder and small low polygonal cap in exactly the photo's order. Do not invent a pagoda spire, metal finial, extra pavilion or umbrella; it is a carved stone column, not a multi-storey tower. Selectively suggest weathered relief with a few contours. Do not reproduce any inscription characters.\nUse confident fine BLACK INK contours on perfectly flat opaque PURE WHITE #FFFFFF. All unmarked surfaces, inside and outside, pure white. Sparse internal lines, no filled shadows, grey shading, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow or checkerboard. Remove school buildings, trees, metal fence, modern surroundings, plants, people, wires and signage. Keep the original stone miniature railing, not the modern perimeter fence. Only a few short ground contours.\nPortrait 1024×1536 canvas. Whole pillar from top cap to bottom plinth occupies about 82% of canvas height. Balanced clear margins, top and base uncut. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. White canvas will be removed by a local script.",
+  "generated_file": "assets/generated/sh_tangchuang.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-2a143579-16d3-4bd8-827b-98326fc867c6.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "八角石幢 · 层叠雕刻",
+    "唐 · 大中十三年（859）"
+  ],
+  "historical_sources": [
+    {
+      "title": "松江区政府 · 走进松江（唐经幢）",
+      "url": "https://www.songjiang.gov.cn/zjsj/stepin.html"
+    },
+    {
+      "title": "上海市文旅推广网 · 松江唐经幢",
+      "url": "https://www.meet-in-shanghai.net/cn/national-key-cultural-relics-protection-unit/songjiang-tang-scripture-building-473465/"
+    }
+  ],
+  "visual_review": "实际查看白底原稿：完整经幢的台座、长幢身、石质华盖与顶部均未裁切；线条中性黑白，无可读文字，背景白。细部雕刻经艺术简化，不作实测或碑文摹本。",
+  "completed_at": "2026-09-18",
+  "visualReview": "pending_user",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_tangchuang-photo.jpg",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2015-03-21"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "猫猫的日记本",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "724c77ed7fda0498a7e74492e976e02c5807a69dd1b631610eebb4b6ef66cf19",
+    "seeds": []
+  }
+}

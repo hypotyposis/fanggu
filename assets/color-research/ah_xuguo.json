@@ -1,0 +1,44 @@
+{
+  "id": "ah_xuguo",
+  "name": "许国石坊",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the heritage atlas 访古. Image 1 is the LINE DRAWING TO COLOR and locks exact composition and geometry. Image 2 is the real Xu Guo Stone Archway (许国石坊) photograph for material colors only. Image 3 is STYLE SAMPLE ONLY: fine dark contours, matte mineral-gouache planes and restrained illustrated shading, never its architecture, gold palette or dark background.\nKeep Image 1's 1536x1024 framing, four front pillars and three passageways, high central roof and two flanking roofs, upright projecting pillar ends, stone imitation-timber brackets, broad blank inscription panels, stone lion supports and every margin. Do not add a rear row or change viewpoint. Fine dark lines stay legible.\nPhotographed present-day material: the entire monument is weathered grey stone with muted grey-brown variation and darker grey recesses at carved panels and brackets; the bases and lions have the same stone, slightly pale grey at edges. Roofs are carved stone, not painted tiles. No gold, bright fresh paint, sepia filter, greenery or automatic Ming dynasty blue overlay. Preserve carving selectively as in drawing; no dense invented weathering. Keep all inscription panels blank and no characters.\nBACKGROUND MUST BE FULLY OPAQUE flat PURE WHITE #FFFFFF, alpha255 over entire canvas. Do not generate transparency. Outside the monument, all three open passageways and real airy gaps between the bracket struts are white canvas, not dark filled doors. White paper will be removed by a local script afterward. No grey paper, texture, gradient, shadow, checkerboard, vignette, glow, halo or ground shadow. No sky, people, trees, shops, neighboring buildings, timestamp, labels, captions, UI, border or watermark. Whole monument uncut.",
+  "input_images": [
+    "assets/generated/ah_xuguo.png",
+    "assets/references/ah_xuguo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "material_observations": "实拍为灰色石构，表面呈灰褐风化，石狮、柱身、梁枋和石檐为同类石材；雕刻凹部深灰。不按明代线色替代石材色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:许国石坊.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/%E8%AE%B8%E5%9B%BD%E7%9F%B3%E5%9D%8A.jpg",
+      "author": "Poorjohnny",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-02-06",
+      "reference_file": "assets/references/ah_xuguo-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/ah_xuguo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-ded1-7a90-a386-0a5bf8d75eca/exec-e4bf6ca0-a443-46e3-97aa-e59b227fedd0.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "46ffd9fc4eaa8e8fd410c82c52267252fde589fcd412050819d842f3672fbe9f",
+    "seeds": [
+      [
+        304,
+        190
+      ],
+      [
+        1223,
+        190
+      ]
+    ]
+  },
+  "visual_review": "实拍核对三间四柱三楼的正立面；完整石坊四面八柱，图版只绘其中一侧，未将八柱排成一列。石狮、梁枋和仿木斗栱保留，铭文与街市背景省略。 实拍为灰色石构，表面呈灰褐风化，石狮、柱身、梁枋和石檐为同类石材；雕刻凹部深灰。不按明代线色替代石材色。 实际查看线稿与设色原件，主体完整未裁切，无文字；细节经艺术简化，不是测绘或文保色彩复原。 白底脚本去底，真实透空点已查看；用户验收待定。",
+  "completed_at": "2026-09-18"
+}

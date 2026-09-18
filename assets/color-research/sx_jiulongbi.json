@@ -1,0 +1,36 @@
+{
+  "id": "sx_jiulongbi",
+  "name": "大同九龙壁",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\nSUBJECT: 大同九龙壁 · 九龙琉璃照壁正面. Image 1 is the exact final line drawing; Image 2 is its real monument photograph; Image 3 is the style sample only.\nMATERIAL DETAILS: The glazed wall field is deep muted cobalt blue and blue-turquoise. Reading LEFT TO RIGHT: nine main dragons alternate earthy ochre-orange, dark brown, ochre-orange, pale cream-yellow, ochre-orange CENTRAL frontal dragon, pale cream-yellow, ochre-orange, dark brown, ochre-orange. Preserve this broad material distribution from the photo, not arbitrary dynasty colors. Clouds and waves carry muted greens and cream-grey. Low roof cap has green and grey-green tiles, earthy brown ridge accents. Tiered base is muted grey-brown masonry and dark green glazed details. EXACTLY NINE main dragons. Do not add a pond or fence.\nCRITICAL: full landscape 1536x1024 composition as in Image 1, same silhouette and scale, all margins retained. Background and all TRUE open-air gaps are flat opaque pure WHITE #FFFFFF. All pixels in the original must be opaque; DO NOT output alpha transparency. The style sample's dark background is NOT desired. No ground shadow or soft halo.",
+  "input_images": [
+    "assets/generated/sx_jiulongbi.png",
+    "assets/references/sx_jiulongbi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "material_observations": "实拍已查看：壁身底色深蓝与蓝绿，九龙交错呈土黄、赭橙、浅黄白和深褐，云浪有暗绿与米灰；壁顶瓦绿色、灰绿色，脊饰赭褐；须弥座以灰褐与暗绿琉璃为主。照片有日照与遮阴差异，采用克制的现存材料色，不宣称色彩复原。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:9dragonwall_Datong_Shanxi.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/9dragonwall_Datong_Shanxi.jpg",
+      "author": "Chlukoe",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "2013-06-25",
+      "reference_file": "assets/references/sx_jiulongbi-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/sx_jiulongbi.png",
+  "note": "内置imagegen白底原件，经绑定哈希的white-matte-v1处理为透明交付图；新增图版待用户验收。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-87177ceb-679d-477d-aa7f-1ccc41052708.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5f07ebe3426c6544345acfb62a0c49a610b89e2bbce4a8077aad6c012751cdd9",
+    "seeds": []
+  },
+  "visual_review": "实际查看白底原件：九条主要龙形（中央一条、两侧各四条）可辨，整壁及屋顶底座完整，无围栏、文字或倒影池。蓝绿壁底、赭橙／浅黄／深褐九龙、暗绿云浪与灰褐底座符合照片材料分区。生成图相较线稿的主体尺度略大，仍完整留白，未宣称像素配准；浮雕细节为艺术简化，待用户审图。",
+  "completed_at": "2026-09-18"
+}

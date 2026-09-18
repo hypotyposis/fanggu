@@ -1,0 +1,68 @@
+{
+  "id": "hn_songling",
+  "name": "北宋皇陵",
+  "subject": "北宋皇陵永昭陵 · 文官石像（东列南一）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/colored/drafts/hn_songling-v1.png",
+    "assets/generated/hn_songling.png",
+    "assets/references/hn_songling-photo.jpg"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the Yongzhao civil-official stone statue colored illustration TO CORRECT. Preserve composition, eroded crown, tablet, hands, robe, all contour geometry and two rectangular plinth blocks. Replace ALL unwanted translucent gray/brown background haze with perfectly flat OPAQUE PURE WHITE RGB(255,255,255) canvas. This production original must have NO transparency: RGB PNG or alpha255 EVERYWHERE. Keep the exterior completely white with no ground shadow, glow, gradient, dark backdrop or paper texture. Simplify the excessive fake mosaic surface mottling to quiet mostly pale warm-gray stone planes with a FEW sparse subdued ochre weathering patches; no gold or painted flesh. Fine elegant contour lines and modest matte mineral gouache, not realistic dense pitting. Image2 approved linework geometry, Image3 the actual weathered stone sculpture only for material colors. Entire original1024x1536 subject and margins, no changes to pose or repaired broken details.",
+  "material_observations": [
+    "现存石灰岩主体灰白、浅米灰，表面有低饱和赭黄风化色和深灰裂隙。",
+    "石冠、长袍、执笏和两段底座同属石质，不绘金身或肤色。"
+  ],
+  "references": [
+    {
+      "reference_file": "assets/references/hn_songling-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250809_Yongzhao_Mausoleum_30.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/20250809_Yongzhao_Mausoleum_30.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2025-08-09",
+      "note": "来源页标明文官石像（东列南一），实际查看。"
+    }
+  ],
+  "original_research": "assets/research/hn_songling.json",
+  "output": "assets/colored/hn_songling.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-312fb37e-6c52-4ff8-bf62-a8dad92439c6.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "completed_at": "2026-09-18",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
+    "seeds": []
+  },
+  "visual_review": "已查看重试白底原件。现状残损冠顶、执笏、垂袖与两段石座完整，材质灰米石质并有淡赭风化色；纹理为艺术概括，非实测裂隙记录。首稿含透明灰雾拒绝交付，重试取得纯白原件。用户尚未验收。",
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject observations: ONLY the single civil official stone statue and its two rectangular stone pedestal blocks from Image1, the eastern southernmost civil official at Yongzhao Mausoleum. Photo2 shows the current weathered stone: mostly pale warm gray/light beige, scattered subdued ochre mineral/weathering remnants, dark gray fissures. It is a solid STONE sculpture, never gold or painted flesh. Preserve eroded tall crown, rounded shoulders, hands holding long narrow tablet, hanging sleeves, straight long robe and coarse worn surface without reconstructing facial details. Keep stone plinth solid, not transparent, and no grass or railings. Use sparse understated surface indications rather than realistic dense pitting. Last sample is technique only. ABSOLUTELY OPAQUE WHITE PAPER BACKGROUND #FFFFFF, RGB PNG with alpha255 EVERYWHERE including exterior canvas, no transparency, gray haze, shadows or glow. Entire existing1024x1536 composition unchanged.",
+      "input_images": [
+        "assets/generated/hn_songling.png",
+        "assets/references/hn_songling-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-3c14d543-4e30-47a9-b8a5-ce9fc4dffd31.png",
+      "saved_file": "assets/colored/drafts/hn_songling-v1.png",
+      "status": "rejected",
+      "reason": "透明灰雾且表面点状纹理过密，非白底原件。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image1 is the Yongzhao civil-official stone statue colored illustration TO CORRECT. Preserve composition, eroded crown, tablet, hands, robe, all contour geometry and two rectangular plinth blocks. Replace ALL unwanted translucent gray/brown background haze with perfectly flat OPAQUE PURE WHITE RGB(255,255,255) canvas. This production original must have NO transparency: RGB PNG or alpha255 EVERYWHERE. Keep the exterior completely white with no ground shadow, glow, gradient, dark backdrop or paper texture. Simplify the excessive fake mosaic surface mottling to quiet mostly pale warm-gray stone planes with a FEW sparse subdued ochre weathering patches; no gold or painted flesh. Fine elegant contour lines and modest matte mineral gouache, not realistic dense pitting. Image2 approved linework geometry, Image3 the actual weathered stone sculpture only for material colors. Entire original1024x1536 subject and margins, no changes to pose or repaired broken details.",
+      "input_images": [
+        "assets/colored/drafts/hn_songling-v1.png",
+        "assets/generated/hn_songling.png",
+        "assets/references/hn_songling-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-9698-7981-9635-aa29fbd2225a/exec-312fb37e-6c52-4ff8-bf62-a8dad92439c6.png",
+      "status": "accepted_white_source",
+      "method": "white-background-then-script"
+    }
+  ]
+}

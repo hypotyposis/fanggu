@@ -60,7 +60,7 @@ python3 -m http.server 8765
 | `dyn`、`tag`、`era`、`year` | `dyn` 指向 `DYN`；文字说明断代，`year` 用于排序和年表定位 |
 | `yearLabel`、`yearApprox`、`yearNote` | 范围、约值及解释；不以精确排序点伪装精确史实 |
 | `place`、`placeKey` | 展示地点，以及指向 `PLACES.key` 的关联 |
-| `types` | 使用 `catalog.js` 已注册的类型键；复合条目可有多个类型 |
+| `types` | 使用 `catalog.js` 已注册的类型键；复合条目可有多个类型。装饰性照壁使用 `screen`，不归为 `wall` 城墙城防；新增类型须同步搜索别名及筛选检查 |
 | `lede`、`facts`、`caption` | 简介、正文和两项图注；限定清楚所绘主体 |
 | `initialStatus` | 默认省略或 `unvisited`；用户指定才用 `visited` / `wishlist` |
 | `legacyNames`、`legacyPlaces` | 搜索及旧登记迁移的别名；地点不能宽泛到误关联同名古迹 |
