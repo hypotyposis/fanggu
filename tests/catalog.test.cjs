@@ -13,8 +13,10 @@ additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshod
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
 additions.push(...northernExpansion.ids, 'sd_pizhi');
-test('all 201 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 201); assert.equal(new Set(SITES.map(s => s.id )).size, 201);
+const anhuiExpansion = JSON.parse(read('assets/research/anhui-batch.json'));
+additions.push(...anhuiExpansion.ids);
+test('all 204 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 204); assert.equal(new Set(SITES.map(s => s.id )).size, 204);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -80,4 +82,28 @@ test('Japanese temple subjects use their surviving construction dates and Japane
   }
   assert(SITES.find(site => site.id === 'horyuji').yearApprox);
   assert(SITES.find(site => site.id === 'toshodaiji').yearApprox);
+});
+
+test('Anhui subjects have dated research and complete queued line/color deliveries', () => {
+  assert.equal(anhuiExpansion.ids.length, 3);
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  assert.equal(queue.count, queue.entries.length);
+  for (const id of anhuiExpansion.ids) {
+    const site = SITES.find(site => site.id === id);
+    assert.equal(site.initialStatus, 'unvisited');
+    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, '安徽');
+    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      assert.equal(meta.status, 'complete');
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+    }
+    const research = JSON.parse(read(`assets/research/${id}.json`));
+    assert(research.historical_sources.length > 0);
+    assert(research.historical_sources.every(source => /^https:\/\//.test(source.url)));
+  }
+  assert.equal(SITES.find(site => site.id === 'ah_xuguo').year, 1584);
+  assert.equal(SITES.find(site => site.id === 'ah_huaxilou').year, 1676);
+  assert.equal(SITES.find(site => site.id === 'ah_huaxilou').types[0], 'stage');
+  assert.equal(SITES.find(site => site.id === 'ah_zhenfeng').yearApprox, true);
 });

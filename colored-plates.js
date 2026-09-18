@@ -4426,6 +4426,78 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "ah_xuguo": {
+    "src": "assets/colored-transparent-avif/ah_xuguo.avif",
+    "originalSrc": "assets/colored/ah_xuguo.png",
+    "transparentSrc": "assets/colored-transparent/ah_xuguo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "许国石坊 · 一侧正立面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/ah_xuguo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:许国石坊.jpg",
+        "author": "Poorjohnny",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-02-06"
+      }
+    ]
+  },
+  "ah_zhenfeng": {
+    "src": "assets/colored-transparent-avif/ah_zhenfeng.avif",
+    "originalSrc": "assets/colored/ah_zhenfeng.png",
+    "transparentSrc": "assets/colored-transparent/ah_zhenfeng.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "振风塔 · 七层八角塔身与底层附檐 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/ah_zhenfeng.json",
+    "references": [
+      {
+        "page": "https://you.ctrip.com/travels/Anqing179/4082790.html",
+        "author": "想要去环游全世界",
+        "license": "未声明开放许可，摄影版权归作者；仅作研究及生成参考",
+        "date": "2022-11（游记出发月份；单张拍摄日未知）"
+      },
+      {
+        "page": "https://you.ctrip.com/travels/Anqing179/4082790.html",
+        "author": "想要去环游全世界",
+        "license": "未声明开放许可，摄影版权归作者；仅作研究及生成参考",
+        "date": "2022-11（游记出发月份；单张拍摄日未知）"
+      }
+    ]
+  },
+  "ah_huaxilou": {
+    "src": "assets/colored-transparent-avif/ah_huaxilou.avif",
+    "originalSrc": "assets/colored/ah_huaxilou.png",
+    "transparentSrc": "assets/colored-transparent/ah_huaxilou.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "花戏楼 · 院内中央戏台 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/ah_huaxilou.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:花戏楼_舞台建筑1.jpg",
+        "author": "三猎",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-06-24"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:花戏楼_舞台建筑3.jpg",
+        "author": "三猎",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-06-24"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

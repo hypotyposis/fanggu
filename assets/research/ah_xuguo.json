@@ -1,0 +1,78 @@
+{
+  "id": "ah_xuguo",
+  "subject": "许国石坊 · 一侧正立面",
+  "source_page": "https://commons.wikimedia.org/wiki/File:许国石坊.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/%E8%AE%B8%E5%9B%BD%E7%9F%B3%E5%9D%8A.jpg",
+  "author": "Poorjohnny",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ah_xuguo-photo.jpg"
+  ],
+  "source_note": "实拍核对三间四柱三楼的正立面；完整石坊四面八柱，图版只绘其中一侧，未将八柱排成一列。石狮、梁枋和仿木斗栱保留，铭文与街市背景省略。",
+  "prompt": "Correct this architectural line plate into BLACK INK ON OPAQUE PURE WHITE PAPER. Keep the same four-column three-passage Xu Guo Stone Archway front facade, stone eaves, lion supports, proportions, blank inscription panels and 1536x1024 framing. Every pixel outside the black and neutral grey antialiased ink strokes MUST be opaque RGB (255,255,255), including all inner white surfaces and passage openings. Output a fully OPAQUE PNG, alpha 255 everywhere. Do not output transparency. Remove all grey cloudy shading, surface fills and halo: use thin clear black contours only, sparse selected relief outlines and a few ground lines. No texture, gradient, shadows, black background, checkerboard, text or captions. Flat WHITE canvas corner to corner.",
+  "generated_file": "assets/generated/ah_xuguo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-ded1-7a90-a386-0a5bf8d75eca/exec-31c28c84-3945-42e7-b967-2555afbe8726.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "许国石坊 · 一侧正立面",
+    "明 · 1584 · 四面八柱石坊"
+  ],
+  "historical_sources": [
+    {
+      "title": "黄山市人民政府 · 徽派建筑经典",
+      "url": "https://www.huangshan.gov.cn/zjhs/rwhz/hpjz/8294051.html"
+    },
+    {
+      "title": "黄山市人民政府 · 徽文化研学（许国石坊1584年与四面八柱形制）",
+      "url": "https://www.huangshan.gov.cn/zwgk/public/6615714/11221465.html"
+    }
+  ],
+  "coordinates": {
+    "lat": 29.867639,
+    "lng": 118.430556,
+    "source": "Wikimedia Commons分类页所列29°52′03.5″N,118°25′50″E，供歙县地图展示点参考，非测绘成果。",
+    "url": "https://commons.wikimedia.org/wiki/Category:Xu_Guo%27s_Stone_Paifang"
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER ONLY: match its elegant, delicate, slightly organic thin black contours, restrained detail, generous blank areas and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: Xu Guo Stone Archway (许国石坊), Shexian, Anhui, built 1584. Draw this photographed FRONT facade, not a generic paifang: four tall square stone pillars define three passages; the central entablature and roof stand higher than the two flanking ones, with projecting stone imitation-timber brackets, upright pillar ends continuing above the small stone roofs, broad carved stone panels and paired carved lion supports at pillar bases. The complete monument is eight-pillared and four-sided in plan; this plate depicts its front facade with four visible front pillars, not eight pillars in one row. Keep the photographed distinctive rather flat stone eaves, beam proportions and restrained selective carving. No invented tiled pavilion roof or extra storeys.\nCreate a refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. All unmarked surfaces inside and outside the drawing remain pure white. Use outlines rather than filled black passageways. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script.\nShow the whole facade centered, approximately straight-on at facade level, verticals vertical, minimal perspective. Landscape 1536x1024. Monument occupies about 80% canvas width with breathing room above the top pillar ends and below the bases; every edge uncut. Remove the tourists, shops, nearby houses, tree, sky, timestamp and all signage. Use only a few short ground lines. Preserve ornament selectively; leave ALL inscription panels blank, no characters, labels, captions, lettering, watermark, frame or border.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ah_xuguo-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-ded1-7a90-a386-0a5bf8d75eca/exec-7f1800fc-2c11-4330-9802-748358004c35.png",
+      "status": "rejected",
+      "reason": "带灰色光晕且未生成白底"
+    },
+    {
+      "prompt": "Correct this architectural line plate into BLACK INK ON OPAQUE PURE WHITE PAPER. Keep the same four-column three-passage Xu Guo Stone Archway front facade, stone eaves, lion supports, proportions, blank inscription panels and 1536x1024 framing. Every pixel outside the black and neutral grey antialiased ink strokes MUST be opaque RGB (255,255,255), including all inner white surfaces and passage openings. Output a fully OPAQUE PNG, alpha 255 everywhere. Do not output transparency. Remove all grey cloudy shading, surface fills and halo: use thin clear black contours only, sparse selected relief outlines and a few ground lines. No texture, gradient, shadows, black background, checkerboard, text or captions. Flat WHITE canvas corner to corner.",
+      "reference_files": [
+        "assets/generated/ah_xuguo-alpha-candidate.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-ded1-7a90-a386-0a5bf8d75eca/exec-31c28c84-3945-42e7-b967-2555afbe8726.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "status": "complete",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "281b13c915de36fa27f354da1dc822b8a9e97be91d387673a0469b8e184a897d",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实拍核对三间四柱三楼的正立面；完整石坊四面八柱，图版只绘其中一侧，未将八柱排成一列。石狮、梁枋和仿木斗栱保留，铭文与街市背景省略。",
+      "实际查看线稿与设色原件，主体完整未裁切，无文字；细节经艺术简化，不是测绘或文保色彩复原。"
+    ],
+    "visualReview": "pending_user"
+  },
+  "additional_sources": []
+}

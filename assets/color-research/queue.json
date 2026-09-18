@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 198,
+  "count": 201,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -4493,6 +4493,55 @@
       ],
       "output": "assets/colored/sd_pizhi.png",
       "record": "assets/color-research/sd_pizhi.json"
+    },
+    {
+      "id": "ah_xuguo",
+      "name": "许国石坊",
+      "subject": "许国石坊 · 一侧正立面",
+      "line": "assets/generated/ah_xuguo.png",
+      "displayLine": "assets/plates/ah_xuguo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/ah_xuguo.json",
+      "candidateReferences": [
+        "assets/references/ah_xuguo-photo.jpg"
+      ],
+      "output": "assets/colored/ah_xuguo.png",
+      "record": "assets/color-research/ah_xuguo.json"
+    },
+    {
+      "id": "ah_zhenfeng",
+      "name": "安庆振风塔",
+      "subject": "振风塔 · 七层八角塔身与底层附檐",
+      "line": "assets/generated/ah_zhenfeng.png",
+      "displayLine": "assets/plates/ah_zhenfeng.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ah_zhenfeng.json",
+      "candidateReferences": [
+        "assets/references/ah_zhenfeng-2022-photo.jpg",
+        "assets/references/ah_zhenfeng-2022b-photo.jpg",
+        "assets/references/ah_zhenfeng-2022c-photo.jpg",
+        "assets/references/ah_zhenfeng-photo.jpg"
+      ],
+      "output": "assets/colored/ah_zhenfeng.png",
+      "record": "assets/color-research/ah_zhenfeng.json"
+    },
+    {
+      "id": "ah_huaxilou",
+      "name": "亳州花戏楼",
+      "subject": "花戏楼 · 院内中央戏台",
+      "line": "assets/generated/ah_huaxilou.png",
+      "displayLine": "assets/plates/ah_huaxilou.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/ah_huaxilou.json",
+      "candidateReferences": [
+        "assets/references/ah_huaxilou-photo.jpg",
+        "assets/references/ah_huaxilou-side-photo.jpg"
+      ],
+      "output": "assets/colored/ah_huaxilou.png",
+      "record": "assets/color-research/ah_huaxilou.json"
     }
   ]
 }

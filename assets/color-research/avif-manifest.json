@@ -8789,6 +8789,221 @@
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
+    "ah_xuguo": {
+      "source": "assets/colored/ah_xuguo.png",
+      "sourceSha256": "46ffd9fc4eaa8e8fd410c82c52267252fde589fcd412050819d842f3672fbe9f",
+      "sourceBytes": 2000626,
+      "input": "assets/colored-transparent/ah_xuguo.png",
+      "inputSha256": "357191fd352e0a90bf941384f130bf3b21e5d95162acf2062cef4f081b406203",
+      "inputBytes": 1872331,
+      "src": "assets/colored-transparent-avif/ah_xuguo.avif",
+      "sha256": "2da9882e1f8467eb4b6810881761536df4dd3afae61ec8915297b8339ae89f96",
+      "bytes": 211026,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 958344,
+        "opaquePixels": 599627,
+        "meanError": 0.011082331339518229,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [
+          [
+            304,
+            190
+          ],
+          [
+            1223,
+            190
+          ]
+        ],
+        "edgeDecontaminatedPixels": 7021,
+        "transparentPixels": 962598,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.744,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "46ffd9fc4eaa8e8fd410c82c52267252fde589fcd412050819d842f3672fbe9f",
+        "seeds": [
+          [
+            304,
+            190
+          ],
+          [
+            1223,
+            190
+          ]
+        ],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "ah_zhenfeng": {
+      "source": "assets/colored/ah_zhenfeng.png",
+      "sourceSha256": "1014965af9657683530eafe8d67d55f32f5c621e9e19270fe61af6f333231c90",
+      "sourceBytes": 1586788,
+      "input": "assets/colored-transparent/ah_zhenfeng.png",
+      "inputSha256": "1564165f355ae7f241d163497a3751831a9bbb8a87725c06833cb87d17ac707a",
+      "inputBytes": 1483115,
+      "src": "assets/colored-transparent-avif/ah_zhenfeng.avif",
+      "sha256": "041045b9d378a805df70f5b5dc993ee156932da0f0d5080b2ff46a6dbcb51fd9",
+      "bytes": 131897,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1169493,
+        "opaquePixels": 390876,
+        "meanError": 0.009710947672526041,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [
+          [
+            472,
+            244
+          ],
+          [
+            552,
+            244
+          ]
+        ],
+        "edgeDecontaminatedPixels": 5261,
+        "transparentPixels": 1173493,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.767,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "1014965af9657683530eafe8d67d55f32f5c621e9e19270fe61af6f333231c90",
+        "seeds": [
+          [
+            472,
+            244
+          ],
+          [
+            552,
+            244
+          ]
+        ],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "ah_huaxilou": {
+      "source": "assets/colored/ah_huaxilou.png",
+      "sourceSha256": "4bd098a019d3152c260af950000cd9e00de9c91f9bd08ddb162342d9b37ea3cb",
+      "sourceBytes": 2113796,
+      "input": "assets/colored-transparent/ah_huaxilou.png",
+      "inputSha256": "2ef290de3bc61f034c2fce7ea3b17819fc0c3d3d63461119ffc645330b4e469d",
+      "inputBytes": 2119703,
+      "src": "assets/colored-transparent-avif/ah_huaxilou.avif",
+      "sha256": "ba134c3c75f9f0f52d14a3029ed0c9b4ca77a2d441135f7234978ce9c51f7d07",
+      "bytes": 272904,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 864263,
+        "opaquePixels": 689425,
+        "meanError": 0.014666239420572916,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [
+          [
+            365,
+            575
+          ],
+          [
+            1155,
+            575
+          ],
+          [
+            366,
+            859
+          ],
+          [
+            1170,
+            859
+          ],
+          [
+            482,
+            880
+          ],
+          [
+            1049,
+            880
+          ]
+        ],
+        "edgeDecontaminatedPixels": 8345,
+        "transparentPixels": 870360,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.245,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "4bd098a019d3152c260af950000cd9e00de9c91f9bd08ddb162342d9b37ea3cb",
+        "seeds": [
+          [
+            365,
+            575
+          ],
+          [
+            1155,
+            575
+          ],
+          [
+            366,
+            859
+          ],
+          [
+            1170,
+            859
+          ],
+          [
+            482,
+            880
+          ],
+          [
+            1049,
+            880
+          ]
+        ],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

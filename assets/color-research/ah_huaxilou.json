@@ -1,0 +1,70 @@
+{
+  "id": "ah_huaxilou",
+  "name": "亳州花戏楼",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE colored companion plate for heritage atlas 访古. Image 1 is the exact LINE DRAWING TO COLOR: preserve its 1536x1024 canvas, silhouette, scale, four front columns defining three bays, raised central theatre platform, central passage beneath platform, railings, carved brackets and pendant lotus forms, single hip-and-gable roof, decorated ridge and all original margins. Images2 and3 are photographs of the actual central Huaxilou opera-stage pavilion in Bozhou for CURRENT MATERIAL COLORS ONLY. Image4 is STYLE SAMPLE ONLY: fine dark contours, matte mineral-gouache color planes and subtle pigment texture, never its golden palette, architecture or black backdrop.\nObserved colors: columns are weathered muted vermilion red, the roof tiles and ridge ornament show pale muted turquoise green glaze with ochre brown/gold accents, roof ridge motifs have red-brown remnants, carved timber hanging brackets are pale aged grey-beige with dark grey-brown recesses, small painted motifs are faded teal and ochre red. Front balustrade has pale teal green carved inserts within faded red-brown wooden frames. The interior is a dim recessed stage, deep neutral brown with restrained faded multicolor ceiling panels. Preserve dark interior as solid painted backdrop, NOT transparent space. Beneath the raised platform, the central walk-through passage really is open air and should be PURE WHITE canvas; retain opaque columns, platform beam, balustrade and structural ornament around it. Do not put green tree foliage into the drawing. No sepia filter, automatic dynasty-blue, uniform gold or shiny restored paint. Selective details, fine legible contour lines, at most two or three illustrated shadow values; not photographic.\nBACKGROUND MUST BE fully OPAQUE perfectly flat PURE WHITE #FFFFFF, alpha255 everywhere, NOT transparent. All exterior canvas, actual open gap under the stage and real airy gaps between hanging ornaments must be white. Keep actual pale ornament material colored grey-beige and clearly outlined so it is not confused with white canvas. White paper will be removed by a local script. No grey texture, paper grain, gradient, checkerboard, vignette, glow, halo, ground shadow or scene. Keep every plaque and column board blank. No text, calligraphy, people, plants, sky, courtyard galleries, modern fixtures, captions, labels, UI, border or watermark. Whole roof tip and base uncut.",
+  "input_images": [
+    "assets/generated/ah_huaxilou.png",
+    "assets/references/ah_huaxilou-photo.jpg",
+    "assets/references/ah_huaxilou-side-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "material_observations": "红漆柱呈旧朱红，屋面与琉璃脊饰浅青绿夹赭黄红褐；木雕挂落灰白米色，栏杆雕件青绿、框架红褐，舞台内深灰褐。舞台内暗部保留，台下通道与两侧实际透空处去底。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:花戏楼_舞台建筑1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/%E8%8A%B1%E6%88%8F%E6%A5%BC_%E8%88%9E%E5%8F%B0%E5%BB%BA%E7%AD%911.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-06-24",
+      "reference_file": "assets/references/ah_huaxilou-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:花戏楼_舞台建筑3.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/%E8%8A%B1%E6%88%8F%E6%A5%BC_%E8%88%9E%E5%8F%B0%E5%BB%BA%E7%AD%913.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2016-06-24",
+      "reference_file": "assets/references/ah_huaxilou-side-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/ah_huaxilou.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-ded1-7a90-a386-0a5bf8d75eca/exec-ba6d5c74-ec23-4ae2-a501-2aa40782ac48.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4bd098a019d3152c260af950000cd9e00de9c91f9bd08ddb162342d9b37ea3cb",
+    "seeds": [
+      [
+        365,
+        575
+      ],
+      [
+        1155,
+        575
+      ],
+      [
+        366,
+        859
+      ],
+      [
+        1170,
+        859
+      ],
+      [
+        482,
+        880
+      ],
+      [
+        1049,
+        880
+      ]
+    ]
+  },
+  "visual_review": "三猎2016年实拍两角度；图版只绘院内中央戏台与台下通道，保留四根前柱、栏杆、挂落与琉璃屋脊，省略左右看楼、铭文与树木。主体是1676年增建戏台，不是1656年始建关帝庙的砖雕山门。 红漆柱呈旧朱红，屋面与琉璃脊饰浅青绿夹赭黄红褐；木雕挂落灰白米色，栏杆雕件青绿、框架红褐，舞台内深灰褐。舞台内暗部保留，台下通道与两侧实际透空处去底。 实际查看线稿与设色原件，主体完整未裁切，无文字；细节经艺术简化，不是测绘或文保色彩复原。 白底脚本去底，真实透空点已查看；用户验收待定。 深色浏览器复核发现台下前后柱之间另有两处封闭白色透空，按实际原件与照片追加种子（482,880）、（1049,880），保留其余浅色柱础。",
+  "completed_at": "2026-09-18"
+}

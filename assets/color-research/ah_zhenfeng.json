@@ -1,0 +1,54 @@
+{
+  "id": "ah_zhenfeng",
+  "name": "安庆振风塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE colored companion plate for heritage atlas 访古. Image1 is the exact LINE DRAWING TO COLOR: lock its portrait1024x1536 canvas, full uncut framing, seven octagonal wall storeys, six thin intermediate masonry eave bands, pierced balustrades, arched openings, broad single continuous octagonal base-skirt roof, steep octagonal top cap, slender segmented finial and fine support chains. Do not create extra roofs or change viewpoint. Images2 and3 are 2022 photographs of the REAL Zhenfeng Pagoda (振风塔) in Anqing for current material colors only. Image4 is STYLE SAMPLE ONLY: fine dark contours, restrained matte mineral-gouache planes and subtle subject pigment grain, never its architecture, warm-gold palette or black backdrop.\nPresent-day observed material distribution: tower wall belts and balustrades are pale slightly warm white/light-grey masonry with muted grey weathering; tiny window recesses dark neutral grey. Thin intermediate eave/cornice bands, masonry bracket recesses, steep top cap and the wide bottom skirt roof are deep charcoal/slate grey. The long segmented finial is muted red/magenta-red as in recent photo, its short supporting pedestal near the roof apex is ochre yellow. Finial chains dark grey and thin. Preserve white masonry as OPAQUE material with clear contours and slight pale grey tone, never remove it as canvas; only actual exterior sky and open sky spaces between chains are flat pure white. Do not use 2008 dark finial color. No automatic Ming blue, no gold tint to walls, no reconstruction or dramatic lighting. Keep only fine illustrated detail and two or three restrained shadow values, not photorealism; no dense fake weathering.\nBACKGROUND MUST be fully OPAQUE perfectly flat PURE WHITE #FFFFFF paper alpha255 everywhere, NOT transparent. All exterior canvas and actual gaps beside chains and around the subject white. A local script removes white canvas afterward. Keep material-white tower walls slightly grey and completely enclosed by thin lines so the white background removal can preserve them. No grey backdrop, paper grain, gradient, checkerboard, vignette, glow, halo or ground shadow. Keep all plaques blank, no Chinese characters. No trees, people, river, sky scene, foreground hall, neighboring buildings, fixtures, calligraphy, text, labels, captions, UI, frame, border or watermark. Preserve complete apex and base.",
+  "input_images": [
+    "assets/generated/ah_zhenfeng.png",
+    "assets/references/ah_zhenfeng-2022c-photo.jpg",
+    "assets/references/ah_zhenfeng-2022b-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "material_observations": "2022照片塔墙与栏杆浅白灰，檐带、构件凹部和塔顶屋面深灰，红色分节塔刹下设黄赭色底座，铁链深灰。2008照片塔刹深色，与近照不同，采用近照现状。",
+  "references": [
+    {
+      "source_page": "https://you.ctrip.com/travels/Anqing179/4082790.html",
+      "image_url": "https://dimg04.c-ctrip.com/images/0104b12000a7tc9e3FA0A_W_640_0_Q90.jpg?proc=autoorient",
+      "author": "想要去环游全世界",
+      "license": "未声明开放许可，摄影版权归作者；仅作研究及生成参考",
+      "license_url": "",
+      "date": "2022-11（游记出发月份；单张拍摄日未知）",
+      "reference_file": "assets/references/ah_zhenfeng-2022c-photo.jpg"
+    },
+    {
+      "source_page": "https://you.ctrip.com/travels/Anqing179/4082790.html",
+      "image_url": "https://dimg04.c-ctrip.com/images/0104r12000a7t9isd5B9E_W_640_0_Q90.jpg?proc=autoorient",
+      "author": "想要去环游全世界",
+      "license": "未声明开放许可，摄影版权归作者；仅作研究及生成参考",
+      "license_url": "",
+      "date": "2022-11（游记出发月份；单张拍摄日未知）",
+      "reference_file": "assets/references/ah_zhenfeng-2022b-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/ah_zhenfeng.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-ded1-7a90-a386-0a5bf8d75eca/exec-0b4a1f28-6b8a-4989-b03b-f763fca9a89c.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1014965af9657683530eafe8d67d55f32f5c621e9e19270fe61af6f333231c90",
+    "seeds": [
+      [
+        472,
+        244
+      ],
+      [
+        552,
+        244
+      ]
+    ]
+  },
+  "visual_review": "2022年近正面与航拍照片核对七层塔身、底层八角附檐和红色塔刹；2008年旧照仅补核券洞与砖石构件，前景殿顶遮挡塔下部，不作为底层形制与塔刹颜色主依据。由航拍转译为立面视角，非实测图。 2022照片塔墙与栏杆浅白灰，檐带、构件凹部和塔顶屋面深灰，红色分节塔刹下设黄赭色底座，铁链深灰。2008照片塔刹深色，与近照不同，采用近照现状。 实际查看线稿与设色原件，主体完整未裁切，无文字；细节经艺术简化，不是测绘或文保色彩复原。 白底脚本去底，真实透空点已查看；用户验收待定。",
+  "completed_at": "2026-09-18"
+}
