@@ -1,0 +1,61 @@
+{
+  "id": "sh_zhenru",
+  "subject": "真如寺大殿 · 三间单檐歇山 · 元代木构",
+  "status": "complete",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_zhenru-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_zhenru-photo.jpg"
+  ],
+  "source_note": "正面照片用于三间四柱、中央格扇门、两侧曲顶窗及单檐歇山轮廓。照片中的新塔、两侧廊屋、植物和香炉全部移除，遮挡处按对称立面概括；1320年对应殿内题记，1963年修缮恢复单檐另记。",
+  "prompt": "Use case: style-transfer. Asset type: fine architectural line illustration for 访古.\nImage 1 is the Vairocana LINE STYLE ONLY. Image 2 is SUBJECT GEOMETRY ONLY, the actual Yuan main hall of Zhenru Temple in Shanghai, built in 1320 and repaired in the modern era.\nMake a refined sparse BLACK INK line drawing on a completely flat opaque PURE WHITE #FFFFFF background. No grey surface fills anywhere. All blank areas inside and outside are white.\nDraw only the foreground three-bay single-eaved hip-and-gable main hall in Image 2, whole building seen approximately straight-on, centered. Keep its steeply curled chiwen at the two ends of the straight main ridge, single large grey-tiled roof silhouette, broad eaves, four front columns defining exactly three bays, wide central lattice-panel door group and matching curved-top barred openings in both outer bays, and a plain low stone foundation with short central steps. Preserve the photographed hall, not a generic large temple. Remove the newer tall pagoda visible BEHIND the hall completely, and remove both side galleries, incense burner, plants, people, signs and all lettering on plaque and columns. Show the hall's own columns and facade unobstructed, based on the symmetrical bay structure; no added pavilion, second eave or balustrade.\nFine confident slightly organic contours matching Image 1. Restrained selected tile marks and bracket lines; much open white, no uniform dense tile pattern, dark fills, shadows, tonal shading, hatching, grain, paper texture, gradient, color, glow, ground shadow or checkerboard.\nLandscape 1536×1024, full roof tips and low base uncut, the building occupies about 82% canvas width, balanced margins. All unmarked surfaces uniform white. No labels, text, calligraphy, dimensions, watermark, border or frame. White canvas will be removed later by script.",
+  "generated_file": "assets/generated/sh_zhenru.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-9a9d82a8-6c66-4452-86f4-b39291b36f51.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "大殿正立面 · 面阔三间",
+    "元 · 延祐七年（1320）"
+  ],
+  "historical_sources": [
+    {
+      "title": "普陀区政府 · 走进真如寺，探秘大殿的建筑密码",
+      "url": "https://www.shpt.gov.cn/tupianxinwen/20250416/958655.html"
+    },
+    {
+      "title": "普陀区政府 · 真如寺大殿与古银杏",
+      "url": "https://www.shpt.gov.cn/bm-ms/20251203/965629.html"
+    }
+  ],
+  "visual_review": "实际查看白底原稿：三间四柱、单檐及两端鸱吻均清楚，中央门扇及两侧开窗保留；未混入殿后新塔和侧廊，屋角与台基未裁切，无文字。前立面转译不作测绘，新增交付待用户审阅。",
+  "completed_at": "2026-09-18",
+  "visualReview": "pending_user",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zhenrusi_Dadian.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Zhenrusi_Dadian.JPG/960px-Zhenrusi_Dadian.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Zhenrusi_Dadian.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_zhenru-photo.jpg",
+      "author": "Fayhoo",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2016-01-23"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Zhenrusi_Dadian.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Zhenrusi_Dadian.JPG/960px-Zhenrusi_Dadian.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+  "author": "Fayhoo",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "33aa35806c3fcf1e7a66067432b48f53e7b4c5bca9f6d5824fe9e50b52f6d3d0",
+    "seeds": []
+  }
+}

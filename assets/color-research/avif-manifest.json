@@ -8789,24 +8789,24 @@
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
-    "hn_miaole": {
-      "source": "assets/colored/hn_miaole.png",
-      "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
-      "sourceBytes": 1828667,
-      "input": "assets/colored-transparent/hn_miaole.png",
-      "inputSha256": "39f54ef7ee4c61b0a2a6b1e4aaa03ad49f34a1d3f9019594264bef03994903ed",
-      "inputBytes": 1753797,
-      "src": "assets/colored-transparent-avif/hn_miaole.avif",
-      "sha256": "03e4baca064fbd267cba6c894e03af7e88134f591a2869e5511e7a8cb98d0d7a",
-      "bytes": 178809,
+    "sh_tangchuang": {
+      "source": "assets/colored/sh_tangchuang.png",
+      "sourceSha256": "86cf27c5baa2ed84b066764c7a628dd6d74c040a794da0ed8d69fe7ab5896a70",
+      "sourceBytes": 1400418,
+      "input": "assets/colored-transparent/sh_tangchuang.png",
+      "inputSha256": "e7f3227678aac2a1ecb26bd63a584438e16e459b590bbdfb1ff6b946de0cba86",
+      "inputBytes": 1294241,
+      "src": "assets/colored-transparent-avif/sh_tangchuang.avif",
+      "sha256": "ddd11c6f4aeccbba4905e38b4bc5c4894672b69b947217bfe99986a387e2edf5",
+      "bytes": 106361,
       "width": 1024,
       "height": 1536,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 1110649,
-        "opaquePixels": 448020,
-        "meanError": 0.011288324991861979,
+        "transparentPixels": 1324257,
+        "opaquePixels": 237800,
+        "meanError": 0.008563995361328125,
         "maxError": 14
       },
       "extraction": {
@@ -8819,55 +8819,276 @@
         "tolerancePerChannel": 12,
         "backgroundSeeds": [
           [
-            465,
-            229
+            520,
+            882
           ],
           [
-            559,
-            260
+            593,
+            888
+          ],
+          [
+            465,
+            883
+          ],
+          [
+            477,
+            883
+          ],
+          [
+            432,
+            887
+          ],
+          [
+            570,
+            885
+          ],
+          [
+            406,
+            894
           ]
         ],
-        "edgeDecontaminatedPixels": 5718,
-        "transparentPixels": 1115617,
+        "edgeDecontaminatedPixels": 4373,
+        "transparentPixels": 1327724,
         "rgbUnchanged": false,
         "interiorRgbUnchanged": true
       },
       "visualReview": "pending_user",
-      "processingSeconds": 2.235,
+      "processingSeconds": 2.26,
       "backgroundPreparation": {
         "method": "white-matte-v1",
-        "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+        "sourceSha256": "86cf27c5baa2ed84b066764c7a628dd6d74c040a794da0ed8d69fe7ab5896a70",
         "seeds": [
           [
-            465,
-            229
+            520,
+            882
           ],
           [
-            559,
-            260
+            593,
+            888
+          ],
+          [
+            465,
+            883
+          ],
+          [
+            477,
+            883
+          ],
+          [
+            432,
+            887
+          ],
+          [
+            570,
+            885
+          ],
+          [
+            406,
+            894
           ]
         ],
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
-    "hn_fawang": {
-      "source": "assets/colored/hn_fawang.png",
-      "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
-      "sourceBytes": 2003663,
-      "input": "assets/colored-transparent/hn_fawang.png",
-      "inputSha256": "cb7a9ec7d26255a2fae4116b19f64902d5dcada2006caea93c61721b6d240602",
-      "inputBytes": 1781030,
-      "src": "assets/colored-transparent-avif/hn_fawang.avif",
-      "sha256": "1d37474bb63f3a0f2fd1e412506450460f68013bba7b459c44281394ff0445d1",
-      "bytes": 193111,
+    "sh_longhuata": {
+      "source": "assets/colored/sh_longhuata.png",
+      "sourceSha256": "401c894b7b83a71b130041d1ec64b23e44e7e358b4108a6936e35fcc8b8ec0a6",
+      "sourceBytes": 1844569,
+      "input": "assets/colored-transparent/sh_longhuata.png",
+      "inputSha256": "672e29b3ee3ac575a22bf8dbff8d24278425ca404441f0b191a0f0f52ea63313",
+      "inputBytes": 1801263,
+      "src": "assets/colored-transparent-avif/sh_longhuata.avif",
+      "sha256": "435071c1a1a2813c51f2cdfb7f7f52b6485d42f5fd5dda9be58df767712d8e76",
+      "bytes": 214671,
       "width": 1024,
       "height": 1536,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 1031901,
-        "opaquePixels": 527309,
-        "meanError": 0.011096318562825521,
+        "transparentPixels": 1081504,
+        "opaquePixels": 471208,
+        "meanError": 0.015988667805989582,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [
+          [
+            531,
+            115
+          ],
+          [
+            492,
+            115
+          ],
+          [
+            490,
+            152
+          ],
+          [
+            531,
+            144
+          ],
+          [
+            342,
+            1344
+          ],
+          [
+            679,
+            1345
+          ],
+          [
+            344,
+            1189
+          ],
+          [
+            676,
+            1189
+          ],
+          [
+            666,
+            1006
+          ],
+          [
+            352,
+            1006
+          ],
+          [
+            366,
+            830
+          ],
+          [
+            654,
+            830
+          ],
+          [
+            646,
+            660
+          ],
+          [
+            376,
+            660
+          ],
+          [
+            638,
+            506
+          ],
+          [
+            382,
+            507
+          ],
+          [
+            398,
+            365
+          ]
+        ],
+        "edgeDecontaminatedPixels": 8073,
+        "transparentPixels": 1087984,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.361,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "401c894b7b83a71b130041d1ec64b23e44e7e358b4108a6936e35fcc8b8ec0a6",
+        "seeds": [
+          [
+            531,
+            115
+          ],
+          [
+            492,
+            115
+          ],
+          [
+            490,
+            152
+          ],
+          [
+            531,
+            144
+          ],
+          [
+            342,
+            1344
+          ],
+          [
+            679,
+            1345
+          ],
+          [
+            344,
+            1189
+          ],
+          [
+            676,
+            1189
+          ],
+          [
+            666,
+            1006
+          ],
+          [
+            352,
+            1006
+          ],
+          [
+            366,
+            830
+          ],
+          [
+            654,
+            830
+          ],
+          [
+            646,
+            660
+          ],
+          [
+            376,
+            660
+          ],
+          [
+            638,
+            506
+          ],
+          [
+            382,
+            507
+          ],
+          [
+            398,
+            365
+          ]
+        ],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "sh_fangta": {
+      "source": "assets/colored/sh_fangta.png",
+      "sourceSha256": "9132b62c6ef2282a80e08d4f891eb75fe120733c82d3b0f121f350fac2059abb",
+      "sourceBytes": 1769079,
+      "input": "assets/colored-transparent/sh_fangta.png",
+      "inputSha256": "3f1df7f41f6095c96465846ac2f7e71ffe266f3a34a3c8a19e6883616ef9431b",
+      "inputBytes": 1694738,
+      "src": "assets/colored-transparent-avif/sh_fangta.avif",
+      "sha256": "18d806af4379b0f2548d1efb9ecba17a8b76b0dc6966a361dd17344642407161",
+      "bytes": 189569,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1097083,
+        "opaquePixels": 450735,
+        "meanError": 0.019997278849283855,
         "maxError": 14
       },
       "extraction": {
@@ -8878,83 +9099,306 @@
           255
         ],
         "tolerancePerChannel": 12,
-        "backgroundSeeds": [],
-        "edgeDecontaminatedPixels": 5405,
-        "transparentPixels": 1036683,
-        "rgbUnchanged": false,
-        "interiorRgbUnchanged": true
-      },
-      "visualReview": "pending_user",
-      "processingSeconds": 2.684,
-      "backgroundPreparation": {
-        "method": "white-matte-v1",
-        "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
-        "seeds": [],
-        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
-      }
-    },
-    "hn_songling": {
-      "source": "assets/colored/hn_songling.png",
-      "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
-      "sourceBytes": 1655074,
-      "input": "assets/colored-transparent/hn_songling.png",
-      "inputSha256": "78de25125db664ed876846837123db5344fb72b64be8589e40f0321291fca030",
-      "inputBytes": 1621848,
-      "src": "assets/colored-transparent-avif/hn_songling.avif",
-      "sha256": "40053b0d19faa61828b9b97aea9dad92b94fbc700bc37d0b4ae31e5f014cb278",
-      "bytes": 148139,
-      "width": 1024,
-      "height": 1536,
-      "alpha": {
-        "min": 0,
-        "max": 255,
-        "transparentPixels": 1158141,
-        "opaquePixels": 407523,
-        "meanError": 0.005472819010416667,
-        "maxError": 13
-      },
-      "extraction": {
-        "method": "white-matte-v1",
-        "matteRgb": [
-          255,
-          255,
-          255
+        "backgroundSeeds": [
+          [
+            498,
+            91
+          ],
+          [
+            523,
+            92
+          ],
+          [
+            663,
+            1325
+          ],
+          [
+            327,
+            1325
+          ],
+          [
+            736,
+            1326
+          ],
+          [
+            286,
+            1327
+          ],
+          [
+            262,
+            1323
+          ],
+          [
+            759,
+            1323
+          ],
+          [
+            636,
+            1046
+          ],
+          [
+            368,
+            1046
+          ],
+          [
+            372,
+            1057
+          ],
+          [
+            637,
+            1057
+          ],
+          [
+            404,
+            648
+          ],
+          [
+            396,
+            778
+          ],
+          [
+            616,
+            778
+          ],
+          [
+            634,
+            902
+          ],
+          [
+            608,
+            649
+          ],
+          [
+            384,
+            912
+          ],
+          [
+            423,
+            416
+          ],
+          [
+            433,
+            305
+          ],
+          [
+            593,
+            416
+          ],
+          [
+            600,
+            530
+          ],
+          [
+            369,
+            1071
+          ],
+          [
+            585,
+            305
+          ],
+          [
+            381,
+            927
+          ],
+          [
+            381,
+            903
+          ],
+          [
+            392,
+            792
+          ],
+          [
+            651,
+            1072
+          ],
+          [
+            635,
+            929
+          ],
+          [
+            626,
+            793
+          ],
+          [
+            417,
+            530
+          ],
+          [
+            634,
+            912
+          ],
+          [
+            626,
+            917
+          ]
         ],
-        "tolerancePerChannel": 12,
-        "backgroundSeeds": [],
-        "edgeDecontaminatedPixels": 3534,
-        "transparentPixels": 1159872,
+        "edgeDecontaminatedPixels": 10078,
+        "transparentPixels": 1104655,
         "rgbUnchanged": false,
         "interiorRgbUnchanged": true
       },
       "visualReview": "pending_user",
-      "processingSeconds": 2.654,
+      "processingSeconds": 2.267,
       "backgroundPreparation": {
         "method": "white-matte-v1",
-        "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
-        "seeds": [],
+        "sourceSha256": "9132b62c6ef2282a80e08d4f891eb75fe120733c82d3b0f121f350fac2059abb",
+        "seeds": [
+          [
+            498,
+            91
+          ],
+          [
+            523,
+            92
+          ],
+          [
+            663,
+            1325
+          ],
+          [
+            327,
+            1325
+          ],
+          [
+            736,
+            1326
+          ],
+          [
+            286,
+            1327
+          ],
+          [
+            262,
+            1323
+          ],
+          [
+            759,
+            1323
+          ],
+          [
+            636,
+            1046
+          ],
+          [
+            368,
+            1046
+          ],
+          [
+            372,
+            1057
+          ],
+          [
+            637,
+            1057
+          ],
+          [
+            404,
+            648
+          ],
+          [
+            396,
+            778
+          ],
+          [
+            616,
+            778
+          ],
+          [
+            634,
+            902
+          ],
+          [
+            608,
+            649
+          ],
+          [
+            384,
+            912
+          ],
+          [
+            423,
+            416
+          ],
+          [
+            433,
+            305
+          ],
+          [
+            593,
+            416
+          ],
+          [
+            600,
+            530
+          ],
+          [
+            369,
+            1071
+          ],
+          [
+            585,
+            305
+          ],
+          [
+            381,
+            927
+          ],
+          [
+            381,
+            903
+          ],
+          [
+            392,
+            792
+          ],
+          [
+            651,
+            1072
+          ],
+          [
+            635,
+            929
+          ],
+          [
+            626,
+            793
+          ],
+          [
+            417,
+            530
+          ],
+          [
+            634,
+            912
+          ],
+          [
+            626,
+            917
+          ]
+        ],
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
-    "hn_bixia": {
-      "source": "assets/colored/hn_bixia.png",
-      "sourceSha256": "2d3141111b4ab8ba2163cffddb0ca47af0ff14b31555f0a5bdcf0704159ca39b",
-      "sourceBytes": 2353114,
-      "input": "assets/colored-transparent/hn_bixia.png",
-      "inputSha256": "49a7394f2ab36b150a542dd8a44cfe6a20a9eecb7153e5a910b4a4063e515134",
-      "inputBytes": 2235003,
-      "src": "assets/colored-transparent-avif/hn_bixia.avif",
-      "sha256": "39235a02a7c5a4b25f47cd63f93fe9dccf6a0473231a8e5e1231a83877b452c9",
-      "bytes": 301008,
+    "sh_zhenru": {
+      "source": "assets/colored/sh_zhenru.png",
+      "sourceSha256": "597c1af33d42ffc343aa976b8c3dfad5c1f761b640a3b98bcb7833c6673a7033",
+      "sourceBytes": 2246980,
+      "input": "assets/colored-transparent/sh_zhenru.png",
+      "inputSha256": "22ef21a83e474e9073a46d735c803563f51913ebba4dec7c1fe2833abe962f04",
+      "inputBytes": 2100746,
+      "src": "assets/colored-transparent-avif/sh_zhenru.avif",
+      "sha256": "1e63f5aa93702455454309a0c308c11352e5e0b99e9e98495bc3a17774eac973",
+      "bytes": 238338,
       "width": 1536,
       "height": 1024,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 779193,
-        "opaquePixels": 781847,
-        "meanError": 0.00902557373046875,
-        "maxError": 13
+        "transparentPixels": 716476,
+        "opaquePixels": 844892,
+        "meanError": 0.008807500203450521,
+        "maxError": 15
       },
       "extraction": {
         "method": "white-matte-v1",
@@ -8965,16 +9409,16 @@
         ],
         "tolerancePerChannel": 12,
         "backgroundSeeds": [],
-        "edgeDecontaminatedPixels": 4650,
-        "transparentPixels": 782825,
+        "edgeDecontaminatedPixels": 5102,
+        "transparentPixels": 719680,
         "rgbUnchanged": false,
         "interiorRgbUnchanged": true
       },
       "visualReview": "pending_user",
-      "processingSeconds": 2.695,
+      "processingSeconds": 1.994,
       "backgroundPreparation": {
         "method": "white-matte-v1",
-        "sourceSha256": "2d3141111b4ab8ba2163cffddb0ca47af0ff14b31555f0a5bdcf0704159ca39b",
+        "sourceSha256": "597c1af33d42ffc343aa976b8c3dfad5c1f761b640a3b98bcb7833c6673a7033",
         "seeds": [],
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
@@ -9195,6 +9639,196 @@
         "statement": "都没问题 先替换上吧。",
         "avifSha256": "50629500780d512ed9f0c7b029ee9ae0c26c8b00f1e857ee64b3bff2732f5fde",
         "inputSha256": "dfae83ff14b25b5a1901608d805c685e1d788da17737db9458fc7c7c55e6f704"
+      }
+    },
+    "hn_miaole": {
+      "source": "assets/colored/hn_miaole.png",
+      "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+      "sourceBytes": 1828667,
+      "input": "assets/colored-transparent/hn_miaole.png",
+      "inputSha256": "39f54ef7ee4c61b0a2a6b1e4aaa03ad49f34a1d3f9019594264bef03994903ed",
+      "inputBytes": 1753797,
+      "src": "assets/colored-transparent-avif/hn_miaole.avif",
+      "sha256": "03e4baca064fbd267cba6c894e03af7e88134f591a2869e5511e7a8cb98d0d7a",
+      "bytes": 178809,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1110649,
+        "opaquePixels": 448020,
+        "meanError": 0.011288324991861979,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [
+          [
+            465,
+            229
+          ],
+          [
+            559,
+            260
+          ]
+        ],
+        "edgeDecontaminatedPixels": 5718,
+        "transparentPixels": 1115617,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.235,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+        "seeds": [
+          [
+            465,
+            229
+          ],
+          [
+            559,
+            260
+          ]
+        ],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "hn_fawang": {
+      "source": "assets/colored/hn_fawang.png",
+      "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
+      "sourceBytes": 2003663,
+      "input": "assets/colored-transparent/hn_fawang.png",
+      "inputSha256": "cb7a9ec7d26255a2fae4116b19f64902d5dcada2006caea93c61721b6d240602",
+      "inputBytes": 1781030,
+      "src": "assets/colored-transparent-avif/hn_fawang.avif",
+      "sha256": "1d37474bb63f3a0f2fd1e412506450460f68013bba7b459c44281394ff0445d1",
+      "bytes": 193111,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1031901,
+        "opaquePixels": 527309,
+        "meanError": 0.011096318562825521,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 5405,
+        "transparentPixels": 1036683,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.684,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "21596f9cea73d61016c0366f824ffc3c13a1526db7c5148f87feb77002e69fea",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "hn_songling": {
+      "source": "assets/colored/hn_songling.png",
+      "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
+      "sourceBytes": 1655074,
+      "input": "assets/colored-transparent/hn_songling.png",
+      "inputSha256": "78de25125db664ed876846837123db5344fb72b64be8589e40f0321291fca030",
+      "inputBytes": 1621848,
+      "src": "assets/colored-transparent-avif/hn_songling.avif",
+      "sha256": "40053b0d19faa61828b9b97aea9dad92b94fbc700bc37d0b4ae31e5f014cb278",
+      "bytes": 148139,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1158141,
+        "opaquePixels": 407523,
+        "meanError": 0.005472819010416667,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 3534,
+        "transparentPixels": 1159872,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.654,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "hn_bixia": {
+      "source": "assets/colored/hn_bixia.png",
+      "sourceSha256": "2d3141111b4ab8ba2163cffddb0ca47af0ff14b31555f0a5bdcf0704159ca39b",
+      "sourceBytes": 2353114,
+      "input": "assets/colored-transparent/hn_bixia.png",
+      "inputSha256": "49a7394f2ab36b150a542dd8a44cfe6a20a9eecb7153e5a910b4a4063e515134",
+      "inputBytes": 2235003,
+      "src": "assets/colored-transparent-avif/hn_bixia.avif",
+      "sha256": "39235a02a7c5a4b25f47cd63f93fe9dccf6a0473231a8e5e1231a83877b452c9",
+      "bytes": 301008,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 779193,
+        "opaquePixels": 781847,
+        "meanError": 0.00902557373046875,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 4650,
+        "transparentPixels": 782825,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.695,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "2d3141111b4ab8ba2163cffddb0ca47af0ff14b31555f0a5bdcf0704159ca39b",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     }
   }

@@ -1,0 +1,90 @@
+{
+  "id": "sh_tangchuang",
+  "name": "松江唐经幢",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sh_tangchuang.png",
+    "assets/references/sh_tangchuang-input.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Paint the line drawing in Image 1 as a refined BOOK ILLUSTRATION on a WHITE PAGE. Image 2 supplies the actual Songjiang Tang dharani pillar's material colors. Image 3 supplies fine contour and matte mineral-gouache paint style only.\nRetain Image 1's entire tall stone pillar exactly, all bases, long octagonal shaft, miniature stone railing, sculpted caps and small top. Portrait 1024x1536. Its stone is pale cool grey and muted grey-brown, with deeper charcoal-grey carving recesses, no gold or red paint. Thin dark contours, gently filled matte color planes, subtle pigment grain only on stone, two or three restrained shade values. Illustrated, not photographic.\nThe WHOLE PAPER sheet has SOLID OPAQUE PURE WHITE #FFFFFF background with no fade, vignette, grey paper, halo, cast shadow or checkerboard. Fill all blank exterior pixels completely with white. Actual air holes through the tiny stone railing are white paper too. Keep pale stone surfaces solid and opaque. Entire apex and base uncut. No letters, inscriptions, scene, tree, people or frame.",
+  "material_observations": "已查看2015年日间西侧照片。长幢身偏冷浅灰，台座、华盖和风化雕刻为中性灰、灰褐，凹部和上部侧面深灰；没有通体金色或红漆。JPEG原件含MPO信息，生成使用无损RGB PNG转存。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Sutra_Pillar_of_the_Tang_Dynasty_in_Songjiang_02_2015-03.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_tangchuang-photo.jpg",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2015-03-21"
+    }
+  ],
+  "output": "assets/colored/sh_tangchuang.png",
+  "note": "内置 imagegen 白底生成，随后本地 white-matte-v1 去底；艺术转译，非文保色彩复原。新增交付待用户审阅。",
+  "historical_sources": [
+    {
+      "title": "松江区政府 · 走进松江（唐经幢）",
+      "url": "https://www.songjiang.gov.cn/zjsj/stepin.html"
+    },
+    {
+      "title": "上海市文旅推广网 · 松江唐经幢",
+      "url": "https://www.meet-in-shanghai.net/cn/national-key-cultural-relics-protection-unit/songjiang-tang-scripture-building-473465/"
+    }
+  ],
+  "generation_attempts": [
+    {
+      "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-8d2d45d4-081c-4e2c-98b3-c8b111eb737c.png",
+      "saved_file": "assets/colored/sh_tangchuang-attempt-1.png",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: the Tang dharani stone pillar at Songjiang, Shanghai. Lock the long octagonal shaft, all sculpted stacked stone bases, miniature stone railing, weathered caps and low top cap from Image 1, no metal spire or added tower floors. Materials observed: pale cool-grey shaft, neutral grey and subdued grey-brown aged carved stone caps and bases, deeper charcoal grey in relief recesses. No gold, red paint, readable inscriptions, invented historical polychromy or dark artificial cracks. The little actual open-air holes through the miniature stone railing are WHITE backdrop; the solid pale stone stays opaque. Portrait 1024x1536, preserve entire apex and base.\nThe original must be a completely opaque WHITE PAGE with pure #FFFFFF exterior, no alpha fades or glow. Preserve thin visible material-colored contour lines. Only the actual monument has restrained mineral-gouache paint, all blank canvas completely flat white.",
+      "input_images": [
+        "assets/generated/sh_tangchuang.png",
+        "assets/references/sh_tangchuang-input.png",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "rejected",
+      "reason": "RGBA 原件存在光晕，alpha最大254，没有不透明主体。按白底流程重出，不使用这张。"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-5e8dc019-391c-421a-a6e4-aa7f8c101904.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已实际查看白底设色原件：长幢身、层叠雕刻华盖、微型石栏与台座完整；冷灰、灰褐石材及深灰凹部区分，无通体金色或红漆，无文字，纯白背景，顶底未裁切。风化纹理为绘画简化，不声称精确石刻复原。石栏7处透空已按白色像素种子登记，浅色实体保留。 透明交付图待用户审阅，不记为用户通过。",
+  "completed_at": "2026-09-18",
+  "visualReview": "pending_user",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "86cf27c5baa2ed84b066764c7a628dd6d74c040a794da0ed8d69fe7ab5896a70",
+    "seeds": [
+      [
+        520,
+        882
+      ],
+      [
+        593,
+        888
+      ],
+      [
+        465,
+        883
+      ],
+      [
+        477,
+        883
+      ],
+      [
+        432,
+        887
+      ],
+      [
+        570,
+        885
+      ],
+      [
+        406,
+        894
+      ]
+    ]
+  }
+}

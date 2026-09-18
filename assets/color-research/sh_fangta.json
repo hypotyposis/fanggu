@@ -1,0 +1,201 @@
+{
+  "id": "sh_fangta",
+  "name": "松江兴圣教寺塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sh_fangta.png",
+    "assets/references/sh_fangta-base-photo.jpg",
+    "assets/references/sh_fangta-full-photo.jpg",
+    "assets/references/sh_fangta-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Paint the exact line drawing in Image 1 as a refined BOOK ILLUSTRATION on a WHITE PAGE. Following real monument photo(s) supply present-day materials and color placement only. The LAST image is a style sample for fine contour lines and matte mineral-gouache paint, not its architecture, warm palette or dark backdrop.\nKeep the drawing's silhouette, canvas, scale, margins, all roof tiers/bays and openings unchanged. Thin dark material-colored contours, gently filled matte color planes and subtle grain only on the actual object, two or three restrained shade values. Illustrated, not photographic. No invented historical restoration, added damage, global gold or sepia tint.\nSubject: the Songjiang Square Pagoda. Lock Image 1's EXACTLY NINE separate eave roofs/floors: eight upper balcony levels plus the broad lowest columned veranda roof. No omission, additional floor, merged roof or changing the square tower outline. Present materials: slate/dark charcoal grey roof tiles, deep grey-brown timber eaves and straight horizontal balcony railings, faded reddish-brown main vertical frames and posts, opaque white-grey plaster panels, darker grey-brown ground-veranda columns, cool light grey stone footing. Finial dark grey with only tiny muted brass top ornaments. Keep pale plaster wall panels opaque and doors dark; real open-air spaces through balcony rails and veranda colonnade and between chains are WHITE backdrop. Portrait 1024x1536, all nine roof tiers and long spire uncut.\nThe WHOLE PAPER sheet has SOLID OPAQUE PURE WHITE #FFFFFF background with no fading, grey paper, texture, halo, glow, cast shadow, gradient or checkerboard. Every blank exterior pixel and actual air gap is pure white paper. Material surfaces stay solid and opaque, including pale plaster/stone and dark door recesses. No lettering, labels, modern surroundings, people, trees, frame or watermark.",
+  "material_observations": "已查看三张实拍：屋瓦深灰，檐下和横向木栏深褐近黑；墙面白灰，柱、枋和立面分隔暗红褐，底层廊柱深灰褐。铁刹深灰，极小顶饰偏黄铜色；照片仰拍、阴影强，控制曝光而不整塔加暖色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Square_Tower_of_Songjiang.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Square_Tower_of_Songjiang.jpg/500px-Square_Tower_of_Songjiang.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reference_file": "assets/references/sh_fangta-base-photo.jpg",
+      "author": "Kgbkgbkgb",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2010-01-12"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fangta_Park_Songjiang.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Fangta_Park_Songjiang.JPG/960px-Fangta_Park_Songjiang.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Fangta_Park_Songjiang.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_fangta-full-photo.jpg",
+      "author": "Heights",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2009-08-09"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%85%B4%E5%9C%A3%E6%95%99%E5%AF%BA%E5%A1%94.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/%E5%85%B4%E5%9C%A3%E6%95%99%E5%AF%BA%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_fangta-photo.jpg",
+      "author": "Acot一杯茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2017-07-28"
+    }
+  ],
+  "output": "assets/colored/sh_fangta.png",
+  "note": "内置 imagegen 白底生成，随后本地 white-matte-v1 去底；艺术转译，非文保色彩复原。新增交付待用户审阅。",
+  "historical_sources": [
+    {
+      "title": "松江年鉴2019 · 兴圣教寺塔",
+      "url": "https://www.songjiang.gov.cn/sjsz/sjnj/sjnj2019/files/basic-html/page343.html"
+    },
+    {
+      "title": "松江年鉴2015 · 唐经幢与兴圣教寺塔（年代范围异记）",
+      "url": "https://www.songjiang.gov.cn/sjsz/sjnj/sjnj2015/files/basic-html/page483.html"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-44532508-77f3-44b4-be65-34623becef45.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已实际查看设色原件，逐层计数为九道屋檐：八层上部塔檐和一层底部柱廊檐。保留方形轮廓、横向栏杆、长塔刹与拉线；灰瓦、灰褐木檐、褪色红褐竖框、浅灰白墙和灰石座区分。真实侧栏透空、底部柱间和拉线间空白按种子去底，浅墙与暗门洞保留。无文字、无裁切。构件做了绘画简化，非文保复原。 透明交付图待用户审阅，不记为用户通过。",
+  "completed_at": "2026-09-18",
+  "visualReview": "pending_user",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9132b62c6ef2282a80e08d4f891eb75fe120733c82d3b0f121f350fac2059abb",
+    "seeds": [
+      [
+        498,
+        91
+      ],
+      [
+        523,
+        92
+      ],
+      [
+        663,
+        1325
+      ],
+      [
+        327,
+        1325
+      ],
+      [
+        736,
+        1326
+      ],
+      [
+        286,
+        1327
+      ],
+      [
+        262,
+        1323
+      ],
+      [
+        759,
+        1323
+      ],
+      [
+        636,
+        1046
+      ],
+      [
+        368,
+        1046
+      ],
+      [
+        372,
+        1057
+      ],
+      [
+        637,
+        1057
+      ],
+      [
+        404,
+        648
+      ],
+      [
+        396,
+        778
+      ],
+      [
+        616,
+        778
+      ],
+      [
+        634,
+        902
+      ],
+      [
+        608,
+        649
+      ],
+      [
+        384,
+        912
+      ],
+      [
+        423,
+        416
+      ],
+      [
+        433,
+        305
+      ],
+      [
+        593,
+        416
+      ],
+      [
+        600,
+        530
+      ],
+      [
+        369,
+        1071
+      ],
+      [
+        585,
+        305
+      ],
+      [
+        381,
+        927
+      ],
+      [
+        381,
+        903
+      ],
+      [
+        392,
+        792
+      ],
+      [
+        651,
+        1072
+      ],
+      [
+        635,
+        929
+      ],
+      [
+        626,
+        793
+      ],
+      [
+        417,
+        530
+      ],
+      [
+        634,
+        912
+      ],
+      [
+        626,
+        917
+      ]
+    ]
+  }
+}

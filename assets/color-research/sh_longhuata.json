@@ -1,0 +1,123 @@
+{
+  "id": "sh_longhuata",
+  "name": "龙华塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sh_longhuata.png",
+    "assets/references/sh_longhuata-full-photo.jpg",
+    "assets/references/sh_longhuata-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Paint the exact line drawing in Image 1 as a refined BOOK ILLUSTRATION on a WHITE PAGE. Following real monument photo(s) supply present-day materials and color placement only. The LAST image is a style sample for fine contour lines and matte mineral-gouache paint, not its architecture, warm palette or dark backdrop.\nKeep the drawing's silhouette, canvas, scale, margins, all roof tiers/bays and openings unchanged. Thin dark material-colored contours, gently filled matte color planes and subtle grain only on the actual object, two or three restrained shade values. Illustrated, not photographic. No invented historical restoration, added damage, global gold or sepia tint.\nSubject: the Longhua Pagoda in Shanghai. EXACTLY SEVEN roof tiers, SIX upper balcony storeys and ONE ground-floor colonnade in Image 1 must all remain unchanged; do not lose or merge any roof. Tower walls muted mustard-ochre yellow, timber posts and frames aged dark reddish brown, tiled roofs charcoal slate grey, brackets dark grey-brown, railings weathered pale grey-brown with restrained faded red-brown traces as in the 2019 photo. Metal spire neutral dark grey; its tiny top ornament has a subdued brass/gold tone actually seen in photos, not a golden tower. Preserve recesses dark. All real open holes through railings and between finial chains stay pure WHITE backdrop. Portrait 1024x1536, whole seven-tier tower uncut.\nThe WHOLE PAPER sheet has SOLID OPAQUE PURE WHITE #FFFFFF background with no fading, grey paper, texture, halo, glow, cast shadow, gradient or checkerboard. Every blank exterior pixel and actual air gap is pure white paper. Material surfaces stay solid and opaque, including pale plaster/stone and dark door recesses. No lettering, labels, modern surroundings, people, trees, frame or watermark.",
+  "material_observations": "已查看2019与2011年普通日间照片：墙面黄赭，立柱和枋有暗红褐漆，瓦顶深灰，斗拱和檐下深灰褐；栏杆2019照片显灰褐浅灰并残留暗红，2011显较红，按现存风化材料作克制转译。塔刹深灰，顶部小饰件有黄铜金色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20191113_Longhua_Pagoda-1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/20191113_Longhua_Pagoda-1.jpg/960px-20191113_Longhua_Pagoda-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reference_file": "assets/references/sh_longhuata-full-photo.jpg",
+      "author": "Balon Greyjoy",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "2019-11-13"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:2011_Longhua_Pagoda.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2011_Longhua_Pagoda.JPG/960px-2011_Longhua_Pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/2011_Longhua_Pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_longhuata-photo.jpg",
+      "author": "J. Patrick Fischer",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2011-12-28"
+    }
+  ],
+  "output": "assets/colored/sh_longhuata.png",
+  "note": "内置 imagegen 白底生成，随后本地 white-matte-v1 去底；艺术转译，非文保色彩复原。新增交付待用户审阅。",
+  "historical_sources": [
+    {
+      "title": "徐汇区档案局 · 浦西天际线：从龙华塔到徐家汇中心",
+      "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_daj_bmdt/20231026/525592.html"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-f0fa0af1-796c-4fa0-9ca6-767b470d2024.png",
+  "width": 1024,
+  "height": 1536,
+  "visual_review": "已实际查看设色原件，逐层计数为七道屋檐、六层上部楼身和一层底部柱廊；八面体以正面和两侧转折表现。黄赭墙面、灰瓦、暗红褐木框和灰褐栏杆分区，门洞保持暗色，塔刹仅顶端有少量暗金。两侧柱廊、栏杆外缘及塔刹拉线透空按种子处理。完整无裁切，无场景及文字。细部为照片参照的艺术转译，非实测配准。 透明交付图待用户审阅，不记为用户通过。",
+  "completed_at": "2026-09-18",
+  "visualReview": "pending_user",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "401c894b7b83a71b130041d1ec64b23e44e7e358b4108a6936e35fcc8b8ec0a6",
+    "seeds": [
+      [
+        531,
+        115
+      ],
+      [
+        492,
+        115
+      ],
+      [
+        490,
+        152
+      ],
+      [
+        531,
+        144
+      ],
+      [
+        342,
+        1344
+      ],
+      [
+        679,
+        1345
+      ],
+      [
+        344,
+        1189
+      ],
+      [
+        676,
+        1189
+      ],
+      [
+        666,
+        1006
+      ],
+      [
+        352,
+        1006
+      ],
+      [
+        366,
+        830
+      ],
+      [
+        654,
+        830
+      ],
+      [
+        646,
+        660
+      ],
+      [
+        376,
+        660
+      ],
+      [
+        638,
+        506
+      ],
+      [
+        382,
+        507
+      ],
+      [
+        398,
+        365
+      ]
+    ]
+  }
+}

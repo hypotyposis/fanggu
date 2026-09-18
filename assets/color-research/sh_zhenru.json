@@ -1,0 +1,48 @@
+{
+  "id": "sh_zhenru",
+  "name": "真如寺大殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sh_zhenru.png",
+    "assets/references/sh_zhenru-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Paint the exact line drawing in Image 1 as a refined BOOK ILLUSTRATION on a WHITE PAGE. Following real monument photo(s) supply present-day materials and color placement only. The LAST image is a style sample for fine contour lines and matte mineral-gouache paint, not its architecture, warm palette or dark backdrop.\nKeep the drawing's silhouette, canvas, scale, margins, all roof tiers/bays and openings unchanged. Thin dark material-colored contours, gently filled matte color planes and subtle grain only on the actual object, two or three restrained shade values. Illustrated, not photographic. No invented historical restoration, added damage, global gold or sepia tint.\nSubject: ONLY the Yuan main hall of Zhenru Temple, Shanghai. Preserve exactly THREE bays defined by FOUR facade columns, one single hip-and-gable roof, the two curled ridge chiwen, central lattice-panel doors and two arched-top barred windows. No pagoda behind it, side galleries, plaque text or extra eave. Existing materials from daylight photo: roof tiles charcoal/slate grey, chiwen and ridge pale weathered grey stone/ceramic, timber facade, columns and door panels dark weathered grey-brown, recesses dark charcoal, plain foundation and steps cool light grey. Do not borrow the style sample's tan/gold palette. Landscape 1536x1024, entire roof corners and base uncut.\nThe WHOLE PAPER sheet has SOLID OPAQUE PURE WHITE #FFFFFF background with no fading, grey paper, texture, halo, glow, cast shadow, gradient or checkerboard. Every blank exterior pixel and actual air gap is pure white paper. Material surfaces stay solid and opaque, including pale plaster/stone and dark door recesses. No lettering, labels, modern surroundings, people, trees, frame or watermark.",
+  "material_observations": "已查看2016年日照正面照片：瓦顶灰黑、瓦脊灰石，柱枋、格扇和立面木壁深灰褐，局部旧木偏灰；门内较暗，石台基和踏步浅灰。照片背后新塔及侧廊不属于本图，不取它们的白墙或金色门窗。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zhenrusi_Dadian.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Zhenrusi_Dadian.JPG/960px-Zhenrusi_Dadian.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Zhenrusi_Dadian.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_zhenru-photo.jpg",
+      "author": "Fayhoo",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2016-01-23"
+    }
+  ],
+  "output": "assets/colored/sh_zhenru.png",
+  "note": "内置 imagegen 白底生成，随后本地 white-matte-v1 去底；艺术转译，非文保色彩复原。新增交付待用户审阅。",
+  "historical_sources": [
+    {
+      "title": "普陀区政府 · 走进真如寺，探秘大殿的建筑密码",
+      "url": "https://www.shpt.gov.cn/tupianxinwen/20250416/958655.html"
+    },
+    {
+      "title": "普陀区政府 · 真如寺大殿与古银杏",
+      "url": "https://www.shpt.gov.cn/bm-ms/20251203/965629.html"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-a18bedb9-06ea-4dff-b91d-27777653674a.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": "已实际查看白底设色原件，三间四根正面柱、单檐歇山轮廓、两端鸱吻、中央格扇与两侧窗完整；没有后方新塔或侧廊。灰瓦、浅灰脊饰、灰褐旧木和灰石台阶区分，格栅后的暗部作为实体保留，无需额外透空种子。无文字、无裁切，细部属艺术简化。 透明交付图待用户审阅，不记为用户通过。",
+  "completed_at": "2026-09-18",
+  "visualReview": "pending_user",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "597c1af33d42ffc343aa976b8c3dfad5c1f761b640a3b98bcb7833c6673a7033",
+    "seeds": []
+  }
+}

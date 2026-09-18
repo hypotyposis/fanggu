@@ -13,9 +13,9 @@ additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshod
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
 const henanAdditions = JSON.parse(read('assets/research/henan-additions-2026-09-18.json'));
-additions.push(...northernExpansion.ids, 'sd_pizhi', ...henanAdditions.ids, 'sx_doudafu', 'sx_jiulongbi');
-test('all 207 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 207); assert.equal(new Set(SITES.map(s => s.id )).size, 207);
+additions.push(...northernExpansion.ids, 'sd_pizhi', ...henanAdditions.ids, 'sx_doudafu', 'sx_jiulongbi', 'sh_fangta', 'sh_longhuata', 'sh_tangchuang', 'sh_zhenru');
+test('all 211 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 211); assert.equal(new Set(SITES.map(s => s.id )).size, 211);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -156,4 +156,43 @@ test('Japanese temple subjects use their surviving construction dates and Japane
   }
   assert(SITES.find(site => site.id === 'horyuji').yearApprox);
   assert(SITES.find(site => site.id === 'toshodaiji').yearApprox);
+});
+
+test('all 207 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 207); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  for (const site of SITES) {
+    assert(site.image?.src, `${site.id} has no plate`);
+    const bytes = fs.readFileSync(path.join(root, site.image.src));
+    assert.equal(bytes.subarray(1, 4).toString(), 'PNG');
+    assert.equal(bytes.readUInt32BE(16), site.image.width); assert.equal(bytes.readUInt32BE(20), site.image.height);
+    assert(PLACES.some(p => p.key === site.placeKey && Number.isFinite(p.lat) && Number.isFinite(p.lon)), `${site.id} has no location`);
+  }
+});
+
+
+test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', () => {
+  const { createHash } = require('node:crypto');
+  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  assert.equal(shanghaiExpansion.count, shanghaiExpansion.ids.length);
+  assert.equal(queue.count, queue.entries.length);
+  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, site => site.id).sort());
+  for (const id of shanghaiExpansion.ids) {
+    const site = SITES.find(site => site.id === id);
+    assert.equal(site.initialStatus, 'unvisited');
+    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, '上海');
+    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      assert.equal(meta.status, 'complete');
+      assert(meta.historical_sources.length > 0);
+      const bytes = fs.readFileSync(path.join(root, meta.generated_file || meta.output));
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+      assert.equal(meta.background_preparation.sourceSha256, createHash('sha256').update(bytes).digest('hex'));
+    }
+  }
+  assert.equal(SITES.find(site => site.id === 'sh_tangchuang').year, 859);
+  assert.equal(SITES.find(site => site.id === 'sh_longhuata').year, 977);
+  assert.equal(SITES.find(site => site.id === 'sh_fangta').yearApprox, true);
+  assert.equal(SITES.find(site => site.id === 'sh_zhenru').year, 1320);
 });
