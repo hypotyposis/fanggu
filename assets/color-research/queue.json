@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 202,
+  "count": 204,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -4580,6 +4580,48 @@
       ],
       "output": "assets/colored/sh_zhenru.png",
       "record": "assets/color-research/sh_zhenru.json"
+    },
+    {
+      "id": "sx_doudafu",
+      "name": "太原窦大夫祠",
+      "subject": "太原窦大夫祠 · 献亭与大殿正面",
+      "sub": "献亭与大殿 · 上兰村",
+      "place": "山西太原 · 尖草坪上兰村",
+      "dyn": "yuan",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/sx_doudafu.png",
+      "displayLine": "assets/plates/sx_doudafu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sx_doudafu.json",
+      "candidateReferences": [
+        "assets/references/sx_doudafu-photo.jpg"
+      ],
+      "output": "assets/colored/sx_doudafu.png",
+      "record": "assets/color-research/sx_doudafu.json"
+    },
+    {
+      "id": "sx_jiulongbi",
+      "name": "大同九龙壁",
+      "subject": "大同九龙壁 · 九龙琉璃照壁正面",
+      "sub": "代王府琉璃照壁 · 九龙浮雕",
+      "place": "山西大同 · 古城和阳街",
+      "dyn": "ming",
+      "types": [
+        "screen"
+      ],
+      "line": "assets/generated/sx_jiulongbi.png",
+      "displayLine": "assets/plates/sx_jiulongbi.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sx_jiulongbi.json",
+      "candidateReferences": [
+        "assets/references/sx_jiulongbi-photo.jpg"
+      ],
+      "output": "assets/colored/sx_jiulongbi.png",
+      "record": "assets/color-research/sx_jiulongbi.json"
     }
   ]
 }

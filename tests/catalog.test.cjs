@@ -12,11 +12,11 @@ additions.push('guanyintang','guanque','xianshen','chongsheng','dule','qufukongm
 additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshodaiji','byodoin','todaiji','kiyomizu','toji');
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
-additions.push(...northernExpansion.ids, 'sd_pizhi');
+additions.push(...northernExpansion.ids, 'sd_pizhi', 'sx_doudafu', 'sx_jiulongbi');
 const shanghaiExpansion = JSON.parse(read('assets/research/shanghai-batch.json'));
 additions.push(...shanghaiExpansion.ids);
-test('all 205 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 205); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+test('all 207 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 207); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -94,6 +94,45 @@ test('Pizhi addition is unvisited, mapped to Shandong and uses recorded white or
     const meta = JSON.parse(read(`assets/${folder}/sd_pizhi.json`));
     assert.equal(meta.background_preparation.method, 'white-matte-v1');
     assert.equal(meta.status, 'complete');
+  }
+});
+
+test('Shanxi additions have hash-bound white originals and complete transparent deliveries', () => {
+  const { createHash } = require('node:crypto');
+  const hash = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  const delivery = JSON.parse(read('assets/color-research/avif-manifest.json'));
+  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
+  assert.equal(queue.count, queue.entries.length);
+  assert.equal(new Set([...queue.entries.map(entry => entry.id), ...queue.excluded]).size, SITES.length);
+  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, site => site.id).sort());
+  for (const [id, dynasty, year] of [['sx_doudafu', 'yuan', 1343], ['sx_jiulongbi', 'ming', 1392]]) {
+    const site = SITES.find(site => site.id === id);
+    assert.equal(site.initialStatus, 'unvisited');
+    assert.equal(site.dyn, dynasty); assert.equal(site.year, year);
+    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, '山西');
+    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      assert.equal(meta.status, 'complete');
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+      assert.equal(meta.background_preparation.sourceSha256, hash(meta.generated_file || meta.output));
+      for (const file of meta.input_images) assert(fs.existsSync(path.join(root, file)), file);
+    }
+    const item = delivery.images[id];
+    assert(['pending_user', 'approved_user'].includes(item.visualReview));
+    assert.equal(item.alpha.min, 0); assert.equal(item.alpha.max, 255);
+    assert(item.alpha.transparentPixels > 0 && item.alpha.opaquePixels > 0);
+    assert.equal(item.sourceSha256, hash(item.source));
+    assert.equal(item.inputSha256, hash(item.input)); assert.equal(item.sha256, hash(item.src));
+    assert.equal(COLORED_PLATES[id].visualReview, item.visualReview);
+    if (item.visualReview === 'approved_user') {
+      assert.equal(item.review.reviewer, 'user');
+      assert.equal(item.review.avifSha256, item.sha256);
+      assert.equal(item.review.inputSha256, item.inputSha256);
+    } else {
+      assert.equal(item.review, undefined);
+    }
   }
 });
 

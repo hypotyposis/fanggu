@@ -141,7 +141,7 @@ test('new wishes seed alongside saved visits and removed wishes without overwrit
 test('82 northern additions remain unvisited while existing personal records survive expansion and backup', () => {
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/north200-batch.json'), 'utf8'));
   assert.equal(batch.ids.length, 82);
-  for (const [province, added, total] of [['河南', 27, 34], ['河北', 25, 35], ['山西', 30, 70]]) {
+  for (const [province, added, total] of [['河南', 27, 34], ['河北', 25, 35], ['山西', 30, 72]]) {
     assert.equal(batch.groups[province].length, added);
     assert.equal(find({ province }).length, total);
   }
@@ -166,4 +166,28 @@ test('82 northern additions remain unvisited while existing personal records sur
   assert.equal(restored.record('sx_yungang').note, '第20窟大佛');
   assert.equal(restored.record('sx_yungang').visitedOn, '');
   assert.equal(restored.record('sx_chongfu').status, 'unvisited');
+});
+
+test('Shanxi screens are distinct from fortifications and additions preserve saved records', () => {
+  assert.deepEqual(find({ province: '山西', type: 'screen' }), ['sx_jiulongbi']);
+  assert(!find({ type: 'wall' }).includes('sx_jiulongbi'));
+  assert.deepEqual(find({ province: '山西', type: 'screen', query: '影壁' }), ['sx_jiulongbi']);
+  assert.deepEqual(find({ province: '山西', query: '烈石神祠' }), ['sx_doudafu']);
+  assert.deepEqual(find({ province: '山西', query: '代王府九龙壁' }), ['sx_jiulongbi']);
+  const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
+  const before = create(catalog.filter(site => !['sx_doudafu', 'sx_jiulongbi'].includes(site.id)), storage);
+  before.setRecord('foguang', { status: 'visited', visitedOn: '', note: '既有行记' });
+  before.setStatus('sx_chongfu', 'wishlist');
+  const after = create(catalog, storage);
+  for (const id of ['sx_doudafu', 'sx_jiulongbi']) {
+    assert.equal(after.record(id).status, 'unvisited'); assert.equal(after.record(id).visitedOn, '');
+  }
+  assert.equal(after.record('foguang').note, '既有行记');
+  assert.equal(after.record('sx_chongfu').status, 'wishlist');
+  after.setRecord('sx_doudafu', { status: 'visited', visitedOn: '', note: '献亭粗柱' });
+  after.setStatus('sx_jiulongbi', 'wishlist');
+  const restored = create(catalog, { getItem: () => null, setItem() {} });
+  restored.import(after.export());
+  assert.equal(restored.record('sx_doudafu').note, '献亭粗柱');
+  assert.equal(restored.record('sx_jiulongbi').status, 'wishlist');
 });

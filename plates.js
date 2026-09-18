@@ -1508,6 +1508,18 @@ const PLATES = {
       "元至元四年（1338）重建 · 三间单檐歇山"
     ]
   },
+  "sx_doudafu": {
+    "src": "assets/plates/sx_doudafu.png",
+    "alt": "太原窦大夫祠 · 献亭与大殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "太原窦大夫祠 · 献亭与大殿正面",
+      "元 · 至正三年（1343）重建"
+    ]
+  },
   "hb_beiyue": {
     "src": "assets/plates/hb_beiyue.png",
     "alt": "北岳庙 · 德宁之殿正立面（含回廊、台基） · 线稿",
@@ -1638,6 +1650,18 @@ const PLATES = {
     "caption": [
       "崇善寺 · 大悲殿",
       "明洪武 · 七间重檐庑殿"
+    ]
+  },
+  "sx_jiulongbi": {
+    "src": "assets/plates/sx_jiulongbi.png",
+    "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "大同九龙壁 · 九龙琉璃照壁正面",
+      "明 · 洪武二十五年（1392）"
     ]
   },
   "shuanglin": {
