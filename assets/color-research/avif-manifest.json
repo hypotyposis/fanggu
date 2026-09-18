@@ -8789,6 +8789,92 @@
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
+    "sx_doudafu": {
+      "source": "assets/colored/sx_doudafu.png",
+      "sourceSha256": "a763f5c012edffb88b23daad4f1cccb907490409f13cf3a8fc65f3ede2d7c460",
+      "sourceBytes": 2102763,
+      "input": "assets/colored-transparent/sx_doudafu.png",
+      "inputSha256": "2a904697c53460cafa3d933450fe1154ea6187f94b27c093e0f9ffd996cf9af9",
+      "inputBytes": 1992578,
+      "src": "assets/colored-transparent-avif/sx_doudafu.avif",
+      "sha256": "9473a7fb1f257b3235f57132aadd64b8c8f134b3022f53c9a602c1984a4d4bb2",
+      "bytes": 242515,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 782349,
+        "opaquePixels": 777443,
+        "meanError": 0.009869257609049479,
+        "maxError": 8
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 5348,
+        "transparentPixels": 786540,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.194,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "a763f5c012edffb88b23daad4f1cccb907490409f13cf3a8fc65f3ede2d7c460",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
+    "sx_jiulongbi": {
+      "source": "assets/colored/sx_jiulongbi.png",
+      "sourceSha256": "5f07ebe3426c6544345acfb62a0c49a610b89e2bbce4a8077aad6c012751cdd9",
+      "sourceBytes": 1977877,
+      "input": "assets/colored-transparent/sx_jiulongbi.png",
+      "inputSha256": "42725e56645e80727a495ef978ae1b9075c967effde62d6b8160b020ec979f8d",
+      "inputBytes": 1778542,
+      "src": "assets/colored-transparent-avif/sx_jiulongbi.avif",
+      "sha256": "f279225508c0273c8220cbbd5a79a3de67f046237b1c61f1faca1aaa24f3d8aa",
+      "bytes": 238866,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1065405,
+        "opaquePixels": 499066,
+        "meanError": 0.0061219533284505205,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 3955,
+        "transparentPixels": 1068510,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.312,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "5f07ebe3426c6544345acfb62a0c49a610b89e2bbce4a8077aad6c012751cdd9",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

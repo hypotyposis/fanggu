@@ -1,0 +1,90 @@
+{
+  "id": "sx_doudafu",
+  "subject": "太原窦大夫祠 · 献亭与大殿正面",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:窦大夫祠-1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/%E7%AA%A6%E5%A4%A7%E5%A4%AB%E7%A5%A0-1.jpg",
+  "author": "Fymking",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_doudafu-photo.jpg"
+  ],
+  "source_note": "Fymking于2012-08-26拍摄的献亭及大殿正面；图版移除植被、石狮、标牌与两侧配房，空匾保留位置，不复写文字。",
+  "prompt": "Use case: precise-object-edit. Image 1 is an existing BLACK INK architectural plate to correct. Image 2 is the actual Dou Dafu Ancestral Temple front photograph, geometry evidence ONLY.\nRemove ONLY the two extraneous SMALL BUILDING WINGS at the EXTREME LEFT and EXTREME RIGHT of Image 1. These are not the subject. Keep the central large offering pavilion and the immediately adjacent lower roof portions of its three-bay main hall behind it. Retain the offering pavilion's two very thick front columns, the four smaller visible hall facade columns, large bracket sets, two blank plaque rectangles, three hall bays, complete low terrace and central steps. No extra outer wings, no extra outer roof ridges, no extra outer pillars or bay rows. The remaining subject should be a coherent pavilion attached to ONE three-bay hall as in the real photograph.\nRecenter this remaining central architectural assembly on the same landscape 1536x1024 canvas, with clear 8% pure-white side margins. Do not change the central roof silhouette or intricate brackets. Fully OPAQUE PURE WHITE #FFFFFF canvas and interior blank surfaces, crisp delicate BLACK contour lines only; no alpha transparency, no gray fill, no wash, no shading, no fog, no halo, no text, no background scene. Keep all roofs and base uncut. Draw no new details. This is a selective wing-removal correction, not a new generic temple.",
+  "generated_file": "assets/generated/sx_doudafu.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "太原窦大夫祠 · 献亭与大殿正面",
+    "元 · 至正三年（1343）重建"
+  ],
+  "historical_sources": [
+    {
+      "title": "太原市人民政府新闻办公室供稿 · 窦大夫祠",
+      "url": "https://gd.huaxia.com/c/2008/12/08/762387.shtml"
+    }
+  ],
+  "coordinates": {
+    "lat": 38.01026,
+    "lng": 112.43299,
+    "source": "Wikimedia Commons · Category:Dou Dafu Ancestral Temple / Wikidata Q15929110",
+    "source_page": "https://commons.wikimedia.org/wiki/Category:Dou_Dafu_Ancestral_Temple"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-433285c6-b58d-40f3-b49e-e11fd11d5898.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e5207f63a89384258db3cfb13031bdf61d560ba20310c15bef2401547248f2ab",
+    "seeds": []
+  },
+  "input_images": [
+    "assets/generated/sx_doudafu-rejected-wings.png",
+    "assets/references/sx_doudafu-photo.jpg"
+  ],
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, the Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin black lines, restrained detail and generous blank surfaces. Image 2 is SUBJECT GEOMETRY ONLY: the actual Yuan-period offering pavilion and main hall at Dou Dafu Ancestral Temple (窦大夫祠), Shanglan, Taiyuan.\nDraw the complete central offering pavilion with the broader three-bay main hall immediately behind it, as visible in Image 2. Keep the pavilion's hip-and-gable roof, its two prominent front timber columns, heavy bracket sets and broad beam, and the flanking visible portions of the hall's suspended-gable roof. Preserve their joined, overlapping spatial arrangement; this is NOT a generic free-standing three-bay temple. Straight frontal facade-level view, verticals vertical, minimal perspective. Roof corners, ridges, columns, low terrace and a few central steps all uncut. Omit adjacent wings, trees, bushes, mountains, stone lions, fences, signs, people, wires and paving scene. Existing plaques may be retained as empty rectangles, absolutely no writing.\nCreate a refined sparse BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the drawing remain pure white. Doors and lattice windows use thin outlines with NO solid dark fills. Only selective roof tile strokes, no dense tile or wood grain rendering. Confident fine outer contours with finer internal structural lines. No solid shadows, grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Do not copy the master's Buddha geometry.\nLandscape 1536x1024. Whole structure occupies approximately 82% of canvas width with generous balanced pure-white margins. Only a few short fine ground lines. No labels, letters, calligraphy, dimensions, captions, watermark, frame or border. The white canvas will later be removed by a local script.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sx_doudafu-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-a6467893-3a43-42bc-940d-5e266a8b7d4f.png",
+      "saved_file": "assets/generated/sx_doudafu-rejected-alpha.png",
+      "status": "rejected",
+      "reason": "原件带有半透明灰雾与光晕，非纯白不透明线稿。"
+    },
+    {
+      "prompt": "Correct ONLY the rendering/background of this architectural line drawing. Preserve the same offering pavilion and joined main hall geometry, the two prominent front columns, all bracket arms and three visible roof portions. Keep full landscape 1536x1024 framing with slightly more side margin, no crop.\nReturn an OPAQUE pure WHITE #FFFFFF canvas with crisp thin BLACK INK contours. Every background and every blank surface INSIDE the architecture is solid white. All pixels of the image are fully opaque; DO NOT output a transparent PNG, do not create an alpha mask, do not leave any translucent material, do not draw any grey fog or soft halo. Flattened white paper with black contour lines only. Remove every trace of the existing grey wash. No shading, no filled walls, no filled windows, no shadows. Doors and windows are outline-only. No paper grain, gradients, glow, checkerboard or texture. Thin dark continuous outlines, restrained small interior details, retain blank plaques without any text. We will remove WHITE ourselves later; do not remove background in this generation.",
+      "reference_files": [
+        "assets/generated/sx_doudafu-rejected-alpha.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-d8ba1bd2-ebe5-4f76-a13a-91a4cab950be.png",
+      "saved_file": "assets/generated/sx_doudafu-rejected-wings.png",
+      "status": "rejected",
+      "reason": "白底已修正，但误带最外侧配房，主体范围需要修正。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Image 1 is an existing BLACK INK architectural plate to correct. Image 2 is the actual Dou Dafu Ancestral Temple front photograph, geometry evidence ONLY.\nRemove ONLY the two extraneous SMALL BUILDING WINGS at the EXTREME LEFT and EXTREME RIGHT of Image 1. These are not the subject. Keep the central large offering pavilion and the immediately adjacent lower roof portions of its three-bay main hall behind it. Retain the offering pavilion's two very thick front columns, the four smaller visible hall facade columns, large bracket sets, two blank plaque rectangles, three hall bays, complete low terrace and central steps. No extra outer wings, no extra outer roof ridges, no extra outer pillars or bay rows. The remaining subject should be a coherent pavilion attached to ONE three-bay hall as in the real photograph.\nRecenter this remaining central architectural assembly on the same landscape 1536x1024 canvas, with clear 8% pure-white side margins. Do not change the central roof silhouette or intricate brackets. Fully OPAQUE PURE WHITE #FFFFFF canvas and interior blank surfaces, crisp delicate BLACK contour lines only; no alpha transparency, no gray fill, no wash, no shading, no fog, no halo, no text, no background scene. Keep all roofs and base uncut. Draw no new details. This is a selective wing-removal correction, not a new generic temple.",
+      "reference_files": [
+        "assets/generated/sx_doudafu-rejected-wings.png",
+        "assets/references/sx_doudafu-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03c-6b8b-7231-94b2-d1912c6fa457/exec-433285c6-b58d-40f3-b49e-e11fd11d5898.png",
+      "saved_file": "assets/generated/sx_doudafu.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际查看最终原件：献亭双前柱、斗栱与后方大殿相接，最外侧配房已移除。",
+      "屋脊、屋角、柱脚及台基未裁切，空匾无文字，白底黑线。"
+    ],
+    "limitations": "依据单张正面照片进行视角规整及细节简化，不是测绘图；复杂斗栱与门窗细节为艺术转译，待用户审图。"
+  }
+}
