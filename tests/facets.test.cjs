@@ -9,9 +9,35 @@ const catalog = facets.classify(SITES, PLACES);
 const library = create(catalog, { getItem: () => null, setItem() {} });
 const find = filters => Array.from(library.all().filter(site => facets.matches(site, filters)), site => site.id).sort();
 
+test('Shanghai filtering and expansion preserve prior records and blank arrival dates', () => {
+  const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/shanghai-batch.json'), 'utf8'));
+  assert.deepEqual(find({ country: 'CN', region: 'east', province: '上海' }), [...batch.ids].sort());
+  assert.deepEqual(find({ province: '上海', type: 'pagoda' }), ['sh_fangta', 'sh_longhuata']);
+  assert.deepEqual(find({ province: '上海', query: '兴圣教寺' }), ['sh_fangta']);
+  assert.deepEqual(find({ province: '上海', dynasty: 'yuan', type: 'hall' }), ['sh_zhenru']);
+  const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
+  const before = create(catalog.filter(site => !batch.ids.includes(site.id)), storage);
+  before.setRecord('xianwall', { status: 'visited', visitedOn: '2025-05-01', note: '保留城墙行记' });
+  before.setStatus('toji', 'unvisited');
+  const after = create(catalog, storage);
+  for (const id of batch.ids) {
+    assert.equal(after.record(id).status, 'unvisited');
+    assert.equal(after.record(id).visitedOn, '');
+  }
+  assert.deepEqual(after.record('xianwall'), before.record('xianwall'));
+  assert.equal(after.record('toji').status, 'unvisited');
+  after.setRecord('sh_longhuata', { status: 'visited', visitedOn: '', note: '塔身与木檐' });
+  const restored = create(catalog, { getItem: () => null, setItem() {} });
+  restored.import(after.export());
+  assert.equal(restored.record('sh_longhuata').note, '塔身与木檐');
+  assert.equal(restored.record('sh_longhuata').visitedOn, '');
+  assert.equal(restored.record('sh_fangta').status, 'unvisited');
+  assert.deepEqual(restored.record('xianwall'), before.record('xianwall'));
+});
+
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 17);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 18);
   for (const site of catalog) {
     assert(facets.regions[site.region].provinces.includes(site.province));
     assert.equal(new Set(site.types).size, site.types.length);
@@ -43,7 +69,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'south'), []);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 17);
+  assert.equal(facets.provinces(catalog).length, 18);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {
@@ -64,7 +90,7 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
   assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['京都府', '奈良县']);
-  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 15);
+  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 16);
 });
 
 test('Japanese additions seed wishes with blank dates and survive backup restoration', () => {

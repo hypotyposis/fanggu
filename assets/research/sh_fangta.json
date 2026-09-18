@@ -1,0 +1,110 @@
+{
+  "id": "sh_fangta",
+  "subject": "松江兴圣教寺塔 · 方塔园 · 九层方塔",
+  "status": "complete",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sh_fangta-base-photo.jpg",
+    "assets/references/sh_fangta-full-photo.jpg",
+    "assets/references/sh_fangta-photo.jpg",
+    "assets/generated/sh_fangta-attempt-2.png"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/generated/sh_fangta-attempt-2.png",
+    "assets/references/sh_fangta-base-photo.jpg"
+  ],
+  "source_note": "全塔实拍用于底层柱廊和九层主体，另两图复核上部平座、木檐、铁刹及支链。参考有仰拍和暗部，重绘减弱透视、简化细节。1068—1093采用松江年鉴2019；较早2015年鉴列至1094，范围差异保留在年代来源中，年表使用约略排序点。",
+  "prompt": "Create a WHITE PAGE monochrome architectural illustration.\nDraw the Songjiang Square Pagoda in exactly the NINE-tier shape of Image 2. Image 1 is a fine black contour drawing style sample. Image 3 is the real pagoda photograph. Image 2 is shape reference ONLY; its translucent grey material and halo are errors and should not be retained.\nThe entire 1024x1536 portrait page is completely filled with solid opaque PURE WHITE #FFFFFF, alpha 255 everywhere. Then draw delicate BLACK INK STROKES on this WHITE PAPER. All wall and roof faces are white paper bounded by black strokes, not grey paint. All surrounding regions are white paper. This is a book page, with no transparency or shadow.\nKeep exactly NINE separate tiled eave roofs: eight simple balcony floors and one broad columned ground-floor veranda roof. Preserve the square-plan tapering tower, straight horizontal timber railings, arched door outlines, narrow ringed iron spire and chains from Image 2. Keep its entire nine-tier silhouette, apex and bottom, centered with margins. Simplify the detail, use thin black contours and only a few roof-tile lines; much unmarked WHITE paper inside the drawing. No shading, grey fill, hatching, texture, glow, halo, checkerboard, text, vegetation or scenery.",
+  "generated_file": "assets/generated/sh_fangta.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-69a1c763-e929-4537-a084-dcbfd23778d3.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "方形九层 · 砖木塔",
+    "北宋 · 熙宁、元祐年间"
+  ],
+  "historical_sources": [
+    {
+      "title": "松江年鉴2019 · 兴圣教寺塔",
+      "url": "https://www.songjiang.gov.cn/sjsz/sjnj/sjnj2019/files/basic-html/page343.html"
+    },
+    {
+      "title": "松江年鉴2015 · 唐经幢与兴圣教寺塔（年代范围异记）",
+      "url": "https://www.songjiang.gov.cn/sjsz/sjnj/sjnj2015/files/basic-html/page483.html"
+    }
+  ],
+  "visual_review": "实际查看最终白底线稿：逐檐核对九重屋顶，含底层宽檐柱廊；方形塔身、横向栏杆和铁刹保持，顶部与基座未裁切，无文字和场景。局部开口与斗拱简化，年表排序年非确定落成纪年；新增交付待用户审阅。",
+  "completed_at": "2026-09-18",
+  "generation_attempts": [
+  {
+    "prompt": "Use case: style-transfer. Asset type: fine-line architectural illustration for heritage atlas 访古.\nImage 1 is the Vairocana contour STYLE MASTER only, delicate sparse black ink lines. Image 2 is the COMPLETE Songjiang Square Pagoda, GEOMETRY master for ALL NINE floors including the bottom colonnade. Image 3 supplements the upper body and long ringed iron finial and chains. Image 4 supplements roof and upper material structure. Draw the actual pagoda, not a generic tower.\nThe pagoda is SQUARE in plan, with EXACTLY NINE roofs/floors: ONE low ground-floor tower surrounded by a broad four-sided hipped roof on an open columned veranda, PLUS EIGHT successively narrower balcony floors above. Each floor has a central arched/hu-shaped doorway, flanking wall panels defined by timber/brick piers, simple straight horizontal timber balcony railings, a four-sided hipped tiled roof with uplifted corners, and selected brackets. Do not omit the ground-storey veranda or treat it as an unrelated pavilion. Keep eight balcony levels plus ground level, nine eave lines total. Preserve the slender long ringed iron finial and thin support chains. Show near-front elevation with very slight side depth, verticals vertical rather than upward convergence.\nPerfectly flat OPAQUE PURE WHITE #FFFFFF canvas. Fine BLACK INK contours only, pure white on all unmarked surfaces inside and outside. No transparency in this original. Sparse selected structural and tile strokes, no filled surfaces, no grey shadows, hatching, texture, pencil grain, gradient, color, halo, glow, cast shadow or checkerboard. Remove bamboo, trees, neighboring buildings, fences, people, street and signage. No letters, labels, calligraphy, dimensions, watermark, frame or border.\nPortrait 1024×1536. Complete tower and finial and low stone base centered with comfortable margins, occupies about 82% height, no cropping. White background will be removed later by our script.",
+    "input_images": [
+      "assets/references/longmen-style-black.png",
+      "assets/references/sh_fangta-base-photo.jpg",
+      "assets/references/sh_fangta-full-photo.jpg",
+      "assets/references/sh_fangta-photo.jpg"
+    ],
+    "saved_file": "assets/generated/sh_fangta-attempt-1.png",
+    "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-18eda677-c71f-4cfa-970f-c027ea464337.png",
+    "status": "rejected",
+    "reason": "原件为带灰填充与光晕的半透明图，目检只见八重屋顶。"
+  },
+  {
+    "prompt": "Use case: precise-object-edit. Fix the Songjiang Square Pagoda line illustration in Image 1.\nImage 1 is a rejected candidate: it has EIGHT projecting roof tiers instead of nine, and unwanted translucent grey surfaces with a halo. Correct BOTH defects.\nINSERT ONE COMPLETE additional balcony floor AND its own four-sided tiled eave roof between the current third and fourth floors from the top. Then the finished pagoda has EXACTLY NINE distinct projecting roofs: EIGHT upper balcony floors plus ONE ground-floor tower with columned veranda. Count the original eight roofs and visibly add one, do not just stretch them. Slightly compress existing levels to fit portrait 1024x1536 with top and bottom margins. Keep the SQUARE tower plan, simple horizontal timber balcony railings, tapering walls, central door openings, broad ground veranda, long ringed iron finial and thin chains. Image 3 is the real complete pagoda for geometry, Image 2 gives thin contour style only.\nREPLACE EVERY TRANSLUCENT OR GREY REGION with flat OPAQUE PURE WHITE #FFFFFF. Building surfaces as well as all surrounding canvas must be WHITE paper; BLACK INK fine strokes only. No transparency, alpha fades, shadows, halo, glow, grey fills, gradient, checkerboard, paper texture or color in the original. Simplify dense tile marks to sparse selected structural contours, delicate like Image 2. The local script will remove white paper later.\nKeep complete apex and low footing uncut, no modern surroundings, vegetation, labels, text, calligraphy, frame or watermark.",
+    "input_images": [
+      "assets/generated/sh_fangta-attempt-1.png",
+      "assets/references/longmen-style-black.png",
+      "assets/references/sh_fangta-base-photo.jpg"
+    ],
+    "saved_file": "assets/generated/sh_fangta-attempt-2.png",
+    "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-1445-7fe2-916b-fdd243fea80f/exec-e22b56b5-b421-4643-93af-a4e2a08c85d3.png",
+    "status": "rejected",
+    "reason": "九重屋顶已补足，但原件仍为不合格的灰填充、光晕和半透明背景。"
+  }
+],
+  "visualReview": "pending_user",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Square_Tower_of_Songjiang.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Square_Tower_of_Songjiang.jpg/500px-Square_Tower_of_Songjiang.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "reference_file": "assets/references/sh_fangta-base-photo.jpg",
+      "author": "Kgbkgbkgb",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2010-01-12"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fangta_Park_Songjiang.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Fangta_Park_Songjiang.JPG/960px-Fangta_Park_Songjiang.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Fangta_Park_Songjiang.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_fangta-full-photo.jpg",
+      "author": "Heights",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2009-08-09"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%85%B4%E5%9C%A3%E6%95%99%E5%AF%BA%E5%A1%94.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/%E5%85%B4%E5%9C%A3%E6%95%99%E5%AF%BA%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/sh_fangta-photo.jpg",
+      "author": "Acot一杯茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2017-07-28"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Square_Tower_of_Songjiang.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Square_Tower_of_Songjiang.jpg/500px-Square_Tower_of_Songjiang.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+  "author": "Kgbkgbkgb",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "eb096fd8938dbfbfaf8cf8833580ee3b37613122a2519ce382cbf36c6f106537",
+    "seeds": []
+  }
+}
