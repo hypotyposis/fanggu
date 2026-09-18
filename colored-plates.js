@@ -4426,6 +4426,66 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "nx_xumishan": {
+    "src": "assets/colored-transparent-avif/nx_xumishan.avif",
+    "originalSrc": "assets/colored/nx_xumishan.png",
+    "transparentSrc": "assets/colored-transparent/nx_xumishan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "须弥山第5窟 · 弥勒大佛胸膝局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/nx_xumishan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Xumishan_Grottoes_(Close-up_view).jpg",
+        "author": "HyperKeda",
+        "license": "CC BY-SA 4.0",
+        "date": "2017-07-14"
+      }
+    ]
+  },
+  "nx_xixialing": {
+    "src": "assets/colored-transparent-avif/nx_xixialing.avif",
+    "originalSrc": "assets/colored/nx_xixialing.png",
+    "transparentSrc": "assets/colored-transparent/nx_xixialing.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "西夏陵3号陵 · 现存夯土陵塔 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/nx_xixialing.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:XiXia_Tomb_3_B.jpg",
+        "author": "BabelStone",
+        "license": "CC BY-SA 3.0",
+        "date": "2016-08-22"
+      }
+    ]
+  },
+  "nx_108towers": {
+    "src": "assets/colored-transparent-avif/nx_108towers.avif",
+    "originalSrc": "assets/colored/nx_108towers.png",
+    "transparentSrc": "assets/colored-transparent/nx_108towers.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "青铜峡一百零八塔 · 最上三行七塔局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/nx_108towers.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:一百零八塔.jpg",
+        "author": "Smwy09",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-09-06（来源页登记，拍摄时刻未知）"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

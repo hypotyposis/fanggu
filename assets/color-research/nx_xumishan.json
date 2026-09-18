@@ -1,0 +1,49 @@
+{
+  "id": "nx_xumishan",
+  "name": "须弥山石窟",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/nx_xumishan.png",
+    "assets/references/nx_xumishan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: Cave 5 Tang-dynasty Maitreya at Xumishan, Ningxia, ONLY the head, torso and two raised knees detail shown in Image 1. Image 1 is the accepted ink drawing, EXACT composition and worn lower contour; Image 2 is the real 2017 HyperKeda photo (material colors only); Image 3 is Foguang STYLE ONLY. Keep the figure's broad shoulders, long ears, raised knees and damaged lap. NO invented hands, mudras, crossed lotus legs, feet, base, aureole, cave walls or scenery.\nPresent material distribution: muted light sand-brown/pink-beige stone on torso and knees, face and neck somewhat darker grey-pink/earth-red with sparse faded dull ochre-red remnants and pale grey-white weathering marks visible in photo 2. Keep natural existing age, no fresh red paint, gold, full historic-polychromy restoration, or uniform yellow tint. Fine material-related dark contours, matte subtle pigment grain within subject only, restrained soft values; neutralize the photograph's strong cast sunlight and do not reproduce its hard shadow. Preserve original margins and partial-detail framing.\nCRITICAL ORIGINAL: fill the whole exterior canvas with OPAQUE SOLID PURE WHITE #FFFFFF, no transparency or glow, not a cutout request. White removed later by local script. Portrait 1024x1536.",
+  "material_observations": "实际查看日间实拍：主体石面浅砂褐、粉褐，脸部有低饱和暗赭红残色和灰白斑驳，胸膝较浅，耳颈及衣褶暗处灰褐；日照强弱差明显，不复制投射硬光、不恢复金身或鲜艳彩绘。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xumishan_Grottoes_(Close-up_view).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Xumishan_Grottoes_%28Close-up_view%29.jpg",
+      "author": "HyperKeda",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2017-07-14",
+      "reference_file": "assets/references/nx_xumishan-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/nx_xumishan.png",
+  "note": "第5窟唐代弥勒大佛胸膝局部，不补手足莲座；内置imagegen白底原件经脚本去底，当前交付图版已由用户独立确认验收通过。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-ecc6af58-d2e1-4ec9-8dae-59ecdb9ecf07.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6a512dc8594b35f5a971ef6e7aff47b659a5477173902d46a345017bfde2c4be",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "date": "2026-09-18",
+    "statement": "验收通过",
+    "sourceSha256": "6a512dc8594b35f5a971ef6e7aff47b659a5477173902d46a345017bfde2c4be",
+    "inputSha256": "7c25838711fed233bd99fd03a529a6a5be8314c5ef8531a1a1da720dce54ac85",
+    "avifSha256": "573665595d27956b7d6188c57a0ca0ea2068c99ec7bfc2384a1038a2c9cdf0f3",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "目检：头胸与两膝局部、长耳及残损下缘保持，未补手足或莲座；粉砂褐主体、低饱和赭红与浅色风化斑驳。面部与材质为照片的插画转译，非彩绘复原。",
+      "open_air_seed_review": "外部白底和塔间空白连通，无需额外透空种子；实体浅色及暗部保留。"
+    }
+  }
+}

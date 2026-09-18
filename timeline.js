@@ -8,7 +8,7 @@
   const endYear = 2026;
   const x = year => 76 + 1090 * (year <= 600 ? year / 600 * .18 : year <= 1250 ? .18 + (year - 600) / 650 * .54 : .72 + (year - 1250) / (endYear - 1250) * .28);
   const lane = (site, dynasties) => dynasties[site.dyn].country === 'JP' ? 'japan'
-    : site.timelineLane === 'north' || ['han', 'bei', 'beiqi', 'sui', 'liao', 'yuan', 'ming', 'modern'].includes(site.dyn) ? 'north' : 'south';
+    : site.timelineLane === 'north' || ['han', 'bei', 'beiqi', 'sui', 'liao', 'xixia', 'yuan', 'ming', 'modern'].includes(site.dyn) ? 'north' : 'south';
   const trackY = { north: 91, south: 155, japan: 218 };
   function clusters(sites, dynasties) {
     const result = [];
@@ -81,19 +81,21 @@
       ['yuan', '元', 1271, 1368, 'unified'], ['ming', '明', 1368, 1644, 'unified'], ['ming', '清', 1644, 1912, 'unified'], ['modern', '今', 1912, endYear, 'unified'],
       ['bei', '北魏', 386, 534, 'north'], ['beiqi', '北齐', 550, 577, 'north'],
       ['liao', '辽', 907, 1125, 'north'], ['liao', '金', 1115, 1234, 'north'],
+      ['xixia', '西夏', dynasties.xixia.start, dynasties.xixia.end, 'northwest'],
       ['nan', '南朝', 420, 589, 'south'], ['tang', '唐', 618, 907, 'south'], ['zhou', '五代', 907, 960, 'south'],
       ['song', '北宋', 960, 1127, 'south'], ['song', '南宋', 1127, 1279, 'south'],
       ...Object.entries(dynasties).filter(([, era]) => era.country === 'JP').map(([key, era]) => [key, era.glyph, era.start, era.end, 'japan']),
     ];
     for (const [key, label, start, end, track] of bars) {
-      const y = track === 'south' ? 115 : track === 'japan' ? 182 : 50, height = track === 'unified' ? 117 : track === 'japan' ? 48 : 53;
+      // Xixia overlaps Liao/Jin in time; its narrow strip sits above those bars.
+      const y = track === 'northwest' ? 28 : track === 'south' ? 115 : track === 'japan' ? 182 : 50, height = track === 'northwest' ? 17 : track === 'unified' ? 117 : track === 'japan' ? 48 : 53;
       const left = x(start), width = x(end) - left, center = left + width / 2;
       const group = sv('g', { class: 'tl-period', 'data-period': key, 'aria-label': `${label}，${start}—${end}，查看${periodNames[key]}古迹` });
       group.style.setProperty('--acc', dynasties[key].acc);
       group.append(sv('title', {}, `${label} · ${start}—${end} · 查看${periodNames[key]}古迹`));
       group.append(sv('rect', { class: 'period-fill', x: left, y, width, height, rx: 2 }));
       group.append(sv('rect', { class: 'period-hit', x: center - Math.max(width, 24) / 2, y, width: Math.max(width, 24), height }));
-      const labelY = track === 'unified' ? 119 : track === 'japan' ? 198 : width < 30 ? 42 : y + 19;
+      const labelY = track === 'northwest' ? 41 : track === 'unified' ? 119 : track === 'japan' ? 198 : width < 30 ? 42 : y + 19;
       if (width < 30 && track === 'north') group.append(sv('line', { class: 'narrow-leader', x1: center, x2: center, y1: 44, y2: 50 }));
       group.append(sv('text', { class: 'period-name', x: center, y: labelY, 'text-anchor': 'middle' }, label));
       activate(group, () => choose(key)); svg.append(group);

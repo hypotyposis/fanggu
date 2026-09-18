@@ -12,9 +12,9 @@ additions.push('guanyintang','guanque','xianshen','chongsheng','dule','qufukongm
 additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshodaiji','byodoin','todaiji','kiyomizu','toji');
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
-additions.push(...northernExpansion.ids, 'sd_pizhi');
-test('all 201 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 201); assert.equal(new Set(SITES.map(s => s.id )).size, 201);
+additions.push(...northernExpansion.ids, 'sd_pizhi', 'nx_xixialing', 'nx_108towers', 'nx_xumishan');
+test('all 204 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 204); assert.equal(new Set(SITES.map(s => s.id )).size, 204);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));

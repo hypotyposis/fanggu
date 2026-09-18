@@ -9,6 +9,7 @@ const DYN = {
   zhou: { glyph: '五代', name: '五代 · 十国', acc: 'var(--ash)' },
   song: { glyph: '宋', name: '宋', acc: 'var(--verdigris)' },
   liao: { glyph: '辽', name: '辽 · 金', acc: 'var(--cinnabar)' },
+  xixia: { glyph: '夏', name: '西夏', acc: 'var(--sand)', start: 1038, end: 1227 },
   yuan: { glyph: '元', name: '元', acc: 'var(--amber)' },
   ming: { glyph: '明', name: '明 · 清', acc: 'var(--lapis)' },
   modern: { glyph: '今', name: '近现代', acc: 'var(--silver)' },
@@ -6959,6 +6960,47 @@ SITES.push({
   ]
 });
 
+SITES.push({
+  id: 'nx_xumishan', name: '须弥山石窟', short: '须弥山', sub: '第5窟弥勒大佛 · 胸膝局部',
+  dyn: 'tang', tag: '唐', era: '唐代造像 · 石窟北魏始凿', year: 750, yearLabel: '唐代', yearApprox: true,
+  yearNote: '750仅作第5窟唐代大佛的约略年表定位，不是确切开凿年；不以石窟北魏初创年代代替所绘主体。',
+  place: '宁夏固原 · 原州区 · 须弥山', placeKey: 'nx_guyuan', types: ['grotto', 'sculpture'], initialStatus: 'unvisited',
+  legacyNames: ['须弥山大佛', '须弥山弥勒大佛'],
+  lede: '六盘山北麓，石窟沿山势分布在起伏的岩壁间。第5窟的唐代弥勒大佛以宽肩、长耳和丰圆面庞迎向山谷，衣纹仍从胸前舒缓垂下。',
+  facts: [
+    '<b>主体断代</b>：石窟始凿于北魏晚期，历经西魏、北周、隋唐营造；本图选第5窟唐代弥勒大佛，不将北朝洞窟混作唐代。',
+    '<b>大佛造像</b>：为大型弥勒坐像。宁夏文旅厅资料记高约20.6米，另一介绍记20.06米；这里保留约数，不据介绍文字宣称实测精度。',
+    '<b>所绘局部</b>：依据2017年实拍绘头部、胸前衣纹与双膝，保留风化残损；不补造未见的手、足或莲座，不复原彩绘。',
+  ],
+  caption: ['须弥山第5窟 · 弥勒大佛胸膝局部', '唐代造像 · 依实拍保留风化'], tall: true,
+}, {
+  id: 'nx_xixialing', name: '西夏陵', short: '西夏陵', sub: '3号陵 · 现存夯土陵塔',
+  dyn: 'xixia', tag: '西夏', era: '11—13世纪 · 西夏陵墓遗址', year: 1100, yearLabel: '11—13世纪', yearApprox: true,
+  yearNote: '1100仅为西夏时期的约略排序点，不是3号陵的确切营建年；3号陵一般被认为是李元昊泰陵，墓主归属不作为已证实结论。',
+  place: '宁夏银川 · 西夏区 · 贺兰山东麓', placeKey: 'nx_yinchuan', types: ['tomb'], initialStatus: 'unvisited',
+  legacyNames: ['西夏王陵', '西夏帝陵', '泰陵'],
+  lede: '贺兰山东麓，夯土陵塔露出层层风化的肩线。原有的建筑外装已不存，留下的土芯却仍让这片帝王陵园具有鲜明的轮廓。',
+  facts: [
+    '<b>陵园时代</b>：西夏陵形成于11至13世纪，是西夏皇室墓地；3号陵一般被认为与开国皇帝李元昊有关，图版不把推定墓主当成确定事实。',
+    '<b>遗址形态</b>：本图仅绘3号陵现存夯土陵塔，按实拍保留收分、层带与不规则残损，不采用博物馆复原模型，也不补绘屋檐与塔刹。',
+    '<b>世界遗产</b>：西夏陵于2025年列入《世界遗产名录》；遗产包括九座帝陵、陪葬墓及相关建筑、防洪遗存，本图不代表整座陵园。',
+  ],
+  caption: ['西夏陵3号陵 · 现存夯土陵塔', '西夏遗址 · 非原貌复原'],
+}, {
+  id: 'nx_108towers', name: '青铜峡一百零八塔', short: '一百零八塔', sub: '塔群最上三行 · 七塔局部',
+  dyn: 'xixia', tag: '西夏', era: '西夏始建说 · 后世重修', year: 1150, yearLabel: '西夏始建', yearApprox: true,
+  yearNote: '1150仅按青铜峡市政府的西夏始建说作约略定位，非确切建造年。1988年国保名录登记时代为元；始建、后世重修与现存砖砌外观须分别看待。',
+  place: '宁夏吴忠 · 青铜峡 · 黄河西岸', placeKey: 'nx_qingtongxia', types: ['pagoda'], initialStatus: 'unvisited',
+  legacyNames: ['108塔', '一百〇八塔', '青铜峡塔群'],
+  lede: '黄河西岸，砖塔依山势一行行排开，从顶端一塔向下展成三角形。每座塔都很小，合在一起却形成了宁夏佛教建筑极醒目的秩序。',
+  facts: [
+    '<b>十二行塔群</b>：自上而下按1、3、3、5、5、7、9、11、13、15、17、19座排列，合计108座；单体塔座、塔身略有差异，不能当作一种塔型整齐复制。',
+    '<b>断代与修缮</b>：青铜峡市政府介绍采用西夏始建说，1988年全国重点文物保护单位名录登记为元代；本条按始建说分类，并明列登记差异，不将现存全部砖砌外装视为西夏原物。',
+    '<b>所绘范围</b>：图版仅取最上三行七座塔及承托台地，突出较大的顶塔和1、3、3排列；不以七塔局部冒充完整108塔全景。',
+  ],
+  caption: ['一百零八塔 · 最上三行七塔局部', '西夏始建说 · 后世重修现貌'],
+});
+
 SITES.sort((a, b) => Object.keys(DYN).indexOf(a.dyn) - Object.keys(DYN).indexOf(b.dyn) || a.year - b.year);
 
 const CHAPTERS = [
@@ -6971,6 +7013,7 @@ const CHAPTERS = [
   { key: 'zhou', years: '907 — 979 · 五代十国', blurb: '中原五代更迭之际，吴越、南唐等国留下石塔、经幢与佛教造像，北汉留下镇国寺万佛殿。北宋立国后，南北诸国仍延续了一段时间；这些古迹按所属政权与现存主体分别纪年。' },
   { key: 'song', years: '960 — 1279', blurb: '两宋三百年：摩尼殿早《营造法式》半个世纪已见其规制；砖塔在定州砌到八十三米，到江南又与木檐混构。' },
   { key: 'liao', years: '907 — 1234', blurb: '契丹与女真承唐制而益壮：减柱、移柱以扩展佛殿空间，斜拱如花，殿阁之巨为北地独有；金人重修的华塔，则把一座砖塔堆成一束花。' },
+  { key: 'xixia', years: '1038 — 1227 · 西夏', blurb: '贺兰山下的陵塔与黄河岸边的佛塔，留下西夏的两种轮廓。陵园以现存夯土遗址入册，塔群注明始建说与后世重修，不以复原想象代替现存形态。' },
   { key: 'yuan', years: '1271 — 1368', blurb: '元人用材粗放，梁架常见弯木，村庙里的正殿与戏台却把日常的信仰和娱乐搭在了一个院子里。' },
   { key: 'ming', years: '1368 — 1912', blurb: '官式定型，琉璃盛行：砖塔披上五色琉璃，圆殿以蓝瓦象天，彩塑在晋中的小寺里达到极盛。' },
   { key: 'modern', years: '1912 — 至今', blurb: '古楼的名字延续到今天，新的楼体重新立在山河之间。这里按现存重建建筑的年代入册，另记古楼沿革与仿古形制。' },
@@ -7095,3 +7138,10 @@ PLACES.push({"key": "hn_开封", "name": "开封", "prov": "河南", "lat": 34.7
 {"key": "sx_zhangzi", "name": "长子", "prov": "山西", "lat": 35.982502, "lon": 112.933193});
 
 PLACES.push({ key: "sd_changqing", name: "长清", prov: "山东", country: "CN", lat: 36.364722, lon: 116.979722 });
+
+// City-level map points; monument locations and coordinate sources live in the research records.
+PLACES.push(
+  { key: 'nx_yinchuan', name: '银川', prov: '宁夏', country: 'CN', lat: 38.485, lon: 106.225 },
+  { key: 'nx_qingtongxia', name: '青铜峡', prov: '宁夏', country: 'CN', lat: 38.020939, lon: 106.069089 },
+  { key: 'nx_guyuan', name: '固原', prov: '宁夏', country: 'CN', lat: 36.008011, lon: 106.278161 },
+);

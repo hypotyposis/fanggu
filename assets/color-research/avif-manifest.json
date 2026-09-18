@@ -8789,6 +8789,159 @@
         "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
       }
     },
+    "nx_xumishan": {
+      "source": "assets/colored/nx_xumishan.png",
+      "sourceSha256": "6a512dc8594b35f5a971ef6e7aff47b659a5477173902d46a345017bfde2c4be",
+      "sourceBytes": 2078510,
+      "input": "assets/colored-transparent/nx_xumishan.png",
+      "inputSha256": "7c25838711fed233bd99fd03a529a6a5be8314c5ef8531a1a1da720dce54ac85",
+      "inputBytes": 1973613,
+      "src": "assets/colored-transparent-avif/nx_xumishan.avif",
+      "sha256": "573665595d27956b7d6188c57a0ca0ea2068c99ec7bfc2384a1038a2c9cdf0f3",
+      "bytes": 242411,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 852882,
+        "opaquePixels": 710624,
+        "meanError": 0.0076363881429036455,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 3769,
+        "transparentPixels": 856160,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 2.364,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "6a512dc8594b35f5a971ef6e7aff47b659a5477173902d46a345017bfde2c4be",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      },
+      "review": {
+        "reviewer": "user",
+        "date": "2026-09-18",
+        "statement": "验收通过",
+        "sourceSha256": "6a512dc8594b35f5a971ef6e7aff47b659a5477173902d46a345017bfde2c4be",
+        "inputSha256": "7c25838711fed233bd99fd03a529a6a5be8314c5ef8531a1a1da720dce54ac85",
+        "avifSha256": "573665595d27956b7d6188c57a0ca0ea2068c99ec7bfc2384a1038a2c9cdf0f3"
+      }
+    },
+    "nx_xixialing": {
+      "source": "assets/colored/nx_xixialing.png",
+      "sourceSha256": "ce1256a9efa891cc1ca15166104d308e7b22a1b539d25a721e1910c4e9c6d526",
+      "sourceBytes": 1932902,
+      "input": "assets/colored-transparent/nx_xixialing.png",
+      "inputSha256": "4c4233278968c5b0331f2c485f452f713e70179e3bd997db95a09680f31b3520",
+      "inputBytes": 1793482,
+      "src": "assets/colored-transparent-avif/nx_xixialing.avif",
+      "sha256": "d5e4d1702c467e0209fdff2b0f9059528f1eae97c5408b309fc336f4c4076bf2",
+      "bytes": 210628,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1027060,
+        "opaquePixels": 538482,
+        "meanError": 0.0059604644775390625,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 2902,
+        "transparentPixels": 1029272,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 2.432,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ce1256a9efa891cc1ca15166104d308e7b22a1b539d25a721e1910c4e9c6d526",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      },
+      "review": {
+        "reviewer": "user",
+        "date": "2026-09-18",
+        "statement": "验收通过",
+        "sourceSha256": "ce1256a9efa891cc1ca15166104d308e7b22a1b539d25a721e1910c4e9c6d526",
+        "inputSha256": "4c4233278968c5b0331f2c485f452f713e70179e3bd997db95a09680f31b3520",
+        "avifSha256": "d5e4d1702c467e0209fdff2b0f9059528f1eae97c5408b309fc336f4c4076bf2"
+      }
+    },
+    "nx_108towers": {
+      "source": "assets/colored/nx_108towers.png",
+      "sourceSha256": "e149599f2b8d365ac1469c43e2d5e7925acdbdced33b926b9a91e6ab7a30657e",
+      "sourceBytes": 1720159,
+      "input": "assets/colored-transparent/nx_108towers.png",
+      "inputSha256": "e03d5dbefa35a3eea5a1a1cdc72273a1dcdc249012d56220adceb23564fc3760",
+      "inputBytes": 1570472,
+      "src": "assets/colored-transparent-avif/nx_108towers.avif",
+      "sha256": "ad4f47654698e7678b8b219ca47f1848f6fd5e27fcc39fc5f28166677e694ef8",
+      "bytes": 159666,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1122595,
+        "opaquePixels": 437759,
+        "meanError": 0.009733835856119791,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "edgeDecontaminatedPixels": 5790,
+        "transparentPixels": 1126405,
+        "rgbUnchanged": false,
+        "interiorRgbUnchanged": true
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 2.381,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e149599f2b8d365ac1469c43e2d5e7925acdbdced33b926b9a91e6ab7a30657e",
+        "seeds": [],
+        "processorSha256": "0e117daea66180ecc16ab0a0fd4e69731ec70cac24af65c3c0041c95db66a418"
+      },
+      "review": {
+        "reviewer": "user",
+        "date": "2026-09-18",
+        "statement": "验收通过",
+        "sourceSha256": "e149599f2b8d365ac1469c43e2d5e7925acdbdced33b926b9a91e6ab7a30657e",
+        "inputSha256": "e03d5dbefa35a3eea5a1a1cdc72273a1dcdc249012d56220adceb23564fc3760",
+        "avifSha256": "ad4f47654698e7678b8b219ca47f1848f6fd5e27fcc39fc5f28166677e694ef8"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

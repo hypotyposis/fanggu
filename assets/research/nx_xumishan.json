@@ -1,0 +1,95 @@
+{
+  "id": "nx_xumishan",
+  "status": "complete",
+  "subject": "须弥山第5窟 · 弥勒大佛胸膝局部",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Xumishan_Grottoes_(Close-up_view).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Xumishan_Grottoes_%28Close-up_view%29.jpg",
+  "author": "HyperKeda",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "date": "2017-07-14",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/nx_xumishan-photo.jpg",
+    "assets/generated/nx_xumishan-attempt-1.png"
+  ],
+  "source_note": "依HyperKeda于2017年实拍绘第5窟唐代弥勒大佛胸膝局部，保留造像残损，不补手、足与莲座。文旅资料有20.6米、20.06米两种高度表述，仅记约数；石窟北魏初创与大佛唐代主体分开说明。",
+  "prompt": "Use case: precise-object-edit. Correct ONLY the ink and background in this detail drawing of Cave 5 Maitreya at Xumishan. Keep its current head, torso, two raised knees and worn lap geometry, robe folds and partial-detail framing. The transparent grey glow is a DEFECT.\nMake an OPAQUE BLACK-ON-WHITE original PNG. Fill EVERY canvas pixel with solid PURE WHITE #FFFFFF at 100% opacity, both inside and outside the outlined sculpture, then draw only thin solid BLACK contour strokes. All unmarked surfaces must remain opaque uniform white. Remove every grey tonal fill, grey shadow, white gradient, glow and every trace of transparency. It must look like black pen on perfectly white paper, WITHOUT paper texture. NOT a cutout. A separate local script will remove white later; this original must have white fully opaque background.\nPortrait 1024x1536. Shrink the selected detail slightly so every stroke has at least 60 pixels of blank pure white margin from ALL four edges. Preserve both knees and head, keep worn lower contour, no invented hands, feet or lotus seat. No scenery, grotto walls, text, watermark, border or shading.",
+  "generated_file": "assets/generated/nx_xumishan.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "须弥山第5窟 · 弥勒大佛胸膝局部",
+    "唐代造像 · 依实拍保留风化"
+  ],
+  "historical_sources": [
+    {
+      "title": "宁夏文化和旅游厅 · 须弥山旅游区",
+      "url": "https://whhlyt.nx.gov.cn/jqjd/gys_66590/xmslyq/"
+    },
+    {
+      "title": "宁夏文化和旅游厅 · 须弥山石窟修缮记",
+      "url": "https://whhlyt.nx.gov.cn/xxfb/wlyw/202204/t20220419_3653903.html"
+    },
+    {
+      "title": "宁夏人民政府 · 须弥石窟（高度记20.06米）",
+      "url": "https://www.nx.gov.cn/ssjn/esyj/202303/t20230329_4012880_wap.html"
+    }
+  ],
+  "map_location": {
+    "level": "city",
+    "source_page": "https://commons.wikimedia.org/wiki/Category:Guyuan"
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "第5窟大佛胸膝局部，头、胸、双膝完整入画，保留残损轮廓。",
+      "无补造手、足、莲座、龛壁、文字与供物。",
+      "白底原件通过纯白边缘及中性线条检查，透明交付保留可见轮廓。"
+    ],
+    "limitations": "艺术转译，不是实测图；用户已确认当前交付图版通过，不能据此声称文保级复原。"
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-41eac6cf-30d9-4551-b140-2d11214f661f.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ab5a856c7ee6bdfeab1491bd91ad87b7f9e32ced6062fc329496309a2cb445ac",
+    "seeds": []
+  },
+  "generation_inputs": [
+    "assets/generated/nx_xumishan-attempt-1.png"
+  ],
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line Buddhist sculpture illustration for the Chinese heritage collection 访古.\nImage 1 is LINE STYLE ONLY: the Vairocana master supplies elegant sparse delicate slightly organic fine contours and generous white areas, never its statue geometry. Image 2 is SUBJECT GEOMETRY ONLY: the photographed Tang-dynasty Maitreya in Cave 5 of Xumishan, Guyuan, Ningxia.\nCreate a faithful DETAIL PLATE of this Buddha's head, torso and two raised knees only, down to the clearly visible worn lower knee surfaces in photo 2. This is an explicitly partial sculpture plate, NOT a reconstruction of the unseen feet or seat. Preserve the photograph's broad full face, small rounded hair curls, long ears, broad shoulders, draped thin robe with several curved horizontal chest folds, large raised rounded knees on both sides and the worn damaged lap area. Do not invent hands, mudras, crossed lotus legs, a lotus pedestal, aureole, jewelry or restorations. Remove the surrounding grotto wall, tourists, fence, offerings, flowers, donation boxes and every inscription. Draw the actual Xumishan statue, not the Longmen statue. Near frontal view with reduced photographic upward distortion.\nPortrait 1024x1536, selected detail centered with generous white margins, head and both knees fit completely within the canvas. Keep the worn lower surfaces bounded by an irregular fine contour; no invented base.\nRefined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. Fine confident contours, minimal hair and robe detail, just a few erosion contours. All unmarked surfaces are uniformly pure white inside and outside. No solid shadows, grey wash, broad shading, crosshatching, grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. No lettering, captions, watermark, frame or border. White background will later be removed by a local script.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/nx_xumishan-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-8c087b32-e7e9-482d-a926-bd1fddef1481.png",
+      "saved_file": "assets/generated/nx_xumishan-attempt-1.png",
+      "status": "rejected",
+      "reason": "RGBA首稿带透明灰色光晕，既非合格白底原件也非合格原生透明图，不用于交付。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Correct ONLY the ink and background in this detail drawing of Cave 5 Maitreya at Xumishan. Keep its current head, torso, two raised knees and worn lap geometry, robe folds and partial-detail framing. The transparent grey glow is a DEFECT.\nMake an OPAQUE BLACK-ON-WHITE original PNG. Fill EVERY canvas pixel with solid PURE WHITE #FFFFFF at 100% opacity, both inside and outside the outlined sculpture, then draw only thin solid BLACK contour strokes. All unmarked surfaces must remain opaque uniform white. Remove every grey tonal fill, grey shadow, white gradient, glow and every trace of transparency. It must look like black pen on perfectly white paper, WITHOUT paper texture. NOT a cutout. A separate local script will remove white later; this original must have white fully opaque background.\nPortrait 1024x1536. Shrink the selected detail slightly so every stroke has at least 60 pixels of blank pure white margin from ALL four edges. Preserve both knees and head, keep worn lower contour, no invented hands, feet or lotus seat. No scenery, grotto walls, text, watermark, border or shading.",
+      "input_images": [
+        "assets/generated/nx_xumishan-attempt-1.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-41eac6cf-30d9-4551-b140-2d11214f661f.png",
+      "saved_file": "assets/generated/nx_xumishan.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "date": "2026-09-18",
+    "statement": "验收通过",
+    "sourceSha256": "ab5a856c7ee6bdfeab1491bd91ad87b7f9e32ced6062fc329496309a2cb445ac",
+    "lineSha256": "036ccb1259b55d8dc7d9c0789a3829681836f51bbc0566cc79b84cef7ea4a68b"
+  }
+}

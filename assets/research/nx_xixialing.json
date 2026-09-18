@@ -1,0 +1,91 @@
+{
+  "id": "nx_xixialing",
+  "status": "complete",
+  "subject": "西夏陵3号陵 · 现存夯土陵塔",
+  "source_page": "https://commons.wikimedia.org/wiki/File:XiXia_Tomb_3_B.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/XiXia_Tomb_3_B.jpg",
+  "author": "BabelStone",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "date": "2016-08-22",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/nx_xixialing-photo.jpg",
+    "assets/generated/nx_xixialing-attempt-1.png"
+  ],
+  "source_note": "依据BabelStone于2016年拍摄的3号陵现存夯土陵塔，绘收分、层带与残损；不取复原模型。3号陵常被认为是李元昊陵墓，归属仍以推定表述。",
+  "prompt": "Use case: precise-object-edit. Fix only the canvas margins of this architectural ink illustration of the surviving earthen tower of Western Xia Tomb No.3.\nKeep the same complete ruin, its weathered silhouette and fine black contour style. Reduce the entire drawing to about 80 percent of the canvas width, centered on the same landscape 1536x1024 PURE WHITE #FFFFFF canvas. The previous horizontal ground lines reach the left and right image edges: REMOVE those edge-reaching ground lines entirely, retaining at most two very short ground marks immediately under the ruin. EVERY pixel along all four outer canvas edges must remain pure white, with at least 80 pixels of blank white space between every black stroke and every edge. Keep apex and base complete, no cropping. No grey shading, paper texture, gradients, halo, shadow or text. Do not add reconstructed roofs, buildings or scenery.",
+  "generated_file": "assets/generated/nx_xixialing.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "西夏陵3号陵 · 现存夯土陵塔",
+    "西夏遗址 · 非原貌复原"
+  ],
+  "historical_sources": [
+    {
+      "title": "UNESCO · Xixia Imperial Tombs",
+      "url": "https://whc.unesco.org/en/list/1736"
+    },
+    {
+      "title": "国务院新闻办公室 · 3号陵墓主为推定",
+      "url": "https://english.scio.gov.cn/chinavoices/2026-01/14/content_118278863.html"
+    }
+  ],
+  "map_location": {
+    "level": "city",
+    "source_page": "https://commons.wikimedia.org/wiki/Category:Yinchuan"
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "仅一座现存夯土陵塔，未复原屋檐与塔刹。",
+      "不规则收分、层带及残损已对照实拍；原件四周有留白。",
+      "原件通过white-matte白边与中性线条校验，透明线稿保留可见笔画。"
+    ],
+    "limitations": "艺术转译，不是实测图；用户已确认当前交付图版通过，不能据此声称文保级复原。"
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-249edb89-a93d-47fa-87b5-094a051530a1.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7896806915f8afda76d16a3b5fc3f6f9f78aaa7de927e112771eacfe498f0721",
+    "seeds": []
+  },
+  "generation_inputs": [
+    "assets/generated/nx_xixialing-attempt-1.png"
+  ],
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, the existing Vairocana Buddha contour drawing. Match its elegant delicate slightly organic thin lines, restrained detail and generous blank areas. Use it for LINE STYLE ONLY, never its shape. Image 2 is SUBJECT GEOMETRY ONLY: the actual surviving rammed-earth mausoleum tower of Western Xia Tomb No.3, Yinchuan, Ningxia.\nDraw ONE complete isolated present-day EARTHEN RUIN matching photo 2: broad squat roughly octagonal tapering mound/tower, irregular flattened rounded apex, eroded gently stepped shoulders, nearly vertical broad lower face, slight horizontal rammed-earth bands and sparse small irregular cavities. Keep the actual silhouette, proportions and weathered asymmetry. NO reconstructed pagoda, NO roofs, NO finial, NO invented doors, NO museum models. Remove fencing, signs, grass, trees, pavement, sky and neighboring ruins. Only a few short ground contours.\nRefined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. Confident fine outline and a few finer internal structural contours, not every crack or hole. All unmarked surfaces inside and outside remain pure white. No tonal shading, grey wash, solid shadows, crosshatching, pencil grain, paper texture, gradients, color, halo, cast shadow or checkerboard. No labels, letters, watermark, frame or border.\nLandscape 1536x1024, entire ruin occupies about 82% of canvas width, apex and base uncut, near straight-on at eye level, balanced breathing room. White canvas will be removed later by a local script.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/nx_xixialing-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-23eea29d-71b2-4cce-9268-74aeba26c8ca.png",
+      "saved_file": "assets/generated/nx_xixialing-attempt-1.png",
+      "status": "rejected",
+      "reason": "地面线触及左右边缘，不满足纯白边缘要求。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Fix only the canvas margins of this architectural ink illustration of the surviving earthen tower of Western Xia Tomb No.3.\nKeep the same complete ruin, its weathered silhouette and fine black contour style. Reduce the entire drawing to about 80 percent of the canvas width, centered on the same landscape 1536x1024 PURE WHITE #FFFFFF canvas. The previous horizontal ground lines reach the left and right image edges: REMOVE those edge-reaching ground lines entirely, retaining at most two very short ground marks immediately under the ruin. EVERY pixel along all four outer canvas edges must remain pure white, with at least 80 pixels of blank white space between every black stroke and every edge. Keep apex and base complete, no cropping. No grey shading, paper texture, gradients, halo, shadow or text. Do not add reconstructed roofs, buildings or scenery.",
+      "input_images": [
+        "assets/generated/nx_xixialing-attempt-1.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-249edb89-a93d-47fa-87b5-094a051530a1.png",
+      "saved_file": "assets/generated/nx_xixialing.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "date": "2026-09-18",
+    "statement": "验收通过",
+    "sourceSha256": "7896806915f8afda76d16a3b5fc3f6f9f78aaa7de927e112771eacfe498f0721",
+    "lineSha256": "b100d15f11aefb4eb57c0c7d9b2d82ef718261fcfd1329b5ad53d25959dc38d0"
+  }
+}

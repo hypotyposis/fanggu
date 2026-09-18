@@ -1,0 +1,49 @@
+{
+  "id": "nx_xixialing",
+  "name": "西夏陵",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/nx_xixialing.png",
+    "assets/references/nx_xixialing-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: surviving rammed-earth tower of Western Xia Tomb No.3, Ningxia. Image 1 is its accepted sparse ink drawing (exact composition); Image 2 is the BabelStone 2016 photograph (materials only); Image 3 is the Foguang color-style sample (painting style only). Color only this ONE present-day earthen ruin. Low-saturation grey-brown and muted earth-brown rammed earth, slightly darker layer bands and cavities, subtle matte sandy grain ONLY within the subject. Keep its irregular shoulders and erosion. No roofs, reconstructed external casing, doors, finial, vegetation, sky, fence or ground slab. Preserve every original margin and all contours.\nCRITICAL: final ORIGINAL is OPAQUE on SOLID PURE WHITE #FFFFFF. No transparency or glow at all; outside canvas must be solid white. This is not a cutout request. Local script will prepare transparent copy later. Landscape 1536x1024.",
+  "material_observations": "实际查看日间实拍：夯土主体为低饱和灰褐、土褐色，层带和凹洞略深；无彩绘、屋面或砖石外装。照片为阴天，不复制天空、围栏及地面。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:XiXia_Tomb_3_B.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/XiXia_Tomb_3_B.jpg",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2016-08-22",
+      "reference_file": "assets/references/nx_xixialing-photo.jpg"
+    }
+  ],
+  "output": "assets/colored/nx_xixialing.png",
+  "note": "内置imagegen白底原件，后续脚本去底；技术校验与用户验收分开。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-91a60c6a-c243-4b64-a410-028dd2dfd5da.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ce1256a9efa891cc1ca15166104d308e7b22a1b539d25a721e1910c4e9c6d526",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "date": "2026-09-18",
+    "statement": "验收通过",
+    "sourceSha256": "ce1256a9efa891cc1ca15166104d308e7b22a1b539d25a721e1910c4e9c6d526",
+    "inputSha256": "4c4233278968c5b0331f2c485f452f713e70179e3bd997db95a09680f31b3520",
+    "avifSha256": "d5e4d1702c467e0209fdff2b0f9059528f1eae97c5408b309fc336f4c4076bf2",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "目检：单一夯土陵塔轮廓和侵蚀层带保持，无虚构屋面、外装或景物；灰土褐色材质，纯白外部。与来源照片对照为艺术转译，未作为测绘复原。",
+      "open_air_seed_review": "外部白底和塔间空白连通，无需额外透空种子；实体浅色及暗部保留。"
+    }
+  }
+}

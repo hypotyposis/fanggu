@@ -11,7 +11,7 @@ const find = filters => Array.from(library.all().filter(site => facets.matches(s
 
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 17);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 18);
   for (const site of catalog) {
     assert(facets.regions[site.region].provinces.includes(site.province));
     assert.equal(new Set(site.types).size, site.types.length);
@@ -43,7 +43,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'south'), []);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 17);
+  assert.equal(facets.provinces(catalog).length, 18);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {
@@ -64,7 +64,7 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
   assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['京都府', '奈良县']);
-  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 15);
+  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 16);
 });
 
 test('Japanese additions seed wishes with blank dates and survive backup restoration', () => {

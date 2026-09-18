@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 198,
+  "count": 201,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -4493,6 +4493,70 @@
       ],
       "output": "assets/colored/sd_pizhi.png",
       "record": "assets/color-research/sd_pizhi.json"
+    },
+    {
+      "id": "nx_xumishan",
+      "name": "须弥山石窟",
+      "subject": "须弥山第5窟 · 弥勒大佛胸膝局部",
+      "sub": "第5窟弥勒大佛 · 胸膝局部",
+      "place": "宁夏固原 · 原州区 · 须弥山",
+      "dyn": "tang",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "line": "assets/generated/nx_xumishan.png",
+      "displayLine": "assets/plates/nx_xumishan.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/nx_xumishan.json",
+      "candidateReferences": [
+        "assets/references/nx_xumishan-photo.jpg"
+      ],
+      "output": "assets/colored/nx_xumishan.png",
+      "record": "assets/color-research/nx_xumishan.json"
+    },
+    {
+      "id": "nx_xixialing",
+      "name": "西夏陵",
+      "subject": "西夏陵3号陵 · 现存夯土陵塔",
+      "sub": "3号陵 · 现存夯土陵塔",
+      "place": "宁夏银川 · 西夏区 · 贺兰山东麓",
+      "dyn": "xixia",
+      "types": [
+        "tomb"
+      ],
+      "line": "assets/generated/nx_xixialing.png",
+      "displayLine": "assets/plates/nx_xixialing.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/nx_xixialing.json",
+      "candidateReferences": [
+        "assets/references/nx_xixialing-photo.jpg"
+      ],
+      "output": "assets/colored/nx_xixialing.png",
+      "record": "assets/color-research/nx_xixialing.json"
+    },
+    {
+      "id": "nx_108towers",
+      "name": "青铜峡一百零八塔",
+      "subject": "青铜峡一百零八塔 · 最上三行七塔局部",
+      "sub": "塔群最上三行 · 七塔局部",
+      "place": "宁夏吴忠 · 青铜峡 · 黄河西岸",
+      "dyn": "xixia",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/nx_108towers.png",
+      "displayLine": "assets/plates/nx_108towers.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/nx_108towers.json",
+      "candidateReferences": [
+        "assets/references/nx_108towers-photo.jpg"
+      ],
+      "output": "assets/colored/nx_108towers.png",
+      "record": "assets/color-research/nx_108towers.json"
     }
   ]
 }

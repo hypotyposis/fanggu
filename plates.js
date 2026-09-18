@@ -260,6 +260,18 @@ const PLATES = {
       "唐代古塔 · 宋代修葺"
     ]
   },
+  "nx_xumishan": {
+    "src": "assets/plates/nx_xumishan.png",
+    "alt": "须弥山第5窟 · 弥勒大佛胸膝局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "须弥山第5窟 · 弥勒大佛胸膝局部",
+      "唐代造像 · 依实拍保留风化"
+    ]
+  },
   "nanchan": {
     "src": "assets/plates/nanchan.png",
     "alt": "南禅寺大殿 · 线稿",
@@ -1258,6 +1270,30 @@ const PLATES = {
     "caption": [
       "太符观 · 昊天玉皇上帝殿",
       "金代 · 三间单檐歇山"
+    ]
+  },
+  "nx_xixialing": {
+    "src": "assets/plates/nx_xixialing.png",
+    "alt": "西夏陵3号陵 · 现存夯土陵塔 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c6ac85",
+    "tint": false,
+    "caption": [
+      "西夏陵3号陵 · 现存夯土陵塔",
+      "西夏遗址 · 非原貌复原"
+    ]
+  },
+  "nx_108towers": {
+    "src": "assets/plates/nx_108towers.png",
+    "alt": "青铜峡一百零八塔 · 最上三行七塔局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c6ac85",
+    "tint": false,
+    "caption": [
+      "一百零八塔 · 最上三行七塔局部",
+      "西夏始建说 · 后世重修现貌"
     ]
   },
   "yongle": {

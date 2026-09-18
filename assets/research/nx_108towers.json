@@ -1,0 +1,91 @@
+{
+  "id": "nx_108towers",
+  "status": "complete",
+  "subject": "青铜峡一百零八塔 · 最上三行七塔局部",
+  "source_page": "https://commons.wikimedia.org/wiki/File:一百零八塔.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/%E4%B8%80%E7%99%BE%E9%9B%B6%E5%85%AB%E5%A1%94.jpg",
+  "author": "Smwy09",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "date": "2013-09-06（来源页登记，拍摄时刻未知）",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/nx_108towers-photo.jpg",
+    "assets/generated/nx_108towers-attempt-1.png"
+  ],
+  "source_note": "实拍核对最上三行1、3、3排列，图版仅绘七座塔及台地。始建按青铜峡市政府西夏说说明，保留1988年国保名录元代登记差异；现存修缮外装不能一概视为西夏原砖。",
+  "prompt": "Use case: precise-object-edit. Correct ONLY the background and black ink in this seven-stupa line drawing. Preserve its EXACT arrangement: one larger top tower, three middle towers, three lower towers, their silhouettes and three retaining terraces. It is a detail of the top three rows of the 108 Stupas in Qingtongxia.\nReturn an OPAQUE BLACK-ON-WHITE PNG, NOT a cutout. Fill the ENTIRE canvas, every pixel including all interiors and exteriors, with SOLID PURE WHITE #FFFFFF at 100% opacity, then retain only the thin solid BLACK contour strokes. The current transparent grey glow is a defect: remove ALL transparency, ALL grey glow, ALL tonal fills, ALL gradients and ALL shading. All unmarked pixels must be uniform opaque white. Fine black outlines only. Do not draw a black backdrop or checkerboard. White background is essential; a separate local script will prepare a transparent copy later, this original MUST be white and opaque.\nLandscape 1536x1024. Preserve enough margin so no stroke touches any outer edge. No text, scenery, reconstructed temple or extra towers.",
+  "generated_file": "assets/generated/nx_108towers.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "一百零八塔 · 最上三行七塔局部",
+    "西夏始建说 · 后世重修现貌"
+  ],
+  "historical_sources": [
+    {
+      "title": "青铜峡市人民政府 · 西夏时期108塔",
+      "url": "https://www.qtx.gov.cn/zjqtx/yygx/202209/t20220914_3771023.html"
+    },
+    {
+      "title": "国务院公报1988年第4号 · 第三批全国重点文物保护单位",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/59/State_Council_Gazette_-_1988_-_Issue_04.pdf"
+    }
+  ],
+  "map_location": {
+    "level": "city",
+    "source_page": "https://commons.wikimedia.org/wiki/Category:Qingtongxia"
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "可数七座塔，三行1、3、3排列，顶塔较大。",
+      "仅七塔与承托台地，不绘顶后殿宇、全塔群、文字与现代设施。",
+      "白底原件通过纯白边缘及中性线条检查，透明交付保留可见轮廓。"
+    ],
+    "limitations": "艺术转译，不是实测图；用户已确认当前交付图版通过，不能据此声称文保级复原。"
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-872a3832-4c24-49cd-a727-515857264f1e.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ff8da6dfb58170f6d1c62eae89a7fd70b6f96aec236e3fe21d2ede092d22a6bb",
+    "seeds": []
+  },
+  "generation_inputs": [
+    "assets/generated/nx_108towers-attempt-1.png"
+  ],
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, existing Vairocana Buddha contour drawing; use only its delicate sparse organic thin lines and open unmarked white areas, NOT its shape. Image 2 is SUBJECT GEOMETRY ONLY: One Hundred and Eight Stupas at Qingtongxia, Ningxia.\nDraw an explicitly LIMITED DETAIL of the TOP THREE ROWS ONLY, exactly SEVEN actual brick stupas from photo 2: first/top row ONE larger central stupa; second/middle row THREE smaller stupas; third/bottom row THREE smaller stupas. Preserve these three rows and the actual silhouettes of the corresponding top seven towers; DO NOT draw all 108 and DO NOT add towers. Three low stepped retaining terraces support the rows; no roofs or temple behind, no hills, sky, trees, tourists, fences or modern stair handrails. Towers have squat masonry plinths, rounded tapering bell/body forms and short neck/ring/umbrella/jewel finials, as in those top seven photographed towers. Topmost tower is visibly larger. Do not substitute Tibetan white-painted modern chortens or tall Chinese pavilion pagodas.\nNear straight-on elevation, gentle perspective only, all seven towers separated and countable, centered on landscape 1536x1024 canvas with 8% breathing room. The entire SELECTED SEVEN-TOWER detail must fit uncut. Only a few structural terrace contours.\nRefined sparse BLACK INK outlines and a few finer internal lines on perfectly flat opaque PURE WHITE #FFFFFF. No solid dark door fills, no wash, tonal shading, grey, crosshatching, paper texture, pencil grain, gradients, color, shadows, halo or checkerboard. Most masonry surfaces remain blank pure white; omit dense brick texture. No labels, lettering, watermark, border or frame. White canvas will be removed later by a local script.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/nx_108towers-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-22b3bd59-d64c-4811-8844-345c270cc983.png",
+      "saved_file": "assets/generated/nx_108towers-attempt-1.png",
+      "status": "rejected",
+      "reason": "RGBA首稿带透明灰色光晕，既非合格白底原件也非合格原生透明图，不用于交付。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit. Correct ONLY the background and black ink in this seven-stupa line drawing. Preserve its EXACT arrangement: one larger top tower, three middle towers, three lower towers, their silhouettes and three retaining terraces. It is a detail of the top three rows of the 108 Stupas in Qingtongxia.\nReturn an OPAQUE BLACK-ON-WHITE PNG, NOT a cutout. Fill the ENTIRE canvas, every pixel including all interiors and exteriors, with SOLID PURE WHITE #FFFFFF at 100% opacity, then retain only the thin solid BLACK contour strokes. The current transparent grey glow is a defect: remove ALL transparency, ALL grey glow, ALL tonal fills, ALL gradients and ALL shading. All unmarked pixels must be uniform opaque white. Fine black outlines only. Do not draw a black backdrop or checkerboard. White background is essential; a separate local script will prepare a transparent copy later, this original MUST be white and opaque.\nLandscape 1536x1024. Preserve enough margin so no stroke touches any outer edge. No text, scenery, reconstructed temple or extra towers.",
+      "input_images": [
+        "assets/generated/nx_108towers-attempt-1.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0b03d-706d-7932-9db0-22bff4ed4805/exec-872a3832-4c24-49cd-a727-515857264f1e.png",
+      "saved_file": "assets/generated/nx_108towers.png",
+      "status": "accepted_white_source"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "date": "2026-09-18",
+    "statement": "验收通过",
+    "sourceSha256": "ff8da6dfb58170f6d1c62eae89a7fd70b6f96aec236e3fe21d2ede092d22a6bb",
+    "lineSha256": "a08dbe150b7a40e7921fd648422328fd7fe478d6c872f9faa1b31928fd4f4612"
+  }
+}
