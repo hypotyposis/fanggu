@@ -6389,6 +6389,361 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "gs_mogao": {
+    "src": "assets/colored-transparent-avif/gs_mogao.avif",
+    "originalSrc": "assets/colored/gs_mogao.png",
+    "transparentSrc": "assets/colored-transparent/gs_mogao.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "第96窟外部九层楼 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/gs_mogao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg",
+        "author": "guan",
+        "license": "CC BY 3.0",
+        "date": "Taken on 5 October 2011"
+      }
+    ]
+  },
+  "gs_yulin": {
+    "src": "assets/colored-transparent-avif/gs_yulin.avif",
+    "originalSrc": "assets/colored/gs_yulin.png",
+    "transparentSrc": "assets/colored-transparent/gs_yulin.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "榆林河谷 · 石窟入口局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/gs_yulin.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yulin_Caves_Jiuquan_Gansu_China_%E9%85%92%E6%B3%89_%E6%A5%A1%E6%9E%97%E7%AA%9F_-_panoramio_(4).jpg",
+        "author": "Hiroki Ogawa",
+        "license": "CC BY 3.0",
+        "date": "9 November 2015 (original upload date)"
+      }
+    ]
+  },
+  "gs_maijishan": {
+    "src": "assets/colored-transparent-avif/gs_maijishan.avif",
+    "originalSrc": "assets/colored/gs_maijishan.png",
+    "transparentSrc": "assets/colored-transparent/gs_maijishan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "第13窟 · 东崖大佛局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/gs_maijishan.json",
+    "references": [
+      {
+        "page": "https://www.sohu.com/a/461207027_120207621",
+        "author": "原作者见来源页",
+        "license": "许可未明；仅作研究参考"
+      }
+    ]
+  },
+  "xj_kizil": {
+    "src": "assets/colored-transparent-avif/xj_kizil.avif",
+    "originalSrc": "assets/colored/xj_kizil.png",
+    "transparentSrc": "assets/colored-transparent/xj_kizil.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "石窟崖壁 · 入口局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/xj_kizil.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kizil_Caves_Kuqa_Xinjiang_China_%E6%96%B0%E7%96%86_%E5%BA%93%E8%BD%A6_%E5%85%8B%E5%AD%9C%E5%B0%94%E5%8D%83%E4%BD%9B%E6%B4%9E_-_panoramio_(1).jpg",
+        "author": "Hiroki Ogawa",
+        "license": "CC BY 3.0",
+        "date": "13 November 2015 (original upload date)"
+      }
+    ]
+  },
+  "xj_kumtura": {
+    "src": "assets/colored-transparent-avif/xj_kumtura.avif",
+    "originalSrc": "assets/colored/xj_kumtura.png",
+    "transparentSrc": "assets/colored-transparent/xj_kumtura.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "河谷石窟 · 崖面局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/xj_kumtura.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kuntula_Grottoes_1,_Kuqa.jpg",
+        "author": "Yoshi Canopus",
+        "license": "CC BY-SA 3.0",
+        "date": "2012-06-13 21:32:55"
+      }
+    ]
+  },
+  "sc_huangze": {
+    "src": "assets/colored-transparent-avif/sc_huangze.avif",
+    "originalSrc": "assets/colored/sc_huangze.png",
+    "transparentSrc": "assets/colored-transparent/sc_huangze.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "摩崖五尊像局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sc_huangze.json",
+    "references": [
+      {
+        "page": "https://www.sckg.com/diyipi/2168.html",
+        "author": "四川省文物考古研究院",
+        "license": "版权所有；仅作研究参考"
+      }
+    ]
+  },
+  "sc_qianfo": {
+    "src": "assets/colored-transparent-avif/sc_qianfo.avif",
+    "originalSrc": "assets/colored/sc_qianfo.png",
+    "transparentSrc": "assets/colored-transparent/sc_qianfo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "崖壁佛龛局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sc_qianfo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%B9%BF%E5%85%83%E5%8D%83%E4%BD%9B%E5%B4%96.JPG",
+        "author": "申威隆",
+        "license": "CC BY-SA 3.0",
+        "date": "2010-06-07 11:53:48"
+      }
+    ]
+  },
+  "sc_beishan": {
+    "src": "assets/colored-transparent-avif/sc_beishan.avif",
+    "originalSrc": "assets/colored/sc_beishan.png",
+    "transparentSrc": "assets/colored-transparent/sc_beishan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "北山石龛 · 菩萨造像局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sc_beishan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Dazu_rock_carvings_beishan_1.JPG",
+        "author": "Truthven",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-02-24"
+      }
+    ]
+  },
+  "yn_shizhong": {
+    "src": "assets/colored-transparent-avif/yn_shizhong.avif",
+    "originalSrc": "assets/colored/yn_shizhong.png",
+    "transparentSrc": "assets/colored-transparent/yn_shizhong.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "南诏王像龛局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/yn_shizhong.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yimouxun_Shizhongshan_Grottoes_Jianchuan.jpg",
+        "author": "Xin",
+        "license": "CC BY-SA 4.0",
+        "date": "17 September 2014, 13:08:46"
+      }
+    ]
+  },
+  "sn_beilin": {
+    "src": "assets/colored-transparent-avif/sn_beilin.avif",
+    "originalSrc": "assets/colored/sn_beilin.png",
+    "transparentSrc": "assets/colored-transparent/sn_beilin.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "石台孝经碑 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/sn_beilin.json",
+    "references": [
+      {
+        "page": "https://sn.cri.cn/2019-06-17/e0416e2a-1faa-7289-d571-6894fdde7f88.html",
+        "author": "国际在线／原作者见来源页",
+        "license": "许可未明；仅作研究参考"
+      }
+    ]
+  },
+  "yn_cuanbaozi": {
+    "src": "assets/colored-transparent-avif/yn_cuanbaozi.avif",
+    "originalSrc": "assets/colored/yn_cuanbaozi.png",
+    "transparentSrc": "assets/colored-transparent/yn_cuanbaozi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "东晋爨宝子碑 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/yn_cuanbaozi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E7%88%A8%E5%AE%9D%E5%AD%90%E7%A2%91_-_%E7%A2%91%E9%98%B3_-_2023-06-18_01.jpg",
+        "author": "瑞丽江的河水",
+        "license": "CC BY-SA 4.0",
+        "date": "2023-06-18 10:08:24"
+      }
+    ]
+  },
+  "yn_cuanyan": {
+    "src": "assets/colored-transparent-avif/yn_cuanyan.avif",
+    "originalSrc": "assets/colored/yn_cuanyan.png",
+    "transparentSrc": "assets/colored-transparent/yn_cuanyan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "南朝爨龙颜碑 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/yn_cuanyan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg",
+        "author": "Kcx36",
+        "license": "CC BY-SA 4.0",
+        "date": "2026-08-07 17:11:31"
+      }
+    ]
+  },
+  "sn_yaowang": {
+    "src": "assets/colored-transparent-avif/sn_yaowang.avif",
+    "originalSrc": "assets/colored/sn_yaowang.png",
+    "transparentSrc": "assets/colored-transparent/sn_yaowang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "摩崖石造像一龛 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/sn_yaowang.json",
+    "references": [
+      {
+        "page": "https://you.ctrip.com/sight/tongchuan907/52663.html",
+        "author": "携程用户／原作者见来源页",
+        "license": "许可未明；仅作研究参考"
+      }
+    ]
+  },
+  "yn_duanshi": {
+    "src": "assets/colored-transparent-avif/yn_duanshi.avif",
+    "originalSrc": "assets/colored/yn_duanshi.png",
+    "transparentSrc": "assets/colored-transparent/yn_duanshi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大理国会盟碑 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/yn_duanshi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%AE%B5%E6%B0%8F%E4%B8%8E%E4%B8%89%E5%8D%81%E4%B8%83%E9%83%A8%E4%BC%9A%E7%9B%9F%E7%A2%91_-_%E7%A2%91%E9%98%B3_-_2023-06-18.jpg",
+        "author": "瑞丽江的河水",
+        "license": "CC BY-SA 4.0",
+        "date": "2023-06-18 10:04:06"
+      }
+    ]
+  },
+  "gs_xixia_stele": {
+    "src": "assets/colored-transparent-avif/gs_xixia_stele.avif",
+    "originalSrc": "assets/colored/gs_xixia_stele.png",
+    "transparentSrc": "assets/colored-transparent/gs_xixia_stele.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "西夏文与汉文碑面 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/gs_xixia_stele.json",
+    "references": [
+      {
+        "page": "https://touch.travel.qunar.com/comment/10157102399",
+        "author": "去哪儿游记／原作者见来源页",
+        "license": "许可未明；仅作研究参考"
+      }
+    ]
+  },
+  "js_suzhou_song": {
+    "src": "assets/colored-transparent-avif/js_suzhou_song.avif",
+    "originalSrc": "assets/colored/js_suzhou_song.png",
+    "transparentSrc": "assets/colored-transparent/js_suzhou_song.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "平江图碑 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/js_suzhou_song.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-05-15 13:03:33"
+      }
+    ]
+  },
+  "hn_xizhou": {
+    "src": "assets/colored-transparent-avif/hn_xizhou.avif",
+    "originalSrc": "assets/colored/hn_xizhou.png",
+    "transparentSrc": "assets/colored-transparent/hn_xizhou.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "五代盟约铜柱 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/hn_xizhou.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%BA%AA%E5%B7%9E%E9%93%9C%E6%9F%B1_Bronze_Column_at_Xizhou_20231009.jpg",
+        "author": "K29328",
+        "license": "CC0",
+        "date": "2023-10-09"
+      }
+    ]
+  },
+  "sc_emei_buddha": {
+    "src": "assets/colored-transparent-avif/sc_emei_buddha.avif",
+    "originalSrc": "assets/colored/sc_emei_buddha.png",
+    "transparentSrc": "assets/colored-transparent/sc_emei_buddha.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "普贤菩萨骑白象铜像 · 设色图",
+    "width": 1086,
+    "height": 1448,
+    "tint": false,
+    "record": "assets/color-research/sc_emei_buddha.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Samantabhadra_Emeishan.JPG",
+        "author": "MarS666",
+        "license": "CC BY 3.0",
+        "date": "2006-08-16"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

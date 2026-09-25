@@ -1,0 +1,56 @@
+{
+  "id": "sc_huangze",
+  "subject": "摩崖五尊像局部",
+  "status": "complete",
+  "source_page": "https://www.sckg.com/diyipi/2168.html",
+  "image_url": "https://www.sckg.com/uploads/allimg/20230526/2-230526153A2411.jpg",
+  "author": "四川省文物考古研究院",
+  "license": "版权所有；仅作研究参考",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_huangze-photo.jpg"
+  ],
+  "source_note": "据所列照片绘皇泽寺摩崖造像的摩崖五尊像局部；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Use case: style-transfer. Create ONE Chinese heritage atlas fine-line illustration of Huangze Temple's actual photographed cliff niche with the central standing Buddha raising one hand, the two close monk attendants, and outer bodhisattvas; crop the photo's printed title and watermark away; preserve the visible old carved halos and robe folds. Image 1 supplies STYLE ONLY: sparse delicate black ink contours and generous white space, not its figure geometry. Image 2 supplies ACTUAL SUBJECT GEOMETRY ONLY; preserve figures' relative positions and surviving damage. landscape 1536×1024, centered, selected group entirely visible, even margins. An OPAQUE PURE WHITE #FFFFFF canvas at full opacity, black fine lines, all empty areas inside and outside figures white. Simplify minor details rather than fill with dense marks. No gray fills, shading, gradient, paper grain, color, halo added where none, cast shadow, transparent pixels, checkerboard, letters, labels, watermark, frame, tourists, fixtures or invented anatomy. A local script will remove the white background.",
+  "generated_file": "assets/generated/sc_huangze.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-81c05dea-25ec-424e-910d-4f0bc05090a6.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "摩崖五尊像局部 · 线稿",
+    "唐代 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2ed4f4a5652eadb6500382abccfc7d96bd864a60fde72872e9d375ad86e1d0ec",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://www.sckg.com/diyipi/2168.html",
+      "image_url": "https://www.sckg.com/uploads/allimg/20230526/2-230526153A2411.jpg",
+      "author": "四川省文物考古研究院",
+      "license": "版权所有；仅作研究参考",
+      "reference_file": "assets/references/sc_huangze-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

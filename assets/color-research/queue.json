@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 290,
+  "count": 308,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -6507,6 +6507,409 @@
       ],
       "output": "assets/colored/nx_108towers.png",
       "record": "assets/color-research/nx_108towers.json"
+    },
+    {
+      "id": "gs_mogao",
+      "name": "莫高窟",
+      "subject": "第96窟外部九层楼",
+      "sub": "第96窟外部九层楼",
+      "place": "甘肃敦煌 · 鸣沙山东麓",
+      "dyn": "tang",
+      "types": [
+        "grotto"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_mogao.png",
+      "displayLine": "assets/plates/gs_mogao.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/gs_mogao.json",
+      "candidateReferences": [
+        "assets/references/gs_mogao-photo.jpg"
+      ],
+      "output": "assets/colored/gs_mogao.png",
+      "record": "assets/color-research/gs_mogao.json"
+    },
+    {
+      "id": "gs_yulin",
+      "name": "榆林窟",
+      "subject": "榆林河谷 · 石窟入口局部",
+      "sub": "榆林河谷 · 石窟入口局部",
+      "place": "甘肃瓜州 · 榆林河谷",
+      "dyn": "tang",
+      "types": [
+        "grotto"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_yulin.png",
+      "displayLine": "assets/plates/gs_yulin.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gs_yulin.json",
+      "candidateReferences": [
+        "assets/references/gs_yulin-photo.jpg"
+      ],
+      "output": "assets/colored/gs_yulin.png",
+      "record": "assets/color-research/gs_yulin.json"
+    },
+    {
+      "id": "gs_maijishan",
+      "name": "麦积山石窟",
+      "subject": "第13窟 · 东崖大佛局部",
+      "sub": "第13窟 · 东崖大佛局部",
+      "place": "甘肃天水 · 麦积山",
+      "dyn": "sui",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_maijishan.png",
+      "displayLine": "assets/plates/gs_maijishan.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/gs_maijishan.json",
+      "candidateReferences": [
+        "assets/references/gs_maijishan-photo.jpg"
+      ],
+      "output": "assets/colored/gs_maijishan.png",
+      "record": "assets/color-research/gs_maijishan.json"
+    },
+    {
+      "id": "xj_kizil",
+      "name": "克孜尔千佛洞",
+      "subject": "石窟崖壁 · 入口局部",
+      "sub": "石窟崖壁 · 入口局部",
+      "place": "新疆拜城 · 木扎提河谷",
+      "dyn": "qiuci",
+      "types": [
+        "grotto"
+      ],
+      "owner": "main",
+      "line": "assets/generated/xj_kizil.png",
+      "displayLine": "assets/plates/xj_kizil.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xj_kizil.json",
+      "candidateReferences": [
+        "assets/references/xj_kizil-extra-photo.jpg"
+      ],
+      "output": "assets/colored/xj_kizil.png",
+      "record": "assets/color-research/xj_kizil.json"
+    },
+    {
+      "id": "xj_kumtura",
+      "name": "库木吐喇千佛洞",
+      "subject": "河谷石窟 · 崖面局部",
+      "sub": "河谷石窟 · 崖面局部",
+      "place": "新疆库车 · 渭干河谷",
+      "dyn": "qiuci",
+      "types": [
+        "grotto"
+      ],
+      "owner": "main",
+      "line": "assets/generated/xj_kumtura.png",
+      "displayLine": "assets/plates/xj_kumtura.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xj_kumtura.json",
+      "candidateReferences": [
+        "assets/references/xj_kumtura-extra-photo.jpg"
+      ],
+      "output": "assets/colored/xj_kumtura.png",
+      "record": "assets/color-research/xj_kumtura.json"
+    },
+    {
+      "id": "sc_huangze",
+      "name": "皇泽寺摩崖造像",
+      "subject": "摩崖五尊像局部",
+      "sub": "摩崖五尊像局部",
+      "place": "四川广元 · 嘉陵江西岸",
+      "dyn": "tang",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sc_huangze.png",
+      "displayLine": "assets/plates/sc_huangze.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sc_huangze.json",
+      "candidateReferences": [
+        "assets/references/sc_huangze-photo.jpg"
+      ],
+      "output": "assets/colored/sc_huangze.png",
+      "record": "assets/color-research/sc_huangze.json"
+    },
+    {
+      "id": "sc_qianfo",
+      "name": "广元千佛崖摩崖造像",
+      "subject": "崖壁佛龛局部",
+      "sub": "崖壁佛龛局部",
+      "place": "四川广元 · 嘉陵江东岸",
+      "dyn": "tang",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sc_qianfo.png",
+      "displayLine": "assets/plates/sc_qianfo.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sc_qianfo.json",
+      "candidateReferences": [
+        "assets/references/sc_qianfo-extra-photo.jpg"
+      ],
+      "output": "assets/colored/sc_qianfo.png",
+      "record": "assets/color-research/sc_qianfo.json"
+    },
+    {
+      "id": "sc_beishan",
+      "name": "北山摩崖造像",
+      "subject": "北山石龛 · 菩萨造像局部",
+      "sub": "北山石龛 · 菩萨造像局部",
+      "place": "重庆大足 · 北山",
+      "dyn": "song",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sc_beishan.png",
+      "displayLine": "assets/plates/sc_beishan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sc_beishan.json",
+      "candidateReferences": [
+        "assets/references/sc_beishan-photo.jpg"
+      ],
+      "output": "assets/colored/sc_beishan.png",
+      "record": "assets/color-research/sc_beishan.json"
+    },
+    {
+      "id": "yn_shizhong",
+      "name": "石钟山石窟",
+      "subject": "南诏王像龛局部",
+      "sub": "南诏王像龛局部",
+      "place": "云南剑川 · 石钟山",
+      "dyn": "nanzhao",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_shizhong.png",
+      "displayLine": "assets/plates/yn_shizhong.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/yn_shizhong.json",
+      "candidateReferences": [
+        "assets/references/yn_shizhong-photo.jpg"
+      ],
+      "output": "assets/colored/yn_shizhong.png",
+      "record": "assets/color-research/yn_shizhong.json"
+    },
+    {
+      "id": "sn_beilin",
+      "name": "西安碑林",
+      "subject": "石台孝经碑",
+      "sub": "石台孝经碑",
+      "place": "陕西西安 · 碑林",
+      "dyn": "tang",
+      "types": [
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_beilin.png",
+      "displayLine": "assets/plates/sn_beilin.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/sn_beilin.json",
+      "candidateReferences": [
+        "assets/references/sn_beilin-photo.jpg"
+      ],
+      "output": "assets/colored/sn_beilin.png",
+      "record": "assets/color-research/sn_beilin.json"
+    },
+    {
+      "id": "yn_cuanbaozi",
+      "name": "爨宝子碑",
+      "subject": "东晋爨宝子碑",
+      "sub": "东晋爨宝子碑",
+      "place": "云南曲靖 · 麒麟区",
+      "dyn": "jin",
+      "types": [
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_cuanbaozi.png",
+      "displayLine": "assets/plates/yn_cuanbaozi.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/yn_cuanbaozi.json",
+      "candidateReferences": [
+        "assets/references/yn_cuanbaozi-photo.jpg"
+      ],
+      "output": "assets/colored/yn_cuanbaozi.png",
+      "record": "assets/color-research/yn_cuanbaozi.json"
+    },
+    {
+      "id": "yn_cuanyan",
+      "name": "爨龙颜碑",
+      "subject": "南朝爨龙颜碑",
+      "sub": "南朝爨龙颜碑",
+      "place": "云南陆良 · 薛官堡",
+      "dyn": "nan",
+      "types": [
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_cuanyan.png",
+      "displayLine": "assets/plates/yn_cuanyan.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/yn_cuanyan.json",
+      "candidateReferences": [
+        "assets/references/yn_cuanyan-photo.jpg"
+      ],
+      "output": "assets/colored/yn_cuanyan.png",
+      "record": "assets/color-research/yn_cuanyan.json"
+    },
+    {
+      "id": "sn_yaowang",
+      "name": "药王山石刻",
+      "subject": "摩崖石造像一龛",
+      "sub": "摩崖石造像一龛",
+      "place": "陕西铜川 · 耀州药王山",
+      "dyn": "tang",
+      "types": [
+        "sculpture",
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_yaowang.png",
+      "displayLine": "assets/plates/sn_yaowang.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/sn_yaowang.json",
+      "candidateReferences": [
+        "assets/references/sn_yaowang-photo.jpg"
+      ],
+      "output": "assets/colored/sn_yaowang.png",
+      "record": "assets/color-research/sn_yaowang.json"
+    },
+    {
+      "id": "yn_duanshi",
+      "name": "段氏与三十七部会盟碑",
+      "subject": "大理国会盟碑",
+      "sub": "大理国会盟碑",
+      "place": "云南曲靖 · 麒麟区",
+      "dyn": "dali",
+      "types": [
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_duanshi.png",
+      "displayLine": "assets/plates/yn_duanshi.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/yn_duanshi.json",
+      "candidateReferences": [
+        "assets/references/yn_duanshi-photo.jpg"
+      ],
+      "output": "assets/colored/yn_duanshi.png",
+      "record": "assets/color-research/yn_duanshi.json"
+    },
+    {
+      "id": "gs_xixia_stele",
+      "name": "重修护国寺感应塔碑",
+      "subject": "西夏文与汉文碑面",
+      "sub": "西夏文与汉文碑面",
+      "place": "甘肃武威 · 西夏博物馆",
+      "dyn": "xixia",
+      "types": [
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_xixia_stele.png",
+      "displayLine": "assets/plates/gs_xixia_stele.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/gs_xixia_stele.json",
+      "candidateReferences": [
+        "assets/references/gs_xixia_stele-photo.jpg"
+      ],
+      "output": "assets/colored/gs_xixia_stele.png",
+      "record": "assets/color-research/gs_xixia_stele.json"
+    },
+    {
+      "id": "js_suzhou_song",
+      "name": "苏州文庙内宋代石刻",
+      "subject": "平江图碑",
+      "sub": "平江图碑",
+      "place": "江苏苏州 · 文庙",
+      "dyn": "song",
+      "types": [
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/js_suzhou_song.png",
+      "displayLine": "assets/plates/js_suzhou_song.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/js_suzhou_song.json",
+      "candidateReferences": [
+        "assets/references/js_suzhou_song-photo.jpg"
+      ],
+      "output": "assets/colored/js_suzhou_song.png",
+      "record": "assets/color-research/js_suzhou_song.json"
+    },
+    {
+      "id": "hn_xizhou",
+      "name": "溪州铜柱",
+      "subject": "五代盟约铜柱",
+      "sub": "五代盟约铜柱",
+      "place": "湖南永顺 · 王村",
+      "dyn": "zhou",
+      "types": [
+        "column",
+        "stele"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_xizhou.png",
+      "displayLine": "assets/plates/hn_xizhou.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/hn_xizhou.json",
+      "candidateReferences": [
+        "assets/references/hn_xizhou-photo.jpg"
+      ],
+      "output": "assets/colored/hn_xizhou.png",
+      "record": "assets/color-research/hn_xizhou.json"
+    },
+    {
+      "id": "sc_emei_buddha",
+      "name": "峨眉山圣寿万年寺铜铁佛像",
+      "subject": "普贤菩萨骑白象铜像",
+      "sub": "普贤菩萨骑白象铜像",
+      "place": "四川峨眉山 · 万年寺",
+      "dyn": "song",
+      "types": [
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sc_emei_buddha.png",
+      "displayLine": "assets/plates/sc_emei_buddha.png",
+      "width": 1086,
+      "height": 1448,
+      "originalResearch": "assets/research/sc_emei_buddha.json",
+      "candidateReferences": [
+        "assets/references/sc_emei_buddha-photo.jpg"
+      ],
+      "output": "assets/colored/sc_emei_buddha.png",
+      "record": "assets/color-research/sc_emei_buddha.json"
     }
   ]
 }

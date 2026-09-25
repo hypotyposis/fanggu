@@ -18,7 +18,7 @@
   const types = {
     hall: '殿堂', pagoda: '古塔', pavilion: '楼阁', stage: '戏台',
     grotto: '石窟石刻', que: '石阙', wall: '城墙城防', sculpture: '彩塑雕塑', gate: '门坊', bridge: '桥梁', pillar: '经幢',
-    tomb: '陵墓', residence: '宅第民居', mural: '壁画', observatory: '天文台', stele: '碑刻', palace: '宫苑', church: '教堂', screen: '照壁',
+    tomb: '陵墓', residence: '宅第民居', mural: '壁画', observatory: '天文台', stele: '碑刻', column: '铜柱', palace: '宫苑', church: '教堂', screen: '照壁',
   };
   function classify(sites, places) {
     const geography = new Map(places.map(place => [place.key, place]));

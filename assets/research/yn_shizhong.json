@@ -1,0 +1,66 @@
+{
+  "id": "yn_shizhong",
+  "subject": "南诏王像龛局部",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Yimouxun_Shizhongshan_Grottoes_Jianchuan.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Yimouxun_Shizhongshan_Grottoes_Jianchuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Xin",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yn_shizhong-photo.jpg"
+  ],
+  "source_note": "据所列照片绘石钟山石窟的南诏王像龛局部；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Use case: style-transfer. Create ONE Chinese heritage atlas fine-line illustration of the photographed Nanzhao ruler Yimouxun relief at Jianchuan Shizhongshan Grottoes: central crowned seated ruler beneath a wide carved arch, small attendants on both sides, rectangular throne and lower support; preserve the actual arrangement, no Buddha substitution. Image 1 supplies STYLE ONLY: sparse delicate black ink contours and generous white space, not its figure geometry. Image 2 supplies ACTUAL SUBJECT GEOMETRY ONLY; preserve figures' relative positions and surviving damage. landscape 1536×1024, centered, selected group entirely visible, even margins. An OPAQUE PURE WHITE #FFFFFF canvas at full opacity, black fine lines, all empty areas inside and outside figures white. Simplify minor details rather than fill with dense marks. No gray fills, shading, gradient, paper grain, color, halo added where none, cast shadow, transparent pixels, checkerboard, letters, labels, watermark, frame, tourists, fixtures or invented anatomy. A local script will remove the white background.",
+  "generated_file": "assets/generated/yn_shizhong.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-baac6db1-4b54-465c-bd0d-64a828b86cc5.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "南诏王像龛局部 · 线稿",
+    "约9世纪 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "530e4e12d4d910245b03a1b628eb5037ef98cc790321ca0d28f2622bc088cc6c",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yimouxun_Shizhongshan_Grottoes_Jianchuan.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Yimouxun_Shizhongshan_Grottoes_Jianchuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Xin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "17 September 2014, 13:08:46",
+      "reference_file": "assets/references/yn_shizhong-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "剑川县政府：石钟山石窟",
+      "url": "https://www.jianchuan.gov.cn/jcxrmzf/c102564/pc/content/1984050346186608640/content_1984050346186608640.html"
+    },
+    {
+      "title": "云南省社科院：南诏王像身份研究",
+      "url": "https://www.sky.yn.gov.cn/xsyj/zgsd/04648743386209251333"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

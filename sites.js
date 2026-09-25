@@ -1,15 +1,19 @@
 /* sites.js — heritage sites, their chapters, places and drawing parameters. */
 const DYN = {
   han: { glyph: '汉', name: '汉', acc: 'var(--ochre)' },
+  jin: { glyph: '东晋', name: '东晋', acc: 'var(--jin)', start: 317, end: 420 },
   goguryeo: { glyph: '高句丽', name: '高句丽', acc: 'var(--goguryeo)' },
   bei: { glyph: '北魏', name: '北魏', acc: 'var(--plum)' },
+  qiuci: { glyph: '龟兹', name: '龟兹', acc: 'var(--qiuci)', start: 300, end: 900 },
   nan: { glyph: '南朝', name: '南朝', acc: 'var(--clay)' },
   beiqi: { glyph: '北齐', name: '北齐', acc: 'var(--rose)' },
   sui: { glyph: '隋', name: '隋', acc: 'var(--celadon)' },
   tang: { glyph: '唐', name: '唐', acc: 'var(--gold)' },
+  nanzhao: { glyph: '南诏', name: '南诏', acc: 'var(--nanzhao)', start: 738, end: 902 },
   balhae: { glyph: '渤海', name: '渤海', acc: 'var(--balhae)' },
   zhou: { glyph: '五代', name: '五代 · 十国', acc: 'var(--ash)' },
   song: { glyph: '宋', name: '宋', acc: 'var(--verdigris)' },
+  dali: { glyph: '大理', name: '大理', acc: 'var(--dali)', start: 937, end: 1253 },
   liao: { glyph: '辽', name: '辽 · 金', acc: 'var(--cinnabar)' },
   xixia: {"glyph":"夏","name":"西夏","acc":"var(--sand)","start":1038,"end":1227},
   yuan: { glyph: '元', name: '元', acc: 'var(--amber)' },
@@ -9238,6 +9242,7 @@ const CHAPTERS = [
   { key: 'han', years: '25 — 220 · 东汉', blurb: '以石仿木，阙立神道。石块叠出檐、枋与柱的轮廓，车马、百戏与神兽刻在其间；登封与蜀地的石阙，让汉代建筑和生活留下了可读的片段。' },
   { key: 'goguryeo', years: '约5世纪 · 集安现存遗迹', blurb: '巨大的石块逐级收分，护坟石抵住方坛底层。将军坟属于高句丽石室墓遗存，墓主认定与现存形制分开记录；这里的年代说明所收古迹，不借中原朝代替换其所属时期。' },
   { key: 'bei', years: '386 — 534 · 北魏', blurb: '佛塔在中原生根。嵩岳寺塔以十二边平面、层层密檐和收分塔身，把早期佛教建筑的独特形制留在嵩山南麓。' },
+  { key: 'qiuci', years: '约3 — 9世纪 · 龟兹', blurb: '克孜尔与库木吐喇的洞窟沿西域河谷展开；图版采用现存窟口局部，未给未编号洞窟臆定精确年代。' },
   { key: 'nan', years: '420 — 589 · 南朝', blurb: '石城山的岩壁化为一尊安坐的大佛。齐梁僧人接续开凿，新昌石弥勒以宽阔双膝与沉静衣纹，留下江南早期大型造像的轮廓。' },
   { key: 'beiqi', years: '550 — 577 · 北齐', blurb: '鼓山石壁间，佛像衣纹渐趋简洁，身躯饱满而安静。响堂山留下北齐造像、刻经与石窟建筑的片段，也见证了这一时期佛教艺术的变化。' },
   { key: 'sui', years: '581 — 618 · 隋', blurb: '洨河上的石桥与崖壁间的石窟，留下隋代的两种尺度。赵州桥以大拱和四座腹拱跨水，灵泉寺的大住圣窟则把造像与刻铭留在山中。' },
@@ -9245,6 +9250,7 @@ const CHAPTERS = [
   { key: 'balhae', years: '渤海时期 · 宁安现存石刻', blurb: '莲座擎起石柱，八角灯室与攒尖盖顶把木构殿堂缩成一座石雕长明灯。兴隆寺石灯幢按渤海时期独立入册，寺院后世重建的殿堂不作为渤海原构。' },
   { key: 'zhou', years: '907 — 979 · 五代十国', blurb: '中原五代更迭之际，吴越、南唐等国留下石塔、经幢与佛教造像，北汉留下镇国寺万佛殿。北宋立国后，南北诸国仍延续了一段时间；这些古迹按所属政权与现存主体分别纪年。' },
   { key: 'song', years: '960 — 1279', blurb: '两宋三百年：摩尼殿早《营造法式》半个世纪已见其规制；砖塔在定州砌到八十三米，到江南又与木檐混构。' },
+  { key: 'dali', years: '937 — 1253 · 大理', blurb: '段氏与三十七部会盟碑刻于大理国明政三年，碑文留下滇东会盟的记录。' },
   { key: 'liao', years: '907 — 1234', blurb: '契丹与女真承唐制而益壮：减柱、移柱以扩展佛殿空间，斜拱如花，殿阁之巨为北地独有；金人重修的华塔，则把一座砖塔堆成一束花。' },
   {"key":"xixia","years":"1038 — 1227 · 西夏","blurb":"贺兰山下的陵塔与黄河岸边的佛塔，留下西夏的两种轮廓。陵园以现存夯土遗址入册，塔群注明始建说与后世重修，不以复原想象代替现存形态。"},
   { key: 'yuan', years: '1271 — 1368', blurb: '元人用材粗放，梁架常见弯木，村庙里的正殿与戏台却把日常的信仰和娱乐搭在了一个院子里。' },
@@ -10079,3 +10085,624 @@ PLACES.push({
   "lat": 36.008011,
   "lon": 106.278161
 });
+
+
+
+
+
+// 第一批国保补遗：石窟寺、石刻及同组铜铸文物。
+SITES.push(...[
+  {
+    "id": "gs_mogao",
+    "name": "莫高窟",
+    "short": "莫高窟",
+    "sub": "第96窟外部九层楼",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "第96窟唐代开凿；现见九层楼为后世保护建筑",
+    "year": 700,
+    "yearLabel": "唐代",
+    "place": "甘肃敦煌 · 鸣沙山东麓",
+    "placeKey": "gs_dunhuang",
+    "types": [
+      "grotto"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "以第96窟外部九层楼辨认莫高窟。图版画的是现见保护性楼阁，其形制并非唐代原貌；年表约略定位第96窟唐代造像。",
+    "facts": [
+      "第96窟以巨型弥勒造像著称；楼阁经过后世多次改建。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "第96窟外观 · 线稿",
+      "现见保护楼阁 · 非唐代原构"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "700仅是第96窟唐代大像的约略年表位置；图绘现见的后世保护楼阁，不能据外观认作唐代楼阁。"
+  },
+  {
+    "id": "gs_yulin",
+    "name": "榆林窟",
+    "short": "榆林窟",
+    "sub": "榆林河谷 · 石窟入口局部",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐代起持续开凿",
+    "year": 800,
+    "yearLabel": "唐代起",
+    "place": "甘肃瓜州 · 榆林河谷",
+    "placeKey": "gs_guazhou",
+    "types": [
+      "grotto"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "崖壁上一列洞窟入口面向榆林河谷。图版只绘入口和贴近的岩壁，不把不同洞窟画成同一时代。",
+    "facts": [
+      "榆林窟有跨越多个朝代的壁画和造像；所绘为入口现状。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "河谷窟口局部 · 线稿",
+      "唐代起 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "图绘未编号的现状窟口，不能据外观判定单窟开凿年；800只供跨朝代洞窟群约略排序。"
+  },
+  {
+    "id": "gs_maijishan",
+    "name": "麦积山石窟",
+    "short": "麦积山",
+    "sub": "第13窟 · 东崖大佛局部",
+    "dyn": "sui",
+    "tag": "隋",
+    "era": "第13窟隋代开凿",
+    "year": 600,
+    "yearLabel": "隋代",
+    "place": "甘肃天水 · 麦积山",
+    "placeKey": "gs_tianshui",
+    "types": [
+      "grotto",
+      "sculpture"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "东崖大佛贴着山体高处的崖面。图版按照片取主尊局部，保留现存表面，不补绘视野外的佛足和两侧菩萨。",
+    "facts": [
+      "第13窟东崖大佛为隋代石胎泥塑；现状经历后代修缮。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "第13窟东崖大佛局部 · 线稿",
+      "隋代 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "第13窟东崖大佛为隋代石胎泥塑；现状经历后代修缮。"
+  },
+  {
+    "id": "xj_kizil",
+    "name": "克孜尔千佛洞",
+    "short": "克孜尔",
+    "sub": "石窟崖壁 · 入口局部",
+    "dyn": "qiuci",
+    "tag": "龟兹",
+    "era": "龟兹时期洞窟群",
+    "year": 600,
+    "yearLabel": "龟兹时期",
+    "place": "新疆拜城 · 木扎提河谷",
+    "placeKey": "xj_baicheng",
+    "types": [
+      "grotto"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "洞窟入口散布在龟兹旧地的崖壁。图版依现状照片概括窟口与岩体，未以外立面推定某窟壁画的年代。",
+    "facts": [
+      "克孜尔开凿历时较长；450仅是早期洞窟的约略年表位置。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "崖壁入口局部 · 线稿",
+      "龟兹时期洞窟群 · 现状窟口"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "图绘未编号的现状窟口，无法据入口确定具体洞窟年代；600仅作洞窟群的约略年表位置。"
+  },
+  {
+    "id": "xj_kumtura",
+    "name": "库木吐喇千佛洞",
+    "short": "库木吐喇",
+    "sub": "河谷石窟 · 崖面局部",
+    "dyn": "qiuci",
+    "tag": "龟兹",
+    "era": "龟兹时期洞窟群",
+    "year": 700,
+    "yearLabel": "龟兹时期",
+    "place": "新疆库车 · 渭干河谷",
+    "placeKey": "xj_kuqa",
+    "types": [
+      "grotto"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "岩面洞口层层散开，洞窟与河谷相接。图版按照片取崖壁局部，窟门旁的后世加固不作为古代原构。",
+    "facts": [
+      "库木吐喇洞窟跨越多时期；500仅用于早期遗存的约略排序。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "河谷崖面局部 · 线稿",
+      "龟兹时期洞窟群 · 现状窟口"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "图绘未编号的现状窟口，无法据入口确定具体洞窟年代；700仅作洞窟群的约略年表位置。"
+  },
+  {
+    "id": "sc_huangze",
+    "name": "皇泽寺摩崖造像",
+    "short": "皇泽寺",
+    "sub": "摩崖五尊像局部",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐代摩崖造像",
+    "year": 700,
+    "yearLabel": "唐代",
+    "place": "四川广元 · 嘉陵江西岸",
+    "placeKey": "sc_guangyuan",
+    "types": [
+      "grotto",
+      "sculpture"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "五尊造像并列在石龛内。图版保留佛与侍者轮廓及岩龛，不画照片中的说明牌。",
+    "facts": [
+      "皇泽寺摩崖造像以唐代作品为主要特征；所选龛的精确开凿年未据图像确定。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "摩崖五尊像局部 · 线稿",
+      "唐代 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "皇泽寺摩崖造像以唐代作品为主要特征；所选龛的精确开凿年未据图像确定。"
+  },
+  {
+    "id": "sc_qianfo",
+    "name": "广元千佛崖摩崖造像",
+    "short": "千佛崖",
+    "sub": "崖壁佛龛局部",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐代造像局部",
+    "year": 700,
+    "yearLabel": "唐代约略",
+    "place": "四川广元 · 嘉陵江东岸",
+    "placeKey": "sc_guangyuan",
+    "types": [
+      "grotto",
+      "sculpture"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "大大小小的佛龛在崖面上相续。图版截取一处坐佛与侍者，不代表整段千佛崖。",
+    "facts": [
+      "千佛崖营造跨越多个朝代；所绘龛位未据照片确认为特定编号。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "崖壁佛龛局部 · 线稿",
+      "唐代约略 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "千佛崖营造跨越多个朝代；所绘龛位未据照片确认为特定编号。"
+  },
+  {
+    "id": "sc_beishan",
+    "name": "北山摩崖造像",
+    "short": "大足北山",
+    "sub": "北山石龛 · 菩萨造像局部",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北山唐末开凿 · 五代宋续造",
+    "year": 1100,
+    "yearLabel": "宋代约略",
+    "place": "重庆大足 · 北山",
+    "placeKey": "dazu",
+    "types": [
+      "grotto",
+      "sculpture"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "北山石刻的佛与菩萨像依岩壁层层凿成。图版选一龛的中央坐像与侍者，与已收录的宝顶山图版分开。",
+    "facts": [
+      "北山始于892年，五代至南宋续凿；所绘龛未据照片确认精确纪年。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "北山石龛局部 · 线稿",
+      "宋代约略 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "北山始于892年，五代至南宋续凿；所绘龛未据照片确认精确纪年。"
+  },
+  {
+    "id": "yn_shizhong",
+    "name": "石钟山石窟",
+    "short": "石钟山",
+    "sub": "南诏王像龛局部",
+    "dyn": "nanzhao",
+    "tag": "南诏",
+    "era": "南诏时期造像",
+    "year": 850,
+    "yearLabel": "约9世纪",
+    "place": "云南剑川 · 石钟山",
+    "placeKey": "yn_jianchuan",
+    "types": [
+      "grotto",
+      "sculpture"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "坐像与随侍刻在深龛内，呈现石钟山石窟的世俗人物题材。图版按实拍轮廓简化，不把人物身份当作绝对定论。",
+    "facts": [
+      "所绘龛传统称异牟寻坐朝图；学术研究指出该身份依早期调查和地方传说确定，仍需审慎。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "南诏王像龛局部 · 线稿",
+      "约9世纪 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "所绘龛传统称异牟寻坐朝图；学术研究指出该身份依早期调查和地方传说确定，仍需审慎。"
+  },
+  {
+    "id": "sn_beilin",
+    "name": "西安碑林",
+    "short": "西安碑林",
+    "sub": "石台孝经碑",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "石台孝经碑唐天宝四载",
+    "year": 745,
+    "yearLabel": "745",
+    "place": "陕西西安 · 碑林",
+    "placeKey": "xian",
+    "types": [
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "碑林石刻众多，本图选择石台孝经碑作代表。重檐式碑首与高碑身相接，碑面文字仅概括为线纹。",
+    "facts": [
+      "石台孝经于745年刻成；这是碑林藏石中的一件，不代表整个碑林同年形成。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "石台孝经碑 · 线稿",
+      "745 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "yn_cuanbaozi",
+    "name": "爨宝子碑",
+    "short": "小爨碑",
+    "sub": "东晋爨宝子碑",
+    "dyn": "jin",
+    "tag": "东晋",
+    "era": "东晋义熙元年",
+    "year": 405,
+    "yearLabel": "405",
+    "place": "云南曲靖 · 麒麟区",
+    "placeKey": "yn_qujing",
+    "types": [
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "石碑边缘朴直，密布古拙碑文。图版只取现存碑身形态，细小文字作抽象纹理，不复刻碑文。",
+    "facts": [
+      "爨宝子碑立于东晋义熙元年405年；碑刻身世属东晋，不归作南朝碑刻。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "爨宝子碑 · 线稿",
+      "405 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "yn_cuanyan",
+    "name": "爨龙颜碑",
+    "short": "大爨碑",
+    "sub": "南朝爨龙颜碑",
+    "dyn": "nan",
+    "tag": "南朝",
+    "era": "刘宋大明二年",
+    "year": 458,
+    "yearLabel": "458",
+    "place": "云南陆良 · 薛官堡",
+    "placeKey": "yn_luliang",
+    "types": [
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "碑额浮雕与布满风化的碑身使它与小爨碑形成一对。图版概括残损和雕饰，不临摹可辨认碑字。",
+    "facts": [
+      "爨龙颜碑立于刘宋大明二年458年；今见石面经过长期风化。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "爨龙颜碑 · 线稿",
+      "458 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "sn_yaowang",
+    "name": "药王山石刻",
+    "short": "药王山",
+    "sub": "摩崖石造像一龛",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "北朝至唐代多期石刻",
+    "year": 700,
+    "yearLabel": "唐代约略",
+    "place": "陕西铜川 · 耀州药王山",
+    "placeKey": "sn_tongchuan",
+    "types": [
+      "sculpture",
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "药王山摩崖与造像碑并存。图版从现状照片选取一龛立像，保留岩面轮廓。",
+    "facts": [
+      "石刻跨越北朝、隋唐等时期；本图所选单龛缺少可确认的精确纪年，700只作约略定位。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "石造像一龛 · 线稿",
+      "唐代约略 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "石刻跨越北朝、隋唐等时期；本图所选单龛缺少可确认的精确纪年，700只作约略定位。"
+  },
+  {
+    "id": "yn_duanshi",
+    "name": "段氏与三十七部会盟碑",
+    "short": "会盟碑",
+    "sub": "大理国会盟碑",
+    "dyn": "dali",
+    "tag": "大理",
+    "era": "大理国明政三年",
+    "year": 971,
+    "yearLabel": "971",
+    "place": "云南曲靖 · 麒麟区",
+    "placeKey": "yn_qujing",
+    "types": [
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "碑文记录大理国段氏与三十七部会盟。图版画现存碑身和石座，碑文仅作非字形线纹。",
+    "facts": [
+      "碑立于971年，属大理国，记录段氏与三十七部会盟。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "段氏与三十七部会盟碑 · 线稿",
+      "971 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "gs_xixia_stele",
+    "name": "重修护国寺感应塔碑",
+    "short": "西夏碑",
+    "sub": "西夏文与汉文碑面",
+    "dyn": "xixia",
+    "tag": "西夏",
+    "era": "天祐民安五年",
+    "year": 1094,
+    "yearLabel": "1094",
+    "place": "甘肃武威 · 西夏博物馆",
+    "placeKey": "gs_wuwei",
+    "types": [
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "高大的碑身留着西夏文与汉文。图版着重于风化后的外形和版面，不生成可误读的新碑文。",
+    "facts": [
+      "碑刻于西夏天祐民安五年1094年，记录护国寺感应塔重修。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "西夏碑碑身 · 线稿",
+      "1094 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "js_suzhou_song",
+    "name": "苏州文庙内宋代石刻",
+    "short": "苏州宋碑",
+    "sub": "平江图碑",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "南宋绍定二年",
+    "year": 1229,
+    "yearLabel": "1229",
+    "place": "江苏苏州 · 文庙",
+    "placeKey": "suzhou",
+    "types": [
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "碑额下的城图以街河纵横标示南宋平江。图版概括地图结构，不充当可阅读的历史地图复制品。",
+    "facts": [
+      "平江图碑刻于1229年，是文庙宋代石刻的一件；国保单位范围不止此碑。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "平江图碑 · 线稿",
+      "1229 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "hn_xizhou",
+    "name": "溪州铜柱",
+    "short": "溪州铜柱",
+    "sub": "五代盟约铜柱",
+    "dyn": "zhou",
+    "tag": "五代",
+    "era": "后晋天福五年左右",
+    "year": 940,
+    "yearLabel": "940",
+    "place": "湖南永顺 · 王村",
+    "placeKey": "hn_yongshun",
+    "types": [
+      "column",
+      "stele"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "一根铜柱刻录溪州盟约。图版依现状画狭长柱身与顶缘，除去玻璃展柜和室内陈设。",
+    "facts": [
+      "盟约与铜柱属于五代楚、溪州地方政权互动史；940用于约略定位。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "溪州铜柱 · 线稿",
+      "940 · 现状意写"
+    ],
+    "tall": true
+  },
+  {
+    "id": "sc_emei_buddha",
+    "name": "峨眉山圣寿万年寺铜铁佛像",
+    "short": "万年寺铜佛",
+    "sub": "普贤菩萨骑白象铜像",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋太平兴国年间",
+    "year": 980,
+    "yearLabel": "约980",
+    "place": "四川峨眉山 · 万年寺",
+    "placeKey": "sc_emei",
+    "types": [
+      "sculpture"
+    ],
+    "initialStatus": "unvisited",
+    "lede": "普贤菩萨坐莲台，白象承托其下。图版画万年寺内现存铜像，不画金顶近代大型造像。",
+    "facts": [
+      "铜铸普贤骑象像为北宋遗物；保护单位名称还包括寺内其他铜铁佛像。",
+      "图版依据现状照片作线描与设色意写，不作为实测图或碑文释读。"
+    ],
+    "caption": [
+      "普贤铜像 · 线稿",
+      "约980 · 现状意写"
+    ],
+    "tall": true,
+    "yearApprox": true,
+    "yearNote": "铜铸普贤骑象像为北宋遗物；保护单位名称还包括寺内其他铜铁佛像。"
+  }
+]);
+PLACES.push(...[
+  {
+    "key": "gs_dunhuang",
+    "name": "敦煌",
+    "prov": "甘肃",
+    "country": "CN",
+    "lat": 40.14,
+    "lon": 94.66
+  },
+  {
+    "key": "gs_guazhou",
+    "name": "瓜州",
+    "prov": "甘肃",
+    "country": "CN",
+    "lat": 40.52,
+    "lon": 95.78
+  },
+  {
+    "key": "xj_baicheng",
+    "name": "拜城",
+    "prov": "新疆",
+    "country": "CN",
+    "lat": 41.8,
+    "lon": 81.87
+  },
+  {
+    "key": "xj_kuqa",
+    "name": "库车",
+    "prov": "新疆",
+    "country": "CN",
+    "lat": 41.72,
+    "lon": 82.96
+  },
+  {
+    "key": "sc_guangyuan",
+    "name": "广元",
+    "prov": "四川",
+    "country": "CN",
+    "lat": 32.44,
+    "lon": 105.84
+  },
+  {
+    "key": "yn_jianchuan",
+    "name": "剑川",
+    "prov": "云南",
+    "country": "CN",
+    "lat": 26.54,
+    "lon": 99.91
+  },
+  {
+    "key": "yn_qujing",
+    "name": "曲靖",
+    "prov": "云南",
+    "country": "CN",
+    "lat": 25.49,
+    "lon": 103.8
+  },
+  {
+    "key": "yn_luliang",
+    "name": "陆良",
+    "prov": "云南",
+    "country": "CN",
+    "lat": 25.03,
+    "lon": 103.66
+  },
+  {
+    "key": "sn_tongchuan",
+    "name": "铜川",
+    "prov": "陕西",
+    "country": "CN",
+    "lat": 34.9,
+    "lon": 108.95
+  },
+  {
+    "key": "gs_wuwei",
+    "name": "武威",
+    "prov": "甘肃",
+    "country": "CN",
+    "lat": 37.93,
+    "lon": 102.64
+  },
+  {
+    "key": "hn_yongshun",
+    "name": "永顺",
+    "prov": "湖南",
+    "country": "CN",
+    "lat": 28.98,
+    "lon": 109.85
+  },
+  {
+    "key": "sc_emei",
+    "name": "峨眉山",
+    "prov": "四川",
+    "country": "CN",
+    "lat": 29.6,
+    "lon": 103.48
+  }
+]);

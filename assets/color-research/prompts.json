@@ -3283,5 +3283,203 @@
       "assets/color-studies/v1/foguang-colored.png"
     ],
     "record": "assets/color-research/nx_108towers.json"
+  },
+  {
+    "id": "gs_mogao",
+    "name": "莫高窟",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Mogao Cave 96's present nine-storey outer pavilion: muted red-brown wooden posts and lattice, charcoal-gray tiled eaves, pale ochre cliff, weathered material. The pavilion is later protective architecture for the Tang cave. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original 3:4 portrait composition. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/gs_mogao.png",
+      "assets/references/gs_mogao-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/gs_mogao.json"
+  },
+  {
+    "id": "gs_yulin",
+    "name": "榆林窟",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Yulin cave entrance row in weathered tan and warm gray sandstone cliffs, the three portal recesses dark earthy brown; no invented fresco or restored polychromy. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original 3:4 portrait composition. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/gs_yulin.png",
+      "assets/references/gs_yulin-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/gs_yulin.json"
+  },
+  {
+    "id": "gs_maijishan",
+    "name": "麦积山石窟",
+    "prompt": "Color this EXACT sparse black ink drawing, using photo 2 for actual present material color and image 3 as subdued matte atlas illustration style only. Subject: Maijishan Cave 13 East Cliff Buddha partial figure, sandstone and clay in sand ochre and weathered gray beige, no gilding. LOCK image 1's subject silhouette, all figures, damage, 3:4 framing and generous white margins; do not zoom or crop. Preserve at least 80 pixels COMPLETELY BLANK PURE WHITE on all four canvas edges. Use matte mineral color areas and fine lines. No extra objects, figures, scenery, text, labels, cast shadow, texture outside subject, gradient, transparency or checkerboard. All blank pixels MUST be flat opaque pure #FFFFFF. This is a white matte original.",
+    "input_images": [
+      "assets/generated/gs_maijishan.png",
+      "assets/references/gs_maijishan-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/gs_maijishan.json"
+  },
+  {
+    "id": "xj_kizil",
+    "name": "克孜尔千佛洞",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Kizil cave entrances in pale sand-colored cliff, weathered ochre and dusty beige rock; cave openings in dark neutral shadow, no colorful mural or blue sky. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/xj_kizil.png",
+      "assets/references/xj_kizil-extra-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/xj_kizil.json"
+  },
+  {
+    "id": "xj_kumtura",
+    "name": "库木吐喇千佛洞",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Kumtura cave cliff with multiple recesses in pale ochre, warm gray and sand-color rock, dark neutral open caves, present worn surface. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/xj_kumtura.png",
+      "assets/references/xj_kumtura-extra-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/xj_kumtura.json"
+  },
+  {
+    "id": "sc_huangze",
+    "name": "皇泽寺摩崖造像",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Huangze Temple cliff sculpture niche with five figures: weathered stone and clay in muted sandstone beige, warm gray and sparse remaining mineral pigments ONLY if visible. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/sc_huangze.png",
+      "assets/references/sc_huangze-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sc_huangze.json"
+  },
+  {
+    "id": "sc_qianfo",
+    "name": "广元千佛崖摩崖造像",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Guangyuan Thousand Buddha Cliff seated Buddha and attendant within stone niche, in warm sandstone beige, weathered gray and brown with present erosion. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/sc_qianfo.png",
+      "assets/references/sc_qianfo-extra-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sc_qianfo.json"
+  },
+  {
+    "id": "sc_beishan",
+    "name": "北山摩崖造像",
+    "prompt": "Color this EXACT sparse black ink drawing, using photo 2 for actual present material color and image 3 as subdued matte atlas illustration style only. Subject: Dazu Beishan carved bodhisattva and attendants in aged gray-beige stone with dark recesses and restrained pigment remnants. LOCK image 1's subject silhouette, all figures, damage, 3:4 framing and generous white margins; do not zoom or crop. Preserve at least 80 pixels COMPLETELY BLANK PURE WHITE on all four canvas edges. Use matte mineral color areas and fine lines. No extra objects, figures, scenery, text, labels, cast shadow, texture outside subject, gradient, transparency or checkerboard. All blank pixels MUST be flat opaque pure #FFFFFF. This is a white matte original.",
+    "input_images": [
+      "assets/generated/sc_beishan.png",
+      "assets/references/sc_beishan-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sc_beishan.json"
+  },
+  {
+    "id": "yn_shizhong",
+    "name": "石钟山石窟",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Nanzhao-period stone relief of a seated ruler with attendants at Shizhongshan, present warm gray-brown stone and dark recesses; identity traditional but uncertain. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/yn_shizhong.png",
+      "assets/references/yn_shizhong-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/yn_shizhong.json"
+  },
+  {
+    "id": "sn_beilin",
+    "name": "西安碑林",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Tang Stone Platform Classic of Filial Piety stele, weathered pale gray-brown stone body and carved crown, faint dark incision texture only; no legible writing. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/sn_beilin.png",
+      "assets/references/sn_beilin-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sn_beilin.json"
+  },
+  {
+    "id": "yn_cuanbaozi",
+    "name": "爨宝子碑",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Eastern Jin Cuan Baozi stele, muted dark gray weathered stone with paler worn edges and incised marks as abstract texture. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/yn_cuanbaozi.png",
+      "assets/references/yn_cuanbaozi-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/yn_cuanbaozi.json"
+  },
+  {
+    "id": "yn_cuanyan",
+    "name": "爨龙颜碑",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Southern Dynasties Cuan Longyan stele, warm neutral gray-beige eroded stone with slightly darker top relief and faint incisions, no legible characters. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/yn_cuanyan.png",
+      "assets/references/yn_cuanyan-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/yn_cuanyan.json"
+  },
+  {
+    "id": "sn_yaowang",
+    "name": "药王山石刻",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Yaowang Mountain weathered standing stone bodhisattva in a rock niche: muted pale tan-grey stone and recesses in soft brown; no invented gilding or bright restored paint. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/sn_yaowang.png",
+      "assets/references/sn_yaowang-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sn_yaowang.json"
+  },
+  {
+    "id": "yn_duanshi",
+    "name": "段氏与三十七部会盟碑",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Dali kingdom Duan and Thirty-Seven Tribes oath stone stele, deeply aged dark gray-brown stone slab and pale weathered edges, abstract faint incision texture only. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/yn_duanshi.png",
+      "assets/references/yn_duanshi-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/yn_duanshi.json"
+  },
+  {
+    "id": "gs_xixia_stele",
+    "name": "重修护国寺感应塔碑",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Western Xia stele of Rebuilding Huguo Temple Ganying Pagoda, dark bluish-gray eroded stone face and tawny chipped edges, pale stone pedestal, no legible invented script. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/gs_xixia_stele.png",
+      "assets/references/gs_xixia_stele-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/gs_xixia_stele.json"
+  },
+  {
+    "id": "js_suzhou_song",
+    "name": "苏州文庙内宋代石刻",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Southern Song Pingjiang city map stone stele: dark gray stone tablet with lightly etched city grid and dragons, muted warm gray wear, no legible labels or invented Chinese text. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/js_suzhou_song.png",
+      "assets/references/js_suzhou_song-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/js_suzhou_song.json"
+  },
+  {
+    "id": "hn_xizhou",
+    "name": "溪州铜柱",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Five Dynasties Xizhou bronze column: dark aged copper-bronze with green-gray patina, faint incisions and plain foot, no glass display case. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/hn_xizhou.png",
+      "assets/references/hn_xizhou-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/hn_xizhou.json"
+  },
+  {
+    "id": "sc_emei_buddha",
+    "name": "峨眉山圣寿万年寺铜铁佛像",
+    "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Song bronze Samantabhadra seated on lotus atop a white elephant in Wannian Temple, Emei: dark mellow gold-bronze bodhisattva and lotus, pale gray-white elephant with restrained aged colors, no flowers or modern worshippers. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+    "input_images": [
+      "assets/generated/sc_emei_buddha.png",
+      "assets/references/sc_emei_buddha-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sc_emei_buddha.json"
   }
 ]

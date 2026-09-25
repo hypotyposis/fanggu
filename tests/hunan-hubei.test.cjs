@@ -27,7 +27,7 @@ test('Hunan and Hubei additions cover both new provinces with paired artwork and
   assert.equal(queue.count, SITES.length - queue.excluded.length);
   for (const province of ['湖南', '湖北']) {
     assert.equal(batch.groups[province].length, 4);
-    assert.equal(catalog.filter(s => s.province === province).length, 4);
+    assert.equal(catalog.filter(s => s.province === province).length, province === '湖南' ? 5 : 4);
     for (const id of batch.groups[province]) {
       const site = catalog.find(s => s.id === id);
       assert.equal(site.province, province);
@@ -111,7 +111,10 @@ test('Hunan and Hubei additions remain searchable and seed unvisited without cha
   }
   assert.equal(after.record('foguang').note, '旧记录保留');
   const find = filters => Array.from(after.all().filter(s => facets.matches(s, filters)), s => s.id).sort();
-  for (const province of ['湖南', '湖北']) assert.deepEqual(find({ region: 'central', province }), [...batch.groups[province]].sort());
+  for (const province of ['湖南', '湖北']) {
+    const firstBatchStone = province === '湖南' ? ['hn_xizhou'] : [];
+    assert.deepEqual(find({ region: 'central', province }), [...batch.groups[province], ...firstBatchStone].sort());
+  }
   assert.deepEqual(find({ province: '湖南', query: '第七批国保' }), ['hu_tianhou']);
   assert.deepEqual(find({ province: '湖北', type: 'pagoda' }), ['hb_yuquan']);
   const restored = create(catalog, { getItem: () => null, setItem() {} });

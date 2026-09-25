@@ -66,7 +66,8 @@ test('new provinces and aliases are reachable without duplicating existing monum
   assert(find({ query: '先师殿', province: '云南' }).some(s => s.id === 'yn_jianshui'));
   assert(find({ query: '九角', province: '贵州' }).some(s => s.id === 'gz_wenchang'));
   assert.equal(find({ region: 'north', province: '内蒙古' }).length, 4);
-  assert.equal(find({ province: '云南' }).length, 4);
+  assert.deepEqual(Array.from(find({ province: '云南' }), site => site.id).sort(),
+    ['chongsheng', 'yn_jianshui', 'yn_jindian', 'yn_jingzhen', 'yn_shizhong', 'yn_cuanbaozi', 'yn_cuanyan', 'yn_duanshi'].sort());
 });
 
 test('dates distinguish foundation, surviving subject, reconstruction and approximate placement', () => {

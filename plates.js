@@ -3403,6 +3403,222 @@ const PLATES = {
       "一百零八塔 · 最上三行七塔局部",
       "西夏始建说 · 后世重修现貌"
     ]
+  },
+  "gs_mogao": {
+    "src": "assets/plates/gs_mogao.png",
+    "alt": "第96窟外部九层楼 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "第96窟外观 · 线稿",
+      "现见保护楼阁 · 非唐代原构"
+    ]
+  },
+  "gs_yulin": {
+    "src": "assets/plates/gs_yulin.png",
+    "alt": "榆林河谷 · 石窟入口局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "河谷窟口局部 · 线稿",
+      "唐代起 · 现状意写"
+    ]
+  },
+  "gs_maijishan": {
+    "src": "assets/plates/gs_maijishan.png",
+    "alt": "第13窟 · 东崖大佛局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#90aab6",
+    "tint": false,
+    "caption": [
+      "第13窟东崖大佛局部 · 线稿",
+      "隋代 · 现状意写"
+    ]
+  },
+  "xj_kizil": {
+    "src": "assets/plates/xj_kizil.png",
+    "alt": "石窟崖壁 · 入口局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9c9fbd",
+    "tint": false,
+    "caption": [
+      "崖壁入口局部 · 线稿",
+      "龟兹时期洞窟群 · 现状窟口"
+    ]
+  },
+  "xj_kumtura": {
+    "src": "assets/plates/xj_kumtura.png",
+    "alt": "河谷石窟 · 崖面局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9c9fbd",
+    "tint": false,
+    "caption": [
+      "河谷崖面局部 · 线稿",
+      "龟兹时期洞窟群 · 现状窟口"
+    ]
+  },
+  "sc_huangze": {
+    "src": "assets/plates/sc_huangze.png",
+    "alt": "摩崖五尊像局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "摩崖五尊像局部 · 线稿",
+      "唐代 · 现状意写"
+    ]
+  },
+  "sc_qianfo": {
+    "src": "assets/plates/sc_qianfo.png",
+    "alt": "崖壁佛龛局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "崖壁佛龛局部 · 线稿",
+      "唐代约略 · 现状意写"
+    ]
+  },
+  "sc_beishan": {
+    "src": "assets/plates/sc_beishan.png",
+    "alt": "北山石龛 · 菩萨造像局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "北山石龛局部 · 线稿",
+      "宋代约略 · 现状意写"
+    ]
+  },
+  "yn_shizhong": {
+    "src": "assets/plates/yn_shizhong.png",
+    "alt": "南诏王像龛局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b47f71",
+    "tint": false,
+    "caption": [
+      "南诏王像龛局部 · 线稿",
+      "约9世纪 · 现状意写"
+    ]
+  },
+  "sn_beilin": {
+    "src": "assets/plates/sn_beilin.png",
+    "alt": "石台孝经碑 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "石台孝经碑 · 线稿",
+      "745 · 现状意写"
+    ]
+  },
+  "yn_cuanbaozi": {
+    "src": "assets/plates/yn_cuanbaozi.png",
+    "alt": "东晋爨宝子碑 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#bb9179",
+    "tint": false,
+    "caption": [
+      "爨宝子碑 · 线稿",
+      "405 · 现状意写"
+    ]
+  },
+  "yn_cuanyan": {
+    "src": "assets/plates/yn_cuanyan.png",
+    "alt": "南朝爨龙颜碑 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#b58d67",
+    "tint": false,
+    "caption": [
+      "爨龙颜碑 · 线稿",
+      "458 · 现状意写"
+    ]
+  },
+  "sn_yaowang": {
+    "src": "assets/plates/sn_yaowang.png",
+    "alt": "摩崖石造像一龛 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "石造像一龛 · 线稿",
+      "唐代约略 · 现状意写"
+    ]
+  },
+  "yn_duanshi": {
+    "src": "assets/plates/yn_duanshi.png",
+    "alt": "大理国会盟碑 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#7d9db8",
+    "tint": false,
+    "caption": [
+      "段氏与三十七部会盟碑 · 线稿",
+      "971 · 现状意写"
+    ]
+  },
+  "gs_xixia_stele": {
+    "src": "assets/plates/gs_xixia_stele.png",
+    "alt": "西夏文与汉文碑面 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#c6ac85",
+    "tint": false,
+    "caption": [
+      "西夏碑碑身 · 线稿",
+      "1094 · 现状意写"
+    ]
+  },
+  "js_suzhou_song": {
+    "src": "assets/plates/js_suzhou_song.png",
+    "alt": "平江图碑 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "平江图碑 · 线稿",
+      "1229 · 现状意写"
+    ]
+  },
+  "hn_xizhou": {
+    "src": "assets/plates/hn_xizhou.png",
+    "alt": "五代盟约铜柱 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "溪州铜柱 · 线稿",
+      "940 · 现状意写"
+    ]
+  },
+  "sc_emei_buddha": {
+    "src": "assets/plates/sc_emei_buddha.png",
+    "alt": "普贤菩萨骑白象铜像 · 线稿",
+    "width": 1086,
+    "height": 1448,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "普贤铜像 · 线稿",
+      "约980 · 现状意写"
+    ]
   }
 };
 

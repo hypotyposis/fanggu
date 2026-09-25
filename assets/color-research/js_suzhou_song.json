@@ -1,0 +1,51 @@
+{
+  "id": "js_suzhou_song",
+  "name": "平江图碑",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/js_suzhou_song.png",
+    "assets/references/js_suzhou_song-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Southern Song Pingjiang city map stone stele: dark gray stone tablet with lightly etched city grid and dragons, muted warm gray wear, no legible labels or invented Chinese text. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "平江图碑为深灰石面与较浅的地图阴刻；地名不作可读再现。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-05-15 13:03:33",
+      "reference_file": "assets/references/js_suzhou_song-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "苏州市文旅局：苏州文庙四大宋碑",
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/wgjjgsz/202110/c3aaa7c3d3b74b0d9cc198d49f28a610.shtml"
+    }
+  ],
+  "output": "assets/colored/js_suzhou_song.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-b9788eae-7b2d-4653-8c22-af4ea487c44e.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ae617b308b4e12304dd52b74105f438601d35582c5c35872119ec84bcaf15a75",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

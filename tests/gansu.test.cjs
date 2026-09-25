@@ -86,8 +86,9 @@ test('Gansu additions are discoverable by region, national batch and type withou
   for (const id of batch.ids) { assert.equal(after.record(id).status, 'unvisited'); assert.equal(after.record(id).visitedOn, ''); }
   assert.equal(after.record('foguang').note, '旧记录保留');
   const find = filters => Array.from(after.all().filter(s => facets.matches(s, filters)), s => s.id).sort();
-  assert.deepEqual(find({ region: 'northwest', province: '甘肃' }), [...batch.ids].sort());
-  assert.deepEqual(find({ province: '甘肃', query: '第一批国保' }), ['gs_bingling', 'gs_jiayuguan']);
+  const firstBatchStone = ['gs_maijishan', 'gs_mogao', 'gs_xixia_stele', 'gs_yulin'];
+  assert.deepEqual(find({ region: 'northwest', province: '甘肃' }), [...batch.ids, ...firstBatchStone].sort());
+  assert.deepEqual(find({ province: '甘肃', query: '第一批国保' }), ['gs_bingling', 'gs_jiayuguan', ...firstBatchStone].sort());
   assert.deepEqual(find({ province: '甘肃', type: 'pagoda' }), ['gs_dafo_tuta']);
   const restored = create(catalog, { getItem: () => null, setItem() {} });
   restored.import(after.export()); assert.equal(restored.record('foguang').note, '旧记录保留');

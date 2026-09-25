@@ -1,0 +1,49 @@
+{
+  "id": "gs_xixia_stele",
+  "name": "西夏文与汉文碑面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/gs_xixia_stele.png",
+    "assets/references/gs_xixia_stele-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Western Xia stele of Rebuilding Huguo Temple Ganying Pagoda, dark bluish-gray eroded stone face and tawny chipped edges, pale stone pedestal, no legible invented script. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "碑面深灰，边缘砂褐风化，石座灰米；不重构碑文。",
+  "references": [
+    {
+      "source_page": "https://touch.travel.qunar.com/comment/10157102399",
+      "image_url": "https://youimg1.c-ctrip.com/target/100k0x000000ljxz317E2.jpg",
+      "author": "去哪儿游记／原作者见来源页",
+      "license": "许可未明；仅作研究参考",
+      "reference_file": "assets/references/gs_xixia_stele-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "故宫博物院藏西夏碑拓本",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/32021?dep=P"
+    }
+  ],
+  "output": "assets/colored/gs_xixia_stele.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-7c65448c-dba7-4c79-8ede-42434a871d29.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c7c99e4fed7ad398571e611a09bab2a7959f51e5fdc3b3a210a130ac018365e8",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

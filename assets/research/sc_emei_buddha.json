@@ -1,0 +1,62 @@
+{
+  "id": "sc_emei_buddha",
+  "subject": "普贤菩萨骑白象铜像",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Samantabhadra_Emeishan.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Samantabhadra_Emeishan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "MarS666",
+  "license": "CC BY 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_emei_buddha-photo.jpg"
+  ],
+  "source_note": "据所列照片绘峨眉山圣寿万年寺铜铁佛像的普贤铜像；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Create a precise sparse Chinese heritage ink LINE DRAWING of the Song dynasty bronze Samantabhadra Bodhisattva of Wannian Temple on Emei Mountain: seated crowned bodhisattva in dark-gold bronze on ornate lotus atop a white elephant with trunk and large ears, from the actual photograph; no worshippers or flowers. Image 1 is the subject photo and image 2 is the project's line plate style reference. Follow the actual photo's identifying silhouette, composition and present condition. Remove glass cases, glare, signs, flowers, people, floors and modern backgrounds. Center the complete object with ample margin. Only clean fine charcoal-black contour lines and a few sparse material or relief marks. Represent any inscriptions or maps with abstract nonlegible marks; do not invent Chinese characters or text. Every blank canvas pixel must be flat opaque #FFFFFF. No gray background, gradients, shadows, paper grain, watercolor, colored ink, filled black masses, checkerboard or transparent canvas. 3:4 portrait composition.",
+  "generated_file": "assets/generated/sc_emei_buddha.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-24786ce6-c589-4459-95d1-d01d29aec547.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "caption": [
+    "普贤铜像 · 线稿",
+    "约980 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cce21864bdd05ad48232ea142906739f426023c671fe7f0668a8b341adb9cf21",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Samantabhadra_Emeishan.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Samantabhadra_Emeishan.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "MarS666",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "2006-08-16",
+      "reference_file": "assets/references/sc_emei_buddha-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "峨眉山市：万年寺普贤铜像",
+      "url": "https://www.emeishan.gov.cn/emss/dqzl/2c7ebb23701f4a39be93f77c0.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

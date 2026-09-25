@@ -135,8 +135,14 @@ enum Palette {
     static func dynasty(_ key: String) -> Color {
         switch key {
         case "han": .brown
+        case "jin": Color(red: 0.73, green: 0.57, blue: 0.47)
+        case "goguryeo": Color(red: 0.69, green: 0.63, blue: 0.55)
+        case "qiuci": Color(red: 0.61, green: 0.62, blue: 0.74)
         case "tang": gold
+        case "nanzhao": Color(red: 0.71, green: 0.50, blue: 0.44)
+        case "balhae": Color(red: 0.57, green: 0.67, blue: 0.63)
         case "song": .teal
+        case "dali": Color(red: 0.49, green: 0.62, blue: 0.72)
         case "liao": red
         case "xixia": Color(red: 0.65, green: 0.51, blue: 0.34)
         case "ming": .indigo

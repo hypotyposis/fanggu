@@ -1,0 +1,47 @@
+{
+  "id": "hn_xizhou",
+  "name": "五代盟约铜柱",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_xizhou.png",
+    "assets/references/hn_xizhou-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Five Dynasties Xizhou bronze column: dark aged copper-bronze with green-gray patina, faint incisions and plain foot, no glass display case. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "铜柱呈暗铜色与灰绿锈色，刻痕不作可读文字。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%BA%AA%E5%B7%9E%E9%93%9C%E6%9F%B1_Bronze_Column_at_Xizhou_20231009.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/%E6%BA%AA%E5%B7%9E%E9%93%9C%E6%9F%B1_Bronze_Column_at_Xizhou_20231009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "K29328",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2023-10-09",
+      "reference_file": "assets/references/hn_xizhou-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/hn_xizhou.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-e39eadeb-22dd-4fa7-8526-028a8c2bd91a.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "26d276598866a084a66c79b417303adeae98cd8cd94d7c2e620e7188ea7e3545",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

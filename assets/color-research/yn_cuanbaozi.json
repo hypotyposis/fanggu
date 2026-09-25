@@ -1,0 +1,51 @@
+{
+  "id": "yn_cuanbaozi",
+  "name": "东晋爨宝子碑",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/yn_cuanbaozi.png",
+    "assets/references/yn_cuanbaozi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Eastern Jin Cuan Baozi stele, muted dark gray weathered stone with paler worn edges and incised marks as abstract texture. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "碑身为深灰、局部灰褐风化石面，边缘略浅。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%88%A8%E5%AE%9D%E5%AD%90%E7%A2%91_-_%E7%A2%91%E9%98%B3_-_2023-06-18_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%E7%88%A8%E5%AE%9D%E5%AD%90%E7%A2%91_-_%E7%A2%91%E9%98%B3_-_2023-06-18_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-06-18 10:08:24",
+      "reference_file": "assets/references/yn_cuanbaozi-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "曲靖市政府：爨文化博物馆",
+      "url": "https://www.qj.gov.cn/html/2020/csmp_0417/83745.html"
+    }
+  ],
+  "output": "assets/colored/yn_cuanbaozi.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-e5039a37-eb9e-4ff2-9906-832e2f616c13.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "04406246ef76afa14855fd8d18d73dd2f8cf740b806b200c4254919eb5859f56",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

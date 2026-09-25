@@ -3153,6 +3153,294 @@
         },
         "note": "大境门点段在第七批纳入长城并归入第五批长城项目，标签按本点段纳入批次登记。"
       }
+    ],
+    "gs_mogao": [
+      {
+        "batch": 1,
+        "unitName": "莫高窟",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "第96窟外观",
+        "locator": "1961年第一批全国重点文物保护单位名单第35项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "gs_yulin": [
+      {
+        "batch": 1,
+        "unitName": "楡林窟",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "河谷窟口局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第36项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "gs_maijishan": [
+      {
+        "batch": 1,
+        "unitName": "麦积山石窟",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "第13窟东崖大佛局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第38项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "xj_kizil": [
+      {
+        "batch": 1,
+        "unitName": "克孜尔千佛洞",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "崖壁入口局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第41项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "xj_kumtura": [
+      {
+        "batch": 1,
+        "unitName": "库木吐喇千佛洞",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "河谷崖面局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第42项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sc_huangze": [
+      {
+        "batch": 1,
+        "unitName": "皇泽寺摩崖造象",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "摩崖五尊像局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第43项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sc_qianfo": [
+      {
+        "batch": 1,
+        "unitName": "广元千佛崖摩崖造象",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "崖壁佛龛局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第44项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sc_beishan": [
+      {
+        "batch": 1,
+        "unitName": "北山摩崖造象",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "北山石龛局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第45项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "yn_shizhong": [
+      {
+        "batch": 1,
+        "unitName": "石钟山石窟",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "南诏王像龛局部",
+        "locator": "1961年第一批全国重点文物保护单位名单第47项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sn_beilin": [
+      {
+        "batch": 1,
+        "unitName": "西安碑林",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "石台孝经碑",
+        "locator": "1961年第一批全国重点文物保护单位名单第125项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "yn_cuanbaozi": [
+      {
+        "batch": 1,
+        "unitName": "爨宝子碑",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "爨宝子碑",
+        "locator": "1961年第一批全国重点文物保护单位名单第126项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "yn_cuanyan": [
+      {
+        "batch": 1,
+        "unitName": "爨龙颜碑",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "爨龙颜碑",
+        "locator": "1961年第一批全国重点文物保护单位名单第127项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sn_yaowang": [
+      {
+        "batch": 1,
+        "unitName": "药王山石刻",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "石造像一龛",
+        "locator": "1961年第一批全国重点文物保护单位名单第128项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "yn_duanshi": [
+      {
+        "batch": 1,
+        "unitName": "段氏与三十七部会盟碑",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "段氏与三十七部会盟碑",
+        "locator": "1961年第一批全国重点文物保护单位名单第129项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "gs_xixia_stele": [
+      {
+        "batch": 1,
+        "unitName": "重修护国寺感应塔碑（西夏碑）",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "西夏碑碑身",
+        "locator": "1961年第一批全国重点文物保护单位名单第130项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "js_suzhou_song": [
+      {
+        "batch": 1,
+        "unitName": "苏州文庙内宋代石刻",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "平江图碑",
+        "locator": "1961年第一批全国重点文物保护单位名单第131项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "hn_xizhou": [
+      {
+        "batch": 1,
+        "unitName": "溪州铜柱",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "溪州铜柱",
+        "locator": "1961年第一批全国重点文物保护单位名单第132项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sc_emei_buddha": [
+      {
+        "batch": 1,
+        "unitName": "峨眉山圣寿万年寺铜铁佛像",
+        "relation": "part",
+        "source": "batch1",
+        "scope": "普贤铜像",
+        "locator": "1961年第一批全国重点文物保护单位名单第133项",
+        "scopeSources": [
+          {
+            "title": "国务院公报 · 第一批国保名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
     ]
   },
   "untagged": {

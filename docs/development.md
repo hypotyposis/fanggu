@@ -129,6 +129,7 @@ python3 -m http.server 8765
 逐图 research JSON 登记 `background_preparation`，包含 `method: "white-matte-v1"`、原件 `sourceSha256` 和经过实际查看的透空点 `seeds`（没有时为空数组）。修改原件后须更新记录，不能靠旧记录放行另一张图。
 
 - 线稿：`prepare-plates.mjs` 经 `line-plate.mjs` 调用 `white-matte.py`，检查近白边缘和中性线条，按灰度生成笔画 alpha，去除内外留白，再着朝代色输出透明 PNG。
+- 东晋、龟兹、南诏、大理条目各用独立时代标签和配色；不要把同期的碑刻或石窟归入北魏、唐宋等中原朝代。无精确断代的局部图版以 `yearApprox` 和 `yearNote` 明示年表位置仅供排序。
 - 设色：`prepare-colored-avif.py` 经 `white-matte.py` 只移除与画布外缘连通的近白底色；封闭透空处按记录的种子移除，内部浅色石材和门窗暗部保留。仅最外层轮廓去除混入的白色，内部 RGB 不变。生成透明 PNG 后转 AVIF，解码检查尺寸与 alpha。
 - 白底边缘校验失败、没有可见主体或种子落在非白处时立即报错；假棋盘格不能当成白底放行。现有原生 alpha 可直接保留，已通过的旧图按原哈希复用。
 - 白底处理器的版本哈希与逐图参数进入缓存键。改变处理方式只重建相应图版，并重新等待用户审阅，不重置其他图的验收。
@@ -142,7 +143,7 @@ python3 -m http.server 8765
 | 操作 | 输入 | 写入 / 注意事项 |
 | --- | --- | --- |
 | `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
-| `node scripts/prepare-plates.mjs` | `sites.js`、`style.css`、线稿原稿、线稿考据 JSON 与白底处理记录 | `assets/plates/`、`plates.js`、`sources.html`；需要 `magick`，源文件时间变化可能导致全量重处理 |
+| `node scripts/prepare-plates.mjs` | `sites.js`、`style.css`、线稿原稿、线稿考据 JSON 与白底处理记录 | `assets/plates/`、`plates.js`、`sources.html`；需要 `magick`，按单张原稿、考据记录、处理器时间和图版配色增量重建 |
 | `python3 -B scripts/prepare-colored-avif.py` | `queue.json`、批量设色 PNG、三张已确认 PNG | 白底去底或保留原生 alpha（旧暗底原件按哈希兼容），生成 `assets/colored-transparent/` 透明 PNG，再写 `assets/colored-transparent-avif/` 与 `assets/color-research/avif-manifest.json`；AVIF Q85、4:4:4、speed=6，原 PNG 不变，按来源、抠图参数和编码器哈希复用 |
 | `node scripts/collect-colored-plates.mjs --require-complete` | `queue.json`、逐图设色 JSON、保留的 PNG、AVIF 与转码清单 | `colored-plates.js`、`progress.json`、`prompts.json`；验证来源/交付哈希，缺少或过期 AVIF 会报错；不改图片 |
 

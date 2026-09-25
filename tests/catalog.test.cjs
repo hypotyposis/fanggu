@@ -40,8 +40,12 @@ additions.push(...anhuiExpansion.ids);
 const henanAdditions = JSON.parse(read('assets/research/henan-additions-2026-09-18.json'));
 additions.push(...henanAdditions.ids);
 additions.push('nx_xumishan','nx_xixialing','nx_108towers');
+const firstBatchStone = JSON.parse(read('assets/research/first-batch-grotto-stone.json'));
+const firstBatchNewIds = firstBatchStone.units.filter(unit => unit.added && unit.id !== 'gs_bingling').map(unit => unit.id);
 test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
+  assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -197,7 +201,7 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
   }
   const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
-  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers']) laterIds.add(id);
+  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds]) laterIds.add(id);
   const previouslyApproved = Object.entries(avif.images).filter(([id]) => !laterIds.has(id));
   assert.equal(previouslyApproved.length, 200);
   assert(previouslyApproved.every(([, item]) => item.visualReview === 'approved_user'));

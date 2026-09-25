@@ -1,0 +1,62 @@
+{
+  "id": "yn_cuanyan",
+  "subject": "南朝爨龙颜碑",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Kcx36",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yn_cuanyan-photo.jpg"
+  ],
+  "source_note": "据所列照片绘爨龙颜碑的爨龙颜碑；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Create a precise sparse Chinese heritage ink LINE DRAWING of the Southern Dynasties Cuan Longyan stele: very tall stone slab with rounded carved dragon and sun-moon motif crown, weathered face and inscription field, stone base. Image 1 is the subject photo and image 2 is the project's line plate style reference. Follow the subject's actual silhouette and defining forms, removing glass cases, glare, signs, people, floors and modern backgrounds. Center the complete stone object with ample blank margin. Only clean fine charcoal-black contour lines and a few sparse material or relief marks. Represent inscriptions as abstract nonlegible marks; do not invent Chinese characters or text. Every blank canvas pixel must be flat opaque #FFFFFF. No gray background, gradients, shadows, paper grain, watercolor, colored ink, filled black masses, checkerboard or transparent canvas. 3:4 portrait composition.",
+  "generated_file": "assets/generated/yn_cuanyan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-c42125d0-6520-453a-9a3a-36f83b7fb8bf.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "caption": [
+    "爨龙颜碑 · 线稿",
+    "458 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "37ac16f81165037ad5bbaa2b4b7c54b366bea8f2e65623179b2b5f3ea02bfd4b",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Kcx36",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2026-08-07 17:11:31",
+      "reference_file": "assets/references/yn_cuanyan-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "河北省民族宗教部门：大爨碑纪年",
+      "url": "https://mw.hebei.gov.cn/system/2026/02/05/030375009.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

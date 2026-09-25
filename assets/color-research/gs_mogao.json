@@ -1,0 +1,47 @@
+{
+  "id": "gs_mogao",
+  "name": "第96窟外部九层楼",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/gs_mogao.png",
+    "assets/references/gs_mogao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Mogao Cave 96's present nine-storey outer pavilion: muted red-brown wooden posts and lattice, charcoal-gray tiled eaves, pale ochre cliff, weathered material. The pavilion is later protective architecture for the Tang cave. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original 3:4 portrait composition. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "现见九层楼为暗灰瓦檐、红褐木架与浅赭崖面；色彩仅参照现状。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "guan",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "Taken on 5 October 2011",
+      "reference_file": "assets/references/gs_mogao-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/gs_mogao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-b2ba8911-8bf3-4af2-a316-7c5a7366943a.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cee0f608a7f8c399098fd7d08fa24a08d70fe88be4618adb6365b82d29b313a9",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

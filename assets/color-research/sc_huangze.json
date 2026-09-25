@@ -1,0 +1,45 @@
+{
+  "id": "sc_huangze",
+  "name": "摩崖五尊像局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sc_huangze.png",
+    "assets/references/sc_huangze-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Huangze Temple cliff sculpture niche with five figures: weathered stone and clay in muted sandstone beige, warm gray and sparse remaining mineral pigments ONLY if visible. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "造像与龛壁为浅褐、灰米石面，照片可见的微弱残色作低饱和处理。",
+  "references": [
+    {
+      "source_page": "https://www.sckg.com/diyipi/2168.html",
+      "image_url": "https://www.sckg.com/uploads/allimg/20230526/2-230526153A2411.jpg",
+      "author": "四川省文物考古研究院",
+      "license": "版权所有；仅作研究参考",
+      "reference_file": "assets/references/sc_huangze-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/sc_huangze.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-821f4a3a-4440-40a6-afa4-71c810bb2d92.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a4e2b638e6ebc80c9c7e16522f6a20d249754f09bc5d077402dc067ecc20952a",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

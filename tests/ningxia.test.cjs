@@ -31,7 +31,7 @@ test('Xixia remains separate from Song while partial subjects and approximate da
   assert.notEqual(DYN.xixia.acc, DYN.song.acc);
   assert.equal(DYN.xixia.start, 1038); assert.equal(DYN.xixia.end, 1227);
   const groups = timeline.clusters(SITES, DYN);
-  assert.deepEqual(Array.from(timeline.select(SITES, { period: 'xixia' }, groups), site => site.id).sort(), ids.slice(0, 2));
+  assert.deepEqual(Array.from(timeline.select(SITES, { period: 'xixia' }, groups), site => site.id).sort(), ['gs_xixia_stele', ...ids.slice(0, 2)]);
   for (const id of ids) {
     const site = SITES.find(site => site.id === id);
     assert.equal(site.yearApprox, true); assert(site.yearNote);

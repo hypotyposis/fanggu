@@ -1,0 +1,47 @@
+{
+  "id": "xj_kumtura",
+  "name": "河谷石窟 · 崖面局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xj_kumtura.png",
+    "assets/references/xj_kumtura-extra-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Kumtura cave cliff with multiple recesses in pale ochre, warm gray and sand-color rock, dark neutral open caves, present worn surface. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "河谷岩面呈灰黄、浅褐，洞口为暗灰褐；无内壁彩绘推定。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kuntula_Grottoes_1,_Kuqa.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Kuntula_Grottoes_1%2C_Kuqa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Yoshi Canopus",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2012-06-13 21:32:55",
+      "reference_file": "assets/references/xj_kumtura-extra-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/xj_kumtura.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-054a8532-42e4-4df1-a227-34c8d1606a12.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "59f6dccc705e78304884b4910e9d3f36c5a705676c992ac3ad21956e914fdd47",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}
