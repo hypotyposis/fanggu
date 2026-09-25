@@ -1,6 +1,6 @@
 # 访古
 
-开发入口：[AGENTS.md](AGENTS.md) · [开发指南](docs/development.md) · [图版维护](assets/README.md)
+开发入口：[AGENTS.md](AGENTS.md) · [开发指南](docs/development.md) · [图版维护](assets/README.md) · [iOS App](ios/README.md)
 
 A personal field guide to historic architecture — collect places to visit, keep check-in notes, and explore line-drawn halls, pagodas and grottoes from Han stone gateways to contemporary reconstructions.
 
