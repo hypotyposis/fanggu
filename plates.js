@@ -3188,6 +3188,66 @@ const PLATES = {
       "宋建七层 · 明增两层与塔刹"
     ]
   },
+  "sd_xiaotang_shrine": {
+    "src": "assets/plates/sd_xiaotang_shrine.png",
+    "alt": "保护罩屋内的东汉石祠本体 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#b79d77",
+    "tint": false,
+    "caption": [
+      "孝堂山郭氏墓石祠 · 线稿",
+      "约一世纪"
+    ]
+  },
+  "fj_qingjing_gate": {
+    "src": "assets/plates/fj_qingjing_gate.png",
+    "alt": "现存入口石门楼与相连石墙 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "泉州清净寺 · 线稿",
+      "1009始建，1310重修"
+    ]
+  },
+  "fj_anping_bridge": {
+    "src": "assets/plates/fj_anping_bridge.png",
+    "alt": "现存石板桥面与桥墩代表性局部 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "安平桥 · 线稿",
+      "1138始建，1152建成"
+    ]
+  },
+  "bj_yunju_north": {
+    "src": "assets/plates/bj_yunju_north.png",
+    "alt": "云居寺辽代北塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "房山云居寺塔及石经 · 线稿",
+      "辽代始建，明代修葺"
+    ]
+  },
+  "xz_jokhang": {
+    "src": "assets/plates/xz_jokhang.png",
+    "alt": "现存正立面（多期建筑） · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#b68f74",
+    "tint": false,
+    "caption": [
+      "大昭寺 · 线稿",
+      "647始建；现状多期"
+    ]
+  },
   "hb_shanhaiguan": {
     "src": "assets/plates/hb_shanhaiguan.png",
     "alt": "山海关镇东楼及城台 · 线稿",

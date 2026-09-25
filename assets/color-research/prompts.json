@@ -3481,5 +3481,61 @@
       "assets/color-studies/v1/foguang-colored.png"
     ],
     "record": "assets/color-research/sc_emei_buddha.json"
+  },
+  {
+    "id": "sd_xiaotang_shrine",
+    "name": "孝堂山郭氏墓石祠",
+    "prompt": "Create ONE museum-quality colored companion plate of the actual ancient Eastern Han Xiaotangshan Guo-family STONE shrine. Image 1 is the EXACT line drawing to color; preserve small squat two-bay form, sculpted slab roof, front posts and plinth precisely. Image 2 is the photograph of the real shrine inside its later protective hall; govern material colors from the ancient object only: weathered blue-gray and warm ash-gray limestone walls, darker aged stone roof, sparse discoloration and patina. Image 3 is only project's illustration style sample of fine contours and restrained matte mineral-color planes, not its building. Keep no later hall, signs, museum displays or flooring. Never add readable inscriptions: all historical incisions stay abstract and subdued. Preserve all contours and gaps. No shadow or scenery. Entire exterior and genuinely open gaps must be FLAT OPAQUE PURE WHITE #FFFFFF, without gradient, gray wash, paper texture, glow, checkerboard or transparency. Landscape composition.",
+    "input_images": [
+      "assets/generated/sd_xiaotang_shrine.png",
+      "assets/references/sd_xiaotang_shrine-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/sd_xiaotang_shrine.json"
+  },
+  {
+    "id": "fj_qingjing_gate",
+    "name": "泉州清净寺",
+    "prompt": "Create ONE museum-quality colored companion plate of the Quanzhou Qingjing Mosque stone gate. Image 1 is the exact line drawing to color: preserve every silhouette, proportion, pointed arch, crenellation, masonry seam, open doorway and blank margin. Image 2 is a photograph of the real gate, governing present-day material colors: weathered blue-gray stone central gate tower, pale warm gray and tan limestone side walls, recesses in deeper subdued charcoal stone. Image 3 is only the project's restrained mineral-color illustration style sample, never copy its Chinese roof or composition. Keep fine visible charcoal contours with matte mineral color planes and subtle stone variation INSIDE THE MASONRY ONLY. Do not add people, carts, signs, lettering, invented Arabic calligraphy, trees, paving, shadows or any modern detail. The entire exterior background and genuinely open gaps must be FLAT OPAQUE PURE WHITE #FFFFFF, no gray wash, gradient, glow, paper texture, checkerboard or transparent canvas. Maintain landscape 4:3 composition.",
+    "input_images": [
+      "assets/generated/fj_qingjing_gate.png",
+      "assets/references/fj_qingjing_gate-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/fj_qingjing_gate.json"
+  },
+  {
+    "id": "fj_anping_bridge",
+    "name": "安平桥",
+    "prompt": "Create ONE museum-quality colored companion plate of the representative surviving stone-deck segment of Anping Bridge in Fujian. Image 1 is the EXACT line drawing: preserve every long slab, low square railing post and rail, heavy masonry pier, open underside gap, silhouette, perspective and blank margin. Images 2 and 3 are photos of the actual bridge and determine present material colors: weathered pale warm gray granite slabs and railings with restrained tan discoloration, subtle stone joints and darker undersides. Image 4 only supplies project's fine contour, matte mineral-color illustration style; do not borrow its building or roof. No water, greenery, town, people, inscriptions, sky, shadow or scenery. Keep delicate visible contours and modest granular stone texture ONLY INSIDE THE MASONRY. Outside the bridge and in all true gaps, canvas must be FLAT OPAQUE PURE WHITE #FFFFFF, no gray background, gradient, paper texture, glow, checkerboard or transparency. Landscape 4:3.",
+    "input_images": [
+      "assets/generated/fj_anping_bridge.png",
+      "assets/references/fj_anping_bridge-photo-2.jpg",
+      "assets/references/fj_anping_bridge-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/fj_anping_bridge.json"
+  },
+  {
+    "id": "bj_yunju_north",
+    "name": "房山云居寺塔及石经",
+    "prompt": "Create ONE museum-quality colored companion plate of Yunju Temple NORTH Pagoda. Image 1 is the EXACT line drawing to color; preserve its square two-level base, bracketed projecting eaves, rounded drum, long conical ringed upper tower, arched niches, full silhouette and blank margins. Image 2 is a photograph of the actual North Pagoda, which determines current material colors: weathered gray-tan brick, darker sooty gray upper conical masonry, restrained brown-gray roof tiles and stone base. Image 3 only illustrates the project's fine contour and matte mineral-color style, not the subject. Use delicate preserved ink lines, restrained color planes, limited texture ONLY INSIDE THE TOWER. No trees, shrubs, signs, landscape, blue sky, labels or invented parts. The exterior background and all open voids must be FLAT OPAQUE PURE WHITE #FFFFFF, without gray wash, cast shadow, gradient, paper grain, checkerboard or transparent canvas. Maintain portrait composition.",
+    "input_images": [
+      "assets/generated/bj_yunju_north.png",
+      "assets/references/bj_yunju_north-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/bj_yunju_north.json"
+  },
+  {
+    "id": "xz_jokhang",
+    "name": "大昭寺",
+    "prompt": "Create ONE museum-quality colored companion plate of the present-day Jokhang Temple frontal elevation in Lhasa. Image 1 is the EXACT line drawing to color: preserve its geometry, rooftop pavilion, two animal ornaments flanking the central finial, broad rear wall, side wings, windows, silhouette and white margins. Image 2 is a photo of the actual current multi-period facade determining colors: muted Tibetan deep red and burnt ochre masonry, warm golden roof metal, dark wood framing, cream and blue-green ornamental trim, subdued fabrics. Image 3 is only a style sample of delicate preserved ink contours and matte mineral color planes; do not copy its Chinese roof. This depicts CURRENT composite fabric, not an imagined 7th-century original. Do not add signs, lettering, Tibetan characters, banners, people, awnings, planters or landscape. Restrained surface texture only inside the architecture. The entire exterior canvas and true open gaps must be FLAT OPAQUE PURE WHITE #FFFFFF, no gray wash, gradient, cast shadow, glow, paper texture, checkerboard or transparency. Landscape composition.",
+    "input_images": [
+      "assets/generated/xz_jokhang.png",
+      "assets/references/xz_jokhang-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/xz_jokhang.json"
   }
 ]

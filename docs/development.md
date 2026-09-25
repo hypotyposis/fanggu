@@ -101,7 +101,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 高句丽、渤海遗存使用独立 `goguryeo`、`balhae` 时期，不套用北魏或唐；依据见逐图研究记录。其目录章节说明本库所收遗迹年代，年表使用北轨古迹点和独立时期选择器，不将章节范围伪装成完整政权起止。`country` 仍由遗迹今日所在地派生。
 
-教堂使用 `catalog.js` 的 `church` 类型，不强制归入传统殿堂；独立石灯幢按石刻主体使用 `sculpture`，不因“幢”字归成经幢。新增类型还须验证实际筛选、搜索及详情分类。
+教堂使用 `catalog.js` 的 `church` 类型，清净寺使用 `mosque` 类型，不强制归入传统殿堂；独立石灯幢按石刻主体使用 `sculpture`，不因“幢”字归成经幢。新增类型还须验证实际筛选、搜索及详情分类。
 
 ### 存储与兼容
 
@@ -152,7 +152,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 逐图 research JSON 登记 `background_preparation`，包含 `method: "white-matte-v1"`、原件 `sourceSha256` 和经过实际查看的透空点 `seeds`（没有时为空数组）。修改原件后须更新记录，不能靠旧记录放行另一张图。
 
 - 线稿：`prepare-plates.mjs` 经 `line-plate.mjs` 调用 `white-matte.py`，检查近白边缘和中性线条，按灰度生成笔画 alpha，去除内外留白，再着朝代色输出透明 PNG。
-- 东晋、龟兹、南诏、大理条目各用独立时代标签和配色；不要把同期的碑刻或石窟归入北魏、唐宋等中原朝代。无精确断代的局部图版以 `yearApprox` 和 `yearNote` 明示年表位置仅供排序。
+- 东晋、龟兹、吐蕃、南诏、大理条目各用独立时代标签和配色；不要把同期的碑刻或石窟归入北魏、唐宋等中原朝代。无精确断代的局部图版以 `yearApprox` 和 `yearNote` 明示年表位置仅供排序。
 - 设色：`prepare-colored-avif.py` 经 `white-matte.py` 只移除与画布外缘连通的近白底色；封闭透空处按记录的种子移除，内部浅色石材和门窗暗部保留。仅最外层轮廓去除混入的白色，内部 RGB 不变。生成透明 PNG 后转 AVIF，解码检查尺寸与 alpha。
 - 白底边缘校验失败、没有可见主体或种子落在非白处时立即报错；假棋盘格不能当成白底放行。现有原生 alpha 可直接保留，已通过的旧图按原哈希复用。
 - 白底处理器的版本哈希与逐图参数进入缓存键。改变处理方式只重建相应图版，并重新等待用户审阅，不重置其他图的验收。

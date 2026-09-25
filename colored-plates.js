@@ -6744,6 +6744,112 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sd_xiaotang_shrine": {
+    "src": "assets/colored-transparent-avif/sd_xiaotang_shrine.avif",
+    "originalSrc": "assets/colored/sd_xiaotang_shrine.png",
+    "transparentSrc": "assets/colored-transparent/sd_xiaotang_shrine.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "保护罩屋内的东汉石祠本体 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/sd_xiaotang_shrine.json",
+    "references": [
+      {
+        "page": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+        "author": "杨爱国（图版提供）",
+        "license": "故宫博物院院刊图版，仅内部制图参考",
+        "date": "2019"
+      }
+    ]
+  },
+  "fj_qingjing_gate": {
+    "src": "assets/colored-transparent-avif/fj_qingjing_gate.avif",
+    "originalSrc": "assets/colored/fj_qingjing_gate.png",
+    "transparentSrc": "assets/colored-transparent/fj_qingjing_gate.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存入口石门楼与相连石墙 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/fj_qingjing_gate.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-02-29"
+      }
+    ]
+  },
+  "fj_anping_bridge": {
+    "src": "assets/colored-transparent-avif/fj_anping_bridge.avif",
+    "originalSrc": "assets/colored/fj_anping_bridge.png",
+    "transparentSrc": "assets/colored-transparent/fj_anping_bridge.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存石板桥面与桥墩代表性局部 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/fj_anping_bridge.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-02-28"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%AE%89%E5%B9%B3%E6%A1%A5%E6%99%8B%E6%B1%9F%E6%AE%B5%E4%B8%9C%E5%90%91.jpg",
+        "author": "董辰兴",
+        "license": "CC BY-SA 4.0",
+        "date": "2021-02-12"
+      }
+    ]
+  },
+  "bj_yunju_north": {
+    "src": "assets/colored-transparent-avif/bj_yunju_north.avif",
+    "originalSrc": "assets/colored/bj_yunju_north.png",
+    "transparentSrc": "assets/colored-transparent/bj_yunju_north.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "云居寺辽代北塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/bj_yunju_north.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-09-08"
+      }
+    ]
+  },
+  "xz_jokhang": {
+    "src": "assets/colored-transparent-avif/xz_jokhang.avif",
+    "originalSrc": "assets/colored/xz_jokhang.png",
+    "transparentSrc": "assets/colored-transparent/xz_jokhang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存正立面（多期建筑） · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/xz_jokhang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Jokhang_Temple_frontal_view.jpg",
+        "author": "Rene Heise",
+        "license": "CC BY-SA 4.0",
+        "date": "2010-10-21"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

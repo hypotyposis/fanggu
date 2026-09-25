@@ -5,6 +5,7 @@ const DYN = {
   goguryeo: { glyph: '高句丽', name: '高句丽', acc: 'var(--goguryeo)' },
   bei: { glyph: '北魏', name: '北魏', acc: 'var(--plum)' },
   qiuci: { glyph: '龟兹', name: '龟兹', acc: 'var(--qiuci)', start: 300, end: 900 },
+  tubo: { glyph: '吐蕃', name: '吐蕃', acc: 'var(--tubo)', start: 633, end: 842 },
   nan: { glyph: '南朝', name: '南朝', acc: 'var(--clay)' },
   beiqi: { glyph: '北齐', name: '北齐', acc: 'var(--rose)' },
   sui: { glyph: '隋', name: '隋', acc: 'var(--celadon)' },
@@ -9238,6 +9239,45 @@ SITES.push(
   }
 );
 
+// 第一批国保补录；现存图版的主体与初创年代分开说明。
+SITES.push(
+  {
+    id: 'sd_xiaotang_shrine', name: '孝堂山郭氏墓石祠', short: '孝堂山石祠', sub: '东汉石室 · 不含现代罩屋', types: ['hall'], country: 'CN', initialStatus: 'unvisited',
+    dyn: 'han', tag: '东汉', era: '东汉早期 · 约一世纪', year: 50, yearApprox: true, yearLabel: '约一世纪', yearNote: '图版绘罩屋内的东汉石祠本体；约一世纪是考古断代，并非精确建年。', place: '山东济南 · 长清孝堂山', placeKey: 'sd_xiaoli',
+    lede: '一座小石室藏在后建的保护屋内。石板模仿汉代屋顶的瓦垄与出檐，室内画像让早期地面建筑与丧葬图像同时留存。',
+    facts: ['石祠大致建于东汉早期，是现存很早的地面石筑石刻建筑。', '主体以青石板砌筑，单檐悬山顶，正面分两间；图版仅绘石祠，不把外部红柱罩屋当作汉代原构。', '“郭氏”是沿用的文物名称；墓主的具体身份仍有讨论，不据传说断定为郭巨。'],
+    legacyNames: ['孝堂山汉石室', '孝堂山石祠', '郭氏墓石祠'], caption: ['孝堂山郭氏墓石祠 · 石室本体', '东汉早期 · 现状意写'],
+  },
+  {
+    id: 'fj_qingjing_gate', name: '泉州清净寺', short: '清净寺', sub: '入口石门楼 · 尖拱', types: ['mosque', 'gate'], country: 'CN', initialStatus: 'unvisited',
+    dyn: 'song', tag: '北宋', era: '大中祥符二年始建', year: 1009, yearNote: '1009年为清净寺始建年，现存门楼经历元至大三年（1310）重修及后世维修；图版是现状，不宣称每块石料都为宋构。', place: '福建泉州 · 涂门街', placeKey: 'quanzhou',
+    lede: '逐层内凹的尖拱从街面通向寺院，石门楼把西亚清真寺形制留在宋元泉州的港口城市。',
+    facts: ['清净寺始建于北宋大中祥符二年（1009），元至大三年（1310）曾重修。', '现存门楼的第一、二进门道均呈尖拱，拱顶为半穹形。', '图版绘门楼与相连石墙，不把寺内礼拜堂或后建建筑并入这一张图。'],
+    legacyNames: ['艾苏哈卜寺', '泉州清净寺门楼'], caption: ['泉州清净寺 · 入口石门楼', '北宋始建 · 元代重修'],
+  },
+  {
+    id: 'fj_anping_bridge', name: '安平桥', short: '五里桥', sub: '石板桥面与桥墩局部', types: ['bridge'], country: 'CN', initialStatus: 'unvisited',
+    dyn: 'song', tag: '南宋', era: '绍兴八年始建 · 约绍兴二十二年建成', year: 1152, yearNote: '1138年始建；泉州市文旅局记1152年建成，另有资料记1151年续成。图版仅画现存桥面的一段，不以局部代替全长。', place: '福建泉州 · 安海—水头', placeKey: 'fj_anhai',
+    lede: '巨大的花岗石板横压在石墩上，桥面绵延过旧海湾。五里长桥曾把安海与水头的商贸道路接在一起。',
+    facts: ['安平桥始建于南宋绍兴八年（1138），现存桥长约2.25公里，是平梁式石桥。', '石梁架于桥墩之上，桥墩因水流与地势采用不同形制；图版选石板桥面、栏杆与近处桥墩的局部。', '现状经过历代修缮，局部示意不作为全桥测绘或精确桥墩计数。'],
+    legacyNames: ['安海五里桥', '五里桥'], caption: ['安平桥 · 石板桥面与桥墩局部', '南宋始建 · 现状意写'],
+  },
+  {
+    id: 'bj_yunju_north', name: '房山云居寺塔及石经', short: '云居寺北塔', sub: '辽代北塔 · 罗汉塔', types: ['pagoda'], country: 'CN', initialStatus: 'unvisited',
+    dyn: 'liao', tag: '辽', era: '辽代始建 · 明代修葺', year: 1100, yearApprox: true, yearLabel: '辽代', yearNote: '北塔始建于辽代，确切建年未核定，后经明代及其他时期修葺；此处不以云居寺隋代刻经的开端作为北塔年代。', place: '北京房山 · 云居寺', placeKey: 'bj_yunju',
+    lede: '北塔下为层叠楼阁，中部圆鼓，上部高高收束为钟形；云居寺石经的千年刊刻史则在塔外延续。',
+    facts: ['云居寺北塔又称罗汉塔、舍利塔，始建于辽代，明代曾修葺。', '下部楼阁、中部鼓形、上部钟形叠合，是北塔罕见的轮廓；图版只画北塔，不以近年重建的南塔替代。', '“云居寺塔及石经”是国保单位名；石经与塔的年代各有脉络，不能合成一个建年。'],
+    legacyNames: ['云居寺罗汉塔', '云居寺舍利塔', '云居寺塔及石经'], caption: ['云居寺塔及石经 · 辽代北塔', '辽代始建 · 后世修葺'], tall: true,
+  },
+  {
+    id: 'xz_jokhang', name: '大昭寺', short: '大昭寺', sub: '现状正立面 · 多期建筑', types: ['hall'], country: 'CN', initialStatus: 'unvisited',
+    dyn: 'tubo', tag: '吐蕃', era: '七世纪中叶始建', year: 647, yearNote: '647年是寺院始建的传统记载；图版绘现存正立面，包含历代扩建和维修，不把整面金顶与外墙认作七世纪原构。', place: '西藏拉萨 · 八廓街', placeKey: 'xz_lhasa',
+    lede: '金顶和深红墙面面对八廓街。寺院从吐蕃时期的核心扩展至今天，现存立面叠着多个时代的营建痕迹。',
+    facts: ['大昭寺于七世纪中叶始建，拉萨官方资料记公元647年；后经历代扩建。', '图版选现状正立面，保留中央金顶、红墙与两侧建筑轮廓；它是多期叠合的外观，不是吐蕃原貌复原。', '寺院为各教派共尊的重要场所，八廓街围绕其周边形成。'],
+    legacyNames: ['觉康寺', '祖拉康'], caption: ['大昭寺 · 现状正立面', '吐蕃始建 · 历代增修'],
+  },
+);
+
 const CHAPTERS = [
   { key: 'han', years: '25 — 220 · 东汉', blurb: '以石仿木，阙立神道。石块叠出檐、枋与柱的轮廓，车马、百戏与神兽刻在其间；登封与蜀地的石阙，让汉代建筑和生活留下了可读的片段。' },
   { key: 'goguryeo', years: '约5世纪 · 集安现存遗迹', blurb: '巨大的石块逐级收分，护坟石抵住方坛底层。将军坟属于高句丽石室墓遗存，墓主认定与现存形制分开记录；这里的年代说明所收古迹，不借中原朝代替换其所属时期。' },
@@ -9246,6 +9286,7 @@ const CHAPTERS = [
   { key: 'nan', years: '420 — 589 · 南朝', blurb: '石城山的岩壁化为一尊安坐的大佛。齐梁僧人接续开凿，新昌石弥勒以宽阔双膝与沉静衣纹，留下江南早期大型造像的轮廓。' },
   { key: 'beiqi', years: '550 — 577 · 北齐', blurb: '鼓山石壁间，佛像衣纹渐趋简洁，身躯饱满而安静。响堂山留下北齐造像、刻经与石窟建筑的片段，也见证了这一时期佛教艺术的变化。' },
   { key: 'sui', years: '581 — 618 · 隋', blurb: '洨河上的石桥与崖壁间的石窟，留下隋代的两种尺度。赵州桥以大拱和四座腹拱跨水，灵泉寺的大住圣窟则把造像与刻铭留在山中。' },
+  { key: 'tubo', years: '七世纪 — 九世纪 · 吐蕃', blurb: '大昭寺始建于吐蕃时期，现存正立面汇合后世扩建与修缮。图版按今日可见外观绘制，始建年代与所见建筑层次分开说明。' },
   { key: 'tang', years: '618 — 907', blurb: '雄大疏朗。斗拱可达柱高之半，屋面平缓，出檐深远，柱有侧脚生起——盛唐的尺度感，后世再未复现。' },
   { key: 'balhae', years: '渤海时期 · 宁安现存石刻', blurb: '莲座擎起石柱，八角灯室与攒尖盖顶把木构殿堂缩成一座石雕长明灯。兴隆寺石灯幢按渤海时期独立入册，寺院后世重建的殿堂不作为渤海原构。' },
   { key: 'zhou', years: '907 — 979 · 五代十国', blurb: '中原五代更迭之际，吴越、南唐等国留下石塔、经幢与佛教造像，北汉留下镇国寺万佛殿。北宋立国后，南北诸国仍延续了一段时间；这些古迹按所属政权与现存主体分别纪年。' },
@@ -9536,6 +9577,10 @@ SITES.push(
 );
 
 const PLACES = [
+  { key: 'sd_xiaoli', name: '孝里', prov: '山东', lat: 36.3983, lon: 116.6018, coordinate_note: '孝堂山石祠附近显示点，非测绘坐标。' },
+  { key: 'fj_anhai', name: '安海', prov: '福建', lat: 24.70659, lon: 118.44462, coordinate_note: '安平桥中段近似显示点，非所绘桥段实测坐标。' },
+  { key: 'bj_yunju', name: '云居寺', prov: '北京', lat: 39.60806, lon: 115.76778, coordinate_note: '云居寺地区显示点，非北塔实测坐标。' },
+  { key: 'xz_lhasa', name: '拉萨', prov: '西藏', lat: 29.653, lon: 91.132, coordinate_note: '大昭寺附近显示点，非单体测绘坐标。' },
   {"key":"hohhot","name":"呼和浩特","prov":"内蒙古","lat":40.8,"lon":111.65,"source_page":"https://commons.wikimedia.org/wiki/File:大召大雄宝殿.jpg","coordinate_note":"旧城近似显示点，参考大召实拍定位；非古迹实测坐标。"},
   {"key":"baotou","name":"包头·石拐","prov":"内蒙古","lat":40.791111,"lon":110.308472,"source_page":"https://zh.wikipedia.org/wiki/五當召","coordinate_note":"五当召附近的地区代表点，非城市中心或单殿实测坐标。"},
   {"key":"kunming","name":"昆明","prov":"云南","lat":25.090311,"lon":102.769311,"source_page":"https://zh.wikipedia.org/wiki/太和宫金殿","coordinate_note":"金殿所在地的近似地区显示点，非城市中心。"},

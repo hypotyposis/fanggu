@@ -42,10 +42,12 @@ additions.push(...henanAdditions.ids);
 additions.push('nx_xumishan','nx_xixialing','nx_108towers');
 const firstBatchStone = JSON.parse(read('assets/research/first-batch-grotto-stone.json'));
 const firstBatchNewIds = firstBatchStone.units.filter(unit => unit.added && unit.id !== 'gs_bingling').map(unit => unit.id);
+const firstBatchFive = ['sd_xiaotang_shrine', 'fj_qingjing_gate', 'fj_anping_bridge', 'bj_yunju_north', 'xz_jokhang'];
+additions.push(...firstBatchFive);
 test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
   assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
   assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
-  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -53,6 +55,30 @@ test('all catalogue entries have a real PNG, matching dimensions and a map locat
     assert.equal(bytes.readUInt32BE(16), site.image.width); assert.equal(bytes.readUInt32BE(20), site.image.height);
     assert(PLACES.some(p => p.key === site.placeKey && Number.isFinite(p.lat) && Number.isFinite(p.lon)), `${site.id} has no location`);
   }
+});
+test('first-batch five have distinct subjects, sourced scope and unvisited records', () => {
+  const protection = JSON.parse(read('assets/research/national-protection.json'));
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  const expected = [
+    ['sd_xiaotang_shrine', 'han', '山东', '石祠本体'],
+    ['fj_qingjing_gate', 'song', '福建', '石门楼'],
+    ['fj_anping_bridge', 'song', '福建', '桥面'],
+    ['bj_yunju_north', 'liao', '北京', '北塔'],
+    ['xz_jokhang', 'tubo', '西藏', '正立面'],
+  ];
+  for (const [id, dynasty, province, subject] of expected) {
+    const site = SITES.find(item => item.id === id);
+    assert(site && site.dyn === dynasty && site.initialStatus === 'unvisited');
+    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, province);
+    assert(site.yearNote?.length > 15);
+    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
+    assert(queue.entries.find(entry => entry.id === id).subject.includes(subject));
+    assert.equal(protection.entries[id][0].batch, 1);
+    assert.equal(protection.entries[id][0].source, 'batch1');
+  }
+  assert.equal(SITES.find(site => site.id === 'xz_jokhang').year, 647);
+  assert.equal(SITES.find(site => site.id === 'fj_qingjing_gate').types[0], 'mosque');
+  assert(CHAPTERS.some(chapter => chapter.key === 'tubo'));
 });
 test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', () => {
   const { createHash } = require('node:crypto');
@@ -201,7 +227,7 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
   }
   const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
-  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds]) laterIds.add(id);
+  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive]) laterIds.add(id);
   const previouslyApproved = Object.entries(avif.images).filter(([id]) => !laterIds.has(id));
   assert.equal(previouslyApproved.length, 200);
   assert(previouslyApproved.every(([, item]) => item.visualReview === 'approved_user'));

@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 308,
+  "count": 313,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -6910,6 +6910,118 @@
       ],
       "output": "assets/colored/sc_emei_buddha.png",
       "record": "assets/color-research/sc_emei_buddha.json"
+    },
+    {
+      "id": "sd_xiaotang_shrine",
+      "name": "孝堂山郭氏墓石祠",
+      "subject": "保护罩屋内的东汉石祠本体",
+      "sub": "东汉石室 · 不含现代罩屋",
+      "place": "山东济南 · 长清孝堂山",
+      "dyn": "han",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_xiaotang_shrine.png",
+      "displayLine": "assets/plates/sd_xiaotang_shrine.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/sd_xiaotang_shrine.json",
+      "candidateReferences": [
+        "assets/references/sd_xiaotang_shrine-photo.jpg"
+      ],
+      "output": "assets/colored/sd_xiaotang_shrine.png",
+      "record": "assets/color-research/sd_xiaotang_shrine.json"
+    },
+    {
+      "id": "fj_qingjing_gate",
+      "name": "泉州清净寺",
+      "subject": "现存入口石门楼与相连石墙",
+      "sub": "入口石门楼 · 尖拱",
+      "place": "福建泉州 · 涂门街",
+      "dyn": "song",
+      "types": [
+        "mosque",
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/fj_qingjing_gate.png",
+      "displayLine": "assets/plates/fj_qingjing_gate.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/fj_qingjing_gate.json",
+      "candidateReferences": [
+        "assets/references/fj_qingjing_gate-photo.jpg"
+      ],
+      "output": "assets/colored/fj_qingjing_gate.png",
+      "record": "assets/color-research/fj_qingjing_gate.json"
+    },
+    {
+      "id": "fj_anping_bridge",
+      "name": "安平桥",
+      "subject": "现存石板桥面与桥墩代表性局部",
+      "sub": "石板桥面与桥墩局部",
+      "place": "福建泉州 · 安海—水头",
+      "dyn": "song",
+      "types": [
+        "bridge"
+      ],
+      "owner": "main",
+      "line": "assets/generated/fj_anping_bridge.png",
+      "displayLine": "assets/plates/fj_anping_bridge.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/fj_anping_bridge.json",
+      "candidateReferences": [
+        "assets/references/fj_anping_bridge-photo-2.jpg",
+        "assets/references/fj_anping_bridge-photo.jpg"
+      ],
+      "output": "assets/colored/fj_anping_bridge.png",
+      "record": "assets/color-research/fj_anping_bridge.json"
+    },
+    {
+      "id": "bj_yunju_north",
+      "name": "房山云居寺塔及石经",
+      "subject": "云居寺辽代北塔",
+      "sub": "辽代北塔 · 罗汉塔",
+      "place": "北京房山 · 云居寺",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/bj_yunju_north.png",
+      "displayLine": "assets/plates/bj_yunju_north.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/bj_yunju_north.json",
+      "candidateReferences": [
+        "assets/references/bj_yunju_north-photo.jpg"
+      ],
+      "output": "assets/colored/bj_yunju_north.png",
+      "record": "assets/color-research/bj_yunju_north.json"
+    },
+    {
+      "id": "xz_jokhang",
+      "name": "大昭寺",
+      "subject": "现存正立面（多期建筑）",
+      "sub": "现状正立面 · 多期建筑",
+      "place": "西藏拉萨 · 八廓街",
+      "dyn": "tubo",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/xz_jokhang.png",
+      "displayLine": "assets/plates/xz_jokhang.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/xz_jokhang.json",
+      "candidateReferences": [
+        "assets/references/xz_jokhang-photo.jpg"
+      ],
+      "output": "assets/colored/xz_jokhang.png",
+      "record": "assets/color-research/xz_jokhang.json"
     }
   ]
 }

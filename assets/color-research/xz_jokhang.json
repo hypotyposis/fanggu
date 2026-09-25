@@ -1,0 +1,55 @@
+{
+  "id": "xz_jokhang",
+  "name": "现存正立面（多期建筑）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xz_jokhang.png",
+    "assets/references/xz_jokhang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Create ONE museum-quality colored companion plate of the present-day Jokhang Temple frontal elevation in Lhasa. Image 1 is the EXACT line drawing to color: preserve its geometry, rooftop pavilion, two animal ornaments flanking the central finial, broad rear wall, side wings, windows, silhouette and white margins. Image 2 is a photo of the actual current multi-period facade determining colors: muted Tibetan deep red and burnt ochre masonry, warm golden roof metal, dark wood framing, cream and blue-green ornamental trim, subdued fabrics. Image 3 is only a style sample of delicate preserved ink contours and matte mineral color planes; do not copy its Chinese roof. This depicts CURRENT composite fabric, not an imagined 7th-century original. Do not add signs, lettering, Tibetan characters, banners, people, awnings, planters or landscape. Restrained surface texture only inside the architecture. The entire exterior canvas and true open gaps must be FLAT OPAQUE PURE WHITE #FFFFFF, no gray wash, gradient, cast shadow, glow, paper texture, checkerboard or transparency. Landscape composition.",
+  "material_observations": "金色铜质屋顶、深红墙面、橙红底层、暗木与少量青蓝饰带。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jokhang_Temple_frontal_view.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Jokhang_Temple_frontal_view.jpg",
+      "author": "Rene Heise",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2010-10-21",
+      "reference_file": "assets/references/xz_jokhang-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "西藏自治区外事办公室：大昭寺",
+      "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100945.html"
+    },
+    {
+      "title": "拉萨市：大昭寺历史",
+      "url": "https://lasa.xzdw.gov.cn/zt2_1927/07/201204/t20120406_97406.html"
+    }
+  ],
+  "output": "assets/colored/xz_jokhang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-346a1d26-c38c-40b0-9cd5-2880ab15471e.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "63650b9831cd17bc3a00670d7a4831557f6dfd2d9fceaef6ae1e19b929dfe314",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张目检主体、白底和材质色；待用户验收。"
+    }
+  }
+}

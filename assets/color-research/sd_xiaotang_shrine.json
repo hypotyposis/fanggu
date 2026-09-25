@@ -1,0 +1,55 @@
+{
+  "id": "sd_xiaotang_shrine",
+  "name": "保护罩屋内的东汉石祠本体",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sd_xiaotang_shrine.png",
+    "assets/references/sd_xiaotang_shrine-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Create ONE museum-quality colored companion plate of the actual ancient Eastern Han Xiaotangshan Guo-family STONE shrine. Image 1 is the EXACT line drawing to color; preserve small squat two-bay form, sculpted slab roof, front posts and plinth precisely. Image 2 is the photograph of the real shrine inside its later protective hall; govern material colors from the ancient object only: weathered blue-gray and warm ash-gray limestone walls, darker aged stone roof, sparse discoloration and patina. Image 3 is only project's illustration style sample of fine contours and restrained matte mineral-color planes, not its building. Keep no later hall, signs, museum displays or flooring. Never add readable inscriptions: all historical incisions stay abstract and subdued. Preserve all contours and gaps. No shadow or scenery. Entire exterior and genuinely open gaps must be FLAT OPAQUE PURE WHITE #FFFFFF, without gradient, gray wash, paper texture, glow, checkerboard or transparency. Landscape composition.",
+  "material_observations": "罩屋内石祠为风化青灰石板，石屋顶较深；外罩屋红柱不入图。",
+  "references": [
+    {
+      "source_page": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+      "image_url": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+      "author": "杨爱国（图版提供）",
+      "license": "故宫博物院院刊图版，仅内部制图参考",
+      "license_url": "",
+      "date": "2019",
+      "reference_file": "assets/references/sd_xiaotang_shrine-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "中国纪检监察报：孝堂山石祠现存建筑及画像",
+      "url": "https://www.ccdi.gov.cn/lswhn/shijian/202507/t20250711_433890.html"
+    },
+    {
+      "title": "故宫博物院院刊：西汉陵庙与陵寝建制考，图六",
+      "url": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf"
+    }
+  ],
+  "output": "assets/colored/sd_xiaotang_shrine.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-a7f54579-f6f2-4325-ab9b-128e7e244975.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0f9bdb6b7ef4ea29dd19b69721737be56d0288169aae03580b416bc36dfe76c3",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张目检主体、白底和材质色；待用户验收。"
+    }
+  }
+}

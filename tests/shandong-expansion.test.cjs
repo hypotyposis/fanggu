@@ -74,7 +74,7 @@ test('Shandong dates and national titles distinguish selected subjects and merge
 test('Shandong additions are searchable and start unvisited while the blocked historical candidate stays outside intake', () => {
   const library = create(catalog, { getItem: () => null, setItem() {} });
   const find = filters => library.all().filter(s => facets.matches(s, filters));
-  assert.deepEqual(Array.from(find({ province: '山东' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids].sort());
+  assert.deepEqual(Array.from(find({ province: '山东' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids, 'sd_xiaotang_shrine'].sort());
   for (const id of batch.ids) assert(find({ province: '山东', status: 'unvisited' }).some(s => s.id === id));
   assert(find({ query: '复圣殿', type: 'hall' }).some(s => s.id === 'sd_yanmiao'));
   assert(find({ query: '天后行宫', province: '山东' }).some(s => s.id === 'sd_yantai_huiguan'));

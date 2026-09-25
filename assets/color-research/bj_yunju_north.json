@@ -1,0 +1,51 @@
+{
+  "id": "bj_yunju_north",
+  "name": "云居寺辽代北塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/bj_yunju_north.png",
+    "assets/references/bj_yunju_north-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Create ONE museum-quality colored companion plate of Yunju Temple NORTH Pagoda. Image 1 is the EXACT line drawing to color; preserve its square two-level base, bracketed projecting eaves, rounded drum, long conical ringed upper tower, arched niches, full silhouette and blank margins. Image 2 is a photograph of the actual North Pagoda, which determines current material colors: weathered gray-tan brick, darker sooty gray upper conical masonry, restrained brown-gray roof tiles and stone base. Image 3 only illustrates the project's fine contour and matte mineral-color style, not the subject. Use delicate preserved ink lines, restrained color planes, limited texture ONLY INSIDE THE TOWER. No trees, shrubs, signs, landscape, blue sky, labels or invented parts. The exterior background and all open voids must be FLAT OPAQUE PURE WHITE #FFFFFF, without gray wash, cast shadow, gradient, paper grain, checkerboard or transparent canvas. Maintain portrait composition.",
+  "material_observations": "砖石塔身灰褐、浅暖灰，锥形上部较深，瓦檐深灰。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-09-08",
+      "reference_file": "assets/references/bj_yunju_north-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "北京市房山区：云居寺塔及石经",
+      "url": "https://www.bjfsh.gov.cn/zjfs/lswh/wwbh/201903/t20190318_39954186.shtml"
+    }
+  ],
+  "output": "assets/colored/bj_yunju_north.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-b94679e2-e50e-43f1-b35b-3469bad50ac9.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "872cf955fcef9faa11537087140ae7805a5dc8b770fb818ea2a56f9e700006d2",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张目检主体、白底和材质色；待用户验收。"
+    }
+  }
+}

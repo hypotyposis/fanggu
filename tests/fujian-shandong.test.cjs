@@ -67,9 +67,10 @@ test('separate Kaiyuan subjects keep distinct identities and all seven additions
   assert.equal(SITES.find(s => s.id === 'quanzhoukaiyuan').year, 1637);
   assert.equal(SITES.find(s => s.id === 'fj_renshou').year, 1237);
   assert.equal(SITES.find(s => s.id === 'fj_zhenguo').year, 1250);
-  assert.equal(find({ province: '福建' }).length, 10);
+  assert.equal(find({ province: '福建' }).length, 12);
+  assert.deepEqual(Array.from(find({ province: '福建', type: 'mosque' }), s => s.id), ['fj_qingjing_gate']);
   const laterShandong = json('assets/research/shandong-20260917-batch.json');
-  assert.deepEqual(Array.from(find({ province: '山东' }), s => s.id).sort(), [...laterShandong.previousProvinceIds, ...laterShandong.ids].sort());
+  assert.deepEqual(Array.from(find({ province: '山东' }), s => s.id).sort(), [...laterShandong.previousProvinceIds, ...laterShandong.ids, 'sd_xiaotang_shrine'].sort());
   assert(find({ query: '承启楼', type: 'residence' }).some(s => s.id === 'fj_chengqi'));
 });
 

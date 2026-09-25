@@ -1,0 +1,51 @@
+{
+  "id": "fj_qingjing_gate",
+  "name": "现存入口石门楼与相连石墙",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/fj_qingjing_gate.png",
+    "assets/references/fj_qingjing_gate-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Create ONE museum-quality colored companion plate of the Quanzhou Qingjing Mosque stone gate. Image 1 is the exact line drawing to color: preserve every silhouette, proportion, pointed arch, crenellation, masonry seam, open doorway and blank margin. Image 2 is a photograph of the real gate, governing present-day material colors: weathered blue-gray stone central gate tower, pale warm gray and tan limestone side walls, recesses in deeper subdued charcoal stone. Image 3 is only the project's restrained mineral-color illustration style sample, never copy its Chinese roof or composition. Keep fine visible charcoal contours with matte mineral color planes and subtle stone variation INSIDE THE MASONRY ONLY. Do not add people, carts, signs, lettering, invented Arabic calligraphy, trees, paving, shadows or any modern detail. The entire exterior background and genuinely open gaps must be FLAT OPAQUE PURE WHITE #FFFFFF, no gray wash, gradient, glow, paper texture, checkerboard or transparent canvas. Maintain landscape 4:3 composition.",
+  "material_observations": "中央门楼青灰石，侧墙暖灰和米色石块，拱内较深。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-29",
+      "reference_file": "assets/references/fj_qingjing_gate-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "泉州市民族与宗教事务局：清净寺",
+      "url": "https://mzzj.quanzhou.gov.cn/zjzc/qzzjhdcs/202108/t20210805_2599184.htm"
+    }
+  ],
+  "output": "assets/colored/fj_qingjing_gate.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-ee9a02d9-f232-4ce4-b76d-7c26a1c69e51.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5192ccd7d041a7f735b8491e40ef4ddca915a879ff19782ac1db07e51f41c1d1",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张目检主体、白底和材质色；待用户验收。"
+    }
+  }
+}

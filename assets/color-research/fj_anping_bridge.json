@@ -1,0 +1,65 @@
+{
+  "id": "fj_anping_bridge",
+  "name": "现存石板桥面与桥墩代表性局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/fj_anping_bridge.png",
+    "assets/references/fj_anping_bridge-photo-2.jpg",
+    "assets/references/fj_anping_bridge-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Create ONE museum-quality colored companion plate of the representative surviving stone-deck segment of Anping Bridge in Fujian. Image 1 is the EXACT line drawing: preserve every long slab, low square railing post and rail, heavy masonry pier, open underside gap, silhouette, perspective and blank margin. Images 2 and 3 are photos of the actual bridge and determine present material colors: weathered pale warm gray granite slabs and railings with restrained tan discoloration, subtle stone joints and darker undersides. Image 4 only supplies project's fine contour, matte mineral-color illustration style; do not borrow its building or roof. No water, greenery, town, people, inscriptions, sky, shadow or scenery. Keep delicate visible contours and modest granular stone texture ONLY INSIDE THE MASONRY. Outside the bridge and in all true gaps, canvas must be FLAT OPAQUE PURE WHITE #FFFFFF, no gray background, gradient, paper texture, glow, checkerboard or transparency. Landscape 4:3.",
+  "material_observations": "桥面、栏杆与墩为风化暖灰花岗石，缝隙与桥下较深。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-28",
+      "reference_file": "assets/references/fj_anping_bridge-photo-2.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AE%89%E5%B9%B3%E6%A1%A5%E6%99%8B%E6%B1%9F%E6%AE%B5%E4%B8%9C%E5%90%91.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:%E5%AE%89%E5%B9%B3%E6%A1%A5%E6%99%8B%E6%B1%9F%E6%AE%B5%E4%B8%9C%E5%90%91.jpg",
+      "author": "董辰兴",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2021-02-12",
+      "reference_file": "assets/references/fj_anping_bridge-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "泉州市文旅局：安平桥国保简介",
+      "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/qgzdwwbhdwjj/202311/t20231130_2974305.htm"
+    },
+    {
+      "title": "泉州市人民政府：兴建安平桥",
+      "url": "https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/ggwhty/whycbh/202108/t20210817_2605110.htm"
+    }
+  ],
+  "output": "assets/colored/fj_anping_bridge.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-a41e8a37-ca78-4d78-8541-41ca38e2c4bc.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b7720cdc362988cca1666660c753655ca98206d22e8db0ca6b29364ba133645e",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张目检主体、白底和材质色；待用户验收。"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "fj_qingjing_gate",
+  "subject": "现存入口石门楼与相连石墙",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_qingjing_gate-photo.jpg"
+  ],
+  "source_note": "门楼现状线描，移去游客、标牌、车与地面；不作建造年代实测复原。",
+  "prompt": "Create one accurate sparse Chinese heritage INK LINE DRAWING of the existing stone entrance gate of Quanzhou Qingjing Mosque (清净寺), using image 1 as the actual subject photograph and image 2 only as the project's fine black-line style sample. Draw the central rectangular gray-stone gate tower with its high pointed recessed arch, the smaller pointed arch deeper inside, horizontal stone courses, and low connected stone wings on both sides; preserve the identifiable crenellated top and overall proportions. Isolate the historic masonry from all tourists, carts, signs, text, railings, paving, sky, trees and modern additions. Keep complete architectural silhouette with generous margin. Thin charcoal-black contour lines and sparse joint lines only, no legible inscriptions or invented Arabic letters. The entire exterior canvas and arch opening background must be flat opaque pure #FFFFFF, with no shadow, gradient, paper texture, glow, gray wash, colored ink, black fill, checkerboard, or transparency. Compose in landscape 4:3.",
+  "generated_file": "assets/generated/fj_qingjing_gate.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-4304ea15-b9b9-46ea-9e4b-94415bf0aa27.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "泉州清净寺 · 线稿",
+    "1009始建，1310重修"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4c5e4644d50d2b5f43414594e68d7fc738a040da9510153c04530083aab12bcd",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Quanzhou_Qingjing_Si_20120229-02.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-29",
+      "reference_file": "assets/references/fj_qingjing_gate-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "泉州市民族与宗教事务局：清净寺",
+      "url": "https://mzzj.quanzhou.gov.cn/zjzc/qzzjhdcs/202108/t20210805_2599184.htm"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体照片与生成线稿已逐张查看。",
+      "白底原件待本地透明处理；图版仅为现状意写。"
+    ],
+    "limitations": "尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

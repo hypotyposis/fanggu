@@ -1,0 +1,62 @@
+{
+  "id": "bj_yunju_north",
+  "subject": "云居寺辽代北塔",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+  "author": "Siyuwj",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/bj_yunju_north-photo.jpg"
+  ],
+  "source_note": "所绘为北塔，不含南塔与石经；树木遮挡的下部按可见层级连续意写。",
+  "prompt": "Create one precise, sparse Chinese heritage INK LINE DRAWING of Yunju Temple NORTH Pagoda (云居寺辽代北塔) in Fangshan Beijing. Image 1 is the real subject photograph; image 2 is only the project's fine black-outline style sample. Preserve the tower's unusual exact profile: square multi-story lower brick base, pronounced projecting bracket eaves at two levels, a transitional wider rounded drum, tall tapering stack of closely spaced conical rings, and small terminal finial. Show the complete tower from foot to tip from a slightly frontal three-quarter angle, replacing foliage-occluded lower portions with simple plausible continuations, avoiding invented extra floors. Include visible arched niches and restrained brick joints. Remove trees, bushes, sky, modern signs, landscape and people. Thin charcoal-black contour strokes, minimal texture, no filled black masses, no writing. Center portrait composition with generous margin. Entire canvas must be flat opaque PURE WHITE #FFFFFF including exterior background; no shadows, gradients, paper grain, glow, checkerboard or transparent canvas.",
+  "generated_file": "assets/generated/bj_yunju_north.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-36807a90-43df-4fba-b44b-6675a9f58ef3.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "房山云居寺塔及石经 · 线稿",
+    "辽代始建，明代修葺"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5bfcf4d28ba754bfb9de13cac02f2a963d05aed2ff15a49cd5c598b64327ba07",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Pagoda_built_in_Liao_Dynasty_of_Yunju_Temple,_2016-09-08.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-09-08",
+      "reference_file": "assets/references/bj_yunju_north-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "北京市房山区：云居寺塔及石经",
+      "url": "https://www.bjfsh.gov.cn/zjfs/lswh/wwbh/201903/t20190318_39954186.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体照片与生成线稿已逐张查看。",
+      "白底原件待本地透明处理；图版仅为现状意写。"
+    ],
+    "limitations": "尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

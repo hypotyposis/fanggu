@@ -37,7 +37,8 @@ test('Shanghai filtering and expansion preserve prior records and blank arrival 
 
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 29);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 30);
+  assert.deepEqual(find({ province: '西藏', dynasty: 'tubo' }), ['xz_jokhang']);
   assert.deepEqual(find({ province: '新疆', type: 'grotto' }), ['xj_kizil', 'xj_kumtura']);
   assert.deepEqual(find({ type: 'column' }), ['hn_xizhou']);
   for (const site of catalog) {
@@ -73,7 +74,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'northwest'), ['陕西', '甘肃', '宁夏', '新疆']);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 29);
+  assert.equal(facets.provinces(catalog).length, 30);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {
@@ -94,7 +95,7 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
   assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['京都府', '奈良县']);
-  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 27);
+  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 28);
 });
 
 test('Japanese additions seed wishes with blank dates and survive backup restoration', () => {
@@ -204,7 +205,8 @@ test('Shanxi screens are distinct from fortifications and additions preserve sav
 
 test('Beijing and Tianjin expansion is searchable and seeds blank unvisited records without replacing older records', () => {
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/beijing-tianjin-batch.json'), 'utf8'));
-  assert.equal(find({ province: '北京' }).length, 10);
+  assert.equal(find({ province: '北京' }).length, 11);
+  assert.deepEqual(find({ province: '北京', query: '云居寺北塔' }), ['bj_yunju_north']);
   assert.equal(find({ province: '天津' }).length, 5);
   assert.deepEqual(find({ province: '北京', type: 'bridge', query: '盧溝橋' }), ['bj_lugou']);
   assert.deepEqual(find({ province: '天津', type: 'stage', query: '戏剧博物馆' }), ['tj_guangdonghuiguan']);

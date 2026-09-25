@@ -4,7 +4,7 @@
   else root.FangguProtectionData = factory();
 })(typeof globalThis === 'object' ? globalThis : this, () => ({
   "version": 1,
-  "checkedAt": "2026-09-17",
+  "checkedAt": "2026-09-25",
   "level": "全国重点文物保护单位",
   "batchMeaning": "所绘主体首次被该批正式公布或纳入合并项目；不是合并后母单位的最早批次。",
   "sources": {
@@ -3438,6 +3438,94 @@
           {
             "title": "国务院公报 · 第一批国保名单",
             "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ]
+      }
+    ],
+    "sd_xiaotang_shrine": [
+      {
+        "batch": 1,
+        "unitName": "孝堂山郭氏墓石祠",
+        "relation": "unit",
+        "scope": "保护罩屋内的东汉石祠本体",
+        "source": "batch1",
+        "locator": "第一批名单 · 第54项 · 孝堂山郭氏墓石祠",
+        "scopeSources": [
+          {
+            "title": "中国纪检监察报：孝堂山石祠现存建筑及画像",
+            "url": "https://www.ccdi.gov.cn/lswhn/shijian/202507/t20250711_433890.html"
+          }
+        ]
+      }
+    ],
+    "fj_qingjing_gate": [
+      {
+        "batch": 1,
+        "unitName": "清净寺",
+        "relation": "part",
+        "scope": "现存入口石门楼与相连石墙",
+        "source": "batch1",
+        "locator": "第一批名单 · 第87项 · 清净寺",
+        "scopeSources": [
+          {
+            "title": "泉州市民族与宗教事务局：清净寺",
+            "url": "https://mzzj.quanzhou.gov.cn/zjzc/qzzjhdcs/202108/t20210805_2599184.htm"
+          }
+        ]
+      }
+    ],
+    "fj_anping_bridge": [
+      {
+        "batch": 1,
+        "unitName": "安平桥",
+        "relation": "unit",
+        "scope": "现存石板桥面与桥墩代表性局部",
+        "source": "batch1",
+        "locator": "第一批名单 · 第59项 · 安平桥",
+        "scopeSources": [
+          {
+            "title": "泉州市文旅局：安平桥国保简介",
+            "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/qgzdwwbhdwjj/202311/t20231130_2974305.htm"
+          },
+          {
+            "title": "泉州市人民政府：兴建安平桥",
+            "url": "https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/ggwhty/whycbh/202108/t20210817_2605110.htm"
+          }
+        ]
+      }
+    ],
+    "bj_yunju_north": [
+      {
+        "batch": 1,
+        "unitName": "房山云居寺塔及石经",
+        "relation": "part",
+        "scope": "云居寺辽代北塔",
+        "source": "batch1",
+        "locator": "第一批名单 · 第66项 · 房山云居寺塔及石经",
+        "scopeSources": [
+          {
+            "title": "北京市房山区：云居寺塔及石经",
+            "url": "https://www.bjfsh.gov.cn/zjfs/lswh/wwbh/201903/t20190318_39954186.shtml"
+          }
+        ]
+      }
+    ],
+    "xz_jokhang": [
+      {
+        "batch": 1,
+        "unitName": "大昭寺",
+        "relation": "unit",
+        "scope": "现存正立面（多期建筑）",
+        "source": "batch1",
+        "locator": "第一批名单 · 第81项 · 大昭寺",
+        "scopeSources": [
+          {
+            "title": "西藏自治区外事办公室：大昭寺",
+            "url": "https://wsb.xizang.gov.cn/xzjx/lyjd/201107/t20110713_100945.html"
+          },
+          {
+            "title": "拉萨市：大昭寺历史",
+            "url": "https://lasa.xzdw.gov.cn/zt2_1927/07/201204/t20120406_97406.html"
           }
         ]
       }

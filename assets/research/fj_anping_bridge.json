@@ -1,0 +1,76 @@
+{
+  "id": "fj_anping_bridge",
+  "subject": "现存石板桥面与桥墩代表性局部",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_anping_bridge-photo-2.jpg",
+    "assets/references/fj_anping_bridge-photo.jpg"
+  ],
+  "source_note": "代表性桥段意写，不是全桥、实测图或精确桥墩计数；近处桥墩根据平梁桥构造概括。",
+  "prompt": "Create a precise sparse Chinese heritage INK LINE DRAWING of a representative surviving STONE DECK SEGMENT of Anping Bridge (安平桥 / 五里桥) in Quanzhou Fujian, seen at a low three-quarter perspective looking along the walkway. Image 1 and image 2 are real subject photos showing worn broad granite slab pavement, repeated low square stone railing posts with rectangular connecting rails, and a very long flat stone bridge receding into distance; image 3 only gives fine black-line illustration style. Preserve the characteristic FLAT stone beam bridge, no arches, and the rhythmic railing posts; show a few robust masonry piers and exposed long stone beams under the near side in a plausible simple side opening if visible. Depict a representative segment, not all 2.25 km or an invented exact pier count. Remove modern towers, river, signs, trees, sky, tourists and temples, isolating bridge masonry. Avoid textual markings. Fine charcoal contours and sparse slab joints, no filled black. Center in landscape 4:3 with generous margins. All canvas outside stone and true gaps must be flat opaque PURE WHITE #FFFFFF, no gray background, water, shadow, paper grain, gradient, glow, checkerboard or transparency.",
+  "generated_file": "assets/generated/fj_anping_bridge.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-1c056a6f-570f-4696-851f-1982d32cbe6c.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "安平桥 · 线稿",
+    "1138始建，1152建成"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0c9e7e0cfc1178d9e546ee4ce930dee36ca8251cdad9d866e771086da5fa1947",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:Anping_Qiao_2012.02.28_16-24-35.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-28",
+      "reference_file": "assets/references/fj_anping_bridge-photo-2.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AE%89%E5%B9%B3%E6%A1%A5%E6%99%8B%E6%B1%9F%E6%AE%B5%E4%B8%9C%E5%90%91.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/File:%E5%AE%89%E5%B9%B3%E6%A1%A5%E6%99%8B%E6%B1%9F%E6%AE%B5%E4%B8%9C%E5%90%91.jpg",
+      "author": "董辰兴",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2021-02-12",
+      "reference_file": "assets/references/fj_anping_bridge-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "泉州市文旅局：安平桥国保简介",
+      "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/qgzdwwbhdwjj/202311/t20231130_2974305.htm"
+    },
+    {
+      "title": "泉州市人民政府：兴建安平桥",
+      "url": "https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/ggwhty/whycbh/202108/t20210817_2605110.htm"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体照片与生成线稿已逐张查看。",
+      "白底原件待本地透明处理；图版仅为现状意写。"
+    ],
+    "limitations": "尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

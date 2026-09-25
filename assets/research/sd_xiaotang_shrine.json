@@ -1,0 +1,66 @@
+{
+  "id": "sd_xiaotang_shrine",
+  "subject": "保护罩屋内的东汉石祠本体",
+  "status": "complete",
+  "source_page": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+  "image_url": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+  "author": "杨爱国（图版提供）",
+  "license": "故宫博物院院刊图版，仅内部制图参考",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_xiaotang_shrine-photo.jpg"
+  ],
+  "source_note": "按故宫院刊图版绘石祠本体；保护罩屋与馆内展板已删去，画像与后世题刻不作可读文字。",
+  "prompt": "Create one accurate sparse Chinese heritage INK LINE DRAWING of the ACTUAL ancient Xiaotangshan Guo family funerary STONE SHRINE (孝堂山郭氏墓石祠), based on image 1: a very small human-height two-bay Eastern Han stone chamber inside a later protective hall. Image 2 is only the project's delicate black line style sample. This is NOT the much larger red-and-white modern protection building, NOT the entrance gate, and NOT a commemorative stele. Show the complete freestanding ancient stone chamber from a front-left three-quarter view: solid thick bluestone slab walls, low single-eave pitched gable roof carved to imitate roof tiles, short overhanging eaves, central entrance between front supports, broad simple low plinth. Preserve the compact squat proportions of the real photo. Suggest weathered shallow relief or inscriptions only by sparse abstract nonlegible strokes, never invent Chinese characters. Remove the enclosing hall beams, information panels, railings, people and floor. Fine charcoal black contour lines, sparse stone seams, no black masses. Center in landscape 4:3 with ample margin; the entire background and visible open entrance gap must be flat opaque PURE WHITE #FFFFFF, no shadow, gradient, paper texture, glow, checkerboard or transparency.",
+  "generated_file": "assets/generated/sd_xiaotang_shrine.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-e3c67821-a4d8-4e4f-9300-7790c640f74a.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "孝堂山郭氏墓石祠 · 线稿",
+    "约一世纪"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3f35612943e93267e828a1659254eceb80b69c491f0a2bf71a92989d2e678b89",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+      "image_url": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf",
+      "author": "杨爱国（图版提供）",
+      "license": "故宫博物院院刊图版，仅内部制图参考",
+      "license_url": "",
+      "date": "2019",
+      "reference_file": "assets/references/sd_xiaotang_shrine-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "中国纪检监察报：孝堂山石祠现存建筑及画像",
+      "url": "https://www.ccdi.gov.cn/lswhn/shijian/202507/t20250711_433890.html"
+    },
+    {
+      "title": "故宫博物院院刊：西汉陵庙与陵寝建制考，图六",
+      "url": "https://www.dpm.org.cn/Uploads/File/2019/04/25/u5cc1221f3dab0.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主体照片与生成线稿已逐张查看。",
+      "白底原件待本地透明处理；图版仅为现状意写。"
+    ],
+    "limitations": "尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}
