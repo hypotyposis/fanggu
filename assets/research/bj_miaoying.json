@@ -1,0 +1,94 @@
+{
+  "id": "bj_miaoying",
+  "subject": "北京妙应寺白塔 · 覆钵式塔与十字折角基座",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_Baitasi_(2017)_E.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Beijing_Baitasi_%282017%29_E.jpg",
+  "author": "BabelStone",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/bj_miaoying-photo.jpg",
+    "assets/references/bj_miaoying-base.jpg",
+    "assets/references/bj_miaoying-overall.jpg"
+  ],
+  "source_note": "以2017年实拍核对塔身、十三天与塔刹，2009年近照补核折角基座，2007年全景补核比例和基座上缘灯饰。去掉周边殿宇、树木、电线及街景，视角适度拉平。图版为多视角照片的艺术转译，不作实测依据。",
+  "prompt": "Use case: style-transfer. Asset type: one fine architectural line plate for the heritage atlas 访古. Image 1 is the Longmen LINE STYLE MASTER only. Image 2 shows the present Beijing Miaoying Temple White Stupa upper geometry. Image 3 shows its actual lower cruciform base close up; use this for the stepped plan, projecting cornices and large lower masonry block, not a generic temple pedestal. Image 4 gives overall proportions and the small lamp-like finials around the top of the base; ignore all wires and street clutter. Draw this exact Yuan stupa isolated in a mild three-quarter view from normal base level, not a dramatic low-angle photo view. The large broad bottle-shaped body must be taller and more substantial than in a generic Tibetan stupa, with rounded shoulder and slightly concave side profile; keep the tapered neck with thirteen shallow horizontal rings, broad pierced circular canopy with hanging ornaments and the bulbous finial. Keep the recognizable cruciform square base with its projecting white cornices above broad plain masonry faces and small evenly spaced lamps along its upper rim. Do not add extra tiers, stairs, railings, carved panels, niches on faces where none are shown, or invented lettering. Use restrained delicate BLACK contours, very sparse finer internal detail, no hatching, no solid black areas, no gray shading, no texture. All surfaces inside and outside are uniform opaque pure white #FFFFFF except ink. Complete stupa centered on portrait 1024x1536 canvas, about82% of height, generous clear margins; apex and base uncut, verticals vertical. Remove roofs, surrounding buildings, trees, people, wires, street signs, pavement and all backdrop. No shadow, gradient, paper grain, glow, checkerboard, frame, captions, letters or watermark.",
+  "generated_file": "assets/generated/bj_miaoying.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4fa9f3bd-bf52-41af-a567-453fa6b5bf54.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "北京妙应寺白塔 · 覆钵式塔",
+    "元 · 1271—1279"
+  ],
+  "historical_sources": [
+    {
+      "title": "北京市人民政府 · 妙应寺白塔",
+      "url": "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/mysbt/202210/t20221027_2846092.html"
+    }
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/bj_miaoying-base.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20090528_Beijing_White_Dagoba_8092.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/20090528_Beijing_White_Dagoba_8092.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2009-05-28"
+    },
+    {
+      "file": "assets/references/bj_miaoying-overall.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_White_Stupa.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Beijing_White_Stupa.jpg",
+      "author": "Yaan",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "date": "2007-09"
+    }
+  ],
+  "generation_history": [
+    {
+      "prompt": "Create a museum-grade architectural line drawing of the White Stupa at Miaoying Temple in Beijing, using the supplied photograph as the factual architectural reference and the supplied Longmen line-art image only as the drawing-style reference. Depict the complete Yuan-dynasty Tibetan-style stupa in an unobstructed, centered, near-front three-quarter view: square stepped masonry base, large rounded white anda/bottle-shaped body, long tapered neck with clearly separated horizontal rings, broad circular gilt canopy with hanging ornaments, and finial above. Remove the foreground hall, trees, people, wires, railings, signs, sky, surrounding buildings, and all modern clutter. Reconstruct only details supported by the photo; do not invent decorative panels. Use clean, restrained black contour lines with fine secondary architectural detail, modest natural line-weight variation, no sketchiness, no hatching, no filled black masses, no tonal modeling. Isolate the entire monument with generous clear margin on a completely uniform opaque pure white #FFFFFF canvas. No shadow, ground line, gradient, paper texture, glow, border, labels, calligraphy, watermark, or checkerboard. Portrait composition, full monument visible, no cropping.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/bj_miaoying-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-8a205a45-a5c7-4f54-b781-66de73dadd25.png",
+      "saved_file": "assets/generated/bj_miaoying-draft1.png",
+      "review": "rejected",
+      "reason": "下部基座过于通用，塔身比例偏弱；补入基座与整体照片后重画。"
+    },
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine architectural line plate for the heritage atlas 访古. Image 1 is the Longmen LINE STYLE MASTER only. Image 2 shows the present Beijing Miaoying Temple White Stupa upper geometry. Image 3 shows its actual lower cruciform base close up; use this for the stepped plan, projecting cornices and large lower masonry block, not a generic temple pedestal. Image 4 gives overall proportions and the small lamp-like finials around the top of the base; ignore all wires and street clutter. Draw this exact Yuan stupa isolated in a mild three-quarter view from normal base level, not a dramatic low-angle photo view. The large broad bottle-shaped body must be taller and more substantial than in a generic Tibetan stupa, with rounded shoulder and slightly concave side profile; keep the tapered neck with thirteen shallow horizontal rings, broad pierced circular canopy with hanging ornaments and the bulbous finial. Keep the recognizable cruciform square base with its projecting white cornices above broad plain masonry faces and small evenly spaced lamps along its upper rim. Do not add extra tiers, stairs, railings, carved panels, niches on faces where none are shown, or invented lettering. Use restrained delicate BLACK contours, very sparse finer internal detail, no hatching, no solid black areas, no gray shading, no texture. All surfaces inside and outside are uniform opaque pure white #FFFFFF except ink. Complete stupa centered on portrait 1024x1536 canvas, about82% of height, generous clear margins; apex and base uncut, verticals vertical. Remove roofs, surrounding buildings, trees, people, wires, street signs, pavement and all backdrop. No shadow, gradient, paper grain, glow, checkerboard, frame, captions, letters or watermark.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/bj_miaoying-photo.jpg",
+        "assets/references/bj_miaoying-base.jpg",
+        "assets/references/bj_miaoying-overall.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4fa9f3bd-bf52-41af-a567-453fa6b5bf54.png",
+      "review": "selected"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "49aa9d6c592389c8829296cc2e5c034b26752ef2296b208ac8c4380565bee0ee",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "覆钵塔身、十三天、圆形华盖与塔刹完整未裁切。",
+      "折角基座、挑檐线脚和上缘小灯饰已对照补充照片。",
+      "白底黑线，无外部景物、填黑、文字或投影。"
+    ],
+    "limitations": "照片透视与遮挡较强，基座低部与背向细节作克制简化；不是逐像素配准或测绘复原。"
+  },
+  "status": "complete"
+}

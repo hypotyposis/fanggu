@@ -1,0 +1,114 @@
+{
+  "id": "yn_jingzhen",
+  "subject": "景真八角亭现存戒堂",
+  "status": "needs_review",
+  "historical_sources": [
+    {
+      "title": "景真八角亭沿革、戒堂形制与后世修缮",
+      "url": "https://zh.wikipedia.org/wiki/景真八角亭"
+    }
+  ],
+  "source_note": "1701为八角亭创建年；1978、1993等后世修缮另记，已毁景真寺其余建筑不虚构入画。",
+  "caption": [
+    "景真八角亭现存戒堂 · 线稿 · 待用户验收",
+    "清 · 1701"
+  ],
+  "structure_checkpoints": [
+    "保存八角戒堂及层叠傣式木瓦屋面、亭身和基座；不画周围新殿。"
+  ],
+  "generated_file": "assets/generated/yn_jingzhen.png",
+  "generation_tool": "built-in image_gen",
+  "reference_candidates": [
+    {
+      "id": "yn_jingzhen",
+      "file": "assets/references/yn_jingzhen-photo.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Jingzhen_Octagonal_Pavilion2.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jingzhen_Octagonal_Pavilion2.jpg",
+      "author": "爵士鼓手",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "未知"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "site_recommendation": {
+    "id": "yn_jingzhen",
+    "name": "景真八角亭",
+    "short": "八角亭",
+    "sub": "傣族南传佛寺 · 戒堂",
+    "subject": "景真八角亭现存戒堂",
+    "prov": "云南",
+    "place": "云南勐海 · 景真",
+    "placeKey": "menghai",
+    "types": [
+      "pavilion"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "康熙四十年",
+    "year": 1701,
+    "yearLabel": "1701",
+    "yearNote": "1701为八角亭创建年；1978、1993等后世修缮另记，已毁景真寺其余建筑不虚构入画。",
+    "checkpoint": "保存八角戒堂及层叠傣式木瓦屋面、亭身和基座；不画周围新殿。",
+    "history": [
+      {
+        "title": "景真八角亭沿革、戒堂形制与后世修缮",
+        "url": "https://zh.wikipedia.org/wiki/景真八角亭"
+      }
+    ],
+    "lede": "八角亭不是园林里的赏景小亭，而是傣族南传佛寺的戒堂。层叠屋面向八个方向展开，尖顶轻巧地收束；原来的景真寺大多不存，建于1701年的戒堂历经修缮延续至今。",
+    "facts": [
+      "<b>用途</b> 南传佛寺戒堂，亦为景真寺现存重要古建筑。",
+      "<b>年代</b> 清康熙四十年（1701）创建，近现代多次修缮，不把修缮痕迹藏去。",
+      "<b>形制</b> 八向展开的层叠屋面、装饰檐口与砖砌亭身，图版以现存实拍为准。"
+    ],
+    "initialStatus": "unvisited",
+    "country": "CN"
+  },
+  "file": "assets/references/yn_jingzhen-reference-thumb.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jingzhen_Octagonal_Pavilion2.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Jingzhen_Octagonal_Pavilion2.jpg/960px-Jingzhen_Octagonal_Pavilion2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "爵士鼓手",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "date": "未知",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yn_jingzhen-reference-thumb.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nSUBJECT: 景真八角亭现存戒堂.\nSCOPE AND IDENTIFYING STRUCTURE: 保存八角戒堂及层叠傣式木瓦屋面、亭身和基座；不画周围新殿。\nPortrait 1024×1536. Keep the entire many-tiered roof and brick pavilion body.",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nSUBJECT: 景真八角亭现存戒堂.\nSCOPE AND IDENTIFYING STRUCTURE: 保存八角戒堂及层叠傣式木瓦屋面、亭身和基座；不画周围新殿。\nPortrait 1024×1536. Keep the entire many-tiered roof and brick pavilion body.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/yn_jingzhen-reference-thumb.jpg"
+      ],
+      "submitted_at": "2026-09-16T16:54:50.201Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:55:16.921Z",
+      "saved_at": "2026-09-16T16:56:29.933Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0607c1d1-48e4-4cfa-af4d-c12b72024744.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "76e798ad87534fb0babb71f14a3cf7583d3666c67bba466fb5181d8f4c52d72a",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0607c1d1-48e4-4cfa-af4d-c12b72024744.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0607c1d1-48e4-4cfa-af4d-c12b72024744.png"
+}

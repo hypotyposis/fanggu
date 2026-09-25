@@ -1,0 +1,165 @@
+{
+  "id": "hb_anyuan",
+  "subject": "安远庙普度殿整殿",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(1).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Anyuan_Temple_20160905_%281%29.jpg",
+  "author": "Siyuwj",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "file": "assets/references/hb_anyuan-full-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(1).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Anyuan_Temple_20160905_%281%29.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-09-05 08:36:23",
+      "sha256": "05a085172940507368bad4b6f61fc4b6beb4f27f774870e3db0e38aadaf9dd44"
+    },
+    {
+      "file": "assets/references/hb_anyuan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(5).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Anyuan_Temple_20160905_%285%29.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-09-05 09:01:13",
+      "sha256": "b25343684ef7bad49ac593e7181c9f6b89a7765f872125d17560fda811127cb9"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_anyuan-full-photo.jpg",
+    "assets/references/hb_anyuan-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo",
+    "subject_geometry_detail"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Pudu Hall of Anyuan Temple, Chengde. Slight angle as main distant photo: a square SEVEN-bay hall, THREE horizontal eave levels, tall upper HIP-AND-GABLE roof with patterned gable, not a pagoda and not a round pavilion. Full red lower wall and shallow plinth. The second subject photo is a close frontal detail for eaves, columns and ornament only. Remove foreground gate, ALL foliage, tourists and surroundings; preserve whole main hall only. Rely on visible repeated column/window rhythms rather than inventing additional annexes. Plaques blank; apex and base uncut."
+  ],
+  "material_observations": [
+    "黑灰色琉璃瓦、黄橙色剪边与山花，朱红木壁、暗红柱、蓝绿彩画及灰白台基。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 安远庙普度殿整殿\nLandscape 1536x1024. Complete Pudu Hall of Anyuan Temple, Chengde. Slight angle as main distant photo: a square SEVEN-bay hall, THREE horizontal eave levels, tall upper HIP-AND-GABLE roof with patterned gable, not a pagoda and not a round pavilion. Full red lower wall and shallow plinth. The second subject photo is a close frontal detail for eaves, columns and ornament only. Remove foreground gate, ALL foliage, tourists and surroundings; preserve whole main hall only. Rely on visible repeated column/window rhythms rather than inventing additional annexes. Plaques blank; apex and base uncut.",
+  "generated_file": "assets/generated/hb_anyuan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 安远庙普度殿整殿\nLandscape 1536x1024. Complete Pudu Hall of Anyuan Temple, Chengde. Slight angle as main distant photo: a square SEVEN-bay hall, THREE horizontal eave levels, tall upper HIP-AND-GABLE roof with patterned gable, not a pagoda and not a round pavilion. Full red lower wall and shallow plinth. The second subject photo is a close frontal detail for eaves, columns and ornament only. Remove foreground gate, ALL foliage, tourists and surroundings; preserve whole main hall only. Rely on visible repeated column/window rhythms rather than inventing additional annexes. Plaques blank; apex and base uncut.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_anyuan-full-photo.jpg",
+        "assets/references/hb_anyuan-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:30:03.474088+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:32:08.311313+08:00",
+      "saved_at": "2026-09-17T23:32:08.347086+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-968bbe29-59ba-448a-ae89-a3fdc952331f.png",
+      "output": "assets/generated/hb_anyuan.png"
+    }
+  ],
+  "caption": [
+    "安远庙 · 普度殿",
+    "三重檐方殿 · 清乾隆二十九年（1764）"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    },
+    {
+      "title": "承德市政府：安远庙修缮",
+      "url": "https://www.chengde.gov.cn/art/2011/8/1/art_360_73819.html"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-968bbe29-59ba-448a-ae89-a3fdc952331f.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f313dbb5a235595ec9072d2c783864167035c13adafb06cefe20f168b6ec998c",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_anyuan",
+    "name": "安远庙",
+    "short": "安远庙",
+    "sub": "普度殿 · 三重檐方殿",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆二十九年",
+    "year": 1764,
+    "yearNote": "1764对应安远庙创建及普度殿；现存殿体包括后世修缮。普度殿亦写作普渡殿，保留搜索别名。",
+    "place": "河北承德 · 武烈河东",
+    "placeKey": "hb_chengde",
+    "types": [
+      "hall",
+      "pavilion"
+    ],
+    "lede": "方形高殿用三层屋檐压住体量，黑瓦黄边的屋面与红色木壁相映。安远庙在承德留下一段与伊犁有关的建筑记忆。",
+    "facts": [
+      "安远庙建于1764年，设计借鉴伊犁固尔扎庙，又称伊犁庙。",
+      "图版取普度殿整殿，方形平面、各面七间与三重檐为结构依据。",
+      "普度殿2011年的修缮包括檐柱、地板及屋面，创建年代与修缮分开说明。"
+    ],
+    "legacyNames": [
+      "伊犁庙",
+      "安远庙普渡殿"
+    ],
+    "caption": [
+      "安远庙 · 普度殿",
+      "三重檐方殿 · 清乾隆二十九年（1764）"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.658421+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_anyuan-full-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(1).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Anyuan_Temple_20160905_%281%29.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-09-05 08:36:23",
+      "sha256": "05a085172940507368bad4b6f61fc4b6beb4f27f774870e3db0e38aadaf9dd44",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(1).jpg"
+    },
+    {
+      "file": "assets/references/hb_anyuan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(5).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Anyuan_Temple_20160905_%285%29.jpg",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-09-05 09:01:13",
+      "sha256": "b25343684ef7bad49ac593e7181c9f6b89a7765f872125d17560fda811127cb9",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anyuan_Temple_20160905_(5).jpg"
+    }
+  ]
+}

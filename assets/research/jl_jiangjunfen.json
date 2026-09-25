@@ -1,0 +1,65 @@
+{
+  "id": "jl_jiangjunfen",
+  "subject": "集安将军坟",
+  "status": "complete",
+  "file": "assets/references/jl_jiangjunfen-candidate1.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kevsunblush1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kevsunblush1.jpg/1280px-Kevsunblush1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "kevsunblush (a flickr user)",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "date": "2005-10-04",
+  "reference_files": [
+    "assets/generated/jl_jiangjunfen-draft1.png",
+    "assets/references/jl_jiangjunfen-candidate1.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "使用未修图实拍，保留七级阶坛与可见护坟石；不认定墓主。",
+  "prompt": "Use case: precise-object-edit. Fix ONLY the major terrace structure of General's Tomb Jiangjunfen, Ji'an, in black line draft IMAGE1, using actual photo IMAGE2. Seven-tier rectangular-stone truncated pyramid, EXACTLY SEVEN major receding terraces. Each terrace has TWO or THREE horizontal stone courses whose outer vertical edges ALIGN, not a setback at every single course. Make7 large staircase setbacks from broadbottom to flattop, with roughly14–18 total irregular block courses grouped into7 vertical-faced terraces. Do not turn fourteen block rows into fourteen stepped terraces. Preserve huge irregular support stones exactly3 visible on front, upper small rectangular tomb opening, low full frontal shallowperspective, actual old uneven stoneedges. No new top building, monument cap, vegetation, tourists or stairs. Simple sparse fine BLACK contours on pure flat opaque WHITE #FFFFFF, no hatch/shadows, no text, full landscape1536x1024 with8%clear side margins.",
+  "generated_file": "assets/generated/jl_jiangjunfen.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "集安将军坟 · 七级方坛石室墓",
+    "高句丽 · 约5世纪"
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "修正后为七级主要阶坛，砌石排数不等于阶坛级数；正面三护坟石及上部墓口保留。"
+    ],
+    "limitations": [
+      "艺术简化非实测；部分细部较密、边距小于提示词目标，留待用户视觉验收。"
+    ]
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nSubject is GENERAL'S TOMB (Jiangjunfen) in Ji'an, Goguryeo, NOT Taiwangling and NOT a dirt mound. Preserve photograph's broad square truncated stone pyramid constructed from huge rectangular stone blocks, EXACTLY SEVEN receding major TERRACES, with individual block courses within each terrace NOT extra terraces. Low front near-elevation, subtle side depth. Keep three large irregular pale support stones on this visible front and a small rectangular dark doorway opening near upper center, outlined WITHOUT black fill. Top is flat with no cap building, sculpture, stairs, railing or tower; copy present missing/uneven stone edges, no ideal new restoration. Remove tourists, vegetation and climbing human figures. Complete broad bottom row, width80%, modest height43% on landscape1536x1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jl_jiangjunfen-candidate1.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0a7b4a2e-2d68-4d88-91e2-66c0dc424fef.png",
+      "retained_file": "assets/generated/jl_jiangjunfen-draft1.png",
+      "accepted": false,
+      "reason": "每排砌石收分，未形成七级主要阶坛。"
+    }
+  ],
+  "factual_sources": [
+    {
+      "title": "吉林地方志 · 集安高句丽遗存",
+      "url": "https://dfz.jl.gov.cn/zsjl/202512/t20251227_9384138.html"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-109ee325-a020-4bd1-ab18-ad75e7659f86.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fc8fbcbdf580b436aab049fd12ca0740a3e29f9f703af864e317897ecd99fe2e",
+    "seeds": []
+  }
+}

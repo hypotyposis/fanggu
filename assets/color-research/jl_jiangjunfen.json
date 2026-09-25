@@ -1,0 +1,68 @@
+{
+  "id": "jl_jiangjunfen",
+  "name": "集安将军坟",
+  "subject": "集安将军坟",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jl_jiangjunfen.png",
+    "assets/references/jl_jiangjunfen-candidate1.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nGeneral's Tomb Ji'an, EXACTLY SEVEN major stone terraces and3 visible irregular support stones. Preserve corrected Image1 terrace geometry and upper rectangular doorway. Actual huge rectangular stone blocks muted weathered grey-brown granite, some dark streaks and imperfect joints, three front support stones paler grey-white opaque stone. A very little moss trace, not entire grass on top. No sepia/gold cast, no new stone restoration, no top building. Small actual doorway dark grey-brown fully opaque. Purewhite exterior, complete landscape1536x1024.",
+  "material_observations": [
+    "砌块为风化灰褐花岗岩，护坟石较浅灰白。",
+    "开口及深缝为暗灰褐，不当成透空种子。"
+  ],
+  "references": [
+    {
+      "title": "File:Kevsunblush1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kevsunblush1.jpg/1280px-Kevsunblush1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Kevsunblush1.jpg",
+      "width": 1200,
+      "height": 900,
+      "author": "kevsunblush (a flickr user)",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "date": "2005-10-04",
+      "id": "jl_jiangjunfen",
+      "file": "assets/references/jl_jiangjunfen-candidate1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kevsunblush1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Kevsunblush1.jpg/1280px-Kevsunblush1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/jl_jiangjunfen.json",
+  "output": "assets/colored/jl_jiangjunfen.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "修正后为七级主要阶坛，砌石排数不等于阶坛级数；正面三护坟石及上部墓口保留。",
+      "设色现貌材料区分已目检；外部白底与记录透空点已由固定脚本处理。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。",
+      "顶部仍有少量现貌地衣／苔色，非新建构件。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "58d48a3f47b2eba42f174b22c19d4a015f80408a8286a61a9f1fa3151ec50c8d",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-bfa41ec9-0f3f-4524-b890-dd341fb11864.png",
+  "width": 1536,
+  "height": 1024,
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

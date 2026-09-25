@@ -3,7 +3,11 @@ import { readFileSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-export function recolorLinePlate(original, target, color, legacySha256, preparation) {
+export function recolorLinePlate(original, target, color, legacySha256, preparation, { prototype = false } = {}) {
+  if (prototype) {
+    execFileSync('python3', ['-B', fileURLToPath(new URL('./prototype-matte.py', import.meta.url)), original, target, '--line-color', color]);
+    return;
+  }
   const [minAlpha, maxAlpha] = execFileSync('magick', [original, '-alpha', 'on', '-format', '%[fx:minima.a] %[fx:maxima.a]', 'info:'], { encoding: 'utf8' }).split(' ').map(Number);
   if (!Number.isFinite(minAlpha) || !Number.isFinite(maxAlpha) || maxAlpha <= 0) throw new Error(`Missing visible linework: ${original}`);
   if (minAlpha === 0) {

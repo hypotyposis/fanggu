@@ -1,0 +1,51 @@
+{
+  "id": "hlj_shideng",
+  "subject": "兴隆寺渤海石灯幢",
+  "status": "complete",
+  "file": "assets/references/hlj_shideng-photo.jpg",
+  "source_page": "https://www.duitang.com/blog/?id=1111035153",
+  "image_url": "https://a-ssl.dtstatic.com/uploads/item/201907/31/20190731212746_AaXdx.jpeg",
+  "author": "麦钟（收藏发布者；原摄影者未标）",
+  "license": "未注明；不宣称开放授权",
+  "date": "2019-07-31（收藏发布日期）",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hlj_shideng-photo.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "照片明确为宁安兴隆寺石灯幢；收藏发布者非已确认摄影者，授权未注明。仅绘渤海石刻，不绘现代重建殿堂，顶刹按现貌表达而不称全部原件。",
+  "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nSubject is ONLY the ancient Balhae stone lantern at Xinglong Temple, Ning'an. PHOTO2 governs complete geometry, NOT a generic Japanese garden lantern or newly rebuilt temple. Long slightly bulging cylindrical stone shaft, lotus-shaped upward-facing support below the OCTAGONAL hollow lantern chamber with clearly visible RECTANGULAR window openings and small holes above them. Single eight-sided gently curved pavilion-like stone roof, prominent stacked short ringed stone finial above roof. Under shaft is inverted lotus support and low OCTAGONAL decorated solid sumeru base with oval-arch niche reliefs; preserve actual proportions and broken worn edges. Isolate ONLY entire stone lantern, no modern temple roof, green metal fence, stone fragment atleft, plants, people or paving. Full finial-to-base composition portrait1024x1536 height80%, thin sparse BLACK contours on PURE WHITE #FFFFFF. Outlines of real air openings remain white with no black fill. No guessed historical polychromy.",
+  "generated_file": "assets/generated/hlj_shideng.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "兴隆寺石灯幢 · 八角亭式灯室",
+    "渤海时期 · 现存石刻"
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "长石柱、莲座、八角灯室、单层亭式石盖及短刹完整；不附带寺院。"
+    ],
+    "limitations": [
+      "艺术简化非实测；部分细部较密、边距小于提示词目标，留待用户视觉验收。"
+    ]
+  },
+  "generation_history": [],
+  "factual_sources": [
+    {
+      "title": "黑龙江省政府 · 渤海石灯幢文保资料",
+      "url": "https://www.hlj.gov.cn/hlj/c108411/202110/31182525/files/a5a0b47f8f709901864104e4cf2bb558.pdf"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-8bde6dc8-274f-4c4c-8f0e-8472d4907f7c.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b4d3d884ebb362e60bfe971a6db9309fbb3cad1006426068aed1e1ff2351428d",
+    "seeds": []
+  }
+}

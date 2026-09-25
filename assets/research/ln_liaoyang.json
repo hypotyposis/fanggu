@@ -1,0 +1,53 @@
+{
+  "id": "ln_liaoyang",
+  "subject": "辽阳白塔",
+  "status": "complete",
+  "file": "assets/references/ln_liaoyang-candidate1.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Wahrzeichen_von_Liaoyang.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Wahrzeichen_von_Liaoyang.JPG/1280px-Wahrzeichen_von_Liaoyang.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Martin Kiechle",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "date": "Aufgenommen 2005",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ln_liaoyang-candidate1.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "照片下部有灌木遮挡，仅保守表达可見低台基，不补造宏大台阶；现貌转译非测绘。",
+  "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nLIAOYANG White Pagoda from PHOTO2, octagonal dense-eaved masonry tower, tall broad decorated first-storey body. EXACTLY THIRTEEN total eave levels INCLUDING the largest FIRST eave directly above decorated body (1 broad lower eave +12 tapering upper eaves). Preserve actual recessed Buddha niches, paired relief figures, draped ornaments and very distinctive chained finial with large open hoop structure over lotus/bowl, NOT generic straight metal needle. Low shallow perspective. Only the tower with its short visible existing plinth: lower plinth portions partly hidden by shrubs in photo, do NOT invent a giant terrace, temple building, grand stairs or modern platform. Full apex/body and conservative low plinth uncut, portrait1024x1536 height82%, simplified sparse structural lines.",
+  "generated_file": "assets/generated/ln_liaoyang.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "辽阳白塔 · 八角十三层密檐",
+    "辽代 · 塔身佛教浮雕"
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "逐檐核对十三层；八角塔身与佛龛装饰未替换。"
+    ],
+    "limitations": [
+      "艺术简化非实测；部分细部较密、边距小于提示词目标，留待用户视觉验收。",
+      "照片下部遮挡，台基仅保守简化。"
+    ]
+  },
+  "generation_history": [],
+  "factual_sources": [
+    {
+      "title": "辽阳市博物馆 · 辽阳白塔",
+      "url": "https://www.lnlymuseum.com/case/detail/id/24.html"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2a27efef-1052-47c9-b81d-dee3c03c331a.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "03f3dd3f12516645e8eba76c5404de0e980ae87e67eb47c6dc1f5e5017fbf2e0",
+    "seeds": []
+  }
+}

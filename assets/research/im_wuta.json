@@ -1,0 +1,122 @@
+{
+  "id": "im_wuta",
+  "subject": "呼和浩特五塔寺金刚座舍利宝塔",
+  "status": "needs_review",
+  "historical_sources": [
+    {
+      "title": "内蒙古新闻网：五塔寺，1727—1732营建",
+      "url": "https://ztpd.nmgnews.com.cn/system/2010/05/12/010433074.shtml"
+    },
+    {
+      "title": "呼和浩特新城区政府：五塔寺博物馆与塔体构成",
+      "url": "https://www.xinchengqu.gov.cn/slbzd/zwdt_64218/xcyw/202505/t20250516_1890874.html"
+    }
+  ],
+  "source_note": "取塔的营建完成阶段1732年；1727为开建年份，复原的寺院殿堂不作为清代原构入录。 实拍为形制输入，照片中的遮挡与角度限制留待用户核对，不声称实测。",
+  "caption": [
+    "呼和浩特五塔寺金刚座舍利宝塔 · 线稿 · 待用户验收",
+    "清 · 1727—1732"
+  ],
+  "structure_checkpoints": [
+    "完整砖石金刚座及顶部五座方形小塔；中央高塔七级、四角小塔各五级；不绘复原殿堂。"
+  ],
+  "generated_file": "assets/generated/im_wuta.png",
+  "generation_tool": "built-in image_gen",
+  "reference_candidates": [
+    {
+      "id": "im_wuta",
+      "file": "assets/references/im_wuta-photo.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Five_Pagoda_Temple%2C_Huhhot%2C_Inner_Mongolia.JPG",
+      "page": "https://commons.wikimedia.org/wiki/File:Five_Pagoda_Temple,_Huhhot,_Inner_Mongolia.JPG",
+      "author": "pfctdayelise",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "date": "2004-10"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "site_recommendation": {
+    "id": "im_wuta",
+    "name": "呼和浩特五塔寺",
+    "short": "五塔寺",
+    "sub": "慈灯寺 · 金刚座舍利宝塔",
+    "subject": "呼和浩特五塔寺金刚座舍利宝塔",
+    "prov": "内蒙古",
+    "place": "内蒙古呼和浩特 · 玉泉",
+    "placeKey": "hohhot",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "雍正五年至十年",
+    "year": 1732,
+    "yearLabel": "1727—1732",
+    "yearNote": "取塔的营建完成阶段1732年；1727为开建年份，复原的寺院殿堂不作为清代原构入录。",
+    "checkpoint": "完整砖石金刚座及顶部五座方形小塔；中央高塔七级、四角小塔各五级；不绘复原殿堂。",
+    "history": [
+      {
+        "title": "内蒙古新闻网：五塔寺，1727—1732营建",
+        "url": "https://ztpd.nmgnews.com.cn/system/2010/05/12/010433074.shtml"
+      },
+      {
+        "title": "呼和浩特新城区政府：五塔寺博物馆与塔体构成",
+        "url": "https://www.xinchengqu.gov.cn/slbzd/zwdt_64218/xcyw/202505/t20250516_1890874.html"
+      }
+    ],
+    "lede": "五座小塔从一座金刚座上升起，中央高、四角低。慈灯寺的殿堂曾经消失，这座清雍正年间的宝塔留在旧城里，仍以砖雕与小型塔檐讲述另一种佛塔形制。",
+    "facts": [
+      "<b>所绘主体</b> 金刚座舍利宝塔，不包含后世复原的慈灯寺殿堂。",
+      "<b>营建</b> 清雍正五年至十年（1727—1732）修建，塔座承托中央七级、四角五级的五座小塔。",
+      "<b>形制</b> 砖石塔身与细小琉璃挑檐组合；蒙古文天文图为寺院重要石刻，图版不把它移到正面。"
+    ],
+    "initialStatus": "unvisited",
+    "country": "CN"
+  },
+  "file": "assets/references/im_wuta-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Five_Pagoda_Temple,_Huhhot,_Inner_Mongolia.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Five_Pagoda_Temple%2C_Huhhot%2C_Inner_Mongolia.JPG",
+  "author": "pfctdayelise",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+  "date": "2004-10",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/im_wuta-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 呼和浩特五塔寺金刚座舍利宝塔.\nSCOPE AND IDENTIFYING STRUCTURE: 完整砖石金刚座及顶部五座方形小塔；中央高塔七级、四角小塔各五级；不绘复原殿堂。\nPortrait 1024×1536. Keep the tower platform and all five pinnacles; preserve the actual entrance pavilion on the platform.",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 呼和浩特五塔寺金刚座舍利宝塔.\nSCOPE AND IDENTIFYING STRUCTURE: 完整砖石金刚座及顶部五座方形小塔；中央高塔七级、四角小塔各五级；不绘复原殿堂。\nPortrait 1024×1536. Keep the tower platform and all five pinnacles; preserve the actual entrance pavilion on the platform.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/im_wuta-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T16:46:43.142Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:48:06.435Z",
+      "saved_at": "2026-09-16T16:48:06.852Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2463a423-dd33-4234-8ad8-cf05357a241f.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9e2b896463fd1815a130c78d59209d888f18c4eb87aa609118a2a0c10c72ab6e",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2463a423-dd33-4234-8ad8-cf05357a241f.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2463a423-dd33-4234-8ad8-cf05357a241f.png"
+}

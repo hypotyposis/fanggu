@@ -6,13 +6,17 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import vm from 'node:vm';
 import { recolorLinePlate } from './line-plate.mjs';
+import { plateMode } from './plate-policy.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
+const prototype = plateMode() === 'prototype';
 const legacy = JSON.parse(readFileSync(path.join(root, 'assets/research/legacy-line-originals.json'), 'utf8')).sha256BySource;
 const { SITES: sites, DYN: dynasties } = vm.runInNewContext(readFileSync(path.join(root, 'sites.js'), 'utf8') + '\n({ SITES, DYN })');
 const css = readFileSync(path.join(root, 'style.css'), 'utf8');
 const palette = Object.fromEntries([...css.matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(match => [match[1], match[2]]));
-const paletteUpdated = Math.max(...['sites.js', 'style.css', 'scripts/prepare-plates.mjs', 'scripts/line-plate.mjs', 'scripts/white-matte.py'].map(file => statSync(path.join(root, file)).mtimeMs));
+const paletteFiles = ['sites.js', 'style.css', 'scripts/prepare-plates.mjs', 'scripts/line-plate.mjs', 'scripts/white-matte.py'];
+if (!prototype) paletteFiles.push('scripts/plate-policy.json');
+const paletteUpdated = Math.max(...paletteFiles.map(file => statSync(path.join(root, file)).mtimeMs));
 const plates = {};
 const sources = [];
 mkdirSync(path.join(root, 'assets/plates'), { recursive: true });
@@ -29,8 +33,8 @@ for (const { id, dyn } of [{ id: 'hero', dyn: 'tang' }, ...sites]) {
   if (!color) throw new Error(`Missing dynasty color for ${id} (${dyn})`);
   const target = path.join(root, `assets/plates/${id}.png`);
   const metadata = JSON.parse(readFileSync(metadataFile, 'utf8'));
-  if (!existsSync(target) || statSync(target).mtimeMs < Math.max(statSync(original).mtimeMs, statSync(metadataFile).mtimeMs, paletteUpdated)) {
-    recolorLinePlate(original, target, color, legacy[`assets/generated/${id}.png`], metadata.background_preparation);
+  if (process.argv.includes('--strict') || !existsSync(target) || statSync(target).mtimeMs < Math.max(statSync(original).mtimeMs, statSync(metadataFile).mtimeMs, paletteUpdated)) {
+    recolorLinePlate(original, target, color, legacy[`assets/generated/${id}.png`], metadata.background_preparation, { prototype });
   }
   const [width, height] = execFileSync('magick', ['identify', '-format', '%w %h', target], { encoding: 'utf8' }).split(' ').map(Number);
   plates[id] = { src: `assets/plates/${id}.png`, alt: `${metadata.subject} · 线稿`, width, height, color, tint: false };
@@ -59,7 +63,7 @@ const rows = sources.map(meta => {
 writeFileSync(path.join(root, 'sources.html'), `<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>访古 · 图版来源</title><link rel="stylesheet" href="style.css">
 <style>main{max-width:1000px;margin:auto;padding:48px 24px}nav{display:flex;gap:28px;margin-bottom:48px;font-size:12px}h1{font-weight:400;font-size:36px}header p{max-width:44em;line-height:1.9;color:var(--paper-2)}article{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:center;padding:32px 0;border-top:1px solid rgba(214,171,92,.18)}article h2{font-size:22px;font-weight:400}article p{font-size:14px;line-height:1.8;color:var(--paper-2)}.preview img{width:100%;height:230px;object-fit:contain}.credit{font-size:12px!important;overflow-wrap:anywhere}a{color:var(--gold)}@media(max-width:600px){article{grid-template-columns:1fr;gap:12px}.preview img{height:260px}}</style></head><body><main>
-<nav class="mono"><a href="index.html">← 访古</a><a href="proof.html?view=grid">线稿总览</a></nav><header><h1>图版来源</h1><p>以龙门石窟卢舍那大佛线稿为母版，参照下列照片与历史图像，经 AI 简化、调整视角并重绘为统一线稿。图版保留透明背景，并沿用朝代配色：汉为赭石、北魏为藕紫、南朝为暖褐、北齐为玫瑰紫、隋为青瓷、唐为金色、五代十国为灰紫、宋为铜绿、辽金为朱砂、西夏为沙褐、元为琥珀、明清为青蓝、近现代为灰银。日本时代另用独立配色：飞鸟为淡赭、奈良为灰绿、平安为藤紫、镰仓为青碧、江户为茶红。<a href="assets/research/japan-periods.json">日本时代分界依据</a>。线稿为艺术意写，不作为实测或修缮依据。摄影与原图作者、许可列于各项；完整提示词和参考路径保存在绘图记录中。</p><p>卢舍那大佛沿用项目原有图版，其原始参考与许可未在项目中记录。</p></header>
+<nav class="mono"><a href="index.html">← 访古</a><a href="proof.html?view=grid">线稿总览</a></nav><header><h1>图版来源</h1><p>以龙门石窟卢舍那大佛线稿为母版，参照下列照片与历史图像，经 AI 简化、调整视角并重绘为统一线稿。图版保留透明背景，并沿用朝代配色：汉为赭石、高句丽为石褐、渤海为灰绿、北魏为藕紫、南朝为暖褐、北齐为玫瑰紫、隋为青瓷、唐为金色、五代十国为灰紫、宋为铜绿、辽金为朱砂、西夏为沙褐、元为琥珀、明清为青蓝、近现代为灰银。日本时代另用独立配色：飞鸟为淡赭、奈良为灰绿、平安为藤紫、镰仓为青碧、江户为茶红。<a href="assets/research/japan-periods.json">日本时代分界依据</a>。线稿为艺术意写，不作为实测或修缮依据。摄影与原图作者、许可列于各项；完整提示词和参考路径保存在绘图记录中。</p><p>卢舍那大佛沿用项目原有图版，其原始参考与许可未在项目中记录。</p></header>
 ${rows}
 </main></body></html>\n`);
-console.log(`Prepared ${Object.keys(plates).length} imagegen plates. Existing Vairocana master preserved.`);
+console.log(`Prepared ${Object.keys(plates).length} imagegen plates (${prototype ? 'prototype: quality gates off' : 'strict'}). Existing Vairocana master preserved.`);

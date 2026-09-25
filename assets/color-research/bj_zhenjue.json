@@ -1,0 +1,51 @@
+{
+  "id": "bj_zhenjue",
+  "name": "北京真觉寺金刚宝座",
+  "subject": "北京真觉寺金刚宝座 · 南面五层佛龛与密檐石塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/bj_zhenjue.png",
+    "assets/references/bj_zhenjue-front.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Beijing Zhenjue Temple Diamond Throne Stupa FRONT exactly as the line drawing, including FIVE rows of Buddha niches plus the separate lowest animal/floral relief band. Weathered carved stone is muted pale GREY-BEIGE sandstone, with gentle cool grey shadows, not yellow gold. All dense-eave tower roofs are carved stone in the same grey-beige family, NOT broad green glazed roofs. The small access pavilion is the only glazed-roof structure: lower square eaves and glazed borders are subdued deep GREEN, upper round cone roof has muted OCHRE/orange glazed tiles with green edge. Main arch lattice timber is faded dark RED with deep dark-brown doorway recess; upper pavilion arched opening and small pagoda recesses dark neutral grey-brown, not white air holes. Central stone finial is darker grey than the two pale corner finials as in photo. Platform and stairs neutral grey stone. Do not add a Buddha statue in the doorway, restore gilding, or introduce text. Preserve exact five-row count and frontal silhouette, landscape1536x1024.",
+  "material_observations": [
+    "台座和密檐石塔浅灰米色石材；石檐不是绿色瓦顶。",
+    "台上琉璃小殿下檐深绿，上层圆顶赭黄橙瓦配绿边。",
+    "圆券内木格门暗红，门洞及小塔龛内深灰褐；中央塔刹颜色较深。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/bj_zhenjue-front.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E4%BA%AC%E4%BA%94%E5%A1%94%E5%AF%BA%E5%A1%942024.3.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/%E5%8C%97%E4%BA%AC%E4%BA%94%E5%A1%94%E5%AF%BA%E5%A1%942024.3.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "date": "2024-03-10"
+    }
+  ],
+  "original_research": "assets/research/bj_zhenjue.json",
+  "output": "assets/colored/bj_zhenjue.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-f5a36ec7-18ef-4db0-a0cb-b7b913835fde.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bd4c53926b8a13ad6387fe508324555f55fb41418508bb58bd3e479444da050b",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "五排佛龛加独立动物带保持，三塔投影及小殿未变换构图。",
+      "浅灰米色石材、绿边赭黄琉璃小殿、暗红木门分区可辨。",
+      "白底和暗底透明副本均目检，门洞暗部作为建筑内部保留，未误抠。",
+      "近白边缘和可见实体通过脚本检查，内部RGB保持原样。"
+    ],
+    "limitations": "照片色温与曝光有差异，石雕纹样作艺术简化；非文保级色彩校准或严格配准。"
+  },
+  "completed_at": "2026-09-16 10:59:39 UTC"
+}

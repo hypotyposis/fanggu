@@ -1,0 +1,88 @@
+{
+  "id": "tj_shijia",
+  "name": "天津石家大院",
+  "subject": "天津杨柳青石家大院 · 内院门楼与纵深门院",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/colored/tj_shijia-draft1.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 is the colored Shi Family Grand Courtyard inner gate illustration to correct. Change ONLY the TWO square stone panels near top doorway shoulders: remove the invented Chinese Fu characters and every stroke of lettering from those two squares, replacing with plain flat grey stone blank inset panels and their thin frame outlines. Do NOT copy any calligraphy from reference photographs. Preserve all other pixels and details, colored grey brick and tile, dark red-brown timber, red inlay panels, ochre trim, nested doorway, stone drum bases, margins and portrait1024x1536 canvas. All exterior and real blank spaces between selected structures retain perfectly pure opaque WHITE #FFFFFF, no shadow, gradient, grain on canvas, glow or checkerboard. No text of any kind anywhere. No substitutions or added scenery. Only delete the two stone inscription designs.",
+  "material_observations": [
+    "内院门楼与墙为灰砖，瓦顶灰色。",
+    "门框和横楣近黑红褐木材，嵌板暗红、边线少量赭金。",
+    "门前抱鼓石和后方门楼石部灰白，部分短墙嵌板浅青灰。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/tj_shijia-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shiyuan_tianjin_doorways.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Shiyuan_tianjin_doorways.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Rolfmueller",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-07-01 09:41:18"
+    },
+    {
+      "file": "assets/references/tj_shijia-detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/%E7%9F%B3%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "TJArchi-Studio",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2011-01-03 02:33:39",
+      "role": "research_context_not_generation_input",
+      "note": "外部门楼与主照片内院门楼不同，仅研究背景，不混入本图形制。"
+    }
+  ],
+  "original_research": "assets/research/tj_shijia.json",
+  "output": "assets/colored/tj_shijia.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3147ad4e-f8a7-4456-acee-4ae23931c368.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "abcff7de32bd71cc5c9f62a6b17f77b397db2a4dfd305825c388a31119b01a63",
+    "seeds": [
+      [
+        500,
+        595
+      ],
+      [
+        500,
+        1050
+      ],
+      [
+        500,
+        850
+      ]
+    ]
+  },
+  "generation_history": [
+    {
+      "file": "assets/colored/tj_shijia-draft1.png",
+      "tool_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-f791667e-2d32-4ed7-a571-5f988c0cb3c1.png",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Shi Family Grand Courtyard Yangliuqing Tianjin INNER COURTYARD GATE, NOT exterior entrance gate. Preserve exact Image1 nested doorways and paired carved stone drum gate bases, low grey-tile capped single gate with short sidewalls, no added exterior stone lion statues or lanterns. Current grey brick gate and wall, grey tile cap; timber door surround almost black dark RED-BROWN, rectangular inlay panels muted RED with small thin ochre/gold borders as photograph, round small lintel fittings subdued ochre. Two carved gate-base drum stones pale GREY/WHITE opaque material, not gilded. Short wall panel inserts very pale muted blue-green/grey. Nested back doorway repeats dark red-brown timber and grey stone, keep perspective and boundaries. Open space beyond last doorway pure white #FFFFFF, but actual grey recess sidewall entity remains grey. No surrounding courtyard pavement, vegetation, people, trash cans, wires, signs, letters or invented gold plaque text. Pure flat opaque white exterior background, no shadows, entire selected gate and bases complete, portrait1024x1536 and clear8% margins.",
+      "input_images": [
+        "assets/generated/tj_shijia.png",
+        "assets/references/tj_shijia-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "rejected",
+      "reason": "生成器从实拍复制两块福字砖雕，与原线稿留白及无文字要求不符。"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "内院门楼、成对抱鼓石和纵深门院均保持，未混入外部门楼独立石狮。",
+      "灰砖灰瓦、近黑红褐门框、红嵌板与少量赭金边、灰白石墩按2013年实拍取色。",
+      "两块肩部砖雕题字定向移除，保留空嵌板；透明暗底图逐图查看，记录的三处白底开口去除，石材与暗木框未误删。"
+    ],
+    "limitations": [
+      "修订时局部细线与颜料纹理有小幅变化，不宣称严格像素配准；雕花、纵深取景与照片色温为艺术概括。"
+    ]
+  },
+  "completed_at": "2026-09-16 12:31:15 UTC"
+}

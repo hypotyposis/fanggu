@@ -1,0 +1,50 @@
+{
+  "id": "tj_jizhou_baita",
+  "subject": "天津蓟县白塔 · 八角砖塔与覆钵式塔身",
+  "status": "complete",
+  "file": "assets/references/tj_jizhou_baita-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%93%9F%E5%8E%BF%E7%99%BD%E5%A1%94.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/%E8%93%9F%E5%8E%BF%E7%99%BD%E5%A1%94.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Sapphirious",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2018-09-22",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tj_jizhou_baita-photo.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "依据2018年实拍核对八角下层、三重低檐、覆钵式圆鼓塔身和环状收分塔刹。去树木及邻屋，树遮处的低台基作对称简化；门钉和浮雕纹样为意写，非严格摹刻。",
+  "prompt": "Use case: style-transfer. Asset type: Chinese heritage atlas fine-line architectural plate. Image1 is Longmen sparse fine BLACK contour STYLE ONLY; Image2 is actual Jixian/Jizhou White Pagoda Tianjin, SUBJECT GEOMETRY. Draw the complete present tall OCTAGONAL brick pagoda with its distinctive mixed Chinese and stupa form, not a generic many-storey tower. Bottom: broad low octagonal brick pedestal with selected carved figure panels, corbel/bracket band and mouldings. Lower tower: ONE tall octagonal architectural storey with arched niches/red-door outlines and projecting miniature relief-pillars at face corners. Above lower storey THREE successive closely spaced shallow octagonal projecting brick eave/cornice levels with tiled edge profiles and short low wall belts. Above them a rounded BOTTLE/DOME brick body covered with a few selected floral relief contours, a flat octagonal broad canopy/cornice at its top, then a long narrowing ringed conical upper finial, pale small cap, tiny dark point and thin vertical rod. Keep the relative proportions exactly as photo: long ringed upper cone, rounded body, three low cornice levels, tall lowest storey and pedestal. Straight-on three-facet shallow view, verticals vertical, no steep looking-up distortion. Complete apex and full pedestal uncut, portrait1024x1536 tower82% height with generous clear margins. Remove occluding trees, neighboring temple roofs, grass, people, signs, benches and modern railings. No rebuilding or invented extra tiers. Fine BLACK ink contours only, every nonink area inside/outside perfectly flat opaque PURE WHITE #FFFFFF. Selected joints/reliefs only, no dense masonry texture, grayscale fill, black door fill, hatch shadows, color, cast shadow, paper grain, gradient, halo, glow, checkerboard, lettering, caption, frame or watermark.",
+  "generated_file": "assets/generated/tj_jizhou_baita.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a5b4131a-5bb7-4af8-aec0-7743e3db8790.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "蓟县白塔 · 楼阁与覆钵形制",
+    "辽至清 · 历代修缮现貌"
+  ],
+  "historical_sources": [
+    {
+      "title": "天津市文化和旅游局 · 蓟县白塔国保时代为辽至清",
+      "url": "https://whly.tj.gov.cn/WSBSYZXBS4230/CXFW5394/tjsqgzdwwbhdwcx/202301/t20230130_6090659.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7c5ba1a6317a541937334392b3ad0c6a715b943d351bc382fd5fba0a9b3452b8",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "八角下层、三重低檐、覆钵式塔身、环状收分塔刹辨识清楚。",
+      "完整塔尖与台基未裁切，白底黑线无外景或文字。"
+    ],
+    "limitations": "浮雕纹样、门钉与树遮处台基作意写；上下留白较少但主体未触边，不作实测图。"
+  }
+}

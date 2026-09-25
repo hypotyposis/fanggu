@@ -1,0 +1,89 @@
+{
+  "id": "bj_changling",
+  "subject": "北京长陵 · 祾恩殿九开间重檐庑殿",
+  "status": "complete",
+  "file": "assets/references/bj_changling-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "rheins",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "date": "Taken on 29 August 2015",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/bj_changling-photo.jpg",
+    "assets/references/bj_changling-facade-crop.png"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/bj_changling-facade-crop.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "Taken on 29 August 2015",
+      "role": "facade_detail_crop",
+      "derivative_processing": "magick assets/references/bj_changling-photo.jpg -crop 1400x220+300+680 +repage assets/references/bj_changling-facade-crop.png"
+    }
+  ],
+  "source_note": "以rheins的2015年实拍及其正面开间裁切作形制参考。完整九开间祾恩殿及石台基，删除树木、游客、现代护栏。所绘为享殿，不以陵墓初建1409年代替殿身年代；故宫资料记1416年享殿建成、1427年长陵工程告竣。",
+  "prompt": "Use case: style-transfer. Draw Beijing Changling Ling'en Hall as a sparse fine BLACK line heritage plate. IMAGE1 is only Longmen fine-line STYLE. IMAGE2 and IMAGE3 actual photograph+facade crop supply identifying geometry. DO NOT USE PREVIOUS GENERATED DRAFTS. First priority: the photograph's NINE-BAY facade, count NINE separate architectural bays created by TEN columns, four left + single center + four right. Each bay has one independently enclosed beam panel above its window/door group. Exact facade layout from left to right: column, bay1, column, bay2, column, bay3, column, bay4, column, CENTERbay5, column, bay6, column, bay7, column, bay8, column, bay9, column. Do not collapse to seven bays. Centralbay single, rest symmetrical. Keep distinctive very long double-eaved HIP (wudian) roof, NO gables, long ridge with curled end ornaments and two gently lifted eave levels. Complete present hall plus layered stone terrace, three stair approaches and center carved ramp, no other buildings or trees. Shallow straight-on facade elevation, full nine-bay wall visible. Reduce roof detail and bracket density to few lines. Total width about82% landscape1536x1024, clear9% side margins, terrace/apex uncut. Fine BLACK contours only on perfectly uniform opaque PURE WHITE #FFFFFF, all nonink interior/exterior pure white. Windows/doors outlined no shading. No color, filled black shadows, grayscale, hatch, paper grain, damage texture, gradient, glow, checkerboard, text, labels, pseudo-inscriptions, dimensions, border, landscape or ground shadows.",
+  "generated_file": "assets/generated/bj_changling.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-8e9d162e-aede-4697-9b4f-e33eb32111bb.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "长陵 · 九开间祾恩殿",
+    "明永乐至宣德 · 1416—1427营建沿革"
+  ],
+  "historical_sources": [
+    {
+      "title": "故宫博物院 · 长陵制度与营建时间",
+      "url": "https://www.dpm.org.cn/court/system/236400.html"
+    },
+    {
+      "title": "故宫博物院 · 祾恩殿名沿革",
+      "url": "https://www.dpm.org.cn/lemmas/241230.html"
+    },
+    {
+      "title": "明十三陵 · 长陵营建",
+      "url": "https://www.mingshisanling.com/relic/215.html?type=5"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3d3ad7e4dcd823b5d7cfb92b970e194743aeffb9ecb2e47ecc6a1ed894e44e59",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "逐图对照实拍与开间裁切，正立面九开间、十柱；两层庑殿顶无山花。",
+      "完整殿身、台基和三组踏步，屋脊及底部不裁切，无现代附属物与题字。"
+    ],
+    "limitations": [
+      "瓦面与斗拱细节较母版密集，保留为本轮候选供用户目检；为实拍艺术转译而非测绘。"
+    ]
+  },
+  "generation_history": [
+    {
+      "file": "assets/generated/bj_changling-draft1.png",
+      "tool_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-17d24f1e-31c2-436a-b816-216e8bd707d5.png",
+      "status": "rejected",
+      "reason": "仅七开间，误减实际九开间。",
+      "prompt": "Use case: style-transfer. Asset type: heritage atlas fine black line plate. Image1 is Longmen fine-line STYLE MASTER ONLY, Image2 actual Changling Ling'en Hall Beijing supplies SUBJECT GEOMETRY. Draw the COMPLETE main Ling'en Hall only, near-frontal facade with verticals vertical and gentle shallow perspective. Very WIDE timber hall with NINE structural bays across front, ten front pillars, broad lower verandah, closed lattice doors/windows in actual divisions. TWO eave levels beneath a double-eaved HIP ROOF (wudian), long straight ridge with curled chiwen end ornaments, gently lifted roof corners. Do not use xieshan gable roof, add a third roof or shrink to five/seven bays. Preserve the broad elevated stone terrace and its layered white-marble balustrades, THREE front stair approach areas and central carved ramp, simplified clearly. Selected delicate roof tile lines, bracket and beam outlines, not a dense texture or tonal model. Draw sparse fine BLACK INK contours only on pure flat opaque WHITE #FFFFFF, every nonink area uniformly white, doors/window recesses outlined no dark fill. Isolate hall and its own terrace/stairs only: no trees, mountains, courtyard pavement, people, sky, modern fencing, signs, lamp posts, other tomb buildings or ground shadow. Center full complete composition in landscape1536x1024, about82% width, leave at least8% clear white side margins; complete ridge and terrace uncut. No color, grayscale shadows, broad hatch fills, paper texture, gradient, glow, checkerboard, captions, plaque lettering, pseudo-calligraphy, border or watermark; leave plaques blank."
+    },
+    {
+      "file": "assets/generated/bj_changling-draft2.png",
+      "tool_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4d134771-fe58-45bc-8b29-419e95a49a12.png",
+      "status": "rejected",
+      "reason": "定向修订后仍仅七开间。",
+      "prompt": "Use case: precise-object-edit. Correct ONLY the FRONT STRUCTURAL BAY COUNT of this black line drawing of Beijing Changling Ling'en Hall. Image1 is the existing draft: it INCORRECTLY HAS SEVEN BAYS with eight pillars. Image2 actual hall has NINE BAYS. REQUIRED corrected result: TEN front facade pillars creating NINE independently countable equal structural bays: FOUR bays to LEFT of the single CENTER bay and FOUR bays to RIGHT, 4+1+4=9. Retain broad overall facade span by making each bay narrower and adding two bays symmetrically; do not merely add lattice door leaves inside the existing seven bays. Ten columns from left edge to right edge with nine beam panels, one panel per bay, counted9. Preserve complete double-eaved HIP roof silhouette, ridge, stone terrace, three approaches, central ramp, fine black contour style, blank plaques, flat white #FFFFFF opaque background,1536x1024 framing. No extra roofs, no color or shading, no text, no new landscape. Side margins at least5%, nothing cropped. Main change exactly SEVEN -> NINE architectural bays / EIGHT -> TEN pillars."
+    }
+  ]
+}

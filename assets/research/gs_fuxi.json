@@ -1,0 +1,179 @@
+{
+  "id": "gs_fuxi",
+  "subject": "伏羲庙仪门",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+  "author": "Shizhao",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gs_fuxi-photo.jpg"
+  ],
+  "source_note": "仪门1523年始建，1805年重修时由三间改为五间；图绘现存五间仪门，以1805年形制定年，不把整庙1483—1484年初建当成此门年代。2026年初完成包括仪门在内的屋面与檐部修缮。 原型阶段由用户人眼验收；参考照片拍摄时间另见 references。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 伏羲庙仪门.\nLandscape 1536x1024. Isolate the foreground five-bay ceremonial Yimen gate in the 2012 full courtyard photo. ONE eave level, a long horizontal roof with modest green ridge ornaments, five bays of timber posts, open central ceremonial passage, and short grey steps. Exclude the more distant DOUBLE-EAVED Xiantian Hall visible through the gate, all trees and side buildings. Leave plaques and couplets blank.\nStructure checkpoints: 五间单檐仪门与门前短台阶；红柱与通透的中央通道；不画后方先天殿、柏树和左右附属建筑；牌匾留白。",
+  "generated_file": "assets/generated/gs_fuxi.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "五间单檐仪门与门前短台阶；红柱与通透的中央通道；不画后方先天殿、柏树和左右附属建筑；牌匾留白。"
+  ],
+  "caption": [
+    "伏羲庙仪门 · 线稿",
+    "清 · 1805"
+  ],
+  "inputs_viewed": true,
+  "references": [
+    {
+      "title": "File:伏羲庙内 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg/1280px-%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+      "author": "Shizhao",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2012-07-18 09:30:14",
+      "description": "​天水伏羲庙内",
+      "categories": "Cultural heritage monuments in China with known IDs|Taken with Nikon D80|Fuxi Temple (Tianshui)|Images from Wiki Loves Monuments 2013 in China|Self-published work|Images from Wiki Loves Monuments 2013|Uploaded via Campaign:wlm-cn|Files with coordinates missing SDC location of creation|Images from Wiki Loves Monuments missing SDC depicts|Images from Wiki Loves Monuments missing SDC location of creation",
+      "lat": "34.578737",
+      "lon": "105.704117",
+      "file": "assets/references/gs_fuxi-photo.jpg",
+      "id": "gs_fuxi",
+      "sha256": "8f72169fbe640588baafc1893c7f977b3392a77e5722d72ac68d8bb55717dbd8"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "天水市文旅局：仪门1523年始建、1805年由三间改五间",
+      "url": "https://www.tianshui.gov.cn/wlj/info/1822/171102.htm"
+    },
+    {
+      "title": "天水市政府：伏羲庙第五批国保",
+      "url": "https://www.tianshui.gov.cn/info/1721/1219452.htm"
+    },
+    {
+      "title": "甘肃文博会：2026年伏羲庙修缮竣工验收",
+      "url": "https://www.gswbj.gov.cn/a/2026/01/09/27204.html"
+    }
+  ],
+  "site_recommendation": {
+    "id": "gs_fuxi",
+    "name": "天水伏羲庙",
+    "short": "伏羲庙",
+    "subject": "伏羲庙仪门",
+    "sub": "仪门 · 五间",
+    "place": "甘肃天水 · 秦州",
+    "placeKey": "gs_tianshui",
+    "types": [
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清嘉庆十年扩建",
+    "year": 1805,
+    "yearLabel": "1805",
+    "yearNote": "仪门1523年始建，1805年重修时由三间改为五间；图绘现存五间仪门，以1805年形制定年，不把整庙1483—1484年初建当成此门年代。2026年初完成包括仪门在内的屋面与檐部修缮。",
+    "lede": "五间仪门横在中轴线上，红柱间留出礼仪通道。它不是最前方的牌坊，也不是后面的先天殿。",
+    "checkpoint": "五间单檐仪门与门前短台阶；红柱与通透的中央通道；不画后方先天殿、柏树和左右附属建筑；牌匾留白。",
+    "material": "浅灰至灰绿瓦面，少量绿琉璃脊饰；暗红柱枋、蓝绿彩画、浅灰石阶；参考为2012年，不能保证2026修缮后所有油饰细节。",
+    "lineDetail": "Landscape 1536x1024. Isolate the foreground five-bay ceremonial Yimen gate in the 2012 full courtyard photo. ONE eave level, a long horizontal roof with modest green ridge ornaments, five bays of timber posts, open central ceremonial passage, and short grey steps. Exclude the more distant DOUBLE-EAVED Xiantian Hall visible through the gate, all trees and side buildings. Leave plaques and couplets blank.",
+    "history": [
+      {
+        "title": "天水市文旅局：仪门1523年始建、1805年由三间改五间",
+        "url": "https://www.tianshui.gov.cn/wlj/info/1822/171102.htm"
+      },
+      {
+        "title": "天水市政府：伏羲庙第五批国保",
+        "url": "https://www.tianshui.gov.cn/info/1721/1219452.htm"
+      },
+      {
+        "title": "甘肃文博会：2026年伏羲庙修缮竣工验收",
+        "url": "https://www.gswbj.gov.cn/a/2026/01/09/27204.html"
+      }
+    ],
+    "protection": {
+      "batch": 5,
+      "unitName": "伏羲庙",
+      "relation": "part",
+      "source": "batch5",
+      "scope": "伏羲庙仪门",
+      "locator": "国务院该批名单 · 甘肃 · 伏羲庙",
+      "scopeSources": [
+        {
+          "title": "天水市文旅局：仪门1523年始建、1805年由三间改五间",
+          "url": "https://www.tianshui.gov.cn/wlj/info/1822/171102.htm"
+        },
+        {
+          "title": "天水市政府：伏羲庙第五批国保",
+          "url": "https://www.tianshui.gov.cn/info/1721/1219452.htm"
+        },
+        {
+          "title": "甘肃文博会：2026年伏羲庙修缮竣工验收",
+          "url": "https://www.gswbj.gov.cn/a/2026/01/09/27204.html"
+        }
+      ]
+    },
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false,
+    "caption": [
+      "伏羲庙仪门 · 线稿",
+      "清 · 1805"
+    ],
+    "facts": [
+      "<b>主体</b> 伏羲庙仪门。",
+      "<b>年代</b> 仪门1523年始建，1805年重修时由三间改为五间；图绘现存五间仪门，以1805年形制定年，不把整庙1483—1484年初建当成此门年代。2026年初完成包括仪门在内的屋面与檐部修缮。",
+      "<b>图版范围</b> 五间单檐仪门与门前短台阶；红柱与通透的中央通道；不画后方先天殿、柏树和左右附属建筑；牌匾留白。"
+    ]
+  },
+  "sources": [
+    {
+      "title": "File:伏羲庙内 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg/1280px-%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
+      "author": "Shizhao",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2012-07-18 09:30:14",
+      "description": "​天水伏羲庙内",
+      "categories": "Cultural heritage monuments in China with known IDs|Taken with Nikon D80|Fuxi Temple (Tianshui)|Images from Wiki Loves Monuments 2013 in China|Self-published work|Images from Wiki Loves Monuments 2013|Uploaded via Campaign:wlm-cn|Files with coordinates missing SDC location of creation|Images from Wiki Loves Monuments missing SDC depicts|Images from Wiki Loves Monuments missing SDC location of creation",
+      "lat": "34.578737",
+      "lon": "105.704117",
+      "file": "assets/references/gs_fuxi-photo.jpg",
+      "id": "gs_fuxi",
+      "sha256": "8f72169fbe640588baafc1893c7f977b3392a77e5722d72ac68d8bb55717dbd8",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg"
+    }
+  ],
+  "additional_sources": [],
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T14:08:14.112Z",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 伏羲庙仪门.\nLandscape 1536x1024. Isolate the foreground five-bay ceremonial Yimen gate in the 2012 full courtyard photo. ONE eave level, a long horizontal roof with modest green ridge ornaments, five bays of timber posts, open central ceremonial passage, and short grey steps. Exclude the more distant DOUBLE-EAVED Xiantian Hall visible through the gate, all trees and side buildings. Leave plaques and couplets blank.\nStructure checkpoints: 五间单檐仪门与门前短台阶；红柱与通透的中央通道；不画后方先天殿、柏树和左右附属建筑；牌匾留白。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gs_fuxi-photo.jpg"
+      ],
+      "received_at": "2026-09-17T14:09:43.819Z",
+      "saved_at": "2026-09-17T14:09:43.958Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3390679-2ad4-4234-8e68-3dd164516d67.png",
+      "original_file": "assets/generated/gs_fuxi.png"
+    }
+  ],
+  "generated_original": "assets/generated/gs_fuxi.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5bec5f4a63bbb214ebfcf7c084602a456940c65e05734479f4d24bdadd75d9c5",
+    "seeds": []
+  }
+}

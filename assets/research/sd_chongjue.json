@@ -1,0 +1,83 @@
+{
+  "id": "sd_chongjue",
+  "subject": "济宁崇觉寺铁塔塔身与上部台座",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jining_Chongjue_Si_Tieta_2015.08.13_17-14-19.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jining_Chongjue_Si_Tieta_2015.08.13_17-14-19.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "references": [
+    {
+      "id": "sd_chongjue",
+      "file": "assets/references/sd_chongjue-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jining_Chongjue_Si_Tieta_2015.08.13_17-14-19.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jining_Chongjue_Si_Tieta_2015.08.13_17-14-19.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2015-08-13",
+      "sha256": "5604292fb22b147e24e95b394cd6fffb9d4ac56f1f3d73c994f2ed335ad57c9e"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_chongjue-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依公开实拍重绘；所绘范围为济宁崇觉寺铁塔塔身与上部台座。图版为艺术转译，待用户人眼验收。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. A narrow octagonal cast-iron pagoda, nine storeys with modeled railings and projecting tiled eaves, tapering toward a rounded bulb finial and short point. Copy all visible levels exactly from photo. Preserve iron relief selectively. Draw the complete tower shaft and the upper circular masonry pedestal visible in the photo; no invented extension of cropped brick plinth. Remove wires and vegetation."
+  ],
+  "material_observations": [
+    "铁构锈褐与深灰并存，雕饰与栏杆同属铁质，塔刹灰褐，台座青灰砖。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 济宁崇觉寺铁塔塔身与上部台座\nPortrait 1024x1536. A narrow octagonal cast-iron pagoda, nine storeys with modeled railings and projecting tiled eaves, tapering toward a rounded bulb finial and short point. Copy all visible levels exactly from photo. Preserve iron relief selectively. Draw the complete tower shaft and the upper circular masonry pedestal visible in the photo; no invented extension of cropped brick plinth. Remove wires and vegetation.",
+  "generated_file": "assets/generated/sd_chongjue.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 济宁崇觉寺铁塔塔身与上部台座\nPortrait 1024x1536. A narrow octagonal cast-iron pagoda, nine storeys with modeled railings and projecting tiled eaves, tapering toward a rounded bulb finial and short point. Copy all visible levels exactly from photo. Preserve iron relief selectively. Draw the complete tower shaft and the upper circular masonry pedestal visible in the photo; no invented extension of cropped brick plinth. Remove wires and vegetation.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_chongjue-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T22:30:23.262991+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:32:09.523593+08:00",
+      "saved_at": "2026-09-17T22:32:09.555093+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-8156cb16-5a09-47e5-b686-e4257a6c91e4.png",
+      "output": "assets/generated/sd_chongjue.png"
+    }
+  ],
+  "caption": [
+    "崇觉寺铁塔 · 塔身与上部台座 · 线稿",
+    "宋建七层 · 明增两层与塔刹"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-8156cb16-5a09-47e5-b686-e4257a6c91e4.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2235eced0329b17805add1533e5b38505ec801800dba668830fd595e20d22471",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "济宁市文旅局：崇觉寺铁塔",
+      "url": "https://whlyj.jining.gov.cn/art/2025/6/12/art_70690_2706007.html",
+      "note": "1105宋建七级，1581明增两级；第三批国保。"
+    }
+  ]
+}

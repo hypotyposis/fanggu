@@ -1,0 +1,125 @@
+{
+  "id": "fj_zhenguo",
+  "subject": "泉州开元寺镇国塔（东塔）整塔",
+  "status": "complete",
+  "historical_sources": [
+    {
+      "title": "泉州市政府：开元寺双塔遗存及营建年代",
+      "url": "https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/ggwhty/whssml/202305/t20230516_2880608.htm"
+    }
+  ],
+  "source_note": "年份取现存花岗岩石塔的竣工年1250；865年为木塔始建，1227年砖塔不等于现存五层石塔。 实拍仅作为形制与材质输入，不声称实测；输出由用户验收。",
+  "caption": [
+    "泉州开元寺镇国塔（东塔）整塔 · 线稿",
+    "南宋 · 1238—1250"
+  ],
+  "structure_checkpoints": [
+    "八角、五层、五重主檐，石须弥座、石柱斗拱、门窗浮雕及塔刹完整。非七层木塔；只绘东塔。"
+  ],
+  "generated_file": "assets/generated/fj_zhenguo.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "site_recommendation": {
+    "id": "fj_zhenguo",
+    "name": "泉州开元寺镇国塔",
+    "short": "镇国塔",
+    "sub": "东塔 · 八角五层石塔",
+    "subject": "泉州开元寺镇国塔（东塔）整塔",
+    "prov": "福建",
+    "place": "福建泉州 · 开元寺东塔院",
+    "placeKey": "quanzhou",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "song",
+    "tag": "南宋",
+    "era": "嘉熙二年至淳祐十年",
+    "year": 1250,
+    "yearLabel": "1238—1250",
+    "yearNote": "年份取现存花岗岩石塔的竣工年1250；865年为木塔始建，1227年砖塔不等于现存五层石塔。",
+    "checkpoint": "八角、五层、五重主檐，石须弥座、石柱斗拱、门窗浮雕及塔刹完整。非七层木塔；只绘东塔。",
+    "history": [
+      {
+        "title": "泉州市政府：开元寺双塔遗存及营建年代",
+        "url": "https://www.quanzhou.gov.cn/zfb/xxgk/ztxxgk/ggwhty/whssml/202305/t20230516_2880608.htm"
+      }
+    ],
+    "material": "风化花岗岩以灰褐为主，雕刻、柱身与石檐同为石材；凹部偏深灰，门洞暗部保留，不套金色木构。",
+    "lineDetail": "Portrait 1024x1536. Exactly FIVE octagonal storeys and FIVE main upturned stone eaves, carved stone columns/brackets and figure panels. Depict only the EAST Zhenguo stone pagoda, with its entire finial and stepped carved base. Do not create a second tower.",
+    "lede": "五重石檐一层层向外舒展，仿木斗拱却由花岗岩雕成。开元寺东塔在南宋完成，如今仍把泉州的石工传统立在西街天际。",
+    "facts": [
+      "<b>现存主体</b> 镇国塔（东塔），1238—1250年重建为花岗岩石塔；不是唐代木塔原构。",
+      "<b>形制</b> 八角五层楼阁式，石柱、斗拱、平座与塔檐模仿木建筑，墙面嵌有佛教人物浮雕。",
+      "<b>独立收录</b> 图版只绘东塔；西侧仁寿塔和大雄宝殿分别保留独立条目。"
+    ],
+    "tall": true
+  },
+  "file": "assets/references/fj_zhenguo-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-44.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Quanzhou_Kaiyuan_Si_20120229-44.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2012-02-29",
+  "references": [
+    {
+      "id": "fj_zhenguo",
+      "file": "assets/references/fj_zhenguo-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-44.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Quanzhou_Kaiyuan_Si_20120229-44.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Quanzhou_Kaiyuan_Si_20120229-44.jpg/960px-Quanzhou_Kaiyuan_Si_20120229-44.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-29",
+      "description": "​开元寺镇国塔，位于中国福建省泉州市，是全国重点文物保护单位。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_zhenguo-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 泉州开元寺镇国塔（东塔）整塔.\nPortrait 1024x1536. Exactly FIVE octagonal storeys and FIVE main upturned stone eaves, carved stone columns/brackets and figure panels. Depict only the EAST Zhenguo stone pagoda, with its entire finial and stepped carved base. Do not create a second tower.\nStructure checkpoint: 八角、五层、五重主檐，石须弥座、石柱斗拱、门窗浮雕及塔刹完整。非七层木塔；只绘东塔。",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 泉州开元寺镇国塔（东塔）整塔.\nPortrait 1024x1536. Exactly FIVE octagonal storeys and FIVE main upturned stone eaves, carved stone columns/brackets and figure panels. Depict only the EAST Zhenguo stone pagoda, with its entire finial and stepped carved base. Do not create a second tower.\nStructure checkpoint: 八角、五层、五重主檐，石须弥座、石柱斗拱、门窗浮雕及塔刹完整。非七层木塔；只绘东塔。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/fj_zhenguo-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T17:21:26.638Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:22:08.770Z",
+      "received_at": "2026-09-16T17:22:08.770Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3aca3af9-2d6d-41ec-bdb6-7260e93ecfac.png",
+      "saved_at": "2026-09-16T17:25:16.030Z"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4289137fa65d89ef7161bcfce3910acec5dd9e3b75661341bf4b07124c5e68f9",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3aca3af9-2d6d-41ec-bdb6-7260e93ecfac.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3aca3af9-2d6d-41ec-bdb6-7260e93ecfac.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.242Z",
+    "sourceSha256": "4289137fa65d89ef7161bcfce3910acec5dd9e3b75661341bf4b07124c5e68f9"
+  }
+}

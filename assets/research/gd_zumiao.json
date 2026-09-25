@@ -1,0 +1,134 @@
+{
+  "id": "gd_zumiao",
+  "subject": "佛山祖庙三门立面",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/佛山祖庙.JPG",
+  "author": "Haier7917",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gd_zumiao-photo.jpg"
+  ],
+  "source_note": "1600仅是明清现存主体的近似排序点，不是三门确切建成年。祖庙北宋创建、明洪武重建与三门现状年代不能混为一谈。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 佛山祖庙三门立面.\nLandscape 1536x1024. Draw the photographed Sanmen entrance facade ONLY, its THREE central arched doorways, long tiled roof and long ceramic figurine ridge with the two higher roof volumes visible at the rear ends. Preserve column and doorway placement. No invented palace behind. Remove foreground pool and railing, stone lions, incense burner, lanterns, plants and all text.\nStructure checkpoints: 三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。",
+  "generated_file": "assets/generated/gd_zumiao.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。"
+  ],
+  "caption": [
+    "佛山祖庙三门立面 · 线稿",
+    "明清 · 明清"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:34:28.585Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 佛山祖庙三门立面.\nLandscape 1536x1024. Draw the photographed Sanmen entrance facade ONLY, its THREE central arched doorways, long tiled roof and long ceramic figurine ridge with the two higher roof volumes visible at the rear ends. Preserve column and doorway placement. No invented palace behind. Remove foreground pool and railing, stone lions, incense burner, lanterns, plants and all text.\nStructure checkpoints: 三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_zumiao-photo.jpg"
+      ],
+      "received_at": "2026-09-17T12:35:34.543Z",
+      "saved_at": "2026-09-17T12:41:14.453Z",
+      "original_file": "assets/generated/gd_zumiao.png",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-e7ad9442-9932-481f-828c-137208cbfeb2.png"
+    }
+  ],
+  "generated_original": "assets/generated/gd_zumiao.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b53059b5ee8cdf7300bdef7a76670420f6d9ca9c4ac2dc6ea3def023452fe593",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gd_zumiao",
+      "file": "assets/references/gd_zumiao-photo.jpg",
+      "sha256": "e34fbb5e4a3a7e45992808f0c0a6770a8f5b3a745f22f8a375e47d8c7f615212",
+      "page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/佛山祖庙.JPG",
+      "author": "Haier7917",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "广东省文史研究馆：佛山祖庙的创建、明代重建与现存明清建筑",
+      "url": "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22597.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "佛山祖庙三门",
+    "short": "祖庙三门",
+    "sub": "三座券门 · 陶塑花脊",
+    "place": "广东佛山 · 禅城",
+    "placeKey": "gd_foshan",
+    "types": [
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清修建",
+    "year": 1600,
+    "yearApprox": true,
+    "yearLabel": "明清",
+    "yearNote": "1600仅是明清现存主体的近似排序点，不是三门确切建成年。祖庙北宋创建、明洪武重建与三门现状年代不能混为一谈。",
+    "lede": "三座券门之上，陶塑花脊横向铺展；两端屋面抬起，入口像一条收拢的街景。图版取三门，不包含池岸和前方陈设。",
+    "history": [
+      {
+        "title": "广东省文史研究馆：佛山祖庙的创建、明代重建与现存明清建筑",
+        "url": "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22597.html"
+      }
+    ],
+    "protection": {
+      "batch": 4,
+      "unitName": "佛山祖庙",
+      "relation": "part",
+      "locator": "PDF 第25页 · 佛山祖庙"
+    },
+    "id": "gd_zumiao",
+    "subject": "佛山祖庙三门立面",
+    "checkpoint": "三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。",
+    "material": "灰瓦与灰砖，浅灰石柱石梁、深棕木构、青绿褐陶塑花脊，门洞暗部保留。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "佛山祖庙三门立面 · 线稿",
+      "明清 · 明清"
+    ],
+    "facts": [
+      "<b>主体</b> 佛山祖庙三门立面。",
+      "<b>年代</b> 1600仅是明清现存主体的近似排序点，不是三门确切建成年。祖庙北宋创建、明洪武重建与三门现状年代不能混为一谈。",
+      "<b>图版范围</b> 三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "gd_zumiao",
+      "file": "assets/references/gd_zumiao-photo.jpg",
+      "sha256": "e34fbb5e4a3a7e45992808f0c0a6770a8f5b3a745f22f8a375e47d8c7f615212",
+      "page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/佛山祖庙.JPG",
+      "author": "Haier7917",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG"
+    }
+  ],
+  "additional_sources": []
+}

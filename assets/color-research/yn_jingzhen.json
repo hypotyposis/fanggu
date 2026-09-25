@@ -1,0 +1,73 @@
+{
+  "id": "yn_jingzhen",
+  "name": "景真八角亭",
+  "subject": "景真八角亭现存戒堂",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 景真八角亭现存戒堂.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 屋面为暗褐木瓦与局部赭色装饰，层叠尖顶有旧金黄细饰。 砖砌亭身为赭红棕色，基座有现存绿白浅色条带；保留照片材料分区。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
+  "input_images": [
+    "assets/generated/yn_jingzhen.png",
+    "assets/references/yn_jingzhen-reference-thumb.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "屋面为暗褐木瓦与局部赭色装饰，层叠尖顶有旧金黄细饰。",
+    "砖砌亭身为赭红棕色，基座有现存绿白浅色条带；保留照片材料分区。"
+  ],
+  "references": [
+    {
+      "id": "yn_jingzhen",
+      "title": "Jingzhen Octagonal Pavilion2.jpg",
+      "file": "assets/references/yn_jingzhen-reference-thumb.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jingzhen_Octagonal_Pavilion2.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Jingzhen_Octagonal_Pavilion2.jpg/960px-Jingzhen_Octagonal_Pavilion2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "爵士鼓手",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "未知",
+      "description": "景真八角亭1--爵士鼓手",
+      "bytes": 223915,
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jingzhen_Octagonal_Pavilion2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Jingzhen_Octagonal_Pavilion2.jpg/960px-Jingzhen_Octagonal_Pavilion2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/yn_jingzhen.json",
+  "output": "assets/colored/yn_jingzhen.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 景真八角亭现存戒堂.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 屋面为暗褐木瓦与局部赭色装饰，层叠尖顶有旧金黄细饰。 砖砌亭身为赭红棕色，基座有现存绿白浅色条带；保留照片材料分区。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
+      "reference_files": [
+        "assets/generated/yn_jingzhen.png",
+        "assets/references/yn_jingzhen-reference-thumb.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-16T16:56:30.636Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:57:12.414Z",
+      "saved_at": "2026-09-16T16:57:12.739Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3d1c5a90-ce84-40e4-9a1d-e8747e4a6c23.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bbe86c1808c033ba0e92bb09e506c96a3fbd3f15059224c1c9b9954fc8faf070",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3d1c5a90-ce84-40e4-9a1d-e8747e4a6c23.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3d1c5a90-ce84-40e4-9a1d-e8747e4a6c23.png"
+}

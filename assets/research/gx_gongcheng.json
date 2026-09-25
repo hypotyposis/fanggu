@@ -1,0 +1,135 @@
+{
+  "id": "gx_gongcheng",
+  "subject": "恭城文庙大成殿",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "file": "assets/references/gx_gongcheng-hall-photo.jpg",
+      "sha256": "3380c812de6c516aaf5147d53c092e1ee0f1329499b1dee4bebfd51a3d60b754",
+      "id": "gx_gongcheng"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gx_gongcheng-hall-photo.jpg"
+  ],
+  "source_note": "第六批国保名录将恭城古建筑群列为明至清。1700仅是明清现存主体的近似排序点；创建、历代重修和今殿构件年代不混作一个精确年份。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 恭城文庙大成殿.\nLandscape 1536x1024. Draw ONLY Gongcheng Confucian Temple's THREE-bay Dacheng Hall shown in the photograph. Two tiers of hip-and-gable eaves, ceramic figurine ridge, stone porch columns and elevated stone platform. Complete the hall silhouette; remove the foreground incense shelter and vessels, side wings, trees and all lettering. No additional halls.\nStructure checkpoints: 三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。",
+  "generated_file": "assets/generated/gx_gongcheng.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。"
+  ],
+  "caption": [
+    "恭城文庙大成殿 · 线稿",
+    "明清 · 明清"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:43:27.508Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 恭城文庙大成殿.\nLandscape 1536x1024. Draw ONLY Gongcheng Confucian Temple's THREE-bay Dacheng Hall shown in the photograph. Two tiers of hip-and-gable eaves, ceramic figurine ridge, stone porch columns and elevated stone platform. Complete the hall silhouette; remove the foreground incense shelter and vessels, side wings, trees and all lettering. No additional halls.\nStructure checkpoints: 三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gx_gongcheng-hall-photo.jpg"
+      ],
+      "received_at": "2026-09-17T12:44:52.555Z",
+      "saved_at": "2026-09-17T12:44:52.741Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-63da8bd1-091e-492e-9ac5-79e98f2b47c7.png",
+      "original_file": "assets/generated/gx_gongcheng.png"
+    }
+  ],
+  "generated_original": "assets/generated/gx_gongcheng.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "32ca8386357f4c9d82cdf4f9bd5de0e48a8e55449bd3184ac1e2eebeaa8b4de2",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "文化和旅游部：第六批国保名单，恭城古建筑群（明至清）",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "恭城文庙大成殿",
+    "short": "恭城文庙",
+    "sub": "重檐歇山 · 孔庙主殿",
+    "place": "广西恭城 · 西山",
+    "placeKey": "gx_gongcheng",
+    "types": [
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清营建 · 后世修护",
+    "year": 1700,
+    "yearApprox": true,
+    "yearLabel": "明清",
+    "yearNote": "第六批国保名录将恭城古建筑群列为明至清。1700仅是明清现存主体的近似排序点；创建、历代重修和今殿构件年代不混作一个精确年份。",
+    "lede": "大成殿立在高台上，重檐与陶塑屋脊将视线向上牵引。图版只取文庙主殿，不把香炉亭、庑房或相邻武庙并入。",
+    "history": [
+      {
+        "title": "文化和旅游部：第六批国保名单，恭城古建筑群（明至清）",
+        "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+      }
+    ],
+    "protection": {
+      "batch": 6,
+      "unitName": "恭城古建筑群",
+      "relation": "part",
+      "locator": "第六批名单 · 古建筑 · 序号691 / Ⅲ－394 · 恭城古建筑群",
+      "note": "图版取恭城文庙大成殿，不代表同批古建筑群的全部建筑。"
+    },
+    "id": "gx_gongcheng",
+    "subject": "恭城文庙大成殿",
+    "checkpoint": "三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。",
+    "material": "橙黄釉瓦，陶塑花脊绿蓝红，深红木柱与门框，灰石檐柱、灰石台基，深灰门洞；不依清代主题色统一刷蓝。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "恭城文庙大成殿 · 线稿",
+      "明清 · 明清"
+    ],
+    "facts": [
+      "<b>主体</b> 恭城文庙大成殿。",
+      "<b>年代</b> 第六批国保名录将恭城古建筑群列为明至清。1700仅是明清现存主体的近似排序点；创建、历代重修和今殿构件年代不混作一个精确年份。",
+      "<b>图版范围</b> 三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。"
+    ]
+  },
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "file": "assets/references/gx_gongcheng-hall-photo.jpg",
+      "sha256": "3380c812de6c516aaf5147d53c092e1ee0f1329499b1dee4bebfd51a3d60b754",
+      "id": "gx_gongcheng",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg"
+    }
+  ],
+  "additional_sources": []
+}

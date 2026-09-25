@@ -1,0 +1,90 @@
+{
+  "id": "hu_zhanggu",
+  "name": "张谷英村古建筑群",
+  "subject": "张谷英村明清民居屋面群局部",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 张谷英村明清民居屋面群局部.\nPresent material observations: 灰黑旧瓦、灰白粉墙、局部赭色砖墙，暗褐木门；普通江南民居现状，不铺黄琉璃瓦或统一刷成新白。\nKeep EXACTLY the line drawing's selected subject and crop: 按现状照片保留相连民居屋面、硬山山墙和可见天井，采用高位斜视；明确局部，不编造全村鸟瞰布局或一座孤立宫殿。",
+  "input_images": [
+    "assets/generated/hu_zhanggu.png",
+    "assets/references/hu_zhanggu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰黑旧瓦、灰白粉墙、局部赭色砖墙，暗褐木门；普通江南民居现状，不铺黄琉璃瓦或统一刷成新白。"
+  ],
+  "references": [
+    {
+      "id": "hu_zhanggu",
+      "file": "assets/references/hu_zhanggu-photo.jpg",
+      "sha256": "5b7a4c53e2b1ebf35f20f5788885bed9e310969a357b167dae0c55e9ba184aa6",
+      "title": "File:张谷英村落.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg/1280px-%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg",
+      "author": "SquirrelLee",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2010-06-27 10:33:02"
+    }
+  ],
+  "line_source": "assets/generated/hu_zhanggu.png",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg/1280px-%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg",
+  "author": "SquirrelLee",
+  "license": "CC BY-SA 3.0",
+  "original_research": "assets/research/hu_zhanggu.json",
+  "output": "assets/colored/hu_zhanggu.png",
+  "generated_original": "assets/color-studies/v1/hu_zhanggu-colored.png",
+  "original_file": "assets/color-studies/v1/hu_zhanggu-colored.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "historical_sources": [
+    {
+      "title": "湖南省文物局：张谷英村明清民居与第五批国保",
+      "url": "https://wwj.hunan.gov.cn/wwj/c100310/c100314/201503/t20150309_10483030.html"
+    },
+    {
+      "title": "岳阳市政府：当大门、王家塅、上新屋多期建筑群",
+      "url": "https://www.yueyang.gov.cn/mobile/23215/23220/content_202228.html"
+    },
+    {
+      "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
+      "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+    }
+  ],
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T13:24:18.674Z",
+      "completed_at": "2026-09-17T13:26:39.982Z",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 张谷英村明清民居屋面群局部.\nPresent material observations: 灰黑旧瓦、灰白粉墙、局部赭色砖墙，暗褐木门；普通江南民居现状，不铺黄琉璃瓦或统一刷成新白。\nKeep EXACTLY the line drawing's selected subject and crop: 按现状照片保留相连民居屋面、硬山山墙和可见天井，采用高位斜视；明确局部，不编造全村鸟瞰布局或一座孤立宫殿。",
+      "input_images": [
+        "assets/generated/hu_zhanggu.png",
+        "assets/references/hu_zhanggu-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/color-studies/v1/hu_zhanggu-colored.png",
+      "received_at": "2026-09-17T13:26:39.982Z",
+      "saved_at": "2026-09-17T13:26:40.127Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-ee3df8f0-62e0-4890-ad16-feac60ec7ecf.png"
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "002e111ce160078de486f2b86090d3b4e2ca391d2b379ee7ce3842a89f452f2d",
+    "seeds": []
+  }
+}

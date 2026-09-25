@@ -1,0 +1,133 @@
+{
+  "id": "hb_dajingmen",
+  "name": "大境门券门与相接短墙段",
+  "subject": "大境门券门与相接短墙段",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 大境门券门与相接短墙段\nMATERIAL OBSERVATIONS: 灰褐色城砖、浅灰条石基础、米灰色匾额，不描字；券门内侧略暗褐灰。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+  "input_images": [
+    "assets/generated/hb_dajingmen.png",
+    "assets/references/hb_dajingmen-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰褐色城砖、浅灰条石基础、米灰色匾额，不描字；券门内侧略暗褐灰。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_dajingmen-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dajingmen_(20171008103225).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Dajingmen_%2820171008103225%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-10-08 10:32:25",
+      "sha256": "d016c13fcd413253ce2aeafae487f6aab7e4d7af0bb03d2395d1fff290dae8f1"
+    }
+  ],
+  "original_research": "assets/research/hb_dajingmen.json",
+  "output": "assets/colored/hb_dajingmen.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 大境门券门与相接短墙段\nMATERIAL OBSERVATIONS: 灰褐色城砖、浅灰条石基础、米灰色匾额，不描字；券门内侧略暗褐灰。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_dajingmen.png",
+        "assets/references/hb_dajingmen-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T23:40:58.743837+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:42:39.418299+08:00",
+      "saved_at": "2026-09-17T23:42:39.474630+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-5f53c39a-f38c-464c-9d31-0697379e366b.png",
+      "output": "assets/colored/hb_dajingmen.png"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局：长城脚下是我家",
+      "url": "https://wenwu.hebei.gov.cn/system/2025/10/31/030363576.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    },
+    {
+      "title": "北京市文物局：第七批长城与第五批长城合并关系",
+      "url": "https://wwj.beijing.gov.cn/bjww/362771/362779/dqpqgzdwwbhdw/523583/index.html"
+    }
+  ],
+  "inputs_viewed": true,
+  "caption": [
+    "张家口 · 大境门与短墙段",
+    "清顺治元年（1644）建门"
+  ],
+  "site_recommendation": {
+    "id": "hb_dajingmen",
+    "name": "大境门",
+    "short": "大境门",
+    "sub": "张家口 · 券门与短墙段",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清顺治元年开辟建门",
+    "year": 1644,
+    "yearNote": "1644对应大境门开辟建门；相接墙段属于跨时代长城遗存，本图不将整段山地城墙一并归为1644年建造。",
+    "place": "河北张家口 · 桥西",
+    "placeKey": "hb_zhangjiakou",
+    "types": [
+      "wall",
+      "gate"
+    ],
+    "lede": "没有木楼的砖券门直接嵌入城墙，城垛在门洞上方抬高。大境门既是长城的口门，也见证了张家口与草原间往来贸易。",
+    "facts": [
+      "清顺治元年（1644）正式开辟建门，之前墙体与通道另有沿革。",
+      "图版取一道完整券门和两侧短墙段，不展示全线山地长城。",
+      "2013年第七批将大境门纳入长城，归入第五批国保长城项目。"
+    ],
+    "legacyNames": [
+      "张家口大境门",
+      "大境门长城"
+    ],
+    "caption": [
+      "张家口 · 大境门与短墙段",
+      "清顺治元年（1644）建门"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-5f53c39a-f38c-464c-9d31-0697379e366b.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a5d9b9f98949ef920c5c53f79d2a42190662ee2bc77f7620429bf9c5d40b4987",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "note": "提示词要求白底；工具实际返回原生alpha，保留原件与alpha。"
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.945582+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  }
+}

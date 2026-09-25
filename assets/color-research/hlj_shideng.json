@@ -1,0 +1,74 @@
+{
+  "id": "hlj_shideng",
+  "name": "兴隆寺渤海石灯幢",
+  "subject": "兴隆寺渤海石灯幢",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hlj_shideng.png",
+    "assets/references/hlj_shideng-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nXinglong Temple Balhae stone lantern Ning'an: lock the cylindrical shaft, lotus supports, octagonal rectangular-window lantern chamber, single pavilion stone roof and short ringed finial. Actual aged dark-grey basalt, shaft weathered pale grey streaks and patches, small restrained yellow-green lichen on roof and lotus/base, NOT green-glazed tiles, wood or gilding. Preserve actual roughly6m stone object, no temple attached. REAL air openings in lamp chamber front rectangular windows and small holes are pureWHITE, not opaque dark materials. Base niche carvings are shallow STONE RELIEFS opaque grey, NOT holes. Entire exterior flatWHITE #FFFFFF, full portrait1024x1536.",
+  "material_observations": [
+    "灰色玄武岩石构件，柱身有浅灰风化斑。",
+    "盖顶、莲座和基座有局部黄绿地衣，不是琉璃绿瓦或彩绘。",
+    "灯室矩形窗及小孔为透空，须弥座壸门为浅浮雕实体。"
+  ],
+  "references": [
+    {
+      "id": "hlj_shideng",
+      "file": "assets/references/hlj_shideng-photo.jpg",
+      "page": "https://www.duitang.com/blog/?id=1111035153",
+      "url": "https://a-ssl.dtstatic.com/uploads/item/201907/31/20190731212746_AaXdx.jpeg",
+      "author": "麦钟（收藏发布者；原摄影者未标）",
+      "license": "未注明；不宣称开放授权",
+      "date": "2019-07-31（收藏发布日期）",
+      "source_page": "https://www.duitang.com/blog/?id=1111035153",
+      "image_url": "https://a-ssl.dtstatic.com/uploads/item/201907/31/20190731212746_AaXdx.jpeg"
+    }
+  ],
+  "original_research": "assets/research/hlj_shideng.json",
+  "output": "assets/colored/hlj_shideng.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "长石柱、莲座、八角灯室、单层亭式石盖及短刹完整；不附带寺院。",
+      "设色现貌材料区分已目检；外部白底与记录透空点已由固定脚本处理。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。",
+      "两矩形窗显露白色远端透空；上部三角孔为灯室内部暗腔，保留暗部，不强制去为白底。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dbb505081ab76ee157be65fec4ed97b49a0a53498660c094f32987d2f8a39a59",
+    "seeds": [
+      [
+        446,
+        498
+      ],
+      [
+        557,
+        496
+      ]
+    ]
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-512670b6-1340-4f68-aa6f-9672ebc40c5d.png",
+  "width": 1024,
+  "height": 1536,
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

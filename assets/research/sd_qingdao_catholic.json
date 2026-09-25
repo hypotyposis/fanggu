@@ -1,0 +1,91 @@
+{
+  "id": "sd_qingdao_catholic",
+  "subject": "青岛天主教堂西立面",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:St_Michaels_Cathedral_West_Front.png",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/St_Michaels_Cathedral_West_Front.png",
+  "author": "Noraft",
+  "license": "Public domain",
+  "references": [
+    {
+      "id": "sd_qingdao_catholic",
+      "file": "assets/references/sd_qingdao_catholic-photo.png",
+      "page": "https://commons.wikimedia.org/wiki/File:St_Michaels_Cathedral_West_Front.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/St_Michaels_Cathedral_West_Front.png",
+      "author": "Noraft",
+      "license": "Public domain",
+      "date": "2009-04-15",
+      "sha256": "818ac0e757213e11989d5ff2082f0decf54c182510e99918461a3372a274528e"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_qingdao_catholic-photo.png"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依公开实拍绘现存外观；图版为艺术转译，待用户人眼验收。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Complete west facade of St Michael cathedral, Qingdao. Two square bell towers with steep pyramidal roofs and crosses, a central rose window, three arched entrance portals. Preserve the slight three-quarter view and side stair turret. Main twin towers stay equal architectural height; the perspective may show near tower taller. Remove fence, people, lamps and adjacent houses."
+  ],
+  "material_observations": [
+    "黄米色墙、浅灰石基与门框、砖红尖塔顶与屋面、红褐门扇、灰绿窗玻璃。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 青岛天主教堂西立面\nPortrait 1024x1536. Complete west facade of St Michael cathedral, Qingdao. Two square bell towers with steep pyramidal roofs and crosses, a central rose window, three arched entrance portals. Preserve the slight three-quarter view and side stair turret. Main twin towers stay equal architectural height; the perspective may show near tower taller. Remove fence, people, lamps and adjacent houses.",
+  "generated_file": "assets/generated/sd_qingdao_catholic.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 青岛天主教堂西立面\nPortrait 1024x1536. Complete west facade of St Michael cathedral, Qingdao. Two square bell towers with steep pyramidal roofs and crosses, a central rose window, three arched entrance portals. Preserve the slight three-quarter view and side stair turret. Main twin towers stay equal architectural height; the perspective may show near tower taller. Remove fence, people, lamps and adjacent houses.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_qingdao_catholic-photo.png"
+      ],
+      "submitted_at": "2026-09-17T22:32:21.503582+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:35:54.092089+08:00",
+      "saved_at": "2026-09-17T22:35:54.145481+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-e49b3bc1-373d-47b9-8d0d-aa2e82db2efd.png",
+      "output": "assets/generated/sd_qingdao_catholic.png"
+    }
+  ],
+  "caption": [
+    "青岛天主教堂 · 西立面 · 线稿",
+    "双钟塔 · 1934年建成"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-e49b3bc1-373d-47b9-8d0d-aa2e82db2efd.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9bf4f2266a8c13e2adaa5108a0d3c3a6d133ca5b796670720e873739de3ac5d5",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "青岛市文旅局：圣弥厄尔教堂1934年建成",
+      "url": "https://www.qingdao.gov.cn/zwgk/xxgk/whly/gkml/gzxx/202601/t20260126_10481040.shtml",
+      "note": "1934建成，黄墙红瓦双钟塔。"
+    },
+    {
+      "title": "青岛市政府：第六批青岛德国建筑群单体范围",
+      "url": "https://www.qingdao.gov.cn/lslm/zt/whyc/wwzl/202111/t20211126_3877116.shtml",
+      "note": "列天主教堂（1932年动工），浙江路15号；第六批并入第四批青岛德国建筑。"
+    },
+    {
+      "title": "国务院第六批国保合并项目",
+      "url": "https://www.neac.gov.cn/seac/xxgk/200606/1079967.shtml",
+      "note": "合并项目序号95，青岛德国建筑群。"
+    }
+  ]
+}

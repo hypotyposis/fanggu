@@ -1,0 +1,92 @@
+{
+  "id": "sd_yantai_huiguan",
+  "subject": "烟台福建会馆沿街外观",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Fujian_Guild_Hall,_Yantai.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Fujian_Guild_Hall,_Yantai.jpg",
+  "author": "K.Y.K.Z.K.",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "references": [
+    {
+      "id": "sd_yantai_huiguan",
+      "file": "assets/references/sd_yantai_huiguan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Fujian_Guild_Hall,_Yantai.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Fujian_Guild_Hall,_Yantai.jpg",
+      "author": "K.Y.K.Z.K.",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2023-01-02",
+      "sha256": "35c08057697a4d491e805ee907de50baf7c628a6c5f3adb31ea7e7e503459b72"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_yantai_huiguan-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依公开实拍重绘；所绘范围为烟台福建会馆沿街外观。图版为艺术转译，待用户人眼验收。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the complete north street-facing exterior in the photograph: two steep green-tile roof tiers with swallowtail ridges, central gate in a continuous low boundary wall, raised red gable walls at both ends. Preserve this exact exterior composition; do not invent the hidden interior. Remove traffic and railings."
+  ],
+  "material_observations": [
+    "绿灰琉璃瓦、朱红墙面和门扇、浅色石门框与墙边，金黄及彩色脊饰；参考照片2023年，早于2025年修缮。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 烟台福建会馆沿街外观\nLandscape 1536x1024. Draw the complete north street-facing exterior in the photograph: two steep green-tile roof tiers with swallowtail ridges, central gate in a continuous low boundary wall, raised red gable walls at both ends. Preserve this exact exterior composition; do not invent the hidden interior. Remove traffic and railings.",
+  "generated_file": "assets/generated/sd_yantai_huiguan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 烟台福建会馆沿街外观\nLandscape 1536x1024. Draw the complete north street-facing exterior in the photograph: two steep green-tile roof tiers with swallowtail ridges, central gate in a continuous low boundary wall, raised red gable walls at both ends. Preserve this exact exterior composition; do not invent the hidden interior. Remove traffic and railings.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_yantai_huiguan-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T22:30:23.262925+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:32:09.150938+08:00",
+      "saved_at": "2026-09-17T22:32:09.187684+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-474de4f3-2db0-45ad-ae1e-239e881617f8.png",
+      "output": "assets/generated/sd_yantai_huiguan.png"
+    }
+  ],
+  "caption": [
+    "烟台福建会馆 · 沿街外观 · 线稿",
+    "闽南会馆 · 清光绪三十二年（1906）"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-474de4f3-2db0-45ad-ae1e-239e881617f8.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4d0c5c05d63ecb5bf803f03f6eaa894b70ebb5012ec5aeb21d9032105ea12c93",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "烟台市文化和旅游局：烟台福建会馆",
+      "url": "https://www.yantai.gov.cn/art/2025/1/13/art_43277_3235410.html",
+      "note": "1884始建、1906落成。"
+    },
+    {
+      "title": "烟台市文化和旅游局：福建会馆1996年入选国保",
+      "url": "https://www.yantai.gov.cn/art/2023/12/24/art_43277_3168148.html"
+    },
+    {
+      "title": "烟台市文化和旅游局：2025年福建会馆修缮",
+      "url": "https://www.yantai.gov.cn/art/2025/12/4/art_43277_3299835.html",
+      "note": "本批实拍早于此轮修缮，不声称反映修缮后的所有材质色。"
+    }
+  ]
+}

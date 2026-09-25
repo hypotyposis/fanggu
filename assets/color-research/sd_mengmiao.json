@@ -1,0 +1,98 @@
+{
+  "id": "sd_mengmiao",
+  "name": "邹城孟庙亚圣殿",
+  "subject": "邹城孟庙亚圣殿整殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 邹城孟庙亚圣殿整殿.\nMaterial observations: 绿琉璃瓦带灰白风化，外檐浅灰石柱，内部红木柱门、蓝绿彩绘梁枋，台基灰石；不要照搬太和殿黄瓦。\nLandscape 1536x1024. SEVEN-bay Yasheng Hall, main temple sanctuary, with TWO eaves and a hip-and-gable (xieshan) roof. Whole hall from roof corners to raised stone platform and central stairs. Reference 2 shows exterior geometry with trees; reference 3 supplements the coloured beam/bracket zone, NOT a crop target. Keep external stone columns and internal wooden posts distinguished. Blank plaques; do not substitute the Mencius Mansion reception hall.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+  "input_images": [
+    "assets/generated/sd_mengmiao.png",
+    "assets/references/sd_mengmiao-photo.jpg",
+    "assets/references/sd_mengmiao-detail-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "present_material_detail",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "绿琉璃瓦带灰白风化，外檐浅灰石柱，内部红木柱门、蓝绿彩绘梁枋，台基灰石；不要照搬太和殿黄瓦。"
+  ],
+  "references": [
+    {
+      "id": "sd_mengmiao",
+      "file": "assets/references/sd_mengmiao-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_of_Mencius_-_Yasheng_Hall_-_P1050910.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Temple_of_Mencius_-_Yasheng_Hall_-_P1050910.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Temple_of_Mencius_-_Yasheng_Hall_-_P1050910.JPG/960px-Temple_of_Mencius_-_Yasheng_Hall_-_P1050910.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "User:Vmenkov",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2011-01-24",
+      "description": "Yasheng Dian (\"Hall of the Second Sage\", i.e. Mencius), the main sanctuary of  the Temple of Mencius in Zoucheng.",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Temple_of_Mencius_-_Yasheng_Hall_-_P1050910.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Temple_of_Mencius_-_Yasheng_Hall_-_P1050910.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "id": "sd_mengmiao-detail",
+      "file": "assets/references/sd_mengmiao-detail-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E9%82%B9%E5%9F%8E%E5%AD%9F%E5%BA%99%E4%BA%9A%E5%9C%A3%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%82%B9%E5%9F%8E%E5%AD%9F%E5%BA%99%E4%BA%9A%E5%9C%A3%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/%E9%82%B9%E5%9F%8E%E5%AD%9F%E5%BA%99%E4%BA%9A%E5%9C%A3%E6%AE%BF.jpg/960px-%E9%82%B9%E5%9F%8E%E5%AD%9F%E5%BA%99%E4%BA%9A%E5%9C%A3%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Acot一杯茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-08-20 10:29:25",
+      "description": "​邹城孟庙是一座供奉中国儒家代表人物之一孟子的庙宇。孟子被尊称为“亚圣”意为仅次于孔子的圣人。与孔子一样，孟子的学说仍然被后代学者继承发扬。",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%82%B9%E5%9F%8E%E5%AD%9F%E5%BA%99%E4%BA%9A%E5%9C%A3%E6%AE%BF.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/%E9%82%B9%E5%9F%8E%E5%AD%9F%E5%BA%99%E4%BA%9A%E5%9C%A3%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ],
+  "original_research": "assets/research/sd_mengmiao.json",
+  "output": "assets/colored/sd_mengmiao.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 邹城孟庙亚圣殿整殿.\nMaterial observations: 绿琉璃瓦带灰白风化，外檐浅灰石柱，内部红木柱门、蓝绿彩绘梁枋，台基灰石；不要照搬太和殿黄瓦。\nLandscape 1536x1024. SEVEN-bay Yasheng Hall, main temple sanctuary, with TWO eaves and a hip-and-gable (xieshan) roof. Whole hall from roof corners to raised stone platform and central stairs. Reference 2 shows exterior geometry with trees; reference 3 supplements the coloured beam/bracket zone, NOT a crop target. Keep external stone columns and internal wooden posts distinguished. Blank plaques; do not substitute the Mencius Mansion reception hall.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+      "reference_files": [
+        "assets/generated/sd_mengmiao.png",
+        "assets/references/sd_mengmiao-photo.jpg",
+        "assets/references/sd_mengmiao-detail-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-16T17:26:46.736Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:28:53.507Z",
+      "received_at": "2026-09-16T17:28:53.507Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b548fd62-ec03-4b84-882c-a0e418f1e474.png",
+      "saved_at": "2026-09-16T17:28:53.861Z"
+    }
+  ],
+  "inputs_viewed": true,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c982b804ba7b5ca63388135849c19796b848decbc2dc214338cd3b4c0fb04533",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b548fd62-ec03-4b84-882c-a0e418f1e474.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b548fd62-ec03-4b84-882c-a0e418f1e474.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.446Z",
+    "sourceSha256": "c982b804ba7b5ca63388135849c19796b848decbc2dc214338cd3b4c0fb04533",
+    "inputSha256": "e58305a10f47b57a0b5eae6c782dff5154a45ea3f33949e76be86534fc57ee33",
+    "avifSha256": "05d5249bd7d7b6e7d3741fb3957cd29dcf3c35e92cdd1e690abf9435964742ac"
+  }
+}

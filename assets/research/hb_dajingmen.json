@@ -1,0 +1,141 @@
+{
+  "id": "hb_dajingmen",
+  "subject": "大境门券门与相接短墙段",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dajingmen_(20171008103225).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Dajingmen_%2820171008103225%29.jpg",
+  "author": "N509FZ",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "file": "assets/references/hb_dajingmen-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dajingmen_(20171008103225).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Dajingmen_%2820171008103225%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-10-08 10:32:25",
+      "sha256": "d016c13fcd413253ce2aeafae487f6aab7e4d7af0bb03d2395d1fff290dae8f1"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_dajingmen-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete central Dajingmen brick arched gate in Zhangjiakou and SHORT wall ends, not the entire mountain Great Wall. ONE high round-arched gateway, broad rectangular brick wall mass, stepped crenellated parapet with narrow arrow slits, raised central crenellations over the gate, long rectangular blank plaque above the arch. NO roof and NO wooden tower. Show full outer gate mass with base and both short wall ends uncut. Photo is a near frontal view: preserve arch width and height. Remove flags, people, trees and mountains; do not copy the neighboring building seen through the arch. White open air inside arch. No lettering."
+  ],
+  "material_observations": [
+    "灰褐色城砖、浅灰条石基础、米灰色匾额，不描字；券门内侧略暗褐灰。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 大境门券门与相接短墙段\nLandscape 1536x1024. Complete central Dajingmen brick arched gate in Zhangjiakou and SHORT wall ends, not the entire mountain Great Wall. ONE high round-arched gateway, broad rectangular brick wall mass, stepped crenellated parapet with narrow arrow slits, raised central crenellations over the gate, long rectangular blank plaque above the arch. NO roof and NO wooden tower. Show full outer gate mass with base and both short wall ends uncut. Photo is a near frontal view: preserve arch width and height. Remove flags, people, trees and mountains; do not copy the neighboring building seen through the arch. White open air inside arch. No lettering.",
+  "generated_file": "assets/generated/hb_dajingmen.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 大境门券门与相接短墙段\nLandscape 1536x1024. Complete central Dajingmen brick arched gate in Zhangjiakou and SHORT wall ends, not the entire mountain Great Wall. ONE high round-arched gateway, broad rectangular brick wall mass, stepped crenellated parapet with narrow arrow slits, raised central crenellations over the gate, long rectangular blank plaque above the arch. NO roof and NO wooden tower. Show full outer gate mass with base and both short wall ends uncut. Photo is a near frontal view: preserve arch width and height. Remove flags, people, trees and mountains; do not copy the neighboring building seen through the arch. White open air inside arch. No lettering.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_dajingmen-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:31:10.057452+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:35:25.121227+08:00",
+      "saved_at": "2026-09-17T23:35:25.153613+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-f4faaa70-db93-4c39-bfdd-87145c62ef52.png",
+      "output": "assets/generated/hb_dajingmen.png"
+    }
+  ],
+  "caption": [
+    "张家口 · 大境门与短墙段",
+    "清顺治元年（1644）建门"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局：长城脚下是我家",
+      "url": "https://wenwu.hebei.gov.cn/system/2025/10/31/030363576.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    },
+    {
+      "title": "北京市文物局：第七批长城与第五批长城合并关系",
+      "url": "https://wwj.beijing.gov.cn/bjww/362771/362779/dqpqgzdwwbhdw/523583/index.html"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-f4faaa70-db93-4c39-bfdd-87145c62ef52.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7b5f65c5620592f7bbeac809db1e1d1c310a86c02d81f1c8ca0ad3319af2577a",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_dajingmen",
+    "name": "大境门",
+    "short": "大境门",
+    "sub": "张家口 · 券门与短墙段",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清顺治元年开辟建门",
+    "year": 1644,
+    "yearNote": "1644对应大境门开辟建门；相接墙段属于跨时代长城遗存，本图不将整段山地城墙一并归为1644年建造。",
+    "place": "河北张家口 · 桥西",
+    "placeKey": "hb_zhangjiakou",
+    "types": [
+      "wall",
+      "gate"
+    ],
+    "lede": "没有木楼的砖券门直接嵌入城墙，城垛在门洞上方抬高。大境门既是长城的口门，也见证了张家口与草原间往来贸易。",
+    "facts": [
+      "清顺治元年（1644）正式开辟建门，之前墙体与通道另有沿革。",
+      "图版取一道完整券门和两侧短墙段，不展示全线山地长城。",
+      "2013年第七批将大境门纳入长城，归入第五批国保长城项目。"
+    ],
+    "legacyNames": [
+      "张家口大境门",
+      "大境门长城"
+    ],
+    "caption": [
+      "张家口 · 大境门与短墙段",
+      "清顺治元年（1644）建门"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.916235+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_dajingmen-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dajingmen_(20171008103225).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Dajingmen_%2820171008103225%29.jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-10-08 10:32:25",
+      "sha256": "d016c13fcd413253ce2aeafae487f6aab7e4d7af0bb03d2395d1fff290dae8f1",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dajingmen_(20171008103225).jpg"
+    }
+  ]
+}

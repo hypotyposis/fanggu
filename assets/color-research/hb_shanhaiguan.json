@@ -1,0 +1,132 @@
+{
+  "id": "hb_shanhaiguan",
+  "name": "山海关镇东楼及城台",
+  "subject": "山海关镇东楼及城台",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 山海关镇东楼及城台\nMATERIAL OBSERVATIONS: 灰褐砖石城台、灰褐瓦、朱红上层窗壁，蓝绿檐下彩画；匾额不写字。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+  "input_images": [
+    "assets/generated/hb_shanhaiguan.png",
+    "assets/references/hb_shanhaiguan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰褐砖石城台、灰褐瓦、朱红上层窗壁，蓝绿檐下彩画；匾额不写字。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_shanhaiguan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_(6234529540).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_%286234529540%29.jpg",
+      "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2011-10-04 16:03",
+      "sha256": "d773be76d274443d193b0ecf8b0b3f07a68ea2ca9a5f52c4c1b1dbf236ab33cf"
+    }
+  ],
+  "original_research": "assets/research/hb_shanhaiguan.json",
+  "output": "assets/colored/hb_shanhaiguan.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 山海关镇东楼及城台\nMATERIAL OBSERVATIONS: 灰褐砖石城台、灰褐瓦、朱红上层窗壁，蓝绿檐下彩画；匾额不写字。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_shanhaiguan.png",
+        "assets/references/hb_shanhaiguan-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T23:32:20.396487+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:33:08.761942+08:00",
+      "saved_at": "2026-09-17T23:33:08.814313+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-70014c58-2e5e-4594-b02a-6e9db9d6e631.png",
+      "output": "assets/colored/hb_shanhaiguan.png"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局：山海关长城40年",
+      "url": "https://wenwu.hebei.gov.cn/system/2024/05/30/030291598.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "inputs_viewed": true,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-70014c58-2e5e-4594-b02a-6e9db9d6e631.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "110bba764f1bb831114236a4f6a10b95ef47423090ffebf84aed8dbee0d52ae4",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "note": "提示词要求白底；工具实际返回原生alpha，保留原件与alpha。"
+  },
+  "caption": [
+    "山海关 · 镇东楼与城台",
+    "明代箭楼 · 历代及近现代修缮"
+  ],
+  "site_recommendation": {
+    "id": "hb_shanhaiguan",
+    "name": "山海关镇东楼",
+    "short": "镇东楼",
+    "sub": "东门箭楼 · 城台与短墙段",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代建楼 · 近现代维修",
+    "year": 1400,
+    "yearLabel": "明代",
+    "yearApprox": true,
+    "yearNote": "山海卫1381年设立，河北文物局记翌年筑关城；本图绘现存镇东楼与城台，1400仅作明代约略排序，不是木楼确切建年。近现代多次修缮另行说明。",
+    "place": "河北秦皇岛 · 山海关",
+    "placeKey": "hb_shanhaiguan",
+    "types": [
+      "wall",
+      "pavilion"
+    ],
+    "lede": "高大的城台托起两重檐箭楼，一道券门贯穿关城。镇东楼的横向展开，把山海之间的关隘凝成了最熟悉的轮廓。",
+    "facts": [
+      "图版取东门镇东楼、城台及两翼短墙段，不绘整座关城或老龙头。",
+      "关城兴筑与现存楼体修缮分别记载，年表以明代约略定位。",
+      "楼与相邻城墙在1978年以后持续修缮，镇东楼1998年曾进行大修。"
+    ],
+    "legacyNames": [
+      "天下第一关",
+      "山海关东门",
+      "镇东门"
+    ],
+    "caption": [
+      "山海关 · 镇东楼与城台",
+      "明代箭楼 · 历代及近现代修缮"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.580109+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  }
+}

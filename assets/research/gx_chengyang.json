@@ -1,0 +1,142 @@
+{
+  "id": "gx_chengyang",
+  "subject": "程阳永济桥全桥与五座楼亭",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:程阳永济桥1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/程阳永济桥1.jpg/1280px-程阳永济桥1.jpg",
+  "author": "三猎",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gx_chengyang-full-photo.jpg"
+  ],
+  "source_note": "沿《三江文史资料》第七辑取1924竣工；1911倡修或1912开工不等于竣工年。桥经历后世维修，图版按实拍现状绘完整五亭全桥。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 程阳永济桥全桥与五座楼亭.\nLandscape 1536x1024. Draw the COMPLETE Chengyang Yongji covered bridge in a long near-side elevation, using the reference to preserve the FIVE timber roof pavilions connected by a continuous covered wooden corridor on boat-shaped stone supports. Central pavilion pyramidal polygonal roof; flanking pavilions and end gabled pavilion roofs remain distinct as photographed. Include both complete ends, do not compress into three pavilions. Remove stairs unrelated to the bridge, crowds, river reflection, plants, mountains and modern village buildings.\nStructure checkpoints: 五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。",
+  "generated_file": "assets/generated/gx_chengyang.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。"
+  ],
+  "caption": [
+    "程阳永济桥全桥与五座楼亭 · 线稿",
+    "民国 · 1924竣工"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:34:28.585Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 程阳永济桥全桥与五座楼亭.\nLandscape 1536x1024. Draw the COMPLETE Chengyang Yongji covered bridge in a long near-side elevation, using the reference to preserve the FIVE timber roof pavilions connected by a continuous covered wooden corridor on boat-shaped stone supports. Central pavilion pyramidal polygonal roof; flanking pavilions and end gabled pavilion roofs remain distinct as photographed. Include both complete ends, do not compress into three pavilions. Remove stairs unrelated to the bridge, crowds, river reflection, plants, mountains and modern village buildings.\nStructure checkpoints: 五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gx_chengyang-full-photo.jpg"
+      ],
+      "received_at": "2026-09-17T12:37:29.129Z",
+      "saved_at": "2026-09-17T12:41:14.870Z",
+      "original_file": "assets/generated/gx_chengyang.png",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d0f7f60d-25d7-4c43-94b3-f225f9e6055b.png"
+    }
+  ],
+  "generated_original": "assets/generated/gx_chengyang.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6364708fe79bb2be0f8471780449037de68f6b9bc48a8a748e24b25640600870",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gx_chengyang",
+      "file": "assets/references/gx_chengyang-full-photo.jpg",
+      "sha256": "69ecc1f89b1407214963ea43f0732c783f03087260999b95d03f93940bb1ee1e",
+      "page": "https://commons.wikimedia.org/wiki/File:程阳永济桥1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/程阳永济桥1.jpg/1280px-程阳永济桥1.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "三江县政协《三江文史资料》第七辑：程阳桥倡修与1924竣工",
+      "url": "https://lzzx.liuzhou.gov.cn/liuzhouwenshi/wenshi_xianqu/201103/P020120928539508525402.pdf"
+    },
+    {
+      "title": "柳州市民宗委：程阳八寨侗寨与风雨桥",
+      "url": "https://mzw.liuzhou.gov.cn/ztzl/cjqgmztjjbsfs/mztscz/202210/t20221025_3160843.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "name": "程阳永济桥",
+    "short": "程阳桥",
+    "sub": "侗族风雨桥 · 五亭木廊",
+    "place": "广西三江 · 程阳",
+    "placeKey": "gx_sanjiang",
+    "types": [
+      "bridge",
+      "pavilion"
+    ],
+    "dyn": "modern",
+    "tag": "民国",
+    "era": "20世纪初营建",
+    "year": 1924,
+    "yearLabel": "1924竣工",
+    "yearNote": "沿《三江文史资料》第七辑取1924竣工；1911倡修或1912开工不等于竣工年。桥经历后世维修，图版按实拍现状绘完整五亭全桥。",
+    "lede": "五座楼亭沿连续木廊展开，石墩把长桥托在河面之上。它既是通路，也是遮雨、停留和相聚的地方。",
+    "history": [
+      {
+        "title": "三江县政协《三江文史资料》第七辑：程阳桥倡修与1924竣工",
+        "url": "https://lzzx.liuzhou.gov.cn/liuzhouwenshi/wenshi_xianqu/201103/P020120928539508525402.pdf"
+      },
+      {
+        "title": "柳州市民宗委：程阳八寨侗寨与风雨桥",
+        "url": "https://mzw.liuzhou.gov.cn/ztzl/cjqgmztjjbsfs/mztscz/202210/t20221025_3160843.shtml"
+      }
+    ],
+    "protection": {
+      "batch": 2,
+      "unitName": "程阳永济桥",
+      "relation": "unit",
+      "locator": "PDF 第24页 · 程阳永济桥"
+    },
+    "id": "gx_chengyang",
+    "subject": "程阳永济桥全桥与五座楼亭",
+    "checkpoint": "五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。",
+    "material": "深灰木廊与灰褐立柱、灰黑瓦面，石墩淡灰、少量塔顶黄绿装饰；没有红色景观灯覆盖。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "程阳永济桥全桥与五座楼亭 · 线稿",
+      "民国 · 1924竣工"
+    ],
+    "facts": [
+      "<b>主体</b> 程阳永济桥全桥与五座楼亭。",
+      "<b>年代</b> 沿《三江文史资料》第七辑取1924竣工；1911倡修或1912开工不等于竣工年。桥经历后世维修，图版按实拍现状绘完整五亭全桥。",
+      "<b>图版范围</b> 五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "gx_chengyang",
+      "file": "assets/references/gx_chengyang-full-photo.jpg",
+      "sha256": "69ecc1f89b1407214963ea43f0732c783f03087260999b95d03f93940bb1ee1e",
+      "page": "https://commons.wikimedia.org/wiki/File:程阳永济桥1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/程阳永济桥1.jpg/1280px-程阳永济桥1.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:程阳永济桥1.jpg"
+    }
+  ],
+  "additional_sources": []
+}

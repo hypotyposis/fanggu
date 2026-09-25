@@ -1,0 +1,135 @@
+{
+  "id": "gx_dashi",
+  "name": "合浦大士阁",
+  "subject": "合浦永安大士阁前阁及相连后阁",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 合浦永安大士阁前阁及相连后阁\nPRESENT MATERIAL OBSERVATIONS: 旧木柱红褐，瓦面灰褐，檐口瓦当鲜蓝、梁枋青绿蓝与少量黄，墙台灰石；不复制香炉红色。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
+  "input_images": [
+    "assets/generated/gx_dashi.png",
+    "assets/references/gx_dashi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "旧木柱红褐，瓦面灰褐，檐口瓦当鲜蓝、梁枋青绿蓝与少量黄，墙台灰石；不复制香炉红色。"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dashi_Pavilion.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Dashi_Pavilion.jpg/1280px-Dashi_Pavilion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Huanghsindon",
+  "license": "CC BY-SA 4.0",
+  "original_research": "assets/research/gx_dashi.json",
+  "output": "assets/colored/gx_dashi.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:41:51.337Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 合浦永安大士阁前阁及相连后阁\nPRESENT MATERIAL OBSERVATIONS: 旧木柱红褐，瓦面灰褐，檐口瓦当鲜蓝、梁枋青绿蓝与少量黄，墙台灰石；不复制香炉红色。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
+      "reference_files": [
+        "assets/generated/gx_dashi.png",
+        "assets/references/gx_dashi-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:42:39.500Z",
+      "saved_at": "2026-09-17T12:42:39.693Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-183c6b6b-6ae7-4324-baa8-c6022e7e060a.png",
+      "original_file": "assets/color-studies/v1/gx_dashi-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gx_dashi-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d6fcc7b2aa22f70752eaf4727ab2135c0d05b89d051b25c3351c89d7b6cc8882",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gx_dashi",
+      "file": "assets/references/gx_dashi-photo.jpg",
+      "sha256": "3c0960f7432fcce30b6736fa0c8c1d86e75d13aa0770eba3bd30b74a1e102fc5",
+      "title": "File:Dashi Pavilion.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Dashi_Pavilion.jpg/1280px-Dashi_Pavilion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Dashi_Pavilion.jpg",
+      "author": "Huanghsindon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "广西政府历史沿革：明代合浦大士阁与容县真武阁",
+      "url": "https://www.gxzf.gov.cn/html/mlgxi/gxrw/lsyg_29590/t20880492.shtml"
+    },
+    {
+      "title": "国务院公报第三批国保名单：大士阁，明，广西合浦",
+      "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+    }
+  ],
+  "site_recommendation": {
+    "name": "合浦永安大士阁",
+    "short": "大士阁",
+    "sub": "前低后高 · 相连木阁",
+    "place": "广西合浦 · 永安",
+    "placeKey": "gx_hepu_yongan",
+    "types": [
+      "pavilion"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代 · 确年未定",
+    "year": 1500,
+    "yearApprox": true,
+    "yearLabel": "明代",
+    "yearNote": "第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。",
+    "lede": "前阁低、后阁高，屋面逐次抬起，开放木柱之间能看到内部梁架。合浦永安的小阁，以相连体量和木构关系留下鲜明轮廓。",
+    "history": [
+      {
+        "title": "广西政府历史沿革：明代合浦大士阁与容县真武阁",
+        "url": "https://www.gxzf.gov.cn/html/mlgxi/gxrw/lsyg_29590/t20880492.shtml"
+      },
+      {
+        "title": "国务院公报第三批国保名单：大士阁，明，广西合浦",
+        "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+      }
+    ],
+    "protection": {
+      "batch": 3,
+      "unitName": "大士阁",
+      "relation": "unit",
+      "locator": "PDF 第13页（公报109页）· 总序号103 / 古建筑51 · 大士阁 · 合浦县"
+    },
+    "id": "gx_dashi",
+    "subject": "合浦永安大士阁前阁及相连后阁",
+    "checkpoint": "前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。",
+    "material": "旧木柱红褐，瓦面灰褐，檐口瓦当鲜蓝、梁枋青绿蓝与少量黄，墙台灰石；不复制香炉红色。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "合浦永安大士阁前阁及相连后阁 · 线稿",
+      "明 · 明代"
+    ],
+    "facts": [
+      "<b>主体</b> 合浦永安大士阁前阁及相连后阁。",
+      "<b>年代</b> 第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。",
+      "<b>图版范围</b> 前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。"
+    ]
+  },
+  "source_note": "第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gx_dashi-colored.png",
+  "line_source": "assets/generated/gx_dashi.png"
+}

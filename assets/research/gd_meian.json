@@ -1,0 +1,156 @@
+{
+  "id": "gd_meian",
+  "subject": "梅庵大雄宝殿完整殿体",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "author": "Haier7917",
+  "license": "CC BY-SA 3.0",
+  "references": [
+    {
+      "title": "File:肇庆梅庵大殿.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG",
+      "author": "Haier7917",
+      "license": "CC BY-SA 3.0",
+      "file": "assets/references/gd_meian-photo.jpg",
+      "sha256": "6f92f574905bb57809e89ba8177cf05497a9be77d7a6f10479b2ded6bf5a9aa9",
+      "id": "gd_meian",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "page": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml",
+      "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa/images/0e7bb3495caf4732a75f5d3da3c1bfb2.jpg",
+      "author": "广东省文物局（网页出处；摄影者未标明）",
+      "license": "未标明再利用许可；仅本地形制参考，不随 Git 交付",
+      "file": "assets/references/gd_meian-full-photo.jpg",
+      "sha256": "4a5a67bce5915bb60f78d3d22f966ced1cec238cf56f6ff43504bc2047b8d3ed",
+      "id": "gd_meian"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gd_meian-photo.jpg",
+    "assets/references/gd_meian-full-photo.jpg"
+  ],
+  "source_note": "梅庵创建于996；1000仅为宋代遗构的近似排序点，不认定现存殿每一构件同年完工。大雄宝殿保留宋代木构特征，屋顶经后世修缮改为硬山，图版按现状。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 梅庵大雄宝殿完整殿体.\nLandscape 1536x1024. Draw the existing Mei'an main hall, FIVE bays, low HARD-GABLED tiled roof (not a hip-and-gable roof), wooden columns and bracketed eaves, complete front roof ends and modest base. Use both photographs for the same hall: no invention of neighboring structures. Remove incense furnace, trees, people and all lettering. Do not restore an earlier roof form.\nStructure checkpoints: 现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。",
+  "generated_file": "assets/generated/gd_meian.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。"
+  ],
+  "caption": [
+    "梅庵大雄宝殿完整殿体 · 线稿",
+    "宋 · 北宋"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:43:27.508Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 梅庵大雄宝殿完整殿体.\nLandscape 1536x1024. Draw the existing Mei'an main hall, FIVE bays, low HARD-GABLED tiled roof (not a hip-and-gable roof), wooden columns and bracketed eaves, complete front roof ends and modest base. Use both photographs for the same hall: no invention of neighboring structures. Remove incense furnace, trees, people and all lettering. Do not restore an earlier roof form.\nStructure checkpoints: 现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_meian-photo.jpg",
+        "assets/references/gd_meian-full-photo.jpg"
+      ],
+      "received_at": "2026-09-17T12:44:11.622Z",
+      "saved_at": "2026-09-17T12:44:11.798Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-fbfba6b6-902a-4414-be40-ecfc7f0b1d60.png",
+      "original_file": "assets/generated/gd_meian.png"
+    }
+  ],
+  "generated_original": "assets/generated/gd_meian.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "db2ae5aab32c7a1f41f970ce1cb99d0a709dce139ed29a79e4d7f50398d310f5",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "广东省文物局：梅庵（996创建、宋代大雄宝殿与后世屋顶改造）",
+      "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "name": "肇庆梅庵大雄宝殿",
+    "short": "梅庵",
+    "sub": "宋代木架 · 现状硬山顶",
+    "place": "广东肇庆 · 端州",
+    "placeKey": "gd_zhaoqing",
+    "types": [
+      "hall"
+    ],
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋遗构 · 后世修护",
+    "year": 1000,
+    "yearApprox": true,
+    "yearLabel": "北宋",
+    "yearNote": "梅庵创建于996；1000仅为宋代遗构的近似排序点，不认定现存殿每一构件同年完工。大雄宝殿保留宋代木构特征，屋顶经后世修缮改为硬山，图版按现状。",
+    "lede": "五开间大殿的木架保留宋代建筑特征，屋面却留下后世修缮的改变。小庵不以规模取胜，值得看的正是木构与历史层累。",
+    "history": [
+      {
+        "title": "广东省文物局：梅庵（996创建、宋代大雄宝殿与后世屋顶改造）",
+        "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml"
+      }
+    ],
+    "protection": {
+      "batch": 4,
+      "unitName": "梅庵",
+      "relation": "part",
+      "locator": "PDF 第24页 · 梅庵"
+    },
+    "id": "gd_meian",
+    "subject": "梅庵大雄宝殿完整殿体",
+    "checkpoint": "现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。",
+    "material": "灰褐瓦、旧木梁柱深褐与局部暗红，墙面灰白、台基灰石；不涂金屋顶。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "梅庵大雄宝殿完整殿体 · 线稿",
+      "宋 · 北宋"
+    ],
+    "facts": [
+      "<b>主体</b> 梅庵大雄宝殿完整殿体。",
+      "<b>年代</b> 梅庵创建于996；1000仅为宋代遗构的近似排序点，不认定现存殿每一构件同年完工。大雄宝殿保留宋代木构特征，屋顶经后世修缮改为硬山，图版按现状。",
+      "<b>图版范围</b> 现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。"
+    ]
+  },
+  "sources": [
+    {
+      "title": "File:肇庆梅庵大殿.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG",
+      "author": "Haier7917",
+      "license": "CC BY-SA 3.0",
+      "file": "assets/references/gd_meian-photo.jpg",
+      "sha256": "6f92f574905bb57809e89ba8177cf05497a9be77d7a6f10479b2ded6bf5a9aa9",
+      "id": "gd_meian",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG"
+    },
+    {
+      "page": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml",
+      "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa/images/0e7bb3495caf4732a75f5d3da3c1bfb2.jpg",
+      "author": "广东省文物局（网页出处；摄影者未标明）",
+      "license": "未标明再利用许可；仅本地形制参考，不随 Git 交付",
+      "file": "assets/references/gd_meian-full-photo.jpg",
+      "sha256": "4a5a67bce5915bb60f78d3d22f966ced1cec238cf56f6ff43504bc2047b8d3ed",
+      "id": "gd_meian",
+      "source_page": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml"
+    }
+  ],
+  "additional_sources": []
+}

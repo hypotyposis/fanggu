@@ -1,0 +1,93 @@
+{
+  "id": "sd_jiuding",
+  "name": "济南九顶塔整塔",
+  "subject": "济南九顶塔整塔",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 济南九顶塔整塔\nMATERIAL OBSERVATIONS: 灰褐砖、局部土黄灰泥残留，檐口较深灰，门内朱红门扇与暗凹部。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+  "input_images": [
+    "assets/generated/sd_jiuding.png",
+    "assets/references/sd_jiuding-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰褐砖、局部土黄灰泥残留，檐口较深灰，门内朱红门扇与暗凹部。"
+  ],
+  "references": [
+    {
+      "id": "sd_jiuding",
+      "file": "assets/references/sd_jiuding-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jiudingta_2008_07_15_1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Jiudingta_2008_07_15_1.jpg",
+      "author": "Rolfmueller",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2008-07-15",
+      "sha256": "d9b4cfa444da34fc23927d4a941487a364f93872d702697fdc971f13bdfd93ec"
+    }
+  ],
+  "original_research": "assets/research/sd_jiuding.json",
+  "output": "assets/colored/sd_jiuding.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 济南九顶塔整塔\nMATERIAL OBSERVATIONS: 灰褐砖、局部土黄灰泥残留，檐口较深灰，门内朱红门扇与暗凹部。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/sd_jiuding.png",
+        "assets/references/sd_jiuding-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T22:32:21.476344+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:35:42.893857+08:00",
+      "saved_at": "2026-09-17T22:35:42.957617+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-2c892155-3234-4164-8f63-2bcd4966cdbe.png",
+      "output": "assets/colored/sd_jiuding.png"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-2c892155-3234-4164-8f63-2bcd4966cdbe.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fd579a0a72a8e15dc64ddfc925418455263fd9bbf5233b6f5768a60b7c05363e",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "济南市政协：九顶塔年代与1962年维修",
+      "url": "https://www.jnzx.gov.cn/folder325/folder450/2020-10-27/109580.html",
+      "note": "唐代遗物；本批不确定确切建年。"
+    },
+    {
+      "title": "济南市南部山区国土空间分区规划",
+      "url": "https://nrp.jinan.gov.cn/cms_files/complat3/48724/attach/20255/84eb65d4e5dc476cbe1434583ff4c3d2.pdf",
+      "note": "正文第58页、第94条：千佛崖造像包括龙虎塔与九顶塔。"
+    },
+    {
+      "title": "山东省文旅厅国保保护范围表",
+      "url": "https://whhly.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=7dfd1c59d14947558ead43458d35e1cf.pdf",
+      "note": "表序号15第三批千佛崖造像，列九顶塔范围；根据官方索引摘要核对。"
+    }
+  ],
+  "inputs_viewed": true,
+  "actual_original_background": {
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "note": "提示词要求不透明纯白底；工具实际返回含原生alpha的PNG。原件完整保留，按既有alpha保留流程处理，不称为白底去除效果。"
+  }
+}

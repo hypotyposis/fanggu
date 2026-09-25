@@ -1,0 +1,146 @@
+{
+  "date": "2026-09-16",
+  "baseline_count": 201,
+  "added_count": 10,
+  "total_count": 211,
+  "initialStatus": "unvisited",
+  "groups": {
+    "北京": [
+      "bj_miaoying",
+      "bj_zhenjue",
+      "bj_zhihua",
+      "bj_lugou",
+      "bj_juyong_yuntai",
+      "bj_changling"
+    ],
+    "天津": [
+      "tj_jizhou_baita",
+      "tj_wenmiao",
+      "tj_guangdonghuiguan",
+      "tj_shijia"
+    ]
+  },
+  "ids": [
+    "bj_miaoying",
+    "bj_zhenjue",
+    "bj_zhihua",
+    "bj_lugou",
+    "bj_juyong_yuntai",
+    "bj_changling",
+    "tj_jizhou_baita",
+    "tj_wenmiao",
+    "tj_guangdonghuiguan",
+    "tj_shijia"
+  ],
+  "review": "paired_artwork_agent_reviewed_user_review_pending",
+  "notes": [
+    "天津文庙为府庙大成殿中部立面与丹陛局部，广东会馆为戏台及藻井局部，石家大院为内院门楼；不冒充全建筑图版。",
+    "年代按所绘主体说明初创、现存、历代修缮和约略排序，所有新条目默认未到访。",
+    "图片、参考照片与原稿独立保存在本地，不随Git交付；逐图JSON保存真实提示词、来源、原件哈希和白底处理种子。"
+  ],
+  "coordinate_sources": [
+    {
+      "placeKey": "tianjin",
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Tianjin_Confucian_Temple",
+      "lat": 39.14,
+      "lon": 117.18,
+      "note": "以文庙附近老城厢为天津市区聚合点，并非广东会馆精确坐标。"
+    },
+    {
+      "placeKey": "yangliuqing",
+      "source_page": "https://commons.wikimedia.org/wiki/Category:Yangliuqing",
+      "lat": 39.1274,
+      "lon": 117.00885,
+      "note": "杨柳青镇聚合点，不宣称为所绘门楼精确坐标。"
+    }
+  ],
+  "records": [
+    {
+      "id": "bj_miaoying",
+      "line": "assets/research/bj_miaoying.json",
+      "color": "assets/color-research/bj_miaoying.json"
+    },
+    {
+      "id": "bj_zhenjue",
+      "line": "assets/research/bj_zhenjue.json",
+      "color": "assets/color-research/bj_zhenjue.json"
+    },
+    {
+      "id": "bj_zhihua",
+      "line": "assets/research/bj_zhihua.json",
+      "color": "assets/color-research/bj_zhihua.json"
+    },
+    {
+      "id": "bj_lugou",
+      "line": "assets/research/bj_lugou.json",
+      "color": "assets/color-research/bj_lugou.json"
+    },
+    {
+      "id": "bj_juyong_yuntai",
+      "line": "assets/research/bj_juyong_yuntai.json",
+      "color": "assets/color-research/bj_juyong_yuntai.json"
+    },
+    {
+      "id": "bj_changling",
+      "line": "assets/research/bj_changling.json",
+      "color": "assets/color-research/bj_changling.json"
+    },
+    {
+      "id": "tj_jizhou_baita",
+      "line": "assets/research/tj_jizhou_baita.json",
+      "color": "assets/color-research/tj_jizhou_baita.json"
+    },
+    {
+      "id": "tj_wenmiao",
+      "line": "assets/research/tj_wenmiao.json",
+      "color": "assets/color-research/tj_wenmiao.json"
+    },
+    {
+      "id": "tj_guangdonghuiguan",
+      "line": "assets/research/tj_guangdonghuiguan.json",
+      "color": "assets/color-research/tj_guangdonghuiguan.json"
+    },
+    {
+      "id": "tj_shijia",
+      "line": "assets/research/tj_shijia.json",
+      "color": "assets/color-research/tj_shijia.json"
+    }
+  ],
+  "verification": {
+    "date": "2026-09-16",
+    "node_tests": {
+      "command": "node --test tests/*.test.cjs",
+      "passed": 48
+    },
+    "transparency_tests": {
+      "command": "python3 -B tests/test_transparency.py",
+      "passed": 9
+    },
+    "diff_check": "git diff --check passed",
+    "line_and_color_alpha": "All ten PNG pairs have alpha range 0..255 and visible subjects.",
+    "color_delivery": {
+      "count": 211,
+      "queue_complete": 208,
+      "queue_pending": 0,
+      "reused": 201,
+      "new": 10,
+      "previously_approved_records_unchanged": 200
+    },
+    "browser": {
+      "name": "Codex In-app Browser",
+      "checks": [
+        "北京十处、天津五处筛选及别名搜索。",
+        "真觉寺详情、刷新及返回恢复北京五塔寺筛选。",
+        "天津文庙390×844窄屏图版、图注和未到访状态。",
+        "设色总览211/211；北京六张、天津四张新AVIF实际加载。",
+        "长陵与广东会馆线稿/透明设色/原件对照及来源署名。"
+      ],
+      "cache_note": "预览过程中旧origin缓存设色清单，使用新的独立origin确认最新211处页面。"
+    },
+    "not_verified": [
+      "用户视觉验收。",
+      "实际生产部署与图片同步。",
+      "本次未重新执行全部触摸打卡、备份导入及多标签页手工流程；相应逻辑自动测试通过。"
+    ]
+  }
+}

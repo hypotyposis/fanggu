@@ -1,0 +1,137 @@
+{
+  "id": "hb_tiangong",
+  "subject": "丰润天宫寺塔整塔",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+  "author": "維基小霸王",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "file": "assets/references/hb_tiangong-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg/1280px-%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "維基小霸王",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2021-02-25 17:22:34",
+      "sha256": "c92691b680ef959805e17543d394c1055f56213f7d0d6d20f11e74946e489740"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_tiangong-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Complete Tiangong Temple pagoda in Fengrun, Tangshan, including full brick base and top cap. Octagonal THIRTEEN-level dense-eave brick pagoda: one tall lower sculpted body with false doorway and carved dragon pilasters, above base/lower eave, then tightly spaced tapering eaves. Follow actual count and uneven spacing from photo. Actual compact finial of stacked rounded stone/brick rings with a small gourd-like top, FOUR supporting chains as visibly attached; preserve real height, do not add a tall metal spire. Preserve base lotus/stepped plinth, full apex, three visible faces. Thin sparse contour abstraction, avoid tracing every brick. Remove trees, low modern fence, memorial plaque, people and background."
+  ],
+  "material_observations": [
+    "灰褐青砖、深灰檐部、砖雕与赭灰塔刹、灰黑链条；照片为偏暖日光，不复制整体金色光照，不添加金顶或红色涂层。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 丰润天宫寺塔整塔\nPortrait 1024x1536. Complete Tiangong Temple pagoda in Fengrun, Tangshan, including full brick base and top cap. Octagonal THIRTEEN-level dense-eave brick pagoda: one tall lower sculpted body with false doorway and carved dragon pilasters, above base/lower eave, then tightly spaced tapering eaves. Follow actual count and uneven spacing from photo. Actual compact finial of stacked rounded stone/brick rings with a small gourd-like top, FOUR supporting chains as visibly attached; preserve real height, do not add a tall metal spire. Preserve base lotus/stepped plinth, full apex, three visible faces. Thin sparse contour abstraction, avoid tracing every brick. Remove trees, low modern fence, memorial plaque, people and background.",
+  "generated_file": "assets/generated/hb_tiangong.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 丰润天宫寺塔整塔\nPortrait 1024x1536. Complete Tiangong Temple pagoda in Fengrun, Tangshan, including full brick base and top cap. Octagonal THIRTEEN-level dense-eave brick pagoda: one tall lower sculpted body with false doorway and carved dragon pilasters, above base/lower eave, then tightly spaced tapering eaves. Follow actual count and uneven spacing from photo. Actual compact finial of stacked rounded stone/brick rings with a small gourd-like top, FOUR supporting chains as visibly attached; preserve real height, do not add a tall metal spire. Preserve base lotus/stepped plinth, full apex, three visible faces. Thin sparse contour abstraction, avoid tracing every brick. Remove trees, low modern fence, memorial plaque, people and background.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_tiangong-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:31:41.601320+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:35:25.116305+08:00",
+      "saved_at": "2026-09-17T23:35:25.150975+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-a3de8044-c519-450b-a82a-f67f8a5a2eec.png",
+      "output": "assets/generated/hb_tiangong.png"
+    }
+  ],
+  "caption": [
+    "天宫寺塔 · 整塔",
+    "八角十三层 · 辽清宁八年（1062）始建"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-a3de8044-c519-450b-a82a-f67f8a5a2eec.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2e66fec23c58ed4e188c6596c5a0a2cc8b956dc75b71293d0884a4f3572d5d77",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_tiangong",
+    "name": "天宫寺塔",
+    "short": "天宫寺塔",
+    "sub": "丰润 · 八角十三层密檐砖塔",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽清宁八年始建 · 后世维修",
+    "year": 1062,
+    "yearNote": "1062为辽代始建纪年；现存塔经过明清及近现代修护，本图按所保存的辽塔形制登记。",
+    "place": "河北唐山 · 丰润",
+    "placeKey": "hb_fengrun",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "高大的底层砖雕托起密集收分的十三层塔檐。天宫寺虽已不存，盘龙倚柱与层叠出檐仍让这座辽塔保留着细密的节奏。",
+    "facts": [
+      "塔位于丰润原天宫寺范围，辽清宁八年（1062）始建。",
+      "图版绘八角十三层密檐塔整塔，保留须弥座、仰莲和盘龙倚柱。",
+      "首层以砖雕模仿木构，盘龙倚柱、门券与斗拱共同装饰塔身。"
+    ],
+    "legacyNames": [
+      "丰润天宫寺塔"
+    ],
+    "caption": [
+      "天宫寺塔 · 整塔",
+      "八角十三层 · 辽清宁八年（1062）始建"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited"
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.806311+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_tiangong-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg/1280px-%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
+      "author": "維基小霸王",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2021-02-25 17:22:34",
+      "sha256": "c92691b680ef959805e17543d394c1055f56213f7d0d6d20f11e74946e489740",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "ln_chongxing",
+  "name": "北镇崇兴寺双塔",
+  "subject": "北镇崇兴寺双塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/ln_chongxing.png",
+    "assets/references/ln_chongxing-candidate4.jpg",
+    "assets/references/ln_chongxing-candidate3.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nPreserve TWO pagodas and EXACTLY THIRTEEN eaves EACH, WEST left shorter, EAST right taller. Present pale grey / warm whitish masonry bodies, roofs weathered grey-beige/brown brick, grey stone plinths, dark weathered metal finials and chains. EAST right Buddhist niche figures show restrained faded BLUE-GREEN traces; WEST left relief figures more neutral stone grey. Do not copy one tower's pattern/palette onto the other. No fresh white plaster homogenization, no gilding or ochre filter. Real gaps between chains and between two towers PURE WHITE, dark niches are opaque. Landscape1536x1024.\n\nIMPORTANT: the earlier colored draft is rejected for12eaves per tower and is NOTprovided. Color NEW LINE1, now exactly13 eaves EACH, preserving all13 per tower including broad first/bottom eave. Preserve complete two finials/chains and fullbases.",
+  "material_observations": [
+    "两塔主体灰白偏米色砖石，檐口灰褐风化砖。",
+    "东塔佛龛可见残留青绿，西塔浮雕更偏中性灰。",
+    "深灰塔刹与链索，灰石台基。"
+  ],
+  "references": [
+    {
+      "title": "File:The West Pagoda of Chongxing Temple 02 2015-09.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG/1280px-The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG",
+      "width": 1200,
+      "height": 1806,
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2015-09-07 10:43:47",
+      "id": "ln_chongxing",
+      "file": "assets/references/ln_chongxing-candidate4.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG/1280px-The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "title": "File:The East Pagoda of Chongxing Temple 01 2015-09.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG/1280px-The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG",
+      "width": 1200,
+      "height": 1806,
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2015-09-07 10:56:23",
+      "id": "ln_chongxing",
+      "file": "assets/references/ln_chongxing-candidate3.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG/1280px-The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/ln_chongxing.json",
+  "output": "assets/colored/ln_chongxing.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "两塔逐塔十三檐，西塔左、东塔右；完整基座及刹链。",
+      "灰褐砖石、残存蓝绿与旧金属分开取色；透空种子仅来自刹链空隙。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "31552f6437b3a664ef153966162c20290e7ea42d6d0f4496afbbc3c2dff6dd91",
+    "seeds": [
+      [
+        1047,
+        148
+      ],
+      [
+        986,
+        150
+      ],
+      [
+        463,
+        168
+      ],
+      [
+        521,
+        168
+      ],
+      [
+        964,
+        181
+      ],
+      [
+        441,
+        197
+      ],
+      [
+        1070,
+        180
+      ],
+      [
+        542,
+        197
+      ],
+      [
+        1012,
+        104
+      ],
+      [
+        1031,
+        115
+      ],
+      [
+        1002,
+        114
+      ],
+      [
+        1022,
+        104
+      ],
+      [
+        498,
+        127
+      ],
+      [
+        479,
+        136
+      ],
+      [
+        488,
+        126
+      ],
+      [
+        506,
+        136
+      ]
+    ]
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-cc9fce07-960d-4709-ba69-fed9eaa09989.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "attempt": 1,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nPreserve TWO pagodas and EXACTLY THIRTEEN eaves EACH, WEST left shorter, EAST right taller. Present pale grey / warm whitish masonry bodies, roofs weathered grey-beige/brown brick, grey stone plinths, dark weathered metal finials and chains. EAST right Buddhist niche figures show restrained faded BLUE-GREEN traces; WEST left relief figures more neutral stone grey. Do not copy one tower's pattern/palette onto the other. No fresh white plaster homogenization, no gilding or ochre filter. Real gaps between chains and between two towers PURE WHITE, dark niches are opaque. Landscape1536x1024.",
+      "input_images": [
+        "assets/generated/ln_chongxing-draft1.png",
+        "assets/references/ln_chongxing-candidate4.jpg",
+        "assets/references/ln_chongxing-candidate3.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-60f6371b-54eb-40a0-a3b0-f2697e260a75.png",
+      "retained_file": "assets/colored/ln_chongxing-draft1.png",
+      "accepted": false,
+      "reason": "首轮目检误数；实际各十二檐，复核后撤销通过，禁止交付。"
+    }
+  ],
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

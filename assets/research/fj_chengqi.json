@@ -1,0 +1,132 @@
+{
+  "id": "fj_chengqi",
+  "subject": "永定承启楼完整外观",
+  "status": "complete",
+  "historical_sources": [
+    {
+      "title": "中国非物质文化遗产网：承启楼营建与四层四圈",
+      "url": "https://www.ihchina.cn/Article/Index/detail?id=10939"
+    },
+    {
+      "title": "UNESCO：福建土楼遗产",
+      "url": "https://whc.unesco.org/en/list/1113/"
+    }
+  ],
+  "source_note": "取承启楼建成1709年；明代开建与清代落成分别叙述，图版为现存外观，不依据邮票重构内部。 实拍仅作为形制与材质输入，不声称实测；输出由用户验收。",
+  "caption": [
+    "永定承启楼完整外观 · 线稿",
+    "清 · 1709"
+  ],
+  "structure_checkpoints": [
+    "圆形外墙四层、三排主要高窗、环形坡瓦顶、偏右可见正门及石基；不切开夯土墙，不合并邻楼。"
+  ],
+  "generated_file": "assets/generated/fj_chengqi.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "site_recommendation": {
+    "id": "fj_chengqi",
+    "name": "永定承启楼",
+    "short": "承启楼",
+    "sub": "高北土楼群 · 圆形夯土民居",
+    "subject": "永定承启楼完整外观",
+    "prov": "福建",
+    "place": "福建龙岩 · 永定高北村",
+    "placeKey": "yongding_gaobei",
+    "types": [
+      "residence"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "康熙四十八年建成",
+    "year": 1709,
+    "yearLabel": "1709",
+    "yearNote": "取承启楼建成1709年；明代开建与清代落成分别叙述，图版为现存外观，不依据邮票重构内部。",
+    "checkpoint": "圆形外墙四层、三排主要高窗、环形坡瓦顶、偏右可见正门及石基；不切开夯土墙，不合并邻楼。",
+    "history": [
+      {
+        "title": "中国非物质文化遗产网：承启楼营建与四层四圈",
+        "url": "https://www.ihchina.cn/Article/Index/detail?id=10939"
+      },
+      {
+        "title": "UNESCO：福建土楼遗产",
+        "url": "https://whc.unesco.org/en/list/1113/"
+      }
+    ],
+    "material": "夯土外墙黄褐，石基灰褐，环形瓦顶深灰，正门外围暗赭红、灰白门套；上层小窗框浅灰。",
+    "lineDetail": "Landscape 1536x1024. Follow the near-frontal exterior reference, NOT an invented aerial cutaway. ONE complete cylindrical tulou with FOUR floor levels, three upper rows of small rectangular windows, low continuous circular sloping tile roof and the main entrance as photographed. Keep the curved wall across its full width; no neighbouring tulous, courtyard reconstruction or central palace.",
+    "lede": "一圈黄褐夯土墙收拢数百间房，瓦檐沿圆周轻轻挑出。承启楼以四层外环与层层内院，容纳了永定山间的共同生活。",
+    "facts": [
+      "<b>营建</b> 明代开始兴建，1709年建成，位于永定高北村，是福建土楼遗产的组成部分。",
+      "<b>空间</b> 外环四层，内部多重环形院落及中心祖堂；本图只表现完整外观，不做假想剖切。",
+      "<b>材料</b> 夯土外墙、石质墙基、木构居住层与环形瓦顶共同构成土楼。"
+    ]
+  },
+  "file": "assets/references/fj_chengqi-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chengqi_Tulou_20140829.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Chengqi_Tulou_20140829.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "颐园新居",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2014-08-29 12:38:15",
+  "references": [
+    {
+      "id": "fj_chengqi",
+      "file": "assets/references/fj_chengqi-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Chengqi_Tulou_20140829.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Chengqi_Tulou_20140829.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Chengqi_Tulou_20140829.JPG/960px-Chengqi_Tulou_20140829.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "颐园新居",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2014-08-29 12:38:15",
+      "description": "​福建龙岩永定高北村承启楼"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_chengqi-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 永定承启楼完整外观.\nLandscape 1536x1024. Follow the near-frontal exterior reference, NOT an invented aerial cutaway. ONE complete cylindrical tulou with FOUR floor levels, three upper rows of small rectangular windows, low continuous circular sloping tile roof and the main entrance as photographed. Keep the curved wall across its full width; no neighbouring tulous, courtyard reconstruction or central palace.\nStructure checkpoint: 圆形外墙四层、三排主要高窗、环形坡瓦顶、偏右可见正门及石基；不切开夯土墙，不合并邻楼。",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 永定承启楼完整外观.\nLandscape 1536x1024. Follow the near-frontal exterior reference, NOT an invented aerial cutaway. ONE complete cylindrical tulou with FOUR floor levels, three upper rows of small rectangular windows, low continuous circular sloping tile roof and the main entrance as photographed. Keep the curved wall across its full width; no neighbouring tulous, courtyard reconstruction or central palace.\nStructure checkpoint: 圆形外墙四层、三排主要高窗、环形坡瓦顶、偏右可见正门及石基；不切开夯土墙，不合并邻楼。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/fj_chengqi-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T17:21:26.639Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:23:39.102Z",
+      "received_at": "2026-09-16T17:23:39.102Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-48fa0dcb-1fd1-40cd-9dc3-a96501c6c977.png",
+      "saved_at": "2026-09-16T17:23:39.417Z"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5223b70c1f091e8b8def5addcd3641be45b7ff2e8932c072a8c8abb06b3d5154",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-48fa0dcb-1fd1-40cd-9dc3-a96501c6c977.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-48fa0dcb-1fd1-40cd-9dc3-a96501c6c977.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.254Z",
+    "sourceSha256": "5223b70c1f091e8b8def5addcd3641be45b7ff2e8932c072a8c8abb06b3d5154"
+  }
+}

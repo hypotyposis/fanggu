@@ -1,0 +1,134 @@
+{
+  "id": "gx_chengyang",
+  "name": "程阳永济桥",
+  "subject": "程阳永济桥全桥与五座楼亭",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 程阳永济桥全桥与五座楼亭\nPRESENT MATERIAL OBSERVATIONS: 深灰木廊与灰褐立柱、灰黑瓦面，石墩淡灰、少量塔顶黄绿装饰；没有红色景观灯覆盖。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
+  "input_images": [
+    "assets/generated/gx_chengyang.png",
+    "assets/references/gx_chengyang-full-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "深灰木廊与灰褐立柱、灰黑瓦面，石墩淡灰、少量塔顶黄绿装饰；没有红色景观灯覆盖。"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:程阳永济桥1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/程阳永济桥1.jpg/1280px-程阳永济桥1.jpg",
+  "author": "三猎",
+  "license": "CC BY-SA 4.0",
+  "original_research": "assets/research/gx_chengyang.json",
+  "output": "assets/colored/gx_chengyang.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:41:51.344Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 程阳永济桥全桥与五座楼亭\nPRESENT MATERIAL OBSERVATIONS: 深灰木廊与灰褐立柱、灰黑瓦面，石墩淡灰、少量塔顶黄绿装饰；没有红色景观灯覆盖。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
+      "reference_files": [
+        "assets/generated/gx_chengyang.png",
+        "assets/references/gx_chengyang-full-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:45:02.270Z",
+      "saved_at": "2026-09-17T12:45:02.447Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-cdccf3f6-6327-4237-84e6-6285d05c248c.png",
+      "original_file": "assets/color-studies/v1/gx_chengyang-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gx_chengyang-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4dbae16c41daf911f34e7c9f43c99ecf1c62d1b407bceba8428ffe1b3d82cb82",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gx_chengyang",
+      "file": "assets/references/gx_chengyang-full-photo.jpg",
+      "sha256": "69ecc1f89b1407214963ea43f0732c783f03087260999b95d03f93940bb1ee1e",
+      "page": "https://commons.wikimedia.org/wiki/File:程阳永济桥1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/程阳永济桥1.jpg/1280px-程阳永济桥1.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "三江县政协《三江文史资料》第七辑：程阳桥倡修与1924竣工",
+      "url": "https://lzzx.liuzhou.gov.cn/liuzhouwenshi/wenshi_xianqu/201103/P020120928539508525402.pdf"
+    },
+    {
+      "title": "柳州市民宗委：程阳八寨侗寨与风雨桥",
+      "url": "https://mzw.liuzhou.gov.cn/ztzl/cjqgmztjjbsfs/mztscz/202210/t20221025_3160843.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "name": "程阳永济桥",
+    "short": "程阳桥",
+    "sub": "侗族风雨桥 · 五亭木廊",
+    "place": "广西三江 · 程阳",
+    "placeKey": "gx_sanjiang",
+    "types": [
+      "bridge",
+      "pavilion"
+    ],
+    "dyn": "modern",
+    "tag": "民国",
+    "era": "20世纪初营建",
+    "year": 1924,
+    "yearLabel": "1924竣工",
+    "yearNote": "沿《三江文史资料》第七辑取1924竣工；1911倡修或1912开工不等于竣工年。桥经历后世维修，图版按实拍现状绘完整五亭全桥。",
+    "lede": "五座楼亭沿连续木廊展开，石墩把长桥托在河面之上。它既是通路，也是遮雨、停留和相聚的地方。",
+    "history": [
+      {
+        "title": "三江县政协《三江文史资料》第七辑：程阳桥倡修与1924竣工",
+        "url": "https://lzzx.liuzhou.gov.cn/liuzhouwenshi/wenshi_xianqu/201103/P020120928539508525402.pdf"
+      },
+      {
+        "title": "柳州市民宗委：程阳八寨侗寨与风雨桥",
+        "url": "https://mzw.liuzhou.gov.cn/ztzl/cjqgmztjjbsfs/mztscz/202210/t20221025_3160843.shtml"
+      }
+    ],
+    "protection": {
+      "batch": 2,
+      "unitName": "程阳永济桥",
+      "relation": "unit",
+      "locator": "PDF 第24页 · 程阳永济桥"
+    },
+    "id": "gx_chengyang",
+    "subject": "程阳永济桥全桥与五座楼亭",
+    "checkpoint": "五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。",
+    "material": "深灰木廊与灰褐立柱、灰黑瓦面，石墩淡灰、少量塔顶黄绿装饰；没有红色景观灯覆盖。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "程阳永济桥全桥与五座楼亭 · 线稿",
+      "民国 · 1924竣工"
+    ],
+    "facts": [
+      "<b>主体</b> 程阳永济桥全桥与五座楼亭。",
+      "<b>年代</b> 沿《三江文史资料》第七辑取1924竣工；1911倡修或1912开工不等于竣工年。桥经历后世维修，图版按实拍现状绘完整五亭全桥。",
+      "<b>图版范围</b> 五座楼亭、连续木廊与船形石墩，全桥而非端部局部；中央攒尖顶与两端歇山顶区分。"
+    ]
+  },
+  "source_note": "沿《三江文史资料》第七辑取1924竣工；1911倡修或1912开工不等于竣工年。桥经历后世维修，图版按实拍现状绘完整五亭全桥。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gx_chengyang-colored.png",
+  "line_source": "assets/generated/gx_chengyang.png"
+}

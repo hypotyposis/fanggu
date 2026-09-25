@@ -1,0 +1,120 @@
+{
+  "id": "bj_lugou",
+  "name": "北京卢沟桥",
+  "subject": "北京卢沟桥 · 十一孔石桥侧向全貌",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/bj_lugou.png",
+    "assets/references/bj_lugou-side.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Beijing Lugou Bridge complete eleven-arch side view exactly as Image1. Preserve ELEVEN independently countable stone arches, both end abutments, all stone piers and lion-topped parapet posts. Entire bridge is weathered neutral GREY stone, slight grey-beige variations between blocks, lighter grey-white balustrade and lions under neutral daylight, a few dark grey masonry joints. No gold, red paint, warm sepia filter or invented colored details. Use modest cool shadow values on actual arch-vault stone faces, but every open void THROUGH the eleven arches stays perfectly pure WHITE #FFFFFF, not black, not a stone wall, not grey shading. The thin base line below each arch does not represent a floor; no river, land, reflections, grass or ground shadow. Keep Image1's exact scale, long low silhouette and landscape1536x1024 framing.\n\nCRITICAL SINGLE CORRECTION: All ELEVEN arches are actual EMPTY OPEN-AIR VOIDS, including the FOUR smallest far-left arches. In the line drawing, these interior areas are blank WHITE; do not fill any of them with gray masonry, bricks, floors, retaining walls or shadow. Every pixel region inside each arch opening down to its lower outline must be perfectly flat pure white #FFFFFF. Even the small distant four must be just as white as the larger seven. Do not paint visible vault faces inside the opening; confine all stone color to the piers, deck and the arch ring OUTSIDE the interior black outline. Eleven white openings, no exceptions. This is the only correction; retain exact bridge geometry, eleven-count and material color elsewhere.",
+  "material_observations": [
+    "桥体与桥墩为中性灰石，块石有轻微灰米差异。",
+    "栏板和石狮较浅灰白，拱券内部石面有冷灰阴影。",
+    "桥下是实际透空，不把照片阴影填成黑色实体。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/bj_lugou-side.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lugouqiao2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Lugouqiao2.jpg",
+      "author": "Fanghong",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2005-08-20"
+    }
+  ],
+  "original_research": "assets/research/bj_lugou.json",
+  "output": "assets/colored/bj_lugou.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-7fb02d07-8176-4b71-b0cc-2b1c2af29a1f.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cf834d1d0af10859ef79647fbc5c2e13dd5cc66777a5b793da60aceb0f3c406a",
+    "seeds": [
+      [
+        110,
+        511
+      ],
+      [
+        160,
+        516
+      ],
+      [
+        214,
+        518
+      ],
+      [
+        276,
+        525
+      ],
+      [
+        355,
+        531
+      ],
+      [
+        450,
+        540
+      ],
+      [
+        570,
+        548
+      ],
+      [
+        700,
+        556
+      ],
+      [
+        860,
+        567
+      ],
+      [
+        1040,
+        582
+      ],
+      [
+        1250,
+        595
+      ]
+    ]
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Beijing Lugou Bridge complete eleven-arch side view exactly as Image1. Preserve ELEVEN independently countable stone arches, both end abutments, all stone piers and lion-topped parapet posts. Entire bridge is weathered neutral GREY stone, slight grey-beige variations between blocks, lighter grey-white balustrade and lions under neutral daylight, a few dark grey masonry joints. No gold, red paint, warm sepia filter or invented colored details. Use modest cool shadow values on actual arch-vault stone faces, but every open void THROUGH the eleven arches stays perfectly pure WHITE #FFFFFF, not black, not a stone wall, not grey shading. The thin base line below each arch does not represent a floor; no river, land, reflections, grass or ground shadow. Keep Image1's exact scale, long low silhouette and landscape1536x1024 framing.",
+      "input_images": [
+        "assets/generated/bj_lugou.png",
+        "assets/references/bj_lugou-side.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-448d9b8a-7ef7-4389-adec-145f88e68c23.png",
+      "saved_file": "assets/colored/bj_lugou-draft1.png",
+      "review": "rejected",
+      "reason": "远端四孔被设色成灰石实体墙，不符合实际透空。"
+    },
+    {
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Beijing Lugou Bridge complete eleven-arch side view exactly as Image1. Preserve ELEVEN independently countable stone arches, both end abutments, all stone piers and lion-topped parapet posts. Entire bridge is weathered neutral GREY stone, slight grey-beige variations between blocks, lighter grey-white balustrade and lions under neutral daylight, a few dark grey masonry joints. No gold, red paint, warm sepia filter or invented colored details. Use modest cool shadow values on actual arch-vault stone faces, but every open void THROUGH the eleven arches stays perfectly pure WHITE #FFFFFF, not black, not a stone wall, not grey shading. The thin base line below each arch does not represent a floor; no river, land, reflections, grass or ground shadow. Keep Image1's exact scale, long low silhouette and landscape1536x1024 framing.\n\nCRITICAL SINGLE CORRECTION: All ELEVEN arches are actual EMPTY OPEN-AIR VOIDS, including the FOUR smallest far-left arches. In the line drawing, these interior areas are blank WHITE; do not fill any of them with gray masonry, bricks, floors, retaining walls or shadow. Every pixel region inside each arch opening down to its lower outline must be perfectly flat pure white #FFFFFF. Even the small distant four must be just as white as the larger seven. Do not paint visible vault faces inside the opening; confine all stone color to the piers, deck and the arch ring OUTSIDE the interior black outline. Eleven white openings, no exceptions. This is the only correction; retain exact bridge geometry, eleven-count and material color elsewhere.",
+      "input_images": [
+        "assets/generated/bj_lugou.png",
+        "assets/references/bj_lugou-side.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-7fb02d07-8176-4b71-b0cc-2b1c2af29a1f.png",
+      "review": "selected"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "十一孔逐孔核对保持白色透空，十一处种子仅落在实际拱洞白底。",
+      "灰石桥体、较浅栏板与石狮分区保持，未用抠图删除灰色实体。",
+      "原件和暗底透明副本均目检，两端完整无外景。",
+      "近白边缘、真实透明与可见主体通过脚本检查；内部RGB保持原样。"
+    ],
+    "limitations": "浅斜透视艺术转译；石狮雕刻和砌缝作简化，桥墩细部非测绘级复原。"
+  },
+  "completed_at": "2026-09-16 11:24:34 UTC"
+}

@@ -1,0 +1,127 @@
+{
+  "id": "gd_chen",
+  "name": "陈家祠",
+  "subject": "陈家祠中央头门立面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 陈家祠中央头门立面\nPRESENT MATERIAL OBSERVATIONS: 灰砖墙、灰瓦，浅灰白石柱石梁，屋脊陶塑青绿蓝红，门框暗红棕，门洞暗部保留。\nKeep the complete original line composition and geometry; the material photo must not introduce scenery or occluding objects.",
+  "input_images": [
+    "assets/generated/gd_chen.png",
+    "assets/references/gd_chen-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰砖墙、灰瓦，浅灰白石柱石梁，屋脊陶塑青绿蓝红，门框暗红棕，门洞暗部保留。"
+  ],
+  "original_research": "assets/research/gd_chen.json",
+  "output": "assets/colored/gd_chen.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:39:21.544Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 陈家祠中央头门立面\nPRESENT MATERIAL OBSERVATIONS: 灰砖墙、灰瓦，浅灰白石柱石梁，屋脊陶塑青绿蓝红，门框暗红棕，门洞暗部保留。\nKeep the complete original line composition and geometry; the material photo must not introduce scenery or occluding objects.",
+      "reference_files": [
+        "assets/generated/gd_chen.png",
+        "assets/references/gd_chen-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:40:18.804Z",
+      "saved_at": "2026-09-17T12:40:19.003Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a77ab1af-708a-4cf8-8e50-115e3b0196ce.png",
+      "original_file": "assets/color-studies/v1/gd_chen-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gd_chen-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "34f170b037f7e2811eb812ce5dc580f7b5fe4dafa3161bbdfeccfe4632113157",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gd_chen",
+      "file": "assets/references/gd_chen-photo.jpg",
+      "sha256": "071071e842be1dc3193f7f611432ec231086bc5f9c6d0353ef4b7f50a3e2baff",
+      "title": "File:Chen Clan Ancestral Hall 2025.06 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chen_Clan_Ancestral_Hall_2025.06_01.jpg/1280px-Chen_Clan_Ancestral_Hall_2025.06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg",
+      "author": "Shujianyang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "荔湾区政府：陈家祠堂文物价值评估项目（筹建1888、落成1893）",
+      "url": "https://www.lw.gov.cn/ywdt/cgxx/content/post_9766061.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "广州陈家祠",
+    "short": "陈家祠",
+    "sub": "头门 · 岭南陶塑与石雕",
+    "place": "广东广州 · 荔湾",
+    "placeKey": "gd_guangzhou",
+    "types": [
+      "hall",
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清光绪十九年",
+    "year": 1893,
+    "yearLabel": "1893",
+    "yearNote": "1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。",
+    "lede": "灰砖、石柱与屋脊上的陶塑，把宗族祠堂的入口做成一面细密的岭南工艺展墙。图版只取中央头门，不拼接后部院落。",
+    "history": [
+      {
+        "title": "荔湾区政府：陈家祠堂文物价值评估项目（筹建1888、落成1893）",
+        "url": "https://www.lw.gov.cn/ywdt/cgxx/content/post_9766061.html"
+      }
+    ],
+    "protection": {
+      "batch": 3,
+      "unitName": "陈家祠堂",
+      "relation": "part",
+      "locator": "PDF 第12页 · 陈家祠堂"
+    },
+    "id": "gd_chen",
+    "subject": "陈家祠中央头门立面",
+    "checkpoint": "中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。",
+    "material": "灰砖墙、灰瓦，浅灰白石柱石梁，屋脊陶塑青绿蓝红，门框暗红棕，门洞暗部保留。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "陈家祠中央头门立面 · 线稿",
+      "清 · 1893"
+    ],
+    "facts": [
+      "<b>主体</b> 陈家祠中央头门立面。",
+      "<b>年代</b> 1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。",
+      "<b>图版范围</b> 中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。"
+    ]
+  },
+  "source_note": "1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gd_chen-colored.png",
+  "line_source": "assets/generated/gd_chen.png",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chen_Clan_Ancestral_Hall_2025.06_01.jpg/1280px-Chen_Clan_Ancestral_Hall_2025.06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Shujianyang",
+  "license": "CC BY-SA 4.0"
+}

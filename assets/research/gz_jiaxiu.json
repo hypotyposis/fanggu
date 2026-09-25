@@ -1,0 +1,114 @@
+{
+  "id": "gz_jiaxiu",
+  "subject": "贵阳甲秀楼现存楼体",
+  "status": "needs_review",
+  "historical_sources": [
+    {
+      "title": "贵州政协报：现存建筑依1909式样及1981重修",
+      "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/3438/A3"
+    }
+  ],
+  "source_note": "现貌按1909重修式样，并经1981等后世修缮；明代创建年代不替代现存楼体形制年代。",
+  "caption": [
+    "贵阳甲秀楼现存楼体 · 线稿 · 待用户验收",
+    "清 · 1909"
+  ],
+  "structure_checkpoints": [
+    "三层楼身、三重檐、四角攒尖屋顶及完整石台；保留自有石栏，不扩为全河桥梁景观。"
+  ],
+  "generated_file": "assets/generated/gz_jiaxiu.png",
+  "generation_tool": "built-in image_gen",
+  "reference_candidates": [
+    {
+      "id": "gz_jiaxiu",
+      "file": "assets/references/gz_jiaxiu-photo.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Jiaxiu_Pavilion%2C_Guiyang.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jiaxiu_Pavilion,_Guiyang.jpg",
+      "author": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "date": "2018-06-10"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "site_recommendation": {
+    "id": "gz_jiaxiu",
+    "name": "贵阳甲秀楼",
+    "short": "甲秀楼",
+    "sub": "南明河 · 三层三檐",
+    "subject": "贵阳甲秀楼现存楼体",
+    "prov": "贵州",
+    "place": "贵州贵阳 · 南明河",
+    "placeKey": "guiyang",
+    "types": [
+      "pavilion"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "宣统元年重建 · 后世修缮",
+    "year": 1909,
+    "yearLabel": "1909",
+    "yearNote": "现貌按1909重修式样，并经1981等后世修缮；明代创建年代不替代现存楼体形制年代。",
+    "checkpoint": "三层楼身、三重檐、四角攒尖屋顶及完整石台；保留自有石栏，不扩为全河桥梁景观。",
+    "history": [
+      {
+        "title": "贵州政协报：现存建筑依1909式样及1981重修",
+        "url": "https://www.gzszx.gov.cn/gzzxb/web/doc/detail/3438/A3"
+      }
+    ],
+    "lede": "南明河中的石台上，三层甲秀楼把红柱与三道屋檐叠成贵阳的剪影。它初建于明代，却在数次毁修中改变；今天的图版以宣统元年重修式样及后来修缮形成的现貌为准。",
+    "facts": [
+      "<b>所绘主体</b> 三层三檐楼体、石台及自有石栏，不把整条浮玉桥和河岸附楼作为一栋建筑。",
+      "<b>沿革</b> 明代万历年间初创，多次毁修；现貌依清宣统元年（1909）重修式样。",
+      "<b>后世修缮</b> 1981年等维修另记；年表不是明代原构认定，图版也不是文保实测。"
+    ],
+    "initialStatus": "unvisited",
+    "country": "CN"
+  },
+  "file": "assets/references/gz_jiaxiu-reference-thumb.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jiaxiu_Pavilion,_Guiyang.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Jiaxiu_Pavilion%2C_Guiyang.jpg/960px-Jiaxiu_Pavilion%2C_Guiyang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "xiquinhosilva",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "date": "2018-06-10 12:43:53",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gz_jiaxiu-reference-thumb.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nSUBJECT: 贵阳甲秀楼现存楼体.\nSCOPE AND IDENTIFYING STRUCTURE: 三层楼身、三重檐、四角攒尖屋顶及完整石台；保留自有石栏，不扩为全河桥梁景观。\nLandscape 1536×1024.",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nSUBJECT: 贵阳甲秀楼现存楼体.\nSCOPE AND IDENTIFYING STRUCTURE: 三层楼身、三重檐、四角攒尖屋顶及完整石台；保留自有石栏，不扩为全河桥梁景观。\nLandscape 1536×1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gz_jiaxiu-reference-thumb.jpg"
+      ],
+      "submitted_at": "2026-09-16T16:54:50.202Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:55:53.351Z",
+      "saved_at": "2026-09-16T16:55:53.716Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-538b72b6-3ded-44a3-8f7e-452b918583aa.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ef56001bcac37724a25dbf705bf1392f374d818921db3f2acb953c9839101a0d",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-538b72b6-3ded-44a3-8f7e-452b918583aa.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-538b72b6-3ded-44a3-8f7e-452b918583aa.png"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "gd_zumiao",
+  "name": "佛山祖庙",
+  "subject": "佛山祖庙三门立面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 佛山祖庙三门立面\nPRESENT MATERIAL OBSERVATIONS: 灰瓦与灰砖，浅灰石柱石梁、深棕木构、青绿褐陶塑花脊，门洞暗部保留。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
+  "input_images": [
+    "assets/generated/gd_zumiao.png",
+    "assets/references/gd_zumiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰瓦与灰砖，浅灰石柱石梁、深棕木构、青绿褐陶塑花脊，门洞暗部保留。"
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/佛山祖庙.JPG",
+  "author": "Haier7917",
+  "license": "CC BY-SA 3.0",
+  "original_research": "assets/research/gd_zumiao.json",
+  "output": "assets/colored/gd_zumiao.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:41:51.344Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 佛山祖庙三门立面\nPRESENT MATERIAL OBSERVATIONS: 灰瓦与灰砖，浅灰石柱石梁、深棕木构、青绿褐陶塑花脊，门洞暗部保留。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
+      "reference_files": [
+        "assets/generated/gd_zumiao.png",
+        "assets/references/gd_zumiao-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:43:26.529Z",
+      "saved_at": "2026-09-17T12:43:26.730Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-46fd13c7-6e65-456a-b289-3569dd4bddd4.png",
+      "original_file": "assets/color-studies/v1/gd_zumiao-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gd_zumiao-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0bcdf681be85db24c65a140efb7e052ef7677270ceef0f94e33d3502ebefcdbe",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gd_zumiao",
+      "file": "assets/references/gd_zumiao-photo.jpg",
+      "sha256": "e34fbb5e4a3a7e45992808f0c0a6770a8f5b3a745f22f8a375e47d8c7f615212",
+      "page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/佛山祖庙.JPG",
+      "author": "Haier7917",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "广东省文史研究馆：佛山祖庙的创建、明代重建与现存明清建筑",
+      "url": "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22597.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "佛山祖庙三门",
+    "short": "祖庙三门",
+    "sub": "三座券门 · 陶塑花脊",
+    "place": "广东佛山 · 禅城",
+    "placeKey": "gd_foshan",
+    "types": [
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清修建",
+    "year": 1600,
+    "yearApprox": true,
+    "yearLabel": "明清",
+    "yearNote": "1600仅是明清现存主体的近似排序点，不是三门确切建成年。祖庙北宋创建、明洪武重建与三门现状年代不能混为一谈。",
+    "lede": "三座券门之上，陶塑花脊横向铺展；两端屋面抬起，入口像一条收拢的街景。图版取三门，不包含池岸和前方陈设。",
+    "history": [
+      {
+        "title": "广东省文史研究馆：佛山祖庙的创建、明代重建与现存明清建筑",
+        "url": "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22597.html"
+      }
+    ],
+    "protection": {
+      "batch": 4,
+      "unitName": "佛山祖庙",
+      "relation": "part",
+      "locator": "PDF 第25页 · 佛山祖庙"
+    },
+    "id": "gd_zumiao",
+    "subject": "佛山祖庙三门立面",
+    "checkpoint": "三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。",
+    "material": "灰瓦与灰砖，浅灰石柱石梁、深棕木构、青绿褐陶塑花脊，门洞暗部保留。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "佛山祖庙三门立面 · 线稿",
+      "明清 · 明清"
+    ],
+    "facts": [
+      "<b>主体</b> 佛山祖庙三门立面。",
+      "<b>年代</b> 1600仅是明清现存主体的近似排序点，不是三门确切建成年。祖庙北宋创建、明洪武重建与三门现状年代不能混为一谈。",
+      "<b>图版范围</b> 三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。"
+    ]
+  },
+  "source_note": "1600仅是明清现存主体的近似排序点，不是三门确切建成年。祖庙北宋创建、明洪武重建与三门现状年代不能混为一谈。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gd_zumiao-colored.png",
+  "line_source": "assets/generated/gd_zumiao.png"
+}

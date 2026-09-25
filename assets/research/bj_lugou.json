@@ -1,0 +1,60 @@
+{
+  "id": "bj_lugou",
+  "subject": "北京卢沟桥 · 十一孔石桥侧向全貌",
+  "file": "assets/references/bj_lugou-side.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Lugouqiao2.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Lugouqiao2.jpg",
+  "author": "Fanghong",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "date": "2005-08-20",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/bj_lugou-side.jpg"
+  ],
+  "source_note": "以2005年侧向全景核对十一孔、石拱与狮子栏柱，适度拉平透视并补齐照片边缘的桥端。去掉河滩、草地和远景，只绘桥体；石狮和砖石缝作克制简化。",
+  "prompt": "Use case: style-transfer. Make one sparse fine BLACK INK architectural line plate of the complete Lugou Bridge (Marco Polo Bridge) in Beijing. Image1 is the Longmen LINE STYLE MASTER ONLY. Image2 is SUBJECT GEOMETRY: actual grey stone bridge, shown obliquely along its side; remove all landscape. Draw the complete bridge from a shallow oblique side viewpoint, with both end abutments visible and ELEVEN distinct open round/segmental stone arches across its length. Keep the low continuous slightly cambered stone deck, voussoir arch outlines, projecting cutwater piers, and long stone balustrade with many small varied lion-topped posts, simplified with a few delicate contours. Do not turn it into the single-arch Zhaozhou Bridge, add monumental towers or gateways, or multiply the arches beyond eleven. Mild perspective may taper the far end but each of eleven arches must remain separately countable; not a dramatic vanishing-point road view. Through all arch openings is perfectly blank white, not filled black or gray. Only a few fine masonry joints, not a dense brick grid; no tonal modelling or crosshatching. Uniform opaque PURE WHITE #FFFFFF outside and inside all non-ink areas. Whole bridge centered horizontally in landscape1536x1024 with balanced clear margins, about85% width; do not crop either end or piers. Isolate the bridge only: no river, water reflections, grass, earth, mountains, trees, visitors, fencing, street fixtures or surrounding buildings. No cast shadow, ground shadow, gradient, paper texture, glow, color, checkerboard, labels, calligraphy, captions, border or watermark.",
+  "generated_file": "assets/generated/bj_lugou.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-43186428-20b2-4785-89c2-0ed3cac690d6.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "北京卢沟桥 · 十一孔石拱",
+    "金 · 1192建成，明清修缮"
+  ],
+  "historical_sources": [
+    {
+      "title": "北京市人民政府 · 卢沟桥历史与十一孔形制",
+      "url": "https://www.beijing.gov.cn/ywdt/gqrd/202607/t20260708_4752193.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4023dbef9925dad5c82a69ea334657689ffe362063df19cefd6a64442d7cea58",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Make one sparse fine BLACK INK architectural line plate of the complete Lugou Bridge (Marco Polo Bridge) in Beijing. Image1 is the Longmen LINE STYLE MASTER ONLY. Image2 is SUBJECT GEOMETRY: actual grey stone bridge, shown obliquely along its side; remove all landscape. Draw the complete bridge from a shallow oblique side viewpoint, with both end abutments visible and ELEVEN distinct open round/segmental stone arches across its length. Keep the low continuous slightly cambered stone deck, voussoir arch outlines, projecting cutwater piers, and long stone balustrade with many small varied lion-topped posts, simplified with a few delicate contours. Do not turn it into the single-arch Zhaozhou Bridge, add monumental towers or gateways, or multiply the arches beyond eleven. Mild perspective may taper the far end but each of eleven arches must remain separately countable; not a dramatic vanishing-point road view. Through all arch openings is perfectly blank white, not filled black or gray. Only a few fine masonry joints, not a dense brick grid; no tonal modelling or crosshatching. Uniform opaque PURE WHITE #FFFFFF outside and inside all non-ink areas. Whole bridge centered horizontally in landscape1536x1024 with balanced clear margins, about85% width; do not crop either end or piers. Isolate the bridge only: no river, water reflections, grass, earth, mountains, trees, visitors, fencing, street fixtures or surrounding buildings. No cast shadow, ground shadow, gradient, paper texture, glow, color, checkerboard, labels, calligraphy, captions, border or watermark.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/bj_lugou-side.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-43186428-20b2-4785-89c2-0ed3cac690d6.png"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "十一孔逐孔数清，非赵州桥单孔形制。",
+      "两端桥台、石拱、桥墩与连续狮子栏柱完整未裁切。",
+      "白底黑线，桥下无填黑、河流或地景。"
+    ],
+    "limitations": "浅斜透视艺术转译，栏柱数量和石狮雕刻作简化；桥墩细部非测绘级复原。"
+  },
+  "status": "complete"
+}

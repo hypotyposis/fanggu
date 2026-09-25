@@ -1,0 +1,91 @@
+{
+  "id": "jl_nongan",
+  "name": "农安辽塔",
+  "subject": "农安辽塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jl_nongan-draft1.png",
+    "assets/references/jl_nongan-candidate236.jpg",
+    "assets/references/jl_nongan-candidate235.jpg",
+    "assets/references/jl_nongan-candidate234.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNong'an Liao Pagoda, EXACT13total densely bracketed eaves, plain octagonal masonry body and present elongated stacked finial. Present bricks weathered muted grey / grey-beige, differentiated darker grey bracket courses, short grey-brick base and plain false arched doors with masonry inside. No polychrome Buddha reliefs, yellow tiles, gold towerbody, green roof or dynasty red tint. Finial present aged grey metal/light dull stone based actual DAYLIGHT photo2+3, no invented shinynew gilding. Plain masonry and false door interiors fully opaque, no transparent doors. Full portrait1024x1536.",
+  "material_observations": [
+    "采用同篇日光照片，不使用日落橙色剪影取色。",
+    "主体青灰砖、檐口灰褐，砖砌仿木斗拱层次较密。",
+    "塔身假门为实体砌体，不能作为透空删除。"
+  ],
+  "references": [
+    {
+      "id": "jl_nongan",
+      "file": "assets/references/jl_nongan-candidate236.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "url": "https://image.thepaper.cn/depository/image/309/98/236.jpg",
+      "author": "长春文旅／农安宣传（发布机构，未标具体摄影者）",
+      "license": "未注明；仅记录参考，不宣称开放授权",
+      "date": "2024-06-11（页面发布日期）",
+      "source_page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "image_url": "https://image.thepaper.cn/depository/image/309/98/236.jpg"
+    },
+    {
+      "id": "jl_nongan",
+      "file": "assets/references/jl_nongan-candidate235.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "url": "https://image.thepaper.cn/depository/image/309/98/235.jpg",
+      "author": "长春文旅／农安宣传（发布机构，未标具体摄影者）",
+      "license": "未注明；仅记录参考，不宣称开放授权",
+      "date": "2024-06-11（页面发布日期）",
+      "role": "eave_detail",
+      "source_page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "image_url": "https://image.thepaper.cn/depository/image/309/98/235.jpg"
+    },
+    {
+      "id": "jl_nongan",
+      "file": "assets/references/jl_nongan-candidate234.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "url": "https://image.thepaper.cn/depository/image/309/98/234.jpg",
+      "author": "长春文旅／农安宣传（发布机构，未标具体摄影者）",
+      "license": "未注明；仅记录参考，不宣称开放授权",
+      "date": "2024-06-11（页面发布日期）",
+      "role": "overall_setting",
+      "source_page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "image_url": "https://image.thepaper.cn/depository/image/309/98/234.jpg"
+    }
+  ],
+  "original_research": "assets/research/jl_nongan.json",
+  "output": "assets/colored/jl_nongan.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "十三层密檐；素砖塔身没有移植其他辽塔佛像。",
+      "设色现貌材料区分已目检；外部白底与记录透空点已由固定脚本处理。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。",
+      "设色以保留的首稿为几何输入；交付线稿为黑白纠正稿，十三檐与整体主体一致，非像素配准。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3036eb9b4c4dadd3b9bb3e58c5549d6cfd640419f95d9290a1d12c050c32b3c8",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-451fbdc5-d010-4318-b9bf-e33b1ec55f09.png",
+  "width": 1024,
+  "height": 1536,
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

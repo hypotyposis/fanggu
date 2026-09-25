@@ -9,6 +9,7 @@
   --gold: #d6ab5c;
   --gold-dim: #8a6d3a;
   --cinnabar: #c8442b;
+  --sand: #c6ac85;
   --verdigris: #7aa899;
   --ash: #8f8caa;
   --amber: #c98a3f;
@@ -19,7 +20,8 @@
   --rose: #bf8390;
   --celadon: #90aab6;
   --silver: #a6b0b4;
-  --sand: #c6ac85;
+  --goguryeo: #b0a18b;
+  --balhae: #91aca1;
   --jp-asuka: #c2ad78;
   --jp-nara: #9caa76;
   --jp-heian: #b79aca;
@@ -354,15 +356,30 @@ button { touch-action: manipulation; }
 .card-visual { position: relative; padding: 28px 24px 10px; }
 .card-art { display: block; }
 .card-art img { display: block; width: 100%; height: 185px; object-fit: contain; }
-.visit-stamp { position: absolute; right: 16px; top: 15px; writing-mode: vertical-rl; font-size: 11px; line-height: 1.3; letter-spacing: .2em; border: 1px solid currentColor; padding: 6px 4px; color: var(--paper-2); background: var(--ink-2); }
+.visit-stamp { position: absolute; right: 16px; top: 15px; writing-mode: vertical-rl; font-size: 11px; line-height: 1.3; letter-spacing: .2em; border: 1px solid currentColor; padding: 6px 4px; color: var(--paper-2); background: var(--ink-2); transition: color .4s, transform .4s, opacity .4s; }
 .visit-stamp.visited { color: var(--acc); transform: rotate(5deg); }
 .visit-stamp.wishlist { border-style: dashed; }
 .visit-stamp.unvisited { opacity: .65; }
 .card-body { padding: 18px 24px 20px; display: flex; flex-direction: column; flex: 1; }
+.card-record, .card-record-content { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.card-record.is-settling { position: relative; flex: none; overflow: hidden; }
+.card-record.is-settling > .card-record-content { height: 100%; }
+.card-record-outgoing { position: absolute; inset: 0 0 auto; pointer-events: none; }
 .card-era { color: var(--acc); font-size: 10px; }
 .card-body h3 { margin: 7px 0 6px; font-weight: 500; font-size: 22px; line-height: 1.5; overflow-wrap: anywhere; }
 .card-place { font-size: 12px; color: var(--paper-2); margin: 0 0 8px; overflow-wrap: anywhere; }
 .card-kind { font-size: 11px; color: var(--paper-3); margin: 0 0 8px; }
+.protection-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.protection-tag { display: inline-block; max-width: 100%; padding: 3px 7px; border: 1px solid rgba(214, 171, 92, .2); color: var(--paper-2); font-size: 11px; line-height: 1.5; text-decoration: none; overflow-wrap: anywhere; }
+a.protection-tag:hover, a.protection-tag:focus-visible { border-color: var(--acc); color: var(--paper); }
+.detail-protection { margin-bottom: 22px; font-size: 13px; color: var(--paper-2); scroll-margin-top: 80px; }
+.detail-protection summary { cursor: pointer; width: fit-content; }
+.detail-protection .protection-register { margin-top: 12px; gap: 14px; }
+.detail-page .detail-protection .protection-register li { padding-left: 0; font-size: 13px; border-left: 1px solid rgba(214, 171, 92, .2); padding-inline-start: 12px; overflow-wrap: anywhere; }
+.detail-protection .protection-register li::before { content: none; }
+.detail-protection p { margin: 0 0 5px; }
+.detail-protection .protection-unit { color: var(--paper); font-size: 15px; }
+.detail-protection .protection-checked { margin-top: 12px; color: var(--paper-3); font-size: 12px; }
 .card-date { font-size: 10px; margin: 5px 0 0; }
 .card-note { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; white-space: pre-wrap; font-size: 13px; color: var(--paper-2); margin: 8px 0; }
 .card-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-top: auto; padding-top: 20px; }
@@ -404,8 +421,8 @@ button { touch-action: manipulation; }
   100% { opacity: 0; transform: scale(1.6); }
 }
 .visit-ritual { --visit-progress: 0%; width: 100%; }
-.card-body > .visit-ritual { margin-top: auto; padding-top: 20px; }
-.card-body:has(.visit-ritual) > .card-actions { margin-top: 0; padding-top: 14px; }
+.card-record > .visit-ritual { margin-top: auto; padding-top: 20px; }
+.card-record:has(> .visit-ritual) > .card-actions { margin-top: 0; padding-top: 14px; }
 .detail-arrival:not(:empty) { margin-top: 24px; }
 .visit-track { position: relative; height: 50px; border: 1px solid color-mix(in srgb, var(--acc) 40%, transparent); background: var(--ink); border-radius: 3px; }
 .visit-track::before { content: ''; position: absolute; inset: 0; right: calc(100% - var(--visit-progress)); background: color-mix(in srgb, var(--acc) 15%, var(--ink)); transition: right .38s ease-out; }
@@ -426,6 +443,7 @@ button { touch-action: manipulation; }
 .visit-ritual.is-complete .visit-range { cursor: default; pointer-events: none; }
 .visit-ritual.is-complete .visit-hint { color: var(--acc); }
 @media (prefers-reduced-motion: reduce) {
+  .visit-stamp { transition: none; }
   .visit-artwork > img:not(.visit-color):first-child, .visit-artwork > img.visit-color, .visit-artwork .arrival-seal, .visit-artwork.is-complete .arrival-seal, .visit-ritual .visit-thumb, .visit-ritual .visit-track::before { transition: none; }
   .visit-artwork.is-complete .arrival-seal { animation: none; opacity: .92; }
   .visit-artwork.is-complete .arrival-seal::after { animation: none; }

@@ -1,0 +1,52 @@
+{
+  "id": "tj_wenmiao",
+  "name": "天津文庙",
+  "subject": "天津文庙 · 府庙大成殿中部立面与丹陛",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/tj_wenmiao.png",
+    "assets/references/tj_wenmiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Tianjin Confucian Temple main Dacheng Hall SELECTED CENTRAL FACADE DETAIL with terrace/ramp and three bronze censers, NOT a complete whole hall. Preserve the exact cropped architectural detail boundaries and THREE visible central bays of Image1, no addition of complete roof ridge, roof corners or full facade. Roof tile plane current ochre ORANGE/YELLOW glazed tiles; columns and lattice doors DARK RED/BROWN, bracket and beam polychromy BLUE/TEAL/GREEN/offwhite with modest ochre/gold thin lines where photo has them. Central door recess dark grey-brown OPAQUE, don't cut away interior dark material. Stone terrace, balustrade and carved ramp neutral pale GREY/WHITE, details legible and实体 retained. Main bronze roofed incense burner and two small flanking censers dark weathered bronze brown/ochre with neutral highlights, not shiny golden statues. Keep blank plaques and all inscription panels blank. Pure flat white #FFFFFF exterior canvas, no humans, smoke, foliage, floor scene or cast shadows. Entire SELECTED DETAIL within landscape1536x1024, clear white margins, not pretending to show entire roof or hall.",
+  "material_observations": [
+    "现存屋面橙黄琉璃瓦，柱和门窗暗红褐。",
+    "檐下斗栱和彩画深蓝、青绿、白与少量金黄细线。",
+    "丹陛和栏板浅灰白石，香炉暗金褐青铜；中央殿内暗部保持实体。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/tj_wenmiao-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:China_Tianjin_5227532_(10).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/China_Tianjin_5227532_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "ermell",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2015-05-22"
+    }
+  ],
+  "original_research": "assets/research/tj_wenmiao.json",
+  "output": "assets/colored/tj_wenmiao.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4c3c9481-91cb-4d65-9970-ad5c0813df03.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8843dbb4cf3ca7f47bd7f5e233a4656e19b46c5bae8868a8b14d7294e339d528",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "明确为大成殿中部三间立面与丹陛局部，四柱和三香炉保持，不添画全殿屋脊。",
+      "橙黄琉璃屋面、青蓝彩画、暗红门窗、灰白石台及灰褐铜香炉分别取色，留空题字。",
+      "白底原件与透明暗底副本均实际查看；实体浅石与暗色门洞未被去底误删。"
+    ],
+    "limitations": [
+      "仅有近景照片，本图不提供全殿开间或完整屋顶外形；香炉与雕花细部为概括。"
+    ]
+  },
+  "completed_at": "2026-09-16 12:10:25 UTC"
+}

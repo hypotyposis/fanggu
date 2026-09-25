@@ -1,0 +1,92 @@
+{
+  "id": "sd_yantai_huiguan",
+  "name": "烟台福建会馆沿街外观",
+  "subject": "烟台福建会馆沿街外观",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 烟台福建会馆沿街外观\nMATERIAL OBSERVATIONS: 绿灰琉璃瓦、朱红墙面和门扇、浅色石门框与墙边，金黄及彩色脊饰；参考照片2023年，早于2025年修缮。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+  "input_images": [
+    "assets/generated/sd_yantai_huiguan.png",
+    "assets/references/sd_yantai_huiguan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "绿灰琉璃瓦、朱红墙面和门扇、浅色石门框与墙边，金黄及彩色脊饰；参考照片2023年，早于2025年修缮。"
+  ],
+  "references": [
+    {
+      "id": "sd_yantai_huiguan",
+      "file": "assets/references/sd_yantai_huiguan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Fujian_Guild_Hall,_Yantai.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Fujian_Guild_Hall,_Yantai.jpg",
+      "author": "K.Y.K.Z.K.",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2023-01-02",
+      "sha256": "35c08057697a4d491e805ee907de50baf7c628a6c5f3adb31ea7e7e503459b72"
+    }
+  ],
+  "original_research": "assets/research/sd_yantai_huiguan.json",
+  "output": "assets/colored/sd_yantai_huiguan.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 烟台福建会馆沿街外观\nMATERIAL OBSERVATIONS: 绿灰琉璃瓦、朱红墙面和门扇、浅色石门框与墙边，金黄及彩色脊饰；参考照片2023年，早于2025年修缮。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/sd_yantai_huiguan.png",
+        "assets/references/sd_yantai_huiguan-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T22:32:21.459671+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:33:08.395034+08:00",
+      "saved_at": "2026-09-17T22:33:08.475496+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-a7b20cec-710a-4880-9808-c8ceb3218e19.png",
+      "output": "assets/colored/sd_yantai_huiguan.png"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-a7b20cec-710a-4880-9808-c8ceb3218e19.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "64a38414b484fb58f0da8edd98db23b8c494dcda2473ba002673c5ab16d7c155",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "烟台市文化和旅游局：烟台福建会馆",
+      "url": "https://www.yantai.gov.cn/art/2025/1/13/art_43277_3235410.html",
+      "note": "1884始建、1906落成。"
+    },
+    {
+      "title": "烟台市文化和旅游局：福建会馆1996年入选国保",
+      "url": "https://www.yantai.gov.cn/art/2023/12/24/art_43277_3168148.html"
+    },
+    {
+      "title": "烟台市文化和旅游局：2025年福建会馆修缮",
+      "url": "https://www.yantai.gov.cn/art/2025/12/4/art_43277_3299835.html",
+      "note": "本批实拍早于此轮修缮，不声称反映修缮后的所有材质色。"
+    }
+  ],
+  "inputs_viewed": true,
+  "actual_original_background": {
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "note": "提示词要求不透明纯白底；工具实际返回含原生alpha的PNG。原件完整保留，按既有alpha保留流程处理，不称为白底去除效果。"
+  }
+}

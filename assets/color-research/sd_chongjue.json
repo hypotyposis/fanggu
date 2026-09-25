@@ -1,0 +1,83 @@
+{
+  "id": "sd_chongjue",
+  "name": "济宁崇觉寺铁塔塔身与上部台座",
+  "subject": "济宁崇觉寺铁塔塔身与上部台座",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 济宁崇觉寺铁塔塔身与上部台座\nMATERIAL OBSERVATIONS: 铁构锈褐与深灰并存，雕饰与栏杆同属铁质，塔刹灰褐，台座青灰砖。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+  "input_images": [
+    "assets/generated/sd_chongjue.png",
+    "assets/references/sd_chongjue-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "铁构锈褐与深灰并存，雕饰与栏杆同属铁质，塔刹灰褐，台座青灰砖。"
+  ],
+  "references": [
+    {
+      "id": "sd_chongjue",
+      "file": "assets/references/sd_chongjue-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jining_Chongjue_Si_Tieta_2015.08.13_17-14-19.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jining_Chongjue_Si_Tieta_2015.08.13_17-14-19.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2015-08-13",
+      "sha256": "5604292fb22b147e24e95b394cd6fffb9d4ac56f1f3d73c994f2ed335ad57c9e"
+    }
+  ],
+  "original_research": "assets/research/sd_chongjue.json",
+  "output": "assets/colored/sd_chongjue.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 济宁崇觉寺铁塔塔身与上部台座\nMATERIAL OBSERVATIONS: 铁构锈褐与深灰并存，雕饰与栏杆同属铁质，塔刹灰褐，台座青灰砖。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/sd_chongjue.png",
+        "assets/references/sd_chongjue-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T22:32:21.530014+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:35:54.212483+08:00",
+      "saved_at": "2026-09-17T22:35:54.271573+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-c416c993-04b3-4db3-989d-5e92d48d57f9.png",
+      "output": "assets/colored/sd_chongjue.png"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-c416c993-04b3-4db3-989d-5e92d48d57f9.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a004b2dd659a3f99359ece32cf8c250b40df52bc50c3934044a66b65bd4f0d8d",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "济宁市文旅局：崇觉寺铁塔",
+      "url": "https://whlyj.jining.gov.cn/art/2025/6/12/art_70690_2706007.html",
+      "note": "1105宋建七级，1581明增两级；第三批国保。"
+    }
+  ],
+  "inputs_viewed": true,
+  "actual_original_background": {
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "note": "提示词要求不透明纯白底；工具实际返回含原生alpha的PNG。原件完整保留，按既有alpha保留流程处理，不称为白底去除效果。"
+  }
+}

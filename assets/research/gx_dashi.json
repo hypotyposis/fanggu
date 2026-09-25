@@ -1,0 +1,143 @@
+{
+  "id": "gx_dashi",
+  "subject": "合浦永安大士阁前阁及相连后阁",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dashi_Pavilion.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Dashi_Pavilion.jpg/1280px-Dashi_Pavilion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Huanghsindon",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gx_dashi-photo.jpg"
+  ],
+  "source_note": "第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 合浦永安大士阁前阁及相连后阁.\nLandscape 1536x1024. Draw only the main Dashi Pavilion connected front and rear timber roofs, open columned lower level and the taller rear roof showing above the front roof as photographed. Preserve its connecting depth; it is not a single tower. Exclude the detached incense-burner pavilions at left and right. Remove burners, offerings, crowds, flags and lettering.\nStructure checkpoints: 前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。",
+  "generated_file": "assets/generated/gx_dashi.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。"
+  ],
+  "caption": [
+    "合浦永安大士阁前阁及相连后阁 · 线稿",
+    "明 · 明代"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:32:01.016Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 合浦永安大士阁前阁及相连后阁.\nLandscape 1536x1024. Draw only the main Dashi Pavilion connected front and rear timber roofs, open columned lower level and the taller rear roof showing above the front roof as photographed. Preserve its connecting depth; it is not a single tower. Exclude the detached incense-burner pavilions at left and right. Remove burners, offerings, crowds, flags and lettering.\nStructure checkpoints: 前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gx_dashi-photo.jpg"
+      ],
+      "received_at": "2026-09-17T12:35:08.526Z",
+      "saved_at": "2026-09-17T12:41:14.252Z",
+      "original_file": "assets/generated/gx_dashi.png",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3b736aff-1161-4604-aa73-92c17d888811.png"
+    }
+  ],
+  "generated_original": "assets/generated/gx_dashi.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a3408a4558ab946e27bafe4414d798c66cf4e498e77f88646bd35801cc3f899b",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gx_dashi",
+      "file": "assets/references/gx_dashi-photo.jpg",
+      "sha256": "3c0960f7432fcce30b6736fa0c8c1d86e75d13aa0770eba3bd30b74a1e102fc5",
+      "title": "File:Dashi Pavilion.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Dashi_Pavilion.jpg/1280px-Dashi_Pavilion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Dashi_Pavilion.jpg",
+      "author": "Huanghsindon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "广西政府历史沿革：明代合浦大士阁与容县真武阁",
+      "url": "https://www.gxzf.gov.cn/html/mlgxi/gxrw/lsyg_29590/t20880492.shtml"
+    },
+    {
+      "title": "国务院公报第三批国保名单：大士阁，明，广西合浦",
+      "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+    }
+  ],
+  "site_recommendation": {
+    "name": "合浦永安大士阁",
+    "short": "大士阁",
+    "sub": "前低后高 · 相连木阁",
+    "place": "广西合浦 · 永安",
+    "placeKey": "gx_hepu_yongan",
+    "types": [
+      "pavilion"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代 · 确年未定",
+    "year": 1500,
+    "yearApprox": true,
+    "yearLabel": "明代",
+    "yearNote": "第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。",
+    "lede": "前阁低、后阁高，屋面逐次抬起，开放木柱之间能看到内部梁架。合浦永安的小阁，以相连体量和木构关系留下鲜明轮廓。",
+    "history": [
+      {
+        "title": "广西政府历史沿革：明代合浦大士阁与容县真武阁",
+        "url": "https://www.gxzf.gov.cn/html/mlgxi/gxrw/lsyg_29590/t20880492.shtml"
+      },
+      {
+        "title": "国务院公报第三批国保名单：大士阁，明，广西合浦",
+        "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+      }
+    ],
+    "protection": {
+      "batch": 3,
+      "unitName": "大士阁",
+      "relation": "unit",
+      "locator": "PDF 第13页（公报109页）· 总序号103 / 古建筑51 · 大士阁 · 合浦县"
+    },
+    "id": "gx_dashi",
+    "subject": "合浦永安大士阁前阁及相连后阁",
+    "checkpoint": "前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。",
+    "material": "旧木柱红褐，瓦面灰褐，檐口瓦当鲜蓝、梁枋青绿蓝与少量黄，墙台灰石；不复制香炉红色。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "合浦永安大士阁前阁及相连后阁 · 线稿",
+      "明 · 明代"
+    ],
+    "facts": [
+      "<b>主体</b> 合浦永安大士阁前阁及相连后阁。",
+      "<b>年代</b> 第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。",
+      "<b>图版范围</b> 前低后高相连阁体，下层开敞木柱，灰瓦、蓝绿彩绘檐口，不把左右香炉亭并入。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "gx_dashi",
+      "file": "assets/references/gx_dashi-photo.jpg",
+      "sha256": "3c0960f7432fcce30b6736fa0c8c1d86e75d13aa0770eba3bd30b74a1e102fc5",
+      "title": "File:Dashi Pavilion.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Dashi_Pavilion.jpg/1280px-Dashi_Pavilion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Dashi_Pavilion.jpg",
+      "author": "Huanghsindon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dashi_Pavilion.jpg"
+    }
+  ],
+  "additional_sources": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "tj_wenmiao",
+  "subject": "天津文庙 · 府庙大成殿中部立面与丹陛",
+  "status": "complete",
+  "file": "assets/references/tj_wenmiao-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:China_Tianjin_5227532_(10).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/China_Tianjin_5227532_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "ermell",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "date": "2015-05-22",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tj_wenmiao-photo.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "现有清晰署名实拍为中部近景，本图主动限定大成殿中部立面、丹陛与香炉，不补造未在照片中显示的全殿两侧、屋脊或完整开间。去掉游客、灯杆与庭院地面，牌匾及香炉文字留白。",
+  "prompt": "Use case: style-transfer. Create one sparse fine BLACK INK heritage atlas DETAIL plate of Tianjin Confucian Temple main Dacheng Hall. Image1 is Longmen LINE STYLE MASTER ONLY. Image2 actual photograph gives precise subject geometry. Selected subject is ONLY the photo's THREE CENTRAL facade bays, eave brackets and painted beam panel outlines, part of orange tile slope above, pale stone terrace balustrade, complete central steps and carved ramp, large roofed bronze incense burner on terrace plus TWO small flanking bronze censers. This is an intentional architectural DETAIL, NOT a whole hall view. Do not invent unseen side bays, full roof ridge, curled roof corners or additional architecture outside photo. Retain exact central doorway and two flanking lattice window/door panels, four front pillars framing three visible bays. Partial roof plane can end in clean drawing-section boundaries within canvas, without a rectangular photo backdrop. Remove tourist, trees, lamp posts, metal handrail added around ramp, smoke, courtyard pavement and sky. Leave all plaque and burner inscription faces BLANK, no Chinese characters or pseudo-letters. Doors/windows fine outlines without broad black fill. Black delicate contour lines only with selective structural ornament, not dense shadows or grayscale. Flat pure opaque WHITE #FFFFFF all nonink regions inside and outside. Center entire SELECTED DETAIL within landscape1536x1024 with generous8% clear white margins, no image frame, shading, color, paper texture, gradient, glow, checkerboard or watermark. All depicted steps and terrace bottom uncut; architecture cut boundaries are intentional subject limits recorded as central detail.",
+  "generated_file": "assets/generated/tj_wenmiao.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a7286311-4210-46f0-b82d-ca0f015d2bce.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "天津文庙 · 大成殿中部与丹陛",
+    "明清遗构 · 1436为文庙初创"
+  ],
+  "historical_sources": [
+    {
+      "title": "天津市文化和旅游局 · 天津文庙始建与整体修缮",
+      "url": "https://whly.tj.gov.cn/tjswlzxw/sy1/rmzx/202407/t20240701_6664528.html"
+    },
+    {
+      "title": "北京旅游网 · 天津文庙府县并列与黄琉璃瓦",
+      "url": "https://s.visitbeijing.com.cn/attraction/118507"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9b18b901bbe81a90cb6607237550fad0dfa20410d7003d901ad9365a49c49c50",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "明确为府庙大成殿中部三间立面局部，不冒充完整大殿；四柱、屋面片段、丹陛及三香炉可见。",
+      "删除游客、栏杆、路灯与铭文，留空牌匾。"
+    ],
+    "limitations": [
+      "参考只覆盖中部，不能据此推测大殿全屋脊及四角；局部边界为主动取景。",
+      "纹饰为线描概括而非精确复制。"
+    ]
+  }
+}

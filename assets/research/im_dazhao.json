@@ -1,0 +1,123 @@
+{
+  "id": "im_dazhao",
+  "subject": "呼和浩特大召寺大雄宝殿",
+  "status": "needs_review",
+  "historical_sources": [
+    {
+      "title": "大召沿革与现存经堂、大佛殿",
+      "url": "https://www.cidianwang.com/lishi/diming/6/12066at.htm"
+    },
+    {
+      "title": "大召实拍主体署名：大雄宝殿",
+      "url": "https://commons.wikimedia.org/wiki/File:大召大雄宝殿.jpg"
+    }
+  ],
+  "source_note": "1600仅作明清主体的约略排序点，不宣称大雄宝殿精确竣工年；寺院1580建成，清代扩建及改铺黄琉璃瓦分别记录。 实拍为形制输入，照片中的遮挡与角度限制留待用户核对，不声称实测。",
+  "caption": [
+    "呼和浩特大召寺大雄宝殿 · 线稿 · 待用户验收",
+    "明清 · 明清"
+  ],
+  "structure_checkpoints": [
+    "固定实拍的大雄宝殿，汉藏结合经堂前立面与后部屋面；不画驻云径处过殿或外部新山门。"
+  ],
+  "generated_file": "assets/generated/im_dazhao.png",
+  "generation_tool": "built-in image_gen",
+  "reference_candidates": [
+    {
+      "id": "im_dazhao",
+      "file": "assets/references/im_dazhao-hall-photo.jpg",
+      "title": "大召大雄宝殿.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:大召大雄宝殿.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-01-04"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "site_recommendation": {
+    "id": "im_dazhao",
+    "name": "呼和浩特大召寺",
+    "short": "大召",
+    "sub": "无量寺 · 大雄宝殿",
+    "subject": "呼和浩特大召寺大雄宝殿",
+    "prov": "内蒙古",
+    "place": "内蒙古呼和浩特 · 玉泉",
+    "placeKey": "hohhot",
+    "types": [
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明代创建 · 清代改修",
+    "year": 1600,
+    "yearApprox": true,
+    "yearLabel": "明清",
+    "yearNote": "1600仅作明清主体的约略排序点，不宣称大雄宝殿精确竣工年；寺院1580建成，清代扩建及改铺黄琉璃瓦分别记录。",
+    "checkpoint": "固定实拍的大雄宝殿，汉藏结合经堂前立面与后部屋面；不画驻云径处过殿或外部新山门。",
+    "history": [
+      {
+        "title": "大召沿革与现存经堂、大佛殿",
+        "url": "https://www.cidianwang.com/lishi/diming/6/12066at.htm"
+      },
+      {
+        "title": "大召实拍主体署名：大雄宝殿",
+        "url": "https://commons.wikimedia.org/wiki/File:大召大雄宝殿.jpg"
+      }
+    ],
+    "lede": "在呼和浩特旧城，大召把藏传佛教的经堂与汉式殿宇连成一体。寺院因银佛得名，现存建筑还叠加着清代改修的痕迹；图版只画大雄宝殿，不把整座召庙压缩成一座山门。",
+    "facts": [
+      "<b>寺院沿革</b> 明代阿拉坦汗主持营建，1580年寺成；此后清代屡有改修。",
+      "<b>所绘主体</b> 以明确标注的大雄宝殿实拍为准，保留汉藏结合的经堂、佛殿体量。",
+      "<b>断代说明</b> 现貌包含明清营建与修缮层次；年表使用约略位置，不将寺院初建年等同每个现存构件的年代。"
+    ],
+    "initialStatus": "unvisited",
+    "country": "CN"
+  },
+  "file": "assets/references/im_dazhao-hall-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:大召大雄宝殿.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%E5%A4%A7%E5%8F%AC%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg/1280px-%E5%A4%A7%E5%8F%AC%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "三猎",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2016-01-04",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/im_dazhao-hall-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 呼和浩特大召寺大雄宝殿.\nSCOPE AND IDENTIFYING STRUCTURE: 固定实拍的大雄宝殿，汉藏结合经堂前立面与后部屋面；不画驻云径处过殿或外部新山门。\nLandscape 1536×1024.",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 呼和浩特大召寺大雄宝殿.\nSCOPE AND IDENTIFYING STRUCTURE: 固定实拍的大雄宝殿，汉藏结合经堂前立面与后部屋面；不画驻云径处过殿或外部新山门。\nLandscape 1536×1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/im_dazhao-hall-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T16:46:43.142Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:49:17.183Z",
+      "saved_at": "2026-09-16T16:49:17.458Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-34b93be5-8ec4-41a8-a83d-cee42e429bc7.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2124c8337842f57f89fc87452562ea18e7691160c10ceb621ee995329ae56460",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-34b93be5-8ec4-41a8-a83d-cee42e429bc7.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-34b93be5-8ec4-41a8-a83d-cee42e429bc7.png"
+}

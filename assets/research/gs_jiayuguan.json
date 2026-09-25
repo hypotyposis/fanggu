@@ -1,0 +1,168 @@
+{
+  "id": "gs_jiayuguan",
+  "subject": "西侧嘉峪关楼与门台",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jiayuguan_Gatetower_(20230919150124).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+  "author": "N509FZ",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gs_jiayuguan-photo.jpg"
+  ],
+  "source_note": "图绘西侧嘉峪关楼与门台。关楼在明弘治至正德年间营建，后世持续修缮；1500仅为约略排序，不等于竣工年份，也不以1372年始置关替代楼的年代。 原型阶段由用户人眼验收；参考照片拍摄时间另见 references。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 西侧嘉峪关楼与门台.\nLandscape 1536x1024. Draw the full three-storey western Jiayuguan gatetower in the 2023 photo. Include its thick rectangular gate platform, one central arched opening below, and SHORT symmetric wall segments. Exclude people, the long wall panorama and the other two towers. Keep all plaques blank.\nStructure checkpoints: 三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。",
+  "generated_file": "assets/generated/gs_jiayuguan.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。"
+  ],
+  "caption": [
+    "西侧嘉峪关楼与门台 · 线稿",
+    "明 · 弘治—正德"
+  ],
+  "inputs_viewed": true,
+  "references": [
+    {
+      "title": "File:Jiayuguan Gatetower (20230919150124).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg/1280px-Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jiayuguan_Gatetower_(20230919150124).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-09-19 15:01:24",
+      "description": "Western end!",
+      "categories": "Great Wall of China at Jiayuguan|China photographs taken on 2023-09-19|Self-published work|Files with coordinates missing SDC location of creation",
+      "lat": "39.801042",
+      "lon": "98.214256",
+      "file": "assets/references/gs_jiayuguan-photo.jpg",
+      "id": "gs_jiayuguan",
+      "sha256": "afb883586dfafd2aa8c9f604bd8d957807ccf3c627c4b4dc8badef9312e46154"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "甘肃文博会：古韵长城 壮美雄关（楼与城的营建区别）",
+      "url": "https://www.gswbj.gov.cn/a/2024/08/27/21791.html"
+    },
+    {
+      "title": "甘肃政务服务网：嘉峪关第一批国保",
+      "url": "https://zwfw.gansu.gov.cn/jiayuguan/tsfw/lyzq/lyzx/jdjs/art/2022/art_e1e7ae8fb95145368ae63372ac4be280.html"
+    }
+  ],
+  "site_recommendation": {
+    "id": "gs_jiayuguan",
+    "name": "嘉峪关",
+    "short": "嘉峪关",
+    "subject": "西侧嘉峪关楼与门台",
+    "sub": "西关楼 · 门台",
+    "place": "甘肃嘉峪关 · 明长城",
+    "placeKey": "gs_jiayu",
+    "types": [
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明弘治至正德营建",
+    "year": 1500,
+    "yearApprox": true,
+    "yearLabel": "弘治—正德",
+    "yearNote": "图绘西侧嘉峪关楼与门台。关楼在明弘治至正德年间营建，后世持续修缮；1500仅为约略排序，不等于竣工年份，也不以1372年始置关替代楼的年代。",
+    "lede": "三层关楼立在厚实门台上，一道拱券穿过黄土色城墙。只取西关楼，不把光化、柔远两楼拼入同一幅图。",
+    "checkpoint": "三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。",
+    "material": "浅灰褐瓦、暗红木柱与栏杆、蓝绿檐下彩画；门台和城墙为土黄砂褐，门洞内暗部；不要整楼镀金。",
+    "lineDetail": "Landscape 1536x1024. Draw the full three-storey western Jiayuguan gatetower in the 2023 photo. Include its thick rectangular gate platform, one central arched opening below, and SHORT symmetric wall segments. Exclude people, the long wall panorama and the other two towers. Keep all plaques blank.",
+    "history": [
+      {
+        "title": "甘肃文博会：古韵长城 壮美雄关（楼与城的营建区别）",
+        "url": "https://www.gswbj.gov.cn/a/2024/08/27/21791.html"
+      },
+      {
+        "title": "甘肃政务服务网：嘉峪关第一批国保",
+        "url": "https://zwfw.gansu.gov.cn/jiayuguan/tsfw/lyzq/lyzx/jdjs/art/2022/art_e1e7ae8fb95145368ae63372ac4be280.html"
+      }
+    ],
+    "protection": {
+      "batch": 1,
+      "unitName": "万里长城—嘉峪关",
+      "relation": "part",
+      "source": "batch1",
+      "scope": "西侧嘉峪关楼与门台",
+      "locator": "国务院该批名单 · 甘肃 · 万里长城—嘉峪关",
+      "scopeSources": [
+        {
+          "title": "甘肃文博会：古韵长城 壮美雄关（楼与城的营建区别）",
+          "url": "https://www.gswbj.gov.cn/a/2024/08/27/21791.html"
+        },
+        {
+          "title": "甘肃政务服务网：嘉峪关第一批国保",
+          "url": "https://zwfw.gansu.gov.cn/jiayuguan/tsfw/lyzq/lyzx/jdjs/art/2022/art_e1e7ae8fb95145368ae63372ac4be280.html"
+        }
+      ]
+    },
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false,
+    "caption": [
+      "西侧嘉峪关楼与门台 · 线稿",
+      "明 · 弘治—正德"
+    ],
+    "facts": [
+      "<b>主体</b> 西侧嘉峪关楼与门台。",
+      "<b>年代</b> 图绘西侧嘉峪关楼与门台。关楼在明弘治至正德年间营建，后世持续修缮；1500仅为约略排序，不等于竣工年份，也不以1372年始置关替代楼的年代。",
+      "<b>图版范围</b> 三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。"
+    ]
+  },
+  "sources": [
+    {
+      "title": "File:Jiayuguan Gatetower (20230919150124).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg/1280px-Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jiayuguan_Gatetower_(20230919150124).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-09-19 15:01:24",
+      "description": "Western end!",
+      "categories": "Great Wall of China at Jiayuguan|China photographs taken on 2023-09-19|Self-published work|Files with coordinates missing SDC location of creation",
+      "lat": "39.801042",
+      "lon": "98.214256",
+      "file": "assets/references/gs_jiayuguan-photo.jpg",
+      "id": "gs_jiayuguan",
+      "sha256": "afb883586dfafd2aa8c9f604bd8d957807ccf3c627c4b4dc8badef9312e46154",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jiayuguan_Gatetower_(20230919150124).jpg"
+    }
+  ],
+  "additional_sources": [],
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T14:08:14.112Z",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\n\nNAMED SUBJECT: 西侧嘉峪关楼与门台.\nLandscape 1536x1024. Draw the full three-storey western Jiayuguan gatetower in the 2023 photo. Include its thick rectangular gate platform, one central arched opening below, and SHORT symmetric wall segments. Exclude people, the long wall panorama and the other two towers. Keep all plaques blank.\nStructure checkpoints: 三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gs_jiayuguan-photo.jpg"
+      ],
+      "received_at": "2026-09-17T14:08:54.603Z",
+      "saved_at": "2026-09-17T14:08:54.735Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-60d3497d-153c-45db-8837-3e33ca65c1ff.png",
+      "original_file": "assets/generated/gs_jiayuguan.png"
+    }
+  ],
+  "generated_original": "assets/generated/gs_jiayuguan.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bee1ebe4e3cc80e7b509ebbdb959504782c77d9fd5d05fb013d617ae00fa4cf1",
+    "seeds": []
+  }
+}

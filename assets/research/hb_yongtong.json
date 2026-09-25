@@ -1,0 +1,138 @@
+{
+  "id": "hb_yongtong",
+  "subject": "赵县永通桥整桥侧立面",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_(1).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_%281%29.jpg",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "file": "assets/references/hb_yongtong-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_(1).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_%281%29.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2020-06-13 15:05:58",
+      "sha256": "7f2725a71ba58b58e22608d12091913aeeb21be75e5fca9bc3488fcf28ffe22d"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_yongtong-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Yongtong small stone bridge in Zhao County, NOT Zhaozhou Anji bridge. One shallow large circular main arch and FOUR small spandrel arches, exactly two on each shoulder. Full end abutments, gently curved bridge deck, carved stone parapet and posts. Near side elevation, preserve actual proportions and sculpture sparingly. White inside all five arch openings; no water, reeds, lotus, lamps, buildings or trees."
+  ],
+  "material_observations": [
+    "灰白与灰褐石材、栏板雕刻，石拱内侧略深灰；不保留池水或荷叶。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 赵县永通桥整桥侧立面\nLandscape 1536x1024. Complete Yongtong small stone bridge in Zhao County, NOT Zhaozhou Anji bridge. One shallow large circular main arch and FOUR small spandrel arches, exactly two on each shoulder. Full end abutments, gently curved bridge deck, carved stone parapet and posts. Near side elevation, preserve actual proportions and sculpture sparingly. White inside all five arch openings; no water, reeds, lotus, lamps, buildings or trees.",
+  "generated_file": "assets/generated/hb_yongtong.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 赵县永通桥整桥侧立面\nLandscape 1536x1024. Complete Yongtong small stone bridge in Zhao County, NOT Zhaozhou Anji bridge. One shallow large circular main arch and FOUR small spandrel arches, exactly two on each shoulder. Full end abutments, gently curved bridge deck, carved stone parapet and posts. Near side elevation, preserve actual proportions and sculpture sparingly. White inside all five arch openings; no water, reeds, lotus, lamps, buildings or trees.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_yongtong-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:27:31.983524+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:31:49.424817+08:00",
+      "saved_at": "2026-09-17T23:31:49.452315+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-ea3008b7-d36f-4399-984e-0a61490ec7b7.png",
+      "output": "assets/generated/hb_yongtong.png"
+    }
+  ],
+  "caption": [
+    "赵县 · 永通桥整桥侧立面",
+    "单孔四小券 · 金明昌年间"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-ea3008b7-d36f-4399-984e-0a61490ec7b7.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4f8ceefe6f84a62889f2d757babcaf6258537fcae60ef766f6dccf9d8771d59e",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_yongtong",
+    "name": "永通桥",
+    "short": "小石桥",
+    "sub": "赵县 · 单孔敞肩石拱桥",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金明昌年间",
+    "year": 1192,
+    "yearLabel": "1190—1195",
+    "yearApprox": true,
+    "yearNote": "按河北文物局记载金明昌年间（1190—1195）建桥；1192为范围排序点，不将更早传说作为现存主体纪年。",
+    "place": "河北赵县 · 赵州镇",
+    "placeKey": "hb_赵县",
+    "types": [
+      "bridge"
+    ],
+    "lede": "一孔低缓石拱的两肩各开两孔小券，桥面在石栏间轻轻隆起。赵县的小石桥以较小尺度，延续了敞肩石拱的结构语言。",
+    "facts": [
+      "本图绘永通桥整桥侧立面，包含主拱、四个敞肩小券与石栏。",
+      "河北文物局将建桥年代列为金明昌年间（1190—1195）。",
+      "官方记主跨约26米；与安济桥分立条目，避免同名或别名混用。"
+    ],
+    "legacyNames": [
+      "赵县小石桥",
+      "永通桥（小石桥）"
+    ],
+    "caption": [
+      "赵县 · 永通桥整桥侧立面",
+      "单孔四小券 · 金明昌年间"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.758400+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_yongtong-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_(1).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_%281%29.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2020-06-13 15:05:58",
+      "sha256": "7f2725a71ba58b58e22608d12091913aeeb21be75e5fca9bc3488fcf28ffe22d",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%B5%B5%E5%8E%BF%E6%B0%B8%E9%80%9A%E6%A1%A52021_(1).jpg"
+    }
+  ]
+}

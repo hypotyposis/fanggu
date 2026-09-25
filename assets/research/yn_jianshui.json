@@ -1,0 +1,123 @@
+{
+  "id": "yn_jianshui",
+  "subject": "建水文庙先师殿",
+  "status": "needs_review",
+  "historical_sources": [
+    {
+      "title": "建水文庙先师殿形制与弘治营建资料",
+      "url": "https://zh.wikipedia.org/wiki/建水文庙"
+    },
+    {
+      "title": "云南省住房城乡建设厅：建水风景名胜区",
+      "url": "https://zfcxjst.yn.gov.cn/fengjingmingsheng7546/guojiajifengjingmingshengqu7554/1049.html"
+    }
+  ],
+  "source_note": "1495仅为弘治年间1488—1505的约略排序，按所绘先师殿断代，不以文庙1285始建年代代替。 实拍为形制输入，照片中的遮挡与角度限制留待用户核对，不声称实测。",
+  "caption": [
+    "建水文庙先师殿 · 线稿 · 待用户验收",
+    "明 · 弘治年间"
+  ],
+  "structure_checkpoints": [
+    "先师殿面阔五间、单檐歇山顶、青石檐柱及完整台基；不误画前方牌坊或重檐殿。"
+  ],
+  "generated_file": "assets/generated/yn_jianshui.png",
+  "generation_tool": "built-in image_gen",
+  "reference_candidates": [
+    {
+      "id": "yn_jianshui",
+      "file": "assets/references/yn_jianshui-photo.jpg",
+      "title": "建水文庙 - 先师殿 - 2025-04-28 03.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:建水文庙 - 先师殿 - 2025-04-28 03.jpg",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2025-04-28"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "site_recommendation": {
+    "id": "yn_jianshui",
+    "name": "建水文庙",
+    "short": "建水文庙",
+    "sub": "先师殿 · 大成殿",
+    "subject": "建水文庙先师殿",
+    "prov": "云南",
+    "place": "云南建水 · 临安古城",
+    "placeKey": "jianshui",
+    "types": [
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明弘治年间",
+    "year": 1495,
+    "yearApprox": true,
+    "yearLabel": "弘治年间",
+    "yearNote": "1495仅为弘治年间1488—1505的约略排序，按所绘先师殿断代，不以文庙1285始建年代代替。",
+    "checkpoint": "先师殿面阔五间、单檐歇山顶、青石檐柱及完整台基；不误画前方牌坊或重檐殿。",
+    "history": [
+      {
+        "title": "建水文庙先师殿形制与弘治营建资料",
+        "url": "https://zh.wikipedia.org/wiki/建水文庙"
+      },
+      {
+        "title": "云南省住房城乡建设厅：建水风景名胜区",
+        "url": "https://zfcxjst.yn.gov.cn/fengjingmingsheng7546/guojiajifengjingmingshengqu7554/1049.html"
+      }
+    ],
+    "lede": "学海与层层院落的尽头，先师殿以一片舒展的屋面面对古城。文庙始于元代，这座单檐歇山的主体殿堂则属于明弘治年间；石柱与格扇，把云南的工艺细节留在了儒学建筑里。",
+    "facts": [
+      "<b>所绘主体</b> 先师殿，即大成殿，面阔五间，单檐歇山顶。",
+      "<b>年代</b> 殿堂建于明弘治年间（1488—1505）；1285年是文庙初建年代。",
+      "<b>石作</b> 外檐青石柱与雕刻格扇为其特色，图版只画先师殿本体，不概括整个文庙。"
+    ],
+    "initialStatus": "unvisited",
+    "country": "CN"
+  },
+  "file": "assets/references/yn_jianshui-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:建水文庙 - 先师殿 - 2025-04-28 03.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%E5%BB%BA%E6%B0%B4%E6%96%87%E5%BA%99_-_%E5%85%88%E5%B8%88%E6%AE%BF_-_2025-04-28_03.jpg/1280px-%E5%BB%BA%E6%B0%B4%E6%96%87%E5%BA%99_-_%E5%85%88%E5%B8%88%E6%AE%BF_-_2025-04-28_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "瑞丽江的河水",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2025-04-28",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yn_jianshui-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 建水文庙先师殿.\nSCOPE AND IDENTIFYING STRUCTURE: 先师殿面阔五间、单檐歇山顶、青石檐柱及完整台基；不误画前方牌坊或重檐殿。\nLandscape 1536×1024.",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 建水文庙先师殿.\nSCOPE AND IDENTIFYING STRUCTURE: 先师殿面阔五间、单檐歇山顶、青石檐柱及完整台基；不误画前方牌坊或重檐殿。\nLandscape 1536×1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/yn_jianshui-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T16:46:43.142Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:48:41.095Z",
+      "saved_at": "2026-09-16T16:48:41.445Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5d2c000a-fcc0-4c5a-a8b9-af727717b342.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a6f47a69fc8601e5ab8b8f2052a6aef341f1369f12a71864b1a1f0a98fa38b34",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5d2c000a-fcc0-4c5a-a8b9-af727717b342.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5d2c000a-fcc0-4c5a-a8b9-af727717b342.png"
+}

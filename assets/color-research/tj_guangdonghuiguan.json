@@ -1,0 +1,71 @@
+{
+  "id": "tj_guangdonghuiguan",
+  "name": "天津广东会馆",
+  "subject": "天津广东会馆 · 戏台与鸡笼式藻井局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/tj_guangdonghuiguan.png",
+    "assets/references/tj_guangdonghuiguan-photo.jpg",
+    "assets/references/tj_guangdonghuiguan-detail.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Tianjin Guangdong Guildhall theatre SELECTED INTERIOR STAGE AND CHICKEN-COOP spiral domed CAISSON detail. Preserve Image1 exact stage, wide suspended square canopy with an elliptical view of the round spiral inward caisson, NO pillars planted on the projecting stage, and short two-storey side gallery segments. Timber dark RED-BROWN, offwhite/grey wall and window panels, stage backdrop muted red-brown with actual red, teal-green and ochre-gold polychrome carved circular motif. Caisson spiral interlocking ribs current muted JADE/TEAL GREEN with ochre/gold and small red ornament, not all gold or monochrome green. Side galleries neutral dark brown wood. Keep blank plaques blank, no text, neon strip lights, screen, audience, chairs, lantern glow or invented scene. Window glazing and white wall panels are real OPAQUE grey/offwhite material, not open-air holes. All exterior space around this isolated interior architectural detail pure white #FFFFFF; floor means ONLY the drawn stage platform, no surrounding ground plane or cast shadow. Refined thin contours with matte restrained colors, complete selected local structure centered landscape1536x1024.",
+  "material_observations": [
+    "侧廊与雕花横梁暗红褐木材，墙面和上窗板浅灰白。",
+    "戏台背景及面板暗红褐，现存彩绘红、青绿和局部赭金。",
+    "藻井螺旋梁栱青绿色与赭黄、红色细部，按现存照片克制保留，不复制灯光亮线。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/tj_guangdonghuiguan-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_(4).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-03-03 13:52:59"
+    },
+    {
+      "file": "assets/references/tj_guangdonghuiguan-detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_(5).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-03-03 13:53:43"
+    }
+  ],
+  "original_research": "assets/research/tj_guangdonghuiguan.json",
+  "output": "assets/colored/tj_guangdonghuiguan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-130014f2-2270-46e3-81ab-8cd0cb466be6.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2dd6258ed8cb8f21c01cf3fcdbc64597ee8d7ac7a259d8c09fac5e267c7b5168",
+    "seeds": [
+      [
+        400,
+        650
+      ],
+      [
+        1130,
+        650
+      ]
+    ]
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "戏台、方罩圆形鸡笼式藻井及短段二层看廊保持，无落地柱遮挡伸出式台前。",
+      "暗红褐木作、藻井青绿地与赭金肋线、雕花局部红绿彩绘依实拍取色；窗墙浅色嵌板保留实体。",
+      "暗底透明图实际查看，两个所选构图留空区按记录种子去白底，未删浅色壁板或木雕，无现代LED、灯笼、观众及文字。"
+    ],
+    "limitations": [
+      "室内图为局部剖取式表达；藻井和人物雕花不是构件测绘，照片室内色温未经标定。"
+    ]
+  },
+  "completed_at": "2026-09-16 12:10:25 UTC"
+}

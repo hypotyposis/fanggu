@@ -1,0 +1,86 @@
+{
+  "id": "hu_yueyang",
+  "name": "岳阳楼",
+  "subject": "岳阳楼三层主体楼阁",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 岳阳楼三层主体楼阁.\nPresent material observations: 现状黄色琉璃瓦、暗红褐梁柱与栏杆、近黑木门窗，檐下少量蓝绿彩画，浅灰石台基；不是整楼金色。\nKeep EXACTLY the line drawing's selected subject and crop: 三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。",
+  "input_images": [
+    "assets/generated/hu_yueyang.png",
+    "assets/references/hu_yueyang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "现状黄色琉璃瓦、暗红褐梁柱与栏杆、近黑木门窗，檐下少量蓝绿彩画，浅灰石台基；不是整楼金色。"
+  ],
+  "references": [
+    {
+      "id": "hu_yueyang",
+      "file": "assets/references/hu_yueyang-photo.jpg",
+      "sha256": "38ea90e261eb03063286c35dd93019f676efb03596dd83c4b863df25ae97f7b1",
+      "title": "File:Frontal view of Yueyang Tower, Hunan, China1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2018-04-18 13:08:16"
+    }
+  ],
+  "line_source": "assets/generated/hu_yueyang.png",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
+  "author": "Huangdan2060",
+  "license": "CC0",
+  "original_research": "assets/research/hu_yueyang.json",
+  "output": "assets/colored/hu_yueyang.png",
+  "generated_original": "assets/color-studies/v1/hu_yueyang-colored.png",
+  "original_file": "assets/color-studies/v1/hu_yueyang-colored.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "historical_sources": [
+    {
+      "title": "岳阳市政府：岳阳楼现存清代形制与1984年大修",
+      "url": "https://www.yueyang.gov.cn/ml/content_51560.html"
+    },
+    {
+      "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
+      "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+    }
+  ],
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T13:22:48.308Z",
+      "completed_at": "2026-09-17T13:23:26.760Z",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 岳阳楼三层主体楼阁.\nPresent material observations: 现状黄色琉璃瓦、暗红褐梁柱与栏杆、近黑木门窗，檐下少量蓝绿彩画，浅灰石台基；不是整楼金色。\nKeep EXACTLY the line drawing's selected subject and crop: 三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。",
+      "input_images": [
+        "assets/generated/hu_yueyang.png",
+        "assets/references/hu_yueyang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/color-studies/v1/hu_yueyang-colored.png",
+      "received_at": "2026-09-17T13:23:26.760Z",
+      "saved_at": "2026-09-17T13:23:26.905Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-18a41119-e287-4ab2-b460-b65946bea546.png"
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "72ee2622175ac73b6ca2fe81524b10fa8ba3a8a6b4dc82a402c2c483258545d1",
+    "seeds": []
+  }
+}

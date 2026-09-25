@@ -1,0 +1,139 @@
+{
+  "id": "gd_meian",
+  "name": "肇庆梅庵",
+  "subject": "梅庵大雄宝殿完整殿体",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 梅庵大雄宝殿完整殿体\nPRESENT MATERIAL OBSERVATIONS: 灰褐瓦、旧木梁柱深褐与局部暗红，墙面灰白、台基灰石；不涂金屋顶。\nKeep complete original line composition and geometry. Do not introduce photo occluders or other buildings.",
+  "input_images": [
+    "assets/generated/gd_meian.png",
+    "assets/references/gd_meian-photo.jpg",
+    "assets/references/gd_meian-full-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰褐瓦、旧木梁柱深褐与局部暗红，墙面灰白、台基灰石；不涂金屋顶。"
+  ],
+  "references": [
+    {
+      "title": "File:肇庆梅庵大殿.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG",
+      "author": "Haier7917",
+      "license": "CC BY-SA 3.0",
+      "file": "assets/references/gd_meian-photo.jpg",
+      "sha256": "6f92f574905bb57809e89ba8177cf05497a9be77d7a6f10479b2ded6bf5a9aa9",
+      "id": "gd_meian",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "page": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml",
+      "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa/images/0e7bb3495caf4732a75f5d3da3c1bfb2.jpg",
+      "author": "广东省文物局（网页出处；摄影者未标明）",
+      "license": "未标明再利用许可；仅本地形制参考，不随 Git 交付",
+      "file": "assets/references/gd_meian-full-photo.jpg",
+      "sha256": "4a5a67bce5915bb60f78d3d22f966ced1cec238cf56f6ff43504bc2047b8d3ed",
+      "id": "gd_meian"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/%E8%82%87%E5%BA%86%E6%A2%85%E5%BA%B5%E5%A4%A7%E6%AE%BF.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "author": "Haier7917",
+  "license": "CC BY-SA 3.0",
+  "original_research": "assets/research/gd_meian.json",
+  "output": "assets/colored/gd_meian.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:46:01.202Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 梅庵大雄宝殿完整殿体\nPRESENT MATERIAL OBSERVATIONS: 灰褐瓦、旧木梁柱深褐与局部暗红，墙面灰白、台基灰石；不涂金屋顶。\nKeep complete original line composition and geometry. Do not introduce photo occluders or other buildings.",
+      "reference_files": [
+        "assets/generated/gd_meian.png",
+        "assets/references/gd_meian-photo.jpg",
+        "assets/references/gd_meian-full-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:46:46.470Z",
+      "saved_at": "2026-09-17T12:46:46.672Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-c5b0acbf-465c-46dc-bd91-4e3f5d550c55.png",
+      "original_file": "assets/color-studies/v1/gd_meian-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gd_meian-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bfd202142a040c1f6990e4de417c4258c3ca57c851ffdc72ff93e9001ad25c33",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "广东省文物局：梅庵（996创建、宋代大雄宝殿与后世屋顶改造）",
+      "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "name": "肇庆梅庵大雄宝殿",
+    "short": "梅庵",
+    "sub": "宋代木架 · 现状硬山顶",
+    "place": "广东肇庆 · 端州",
+    "placeKey": "gd_zhaoqing",
+    "types": [
+      "hall"
+    ],
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋遗构 · 后世修护",
+    "year": 1000,
+    "yearApprox": true,
+    "yearLabel": "北宋",
+    "yearNote": "梅庵创建于996；1000仅为宋代遗构的近似排序点，不认定现存殿每一构件同年完工。大雄宝殿保留宋代木构特征，屋顶经后世修缮改为硬山，图版按现状。",
+    "lede": "五开间大殿的木架保留宋代建筑特征，屋面却留下后世修缮的改变。小庵不以规模取胜，值得看的正是木构与历史层累。",
+    "history": [
+      {
+        "title": "广东省文物局：梅庵（996创建、宋代大雄宝殿与后世屋顶改造）",
+        "url": "https://www.prdculture.org.cn/prdculture/wzwhyc/201506/a46b49cf1cca4d318fb8a79a63c2c7fa.shtml"
+      }
+    ],
+    "protection": {
+      "batch": 4,
+      "unitName": "梅庵",
+      "relation": "part",
+      "locator": "PDF 第24页 · 梅庵"
+    },
+    "id": "gd_meian",
+    "subject": "梅庵大雄宝殿完整殿体",
+    "checkpoint": "现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。",
+    "material": "灰褐瓦、旧木梁柱深褐与局部暗红，墙面灰白、台基灰石；不涂金屋顶。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "梅庵大雄宝殿完整殿体 · 线稿",
+      "宋 · 北宋"
+    ],
+    "facts": [
+      "<b>主体</b> 梅庵大雄宝殿完整殿体。",
+      "<b>年代</b> 梅庵创建于996；1000仅为宋代遗构的近似排序点，不认定现存殿每一构件同年完工。大雄宝殿保留宋代木构特征，屋顶经后世修缮改为硬山，图版按现状。",
+      "<b>图版范围</b> 现状硬山顶与五开间宋代木构殿身，三进深；不改为历史初建歇山顶，不画香炉与树。"
+    ]
+  },
+  "source_note": "梅庵创建于996；1000仅为宋代遗构的近似排序点，不认定现存殿每一构件同年完工。大雄宝殿保留宋代木构特征，屋顶经后世修缮改为硬山，图版按现状。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gd_meian-colored.png",
+  "line_source": "assets/generated/gd_meian.png"
+}

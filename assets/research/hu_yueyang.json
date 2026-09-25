@@ -1,0 +1,156 @@
+{
+  "id": "hu_yueyang",
+  "subject": "岳阳楼三层主体楼阁",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
+  "author": "Huangdan2060",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hu_yueyang-photo.jpg"
+  ],
+  "source_note": "按清光绪六年（1880）重建所形成的现存楼阁形制定年；1984年落架大修延续旧制，不以三国阅军楼传说或北宋重修年为本图年代。 实拍只作形制与材质参考，用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 岳阳楼三层主体楼阁.\nLandscape 1536x1024. Isolate the complete three-storey Yueyang Tower above the city wall. Three wide curved eave tiers, rounded helmet-like upper roof and central finial, timber galleries and slender supports. Include only a short base and its immediate balustrade. EXCLUDE the tall red city wall and its arched gate, side stone archways and side pavilions. Blank plaques.\nStructure checkpoints: 三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。",
+  "generated_file": "assets/generated/hu_yueyang.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。"
+  ],
+  "caption": [
+    "岳阳楼三层主体楼阁 · 线稿",
+    "清 · 1880"
+  ],
+  "inputs_viewed": true,
+  "references": [
+    {
+      "id": "hu_yueyang",
+      "file": "assets/references/hu_yueyang-photo.jpg",
+      "sha256": "38ea90e261eb03063286c35dd93019f676efb03596dd83c4b863df25ae97f7b1",
+      "title": "File:Frontal view of Yueyang Tower, Hunan, China1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2018-04-18 13:08:16"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "岳阳市政府：岳阳楼现存清代形制与1984年大修",
+      "url": "https://www.yueyang.gov.cn/ml/content_51560.html"
+    },
+    {
+      "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
+      "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hu_yueyang",
+    "name": "岳阳楼",
+    "short": "岳阳楼",
+    "subject": "岳阳楼三层主体楼阁",
+    "sub": "三层楼阁 · 盔顶",
+    "place": "湖南岳阳 · 洞庭湖畔",
+    "placeKey": "hu_yueyang_city",
+    "types": [
+      "pavilion"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清光绪六年重建",
+    "year": 1880,
+    "yearLabel": "1880",
+    "yearNote": "按清光绪六年（1880）重建所形成的现存楼阁形制定年；1984年落架大修延续旧制，不以三国阅军楼传说或北宋重修年为本图年代。",
+    "lede": "三重檐层层伸展，最上层盔顶轻轻收拢。楼在洞庭湖边，图中只留这座清代形制的木楼。",
+    "checkpoint": "三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。",
+    "material": "现状黄色琉璃瓦、暗红褐梁柱与栏杆、近黑木门窗，檐下少量蓝绿彩画，浅灰石台基；不是整楼金色。",
+    "history": [
+      {
+        "title": "岳阳市政府：岳阳楼现存清代形制与1984年大修",
+        "url": "https://www.yueyang.gov.cn/ml/content_51560.html"
+      },
+      {
+        "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
+        "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+      }
+    ],
+    "protection": {
+      "batch": 3,
+      "unitName": "岳阳楼",
+      "relation": "part",
+      "source": "batch3",
+      "scope": "岳阳楼三层主体楼阁",
+      "locator": "国务院该批名单古建筑／古墓葬项 · 湖南 · 岳阳楼",
+      "scopeSources": [
+        {
+          "title": "岳阳市政府：岳阳楼现存清代形制与1984年大修",
+          "url": "https://www.yueyang.gov.cn/ml/content_51560.html"
+        },
+        {
+          "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
+          "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+        }
+      ]
+    },
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "岳阳楼三层主体楼阁 · 线稿",
+      "清 · 1880"
+    ],
+    "facts": [
+      "<b>主体</b> 岳阳楼三层主体楼阁。",
+      "<b>年代</b> 按清光绪六年（1880）重建所形成的现存楼阁形制定年；1984年落架大修延续旧制，不以三国阅军楼传说或北宋重修年为本图年代。",
+      "<b>图版范围</b> 三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "hu_yueyang",
+      "file": "assets/references/hu_yueyang-photo.jpg",
+      "sha256": "38ea90e261eb03063286c35dd93019f676efb03596dd83c4b863df25ae97f7b1",
+      "title": "File:Frontal view of Yueyang Tower, Hunan, China1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2018-04-18 13:08:16",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg"
+    }
+  ],
+  "additional_sources": [],
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T13:21:03.176Z",
+      "completed_at": "2026-09-17T13:22:09.474Z",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 岳阳楼三层主体楼阁.\nLandscape 1536x1024. Isolate the complete three-storey Yueyang Tower above the city wall. Three wide curved eave tiers, rounded helmet-like upper roof and central finial, timber galleries and slender supports. Include only a short base and its immediate balustrade. EXCLUDE the tall red city wall and its arched gate, side stone archways and side pavilions. Blank plaques.\nStructure checkpoints: 三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hu_yueyang-photo.jpg"
+      ],
+      "original_file": "assets/generated/hu_yueyang.png",
+      "received_at": "2026-09-17T13:22:09.474Z",
+      "saved_at": "2026-09-17T13:22:09.734Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b921c484-8d7a-4abf-8b37-a788f7fa168e.png"
+    }
+  ],
+  "generated_original": "assets/generated/hu_yueyang.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3cec0c6784ac1c8d867c166b9074cc80961402c6a14d3ad28f1890860b93600c",
+    "seeds": []
+  }
+}

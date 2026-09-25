@@ -1,0 +1,77 @@
+{
+  "id": "ln_liaoyang",
+  "name": "辽阳白塔",
+  "subject": "辽阳白塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/ln_liaoyang.png",
+    "assets/references/ln_liaoyang-candidate1.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nLiaoyang White Pagoda: retain EXACT13 total eaves and tall octagonal decorated body, large hoop and chained finial. Present weathered white-grey/light beige masonry, darker grey-brown brick eave undersides and recesses, mostly neutral grey stone Buddha reliefs. The reference is underexposed: interpret neutral ordinary daylight masonry without inventing saturated colors or uniform metallic gold. Keep only conservative short visible plinth, no giant terrace. Finial dark aged grey metal and weathered stone, real chain/hoop gaps PURE WHITE; actual niches remain opaque grey dark recesses. Full portrait1024x1536.",
+  "material_observations": [
+    "参考照片曝光偏暗，主体为风化灰白砖石，檐下较深灰褐。",
+    "塔身佛龛与人物为中性浅灰石质，无依据不加金饰彩绘。",
+    "塔刹环与链索为暗灰；低台基按可见部分表达。"
+  ],
+  "references": [
+    {
+      "title": "File:Wahrzeichen von Liaoyang.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Wahrzeichen_von_Liaoyang.JPG/1280px-Wahrzeichen_von_Liaoyang.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Wahrzeichen_von_Liaoyang.JPG",
+      "width": 1200,
+      "height": 1600,
+      "author": "Martin Kiechle",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "Aufgenommen 2005",
+      "id": "ln_liaoyang",
+      "file": "assets/references/ln_liaoyang-candidate1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wahrzeichen_von_Liaoyang.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Wahrzeichen_von_Liaoyang.JPG/1280px-Wahrzeichen_von_Liaoyang.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/ln_liaoyang.json",
+  "output": "assets/colored/ln_liaoyang.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "逐檐核对十三层；八角塔身与佛龛装饰未替换。",
+      "设色现貌材料区分已目检；外部白底与记录透空点已由固定脚本处理。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bbfa71f1dbb7e59bbd4f36617313be8b11c3e7440a29501826ee8055b547b137",
+    "seeds": [
+      [
+        503,
+        185
+      ],
+      [
+        520,
+        185
+      ]
+    ]
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-85b2f6f5-9858-49b9-9439-3545eb7c3175.png",
+  "width": 1024,
+  "height": 1536,
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "sd_qingdao_christ",
+  "subject": "青岛基督教堂主堂与钟楼",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Christ%27s_Church,_Qingdao.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Christ%27s_Church,_Qingdao.jpg",
+  "author": "K.Y.K.Z.K.",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "id": "sd_qingdao_christ",
+      "file": "assets/references/sd_qingdao_christ-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Christ%27s_Church,_Qingdao.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Christ%27s_Church,_Qingdao.jpg",
+      "author": "K.Y.K.Z.K.",
+      "license": "CC BY-SA 4.0",
+      "date": "2023-12-20",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sha256": "d8ebb63f8454884fe27b408e2add1d832a53acc5c0c995d75146057ba406885c"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_qingdao_christ-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依公开实拍绘现存外观；图版为艺术转译，待用户人眼验收。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete single Protestant church building from the photograph: ONE square clock tower at left with copper spire and ONE long nave ending at right in a curved gable with a round window and arched entrance. Preserve this asymmetric church and masonry trim. Do not make it the Catholic twin-tower cathedral. Clock markings may be minimal abstract ticks; no written text. Whole roof, tower apex and base visible."
+  ],
+  "material_observations": [
+    "米黄灰泥墙、灰褐粗面花岗岩基座及嵌角、橙红屋瓦、钟楼铜皮绿锈、深褐门扇。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 青岛基督教堂主堂与钟楼\nLandscape 1536x1024. Complete single Protestant church building from the photograph: ONE square clock tower at left with copper spire and ONE long nave ending at right in a curved gable with a round window and arched entrance. Preserve this asymmetric church and masonry trim. Do not make it the Catholic twin-tower cathedral. Clock markings may be minimal abstract ticks; no written text. Whole roof, tower apex and base visible.",
+  "generated_file": "assets/generated/sd_qingdao_christ.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 青岛基督教堂主堂与钟楼\nLandscape 1536x1024. Complete single Protestant church building from the photograph: ONE square clock tower at left with copper spire and ONE long nave ending at right in a curved gable with a round window and arched entrance. Preserve this asymmetric church and masonry trim. Do not make it the Catholic twin-tower cathedral. Clock markings may be minimal abstract ticks; no written text. Whole roof, tower apex and base visible.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_qingdao_christ-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T22:32:21.564088+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:36:01.123607+08:00",
+      "saved_at": "2026-09-17T22:36:01.173818+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-be3fa2bc-9b1b-4fe5-97f2-05e88493afa1.png",
+      "output": "assets/generated/sd_qingdao_christ.png"
+    }
+  ],
+  "caption": [
+    "青岛基督教堂 · 主堂与钟楼 · 线稿",
+    "不对称立面 · 1910年建成"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-be3fa2bc-9b1b-4fe5-97f2-05e88493afa1.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6442d758c1f475a637e91dafff4fd81aa1868cb19412b7793d6db0d5423e4e03",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "青岛市政府：第六批青岛德国建筑群单体范围",
+      "url": "https://www.qingdao.gov.cn/lslm/zt/whyc/wwzl/202111/t20211126_3877116.shtml",
+      "note": "列基督教堂1908—1910年，江苏路15号；第六批并入第四批青岛德国建筑。"
+    },
+    {
+      "title": "国务院第六批国保合并项目",
+      "url": "https://www.neac.gov.cn/seac/xxgk/200606/1079967.shtml",
+      "note": "合并项目序号95，青岛德国建筑群。"
+    }
+  ]
+}

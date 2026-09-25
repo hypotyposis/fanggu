@@ -1,0 +1,80 @@
+{
+  "id": "gs_dafo_tuta",
+  "name": "张掖大佛寺土塔",
+  "subject": "弥陀千佛塔露明塔身与塔刹",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 弥陀千佛塔露明塔身与塔刹.\nPresent material observations: 现状灰黄、浅赭的砖土抹面，略泛暖但并非金色，塔刹冠盖浅黄铜褐，凹龛暗灰；保留实体浅色，不画纯白新粉刷效果。\nKeep EXACTLY the line drawing's selected subject and crop: 只画照片露明的土塔上部：局部方形须弥座、四角露明小塔、粗大覆钵、佛龛段、细长相轮与冠盖宝顶；不补画被遮住的双层回廊和完整大基座。",
+  "input_images": [
+    "assets/generated/gs_dafo_tuta.png",
+    "assets/references/gs_dafo_tuta-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "现状灰黄、浅赭的砖土抹面，略泛暖但并非金色，塔刹冠盖浅黄铜褐，凹龛暗灰；保留实体浅色，不画纯白新粉刷效果。"
+  ],
+  "references": [
+    {
+      "title": "File:Zhangye Dafo Si 2014.01.02 16-07-25.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Zhangye_Dafo_Si_2014.01.02_16-07-25.jpg/960px-Zhangye_Dafo_Si_2014.01.02_16-07-25.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Zhangye_Dafo_Si_2014.01.02_16-07-25.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Zhangye_Dafo_Si_2014.01.02_16-07-25.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2014-01-02 16:07:25",
+      "description": "<p>张掖大佛寺——\n</p>\n藏经殿（佛教经籍陈列厅）和土塔（弥陀千佛塔）",
+      "file": "assets/references/gs_dafo_tuta-photo.jpg",
+      "id": "gs_dafo_tuta",
+      "sha256": "df284c1b1b831a70464d63ab75d8abbf6e6ab1f21aa512c633597048022ae1a8"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "张掖市史志办：大佛寺土塔明代营建与1986年修复",
+      "url": "https://www.zhangye.gov.cn/szb/dzdt/njbz/201605/t20160517_51878.html"
+    },
+    {
+      "title": "文化和旅游部：张掖大佛寺第四批国保",
+      "url": "https://zhuanti.mct.gov.cn/gs_detail/285.html"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "source": "assets/color-studies/v1/gs_dafo_tuta-colored.png",
+  "output": "assets/colored/gs_dafo_tuta.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T14:10:13.093Z",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 弥陀千佛塔露明塔身与塔刹.\nPresent material observations: 现状灰黄、浅赭的砖土抹面，略泛暖但并非金色，塔刹冠盖浅黄铜褐，凹龛暗灰；保留实体浅色，不画纯白新粉刷效果。\nKeep EXACTLY the line drawing's selected subject and crop: 只画照片露明的土塔上部：局部方形须弥座、四角露明小塔、粗大覆钵、佛龛段、细长相轮与冠盖宝顶；不补画被遮住的双层回廊和完整大基座。",
+      "input_images": [
+        "assets/generated/gs_dafo_tuta.png",
+        "assets/references/gs_dafo_tuta-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T14:11:42.548Z",
+      "saved_at": "2026-09-17T14:11:42.693Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-15d3cff7-ad7b-44c3-8994-ba9b5de3d6ba.png",
+      "original_file": "assets/color-studies/v1/gs_dafo_tuta-colored.png"
+    }
+  ],
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "346a46128951217cffd2f1cc66c5bfb1d79fe491b2b76b1167962b1cfd69a955",
+    "seeds": []
+  }
+}

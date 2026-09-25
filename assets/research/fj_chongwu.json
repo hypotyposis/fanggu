@@ -1,0 +1,126 @@
+{
+  "id": "fj_chongwu",
+  "subject": "崇武古城南门及相邻短段城墙",
+  "status": "complete",
+  "historical_sources": [
+    {
+      "title": "泉州市政府：崇武城墙及南门城防",
+      "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/201609/t20160913_372299.htm"
+    }
+  ],
+  "source_note": "1387为崇武石城始建时间及时间轴约略定位，现存南门段经历后世修缮，照片所见上部门楼不标为1387年原构。 实拍仅作为形制与材质输入，不声称实测；输出由用户验收。",
+  "caption": [
+    "崇武古城南门及相邻短段城墙 · 线稿",
+    "明 · 始建1387 · 历代修缮"
+  ],
+  "structure_checkpoints": [
+    "一个花岗岩券门、两侧短城墙、城台雉堞与参考所见小型门楼；不添瓮城、不绘整座城。"
+  ],
+  "generated_file": "assets/generated/fj_chongwu.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "site_recommendation": {
+    "id": "fj_chongwu",
+    "name": "崇武古城南门",
+    "short": "崇武南门",
+    "sub": "花岗岩城台 · 南门段城墙",
+    "subject": "崇武古城南门及相邻短段城墙",
+    "prov": "福建",
+    "place": "福建泉州 · 惠安崇武",
+    "placeKey": "huian_chongwu",
+    "types": [
+      "wall",
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "洪武二十年筑城，后世修缮",
+    "year": 1387,
+    "yearLabel": "始建1387 · 历代修缮",
+    "yearApprox": true,
+    "yearNote": "1387为崇武石城始建时间及时间轴约略定位，现存南门段经历后世修缮，照片所见上部门楼不标为1387年原构。",
+    "checkpoint": "一个花岗岩券门、两侧短城墙、城台雉堞与参考所见小型门楼；不添瓮城、不绘整座城。",
+    "history": [
+      {
+        "title": "泉州市政府：崇武城墙及南门城防",
+        "url": "https://www.quanzhou.gov.cn/lyb/lswh/zdww/201609/t20160913_372299.htm"
+      }
+    ],
+    "material": "块石灰褐与局部淡黄，顶层石料较浅，门楼灰白墙、灰瓦与少量赭红装饰；自然风化而非通体新白。",
+    "lineDetail": "Landscape 1536x1024. ONE arched gateway in a squat granite wall, crenellations and the modest small historic gatehouse visible above it. Draw the complete gate area plus short flanking wall sections terminating cleanly; do not invent a monumental double-storey gate tower, moat or barbican. Leave arch visible. Remove car, signs, modern stone marker, plants and sky.",
+    "lede": "海风吹过灰褐石墙，券门藏在低矮城台之下。崇武城以花岗岩筑成海防屏障，南门这一段仍保留着滨海石城的厚重尺度。",
+    "facts": [
+      "<b>沿革</b> 崇武千户所城始筑于1387年，为明代滨海防御体系一环，现存城墙经历历代维护。",
+      "<b>所绘范围</b> 南门券洞、门上建筑与相邻短段城墙；不是整座古城或四座城门合集。",
+      "<b>材料与年代</b> 城台由花岗岩砌筑；上部门楼依现状绘制，不能据筑城年份断言全部为明初原构。"
+    ]
+  },
+  "file": "assets/references/fj_chongwu-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Hui%27an_Chongwu_Cheng_20120302-05.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Hui%27an_Chongwu_Cheng_20120302-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2012-03-02 10:57:57",
+  "references": [
+    {
+      "id": "fj_chongwu",
+      "file": "assets/references/fj_chongwu-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Hui%27an_Chongwu_Cheng_20120302-05.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Hui%27an_Chongwu_Cheng_20120302-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Hui%27an_Chongwu_Cheng_20120302-05.jpg/960px-Hui%27an_Chongwu_Cheng_20120302-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-03-02 10:57:57",
+      "description": "​崇武城，位于中国福建省惠安县，是全国重点文物保护单位。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_chongwu-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 崇武古城南门及相邻短段城墙.\nLandscape 1536x1024. ONE arched gateway in a squat granite wall, crenellations and the modest small historic gatehouse visible above it. Draw the complete gate area plus short flanking wall sections terminating cleanly; do not invent a monumental double-storey gate tower, moat or barbican. Leave arch visible. Remove car, signs, modern stone marker, plants and sky.\nStructure checkpoint: 一个花岗岩券门、两侧短城墙、城台雉堞与参考所见小型门楼；不添瓮城、不绘整座城。",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 崇武古城南门及相邻短段城墙.\nLandscape 1536x1024. ONE arched gateway in a squat granite wall, crenellations and the modest small historic gatehouse visible above it. Draw the complete gate area plus short flanking wall sections terminating cleanly; do not invent a monumental double-storey gate tower, moat or barbican. Leave arch visible. Remove car, signs, modern stone marker, plants and sky.\nStructure checkpoint: 一个花岗岩券门、两侧短城墙、城台雉堞与参考所见小型门楼；不添瓮城、不绘整座城。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/fj_chongwu-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T17:21:26.639Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:23:11.681Z",
+      "received_at": "2026-09-16T17:23:11.681Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5e392bb3-3e2a-4cbb-8604-43488b073ebe.png",
+      "saved_at": "2026-09-16T17:25:15.964Z"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "06644d677e047be44967f7ac5de7c793c15cfe80f60d166ccc9318ec0c38602b",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5e392bb3-3e2a-4cbb-8604-43488b073ebe.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5e392bb3-3e2a-4cbb-8604-43488b073ebe.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.252Z",
+    "sourceSha256": "06644d677e047be44967f7ac5de7c793c15cfe80f60d166ccc9318ec0c38602b"
+  }
+}

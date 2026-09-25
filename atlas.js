@@ -30,10 +30,12 @@
   options('atlas-country', '全部国家', Object.entries(FangguCatalog.countries).filter(([key]) => catalog.some(site => site.country === key)));
   countryOptions();
   options('atlas-type', '全部类型', Object.entries(FangguCatalog.types).filter(([key]) => catalog.some(site => site.types.includes(key))));
+  const cardKey = site => JSON.stringify([site.record, library.review(site.id)]);
   function card(site) {
-    const { status, visitedOn, note } = site.record;
+    const { status } = site.record;
     const dynasty = DYN[site.dyn] || { acc: 'var(--paper-2)', name: '年代待考', glyph: '待' };
     const article = el('article', 'atlas-card'); article.dataset.id = site.id; article.style.setProperty('--acc', dynasty.acc);
+    article.recordKey = cardKey(site); article.dataset.status = status;
     const visual = el('div', 'card-visual');
     const link = el('a', 'card-art'); link.href = FangguNavigation.detailURL(site.id); link.setAttribute('aria-label', `细读${site.name}`);
     const image = el('img'); FangguArtwork.apply(image, site, status); image.loading = 'lazy'; image.decoding = 'async';
@@ -44,11 +46,21 @@
     const era = site.yearLabel || site.year;
     body.append(el('span', 'card-era mono', `${dynasty.name}${era && String(era) !== dynasty.name ? ' · ' + era : ''}`), el('h3', '', site.name), el('p', 'card-place', site.place));
     body.append(el('p', 'card-kind', site.types.map(type => FangguCatalog.types[type]).join(' · ')));
-    const excerpt = note;
-    if (excerpt) body.append(el('p', 'card-note', excerpt));
+    const protection = FangguProtection.badges(site.id);
+    if (protection.length) {
+      const tags = el('div', 'protection-tags'); tags.setAttribute('aria-label', '全国重点文物保护单位批次');
+      protection.forEach(badge => { const tag = el('a', 'protection-tag', badge.label); tag.title = badge.title; tag.href = FangguNavigation.detailURL(site.id) + '#protection'; tag.target = '_blank'; tag.rel = 'noopener noreferrer'; tags.append(tag); });
+      body.append(tags);
+    }
+    body.append(cardRecord(site, image));
+    article.append(visual, body); return article;
+  }
+  function cardRecord(site, image) {
+    const { status, visitedOn, note } = site.record, record = el('div', 'card-record');
+    if (note) record.append(el('p', 'card-note', note));
     const review = library.review(site.id), summary = reviewSummary(site.id, true);
-    if (summary) body.append(summary);
-    if (status === 'visited') body.append(el('p', 'card-date mono', visitedOn ? `${visitedOn} 到访` : '已到访 · 日期未记'));
+    if (summary) record.append(summary);
+    if (status === 'visited') record.append(el('p', 'card-date mono', visitedOn ? `${visitedOn} 到访` : '已到访 · 日期未记'));
     const actions = el('div', 'card-actions');
     if (status === 'visited') actions.append(button('到访记录', 'visit', site.id));
     else if (status === 'wishlist') {
@@ -58,8 +70,56 @@
     }
     actions.append(button(review.rating != null || review.text ? '编辑评价' : '写短评 / 打分', 'review', site.id));
     { const read = el('a', 'card-read', '细读 ↗'); read.href = FangguNavigation.detailURL(site.id); actions.append(read); }
-    if (status !== 'visited') body.append(arrival(site, image));
-    body.append(actions); article.append(visual, body); return article;
+    if (status !== 'visited') record.append(arrival(site, image));
+    record.append(actions); return record;
+  }
+  function settleRecord(previous, next) {
+    const height = previous.getBoundingClientRect().height;
+    previous.replaceWith(next);
+    const target = next.getBoundingClientRect().height;
+    const reduced = typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || typeof next.animate !== 'function') return;
+    const content = el('div', 'card-record-content'); content.append(...next.childNodes);
+    next.append(content, previous); next.classList.add('is-settling');
+    next.style.height = `${height}px`;
+    previous.classList.add('card-record-outgoing'); previous.style.height = `${height}px`;
+    previous.inert = true; previous.setAttribute('aria-hidden', 'true');
+    const timing = { duration: 480, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'both' };
+    const resize = next.animate([{ height: `${height}px` }, { height: `${target}px` }], timing);
+    const leaving = previous.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'both' });
+    const entering = content.animate([{ opacity: 0, transform: 'translateY(6px)' }, { opacity: 1, transform: 'translateY(0)' }], { ...timing, duration: 340, delay: 100 });
+    next.finishTransition = () => {
+      delete next.finishTransition;
+      for (const animation of [resize, leaving, entering]) { animation.onfinish = null; animation.cancel(); }
+      const focused = document.activeElement, restoreFocus = content.contains(focused);
+      previous.remove(); content.replaceWith(...content.childNodes);
+      next.classList.remove('is-settling'); next.style.removeProperty('height');
+      if (restoreFocus && next.isConnected) focused.focus({ preventScroll: true });
+    };
+    resize.onfinish = next.finishTransition;
+  }
+  function renderCards(sites) {
+    const grid = $('#atlas-grid'), existing = new Map([...grid.children].map(node => [node.dataset.id, node]));
+    const cards = sites.map(site => {
+      const previous = existing.get(site.id), key = cardKey(site);
+      if (previous?.recordKey === key) return previous;
+      if (previous && previous.dataset.status !== 'visited' && site.record.status === 'visited' && previous.querySelector('.visit-artwork.is-complete')) {
+        // Keep the loaded color image and settled seal while exchanging the controls.
+        settleRecord(previous.querySelector('.card-record'), cardRecord(site));
+        const stamp = previous.querySelector('.visit-stamp');
+        stamp.className = 'visit-stamp visited'; stamp.textContent = statusNames.visited;
+        previous.recordKey = key; previous.dataset.status = 'visited';
+        return previous;
+      }
+      return card(site);
+    });
+    const retained = new Set(cards);
+    for (const node of existing.values()) if (!retained.has(node)) {
+      node.querySelector('.card-record').finishTransition?.();
+      node.querySelector('.visit-artwork')?.dispose();
+      node.remove();
+    }
+    cards.forEach((node, index) => { if (grid.children[index] !== node) grid.insertBefore(node, grid.children[index] || null); });
   }
   function render() {
     const sites = library.all();
@@ -70,8 +130,8 @@
     $('#hero-count').textContent = `${counts.all} 处收录 · ${counts.visited} 处已到访`;
     const values = filters(), narrowed = isNarrowed(values);
     const selected = sites.filter(site => FangguCatalog.matches(site, values));
-    selected.sort((a, b) => (b.record.visitedOn || '').localeCompare(a.record.visitedOn || '') || a.year - b.year);
-    $('#atlas-grid').replaceChildren(...selected.slice(0, limit).map(card));
+    selected.sort((a, b) => a.year - b.year);
+    renderCards(selected.slice(0, limit));
     $('#atlas-result').textContent = `共 ${selected.length} 处${selected.length > limit ? ` · 已展 ${limit} 处` : ''}`;
     $('#atlas-reset').hidden = !narrowed;
     $('#atlas-more').hidden = selected.length <= limit;

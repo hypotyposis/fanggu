@@ -1,0 +1,73 @@
+{
+  "id": "gz_wenchang",
+  "name": "贵阳文昌阁",
+  "subject": "贵阳文昌阁现存阁体",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 贵阳文昌阁现存阁体.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 屋面为灰瓦，顶刹暗金铜色，轮廓装饰浅灰石色。 阁体红褐木构、深褐窗格，部分墙面灰白；石阶灰白，去除盆栽灯笼。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
+  "input_images": [
+    "assets/generated/gz_wenchang.png",
+    "assets/references/gz_wenchang-reference-thumb.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "屋面为灰瓦，顶刹暗金铜色，轮廓装饰浅灰石色。",
+    "阁体红褐木构、深褐窗格，部分墙面灰白；石阶灰白，去除盆栽灯笼。"
+  ],
+  "references": [
+    {
+      "id": "gz_wenchang",
+      "title": "贵阳文昌阁.jpg",
+      "file": "assets/references/gz_wenchang-reference-thumb.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%B4%B5%E9%98%B3%E6%96%87%E6%98%8C%E9%98%81.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/%E8%B4%B5%E9%98%B3%E6%96%87%E6%98%8C%E9%98%81.jpg/960px-%E8%B4%B5%E9%98%B3%E6%96%87%E6%98%8C%E9%98%81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Buernia",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2021-07-11 16:31:33",
+      "description": "Wenchang Pavilion in Guiyang.",
+      "bytes": 247419,
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%B4%B5%E9%98%B3%E6%96%87%E6%98%8C%E9%98%81.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/%E8%B4%B5%E9%98%B3%E6%96%87%E6%98%8C%E9%98%81.jpg/960px-%E8%B4%B5%E9%98%B3%E6%96%87%E6%98%8C%E9%98%81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/gz_wenchang.json",
+  "output": "assets/colored/gz_wenchang.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 贵阳文昌阁现存阁体.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 屋面为灰瓦，顶刹暗金铜色，轮廓装饰浅灰石色。 阁体红褐木构、深褐窗格，部分墙面灰白；石阶灰白，去除盆栽灯笼。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
+      "reference_files": [
+        "assets/generated/gz_wenchang.png",
+        "assets/references/gz_wenchang-reference-thumb.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-16T16:56:30.661Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:57:53.357Z",
+      "saved_at": "2026-09-16T16:57:53.676Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3d45cd8-4955-4a6d-8aa4-17d820177838.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "93355cbf0ddfa803a9462a8ec8b92245bbe13093f59f7cc413d8528258c49eb2",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3d45cd8-4955-4a6d-8aa4-17d820177838.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3d45cd8-4955-4a6d-8aa4-17d820177838.png"
+}

@@ -1,0 +1,93 @@
+{
+  "id": "sd_jiuding",
+  "subject": "济南九顶塔整塔",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jiudingta_2008_07_15_1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Jiudingta_2008_07_15_1.jpg",
+  "author": "Rolfmueller",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "references": [
+    {
+      "id": "sd_jiuding",
+      "file": "assets/references/sd_jiuding-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jiudingta_2008_07_15_1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Jiudingta_2008_07_15_1.jpg",
+      "author": "Rolfmueller",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2008-07-15",
+      "sha256": "d9b4cfa444da34fc23927d4a941487a364f93872d702697fdc971f13bdfd93ec"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_jiuding-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依公开实拍重绘；所绘范围为济南九顶塔整塔。图版为艺术转译，待用户人眼验收。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. One tall octagonal single-storey brick chamber with a very broad curved projecting corbelled eave. On that eave exactly nine small pagodas: one taller central pagoda and eight around the perimeter (rear ones occluded, do not force all into view). Preserve the photographed three-quarter view and doorway. This is not a nine-storey vertical pagoda. Complete silhouette and base."
+  ],
+  "material_observations": [
+    "灰褐砖、局部土黄灰泥残留，檐口较深灰，门内朱红门扇与暗凹部。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 济南九顶塔整塔\nPortrait 1024x1536. One tall octagonal single-storey brick chamber with a very broad curved projecting corbelled eave. On that eave exactly nine small pagodas: one taller central pagoda and eight around the perimeter (rear ones occluded, do not force all into view). Preserve the photographed three-quarter view and doorway. This is not a nine-storey vertical pagoda. Complete silhouette and base.",
+  "generated_file": "assets/generated/sd_jiuding.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 济南九顶塔整塔\nPortrait 1024x1536. One tall octagonal single-storey brick chamber with a very broad curved projecting corbelled eave. On that eave exactly nine small pagodas: one taller central pagoda and eight around the perimeter (rear ones occluded, do not force all into view). Preserve the photographed three-quarter view and doorway. This is not a nine-storey vertical pagoda. Complete silhouette and base.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_jiuding-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T22:30:23.262920+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:32:09.340306+08:00",
+      "saved_at": "2026-09-17T22:32:09.376439+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-ba47ede3-7138-41f4-8611-ede7654cf9fe.png",
+      "output": "assets/generated/sd_jiuding.png"
+    }
+  ],
+  "caption": [
+    "九顶塔 · 八角砖塔 · 线稿",
+    "九座小塔 · 唐代遗塔"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-ba47ede3-7138-41f4-8611-ede7654cf9fe.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "caccff6290f620e420427e158da304aae2ea6e1384db15c3e9cbc97c5b1662c8",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "济南市政协：九顶塔年代与1962年维修",
+      "url": "https://www.jnzx.gov.cn/folder325/folder450/2020-10-27/109580.html",
+      "note": "唐代遗物；本批不确定确切建年。"
+    },
+    {
+      "title": "济南市南部山区国土空间分区规划",
+      "url": "https://nrp.jinan.gov.cn/cms_files/complat3/48724/attach/20255/84eb65d4e5dc476cbe1434583ff4c3d2.pdf",
+      "note": "正文第58页、第94条：千佛崖造像包括龙虎塔与九顶塔。"
+    },
+    {
+      "title": "山东省文旅厅国保保护范围表",
+      "url": "https://whhly.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=7dfd1c59d14947558ead43458d35e1cf.pdf",
+      "note": "表序号15第三批千佛崖造像，列九顶塔范围；根据官方索引摘要核对。"
+    }
+  ]
+}

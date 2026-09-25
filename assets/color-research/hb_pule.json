@@ -1,0 +1,124 @@
+{
+  "id": "hb_pule",
+  "name": "普乐寺旭光阁与上层台基",
+  "subject": "普乐寺旭光阁与上层台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 普乐寺旭光阁与上层台基\nMATERIAL OBSERVATIONS: 黄橙色琉璃瓦双重圆顶、朱红门窗、蓝绿额枋，灰白石台与栏杆，金色细边与塔顶宝瓶。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+  "input_images": [
+    "assets/generated/hb_pule.png",
+    "assets/references/hb_pule-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "黄橙色琉璃瓦双重圆顶、朱红门窗、蓝绿额枋，灰白石台与栏杆，金色细边与塔顶宝瓶。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_pule-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+      "author": "梓地",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-09-21 08:11:08",
+      "sha256": "dfc2fd460b4dc82b16c0e1c7308da9c154b6a376f41e32009d8e5f39c3b634ce"
+    }
+  ],
+  "original_research": "assets/research/hb_pule.json",
+  "output": "assets/colored/hb_pule.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 普乐寺旭光阁与上层台基\nMATERIAL OBSERVATIONS: 黄橙色琉璃瓦双重圆顶、朱红门窗、蓝绿额枋，灰白石台与栏杆，金色细边与塔顶宝瓶。\nImage 1 is the actual saved line drawing. Color only this exact geometry on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_pule.png",
+        "assets/references/hb_pule-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T23:32:53.241979+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:35:57.612324+08:00",
+      "saved_at": "2026-09-17T23:35:57.657621+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-29acb6a0-5cef-4a15-a66a-358207b7f32d.png",
+      "output": "assets/colored/hb_pule.png"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "inputs_viewed": true,
+  "caption": [
+    "普乐寺 · 旭光阁与上层台基",
+    "双重圆檐 · 清乾隆三十一年（1766）"
+  ],
+  "site_recommendation": {
+    "id": "hb_pule",
+    "name": "普乐寺",
+    "short": "普乐寺",
+    "sub": "旭光阁 · 上层台基",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆三十一年",
+    "year": 1766,
+    "yearNote": "1766对应普乐寺兴建及旭光阁；本图仅绘圆阁与直接承托的上层台基，不展示完整坛城。",
+    "place": "河北承德 · 武烈河东",
+    "placeKey": "hb_chengde",
+    "types": [
+      "pavilion"
+    ],
+    "lede": "两层圆形黄瓦顶在石台上层层收束，圆阁与方坛相互衬托。旭光阁让承德寺庙群中多了一种鲜明的圆形轮廓。",
+    "facts": [
+      "普乐寺建于1766年，前部殿宇与后部坛城组成不同空间。",
+      "本图绘旭光阁与上层台基，其他层级、配阁与小塔不在范围内。",
+      "圆阁为双重圆檐，黄色琉璃瓦、朱红门窗和蓝绿色额枋按实拍设色。"
+    ],
+    "caption": [
+      "普乐寺 · 旭光阁与上层台基",
+      "双重圆檐 · 清乾隆三十一年（1766）"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-29acb6a0-5cef-4a15-a66a-358207b7f32d.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "29f853ca20746ac6662aa1880a7183d81b4d72ad4a44a5222f4a5d21b36d87b9",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "note": "提示词要求白底；工具实际返回原生alpha，保留原件与alpha。"
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.630500+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  }
+}

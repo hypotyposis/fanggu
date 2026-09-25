@@ -43,6 +43,26 @@
     <p class="lede">${site.lede}</p>
     <ul>${site.facts.map(fact => `<li>${fact}</li>`).join('')}</ul>
     ${site.quote ? `<p class="quote">${site.quote}</p>` : ''}`;
+  if (site.protection.length) {
+    const protection = el('section', 'detail-protection'); protection.id = 'protection'; protection.setAttribute('aria-label', '国保登记信息');
+    const tags = el('div', 'protection-tags');
+    FangguProtection.badges(site.id).forEach(badge => { const tag = el('span', 'protection-tag', badge.label); tag.title = badge.title; tags.append(tag); });
+    const details = el('details'); details.append(el('summary', '', '国保登记信息与出处'));
+    const list = el('ul', 'protection-register');
+    const sourceLink = (title, url) => { const link = el('a', '', title + ' ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; return link; };
+    site.protection.forEach(entry => {
+      const source = FangguProtection.sources[entry.source], item = el('li');
+      item.append(el('p', 'protection-unit', entry.unitName), el('p', '', `${FangguProtection.level} · ${FangguProtection.batchLabel(entry.batch)} · ${source.announcedOn} 公布`));
+      item.append(el('p', '', `对应主体：${entry.scope}${entry.relation === 'part' ? '（该国保单位的组成部分）' : entry.relation === 'merged' ? '（本批纳入合并项目）' : ''}`));
+      if (entry.parent) item.append(el('p', '', `归入：${entry.parent.unitName}（原${FangguProtection.batchLabel(entry.parent.batch)}）`));
+      if (entry.note) item.append(el('p', '', entry.note));
+      const provenance = el('p'); provenance.append(sourceLink('官方公布名单', source.url), document.createTextNode(` · ${entry.locator}`)); item.append(provenance);
+      (entry.scopeSources || []).forEach(source => { const line = el('p'); line.append(sourceLink(source.title, source.url)); item.append(line); });
+      list.append(item);
+    });
+    details.append(list, el('p', 'protection-checked', `资料核对：${FangguProtection.checkedAt}。批次按所绘主体被公布或纳入时记录；不是年代或质量评级。`));
+    protection.append(tags, details); text.querySelector('.lede').before(protection);
+  }
   const record = el('section', 'detail-record'); record.setAttribute('aria-label', '我的记录与评价');
   const links = el('div', 'detail-links');
   const proof = el('a', '', '放大图版 ↗'); proof.href = `proof.html?fig=${encodeURIComponent(site.id)}`;

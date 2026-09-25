@@ -1,0 +1,126 @@
+{
+  "id": "gx_zhenwu",
+  "name": "经略台真武阁",
+  "subject": "经略台真武阁完整阁体",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 经略台真武阁完整阁体\nPRESENT MATERIAL OBSERVATIONS: 灰褐木柱梁，绿釉瓦当与灰棕瓦面、红褐屋脊和翘角，台基灰石，不能整阁刷红或铺金。\nKeep the complete original line composition and geometry; the material photo must not introduce scenery or occluding objects.",
+  "input_images": [
+    "assets/generated/gx_zhenwu.png",
+    "assets/references/gx_zhenwu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰褐木柱梁，绿釉瓦当与灰棕瓦面、红褐屋脊和翘角，台基灰石，不能整阁刷红或铺金。"
+  ],
+  "original_research": "assets/research/gx_zhenwu.json",
+  "output": "assets/colored/gx_zhenwu.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:39:21.544Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 经略台真武阁完整阁体\nPRESENT MATERIAL OBSERVATIONS: 灰褐木柱梁，绿釉瓦当与灰棕瓦面、红褐屋脊和翘角，台基灰石，不能整阁刷红或铺金。\nKeep the complete original line composition and geometry; the material photo must not introduce scenery or occluding objects.",
+      "reference_files": [
+        "assets/generated/gx_zhenwu.png",
+        "assets/references/gx_zhenwu-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:41:13.225Z",
+      "saved_at": "2026-09-17T12:41:13.412Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-28f18e16-c024-49d8-a64f-b1ede0130a1b.png",
+      "original_file": "assets/color-studies/v1/gx_zhenwu-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gx_zhenwu-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d224201133aa141b7c845c8950b612100b337ee1481ce44328294aa8678bc6c2",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gx_zhenwu",
+      "file": "assets/references/gx_zhenwu-photo.jpg",
+      "sha256": "55a7ca09818a542045ef1fbb8e51c4eed2f3705a44266a1adabfbd0318f9fd6a",
+      "title": "File:容县真武阁.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg/1280px-%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg",
+      "author": "汀海岸上",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "广西档案馆：经略台真武阁历史与1982年第二批国保公布",
+      "url": "https://www.gxdag.org.cn/show/338/17305"
+    }
+  ],
+  "site_recommendation": {
+    "name": "经略台真武阁",
+    "short": "真武阁",
+    "sub": "容县木阁 · 三重檐",
+    "place": "广西容县 · 经略台",
+    "placeKey": "gx_rongxian",
+    "types": [
+      "pavilion"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明万历年间",
+    "year": 1573,
+    "yearLabel": "1573",
+    "yearNote": "1573取真武阁营建年代；经略台的较早历史与现存阁体分列，后世修护不等于重建整阁。",
+    "lede": "三重檐向外伸展，下层木柱敞开，阁体稳稳坐在经略台上。木构的承托关系比楼层的高度更令人好奇。",
+    "history": [
+      {
+        "title": "广西档案馆：经略台真武阁历史与1982年第二批国保公布",
+        "url": "https://www.gxdag.org.cn/show/338/17305"
+      }
+    ],
+    "protection": {
+      "batch": 2,
+      "unitName": "经略台真武阁",
+      "relation": "unit",
+      "locator": "PDF 第23页 · 经略台真武阁"
+    },
+    "id": "gx_zhenwu",
+    "subject": "经略台真武阁完整阁体",
+    "checkpoint": "三重檐与两层阁身、翘角、下层开放木柱，基台完整；不画周边仿古建筑。",
+    "material": "灰褐木柱梁，绿釉瓦当与灰棕瓦面、红褐屋脊和翘角，台基灰石，不能整阁刷红或铺金。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "经略台真武阁完整阁体 · 线稿",
+      "明 · 1573"
+    ],
+    "facts": [
+      "<b>主体</b> 经略台真武阁完整阁体。",
+      "<b>年代</b> 1573取真武阁营建年代；经略台的较早历史与现存阁体分列，后世修护不等于重建整阁。",
+      "<b>图版范围</b> 三重檐与两层阁身、翘角、下层开放木柱，基台完整；不画周边仿古建筑。"
+    ]
+  },
+  "source_note": "1573取真武阁营建年代；经略台的较早历史与现存阁体分列，后世修护不等于重建整阁。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gx_zhenwu-colored.png",
+  "line_source": "assets/generated/gx_zhenwu.png",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg/1280px-%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "汀海岸上",
+  "license": "CC BY-SA 4.0"
+}

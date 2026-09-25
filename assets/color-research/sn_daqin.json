@@ -1,0 +1,90 @@
+{
+  "id": "sn_daqin",
+  "name": "周至大秦寺塔",
+  "subject": "周至大秦寺塔现存整塔",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 周至大秦寺塔现存整塔.\nMaterial observations: 灰褐偏红旧砖、檐带深褐与暗灰券洞，顶端灰褐；不过度提亮为黄石材。\nPortrait 1024x1536. Exactly SEVEN OCTAGONAL brick storeys, tall lower storey, stepped corbelled eaves, arched openings, modest existing cap. Preserve the ACTUAL slight lean of the source tower: this overrides the generic verticals-vertical instruction. Draw the complete ground base, no extra tower, church cross or invented restoration.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+  "input_images": [
+    "assets/generated/sn_daqin.png",
+    "assets/references/sn_daqin-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "灰褐偏红旧砖、檐带深褐与暗灰券洞，顶端灰褐；不过度提亮为黄石材。"
+  ],
+  "references": [
+    {
+      "id": "sn_daqin",
+      "file": "assets/references/sn_daqin-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Da_Qin_Pagoda.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Da_Qin_Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Da_Qin_Pagoda.jpg/330px-Da_Qin_Pagoda.jpg",
+      "author": "J. Coster",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2003-05-31",
+      "description": "Da Qin Pagoda. May 2003.",
+      "sha256": "45899443dffccc2d50e6dff1fd8f0cfc93ca3419c29bdb32ffae69a13ef0e156"
+    }
+  ],
+  "original_research": "assets/research/sn_daqin.json",
+  "output": "assets/colored/sn_daqin.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 周至大秦寺塔现存整塔.\nMaterial observations: 灰褐偏红旧砖、檐带深褐与暗灰券洞，顶端灰褐；不过度提亮为黄石材。\nPortrait 1024x1536. Exactly SEVEN OCTAGONAL brick storeys, tall lower storey, stepped corbelled eaves, arched openings, modest existing cap. Preserve the ACTUAL slight lean of the source tower: this overrides the generic verticals-vertical instruction. Draw the complete ground base, no extra tower, church cross or invented restoration.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+      "reference_files": [
+        "assets/generated/sn_daqin.png",
+        "assets/references/sn_daqin-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": null,
+      "submitted_window_start": "2026-09-17T10:45:30Z",
+      "submitted_window_end": "2026-09-17T10:47:40Z",
+      "status": "abandoned_wait",
+      "completed_at": null,
+      "received_at": null,
+      "abandoned_at": "2026-09-17T10:55:55.615Z",
+      "reason": "电脑休眠数小时；用户明确要求不再等待旧返回。本地核查未找到设色原件，旧等待cell已不存在。提交精确时刻未落盘，保留窗口而不捏造。",
+      "user_instruction": "继续任务，但是不要再等这个服务端返回设色图了。"
+    },
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 周至大秦寺塔现存整塔.\nMaterial observations: 灰褐偏红旧砖、檐带深褐与暗灰券洞，顶端灰褐；不过度提亮为黄石材。\nPortrait 1024x1536. Exactly SEVEN OCTAGONAL brick storeys, tall lower storey, stepped corbelled eaves, arched openings, modest existing cap. Preserve the ACTUAL slight lean of the source tower: this overrides the generic verticals-vertical instruction. Draw the complete ground base, no extra tower, church cross or invented restoration.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+      "reference_files": [
+        "assets/generated/sn_daqin.png",
+        "assets/references/sn_daqin-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-17T10:56:17.175Z",
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-09-17T11:00:57.666Z",
+      "retry_reason": "用户要求放弃电脑休眠后的旧等待；核查本地无设色原件，重新发起。",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-338b1e76-ec69-4299-a8ad-e26cf2907307.png",
+      "saved_at": "2026-09-17T11:01:58.188Z"
+    }
+  ],
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b2d1020ad7ccb245becce93a4a68e9389b10f3afd326472dbc58362c0a09a987",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-338b1e76-ec69-4299-a8ad-e26cf2907307.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-338b1e76-ec69-4299-a8ad-e26cf2907307.png"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "gd_chen",
+  "subject": "陈家祠中央头门立面",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chen_Clan_Ancestral_Hall_2025.06_01.jpg/1280px-Chen_Clan_Ancestral_Hall_2025.06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Shujianyang",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gd_chen-photo.jpg"
+  ],
+  "source_note": "1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 陈家祠中央头门立面.\nLandscape 1536x1024. Draw the entrance facade seen in the photograph, with the central higher hard-gabled tiled roof and its two flanking lower roof sections, ornate ceramic ridge, stone porch beams and columns, and central doorway. Preserve visible facade boundaries, no invented courtyard or rear halls. Remove text, people, red lanterns, plants and flagpoles.\nStructure checkpoints: 中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。",
+  "generated_file": "assets/generated/gd_chen.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。"
+  ],
+  "caption": [
+    "陈家祠中央头门立面 · 线稿",
+    "清 · 1893"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:32:01.016Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 陈家祠中央头门立面.\nLandscape 1536x1024. Draw the entrance facade seen in the photograph, with the central higher hard-gabled tiled roof and its two flanking lower roof sections, ornate ceramic ridge, stone porch beams and columns, and central doorway. Preserve visible facade boundaries, no invented courtyard or rear halls. Remove text, people, red lanterns, plants and flagpoles.\nStructure checkpoints: 中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_chen-photo.jpg"
+      ],
+      "original_file": "assets/generated/gd_chen.png",
+      "saved_at": "2026-09-17T12:35:42.806Z",
+      "received_at": "2026-09-17T12:32:57.842Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-ebfeaa54-cd42-41f8-abb7-96d5577e1c74.png"
+    }
+  ],
+  "generated_original": "assets/generated/gd_chen.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a85fbd751b98ce7cf9accb0f0b4fc074f7f9f050b258aef8c13e3304ed7ba1c3",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gd_chen",
+      "file": "assets/references/gd_chen-photo.jpg",
+      "sha256": "071071e842be1dc3193f7f611432ec231086bc5f9c6d0353ef4b7f50a3e2baff",
+      "title": "File:Chen Clan Ancestral Hall 2025.06 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chen_Clan_Ancestral_Hall_2025.06_01.jpg/1280px-Chen_Clan_Ancestral_Hall_2025.06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg",
+      "author": "Shujianyang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "荔湾区政府：陈家祠堂文物价值评估项目（筹建1888、落成1893）",
+      "url": "https://www.lw.gov.cn/ywdt/cgxx/content/post_9766061.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "广州陈家祠",
+    "short": "陈家祠",
+    "sub": "头门 · 岭南陶塑与石雕",
+    "place": "广东广州 · 荔湾",
+    "placeKey": "gd_guangzhou",
+    "types": [
+      "hall",
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清光绪十九年",
+    "year": 1893,
+    "yearLabel": "1893",
+    "yearNote": "1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。",
+    "lede": "灰砖、石柱与屋脊上的陶塑，把宗族祠堂的入口做成一面细密的岭南工艺展墙。图版只取中央头门，不拼接后部院落。",
+    "history": [
+      {
+        "title": "荔湾区政府：陈家祠堂文物价值评估项目（筹建1888、落成1893）",
+        "url": "https://www.lw.gov.cn/ywdt/cgxx/content/post_9766061.html"
+      }
+    ],
+    "protection": {
+      "batch": 3,
+      "unitName": "陈家祠堂",
+      "relation": "part",
+      "locator": "PDF 第12页 · 陈家祠堂"
+    },
+    "id": "gd_chen",
+    "subject": "陈家祠中央头门立面",
+    "checkpoint": "中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。",
+    "material": "灰砖墙、灰瓦，浅灰白石柱石梁，屋脊陶塑青绿蓝红，门框暗红棕，门洞暗部保留。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "陈家祠中央头门立面 · 线稿",
+      "清 · 1893"
+    ],
+    "facts": [
+      "<b>主体</b> 陈家祠中央头门立面。",
+      "<b>年代</b> 1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。",
+      "<b>图版范围</b> 中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "gd_chen",
+      "file": "assets/references/gd_chen-photo.jpg",
+      "sha256": "071071e842be1dc3193f7f611432ec231086bc5f9c6d0353ef4b7f50a3e2baff",
+      "title": "File:Chen Clan Ancestral Hall 2025.06 01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chen_Clan_Ancestral_Hall_2025.06_01.jpg/1280px-Chen_Clan_Ancestral_Hall_2025.06_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg",
+      "author": "Shujianyang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg"
+    }
+  ],
+  "additional_sources": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "jl_nongan",
+  "subject": "农安辽塔",
+  "status": "complete",
+  "file": "assets/references/jl_nongan-candidate236.jpg",
+  "source_page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+  "image_url": "https://image.thepaper.cn/depository/image/309/98/236.jpg",
+  "author": "长春文旅／农安宣传（发布机构，未标具体摄影者）",
+  "license": "未注明；仅记录参考，不宣称开放授权",
+  "date": "2024-06-11（页面发布日期）",
+  "reference_files": [
+    "assets/generated/jl_nongan-draft2.png",
+    "assets/references/jl_nongan-neutral-photo.png"
+  ],
+  "additional_sources": [
+    {
+      "id": "jl_nongan",
+      "file": "assets/references/jl_nongan-candidate235.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "url": "https://image.thepaper.cn/depository/image/309/98/235.jpg",
+      "author": "长春文旅／农安宣传（发布机构，未标具体摄影者）",
+      "license": "未注明；仅记录参考，不宣称开放授权",
+      "date": "2024-06-11（页面发布日期）",
+      "role": "eave_detail",
+      "source_page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "image_url": "https://image.thepaper.cn/depository/image/309/98/235.jpg"
+    },
+    {
+      "id": "jl_nongan",
+      "file": "assets/references/jl_nongan-candidate234.jpg",
+      "page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "url": "https://image.thepaper.cn/depository/image/309/98/234.jpg",
+      "author": "长春文旅／农安宣传（发布机构，未标具体摄影者）",
+      "license": "未注明；仅记录参考，不宣称开放授权",
+      "date": "2024-06-11（页面发布日期）",
+      "role": "overall_setting",
+      "source_page": "https://m.thepaper.cn/newsDetail_forward_27694507",
+      "image_url": "https://image.thepaper.cn/depository/image/309/98/234.jpg"
+    }
+  ],
+  "source_note": "主照片局部被保护碑遮挡，以同篇檐部近照和全景互证，台基按可见部分保守表达。1980年代及2018年修缮另注，不把现存全部构件称作辽原件。",
+  "prompt": "Use case: precise-object-edit. IMAGE1 correct Nongan Liao Tower13-eave geometry black line draft, IMAGE2 is now a strictly GRAYSCALE actual photograph to eliminate reference color contamination. All output has strictly NEUTRAL R=G=B BLACK lines and grey antialiasing, flat pure opaqueWHITE #FFFFFF everywhere else. NO colored ink pixels or tint. Preserve EXACT13total major eave levels INCLUDING broad first eave above body, finial hoops and full shallow base, compositionportrait1024x1536. Geometry is already correct, do not add/remove eaves/bays or change perspective. Refine thin simplified contours fewer rooflines, no solid shadow or hatch. Full complete tower, uncut.",
+  "generated_file": "assets/generated/jl_nongan.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "农安辽塔 · 八角十三层密檐",
+    "辽代遗存 · 现貌历经现代修缮"
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "十三层密檐；素砖塔身没有移植其他辽塔佛像。",
+      "第三稿白底／中性笔画去底预检退出0。",
+      "第三稿十三檐仍完整。"
+    ],
+    "limitations": [
+      "艺术简化非实测；部分细部较密、边距小于提示词目标，留待用户视觉验收。"
+    ]
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nNONG'AN Liao Pagoda in Jilin, not Liaoyang or Chongxing. Follow PHOTO2 lower body geometry and PHOTO3 eave details; PHOTO4 overall present tower silhouette. Octagonal grey-brick densely-eaved tower, EXACTLY THIRTEEN eaves TOTAL INCLUDING broad FIRST eave above tall plain body, plus12upper eaves. Body is a comparatively plain tall masonry octagon, arched real/false door openings and vertical relief pilaster lines, NOT the lavish Buddha figure gallery of Chongxing tower. Preserve very dense simulated timber-bracket brick bands at eaves and present elongated stacked lotus/cap and metal ringed finial. Short brick stepped plinth visible along left front, no speculative giant terrace. Remove foreground heritage stele, park, trees, other towers and people. Full tower height84% portrait1024x1536.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jl_nongan-candidate236.jpg",
+        "assets/references/jl_nongan-candidate235.jpg",
+        "assets/references/jl_nongan-candidate234.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-ab31f3bd-2b68-4527-b802-0b1538678069.png",
+      "retained_file": "assets/generated/jl_nongan-draft1.png",
+      "accepted": false,
+      "reason": "结构十三檐正确，但RGB跨度99.99分位13，未通过中性笔画预检。"
+    },
+    {
+      "attempt": 2,
+      "prompt": "Use case: precise-object-edit. IMAGE1 is already geometrically CORRECT heritage line drawing. Correct ONLY its slightly non-neutral ink and leave architectural silhouette and ALL geometry completely unchanged. Every single ink pixel must have neutral equal-channel RGB BLACK or neutral grey antialiasing, strictly R=G=B, with ZERO colored pixels. Every other pixel must be perfectly flat opaque WHITE #FFFFFF. DO NOT recolor with any pigment, sepia, bluegrey, green or photograph color. The one octagonal Nongan Liao pagoda has EXACT13major eaves including broad bottom first eave, retain all13, finial and full base, portrait1024x1536. No new lines or structures, no changed perspective or scale, no hatch or filledshadow added. Following real photographs serve as identity references only, not colors. Keep the existing complete margins.",
+      "reference_files": [
+        "assets/generated/jl_nongan-draft1.png",
+        "assets/references/jl_nongan-candidate236.jpg",
+        "assets/references/jl_nongan-candidate235.jpg",
+        "assets/references/jl_nongan-candidate234.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3d351055-7fa5-455e-8b3f-861aab27b4e6.png",
+      "retained_file": "assets/generated/jl_nongan-draft2.png",
+      "accepted": false,
+      "reason": "RGB跨度分位仍为13，未通过中性笔画预检。"
+    }
+  ],
+  "factual_sources": [
+    {
+      "title": "吉林地方志 · 农安辽塔",
+      "url": "https://dfz.jl.gov.cn/ybjl/201106/t20110607_5217095.html"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-f4d5a60d-cc94-430d-9e22-9ed2610c5aee.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dec43800f5ac406c71d99508425e2a8ff0fc04c447004df8b856b14e66794d86",
+    "seeds": []
+  },
+  "generation_input_paths": [
+    "assets/generated/jl_nongan-draft2.png",
+    "/tmp/fanggu-ne-review.nfm0JO/nongan-neutral-photo.png"
+  ],
+  "reference_preparation": {
+    "source": "assets/references/jl_nongan-candidate236.jpg",
+    "method": "ImageMagick -colorspace Gray",
+    "retained_file": "assets/references/jl_nongan-neutral-photo.png"
+  }
+}

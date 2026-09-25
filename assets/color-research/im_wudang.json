@@ -1,0 +1,74 @@
+{
+  "id": "im_wudang",
+  "name": "五当召",
+  "subject": "五当召苏古沁殿",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 五当召苏古沁殿.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 主体墙身为实体灰白色，不能把白墙去成透明。 平顶檐带为深红褐、黑褐色，前廊柱梁为旧绿、红褐细彩，矩形窗为深色，台阶灰石。 顶端金属小刹为暗黄铜色；不加入新经幡、售票房或明亮金色佛塔。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
+  "input_images": [
+    "assets/generated/im_wudang.png",
+    "assets/references/im_wudang-38265643-thumb.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "主体墙身为实体灰白色，不能把白墙去成透明。",
+    "平顶檐带为深红褐、黑褐色，前廊柱梁为旧绿、红褐细彩，矩形窗为深色，台阶灰石。",
+    "顶端金属小刹为暗黄铜色；不加入新经幡、售票房或明亮金色佛塔。"
+  ],
+  "references": [
+    {
+      "id": "im_wudang",
+      "title": "五当召前殿.jpg",
+      "file": "assets/references/im_wudang-38265643-thumb.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg/500px-%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "霧島聖",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-10-05",
+      "description": "​五当召前殿全景，下方小房屋为售票处",
+      "bytes": 46935,
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg/500px-%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/im_wudang.json",
+  "output": "assets/colored/im_wudang.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 五当召苏古沁殿.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 主体墙身为实体灰白色，不能把白墙去成透明。 平顶檐带为深红褐、黑褐色，前廊柱梁为旧绿、红褐细彩，矩形窗为深色，台阶灰石。 顶端金属小刹为暗黄铜色；不加入新经幡、售票房或明亮金色佛塔。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
+      "reference_files": [
+        "assets/generated/im_wudang.png",
+        "assets/references/im_wudang-38265643-thumb.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-16T16:58:17.695Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:59:02.177Z",
+      "saved_at": "2026-09-16T16:59:02.444Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-15a84090-ce2e-494d-b364-3bf4b2e99837.png"
+    }
+  ],
+  "inputs_viewed": true,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "75fbd3b06411be49e1d4ac7b23da3a6c0877c01a3ef022bb9171036ac1e41fdb",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-15a84090-ce2e-494d-b364-3bf4b2e99837.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-15a84090-ce2e-494d-b364-3bf4b2e99837.png"
+}

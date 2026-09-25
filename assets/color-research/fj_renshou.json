@@ -1,0 +1,98 @@
+{
+  "id": "fj_renshou",
+  "name": "泉州开元寺仁寿塔",
+  "subject": "泉州开元寺仁寿塔（西塔）整塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 泉州开元寺仁寿塔（西塔）整塔.\nMaterial observations: 照片中花岗岩偏暖灰褐，有局部橙褐风化；檐下偏深灰，门洞暗部；全部为石塔，不画红色木柱。\nPortrait 1024x1536. Exactly FIVE octagonal storeys and FIVE principal upturned stone eaves. This is the WEST Renshou stone pagoda, NOT Zhenguo. Reference 2 gives the whole pagoda; reference 3 supplements the exact lower base and stair hidden by foliage. Upper three storeys have a single intermediate bracket group per bay. Retain the complete finial, carved base and central stairs; omit foliage and camera tripod.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+  "input_images": [
+    "assets/generated/fj_renshou.png",
+    "assets/references/fj_renshou-photo.jpg",
+    "assets/references/fj_renshou-detail-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "present_material_detail",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "照片中花岗岩偏暖灰褐，有局部橙褐风化；檐下偏深灰，门洞暗部；全部为石塔，不画红色木柱。"
+  ],
+  "references": [
+    {
+      "id": "fj_renshou",
+      "file": "assets/references/fj_renshou-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Renshou_Pagoda_of_Kaiyuan_Temple_(Quanzhou)_20170727.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Renshou_Pagoda_of_Kaiyuan_Temple_%28Quanzhou%29_20170727.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Renshou_Pagoda_of_Kaiyuan_Temple_%28Quanzhou%29_20170727.jpg/960px-Renshou_Pagoda_of_Kaiyuan_Temple_%28Quanzhou%29_20170727.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tyg728",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-07-27 12:34:28",
+      "description": "​泉州开元寺西塔“仁寿塔”，石构五层。五代梁贞明三年（917年）建成，原为木塔。宋政和四年（1114年）赐名“仁寿塔”，两次灾毁，改为砖塔，后易砖为石，嘉熙元年（1237年）先于东塔十年造成。 塔身每层每面镶嵌有浮雕，象征西方极乐世界，雕刻有金刚神将和罗汉、高僧、菩萨、童子，还有梁武帝、昭明太子，以及神话故事中猴行者等浮雕像。",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Renshou_Pagoda_of_Kaiyuan_Temple_(Quanzhou)_20170727.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Renshou_Pagoda_of_Kaiyuan_Temple_%28Quanzhou%29_20170727.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "id": "fj_renshou-detail",
+      "file": "assets/references/fj_renshou-detail-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-68.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Quanzhou_Kaiyuan_Si_20120229-68.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Quanzhou_Kaiyuan_Si_20120229-68.jpg/960px-Quanzhou_Kaiyuan_Si_20120229-68.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-29",
+      "description": "​泉州开元寺“仁寿塔”，象征西方极乐世界，十方净土，塔身每层每面镶嵌两幅浮雕像。",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Quanzhou_Kaiyuan_Si_20120229-68.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Quanzhou_Kaiyuan_Si_20120229-68.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ],
+  "original_research": "assets/research/fj_renshou.json",
+  "output": "assets/colored/fj_renshou.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 泉州开元寺仁寿塔（西塔）整塔.\nMaterial observations: 照片中花岗岩偏暖灰褐，有局部橙褐风化；檐下偏深灰，门洞暗部；全部为石塔，不画红色木柱。\nPortrait 1024x1536. Exactly FIVE octagonal storeys and FIVE principal upturned stone eaves. This is the WEST Renshou stone pagoda, NOT Zhenguo. Reference 2 gives the whole pagoda; reference 3 supplements the exact lower base and stair hidden by foliage. Upper three storeys have a single intermediate bracket group per bay. Retain the complete finial, carved base and central stairs; omit foliage and camera tripod.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+      "reference_files": [
+        "assets/generated/fj_renshou.png",
+        "assets/references/fj_renshou-photo.jpg",
+        "assets/references/fj_renshou-detail-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-16T17:25:59.780Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:26:46.575Z",
+      "received_at": "2026-09-16T17:26:46.575Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a0469311-1835-4f49-9beb-58a9398bfb8e.png",
+      "saved_at": "2026-09-16T17:28:11.518Z"
+    }
+  ],
+  "inputs_viewed": true,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0999a79ce8eff4ded7bc9b06ff4687ba0efbb4303fa81a410747f00e8f37bf85",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a0469311-1835-4f49-9beb-58a9398bfb8e.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a0469311-1835-4f49-9beb-58a9398bfb8e.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.428Z",
+    "sourceSha256": "0999a79ce8eff4ded7bc9b06ff4687ba0efbb4303fa81a410747f00e8f37bf85",
+    "inputSha256": "6617f3e555b1139599041765fec7ea11d780345debf00c8bbf1dd42e8f7e63cc",
+    "avifSha256": "c6cc9e1c31b2c67a0900a973031d1bb9bf03207498dec7acb459e20c44fe82e1"
+  }
+}

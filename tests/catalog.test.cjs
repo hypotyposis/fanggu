@@ -13,15 +13,35 @@ additions.push('xianwall','xianzhonggu','xiangtang','zhaoling','horyuji','toshod
 additions.push('zhakoubaita','feiying','songyangyanqing','huqiuta','qixia','haiqing','xuanmiao','duanliang','jijian','xuanyuan','fenghuangsi','linggu','feilaifeng','xinchangdafo','zijinan','baosheng','rulong','baziqiao','longxingchuang','lingyin','luohanshuangta','ruiguang','haichunxuan');
 const northernExpansion = JSON.parse(read('assets/research/north200-batch.json'));
 additions.push(...northernExpansion.ids, 'sd_pizhi', 'sx_doudafu', 'sx_jiulongbi');
-const anhuiExpansion = JSON.parse(read('assets/research/anhui-batch.json'));
-additions.push(...anhuiExpansion.ids);
+const beijingTianjinExpansion = JSON.parse(read('assets/research/beijing-tianjin-batch.json'));
+additions.push(...beijingTianjinExpansion.ids);
+const northeastExpansion = JSON.parse(read('assets/research/northeast-batch.json'));
+additions.push(...northeastExpansion.ids);
+const imYunnanGuizhouExpansion = JSON.parse(read('assets/research/im-yn-gz-batch.json'));
+additions.push(...imYunnanGuizhouExpansion.ids);
+const fujianShandongExpansion = JSON.parse(read('assets/research/fujian-shandong-batch.json'));
+additions.push(...fujianShandongExpansion.ids);
+const shaanxiExpansion = JSON.parse(read('assets/research/shaanxi-batch.json'));
+additions.push(...shaanxiExpansion.ids);
+const twoGuangExpansion = JSON.parse(read('assets/research/guangdong-guangxi-batch.json'));
+additions.push(...twoGuangExpansion.ids);
+const hunanHubeiExpansion = JSON.parse(read('assets/research/hunan-hubei-batch.json'));
+additions.push(...hunanHubeiExpansion.ids);
+const gansuExpansion = JSON.parse(read('assets/research/gansu-batch.json'));
+additions.push(...gansuExpansion.ids);
+const shandongExpansion = JSON.parse(read('assets/research/shandong-20260917-batch.json'));
+additions.push(...shandongExpansion.ids);
+const hebeiExpansion = JSON.parse(read('assets/research/hebei-20260917-batch.json'));
+additions.push(...hebeiExpansion.ids);
 const shanghaiExpansion = JSON.parse(read('assets/research/shanghai-batch.json'));
 additions.push(...shanghaiExpansion.ids);
+const anhuiExpansion = JSON.parse(read('assets/research/anhui-batch.json'));
+additions.push(...anhuiExpansion.ids);
 const henanAdditions = JSON.parse(read('assets/research/henan-additions-2026-09-18.json'));
 additions.push(...henanAdditions.ids);
 additions.push('nx_xumishan','nx_xixialing','nx_108towers');
-test('all 217 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 217); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -30,7 +50,6 @@ test('all 217 catalogue entries have a real PNG, matching dimensions and a map l
     assert(PLACES.some(p => p.key === site.placeKey && Number.isFinite(p.lat) && Number.isFinite(p.lon)), `${site.id} has no location`);
   }
 });
-
 test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', () => {
   const { createHash } = require('node:crypto');
   const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
@@ -139,6 +158,52 @@ test('Shanxi additions have hash-bound white originals and complete transparent 
       assert.equal(item.review, undefined);
     }
   }
+});
+
+test('Beijing and Tianjin additions have paired artwork, real inputs and recorded white-matte hashes', () => {
+  const batch = beijingTianjinExpansion;
+  assert.equal(batch.ids.length, 10);
+  assert.equal(new Set(batch.ids).size, 10);
+  assert.equal(batch.groups['北京'].length, 6); assert.equal(batch.groups['天津'].length, 4);
+  assert.deepEqual(Object.values(batch.groups).flat().sort(), [...batch.ids].sort());
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  const avif = JSON.parse(read('assets/color-research/avif-manifest.json'));
+  const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
+  assert.equal(queue.count, queue.entries.length);
+  assert.equal(queue.count, SITES.length - queue.excluded.length);
+  assert.deepEqual(Object.keys(COLORED_PLATES).sort(), Array.from(SITES, site => site.id).sort());
+  for (const id of batch.ids) {
+    const site = SITES.find(s => s.id === id);
+    assert.equal(site.initialStatus, 'unvisited'); assert.equal(site.country, 'CN');
+    assert.equal(queue.entries.filter(s => s.id === id).length, 1);
+    assert.equal(PLACES.find(p => p.key === site.placeKey).prov, id.startsWith('bj_') ? '北京' : '天津');
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      assert.equal(meta.id, id); assert.equal(meta.status, 'complete');
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+      const original = fs.readFileSync(path.resolve(root, meta.output || meta.generated_file));
+      const hash = require('node:crypto').createHash('sha256').update(original).digest('hex');
+      assert.equal(meta.background_preparation.sourceSha256, hash);
+      for (const file of meta.input_images || meta.reference_files) assert(fs.existsSync(path.resolve(root, file)), file);
+    }
+    const delivery = avif.images[id];
+    assert(['pending_user', 'approved_user'].includes(delivery.visualReview));
+    if (delivery.visualReview === 'approved_user') {
+      assert.equal(delivery.review?.inputSha256, delivery.inputSha256);
+      assert.equal(delivery.review?.avifSha256, delivery.sha256);
+    }
+    assert(delivery.alpha.transparentPixels > 0); assert(delivery.alpha.opaquePixels > 0);
+    assert.equal(delivery.extraction.interiorRgbUnchanged, true);
+    assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
+  }
+  const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
+  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers']) laterIds.add(id);
+  const previouslyApproved = Object.entries(avif.images).filter(([id]) => !laterIds.has(id));
+  assert.equal(previouslyApproved.length, 200);
+  assert(previouslyApproved.every(([, item]) => item.visualReview === 'approved_user'));
+  assert(SITES.find(s => s.id === 'bj_changling').yearApprox);
+  assert(SITES.find(s => s.id === 'tj_wenmiao').sub.includes('中部'));
+  assert(SITES.find(s => s.id === 'tj_guangdonghuiguan').sub.includes('局部'));
 });
 
 test('Japanese temple subjects use their surviving construction dates and Japanese eras', () => {

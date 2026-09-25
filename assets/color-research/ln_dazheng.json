@@ -1,0 +1,109 @@
+{
+  "id": "ln_dazheng",
+  "name": "沈阳故宫大政殿",
+  "subject": "沈阳故宫大政殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/ln_dazheng.png",
+    "assets/references/ln_dazheng-candidate1.jpg",
+    "assets/references/ln_dazheng-candidate4.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nKeep exactly two octagonal eave levels and twin carved dragon posts. Present roof orange-yellow glazed tiles with dark GREEN edge courses, not a uniform gold wash. Actual red columns, red-brown wooden doors; two dragon-wrapped front posts alone carry aged ochre-gold. Bracket arms are weathered grey-brown exposed wood with limited faded blue-green paint seen in detail photograph, NOT uniformly freshly gold-painted. Pale opaque grey-white stone plinth, railings and steps; dark red-brown opaque central recess. Blank plaques. Landscape1536x1024.",
+  "material_observations": [
+    "橙黄琉璃瓦，绿瓦包边。",
+    "暗红柱门与局部赭金龙柱，斗拱为灰褐旧木及残留青绿彩画。",
+    "浅灰白石台、栏杆与踏步为不透明实体。"
+  ],
+  "references": [
+    {
+      "title": "File:2014 Manchu Forbidden City Dazheng Hall 02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/2014_Manchu_Forbidden_City_Dazheng_Hall_02.jpg/1280px-2014_Manchu_Forbidden_City_Dazheng_Hall_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:2014_Manchu_Forbidden_City_Dazheng_Hall_02.jpg",
+      "width": 1200,
+      "height": 800,
+      "author": "Gary Todd",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2014-05-08 09:48:44",
+      "id": "ln_dazheng",
+      "file": "assets/references/ln_dazheng-candidate1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2014_Manchu_Forbidden_City_Dazheng_Hall_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/2014_Manchu_Forbidden_City_Dazheng_Hall_02.jpg/1280px-2014_Manchu_Forbidden_City_Dazheng_Hall_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "title": "File:2014 Manchu Forbidden City Dazheng Hall 12.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/2014_Manchu_Forbidden_City_Dazheng_Hall_12.jpg/1280px-2014_Manchu_Forbidden_City_Dazheng_Hall_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:2014_Manchu_Forbidden_City_Dazheng_Hall_12.jpg",
+      "width": 1200,
+      "height": 800,
+      "author": "Gary Lee Todd, Ph.D.",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2014-05-08 09:55:58",
+      "id": "ln_dazheng",
+      "file": "assets/references/ln_dazheng-candidate4.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2014_Manchu_Forbidden_City_Dazheng_Hall_12.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/2014_Manchu_Forbidden_City_Dazheng_Hall_12.jpg/1280px-2014_Manchu_Forbidden_City_Dazheng_Hall_12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/ln_dazheng.json",
+  "output": "assets/colored/ln_dazheng.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "八角殿身、两道屋檐、成对盘龙柱及自有台基完整。",
+      "设色现貌材料区分已目检；外部白底与记录透空点已由固定脚本处理。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "72c71be067ca4aa67616a6a895b17b531608b8776c71d1c5402d17daf1cbdf59",
+    "seeds": [
+      [
+        362,
+        731
+      ],
+      [
+        1171,
+        731
+      ],
+      [
+        321,
+        734
+      ],
+      [
+        1210,
+        735
+      ],
+      [
+        737,
+        179
+      ],
+      [
+        796,
+        179
+      ]
+    ]
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-67ef8a8f-04bb-4151-b249-10c72c189771.png",
+  "width": 1536,
+  "height": 1024,
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

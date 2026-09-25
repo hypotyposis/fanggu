@@ -68,6 +68,18 @@ const PLATES = {
       "近正视 · 东汉建安十四年"
     ]
   },
+  "jl_jiangjunfen": {
+    "src": "assets/plates/jl_jiangjunfen.png",
+    "alt": "集安将军坟 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b0a18b",
+    "tint": false,
+    "caption": [
+      "集安将军坟 · 七级方坛石室墓",
+      "高句丽 · 约5世纪"
+    ]
+  },
   "sx_yungang": {
     "src": "assets/plates/sx_yungang.png",
     "alt": "云冈第20窟 · 主尊坐像 · 线稿",
@@ -200,6 +212,18 @@ const PLATES = {
       "隋 · 隋代"
     ]
   },
+  "sd_simen": {
+    "src": "assets/plates/sd_simen.png",
+    "alt": "济南神通寺四门塔整塔 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#90aab6",
+    "tint": false,
+    "caption": [
+      "济南神通寺四门塔整塔 · 线稿",
+      "隋 · 611"
+    ]
+  },
   "kaiyuan": {
     "src": "assets/plates/kaiyuan.png",
     "alt": "正定开元寺须弥塔与钟楼 · 线稿",
@@ -207,6 +231,18 @@ const PLATES = {
     "height": 1024,
     "color": "#d6ab5c",
     "tint": false
+  },
+  "sn_xingjiao": {
+    "src": "assets/plates/sn_xingjiao.png",
+    "alt": "兴教寺玄奘塔（中央高塔）整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "兴教寺玄奘塔（中央高塔）整塔 · 线稿",
+      "唐 · 669"
+    ]
   },
   "xiuding": {
     "src": "assets/plates/xiuding.png",
@@ -216,6 +252,18 @@ const PLATES = {
     "color": "#d6ab5c",
     "tint": false
   },
+  "sn_qianling": {
+    "src": "assets/plates/sn_qianling.png",
+    "alt": "乾陵无字碑正面及碑座 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "乾陵无字碑正面及碑座 · 线稿",
+      "唐 · 唐代 · 立碑确年未定"
+    ]
+  },
   "xian": {
     "src": "assets/plates/xian.png",
     "alt": "西安大雁塔 · 小雁塔 · 线稿",
@@ -223,6 +271,30 @@ const PLATES = {
     "height": 1024,
     "color": "#d6ab5c",
     "tint": false
+  },
+  "sn_xiangji": {
+    "src": "assets/plates/sn_xiangji.png",
+    "alt": "西安香积寺善导塔现存整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "西安香积寺善导塔现存整塔 · 线稿",
+      "唐 · 唐代 · 营建年代有异说"
+    ]
+  },
+  "gs_bingling": {
+    "src": "assets/plates/gs_bingling.png",
+    "alt": "第171龛弥勒大佛 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "第171龛弥勒大佛 · 线稿",
+      "唐 · 731"
+    ]
   },
   "hn_fengxue": {
     "src": "assets/plates/hn_fengxue.png",
@@ -280,6 +352,18 @@ const PLATES = {
       "唐代龛像 · 原物残貌"
     ]
   },
+  "sd_longhu": {
+    "src": "assets/plates/sd_longhu.png",
+    "alt": "济南神通寺龙虎塔整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "济南神通寺龙虎塔整塔 · 线稿",
+      "唐 · 唐代 · 年代未确"
+    ]
+  },
   "guangren": {
     "src": "assets/plates/guangren.png",
     "alt": "芮城广仁王庙正殿（龙王殿） · 线稿",
@@ -334,6 +418,18 @@ const PLATES = {
     "caption": [
       "八角石幢 · 层叠雕刻",
       "唐 · 大中十三年（859）"
+    ]
+  },
+  "hlj_shideng": {
+    "src": "assets/plates/hlj_shideng.png",
+    "alt": "兴隆寺渤海石灯幢 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#91aca1",
+    "tint": false,
+    "caption": [
+      "兴隆寺石灯幢 · 八角亭式灯室",
+      "渤海时期 · 现存石刻"
     ]
   },
   "gongchen": {
@@ -584,6 +680,18 @@ const PLATES = {
     "color": "#7aa899",
     "tint": false
   },
+  "gd_meian": {
+    "src": "assets/plates/gd_meian.png",
+    "alt": "梅庵大雄宝殿完整殿体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "梅庵大雄宝殿完整殿体 · 线稿",
+      "宋 · 北宋"
+    ]
+  },
   "ruiguang": {
     "src": "assets/plates/ruiguang.png",
     "alt": "苏州瑞光塔 · 线稿",
@@ -740,6 +848,18 @@ const PLATES = {
       "北宋重建 · 现存砖塔"
     ]
   },
+  "hb_yuquan": {
+    "src": "assets/plates/hb_yuquan.png",
+    "alt": "当阳玉泉寺十三层铁塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "当阳玉泉寺十三层铁塔 · 线稿",
+      "北宋 · 1061 · 塔刹后配"
+    ]
+  },
   "hn_xiangshan": {
     "src": "assets/plates/hn_xiangshan.png",
     "alt": "香山寺大悲观音大士塔 · 现状可见塔身 · 线稿",
@@ -848,6 +968,18 @@ const PLATES = {
       "宋代主体、历代修缮 · 一主拱与左右各一腹拱"
     ]
   },
+  "sn_daqin": {
+    "src": "assets/plates/sn_daqin.png",
+    "alt": "周至大秦寺塔现存整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "周至大秦寺塔现存整塔 · 线稿",
+      "宋 · 宋代 · 确年未定"
+    ]
+  },
   "jinci": {
     "src": "assets/plates/jinci.png",
     "alt": "晋祠圣母殿 · 线稿",
@@ -952,6 +1084,30 @@ const PLATES = {
       "完整外立面 · 南宋重建"
     ]
   },
+  "fj_renshou": {
+    "src": "assets/plates/fj_renshou.png",
+    "alt": "泉州开元寺仁寿塔（西塔）整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "泉州开元寺仁寿塔（西塔）整塔 · 线稿",
+      "南宋 · 1228—1237"
+    ]
+  },
+  "fj_zhenguo": {
+    "src": "assets/plates/fj_zhenguo.png",
+    "alt": "泉州开元寺镇国塔（东塔）整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "泉州开元寺镇国塔（东塔）整塔 · 线稿",
+      "南宋 · 1238—1250"
+    ]
+  },
   "baziqiao": {
     "src": "assets/plates/baziqiao.png",
     "alt": "绍兴八字桥南侧近正面石梁桥与两岸石阶 · 线稿",
@@ -986,6 +1142,18 @@ const PLATES = {
     "caption": [
       "独乐寺观音阁正面 · 据实景照片重绘",
       "辽统和二年（984）重建 · 面阔五间，外观两层、内部三层"
+    ]
+  },
+  "jl_nongan": {
+    "src": "assets/plates/jl_nongan.png",
+    "alt": "农安辽塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "农安辽塔 · 八角十三层密檐",
+      "辽代遗存 · 现貌历经现代修缮"
     ]
   },
   "kaishan": {
@@ -1070,6 +1238,42 @@ const PLATES = {
     "caption": [
       "蔚县南安寺塔",
       "八角十三层密檐塔与仰莲塔座"
+    ]
+  },
+  "tj_jizhou_baita": {
+    "src": "assets/plates/tj_jizhou_baita.png",
+    "alt": "天津蓟县白塔 · 八角砖塔与覆钵式塔身 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "蓟县白塔 · 楼阁与覆钵形制",
+      "辽至清 · 历代修缮现貌"
+    ]
+  },
+  "ln_liaoyang": {
+    "src": "assets/plates/ln_liaoyang.png",
+    "alt": "辽阳白塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "辽阳白塔 · 八角十三层密檐",
+      "辽代 · 塔身佛教浮雕"
+    ]
+  },
+  "ln_chongxing": {
+    "src": "assets/plates/ln_chongxing.png",
+    "alt": "北镇崇兴寺双塔 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "崇兴寺 · 辽代双塔",
+      "西塔与东塔 · 各十三层密檐"
     ]
   },
   "tianning": {
@@ -1260,6 +1464,18 @@ const PLATES = {
       "金 · 1185大修"
     ]
   },
+  "bj_lugou": {
+    "src": "assets/plates/bj_lugou.png",
+    "alt": "北京卢沟桥 · 十一孔石桥侧向全貌 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "北京卢沟桥 · 十一孔石拱",
+      "金 · 1192建成，明清修缮"
+    ]
+  },
   "hongfu": {
     "src": "assets/plates/hongfu.png",
     "alt": "定襄洪福寺大雄宝殿（毗卢殿） · 线稿",
@@ -1318,6 +1534,18 @@ const PLATES = {
     "caption": [
       "登封观星台 · 台体与石圭正面",
       "元 · 1276"
+    ]
+  },
+  "bj_miaoying": {
+    "src": "assets/plates/bj_miaoying.png",
+    "alt": "北京妙应寺白塔 · 覆钵式塔与十字折角基座 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "北京妙应寺白塔 · 覆钵式塔",
+      "元 · 1271—1279"
     ]
   },
   "fenghuangsi": {
@@ -1520,6 +1748,18 @@ const PLATES = {
       "元 · 至正三年（1343）重建"
     ]
   },
+  "bj_juyong_yuntai": {
+    "src": "assets/plates/bj_juyong_yuntai.png",
+    "alt": "北京居庸关云台 · 元代过街塔基南面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "居庸关云台 · 现存过街塔基",
+      "元 · 1342—1345营建"
+    ]
+  },
   "hb_beiyue": {
     "src": "assets/plates/hb_beiyue.png",
     "alt": "北岳庙 · 德宁之殿正立面（含回廊、台基） · 线稿",
@@ -1592,6 +1832,18 @@ const PLATES = {
       "明清 · 明清"
     ]
   },
+  "sn_hancheng": {
+    "src": "assets/plates/sn_hancheng.png",
+    "alt": "韩城文庙大成殿整殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "韩城文庙大成殿整殿 · 线稿",
+      "明 · 1371重建 · 后世修护"
+    ]
+  },
   "yuhuang": {
     "src": "assets/plates/yuhuang.png",
     "alt": "蔚州玉皇阁 · 线稿",
@@ -1652,6 +1904,18 @@ const PLATES = {
       "明洪武 · 七间重檐庑殿"
     ]
   },
+  "fj_chongwu": {
+    "src": "assets/plates/fj_chongwu.png",
+    "alt": "崇武古城南门及相邻短段城墙 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "崇武古城南门及相邻短段城墙 · 线稿",
+      "明 · 始建1387 · 历代修缮"
+    ]
+  },
   "sx_jiulongbi": {
     "src": "assets/plates/sx_jiulongbi.png",
     "alt": "大同九龙壁 · 九龙琉璃照壁正面 · 线稿",
@@ -1671,6 +1935,30 @@ const PLATES = {
     "height": 1024,
     "color": "#7290bd",
     "tint": false
+  },
+  "hb_zixiao": {
+    "src": "assets/plates/hb_zixiao.png",
+    "alt": "紫霄宫紫霄大殿与正面台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "紫霄宫紫霄大殿与正面台基 · 线稿",
+      "明 · 明永乐年间"
+    ]
+  },
+  "hb_jindian": {
+    "src": "assets/plates/hb_jindian.png",
+    "alt": "武当山天柱峰明代金殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "武当山天柱峰明代金殿 · 线稿",
+      "明 · 1416"
+    ]
   },
   "tiantan": {
     "src": "assets/plates/tiantan.png",
@@ -1692,6 +1980,18 @@ const PLATES = {
       "门台与两翼墙段；城楼为修复现状"
     ]
   },
+  "bj_changling": {
+    "src": "assets/plates/bj_changling.png",
+    "alt": "北京长陵 · 祾恩殿九开间重檐庑殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "长陵 · 九开间祾恩殿",
+      "明永乐至宣德 · 1416—1427营建沿革"
+    ]
+  },
   "baoen": {
     "src": "assets/plates/baoen.png",
     "alt": "南京大报恩寺旧琉璃塔（据1915年土山湾模型绘制） · 线稿",
@@ -1702,6 +2002,18 @@ const PLATES = {
     "caption": [
       "九层八面 · 据土山湾旧塔模型绘制",
       "原塔已毁 · 非现代玻璃新塔"
+    ]
+  },
+  "bj_zhihua": {
+    "src": "assets/plates/bj_zhihua.png",
+    "alt": "北京智化寺 · 如来殿与万佛阁南面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "北京智化寺 · 如来殿与万佛阁",
+      "明 · 1443—1444始建"
     ]
   },
   "hunyuanwenmiao": {
@@ -1716,6 +2028,18 @@ const PLATES = {
       "单檐庑殿 · 现存明代遗构"
     ]
   },
+  "bj_zhenjue": {
+    "src": "assets/plates/bj_zhenjue.png",
+    "alt": "北京真觉寺金刚宝座 · 南面五层佛龛与密檐石塔 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "北京真觉寺金刚宝座 · 南面",
+      "明 · 1473"
+    ]
+  },
   "hb_xuanhuaqingyuan": {
     "src": "assets/plates/hb_xuanhuaqingyuan.png",
     "alt": "宣化清远楼 · 十字歇山三重檐钟楼及砖台 · 线稿",
@@ -1726,6 +2050,18 @@ const PLATES = {
     "caption": [
       "清远楼南面",
       "三重檐十字歇山顶与砖台券洞"
+    ]
+  },
+  "yn_jianshui": {
+    "src": "assets/plates/yn_jianshui.png",
+    "alt": "建水文庙先师殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "建水文庙先师殿 · 线稿 · 待用户验收",
+      "明 · 弘治年间"
     ]
   },
   "sx_yuci_chenghuang": {
@@ -1750,6 +2086,54 @@ const PLATES = {
     "caption": [
       "仙游昭灵宫 · 单殿正面",
       "明代（待考） · 单檐歇山"
+    ]
+  },
+  "sn_yanan": {
+    "src": "assets/plates/sn_yanan.png",
+    "alt": "延安宝塔（岭山寺塔）现存整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "延安宝塔（岭山寺塔）现存整塔 · 线稿",
+      "明 · 明代重修 · 确年未定"
+    ]
+  },
+  "gx_dashi": {
+    "src": "assets/plates/gx_dashi.png",
+    "alt": "合浦永安大士阁前阁及相连后阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "合浦永安大士阁前阁及相连后阁 · 线稿",
+      "明 · 明代"
+    ]
+  },
+  "gs_jiayuguan": {
+    "src": "assets/plates/gs_jiayuguan.png",
+    "alt": "西侧嘉峪关楼与门台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "西侧嘉峪关楼与门台 · 线稿",
+      "明 · 弘治—正德"
+    ]
+  },
+  "gs_dafo_tuta": {
+    "src": "assets/plates/gs_dafo_tuta.png",
+    "alt": "弥陀千佛塔露明塔身与塔刹 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "弥陀千佛塔露明塔身与塔刹 · 线稿",
+      "明 · 明代"
     ]
   },
   "gongzhu": {
@@ -1808,6 +2192,18 @@ const PLATES = {
     "color": "#7290bd",
     "tint": false
   },
+  "hb_xianling": {
+    "src": "assets/plates/hb_xianling.png",
+    "alt": "明显陵棂星门石坊及相连琉璃影壁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "明显陵棂星门石坊及相连琉璃影壁 · 线稿",
+      "明 · 明嘉靖年间"
+    ]
+  },
   "taimiao": {
     "src": "assets/plates/taimiao.png",
     "alt": "北京太庙享殿（前殿） · 线稿",
@@ -1842,6 +2238,18 @@ const PLATES = {
     "caption": [
       "海会寺 · 小砖塔与琉璃大塔",
       "五代—宋小塔 · 明嘉靖至隆庆大塔"
+    ]
+  },
+  "gx_zhenwu": {
+    "src": "assets/plates/gx_zhenwu.png",
+    "alt": "经略台真武阁完整阁体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "经略台真武阁完整阁体 · 线稿",
+      "明 · 1573"
     ]
   },
   "guanyintang": {
@@ -1892,6 +2300,42 @@ const PLATES = {
       "三层木阁与下层前廊的四道檐线"
     ]
   },
+  "im_dazhao": {
+    "src": "assets/plates/im_dazhao.png",
+    "alt": "呼和浩特大召寺大雄宝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "呼和浩特大召寺大雄宝殿 · 线稿 · 待用户验收",
+      "明清 · 明清"
+    ]
+  },
+  "gd_zumiao": {
+    "src": "assets/plates/gd_zumiao.png",
+    "alt": "佛山祖庙三门立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "佛山祖庙三门立面 · 线稿",
+      "明清 · 明清"
+    ]
+  },
+  "sn_chongwen": {
+    "src": "assets/plates/sn_chongwen.png",
+    "alt": "泾阳崇文塔现存整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "泾阳崇文塔现存整塔 · 线稿",
+      "明 · 1591—1608"
+    ]
+  },
   "sx_yongzuo": {
     "src": "assets/plates/sx_yongzuo.png",
     "alt": "太原永祚寺双塔 · 文峰塔与宣文塔 · 线稿",
@@ -1928,6 +2372,18 @@ const PLATES = {
       "明 · 天启五年（1625）修造"
     ]
   },
+  "ln_dazheng": {
+    "src": "assets/plates/ln_dazheng.png",
+    "alt": "沈阳故宫大政殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "沈阳故宫 · 大政殿",
+      "清初 · 八角重檐攒尖"
+    ]
+  },
   "quanzhoukaiyuan": {
     "src": "assets/plates/quanzhoukaiyuan.png",
     "alt": "泉州开元寺大雄宝殿 · 线稿",
@@ -1952,6 +2408,18 @@ const PLATES = {
       "明末清初 · 主龛与天宫楼阁"
     ]
   },
+  "tj_wenmiao": {
+    "src": "assets/plates/tj_wenmiao.png",
+    "alt": "天津文庙 · 府庙大成殿中部立面与丹陛 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "天津文庙 · 大成殿中部与丹陛",
+      "明清遗构 · 1436为文庙初创"
+    ]
+  },
   "xianshen": {
     "src": "assets/plates/xianshen.png",
     "alt": "介休祆神楼过街楼与乐楼组合近正面 · 线稿",
@@ -1964,6 +2432,30 @@ const PLATES = {
       "清 · 顺治末至康熙初重建"
     ]
   },
+  "gz_wenchang": {
+    "src": "assets/plates/gz_wenchang.png",
+    "alt": "贵阳文昌阁现存阁体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "贵阳文昌阁现存阁体 · 线稿 · 待用户验收",
+      "清 · 1669"
+    ]
+  },
+  "yn_jindian": {
+    "src": "assets/plates/yn_jindian.png",
+    "alt": "昆明太和宫现存铜金殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "昆明太和宫现存铜金殿 · 线稿 · 待用户验收",
+      "清 · 1671"
+    ]
+  },
   "hb_qingdongling": {
     "src": "assets/plates/hb_qingdongling.png",
     "alt": "清东陵 · 孝陵神道石牌坊 · 线稿",
@@ -1974,6 +2466,18 @@ const PLATES = {
     "caption": [
       "清东陵 · 孝陵石牌坊",
       "五间六柱十一楼正立面"
+    ]
+  },
+  "sd_mengmiao": {
+    "src": "assets/plates/sd_mengmiao.png",
+    "alt": "邹城孟庙亚圣殿整殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "邹城孟庙亚圣殿整殿 · 线稿",
+      "清 · 1673重建 · 后世修缮"
     ]
   },
   "daimiao": {
@@ -2024,6 +2528,54 @@ const PLATES = {
       "明清宅院遗构 · 依实景保留楼窑组合"
     ]
   },
+  "gx_gongcheng": {
+    "src": "assets/plates/gx_gongcheng.png",
+    "alt": "恭城文庙大成殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "恭城文庙大成殿 · 线稿",
+      "明清 · 明清"
+    ]
+  },
+  "hu_zhanggu": {
+    "src": "assets/plates/hu_zhanggu.png",
+    "alt": "张谷英村明清民居屋面群局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "张谷英村明清民居屋面群局部 · 线稿",
+      "明 · 清 · 明—清"
+    ]
+  },
+  "yn_jingzhen": {
+    "src": "assets/plates/yn_jingzhen.png",
+    "alt": "景真八角亭现存戒堂 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "景真八角亭现存戒堂 · 线稿 · 待用户验收",
+      "清 · 1701"
+    ]
+  },
+  "fj_chengqi": {
+    "src": "assets/plates/fj_chengqi.png",
+    "alt": "永定承启楼完整外观 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "永定承启楼完整外观 · 线稿",
+      "清 · 1709"
+    ]
+  },
   "hn_wuhou": {
     "src": "assets/plates/hn_wuhou.png",
     "alt": "南阳武侯祠 · 大拜殿檐下局部 · 线稿",
@@ -2058,6 +2610,18 @@ const PLATES = {
     "caption": [
       "曲阜孔庙大成殿正面 · 据实景照片重绘",
       "清雍正八年（1730）重建竣工 · 九间重檐歇山顶"
+    ]
+  },
+  "im_wuta": {
+    "src": "assets/plates/im_wuta.png",
+    "alt": "呼和浩特五塔寺金刚座舍利宝塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "呼和浩特五塔寺金刚座舍利宝塔 · 线稿 · 待用户验收",
+      "清 · 1727—1732"
     ]
   },
   "hn_zkguandi": {
@@ -2096,6 +2660,18 @@ const PLATES = {
       "三层四滴水 · 南立面"
     ]
   },
+  "hu_tianhou": {
+    "src": "assets/plates/hu_tianhou.png",
+    "alt": "芷江天后宫石坊完整立面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "芷江天后宫石坊完整立面 · 线稿",
+      "清 · 1748"
+    ]
+  },
   "hn_zhongyue": {
     "src": "assets/plates/hn_zhongyue.png",
     "alt": "嵩山中岳庙 · 峻极殿中央立面局部 · 线稿",
@@ -2130,6 +2706,18 @@ const PLATES = {
     "caption": [
       "承德避暑山庄 · 澹泊敬诚殿",
       "七间单檐卷棚歇山楠木殿正面"
+    ]
+  },
+  "im_wudang": {
+    "src": "assets/plates/im_wudang.png",
+    "alt": "五当召苏古沁殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "五当召苏古沁殿 · 线稿 · 待用户验收",
+      "清 · 乾隆时期"
     ]
   },
   "hb_puning": {
@@ -2240,6 +2828,18 @@ const PLATES = {
       "正殿与前出卷棚抱厦正面"
     ]
   },
+  "gs_fuxi": {
+    "src": "assets/plates/gs_fuxi.png",
+    "alt": "伏羲庙仪门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "伏羲庙仪门 · 线稿",
+      "清 · 1805"
+    ]
+  },
   "hb_dzgongyuan": {
     "src": "assets/plates/hb_dzgongyuan.png",
     "alt": "定州贡院 · 魁阁号舍完整正立面 · 线稿",
@@ -2286,6 +2886,126 @@ const PLATES = {
     "caption": [
       "后土祠 · 秋风楼正面",
       "三层楼阁 · 清代重建"
+    ]
+  },
+  "tj_shijia": {
+    "src": "assets/plates/tj_shijia.png",
+    "alt": "天津杨柳青石家大院 · 内院门楼与纵深门院 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "石家大院 · 内院门楼与纵深门院",
+      "清末 · 1875为宅第大规模营建起点"
+    ]
+  },
+  "hu_yueyang": {
+    "src": "assets/plates/hu_yueyang.png",
+    "alt": "岳阳楼三层主体楼阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "岳阳楼三层主体楼阁 · 线稿",
+      "清 · 1880"
+    ]
+  },
+  "hu_nanyue": {
+    "src": "assets/plates/hu_nanyue.png",
+    "alt": "南岳大庙圣帝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "南岳大庙圣帝殿 · 线稿",
+      "清 · 1882 · 后世修护"
+    ]
+  },
+  "gd_chen": {
+    "src": "assets/plates/gd_chen.png",
+    "alt": "陈家祠中央头门立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "陈家祠中央头门立面 · 线稿",
+      "清 · 1893"
+    ]
+  },
+  "tj_guangdonghuiguan": {
+    "src": "assets/plates/tj_guangdonghuiguan.png",
+    "alt": "天津广东会馆 · 戏台与鸡笼式藻井局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "广东会馆 · 戏台与鸡笼式藻井局部",
+      "清末 · 1907年落成"
+    ]
+  },
+  "jl_wenmiao": {
+    "src": "assets/plates/jl_wenmiao.png",
+    "alt": "吉林文庙大成殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "吉林文庙 · 十一开间大成殿",
+      "清末1909建成 · 后续修缮另记"
+    ]
+  },
+  "gz_jiaxiu": {
+    "src": "assets/plates/gz_jiaxiu.png",
+    "alt": "贵阳甲秀楼现存楼体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "贵阳甲秀楼现存楼体 · 线稿 · 待用户验收",
+      "清 · 1909"
+    ]
+  },
+  "gx_chengyang": {
+    "src": "assets/plates/gx_chengyang.png",
+    "alt": "程阳永济桥全桥与五座楼亭 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "程阳永济桥全桥与五座楼亭 · 线稿",
+      "民国 · 1924竣工"
+    ]
+  },
+  "gd_ruishi": {
+    "src": "assets/plates/gd_ruishi.png",
+    "alt": "开平锦江里瑞石楼完整楼体 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "开平锦江里瑞石楼完整楼体 · 线稿",
+      "民国 · 1925"
+    ]
+  },
+  "hlj_sofia": {
+    "src": "assets/plates/hlj_sofia.png",
+    "alt": "哈尔滨圣索菲亚教堂 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "圣索菲亚教堂 · 现存1932年主体",
+      "红砖墙体 · 洋葱穹顶与钟楼"
     ]
   },
   "guanque": {
@@ -2370,6 +3090,198 @@ const PLATES = {
     "caption": [
       "东寺 · 五重塔",
       "近正视 · 江户宽永二十一年（1644）"
+    ]
+  },
+  "sd_guangyue": {
+    "src": "assets/plates/sd_guangyue.png",
+    "alt": "聊城光岳楼整楼与台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "光岳楼 · 整楼与台基 · 线稿",
+      "四层木楼 · 明洪武七年（1374）"
+    ]
+  },
+  "sd_yantai_huiguan": {
+    "src": "assets/plates/sd_yantai_huiguan.png",
+    "alt": "烟台福建会馆沿街外观 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "烟台福建会馆 · 沿街外观 · 线稿",
+      "闽南会馆 · 清光绪三十二年（1906）"
+    ]
+  },
+  "sd_jiuding": {
+    "src": "assets/plates/sd_jiuding.png",
+    "alt": "济南九顶塔整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "九顶塔 · 八角砖塔 · 线稿",
+      "九座小塔 · 唐代遗塔"
+    ]
+  },
+  "sd_hongjialou": {
+    "src": "assets/plates/sd_hongjialou.png",
+    "alt": "洪家楼天主教堂正立面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "洪家楼天主教堂 · 正立面 · 线稿",
+      "双尖塔 · 清光绪三十一年（1905）"
+    ]
+  },
+  "sd_qingdao_catholic": {
+    "src": "assets/plates/sd_qingdao_catholic.png",
+    "alt": "青岛天主教堂西立面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "青岛天主教堂 · 西立面 · 线稿",
+      "双钟塔 · 1934年建成"
+    ]
+  },
+  "sd_qingdao_christ": {
+    "src": "assets/plates/sd_qingdao_christ.png",
+    "alt": "青岛基督教堂主堂与钟楼 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "青岛基督教堂 · 主堂与钟楼 · 线稿",
+      "不对称立面 · 1910年建成"
+    ]
+  },
+  "sd_yanmiao": {
+    "src": "assets/plates/sd_yanmiao.png",
+    "alt": "曲阜颜庙复圣殿整殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "曲阜颜庙 · 复圣殿 · 线稿",
+      "七间重檐 · 明正德二年（1507）重建"
+    ]
+  },
+  "sd_chongjue": {
+    "src": "assets/plates/sd_chongjue.png",
+    "alt": "济宁崇觉寺铁塔塔身与上部台座 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "崇觉寺铁塔 · 塔身与上部台座 · 线稿",
+      "宋建七层 · 明增两层与塔刹"
+    ]
+  },
+  "hb_shanhaiguan": {
+    "src": "assets/plates/hb_shanhaiguan.png",
+    "alt": "山海关镇东楼及城台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "山海关 · 镇东楼与城台",
+      "明代箭楼 · 历代及近现代修缮"
+    ]
+  },
+  "hb_pule": {
+    "src": "assets/plates/hb_pule.png",
+    "alt": "普乐寺旭光阁与上层台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "普乐寺 · 旭光阁与上层台基",
+      "双重圆檐 · 清乾隆三十一年（1766）"
+    ]
+  },
+  "hb_anyuan": {
+    "src": "assets/plates/hb_anyuan.png",
+    "alt": "安远庙普度殿整殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "安远庙 · 普度殿",
+      "三重檐方殿 · 清乾隆二十九年（1764）"
+    ]
+  },
+  "hb_zhili": {
+    "src": "assets/plates/hb_zhili.png",
+    "alt": "直隶总督署大堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "直隶总督署 · 大堂",
+      "五间正堂 · 清雍正年间"
+    ]
+  },
+  "hb_yongtong": {
+    "src": "assets/plates/hb_yongtong.png",
+    "alt": "赵县永通桥整桥侧立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "赵县 · 永通桥整桥侧立面",
+      "单孔四小券 · 金明昌年间"
+    ]
+  },
+  "hb_tiangong": {
+    "src": "assets/plates/hb_tiangong.png",
+    "alt": "丰润天宫寺塔整塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "天宫寺塔 · 整塔",
+      "八角十三层 · 辽清宁八年（1062）始建"
+    ]
+  },
+  "hb_shien": {
+    "src": "assets/plates/hb_shien.png",
+    "alt": "时恩寺大殿与清代抱厦 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "时恩寺 · 大殿与卷棚抱厦",
+      "明代殿体 · 清代增建抱厦"
+    ]
+  },
+  "hb_dajingmen": {
+    "src": "assets/plates/hb_dajingmen.png",
+    "alt": "大境门券门与相接短墙段 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "张家口 · 大境门与短墙段",
+      "清顺治元年（1644）建门"
     ]
   },
   "ah_xuguo": {

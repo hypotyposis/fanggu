@@ -1,0 +1,72 @@
+{
+  "id": "bj_miaoying",
+  "name": "北京妙应寺白塔",
+  "subject": "北京妙应寺白塔 · 覆钵式塔与十字折角基座",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/bj_miaoying.png",
+    "assets/references/bj_miaoying-photo.jpg",
+    "assets/references/bj_miaoying-base.jpg",
+    "assets/references/bj_miaoying-overall.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Beijing Miaoying Temple White Stupa, exactly the complete geometry in Image1. Main bottle-shaped body, cruciform upper cornices, ringed neck and molded square collar are pale weathered WHITE/very light warm GREY plaster, not gold or cream-yellow. Keep restrained subtle weathering but do not reproduce dense stains. The broad lower masonry faces are muted GREY brick, with only sparse fine brick joints, and the bottom plinth light grey stone. The small lamps along the base rim are dark grey metal. The circular pierced canopy and hanging ornaments are aged dark GREY bronze with muted grey-green patina, with a dull copper/reddish underside; the bulbous finial above carries subdued old gold/brass only where visible in the photos. Do not apply gold to the white body or base. Preserve the line drawing's plain faces and do not add the gilded Buddha-character niche shown on a different face in Image3. All real open-air gaps around canopy hangings and structural supports must be flat pure white, bounded by fine contours. Portrait1024x1536, identical framing and full silhouette, no crop.",
+  "material_observations": [
+    "塔身、十三天、肩部与上层线脚为白灰粉饰，照片可见浅灰污渍；不是整体暖金。",
+    "基座低部为灰色砖砌实体，线脚浅灰白，上缘小灯饰为深灰金属。",
+    "圆形华盖和垂挂金属偏深灰、灰绿，华盖内侧暗红褐；宝瓶塔刹有克制的旧金色。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/bj_miaoying-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_Baitasi_(2017)_E.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Beijing_Baitasi_%282017%29_E.jpg",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2017-09-19",
+      "note": "已查看实拍，作当前材料色参考；不宣称文保级色彩校准。"
+    },
+    {
+      "file": "assets/references/bj_miaoying-base.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20090528_Beijing_White_Dagoba_8092.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/20090528_Beijing_White_Dagoba_8092.jpg",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2009-05-28"
+    },
+    {
+      "file": "assets/references/bj_miaoying-overall.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Beijing_White_Stupa.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Beijing_White_Stupa.jpg",
+      "author": "Yaan",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "date": "2007-09"
+    }
+  ],
+  "original_research": "assets/research/bj_miaoying.json",
+  "output": "assets/colored/bj_miaoying.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4068a060-7667-40db-a0ed-e75fb045953b.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1124f9fac326a05c669704fe311aec497e1b290e6420573ddc2b7dfa868794a8",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "塔身、十三天、华盖、折角基座与上缘灯饰维持线稿构图，完整未裁切。",
+      "白灰粉饰、灰砖与金属华盖分区可辨，旧金仅在宝瓶塔刹。",
+      "无文字、外景或投影；白底原件与暗底透明副本均已目检。",
+      "脚本验证近白边缘、真实透明与可见实体，内部RGB保持原样。"
+    ],
+    "limitations": "对照照片的艺术设色，非色彩校准或严格像素配准；金属华盖的细小镂空作简化表达。"
+  },
+  "completed_at": "2026-09-16 10:50:28 UTC"
+}

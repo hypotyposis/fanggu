@@ -1,0 +1,132 @@
+{
+  "id": "hb_pule",
+  "subject": "普乐寺旭光阁与上层台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+  "author": "梓地",
+  "license": "CC BY-SA 3.0",
+  "references": [
+    {
+      "file": "assets/references/hb_pule-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+      "author": "梓地",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-09-21 08:11:08",
+      "sha256": "dfc2fd460b4dc82b16c0e1c7308da9c154b6a376f41e32009d8e5f39c3b634ce"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_pule-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw ONLY the complete circular Xuguang Pavilion of Pule Temple and its immediately supporting upper rectangular stone terrace with railing; this scope excludes lower tiers and all surrounding side pavilions/towers. TWO circular umbrella conical roofs, upper taller and narrower, lower wider. Vase finial at apex, red circular wall ring with rectangle lattice openings, blue band under top roof, shallow upper stone terrace. Do NOT draw three roof tiers or copy the Temple of Heaven. Preserve full silhouette and base with ample margins."
+  ],
+  "material_observations": [
+    "黄橙色琉璃瓦双重圆顶、朱红门窗、蓝绿额枋，灰白石台与栏杆，金色细边与塔顶宝瓶。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 普乐寺旭光阁与上层台基\nLandscape 1536x1024. Draw ONLY the complete circular Xuguang Pavilion of Pule Temple and its immediately supporting upper rectangular stone terrace with railing; this scope excludes lower tiers and all surrounding side pavilions/towers. TWO circular umbrella conical roofs, upper taller and narrower, lower wider. Vase finial at apex, red circular wall ring with rectangle lattice openings, blue band under top roof, shallow upper stone terrace. Do NOT draw three roof tiers or copy the Temple of Heaven. Preserve full silhouette and base with ample margins.",
+  "generated_file": "assets/generated/hb_pule.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 普乐寺旭光阁与上层台基\nLandscape 1536x1024. Draw ONLY the complete circular Xuguang Pavilion of Pule Temple and its immediately supporting upper rectangular stone terrace with railing; this scope excludes lower tiers and all surrounding side pavilions/towers. TWO circular umbrella conical roofs, upper taller and narrower, lower wider. Vase finial at apex, red circular wall ring with rectangle lattice openings, blue band under top roof, shallow upper stone terrace. Do NOT draw three roof tiers or copy the Temple of Heaven. Preserve full silhouette and base with ample margins.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_pule-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:29:06.167810+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:32:39.483638+08:00",
+      "saved_at": "2026-09-17T23:32:39.514391+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-c5cafaea-2eef-489f-9317-93181b328626.png",
+      "output": "assets/generated/hb_pule.png"
+    }
+  ],
+  "caption": [
+    "普乐寺 · 旭光阁与上层台基",
+    "双重圆檐 · 清乾隆三十一年（1766）"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-c5cafaea-2eef-489f-9317-93181b328626.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "979239c327a0f2bbc314fd52621ed03f893cfcb9e7f3f1f7acb061b9aa5dd342",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_pule",
+    "name": "普乐寺",
+    "short": "普乐寺",
+    "sub": "旭光阁 · 上层台基",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆三十一年",
+    "year": 1766,
+    "yearNote": "1766对应普乐寺兴建及旭光阁；本图仅绘圆阁与直接承托的上层台基，不展示完整坛城。",
+    "place": "河北承德 · 武烈河东",
+    "placeKey": "hb_chengde",
+    "types": [
+      "pavilion"
+    ],
+    "lede": "两层圆形黄瓦顶在石台上层层收束，圆阁与方坛相互衬托。旭光阁让承德寺庙群中多了一种鲜明的圆形轮廓。",
+    "facts": [
+      "普乐寺建于1766年，前部殿宇与后部坛城组成不同空间。",
+      "本图绘旭光阁与上层台基，其他层级、配阁与小塔不在范围内。",
+      "圆阁为双重圆檐，黄色琉璃瓦、朱红门窗和蓝绿色额枋按实拍设色。"
+    ],
+    "caption": [
+      "普乐寺 · 旭光阁与上层台基",
+      "双重圆檐 · 清乾隆三十一年（1766）"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.604913+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_pule-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg",
+      "author": "梓地",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-09-21 08:11:08",
+      "sha256": "dfc2fd460b4dc82b16c0e1c7308da9c154b6a376f41e32009d8e5f39c3b634ce",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%AE%E4%B9%90%E5%AF%BA%E6%97%AD%E5%85%89%E9%98%81_%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_20130921_081108.jpg"
+    }
+  ]
+}

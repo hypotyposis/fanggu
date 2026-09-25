@@ -1,0 +1,135 @@
+{
+  "id": "hb_shien",
+  "subject": "时恩寺大殿与清代抱厦",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "file": "assets/references/hb_shien-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2024-07-28 15:07:58",
+      "sha256": "c0be904f3682f408e6c99de3d71af4a6543b2e790975fa60bc974ee8fc4d7f54"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_shien-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete five-bay Shien Temple main hall in Xuanhua, single HIP roof behind, and FIVE-bay attached low barrel-vault/rolling roof porch in front (the Qing addition). Preserve complete low horizontal hall and its low brick plinth, red lattice entry/window bays. Simplify ornament selectively. Near frontal with modest angle as actual photo. Remove stone elephants, lamps, planters, modern apartment blocks, trees, banners and ALL writing; plaques outlined and blank. Do not replace the hip roof with a hip-and-gable roof."
+  ],
+  "material_observations": [
+    "灰色瓦与灰砖墙裙、朱红柱及门窗，蓝绿额枋彩画，匾额金红边不写字。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 时恩寺大殿与清代抱厦\nLandscape 1536x1024. Complete five-bay Shien Temple main hall in Xuanhua, single HIP roof behind, and FIVE-bay attached low barrel-vault/rolling roof porch in front (the Qing addition). Preserve complete low horizontal hall and its low brick plinth, red lattice entry/window bays. Simplify ornament selectively. Near frontal with modest angle as actual photo. Remove stone elephants, lamps, planters, modern apartment blocks, trees, banners and ALL writing; plaques outlined and blank. Do not replace the hip roof with a hip-and-gable roof.",
+  "generated_file": "assets/generated/hb_shien.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 时恩寺大殿与清代抱厦\nLandscape 1536x1024. Complete five-bay Shien Temple main hall in Xuanhua, single HIP roof behind, and FIVE-bay attached low barrel-vault/rolling roof porch in front (the Qing addition). Preserve complete low horizontal hall and its low brick plinth, red lattice entry/window bays. Simplify ornament selectively. Near frontal with modest angle as actual photo. Remove stone elephants, lamps, planters, modern apartment blocks, trees, banners and ALL writing; plaques outlined and blank. Do not replace the hip roof with a hip-and-gable roof.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_shien-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:31:10.042753+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:31:53.696371+08:00",
+      "saved_at": "2026-09-17T23:31:53.732275+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-aef94d25-3c49-4967-afd9-5dcae3502945.png",
+      "output": "assets/generated/hb_shien.png"
+    }
+  ],
+  "caption": [
+    "时恩寺 · 大殿与卷棚抱厦",
+    "明代殿体 · 清代增建抱厦"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-aef94d25-3c49-4967-afd9-5dcae3502945.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1271afb91b96a774301d6d8ad4ad52e8caefabebc0f6d97c6b5b8d96343646e5",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_shien",
+    "name": "时恩寺",
+    "short": "时恩寺",
+    "sub": "大殿 · 清代卷棚抱厦",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明成化六年始建 · 清增抱厦",
+    "year": 1470,
+    "yearNote": "1470为时恩寺始建年，现存大殿保留明代特征；前出五间卷棚抱厦为清代增建，不把整组外观都定为1470年原构。",
+    "place": "河北张家口 · 宣化",
+    "placeKey": "hb_xuanhua",
+    "types": [
+      "hall"
+    ],
+    "lede": "五间大殿在庑殿顶下展开，前面又接一层轻巧的卷棚抱厦。两个时期的屋面叠在一起，形成宣化古城中平稳而丰富的立面。",
+    "facts": [
+      "时恩寺始建于1470年，其他殿宇已毁，现存主体为大殿。",
+      "大殿五间、单檐庑殿顶；前部五间卷棚抱厦是清代增建。",
+      "图版绘整殿与抱厦、台基，前景供器、石象和城市楼房不在所绘范围内。"
+    ],
+    "legacyNames": [
+      "宣化时恩寺大殿"
+    ],
+    "caption": [
+      "时恩寺 · 大殿与卷棚抱厦",
+      "明代殿体 · 清代增建抱厦"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.860952+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_shien-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2024-07-28 15:07:58",
+      "sha256": "c0be904f3682f408e6c99de3d71af4a6543b2e790975fa60bc974ee8fc4d7f54",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%97%B6%E6%81%A9%E5%AF%BA%E5%A4%A7%E6%AE%BF.jpg"
+    }
+  ]
+}

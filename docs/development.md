@@ -38,6 +38,7 @@ python3 -m http.server 8765
 | `journal.js` | 首页与详情页共用表单、心愿、到访与评价动作、跨标签页同步 |
 | `visit-slider.js` | 拖动设色、取消、重试、保存时机与盖章动效 |
 | `catalog.js` | 国家、地区、行政区、类型和组合筛选；从地点表派生地理字段 |
+| `protection.js` / `protection-data.js` | 国保批次标签与搜索 / 生成的官方登记资料；源数据为 `assets/research/national-protection.json` |
 | `navigation.js` | 稳定详情链接、旧锚点、历史状态校验和返回判断 |
 | `timeline.js` | 年代聚合、时代选择、分页和历史状态恢复 |
 | `main.js` / `atlas.js` | 首页组装、地图与年表初始化 / 图鉴、备份和浏览状态 |
@@ -46,6 +47,8 @@ python3 -m http.server 8765
 | `proof.html` / `color-proof.*` / `color-studies.*` | 线稿校对、设色校对及三张正式图版的效果演示 |
 
 脚本使用普通 `<script>`，不是 ES modules。`sites.js` 须先于 `plates.js`；`colored-plates.js` 须先于使用它的 `artwork.js`；共享模块先于页面初始化。现有纯逻辑模块通常同时提供浏览器全局对象和 CommonJS 导出。不要只在 Node 测试入口验证依赖。
+
+首页与详情页按 `protection-data.js → protection.js → catalog.js → 页面初始化` 加载国保资料。`classify()` 派生的 `site.protection` 只读展示；不得写入个人备份或图版验收。标签规则、官方来源及后续选目见[国保标签与选目规则](national-protection.md)。
 
 修改加载顺序、共享接口或缓存版本参数时，检查 `index.html`、`detail.html`、`proof.html`、`color-proof.html`、`color-studies.html`。来源页 `sources.html` 的脚本和标记从生成器修改。只更新受影响资源的版本，保持同一资源在相关页面一致。
 
@@ -73,7 +76,9 @@ python3 -m http.server 8765
 
 新建时代时同时检查 `DYN`、CSS 色板、`CHAPTERS`、年表及筛选配置。日本使用独立时代；朝代线色由 `DYN.acc` 指向 CSS 变量，具体色值以代码为准。
 
-西夏作为独立时代分类，使用沙褐线色；起讫年代依据 [UNESCO西夏陵说明](https://whc.unesco.org/en/list/1736)。年表点置于北侧，与辽金同时的时期条在其上方单列窄带，以免点击区域互相遮挡。局部图版须在 `sub` 和 `caption` 明列所绘范围；西夏陵3号陵不补画消失外装，一百零八塔仅选最上三行七塔，须弥山仅选第5窟唐代大佛胸膝局部。
+高句丽、渤海遗存使用独立 `goguryeo`、`balhae` 时期，不套用北魏或唐；依据见逐图研究记录。其目录章节说明本库所收遗迹年代，年表使用北轨古迹点和独立时期选择器，不将章节范围伪装成完整政权起止。`country` 仍由遗迹今日所在地派生。
+
+教堂使用 `catalog.js` 的 `church` 类型，不强制归入传统殿堂；独立石灯幢按石刻主体使用 `sculpture`，不因“幢”字归成经幢。新增类型还须验证实际筛选、搜索及详情分类。
 
 ### 存储与兼容
 
@@ -107,7 +112,15 @@ python3 -m http.server 8765
 
 当前只有本地个人评价，不包含公共均分、他人评论、账号或联网传输。后续联机可复用古迹 ID、独立评价写入入口和修改时间；仍需设计用户身份、同步冲突与删除规则、公共统计以及短评是否公开的选择。`updatedAt` 目前仅是本机修改时间，导入仍采用明确的备份覆盖规则，不做时间比较或自动同步。
 
+图鉴各状态筛选下的名册均按古迹 `year` 从早到晚排列，同年沿用目录顺序。到访状态、日期与笔记不参与排序，记录更新后保留已展开数量；状态筛选仍按最新记录决定条目是否显示。
+
+打卡完成后先等待盖章落定，再原位更新卡片操作区：保留已加载的设色图、印章和其他未变卡片，渐隐拖动条、渐显到访记录，并平滑调整操作区高度。减少动态效果时直接更新。筛选仍可移除不再符合条件的条目，过渡不改变保存时机或个人记录。
+
 ## 生成文件与命令副作用
+
+### 当前原型阶段的例外
+
+当前 `scripts/plate-policy.json` 默认 `prototype`。图版技术质量阈值与 AI 视觉验收暂时关闭，以用户人眼明确通过为准；生成、原件保留、尽力去底/转码、缓存及实际验收对象记录继续执行。下面严格去底/像素校验描述只在严格模式阻塞交付，原型命令无需逐图白底预检或自动质量返工。具体流程、用户验收记录命令及 `--strict` 恢复方法见 [当前原型模式](monument-batch-workflow.md#当前原型模式)。文件缺失或不能解码/编码仍是执行失败，不将失败伪称成功。新图可进入本地待审预览，未审仍为 `pending_user`。
 
 ### 新图默认白底生成、脚本去底
 
@@ -128,6 +141,7 @@ python3 -m http.server 8765
 
 | 操作 | 输入 | 写入 / 注意事项 |
 | --- | --- | --- |
+| `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
 | `node scripts/prepare-plates.mjs` | `sites.js`、`style.css`、线稿原稿、线稿考据 JSON 与白底处理记录 | `assets/plates/`、`plates.js`、`sources.html`；需要 `magick`，源文件时间变化可能导致全量重处理 |
 | `python3 -B scripts/prepare-colored-avif.py` | `queue.json`、批量设色 PNG、三张已确认 PNG | 白底去底或保留原生 alpha（旧暗底原件按哈希兼容），生成 `assets/colored-transparent/` 透明 PNG，再写 `assets/colored-transparent-avif/` 与 `assets/color-research/avif-manifest.json`；AVIF Q85、4:4:4、speed=6，原 PNG 不变，按来源、抠图参数和编码器哈希复用 |
 | `node scripts/collect-colored-plates.mjs --require-complete` | `queue.json`、逐图设色 JSON、保留的 PNG、AVIF 与转码清单 | `colored-plates.js`、`progress.json`、`prompts.json`；验证来源/交付哈希，缺少或过期 AVIF 会报错；不改图片 |
@@ -146,14 +160,17 @@ python3 -m http.server 8765
 
 ## 新增或修改古迹
 
+新增条目的执行顺序、并发、搜索与返工预算以 [增量制图操作手册](monument-batch-workflow.md) 为准。下面是完整性检查清单，不表示必须逐处串行执行；批量制作先准备就绪项，线稿核验后即可启动该项设色，最后集中接入与重建。
+
 1. 查同名、别名与所绘主体，确认是新条目还是既有条目的修订；保留已有 ID 和个人记录。未指定个人初始状态时默认未到访；用户要求存在歧义时再确认，不把考据新增自动加入心愿。
+   中国古迹候选先参考[官方国保名单](national-protection.md)，核实后更新国保源 JSON 并运行 `node scripts/prepare-protection.mjs`；未核实可以先留待核对，不为贴标签拖延原型制图。
 2. 按 [线稿规范](../assets/research/STYLE.md) 准备照片、真实来源、由内置 imagegen 生成的白底 PNG 原稿、绑定哈希的去底记录及通过 alpha 校验的透明交付版、两项图注与研究 JSON。新 JSON 使用现有字段，参考 `hn_chuzu.json`；历史提示词和输入按当时真实记录保留。
 3. 更新 `SITES`，补齐 `PLACES` 和必要分类。检查所绘主体年代和国别。
 4. 运行线稿生成器并检查原稿、交付图、`plates.js` 与 `sources.html` 的差异。缺少文件时补齐输入，不能用任意占位图片凑数。
 5. 按 [设色流程](../assets/color-research/WORKFLOW.md) 制作、登记并验收设色图。向 `queue.json.entries` 加入对应条目并同步 `count`；沿用现有字段和真实路径，不伪造 worker 分工。三张已确认图版的 `excluded` 是特殊入口，变更它们需要同步汇总逻辑。
 6. 运行 AVIF 转码脚本，再汇总设色清单，并比较 `SITES` 与 `COLORED_PLATES` 的 ID，确认整库覆盖。检查 `progress.pending`；目录完整不等于图版视觉合格。
 7. 更新测试涉及的新增记录覆盖和数量基线。当前 `catalog.test.cjs`、`timeline.test.cjs`、`library.test.cjs` 包含固定批次数量，考据覆盖列表还包含手写 ID；新条目也应进入有效性检查，不能只调大数量。
-8. 运行自动测试和相关浏览器检查。图版交付变化时同步本地素材副本和实际部署目录；同步 README 中对用户有意义的数量或功能说明。Git 中的清单更新不会自动交付被忽略的图片。
+8. 确认上述写文件命令均已退出成功，再运行自动测试和相关浏览器检查。图版交付变化时同步本地素材副本；只有当前任务包含发布时才同步实际部署目录。同步 README 中对用户有意义的数量或功能说明。Git 中的清单更新不会自动交付被忽略的图片。
 
 只改正文或研究来源时，可复用已核验图版；如果修改了所绘主体、形制、图注或年代配色，重新判断需要重画、重建或复核的范围。
 
@@ -206,6 +223,9 @@ node --test tests/*.test.cjs
 ## 文档维护
 
 - [AGENTS.md](../AGENTS.md) 保存跨任务的简要规则；本指南保存机制、命令和操作步骤；图版规范保存领域约束。避免多处复制相同长规则。
+- [增量制图操作手册](monument-batch-workflow.md) 保存新增古迹的调度、止损、恢复和耗时记录规则；线稿与设色规范共同引用它，不另建互相矛盾的批量流程。
 - [线稿历史任务](../assets/research/history/line-production-2026-09-15.md)、[设色历史任务](../assets/color-research/history/color-production-2026-09-15.md) 保存原始分工和当时授权，供追溯；不用于启动新任务。
 - [恢复摘要](../assets/color-research/history/recovery-2026-09-15.md)、批次清单和考据提示词保留历史事实。详细 `recovery/` 材料仅在本地保存。可以追加状态说明与当前入口，不篡改当时实际输入、数量或验证结果。
 - 文档链接使用相对路径；机器绝对路径仅作为真实历史溯源记录保留，不用于当前操作示例。来源图与原始生成文件可能独立存储，记录路径不等于新机器上一定可用。
+
+西夏作为独立时代分类，使用沙褐线色；起讫年代依据 [UNESCO西夏陵说明](https://whc.unesco.org/en/list/1736)。年表点置于北侧，与辽金同时的时期条在其上方单列窄带，以免点击区域互相遮挡。局部图版须在 `sub` 和 `caption` 明列所绘范围；西夏陵3号陵不补画消失外装，一百零八塔仅选最上三行七塔，须弥山仅选第5窟唐代大佛胸膝局部。

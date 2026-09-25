@@ -1,0 +1,127 @@
+{
+  "id": "gx_gongcheng",
+  "name": "恭城文庙",
+  "subject": "恭城文庙大成殿",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 恭城文庙大成殿\nPRESENT MATERIAL OBSERVATIONS: 橙黄釉瓦，陶塑花脊绿蓝红，深红木柱与门框，灰石檐柱、灰石台基，深灰门洞；不依清代主题色统一刷蓝。\nKeep complete original line composition and geometry. Do not introduce photo occluders or other buildings.",
+  "input_images": [
+    "assets/generated/gx_gongcheng.png",
+    "assets/references/gx_gongcheng-hall-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "橙黄釉瓦，陶塑花脊绿蓝红，深红木柱与门框，灰石檐柱、灰石台基，深灰门洞；不依清代主题色统一刷蓝。"
+  ],
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "file": "assets/references/gx_gongcheng-hall-photo.jpg",
+      "sha256": "3380c812de6c516aaf5147d53c092e1ee0f1329499b1dee4bebfd51a3d60b754",
+      "id": "gx_gongcheng"
+    }
+  ],
+  "source_page": "https://commons.wikimedia.org/wiki/File:Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Gongcheng_Wenmiao_2012.09.29_16-20-19.jpg",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 3.0",
+  "original_research": "assets/research/gx_gongcheng.json",
+  "output": "assets/colored/gx_gongcheng.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T12:46:01.202Z",
+      "status": "saved",
+      "completed_at": null,
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 恭城文庙大成殿\nPRESENT MATERIAL OBSERVATIONS: 橙黄釉瓦，陶塑花脊绿蓝红，深红木柱与门框，灰石檐柱、灰石台基，深灰门洞；不依清代主题色统一刷蓝。\nKeep complete original line composition and geometry. Do not introduce photo occluders or other buildings.",
+      "reference_files": [
+        "assets/generated/gx_gongcheng.png",
+        "assets/references/gx_gongcheng-hall-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T12:47:37.519Z",
+      "saved_at": "2026-09-17T12:47:37.731Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a7ee0a96-cd94-48a9-a04d-ffa2df2af905.png",
+      "original_file": "assets/color-studies/v1/gx_gongcheng-colored.png"
+    }
+  ],
+  "generated_original": "assets/color-studies/v1/gx_gongcheng-colored.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f49154a7d68db779a7c2383620d4091f3cdd55a3725abea63af3af0167d68e18",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "文化和旅游部：第六批国保名单，恭城古建筑群（明至清）",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "恭城文庙大成殿",
+    "short": "恭城文庙",
+    "sub": "重檐歇山 · 孔庙主殿",
+    "place": "广西恭城 · 西山",
+    "placeKey": "gx_gongcheng",
+    "types": [
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清营建 · 后世修护",
+    "year": 1700,
+    "yearApprox": true,
+    "yearLabel": "明清",
+    "yearNote": "第六批国保名录将恭城古建筑群列为明至清。1700仅是明清现存主体的近似排序点；创建、历代重修和今殿构件年代不混作一个精确年份。",
+    "lede": "大成殿立在高台上，重檐与陶塑屋脊将视线向上牵引。图版只取文庙主殿，不把香炉亭、庑房或相邻武庙并入。",
+    "history": [
+      {
+        "title": "文化和旅游部：第六批国保名单，恭城古建筑群（明至清）",
+        "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+      }
+    ],
+    "protection": {
+      "batch": 6,
+      "unitName": "恭城古建筑群",
+      "relation": "part",
+      "locator": "第六批名单 · 古建筑 · 序号691 / Ⅲ－394 · 恭城古建筑群",
+      "note": "图版取恭城文庙大成殿，不代表同批古建筑群的全部建筑。"
+    },
+    "id": "gx_gongcheng",
+    "subject": "恭城文庙大成殿",
+    "checkpoint": "三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。",
+    "material": "橙黄釉瓦，陶塑花脊绿蓝红，深红木柱与门框，灰石檐柱、灰石台基，深灰门洞；不依清代主题色统一刷蓝。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "恭城文庙大成殿 · 线稿",
+      "明清 · 明清"
+    ],
+    "facts": [
+      "<b>主体</b> 恭城文庙大成殿。",
+      "<b>年代</b> 第六批国保名录将恭城古建筑群列为明至清。1700仅是明清现存主体的近似排序点；创建、历代重修和今殿构件年代不混作一个精确年份。",
+      "<b>图版范围</b> 三开间重檐歇山大成殿，橙黄瓦面、灰石柱；不把前方香炉亭及两旁庑房画作主殿。"
+    ]
+  },
+  "source_note": "第六批国保名录将恭城古建筑群列为明至清。1700仅是明清现存主体的近似排序点；创建、历代重修和今殿构件年代不混作一个精确年份。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "original_file": "assets/color-studies/v1/gx_gongcheng-colored.png",
+  "line_source": "assets/generated/gx_gongcheng.png"
+}

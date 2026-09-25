@@ -1,0 +1,80 @@
+{
+  "id": "sd_longhu",
+  "name": "济南神通寺龙虎塔",
+  "subject": "济南神通寺龙虎塔整塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 济南神通寺龙虎塔整塔.\nMaterial observations: 雕刻石身暖灰褐，后世砖顶深灰褐；深凹雕刻与券门暗部偏炭灰，砖与石差异保留。\nPortrait 1024x1536. JINAN Shentong Temple's solitary Dragon-and-Tiger pagoda, NOT Kaohsiung twin towers. Preserve the carved square stone chamber and flame-shaped arched openings, large layered stepped carved pedestal, relief figures/dragons selectively and the existing brick double-eave upper crown with short finial. No extra inhabited storeys. Keep the entire irregular stepped base and apex.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+  "input_images": [
+    "assets/generated/sd_longhu.png",
+    "assets/references/sd_longhu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "雕刻石身暖灰褐，后世砖顶深灰褐；深凹雕刻与券门暗部偏炭灰，砖与石差异保留。"
+  ],
+  "references": [
+    {
+      "id": "sd_longhu",
+      "file": "assets/references/sd_longhu-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Dragon_and_tiger_pagoda_shandong_2006_09_2.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Dragon_and_tiger_pagoda_shandong_2006_09_2.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Dragon_and_tiger_pagoda_shandong_2006_09_2.jpg/960px-Dragon_and_tiger_pagoda_shandong_2006_09_2.jpg",
+      "author": "Rolf Müller (User:Rolfmueller)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2007-09-23",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dragon_and_tiger_pagoda_shandong_2006_09_2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Dragon_and_tiger_pagoda_shandong_2006_09_2.jpg"
+    }
+  ],
+  "original_research": "assets/research/sd_longhu.json",
+  "output": "assets/colored/sd_longhu.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "generation_history": [
+    {
+      "stage": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 济南神通寺龙虎塔整塔.\nMaterial observations: 雕刻石身暖灰褐，后世砖顶深灰褐；深凹雕刻与券门暗部偏炭灰，砖与石差异保留。\nPortrait 1024x1536. JINAN Shentong Temple's solitary Dragon-and-Tiger pagoda, NOT Kaohsiung twin towers. Preserve the carved square stone chamber and flame-shaped arched openings, large layered stepped carved pedestal, relief figures/dragons selectively and the existing brick double-eave upper crown with short finial. No extra inhabited storeys. Keep the entire irregular stepped base and apex.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
+      "reference_files": [
+        "assets/generated/sd_longhu.png",
+        "assets/references/sd_longhu-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "submitted_at": "2026-09-16T17:25:15.437Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:25:59.245Z",
+      "received_at": "2026-09-16T17:25:59.245Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d0b8b6cf-890c-443f-bc6b-b4ec50188306.png",
+      "saved_at": "2026-09-16T17:25:59.628Z"
+    }
+  ],
+  "inputs_viewed": true,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "000b6551313e4f0d46d909dc2b1f06598addc0afa81ac9c848f7358b9e047579",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d0b8b6cf-890c-443f-bc6b-b4ec50188306.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d0b8b6cf-890c-443f-bc6b-b4ec50188306.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.442Z",
+    "sourceSha256": "000b6551313e4f0d46d909dc2b1f06598addc0afa81ac9c848f7358b9e047579",
+    "inputSha256": "3837ea525f55bb00025f0fb9fe2f5e7ccaf654809df00ec914cbdc07b6eb3fb4",
+    "avifSha256": "ef9b122d7ce1fd21f70a7bd2c030566eff59f95586e24006239d3d505228496b"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "tj_shijia",
+  "subject": "天津杨柳青石家大院 · 内院门楼与纵深门院",
+  "status": "complete",
+  "file": "assets/references/tj_shijia-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Shiyuan_tianjin_doorways.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Shiyuan_tianjin_doorways.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Rolfmueller",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "date": "2013-07-01 09:41:18",
+  "reference_files": [
+    "assets/generated/tj_shijia-draft1.png",
+    "assets/references/longmen-style-black.png"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/tj_shijia-detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/%E7%9F%B3%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "TJArchi-Studio",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2011-01-03 02:33:39",
+      "role": "research_context_not_generation_input",
+      "note": "外部门楼与主照片内院门楼不同，仅研究背景，不混入本图形制。"
+    }
+  ],
+  "source_note": "以Rolfmueller的2013年内院实拍绘正面门楼、两侧短墙及后方套院门，不与另张外部门楼照片拼接。完整所选门楼置于白底，截短相连院墙、删除现代杂物；门楣文字和砖雕文字留白。",
+  "prompt": "Use case: precise-object-edit. Image1 is the Shi Family Grand Courtyard INNER GATE line drawing to correct. Change ONLY the solid BLACK fill in the timber doorway surrounds and lintel: replace the heavy black areas with PURE WHITE #FFFFFF bounded by delicate thin black outlines, a few thin lines for timber board divisions. Keep the whole gate geometry, nested second doorway, stone drum bases, grey-tile outlines, roof profile, short sidewalls, every contour position, portrait canvas, empty plaques unchanged. No color or grayscale. ALL surfaces inside and outside have pure uniform opaque WHITE #FFFFFF, only the fine contour ink is black. No solid fills, shadows, hatching, gradient, paper grain, halo, checkerboard, text. The silhouette and details must not move or change. Do not substitute another gate. Image2 is only STYLE MASTER for thin elegant sparse lines.",
+  "generated_file": "assets/generated/tj_shijia.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-64bb4d4c-6681-441a-9453-a95d89c517f9.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "石家大院 · 内院门楼与纵深门院",
+    "清末 · 1875为宅第大规模营建起点"
+  ],
+  "historical_sources": [
+    {
+      "title": "天津政务网 · 尊美堂宅第与1875年大规模营建",
+      "url": "https://www.tj.gov.cn/sq/yztj/mswh/202005/t20200520_2468011.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c2d9310eb7948ee303e9832c34a93222e03d82ee5592099863203addcea2697f",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "主照片内院门楼、成对抱鼓石门墩及后方套院门可辨，不混入另张外部门楼。",
+      "灰瓦单层小门楼完整，短墙截断，门楣和砖雕文字留白，删除杂物和铺地。",
+      "定向修订将实黑木框转为细线轮廓，原门楼与抱鼓石位置保持；窗洞少量黑线不构成大片阴影。"
+    ],
+    "limitations": [
+      "门墩雕花与纵深取景为艺术概括，并非测绘。"
+    ]
+  },
+  "generation_history": [
+    {
+      "file": "assets/generated/tj_shijia-draft1.png",
+      "tool_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-f069e25f-67a4-499b-a709-90994f614f77.png",
+      "prompt": "Use case: style-transfer. Create one sparse BLACK INK heritage atlas plate of Shi Family Grand Courtyard, Yangliuqing, Tianjin. Image1 is Longmen fine contour STYLE MASTER ONLY. Image2 actual INNER COURTYARD GATE photograph gives SUBJECT GEOMETRY. Draw complete photographed grey-brick inner gate: low single grey tile roof cap with gently lifted ends, thick rectangular brick piers, dark wooden framed open rectangular passage, round small lintel fittings and rectangular door surround inlay panel outlines, paired carved white stone DRUM gate bases directly in front of jambs. Through this gate draw the smaller nested second stone/timber gate, and its farther rectangular doorway in shallow perspective, but no whole unobserved houses. Include only SHORT adjoining grey brick sidewall sections and pale rectangular insert panels, capped with grey tiles; no towering sidewalls. The gate roof cap is a simple shallow two-slope tile top as photo, NOT an elaborate pagoda or three-roof palace. Remove signs, letters, 福文字砖雕, trashbins, visitors, lanterns, floor paving and plants. Blank ornamental panels rather than imitated characters. Entire selected doorway assembly complete and centered portrait1024x1536,85%height, clear8% margins, both stone bases and roof tip uncut. Fine BLACK contours only, a few selected masonry seams and carved-stone outlines, no dense grid, broad black door fills, grey shading or hatching. All nonink planes inside/outside and empty doorway gaps perfectly flat opaque PURE WHITE #FFFFFF, no cast/ground shadow, background scene, gradient, paper grain, glow, checkerboard, color, caption, border or watermark.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/tj_shijia-photo.jpg"
+      ],
+      "status": "rejected",
+      "reason": "门框实黑填充，不符轮廓线稿规范。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bj_juyong_yuntai",
+  "subject": "北京居庸关云台 · 元代过街塔基南面",
+  "status": "complete",
+  "file": "assets/references/bj_juyong_yuntai-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Yuntai_south_side_(2013).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Yuntai_south_side_%282013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "BabelStone",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "date": "2013-12-11 02:42:09",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/bj_juyong_yuntai-photo.jpg",
+    "assets/references/bj_juyong_yuntai-detail.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/bj_juyong_yuntai-detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yuntai_south_side_arch_(2013).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Yuntai_south_side_arch_%282013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-12-11 02:21:01"
+    }
+  ],
+  "source_note": "南面全景与券门近照核对台身收分、石栏及半六角券洞。只绘现存空台，不复原已毁塔殿；门框浮雕和砌缝作简化，移除现代设施与外景。",
+  "prompt": "Use case: style-transfer. Create ONE sparse fine BLACK INK heritage architecture line plate. Image1 is Longmen LINE STYLE ONLY, other images show the actual Yuntai Cloud Platform at Juyong Pass, Beijing, geometry references. Draw the complete PRESENT surviving Yuan marble tower base from the SOUTH front, with a very slight right side visible, following the broad low trapezoidal shape, inward-sloping walls and long top stone balustrade with carved finial posts and small pierced openings. Its central passage has a SEMI-HEXAGONAL inner opening: horizontal flat crown, clipped diagonal upper shoulders, vertical sides, NOT a round arch. Preserve the separately curved richly carved outer portal frame, simplified Garuda at top and restrained floral/animal motifs on surrounding stone, and a few fine relief marks on passage walls. Pure WHITE empty opening through the passage, NO distant building or landscape behind it. No towers or temple above: the historical three stupas are destroyed; draw only surviving empty platform with balustrade. Isolate actual stone object only: no mountains, people, signs, metal barriers, glass floor, roads, trees, sky, ground plane or cast shadow. Sparse delicate black contour lines, only selected fine masonry seams and carved-relief outlines, no grayscale shading or crosshatch, no lettering or imitation inscriptions. Center the COMPLETE low platform in landscape1536x1024 with balanced margins all sides,85% canvas width, no cut-off railing or corners. All unmarked pixels and all exterior areas perfectly flat opaque PURE WHITE #FFFFFF, no paper grain, gradient, vignette, glow, checkerboard, color, border, caption or watermark.",
+  "generated_file": "assets/generated/bj_juyong_yuntai.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2d3a34b8-7be5-46c0-984c-8e87e41387fb.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "居庸关云台 · 现存过街塔基",
+    "元 · 1342—1345营建"
+  ],
+  "historical_sources": [
+    {
+      "title": "北京旅游网 · 居庸关关城云台形制与营建年代",
+      "url": "https://s.visitbeijing.com.cn/attraction/101252"
+    },
+    {
+      "title": "北京市人民政府 · 元代过街塔塔基与六种文字石刻",
+      "url": "https://www.beijing.gov.cn/renwen/rwzyd/lyjq/4A/jygcc/202210/t20221018_2838580.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "47b74a96c681a02c906a3ad54905e8a6d91c22920cbf38d5e9a127cadbe96d81",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "现存空台、顶栏、收分台身和半六角门洞完整。",
+      "券门外框浮雕与通道壁面刻线保留，无外景或现代设施。"
+    ],
+    "limitations": "浮雕、栏板数量与石缝为艺术简化；留白较小但主体未裁切。"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "im_wudang",
+  "subject": "五当召苏古沁殿",
+  "status": "needs_review",
+  "historical_sources": [
+    {
+      "title": "五当召沿革、苏古沁独宫与文保资料",
+      "url": "https://zh.wikipedia.org/wiki/五當召"
+    },
+    {
+      "title": "苏古沁殿与各殿营建阶段",
+      "url": "https://www.fjdh.cn/ffzt/fjhy/ahsy2012/09/193600185882.html"
+    }
+  ],
+  "source_note": "苏古沁殿为清乾隆时期建筑，资料存在1755/1757说法差异，1755只作约略排序；不使用1749扩寺年强定所绘殿堂竣工。",
+  "caption": [
+    "五当召苏古沁殿 · 线稿 · 待用户验收",
+    "清 · 乾隆时期"
+  ],
+  "structure_checkpoints": [
+    "仅苏古沁殿完整平顶藏式体量，宽底层、上部退台、矩形门窗及殿前台阶；不加汉式曲檐。"
+  ],
+  "generated_file": "assets/generated/im_wudang.png",
+  "generation_tool": "built-in image_gen",
+  "reference_candidates": [
+    {
+      "id": "im_wudang",
+      "file": "assets/references/im_wudang-photo.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/InnerMongoliaBuddhistTemple.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:InnerMongoliaBuddhistTemple.jpg",
+      "author": "Lukacs (Commons 假定作者)",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "date": "2005-09-01"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "site_recommendation": {
+    "id": "im_wudang",
+    "name": "五当召",
+    "short": "五当召",
+    "sub": "广觉寺 · 苏古沁殿",
+    "subject": "五当召苏古沁殿",
+    "prov": "内蒙古",
+    "place": "内蒙古包头 · 石拐",
+    "placeKey": "baotou",
+    "types": [
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆时期",
+    "year": 1755,
+    "yearApprox": true,
+    "yearLabel": "乾隆时期",
+    "yearNote": "苏古沁殿为清乾隆时期建筑，资料存在1755/1757说法差异，1755只作约略排序；不使用1749扩寺年强定所绘殿堂竣工。",
+    "checkpoint": "仅苏古沁殿完整平顶藏式体量，宽底层、上部退台、矩形门窗及殿前台阶；不加汉式曲檐。",
+    "history": [
+      {
+        "title": "五当召沿革、苏古沁独宫与文保资料",
+        "url": "https://zh.wikipedia.org/wiki/五當召"
+      },
+      {
+        "title": "苏古沁殿与各殿营建阶段",
+        "url": "https://www.fjdh.cn/ffzt/fjhy/ahsy2012/09/193600185882.html"
+      }
+    ],
+    "lede": "阴山沟谷里的五当召，以白墙和平顶的藏式殿堂层层顺山展开。苏古沁殿位于寺院前部，是全寺集会诵经的空间；它宽阔而沉稳的体量，与中原木殿的曲线屋面形成鲜明区别。",
+    "facts": [
+      "<b>所绘主体</b> 苏古沁殿，又称苏古沁独宫，不把整个寺院或2005年重建的努尼殿混为一座建筑。",
+      "<b>年代</b> 寺院乾隆十四年（1749）扩建；苏古沁殿按乾隆时期约略定位，单殿营建年份资料存在差异。",
+      "<b>形制</b> 藏式平顶、白色墙身、层层退台与深色檐带，1996年五当召列入全国重点文物保护单位。"
+    ],
+    "initialStatus": "unvisited",
+    "country": "CN"
+  },
+  "file": "assets/references/im_wudang-38265643-thumb.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg/500px-%E4%BA%94%E5%BD%93%E5%8F%AC%E5%89%8D%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "霧島聖",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2012-10-05",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/im_wudang-38265643-thumb.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nSUBJECT: 五当召苏古沁殿.\nSCOPE AND IDENTIFYING STRUCTURE: 仅苏古沁殿完整平顶藏式体量，宽底层、上部退台、矩形门窗及殿前台阶；不加汉式曲檐。\nDraw the wide front assembly hall shown in the photograph, its two white flanking front towers, recessed central wood gallery and original broad stairs. Exclude the small foreground ticket booth, tourists, modern banners and hanging prayer flags. Retain its actual flat parapet and small metal roof finials; do NOT invent Chinese curved roofs. Landscape 1536×1024.",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nSUBJECT: 五当召苏古沁殿.\nSCOPE AND IDENTIFYING STRUCTURE: 仅苏古沁殿完整平顶藏式体量，宽底层、上部退台、矩形门窗及殿前台阶；不加汉式曲檐。\nDraw the wide front assembly hall shown in the photograph, its two white flanking front towers, recessed central wood gallery and original broad stairs. Exclude the small foreground ticket booth, tourists, modern banners and hanging prayer flags. Retain its actual flat parapet and small metal roof finials; do NOT invent Chinese curved roofs. Landscape 1536×1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/im_wudang-38265643-thumb.jpg"
+      ],
+      "submitted_at": "2026-09-16T16:57:41.047Z",
+      "status": "saved",
+      "returned_at": "2026-09-16T16:58:17.042Z",
+      "saved_at": "2026-09-16T16:58:17.304Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-882b609a-5d07-4f89-9af9-8519ff958acc.png"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ae170cbea8e22331efed1136eb96b8777b76a26f47543c21aa8ccb58bb8af27c",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-882b609a-5d07-4f89-9af9-8519ff958acc.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-882b609a-5d07-4f89-9af9-8519ff958acc.png"
+}

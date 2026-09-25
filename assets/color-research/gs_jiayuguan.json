@@ -1,0 +1,83 @@
+{
+  "id": "gs_jiayuguan",
+  "name": "嘉峪关",
+  "subject": "西侧嘉峪关楼与门台",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 西侧嘉峪关楼与门台.\nPresent material observations: 浅灰褐瓦、暗红木柱与栏杆、蓝绿檐下彩画；门台和城墙为土黄砂褐，门洞内暗部；不要整楼镀金。\nKeep EXACTLY the line drawing's selected subject and crop: 三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。",
+  "input_images": [
+    "assets/generated/gs_jiayuguan.png",
+    "assets/references/gs_jiayuguan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "浅灰褐瓦、暗红木柱与栏杆、蓝绿檐下彩画；门台和城墙为土黄砂褐，门洞内暗部；不要整楼镀金。"
+  ],
+  "references": [
+    {
+      "title": "File:Jiayuguan Gatetower (20230919150124).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg/1280px-Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Jiayuguan_Gatetower_(20230919150124).jpg",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-09-19 15:01:24",
+      "description": "Western end!",
+      "categories": "Great Wall of China at Jiayuguan|China photographs taken on 2023-09-19|Self-published work|Files with coordinates missing SDC location of creation",
+      "lat": "39.801042",
+      "lon": "98.214256",
+      "file": "assets/references/gs_jiayuguan-photo.jpg",
+      "id": "gs_jiayuguan",
+      "sha256": "afb883586dfafd2aa8c9f604bd8d957807ccf3c627c4b4dc8badef9312e46154"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "甘肃文博会：古韵长城 壮美雄关（楼与城的营建区别）",
+      "url": "https://www.gswbj.gov.cn/a/2024/08/27/21791.html"
+    },
+    {
+      "title": "甘肃政务服务网：嘉峪关第一批国保",
+      "url": "https://zwfw.gansu.gov.cn/jiayuguan/tsfw/lyzq/lyzx/jdjs/art/2022/art_e1e7ae8fb95145368ae63372ac4be280.html"
+    }
+  ],
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "source": "assets/color-studies/v1/gs_jiayuguan-colored.png",
+  "output": "assets/colored/gs_jiayuguan.png",
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T14:10:13.093Z",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 西侧嘉峪关楼与门台.\nPresent material observations: 浅灰褐瓦、暗红木柱与栏杆、蓝绿檐下彩画；门台和城墙为土黄砂褐，门洞内暗部；不要整楼镀金。\nKeep EXACTLY the line drawing's selected subject and crop: 三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。",
+      "input_images": [
+        "assets/generated/gs_jiayuguan.png",
+        "assets/references/gs_jiayuguan-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-09-17T14:11:01.583Z",
+      "saved_at": "2026-09-17T14:11:01.795Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-28fb97fb-83a5-47f7-bfc1-7c38b0572865.png",
+      "original_file": "assets/color-studies/v1/gs_jiayuguan-colored.png"
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "748a10a3a5dcf995542c17121b2a933f196d58b48570cb73ad48926b310b50de",
+    "seeds": []
+  }
+}

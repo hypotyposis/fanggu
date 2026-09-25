@@ -1,0 +1,88 @@
+{
+  "id": "sd_hongjialou",
+  "subject": "洪家楼天主教堂正立面",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sacred-Heart-Cathedral-Jinan.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Sacred-Heart-Cathedral-Jinan.JPG",
+  "author": "AlexHe34",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "references": [
+    {
+      "id": "sd_hongjialou",
+      "file": "assets/references/sd_hongjialou-full-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Sacred-Heart-Cathedral-Jinan.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Sacred-Heart-Cathedral-Jinan.JPG",
+      "author": "AlexHe34",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2010-06-16",
+      "sha256": "705dfcf7431a7af7a443ad8192152cf1d5302c4625f9655affe00542aea09059"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_hongjialou-full-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看公开实拍重绘；前景遮挡由可见连续结构简化，不声称实测。待用户验收。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw the complete front facade of Hongjialou Sacred Heart Cathedral, Jinan. TWO tall square Gothic bell towers, BOTH with open tracery tapered spires and crosses. One main circular rose window with two smaller rosettes above sides, three pointed entrance portals at base. Preserve intricate but selectively simplified tracery and buttresses. Use the photographed slightly angled view with verticals vertical; preserve tower apex and base. Remove lamps, statues in foreground, shrubbery and modern fixtures."
+  ],
+  "material_observations": [
+    "灰褐砖与浅灰石饰，尖塔顶同属灰色，红褐百叶窗与深褐门扇，不套用青岛教堂红瓦尖顶。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 洪家楼天主教堂正立面\nPortrait 1024x1536. Draw the complete front facade of Hongjialou Sacred Heart Cathedral, Jinan. TWO tall square Gothic bell towers, BOTH with open tracery tapered spires and crosses. One main circular rose window with two smaller rosettes above sides, three pointed entrance portals at base. Preserve intricate but selectively simplified tracery and buttresses. Use the photographed slightly angled view with verticals vertical; preserve tower apex and base. Remove lamps, statues in foreground, shrubbery and modern fixtures.",
+  "generated_file": "assets/generated/sd_hongjialou.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 洪家楼天主教堂正立面\nPortrait 1024x1536. Draw the complete front facade of Hongjialou Sacred Heart Cathedral, Jinan. TWO tall square Gothic bell towers, BOTH with open tracery tapered spires and crosses. One main circular rose window with two smaller rosettes above sides, three pointed entrance portals at base. Preserve intricate but selectively simplified tracery and buttresses. Use the photographed slightly angled view with verticals vertical; preserve tower apex and base. Remove lamps, statues in foreground, shrubbery and modern fixtures.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_hongjialou-full-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T22:33:26.205868+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:35:54.125134+08:00",
+      "saved_at": "2026-09-17T22:35:54.180303+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-16c16426-84a2-4aa4-b83e-6940467a1f7d.png",
+      "output": "assets/generated/sd_hongjialou.png"
+    }
+  ],
+  "caption": [
+    "洪家楼天主教堂 · 正立面 · 线稿",
+    "双尖塔 · 清光绪三十一年（1905）"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-16c16426-84a2-4aa4-b83e-6940467a1f7d.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "70afe52f9cdebffa8e6a1f9cc741072024b16da15dee4a98c143505d7f14f9ca",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "济南市生态环境局公开环评：洪家楼教堂1905年竣工",
+      "url": "https://jnepb.jinan.gov.cn/jnhbj/150/9357/华信路陶瓷市场片区房地产项目环境影响报告书2.pdf",
+      "note": "现存教堂1905年竣工。"
+    },
+    {
+      "title": "国务院第六批国保通知（国家民委转载）",
+      "url": "https://www.neac.gov.cn/seac/xxgk/200606/1079967.shtml",
+      "note": "近现代重要史迹类序号976，V-103，洪家楼天主教堂。"
+    }
+  ]
+}

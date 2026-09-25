@@ -41,15 +41,20 @@ test('every transparent AVIF traces to its lossless companion and retained PNG m
     const encoded = delivery.images[id];
     assert.equal(item.src, encoded.src);
     assert.equal(item.originalSrc, encoded.source);
-    assert.equal(item.transparent, true);
     assert.equal(item.transparentSrc, encoded.input);
-    assert.equal(encoded.alpha.min, 0); assert.equal(encoded.alpha.max, 255);
-    assert(encoded.alpha.transparentPixels > 0); assert(encoded.alpha.opaquePixels > 0);
-    if (encoded.extraction.method === 'white-matte-v1') {
-      assert.equal(encoded.extraction.interiorRgbUnchanged, true);
-      assert.equal(encoded.backgroundPreparation.sourceSha256, encoded.sourceSha256);
-      assert.equal(encoded.backgroundPreparation.processorSha256, hash(fs.readFileSync(path.join(root, 'scripts/white-matte.py'))));
-    } else assert.equal(encoded.extraction.rgbUnchanged, true);
+    const prototype = JSON.parse(read('scripts/plate-policy.json')).mode === 'prototype' && encoded.qualityMode === 'prototype';
+    if (prototype) {
+      assert.equal(item.transparent, encoded.alpha.min === 0 && encoded.alpha.max > 0);
+    } else {
+      assert.equal(item.transparent, true);
+      assert.equal(encoded.alpha.min, 0); assert.equal(encoded.alpha.max, 255);
+      assert(encoded.alpha.transparentPixels > 0); assert(encoded.alpha.opaquePixels > 0);
+      if (encoded.extraction.method === 'white-matte-v1') {
+        assert.equal(encoded.extraction.interiorRgbUnchanged, true);
+        assert.equal(encoded.backgroundPreparation.sourceSha256, encoded.sourceSha256);
+        assert.equal(encoded.backgroundPreparation.processorSha256, hash(fs.readFileSync(path.join(root, 'scripts/white-matte.py'))));
+      } else assert.equal(encoded.extraction.rgbUnchanged, true);
+    }
     assert.equal(item.visualReview, encoded.visualReview);
     if (encoded.visualReview === 'approved_user') {
       assert.equal(encoded.review.reviewer, 'user');

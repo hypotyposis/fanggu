@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 214,
+  "count": 290,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -4495,6 +4495,1735 @@
       "record": "assets/color-research/sd_pizhi.json"
     },
     {
+      "id": "sx_doudafu",
+      "name": "太原窦大夫祠",
+      "subject": "太原窦大夫祠 · 献亭与大殿正面",
+      "sub": "献亭与大殿 · 上兰村",
+      "place": "山西太原 · 尖草坪上兰村",
+      "dyn": "yuan",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/sx_doudafu.png",
+      "displayLine": "assets/plates/sx_doudafu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sx_doudafu.json",
+      "candidateReferences": [
+        "assets/references/sx_doudafu-photo.jpg"
+      ],
+      "output": "assets/colored/sx_doudafu.png",
+      "record": "assets/color-research/sx_doudafu.json"
+    },
+    {
+      "id": "sx_jiulongbi",
+      "name": "大同九龙壁",
+      "subject": "大同九龙壁 · 九龙琉璃照壁正面",
+      "sub": "代王府琉璃照壁 · 九龙浮雕",
+      "place": "山西大同 · 古城和阳街",
+      "dyn": "ming",
+      "types": [
+        "screen"
+      ],
+      "line": "assets/generated/sx_jiulongbi.png",
+      "displayLine": "assets/plates/sx_jiulongbi.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sx_jiulongbi.json",
+      "candidateReferences": [
+        "assets/references/sx_jiulongbi-photo.jpg"
+      ],
+      "output": "assets/colored/sx_jiulongbi.png",
+      "record": "assets/color-research/sx_jiulongbi.json"
+    },
+    {
+      "id": "bj_miaoying",
+      "name": "北京妙应寺白塔",
+      "subject": "北京妙应寺白塔 · 覆钵式塔与十字折角基座",
+      "sub": "藏式白塔 · 现存塔身",
+      "place": "北京西城 · 阜成门内",
+      "dyn": "yuan",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/bj_miaoying.png",
+      "displayLine": "assets/plates/bj_miaoying.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/bj_miaoying.json",
+      "candidateReferences": [
+        "assets/references/bj_miaoying-photo.jpg",
+        "assets/references/bj_miaoying-base.jpg",
+        "assets/references/bj_miaoying-overall.jpg"
+      ],
+      "output": "assets/colored/bj_miaoying.png",
+      "record": "assets/color-research/bj_miaoying.json"
+    },
+    {
+      "id": "bj_zhenjue",
+      "name": "北京真觉寺金刚宝座",
+      "subject": "北京真觉寺金刚宝座 · 南面五层佛龛与密檐石塔",
+      "sub": "金刚宝座 · 五塔寺",
+      "place": "北京海淀 · 五塔寺",
+      "dyn": "ming",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/bj_zhenjue.png",
+      "displayLine": "assets/plates/bj_zhenjue.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/bj_zhenjue.json",
+      "candidateReferences": [
+        "assets/references/bj_zhenjue-front.jpg",
+        "assets/references/bj_zhenjue-platform-crop.png"
+      ],
+      "output": "assets/colored/bj_zhenjue.png",
+      "record": "assets/color-research/bj_zhenjue.json"
+    },
+    {
+      "id": "bj_zhihua",
+      "name": "北京智化寺",
+      "subject": "北京智化寺 · 如来殿与万佛阁南面",
+      "sub": "如来殿 · 万佛阁",
+      "place": "北京东城 · 禄米仓胡同",
+      "dyn": "ming",
+      "types": [
+        "hall",
+        "pavilion"
+      ],
+      "line": "assets/generated/bj_zhihua.png",
+      "displayLine": "assets/plates/bj_zhihua.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/bj_zhihua.json",
+      "candidateReferences": [
+        "assets/references/bj_zhihua-photo.jpg"
+      ],
+      "output": "assets/colored/bj_zhihua.png",
+      "record": "assets/color-research/bj_zhihua.json"
+    },
+    {
+      "id": "bj_lugou",
+      "name": "北京卢沟桥",
+      "subject": "北京卢沟桥 · 十一孔石桥侧向全貌",
+      "sub": "十一孔石拱桥 · 狮子栏柱",
+      "place": "北京丰台 · 永定河",
+      "dyn": "liao",
+      "types": [
+        "bridge"
+      ],
+      "line": "assets/generated/bj_lugou.png",
+      "displayLine": "assets/plates/bj_lugou.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/bj_lugou.json",
+      "candidateReferences": [
+        "assets/references/bj_lugou-side.jpg"
+      ],
+      "output": "assets/colored/bj_lugou.png",
+      "record": "assets/color-research/bj_lugou.json"
+    },
+    {
+      "id": "bj_juyong_yuntai",
+      "name": "北京居庸关云台",
+      "subject": "北京居庸关云台 · 元代过街塔基南面",
+      "sub": "元代过街塔基 · 半六角券洞",
+      "place": "北京昌平 · 居庸关",
+      "dyn": "yuan",
+      "types": [
+        "gate",
+        "grotto"
+      ],
+      "line": "assets/generated/bj_juyong_yuntai.png",
+      "displayLine": "assets/plates/bj_juyong_yuntai.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/bj_juyong_yuntai.json",
+      "candidateReferences": [
+        "assets/references/bj_juyong_yuntai-photo.jpg",
+        "assets/references/bj_juyong_yuntai-detail.jpg"
+      ],
+      "output": "assets/colored/bj_juyong_yuntai.png",
+      "record": "assets/color-research/bj_juyong_yuntai.json"
+    },
+    {
+      "id": "bj_changling",
+      "name": "北京长陵祾恩殿",
+      "subject": "北京长陵 · 祾恩殿九开间重檐庑殿",
+      "sub": "九间楠木大殿 · 重檐庑殿",
+      "place": "北京昌平 · 明十三陵",
+      "dyn": "ming",
+      "types": [
+        "hall",
+        "tomb"
+      ],
+      "line": "assets/generated/bj_changling.png",
+      "displayLine": "assets/plates/bj_changling.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/bj_changling.json",
+      "candidateReferences": [
+        "assets/references/bj_changling-photo.jpg",
+        "assets/references/bj_changling-facade-crop.png"
+      ],
+      "output": "assets/colored/bj_changling.png",
+      "record": "assets/color-research/bj_changling.json"
+    },
+    {
+      "id": "tj_jizhou_baita",
+      "name": "天津蓟县白塔",
+      "subject": "天津蓟县白塔 · 八角砖塔与覆钵式塔身",
+      "sub": "八角砖塔 · 覆钵式塔身",
+      "place": "天津蓟州 · 白塔寺街",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/tj_jizhou_baita.png",
+      "displayLine": "assets/plates/tj_jizhou_baita.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/tj_jizhou_baita.json",
+      "candidateReferences": [
+        "assets/references/tj_jizhou_baita-photo.jpg"
+      ],
+      "output": "assets/colored/tj_jizhou_baita.png",
+      "record": "assets/color-research/tj_jizhou_baita.json"
+    },
+    {
+      "id": "tj_wenmiao",
+      "name": "天津文庙",
+      "subject": "天津文庙 · 府庙大成殿中部立面与丹陛",
+      "sub": "府庙大成殿 · 中部立面与丹陛",
+      "place": "天津南开 · 老城厢东门内",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/tj_wenmiao.png",
+      "displayLine": "assets/plates/tj_wenmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/tj_wenmiao.json",
+      "candidateReferences": [
+        "assets/references/tj_wenmiao-photo.jpg"
+      ],
+      "output": "assets/colored/tj_wenmiao.png",
+      "record": "assets/color-research/tj_wenmiao.json"
+    },
+    {
+      "id": "tj_guangdonghuiguan",
+      "name": "天津广东会馆",
+      "subject": "天津广东会馆 · 戏台与鸡笼式藻井局部",
+      "sub": "戏台 · 鸡笼式藻井局部",
+      "place": "天津南开 · 南门里大街",
+      "dyn": "ming",
+      "types": [
+        "stage"
+      ],
+      "line": "assets/generated/tj_guangdonghuiguan.png",
+      "displayLine": "assets/plates/tj_guangdonghuiguan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/tj_guangdonghuiguan.json",
+      "candidateReferences": [
+        "assets/references/tj_guangdonghuiguan-photo.jpg",
+        "assets/references/tj_guangdonghuiguan-detail.jpg"
+      ],
+      "output": "assets/colored/tj_guangdonghuiguan.png",
+      "record": "assets/color-research/tj_guangdonghuiguan.json"
+    },
+    {
+      "id": "tj_shijia",
+      "name": "天津杨柳青石家大院",
+      "subject": "天津杨柳青石家大院 · 内院门楼与纵深门院",
+      "sub": "内院门楼 · 纵深门院",
+      "place": "天津西青 · 杨柳青镇",
+      "dyn": "ming",
+      "types": [
+        "residence",
+        "gate"
+      ],
+      "line": "assets/generated/tj_shijia.png",
+      "displayLine": "assets/plates/tj_shijia.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/tj_shijia.json",
+      "candidateReferences": [
+        "assets/references/tj_shijia-photo.jpg"
+      ],
+      "output": "assets/colored/tj_shijia.png",
+      "record": "assets/color-research/tj_shijia.json"
+    },
+    {
+      "id": "ln_dazheng",
+      "name": "沈阳故宫大政殿",
+      "subject": "沈阳故宫大政殿",
+      "sub": "八角重檐攒尖殿",
+      "place": "辽宁沈阳 · 沈阳故宫",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/ln_dazheng.png",
+      "displayLine": "assets/plates/ln_dazheng.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/ln_dazheng.json",
+      "candidateReferences": [
+        "assets/references/ln_dazheng-candidate1.jpg",
+        "assets/references/ln_dazheng-candidate4.jpg"
+      ],
+      "output": "assets/colored/ln_dazheng.png",
+      "record": "assets/color-research/ln_dazheng.json"
+    },
+    {
+      "id": "ln_liaoyang",
+      "name": "辽阳白塔",
+      "subject": "辽阳白塔",
+      "sub": "八角十三层密檐砖塔",
+      "place": "辽宁辽阳 · 白塔公园",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/ln_liaoyang.png",
+      "displayLine": "assets/plates/ln_liaoyang.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ln_liaoyang.json",
+      "candidateReferences": [
+        "assets/references/ln_liaoyang-candidate1.jpg"
+      ],
+      "output": "assets/colored/ln_liaoyang.png",
+      "record": "assets/color-research/ln_liaoyang.json"
+    },
+    {
+      "id": "ln_chongxing",
+      "name": "崇兴寺双塔",
+      "subject": "北镇崇兴寺双塔",
+      "sub": "西塔与东塔 · 各十三层密檐",
+      "place": "辽宁北镇 · 崇兴寺",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/ln_chongxing.png",
+      "displayLine": "assets/plates/ln_chongxing.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/ln_chongxing.json",
+      "candidateReferences": [
+        "assets/references/ln_chongxing-candidate4.jpg",
+        "assets/references/ln_chongxing-candidate3.jpg"
+      ],
+      "output": "assets/colored/ln_chongxing.png",
+      "record": "assets/color-research/ln_chongxing.json"
+    },
+    {
+      "id": "jl_nongan",
+      "name": "农安辽塔",
+      "subject": "农安辽塔",
+      "sub": "八角十三层密檐塔",
+      "place": "吉林农安 · 黄龙府故城",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/jl_nongan.png",
+      "displayLine": "assets/plates/jl_nongan.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jl_nongan.json",
+      "candidateReferences": [
+        "assets/references/jl_nongan-candidate236.jpg",
+        "assets/references/jl_nongan-candidate235.jpg",
+        "assets/references/jl_nongan-candidate234.jpg"
+      ],
+      "output": "assets/colored/jl_nongan.png",
+      "record": "assets/color-research/jl_nongan.json"
+    },
+    {
+      "id": "jl_jiangjunfen",
+      "name": "集安将军坟",
+      "subject": "集安将军坟",
+      "sub": "七级方坛阶梯石室墓",
+      "place": "吉林集安 · 龙山南麓",
+      "dyn": "goguryeo",
+      "types": [
+        "tomb"
+      ],
+      "line": "assets/generated/jl_jiangjunfen.png",
+      "displayLine": "assets/plates/jl_jiangjunfen.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jl_jiangjunfen.json",
+      "candidateReferences": [
+        "assets/references/jl_jiangjunfen-candidate1.jpg"
+      ],
+      "output": "assets/colored/jl_jiangjunfen.png",
+      "record": "assets/color-research/jl_jiangjunfen.json"
+    },
+    {
+      "id": "jl_wenmiao",
+      "name": "吉林文庙大成殿",
+      "subject": "吉林文庙大成殿",
+      "sub": "十一开间大成殿",
+      "place": "吉林吉林市 · 昌邑",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/jl_wenmiao.png",
+      "displayLine": "assets/plates/jl_wenmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jl_wenmiao.json",
+      "candidateReferences": [
+        "assets/references/jl_wenmiao-commons.jpg"
+      ],
+      "output": "assets/colored/jl_wenmiao.png",
+      "record": "assets/color-research/jl_wenmiao.json"
+    },
+    {
+      "id": "hlj_shideng",
+      "name": "兴隆寺渤海石灯幢",
+      "subject": "兴隆寺渤海石灯幢",
+      "sub": "八角亭式石灯室",
+      "place": "黑龙江宁安 · 渤海镇兴隆寺",
+      "dyn": "balhae",
+      "types": [
+        "sculpture"
+      ],
+      "line": "assets/generated/hlj_shideng.png",
+      "displayLine": "assets/plates/hlj_shideng.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hlj_shideng.json",
+      "candidateReferences": [
+        "assets/references/hlj_shideng-photo.jpg"
+      ],
+      "output": "assets/colored/hlj_shideng.png",
+      "record": "assets/color-research/hlj_shideng.json"
+    },
+    {
+      "id": "hlj_sofia",
+      "name": "哈尔滨圣索菲亚教堂",
+      "subject": "哈尔滨圣索菲亚教堂",
+      "sub": "1932年现存砖砌教堂",
+      "place": "黑龙江哈尔滨 · 索菲亚广场",
+      "dyn": "modern",
+      "types": [
+        "church"
+      ],
+      "line": "assets/generated/hlj_sofia.png",
+      "displayLine": "assets/plates/hlj_sofia.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hlj_sofia.json",
+      "candidateReferences": [
+        "assets/references/hlj_sofia-summer.jpg",
+        "assets/references/hlj_sofia-candidate2.jpg"
+      ],
+      "output": "assets/colored/hlj_sofia.png",
+      "record": "assets/color-research/hlj_sofia.json"
+    },
+    {
+      "id": "im_wuta",
+      "name": "呼和浩特五塔寺",
+      "subject": "呼和浩特五塔寺金刚座舍利宝塔",
+      "sub": "慈灯寺 · 金刚座舍利宝塔",
+      "place": "内蒙古呼和浩特 · 玉泉",
+      "dyn": "ming",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/im_wuta.png",
+      "displayLine": "assets/plates/im_wuta.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/im_wuta.json",
+      "candidateReferences": [
+        "assets/references/im_wuta-photo.jpg"
+      ],
+      "output": "assets/colored/im_wuta.png",
+      "record": "assets/color-research/im_wuta.json"
+    },
+    {
+      "id": "im_dazhao",
+      "name": "呼和浩特大召寺",
+      "subject": "呼和浩特大召寺大雄宝殿",
+      "sub": "无量寺 · 大雄宝殿",
+      "place": "内蒙古呼和浩特 · 玉泉",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/im_dazhao.png",
+      "displayLine": "assets/plates/im_dazhao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/im_dazhao.json",
+      "candidateReferences": [
+        "assets/references/im_dazhao-hall-photo.jpg"
+      ],
+      "output": "assets/colored/im_dazhao.png",
+      "record": "assets/color-research/im_dazhao.json"
+    },
+    {
+      "id": "im_wudang",
+      "name": "五当召",
+      "subject": "五当召苏古沁殿",
+      "sub": "广觉寺 · 苏古沁殿",
+      "place": "内蒙古包头 · 石拐",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/im_wudang.png",
+      "displayLine": "assets/plates/im_wudang.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/im_wudang.json",
+      "candidateReferences": [
+        "assets/references/im_wudang-38265643-thumb.jpg"
+      ],
+      "output": "assets/colored/im_wudang.png",
+      "record": "assets/color-research/im_wudang.json"
+    },
+    {
+      "id": "yn_jindian",
+      "name": "昆明金殿",
+      "subject": "昆明太和宫现存铜金殿",
+      "sub": "太和宫 · 铜殿",
+      "place": "云南昆明 · 鸣凤山",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_jindian.png",
+      "displayLine": "assets/plates/yn_jindian.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/yn_jindian.json",
+      "candidateReferences": [
+        "assets/references/yn_jindian-photo3.jpg"
+      ],
+      "output": "assets/colored/yn_jindian.png",
+      "record": "assets/color-research/yn_jindian.json"
+    },
+    {
+      "id": "yn_jianshui",
+      "name": "建水文庙",
+      "subject": "建水文庙先师殿",
+      "sub": "先师殿 · 大成殿",
+      "place": "云南建水 · 临安古城",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_jianshui.png",
+      "displayLine": "assets/plates/yn_jianshui.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/yn_jianshui.json",
+      "candidateReferences": [
+        "assets/references/yn_jianshui-photo.jpg"
+      ],
+      "output": "assets/colored/yn_jianshui.png",
+      "record": "assets/color-research/yn_jianshui.json"
+    },
+    {
+      "id": "yn_jingzhen",
+      "name": "景真八角亭",
+      "subject": "景真八角亭现存戒堂",
+      "sub": "傣族南传佛寺 · 戒堂",
+      "place": "云南勐海 · 景真",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/yn_jingzhen.png",
+      "displayLine": "assets/plates/yn_jingzhen.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/yn_jingzhen.json",
+      "candidateReferences": [
+        "assets/references/yn_jingzhen-reference-thumb.jpg"
+      ],
+      "output": "assets/colored/yn_jingzhen.png",
+      "record": "assets/color-research/yn_jingzhen.json"
+    },
+    {
+      "id": "gz_jiaxiu",
+      "name": "贵阳甲秀楼",
+      "subject": "贵阳甲秀楼现存楼体",
+      "sub": "南明河 · 三层三檐",
+      "place": "贵州贵阳 · 南明河",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gz_jiaxiu.png",
+      "displayLine": "assets/plates/gz_jiaxiu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gz_jiaxiu.json",
+      "candidateReferences": [
+        "assets/references/gz_jiaxiu-reference-thumb.jpg"
+      ],
+      "output": "assets/colored/gz_jiaxiu.png",
+      "record": "assets/color-research/gz_jiaxiu.json"
+    },
+    {
+      "id": "gz_wenchang",
+      "name": "贵阳文昌阁",
+      "subject": "贵阳文昌阁现存阁体",
+      "sub": "旧城东 · 三层三檐",
+      "place": "贵州贵阳 · 文昌街",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gz_wenchang.png",
+      "displayLine": "assets/plates/gz_wenchang.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gz_wenchang.json",
+      "candidateReferences": [
+        "assets/references/gz_wenchang-reference-thumb.jpg"
+      ],
+      "output": "assets/colored/gz_wenchang.png",
+      "record": "assets/color-research/gz_wenchang.json"
+    },
+    {
+      "id": "fj_zhenguo",
+      "name": "泉州开元寺镇国塔",
+      "subject": "泉州开元寺镇国塔（东塔）整塔",
+      "sub": "东塔 · 八角五层石塔",
+      "place": "福建泉州 · 开元寺东塔院",
+      "dyn": "song",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/fj_zhenguo.png",
+      "displayLine": "assets/plates/fj_zhenguo.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/fj_zhenguo.json",
+      "candidateReferences": [
+        "assets/references/fj_zhenguo-photo.jpg"
+      ],
+      "output": "assets/colored/fj_zhenguo.png",
+      "record": "assets/color-research/fj_zhenguo.json"
+    },
+    {
+      "id": "fj_renshou",
+      "name": "泉州开元寺仁寿塔",
+      "subject": "泉州开元寺仁寿塔（西塔）整塔",
+      "sub": "西塔 · 八角五层石塔",
+      "place": "福建泉州 · 开元寺西塔院",
+      "dyn": "song",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/fj_renshou.png",
+      "displayLine": "assets/plates/fj_renshou.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/fj_renshou.json",
+      "candidateReferences": [
+        "assets/references/fj_renshou-photo.jpg",
+        "assets/references/fj_renshou-detail-photo.jpg"
+      ],
+      "output": "assets/colored/fj_renshou.png",
+      "record": "assets/color-research/fj_renshou.json"
+    },
+    {
+      "id": "fj_chongwu",
+      "name": "崇武古城南门",
+      "subject": "崇武古城南门及相邻短段城墙",
+      "sub": "花岗岩城台 · 南门段城墙",
+      "place": "福建泉州 · 惠安崇武",
+      "dyn": "ming",
+      "types": [
+        "wall",
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/fj_chongwu.png",
+      "displayLine": "assets/plates/fj_chongwu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/fj_chongwu.json",
+      "candidateReferences": [
+        "assets/references/fj_chongwu-photo.jpg"
+      ],
+      "output": "assets/colored/fj_chongwu.png",
+      "record": "assets/color-research/fj_chongwu.json"
+    },
+    {
+      "id": "fj_chengqi",
+      "name": "永定承启楼",
+      "subject": "永定承启楼完整外观",
+      "sub": "高北土楼群 · 圆形夯土民居",
+      "place": "福建龙岩 · 永定高北村",
+      "dyn": "ming",
+      "types": [
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/fj_chengqi.png",
+      "displayLine": "assets/plates/fj_chengqi.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/fj_chengqi.json",
+      "candidateReferences": [
+        "assets/references/fj_chengqi-photo.jpg"
+      ],
+      "output": "assets/colored/fj_chengqi.png",
+      "record": "assets/color-research/fj_chengqi.json"
+    },
+    {
+      "id": "sd_simen",
+      "name": "济南神通寺四门塔",
+      "subject": "济南神通寺四门塔整塔",
+      "sub": "隋代单层石塔 · 四面券门",
+      "place": "山东济南 · 柳埠神通寺",
+      "dyn": "sui",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_simen.png",
+      "displayLine": "assets/plates/sd_simen.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sd_simen.json",
+      "candidateReferences": [
+        "assets/references/sd_simen-photo.jpg"
+      ],
+      "output": "assets/colored/sd_simen.png",
+      "record": "assets/color-research/sd_simen.json"
+    },
+    {
+      "id": "sd_longhu",
+      "name": "济南神通寺龙虎塔",
+      "subject": "济南神通寺龙虎塔整塔",
+      "sub": "唐代雕刻塔身 · 后世补建塔顶",
+      "place": "山东济南 · 柳埠神通寺",
+      "dyn": "tang",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_longhu.png",
+      "displayLine": "assets/plates/sd_longhu.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sd_longhu.json",
+      "candidateReferences": [
+        "assets/references/sd_longhu-photo.jpg"
+      ],
+      "output": "assets/colored/sd_longhu.png",
+      "record": "assets/color-research/sd_longhu.json"
+    },
+    {
+      "id": "sd_mengmiao",
+      "name": "邹城孟庙亚圣殿",
+      "subject": "邹城孟庙亚圣殿整殿",
+      "sub": "七间重檐歇山 · 绿琉璃瓦",
+      "place": "山东济宁 · 邹城孟庙",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_mengmiao.png",
+      "displayLine": "assets/plates/sd_mengmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sd_mengmiao.json",
+      "candidateReferences": [
+        "assets/references/sd_mengmiao-photo.jpg",
+        "assets/references/sd_mengmiao-detail-photo.jpg"
+      ],
+      "output": "assets/colored/sd_mengmiao.png",
+      "record": "assets/color-research/sd_mengmiao.json"
+    },
+    {
+      "id": "sn_xingjiao",
+      "name": "兴教寺玄奘塔",
+      "subject": "兴教寺玄奘塔（中央高塔）整塔",
+      "sub": "方形五层砖塔 · 玄奘舍利塔",
+      "place": "陕西西安 · 长安兴教寺",
+      "dyn": "tang",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_xingjiao.png",
+      "displayLine": "assets/plates/sn_xingjiao.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sn_xingjiao.json",
+      "candidateReferences": [
+        "assets/references/sn_xingjiao-photo.jpg"
+      ],
+      "output": "assets/colored/sn_xingjiao.png",
+      "record": "assets/color-research/sn_xingjiao.json"
+    },
+    {
+      "id": "sn_xiangji",
+      "name": "香积寺善导塔",
+      "subject": "西安香积寺善导塔现存整塔",
+      "sub": "唐代方塔 · 残顶现貌",
+      "place": "陕西西安 · 长安香积寺",
+      "dyn": "tang",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_xiangji.png",
+      "displayLine": "assets/plates/sn_xiangji.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sn_xiangji.json",
+      "candidateReferences": [
+        "assets/references/sn_xiangji-photo.jpg"
+      ],
+      "output": "assets/colored/sn_xiangji.png",
+      "record": "assets/color-research/sn_xiangji.json"
+    },
+    {
+      "id": "sn_chongwen",
+      "name": "泾阳崇文塔",
+      "subject": "泾阳崇文塔现存整塔",
+      "sub": "明代八角十三层砖塔",
+      "place": "陕西咸阳 · 泾阳崇文镇",
+      "dyn": "ming",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_chongwen.png",
+      "displayLine": "assets/plates/sn_chongwen.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sn_chongwen.json",
+      "candidateReferences": [
+        "assets/references/sn_chongwen-photo.jpg"
+      ],
+      "output": "assets/colored/sn_chongwen.png",
+      "record": "assets/color-research/sn_chongwen.json"
+    },
+    {
+      "id": "sn_qianling",
+      "name": "乾陵无字碑",
+      "subject": "乾陵无字碑正面及碑座",
+      "sub": "螭首石碑 · 后世题刻",
+      "place": "陕西咸阳 · 乾县乾陵",
+      "dyn": "tang",
+      "types": [
+        "stele",
+        "tomb"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_qianling.png",
+      "displayLine": "assets/plates/sn_qianling.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sn_qianling.json",
+      "candidateReferences": [
+        "assets/references/sn_qianling-photo.jpg"
+      ],
+      "output": "assets/colored/sn_qianling.png",
+      "record": "assets/color-research/sn_qianling.json"
+    },
+    {
+      "id": "sn_hancheng",
+      "name": "韩城文庙大成殿",
+      "subject": "韩城文庙大成殿整殿",
+      "sub": "五间大殿 · 前廊木构",
+      "place": "陕西渭南 · 韩城古城",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_hancheng.png",
+      "displayLine": "assets/plates/sn_hancheng.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sn_hancheng.json",
+      "candidateReferences": [
+        "assets/references/sn_hancheng-photo.jpg"
+      ],
+      "output": "assets/colored/sn_hancheng.png",
+      "record": "assets/color-research/sn_hancheng.json"
+    },
+    {
+      "id": "sn_daqin",
+      "name": "周至大秦寺塔",
+      "subject": "周至大秦寺塔现存整塔",
+      "sub": "宋代七层八角砖塔",
+      "place": "陕西西安 · 周至楼观附近",
+      "dyn": "song",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_daqin.png",
+      "displayLine": "assets/plates/sn_daqin.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sn_daqin.json",
+      "candidateReferences": [
+        "assets/references/sn_daqin-photo.jpg"
+      ],
+      "output": "assets/colored/sn_daqin.png",
+      "record": "assets/color-research/sn_daqin.json"
+    },
+    {
+      "id": "sn_yanan",
+      "name": "延安宝塔（岭山寺塔）",
+      "subject": "延安宝塔（岭山寺塔）现存整塔",
+      "sub": "八角九层砖塔 · 明代现存形制",
+      "place": "陕西延安 · 宝塔山",
+      "dyn": "ming",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sn_yanan.png",
+      "displayLine": "assets/plates/sn_yanan.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sn_yanan.json",
+      "candidateReferences": [
+        "assets/references/sn_yanan-photo.jpg"
+      ],
+      "output": "assets/colored/sn_yanan.png",
+      "record": "assets/color-research/sn_yanan.json"
+    },
+    {
+      "id": "gd_chen",
+      "name": "广州陈家祠",
+      "subject": "陈家祠中央头门立面",
+      "sub": "头门 · 岭南陶塑与石雕",
+      "place": "广东广州 · 荔湾",
+      "dyn": "ming",
+      "types": [
+        "hall",
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gd_chen.png",
+      "displayLine": "assets/plates/gd_chen.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gd_chen.json",
+      "candidateReferences": [
+        "assets/references/gd_chen-photo.jpg"
+      ],
+      "output": "assets/colored/gd_chen.png",
+      "record": "assets/color-research/gd_chen.json"
+    },
+    {
+      "id": "gx_zhenwu",
+      "name": "经略台真武阁",
+      "subject": "经略台真武阁完整阁体",
+      "sub": "容县木阁 · 三重檐",
+      "place": "广西容县 · 经略台",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gx_zhenwu.png",
+      "displayLine": "assets/plates/gx_zhenwu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gx_zhenwu.json",
+      "candidateReferences": [
+        "assets/references/gx_zhenwu-photo.jpg"
+      ],
+      "output": "assets/colored/gx_zhenwu.png",
+      "record": "assets/color-research/gx_zhenwu.json"
+    },
+    {
+      "id": "gx_dashi",
+      "name": "合浦永安大士阁",
+      "subject": "合浦永安大士阁前阁及相连后阁",
+      "sub": "前低后高 · 相连木阁",
+      "place": "广西合浦 · 永安",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gx_dashi.png",
+      "displayLine": "assets/plates/gx_dashi.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gx_dashi.json",
+      "candidateReferences": [
+        "assets/references/gx_dashi-photo.jpg"
+      ],
+      "output": "assets/colored/gx_dashi.png",
+      "record": "assets/color-research/gx_dashi.json"
+    },
+    {
+      "id": "gd_zumiao",
+      "name": "佛山祖庙三门",
+      "subject": "佛山祖庙三门立面",
+      "sub": "三座券门 · 陶塑花脊",
+      "place": "广东佛山 · 禅城",
+      "dyn": "ming",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gd_zumiao.png",
+      "displayLine": "assets/plates/gd_zumiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gd_zumiao.json",
+      "candidateReferences": [
+        "assets/references/gd_zumiao-photo.jpg"
+      ],
+      "output": "assets/colored/gd_zumiao.png",
+      "record": "assets/color-research/gd_zumiao.json"
+    },
+    {
+      "id": "gd_ruishi",
+      "name": "开平瑞石楼",
+      "subject": "开平锦江里瑞石楼完整楼体",
+      "sub": "锦江里碉楼 · 中西合璧",
+      "place": "广东开平 · 锦江里",
+      "dyn": "modern",
+      "types": [
+        "residence",
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gd_ruishi.png",
+      "displayLine": "assets/plates/gd_ruishi.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/gd_ruishi.json",
+      "candidateReferences": [
+        "assets/references/gd_ruishi-photo.jpg"
+      ],
+      "output": "assets/colored/gd_ruishi.png",
+      "record": "assets/color-research/gd_ruishi.json"
+    },
+    {
+      "id": "gx_chengyang",
+      "name": "程阳永济桥",
+      "subject": "程阳永济桥全桥与五座楼亭",
+      "sub": "侗族风雨桥 · 五亭木廊",
+      "place": "广西三江 · 程阳",
+      "dyn": "modern",
+      "types": [
+        "bridge",
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gx_chengyang.png",
+      "displayLine": "assets/plates/gx_chengyang.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gx_chengyang.json",
+      "candidateReferences": [
+        "assets/references/gx_chengyang-full-photo.jpg"
+      ],
+      "output": "assets/colored/gx_chengyang.png",
+      "record": "assets/color-research/gx_chengyang.json"
+    },
+    {
+      "id": "gd_meian",
+      "name": "肇庆梅庵大雄宝殿",
+      "subject": "梅庵大雄宝殿完整殿体",
+      "sub": "宋代木架 · 现状硬山顶",
+      "place": "广东肇庆 · 端州",
+      "dyn": "song",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gd_meian.png",
+      "displayLine": "assets/plates/gd_meian.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gd_meian.json",
+      "candidateReferences": [
+        "assets/references/gd_meian-photo.jpg",
+        "assets/references/gd_meian-full-photo.jpg"
+      ],
+      "output": "assets/colored/gd_meian.png",
+      "record": "assets/color-research/gd_meian.json"
+    },
+    {
+      "id": "gx_gongcheng",
+      "name": "恭城文庙大成殿",
+      "subject": "恭城文庙大成殿",
+      "sub": "重檐歇山 · 孔庙主殿",
+      "place": "广西恭城 · 西山",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gx_gongcheng.png",
+      "displayLine": "assets/plates/gx_gongcheng.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gx_gongcheng.json",
+      "candidateReferences": [
+        "assets/references/gx_gongcheng-hall-photo.jpg"
+      ],
+      "output": "assets/colored/gx_gongcheng.png",
+      "record": "assets/color-research/gx_gongcheng.json"
+    },
+    {
+      "id": "hu_yueyang",
+      "name": "岳阳楼",
+      "subject": "岳阳楼三层主体楼阁",
+      "sub": "三层楼阁 · 盔顶",
+      "place": "湖南岳阳 · 洞庭湖畔",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hu_yueyang.png",
+      "displayLine": "assets/plates/hu_yueyang.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hu_yueyang.json",
+      "candidateReferences": [
+        "assets/references/hu_yueyang-photo.jpg"
+      ],
+      "output": "assets/colored/hu_yueyang.png",
+      "record": "assets/color-research/hu_yueyang.json"
+    },
+    {
+      "id": "hu_nanyue",
+      "name": "南岳大庙",
+      "subject": "南岳大庙圣帝殿",
+      "sub": "圣帝殿 · 重檐歇山",
+      "place": "湖南衡阳 · 南岳",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hu_nanyue.png",
+      "displayLine": "assets/plates/hu_nanyue.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hu_nanyue.json",
+      "candidateReferences": [
+        "assets/references/hu_nanyue-actual.jpg",
+        "assets/references/hu_nanyue-historic.png"
+      ],
+      "output": "assets/colored/hu_nanyue.png",
+      "record": "assets/color-research/hu_nanyue.json"
+    },
+    {
+      "id": "hu_zhanggu",
+      "name": "张谷英村古建筑群",
+      "subject": "张谷英村明清民居屋面群局部",
+      "sub": "明清民居 · 连甍天井",
+      "place": "湖南岳阳县 · 张谷英镇",
+      "dyn": "ming",
+      "types": [
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hu_zhanggu.png",
+      "displayLine": "assets/plates/hu_zhanggu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hu_zhanggu.json",
+      "candidateReferences": [
+        "assets/references/hu_zhanggu-photo.jpg"
+      ],
+      "output": "assets/colored/hu_zhanggu.png",
+      "record": "assets/color-research/hu_zhanggu.json"
+    },
+    {
+      "id": "hu_tianhou",
+      "name": "芷江天后宫",
+      "subject": "芷江天后宫石坊完整立面",
+      "sub": "天后宫门楼 · 青石浮雕",
+      "place": "湖南芷江 · 潕水河西",
+      "dyn": "ming",
+      "types": [
+        "gate",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hu_tianhou.png",
+      "displayLine": "assets/plates/hu_tianhou.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hu_tianhou.json",
+      "candidateReferences": [
+        "assets/references/hu_tianhou-photo.jpg"
+      ],
+      "output": "assets/colored/hu_tianhou.png",
+      "record": "assets/color-research/hu_tianhou.json"
+    },
+    {
+      "id": "hb_jindian",
+      "name": "武当山金殿",
+      "subject": "武当山天柱峰明代金殿",
+      "sub": "铜铸鎏金 · 重檐庑殿",
+      "place": "湖北十堰 · 武当天柱峰",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_jindian.png",
+      "displayLine": "assets/plates/hb_jindian.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_jindian.json",
+      "candidateReferences": [
+        "assets/references/hb_jindian-photo.jpg"
+      ],
+      "output": "assets/colored/hb_jindian.png",
+      "record": "assets/color-research/hb_jindian.json"
+    },
+    {
+      "id": "hb_zixiao",
+      "name": "紫霄宫",
+      "subject": "紫霄宫紫霄大殿与正面台基",
+      "sub": "紫霄大殿 · 重檐歇山",
+      "place": "湖北十堰 · 武当山",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_zixiao.png",
+      "displayLine": "assets/plates/hb_zixiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_zixiao.json",
+      "candidateReferences": [
+        "assets/references/hb_zixiao-photo.jpg"
+      ],
+      "output": "assets/colored/hb_zixiao.png",
+      "record": "assets/color-research/hb_zixiao.json"
+    },
+    {
+      "id": "hb_yuquan",
+      "name": "玉泉寺铁塔",
+      "subject": "当阳玉泉寺十三层铁塔",
+      "sub": "北宋铁塔 · 八角十三级",
+      "place": "湖北当阳 · 玉泉寺",
+      "dyn": "song",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_yuquan.png",
+      "displayLine": "assets/plates/hb_yuquan.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hb_yuquan.json",
+      "candidateReferences": [
+        "assets/references/hb_yuquan-photo.jpg"
+      ],
+      "output": "assets/colored/hb_yuquan.png",
+      "record": "assets/color-research/hb_yuquan.json"
+    },
+    {
+      "id": "hb_xianling",
+      "name": "明显陵",
+      "subject": "明显陵棂星门石坊及相连琉璃影壁",
+      "sub": "棂星门 · 龙凤门",
+      "place": "湖北钟祥 · 显陵",
+      "dyn": "ming",
+      "types": [
+        "gate",
+        "tomb"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_xianling.png",
+      "displayLine": "assets/plates/hb_xianling.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_xianling.json",
+      "candidateReferences": [
+        "assets/references/hb_xianling-photo.jpg"
+      ],
+      "output": "assets/colored/hb_xianling.png",
+      "record": "assets/color-research/hb_xianling.json"
+    },
+    {
+      "id": "gs_jiayuguan",
+      "name": "嘉峪关",
+      "subject": "西侧嘉峪关楼与门台",
+      "sub": "西关楼 · 门台",
+      "place": "甘肃嘉峪关 · 明长城",
+      "dyn": "ming",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_jiayuguan.png",
+      "displayLine": "assets/plates/gs_jiayuguan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gs_jiayuguan.json",
+      "candidateReferences": [
+        "assets/references/gs_jiayuguan-photo.jpg"
+      ],
+      "output": "assets/colored/gs_jiayuguan.png",
+      "record": "assets/color-research/gs_jiayuguan.json"
+    },
+    {
+      "id": "gs_dafo_tuta",
+      "name": "张掖大佛寺土塔",
+      "subject": "弥陀千佛塔露明塔身与塔刹",
+      "sub": "覆钵塔 · 上部",
+      "place": "甘肃张掖 · 大佛寺",
+      "dyn": "ming",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_dafo_tuta.png",
+      "displayLine": "assets/plates/gs_dafo_tuta.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/gs_dafo_tuta.json",
+      "candidateReferences": [
+        "assets/references/gs_dafo_tuta-photo.jpg"
+      ],
+      "output": "assets/colored/gs_dafo_tuta.png",
+      "record": "assets/color-research/gs_dafo_tuta.json"
+    },
+    {
+      "id": "gs_fuxi",
+      "name": "天水伏羲庙",
+      "subject": "伏羲庙仪门",
+      "sub": "仪门 · 五间",
+      "place": "甘肃天水 · 秦州",
+      "dyn": "ming",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_fuxi.png",
+      "displayLine": "assets/plates/gs_fuxi.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/gs_fuxi.json",
+      "candidateReferences": [
+        "assets/references/gs_fuxi-photo.jpg"
+      ],
+      "output": "assets/colored/gs_fuxi.png",
+      "record": "assets/color-research/gs_fuxi.json"
+    },
+    {
+      "id": "gs_bingling",
+      "name": "炳灵寺石窟",
+      "subject": "第171龛弥勒大佛",
+      "sub": "第171龛 · 弥勒大佛",
+      "place": "甘肃永靖 · 炳灵寺",
+      "dyn": "tang",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "main",
+      "line": "assets/generated/gs_bingling.png",
+      "displayLine": "assets/plates/gs_bingling.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/gs_bingling.json",
+      "candidateReferences": [
+        "assets/references/gs_bingling-photo.jpg",
+        "assets/references/gs_bingling-official-photo.jpg"
+      ],
+      "output": "assets/colored/gs_bingling.png",
+      "record": "assets/color-research/gs_bingling.json"
+    },
+    {
+      "id": "sd_guangyue",
+      "name": "光岳楼",
+      "subject": "聊城光岳楼整楼与台基",
+      "sub": "聊城 · 整楼与台基",
+      "place": "山东聊城 · 东昌府古城",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_guangyue.png",
+      "displayLine": "assets/plates/sd_guangyue.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sd_guangyue.json",
+      "candidateReferences": [
+        "assets/references/sd_guangyue-photo.jpg"
+      ],
+      "output": "assets/colored/sd_guangyue.png",
+      "record": "assets/color-research/sd_guangyue.json"
+    },
+    {
+      "id": "sd_yantai_huiguan",
+      "name": "烟台福建会馆",
+      "subject": "烟台福建会馆沿街外观",
+      "sub": "天后行宫 · 沿街外观",
+      "place": "山东烟台 · 芝罘区",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_yantai_huiguan.png",
+      "displayLine": "assets/plates/sd_yantai_huiguan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sd_yantai_huiguan.json",
+      "candidateReferences": [
+        "assets/references/sd_yantai_huiguan-photo.jpg"
+      ],
+      "output": "assets/colored/sd_yantai_huiguan.png",
+      "record": "assets/color-research/sd_yantai_huiguan.json"
+    },
+    {
+      "id": "sd_jiuding",
+      "name": "九顶塔",
+      "subject": "济南九顶塔整塔",
+      "sub": "济南 · 灵鹫山",
+      "place": "山东济南 · 柳埠灵鹫山",
+      "dyn": "tang",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_jiuding.png",
+      "displayLine": "assets/plates/sd_jiuding.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sd_jiuding.json",
+      "candidateReferences": [
+        "assets/references/sd_jiuding-photo.jpg"
+      ],
+      "output": "assets/colored/sd_jiuding.png",
+      "record": "assets/color-research/sd_jiuding.json"
+    },
+    {
+      "id": "sd_hongjialou",
+      "name": "洪家楼天主教堂",
+      "subject": "洪家楼天主教堂正立面",
+      "sub": "耶稣圣心主教座堂 · 正立面",
+      "place": "山东济南 · 洪家楼",
+      "dyn": "ming",
+      "types": [
+        "church"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_hongjialou.png",
+      "displayLine": "assets/plates/sd_hongjialou.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sd_hongjialou.json",
+      "candidateReferences": [
+        "assets/references/sd_hongjialou-full-photo.jpg"
+      ],
+      "output": "assets/colored/sd_hongjialou.png",
+      "record": "assets/color-research/sd_hongjialou.json"
+    },
+    {
+      "id": "sd_qingdao_catholic",
+      "name": "青岛天主教堂",
+      "subject": "青岛天主教堂西立面",
+      "sub": "圣弥厄尔教堂 · 西立面",
+      "place": "山东青岛 · 浙江路",
+      "dyn": "modern",
+      "types": [
+        "church"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_qingdao_catholic.png",
+      "displayLine": "assets/plates/sd_qingdao_catholic.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sd_qingdao_catholic.json",
+      "candidateReferences": [
+        "assets/references/sd_qingdao_catholic-photo.png"
+      ],
+      "output": "assets/colored/sd_qingdao_catholic.png",
+      "record": "assets/color-research/sd_qingdao_catholic.json"
+    },
+    {
+      "id": "sd_qingdao_christ",
+      "name": "青岛基督教堂",
+      "subject": "青岛基督教堂主堂与钟楼",
+      "sub": "江苏路 · 主堂与钟楼",
+      "place": "山东青岛 · 江苏路",
+      "dyn": "ming",
+      "types": [
+        "church"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_qingdao_christ.png",
+      "displayLine": "assets/plates/sd_qingdao_christ.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sd_qingdao_christ.json",
+      "candidateReferences": [
+        "assets/references/sd_qingdao_christ-photo.jpg"
+      ],
+      "output": "assets/colored/sd_qingdao_christ.png",
+      "record": "assets/color-research/sd_qingdao_christ.json"
+    },
+    {
+      "id": "sd_yanmiao",
+      "name": "曲阜颜庙",
+      "subject": "曲阜颜庙复圣殿整殿",
+      "sub": "复圣殿 · 七间重檐",
+      "place": "山东曲阜 · 陋巷",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_yanmiao.png",
+      "displayLine": "assets/plates/sd_yanmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/sd_yanmiao.json",
+      "candidateReferences": [
+        "assets/references/sd_yanmiao-full-photo.jpg",
+        "assets/references/sd_yanmiao-photo.jpg"
+      ],
+      "output": "assets/colored/sd_yanmiao.png",
+      "record": "assets/color-research/sd_yanmiao.json"
+    },
+    {
+      "id": "sd_chongjue",
+      "name": "崇觉寺铁塔",
+      "subject": "济宁崇觉寺铁塔塔身与上部台座",
+      "sub": "九层塔身与上部台座",
+      "place": "山东济宁 · 崇觉寺",
+      "dyn": "song",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sd_chongjue.png",
+      "displayLine": "assets/plates/sd_chongjue.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/sd_chongjue.json",
+      "candidateReferences": [
+        "assets/references/sd_chongjue-photo.jpg"
+      ],
+      "output": "assets/colored/sd_chongjue.png",
+      "record": "assets/color-research/sd_chongjue.json"
+    },
+    {
+      "id": "hb_shanhaiguan",
+      "name": "山海关镇东楼",
+      "subject": "山海关镇东楼及城台",
+      "sub": "东门箭楼 · 城台与短墙段",
+      "place": "河北秦皇岛 · 山海关",
+      "dyn": "ming",
+      "types": [
+        "wall",
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_shanhaiguan.png",
+      "displayLine": "assets/plates/hb_shanhaiguan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_shanhaiguan.json",
+      "candidateReferences": [
+        "assets/references/hb_shanhaiguan-photo.jpg"
+      ],
+      "output": "assets/colored/hb_shanhaiguan.png",
+      "record": "assets/color-research/hb_shanhaiguan.json"
+    },
+    {
+      "id": "hb_pule",
+      "name": "普乐寺",
+      "subject": "普乐寺旭光阁与上层台基",
+      "sub": "旭光阁 · 上层台基",
+      "place": "河北承德 · 武烈河东",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_pule.png",
+      "displayLine": "assets/plates/hb_pule.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_pule.json",
+      "candidateReferences": [
+        "assets/references/hb_pule-photo.jpg"
+      ],
+      "output": "assets/colored/hb_pule.png",
+      "record": "assets/color-research/hb_pule.json"
+    },
+    {
+      "id": "hb_anyuan",
+      "name": "安远庙",
+      "subject": "安远庙普度殿整殿",
+      "sub": "普度殿 · 三重檐方殿",
+      "place": "河北承德 · 武烈河东",
+      "dyn": "ming",
+      "types": [
+        "hall",
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_anyuan.png",
+      "displayLine": "assets/plates/hb_anyuan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_anyuan.json",
+      "candidateReferences": [
+        "assets/references/hb_anyuan-full-photo.jpg",
+        "assets/references/hb_anyuan-photo.jpg"
+      ],
+      "output": "assets/colored/hb_anyuan.png",
+      "record": "assets/color-research/hb_anyuan.json"
+    },
+    {
+      "id": "hb_zhili",
+      "name": "直隶总督署",
+      "subject": "直隶总督署大堂",
+      "sub": "大堂 · 五间官署正堂",
+      "place": "河北保定 · 莲池区",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_zhili.png",
+      "displayLine": "assets/plates/hb_zhili.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_zhili.json",
+      "candidateReferences": [
+        "assets/references/hb_zhili-photo.jpg"
+      ],
+      "output": "assets/colored/hb_zhili.png",
+      "record": "assets/color-research/hb_zhili.json"
+    },
+    {
+      "id": "hb_yongtong",
+      "name": "永通桥",
+      "subject": "赵县永通桥整桥侧立面",
+      "sub": "赵县 · 单孔敞肩石拱桥",
+      "place": "河北赵县 · 赵州镇",
+      "dyn": "liao",
+      "types": [
+        "bridge"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_yongtong.png",
+      "displayLine": "assets/plates/hb_yongtong.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_yongtong.json",
+      "candidateReferences": [
+        "assets/references/hb_yongtong-photo.jpg"
+      ],
+      "output": "assets/colored/hb_yongtong.png",
+      "record": "assets/color-research/hb_yongtong.json"
+    },
+    {
+      "id": "hb_tiangong",
+      "name": "天宫寺塔",
+      "subject": "丰润天宫寺塔整塔",
+      "sub": "丰润 · 八角十三层密檐砖塔",
+      "place": "河北唐山 · 丰润",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_tiangong.png",
+      "displayLine": "assets/plates/hb_tiangong.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hb_tiangong.json",
+      "candidateReferences": [
+        "assets/references/hb_tiangong-photo.jpg"
+      ],
+      "output": "assets/colored/hb_tiangong.png",
+      "record": "assets/color-research/hb_tiangong.json"
+    },
+    {
+      "id": "hb_shien",
+      "name": "时恩寺",
+      "subject": "时恩寺大殿与清代抱厦",
+      "sub": "大殿 · 清代卷棚抱厦",
+      "place": "河北张家口 · 宣化",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_shien.png",
+      "displayLine": "assets/plates/hb_shien.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_shien.json",
+      "candidateReferences": [
+        "assets/references/hb_shien-photo.jpg"
+      ],
+      "output": "assets/colored/hb_shien.png",
+      "record": "assets/color-research/hb_shien.json"
+    },
+    {
+      "id": "hb_dajingmen",
+      "name": "大境门",
+      "subject": "大境门券门与相接短墙段",
+      "sub": "张家口 · 券门与短墙段",
+      "place": "河北张家口 · 桥西",
+      "dyn": "ming",
+      "types": [
+        "wall",
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hb_dajingmen.png",
+      "displayLine": "assets/plates/hb_dajingmen.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_dajingmen.json",
+      "candidateReferences": [
+        "assets/references/hb_dajingmen-photo.jpg"
+      ],
+      "output": "assets/colored/hb_dajingmen.png",
+      "record": "assets/color-research/hb_dajingmen.json"
+    },
+    {
       "id": "sh_tangchuang",
       "name": "松江唐经幢",
       "subject": "松江唐经幢 · 佛顶尊胜陀罗尼经幢",
@@ -4580,48 +6309,6 @@
       ],
       "output": "assets/colored/sh_zhenru.png",
       "record": "assets/color-research/sh_zhenru.json"
-    },
-    {
-      "id": "sx_doudafu",
-      "name": "太原窦大夫祠",
-      "subject": "太原窦大夫祠 · 献亭与大殿正面",
-      "sub": "献亭与大殿 · 上兰村",
-      "place": "山西太原 · 尖草坪上兰村",
-      "dyn": "yuan",
-      "types": [
-        "hall"
-      ],
-      "line": "assets/generated/sx_doudafu.png",
-      "displayLine": "assets/plates/sx_doudafu.png",
-      "width": 1536,
-      "height": 1024,
-      "originalResearch": "assets/research/sx_doudafu.json",
-      "candidateReferences": [
-        "assets/references/sx_doudafu-photo.jpg"
-      ],
-      "output": "assets/colored/sx_doudafu.png",
-      "record": "assets/color-research/sx_doudafu.json"
-    },
-    {
-      "id": "sx_jiulongbi",
-      "name": "大同九龙壁",
-      "subject": "大同九龙壁 · 九龙琉璃照壁正面",
-      "sub": "代王府琉璃照壁 · 九龙浮雕",
-      "place": "山西大同 · 古城和阳街",
-      "dyn": "ming",
-      "types": [
-        "screen"
-      ],
-      "line": "assets/generated/sx_jiulongbi.png",
-      "displayLine": "assets/plates/sx_jiulongbi.png",
-      "width": 1536,
-      "height": 1024,
-      "originalResearch": "assets/research/sx_jiulongbi.json",
-      "candidateReferences": [
-        "assets/references/sx_jiulongbi-photo.jpg"
-      ],
-      "output": "assets/colored/sx_jiulongbi.png",
-      "record": "assets/color-research/sx_jiulongbi.json"
     },
     {
       "id": "ah_xuguo",

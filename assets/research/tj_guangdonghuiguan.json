@@ -1,0 +1,63 @@
+{
+  "id": "tj_guangdonghuiguan",
+  "subject": "天津广东会馆 · 戏台与鸡笼式藻井局部",
+  "status": "complete",
+  "file": "assets/references/tj_guangdonghuiguan-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_(4).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2023-03-03 13:52:59",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tj_guangdonghuiguan-photo.jpg",
+    "assets/references/tj_guangdonghuiguan-detail.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/tj_guangdonghuiguan-detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_(5).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/%E5%A4%A9%E6%B4%A5%E5%B9%BF%E4%B8%9C%E4%BC%9A%E9%A6%862023.3_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-03-03 13:53:43"
+    }
+  ],
+  "source_note": "两张2023年实拍核对伸出式戏台、无落地支柱的罩棚及外方内圆鸡笼式藻井。本图选择戏台与藻井室内局部，带短段两层侧廊，不复原未见全楼外檐；移除观众、桌椅、现代灯管与显示屏，雕刻作稀疏简化。",
+  "prompt": "Use case: style-transfer. One sparse fine BLACK INK heritage atlas architectural INTERIOR DETAIL. Image1 Longmen fine contour STYLE only. Image2 complete interior photo and Image3 close caisson photo are SUBJECT GEOMETRY of Tianjin Guangdong Guildhall THEATRE. Selected subject: front-facing projecting raised wooden STAGE, its ornate back screen with large round relief panel, the broad square suspended canopy above, and the spectacular round inward spiral CHICKEN-COOP caisson seen as a wide ellipse in shallow looking-up view. The canopy is suspended WITHOUT vertical posts on the projecting stage. Include only SHORT symmetric segments of the two-storey side galleries directly around the stage, timber rails and white wall/window panels. NO imaginary exterior pagoda roof. This is a selected interior cutaway/detail, not the complete theatre building. Preserve photographed structural arrangement, simplify ornament into delicate contour hints: a few coherent spiral caisson ribs, carved beam edges and screen panels, do not draw thousands of texture lines. Remove audience, tables, chairs, screens, modern tube lamps, wires and hanging decorative lanterns. Blank plaque and vertical inscription areas, no letters/calligraphy. Black fine contours only with broad blank white planes, no black wall/window fill, gray shading or hatch. Isolated selected stage/caisson structure centered in landscape1536x1024 with generous8% white margins, complete represented platform and canopy uncut. All nonink pixels perfectly flat opaque PURE WHITE #FFFFFF, no room background, colored fills, cast shadow, gradient, paper texture, glow, checkerboard, labels, frame or watermark.",
+  "generated_file": "assets/generated/tj_guangdonghuiguan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4a19d450-ca6f-4d1b-a2d7-7f4b321ff9c8.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "广东会馆 · 戏台与鸡笼式藻井局部",
+    "清末 · 1907年落成"
+  ],
+  "historical_sources": [
+    {
+      "title": "天津市文化和旅游局 · 广东会馆伸出式戏台、藻井与1907年落成",
+      "url": "https://whly.tj.gov.cn/tjswlzxw/sy1/rmzx/202402/t20240206_6532786.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0f4306fdd0f0594136eada9b9eb6bb07d1d48704aa24459a0603de7df1754f8d",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "所绘为伸出式戏台与鸡笼式藻井，配两侧短段二层看廊；没有添画戏楼外观。",
+      "藻井旋转汇聚与舞台背屏、栏杆可见，删去观众座椅、灯笼及现代显示屏。"
+    ],
+    "limitations": [
+      "室内以局部剖取式图版概括，周边看廊截短；藻井构件及雕花人物不是逐构件复刻。"
+    ]
+  }
+}

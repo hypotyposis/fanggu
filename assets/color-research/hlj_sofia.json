@@ -1,0 +1,81 @@
+{
+  "id": "hlj_sofia",
+  "name": "哈尔滨圣索菲亚教堂",
+  "subject": "哈尔滨圣索菲亚教堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hlj_sofia.png",
+    "assets/references/hlj_sofia-summer.jpg",
+    "assets/references/hlj_sofia-candidate2.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nHarbin Saint Sophia Cathedral CURRENT1932 brick subject. Lock line composition with ONE enormous central green-metal onion dome on high drum, front-left tall bell tower and right small turret each green conical roof and small pale-gold onion/cross. Red-brown brick masonry with pale-grey mortar, restrained shadowed recesses, green weathered metal segmented panels (NOT all golden dome, not bright turquoise), actual slight pale-gold metal ONLY small onion/cross elements in photo. Preserve three crosses, exact arched windows and complete drawn base, NO modern ticket annex. Exterior and bell tower REAL open-air gaps flat WHITE, dark glass windows and door are opaque dark materials. Portrait1024x1536.",
+  "material_observations": [
+    "红褐砖墙与灰白砖缝，非统一土黄。",
+    "中央大型洋葱穹顶为旧绿金属板，前钟楼与侧塔锥顶亦为绿金属；小洋葱顶和十字有照片可见金属浅金，不把主穹顶镀金。"
+  ],
+  "references": [
+    {
+      "title": "File:Harbin Sophia Cathedral 2017 summer.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Harbin_Sophia_Cathedral_2017_summer.jpg/1280px-Harbin_Sophia_Cathedral_2017_summer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:Harbin_Sophia_Cathedral_2017_summer.jpg",
+      "author": "Amarespeco",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-07-14 16:33:48",
+      "id": "hlj_sofia",
+      "file": "assets/references/hlj_sofia-summer.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Harbin_Sophia_Cathedral_2017_summer.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Harbin_Sophia_Cathedral_2017_summer.jpg/1280px-Harbin_Sophia_Cathedral_2017_summer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    },
+    {
+      "title": "File:哈尔滨圣索菲亚教堂侧面仰视图.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%93%88%E5%B0%94%E6%BB%A8%E5%9C%A3%E7%B4%A2%E8%8F%B2%E4%BA%9A%E6%95%99%E5%A0%82%E4%BE%A7%E9%9D%A2%E4%BB%B0%E8%A7%86%E5%9B%BE.jpg/1280px-%E5%93%88%E5%B0%94%E6%BB%A8%E5%9C%A3%E7%B4%A2%E8%8F%B2%E4%BA%9A%E6%95%99%E5%A0%82%E4%BE%A7%E9%9D%A2%E4%BB%B0%E8%A7%86%E5%9B%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%93%88%E5%B0%94%E6%BB%A8%E5%9C%A3%E7%B4%A2%E8%8F%B2%E4%BA%9A%E6%95%99%E5%A0%82%E4%BE%A7%E9%9D%A2%E4%BB%B0%E8%A7%86%E5%9B%BE.jpg",
+      "width": 1200,
+      "height": 1600,
+      "author": "Steve Zhang",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2023-07-23",
+      "id": "hlj_sofia",
+      "file": "assets/references/hlj_sofia-candidate2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%93%88%E5%B0%94%E6%BB%A8%E5%9C%A3%E7%B4%A2%E8%8F%B2%E4%BA%9A%E6%95%99%E5%A0%82%E4%BE%A7%E9%9D%A2%E4%BB%B0%E8%A7%86%E5%9B%BE.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/%E5%93%88%E5%B0%94%E6%BB%A8%E5%9C%A3%E7%B4%A2%E8%8F%B2%E4%BA%9A%E6%95%99%E5%A0%82%E4%BE%A7%E9%9D%A2%E4%BB%B0%E8%A7%86%E5%9B%BE.jpg/1280px-%E5%93%88%E5%B0%94%E6%BB%A8%E5%9C%A3%E7%B4%A2%E8%8F%B2%E4%BA%9A%E6%95%99%E5%A0%82%E4%BE%A7%E9%9D%A2%E4%BB%B0%E8%A7%86%E5%9B%BE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "original_research": "assets/research/hlj_sofia.json",
+  "output": "assets/colored/hlj_sofia.png",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "大型中央洋葱穹顶、前钟楼、侧塔与三十字完整；现代售票附建排除。",
+      "设色现貌材料区分已目检；外部白底与记录透空点已由固定脚本处理。"
+    ],
+    "limitations": [
+      "用户视觉验收待确认，艺术图版非实测。"
+    ]
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9e43bf543fe574ad01e3bf3371da072a207ccf013d5bffaf25ed4afb79ebec02",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-e1f2f251-c33c-4be1-a866-3ae7d117d3c5.png",
+  "width": 1024,
+  "height": 1536,
+  "delivery_review": {
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "origin": "http://127.0.0.1:8768",
+    "image_loads_passed": true,
+    "subject_and_materials_preserved": true,
+    "user_acceptance": "pending_user"
+  }
+}

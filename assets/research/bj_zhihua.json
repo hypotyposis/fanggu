@@ -1,0 +1,68 @@
+{
+  "id": "bj_zhihua",
+  "subject": "北京智化寺 · 如来殿与万佛阁南面",
+  "file": "assets/references/bj_zhihua-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E4%BA%AC%E6%99%BA%E5%8C%96%E5%AF%BA%E4%B8%87%E4%BD%9B%E9%98%812021.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E5%8C%97%E4%BA%AC%E6%99%BA%E5%8C%96%E5%AF%BA%E4%B8%87%E4%BD%9B%E9%98%812021.jpg",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "date": "2021-03-20",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/bj_zhihua-photo.jpg"
+  ],
+  "source_note": "以2021年南面实拍为主体；东城区政府博物馆资料明确上层三间、下层五间。保留黑琉璃庑殿顶、上层券拱门窗与回廊，去掉两通石碑、香炉和树木。正门隔扇作闭合展示、匾额不绘文字。",
+  "prompt": "Use case: style-transfer. One fine architectural line plate for 访古. Image1 is Longmen LINE STYLE ONLY, Image2 is the exact present FRONT of the Rulai Hall/Wanfo Pavilion at Beijing Zhihua Temple. Draw this two-storey Ming building complete and unobstructed, approximately straight-on at facade level with verticals vertical. The LOWER main hall has exactly FIVE structural bays; the UPPER main hall has exactly THREE structural bays with three rounded arched lattice openings across the front. Keep the narrower upper wall body inside the broad deep roof and the wraparound balcony with its simple balustrade. Upper roof is a black-glazed four-slope HIP roof (wudian), with long main ridge and curled ridge-end ornaments, NOT a hip-and-gable roof with a visible triangular gable panel. The lower wraparound veranda/corridor roof projects broadly across the front and around sides. Preserve actual thin Ming brackets, pillars, outlined lattice doors/windows and modest stone platform from the photo. Center lower doorway and symmetrical side panels follow the photograph; do not multiply bays. Remove freestanding stone steles, incense burner, trees and branches, signs, visitors, bins, side buildings and background. Elegant sparse fine BLACK ink contours, restrained finer structural lines; reduce repetitive tile/brick detail and avoid filling door recesses black. Perfectly flat opaque PURE WHITE #FFFFFF on all non-ink surfaces inside and outside. No gray shading, shadows, crosshatching, pencil grain, paper texture, color, gold, gradients, glow, checkerboard, frame, labels, captions, calligraphy or watermark. Landscape1536x1024, centered complete building about82% of canvas width, balanced margins, roof corners and base uncut.",
+  "generated_file": "assets/generated/bj_zhihua.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4272ab93-ff45-4292-a9df-76ba511a1138.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "北京智化寺 · 如来殿与万佛阁",
+    "明 · 1443—1444始建"
+  ],
+  "historical_sources": [
+    {
+      "title": "北京市东城区政府 · 智化寺北京市文博交流馆（上下层开间）",
+      "url": "https://www.bjdch.gov.cn/mldc/bglj/bwg/202008/t20200827_2975746.html"
+    },
+    {
+      "title": "北京市文物局 · 智化寺保护利用项目概况（1444）",
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738079/zfcg22/1793150/2020042908570097199.pdf"
+    },
+    {
+      "title": "北京市人民政府 · 智化寺（1443）",
+      "url": "https://www.beijing.gov.cn/renwen/rwzyd/qgzdwwbhdw/zhs/202210/t20221026_2845302.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1b8b25153f16ca90fffada0b245f80679dc81edc09102d070214ad839931393c",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. One fine architectural line plate for 访古. Image1 is Longmen LINE STYLE ONLY, Image2 is the exact present FRONT of the Rulai Hall/Wanfo Pavilion at Beijing Zhihua Temple. Draw this two-storey Ming building complete and unobstructed, approximately straight-on at facade level with verticals vertical. The LOWER main hall has exactly FIVE structural bays; the UPPER main hall has exactly THREE structural bays with three rounded arched lattice openings across the front. Keep the narrower upper wall body inside the broad deep roof and the wraparound balcony with its simple balustrade. Upper roof is a black-glazed four-slope HIP roof (wudian), with long main ridge and curled ridge-end ornaments, NOT a hip-and-gable roof with a visible triangular gable panel. The lower wraparound veranda/corridor roof projects broadly across the front and around sides. Preserve actual thin Ming brackets, pillars, outlined lattice doors/windows and modest stone platform from the photo. Center lower doorway and symmetrical side panels follow the photograph; do not multiply bays. Remove freestanding stone steles, incense burner, trees and branches, signs, visitors, bins, side buildings and background. Elegant sparse fine BLACK ink contours, restrained finer structural lines; reduce repetitive tile/brick detail and avoid filling door recesses black. Perfectly flat opaque PURE WHITE #FFFFFF on all non-ink surfaces inside and outside. No gray shading, shadows, crosshatching, pencil grain, paper texture, color, gold, gradients, glow, checkerboard, frame, labels, captions, calligraphy or watermark. Landscape1536x1024, centered complete building about82% of canvas width, balanced margins, roof corners and base uncut.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/bj_zhihua-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4272ab93-ff45-4292-a9df-76ba511a1138.png"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "下层五开间、上层三开间与三券拱开口已核。",
+      "上层庑殿屋面及下层回廊屋面完整，未画歇山三角山花。",
+      "屋角和基座未裁切，白底黑线，无外景或文字。"
+    ],
+    "limitations": "门扇闭合状态和雕饰作建筑图版简化，非严格照片状态复刻或实测；侧边留白较小但主体完整。"
+  },
+  "status": "complete"
+}

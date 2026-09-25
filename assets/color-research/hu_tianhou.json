@@ -1,0 +1,86 @@
+{
+  "id": "hu_tianhou",
+  "name": "芷江天后宫",
+  "subject": "芷江天后宫石坊完整立面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 芷江天后宫石坊完整立面.\nPresent material observations: 主体灰青石、风化灰褐缝隙，门洞暗褐木门；石质仿屋顶也为灰石，不把雕刻门楼设色为红木黄瓦。\nKeep EXACTLY the line drawing's selected subject and crop: 中央高、左右低的石坊门楼，石雕面板与中央门洞；顶端鱼吻完整，底部石鼓与两侧近门石狮保留，不延伸整面围墙。",
+  "input_images": [
+    "assets/generated/hu_tianhou.png",
+    "assets/references/hu_tianhou-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "material_observations": [
+    "主体灰青石、风化灰褐缝隙，门洞暗褐木门；石质仿屋顶也为灰石，不把雕刻门楼设色为红木黄瓦。"
+  ],
+  "references": [
+    {
+      "id": "hu_tianhou",
+      "file": "assets/references/hu_tianhou-photo.jpg",
+      "sha256": "cc822d07f1acab69a9b4c4db12726ffcff661b7c21ddc597bb6f9b34b5a0ac12",
+      "title": "File:芷江天后宫石坊.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg/1280px-%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-10-03 13:52:40"
+    }
+  ],
+  "line_source": "assets/generated/hu_tianhou.png",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg/1280px-%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg",
+  "author": "三猎",
+  "license": "CC BY-SA 4.0",
+  "original_research": "assets/research/hu_tianhou.json",
+  "output": "assets/colored/hu_tianhou.png",
+  "generated_original": "assets/color-studies/v1/hu_tianhou-colored.png",
+  "original_file": "assets/color-studies/v1/hu_tianhou-colored.png",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "inputs_viewed": true,
+  "historical_sources": [
+    {
+      "title": "国家民委：1748年芷江天后宫青石门坊与雕刻",
+      "url": "https://www.neac.gov.cn/seac/c103391/202306/1164668.shtml"
+    },
+    {
+      "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
+      "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+    }
+  ],
+  "generation_history": [
+    {
+      "stage": "color",
+      "submitted_at": "2026-09-17T13:27:09.506Z",
+      "completed_at": "2026-09-17T13:28:19.128Z",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 芷江天后宫石坊完整立面.\nPresent material observations: 主体灰青石、风化灰褐缝隙，门洞暗褐木门；石质仿屋顶也为灰石，不把雕刻门楼设色为红木黄瓦。\nKeep EXACTLY the line drawing's selected subject and crop: 中央高、左右低的石坊门楼，石雕面板与中央门洞；顶端鱼吻完整，底部石鼓与两侧近门石狮保留，不延伸整面围墙。",
+      "input_images": [
+        "assets/generated/hu_tianhou.png",
+        "assets/references/hu_tianhou-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/color-studies/v1/hu_tianhou-colored.png",
+      "received_at": "2026-09-17T13:28:19.128Z",
+      "saved_at": "2026-09-17T13:28:19.279Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-37260866-c324-4434-a11f-343769350daa.png"
+    }
+  ],
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a83668e35df92a4ee8893195a28dbffb6f24ad484b6409cab52758dab32c46e9",
+    "seeds": []
+  }
+}

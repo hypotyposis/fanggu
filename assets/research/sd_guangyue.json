@@ -1,0 +1,88 @@
+{
+  "id": "sd_guangyue",
+  "subject": "聊城光岳楼整楼与台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:光岳楼_20240122.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/光岳楼_20240122.jpg",
+  "author": "Uuongkinghe（上传账号Auongkinghe）",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "references": [
+    {
+      "id": "sd_guangyue",
+      "file": "assets/references/sd_guangyue-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:光岳楼_20240122.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/光岳楼_20240122.jpg",
+      "author": "Uuongkinghe（上传账号Auongkinghe）",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "2024-01-22",
+      "sha256": "f513c1dc579a6c3888bd8b783c5a89a8f1254f46523f5ea4bd390562db6365c0"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_guangyue-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看公开实拍重绘；前景遮挡由可见连续结构简化，不声称实测。待用户验收。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the complete Guangyue Tower south front from this photo. FOUR tiers of projecting eaves above a broad square brick platform. Highest roof is a cruciform hip-and-gable roof. Broad platform has one large central arched passage plus two much smaller side openings visible from this side. Preserve roof widths and structure; no extra tiers. Keep plaques blank. Remove foreground stone, trees, lamps and tourists."
+  ],
+  "material_observations": [
+    "青灰褐砖台基、灰瓦、朱红木壁门扇、深褐立柱，蓝绿斗拱彩画与局部金色装饰。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 聊城光岳楼整楼与台基\nLandscape 1536x1024. Draw the complete Guangyue Tower south front from this photo. FOUR tiers of projecting eaves above a broad square brick platform. Highest roof is a cruciform hip-and-gable roof. Broad platform has one large central arched passage plus two much smaller side openings visible from this side. Preserve roof widths and structure; no extra tiers. Keep plaques blank. Remove foreground stone, trees, lamps and tourists.",
+  "generated_file": "assets/generated/sd_guangyue.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\n\nSUBJECT: 聊城光岳楼整楼与台基\nLandscape 1536x1024. Draw the complete Guangyue Tower south front from this photo. FOUR tiers of projecting eaves above a broad square brick platform. Highest roof is a cruciform hip-and-gable roof. Broad platform has one large central arched passage plus two much smaller side openings visible from this side. Preserve roof widths and structure; no extra tiers. Keep plaques blank. Remove foreground stone, trees, lamps and tourists.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_guangyue-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T22:33:26.150619+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T22:34:10.631048+08:00",
+      "saved_at": "2026-09-17T22:34:10.722991+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-a811143f-bdeb-4296-a2b4-b9768da79382.png",
+      "output": "assets/generated/sd_guangyue.png"
+    }
+  ],
+  "caption": [
+    "光岳楼 · 整楼与台基 · 线稿",
+    "四层木楼 · 明洪武七年（1374）"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0afc2-9b77-78b0-9279-7bf05a5d830a/exec-a811143f-bdeb-4296-a2b4-b9768da79382.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ea01f766759d7131f66f580163bdc6db972f68bdea7e8c3bbc622cce455d1f47",
+    "seeds": []
+  },
+  "historical_sources": [
+    {
+      "title": "九三学社山东省委：聊城光岳楼建于明洪武七年",
+      "url": "https://www.sd93.gov.cn/m_detail.php?i=id-8083.html",
+      "note": "1374年建成。"
+    },
+    {
+      "title": "山东省文旅厅国保保护范围表",
+      "url": "https://whhly.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=7dfd1c59d14947558ead43458d35e1cf.pdf",
+      "note": "表序号16，第三批光岳楼；检索摘要已核对，下载因证书主机名不匹配失败，未伪称保存PDF。"
+    }
+  ]
+}

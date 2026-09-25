@@ -1,0 +1,63 @@
+{
+  "id": "bj_changling",
+  "name": "长陵祾恩殿",
+  "subject": "北京长陵 · 祾恩殿九开间重檐庑殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/bj_changling.png",
+    "assets/references/bj_changling-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Changling Ling'en Hall Beijing. Preserve the exact NINE architectural facade bays and TEN front columns of Image1, four bays each side of central bay. Complete very long double-eaved HIP wudian roof with NO gables: actual muted ORANGE-YELLOW glazed tiles, aged warm ochre orange ridges rather than metallic gold; two eave levels. Actual dark RED/BURGUNDY timber columns and lattice doors, blue-green mineral colored beam paintings, small restrained old-gold/ochre detailing only on beams. Pale GREY-WHITE opaque stone terrace, balustrades, three stairs and carved central ramp; actual dark central doorway recess opaque dark red-brown, NOT transparent. Blank plaques remain blank; no inscriptions. No trees, people, banners, modern railings or court pavement, preserve selected complete hall, landscape1536x1024, pure flat WHITE #FFFFFF background without shadows.",
+  "material_observations": [
+    "现貌双层庑殿顶为橙黄琉璃瓦。",
+    "殿柱、门窗为暗红木作，檐下横梁保留蓝绿与少量赭金彩画。",
+    "石台基、栏杆、踏步及中央丹陛为浅灰白石材。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/bj_changling-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "Taken on 29 August 2015"
+    },
+    {
+      "file": "assets/references/bj_changling-facade-crop.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/%E9%95%BF%E9%99%B5%E7%A5%BE%E6%81%A9%E6%AE%BF_-_Eminent_Favor_Hall_of_Changling_Tomb_-_2015.08_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "rheins",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "Taken on 29 August 2015",
+      "role": "facade_detail_crop",
+      "derivative_processing": "magick assets/references/bj_changling-photo.jpg -crop 1400x220+300+680 +repage assets/references/bj_changling-facade-crop.png"
+    }
+  ],
+  "original_research": "assets/research/bj_changling.json",
+  "output": "assets/colored/bj_changling.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4c89ac3f-7477-4060-ade6-c3840feaf6ce.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dc4ca2444ebf61e817abe2c307fbcd43efdfed2adc4e4872f74fc62e768118e7",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "九开间、十柱、两层庑殿顶与三组踏步保持；全殿无裁切、无铭文。",
+      "橙黄琉璃瓦、暗红木构、青蓝梁画及浅灰石台与2015年参考照片分区一致。",
+      "深色背景透明副本目检，外白底去除，实体浅色石材、中央暗门洞保持。"
+    ],
+    "limitations": [
+      "图版纹饰简化且瓦面细线较密；按照片艺术转译，不是文保级色彩复原。"
+    ]
+  },
+  "completed_at": "2026-09-16 12:10:25 UTC"
+}

@@ -1,0 +1,121 @@
+{
+  "id": "ln_chongxing",
+  "subject": "北镇崇兴寺双塔",
+  "status": "complete",
+  "file": "assets/references/ln_chongxing-candidate4.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG/1280px-The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "猫猫的日记本",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2015-09-07 10:43:47",
+  "reference_files": [
+    "assets/generated/ln_chongxing-draft2.png",
+    "assets/references/ln_chongxing-neutral-eaves.png"
+  ],
+  "additional_sources": [
+    {
+      "title": "File:The East Pagoda of Chongxing Temple 01 2015-09.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG/1280px-The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG",
+      "width": 1200,
+      "height": 1806,
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2015-09-07 10:56:23",
+      "id": "ln_chongxing",
+      "file": "assets/references/ln_chongxing-candidate3.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG/1280px-The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "source_note": "东西塔分别实拍后组合并列，非同机位摄影与实测场地关系。",
+  "prompt": "Use case: precise-object-edit. IMAGE1 current Chongxing Temple DOUBLE pagoda line plate has INCORRECT12eaves EACH, IMAGE2 actual Westpagoda EAVE-CROP is evidence of13: count FROMTOP roof ledges at cropY266,297,328,360,394,431,467,504,542,582,623,666,714. These are13 distinct MAJOR eave ledges INCLUDING broad first/bottom eave immediately above tall Buddhistbody. Fix both towers to EXACT13eaves EACH: add ONE additional narrow eave and brickwallband to the upper shaft of EACHtower while keeping Buddhistbody, complete chains/finial/base, Westleft slightlyshorter, Eastright differentdetails. Not13rows of tile lines,13 separate architectural eaves. Keep wide originalcomposition1536x1024 and ownfullbases. BOTHINPUTS are now strictly monochrome geometry sources. Every ink pixel strictly neutral BLACK or grey RGB R=G=B antialiasing; ZERO tinted pixels. Every otherpixel perfectly flat opaqueWHITE #FFFFFF. Sparse selected contours, no hatching/solidshadow/text. The additionaleave is mandatory; original12eave draft is NOTacceptable.",
+  "generated_file": "assets/generated/ln_chongxing.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "崇兴寺 · 辽代双塔",
+    "西塔与东塔 · 各十三层密檐"
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "两塔分别核对十三层密檐；西塔左、东塔右，细部不同。",
+      "第三稿白底／中性笔画去底预检退出0。",
+      "第三稿逐塔确认13个独立檐带，含宽第一檐；撤销此前十二檐稿误判。"
+    ],
+    "limitations": [
+      "艺术简化非实测；部分细部较密、边距小于提示词目标，留待用户视觉验收。"
+    ]
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nSubject is the TWO separate Chongxing Temple pagodas in Beizhen. Create a clearly separated side-by-side paired atlas composition: WEST pagoda from PHOTO2 on LEFT, EAST pagoda from PHOTO3 on RIGHT, WEST approximately96% height of EAST. Each is an octagonal masonry densely-eaved pagoda, EXACTLY THIRTEEN separately countable roof/eave levels ABOVE the tall decorated main body (do not count plinth ledges). Copy each photograph's different Buddhist reliefs, false doors and shrine niches on the broad main body, two-level visible masonry plinth and chained finial. Do not duplicate one tower, fuse bases, add a central temple or make twelve/fourteen eaves. Each tower complete apex to bottom, gap is pure white. Combined width72%, height83% of landscape1536x1024. Individual photos are deliberately composed into a pair, not a surveyed site plan.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_chongxing-candidate4.jpg",
+        "assets/references/ln_chongxing-candidate3.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-cd2d502f-6d07-484e-a8f9-c2264a809a85.png",
+      "retained_file": "assets/generated/ln_chongxing-draft1.png",
+      "accepted": false,
+      "reason": "首轮误数，实为两塔各十二檐，且极少偏色像素未通过预检。"
+    },
+    {
+      "attempt": 2,
+      "prompt": "Use case: precise-object-edit. IMAGE1 is already geometrically CORRECT heritage line drawing. Correct ONLY its slightly non-neutral ink and leave architectural silhouette and ALL geometry completely unchanged. Every single ink pixel must have neutral equal-channel RGB BLACK or neutral grey antialiasing, strictly R=G=B, with ZERO colored pixels. Every other pixel must be perfectly flat opaque WHITE #FFFFFF. DO NOT recolor with any pigment, sepia, bluegrey, green or photograph color. Two Chongxing Temple pagodas EACH have EXACT13major eaves including broad bottom first, retain both towers each13, complete chained finials, Westleft slightlyshorter, Eastright, landscape1536x1024. No new lines or structures, no changed perspective or scale, no hatch or filledshadow added. Following real photographs serve as identity references only, not colors. Keep the existing complete margins.",
+      "reference_files": [
+        "assets/generated/ln_chongxing-draft1.png",
+        "assets/references/ln_chongxing-candidate4.jpg",
+        "assets/references/ln_chongxing-candidate3.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d62ea4c1-6917-493a-81f0-510f04da6351.png",
+      "retained_file": "assets/generated/ln_chongxing-draft2.png",
+      "accepted": false,
+      "reason": "中性笔画通过，但两塔仍各十二檐。"
+    }
+  ],
+  "factual_sources": [
+    {
+      "title": "辽宁文旅 · 崇兴寺双塔",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/C6DB74C77FCD45C2BAA94B7A924CCF78/index.shtml"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2d1935d2-6069-4312-aa7b-3bd14616d22f.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9d2b30f52429d91215ff0e4be6b7c02dd3de48df9fcfa1c36e67c71e65bd8551",
+    "seeds": []
+  },
+  "generation_input_paths": [
+    "assets/generated/ln_chongxing-draft2.png",
+    "/tmp/fanggu-ne-review.nfm0JO/chongxing-neutral-eaves.png"
+  ],
+  "reference_preparation": {
+    "source": "assets/references/ln_chongxing-candidate4.jpg",
+    "method": "ImageMagick -colorspace Gray -crop 800x780+190+270 +repage",
+    "retained_file": "assets/references/ln_chongxing-neutral-eaves.png",
+    "eave_y_in_crop": [
+      266,
+      297,
+      328,
+      360,
+      394,
+      431,
+      467,
+      504,
+      542,
+      582,
+      623,
+      666,
+      714
+    ]
+  }
+}

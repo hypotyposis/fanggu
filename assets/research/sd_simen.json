@@ -1,0 +1,124 @@
+{
+  "id": "sd_simen",
+  "subject": "济南神通寺四门塔整塔",
+  "status": "complete",
+  "historical_sources": [
+    {
+      "title": "济南年鉴1990：四门塔611年建成",
+      "url": "https://shandong-chorography.org/database/d1/section/2/article/177/"
+    }
+  ],
+  "source_note": "取石塔内部题记“大业七年造”对应611年，不把塔内东魏544年佛像题记等同塔体年代。 实拍仅作为形制与材质输入，不声称实测；输出由用户验收。",
+  "caption": [
+    "济南神通寺四门塔整塔 · 线稿",
+    "隋 · 611"
+  ],
+  "structure_checkpoints": [
+    "正方形单层塔室、四面各一券门、石板攒尖顶及塔刹；选照片三分之四角可见两门，不变多层塔。"
+  ],
+  "generated_file": "assets/generated/sd_simen.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "site_recommendation": {
+    "id": "sd_simen",
+    "name": "济南神通寺四门塔",
+    "short": "四门塔",
+    "sub": "隋代单层石塔 · 四面券门",
+    "subject": "济南神通寺四门塔整塔",
+    "prov": "山东",
+    "place": "山东济南 · 柳埠神通寺",
+    "placeKey": "jinan_liubu",
+    "types": [
+      "pagoda"
+    ],
+    "dyn": "sui",
+    "tag": "隋",
+    "era": "大业七年",
+    "year": 611,
+    "yearLabel": "611",
+    "yearNote": "取石塔内部题记“大业七年造”对应611年，不把塔内东魏544年佛像题记等同塔体年代。",
+    "checkpoint": "正方形单层塔室、四面各一券门、石板攒尖顶及塔刹；选照片三分之四角可见两门，不变多层塔。",
+    "history": [
+      {
+        "title": "济南年鉴1990：四门塔611年建成",
+        "url": "https://shandong-chorography.org/database/d1/section/2/article/177/"
+      }
+    ],
+    "material": "灰白石块与局部灰褐风化，石顶灰白，门框内红色木门与暗室凹部；保持浅色石身，不统一染青。",
+    "lineDetail": "Landscape 1536x1024. Exactly ONE square stone chamber, ONE arched door on each of four sides, TWO visible doors in the reference three-quarter angle. Low stone slab pyramidal roof with stepped cornice and short finial. Keep the simple massive Sui stone block structure and complete base. NOT a multistorey pagoda, NOT the Buddha inside.",
+    "lede": "没有层层楼阁，只有四面券门与一座石砌攒尖顶。四门塔以简洁而厚重的塔室，把隋代石建筑的轮廓留到今天。",
+    "facts": [
+      "<b>年代依据</b> 塔顶内部发现“大业七年造”题记，对应611年；塔内东魏造像早于塔体，不混为同一年。",
+      "<b>形制</b> 单层亭阁式石塔，平面正方，四面辟门，塔心柱面向四方安置佛像。",
+      "<b>图版范围</b> 绘整座石塔外观，塔内佛像不作为独立放大主体。"
+    ]
+  },
+  "file": "assets/references/sd_simen-photo.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Four_gates_pagoda_shandong_2006_09.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Four_gates_pagoda_shandong_2006_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Rolf Müller (User:Rolfmueller)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "date": "2007-09-23",
+  "references": [
+    {
+      "id": "sd_simen",
+      "file": "assets/references/sd_simen-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:Four_gates_pagoda_shandong_2006_09.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Four_gates_pagoda_shandong_2006_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Four_gates_pagoda_shandong_2006_09.jpg/960px-Four_gates_pagoda_shandong_2006_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Rolf Müller (User:Rolfmueller)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "2007-09-23",
+      "description": "Photograph of Four-Gates Pagoda in Shandong Province, China by Rolf Müller"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sd_simen-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 济南神通寺四门塔整塔.\nLandscape 1536x1024. Exactly ONE square stone chamber, ONE arched door on each of four sides, TWO visible doors in the reference three-quarter angle. Low stone slab pyramidal roof with stepped cornice and short finial. Keep the simple massive Sui stone block structure and complete base. NOT a multistorey pagoda, NOT the Buddha inside.\nStructure checkpoint: 正方形单层塔室、四面各一券门、石板攒尖顶及塔刹；选照片三分之四角可见两门，不变多层塔。",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\nNAMED SUBJECT: 济南神通寺四门塔整塔.\nLandscape 1536x1024. Exactly ONE square stone chamber, ONE arched door on each of four sides, TWO visible doors in the reference three-quarter angle. Low stone slab pyramidal roof with stepped cornice and short finial. Keep the simple massive Sui stone block structure and complete base. NOT a multistorey pagoda, NOT the Buddha inside.\nStructure checkpoint: 正方形单层塔室、四面各一券门、石板攒尖顶及塔刹；选照片三分之四角可见两门，不变多层塔。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sd_simen-photo.jpg"
+      ],
+      "submitted_at": "2026-09-16T17:21:26.640Z",
+      "completed_at": null,
+      "status": "saved",
+      "returned_at": "2026-09-16T17:24:01.200Z",
+      "received_at": "2026-09-16T17:24:01.200Z",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4c8facf8-6fe5-401b-8537-1ab2955d7c7c.png",
+      "saved_at": "2026-09-16T17:24:27.226Z"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8e2add74464b9214e1b1b1729efd1d93a5054eb96d7c7a9a053dc48cbf2d5585",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4c8facf8-6fe5-401b-8537-1ab2955d7c7c.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4c8facf8-6fe5-401b-8537-1ab2955d7c7c.png",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-16T23:54:05.255Z",
+    "sourceSha256": "8e2add74464b9214e1b1b1729efd1d93a5054eb96d7c7a9a053dc48cbf2d5585"
+  }
+}

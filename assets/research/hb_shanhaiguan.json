@@ -1,0 +1,140 @@
+{
+  "id": "hb_shanhaiguan",
+  "subject": "山海关镇东楼及城台",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_(6234529540).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_%286234529540%29.jpg",
+  "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+  "license": "CC BY-SA 2.0",
+  "references": [
+    {
+      "file": "assets/references/hb_shanhaiguan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_(6234529540).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_%286234529540%29.jpg",
+      "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2011-10-04 16:03",
+      "sha256": "d773be76d274443d193b0ecf8b0b3f07a68ea2ca9a5f52c4c1b1dbf236ab33cf"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_shanhaiguan-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Shanhaiguan EAST gate Zhengdong Tower and its broad brick platform, one central arched gateway, TWO roof eaves with hip-and-gable roof; upper front has central blank plaque and three rectangular window groups each side. Preserve horizontal breadth of platform, full gateway and short adjoining wall ends. Remove flags, trees, tourists and all lettering. Do not add other towers."
+  ],
+  "material_observations": [
+    "灰褐砖石城台、灰褐瓦、朱红上层窗壁，蓝绿檐下彩画；匾额不写字。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 山海关镇东楼及城台\nLandscape 1536x1024. Complete Shanhaiguan EAST gate Zhengdong Tower and its broad brick platform, one central arched gateway, TWO roof eaves with hip-and-gable roof; upper front has central blank plaque and three rectangular window groups each side. Preserve horizontal breadth of platform, full gateway and short adjoining wall ends. Remove flags, trees, tourists and all lettering. Do not add other towers.",
+  "generated_file": "assets/generated/hb_shanhaiguan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 山海关镇东楼及城台\nLandscape 1536x1024. Complete Shanhaiguan EAST gate Zhengdong Tower and its broad brick platform, one central arched gateway, TWO roof eaves with hip-and-gable roof; upper front has central blank plaque and three rectangular window groups each side. Preserve horizontal breadth of platform, full gateway and short adjoining wall ends. Remove flags, trees, tourists and all lettering. Do not add other towers.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_shanhaiguan-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:27:31.983605+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:31:49.054517+08:00",
+      "saved_at": "2026-09-17T23:31:49.094346+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-036e43f6-b971-452d-89d6-1a68ec11b73d.png",
+      "output": "assets/generated/hb_shanhaiguan.png"
+    }
+  ],
+  "caption": [
+    "山海关 · 镇东楼与城台",
+    "明代箭楼 · 历代及近现代修缮"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局：山海关长城40年",
+      "url": "https://wenwu.hebei.gov.cn/system/2024/05/30/030291598.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-036e43f6-b971-452d-89d6-1a68ec11b73d.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d19671448330871af61f20f8ee8f120df1758ac594743926aa1867b7a43fa83b",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_shanhaiguan",
+    "name": "山海关镇东楼",
+    "short": "镇东楼",
+    "sub": "东门箭楼 · 城台与短墙段",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代建楼 · 近现代维修",
+    "year": 1400,
+    "yearLabel": "明代",
+    "yearApprox": true,
+    "yearNote": "山海卫1381年设立，河北文物局记翌年筑关城；本图绘现存镇东楼与城台，1400仅作明代约略排序，不是木楼确切建年。近现代多次修缮另行说明。",
+    "place": "河北秦皇岛 · 山海关",
+    "placeKey": "hb_shanhaiguan",
+    "types": [
+      "wall",
+      "pavilion"
+    ],
+    "lede": "高大的城台托起两重檐箭楼，一道券门贯穿关城。镇东楼的横向展开，把山海之间的关隘凝成了最熟悉的轮廓。",
+    "facts": [
+      "图版取东门镇东楼、城台及两翼短墙段，不绘整座关城或老龙头。",
+      "关城兴筑与现存楼体修缮分别记载，年表以明代约略定位。",
+      "楼与相邻城墙在1978年以后持续修缮，镇东楼1998年曾进行大修。"
+    ],
+    "legacyNames": [
+      "天下第一关",
+      "山海关东门",
+      "镇东门"
+    ],
+    "caption": [
+      "山海关 · 镇东楼与城台",
+      "明代箭楼 · 历代及近现代修缮"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.551976+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_shanhaiguan-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_(6234529540).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_%286234529540%29.jpg",
+      "author": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2011-10-04 16:03",
+      "sha256": "d773be76d274443d193b0ecf8b0b3f07a68ea2ca9a5f52c4c1b1dbf236ab33cf",
+      "source_page": "https://commons.wikimedia.org/wiki/File:First_Pass_Under_Heaven_%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E5%85%B3_(6234529540).jpg"
+    }
+  ]
+}

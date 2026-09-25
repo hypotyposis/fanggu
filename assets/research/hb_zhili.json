@@ -1,0 +1,142 @@
+{
+  "id": "hb_zhili",
+  "subject": "直隶总督署大堂",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg",
+  "author": "ScareCriterion12",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "file": "assets/references/hb_zhili-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2019-10-25 12:14:05",
+      "sha256": "cda6bbcf6d977c5a8f4a7b406975c23c98613a3ceb8bcfb2ef32ece706512f84"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_zhili-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "source_note": "依据已查看主体照片绘制；原型待用户验收，不声称实测或文保复原。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete five-bay main ceremonial hall (DATING) in the photo, not the gate or third hall. Single gray-tile HARD-GABLE roof, eight visible front columns including end porch supports creating seven porch openings across five interior bays. Central entrance, flanking red lattice doors/windows, narrow side wall ends, low platform. No other buildings, foreground shrubs, banners or text; plaques blank."
+  ],
+  "material_observations": [
+    "灰瓦与灰砖墙裙、白灰墙面、近黑柱、暗朱红门窗，梁枋蓝绿色彩画，匾额保留蓝底细金边但不写字。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 直隶总督署大堂\nLandscape 1536x1024. Complete five-bay main ceremonial hall (DATING) in the photo, not the gate or third hall. Single gray-tile HARD-GABLE roof, eight visible front columns including end porch supports creating seven porch openings across five interior bays. Central entrance, flanking red lattice doors/windows, narrow side wall ends, low platform. No other buildings, foreground shrubs, banners or text; plaques blank.",
+  "generated_file": "assets/generated/hb_zhili.png",
+  "generation_tool": "built-in image_gen",
+  "generation_history": [
+    {
+      "stage": "line",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 直隶总督署大堂\nLandscape 1536x1024. Complete five-bay main ceremonial hall (DATING) in the photo, not the gate or third hall. Single gray-tile HARD-GABLE roof, eight visible front columns including end porch supports creating seven porch openings across five interior bays. Central entrance, flanking red lattice doors/windows, narrow side wall ends, low platform. No other buildings, foreground shrubs, banners or text; plaques blank.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_zhili-photo.jpg"
+      ],
+      "submitted_at": "2026-09-17T23:27:31.983524+08:00",
+      "status": "saved",
+      "received_at": "2026-09-17T23:31:49.246673+08:00",
+      "saved_at": "2026-09-17T23:31:49.277296+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-4252f5a5-1574-4b11-aa63-ebca37b0d929.png",
+      "output": "assets/generated/hb_zhili.png"
+    }
+  ],
+  "caption": [
+    "直隶总督署 · 大堂",
+    "五间正堂 · 清雍正年间"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批国保单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    },
+    {
+      "title": "保定市政府：直隶总督署布局与用途",
+      "url": "https://www.baoding.gov.cn/content-772-53464.html"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0aff7-d13c-7c50-8b2b-f51470623609/exec-4252f5a5-1574-4b11-aa63-ebca37b0d929.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "24d87a38d523bbbd870a5a5a9db9503746a710c6c1eb1b9ac1aa7ac527e4cf1b",
+    "seeds": []
+  },
+  "site_recommendation": {
+    "id": "hb_zhili",
+    "name": "直隶总督署",
+    "short": "总督署",
+    "sub": "大堂 · 五间官署正堂",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清雍正年间现存主体",
+    "year": 1730,
+    "yearLabel": "清雍正年间",
+    "yearApprox": true,
+    "yearNote": "河北文物局将现存主要建筑定为雍正年间（1723—1735）；1730仅作该范围的排序点，不称为大堂确切竣工年。",
+    "place": "河北保定 · 莲池区",
+    "placeKey": "hb_baoding",
+    "types": [
+      "hall"
+    ],
+    "lede": "灰瓦、白墙与深色廊柱之间，官署大堂保持着克制的尺度。总督在这里处理礼仪与重大政务，院落秩序比装饰更醒目。",
+    "facts": [
+      "所绘为中轴线上的大堂，前廊与五间室内正堂组成完整立面。",
+      "总督署历经明清重修增建，现存主要建筑为清雍正年间遗存。",
+      "大堂承担重要政务礼仪活动，与州县衙署的审案大堂用途有别。"
+    ],
+    "legacyNames": [
+      "保定直隶总督署",
+      "直隶省衙"
+    ],
+    "caption": [
+      "直隶总督署 · 大堂",
+      "五间正堂 · 清雍正年间"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "preview_check": {
+    "observed_at": "2026-09-17T23:46:27.711414+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "保存后查看，未由 AI 作视觉通过或淘汰决定。"
+  },
+  "sources": [
+    {
+      "file": "assets/references/hb_zhili-photo.jpg",
+      "page": "https://commons.wikimedia.org/wiki/File:%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2019-10-25 12:14:05",
+      "sha256": "cda6bbcf6d977c5a8f4a7b406975c23c98613a3ceb8bcfb2ef32ece706512f84",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BF%9D%E5%AE%9A%E7%9B%B4%E9%9A%B6%E6%80%BB%E7%9D%A3%E7%BD%B2%E5%A4%A7%E5%A0%822019.jpg"
+    }
+  ]
+}

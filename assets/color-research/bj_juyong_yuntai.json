@@ -1,0 +1,183 @@
+{
+  "id": "bj_juyong_yuntai",
+  "name": "北京居庸关云台",
+  "subject": "北京居庸关云台 · 元代过街塔基南面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/bj_juyong_yuntai.png",
+    "assets/references/bj_juyong_yuntai-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSubject: Juyongguan Yuntai, present surviving marble Cloud Platform. Preserve Image1 EXACT low trapezoidal silhouette, empty top balustrade, semihexagonal inner doorway with flat crown and clipped shoulders, curved carved outer frame and passage wall outlines. Object is weathered white/light cool GREY MARBLE, occasional pale neutral grey-beige surface variation and restrained cool grey carved relief shadows. Not gold, brick red, uniformly orange sandstone or polychrome sculpture. Keep actual carved inner vault and sidewalls light grey entity, but the central EMPTY PASSAGE through to outside is pure white #FFFFFF all the way to its open bottom. Top balustrade pierced gaps are pure white air, not grey stone panels. Background perfectly pure white, no floor or distant scene through doorway. No extra buildings or towers, no letters in inscriptions. Preserve complete landscape1536x1024 scale and margins.",
+  "material_observations": [
+    "台身与石栏为浅灰白汉白玉，浮雕阴面有克制灰米色差。",
+    "券洞内部石面是实体，中央贯通空洞和栏板镂空为透空。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/bj_juyong_yuntai-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yuntai_south_side_(2013).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/Yuntai_south_side_%282013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-12-11 02:42:09"
+    },
+    {
+      "file": "assets/references/bj_juyong_yuntai-detail.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yuntai_south_side_arch_(2013).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Yuntai_south_side_arch_%282013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "BabelStone",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-12-11 02:21:01"
+    }
+  ],
+  "original_research": "assets/research/bj_juyong_yuntai.json",
+  "output": "assets/colored/bj_juyong_yuntai.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-299cc944-03b0-46e2-a91b-78a74766600a.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0f5c98b51165c9c01b782ce7a596e0d1566a82cac21b1f38cfb86d19b25db33e",
+    "seeds": [
+      [
+        177,
+        237
+      ],
+      [
+        261,
+        239
+      ],
+      [
+        295,
+        238
+      ],
+      [
+        351,
+        238
+      ],
+      [
+        442,
+        239
+      ],
+      [
+        530,
+        240
+      ],
+      [
+        561,
+        240
+      ],
+      [
+        614,
+        240
+      ],
+      [
+        698,
+        239
+      ],
+      [
+        812,
+        240
+      ],
+      [
+        944,
+        237
+      ],
+      [
+        1027,
+        238
+      ],
+      [
+        1057,
+        238
+      ],
+      [
+        1111,
+        239
+      ],
+      [
+        1196,
+        239
+      ],
+      [
+        1287,
+        239
+      ],
+      [
+        1322,
+        240
+      ],
+      [
+        651,
+        240
+      ],
+      [
+        863,
+        237
+      ],
+      [
+        179,
+        242
+      ],
+      [
+        207,
+        242
+      ],
+      [
+        728,
+        242
+      ],
+      [
+        785,
+        242
+      ],
+      [
+        292,
+        242
+      ],
+      [
+        382,
+        242
+      ],
+      [
+        891,
+        242
+      ],
+      [
+        948,
+        242
+      ],
+      [
+        971,
+        242
+      ],
+      [
+        1028,
+        242
+      ],
+      [
+        1113,
+        242
+      ],
+      [
+        1143,
+        242
+      ]
+    ]
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "收分空台、顶栏与半六角通道保持，无复原塔殿。",
+      "浅灰米石材与雕刻暗部保留实体；主通道与实际栏板镂空在暗底均呈透空。",
+      "原件、暗底透明副本均目检，白底合格、主体完整无文字，内部RGB保持。"
+    ],
+    "limitations": "浮雕与砌缝简化，非测绘或色彩校准；侧边留白较少但未裁切。"
+  },
+  "completed_at": "2026-09-16 11:34:52 UTC"
+}
