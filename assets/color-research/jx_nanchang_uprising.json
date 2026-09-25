@@ -1,0 +1,50 @@
+{
+  "id": "jx_nanchang_uprising",
+  "name": "原江西大旅社旧楼外立面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jx_nanchang_uprising.png",
+    "assets/references/jx_nanchang_uprising-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate to color; preserve its silhouette, features, layout and every contour. Image 2 is a documentary photo of the exact monument for material colors. Final image is the project's matte mineral-color illustration style sample ONLY; its black background is NOT wanted. Primary request: color image 1 faithfully as an elegant museum architectural illustration. Materials and colors: Cool gray rendered masonry, muted red-brown wood window frames, shadowed gray balcony recesses and pale stone balustrades. Keep whole building; no bright propaganda red. Thin charcoal outlines remain visible, restrained flat pigment planes, light natural texture only inside the solid monument; no dramatic lighting, no cast shadow. Composition: retain image 1 framing and aspect ratio. Entire outside background and truly open holes must be flat opaque PURE WHITE #FFFFFF, absolutely no black ground, gray haze, gradient, paper texture, glow, checkerboard or transparency. No people, labels, readable inscriptions, added buildings or landscape. This is a colorization, do not redesign the object.",
+  "material_observations": "灰色水泥外墙、红褐色窗框、灰色栏杆",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Monument%20of%20Nanchang%20Uprising.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monument%20of%20Nanchang%20Uprising.jpg?width=1600",
+      "author": "Marchrius",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jx_nanchang_uprising-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "南昌市政府：首批国保包含总指挥部旧址",
+      "url": "https://www.nc.gov.cn/ncszf/rwfg/202208/ae5ef257ee2049e8842d2b2e7b0db2c7.shtml"
+    }
+  ],
+  "output": "assets/colored/jx_nanchang_uprising.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-de6890f9-588e-4745-97c4-3310749a09ce.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6d36aca7c32ebe408bfcf852366fc5dde060dd2fd9b8d2263bdf44bdf4d25601",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张查看主体、白底与材质色；等待用户人眼验收。"
+    }
+  }
+}

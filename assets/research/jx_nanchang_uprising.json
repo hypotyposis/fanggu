@@ -1,0 +1,61 @@
+{
+  "id": "jx_nanchang_uprising",
+  "subject": "原江西大旅社旧楼外立面",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Monument%20of%20Nanchang%20Uprising.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monument%20of%20Nanchang%20Uprising.jpg?width=1600",
+  "author": "Marchrius",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jx_nanchang_uprising-photo.jpg"
+  ],
+  "source_note": "原江西大旅社现状照片；仅绘旧楼，省略现代纪念设施。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Input images: Image 1 is a documentary photograph of this exact extant monument; final image is ONLY the project's black line drawing style sample. Primary request: Draw the actual early twentieth-century former Jiangxi Grand Hotel in Nanchang, the August 1 Uprising headquarters, from the documentary photograph. Gray four-story masonry building, long repeating arched window bays, continuous narrow balustrade balconies, distinctive corner mass and central ground-level entrance. Show the entire exterior as a simple three-quarter architectural view. Do not draw a modern museum block or monument; no people, vehicles, trees, or readable signs. Style: accurate sparse museum architectural ink drawing, fine neutral charcoal BLACK contour strokes, modest detail, no gray shaded masses. Composition: one complete selected subject centered in a landscape 4:3 canvas with wide clear margins. Backdrop: flat opaque PURE WHITE #FFFFFF, including truly open gaps; no shadow, gradient, paper texture, wash, glow, checkerboard or transparency. No legible inscriptions or labels.",
+  "generated_file": "assets/generated/jx_nanchang_uprising.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-41325818-34e0-4d6f-b562-b6c22f2425a9.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "原江西大旅社旧楼外立面 · 线稿",
+    "现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "25076ab556f9d701c7ad3845e28d30a69f1a0fec15ad15c37b33f2120d7cd4e6",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Monument%20of%20Nanchang%20Uprising.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Monument%20of%20Nanchang%20Uprising.jpg?width=1600",
+      "author": "Marchrius",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jx_nanchang_uprising-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "南昌市政府：首批国保包含总指挥部旧址",
+      "url": "https://www.nc.gov.cn/ncszf/rwfg/202208/ae5ef257ee2049e8842d2b2e7b0db2c7.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看实拍与白底线稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "原江西大旅社现状照片；仅绘旧楼，省略现代纪念设施。"
+  },
+  "visual_review_status": "pending_user"
+}

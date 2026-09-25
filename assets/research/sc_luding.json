@@ -1,0 +1,61 @@
+{
+  "id": "sc_luding",
+  "subject": "泸定桥铁索桥身与两岸桥台",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg?width=1600",
+  "author": "Huangdan2060",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_luding-photo.jpg"
+  ],
+  "source_note": "参考照片显示桥体与河岸；图版两端桥台建筑为简化意写，右端局部接近画幅边缘，待用户审阅。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Input images: Image 1 is a documentary photograph of this exact extant monument; final image is ONLY the project's black line drawing style sample. Primary request: Draw the surviving Luding iron-chain bridge across the Dadu River. The documentary photo gives the real single narrow suspension span, chain rails and end masonry abutments. Show the full chain bridge from a slight side angle on pure white with the paired old end gates simplified; omit modern buildings, road bridge, tourists, water and mountains. Do not turn it into an arched stone bridge or wooden covered bridge. Style: accurate sparse museum architectural ink drawing, fine neutral charcoal BLACK contour strokes, modest detail, no gray shaded masses. Composition: one complete selected subject centered in a landscape 4:3 canvas with wide clear margins. Backdrop: flat opaque PURE WHITE #FFFFFF, including truly open gaps; no shadow, gradient, paper texture, wash, glow, checkerboard or transparency. No legible inscriptions or labels.",
+  "generated_file": "assets/generated/sc_luding.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-820a9398-6fd9-4c0f-a8e3-e0827ddd06a1.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "泸定桥铁索桥身与两岸桥台 · 线稿",
+    "现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b0d4bf75d66f418f244137deb73f6b2e4bb7a3bb5fe62d023533806e5d880292",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg?width=1600",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/sc_luding-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "泸定县政府：泸定桥",
+      "url": "https://www.luding.gov.cn/gzldx/c101737/201705/e860e300f30e4f459e5b325c476c8050.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看实拍与白底线稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "参考照片显示桥体与河岸；图版两端桥台建筑为简化意写，右端局部接近画幅边缘，待用户审阅。"
+  },
+  "visual_review_status": "pending_user"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "zj_yuefei",
+  "subject": "岳飞墓墓冢、墓碑与祭台",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg?width=1600",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_yuefei-photo.jpg"
+  ],
+  "source_note": "图版不复制可读碑文；1163年为迁葬年，现存石件历经修葺。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Input images: Image 1 is a documentary photograph of this exact extant monument; final image is ONLY the project's black line drawing style sample. Primary request: Draw the present Yue Fei grave at Hangzhou, not the whole temple: single green earthen grave mound, a tall stone stele in front, low stone perimeter and a simple incense altar, as photographed. Keep complete grave architecture centered in a calm architectural line plate. Do not invent readable Chinese inscription; mark tablet as plain stone with faint nonlegible abstract cuts. Omit the adjacent Yue Yun tomb, visitors, trees and modern landscaping. Style: accurate sparse museum architectural ink drawing, fine neutral charcoal BLACK contour strokes, modest detail, no gray shaded masses. Composition: one complete selected subject centered in a landscape 4:3 canvas with wide clear margins. Backdrop: flat opaque PURE WHITE #FFFFFF, including truly open gaps; no shadow, gradient, paper texture, wash, glow, checkerboard or transparency. No legible inscriptions or labels.",
+  "generated_file": "assets/generated/zj_yuefei.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-34851b8b-be4c-4a5a-a372-0d7052e07033.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "岳飞墓墓冢、墓碑与祭台 · 线稿",
+    "现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c989b0333cdefef70ef228ba9c38d0b324ed877f7e4292f02197cb4d267bb9d6",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg?width=1600",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/zj_yuefei-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "杭州市政府：岳飞迁葬现址",
+      "url": "https://www.ehangzhou.gov.cn/2020-09/03/c_271146.htm"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看实拍与白底线稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "图版不复制可读碑文；1163年为迁葬年，现存石件历经修葺。"
+  },
+  "visual_review_status": "pending_user"
+}

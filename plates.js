@@ -3679,6 +3679,102 @@ const PLATES = {
       "普贤铜像 · 线稿",
       "约980 · 现状意写"
     ]
+  },
+  "qh_taer": {
+    "src": "assets/plates/qh_taer.png",
+    "alt": "塔尔寺大金瓦殿现状 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "塔尔寺大金瓦殿现状 · 线稿",
+      "现状意写"
+    ]
+  },
+  "jx_nanchang_uprising": {
+    "src": "assets/plates/jx_nanchang_uprising.png",
+    "alt": "原江西大旅社旧楼外立面 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "原江西大旅社旧楼外立面 · 线稿",
+      "现状意写"
+    ]
+  },
+  "xj_jiaohe": {
+    "src": "assets/plates/xj_jiaohe.png",
+    "alt": "交河故城大佛寺现存生土遗址 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#b79b78",
+    "tint": false,
+    "caption": [
+      "交河故城大佛寺现存生土遗址 · 线稿",
+      "现状意写"
+    ]
+  },
+  "xz_potala": {
+    "src": "assets/plates/xz_potala.png",
+    "alt": "布达拉宫现状西南侧白宫与红宫 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "布达拉宫现状西南侧白宫与红宫 · 线稿",
+      "现状意写"
+    ]
+  },
+  "js_zhuozheng": {
+    "src": "assets/plates/js_zhuozheng.png",
+    "alt": "拙政园远香堂现状 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "拙政园远香堂现状 · 线稿",
+      "现状意写"
+    ]
+  },
+  "sc_luding": {
+    "src": "assets/plates/sc_luding.png",
+    "alt": "泸定桥铁索桥身与两岸桥台 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "泸定桥铁索桥身与两岸桥台 · 线稿",
+      "现状意写"
+    ]
+  },
+  "bj_guozijian": {
+    "src": "assets/plates/bj_guozijian.png",
+    "alt": "国子监辟雍殿与环水石桥 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "国子监辟雍殿与环水石桥 · 线稿",
+      "现状意写"
+    ]
+  },
+  "zj_yuefei": {
+    "src": "assets/plates/zj_yuefei.png",
+    "alt": "岳飞墓墓冢、墓碑与祭台 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "岳飞墓墓冢、墓碑与祭台 · 线稿",
+      "现状意写"
+    ]
   }
 };
 

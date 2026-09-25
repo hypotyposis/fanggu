@@ -364,7 +364,7 @@ struct TimelineView: View {
     private func laneIndex(_ site: Monument) -> Int {
         if site.country == "JP" { return 2 }
         if site.timelineLane == "north" { return 0 }
-        return ["han", "bei", "beiqi", "qiuci", "sui", "liao", "xixia", "yuan", "ming", "modern"].contains(site.dynasty) ? 0 : 1
+        return ["han", "bei", "beiqi", "qiuci", "xiyu", "sui", "liao", "xixia", "yuan", "ming", "modern"].contains(site.dynasty) ? 0 : 1
     }
     private func trackY(_ site: Monument) -> CGFloat { CGFloat(57 + laneIndex(site) * 63) }
     private func timelineX(_ year: Int) -> CGFloat {

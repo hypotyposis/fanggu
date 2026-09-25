@@ -1,0 +1,61 @@
+{
+  "id": "js_zhuozheng",
+  "subject": "拙政园远香堂现状",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG?width=1600",
+  "author": "そらみみ (Soramimi)",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_zhuozheng-photo.jpg"
+  ],
+  "source_note": "照片仅显示远香堂近景；图版不绘未在参考照片中可核对的全园池岸。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Input images: Image 1 is a documentary photograph of this exact extant monument; final image is ONLY the project's black line drawing style sample. Primary request: Draw the extant Yuanxiang Hall of Suzhou's Humble Administrator's Garden as photographed: low broad Chinese garden hall with long dark tiled roof, gracefully upswept eaves, open timber colonnade, delicate lattice windows, shallow stone platform and a few abstract garden rocks. Remove visitors, umbrellas, trees obscuring the structure and signs. Preserve the hall's very low horizontal proportion; this is a hall detail, not an invented panorama of the full garden. Style: accurate sparse museum architectural ink drawing, fine neutral charcoal BLACK contour strokes, modest detail, no gray shaded masses. Composition: one complete selected subject centered in a landscape 4:3 canvas with wide clear margins. Backdrop: flat opaque PURE WHITE #FFFFFF, including truly open gaps; no shadow, gradient, paper texture, wash, glow, checkerboard or transparency. No legible inscriptions or labels.",
+  "generated_file": "assets/generated/js_zhuozheng.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-4d97d8d0-09e8-44f3-b050-bd6f7cdb6044.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "拙政园远香堂现状 · 线稿",
+    "现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "219ddf194567accc73554347b92d195e85b9c1005a63ee34f25864093186fffb",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG?width=1600",
+      "author": "そらみみ (Soramimi)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/js_zhuozheng-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "苏州市发展改革委：拙政园现存建筑多为清代重建",
+      "url": "https://fg.suzhou.gov.cn/szfgw/szyl/jump_article.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看实拍与白底线稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "照片仅显示远香堂近景；图版不绘未在参考照片中可核对的全园池岸。"
+  },
+  "visual_review_status": "pending_user"
+}

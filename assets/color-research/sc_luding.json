@@ -1,0 +1,50 @@
+{
+  "id": "sc_luding",
+  "name": "泸定桥铁索桥身与两岸桥台",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sc_luding.png",
+    "assets/references/sc_luding-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate to color; preserve its silhouette, features, layout and every contour. Image 2 is a documentary photo of the exact monument for material colors. Final image is the project's matte mineral-color illustration style sample ONLY; its black background is NOT wanted. Primary request: color image 1 faithfully as an elegant museum architectural illustration. Materials and colors: Dark weathered iron suspension chains, warm gray and charcoal plank walkway, pale tan stone abutments, small muted red and gray terminal gate roofs. White open space beneath the span, no river painted in. Thin charcoal outlines remain visible, restrained flat pigment planes, light natural texture only inside the solid monument; no dramatic lighting, no cast shadow. Composition: retain image 1 framing and aspect ratio. Entire outside background and truly open holes must be flat opaque PURE WHITE #FFFFFF, absolutely no black ground, gray haze, gradient, paper texture, glow, checkerboard or transparency. No people, labels, readable inscriptions, added buildings or landscape. This is a colorization, do not redesign the object.",
+  "material_observations": "深灰铁链、木色桥面、浅灰石台",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg?width=1600",
+      "author": "Huangdan2060",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/sc_luding-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "泸定县政府：泸定桥",
+      "url": "https://www.luding.gov.cn/gzldx/c101737/201705/e860e300f30e4f459e5b325c476c8050.shtml"
+    }
+  ],
+  "output": "assets/colored/sc_luding.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-0c39d95b-5bfb-46c8-989d-edff5de05014.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "44367992402dc735afbec9eec72a29b834f387c5d8d197e5f9da5f9a7534ed70",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张查看主体、白底与材质色；等待用户人眼验收。"
+    }
+  }
+}

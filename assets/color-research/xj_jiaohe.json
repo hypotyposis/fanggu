@@ -1,0 +1,59 @@
+{
+  "id": "xj_jiaohe",
+  "name": "交河故城大佛寺现存生土遗址",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xj_jiaohe.png",
+    "assets/references/xj_jiaohe-photo-2.jpg",
+    "assets/references/xj_jiaohe-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate to color; preserve its silhouette, features, layout and every contour. Image 2 is a documentary photo of the exact monument for material colors. Final image is the project's matte mineral-color illustration style sample ONLY; its black background is NOT wanted. Primary request: color image 1 faithfully as an elegant museum architectural illustration. Materials and colors: Weathered ochre and sandy buff compacted earthen walls, subtle gray-brown erosion edges and steps. This is a ruin: preserve every broken wall and the central niche, no roof or invented reconstruction. Thin charcoal outlines remain visible, restrained flat pigment planes, light natural texture only inside the solid monument; no dramatic lighting, no cast shadow. Composition: retain image 1 framing and aspect ratio. Entire outside background and truly open holes must be flat opaque PURE WHITE #FFFFFF, absolutely no black ground, gray haze, gradient, paper texture, glow, checkerboard or transparency. No people, labels, readable inscriptions, added buildings or landscape. This is a colorization, do not redesign the object.",
+  "material_observations": "暖砂色生土与风化裂隙",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg?width=1600",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/xj_jiaohe-photo-2.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jiaohe%20City(Yarkhoto)%2CTurpan%2CXinjiang%20HY5.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jiaohe%20City(Yarkhoto)%2CTurpan%2CXinjiang%20HY5.jpg?width=1600",
+      "author": "Hiroooooo",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reference_file": "assets/references/xj_jiaohe-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "新疆维吾尔自治区政府：交河故城",
+      "url": "https://www.xinjiang.gov.cn/xinjiang/tsxj/201111/47b137e12154437891e4f505ace1061d.shtml"
+    }
+  ],
+  "output": "assets/colored/xj_jiaohe.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-3b17fab6-1eef-422e-b96e-23759886ba78.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e718aa8894ddda2247cabe567bbd8723618514b0a09b5689098aca77cc481776",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张查看主体、白底与材质色；等待用户人眼验收。"
+    }
+  }
+}

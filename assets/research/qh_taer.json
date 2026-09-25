@@ -1,0 +1,70 @@
+{
+  "id": "qh_taer",
+  "subject": "塔尔寺大金瓦殿现状",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Ta'er%20Monastery%20Xining%20Qinghai%20China%20%E9%9D%92%E6%B5%B7%20%E8%A5%BF%E5%AE%81%20%E5%A1%94%E5%B0%94%E5%AF%BA%20%E9%87%91%E6%AE%BF%20-%20panoramio.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ta'er%20Monastery%20Xining%20Qinghai%20China%20%E9%9D%92%E6%B5%B7%20%E8%A5%BF%E5%AE%81%20%E5%A1%94%E5%B0%94%E5%AF%BA%20%E9%87%91%E6%AE%BF%20-%20panoramio.jpg?width=1600",
+  "author": "Hiroki Ogawa",
+  "license": "CC BY 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/qh_taer-photo.jpg",
+    "assets/references/qh_taer-photo-2.jpg"
+  ],
+  "source_note": "远景确认金顶与院落位置，近景确认檐下彩绘。围墙及邻院仅作简化；不据1379年断言现存殿宇年代。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a distant documentary photograph of Ta'er/Kumbum Monastery Great Golden Roof Hall (大金瓦殿) in Qinghai. Image 2 is a close photograph of the actual front porch and ornament. Image 3 is ONLY the project's delicate black line drawing style sample. Draw ONE complete current Great Golden Roof Hall, not the surrounding monastery: front-left slight elevated architectural view, characteristic bright roof silhouette translated into contours, low dark-red-and-white Tibetan wall, richly carved front columns and eaves, layered plan. Use the photographed building as the structural reference; do not invent a pagoda, golden stupa, giant gate, or modern buildings. Fine sparse neutral charcoal BLACK ink contours, clean white interiors, modest architectural detail, no large filled black masses. Center the whole subject with wide margins in a landscape composition. Entire backdrop and every truly open gap must be flat opaque PURE WHITE #FFFFFF; no cast shadow, gray wash, gradient, paper texture, glow, checkerboard or transparency. No people or signs, no legible inscriptions.",
+  "generated_file": "assets/generated/qh_taer.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-12a1601f-0560-4de7-bca3-00fd85452643.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "塔尔寺大金瓦殿现状 · 线稿",
+    "现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "20f8592193119f16aeb58bdda4b75928721301bd7433be34b56b7fa695891ae2",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ta'er%20Monastery%20Xining%20Qinghai%20China%20%E9%9D%92%E6%B5%B7%20%E8%A5%BF%E5%AE%81%20%E5%A1%94%E5%B0%94%E5%AF%BA%20%E9%87%91%E6%AE%BF%20-%20panoramio.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ta'er%20Monastery%20Xining%20Qinghai%20China%20%E9%9D%92%E6%B5%B7%20%E8%A5%BF%E5%AE%81%20%E5%A1%94%E5%B0%94%E5%AF%BA%20%E9%87%91%E6%AE%BF%20-%20panoramio.jpg?width=1600",
+      "author": "Hiroki Ogawa",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "reference_file": "assets/references/qh_taer-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%87%91%E7%93%A6%E6%AE%BF%20-%20panoramio.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E5%A4%A7%E9%87%91%E7%93%A6%E6%AE%BF%20-%20panoramio.jpg?width=1600",
+      "author": "ping lin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reference_file": "assets/references/qh_taer-photo-2.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "西宁市湟中区政府：塔尔寺与大金瓦殿",
+      "url": "https://huangzhong.gov.cn/html/yl/5837.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看实拍与白底线稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "远景确认金顶与院落位置，近景确认檐下彩绘。围墙及邻院仅作简化；不据1379年断言现存殿宇年代。"
+  },
+  "visual_review_status": "pending_user"
+}

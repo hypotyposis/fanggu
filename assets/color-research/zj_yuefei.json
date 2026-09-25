@@ -1,0 +1,50 @@
+{
+  "id": "zj_yuefei",
+  "name": "岳飞墓墓冢、墓碑与祭台",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/zj_yuefei.png",
+    "assets/references/zj_yuefei-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate to color; preserve its silhouette, features, layout and every contour. Image 2 is a documentary photo of the exact monument for material colors. Final image is the project's matte mineral-color illustration style sample ONLY; its black background is NOT wanted. Primary request: color image 1 faithfully as an elegant museum architectural illustration. Materials and colors: Soft grass green grave mound, aged pale gray limestone tablet, altar and retaining wall, muted moss and stone weathering. Tablet remains uninscribed/abstract; do not invent readable characters. Thin charcoal outlines remain visible, restrained flat pigment planes, light natural texture only inside the solid monument; no dramatic lighting, no cast shadow. Composition: retain image 1 framing and aspect ratio. Entire outside background and truly open holes must be flat opaque PURE WHITE #FFFFFF, absolutely no black ground, gray haze, gradient, paper texture, glow, checkerboard or transparency. No people, labels, readable inscriptions, added buildings or landscape. This is a colorization, do not redesign the object.",
+  "material_observations": "绿草墓冢、灰白石碑和祭台",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg?width=1600",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/zj_yuefei-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "杭州市政府：岳飞迁葬现址",
+      "url": "https://www.ehangzhou.gov.cn/2020-09/03/c_271146.htm"
+    }
+  ],
+  "output": "assets/colored/zj_yuefei.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-2d2b5954-aae1-4f5f-9b44-f7c18f391093.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0644fbca94e78b8db22bc5088495d790edd579336dedc59918b9d8cc4533992c",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张查看主体、白底与材质色；等待用户人眼验收。"
+    }
+  }
+}

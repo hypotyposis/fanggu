@@ -5,6 +5,7 @@ const DYN = {
   goguryeo: { glyph: '高句丽', name: '高句丽', acc: 'var(--goguryeo)' },
   bei: { glyph: '北魏', name: '北魏', acc: 'var(--plum)' },
   qiuci: { glyph: '龟兹', name: '龟兹', acc: 'var(--qiuci)', start: 300, end: 900 },
+  xiyu: { glyph: '西域', name: '西域古城', acc: 'var(--xiyu)', start: -200, end: 1400 },
   tubo: { glyph: '吐蕃', name: '吐蕃', acc: 'var(--tubo)', start: 633, end: 842 },
   nan: { glyph: '南朝', name: '南朝', acc: 'var(--clay)' },
   beiqi: { glyph: '北齐', name: '北齐', acc: 'var(--rose)' },
@@ -9283,6 +9284,7 @@ const CHAPTERS = [
   { key: 'goguryeo', years: '约5世纪 · 集安现存遗迹', blurb: '巨大的石块逐级收分，护坟石抵住方坛底层。将军坟属于高句丽石室墓遗存，墓主认定与现存形制分开记录；这里的年代说明所收古迹，不借中原朝代替换其所属时期。' },
   { key: 'bei', years: '386 — 534 · 北魏', blurb: '佛塔在中原生根。嵩岳寺塔以十二边平面、层层密檐和收分塔身，把早期佛教建筑的独特形制留在嵩山南麓。' },
   { key: 'qiuci', years: '约3 — 9世纪 · 龟兹', blurb: '克孜尔与库木吐喇的洞窟沿西域河谷展开；图版采用现存窟口局部，未给未编号洞窟臆定精确年代。' },
+  { key: 'xiyu', years: '约公元前2世纪 — 14世纪 · 西域古城', blurb: '交河故城叠合车师、高昌与唐代等多个阶段；图版记录大佛寺现存生土遗址，不把约略年表位置当作单体建筑的建造年份。' },
   { key: 'nan', years: '420 — 589 · 南朝', blurb: '石城山的岩壁化为一尊安坐的大佛。齐梁僧人接续开凿，新昌石弥勒以宽阔双膝与沉静衣纹，留下江南早期大型造像的轮廓。' },
   { key: 'beiqi', years: '550 — 577 · 北齐', blurb: '鼓山石壁间，佛像衣纹渐趋简洁，身躯饱满而安静。响堂山留下北齐造像、刻经与石窟建筑的片段，也见证了这一时期佛教艺术的变化。' },
   { key: 'sui', years: '581 — 618 · 隋', blurb: '洨河上的石桥与崖壁间的石窟，留下隋代的两种尺度。赵州桥以大拱和四座腹拱跨水，灵泉寺的大住圣窟则把造像与刻铭留在山中。' },
@@ -10750,4 +10752,74 @@ PLACES.push(...[
     "lat": 29.6,
     "lon": 103.48
   }
+]);
+
+// 首批国保八处增补；所绘主体与史料见 assets/research/first-batch-eight-20260925-plan.md。
+SITES.push(...[
+  {
+    id: 'qh_taer', name: '塔尔寺', short: '塔尔寺', sub: '大金瓦殿 · 现状', dyn: 'ming', tag: '明 · 清', era: '明代始建 · 清代扩建', year: 1700, yearLabel: '清代', yearApprox: true,
+    yearNote: '1379是寺院初建说，1700仅为清代现存大金瓦殿的约略年表位置，不是殿宇确切建年。', place: '青海西宁 · 湟中', placeKey: 'qh_huangzhong', types: ['hall'], initialStatus: 'unvisited',
+    lede: '金色屋顶从塔尔寺的层层院落中升起。图版聚焦大金瓦殿现状，不把寺院初创年当作这座殿的建成年。',
+    facts: ['塔尔寺为藏传佛教格鲁派重要寺院，大金瓦殿是其核心殿宇之一。', '现状建筑经过清代扩建和后世维修；图版记录金顶、围墙和檐下装饰的可见轮廓。'],
+    caption: ['大金瓦殿 · 现状线稿', '明代始建 · 清代增修'], legacyNames: ['塔尔寺大金瓦殿', '大金瓦寺'],
+  },
+  {
+    id: 'jx_nanchang_uprising', name: '南昌起义总指挥部旧址', short: '江西大旅社', sub: '江西大旅社旧楼外立面', dyn: 'modern', tag: '近现代', era: '1924年建成 · 1927年起义', year: 1924,
+    place: '江西南昌 · 中山路', placeKey: 'jx_nanchang', types: ['residence'], initialStatus: 'unvisited',
+    lede: '灰色的江西大旅社旧楼曾在1927年成为南昌起义总指挥部。连续的券窗和阳台保存着当年的城市建筑轮廓。',
+    facts: ['江西大旅社1924年建成，1927年南昌起义期间作为总指挥部使用。', '图版绘旧楼外立面，不绘另建的纪念馆陈列建筑，也不混同贺龙指挥部等其他旧址。'],
+    caption: ['江西大旅社 · 旧楼外立面', '1924年建成 · 1927年起义'], legacyNames: ['八一起义总指挥部旧址', '江西大旅社'], tall: true,
+  },
+  {
+    id: 'xj_jiaohe', name: '交河故城', short: '交河故城', sub: '大佛寺现存生土遗址', dyn: 'xiyu', tag: '西域', era: '车师至唐等多期遗址', year: 700, yearLabel: '多期', yearApprox: true,
+    yearNote: '交河故城长期使用，遗址包含多个阶段；700仅为年表约略定位，不能据此断定图中大佛寺残墙的营建年。', place: '新疆吐鲁番 · 交河', placeKey: 'xj_jiaohe', types: ['ruins'], initialStatus: 'unvisited',
+    lede: '土崖上的街巷与佛寺化作一道道风化的生土墙。图版选择大佛寺现存残墙，不复原已经消失的屋顶和塑像。',
+    facts: ['交河故城位于吐鲁番西侧河流夹持的台地，城址跨越车师、高昌及唐代等阶段。', '大佛寺遗址保留夯土残墙和佛龛轮廓；图版为现状意写，不能作为遗址实测图或单体精确断代。'],
+    caption: ['交河故城 · 大佛寺遗址', '多期城址 · 现状残墙'], legacyNames: ['交河古城', '雅尔湖故城'],
+  },
+  {
+    id: 'xz_potala', name: '布达拉宫', short: '布达拉宫', sub: '现状西南侧白宫与红宫', dyn: 'ming', tag: '清', era: '白宫1648年 · 红宫1694年', year: 1694,
+    yearNote: '年表采用红宫竣工的1694年；图版绘今日所见多期白宫、红宫及山体台阶，不是七世纪红山宫复原。', place: '西藏拉萨 · 红山', placeKey: 'xz_potala', types: ['palace'], initialStatus: 'unvisited',
+    lede: '白宫沿山坡层层升高，红宫立在中央。西南侧的现状轮廓记录的是十七世纪重建后不断维修的宫殿群。',
+    facts: ['拉萨市政府记白宫于1648年建成，红宫1694年竣工。', '图版按现状西南侧照片绘白宫、红宫及山体阶梯；不以松赞干布时期的初创年代替代所见建筑年代。'],
+    caption: ['布达拉宫 · 西南侧现状', '白宫1648 · 红宫1694'], legacyNames: ['布达拉宫红宫', '布达拉宫白宫'],
+  },
+  {
+    id: 'js_zhuozheng', name: '拙政园', short: '拙政园', sub: '远香堂现状', dyn: 'ming', tag: '明 · 清', era: '1509年建园 · 现存建筑多为清代', year: 1860, yearLabel: '清代', yearApprox: true,
+    yearNote: '1509是建园年代，现存建筑多数在清咸丰十年后重建；1860只为清代园林现状的约略排序，不是远香堂确切建年。', place: '江苏苏州 · 东北街', placeKey: 'js_suzhou', types: ['garden', 'hall'], initialStatus: 'unvisited',
+    lede: '远香堂是拙政园中部的主要厅堂。轻巧的木柱和开敞长窗让建筑与水庭相接，图版选厅堂现状。',
+    facts: ['拙政园始建于明正德四年（1509）；苏州官方资料记现存建筑大多在1860年后重建。', '远香堂面向中部水池，图版聚焦厅堂本体与石台，不把整个园林画成一座建筑。'],
+    caption: ['远香堂 · 现状线稿', '明代建园 · 清代建筑'], legacyNames: ['拙政园远香堂'],
+  },
+  {
+    id: 'sc_luding', name: '泸定桥', short: '泸定桥', sub: '铁索桥身与两岸桥台', dyn: 'ming', tag: '清', era: '康熙年间建桥 · 1935年战斗', year: 1706,
+    place: '四川甘孜 · 泸定', placeKey: 'sc_luding', types: ['bridge'], initialStatus: 'unvisited',
+    lede: '铁索在大渡河两岸的石台间悬成一道细线。古桥的交通史与1935年的泸定桥战斗在同一处相遇。',
+    facts: ['清康熙年间修建铁索桥，常见记载为1705年开工、1706年建成。', '图版绘铁索、桥面和两岸桥台，省略现代河岸建筑；1935年的战斗年代不充作桥梁建年。'],
+    caption: ['泸定桥 · 铁索与桥台', '清康熙年间建成'], legacyNames: ['大渡河泸定桥', '泸定铁索桥'],
+  },
+  {
+    id: 'bj_guozijian', name: '国子监', short: '国子监', sub: '辟雍殿与环水石桥', dyn: 'ming', tag: '清', era: '乾隆四十九年建成', year: 1784,
+    place: '北京东城 · 国子监街', placeKey: 'bj_guozijian', types: ['school', 'hall'], initialStatus: 'unvisited',
+    lede: '辟雍立在环水中央，白石桥从岸边通向殿前。图版以清代增建的辟雍为主体，展示北京国子监最鲜明的一组建筑。',
+    facts: ['国子监校址始于元代；辟雍殿由清乾隆时期增建，1784年建成。', '环水、石桥和重檐殿堂一起入图，年表标辟雍而非整个学府的始创年。'],
+    caption: ['国子监 · 辟雍与环水', '清乾隆四十九年 · 1784'], legacyNames: ['北京国子监', '辟雍殿'],
+  },
+  {
+    id: 'zj_yuefei', name: '岳飞墓', short: '岳飞墓', sub: '墓冢、墓碑与祭台', dyn: 'song', tag: '宋', era: '南宋绍兴年间迁葬 · 后世修葺', year: 1163,
+    yearNote: '1163按杭州官方迁葬记载定位；图版画今日所见墓冢、碑与祭台，石构件历经后世修葺，不认作全为南宋原物。', place: '浙江杭州 · 栖霞岭', placeKey: 'zj_yuefei', types: ['tomb'], initialStatus: 'unvisited',
+    lede: '栖霞岭下的墓冢与碑石保存着岳飞的身后记忆。图版聚焦墓前现状，不将整座岳王庙当作墓。',
+    facts: ['杭州官方资料记岳飞平反后于1163年迁葬现址，1221年建祠。', '现状墓碑、祭台及石构历经后世修缮；图版不复制碑文，也不将祭台断为南宋原构。'],
+    caption: ['岳飞墓 · 墓前现状', '1163年迁葬 · 后世修葺'], legacyNames: ['岳王墓', '岳坟'],
+  },
+]);
+PLACES.push(...[
+  { key: 'qh_huangzhong', name: '湟中', prov: '青海', lat: 36.4906, lon: 101.5685, coordinate_note: '塔尔寺附近显示点，非单体测绘坐标。' },
+  { key: 'jx_nanchang', name: '南昌', prov: '江西', lat: 28.675, lon: 115.88, coordinate_note: '南昌市中心显示点，非旧楼测绘坐标。' },
+  { key: 'xj_jiaohe', name: '交河', prov: '新疆', lat: 42.9526, lon: 89.0631, coordinate_note: '交河故城台地显示点，非大佛寺测绘坐标。' },
+  { key: 'xz_potala', name: '拉萨 · 布达拉宫', prov: '西藏', lat: 29.656, lon: 91.118, coordinate_note: '布达拉宫附近显示点，非单体测绘坐标。' },
+  { key: 'js_suzhou', name: '苏州', prov: '江苏', lat: 31.325, lon: 120.628, coordinate_note: '拙政园附近显示点，非远香堂测绘坐标。' },
+  { key: 'sc_luding', name: '泸定', prov: '四川', lat: 29.914, lon: 102.23, coordinate_note: '泸定桥附近显示点，非桥台测绘坐标。' },
+  { key: 'bj_guozijian', name: '北京 · 国子监', prov: '北京', lat: 39.9453, lon: 116.4068, coordinate_note: '辟雍附近显示点，非单体测绘坐标。' },
+  { key: 'zj_yuefei', name: '杭州 · 岳飞墓', prov: '浙江', lat: 30.253, lon: 120.142, coordinate_note: '岳飞墓附近显示点，非单体测绘坐标。' },
 ]);

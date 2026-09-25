@@ -6850,6 +6850,173 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "qh_taer": {
+    "src": "assets/colored-transparent-avif/qh_taer.avif",
+    "originalSrc": "assets/colored/qh_taer.png",
+    "transparentSrc": "assets/colored-transparent/qh_taer.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "塔尔寺大金瓦殿现状 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/qh_taer.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ta'er%20Monastery%20Xining%20Qinghai%20China%20%E9%9D%92%E6%B5%B7%20%E8%A5%BF%E5%AE%81%20%E5%A1%94%E5%B0%94%E5%AF%BA%20%E9%87%91%E6%AE%BF%20-%20panoramio.jpg",
+        "author": "Hiroki Ogawa",
+        "license": "CC BY 3.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E9%87%91%E7%93%A6%E6%AE%BF%20-%20panoramio.jpg",
+        "author": "ping lin",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jx_nanchang_uprising": {
+    "src": "assets/colored-transparent-avif/jx_nanchang_uprising.avif",
+    "originalSrc": "assets/colored/jx_nanchang_uprising.png",
+    "transparentSrc": "assets/colored-transparent/jx_nanchang_uprising.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "原江西大旅社旧楼外立面 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/jx_nanchang_uprising.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Monument%20of%20Nanchang%20Uprising.jpg",
+        "author": "Marchrius",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "xj_jiaohe": {
+    "src": "assets/colored-transparent-avif/xj_jiaohe.avif",
+    "originalSrc": "assets/colored/xj_jiaohe.png",
+    "transparentSrc": "assets/colored-transparent/xj_jiaohe.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "交河故城大佛寺现存生土遗址 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/xj_jiaohe.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg",
+        "author": "HaziiDozen",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Jiaohe%20City(Yarkhoto)%2CTurpan%2CXinjiang%20HY5.jpg",
+        "author": "Hiroooooo",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "xz_potala": {
+    "src": "assets/colored-transparent-avif/xz_potala.avif",
+    "originalSrc": "assets/colored/xz_potala.png",
+    "transparentSrc": "assets/colored-transparent/xz_potala.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "布达拉宫现状西南侧白宫与红宫 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/xz_potala.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Potala1.jpg",
+        "author": "Ondřej Žváček",
+        "license": "CC BY 2.5"
+      }
+    ]
+  },
+  "js_zhuozheng": {
+    "src": "assets/colored-transparent-avif/js_zhuozheng.avif",
+    "originalSrc": "assets/colored/js_zhuozheng.png",
+    "transparentSrc": "assets/colored-transparent/js_zhuozheng.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "拙政园远香堂现状 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/js_zhuozheng.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG",
+        "author": "そらみみ (Soramimi)",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "sc_luding": {
+    "src": "assets/colored-transparent-avif/sc_luding.avif",
+    "originalSrc": "assets/colored/sc_luding.png",
+    "transparentSrc": "assets/colored-transparent/sc_luding.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "泸定桥铁索桥身与两岸桥台 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/sc_luding.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Luding%20Bridge%20over%20the%20Dadu%20River%2C%20in%20Luding%20County%2C%20Sichuan%2C%20China%2C%202018.jpg",
+        "author": "Huangdan2060",
+        "license": "CC0"
+      }
+    ]
+  },
+  "bj_guozijian": {
+    "src": "assets/colored-transparent-avif/bj_guozijian.avif",
+    "originalSrc": "assets/colored/bj_guozijian.png",
+    "transparentSrc": "assets/colored-transparent/bj_guozijian.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "国子监辟雍殿与环水石桥 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/bj_guozijian.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E4%BA%AC%E5%9B%BD%E5%AD%90%E7%9B%91%E8%BE%9F%E9%9B%8D.jpg",
+        "author": "刘灼盛",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Moat%20and%20Lecture%20Hall%20at%20Imperial%20College%2C%20Beijing%2C%20China%20-%20panoramio.jpg",
+        "author": "Aaron Zhu",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "zj_yuefei": {
+    "src": "assets/colored-transparent-avif/zj_yuefei.avif",
+    "originalSrc": "assets/colored/zj_yuefei.png",
+    "transparentSrc": "assets/colored-transparent/zj_yuefei.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "岳飞墓墓冢、墓碑与祭台 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/zj_yuefei.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20100326%20Tombs%20of%20Yue%20Fei%20and%20Yue%20Yun.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

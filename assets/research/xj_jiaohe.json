@@ -1,0 +1,70 @@
+{
+  "id": "xj_jiaohe",
+  "subject": "交河故城大佛寺现存生土遗址",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg?width=1600",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xj_jiaohe-photo-2.jpg",
+    "assets/references/xj_jiaohe-photo.jpg"
+  ],
+  "source_note": "大佛寺现状照片确认残墙、佛龛和台阶；不用相机年代推断建筑年代。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Input images: Image 1 is a documentary photograph of this exact extant monument; Image 2 is a documentary photograph of this exact extant monument; final image is ONLY the project's black line drawing style sample. Primary request: Draw the surviving earthen walls of the great Buddhist temple precinct within the Jiaohe ancient city near Turpan, with central recessed niche, broken low adobe walls and stepped access, as seen in image 1. Image 2 shows the earthen material and ruin context. Render existing ruins only, never reconstruct lost roofs, towers, Buddha figures, or a fantasy city. Keep the edges weathered yet clearly architectural. Style: accurate sparse museum architectural ink drawing, fine neutral charcoal BLACK contour strokes, modest detail, no gray shaded masses. Composition: one complete selected subject centered in a landscape 4:3 canvas with wide clear margins. Backdrop: flat opaque PURE WHITE #FFFFFF, including truly open gaps; no shadow, gradient, paper texture, wash, glow, checkerboard or transparency. No legible inscriptions or labels.",
+  "generated_file": "assets/generated/xj_jiaohe.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-5cb48d04-d4a2-4e1d-9020-0f051ec7e8c1.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "交河故城大佛寺现存生土遗址 · 线稿",
+    "现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "caab76eb9eaf1c9c334117b9259d6932547bc679e084342c3cdc5f5e312115a8",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/%E4%BA%A4%E6%B2%B3%E6%95%85%E5%9F%8E%E5%A4%A7%E4%BD%9B%E5%AF%BA%E5%86%85%E9%83%A8%3B%20Interior%20ofthe%20Largest%20Buddhist%20Temple%20in%20Jiaohe%20City.jpg?width=1600",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/xj_jiaohe-photo-2.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jiaohe%20City(Yarkhoto)%2CTurpan%2CXinjiang%20HY5.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jiaohe%20City(Yarkhoto)%2CTurpan%2CXinjiang%20HY5.jpg?width=1600",
+      "author": "Hiroooooo",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reference_file": "assets/references/xj_jiaohe-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "新疆维吾尔自治区政府：交河故城",
+      "url": "https://www.xinjiang.gov.cn/xinjiang/tsxj/201111/47b137e12154437891e4f505ace1061d.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已逐张查看实拍与白底线稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "大佛寺现状照片确认残墙、佛龛和台阶；不用相机年代推断建筑年代。"
+  },
+  "visual_review_status": "pending_user"
+}

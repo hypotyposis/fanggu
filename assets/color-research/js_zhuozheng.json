@@ -1,0 +1,50 @@
+{
+  "id": "js_zhuozheng",
+  "name": "拙政园远香堂现状",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/js_zhuozheng.png",
+    "assets/references/js_zhuozheng-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate to color; preserve its silhouette, features, layout and every contour. Image 2 is a documentary photo of the exact monument for material colors. Final image is the project's matte mineral-color illustration style sample ONLY; its black background is NOT wanted. Primary request: color image 1 faithfully as an elegant museum architectural illustration. Materials and colors: Charcoal weathered clay roof tiles, dark walnut timber, ivory limewashed garden walls, restrained gray stone pavement and pale gray ornamental rocks. Keep low garden hall, no invented pond. Thin charcoal outlines remain visible, restrained flat pigment planes, light natural texture only inside the solid monument; no dramatic lighting, no cast shadow. Composition: retain image 1 framing and aspect ratio. Entire outside background and truly open holes must be flat opaque PURE WHITE #FFFFFF, absolutely no black ground, gray haze, gradient, paper texture, glow, checkerboard or transparency. No people, labels, readable inscriptions, added buildings or landscape. This is a colorization, do not redesign the object.",
+  "material_observations": "灰瓦、深木色门窗、浅石台",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuanxiangtang%20of%20Zhuozhengyuan%20Garden.JPG?width=1600",
+      "author": "そらみみ (Soramimi)",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/js_zhuozheng-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "苏州市发展改革委：拙政园现存建筑多为清代重建",
+      "url": "https://fg.suzhou.gov.cn/szfgw/szyl/jump_article.shtml"
+    }
+  ],
+  "output": "assets/colored/js_zhuozheng.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-d0851727-0320-4c45-b119-f78c23cb17ac.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d6a60500fe5ad8b58f7abea2c596090393df44a848f2310a35cfe431825666e7",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已逐张查看主体、白底与材质色；等待用户人眼验收。"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 313,
+  "count": 321,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -7022,6 +7022,187 @@
       ],
       "output": "assets/colored/xz_jokhang.png",
       "record": "assets/color-research/xz_jokhang.json"
+    },
+    {
+      "id": "qh_taer",
+      "name": "塔尔寺",
+      "subject": "塔尔寺大金瓦殿现状",
+      "sub": "大金瓦殿 · 现状",
+      "place": "青海西宁 · 湟中",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/qh_taer.png",
+      "displayLine": "assets/plates/qh_taer.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/qh_taer.json",
+      "candidateReferences": [
+        "assets/references/qh_taer-photo.jpg",
+        "assets/references/qh_taer-photo-2.jpg"
+      ],
+      "output": "assets/colored/qh_taer.png",
+      "record": "assets/color-research/qh_taer.json"
+    },
+    {
+      "id": "jx_nanchang_uprising",
+      "name": "南昌起义总指挥部旧址",
+      "subject": "原江西大旅社旧楼外立面",
+      "sub": "江西大旅社旧楼外立面",
+      "place": "江西南昌 · 中山路",
+      "dyn": "modern",
+      "types": [
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jx_nanchang_uprising.png",
+      "displayLine": "assets/plates/jx_nanchang_uprising.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/jx_nanchang_uprising.json",
+      "candidateReferences": [
+        "assets/references/jx_nanchang_uprising-photo.jpg"
+      ],
+      "output": "assets/colored/jx_nanchang_uprising.png",
+      "record": "assets/color-research/jx_nanchang_uprising.json"
+    },
+    {
+      "id": "xj_jiaohe",
+      "name": "交河故城",
+      "subject": "交河故城大佛寺现存生土遗址",
+      "sub": "大佛寺现存生土遗址",
+      "place": "新疆吐鲁番 · 交河",
+      "dyn": "xiyu",
+      "types": [
+        "ruins"
+      ],
+      "owner": "main",
+      "line": "assets/generated/xj_jiaohe.png",
+      "displayLine": "assets/plates/xj_jiaohe.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/xj_jiaohe.json",
+      "candidateReferences": [
+        "assets/references/xj_jiaohe-photo-2.jpg",
+        "assets/references/xj_jiaohe-photo.jpg"
+      ],
+      "output": "assets/colored/xj_jiaohe.png",
+      "record": "assets/color-research/xj_jiaohe.json"
+    },
+    {
+      "id": "xz_potala",
+      "name": "布达拉宫",
+      "subject": "布达拉宫现状西南侧白宫与红宫",
+      "sub": "现状西南侧白宫与红宫",
+      "place": "西藏拉萨 · 红山",
+      "dyn": "ming",
+      "types": [
+        "palace"
+      ],
+      "owner": "main",
+      "line": "assets/generated/xz_potala.png",
+      "displayLine": "assets/plates/xz_potala.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/xz_potala.json",
+      "candidateReferences": [
+        "assets/references/xz_potala-photo.jpg"
+      ],
+      "output": "assets/colored/xz_potala.png",
+      "record": "assets/color-research/xz_potala.json"
+    },
+    {
+      "id": "js_zhuozheng",
+      "name": "拙政园",
+      "subject": "拙政园远香堂现状",
+      "sub": "远香堂现状",
+      "place": "江苏苏州 · 东北街",
+      "dyn": "ming",
+      "types": [
+        "garden",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/js_zhuozheng.png",
+      "displayLine": "assets/plates/js_zhuozheng.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/js_zhuozheng.json",
+      "candidateReferences": [
+        "assets/references/js_zhuozheng-photo.jpg"
+      ],
+      "output": "assets/colored/js_zhuozheng.png",
+      "record": "assets/color-research/js_zhuozheng.json"
+    },
+    {
+      "id": "sc_luding",
+      "name": "泸定桥",
+      "subject": "泸定桥铁索桥身与两岸桥台",
+      "sub": "铁索桥身与两岸桥台",
+      "place": "四川甘孜 · 泸定",
+      "dyn": "ming",
+      "types": [
+        "bridge"
+      ],
+      "owner": "main",
+      "line": "assets/generated/sc_luding.png",
+      "displayLine": "assets/plates/sc_luding.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/sc_luding.json",
+      "candidateReferences": [
+        "assets/references/sc_luding-photo.jpg"
+      ],
+      "output": "assets/colored/sc_luding.png",
+      "record": "assets/color-research/sc_luding.json"
+    },
+    {
+      "id": "bj_guozijian",
+      "name": "国子监",
+      "subject": "国子监辟雍殿与环水石桥",
+      "sub": "辟雍殿与环水石桥",
+      "place": "北京东城 · 国子监街",
+      "dyn": "ming",
+      "types": [
+        "school",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/bj_guozijian.png",
+      "displayLine": "assets/plates/bj_guozijian.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/bj_guozijian.json",
+      "candidateReferences": [
+        "assets/references/bj_guozijian-photo-2.jpg",
+        "assets/references/bj_guozijian-photo.jpg"
+      ],
+      "output": "assets/colored/bj_guozijian.png",
+      "record": "assets/color-research/bj_guozijian.json"
+    },
+    {
+      "id": "zj_yuefei",
+      "name": "岳飞墓",
+      "subject": "岳飞墓墓冢、墓碑与祭台",
+      "sub": "墓冢、墓碑与祭台",
+      "place": "浙江杭州 · 栖霞岭",
+      "dyn": "song",
+      "types": [
+        "tomb"
+      ],
+      "owner": "main",
+      "line": "assets/generated/zj_yuefei.png",
+      "displayLine": "assets/plates/zj_yuefei.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/zj_yuefei.json",
+      "candidateReferences": [
+        "assets/references/zj_yuefei-photo.jpg"
+      ],
+      "output": "assets/colored/zj_yuefei.png",
+      "record": "assets/color-research/zj_yuefei.json"
     }
   ]
 }
