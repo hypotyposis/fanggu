@@ -5,7 +5,8 @@ const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '../..');
 const context = vm.createContext({});
-for (const filename of ['sites.js', 'plates.js', 'colored-plates.js', 'catalog.js']) {
+for (const filename of ['sites.js', 'plates.js', 'colored-plates.js', 'protection-data.js', 'protection.js', 'catalog.js']) {
+  if (!fs.existsSync(path.join(root, filename))) continue;
   vm.runInContext(fs.readFileSync(path.join(root, filename), 'utf8'), context, { filename });
 }
 const { sites, places, dynasties, colors, types } = vm.runInContext(
