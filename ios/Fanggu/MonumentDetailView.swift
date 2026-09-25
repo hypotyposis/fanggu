@@ -2,75 +2,139 @@ import SwiftUI
 
 struct MonumentDetailView: View {
     @EnvironmentObject private var library: LibraryStore
+    @Environment(\.dismiss) private var dismiss
     let site: Monument
     @State private var editingVisit = false
     @State private var editingReview = false
+    @State private var reveal: CGFloat = 0
 
     private var record: VisitRecord { library.record(for: site) }
     private var review: Review { library.review(for: site) }
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                ArtworkView(site: site, visited: record.status == .visited, height: 320)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+            VStack(alignment: .leading, spacing: 22) {
+                Text("图鉴  /  \(site.name)")
+                    .font(FangguFont.mono(11)).foregroundStyle(Palette.gold)
                 HStack {
-                    Text(site.dynastyName).foregroundStyle(Palette.dynasty(site.dynasty))
+                    Text(site.dynastyName).foregroundStyle(site.accent)
                     Spacer()
-                    Text(site.era).foregroundStyle(.secondary)
+                    Text(site.era).foregroundStyle(Palette.paper2)
                 }
-                .font(.subheadline)
+                .font(FangguFont.mono(11))
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(site.name).font(.system(size: 32, weight: .semibold, design: .serif)).foregroundStyle(Palette.ink)
-                    if !site.sub.isEmpty { Text(site.sub).font(.subheadline).foregroundStyle(Palette.gold) }
-                    Text(site.place).font(.subheadline).foregroundStyle(.secondary)
+                    Text(site.name).font(FangguFont.serif(35, weight: .medium)).foregroundStyle(Palette.paper)
+                    if !site.sub.isEmpty { Text(site.sub).font(FangguFont.serif(15)).foregroundStyle(Palette.gold) }
+                    Text("\(site.place) · \(site.typeNames.joined(separator: " · "))")
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                 }
-                Text(site.lede).font(.body).lineSpacing(6)
+                if !site.protection.isEmpty {
+                    HStack(spacing: 8) {
+                        ForEach(site.protection, id: \.self) { entry in
+                            Text(entry.batchLabel).font(FangguFont.mono(10))
+                                .foregroundStyle(Palette.gold).padding(6)
+                                .overlay(Rectangle().stroke(Palette.goldDim, lineWidth: 1))
+                        }
+                    }
+                }
+                ArtworkView(site: site, visited: record.status == .visited, height: 320, reveal: reveal)
+                    .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+                if !site.captions.isEmpty {
+                    Text(site.captions.joined(separator: " · "))
+                        .font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                }
+                FangguRule()
+                Text(site.lede).font(FangguFont.serif(17)).foregroundStyle(Palette.paper).lineSpacing(8)
                 VStack(alignment: .leading, spacing: 12) {
                     ForEach(site.facts, id: \.self) { fact in
                         HStack(alignment: .top, spacing: 10) {
-                            Circle().fill(Palette.red).frame(width: 5, height: 5).padding(.top, 8)
-                            Text(fact).lineSpacing(4)
+                            Rectangle().fill(Palette.red).frame(width: 5, height: 5).padding(.top, 8)
+                            Text(fact).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).lineSpacing(6)
                         }
                     }
                 }
-                if !site.quote.isEmpty { Text(site.quote).italic().foregroundStyle(.secondary) }
-                Divider()
+                if !site.quote.isEmpty { Text(site.quote).font(FangguFont.serif(15)).foregroundStyle(Palette.gold) }
+                if !site.yearNote.isEmpty {
+                    Text("年代说明 · \(site.yearNote)").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                }
+                if !site.protection.isEmpty {
+                    Text("文物保护").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                    ForEach(site.protection, id: \.self) { entry in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("\(entry.batchLabel) · \(entry.unitName)")
+                                .font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
+                            if !entry.scope.isEmpty { Text(entry.scope).foregroundStyle(Palette.paper2) }
+                            if !entry.note.isEmpty { Text(entry.note).foregroundStyle(Palette.paper3) }
+                            if let url = URL(string: entry.sourceURL), !entry.sourceURL.isEmpty {
+                                Link("\(entry.sourceTitle.isEmpty ? "保护信息来源" : entry.sourceTitle) ↗", destination: url)
+                                    .foregroundStyle(Palette.gold)
+                            }
+                        }
+                        .font(FangguFont.serif(12))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(14).background(Palette.ink2)
+                        .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+                    }
+                }
+                FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("我的访古记").font(.title3.weight(.semibold))
+                    Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     Text(record.status.title + (record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
-                        .foregroundStyle(Palette.red)
-                    if record.status != .visited { ArrivalSlider(site: site) }
+                        .font(FangguFont.mono(12)).foregroundStyle(record.status == .visited ? Palette.red : Palette.gold)
+                    if record.status != .visited { ArrivalSlider(site: site, progress: $reveal) }
                     HStack {
                         if record.status == .unvisited {
-                            Button("加入心愿单") { setStatus(.wishlist) }.buttonStyle(.bordered)
+                            Button("加入心愿单") { setStatus(.wishlist) }.buttonStyle(FangguOutlineButton())
                         } else if record.status == .wishlist {
-                            Button("移出心愿单") { setStatus(.unvisited) }.buttonStyle(.bordered)
+                            Button("移出心愿单") { setStatus(.unvisited) }.buttonStyle(FangguOutlineButton())
                         }
                         if record.status == .visited {
-                            Button("改为想去") { setStatus(.wishlist) }.buttonStyle(.bordered)
+                            Button("改为想去") { setStatus(.wishlist) }.buttonStyle(FangguOutlineButton())
                         }
                         Button(record.status == .visited ? "编辑到访记录" : "填写到访记录") { editingVisit = true }
-                            .buttonStyle(.borderedProminent)
+                            .buttonStyle(FangguOutlineButton(accent: Palette.red))
                     }
-                    if !record.note.isEmpty { Text(record.note).frame(maxWidth: .infinity, alignment: .leading).padding(12).background(.white, in: RoundedRectangle(cornerRadius: 8)) }
+                    if !record.note.isEmpty {
+                        Text(record.note).font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
+                            .frame(maxWidth: .infinity, alignment: .leading).padding(12).background(Palette.ink2)
+                    }
                 }
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("我的评价").font(.title3.weight(.semibold))
+                    Text("我的评价").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     if let rating = review.rating { Text(String(repeating: "★", count: rating) + String(repeating: "☆", count: 5 - rating)).foregroundStyle(Palette.gold) }
-                    if !review.text.isEmpty { Text(review.text) }
+                    if !review.text.isEmpty { Text(review.text).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2) }
                     Button(review.rating == nil && review.text.isEmpty ? "写短评 / 打分" : "编辑评价") { editingReview = true }
-                        .buttonStyle(.bordered)
+                        .buttonStyle(FangguOutlineButton())
+                }
+                Text("图版与资料来源").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                ForEach(site.sourceLinks, id: \.self) { source in
+                    if let url = URL(string: source.url) {
+                        Link("\(source.title) ↗", destination: url)
+                            .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
+                    }
                 }
                 if let url = URL(string: site.sourceURL), !site.sourceURL.isEmpty {
-                    Link("图版参考来源 ↗", destination: url).font(.footnote)
+                    Link("图版参考来源 ↗", destination: url)
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
                 }
             }
-            .padding(20)
+            .padding(24)
         }
-        .background(Palette.paper.ignoresSafeArea())
+        .background(Palette.ink.ignoresSafeArea())
         .navigationTitle(site.short.isEmpty ? site.name : site.short)
         .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden()
+        .toolbar(.hidden, for: .tabBar)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button { dismiss() } label: {
+                    Label("返回", systemImage: "chevron.left")
+                        .font(FangguFont.serif(13))
+                }
+            }
+        }
+        .toolbarBackground(Palette.ink, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
     }
@@ -85,20 +149,20 @@ struct MonumentDetailView: View {
 struct ArrivalSlider: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
-    @State private var progress: CGFloat = 0
+    @Binding var progress: CGFloat
 
     var body: some View {
         GeometryReader { geometry in
             ZStack(alignment: .leading) {
-                Capsule().fill(Palette.ink.opacity(0.1))
-                Capsule().fill(Palette.red.opacity(0.25)).frame(width: max(56, geometry.size.width * progress))
+                Rectangle().fill(Palette.ink3).overlay(Rectangle().stroke(Palette.red.opacity(0.6), lineWidth: 1))
+                Rectangle().fill(Palette.red.opacity(0.25)).frame(width: max(50, geometry.size.width * progress))
                 Text("向右拖动，记为今日到访 →")
-                    .font(.subheadline).foregroundStyle(Palette.ink)
+                    .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                     .frame(maxWidth: .infinity)
-                Text("访").font(.system(size: 23, weight: .bold, design: .serif))
-                    .foregroundStyle(.white)
+                Text("访").font(FangguFont.brush(29))
+                    .foregroundStyle(Palette.paper)
                     .frame(width: 50, height: 50)
-                    .background(Palette.red, in: Circle())
+                    .background(Palette.red)
                     .offset(x: (geometry.size.width - 50) * progress)
             }
             .frame(height: 54)

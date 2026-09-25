@@ -9,13 +9,20 @@ struct Monument: Decodable, Identifiable, Hashable {
     let sub: String
     let dynasty: String
     let dynastyName: String
+    let dynastyGlyph: String
+    let dynastyStart: Int
+    let dynastyEnd: Int
+    let dynastyColor: String
+    let timelineLane: String
     let tag: String
     let era: String
     let year: Int
     let yearLabel: String
     let yearApprox: Bool
+    let yearNote: String
     let place: String
     let placeKey: String
+    let placeName: String
     let country: String
     let province: String
     let region: String
@@ -33,9 +40,35 @@ struct Monument: Decodable, Identifiable, Hashable {
     let legacyNames: [String]
     let legacyPlaces: [String]
     let sourceURL: String
+    let sourceLinks: [SourceLink]
+    let protection: [ProtectionEntry]
+
+    var accent: Color { Palette.color(dynastyColor) }
 
     static func == (lhs: Monument, rhs: Monument) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
+}
+
+struct SourceLink: Decodable, Hashable {
+    let title: String
+    let url: String
+}
+
+struct ProtectionEntry: Decodable, Hashable {
+    let batch: Int
+    let unitName: String
+    let relation: String
+    let scope: String
+    let locator: String
+    let note: String
+    let sourceTitle: String
+    let sourceURL: String
+
+    var batchLabel: String {
+        let numerals = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"]
+        let number = batch < 10 ? numerals[batch] : "\(numerals[batch / 10])十\(batch % 10 == 0 ? "" : numerals[batch % 10])"
+        return "第\(number)批国保"
+    }
 }
 
 enum VisitStatus: String, Codable, CaseIterable, Identifiable {
@@ -128,26 +161,28 @@ struct BackupDocument: FileDocument {
 }
 
 enum Palette {
-    static let paper = Color(red: 0.95, green: 0.93, blue: 0.87)
-    static let ink = Color(red: 0.13, green: 0.16, blue: 0.16)
-    static let red = Color(red: 0.74, green: 0.23, blue: 0.17)
-    static let gold = Color(red: 0.66, green: 0.48, blue: 0.25)
-    static func dynasty(_ key: String) -> Color {
-        switch key {
-        case "han": .brown
-        case "jin": Color(red: 0.73, green: 0.57, blue: 0.47)
-        case "goguryeo": Color(red: 0.69, green: 0.63, blue: 0.55)
-        case "qiuci": Color(red: 0.61, green: 0.62, blue: 0.74)
-        case "tang": gold
-        case "nanzhao": Color(red: 0.71, green: 0.50, blue: 0.44)
-        case "balhae": Color(red: 0.57, green: 0.67, blue: 0.63)
-        case "song": .teal
-        case "dali": Color(red: 0.49, green: 0.62, blue: 0.72)
-        case "liao": red
-        case "xixia": Color(red: 0.65, green: 0.51, blue: 0.34)
-        case "ming": .indigo
-        case "jp_asuka", "jp_nara", "jp_heian", "jp_kamakura", "jp_edo": .purple
-        default: .gray
-        }
+    static let ink = color("#100f0d")
+    static let ink2 = color("#171512")
+    static let ink3 = color("#221f1a")
+    static let paper = color("#ebe2cc")
+    static let paper2 = color("#a89e88")
+    static let paper3 = color("#6b6356")
+    static let gold = color("#d6ab5c")
+    static let goldDim = color("#8a6d3a")
+    static let red = color("#c8442b")
+
+    static func color(_ hex: String) -> Color {
+        let value = Int(hex.dropFirst(), radix: 16) ?? 0
+        return Color(red: Double((value >> 16) & 255) / 255,
+                     green: Double((value >> 8) & 255) / 255,
+                     blue: Double(value & 255) / 255)
     }
+}
+
+enum FangguFont {
+    static func serif(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
+        .custom("NotoSerifSC-Regular", size: size).weight(weight)
+    }
+    static func brush(_ size: CGFloat) -> Font { .custom("MaShanZheng-Regular", size: size) }
+    static func mono(_ size: CGFloat) -> Font { .system(size: size, design: .monospaced) }
 }

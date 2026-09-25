@@ -13,40 +13,44 @@ struct MyLibraryView: View {
     private var legacy: [LegacySite] { library.data.customSites.filter { library.data.links[$0.id] == nil } }
 
     var body: some View {
-        List {
-            Section {
-                HStack(spacing: 18) {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 28) {
+                FangguSectionTitle(eyebrow: "亲见 · 所愿 · 私人记录", title: "我的访古", subtitle: "把到访和心愿，慢慢写成自己的古迹图鉴。")
+                HStack(spacing: 12) {
                     count("已到访", visited.count)
                     count("心愿", wishes.count)
                     count("收录", library.monuments.count)
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 12)
-            }
-            Section("备份与迁移") {
-                Button { prepareExport() } label: { Label("导出访古备份", systemImage: "square.and.arrow.up") }
-                Button { importing = true } label: { Label("导入网页或 App 备份", systemImage: "square.and.arrow.down") }
-                Text("网页和 App 各自保存记录。网页先导出 JSON，再在这里导入；同一古迹以导入值覆盖，其余保留。")
-                    .font(.caption).foregroundStyle(.secondary)
-                if let message { Text(message).font(.footnote).foregroundStyle(Palette.red) }
-            }
-            if !legacy.isEmpty {
-                Section("旧记录待关联") {
+                FangguRule()
+                sectionTitle("已到访")
+                if visited.isEmpty { empty("还没有到访记录") }
+                ForEach(visited) { site in siteRow(site) }
+                FangguRule()
+                sectionTitle("心愿单")
+                if wishes.isEmpty { empty("还没有心愿") }
+                ForEach(wishes) { site in siteRow(site) }
+                if !legacy.isEmpty {
+                    FangguRule()
+                    sectionTitle("旧记录待关联")
                     ForEach(legacy) { item in LegacyLinkRow(item: item) }
                 }
+                FangguRule()
+                sectionTitle("备份与迁移")
+                Button { prepareExport() } label: { Label("导出访古备份", systemImage: "square.and.arrow.up") }
+                    .buttonStyle(FangguOutlineButton())
+                Button { importing = true } label: { Label("导入网页或 App 备份", systemImage: "square.and.arrow.down") }
+                    .buttonStyle(FangguOutlineButton())
+                Text("网页和 App 各自保存记录。网页先导出 JSON，再在这里导入；同一古迹以导入值覆盖，其余保留。")
+                    .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
+                if let message { Text(message).font(FangguFont.serif(12)).foregroundStyle(Palette.red) }
             }
-            Section("已到访") {
-                if visited.isEmpty { Text("还没有到访记录").foregroundStyle(.secondary) }
-                ForEach(visited) { site in siteRow(site) }
-            }
-            Section("心愿单") {
-                if wishes.isEmpty { Text("还没有心愿").foregroundStyle(.secondary) }
-                ForEach(wishes) { site in siteRow(site) }
-            }
+            .padding(.horizontal, 24).padding(.top, 36).padding(.bottom, 70)
         }
-        .scrollContentBackground(.hidden)
-        .background(Palette.paper)
-        .navigationTitle("我的访古")
+        .background(Palette.ink.ignoresSafeArea())
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar { ToolbarItem(placement: .principal) { FangguBrand() } }
+        .toolbarBackground(Palette.ink, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
         .fileImporter(isPresented: $importing, allowedContentTypes: [.json]) { result in
             do {
                 let url = try result.get()
@@ -62,20 +66,32 @@ struct MyLibraryView: View {
     }
 
     private func count(_ title: String, _ number: Int) -> some View {
-        VStack(spacing: 4) {
-            Text(number.formatted()).font(.title.weight(.semibold)).foregroundStyle(Palette.red)
-            Text(title).font(.caption).foregroundStyle(.secondary)
+        VStack(spacing: 5) {
+            Text(number.formatted()).font(FangguFont.brush(31)).foregroundStyle(Palette.gold)
+            Text(title).font(FangguFont.mono(10)).foregroundStyle(Palette.paper2)
         }
         .frame(maxWidth: .infinity)
+        .padding(.vertical, 16)
+        .background(Palette.ink2)
+        .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
     }
 
     private func siteRow(_ site: Monument) -> some View {
         NavigationLink(value: site) {
-            VStack(alignment: .leading, spacing: 3) {
-                Text(site.name).font(.headline)
-                Text(site.place).font(.caption).foregroundStyle(.secondary)
-            }
+            TimelineSiteRow(site: site)
         }
+        .buttonStyle(.plain)
+    }
+
+    private func sectionTitle(_ text: String) -> some View {
+        Text(text).font(FangguFont.serif(22)).foregroundStyle(Palette.paper)
+    }
+
+    private func empty(_ text: String) -> some View {
+        Text(text).font(FangguFont.serif(13)).foregroundStyle(Palette.paper3)
+            .frame(maxWidth: .infinity, minHeight: 100)
+            .background(Palette.ink2)
+            .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
     }
 
     private func prepareExport() {
@@ -91,8 +107,8 @@ private struct LegacyLinkRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text(item.name).font(.headline)
-            Text(item.place).font(.caption).foregroundStyle(.secondary)
+            Text(item.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
+            Text(item.place).font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
             Picker("关联图版", selection: $target) {
                 Text("选择古迹").tag("")
                 ForEach(library.monuments) { site in Text("\(site.name) · \(site.place)").tag(site.id) }
@@ -101,6 +117,9 @@ private struct LegacyLinkRow: View {
                 if let site = library.monuments.first(where: { $0.id == target }) { library.linkLegacy(item.id, to: site) }
             }
             .disabled(target.isEmpty)
+            .buttonStyle(FangguOutlineButton())
         }
+        .padding(14).background(Palette.ink2)
+        .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
     }
 }

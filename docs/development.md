@@ -4,7 +4,7 @@
 
 ## 环境与首次运行
 
-iOS 原生 App 的构建与网页备份迁移见 [iOS 开发说明](../ios/README.md)。原生目录由现有数据导出，图版仍由本地素材副本提供。
+iOS 原生 App 的构建与网页备份迁移见 [iOS 开发说明](../ios/README.md)。原生目录由现有数据、图版研究 JSON、文保来源和网页朝代色导出，图版仍由本地素材副本提供。修改上述数据或 `style.css` 中朝代色后需运行 `node ios/scripts/build-catalog.cjs`，并检查导出的 iOS 目录。
 
 前端是原生 HTML/CSS/JavaScript，没有 `package.json`、第三方 npm 依赖安装或应用构建步骤。下表记录用途与本次整理时可用的环境，不代表已验证所有较旧版本。
 

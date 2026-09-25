@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0289BA0176111CFE18A0D712 /* MaShanZheng-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */; };
 		24C8EAADD27AE8E637BB15CF /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = D8EFEA8F598513230A4CD144 /* catalog.json */; };
+		31A1227AE7D05F5E53BA26A9 /* MaShanZheng-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECBFAFF8D85210B9EEC82594 /* MaShanZheng-OFL.txt */; };
 		34D87544ABD4146139644BC2 /* FangguUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA07A3A66551D2FDC02E96B /* FangguUITests.swift */; };
 		446081072BE3002D27313AC8 /* Artwork in Resources */ = {isa = PBXBuildFile; fileRef = 132DEA14D9216B3216E55681 /* Artwork */; };
+		555036135F1E588E2351B04E /* NotoSerifSC-wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0F41782AA5F707B36F5780 /* NotoSerifSC-wght.ttf */; };
+		5F39F8681337A41498B8412B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941369201341EDC769D0A968 /* DesignSystem.swift */; };
 		645323A38BAA24C69AE53B94 /* FangguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E3B4610C6D7B304A97666 /* FangguApp.swift */; };
 		6455D8FF1495301B0E8144D4 /* MonumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */; };
+		7220089D2A39C1DF1A69F17A /* MapTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */; };
 		73CE79656BA0B4D8631D244B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14485AADE6D55976CAAD1E /* ContentView.swift */; };
 		94319EB3331BA8802B670F1C /* MyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B840132592E220716D66BF0 /* MyLibraryView.swift */; };
 		983CB5B041412B7DA4962914 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CED4570A3CEC1B630EC8FE /* Models.swift */; };
 		9F5D03D4348614A0EB306ECE /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */; };
+		B1DE8D29EEAD8E4FCAF97E60 /* NotoSerifSC-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24B18515ED5644793FAA1C96 /* NotoSerifSC-OFL.txt */; };
 		FA2A0A61C9467DA89AD307D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D999620921C3D1C50404A5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -33,18 +39,35 @@
 		00D999620921C3D1C50404A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentDetailView.swift; sourceTree = "<group>"; };
 		132DEA14D9216B3216E55681 /* Artwork */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Artwork; path = Fanggu/Resources/Artwork; sourceTree = SOURCE_ROOT; };
+		24B18515ED5644793FAA1C96 /* NotoSerifSC-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "NotoSerifSC-OFL.txt"; sourceTree = "<group>"; };
 		6CC9E9CD88419345D7E3F30F /* Fanggu.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Fanggu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B840132592E220716D66BF0 /* MyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryView.swift; sourceTree = "<group>"; };
 		7F2E3B4610C6D7B304A97666 /* FangguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FangguApp.swift; sourceTree = "<group>"; };
+		941369201341EDC769D0A968 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		AB14485AADE6D55976CAAD1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA0F41782AA5F707B36F5780 /* NotoSerifSC-wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifSC-wght.ttf"; sourceTree = "<group>"; };
 		BAC4414AA8D68FF24A96E42E /* FangguUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FangguUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
 		D8EFEA8F598513230A4CD144 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
+		E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaShanZheng-Regular.ttf"; sourceTree = "<group>"; };
 		EBA07A3A66551D2FDC02E96B /* FangguUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FangguUITests.swift; sourceTree = "<group>"; };
+		ECBFAFF8D85210B9EEC82594 /* MaShanZheng-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MaShanZheng-OFL.txt"; sourceTree = "<group>"; };
 		F4CED4570A3CEC1B630EC8FE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		282992E3CF520AFB16CF537F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ECBFAFF8D85210B9EEC82594 /* MaShanZheng-OFL.txt */,
+				E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */,
+				24B18515ED5644793FAA1C96 /* NotoSerifSC-OFL.txt */,
+				BA0F41782AA5F707B36F5780 /* NotoSerifSC-wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		66F6F31F34EDB6CEDFBCFA2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D8EFEA8F598513230A4CD144 /* catalog.json */,
+				282992E3CF520AFB16CF537F /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -77,8 +101,10 @@
 			children = (
 				00D999620921C3D1C50404A5 /* Assets.xcassets */,
 				AB14485AADE6D55976CAAD1E /* ContentView.swift */,
+				941369201341EDC769D0A968 /* DesignSystem.swift */,
 				7F2E3B4610C6D7B304A97666 /* FangguApp.swift */,
 				D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */,
+				F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */,
 				F4CED4570A3CEC1B630EC8FE /* Models.swift */,
 				1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */,
 				7B840132592E220716D66BF0 /* MyLibraryView.swift */,
@@ -175,6 +201,10 @@
 			files = (
 				446081072BE3002D27313AC8 /* Artwork in Resources */,
 				FA2A0A61C9467DA89AD307D3 /* Assets.xcassets in Resources */,
+				31A1227AE7D05F5E53BA26A9 /* MaShanZheng-OFL.txt in Resources */,
+				0289BA0176111CFE18A0D712 /* MaShanZheng-Regular.ttf in Resources */,
+				B1DE8D29EEAD8E4FCAF97E60 /* NotoSerifSC-OFL.txt in Resources */,
+				555036135F1E588E2351B04E /* NotoSerifSC-wght.ttf in Resources */,
 				24C8EAADD27AE8E637BB15CF /* catalog.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,8 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CE79656BA0B4D8631D244B /* ContentView.swift in Sources */,
+				5F39F8681337A41498B8412B /* DesignSystem.swift in Sources */,
 				645323A38BAA24C69AE53B94 /* FangguApp.swift in Sources */,
 				9F5D03D4348614A0EB306ECE /* LibraryStore.swift in Sources */,
+				7220089D2A39C1DF1A69F17A /* MapTimelineView.swift in Sources */,
 				983CB5B041412B7DA4962914 /* Models.swift in Sources */,
 				6455D8FF1495301B0E8144D4 /* MonumentDetailView.swift in Sources */,
 				94319EB3331BA8802B670F1C /* MyLibraryView.swift in Sources */,
