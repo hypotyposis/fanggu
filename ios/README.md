@@ -4,11 +4,12 @@ SwiftUI 原生 App，最低 iOS 18。古迹目录由网页使用的 `sites.js`�
 
 ## 构建
 
-需要 Xcode、XcodeGen、Node.js，以及完整的本地图版素材。仓库不包含图片，先从素材副本同步：
+需要 Xcode、XcodeGen、Node.js，以及本地图版素材。仓库不包含图片。取得与 [Git 清单](../assets/asset-lock.json)匹配的本地资源包后，先恢复运行资源并同步：
 
 ```bash
 node ios/scripts/build-catalog.cjs
-sh ios/scripts/sync-artwork.sh /path/to/fanggu/assets
+python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile runtime
+sh ios/scripts/sync-artwork.sh assets
 cd ios
 xcodegen generate
 xcodebuild -project Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=iPhone 16 Pro' build

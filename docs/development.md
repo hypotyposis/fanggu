@@ -25,6 +25,29 @@ python3 -m http.server 8765
 
 开工先确认图片是否在当前工作区。图片、生成原稿、参考照片与 PDF 被 `.gitignore` 排除，新克隆、worktree 或代码压缩包不包含这些素材。页面显示需补齐 `assets/colored-transparent-avif/` 的 AVIF、`assets/plates/` 的 PNG 和 `assets/longmen-vairocana.png`。`assets/colored/` 与 `assets/color-studies/v1/` 中的原 PNG 完整保留为素材库，原图链接、完整测试及重新转码需要这些文件；完整测试还会读取研究 JSON 所列参考文件，重新制图另需 `assets/generated/` 原稿。保留目录层级，不用同名但内容不符的图片代替缺失素材。
 
+### 本地资源包
+
+`assets/asset-lock.json` 由 Git 跟踪，逐文件记录被忽略素材的相对路径、字节数、SHA-256 和用途层级。`runtime` 对应 iOS 目录所需线稿、设色 AVIF 和卢舍那原图；`source` 包含其余原稿、透明 PNG、参考照片、PDF 和本地审图记录。`runtime` 足以显示首页、详情和 iOS 图版；校对页的原设色对照、完整测试和重新制图需要 `full`。资源包写入被 Git 忽略的 `asset-dist/<assetSet>/`，包含 `index.json` 和分卷 TAR；不改变网页和 App 的图片路径。
+
+在拥有完整本地素材的工作区，素材改变后运行：
+
+```bash
+python3 scripts/asset-bundle.py lock
+python3 scripts/asset-bundle.py verify --profile full
+python3 scripts/asset-bundle.py pack
+```
+
+将整个 `asset-dist/<assetSet>/` 目录复制到独立存储位置，保留 `index.json` 和所有 TAR。新克隆或 worktree 取得匹配版本的资源包后，在仓库根目录运行：
+
+```bash
+python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile runtime
+python3 scripts/asset-bundle.py verify --profile runtime
+# 需要原稿与参考资料时：
+python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile full
+```
+
+恢复先检查 Git 中的清单与资源包索引是否匹配、所需分卷的 SHA-256，再逐文件校验内容；本地已有且哈希相同的文件会跳过，内容不同则停止，只有明确指定 `--force` 才覆盖。`runtime` 恢复无需复制 `source` 分卷，但分包时仍需完整素材。运行 `python3 -B -m unittest discover -s tests -p test_asset_bundle.py` 验证打包器。清单和 TAR 不会自动提供异地备份；只有把资源包复制到独立存储并再次恢复校验后，才考虑清理 Git 历史中的旧大文件。
+
 ## 模块与依赖
 
 | 文件 | 责任与修改入口 |

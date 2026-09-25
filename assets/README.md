@@ -2,6 +2,8 @@
 
 图片、生成原稿、参考照片与 PDF 暂留本地，不随 Git 推送；目录结构保持不变。仓库保留来源、署名、许可、提示词和图版清单。新克隆需从本地素材副本补齐图片后预览，完整图版测试和重新生成还需要参考照片及原稿。
 
+当前素材由 Git 跟踪的 [资源锁定清单](asset-lock.json)逐文件校验。本地执行 `python3 scripts/asset-bundle.py pack` 会生成被忽略的 `asset-dist/<assetSet>/`：`runtime` 分卷供网页和 iOS 图版显示，其余 `source` 分卷保留原稿、参考资料与审图记录。新克隆使用 `python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile runtime`；需要完整素材时改用 `--profile full`。素材变化后先重新运行 `lock`，详细命令和备份要求见[开发指南](../docs/development.md#本地资源包)。资源包可能包含有使用限制的参考照片，不放到公开 GitHub 仓库或 Release。
+
 ## 维护入口
 
 - [开发约定](../AGENTS.md) / [开发指南](../docs/development.md)：数据、模块、生成命令与检查范围。
