@@ -54,9 +54,15 @@
     "output_viewed": true,
     "checks": [
       "主体照片与生成线稿已逐张查看。",
-      "白底原件待本地透明处理；图版仅为现状意写。"
+      "白底原件已完成本地透明处理；图版仅为现状意写。"
     ],
-    "limitations": "尚待用户逐图验收。"
+    "limitations": "现状意写，不作为测绘图。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T11:26:55.756Z",
+    "sourceSha256": "5bfcf4d28ba754bfb9de13cac02f2a963d05aed2ff15a49cd5c598b64327ba07"
+  }
 }
