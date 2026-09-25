@@ -1,0 +1,45 @@
+{
+  "id": "sn_yaowang",
+  "name": "摩崖石造像一龛",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sn_yaowang.png",
+    "assets/references/sn_yaowang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Yaowang Mountain weathered standing stone bodhisattva in a rock niche: muted pale tan-grey stone and recesses in soft brown; no invented gilding or bright restored paint. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "立像与岩龛为浅砂灰、赭黄石面；不恢复未见金彩。",
+  "references": [
+    {
+      "source_page": "https://you.ctrip.com/sight/tongchuan907/52663.html",
+      "image_url": "https://dimg04.c-ctrip.com/images/1mh5p12000ojhyditCB85_W_640_10000.jpg?proc=autoorient",
+      "author": "携程用户／原作者见来源页",
+      "license": "许可未明；仅作研究参考",
+      "reference_file": "assets/references/sn_yaowang-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/sn_yaowang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-8ab76942-f34f-4d20-9914-e0c80000af3b.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5eedb05034ec592599d51c30da29ccc80550e42bcd17af19fd9c02f7719d52a0",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

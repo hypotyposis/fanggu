@@ -1,0 +1,60 @@
+{
+  "id": "sn_beilin",
+  "subject": "石台孝经碑",
+  "status": "complete",
+  "source_page": "https://sn.cri.cn/2019-06-17/e0416e2a-1faa-7289-d571-6894fdde7f88.html",
+  "image_url": "https://v2.cri.cn/M00/39/2B/CqgNOl0G6KuANKkcAAAAAAAAAAA981.394x739.png",
+  "author": "国际在线／原作者见来源页",
+  "license": "许可未明；仅作研究参考",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sn_beilin-photo.jpg"
+  ],
+  "source_note": "据所列照片绘西安碑林的石台孝经碑；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Create a precise sparse Chinese heritage ink LINE DRAWING of the Tang stone Platform Filial Piety Classic stele in Xi'an Beilin: high tall rectangular stone monolith, carved layered roof-like canopy and pedestal, dense inscription field represented by sparse nonlegible short marks. Image 1 is the subject photo and image 2 is the project's line plate style reference. Follow the subject's actual silhouette and defining forms, removing glass cases, glare, signs, people, floors and modern backgrounds. Center the complete stone object with ample blank margin. Only clean fine charcoal-black contour lines and a few sparse material or relief marks. Represent inscriptions as abstract nonlegible marks; do not invent Chinese characters or text. Every blank canvas pixel must be flat opaque #FFFFFF. No gray background, gradients, shadows, paper grain, watercolor, colored ink, filled black masses, checkerboard or transparent canvas. 3:4 portrait composition.",
+  "generated_file": "assets/generated/sn_beilin.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-cf31100c-fd98-4d31-a58d-d4037ab6cc59.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "caption": [
+    "石台孝经碑 · 线稿",
+    "745 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fd3fb51a3916c4676e6920dc5e508144cc658dfc75de109c1fc42d5a354dd62e",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://sn.cri.cn/2019-06-17/e0416e2a-1faa-7289-d571-6894fdde7f88.html",
+      "image_url": "https://v2.cri.cn/M00/39/2B/CqgNOl0G6KuANKkcAAAAAAAAAAA981.394x739.png",
+      "author": "国际在线／原作者见来源页",
+      "license": "许可未明；仅作研究参考",
+      "reference_file": "assets/references/sn_beilin-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "陕西省地方志：石台孝经碑纪年",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsxz/xbsxz/xas_16198/201405/P020240923623390886739.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

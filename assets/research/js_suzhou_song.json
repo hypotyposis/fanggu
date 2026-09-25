@@ -1,0 +1,62 @@
+{
+  "id": "js_suzhou_song",
+  "subject": "平江图碑",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Siyuwj",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_suzhou_song-photo.jpg"
+  ],
+  "source_note": "据所列照片绘苏州文庙内宋代石刻的平江图碑；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Create a precise sparse Chinese heritage ink LINE DRAWING of the Song Pingjiang city map stone stele kept at Suzhou Confucian Temple: tall rectangular dark stone map slab, top with stylized pair of carved dragons, lower large engraved abstract city plan of waterways and street grid. Image 1 is the subject photo and image 2 is the project's line plate style reference. Follow the actual photo's identifying silhouette, composition and present condition. Remove glass cases, glare, signs, flowers, people, floors and modern backgrounds. Center the complete object with ample margin. Only clean fine charcoal-black contour lines and a few sparse material or relief marks. Represent any inscriptions or maps with abstract nonlegible marks; do not invent Chinese characters or text. Every blank canvas pixel must be flat opaque #FFFFFF. No gray background, gradients, shadows, paper grain, watercolor, colored ink, filled black masses, checkerboard or transparent canvas. 3:4 portrait composition.",
+  "generated_file": "assets/generated/js_suzhou_song.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-daeff959-e9b7-4d03-9711-a516db628fcf.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "caption": [
+    "平江图碑 · 线稿",
+    "1229 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3e525e786efc689d5869dbd32825c28b9cf9020d05db2ccdc6abd1d802bcb0ca",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/%E5%9B%9B%E5%A4%A7%E5%AE%8B%E7%A2%91%E2%80%94%E2%80%94%E5%B9%B3%E6%B1%9F%E5%9B%BE%EF%BC%8C2016-05-15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2016-05-15 13:03:33",
+      "reference_file": "assets/references/js_suzhou_song-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "苏州市文旅局：苏州文庙四大宋碑",
+      "url": "https://wglj.suzhou.gov.cn/szwhgdhlyj/wgjjgsz/202110/c3aaa7c3d3b74b0d9cc198d49f28a610.shtml"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

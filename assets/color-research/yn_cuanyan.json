@@ -1,0 +1,51 @@
+{
+  "id": "yn_cuanyan",
+  "name": "南朝爨龙颜碑",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/yn_cuanyan.png",
+    "assets/references/yn_cuanyan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Southern Dynasties Cuan Longyan stele, warm neutral gray-beige eroded stone with slightly darker top relief and faint incisions, no legible characters. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "碑身为灰米、深灰石面，碑额浮雕及磨蚀处有层次。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/%E7%88%A8%E9%BE%99%E9%A2%9C%E7%A2%91_%E7%A2%91%E9%98%B3_2026-08-07_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Kcx36",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2026-08-07 17:11:31",
+      "reference_file": "assets/references/yn_cuanyan-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "河北省民族宗教部门：大爨碑纪年",
+      "url": "https://mw.hebei.gov.cn/system/2026/02/05/030375009.shtml"
+    }
+  ],
+  "output": "assets/colored/yn_cuanyan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-32355ece-865c-4a7e-b188-8ce32341a496.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6579db21d9b5f453f89e5bcca1c94e65a228ca69a440b24b63f7c6e521574da1",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

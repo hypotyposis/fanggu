@@ -59,7 +59,7 @@ test('Shanghai filtering and expansion preserve prior records and blank arrival 
 
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 20);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 23);
   for (const site of catalog) {
     assert(facets.regions[site.region].provinces.includes(site.province));
     assert.equal(new Set(site.types).size, site.types.length);
@@ -91,7 +91,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'south'), []);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 20);
+  assert.equal(facets.provinces(catalog).length, 23);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {
@@ -112,7 +112,7 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
   assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['京都府', '奈良县']);
-  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 18);
+  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 21);
 });
 
 test('Japanese additions seed wishes with blank dates and survive backup restoration', () => {
@@ -134,11 +134,15 @@ test('Japanese additions seed wishes with blank dates and survive backup restora
 
 test('Jiangsu and Zhejiang additions cover bridges, stone pillars and early regional periods', () => {
   assert.equal(find({ province: '浙江' }).length, 17);
-  assert.equal(find({ province: '江苏' }).length, 14);
+  assert.equal(find({ province: '江苏' }).length, 15);
   assert.deepEqual(find({ type: 'bridge', province: '浙江', status: 'wishlist' }), ['baziqiao', 'rulong']);
   assert.deepEqual(find({ type: 'pillar', province: '浙江' }), ['lingyin', 'longxingchuang']);
   assert(find({ type: 'pagoda' }).includes('lingyin'));
-  assert.deepEqual(find({ dynasty: 'nan' }), ['xinchangdafo']);
+  assert.deepEqual(find({ dynasty: 'nan' }), ['xinchangdafo', 'yn_cuanyan']);
+  assert.deepEqual(find({ dynasty: 'jin' }), ['yn_cuanbaozi']);
+  assert.deepEqual(find({ dynasty: 'qiuci' }), ['xj_kizil', 'xj_kumtura']);
+  assert.deepEqual(find({ dynasty: 'nanzhao' }), ['yn_shizhong']);
+  assert.deepEqual(find({ dynasty: 'dali' }), ['yn_duanshi']);
 });
 
 test('new wishes seed alongside saved visits and removed wishes without overwriting them', () => {

@@ -1,0 +1,47 @@
+{
+  "id": "gs_yulin",
+  "name": "榆林河谷 · 石窟入口局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/gs_yulin.png",
+    "assets/references/gs_yulin-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Yulin cave entrance row in weathered tan and warm gray sandstone cliffs, the three portal recesses dark earthy brown; no invented fresco or restored polychromy. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original 3:4 portrait composition. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "洞窟崖面呈砂黄、灰褐色，窟口较暗；不绘未见的壁画。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yulin_Caves_Jiuquan_Gansu_China_%E9%85%92%E6%B3%89_%E6%A5%A1%E6%9E%97%E7%AA%9F_-_panoramio_(4).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Yulin_Caves_Jiuquan_Gansu_China_%E9%85%92%E6%B3%89_%E6%A5%A1%E6%9E%97%E7%AA%9F_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Hiroki Ogawa",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "9 November 2015 (original upload date)",
+      "reference_file": "assets/references/gs_yulin-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/gs_yulin.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-c127e36b-f688-40e3-83c5-72f85a41469e.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8c73a47c15f169c8c998419ea86cd60a6cae05678fd09f1ff4f6a75004123d93",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

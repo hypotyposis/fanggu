@@ -1,0 +1,51 @@
+{
+  "id": "yn_duanshi",
+  "name": "大理国会盟碑",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/yn_duanshi.png",
+    "assets/references/yn_duanshi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Dali kingdom Duan and Thirty-Seven Tribes oath stone stele, deeply aged dark gray-brown stone slab and pale weathered edges, abstract faint incision texture only. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "碑身暗灰褐、边缘与石座较浅，碑文仅作不可读纹理。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AE%B5%E6%B0%8F%E4%B8%8E%E4%B8%89%E5%8D%81%E4%B8%83%E9%83%A8%E4%BC%9A%E7%9B%9F%E7%A2%91_-_%E7%A2%91%E9%98%B3_-_2023-06-18.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/%E6%AE%B5%E6%B0%8F%E4%B8%8E%E4%B8%89%E5%8D%81%E4%B8%83%E9%83%A8%E4%BC%9A%E7%9B%9F%E7%A2%91_-_%E7%A2%91%E9%98%B3_-_2023-06-18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-06-18 10:04:06",
+      "reference_file": "assets/references/yn_duanshi-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "云南民族博物馆：段氏与三十七部会盟碑",
+      "url": "https://ynnmuseum.com/detail/4130.html"
+    }
+  ],
+  "output": "assets/colored/yn_duanshi.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-747f612e-bf91-4f86-a5af-049aef5b76ca.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c98ba1d56dc2ab51f7d888a9fd28b0fac49b0f33b0e4797b8792b592e17d9b6d",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

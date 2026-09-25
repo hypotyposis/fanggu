@@ -1,0 +1,60 @@
+{
+  "id": "gs_bingling",
+  "name": "第171龛 · 弥勒大佛",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/gs_bingling.png",
+    "assets/references/gs_bingling-official-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Bingling Temple Cave 171 Maitreya statue: muted sandy yellow, pale gray-ochre stone/clay, darker near-black curled hair, one hand remains and the other is damaged as in the line drawing; no restoration. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original 3:4 portrait composition. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "大佛以浅砂黄、灰赭石泥塑为主，卷发较深；残手保持现状。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:202609_Bingling_Temple_74.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/202609_Bingling_Temple_74.jpg",
+      "author": "Jonashtand",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/gs_bingling-photo.jpg"
+    },
+    {
+      "source_page": "https://www.gswbj.gov.cn/a/2023/10/19/18943.html",
+      "image_url": "https://www.gswbj.gov.cn/uploadfile/20231019/1697701203397573.jpg",
+      "author": "郎兵兵／新华社",
+      "license": "版权所有；仅作本地研究参考，未获开放许可",
+      "reference_file": "assets/references/gs_bingling-official-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "甘肃文博会／新华社：第171龛大佛731年雕凿与材料",
+      "url": "https://www.gswbj.gov.cn/a/2023/10/19/18943.html"
+    },
+    {
+      "title": "全国哲学社会科学工作办公室：炳灵寺第一批国保",
+      "url": "https://www.nopss.gov.cn/n1/2017/0627/c360282-29366242.html"
+    }
+  ],
+  "output": "assets/colored/gs_bingling.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-96d7d4d4-5bab-44f5-b928-4929ef80b6a8.png",
+  "width": 1086,
+  "height": 1448,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9432e794465bea2cb7aacb2739aa92a76d03cd528151d9525709173915bb1297",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

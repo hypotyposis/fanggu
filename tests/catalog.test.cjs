@@ -20,8 +20,8 @@ additions.push(...shanghaiExpansion.ids);
 const henanAdditions = JSON.parse(read('assets/research/henan-additions-2026-09-18.json'));
 additions.push(...henanAdditions.ids);
 additions.push('nx_xumishan','nx_xixialing','nx_108towers');
-test('all 217 catalogue entries have a real PNG, matching dimensions and a map location', () => {
-  assert.equal(SITES.length, 217); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+test('all 236 catalogue entries have a real PNG, matching dimensions and a map location', () => {
+  assert.equal(SITES.length, 236); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));

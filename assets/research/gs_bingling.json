@@ -1,0 +1,72 @@
+{
+  "id": "gs_bingling",
+  "subject": "第171龛 · 弥勒大佛",
+  "status": "complete",
+  "source_page": "https://www.gswbj.gov.cn/a/2023/10/19/18943.html",
+  "image_url": "https://www.gswbj.gov.cn/uploadfile/20231019/1697701203397573.jpg",
+  "author": "郎兵兵／新华社",
+  "license": "版权所有；仅作本地研究参考，未获开放许可",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gs_bingling-photo.jpg",
+    "assets/references/gs_bingling-official-photo.jpg"
+  ],
+  "source_note": "图绘第171龛大佛，按保护研究所专家所述唐开元十九年（731）雕凿定年；上半身石雕、腹部以下泥塑，后世修护，不以西秦早期洞窟纪年替代此像年代。 原型阶段由用户人眼验收；参考照片拍摄时间另见 references。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\n\nNAMED SUBJECT: 第171龛弥勒大佛.\nPortrait 1024x1536. Draw the COMPLETE niche-171 Maitreya in the 2023 front full statue photograph, using the 2026 close photo for current surface and damage. Broad shoulders, curled hair, long earlobes, robe, seated with legs PENDENT and both feet visible. Preserve the one surviving hand on its knee and the damaged opposite forearm/hand stump EXACTLY as photographed; NEVER invent a missing hand. Include only its close rock backing/seat and short foot plinths. Exclude the broad cliff scene, stairs, railings, overhead caves and other figures. Do not copy the style sample's pose.\nStructure checkpoints: 完整弥勒坐像：卷发、长耳、宽袈裟、垂足；保留现状一侧完整按膝手与另一侧残损，不补成双手完好；仅留贴体短岩龛，不画第169窟和栈道。",
+  "generated_file": "assets/generated/gs_bingling.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": null,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "第171龛弥勒大佛 · 线稿",
+    "731 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d51d9df1bae7472ca189338d0bd3d1e0ffd9de772ac5ddfdef99f1983ea12dc6",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:202609_Bingling_Temple_74.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/202609_Bingling_Temple_74.jpg",
+      "author": "Jonashtand",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/gs_bingling-photo.jpg"
+    },
+    {
+      "source_page": "https://www.gswbj.gov.cn/a/2023/10/19/18943.html",
+      "image_url": "https://www.gswbj.gov.cn/uploadfile/20231019/1697701203397573.jpg",
+      "author": "郎兵兵／新华社",
+      "license": "版权所有；仅作本地研究参考，未获开放许可",
+      "reference_file": "assets/references/gs_bingling-official-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "甘肃文博会／新华社：第171龛大佛731年雕凿与材料",
+      "url": "https://www.gswbj.gov.cn/a/2023/10/19/18943.html"
+    },
+    {
+      "title": "全国哲学社会科学工作办公室：炳灵寺第一批国保",
+      "url": "https://www.nopss.gov.cn/n1/2017/0627/c360282-29366242.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "sc_qianfo",
+  "name": "崖壁佛龛局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sc_qianfo.png",
+    "assets/references/sc_qianfo-extra-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Make ONE museum-quality colored companion plate of this existing line drawing. Image 1 is the EXACT drawing to color: preserve every silhouette, proportion, damage, opening, framing and blank margin. Image 2 is a photograph of the actual subject and determines present-day material colors only. Image 3 is the illustration STYLE sample only, not its building or palette. Subject and materials: Guangyuan Thousand Buddha Cliff seated Buddha and attendant within stone niche, in warm sandstone beige, weathered gray and brown with present erosion. Use delicate preserved contour lines, matte mineral color planes, restrained soft shading and limited fine grain INSIDE THE SUBJECT ONLY. Do not reconstruct missing parts or add scenery, glass, people, signage, flowers, text, invented script, shadow, border or paper texture. CRITICAL: the entire exterior background and all genuinely open gaps are FLAT OPAQUE PURE WHITE #FFFFFF with no gradient, glow, checkerboard or transparency. Center and preserve the original composition and aspect ratio. This is a white-background ORIGINAL for later local matte extraction, not a transparent cutout.",
+  "material_observations": "石龛为暖灰与砂褐，造像表面保留现状磨蚀；不补鲜艳彩绘。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%B9%BF%E5%85%83%E5%8D%83%E4%BD%9B%E5%B4%96.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E5%B9%BF%E5%85%83%E5%8D%83%E4%BD%9B%E5%B4%96.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "申威隆",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2010-06-07 11:53:48",
+      "reference_file": "assets/references/sc_qianfo-extra-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "output": "assets/colored/sc_qianfo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-90cf4ed9-a11b-4c81-814b-526632102024.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "42fa7380f59fb5dce45bcff604f09c64b003764dafcbf8d7e64266624e46b2b0",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

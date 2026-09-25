@@ -1,0 +1,56 @@
+{
+  "id": "sn_yaowang",
+  "subject": "摩崖石造像一龛",
+  "status": "complete",
+  "source_page": "https://you.ctrip.com/sight/tongchuan907/52663.html",
+  "image_url": "https://dimg04.c-ctrip.com/images/1mh5p12000ojhyditCB85_W_640_10000.jpg?proc=autoorient",
+  "author": "携程用户／原作者见来源页",
+  "license": "许可未明；仅作研究参考",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sn_yaowang-photo.jpg"
+  ],
+  "source_note": "据所列照片绘药王山石刻的石造像一龛；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Create a precise sparse Chinese heritage ink LINE DRAWING of one old stone Bodhisattva relief niche at Yaowang Mountain: standing stone bodhisattva within shallow arched rock recess, worn carving and drapery, no modern architecture. Image 1 is the subject photo and image 2 is the project's line plate style reference. Follow the subject's actual silhouette and defining forms, removing glass cases, glare, signs, people, floors and modern backgrounds. Center the complete stone object with ample blank margin. Only clean fine charcoal-black contour lines and a few sparse material or relief marks. Represent inscriptions as abstract nonlegible marks; do not invent Chinese characters or text. Every blank canvas pixel must be flat opaque #FFFFFF. No gray background, gradients, shadows, paper grain, watercolor, colored ink, filled black masses, checkerboard or transparent canvas. 3:4 portrait composition.",
+  "generated_file": "assets/generated/sn_yaowang.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-f13260ae-b61c-4d93-9848-96657b35302e.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "caption": [
+    "石造像一龛 · 线稿",
+    "唐代约略 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d2b0db0ddcc259ebf1df2d6501e8c5ca5db4a057f3252b0e614d87f5fee6ce6d",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://you.ctrip.com/sight/tongchuan907/52663.html",
+      "image_url": "https://dimg04.c-ctrip.com/images/1mh5p12000ojhyditCB85_W_640_10000.jpg?proc=autoorient",
+      "author": "携程用户／原作者见来源页",
+      "license": "许可未明；仅作研究参考",
+      "reference_file": "assets/references/sn_yaowang-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

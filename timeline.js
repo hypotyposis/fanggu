@@ -8,7 +8,7 @@
   const endYear = 2026;
   const x = year => 76 + 1090 * (year <= 600 ? year / 600 * .18 : year <= 1250 ? .18 + (year - 600) / 650 * .54 : .72 + (year - 1250) / (endYear - 1250) * .28);
   const lane = (site, dynasties) => dynasties[site.dyn].country === 'JP' ? 'japan'
-    : site.timelineLane === 'north' || ['han', 'bei', 'beiqi', 'sui', 'liao', 'xixia', 'yuan', 'ming', 'modern'].includes(site.dyn) ? 'north' : 'south';
+    : site.timelineLane === 'north' || ['han', 'bei', 'beiqi', 'qiuci', 'sui', 'liao', 'xixia', 'yuan', 'ming', 'modern'].includes(site.dyn) ? 'north' : 'south';
   const trackY = { north: 91, south: 155, japan: 218 };
   function clusters(sites, dynasties) {
     const result = [];

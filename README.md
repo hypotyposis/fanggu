@@ -4,7 +4,7 @@
 
 A personal field guide to historic architecture — collect places to visit, keep check-in notes, and explore line-drawn halls, pagodas and grottoes from Han stone gateways to contemporary reconstructions.
 
-以细线描的笔意，记下走过与向往的古迹。当前提交目录收录217处，每处都有线稿和设色；新增条目默认未到访，已有浏览器记录优先。参照实景照片或历史图像逐张绘制，统一线描质感与透明交付图，沿用各朝代配色；初创、现存主体、后世重建和约略年代分别说明。
+以细线描的笔意，记下走过与向往的古迹。当前提交目录收录236处，每处都有线稿和设色；新增条目默认未到访，已有浏览器记录优先。参照实景照片或历史图像逐张绘制，统一线描质感与透明交付图，沿用各朝代配色；初创、现存主体、后世重建和约略年代分别说明。
 
 ## 打开
 
@@ -63,7 +63,7 @@ node --test tests/*.test.cjs
 
 完整测试会读取本地图版及考据 JSON 所列参考文件，新克隆须先补齐素材。修改图版时才运行生成脚本；输入、输出及检查范围见开发指南。个人状态以已有浏览器记录为准，新增条目默认未到访。
 
-设色清单覆盖 214 处，其中 211 张通过队列维护（含白底去底流程新增的辟支塔、上海四处、山西两处与安徽三处及河南四处），卢舍那大佛、佛光寺东大殿与应县木塔三张已由用户确认保持原样并定为正式版，详见 [正式版确认](assets/color-studies/v1/README.md)。批量图版的真实提示词和输入见 [完整提示词清单](assets/color-research/prompts.json)。
+设色清单覆盖 236 处，其中 233 张通过队列维护，卢舍那大佛、佛光寺东大殿与应县木塔三张已由用户确认保持原样并定为正式版，详见 [正式版确认](assets/color-studies/v1/README.md)。本次按[1961 年第一批国保名单的核对表](assets/research/first-batch-grotto-stone.json)补入 10 处石窟寺和 9 处石刻及其他类文物；革命遗址未纳入。新增图版保留逐图来源、提示词、白底原件哈希与待用户验收状态。批量图版的真实提示词和输入见 [完整提示词清单](assets/color-research/prompts.json)。
 
 ## 说明
 

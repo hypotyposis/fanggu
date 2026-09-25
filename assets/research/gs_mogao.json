@@ -1,0 +1,58 @@
+{
+  "id": "gs_mogao",
+  "subject": "第96窟外部九层楼",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "guan",
+  "license": "CC BY 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gs_mogao-photo.jpg"
+  ],
+  "source_note": "据所列照片绘莫高窟的第96窟外观；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Edit image 1, preserving the Mogao Cave 96 Nine-Storey Pavilion's overall stacked roof silhouette and proportions. Make it a SPARSE line plate matching the very light visual density of style image 2. Remove at least 80% of roof tile, beam, railing, cliff and wall markings; keep only clean delicate thin contours that define the roofs, posts, openings and simple cliff edge. Remove stray surrounding lines and noise completely. Make every blank pixel of the canvas perfectly flat opaque #FFFFFF white; black lines only. No gray backdrop, transparency, gradients, shadows, texture, filled masses, dark walls, hatch marks, lettering, figures or ground. Leave broad white space around a complete centered pavilion. This is a minimal ink drawing, not a technical engraving.",
+  "generated_file": "assets/generated/gs_mogao.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-cbd37afe-1b3e-45c6-9f5b-de29704d5d1c.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "第96窟外观 · 线稿",
+    "现见保护楼阁 · 非唐代原构"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "83208d015fcd301d7f1f7780022c9675eae893c91e228be386aacb89e1ff87ff",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/%E8%8E%AB%E9%AB%98%E7%AA%9F%E4%B9%9D%E5%B1%82%E6%A5%BC_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "guan",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "Taken on 5 October 2011",
+      "reference_file": "assets/references/gs_mogao-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}

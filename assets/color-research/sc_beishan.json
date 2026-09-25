@@ -1,0 +1,51 @@
+{
+  "id": "sc_beishan",
+  "name": "北山石龛 · 菩萨造像局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sc_beishan.png",
+    "assets/references/sc_beishan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Color this EXACT sparse black ink drawing, using photo 2 for actual present material color and image 3 as subdued matte atlas illustration style only. Subject: Dazu Beishan carved bodhisattva and attendants in aged gray-beige stone with dark recesses and restrained pigment remnants. LOCK image 1's subject silhouette, all figures, damage, 3:4 framing and generous white margins; do not zoom or crop. Preserve at least 80 pixels COMPLETELY BLANK PURE WHITE on all four canvas edges. Use matte mineral color areas and fine lines. No extra objects, figures, scenery, text, labels, cast shadow, texture outside subject, gradient, transparency or checkerboard. All blank pixels MUST be flat opaque pure #FFFFFF. This is a white matte original.",
+  "material_observations": "龛内石雕以灰米和赭褐为主，保留可见低饱和残色与暗凹处。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dazu_rock_carvings_beishan_1.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Dazu_rock_carvings_beishan_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Truthven",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2007-02-24",
+      "reference_file": "assets/references/sc_beishan-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "重庆市文旅委：北山摩崖造像",
+      "url": "https://whlyw.cq.gov.cn/zjwl/yzq/cqwlzy/zqwwzy/202405/t20240507_13182671.html"
+    }
+  ],
+  "output": "assets/colored/sc_beishan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-b23af29d-d69d-4b08-8ec6-fa5e21a1372e.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bc6a17392f4892fde649865af46684a4a895643b00dd1dff9e9ef9221a114578",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
+    }
+  }
+}

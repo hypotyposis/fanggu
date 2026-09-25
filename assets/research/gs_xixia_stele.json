@@ -1,0 +1,60 @@
+{
+  "id": "gs_xixia_stele",
+  "subject": "西夏文与汉文碑面",
+  "status": "complete",
+  "source_page": "https://touch.travel.qunar.com/comment/10157102399",
+  "image_url": "https://youimg1.c-ctrip.com/target/100k0x000000ljxz317E2.jpg",
+  "author": "去哪儿游记／原作者见来源页",
+  "license": "许可未明；仅作研究参考",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gs_xixia_stele-photo.jpg"
+  ],
+  "source_note": "据所列照片绘重修护国寺感应塔碑的西夏碑碑身；线描为现状意写，不作为实测图、碑文释读或历史复原。",
+  "prompt": "Create a precise sparse Chinese heritage ink LINE DRAWING of the Western Xia Stele of the Rebuilding of Huguo Temple's Ganying Pagoda: tall worn rectangular stone slab, gently rounded high upper corners, plain lower base and fields of eroded script. Image 1 is the subject photo and image 2 is the project's line plate style reference. Follow the actual photo's identifying silhouette, composition and present condition. Remove glass cases, glare, signs, flowers, people, floors and modern backgrounds. Center the complete object with ample margin. Only clean fine charcoal-black contour lines and a few sparse material or relief marks. Represent any inscriptions or maps with abstract nonlegible marks; do not invent Chinese characters or text. Every blank canvas pixel must be flat opaque #FFFFFF. No gray background, gradients, shadows, paper grain, watercolor, colored ink, filled black masses, checkerboard or transparent canvas. 3:4 portrait composition.",
+  "generated_file": "assets/generated/gs_xixia_stele.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d74f-e048-7001-b0d0-331dd5deb578/exec-dbe0e306-571d-42cc-b977-b0362c011550.png",
+  "dimensions": [
+    1086,
+    1448
+  ],
+  "caption": [
+    "西夏碑碑身 · 线稿",
+    "1094 · 现状意写"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b009693db7ffb1607576b38461303e741eb121939af97d9014cda635498fd039",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://touch.travel.qunar.com/comment/10157102399",
+      "image_url": "https://youimg1.c-ctrip.com/target/100k0x000000ljxz317E2.jpg",
+      "author": "去哪儿游记／原作者见来源页",
+      "license": "许可未明；仅作研究参考",
+      "reference_file": "assets/references/gs_xixia_stele-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "国务院公报：1961年第一批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "故宫博物院藏西夏碑拓本",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/32021?dep=P"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "照片主体与线稿轮廓已目检。",
+      "白底原件需经 white-matte.py 校验后生成透明交付图。"
+    ],
+    "limitations": "艺术意写；尚待用户逐图验收。"
+  },
+  "visual_review_status": "pending_user"
+}
