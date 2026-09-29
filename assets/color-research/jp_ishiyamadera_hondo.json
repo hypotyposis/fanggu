@@ -1,0 +1,56 @@
+{
+  "id": "jp_ishiyamadera_hondo",
+  "name": "石山寺本堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_ishiyamadera_hondo.png",
+    "assets/references/jp_ishiyamadera_hondo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_ishiyamadera_hondo; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: aged brown wood posts and beams, dark gray tile or weathered roof, pale plaster, subdued colored hanging textiles only if visible as permanent architectural fittings; keep the raised wooden platform. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "aged brown wood posts and beams, dark gray tile or weathered roof, pale plaster, subdued colored hanging textiles only if visible as permanent architectural fittings; keep the raised wooden platform",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ishiyamadera_hondo1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ishiyamadera_hondo1.jpg/1280px-Ishiyamadera_hondo1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "KENPEI",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reference_file": "assets/references/jp_ishiyamadera_hondo-photo.jpg",
+      "title": "File:Ishiyamadera hondo1.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "石山寺 · 本堂",
+      "url": "https://www.ishiyamadera.or.jp/guide/precincts"
+    }
+  ],
+  "output": "assets/colored/jp_ishiyamadera_hondo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-35303ad8-97ee-42a2-ad2d-eac42119438a.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "60927bea1d96d09c79aa6b0fa3e8e50c146bbf901d65fe579f938bb250397b40",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.637Z",
+    "sourceSha256": "60927bea1d96d09c79aa6b0fa3e8e50c146bbf901d65fe579f938bb250397b40",
+    "inputSha256": "12372214a01e7e163e52e6c2102e9cfe43bd4ee932adbb0430b2bd8518adb562",
+    "avifSha256": "ec6f7289d09b559443394b27d1ea0c07d525203f24a9cbe2d67a4327ca5ba0e7",
+    "statement": "验收没问题"
+  }
+}

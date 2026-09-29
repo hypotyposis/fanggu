@@ -1,0 +1,60 @@
+{
+  "id": "jp_manpukuji_daiou",
+  "name": "万福寺大雄宝殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_manpukuji_daiou.png",
+    "assets/references/jp_manpukuji_daiou-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_manpukuji_daiou; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: dark brown timber beams, pale plaster walls, charcoal gray clay roof tile, round windows and restrained red-brown accents; keep the broad main hall and round windows. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "dark brown timber beams, pale plaster walls, charcoal gray clay roof tile, round windows and restrained red-brown accents; keep the broad main hall and round windows",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg/1280px-260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_manpukuji_daiou-photo.jpg",
+      "title": "File:260117 Manpuku-ji Uji Kyoto pref Japan01s3.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "万福寺 · 境内建筑",
+      "url": "https://www.obakusan.or.jp/see/"
+    },
+    {
+      "title": "京都府教育委员会 · 万福寺建筑年代",
+      "url": "https://www.kyoto-be.ne.jp/bunkazai/cms/wp-content/uploads/2024/10/%E8%90%AC%E7%A6%8F%E5%AF%BA.pdf"
+    }
+  ],
+  "output": "assets/colored/jp_manpukuji_daiou.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-9f6c6321-84b4-47a7-8f61-580eb1438e8f.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9cb1a5840c277dda53611f91410f4819594f13fab17285581aaea6f325d33893",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.624Z",
+    "sourceSha256": "9cb1a5840c277dda53611f91410f4819594f13fab17285581aaea6f325d33893",
+    "inputSha256": "4cbb5b8badfd321322deef7148c77c9a8d1fc13d45fc4745740d72b71f4a1fd6",
+    "avifSha256": "189fa3915fe679a173e381c2130baafa4f9248be1dcb1c7f125962fc29800982",
+    "statement": "验收没问题"
+  }
+}

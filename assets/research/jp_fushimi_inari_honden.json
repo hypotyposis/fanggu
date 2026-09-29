@@ -1,0 +1,70 @@
+{
+  "id": "jp_fushimi_inari_honden",
+  "subject": "稻荷造本殿",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg/1280px-Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "そらみみ",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_fushimi_inari_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_fushimi_inari_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "实拍为本殿可见山墙侧；图版省略当日参拜临设与游人，不绘千本鸟居。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage line plate. Image 1 is documentary SUBJECT GEOMETRY ONLY for Fushimi Inari Taisha Honden, the actual extant 1499 shrine building. Preserve the characteristic large Inari-zukuri curved gable roof, red-orange timber framing, white wall fields and shrine proportions shown in the photo. Show the identifiable side/front elevation of this building; omit visitor tents, signs, tourists, torii, fencing and neighboring structures. Do not substitute the famous thousand torii corridor. Image 2 is ONLY the project's delicate fine black ink line style sample, never a subject-shape reference. Create a refined sparse BLACK INK architectural contour drawing on perfectly flat opaque PURE WHITE #FFFFFF background. Whole building centered, approximately straight-on, generous margins, landscape 1536x1024, roof/apex and base uncut. Fine neutral black contours and restrained structural detail; white unmarked inside and outside the subject. No colored fill, gray shading, cast shadow, gradient, paper grain, glow, checkerboard, lettering, labels, tourists, frame or watermark.",
+  "generated_file": "assets/generated/jp_fushimi_inari_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-1ac2d0ce-b45a-4e58-8430-5b575818dcbc.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "伏见稻荷大社 · 本殿",
+    "室町时代 · 1499年再建"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "460c9bf1f8de69fc252a6bacbadadc96b7378a17496723c741e63d3ffba96e3f",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg/1280px-Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_fushimi_inari_honden-photo.jpg",
+      "title": "File:Honden of Fushimi Inari Grand Shrine 2.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "伏见稻荷大社 · 本殿",
+      "url": "https://inari.jp/sp/map/spot_03/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看本批实拍参考、线稿母版和生成原稿。",
+      "绘制范围、屋顶层数与完整轮廓已逐图查看；等待用户最终验收。"
+    ],
+    "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
+  },
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.471Z",
+    "sourceSha256": "460c9bf1f8de69fc252a6bacbadadc96b7378a17496723c741e63d3ffba96e3f",
+    "statement": "验收没问题",
+    "lineSha256": "9c02fd0d8cb6716c724bc2bec0466643420f6568f755e099b052eeaf85e622d6"
+  }
+}

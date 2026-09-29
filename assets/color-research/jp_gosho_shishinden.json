@@ -1,0 +1,47 @@
+{
+  "id": "jp_gosho_shishinden",
+  "name": "京都御所紫宸殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_gosho_shishinden-line-input.png",
+    "assets/references/jp_gosho_shishinden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: Kyoto Imperial Palace Shishinden, the ACTUAL 1855 ceremonial hall: broad single-level nine-bay facade, huge gently sloped hinoki-bark roof, raised central stair and shaded veranda. Show the hall alone, not the nearby corridor or cherry tree. Material observations: Weathered warm-brown hinoki-bark roof, natural dark timber frame, pale plaster and wood panels, restrained stone steps.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto-gosho_Shishinden_zenkei-5.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Kyoto-gosho_Shishinden_zenkei-5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_gosho_shishinden-photo.jpg",
+      "title": "File:Kyoto-gosho Shishinden zenkei-5.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "宫内厅 · 京都御所紫宸殿",
+      "url": "https://kyoto-gosho.kunaicho.go.jp/building/2A1"
+    }
+  ],
+  "output": "assets/colored/jp_gosho_shishinden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-6b3d42b1-ca70-4d7f-a936-04aa0e12ddc6.png",
+  "width": 1563,
+  "height": 1006,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "03eefd4773cd3eed9c073d2c674fb8843e09ad89954eb15d47d30f3caffca97e",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

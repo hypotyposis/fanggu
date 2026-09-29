@@ -1,0 +1,62 @@
+{
+  "id": "jp_enryakuji_komponchudo",
+  "subject": "现存根本中堂外观",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo04n4272.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Enryakuji_Konponchudo04n4272.jpg/1280px-Enryakuji_Konponchudo04n4272.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "reference_files": [
+    "assets/references/jp_enryakuji_komponchudo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_enryakuji_komponchudo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存根本中堂于1640年再建；八世纪开创说的是寺院起点。 图版依有照片可见的主屋顶与前部入口绘制，不作内部复原。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage black ink line plate. Image 1 is a documentary view of the ACTUAL extant 1640 Konpon Chūdō at Enryaku-ji on Mount Hiei. Draw the large dark tiled main roof and low connected frontal entrance roof as visible, with restrained front timber supports and eaves. Exclude trees, autumn leaves, people, signpost. Do not infer unseen side or rear portions. Image 2 is only a sparse delicate contour style sample, not architectural geometry. Draw only the documented architectural subject as a complete study within the photographed visible range; centered landscape 1536x1024, whole silhouette uncropped. Fine black neutral contour lines, restrained internal detail, no large dark fills. Background should be flat opaque PURE WHITE #FFFFFF, or native transparency if returned. No ground shadow, gradient, paper grain, haze, color, people, text, frame, watermark, checkerboard.",
+  "generated_file": "assets/generated/jp_enryakuji_komponchudo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-6cd35536-bc47-43c3-ab45-8cd594f48788.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "延历寺 · 根本中堂",
+    "江户时代 · 1640年再建"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "e783578731afc818c660d5b3db225aee9198a13c767328668903c31235fbae01",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo04n4272.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Enryakuji_Konponchudo04n4272.jpg/1280px-Enryakuji_Konponchudo04n4272.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "reference_file": "assets/references/jp_enryakuji_komponchudo-photo.jpg",
+      "title": "File:Enryakuji Konponchudo04n4272.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 延历寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005617.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "jp_chionin_mieido",
+  "subject": "现存御影堂",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chionin_Mieido.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chionin_Mieido.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "PlusMinus",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_chionin_mieido-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_chionin_mieido-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存御影堂于宽永十六年（1639）再建。 图版只绘御影堂正面，不与1621年建成的知恩院三门混同。",
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage line plate. Image 1 is the actual monument PHOTO and controls geometry. Image 2 is ONLY the project black fine-contour STYLE sample; never transfer its Buddha subject. Draw the named Japanese building accurately as a complete, isolated elevation at nearly frontal view. Fine sparse black ink contours with a few structural lines; no broad dark fills, hatching, pencil grain or opaque silhouettes. Pure flat opaque WHITE #FFFFFF canvas, including every blank region inside and outside the subject. Center with generous margins. No shadow, gradient, texture, glow, checkerboard, color, text, labels, signage, people, foliage, surrounding buildings, watermark or frame. Subject: Chion-in Mieido main hall, the ACTUAL 1639 rebuilt hall shown in the photo, distinct from its giant Sanmon gate. Preserve wide hipped roof and deep entrance veranda of repeated timber columns; omit trees, signboards, visitors and paving.",
+  "generated_file": "assets/generated/jp_chionin_mieido.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-1a089383-e512-466c-961e-67f229040b5c.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "知恩院 · 御影堂",
+    "江户时代 · 1639年再建"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d5db921e1ee94e7cd3e9d9e6aa9cdec10fa7747bfe297e19b47c1d76de4cbf54",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chionin_Mieido.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chionin_Mieido.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "PlusMinus",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/jp_chionin_mieido-photo.jpg",
+      "title": "File:Chionin Mieido.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 知恩院御影堂",
+      "url": "https://ja.kyoto.travel/tourism/single01.php?category_id=&tourism_id=418"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本与生成原件。",
+      "检查主体范围、结构和轮廓；等待用户最终审图。"
+    ],
+    "limitations": "图版是依据实拍绘制的建筑示意，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

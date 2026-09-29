@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 321,
+  "count": 371,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -7203,6 +7203,1124 @@
       ],
       "output": "assets/colored/zj_yuefei.png",
       "record": "assets/color-research/zj_yuefei.json"
+    },
+    {
+      "id": "jp_kinkaku",
+      "name": "金阁寺",
+      "subject": "鹿苑寺舍利殿 · 现存复建",
+      "sub": "鹿苑寺舍利殿 · 现存复建",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_showa",
+      "types": [
+        "pavilion",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kinkaku.png",
+      "displayLine": "assets/plates/jp_kinkaku.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kinkaku.json",
+      "candidateReferences": [
+        "assets/references/jp_kinkaku-photo.jpg"
+      ],
+      "output": "assets/colored/jp_kinkaku.png",
+      "record": "assets/color-research/jp_kinkaku.json"
+    },
+    {
+      "id": "jp_ginkaku",
+      "name": "银阁寺",
+      "subject": "慈照寺观音殿",
+      "sub": "慈照寺观音殿",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "pavilion",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ginkaku.png",
+      "displayLine": "assets/plates/jp_ginkaku.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_ginkaku.json",
+      "candidateReferences": [
+        "assets/references/jp_ginkaku-photo-8.jpg"
+      ],
+      "output": "assets/colored/jp_ginkaku.png",
+      "record": "assets/color-research/jp_ginkaku.json"
+    },
+    {
+      "id": "jp_sensoji",
+      "name": "浅草寺",
+      "subject": "本堂 · 观音堂",
+      "sub": "本堂 · 观音堂",
+      "place": "日本 · 东京都 · 浅草",
+      "dyn": "jp_showa",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_sensoji.png",
+      "displayLine": "assets/plates/jp_sensoji.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/jp_sensoji.json",
+      "candidateReferences": [
+        "assets/references/jp_sensoji-photo.jpg"
+      ],
+      "output": "assets/colored/jp_sensoji.png",
+      "record": "assets/color-research/jp_sensoji.json"
+    },
+    {
+      "id": "jp_himeji",
+      "name": "姬路城",
+      "subject": "大天守与石垣",
+      "sub": "大天守与石垣",
+      "place": "日本 · 兵库县 · 姬路",
+      "dyn": "jp_edo",
+      "types": [
+        "castle"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_himeji.png",
+      "displayLine": "assets/plates/jp_himeji.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_himeji.json",
+      "candidateReferences": [
+        "assets/references/jp_himeji-photo.jpg"
+      ],
+      "output": "assets/colored/jp_himeji.png",
+      "record": "assets/color-research/jp_himeji.json"
+    },
+    {
+      "id": "jp_itsukushima",
+      "name": "严岛神社",
+      "subject": "本社临海社殿与回廊",
+      "sub": "本社临海社殿与回廊",
+      "place": "日本 · 广岛县 · 宫岛",
+      "dyn": "jp_kamakura",
+      "types": [
+        "shrine"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_itsukushima.png",
+      "displayLine": "assets/plates/jp_itsukushima.png",
+      "width": 1796,
+      "height": 876,
+      "originalResearch": "assets/research/jp_itsukushima.json",
+      "candidateReferences": [
+        "assets/references/jp_itsukushima-photo-4.jpg"
+      ],
+      "output": "assets/colored/jp_itsukushima.png",
+      "record": "assets/color-research/jp_itsukushima.json"
+    },
+    {
+      "id": "jp_nikko_toshogu",
+      "name": "日光东照宫",
+      "subject": "阳明门",
+      "sub": "阳明门",
+      "place": "日本 · 栃木县 · 日光",
+      "dyn": "jp_edo",
+      "types": [
+        "gate",
+        "shrine"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_nikko_toshogu.png",
+      "displayLine": "assets/plates/jp_nikko_toshogu.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_nikko_toshogu.json",
+      "candidateReferences": [
+        "assets/references/jp_nikko_toshogu-photo.jpg"
+      ],
+      "output": "assets/colored/jp_nikko_toshogu.png",
+      "record": "assets/color-research/jp_nikko_toshogu.json"
+    },
+    {
+      "id": "jp_daigoji_tower",
+      "name": "醍醐寺五重塔",
+      "subject": "五重塔",
+      "sub": "五重塔",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_heian",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_daigoji_tower.png",
+      "displayLine": "assets/plates/jp_daigoji_tower.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_daigoji_tower.json",
+      "candidateReferences": [
+        "assets/references/jp_daigoji_tower-photo.jpg"
+      ],
+      "output": "assets/colored/jp_daigoji_tower.png",
+      "record": "assets/color-research/jp_daigoji_tower.json"
+    },
+    {
+      "id": "jp_sanjusangendo",
+      "name": "三十三间堂",
+      "subject": "莲华王院本堂",
+      "sub": "莲华王院本堂",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_kamakura",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_sanjusangendo.png",
+      "displayLine": "assets/plates/jp_sanjusangendo.png",
+      "width": 1774,
+      "height": 887,
+      "originalResearch": "assets/research/jp_sanjusangendo.json",
+      "candidateReferences": [
+        "assets/references/jp_sanjusangendo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_sanjusangendo.png",
+      "record": "assets/color-research/jp_sanjusangendo.json"
+    },
+    {
+      "id": "jp_nijo_ninomaru",
+      "name": "二条城二之丸御殿",
+      "subject": "车寄及远侍外观",
+      "sub": "车寄及远侍外观",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "palace"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_nijo_ninomaru.png",
+      "displayLine": "assets/plates/jp_nijo_ninomaru.png",
+      "width": 1774,
+      "height": 887,
+      "originalResearch": "assets/research/jp_nijo_ninomaru.json",
+      "candidateReferences": [
+        "assets/references/jp_nijo_ninomaru-photo.jpg"
+      ],
+      "output": "assets/colored/jp_nijo_ninomaru.png",
+      "record": "assets/color-research/jp_nijo_ninomaru.json"
+    },
+    {
+      "id": "jp_yasaka_honden",
+      "name": "八坂神社本殿",
+      "subject": "祇园造本殿",
+      "sub": "祇园造本殿",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_yasaka_honden.png",
+      "displayLine": "assets/plates/jp_yasaka_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_yasaka_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_yasaka_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_yasaka_honden.png",
+      "record": "assets/color-research/jp_yasaka_honden.json"
+    },
+    {
+      "id": "jp_yakushiji_east",
+      "name": "药师寺东塔",
+      "subject": "东塔 · 三重六檐",
+      "sub": "东塔 · 三重六檐",
+      "place": "日本 · 奈良县 · 奈良",
+      "dyn": "jp_nara",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_yakushiji_east.png",
+      "displayLine": "assets/plates/jp_yakushiji_east.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_yakushiji_east.json",
+      "candidateReferences": [
+        "assets/references/jp_yakushiji_east-photo.jpg"
+      ],
+      "output": "assets/colored/jp_yakushiji_east.png",
+      "record": "assets/color-research/jp_yakushiji_east.json"
+    },
+    {
+      "id": "jp_gangoji_gokuraku",
+      "name": "元兴寺极乐坊本堂",
+      "subject": "极乐坊本堂",
+      "sub": "极乐坊本堂",
+      "place": "日本 · 奈良县 · 奈良",
+      "dyn": "jp_kamakura",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_gangoji_gokuraku.png",
+      "displayLine": "assets/plates/jp_gangoji_gokuraku.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_gangoji_gokuraku.json",
+      "candidateReferences": [
+        "assets/references/jp_gangoji_gokuraku-photo.jpg"
+      ],
+      "output": "assets/colored/jp_gangoji_gokuraku.png",
+      "record": "assets/color-research/jp_gangoji_gokuraku.json"
+    },
+    {
+      "id": "jp_kofukuji_hokuen",
+      "name": "兴福寺北圆堂",
+      "subject": "八角圆堂",
+      "sub": "八角圆堂",
+      "place": "日本 · 奈良县 · 奈良",
+      "dyn": "jp_kamakura",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kofukuji_hokuen.png",
+      "displayLine": "assets/plates/jp_kofukuji_hokuen.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kofukuji_hokuen.json",
+      "candidateReferences": [
+        "assets/references/jp_kofukuji_hokuen-photo.jpg"
+      ],
+      "output": "assets/colored/jp_kofukuji_hokuen.png",
+      "record": "assets/color-research/jp_kofukuji_hokuen.json"
+    },
+    {
+      "id": "jp_kasuga_honden",
+      "name": "春日大社四座本殿",
+      "subject": "四座春日造本殿",
+      "sub": "四座春日造本殿",
+      "place": "日本 · 奈良县 · 奈良",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kasuga_honden.png",
+      "displayLine": "assets/plates/jp_kasuga_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kasuga_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_kasuga_honden-photo1.jpg",
+        "assets/references/jp_kasuga_honden-photo2.jpg"
+      ],
+      "output": "assets/colored/jp_kasuga_honden.png",
+      "record": "assets/color-research/jp_kasuga_honden.json"
+    },
+    {
+      "id": "jp_sumiyoshi_honden",
+      "name": "住吉大社四座本殿",
+      "subject": "四座住吉造本殿",
+      "sub": "四座住吉造本殿",
+      "place": "日本 · 大阪府 · 大阪",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_sumiyoshi_honden.png",
+      "displayLine": "assets/plates/jp_sumiyoshi_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_sumiyoshi_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_sumiyoshi_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_sumiyoshi_honden.png",
+      "record": "assets/color-research/jp_sumiyoshi_honden.json"
+    },
+    {
+      "id": "jp_osaka_sengan",
+      "name": "大阪城千贯橹",
+      "subject": "现存橹与石垣",
+      "sub": "现存橹与石垣",
+      "place": "日本 · 大阪府 · 大阪",
+      "dyn": "jp_edo",
+      "types": [
+        "castle"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_osaka_sengan.png",
+      "displayLine": "assets/plates/jp_osaka_sengan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_osaka_sengan.json",
+      "candidateReferences": [
+        "assets/references/jp_osaka_sengan-photo.jpg"
+      ],
+      "output": "assets/colored/jp_osaka_sengan.png",
+      "record": "assets/color-research/jp_osaka_sengan.json"
+    },
+    {
+      "id": "jp_jigenin_tahoto",
+      "name": "慈眼院多宝塔",
+      "subject": "多宝塔",
+      "sub": "多宝塔",
+      "place": "日本 · 大阪府 · 泉佐野",
+      "dyn": "jp_kamakura",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_jigenin_tahoto.png",
+      "displayLine": "assets/plates/jp_jigenin_tahoto.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_jigenin_tahoto.json",
+      "candidateReferences": [
+        "assets/references/jp_jigenin_tahoto-photo.jpg"
+      ],
+      "output": "assets/colored/jp_jigenin_tahoto.png",
+      "record": "assets/color-research/jp_jigenin_tahoto.json"
+    },
+    {
+      "id": "jp_kanshinji_kondo",
+      "name": "观心寺金堂",
+      "subject": "金堂",
+      "sub": "金堂",
+      "place": "日本 · 大阪府 · 河内长野",
+      "dyn": "jp_muromachi",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kanshinji_kondo.png",
+      "displayLine": "assets/plates/jp_kanshinji_kondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kanshinji_kondo.json",
+      "candidateReferences": [
+        "assets/references/jp_kanshinji_kondo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_kanshinji_kondo.png",
+      "record": "assets/color-research/jp_kanshinji_kondo.json"
+    },
+    {
+      "id": "jp_tofukuji_sanmon",
+      "name": "东福寺三门",
+      "subject": "现存三门",
+      "sub": "现存三门",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_tofukuji_sanmon.png",
+      "displayLine": "assets/plates/jp_tofukuji_sanmon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_tofukuji_sanmon.json",
+      "candidateReferences": [
+        "assets/references/jp_tofukuji_sanmon-photo.jpg"
+      ],
+      "output": "assets/colored/jp_tofukuji_sanmon.png",
+      "record": "assets/color-research/jp_tofukuji_sanmon.json"
+    },
+    {
+      "id": "jp_fushimi_inari_honden",
+      "name": "伏见稻荷大社本殿",
+      "subject": "稻荷造本殿",
+      "sub": "稻荷造本殿",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_fushimi_inari_honden.png",
+      "displayLine": "assets/plates/jp_fushimi_inari_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_fushimi_inari_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_fushimi_inari_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_fushimi_inari_honden.png",
+      "record": "assets/color-research/jp_fushimi_inari_honden.json"
+    },
+    {
+      "id": "jp_kitano_honden",
+      "name": "北野天满宫本殿",
+      "subject": "本殿、石之间与拜殿",
+      "sub": "本殿、石之间与拜殿",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kitano_honden.png",
+      "displayLine": "assets/plates/jp_kitano_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kitano_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_kitano_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_kitano_honden.png",
+      "record": "assets/color-research/jp_kitano_honden.json"
+    },
+    {
+      "id": "jp_ninnaji_kondo",
+      "name": "仁和寺金堂",
+      "subject": "旧宫中紫宸殿移建",
+      "sub": "旧宫中紫宸殿移建",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_momoyama",
+      "types": [
+        "hall",
+        "palace"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ninnaji_kondo.png",
+      "displayLine": "assets/plates/jp_ninnaji_kondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_ninnaji_kondo.json",
+      "candidateReferences": [
+        "assets/references/jp_ninnaji_kondo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_ninnaji_kondo.png",
+      "record": "assets/color-research/jp_ninnaji_kondo.json"
+    },
+    {
+      "id": "jp_hongwanji_hiunkaku",
+      "name": "西本愿寺飞云阁",
+      "subject": "滴翠园三层楼阁",
+      "sub": "滴翠园三层楼阁",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_momoyama",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_hongwanji_hiunkaku.png",
+      "displayLine": "assets/plates/jp_hongwanji_hiunkaku.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_hongwanji_hiunkaku.json",
+      "candidateReferences": [
+        "assets/references/jp_hongwanji_hiunkaku-photo.jpg"
+      ],
+      "output": "assets/colored/jp_hongwanji_hiunkaku.png",
+      "record": "assets/color-research/jp_hongwanji_hiunkaku.json"
+    },
+    {
+      "id": "jp_manpukuji_daiou",
+      "name": "万福寺大雄宝殿",
+      "subject": "黄檗宗大雄宝殿",
+      "sub": "黄檗宗大雄宝殿",
+      "place": "日本 · 京都府 · 宇治",
+      "dyn": "jp_edo",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_manpukuji_daiou.png",
+      "displayLine": "assets/plates/jp_manpukuji_daiou.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_manpukuji_daiou.json",
+      "candidateReferences": [
+        "assets/references/jp_manpukuji_daiou-photo.jpg"
+      ],
+      "output": "assets/colored/jp_manpukuji_daiou.png",
+      "record": "assets/color-research/jp_manpukuji_daiou.json"
+    },
+    {
+      "id": "jp_iwashimizu_honden",
+      "name": "石清水八幡宫本社",
+      "subject": "楼门与回廊正面局部",
+      "sub": "楼门与回廊正面局部",
+      "place": "日本 · 京都府 · 八幡",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine",
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_iwashimizu_honden.png",
+      "displayLine": "assets/plates/jp_iwashimizu_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_iwashimizu_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_iwashimizu_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_iwashimizu_honden.png",
+      "record": "assets/color-research/jp_iwashimizu_honden.json"
+    },
+    {
+      "id": "jp_ishiyamadera_tahoto",
+      "name": "石山寺多宝塔",
+      "subject": "多宝塔",
+      "sub": "多宝塔",
+      "place": "日本 · 滋贺县 · 大津",
+      "dyn": "jp_kamakura",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ishiyamadera_tahoto.png",
+      "displayLine": "assets/plates/jp_ishiyamadera_tahoto.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_ishiyamadera_tahoto.json",
+      "candidateReferences": [
+        "assets/references/jp_ishiyamadera_tahoto-photo.jpg"
+      ],
+      "output": "assets/colored/jp_ishiyamadera_tahoto.png",
+      "record": "assets/color-research/jp_ishiyamadera_tahoto.json"
+    },
+    {
+      "id": "jp_ishiyamadera_hondo",
+      "name": "石山寺本堂",
+      "subject": "正堂与礼堂",
+      "sub": "正堂与礼堂",
+      "place": "日本 · 滋贺县 · 大津",
+      "dyn": "jp_heian",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ishiyamadera_hondo.png",
+      "displayLine": "assets/plates/jp_ishiyamadera_hondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_ishiyamadera_hondo.json",
+      "candidateReferences": [
+        "assets/references/jp_ishiyamadera_hondo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_ishiyamadera_hondo.png",
+      "record": "assets/color-research/jp_ishiyamadera_hondo.json"
+    },
+    {
+      "id": "jp_chionin_sanmon",
+      "name": "知恩院三门",
+      "subject": "现存三门",
+      "sub": "现存三门",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_chionin_sanmon.png",
+      "displayLine": "assets/plates/jp_chionin_sanmon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_chionin_sanmon.json",
+      "candidateReferences": [
+        "assets/references/jp_chionin_sanmon-photo.jpg"
+      ],
+      "output": "assets/colored/jp_chionin_sanmon.png",
+      "record": "assets/color-research/jp_chionin_sanmon.json"
+    },
+    {
+      "id": "jp_nanzenji_sanmon",
+      "name": "南禅寺三门",
+      "subject": "现存三门",
+      "sub": "现存三门",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_nanzenji_sanmon.png",
+      "displayLine": "assets/plates/jp_nanzenji_sanmon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_nanzenji_sanmon.json",
+      "candidateReferences": [
+        "assets/references/jp_nanzenji_sanmon-photo.jpg"
+      ],
+      "output": "assets/colored/jp_nanzenji_sanmon.png",
+      "record": "assets/color-research/jp_nanzenji_sanmon.json"
+    },
+    {
+      "id": "jp_ujigami_honden",
+      "name": "宇治上神社本殿",
+      "subject": "本殿外护屋",
+      "sub": "本殿外护屋",
+      "place": "日本 · 京都府 · 宇治",
+      "dyn": "jp_heian",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ujigami_honden.png",
+      "displayLine": "assets/plates/jp_ujigami_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_ujigami_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_ujigami_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_ujigami_honden.png",
+      "record": "assets/color-research/jp_ujigami_honden.json"
+    },
+    {
+      "id": "jp_ujigami_haiden",
+      "name": "宇治上神社拜殿",
+      "subject": "拜殿",
+      "sub": "拜殿",
+      "place": "日本 · 京都府 · 宇治",
+      "dyn": "jp_kamakura",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ujigami_haiden.png",
+      "displayLine": "assets/plates/jp_ujigami_haiden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_ujigami_haiden.json",
+      "candidateReferences": [
+        "assets/references/jp_ujigami_haiden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_ujigami_haiden.png",
+      "record": "assets/color-research/jp_ujigami_haiden.json"
+    },
+    {
+      "id": "jp_kozanji_sekisuiin",
+      "name": "高山寺石水院",
+      "subject": "石水院开放廊内景",
+      "sub": "石水院开放廊内景",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_kamakura",
+      "types": [
+        "hall",
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kozanji_sekisuiin.png",
+      "displayLine": "assets/plates/jp_kozanji_sekisuiin.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kozanji_sekisuiin.json",
+      "candidateReferences": [
+        "assets/references/jp_kozanji_sekisuiin-photo.jpg"
+      ],
+      "output": "assets/colored/jp_kozanji_sekisuiin.png",
+      "record": "assets/color-research/jp_kozanji_sekisuiin.json"
+    },
+    {
+      "id": "jp_kamigamo_honden",
+      "name": "上贺茂神社本殿与权殿",
+      "subject": "本殿与权殿前部",
+      "sub": "本殿与权殿前部",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_kamigamo_honden.png",
+      "displayLine": "assets/plates/jp_kamigamo_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_kamigamo_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_kamigamo_honden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_kamigamo_honden.png",
+      "record": "assets/color-research/jp_kamigamo_honden.json"
+    },
+    {
+      "id": "jp_shimogamo_honden",
+      "name": "下鸭神社东西本殿",
+      "subject": "东西本殿前部示意",
+      "sub": "东西本殿前部示意",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_shimogamo_honden.png",
+      "displayLine": "assets/plates/jp_shimogamo_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_shimogamo_honden.json",
+      "candidateReferences": [
+        "assets/references/jp_shimogamo_honden-photo.jpg",
+        "assets/references/jp_shimogamo_honden-east-photo.jpg"
+      ],
+      "output": "assets/colored/jp_shimogamo_honden.png",
+      "record": "assets/color-research/jp_shimogamo_honden.json"
+    },
+    {
+      "id": "jp_enryakuji_komponchudo",
+      "name": "延历寺根本中堂",
+      "subject": "现存根本中堂外观",
+      "sub": "现存根本中堂外观",
+      "place": "日本 · 滋贺县 · 大津（比叡山）",
+      "dyn": "jp_edo",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_enryakuji_komponchudo.png",
+      "displayLine": "assets/plates/jp_enryakuji_komponchudo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_enryakuji_komponchudo.json",
+      "candidateReferences": [
+        "assets/references/jp_enryakuji_komponchudo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_enryakuji_komponchudo.png",
+      "record": "assets/color-research/jp_enryakuji_komponchudo.json"
+    },
+    {
+      "id": "jp_katsura_koshoin",
+      "name": "桂离宫古书院",
+      "subject": "古书院",
+      "sub": "古书院",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "palace",
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_katsura_koshoin.png",
+      "displayLine": "assets/plates/jp_katsura_koshoin.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_katsura_koshoin.json",
+      "candidateReferences": [
+        "assets/references/jp_katsura_koshoin-photo.jpg"
+      ],
+      "output": "assets/colored/jp_katsura_koshoin.png",
+      "record": "assets/color-research/jp_katsura_koshoin.json"
+    },
+    {
+      "id": "jp_joruriji_hondo",
+      "name": "净琉璃寺本堂",
+      "subject": "九体阿弥陀堂",
+      "sub": "九体阿弥陀堂",
+      "place": "日本 · 京都府 · 木津川",
+      "dyn": "jp_heian",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_joruriji_hondo.png",
+      "displayLine": "assets/plates/jp_joruriji_hondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_joruriji_hondo.json",
+      "candidateReferences": [
+        "assets/references/jp_joruriji_hondo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_joruriji_hondo.png",
+      "record": "assets/color-research/jp_joruriji_hondo.json"
+    },
+    {
+      "id": "jp_joruriji_tower",
+      "name": "净琉璃寺三重塔",
+      "subject": "三重塔",
+      "sub": "三重塔",
+      "place": "日本 · 京都府 · 木津川",
+      "dyn": "jp_heian",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_joruriji_tower.png",
+      "displayLine": "assets/plates/jp_joruriji_tower.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_joruriji_tower.json",
+      "candidateReferences": [
+        "assets/references/jp_joruriji_tower-photo.jpg"
+      ],
+      "output": "assets/colored/jp_joruriji_tower.png",
+      "record": "assets/color-research/jp_joruriji_tower.json"
+    },
+    {
+      "id": "jp_ryoanji_garden",
+      "name": "龙安寺石庭",
+      "subject": "方丈枯山水石庭",
+      "sub": "方丈枯山水石庭",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "garden"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_ryoanji_garden.png",
+      "displayLine": "assets/plates/jp_ryoanji_garden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_ryoanji_garden.json",
+      "candidateReferences": [
+        "assets/references/jp_ryoanji_garden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_ryoanji_garden.png",
+      "record": "assets/color-research/jp_ryoanji_garden.json"
+    },
+    {
+      "id": "jp_tenryuji_garden",
+      "name": "天龙寺曹源池庭园",
+      "subject": "曹源池庭园",
+      "sub": "曹源池庭园",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "garden"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_tenryuji_garden.png",
+      "displayLine": "assets/plates/jp_tenryuji_garden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_tenryuji_garden.json",
+      "candidateReferences": [
+        "assets/references/jp_tenryuji_garden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_tenryuji_garden.png",
+      "record": "assets/color-research/jp_tenryuji_garden.json"
+    },
+    {
+      "id": "jp_saihoji_garden",
+      "name": "西芳寺庭园",
+      "subject": "黄金池与苔庭",
+      "sub": "黄金池与苔庭",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "garden"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_saihoji_garden.png",
+      "displayLine": "assets/plates/jp_saihoji_garden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_saihoji_garden.json",
+      "candidateReferences": [
+        "assets/references/jp_saihoji_garden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_saihoji_garden.png",
+      "record": "assets/color-research/jp_saihoji_garden.json"
+    },
+    {
+      "id": "jp_hokanji_tower",
+      "name": "法观寺八坂塔",
+      "subject": "现存五重塔",
+      "sub": "现存五重塔",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_hokanji_tower.png",
+      "displayLine": "assets/plates/jp_hokanji_tower.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_hokanji_tower.json",
+      "candidateReferences": [
+        "assets/references/jp_hokanji_tower-photo.jpg"
+      ],
+      "output": "assets/colored/jp_hokanji_tower.png",
+      "record": "assets/color-research/jp_hokanji_tower.json"
+    },
+    {
+      "id": "jp_gosho_shishinden",
+      "name": "京都御所紫宸殿",
+      "subject": "现存正殿",
+      "sub": "现存正殿",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "palace",
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_gosho_shishinden.png",
+      "displayLine": "assets/plates/jp_gosho_shishinden.png",
+      "width": 1563,
+      "height": 1006,
+      "originalResearch": "assets/research/jp_gosho_shishinden.json",
+      "candidateReferences": [
+        "assets/references/jp_gosho_shishinden-photo.jpg"
+      ],
+      "output": "assets/colored/jp_gosho_shishinden.png",
+      "record": "assets/color-research/jp_gosho_shishinden.json"
+    },
+    {
+      "id": "jp_daitokuji_karamon",
+      "name": "大德寺唐门",
+      "subject": "本坊唐门",
+      "sub": "本坊唐门",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_momoyama",
+      "types": [
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_daitokuji_karamon.png",
+      "displayLine": "assets/plates/jp_daitokuji_karamon.png",
+      "width": 1400,
+      "height": 1123,
+      "originalResearch": "assets/research/jp_daitokuji_karamon.json",
+      "candidateReferences": [
+        "assets/references/jp_daitokuji_karamon-photo.jpg"
+      ],
+      "output": "assets/colored/jp_daitokuji_karamon.png",
+      "record": "assets/color-research/jp_daitokuji_karamon.json"
+    },
+    {
+      "id": "jp_daitokuji_hojo",
+      "name": "大德寺方丈",
+      "subject": "本坊方丈",
+      "sub": "本坊方丈",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_daitokuji_hojo.png",
+      "displayLine": "assets/plates/jp_daitokuji_hojo.png",
+      "width": 1774,
+      "height": 887,
+      "originalResearch": "assets/research/jp_daitokuji_hojo.json",
+      "candidateReferences": [
+        "assets/references/jp_daitokuji_hojo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_daitokuji_hojo.png",
+      "record": "assets/color-research/jp_daitokuji_hojo.json"
+    },
+    {
+      "id": "jp_jishoji_togudo",
+      "name": "慈照寺东求堂",
+      "subject": "现存东求堂",
+      "sub": "现存东求堂",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_muromachi",
+      "types": [
+        "hall",
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_jishoji_togudo.png",
+      "displayLine": "assets/plates/jp_jishoji_togudo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_jishoji_togudo.json",
+      "candidateReferences": [
+        "assets/references/jp_jishoji_togudo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_jishoji_togudo.png",
+      "record": "assets/color-research/jp_jishoji_togudo.json"
+    },
+    {
+      "id": "jp_toji_kondo",
+      "name": "东寺金堂",
+      "subject": "现存金堂",
+      "sub": "现存金堂",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_momoyama",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_toji_kondo.png",
+      "displayLine": "assets/plates/jp_toji_kondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_toji_kondo.json",
+      "candidateReferences": [
+        "assets/references/jp_toji_kondo-photo.jpg"
+      ],
+      "output": "assets/colored/jp_toji_kondo.png",
+      "record": "assets/color-research/jp_toji_kondo.json"
+    },
+    {
+      "id": "jp_daigoji_sanboin",
+      "name": "醍醐寺三宝院表书院",
+      "subject": "表书院",
+      "sub": "表书院",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_momoyama",
+      "types": [
+        "residence"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_daigoji_sanboin.png",
+      "displayLine": "assets/plates/jp_daigoji_sanboin.png",
+      "width": 1774,
+      "height": 887,
+      "originalResearch": "assets/research/jp_daigoji_sanboin.json",
+      "candidateReferences": [
+        "assets/references/jp_daigoji_sanboin-photo.jpg"
+      ],
+      "output": "assets/colored/jp_daigoji_sanboin.png",
+      "record": "assets/color-research/jp_daigoji_sanboin.json"
+    },
+    {
+      "id": "jp_hongwanji_goeido",
+      "name": "西本愿寺御影堂",
+      "subject": "现存御影堂",
+      "sub": "现存御影堂",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_hongwanji_goeido.png",
+      "displayLine": "assets/plates/jp_hongwanji_goeido.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_hongwanji_goeido.json",
+      "candidateReferences": [
+        "assets/references/jp_hongwanji_goeido-photo.jpg"
+      ],
+      "output": "assets/colored/jp_hongwanji_goeido.png",
+      "record": "assets/color-research/jp_hongwanji_goeido.json"
+    },
+    {
+      "id": "jp_chionin_mieido",
+      "name": "知恩院御影堂",
+      "subject": "现存御影堂",
+      "sub": "现存御影堂",
+      "place": "日本 · 京都府 · 京都",
+      "dyn": "jp_edo",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/jp_chionin_mieido.png",
+      "displayLine": "assets/plates/jp_chionin_mieido.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_chionin_mieido.json",
+      "candidateReferences": [
+        "assets/references/jp_chionin_mieido-photo.jpg"
+      ],
+      "output": "assets/colored/jp_chionin_mieido.png",
+      "record": "assets/color-research/jp_chionin_mieido.json"
     }
   ]
 }

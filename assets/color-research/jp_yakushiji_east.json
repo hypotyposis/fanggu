@@ -1,0 +1,46 @@
+{
+  "id": "jp_yakushiji_east",
+  "name": "药师寺东塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_yakushiji_east.png",
+    "assets/references/jp_yakushiji_east-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_yakushiji_east; preserve its silhouette, framing, roof count, openings and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Dark weathered timber, pale ivory wall panels, dark gray historic roof tiles and muted bronze finial; distinguish three storeys and their skirt eaves. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "Dark weathered timber, pale ivory wall panels, dark gray historic roof tiles and muted bronze finial; distinguish three storeys and their skirt eaves.",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yakushiji_Temple_East-Pagoda.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Yakushiji_Temple_East-Pagoda.jpg/1280px-Yakushiji_Temple_East-Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/jp_yakushiji_east-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "药师寺 · 东塔",
+      "url": "https://yakushiji.or.jp/guide/garan_toto.html"
+    }
+  ],
+  "output": "assets/colored/jp_yakushiji_east.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-82b172b8-be7c-46e0-b4ac-ff80016decbb.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e4398f19447e302a4c75c40da70c39fd275676a38e31e2a64a95434ba7ad5e95",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿及实拍材料色；不等于用户视觉验收。"
+    }
+  }
+}

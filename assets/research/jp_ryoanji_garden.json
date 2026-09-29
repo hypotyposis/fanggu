@@ -1,0 +1,62 @@
+{
+  "id": "jp_ryoanji_garden",
+  "subject": "方丈枯山水石庭",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:RyoanJi-Dry_garden.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/RyoanJi-Dry_garden.jpg/1280px-RyoanJi-Dry_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Stephane D'Alu",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_ryoanji_garden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_ryoanji_garden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "龙安寺石庭在方丈南侧，以白砂、十五石和土墙构成。 图版依据一处实拍视角绘石庭局部，不用假造的全景替代可见石组。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage atlas black ink line plate. Image 1 is documentary photograph of the ACTUAL place and determines subject geometry. Image 2 is ONLY a thin black contour style reference, never the subject. Exact subject: Ryōan-ji dry stone garden in Kyoto, NOT a temple building. Image 1 shows the actual raked white gravel plane, stone groups on moss islands, and long earthen rear wall. Draw a restrained low oblique view of the GARDEN ITSELF, with recognizable stone placements, low wall and raking arcs. Do not add a hall, pond or other landscape. Landscape 1536x1024, complete subject centered with generous margins, fine accurate sparse black ink outlines, minimal hatching, no dark filled masses. Background intended perfectly flat opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. No people, unrelated architecture, modern signs, text, shadows, gradient, paper texture, glow, frame or watermark.",
+  "generated_file": "assets/generated/jp_ryoanji_garden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-474604e5-4c56-46f0-b44f-ece432838d6e.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "龙安寺 · 石庭局部",
+    "室町时代 · 年代未详"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "e81800730889c3c1f303d13fbfe8f0246d90770a86c51b840fb93e56b708c6ff",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:RyoanJi-Dry_garden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/RyoanJi-Dry_garden.jpg/1280px-RyoanJi-Dry_garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Stephane D'Alu",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/jp_ryoanji_garden-photo.jpg",
+      "title": "File:RyoanJi-Dry garden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 龙安寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005637.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

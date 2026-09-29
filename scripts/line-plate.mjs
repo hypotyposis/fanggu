@@ -4,8 +4,17 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 export function recolorLinePlate(original, target, color, legacySha256, preparation, { prototype = false } = {}) {
+  if (preparation?.method === 'adaptive-ink-v1' && !prototype) {
+    throw new Error(`Adaptive ink plate requires visual prototype review: ${original}`);
+  }
   if (prototype) {
-    execFileSync('python3', ['-B', fileURLToPath(new URL('./prototype-matte.py', import.meta.url)), original, target, '--line-color', color]);
+    const adaptive = preparation?.method === 'adaptive-ink-v1';
+    if (adaptive) {
+      const sourceHash = createHash('sha256').update(readFileSync(original)).digest('hex');
+      if (preparation.sourceSha256 !== sourceHash) throw new Error(`Adaptive ink source hash mismatch: ${original}`);
+    }
+    execFileSync('python3', ['-B', fileURLToPath(new URL('./prototype-matte.py', import.meta.url)), original, target,
+      '--line-color', color, ...(adaptive ? ['--adaptive-ink'] : [])]);
     return;
   }
   const [minAlpha, maxAlpha] = execFileSync('magick', [original, '-alpha', 'on', '-format', '%[fx:minima.a] %[fx:maxima.a]', 'info:'], { encoding: 'utf8' }).split(' ').map(Number);

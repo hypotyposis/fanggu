@@ -1,0 +1,61 @@
+{
+  "id": "jp_itsukushima",
+  "subject": "严岛神社本社临海社殿群与回廊",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20100723_Miyajima_Itsukushima_5189.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/20100723_Miyajima_Itsukushima_5189.jpg/1920px-20100723_Miyajima_Itsukushima_5189.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Jakub Hałun",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_itsukushima-photo-4.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_itsukushima-photo-4.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "所绘范围为海侧建筑群，并非每一构件均建于1241年；图版为宽幅现状意写。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL main shrine waterfront buildings of Itsukushima Shrine, Miyajima, Japan; use its geometry. Image 2 is ONLY the project's fine black ink line style sample. Draw the low, long shrine halls and connected open colonnade standing on slender posts above the tidal water as seen in the photo. Keep the staggered Japanese gabled roofs and the rhythmic posts and railings. Include just a few waterline strokes, omit reflection. This is the MAIN SHRINE waterfront group, not merely the offshore red torii, not a pagoda. Whole selected group centered, landscape framing with generous white margin. Fine neutral BLACK contour lines, sparse selective details, no solid black fills. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and around structure. No mountains, forest, tourists, sky, shadows, gradient, paper texture, glow, checkerboard, transparency, text, border or watermark.",
+  "generated_file": "assets/generated/jp_itsukushima.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-e1a6b263-f429-4969-b09c-f6b992c79d57.png",
+  "dimensions": [
+    1796,
+    876
+  ],
+  "caption": [
+    "严岛神社本社临海社殿群与回廊 · 线稿",
+    "按现存主体绘制"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "41bbecb29624891dc64bd971d13b82e1422d4428c4aa7aff1db06b8802418083",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20100723_Miyajima_Itsukushima_5189.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/20100723_Miyajima_Itsukushima_5189.jpg/1920px-20100723_Miyajima_Itsukushima_5189.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_itsukushima-photo-4.jpg",
+      "author": "Jakub Hałun"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "UNESCO：严岛神社存世社殿与重建沿革",
+      "url": "https://whc.unesco.org/archive/advisory_body_evaluation/776.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、风格母版与生成原稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "所绘范围为海侧建筑群，并非每一构件均建于1241年；图版为宽幅现状意写。"
+  },
+  "visual_review_status": "pending_user"
+}

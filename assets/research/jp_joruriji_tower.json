@@ -1,0 +1,62 @@
+{
+  "id": "jp_joruriji_tower",
+  "subject": "三重塔",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Joruri-ji_temple_three-storied_pagoda_in_spring_(right-side).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Joruri-ji_temple_three-storied_pagoda_in_spring_%28right-side%29.jpg/1280px-Joruri-ji_temple_three-storied_pagoda_in_spring_%28right-side%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "MirokunomichiProject",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/jp_joruriji_tower-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_joruriji_tower-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "三重塔为平安后期建筑，1178年从京都移筑到净琉璃寺。 图版绘完整三层塔身和相轮，不把迁建年份误写为塔的始建年。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu Japanese heritage line plate. Image 1 is an unobstructed documentary photograph of the ACTUAL late-Heian three-storey pagoda at Jōruri-ji in Kizugawa, moved to site in 1178. Draw the complete three diminishing roof tiers and finial, bracket groups, vermilion post rhythm, white first-floor wall panels and raised base as seen. Exclude trees, people, foreground railings and offerings. Portrait 1024x1536 with full finial and base uncropped. The last image is ONLY the project's delicate black ink contour STYLE sample; never transfer its subject. Fine sparse accurate black line work, minimal hatching and no large dark fills. Background should be completely blank opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. Whole subject centered with generous margins. No shadow, gradient, paper grain, glow, color, text, labels, modern fixtures, frame, watermark or checkerboard.",
+  "generated_file": "assets/generated/jp_joruriji_tower.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-15575fd4-9d09-4ca9-8afe-e76923bb9b9c.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "净琉璃寺 · 三重塔",
+    "平安后期原构 · 1178年移筑"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "36849c17820c011c9393743cebc62a1ed751bc65cc7fbdd310b5ec34ba93972c",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Joruri-ji_temple_three-storied_pagoda_in_spring_(right-side).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Joruri-ji_temple_three-storied_pagoda_in_spring_%28right-side%29.jpg/1280px-Joruri-ji_temple_three-storied_pagoda_in_spring_%28right-side%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "MirokunomichiProject",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_joruriji_tower-photo.jpg",
+      "title": "File:Joruri-ji temple three-storied pagoda in spring (right-side).jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都府 · 净琉璃寺三重塔",
+      "url": "https://www.pref.kyoto.jp/kyotoyamashiro/pdf/hihou_hibutsu_kidugawashi.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

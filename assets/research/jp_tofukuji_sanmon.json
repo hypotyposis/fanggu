@@ -1,0 +1,70 @@
+{
+  "id": "jp_tofukuji_sanmon",
+  "subject": "现存三门",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_Tofuku-ji_San-mon_3.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Kyoto_Tofuku-ji_San-mon_3.jpg/1280px-Kyoto_Tofuku-ji_San-mon_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Zairon",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_tofukuji_sanmon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_tofukuji_sanmon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "实拍展示现存1425年山门的完整正面；图版省略前方低矮栏杆与周围景物。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage line plate. Image 1 is a documentary photograph of the ACTUAL extant Tofuku-ji Sanmon in Kyoto, completed 1425; use it for architectural geometry. Image 2 is ONLY the project's delicate fine black ink style sample, NOT a building-shape reference. Draw the complete two-storey five-bay three-passage Zen temple gate, with its wide tiled upper and lower roofs, broad open ground level, white end-wall infills, thin timber posts and roof brackets. Match the straight-on facade and overall proportions in Image 1 while omitting trees, sky, people, low front fence and neighboring buildings. Refined sparse black ink contour drawing, fine neutral lines and restrained internal structure, no dark fills. Landscape 1536x1024; entire gate centered, about 82% width, roof and base uncut. Perfectly flat opaque PURE WHITE #FFFFFF canvas outside and inside open passages. No shadow, gradient, paper grain, haze, checkerboard, color, text, symbols, frame or watermark.",
+  "generated_file": "assets/generated/jp_tofukuji_sanmon.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-3369703e-d50a-4105-bb57-e88680a29cca.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "东福寺 · 三门",
+    "室町时代 · 1425年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_Tofuku-ji_San-mon_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Kyoto_Tofuku-ji_San-mon_3.jpg/1280px-Kyoto_Tofuku-ji_San-mon_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_tofukuji_sanmon-photo.jpg",
+      "title": "File:Kyoto Tofuku-ji San-mon 3.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "东福寺 · 三门解说",
+      "url": "https://tofukuji.jp/guide/sanmon_gate/en/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看本批实拍参考、线稿母版和生成原稿。",
+      "绘制范围、屋顶层数与完整轮廓已逐图查看；等待用户最终验收。"
+    ],
+    "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
+  },
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.467Z",
+    "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
+    "statement": "验收没问题",
+    "lineSha256": "bf7ec623ab60f7b5c3746db4921b73459ffe630931af56e27975e1c321176b80"
+  }
+}

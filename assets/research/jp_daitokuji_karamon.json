@@ -1,0 +1,62 @@
+{
+  "id": "jp_daitokuji_karamon",
+  "subject": "本坊唐门",
+  "status": "complete",
+  "source_page": "https://prtimes.jp/main/html/rd/p/000000010.000063967.html",
+  "image_url": "https://prcdn.freetls.fastly.net/release_image/63967/10/63967-10-284e37b43946c8bd59d344bbb733c131-1920x1541.jpg",
+  "author": "株式会社京都春秋／摄影者未标示",
+  "license": "未声明；仅作本地参考",
+  "reference_files": [
+    "assets/references/jp_daitokuji_karamon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_daitokuji_karamon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "文化遗产数据库将现存唐门归于桃山时代，确切建成年不详。 聚乐第旧构移建说尚未证实；图版绘本坊唐门，不与塔头寺院的门混同。",
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage line plate. Image 1 is the actual monument PHOTO and controls geometry. Image 2 is ONLY the project black fine-contour STYLE sample; never transfer its Buddha subject. Draw the named Japanese building accurately as a complete, isolated elevation at nearly frontal view. Fine sparse black ink contours with a few structural lines; no broad dark fills, hatching, pencil grain or opaque silhouettes. Pure flat opaque WHITE #FFFFFF canvas, including every blank region inside and outside the subject. Center with generous margins. No shadow, gradient, texture, glow, checkerboard, color, text, labels, signage, people, foliage, surrounding buildings, watermark or frame. Subject: Daitoku-ji main-temple Karamon gate, the ACTUAL ornate Momoyama national-treasure gate in the photo. Preserve its distinctive central curved karahafu roof, four gate posts and carved transom; show gate alone without flanking wall, stone monument, trees or steps. Do not substitute another Daitoku-ji subtemple gate.",
+  "generated_file": "assets/generated/jp_daitokuji_karamon.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-72d4cce6-6faa-4d00-881a-05ac8ec36857.png",
+  "dimensions": [
+    1400,
+    1123
+  ],
+  "caption": [
+    "大德寺 · 唐门",
+    "桃山时代 · 年代未详"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "382a8305ba138d41fa3d62f4db235c31acd0977d2c2a3eb3faf845fbd1b68d99",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://prtimes.jp/main/html/rd/p/000000010.000063967.html",
+      "image_url": "https://prcdn.freetls.fastly.net/release_image/63967/10/63967-10-284e37b43946c8bd59d344bbb733c131-1920x1541.jpg",
+      "author": "株式会社京都春秋／摄影者未标示",
+      "license": "未声明；仅作本地参考",
+      "title": "大德寺本坊国宝唐门照片",
+      "license_url": "",
+      "reference_file": "assets/references/jp_daitokuji_karamon-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 · 大德寺唐门",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1533"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本与生成原件。",
+      "检查主体范围、结构和轮廓；等待用户最终审图。"
+    ],
+    "limitations": "图版是依据实拍绘制的建筑示意，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

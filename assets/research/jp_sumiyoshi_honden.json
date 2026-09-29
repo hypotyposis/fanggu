@@ -1,0 +1,61 @@
+{
+  "id": "jp_sumiyoshi_honden",
+  "subject": "四座住吉造本殿",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sumiyoshi_Taisha_Shinto_shrine,_Osaka,_Japan_(2)_-_September_2015.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Sumiyoshi_Taisha_Shinto_shrine%2C_Osaka%2C_Japan_%282%29_-_September_2015.jpg/1280px-Sumiyoshi_Taisha_Shinto_shrine%2C_Osaka%2C_Japan_%282%29_-_September_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Rickard Törnblad",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_sumiyoshi_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_sumiyoshi_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "四座本殿为依据局部实拍与官方排列说明的组合示意；不是单张照片的直接描摹。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant building; use it for architecture and geometry. Image 2 is ONLY the project's black ink line style sample, never a building-shape reference. Sumiyoshi Taisha's FOUR extant 1810 honden in Osaka. The photo shows actual Sumiyoshi-zukuri form and red-and-white material. Draw a clear slightly elevated oblique architectural group view with exactly FOUR separate gabled halls: First, Second and Third aligned in a single front-to-back straight row facing west; Fourth placed beside the Third on its south side, forming an L plan. Preserve each hall's steep straight-sided gabled roof with forked chigi, red railings and white wall panels; do not multiply the halls, do not replace with torii or bridge. Landscape composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_sumiyoshi_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-5b362acb-8561-44dd-ab5e-c6d45f885df5.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "住吉大社 · 四座本殿示意",
+    "江户时代 · 1810年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "83045f6a042d7499923a0eea253d9113b1790b65ba00aad9341d86936694cc1a",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sumiyoshi_Taisha_Shinto_shrine,_Osaka,_Japan_(2)_-_September_2015.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Sumiyoshi_Taisha_Shinto_shrine%2C_Osaka%2C_Japan_%282%29_-_September_2015.jpg/1280px-Sumiyoshi_Taisha_Shinto_shrine%2C_Osaka%2C_Japan_%282%29_-_September_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Rickard Törnblad",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/jp_sumiyoshi_honden-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日本国指定文化财数据库 · 住吉大社本殿",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/2093"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "四座布局为便于阅读的组合示意，非单视角实测透视。"
+  },
+  "visual_review_status": "pending_user"
+}

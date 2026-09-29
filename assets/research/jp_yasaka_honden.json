@@ -1,0 +1,61 @@
+{
+  "id": "jp_yasaka_honden",
+  "subject": "祇园造本殿",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_Haupthalle_1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Kyoto_Yasaka-jinja_Haupthalle_1.jpg/1280px-Kyoto_Yasaka-jinja_Haupthalle_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Zairon",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_yasaka_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_yasaka_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "祇园造将内殿与礼堂置于同一大屋顶下；图版省略周围附属社殿。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant building; use it for architecture and geometry. Image 2 is ONLY the project's black ink line style sample, never a building-shape reference. Yasaka Shrine's extant 1654 honden, Kyoto. Draw the great unified Gion-zukuri roof covering main sanctuary and worship space, red vermilion columns, white wall fields, deep eaves and front stair from the photo. Avoid neighboring shrine structures. Landscape composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_yasaka_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-7f5a01a9-4f59-431e-be0a-5f998d60bcbd.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "八坂神社 · 本殿",
+    "江户时代 · 1654年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6b4b692ba22f7a9072452b7c7aef6568a9e2bff020e2d3cc109a6ebeba4fa005",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_Haupthalle_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Kyoto_Yasaka-jinja_Haupthalle_1.jpg/1280px-Kyoto_Yasaka-jinja_Haupthalle_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/jp_yasaka_honden-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "八坂神社 · 本殿",
+      "url": "https://www.yasaka-jinja.or.jp/about/architecture/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
+  },
+  "visual_review_status": "pending_user"
+}

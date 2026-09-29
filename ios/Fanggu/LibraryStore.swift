@@ -33,16 +33,16 @@ import Foundation
 
     func review(for site: Monument) -> Review { data.reviews[site.id] ?? Review() }
 
-    func setRecord(_ record: VisitRecord, for site: Monument) {
-        guard ids.contains(site.id) else { return }
-        commit { $0.records[site.id] = record }
+    @discardableResult func setRecord(_ record: VisitRecord, for site: Monument) -> Bool {
+        guard ids.contains(site.id) else { return false }
+        return commit { $0.records[site.id] = record }
     }
 
-    func setReview(rating: Int?, text: String, for site: Monument) {
-        guard ids.contains(site.id) else { return }
+    @discardableResult func setReview(rating: Int?, text: String, for site: Monument) -> Bool {
+        guard ids.contains(site.id) else { return false }
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-        commit { $0.reviews[site.id] = Review(rating: rating, text: text, updatedAt: formatter.string(from: .now)) }
+        return commit { $0.reviews[site.id] = Review(rating: rating, text: text, updatedAt: formatter.string(from: .now)) }
     }
 
     func backup() throws -> BackupDocument {
@@ -75,9 +75,9 @@ import Foundation
         data = merged
     }
 
-    func linkLegacy(_ oldID: String, to site: Monument) {
-        guard let old = data.customSites.first(where: { $0.id == oldID }), data.links[oldID] == nil else { return }
-        commit { next in
+    @discardableResult func linkLegacy(_ oldID: String, to site: Monument) -> Bool {
+        guard let old = data.customSites.first(where: { $0.id == oldID }), data.links[oldID] == nil else { return false }
+        return commit { next in
             let existing = next.records[site.id] ?? VisitRecord(status: site.initialStatus)
             let previous = next.records[oldID] ?? VisitRecord(status: .wishlist)
             let status: VisitStatus = existing.status == .visited || previous.status == .visited ? .visited :
@@ -90,13 +90,13 @@ import Foundation
         }
     }
 
-    private func commit(_ change: (inout LibraryData) -> Void) {
-        guard !loadFailed else { return }
+    private func commit(_ change: (inout LibraryData) -> Void) -> Bool {
+        guard !loadFailed else { return false }
         var next = data
         change(&next)
         next.version = 3
-        do { try validate(next); try save(next); data = next; error = nil }
-        catch { self.error = "保存失败：\(error.localizedDescription)" }
+        do { try validate(next); try save(next); data = next; error = nil; return true }
+        catch { self.error = "保存失败：\(error.localizedDescription)"; return false }
     }
 
     private func save(_ next: LibraryData) throws {

@@ -1,0 +1,62 @@
+{
+  "id": "jp_ujigami_honden",
+  "subject": "本殿外护屋",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ujigami-jinja%2C_honden.jpg/1280px-Ujigami-jinja%2C_honden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Saigen Jiro",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/jp_ujigami_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_ujigami_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存本殿被认为建于平安后期，不能与前方较晚的拜殿合并断代。 图版依据可见外护屋绘制，不推测被遮蔽的三座内殿细部。",
+  "prompt": "Use case: scientific-educational. Create ONE fine black ink contour plate for UJIGAMI SHRINE HONDEN in Uji, Japan. Image 1 is the documentary subject photo: the long ancient Heian honden shelter housing three inner sanctuaries, its distinctive asymmetrical paired roof profiles and latticed front. Image 2 is ONLY fine line style guidance, not architecture. Draw the full actual HONDEN building seen in Image 1, excluding trees, stone lion, stairs and other buildings. Landscape 1536x1024 with whole roof and base inside canvas, centered. Black delicate architectural contours, limited subtle hatching, no gray wall fills. Background intended PURE WHITE #FFFFFF, blank edge to edge; if the model supplies transparent pixels, retain native transparency. No shadows, gradients, paper grain, text, people, frame or watermark.",
+  "generated_file": "assets/generated/jp_ujigami_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-a67020f1-9e5a-4609-a307-ff948a269831.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "宇治上神社 · 本殿",
+    "平安后期 · 约11世纪末"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "04dc342ec11e7922905841c804358e25617cb208c4eed4bd5c055f6a86b8c9dd",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ujigami-jinja%2C_honden.jpg/1280px-Ujigami-jinja%2C_honden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_ujigami_honden-photo.jpg",
+      "title": "File:Ujigami-jinja, honden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 宇治上神社",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005624.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "jp_kanshinji_kondo",
+  "subject": "金堂",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kanshinji_Kondou.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kanshinji_Kondou.jpg/1280px-Kanshinji_Kondou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Original uploader was Ｈｉｒｏ２００６ at ja.wikipedia",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_kanshinji_kondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_kanshinji_kondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "图版绘现存七间正面和三间向拜，不用寺院更早的开创年代标记这座建筑。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant building; use it for architecture and geometry. Image 2 is ONLY the project's black ink line style sample, never a building-shape reference. Kanshin-ji Kondo main hall at Kawachinagano, Osaka, extant mid-fourteenth-century structure. Draw its seven-bay broad front elevation and three-bay front porch, deep tiled hip-and-gable roof and timber lattice doors as shown in the actual photo. Keep the entire hall visible without trees or neighboring buildings. Wide landscape composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_kanshinji_kondo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-cae0fa3d-6dc9-4771-916c-a55b34aec4fc.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "观心寺 · 金堂",
+    "室町初期 · 14世纪中叶"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ade375a531b66f32cff3f967cb069ea4379b79356ab1ee7d46931d794977407e",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kanshinji_Kondou.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kanshinji_Kondou.jpg/1280px-Kanshinji_Kondou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Original uploader was Ｈｉｒｏ２００６ at ja.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "reference_file": "assets/references/jp_kanshinji_kondo-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日本国指定文化财数据库 · 观心寺金堂",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/2185"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
+  },
+  "visual_review_status": "pending_user"
+}

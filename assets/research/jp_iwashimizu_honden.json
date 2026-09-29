@@ -1,0 +1,70 @@
+{
+  "id": "jp_iwashimizu_honden",
+  "subject": "楼门与回廊正面局部",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:IwashimizuHachimangu.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/IwashimizuHachimangu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "author": "en:User:Fg2 who I believe is the same as User:Fg2 here.",
+  "license": "Public domain",
+  "reference_files": [
+    "assets/references/jp_iwashimizu_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_iwashimizu_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "实拍为本社外侧可见的楼门与回廊；内殿受围廊遮挡，图版只绘正面可见局部。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage line plate. Image 1 is documentary SUBJECT GEOMETRY ONLY for Iwashimizu Hachimangu main shrine outer face from the supplied photograph: red lacquered central two-storey romon gate, linked corridors and visible shrine roof behind, with the characteristic cypress-bark curved gables. Draw only what is visible in the real photograph, no invented inner Honden elevation. Remove flags, tourists, trees and side distractions. Image 2 is ONLY the project's delicate fine black ink line style sample, never a subject-shape reference. Create a refined sparse BLACK INK architectural contour drawing on perfectly flat opaque PURE WHITE #FFFFFF background. Whole building centered, approximately straight-on, generous margins, landscape 1536x1024, roof/apex and base uncut. Fine neutral black contours and restrained structural detail; white unmarked inside and outside the subject. No colored fill, gray shading, cast shadow, gradient, paper grain, glow, checkerboard, lettering, labels, tourists, frame or watermark.",
+  "generated_file": "assets/generated/jp_iwashimizu_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-03ab8d3b-3c16-4435-8695-2ea04d8e5291.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "石清水八幡宫 · 本社正面局部",
+    "江户时代 · 1634年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "76206669f5f528ceabc7b83f056e811e54503cccd37d60bf8117ac03fdc13308",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:IwashimizuHachimangu.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/IwashimizuHachimangu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "en:User:Fg2 who I believe is the same as User:Fg2 here.",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "reference_file": "assets/references/jp_iwashimizu_honden-photo.jpg",
+      "title": "File:IwashimizuHachimangu.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "石清水八幡宫 · 本社",
+      "url": "https://iwashimizu.or.jp/about/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看本批实拍参考、线稿母版和生成原稿。",
+      "绘制范围、屋顶层数与完整轮廓已逐图查看；等待用户最终验收。"
+    ],
+    "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
+  },
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.480Z",
+    "sourceSha256": "76206669f5f528ceabc7b83f056e811e54503cccd37d60bf8117ac03fdc13308",
+    "statement": "验收没问题",
+    "lineSha256": "0a4fc1302ca4ad318dc8a9148bbd6ec53b2f0c17a9faaf94370365aedf011415"
+  }
+}

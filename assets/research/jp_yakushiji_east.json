@@ -1,0 +1,61 @@
+{
+  "id": "jp_yakushiji_east",
+  "subject": "东塔 · 三重六檐",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Yakushiji_Temple_East-Pagoda.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Yakushiji_Temple_East-Pagoda.jpg/1280px-Yakushiji_Temple_East-Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Tokumeigakarinoaoshima",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_yakushiji_east-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_yakushiji_east-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "东塔是三重塔，额外的裳阶使外观近似六层；图版不以较新的西塔替代。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant building; use it for architecture and geometry. Image 2 is ONLY the project's black ink line style sample, never a building-shape reference. Yakushi-ji East Pagoda, Nara, from 730 CE. It is a THREE-storey pagoda with an extra mokoshi skirt roof at each storey, giving SIX visible eave lines; preserve this distinction, the dark timber, white wall zones and finial. Do not conflate with the newer West Pagoda. Tall portrait composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_yakushiji_east.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-662e3f7f-12a8-4903-b59f-ef0541fe1310.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "药师寺 · 东塔",
+    "奈良时代 · 约730年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1c82f2051931341069f58e910f5360a88822a25e611b0b7d9b1a34f84bc28a20",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yakushiji_Temple_East-Pagoda.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Yakushiji_Temple_East-Pagoda.jpg/1280px-Yakushiji_Temple_East-Pagoda.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/jp_yakushiji_east-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "药师寺 · 东塔",
+      "url": "https://yakushiji.or.jp/guide/garan_toto.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
+  },
+  "visual_review_status": "pending_user"
+}

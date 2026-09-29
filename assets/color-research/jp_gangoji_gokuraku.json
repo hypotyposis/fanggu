@@ -1,0 +1,46 @@
+{
+  "id": "jp_gangoji_gokuraku",
+  "name": "元兴寺极乐坊本堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_gangoji_gokuraku.png",
+    "assets/references/jp_gangoji_gokuraku-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_gangoji_gokuraku; preserve its silhouette, framing, roof count, openings and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Weathered dark brown timber posts and doors, warm gray old roof tiles, subtle off-white infill and neutral stone steps. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "Weathered dark brown timber posts and doors, warm gray old roof tiles, subtle off-white infill and neutral stone steps.",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gangoji,_hondou-3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Gangoji%2C_hondou-3.jpg/1280px-Gangoji%2C_hondou-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "reference_file": "assets/references/jp_gangoji_gokuraku-photo.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化遗产在线 · 元兴寺极乐坊本堂",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/186636"
+    }
+  ],
+  "output": "assets/colored/jp_gangoji_gokuraku.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-68e2fb5a-1f6c-4da1-b528-7b11721734a2.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "30a9fc7f1d9f07ebbece57144a7618d3d9d37c31df10cc4c204c4387a801b379",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿及实拍材料色；不等于用户视觉验收。"
+    }
+  }
+}

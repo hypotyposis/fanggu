@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 
 
 def prototype_enabled(args=None):
@@ -23,9 +23,20 @@ def prototype_enabled(args=None):
     return mode == "prototype"
 
 
-def extract_line(image, color):
+def extract_line(image, color, adaptive_ink=False):
     rgba = np.asarray(image.convert("RGBA"))
-    if np.any(rgba[:, :, 3] < 255):
+    if adaptive_ink:
+        # Some imagegen line originals contain pale fills and a soft gray matte
+        # inside a transparent outline. Recover the local pen strokes instead
+        # of treating every nontransparent pixel as ink.
+        rgb = rgba[:, :, :3].astype(np.float32)
+        source_alpha = rgba[:, :, 3].astype(np.float32) / 255
+        gray = rgb @ np.array([0.299, 0.587, 0.114], dtype=np.float32)
+        gray = gray * source_alpha + 255 * (1 - source_alpha)
+        background = np.asarray(Image.fromarray(np.uint8(np.clip(gray, 0, 255)))
+                                .filter(ImageFilter.GaussianBlur(8)), dtype=np.float32)
+        alpha = np.uint8(np.clip((background - gray - 9) * 5, 0, 255))
+    elif np.any(rgba[:, :, 3] < 255):
         alpha = rgba[:, :, 3]
     else:
         gray = rgba[:, :, :3].astype(np.float32).mean(axis=2)
@@ -81,9 +92,10 @@ if __name__ == "__main__":
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path)
     parser.add_argument("--line-color", required=True)
+    parser.add_argument("--adaptive-ink", action="store_true")
     args = parser.parse_args()
     if args.source.resolve() == args.output.resolve():
         parser.error("Keep the original; use a separate output path")
     color = tuple(bytes.fromhex(args.line_color.lstrip("#")))
     with Image.open(args.source) as original:
-        extract_line(original, color).save(args.output, format="PNG")
+        extract_line(original, color, adaptive_ink=args.adaptive_ink).save(args.output, format="PNG")

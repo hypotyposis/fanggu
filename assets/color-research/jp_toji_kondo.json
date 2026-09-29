@@ -1,0 +1,47 @@
+{
+  "id": "jp_toji_kondo",
+  "name": "东寺金堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_toji_kondo-line-input.png",
+    "assets/references/jp_toji_kondo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: To-ji Kondo Golden Hall, the ACTUAL existing 1603 main hall, distinct from To-ji five-story pagoda and lecture hall. Preserve large upper roof above lower skirt roof, central raised entrance and timber lattice facade; remove people, event banners, tents and trees. Material observations: Weathered gray ceramic roof tiles, dark brown heavy timber brackets and doors, muted off-white wall gaps, subtle stone podium.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Japan_2020_Golden_Hall,_Toji.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Japan_2020_Golden_Hall%2C_Toji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_toji_kondo-photo.jpg",
+      "title": "File:Japan 2020 Golden Hall, Toji.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 东寺金堂",
+      "url": "https://ja.kyoto.travel/tourism/single01.php?category_id=7&tourism_id=262"
+    }
+  ],
+  "output": "assets/colored/jp_toji_kondo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-702dc439-c789-4ef1-a756-04594682a717.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "b656eed57d1c7fe6e36eb7f0ad9ac69e58b2274f8dea2c617eae2fb0d9e338b2",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

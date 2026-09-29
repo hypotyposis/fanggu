@@ -1,0 +1,65 @@
+{
+  "id": "jp_ginkaku",
+  "subject": "慈照寺观音殿现状双层楼阁",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Silver_Pavilion,_Ginkaku-ji,_Kyoto,_20240820_1054_5001.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Silver_Pavilion%2C_Ginkaku-ji%2C_Kyoto%2C_20240820_1054_5001.jpg/1280px-Silver_Pavilion%2C_Ginkaku-ji%2C_Kyoto%2C_20240820_1054_5001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Jakub Hałun",
+  "license": "CC BY 4.0",
+  "reference_files": [
+    "assets/references/jp_ginkaku-photo-8.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_ginkaku-photo-8.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "银阁并无银箔；照片遮挡的部分按可见屋顶和壁面概括，等待用户审图。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL Kannon-den (Silver Pavilion) at Jisho-ji, Kyoto; use it for subject geometry. Image 2 is ONLY the project's fine black ink line style sample, not a building-shape reference. Draw the complete extant two-storey Silver Pavilion in a gentle three-quarter view as in photo: wide lower storey with plain wall/sliding panels, smaller upper storey with characteristic windows, dark wood rail and broad traditional Japanese roofs. It is NOT coated in silver, and must not resemble the three-storey Golden Pavilion. Exclude trees, pond reflection, sand garden, tourists and all adjacent buildings except a few light base lines. Elegant sparse BLACK contour lines on perfectly flat opaque PURE WHITE #FFFFFF canvas. Landscape framing with complete roof and base, generous blank margin. No shadows, gradients, gray wash, crosshatching, paper grain, glow, checkerboard, transparency, writing, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_ginkaku.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-c56e4056-47e9-4b0e-806d-635912c11a82.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "慈照寺观音殿现状双层楼阁 · 线稿",
+    "按现存主体绘制"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fbe4ecd56e10276b69a30bb2d94d4dae35d550bbaff7fe381d8a5328e1b33c61",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Silver_Pavilion,_Ginkaku-ji,_Kyoto,_20240820_1054_5001.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Silver_Pavilion%2C_Ginkaku-ji%2C_Kyoto%2C_20240820_1054_5001.jpg/1280px-Silver_Pavilion%2C_Ginkaku-ji%2C_Kyoto%2C_20240820_1054_5001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "reference_file": "assets/references/jp_ginkaku-photo-8.jpg",
+      "author": "Jakub Hałun"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "银阁寺：观音殿1489年上梁与幸存建筑",
+      "url": "https://www.shokoku-ji.jp/ginkakuji/about/"
+    },
+    {
+      "title": "银阁寺：观音殿两层结构",
+      "url": "https://www.shokoku-ji.jp/ginkakuji/guide/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、风格母版与生成原稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "银阁并无银箔；照片遮挡的部分按可见屋顶和壁面概括，等待用户审图。"
+  },
+  "visual_review_status": "pending_user"
+}

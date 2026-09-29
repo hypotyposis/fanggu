@@ -1,0 +1,66 @@
+{
+  "id": "jp_kozanji_sekisuiin",
+  "subject": "石水院开放廊内景",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg/1280px-Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "663highland",
+  "license": "CC BY 2.5",
+  "reference_files": [
+    "assets/references/jp_kozanji_sekisuiin-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_kozanji_sekisuiin-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "石水院是高山寺保存的镰仓前期国宝建筑，明治时期移筑到现址。 现有参考实拍展示廊内；图版只绘可核实的开放廊结构，不伪作整座外立面。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu Japanese heritage line plate. Image 1 shows the ACTUAL open inner veranda of the surviving Kamakura-era Sekisui-in at Kōzan-ji, Kyoto. Draw this verified architectural interior as the subject: wide raised timber floor, ceiling beams, repeated exposed posts and open bays onto the garden, low timber half-walls, lattice panel at left end. Exclude the small statue and vegetation outside; do not invent a full exterior elevation. The last image is ONLY the project's delicate black ink contour STYLE sample; never transfer its subject. Fine sparse accurate black line work, minimal hatching and no large dark fills. Background should be completely blank opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. Whole subject centered with generous margins. No shadow, gradient, paper grain, glow, color, text, labels, modern fixtures, frame, watermark or checkerboard.",
+  "generated_file": "assets/generated/jp_kozanji_sekisuiin.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-68cf7d96-a1dc-4c89-a62a-dbe87ec4d9a8.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "高山寺 · 石水院开放廊",
+    "镰仓前期 · 明治移筑"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "2547164e172d9218ca4a171e3c40325bb81ed26d5b36ae2f6922682065801162",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg/1280px-Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "reference_file": "assets/references/jp_kozanji_sekisuiin-photo.jpg",
+      "title": "File:Sekisuiin Kozanji Kyoto Kyoto06s5s4350.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 高山寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005625.html"
+    },
+    {
+      "title": "文化厅 · 石水院",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1850"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "jp_chionin_sanmon",
+  "subject": "现存三门",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chion-in_(Sanmon_1).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Chion-in_%28Sanmon_1%29.jpg/1280px-Chion-in_%28Sanmon_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Lombroso",
+  "license": "Public domain",
+  "reference_files": [
+    "assets/references/jp_chionin_sanmon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_chionin_sanmon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "实拍可见双层三门正面；图版省略树木与前方参观设施。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage line plate. Image 1 is documentary SUBJECT GEOMETRY ONLY for Chion-in Sanmon, the actual monumental 1621 two-storey five-bay temple gate. Preserve the wide upper roof, deep tiled lower roof, open three passages and tall dark timber columns. Show complete gate approximately front-on without trees, tourist barriers or signs. Image 2 is ONLY the project's delicate fine black ink line style sample, never a subject-shape reference. Create a refined sparse BLACK INK architectural contour drawing on perfectly flat opaque PURE WHITE #FFFFFF background. Whole building centered, approximately straight-on, generous margins, landscape 1536x1024, roof/apex and base uncut. Fine neutral black contours and restrained structural detail; white unmarked inside and outside the subject. No colored fill, gray shading, cast shadow, gradient, paper grain, glow, checkerboard, lettering, labels, tourists, frame or watermark.",
+  "generated_file": "assets/generated/jp_chionin_sanmon.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-8ae277de-b57d-48fd-9f9f-8bbabbe4ccf6.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "知恩院 · 三门",
+    "江户时代 · 1621年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a7c97eb982080130bca74fc5fa74bca8e185bc242dad3e216124ba8978ad41c4",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chion-in_(Sanmon_1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Chion-in_%28Sanmon_1%29.jpg/1280px-Chion-in_%28Sanmon_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Lombroso",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "reference_file": "assets/references/jp_chionin_sanmon-photo.jpg",
+      "title": "File:Chion-in (Sanmon 1).jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "知恩院 · 三门",
+      "url": "https://www.chion-in.or.jp/highlight/building/sanmon.php"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看本批实拍参考、线稿母版和生成原稿。",
+      "绘制范围、屋顶层数与完整轮廓已逐图查看；等待用户最终验收。"
+    ],
+    "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
+  },
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.486Z",
+    "sourceSha256": "a7c97eb982080130bca74fc5fa74bca8e185bc242dad3e216124ba8978ad41c4",
+    "statement": "验收没问题",
+    "lineSha256": "34ceadd17ccec4a1e385b900fb2d83623c5674e2e5d9379305120747ceadf56e"
+  }
+}

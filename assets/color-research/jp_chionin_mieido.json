@@ -1,0 +1,47 @@
+{
+  "id": "jp_chionin_mieido",
+  "name": "知恩院御影堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_chionin_mieido-line-input.png",
+    "assets/references/jp_chionin_mieido-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: Chion-in Mieido main hall, the ACTUAL 1639 rebuilt hall shown in the photo, distinct from its giant Sanmon gate. Preserve wide hipped roof and deep entrance veranda of repeated timber columns; omit trees, signboards, visitors and paving. Material observations: Gray weathered tiled roof, dark brown wooden posts and doors, pale wall bays and restrained stone steps.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chionin_Mieido.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Chionin_Mieido.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "PlusMinus",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/jp_chionin_mieido-photo.jpg",
+      "title": "File:Chionin Mieido.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 知恩院御影堂",
+      "url": "https://ja.kyoto.travel/tourism/single01.php?category_id=&tourism_id=418"
+    }
+  ],
+  "output": "assets/colored/jp_chionin_mieido.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-6e15b047-9af5-4fc1-8cb2-d5e234cf1dc2.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "ac3ac3b215d9cf3e0accc2b37681c61d01051958b2ff8c205f70368668aefa12",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

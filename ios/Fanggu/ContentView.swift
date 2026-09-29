@@ -3,37 +3,19 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject private var library: LibraryStore
     @State private var selectedTab = 0
+    @State private var keyboardVisible = false
 
     var body: some View {
-        TabView(selection: $selectedTab) {
-            NavigationStack {
-                ExploreView()
-                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+        Group {
+            if #available(iOS 26.0, *) {
+                tabs
+                    .tabBarMinimizeBehavior(.onScrollDown)
+            } else {
+                tabs
             }
-            .tabItem { Label("图鉴", systemImage: "square.grid.2x2") }.tag(0)
-
-            NavigationStack {
-                AtlasMapView()
-                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
-            }
-            .tabItem { Label("地图", systemImage: "map") }.tag(1)
-
-            NavigationStack {
-                TimelineView()
-                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
-            }
-            .tabItem { Label("年表", systemImage: "circle.grid.cross") }.tag(2)
-
-            NavigationStack {
-                MyLibraryView()
-                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
-            }
-            .tabItem { Label("我的", systemImage: "seal") }.tag(3)
         }
         .preferredColorScheme(.dark)
         .tint(Palette.gold)
-        .toolbarBackground(Palette.ink2, for: .tabBar)
-        .toolbarBackground(.visible, for: .tabBar)
         .overlay(alignment: .top) {
             if let error = library.error {
                 Text(error)
@@ -45,6 +27,120 @@ struct ContentView: View {
                     .accessibilityAddTraits(.updatesFrequently)
             }
         }
+        .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillShowNotification)) { _ in
+            keyboardVisible = true
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)) { _ in
+            keyboardVisible = false
+        }
+    }
+
+    private var tabs: some View {
+        TabView(selection: $selectedTab) {
+            NavigationStack {
+                tabRoot(ExploreView())
+                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+            }
+            .tabItem { Label("图鉴", systemImage: "square.grid.2x2") }.tag(0)
+
+            NavigationStack {
+                tabRoot(AtlasMapView())
+                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+            }
+            .tabItem { Label("地图", systemImage: "map") }.tag(1)
+
+            NavigationStack {
+                tabRoot(TimelineView())
+                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+            }
+            .tabItem { Label("年表", systemImage: "circle.grid.cross") }.tag(2)
+
+            NavigationStack {
+                tabRoot(MyLibraryView())
+                    .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+            }
+            .tabItem { Label("我的", systemImage: "seal") }.tag(3)
+        }
+    }
+
+    @ViewBuilder private func tabRoot<Content: View>(_ content: Content) -> some View {
+        if #available(iOS 26.0, *) {
+            content
+        } else {
+            content
+                .toolbar(.hidden, for: .tabBar)
+                .safeAreaInset(edge: .bottom, spacing: 0) {
+                    if !keyboardVisible { FrostedTabBar(selection: $selectedTab) }
+                }
+        }
+    }
+}
+
+private struct FrostedTabBar: View {
+    @Binding var selection: Int
+    @Namespace private var selectionAnimation
+    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+
+    private let items: [(title: String, icon: String)] = [
+        ("图鉴", "square.grid.2x2"),
+        ("地图", "map"),
+        ("年表", "circle.grid.cross"),
+        ("我的", "seal")
+    ]
+
+    var body: some View {
+        HStack(spacing: 3) {
+            ForEach(items.indices, id: \.self) { index in
+                Button {
+                    guard selection != index else { return }
+                    withAnimation(.spring(response: 0.34, dampingFraction: 0.82)) { selection = index }
+                    Haptics.selection()
+                } label: {
+                    VStack(spacing: 3) {
+                        Image(systemName: items[index].icon)
+                            .font(.system(size: 20, weight: .medium))
+                            .frame(height: 24)
+                        Text(items[index].title)
+                            .font(FangguFont.serif(11, weight: .medium))
+                    }
+                    .foregroundStyle(selection == index ? Palette.gold : Palette.paper2)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background {
+                        if selection == index {
+                            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                                .fill(Palette.paper.opacity(0.13))
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                                        .strokeBorder(Palette.gold.opacity(0.24), lineWidth: 0.8)
+                                }
+                                .matchedGeometryEffect(id: "selectedTab", in: selectionAnimation)
+                        }
+                    }
+                    .contentShape(Rectangle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel(items[index].title)
+                .accessibilityAddTraits(selection == index ? .isSelected : [])
+            }
+        }
+        .padding(6)
+        .background {
+            let shape = RoundedRectangle(cornerRadius: 28, style: .continuous)
+            shape
+                .fill(reduceTransparency ? AnyShapeStyle(Palette.ink3) : AnyShapeStyle(.ultraThinMaterial))
+                .overlay(shape.fill(Palette.ink.opacity(0.24)))
+                .overlay {
+                    shape.strokeBorder(
+                        LinearGradient(colors: [Palette.paper.opacity(0.34), Palette.paper.opacity(0.06), Palette.gold.opacity(0.15)],
+                                       startPoint: .topLeading, endPoint: .bottomTrailing),
+                        lineWidth: 0.8
+                    )
+                }
+                .shadow(color: .black.opacity(0.45), radius: 22, y: 8)
+        }
+        .padding(.horizontal, 22)
+        .padding(.bottom, 8)
     }
 }
 
@@ -242,7 +338,10 @@ struct ExploreView: View {
         HStack(spacing: 0) {
             ForEach([("all", "全部收录"), ("wishlist", "心愿单"), ("visited", "已到访"), ("unvisited", "未到访")], id: \.0) { key, title in
                 Button {
-                    withAnimation(.easeInOut(duration: 0.2)) { status = key }
+                    if status != key {
+                        withAnimation(.easeInOut(duration: 0.2)) { status = key }
+                        Haptics.selection()
+                    }
                 } label: {
                     VStack(spacing: 7) {
                         Text(title)
@@ -276,7 +375,9 @@ private struct FilterMenu: View {
     var body: some View {
         Menu {
             ForEach(options.keys.sorted { a, b in a == "all" || (b != "all" && (options[a] ?? a) < (options[b] ?? b)) }, id: \.self) { key in
-                Button(options[key] ?? key) { value = key }
+                Button(options[key] ?? key) {
+                    if value != key { value = key; Haptics.selection() }
+                }
             }
         } label: {
             VStack(alignment: .leading, spacing: 6) {
@@ -306,45 +407,51 @@ struct ArtworkView: View {
     let visited: Bool
     var height: CGFloat = 220
     var reveal: CGFloat = 0
+    var stamping = false
 
-    private func artwork(_ name: String) -> UIImage? {
+    private static let images = NSCache<NSString, UIImage>()
+
+    static func artwork(_ name: String) -> UIImage? {
+        if let image = images.object(forKey: name as NSString) { return image }
         guard let path = Bundle.main.path(forResource: name, ofType: nil, inDirectory: "Artwork") else { return nil }
-        return UIImage(contentsOfFile: path)
+        guard let image = UIImage(contentsOfFile: path) else { return nil }
+        images.setObject(image, forKey: name as NSString)
+        return image
     }
 
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                Palette.ink2
-                if let line = artwork(site.lineImage) {
-                    Image(uiImage: line).resizable().scaledToFit().padding(14)
-                } else {
-                    Text("图版待装入")
-                        .font(FangguFont.serif(13))
-                        .foregroundStyle(Palette.paper3)
-                }
-                if (visited || reveal > 0), let color = artwork(site.colorImage) {
-                    Image(uiImage: color)
-                        .resizable().scaledToFit().padding(14)
-                        .mask(alignment: .leading) {
-                            Rectangle().frame(width: geometry.size.width * (visited ? 1 : reveal))
-                        }
-                }
-                if visited {
-                    Text("亲\n见")
-                        .font(FangguFont.brush(19))
-                        .lineSpacing(-3)
-                        .foregroundStyle(Palette.red)
-                        .padding(7)
-                        .overlay(Rectangle().stroke(Palette.red, lineWidth: 1.5))
-                        .rotationEffect(.degrees(-8))
-                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
-                        .padding(20)
-                }
+        let color = Self.artwork(site.colorImage)
+        let progress = min(1, max(0, reveal))
+        let lineOpacity = color == nil ? 1 : (visited || stamping ? 0 : progress <= 0.8 ? 1 : (1 - progress) / 0.2)
+        return ZStack {
+            Palette.ink2
+            if let line = Self.artwork(site.lineImage) {
+                Image(uiImage: line).resizable().scaledToFit().padding(14).opacity(lineOpacity)
+            } else {
+                Text("图版待装入")
+                    .font(FangguFont.serif(13))
+                    .foregroundStyle(Palette.paper3)
+            }
+            if let color, visited || stamping || progress > 0 {
+                Image(uiImage: color)
+                    .resizable().scaledToFit().padding(14)
+                    .opacity(visited || stamping ? 1 : progress)
+            }
+            if visited || stamping {
+                Text("亲\n见")
+                    .font(FangguFont.brush(19))
+                    .lineSpacing(-3)
+                    .foregroundStyle(Palette.red)
+                    .padding(7)
+                    .overlay(Rectangle().stroke(Palette.red, lineWidth: 1.5))
+                    .rotationEffect(.degrees(-8))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+                    .padding(20)
+                    .transition(.scale(scale: 2.4).combined(with: .opacity))
             }
         }
         .frame(height: height)
-        .accessibilityLabel("\(site.name)\(visited ? "设色图" : "线稿")")
+        .accessibilityLabel("\(site.name)\(visited || stamping ? "设色图" : "线稿")")
     }
 }
 
@@ -352,6 +459,7 @@ struct MonumentCard: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
     @State private var reveal: CGFloat = 0
+    @State private var completingVisit = false
     @State private var editingReview = false
 
     private var record: VisitRecord { library.record(for: site) }
@@ -360,7 +468,8 @@ struct MonumentCard: View {
         VStack(alignment: .leading, spacing: 0) {
             NavigationLink(value: site) {
                 VStack(alignment: .leading, spacing: 0) {
-                    ArtworkView(site: site, visited: record.status == .visited, height: 240, reveal: reveal)
+                    ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
+                                height: 240, reveal: reveal, stamping: completingVisit)
                     VStack(alignment: .leading, spacing: 9) {
                         HStack(spacing: 8) {
                             Text(record.status == .wishlist ? "想去" : record.status.title)
@@ -397,8 +506,8 @@ struct MonumentCard: View {
                 .padding(.horizontal, 17)
                 .padding(.bottom, 14)
             }
-            if record.status != .visited {
-                ArrivalSlider(site: site, progress: $reveal)
+            if record.status != .visited || completingVisit {
+                ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
                     .padding(.horizontal, 17)
                     .padding(.bottom, 12)
             } else {
@@ -413,7 +522,8 @@ struct MonumentCard: View {
                     Button(record.status == .wishlist ? "移出心愿单" : "加入心愿单") {
                         var next = record
                         next.status = record.status == .wishlist ? .unvisited : .wishlist
-                        library.setRecord(next, for: site)
+                        if library.setRecord(next, for: site) { Haptics.soft() }
+                        else { Haptics.error() }
                     }
                     .buttonStyle(FangguOutlineButton())
                 }
@@ -432,5 +542,15 @@ struct MonumentCard: View {
         .background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
+    }
+
+    private func finishArrival() {
+        withAnimation(.spring(response: 0.82, dampingFraction: 0.7)) {
+            reveal = 1
+            completingVisit = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.35) {
+            withAnimation(.easeInOut(duration: 0.25)) { completingVisit = false }
+        }
     }
 }

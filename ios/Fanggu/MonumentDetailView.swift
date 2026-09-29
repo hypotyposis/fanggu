@@ -7,6 +7,7 @@ struct MonumentDetailView: View {
     @State private var editingVisit = false
     @State private var editingReview = false
     @State private var reveal: CGFloat = 0
+    @State private var completingVisit = false
 
     private var record: VisitRecord { library.record(for: site) }
     private var review: Review { library.review(for: site) }
@@ -37,7 +38,8 @@ struct MonumentDetailView: View {
                         }
                     }
                 }
-                ArtworkView(site: site, visited: record.status == .visited, height: 320, reveal: reveal)
+                ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
+                            height: 320, reveal: reveal, stamping: completingVisit)
                     .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
                 if !site.captions.isEmpty {
                     Text(site.captions.joined(separator: " · "))
@@ -81,7 +83,9 @@ struct MonumentDetailView: View {
                     Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     Text(record.status.title + (record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
                         .font(FangguFont.mono(12)).foregroundStyle(record.status == .visited ? Palette.red : Palette.gold)
-                    if record.status != .visited { ArrivalSlider(site: site, progress: $reveal) }
+                    if record.status != .visited || completingVisit {
+                        ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
+                    }
                     HStack {
                         if record.status == .unvisited {
                             Button("加入心愿单") { setStatus(.wishlist) }.buttonStyle(FangguOutlineButton())
@@ -142,7 +146,18 @@ struct MonumentDetailView: View {
     private func setStatus(_ status: VisitStatus) {
         var next = record
         next.status = status
-        library.setRecord(next, for: site)
+        if library.setRecord(next, for: site) { Haptics.soft() }
+        else { Haptics.error() }
+    }
+
+    private func finishArrival() {
+        withAnimation(.spring(response: 0.82, dampingFraction: 0.7)) {
+            reveal = 1
+            completingVisit = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.35) {
+            withAnimation(.easeInOut(duration: 0.25)) { completingVisit = false }
+        }
     }
 }
 
@@ -150,43 +165,64 @@ struct ArrivalSlider: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
     @Binding var progress: CGFloat
+    let onComplete: () -> Void
+    @State private var prepared = false
+    @State private var finished = false
 
     var body: some View {
         GeometryReader { geometry in
+            let colorReady = ArtworkView.artwork(site.colorImage) != nil
             ZStack(alignment: .leading) {
                 Rectangle().fill(Palette.ink3).overlay(Rectangle().stroke(Palette.red.opacity(0.6), lineWidth: 1))
                 Rectangle().fill(Palette.red.opacity(0.25)).frame(width: max(50, geometry.size.width * progress))
-                Text("向右拖动，记为今日到访 →")
+                Text(!colorReady ? "设色图暂未加载" : finished ? "已到访 · 留印" : progress >= 1 ? "松手 · 留印" : progress > 0 ? "慢慢为古迹添色" : "向右拖动 · 设色")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                     .frame(maxWidth: .infinity)
                 Text("访").font(FangguFont.brush(29))
                     .foregroundStyle(Palette.paper)
                     .frame(width: 50, height: 50)
                     .background(Palette.red)
+                    .contentShape(Rectangle())
+                    .gesture(DragGesture(minimumDistance: 5, coordinateSpace: .global)
+                        .onChanged {
+                            if !prepared { Haptics.prepareArrival(); prepared = true }
+                            progress = min(1, max(0, $0.translation.width / max(1, geometry.size.width - 50)))
+                        }
+                        .onEnded { value in
+                            prepared = false
+                            if finished { return }
+                            progress = min(1, max(0, value.translation.width / max(1, geometry.size.width - 50)))
+                            if progress >= 1 && checkIn() { return }
+                            withAnimation(.easeOut(duration: 0.38)) { progress = 0 }
+                        })
                     .offset(x: (geometry.size.width - 50) * progress)
+                    .allowsHitTesting(colorReady && !finished)
             }
             .frame(height: 54)
-            .contentShape(Rectangle())
-            .gesture(DragGesture(minimumDistance: 5)
-                .onChanged { progress = min(1, max(0, $0.translation.width / max(1, geometry.size.width - 50))) }
-                .onEnded { _ in
-                    if progress >= 0.95 { checkIn() }
-                    withAnimation(.spring()) { progress = 0 }
-                })
             .accessibilityElement()
             .accessibilityLabel("到访打卡")
-            .accessibilityHint("向右拖到底并松手，或使用完成到访操作")
-            .accessibilityAction(named: Text("完成到访")) { checkIn() }
+            .accessibilityValue(finished ? "已完成设色，到访已保存" : "设色 \(Int(progress * 100))%")
+            .accessibilityHint(colorReady ? "向右拖到底并松手，或使用完成到访操作" : "设色图暂未加载")
+            .accessibilityAction(named: Text("完成到访")) { _ = checkIn() }
         }
         .frame(height: 54)
     }
 
-    private func checkIn() {
+    @discardableResult private func checkIn() -> Bool {
+        guard !finished, ArtworkView.artwork(site.colorImage) != nil else { return false }
         var next = library.record(for: site)
-        guard next.status != .visited else { return }
+        guard next.status != .visited else { return false }
         next.status = .visited
         next.visitedOn = Self.today()
-        library.setRecord(next, for: site)
+        if library.setRecord(next, for: site) {
+            finished = true
+            progress = 1
+            Haptics.success()
+            onComplete()
+            return true
+        }
+        Haptics.error()
+        return false
     }
 
     static func today() -> String {
@@ -230,10 +266,13 @@ struct VisitEditor: View {
     }
 
     private func save() {
-        guard date.isEmpty || LibraryStore.validDate(date) else { error = "请输入有效且不晚于今天的日期"; return }
-        guard note.utf16.count <= 12000 else { error = "笔记不能超过 12000 字"; return }
-        library.setRecord(VisitRecord(status: .visited, visitedOn: date, note: note), for: site)
-        if library.error == nil { dismiss() } else { error = library.error }
+        guard date.isEmpty || LibraryStore.validDate(date) else { error = "请输入有效且不晚于今天的日期"; Haptics.error(); return }
+        guard note.utf16.count <= 12000 else { error = "笔记不能超过 12000 字"; Haptics.error(); return }
+        let wasVisited = library.record(for: site).status == .visited
+        if library.setRecord(VisitRecord(status: .visited, visitedOn: date, note: note), for: site) {
+            if wasVisited { Haptics.soft() } else { Haptics.success() }
+            dismiss()
+        } else { error = library.error; Haptics.error() }
     }
 }
 
@@ -251,7 +290,7 @@ struct ReviewEditor: View {
                 Section("我的评分") {
                     HStack {
                         ForEach(1...5, id: \.self) { value in
-                            Button { rating = value } label: {
+                            Button { if rating != value { rating = value; Haptics.selection() } } label: {
                                 Image(systemName: value <= (rating ?? 0) ? "star.fill" : "star")
                                     .foregroundStyle(Palette.gold).font(.title2)
                             }
@@ -259,7 +298,7 @@ struct ReviewEditor: View {
                             .accessibilityLabel("\(value) 星")
                         }
                         Spacer()
-                        Button("清空") { rating = nil }
+                        Button("清空") { if rating != nil { rating = nil; Haptics.selection() } }
                     }
                 }
                 Section("短评") {
@@ -283,8 +322,8 @@ struct ReviewEditor: View {
     }
 
     private func save() {
-        guard text.utf16.count <= 500 else { error = "短评不能超过 500 字"; return }
-        library.setReview(rating: rating, text: text, for: site)
-        if library.error == nil { dismiss() } else { error = library.error }
+        guard text.utf16.count <= 500 else { error = "短评不能超过 500 字"; Haptics.error(); return }
+        if library.setReview(rating: rating, text: text, for: site) { Haptics.soft(); dismiss() }
+        else { error = library.error; Haptics.error() }
     }
 }

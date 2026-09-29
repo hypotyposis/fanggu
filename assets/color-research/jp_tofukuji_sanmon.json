@@ -1,0 +1,56 @@
+{
+  "id": "jp_tofukuji_sanmon",
+  "name": "东福寺三门",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_tofukuji_sanmon.png",
+    "assets/references/jp_tofukuji_sanmon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_tofukuji_sanmon; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: weathered near-black wooden beams and posts, dark gray clay tile roof, off-white plaster side wall panels; preserve the three open ground-level passages and both roof tiers. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "weathered near-black wooden beams and posts, dark gray clay tile roof, off-white plaster side wall panels; preserve the three open ground-level passages and both roof tiers",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kyoto_Tofuku-ji_San-mon_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Kyoto_Tofuku-ji_San-mon_3.jpg/1280px-Kyoto_Tofuku-ji_San-mon_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_tofukuji_sanmon-photo.jpg",
+      "title": "File:Kyoto Tofuku-ji San-mon 3.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "东福寺 · 三门解说",
+      "url": "https://tofukuji.jp/guide/sanmon_gate/en/"
+    }
+  ],
+  "output": "assets/colored/jp_tofukuji_sanmon.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-c613fbce-1dec-4ec5-b568-f22cff50f6ef.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "03163845bb60727e0d86e9db384649daaaba3267343b88c0e019cac3507f84f7",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.600Z",
+    "sourceSha256": "03163845bb60727e0d86e9db384649daaaba3267343b88c0e019cac3507f84f7",
+    "inputSha256": "840fe000c4d278da642898d979418cc04213cb6be17be216ab4821f4994a12f7",
+    "avifSha256": "1fea51d9b370211b0913cf58712b17b8405d58feda605e8d30cbcb81b3ecbd6b",
+    "statement": "验收没问题"
+  }
+}

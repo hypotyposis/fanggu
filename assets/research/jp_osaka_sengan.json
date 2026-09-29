@@ -1,0 +1,61 @@
+{
+  "id": "jp_osaka_sengan",
+  "subject": "现存橹与石垣",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Osaka_Osaka-jo_Sengan-yagura_1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Osaka_Osaka-jo_Sengan-yagura_1.jpg/1280px-Osaka_Osaka-jo_Sengan-yagura_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Zairon",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_osaka_sengan-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_osaka_sengan-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "图版绘现存橹与承托它的石垣，不以1931年重建的大天守代替。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant building; use it for architecture and geometry. Image 2 is ONLY the project's black ink line style sample, never a building-shape reference. Osaka Castle's extant 1620 Senganyagura turret. The photo shows this actual white-plastered corner turret atop high interlocking stone castle ramparts. Draw only the historic turret and supporting polygonal stonework in 3/4 view, with dark tiled hipped roofs, upper windows, white plaster and no 1931 main keep. Landscape composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_osaka_sengan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-8c32456b-d75a-4304-86bf-0f4d0ef773e5.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "大阪城 · 千贯橹与石垣",
+    "江户时代 · 1620年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "82456d16118d2600205116f1e5fd3dcce51bb1375520f47058ef8114a1a90f44",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Osaka_Osaka-jo_Sengan-yagura_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Osaka_Osaka-jo_Sengan-yagura_1.jpg/1280px-Osaka_Osaka-jo_Sengan-yagura_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/jp_osaka_sengan-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "大阪城公园 · 千贯橹",
+      "url": "https://www.osakacastlepark.jp/pdf/specially_opened_yagura.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
+  },
+  "visual_review_status": "pending_user"
+}

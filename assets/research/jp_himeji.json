@@ -1,0 +1,61 @@
+{
+  "id": "jp_himeji",
+  "subject": "姬路城大天守及高石垣",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Himeji_castle-Daitensyu.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Himeji_castle-Daitensyu.jpg/1920px-Himeji_castle-Daitensyu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_himeji-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_himeji-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "只绘1609年建成的大天守主体及石垣；大石垣在图中占比较高，等待用户审图。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL Himeji Castle main keep (dai-tenshu) in Hyogo, Japan; use its exact silhouette. Image 2 is ONLY the project's fine black ink line style sample. Draw the complete five-tier externally visible main keep above the tall sloped rough stone foundation, with stacked white plaster wall masses, dark rooflines, characteristic gables and small windows. Focus on the main keep, not a generic Chinese pagoda, and do not invent extra roof levels or show the whole castle complex. Near-front perspective matching photo, complete roof and stone base, portrait framing with generous white margins. Sparse accurate BLACK ink contours and selective small structural details, no shaded masses. Completely flat opaque PURE WHITE #FFFFFF canvas. No trees, sky, tourists, shadows, gradient, grain, glow, checkerboard, transparency, text, border or watermark.",
+  "generated_file": "assets/generated/jp_himeji.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-7af688b8-e15b-4129-bf5b-fc4d36b88430.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "姬路城大天守及高石垣 · 线稿",
+    "按现存主体绘制"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c5db1839436a672ade0cde910409bb98d425b106ce1abbea425a4c6f8b21186e",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Himeji_castle-Daitensyu.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Himeji_castle-Daitensyu.jpg/1920px-Himeji_castle-Daitensyu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/jp_himeji-photo.jpg",
+      "author": "KENPEI"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "姬路城官网：大天守1609年建成",
+      "url": "https://www.city.himeji.lg.jp/castle/0000007750.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、风格母版与生成原稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "只绘1609年建成的大天守主体及石垣；大石垣在图中占比较高，等待用户审图。"
+  },
+  "visual_review_status": "pending_user"
+}

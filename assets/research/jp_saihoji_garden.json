@@ -1,0 +1,62 @@
+{
+  "id": "jp_saihoji_garden",
+  "subject": "黄金池与苔庭",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Saihoji_kokedera-08.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Saihoji_kokedera-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "author": "René Haas",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_saihoji_garden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_saihoji_garden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存庭园格局与梦窗疏石的中世纪整修有关。 图版绘黄金池一角的水面、苔地与石岛，不将今日苔藓覆盖直接等同于十四世纪的原貌。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage atlas black ink line plate. Image 1 is documentary photograph of the ACTUAL place and determines subject geometry. Image 2 is ONLY a thin black contour style reference, never the subject. Exact subject: Saihō-ji lower garden and Ōgonchi pond in Kyoto, famed for moss. Image 1 shows the actual irregular pond shore, moss covered rock islands and canopy. Draw the pond and moss garden itself, with measured contour clusters of moss banks and rocks. No temple hall, no fantasy bridge. Landscape 1536x1024, complete subject centered with generous margins, fine accurate sparse black ink outlines, minimal hatching, no dark filled masses. Background intended perfectly flat opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. No people, unrelated architecture, modern signs, text, shadows, gradient, paper texture, glow, frame or watermark.",
+  "generated_file": "assets/generated/jp_saihoji_garden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-27938804-0041-4542-9951-ab1a90fe3dda.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "西芳寺 · 黄金池与苔庭",
+    "室町初期 · 后世形成苔地"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "34f7b2a16030cebd0ee1ecbdefb321597011ca9cc9babb5318faf65a499487b5",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saihoji_kokedera-08.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Saihoji_kokedera-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "René Haas",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_saihoji_garden-photo.jpg",
+      "title": "File:Saihoji kokedera-08.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 西芳寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005626.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

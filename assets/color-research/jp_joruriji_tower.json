@@ -1,0 +1,47 @@
+{
+  "id": "jp_joruriji_tower",
+  "name": "净琉璃寺三重塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_joruriji_tower.png",
+    "assets/references/jp_joruriji_tower-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create ONE Fanggu colored companion plate. Image 1 is the EXACT existing black ink line plate and is the composition master: preserve its silhouette, framing, count and placement of roofs, rocks, water, openings, and major contours. Image 2 is documentary photograph of the ACTUAL subject for present material/landscape colors only. Image 3 is matte museum illustration STYLE sample only; do not copy its building, colors or black backdrop. Subject: jp_joruriji_tower. Material observations: Present muted red-brown vermilion timber and brackets, white lower wall infill, dark gray-brown roofs, gray finial and stone base. All three roof tiers and finial exact. Apply restrained matte pigment areas to Image 1 only, retain fine charcoal outlines, slight texture only within solid forms. Entire exterior background, empty sky and true openings should be perfectly flat opaque PURE WHITE #FFFFFF or native transparency if returned. No black background, haze, gradient, paper texture, glow, cast shadow, checkerboard, people, labels, extra buildings, invented garden features, frame or watermark. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Joruri-ji_temple_three-storied_pagoda_in_spring_(right-side).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Joruri-ji_temple_three-storied_pagoda_in_spring_%28right-side%29.jpg/1280px-Joruri-ji_temple_three-storied_pagoda_in_spring_%28right-side%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "MirokunomichiProject",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_joruriji_tower-photo.jpg",
+      "title": "File:Joruri-ji temple three-storied pagoda in spring (right-side).jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都府 · 净琉璃寺三重塔",
+      "url": "https://www.pref.kyoto.jp/kyotoyamashiro/pdf/hihou_hibutsu_kidugawashi.pdf"
+    }
+  ],
+  "output": "assets/colored/jp_joruriji_tower.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-1e7e6f43-e131-420a-8bde-0be14283c1fc.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "70d6489f8aa686414b1d232eb29e5f6dc53fcb5084451be02e036118d1b3e67f",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

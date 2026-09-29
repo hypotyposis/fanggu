@@ -20,12 +20,29 @@
       1185,
       1333
     ],
+    "jp_muromachi": [
+      1336,
+      1573
+    ],
+    "jp_momoyama": [
+      1573,
+      1615
+    ],
     "jp_edo": [
       1603,
       1867
+    ],
+    "jp_showa": [
+      1926,
+      1989
     ]
   },
-  "note": "沿用本来源的时代分界。日本时代在年表单列，所用朝代与中国分别命名；只绘当前收录主体所涉时代，并非完整日本通史年表。江户终点按该来源1867，部分艺术史文献以1868作为结束。",
+  "additional_period_sources": {
+    "jp_momoyama": "https://www.metmuseum.org/toah/hd/momo/hd_momo.htm",
+    "jp_muromachi": "https://www.japan.travel/en/guide/tea-ceremony/",
+    "jp_showa": "https://id.ndl.go.jp/auth/ndlna/00568302"
+  },
+  "note": "原有时代沿用奈良县来源；室町用日本国家旅游局的1336—1573，桃山艺术时期用大都会艺术博物馆的1573—1615，昭和用国立国会图书馆的1926—1989。桃山作为艺术史时期与政治史上的江户初期有交叠，归类按具体建筑资料说明。日本时代在年表单列，与中国朝代分别命名；只绘当前收录主体所涉时代，并非完整日本通史年表。江户终点按原来源1867，部分艺术史文献以1868作为结束。",
   "map_note": "地图按城市或町归并；同城多处取本批主体公开点位的均值，仅作为城市分组的位置示意，建筑坐标与出处分别保存在各图版元数据。",
   "map_places": [
     {
@@ -59,6 +76,78 @@
       "country": "JP",
       "lat": 34.987344,
       "lon": 135.7668
+    },
+    {
+      "key": "jp_tokyo_asakusa",
+      "name": "东京 · 浅草",
+      "prov": "东京都",
+      "country": "JP",
+      "lat": 35.7148,
+      "lon": 139.7967
+    },
+    {
+      "key": "jp_himeji",
+      "name": "姬路",
+      "prov": "兵库县",
+      "country": "JP",
+      "lat": 34.8394,
+      "lon": 134.6939
+    },
+    {
+      "key": "jp_miyajima",
+      "name": "宫岛",
+      "prov": "广岛县",
+      "country": "JP",
+      "lat": 34.296,
+      "lon": 132.3198
+    },
+    {
+      "key": "jp_nikko",
+      "name": "日光",
+      "prov": "栃木县",
+      "country": "JP",
+      "lat": 36.758,
+      "lon": 139.599
+    },
+    {
+      "key": "jp_osaka_city",
+      "name": "大阪",
+      "prov": "大阪府",
+      "country": "JP",
+      "lat": 34.68,
+      "lon": 135.5
+    },
+    {
+      "key": "jp_izumisano",
+      "name": "泉佐野",
+      "prov": "大阪府",
+      "country": "JP",
+      "lat": 34.375,
+      "lon": 135.317
+    },
+    {
+      "key": "jp_kawachinagano",
+      "name": "河内长野",
+      "prov": "大阪府",
+      "country": "JP",
+      "lat": 34.43,
+      "lon": 135.57
+    },
+    {
+      "key": "jp_yawata",
+      "name": "八幡",
+      "prov": "京都府",
+      "country": "JP",
+      "lat": 34.8793,
+      "lon": 135.6995
+    },
+    {
+      "key": "jp_otsu",
+      "name": "大津",
+      "prov": "滋贺县",
+      "country": "JP",
+      "lat": 34.9699,
+      "lon": 135.9035
     }
   ]
 }

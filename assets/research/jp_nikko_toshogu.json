@@ -1,0 +1,65 @@
+{
+  "id": "jp_nikko_toshogu",
+  "subject": "日光东照宫阳明门现状正面",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Nikko_Toshogu_Yomeimon_Gate_2024.jpg/1920px-Nikko_Toshogu_Yomeimon_Gate_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Jpatokal",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_nikko_toshogu-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_nikko_toshogu-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "对繁密雕饰作选择性概括，图稿不能充当逐件装饰的实测记录。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL Yomeimon gate at Nikko Toshogu, Japan; use its exact architecture. Image 2 is ONLY the project's fine black ink line style sample. Draw the full two-storey ornate Yomeimon gate front-on, with white columns, broad black-and-gold Japanese curved roof translated to contours, upper balcony, densely carved transoms in SELECTIVE fine line detail, and open central passage. Preserve its recognizable silhouette, no generic temple gate, no extra roof tiers. Remove tourists, trees, steps beyond a few base lines, fences and background buildings. Portrait framing, entire roof and foundation uncut with clear white margins. Fine neutral BLACK ink contours, no large dark filled masses, crosshatching or gray wash. Perfectly flat opaque PURE WHITE #FFFFFF canvas, no shadows, gradient, texture, glow, checkerboard, transparency, labels, writing, border or watermark.",
+  "generated_file": "assets/generated/jp_nikko_toshogu.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-61e38e43-ade9-41bf-ae2f-156e9d9a2b60.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "日光东照宫阳明门现状正面 · 线稿",
+    "按现存主体绘制"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "aba382dec555144fbd266d38fd7370f2d547827090c523d38d26f5d36c18c4b8",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Nikko_Toshogu_Yomeimon_Gate_2024.jpg/1920px-Nikko_Toshogu_Yomeimon_Gate_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_nikko_toshogu-photo.jpg",
+      "author": "Jpatokal"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日光市官方：阳明门形制",
+      "url": "https://www.nikko-kankou.org/public/spot/125"
+    },
+    {
+      "title": "日光市官方：东照宫1636年大造替",
+      "url": "https://www.nikko-kankou.org/storage/pamphlet_pdf/20250520161820_Nikko_tabinakaB5_JP_kakunin%28%E5%9C%A7%E7%B8%AE%EF%BC%89.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、风格母版与生成原稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "对繁密雕饰作选择性概括，图稿不能充当逐件装饰的实测记录。"
+  },
+  "visual_review_status": "pending_user"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "jp_daitokuji_hojo",
+  "name": "大德寺方丈",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_daitokuji_hojo-line-input.png",
+    "assets/references/jp_daitokuji_hojo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: Daitoku-ji MAIN temple Hojo, the ACTUAL 1635-36 long abbot quarters in the Kyoto Prefecture photo, not Ryogen-in or Daisen-in. Preserve long one-story facade, gray tiled hip-and-gable roof, veranda, repetitive dark wooden shutters and pale upper walls; omit courtyard and other buildings. Material observations: Gray ceramic tile roof, aged dark cedar shutters and framing, pale beige plaster upper panels, brown raised veranda.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://prtimes.jp/main/html/rd/p/000000739.000005484.html",
+      "image_url": "https://prcdn.freetls.fastly.net/release_image/5484/739/5484-739-6b0db9ef7239c169086ea33137181de8-1386x917.jpg",
+      "author": "京都府／摄影者未标示",
+      "license": "未声明；仅作本地参考",
+      "title": "大德寺本坊方丈修理前外观",
+      "license_url": "",
+      "reference_file": "assets/references/jp_daitokuji_hojo-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 · 大德寺方丈",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1540"
+    }
+  ],
+  "output": "assets/colored/jp_daitokuji_hojo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-8bf9e953-ae76-4127-b421-b702224c191a.png",
+  "width": 1774,
+  "height": 887,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "819c8a2e65c3e1e292f809d77c0f4fd887861d2f56134af4d1c47a10febee2b3",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

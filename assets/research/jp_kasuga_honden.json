@@ -1,0 +1,69 @@
+{
+  "id": "jp_kasuga_honden",
+  "subject": "四座春日造本殿",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kasuga_Taisha_Kasuga_Grand_Shrine_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE24.JPG",
+  "image_url": null,
+  "author": "Nekosuki",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_kasuga_honden-photo1.jpg",
+    "assets/references/jp_kasuga_honden-photo2.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_kasuga_honden-photo1.jpg",
+    "assets/references/jp_kasuga_honden-photo2.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "四座本殿为依据局部实拍与官方排列说明的组合示意；不是单张照片的直接描摹。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. The documentary photograph(s) show the ACTUAL extant building; use them for architecture and geometry. The LAST image is ONLY the project's fine black ink line style sample, never a building-shape reference. Kasuga Taisha's FOUR extant 1863 main sanctuaries (honden) in Nara. Images 1 and 2 show actual four small red Kasuga-zukuri honden aligned in a STEPPED row along a slope, partially occluded by trees and enclosure; use the true architectural forms and arrangement but omit trees, enclosure, gate and other structures to reveal the four halls. Each hall is one-bay, red and white, cypress-bark gabled roof with frontal canopy and forked chigi. Render exactly four separate compact sanctuaries in one descending diagonal row, not the large middle gate or corridor. Landscape composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_kasuga_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-5f327323-9355-425f-86f8-70377b0cf43a.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "春日大社 · 四座本殿示意",
+    "江户时代 · 1863年造替"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0efe30a5b51ebaa23cf6589e60e2bffa4f7a1a36a9d538fb7674a46d74c300f5",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kasuga_Taisha_Kasuga_Grand_Shrine_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE24.JPG",
+      "reference_file": "assets/references/jp_kasuga_honden-photo1.jpg",
+      "author": "Nekosuki",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nara_Kasuga-taisha_Main_Sanctuary_Honden_2.jpg",
+      "reference_file": "assets/references/jp_kasuga_honden-photo2.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "奈良县 · 春日大社本社本殿",
+      "url": "https://www.pref.nara.lg.jp/ikasu-nara/bunkashigen/main04201.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "四座布局为便于阅读的组合示意，非单视角实测透视。"
+  },
+  "visual_review_status": "pending_user"
+}

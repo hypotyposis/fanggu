@@ -1,0 +1,62 @@
+{
+  "id": "jp_daitokuji_hojo",
+  "subject": "本坊方丈",
+  "status": "complete",
+  "source_page": "https://prtimes.jp/main/html/rd/p/000000739.000005484.html",
+  "image_url": "https://prcdn.freetls.fastly.net/release_image/5484/739/5484-739-6b0db9ef7239c169086ea33137181de8-1386x917.jpg",
+  "author": "京都府／摄影者未标示",
+  "license": "未声明；仅作本地参考",
+  "reference_files": [
+    "assets/references/jp_daitokuji_hojo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_daitokuji_hojo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "本坊方丈为江户初期遗构，资料中有1635和1636两种年代记法。 图版依据本坊方丈实拍绘制，不以龙源院、高桐院等塔头方丈替代。",
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage line plate. Image 1 is the actual monument PHOTO and controls geometry. Image 2 is ONLY the project black fine-contour STYLE sample; never transfer its Buddha subject. Draw the named Japanese building accurately as a complete, isolated elevation at nearly frontal view. Fine sparse black ink contours with a few structural lines; no broad dark fills, hatching, pencil grain or opaque silhouettes. Pure flat opaque WHITE #FFFFFF canvas, including every blank region inside and outside the subject. Center with generous margins. No shadow, gradient, texture, glow, checkerboard, color, text, labels, signage, people, foliage, surrounding buildings, watermark or frame. Subject: Daitoku-ji MAIN temple Hojo, the ACTUAL 1635-36 long abbot quarters in the Kyoto Prefecture photo, not Ryogen-in or Daisen-in. Preserve long one-story facade, gray tiled hip-and-gable roof, veranda, repetitive dark wooden shutters and pale upper walls; omit courtyard and other buildings.",
+  "generated_file": "assets/generated/jp_daitokuji_hojo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-b2862011-2e04-4914-b3a7-78ee2e4ef0c7.png",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "caption": [
+    "大德寺 · 本坊方丈",
+    "江户初期 · 约1635—1636年"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "da8385e35362cf17ed04244648c08547d05018ff2594844f1b3648fe1906d9da",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://prtimes.jp/main/html/rd/p/000000739.000005484.html",
+      "image_url": "https://prcdn.freetls.fastly.net/release_image/5484/739/5484-739-6b0db9ef7239c169086ea33137181de8-1386x917.jpg",
+      "author": "京都府／摄影者未标示",
+      "license": "未声明；仅作本地参考",
+      "title": "大德寺本坊方丈修理前外观",
+      "license_url": "",
+      "reference_file": "assets/references/jp_daitokuji_hojo-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 · 大德寺方丈",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1540"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本与生成原件。",
+      "检查主体范围、结构和轮廓；等待用户最终审图。"
+    ],
+    "limitations": "图版是依据实拍绘制的建筑示意，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

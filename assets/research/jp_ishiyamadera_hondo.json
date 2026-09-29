@@ -1,0 +1,70 @@
+{
+  "id": "jp_ishiyamadera_hondo",
+  "subject": "正堂与礼堂",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Ishiyamadera_hondo1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ishiyamadera_hondo1.jpg/1280px-Ishiyamadera_hondo1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "KENPEI",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_ishiyamadera_hondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_ishiyamadera_hondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "实拍可见现存连体本堂与高台；图版省略旗幡、树木与标牌。正堂和礼堂分属两个建造阶段。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage line plate. Image 1 is documentary SUBJECT GEOMETRY ONLY for Ishiyama-dera Hondo, showing the existing joined 1096 inner hall and 1602 front worship hall on a hillside. Preserve the layered roof, broad timber facade, raised supporting platform and steps shown in the photo. Remove fabric banners, signage, tourists and trees. Image 2 is ONLY the project's delicate fine black ink line style sample, never a subject-shape reference. Create a refined sparse BLACK INK architectural contour drawing on perfectly flat opaque PURE WHITE #FFFFFF background. Whole building centered, approximately straight-on, generous margins, landscape 1536x1024, roof/apex and base uncut. Fine neutral black contours and restrained structural detail; white unmarked inside and outside the subject. No colored fill, gray shading, cast shadow, gradient, paper grain, glow, checkerboard, lettering, labels, tourists, frame or watermark.",
+  "generated_file": "assets/generated/jp_ishiyamadera_hondo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-4e947a10-8d1d-439d-8dee-82703235bd6b.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "石山寺 · 本堂",
+    "平安正堂 · 江户初期礼堂"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a802bce42bdbd875aa95db49bdc311e0a42751ad8aff19a0da1f2cd23f4e3180",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ishiyamadera_hondo1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ishiyamadera_hondo1.jpg/1280px-Ishiyamadera_hondo1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "KENPEI",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reference_file": "assets/references/jp_ishiyamadera_hondo-photo.jpg",
+      "title": "File:Ishiyamadera hondo1.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "石山寺 · 本堂",
+      "url": "https://www.ishiyamadera.or.jp/guide/precincts"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看本批实拍参考、线稿母版和生成原稿。",
+      "绘制范围、屋顶层数与完整轮廓已逐图查看；等待用户最终验收。"
+    ],
+    "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
+  },
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.484Z",
+    "sourceSha256": "a802bce42bdbd875aa95db49bdc311e0a42751ad8aff19a0da1f2cd23f4e3180",
+    "statement": "验收没问题",
+    "lineSha256": "8282c55c9e37c60416e20d62290e093d3b6edb12376b9f451f941092d96082a4"
+  }
+}

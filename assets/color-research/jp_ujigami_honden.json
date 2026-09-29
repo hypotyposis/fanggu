@@ -1,0 +1,47 @@
+{
+  "id": "jp_ujigami_honden",
+  "name": "宇治上神社本殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_ujigami_honden.png",
+    "assets/references/jp_ujigami_honden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create one Fanggu colored companion heritage plate. Image 1 is the EXACT existing line plate to color; lock its silhouette, framing, number of roofs, openings, steps and every major contour. Image 2 is documentary real-world photo of the same subject, for material color observations and identification only; do not replace Image 1's composition. Image 3 is a matte museum illustration STYLE sample ONLY: do not copy its Chinese building, warm palette or black background. Subject: jp_ujigami_honden. Materials: Natural dark brown timber lattice and beams, warm off-white plaster infill, weathered brown cypress bark and dark gray ridge tiles. Keep the unequal paired roof profiles. Color only existing solid surfaces with restrained matte mineral pigment, thin charcoal outlines and very light texture inside solids. Exterior background and any true openings must be perfectly flat PURE WHITE #FFFFFF or preserved native transparency; absolutely no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard. No people, trees, labels, text, invented architecture or border. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Ujigami-jinja%2C_honden.jpg/1280px-Ujigami-jinja%2C_honden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_ujigami_honden-photo.jpg",
+      "title": "File:Ujigami-jinja, honden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 宇治上神社",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005624.html"
+    }
+  ],
+  "output": "assets/colored/jp_ujigami_honden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-3ddac337-806a-444c-a467-e49aae0bb3cc.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "3fdded64907e69e2444ac53f20fdc3e598924b070f810fd3a3e820631b387ffc",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

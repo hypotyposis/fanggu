@@ -1,0 +1,47 @@
+{
+  "id": "jp_saihoji_garden",
+  "name": "西芳寺庭园",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_saihoji_garden.png",
+    "assets/references/jp_saihoji_garden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create ONE Fanggu colored companion plate. Image 1 is the EXACT existing black ink line plate and is the composition master: preserve its silhouette, framing, count and placement of roofs, rocks, water, openings, and major contours. Image 2 is documentary photograph of the ACTUAL subject for present material/landscape colors only. Image 3 is matte museum illustration STYLE sample only; do not copy its building, colors or black backdrop. Subject: jp_saihoji_garden. Material observations: Dark muted olive pond water, many deep and bright moss-green banks and rocks, soft natural green tree canopy, charcoal gray stone edges. Preserve the photographed irregular shore and mossy small rock island. Apply restrained matte pigment areas to Image 1 only, retain fine charcoal outlines, slight texture only within solid forms. Entire exterior background, empty sky and true openings should be perfectly flat opaque PURE WHITE #FFFFFF or native transparency if returned. No black background, haze, gradient, paper texture, glow, cast shadow, checkerboard, people, labels, extra buildings, invented garden features, frame or watermark. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saihoji_kokedera-08.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Saihoji_kokedera-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "René Haas",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_saihoji_garden-photo.jpg",
+      "title": "File:Saihoji kokedera-08.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 西芳寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005626.html"
+    }
+  ],
+  "output": "assets/colored/jp_saihoji_garden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-b44b66e7-3ee5-4d17-a116-fc9ed3e0d805.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "ad5d86a5dc41ff98b0a3113d27cb764e11f4703ff7e923491fbf53ab96e1fa70",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

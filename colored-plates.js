@@ -7017,6 +7017,961 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "jp_kinkaku": {
+    "src": "assets/colored-transparent-avif/jp_kinkaku.avif",
+    "originalSrc": "assets/colored/jp_kinkaku.png",
+    "transparentSrc": "assets/colored-transparent/jp_kinkaku.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "鹿苑寺舍利殿 · 现存复建 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kinkaku.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_2024.jpg",
+        "author": "Nacaru",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_ginkaku": {
+    "src": "assets/colored-transparent-avif/jp_ginkaku.avif",
+    "originalSrc": "assets/colored/jp_ginkaku.png",
+    "transparentSrc": "assets/colored-transparent/jp_ginkaku.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "慈照寺观音殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ginkaku.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Silver_Pavilion,_Ginkaku-ji,_Kyoto,_20240820_1054_5001.jpg",
+        "author": "Jakub Hałun",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "jp_sensoji": {
+    "src": "assets/colored-transparent-avif/jp_sensoji.avif",
+    "originalSrc": "assets/colored/jp_sensoji.png",
+    "transparentSrc": "assets/colored-transparent/jp_sensoji.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本堂 · 观音堂 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/jp_sensoji.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Hondo_(Main_Hall)_of_Sensoji_Temple_2.jpg",
+        "author": "そらみみ (Soramimi)",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_himeji": {
+    "src": "assets/colored-transparent-avif/jp_himeji.avif",
+    "originalSrc": "assets/colored/jp_himeji.png",
+    "transparentSrc": "assets/colored-transparent/jp_himeji.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大天守与石垣 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_himeji.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Himeji_castle-Daitensyu.jpg",
+        "author": "KENPEI",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_itsukushima": {
+    "src": "assets/colored-transparent-avif/jp_itsukushima.avif",
+    "originalSrc": "assets/colored/jp_itsukushima.png",
+    "transparentSrc": "assets/colored-transparent/jp_itsukushima.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本社临海社殿与回廊 · 设色图",
+    "width": 1795,
+    "height": 876,
+    "tint": false,
+    "record": "assets/color-research/jp_itsukushima.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20100723_Miyajima_Itsukushima_5189.jpg",
+        "author": "Jakub Hałun",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_nikko_toshogu": {
+    "src": "assets/colored-transparent-avif/jp_nikko_toshogu.avif",
+    "originalSrc": "assets/colored/jp_nikko_toshogu.png",
+    "transparentSrc": "assets/colored-transparent/jp_nikko_toshogu.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "阳明门 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_nikko_toshogu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg",
+        "author": "Jpatokal",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_daigoji_tower": {
+    "src": "assets/colored-transparent-avif/jp_daigoji_tower.avif",
+    "originalSrc": "assets/colored/jp_daigoji_tower.png",
+    "transparentSrc": "assets/colored-transparent/jp_daigoji_tower.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "五重塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_daigoji_tower.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Daigoji_Five-storied_Pagoda.JPG",
+        "author": "Shigeru-a24",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_sanjusangendo": {
+    "src": "assets/colored-transparent-avif/jp_sanjusangendo.avif",
+    "originalSrc": "assets/colored/jp_sanjusangendo.png",
+    "transparentSrc": "assets/colored-transparent/jp_sanjusangendo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "莲华王院本堂 · 设色图",
+    "width": 1774,
+    "height": 887,
+    "tint": false,
+    "record": "assets/color-research/jp_sanjusangendo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:8277-Sanjusangendo-R.jpg",
+        "author": "Bigjap",
+        "license": "CC0"
+      }
+    ]
+  },
+  "jp_nijo_ninomaru": {
+    "src": "assets/colored-transparent-avif/jp_nijo_ninomaru.avif",
+    "originalSrc": "assets/colored/jp_nijo_ninomaru.png",
+    "transparentSrc": "assets/colored-transparent/jp_nijo_ninomaru.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "车寄及远侍外观 · 设色图",
+    "width": 1774,
+    "height": 887,
+    "tint": false,
+    "record": "assets/color-research/jp_nijo_ninomaru.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ninomaru-Goden_Hall_of_Nijo_Castle.JPG",
+        "author": "そらみみ (Soramimi)",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_yasaka_honden": {
+    "src": "assets/colored-transparent-avif/jp_yasaka_honden.avif",
+    "originalSrc": "assets/colored/jp_yasaka_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_yasaka_honden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "祇园造本殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_yasaka_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_Haupthalle_1.jpg",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_yakushiji_east": {
+    "src": "assets/colored-transparent-avif/jp_yakushiji_east.avif",
+    "originalSrc": "assets/colored/jp_yakushiji_east.png",
+    "transparentSrc": "assets/colored-transparent/jp_yakushiji_east.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "东塔 · 三重六檐 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_yakushiji_east.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yakushiji_Temple_East-Pagoda.jpg",
+        "author": "Tokumeigakarinoaoshima",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_gangoji_gokuraku": {
+    "src": "assets/colored-transparent-avif/jp_gangoji_gokuraku.avif",
+    "originalSrc": "assets/colored/jp_gangoji_gokuraku.png",
+    "transparentSrc": "assets/colored-transparent/jp_gangoji_gokuraku.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "极乐坊本堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_gangoji_gokuraku.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Gangoji,_hondou-3.jpg",
+        "author": "Saigen Jiro",
+        "license": "CC0"
+      }
+    ]
+  },
+  "jp_kofukuji_hokuen": {
+    "src": "assets/colored-transparent-avif/jp_kofukuji_hokuen.avif",
+    "originalSrc": "assets/colored/jp_kofukuji_hokuen.png",
+    "transparentSrc": "assets/colored-transparent/jp_kofukuji_hokuen.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "八角圆堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kofukuji_hokuen.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Hokuendo_Kofukuji_Nara_(Autumn_2017).jpg",
+        "author": "MemColorLab",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_kasuga_honden": {
+    "src": "assets/colored-transparent-avif/jp_kasuga_honden.avif",
+    "originalSrc": "assets/colored/jp_kasuga_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kasuga_honden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "四座春日造本殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kasuga_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kasuga_Taisha_Kasuga_Grand_Shrine_National_Treasure_World_heritage_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3%E6%98%A5%E6%97%A5%E5%A4%A7%E7%A4%BE24.JPG",
+        "author": "Nekosuki",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Nara_Kasuga-taisha_Main_Sanctuary_Honden_2.jpg",
+        "author": "Zairon",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "jp_sumiyoshi_honden": {
+    "src": "assets/colored-transparent-avif/jp_sumiyoshi_honden.avif",
+    "originalSrc": "assets/colored/jp_sumiyoshi_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_sumiyoshi_honden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "四座住吉造本殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_sumiyoshi_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sumiyoshi_Taisha_Shinto_shrine,_Osaka,_Japan_(2)_-_September_2015.jpg",
+        "author": "Rickard Törnblad",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_osaka_sengan": {
+    "src": "assets/colored-transparent-avif/jp_osaka_sengan.avif",
+    "originalSrc": "assets/colored/jp_osaka_sengan.png",
+    "transparentSrc": "assets/colored-transparent/jp_osaka_sengan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存橹与石垣 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_osaka_sengan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Osaka_Osaka-jo_Sengan-yagura_1.jpg",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_jigenin_tahoto": {
+    "src": "assets/colored-transparent-avif/jp_jigenin_tahoto.avif",
+    "originalSrc": "assets/colored/jp_jigenin_tahoto.png",
+    "transparentSrc": "assets/colored-transparent/jp_jigenin_tahoto.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "多宝塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_jigenin_tahoto.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Jigenin_Izumisano04s3200.jpg",
+        "author": "663highland (Wikimedia Commons uploader; file Artist field is a site description)",
+        "license": "CC BY 2.5"
+      }
+    ]
+  },
+  "jp_kanshinji_kondo": {
+    "src": "assets/colored-transparent-avif/jp_kanshinji_kondo.avif",
+    "originalSrc": "assets/colored/jp_kanshinji_kondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_kanshinji_kondo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "金堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kanshinji_kondo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kanshinji_Kondou.jpg",
+        "author": "Original uploader was Ｈｉｒｏ２００６ at ja.wikipedia",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_tofukuji_sanmon": {
+    "src": "assets/colored-transparent-avif/jp_tofukuji_sanmon.avif",
+    "originalSrc": "assets/colored/jp_tofukuji_sanmon.png",
+    "transparentSrc": "assets/colored-transparent/jp_tofukuji_sanmon.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "现存三门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_tofukuji_sanmon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kyoto_Tofuku-ji_San-mon_3.jpg",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_fushimi_inari_honden": {
+    "src": "assets/colored-transparent-avif/jp_fushimi_inari_honden.avif",
+    "originalSrc": "assets/colored/jp_fushimi_inari_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_fushimi_inari_honden.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "稻荷造本殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_fushimi_inari_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg",
+        "author": "そらみみ",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_kitano_honden": {
+    "src": "assets/colored-transparent-avif/jp_kitano_honden.avif",
+    "originalSrc": "assets/colored/jp_kitano_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kitano_honden.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "本殿、石之间与拜殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kitano_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kitano-tenmangu_Kyoto_Japan39s5s3945.jpg",
+        "author": "663highland",
+        "license": "CC BY 2.5"
+      }
+    ]
+  },
+  "jp_ninnaji_kondo": {
+    "src": "assets/colored-transparent-avif/jp_ninnaji_kondo.avif",
+    "originalSrc": "assets/colored/jp_ninnaji_kondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_ninnaji_kondo.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "旧宫中紫宸殿移建 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ninnaji_kondo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ninnaji_Kondo.jpg",
+        "author": "PlusMinus",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_hongwanji_hiunkaku": {
+    "src": "assets/colored-transparent-avif/jp_hongwanji_hiunkaku.avif",
+    "originalSrc": "assets/colored/jp_hongwanji_hiunkaku.png",
+    "transparentSrc": "assets/colored-transparent/jp_hongwanji_hiunkaku.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "滴翠园三层楼阁 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_hongwanji_hiunkaku.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Hiunkaku_Nishi_Honganji.jpg",
+        "author": "Hideyuki KAMON from Takarazuka / 宝塚, Hyogo / 兵庫, Japan / 日本",
+        "license": "CC BY-SA 2.0"
+      }
+    ]
+  },
+  "jp_manpukuji_daiou": {
+    "src": "assets/colored-transparent-avif/jp_manpukuji_daiou.avif",
+    "originalSrc": "assets/colored/jp_manpukuji_daiou.png",
+    "transparentSrc": "assets/colored-transparent/jp_manpukuji_daiou.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "黄檗宗大雄宝殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_manpukuji_daiou.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:260117_Manpuku-ji_Uji_Kyoto_pref_Japan01s3.jpg",
+        "author": "663highland",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_iwashimizu_honden": {
+    "src": "assets/colored-transparent-avif/jp_iwashimizu_honden.avif",
+    "originalSrc": "assets/colored/jp_iwashimizu_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_iwashimizu_honden.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "楼门与回廊正面局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_iwashimizu_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:IwashimizuHachimangu.jpg",
+        "author": "en:User:Fg2 who I believe is the same as User:Fg2 here.",
+        "license": "Public domain"
+      }
+    ]
+  },
+  "jp_ishiyamadera_tahoto": {
+    "src": "assets/colored-transparent-avif/jp_ishiyamadera_tahoto.avif",
+    "originalSrc": "assets/colored/jp_ishiyamadera_tahoto.png",
+    "transparentSrc": "assets/colored-transparent/jp_ishiyamadera_tahoto.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "多宝塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_ishiyamadera_tahoto.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Otsu_Ishiyama-dera_Tahoto_5.jpg",
+        "author": "Zairon",
+        "license": "CC BY 4.0"
+      }
+    ]
+  },
+  "jp_ishiyamadera_hondo": {
+    "src": "assets/colored-transparent-avif/jp_ishiyamadera_hondo.avif",
+    "originalSrc": "assets/colored/jp_ishiyamadera_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_ishiyamadera_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "正堂与礼堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ishiyamadera_hondo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ishiyamadera_hondo1.jpg",
+        "author": "KENPEI",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_chionin_sanmon": {
+    "src": "assets/colored-transparent-avif/jp_chionin_sanmon.avif",
+    "originalSrc": "assets/colored/jp_chionin_sanmon.png",
+    "transparentSrc": "assets/colored-transparent/jp_chionin_sanmon.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "现存三门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_chionin_sanmon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Chion-in_(Sanmon_1).jpg",
+        "author": "Lombroso",
+        "license": "Public domain"
+      }
+    ]
+  },
+  "jp_nanzenji_sanmon": {
+    "src": "assets/colored-transparent-avif/jp_nanzenji_sanmon.avif",
+    "originalSrc": "assets/colored/jp_nanzenji_sanmon.png",
+    "transparentSrc": "assets/colored-transparent/jp_nanzenji_sanmon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存三门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_nanzenji_sanmon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg",
+        "author": "ほっきー",
+        "license": "CC0"
+      }
+    ]
+  },
+  "jp_ujigami_honden": {
+    "src": "assets/colored-transparent-avif/jp_ujigami_honden.avif",
+    "originalSrc": "assets/colored/jp_ujigami_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_ujigami_honden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本殿外护屋 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ujigami_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ujigami-jinja,_honden.jpg",
+        "author": "Saigen Jiro",
+        "license": "CC0"
+      }
+    ]
+  },
+  "jp_ujigami_haiden": {
+    "src": "assets/colored-transparent-avif/jp_ujigami_haiden.avif",
+    "originalSrc": "assets/colored/jp_ujigami_haiden.png",
+    "transparentSrc": "assets/colored-transparent/jp_ujigami_haiden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "拜殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ujigami_haiden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ujigami_Haiden.jpg",
+        "author": "UjigamiJinja-M1370.jpg: Fg2\nderivative work: bamse (talk)",
+        "license": "Public domain"
+      }
+    ]
+  },
+  "jp_kozanji_sekisuiin": {
+    "src": "assets/colored-transparent-avif/jp_kozanji_sekisuiin.avif",
+    "originalSrc": "assets/colored/jp_kozanji_sekisuiin.png",
+    "transparentSrc": "assets/colored-transparent/jp_kozanji_sekisuiin.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "石水院开放廊内景 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kozanji_sekisuiin.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg",
+        "author": "663highland",
+        "license": "CC BY 2.5"
+      }
+    ]
+  },
+  "jp_kamigamo_honden": {
+    "src": "assets/colored-transparent-avif/jp_kamigamo_honden.avif",
+    "originalSrc": "assets/colored/jp_kamigamo_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kamigamo_honden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本殿与权殿前部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kamigamo_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kamigamo-jinja_Honden.jpg",
+        "author": "文化財保護委員会",
+        "license": "Public domain"
+      }
+    ]
+  },
+  "jp_shimogamo_honden": {
+    "src": "assets/colored-transparent-avif/jp_shimogamo_honden.avif",
+    "originalSrc": "assets/colored/jp_shimogamo_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_shimogamo_honden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "东西本殿前部示意 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_shimogamo_honden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Shimogamo-Jingya_National_Treasure_World_heritage_Kyoto_%E5%9B%BD%E5%AE%9D%E3%83%BB%E4%B8%96%E7%95%8C%E9%81%BA%E7%94%A3_%E4%B8%8B%E9%B4%A8%E7%A5%9E%E7%A4%BE_%E4%BA%AC%E9%83%BD20.JPG",
+        "author": "Nekosuki",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_enryakuji_komponchudo": {
+    "src": "assets/colored-transparent-avif/jp_enryakuji_komponchudo.avif",
+    "originalSrc": "assets/colored/jp_enryakuji_komponchudo.png",
+    "transparentSrc": "assets/colored-transparent/jp_enryakuji_komponchudo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存根本中堂外观 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_enryakuji_komponchudo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo04n4272.jpg",
+        "author": "663highland",
+        "license": "CC BY 2.5"
+      }
+    ]
+  },
+  "jp_katsura_koshoin": {
+    "src": "assets/colored-transparent-avif/jp_katsura_koshoin.avif",
+    "originalSrc": "assets/colored/jp_katsura_koshoin.png",
+    "transparentSrc": "assets/colored-transparent/jp_katsura_koshoin.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "古书院 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_katsura_koshoin.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Shoin.jpg",
+        "author": "Raphael Azevedo Franca",
+        "license": "Public domain"
+      }
+    ]
+  },
+  "jp_joruriji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_joruriji_hondo.avif",
+    "originalSrc": "assets/colored/jp_joruriji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_joruriji_hondo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "九体阿弥陀堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_joruriji_hondo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Joruriji_Hondo.jpg",
+        "author": "puffyjet",
+        "license": "CC BY 2.0"
+      }
+    ]
+  },
+  "jp_joruriji_tower": {
+    "src": "assets/colored-transparent-avif/jp_joruriji_tower.avif",
+    "originalSrc": "assets/colored/jp_joruriji_tower.png",
+    "transparentSrc": "assets/colored-transparent/jp_joruriji_tower.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "三重塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_joruriji_tower.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Joruri-ji_temple_three-storied_pagoda_in_spring_(right-side).jpg",
+        "author": "MirokunomichiProject",
+        "license": "CC0"
+      }
+    ]
+  },
+  "jp_ryoanji_garden": {
+    "src": "assets/colored-transparent-avif/jp_ryoanji_garden.avif",
+    "originalSrc": "assets/colored/jp_ryoanji_garden.png",
+    "transparentSrc": "assets/colored-transparent/jp_ryoanji_garden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "方丈枯山水石庭 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ryoanji_garden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:RyoanJi-Dry_garden.jpg",
+        "author": "Stephane D'Alu",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_tenryuji_garden": {
+    "src": "assets/colored-transparent-avif/jp_tenryuji_garden.avif",
+    "originalSrc": "assets/colored/jp_tenryuji_garden.png",
+    "transparentSrc": "assets/colored-transparent/jp_tenryuji_garden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "曹源池庭园 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_tenryuji_garden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Tenryu-Ji_Garden.jpg",
+        "author": "SElefant",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_saihoji_garden": {
+    "src": "assets/colored-transparent-avif/jp_saihoji_garden.avif",
+    "originalSrc": "assets/colored/jp_saihoji_garden.png",
+    "transparentSrc": "assets/colored-transparent/jp_saihoji_garden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "黄金池与苔庭 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_saihoji_garden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Saihoji_kokedera-08.jpg",
+        "author": "René Haas",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_hokanji_tower": {
+    "src": "assets/colored-transparent-avif/jp_hokanji_tower.avif",
+    "originalSrc": "assets/colored/jp_hokanji_tower.png",
+    "transparentSrc": "assets/colored-transparent/jp_hokanji_tower.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存五重塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_hokanji_tower.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg",
+        "author": "Basile Morin",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_gosho_shishinden": {
+    "src": "assets/colored-transparent-avif/jp_gosho_shishinden.avif",
+    "originalSrc": "assets/colored/jp_gosho_shishinden.png",
+    "transparentSrc": "assets/colored-transparent/jp_gosho_shishinden.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存正殿 · 设色图",
+    "width": 1563,
+    "height": 1006,
+    "tint": false,
+    "record": "assets/color-research/jp_gosho_shishinden.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kyoto-gosho_Shishinden_zenkei-5.jpg",
+        "author": "Saigen Jiro",
+        "license": "CC0"
+      }
+    ]
+  },
+  "jp_daitokuji_karamon": {
+    "src": "assets/colored-transparent-avif/jp_daitokuji_karamon.avif",
+    "originalSrc": "assets/colored/jp_daitokuji_karamon.png",
+    "transparentSrc": "assets/colored-transparent/jp_daitokuji_karamon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本坊唐门 · 设色图",
+    "width": 1401,
+    "height": 1123,
+    "tint": false,
+    "record": "assets/color-research/jp_daitokuji_karamon.json",
+    "references": [
+      {
+        "page": "https://prtimes.jp/main/html/rd/p/000000010.000063967.html",
+        "author": "株式会社京都春秋／摄影者未标示",
+        "license": "未声明；仅作本地参考"
+      }
+    ]
+  },
+  "jp_daitokuji_hojo": {
+    "src": "assets/colored-transparent-avif/jp_daitokuji_hojo.avif",
+    "originalSrc": "assets/colored/jp_daitokuji_hojo.png",
+    "transparentSrc": "assets/colored-transparent/jp_daitokuji_hojo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本坊方丈 · 设色图",
+    "width": 1774,
+    "height": 887,
+    "tint": false,
+    "record": "assets/color-research/jp_daitokuji_hojo.json",
+    "references": [
+      {
+        "page": "https://prtimes.jp/main/html/rd/p/000000739.000005484.html",
+        "author": "京都府／摄影者未标示",
+        "license": "未声明；仅作本地参考"
+      }
+    ]
+  },
+  "jp_jishoji_togudo": {
+    "src": "assets/colored-transparent-avif/jp_jishoji_togudo.avif",
+    "originalSrc": "assets/colored/jp_jishoji_togudo.png",
+    "transparentSrc": "assets/colored-transparent/jp_jishoji_togudo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存东求堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_jishoji_togudo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Jishoji_07.JPG",
+        "author": "Reggaeman",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "jp_toji_kondo": {
+    "src": "assets/colored-transparent-avif/jp_toji_kondo.avif",
+    "originalSrc": "assets/colored/jp_toji_kondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_toji_kondo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存金堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_toji_kondo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Japan_2020_Golden_Hall,_Toji.jpg",
+        "author": "Chainwit.",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_daigoji_sanboin": {
+    "src": "assets/colored-transparent-avif/jp_daigoji_sanboin.avif",
+    "originalSrc": "assets/colored/jp_daigoji_sanboin.png",
+    "transparentSrc": "assets/colored-transparent/jp_daigoji_sanboin.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "表书院 · 设色图",
+    "width": 1774,
+    "height": 887,
+    "tint": false,
+    "record": "assets/color-research/jp_daigoji_sanboin.json",
+    "references": [
+      {
+        "page": "https://www.daigoji.or.jp/archives/cultural_assets/NT002/NT002.html",
+        "author": "醍醐寺／摄影者未标示",
+        "license": "未声明；仅作本地参考"
+      }
+    ]
+  },
+  "jp_hongwanji_goeido": {
+    "src": "assets/colored-transparent-avif/jp_hongwanji_goeido.avif",
+    "originalSrc": "assets/colored/jp_hongwanji_goeido.png",
+    "transparentSrc": "assets/colored-transparent/jp_hongwanji_goeido.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存御影堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_hongwanji_goeido.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Nishi_Honganji_Temple_Goei_Hall.JPG",
+        "author": "KishujiRapid",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jp_chionin_mieido": {
+    "src": "assets/colored-transparent-avif/jp_chionin_mieido.avif",
+    "originalSrc": "assets/colored/jp_chionin_mieido.png",
+    "transparentSrc": "assets/colored-transparent/jp_chionin_mieido.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存御影堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_chionin_mieido.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Chionin_Mieido.jpg",
+        "author": "PlusMinus",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

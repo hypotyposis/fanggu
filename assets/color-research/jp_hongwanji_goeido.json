@@ -1,0 +1,47 @@
+{
+  "id": "jp_hongwanji_goeido",
+  "name": "西本愿寺御影堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_hongwanji_goeido-line-input.png",
+    "assets/references/jp_hongwanji_goeido-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: Nishi Hongan-ji Goeido Founder Hall, the ACTUAL 1636 large hall in the photo, not Higashi Hongan-ji nor the smaller Amida Hall. Preserve enormous single main roof, broad front veranda with many wooden posts and central stair; remove trees, lantern, visitors and paving. Material observations: Gray ceramic roof tiles, dark aged timber columns and doors, neutral pale wall bays and stone foundations.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nishi_Honganji_Temple_Goei_Hall.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Nishi_Honganji_Temple_Goei_Hall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "KishujiRapid",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_hongwanji_goeido-photo.jpg",
+      "title": "File:Nishi Honganji Temple Goei Hall.JPG"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 西本愿寺御影堂",
+      "url": "https://ja.kyoto.travel/tourism/single01.php?category_id=&tourism_id=215"
+    }
+  ],
+  "output": "assets/colored/jp_hongwanji_goeido.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-bb2076f2-8f5e-4248-ae11-c944f675055f.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "a946bdf5c3096fb5cd1844143f1d160f9487df0728550446ff38f7ae27f393c2",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

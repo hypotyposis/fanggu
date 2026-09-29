@@ -23,7 +23,7 @@ struct AtlasMapView: View {
                     ZStack(alignment: .topLeading) {
                         SketchMapGrid(projection: projection, labels: labels)
                         ForEach(labels) { label in
-                            Button { selectedPlace = label.id } label: {
+                            Button { openPlace(label.id) } label: {
                                 Text(label.site.placeName)
                                     .font(FangguFont.serif(11))
                                     .foregroundStyle(Palette.paper)
@@ -34,7 +34,7 @@ struct AtlasMapView: View {
                             .buttonStyle(.plain)
                             .position(x: label.rect.midX, y: label.rect.midY)
                             .accessibilityLabel("\(label.site.place)，\(places[label.id]?.count ?? 1) 处已到访古迹")
-                            Button { selectedPlace = label.id } label: {
+                            Button { openPlace(label.id) } label: {
                                 Color.clear.frame(width: 28, height: 28).contentShape(Circle())
                             }
                             .buttonStyle(.plain)
@@ -76,6 +76,11 @@ struct AtlasMapView: View {
             }
             .preferredColorScheme(.dark)
         }
+    }
+
+    private func openPlace(_ id: String) {
+        selectedPlace = id
+        Haptics.selection()
     }
 }
 
@@ -227,7 +232,10 @@ struct TimelineView: View {
                 Menu {
                     ForEach(periods, id: \.0) { key, title in
                         Button("\(title) · \(key == "all" ? sorted.count : sorted.filter { $0.dynasty == key }.count) 处") {
-                            period = key; cluster = []; page = 0
+                            if period != key || !cluster.isEmpty {
+                                period = key; cluster = []; page = 0
+                                Haptics.selection()
+                            }
                         }
                     }
                 } label: {
@@ -304,7 +312,12 @@ struct TimelineView: View {
                         let x = timelineX(first.dynastyStart)
                         let width = max(22, timelineX(last.dynastyEnd) - x)
                         let y = trackY(first)
-                        Button { period = key; cluster = []; page = 0 } label: {
+                        Button {
+                            if period != key || !cluster.isEmpty {
+                                period = key; cluster = []; page = 0
+                                Haptics.selection()
+                            }
+                        } label: {
                             Rectangle().fill(first.accent.opacity(period == key ? 0.38 : 0.16))
                                 .overlay(Rectangle().stroke(first.accent.opacity(0.6), lineWidth: 1))
                                 .frame(width: width, height: 46)
@@ -319,7 +332,11 @@ struct TimelineView: View {
                 }
                 ForEach(timelineClusters, id: \.id) { group in
                     Button {
-                        cluster = Set(group.sites.map(\.id)); period = "all"; page = 0
+                        let next = Set(group.sites.map(\.id))
+                        if cluster != next || period != "all" {
+                            cluster = next; period = "all"; page = 0
+                            Haptics.selection()
+                        }
                     } label: {
                         let allVisited = group.sites.allSatisfy { library.record(for: $0).status == .visited }
                         Circle()

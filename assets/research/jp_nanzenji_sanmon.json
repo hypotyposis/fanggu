@@ -1,0 +1,62 @@
+{
+  "id": "jp_nanzenji_sanmon",
+  "subject": "现存三门",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg/1280px-%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "ほっきー",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/jp_nanzenji_sanmon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_nanzenji_sanmon-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存三门于1628年再建；寺院的十三世纪创立时间不是这座门的建造年。 图版绘三门正面，不包含前方台阶与两侧树木。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu Japanese heritage line plate. Image 1 shows the ACTUAL complete extant Nanzen-ji Sanmon gate in Kyoto, rebuilt 1628: monumental two-storey Zen gate, broad dark tiled upper and lower roofs, open three-passage ground level and deep timber colonnade. Draw the full gate alone, excluding trees, stairs, foreground path and people. The last image is ONLY the project's delicate black ink contour STYLE sample; never transfer its subject. Fine sparse accurate black line work, minimal hatching and no large dark fills. Background should be completely blank opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. Whole subject centered with generous margins. No shadow, gradient, paper grain, glow, color, text, labels, modern fixtures, frame, watermark or checkerboard.",
+  "generated_file": "assets/generated/jp_nanzenji_sanmon.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-636a1896-af9c-47e5-8411-98531951b39d.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "南禅寺 · 三门",
+    "江户时代 · 1628年"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "6b9c980880764e7fdcf8ddca2212eeb66dee99fda2ac44bdb4c85c8505145116",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg/1280px-%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "ほっきー",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_nanzenji_sanmon-photo.jpg",
+      "title": "File:南禅寺 三門 2025.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "南禅寺 · 三门",
+      "url": "https://www.nanzenji.or.jp/equipment/sanmon"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

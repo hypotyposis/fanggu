@@ -1,0 +1,56 @@
+{
+  "id": "jp_chionin_sanmon",
+  "name": "知恩院三门",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_chionin_sanmon.png",
+    "assets/references/jp_chionin_sanmon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_chionin_sanmon; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: near-black weathered timber columns and bracket sets, deep dark-gray roof tile, muted plaster wall fields and restrained warm wooden details; preserve both massive roof tiers and three open passages. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "near-black weathered timber columns and bracket sets, deep dark-gray roof tile, muted plaster wall fields and restrained warm wooden details; preserve both massive roof tiers and three open passages",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chion-in_(Sanmon_1).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Chion-in_%28Sanmon_1%29.jpg/1280px-Chion-in_%28Sanmon_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Lombroso",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "reference_file": "assets/references/jp_chionin_sanmon-photo.jpg",
+      "title": "File:Chion-in (Sanmon 1).jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "知恩院 · 三门",
+      "url": "https://www.chion-in.or.jp/highlight/building/sanmon.php"
+    }
+  ],
+  "output": "assets/colored/jp_chionin_sanmon.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-2528cdd3-5be7-4730-a2a8-ecd4845b1967.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "417b19dd9cf3a38e5b7f0e22b5eaf33e054eacdf08d2b1d2db8c5f3eff92af9e",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.642Z",
+    "sourceSha256": "417b19dd9cf3a38e5b7f0e22b5eaf33e054eacdf08d2b1d2db8c5f3eff92af9e",
+    "inputSha256": "bc3a0a467b5c8db9c49781c4464b86ef6ef49286df64eaf694dbc9e57e7bef37",
+    "avifSha256": "6af008712cec56ecce33139b640224aa43bbcd761115251148ffcb236e4268f7",
+    "statement": "验收没问题"
+  }
+}

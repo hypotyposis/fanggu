@@ -1,0 +1,62 @@
+{
+  "id": "jp_ujigami_haiden",
+  "subject": "拜殿",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Ujigami_Haiden.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Ujigami_Haiden.jpg/1280px-Ujigami_Haiden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "UjigamiJinja-M1370.jpg: Fg2\nderivative work: bamse (talk)",
+  "license": "Public domain",
+  "reference_files": [
+    "assets/references/jp_ujigami_haiden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_ujigami_haiden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "拜殿与平安后期本殿是两座不同年代的国宝建筑。 图版绘拜殿正面，并去除参拜设施与游人。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu Japanese heritage line plate. Image 1 is a documentary photograph of the ACTUAL Ujigami Shrine HAIDEN (worship hall) in Uji, built in the early Kamakura period. Use Image 1 for architectural shape and front elevation: single long low building, one broad shallow cypress-bark roof with gently lifted ends, white outer wall bays, dark central doorway and verandah rail. Image 2 is ONLY a delicate thin black ink contour style sample, not a building reference. Draw just the complete Haiden, omit people, lanterns, signboards, grass, trees, shrine ornaments outside the hall. Wide landscape 1536x1024. Keep the roof, plinth and rail completely in frame. Sparse precise black ink contours, no solid gray fills. Perfectly flat opaque PURE WHITE #FFFFFF background everywhere outside the architecture and through openings. No paper texture, shadow, gradient, glow, text, frame, watermark or checkerboard.",
+  "generated_file": "assets/generated/jp_ujigami_haiden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-0e11f535-e48b-4ede-a409-c858a032a39a.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "宇治上神社 · 拜殿",
+    "镰仓初期 · 约13世纪初"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "853df29923d741342943ad626643b358de1c7335abb7400a62efc955417ca4a2",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ujigami_Haiden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Ujigami_Haiden.jpg/1280px-Ujigami_Haiden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "UjigamiJinja-M1370.jpg: Fg2\nderivative work: bamse (talk)",
+      "license": "Public domain",
+      "license_url": "",
+      "reference_file": "assets/references/jp_ujigami_haiden-photo.jpg",
+      "title": "File:Ujigami Haiden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 宇治上神社",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005624.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

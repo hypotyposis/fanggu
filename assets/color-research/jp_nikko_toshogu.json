@@ -1,0 +1,46 @@
+{
+  "id": "jp_nikko_toshogu",
+  "name": "日光东照宫阳明门",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_nikko_toshogu.png",
+    "assets/references/jp_nikko_toshogu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_nikko_toshogu; preserve its silhouette, framing, roof count, openings, architectural details and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Nikko Yomeimon's distinctive ivory-white columns and carved plaster, deep black lacquer roof and structural accents, restrained aged gold ornaments, small vermilion and blue-green polychrome carving accents. Keep rich ornament legible but not photoreal or noisy. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "白柱、黑漆、金饰与少量彩色雕刻。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Nikko_Toshogu_Yomeimon_Gate_2024.jpg/1920px-Nikko_Toshogu_Yomeimon_Gate_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_nikko_toshogu-photo.jpg",
+      "author": "Jpatokal"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日光市官方：阳明门形制",
+      "url": "https://www.nikko-kankou.org/public/spot/125"
+    }
+  ],
+  "output": "assets/colored/jp_nikko_toshogu.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-c2fad108-8c94-48f4-a877-b4f05d16ad22.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7142bc8080fb55a347ee38ef6ccc8bf5c2bc60682d67abe3f4fa757ac4290548",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看原稿与实拍材料色；不等于用户视觉验收。复杂雕饰经过选择性概括，局部形制和色层需用户审图。"
+    }
+  }
+}

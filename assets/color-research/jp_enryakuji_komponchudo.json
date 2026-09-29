@@ -1,0 +1,47 @@
+{
+  "id": "jp_enryakuji_komponchudo",
+  "name": "延历寺根本中堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_enryakuji_komponchudo.png",
+    "assets/references/jp_enryakuji_komponchudo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create one Fanggu colored companion heritage plate. Image 1 is the EXACT existing line plate to color; lock its silhouette, framing, number of roofs, openings, steps and every major contour. Image 2 is documentary real-world photo of the same subject, for material color observations and identification only; do not replace Image 1's composition. Image 3 is a matte museum illustration STYLE sample ONLY: do not copy its Chinese building, warm palette or black background. Subject: jp_enryakuji_komponchudo. Materials: Large muted gray clay tile roof, dark weathered brown wood eaves and entry corridor, off-white wall areas, restrained cool stone gray foundation. Do not paint red leaves or trees onto hall. Color only existing solid surfaces with restrained matte mineral pigment, thin charcoal outlines and very light texture inside solids. Exterior background and any true openings must be perfectly flat PURE WHITE #FFFFFF or preserved native transparency; absolutely no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard. No people, trees, labels, text, invented architecture or border. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Enryakuji_Konponchudo04n4272.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Enryakuji_Konponchudo04n4272.jpg/1280px-Enryakuji_Konponchudo04n4272.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "reference_file": "assets/references/jp_enryakuji_komponchudo-photo.jpg",
+      "title": "File:Enryakuji Konponchudo04n4272.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 延历寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005617.html"
+    }
+  ],
+  "output": "assets/colored/jp_enryakuji_komponchudo.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-3bd2d666-2e4d-42ec-8633-b8e759066f47.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "04a8cce4dbdbf136e055b2f91eb2a4b30af0e9b1ced411084eeadc075cee2028",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

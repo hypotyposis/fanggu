@@ -1,0 +1,46 @@
+{
+  "id": "jp_sumiyoshi_honden",
+  "name": "住吉大社四座本殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_sumiyoshi_honden.png",
+    "assets/references/jp_sumiyoshi_honden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_sumiyoshi_honden; preserve its silhouette, framing, roof count, openings and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Four separate halls with saturated but matte vermilion red timber and railings, white wall panels, charcoal-brown cypress bark gabled roofs and dark forked chigi. Preserve front-to-back row of three and the side-by-side fourth. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "Four separate halls with saturated but matte vermilion red timber and railings, white wall panels, charcoal-brown cypress bark gabled roofs and dark forked chigi. Preserve front-to-back row of three and the side-by-side fourth.",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sumiyoshi_Taisha_Shinto_shrine,_Osaka,_Japan_(2)_-_September_2015.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Sumiyoshi_Taisha_Shinto_shrine%2C_Osaka%2C_Japan_%282%29_-_September_2015.jpg/1280px-Sumiyoshi_Taisha_Shinto_shrine%2C_Osaka%2C_Japan_%282%29_-_September_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Rickard Törnblad",
+      "license": "CC BY-SA 4.0",
+      "reference_file": "assets/references/jp_sumiyoshi_honden-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日本国指定文化财数据库 · 住吉大社本殿",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/2093"
+    }
+  ],
+  "output": "assets/colored/jp_sumiyoshi_honden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-9e7b3432-0411-478c-9c81-01fdbf30b018.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "64e1def48c6fd9283a7501fbd20032828752f4afb85bd33c02ede69b3aac64f2",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿及实拍材料色；不等于用户视觉验收。"
+    }
+  }
+}

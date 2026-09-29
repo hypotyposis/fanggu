@@ -1,0 +1,65 @@
+{
+  "id": "jp_kinkaku",
+  "subject": "鹿苑寺金阁舍利殿现存三层复建体",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_2024.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Golden_Pavilion_Kinkaku-ji_2024.jpg/1920px-Golden_Pavilion_Kinkaku-ji_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Nacaru",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_kinkaku-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_kinkaku-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "按1955年复建的现状绘三层楼阁；前侧池水、树木与游客省略。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant Kinkaku (Shariden) at Rokuon-ji, Kyoto; use it for subject geometry. Image 2 is ONLY the project's black ink line style sample, not a building-shape reference. Draw the present 1955 reconstruction of the Golden Pavilion from the pond-facing front as photographed. Preserve exactly THREE visible storeys, the broad low lower verandah over the pond, the smaller upper level, the gently pitched Japanese roofs and the phoenix finial. Show the complete building, no extra pavilion. Exclude trees, sky, pond reflections, tourists and surrounding grounds except a few restrained base lines. Fine neutral BLACK contours, sparse internal detail, no large shaded masses. Landscape composition with the whole pavilion centered and wide white margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_kinkaku.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-784451b3-4307-4526-929d-f0a311bb11f0.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "鹿苑寺金阁舍利殿现存三层复建体 · 线稿",
+    "按现存主体绘制"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1f1c8091322a9e092117b1ca7f1638f9fd01fc6ef6ee6466bbc5c1d0ee5081a0",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_2024.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Golden_Pavilion_Kinkaku-ji_2024.jpg/1920px-Golden_Pavilion_Kinkaku-ji_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_kinkaku-photo.jpg",
+      "author": "Nacaru"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "相国寺：金阁1955年复建",
+      "url": "https://www.shokoku-ji.jp/reference/history/"
+    },
+    {
+      "title": "金阁寺：舍利殿楼层与现状材料",
+      "url": "https://www.shokoku-ji.jp/kinkakuji/guide/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、风格母版与生成原稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "按1955年复建的现状绘三层楼阁；前侧池水、树木与游客省略。"
+  },
+  "visual_review_status": "pending_user"
+}

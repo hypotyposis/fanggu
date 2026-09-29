@@ -1,0 +1,47 @@
+{
+  "id": "jp_nanzenji_sanmon",
+  "name": "南禅寺三门",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_nanzenji_sanmon.png",
+    "assets/references/jp_nanzenji_sanmon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create one Fanggu colored companion heritage plate. Image 1 is the EXACT existing line plate to color; lock its silhouette, framing, number of roofs, openings, steps and every major contour. Image 2 is documentary real-world photo of the same subject, for material color observations and identification only; do not replace Image 1's composition. Image 3 is a matte museum illustration STYLE sample ONLY: do not copy its Chinese building, warm palette or black background. Subject: jp_nanzenji_sanmon. Materials: Weathered very dark brown timber and charcoal gray clay roof tiles; stone footings cool gray. Keep all three open ground passages. Color only existing solid surfaces with restrained matte mineral pigment, thin charcoal outlines and very light texture inside solids. Exterior background and any true openings must be perfectly flat PURE WHITE #FFFFFF or preserved native transparency; absolutely no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard. No people, trees, labels, text, invented architecture or border. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg/1280px-%E5%8D%97%E7%A6%85%E5%AF%BA_%E4%B8%89%E9%96%80_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "ほっきー",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "reference_file": "assets/references/jp_nanzenji_sanmon-photo.jpg",
+      "title": "File:南禅寺 三門 2025.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "南禅寺 · 三门",
+      "url": "https://www.nanzenji.or.jp/equipment/sanmon"
+    }
+  ],
+  "output": "assets/colored/jp_nanzenji_sanmon.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-8137f7e6-1bc8-48aa-8efa-bba9d9003763.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "f6f0aca330f754984aafe7ec552eba43ee11e81d5706e489d136171126cb1cd7",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

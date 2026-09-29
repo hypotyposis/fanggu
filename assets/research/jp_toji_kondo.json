@@ -1,0 +1,62 @@
+{
+  "id": "jp_toji_kondo",
+  "subject": "现存金堂",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Japan_2020_Golden_Hall,_Toji.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Japan_2020_Golden_Hall%2C_Toji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Chainwit.",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_toji_kondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_toji_kondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存金堂于庆长八年（1603）再建，属于桃山时期的寺院木构。 图版聚焦金堂，不以东寺五重塔或讲堂替代。",
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage line plate. Image 1 is the actual monument PHOTO and controls geometry. Image 2 is ONLY the project black fine-contour STYLE sample; never transfer its Buddha subject. Draw the named Japanese building accurately as a complete, isolated elevation at nearly frontal view. Fine sparse black ink contours with a few structural lines; no broad dark fills, hatching, pencil grain or opaque silhouettes. Pure flat opaque WHITE #FFFFFF canvas, including every blank region inside and outside the subject. Center with generous margins. No shadow, gradient, texture, glow, checkerboard, color, text, labels, signage, people, foliage, surrounding buildings, watermark or frame. Subject: To-ji Kondo Golden Hall, the ACTUAL existing 1603 main hall, distinct from To-ji five-story pagoda and lecture hall. Preserve large upper roof above lower skirt roof, central raised entrance and timber lattice facade; remove people, event banners, tents and trees.",
+  "generated_file": "assets/generated/jp_toji_kondo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-22a5e01d-75c4-45f1-8e86-b38ab4f08193.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "东寺 · 金堂",
+    "桃山时代 · 1603年再建"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "1495d94c0276a1e50f58d416e336491c839076980934823785be90dde9948e5b",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Japan_2020_Golden_Hall,_Toji.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Japan_2020_Golden_Hall%2C_Toji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_toji_kondo-photo.jpg",
+      "title": "File:Japan 2020 Golden Hall, Toji.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 东寺金堂",
+      "url": "https://ja.kyoto.travel/tourism/single01.php?category_id=7&tourism_id=262"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本与生成原件。",
+      "检查主体范围、结构和轮廓；等待用户最终审图。"
+    ],
+    "limitations": "图版是依据实拍绘制的建筑示意，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

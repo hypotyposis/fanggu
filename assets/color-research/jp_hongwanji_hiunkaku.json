@@ -1,0 +1,60 @@
+{
+  "id": "jp_hongwanji_hiunkaku",
+  "name": "西本愿寺飞云阁",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_hongwanji_hiunkaku.png",
+    "assets/references/jp_hongwanji_hiunkaku-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_hongwanji_hiunkaku; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: aged deep-brown timber, white sliding paper wall panels, warm weathered wood veranda, dark cypress-shingle roofs; preserve the staggered three-storey asymmetrical pavilion. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "aged deep-brown timber, white sliding paper wall panels, warm weathered wood veranda, dark cypress-shingle roofs; preserve the staggered three-storey asymmetrical pavilion",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hiunkaku_Nishi_Honganji.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Hiunkaku_Nishi_Honganji.jpg/1280px-Hiunkaku_Nishi_Honganji.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Hideyuki KAMON from Takarazuka / 宝塚, Hyogo / 兵庫, Japan / 日本",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "reference_file": "assets/references/jp_hongwanji_hiunkaku-photo.jpg",
+      "title": "File:Hiunkaku Nishi Honganji.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "西本愿寺 · 飞云阁",
+      "url": "https://www.hongwanji.kyoto/see/hiunkaku.html"
+    },
+    {
+      "title": "文化遗产数据库 · 本愿寺飞云阁",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/122624"
+    }
+  ],
+  "output": "assets/colored/jp_hongwanji_hiunkaku.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-add93b81-1279-4783-a426-129574d283bb.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f071ef1c8fbf4c939d9fd83d2e1be951248190465019dc1b64f20a5c362b4ec9",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.620Z",
+    "sourceSha256": "f071ef1c8fbf4c939d9fd83d2e1be951248190465019dc1b64f20a5c362b4ec9",
+    "inputSha256": "a70b16c556a5970a7a6ab58887ba6e4cfd8222a534d7bb36f3bc3f74320354b4",
+    "avifSha256": "aee529470e830a8791f8cf0439aeb0c0dac371058a378c46da19a283cfcc063b",
+    "statement": "验收没问题"
+  }
+}

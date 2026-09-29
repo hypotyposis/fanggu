@@ -1,0 +1,51 @@
+{
+  "id": "jp_kozanji_sekisuiin",
+  "name": "高山寺石水院",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_kozanji_sekisuiin.png",
+    "assets/references/jp_kozanji_sekisuiin-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create one Fanggu colored companion heritage plate. Image 1 is the EXACT existing line plate to color; lock its silhouette, framing, number of roofs, openings, steps and every major contour. Image 2 is documentary real-world photo of the same subject, for material color observations and identification only; do not replace Image 1's composition. Image 3 is a matte museum illustration STYLE sample ONLY: do not copy its Chinese building, warm palette or black background. Subject: jp_kozanji_sekisuiin. Materials: Interior only: aged medium-brown natural timber floor and beams, darker joinery, warm muted light through veranda openings, foliage green only in actually visible exterior gaps. Do not add painted murals. Color only existing solid surfaces with restrained matte mineral pigment, thin charcoal outlines and very light texture inside solids. Exterior background and any true openings must be perfectly flat PURE WHITE #FFFFFF or preserved native transparency; absolutely no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard. No people, trees, labels, text, invented architecture or border. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg/1280px-Sekisuiin_Kozanji_Kyoto_Kyoto06s5s4350.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "reference_file": "assets/references/jp_kozanji_sekisuiin-photo.jpg",
+      "title": "File:Sekisuiin Kozanji Kyoto Kyoto06s5s4350.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 高山寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005625.html"
+    },
+    {
+      "title": "文化厅 · 石水院",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1850"
+    }
+  ],
+  "output": "assets/colored/jp_kozanji_sekisuiin.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-364841d0-443c-4768-9cc0-796572644ee6.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "eb42b9f8c78469cfd394f6e60530eb267998b7547ca09b841a91fcca4a7464bf",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

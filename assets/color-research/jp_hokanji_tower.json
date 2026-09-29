@@ -1,0 +1,47 @@
+{
+  "id": "jp_hokanji_tower",
+  "name": "法观寺八坂塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_hokanji_tower-line-input.png",
+    "assets/references/jp_hokanji_tower-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: Hokan-ji Yasaka Pagoda in Kyoto, the ACTUAL extant 1440 five-storey wooden pagoda with five distinct tiled eaves and finial. Show full tower from base to tip; remove street houses, tourists and trees. Material observations: Dark weathered timber, charcoal ceramic tile roofs, subtle warm-brown brackets and stone footing.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_%28Hokan-ji_Temple%29%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_hokanji_tower-photo.jpg",
+      "title": "File:Yasaka-dori early morning with street lanterns and the Tower of Yasaka (Hokan-ji Temple), Kyoto, Japan.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 法观寺",
+      "url": "https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=248"
+    }
+  ],
+  "output": "assets/colored/jp_hokanji_tower.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-206f2412-8773-4e2d-bb6c-72b526887054.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "4a0c40fe5a4817cad7a210f9ecb2f2a3c1f2ed37c00993547560a2767c7ef317",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "jp_joruriji_hondo",
+  "subject": "九体阿弥陀堂",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Joruriji_Hondo.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Joruriji_Hondo.jpg/1280px-Joruriji_Hondo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "puffyjet",
+  "license": "CC BY 2.0",
+  "reference_files": [
+    "assets/references/jp_joruriji_hondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_joruriji_hondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "本堂是保存平安后期九体阿弥陀信仰空间的珍贵木构。 图版聚焦现存本堂，不把池塘或对岸三重塔并入建筑轮廓。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage atlas black ink line plate. Image 1 is documentary photograph of the ACTUAL place and determines subject geometry. Image 2 is ONLY a thin black contour style reference, never the subject. Exact subject: Jōruri-ji HONDŌ Nine Amida Hall in Kizugawa, Kyoto Prefecture. Image 1 shows the long low late-Heian temple hall across its pond. Preserve its exceptionally broad single roof, long low row of bays, central doorway and raised timber veranda. Draw the building only, not the pond, trees, lantern or modern garden rail. Landscape 1536x1024, complete subject centered with generous margins, fine accurate sparse black ink outlines, minimal hatching, no dark filled masses. Background intended perfectly flat opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. No people, unrelated architecture, modern signs, text, shadows, gradient, paper texture, glow, frame or watermark.",
+  "generated_file": "assets/generated/jp_joruriji_hondo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-c777c4a0-0acc-47b0-adde-af163b4d2376.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "净琉璃寺 · 本堂",
+    "平安后期 · 约12世纪"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "36c2ac274a6d92822a772a0dc7d642bcc0306d2d999f29326b2cf5b788a9dfa1",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Joruriji_Hondo.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Joruriji_Hondo.jpg/1280px-Joruriji_Hondo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "puffyjet",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "reference_file": "assets/references/jp_joruriji_hondo-photo.jpg",
+      "title": "File:Joruriji Hondo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都府 · 木津川市的文化财",
+      "url": "https://www.pref.kyoto.jp/kyotoyamashirokanko/treasure_3.html"
+    },
+    {
+      "title": "木津川市 · 净琉璃寺",
+      "url": "https://www.city.kizugawa.lg.jp/0000001910.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

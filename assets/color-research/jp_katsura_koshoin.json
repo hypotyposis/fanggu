@@ -1,0 +1,47 @@
+{
+  "id": "jp_katsura_koshoin",
+  "name": "桂离宫古书院",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_katsura_koshoin.png",
+    "assets/references/jp_katsura_koshoin-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create ONE Fanggu colored companion plate. Image 1 is the EXACT existing black ink line plate and is the composition master: preserve its silhouette, framing, count and placement of roofs, rocks, water, openings, and major contours. Image 2 is documentary photograph of the ACTUAL subject for present material/landscape colors only. Image 3 is matte museum illustration STYLE sample only; do not copy its building, colors or black backdrop. Subject: jp_katsura_koshoin. Material observations: Dark muted gray-brown cypress bark roof, pale ivory shoji and plaster panels, weathered warm brown natural timber, gray stone foundation. Keep simple Old Shoin geometry, no ornamental color. Apply restrained matte pigment areas to Image 1 only, retain fine charcoal outlines, slight texture only within solid forms. Entire exterior background, empty sky and true openings should be perfectly flat opaque PURE WHITE #FFFFFF or native transparency if returned. No black background, haze, gradient, paper texture, glow, cast shadow, checkerboard, people, labels, extra buildings, invented garden features, frame or watermark. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shoin.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Shoin.jpg/1280px-Shoin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Raphael Azevedo Franca",
+      "license": "Public domain",
+      "license_url": "",
+      "reference_file": "assets/references/jp_katsura_koshoin-photo.jpg",
+      "title": "File:Shoin.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "宫内厅 · 桂离宫古书院",
+      "url": "https://kyoto-gosho.kunaicho.go.jp/building/2A26"
+    }
+  ],
+  "output": "assets/colored/jp_katsura_koshoin.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-32ac5962-65c8-4516-9a21-894707b96d93.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "032eec799f0392fa3b2466b623e3278b0fe2bfa0ebb0a67ae7481d6fdf2dea6b",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

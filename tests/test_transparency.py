@@ -122,6 +122,16 @@ class TransparencyTests(unittest.TestCase):
         self.assertGreater(np.asarray(result)[3, 3, 3], 0)
         np.testing.assert_array_equal(np.asarray(image), rgb)
 
+    def test_prototype_adaptive_ink_removes_pale_fill_and_keeps_pen_stroke(self):
+        rgba = np.full((33, 33, 4), [220, 220, 220, 253], dtype=np.uint8)
+        rgba[16, 8:25, :3] = 25
+        result = delivery.prototype_matte.extract_line(Image.fromarray(rgba), (100, 150, 120),
+                                                       adaptive_ink=True)
+        out = np.asarray(result)
+        self.assertEqual(out[4, 4, 3], 0)
+        self.assertGreater(out[16, 16, 3], 100)
+        np.testing.assert_array_equal(out[16, 16, :3], [100, 150, 120])
+
     def test_prototype_keeps_stone_and_dark_recess_and_skips_invalid_seeds(self):
         rgb = np.full((11, 11, 3), 255, dtype=np.uint8)
         rgb[2:9, 2:9] = [100, 110, 120]

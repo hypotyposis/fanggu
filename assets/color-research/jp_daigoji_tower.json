@@ -1,0 +1,46 @@
+{
+  "id": "jp_daigoji_tower",
+  "name": "醍醐寺五重塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_daigoji_tower.png",
+    "assets/references/jp_daigoji_tower-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_daigoji_tower; preserve its silhouette, framing, roof count, openings and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Weathered dark brown timber with subtle ochre tint, aged gray clay tile roof, small off-white plaster wall fields, bronze finial. Keep all FIVE eave lines. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "Weathered dark brown timber with subtle ochre tint, aged gray clay tile roof, small off-white plaster wall fields, bronze finial. Keep all FIVE eave lines.",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Daigoji_Five-storied_Pagoda.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Daigoji_Five-storied_Pagoda.JPG/1280px-Daigoji_Five-storied_Pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Shigeru-a24",
+      "license": "CC BY-SA 3.0",
+      "reference_file": "assets/references/jp_daigoji_tower-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "醍醐寺 · 沿革",
+      "url": "https://www.daigoji.or.jp/about/history.html"
+    }
+  ],
+  "output": "assets/colored/jp_daigoji_tower.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-9c6e1c33-acec-42ab-b17a-8546ef8acb80.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "63cf2a26fe5219192f4774a7d1ac01e439614b3f06dbe6f25ba63d14e6fb36d1",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿及实拍材料色；不等于用户视觉验收。"
+    }
+  }
+}

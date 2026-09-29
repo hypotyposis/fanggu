@@ -1,0 +1,56 @@
+{
+  "id": "jp_kitano_honden",
+  "name": "北野天满宫本殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_kitano_honden.png",
+    "assets/references/jp_kitano_honden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_kitano_honden; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: deep red-brown painted timber, dark cypress-bark roof, gilded decorative fittings, white or warm plaster infills; preserve the linked gabled roof group. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "deep red-brown painted timber, dark cypress-bark roof, gilded decorative fittings, white or warm plaster infills; preserve the linked gabled roof group",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kitano-tenmangu_Kyoto_Japan39s5s3945.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Kitano-tenmangu_Kyoto_Japan39s5s3945.jpg/1280px-Kitano-tenmangu_Kyoto_Japan39s5s3945.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "reference_file": "assets/references/jp_kitano_honden-photo.jpg",
+      "title": "File:Kitano-tenmangu Kyoto Japan39s5s3945.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "北野天满宫 · 国宝本殿",
+      "url": "https://kitanotenmangu.or.jp/guidance/gohonden/"
+    }
+  ],
+  "output": "assets/colored/jp_kitano_honden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-06ae3290-33d7-420d-845b-a1071efd9d76.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "77e6d8a7dcd179e0811c5910b53ca1128024340047ad206ce5aaa42e19a34b46",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.610Z",
+    "sourceSha256": "77e6d8a7dcd179e0811c5910b53ca1128024340047ad206ce5aaa42e19a34b46",
+    "inputSha256": "a66a753f6f01509adf2568985b3b8be5f70cd49c23548d469bba99a4dd2c6c92",
+    "avifSha256": "747b93e0e34643e1b66058f0ad371a5e92b42054a4c5ab46bd49299743adee98",
+    "statement": "验收没问题"
+  }
+}

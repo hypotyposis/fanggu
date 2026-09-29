@@ -1,0 +1,62 @@
+{
+  "id": "jp_tenryuji_garden",
+  "subject": "曹源池庭园",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Tenryu-Ji_Garden.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Tenryu-Ji_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "author": "SElefant",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_tenryuji_garden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_tenryuji_garden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "曹源池庭园与天龙寺创立时期密切相关，保留中世纪回游式庭园格局。 图版以池塘和石组为主体，不把旁边的殿堂当作古庭园的年代证据。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage atlas black ink line plate. Image 1 is documentary photograph of the ACTUAL place and determines subject geometry. Image 2 is ONLY a thin black contour style reference, never the subject. Exact subject: Tenryū-ji Sōgenchi pond garden, Arashiyama, Kyoto, NOT its modern building as main subject. Image 1 shows the actual curving pond shore, arranged rocks, low islands and borrowed hill backdrop, with the temple building on left. Render the POND GARDEN and rock composition as main subject; include only a minimal part of the building for location context. Do not make a generic lake. Landscape 1536x1024, complete subject centered with generous margins, fine accurate sparse black ink outlines, minimal hatching, no dark filled masses. Background intended perfectly flat opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. No people, unrelated architecture, modern signs, text, shadows, gradient, paper texture, glow, frame or watermark.",
+  "generated_file": "assets/generated/jp_tenryuji_garden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-d5ccd034-eba3-44c2-837c-273819bf8c22.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "天龙寺 · 曹源池庭园",
+    "室町初期 · 约14世纪中叶"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "614e713003e10cc21b72bd4602d81ecd1f391a88b9646fc580e61b7dcf09cb4e",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tenryu-Ji_Garden.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Tenryu-Ji_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "SElefant",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/jp_tenryuji_garden-photo.jpg",
+      "title": "File:Tenryu-Ji Garden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 天龙寺",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005629.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

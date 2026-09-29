@@ -1,0 +1,62 @@
+{
+  "id": "jp_kamigamo_honden",
+  "subject": "本殿与权殿前部",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kamigamo-jinja_Honden.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Kamigamo-jinja_Honden.jpg/1280px-Kamigamo-jinja_Honden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "文化財保護委員会",
+  "license": "Public domain",
+  "reference_files": [
+    "assets/references/jp_kamigamo_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_kamigamo_honden-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存本殿与权殿建于1863年，不能以神社远早于此的创祀年代替代。 图版据1957年建筑记录照片绘制两殿可见前部；设色仅采用克制的自然木材色，不作原始彩绘复原。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage black ink line plate. Image 1 is a 1957 documentary archive photograph explicitly showing the ACTUAL adjacent HONDEN and GONDEN of Kamigamo Shrine, both extant 1863 structures. Draw the two adjacent shrine sanctuaries as visible, including paired raised platforms, front steps, open wooden columns and cypress bark roofs. Preserve the oblique relationship in the photo. Omit foreground paving and other shrines. Do not invent unseen back elevations. Image 2 is only a sparse delicate contour style sample, not architectural geometry. Draw only the documented architectural subject as a complete study within the photographed visible range; centered landscape 1536x1024, whole silhouette uncropped. Fine black neutral contour lines, restrained internal detail, no large dark fills. Background should be flat opaque PURE WHITE #FFFFFF, or native transparency if returned. No ground shadow, gradient, paper grain, haze, color, people, text, frame, watermark, checkerboard.",
+  "generated_file": "assets/generated/jp_kamigamo_honden.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-a90ff75f-1c35-4f48-83ca-cfb8fa361c48.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "上贺茂神社 · 本殿与权殿",
+    "江户时代 · 1863年"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "941be082c03ace507fc700ba2fa48966bef52a87ff9fbc5a3cc8142c7a28bb6f",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kamigamo-jinja_Honden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Kamigamo-jinja_Honden.jpg/1280px-Kamigamo-jinja_Honden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "文化財保護委員会",
+      "license": "Public domain",
+      "license_url": "",
+      "reference_file": "assets/references/jp_kamigamo_honden-photo.jpg",
+      "title": "File:Kamigamo-jinja Honden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 上贺茂神社",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005602.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

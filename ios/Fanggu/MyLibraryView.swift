@@ -58,10 +58,16 @@ struct MyLibraryView: View {
                 defer { if access { url.stopAccessingSecurityScopedResource() } }
                 try library.importBackup(Data(contentsOf: url))
                 message = "备份已导入"
-            } catch { message = "导入失败：\(error.localizedDescription)" }
+                Haptics.success()
+            } catch {
+                if !Self.isCancellation(error) { message = "导入失败：\(error.localizedDescription)"; Haptics.error() }
+            }
         }
         .fileExporter(isPresented: $exporting, document: exportDocument, contentType: .json, defaultFilename: "访古备份") { result in
-            if case .failure(let error) = result { message = "导出失败：\(error.localizedDescription)" }
+            if case .failure(let error) = result, !Self.isCancellation(error) {
+                message = "导出失败：\(error.localizedDescription)"
+                Haptics.error()
+            }
         }
     }
 
@@ -96,7 +102,12 @@ struct MyLibraryView: View {
 
     private func prepareExport() {
         do { exportDocument = try library.backup(); exporting = true }
-        catch { message = "导出失败：\(error.localizedDescription)" }
+        catch { message = "导出失败：\(error.localizedDescription)"; Haptics.error() }
+    }
+
+    private static func isCancellation(_ error: Error) -> Bool {
+        let nsError = error as NSError
+        return nsError.domain == NSCocoaErrorDomain && nsError.code == NSUserCancelledError
     }
 }
 
@@ -114,7 +125,10 @@ private struct LegacyLinkRow: View {
                 ForEach(library.monuments) { site in Text("\(site.name) · \(site.place)").tag(site.id) }
             }
             Button("关联") {
-                if let site = library.monuments.first(where: { $0.id == target }) { library.linkLegacy(item.id, to: site) }
+                if let site = library.monuments.first(where: { $0.id == target }) {
+                    if library.linkLegacy(item.id, to: site) { Haptics.soft() }
+                    else { Haptics.error() }
+                }
             }
             .disabled(target.isEmpty)
             .buttonStyle(FangguOutlineButton())

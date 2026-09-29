@@ -1,0 +1,47 @@
+{
+  "id": "jp_ujigami_haiden",
+  "name": "宇治上神社拜殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_ujigami_haiden.png",
+    "assets/references/jp_ujigami_haiden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / scientific-educational. Create one Fanggu colored companion heritage plate. Image 1 is the EXACT existing line plate to color; lock its silhouette, framing, number of roofs, openings, steps and every major contour. Image 2 is documentary real-world photo of the same subject, for material color observations and identification only; do not replace Image 1's composition. Image 3 is a matte museum illustration STYLE sample ONLY: do not copy its Chinese building, warm palette or black background. Subject: jp_ujigami_haiden. Materials: Aged dark brown posts and lattices, ivory white side infill, muted warm-brown cypress-bark roof and gray stone foundation. Keep long low horizontal hall and open stairs. Color only existing solid surfaces with restrained matte mineral pigment, thin charcoal outlines and very light texture inside solids. Exterior background and any true openings must be perfectly flat PURE WHITE #FFFFFF or preserved native transparency; absolutely no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard. No people, trees, labels, text, invented architecture or border. This is colorization, not redesign.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ujigami_Haiden.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Ujigami_Haiden.jpg/1280px-Ujigami_Haiden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "UjigamiJinja-M1370.jpg: Fg2\nderivative work: bamse (talk)",
+      "license": "Public domain",
+      "license_url": "",
+      "reference_file": "assets/references/jp_ujigami_haiden-photo.jpg",
+      "title": "File:Ujigami Haiden.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 宇治上神社",
+      "url": "https://www.city.kyoto.lg.jp/bunshi/page/0000005624.html"
+    }
+  ],
+  "output": "assets/colored/jp_ujigami_haiden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-8fa96b19-d723-473f-9df1-f38715794101.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "a465f046956be3e6689532bb26d9f3db7aebe6c57769cd457ae8dfa7dafa268b",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍；等待用户视觉验收。"
+    }
+  }
+}

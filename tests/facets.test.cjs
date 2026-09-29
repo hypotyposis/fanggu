@@ -8,6 +8,10 @@ const { SITES, PLACES } = vm.runInNewContext(fs.readFileSync(require.resolve('..
 const catalog = facets.classify(SITES, PLACES);
 const library = create(catalog, { getItem: () => null, setItem() {} });
 const find = filters => Array.from(library.all().filter(site => facets.matches(site, filters)), site => site.id).sort();
+const kansaiTwelve = ['jp_daigoji_tower', 'jp_sanjusangendo', 'jp_nijo_ninomaru', 'jp_yasaka_honden', 'jp_yakushiji_east', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'jp_kasuga_honden', 'jp_sumiyoshi_honden', 'jp_osaka_sengan', 'jp_jigenin_tahoto', 'jp_kanshinji_kondo'];
+const kyotoNearbyTen = ['jp_tofukuji_sanmon', 'jp_fushimi_inari_honden', 'jp_kitano_honden', 'jp_ninnaji_kondo', 'jp_hongwanji_hiunkaku', 'jp_manpukuji_daiou', 'jp_iwashimizu_honden', 'jp_ishiyamadera_tahoto', 'jp_ishiyamadera_hondo', 'jp_chionin_sanmon'];
+const kyotoThirteen = ['jp_nanzenji_sanmon', 'jp_ujigami_honden', 'jp_ujigami_haiden', 'jp_kozanji_sekisuiin', 'jp_kamigamo_honden', 'jp_shimogamo_honden', 'jp_enryakuji_komponchudo', 'jp_katsura_koshoin', 'jp_joruriji_hondo', 'jp_joruriji_tower', 'jp_ryoanji_garden', 'jp_tenryuji_garden', 'jp_saihoji_garden'];
+const kyotoNine = ['jp_hokanji_tower', 'jp_gosho_shishinden', 'jp_daitokuji_karamon', 'jp_daitokuji_hojo', 'jp_jishoji_togudo', 'jp_toji_kondo', 'jp_daigoji_sanboin', 'jp_hongwanji_goeido', 'jp_chionin_mieido'];
 
 test('Shanghai filtering and expansion preserve prior records and blank arrival dates', () => {
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/shanghai-batch.json'), 'utf8'));
@@ -37,7 +41,7 @@ test('Shanghai filtering and expansion preserve prior records and blank arrival 
 
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 32);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 38);
   assert.deepEqual(find({ province: '西藏', dynasty: 'tubo' }), ['xz_jokhang']);
   assert.deepEqual(find({ province: '新疆', type: 'grotto' }), ['xj_kizil', 'xj_kumtura']);
   assert.deepEqual(find({ type: 'column' }), ['hn_xizhou']);
@@ -74,7 +78,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'northwest'), ['陕西', '甘肃', '青海', '宁夏', '新疆']);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 32);
+  assert.equal(facets.provinces(catalog).length, 38);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {
@@ -86,30 +90,37 @@ test('aliases and geographic or type names remain searchable with facets', () =>
 });
 
 test('Japanese country, prefecture and era facets stay separate from Chinese regions and dynasties', () => {
-  const ids = ['byodoin', 'horyuji', 'kiyomizu', 'todaiji', 'toji', 'toshodaiji'];
+  const ids = ['byodoin', 'horyuji', 'jp_ginkaku', 'jp_himeji', 'jp_itsukushima', 'jp_kinkaku', 'jp_nikko_toshogu', 'jp_sensoji', 'kiyomizu', 'todaiji', 'toji', 'toshodaiji', ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine].sort();
   assert.deepEqual(find({ country: 'JP' }), ids);
   assert.deepEqual(find({ query: '日本' }), ids);
-  assert.deepEqual(find({ country: 'JP', dynasty: 'jp_edo' }), ['kiyomizu', 'toji']);
-  assert.deepEqual(find({ country: 'JP', province: '奈良县', type: 'hall' }), ['horyuji', 'toshodaiji']);
-  assert.deepEqual(find({ country: 'JP', type: 'gate' }), ['todaiji']);
+  assert.deepEqual(find({ country: 'JP', dynasty: 'jp_edo' }), ['jp_chionin_mieido', 'jp_chionin_sanmon', 'jp_daitokuji_hojo', 'jp_enryakuji_komponchudo', 'jp_gosho_shishinden', 'jp_himeji', 'jp_hongwanji_goeido', 'jp_iwashimizu_honden', 'jp_kamigamo_honden', 'jp_kasuga_honden', 'jp_katsura_koshoin', 'jp_kitano_honden', 'jp_manpukuji_daiou', 'jp_nanzenji_sanmon', 'jp_nijo_ninomaru', 'jp_nikko_toshogu', 'jp_osaka_sengan', 'jp_shimogamo_honden', 'jp_sumiyoshi_honden', 'jp_yasaka_honden', 'kiyomizu', 'toji']);
+  assert.deepEqual(find({ country: 'JP', province: '奈良县', type: 'hall' }), ['horyuji', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'toshodaiji']);
+  assert.deepEqual(find({ country: 'JP', type: 'gate' }), ['jp_chionin_sanmon', 'jp_daitokuji_karamon', 'jp_iwashimizu_honden', 'jp_nanzenji_sanmon', 'jp_nikko_toshogu', 'jp_tofukuji_sanmon', 'todaiji']);
+  assert.deepEqual(find({ country: 'JP', type: 'garden' }), ['jp_ryoanji_garden', 'jp_saihoji_garden', 'jp_tenryuji_garden']);
+  assert.deepEqual(find({ country: 'JP', region: 'jp_kanto', dynasty: 'jp_showa' }), ['jp_sensoji']);
+  assert.deepEqual(find({ country: 'JP', region: 'jp_chugoku', type: 'shrine' }), ['jp_itsukushima']);
+  assert.deepEqual(find({ country: 'JP', type: 'castle' }), ['jp_himeji', 'jp_osaka_sengan']);
+  assert.deepEqual(find({ country: 'JP', region: 'jp_kinki', province: '大阪府' }), ['jp_jigenin_tahoto', 'jp_kanshinji_kondo', 'jp_osaka_sengan', 'jp_sumiyoshi_honden']);
+  assert.deepEqual(find({ country: 'JP', query: 'Kinkaku-ji' }), ['jp_kinkaku']);
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
-  assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['京都府', '奈良县']);
+  assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['东京都', '栃木县', '京都府', '滋贺县', '奈良县', '大阪府', '兵库县', '广岛县']);
   assert.equal(facets.provinces(catalog, 'all', 'CN').length, 30);
 });
 
-test('Japanese additions seed wishes with blank dates and survive backup restoration', () => {
+test('existing Japanese wishes and new unvisited additions survive backup restoration', () => {
   const data = new Map(), storage = { getItem: key => data.get(key) ?? null, setItem: (key, value) => data.set(key, value) };
   const source = create(catalog, storage);
   const japanese = source.all().filter(site => site.country === 'JP');
-  assert.equal(japanese.length, 6);
-  for (const site of japanese) { assert.equal(site.record.status, 'wishlist'); assert.equal(site.record.visitedOn, ''); }
+  assert.equal(japanese.length, 34 + kyotoThirteen.length + kyotoNine.length);
+  for (const site of japanese) { assert.equal(site.record.status, site.id.startsWith('jp_') ? 'unvisited' : 'wishlist'); assert.equal(site.record.visitedOn, ''); }
   source.setRecord('todaiji', { status: 'visited', visitedOn: '', note: '记住南大门的梁架' });
   const restored = create(catalog, { getItem: () => null, setItem() {} });
   restored.import(source.export());
   assert.equal(restored.record('todaiji').note, '记住南大门的梁架');
   assert.equal(restored.record('todaiji').visitedOn, '');
   assert.equal(restored.record('toji').status, 'wishlist');
+  assert.equal(restored.record('jp_kinkaku').status, 'unvisited');
   assert.equal(restored.record('xiangtang').status, 'wishlist');
   assert.equal(restored.record('xianwall').status, 'visited');
 });

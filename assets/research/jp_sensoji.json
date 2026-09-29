@@ -1,0 +1,61 @@
+{
+  "id": "jp_sensoji",
+  "subject": "浅草寺现存本堂正面",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Hondo_(Main_Hall)_of_Sensoji_Temple_2.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Hondo_%28Main_Hall%29_of_Sensoji_Temple_2.jpg/1920px-Hondo_%28Main_Hall%29_of_Sensoji_Temple_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "そらみみ (Soramimi)",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_sensoji-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_sensoji-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "1958年重建的本堂，去除照片中的游客与两侧摊铺，不画雷门。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL current Senso-ji Hondo (Kannon Hall) in Asakusa, Tokyo; use its geometry. Image 2 is ONLY the project's fine black ink line style sample. Draw ONLY the complete present main hall rebuilt in 1958, near-front perspective: extremely broad hipped-and-gabled tiled roof with upturned corners, deep eaves, lower open front colonnade and central dark entry. Keep identifiable Japanese temple proportions. Remove all visitors, stalls, signs, side buildings, incense burner and sky. Do NOT draw Kaminarimon or the five-story pagoda. Sparse neutral BLACK contour drawing, no heavy filled areas. Landscape 4:3 framing, whole roof and base uncut with white breathing room. Perfectly flat opaque PURE WHITE #FFFFFF background inside and outside gaps. No shadow, gradient, paper texture, gray wash, glow, checkerboard, transparency, text, labels, border or watermark.",
+  "generated_file": "assets/generated/jp_sensoji.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-ecb37ba1-e81b-4b8b-9145-2dc68bb77b49.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "caption": [
+    "浅草寺现存本堂正面 · 线稿",
+    "按现存主体绘制"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4be3608450dabce7a5dfbe7ff690439dcc850f96f8f2668caf4b0c43a0054176",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hondo_(Main_Hall)_of_Sensoji_Temple_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Hondo_%28Main_Hall%29_of_Sensoji_Temple_2.jpg/1920px-Hondo_%28Main_Hall%29_of_Sensoji_Temple_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_sensoji-photo.jpg",
+      "author": "そらみみ (Soramimi)"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "浅草寺：现存本堂1958年重建及结构",
+      "url": "https://www.senso-ji.jp/guide/guide04.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、风格母版与生成原稿。",
+      "图版为现状意写，等待用户验收。"
+    ],
+    "limitations": "1958年重建的本堂，去除照片中的游客与两侧摊铺，不画雷门。"
+  },
+  "visual_review_status": "pending_user"
+}

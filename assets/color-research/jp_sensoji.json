@@ -1,0 +1,46 @@
+{
+  "id": "jp_sensoji",
+  "name": "浅草寺现存本堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_sensoji.png",
+    "assets/references/jp_sensoji-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_sensoji; preserve its silhouette, framing, roof count, openings, architectural details and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Deep vermilion red lacquer on visible columns and eave beams, dark muted charcoal roof tiles, pale wall fields, dark doorway recesses and warm stone base. This is the modern reconstructed main hall, not the red gate. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "朱红柱梁、深灰屋面、淡色墙身及深色门洞。",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Hondo_(Main_Hall)_of_Sensoji_Temple_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Hondo_%28Main_Hall%29_of_Sensoji_Temple_2.jpg/1920px-Hondo_%28Main_Hall%29_of_Sensoji_Temple_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_sensoji-photo.jpg",
+      "author": "そらみみ (Soramimi)"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "浅草寺：本堂重建与材料",
+      "url": "https://www.senso-ji.jp/guide/guide04.html"
+    }
+  ],
+  "output": "assets/colored/jp_sensoji.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-c9add138-0624-4972-8143-dfa60cdc39d2.png",
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dd1d86c8d26ec80e656d0153f7114aec774fd2ce4644b5947f26bd5b3b38c086",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看原稿与实拍材料色；不等于用户视觉验收。现存本堂为1958年钢筋混凝土重建，图版只表现外观。"
+    }
+  }
+}

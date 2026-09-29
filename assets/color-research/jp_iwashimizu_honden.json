@@ -1,0 +1,56 @@
+{
+  "id": "jp_iwashimizu_honden",
+  "name": "石清水八幡宫本社",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_iwashimizu_honden.png",
+    "assets/references/jp_iwashimizu_honden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_iwashimizu_honden; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: vermilion-red lacquered timber at the central romon, dark-brown cypress bark roofing, pale walls and restrained gilded fittings; keep the visible flanking corridors as a partial exterior view. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "vermilion-red lacquered timber at the central romon, dark-brown cypress bark roofing, pale walls and restrained gilded fittings; keep the visible flanking corridors as a partial exterior view",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:IwashimizuHachimangu.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/IwashimizuHachimangu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "en:User:Fg2 who I believe is the same as User:Fg2 here.",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "reference_file": "assets/references/jp_iwashimizu_honden-photo.jpg",
+      "title": "File:IwashimizuHachimangu.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "石清水八幡宫 · 本社",
+      "url": "https://iwashimizu.or.jp/about/"
+    }
+  ],
+  "output": "assets/colored/jp_iwashimizu_honden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-f06270ec-f117-494a-9d4f-bc058b293058.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3dd281fd7ceaf26d576034fd7a8e95a818a4df0317947a37f5cbe6acccca91ba",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.629Z",
+    "sourceSha256": "3dd281fd7ceaf26d576034fd7a8e95a818a4df0317947a37f5cbe6acccca91ba",
+    "inputSha256": "4bde7b4653da6719566d3c5bb7a946ffa79765e7f96e97a7699348f60def1113",
+    "avifSha256": "bb6cbee197a7131cac5c035d716afc411804a41a43e3b4820800916a41798a5d",
+    "statement": "验收没问题"
+  }
+}

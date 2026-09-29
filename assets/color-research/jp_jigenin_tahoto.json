@@ -1,0 +1,46 @@
+{
+  "id": "jp_jigenin_tahoto",
+  "name": "慈眼院多宝塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_jigenin_tahoto.png",
+    "assets/references/jp_jigenin_tahoto-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black ink line plate of jp_jigenin_tahoto; preserve its silhouette, framing, roof count, openings and all major contours. Image 2 is a documentary photograph of this same Japanese monument for ACTUAL material colors. Image 3 is the project's matte colored architectural illustration style sample ONLY; its black background and warm gold palette are NOT to be copied. Color Image 1 faithfully as an elegant museum architectural illustration. Material observations: Aged dark brown timber, pale cream upper plaster drum, rich brown cypress bark lower and upper roofs, small weathered bronze finial and subdued gray stone base. Keep thin charcoal ink contours visible, with restrained matte mineral pigment planes and only very light texture INSIDE solid building surfaces. Do not add features, people, trees, labels or neighboring structures. Retain Image 1's composition and aspect ratio. Entire exterior background and truly open spaces must be perfectly flat opaque PURE WHITE #FFFFFF with no black ground, gray haze, gradient, paper texture, shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "Aged dark brown timber, pale cream upper plaster drum, rich brown cypress bark lower and upper roofs, small weathered bronze finial and subdued gray stone base.",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jigenin_Izumisano04s3200.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Jigenin_Izumisano04s3200.jpg/1280px-Jigenin_Izumisano04s3200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland (Wikimedia Commons uploader; file Artist field is a site description)",
+      "license": "CC BY 2.5",
+      "reference_file": "assets/references/jp_jigenin_tahoto-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日本国指定文化财数据库 · 慈眼院多宝塔",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/2173"
+    }
+  ],
+  "output": "assets/colored/jp_jigenin_tahoto.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-c2089852-ec68-45b5-8c44-60840de3d967.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "23095544ebd1abf6a248126972710cdd362d405f2e3209cf7a48bf9c59513832",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿及实拍材料色；不等于用户视觉验收。"
+    }
+  }
+}

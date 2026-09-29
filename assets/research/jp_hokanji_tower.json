@@ -1,0 +1,62 @@
+{
+  "id": "jp_hokanji_tower",
+  "subject": "现存五重塔",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_%28Hokan-ji_Temple%29%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Basile Morin",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/jp_hokanji_tower-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_hokanji_tower-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "现存五重塔于永享十二年（1440）再建，并非寺院初创时的遗构。 图版只绘五层塔身与相轮，省略街道和周围民居。",
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage line plate. Image 1 is the actual monument PHOTO and controls geometry. Image 2 is ONLY the project black fine-contour STYLE sample; never transfer its Buddha subject. Draw the named Japanese building accurately as a complete, isolated elevation at nearly frontal view. Fine sparse black ink contours with a few structural lines; no broad dark fills, hatching, pencil grain or opaque silhouettes. Pure flat opaque WHITE #FFFFFF canvas, including every blank region inside and outside the subject. Center with generous margins. No shadow, gradient, texture, glow, checkerboard, color, text, labels, signage, people, foliage, surrounding buildings, watermark or frame. Subject: Hokan-ji Yasaka Pagoda in Kyoto, the ACTUAL extant 1440 five-storey wooden pagoda with five distinct tiled eaves and finial. Show full tower from base to tip; remove street houses, tourists and trees.",
+  "generated_file": "assets/generated/jp_hokanji_tower.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-f19a04e7-599d-4d46-83df-636bc88e5be5.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "法观寺 · 八坂塔",
+    "室町时代 · 1440年再建"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "8c85ef2aba673dd858103f720ed5ae27360edb167837250b29cdfca0cb18e9f0",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_(Hokan-ji_Temple),_Kyoto,_Japan.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Yasaka-dori_early_morning_with_street_lanterns_and_the_Tower_of_Yasaka_%28Hokan-ji_Temple%29%2C_Kyoto%2C_Japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_hokanji_tower-photo.jpg",
+      "title": "File:Yasaka-dori early morning with street lanterns and the Tower of Yasaka (Hokan-ji Temple), Kyoto, Japan.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "京都市 · 法观寺",
+      "url": "https://ja.kyoto.travel/tourism/single02.php?category_id=9&tourism_id=248"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本与生成原件。",
+      "检查主体范围、结构和轮廓；等待用户最终审图。"
+    ],
+    "limitations": "图版是依据实拍绘制的建筑示意，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

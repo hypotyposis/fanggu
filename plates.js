@@ -3775,6 +3775,606 @@ const PLATES = {
       "岳飞墓墓冢、墓碑与祭台 · 线稿",
       "现状意写"
     ]
+  },
+  "jp_kinkaku": {
+    "src": "assets/plates/jp_kinkaku.png",
+    "alt": "鹿苑寺金阁舍利殿现存三层复建体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#8aa8aa",
+    "tint": false,
+    "caption": [
+      "鹿苑寺金阁舍利殿现存三层复建体 · 线稿",
+      "按现存主体绘制"
+    ]
+  },
+  "jp_ginkaku": {
+    "src": "assets/plates/jp_ginkaku.png",
+    "alt": "慈照寺观音殿现状双层楼阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "慈照寺观音殿现状双层楼阁 · 线稿",
+      "按现存主体绘制"
+    ]
+  },
+  "jp_sensoji": {
+    "src": "assets/plates/jp_sensoji.png",
+    "alt": "浅草寺现存本堂正面 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#8aa8aa",
+    "tint": false,
+    "caption": [
+      "浅草寺现存本堂正面 · 线稿",
+      "按现存主体绘制"
+    ]
+  },
+  "jp_himeji": {
+    "src": "assets/plates/jp_himeji.png",
+    "alt": "姬路城大天守及高石垣 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "姬路城大天守及高石垣 · 线稿",
+      "按现存主体绘制"
+    ]
+  },
+  "jp_itsukushima": {
+    "src": "assets/plates/jp_itsukushima.png",
+    "alt": "严岛神社本社临海社殿群与回廊 · 线稿",
+    "width": 1796,
+    "height": 876,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "严岛神社本社临海社殿群与回廊 · 线稿",
+      "按现存主体绘制"
+    ]
+  },
+  "jp_nikko_toshogu": {
+    "src": "assets/plates/jp_nikko_toshogu.png",
+    "alt": "日光东照宫阳明门现状正面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "日光东照宫阳明门现状正面 · 线稿",
+      "按现存主体绘制"
+    ]
+  },
+  "jp_daigoji_tower": {
+    "src": "assets/plates/jp_daigoji_tower.png",
+    "alt": "五重塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "醍醐寺 · 五重塔",
+      "平安时代 · 951年"
+    ]
+  },
+  "jp_sanjusangendo": {
+    "src": "assets/plates/jp_sanjusangendo.png",
+    "alt": "莲华王院本堂 · 线稿",
+    "width": 1774,
+    "height": 887,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "三十三间堂 · 本堂",
+      "镰仓时代 · 1266年重建"
+    ]
+  },
+  "jp_nijo_ninomaru": {
+    "src": "assets/plates/jp_nijo_ninomaru.png",
+    "alt": "车寄及远侍外观 · 线稿",
+    "width": 1774,
+    "height": 887,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "二条城 · 二之丸御殿车寄",
+      "江户时代 · 1626年前后"
+    ]
+  },
+  "jp_yasaka_honden": {
+    "src": "assets/plates/jp_yasaka_honden.png",
+    "alt": "祇园造本殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "八坂神社 · 本殿",
+      "江户时代 · 1654年"
+    ]
+  },
+  "jp_yakushiji_east": {
+    "src": "assets/plates/jp_yakushiji_east.png",
+    "alt": "东塔 · 三重六檐 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#9caa76",
+    "tint": false,
+    "caption": [
+      "药师寺 · 东塔",
+      "奈良时代 · 约730年"
+    ]
+  },
+  "jp_gangoji_gokuraku": {
+    "src": "assets/plates/jp_gangoji_gokuraku.png",
+    "alt": "极乐坊本堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "元兴寺 · 极乐坊本堂",
+      "镰仓时代 · 约13世纪中叶"
+    ]
+  },
+  "jp_kofukuji_hokuen": {
+    "src": "assets/plates/jp_kofukuji_hokuen.png",
+    "alt": "八角圆堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "兴福寺 · 北圆堂",
+      "镰仓时代 · 约1210年"
+    ]
+  },
+  "jp_kasuga_honden": {
+    "src": "assets/plates/jp_kasuga_honden.png",
+    "alt": "四座春日造本殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "春日大社 · 四座本殿示意",
+      "江户时代 · 1863年造替"
+    ]
+  },
+  "jp_sumiyoshi_honden": {
+    "src": "assets/plates/jp_sumiyoshi_honden.png",
+    "alt": "四座住吉造本殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "住吉大社 · 四座本殿示意",
+      "江户时代 · 1810年"
+    ]
+  },
+  "jp_osaka_sengan": {
+    "src": "assets/plates/jp_osaka_sengan.png",
+    "alt": "现存橹与石垣 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "大阪城 · 千贯橹与石垣",
+      "江户时代 · 1620年"
+    ]
+  },
+  "jp_jigenin_tahoto": {
+    "src": "assets/plates/jp_jigenin_tahoto.png",
+    "alt": "多宝塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "慈眼院 · 多宝塔",
+      "镰仓时代 · 1271年"
+    ]
+  },
+  "jp_kanshinji_kondo": {
+    "src": "assets/plates/jp_kanshinji_kondo.png",
+    "alt": "金堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "观心寺 · 金堂",
+      "室町初期 · 14世纪中叶"
+    ]
+  },
+  "jp_tofukuji_sanmon": {
+    "src": "assets/plates/jp_tofukuji_sanmon.png",
+    "alt": "现存三门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "东福寺 · 三门",
+      "室町时代 · 1425年"
+    ]
+  },
+  "jp_fushimi_inari_honden": {
+    "src": "assets/plates/jp_fushimi_inari_honden.png",
+    "alt": "稻荷造本殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "伏见稻荷大社 · 本殿",
+      "室町时代 · 1499年再建"
+    ]
+  },
+  "jp_kitano_honden": {
+    "src": "assets/plates/jp_kitano_honden.png",
+    "alt": "本殿、石之间与拜殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "北野天满宫 · 本殿建筑群",
+      "江户初期 · 1607年"
+    ]
+  },
+  "jp_ninnaji_kondo": {
+    "src": "assets/plates/jp_ninnaji_kondo.png",
+    "alt": "旧宫中紫宸殿移建 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "仁和寺 · 金堂",
+      "桃山原构 · 江户初期移建"
+    ]
+  },
+  "jp_hongwanji_hiunkaku": {
+    "src": "assets/plates/jp_hongwanji_hiunkaku.png",
+    "alt": "滴翠园三层楼阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "西本愿寺 · 飞云阁",
+      "桃山时期 · 年代未详"
+    ]
+  },
+  "jp_manpukuji_daiou": {
+    "src": "assets/plates/jp_manpukuji_daiou.png",
+    "alt": "黄檗宗大雄宝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "万福寺 · 大雄宝殿",
+      "江户时代 · 1668年"
+    ]
+  },
+  "jp_iwashimizu_honden": {
+    "src": "assets/plates/jp_iwashimizu_honden.png",
+    "alt": "楼门与回廊正面局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "石清水八幡宫 · 本社正面局部",
+      "江户时代 · 1634年"
+    ]
+  },
+  "jp_ishiyamadera_tahoto": {
+    "src": "assets/plates/jp_ishiyamadera_tahoto.png",
+    "alt": "多宝塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "石山寺 · 多宝塔",
+      "镰仓时代 · 1194年"
+    ]
+  },
+  "jp_ishiyamadera_hondo": {
+    "src": "assets/plates/jp_ishiyamadera_hondo.png",
+    "alt": "正堂与礼堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "石山寺 · 本堂",
+      "平安正堂 · 江户初期礼堂"
+    ]
+  },
+  "jp_chionin_sanmon": {
+    "src": "assets/plates/jp_chionin_sanmon.png",
+    "alt": "现存三门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "知恩院 · 三门",
+      "江户时代 · 1621年"
+    ]
+  },
+  "jp_nanzenji_sanmon": {
+    "src": "assets/plates/jp_nanzenji_sanmon.png",
+    "alt": "现存三门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "南禅寺 · 三门",
+      "江户时代 · 1628年"
+    ]
+  },
+  "jp_ujigami_honden": {
+    "src": "assets/plates/jp_ujigami_honden.png",
+    "alt": "本殿外护屋 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "宇治上神社 · 本殿",
+      "平安后期 · 约11世纪末"
+    ]
+  },
+  "jp_ujigami_haiden": {
+    "src": "assets/plates/jp_ujigami_haiden.png",
+    "alt": "拜殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "宇治上神社 · 拜殿",
+      "镰仓初期 · 约13世纪初"
+    ]
+  },
+  "jp_kozanji_sekisuiin": {
+    "src": "assets/plates/jp_kozanji_sekisuiin.png",
+    "alt": "石水院开放廊内景 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "高山寺 · 石水院开放廊",
+      "镰仓前期 · 明治移筑"
+    ]
+  },
+  "jp_kamigamo_honden": {
+    "src": "assets/plates/jp_kamigamo_honden.png",
+    "alt": "本殿与权殿前部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "上贺茂神社 · 本殿与权殿",
+      "江户时代 · 1863年"
+    ]
+  },
+  "jp_shimogamo_honden": {
+    "src": "assets/plates/jp_shimogamo_honden.png",
+    "alt": "东西本殿前部示意 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "下鸭神社 · 东西本殿前部",
+      "江户时代 · 1863年"
+    ]
+  },
+  "jp_enryakuji_komponchudo": {
+    "src": "assets/plates/jp_enryakuji_komponchudo.png",
+    "alt": "现存根本中堂外观 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "延历寺 · 根本中堂",
+      "江户时代 · 1640年再建"
+    ]
+  },
+  "jp_katsura_koshoin": {
+    "src": "assets/plates/jp_katsura_koshoin.png",
+    "alt": "古书院 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "桂离宫 · 古书院",
+      "江户初期 · 约17世纪初"
+    ]
+  },
+  "jp_joruriji_hondo": {
+    "src": "assets/plates/jp_joruriji_hondo.png",
+    "alt": "九体阿弥陀堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "净琉璃寺 · 本堂",
+      "平安后期 · 约12世纪"
+    ]
+  },
+  "jp_joruriji_tower": {
+    "src": "assets/plates/jp_joruriji_tower.png",
+    "alt": "三重塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "净琉璃寺 · 三重塔",
+      "平安后期原构 · 1178年移筑"
+    ]
+  },
+  "jp_ryoanji_garden": {
+    "src": "assets/plates/jp_ryoanji_garden.png",
+    "alt": "方丈枯山水石庭 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "龙安寺 · 石庭局部",
+      "室町时代 · 年代未详"
+    ]
+  },
+  "jp_tenryuji_garden": {
+    "src": "assets/plates/jp_tenryuji_garden.png",
+    "alt": "曹源池庭园 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "天龙寺 · 曹源池庭园",
+      "室町初期 · 约14世纪中叶"
+    ]
+  },
+  "jp_saihoji_garden": {
+    "src": "assets/plates/jp_saihoji_garden.png",
+    "alt": "黄金池与苔庭 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "西芳寺 · 黄金池与苔庭",
+      "室町初期 · 后世形成苔地"
+    ]
+  },
+  "jp_hokanji_tower": {
+    "src": "assets/plates/jp_hokanji_tower.png",
+    "alt": "现存五重塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "法观寺 · 八坂塔",
+      "室町时代 · 1440年再建"
+    ]
+  },
+  "jp_gosho_shishinden": {
+    "src": "assets/plates/jp_gosho_shishinden.png",
+    "alt": "现存正殿 · 线稿",
+    "width": 1563,
+    "height": 1006,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "京都御所 · 紫宸殿",
+      "江户时代 · 1855年"
+    ]
+  },
+  "jp_daitokuji_karamon": {
+    "src": "assets/plates/jp_daitokuji_karamon.png",
+    "alt": "本坊唐门 · 线稿",
+    "width": 1400,
+    "height": 1123,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "大德寺 · 唐门",
+      "桃山时代 · 年代未详"
+    ]
+  },
+  "jp_daitokuji_hojo": {
+    "src": "assets/plates/jp_daitokuji_hojo.png",
+    "alt": "本坊方丈 · 线稿",
+    "width": 1774,
+    "height": 887,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "大德寺 · 本坊方丈",
+      "江户初期 · 约1635—1636年"
+    ]
+  },
+  "jp_jishoji_togudo": {
+    "src": "assets/plates/jp_jishoji_togudo.png",
+    "alt": "现存东求堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "慈照寺 · 东求堂",
+      "室町时代 · 约1485—1486年"
+    ]
+  },
+  "jp_toji_kondo": {
+    "src": "assets/plates/jp_toji_kondo.png",
+    "alt": "现存金堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "东寺 · 金堂",
+      "桃山时代 · 1603年再建"
+    ]
+  },
+  "jp_daigoji_sanboin": {
+    "src": "assets/plates/jp_daigoji_sanboin.png",
+    "alt": "表书院 · 线稿",
+    "width": 1774,
+    "height": 887,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "醍醐寺 · 三宝院表书院",
+      "桃山时代 · 1598年"
+    ]
+  },
+  "jp_hongwanji_goeido": {
+    "src": "assets/plates/jp_hongwanji_goeido.png",
+    "alt": "现存御影堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "西本愿寺 · 御影堂",
+      "江户时代 · 1636年再建"
+    ]
+  },
+  "jp_chionin_mieido": {
+    "src": "assets/plates/jp_chionin_mieido.png",
+    "alt": "现存御影堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "知恩院 · 御影堂",
+      "江户时代 · 1639年再建"
+    ]
   }
 };
 

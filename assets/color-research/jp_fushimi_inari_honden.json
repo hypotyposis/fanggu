@@ -1,0 +1,56 @@
+{
+  "id": "jp_fushimi_inari_honden",
+  "name": "伏见稻荷大社本殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_fushimi_inari_honden.png",
+    "assets/references/jp_fushimi_inari_honden-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT line plate of jp_fushimi_inari_honden; retain its silhouette, framing, roof count, openings and major contours. Image 2 is a real documentary photograph of the SAME Japanese building, for actual material colors and architectural context. Image 3 is the project's restrained matte colored architectural illustration STYLE sample ONLY; do not copy its warm palette or black background. Color Image 1 faithfully as an elegant flat museum illustration with thin charcoal outlines. Material observations: vermilion-red painted timber, white plaster wall fields, dark weathered cypress bark gable roof, modest golden metal fittings; keep this actual gabled shrine building rather than the thousand torii. Use subtle matte pigment planes and very light texture only INSIDE solid building surfaces. Do not invent features, people, trees, labels or neighboring structures. Keep Image 1's composition and aspect ratio. Entire exterior background and genuinely open spaces must be perfectly flat opaque PURE WHITE #FFFFFF, with no black ground, gray haze, gradient, paper texture, cast shadow, glow, checkerboard or transparency. This is colorization, not redesign.",
+  "material_observations": "vermilion-red painted timber, white plaster wall fields, dark weathered cypress bark gable roof, modest golden metal fittings; keep this actual gabled shrine building rather than the thousand torii",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg/1280px-Honden_of_Fushimi_Inari_Grand_Shrine_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "そらみみ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "reference_file": "assets/references/jp_fushimi_inari_honden-photo.jpg",
+      "title": "File:Honden of Fushimi Inari Grand Shrine 2.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "伏见稻荷大社 · 本殿",
+      "url": "https://inari.jp/sp/map/spot_03/"
+    }
+  ],
+  "output": "assets/colored/jp_fushimi_inari_honden.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-222ee48a-718f-4901-be0a-a2bcc78c081f.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7f056f1380e8d4a92008c8485bce385a80d06aa3a3c1a1243ce6e5a4796f1fb0",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "approved_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与实拍材质，等待用户视觉验收。"
+    }
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.606Z",
+    "sourceSha256": "7f056f1380e8d4a92008c8485bce385a80d06aa3a3c1a1243ce6e5a4796f1fb0",
+    "inputSha256": "6226071f2cab8ac28defa57cd3c4671362e4ff57de5e106e2e1a6858fcdfbc88",
+    "avifSha256": "e54f2e0d1cdbfea6b2f1f72c774e7992cae8e02d0da8754b83ec97deb55766c4",
+    "statement": "验收没问题"
+  }
+}

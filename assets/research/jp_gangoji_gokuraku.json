@@ -1,0 +1,61 @@
+{
+  "id": "jp_gangoji_gokuraku",
+  "subject": "极乐坊本堂",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Gangoji,_hondou-3.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Gangoji%2C_hondou-3.jpg/1280px-Gangoji%2C_hondou-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Saigen Jiro",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/jp_gangoji_gokuraku-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_gangoji_gokuraku-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "相邻禅室另为独立文物；图版不把两座建筑合成一堂。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. The documentary photograph(s) show the ACTUAL extant building; use them for architecture and geometry. The LAST image is ONLY the project's fine black ink line style sample, never a building-shape reference. Gango-ji Gokurakubo main hall in Nara, extant medieval rebuild circa 1244. Depict the complete low, wide tile-roofed hall with its long side columns as shown in the photo; distinguish it from the neighboring Zen room. Straight calm facade, no tower. Wide landscape composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_gangoji_gokuraku.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-81f55695-fc1e-4d3f-b7e4-d6b757fb296b.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "元兴寺 · 极乐坊本堂",
+    "镰仓时代 · 约13世纪中叶"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "84602f724a1a7439117d3b5b37bb2826f415503c270067fd655f5995c8bfbeaa",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gangoji,_hondou-3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Gangoji%2C_hondou-3.jpg/1280px-Gangoji%2C_hondou-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "reference_file": "assets/references/jp_gangoji_gokuraku-photo.jpg",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化遗产在线 · 元兴寺极乐坊本堂",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/186636"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
+  },
+  "visual_review_status": "pending_user"
+}

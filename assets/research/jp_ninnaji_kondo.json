@@ -1,0 +1,74 @@
+{
+  "id": "jp_ninnaji_kondo",
+  "subject": "旧宫中紫宸殿移建",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Ninnaji_Kondo.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ninnaji_Kondo.jpg/1280px-Ninnaji_Kondo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "PlusMinus",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/jp_ninnaji_kondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_ninnaji_kondo-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "实拍为金堂完整正面；1613为原紫宸殿年代，江户初期移建，图版绘现存屋面。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage line plate. Image 1 is documentary SUBJECT GEOMETRY ONLY for Ninna-ji Kondo, an extant seven-bay former imperial Shishinden relocated in early Edo period. Preserve the long low tiled hip-and-gable roof, seven-bay facade, central door, white plaster and dark timber, shallow frontal platform shown in the photo. Omit trees, visitors, paving and other halls. Image 2 is ONLY the project's delicate fine black ink line style sample, never a subject-shape reference. Create a refined sparse BLACK INK architectural contour drawing on perfectly flat opaque PURE WHITE #FFFFFF background. Whole building centered, approximately straight-on, generous margins, landscape 1536x1024, roof/apex and base uncut. Fine neutral black contours and restrained structural detail; white unmarked inside and outside the subject. No colored fill, gray shading, cast shadow, gradient, paper grain, glow, checkerboard, lettering, labels, tourists, frame or watermark.",
+  "generated_file": "assets/generated/jp_ninnaji_kondo.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-b0695357-1532-4666-93bd-c4914ed9eb78.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "仁和寺 · 金堂",
+    "桃山原构 · 江户初期移建"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "12d37eb0395afe690d861e86f22edc428612b112b47e193d635428755d73fb61",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ninnaji_Kondo.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Ninnaji_Kondo.jpg/1280px-Ninnaji_Kondo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "PlusMinus",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/jp_ninnaji_kondo-photo.jpg",
+      "title": "File:Ninnaji Kondo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "仁和寺 · 境内金堂",
+      "url": "https://ninnaji.jp/precincts/"
+    },
+    {
+      "title": "文化遗产数据库 · 仁和寺金堂",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/175092"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看本批实拍参考、线稿母版和生成原稿。",
+      "绘制范围、屋顶层数与完整轮廓已逐图查看；等待用户最终验收。"
+    ],
+    "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
+  },
+  "visual_review_status": "approved_user",
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-25T17:07:12.474Z",
+    "sourceSha256": "12d37eb0395afe690d861e86f22edc428612b112b47e193d635428755d73fb61",
+    "statement": "验收没问题",
+    "lineSha256": "4132e3a6e53a782230bd9358a05bd933257bd4c0acd25431836d5ba862aafa75"
+  }
+}

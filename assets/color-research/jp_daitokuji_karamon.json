@@ -1,0 +1,47 @@
+{
+  "id": "jp_daitokuji_karamon",
+  "name": "大德寺唐门",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/color-references/jp_daitokuji_karamon-line-input.png",
+    "assets/references/jp_daitokuji_karamon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: scientific-educational. Asset type: a Fanggu heritage colored plate. Image 1 is the generated black line drawing and controls the exact building silhouette, openings and composition. Image 2 is the real monument photo and controls present-day materials and colors. Image 3 is ONLY the project colored-line STYLE sample, never copy its Chinese hall geometry or warm gold palette. Make a restrained architectural color illustration of the SAME exact building, with clean thin contour lines and modest natural material texture. The exterior canvas and all open spaces must be flat opaque PURE WHITE #FFFFFF, ready for later local transparency preparation. No scene, ground, trees, people, cast shadow, gradient, paper texture, glow, checkerboard, text, labels, watermark or frame. Subject: Daitoku-ji main-temple Karamon gate, the ACTUAL ornate Momoyama national-treasure gate in the photo. Preserve its distinctive central curved karahafu roof, four gate posts and carved transom; show gate alone without flanking wall, stone monument, trees or steps. Do not substitute another Daitoku-ji subtemple gate. Material observations: Hinoki-bark brown roof, deep black lacquer posts and doors, muted gold fittings, small restrained multicolor carved details exactly as visible in the photo.",
+  "material_observations": "按同主体实拍区分现状材质色，不推定初建时原色。",
+  "references": [
+    {
+      "source_page": "https://prtimes.jp/main/html/rd/p/000000010.000063967.html",
+      "image_url": "https://prcdn.freetls.fastly.net/release_image/63967/10/63967-10-284e37b43946c8bd59d344bbb733c131-1920x1541.jpg",
+      "author": "株式会社京都春秋／摄影者未标示",
+      "license": "未声明；仅作本地参考",
+      "title": "大德寺本坊国宝唐门照片",
+      "license_url": "",
+      "reference_file": "assets/references/jp_daitokuji_karamon-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 · 大德寺唐门",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1533"
+    }
+  ],
+  "output": "assets/colored/jp_daitokuji_karamon.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-787ccf04-a846-4862-83be-ea52dad218b2.png",
+  "width": 1401,
+  "height": 1123,
+  "background_preparation": {
+    "method": "native-alpha",
+    "sourceSha256": "63b306af98a1d0ec7f31d9cb32c12beffb6c0c7388778f8fdf4598b3227ea3b9",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "已查看设色原稿与同主体实拍，等待用户视觉验收。"
+    }
+  }
+}

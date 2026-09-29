@@ -1,0 +1,62 @@
+{
+  "id": "jp_katsura_koshoin",
+  "subject": "古书院",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Shoin.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Shoin.jpg/1280px-Shoin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Raphael Azevedo Franca",
+  "license": "Public domain",
+  "reference_files": [
+    "assets/references/jp_katsura_koshoin-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_katsura_koshoin-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "桂离宫书院由古书院、中书院和新御殿等多期部分组成。 图版只绘古书院的可见外观，不把后续增建并入这座建筑的断代。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu Japanese heritage line plate. Image 1 is the ACTUAL Old Shoin (Ko-Shoin) at Katsura Imperial Villa in Kyoto. Draw the clear pictured low elevated wooden palace residence: gabled cypress bark roof, white shoji-wall bays framed in natural dark wood, open verandah and stone base. This is the Old Shoin only, not an arbitrary pavilion. Exclude garden, trees, later adjoining wing and paths. The last image is ONLY the project's delicate black ink contour STYLE sample; never transfer its subject. Fine sparse accurate black line work, minimal hatching and no large dark fills. Background should be completely blank opaque PURE WHITE #FFFFFF, or preserve native transparency if supplied. Whole subject centered with generous margins. No shadow, gradient, paper grain, glow, color, text, labels, modern fixtures, frame, watermark or checkerboard.",
+  "generated_file": "assets/generated/jp_katsura_koshoin.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-b951bfe7-3996-4063-be23-1ddc51819082.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "桂离宫 · 古书院",
+    "江户初期 · 约17世纪初"
+  ],
+  "background_preparation": {
+    "method": "adaptive-ink-v1",
+    "sourceSha256": "f07b6f151d4726198dca539dc197b578f2c5810eb588177cd41a7225115a7728",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shoin.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Shoin.jpg/1280px-Shoin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Raphael Azevedo Franca",
+      "license": "Public domain",
+      "license_url": "",
+      "reference_file": "assets/references/jp_katsura_koshoin-photo.jpg",
+      "title": "File:Shoin.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "宫内厅 · 桂离宫古书院",
+      "url": "https://kyoto-gosho.kunaicho.go.jp/building/2A26"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看所绘主体实拍、风格样本和生成线稿。",
+      "检查主体范围、屋顶/庭园布局与完整轮廓；等待用户最终审图。"
+    ],
+    "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
+  },
+  "visual_review_status": "pending_user"
+}

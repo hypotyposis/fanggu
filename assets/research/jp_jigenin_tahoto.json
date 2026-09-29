@@ -1,0 +1,61 @@
+{
+  "id": "jp_jigenin_tahoto",
+  "subject": "多宝塔",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jigenin_Izumisano04s3200.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Jigenin_Izumisano04s3200.jpg/1280px-Jigenin_Izumisano04s3200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "663highland (Wikimedia Commons uploader; file Artist field is a site description)",
+  "license": "CC BY 2.5",
+  "reference_files": [
+    "assets/references/jp_jigenin_tahoto-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "input_images": [
+    "assets/references/jp_jigenin_tahoto-photo.jpg",
+    "assets/references/longmen-style-black.png"
+  ],
+  "source_note": "图版以现存两重塔身为主体，不误绘成五重塔。",
+  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL extant building; use it for architecture and geometry. Image 2 is ONLY the project's black ink line style sample, never a building-shape reference. Jigen-in tahoto pagoda at Izumisano, Osaka, dated 1271. Depict precisely the compact two-stage pagoda in the reference photograph: square lower storey with dark timber and pale walls; cylindrical upper drum; broad upper and lower cypress-bark roofs; metal finial. One tower only, not a five-storey pagoda. Portrait composition. Omit people, trees, sky, signs and surrounding scenery. Fine neutral BLACK architectural contours, sparse internal detail, no large shaded masses. Keep the complete subject centered with generous margin. Perfectly flat opaque PURE WHITE #FFFFFF canvas inside and outside openings. No shadow, gradient, paper texture, glow, gray wash, crosshatching, checkerboard, transparency, text, labels, frame or watermark.",
+  "generated_file": "assets/generated/jp_jigenin_tahoto.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-1689366a-9890-47e6-b989-06ada129bc62.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "慈眼院 · 多宝塔",
+    "镰仓时代 · 1271年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5a5a5671df53e551e1510541595a672ddb430a2f733ef0d22422acb889769d3f",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jigenin_Izumisano04s3200.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Jigenin_Izumisano04s3200.jpg/1280px-Jigenin_Izumisano04s3200.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "663highland (Wikimedia Commons uploader; file Artist field is a site description)",
+      "license": "CC BY 2.5",
+      "reference_file": "assets/references/jp_jigenin_tahoto-photo.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "日本国指定文化财数据库 · 慈眼院多宝塔",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/2173"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已查看实拍、线稿风格母版与生成原稿。",
+      "建筑主体、主要结构数量及白底已逐图查看；待用户验收。"
+    ],
+    "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
+  },
+  "visual_review_status": "pending_user"
+}

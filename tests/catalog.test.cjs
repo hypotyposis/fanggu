@@ -46,10 +46,20 @@ const firstBatchFive = ['sd_xiaotang_shrine', 'fj_qingjing_gate', 'fj_anping_bri
 additions.push(...firstBatchFive);
 const firstBatchEight = ['qh_taer', 'jx_nanchang_uprising', 'xj_jiaohe', 'xz_potala', 'js_zhuozheng', 'sc_luding', 'bj_guozijian', 'zj_yuefei'];
 additions.push(...firstBatchEight);
+const japanSix = ['jp_kinkaku', 'jp_ginkaku', 'jp_sensoji', 'jp_himeji', 'jp_itsukushima', 'jp_nikko_toshogu'];
+additions.push(...japanSix);
+const kansaiTwelve = ['jp_daigoji_tower', 'jp_sanjusangendo', 'jp_nijo_ninomaru', 'jp_yasaka_honden', 'jp_yakushiji_east', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'jp_kasuga_honden', 'jp_sumiyoshi_honden', 'jp_osaka_sengan', 'jp_jigenin_tahoto', 'jp_kanshinji_kondo'];
+additions.push(...kansaiTwelve);
+const kyotoNearbyTen = ['jp_tofukuji_sanmon', 'jp_fushimi_inari_honden', 'jp_kitano_honden', 'jp_ninnaji_kondo', 'jp_hongwanji_hiunkaku', 'jp_manpukuji_daiou', 'jp_iwashimizu_honden', 'jp_ishiyamadera_tahoto', 'jp_ishiyamadera_hondo', 'jp_chionin_sanmon'];
+additions.push(...kyotoNearbyTen);
+const kyotoThirteen = ['jp_nanzenji_sanmon', 'jp_ujigami_honden', 'jp_ujigami_haiden', 'jp_kozanji_sekisuiin', 'jp_kamigamo_honden', 'jp_shimogamo_honden', 'jp_enryakuji_komponchudo', 'jp_katsura_koshoin', 'jp_joruriji_hondo', 'jp_joruriji_tower', 'jp_ryoanji_garden', 'jp_tenryuji_garden', 'jp_saihoji_garden'];
+additions.push(...kyotoThirteen);
+const kyotoNine = ['jp_hokanji_tower', 'jp_gosho_shishinden', 'jp_daitokuji_karamon', 'jp_daitokuji_hojo', 'jp_jishoji_togudo', 'jp_toji_kondo', 'jp_daigoji_sanboin', 'jp_hongwanji_goeido', 'jp_chionin_mieido'];
+additions.push(...kyotoNine);
 test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
   assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
   assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
-  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -229,7 +239,7 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
   }
   const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
-  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight]) laterIds.add(id);
+  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight, ...japanSix, ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine]) laterIds.add(id);
   const previouslyApproved = Object.entries(avif.images).filter(([id]) => !laterIds.has(id));
   assert.equal(previouslyApproved.length, 200);
   assert(previouslyApproved.every(([, item]) => item.visualReview === 'approved_user'));
@@ -238,18 +248,20 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
   assert(SITES.find(s => s.id === 'tj_guangdonghuiguan').sub.includes('局部'));
 });
 
-test('Japanese temple subjects use their surviving construction dates and Japanese eras', () => {
-  for (const [id, era, year] of [['horyuji','jp_asuka',690], ['toshodaiji','jp_nara',780], ['byodoin','jp_heian',1053], ['todaiji','jp_kamakura',1203], ['kiyomizu','jp_edo',1633], ['toji','jp_edo',1644]]) {
+test('Japanese subjects use the depicted construction or reconstruction dates and Japanese eras', () => {
+  for (const [id, era, year] of [['horyuji','jp_asuka',690], ['toshodaiji','jp_nara',780], ['byodoin','jp_heian',1053], ['todaiji','jp_kamakura',1203], ['kiyomizu','jp_edo',1633], ['toji','jp_edo',1644], ['jp_kinkaku','jp_showa',1955], ['jp_ginkaku','jp_muromachi',1489], ['jp_sensoji','jp_showa',1958], ['jp_himeji','jp_edo',1609], ['jp_itsukushima','jp_kamakura',1241], ['jp_nikko_toshogu','jp_edo',1636]]) {
     const site = SITES.find(site => site.id === id);
     assert.equal(site.country, 'JP'); assert.equal(site.dyn, era); assert.equal(site.year, year);
     assert.equal(DYN[era].country, 'JP');
     assert(site.year >= DYN[era].start && site.year <= DYN[era].end);
     assert(CHAPTERS.some(chapter => chapter.key === era));
     const place = PLACES.find(place => place.key === site.placeKey);
-    assert.equal(place.country, 'JP'); assert(['奈良县', '京都府'].includes(place.prov));
+    assert.equal(place.country, 'JP'); assert(['奈良县', '京都府', '东京都', '兵库县', '广岛县', '栃木县'].includes(place.prov));
   }
   assert(SITES.find(site => site.id === 'horyuji').yearApprox);
   assert(SITES.find(site => site.id === 'toshodaiji').yearApprox);
+  assert(SITES.find(site => site.id === 'jp_kinkaku').yearNote.includes('1950'));
+  assert(SITES.find(site => site.id === 'jp_sensoji').yearNote.includes('1958'));
 });
 
 test('Anhui subjects have dated research and complete queued line/color deliveries', () => {
