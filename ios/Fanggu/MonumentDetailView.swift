@@ -38,6 +38,17 @@ struct MonumentDetailView: View {
                         }
                     }
                 }
+                HStack(spacing: 10) {
+                    Button(record.status == .visited ? "编辑到访记录" : "标记到访") { editingVisit = true }
+                        .buttonStyle(FangguOutlineButton())
+                    if record.status == .unvisited {
+                        Button("加入心愿单") { setStatus(.wishlist) }
+                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                    } else if record.status == .wishlist {
+                        Button("移出心愿单") { setStatus(.unvisited) }
+                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                    }
+                }
                 ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
                             height: 320, reveal: reveal, stamping: completingVisit)
                     .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
@@ -82,21 +93,15 @@ struct MonumentDetailView: View {
                 VStack(alignment: .leading, spacing: 12) {
                     Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     Text(record.status.title + (record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
-                        .font(FangguFont.mono(12)).foregroundStyle(record.status == .visited ? Palette.red : Palette.gold)
+                        .font(FangguFont.mono(12)).foregroundStyle(record.status.textColor)
                     if record.status != .visited || completingVisit {
+                        Text("也可以向右拖动印章，直接完成到访。")
+                            .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                         ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
                     }
-                    HStack {
-                        if record.status == .unvisited {
-                            Button("加入心愿单") { setStatus(.wishlist) }.buttonStyle(FangguOutlineButton())
-                        } else if record.status == .wishlist {
-                            Button("移出心愿单") { setStatus(.unvisited) }.buttonStyle(FangguOutlineButton())
-                        }
-                        if record.status == .visited {
-                            Button("改为想去") { setStatus(.wishlist) }.buttonStyle(FangguOutlineButton())
-                        }
-                        Button(record.status == .visited ? "编辑到访记录" : "填写到访记录") { editingVisit = true }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.red))
+                    if record.status == .visited {
+                        Button("移至心愿单") { setStatus(.wishlist) }
+                            .buttonStyle(FangguOutlineButton())
                     }
                     if !record.note.isEmpty {
                         Text(record.note).font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
@@ -128,6 +133,7 @@ struct MonumentDetailView: View {
         .navigationTitle(site.short.isEmpty ? site.name : site.short)
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()
+        .toolbar(.visible, for: .navigationBar)
         .toolbar(.hidden, for: .tabBar)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -248,9 +254,9 @@ struct VisitEditor: View {
                 }
                 Section("到访笔记") {
                     TextEditor(text: $note).frame(minHeight: 160)
-                    Text("\(note.utf16.count) / 12000").font(.caption).foregroundStyle(.secondary)
+                    Text("\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
-                if let error { Text(error).foregroundStyle(Palette.red) }
+                if let error { Text(error).foregroundStyle(Palette.redText) }
             }
             .navigationTitle("记录到访")
             .toolbar {
@@ -293,6 +299,7 @@ struct ReviewEditor: View {
                             Button { if rating != value { rating = value; Haptics.selection() } } label: {
                                 Image(systemName: value <= (rating ?? 0) ? "star.fill" : "star")
                                     .foregroundStyle(Palette.gold).font(.title2)
+                                    .frame(minWidth: 44, minHeight: 44)
                             }
                             .buttonStyle(.plain)
                             .accessibilityLabel("\(value) 星")
@@ -303,10 +310,10 @@ struct ReviewEditor: View {
                 }
                 Section("短评") {
                     TextEditor(text: $text).frame(minHeight: 150)
-                    Text("\(text.utf16.count) / 500").font(.caption).foregroundStyle(.secondary)
+                    Text("\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
                 Button("清除评价", role: .destructive) { rating = nil; text = ""; save() }
-                if let error { Text(error).foregroundStyle(Palette.red) }
+                if let error { Text(error).foregroundStyle(Palette.redText) }
             }
             .navigationTitle("我的评价")
             .toolbar {

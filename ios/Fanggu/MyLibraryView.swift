@@ -3,6 +3,7 @@ import UniformTypeIdentifiers
 
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var importing = false
     @State private var exporting = false
     @State private var exportDocument: BackupDocument?
@@ -16,10 +17,18 @@ struct MyLibraryView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 28) {
                 FangguSectionTitle(eyebrow: "亲见 · 所愿 · 私人记录", title: "我的访古", subtitle: "把到访和心愿，慢慢写成自己的古迹图鉴。")
-                HStack(spacing: 12) {
-                    count("已到访", visited.count)
-                    count("心愿", wishes.count)
-                    count("收录", library.monuments.count)
+                if dynamicTypeSize.isAccessibilitySize {
+                    VStack(spacing: 10) {
+                        count("已到访", visited.count)
+                        count("心愿单", wishes.count)
+                        count("收录", library.monuments.count)
+                    }
+                } else {
+                    HStack(spacing: 12) {
+                        count("已到访", visited.count)
+                        count("心愿单", wishes.count)
+                        count("收录", library.monuments.count)
+                    }
                 }
                 FangguRule()
                 sectionTitle("已到访")
@@ -42,15 +51,12 @@ struct MyLibraryView: View {
                     .buttonStyle(FangguOutlineButton())
                 Text("网页和 App 各自保存记录。网页先导出 JSON，再在这里导入；同一古迹以导入值覆盖，其余保留。")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
-                if let message { Text(message).font(FangguFont.serif(12)).foregroundStyle(Palette.red) }
+                if let message { Text(message).font(FangguFont.serif(12)).foregroundStyle(Palette.redText) }
             }
             .padding(.horizontal, 24).padding(.top, 36).padding(.bottom, 70)
         }
         .background(Palette.ink.ignoresSafeArea())
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .principal) { FangguBrand() } }
-        .toolbarBackground(Palette.ink, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbar(.hidden, for: .navigationBar)
         .fileImporter(isPresented: $importing, allowedContentTypes: [.json]) { result in
             do {
                 let url = try result.get()
@@ -72,12 +78,23 @@ struct MyLibraryView: View {
     }
 
     private func count(_ title: String, _ number: Int) -> some View {
-        VStack(spacing: 5) {
-            Text(number.formatted()).font(FangguFont.brush(31)).foregroundStyle(Palette.gold)
-            Text(title).font(FangguFont.mono(10)).foregroundStyle(Palette.paper2)
+        Group {
+            if dynamicTypeSize.isAccessibilitySize {
+                HStack {
+                    Text(title).font(FangguFont.serif(16)).foregroundStyle(Palette.paper2)
+                    Spacer()
+                    FangguMetricNumber(value: number, size: 20)
+                }
+            } else {
+                VStack(spacing: 5) {
+                    FangguMetricNumber(value: number, size: 31)
+                    Text(title).font(FangguFont.mono(10)).foregroundStyle(Palette.paper2)
+                }
+            }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 16)
+        .padding(dynamicTypeSize.isAccessibilitySize ? 16 : 0)
+        .padding(.vertical, dynamicTypeSize.isAccessibilitySize ? 0 : 16)
         .background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
     }

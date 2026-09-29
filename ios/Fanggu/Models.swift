@@ -44,6 +44,10 @@ struct Monument: Decodable, Identifiable, Hashable {
     let protection: [ProtectionEntry]
 
     var accent: Color { Palette.color(dynastyColor) }
+    var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
+    var periodLabel: String {
+        displayYearLabel.isEmpty ? dynastyName : "\(dynastyName) · \(displayYearLabel)"
+    }
 
     static func == (lhs: Monument, rhs: Monument) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
@@ -76,7 +80,7 @@ enum VisitStatus: String, Codable, CaseIterable, Identifiable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .unvisited: "未到访"
+        case .unvisited: "未标记"
         case .wishlist: "心愿单"
         case .visited: "已到访"
         }
@@ -166,10 +170,11 @@ enum Palette {
     static let ink3 = color("#221f1a")
     static let paper = color("#ebe2cc")
     static let paper2 = color("#a89e88")
-    static let paper3 = color("#6b6356")
+    static let paper3 = color("#928a79")
     static let gold = color("#d6ab5c")
     static let goldDim = color("#8a6d3a")
     static let red = color("#c8442b")
+    static let redText = color("#df7059")
 
     static func color(_ hex: String) -> Color {
         let value = Int(hex.dropFirst(), radix: 16) ?? 0
@@ -184,5 +189,5 @@ enum FangguFont {
         .custom("NotoSerifSC-Regular", size: size).weight(weight)
     }
     static func brush(_ size: CGFloat) -> Font { .custom("MaShanZheng-Regular", size: size) }
-    static func mono(_ size: CGFloat) -> Font { .system(size: size, design: .monospaced) }
+    static func mono(_ size: CGFloat) -> Font { .system(size: max(11, size), design: .monospaced) }
 }

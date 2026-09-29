@@ -3,6 +3,7 @@ import SwiftUI
 struct AtlasMapView: View {
     @EnvironmentObject private var library: LibraryStore
     @State private var selectedPlace: String?
+    let onBrowse: () -> Void
 
     private var visited: [Monument] { library.monuments.filter { library.record(for: $0).status == .visited } }
     private var places: [String: [Monument]] { Dictionary(grouping: visited, by: \.placeKey) }
@@ -12,54 +13,61 @@ struct AtlasMapView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 FangguSectionTitle(eyebrow: "亲见 · 行迹所至", title: "到访地图", subtitle: "点亮已经到访的地方，点选地点细读古迹。")
-                HStack(alignment: .firstTextBaseline, spacing: 8) {
-                    Text("\(visited.count)").font(FangguFont.brush(38)).foregroundStyle(Palette.gold)
-                    Text("处已到访 · \(places.count) 个地点")
-                        .font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
-                }
-                GeometryReader { geometry in
-                    let projection = SketchMapProjection(size: geometry.size, sites: visited)
-                    let labels = SketchMapLabel.place(places, projection: projection)
-                    ZStack(alignment: .topLeading) {
-                        SketchMapGrid(projection: projection, labels: labels)
-                        ForEach(labels) { label in
-                            Button { openPlace(label.id) } label: {
-                                Text(label.site.placeName)
-                                    .font(FangguFont.serif(11))
-                                    .foregroundStyle(Palette.paper)
-                                    .lineLimit(1)
-                                    .minimumScaleFactor(0.8)
-                                    .frame(width: label.rect.width, height: label.rect.height)
-                            }
-                            .buttonStyle(.plain)
-                            .position(x: label.rect.midX, y: label.rect.midY)
-                            .accessibilityLabel("\(label.site.place)，\(places[label.id]?.count ?? 1) 处已到访古迹")
-                            Button { openPlace(label.id) } label: {
-                                Color.clear.frame(width: 28, height: 28).contentShape(Circle())
-                            }
-                            .buttonStyle(.plain)
-                            .position(label.point)
-                            .accessibilityLabel("\(label.site.place)，细读古迹")
-                        }
-                    }
-                    .frame(width: geometry.size.width, height: geometry.size.height)
-                }
-                .frame(height: 640)
-                Text("点亮已经到访的地方，点选地点细读古迹。")
-                    .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                 if visited.isEmpty {
-                    Text("尚无到访足迹。翻开图鉴，为亲见的古迹添上颜色。")
-                        .font(FangguFont.serif(15)).foregroundStyle(Palette.paper2)
-                        .padding(.vertical, 30)
+                    VStack(alignment: .leading, spacing: 14) {
+                        Text("地图上还没有足迹")
+                            .font(FangguFont.serif(22)).foregroundStyle(Palette.paper)
+                        Text("在图鉴中记录第一处到访，足迹就会出现在这里。")
+                            .font(FangguFont.serif(15)).foregroundStyle(Palette.paper2)
+                        Button("浏览图鉴") { onBrowse() }
+                            .buttonStyle(FangguOutlineButton())
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(20)
+                    .background(Palette.ink2)
+                    .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
+                } else {
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        FangguMetricNumber(value: visited.count, size: 38)
+                        Text("处已到访 · \(places.count) 个地点")
+                            .font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
+                    }
+                    GeometryReader { geometry in
+                        let projection = SketchMapProjection(size: geometry.size, sites: visited)
+                        let labels = SketchMapLabel.place(places, projection: projection)
+                        ZStack(alignment: .topLeading) {
+                            SketchMapGrid(projection: projection, labels: labels)
+                            ForEach(labels) { label in
+                                Button { openPlace(label.id) } label: {
+                                    Text(label.site.placeName)
+                                        .font(FangguFont.serif(11))
+                                        .foregroundStyle(Palette.paper)
+                                        .lineLimit(1)
+                                        .minimumScaleFactor(0.8)
+                                        .frame(width: label.rect.width, height: label.rect.height)
+                                }
+                                .buttonStyle(.plain)
+                                .accessibilityHidden(true)
+                                .position(x: label.rect.midX, y: label.rect.midY)
+                                Button { openPlace(label.id) } label: {
+                                    Color.clear.frame(width: 44, height: 44).contentShape(Circle())
+                                }
+                                .buttonStyle(.plain)
+                                .position(label.point)
+                                .accessibilityLabel("\(label.site.place)，\(places[label.id]?.count ?? 1) 处已到访古迹")
+                            }
+                        }
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                    }
+                    .frame(height: 640)
+                    Text("点亮已经到访的地方，点选地点细读古迹。")
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                 }
             }
             .padding(.horizontal, 24).padding(.top, 36).padding(.bottom, 70)
         }
         .background(Palette.ink.ignoresSafeArea())
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .principal) { FangguBrand() } }
-        .toolbarBackground(Palette.ink, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbar(.hidden, for: .navigationBar)
         .sheet(item: Binding(get: { selectedPlace.map(SelectedPlace.init) }, set: { selectedPlace = $0?.id })) { place in
             NavigationStack {
                 ScrollView {
@@ -207,9 +215,8 @@ struct TimelineView: View {
     @EnvironmentObject private var library: LibraryStore
     @State private var period = "all"
     @State private var cluster: Set<String> = []
-    @State private var page = 0
+    @State private var visibleCount = 8
 
-    private let pageSize = 4
     private let tracks = ["北", "南", "日本"]
     private var sorted: [Monument] { library.monuments.sorted { $0.year == $1.year ? $0.id < $1.id : $0.year < $1.year } }
     private var periods: [(String, String)] {
@@ -222,8 +229,20 @@ struct TimelineView: View {
         if !cluster.isEmpty { return sorted.filter { cluster.contains($0.id) } }
         return period == "all" ? sorted : sorted.filter { $0.dynasty == period }
     }
-    private var pages: Int { max(1, Int(ceil(Double(selected.count) / Double(pageSize)))) }
-    private var visible: [Monument] { Array(selected.dropFirst(page * pageSize).prefix(pageSize)) }
+    private var visible: [Monument] { Array(selected.prefix(visibleCount)) }
+    private var quickPeriods: [(String, String)] {
+        Array(periods.dropFirst().sorted { lhs, rhs in
+            sorted.filter { $0.dynasty == lhs.0 }.count > sorted.filter { $0.dynasty == rhs.0 }.count
+        }.prefix(4))
+    }
+
+    private func selectPeriod(_ key: String) {
+        guard period != key || !cluster.isEmpty else { return }
+        period = key
+        cluster = []
+        visibleCount = 8
+        Haptics.selection()
+    }
 
     var body: some View {
         ScrollView {
@@ -232,10 +251,7 @@ struct TimelineView: View {
                 Menu {
                     ForEach(periods, id: \.0) { key, title in
                         Button("\(title) · \(key == "all" ? sorted.count : sorted.filter { $0.dynasty == key }.count) 处") {
-                            if period != key || !cluster.isEmpty {
-                                period = key; cluster = []; page = 0
-                                Haptics.selection()
-                            }
+                            selectPeriod(key)
                         }
                     }
                 } label: {
@@ -248,6 +264,21 @@ struct TimelineView: View {
                     .padding(12).background(Palette.ink2)
                     .overlay(Rectangle().stroke(Palette.paper.opacity(0.22), lineWidth: 1))
                 }
+                ScrollView(.horizontal) {
+                    HStack(spacing: 8) {
+                        ForEach(quickPeriods, id: \.0) { key, title in
+                            Button(title) { selectPeriod(key) }
+                                .font(FangguFont.serif(13))
+                                .foregroundStyle(period == key ? Palette.ink : Palette.paper)
+                                .padding(.horizontal, 14)
+                                .frame(minHeight: 44)
+                                .background(period == key ? Palette.gold : Palette.ink2)
+                                .overlay(Rectangle().stroke(Palette.gold.opacity(0.45), lineWidth: 1))
+                                .accessibilityAddTraits(period == key ? .isSelected : [])
+                        }
+                    }
+                }
+                .scrollIndicators(.hidden)
                 timelineGraphic
                 HStack(spacing: 16) {
                     legend("●", "已到访")
@@ -264,17 +295,21 @@ struct TimelineView: View {
                             .font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                     }
                     Spacer()
-                    Button("←") { page = max(0, page - 1) }.disabled(page == 0)
-                    Text("\(page + 1) / \(pages)").font(FangguFont.mono(11))
-                    Button("→") { page = min(pages - 1, page + 1) }.disabled(page + 1 == pages)
                 }
                 .foregroundStyle(Palette.paper2)
                 if period != "all" || !cluster.isEmpty {
-                    Button("查看全部") { period = "all"; cluster = []; page = 0 }
+                    Button("查看全部") { selectPeriod("all") }
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
                 }
                 ForEach(visible) { site in
                     NavigationLink(value: site) { TimelineSiteRow(site: site) }.buttonStyle(.plain)
+                }
+                if visibleCount < selected.count {
+                    Button("显示更多 · 已显示 \(visible.count) / \(selected.count)") {
+                        visibleCount += 12
+                    }
+                    .buttonStyle(FangguOutlineButton())
+                    .frame(maxWidth: .infinity)
                 }
                 DisclosureGroup("读图说明") {
                     Text("中国部分按北、南两线排列，日本单列。点选圆点展开古迹；邻近年份合并为一个数字圆点。年代对应图版所绘主体，部分仅作约略定位，确切纪年与重修沿革以详情为准。")
@@ -286,10 +321,7 @@ struct TimelineView: View {
             .padding(.horizontal, 24).padding(.top, 36).padding(.bottom, 70)
         }
         .background(Palette.ink.ignoresSafeArea())
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .principal) { FangguBrand() } }
-        .toolbarBackground(Palette.ink, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbar(.hidden, for: .navigationBar)
     }
 
     private var timelineGraphic: some View {
@@ -310,13 +342,10 @@ struct TimelineView: View {
                     let sites = sorted.filter { $0.dynasty == key }
                     if let first = sites.first, let last = sites.last {
                         let x = timelineX(first.dynastyStart)
-                        let width = max(22, timelineX(last.dynastyEnd) - x)
+                        let width = max(44, timelineX(last.dynastyEnd) - x)
                         let y = trackY(first)
                         Button {
-                            if period != key || !cluster.isEmpty {
-                                period = key; cluster = []; page = 0
-                                Haptics.selection()
-                            }
+                            selectPeriod(key)
                         } label: {
                             Rectangle().fill(first.accent.opacity(period == key ? 0.38 : 0.16))
                                 .overlay(Rectangle().stroke(first.accent.opacity(0.6), lineWidth: 1))
@@ -334,7 +363,7 @@ struct TimelineView: View {
                     Button {
                         let next = Set(group.sites.map(\.id))
                         if cluster != next || period != "all" {
-                            cluster = next; period = "all"; page = 0
+                            cluster = next; period = "all"; visibleCount = 8
                             Haptics.selection()
                         }
                     } label: {
@@ -349,6 +378,7 @@ struct TimelineView: View {
                                         .foregroundStyle(allVisited ? Palette.ink : group.sites[0].accent)
                                 }
                             }
+                            .frame(width: 44, height: 44)
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel("\(group.sites.count) 处古迹，\(group.sites.first?.year ?? 0) 年前后")
@@ -409,17 +439,22 @@ struct TimelineSiteRow: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
 
+    private var status: VisitStatus { library.record(for: site).status }
+
     var body: some View {
         HStack(spacing: 12) {
-            ArtworkView(site: site, visited: library.record(for: site).status == .visited, height: 92)
+            ArtworkView(site: site, visited: status == .visited, height: 92)
                 .frame(width: 85)
             VStack(alignment: .leading, spacing: 5) {
-                Text("\(site.dynastyName) · \(site.yearLabel)")
+                Text(site.periodLabel)
                     .font(FangguFont.mono(10)).foregroundStyle(site.accent)
                 Text(site.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
                 Text(site.place).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
-                Text("\(library.record(for: site).status.title) · 细读 ↗")
-                    .font(FangguFont.mono(10)).foregroundStyle(Palette.paper2)
+                HStack(spacing: 4) {
+                    Text(status.title).foregroundStyle(status.textColor)
+                    Text("· 细读 ↗").foregroundStyle(Palette.paper2)
+                }
+                .font(FangguFont.mono(10))
             }
             Spacer(minLength: 0)
         }

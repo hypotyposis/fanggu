@@ -19,25 +19,19 @@ final class FangguUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         XCTAssertTrue(app.buttons["图鉴"].waitForExistence(timeout: 10))
-        let firstSite = app.staticTexts["李业阙"].firstMatch
-        for _ in 0..<4 where !firstSite.isHittable { app.swipeUp() }
-        XCTAssertTrue(firstSite.isHittable)
-        firstSite.tap()
+        openFirstCatalogSite(in: app)
         XCTAssertTrue(app.staticTexts["我的访古记"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.staticTexts["我的评价"].exists)
-        XCTAssertTrue(app.staticTexts["文物保护"].exists)
+        XCTAssertTrue(app.buttons["标记到访"].exists || app.buttons["编辑到访记录"].exists)
         capture(app, "detail")
     }
 
     func testArrivalOnlySavesAfterReleasingAtTheEnd() {
         let app = XCUIApplication()
         app.launch()
-        let firstSite = app.staticTexts["李业阙"].firstMatch
-        for _ in 0..<4 where !firstSite.isHittable { app.swipeUp() }
-        XCTAssertTrue(firstSite.isHittable)
-        firstSite.tap()
+        openFirstCatalogSite(in: app)
 
-        let reset = app.buttons["改为想去"]
+        let reset = app.buttons["移至心愿单"]
         if reset.exists {
             for _ in 0..<8 where !reset.isHittable { app.swipeUp() }
             XCTAssertTrue(reset.isHittable)
@@ -57,7 +51,14 @@ final class FangguUITests: XCTestCase {
         thumb.press(forDuration: 0.1, thenDragTo: end)
         let visited = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "已到访")).firstMatch
         XCTAssertTrue(visited.waitForExistence(timeout: 5))
-        XCTAssertTrue(app.buttons["改为想去"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["移至心愿单"].waitForExistence(timeout: 5))
+    }
+
+    private func openFirstCatalogSite(in app: XCUIApplication) {
+        let firstSite = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "细读")).firstMatch
+        for _ in 0..<4 where !firstSite.isHittable { app.swipeUp() }
+        XCTAssertTrue(firstSite.isHittable)
+        firstSite.tap()
     }
 
     private func capture(_ app: XCUIApplication, _ name: String) {

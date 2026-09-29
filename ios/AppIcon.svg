@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#171512"/>
+  <g fill="none" stroke="#D6AB5C" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="13">
+      <path d="m226 271-29-95m112 95-24-102m110 102-14-102m111 102V168m110 103 14-102m110 102 24-102m112 102 29-95"/>
+      <path d="M186 264h652"/>
+    </g>
+    <path d="M151 278h722c9 0 16 7 16 16v37c0 22-17 39-39 39H174c-22 0-39-17-39-39v-37c0-9 7-16 16-16Z" stroke-width="23"/>
+    <path d="M171 329h682" stroke-width="13"/>
+    <g id="left-brackets" stroke-width="22">
+      <path d="M305 388h155v38h-94c12 59 51 89 114 89"/>
+      <path d="M343 522h117v36h-70c11 55 39 82 90 89"/>
+      <path d="M405 656h55v30h-27c7 34 21 51 47 58"/>
+    </g>
+    <use href="#left-brackets" transform="translate(1024 0) scale(-1 1)"/>
+    <path d="M256 491h512M317 629h390" stroke-width="13" opacity=".72"/>
+    <g fill="#171512" stroke-width="20">
+      <rect x="480" y="363" width="64" height="100" rx="7"/>
+      <rect x="477" y="463" width="70" height="132" rx="7"/>
+      <rect x="480" y="595" width="64" height="127" rx="7"/>
+    </g>
+    <path d="M470 744h84l-10 124h-64l-10-124Z" stroke-width="22"/>
+  </g>
+</svg>

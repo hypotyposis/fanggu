@@ -8,7 +8,7 @@ struct FangguSeal: View {
             Text("访古")
             Text("之印")
         }
-        .font(FangguFont.brush(size * 0.25))
+        .font(.custom("MaShanZheng-Regular", fixedSize: size * 0.25))
         .lineSpacing(-2)
         .foregroundStyle(Palette.paper)
         .frame(width: size, height: size)
@@ -20,6 +20,7 @@ struct FangguSeal: View {
 }
 
 struct FangguSectionTitle: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let eyebrow: String
     let title: String
     let subtitle: String
@@ -34,10 +35,14 @@ struct FangguSectionTitle: View {
                 .font(FangguFont.serif(31, weight: .medium))
                 .tracking(3)
                 .foregroundStyle(Palette.paper)
-            Text(subtitle)
-                .font(FangguFont.serif(13))
-                .foregroundStyle(Palette.paper2)
-                .lineSpacing(4)
+                .lineLimit(1)
+                .minimumScaleFactor(0.45)
+            if !dynamicTypeSize.isAccessibilitySize {
+                Text(subtitle)
+                    .font(FangguFont.serif(13))
+                    .foregroundStyle(Palette.paper2)
+                    .lineSpacing(4)
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
@@ -49,6 +54,28 @@ struct FangguRule: View {
     }
 }
 
+struct FangguMetricNumber: View {
+    let value: Int
+    let size: CGFloat
+
+    var body: some View {
+        Text(value.formatted())
+            .font(FangguFont.serif(size, weight: .medium))
+            .monospacedDigit()
+            .foregroundStyle(Palette.gold)
+    }
+}
+
+extension VisitStatus {
+    var textColor: Color {
+        switch self {
+        case .visited: Palette.redText
+        case .wishlist: Palette.gold
+        case .unvisited: Palette.paper2
+        }
+    }
+}
+
 struct FangguOutlineButton: ButtonStyle {
     var accent: Color = Palette.gold
 
@@ -57,7 +84,7 @@ struct FangguOutlineButton: ButtonStyle {
             .font(FangguFont.serif(14))
             .foregroundStyle(configuration.isPressed ? Palette.ink : accent)
             .padding(.horizontal, 16)
-            .frame(minHeight: 42)
+            .frame(minHeight: 44)
             .background(configuration.isPressed ? accent : Palette.ink2)
             .overlay(Rectangle().stroke(accent.opacity(0.65), lineWidth: 1))
             .animation(.easeOut(duration: 0.18), value: configuration.isPressed)
@@ -79,7 +106,8 @@ struct FangguField: View {
                 .autocorrectionDisabled()
         }
         .padding(.horizontal, 14)
-        .frame(height: 46)
+        .padding(.vertical, 10)
+        .frame(minHeight: 46)
         .background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.23), lineWidth: 1))
     }

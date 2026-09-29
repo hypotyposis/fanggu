@@ -44,7 +44,7 @@ struct ContentView: View {
             .tabItem { Label("图鉴", systemImage: "square.grid.2x2") }.tag(0)
 
             NavigationStack {
-                tabRoot(AtlasMapView())
+                tabRoot(AtlasMapView(onBrowse: { selectedTab = 0 }))
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
             }
             .tabItem { Label("地图", systemImage: "map") }.tag(1)
@@ -80,6 +80,7 @@ private struct FrostedTabBar: View {
     @Binding var selection: Int
     @Namespace private var selectionAnimation
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     private let items: [(title: String, icon: String)] = [
         ("图鉴", "square.grid.2x2"),
@@ -105,7 +106,7 @@ private struct FrostedTabBar: View {
                     }
                     .foregroundStyle(selection == index ? Palette.gold : Palette.paper2)
                     .frame(maxWidth: .infinity)
-                    .frame(height: 56)
+                    .frame(minHeight: dynamicTypeSize.isAccessibilitySize ? 80 : 56)
                     .background {
                         if selection == index {
                             RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -144,20 +145,9 @@ private struct FrostedTabBar: View {
     }
 }
 
-struct FangguBrand: View {
-    var body: some View {
-        HStack(spacing: 9) {
-            FangguSeal(size: 26)
-            Text("访 古")
-                .font(FangguFont.serif(15, weight: .medium))
-                .tracking(3)
-                .foregroundStyle(Palette.paper)
-        }
-    }
-}
-
 struct ExploreView: View {
     @EnvironmentObject private var library: LibraryStore
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var query = ""
     @State private var status = "all"
     @State private var country = "all"
@@ -165,6 +155,10 @@ struct ExploreView: View {
     @State private var province = "all"
     @State private var dynasty = "all"
     @State private var type = "all"
+    @State private var sortOrder = "wishlist"
+    @State private var showCards = false
+    @State private var showingFilters = false
+    @State private var showingAbout = false
 
     private let regionNames = ["north": "华北", "northeast": "东北", "east": "华东", "central": "华中", "south": "华南", "southwest": "西南", "northwest": "西北", "jp_kinki": "近畿"]
     private let typeAliases = ["sculpture": "彩塑悬塑 造像 雕塑", "gate": "山门 牌坊 牌楼", "screen": "影壁 琉璃照壁"]
@@ -194,16 +188,27 @@ struct ExploreView: View {
         return ["all": records.count,
                 "wishlist": records.filter { $0 == .wishlist }.count,
                 "visited": records.filter { $0 == .visited }.count,
-                "unvisited": records.filter { $0 != .visited }.count]
+                "unvisited": records.filter { $0 == .unvisited }.count]
+    }
+    private var activeFilterCount: Int {
+        [country, region, province, dynasty, type].filter { $0 != "all" }.count
+    }
+    private var sortTitle: String {
+        switch sortOrder {
+        case "newest": "新到旧"
+        case "name": "名称"
+        case "oldest": "旧到新"
+        default: "心愿优先"
+        }
     }
     private var results: [Monument] {
         let sorted = library.monuments.enumerated().sorted {
             $0.element.year == $1.element.year ? $0.offset < $1.offset : $0.element.year < $1.element.year
         }.map(\.element)
         let search = query.trimmingCharacters(in: .whitespacesAndNewlines)
-        return sorted.filter { site in
+        let matches = sorted.filter { site in
             let record = library.record(for: site)
-            let statusMatches = status == "all" || (status == "unvisited" ? record.status != .visited : record.status.rawValue == status)
+            let statusMatches = status == "all" || record.status.rawValue == status
             let protection = site.protection.flatMap { [$0.unitName, $0.scope, $0.batchLabel, "第\($0.batch)批国保", "国保", "全国重点文物保护单位"] }
             let haystack = ([site.name, site.short, site.sub, site.place, site.province, site.dynastyName,
                              site.country == "JP" ? "日本" : "中国", regionNames[site.region] ?? site.region]
@@ -216,32 +221,35 @@ struct ExploreView: View {
                 && (type == "all" || site.types.contains(type))
                 && (search.isEmpty || haystack.localizedCaseInsensitiveContains(search))
         }
+        switch sortOrder {
+        case "wishlist":
+            return matches.filter { library.record(for: $0).status == .wishlist }
+                + matches.filter { library.record(for: $0).status != .wishlist }
+        case "newest": return Array(matches.reversed())
+        case "name": return matches.sorted { $0.name.localizedStandardCompare($1.name) == .orderedAscending }
+        default: return matches
+        }
     }
 
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
-                hero
-                FangguRule().padding(.bottom, 44)
-                FangguSectionTitle(eyebrow: "我的收藏 · 尚有山河可访", title: "古迹图鉴", subtitle: "以线描寄心愿，以设色记到访。亲眼见过，为古迹添一重颜色。")
-                    .padding(.bottom, 26)
-                statusTabs.padding(.bottom, 24)
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("寻一处古迹")
-                        .font(FangguFont.mono(11))
-                        .tracking(1)
-                        .foregroundStyle(Palette.paper2)
-                    FangguField(placeholder: "名称、地点或国保批次", text: $query)
+                HStack(alignment: .top, spacing: 12) {
+                    FangguSectionTitle(eyebrow: "访古 · \(library.monuments.count) 处收录", title: "古迹图鉴", subtitle: "寻古迹，记下亲见与心愿。")
+                    Button { showingAbout = true } label: {
+                        FangguSeal(size: 36).frame(width: 44, height: 44)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("关于访古")
                 }
-                .padding(.bottom, 14)
-                LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 13) {
-                    FilterMenu(title: "国家", value: $country, options: ["all": "全部国家", "CN": "中国", "JP": "日本"])
-                    FilterMenu(title: "时代", value: $dynasty, options: dynastyOptions)
-                    FilterMenu(title: "地区", value: $region, options: regionOptions)
-                    FilterMenu(title: "省份", value: $province, options: provinceOptions)
-                    FilterMenu(title: "建筑类型", value: $type, options: typeOptions)
-                }
-                .padding(.bottom, 24)
+                .padding(.top, 28)
+                .padding(.bottom, 20)
+                FangguField(placeholder: "搜索古迹、地点或时代", text: $query)
+                    .padding(.bottom, 18)
+                statusTabs.padding(.bottom, 16)
+                catalogControls
+                .labelStyle(.titleOnly)
+                .padding(.bottom, 20)
                 HStack {
                     Text("共 \(results.count) 处")
                         .font(FangguFont.mono(12))
@@ -262,25 +270,103 @@ struct ExploreView: View {
                         Text("试试其他时代、地区或搜索词。")
                             .font(FangguFont.serif(13))
                             .foregroundStyle(Palette.paper2)
+                        Button("清除筛选") { clearFilters() }
+                            .buttonStyle(FangguOutlineButton())
                     }
                     .frame(maxWidth: .infinity, minHeight: 180, alignment: .leading)
                 } else {
-                    ForEach(results) { site in MonumentCard(site: site).padding(.bottom, 18) }
+                    ForEach(results) { site in
+                        if showCards {
+                            MonumentCard(site: site).padding(.bottom, 18)
+                        } else {
+                            NavigationLink(value: site) { TimelineSiteRow(site: site) }
+                                .buttonStyle(.plain)
+                                .padding(.bottom, 10)
+                        }
+                    }
                 }
             }
             .padding(.horizontal, 24)
         }
         .background(Palette.ink.ignoresSafeArea())
         .scrollDismissesKeyboard(.interactively)
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .principal) { FangguBrand() } }
-        .toolbarBackground(Palette.ink, for: .navigationBar)
-        .toolbarBackground(.visible, for: .navigationBar)
+        .toolbar(.hidden, for: .navigationBar)
+        .sheet(isPresented: $showingFilters) { filtersSheet }
+        .sheet(isPresented: $showingAbout) {
+            NavigationStack {
+                ScrollView { hero.padding(.horizontal, 24) }
+                    .background(Palette.ink.ignoresSafeArea())
+                    .navigationTitle("关于访古")
+                    .toolbar { Button("关闭") { showingAbout = false } }
+            }
+            .preferredColorScheme(.dark)
+        }
         .onChange(of: country) { _, _ in
             region = "all"; province = "all"
             if dynastyOptions[dynasty] == nil { dynasty = "all" }
         }
         .onChange(of: region) { _, _ in province = "all" }
+    }
+
+    private var filtersSheet: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 14) {
+                    Text("按地域、时代和建筑类型缩小范围。")
+                        .font(FangguFont.serif(14)).foregroundStyle(Palette.paper2)
+                    FilterMenu(title: "国家", value: $country, options: ["all": "全部国家", "CN": "中国", "JP": "日本"])
+                    FilterMenu(title: "时代", value: $dynasty, options: dynastyOptions)
+                    FilterMenu(title: "地区", value: $region, options: regionOptions)
+                    FilterMenu(title: "省份", value: $province, options: provinceOptions)
+                    FilterMenu(title: "建筑类型", value: $type, options: typeOptions)
+                    Button("清除筛选") { clearFilters() }
+                        .buttonStyle(FangguOutlineButton())
+                }
+                .padding(24)
+            }
+            .background(Palette.ink.ignoresSafeArea())
+            .navigationTitle("筛选古迹")
+            .toolbar { Button("完成") { showingFilters = false } }
+        }
+        .preferredColorScheme(.dark)
+        .presentationDetents([.large])
+    }
+
+    private var catalogControls: some View {
+        Group {
+            if dynamicTypeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 8) {
+                    sortMenu
+                    HStack(spacing: 8) { filterButton; displayButton }
+                }
+            } else {
+                HStack(spacing: 8) { sortMenu; filterButton; displayButton }
+            }
+        }
+    }
+
+    private var sortMenu: some View {
+        Menu {
+            Button("心愿优先") { sortOrder = "wishlist" }
+            Button("年代从早到晚") { sortOrder = "oldest" }
+            Button("年代从晚到早") { sortOrder = "newest" }
+            Button("名称") { sortOrder = "name" }
+        } label: { Label(sortTitle, systemImage: "arrow.up.arrow.down") }
+            .buttonStyle(FangguOutlineButton())
+    }
+
+    private var filterButton: some View {
+        Button { showingFilters = true } label: {
+            Label(activeFilterCount == 0 ? "筛选" : "筛选 \(activeFilterCount)", systemImage: "line.3.horizontal.decrease")
+        }
+        .buttonStyle(FangguOutlineButton())
+    }
+
+    private var displayButton: some View {
+        Button { showCards.toggle() } label: {
+            Label(showCards ? "列表" : "大图", systemImage: showCards ? "list.bullet" : "rectangle.stack")
+        }
+        .buttonStyle(FangguOutlineButton())
     }
 
     private var hero: some View {
@@ -335,30 +421,44 @@ struct ExploreView: View {
     }
 
     private var statusTabs: some View {
-        HStack(spacing: 0) {
-            ForEach([("all", "全部收录"), ("wishlist", "心愿单"), ("visited", "已到访"), ("unvisited", "未到访")], id: \.0) { key, title in
-                Button {
-                    if status != key {
-                        withAnimation(.easeInOut(duration: 0.2)) { status = key }
-                        Haptics.selection()
-                    }
-                } label: {
-                    VStack(spacing: 7) {
-                        Text(title)
-                            .font(FangguFont.serif(12))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.8)
-                        Text("\(statusCounts[key] ?? 0)")
-                            .font(FangguFont.mono(10))
-                        Rectangle().fill(status == key ? Palette.gold : .clear).frame(height: 1)
-                    }
-                    .foregroundStyle(status == key ? Palette.gold : Palette.paper2)
-                    .frame(maxWidth: .infinity)
+        Group {
+            if dynamicTypeSize.isAccessibilitySize {
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
+                    ForEach(statusOptions, id: \.0) { key, title in statusButton(key, title) }
                 }
-                .buttonStyle(.plain)
+            } else {
+                HStack(spacing: 0) {
+                    ForEach(statusOptions, id: \.0) { key, title in statusButton(key, title) }
+                }
             }
         }
         .overlay(alignment: .bottom) { FangguRule() }
+    }
+
+    private var statusOptions: [(String, String)] {
+        [("all", "全部"), ("wishlist", "心愿单"), ("visited", "已到访"), ("unvisited", "未标记")]
+    }
+
+    private func statusButton(_ key: String, _ title: String) -> some View {
+        Button {
+            if status != key {
+                withAnimation(.easeInOut(duration: 0.2)) { status = key }
+                Haptics.selection()
+            }
+        } label: {
+            VStack(spacing: 7) {
+                Text(title)
+                    .font(FangguFont.serif(12))
+                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? 2 : 1)
+                    .minimumScaleFactor(0.8)
+                Text("\(statusCounts[key] ?? 0)").font(FangguFont.mono(11))
+                Rectangle().fill(status == key ? Palette.gold : .clear).frame(height: 1)
+            }
+            .foregroundStyle(status == key ? Palette.gold : Palette.paper2)
+            .frame(maxWidth: .infinity, minHeight: 44)
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(status == key ? .isSelected : [])
     }
 
     private func clearFilters() {
@@ -458,8 +558,7 @@ struct ArtworkView: View {
 struct MonumentCard: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
-    @State private var reveal: CGFloat = 0
-    @State private var completingVisit = false
+    @State private var editingVisit = false
     @State private var editingReview = false
 
     private var record: VisitRecord { library.record(for: site) }
@@ -468,16 +567,16 @@ struct MonumentCard: View {
         VStack(alignment: .leading, spacing: 0) {
             NavigationLink(value: site) {
                 VStack(alignment: .leading, spacing: 0) {
-                    ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
-                                height: 240, reveal: reveal, stamping: completingVisit)
+                    ArtworkView(site: site, visited: record.status == .visited, height: 240)
                     VStack(alignment: .leading, spacing: 9) {
                         HStack(spacing: 8) {
-                            Text(record.status == .wishlist ? "想去" : record.status.title)
-                                .foregroundStyle(record.status == .visited ? Palette.red : Palette.gold)
+                            Text(record.status.title)
+                                .foregroundStyle(record.status.textColor)
                             Text(site.dynastyName)
                                 .foregroundStyle(site.accent)
-                            Text(site.yearLabel.isEmpty ? String(site.year) : site.yearLabel)
-                                .foregroundStyle(Palette.paper3)
+                            if !site.displayYearLabel.isEmpty {
+                                Text(site.displayYearLabel).foregroundStyle(Palette.paper3)
+                            }
                         }
                         .font(FangguFont.mono(11))
                         Text(site.name)
@@ -506,14 +605,15 @@ struct MonumentCard: View {
                 .padding(.horizontal, 17)
                 .padding(.bottom, 14)
             }
-            if record.status != .visited || completingVisit {
-                ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
+            if record.status != .visited {
+                Button("标记到访") { editingVisit = true }
+                    .buttonStyle(FangguOutlineButton())
                     .padding(.horizontal, 17)
                     .padding(.bottom, 12)
             } else {
                 Text(record.visitedOn.isEmpty ? "已到访" : "已到访 · \(record.visitedOn)")
                     .font(FangguFont.mono(11))
-                    .foregroundStyle(Palette.red)
+                    .foregroundStyle(Palette.redText)
                     .padding(.horizontal, 17)
                     .padding(.bottom, 12)
             }
@@ -541,16 +641,7 @@ struct MonumentCard: View {
         }
         .background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
+        .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
-    }
-
-    private func finishArrival() {
-        withAnimation(.spring(response: 0.82, dampingFraction: 0.7)) {
-            reveal = 1
-            completingVisit = true
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.35) {
-            withAnimation(.easeInOut(duration: 0.25)) { completingVisit = false }
-        }
     }
 }
