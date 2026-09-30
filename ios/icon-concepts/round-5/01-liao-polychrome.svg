@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#C95B3D"/><stop offset="1" stop-color="#7F2F2A"/></linearGradient>
+    <g id="left-petals" stroke="#E5BD78" stroke-width="15" stroke-linejoin="round">
+      <path d="M511 452C386 448 270 422 172 362c29 81 82 141 157 170 66 26 127 29 182 27Z" fill="url(#wood)"/>
+      <path d="M510 554c-96-2-179-31-247-77 20 71 62 120 125 145 45 18 84 21 122 20Z" fill="#397B72"/>
+      <path d="M510 639c-61-3-113-20-153-48 16 52 45 87 91 106 22 10 43 11 62 11Z" fill="#A84C3A"/>
+    </g>
+  </defs>
+  <rect width="1024" height="1024" fill="#172021"/>
+  <path d="M133 287h758v52H133z" fill="#A84435" stroke="#E5BD78" stroke-width="17"/>
+  <path d="M165 263h694" stroke="#E5BD78" stroke-width="27" stroke-linecap="round"/>
+  <path d="M206 221v42m102-42v42m102-42v42m102-42v42m102-42v42m102-42v42m102-42v42" stroke="#B98055" stroke-width="19"/>
+  <path d="M274 341h476v42H274z" fill="#3B756E" stroke="#E5BD78" stroke-width="13"/>
+  <use href="#left-petals"/>
+  <use href="#left-petals" transform="translate(1024 0) scale(-1 1)"/>
+  <path d="M460 380h104v77H460zM467 458h90v105h-90zM464 565h96v91h-96z" fill="#A84435" stroke="#E5BD78" stroke-width="17"/>
+  <path d="M479 395h66v47h-66zM484 477h56v69h-56zM482 583h60v55h-60z" fill="#172021"/>
+  <path d="M476 714h72l-14 136h-44z" fill="#A84435" stroke="#E5BD78" stroke-width="18"/>
+  <path d="M207 385c82 41 171 64 267 70m-170 60c49 30 108 47 170 51m-81 61c30 16 55 22 84 24" fill="none" stroke="#F1D6A0" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+  <path d="M817 385c-82 41-171 64-267 70m170 60c-49 30-108 47-170 51m81 61c-30 16-55 22-84 24" fill="none" stroke="#F1D6A0" stroke-width="12" stroke-linecap="round" opacity=".85"/>
+  <circle cx="511" cy="681" r="15" fill="#E5BD78"/>
+</svg>

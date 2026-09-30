@@ -1,0 +1,53 @@
+{
+  "id": "js_zhongshan",
+  "subject": "南京中山陵祭堂与前方主要石阶",
+  "caption": [
+    "中山陵祭堂",
+    "民国 · 1929年"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg/1280px-%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg/1280px-%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "董辰兴",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-02-26 13:54:24",
+      "reference_file": "assets/references/js_zhongshan-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 866
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_zhongshan-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The solemn symmetrical memorial hall on a stone terrace: one broad blue-grey hip-and-gable roof, pale stone body, three front arched doorways and the upper run of central stone steps. Remove visitors and forest backdrop.",
+  "generated_file": "assets/generated/js_zhongshan.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The solemn symmetrical memorial hall on a stone terrace: one broad blue-grey hip-and-gable roof, pale stone body, three front arched doorways and the upper run of central stone steps. Remove visitors and forest backdrop.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-1ff4a16b-f434-447d-b1ff-79df55023b3a.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-1ff4a16b-f434-447d-b1ff-79df55023b3a.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7630f9c849bc6b7cc7c055bdfb0f61f39f5abcc83628d514096cf0f34d1389f6",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

@@ -79,7 +79,7 @@ test('protection batch and official unit search compose with existing geographic
   const sites = create(catalog, { getItem: () => null, setItem() {} }).all();
   const find = filters => sites.filter(site => facets.matches(site, filters)).map(site => site.id);
   assert.deepEqual(find({ query: '国保', province: '天津' }).sort(), ['dule', 'tj_guangdonghuiguan', 'tj_jizhou_baita', 'tj_shijia'].sort());
-  assert.deepEqual(find({ query: '第八批国保', type: 'hall' }).sort(), ['hn_yuzhoutianning', 'tiefo'].sort());
+  assert.deepEqual(find({ query: '第八批国保', type: 'hall' }).sort(), ['hn_yuzhoutianning', 'tiefo', 'zj_shinantang'].sort());
   assert.deepEqual(find({ query: '第八批国保', type: 'stage' }), []);
   assert.deepEqual(find({ query: '第8批国保' }).sort(), find({ query: '第八批国保' }).sort());
   assert(find({ query: '全国重点文物保护单位', province: '陕西' }).includes('sn_qianling'));

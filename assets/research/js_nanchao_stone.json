@@ -1,0 +1,53 @@
+{
+  "id": "js_nanchao_stone",
+  "subject": "南京萧景墓神道东辟邪石刻",
+  "caption": [
+    "萧景墓石刻",
+    "南朝梁 · 东辟邪"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Tomb_of_Xiao_Jing_-_Bixie.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Tomb_of_Xiao_Jing_-_Bixie.JPG/960px-Tomb_of_Xiao_Jing_-_Bixie.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tomb_of_Xiao_Jing_-_Bixie.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Tomb_of_Xiao_Jing_-_Bixie.JPG/960px-Tomb_of_Xiao_Jing_-_Bixie.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Shallowell",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": null,
+      "reference_file": "assets/references/js_nanchao_stone-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1280
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_nanchao_stone-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: One weathered stone bixie guardian beast from the east side of Xiao Jing tomb spirit path, in its actual standing pose with raised head, broad chest, four legs and curling carved mane. Preserve the sculpted base, no invented wings or paired beast.",
+  "generated_file": "assets/generated/js_nanchao_stone.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: One weathered stone bixie guardian beast from the east side of Xiao Jing tomb spirit path, in its actual standing pose with raised head, broad chest, four legs and curling carved mane. Preserve the sculpted base, no invented wings or paired beast.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-78816913-449a-4e8c-b30a-9a404d90e10f.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-78816913-449a-4e8c-b30a-9a404d90e10f.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c8a0ab3d53277950dc28fe679c0d9d8a804e9604ca8a1fc8c1b42ebbd19d8558",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

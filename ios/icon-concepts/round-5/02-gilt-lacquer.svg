@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#F8E2AE"/><stop offset=".52" stop-color="#D7A75E"/><stop offset="1" stop-color="#A56F32"/></linearGradient>
+    <g id="half" fill="url(#gold)" stroke="#4C2525" stroke-width="11" stroke-linejoin="round">
+      <path d="M512 420C410 419 281 385 191 325c11 70 48 138 115 174 70 39 144 54 206 51Z"/>
+      <path d="M512 542C421 540 343 518 282 476c13 69 52 125 112 155 41 21 80 26 118 25Z"/>
+      <path d="M512 646C457 645 405 625 368 600c9 51 37 86 79 107 22 11 45 15 65 15Z"/>
+    </g>
+  </defs>
+  <rect width="1024" height="1024" fill="#5A2024"/>
+  <path d="M105 105h814v814H105z" fill="none" stroke="#C99750" stroke-width="16"/>
+  <path d="M146 146h103m-103 0v103m732-103H775m103 0v103M146 878h103m-103 0V775m732 103H775m103 0V775" fill="none" stroke="#F0D39A" stroke-width="13"/>
+  <path d="M189 263h646v59H189z" fill="url(#gold)" stroke="#4C2525" stroke-width="11"/>
+  <path d="M287 330h450v50H287z" fill="#E7C688" stroke="#4C2525" stroke-width="11"/>
+  <use href="#half"/>
+  <use href="#half" transform="translate(1024 0) scale(-1 1)"/>
+  <path d="M463 387h98v79h-98zM470 467h84v96h-84zM470 564h84v100h-84z" fill="#F1D39A" stroke="#4C2525" stroke-width="14"/>
+  <path d="M484 399h56v54h-56zM485 482h54v65h-54zM485 580h54v65h-54z" fill="#5A2024"/>
+  <path d="M478 720h68l-10 130h-48z" fill="url(#gold)" stroke="#4C2525" stroke-width="13"/>
+  <path d="M215 352c90 51 176 73 242 77m-149 77c64 33 112 42 153 45m-65 75c26 12 46 17 64 18" fill="none" stroke="#FFF0C8" stroke-width="11" opacity=".78"/>
+  <path d="M809 352c-90 51-176 73-242 77m149 77c-64 33-112 42-153 45m65 75c-26 12-46 17-64 18" fill="none" stroke="#FFF0C8" stroke-width="11" opacity=".78"/>
+</svg>

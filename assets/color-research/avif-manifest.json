@@ -16962,136 +16962,1004 @@
       },
       "qualityMode": "prototype"
     },
-    "longmenshiku": {
-      "source": "assets/color-studies/v1/longmenshiku-colored.png",
-      "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",
-      "sourceBytes": 2088038,
-      "input": "assets/colored-transparent/longmenshiku.png",
-      "inputSha256": "cc8dd191a7d73927f3de6942f8e1650c3308712b5a8788a28fd09fe53d262682",
-      "inputBytes": 2062664,
-      "src": "assets/colored-transparent-avif/longmenshiku.avif",
-      "sha256": "08428bad8d99fe2935970b137a6487f83b4cbd3982558c011fb9c6fa32adc628",
-      "bytes": 212217,
+    "zj_tianyige": {
+      "source": "assets/colored/zj_tianyige.png",
+      "sourceSha256": "467a19d5e9d333cdc13dd45ef320242d0ef48ec54525536e8888ceb61f5c42ff",
+      "sourceBytes": 1628847,
+      "input": "assets/colored-transparent/zj_tianyige.png",
+      "inputSha256": "cbb7fb151abc93acc9fd402ab7c14a569950518aa027ef1fdae2eeed6148ee0b",
+      "inputBytes": 1446094,
+      "src": "assets/colored-transparent-avif/zj_tianyige.avif",
+      "sha256": "c15c5cec7261b4f3455ee3ce9a9f3f836c0f3441469ea1700c2c25f0a78d08bb",
+      "bytes": 143695,
       "width": 1024,
       "height": 1536,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 906294,
-        "opaquePixels": 660625,
-        "meanError": 0.004634857177734375,
-        "maxError": 5
+        "transparentPixels": 1188444,
+        "opaquePixels": 378654,
+        "meanError": 0.0046138763427734375,
+        "maxError": 14
       },
       "extraction": {
+        "method": "white-matte-prototype-v1",
         "matteRgb": [
-          13,
-          11,
-          9
+          255,
+          255,
+          255
         ],
-        "borderPolicy": "dominant",
-        "borderMatchFraction": 1,
-        "tolerancePerChannel": 12,
+        "interiorRgbUnchanged": true,
         "backgroundSeeds": [],
-        "transparentPixels": 909591,
-        "opaquePixels": 663273,
-        "rgbUnchanged": true
+        "skippedSeeds": []
       },
       "visualReview": "approved_user",
-      "processingSeconds": 2.203,
+      "processingSeconds": 6.471,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "467a19d5e9d333cdc13dd45ef320242d0ef48ec54525536e8888ceb61f5c42ff",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
       "review": {
+        "status": "approved_user",
         "reviewer": "user",
-        "date": "2026-09-16",
-        "statement": "都没问题 先替换上吧。",
-        "avifSha256": "08428bad8d99fe2935970b137a6487f83b4cbd3982558c011fb9c6fa32adc628",
-        "inputSha256": "cc8dd191a7d73927f3de6942f8e1650c3308712b5a8788a28fd09fe53d262682"
+        "reviewed_at": "2026-09-29T17:57:45.137Z",
+        "sourceSha256": "467a19d5e9d333cdc13dd45ef320242d0ef48ec54525536e8888ceb61f5c42ff",
+        "inputSha256": "cbb7fb151abc93acc9fd402ab7c14a569950518aa027ef1fdae2eeed6148ee0b",
+        "avifSha256": "c15c5cec7261b4f3455ee3ce9a9f3f836c0f3441469ea1700c2c25f0a78d08bb"
       }
     },
-    "foguang": {
-      "source": "assets/color-studies/v1/foguang-colored.png",
-      "sourceSha256": "6036e9490cda1f1bd48e4e2cb4fc3f2d21a1df0fbe14ccc8a9aebd64f7372458",
-      "sourceBytes": 1898410,
-      "input": "assets/colored-transparent/foguang.png",
-      "inputSha256": "a8b2031e6d7d2aab87b45896dc55407b6d458f32c00f9657b3a9fb16865967e7",
-      "inputBytes": 1820439,
-      "src": "assets/colored-transparent-avif/foguang.avif",
-      "sha256": "9e6ac732be2b17029b59e58306874b51c615ecea2d53d3b49b71b87e1d26c424",
-      "bytes": 174992,
-      "width": 1536,
-      "height": 1024,
-      "alpha": {
-        "min": 0,
-        "max": 255,
-        "transparentPixels": 991836,
-        "opaquePixels": 576993,
-        "meanError": 0.002857208251953125,
-        "maxError": 4
-      },
-      "extraction": {
-        "matteRgb": [
-          13,
-          12,
-          10
-        ],
-        "borderPolicy": "dominant",
-        "borderMatchFraction": 1,
-        "tolerancePerChannel": 12,
-        "backgroundSeeds": [],
-        "transparentPixels": 993523,
-        "opaquePixels": 579341,
-        "rgbUnchanged": true
-      },
-      "visualReview": "approved_user",
-      "processingSeconds": 2.247,
-      "review": {
-        "reviewer": "user",
-        "date": "2026-09-16",
-        "statement": "都没问题 先替换上吧。",
-        "avifSha256": "9e6ac732be2b17029b59e58306874b51c615ecea2d53d3b49b71b87e1d26c424",
-        "inputSha256": "a8b2031e6d7d2aab87b45896dc55407b6d458f32c00f9657b3a9fb16865967e7"
-      }
-    },
-    "yingxian": {
-      "source": "assets/color-studies/v1/yingxian-colored.png",
-      "sourceSha256": "99b32e738ac658b5423f496261c97dd8bb1247b88ee8c75476b0a808a75bba3e",
-      "sourceBytes": 2250159,
-      "input": "assets/colored-transparent/yingxian.png",
-      "inputSha256": "dfae83ff14b25b5a1901608d805c685e1d788da17737db9458fc7c7c55e6f704",
-      "inputBytes": 2308581,
-      "src": "assets/colored-transparent-avif/yingxian.avif",
-      "sha256": "50629500780d512ed9f0c7b029ee9ae0c26c8b00f1e857ee64b3bff2732f5fde",
-      "bytes": 266203,
+    "zj_qinganhui": {
+      "source": "assets/colored/zj_qinganhui.png",
+      "sourceSha256": "f9d64a3283987ece976f5e231f1f9bc1f2a04b77a8794673c8f49b17a4e0b7e3",
+      "sourceBytes": 2517420,
+      "input": "assets/colored-transparent/zj_qinganhui.png",
+      "inputSha256": "2d206b53615801fbf629095fc64e709f11a7671ca57fbc75e96737f20182abea",
+      "inputBytes": 2502163,
+      "src": "assets/colored-transparent-avif/zj_qinganhui.avif",
+      "sha256": "363ecaff93dbecefe7a0b990747bf57e9cd3d4e30592c38af4c01995024f46fd",
+      "bytes": 329579,
       "width": 1024,
       "height": 1536,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 808230,
-        "opaquePixels": 757557,
-        "meanError": 0.0053297678629557295,
-        "maxError": 5
+        "transparentPixels": 453934,
+        "opaquePixels": 1110647,
+        "meanError": 0.005953470865885417,
+        "maxError": 13
       },
       "extraction": {
+        "method": "white-matte-prototype-v1",
         "matteRgb": [
-          13,
-          12,
-          9
+          255,
+          255,
+          255
         ],
-        "borderPolicy": "dominant",
-        "borderMatchFraction": 1,
-        "tolerancePerChannel": 12,
+        "interiorRgbUnchanged": true,
         "backgroundSeeds": [],
-        "transparentPixels": 811808,
-        "opaquePixels": 761056,
-        "rgbUnchanged": true
+        "skippedSeeds": []
       },
       "visualReview": "approved_user",
-      "processingSeconds": 2.407,
+      "processingSeconds": 6.329,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "f9d64a3283987ece976f5e231f1f9bc1f2a04b77a8794673c8f49b17a4e0b7e3",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
       "review": {
+        "status": "approved_user",
         "reviewer": "user",
-        "date": "2026-09-16",
-        "statement": "都没问题 先替换上吧。",
-        "avifSha256": "50629500780d512ed9f0c7b029ee9ae0c26c8b00f1e857ee64b3bff2732f5fde",
-        "inputSha256": "dfae83ff14b25b5a1901608d805c685e1d788da17737db9458fc7c7c55e6f704"
+        "reviewed_at": "2026-09-29T17:57:45.150Z",
+        "sourceSha256": "f9d64a3283987ece976f5e231f1f9bc1f2a04b77a8794673c8f49b17a4e0b7e3",
+        "inputSha256": "2d206b53615801fbf629095fc64e709f11a7671ca57fbc75e96737f20182abea",
+        "avifSha256": "363ecaff93dbecefe7a0b990747bf57e9cd3d4e30592c38af4c01995024f46fd"
+      }
+    },
+    "zj_yongan": {
+      "source": "assets/colored/zj_yongan.png",
+      "sourceSha256": "3324da208d9baaa64224feee1ebde83807b7a17c8d5ec2f665d9e90568f6b3e8",
+      "sourceBytes": 1700278,
+      "input": "assets/colored-transparent/zj_yongan.png",
+      "inputSha256": "a148f3d61a21ba436df2c412e354fba1d8be4dc493d738dd00db9b623e16750d",
+      "inputBytes": 1592323,
+      "src": "assets/colored-transparent-avif/zj_yongan.avif",
+      "sha256": "2b71af33bdf992a0521c90ddbd096d407f81035d7372a5f72eff6345bc4dca16",
+      "bytes": 158134,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1210818,
+        "opaquePixels": 351053,
+        "meanError": 0.008677800496419271,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.72,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "3324da208d9baaa64224feee1ebde83807b7a17c8d5ec2f665d9e90568f6b3e8",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.157Z",
+        "sourceSha256": "3324da208d9baaa64224feee1ebde83807b7a17c8d5ec2f665d9e90568f6b3e8",
+        "inputSha256": "a148f3d61a21ba436df2c412e354fba1d8be4dc493d738dd00db9b623e16750d",
+        "avifSha256": "2b71af33bdf992a0521c90ddbd096d407f81035d7372a5f72eff6345bc4dca16"
+      }
+    },
+    "zj_daan": {
+      "source": "assets/colored/zj_daan.png",
+      "sourceSha256": "52c1511343f913cc85f1b0f8c53abd917d000152b2ec74aa487a26762ea75109",
+      "sourceBytes": 1914852,
+      "input": "assets/colored-transparent/zj_daan.png",
+      "inputSha256": "ab6c53dceb557d534685f8d1b90168b418da94a8d47afc8a17cd947be8977369",
+      "inputBytes": 1858102,
+      "src": "assets/colored-transparent-avif/zj_daan.avif",
+      "sha256": "714d72188d983bc6b24aff4510e9d5242e686f392b1c13e3500b98f18a3dabb6",
+      "bytes": 203892,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1093210,
+        "opaquePixels": 469654,
+        "meanError": 0.008022308349609375,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.848,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "52c1511343f913cc85f1b0f8c53abd917d000152b2ec74aa487a26762ea75109",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.163Z",
+        "sourceSha256": "52c1511343f913cc85f1b0f8c53abd917d000152b2ec74aa487a26762ea75109",
+        "inputSha256": "ab6c53dceb557d534685f8d1b90168b418da94a8d47afc8a17cd947be8977369",
+        "avifSha256": "714d72188d983bc6b24aff4510e9d5242e686f392b1c13e3500b98f18a3dabb6"
+      }
+    },
+    "zj_dashan": {
+      "source": "assets/colored/zj_dashan.png",
+      "sourceSha256": "169a0fc70b29eaa6f0c0aa49e366e52efb63c3207210f760fb8f3cfae0304cd2",
+      "sourceBytes": 1622599,
+      "input": "assets/colored-transparent/zj_dashan.png",
+      "inputSha256": "7bc11f549eb6e584b3ce36afa4130dcb3d447f9bd3ee3b3a1c0a0d61f15e4afe",
+      "inputBytes": 1564199,
+      "src": "assets/colored-transparent-avif/zj_dashan.avif",
+      "sha256": "a7f09d1c0b550734fbc284b8e6187a49839925e7c822f743986a509c0b7dd6cc",
+      "bytes": 137337,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1188946,
+        "opaquePixels": 375500,
+        "meanError": 0.0065161387125651045,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.972,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "169a0fc70b29eaa6f0c0aa49e366e52efb63c3207210f760fb8f3cfae0304cd2",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.173Z",
+        "sourceSha256": "169a0fc70b29eaa6f0c0aa49e366e52efb63c3207210f760fb8f3cfae0304cd2",
+        "inputSha256": "7bc11f549eb6e584b3ce36afa4130dcb3d447f9bd3ee3b3a1c0a0d61f15e4afe",
+        "avifSha256": "a7f09d1c0b550734fbc284b8e6187a49839925e7c822f743986a509c0b7dd6cc"
+      }
+    },
+    "zj_chaoyin": {
+      "source": "assets/colored/zj_chaoyin.png",
+      "sourceSha256": "d9af95dc2ff740ac1b316a32e042b4076f27d2f2ef57e3c9bffec7d199e8ef1b",
+      "sourceBytes": 1224108,
+      "input": "assets/colored-transparent/zj_chaoyin.png",
+      "inputSha256": "49b7d447ef547edc36e1daf63420ba071ab39db89460df8efb84b1cdc25d80d7",
+      "inputBytes": 1008244,
+      "src": "assets/colored-transparent-avif/zj_chaoyin.avif",
+      "sha256": "d44eb45b35833aa771f3224d5fd463b5e274dacf7e665af43926e22b4b5f11dd",
+      "bytes": 85159,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1403580,
+        "opaquePixels": 162682,
+        "meanError": 0.005321502685546875,
+        "maxError": 12
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.084,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d9af95dc2ff740ac1b316a32e042b4076f27d2f2ef57e3c9bffec7d199e8ef1b",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.181Z",
+        "sourceSha256": "d9af95dc2ff740ac1b316a32e042b4076f27d2f2ef57e3c9bffec7d199e8ef1b",
+        "inputSha256": "49b7d447ef547edc36e1daf63420ba071ab39db89460df8efb84b1cdc25d80d7",
+        "avifSha256": "d44eb45b35833aa771f3224d5fd463b5e274dacf7e665af43926e22b4b5f11dd"
+      }
+    },
+    "zj_yuyaotongji": {
+      "source": "assets/colored/zj_yuyaotongji.png",
+      "sourceSha256": "8ac9018cb0b33cf917a0284dbe2652189ff5b8d3ad21f1f2d8795d0b29324e87",
+      "sourceBytes": 1126587,
+      "input": "assets/colored-transparent/zj_yuyaotongji.png",
+      "inputSha256": "7525371d77fa3a7f92bd10f7ed83a4d83db5d1ea2c8f78650d68b8772ec74d32",
+      "inputBytes": 903929,
+      "src": "assets/colored-transparent-avif/zj_yuyaotongji.avif",
+      "sha256": "b40d67998544892422c7f45affb5d1ccb8a0c5a55c95101da37a97b821d94eb3",
+      "bytes": 72761,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1446318,
+        "opaquePixels": 119855,
+        "meanError": 0.005437215169270833,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.02,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "8ac9018cb0b33cf917a0284dbe2652189ff5b8d3ad21f1f2d8795d0b29324e87",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.185Z",
+        "sourceSha256": "8ac9018cb0b33cf917a0284dbe2652189ff5b8d3ad21f1f2d8795d0b29324e87",
+        "inputSha256": "7525371d77fa3a7f92bd10f7ed83a4d83db5d1ea2c8f78650d68b8772ec74d32",
+        "avifSha256": "b40d67998544892422c7f45affb5d1ccb8a0c5a55c95101da37a97b821d94eb3"
+      }
+    },
+    "zj_guyue": {
+      "source": "assets/colored/zj_guyue.png",
+      "sourceSha256": "426a2ee8051b2a6a0fe2e293974058bc1cea41a44e02faae4d3f4646e481902f",
+      "sourceBytes": 1481764,
+      "input": "assets/colored-transparent/zj_guyue.png",
+      "inputSha256": "14ef8fdcc6ce73f216d5a4c4d399b038b604dac49e8a72f7cf3f1889032e7239",
+      "inputBytes": 1319669,
+      "src": "assets/colored-transparent-avif/zj_guyue.avif",
+      "sha256": "e355c9db1415a40d7e2e5c0e2a01e62c17cc48fd901edc011cba2ce86c3050ce",
+      "bytes": 169245,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1237656,
+        "opaquePixels": 303812,
+        "meanError": 0.024629592895507812,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.272,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "426a2ee8051b2a6a0fe2e293974058bc1cea41a44e02faae4d3f4646e481902f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.189Z",
+        "sourceSha256": "426a2ee8051b2a6a0fe2e293974058bc1cea41a44e02faae4d3f4646e481902f",
+        "inputSha256": "14ef8fdcc6ce73f216d5a4c4d399b038b604dac49e8a72f7cf3f1889032e7239",
+        "avifSha256": "e355c9db1415a40d7e2e5c0e2a01e62c17cc48fd901edc011cba2ce86c3050ce"
+      }
+    },
+    "zj_library_old": {
+      "source": "assets/colored/zj_library_old.png",
+      "sourceSha256": "a38d16a8e39141572425c517c8e9e6991b0559be0919c86ae51357fa020ec882",
+      "sourceBytes": 1756149,
+      "input": "assets/colored-transparent/zj_library_old.png",
+      "inputSha256": "7bfaa52217bf0885174d956730ea22a26fa3ada0859c281f66f00ab2c81a1704",
+      "inputBytes": 1647935,
+      "src": "assets/colored-transparent-avif/zj_library_old.avif",
+      "sha256": "70985d30cf86d2bf2df941718501650a321467643a58033022b0bfc4e4a4dc3f",
+      "bytes": 175335,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 989865,
+        "opaquePixels": 575983,
+        "meanError": 0.0054442087809244795,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.454,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "a38d16a8e39141572425c517c8e9e6991b0559be0919c86ae51357fa020ec882",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.195Z",
+        "sourceSha256": "a38d16a8e39141572425c517c8e9e6991b0559be0919c86ae51357fa020ec882",
+        "inputSha256": "7bfaa52217bf0885174d956730ea22a26fa3ada0859c281f66f00ab2c81a1704",
+        "avifSha256": "70985d30cf86d2bf2df941718501650a321467643a58033022b0bfc4e4a4dc3f"
+      }
+    },
+    "zj_shinantang": {
+      "source": "assets/colored/zj_shinantang.png",
+      "sourceSha256": "0bbc106233776bd83eebadb723fe7b96146759b138cc15cfb1d1d08abff8bee9",
+      "sourceBytes": 2046669,
+      "input": "assets/colored-transparent/zj_shinantang.png",
+      "inputSha256": "5cabfb1446164c8c8c067414f6312de2fd815c5d106f08b937eefcb6a8b794f6",
+      "inputBytes": 1759102,
+      "src": "assets/colored-transparent-avif/zj_shinantang.avif",
+      "sha256": "4e719daee7c5f48eb1d41bd6cef6f23eb110f6c28940f7c6b9616ac0fb04df4f",
+      "bytes": 149692,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1202897,
+        "opaquePixels": 362249,
+        "meanError": 0.0061333974202473955,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.739,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "0bbc106233776bd83eebadb723fe7b96146759b138cc15cfb1d1d08abff8bee9",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.229Z",
+        "sourceSha256": "0bbc106233776bd83eebadb723fe7b96146759b138cc15cfb1d1d08abff8bee9",
+        "inputSha256": "5cabfb1446164c8c8c067414f6312de2fd815c5d106f08b937eefcb6a8b794f6",
+        "avifSha256": "4e719daee7c5f48eb1d41bd6cef6f23eb110f6c28940f7c6b9616ac0fb04df4f"
+      }
+    },
+    "js_mingxiao": {
+      "source": "assets/colored/js_mingxiao.png",
+      "sourceSha256": "5bfdec4d83f35cdd297a567c42b8197d9004049e95292fde8deb06a9afb61dcf",
+      "sourceBytes": 2238640,
+      "input": "assets/colored-transparent/js_mingxiao.png",
+      "inputSha256": "100190f5aed6c8833bbaec1bccb20622777084a30a558d465339178963fa5c37",
+      "inputBytes": 2080354,
+      "src": "assets/colored-transparent-avif/js_mingxiao.avif",
+      "sha256": "444becabacb0336703005ffbad9c785feb22ce37f36a018ecafecb031a4d4aaf",
+      "bytes": 226557,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 855232,
+        "opaquePixels": 708080,
+        "meanError": 0.0074202219645182295,
+        "maxError": 11
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.692,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "5bfdec4d83f35cdd297a567c42b8197d9004049e95292fde8deb06a9afb61dcf",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.237Z",
+        "sourceSha256": "5bfdec4d83f35cdd297a567c42b8197d9004049e95292fde8deb06a9afb61dcf",
+        "inputSha256": "100190f5aed6c8833bbaec1bccb20622777084a30a558d465339178963fa5c37",
+        "avifSha256": "444becabacb0336703005ffbad9c785feb22ce37f36a018ecafecb031a4d4aaf"
+      }
+    },
+    "js_zhongshan": {
+      "source": "assets/colored/js_zhongshan.png",
+      "sourceSha256": "be9baf9215264e24ea1994c03bcc6ec703f50e1843ea128175c1b63304cc84f4",
+      "sourceBytes": 1911375,
+      "input": "assets/colored-transparent/js_zhongshan.png",
+      "inputSha256": "4ce1d7eae596c59cbc1fff7755537cb99695bd4df0374e8af9650443156a27ee",
+      "inputBytes": 1742986,
+      "src": "assets/colored-transparent-avif/js_zhongshan.avif",
+      "sha256": "c760dea7177c774a6032740203e79037d790e4c63a3789794e0421f9ae7e5a0c",
+      "bytes": 186474,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 842982,
+        "opaquePixels": 721427,
+        "meanError": 0.0068098704020182295,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.163,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "be9baf9215264e24ea1994c03bcc6ec703f50e1843ea128175c1b63304cc84f4",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.243Z",
+        "sourceSha256": "be9baf9215264e24ea1994c03bcc6ec703f50e1843ea128175c1b63304cc84f4",
+        "inputSha256": "4ce1d7eae596c59cbc1fff7755537cb99695bd4df0374e8af9650443156a27ee",
+        "avifSha256": "c760dea7177c774a6032740203e79037d790e4c63a3789794e0421f9ae7e5a0c"
+      }
+    },
+    "js_nanjingwall": {
+      "source": "assets/colored/js_nanjingwall.png",
+      "sourceSha256": "a296d200a702ec18a00631c309659f8cd57ab7142413f0da55267a7a3626ccd5",
+      "sourceBytes": 1634303,
+      "input": "assets/colored-transparent/js_nanjingwall.png",
+      "inputSha256": "9636a625c012128eae68a9468efacafc4a51fa159d0181879b6d2964b1252d46",
+      "inputBytes": 1458043,
+      "src": "assets/colored-transparent-avif/js_nanjingwall.avif",
+      "sha256": "c606f7e19dabba9b3fdd672b6a1de3bed4f0e0a862abe6e5639353d57ce8ea5c",
+      "bytes": 150284,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1155468,
+        "opaquePixels": 411919,
+        "meanError": 0.0041700998942057295,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.621,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "a296d200a702ec18a00631c309659f8cd57ab7142413f0da55267a7a3626ccd5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.249Z",
+        "sourceSha256": "a296d200a702ec18a00631c309659f8cd57ab7142413f0da55267a7a3626ccd5",
+        "inputSha256": "9636a625c012128eae68a9468efacafc4a51fa159d0181879b6d2964b1252d46",
+        "avifSha256": "c606f7e19dabba9b3fdd672b6a1de3bed4f0e0a862abe6e5639353d57ce8ea5c"
+      }
+    },
+    "js_chaotiangong": {
+      "source": "assets/colored/js_chaotiangong.png",
+      "sourceSha256": "9949ef6935588f98c8e29b76ab1d8116719980ee58ffbb368a7face2ccbfbafa",
+      "sourceBytes": 1767560,
+      "input": "assets/colored-transparent/js_chaotiangong.png",
+      "inputSha256": "88f291c26de7bf2814eb8f47f0e71dc899b3edf15af6a9766427858669ab8c1b",
+      "inputBytes": 1632132,
+      "src": "assets/colored-transparent-avif/js_chaotiangong.avif",
+      "sha256": "b7348e4b27b6743b70adc71f37c34406f705bfc314062fea913a4efc84224e34",
+      "bytes": 175323,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1078579,
+        "opaquePixels": 485871,
+        "meanError": 0.006440480550130208,
+        "maxError": 8
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.849,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "9949ef6935588f98c8e29b76ab1d8116719980ee58ffbb368a7face2ccbfbafa",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.254Z",
+        "sourceSha256": "9949ef6935588f98c8e29b76ab1d8116719980ee58ffbb368a7face2ccbfbafa",
+        "inputSha256": "88f291c26de7bf2814eb8f47f0e71dc899b3edf15af6a9766427858669ab8c1b",
+        "avifSha256": "b7348e4b27b6743b70adc71f37c34406f705bfc314062fea913a4efc84224e34"
+      }
+    },
+    "js_liuyuan": {
+      "source": "assets/colored/js_liuyuan.png",
+      "sourceSha256": "c88d497fd2a90c9ede3933966a469ba1a624d5d6a6ea53a96ad801d123110f56",
+      "sourceBytes": 2098298,
+      "input": "assets/colored-transparent/js_liuyuan.png",
+      "inputSha256": "8f3b419c54fb921c8f5c464b2f0b97f7bacf86b8ef8470ecca1f49f9bd5a48fc",
+      "inputBytes": 1986061,
+      "src": "assets/colored-transparent-avif/js_liuyuan.avif",
+      "sha256": "5945fe4f876684546a871060387459d52246601b6e11127a99efb611838519e9",
+      "bytes": 262659,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 973553,
+        "opaquePixels": 582338,
+        "meanError": 0.013510386149088541,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.193,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c88d497fd2a90c9ede3933966a469ba1a624d5d6a6ea53a96ad801d123110f56",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.259Z",
+        "sourceSha256": "c88d497fd2a90c9ede3933966a469ba1a624d5d6a6ea53a96ad801d123110f56",
+        "inputSha256": "8f3b419c54fb921c8f5c464b2f0b97f7bacf86b8ef8470ecca1f49f9bd5a48fc",
+        "avifSha256": "5945fe4f876684546a871060387459d52246601b6e11127a99efb611838519e9"
+      }
+    },
+    "js_baodai": {
+      "source": "assets/colored/js_baodai.png",
+      "sourceSha256": "00b93e51bcadf9658ff3f9191686d83f6240f746c44046dd00e178018f7a523a",
+      "sourceBytes": 1041252,
+      "input": "assets/colored-transparent/js_baodai.png",
+      "inputSha256": "d2a0e0e973d24c568425d3478fc2d5bf346a0e3eb2c2c379a64dc14b7ee3a13c",
+      "inputBytes": 819858,
+      "src": "assets/colored-transparent-avif/js_baodai.avif",
+      "sha256": "9e3cc4cdfd003803a9f3c381c95e8c8ce045249dbee5d0fd01b17b1ae3a8ba0a",
+      "bytes": 54686,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1478259,
+        "opaquePixels": 89435,
+        "meanError": 0.004149119059244792,
+        "maxError": 8
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.332,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "00b93e51bcadf9658ff3f9191686d83f6240f746c44046dd00e178018f7a523a",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.266Z",
+        "sourceSha256": "00b93e51bcadf9658ff3f9191686d83f6240f746c44046dd00e178018f7a523a",
+        "inputSha256": "d2a0e0e973d24c568425d3478fc2d5bf346a0e3eb2c2c379a64dc14b7ee3a13c",
+        "avifSha256": "9e3cc4cdfd003803a9f3c381c95e8c8ce045249dbee5d0fd01b17b1ae3a8ba0a"
+      }
+    },
+    "js_zhaoguan": {
+      "source": "assets/colored/js_zhaoguan.png",
+      "sourceSha256": "b37262f2a6f912827025d92c87eb4849c1d0df710a58d06de5edc2c80d4a1fec",
+      "sourceBytes": 2086265,
+      "input": "assets/colored-transparent/js_zhaoguan.png",
+      "inputSha256": "2bf02dc34cc5084f617eee18be5595ca9b6ef5ed73b656bac1da76d2e83b3705",
+      "inputBytes": 1960448,
+      "src": "assets/colored-transparent-avif/js_zhaoguan.avif",
+      "sha256": "78be76db479d94ad3911b563392a7a3ef49d7f6c59c3a4c106927f9f9bb17174",
+      "bytes": 228154,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 975150,
+        "opaquePixels": 585748,
+        "meanError": 0.009541829427083334,
+        "maxError": 10
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.275,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "b37262f2a6f912827025d92c87eb4849c1d0df710a58d06de5edc2c80d4a1fec",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.269Z",
+        "sourceSha256": "b37262f2a6f912827025d92c87eb4849c1d0df710a58d06de5edc2c80d4a1fec",
+        "inputSha256": "2bf02dc34cc5084f617eee18be5595ca9b6ef5ed73b656bac1da76d2e83b3705",
+        "avifSha256": "78be76db479d94ad3911b563392a7a3ef49d7f6c59c3a4c106927f9f9bb17174"
+      }
+    },
+    "js_geyuan": {
+      "source": "assets/colored/js_geyuan.png",
+      "sourceSha256": "bf1b71aee3633417834bbcb11bdb5e05232959c2b63777250de9d1a9029be26d",
+      "sourceBytes": 2082325,
+      "input": "assets/colored-transparent/js_geyuan.png",
+      "inputSha256": "af48d890bf0cceb29cacd38001e98d0ccae1fe7c59ff213ff439566482764033",
+      "inputBytes": 1903681,
+      "src": "assets/colored-transparent-avif/js_geyuan.avif",
+      "sha256": "c707a241d530089c9e9f881ec879fbeef6f2f2dba8dc18c53a22975498eb23c1",
+      "bytes": 261889,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1056970,
+        "opaquePixels": 489341,
+        "meanError": 0.021055857340494793,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 6.383,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "bf1b71aee3633417834bbcb11bdb5e05232959c2b63777250de9d1a9029be26d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.275Z",
+        "sourceSha256": "bf1b71aee3633417834bbcb11bdb5e05232959c2b63777250de9d1a9029be26d",
+        "inputSha256": "af48d890bf0cceb29cacd38001e98d0ccae1fe7c59ff213ff439566482764033",
+        "avifSha256": "c707a241d530089c9e9f881ec879fbeef6f2f2dba8dc18c53a22975498eb23c1"
+      }
+    },
+    "js_heyuan": {
+      "source": "assets/colored/js_heyuan.png",
+      "sourceSha256": "6a8561921574967a05faf6cc7339e914fb8cb09d144285f25514db66f823c66f",
+      "sourceBytes": 1888248,
+      "input": "assets/colored-transparent/js_heyuan.png",
+      "inputSha256": "625d551a7daec0d292cbbf3bb455c7e2b8f7d3cb1ef6dfcdd51f9c12323c2116",
+      "inputBytes": 1707102,
+      "src": "assets/colored-transparent-avif/js_heyuan.avif",
+      "sha256": "7fdedf822c0d7bf65a6cc97f8b2920124c3ac7e2ab5d4b6aa7caaf0cdb7caa76",
+      "bytes": 206207,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 947979,
+        "opaquePixels": 612249,
+        "meanError": 0.010006586710611979,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.693,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "6a8561921574967a05faf6cc7339e914fb8cb09d144285f25514db66f823c66f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.281Z",
+        "sourceSha256": "6a8561921574967a05faf6cc7339e914fb8cb09d144285f25514db66f823c66f",
+        "inputSha256": "625d551a7daec0d292cbbf3bb455c7e2b8f7d3cb1ef6dfcdd51f9c12323c2116",
+        "avifSha256": "7fdedf822c0d7bf65a6cc97f8b2920124c3ac7e2ab5d4b6aa7caaf0cdb7caa76"
+      }
+    },
+    "js_nanchao_stone": {
+      "source": "assets/colored/js_nanchao_stone.png",
+      "sourceSha256": "d84a74de7cd49db9a4ffd4db9f58af3b8daf1da953dde30b29846fe9a4428b3f",
+      "sourceBytes": 2259026,
+      "input": "assets/colored-transparent/js_nanchao_stone.png",
+      "inputSha256": "5997f461f34e7e6c4a498e540c901372ac90badb4ef39223f5fbad3d35bec3ac",
+      "inputBytes": 2157341,
+      "src": "assets/colored-transparent-avif/js_nanchao_stone.avif",
+      "sha256": "2b917ff1f9dee00e8f75c8071cdff96ada7ba68e230f06cee8b4a11592ad180d",
+      "bytes": 264871,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 861654,
+        "opaquePixels": 702133,
+        "meanError": 0.0075295766194661455,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 5.658,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d84a74de7cd49db9a4ffd4db9f58af3b8daf1da953dde30b29846fe9a4428b3f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_user",
+        "reviewer": "user",
+        "reviewed_at": "2026-09-29T17:57:45.287Z",
+        "sourceSha256": "d84a74de7cd49db9a4ffd4db9f58af3b8daf1da953dde30b29846fe9a4428b3f",
+        "inputSha256": "5997f461f34e7e6c4a498e540c901372ac90badb4ef39223f5fbad3d35bec3ac",
+        "avifSha256": "2b917ff1f9dee00e8f75c8071cdff96ada7ba68e230f06cee8b4a11592ad180d"
       }
     },
     "fj_luoyang": {
@@ -17513,6 +18381,138 @@
         "qualityMode": "prototype"
       },
       "qualityMode": "prototype"
+    },
+    "longmenshiku": {
+      "source": "assets/color-studies/v1/longmenshiku-colored.png",
+      "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",
+      "sourceBytes": 2088038,
+      "input": "assets/colored-transparent/longmenshiku.png",
+      "inputSha256": "cc8dd191a7d73927f3de6942f8e1650c3308712b5a8788a28fd09fe53d262682",
+      "inputBytes": 2062664,
+      "src": "assets/colored-transparent-avif/longmenshiku.avif",
+      "sha256": "08428bad8d99fe2935970b137a6487f83b4cbd3982558c011fb9c6fa32adc628",
+      "bytes": 212217,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 906294,
+        "opaquePixels": 660625,
+        "meanError": 0.004634857177734375,
+        "maxError": 5
+      },
+      "extraction": {
+        "matteRgb": [
+          13,
+          11,
+          9
+        ],
+        "borderPolicy": "dominant",
+        "borderMatchFraction": 1,
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "transparentPixels": 909591,
+        "opaquePixels": 663273,
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 2.203,
+      "review": {
+        "reviewer": "user",
+        "date": "2026-09-16",
+        "statement": "都没问题 先替换上吧。",
+        "avifSha256": "08428bad8d99fe2935970b137a6487f83b4cbd3982558c011fb9c6fa32adc628",
+        "inputSha256": "cc8dd191a7d73927f3de6942f8e1650c3308712b5a8788a28fd09fe53d262682"
+      }
+    },
+    "foguang": {
+      "source": "assets/color-studies/v1/foguang-colored.png",
+      "sourceSha256": "6036e9490cda1f1bd48e4e2cb4fc3f2d21a1df0fbe14ccc8a9aebd64f7372458",
+      "sourceBytes": 1898410,
+      "input": "assets/colored-transparent/foguang.png",
+      "inputSha256": "a8b2031e6d7d2aab87b45896dc55407b6d458f32c00f9657b3a9fb16865967e7",
+      "inputBytes": 1820439,
+      "src": "assets/colored-transparent-avif/foguang.avif",
+      "sha256": "9e6ac732be2b17029b59e58306874b51c615ecea2d53d3b49b71b87e1d26c424",
+      "bytes": 174992,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 991836,
+        "opaquePixels": 576993,
+        "meanError": 0.002857208251953125,
+        "maxError": 4
+      },
+      "extraction": {
+        "matteRgb": [
+          13,
+          12,
+          10
+        ],
+        "borderPolicy": "dominant",
+        "borderMatchFraction": 1,
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "transparentPixels": 993523,
+        "opaquePixels": 579341,
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 2.247,
+      "review": {
+        "reviewer": "user",
+        "date": "2026-09-16",
+        "statement": "都没问题 先替换上吧。",
+        "avifSha256": "9e6ac732be2b17029b59e58306874b51c615ecea2d53d3b49b71b87e1d26c424",
+        "inputSha256": "a8b2031e6d7d2aab87b45896dc55407b6d458f32c00f9657b3a9fb16865967e7"
+      }
+    },
+    "yingxian": {
+      "source": "assets/color-studies/v1/yingxian-colored.png",
+      "sourceSha256": "99b32e738ac658b5423f496261c97dd8bb1247b88ee8c75476b0a808a75bba3e",
+      "sourceBytes": 2250159,
+      "input": "assets/colored-transparent/yingxian.png",
+      "inputSha256": "dfae83ff14b25b5a1901608d805c685e1d788da17737db9458fc7c7c55e6f704",
+      "inputBytes": 2308581,
+      "src": "assets/colored-transparent-avif/yingxian.avif",
+      "sha256": "50629500780d512ed9f0c7b029ee9ae0c26c8b00f1e857ee64b3bff2732f5fde",
+      "bytes": 266203,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 808230,
+        "opaquePixels": 757557,
+        "meanError": 0.0053297678629557295,
+        "maxError": 5
+      },
+      "extraction": {
+        "matteRgb": [
+          13,
+          12,
+          9
+        ],
+        "borderPolicy": "dominant",
+        "borderMatchFraction": 1,
+        "tolerancePerChannel": 12,
+        "backgroundSeeds": [],
+        "transparentPixels": 811808,
+        "opaquePixels": 761056,
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_user",
+      "processingSeconds": 2.407,
+      "review": {
+        "reviewer": "user",
+        "date": "2026-09-16",
+        "statement": "都没问题 先替换上吧。",
+        "avifSha256": "50629500780d512ed9f0c7b029ee9ae0c26c8b00f1e857ee64b3bff2732f5fde",
+        "inputSha256": "dfae83ff14b25b5a1901608d805c685e1d788da17737db9458fc7c7c55e6f704"
+      }
     }
   }
 }

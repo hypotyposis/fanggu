@@ -1,0 +1,53 @@
+{
+  "id": "zj_guyue",
+  "subject": "义乌古月桥现存单孔石拱桥",
+  "caption": [
+    "义乌古月桥",
+    "宋代石桥 · 单孔"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Guyue_Bridge_05_2022-02.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Guyue_Bridge_05_2022-02.jpg/1280px-Guyue_Bridge_05_2022-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guyue_Bridge_05_2022-02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Guyue_Bridge_05_2022-02.jpg/1280px-Guyue_Bridge_05_2022-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2022-02-26 10:12:09",
+      "reference_file": "assets/references/zj_guyue-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 853
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_guyue-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The complete one-span stone arch bridge across the shallow stream, broad arch ring, low stepped/sloping deck and modest parapet. Keep the asymmetry of the present bridge, no extra spans.",
+  "generated_file": "assets/generated/zj_guyue.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The complete one-span stone arch bridge across the shallow stream, broad arch ring, low stepped/sloping deck and modest parapet. Keep the asymmetry of the present bridge, no extra spans.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-96789eba-81e9-4341-9602-06daa4d54ca3.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-96789eba-81e9-4341-9602-06daa4d54ca3.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9ce893e7bac9b4fa31f6c22c525412860c59f7d521927a065786744af9ae7860",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

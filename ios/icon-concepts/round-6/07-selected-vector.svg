@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <g id="left-arms">
+      <!-- Three projecting timber arms: lacquered upper faces and gilded cut ends. -->
+      <path d="M174 290 230 269v65c61 40 135 70 216 99v57C338 458 250 414 174 365Z" fill="#C52A21"/>
+      <path d="M174 365c70 54 164 94 272 125v32c-112-23-214-71-272-134Z" fill="#F3B840"/>
+      <path d="M174 290 230 269v65l-56 31Z" fill="#F7C04D"/>
+
+      <path d="M81 419 132 395v64c54 47 139 83 272 128l42 15v58c-165-49-292-104-365-165Z" fill="#C52A21"/>
+      <path d="M81 495c82 69 211 124 365 165v34c-162-36-296-100-365-173Z" fill="#F3B840"/>
+      <path d="M81 419 132 395v64l-51 36Z" fill="#F7C04D"/>
+
+      <path d="M126 582 189 558v63c67 44 152 77 257 108v58c-135-33-249-83-320-143Z" fill="#C52A21"/>
+      <path d="M126 644c77 63 188 111 320 143v32c-141-30-254-87-320-153Z" fill="#F3B840"/>
+      <path d="M126 582 189 558v63l-63 23Z" fill="#F7C04D"/>
+    </g>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#080808"/>
+
+  <!-- The two planes of the eave make the corner recognizable at icon size. -->
+  <path d="M512 54 55 260v71l457-206Z" fill="#F7B93D"/>
+  <path d="M512 54 969 260v71L512 125Z" fill="#C5221B"/>
+  <path d="M55 331 512 125v51L111 358Z" fill="#A91716"/>
+  <path d="M969 331 512 125v51l401 182Z" fill="#8F1011"/>
+
+  <use href="#left-arms"/>
+  <use href="#left-arms" transform="translate(1024 0) scale(-1 1)"/>
+
+  <!-- A single pier and three dou blocks clarify the load path at small sizes. -->
+  <path d="M480 286h64v514h-64z" fill="#F5B940"/>
+  <path d="M512 286h32v514h-32z" fill="#C3261E"/>
+
+  <path d="M421 217 512 178l91 39v75l-91 39-91-39Z" fill="#F7BE46"/>
+  <path d="M512 178 603 217v75l-91 39Z" fill="#C3261E"/>
+  <path d="M421 292 512 331l91-39-91 60Z" fill="#8E1010"/>
+
+  <path d="M421 420 512 381l91 39v75l-91 39-91-39Z" fill="#F7BE46"/>
+  <path d="M512 381 603 420v75l-91 39Z" fill="#C3261E"/>
+  <path d="M421 495 512 534l91-39-91 58Z" fill="#8E1010"/>
+
+  <path d="M421 633 512 594l91 39v75l-91 39-91-39Z" fill="#F7BE46"/>
+  <path d="M512 594 603 633v75l-91 39Z" fill="#C3261E"/>
+  <path d="M421 708 512 747l91-39-91 58Z" fill="#8E1010"/>
+
+  <path d="M427 781 512 742l85 39v65l-85 43-85-43Z" fill="#F5B63E"/>
+  <path d="M512 742 597 781v65l-85 43Z" fill="#DE9D32"/>
+  <path d="M427 846 512 889l85-43-85 64Z" fill="#B51D18"/>
+</svg>

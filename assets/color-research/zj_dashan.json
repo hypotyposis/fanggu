@@ -1,0 +1,58 @@
+{
+  "id": "zj_dashan",
+  "name": "绍兴大善寺塔",
+  "subject": "绍兴大善寺塔现存六面七层塔身",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/zj_dashan.png",
+    "assets/references/zj_dashan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and geometry/composition master. Preserve its silhouette, proportions, every bridge span/tower storey/opening, viewpoint, repairs, and all outer margins. Image 2 is documentary photo of this real monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible contours and restrained matte mineral-pigment planes, not its warm gold palette or dark background. Color the existing line drawing, do not redesign or add features. Thin charcoal contour lines, gentle flat material shading and sparse fine texture INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Original aspect ratio, one image only. Materials observed: Pale buff-grey masonry walls, medium to charcoal grey eave bands, dark niche openings and weathered grey stone base. No colorful tile or red repaint.",
+  "material_observations": "Pale buff-grey masonry walls, medium to charcoal grey eave bands, dark niche openings and weathered grey stone base. No colorful tile or red repaint.",
+  "references": {
+    "original_record": "assets/research/zj_dashan.json",
+    "selected_photo_files": [
+      "assets/references/zj_dashan-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Shaoxing_Dashan_pagoda.JPG",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Shaoxing_Dashan_pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "author": "Gisling",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "date": "2008-11",
+        "reference_file": "assets/references/zj_dashan-photo.jpg",
+        "reference_dimensions": {
+          "width": 892,
+          "height": 1375
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/zj_dashan.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-56283c64-f806-4137-baf6-6b1d900d4729.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "169a0fc70b29eaa6f0c0aa49e366e52efb63c3207210f760fb8f3cfae0304cd2",
+    "seeds": []
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-29T17:57:45.173Z",
+    "sourceSha256": "169a0fc70b29eaa6f0c0aa49e366e52efb63c3207210f760fb8f3cfae0304cd2",
+    "inputSha256": "7bc11f549eb6e584b3ce36afa4130dcb3d447f9bd3ee3b3a1c0a0d61f15e4afe",
+    "avifSha256": "a7f09d1c0b550734fbc284b8e6187a49839925e7c822f743986a509c0b7dd6cc"
+  }
+}

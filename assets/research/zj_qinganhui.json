@@ -1,0 +1,53 @@
+{
+  "id": "zj_qinganhui",
+  "subject": "宁波庆安会馆前戏台与回廊内景",
+  "caption": [
+    "庆安会馆",
+    "清咸丰 · 前戏台局部"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Qingan_Association_Hall.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Qingan_Association_Hall.jpg/960px-Qingan_Association_Hall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Qingan_Association_Hall.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Qingan_Association_Hall.jpg/960px-Qingan_Association_Hall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jiong Sheng",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2007-04-19 15:35:09",
+      "reference_file": "assets/references/zj_qinganhui-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_qinganhui-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: A view through the timber passage into the ornately carved timber stage and facing eaves of Qing'an Guild Hall. Preserve the pair of near columns and layered roof silhouettes in the photo, simplifying dense carvings; depict a clearly identified local view, not a full complex.",
+  "generated_file": "assets/generated/zj_qinganhui.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: A view through the timber passage into the ornately carved timber stage and facing eaves of Qing'an Guild Hall. Preserve the pair of near columns and layered roof silhouettes in the photo, simplifying dense carvings; depict a clearly identified local view, not a full complex.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-e85feb90-7490-4757-b03d-77f05b5f736d.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-e85feb90-7490-4757-b03d-77f05b5f736d.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b8accf351554a225d12dd10fbcbe9fe4a0ffb4086e0b343b3ba18cd0b252fe96",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

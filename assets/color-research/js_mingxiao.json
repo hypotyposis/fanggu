@@ -1,0 +1,58 @@
+{
+  "id": "js_mingxiao",
+  "name": "明孝陵方城明楼",
+  "subject": "南京明孝陵方城明楼正面与石城",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/js_mingxiao.png",
+    "assets/references/js_mingxiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and geometry/composition master. Preserve its silhouette, proportions, every bridge span/tower storey/opening, viewpoint, repairs, and all outer margins. Image 2 is documentary photo of this real monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible contours and restrained matte mineral-pigment planes, not its warm gold palette or dark background. Color the existing line drawing, do not redesign or add features. Thin charcoal contour lines, gentle flat material shading and sparse fine texture INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Original aspect ratio, one image only. Materials observed: Weathered grey stone Fangcheng body with dark joints, subdued red hall walls and ochre-gold roof tiles, deep gateway opening.",
+  "material_observations": "Weathered grey stone Fangcheng body with dark joints, subdued red hall walls and ochre-gold roof tiles, deep gateway opening.",
+  "references": {
+    "original_record": "assets/research/js_mingxiao.json",
+    "selected_photo_files": [
+      "assets/references/js_mingxiao-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E6%98%8E%E5%AD%9D%E9%99%B5%E6%99%AF%E5%8C%BA%E6%96%B9%E5%9F%8E%E6%98%8E%E6%A5%BC_-_panoramio.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/%E5%8D%97%E4%BA%AC%E6%98%8E%E5%AD%9D%E9%99%B5%E6%99%AF%E5%8C%BA%E6%96%B9%E5%9F%8E%E6%98%8E%E6%A5%BC_-_panoramio.jpg/1280px-%E5%8D%97%E4%BA%AC%E6%98%8E%E5%AD%9D%E9%99%B5%E6%99%AF%E5%8C%BA%E6%96%B9%E5%9F%8E%E6%98%8E%E6%A5%BC_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "helkonig",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "date": "Taken on 22 April 2014",
+        "reference_file": "assets/references/js_mingxiao-photo.jpg",
+        "reference_dimensions": {
+          "width": 1280,
+          "height": 1707
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/js_mingxiao.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-58c3d95e-7037-45ee-af20-f4f6459ec491.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5bfdec4d83f35cdd297a567c42b8197d9004049e95292fde8deb06a9afb61dcf",
+    "seeds": []
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-29T17:57:45.237Z",
+    "sourceSha256": "5bfdec4d83f35cdd297a567c42b8197d9004049e95292fde8deb06a9afb61dcf",
+    "inputSha256": "100190f5aed6c8833bbaec1bccb20622777084a30a558d465339178963fa5c37",
+    "avifSha256": "444becabacb0336703005ffbad9c785feb22ce37f36a018ecafecb031a4d4aaf"
+  }
+}

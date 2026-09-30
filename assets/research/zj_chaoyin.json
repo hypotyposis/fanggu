@@ -1,0 +1,53 @@
+{
+  "id": "zj_chaoyin",
+  "subject": "湖州潮音桥现存三孔石拱桥",
+  "caption": [
+    "湖州潮音桥",
+    "明代重建 · 三孔桥"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Chaoyin_Bridge_09_2014-04.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chaoyin_Bridge_09_2014-04.jpg/960px-Chaoyin_Bridge_09_2014-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chaoyin_Bridge_09_2014-04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chaoyin_Bridge_09_2014-04.jpg/960px-Chaoyin_Bridge_09_2014-04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2014-04-05 09:19:11",
+      "reference_file": "assets/references/zj_chaoyin-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_chaoyin-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The three-arch bridge: large central stone arch and two lower side arches, curved parapet and shallow stone deck steps. The photo cuts the far side; complete only the documented three-arch bridge geometry, not extra spans or buildings.",
+  "generated_file": "assets/generated/zj_chaoyin.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The three-arch bridge: large central stone arch and two lower side arches, curved parapet and shallow stone deck steps. The photo cuts the far side; complete only the documented three-arch bridge geometry, not extra spans or buildings.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-9b2ab97c-f7e0-4b47-ae53-303d9ad1bdc1.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-9b2ab97c-f7e0-4b47-ae53-303d9ad1bdc1.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8307cda07b73243cdadf1e1a19b0b853f07f1c252b647c2183b59913ea89f29b",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

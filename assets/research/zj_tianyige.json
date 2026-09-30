@@ -1,0 +1,53 @@
+{
+  "id": "zj_tianyige",
+  "subject": "宁波天一阁藏书楼正面",
+  "caption": [
+    "天一阁",
+    "明嘉靖 · 藏书楼"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-23-22.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ningbo_Tianyige_2013.07.28_09-23-22.jpg/960px-Ningbo_Tianyige_2013.07.28_09-23-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-23-22.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Ningbo_Tianyige_2013.07.28_09-23-22.jpg/960px-Ningbo_Tianyige_2013.07.28_09-23-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-07-28 09:23:22",
+      "reference_file": "assets/references/zj_tianyige-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_tianyige-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The long two-level book-storage pavilion, one broad dark-tile gabled roof above a deep wooden colonnade and narrow upper wall strip. Draw the complete front and side returns, excluding trees and courtyard furniture.",
+  "generated_file": "assets/generated/zj_tianyige.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The long two-level book-storage pavilion, one broad dark-tile gabled roof above a deep wooden colonnade and narrow upper wall strip. Draw the complete front and side returns, excluding trees and courtyard furniture.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-4dc35814-0090-44e0-bd28-46b1c0dd075e.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-4dc35814-0090-44e0-bd28-46b1c0dd075e.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4082e4407bcf7a8f29b4d0214227be8facf079fc654fd4e0f9593f7fa1c0b78f",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

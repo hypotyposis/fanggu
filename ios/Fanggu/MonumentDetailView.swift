@@ -49,9 +49,16 @@ struct MonumentDetailView: View {
                             .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
                     }
                 }
-                ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
-                            height: 320, reveal: reveal, stamping: completingVisit)
-                    .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+                VStack(spacing: 8) {
+                    ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
+                                height: 320, reveal: reveal, stamping: completingVisit)
+                        .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+                        .accessibilityIdentifier("detail-artwork")
+                    if record.status != .visited || completingVisit {
+                        ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
+                            .accessibilityIdentifier("detail-arrival-slider")
+                    }
+                }
                 if !site.captions.isEmpty {
                     Text(site.captions.joined(separator: " · "))
                         .font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
@@ -94,11 +101,6 @@ struct MonumentDetailView: View {
                     Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     Text(record.status.title + (record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
                         .font(FangguFont.mono(12)).foregroundStyle(record.status.textColor)
-                    if record.status != .visited || completingVisit {
-                        Text("也可以向右拖动印章，直接完成到访。")
-                            .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
-                        ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
-                    }
                     if record.status == .visited {
                         Button("移至心愿单") { setStatus(.wishlist) }
                             .buttonStyle(FangguOutlineButton())

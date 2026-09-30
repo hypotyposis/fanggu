@@ -1,0 +1,53 @@
+{
+  "id": "js_chaotiangong",
+  "subject": "南京朝天宫清代大成殿正面与石阶",
+  "caption": [
+    "朝天宫大成殿",
+    "清同治 · 大成殿"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF,_2009-01-28.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF%2C_2009-01-28.jpg/960px-%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF%2C_2009-01-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF,_2009-01-28.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF%2C_2009-01-28.jpg/960px-%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF%2C_2009-01-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "江上清风1961",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "Taken on 28 January 2009",
+      "reference_file": "assets/references/js_chaotiangong-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_chaotiangong-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The imposing seven-bay Qing hall with one wide golden tile hipped roof, dark red front columns, central stone stair and flanking rails. The current hall is Qing reconstruction, not an imagined Ming Daoist palace. Exclude trees and lanterns.",
+  "generated_file": "assets/generated/js_chaotiangong.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The imposing seven-bay Qing hall with one wide golden tile hipped roof, dark red front columns, central stone stair and flanking rails. The current hall is Qing reconstruction, not an imagined Ming Daoist palace. Exclude trees and lanterns.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-c6409045-ed6b-4d26-9c17-312ae459ef4f.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-c6409045-ed6b-4d26-9c17-312ae459ef4f.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "23da046b2ae89ccf5cf6026cc8d6511da1c7d996c7d1dd4399929dde9414f1bd",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

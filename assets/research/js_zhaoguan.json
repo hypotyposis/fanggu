@@ -1,0 +1,53 @@
+{
+  "id": "js_zhaoguan",
+  "subject": "镇江西津渡昭关石塔及下部过街券门",
+  "caption": [
+    "昭关石塔",
+    "元代 · 过街石塔"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Zhao_guan_Tower_2011-10.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Zhao_guan_Tower_2011-10.JPG/960px-Zhao_guan_Tower_2011-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zhao_guan_Tower_2011-10.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Zhao_guan_Tower_2011-10.JPG/960px-Zhao_guan_Tower_2011-10.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2011-10-31",
+      "reference_file": "assets/references/js_zhaoguan-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1280
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_zhaoguan-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The short white-grey Lama-style stone stupa mounted on a broad rectangular stone platform over a walk-through arch. Preserve the complete layered stupa finial and the full open lower passage; no surrounding shop walls.",
+  "generated_file": "assets/generated/js_zhaoguan.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The short white-grey Lama-style stone stupa mounted on a broad rectangular stone platform over a walk-through arch. Preserve the complete layered stupa finial and the full open lower passage; no surrounding shop walls.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-90eedef9-f4c8-41cb-af4a-395a42decaef.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-90eedef9-f4c8-41cb-af4a-395a42decaef.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ab6fa09202f0290e3b11b75b871d68169a54e7ed8b983691d1d63f98c0746c4b",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

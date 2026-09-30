@@ -1,0 +1,53 @@
+{
+  "id": "zj_daan",
+  "subject": "义乌大安寺塔现存六面五层塔身",
+  "caption": [
+    "义乌大安寺塔",
+    "北宋 · 六面五层砖木塔"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg/1280px-The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg/1280px-The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-08-01 16:23:20",
+      "reference_file": "assets/references/zj_daan-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 1929
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_daan-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: Five hexagonal storeys with offset window and niche openings, projecting bracketed brick eaves, weathered uneven surfaces, flat polygonal base and the later small dome-like top. Keep the current damaged and repaired condition, no invented timber roof.",
+  "generated_file": "assets/generated/zj_daan.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: Five hexagonal storeys with offset window and niche openings, projecting bracketed brick eaves, weathered uneven surfaces, flat polygonal base and the later small dome-like top. Keep the current damaged and repaired condition, no invented timber roof.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-7ea2c62c-7a93-4226-aa47-e2ecb50ef2e4.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-7ea2c62c-7a93-4226-aa47-e2ecb50ef2e4.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8e6c96af4b589385c7bf8dd7b9691b4bfb6544b59b4a4f1b3025d8ce130456d6",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

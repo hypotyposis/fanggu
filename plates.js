@@ -4376,6 +4376,246 @@ const PLATES = {
       "江户时代 · 1639年再建"
     ]
   },
+  "zj_tianyige": {
+    "src": "assets/plates/zj_tianyige.png",
+    "alt": "宁波天一阁藏书楼正面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "天一阁",
+      "明嘉靖 · 藏书楼"
+    ]
+  },
+  "zj_qinganhui": {
+    "src": "assets/plates/zj_qinganhui.png",
+    "alt": "宁波庆安会馆前戏台与回廊内景 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "庆安会馆",
+      "清咸丰 · 前戏台局部"
+    ]
+  },
+  "zj_yongan": {
+    "src": "assets/plates/zj_yongan.png",
+    "alt": "安吉永安寺塔（灵芝塔）现存全塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "安吉永安寺塔",
+      "五代至南宋 · 砖塔"
+    ]
+  },
+  "zj_daan": {
+    "src": "assets/plates/zj_daan.png",
+    "alt": "义乌大安寺塔现存六面五层塔身 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "义乌大安寺塔",
+      "北宋 · 六面五层砖木塔"
+    ]
+  },
+  "zj_dashan": {
+    "src": "assets/plates/zj_dashan.png",
+    "alt": "绍兴大善寺塔现存六面七层塔身 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "绍兴大善寺塔",
+      "南宋 · 六面七层"
+    ]
+  },
+  "zj_chaoyin": {
+    "src": "assets/plates/zj_chaoyin.png",
+    "alt": "湖州潮音桥现存三孔石拱桥 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "湖州潮音桥",
+      "明代重建 · 三孔桥"
+    ]
+  },
+  "zj_yuyaotongji": {
+    "src": "assets/plates/zj_yuyaotongji.png",
+    "alt": "余姚通济桥现存三孔石拱桥 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "余姚通济桥",
+      "清代现存桥 · 三孔"
+    ]
+  },
+  "zj_guyue": {
+    "src": "assets/plates/zj_guyue.png",
+    "alt": "义乌古月桥现存单孔石拱桥 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "义乌古月桥",
+      "宋代石桥 · 单孔"
+    ]
+  },
+  "zj_library_old": {
+    "src": "assets/plates/zj_library_old.png",
+    "alt": "浙江图书馆孤山馆舍红楼及前廊局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "浙江图书馆旧址",
+      "孤山红楼 · 近代"
+    ]
+  },
+  "zj_shinantang": {
+    "src": "assets/plates/zj_shinantang.png",
+    "alt": "金华石楠塘徐氏宗祠现存门楼与两侧白墙 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "石楠塘徐氏宗祠",
+      "明清宗祠 · 门楼"
+    ]
+  },
+  "js_mingxiao": {
+    "src": "assets/plates/js_mingxiao.png",
+    "alt": "南京明孝陵方城明楼正面与石城 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "明孝陵方城明楼",
+      "明代陵寝 · 方城明楼"
+    ]
+  },
+  "js_zhongshan": {
+    "src": "assets/plates/js_zhongshan.png",
+    "alt": "南京中山陵祭堂与前方主要石阶 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "中山陵祭堂",
+      "民国 · 1929年"
+    ]
+  },
+  "js_nanjingwall": {
+    "src": "assets/plates/js_nanjingwall.png",
+    "alt": "南京城墙中华门北立面中央城门及相连墙体 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "南京城墙 · 中华门",
+      "明代城门 · 局部"
+    ]
+  },
+  "js_chaotiangong": {
+    "src": "assets/plates/js_chaotiangong.png",
+    "alt": "南京朝天宫清代大成殿正面与石阶 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "朝天宫大成殿",
+      "清同治 · 大成殿"
+    ]
+  },
+  "js_liuyuan": {
+    "src": "assets/plates/js_liuyuan.png",
+    "alt": "苏州留园冠云峰及后方亭阁局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "留园冠云峰",
+      "清代园林 · 局部"
+    ]
+  },
+  "js_baodai": {
+    "src": "assets/plates/js_baodai.png",
+    "alt": "苏州宝带桥现存连续石拱桥 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "苏州宝带桥",
+      "明清重修 · 多孔石桥"
+    ]
+  },
+  "js_zhaoguan": {
+    "src": "assets/plates/js_zhaoguan.png",
+    "alt": "镇江西津渡昭关石塔及下部过街券门 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "昭关石塔",
+      "元代 · 过街石塔"
+    ]
+  },
+  "js_geyuan": {
+    "src": "assets/plates/js_geyuan.png",
+    "alt": "扬州个园假山、亭阁与水边局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "个园假山",
+      "清嘉庆 · 园林局部"
+    ]
+  },
+  "js_heyuan": {
+    "src": "assets/plates/js_heyuan.png",
+    "alt": "扬州何园船厅正面与相连回廊局部 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "何园船厅",
+      "清光绪 · 船厅局部"
+    ]
+  },
+  "js_nanchao_stone": {
+    "src": "assets/plates/js_nanchao_stone.png",
+    "alt": "南京萧景墓神道东辟邪石刻 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b58d67",
+    "tint": false,
+    "caption": [
+      "萧景墓石刻",
+      "南朝梁 · 东辟邪"
+    ]
+  },
   "fj_luoyang": {
     "src": "assets/plates/fj_luoyang.png",
     "alt": "泉州洛阳桥现存石梁桥代表性一段 · 线稿",

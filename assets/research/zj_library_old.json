@@ -1,0 +1,53 @@
+{
+  "id": "zj_library_old",
+  "subject": "浙江图书馆孤山馆舍红楼及前廊局部",
+  "caption": [
+    "浙江图书馆旧址",
+    "孤山红楼 · 近代"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20260424_Former_Site_of_Zhejiang_Library_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/20260424_Former_Site_of_Zhejiang_Library_01.jpg/960px-20260424_Former_Site_of_Zhejiang_Library_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260424_Former_Site_of_Zhejiang_Library_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/20260424_Former_Site_of_Zhejiang_Library_01.jpg/960px-20260424_Former_Site_of_Zhejiang_Library_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2026-04-24 17:46:39",
+      "reference_file": "assets/references/zj_library_old-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_library_old-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The early twentieth-century red-brick library pavilion at Gushan with its two-storey arcaded facade and restrained Western-influenced architectural details. Draw the visible central facade as a local view, remove trees hiding the building, and do not substitute a modern Zhejiang Library.",
+  "generated_file": "assets/generated/zj_library_old.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The early twentieth-century red-brick library pavilion at Gushan with its two-storey arcaded facade and restrained Western-influenced architectural details. Draw the visible central facade as a local view, remove trees hiding the building, and do not substitute a modern Zhejiang Library.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-190605c7-10ff-418e-8bdf-6fdab254ea70.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-190605c7-10ff-418e-8bdf-6fdab254ea70.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1d637786a71582502789523325d82406f4c2e3624f80cd7752644818a8f71b56",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

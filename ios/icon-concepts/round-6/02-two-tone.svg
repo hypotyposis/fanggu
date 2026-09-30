@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <g id="left" fill="#F3DCAD">
+      <path d="M195 426h81v47h100l120 65v62l-137-79H195Z"/>
+      <path d="M293 565h75v38h67l61 36v60l-81-53H293Z"/>
+      <path d="M389 702h66v33h41v58l-67-43h-40Z"/>
+    </g>
+  </defs>
+  <rect width="1024" height="1024" fill="#7E2C2A"/>
+  <path d="M113 328 512 143l399 185v75L512 217 113 403Z" fill="#F3DCAD"/>
+  <path d="M512 216v187l-399 0 399-186 399 186h-81L512 255 194 403h-81" fill="#7E2C2A"/>
+  <path d="M471 272 512 252l41 20v85l-41 19-41-19Z" fill="#F3DCAD"/>
+  <use href="#left"/>
+  <use href="#left" transform="translate(1024 0) scale(-1 1)"/>
+  <path d="M477 393h70v79h-70zM483 526h58v66h-58zM485 626h54v66h-54zM487 732h50v65h-50zM480 813h64v69h-64z" fill="#F3DCAD"/>
+</svg>

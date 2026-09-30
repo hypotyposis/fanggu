@@ -1,0 +1,53 @@
+{
+  "id": "zj_dashan",
+  "subject": "绍兴大善寺塔现存六面七层塔身",
+  "caption": [
+    "绍兴大善寺塔",
+    "南宋 · 六面七层"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Shaoxing_Dashan_pagoda.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Shaoxing_Dashan_pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shaoxing_Dashan_pagoda.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Shaoxing_Dashan_pagoda.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Gisling",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "2008-11",
+      "reference_file": "assets/references/zj_dashan-photo.jpg",
+      "reference_dimensions": {
+        "width": 892,
+        "height": 1375
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_dashan-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: Seven distinct hexagonal storeys with dark projecting brick eaves, pale walls, alternating niches and openings, small cap and visible lower base. The original outer wooden eaves are lost; do not restore them.",
+  "generated_file": "assets/generated/zj_dashan.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: Seven distinct hexagonal storeys with dark projecting brick eaves, pale walls, alternating niches and openings, small cap and visible lower base. The original outer wooden eaves are lost; do not restore them.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-660185f3-78f2-4162-be58-dc53a8497f89.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-660185f3-78f2-4162-be58-dc53a8497f89.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0b97a507054c26f0d2ac4ce086dc1f77057e0bc3b16c5f4d2ac3e8544d9237fe",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

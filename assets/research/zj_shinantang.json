@@ -1,0 +1,53 @@
+{
+  "id": "zj_shinantang",
+  "subject": "金华石楠塘徐氏宗祠现存门楼与两侧白墙",
+  "caption": [
+    "石楠塘徐氏宗祠",
+    "明清宗祠 · 门楼"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg/1280px-%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg/1280px-%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "HorsefaCe",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2022-02-04 14:13:15",
+      "reference_file": "assets/references/zj_shinantang-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 960
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_shinantang-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The central decorated entrance gate with its layered upturned roof and grey carved door surround, set into two long whitewashed flanking walls under dark tile rooflines. Exclude poles, signs and freestanding plaques.",
+  "generated_file": "assets/generated/zj_shinantang.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The central decorated entrance gate with its layered upturned roof and grey carved door surround, set into two long whitewashed flanking walls under dark tile rooflines. Exclude poles, signs and freestanding plaques.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-4cbc4b07-7e21-42b8-bc25-2be6c5924708.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-4cbc4b07-7e21-42b8-bc25-2be6c5924708.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b2a7e298208f7f74966a499c41aaef3be93808dd8b584e251e7482c710dda548",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

@@ -26,6 +26,17 @@ final class FangguUITests: XCTestCase {
         capture(app, "detail")
     }
 
+    func testLargeCardShowsArrivalSlider() {
+        let app = XCUIApplication()
+        app.launch()
+        let displayButton = app.buttons["大图"]
+        XCTAssertTrue(displayButton.waitForExistence(timeout: 10))
+        displayButton.tap()
+        let slider = app.descendants(matching: .any)["到访打卡"].firstMatch
+        for _ in 0..<8 where !slider.isHittable { app.swipeUp() }
+        XCTAssertTrue(slider.isHittable)
+    }
+
     func testArrivalOnlySavesAfterReleasingAtTheEnd() {
         let app = XCUIApplication()
         app.launch()
@@ -40,6 +51,10 @@ final class FangguUITests: XCTestCase {
         let slider = app.descendants(matching: .any)["到访打卡"].firstMatch
         for _ in 0..<8 where !slider.isHittable { app.swipeUp() }
         XCTAssertTrue(slider.isHittable)
+        let artwork = app.descendants(matching: .any)["detail-artwork"].firstMatch
+        XCTAssertTrue(artwork.exists)
+        XCTAssertEqual(slider.frame.minY - artwork.frame.maxY, 8, accuracy: 2,
+                       "The reveal control should stay directly below its artwork")
 
         let thumb = slider.coordinate(withNormalizedOffset: CGVector(dx: 0.07, dy: 0.5))
         let nearEnd = slider.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5))

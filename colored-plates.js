@@ -7972,6 +7972,406 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "zj_tianyige": {
+    "src": "assets/colored-transparent-avif/zj_tianyige.avif",
+    "originalSrc": "assets/colored/zj_tianyige.png",
+    "transparentSrc": "assets/colored-transparent/zj_tianyige.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "宁波天一阁藏书楼正面 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_tianyige.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Ningbo_Tianyige_2013.07.28_09-23-22.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-07-28 09:23:22"
+      }
+    ]
+  },
+  "zj_qinganhui": {
+    "src": "assets/colored-transparent-avif/zj_qinganhui.avif",
+    "originalSrc": "assets/colored/zj_qinganhui.png",
+    "transparentSrc": "assets/colored-transparent/zj_qinganhui.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "宁波庆安会馆前戏台与回廊内景 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_qinganhui.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Qingan_Association_Hall.jpg",
+        "author": "Jiong Sheng",
+        "license": "CC BY-SA 2.0",
+        "date": "2007-04-19 15:35:09"
+      }
+    ]
+  },
+  "zj_yongan": {
+    "src": "assets/colored-transparent-avif/zj_yongan.avif",
+    "originalSrc": "assets/colored/zj_yongan.png",
+    "transparentSrc": "assets/colored-transparent/zj_yongan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "安吉永安寺塔（灵芝塔）现存全塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_yongan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Lingzhi_Pagoda_19_2019-01.jpg",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "date": "2019-01-13 13:58:44"
+      }
+    ]
+  },
+  "zj_daan": {
+    "src": "assets/colored-transparent-avif/zj_daan.avif",
+    "originalSrc": "assets/colored/zj_daan.png",
+    "transparentSrc": "assets/colored-transparent/zj_daan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "义乌大安寺塔现存六面五层塔身 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_daan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_Pagoda_in_Da%27an_Temple_14_2017-08.jpg",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "date": "2017-08-01 16:23:20"
+      }
+    ]
+  },
+  "zj_dashan": {
+    "src": "assets/colored-transparent-avif/zj_dashan.avif",
+    "originalSrc": "assets/colored/zj_dashan.png",
+    "transparentSrc": "assets/colored-transparent/zj_dashan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "绍兴大善寺塔现存六面七层塔身 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_dashan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Shaoxing_Dashan_pagoda.JPG",
+        "author": "Gisling",
+        "license": "CC BY 3.0",
+        "date": "2008-11"
+      }
+    ]
+  },
+  "zj_chaoyin": {
+    "src": "assets/colored-transparent-avif/zj_chaoyin.avif",
+    "originalSrc": "assets/colored/zj_chaoyin.png",
+    "transparentSrc": "assets/colored-transparent/zj_chaoyin.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "湖州潮音桥现存三孔石拱桥 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_chaoyin.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Chaoyin_Bridge_09_2014-04.jpg",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 3.0",
+        "date": "2014-04-05 09:19:11"
+      }
+    ]
+  },
+  "zj_yuyaotongji": {
+    "src": "assets/colored-transparent-avif/zj_yuyaotongji.avif",
+    "originalSrc": "assets/colored/zj_yuyaotongji.png",
+    "transparentSrc": "assets/colored-transparent/zj_yuyaotongji.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "余姚通济桥现存三孔石拱桥 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_yuyaotongji.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Tongji_Bridge_and_Shunjiang_Building,_2014-08-02_14.JPG",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "date": "2014-08-02 11:52:26"
+      }
+    ]
+  },
+  "zj_guyue": {
+    "src": "assets/colored-transparent-avif/zj_guyue.avif",
+    "originalSrc": "assets/colored/zj_guyue.png",
+    "transparentSrc": "assets/colored-transparent/zj_guyue.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "义乌古月桥现存单孔石拱桥 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_guyue.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Guyue_Bridge_05_2022-02.jpg",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "date": "2022-02-26 10:12:09"
+      }
+    ]
+  },
+  "zj_library_old": {
+    "src": "assets/colored-transparent-avif/zj_library_old.avif",
+    "originalSrc": "assets/colored/zj_library_old.png",
+    "transparentSrc": "assets/colored-transparent/zj_library_old.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "浙江图书馆孤山馆舍红楼及前廊局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_library_old.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260424_Former_Site_of_Zhejiang_Library_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "2026-04-24 17:46:39"
+      }
+    ]
+  },
+  "zj_shinantang": {
+    "src": "assets/colored-transparent-avif/zj_shinantang.avif",
+    "originalSrc": "assets/colored/zj_shinantang.png",
+    "transparentSrc": "assets/colored-transparent/zj_shinantang.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "金华石楠塘徐氏宗祠现存门楼与两侧白墙 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zj_shinantang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E6%A5%A0%E5%A1%98%E5%BE%90%E6%B0%8F%E5%AE%97%E7%A5%A0.jpg",
+        "author": "HorsefaCe",
+        "license": "CC BY-SA 4.0",
+        "date": "2022-02-04 14:13:15"
+      }
+    ]
+  },
+  "js_mingxiao": {
+    "src": "assets/colored-transparent-avif/js_mingxiao.avif",
+    "originalSrc": "assets/colored/js_mingxiao.png",
+    "transparentSrc": "assets/colored-transparent/js_mingxiao.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "南京明孝陵方城明楼正面与石城 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_mingxiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E6%98%8E%E5%AD%9D%E9%99%B5%E6%99%AF%E5%8C%BA%E6%96%B9%E5%9F%8E%E6%98%8E%E6%A5%BC_-_panoramio.jpg",
+        "author": "helkonig",
+        "license": "CC BY 3.0",
+        "date": "Taken on 22 April 2014"
+      }
+    ]
+  },
+  "js_zhongshan": {
+    "src": "assets/colored-transparent-avif/js_zhongshan.avif",
+    "originalSrc": "assets/colored/js_zhongshan.png",
+    "transparentSrc": "assets/colored-transparent/js_zhongshan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "南京中山陵祭堂与前方主要石阶 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_zhongshan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%B1%B1%E9%99%B5%E7%A5%AD%E5%A0%82%E8%BF%9C%E6%99%AF.jpg",
+        "author": "董辰兴",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-02-26 13:54:24"
+      }
+    ]
+  },
+  "js_nanjingwall": {
+    "src": "assets/colored-transparent-avif/js_nanjingwall.avif",
+    "originalSrc": "assets/colored/js_nanjingwall.png",
+    "transparentSrc": "assets/colored-transparent/js_nanjingwall.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "南京城墙中华门北立面中央城门及相连墙体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_nanjingwall.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "date": "2019-08-03 17:44:55"
+      }
+    ]
+  },
+  "js_chaotiangong": {
+    "src": "assets/colored-transparent-avif/js_chaotiangong.avif",
+    "originalSrc": "assets/colored/js_chaotiangong.png",
+    "transparentSrc": "assets/colored-transparent/js_chaotiangong.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "南京朝天宫清代大成殿正面与石阶 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_chaotiangong.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%9C%9D%E5%A4%A9%E5%AE%AB%E5%A4%A7%E6%88%90%E6%AE%BF,_2009-01-28.jpg",
+        "author": "江上清风1961",
+        "license": "CC BY 3.0",
+        "date": "Taken on 28 January 2009"
+      }
+    ]
+  },
+  "js_liuyuan": {
+    "src": "assets/colored-transparent-avif/js_liuyuan.avif",
+    "originalSrc": "assets/colored/js_liuyuan.png",
+    "transparentSrc": "assets/colored-transparent/js_liuyuan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "苏州留园冠云峰及后方亭阁局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_liuyuan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "date": "2019-08-11 14:18:26"
+      }
+    ]
+  },
+  "js_baodai": {
+    "src": "assets/colored-transparent-avif/js_baodai.avif",
+    "originalSrc": "assets/colored/js_baodai.png",
+    "transparentSrc": "assets/colored-transparent/js_baodai.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "苏州宝带桥现存连续石拱桥 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_baodai.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Precious_Belt_Bridge_--_Suzhou,_China_--_Oct_2001.jpg",
+        "author": "Ray_from_LA",
+        "license": "CC BY 2.0",
+        "date": "2008-05-27 21:37"
+      }
+    ]
+  },
+  "js_zhaoguan": {
+    "src": "assets/colored-transparent-avif/js_zhaoguan.avif",
+    "originalSrc": "assets/colored/js_zhaoguan.png",
+    "transparentSrc": "assets/colored-transparent/js_zhaoguan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "镇江西津渡昭关石塔及下部过街券门 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_zhaoguan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Zhao_guan_Tower_2011-10.JPG",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 3.0",
+        "date": "2011-10-31"
+      }
+    ]
+  },
+  "js_geyuan": {
+    "src": "assets/colored-transparent-avif/js_geyuan.avif",
+    "originalSrc": "assets/colored/js_geyuan.png",
+    "transparentSrc": "assets/colored-transparent/js_geyuan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "扬州个园假山、亭阁与水边局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_geyuan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AA%E5%9B%AD-%E5%81%87%E5%B1%B1,_2009-01-29.jpg",
+        "author": "江上清风1961",
+        "license": "CC BY 3.0",
+        "date": "Taken on 29 January 2009"
+      }
+    ]
+  },
+  "js_heyuan": {
+    "src": "assets/colored-transparent-avif/js_heyuan.avif",
+    "originalSrc": "assets/colored/js_heyuan.png",
+    "transparentSrc": "assets/colored-transparent/js_heyuan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "扬州何园船厅正面与相连回廊局部 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_heyuan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%BD%95%E5%9B%AD%E8%88%B9%E5%8E%852019.jpg",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "date": "2019-11-08 12:05:11"
+      }
+    ]
+  },
+  "js_nanchao_stone": {
+    "src": "assets/colored-transparent-avif/js_nanchao_stone.avif",
+    "originalSrc": "assets/colored/js_nanchao_stone.png",
+    "transparentSrc": "assets/colored-transparent/js_nanchao_stone.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "南京萧景墓神道东辟邪石刻 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/js_nanchao_stone.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Tomb_of_Xiao_Jing_-_Bixie.JPG",
+        "author": "Shallowell",
+        "license": "CC BY-SA 3.0",
+        "date": null
+      }
+    ]
+  },
   "fj_luoyang": {
     "src": "assets/colored-transparent-avif/fj_luoyang.avif",
     "originalSrc": "assets/colored/fj_luoyang.png",

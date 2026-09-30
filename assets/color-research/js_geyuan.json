@@ -1,0 +1,58 @@
+{
+  "id": "js_geyuan",
+  "name": "个园假山",
+  "subject": "扬州个园假山、亭阁与水边局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/js_geyuan.png",
+    "assets/references/js_geyuan-photo-selected.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and geometry/composition master. Preserve its silhouette, proportions, every bridge span/tower storey/opening, viewpoint, repairs, and all outer margins. Image 2 is documentary photo of this real monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible contours and restrained matte mineral-pigment planes, not its warm gold palette or dark background. Color the existing line drawing, do not redesign or add features. Thin charcoal contour lines, gentle flat material shading and sparse fine texture INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Original aspect ratio, one image only. Materials observed: Grey-white irregular limestone rockery and path, dark charcoal garden tile roof, aged dark-brown wood pavilion, limited muted green planting, water/open background left white.",
+  "material_observations": "Grey-white irregular limestone rockery and path, dark charcoal garden tile roof, aged dark-brown wood pavilion, limited muted green planting, water/open background left white.",
+  "references": {
+    "original_record": "assets/research/js_geyuan.json",
+    "selected_photo_files": [
+      "assets/references/js_geyuan-photo-selected.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B8%AA%E5%9B%AD-%E5%81%87%E5%B1%B1,_2009-01-29.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/%E4%B8%AA%E5%9B%AD-%E5%81%87%E5%B1%B1%2C_2009-01-29.jpg/1280px-%E4%B8%AA%E5%9B%AD-%E5%81%87%E5%B1%B1%2C_2009-01-29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "江上清风1961",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "date": "Taken on 29 January 2009",
+        "reference_file": "assets/references/js_geyuan-photo-selected.jpg",
+        "reference_dimensions": {
+          "width": 1280,
+          "height": 960
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/js_geyuan.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-3f524f0b-5248-4ee8-bb49-d18448b910e0.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bf1b71aee3633417834bbcb11bdb5e05232959c2b63777250de9d1a9029be26d",
+    "seeds": []
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-29T17:57:45.275Z",
+    "sourceSha256": "bf1b71aee3633417834bbcb11bdb5e05232959c2b63777250de9d1a9029be26d",
+    "inputSha256": "af48d890bf0cceb29cacd38001e98d0ccae1fe7c59ff213ff439566482764033",
+    "avifSha256": "c707a241d530089c9e9f881ec879fbeef6f2f2dba8dc18c53a22975498eb23c1"
+  }
+}

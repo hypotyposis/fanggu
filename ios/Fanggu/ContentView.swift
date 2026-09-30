@@ -560,6 +560,8 @@ struct MonumentCard: View {
     let site: Monument
     @State private var editingVisit = false
     @State private var editingReview = false
+    @State private var reveal: CGFloat = 0
+    @State private var completingVisit = false
 
     private var record: VisitRecord { library.record(for: site) }
 
@@ -567,7 +569,8 @@ struct MonumentCard: View {
         VStack(alignment: .leading, spacing: 0) {
             NavigationLink(value: site) {
                 VStack(alignment: .leading, spacing: 0) {
-                    ArtworkView(site: site, visited: record.status == .visited, height: 240)
+                    ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
+                                height: 240, reveal: reveal, stamping: completingVisit)
                     VStack(alignment: .leading, spacing: 9) {
                         HStack(spacing: 8) {
                             Text(record.status.title)
@@ -605,11 +608,14 @@ struct MonumentCard: View {
                 .padding(.horizontal, 17)
                 .padding(.bottom, 14)
             }
-            if record.status != .visited {
-                Button("标记到访") { editingVisit = true }
-                    .buttonStyle(FangguOutlineButton())
-                    .padding(.horizontal, 17)
-                    .padding(.bottom, 12)
+            if record.status != .visited || completingVisit {
+                VStack(alignment: .leading, spacing: 10) {
+                    ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
+                    Button("填写到访日期与笔记") { editingVisit = true }
+                        .buttonStyle(FangguOutlineButton())
+                }
+                .padding(.horizontal, 17)
+                .padding(.bottom, 12)
             } else {
                 Text(record.visitedOn.isEmpty ? "已到访" : "已到访 · \(record.visitedOn)")
                     .font(FangguFont.mono(11))
@@ -643,5 +649,18 @@ struct MonumentCard: View {
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
+    }
+
+    private func finishArrival() {
+        withAnimation(.spring(response: 0.82, dampingFraction: 0.7)) {
+            reveal = 1
+            completingVisit = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.35) {
+            withAnimation(.easeInOut(duration: 0.25)) {
+                completingVisit = false
+                reveal = 0
+            }
+        }
     }
 }

@@ -4,7 +4,7 @@ SwiftUI 原生 App，最低 iOS 18。古迹目录由网页使用的 `sites.js`�
 
 底部四栏导航在 iOS 26 使用系统 `TabView` 的 Liquid Glass；iOS 18–25 使用悬浮磨砂材质与选中态胶囊。四个主页面直接显示各自标题，不占用顶部品牌导航栏；古迹详情保留返回导航。旧系统的底部导航在输入时收起、退出详情后恢复；开启“降低透明度”时改用不透明底色。
 
-图鉴首页直接显示搜索、互斥的全部／心愿单／已到访／未标记状态与紧凑列表，默认心愿优先。可切换年代或名称排序、打开展示大图的卡片视图；国家、地区、时代和类型筛选收在筛选页。品牌长卷放在右上角印章打开的“关于访古”页。详情顶部提供明确的到访和心愿操作，拖动打卡仍在详情的“我的访古记”中。未有到访记录时，地图显示引导入口；年表可用常见时期快捷入口及“显示更多”逐段浏览。辅助字号下状态筛选改为两列，“我的”计数改为逐行展示。地图与“我的”的突出数字共用宋体数字样式；等宽字体用于次级统计、年代和坐标，手写体用于印章等装饰。图鉴、详情和个人列表共用状态名称与文字颜色，年代标签留空时不显示排序用的年份。
+图鉴首页直接显示搜索、互斥的全部／心愿单／已到访／未标记状态与紧凑列表，默认心愿优先。可切换年代或名称排序、打开展示大图的卡片视图；未到访的大图卡片与详情页共用拖动打卡，也可填写到访日期与笔记。国家、地区、时代和类型筛选收在筛选页。品牌长卷放在右上角印章打开的“关于访古”页。详情顶部提供明确的到访和心愿操作，拖动条紧挨图版下方，拖动时可同时看到设色渐显。未有到访记录时，地图显示引导入口；年表可用常见时期快捷入口及“显示更多”逐段浏览。辅助字号下状态筛选改为两列，“我的”计数改为逐行展示。地图与“我的”的突出数字共用宋体数字样式；等宽字体用于次级统计、年代和坐标，手写体用于印章等装饰。图鉴、详情和个人列表共用状态名称与文字颜色，年代标签留空时不显示排序用的年份。
 
 ## 构建
 
@@ -21,7 +21,7 @@ xcodebuild -project Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS S
 
 `sync-artwork.sh` 检查全部目录条目所需的线稿 PNG 和设色 AVIF。图片位于被忽略的 `ios/Fanggu/Resources/Artwork/`，不会误提交原件。数据、网页朝代色或图版清单变更时重新运行导出和同步命令。中文标题使用随 App 打包的 Ma Shan Zheng 与 Noto Serif SC 字体，均按 SIL Open Font License 授权，许可文本在 `Fanggu/Resources/Fonts/`。
 
-App 图标以首页佛光寺东大殿柱头铺作线稿为参考，提炼横枋、中央斗块与层叠拱臂。可编辑源文件为 `AppIcon.svg`；修改后用 `rsvg-convert -w 1024 -h 1024 -o Fanggu/Assets.xcassets/AppIcon.appiconset/AppIcon.png AppIcon.svg` 在 `ios/` 目录重建图标 PNG。源文件使用纯色背景，导出的 PNG 不含透明区域。
+App 图标以辽代木构檐下莲花状斗栱的转角结构为灵感，保留用户选定图片中的 V 形檐角、中心斗块和多层外展拱臂。正式源稿是[用户选定的黛绿米白 PNG](icon-concepts/round-7/selected-raster-source.png)，保留其柔和明暗与原始细节；`Fanggu/Assets.xcassets/AppIcon.appiconset/AppIcon.png` 是将源稿缩为 1024 × 1024 的交付图。需要重建时，在 `ios/` 目录运行 `sips -z 1024 1024 icon-concepts/round-7/selected-raster-source.png --out Fanggu/Assets.xcassets/AppIcon.appiconset/AppIcon.png`。交付图为无透明区域的 RGB PNG。早期平面矢量与配色对照见[图标设计记录](icon-concepts/round-7/README.md)。
 
 ## 迁移记录
 

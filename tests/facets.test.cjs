@@ -127,12 +127,12 @@ test('existing Japanese wishes and new unvisited additions survive backup restor
 
 
 test('Jiangsu and Zhejiang additions cover bridges, stone pillars and early regional periods', () => {
-  assert.equal(find({ province: '浙江' }).length, 18);
-  assert.equal(find({ province: '江苏' }).length, 16);
+  assert.equal(find({ province: '浙江' }).length, 28);
+  assert.equal(find({ province: '江苏' }).length, 26);
   assert.deepEqual(find({ type: 'bridge', province: '浙江', status: 'wishlist' }), ['baziqiao', 'rulong']);
   assert.deepEqual(find({ type: 'pillar', province: '浙江' }), ['lingyin', 'longxingchuang']);
   assert(find({ type: 'pagoda' }).includes('lingyin'));
-  assert.deepEqual(find({ dynasty: 'nan' }), ['xinchangdafo', 'yn_cuanyan']);
+  assert.deepEqual(find({ dynasty: 'nan' }).sort(), ['xinchangdafo', 'yn_cuanyan', 'js_nanchao_stone'].sort());
   assert.deepEqual(find({ dynasty: 'jin' }), ['yn_cuanbaozi']);
   assert.deepEqual(find({ dynasty: 'qiuci' }), ['xj_kizil', 'xj_kumtura']);
   assert.deepEqual(find({ dynasty: 'nanzhao' }), ['yn_shizhong']);

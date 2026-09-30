@@ -1,0 +1,58 @@
+{
+  "id": "zj_guyue",
+  "name": "义乌古月桥",
+  "subject": "义乌古月桥现存单孔石拱桥",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/zj_guyue.png",
+    "assets/references/zj_guyue-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and geometry/composition master. Preserve its silhouette, proportions, every bridge span/tower storey/opening, viewpoint, repairs, and all outer margins. Image 2 is documentary photo of this real monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible contours and restrained matte mineral-pigment planes, not its warm gold palette or dark background. Color the existing line drawing, do not redesign or add features. Thin charcoal contour lines, gentle flat material shading and sparse fine texture INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Original aspect ratio, one image only. Materials observed: Weathered warm grey and tan stone blocks with darker stone arch ring and small greenish age staining only in solid surfaces; water and arch opening left white.",
+  "material_observations": "Weathered warm grey and tan stone blocks with darker stone arch ring and small greenish age staining only in solid surfaces; water and arch opening left white.",
+  "references": {
+    "original_record": "assets/research/zj_guyue.json",
+    "selected_photo_files": [
+      "assets/references/zj_guyue-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Guyue_Bridge_05_2022-02.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Guyue_Bridge_05_2022-02.jpg/1280px-Guyue_Bridge_05_2022-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2022-02-26 10:12:09",
+        "reference_file": "assets/references/zj_guyue-photo.jpg",
+        "reference_dimensions": {
+          "width": 1280,
+          "height": 853
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/zj_guyue.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-a71db075-fc30-4cd5-8662-110711e68d7a.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "426a2ee8051b2a6a0fe2e293974058bc1cea41a44e02faae4d3f4646e481902f",
+    "seeds": []
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-29T17:57:45.189Z",
+    "sourceSha256": "426a2ee8051b2a6a0fe2e293974058bc1cea41a44e02faae4d3f4646e481902f",
+    "inputSha256": "14ef8fdcc6ce73f216d5a4c4d399b038b604dac49e8a72f7cf3f1889032e7239",
+    "avifSha256": "e355c9db1415a40d7e2e5c0e2a01e62c17cc48fd901edc011cba2ce86c3050ce"
+  }
+}

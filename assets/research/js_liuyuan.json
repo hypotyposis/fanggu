@@ -1,0 +1,53 @@
+{
+  "id": "js_liuyuan",
+  "subject": "苏州留园冠云峰及后方亭阁局部",
+  "caption": [
+    "留园冠云峰",
+    "清代园林 · 局部"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg/1280px-%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg/1280px-%E8%8B%8F%E5%B7%9E%E7%95%99%E5%9B%AD%E5%86%A0%E4%BA%91%E5%B3%B02019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2019-08-11 14:18:26",
+      "reference_file": "assets/references/js_liuyuan-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 797
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_liuyuan-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The tall irregular perforated limestone Guanyun Peak at the center, with the dark tiled hall and small flanking garden roofs directly behind. Keep the rock slender and asymmetric; simplify shrubbery; this is a local view of the garden, not its whole plan.",
+  "generated_file": "assets/generated/js_liuyuan.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The tall irregular perforated limestone Guanyun Peak at the center, with the dark tiled hall and small flanking garden roofs directly behind. Keep the rock slender and asymmetric; simplify shrubbery; this is a local view of the garden, not its whole plan.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-c6571199-721d-4ca1-90c9-323345fe5c1f.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-c6571199-721d-4ca1-90c9-323345fe5c1f.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "16c612d49075087c8d4d4d8c0b29ce89e8efca78843bf1c26eaff9abc14146e9",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

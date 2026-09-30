@@ -11291,6 +11291,626 @@ SITES.push(...[
   },
 ]);
 
+// 江浙国保增补；保护单位、图版主体和参考见同 ID 研究记录。
+PLACES.push(...[
+  {
+    "key": "zj_anji",
+    "name": "安吉",
+    "prov": "浙江",
+    "lat": 30.638,
+    "lon": 119.682,
+    "coordinate_note": "安吉县城示意点，非塔测绘坐标。"
+  },
+  {
+    "key": "zj_yiwu",
+    "name": "义乌",
+    "prov": "浙江",
+    "lat": 29.306,
+    "lon": 120.075,
+    "coordinate_note": "义乌市区示意点，非单体测绘坐标。"
+  },
+  {
+    "key": "zj_yuyao",
+    "name": "余姚",
+    "prov": "浙江",
+    "lat": 30.038,
+    "lon": 121.154,
+    "coordinate_note": "余姚城区示意点，非桥测绘坐标。"
+  },
+  {
+    "key": "js_zhenjiang",
+    "name": "镇江",
+    "prov": "江苏",
+    "lat": 32.206,
+    "lon": 119.449,
+    "coordinate_note": "镇江西津渡附近示意点，非塔测绘坐标。"
+  },
+  {
+    "key": "js_yangzhou",
+    "name": "扬州",
+    "prov": "江苏",
+    "lat": 32.394,
+    "lon": 119.418,
+    "coordinate_note": "扬州城区示意点，非园林单体测绘坐标。"
+  }
+]);
+SITES.push(...[
+  {
+    "id": "zj_tianyige",
+    "name": "天一阁",
+    "short": "天一阁",
+    "sub": "藏书楼",
+    "country": "CN",
+    "types": [
+      "residence"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明嘉靖四十五年建阁",
+    "year": 1566,
+    "place": "浙江 · 宁波",
+    "placeKey": "ningbo",
+    "lede": "两层藏书楼以一通长廊和整齐窗格展开，成为宁波私家藏书传统最醒目的建筑标记。",
+    "facts": [
+      "范钦于明嘉靖年间营建天一阁；阁内藏书与建筑同为保护对象。",
+      "图版绘藏书楼正面，现存建筑历经修缮；年表年份指建阁阶段。"
+    ],
+    "yearNote": "1566为建阁纪年，不将今日所见每一处构件视作明代原物。",
+    "caption": [
+      "天一阁",
+      "明嘉靖 · 藏书楼"
+    ]
+  },
+  {
+    "id": "zj_qinganhui",
+    "name": "庆安会馆",
+    "short": "庆安会馆",
+    "sub": "前戏台局部",
+    "country": "CN",
+    "types": [
+      "stage",
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清咸丰三年建",
+    "year": 1853,
+    "place": "浙江 · 宁波",
+    "placeKey": "ningbo",
+    "lede": "会馆前戏台的藻井、木柱和两侧回廊围出一处兼具祭祀与演剧功能的空间。",
+    "facts": [
+      "庆安会馆为宁波航运商帮活动遗存，清咸丰年间落成。",
+      "图版取前戏台与邻接回廊内景，不代表整个会馆。"
+    ],
+    "caption": [
+      "庆安会馆",
+      "清咸丰 · 前戏台局部"
+    ]
+  },
+  {
+    "id": "zj_yongan",
+    "name": "安吉永安寺塔",
+    "short": "永安寺塔",
+    "sub": "灵芝塔现存塔身",
+    "country": "CN",
+    "types": [
+      "pagoda"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "五代至南宋遗构",
+    "year": 1100,
+    "place": "浙江 · 湖州 · 安吉",
+    "placeKey": "zj_anji",
+    "lede": "密集塔檐沿砖砌塔身逐层收拢，安吉山间仍可见这座古塔的整体轮廓。",
+    "facts": [
+      "又称灵芝塔；文物断代跨五代至南宋，具体营建年未能确证。",
+      "图版聚焦现存塔身与塔刹，不将年表定位点当作精确建造年。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "五代至南宋",
+    "yearNote": "1100仅为年表约略定位；建筑断代范围为五代至南宋。",
+    "tall": true,
+    "caption": [
+      "安吉永安寺塔",
+      "五代至南宋 · 砖塔"
+    ]
+  },
+  {
+    "id": "zj_daan",
+    "name": "义乌大安寺塔",
+    "short": "大安寺塔",
+    "sub": "六面五层塔身",
+    "country": "CN",
+    "types": [
+      "pagoda"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋塔",
+    "year": 1110,
+    "place": "浙江 · 金华 · 义乌",
+    "placeKey": "zj_yiwu",
+    "lede": "六面塔身叠起五层出檐，砖砌塔壁和轻薄檐口形成北宋古塔的竖向节奏。",
+    "facts": [
+      "大安寺塔为六面五层的北宋砖塔，后世多有修缮。",
+      "图版绘现存塔身与塔刹，1110仅供北宋阶段年表定位。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "北宋",
+    "yearNote": "1110为北宋约略定位点，并非确证的建造纪年。",
+    "tall": true,
+    "caption": [
+      "义乌大安寺塔",
+      "北宋 · 六面五层砖木塔"
+    ]
+  },
+  {
+    "id": "zj_dashan",
+    "name": "绍兴大善寺塔",
+    "short": "大善寺塔",
+    "sub": "六面七层塔身",
+    "country": "CN",
+    "types": [
+      "pagoda"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "南宋塔",
+    "year": 1250,
+    "place": "浙江 · 绍兴",
+    "placeKey": "shaoxing",
+    "lede": "七层塔檐沿六面砖塔逐级上升，在绍兴城中保留了南宋塔的细高轮廓。",
+    "facts": [
+      "大善寺塔通常断为南宋遗构，具体建造年尚需区分后期修缮。",
+      "图版只绘现存塔身与塔刹，不以寺院其他建筑代替。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "南宋",
+    "yearNote": "1250仅供南宋阶段年表约略定位。",
+    "tall": true,
+    "caption": [
+      "绍兴大善寺塔",
+      "南宋 · 六面七层"
+    ]
+  },
+  {
+    "id": "zj_chaoyin",
+    "name": "湖州潮音桥",
+    "short": "潮音桥",
+    "sub": "三孔石拱桥",
+    "country": "CN",
+    "types": [
+      "bridge"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明万历重建",
+    "year": 1605,
+    "place": "浙江 · 湖州",
+    "placeKey": "huzhou",
+    "lede": "三道石拱横跨水面，拱顶和两端桥阶让这座城市古桥显出紧凑而稳固的尺度。",
+    "facts": [
+      "潮音桥明万历年间重建，现存桥体后经修缮。",
+      "图版绘三孔桥的侧面及桥阶，水岸环境仅作识别辅助。"
+    ],
+    "caption": [
+      "湖州潮音桥",
+      "明代重建 · 三孔桥"
+    ]
+  },
+  {
+    "id": "zj_yuyaotongji",
+    "name": "余姚通济桥",
+    "short": "通济桥",
+    "sub": "三孔石拱桥",
+    "country": "CN",
+    "types": [
+      "bridge"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清雍正年间重建",
+    "year": 1731,
+    "place": "浙江 · 宁波 · 余姚",
+    "placeKey": "zj_yuyao",
+    "lede": "高起的主拱与两侧小拱连成三孔，余姚旧城的通济桥仍横跨姚江。",
+    "facts": [
+      "桥址历史早于现存桥体；图版以清代重建后的石桥为主体。",
+      "舜江楼只用于定位，不纳入本图版所绘主体。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "清雍正年间",
+    "yearNote": "1731为雍正年间重建的年表约略定位。",
+    "caption": [
+      "余姚通济桥",
+      "清代现存桥 · 三孔"
+    ]
+  },
+  {
+    "id": "zj_guyue",
+    "name": "古月桥",
+    "short": "古月桥",
+    "sub": "单孔石拱桥",
+    "country": "CN",
+    "types": [
+      "bridge"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "南宋嘉定六年建",
+    "year": 1213,
+    "place": "浙江 · 金华 · 义乌",
+    "placeKey": "zj_yiwu",
+    "lede": "单道高拱跨过窄河，长条石砌出的弧线是这座南宋桥最鲜明的形制。",
+    "facts": [
+      "古月桥位于义乌，南宋嘉定六年（1213）营建。",
+      "图版绘单孔石拱与两端桥身，不另绘周围新建景物。"
+    ],
+    "caption": [
+      "义乌古月桥",
+      "宋代石桥 · 单孔"
+    ]
+  },
+  {
+    "id": "zj_library_old",
+    "name": "浙江图书馆旧址",
+    "short": "浙江图书馆",
+    "sub": "孤山馆舍红楼",
+    "country": "CN",
+    "types": [
+      "school"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清末至民国馆舍",
+    "year": 1909,
+    "place": "浙江 · 杭州 · 孤山",
+    "placeKey": "hangzhou",
+    "lede": "红砖立面与拱廊构成孤山馆舍的近代公共建筑形象，为杭州藏书与阅览留下实体空间。",
+    "facts": [
+      "浙江图书馆旧址包含孤山馆舍等历史建筑；图版明确只绘其中红楼与前廊。",
+      "1909仅为馆舍使用阶段的年表约略定位，不把整组建筑都断为同一年。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "清末至民国",
+    "yearNote": "1909仅为馆舍阶段约略定位；国保单元包括多个建筑。",
+    "caption": [
+      "浙江图书馆旧址",
+      "孤山红楼 · 近代"
+    ]
+  },
+  {
+    "id": "zj_shinantang",
+    "name": "石楠塘徐氏宗祠",
+    "short": "徐氏宗祠",
+    "sub": "门楼与白墙",
+    "country": "CN",
+    "types": [
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清宗祠",
+    "year": 1700,
+    "place": "浙江 · 金华",
+    "placeKey": "jinhua",
+    "lede": "宗祠门楼与两侧白墙构成乡村入口，屋脊和门额保留地方祠堂的识别特征。",
+    "facts": [
+      "国保公布名称为“石楠塘徐氏宗祠”，建筑年代概括为明清。",
+      "图版只绘门楼与两侧墙体；1700不代表确切建年。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "明清",
+    "yearNote": "1700仅供明清阶段年表约略定位。",
+    "caption": [
+      "石楠塘徐氏宗祠",
+      "明清宗祠 · 门楼"
+    ]
+  },
+  {
+    "id": "js_mingxiao",
+    "name": "明孝陵方城明楼",
+    "short": "明孝陵",
+    "sub": "方城明楼",
+    "country": "CN",
+    "types": [
+      "tomb",
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明初陵寝建筑",
+    "year": 1398,
+    "place": "江苏 · 南京",
+    "placeKey": "nanjing",
+    "lede": "高大的石砌方城托起明楼，中央券门通向朱元璋陵寝的宝顶区域。",
+    "facts": [
+      "明孝陵为第一批国保；方城明楼是陵区的一处建筑组合。",
+      "上部明楼历经毁损与修缮，图版表现今日所见外观，不将现存屋顶直接等同明初原件。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "明初",
+    "yearNote": "1398为明初陵寝阶段定位，不代表明楼所有现存构件的建造年。",
+    "caption": [
+      "明孝陵方城明楼",
+      "明代陵寝 · 方城明楼"
+    ]
+  },
+  {
+    "id": "js_zhongshan",
+    "name": "中山陵祭堂",
+    "short": "中山陵",
+    "sub": "祭堂与主要石阶",
+    "country": "CN",
+    "types": [
+      "tomb",
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "modern",
+    "tag": "民国",
+    "era": "1929年建成",
+    "year": 1929,
+    "place": "江苏 · 南京",
+    "placeKey": "nanjing",
+    "lede": "蓝色琉璃瓦顶覆在开阔祭堂之上，层层石阶将视线引向陵墓的核心建筑。",
+    "facts": [
+      "中山陵于1929年建成，祭堂是陵寝轴线终点。",
+      "图版绘祭堂与前方主要石阶，不以整座陵园的范围代替单体。"
+    ],
+    "caption": [
+      "中山陵祭堂",
+      "民国 · 1929年"
+    ]
+  },
+  {
+    "id": "js_nanjingwall",
+    "name": "南京城墙中华门",
+    "short": "中华门",
+    "sub": "中华门城门局部",
+    "country": "CN",
+    "types": [
+      "wall",
+      "gate"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明初营建",
+    "year": 1393,
+    "place": "江苏 · 南京",
+    "placeKey": "nanjing",
+    "lede": "连续城墙与券门组成中华门的厚重北立面，展示南京明城墙的防御尺度。",
+    "facts": [
+      "南京城墙为第三批国保，中华门属于其保护范围。",
+      "图版仅绘中华门中央城门与相连墙体，不将整座城墙画作单体。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "明初",
+    "yearNote": "1393为南京明城墙营建时期约略定位。",
+    "caption": [
+      "南京城墙 · 中华门",
+      "明代城门 · 局部"
+    ]
+  },
+  {
+    "id": "js_chaotiangong",
+    "name": "朝天宫大成殿",
+    "short": "朝天宫",
+    "sub": "清代大成殿",
+    "country": "CN",
+    "types": [
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清同治年间重建",
+    "year": 1870,
+    "place": "江苏 · 南京",
+    "placeKey": "nanjing",
+    "lede": "重檐殿顶覆在宽阔台基上，正中石阶引向朝天宫现存清代大成殿。",
+    "facts": [
+      "朝天宫为第七批国保，现存大成殿属清同治重建阶段。",
+      "图版只绘大成殿与前方台阶，不将更早的宫观沿革当作殿宇现存年代。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "清同治",
+    "yearNote": "1870为同治年间重建约略定位。",
+    "caption": [
+      "朝天宫大成殿",
+      "清同治 · 大成殿"
+    ]
+  },
+  {
+    "id": "js_liuyuan",
+    "name": "留园冠云峰",
+    "short": "留园",
+    "sub": "冠云峰局部",
+    "country": "CN",
+    "types": [
+      "garden"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代园林格局",
+    "year": 1873,
+    "place": "江苏 · 苏州",
+    "placeKey": "suzhou",
+    "lede": "一峰独立于水石与厅阁之间，冠云峰在留园建筑密集的院落里形成清晰的观赏焦点。",
+    "facts": [
+      "留园为第一批国保；冠云峰是园内著名湖石。",
+      "图版绘冠云峰与邻近亭阁局部，1873只供清代园林阶段年表定位。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "清代园林",
+    "yearNote": "1873是园林阶段约略定位，不是冠云峰形成或安放的确切年。",
+    "caption": [
+      "留园冠云峰",
+      "清代园林 · 局部"
+    ]
+  },
+  {
+    "id": "js_baodai",
+    "name": "宝带桥",
+    "short": "宝带桥",
+    "sub": "连续石拱桥",
+    "country": "CN",
+    "types": [
+      "bridge"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清同治年间修复",
+    "year": 1872,
+    "place": "江苏 · 苏州",
+    "placeKey": "suzhou",
+    "lede": "连续拱孔以低平弧线穿过水面，宝带桥保留了长桥多孔的独特节奏。",
+    "facts": [
+      "桥址始建于唐代，现存桥体经过明清及近现代多次修复。",
+      "图版绘现状连续桥孔；年表采用清同治修复阶段，不称整桥为唐代原物。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "清同治修复",
+    "yearNote": "1872供修复阶段约略定位，非整桥原建年代。",
+    "caption": [
+      "苏州宝带桥",
+      "明清重修 · 多孔石桥"
+    ]
+  },
+  {
+    "id": "js_zhaoguan",
+    "name": "昭关石塔",
+    "short": "昭关石塔",
+    "sub": "过街石塔",
+    "country": "CN",
+    "types": [
+      "pagoda",
+      "gate"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代过街塔",
+    "year": 1311,
+    "place": "江苏 · 镇江 · 西津渡",
+    "placeKey": "js_zhenjiang",
+    "lede": "石塔上部的藏式塔身立于过街券门之上，让行人从塔下穿过。",
+    "facts": [
+      "昭关石塔位于镇江西津渡，为元代过街石塔。",
+      "图版连同下方通道绘全塔，1311仅供元代年表约略定位。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "元代",
+    "yearNote": "1311为元代约略定位，非确证营建年。",
+    "tall": true,
+    "caption": [
+      "昭关石塔",
+      "元代 · 过街石塔"
+    ]
+  },
+  {
+    "id": "js_geyuan",
+    "name": "个园假山",
+    "short": "个园",
+    "sub": "假山与园亭局部",
+    "country": "CN",
+    "types": [
+      "garden"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清嘉庆年间营建",
+    "year": 1818,
+    "place": "江苏 · 扬州",
+    "placeKey": "js_yangzhou",
+    "lede": "湖石假山、亭阁与水面互相穿插，个园以不同石材经营四季的园林意象。",
+    "facts": [
+      "个园建于清嘉庆年间，假山是其核心景观。",
+      "图版取一处假山与相邻亭阁局部，不把局部画面当作全园。"
+    ],
+    "caption": [
+      "个园假山",
+      "清嘉庆 · 园林局部"
+    ]
+  },
+  {
+    "id": "js_heyuan",
+    "name": "何园船厅",
+    "short": "何园",
+    "sub": "船厅与回廊局部",
+    "country": "CN",
+    "types": [
+      "garden",
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清光绪年间营建",
+    "year": 1883,
+    "place": "江苏 · 扬州",
+    "placeKey": "js_yangzhou",
+    "lede": "船形厅堂借回廊与园景相连，在何园层叠空间中形成一处轻巧的观景节点。",
+    "facts": [
+      "何园为清光绪年间私家园林，船厅为园内建筑之一。",
+      "图版绘船厅与相连回廊局部，不把其他厅堂并入同一主体。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "清光绪",
+    "yearNote": "1883为园林营建阶段约略定位，非船厅确证独立建年。",
+    "caption": [
+      "何园船厅",
+      "清光绪 · 船厅局部"
+    ]
+  },
+  {
+    "id": "js_nanchao_stone",
+    "name": "南朝陵墓石刻·萧景墓东辟邪",
+    "short": "萧景墓石刻",
+    "sub": "东辟邪",
+    "country": "CN",
+    "types": [
+      "sculpture",
+      "tomb"
+    ],
+    "initialStatus": "unvisited",
+    "dyn": "nan",
+    "tag": "南朝",
+    "era": "南朝梁石刻",
+    "year": 523,
+    "place": "江苏 · 南京",
+    "placeKey": "nanjing",
+    "lede": "有翼石兽昂首立在神道一侧，萧景墓东辟邪保存了南朝陵墓石刻的张力。",
+    "facts": [
+      "南朝陵墓石刻为第三批国保，萧景墓石刻是其中一处。",
+      "图版明确绘萧景墓东辟邪，不以其他南朝陵墓石兽替代。"
+    ],
+    "yearApprox": true,
+    "yearLabel": "南朝梁",
+    "yearNote": "523仅供南朝梁阶段年表约略定位，非此石兽确证刻造年。",
+    "caption": [
+      "萧景墓石刻",
+      "南朝梁 · 东辟邪"
+    ]
+  }
+]);
+
 // 福建国保增补（2026-09-30）。图版、来源与国保登记见同 ID 记录。
 PLACES.push(...[
   {

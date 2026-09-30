@@ -1,0 +1,53 @@
+{
+  "id": "zj_yuyaotongji",
+  "subject": "余姚通济桥现存三孔石拱桥",
+  "caption": [
+    "余姚通济桥",
+    "清代现存桥 · 三孔"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Tongji_Bridge_and_Shunjiang_Building,_2014-08-02_14.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Tongji_Bridge_and_Shunjiang_Building%2C_2014-08-02_14.JPG/1280px-Tongji_Bridge_and_Shunjiang_Building%2C_2014-08-02_14.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tongji_Bridge_and_Shunjiang_Building,_2014-08-02_14.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Tongji_Bridge_and_Shunjiang_Building%2C_2014-08-02_14.JPG/1280px-Tongji_Bridge_and_Shunjiang_Building%2C_2014-08-02_14.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2014-08-02 11:52:26",
+      "reference_file": "assets/references/zj_yuyaotongji-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 853
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_yuyaotongji-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: Full three-arch stone bridge side elevation with the high central span and two smaller lateral spans, sloping deck and parapet. Do not include the neighboring Shunjiang Building or modern skyline.",
+  "generated_file": "assets/generated/zj_yuyaotongji.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: Full three-arch stone bridge side elevation with the high central span and two smaller lateral spans, sloping deck and parapet. Do not include the neighboring Shunjiang Building or modern skyline.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-e8d34d56-6433-433d-99b7-d2d14bf7bede.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-e8d34d56-6433-433d-99b7-d2d14bf7bede.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "02fd6790e58ebb8005180aecfeaff9350f9f56af556aeb9719ab886836837a1a",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

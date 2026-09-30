@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <g id="left-diagonals" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M512 449C408 444 301 407 205 341" stroke="#B95A3E" stroke-width="52"/>
+      <path d="M512 565C425 558 347 529 279 480" stroke="#B95A3E" stroke-width="47"/>
+      <path d="M512 675C461 669 414 650 374 620" stroke="#B95A3E" stroke-width="40"/>
+      <path d="M511 441C405 437 309 402 224 348m287 209c-78-8-145-32-210-78m210 188c-48-6-87-21-120-43" stroke="#F3D39A" stroke-width="12"/>
+    </g>
+  </defs>
+  <rect width="1024" height="1024" fill="#182020"/>
+  <path d="M144 249h736v53H144z" fill="#963F32" stroke="#E5BC78" stroke-width="16"/>
+  <path d="M174 227h676" stroke="#F0D39A" stroke-width="24" stroke-linecap="round"/>
+  <path d="M206 187v39m102-39v39m102-39v39m102-39v39m102-39v39m102-39v39m102-39v39" stroke="#B77750" stroke-width="17"/>
+  <use href="#left-diagonals"/>
+  <use href="#left-diagonals" transform="translate(1024 0) scale(-1 1)"/>
+  <path d="M188 346c43 12 78 18 109 20h430c31-2 66-8 109-20-16 43-58 63-116 63H304c-58 0-100-20-116-63Z" fill="#DBA66A" stroke="#F5D99F" stroke-width="11"/>
+  <path d="M267 458c39 10 75 14 106 16h278c31-2 67-6 106-16-16 42-53 63-106 63H373c-53 0-90-21-106-63Z" fill="#D69A5F" stroke="#F5D99F" stroke-width="11"/>
+  <path d="M347 572c32 9 61 12 86 13h158c25-1 54-4 86-13-12 43-43 62-86 62H433c-43 0-74-19-86-62Z" fill="#C88350" stroke="#F5D99F" stroke-width="11"/>
+  <path d="M423 684c31 6 59 8 89 8s58-2 89-8c-10 42-37 61-89 61s-79-19-89-61Z" fill="#B96A45" stroke="#F5D99F" stroke-width="11"/>
+  <path d="M465 398h94v75h-94zM470 514h84v71h-84zM474 625h76v68h-76z" fill="#375E57" stroke="#E4B877" stroke-width="13"/>
+  <path d="M483 416h58v39h-58zM485 531h54v38h-54zM488 641h48v36h-48z" fill="#182020"/>
+  <path d="M472 745h80v111h-80z" fill="#9B4938" stroke="#E5BC78" stroke-width="15"/>
+  <path d="M226 367h558M304 482h416M387 594h250" stroke="#925A3E" stroke-width="11" opacity=".7"/>
+</svg>

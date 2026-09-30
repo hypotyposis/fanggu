@@ -1,0 +1,53 @@
+{
+  "id": "js_nanjingwall",
+  "subject": "南京城墙中华门北立面中央城门及相连墙体",
+  "caption": [
+    "南京城墙 · 中华门",
+    "明代城门 · 局部"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg/1280px-%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg/1280px-%E5%8D%97%E4%BA%AC%E5%9F%8E%E5%A2%99-%E4%B8%AD%E5%8D%8E%E9%97%A82019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "ScareCriterion12",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2019-08-03 17:44:55",
+      "reference_file": "assets/references/js_nanjingwall-photo.jpg",
+      "reference_dimensions": {
+        "width": 1280,
+        "height": 793
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/js_nanjingwall-photo.jpg"
+  ],
+  "source_note": "图版仅绘所列主体，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The broad low brick-and-stone wall with its central rounded gateway, stone lower facing and darker upper brickwork. Show the existing entrance facade, not an invented tall multi-storey gate tower. Remove visitors, trees, ticket kiosk, signs and paving foreground.",
+  "generated_file": "assets/generated/js_nanjingwall.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The broad low brick-and-stone wall with its central rounded gateway, stone lower facing and darker upper brickwork. Show the existing entrance facade, not an invented tall multi-storey gate tower. Remove visitors, trees, ticket kiosk, signs and paving foreground.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-5cab2061-29e5-40e8-8095-814c2916634f.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-5cab2061-29e5-40e8-8095-814c2916634f.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2d9787b9bab27c8ade60a9f02b51463791e471ea653356518ee5824683a7b74e",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

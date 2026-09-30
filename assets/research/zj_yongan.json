@@ -1,0 +1,53 @@
+{
+  "id": "zj_yongan",
+  "subject": "安吉永安寺塔（灵芝塔）现存全塔",
+  "caption": [
+    "安吉永安寺塔",
+    "五代至南宋 · 砖塔"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Lingzhi_Pagoda_19_2019-01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Lingzhi_Pagoda_19_2019-01.jpg/960px-Lingzhi_Pagoda_19_2019-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lingzhi_Pagoda_19_2019-01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Lingzhi_Pagoda_19_2019-01.jpg/960px-Lingzhi_Pagoda_19_2019-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2019-01-13 13:58:44",
+      "reference_file": "assets/references/zj_yongan-photo-selected.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 1445
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zj_yongan-photo-selected.jpg"
+  ],
+  "source_note": "图版仅绘所列主体或明确局部，照片为形制与现状参考；人、树、周边建筑和标识不绘。",
+  "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The actual tall tapering octagonal brick pagoda, a complete sequence of stacked projecting eaves and a dark metal finial above a sturdy broad base. Preserve all visible tiers from the photo and no added roof levels.",
+  "generated_file": "assets/generated/zj_yongan.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single heritage monument fine-line illustration for Fanggu. Image 1 is the project STYLE MASTER only: match its elegant sparse delicate black contours and generous white space. Image 2 is an actual photograph of the named monument and is geometry evidence. Draw the REAL selected monument and its current visible state, preserving distinctive silhouette, structural counts, proportions and perspective. Black thin ink contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas, portrait 1024x1536 with whole subject centered and uncut. A few selective structural lines, large blank architectural planes. No gray shading, solid shadows, hatching, texture, paper grain, color, gradient, glow, checkerboard, transparency, sky, trees, people, surrounding buildings, labels, calligraphy, signs, watermark or border. Subject specifics: The actual tall tapering octagonal brick pagoda, a complete sequence of stacked projecting eaves and a dark metal finial above a sturdy broad base. Preserve all visible tiers from the photo and no added roof levels.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-65c4fef8-f23d-4486-9608-4e5f135f5f3b.png",
+      "accepted": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-65c4fef8-f23d-4486-9608-4e5f135f5f3b.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e6d3f652a597fdd66a1affee2fee2c55a0c46ef6992eac6d6d564708056492f9",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30"
+}

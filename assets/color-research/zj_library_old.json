@@ -1,0 +1,58 @@
+{
+  "id": "zj_library_old",
+  "name": "浙江图书馆旧址",
+  "subject": "浙江图书馆孤山馆舍红楼及前廊局部",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/zj_library_old.png",
+    "assets/references/zj_library_old-photo-selected.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and geometry/composition master. Preserve its silhouette, proportions, every bridge span/tower storey/opening, viewpoint, repairs, and all outer margins. Image 2 is documentary photo of this real monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible contours and restrained matte mineral-pigment planes, not its warm gold palette or dark background. Color the existing line drawing, do not redesign or add features. Thin charcoal contour lines, gentle flat material shading and sparse fine texture INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Original aspect ratio, one image only. Materials observed: Weathered red-brown brick and warm pale stone arch trims, muted dark roof tiles, near-black window recesses and restrained grey stone plinth.",
+  "material_observations": "Weathered red-brown brick and warm pale stone arch trims, muted dark roof tiles, near-black window recesses and restrained grey stone plinth.",
+  "references": {
+    "original_record": "assets/research/zj_library_old.json",
+    "selected_photo_files": [
+      "assets/references/zj_library_old-photo-selected.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20260424_Former_Site_of_Zhejiang_Library_01.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/20260424_Former_Site_of_Zhejiang_Library_01.jpg/960px-20260424_Former_Site_of_Zhejiang_Library_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2026-04-24 17:46:39",
+        "reference_file": "assets/references/zj_library_old-photo-selected.jpg",
+        "reference_dimensions": {
+          "width": 960,
+          "height": 640
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/zj_library_old.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-54b4b51b-c381-45e8-8964-9728a302bb47.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a38d16a8e39141572425c517c8e9e6991b0559be0919c86ae51357fa020ec882",
+    "seeds": []
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-09-29T17:57:45.195Z",
+    "sourceSha256": "a38d16a8e39141572425c517c8e9e6991b0559be0919c86ae51357fa020ec882",
+    "inputSha256": "7bfaa52217bf0885174d956730ea22a26fa3ada0859c281f66f00ab2c81a1704",
+    "avifSha256": "70985d30cf86d2bf2df941718501650a321467643a58033022b0bfc4e4a4dc3f"
+  }
+}
