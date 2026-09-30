@@ -1,0 +1,63 @@
+{
+  "id": "fj_zhangzhou_paifang",
+  "subject": "漳州三世宰贰石牌坊单体",
+  "caption": [
+    "三世宰贰坊",
+    "明万历 · 漳州石牌坊局部"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20260321_Sanshizai%E2%80%99er_Fang_(170228).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/20260321_Sanshizai%E2%80%99er_Fang_%28170228%29.jpg/960px-20260321_Sanshizai%E2%80%99er_Fang_%28170228%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260321_Sanshizai%E2%80%99er_Fang_(170228).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/20260321_Sanshizai%E2%80%99er_Fang_%28170228%29.jpg/960px-20260321_Sanshizai%E2%80%99er_Fang_%28170228%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2026-03-21 17:02:29",
+      "reference_file": "assets/references/fj_zhangzhou_paifang-photo.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_zhangzhou_paifang-photo.jpg"
+  ],
+  "source_note": "实拍用于形制与材质，年代和保护身份见下方资料链接；图版仅绘所列主体或局部，省略人、树与标识。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Portrait 1024x1536. Draw ONE actual Zhangzhou Sanshi Zai'er stone paifang (三世宰贰坊) from the reference: three bays, five superposed roof-like stone lintel levels, twelve supports visible by perspective, layered carved brackets and central tablets. Show all freestanding stone arch from feet to highest crest. Omit the surrounding street, shops, second arch and all inscriptions or text.",
+  "generated_file": "assets/generated/fj_zhangzhou_paifang.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Portrait 1024x1536. Draw ONE actual Zhangzhou Sanshi Zai'er stone paifang (三世宰贰坊) from the reference: three bays, five superposed roof-like stone lintel levels, twelve supports visible by perspective, layered carved brackets and central tablets. Show all freestanding stone arch from feet to highest crest. Omit the surrounding street, shops, second arch and all inscriptions or text.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-e1d0f9a0-7015-419c-a2fc-47adc4312447.png",
+      "selected_for_preview": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-e1d0f9a0-7015-419c-a2fc-47adc4312447.png",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "28bccbb3866e876b3abfb654c3bbc349978da81852c4bc3ee65807205a79685f",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30",
+  "historical_sources": [
+    {
+      "title": "国务院第4批国保名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+    },
+    {
+      "title": "福建及地方主管部门：所绘主体资料",
+      "url": "https://www.fj.gov.cn/yy/wxym/zfgbwxts/201605/t20160503_1183826.htm"
+    }
+  ]
+}

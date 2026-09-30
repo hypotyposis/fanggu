@@ -1,0 +1,63 @@
+{
+  "id": "fj_dongshan_guandi",
+  "subject": "东山关帝庙正面门楼与石阶",
+  "caption": [
+    "东山关帝庙 · 门楼",
+    "明洪武始建 · 现存立面"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20230203_Temple_of_Guan_Yu,_Dongshan_05.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/20230203_Temple_of_Guan_Yu%2C_Dongshan_05.jpg/960px-20230203_Temple_of_Guan_Yu%2C_Dongshan_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20230203_Temple_of_Guan_Yu,_Dongshan_05.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/20230203_Temple_of_Guan_Yu%2C_Dongshan_05.jpg/960px-20230203_Temple_of_Guan_Yu%2C_Dongshan_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "",
+      "reference_file": "assets/references/fj_dongshan_guandi-photo.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_dongshan_guandi-photo.jpg"
+  ],
+  "source_note": "实拍用于形制与材质，年代和保护身份见下方资料链接；图版仅绘所列主体或局部，省略人、树与标识。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Landscape 1536x1024. Draw Dongshan Guandi Temple's specific central gate facade and immediate steps: richly layered Minan roof with pronounced upturned ridge ends and elaborate openwork crest, symmetrical red masonry walls and stone-framed entrance. Keep detailed ornament selective and sparse, not filled black. No people, banners, freestanding signs or neighboring temple wings.",
+  "generated_file": "assets/generated/fj_dongshan_guandi.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Landscape 1536x1024. Draw Dongshan Guandi Temple's specific central gate facade and immediate steps: richly layered Minan roof with pronounced upturned ridge ends and elaborate openwork crest, symmetrical red masonry walls and stone-framed entrance. Keep detailed ornament selective and sparse, not filled black. No people, banners, freestanding signs or neighboring temple wings.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-6d3aaa69-dc09-461a-8fb1-57ba31a69b4c.png",
+      "selected_for_preview": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-6d3aaa69-dc09-461a-8fb1-57ba31a69b4c.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8ef3a6b817ed484b7cb9a1315542d008dc404f22a3f85f7495f967a83f2e9fb6",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30",
+  "historical_sources": [
+    {
+      "title": "国务院第4批国保名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+    },
+    {
+      "title": "福建及地方主管部门：所绘主体资料",
+      "url": "https://www.fj.gov.cn/xwdt/fjyw/202410/t20241017_6546057.htm"
+    }
+  ]
+}

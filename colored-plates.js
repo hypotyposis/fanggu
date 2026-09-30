@@ -7972,6 +7972,206 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "fj_luoyang": {
+    "src": "assets/colored-transparent-avif/fj_luoyang.avif",
+    "originalSrc": "assets/colored/fj_luoyang.png",
+    "transparentSrc": "assets/colored-transparent/fj_luoyang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "泉州洛阳桥现存石梁桥代表性一段 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_luoyang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Luoyang_Bridge,_Quanzhou_(20201001150149).jpg",
+        "author": "N509FZ",
+        "license": "CC BY-SA 4.0",
+        "date": ""
+      }
+    ]
+  },
+  "fj_tianhou": {
+    "src": "assets/colored-transparent-avif/fj_tianhou.avif",
+    "originalSrc": "assets/colored/fj_tianhou.png",
+    "transparentSrc": "assets/colored-transparent/fj_tianhou.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "泉州天后宫正殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_tianhou.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Quanzhou_-_Tianhou_Gong_-_main_hall_-_DSCF8646.JPG",
+        "author": "User:Vmenkov",
+        "license": "CC BY-SA 3.0",
+        "date": "2012-02-23"
+      }
+    ]
+  },
+  "fj_zhangzhou_paifang": {
+    "src": "assets/colored-transparent-avif/fj_zhangzhou_paifang.avif",
+    "originalSrc": "assets/colored/fj_zhangzhou_paifang.png",
+    "transparentSrc": "assets/colored-transparent/fj_zhangzhou_paifang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "漳州三世宰贰石牌坊单体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/fj_zhangzhou_paifang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260321_Sanshizai%E2%80%99er_Fang_(170228).jpg",
+        "author": "Yumeto",
+        "license": "CC BY-SA 4.0",
+        "date": "2026-03-21 17:02:29"
+      }
+    ]
+  },
+  "fj_jiangdong": {
+    "src": "assets/colored-transparent-avif/fj_jiangdong.avif",
+    "originalSrc": "assets/colored/fj_jiangdong.png",
+    "transparentSrc": "assets/colored-transparent/fj_jiangdong.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "漳州江东桥现存巨型石梁一段 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_jiangdong.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Zhangzhou_Jiangdong_Qiao_20120225-2.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 4.0",
+        "date": ""
+      }
+    ]
+  },
+  "fj_dongshan_guandi": {
+    "src": "assets/colored-transparent-avif/fj_dongshan_guandi.avif",
+    "originalSrc": "assets/colored/fj_dongshan_guandi.png",
+    "transparentSrc": "assets/colored-transparent/fj_dongshan_guandi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "东山关帝庙正面门楼与石阶 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_dongshan_guandi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20230203_Temple_of_Guan_Yu,_Dongshan_05.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": ""
+      }
+    ]
+  },
+  "fj_eryi": {
+    "src": "assets/colored-transparent-avif/fj_eryi.avif",
+    "originalSrc": "assets/colored/fj_eryi.png",
+    "transparentSrc": "assets/colored-transparent/fj_eryi.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "华安二宜楼圆形土楼外立面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_eryi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%8C%E5%AE%9C%E6%A5%BC_-_Eryi_Lou_-_2013.11_-_panoramio.jpg",
+        "author": "rheins",
+        "license": "CC BY 3.0",
+        "date": "Taken on 30 November 2013"
+      }
+    ]
+  },
+  "fj_hegui": {
+    "src": "assets/colored-transparent-avif/fj_hegui.avif",
+    "originalSrc": "assets/colored/fj_hegui.png",
+    "transparentSrc": "assets/colored-transparent/fj_hegui.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "南靖和贵楼方形土楼正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_hegui.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260322_Hegui_Lou.jpg",
+        "author": "Yumeto",
+        "license": "CC BY-SA 4.0",
+        "date": ""
+      }
+    ]
+  },
+  "fj_hulishan": {
+    "src": "assets/colored-transparent-avif/fj_hulishan.avif",
+    "originalSrc": "assets/colored/fj_hulishan.png",
+    "transparentSrc": "assets/colored-transparent/fj_hulishan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "厦门胡里山炮台克虏伯大炮炮位 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_hulishan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Hulishan_Fort_Krupp_artillery_01_20170728.jpg",
+        "author": "Tyg728",
+        "license": "CC BY-SA 4.0",
+        "date": "2017-07-28 12:03:26"
+      }
+    ]
+  },
+  "fj_laojun": {
+    "src": "assets/colored-transparent-avif/fj_laojun.avif",
+    "originalSrc": "assets/colored/fj_laojun.png",
+    "transparentSrc": "assets/colored-transparent/fj_laojun.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "清源山老君坐像与原岩 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/fj_laojun.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Statue_of_Lao_Tzu_in_Quanzhou.jpg",
+        "author": "Tom@HK",
+        "license": "CC BY 2.0",
+        "date": "2008-01-07"
+      }
+    ]
+  },
+  "fj_fuzhou_wenmiao": {
+    "src": "assets/colored-transparent-avif/fj_fuzhou_wenmiao.avif",
+    "originalSrc": "assets/colored/fj_fuzhou_wenmiao.png",
+    "transparentSrc": "assets/colored-transparent/fj_fuzhou_wenmiao.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "福州文庙大成殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/fj_fuzhou_wenmiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E5%B7%9E%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF2026.1_(1).jpg",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "date": "2026-01-18 09:03:34"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

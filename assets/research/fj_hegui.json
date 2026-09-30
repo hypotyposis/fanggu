@@ -1,0 +1,63 @@
+{
+  "id": "fj_hegui",
+  "subject": "南靖和贵楼方形土楼正面",
+  "caption": [
+    "南靖和贵楼 · 正面",
+    "清雍正 · 五层方楼"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20260322_Hegui_Lou.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/20260322_Hegui_Lou.jpg/960px-20260322_Hegui_Lou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260322_Hegui_Lou.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/20260322_Hegui_Lou.jpg/960px-20260322_Hegui_Lou.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "",
+      "reference_file": "assets/references/fj_hegui-photo.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 720
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_hegui-photo.jpg"
+  ],
+  "source_note": "实拍用于形制与材质，年代和保护身份见下方资料链接；图版仅绘所列主体或局部，省略人、树与标识。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Landscape 1536x1024. Draw the front of Nanjing Hegui Lou: extremely broad RECTANGULAR five-storey earthen tulou, nearly flat long horizontal roof with slightly raised end corners, disciplined rows of tiny square wall openings, single central gate, enclosing low courtyard wall in front. Do not turn it round. Show full front and both ends, no people.",
+  "generated_file": "assets/generated/fj_hegui.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Landscape 1536x1024. Draw the front of Nanjing Hegui Lou: extremely broad RECTANGULAR five-storey earthen tulou, nearly flat long horizontal roof with slightly raised end corners, disciplined rows of tiny square wall openings, single central gate, enclosing low courtyard wall in front. Do not turn it round. Show full front and both ends, no people.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-f7c76bd8-88b8-4a6a-9767-c4562eb229d1.png",
+      "selected_for_preview": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-f7c76bd8-88b8-4a6a-9767-c4562eb229d1.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f32ed66e2a1aae997df67b1a7cfb3f7229e9bf0bd57f35e8bf547a1f268ec81c",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30",
+  "historical_sources": [
+    {
+      "title": "国务院第5批国保名单",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+    },
+    {
+      "title": "福建及地方主管部门：所绘主体资料",
+      "url": "https://fgw.fj.gov.cn/ztzl/fjys/fjys/202311/t20231109_6293087.htm"
+    }
+  ]
+}

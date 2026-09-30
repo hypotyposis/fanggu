@@ -4375,6 +4375,126 @@ const PLATES = {
       "知恩院 · 御影堂",
       "江户时代 · 1639年再建"
     ]
+  },
+  "fj_luoyang": {
+    "src": "assets/plates/fj_luoyang.png",
+    "alt": "泉州洛阳桥现存石梁桥代表性一段 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "洛阳桥 · 石梁与桥墩",
+      "北宋 · 嘉祐四年建成"
+    ]
+  },
+  "fj_tianhou": {
+    "src": "assets/plates/fj_tianhou.png",
+    "alt": "泉州天后宫正殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "泉州天后宫 · 正殿",
+      "南宋始建 · 后世修缮"
+    ]
+  },
+  "fj_zhangzhou_paifang": {
+    "src": "assets/plates/fj_zhangzhou_paifang.png",
+    "alt": "漳州三世宰贰石牌坊单体 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "三世宰贰坊",
+      "明万历 · 漳州石牌坊局部"
+    ]
+  },
+  "fj_jiangdong": {
+    "src": "assets/plates/fj_jiangdong.png",
+    "alt": "漳州江东桥现存巨型石梁一段 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "江东桥 · 石梁局部",
+      "南宋 · 嘉熙年间"
+    ]
+  },
+  "fj_dongshan_guandi": {
+    "src": "assets/plates/fj_dongshan_guandi.png",
+    "alt": "东山关帝庙正面门楼与石阶 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "东山关帝庙 · 门楼",
+      "明洪武始建 · 现存立面"
+    ]
+  },
+  "fj_eryi": {
+    "src": "assets/plates/fj_eryi.png",
+    "alt": "华安二宜楼圆形土楼外立面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "华安二宜楼 · 外立面",
+      "清乾隆五年 · 圆土楼"
+    ]
+  },
+  "fj_hegui": {
+    "src": "assets/plates/fj_hegui.png",
+    "alt": "南靖和贵楼方形土楼正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "南靖和贵楼 · 正面",
+      "清雍正 · 五层方楼"
+    ]
+  },
+  "fj_hulishan": {
+    "src": "assets/plates/fj_hulishan.png",
+    "alt": "厦门胡里山炮台克虏伯大炮炮位 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "胡里山炮台 · 克虏伯炮位",
+      "清光绪 · 海防遗存"
+    ]
+  },
+  "fj_laojun": {
+    "src": "assets/plates/fj_laojun.png",
+    "alt": "清源山老君坐像与原岩 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "清源山老君岩 · 坐像",
+      "宋代石刻 · 第三批国保"
+    ]
+  },
+  "fj_fuzhou_wenmiao": {
+    "src": "assets/plates/fj_fuzhou_wenmiao.png",
+    "alt": "福州文庙大成殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "福州文庙 · 大成殿",
+      "清咸丰 · 七开间"
+    ]
   }
 };
 

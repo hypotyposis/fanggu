@@ -11290,3 +11290,353 @@ SITES.push(...[
     caption: ['知恩院 · 御影堂', '江户时代 · 1639年再建'], legacyNames: ['知恩院御影堂', 'Chionin Mieido'],
   },
 ]);
+
+// 福建国保增补（2026-09-30）。图版、来源与国保登记见同 ID 记录。
+PLACES.push(...[
+  {
+    "key": "fj_zhangzhou",
+    "name": "漳州",
+    "prov": "福建",
+    "country": "CN",
+    "lat": 24.5093,
+    "lon": 117.6516,
+    "coordinate_note": "漳州市区近似地图显示点，非各图版主体实测坐标。"
+  },
+  {
+    "key": "fj_dongshan",
+    "name": "东山",
+    "prov": "福建",
+    "country": "CN",
+    "lat": 23.7048,
+    "lon": 117.4308,
+    "coordinate_note": "东山铜陵附近近似地图显示点，非门楼实测坐标。"
+  },
+  {
+    "key": "fj_huaan",
+    "name": "华安",
+    "prov": "福建",
+    "country": "CN",
+    "lat": 25.0236,
+    "lon": 117.6867,
+    "coordinate_note": "华安大地村附近近似地图显示点，非二宜楼实测坐标。"
+  },
+  {
+    "key": "fj_nanjing",
+    "name": "南靖",
+    "prov": "福建",
+    "country": "CN",
+    "lat": 24.6591,
+    "lon": 117.1849,
+    "coordinate_note": "南靖璞山村附近近似地图显示点，非和贵楼实测坐标。"
+  },
+  {
+    "key": "fj_xiamen",
+    "name": "厦门",
+    "prov": "福建",
+    "country": "CN",
+    "lat": 24.4413,
+    "lon": 118.0848,
+    "coordinate_note": "厦门胡里山附近近似地图显示点，非炮位实测坐标。"
+  }
+]);
+SITES.push(...[
+  {
+    "id": "fj_luoyang",
+    "name": "洛阳桥",
+    "short": "万安桥",
+    "sub": "石梁桥 · 连续桥墩局部",
+    "place": "福建泉州 · 洛阳江口",
+    "placeKey": "quanzhou",
+    "types": [
+      "bridge"
+    ],
+    "dyn": "song",
+    "tag": "北宋",
+    "era": "嘉祐四年建成",
+    "year": 1059,
+    "lede": "石梁跨过洛阳江口，尖形桥墩迎着潮水。洛阳桥将海港交通与宋代石桥营造连在一起。",
+    "facts": [
+      "北宋皇祐五年（1053）开工，嘉祐四年（1059）落成。",
+      "图版画连续石梁和桥墩的代表性局部；现存桥梁经历多次修缮。"
+    ],
+    "caption": [
+      "洛阳桥 · 石梁与桥墩",
+      "北宋 · 嘉祐四年建成"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "1053年始建、1059年建成；图版仅取一段，不以局部表现全桥。",
+    "legacyNames": []
+  },
+  {
+    "id": "fj_tianhou",
+    "name": "泉州天后宫",
+    "short": "天后宫",
+    "sub": "正殿 · 闽南翘脊",
+    "place": "福建泉州 · 天后路",
+    "placeKey": "quanzhou",
+    "types": [
+      "hall"
+    ],
+    "dyn": "song",
+    "tag": "南宋",
+    "era": "庆元二年始建",
+    "year": 1196,
+    "lede": "翘起的屋脊与深远的前檐面对古城南门，泉州天后宫保存了海港城市的妈祖信仰空间。",
+    "facts": [
+      "泉州天后宫创建于1196年，原称顺济宫。",
+      "正殿为国保单位中的一处主体建筑，历代维修后仍沿袭前殿后寝的格局。"
+    ],
+    "caption": [
+      "泉州天后宫 · 正殿",
+      "南宋始建 · 后世修缮"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "1196年为天后宫始建年；正殿经历历代修缮，图版绘现状。",
+    "legacyNames": []
+  },
+  {
+    "id": "fj_zhangzhou_paifang",
+    "name": "漳州石牌坊·三世宰贰坊",
+    "short": "三世宰贰坊",
+    "sub": "三世宰贰坊 · 单体",
+    "place": "福建漳州 · 芗城香港路",
+    "placeKey": "fj_zhangzhou",
+    "types": [
+      "gate"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "万历年间营建",
+    "year": 1619,
+    "lede": "青灰石柱与横枋层叠成高耸的门形，在漳州古城街巷中立起一座明代旌表石坊。",
+    "facts": [
+      "漳州石牌坊国保包括香港路两座明代石坊与岳口街两座清代石坊。",
+      "图版只绘香港路的三世宰贰坊，省去周围街屋与另一座石坊。"
+    ],
+    "caption": [
+      "三世宰贰坊",
+      "明万历 · 漳州石牌坊局部"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "三世宰贰坊确切建年资料有异说，以万历年间约略定位；图版仅画此坊，不代表四坊全组。",
+    "yearApprox": true,
+    "yearLabel": "明万历",
+    "legacyNames": [
+      "漳州石牌坊"
+    ]
+  },
+  {
+    "id": "fj_jiangdong",
+    "name": "江东桥",
+    "short": "江东桥",
+    "sub": "石梁桥 · 局部",
+    "place": "福建漳州 · 九龙江北溪",
+    "placeKey": "fj_zhangzhou",
+    "types": [
+      "bridge"
+    ],
+    "dyn": "song",
+    "tag": "南宋",
+    "era": "嘉熙年间建成",
+    "year": 1241,
+    "lede": "巨石横梁连起一座座厚重的桥墩，江东桥展示了南宋闽南石桥的尺度。",
+    "facts": [
+      "江东桥又称虎渡桥，南宋嘉熙年间跨九龙江北溪兴建。",
+      "图版保留代表性连续桥段，不把整座长桥压缩成一张全景。"
+    ],
+    "caption": [
+      "江东桥 · 石梁局部",
+      "南宋 · 嘉熙年间"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "1237—1241年营建；桥梁后世屡修，图版绘现存一段石梁与桥墩。",
+    "legacyNames": []
+  },
+  {
+    "id": "fj_dongshan_guandi",
+    "name": "东山关帝庙",
+    "short": "铜陵关帝庙",
+    "sub": "门楼 · 闽南剪瓷雕屋脊",
+    "place": "福建漳州 · 东山铜陵",
+    "placeKey": "fj_dongshan",
+    "types": [
+      "gate",
+      "hall"
+    ],
+    "dyn": "ming",
+    "tag": "明",
+    "era": "洪武二十年始建",
+    "year": 1387,
+    "lede": "层层翘脊与剪瓷雕压在山门之上，东山关帝庙把海岛上的关帝信仰凝成鲜明的闽南立面。",
+    "facts": [
+      "东山关帝庙于明洪武二十年（1387）始建。",
+      "图版取正面门楼与石阶，不把整组殿宇缩作一座建筑。"
+    ],
+    "caption": [
+      "东山关帝庙 · 门楼",
+      "明洪武始建 · 现存立面"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "1387年为庙宇始建年；图版取现存门楼与入口，屋脊装饰和建筑曾修缮。",
+    "legacyNames": []
+  },
+  {
+    "id": "fj_eryi",
+    "name": "华安二宜楼",
+    "short": "二宜楼",
+    "sub": "圆土楼 · 外立面",
+    "place": "福建漳州 · 华安大地村",
+    "placeKey": "fj_huaan",
+    "types": [
+      "residence"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "乾隆五年建",
+    "year": 1740,
+    "lede": "圆形夯土外墙沿着屋檐铺开，二宜楼以厚重的外环包住家族的日常生活。",
+    "facts": [
+      "二宜楼建于清乾隆五年（1740），是华安大地土楼群的代表。",
+      "图版取圆楼外立面；二宜楼原为第四批独立国保，后纳入福建土楼。"
+    ],
+    "caption": [
+      "华安二宜楼 · 外立面",
+      "清乾隆五年 · 圆土楼"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "legacyNames": [
+      "二宜楼"
+    ]
+  },
+  {
+    "id": "fj_hegui",
+    "name": "南靖和贵楼",
+    "short": "和贵楼",
+    "sub": "方土楼 · 五层正面",
+    "place": "福建漳州 · 南靖璞山村",
+    "placeKey": "fj_nanjing",
+    "types": [
+      "residence"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "雍正年间营建",
+    "year": 1732,
+    "lede": "五层方楼的夯土墙高高立起，方整屋面和密布的小窗使和贵楼与圆楼呈现不同的防御形制。",
+    "facts": [
+      "和贵楼位于南靖，是福建土楼国保单位及世界遗产的组成部分。",
+      "图版取现存方楼正面与前方低围墙，不代表内部院落。"
+    ],
+    "caption": [
+      "南靖和贵楼 · 正面",
+      "清雍正 · 五层方楼"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "以清雍正年间约略定位，不将传述的年份当作经核定的每层建年。",
+    "yearApprox": true,
+    "yearLabel": "清雍正",
+    "legacyNames": [
+      "福建土楼"
+    ]
+  },
+  {
+    "id": "fj_hulishan",
+    "name": "胡里山炮台",
+    "short": "胡里山炮台",
+    "sub": "克虏伯炮位 · 局部",
+    "place": "福建厦门 · 胡里山",
+    "placeKey": "fj_xiamen",
+    "types": [
+      "wall"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "光绪年间建成",
+    "year": 1894,
+    "lede": "长炮管从低矮的砌石炮位伸向海面，胡里山炮台留下厦门晚清海防的工业尺度。",
+    "facts": [
+      "胡里山炮台为第四批国保，保存晚清海防设施。",
+      "图版仅取克虏伯大炮及固定炮位，不画整组炮台。"
+    ],
+    "caption": [
+      "胡里山炮台 · 克虏伯炮位",
+      "清光绪 · 海防遗存"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "图版绘现存克虏伯炮位局部；1894为炮台晚清建设阶段约略定位，不表示所有设施同年安装。",
+    "yearApprox": true,
+    "yearLabel": "清光绪",
+    "legacyNames": []
+  },
+  {
+    "id": "fj_laojun",
+    "name": "清源山老君岩造像",
+    "short": "老君岩",
+    "sub": "老君坐像 · 宋代石刻",
+    "place": "福建泉州 · 清源山",
+    "placeKey": "quanzhou",
+    "types": [
+      "sculpture"
+    ],
+    "dyn": "song",
+    "tag": "宋",
+    "era": "宋代造像",
+    "year": 1150,
+    "lede": "披发长须的老君坐在天然巨岩中，石头的原形与人物姿态连成一体。",
+    "facts": [
+      "老君岩造像为第三批国保，后与清源山其他石造像合并保护。",
+      "图版只绘老君坐像及相连岩体，不借用同山其他石刻的批次。"
+    ],
+    "caption": [
+      "清源山老君岩 · 坐像",
+      "宋代石刻 · 第三批国保"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "1150仅为宋代年表约略定位，不是老君岩确证开凿年；主体按第三批老君岩造像登记。",
+    "yearApprox": true,
+    "yearLabel": "宋代",
+    "legacyNames": [
+      "老君岩造像"
+    ]
+  },
+  {
+    "id": "fj_fuzhou_wenmiao",
+    "name": "福州文庙",
+    "short": "福州文庙",
+    "sub": "大成殿 · 七开间",
+    "place": "福建福州 · 圣庙路",
+    "placeKey": "fuzhou",
+    "types": [
+      "hall",
+      "school"
+    ],
+    "dyn": "ming",
+    "tag": "清",
+    "era": "咸丰年间现构",
+    "year": 1852,
+    "lede": "宽阔的大成殿横列七间，石阶与深远屋檐围出福州祭孔和讲学的核心空间。",
+    "facts": [
+      "福州文庙为第六批国保，现存建筑主要在清咸丰年间修建。",
+      "图版只绘大成殿正面，近期修缮状态以2026年实拍为参考。"
+    ],
+    "caption": [
+      "福州文庙 · 大成殿",
+      "清咸丰 · 七开间"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "yearNote": "文庙起源较早；大成殿按1851—1854年修建阶段约略定位，图版为2026年修缮后现状。",
+    "yearApprox": true,
+    "yearLabel": "清咸丰",
+    "legacyNames": []
+  }
+]);

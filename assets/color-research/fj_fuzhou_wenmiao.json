@@ -1,0 +1,50 @@
+{
+  "id": "fj_fuzhou_wenmiao",
+  "name": "福州文庙",
+  "subject": "福州文庙大成殿正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/fj_fuzhou_wenmiao.png",
+    "assets/references/fj_fuzhou_wenmiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and is the geometry and composition master. Preserve its silhouette, proportions, every beam span, wall opening, roof, stone arch or statue contour, viewpoint and all outer margins. Image 2 is a real documentary photo of the named monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible charcoal contours and restrained matte mineral-pigment planes, NOT its warm gold palette or black background. Color the existing line drawing, do not redesign or add features. Gentle flat material shading and sparse fine texture only INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Keep original aspect ratio, one image only. Materials observed: Weathered dark grey roof tiles, muted red-brown timber columns and doors, light grey stone steps and balustrades, pale neutral plaster; a few restrained ochre roof details.",
+  "material_observations": "Weathered dark grey roof tiles, muted red-brown timber columns and doors, light grey stone steps and balustrades, pale neutral plaster; a few restrained ochre roof details.",
+  "references": {
+    "original_record": "assets/research/fj_fuzhou_wenmiao.json",
+    "selected_photo_files": [
+      "assets/references/fj_fuzhou_wenmiao-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E5%B7%9E%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF2026.1_(1).jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/%E7%A6%8F%E5%B7%9E%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF2026.1_%281%29.jpg/960px-%E7%A6%8F%E5%B7%9E%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF2026.1_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2026-01-18 09:03:34",
+        "reference_file": "assets/references/fj_fuzhou_wenmiao-photo.jpg",
+        "reference_dimensions": {
+          "width": 960,
+          "height": 649
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/fj_fuzhou_wenmiao.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-2373f30b-7518-429c-835f-616a8e950d3c.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2034b58cc2219c9c6759eda275d16679707a7f7c706e26627ed45cb211e91d01",
+    "seeds": []
+  }
+}

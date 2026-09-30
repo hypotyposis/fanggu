@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-25",
+  "checkedAt": "2026-09-30",
   "level": "全国重点文物保护单位",
   "batchMeaning": "所绘主体首次被该批正式公布或纳入合并项目；不是合并后母单位的最早批次。",
   "sources": {
@@ -3650,6 +3650,173 @@
           {
             "title": "杭州市政府：岳飞墓及迁葬现址",
             "url": "https://www.ehangzhou.gov.cn/2020-09/03/c_271146.htm"
+          }
+        ]
+      }
+    ],
+    "fj_luoyang": [
+      {
+        "batch": 3,
+        "unitName": "洛阳桥",
+        "relation": "unit",
+        "scope": "洛阳桥现存石梁桥一段",
+        "locator": "国务院第三批名单 · 福建 · 洛阳桥",
+        "source": "batch3",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://fj.gov.cn/zwgk/ztzl/sxzygwzxsgzx/flsxkmh/202605/t20260515_7148175.htm"
+          }
+        ]
+      }
+    ],
+    "fj_tianhou": [
+      {
+        "batch": 3,
+        "unitName": "泉州天后宫",
+        "relation": "part",
+        "scope": "泉州天后宫正殿正面",
+        "locator": "国务院第三批名单 · 福建 · 泉州天后宫",
+        "source": "batch3",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://quanzhou.gov.cn/lyb/lytj/rmjdtj/202202/t20220224_2699979.htm"
+          }
+        ]
+      }
+    ],
+    "fj_zhangzhou_paifang": [
+      {
+        "batch": 4,
+        "unitName": "漳州石牌坊",
+        "relation": "part",
+        "scope": "香港路三世宰贰坊单体",
+        "locator": "国务院第四批名单 · 福建 · 漳州石牌坊",
+        "source": "batch4",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://www.fj.gov.cn/yy/wxym/zfgbwxts/201605/t20160503_1183826.htm"
+          }
+        ]
+      }
+    ],
+    "fj_jiangdong": [
+      {
+        "batch": 5,
+        "unitName": "江东桥",
+        "relation": "unit",
+        "scope": "江东桥现存石梁桥局部",
+        "locator": "国务院第五批名单 · 福建 · 江东桥",
+        "source": "batch5",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://www.fj.gov.cn/yy/wxym/zfgbwxts/201605/t20160503_1183826.htm"
+          }
+        ]
+      }
+    ],
+    "fj_dongshan_guandi": [
+      {
+        "batch": 4,
+        "unitName": "东山关帝庙",
+        "relation": "part",
+        "scope": "正面门楼与石阶",
+        "locator": "国务院第四批名单 · 福建 · 东山关帝庙",
+        "source": "batch4",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://www.fj.gov.cn/xwdt/fjyw/202410/t20241017_6546057.htm"
+          }
+        ]
+      }
+    ],
+    "fj_eryi": [
+      {
+        "batch": 4,
+        "unitName": "二宜楼",
+        "relation": "unit",
+        "scope": "华安二宜楼外环圆形夯土楼",
+        "locator": "国务院第四批名单 · 福建 · 二宜楼",
+        "source": "batch4",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://fgw.fj.gov.cn/ztzl/fjys/fjys/202311/t20231109_6293087.htm"
+          }
+        ],
+        "note": "二宜楼自身第四批入选，后并入福建土楼；以首次公布批次标注。"
+      }
+    ],
+    "fj_hegui": [
+      {
+        "batch": 5,
+        "unitName": "福建土楼",
+        "relation": "merged",
+        "scope": "南靖和贵楼五层方土楼",
+        "locator": "国务院第五批名单 · 福建土楼合并项目",
+        "source": "batch5",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://fgw.fj.gov.cn/ztzl/fjys/fjys/202311/t20231109_6293087.htm"
+          }
+        ],
+        "parent": {
+          "unitName": "二宜楼",
+          "batch": 4
+        },
+        "note": "和贵楼按第五批福建土楼纳入，不沿用原单位二宜楼的第四批。"
+      }
+    ],
+    "fj_hulishan": [
+      {
+        "batch": 4,
+        "unitName": "胡里山炮台",
+        "relation": "part",
+        "scope": "现存东炮台克虏伯大炮及炮位局部",
+        "locator": "国务院第四批名单 · 福建 · 胡里山炮台",
+        "source": "batch4",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://fj.gov.cn/zwgk/zxwj/szfwj/202211/t20221124_6061983.htm"
+          }
+        ]
+      }
+    ],
+    "fj_laojun": [
+      {
+        "batch": 3,
+        "unitName": "老君岩造像",
+        "relation": "unit",
+        "scope": "清源山老君岩坐像与相连原岩",
+        "locator": "国务院第三批名单 · 福建 · 老君岩造像",
+        "source": "batch3",
+        "scopeSources": [
+          {
+            "title": "福建及地方主管部门：所绘主体资料",
+            "url": "https://www.quanzhou.gov.cn/zfb/xxgk/zfxxgkzl/ztzl/qys/zwxx/202008/t20200806_2399396.htm"
+          }
+        ],
+        "note": "老君岩造像自身第三批入选，后并入清源山石造像；以首次公布批次标注。"
+      }
+    ],
+    "fj_fuzhou_wenmiao": [
+      {
+        "batch": 6,
+        "unitName": "福州文庙",
+        "relation": "part",
+        "scope": "福州文庙大成殿正面",
+        "locator": "国务院第六批名单 · 古建筑第599项 · 福州文庙",
+        "source": "batch6",
+        "scopeSources": [
+          {
+            "title": "福州市人民政府：大成殿修缮及七开间形制",
+            "url": "https://www.fuzhou.gov.cn/zwgk/gzdt/rcyw/202512/t20251212_5256340.htm"
           }
         ]
       }

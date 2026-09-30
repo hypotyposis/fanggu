@@ -1,0 +1,50 @@
+{
+  "id": "fj_dongshan_guandi",
+  "name": "东山关帝庙",
+  "subject": "东山关帝庙正面门楼与石阶",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/fj_dongshan_guandi.png",
+    "assets/references/fj_dongshan_guandi-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion heritage plate. Image 1 is the EXACT final black-ink line drawing and is the geometry and composition master. Preserve its silhouette, proportions, every beam span, wall opening, roof, stone arch or statue contour, viewpoint and all outer margins. Image 2 is a real documentary photo of the named monument, for material colors only. Image 3 is the project colored style sample: borrow thin legible charcoal contours and restrained matte mineral-pigment planes, NOT its warm gold palette or black background. Color the existing line drawing, do not redesign or add features. Gentle flat material shading and sparse fine texture only INSIDE solid surfaces. No scenery, people, trees, signs, text, watermark, cast shadow, halo, gradients, paper grain or checkerboard. Entire outside background and genuine openings perfectly flat opaque PURE WHITE #FFFFFF. Keep original aspect ratio, one image only. Materials observed: Grey ceramic roof tiles, muted brick-red walls, stone-grey steps and columns, small touches of aged ochre and restrained green/red ceramic ridge ornament.",
+  "material_observations": "Grey ceramic roof tiles, muted brick-red walls, stone-grey steps and columns, small touches of aged ochre and restrained green/red ceramic ridge ornament.",
+  "references": {
+    "original_record": "assets/research/fj_dongshan_guandi.json",
+    "selected_photo_files": [
+      "assets/references/fj_dongshan_guandi-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:20230203_Temple_of_Guan_Yu,_Dongshan_05.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/20230203_Temple_of_Guan_Yu%2C_Dongshan_05.jpg/960px-20230203_Temple_of_Guan_Yu%2C_Dongshan_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "",
+        "reference_file": "assets/references/fj_dongshan_guandi-photo.jpg",
+        "reference_dimensions": {
+          "width": 960,
+          "height": 640
+        }
+      }
+    ]
+  },
+  "output": "assets/colored/fj_dongshan_guandi.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型阶段保留候选，待用户集中审图。"
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-6895decd-68e3-44ad-bdfd-b3c2f4df354c.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d6c1162396c88f9117438bfdb0286ea87eca15ee333a57252cbb6ec0c2ec4410",
+    "seeds": []
+  }
+}

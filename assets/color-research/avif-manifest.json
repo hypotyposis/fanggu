@@ -17093,6 +17093,426 @@
         "avifSha256": "50629500780d512ed9f0c7b029ee9ae0c26c8b00f1e857ee64b3bff2732f5fde",
         "inputSha256": "dfae83ff14b25b5a1901608d805c685e1d788da17737db9458fc7c7c55e6f704"
       }
+    },
+    "fj_luoyang": {
+      "source": "assets/colored/fj_luoyang.png",
+      "sourceSha256": "e4146209af62a83524b2ed115e8547d77d9806e8946ee955bb9f37d6ff6724e5",
+      "sourceBytes": 1970663,
+      "input": "assets/colored-transparent/fj_luoyang.png",
+      "inputSha256": "57d9b8ca1071356a420e9990dff480245a0928a362814c6ade66ad745391365d",
+      "inputBytes": 1696926,
+      "src": "assets/colored-transparent-avif/fj_luoyang.avif",
+      "sha256": "c704f3957e3cf4ecc17657447023d5953de3801d7af40da69ad80f7a938ba19d",
+      "bytes": 223273,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1003833,
+        "opaquePixels": 559745,
+        "meanError": 0.0073312123616536455,
+        "maxError": 9
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.303,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e4146209af62a83524b2ed115e8547d77d9806e8946ee955bb9f37d6ff6724e5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_tianhou": {
+      "source": "assets/colored/fj_tianhou.png",
+      "sourceSha256": "23681cfa399b931059222c7dee57a50af8d942ebdb092a04d50fafbceb6dc1c4",
+      "sourceBytes": 1849515,
+      "input": "assets/colored-transparent/fj_tianhou.png",
+      "inputSha256": "7b083167a2a4c88ce05ae929b706a1626d811c8c63be88f871be7302fc24ffc7",
+      "inputBytes": 1709686,
+      "src": "assets/colored-transparent-avif/fj_tianhou.avif",
+      "sha256": "ad0582dc7c2733b149b0dcc177a479e58c26d44a3018ec72d046bd5bcb0dbb87",
+      "bytes": 209292,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 916798,
+        "opaquePixels": 644040,
+        "meanError": 0.009372711181640625,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.298,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "23681cfa399b931059222c7dee57a50af8d942ebdb092a04d50fafbceb6dc1c4",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_zhangzhou_paifang": {
+      "source": "assets/colored/fj_zhangzhou_paifang.png",
+      "sourceSha256": "40e9e8e20796e24bddae077d5f747b546652121647c640d7950b82f9f436b237",
+      "sourceBytes": 2232821,
+      "input": "assets/colored-transparent/fj_zhangzhou_paifang.png",
+      "inputSha256": "100b39b36b6167af9e5a184c1615d5ad84f3204302ac45c73d3b7ce375e21019",
+      "inputBytes": 2063166,
+      "src": "assets/colored-transparent-avif/fj_zhangzhou_paifang.avif",
+      "sha256": "980d2285d5bd6b59d44bec21f9858d6c844f05c20ee3bfa6797cf182079fe430",
+      "bytes": 275593,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 892272,
+        "opaquePixels": 663184,
+        "meanError": 0.013334274291992188,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.258,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "40e9e8e20796e24bddae077d5f747b546652121647c640d7950b82f9f436b237",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_jiangdong": {
+      "source": "assets/colored/fj_jiangdong.png",
+      "sourceSha256": "bc3ced0f0d4e3e26f0033584ca846a786009ade67d9308cec99defe7b31ed2a3",
+      "sourceBytes": 1151219,
+      "input": "assets/colored-transparent/fj_jiangdong.png",
+      "inputSha256": "ef1b4de703e44b91eabba10ad8813ff99f432aa864ec5e017cda043e9865e61c",
+      "inputBytes": 902050,
+      "src": "assets/colored-transparent-avif/fj_jiangdong.avif",
+      "sha256": "ebcef30f29c7f9bacad4ea608be8d4ca8f97aebf2536cbe8409fdf2d20ac8326",
+      "bytes": 62882,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1454157,
+        "opaquePixels": 109835,
+        "meanError": 0.0066699981689453125,
+        "maxError": 8
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.257,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "bc3ced0f0d4e3e26f0033584ca846a786009ade67d9308cec99defe7b31ed2a3",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_dongshan_guandi": {
+      "source": "assets/colored/fj_dongshan_guandi.png",
+      "sourceSha256": "d6c1162396c88f9117438bfdb0286ea87eca15ee333a57252cbb6ec0c2ec4410",
+      "sourceBytes": 2522945,
+      "input": "assets/colored-transparent/fj_dongshan_guandi.png",
+      "inputSha256": "f2786a71f5f3904295f3ec392a362c9ab5402f1bcb89e6ded123018a2b46b617",
+      "inputBytes": 2401722,
+      "src": "assets/colored-transparent-avif/fj_dongshan_guandi.avif",
+      "sha256": "2d3a48f152470d37202f1d76b1ba3794c63b419ba957bc611bf9a044088edd1d",
+      "bytes": 346696,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 632487,
+        "opaquePixels": 925881,
+        "meanError": 0.011536280314127604,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.312,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d6c1162396c88f9117438bfdb0286ea87eca15ee333a57252cbb6ec0c2ec4410",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_eryi": {
+      "source": "assets/colored/fj_eryi.png",
+      "sourceSha256": "7df200c0c78639f5af397dd284dc388f6bbd823a390653c42bc37e54ba838298",
+      "sourceBytes": 2230879,
+      "input": "assets/colored-transparent/fj_eryi.png",
+      "inputSha256": "feef99f37b0f045af51c78345528a274a57b626d1a09316927ee3eec8cdd324d",
+      "inputBytes": 2008989,
+      "src": "assets/colored-transparent-avif/fj_eryi.avif",
+      "sha256": "58ee3ec31e6e718c5adc22ef318ec81ee6218c06cdc7a6639fc4e44a49810261",
+      "bytes": 208545,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 988844,
+        "opaquePixels": 577151,
+        "meanError": 0.005364735921223958,
+        "maxError": 12
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.342,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "7df200c0c78639f5af397dd284dc388f6bbd823a390653c42bc37e54ba838298",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_hegui": {
+      "source": "assets/colored/fj_hegui.png",
+      "sourceSha256": "ae0d1134922cd8932ea3e11f5c7796e37b6bdf7c7e69c88aa7167a846971391f",
+      "sourceBytes": 1995147,
+      "input": "assets/colored-transparent/fj_hegui.png",
+      "inputSha256": "ec2b831a2931a4982e6e6febc110c616a852b3056552a65dceb5610030c6647e",
+      "inputBytes": 1765612,
+      "src": "assets/colored-transparent-avif/fj_hegui.avif",
+      "sha256": "b8b8c6ce233e45dfbc5d71cde0cad1a4d3995afa7436ff7c3b4ba44bcd1936c3",
+      "bytes": 234988,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 942483,
+        "opaquePixels": 621663,
+        "meanError": 0.0066890716552734375,
+        "maxError": 10
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.295,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ae0d1134922cd8932ea3e11f5c7796e37b6bdf7c7e69c88aa7167a846971391f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_hulishan": {
+      "source": "assets/colored/fj_hulishan.png",
+      "sourceSha256": "6bce28eceb7e9ed7bf201dd0b6b91e175547c5a09e2759dc2d14f084194aea81",
+      "sourceBytes": 2327841,
+      "input": "assets/colored-transparent/fj_hulishan.png",
+      "inputSha256": "abca4196137135d05c70548fbadcee8ea9f394b76f766fe047c994ec79499b53",
+      "inputBytes": 2173335,
+      "src": "assets/colored-transparent-avif/fj_hulishan.avif",
+      "sha256": "35929ba5e33c58f3ad926526abe604c476b741e2fc81370071b72acdea4305f7",
+      "bytes": 281199,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 704977,
+        "opaquePixels": 858527,
+        "meanError": 0.0074462890625,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.14,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "6bce28eceb7e9ed7bf201dd0b6b91e175547c5a09e2759dc2d14f084194aea81",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_laojun": {
+      "source": "assets/colored/fj_laojun.png",
+      "sourceSha256": "31c6f4cc1e4c300d2db3beca21580457dfbb85141ae89119b2e246995a6a0540",
+      "sourceBytes": 2198219,
+      "input": "assets/colored-transparent/fj_laojun.png",
+      "inputSha256": "02031b8987fb77722f9effbf610c42b6b68b83398b67fc1af536df48ae5c2ff1",
+      "inputBytes": 2014184,
+      "src": "assets/colored-transparent-avif/fj_laojun.avif",
+      "sha256": "db2722d3e176aa21481e06812663058470ed535e3fa29cb3fd1f55b09633fcef",
+      "bytes": 248071,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1019004,
+        "opaquePixels": 546824,
+        "meanError": 0.0058167775472005205,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.037,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "31c6f4cc1e4c300d2db3beca21580457dfbb85141ae89119b2e246995a6a0540",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "fj_fuzhou_wenmiao": {
+      "source": "assets/colored/fj_fuzhou_wenmiao.png",
+      "sourceSha256": "2034b58cc2219c9c6759eda275d16679707a7f7c706e26627ed45cb211e91d01",
+      "sourceBytes": 2072978,
+      "input": "assets/colored-transparent/fj_fuzhou_wenmiao.png",
+      "inputSha256": "8d19b97f65f080b29f3d495c1581c5e12627d765d0a073c86b175d7c2867c108",
+      "inputBytes": 1932396,
+      "src": "assets/colored-transparent-avif/fj_fuzhou_wenmiao.avif",
+      "sha256": "b3329f59aaff443fc167eb72cc04dab024b8fe7e12ccb271ec5161cb6274fc9e",
+      "bytes": 234917,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 885248,
+        "opaquePixels": 674940,
+        "meanError": 0.009751637776692709,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.021,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "2034b58cc2219c9c6759eda275d16679707a7f7c706e26627ed45cb211e91d01",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
     }
   }
 }

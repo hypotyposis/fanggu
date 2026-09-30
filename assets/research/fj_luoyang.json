@@ -1,0 +1,63 @@
+{
+  "id": "fj_luoyang",
+  "subject": "泉州洛阳桥现存石梁桥代表性一段",
+  "caption": [
+    "洛阳桥 · 石梁与桥墩",
+    "北宋 · 嘉祐四年建成"
+  ],
+  "status": "complete",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Luoyang_Bridge,_Quanzhou_(20201001150149).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Luoyang_Bridge%2C_Quanzhou_%2820201001150149%29.jpg/960px-Luoyang_Bridge%2C_Quanzhou_%2820201001150149%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Luoyang_Bridge,_Quanzhou_(20201001150149).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Luoyang_Bridge%2C_Quanzhou_%2820201001150149%29.jpg/960px-Luoyang_Bridge%2C_Quanzhou_%2820201001150149%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "N509FZ",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "",
+      "reference_file": "assets/references/fj_luoyang-photo.jpg",
+      "reference_dimensions": {
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/fj_luoyang-photo.jpg"
+  ],
+  "source_note": "实拍用于形制与材质，年代和保护身份见下方资料链接；图版仅绘所列主体或局部，省略人、树与标识。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Landscape 1536x1024. Draw a recognizable LOCAL SPAN of Quanzhou Luoyang Bridge, not the entire kilometer-long bridge: several consecutive long flat stone beam deck spans on massive tapering boat-shaped stone piers, parapet posts and slabs, following the photograph's low oblique view. Keep water out except two short ground lines, and do not add arches.",
+  "generated_file": "assets/generated/fj_luoyang.png",
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural or sculptural illustration for the Chinese heritage collection Fanggu. Image 1 is the STYLE MASTER ONLY, an existing Vairocana contour drawing. Match its elegant delicate slightly organic thin black lines, restrained detail, and generous blank areas. Do not copy the Buddha's subject geometry. Image 2 is a photograph of the ACTUAL NAMED MONUMENT and is the geometry reference. Preserve its identifying silhouette, visible structural counts, openings, proportions and current state. Make one refined sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE #FFFFFF background. All unmarked surfaces inside and outside the subject are pure white. Fine contours and a few selective internal structural lines; no grey shading, solid shadows, crosshatching, pencil grain, paper texture, gradient, color, glow, checkerboard or transparency. Show the specified complete subject or explicitly stated local span, centered with breathing room, with verticals vertical and minimal perspective. Remove people, trees, vehicles, wires, signs, neighboring distractions and sky. No invented features, no labels, letters, calligraphy, caption, watermark, frame or border. Subject specifics: Landscape 1536x1024. Draw a recognizable LOCAL SPAN of Quanzhou Luoyang Bridge, not the entire kilometer-long bridge: several consecutive long flat stone beam deck spans on massive tapering boat-shaped stone piers, parapet posts and slabs, following the photograph's low oblique view. Keep water out except two short ground lines, and do not add arches.",
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-61045909-fccf-4cd3-9b5d-d20bf668b1b3.png",
+      "selected_for_preview": true
+    }
+  ],
+  "visual_review_status": "pending_user",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-61045909-fccf-4cd3-9b5d-d20bf668b1b3.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e2e897fd042cb72a3df416439e0884eb692a4490c22806d3448cc2851e2a0af5",
+    "seeds": []
+  },
+  "checked_on": "2026-09-30",
+  "historical_sources": [
+    {
+      "title": "国务院第3批国保名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+    },
+    {
+      "title": "福建及地方主管部门：所绘主体资料",
+      "url": "https://fj.gov.cn/zwgk/ztzl/sxzygwzxsgzx/flsxkmh/202605/t20260515_7148175.htm"
+    }
+  ]
+}
