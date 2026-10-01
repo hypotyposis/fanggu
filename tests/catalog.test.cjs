@@ -60,10 +60,12 @@ const jiangzheTwenty = ['zj_tianyige', 'zj_qinganhui', 'zj_yongan', 'zj_daan', '
 additions.push(...jiangzheTwenty);
 const fujianNationalTen = ['fj_luoyang', 'fj_tianhou', 'fj_zhangzhou_paifang', 'fj_jiangdong', 'fj_dongshan_guandi', 'fj_eryi', 'fj_hegui', 'fj_hulishan', 'fj_laojun', 'fj_fuzhou_wenmiao'];
 additions.push(...fujianNationalTen);
+const taiwanThree = ['tw_tainan_confucius', 'tw_lukang_longshan', 'tw_taipei_northgate'];
+additions.push(...taiwanThree);
 test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
   assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
   assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
-  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length + taiwanThree.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -121,6 +123,35 @@ test('Shanghai additions cover every delivered plate with recorded, source-bound
   assert.equal(SITES.find(site => site.id === 'sh_longhuata').year, 977);
   assert.equal(SITES.find(site => site.id === 'sh_fangta').yearApprox, true);
   assert.equal(SITES.find(site => site.id === 'sh_zhenru').year, 1320);
+});
+test('Taiwan additions retain distinct subjects, sourced originals and unvisited defaults', () => {
+  const { createHash } = require('node:crypto');
+  const hash = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  const protection = JSON.parse(read('assets/research/national-protection.json'));
+  const expected = [
+    ['tw_tainan_confucius', 'modern', 1917, '大成殿'],
+    ['tw_lukang_longshan', 'ming', 1831, '五门殿'],
+    ['tw_taipei_northgate', 'ming', 1884, '承恩门'],
+  ];
+  assert.equal(queue.count, queue.entries.length);
+  for (const [id, dyn, year, subject] of expected) {
+    const site = SITES.find(site => site.id === id);
+    assert.equal(site.dyn, dyn);
+    assert.equal(site.year, year);
+    assert.equal(site.initialStatus, 'unvisited');
+    assert.equal(PLACES.find(place => place.key === site.placeKey).prov, '台湾');
+    assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
+    assert(queue.entries.find(entry => entry.id === id).subject.includes(subject));
+    assert.equal(protection.untagged[id].status, 'not_applicable');
+    for (const folder of ['research', 'color-research']) {
+      const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
+      assert.equal(meta.background_preparation.method, 'white-matte-v1');
+      assert.equal(meta.background_preparation.sourceSha256, hash(meta.generated_file || meta.output));
+      assert(meta.historical_sources.length && meta.prompt.length > 100);
+      assert.equal(folder === 'research' ? meta.visual_review_status : meta.visual_review.status, 'pending_user');
+    }
+  }
 });
 test('early monuments have distinct dynasty colours and dates covered by the expanded chronology', () => {
   assert.notEqual(DYN.han.acc, DYN.bei.acc);
@@ -243,7 +274,7 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
   }
   const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
-  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight, ...japanSix, ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...jiangzheTwenty, ...fujianNationalTen]) laterIds.add(id);
+  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight, ...japanSix, ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...jiangzheTwenty, ...fujianNationalTen, ...taiwanThree]) laterIds.add(id);
   const previouslyApproved = Object.entries(avif.images).filter(([id]) => !laterIds.has(id));
   assert.equal(previouslyApproved.length, 200);
   assert(previouslyApproved.every(([, item]) => item.visualReview === 'approved_user'));

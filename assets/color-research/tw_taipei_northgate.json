@@ -1,0 +1,55 @@
+{
+  "id": "tw_taipei_northgate",
+  "name": "臺北府城北門",
+  "subject": "承恩門西北侧斜视的现存城门本体，不含已拆外廓及城墙",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/tw_taipei_northgate.png",
+    "assets/references/tw_taipei_northgate-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise architectural plate colorization. Create ONE colored companion for the existing Fanggu heritage atlas line drawing. IMAGE 1 is the exact black-on-white LINE DRAWING geometry master. IMAGE 2 is the real monument photo and supplies actual present-day material colors. LAST IMAGE is a colored STYLE SAMPLE only: borrow fine dark contour lines, restrained matte pigments and very light tonal variation, never copy its architecture or beige palette. Preserve the line drawing's silhouette, roof forms, counts of windows/openings/columns, viewpoint and entire composition; do not add or erase architecture. Color the present object in its photographed palette, not a dynasty overlay. Output one complete landscape 1536x1024 plate on a perfectly flat opaque PURE WHITE #FFFFFF background in every unoccupied region and through real openings. No dark background, vignette, paper, checkerboard, cast shadows, tree, sky, people, sign text, lettering, watermark, frame, or caption. Keep plaques blank. Leave intact white or pale architectural materials as material colored shapes with fine outlines. No photorealism; fine illustrated contours and semi-flat matte pigment fills.\nTaipei North Gate present exterior. PHOTO COLORS: the entire lower fortified wall is coursed charcoal to medium grey stone with slight natural variation; the upper plaster wall is muted deep cinnabar red with narrow brown-red brick lining at right tall arched window; the upturned roof is dark slate brown-grey tile, pale trim; the arch passage interior is dark grey-brown with visible masonry, not solid black. Keep circular vent, one rectangular front window, tall side arch window and ONE gate passage in identical positions; no cityscape.",
+  "material_observations": [
+    "城台由深灰至中灰色石砌，门洞内侧更暗。",
+    "上部为暗朱红粉墙，窄窗露红砖，单檐瓦面深灰褐。"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:North_Gate_of_Taipei_City,_2023_(01).jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/North_Gate_of_Taipei_City,_2023_(01).jpg",
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "date": "2023-10-30",
+      "reference_file": "assets/references/tw_taipei_northgate-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "臺北市政府 · 北門（承恩門）",
+      "url": "https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=5paH5YyW5Y%2Bw5YyXLea8q%2BatpeWfjuWMly5wZGY%3D&u=LzAwMS9VcGxvYWQvNjg2L3JlbGZpbGUvNTU0MzcvODMxMzU2NC81OTRjYzU2MC04OWRmLTRmYWMtOTkxYi04Y2ZmZWZmYTcyMDYucGRm"
+    },
+    {
+      "title": "文化部國家文化記憶庫 · 臺北府城四门",
+      "url": "https://tcmb.culture.tw/zh-tw/detail?id=19980903000001&indexCode=BOCH_CountryCulture_11"
+    }
+  ],
+  "original_research": "assets/research/tw_taipei_northgate.json",
+  "output": "assets/colored/tw_taipei_northgate.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee5d-aa11-78b1-8455-51273788c626/exec-4eb000c5-2773-4c5e-afee-4ea341d54938.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "451eed9c707efc90b532735473bcd92650002268c27fbe763c22d5f4a98705a7",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "单一拱洞、灰石基座与上部红墙、正面圆窗及侧面长窄窗可辨；没有绘已拆瓮城。 已查看实拍、风格样本、两张原件；仍待用户人眼验收。"
+    }
+  }
+}

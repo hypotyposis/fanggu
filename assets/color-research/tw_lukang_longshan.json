@@ -1,0 +1,51 @@
+{
+  "id": "tw_lukang_longshan",
+  "name": "鹿港龍山寺五門殿",
+  "subject": "鹿港龍山寺五門殿临内埕正面，不含前方山门与后方正殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/tw_lukang_longshan.png",
+    "assets/references/tw_lukang_longshan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise architectural plate colorization. Create ONE colored companion for the existing Fanggu heritage atlas line drawing. IMAGE 1 is the exact black-on-white LINE DRAWING geometry master. IMAGE 2 is the real monument photo and supplies actual present-day material colors. LAST IMAGE is a colored STYLE SAMPLE only: borrow fine dark contour lines, restrained matte pigments and very light tonal variation, never copy its architecture or beige palette. Preserve the line drawing's silhouette, roof forms, counts of windows/openings/columns, viewpoint and entire composition; do not add or erase architecture. Color the present object in its photographed palette, not a dynasty overlay. Output one complete landscape 1536x1024 plate on a perfectly flat opaque PURE WHITE #FFFFFF background in every unoccupied region and through real openings. No dark background, vignette, paper, checkerboard, cast shadows, tree, sky, people, sign text, lettering, watermark, frame, or caption. Keep plaques blank. Leave intact white or pale architectural materials as material colored shapes with fine outlines. No photorealism; fine illustrated contours and semi-flat matte pigment fills.\nLukang Longshan Temple five-gate hall. PHOTO COLORS: main and side roofs muted old terracotta red tile, upturned ornamental ridge and carved column stone pale cool grey, exterior brick piers weathered red-brown, timber beams and doors dark aged brown-grey, interior passages remain white blank background. Two dragon-carved stone columns remain stone colored, not red lacquer; outer round lattice panels dark old timber. Follow the line drawing's five bays and three roof sections exactly. Do not make the roof bright gold or add religious figures.",
+  "material_observations": [
+    "五门殿主屋顶与两侧屋顶均为旧红陶瓦，脊饰偏灰白石色。",
+    "檐下旧木为灰褐色，外侧砖柱红褐色，龙柱灰石；照片阴天，色温有局限。"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg",
+      "author": "Fcuk1203",
+      "license": "CC BY-SA 3.0",
+      "date": "2013-02-03",
+      "reference_file": "assets/references/tw_lukang_longshan-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "內政部 · 臺灣宗教文化地圖：鹿港龍山寺",
+      "url": "https://taiwangods.moi.gov.tw/html/cultural/3_0011.aspx?i=10"
+    }
+  ],
+  "original_research": "assets/research/tw_lukang_longshan.json",
+  "output": "assets/colored/tw_lukang_longshan.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee5d-aa11-78b1-8455-51273788c626/exec-60c7b2f3-19a2-4db3-acb8-7cedcbd7b784.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5c68f449c21f9c35629cf12656b6a6ab378d65ddfbaa515c651ca8ae93bd1884",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "三段屋脊、五个正面开口与两根龙柱位置可辨。 已查看实拍、风格样本、两张原件；1960年代结构替换需在正文注明，仍待用户人眼验收。"
+    }
+  }
+}

@@ -8572,6 +8572,72 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "tw_tainan_confucius": {
+    "src": "assets/colored-transparent-avif/tw_tainan_confucius.avif",
+    "originalSrc": "assets/colored/tw_tainan_confucius.png",
+    "transparentSrc": "assets/colored-transparent/tw_tainan_confucius.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大成殿正面，含双层屋檐与中央石阶 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/tw_tainan_confucius.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+        "author": "Chainwit.",
+        "license": "CC BY 4.0",
+        "date": "2026-01-18"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E5%8D%97%E5%B8%82%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF%E5%A4%96%E8%A7%80%E5%8F%B3%E5%81%B4.JPG",
+        "author": "Zeze0729",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-18"
+      }
+    ]
+  },
+  "tw_lukang_longshan": {
+    "src": "assets/colored-transparent-avif/tw_lukang_longshan.avif",
+    "originalSrc": "assets/colored/tw_lukang_longshan.png",
+    "transparentSrc": "assets/colored-transparent/tw_lukang_longshan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "五门殿临内埕正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/tw_lukang_longshan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg",
+        "author": "Fcuk1203",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-02-03"
+      }
+    ]
+  },
+  "tw_taipei_northgate": {
+    "src": "assets/colored-transparent-avif/tw_taipei_northgate.avif",
+    "originalSrc": "assets/colored/tw_taipei_northgate.png",
+    "transparentSrc": "assets/colored-transparent/tw_taipei_northgate.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "承恩门现存城门本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/tw_taipei_northgate.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:North_Gate_of_Taipei_City,_2023_(01).jpg",
+        "author": "Bahnfrend",
+        "license": "CC BY-SA 4.0",
+        "date": "2023-10-30"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

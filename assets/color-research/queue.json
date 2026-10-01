@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 401,
+  "count": 404,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -8990,6 +8990,73 @@
       ],
       "output": "assets/colored/fj_fuzhou_wenmiao.png",
       "record": "assets/color-research/fj_fuzhou_wenmiao.json"
+    },
+    {
+      "id": "tw_tainan_confucius",
+      "name": "台南孔子庙大成殿",
+      "subject": "大成殿正面，含双层屋檐与中央石阶",
+      "sub": "大成殿正面，含双层屋檐与中央石阶",
+      "place": "台湾 · 台南 · 中西区",
+      "dyn": "modern",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/tw_tainan_confucius.png",
+      "displayLine": "assets/plates/tw_tainan_confucius.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/tw_tainan_confucius.json",
+      "candidateReferences": [
+        "assets/references/tw_tainan_confucius-rgb.jpg"
+      ],
+      "output": "assets/colored/tw_tainan_confucius.png",
+      "record": "assets/color-research/tw_tainan_confucius.json"
+    },
+    {
+      "id": "tw_lukang_longshan",
+      "name": "鹿港龙山寺五门殿",
+      "subject": "五门殿临内埕正面",
+      "sub": "五门殿临内埕正面",
+      "place": "台湾 · 彰化 · 鹿港",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/tw_lukang_longshan.png",
+      "displayLine": "assets/plates/tw_lukang_longshan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/tw_lukang_longshan.json",
+      "candidateReferences": [
+        "assets/references/tw_lukang_longshan-photo.jpg"
+      ],
+      "output": "assets/colored/tw_lukang_longshan.png",
+      "record": "assets/color-research/tw_lukang_longshan.json"
+    },
+    {
+      "id": "tw_taipei_northgate",
+      "name": "台北府城北门",
+      "subject": "承恩门现存城门本体",
+      "sub": "承恩门现存城门本体",
+      "place": "台湾 · 台北 · 中正区",
+      "dyn": "ming",
+      "types": [
+        "gate",
+        "wall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/tw_taipei_northgate.png",
+      "displayLine": "assets/plates/tw_taipei_northgate.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/tw_taipei_northgate.json",
+      "candidateReferences": [
+        "assets/references/tw_taipei_northgate-photo.jpg"
+      ],
+      "output": "assets/colored/tw_taipei_northgate.png",
+      "record": "assets/color-research/tw_taipei_northgate.json"
     }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "id": "tw_lukang_longshan",
+  "subject": "鹿港龍山寺五門殿临内埕正面，不含前方山门与后方正殿",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%25E9%25B9%25BF%25E6%25B8%25AF%25E9%25BE%258D%25E5%25B1%25B1%25E5%25AF%25BA%25E4%25BA%2594%25E9%2596%2580%25E6%25AE%25BF.jpg",
+  "author": "Fcuk1203",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tw_lukang_longshan-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tw_lukang_longshan-photo.jpg"
+  ],
+  "source_note": "照片用于现存主体形制；年代与维修史依据官方资料。",
+  "prompt": "Use case: style-transfer. Create ONE museum architectural line plate for the heritage collection Fanggu. IMAGE 1 is the STYLE MASTER only: borrow its delicate sparse thin black contour density and generous white space, NEVER its Buddha shape. Other image(s) are the actual named building and determine all geometry. Produce an opaque perfectly flat PURE WHITE #FFFFFF canvas with fine BLACK ink contours only. No color, gray fill, solid black shadows, hatching, paper grain, gradients, glow, cast shadows, transparency grid, text, caption, watermark or frame. Draw present surviving form, not speculative reconstruction. Remove people, plants, vehicles, signs, neighboring buildings, wires, sky and pavement clutter. Keep complete roof ridges, eaves, walls and base within generous margins, approximately straight on unless the source is specifically an oblique view. Wide landscape composition 1536x1024. Leave architectural surfaces white with selected joints and openings outlined; simplify ornaments without changing their locations.\nSubject: Lukang Longshan Temple FIVE-GATE HALL (鹿港龍山寺五門殿), seen straight from the courtyard in photo 2. One broad central curved red-tile roof with pale stone ornate swallowtail ridge and two smaller lower side roofs, creating three roof sections across the facade. Exactly FIVE front openings/bays: narrow outer bays with decorative round windows, two side passage openings, and one center opening; two decorated dragon stone columns frame the three central openings. Low dark timber beams and masonry lower wall. Whole five-gate facade from far left roof edge to far right roof edge, full base and apex; remove shrubs and neighboring modern building. Do not turn it into a generic one-roof Chinese temple or add another story. Keep inscription panels blank.",
+  "generated_file": "assets/generated/tw_lukang_longshan.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0ee5d-aa11-78b1-8455-51273788c626/exec-bdcc5875-00cb-4edf-8a26-3e8d9d19858e.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "鹿港龍山寺 · 五門殿正面",
+    "1786年迁建 · 1831年重修"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "813d0518a14ef0487cc4d9ab291b3d68d1c5dd25b28b01ecc12046a10215de94",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg",
+      "author": "Fcuk1203",
+      "license": "CC BY-SA 3.0",
+      "date": "2013-02-03",
+      "reference_file": "assets/references/tw_lukang_longshan-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "內政部 · 臺灣宗教文化地圖：鹿港龍山寺",
+      "url": "https://taiwangods.moi.gov.tw/html/cultural/3_0011.aspx?i=10"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "三段屋脊、五个正面开口与两根龙柱位置可辨。",
+      "已查看实拍、风格样本、两张原件；1960年代结构替换需在正文注明，仍待用户人眼验收。"
+    ],
+    "limitations": "原型候选图版，建筑轮廓并非测绘；最终由用户人眼验收。"
+  },
+  "visual_review_status": "pending_user"
+}
