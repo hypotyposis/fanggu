@@ -13,6 +13,17 @@ const kyotoNearbyTen = ['jp_tofukuji_sanmon', 'jp_fushimi_inari_honden', 'jp_kit
 const kyotoThirteen = ['jp_nanzenji_sanmon', 'jp_ujigami_honden', 'jp_ujigami_haiden', 'jp_kozanji_sekisuiin', 'jp_kamigamo_honden', 'jp_shimogamo_honden', 'jp_enryakuji_komponchudo', 'jp_katsura_koshoin', 'jp_joruriji_hondo', 'jp_joruriji_tower', 'jp_ryoanji_garden', 'jp_tenryuji_garden', 'jp_saihoji_garden'];
 const kyotoNine = ['jp_hokanji_tower', 'jp_gosho_shishinden', 'jp_daitokuji_karamon', 'jp_daitokuji_hojo', 'jp_jishoji_togudo', 'jp_toji_kondo', 'jp_daigoji_sanboin', 'jp_hongwanji_goeido', 'jp_chionin_mieido'];
 
+test('Taiwan additions filter by province and search by simplified or traditional names', () => {
+  const ids = ['tw_lukang_longshan', 'tw_tainan_confucius', 'tw_taipei_northgate'];
+  assert.deepEqual(find({ province: '台湾' }), ids);
+  assert.deepEqual(find({ country: 'CN', region: 'east', province: '台湾' }), ids);
+  assert.deepEqual(find({ query: '鹿港龍山寺五門殿' }), ['tw_lukang_longshan']);
+  assert.deepEqual(find({ query: '承恩門' }), ['tw_taipei_northgate']);
+  assert.deepEqual(find({ query: '臺南孔子廟大成殿' }), ['tw_tainan_confucius']);
+  assert.deepEqual(find({ province: '台湾', type: 'gate' }), ['tw_taipei_northgate']);
+  for (const id of ids) assert.equal(library.record(id).status, 'unvisited');
+});
+
 test('Shanghai filtering and expansion preserve prior records and blank arrival dates', () => {
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/shanghai-batch.json'), 'utf8'));
   assert.deepEqual(find({ country: 'CN', region: 'east', province: '上海' }), [...batch.ids].sort());
@@ -41,7 +52,7 @@ test('Shanghai filtering and expansion preserve prior records and blank arrival 
 
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 38);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 39);
   assert.deepEqual(find({ province: '西藏', dynasty: 'tubo' }), ['xz_jokhang']);
   assert.deepEqual(find({ province: '新疆', type: 'grotto' }), ['xj_kizil', 'xj_kumtura']);
   assert.deepEqual(find({ type: 'column' }), ['hn_xizhou']);
@@ -78,7 +89,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'northwest'), ['陕西', '甘肃', '青海', '宁夏', '新疆']);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 38);
+  assert.equal(facets.provinces(catalog).length, 39);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {
@@ -105,7 +116,7 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
   assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['东京都', '栃木县', '京都府', '滋贺县', '奈良县', '大阪府', '兵库县', '广岛县']);
-  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 30);
+  assert.equal(facets.provinces(catalog, 'all', 'CN').length, 31);
 });
 
 test('existing Japanese wishes and new unvisited additions survive backup restoration', () => {

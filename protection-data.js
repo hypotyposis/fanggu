@@ -3903,6 +3903,18 @@
     "jp_chionin_mieido": {
       "status": "not_applicable",
       "reason": "日本古迹不适用中国全国重点文物保护单位制度；未在本任务混标日本国宝。"
+    },
+    "tw_tainan_confucius": {
+      "status": "not_applicable",
+      "reason": "当地文化资产资料列为台湾国定古迹；本项目国保标签专指国务院公布的全国重点文物保护单位批次，两套制度不混标。"
+    },
+    "tw_lukang_longshan": {
+      "status": "not_applicable",
+      "reason": "当地文化资产资料列为台湾国定古迹；本项目国保标签专指国务院公布的全国重点文物保护单位批次，两套制度不混标。"
+    },
+    "tw_taipei_northgate": {
+      "status": "not_applicable",
+      "reason": "当地文化资产资料列为台湾国定古迹；本项目国保标签专指国务院公布的全国重点文物保护单位批次，两套制度不混标。"
     }
   }
 }));

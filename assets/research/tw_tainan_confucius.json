@@ -1,0 +1,82 @@
+{
+  "id": "tw_tainan_confucius",
+  "subject": "臺南孔子廟大成殿正面，含双层屋檐与中央石阶",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+  "author": "Chainwit.",
+  "license": "CC BY 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tw_tainan_confucius-rgb.jpg",
+    "assets/references/tw_tainan_confucius-side.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tw_tainan_confucius-rgb.jpg"
+  ],
+  "source_note": "照片用于现存主体形制；年代与维修史依据官方资料。正面原 JPEG 含 HDR 增益图层；生成输入是同一照片的标准 RGB 转存。实际重试仅传入风格样本和正面照片；提示词原文中的 photo 3 所指侧面照片只用于研究核对，未传入成功的调用。",
+  "prompt": "Use case: style-transfer. Create ONE museum architectural line plate for the heritage collection Fanggu. IMAGE 1 is the STYLE MASTER only: borrow its delicate sparse thin black contour density and generous white space, NEVER its Buddha shape. Other image(s) are the actual named building and determine all geometry. Produce an opaque perfectly flat PURE WHITE #FFFFFF canvas with fine BLACK ink contours only. No color, gray fill, solid black shadows, hatching, paper grain, gradients, glow, cast shadows, transparency grid, text, caption, watermark or frame. Draw present surviving form, not speculative reconstruction. Remove people, plants, vehicles, signs, neighboring buildings, wires, sky and pavement clutter. Keep complete roof ridges, eaves, walls and base within generous margins, approximately straight on unless the source is specifically an oblique view. Wide landscape composition 1536x1024. Leave architectural surfaces white with selected joints and openings outlined; simplify ornaments without changing their locations.\nSubject: Tainan Confucius Temple DA CHENG HALL (臺南孔子廟大成殿) specifically, not its entry arch. Photo 2 is the main frontal geometry, photo 3 only verifies the side roof and front elevation. Show one central hall, frontal. Distinct TWO eave levels of orange tile in photo: upper tall roof with dramatically swept decorated swallowtail ridge and symmetrical dragons flanking a central small pagoda ornament; lower front eave, four projecting corner dragon ornaments. The open lower front has a continuous row of red columns and visible door bays. Low rectangular platform and central shallow stairs with a carved stone ramp. Do not copy courtyard wings or neighboring roofs into the hall. Keep roof crest complete and all side eave tips, with sparse ornament lines only. Blank all signs and plaques.",
+  "generated_file": "assets/generated/tw_tainan_confucius.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0ee5d-aa11-78b1-8455-51273788c626/exec-962654b6-17f1-475f-9131-5fbf189f81d0.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "臺南孔子廟 · 大成殿正面",
+    "1665年创庙 · 1917年解体修护"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "380a763a1e74a992e4d1cbebab9426eceae5d558ae8e74b4b443b4214098af0e",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "date": "2026-01-18",
+      "reference_file": "assets/references/tw_tainan_confucius-rgb.jpg"
+    },
+    {
+      "file": "assets/references/tw_tainan_confucius-side.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E5%8D%97%E5%B8%82%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF%E5%A4%96%E8%A7%80%E5%8F%B3%E5%81%B4.JPG",
+      "author": "Zeze0729",
+      "license": "CC BY-SA 3.0",
+      "date": "2013-08-18",
+      "reference_file": "assets/references/tw_tainan_confucius-side.jpg",
+      "role": "research_context_not_generation_input"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "臺南市文化資產管理處 · 臺南孔子廟",
+      "url": "https://nchdb.boch.gov.tw/city/TN/assets/overview/monument/19831228000007/"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "线稿双层檐、两侧燕尾脊、中央御路石及前柱列可辨；设色对应橙红瓦与朱红木。",
+      "已查看实拍、风格样本、两张原件；仍待用户人眼验收。"
+    ],
+    "limitations": "原型候选图版，建筑轮廓并非测绘；最终由用户人眼验收。"
+  },
+  "visual_review_status": "pending_user",
+  "generation_attempts": [
+    {
+      "result": "input_error",
+      "reason": "初次使用含HDR增益图层JPEG被imagegen拒绝（HTTP 400 invalid_image_file image 2）；改为同照片标准RGB JPEG后成功。",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/tw_tainan_confucius-alt.jpg",
+        "assets/references/tw_tainan_confucius-side.jpg"
+      ]
+    }
+  ]
+}

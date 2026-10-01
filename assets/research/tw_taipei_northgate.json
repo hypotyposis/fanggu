@@ -1,0 +1,65 @@
+{
+  "id": "tw_taipei_northgate",
+  "subject": "承恩門西北侧斜视的现存城门本体，不含已拆外廓及城墙",
+  "status": "complete",
+  "source_page": "https://commons.wikimedia.org/wiki/File:North_Gate_of_Taipei_City,_2023_(01).jpg",
+  "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/North_Gate_of_Taipei_City%2C_2023_(01).jpg",
+  "author": "Bahnfrend",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tw_taipei_northgate-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/tw_taipei_northgate-photo.jpg"
+  ],
+  "source_note": "照片用于现存主体形制；年代与维修史依据官方资料。",
+  "prompt": "Use case: style-transfer. Create ONE museum architectural line plate for the heritage collection Fanggu. IMAGE 1 is the STYLE MASTER only: borrow its delicate sparse thin black contour density and generous white space, NEVER its Buddha shape. Other image(s) are the actual named building and determine all geometry. Produce an opaque perfectly flat PURE WHITE #FFFFFF canvas with fine BLACK ink contours only. No color, gray fill, solid black shadows, hatching, paper grain, gradients, glow, cast shadows, transparency grid, text, caption, watermark or frame. Draw present surviving form, not speculative reconstruction. Remove people, plants, vehicles, signs, neighboring buildings, wires, sky and pavement clutter. Keep complete roof ridges, eaves, walls and base within generous margins, approximately straight on unless the source is specifically an oblique view. Wide landscape composition 1536x1024. Leave architectural surfaces white with selected joints and openings outlined; simplify ornaments without changing their locations.\nSubject: Taipei City North Gate, CHENG'EN GATE (臺北府城北門／承恩門), shown as present in photo 2, preserve the clear northwest three-quarter perspective. A compact nearly square massive GREY STONE block base with ONE large round-arch through passage on the visible front. Upper enclosed RED plastered brick gatehouse wall under one hipped gable tiled roof with upturned corners. Visible front upper wall has one circular vent and one rectangular window; visible right-side upper wall has one tall narrow arched window. Distinct horizontal masonry courses and high sharp corner. No extra battlements, no city wall wings, no restored outer barbican, no pedestrians or cityscape. Draw full roof apex and base. Plaque blank.",
+  "generated_file": "assets/generated/tw_taipei_northgate.png",
+  "generation_tool": "built-in image_gen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0ee5d-aa11-78b1-8455-51273788c626/exec-5f6e94c6-13cf-4729-94ad-20d6bcbb2af1.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "臺北府城北門 · 承恩門",
+    "清光绪十年（1884）"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d377431a8eaadec75600d2491333464c820fc6aef5e5ddebd2802a74599a53f9",
+    "seeds": []
+  },
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:North_Gate_of_Taipei_City,_2023_(01).jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/North_Gate_of_Taipei_City,_2023_(01).jpg",
+      "author": "Bahnfrend",
+      "license": "CC BY-SA 4.0",
+      "date": "2023-10-30",
+      "reference_file": "assets/references/tw_taipei_northgate-photo.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "臺北市政府 · 北門（承恩門）",
+      "url": "https://www-ws.gov.taipei/Download.ashx?icon=..pdf&n=5paH5YyW5Y%2Bw5YyXLea8q%2BatpeWfjuWMly5wZGY%3D&u=LzAwMS9VcGxvYWQvNjg2L3JlbGZpbGUvNTU0MzcvODMxMzU2NC81OTRjYzU2MC04OWRmLTRmYWMtOTkxYi04Y2ZmZWZmYTcyMDYucGRm"
+    },
+    {
+      "title": "文化部國家文化記憶庫 · 臺北府城四门",
+      "url": "https://tcmb.culture.tw/zh-tw/detail?id=19980903000001&indexCode=BOCH_CountryCulture_11"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "单一拱洞、灰石基座与上部红墙、正面圆窗及侧面长窄窗可辨；没有绘已拆瓮城。",
+      "已查看实拍、风格样本、两张原件；仍待用户人眼验收。"
+    ],
+    "limitations": "原型候选图版，建筑轮廓并非测绘；最终由用户人眼验收。"
+  },
+  "visual_review_status": "pending_user"
+}

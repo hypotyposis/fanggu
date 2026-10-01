@@ -4375,6 +4375,42 @@ const PLATES = {
       "知恩院 · 御影堂",
       "江户时代 · 1639年再建"
     ]
+  },
+  "tw_tainan_confucius": {
+    "src": "assets/plates/tw_tainan_confucius.png",
+    "alt": "臺南孔子廟大成殿正面，含双层屋檐与中央石阶 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "臺南孔子廟 · 大成殿正面",
+      "1665年创庙 · 1917年解体修护"
+    ]
+  },
+  "tw_lukang_longshan": {
+    "src": "assets/plates/tw_lukang_longshan.png",
+    "alt": "鹿港龍山寺五門殿临内埕正面，不含前方山门与后方正殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "鹿港龍山寺 · 五門殿正面",
+      "1786年迁建 · 1831年重修"
+    ]
+  },
+  "tw_taipei_northgate": {
+    "src": "assets/plates/tw_taipei_northgate.png",
+    "alt": "承恩門西北侧斜视的现存城门本体，不含已拆外廓及城墙 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "臺北府城北門 · 承恩門",
+      "清光绪十年（1884）"
+    ]
   }
 };
 

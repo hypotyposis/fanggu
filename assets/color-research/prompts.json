@@ -4178,5 +4178,38 @@
       "assets/color-studies/v1/foguang-colored.png"
     ],
     "record": "assets/color-research/jp_chionin_mieido.json"
+  },
+  {
+    "id": "tw_tainan_confucius",
+    "name": "台南孔子庙大成殿",
+    "prompt": "Use case: precise architectural plate colorization. Create ONE colored companion for the existing Fanggu heritage atlas line drawing. IMAGE 1 is the exact black-on-white LINE DRAWING geometry master. IMAGE 2 is the real building photo and supplies present-day colors. IMAGE 3 is a colored STYLE SAMPLE only: borrow fine dark contours, restrained matte pigments and very light tonal variation, never copy its architecture or palette. Preserve the line drawing's TWO roof tiers, swallowtail ridges, two symmetrical roof dragons, central miniature pagoda ornament, front columns, open bays, carved center ramp, silhouette, viewpoint and entire composition. Color the present Tainan Confucius Temple Da Cheng Hall as photo: muted orange-red clay roof tile on BOTH tiers, deep cinnabar red plaster/wood pillars, blue-white and muted green ridge ornament strips, pale warm grey carved ramp and stone steps. All roof ornaments remain in line-drawing positions. Fine illustrated contours and semi-flat matte pigment fills, not photorealism. Output one complete landscape 1536x1024 plate on perfectly flat opaque PURE WHITE #FFFFFF background in all unoccupied regions. No dark background, sky, people, courtyard wings, trees, text, plaque lettering, watermark, paper, checkerboard, ground shadow, border or captions. Plaques blank.",
+    "input_images": [
+      "assets/generated/tw_tainan_confucius.png",
+      "assets/references/tw_tainan_confucius-rgb.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/tw_tainan_confucius.json"
+  },
+  {
+    "id": "tw_lukang_longshan",
+    "name": "鹿港龙山寺五门殿",
+    "prompt": "Use case: precise architectural plate colorization. Create ONE colored companion for the existing Fanggu heritage atlas line drawing. IMAGE 1 is the exact black-on-white LINE DRAWING geometry master. IMAGE 2 is the real monument photo and supplies actual present-day material colors. LAST IMAGE is a colored STYLE SAMPLE only: borrow fine dark contour lines, restrained matte pigments and very light tonal variation, never copy its architecture or beige palette. Preserve the line drawing's silhouette, roof forms, counts of windows/openings/columns, viewpoint and entire composition; do not add or erase architecture. Color the present object in its photographed palette, not a dynasty overlay. Output one complete landscape 1536x1024 plate on a perfectly flat opaque PURE WHITE #FFFFFF background in every unoccupied region and through real openings. No dark background, vignette, paper, checkerboard, cast shadows, tree, sky, people, sign text, lettering, watermark, frame, or caption. Keep plaques blank. Leave intact white or pale architectural materials as material colored shapes with fine outlines. No photorealism; fine illustrated contours and semi-flat matte pigment fills.\nLukang Longshan Temple five-gate hall. PHOTO COLORS: main and side roofs muted old terracotta red tile, upturned ornamental ridge and carved column stone pale cool grey, exterior brick piers weathered red-brown, timber beams and doors dark aged brown-grey, interior passages remain white blank background. Two dragon-carved stone columns remain stone colored, not red lacquer; outer round lattice panels dark old timber. Follow the line drawing's five bays and three roof sections exactly. Do not make the roof bright gold or add religious figures.",
+    "input_images": [
+      "assets/generated/tw_lukang_longshan.png",
+      "assets/references/tw_lukang_longshan-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/tw_lukang_longshan.json"
+  },
+  {
+    "id": "tw_taipei_northgate",
+    "name": "台北府城北门",
+    "prompt": "Use case: precise architectural plate colorization. Create ONE colored companion for the existing Fanggu heritage atlas line drawing. IMAGE 1 is the exact black-on-white LINE DRAWING geometry master. IMAGE 2 is the real monument photo and supplies actual present-day material colors. LAST IMAGE is a colored STYLE SAMPLE only: borrow fine dark contour lines, restrained matte pigments and very light tonal variation, never copy its architecture or beige palette. Preserve the line drawing's silhouette, roof forms, counts of windows/openings/columns, viewpoint and entire composition; do not add or erase architecture. Color the present object in its photographed palette, not a dynasty overlay. Output one complete landscape 1536x1024 plate on a perfectly flat opaque PURE WHITE #FFFFFF background in every unoccupied region and through real openings. No dark background, vignette, paper, checkerboard, cast shadows, tree, sky, people, sign text, lettering, watermark, frame, or caption. Keep plaques blank. Leave intact white or pale architectural materials as material colored shapes with fine outlines. No photorealism; fine illustrated contours and semi-flat matte pigment fills.\nTaipei North Gate present exterior. PHOTO COLORS: the entire lower fortified wall is coursed charcoal to medium grey stone with slight natural variation; the upper plaster wall is muted deep cinnabar red with narrow brown-red brick lining at right tall arched window; the upturned roof is dark slate brown-grey tile, pale trim; the arch passage interior is dark grey-brown with visible masonry, not solid black. Keep circular vent, one rectangular front window, tall side arch window and ONE gate passage in identical positions; no cityscape.",
+    "input_images": [
+      "assets/generated/tw_taipei_northgate.png",
+      "assets/references/tw_taipei_northgate-photo.jpg",
+      "assets/color-studies/v1/foguang-colored.png"
+    ],
+    "record": "assets/color-research/tw_taipei_northgate.json"
   }
 ]

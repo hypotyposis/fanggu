@@ -1,0 +1,59 @@
+{
+  "id": "tw_tainan_confucius",
+  "name": "臺南孔子廟大成殿",
+  "subject": "臺南孔子廟大成殿正面，含双层屋檐与中央石阶",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/tw_tainan_confucius.png",
+    "assets/references/tw_tainan_confucius-rgb.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise architectural plate colorization. Create ONE colored companion for the existing Fanggu heritage atlas line drawing. IMAGE 1 is the exact black-on-white LINE DRAWING geometry master. IMAGE 2 is the real building photo and supplies present-day colors. IMAGE 3 is a colored STYLE SAMPLE only: borrow fine dark contours, restrained matte pigments and very light tonal variation, never copy its architecture or palette. Preserve the line drawing's TWO roof tiers, swallowtail ridges, two symmetrical roof dragons, central miniature pagoda ornament, front columns, open bays, carved center ramp, silhouette, viewpoint and entire composition. Color the present Tainan Confucius Temple Da Cheng Hall as photo: muted orange-red clay roof tile on BOTH tiers, deep cinnabar red plaster/wood pillars, blue-white and muted green ridge ornament strips, pale warm grey carved ramp and stone steps. All roof ornaments remain in line-drawing positions. Fine illustrated contours and semi-flat matte pigment fills, not photorealism. Output one complete landscape 1536x1024 plate on perfectly flat opaque PURE WHITE #FFFFFF background in all unoccupied regions. No dark background, sky, people, courtyard wings, trees, text, plaque lettering, watermark, paper, checkerboard, ground shadow, border or captions. Plaques blank.",
+  "material_observations": [
+    "正面实拍显示上下两道橙红陶瓦檐，脊饰有蓝白彩釉与绿龙。",
+    "柱墙为朱红，中央石阶和御路石为暖灰；不推定初建原色。"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+      "image_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg",
+      "author": "Chainwit.",
+      "license": "CC BY 4.0",
+      "date": "2026-01-18",
+      "reference_file": "assets/references/tw_tainan_confucius-rgb.jpg"
+    },
+    {
+      "file": "assets/references/tw_tainan_confucius-side.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%8F%B0%E5%8D%97%E5%B8%82%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF%E5%A4%96%E8%A7%80%E5%8F%B3%E5%81%B4.JPG",
+      "author": "Zeze0729",
+      "license": "CC BY-SA 3.0",
+      "date": "2013-08-18",
+      "reference_file": "assets/references/tw_tainan_confucius-side.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "臺南市文化資產管理處 · 臺南孔子廟",
+      "url": "https://nchdb.boch.gov.tw/city/TN/assets/overview/monument/19831228000007/"
+    }
+  ],
+  "original_research": "assets/research/tw_tainan_confucius.json",
+  "output": "assets/colored/tw_tainan_confucius.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0ee5d-aa11-78b1-8455-51273788c626/exec-0ea4c059-7db8-432f-beca-db4527bc77b9.png",
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bc944822655b4735ad90e99dab9cff24cf6fbd5ca277b96e6f20e856e85a5091",
+    "seeds": []
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "technical_review": {
+      "status": "complete",
+      "reviewer": "Codex",
+      "note": "线稿双层檐、两侧燕尾脊、中央御路石及前柱列可辨；设色对应橙红瓦与朱红木。 已查看实拍、风格样本、两张原件；仍待用户人眼验收。"
+    }
+  }
+}

@@ -9281,7 +9281,6 @@ SITES.push(
     legacyNames: ['觉康寺', '祖拉康'], caption: ['大昭寺 · 现状正立面', '吐蕃始建 · 历代增修'],
   },
 );
-
 const CHAPTERS = [
   { key: 'han', years: '25 — 220 · 东汉', blurb: '以石仿木，阙立神道。石块叠出檐、枋与柱的轮廓，车马、百戏与神兽刻在其间；登封与蜀地的石阙，让汉代建筑和生活留下了可读的片段。' },
   { key: 'goguryeo', years: '约5世纪 · 集安现存遗迹', blurb: '巨大的石块逐级收分，护坟石抵住方坛底层。将军坟属于高句丽石室墓遗存，墓主认定与现存形制分开记录；这里的年代说明所收古迹，不借中原朝代替换其所属时期。' },
@@ -11290,3 +11289,41 @@ SITES.push(...[
     caption: ['知恩院 · 御影堂', '江户时代 · 1639年再建'], legacyNames: ['知恩院御影堂', 'Chionin Mieido'],
   },
 ]);
+
+// 台湾：依现存主体及当地文资资料分别注明初创、修护与所绘范围。
+PLACES.push(
+  { key: 'tw_tainan', name: '台南', prov: '台湾', country: 'CN', lat: 22.99046, lon: 120.20410, source_page: 'https://commons.wikimedia.org/wiki/File:Confucius_Temple_Tainan_-_Ta_Cheng_Hall_%E8%87%BA%E5%8D%97%E5%AD%94%E5%BB%9F%E5%A4%A7%E6%88%90%E6%AE%BF_(2026)_-_img_06.jpg', coordinate_note: '孔子庙附近的地图显示点，非大成殿测绘坐标。' },
+  { key: 'tw_lukang', name: '鹿港', prov: '台湾', country: 'CN', lat: 24.05147, lon: 120.43618, source_page: 'https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E6%B8%AF%E9%BE%8D%E5%B1%B1%E5%AF%BA%E4%BA%94%E9%96%80%E6%AE%BF.jpg', coordinate_note: '龙山寺附近的地图显示点，非五门殿测绘坐标。' },
+  { key: 'tw_taipei', name: '台北', prov: '台湾', country: 'CN', lat: 25.04794, lon: 121.51106, source_page: 'https://commons.wikimedia.org/wiki/File:North_Gate_of_Taipei_City,_2023_(01).jpg', coordinate_note: '北门附近的地图显示点，非城门测绘坐标。' },
+);
+SITES.push(
+  {
+    id: 'tw_tainan_confucius', name: '台南孔子庙大成殿', short: '台南孔庙', sub: '大成殿正面', country: 'CN', types: ['hall'], initialStatus: 'unvisited',
+    dyn: 'modern', tag: '近代', era: '1665年创庙 · 1917年解体修护', year: 1917,
+    yearNote: '1665年为庙学初创，1712年扩修大成殿；现存大成殿在1917年经解体修护与重建，年表按现状主体最近一次大规模修护定位。',
+    place: '台湾 · 台南 · 中西区', placeKey: 'tw_tainan',
+    lede: '燕尾脊高高扬起，两层红瓦檐下是孔庙大成殿。台南孔庙始于1665年，眼前所见的殿宇经历清代扩修与近代解体修护。',
+    facts: ['1665年陈永华主持创建先师圣庙；1712年大规模修建时，大成殿与启圣祠等建筑得到扩充。', '1917年大成殿等建筑经解体修护。图版画现存大成殿正面，不把1665年初创直接当作现存全部构件的年代。', '两层屋檐、脊上双龙及中央饰件、前廊朱红柱和中央石阶构成正面形象；左右廊庑不在图版范围内。'],
+    caption: ['台南孔子庙 · 大成殿正面', '1665年创庙 · 1917年解体修护'],
+    legacyNames: ['臺南孔子廟大成殿', '臺南孔廟大成殿', '台南孔庙大成殿'],
+  },
+  {
+    id: 'tw_lukang_longshan', name: '鹿港龙山寺五门殿', short: '鹿港龙山寺', sub: '五门殿正面', country: 'CN', types: ['hall'], initialStatus: 'unvisited',
+    dyn: 'ming', tag: '清', era: '1786年迁建 · 1831年重修', year: 1831,
+    yearNote: '1786年迁至现址，1831年重修奠定寺院规模；图版是历经1960年代构件替换与后来修复的五门殿现状，不将每根柱梁都断为清构。',
+    place: '台湾 · 彰化 · 鹿港', placeKey: 'tw_lukang',
+    lede: '五门殿横展开来，中央高起的红瓦屋脊与两侧低檐接成一道起伏的轮廓。它是鹿港龙山寺由山门进入主院后的门殿。',
+    facts: ['龙山寺于1786年迁至现址，1831年完成大规模重修；五门殿属于寺院从山门、内埕向正殿推进的空间序列。', '正面五处开口，两根雕龙石柱立于中部，左右壁面各有圆形装饰窗。图版只绘五门殿，不含前方山门或后方正殿。', '现存五门殿在1960年代曾更换部分檐柱和梁，又经后续修复；设色依据2013年实拍的红陶瓦、灰白脊饰、灰石与旧木。'],
+    caption: ['鹿港龙山寺 · 五门殿正面', '1786年迁建 · 1831年重修'],
+    legacyNames: ['鹿港龍山寺五門殿', '鹿港龍山寺'],
+  },
+  {
+    id: 'tw_taipei_northgate', name: '台北府城北门', short: '台北北门', sub: '承恩门 · 现存城门本体', country: 'CN', types: ['gate', 'wall'], initialStatus: 'unvisited',
+    dyn: 'ming', tag: '清', era: '光绪十年（1884）建成', year: 1884,
+    place: '台湾 · 台北 · 中正区', placeKey: 'tw_taipei',
+    lede: '一道拱洞穿过厚重的灰石城台，红墙与翘角瓦顶立在其上。承恩门是台北府城留下的清代城门。',
+    facts: ['台北府城北门于1884年竣工，额题“承恩门”；现存城门为台北府城原有城门之一。', '下部石砌城台开一处拱形通道，上部红色墙体覆单檐瓦顶，正面圆窗与侧面窄窗在图版中保留。', '图版取现存城门西北侧斜视，只绘门楼本体，不复原已拆除的瓮城及相连城墙。'],
+    caption: ['台北府城北门 · 承恩门', '清光绪十年（1884）'],
+    legacyNames: ['臺北府城北門', '承恩門', '台北府城北门（承恩门）'],
+  },
+);
