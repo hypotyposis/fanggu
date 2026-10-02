@@ -10,7 +10,7 @@
 
 - [queue.json](queue.json)：汇总脚本实际读取的队列；`batches/` 是原批次分工记录，新任务不需要伪造或沿用原 worker。
 - `assets/colored/<id>.png`：保留的设色 PNG 素材原件；`assets/color-research/<id>.json`：实际生成与验收记录。
-- `assets/colored-transparent-avif/<id>.avif`：网页使用的透明 AVIF Q85、4:4:4 交付副本；透明 PNG 中间稿在 `assets/colored-transparent/`，原暗底 AVIF 留在 `assets/colored-avif/`；`avif-manifest.json` 保存转码参数、尺寸与输入/输出哈希，原 PNG 不删除、不覆盖。
+- `assets/colored-transparent-avif/<id>.avif`：App 与审图工具使用的透明 AVIF Q85、4:4:4 交付副本；透明 PNG 中间稿在 `assets/colored-transparent/`，原暗底 AVIF 留在 `assets/colored-avif/`；`avif-manifest.json` 保存转码参数、尺寸与输入/输出哈希，原 PNG 不删除、不覆盖。
 - `assets/references/` 与 `assets/color-references/`：形制和颜色参考；生成前确认资料存在且对应正确主体。
 - [common-prompt.txt](common-prompt.txt)：共用画法；逐图提示词还须包含实物材料颜色、所绘主体和构图约束。
 - 卢舍那大佛、佛光寺东大殿与应县木塔三张已由用户确认保持原样并转为正式版，历史修改建议关闭，见 [正式版确认](../color-studies/v1/README.md)。它们继续通过 `queue.excluded` 由汇总器另行接入；该字段表示原批次之外的接入方式，不表示待验收。

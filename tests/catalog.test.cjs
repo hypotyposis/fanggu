@@ -1,3 +1,4 @@
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -72,11 +73,11 @@ const henanNationalTen = JSON.parse(read('assets/research/henan-national-2026100
 const southeastAsiaTwelve = JSON.parse(read('assets/research/southeast-asia-20261002-batch.json')).ids;
 additions.push(...henanNationalTen, ...southeastAsiaTwelve);
 const koreaEight = JSON.parse(read('assets/research/korea-20261002-batch.json')).ids;
-additions.push(...koreaEight);
+additions.push(...koreaEight, 'xian_small');
 test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
   assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
   assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
-  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length + taiwanThree.length + sichuanChongqingTen.length + shanxiNationalTen.length + hebeiNationalTen.length + henanNationalTen.length + southeastAsiaTwelve.length + koreaEight.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length + taiwanThree.length + sichuanChongqingTen.length + shanxiNationalTen.length + hebeiNationalTen.length + henanNationalTen.length + southeastAsiaTwelve.length + koreaEight.length + 1); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -183,7 +184,7 @@ test('early monuments have distinct dynasty colours and dates covered by the exp
   for (const site of SITES) assert(site.year >= 0 && site.year <= 2026);
 });
 test('all researched additions have source-backed imagegen plates in their original dynasty colour', () => {
-  const colours = Object.fromEntries([...read('style.css').matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(m => [m[1],m[2]]));
+  const colours = Object.fromEntries([...read('palette.css').matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(m => [m[1],m[2]]));
   for (const id of additions) {
     const site = SITES.find(s => s.id === id), meta = JSON.parse(read(`assets/research/${id}.json`));
     assert.equal(meta.caption.length, 2); assert(meta.caption.every(s => typeof s === 'string'));
@@ -286,8 +287,12 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
   }
   const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
   for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight, ...japanSix, ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...jiangzheTwenty, ...fujianNationalTen, ...taiwanThree, ...sichuanChongqingTen, ...shanxiNationalTen, ...hebeiNationalTen, ...henanNationalTen, ...southeastAsiaTwelve, ...koreaEight]) laterIds.add(id);
+  // The old paired xian plate was replaced; its approval stays in the historical record.
+  laterIds.add('xian'); laterIds.add('xian_small');
+  assertArchivedTiantai({ visualReview: 'approved_user' });
+  laterIds.add('tiantai');
   const previouslyApproved = Object.entries(avif.images).filter(([id]) => !laterIds.has(id));
-  assert.equal(previouslyApproved.length, 200);
+  assert.equal(previouslyApproved.length, 198);
   assert(previouslyApproved.every(([, item]) => item.visualReview === 'approved_user'));
   assert(SITES.find(s => s.id === 'bj_changling').yearApprox);
   assert(SITES.find(s => s.id === 'tj_wenmiao').sub.includes('中部'));
@@ -368,4 +373,29 @@ test('Henan additions preserve subject dates, registration and source-bound whit
   const bixia = SITES.find(s => s.id === 'hn_bixia');
   assert.equal(bixia.year, 1542); assert.equal(bixia.yearLabel, '1542起');
   assert.match(bixia.yearNote, /始建.*重修/);
+});
+
+
+test('Xi’an pagodas have independent subjects, dates, artwork and queue coverage', () => {
+  const facets = require('../catalog.js');
+  const sites = facets.classify(SITES, PLACES);
+  const queue = JSON.parse(read('assets/color-research/queue.json'));
+  const expected = [['xian', '西安大雁塔', 704, '大慈恩寺'], ['xian_small', '西安小雁塔', 707, '荐福寺']];
+  for (const [id, name, year, temple] of expected) {
+    const site = sites.find(s => s.id === id);
+    assert.equal(site.name, name); assert.equal(site.year, year);
+    assert(site.sub.includes(temple)); assert.equal(site.placeKey, 'xian');
+    assert.equal(site.dyn, 'tang'); assert.equal(site.province, '陕西');
+    assert.deepEqual(Array.from(site.types), ['pagoda']);
+    assert.equal(site.image.src, `assets/plates/${id}.png`);
+    const meta = JSON.parse(read(`assets/research/${id}.json`));
+    assert.equal(meta.subject, name); assert(meta.prompt.length > 100);
+    assert(meta.historical_sources.length > 0);
+    for (const file of meta.reference_files) assert(fs.existsSync(path.join(root, file)));
+    assert.equal(queue.entries.filter(e => e.id === id).length, 1);
+    assert.equal(queue.entries.find(e => e.id === id).subject, name);
+    assert(facets.matches(site, { query: name }));
+  }
+  assert.equal(sites.filter(s => facets.matches(s, { query: '小雁塔' })).length, 1);
+  assert.equal(sites.filter(s => facets.matches(s, { query: '大雁塔' })).length, 1);
 });

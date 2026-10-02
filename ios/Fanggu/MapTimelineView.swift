@@ -136,7 +136,7 @@ struct AtlasMapView: View {
                 .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                 .toolbar { Button("关闭") { selection = nil } }
             }
-            .preferredColorScheme(.dark)
+            .fangguAppearance()
         }
     }
 

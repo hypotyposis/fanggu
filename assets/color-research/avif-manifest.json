@@ -837,47 +837,87 @@
     },
     "xian": {
       "source": "assets/colored/xian.png",
-      "sourceSha256": "49137f49259cdcac44c8a7beda078e8965b5b3200bc448f6bb74384c70ef48e1",
-      "sourceBytes": 1880737,
+      "sourceSha256": "7d5b7f25f8a4751a03c6468129b11330ae13ef5206c09a989f9ed93c0b0cfaf5",
+      "sourceBytes": 1707861,
       "input": "assets/colored-transparent/xian.png",
-      "inputSha256": "e9ac845eec8b7c75eb25ec366c1ab3b2791f099ad39d30ba51db0d6751c66b68",
-      "inputBytes": 1858919,
+      "inputSha256": "9962773dc6967f7d2a6d1f6de1e5f8935b422ed8b98efc1c023e3417a27a53c5",
+      "inputBytes": 1613770,
       "src": "assets/colored-transparent-avif/xian.avif",
-      "sha256": "ad0f134cb54bda399ca8f39c2c2e804e8d99f13b9d20cbe2911797e2215cc410",
-      "bytes": 171758,
-      "width": 1536,
-      "height": 1024,
+      "sha256": "93a47f3dea6f50634116e871458bbebffcb2181e23c26bae3746a93d7a1a98c6",
+      "bytes": 165517,
+      "width": 1024,
+      "height": 1536,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 1117489,
-        "opaquePixels": 447876,
-        "meanError": 0.0055039723714192705,
-        "maxError": 5
+        "transparentPixels": 1008425,
+        "opaquePixels": 555070,
+        "meanError": 0.007381439208984375,
+        "maxError": 17
       },
       "extraction": {
+        "method": "white-matte-prototype-v1",
         "matteRgb": [
-          11,
-          10,
-          8
+          255,
+          255,
+          255
         ],
-        "borderPolicy": "dominant",
-        "borderMatchFraction": 1,
-        "tolerancePerChannel": 12,
+        "interiorRgbUnchanged": true,
         "backgroundSeeds": [],
-        "transparentPixels": 1122126,
-        "opaquePixels": 450738,
-        "rgbUnchanged": true
+        "skippedSeeds": []
       },
-      "visualReview": "approved_user",
-      "processingSeconds": 2.389,
-      "review": {
-        "reviewer": "user",
-        "date": "2026-09-16",
-        "statement": "都没问题 先替换上吧。",
-        "avifSha256": "ad0f134cb54bda399ca8f39c2c2e804e8d99f13b9d20cbe2911797e2215cc410",
-        "inputSha256": "e9ac845eec8b7c75eb25ec366c1ab3b2791f099ad39d30ba51db0d6751c66b68"
-      }
+      "visualReview": "pending_user",
+      "processingSeconds": 2.871,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "7d5b7f25f8a4751a03c6468129b11330ae13ef5206c09a989f9ed93c0b0cfaf5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "xian_small": {
+      "source": "assets/colored/xian_small.png",
+      "sourceSha256": "e8d373c41e15e7e9b591716d426d4409a22d1c3040f4b29d5299ac6741b99923",
+      "sourceBytes": 2065070,
+      "input": "assets/colored-transparent/xian_small.png",
+      "inputSha256": "1f2018a7f7662be7e2f89b28e355cb954044fcbfd3385c222ff1bca1c87bccf3",
+      "inputBytes": 1949802,
+      "src": "assets/colored-transparent-avif/xian_small.avif",
+      "sha256": "61012b8f87508e6965d8b488b7d8e33cc43cb70023ab5563eec85fc8361fb161",
+      "bytes": 239843,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 866951,
+        "opaquePixels": 695352,
+        "meanError": 0.008401234944661459,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 2.906,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e8d373c41e15e7e9b591716d426d4409a22d1c3040f4b29d5299ac6741b99923",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
     },
     "hn_fengxue": {
       "source": "assets/colored/hn_fengxue.png",
@@ -1368,20 +1408,20 @@
       "sourceSha256": "1c6aaa3d7fc35b2f91453f26524b09bcd00b0be72da8d62669d17b9566e94676",
       "sourceBytes": 2434324,
       "input": "assets/colored-transparent/tiantai.png",
-      "inputSha256": "ac1a44f2580685e0f2b3353a6b139fa9ba396ebde123f92194656cfddef3d0f7",
-      "inputBytes": 2352691,
+      "inputSha256": "7dbe3fccc11a58ef4fc7d3f36f23a63326721f4a6472db3c5bd2ba87b95cc888",
+      "inputBytes": 2352995,
       "src": "assets/colored-transparent-avif/tiantai.avif",
-      "sha256": "57e89c79c70dfe3b8ce444d18c75fd9a77a66ca222401d19407119ba8320201f",
-      "bytes": 284238,
+      "sha256": "0a606f2674c79cb42c5929e747d5a01b5124322fb774d511bc8675a22c8459da",
+      "bytes": 286688,
       "width": 1536,
       "height": 1024,
       "alpha": {
         "min": 0,
         "max": 255,
-        "transparentPixels": 772217,
-        "opaquePixels": 794550,
-        "meanError": 0.00446319580078125,
-        "maxError": 5
+        "transparentPixels": 832123,
+        "opaquePixels": 733105,
+        "meanError": 0.005589803059895833,
+        "maxError": 4
       },
       "extraction": {
         "matteRgb": [
@@ -1390,22 +1430,58 @@
           10
         ],
         "borderPolicy": "dominant",
-        "borderMatchFraction": 1,
+        "borderMatchFraction": 1.0,
         "tolerancePerChannel": 12,
-        "backgroundSeeds": [],
-        "transparentPixels": 774947,
-        "opaquePixels": 797917,
+        "backgroundSeeds": [
+          [
+            700,
+            185
+          ],
+          [
+            835,
+            185
+          ],
+          [
+            250,
+            650
+          ],
+          [
+            1280,
+            650
+          ]
+        ],
+        "transparentPixels": 835881,
+        "opaquePixels": 736983,
         "rgbUnchanged": true
       },
-      "visualReview": "approved_user",
-      "processingSeconds": 2.417,
-      "review": {
-        "reviewer": "user",
-        "date": "2026-09-16",
-        "statement": "都没问题 先替换上吧。",
-        "avifSha256": "57e89c79c70dfe3b8ce444d18c75fd9a77a66ca222401d19407119ba8320201f",
-        "inputSha256": "ac1a44f2580685e0f2b3353a6b139fa9ba396ebde123f92194656cfddef3d0f7"
-      }
+      "visualReview": "pending_user",
+      "processingSeconds": 1.968,
+      "backgroundPreparation": {
+        "method": "edge-connected-matte-v1",
+        "sourceSha256": "1c6aaa3d7fc35b2f91453f26524b09bcd00b0be72da8d62669d17b9566e94676",
+        "seeds": [
+          [
+            700,
+            185
+          ],
+          [
+            835,
+            185
+          ],
+          [
+            250,
+            650
+          ],
+          [
+            1280,
+            650
+          ]
+        ],
+        "note": "2026-10-02 检查发现旧暗底提取遗漏四处封闭透空：脊刹拉线左右两侧、外檐柱与墙面左右两侧。仅补这些种子，保留门洞与窗内暗部，原设色 PNG 不变。",
+        "processorSha256": "350685916094093f7b0ff9ef080cefd0cb2fff2b134c0636da4cc82735ce6424",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
     },
     "dayun": {
       "source": "assets/colored/dayun.png",

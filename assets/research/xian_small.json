@@ -1,0 +1,54 @@
+{
+  "id": "xian_small",
+  "subject": "西安小雁塔",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for 访古. Image 1 is STYLE MASTER only; never draw the Buddha. Other images are SUBJECT GEOMETRY references. Match the master's elegant delicate thin contours, sparse restrained detail, generous blank areas. Create BLACK INK on perfectly flat opaque PURE WHITE #FFFFFF. All unmarked surfaces inside and outside remain white. No shading, hatching, gradients, texture, gold, shadows, labels, watermark, frame, checkerboard. Doors and windows use outlines, no black fill. One complete tower centered on portrait 1024x1536 canvas, facade near straight-on with minimal side perspective, verticals vertical. Keep finial and base fully within margins. Remove people, plants, wires, signs, surrounding buildings, sky and ground scenery. Few short ground lines only. Subject: ONLY Small Wild Goose Pagoda at Jianfu Temple, Xi'an. Square dense-eave brick tower, exactly THIRTEEN surviving eave tiers, tall first storey with arched opening and closely spaced upper eaves, gently tapering convex outline. Damaged truncated uneven crown, NO reconstructed top two levels and NO finial or spire. Preserve actual silhouette and eave tiers in photo. One centered tower, about 84% image height. Sparse detail, no full brick texture.",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xian-small-full-photo.jpg"
+  ],
+  "generated_file": "assets/generated/xian_small.png",
+  "generation_tool": "built-in image_gen",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fb55-abb9-7063-af3b-ed164c8a1493/exec-2f3d12db-3578-4df7-ad3a-16140c6c747d.png",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiao_yan_ta.jpg/960px-Xiao_yan_ta.jpg?download=1",
+      "reference_file": "assets/references/xian-small-full-photo.jpg",
+      "author": "Huang Xiaobo (黄晓波)",
+      "license": "Public domain (PD-self)",
+      "license_url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "西安博物院：小雁塔",
+      "url": "https://www.xabwy.com/show.html?id=46",
+      "note": "景龙年间707–710年创建；检索摘要可读，全文工具抓取超时。"
+    },
+    {
+      "title": "西安科普网：西安博物院",
+      "url": "https://www.xakpw.com/single/18305",
+      "note": "原十五级、现十三层，43.4米与11.38米；检索摘要依据。"
+    }
+  ],
+  "source_note": "沿用原组合图的实拍来源，独立绘制西安小雁塔本体；不包含另一座塔与周围寺院。原组合稿与生成记录完整保留在 history/xian-pair-2026-10-02/。",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "线稿 · 小雁塔密檐式砖塔",
+    "现存十三级 · 残高约43.4 m"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "24c187e14206795e1044e9a574d639b122dea9a17695b36752b52dcc4c2a8c7a",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "status": "pending_user",
+    "note": "原型模式已查看输入及输出，不作视觉通过/淘汰决定；最终由用户人审。"
+  }
+}

@@ -334,14 +334,6 @@
         "scope": "慈恩寺大雁塔",
         "source": "batch1",
         "locator": "PDF 第10页 · 大雁塔"
-      },
-      {
-        "batch": 1,
-        "unitName": "小雁塔",
-        "relation": "part",
-        "scope": "荐福寺小雁塔",
-        "source": "batch1",
-        "locator": "PDF 第10页 · 小雁塔"
       }
     ],
     "nanchan": [
@@ -4752,6 +4744,16 @@
             "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
           }
         ]
+      }
+    ],
+    "xian_small": [
+      {
+        "batch": 1,
+        "unitName": "小雁塔",
+        "relation": "part",
+        "scope": "荐福寺小雁塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 小雁塔"
       }
     ]
   },

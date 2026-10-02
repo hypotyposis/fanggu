@@ -1735,9 +1735,9 @@
   },
   {
     "id": "xian",
-    "name": "西安大雁塔 · 小雁塔",
-    "short": "雁塔",
-    "sub": "慈恩寺 · 荐福寺",
+    "name": "西安大雁塔",
+    "short": "大雁塔",
+    "sub": "大慈恩寺 · 七层楼阁式砖塔",
     "dynasty": "tang",
     "dynastyName": "唐",
     "dynastyGlyph": "唐",
@@ -1746,12 +1746,12 @@
     "dynastyColor": "#d6ab5c",
     "timelineLane": "",
     "tag": "唐",
-    "era": "永徽三年始建 · 景龙年间",
+    "era": "永徽三年始建 · 武周长安年间改建",
     "year": 704,
-    "yearLabel": "704 · 707",
+    "yearLabel": "701–704",
     "yearApprox": false,
-    "yearNote": "",
-    "place": "陕西西安 · 长安城南",
+    "yearNote": "652年初创；以武周长安年间七层改建形制定年，后世包砌与修缮另述。",
+    "place": "陕西西安 · 大慈恩寺",
     "placeKey": "xian",
     "placeName": "西安",
     "country": "CN",
@@ -1765,16 +1765,16 @@
     "typeNames": [
       "古塔"
     ],
-    "lede": "大雁塔与小雁塔隔着三公里对望：一座楼阁式，一座密檐式，唐塔的两种样子都在长安。大雁塔永徽三年（652）玄奘为藏经而建，武周长安年间（701–704）改为七层；小雁塔景龙年间（707–710）建于荐福寺，十五级密檐震落两级，剩十三级。",
+    "lede": "大雁塔立在大慈恩寺中，是玄奘为保存从印度带回的佛教经卷而建的砖塔。永徽三年（652）初创，武周长安年间（701–704）改建为七层；楼阁式塔身层层收分，现存外观还经历后世包砌与修缮。",
     "facts": [
-      "大雁塔方形七层楼阁式砖塔，通高 64.5 米，底边 25.5 米；西门楣上的唐代佛殿线刻，是唐代建筑最可靠的图像之一。",
-      "小雁塔方形密檐式，通高 43.4 米，原十五级；明成化地震塔身裂开，正德地震又复合，\"三裂三合\"之说由此而来。",
-      "一为藏经、一为舍利，都在长安城南的寺院里，是唐长安城内仅存的两座塔。"
+      "方形七层楼阁式砖塔，通高约64.5米；砖壁以隐出的柱、阑额表现木构楼阁的形式。",
+      "各层正面设券洞，逐层收分的塔身与叠涩砖檐构成清晰轮廓，顶部保留塔刹。",
+      "所绘主体为大雁塔本体，不包含寺内其他建筑；它与荐福寺小雁塔分别收录。"
     ],
     "quote": "",
     "captions": [
-      "线稿 · 楼阁式与密檐式",
-      "大雁塔 64.5 m · 小雁塔 43.4 m"
+      "线稿 · 大雁塔楼阁式砖塔",
+      "七层 · 通高约64.5 m"
     ],
     "lineImage": "xian.png",
     "colorImage": "xian.avif",
@@ -1790,10 +1790,6 @@
       {
         "title": "Alex Kwok (Citycat)",
         "url": "https://commons.wikimedia.org/wiki/File:Giant_Wild_Goose_Pagoda.jpg"
-      },
-      {
-        "title": "Huang Xiaobo (黄晓波)",
-        "url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg"
       }
     ],
     "protection": [
@@ -1803,16 +1799,6 @@
         "relation": "part",
         "scope": "慈恩寺大雁塔",
         "locator": "PDF 第10页 · 大雁塔",
-        "note": "",
-        "sourceTitle": "国务院公布第1批全国重点文物保护单位名单",
-        "sourceURL": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
-      },
-      {
-        "batch": 1,
-        "unitName": "小雁塔",
-        "relation": "part",
-        "scope": "荐福寺小雁塔",
-        "locator": "PDF 第10页 · 小雁塔",
         "note": "",
         "sourceTitle": "国务院公布第1批全国重点文物保护单位名单",
         "sourceURL": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
@@ -1887,6 +1873,76 @@
         "note": "",
         "sourceTitle": "国务院公布第5批全国重点文物保护单位名单",
         "sourceURL": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+      }
+    ]
+  },
+  {
+    "id": "xian_small",
+    "name": "西安小雁塔",
+    "short": "小雁塔",
+    "sub": "荐福寺 · 十三级密檐式砖塔",
+    "dynasty": "tang",
+    "dynastyName": "唐",
+    "dynastyGlyph": "唐",
+    "dynastyStart": 618,
+    "dynastyEnd": 907,
+    "dynastyColor": "#d6ab5c",
+    "timelineLane": "",
+    "tag": "唐",
+    "era": "唐中宗景龙年间",
+    "year": 707,
+    "yearLabel": "707–710",
+    "yearApprox": false,
+    "yearNote": "唐景龙年间创建；以707年为排序起点，现绘明代地震后留下的十三级残顶形态。",
+    "place": "陕西西安 · 荐福寺",
+    "placeKey": "xian",
+    "placeName": "西安",
+    "country": "CN",
+    "province": "陕西",
+    "region": "northwest",
+    "latitude": 34.26,
+    "longitude": 108.94,
+    "types": [
+      "pagoda"
+    ],
+    "typeNames": [
+      "古塔"
+    ],
+    "lede": "小雁塔原名荐福寺塔，建于唐中宗景龙年间（707–710）。方形砖塔以密集叠涩砖檐向上收束，原有十五级，明代地震毁去顶部两级；如今保留十三级与残缺塔顶。",
+    "facts": [
+      "方形密檐式砖塔，现存十三级，残高约43.4米，底层边长约11.38米；底层高大，上部檐层紧密。",
+      "塔身多次经历地震，顶部十四、十五级已经毁失。图版按现存残顶绘制，不复原消失的塔层或补画塔刹。",
+      "所绘主体为荐福寺小雁塔本体，不包含西安博物院展馆或寺院其他建筑；与大慈恩寺大雁塔分别记录到访。"
+    ],
+    "quote": "",
+    "captions": [
+      "线稿 · 小雁塔密檐式砖塔",
+      "现存十三级 · 残高约43.4 m"
+    ],
+    "lineImage": "xian_small.png",
+    "colorImage": "xian_small.avif",
+    "initialStatus": "unvisited",
+    "legacyNames": [
+      "荐福寺塔"
+    ],
+    "legacyPlaces": [],
+    "sourceURL": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
+    "sourceLinks": [
+      {
+        "title": "Huang Xiaobo (黄晓波)",
+        "url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg"
+      }
+    ],
+    "protection": [
+      {
+        "batch": 1,
+        "unitName": "小雁塔",
+        "relation": "part",
+        "scope": "荐福寺小雁塔",
+        "locator": "PDF 第10页 · 小雁塔",
+        "note": "",
+        "sourceTitle": "国务院公布第1批全国重点文物保护单位名单",
+        "sourceURL": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
       }
     ]
   },

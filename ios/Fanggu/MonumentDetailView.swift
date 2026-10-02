@@ -111,10 +111,15 @@ struct MonumentDetailView: View {
                 }
                 VStack(alignment: .leading, spacing: 8) {
                     Text("我的评价").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
-                    if let rating = review.rating { Text(String(repeating: "★", count: rating) + String(repeating: "☆", count: 5 - rating)).foregroundStyle(Palette.gold) }
+                    if !review.dimensions.isEmpty {
+                        ReviewRadar(scores: .constant(review.dimensions), editable: false)
+                    } else if let rating = review.rating {
+                        Text("旧版评分 · \(rating) 星").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                    }
                     if !review.text.isEmpty { Text(review.text).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2) }
-                    Button(review.rating == nil && review.text.isEmpty ? "写短评 / 打分" : "编辑评价") { editingReview = true }
+                    Button(review.rating == nil && review.dimensions.isEmpty && review.text.isEmpty ? "画六维图 / 写短评" : "编辑评价") { editingReview = true }
                         .buttonStyle(FangguOutlineButton())
+                        .accessibilityIdentifier("edit-review")
                 }
                 Text("图版与资料来源").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                 ForEach(site.sourceLinks, id: \.self) { source in
@@ -182,7 +187,7 @@ struct ArrivalSlider: View {
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                     .frame(maxWidth: .infinity)
                 Text("访").font(FangguFont.brush(29))
-                    .foregroundStyle(Palette.paper)
+                    .foregroundStyle(Palette.sealPaper)
                     .frame(width: 50, height: 50)
                     .background(Palette.red)
                     .contentShape(Rectangle())
@@ -263,14 +268,20 @@ struct VisitEditor: View {
         NavigationStack {
             Form {
                 Section("到访日期 · 可留空") {
-                    TextField("YYYY-MM-DD", text: $date).keyboardType(.numbersAndPunctuation)
+                    TextField("YYYY-MM-DD", text: $date, prompt: Text("YYYY-MM-DD").foregroundStyle(Palette.paper3))
+                        .keyboardType(.numbersAndPunctuation)
                 }
+                .listRowBackground(Palette.ink2)
                 Section("到访笔记") {
                     TextEditor(text: $note).frame(minHeight: 160)
                     Text("\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
+                .listRowBackground(Palette.ink2)
                 if let error { Text(error).foregroundStyle(Palette.redText) }
             }
+            .foregroundStyle(Palette.paper)
+            .scrollContentBackground(.hidden)
+            .background(Palette.ink)
             .navigationTitle("记录到访")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
@@ -282,6 +293,7 @@ struct VisitEditor: View {
                 note = record.note
             }
         }
+        .fangguAppearance()
     }
 
     private func save() {
@@ -298,52 +310,164 @@ struct VisitEditor: View {
 struct ReviewEditor: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.scenePhase) private var scenePhase
     let site: Monument
-    @State private var rating: Int?
+    @State private var dimensions = DimensionScores()
+    @State private var legacyRating: Int?
+    @State private var loaded = false
     @State private var text = ""
     @State private var error: String?
+    @State private var textSaveTask: Task<Void, Never>?
+    @FocusState private var editingText: Bool
+
+    private var hasUnsavedChanges: Bool {
+        let stored = library.review(for: site)
+        return dimensions != stored.dimensions || text != stored.text
+    }
+    private var validationError: String? { text.utf16.count > 500 ? "短评不能超过 500 字" : nil }
 
     var body: some View {
         NavigationStack {
-            Form {
-                Section("我的评分") {
-                    HStack {
-                        ForEach(1...5, id: \.self) { value in
-                            Button { if rating != value { rating = value; Haptics.selection() } } label: {
-                                Image(systemName: value <= (rating ?? 0) ? "star.fill" : "star")
-                                    .foregroundStyle(Palette.gold).font(.title2)
-                                    .frame(minWidth: 44, minHeight: 44)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    Text(site.name).font(FangguFont.serif(19)).foregroundStyle(Palette.paper)
+                    if let message = validationError ?? error {
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text(message).foregroundStyle(Palette.redText)
+                            if hasUnsavedChanges {
+                                Text("未保存的修改仍保留在这里。")
+                                    .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
+                                if validationError == nil {
+                                    Button("重试保存") { _ = flushChanges() }
+                                }
+                                Button("放弃未保存的修改", role: .destructive) { discardUnsavedChanges() }
                             }
-                            .buttonStyle(.plain)
-                            .accessibilityLabel("\(value) 星")
                         }
-                        Spacer()
-                        Button("清空") { if rating != nil { rating = nil; Haptics.selection() } }
+                        .accessibilityIdentifier("review-save-error")
                     }
+                    VStack(spacing: 8) {
+                        HStack {
+                            Text("我的六维图").font(FangguFont.serif(17))
+                            Spacer()
+                            Button {
+                                dimensions = DimensionScores()
+                                if saveDimensions(dimensions) { Haptics.selection() }
+                            } label: {
+                                Text("重置六项").font(FangguFont.serif(12))
+                                    .frame(minHeight: 44).contentShape(Rectangle())
+                            }
+                            .disabled(dimensions.isEmpty)
+                            .accessibilityIdentifier("reset-dimensions")
+                        }
+                        ReviewRadar(scores: $dimensions, onCommit: saveDimensions)
+                    }
+                    .padding(.horizontal, 12).padding(.bottom, 18)
+                    .background(Palette.ink2)
+                    .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+                    if let rating = legacyRating {
+                        Text("旧版 \(rating) 星评分已保留。六个维度由你重新描画。")
+                            .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                    }
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("短评").font(FangguFont.serif(17))
+                        TextEditor(text: $text).frame(minHeight: 130)
+                            .focused($editingText)
+                            .scrollContentBackground(.hidden).padding(8).background(Palette.ink2)
+                            .accessibilityLabel("短评").accessibilityIdentifier("review-text")
+                        Text("\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                    }
+                    Button("清除评价", role: .destructive) {
+                        if library.setReview(dimensions: DimensionScores(), text: "", for: site, clearLegacyRating: true) {
+                            textSaveTask?.cancel()
+                            dimensions = DimensionScores(); text = ""; legacyRating = nil; error = nil
+                            Haptics.selection()
+                        } else { showSaveError() }
+                    }
+                    .foregroundStyle(Palette.redText).frame(minHeight: 44)
+                    .disabled(dimensions.isEmpty && text.isEmpty && legacyRating == nil)
+                    Text(hasUnsavedChanges ? "修改尚未保存" : "松手即保存，短评自动保存。")
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                        .accessibilityIdentifier("review-autosave-status")
                 }
-                Section("短评") {
-                    TextEditor(text: $text).frame(minHeight: 150)
-                    Text("\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(.secondary)
-                }
-                Button("清除评价", role: .destructive) { rating = nil; text = ""; save() }
-                if let error { Text(error).foregroundStyle(Palette.redText) }
+                .padding(18)
             }
+            .foregroundStyle(Palette.paper)
+            .background(Palette.ink)
+            .scrollDismissesKeyboard(.interactively)
             .navigationTitle("我的评价")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
-                ToolbarItem(placement: .confirmationAction) { Button("保存") { save() } }
+                ToolbarItem(placement: .confirmationAction) { Button("完成") { close() } }
             }
             .onAppear {
+                guard !loaded else { return }
                 let review = library.review(for: site)
-                rating = review.rating
+                dimensions = review.dimensions
+                legacyRating = review.rating
                 text = review.text
+                loaded = true
             }
+            .onChange(of: text) { _, _ in scheduleTextSave() }
+            .onChange(of: editingText) { _, focused in
+                if !focused { _ = saveText() }
+            }
+            .onChange(of: scenePhase) { _, phase in
+                if phase != .active { _ = saveText() }
+            }
+            .onDisappear { textSaveTask?.cancel() }
+            .interactiveDismissDisabled(hasUnsavedChanges)
+        }
+        .fangguAppearance()
+    }
+
+    private func saveDimensions(_ next: DimensionScores) -> Bool {
+        let saved = library.setReviewDimensions(next, for: site)
+        if saved { if !hasUnsavedChanges { error = nil } }
+        else { showSaveError() }
+        return saved
+    }
+
+    private func scheduleTextSave() {
+        textSaveTask?.cancel()
+        guard loaded, text != library.review(for: site).text else { return }
+        textSaveTask = Task { @MainActor in
+            do { try await Task.sleep(for: .milliseconds(450)) }
+            catch { return }
+            guard !Task.isCancelled else { return }
+            _ = saveText()
         }
     }
 
-    private func save() {
-        guard text.utf16.count <= 500 else { error = "短评不能超过 500 字"; Haptics.error(); return }
-        if library.setReview(rating: rating, text: text, for: site) { Haptics.soft(); dismiss() }
-        else { error = library.error; Haptics.error() }
+    private func saveText() -> Bool {
+        textSaveTask?.cancel()
+        guard loaded else { return true }
+        guard validationError == nil else { return false }
+        let saved = library.setReviewText(text, for: site)
+        if saved { if !hasUnsavedChanges { error = nil } }
+        else { showSaveError() }
+        return saved
+    }
+
+    private func flushChanges() -> Bool {
+        let scoresSaved = saveDimensions(dimensions)
+        let textSaved = saveText()
+        return scoresSaved && textSaved
+    }
+
+    private func close() {
+        if flushChanges() { dismiss() }
+        else if validationError != nil { Haptics.error() }
+    }
+
+    private func showSaveError() {
+        error = library.error ?? "保存失败，请重试。"
+        Haptics.error()
+    }
+
+    private func discardUnsavedChanges() {
+        textSaveTask?.cancel()
+        let stored = library.review(for: site)
+        dimensions = stored.dimensions; text = stored.text; error = nil
+        dismiss()
     }
 }

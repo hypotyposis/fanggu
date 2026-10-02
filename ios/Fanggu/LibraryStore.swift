@@ -8,13 +8,13 @@ import Foundation
     private let fileURL: URL
     private var loadFailed = false
 
-    init() {
+    init(fileURL suppliedURL: URL? = nil) {
         let url = Bundle.main.url(forResource: "catalog", withExtension: "json")!
         monuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
         ids = Set(monuments.map(\.id))
         let directory = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("Fanggu", isDirectory: true)
-        fileURL = directory.appendingPathComponent("library.json")
+        fileURL = suppliedURL ?? directory.appendingPathComponent("library.json")
         do {
             if FileManager.default.fileExists(atPath: fileURL.path) {
                 let loaded = try JSONDecoder().decode(LibraryData.self, from: Data(contentsOf: fileURL))
@@ -38,11 +38,28 @@ import Foundation
         return commit { $0.records[site.id] = record }
     }
 
-    @discardableResult func setReview(rating: Int?, text: String, for site: Monument) -> Bool {
+    @discardableResult func setReview(dimensions: DimensionScores, text: String, for site: Monument, clearLegacyRating: Bool = false) -> Bool {
         guard ids.contains(site.id) else { return false }
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-        return commit { $0.reviews[site.id] = Review(rating: rating, text: text, updatedAt: formatter.string(from: .now)) }
+        return commit {
+            let legacyRating = clearLegacyRating ? nil : $0.reviews[site.id]?.rating
+            $0.reviews[site.id] = Review(rating: legacyRating, dimensions: dimensions, text: text, updatedAt: formatter.string(from: .now))
+        }
+    }
+
+    @discardableResult func setReviewDimensions(_ dimensions: DimensionScores, for site: Monument) -> Bool {
+        guard ids.contains(site.id) else { return false }
+        let current = review(for: site)
+        guard current.dimensions != dimensions else { return true }
+        return setReview(dimensions: dimensions, text: current.text, for: site)
+    }
+
+    @discardableResult func setReviewText(_ text: String, for site: Monument) -> Bool {
+        guard ids.contains(site.id) else { return false }
+        let current = review(for: site)
+        guard current.text != text else { return true }
+        return setReview(dimensions: current.dimensions, text: text, for: site)
     }
 
     func backup() throws -> BackupDocument {
@@ -66,8 +83,15 @@ import Foundation
         }
         merged.records.merge(imported.records) { _, new in new }
         merged.links.merge(imported.links) { _, new in new }
-        if imported.version == 3 { merged.reviews.merge(imported.reviews) { _, new in new } }
-        merged.version = 3
+        if imported.version >= 3 {
+            merged.reviews.merge(imported.reviews) { old, new in
+                var result = new
+                // A web v3 backup cannot express or clear a six-dimensional profile.
+                if imported.version == 3 { result.dimensions = old.dimensions }
+                return result
+            }
+        }
+        merged.version = 4
         try validate(merged)
         try save(merged)
         loadFailed = false
@@ -94,7 +118,7 @@ import Foundation
         guard !loadFailed else { return false }
         var next = data
         change(&next)
-        next.version = 3
+        next.version = 4
         do { try validate(next); try save(next); data = next; error = nil; return true }
         catch { self.error = "保存失败：\(error.localizedDescription)"; return false }
     }
@@ -108,7 +132,7 @@ import Foundation
     }
 
     private func validate(_ value: LibraryData) throws {
-        guard [1, 2, 3].contains(value.version), value.customSites.count <= 2000,
+        guard [1, 2, 3, 4].contains(value.version), value.customSites.count <= 2000,
               value.records.count <= 5000, value.reviews.count <= 5000 else { throw StoreError.invalid("备份格式不正确") }
         let customIDs = Set(value.customSites.map(\.id))
         guard customIDs.count == value.customSites.count, customIDs.isDisjoint(with: ids),
@@ -123,7 +147,7 @@ import Foundation
             guard customIDs.contains(id), ids.contains(target), value.records[target] != nil else { throw StoreError.invalid("旧记录关联无效") }
         }
         for (id, review) in value.reviews {
-            guard ids.contains(id), review.rating.map({ (1...5).contains($0) }) ?? true,
+            guard ids.contains(id), review.rating.map({ (1...5).contains($0) }) ?? true, review.dimensions.isValid,
                   review.text.utf16.count <= 500,
                   Self.validTimestamp(review.updatedAt) else {
                 throw StoreError.invalid("评价无效")

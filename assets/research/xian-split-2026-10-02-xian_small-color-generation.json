@@ -1,0 +1,12 @@
+{
+  "id": "xian_small",
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion architectural plate for 访古. Image 1 is exact black-on-white drawing to color; preserve its entire silhouette, all existing eaves, windows, damage, line placement, proportions, viewpoint, canvas size and margins. Image 2 is Small Wild Goose Pagoda material reference only. Image 3 is style sample only; borrow delicate thin contours and matte mineral-gouache fills, not its architecture or warm gold palette. Color ONLY the single tower from Image 1. Observed material colors: subdued tan-brown exposed brick walls, dark charcoal-brown projecting brick eaves, gray-beige stone plinth, deep brown openings. Present-day weathered matte masonry, sparse subtle grain and two or three soft shade values, no gilding, new paint or invented restoration. Keep damaged truncated crown and exactly the existing surviving tiers; no spire or added top levels. Preserve all fine contour lines. Background inside blank surroundings perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradients, shadow, halo, vignette or checkerboard. No trees, people, extra buildings, text, labels, watermark or border. Output one portrait 1024x1536 full tower companion, identical composition to line art.",
+  "input_images": [
+    "assets/generated/xian_small.png",
+    "assets/references/xian-small-full-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "status": "received",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fb55-abb9-7063-af3b-ed164c8a1493/exec-73a7633a-f996-4915-98dd-9346d69713e1.png",
+  "output": "assets/colored/xian_small.png"
+}

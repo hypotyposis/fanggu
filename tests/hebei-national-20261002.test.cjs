@@ -1,3 +1,6 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -71,10 +74,9 @@ test('Hebei intake distinguishes present structures, formal units and partial sc
 });
 
 test('new Hebei sites are searchable and default unvisited without disturbing older IDs', () => {
-  const { create } = require('../library.js');
-  const lib = create(catalog, { getItem: () => null, setItem() { throw Error('No personal record writes expected'); } });
+  assertUnvisited(batch.ids);
   for (const id of batch.ids) {
-    const site = lib.all().find(s => s.id === id);
+    const site = catalog.find(s => s.id === id);
     assert.equal(site.province, '河北');
     assert.equal(site.region, 'north');
     assert.equal(site.initialStatus, 'unvisited');
@@ -87,6 +89,8 @@ test('new Hebei sites are searchable and default unvisited without disturbing ol
 test('Hebei intake preserves older plate content and human acceptance', () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   for (const [id, previous] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(previous); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(previous); continue; }
     const now = manifest.images[id];
     assert.equal(now.sourceSha256, previous.sourceSha256, id);
     assert.equal(now.inputSha256, previous.inputSha256, id);

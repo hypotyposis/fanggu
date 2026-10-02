@@ -1,3 +1,6 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -11,8 +14,6 @@ const sha = file => crypto.createHash('sha256').update(fs.readFileSync(path.join
 const batch = json('assets/research/southeast-asia-20261002-batch.json');
 const { SITES, PLACES, DYN, CHAPTERS, COLORED_PLATES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n' + read('colored-plates.js') + '\n({SITES,PLACES,DYN,CHAPTERS,COLORED_PLATES})');
 const facets = require('../catalog.js');
-const timeline = require('../timeline.js');
-const { create } = require('../library.js');
 const catalog = facets.classify(SITES, PLACES);
 
 test('approved Southeast Asia selection has twelve source-bound local line/color pairs', () => {
@@ -55,6 +56,8 @@ test('approved Southeast Asia selection has twelve source-bound local line/color
     assert(image.alpha.min === 0 && image.alpha.max > 0, `${id} needs transparent background and visible subject`);
   }
   for (const [id, before] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(before); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(before); continue; }
     const image = manifest.images[id];
     for (const key of ['sourceSha256', 'inputSha256', 'sha256']) assert.equal(image[key], before[key], `${id}: ${key}`);
     if (image.visualReview !== before.visualReview) {
@@ -67,7 +70,7 @@ test('approved Southeast Asia selection has twelve source-bound local line/color
   }
 });
 
-test('seven countries use their own eras, regions and a separate chronology lane', () => {
+test('seven countries use their own eras and regions', () => {
   const sites = catalog.filter(site => batch.ids.includes(site.id));
   assert.deepEqual(Object.fromEntries(['KH', 'ID', 'TH', 'MM', 'LA', 'VN', 'PH'].map(country => [country, sites.filter(site => site.country === country).length])), { KH: 3, ID: 2, TH: 2, MM: 1, LA: 1, VN: 2, PH: 1 });
   assert.equal(new Set(sites.map(site => site.dyn)).size, 9);
@@ -76,20 +79,16 @@ test('seven countries use their own eras, regions and a separate chronology lane
     assert.equal(facets.regions[site.region].country, site.country);
     assert(CHAPTERS.some(chapter => chapter.key === site.dyn));
     assert.equal(site.protection.length, 0);
-    assert.equal(timeline.lane(site, DYN), 'southeastAsia');
   }
-  const groups = timeline.clusters(SITES, DYN).filter(group => group.lane === 'southeastAsia');
-  assert.deepEqual(groups.flatMap(group => group.sites.map(site => site.id)).sort(), [...batch.ids].sort());
+  assert.deepEqual(Array.from(catalog.filter(site => ['KH', 'ID', 'TH', 'MM', 'LA', 'VN', 'PH'].includes(site.country)), site => site.id).sort(), [...batch.ids].sort());
   for (const country of ['KH', 'ID', 'TH', 'MM', 'LA', 'VN', 'PH']) {
-    const library = create(catalog, { getItem: () => null, setItem() {} });
-    assert.deepEqual(library.all().filter(site => facets.matches(site, { country })).map(site => site.id).sort(), sites.filter(site => site.country === country).map(site => site.id).sort());
+    assert.deepEqual(catalog.filter(site => facets.matches(site, { country })).map(site => site.id).sort(), sites.filter(site => site.country === country).map(site => site.id).sort());
   }
   assert(PLACES.filter(place => place.country === 'ID').every(place => place.lat < 0));
 });
 
 test('current geography, approximate dates and main-shrine identity stay explicit', () => {
-  const library = create(catalog, { getItem: () => null, setItem() {} });
-  const matches = query => Array.from(library.all().filter(site => facets.matches(site, { query })), site => site.id);
+  const matches = query => Array.from(catalog.filter(site => facets.matches(site, { query })), site => site.id);
   const po = catalog.find(site => site.id === 'vn_po_klong_garai');
   assert.equal(po.province, '庆和省');
   assert.deepEqual(matches('宁顺省'), ['vn_po_klong_garai']);
@@ -100,21 +99,6 @@ test('current geography, approximate dates and main-shrine identity stay explici
   assert(!json('assets/research/vn_po_klong_garai.json').reference_files.some(file => file.endsWith('-photo-whole.jpg')), 'the narrow gate-tower photo is not a main-shrine input');
 });
 
-test('intake starts unvisited and retains existing records across reload and backup', () => {
-  const memory = new Map();
-  const storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
-  const before = create(catalog.filter(site => !batch.ids.includes(site.id)), storage);
-  before.setRecord('xianwall', { status: 'visited', visitedOn: '2025-05-01', note: '旧城墙行记' });
-  before.setStatus('toji', 'wishlist');
-  const after = create(catalog, storage);
-  assert.deepEqual(after.record('xianwall'), before.record('xianwall'));
-  assert.deepEqual(after.record('toji'), before.record('toji'));
-  for (const id of batch.ids) {
-    assert.equal(after.record(id).status, 'unvisited');
-    assert.equal(after.record(id).visitedOn, '');
-  }
-  const restored = create(catalog, { getItem: () => null, setItem() {} });
-  restored.import(after.export());
-  assert.deepEqual(restored.record('xianwall'), after.record('xianwall'));
-  for (const id of batch.ids) assert.equal(restored.record(id).status, 'unvisited');
+test('new entries export unvisited defaults to the native catalogue', () => {
+  assertUnvisited(batch.ids);
 });

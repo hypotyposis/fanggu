@@ -1,0 +1,70 @@
+{
+  "id": "xian",
+  "name": "西安大雁塔 · 小雁塔",
+  "subject": "西安大雁塔 · 小雁塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "/Users/fuxiangyu/Workspace/fanggu/assets/generated/xian.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/xian-big-photo.png",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/xian-big-clear-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/references/xian-small-full-photo.jpg",
+    "/Users/fuxiangyu/Workspace/fanggu/assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the BLACK-ON-WHITE LINE DRAWING TO COLOR and is the exact composition/geometry master. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: perfectly flat near-black #100f0d, edge to edge outside the drawn subject and through its open doorways and gaps. Do not create a white rectangle, paper texture outside the object, transparency grid, checkerboard, halo, vignette or glow. Output one complete plate, original image aspect ratio.\n\n\nSUBJECT: xian.\nOBSERVED MATERIAL COLORS: Three daylight photographs. Giant Wild Goose pagoda actual wall is subdued ochre tan brick/plaster, darker gray-brown projecting bands, gray-brown cap, dark brown shutters. First overcast view corrects the excessively orange direct sun in second. Small Wild Goose pagoda is brown/tan exposed brick with distinctly deep charcoal-brown dense eaves and broken top, no colored paint. Gray beige platforms. These are matte masonry, not gilded towers.\nSPECIFIC GEOMETRY LOCK: Exactly two pagodas in original layout: 7-storey large tower LEFT, 13-tier surviving small dense-eave tower RIGHT with damaged flat uneven crown. Preserve relative heights, all existing windows and margins. No additional foreground halls or renewed spire on small tower.",
+  "material_observations": "Three daylight photographs. Giant Wild Goose pagoda actual wall is subdued ochre tan brick/plaster, darker gray-brown projecting bands, gray-brown cap, dark brown shutters. First overcast view corrects the excessively orange direct sun in second. Small Wild Goose pagoda is brown/tan exposed brick with distinctly deep charcoal-brown dense eaves and broken top, no colored paint. Gray beige platforms. These are matte masonry, not gilded towers.",
+  "references": {
+    "original_record": "assets/research/xian.json",
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Big_Wild_Goose_Pagoda_1.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Big_Wild_Goose_Pagoda_1.jpg",
+        "reference_file": "assets/references/xian-big-photo.png",
+        "author": "O.Mustafin",
+        "license": "CC0 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Giant_Wild_Goose_Pagoda.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Giant_Wild_Goose_Pagoda.jpg/960px-Giant_Wild_Goose_Pagoda.jpg",
+        "reference_file": "assets/references/xian-big-clear-photo.jpg",
+        "author": "Alex Kwok (Citycat)",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiao_yan_ta.jpg/960px-Xiao_yan_ta.jpg?download=1",
+        "reference_file": "assets/references/xian-small-full-photo.jpg",
+        "author": "Huang Xiaobo (黄晓波)",
+        "license": "Public domain (PD-self)",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
+        "date": "未知（原照片记录未提供拍摄日期）"
+      }
+    ],
+    "additional_sources": [],
+    "selected_photo_files": [
+      "/Users/fuxiangyu/Workspace/fanggu/assets/references/xian-big-photo.png",
+      "/Users/fuxiangyu/Workspace/fanggu/assets/references/xian-big-clear-photo.jpg",
+      "/Users/fuxiangyu/Workspace/fanggu/assets/references/xian-small-full-photo.jpg"
+    ],
+    "note": "来源字段沿用原线稿研究记录；仅 selected_photo_files 中的实拍为本次颜色输入。"
+  },
+  "output": "assets/colored/xian.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a09e31-1dcf-7dd1-914a-e5108ef2cacb/exec-4e017a30-8e7a-4534-92ac-d88a7ea387bd.png",
+  "width": 1536,
+  "height": 1024,
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "已实际查看线稿、三张日间实拍、风格样本与结果。",
+      "左七层、右十三层密檐且顶部残缺，双塔布局和平台保留。",
+      "土赭塔墙、深灰褐檐带及暗褐门窗有区分，没有添前殿或补小塔刹。"
+    ],
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+  },
+  "worker": "worker_a"
+}

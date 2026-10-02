@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 464,
+  "count": 465,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -419,27 +419,46 @@
     },
     {
       "id": "xian",
-      "name": "西安大雁塔 · 小雁塔",
-      "subject": "西安大雁塔 · 小雁塔",
-      "sub": "慈恩寺 · 荐福寺",
-      "place": "陕西西安 · 长安城南",
+      "name": "西安大雁塔",
+      "subject": "西安大雁塔",
+      "sub": "大慈恩寺 · 七层楼阁式砖塔",
+      "place": "陕西西安 · 大慈恩寺",
       "dyn": "tang",
       "types": [
         "pagoda"
       ],
-      "owner": "worker_a",
       "line": "assets/generated/xian.png",
       "displayLine": "assets/plates/xian.png",
-      "width": 1536,
-      "height": 1024,
+      "width": 1024,
+      "height": 1536,
       "originalResearch": "assets/research/xian.json",
       "candidateReferences": [
         "assets/references/xian-big-photo.png",
-        "assets/references/xian-big-clear-photo.jpg",
-        "assets/references/xian-small-full-photo.jpg"
+        "assets/references/xian-big-clear-photo.jpg"
       ],
       "output": "assets/colored/xian.png",
       "record": "assets/color-research/xian.json"
+    },
+    {
+      "id": "xian_small",
+      "name": "西安小雁塔",
+      "subject": "西安小雁塔",
+      "sub": "荐福寺 · 十三级密檐式砖塔",
+      "place": "陕西西安 · 荐福寺",
+      "dyn": "tang",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/xian_small.png",
+      "displayLine": "assets/plates/xian_small.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/xian_small.json",
+      "candidateReferences": [
+        "assets/references/xian-small-full-photo.jpg"
+      ],
+      "output": "assets/colored/xian_small.png",
+      "record": "assets/color-research/xian_small.json"
     },
     {
       "id": "hn_fengxue",

@@ -4,6 +4,7 @@ import UniformTypeIdentifiers
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
     @State private var importing = false
     @State private var exporting = false
     @State private var exportDocument: BackupDocument?
@@ -31,6 +32,19 @@ struct MyLibraryView: View {
                     }
                 }
                 FangguRule()
+                VStack(alignment: .leading, spacing: 12) {
+                    sectionTitle("外观")
+                    Picker("外观模式", selection: $appearance) {
+                        ForEach(AppAppearance.allCases) { mode in
+                            Text(mode.title).tag(mode.rawValue)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier("appearance-picker")
+                    Text("亮色如纸，深色如墨。跟随系统会随设备外观切换。")
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(5)
+                }
+                FangguRule()
                 sectionTitle("已到访")
                 if visited.isEmpty { empty("还没有到访记录") }
                 ForEach(visited) { site in siteRow(site) }
@@ -47,9 +61,11 @@ struct MyLibraryView: View {
                 sectionTitle("备份与迁移")
                 Button { prepareExport() } label: { Label("导出访古备份", systemImage: "square.and.arrow.up") }
                     .buttonStyle(FangguOutlineButton())
-                Button { importing = true } label: { Label("导入网页或 App 备份", systemImage: "square.and.arrow.down") }
+                Button { importing = true } label: { Label("导入备份", systemImage: "square.and.arrow.down") }
                     .buttonStyle(FangguOutlineButton())
-                Text("网页和 App 各自保存记录。网页先导出 JSON，再在这里导入；同一古迹以导入值覆盖，其余保留。")
+                Text("从 JSON 备份恢复记录；同一古迹以导入值覆盖，其余保留。")
+                    .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
+                Text("支持旧版备份；新版备份包含六维评价，可用于换机迁移。")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
                 if let message { Text(message).font(FangguFont.serif(12)).foregroundStyle(Palette.redText) }
             }

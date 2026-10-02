@@ -12,7 +12,7 @@ test('iOS catalog stays aligned with site IDs, artwork and original status', () 
     vm.runInContext(fs.readFileSync(path.join(root, filename), 'utf8'), context, { filename });
   }
   const source = vm.runInContext('({sites:FangguCatalog.classify(SITES,PLACES), colors:COLORED_PLATES, dynasties:DYN})', context);
-  const css = fs.readFileSync(path.join(root, 'style.css'), 'utf8');
+  const css = fs.readFileSync(path.join(root, 'palette.css'), 'utf8');
   const palette = Object.fromEntries([...css.matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(match => [match[1], match[2]]));
   const exported = JSON.parse(fs.readFileSync(path.join(root, 'ios/Fanggu/Resources/catalog.json'), 'utf8'));
   assert.equal(exported.length, source.sites.length);

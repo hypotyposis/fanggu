@@ -1,0 +1,44 @@
+{
+  "source": "assets/colored/tiantai.png",
+  "sourceSha256": "1c6aaa3d7fc35b2f91453f26524b09bcd00b0be72da8d62669d17b9566e94676",
+  "sourceBytes": 2434324,
+  "input": "assets/colored-transparent/tiantai.png",
+  "inputSha256": "ac1a44f2580685e0f2b3353a6b139fa9ba396ebde123f92194656cfddef3d0f7",
+  "inputBytes": 2352691,
+  "src": "assets/colored-transparent-avif/tiantai.avif",
+  "sha256": "57e89c79c70dfe3b8ce444d18c75fd9a77a66ca222401d19407119ba8320201f",
+  "bytes": 284238,
+  "width": 1536,
+  "height": 1024,
+  "alpha": {
+    "min": 0,
+    "max": 255,
+    "transparentPixels": 772217,
+    "opaquePixels": 794550,
+    "meanError": 0.00446319580078125,
+    "maxError": 5
+  },
+  "extraction": {
+    "matteRgb": [
+      13,
+      12,
+      10
+    ],
+    "borderPolicy": "dominant",
+    "borderMatchFraction": 1,
+    "tolerancePerChannel": 12,
+    "backgroundSeeds": [],
+    "transparentPixels": 774947,
+    "opaquePixels": 797917,
+    "rgbUnchanged": true
+  },
+  "visualReview": "approved_user",
+  "processingSeconds": 2.417,
+  "review": {
+    "reviewer": "user",
+    "date": "2026-09-16",
+    "statement": "都没问题 先替换上吧。",
+    "avifSha256": "57e89c79c70dfe3b8ce444d18c75fd9a77a66ca222401d19407119ba8320201f",
+    "inputSha256": "ac1a44f2580685e0f2b3353a6b139fa9ba396ebde123f92194656cfddef3d0f7"
+  }
+}

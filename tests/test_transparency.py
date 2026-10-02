@@ -107,6 +107,65 @@ class TransparencyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             delivery.prepare_source(Image.new('RGB', (4, 4)), 'old_site', 'changed_hash', 'old_hash')
 
+    def test_reviewed_legacy_seeds_remove_air_gaps_in_both_modes_and_keep_recesses(self):
+        rgb = np.full((15, 15, 3), [11, 10, 8], dtype=np.uint8)
+        rgb[2:13, 2:13] = [100, 120, 150]
+        rgb[4:6, 4:6] = [11, 10, 8]  # Enclosed air gap.
+        rgb[9:11, 9:11] = [11, 10, 8]  # Dark doorway, same color.
+        preparation = {'method': 'edge-connected-matte-v1', 'sourceSha256': 'hash', 'seeds': [[4, 4]]}
+        for prototype in [False, True]:
+            result, report = delivery.prepare_source(Image.fromarray(rgb), 'old', 'hash', 'hash',
+                                                     preparation, prototype)
+            out = np.asarray(result)
+            self.assertEqual(out[4, 4, 3], 0)
+            self.assertEqual(out[9, 9, 3], 255)
+            np.testing.assert_array_equal(out[:, :, :3], rgb)
+            self.assertEqual(report['backgroundSeeds'], [[4, 4]])
+            for current, legacy in [('changed', 'hash'), ('hash', None)]:
+                with self.assertRaises(ValueError):
+                    delivery.prepare_source(Image.fromarray(rgb), 'old', current, legacy, preparation, prototype)
+
+    def test_selected_rebuild_retains_other_deliveries_and_uses_changed_seeds(self):
+        with tempfile.TemporaryDirectory(prefix='fanggu-selected-matte-') as directory:
+            root = Path(directory)
+            shutil.copytree(delivery.ROOT / 'scripts', root / 'scripts')
+            (root / 'assets/color-research').mkdir(parents=True)
+            (root / 'assets/colored').mkdir()
+            entries, images = [], {}
+            for id in ['repair', 'keep']:
+                source = f'assets/colored/{id}.png'
+                rgb = np.full((15, 15, 3), [11, 10, 8], dtype=np.uint8)
+                rgb[2:13, 2:13] = [100, 120, 150]
+                rgb[4:6, 4:6] = [11, 10, 8]
+                rgb[9:11, 9:11] = [11, 10, 8]
+                Image.fromarray(rgb).save(root / source)
+                record = f'assets/color-research/{id}.json'
+                (root / record).write_text(json.dumps({'id': id, 'output': source}))
+                entries.append({'id': id, 'output': source, 'record': record})
+                images[id] = {'sourceSha256': delivery.digest(root / source), 'extraction': {'matteRgb': [11, 10, 8]}}
+            manifest_path = root / 'assets/color-research/avif-manifest.json'
+            manifest_path.write_text(json.dumps({'images': images}))
+            (root / 'assets/color-research/queue.json').write_text(json.dumps({'entries': entries, 'excluded': []}))
+            command = [sys.executable, '-B', str(root / 'scripts/prepare-colored-avif.py')]
+            subprocess.run(command + ['--strict'], check=True, capture_output=True, text=True)
+            before = json.loads(manifest_path.read_text())['images']
+            keep_hashes = [delivery.digest(root / before['keep'][key]) for key in ['src', 'input']]
+            meta_path = root / entries[0]['record']
+            meta = json.loads(meta_path.read_text())
+            meta['background_preparation'] = {'method': 'edge-connected-matte-v1',
+                'sourceSha256': before['repair']['sourceSha256'], 'seeds': [[4, 4]]}
+            meta_path.write_text(json.dumps(meta))
+            subprocess.run(command + ['--ids', 'repair'], check=True, capture_output=True, text=True)
+            after = json.loads(manifest_path.read_text())['images']
+            self.assertEqual(after['keep'], before['keep'])
+            self.assertEqual(keep_hashes, [delivery.digest(root / after['keep'][key]) for key in ['src', 'input']])
+            self.assertNotEqual(after['repair']['inputSha256'], before['repair']['inputSha256'])
+            with Image.open(root / after['repair']['input']) as image:
+                self.assertEqual(image.getpixel((4, 4))[3], 0)
+                self.assertEqual(image.getpixel((9, 9))[3], 255)
+            result = subprocess.run(command + ['--ids', 'repair'], check=True, capture_output=True, text=True)
+            self.assertIn('1 reused', result.stdout)
+
     def test_batch_review_does_not_reset_approved_cached_images(self):
         self.assertEqual(delivery.review_status({'a': {'visualReview': 'approved_user'}}), 'approved_user')
         self.assertEqual(delivery.review_status({'a': {'visualReview': 'approved_user'}, 'new': {'visualReview': 'pending_user'}}), 'pending_user')

@@ -44,5 +44,28 @@
     ],
     "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
   },
-  "worker": "worker_a"
+  "worker": "worker_a",
+  "background_preparation": {
+    "method": "edge-connected-matte-v1",
+    "sourceSha256": "1c6aaa3d7fc35b2f91453f26524b09bcd00b0be72da8d62669d17b9566e94676",
+    "seeds": [
+      [
+        700,
+        185
+      ],
+      [
+        835,
+        185
+      ],
+      [
+        250,
+        650
+      ],
+      [
+        1280,
+        650
+      ]
+    ],
+    "note": "2026-10-02 检查发现旧暗底提取遗漏四处封闭透空：脊刹拉线左右两侧、外檐柱与墙面左右两侧。仅补这些种子，保留门洞与窗内暗部，原设色 PNG 不变。"
+  }
 }

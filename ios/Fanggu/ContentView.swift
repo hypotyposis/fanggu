@@ -14,7 +14,7 @@ struct ContentView: View {
                 tabs
             }
         }
-        .preferredColorScheme(.dark)
+        .fangguAppearance()
         .tint(Palette.gold)
         .overlay(alignment: .top) {
             if let error = library.error {
@@ -23,7 +23,7 @@ struct ContentView: View {
                     .padding(12)
                     .frame(maxWidth: .infinity)
                     .background(Palette.red)
-                    .foregroundStyle(Palette.paper)
+                    .foregroundStyle(Palette.sealPaper)
                     .accessibilityAddTraits(.updatesFrequently)
             }
         }
@@ -81,6 +81,7 @@ private struct FrostedTabBar: View {
     @Namespace private var selectionAnimation
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.colorScheme) private var colorScheme
 
     private let items: [(title: String, icon: String)] = [
         ("图鉴", "square.grid.2x2"),
@@ -110,7 +111,7 @@ private struct FrostedTabBar: View {
                     .background {
                         if selection == index {
                             RoundedRectangle(cornerRadius: 20, style: .continuous)
-                                .fill(Palette.paper.opacity(0.13))
+                                .fill(Palette.paper.opacity(colorScheme == .light ? 0.035 : 0.13))
                                 .overlay {
                                     RoundedRectangle(cornerRadius: 20, style: .continuous)
                                         .strokeBorder(Palette.gold.opacity(0.24), lineWidth: 0.8)
@@ -138,7 +139,7 @@ private struct FrostedTabBar: View {
                         lineWidth: 0.8
                     )
                 }
-                .shadow(color: .black.opacity(0.45), radius: 22, y: 8)
+                .shadow(color: Palette.shadow.opacity(0.45), radius: 22, y: 8)
         }
         .padding(.horizontal, 22)
         .padding(.bottom, 8)
@@ -300,7 +301,7 @@ struct ExploreView: View {
                     .navigationTitle("关于访古")
                     .toolbar { Button("关闭") { showingAbout = false } }
             }
-            .preferredColorScheme(.dark)
+            .fangguAppearance()
         }
         .onChange(of: country) { _, _ in
             region = "all"; province = "all"
@@ -329,7 +330,7 @@ struct ExploreView: View {
             .navigationTitle("筛选古迹")
             .toolbar { Button("完成") { showingFilters = false } }
         }
-        .preferredColorScheme(.dark)
+        .fangguAppearance()
         .presentationDetents([.large])
     }
 
@@ -505,6 +506,7 @@ private struct FilterMenu: View {
 
 struct ArtworkView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.colorScheme) private var colorScheme
     let site: Monument
     let visited: Bool
     var height: CGFloat = 220
@@ -527,7 +529,11 @@ struct ArtworkView: View {
         return ZStack {
             Palette.ink2
             if let line = Self.artwork(site.lineImage) {
-                Image(uiImage: line).resizable().scaledToFit().padding(14).opacity(lineOpacity)
+                Image(uiImage: line)
+                    .renderingMode(colorScheme == .light ? .template : .original)
+                    .resizable().scaledToFit().padding(14)
+                    .foregroundStyle(site.accent)
+                    .opacity(lineOpacity)
             } else {
                 Text("图版待装入")
                     .font(FangguFont.serif(13))

@@ -1,3 +1,5 @@
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -12,7 +14,6 @@ const batch = json('assets/research/shandong-20260917-batch.json');
 const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({SITES, PLACES})');
 const facets = require('../catalog.js');
 const protection = require('../protection.js');
-const { create } = require('../library.js');
 const catalog = facets.classify(SITES, PLACES);
 
 test('Shandong expansion has eight complete pairs with genuine generation inputs and pending human review', () => {
@@ -72,8 +73,7 @@ test('Shandong dates and national titles distinguish selected subjects and merge
 });
 
 test('Shandong additions are searchable and start unvisited while the blocked historical candidate stays outside intake', () => {
-  const library = create(catalog, { getItem: () => null, setItem() {} });
-  const find = filters => library.all().filter(s => facets.matches(s, filters));
+  const find = filters => catalog.filter(s => facets.matches(s, filters));
   assert.deepEqual(Array.from(find({ province: '山东' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids, 'sd_xiaotang_shrine'].sort());
   for (const id of batch.ids) assert(find({ province: '山东', status: 'unvisited' }).some(s => s.id === id));
   assert(find({ query: '复圣殿', type: 'hall' }).some(s => s.id === 'sd_yanmiao'));
@@ -86,6 +86,8 @@ test('Shandong additions are searchable and start unvisited while the blocked hi
 test('Shandong intake preserves all previous colored deliverables and human approvals', () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   for (const [id, previous] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(previous); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(previous); continue; }
     const now = manifest.images[id];
     assert.equal(now.sourceSha256, previous.source, id);
     assert.equal(now.inputSha256, previous.input, id);

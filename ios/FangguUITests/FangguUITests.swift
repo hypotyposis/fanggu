@@ -1,18 +1,219 @@
 import XCTest
 
 final class FangguUITests: XCTestCase {
-    func testWebSectionsStayAvailable() {
+    func testAppearancePersistsAndCoversNativeScreens() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["我的"].tap()
+        let appearance = app.segmentedControls["appearance-picker"]
+        XCTAssertTrue(appearance.waitForExistence(timeout: 10))
+        appearance.buttons["亮色"].tap()
+        XCTAssertTrue(appearance.buttons["亮色"].isSelected)
+        capture(app, "light-library")
+
+        app.terminate()
+        app.launch()
+        app.buttons["我的"].tap()
+        XCTAssertTrue(appearance.waitForExistence(timeout: 10))
+        XCTAssertTrue(appearance.buttons["亮色"].isSelected, "Appearance must survive relaunch")
+
+        app.buttons["地图"].tap()
+        XCTAssertTrue(app.staticTexts["到访地图"].waitForExistence(timeout: 10))
+        capture(app, "light-map")
+        app.buttons["年表"].tap()
+        capture(app, "light-timeline")
+        app.buttons["图鉴"].tap()
+        capture(app, "light-catalog")
+        app.buttons["筛选"].tap()
+        XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
+        capture(app, "light-filters")
+        app.buttons["完成"].tap()
+        app.buttons["关于访古"].tap()
+        XCTAssertTrue(app.buttons["关闭"].waitForExistence(timeout: 5))
+        capture(app, "light-about")
+        app.buttons["关闭"].tap()
+        app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "未标记")).firstMatch.tap()
+        openFirstCatalogSite(in: app)
+        capture(app, "light-detail")
+        let visit = app.buttons["标记到访"].exists ? app.buttons["标记到访"] : app.buttons["编辑到访记录"]
+        for _ in 0..<8 where !visit.isHittable { app.swipeDown() }
+        visit.tap()
+        XCTAssertTrue(app.buttons["取消"].waitForExistence(timeout: 5))
+        capture(app, "light-visit-editor")
+        app.buttons["取消"].tap()
+        let review = app.buttons["edit-review"]
+        for _ in 0..<8 where !review.isHittable { app.swipeUp() }
+        review.tap()
+        XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
+        capture(app, "light-review-editor")
+        app.buttons["完成"].tap()
+        app.buttons["返回"].tap()
+        app.buttons["我的"].tap()
+        appearance.buttons["深色"].tap()
+        XCTAssertTrue(appearance.buttons["深色"].isSelected)
+        capture(app, "dark-library")
+        appearance.buttons["跟随系统"].tap()
+        XCTAssertTrue(appearance.buttons["跟随系统"].isSelected)
+    }
+
+    func testNativeSectionsStayAvailable() {
         let app = XCUIApplication()
         app.launch()
         app.buttons["地图"].tap()
         XCTAssertTrue(app.staticTexts["到访地图"].waitForExistence(timeout: 10))
         capture(app, "map")
         app.buttons["年表"].tap()
-        XCTAssertTrue(app.staticTexts["东汉至今 · 中日对照"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["东汉至今 · 东亚与东南亚"].waitForExistence(timeout: 10))
         capture(app, "timeline")
         app.buttons["我的"].tap()
         XCTAssertTrue(app.staticTexts["亲见 · 所愿 · 私人记录"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.buttons["导入备份"].exists)
+        XCTAssertFalse(app.buttons["导入网页或 App 备份"].exists)
         capture(app, "library")
+    }
+
+    func testSixDimensionReleaseAutosavesAndResets() {
+        let app = XCUIApplication()
+        app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        // This test runs on a disposable simulator, with all changes made through the UI.
+        let reset = app.buttons["reset-dimensions"]
+        if reset.isEnabled { reset.tap() }
+        let axes = ["eraRarity", "authenticity", "construction", "art", "scale", "setting"]
+        func axis(_ key: String) -> XCUIElement { app.descendants(matching: .any)["radar-axis-\(key)"].firstMatch }
+        let era = axis("eraRarity")
+        XCTAssertTrue(era.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["保存"].exists)
+        XCTAssertFalse(app.buttons["取消"].exists)
+        for key in axes { XCTAssertEqual(axis(key).value as? String, "—，未评分") }
+        capture(app, "six-dimension-empty")
+
+        let anchoredVertex = axis("art")
+        let chartY = anchoredVertex.frame.minY
+        let start = era.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        start.press(forDuration: 0.1, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -100)))
+        XCTAssertEqual(era.value as? String, "A，卓越")
+        XCTAssertEqual(anchoredVertex.frame.minY, chartY, accuracy: 2, "Dragging a vertex must not scroll the sheet")
+        for key in axes.dropFirst() { XCTAssertEqual(axis(key).value as? String, "—，未评分") }
+        let sideStart = era.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        sideStart.press(forDuration: 0.1, thenDragTo: sideStart.withOffset(CGVector(dx: 70, dy: 0)))
+        XCTAssertEqual(era.value as? String, "A，卓越", "Sideways movement must stay on the selected axis")
+        // Terminate while the editor is still open: release itself must have saved.
+        app.terminate(); app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        XCTAssertEqual(era.value as? String, "A，卓越", "Release must persist without closing or tapping Save")
+        app.buttons["reset-dimensions"].tap()
+
+        // Set a complete, deliberately uneven profile; other axes must remain independent.
+        let translations: [(String, CGFloat, CGFloat)] = [
+            ("eraRarity", 0, -90), ("authenticity", 90, -52),
+            ("construction", -90, -52), ("art", 0, 24),
+            ("scale", 0, 0), ("setting", 90, -52)
+        ]
+        for (key, dx, dy) in translations {
+            let handle = axis(key)
+            let origin = handle.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+            origin.press(forDuration: 0.1, thenDragTo: origin.withOffset(CGVector(dx: dx, dy: dy)))
+        }
+        let expected = axes.map { axis($0).value as? String }
+        XCTAssertEqual(expected, ["A，卓越", "A，卓越", "E，较弱", "B，突出", "C，有看点", "E，较弱"])
+        capture(app, "six-dimension-profile")
+        app.buttons["完成"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["radar-summary-eraRarity"].firstMatch.waitForExistence(timeout: 5))
+        app.terminate(); app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        for (index, key) in axes.enumerated() { XCTAssertEqual(axis(key).value as? String, expected[index]) }
+
+        app.buttons["reset-dimensions"].tap()
+        app.terminate(); app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        for key in axes { XCTAssertEqual(axis(key).value as? String, "—，未评分") }
+        let beforeScroll = era.frame.minY
+        let center = era.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+            .withOffset(CGVector(dx: 0, dy: (axis("art").frame.midY - era.frame.midY) / 2))
+        center.press(forDuration: 0.1, thenDragTo: center.withOffset(CGVector(dx: 0, dy: -90)))
+        XCTAssertLessThan(era.frame.minY, beforeScroll - 30, "Blank space in the chart must still let the page scroll")
+        for key in axes { XCTAssertEqual(axis(key).value as? String, "—，未评分") }
+        app.buttons["完成"].tap()
+    }
+
+    func testSixDimensionLowGradesStayIndividuallyDraggable() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["我的"].tap()
+        let appearance = app.segmentedControls["appearance-picker"]
+        XCTAssertTrue(appearance.waitForExistence(timeout: 5))
+        for _ in 0..<4 where !appearance.isHittable { app.swipeUp() }
+        appearance.buttons["深色"].tap()
+        app.buttons["图鉴"].tap()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        if app.buttons["reset-dimensions"].isEnabled { app.buttons["reset-dimensions"].tap() }
+        let axes = ["eraRarity", "authenticity", "construction", "art", "scale", "setting"]
+        func handle(_ key: String) -> XCUIElement { app.descendants(matching: .any)["radar-axis-\(key)"].firstMatch }
+        for (index, key) in axes.enumerated() {
+            let angle = Double(index) * .pi / 3 - .pi / 2
+            let origin = handle(key).coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+            origin.press(forDuration: 0.1, thenDragTo: origin.withOffset(CGVector(dx: -cos(angle) * 120, dy: -sin(angle) * 120)))
+        }
+        for key in axes { XCTAssertEqual(handle(key).value as? String, "E，较弱") }
+        capture(app, "six-dimension-low-grades")
+        for (index, key) in axes.enumerated() {
+            let angle = Double(index) * .pi / 3 - .pi / 2
+            let origin = handle(key).coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+            origin.press(forDuration: 0.1, thenDragTo: origin.withOffset(CGVector(dx: cos(angle) * 120, dy: sin(angle) * 120)))
+            for (otherIndex, other) in axes.enumerated() {
+                XCTAssertEqual(handle(other).value as? String, otherIndex <= index ? "A，卓越" : "E，较弱",
+                               "Overlapping touch regions must not edit a neighbour")
+            }
+        }
+        capture(app, "six-dimension-full-grades")
+        app.buttons["完成"].tap()
+    }
+
+    func testReviewShortTextAutosavesAndClearIsImmediate() {
+        let app = XCUIApplication()
+        app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        let field = app.textViews["review-text"]
+        for _ in 0..<6 where !field.isHittable { scrollReviewUp(in: app) }
+        XCTAssertTrue(field.isHittable)
+        field.tap()
+        if let existing = field.value as? String, !existing.isEmpty {
+            field.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: existing.count))
+        }
+        field.typeText("auto-review")
+        let status = app.staticTexts["review-autosave-status"]
+        let saved = XCTNSPredicateExpectation(predicate: NSPredicate(format: "label == %@", "松手即保存，短评自动保存。"), object: status)
+        XCTAssertEqual(XCTWaiter.wait(for: [saved], timeout: 5), .completed)
+        // Do not use Complete: the text must survive termination by itself.
+        app.terminate(); app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        XCTAssertEqual(field.value as? String, "auto-review")
+        for _ in 0..<6 where !field.isHittable { scrollReviewUp(in: app) }
+        field.tap(); field.typeText("-extra")
+        let editedText = field.value as? String
+        XCTAssertTrue(editedText?.contains("-extra") == true)
+        app.buttons["完成"].tap()
+        openReview(in: app)
+        XCTAssertEqual(field.value as? String, editedText, "Closing must flush any pending text debounce")
+        let clear = app.buttons["清除评价"]
+        for _ in 0..<6 where !clear.isHittable { scrollReviewUp(in: app) }
+        clear.tap()
+        app.terminate(); app.launch()
+        openFirstCatalogSite(in: app)
+        openReview(in: app)
+        XCTAssertEqual(field.value as? String, "")
+        let era = app.descendants(matching: .any)["radar-axis-eraRarity"].firstMatch
+        XCTAssertEqual(era.value as? String, "—，未评分")
+        XCTAssertFalse(app.buttons["保存"].exists)
+        app.buttons["完成"].tap()
     }
 
     func testCatalogOpensNativeDetail() {
@@ -115,10 +316,31 @@ final class FangguUITests: XCTestCase {
     }
 
     private func openFirstCatalogSite(in app: XCUIApplication) {
-        let firstSite = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "细读")).firstMatch
-        for _ in 0..<4 where !firstSite.isHittable { app.swipeUp() }
-        XCTAssertTrue(firstSite.isHittable)
-        firstSite.tap()
+        let sites = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "细读"))
+        for _ in 0..<5 {
+            if let visible = sites.allElementsBoundByIndex.first(where: { $0.isHittable }) {
+                visible.tap()
+                return
+            }
+            app.swipeUp()
+        }
+        XCTFail("At least one catalog site must be reachable")
+    }
+
+    private func openReview(in app: XCUIApplication) {
+        let button = app.buttons["edit-review"]
+        for _ in 0..<12 where !button.isHittable { app.swipeUp() }
+        XCTAssertTrue(button.isHittable)
+        button.tap()
+        XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
+    }
+
+    private func scrollReviewUp(in app: XCUIApplication) {
+        // Use the sheet's empty margin so the gesture cannot grab a radar vertex
+        // or scroll inside the text editor instead of its containing page.
+        let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.78))
+        let to = app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.32))
+        from.press(forDuration: 0.05, thenDragTo: to)
     }
 
     private func capture(_ app: XCUIApplication, _ name: String) {

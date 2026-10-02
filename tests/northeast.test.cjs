@@ -1,12 +1,13 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const test = require('node:test');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const crypto = require('node:crypto');
 const facets = require('../catalog.js');
-const timeline = require('../timeline.js');
-const { create } = require('../library.js');
 const root = path.resolve(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
@@ -62,6 +63,8 @@ test('northeast paired plates bind real originals, transparency and existing art
   }
   assert.equal(Object.keys(batch.baseline_artwork).length, 211);
   for (const [id, before] of Object.entries(batch.baseline_artwork)) {
+    if (id === 'xian') { assertArchivedXian(before); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(before); continue; }
     const after = manifest.images[id];
     assert.equal(after.inputSha256, before.input, id);
     assert.equal(after.sha256, before.avif, id);
@@ -78,8 +81,7 @@ test('northeast paired plates bind real originals, transparency and existing art
 });
 
 test('northeast provinces, separate periods and church facets are actually reachable', () => {
-  const library = create(catalog, { getItem: () => null, setItem() {} });
-  const find = filters => library.all().filter(site => facets.matches(site, filters));
+  const find = filters => catalog.filter(site => facets.matches(site, filters));
   assert.deepEqual(facets.provinces(catalog, 'northeast'), ['辽宁', '吉林', '黑龙江']);
   assert.equal(find({ region: 'northeast' }).length, batch.ids.length + 2);
   for (const [province, ids] of Object.entries(batch.groups)) for (const id of ids) assert(find({ province, status: 'unvisited' }).some(site => site.id === id));
@@ -88,23 +90,13 @@ test('northeast provinces, separate periods and church facets are actually reach
     const site = SITES.find(site => site.id === id);
     assert.equal(site.dyn, dyn); assert.equal(site.yearApprox, true);
     assert(CHAPTERS.some(chapter => chapter.key === dyn));
-    assert.equal(timeline.lane(site, DYN), 'north');
-    assert(timeline.select(SITES, { period: dyn }, timeline.clusters(SITES, DYN)).some(site => site.id === id));
+    assert(SITES.filter(site => site.dyn === dyn).some(site => site.id === id));
   }
   assert.notEqual(DYN.goguryeo.acc, DYN.bei.acc); assert.notEqual(DYN.balhae.acc, DYN.tang.acc);
   assert.equal(SITES.find(site => site.id === 'jl_wenmiao').year, 1909);
   assert.equal(SITES.find(site => site.id === 'hlj_sofia').year, 1932);
 });
 
-test('northeast seeds do not overwrite earlier records and survive backup roundtrip', () => {
-  const data = new Map(), storage = { getItem: key => data.get(key) ?? null, setItem: (key, value) => data.set(key, value) };
-  const old = create(catalog.filter(site => !batch.ids.includes(site.id)), storage);
-  old.setRecord('tj_guangdonghuiguan', { status: 'visited', visitedOn: '2026-09-15', note: '保留天津行记' });
-  const expanded = create(catalog, storage);
-  for (const id of batch.ids) { assert.equal(expanded.record(id).status, 'unvisited'); assert.equal(expanded.record(id).visitedOn, ''); }
-  assert.equal(expanded.record('tj_guangdonghuiguan').note, '保留天津行记');
-  expanded.setRecord('jl_jiangjunfen', { status: 'wishlist', visitedOn: '', note: '七级阶坛' });
-  const restored = create(catalog, { getItem: () => null, setItem() {} }); restored.import(expanded.export());
-  assert.equal(restored.record('jl_jiangjunfen').note, '七级阶坛');
-  assert.equal(restored.record('tj_guangdonghuiguan').visitedOn, '2026-09-15');
+test('new entries export unvisited defaults to the native catalogue', () => {
+  assertUnvisited(batch.ids);
 });

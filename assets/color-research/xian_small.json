@@ -1,0 +1,45 @@
+{
+  "id": "xian_small",
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion architectural plate for 访古. Image 1 is exact black-on-white drawing to color; preserve its entire silhouette, all existing eaves, windows, damage, line placement, proportions, viewpoint, canvas size and margins. Image 2 is Small Wild Goose Pagoda material reference only. Image 3 is style sample only; borrow delicate thin contours and matte mineral-gouache fills, not its architecture or warm gold palette. Color ONLY the single tower from Image 1. Observed material colors: subdued tan-brown exposed brick walls, dark charcoal-brown projecting brick eaves, gray-beige stone plinth, deep brown openings. Present-day weathered matte masonry, sparse subtle grain and two or three soft shade values, no gilding, new paint or invented restoration. Keep damaged truncated crown and exactly the existing surviving tiers; no spire or added top levels. Preserve all fine contour lines. Background inside blank surroundings perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradients, shadow, halo, vignette or checkerboard. No trees, people, extra buildings, text, labels, watermark or border. Output one portrait 1024x1536 full tower companion, identical composition to line art.",
+  "input_images": [
+    "assets/generated/xian_small.png",
+    "assets/references/xian-small-full-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "status": "needs_review",
+  "name": "西安小雁塔",
+  "subject": "西安小雁塔",
+  "generator": "built-in image_gen",
+  "output": "assets/colored/xian_small.png",
+  "references": {
+    "original_record": "assets/research/xian_small.json",
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiao_yan_ta.jpg/960px-Xiao_yan_ta.jpg?download=1",
+        "reference_file": "assets/references/xian-small-full-photo.jpg",
+        "author": "Huang Xiaobo (黄晓波)",
+        "license": "Public domain (PD-self)",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg"
+      }
+    ],
+    "selected_photo_files": [
+      "assets/references/xian-small-full-photo.jpg"
+    ]
+  },
+  "material_observations": "日间实拍：土赭褐砖墙，深灰褐叠涩檐，灰米色台基；门窗深褐。普通材质色，不镀金。",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fb55-abb9-7063-af3b-ed164c8a1493/exec-73a7633a-f996-4915-98dd-9346d69713e1.png",
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e8d373c41e15e7e9b591716d426d4409a22d1c3040f4b29d5299ac6741b99923",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "status": "pending_user",
+    "note": "实际查看单塔线稿、实拍、样本和设色输出；原型模式不作AI视觉通过/淘汰决定，待用户人审。"
+  }
+}

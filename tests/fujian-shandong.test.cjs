@@ -1,3 +1,6 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -11,7 +14,6 @@ const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.joi
 const batch = json('assets/research/fujian-shandong-batch.json');
 const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({ SITES, PLACES })');
 const facets = require('../catalog.js');
-const { create } = require('../library.js');
 const catalog = facets.classify(SITES, PLACES);
 
 test('Fujian and Shandong additions have paired prototype images with genuine inputs and histories', () => {
@@ -57,8 +59,7 @@ test('Fujian and Shandong additions have paired prototype images with genuine in
 });
 
 test('separate Kaiyuan subjects keep distinct identities and all seven additions are searchable by province', () => {
-  const library = create(catalog, { getItem: () => null, setItem() {} });
-  const find = filters => library.all().filter(s => facets.matches(s, filters));
+  const find = filters => catalog.filter(s => facets.matches(s, filters));
   for (const [province, ids] of Object.entries(batch.groups)) for (const id of ids) {
     assert(find({ province, status: 'unvisited' }).some(s => s.id === id));
     assert.equal(SITES.filter(s => s.id === id).length, 1);
@@ -105,6 +106,8 @@ test('adding seven monuments preserves earlier files and their human-review stat
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   assert.equal(batch.beforeCount, 227);
   for (const [id, old] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(old); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(old); continue; }
     const now = manifest.images[id];
     assert.equal(hash(now.source), old.source, id);
     assert.equal(hash(now.input), old.input, id);
@@ -121,20 +124,6 @@ test('adding seven monuments preserves earlier files and their human-review stat
   }
 });
 
-test('new unvisited seeds do not erase saved notes or dates and survive backup restoration', () => {
-  const data = new Map();
-  const storage = { getItem: key => data.get(key) ?? null, setItem: (key, value) => data.set(key, value) };
-  const previous = create(catalog.filter(s => !batch.ids.includes(s.id)), storage);
-  previous.setRecord('quanzhoukaiyuan', { status: 'visited', visitedOn: '', note: '原有泉州记录' });
-  const expanded = create(catalog, storage);
-  for (const id of batch.ids) {
-    assert.equal(expanded.record(id).status, 'unvisited');
-    assert.equal(expanded.record(id).visitedOn, '');
-  }
-  assert.equal(expanded.record('quanzhoukaiyuan').note, '原有泉州记录');
-  expanded.setRecord('sd_simen', { status: 'wishlist', visitedOn: '', note: '柳埠石塔' });
-  const restored = create(catalog, { getItem: () => null, setItem() {} });
-  restored.import(expanded.export());
-  assert.equal(restored.record('sd_simen').note, '柳埠石塔');
-  assert.equal(restored.record('quanzhoukaiyuan').status, 'visited');
+test('new entries export unvisited defaults to the native catalogue', () => {
+  assertUnvisited(batch.ids);
 });

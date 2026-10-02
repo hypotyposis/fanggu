@@ -3,6 +3,7 @@
 
 Pixel/alpha checks are automatic. Visual acceptance belongs to the user.
 """
+import argparse
 import hashlib
 import importlib.util
 import json
@@ -50,6 +51,11 @@ def atomic_json(path, value):
 
 
 def prepare_source(original, id, source_hash, legacy_source_hash=None, preparation=None, prototype=False):
+    if preparation and preparation.get("method") == "edge-connected-matte-v1":
+        if source_hash != legacy_source_hash or preparation.get("sourceSha256") != source_hash:
+            raise ValueError(f"Reviewed legacy matte source no longer matches its record: {id}")
+        return extractor.extract(original, MASK_SETTINGS["tolerance"],
+                                 preparation.get("seeds", []), MASK_SETTINGS["borderPolicy"])
     if prototype:
         return prototype_matte.extract_color(original, (preparation or {}).get("seeds", []))
     if original.has_transparency_data and original.convert("RGBA").getchannel("A").getextrema() != (255, 255):
@@ -151,6 +157,11 @@ def convert(id, source, source_hash, old, published=None, preparation=None, prot
 
 def main():
     started = time.perf_counter()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--ids", help="Comma-separated existing IDs to rebuild; retain other deliveries")
+    parser.add_argument("--strict", action="store_true")
+    parser.add_argument("--prototype", action="store_true")
+    args = parser.parse_args()
     prototype = prototype_matte.prototype_enabled(sys.argv[1:])
     print(f"Plate mode: {'prototype (quality gates off; human review decides)' if prototype else 'strict'}", flush=True)
     queue = json.loads((ROOT / "assets/color-research/queue.json").read_text())
@@ -159,6 +170,17 @@ def main():
     metadata = {item["id"]: json.loads((ROOT / item["record"]).read_text()) for item in queue["entries"]}
     if len({id for id, _ in sources}) != len(sources):
         raise ValueError("Duplicate monument IDs in the color queue")
+    all_sources = sources
+    published = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
+    if args.ids:
+        selected = set(args.ids.split(","))
+        unknown = selected - {id for id, _ in sources}
+        if unknown:
+            raise ValueError(f"Unknown monument IDs: {sorted(unknown)}")
+        if any(id not in published.get("images", {}) for id, _ in sources if id not in selected):
+            raise ValueError("Prepare the full delivery manifest before selecting IDs")
+        sources = [(id, source) for id, source in sources if id in selected]
+        metadata = {id: meta for id, meta in metadata.items() if id in selected}
     hashes = {}
     for id, source in sources:
         path = (ROOT / source).resolve()
@@ -168,7 +190,6 @@ def main():
     config = {"format": "AVIF", "settings": SETTINGS,
               "encoder": {"pillow": pillow_version, "libavif": _avif.libavif_version},
               "transparency": {**MASK_SETTINGS, "extractorSha256": digest(EXTRACTOR)}}
-    published = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     cached = {}
     for path in [MANIFEST, CHECKPOINT]:
         previous = json.loads(path.read_text()) if path.exists() else {}
@@ -186,7 +207,9 @@ def main():
             # Keep unchanged existing deliveries and approvals byte-for-byte.
             preparations[id] = previous
         else:
-            preparations[id] = {**preparation, "processorSha256": digest(PROTOTYPE_EXTRACTOR if prototype else WHITE_EXTRACTOR)}
+            processor = (EXTRACTOR if preparation.get("method") == "edge-connected-matte-v1"
+                         else PROTOTYPE_EXTRACTOR if prototype else WHITE_EXTRACTOR)
+            preparations[id] = {**preparation, "processorSha256": digest(processor)}
             if prototype:
                 preparations[id].update(sourceSha256=hashes[id], qualityMode="prototype")
     OUTPUT.mkdir(parents=True, exist_ok=True)
@@ -211,8 +234,10 @@ def main():
     for id, source in sources:
         if digest(ROOT / source) != hashes[id]:
             raise ValueError(f"Source changed during conversion: {id}")
+    if args.ids:
+        images = {**published["images"], **images}
     status = review_status(images)
-    manifest = {**config, "visualReview": status, "images": {id: images[id] for id, _ in sources}}
+    manifest = {**config, "visualReview": status, "images": {id: images[id] for id, _ in all_sources}}
     if status == "approved_user" and set(images) == set(published.get("images", {})) and published.get("review"):
         manifest["review"] = published["review"]
     atomic_json(MANIFEST, manifest)

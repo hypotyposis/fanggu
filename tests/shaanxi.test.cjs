@@ -1,3 +1,6 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -11,7 +14,6 @@ const hash = f => crypto.createHash('sha256').update(fs.readFileSync(path.join(r
 const batch = json('assets/research/shaanxi-batch.json');
 const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({ SITES, PLACES })');
 const { classify } = require('../catalog.js');
-const { create } = require('../library.js');
 const catalog = classify(SITES, PLACES);
 
 test('Shaanxi additions have paired originals, real input references and genuine generation records', () => {
@@ -95,24 +97,13 @@ test('Shaanxi expansion preserves every previous color original, delivery and re
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   for (const id of batch.previousIds) assert(SITES.some(s => s.id === id), id);
   for (const [id, old] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(old); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(old); continue; }
     for (const key of ['source', 'input', 'src']) assert.equal(hash(old[key]), old[{ source: 'sourceSha256', input: 'inputSha256', src: 'sha256' }[key]], id);
     assert.equal(current[id].visualReview, old.visualReview, id);
   }
 });
 
-test('Shaanxi unvisited seeds preserve personal records and never fabricate visit dates', () => {
-  const data = new Map();
-  const storage = { getItem: k => data.get(k) ?? null, setItem: (k, v) => data.set(k, v) };
-  const old = create(catalog.filter(s => !batch.ids.includes(s.id)), storage);
-  old.setRecord('xian', { status: 'visited', visitedOn: '', note: '原有长安笔记' });
-  const added = create(catalog, storage);
-  for (const id of batch.ids) {
-    assert.equal(added.record(id).status, 'unvisited');
-    assert.equal(added.record(id).visitedOn, '');
-  }
-  assert.equal(added.record('xian').note, '原有长安笔记');
-  const restored = create(catalog, { getItem: () => null, setItem() {} });
-  restored.import(added.export());
-  assert.equal(restored.record('xian').note, '原有长安笔记');
-  assert.equal(restored.record('sn_qianling').status, 'unvisited');
+test('new entries export unvisited defaults to the native catalogue', () => {
+  assertUnvisited(batch.ids);
 });

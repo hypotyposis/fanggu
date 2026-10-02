@@ -1,5 +1,6 @@
 import Foundation
 import SwiftUI
+import UIKit
 import UniformTypeIdentifiers
 
 struct Monument: Decodable, Identifiable, Hashable {
@@ -43,7 +44,7 @@ struct Monument: Decodable, Identifiable, Hashable {
     let sourceLinks: [SourceLink]
     let protection: [ProtectionEntry]
 
-    var accent: Color { Palette.color(dynastyColor) }
+    var accent: Color { Palette.dynasty(dynastyColor) }
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
     var periodLabel: String {
         displayYearLabel.isEmpty ? dynastyName : "\(dynastyName) · \(displayYearLabel)"
@@ -104,12 +105,6 @@ struct VisitRecord: Codable {
     }
 }
 
-struct Review: Codable {
-    var rating: Int? = nil
-    var text: String = ""
-    var updatedAt: String = ""
-}
-
 struct LegacySite: Codable, Identifiable {
     var id: String
     var name: String
@@ -131,7 +126,7 @@ struct LegacySite: Codable, Identifiable {
 }
 
 struct LibraryData: Codable {
-    var version = 3
+    var version = 4
     var customSites: [LegacySite] = []
     var records: [String: VisitRecord] = [:]
     var links: [String: String] = [:]
@@ -145,7 +140,7 @@ struct LibraryData: Codable {
         customSites = try values.decode([LegacySite].self, forKey: .customSites)
         records = try values.decode([String: VisitRecord].self, forKey: .records)
         links = version >= 2 ? (try values.decodeIfPresent([String: String].self, forKey: .links) ?? [:]) : [:]
-        reviews = version == 3 ? (try values.decodeIfPresent([String: Review].self, forKey: .reviews) ?? [:]) : [:]
+        reviews = version >= 3 ? (try values.decodeIfPresent([String: Review].self, forKey: .reviews) ?? [:]) : [:]
     }
 }
 
@@ -165,22 +160,48 @@ struct BackupDocument: FileDocument {
 }
 
 enum Palette {
-    static let ink = color("#100f0d")
-    static let ink2 = color("#171512")
-    static let ink3 = color("#221f1a")
-    static let paper = color("#ebe2cc")
-    static let paper2 = color("#a89e88")
-    static let paper3 = color("#928a79")
-    static let gold = color("#d6ab5c")
-    static let goldDim = color("#8a6d3a")
+    // Keep the existing token names: ink is a surface, paper is foreground text.
+    static let ink = adaptive(light: "#f6f1e7", dark: "#100f0d")
+    static let ink2 = adaptive(light: "#fffcf5", dark: "#171512")
+    static let ink3 = adaptive(light: "#eae2d3", dark: "#221f1a")
+    static let paper = adaptive(light: "#302b23", dark: "#ebe2cc")
+    static let paper2 = adaptive(light: "#675e50", dark: "#a89e88")
+    static let paper3 = adaptive(light: "#766b5b", dark: "#928a79")
+    static let gold = adaptive(light: "#866126", dark: "#d6ab5c")
+    static let goldDim = adaptive(light: "#aa8b55", dark: "#8a6d3a")
     static let red = color("#c8442b")
-    static let redText = color("#df7059")
+    static let redText = adaptive(light: "#a53825", dark: "#df7059")
+    static let sealPaper = color("#fff4de")
+    static let shadow = adaptive(light: "#d8cbb6", dark: "#000000")
+
+    static func adaptive(light: String, dark: String) -> Color {
+        let lightColor = uiColor(light)
+        let darkColor = uiColor(dark)
+        return Color(uiColor: UIColor { traits in
+            traits.userInterfaceStyle == .dark ? darkColor : lightColor
+        })
+    }
+
+    static func dynasty(_ hex: String) -> Color {
+        let original = uiColor(hex)
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        original.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        // Retain each era's hue while giving small labels contrast on warm paper.
+        let lightColor = UIColor(red: red * 0.55, green: green * 0.55, blue: blue * 0.55, alpha: alpha)
+        return Color(uiColor: UIColor { traits in
+            traits.userInterfaceStyle == .dark ? original : lightColor
+        })
+    }
 
     static func color(_ hex: String) -> Color {
+        Color(uiColor: uiColor(hex))
+    }
+
+    private static func uiColor(_ hex: String) -> UIColor {
         let value = Int(hex.dropFirst(), radix: 16) ?? 0
-        return Color(red: Double((value >> 16) & 255) / 255,
-                     green: Double((value >> 8) & 255) / 255,
-                     blue: Double(value & 255) / 255)
+        return UIColor(red: CGFloat((value >> 16) & 255) / 255,
+                       green: CGFloat((value >> 8) & 255) / 255,
+                       blue: CGFloat(value & 255) / 255, alpha: 1)
     }
 }
 

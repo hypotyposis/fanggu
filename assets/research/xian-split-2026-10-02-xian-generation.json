@@ -1,0 +1,14 @@
+{
+  "id": "xian",
+  "subject": "西安大雁塔",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for 访古. Image 1 is STYLE MASTER only; never draw the Buddha. Other images are SUBJECT GEOMETRY references. Match the master's elegant delicate thin contours, sparse restrained detail, generous blank areas. Create BLACK INK on perfectly flat opaque PURE WHITE #FFFFFF. All unmarked surfaces inside and outside remain white. No shading, hatching, gradients, texture, gold, shadows, labels, watermark, frame, checkerboard. Doors and windows use outlines, no black fill. One complete tower centered on portrait 1024x1536 canvas, facade near straight-on with minimal side perspective, verticals vertical. Keep finial and base fully within margins. Remove people, plants, wires, signs, surrounding buildings, sky and ground scenery. Few short ground lines only. Subject: ONLY the Giant Wild Goose Pagoda at Da Ci'en Temple, Xi'an. Square brick pavilion tower, exactly SEVEN storeys with central arched front openings, successively narrower walls, projecting stepped brick cornices, small pyramidal crown with gourd finial. Preserve seven-storey silhouette and actual proportions shown by full-view second photo; first photo guides front facade. Do not draw Small Wild Goose Pagoda or the foreground hall. About 84% image height. Sparse architectural lines, no tracing of every brick.",
+  "refs": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xian-big-photo.png",
+    "assets/references/xian-big-clear-photo.jpg"
+  ],
+  "started_at": "2026-10-02T06:39:25.815Z",
+  "status": "line_received",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fb55-abb9-7063-af3b-ed164c8a1493/exec-4b7593e9-2d9a-4b07-82d1-cccb32b5d663.png",
+  "output": "assets/generated/xian.png"
+}

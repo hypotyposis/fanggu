@@ -266,11 +266,15 @@ const PLATES = {
   },
   "xian": {
     "src": "assets/plates/xian.png",
-    "alt": "西安大雁塔 · 小雁塔 · 线稿",
-    "width": 1536,
-    "height": 1024,
+    "alt": "西安大雁塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
     "color": "#d6ab5c",
-    "tint": false
+    "tint": false,
+    "caption": [
+      "线稿 · 大雁塔楼阁式砖塔",
+      "七层 · 通高约64.5 m"
+    ]
   },
   "sn_xiangji": {
     "src": "assets/plates/sn_xiangji.png",
@@ -282,6 +286,18 @@ const PLATES = {
     "caption": [
       "西安香积寺善导塔现存整塔 · 线稿",
       "唐 · 唐代 · 营建年代有异说"
+    ]
+  },
+  "xian_small": {
+    "src": "assets/plates/xian_small.png",
+    "alt": "西安小雁塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "线稿 · 小雁塔密檐式砖塔",
+      "现存十三级 · 残高约43.4 m"
     ]
   },
   "gs_bingling": {

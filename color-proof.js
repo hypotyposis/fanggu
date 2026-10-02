@@ -49,7 +49,7 @@
     $('.color-browser').hidden = true; $('#color-single').hidden = false;
     document.title = `${site.name} · 图版对照`;
     $('#single-name').textContent = site.name; $('#single-era').textContent = `${DYN[site.dyn].name} · ${site.place}`;
-    $('#single-detail').href = `detail.html?id=${encodeURIComponent(id)}`;
+    $('#single-detail').href = `sources.html#${encodeURIComponent(id)}`;
     const comparison = reference === 'line' ? site.image : { ...colored, src: colored.originalSrc || colored.src };
     $('#single-reference').value = reference;
     for (const [target, art, label] of [['single-line', comparison, reference === 'line' ? '线稿' : '原始设色'], ['single-color', colored, '透明设色']]) {

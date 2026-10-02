@@ -1,3 +1,4 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -66,23 +67,16 @@ test('Shanxi subjects distinguish tower protection and approximate dating', () =
   assert(site('sx_wang').sub.includes('局部'));
   assert(site('sx_wuyue').sub.includes('戏楼'));
 });
-test('New Shanxi sites compose with facets and preserve previously saved records', () => {
+test('New Shanxi sites compose with facets and export native unvisited defaults', () => {
   const facets = require('../catalog.js');
-  const { create } = require('../library.js');
   const catalogue = facets.classify(SITES, PLACES);
   const ids = expected.map(item => item[0]);
-  const memory = new Map();
-  const storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
-  create(catalogue.filter(site => !ids.includes(site.id)), storage).setRecord('foguang', { status: 'visited', visitedOn: '', note: '既有行记' });
-  const library = create(catalogue, storage);
+  assertUnvisited(ids);
   for (const id of ids) {
     const site = catalogue.find(item => item.id === id);
     assert.equal(site.region, 'north');
     assert(facets.matches(site, { province: '山西', query: '国保' }));
-    assert.equal(library.record(id).status, 'unvisited');
-    assert.equal(library.record(id).visitedOn, '');
   }
-  assert.equal(library.record('foguang').note, '既有行记');
   for (const [id, query] of [['sx_pujiu', '莺莺塔'], ['sx_rishengchang', '日升昌'], ['sx_daixian_wenmiao', '代州文庙']]) {
     assert(facets.matches(catalogue.find(item => item.id === id), { query }));
   }

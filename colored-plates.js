@@ -382,30 +382,41 @@ globalThis.COLORED_PLATES = {
     "originalSrc": "assets/colored/xian.png",
     "transparentSrc": "assets/colored-transparent/xian.png",
     "transparent": true,
-    "visualReview": "approved_user",
-    "alt": "西安大雁塔 · 小雁塔 · 设色图",
-    "width": 1536,
-    "height": 1024,
+    "visualReview": "pending_user",
+    "alt": "西安大雁塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
     "tint": false,
     "record": "assets/color-research/xian.json",
     "references": [
       {
         "page": "https://commons.wikimedia.org/wiki/File:Big_Wild_Goose_Pagoda_1.jpg",
         "author": "O.Mustafin",
-        "license": "CC0 1.0",
-        "date": "未知（原照片记录未提供拍摄日期）"
+        "license": "CC0 1.0"
       },
       {
         "page": "https://commons.wikimedia.org/wiki/File:Giant_Wild_Goose_Pagoda.jpg",
         "author": "Alex Kwok (Citycat)",
-        "license": "CC BY-SA 3.0",
-        "date": "未知（原照片记录未提供拍摄日期）"
-      },
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "xian_small": {
+    "src": "assets/colored-transparent-avif/xian_small.avif",
+    "originalSrc": "assets/colored/xian_small.png",
+    "transparentSrc": "assets/colored-transparent/xian_small.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "西安小雁塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/xian_small.json",
+    "references": [
       {
         "page": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
         "author": "Huang Xiaobo (黄晓波)",
-        "license": "Public domain (PD-self)",
-        "date": "未知（原照片记录未提供拍摄日期）"
+        "license": "Public domain (PD-self)"
       }
     ]
   },
@@ -652,7 +663,7 @@ globalThis.COLORED_PLATES = {
     "originalSrc": "assets/colored/tiantai.png",
     "transparentSrc": "assets/colored-transparent/tiantai.png",
     "transparent": true,
-    "visualReview": "approved_user",
+    "visualReview": "pending_user",
     "alt": "平顺天台庵 · 设色图",
     "width": 1536,
     "height": 1024,

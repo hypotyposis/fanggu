@@ -1,5 +1,38 @@
 import SwiftUI
 
+enum AppAppearance: String, CaseIterable, Identifiable {
+    static let storageKey = "fanggu.appearance"
+    case system, light, dark
+
+    var id: String { rawValue }
+    var title: String {
+        switch self {
+        case .system: "跟随系统"
+        case .light: "亮色"
+        case .dark: "深色"
+        }
+    }
+    var colorScheme: ColorScheme? {
+        switch self {
+        case .system: nil
+        case .light: .light
+        case .dark: .dark
+        }
+    }
+}
+
+private struct FangguAppearance: ViewModifier {
+    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
+
+    func body(content: Content) -> some View {
+        content.preferredColorScheme((AppAppearance(rawValue: appearance) ?? .system).colorScheme)
+    }
+}
+
+extension View {
+    func fangguAppearance() -> some View { modifier(FangguAppearance()) }
+}
+
 struct FangguSeal: View {
     var size: CGFloat = 42
 
@@ -10,10 +43,10 @@ struct FangguSeal: View {
         }
         .font(.custom("MaShanZheng-Regular", fixedSize: size * 0.25))
         .lineSpacing(-2)
-        .foregroundStyle(Palette.paper)
+        .foregroundStyle(Palette.sealPaper)
         .frame(width: size, height: size)
         .background(Palette.red)
-        .overlay(Rectangle().stroke(Palette.paper.opacity(0.65), lineWidth: 0.7).padding(3))
+        .overlay(Rectangle().stroke(Palette.sealPaper.opacity(0.65), lineWidth: 0.7).padding(3))
         .rotationEffect(.degrees(-6))
         .accessibilityHidden(true)
     }
@@ -99,7 +132,7 @@ struct FangguField: View {
         HStack(spacing: 10) {
             Image(systemName: "magnifyingglass")
                 .foregroundStyle(Palette.gold)
-            TextField(placeholder, text: $text)
+            TextField(placeholder, text: $text, prompt: Text(placeholder).foregroundStyle(Palette.paper3))
                 .font(FangguFont.serif(15))
                 .tint(Palette.gold)
                 .foregroundStyle(Palette.paper)

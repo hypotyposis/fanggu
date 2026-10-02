@@ -13,10 +13,10 @@ const { sites, places, dynasties, colors, types } = vm.runInContext(
   '({sites:FangguCatalog.classify(SITES,PLACES),places:PLACES,dynasties:DYN,colors:COLORED_PLATES,types:FangguCatalog.types})', context
 );
 const placeByKey = new Map(places.map(place => [place.key, place]));
-const css = fs.readFileSync(path.join(root, 'style.css'), 'utf8');
+const css = fs.readFileSync(path.join(root, 'palette.css'), 'utf8');
 const palette = Object.fromEntries([...css.matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(match => [match[1], match[2]]));
 const protectionSources = vm.runInContext('FangguProtection.sources', context);
-// These spans mirror the bands in timeline.js where DYN does not define a range.
+// Fallback spans for older catalogue periods without an explicit DYN range.
 const timelineSpans = {
   han: [25, 220], goguryeo: [37, 668], bei: [386, 534], nan: [420, 589],
   beiqi: [550, 577], sui: [581, 618], tang: [618, 907], balhae: [698, 926],

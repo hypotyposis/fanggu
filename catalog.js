@@ -46,7 +46,8 @@
   }
   function matches(site, filters = {}) {
     const { status = 'all', dynasty = 'all', country = 'all', region = 'all', province = 'all', type = 'all', query = '' } = filters;
-    const statusMatch = status === 'all' || (status === 'unvisited' ? site.record.status !== 'visited' : site.record.status === status);
+    const currentStatus = site.record?.status || site.initialStatus || 'unvisited';
+    const statusMatch = status === 'all' || (status === 'unvisited' ? currentStatus !== 'visited' : currentStatus === status);
     const typeAliases = { sculpture: '彩塑悬塑 造像 雕塑', gate: '山门 牌坊 牌楼', screen: '影壁 琉璃照壁', ruins: '城址 土城', garden: '园林 苏州园林', school: '国学 书院', castle: '天守 城堡', shrine: '神社 神宫' };
     const search = [site.name, site.short, site.place, site.sub, ...(site.legacyNames || []), countries[site.country], site.province, regions[site.region]?.name, ...site.types.map(type => `${types[type]} ${typeAliases[type] || ''}`), protection.searchText(site.id)].join(' ').toLocaleLowerCase();
     return statusMatch && (dynasty === 'all' || site.dyn === dynasty)

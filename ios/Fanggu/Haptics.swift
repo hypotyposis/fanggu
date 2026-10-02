@@ -15,6 +15,16 @@ import UIKit
         softGenerator.impactOccurred()
     }
 
+    static func beginRating() {
+        softGenerator.impactOccurred(intensity: 0.35)
+        selectionGenerator.prepare()
+    }
+
+    static func ratingStep() {
+        selectionGenerator.selectionChanged()
+        selectionGenerator.prepare()
+    }
+
     static func beginArrival() {
         arrivalGenerator.impactOccurred(intensity: 0.65)
         resistanceGenerator.prepare()

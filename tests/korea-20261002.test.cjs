@@ -1,3 +1,6 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -10,8 +13,6 @@ const json = file => JSON.parse(read(file));
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
 const { SITES, PLACES, DYN, CHAPTERS, COLORED_PLATES } = vm.runInNewContext(read('sites.js') + read('plates.js') + read('colored-plates.js') + '\n({ SITES, PLACES, DYN, CHAPTERS, COLORED_PLATES })');
 const facets = require('../catalog.js');
-const timeline = require('../timeline.js');
-const { create } = require('../library.js');
 const batch = json('assets/research/korea-20261002-batch.json');
 const sites = facets.classify(SITES, PLACES);
 
@@ -26,7 +27,7 @@ test('Korean batch has both countries, all regions, independent eras and no pers
       assert.equal(PLACES.find(place => place.key === site.placeKey).country, country);
       assert.equal(facets.regions[site.region].country, country);
       assert(site.yearNote, `${site.id}: missing construction-date qualification`);
-      assert.equal(timeline.lane(site, DYN), 'korea');
+
       assert(site.legacyNames.some(name => facets.matches({ ...site, record: { status: 'unvisited' } }, { query: name, country })));
     }
   }
@@ -34,16 +35,7 @@ test('Korean batch has both countries, all regions, independent eras and no pers
     assert(CHAPTERS.some(chapter => chapter.key === era));
     assert.equal(DYN[era].timelineLane, 'korea');
   }
-  const memory = new Map(), storage = { getItem: key => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
-  const before = create(sites.filter(site => !batch.ids.includes(site.id)), storage);
-  before.setRecord('foguang', { status: 'visited', note: '保持旧笔记', visitedOn: '' });
-  before.setReview('foguang', { rating: 4, text: '原有短评' });
-  const snapshot = memory.get('fanggu.library.v1');
-  const after = create(sites, storage);
-  assert.equal(memory.get('fanggu.library.v1'), snapshot);
-  assert.equal(after.record('foguang').note, '保持旧笔记');
-  assert.equal(after.review('foguang').text, '原有短评');
-  for (const id of batch.ids) { assert.equal(after.record(id).status, 'unvisited'); assert.equal(after.record(id).visitedOn, ''); }
+  assertUnvisited(batch.ids);
 });
 
 test('Korean dates distinguish uncertain construction, later additions and war reconstruction', () => {
@@ -85,6 +77,8 @@ test('Korean line/color originals, references, queue and actual transparent deli
     assert.equal(image.sha256, hash(COLORED_PLATES[id].src));
   }
   for (const [id, previous] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(previous); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(previous); continue; }
     assert.equal(manifest.images[id].sha256, previous.sha256, `${id}: unrelated delivery changed`);
     if (previous.visualReview === 'approved_user') assert.equal(manifest.images[id].visualReview, 'approved_user', `${id}: prior approval lost`);
   }

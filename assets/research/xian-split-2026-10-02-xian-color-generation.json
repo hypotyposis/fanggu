@@ -1,0 +1,13 @@
+{
+  "id": "xian",
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion architectural plate for 访古. Image 1 is exact black-on-white line drawing to color; preserve entire silhouette, all seven storeys, cornices, windows, finial, line placement, scale, perspective, base, canvas and margins. Images 2 and 3 show Giant Wild Goose Pagoda TODAY and determine actual material colors only. Image 4 is STYLE SAMPLE only; borrow elegant thin contours, matte mineral-gouache planes, restrained grain and at most 2–3 soft shade values, NEVER its architecture or golden cast. Color ONLY the single tower of Image 1. Observed materials: muted ochre-tan weathered brick and plaster walls, darker gray-brown projecting cornices and gray-brown cap and gourd finial, brown shutters and deep brown window openings, gray-beige platform. First overcast photo guides neutral color, reduce orange from sunlit second photograph. Not gilded. Keep thin dark material-related contours legible. No invented restoration, shiny finish or dense fake damage. Outside the tower perfectly flat opaque PURE WHITE #FFFFFF including all blank margins, no paper texture, gradient, cast shadow, sky, trees, people, halo, vignette or checkerboard. No other tower, foreground halls, labels, text, watermark or frame. One complete portrait 1024x1536 plate, same composition and geometry as Image 1.",
+  "input_images": [
+    "assets/generated/xian.png",
+    "assets/references/xian-big-photo.png",
+    "assets/references/xian-big-clear-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "status": "received",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fb55-abb9-7063-af3b-ed164c8a1493/exec-696c861b-9bd6-4280-a096-50151cdc60e6.png",
+  "output": "assets/colored/xian.png"
+}

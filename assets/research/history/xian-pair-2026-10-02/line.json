@@ -1,0 +1,45 @@
+{
+  "id": "xian",
+  "subject": "西安大雁塔 · 小雁塔",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: TWO separate Xi'an pagodas on one landscape 1536×1024 plate, Big Wild Goose Pagoda on the LEFT, Small Wild Goose Pagoda on the RIGHT, aligned at ground. Image 2 is the Big pagoda frontal facade; image 3 is its full seven-storey geometry; image 4 is the Small pagoda frontal view. Big pagoda: square brick pavilion tower, EXACTLY SEVEN occupied storeys with one central arched opening on each front, stepped projecting brick cornices, softly pyramidal top with small gourd finial; seven diminishing rectangles. Small pagoda: square dense-eave tower, EXACTLY THIRTEEN eave tiers, tall first storey, tightly spaced upper storeys, smoothly tapering outline and damaged truncated top, NO spire. Preserve their different silhouettes. Big pagoda is about 1.49 times the Small pagoda height, as actual 64.5m versus 43.4m. Whole paired composition about 75% canvas width, tallest tower about 83% image height. Both bases and finials fully inside canvas with white breathing room. Buildings behind and foliage must be removed; complete only the simple ground plinths. Extremely restrained internal detail, no masonry texture.",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xian-big-photo.png",
+    "assets/references/xian-big-clear-photo.jpg",
+    "assets/references/xian-small-full-photo.jpg"
+  ],
+  "generated_file": "assets/generated/xian.png",
+  "generation_tool": "built-in image_gen",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Big_Wild_Goose_Pagoda_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Big_Wild_Goose_Pagoda_1.jpg",
+      "reference_file": "assets/references/xian-big-photo.png",
+      "author": "O.Mustafin",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Giant_Wild_Goose_Pagoda.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Giant_Wild_Goose_Pagoda.jpg/960px-Giant_Wild_Goose_Pagoda.jpg",
+      "reference_file": "assets/references/xian-big-clear-photo.jpg",
+      "author": "Alex Kwok (Citycat)",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiao_yan_ta.jpg/960px-Xiao_yan_ta.jpg?download=1",
+      "reference_file": "assets/references/xian-small-full-photo.jpg",
+      "author": "Huang Xiaobo (黄晓波)",
+      "license": "Public domain (PD-self)",
+      "license_url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg"
+    }
+  ],
+  "source_note": "大雁塔以正面照确定中轴立面、完整斜正面照确定七层外形；小雁塔使用完整近正面照，保留十三层残顶形态。两塔共同基线，按实际高度约1.49:1组合，非同一实景地点。大雁塔首张JPEG含MPO格式信息，转换为PNG后作为生成输入。",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "verification": "Big pagoda seven storeys, small pagoda thirteen eaves with truncated top; both full monuments visible."
+}

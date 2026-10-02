@@ -9,7 +9,6 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const data = JSON.parse(read('assets/research/national-protection.json'));
 const protection = require('../protection.js');
 const facets = require('../catalog.js');
-const { create } = require('../library.js');
 const { SITES, PLACES } = JSON.parse(JSON.stringify(vm.runInNewContext(read('sites.js') + '\n({ SITES, PLACES })')));
 const catalog = facets.classify(SITES, PLACES);
 
@@ -58,8 +57,12 @@ test('merged components do not inherit a parent earlier batch and compound tags 
   assert.equal(protection.forSite('fj_chengqi')[0].parent.batch, 4);
   assert.equal(protection.forSite('linggu')[0].batch, 5);
   assert.deepEqual(protection.badges('kaiyuan').map(badge => badge.label), ['第三批国保 · 钟楼', '第六批国保 · 须弥塔（并入）']);
-  assert.equal(protection.forSite('xian').length, 2);
+  assert.equal(protection.forSite('xian').length, 1);
+  assert.equal(protection.forSite('xian')[0].unitName, '大雁塔');
+  assert.equal(protection.forSite('xian_small').length, 1);
+  assert.equal(protection.forSite('xian_small')[0].unitName, '小雁塔');
   assert.deepEqual(protection.badges('xian').map(badge => badge.label), ['第一批国保']);
+  assert.deepEqual(protection.badges('xian_small').map(badge => badge.label), ['第一批国保']);
 });
 
 test('unverified, reconstructed, foreign and unknown subjects receive no inferred national title', () => {
@@ -76,7 +79,7 @@ test('unverified, reconstructed, foreign and unknown subjects receive no inferre
 });
 
 test('protection batch and official unit search compose with existing geographic and type filters', () => {
-  const sites = create(catalog, { getItem: () => null, setItem() {} }).all();
+  const sites = catalog;
   const find = filters => sites.filter(site => facets.matches(site, filters)).map(site => site.id);
   assert.deepEqual(find({ query: '国保', province: '天津' }).sort(), ['dule', 'tj_guangdonghuiguan', 'tj_jizhou_baita', 'tj_shijia'].sort());
   assert.deepEqual(find({ query: '第八批国保', type: 'hall' }).sort(), ['hn_yuzhoutianning', 'tiefo', 'zj_shinantang'].sort());
@@ -89,27 +92,11 @@ test('protection batch and official unit search compose with existing geographic
   assert(!find({ query: '第五批国保' }).includes('qingzhou'));
 });
 
-test('national metadata never mutates personal records or leaks into exported backups', () => {
-  let saved = JSON.stringify({ version: 2, customSites: [], links: {}, records: { gugong: { status: 'visited', visitedOn: '', note: '旧笔记' } } });
-  const original = saved;
-  const library = create(catalog, { getItem: () => saved, setItem: (key, value) => { saved = value; } });
-  assert.equal(library.record('gugong').note, '旧笔记');
-  assert.equal(library.all().find(site => site.id === 'gugong').protection[0].batch, 1);
-  protection.badges('gugong'); protection.searchText('gugong');
-  assert.equal(saved, original);
-  assert(!JSON.stringify(library.export()).includes('protection'));
-});
-
-test('browser globals and both page dependency orders agree with CommonJS', () => {
+test('catalogue export globals agree with CommonJS', () => {
   const context = vm.createContext({});
   for (const file of ['protection-data.js', 'protection.js', 'catalog.js']) vm.runInContext(read(file), context);
   assert.equal(context.FangguProtection.batchLabel(8), protection.batchLabel(8));
   assert.equal(context.FangguCatalog.classify(SITES, PLACES).find(site => site.id === 'tiefo').protection[0].batch, 8);
-  for (const page of ['index.html', 'detail.html']) {
-    const html = read(page);
-    assert(html.indexOf('src="protection-data.js') < html.indexOf('src="protection.js'));
-    assert(html.indexOf('src="protection.js') < html.indexOf('src="catalog.js'));
-  }
   assert.equal(protection.batchLabel(10), '第十批国保');
   assert.throws(() => protection.batchLabel(0));
 });

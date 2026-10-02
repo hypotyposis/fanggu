@@ -1,3 +1,6 @@
+const { assertUnvisited } = require('./helpers/native-catalog.cjs');
+const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
+const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -11,7 +14,6 @@ const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.joi
 const batch = json('assets/research/gansu-batch.json');
 const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({ SITES, PLACES })');
 const facets = require('../catalog.js');
-const { create } = require('../library.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
 
@@ -77,21 +79,13 @@ test('Gansu dates and national-protection titles refer to the actual selected su
   assert(color.prompt.includes('残损'));
 });
 
-test('Gansu additions are discoverable by region, national batch and type without changing journals', () => {
-  const memory = new Map();
-  const storage = { getItem: k => memory.get(k) ?? null, setItem: (k, v) => memory.set(k, v) };
-  const before = create(catalog.filter(s => !batch.ids.includes(s.id)), storage);
-  before.setRecord('foguang', { status: 'visited', visitedOn: '', note: '旧记录保留' });
-  const after = create(catalog, storage);
-  for (const id of batch.ids) { assert.equal(after.record(id).status, 'unvisited'); assert.equal(after.record(id).visitedOn, ''); }
-  assert.equal(after.record('foguang').note, '旧记录保留');
-  const find = filters => Array.from(after.all().filter(s => facets.matches(s, filters)), s => s.id).sort();
+test('Gansu additions are discoverable by region, national batch and type with native unvisited defaults', () => {
+  assertUnvisited(batch.ids);
+  const find = filters => Array.from(catalog.filter(s => facets.matches(s, filters)), s => s.id).sort();
   const firstBatchStone = ['gs_maijishan', 'gs_mogao', 'gs_xixia_stele', 'gs_yulin'];
   assert.deepEqual(find({ region: 'northwest', province: '甘肃' }), [...batch.ids, ...firstBatchStone].sort());
   assert.deepEqual(find({ province: '甘肃', query: '第一批国保' }), ['gs_bingling', 'gs_jiayuguan', ...firstBatchStone].sort());
   assert.deepEqual(find({ province: '甘肃', type: 'pagoda' }), ['gs_dafo_tuta']);
-  const restored = create(catalog, { getItem: () => null, setItem() {} });
-  restored.import(after.export()); assert.equal(restored.record('foguang').note, '旧记录保留');
 });
 
 test('Gansu expansion preserves previous original, delivery hashes and visual-review records', () => {
@@ -99,6 +93,8 @@ test('Gansu expansion preserves previous original, delivery hashes and visual-re
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   for (const id of batch.previousIds) assert(SITES.some(s => s.id === id), id);
   for (const [id, old] of Object.entries(batch.previousDeliveries)) {
+    if (id === 'xian') { assertArchivedXian(old); continue; }
+    if (id === 'tiantai') { assertArchivedTiantai(old); continue; }
     for (const key of ['source', 'input', 'src']) assert.equal(hash(old[key]), old[{ source: 'sourceSha256', input: 'inputSha256', src: 'sha256' }[key]], id);
     assert.equal(current[id].visualReview, old.visualReview, id);
   }

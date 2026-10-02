@@ -1,0 +1,44 @@
+{
+  "source": "assets/colored/xian.png",
+  "sourceSha256": "49137f49259cdcac44c8a7beda078e8965b5b3200bc448f6bb74384c70ef48e1",
+  "sourceBytes": 1880737,
+  "input": "assets/colored-transparent/xian.png",
+  "inputSha256": "e9ac845eec8b7c75eb25ec366c1ab3b2791f099ad39d30ba51db0d6751c66b68",
+  "inputBytes": 1858919,
+  "src": "assets/colored-transparent-avif/xian.avif",
+  "sha256": "ad0f134cb54bda399ca8f39c2c2e804e8d99f13b9d20cbe2911797e2215cc410",
+  "bytes": 171758,
+  "width": 1536,
+  "height": 1024,
+  "alpha": {
+    "min": 0,
+    "max": 255,
+    "transparentPixels": 1117489,
+    "opaquePixels": 447876,
+    "meanError": 0.0055039723714192705,
+    "maxError": 5
+  },
+  "extraction": {
+    "matteRgb": [
+      11,
+      10,
+      8
+    ],
+    "borderPolicy": "dominant",
+    "borderMatchFraction": 1,
+    "tolerancePerChannel": 12,
+    "backgroundSeeds": [],
+    "transparentPixels": 1122126,
+    "opaquePixels": 450738,
+    "rgbUnchanged": true
+  },
+  "visualReview": "approved_user",
+  "processingSeconds": 2.389,
+  "review": {
+    "reviewer": "user",
+    "date": "2026-09-16",
+    "statement": "都没问题 先替换上吧。",
+    "avifSha256": "ad0f134cb54bda399ca8f39c2c2e804e8d99f13b9d20cbe2911797e2215cc410",
+    "inputSha256": "e9ac845eec8b7c75eb25ec366c1ab3b2791f099ad39d30ba51db0d6751c66b68"
+  }
+}

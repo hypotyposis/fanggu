@@ -1,15 +1,15 @@
 {
   "id": "xian",
-  "subject": "西安大雁塔 · 小雁塔",
-  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古. Image 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. All other images are SUBJECT GEOMETRY ONLY; never draw the Buddha. Create refined sparse BLACK INK ON PURE WHITE line art. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; doors and windows are outlines, never black fills. No solid shadows, broad grey shading, hatching, texture, pencil grain, gradient, color or gold. The white will become transparent and the ink uniformly gold on the website. Show complete architecture centered, approximately straight-on at facade level, verticals vertical and minimal perspective. Only a few short ground lines. Remove people, foliage, vehicles, wires, signs, fences and unrelated buildings. Selectively preserve architectural ornament without tracing every roof tile or brick. No labels, letters, calligraphy, dimension lines, caption, watermark, frame or border. Subject: TWO separate Xi'an pagodas on one landscape 1536×1024 plate, Big Wild Goose Pagoda on the LEFT, Small Wild Goose Pagoda on the RIGHT, aligned at ground. Image 2 is the Big pagoda frontal facade; image 3 is its full seven-storey geometry; image 4 is the Small pagoda frontal view. Big pagoda: square brick pavilion tower, EXACTLY SEVEN occupied storeys with one central arched opening on each front, stepped projecting brick cornices, softly pyramidal top with small gourd finial; seven diminishing rectangles. Small pagoda: square dense-eave tower, EXACTLY THIRTEEN eave tiers, tall first storey, tightly spaced upper storeys, smoothly tapering outline and damaged truncated top, NO spire. Preserve their different silhouettes. Big pagoda is about 1.49 times the Small pagoda height, as actual 64.5m versus 43.4m. Whole paired composition about 75% canvas width, tallest tower about 83% image height. Both bases and finials fully inside canvas with white breathing room. Buildings behind and foliage must be removed; complete only the simple ground plinths. Extremely restrained internal detail, no masonry texture.",
+  "subject": "西安大雁塔",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for 访古. Image 1 is STYLE MASTER only; never draw the Buddha. Other images are SUBJECT GEOMETRY references. Match the master's elegant delicate thin contours, sparse restrained detail, generous blank areas. Create BLACK INK on perfectly flat opaque PURE WHITE #FFFFFF. All unmarked surfaces inside and outside remain white. No shading, hatching, gradients, texture, gold, shadows, labels, watermark, frame, checkerboard. Doors and windows use outlines, no black fill. One complete tower centered on portrait 1024x1536 canvas, facade near straight-on with minimal side perspective, verticals vertical. Keep finial and base fully within margins. Remove people, plants, wires, signs, surrounding buildings, sky and ground scenery. Few short ground lines only. Subject: ONLY the Giant Wild Goose Pagoda at Da Ci'en Temple, Xi'an. Square brick pavilion tower, exactly SEVEN storeys with central arched front openings, successively narrower walls, projecting stepped brick cornices, small pyramidal crown with gourd finial. Preserve seven-storey silhouette and actual proportions shown by full-view second photo; first photo guides front facade. Do not draw Small Wild Goose Pagoda or the foreground hall. About 84% image height. Sparse architectural lines, no tracing of every brick.",
   "reference_files": [
     "assets/references/longmen-style-black.png",
     "assets/references/xian-big-photo.png",
-    "assets/references/xian-big-clear-photo.jpg",
-    "assets/references/xian-small-full-photo.jpg"
+    "assets/references/xian-big-clear-photo.jpg"
   ],
   "generated_file": "assets/generated/xian.png",
   "generation_tool": "built-in image_gen",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fb55-abb9-7063-af3b-ed164c8a1493/exec-4b7593e9-2d9a-4b07-82d1-cccb32b5d663.png",
   "sources": [
     {
       "source_page": "https://commons.wikimedia.org/wiki/File:Big_Wild_Goose_Pagoda_1.jpg",
@@ -26,20 +26,38 @@
       "author": "Alex Kwok (Citycat)",
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "source_page": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Xiao_yan_ta.jpg/960px-Xiao_yan_ta.jpg?download=1",
-      "reference_file": "assets/references/xian-small-full-photo.jpg",
-      "author": "Huang Xiaobo (黄晓波)",
-      "license": "Public domain (PD-self)",
-      "license_url": "https://commons.wikimedia.org/wiki/File:Xiao_yan_ta.jpg"
     }
   ],
-  "source_note": "大雁塔以正面照确定中轴立面、完整斜正面照确定七层外形；小雁塔使用完整近正面照，保留十三层残顶形态。两塔共同基线，按实际高度约1.49:1组合，非同一实景地点。大雁塔首张JPEG含MPO格式信息，转换为PNG后作为生成输入。",
-  "dimensions": [
-    1536,
-    1024
+  "historical_sources": [
+    {
+      "title": "西安市地方志办公室：大雁塔",
+      "url": "https://xadfz.xa.gov.cn/xadq/rwxa/1802954373708996609.html",
+      "note": "652年始建、七层、64.5米；检索摘要可读，全文工具抓取超时。"
+    },
+    {
+      "title": "陕西省志·建设志",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf",
+      "note": "武周长安年间701–704年重修；检索摘要依据。"
+    }
   ],
-  "verification": "Big pagoda seven storeys, small pagoda thirteen eaves with truncated top; both full monuments visible."
+  "source_note": "沿用原组合图的实拍来源，独立绘制西安大雁塔本体；不包含另一座塔与周围寺院。原组合稿与生成记录完整保留在 history/xian-pair-2026-10-02/。",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "线稿 · 大雁塔楼阁式砖塔",
+    "七层 · 通高约64.5 m"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "72afe75b7e9b43524f3361f8d427484542ec04da53bf06967cd6ddd2ec4b7ec7",
+    "seeds": []
+  },
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "status": "pending_user",
+    "note": "原型模式已查看输入及输出，不作视觉通过/淘汰决定；最终由用户人审。"
+  }
 }
