@@ -5,7 +5,7 @@
     "介休五岳庙 · 戏楼正面",
     "清代建筑 · 后世维修"
   ],
-  "status": "needs_review",
+  "status": "complete",
   "generation_tool": "built-in image_gen",
   "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg/1920px-Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -41,7 +41,7 @@
   "source_note": "所绘范围以本记录为准；实拍作为形制与现状参考，移除人物、植被和文字。非实测图。",
   "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 3 is a close bracket detail ONLY. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 介休五岳庙 · 戏楼正面. The actual FIVE-BAY theatre building, upper timber stage front on a masonry lower storey with FOUR arched side openings and ONE central passage. A projecting elevated central roof, and two flanking triangular gables with glazed ornaments. Six upper facade columns delimiting five bays; two front central pillars extend down to ground. Preserve their actual roof overlaps and carved beam aprons. Remove side wings, scaffold, furniture and text. Do not turn this into a single-storey temple. Landscape 1536x1024. Image 3 is bracket detail only.",
   "generated_file": "assets/generated/sx_wuyue.png",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_user",
   "historical_sources": [
     {
       "title": "国务院第6批全国重点文物保护单位名单",
@@ -51,8 +51,8 @@
   "review": {
     "inputs_viewed": true,
     "output_viewed": true,
-    "status": "pending_user",
-    "notes": "原型模式，不由 AI 作视觉通过或淘汰决定。"
+    "status": "approved_user",
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "checked_on": "2026-10-02",
   "background_preparation": {
@@ -80,5 +80,12 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.910Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.600Z",
+    "sourceSha256": "855c7d6eaf0b570e5413bc4d7bf2956db218bc4b0d800c3a1c29f54d90739c5c",
+    "statement": "图版验收没问题"
+  }
 }

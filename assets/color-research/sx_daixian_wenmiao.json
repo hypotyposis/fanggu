@@ -2,7 +2,7 @@
   "id": "sx_daixian_wenmiao",
   "name": "代县文庙",
   "subject": "代县文庙 · 大成殿正面与台基",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_daixian_wenmiao.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_daixian_wenmiao.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -65,5 +65,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.909Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.668Z",
+    "sourceSha256": "9ea86cec7a8de79345b6f772782b7e9e8e0d4e3a3f75e1ea87e045182b7d534f",
+    "inputSha256": "5e2e479410a5151876b9612ad80e1ff631125cd758f16a79bdc78a16a68422bc",
+    "avifSha256": "f8d743145982ef8288f6547f493289a12dbb76a1e01eeb1ec2cb0aa15d361061",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

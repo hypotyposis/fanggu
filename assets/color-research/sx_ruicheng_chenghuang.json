@@ -2,7 +2,7 @@
   "id": "sx_ruicheng_chenghuang",
   "name": "芮城城隍庙",
   "subject": "芮城城隍庙 · 大殿山面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_ruicheng_chenghuang.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_ruicheng_chenghuang.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -73,5 +73,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.909Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.655Z",
+    "sourceSha256": "a5ee19a8e44d2d13d86c0ad435e0969920bef76586d638fddee86543527bdc8e",
+    "inputSha256": "584bb7ff4ab9f3536f437ea4757744f9581e0a2d176708822747c95e44826c83",
+    "avifSha256": "baa9d60e21d486243f7016ea9346072ee6961877dc28fbad54b3840c51d0f728",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

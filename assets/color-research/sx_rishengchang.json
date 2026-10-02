@@ -2,7 +2,7 @@
   "id": "sx_rishengchang",
   "name": "日昇昌旧址",
   "subject": "日昇昌旧址 · 临街门面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_rishengchang.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_rishengchang.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -65,5 +65,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:26:06.684Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.681Z",
+    "sourceSha256": "66af44f6c79bb13d5b1fabd134dcd10b1cc6626fce253e79ca3222c647c07e3d",
+    "inputSha256": "975829605bd8e647b590fdcbefbe9b72206fecfabe8cc85f520775f2c6c622e4",
+    "avifSha256": "b507f5c6476efcf7fbf2ec2dca4548f807ad1bd2cdc6355623ff2163d611cf9a",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

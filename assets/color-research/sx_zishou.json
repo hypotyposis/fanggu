@@ -2,7 +2,7 @@
   "id": "sx_zishou",
   "name": "灵石资寿寺",
   "subject": "灵石资寿寺 · 天王殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_zishou.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_zishou.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "background_preparation": {
     "method": "white-matte-v1",
@@ -69,5 +69,15 @@
       "title": "山西古代建筑精华：和合资寿",
       "url": "https://www.tydao.com/2012/gujian/120410gujian38.htm"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.650Z",
+    "sourceSha256": "2e10649ddf6d7681a6bce5c0cc3c04de6cb251cc7d49b4a7aaa3e9c46ee63474",
+    "inputSha256": "b2496e7ee9fd8b6d95298320e93b6e680435debb753f9d100ffbeea52bfd63b2",
+    "avifSha256": "c6dd0a14acf5ab4c585e4acd3500c9a5e202398e866f52343cc8b93f5d6108ce",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

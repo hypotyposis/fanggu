@@ -2,7 +2,7 @@
   "id": "sx_wang",
   "name": "王家大院",
   "subject": "王家大院 · 红门堡院墙与屋顶局部",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_wang.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_wang.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -65,5 +65,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.909Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.663Z",
+    "sourceSha256": "d6ec0861a616ff35f1c0d8d2d4d8a952c1631bf0e64ddf1efdbe30265031fcac",
+    "inputSha256": "d5b7ca8684c347f3c9442ad950ecbf1412a5419a3ba65768aa01de6b2f6762b3",
+    "avifSha256": "39afc08cb0448be5d514f8888a210e6aebacf14ff767af9d2191bb9f2c5c3c88",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

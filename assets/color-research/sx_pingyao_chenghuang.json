@@ -2,7 +2,7 @@
   "id": "sx_pingyao_chenghuang",
   "name": "平遥城隍庙",
   "subject": "平遥城隍庙 · 前殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_pingyao_chenghuang.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_pingyao_chenghuang.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -65,5 +65,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:26:06.684Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.678Z",
+    "sourceSha256": "1b01d614570a153a4efc7b0767876745a431f09f7ffb6ec42a8646f2b43724bc",
+    "inputSha256": "7b8b3a8e7ad7b794b932dfec7b9e99d94d5489cad3bb276b8017291229b42888",
+    "avifSha256": "74e784136de740ea5a65553051ffc0b9f3266ae15dab7b496a0234dc11c3756a",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

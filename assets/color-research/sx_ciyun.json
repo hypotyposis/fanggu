@@ -2,7 +2,7 @@
   "id": "sx_ciyun",
   "name": "天镇慈云寺",
   "subject": "天镇慈云寺 · 大雄宝殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_ciyun.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_ciyun.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -65,5 +65,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.909Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.671Z",
+    "sourceSha256": "bf57781f3a3226a5b84e6d8707279064fd2261fb8fc625cc1b261922b16c9159",
+    "inputSha256": "5bf804f2c6ed1a9aa8c16981b81dcdd5e6c260a4c3aadeb9397007ae055eb29b",
+    "avifSha256": "dbb902b5a7aaf335af6672b2058b5a746ea528d6d85f68a646251e55e90fc6e2",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

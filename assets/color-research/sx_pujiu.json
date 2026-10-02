@@ -2,7 +2,7 @@
   "id": "sx_pujiu",
   "name": "普救寺塔",
   "subject": "普救寺塔 · 莺莺塔现存全塔",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_pujiu.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_pujiu.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -69,5 +69,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:29:58.403Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.684Z",
+    "sourceSha256": "4a68053f7b99cf9e6300136499add31b293e7200fdafaf67df88a73d30b458ac",
+    "inputSha256": "16aa0e4c29f012522a1a8857c430bcecd7df08f43b633bbe13f39cceb75691bd",
+    "avifSha256": "56bb682583dc968f13e10e3f111673971cd92c0df18e1c71f93da2b264b130ab",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

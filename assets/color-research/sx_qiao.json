@@ -2,7 +2,7 @@
   "id": "sx_qiao",
   "name": "乔家大院",
   "subject": "乔家大院 · 在中堂院内楼与两侧廊房",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/sx_qiao.png",
@@ -31,10 +31,10 @@
   },
   "output": "assets/colored/sx_qiao.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_user",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型候选，待用户审图。"
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "historical_sources": [
     {
@@ -65,5 +65,15 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.909Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.658Z",
+    "sourceSha256": "ca6e3b747eef7531ecbab8e44992b5e0e6889dcb80da49a1c43522697cb6dc4d",
+    "inputSha256": "9a0c7e2a177c2bbebe5ce7188fcc413b0e075f366c846f948985dec6e45ce598",
+    "avifSha256": "32c90cab9de0760481abe03b879830cd1164177a7be7ccf80b2349c46f081260",
+    "statement": "图版验收没问题"
+  },
+  "visual_review_status": "approved_user"
 }

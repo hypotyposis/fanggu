@@ -36,18 +36,24 @@ test('Shanxi additions preserve protected names, drawn scope and unvisited defau
     assert.equal(protection.entries[id][0].batch, batchNo);
     assert(protection.entries[id][0].scope.includes(scope));
     assert.equal(protection.sources[protection.entries[id][0].source].batch, batchNo);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_user');
     for (const folder of ['research', 'color-research']) {
       const record = JSON.parse(read(`assets/${folder}/${id}.json`));
       const original = record.generated_file || record.output;
-      assert.equal(record.status, 'needs_review');
+      assert.equal(record.status, 'complete');
       assert.equal(record.background_preparation.sourceSha256, createHash('sha256').update(fs.readFileSync(path.join(root, original))).digest('hex'));
       assert(record.historical_sources.length > 0);
       assert((record.input_images || record.reference_files).every(file => fs.existsSync(path.join(root, file))));
       assert.equal(record.generation_history.length, 1);
       assert.equal(record.generation_history[0].prompt, record.prompt);
       assert.equal(record.generation_history[0].status, 'pending_user');
-      assert(!record.user_review);
+      assert.equal(record.user_review.status, 'approved_user');
+      assert.equal(record.user_review.sourceSha256, record.background_preparation.sourceSha256);
+      assert.equal(record.user_review.statement, '图版验收没问题');
+      if (folder === 'color-research') {
+        assert.equal(record.user_review.inputSha256, createHash('sha256').update(fs.readFileSync(path.join(root, COLORED_PLATES[id].transparentSrc))).digest('hex'));
+        assert.equal(record.user_review.avifSha256, createHash('sha256').update(fs.readFileSync(path.join(root, COLORED_PLATES[id].src))).digest('hex'));
+      }
     }
   }
 });

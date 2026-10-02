@@ -5,7 +5,7 @@
     "普救寺塔 · 莺莺塔现存全塔",
     "明嘉靖年间重建 · 十三层砖塔"
   ],
-  "status": "needs_review",
+  "status": "complete",
   "generation_tool": "built-in image_gen",
   "source_page": "https://commons.wikimedia.org/wiki/File:Pujiu_Temple,_6_October_2017.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Pujiu_Temple%2C_6_October_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -31,7 +31,7 @@
   "source_note": "所绘范围以本记录为准；实拍作为形制与现状参考，移除人物、植被和文字。非实测图。",
   "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 普救寺塔 · 莺莺塔现存全塔. Draw ONLY the square THIRTEEN-STOREY brick pagoda (Yingying Pagoda), no surrounding temple roofs. Thirteen diminishing masonry eave bands and tower body stages, small arched central openings, low first tier and top metal finial. Count 13. Preserve slender tapered square silhouette and current brick form; no wooden balconies. Base obscured in photo: use simple square low footing only, no speculative elaborate pedestal. Portrait 1024x1536.",
   "generated_file": "assets/generated/sx_pujiu.png",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_user",
   "historical_sources": [
     {
       "title": "国务院第8批全国重点文物保护单位名单",
@@ -45,8 +45,8 @@
   "review": {
     "inputs_viewed": true,
     "output_viewed": true,
-    "status": "pending_user",
-    "notes": "原型模式，不由 AI 作视觉通过或淘汰决定。"
+    "status": "approved_user",
+    "notes": "用户明确确认本批10处线稿及设色：图版验收没问题。验收绑定实际文件哈希。"
   },
   "checked_on": "2026-10-02",
   "background_preparation": {
@@ -73,5 +73,12 @@
       "status": "pending_user",
       "started_at": "2026-10-01T19:24:21.910Z"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:08:43.604Z",
+    "sourceSha256": "9784d42a26d423f3186b60223b512f0e0951240470300ad8e166fd665c12cb55",
+    "statement": "图版验收没问题"
+  }
 }
