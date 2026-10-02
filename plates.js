@@ -4891,6 +4891,126 @@ const PLATES = {
       "潼南大佛寺摩崖造像 · 现存饰金大佛",
       "唐代凿首 · 1151年全像完成"
     ]
+  },
+  "sx_zishou": {
+    "src": "assets/plates/sx_zishou.png",
+    "alt": "灵石资寿寺 · 天王殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "灵石资寿寺 · 天王殿正面",
+      "明代殿宇 · 后世修缮"
+    ]
+  },
+  "sx_ruicheng_chenghuang": {
+    "src": "assets/plates/sx_ruicheng_chenghuang.png",
+    "alt": "芮城城隍庙 · 大殿山面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "芮城城隍庙 · 大殿山面",
+      "宋代原构 · 历代修葺"
+    ]
+  },
+  "sx_qiao": {
+    "src": "assets/plates/sx_qiao.png",
+    "alt": "乔家大院 · 在中堂院内楼与两侧廊房 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "乔家大院 · 在中堂院内楼与两侧廊房",
+      "清代院落 · 分期扩建"
+    ]
+  },
+  "sx_wang": {
+    "src": "assets/plates/sx_wang.png",
+    "alt": "王家大院 · 红门堡院墙与屋顶局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "王家大院 · 红门堡院墙与屋顶局部",
+      "清代宅院 · 约略年表定位"
+    ]
+  },
+  "sx_daixian_wenmiao": {
+    "src": "assets/plates/sx_daixian_wenmiao.png",
+    "alt": "代县文庙 · 大成殿正面与台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "代县文庙 · 大成殿正面与台基",
+      "明清建筑 · 历代维修"
+    ]
+  },
+  "sx_ciyun": {
+    "src": "assets/plates/sx_ciyun.png",
+    "alt": "天镇慈云寺 · 大雄宝殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "天镇慈云寺 · 大雄宝殿正面",
+      "明代殿堂 · 后世维修"
+    ]
+  },
+  "sx_wuyue": {
+    "src": "assets/plates/sx_wuyue.png",
+    "alt": "介休五岳庙 · 戏楼正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "介休五岳庙 · 戏楼正面",
+      "清代建筑 · 后世维修"
+    ]
+  },
+  "sx_pingyao_chenghuang": {
+    "src": "assets/plates/sx_pingyao_chenghuang.png",
+    "alt": "平遥城隍庙 · 前殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "平遥城隍庙 · 前殿正面",
+      "清代建筑 · 后世维修"
+    ]
+  },
+  "sx_rishengchang": {
+    "src": "assets/plates/sx_rishengchang.png",
+    "alt": "日昇昌旧址 · 临街门面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "日昇昌旧址 · 临街门面",
+      "清代票号旧址 · 现存临街门面"
+    ]
+  },
+  "sx_pujiu": {
+    "src": "assets/plates/sx_pujiu.png",
+    "alt": "普救寺塔 · 莺莺塔现存全塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "普救寺塔 · 莺莺塔现存全塔",
+      "明嘉靖年间重建 · 十三层砖塔"
+    ]
   }
 };
 

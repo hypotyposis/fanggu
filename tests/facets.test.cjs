@@ -201,7 +201,7 @@ test('82 northern additions remain unvisited while existing personal records sur
 });
 
 test('Shanxi screens are distinct from fortifications and additions preserve saved records', () => {
-  assert.equal(find({ province: '山西' }).length, 72);
+  assert.equal(find({ province: '山西' }).length, 82);
   assert.deepEqual(find({ province: '山西', type: 'screen' }), ['sx_jiulongbi']);
   assert(!find({ type: 'wall' }).includes('sx_jiulongbi'));
   assert.deepEqual(find({ province: '山西', type: 'screen', query: '影壁' }), ['sx_jiulongbi']);

@@ -1,0 +1,84 @@
+{
+  "id": "sx_wuyue",
+  "subject": "介休五岳庙 · 戏楼正面",
+  "caption": [
+    "介休五岳庙 · 戏楼正面",
+    "清代建筑 · 后世维修"
+  ],
+  "status": "needs_review",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg/1920px-Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg/1920px-Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "reference_file": "assets/references/sx_wuyue-10-39-40.jpg",
+      "date": "2013-08-24 10:39:40"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg/1920px-Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-08-24 10:37:13",
+      "reference_file": "assets/references/sx_wuyue-front-photo.jpg",
+      "description": "介休五岳庙"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_wuyue-10-39-40.jpg",
+    "assets/references/sx_wuyue-front-photo.jpg"
+  ],
+  "source_note": "所绘范围以本记录为准；实拍作为形制与现状参考，移除人物、植被和文字。非实测图。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 3 is a close bracket detail ONLY. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 介休五岳庙 · 戏楼正面. The actual FIVE-BAY theatre building, upper timber stage front on a masonry lower storey with FOUR arched side openings and ONE central passage. A projecting elevated central roof, and two flanking triangular gables with glazed ornaments. Six upper facade columns delimiting five bays; two front central pillars extend down to ground. Preserve their actual roof overlaps and carved beam aprons. Remove side wings, scaffold, furniture and text. Do not turn this into a single-storey temple. Landscape 1536x1024. Image 3 is bracket detail only.",
+  "generated_file": "assets/generated/sx_wuyue.png",
+  "visual_review_status": "pending_user",
+  "historical_sources": [
+    {
+      "title": "国务院第6批全国重点文物保护单位名单",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "status": "pending_user",
+    "notes": "原型模式，不由 AI 作视觉通过或淘汰决定。"
+  },
+  "checked_on": "2026-10-02",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "855c7d6eaf0b570e5413bc4d7bf2956db218bc4b0d800c3a1c29f54d90739c5c",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:28:53.209631+00:00",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-db4d755f-42ce-4d75-9b4e-60c13fbf7811.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 3 is a close bracket detail ONLY. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 介休五岳庙 · 戏楼正面. The actual FIVE-BAY theatre building, upper timber stage front on a masonry lower storey with FOUR arched side openings and ONE central passage. A projecting elevated central roof, and two flanking triangular gables with glazed ornaments. Six upper facade columns delimiting five bays; two front central pillars extend down to ground. Preserve their actual roof overlaps and carved beam aprons. Remove side wings, scaffold, furniture and text. Do not turn this into a single-storey temple. Landscape 1536x1024. Image 3 is bracket detail only.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sx_wuyue-10-39-40.jpg",
+        "assets/references/sx_wuyue-front-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-db4d755f-42ce-4d75-9b4e-60c13fbf7811.png",
+      "saved_file": "assets/generated/sx_wuyue.png",
+      "received_at": "2026-10-01T19:28:53.209631+00:00",
+      "status": "pending_user",
+      "started_at": "2026-10-01T19:24:21.910Z"
+    }
+  ]
+}

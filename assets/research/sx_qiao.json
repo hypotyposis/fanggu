@@ -1,0 +1,72 @@
+{
+  "id": "sx_qiao",
+  "subject": "乔家大院 · 在中堂院内楼与两侧廊房",
+  "caption": [
+    "乔家大院 · 在中堂院内楼与两侧廊房",
+    "清代院落 · 分期扩建"
+  ],
+  "status": "needs_review",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg/1920px-%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "螺钉",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg/1920px-%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "螺钉",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2017-09-10 13:48:26",
+      "reference_file": "assets/references/sx_qiao-court-photo.jpg",
+      "description": "​山西乔家大院"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_qiao-court-photo.jpg"
+  ],
+  "source_note": "所绘范围以本记录为准；实拍作为形制与现状参考，移除人物、植被和文字。非实测图。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 乔家大院 · 在中堂院内楼与两侧廊房. Draw the actual courtyard in Image 2: central THREE-BAY two-storey rear building with upper balcony, central arched passage at lower storey and symmetrical one-storey courtyard wings projecting toward the viewer. An open U-shaped composition, not a freestanding palace. Simplify wing lengths coherently, keep balcony rail and central decorated arch. Remove tourists, lanterns and ALL writing. Landscape 1536x1024.",
+  "generated_file": "assets/generated/sx_qiao.png",
+  "visual_review_status": "pending_user",
+  "historical_sources": [
+    {
+      "title": "国务院第5批全国重点文物保护单位名单",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "status": "pending_user",
+    "notes": "原型模式，不由 AI 作视觉通过或淘汰决定。"
+  },
+  "checked_on": "2026-10-02",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "eb98e0ef75aef85a8ac6bf9e4e0385b82e7540f8a8d09ed59967ac13ce2d65d2",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:20:55.198510+00:00",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-dfff93c3-4f24-47a3-821e-df34c2dccaf6.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 乔家大院 · 在中堂院内楼与两侧廊房. Draw the actual courtyard in Image 2: central THREE-BAY two-storey rear building with upper balcony, central arched passage at lower storey and symmetrical one-storey courtyard wings projecting toward the viewer. An open U-shaped composition, not a freestanding palace. Simplify wing lengths coherently, keep balcony rail and central decorated arch. Remove tourists, lanterns and ALL writing. Landscape 1536x1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sx_qiao-court-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-dfff93c3-4f24-47a3-821e-df34c2dccaf6.png",
+      "saved_file": "assets/generated/sx_qiao.png",
+      "received_at": "2026-10-01T19:20:55.198510+00:00",
+      "status": "pending_user"
+    }
+  ]
+}

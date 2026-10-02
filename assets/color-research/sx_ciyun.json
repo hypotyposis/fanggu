@@ -1,0 +1,69 @@
+{
+  "id": "sx_ciyun",
+  "name": "天镇慈云寺",
+  "subject": "天镇慈云寺 · 大雄宝殿正面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_ciyun.png",
+    "assets/references/sx_ciyun-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 天镇慈云寺 · 大雄宝殿正面. Materials observed: Neutral grey roof tiles and light grey plaster under eaves, dark grey-brown brackets, muted reddish-brown timber columns and lattice doors, grey stone stairs, plaque blank blue.",
+  "material_observations": "Neutral grey roof tiles and light grey plaster under eaves, dark grey-brown brackets, muted reddish-brown timber columns and lattice doors, grey stone stairs, plaque blank blue.",
+  "references": {
+    "original_record": "assets/research/sx_ciyun.json",
+    "selected_photo_files": [
+      "assets/references/sx_ciyun-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E6%85%88%E4%BA%91%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/%E6%85%88%E4%BA%91%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg/1920px-%E6%85%88%E4%BA%91%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Vikarna",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2024-02-12 14:40:43",
+        "reference_file": "assets/references/sx_ciyun-photo.jpg",
+        "description": "​慈云寺大雄宝殿"
+      }
+    ]
+  },
+  "output": "assets/colored/sx_ciyun.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型候选，待用户审图。"
+  },
+  "historical_sources": [
+    {
+      "title": "国务院第6批全国重点文物保护单位名单",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bf57781f3a3226a5b84e6d8707279064fd2261fb8fc625cc1b261922b16c9159",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:28:11.512347+00:00",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-2fd027a4-b3ad-449b-ad54-8f93a5f3cc86.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 天镇慈云寺 · 大雄宝殿正面. Materials observed: Neutral grey roof tiles and light grey plaster under eaves, dark grey-brown brackets, muted reddish-brown timber columns and lattice doors, grey stone stairs, plaque blank blue.",
+      "reference_files": [
+        "assets/generated/sx_ciyun.png",
+        "assets/references/sx_ciyun-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-2fd027a4-b3ad-449b-ad54-8f93a5f3cc86.png",
+      "saved_file": "assets/colored/sx_ciyun.png",
+      "received_at": "2026-10-01T19:28:11.512347+00:00",
+      "status": "pending_user",
+      "started_at": "2026-10-01T19:24:21.909Z"
+    }
+  ]
+}

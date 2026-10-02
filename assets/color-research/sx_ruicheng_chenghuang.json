@@ -1,0 +1,77 @@
+{
+  "id": "sx_ruicheng_chenghuang",
+  "name": "芮城城隍庙",
+  "subject": "芮城城隍庙 · 大殿山面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_ruicheng_chenghuang.png",
+    "assets/references/sx_ruicheng_chenghuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 芮城城隍庙 · 大殿山面. Materials observed: Faded red plaster wall, dark weathered brown timber brackets, grey tiles, muted green and ochre glazed gable and roof ornaments, grey brick base.",
+  "material_observations": "Faded red plaster wall, dark weathered brown timber brackets, grey tiles, muted green and ochre glazed gable and roof ornaments, grey brick base.",
+  "references": {
+    "original_record": "assets/research/sx_ruicheng_chenghuang.json",
+    "selected_photo_files": [
+      "assets/references/sx_ruicheng_chenghuang-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:The_Temple_of_the_Town_Deity_in_Ruicheng_2011-07.JPG",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/The_Temple_of_the_Town_Deity_in_Ruicheng_2011-07.JPG/1920px-The_Temple_of_the_Town_Deity_in_Ruicheng_2011-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "date": "2011-07-18",
+        "reference_file": "assets/references/sx_ruicheng_chenghuang-photo.jpg",
+        "description": "​芮城城隍庙大殿侧面。"
+      }
+    ]
+  },
+  "output": "assets/colored/sx_ruicheng_chenghuang.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型候选，待用户审图。"
+  },
+  "historical_sources": [
+    {
+      "title": "国务院第5批全国重点文物保护单位名单",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+    },
+    {
+      "title": "山西文化资源网：芮城城隍庙",
+      "url": "https://www.sxwhzyw.cn/pd551251958.html"
+    },
+    {
+      "title": "运城市人民政府：城隍庙景区",
+      "url": "https://www.yuncheng.gov.cn/doc/2020/07/21/71112.shtml"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a5ee19a8e44d2d13d86c0ad435e0969920bef76586d638fddee86543527bdc8e",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:25:46.435276+00:00",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-774bbc66-69e2-4a09-9c43-8d54421bad0f.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 芮城城隍庙 · 大殿山面. Materials observed: Faded red plaster wall, dark weathered brown timber brackets, grey tiles, muted green and ochre glazed gable and roof ornaments, grey brick base.",
+      "reference_files": [
+        "assets/generated/sx_ruicheng_chenghuang.png",
+        "assets/references/sx_ruicheng_chenghuang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-774bbc66-69e2-4a09-9c43-8d54421bad0f.png",
+      "saved_file": "assets/colored/sx_ruicheng_chenghuang.png",
+      "received_at": "2026-10-01T19:25:46.435276+00:00",
+      "status": "pending_user",
+      "started_at": "2026-10-01T19:24:21.909Z"
+    }
+  ]
+}

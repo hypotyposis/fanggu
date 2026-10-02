@@ -1,0 +1,81 @@
+{
+  "id": "sx_wuyue",
+  "name": "介休五岳庙",
+  "subject": "介休五岳庙 · 戏楼正面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_wuyue.png",
+    "assets/references/sx_wuyue-10-39-40.jpg",
+    "assets/references/sx_wuyue-front-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 介休五岳庙 · 戏楼正面. Materials observed: Grey-brown weathered timber with faded red carved aprons, grey blue tiles, turquoise blue green and ochre glazed ridge ornaments. Lower masonry has faded red plaster with a subdued blue lower strip as photographed; recessed arches dark neutral grey.",
+  "material_observations": "Grey-brown weathered timber with faded red carved aprons, grey blue tiles, turquoise blue green and ochre glazed ridge ornaments. Lower masonry has faded red plaster with a subdued blue lower strip as photographed; recessed arches dark neutral grey.",
+  "references": {
+    "original_record": "assets/research/sx_wuyue.json",
+    "selected_photo_files": [
+      "assets/references/sx_wuyue-10-39-40.jpg",
+      "assets/references/sx_wuyue-front-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg/1920px-Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "reference_file": "assets/references/sx_wuyue-10-39-40.jpg",
+        "date": "2013-08-24 10:39:40"
+      },
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg/1920px-Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "date": "2013-08-24 10:37:13",
+        "reference_file": "assets/references/sx_wuyue-front-photo.jpg",
+        "description": "介休五岳庙"
+      }
+    ]
+  },
+  "output": "assets/colored/sx_wuyue.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型候选，待用户审图。"
+  },
+  "historical_sources": [
+    {
+      "title": "国务院第6批全国重点文物保护单位名单",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "16a5105dbe486f86c227ae06f46c07fbdf905862c02121bda47967d38a175226",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:30:06.786878+00:00",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-2c460962-61a4-414b-90f7-6b3f84177335.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 介休五岳庙 · 戏楼正面. Materials observed: Grey-brown weathered timber with faded red carved aprons, grey blue tiles, turquoise blue green and ochre glazed ridge ornaments. Lower masonry has faded red plaster with a subdued blue lower strip as photographed; recessed arches dark neutral grey.",
+      "reference_files": [
+        "assets/generated/sx_wuyue.png",
+        "assets/references/sx_wuyue-10-39-40.jpg",
+        "assets/references/sx_wuyue-front-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-2c460962-61a4-414b-90f7-6b3f84177335.png",
+      "saved_file": "assets/colored/sx_wuyue.png",
+      "received_at": "2026-10-01T19:30:06.786878+00:00",
+      "status": "pending_user",
+      "started_at": "2026-10-01T19:29:16.164Z"
+    }
+  ]
+}

@@ -8838,6 +8838,212 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sx_zishou": {
+    "src": "assets/colored-transparent-avif/sx_zishou.avif",
+    "originalSrc": "assets/colored/sx_zishou.png",
+    "transparentSrc": "assets/colored-transparent/sx_zishou.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "灵石资寿寺 · 天王殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_zishou.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Lingshi_Zishou_Si_2013.08.24_15-34-56.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-24 15:34:56"
+      }
+    ]
+  },
+  "sx_ruicheng_chenghuang": {
+    "src": "assets/colored-transparent-avif/sx_ruicheng_chenghuang.avif",
+    "originalSrc": "assets/colored/sx_ruicheng_chenghuang.png",
+    "transparentSrc": "assets/colored-transparent/sx_ruicheng_chenghuang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "芮城城隍庙 · 大殿山面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_ruicheng_chenghuang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_Temple_of_the_Town_Deity_in_Ruicheng_2011-07.JPG",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 3.0",
+        "date": "2011-07-18"
+      }
+    ]
+  },
+  "sx_qiao": {
+    "src": "assets/colored-transparent-avif/sx_qiao.avif",
+    "originalSrc": "assets/colored/sx_qiao.png",
+    "transparentSrc": "assets/colored-transparent/sx_qiao.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "乔家大院 · 在中堂院内楼与两侧廊房 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_qiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg",
+        "author": "螺钉",
+        "license": "CC BY-SA 4.0",
+        "date": "2017-09-10 13:48:26"
+      }
+    ]
+  },
+  "sx_wang": {
+    "src": "assets/colored-transparent-avif/sx_wang.avif",
+    "originalSrc": "assets/colored/sx_wang.png",
+    "transparentSrc": "assets/colored-transparent/sx_wang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "王家大院 · 红门堡院墙与屋顶局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_wang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Lingshi_Jingsheng_Wangjia_Dayuan_2013.08.24_14-12-19.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-24 14:12:19"
+      }
+    ]
+  },
+  "sx_daixian_wenmiao": {
+    "src": "assets/colored-transparent-avif/sx_daixian_wenmiao.avif",
+    "originalSrc": "assets/colored/sx_daixian_wenmiao.png",
+    "transparentSrc": "assets/colored-transparent/sx_daixian_wenmiao.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "代县文庙 · 大成殿正面与台基 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_daixian_wenmiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E8%A5%BF%E4%BB%A3%E5%8E%BF%E6%96%87%E5%BA%99%E5%A4%A7%E6%88%90%E6%AE%BF.JPG",
+        "author": "冲之",
+        "license": "CC BY-SA 3.0",
+        "date": "2012-07-20 10:56:59"
+      }
+    ]
+  },
+  "sx_ciyun": {
+    "src": "assets/colored-transparent-avif/sx_ciyun.avif",
+    "originalSrc": "assets/colored/sx_ciyun.png",
+    "transparentSrc": "assets/colored-transparent/sx_ciyun.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "天镇慈云寺 · 大雄宝殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_ciyun.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%85%88%E4%BA%91%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+        "author": "Vikarna",
+        "license": "CC BY-SA 4.0",
+        "date": "2024-02-12 14:40:43"
+      }
+    ]
+  },
+  "sx_wuyue": {
+    "src": "assets/colored-transparent-avif/sx_wuyue.avif",
+    "originalSrc": "assets/colored/sx_wuyue.png",
+    "transparentSrc": "assets/colored-transparent/sx_wuyue.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "介休五岳庙 · 戏楼正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_wuyue.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-39-40.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-24 10:39:40"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Jiexiu_Wuyue_Miao_2013.08.24_10-37-13.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-24 10:37:13"
+      }
+    ]
+  },
+  "sx_pingyao_chenghuang": {
+    "src": "assets/colored-transparent-avif/sx_pingyao_chenghuang.avif",
+    "originalSrc": "assets/colored/sx_pingyao_chenghuang.png",
+    "transparentSrc": "assets/colored-transparent/sx_pingyao_chenghuang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "平遥城隍庙 · 前殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_pingyao_chenghuang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-25 09:40:41"
+      }
+    ]
+  },
+  "sx_rishengchang": {
+    "src": "assets/colored-transparent-avif/sx_rishengchang.avif",
+    "originalSrc": "assets/colored/sx_rishengchang.png",
+    "transparentSrc": "assets/colored-transparent/sx_rishengchang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "日昇昌旧址 · 临街门面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sx_rishengchang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Pingyao_Rishengchang_Jiuzhi_2013.08.25_06-53-19.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-08-25 06:53:19"
+      }
+    ]
+  },
+  "sx_pujiu": {
+    "src": "assets/colored-transparent-avif/sx_pujiu.avif",
+    "originalSrc": "assets/colored/sx_pujiu.png",
+    "transparentSrc": "assets/colored-transparent/sx_pujiu.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "普救寺塔 · 莺莺塔现存全塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sx_pujiu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Pujiu_Temple,_6_October_2017.jpg",
+        "author": "hwcmsb@126",
+        "license": "CC BY 2.5",
+        "date": "2017-10-06 14:12:54"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

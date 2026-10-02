@@ -1,0 +1,69 @@
+{
+  "id": "sx_pingyao_chenghuang",
+  "name": "平遥城隍庙",
+  "subject": "平遥城隍庙 · 前殿正面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_pingyao_chenghuang.png",
+    "assets/references/sx_pingyao_chenghuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 平遥城隍庙 · 前殿正面. Materials observed: Grey brick central walls and grey-brown timber columns, blue green glazed roof edges, subdued blue-green and ochre bracket paintings, grey stone platform. Central passage dark neutral.",
+  "material_observations": "Grey brick central walls and grey-brown timber columns, blue green glazed roof edges, subdued blue-green and ochre bracket paintings, grey stone platform. Central passage dark neutral.",
+  "references": {
+    "original_record": "assets/research/sx_pingyao_chenghuang.json",
+    "selected_photo_files": [
+      "assets/references/sx_pingyao_chenghuang-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg/1920px-Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "date": "2013-08-25 09:40:41",
+        "reference_file": "assets/references/sx_pingyao_chenghuang-photo.jpg",
+        "description": "平遥城隍庙 ——\n\n前殿"
+      }
+    ]
+  },
+  "output": "assets/colored/sx_pingyao_chenghuang.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型候选，待用户审图。"
+  },
+  "historical_sources": [
+    {
+      "title": "国务院第6批全国重点文物保护单位名单",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1b01d614570a153a4efc7b0767876745a431f09f7ffb6ec42a8646f2b43724bc",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:27:06.461369+00:00",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-c36dc813-f1da-4622-93a9-89ca48d02879.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 平遥城隍庙 · 前殿正面. Materials observed: Grey brick central walls and grey-brown timber columns, blue green glazed roof edges, subdued blue-green and ochre bracket paintings, grey stone platform. Central passage dark neutral.",
+      "reference_files": [
+        "assets/generated/sx_pingyao_chenghuang.png",
+        "assets/references/sx_pingyao_chenghuang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-c36dc813-f1da-4622-93a9-89ca48d02879.png",
+      "saved_file": "assets/colored/sx_pingyao_chenghuang.png",
+      "received_at": "2026-10-01T19:27:06.461369+00:00",
+      "status": "pending_user",
+      "started_at": "2026-10-01T19:26:06.684Z"
+    }
+  ]
+}

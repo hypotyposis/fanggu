@@ -1,0 +1,69 @@
+{
+  "id": "sx_qiao",
+  "name": "乔家大院",
+  "subject": "乔家大院 · 在中堂院内楼与两侧廊房",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sx_qiao.png",
+    "assets/references/sx_qiao-court-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 乔家大院 · 在中堂院内楼与两侧廊房. Materials observed: Neutral grey brick, grey roof tiles, weathered dark brown timber, subdued blue-green and ochre painted beam details, dark grey stone pavement at footing only. No gold cast.",
+  "material_observations": "Neutral grey brick, grey roof tiles, weathered dark brown timber, subdued blue-green and ochre painted beam details, dark grey stone pavement at footing only. No gold cast.",
+  "references": {
+    "original_record": "assets/research/sx_qiao.json",
+    "selected_photo_files": [
+      "assets/references/sx_qiao-court-photo.jpg"
+    ],
+    "photo_sources": [
+      {
+        "source_page": "https://commons.wikimedia.org/wiki/File:%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg",
+        "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg/1920px-%E4%B9%94%E5%AE%B6%E5%A4%A7%E9%99%A2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "author": "螺钉",
+        "license": "CC BY-SA 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "2017-09-10 13:48:26",
+        "reference_file": "assets/references/sx_qiao-court-photo.jpg",
+        "description": "​山西乔家大院"
+      }
+    ]
+  },
+  "output": "assets/colored/sx_qiao.png",
+  "visual_review": {
+    "status": "pending_user",
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "notes": "原型候选，待用户审图。"
+  },
+  "historical_sources": [
+    {
+      "title": "国务院第5批全国重点文物保护单位名单",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ca6e3b747eef7531ecbab8e44992b5e0e6889dcb80da49a1c43522697cb6dc4d",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:26:19.777393+00:00",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-d3bca32b-0fa1-48f0-8ec1-bbb894e262f0.png",
+  "width": 1536,
+  "height": 1024,
+  "generation_history": [
+    {
+      "prompt": "Use case: precise-object-edit. Asset type: colored companion heritage plate for 访古. Image 1 is the exact LINE DRAWING and composition master. Keep its silhouette, scale, viewpoint, canvas proportions, all storeys/bays/openings and margins unchanged. Image 2 is the real monument PHOTO for present material colors only. Last image is the colored STYLE SAMPLE; borrow delicate contours and restrained matte mineral pigment planes, NOT its gold palette, geometry or dark background. Color the existing drawing. Fine dark contours, gently filled semi-flat planes, at most 2-3 modest material shadow values and sparse grain only within solid material. No historical recoloring or dynasty color overlay. No trees, people, scenery, labels, lettering, cast shadows or halo. All exterior background and TRUE open-air gaps perfectly flat opaque PURE WHITE #FFFFFF, no paper texture, gradient, checkerboard or transparency. Keep light solid materials and dark recessed doors as real material. Subject: 乔家大院 · 在中堂院内楼与两侧廊房. Materials observed: Neutral grey brick, grey roof tiles, weathered dark brown timber, subdued blue-green and ochre painted beam details, dark grey stone pavement at footing only. No gold cast.",
+      "reference_files": [
+        "assets/generated/sx_qiao.png",
+        "assets/references/sx_qiao-court-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-d3bca32b-0fa1-48f0-8ec1-bbb894e262f0.png",
+      "saved_file": "assets/colored/sx_qiao.png",
+      "received_at": "2026-10-01T19:26:19.777393+00:00",
+      "status": "pending_user",
+      "started_at": "2026-10-01T19:24:21.909Z"
+    }
+  ]
+}

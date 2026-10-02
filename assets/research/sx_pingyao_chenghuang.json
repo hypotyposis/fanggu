@@ -1,0 +1,72 @@
+{
+  "id": "sx_pingyao_chenghuang",
+  "subject": "平遥城隍庙 · 前殿正面",
+  "caption": [
+    "平遥城隍庙 · 前殿正面",
+    "清代建筑 · 后世维修"
+  ],
+  "status": "needs_review",
+  "generation_tool": "built-in image_gen",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg/1920px-Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "Zhangzhugang",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg/1920px-Pingyao_Chenghuang_Miao_2013.08.25_09-40-41.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2013-08-25 09:40:41",
+      "reference_file": "assets/references/sx_pingyao_chenghuang-photo.jpg",
+      "description": "平遥城隍庙 ——\n\n前殿"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_pingyao_chenghuang-photo.jpg"
+  ],
+  "source_note": "所绘范围以本记录为准；实拍作为形制与现状参考，移除人物、植被和文字。非实测图。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 平遥城隍庙 · 前殿正面. Draw only the CENTRAL front hall, not the two distant bell towers or red wing doorways. Broad overhanging roof with an elevated central pavilion roof and lower side roof portions as photographed; central stone arch passage, front column-supported portico and geometric railings. Preserve central arch and actual roof tiers. Omit foreground monuments, plants, people, lanterns, all text. Landscape 1536x1024.",
+  "generated_file": "assets/generated/sx_pingyao_chenghuang.png",
+  "visual_review_status": "pending_user",
+  "historical_sources": [
+    {
+      "title": "国务院第6批全国重点文物保护单位名单",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    }
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "status": "pending_user",
+    "notes": "原型模式，不由 AI 作视觉通过或淘汰决定。"
+  },
+  "checked_on": "2026-10-02",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "856841f5d9f0f79087999cc795f34de2ad08bd904b82a1ff7df60f2ac6634320",
+    "seeds": []
+  },
+  "received_at": "2026-10-01T19:20:55.963093+00:00",
+  "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-13a4da39-ea72-4a5e-8601-b7b6e64401d0.png",
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for 访古. Image 1 is the STYLE MASTER only; match its delicate sparse organic black ink contours, restrained detail and generous blank surfaces. Image 2 is SUBJECT GEOMETRY evidence of the named real monument. Preserve the identifying silhouette, roof types, storey and bay counts, openings and proportions. Black thin ink outlines on perfectly flat OPAQUE PURE WHITE #FFFFFF background. Doors, windows and blank interior surfaces are outline-only white, no dark solid fills. Selective structural detail, sparse tile lines. No shadows, grey shading, hatching, grain, gradient, color, gold, halo, transparency grid or alpha. Whole selected subject centered with 8 percent balanced margins, roof and base uncut. No trees, sky, tourists, cars, modern signs, fences, neighboring distractions, labels, writing, captions, watermark or border. Subject: 平遥城隍庙 · 前殿正面. Draw only the CENTRAL front hall, not the two distant bell towers or red wing doorways. Broad overhanging roof with an elevated central pavilion roof and lower side roof portions as photographed; central stone arch passage, front column-supported portico and geometric railings. Preserve central arch and actual roof tiers. Omit foreground monuments, plants, people, lanterns, all text. Landscape 1536x1024.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sx_pingyao_chenghuang-photo.jpg"
+      ],
+      "output": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-d97e-7fe1-a726-35bb2b49cc99/exec-13a4da39-ea72-4a5e-8601-b7b6e64401d0.png",
+      "saved_file": "assets/generated/sx_pingyao_chenghuang.png",
+      "received_at": "2026-10-01T19:20:55.963093+00:00",
+      "status": "pending_user"
+    }
+  ]
+}
