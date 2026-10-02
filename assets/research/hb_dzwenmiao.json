@@ -1,0 +1,156 @@
+{
+  "id": "hb_dzwenmiao",
+  "subject": "定州文庙 · 大成殿",
+  "name": "定州文庙",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dingzhou_Confucian_Temple_3.jpg",
+  "author": "Zeus1234",
+  "license": "CC BY-SA 3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dingzhou_Confucian_Temple_3.jpg",
+      "file": "assets/references/hb_dzwenmiao-photo.jpg",
+      "sha256": "0fdc76c5b98f76c5e3da4fbb21d8f0ecb2da7a62701c2661f3b6543856c28e21",
+      "author": "Zeus1234",
+      "license": "CC BY-SA 3.0",
+      "date": "2009-04-05（来源页标注）",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dingzhou_Confucian_Temple_3.jpg",
+      "file": "assets/references/hb_dzwenmiao-photo.jpg",
+      "sha256": "0fdc76c5b98f76c5e3da4fbb21d8f0ecb2da7a62701c2661f3b6543856c28e21",
+      "author": "Zeus1234",
+      "license": "CC BY-SA 3.0",
+      "date": "2009-04-05（来源页标注）",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为大成殿；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the complete photographed FIVE-bay Dacheng main hall of Dingzhou Confucian Temple, its single broad glazed-tile roof, red columns, three central door bays and side lattice bays. Preserve actual photographed roof form and proportions; do not substitute Zhengding Confucian Temple. Include immediate low terrace only. Remove branches, people, fences and signs. All plaques blank."
+  ],
+  "material_observations": [
+    "朱红门柱和门窗、蓝绿色额枋，屋面黄绿琉璃瓦与灰色暗部依实拍分布；浅灰台基，避免整体金色滤镜。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 定州文庙 · 大成殿\nLandscape 1536x1024. Draw the complete photographed FIVE-bay Dacheng main hall of Dingzhou Confucian Temple, its single broad glazed-tile roof, red columns, three central door bays and side lattice bays. Preserve actual photographed roof form and proportions; do not substitute Zhengding Confucian Temple. Include immediate low terrace only. Remove branches, people, fences and signs. All plaques blank.",
+  "generation_history": [
+    {
+      "id": "hb_dzwenmiao",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 定州文庙 · 大成殿\nLandscape 1536x1024. Draw the complete photographed FIVE-bay Dacheng main hall of Dingzhou Confucian Temple, its single broad glazed-tile roof, red columns, three central door bays and side lattice bays. Preserve actual photographed roof form and proportions; do not substitute Zhengding Confucian Temple. Include immediate low terrace only. Remove branches, people, fences and signs. All plaques blank.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_dzwenmiao-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:27:54.066Z",
+      "saved_at": "2026-10-01T19:28:28.234732+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-d04ec949-8b42-40dc-96f3-28100cbbabb5.png",
+      "output": "assets/generated/hb_dzwenmiao.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    },
+    {
+      "title": "国务院第七批国保名单",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_dzwenmiao",
+    "name": "定州文庙",
+    "short": "定州文庙",
+    "sub": "大成殿",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代现存主体",
+    "year": 1750,
+    "yearApprox": true,
+    "yearLabel": "清（约）",
+    "yearNote": "现存主体按国保清代断代登记，1750只是清代约略定位；不把文庙唐代初创或宋代重建纪年当作照片中大殿确切建造年。",
+    "place": "河北 · 定州",
+    "placeKey": "dingzhou",
+    "types": [
+      "hall"
+    ],
+    "lede": "五间大成殿在一整面屋顶下展开，红柱与蓝绿额枋衬出庙堂的秩序。定州文庙经历多次重建，图版以现存清代主体为准。",
+    "facts": [
+      "定州文庙以清代古建筑列入第七批国保。",
+      "文庙初创、重建与现存殿体年代分别记载，不将唐代始建年当作现存木构年代。",
+      "图版绘大成殿与直接台基，院中树木和人物不在范围内。"
+    ],
+    "caption": [
+      "定州文庙 · 大成殿",
+      "清代现存主体"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "定州文庙 · 大成殿",
+    "清代现存主体"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-d04ec949-8b42-40dc-96f3-28100cbbabb5.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0e21c7623409162f5035f29b3c61a414667b50cb785dad4d4295068552286427",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_dzwenmiao-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_dzwenmiao.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.173Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.173Z",
+    "sourceSha256": "0e21c7623409162f5035f29b3c61a414667b50cb785dad4d4295068552286427",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "3a66caf7e19a66d642a43dbaf06e1f5c1ec0c15872ddcf7c9f73a73dfac5e542"
+  }
+}

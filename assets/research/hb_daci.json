@@ -1,0 +1,156 @@
+{
+  "id": "hb_daci",
+  "subject": "大慈阁 · 阁体与石台阶",
+  "name": "大慈阁",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+  "author": "瑞丽江的河水",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "file": "assets/references/hb_daci-photo.jpg",
+      "sha256": "46487a147e079de4e029eb35fe426e570d5212bc34591b924ead13119cd0d82d",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "date": "2025-10-25",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "file": "assets/references/hb_daci-photo.jpg",
+      "sha256": "46487a147e079de4e029eb35fe426e570d5212bc34591b924ead13119cd0d82d",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "date": "2025-10-25",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为阁体与石台阶；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw complete Daci Pavilion, Baoding: FIVE-bay wide front at bottom, THREE separate grey-tile eave tiers with hip-and-gable roofs, red timber/lattice body, elevated stone platform and the central broad stone staircase. Preserve full apex and all stairs. Remove separate bell/drum towers on both sides, trees, tourists, foreground roof fragments. Blank plaques and no text."
+  ],
+  "material_observations": [
+    "灰色瓦顶、朱红柱与门窗、蓝绿额枋，浅灰石台与栏杆；不把灰瓦改成黄色琉璃。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 大慈阁 · 阁体与石台阶\nPortrait 1024x1536. Draw complete Daci Pavilion, Baoding: FIVE-bay wide front at bottom, THREE separate grey-tile eave tiers with hip-and-gable roofs, red timber/lattice body, elevated stone platform and the central broad stone staircase. Preserve full apex and all stairs. Remove separate bell/drum towers on both sides, trees, tourists, foreground roof fragments. Blank plaques and no text.",
+  "generation_history": [
+    {
+      "id": "hb_daci",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 大慈阁 · 阁体与石台阶\nPortrait 1024x1536. Draw complete Daci Pavilion, Baoding: FIVE-bay wide front at bottom, THREE separate grey-tile eave tiers with hip-and-gable roofs, red timber/lattice body, elevated stone platform and the central broad stone staircase. Preserve full apex and all stairs. Remove separate bell/drum towers on both sides, trees, tourists, foreground roof fragments. Blank plaques and no text.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_daci-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:30:51.028Z",
+      "saved_at": "2026-10-01T19:31:00.967494+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-a342877e-f5d1-419a-8ef6-824387112338.png",
+      "output": "assets/generated/hb_daci.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_daci",
+    "name": "大慈阁",
+    "short": "大慈阁",
+    "sub": "阁体与石台阶",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆间重建",
+    "year": 1760,
+    "yearApprox": true,
+    "yearLabel": "清（约）",
+    "yearNote": "现存阁体为清乾隆间重建，1760仅作1736—1795年范围的约略定位；寺阁初创的1227—1232年不作为照片中阁体年代。",
+    "place": "河北 · 保定",
+    "placeKey": "hb_baoding",
+    "types": [
+      "pavilion"
+    ],
+    "lede": "三重檐口层层叠起，宽阔石阶将阁体托上高台。保定大慈阁在清代重建后仍保持高耸、开敞的城市地标轮廓。",
+    "facts": [
+      "大慈阁初创于金末元初，现存阁体为清乾隆间重建。",
+      "阁为三重檐歇山顶，下层面阔五间，立于高石台上。",
+      "图版绘阁体与台阶，不合绘两侧钟鼓楼。"
+    ],
+    "caption": [
+      "大慈阁 · 阁体与石台阶",
+      "清乾隆间重建"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  "caption": [
+    "大慈阁 · 阁体与石台阶",
+    "清乾隆间重建"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-a342877e-f5d1-419a-8ef6-824387112338.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "69487cb5ae77ca0658570e979305dc3a5d01ef66cf7a6e88c5c36daca6691ea7",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_daci-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_daci.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.180Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.180Z",
+    "sourceSha256": "69487cb5ae77ca0658570e979305dc3a5d01ef66cf7a6e88c5c36daca6691ea7",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "d9e9218f15850ff8885a9e03213d719afac6fb020474843c58f02cc45bd5c144"
+  }
+}

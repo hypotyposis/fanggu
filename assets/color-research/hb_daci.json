@@ -1,0 +1,161 @@
+{
+  "id": "hb_daci",
+  "subject": "大慈阁 · 阁体与石台阶",
+  "name": "大慈阁",
+  "status": "complete",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+  "author": "瑞丽江的河水",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "file": "assets/references/hb_daci-photo.jpg",
+      "sha256": "46487a147e079de4e029eb35fe426e570d5212bc34591b924ead13119cd0d82d",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "date": "2025-10-25",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "file": "assets/references/hb_daci-photo.jpg",
+      "sha256": "46487a147e079de4e029eb35fe426e570d5212bc34591b924ead13119cd0d82d",
+      "author": "瑞丽江的河水",
+      "license": "CC BY-SA 4.0",
+      "date": "2025-10-25",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为阁体与石台阶；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw complete Daci Pavilion, Baoding: FIVE-bay wide front at bottom, THREE separate grey-tile eave tiers with hip-and-gable roofs, red timber/lattice body, elevated stone platform and the central broad stone staircase. Preserve full apex and all stairs. Remove separate bell/drum towers on both sides, trees, tourists, foreground roof fragments. Blank plaques and no text."
+  ],
+  "material_observations": [
+    "灰色瓦顶、朱红柱与门窗、蓝绿额枋，浅灰石台与栏杆；不把灰瓦改成黄色琉璃。"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 大慈阁 · 阁体与石台阶\nMATERIAL OBSERVATIONS: 灰色瓦顶、朱红柱与门窗、蓝绿额枋，浅灰石台与栏杆；不把灰瓦改成黄色琉璃。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+  "generation_history": [
+    {
+      "id": "hb_daci",
+      "stage": "color",
+      "submitted_at": "2026-10-01T19:31:01.091798+00:00",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 大慈阁 · 阁体与石台阶\nMATERIAL OBSERVATIONS: 灰色瓦顶、朱红柱与门窗、蓝绿额枋，浅灰石台与栏杆；不把灰瓦改成黄色琉璃。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_daci.png",
+        "assets/references/hb_daci-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-10-01T19:33:00.489Z",
+      "saved_at": "2026-10-01T19:33:00.751566+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-40497c27-535e-46d5-a80c-ecc4cf509fa7.png",
+      "output": "assets/colored/hb_daci.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_daci",
+    "name": "大慈阁",
+    "short": "大慈阁",
+    "sub": "阁体与石台阶",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆间重建",
+    "year": 1760,
+    "yearApprox": true,
+    "yearLabel": "清（约）",
+    "yearNote": "现存阁体为清乾隆间重建，1760仅作1736—1795年范围的约略定位；寺阁初创的1227—1232年不作为照片中阁体年代。",
+    "place": "河北 · 保定",
+    "placeKey": "hb_baoding",
+    "types": [
+      "pavilion"
+    ],
+    "lede": "三重檐口层层叠起，宽阔石阶将阁体托上高台。保定大慈阁在清代重建后仍保持高耸、开敞的城市地标轮廓。",
+    "facts": [
+      "大慈阁初创于金末元初，现存阁体为清乾隆间重建。",
+      "阁为三重檐歇山顶，下层面阔五间，立于高石台上。",
+      "图版绘阁体与台阶，不合绘两侧钟鼓楼。"
+    ],
+    "caption": [
+      "大慈阁 · 阁体与石台阶",
+      "清乾隆间重建"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  "caption": [
+    "大慈阁 · 阁体与石台阶",
+    "清乾隆间重建"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-40497c27-535e-46d5-a80c-ecc4cf509fa7.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cc71470aafb3b69c5f3fe6cb76146c354565f560720dcd8cec070fe7aab95fc6",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "input_images": [
+    "assets/generated/hb_daci.png",
+    "assets/references/hb_daci-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "original_research": "assets/research/hb_daci.json",
+  "output": "assets/colored/hb_daci.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.316Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.316Z",
+    "sourceSha256": "cc71470aafb3b69c5f3fe6cb76146c354565f560720dcd8cec070fe7aab95fc6",
+    "inputSha256": "a5e463c5932a69c6fb17d388f1197cff7594250991055058399b049feaaf3d2e",
+    "avifSha256": "3479b8ce1b66759c590ce1e3dd02736a90fbb985e993415cd95206e1f721697b",
+    "statement": "图版验收通过 提交"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "hb_xumifushou",
+  "subject": "须弥福寿之庙 · 妙高庄严殿金顶与大红台上部",
+  "name": "须弥福寿之庙",
+  "status": "complete",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Xumifushouzhimiao.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Xumifushouzhimiao.jpg",
+  "author": "Naplee12 (WT-shared)",
+  "license": "CC BY-SA 3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Xumifushouzhimiao.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Xumifushouzhimiao.jpg",
+      "file": "assets/references/hb_xumifushou-photo.jpg",
+      "sha256": "e30f9d947475c010610e0c935ad446c95ec1aab145438d952d19e622da72c5ec",
+      "author": "Naplee12 (WT-shared)",
+      "license": "CC BY-SA 3.0",
+      "date": "2009-07-09",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xumifushouzhimiao.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Xumifushouzhimiao.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Xumifushouzhimiao.jpg",
+      "file": "assets/references/hb_xumifushou-photo.jpg",
+      "sha256": "e30f9d947475c010610e0c935ad446c95ec1aab145438d952d19e622da72c5ec",
+      "author": "Naplee12 (WT-shared)",
+      "license": "CC BY-SA 3.0",
+      "date": "2009-07-09",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xumifushouzhimiao.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为妙高庄严殿金顶与大红台上部；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. A deliberately PARTIAL architectural plate: Miaogao Zhuangyan Hall gold HIP roof and the photographed upper part of the great red terrace at Xumi Fushou Temple. Match the photo: large gold hipped roof, dragon ornaments and central finial; three rows of rectangular openings in the red terrace beneath; the attached smaller green-roofed pavilion visible at right. The reference cuts off lower terrace: end at a clean horizontal lower wall edge, do not invent its unseen foundation or full temple. Preserve photo angle, remove trees and sky; all windows outlined without black fill."
+  ],
+  "material_observations": [
+    "妙高庄严殿为实有金色屋面与金色龙饰；大红台暗朱红墙体，窗洞深色，窗缘有黄绿装饰，侧阁绿色瓦顶。"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 须弥福寿之庙 · 妙高庄严殿金顶与大红台上部\nMATERIAL OBSERVATIONS: 妙高庄严殿为实有金色屋面与金色龙饰；大红台暗朱红墙体，窗洞深色，窗缘有黄绿装饰，侧阁绿色瓦顶。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+  "generation_history": [
+    {
+      "id": "hb_xumifushou",
+      "stage": "color",
+      "submitted_at": "2026-10-01T19:28:55.008631+00:00",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 须弥福寿之庙 · 妙高庄严殿金顶与大红台上部\nMATERIAL OBSERVATIONS: 妙高庄严殿为实有金色屋面与金色龙饰；大红台暗朱红墙体，窗洞深色，窗缘有黄绿装饰，侧阁绿色瓦顶。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_xumifushou.png",
+        "assets/references/hb_xumifushou-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-10-01T19:29:59.186Z",
+      "saved_at": "2026-10-01T19:29:59.397963+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-9c0ba5a8-12f9-4692-969a-05e5b6c09b44.png",
+      "output": "assets/colored/hb_xumifushou.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_xumifushou",
+    "name": "须弥福寿之庙",
+    "short": "须弥福寿之庙",
+    "sub": "妙高庄严殿金顶与大红台上部",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆四十五年",
+    "year": 1780,
+    "yearApprox": false,
+    "yearLabel": "1780",
+    "yearNote": "1780为须弥福寿之庙及主体建筑群营建年代；本图仅表现妙高庄严殿金顶和大红台上部，不展示下部台基或完整寺院。",
+    "place": "河北 · 承德",
+    "placeKey": "hb_chengde",
+    "types": [
+      "hall"
+    ],
+    "lede": "金顶与龙饰在大红台上高高展开，整齐窗洞强调红墙的体量。这处建筑局部展现了承德寺庙群融合不同形制的鲜明外观。",
+    "facts": [
+      "须弥福寿之庙建于1780年，1961年列入第一批国保。",
+      "妙高庄严殿位于大红台顶部，金色屋面与龙饰为其辨识特征。",
+      "图版为金顶与大红台上部局部，照片未展示的下部结构不作复原。"
+    ],
+    "caption": [
+      "须弥福寿之庙 · 妙高庄严殿金顶与大红台上部",
+      "清乾隆四十五年"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "须弥福寿之庙 · 妙高庄严殿金顶与大红台上部",
+    "清乾隆四十五年"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-9c0ba5a8-12f9-4692-969a-05e5b6c09b44.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bdfdb68c42a7a14e016820b0b5a79792ec8d84231bcb710dd93785abdae1a2fb",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "input_images": [
+    "assets/generated/hb_xumifushou.png",
+    "assets/references/hb_xumifushou-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "original_research": "assets/research/hb_xumifushou.json",
+  "output": "assets/colored/hb_xumifushou.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.309Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.309Z",
+    "sourceSha256": "bdfdb68c42a7a14e016820b0b5a79792ec8d84231bcb710dd93785abdae1a2fb",
+    "inputSha256": "47fa26fa004eeeb8773fba7bb1fdf87cde29a99b1d723def8345b6ddb85af220",
+    "avifSha256": "4d62450fb23d221985342e7e9326f7d7df1f54142cbd9ed5e521b585a41907e8",
+    "statement": "图版验收通过 提交"
+  }
+}

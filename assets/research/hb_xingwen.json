@@ -1,0 +1,154 @@
+{
+  "id": "hb_xingwen",
+  "subject": "涞源兴文塔 · 五层八角砖塔塔身与塔刹",
+  "name": "涞源兴文塔",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://k.sina.cn/article_7176811671_1abc5749700100pu1k.html",
+  "image_url": "https://k.sinaimg.cn/n/sinakd20200903ac/607/w640h767/20200903/81d1-iypetiv9559968.jpg/w700d1q75cms.jpg",
+  "author": "未署名；商业新讯转载，页面注明图片来自网络",
+  "license": "未知，未作自由许可声明",
+  "references": [
+    {
+      "file": "assets/references/hb_xingwen-photo.jpg",
+      "page": "https://k.sina.cn/article_7176811671_1abc5749700100pu1k.html",
+      "url": "https://k.sinaimg.cn/n/sinakd20200903ac/607/w640h767/20200903/81d1-iypetiv9559968.jpg/w700d1q75cms.jpg",
+      "author": "未署名；商业新讯转载，页面注明图片来自网络",
+      "license": "未知，未作自由许可声明",
+      "date": "2020-09-03（转载日期）",
+      "sha256": "2f2c66523594151b9af6e7421c31cd6ef250fef9d42246eb655346fe873271e6",
+      "source_page": "https://k.sina.cn/article_7176811671_1abc5749700100pu1k.html"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/hb_xingwen-photo.jpg",
+      "page": "https://k.sina.cn/article_7176811671_1abc5749700100pu1k.html",
+      "url": "https://k.sinaimg.cn/n/sinakd20200903ac/607/w640h767/20200903/81d1-iypetiv9559968.jpg/w700d1q75cms.jpg",
+      "author": "未署名；商业新讯转载，页面注明图片来自网络",
+      "license": "未知，未作自由许可声明",
+      "date": "2020-09-03（转载日期）",
+      "sha256": "2f2c66523594151b9af6e7421c31cd6ef250fef9d42246eb655346fe873271e6",
+      "source_page": "https://k.sina.cn/article_7176811671_1abc5749700100pu1k.html"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为五层八角砖塔塔身与塔刹；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Xingwen Pagoda in Laiyuan: octagonal FIVE-storey brick pagoda with five projecting tiled eave tiers, imitation wooden brackets and relief balustrades between levels, tall lotus pedestal finial with stacked dark beads. Draw all five levels and apex as photographed. Bottom is the plain masonry tower shaft only; do not invent a grand foundation absent from the photograph. Slight three-quarter near frontal view with verticals straight. Remove trees, adjacent roofs and lanterns. Use sparse fine lines, not dense brick shading."
+  ],
+  "material_observations": [
+    "灰黄褐色砖身、较深灰瓦檐与仿木斗栱砖雕，石莲座浅灰，宝珠塔刹深灰；没有朱红木栏杆。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 涞源兴文塔 · 五层八角砖塔塔身与塔刹\nPortrait 1024x1536. Xingwen Pagoda in Laiyuan: octagonal FIVE-storey brick pagoda with five projecting tiled eave tiers, imitation wooden brackets and relief balustrades between levels, tall lotus pedestal finial with stacked dark beads. Draw all five levels and apex as photographed. Bottom is the plain masonry tower shaft only; do not invent a grand foundation absent from the photograph. Slight three-quarter near frontal view with verticals straight. Remove trees, adjacent roofs and lanterns. Use sparse fine lines, not dense brick shading.",
+  "generation_history": [
+    {
+      "id": "hb_xingwen",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:27:33.400398+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 涞源兴文塔 · 五层八角砖塔塔身与塔刹\nPortrait 1024x1536. Xingwen Pagoda in Laiyuan: octagonal FIVE-storey brick pagoda with five projecting tiled eave tiers, imitation wooden brackets and relief balustrades between levels, tall lotus pedestal finial with stacked dark beads. Draw all five levels and apex as photographed. Bottom is the plain masonry tower shaft only; do not invent a grand foundation absent from the photograph. Slight three-quarter near frontal view with verticals straight. Remove trees, adjacent roofs and lanterns. Use sparse fine lines, not dense brick shading.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_xingwen-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:28:10.385Z",
+      "saved_at": "2026-10-01T19:28:10.571540+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-627e9c2d-008c-4370-b28d-e79d8ec80856.png",
+      "output": "assets/generated/hb_xingwen.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_xingwen",
+    "name": "涞源兴文塔",
+    "short": "涞源兴文塔",
+    "sub": "五层八角砖塔塔身与塔刹",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽代形制 · 后世修缮",
+    "year": 1050,
+    "yearApprox": true,
+    "yearLabel": "辽（约）",
+    "yearNote": "现存塔按形制归辽代，1050仅为约略定位；资料记唐天宝三年（744）初建、明1539年重修及现代修缮，不将初创纪年当作现存塔形确切年代。",
+    "place": "河北 · 涞源",
+    "placeKey": "laiyuan",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "五层砖檐间嵌入仿木斗栱与栏杆，塔刹在莲座上逐节收束。兴文塔的砖雕把楼阁式木构的秩序保存在涞源古城中。",
+    "facts": [
+      "兴文塔为八角五层实心砖塔，国保断代为辽。",
+      "文献记有唐代初创与明代重修，现存形制和这些沿革分别说明。",
+      "图版绘可识别的五层塔身与塔刹，邻近殿宇和树木不在范围内。"
+    ],
+    "caption": [
+      "涞源兴文塔 · 五层八角砖塔塔身与塔刹",
+      "辽代形制 · 后世修缮"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  "caption": [
+    "涞源兴文塔 · 五层八角砖塔塔身与塔刹",
+    "辽代形制 · 后世修缮"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-627e9c2d-008c-4370-b28d-e79d8ec80856.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3205dd7794da2c41d835b5c761c76bdf9b491a7fe93964570f83f93686581bda",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_xingwen-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_xingwen.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.185Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.185Z",
+    "sourceSha256": "3205dd7794da2c41d835b5c761c76bdf9b491a7fe93964570f83f93686581bda",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "32793619574f42ae196da8b7d29375fcee38e0edcf4d46a6918d00a88c391fcf"
+  }
+}

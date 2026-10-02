@@ -1,0 +1,156 @@
+{
+  "id": "hb_changping",
+  "subject": "蔚州常平仓 · 仓神庙与相连戏楼",
+  "name": "蔚州常平仓",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+      "file": "assets/references/hb_changping-photo.jpg",
+      "sha256": "68bd99b46904012665b8b20d48b99d7d2b0bda613eb57fab6cc435d1a6890927",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+      "file": "assets/references/hb_changping-photo.jpg",
+      "sha256": "68bd99b46904012665b8b20d48b99d7d2b0bda613eb57fab6cc435d1a6890927",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为仓神庙与相连戏楼；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw ONLY the photographed connected granary deity shrine and front theatre pavilion in Yuzhou Changping Granary. Exactly two attached central buildings: the lower open THREE-bay stage with FOUR red front columns, rolling/barrel roof and blank rectangular plaque; behind it the higher hard-gable roof of the deity shrine. Match relative roof heights and grey masonry platform. Exclude cropped granary building on far right, foreground urn, shrubs and modern scenery. Do not draw a generic freestanding hall or invent all eleven storehouses."
+  ],
+  "material_observations": [
+    "灰色瓦、灰褐砖墙与石台，戏楼前四根旧朱红柱、深褐梁枋，背后仓神庙屋面较深灰；无整面新彩画。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 蔚州常平仓 · 仓神庙与相连戏楼\nLandscape 1536x1024. Draw ONLY the photographed connected granary deity shrine and front theatre pavilion in Yuzhou Changping Granary. Exactly two attached central buildings: the lower open THREE-bay stage with FOUR red front columns, rolling/barrel roof and blank rectangular plaque; behind it the higher hard-gable roof of the deity shrine. Match relative roof heights and grey masonry platform. Exclude cropped granary building on far right, foreground urn, shrubs and modern scenery. Do not draw a generic freestanding hall or invent all eleven storehouses.",
+  "generation_history": [
+    {
+      "id": "hb_changping",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 蔚州常平仓 · 仓神庙与相连戏楼\nLandscape 1536x1024. Draw ONLY the photographed connected granary deity shrine and front theatre pavilion in Yuzhou Changping Granary. Exactly two attached central buildings: the lower open THREE-bay stage with FOUR red front columns, rolling/barrel roof and blank rectangular plaque; behind it the higher hard-gable roof of the deity shrine. Match relative roof heights and grey masonry platform. Exclude cropped granary building on far right, foreground urn, shrubs and modern scenery. Do not draw a generic freestanding hall or invent all eleven storehouses.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_changping-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:29:12.298Z",
+      "saved_at": "2026-10-01T19:31:00.762286+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-12d16756-6f85-4dce-acc9-a08dadf13cf0.png",
+      "output": "assets/generated/hb_changping.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_changping",
+    "name": "蔚州常平仓",
+    "short": "蔚州常平仓",
+    "sub": "仓神庙与相连戏楼",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明代仓制 · 现存庙台具体年代未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearLabel": "明清（约）",
+    "yearNote": "常平仓按明代国保单位登记；仓神庙和戏楼具体营建年未详，1650仅作明清约略定位，不把粮仓管理制度年代当作两个单体的确切建造年。",
+    "place": "河北 · 蔚县",
+    "placeKey": "yuxian",
+    "types": [
+      "hall"
+    ],
+    "lede": "低处戏楼与后方仓神庙相连，两重屋顶把粮仓里的祭祀空间串在一起。常平仓图版选择这一组小建筑，留下蔚州仓储制度中的生活侧面。",
+    "facts": [
+      "蔚州常平仓是明代粮仓遗存，列入第六批国保。",
+      "仓神庙位于北廒之间，前方戏楼与庙相连。",
+      "图版仅绘仓神庙及戏楼，不表示全部仓廒；庙台单体年代未详。"
+    ],
+    "caption": [
+      "蔚州常平仓 · 仓神庙与相连戏楼",
+      "明代仓制 · 现存庙台具体年代未详"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "蔚州常平仓 · 仓神庙与相连戏楼",
+    "明代仓制 · 现存庙台具体年代未详"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-12d16756-6f85-4dce-acc9-a08dadf13cf0.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7539b43a15e23e9bd69a37e66c481d802b507369ac8b03cc1248137558777c84",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_changping-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_changping.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.177Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.177Z",
+    "sourceSha256": "7539b43a15e23e9bd69a37e66c481d802b507369ac8b03cc1248137558777c84",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "63f80c0c6a1fea158e4351349ef1aa2c5dc96cf495e6be02772211a4c4d02d45"
+  }
+}

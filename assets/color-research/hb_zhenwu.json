@@ -1,0 +1,161 @@
+{
+  "id": "hb_zhenwu",
+  "subject": "蔚州真武庙 · 山门与石阶",
+  "name": "蔚州真武庙",
+  "status": "complete",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "file": "assets/references/hb_zhenwu-photo.jpg",
+      "sha256": "08efd08403bbcf5d5bc43346a7e1ae4226696a223ab80818aa0a1e9d0b9db7be",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "file": "assets/references/hb_zhenwu-photo.jpg",
+      "sha256": "08efd08403bbcf5d5bc43346a7e1ae4226696a223ab80818aa0a1e9d0b9db7be",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为山门与石阶；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw ONLY the photographed THREE-bay entrance gate and broad stone stairway of Yuzhou Zhenwu Temple, NOT its main hall. One low hard-gable grey tile roof, central double door with lattice windows to each side, masonry side walls and steep centered steps. Preserve red door and column locations in outline only. Exclude the lantern obstructing the top right, trees and neighboring buildings; no invented rear hall."
+  ],
+  "material_observations": [
+    "灰瓦和灰砖墙，中央旧朱红门扇及柱、两侧暗褐格栅，石阶灰白；少量瓦面绿色按实拍，不扩大为整面琉璃顶。"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 蔚州真武庙 · 山门与石阶\nMATERIAL OBSERVATIONS: 灰瓦和灰砖墙，中央旧朱红门扇及柱、两侧暗褐格栅，石阶灰白；少量瓦面绿色按实拍，不扩大为整面琉璃顶。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+  "generation_history": [
+    {
+      "id": "hb_zhenwu",
+      "stage": "color",
+      "submitted_at": "2026-10-01T19:28:01.410983+00:00",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 蔚州真武庙 · 山门与石阶\nMATERIAL OBSERVATIONS: 灰瓦和灰砖墙，中央旧朱红门扇及柱、两侧暗褐格栅，石阶灰白；少量瓦面绿色按实拍，不扩大为整面琉璃顶。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_zhenwu.png",
+        "assets/references/hb_zhenwu-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-10-01T19:30:44.761Z",
+      "saved_at": "2026-10-01T19:30:44.949919+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-93e9d5cb-67d0-498d-b69b-397258449ead.png",
+      "output": "assets/colored/hb_zhenwu.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_zhenwu",
+    "name": "蔚州真武庙",
+    "short": "蔚州真武庙",
+    "sub": "山门与石阶",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清建筑 · 山门具体年代未详",
+    "year": 1700,
+    "yearApprox": true,
+    "yearLabel": "明清（约）",
+    "yearNote": "国保单位断代为明，寺院1720年曾修；所绘山门具体营建年未详，1700仅作明清建筑的约略定位，不把1720当作山门确切建造年。",
+    "place": "河北 · 蔚县",
+    "placeKey": "yuxian",
+    "types": [
+      "gate"
+    ],
+    "lede": "宽石阶将人引向三间山门，灰瓦下的红门与格窗形成紧凑立面。图版选择真武庙的入口，保留它登高入庙的空间感。",
+    "facts": [
+      "蔚州真武庙列入第六批国保，单位断代为明。",
+      "寺院在清康熙五十九年（1720）有修缮记载，山门单体年代未详。",
+      "图版为实拍山门与石阶，不以大殿的开间、屋顶资料代替山门结构。"
+    ],
+    "caption": [
+      "蔚州真武庙 · 山门与石阶",
+      "明清建筑 · 山门具体年代未详"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "蔚州真武庙 · 山门与石阶",
+    "明清建筑 · 山门具体年代未详"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-93e9d5cb-67d0-498d-b69b-397258449ead.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "332680adc404e7dcd130f31470d53a02f3a47008a58fd85165a3707968c66529",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "input_images": [
+    "assets/generated/hb_zhenwu.png",
+    "assets/references/hb_zhenwu-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "original_research": "assets/research/hb_zhenwu.json",
+  "output": "assets/colored/hb_zhenwu.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.301Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.301Z",
+    "sourceSha256": "332680adc404e7dcd130f31470d53a02f3a47008a58fd85165a3707968c66529",
+    "inputSha256": "a3fe73d5dba84a4d2379d0cd4dd8820f1683e7cb74043d9cb52d4f41d2f1330c",
+    "avifSha256": "81eb9430fec9678caa0fd541f53f97a1a2bd71f20809473ad10f4f7827c20d68",
+    "statement": "图版验收通过 提交"
+  }
+}

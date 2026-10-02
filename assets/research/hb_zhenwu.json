@@ -1,0 +1,156 @@
+{
+  "id": "hb_zhenwu",
+  "subject": "蔚州真武庙 · 山门与石阶",
+  "name": "蔚州真武庙",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "file": "assets/references/hb_zhenwu-photo.jpg",
+      "sha256": "08efd08403bbcf5d5bc43346a7e1ae4226696a223ab80818aa0a1e9d0b9db7be",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "file": "assets/references/hb_zhenwu-photo.jpg",
+      "sha256": "08efd08403bbcf5d5bc43346a7e1ae4226696a223ab80818aa0a1e9d0b9db7be",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为山门与石阶；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw ONLY the photographed THREE-bay entrance gate and broad stone stairway of Yuzhou Zhenwu Temple, NOT its main hall. One low hard-gable grey tile roof, central double door with lattice windows to each side, masonry side walls and steep centered steps. Preserve red door and column locations in outline only. Exclude the lantern obstructing the top right, trees and neighboring buildings; no invented rear hall."
+  ],
+  "material_observations": [
+    "灰瓦和灰砖墙，中央旧朱红门扇及柱、两侧暗褐格栅，石阶灰白；少量瓦面绿色按实拍，不扩大为整面琉璃顶。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 蔚州真武庙 · 山门与石阶\nLandscape 1536x1024. Draw ONLY the photographed THREE-bay entrance gate and broad stone stairway of Yuzhou Zhenwu Temple, NOT its main hall. One low hard-gable grey tile roof, central double door with lattice windows to each side, masonry side walls and steep centered steps. Preserve red door and column locations in outline only. Exclude the lantern obstructing the top right, trees and neighboring buildings; no invented rear hall.",
+  "generation_history": [
+    {
+      "id": "hb_zhenwu",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 蔚州真武庙 · 山门与石阶\nLandscape 1536x1024. Draw ONLY the photographed THREE-bay entrance gate and broad stone stairway of Yuzhou Zhenwu Temple, NOT its main hall. One low hard-gable grey tile roof, central double door with lattice windows to each side, masonry side walls and steep centered steps. Preserve red door and column locations in outline only. Exclude the lantern obstructing the top right, trees and neighboring buildings; no invented rear hall.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_zhenwu-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:27:18.989Z",
+      "saved_at": "2026-10-01T19:28:01.285391+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-dcaaa357-b670-414b-a715-993815bf0218.png",
+      "output": "assets/generated/hb_zhenwu.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_zhenwu",
+    "name": "蔚州真武庙",
+    "short": "蔚州真武庙",
+    "sub": "山门与石阶",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清建筑 · 山门具体年代未详",
+    "year": 1700,
+    "yearApprox": true,
+    "yearLabel": "明清（约）",
+    "yearNote": "国保单位断代为明，寺院1720年曾修；所绘山门具体营建年未详，1700仅作明清建筑的约略定位，不把1720当作山门确切建造年。",
+    "place": "河北 · 蔚县",
+    "placeKey": "yuxian",
+    "types": [
+      "gate"
+    ],
+    "lede": "宽石阶将人引向三间山门，灰瓦下的红门与格窗形成紧凑立面。图版选择真武庙的入口，保留它登高入庙的空间感。",
+    "facts": [
+      "蔚州真武庙列入第六批国保，单位断代为明。",
+      "寺院在清康熙五十九年（1720）有修缮记载，山门单体年代未详。",
+      "图版为实拍山门与石阶，不以大殿的开间、屋顶资料代替山门结构。"
+    ],
+    "caption": [
+      "蔚州真武庙 · 山门与石阶",
+      "明清建筑 · 山门具体年代未详"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "蔚州真武庙 · 山门与石阶",
+    "明清建筑 · 山门具体年代未详"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-dcaaa357-b670-414b-a715-993815bf0218.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "815b6f453da6e9f594c6c6a114ba639d08d5155255d989d6f560ef9d02d89395",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_zhenwu-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_zhenwu.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.171Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.171Z",
+    "sourceSha256": "815b6f453da6e9f594c6c6a114ba639d08d5155255d989d6f560ef9d02d89395",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "9d1fa5e875cbe701e28462b203bc5bf8d095b7c1bf5215ab7711a39b1e47aa2a"
+  }
+}

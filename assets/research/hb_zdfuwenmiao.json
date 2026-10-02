@@ -1,0 +1,156 @@
+{
+  "id": "hb_zdfuwenmiao",
+  "subject": "正定府文庙 · 戟门",
+  "name": "正定府文庙",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+  "author": "Siyuwj",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+      "file": "assets/references/hb_zdfuwenmiao-photo.jpg",
+      "sha256": "29fb3e1917e15ce7fae7abaf5eb443f739979e9fdee6ccc0044e895b14c7866e",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "date": "2020-09-06",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+      "file": "assets/references/hb_zdfuwenmiao-photo.jpg",
+      "sha256": "29fb3e1917e15ce7fae7abaf5eb443f739979e9fdee6ccc0044e895b14c7866e",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "date": "2020-09-06",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为戟门；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. ONLY the surviving five-bay Ji Gate of Zhengding PREFECTURAL Confucian Temple (not county temple). Single eave suspended-gable roof, long low grey tiled ridge, five facade bays with the middle three wooden doorway bays and masonry at the two ends. Match photographed aged timber structure. Exclude later side rooms, modern bridge in foreground and reconstructed main hall. Include immediate low stone plinth, blank central plaque."
+  ],
+  "material_observations": [
+    "灰色布瓦、深褐木梁柱与门扇，浅灰砖墙和墙面；不把府文庙戟门画成朱红县文庙大殿。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 正定府文庙 · 戟门\nLandscape 1536x1024. ONLY the surviving five-bay Ji Gate of Zhengding PREFECTURAL Confucian Temple (not county temple). Single eave suspended-gable roof, long low grey tiled ridge, five facade bays with the middle three wooden doorway bays and masonry at the two ends. Match photographed aged timber structure. Exclude later side rooms, modern bridge in foreground and reconstructed main hall. Include immediate low stone plinth, blank central plaque.",
+  "generation_history": [
+    {
+      "id": "hb_zdfuwenmiao",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 正定府文庙 · 戟门\nLandscape 1536x1024. ONLY the surviving five-bay Ji Gate of Zhengding PREFECTURAL Confucian Temple (not county temple). Single eave suspended-gable roof, long low grey tiled ridge, five facade bays with the middle three wooden doorway bays and masonry at the two ends. Match photographed aged timber structure. Exclude later side rooms, modern bridge in foreground and reconstructed main hall. Include immediate low stone plinth, blank central plaque.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_zdfuwenmiao-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:24:40.594Z",
+      "saved_at": "2026-10-01T19:26:46.442013+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-a8ab1fe4-2a8d-4139-906a-0ee35a143f86.png",
+      "output": "assets/generated/hb_zdfuwenmiao.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_zdfuwenmiao",
+    "name": "正定府文庙",
+    "short": "正定府文庙",
+    "sub": "戟门",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代遗构",
+    "year": 1300,
+    "yearApprox": true,
+    "yearLabel": "元（约）",
+    "yearNote": "现存戟门为元代遗构，具体建造年未详，1300仅作年表约略定位；府文庙创建于北宋熙宁三年（1070），两者分开记载。",
+    "place": "河北 · 正定",
+    "placeKey": "zhengding",
+    "types": [
+      "gate"
+    ],
+    "lede": "低缓的悬山屋顶覆盖五间戟门，深色木构与灰白墙体相互映衬。这是正定府文庙保留下来的元代主体，也与城内县文庙分属两处。",
+    "facts": [
+      "正定府文庙创建于1070年，现存核心为元代戟门。",
+      "戟门面阔五间、进深两间，单檐悬山布瓦顶。",
+      "图版绘戟门，不包含后建耳房、前方现代石桥与重建大成殿。"
+    ],
+    "caption": [
+      "正定府文庙 · 戟门",
+      "元代遗构"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "正定府文庙 · 戟门",
+    "元代遗构"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-a8ab1fe4-2a8d-4139-906a-0ee35a143f86.png",
+  "width": 1535,
+  "height": 1025,
+  "dimensions": [
+    1535,
+    1025
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ffb44c430834567d2668b76b28c34408e83ec9227fac02b5449f4c3eff5cb2e7",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_zdfuwenmiao-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_zdfuwenmiao.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.167Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.167Z",
+    "sourceSha256": "ffb44c430834567d2668b76b28c34408e83ec9227fac02b5449f4c3eff5cb2e7",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "bed162bed7e1d72629ca3905c0cb25e53a25fda766ebf47382b9f77aafcd4c5f"
+  }
+}

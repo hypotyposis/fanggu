@@ -1,0 +1,161 @@
+{
+  "id": "hb_dzwenmiao",
+  "subject": "定州文庙 · 大成殿",
+  "name": "定州文庙",
+  "status": "complete",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dingzhou_Confucian_Temple_3.jpg",
+  "author": "Zeus1234",
+  "license": "CC BY-SA 3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dingzhou_Confucian_Temple_3.jpg",
+      "file": "assets/references/hb_dzwenmiao-photo.jpg",
+      "sha256": "0fdc76c5b98f76c5e3da4fbb21d8f0ecb2da7a62701c2661f3b6543856c28e21",
+      "author": "Zeus1234",
+      "license": "CC BY-SA 3.0",
+      "date": "2009-04-05（来源页标注）",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Dingzhou_Confucian_Temple_3.jpg",
+      "file": "assets/references/hb_dzwenmiao-photo.jpg",
+      "sha256": "0fdc76c5b98f76c5e3da4fbb21d8f0ecb2da7a62701c2661f3b6543856c28e21",
+      "author": "Zeus1234",
+      "license": "CC BY-SA 3.0",
+      "date": "2009-04-05（来源页标注）",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为大成殿；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the complete photographed FIVE-bay Dacheng main hall of Dingzhou Confucian Temple, its single broad glazed-tile roof, red columns, three central door bays and side lattice bays. Preserve actual photographed roof form and proportions; do not substitute Zhengding Confucian Temple. Include immediate low terrace only. Remove branches, people, fences and signs. All plaques blank."
+  ],
+  "material_observations": [
+    "朱红门柱和门窗、蓝绿色额枋，屋面黄绿琉璃瓦与灰色暗部依实拍分布；浅灰台基，避免整体金色滤镜。"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 定州文庙 · 大成殿\nMATERIAL OBSERVATIONS: 朱红门柱和门窗、蓝绿色额枋，屋面黄绿琉璃瓦与灰色暗部依实拍分布；浅灰台基，避免整体金色滤镜。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+  "generation_history": [
+    {
+      "id": "hb_dzwenmiao",
+      "stage": "color",
+      "submitted_at": "2026-10-01T19:28:28.372721+00:00",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 定州文庙 · 大成殿\nMATERIAL OBSERVATIONS: 朱红门柱和门窗、蓝绿色额枋，屋面黄绿琉璃瓦与灰色暗部依实拍分布；浅灰台基，避免整体金色滤镜。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_dzwenmiao.png",
+        "assets/references/hb_dzwenmiao-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-10-01T19:29:26.550Z",
+      "saved_at": "2026-10-01T19:29:26.726515+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-48988dbe-38ea-4b19-b978-5dca2ea07d0b.png",
+      "output": "assets/colored/hb_dzwenmiao.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    },
+    {
+      "title": "国务院第七批国保名单",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_dzwenmiao",
+    "name": "定州文庙",
+    "short": "定州文庙",
+    "sub": "大成殿",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代现存主体",
+    "year": 1750,
+    "yearApprox": true,
+    "yearLabel": "清（约）",
+    "yearNote": "现存主体按国保清代断代登记，1750只是清代约略定位；不把文庙唐代初创或宋代重建纪年当作照片中大殿确切建造年。",
+    "place": "河北 · 定州",
+    "placeKey": "dingzhou",
+    "types": [
+      "hall"
+    ],
+    "lede": "五间大成殿在一整面屋顶下展开，红柱与蓝绿额枋衬出庙堂的秩序。定州文庙经历多次重建，图版以现存清代主体为准。",
+    "facts": [
+      "定州文庙以清代古建筑列入第七批国保。",
+      "文庙初创、重建与现存殿体年代分别记载，不将唐代始建年当作现存木构年代。",
+      "图版绘大成殿与直接台基，院中树木和人物不在范围内。"
+    ],
+    "caption": [
+      "定州文庙 · 大成殿",
+      "清代现存主体"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "定州文庙 · 大成殿",
+    "清代现存主体"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-48988dbe-38ea-4b19-b978-5dca2ea07d0b.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9823a4ce1abada7208bc9249323ffba2ac5e7da501307c74f330b0c4eb66b6c7",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "input_images": [
+    "assets/generated/hb_dzwenmiao.png",
+    "assets/references/hb_dzwenmiao-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "original_research": "assets/research/hb_dzwenmiao.json",
+  "output": "assets/colored/hb_dzwenmiao.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.306Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.306Z",
+    "sourceSha256": "9823a4ce1abada7208bc9249323ffba2ac5e7da501307c74f330b0c4eb66b6c7",
+    "inputSha256": "1e6a485974e7aa8e4bd8637a4b9c90806d204be34b0013c0ca486e973197bb98",
+    "avifSha256": "5a9e6292e1f1e035ce0fd6e0a01dcfb1be4ae4019ce591d0fcf729973f091c37",
+    "statement": "图版验收通过 提交"
+  }
+}

@@ -9,6 +9,7 @@ const read = p => fs.readFileSync(path.join(root, p), 'utf8');
 const json = p => JSON.parse(read(p));
 const hash = p => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, p))).digest('hex');
 const batch = json('assets/research/hebei-20260917-batch.json');
+const laterBatch = json('assets/research/hebei-national-20261002-batch.json');
 const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({SITES, PLACES})');
 const facets = require('../catalog.js');
 const protection = require('../protection.js');
@@ -73,7 +74,7 @@ test('Hebei dates and national protection refer to the selected surviving subjec
 test('Hebei additions are searchable, unvisited, and do not admit blocked candidates', () => {
   const library = create(catalog, { getItem: () => null, setItem() {} });
   const find = filters => library.all().filter(s => facets.matches(s, filters));
-  assert.deepEqual(Array.from(find({ province: '河北' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids].sort());
+  assert.deepEqual(Array.from(find({ province: '河北' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids, ...laterBatch.ids].sort());
   for (const id of batch.ids) assert(find({ province: '河北', status: 'unvisited' }).some(s => s.id === id));
   for (const [query, id] of [['天下第一关', 'hb_shanhaiguan'], ['伊犁庙', 'hb_anyuan'], ['赵县小石桥', 'hb_yongtong'], ['丰润', 'hb_tiangong']]) {
     assert(find({ query, province: '河北' }).some(s => s.id === id));

@@ -5011,6 +5011,126 @@ const PLATES = {
       "普救寺塔 · 莺莺塔现存全塔",
       "明嘉靖年间重建 · 十三层砖塔"
     ]
+  },
+  "hb_bailinta": {
+    "src": "assets/plates/hb_bailinta.png",
+    "alt": "柏林寺塔 · 七层八角砖塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "柏林寺塔 · 七层八角砖塔",
+      "元代 · 1330年建"
+    ]
+  },
+  "hb_zdfuwenmiao": {
+    "src": "assets/plates/hb_zdfuwenmiao.png",
+    "alt": "正定府文庙 · 戟门 · 线稿",
+    "width": 1535,
+    "height": 1025,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "正定府文庙 · 戟门",
+      "元代遗构"
+    ]
+  },
+  "hb_lingyan": {
+    "src": "assets/plates/hb_lingyan.png",
+    "alt": "蔚州灵岩寺 · 大雄宝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "蔚州灵岩寺 · 大雄宝殿",
+      "明正统六年重建"
+    ]
+  },
+  "hb_zhenwu": {
+    "src": "assets/plates/hb_zhenwu.png",
+    "alt": "蔚州真武庙 · 山门与石阶 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "蔚州真武庙 · 山门与石阶",
+      "明清建筑 · 山门具体年代未详"
+    ]
+  },
+  "hb_dzwenmiao": {
+    "src": "assets/plates/hb_dzwenmiao.png",
+    "alt": "定州文庙 · 大成殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "定州文庙 · 大成殿",
+      "清代现存主体"
+    ]
+  },
+  "hb_xumifushou": {
+    "src": "assets/plates/hb_xumifushou.png",
+    "alt": "须弥福寿之庙 · 妙高庄严殿金顶与大红台上部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "须弥福寿之庙 · 妙高庄严殿金顶与大红台上部",
+      "清乾隆四十五年"
+    ]
+  },
+  "hb_changping": {
+    "src": "assets/plates/hb_changping.png",
+    "alt": "蔚州常平仓 · 仓神庙与相连戏楼 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "蔚州常平仓 · 仓神庙与相连戏楼",
+      "明代仓制 · 现存庙台具体年代未详"
+    ]
+  },
+  "hb_daci": {
+    "src": "assets/plates/hb_daci.png",
+    "alt": "大慈阁 · 阁体与石台阶 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "大慈阁 · 阁体与石台阶",
+      "清乾隆间重建"
+    ]
+  },
+  "hb_puren": {
+    "src": "assets/plates/hb_puren.png",
+    "alt": "溥仁寺 · 主殿山花与侧面檐下局部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "溥仁寺 · 主殿山花与侧面檐下局部",
+      "清康熙五十二年创建"
+    ]
+  },
+  "hb_xingwen": {
+    "src": "assets/plates/hb_xingwen.png",
+    "alt": "涞源兴文塔 · 五层八角砖塔塔身与塔刹 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "涞源兴文塔 · 五层八角砖塔塔身与塔刹",
+      "辽代形制 · 后世修缮"
+    ]
   }
 };
 

@@ -9044,6 +9044,212 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "hb_bailinta": {
+    "src": "assets/colored-transparent-avif/hb_bailinta.avif",
+    "originalSrc": "assets/colored/hb_bailinta.png",
+    "transparentSrc": "assets/colored-transparent/hb_bailinta.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "柏林寺塔 · 七层八角砖塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hb_bailinta.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:BailinTemple2.jpg",
+        "author": "Fanghong",
+        "license": "CC BY 2.5",
+        "date": "2007-04-08"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+        "author": "FoxyGrace",
+        "license": "CC BY-SA 3.0",
+        "date": "2011-10-05"
+      }
+    ]
+  },
+  "hb_zdfuwenmiao": {
+    "src": "assets/colored-transparent-avif/hb_zdfuwenmiao.avif",
+    "originalSrc": "assets/colored/hb_zdfuwenmiao.png",
+    "transparentSrc": "assets/colored-transparent/hb_zdfuwenmiao.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "正定府文庙 · 戟门 · 设色图",
+    "width": 1535,
+    "height": 1025,
+    "tint": false,
+    "record": "assets/color-research/hb_zdfuwenmiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%AD%A3%E5%AE%9A%E5%BA%9C%E6%96%87%E5%BA%99%2C_2020-09-06.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "date": "2020-09-06"
+      }
+    ]
+  },
+  "hb_lingyan": {
+    "src": "assets/colored-transparent-avif/hb_lingyan.avif",
+    "originalSrc": "assets/colored/hb_lingyan.png",
+    "transparentSrc": "assets/colored-transparent/hb_lingyan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "蔚州灵岩寺 · 大雄宝殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hb_lingyan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+        "author": "HaziiDozen",
+        "license": "CC BY-SA 4.0",
+        "date": "2024-08-01"
+      }
+    ]
+  },
+  "hb_zhenwu": {
+    "src": "assets/colored-transparent-avif/hb_zhenwu.avif",
+    "originalSrc": "assets/colored/hb_zhenwu.png",
+    "transparentSrc": "assets/colored-transparent/hb_zhenwu.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "蔚州真武庙 · 山门与石阶 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hb_zhenwu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%9C%9F%E6%AD%A6%E5%BA%99.jpg",
+        "author": "HaziiDozen",
+        "license": "CC BY-SA 4.0",
+        "date": "2024-08-01"
+      }
+    ]
+  },
+  "hb_dzwenmiao": {
+    "src": "assets/colored-transparent-avif/hb_dzwenmiao.avif",
+    "originalSrc": "assets/colored/hb_dzwenmiao.png",
+    "transparentSrc": "assets/colored-transparent/hb_dzwenmiao.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "定州文庙 · 大成殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hb_dzwenmiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Dingzhou_Confucian_Temple_3.jpg",
+        "author": "Zeus1234",
+        "license": "CC BY-SA 3.0",
+        "date": "2009-04-05（来源页标注）"
+      }
+    ]
+  },
+  "hb_xumifushou": {
+    "src": "assets/colored-transparent-avif/hb_xumifushou.avif",
+    "originalSrc": "assets/colored/hb_xumifushou.png",
+    "transparentSrc": "assets/colored-transparent/hb_xumifushou.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "须弥福寿之庙 · 妙高庄严殿金顶与大红台上部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hb_xumifushou.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Xumifushouzhimiao.jpg",
+        "author": "Naplee12 (WT-shared)",
+        "license": "CC BY-SA 3.0",
+        "date": "2009-07-09"
+      }
+    ]
+  },
+  "hb_changping": {
+    "src": "assets/colored-transparent-avif/hb_changping.avif",
+    "originalSrc": "assets/colored/hb_changping.png",
+    "transparentSrc": "assets/colored-transparent/hb_changping.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "蔚州常平仓 · 仓神庙与相连戏楼 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hb_changping.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E5%B8%B8%E5%B9%B3%E4%BB%93%E7%9A%84%E4%BB%93%E7%A5%9E%E5%BA%99%E5%92%8C%E6%88%8F%E6%A5%BC.jpg",
+        "author": "HaziiDozen",
+        "license": "CC BY-SA 4.0",
+        "date": "2024-08-01"
+      }
+    ]
+  },
+  "hb_daci": {
+    "src": "assets/colored-transparent-avif/hb_daci.avif",
+    "originalSrc": "assets/colored/hb_daci.png",
+    "transparentSrc": "assets/colored-transparent/hb_daci.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "大慈阁 · 阁体与石台阶 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hb_daci.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%85%88%E9%98%81_-_2025-10-25_01.jpg",
+        "author": "瑞丽江的河水",
+        "license": "CC BY-SA 4.0",
+        "date": "2025-10-25"
+      }
+    ]
+  },
+  "hb_puren": {
+    "src": "assets/colored-transparent-avif/hb_puren.avif",
+    "originalSrc": "assets/colored/hb_puren.png",
+    "transparentSrc": "assets/colored-transparent/hb_puren.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "溥仁寺 · 主殿山花与侧面檐下局部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hb_puren.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E8%A1%8C%E6%91%84%E6%A2%93%E5%9C%B0_www.hiroko.cn_20130920_102222.jpg",
+        "author": "梓地",
+        "license": "CC BY-SA 3.0",
+        "date": "2013-09-20"
+      }
+    ]
+  },
+  "hb_xingwen": {
+    "src": "assets/colored-transparent-avif/hb_xingwen.avif",
+    "originalSrc": "assets/colored/hb_xingwen.png",
+    "transparentSrc": "assets/colored-transparent/hb_xingwen.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "涞源兴文塔 · 五层八角砖塔塔身与塔刹 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hb_xingwen.json",
+    "references": [
+      {
+        "page": "https://k.sina.cn/article_7176811671_1abc5749700100pu1k.html",
+        "author": "未署名；商业新讯转载，页面注明图片来自网络",
+        "license": "未知，未作自由许可声明",
+        "date": "2020-09-03（转载日期）"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

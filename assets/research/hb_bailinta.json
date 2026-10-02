@@ -1,0 +1,181 @@
+{
+  "id": "hb_bailinta",
+  "subject": "柏林寺塔 · 七层八角砖塔",
+  "name": "柏林寺塔",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:BailinTemple2.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/BailinTemple2.jpg",
+  "author": "Fanghong",
+  "license": "CC BY 2.5",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:BailinTemple2.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/BailinTemple2.jpg",
+      "author": "Fanghong",
+      "license": "CC BY 2.5",
+      "date": "2007-04-08",
+      "file": "assets/references/hb_bailinta-photo.jpg",
+      "sha256": "b7d33332a69dc063860c821d87f630b4aae2b43b7ab7bbcc8c0e231e7b89b561",
+      "source_page": "https://commons.wikimedia.org/wiki/File:BailinTemple2.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+      "file": "assets/references/hb_bailinta_alt-photo.jpg",
+      "sha256": "007d70039176bb84250a633742a617bd68274f3ae2a09abef24a51f818bb51a0",
+      "author": "FoxyGrace",
+      "license": "CC BY-SA 3.0",
+      "date": "2011-10-05",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:BailinTemple2.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/BailinTemple2.jpg",
+      "author": "Fanghong",
+      "license": "CC BY 2.5",
+      "date": "2007-04-08",
+      "file": "assets/references/hb_bailinta-photo.jpg",
+      "sha256": "b7d33332a69dc063860c821d87f630b4aae2b43b7ab7bbcc8c0e231e7b89b561",
+      "source_page": "https://commons.wikimedia.org/wiki/File:BailinTemple2.jpg",
+      "license_url": "https://creativecommons.org/licenses/by/2.5/"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+      "file": "assets/references/hb_bailinta_alt-photo.jpg",
+      "sha256": "007d70039176bb84250a633742a617bd68274f3ae2a09abef24a51f818bb51a0",
+      "author": "FoxyGrace",
+      "license": "CC BY-SA 3.0",
+      "date": "2011-10-05",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%9F%8F%E6%9E%97%E7%A6%85%E5%AF%BA%E8%88%8D%E5%88%A9%E5%A1%94_-_panoramio.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为七层八角砖塔；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Portrait 1024x1536. The octagonal SEVEN-storey Bailin Temple pagoda, complete iron finial, seven distinct projecting eave levels and its tall lotus/Sumeru brick base. Use both photos together; first is upper tower, second shows lower platform. Preserve taper and dense-eave proportions, not a generic wooden tower. Remove trees, people, boundary fences and neighboring halls. Only the tower and immediate stone plinth."
+  ],
+  "material_observations": [
+    "灰褐砖塔，檐缘灰瓦，浅灰石台；细部为砖雕，塔刹深灰铁色，不作木塔或金塔。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 柏林寺塔 · 七层八角砖塔\nPortrait 1024x1536. The octagonal SEVEN-storey Bailin Temple pagoda, complete iron finial, seven distinct projecting eave levels and its tall lotus/Sumeru brick base. Use both photos together; first is upper tower, second shows lower platform. Preserve taper and dense-eave proportions, not a generic wooden tower. Remove trees, people, boundary fences and neighboring halls. Only the tower and immediate stone plinth.",
+  "generation_history": [
+    {
+      "id": "hb_bailinta",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 柏林寺塔 · 七层八角砖塔\nPortrait 1024x1536. The octagonal SEVEN-storey Bailin Temple pagoda, complete iron finial, seven distinct projecting eave levels and its tall lotus/Sumeru brick base. Use both photos together; first is upper tower, second shows lower platform. Preserve taper and dense-eave proportions, not a generic wooden tower. Remove trees, people, boundary fences and neighboring halls. Only the tower and immediate stone plinth.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_bailinta-photo.jpg",
+        "assets/references/hb_bailinta_alt-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:23:54.281Z",
+      "saved_at": "2026-10-01T19:24:50.696727+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-44e457ec-f1f5-4183-a6dd-e5277a2959e9.png",
+      "output": "assets/generated/hb_bailinta.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_bailinta",
+    "name": "柏林寺塔",
+    "short": "柏林寺塔",
+    "sub": "七层八角砖塔",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代 · 1330年建",
+    "year": 1330,
+    "yearApprox": false,
+    "yearLabel": "1330",
+    "yearNote": "1330对应现存元代柏林寺塔建造；不以寺院相传始建年代定位。",
+    "place": "河北 · 赵县",
+    "placeKey": "hb_赵县",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "密檐逐层收拢，仰莲与须弥座将高塔托起。柏林寺塔以砖雕模拟木构，在赵县形成一座纤长而密集的轮廓。",
+    "facts": [
+      "塔建于1330年，为八角七级密檐式砖塔。",
+      "塔基由砖砌须弥座、仿木构平座与仰莲组成，顶部为铁塔刹。",
+      "图版仅绘砖塔及直接承托的台基，不包含柏林寺其他殿宇。"
+    ],
+    "caption": [
+      "柏林寺塔 · 七层八角砖塔",
+      "元代 · 1330年建"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  "caption": [
+    "柏林寺塔 · 七层八角砖塔",
+    "元代 · 1330年建"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-44e457ec-f1f5-4183-a6dd-e5277a2959e9.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f047e1110dd8237176de61252da4db93e5710184cc7cea9091b8e99699cce2ea",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_bailinta-photo.jpg",
+    "assets/references/hb_bailinta_alt-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_bailinta.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.160Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.160Z",
+    "sourceSha256": "f047e1110dd8237176de61252da4db93e5710184cc7cea9091b8e99699cce2ea",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "26cb853c098c97d747d0b502367acdc2869019bef50322cc2823e0dadcf9c9d5"
+  }
+}

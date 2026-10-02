@@ -1,0 +1,156 @@
+{
+  "id": "hb_lingyan",
+  "subject": "蔚州灵岩寺 · 大雄宝殿",
+  "name": "蔚州灵岩寺",
+  "status": "approved_user",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "file": "assets/references/hb_lingyan-photo.jpg",
+      "sha256": "63406d36e48cdeedb722c1d301881a566c67726df6ae4a7fa0747a8f8e1800b8",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "file": "assets/references/hb_lingyan-photo.jpg",
+      "sha256": "63406d36e48cdeedb722c1d301881a566c67726df6ae4a7fa0747a8f8e1800b8",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为大雄宝殿；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. The complete FIVE-bay main hall (Daxiong Hall) of Yuzhou Lingyan Temple. Single-eave HIP roof (wudian), not hip-and-gable; wide low grey roof, weathered timber lattice doors and low stone platform with centered steps. Preserve observed five-bay width and roof corners. Remove incense burner, trees, modern clutter and neighboring halls; blank any plaques."
+  ],
+  "material_observations": [
+    "灰褐瓦屋面、暗褐木梁柱与格扇、灰砖墙及浅灰石台；保留旧木的深浅，不统一涂朱红。"
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 蔚州灵岩寺 · 大雄宝殿\nLandscape 1536x1024. The complete FIVE-bay main hall (Daxiong Hall) of Yuzhou Lingyan Temple. Single-eave HIP roof (wudian), not hip-and-gable; wide low grey roof, weathered timber lattice doors and low stone platform with centered steps. Preserve observed five-bay width and roof corners. Remove incense burner, trees, modern clutter and neighboring halls; blank any plaques.",
+  "generation_history": [
+    {
+      "id": "hb_lingyan",
+      "stage": "line",
+      "submitted_at": "2026-10-01T19:23:06.212610+00:00",
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: 蔚州灵岩寺 · 大雄宝殿\nLandscape 1536x1024. The complete FIVE-bay main hall (Daxiong Hall) of Yuzhou Lingyan Temple. Single-eave HIP roof (wudian), not hip-and-gable; wide low grey roof, weathered timber lattice doors and low stone platform with centered steps. Preserve observed five-bay width and roof corners. Remove incense burner, trees, modern clutter and neighboring halls; blank any plaques.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_lingyan-photo.jpg"
+      ],
+      "received_at": "2026-10-01T19:26:36.754Z",
+      "saved_at": "2026-10-01T19:28:01.068083+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-879169e2-46f1-4100-9cc2-90854ad6562d.png",
+      "output": "assets/generated/hb_lingyan.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_lingyan",
+    "name": "蔚州灵岩寺",
+    "short": "蔚州灵岩寺",
+    "sub": "大雄宝殿",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明正统六年重建",
+    "year": 1441,
+    "yearApprox": false,
+    "yearLabel": "1441",
+    "yearNote": "1441为明正统六年寺院重建纪年，所绘大殿为现存明代主体；不是以辽代初创记载作为现存殿体年代。",
+    "place": "河北 · 蔚县",
+    "placeKey": "yuxian",
+    "types": [
+      "hall"
+    ],
+    "lede": "庑殿屋顶平稳地覆住五间大殿，旧木格扇在灰瓦下连续展开。灵岩寺这座明代大殿保留了蔚州城内开阔而沉静的殿堂尺度。",
+    "facts": [
+      "灵岩寺在明正统六年（1441）重建，现存大殿属于明代主体。",
+      "大殿面阔五间、进深四间，单檐庑殿顶。",
+      "图版仅绘大雄宝殿和台阶，不将寺内天王殿合绘。"
+    ],
+    "caption": [
+      "蔚州灵岩寺 · 大雄宝殿",
+      "明正统六年重建"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "蔚州灵岩寺 · 大雄宝殿",
+    "明正统六年重建"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-879169e2-46f1-4100-9cc2-90854ad6562d.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f99668e79024074cc9d1b42df1c8f700d27e79286cdb425e347aa4408924bd17",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_lingyan-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "generated_file": "assets/generated/hb_lingyan.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.169Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.169Z",
+    "sourceSha256": "f99668e79024074cc9d1b42df1c8f700d27e79286cdb425e347aa4408924bd17",
+    "statement": "图版验收通过 提交",
+    "outputSha256": "9a0a358bc7e7c61db9d8692773ffb74afcdd4cefef14b38d4f78a63113451e6c"
+  }
+}

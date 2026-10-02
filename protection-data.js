@@ -4363,6 +4363,216 @@
         "locator": "第8批附件 · 古建筑 · 山西省 · 普救寺塔",
         "checkedAt": "2026-10-02"
       }
+    ],
+    "hb_bailinta": [
+      {
+        "batch": 6,
+        "unitName": "柏林寺塔",
+        "relation": "unit",
+        "scope": "七层八角砖塔",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·柏林寺塔",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_zdfuwenmiao": [
+      {
+        "batch": 6,
+        "unitName": "正定府文庙",
+        "relation": "part",
+        "scope": "戟门",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·正定府文庙",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_lingyan": [
+      {
+        "batch": 6,
+        "unitName": "蔚州灵岩寺",
+        "relation": "part",
+        "scope": "大雄宝殿",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·蔚州灵岩寺",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_zhenwu": [
+      {
+        "batch": 6,
+        "unitName": "真武庙",
+        "relation": "part",
+        "scope": "山门与石阶",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·真武庙",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_dzwenmiao": [
+      {
+        "batch": 7,
+        "unitName": "定州文庙",
+        "relation": "part",
+        "scope": "大成殿",
+        "source": "batch7",
+        "locator": "第7批名单·河北省·定州文庙",
+        "scopeSources": [
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          },
+          {
+            "title": "国务院第七批国保名单",
+            "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_xumifushou": [
+      {
+        "batch": 1,
+        "unitName": "须弥福寿之庙",
+        "relation": "part",
+        "scope": "妙高庄严殿金顶与大红台上部",
+        "source": "batch1",
+        "locator": "第1批名单·河北省·须弥福寿之庙",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_changping": [
+      {
+        "batch": 6,
+        "unitName": "常平仓",
+        "relation": "part",
+        "scope": "仓神庙与相连戏楼",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·常平仓",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_daci": [
+      {
+        "batch": 6,
+        "unitName": "大慈阁",
+        "relation": "part",
+        "scope": "阁体与石台阶",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·大慈阁",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_puren": [
+      {
+        "batch": 5,
+        "unitName": "溥仁寺",
+        "relation": "part",
+        "scope": "主殿山花与侧面檐下局部",
+        "source": "batch5",
+        "locator": "第5批名单·河北省·溥仁寺",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
+    ],
+    "hb_xingwen": [
+      {
+        "batch": 6,
+        "unitName": "兴文塔",
+        "relation": "unit",
+        "scope": "五层八角砖塔塔身与塔刹",
+        "source": "batch6",
+        "locator": "第6批名单·河北省·兴文塔",
+        "scopeSources": [
+          {
+            "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+          },
+          {
+            "title": "河北省文物局全国重点文物保护单位清单",
+            "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+          }
+        ],
+        "checkedAt": "2026-10-02"
+      }
     ]
   },
   "untagged": {

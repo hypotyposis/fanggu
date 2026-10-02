@@ -1,0 +1,161 @@
+{
+  "id": "hb_lingyan",
+  "subject": "蔚州灵岩寺 · 大雄宝殿",
+  "name": "蔚州灵岩寺",
+  "status": "complete",
+  "quality_mode": "prototype",
+  "visual_review_status": "approved_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+  "author": "HaziiDozen",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "file": "assets/references/hb_lingyan-photo.jpg",
+      "sha256": "63406d36e48cdeedb722c1d301881a566c67726df6ae4a7fa0747a8f8e1800b8",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "file": "assets/references/hb_lingyan-photo.jpg",
+      "sha256": "63406d36e48cdeedb722c1d301881a566c67726df6ae4a7fa0747a8f8e1800b8",
+      "author": "HaziiDozen",
+      "license": "CC BY-SA 4.0",
+      "date": "2024-08-01",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%94%9A%E5%B7%9E%E7%81%B5%E5%B2%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF.jpg",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "inputs_viewed": true,
+  "source_note": "参照实拍进行艺术简化。所绘范围为大雄宝殿；原型待用户验收，不作实测或文保复原声明。",
+  "structure_checkpoints": [
+    "Landscape 1536x1024. The complete FIVE-bay main hall (Daxiong Hall) of Yuzhou Lingyan Temple. Single-eave HIP roof (wudian), not hip-and-gable; wide low grey roof, weathered timber lattice doors and low stone platform with centered steps. Preserve observed five-bay width and roof corners. Remove incense burner, trees, modern clutter and neighboring halls; blank any plaques."
+  ],
+  "material_observations": [
+    "灰褐瓦屋面、暗褐木梁柱与格扇、灰砖墙及浅灰石台；保留旧木的深浅，不统一涂朱红。"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 蔚州灵岩寺 · 大雄宝殿\nMATERIAL OBSERVATIONS: 灰褐瓦屋面、暗褐木梁柱与格扇、灰砖墙及浅灰石台；保留旧木的深浅，不统一涂朱红。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+  "generation_history": [
+    {
+      "id": "hb_lingyan",
+      "stage": "color",
+      "submitted_at": "2026-10-01T19:28:01.410983+00:00",
+      "status": "saved",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 蔚州灵岩寺 · 大雄宝殿\nMATERIAL OBSERVATIONS: 灰褐瓦屋面、暗褐木梁柱与格扇、灰砖墙及浅灰石台；保留旧木的深浅，不统一涂朱红。\nColor ONLY the saved drawing. Preserve its exact geometry and scope on pure white #FFFFFF.",
+      "input_images": [
+        "assets/generated/hb_lingyan.png",
+        "assets/references/hb_lingyan-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "received_at": "2026-10-01T19:29:52.772Z",
+      "saved_at": "2026-10-01T19:29:52.973578+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-68d43e82-57cf-4ce6-b90d-9cb6307a493b.png",
+      "output": "assets/colored/hb_lingyan.png"
+    }
+  ],
+  "generation_tool": "built-in image_gen",
+  "generator": "built-in image_gen",
+  "historical_sources": [
+    {
+      "title": "河北省文物局第一至六批全国重点文物保护单位简介",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml"
+    },
+    {
+      "title": "河北省文物局全国重点文物保护单位清单",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257946.shtml"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hb_lingyan",
+    "name": "蔚州灵岩寺",
+    "short": "蔚州灵岩寺",
+    "sub": "大雄宝殿",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明正统六年重建",
+    "year": 1441,
+    "yearApprox": false,
+    "yearLabel": "1441",
+    "yearNote": "1441为明正统六年寺院重建纪年，所绘大殿为现存明代主体；不是以辽代初创记载作为现存殿体年代。",
+    "place": "河北 · 蔚县",
+    "placeKey": "yuxian",
+    "types": [
+      "hall"
+    ],
+    "lede": "庑殿屋顶平稳地覆住五间大殿，旧木格扇在灰瓦下连续展开。灵岩寺这座明代大殿保留了蔚州城内开阔而沉静的殿堂尺度。",
+    "facts": [
+      "灵岩寺在明正统六年（1441）重建，现存大殿属于明代主体。",
+      "大殿面阔五间、进深四间，单檐庑殿顶。",
+      "图版仅绘大雄宝殿和台阶，不将寺内天王殿合绘。"
+    ],
+    "caption": [
+      "蔚州灵岩寺 · 大雄宝殿",
+      "明正统六年重建"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  "caption": [
+    "蔚州灵岩寺 · 大雄宝殿",
+    "明正统六年重建"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-a5dc-7711-a454-9071ada949db/exec-68d43e82-57cf-4ce6-b90d-9cb6307a493b.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d0cf133417835507612a3853d26632cc900c95ba7c2a414b71babd28a1d97378",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "input_images": [
+    "assets/generated/hb_lingyan.png",
+    "assets/references/hb_lingyan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "original_research": "assets/research/hb_lingyan.json",
+  "output": "assets/colored/hb_lingyan.png",
+  "preview_check": {
+    "observed_at": "2026-10-01T19:34:32.760795+00:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；依原型规则不作视觉通过/淘汰决定。",
+    "verdict": "approved_user",
+    "user_reviewed_at": "2026-10-02T04:20:01.298Z"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T04:20:01.298Z",
+    "sourceSha256": "d0cf133417835507612a3853d26632cc900c95ba7c2a414b71babd28a1d97378",
+    "inputSha256": "544365bedc7b6fd396fcae6c78322e6263e084979fd99e2075b389187a82bb5c",
+    "avifSha256": "496af2c00633a43182d0d87ed68dfc47443a4215b72d978e71f0260b19c82379",
+    "statement": "图版验收通过 提交"
+  }
+}
