@@ -1,0 +1,112 @@
+{
+  "id": "hn_yuefei",
+  "subject": "汤阴岳飞庙 · 二殿正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20250831_Yue_Fei_Temple_in_Tangyin_06.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/20250831_Yue_Fei_Temple_in_Tangyin_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_yuefei-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 汤阴岳飞庙 · 二殿正面. Five-bay single-eaved hip-and-gable hall, central entrance and lattice window panels; keep the roof silhouette and low terrace. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_yuefei.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "汤阴岳飞庙 · 二殿正面",
+    "明清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_yuefei",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250831_Yue_Fei_Temple_in_Tangyin_06.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/20250831_Yue_Fei_Temple_in_Tangyin_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_yuefei-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Five-bay single-eaved hip-and-gable hall, central entrance and lattice window panels; keep the roof silhouette and low terrace. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Grey-green tiles, faded vermilion doors and columns, light grey stone paving."
+  ],
+  "generated_at": "2026-10-01T19:21:41.868439+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-78fb0c1c-0fc1-4b10-8cfa-f8ec7b484db4.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6bba376cee2449a29ec8bfadb076aa4c0121a83d915eab8c80761f2927ac3004",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.868439+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 汤阴岳飞庙 · 二殿正面. Five-bay single-eaved hip-and-gable hall, central entrance and lattice window panels; keep the roof silhouette and low terrace. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_yuefei-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_yuefei.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-78fb0c1c-0fc1-4b10-8cfa-f8ec7b484db4.png",
+      "sourceSha256": "6bba376cee2449a29ec8bfadb076aa4c0121a83d915eab8c80761f2927ac3004",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_yuefei-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "汤阴岳飞庙明清建筑群",
+      "url": "https://www.tangyin.gov.cn/2024/04-29/3473524.html",
+      "publisher": "汤阴县人民政府",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_yuefei",
+    "name": "汤阴岳飞庙",
+    "short": "汤阴岳飞庙",
+    "sub": "二殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清建筑与后世修缮；二殿确切营建年未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "明清建筑与后世修缮；二殿确切营建年未详",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_tangyin",
+    "place": "河南 · 汤阴",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "五间殿宇排开红色门窗，青灰屋面舒展。汤阴岳飞庙以明清建筑群延续对岳飞的纪念。",
+    "facts": [
+      "汤阴岳飞庙是第五批国保，现存建筑群历经明清营建与修缮。",
+      "图版选实拍所示二殿正面，保留五间面阔、单层屋檐与门窗分布。",
+      "二殿确切营建年尚未确认，年表按明清现存主体约略定位，未采用岳飞生活年代。"
+    ],
+    "caption": [
+      "汤阴岳飞庙 · 二殿正面",
+      "明清 · 现存主体"
+    ]
+  }
+}

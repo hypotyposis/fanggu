@@ -1,0 +1,112 @@
+{
+  "id": "kr_bulguksa_dabotap",
+  "name": "佛国寺多宝塔",
+  "subject": "多宝塔完整石塔与四向台阶",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dabotap_Pagoda_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_bulguksa_dabotap-photo.jpg",
+      "sha256": "f9d64211457c221462d11c4cdab1cf117dd4789df1447b11ecc7e3ea0dfdd591",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-06",
+      "description": "Dabotap Pagoda at Bulguksa Temple, South Korea"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dabotap_Pagoda_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_bulguksa_dabotap-photo.jpg",
+      "sha256": "f9d64211457c221462d11c4cdab1cf117dd4789df1447b11ecc7e3ea0dfdd591",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-06",
+      "description": "Dabotap Pagoda at Bulguksa Temple, South Korea"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://english.cha.go.kr/chaen/search/selectGeneralSearchDetail.do?ccebAsno=00200000&ccebKdcd=11&mn=EN_02_02&pageIndex=2&sCcebCtcd=37&sCcebKdcd=11",
+      "title": "佛国寺多宝塔形制与年代",
+      "note": "官方断代为统一新罗8世纪；751年为佛国寺兴建相关纪年，塔的排序年约略取751。"
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_reference",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. ONLY the entire Dabotap granite pagoda: square base with stairways on four sides, open square stone-pillared lower canopy, balustraded octagonal upper stages, octagonal stone canopy and full stacked finial. Preserve the ONE surviving stone lion shown at lower stage; do not invent missing lions. Do not turn it into a conventional wooden pagoda. Remove modern steel fence, people, trees, neighboring halls."
+  ],
+  "material_observations": [
+    "浅灰米色花岗岩，风化面灰褐，石阶少量暗灰斑；不是金色或木结构。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；官方断代为统一新罗8世纪；751年为佛国寺兴建相关纪年，塔的排序年约略取751。 原型待用户人眼验收。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 多宝塔完整石塔与四向台阶\nPRESERVE: Portrait 1024x1536. ONLY the entire Dabotap granite pagoda: square base with stairways on four sides, open square stone-pillared lower canopy, balustraded octagonal upper stages, octagonal stone canopy and full stacked finial. Preserve the ONE surviving stone lion shown at lower stage; do not invent missing lions. Do not turn it into a conventional wooden pagoda. Remove modern steel fence, people, trees, neighboring halls.\nOBSERVED MATERIAL COLORS: 浅灰米色花岗岩，风化面灰褐，石阶少量暗灰斑；不是金色或木结构。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "佛国寺多宝塔 · 多宝塔完整石塔与四向台阶",
+    "统一新罗 · 约略定位"
+  ],
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T04:16:41.091Z",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 多宝塔完整石塔与四向台阶\nPRESERVE: Portrait 1024x1536. ONLY the entire Dabotap granite pagoda: square base with stairways on four sides, open square stone-pillared lower canopy, balustraded octagonal upper stages, octagonal stone canopy and full stacked finial. Preserve the ONE surviving stone lion shown at lower stage; do not invent missing lions. Do not turn it into a conventional wooden pagoda. Remove modern steel fence, people, trees, neighboring halls.\nOBSERVED MATERIAL COLORS: 浅灰米色花岗岩，风化面灰褐，石阶少量暗灰斑；不是金色或木结构。",
+      "input_images": [
+        "assets/generated/kr_bulguksa_dabotap.png",
+        "assets/references/kr_bulguksa_dabotap-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:20:17.998929+08:00",
+      "saved_at": "2026-10-02T12:20:17.998929+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-06ca436b-974b-4fb5-a759-ce1d2682d978.png",
+      "saved_file": "assets/colored/kr_bulguksa_dabotap.png",
+      "tool_output_id": "exec-06ca436b-974b-4fb5-a759-ce1d2682d978"
+    }
+  ],
+  "input_images": [
+    "assets/generated/kr_bulguksa_dabotap.png",
+    "assets/references/kr_bulguksa_dabotap-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/kr_bulguksa_dabotap.png",
+  "original_research": "assets/research/kr_bulguksa_dabotap.json",
+  "generator": "built-in image_gen.imagegen",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-06ca436b-974b-4fb5-a759-ce1d2682d978.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1ff756aa3d272e9e1ac3746681964ca41ead54c7da8c838c5fd6412652b77dec",
+    "seeds": [],
+    "seed_note": "按实际查看的本张原件选取门楼柱间或桥栏下透空；实体浅色石材与门窗暗部不作为种子。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

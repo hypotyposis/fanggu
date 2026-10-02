@@ -1,0 +1,147 @@
+{
+  "id": "kr_buseoksa_muryangsujeon",
+  "name": "浮石寺无量寿殿",
+  "subject": "单座无量寿殿与台阶",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
+      "file": "assets/references/kr_buseoksa_muryangsujeon-photo-side-selected.jpg",
+      "sha256": "0e8715db680826604607d9dd053afed29d4d896e322c311d280202850bd48e79",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-09",
+      "description": "Muryangsujeon Hall at Buseoksa Temple, South Korea"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Muryangsujeon_at_Buseoksa_01.jpg/1920px-Muryangsujeon_at_Buseoksa_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Muryangsujeon_at_Buseoksa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_buseoksa_muryangsujeon-photo.jpg",
+      "sha256": "8c1231a6278489458bbb61f6bf3474e02191e0f49ebbbfa3d9533e57a0b24b39",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-09",
+      "description": "Muryangsujeon Hall at Buseoksa Temple, South Korea"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
+      "file": "assets/references/kr_buseoksa_muryangsujeon-photo-side-selected.jpg",
+      "sha256": "0e8715db680826604607d9dd053afed29d4d896e322c311d280202850bd48e79",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-09",
+      "description": "Muryangsujeon Hall at Buseoksa Temple, South Korea"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Muryangsujeon_at_Buseoksa_01.jpg/1920px-Muryangsujeon_at_Buseoksa_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Muryangsujeon_at_Buseoksa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_buseoksa_muryangsujeon-photo.jpg",
+      "sha256": "8c1231a6278489458bbb61f6bf3474e02191e0f49ebbbfa3d9533e57a0b24b39",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-09",
+      "description": "Muryangsujeon Hall at Buseoksa Temple, South Korea"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://www.aks.ac.kr/ikorea/upload/intl/korean/UserFiles/UKS6_Korea_Religious_Places_eng.pdf",
+      "title": "浮石寺无量寿殿形制与年代",
+      "note": "现存无量寿殿于1376年重建；676年为寺院创建。"
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_reference",
+    "present_material_reference",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Muryangsujeon hall ONLY: FIVE front bays, THREE side bays, one hip-and-gable roof, broad curved eaves, natural timber columns, lattice doors, small steps and stone platform. Image 2 shows front bays and side; Image 3 shows complete roof from the side. Preserve all roof extremities with margins. Remove lanterns, people, trees and other buildings."
+  ],
+  "material_observations": [
+    "灰瓦，棕褐木柱与格扇，檐下黄赭墙面，山墙浅灰白，灰褐石台。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；现存无量寿殿于1376年重建；676年为寺院创建。 原型待用户人眼验收。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 单座无量寿殿与台阶\nPRESERVE: Landscape 1536x1024. Complete Muryangsujeon hall ONLY: FIVE front bays, THREE side bays, one hip-and-gable roof, broad curved eaves, natural timber columns, lattice doors, small steps and stone platform. Image 2 shows front bays and side; Image 3 shows complete roof from the side. Preserve all roof extremities with margins. Remove lanterns, people, trees and other buildings.\nOBSERVED MATERIAL COLORS: 灰瓦，棕褐木柱与格扇，檐下黄赭墙面，山墙浅灰白，灰褐石台。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "浮石寺无量寿殿 · 单座无量寿殿与台阶",
+    "高丽 · 1376年"
+  ],
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T04:16:40.998Z",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 单座无量寿殿与台阶\nPRESERVE: Landscape 1536x1024. Complete Muryangsujeon hall ONLY: FIVE front bays, THREE side bays, one hip-and-gable roof, broad curved eaves, natural timber columns, lattice doors, small steps and stone platform. Image 2 shows front bays and side; Image 3 shows complete roof from the side. Preserve all roof extremities with margins. Remove lanterns, people, trees and other buildings.\nOBSERVED MATERIAL COLORS: 灰瓦，棕褐木柱与格扇，檐下黄赭墙面，山墙浅灰白，灰褐石台。",
+      "input_images": [
+        "assets/generated/kr_buseoksa_muryangsujeon.png",
+        "assets/references/kr_buseoksa_muryangsujeon-photo-side-selected.jpg",
+        "assets/references/kr_buseoksa_muryangsujeon-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:19:13.784451+08:00",
+      "saved_at": "2026-10-02T12:19:13.784451+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-8b275b0c-d010-4194-a3f0-086abdafda97.png",
+      "saved_file": "assets/colored/kr_buseoksa_muryangsujeon.png",
+      "tool_output_id": "exec-8b275b0c-d010-4194-a3f0-086abdafda97"
+    }
+  ],
+  "input_images": [
+    "assets/generated/kr_buseoksa_muryangsujeon.png",
+    "assets/references/kr_buseoksa_muryangsujeon-photo-side-selected.jpg",
+    "assets/references/kr_buseoksa_muryangsujeon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/kr_buseoksa_muryangsujeon.png",
+  "original_research": "assets/research/kr_buseoksa_muryangsujeon.json",
+  "generator": "built-in image_gen.imagegen",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-8b275b0c-d010-4194-a3f0-086abdafda97.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "64a684121453e1e7fe918227241259e9ce6a374b568103d4b3a017069b9f590e",
+    "seeds": [
+      [
+        198,
+        650
+      ],
+      [
+        1381,
+        644
+      ]
+    ],
+    "seed_note": "从实看原件标记外廊开放柱间或门洞透空；保留浅色实体、门扇与拱内暗部。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  },
+  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。"
+}

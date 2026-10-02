@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 434,
+  "count": 464,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -9709,6 +9709,805 @@
       ],
       "output": "assets/colored/hb_xingwen.png",
       "record": "assets/color-research/hb_xingwen.json"
+    },
+    {
+      "id": "hn_yanqing",
+      "name": "延庆观",
+      "subject": "延庆观 · 玉皇阁现存主体",
+      "sub": "玉皇阁现存主体",
+      "place": "河南 · 开封",
+      "dyn": "yuan",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_yanqing.png",
+      "displayLine": "assets/plates/hn_yanqing.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hn_yanqing.json",
+      "candidateReferences": [
+        "assets/references/hn_yanqing-photo.jpg"
+      ],
+      "output": "assets/colored/hn_yanqing.png",
+      "record": "assets/color-research/hn_yanqing.json"
+    },
+    {
+      "id": "hn_yuefei",
+      "name": "汤阴岳飞庙",
+      "subject": "汤阴岳飞庙 · 二殿正面",
+      "sub": "二殿正面",
+      "place": "河南 · 汤阴",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_yuefei.png",
+      "displayLine": "assets/plates/hn_yuefei.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_yuefei.json",
+      "candidateReferences": [
+        "assets/references/hn_yuefei-photo.jpg"
+      ],
+      "output": "assets/colored/hn_yuefei.png",
+      "record": "assets/color-research/hn_yuefei.json"
+    },
+    {
+      "id": "hn_songyang",
+      "name": "嵩阳书院",
+      "subject": "嵩阳书院 · 清代大门正面",
+      "sub": "清代大门正面",
+      "place": "河南 · 登封",
+      "dyn": "ming",
+      "types": [
+        "gate",
+        "school"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_songyang.png",
+      "displayLine": "assets/plates/hn_songyang.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_songyang.json",
+      "candidateReferences": [
+        "assets/references/hn_songyang-photo.jpg"
+      ],
+      "output": "assets/colored/hn_songyang.png",
+      "record": "assets/color-research/hn_songyang.json"
+    },
+    {
+      "id": "hn_xiangguo",
+      "name": "大相国寺",
+      "subject": "大相国寺 · 大雄宝殿正面",
+      "sub": "大雄宝殿正面",
+      "place": "河南 · 开封",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_xiangguo.png",
+      "displayLine": "assets/plates/hn_xiangguo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_xiangguo.json",
+      "candidateReferences": [
+        "assets/references/hn_xiangguo-photo.jpg"
+      ],
+      "output": "assets/colored/hn_xiangguo.png",
+      "record": "assets/color-research/hn_xiangguo.json"
+    },
+    {
+      "id": "hn_zzchenghuang",
+      "name": "郑州城隍庙",
+      "subject": "郑州城隍庙 · 三间大殿正面",
+      "sub": "三间大殿正面",
+      "place": "河南 · 郑州",
+      "dyn": "ming",
+      "types": [
+        "hall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_zzchenghuang.png",
+      "displayLine": "assets/plates/hn_zzchenghuang.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_zzchenghuang.json",
+      "candidateReferences": [
+        "assets/references/hn_zzchenghuang-photo.jpg"
+      ],
+      "output": "assets/colored/hn_zzchenghuang.png",
+      "record": "assets/color-research/hn_zzchenghuang.json"
+    },
+    {
+      "id": "hn_jiawenmiao",
+      "name": "郏县文庙",
+      "subject": "郏县文庙 · 大成殿正面",
+      "sub": "大成殿正面",
+      "place": "河南 · 郏县",
+      "dyn": "ming",
+      "types": [
+        "hall",
+        "school"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_jiawenmiao.png",
+      "displayLine": "assets/plates/hn_jiawenmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_jiawenmiao.json",
+      "candidateReferences": [
+        "assets/references/hn_jiawenmiao-photo.jpg"
+      ],
+      "output": "assets/colored/hn_jiawenmiao.png",
+      "record": "assets/color-research/hn_jiawenmiao.json"
+    },
+    {
+      "id": "hn_jiahuiguan",
+      "name": "郏县山陕会馆",
+      "subject": "郏县山陕会馆 · 门楼与钟鼓楼组合",
+      "sub": "门楼与钟鼓楼组合",
+      "place": "河南 · 郏县",
+      "dyn": "ming",
+      "types": [
+        "gate",
+        "stage",
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_jiahuiguan.png",
+      "displayLine": "assets/plates/hn_jiahuiguan.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_jiahuiguan.json",
+      "candidateReferences": [
+        "assets/references/hn_jiahuiguan-photo.jpg"
+      ],
+      "output": "assets/colored/hn_jiahuiguan.png",
+      "record": "assets/color-research/hn_jiahuiguan.json"
+    },
+    {
+      "id": "hn_linfeng",
+      "name": "临沣寨",
+      "subject": "临沣寨 · 西门及相连红石寨墙",
+      "sub": "西门及相连红石寨墙",
+      "place": "河南 · 郏县",
+      "dyn": "ming",
+      "types": [
+        "gate",
+        "wall"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_linfeng.png",
+      "displayLine": "assets/plates/hn_linfeng.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_linfeng.json",
+      "candidateReferences": [
+        "assets/references/hn_linfeng-photo.jpg"
+      ],
+      "output": "assets/colored/hn_linfeng.png",
+      "record": "assets/color-research/hn_linfeng.json"
+    },
+    {
+      "id": "hn_gaoge",
+      "name": "高阁寺",
+      "subject": "高阁寺 · 阁楼及高台上部",
+      "sub": "阁楼及高台上部",
+      "place": "河南 · 安阳",
+      "dyn": "ming",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_gaoge.png",
+      "displayLine": "assets/plates/hn_gaoge.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hn_gaoge.json",
+      "candidateReferences": [
+        "assets/references/hn_gaoge-photo.jpg"
+      ],
+      "output": "assets/colored/hn_gaoge.png",
+      "record": "assets/color-research/hn_gaoge.json"
+    },
+    {
+      "id": "hn_wenzhige",
+      "name": "浚县文治阁",
+      "subject": "浚县文治阁 · 十字街钟鼓楼现存主体",
+      "sub": "十字街钟鼓楼现存主体",
+      "place": "河南 · 浚县",
+      "dyn": "ming",
+      "types": [
+        "pavilion",
+        "gate"
+      ],
+      "owner": "main",
+      "line": "assets/generated/hn_wenzhige.png",
+      "displayLine": "assets/plates/hn_wenzhige.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hn_wenzhige.json",
+      "candidateReferences": [
+        "assets/references/hn_wenzhige-photo.jpg"
+      ],
+      "output": "assets/colored/hn_wenzhige.png",
+      "record": "assets/color-research/hn_wenzhige.json"
+    },
+    {
+      "id": "kh_angkor_wat",
+      "name": "吴哥窟",
+      "subject": "中央五塔及紧邻台基回廊",
+      "sub": "中央五塔及紧邻台基回廊",
+      "place": "暹粒省 · 吴哥",
+      "dyn": "kh_angkor",
+      "types": [
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/kh_angkor_wat.png",
+      "displayLine": "assets/plates/kh_angkor_wat.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/kh_angkor_wat.json",
+      "candidateReferences": [
+        "assets/references/kh_angkor_wat-photo.jpg"
+      ],
+      "output": "assets/colored/kh_angkor_wat.png",
+      "record": "assets/color-research/kh_angkor_wat.json"
+    },
+    {
+      "id": "kh_bayon",
+      "name": "巴戎寺",
+      "subject": "中央面像塔群与直接支承台基",
+      "sub": "中央面像塔群与直接支承台基",
+      "place": "暹粒省 · 吴哥通",
+      "dyn": "kh_angkor",
+      "types": [
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/kh_bayon.png",
+      "displayLine": "assets/plates/kh_bayon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/kh_bayon.json",
+      "candidateReferences": [
+        "assets/references/kh_bayon-photo.jpg"
+      ],
+      "output": "assets/colored/kh_bayon.png",
+      "record": "assets/color-research/kh_bayon.json"
+    },
+    {
+      "id": "kh_banteay_srei",
+      "name": "女王宫",
+      "subject": "中央三祠塔与共同台基",
+      "sub": "中央三祠塔与共同台基",
+      "place": "暹粒省 · 女王宫",
+      "dyn": "kh_angkor",
+      "types": [
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/kh_banteay_srei.png",
+      "displayLine": "assets/plates/kh_banteay_srei.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/kh_banteay_srei.json",
+      "candidateReferences": [
+        "assets/references/kh_banteay_srei-photo-whole.jpg",
+        "assets/references/kh_banteay_srei-photo.jpg"
+      ],
+      "output": "assets/colored/kh_banteay_srei.png",
+      "record": "assets/color-research/kh_banteay_srei.json"
+    },
+    {
+      "id": "id_borobudur",
+      "name": "婆罗浮屠",
+      "subject": "现存主体与完整基座",
+      "sub": "现存主体与完整基座",
+      "place": "中爪哇省 · 马格朗",
+      "dyn": "id_java_classical",
+      "types": [
+        "temple",
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/id_borobudur.png",
+      "displayLine": "assets/plates/id_borobudur.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/id_borobudur.json",
+      "candidateReferences": [
+        "assets/references/id_borobudur-photo.jpg"
+      ],
+      "output": "assets/colored/id_borobudur.png",
+      "record": "assets/color-research/id_borobudur.json"
+    },
+    {
+      "id": "id_prambanan_shiva",
+      "name": "普兰巴南湿婆主庙",
+      "subject": "单座湿婆主庙与台阶",
+      "sub": "单座湿婆主庙与台阶",
+      "place": "日惹特区 · 普兰巴南",
+      "dyn": "id_java_classical",
+      "types": [
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/id_prambanan_shiva.png",
+      "displayLine": "assets/plates/id_prambanan_shiva.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/id_prambanan_shiva.json",
+      "candidateReferences": [
+        "assets/references/id_prambanan_shiva-photo.jpg"
+      ],
+      "output": "assets/colored/id_prambanan_shiva.png",
+      "record": "assets/color-research/id_prambanan_shiva.json"
+    },
+    {
+      "id": "th_sukhothai_mahathat",
+      "name": "素可泰玛哈泰寺主塔",
+      "subject": "莲苞形主塔及直接支承台基",
+      "sub": "莲苞形主塔及直接支承台基",
+      "place": "素可泰府 · 素可泰",
+      "dyn": "th_sukhothai",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/th_sukhothai_mahathat.png",
+      "displayLine": "assets/plates/th_sukhothai_mahathat.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/th_sukhothai_mahathat.json",
+      "candidateReferences": [
+        "assets/references/th_sukhothai_mahathat-photo.jpg"
+      ],
+      "output": "assets/colored/th_sukhothai_mahathat.png",
+      "record": "assets/color-research/th_sukhothai_mahathat.json"
+    },
+    {
+      "id": "th_chaiwatthanaram",
+      "name": "柴瓦塔那兰寺",
+      "subject": "中央主塔、四角小塔及共同台基",
+      "sub": "中央主塔、四角小塔及共同台基",
+      "place": "大城府 · 大城",
+      "dyn": "th_ayutthaya",
+      "types": [
+        "temple",
+        "pagoda"
+      ],
+      "owner": "main",
+      "line": "assets/generated/th_chaiwatthanaram.png",
+      "displayLine": "assets/plates/th_chaiwatthanaram.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/th_chaiwatthanaram.json",
+      "candidateReferences": [
+        "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+        "assets/references/th_chaiwatthanaram-photo.jpg"
+      ],
+      "output": "assets/colored/th_chaiwatthanaram.png",
+      "record": "assets/color-research/th_chaiwatthanaram.json"
+    },
+    {
+      "id": "mm_ananda",
+      "name": "蒲甘阿难陀寺",
+      "subject": "完整寺身、中央塔冠及突出入口",
+      "sub": "完整寺身、中央塔冠及突出入口",
+      "place": "曼德勒省 · 蒲甘",
+      "dyn": "mm_bagan",
+      "types": [
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/mm_ananda.png",
+      "displayLine": "assets/plates/mm_ananda.png",
+      "width": 1226,
+      "height": 1283,
+      "originalResearch": "assets/research/mm_ananda.json",
+      "candidateReferences": [
+        "assets/references/mm_ananda-photo-whole.jpg",
+        "assets/references/mm_ananda-photo.jpg"
+      ],
+      "output": "assets/colored/mm_ananda.png",
+      "record": "assets/color-research/mm_ananda.json"
+    },
+    {
+      "id": "la_xieng_thong_sim",
+      "name": "香通寺主佛殿",
+      "subject": "主佛殿sim与支承台基",
+      "sub": "主佛殿sim与支承台基",
+      "place": "琅勃拉邦省 · 琅勃拉邦",
+      "dyn": "la_lan_xang",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/la_xieng_thong_sim.png",
+      "displayLine": "assets/plates/la_xieng_thong_sim.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/la_xieng_thong_sim.json",
+      "candidateReferences": [
+        "assets/references/la_xieng_thong_sim-photo.jpg"
+      ],
+      "output": "assets/colored/la_xieng_thong_sim.png",
+      "record": "assets/color-research/la_xieng_thong_sim.json"
+    },
+    {
+      "id": "vn_po_klong_garai",
+      "name": "波克朗加莱主塔",
+      "subject": "现存主祠塔与入口、台基",
+      "sub": "现存主祠塔与入口、台基",
+      "place": "庆和省 · 潘朗—塔占",
+      "dyn": "vn_champa",
+      "types": [
+        "temple"
+      ],
+      "owner": "main",
+      "line": "assets/generated/vn_po_klong_garai.png",
+      "displayLine": "assets/plates/vn_po_klong_garai.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/vn_po_klong_garai.json",
+      "candidateReferences": [
+        "assets/references/vn_po_klong_garai-photo-geometry.jpg",
+        "assets/references/vn_po_klong_garai-photo.jpg"
+      ],
+      "output": "assets/colored/vn_po_klong_garai.png",
+      "record": "assets/color-research/vn_po_klong_garai.json"
+    },
+    {
+      "id": "vn_hue_ngo_mon",
+      "name": "顺化皇城午门",
+      "subject": "午门完整城台与五凤楼",
+      "sub": "午门完整城台与五凤楼",
+      "place": "顺化市 · 顺化",
+      "dyn": "vn_nguyen",
+      "types": [
+        "gate",
+        "pavilion",
+        "palace"
+      ],
+      "owner": "main",
+      "line": "assets/generated/vn_hue_ngo_mon.png",
+      "displayLine": "assets/plates/vn_hue_ngo_mon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/vn_hue_ngo_mon.json",
+      "candidateReferences": [
+        "assets/references/vn_hue_ngo_mon-photo.jpg"
+      ],
+      "output": "assets/colored/vn_hue_ngo_mon.png",
+      "record": "assets/color-research/vn_hue_ngo_mon.json"
+    },
+    {
+      "id": "ph_manila_san_agustin",
+      "name": "马尼拉圣奥古斯丁教堂",
+      "subject": "现存教堂正立面与钟塔",
+      "sub": "现存教堂正立面与钟塔",
+      "place": "马尼拉大都会 · 马尼拉",
+      "dyn": "ph_spanish",
+      "types": [
+        "church"
+      ],
+      "owner": "main",
+      "line": "assets/generated/ph_manila_san_agustin.png",
+      "displayLine": "assets/plates/ph_manila_san_agustin.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ph_manila_san_agustin.json",
+      "candidateReferences": [
+        "assets/references/ph_manila_san_agustin-photo.jpg"
+      ],
+      "output": "assets/colored/ph_manila_san_agustin.png",
+      "record": "assets/color-research/ph_manila_san_agustin.json"
+    },
+    {
+      "id": "kr_sudeoksa_daeungjeon",
+      "name": "修德寺大雄殿",
+      "subject": "单座大雄殿与石台基",
+      "sub": "单座大雄殿与石台基",
+      "place": "韩国 · 礼山",
+      "dyn": "ko_goryeo",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/kr_sudeoksa_daeungjeon.png",
+      "displayLine": "assets/plates/kr_sudeoksa_daeungjeon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/kr_sudeoksa_daeungjeon.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_01.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sudeoksa_01.JPG",
+          "file": "assets/references/kr_sudeoksa_daeungjeon-photo-front.jpg",
+          "sha256": "4db689e6db682edce7c391cadc29a9016c0a07d46f627bae0c801b3d192f3858",
+          "author": "Lawinc82",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "date": "2007-02-25",
+          "description": "Sudeoksa"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_Daeungjeon_02.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Sudeoksa_Daeungjeon_02.jpg/1920px-Sudeoksa_Daeungjeon_02.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sudeoksa_Daeungjeon_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kr_sudeoksa_daeungjeon-photo.jpg",
+          "sha256": "f484953d79f7561cd3f33320cadd0075c202413ce0fb9d6c118ff7928d165b14",
+          "author": "Jjw",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0",
+          "date": "2023-12-24 12:27:12",
+          "description": "수덕사 대웅전"
+        }
+      ],
+      "output": "assets/colored/kr_sudeoksa_daeungjeon.png",
+      "record": "assets/color-research/kr_sudeoksa_daeungjeon.json"
+    },
+    {
+      "id": "kr_buseoksa_muryangsujeon",
+      "name": "浮石寺无量寿殿",
+      "subject": "单座无量寿殿与台阶",
+      "sub": "单座无量寿殿与台阶",
+      "place": "韩国 · 荣州",
+      "dyn": "ko_goryeo",
+      "types": [
+        "hall"
+      ],
+      "line": "assets/generated/kr_buseoksa_muryangsujeon.png",
+      "displayLine": "assets/plates/kr_buseoksa_muryangsujeon.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/kr_buseoksa_muryangsujeon.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
+          "file": "assets/references/kr_buseoksa_muryangsujeon-photo-side-selected.jpg",
+          "sha256": "0e8715db680826604607d9dd053afed29d4d896e322c311d280202850bd48e79",
+          "author": "Bernard Gagnon",
+          "license": "CC0",
+          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "date": "2022-10-09",
+          "description": "Muryangsujeon Hall at Buseoksa Temple, South Korea"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Muryangsujeon_at_Buseoksa_01.jpg/1920px-Muryangsujeon_at_Buseoksa_01.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Muryangsujeon_at_Buseoksa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kr_buseoksa_muryangsujeon-photo.jpg",
+          "sha256": "8c1231a6278489458bbb61f6bf3474e02191e0f49ebbbfa3d9533e57a0b24b39",
+          "author": "Bernard Gagnon",
+          "license": "CC0",
+          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "date": "2022-10-09",
+          "description": "Muryangsujeon Hall at Buseoksa Temple, South Korea"
+        }
+      ],
+      "output": "assets/colored/kr_buseoksa_muryangsujeon.png",
+      "record": "assets/color-research/kr_buseoksa_muryangsujeon.json"
+    },
+    {
+      "id": "kr_bulguksa_dabotap",
+      "name": "佛国寺多宝塔",
+      "subject": "多宝塔完整石塔与四向台阶",
+      "sub": "多宝塔完整石塔与四向台阶",
+      "place": "韩国 · 庆州",
+      "dyn": "ko_silla",
+      "types": [
+        "pagoda"
+      ],
+      "line": "assets/generated/kr_bulguksa_dabotap.png",
+      "displayLine": "assets/plates/kr_bulguksa_dabotap.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/kr_bulguksa_dabotap.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dabotap_Pagoda_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kr_bulguksa_dabotap-photo.jpg",
+          "sha256": "f9d64211457c221462d11c4cdab1cf117dd4789df1447b11ecc7e3ea0dfdd591",
+          "author": "Bernard Gagnon",
+          "license": "CC0",
+          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "date": "2022-10-06",
+          "description": "Dabotap Pagoda at Bulguksa Temple, South Korea"
+        }
+      ],
+      "output": "assets/colored/kr_bulguksa_dabotap.png",
+      "record": "assets/color-research/kr_bulguksa_dabotap.json"
+    },
+    {
+      "id": "kr_changdeokgung_injeongjeon",
+      "name": "昌德宫仁政殿",
+      "subject": "仁政殿单殿与月台",
+      "sub": "仁政殿单殿与月台",
+      "place": "韩国 · 首尔",
+      "dyn": "ko_joseon",
+      "types": [
+        "palace",
+        "hall"
+      ],
+      "line": "assets/generated/kr_changdeokgung_injeongjeon.png",
+      "displayLine": "assets/plates/kr_changdeokgung_injeongjeon.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/kr_changdeokgung_injeongjeon.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_01.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Injeongjeon_Hall_01.jpg/1920px-Injeongjeon_Hall_01.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Injeongjeon_Hall_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kr_changdeokgung_injeongjeon-photo.jpg",
+          "sha256": "0cb8c0000497013ba37bb2666acbbdc7a46234e495b490fefa62973ed687d3b5",
+          "author": "Bernard Gagnon",
+          "license": "CC0",
+          "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "date": "2022-09-27",
+          "description": "Injeongjeon Hall in Changdeokgung Palace Complex, Seoul"
+        }
+      ],
+      "output": "assets/colored/kr_changdeokgung_injeongjeon.png",
+      "record": "assets/color-research/kr_changdeokgung_injeongjeon.json"
+    },
+    {
+      "id": "kp_kaesong_namdaemun",
+      "name": "开城南大门",
+      "subject": "石门台与战后复建门楼",
+      "sub": "石门台与战后复建门楼",
+      "place": "朝鲜 · 开城",
+      "dyn": "modern",
+      "types": [
+        "gate",
+        "wall"
+      ],
+      "line": "assets/generated/kp_kaesong_namdaemun.png",
+      "displayLine": "assets/plates/kp_kaesong_namdaemun.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/kp_kaesong_namdaemun.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Nam_Gate_in_Kaesong_(5063812320).jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kp_kaesong_namdaemun-photo.jpg",
+          "sha256": "293d968efedb51d8ab733d47fc9b42b8b64b52703c83f101333afe69c1b9c500",
+          "author": "David Stanley from Nanaimo, Canada",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "date": "2010-10-08 17:18",
+          "description": "The old city gate in the center of Kaesong, Democratic People's Republic of Korea."
+        }
+      ],
+      "output": "assets/colored/kp_kaesong_namdaemun.png",
+      "record": "assets/color-research/kp_kaesong_namdaemun.json"
+    },
+    {
+      "id": "kp_pothong_gate",
+      "name": "平壤普通门",
+      "subject": "普通门城台与双层檐门楼",
+      "sub": "普通门城台与双层檐门楼",
+      "place": "朝鲜 · 平壤",
+      "dyn": "ko_joseon",
+      "types": [
+        "gate",
+        "wall"
+      ],
+      "line": "assets/generated/kp_pothong_gate.png",
+      "displayLine": "assets/plates/kp_pothong_gate.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/kp_pothong_gate.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Potongmun_1.jpg/1920px-Potongmun_1.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Potongmun_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kp_pothong_gate-photo.jpg",
+          "sha256": "3cc98ccee70b447084d73a048c36ca6b8ead76acbbd9647720629084b4555206",
+          "author": "Christophe95",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "date": "2018-10-10 08:46:31",
+          "description": "Potongmun in Pyongyang."
+        }
+      ],
+      "output": "assets/colored/kp_pothong_gate.png",
+      "record": "assets/color-research/kp_pothong_gate.json"
+    },
+    {
+      "id": "kp_sungyang_hall",
+      "name": "崧阳书院讲堂",
+      "subject": "书院五间讲堂单体",
+      "sub": "书院五间讲堂单体",
+      "place": "朝鲜 · 开城",
+      "dyn": "ko_joseon",
+      "types": [
+        "school",
+        "hall"
+      ],
+      "line": "assets/generated/kp_sungyang_hall.png",
+      "displayLine": "assets/plates/kp_sungyang_hall.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/kp_sungyang_hall.json",
+      "candidateReferences": [
+        {
+          "page": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+          "url": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+          "file": "assets/references/kp_sungyang_hall-unesco-overview.png",
+          "sha256": "382d513c024af72c907f4936420e8fcc75fb8f18c142ee567a31156b3cce4b29",
+          "author": "朝鲜申遗提交方；摄影者未单列",
+          "license": "文档未单列图片许可；研究参考",
+          "description": "申遗档案图20（印刷页62）或图24（印刷页66）"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Sungyang_Seowon.JPG",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sungyang_Seowon.JPG",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Sungyang_Seowon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kp_sungyang_hall-photo.jpg",
+          "sha256": "c9cd5e714af920bbcef876f6cde4d57a51462c9f40872e6bcf3f4d30fec1570a",
+          "author": "Unknown authorUnknown author",
+          "license": "Public domain",
+          "license_url": "未知",
+          "date": "during 1910-1945",
+          "description": "Sungyang Seowon"
+        },
+        {
+          "page": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+          "url": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+          "file": "assets/references/kp_sungyang_hall-unesco-page.png",
+          "sha256": "466691ad635dcd06e928c7adba09e2ada4f00c0edb88a4d9eb9610e339a13eca",
+          "author": "朝鲜申遗提交方；摄影者未单列",
+          "license": "文档未单列图片许可；研究参考",
+          "description": "申遗档案图20（印刷页62）或图24（印刷页66）"
+        }
+      ],
+      "output": "assets/colored/kp_sungyang_hall.png",
+      "record": "assets/color-research/kp_sungyang_hall.json"
+    },
+    {
+      "id": "kp_sonjuk_bridge",
+      "name": "开城善竹桥",
+      "subject": "旧石梁桥与1780年石栏",
+      "sub": "旧石梁桥与1780年石栏",
+      "place": "朝鲜 · 开城",
+      "dyn": "ko_goryeo",
+      "types": [
+        "bridge"
+      ],
+      "line": "assets/generated/kp_sonjuk_bridge.png",
+      "displayLine": "assets/plates/kp_sonjuk_bridge.png",
+      "width": 1448,
+      "height": 1086,
+      "originalResearch": "assets/research/kp_sonjuk_bridge.json",
+      "candidateReferences": [
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+          "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "file": "assets/references/kp_sonjuk_bridge-photo.jpg",
+          "sha256": "065df86ffabe4ef5fda81a641bea25b214d757121b0d075104bbac66dde44ecc",
+          "author": "David Clayton Ellsworth",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "date": "2012-04-13 16:31:52",
+          "description": "Sonjuk bridge in Kaesong, North Korea"
+        }
+      ],
+      "output": "assets/colored/kp_sonjuk_bridge.png",
+      "record": "assets/color-research/kp_sonjuk_bridge.json"
     }
   ]
 }

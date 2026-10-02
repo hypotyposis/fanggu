@@ -1,0 +1,143 @@
+{
+  "id": "th_chaiwatthanaram",
+  "name": "柴瓦塔那兰寺",
+  "subject": "中央主塔、四角小塔及共同台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
+  "author": "Welcome to Thailand",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+      "sha256": "084818f944eda3147a7b8e87acd49c9e738a5a932649ad9d3c9db5cbf5531f32",
+      "author": "Welcome to Thailand",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2024-02-27 12:22:07",
+      "description": "Grand prang central entouré de 4 petits prangs et enceinte (Phra rabiang ; \"cloître\" ; galerie) avec 8 chapelles en forme de stupas (chedis)"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:02f-Wat_Chaiwatthanaram_(NgnL)-08809.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg/1920px-02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo.jpg",
+      "sha256": "16aaecd7d8a544ad2c45fa6a60841dcda7b68533a6e7aa46104a5fbad3a54454",
+      "author": "No(0)GoodNamesLeft",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2020-01-07 13:22:21",
+      "description": "Wat Chaiwatthanaram"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+      "sha256": "084818f944eda3147a7b8e87acd49c9e738a5a932649ad9d3c9db5cbf5531f32",
+      "author": "Welcome to Thailand",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2024-02-27 12:22:07",
+      "description": "Grand prang central entouré de 4 petits prangs et enceinte (Phra rabiang ; \"cloître\" ; galerie) avec 8 chapelles en forme de stupas (chedis)"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:02f-Wat_Chaiwatthanaram_(NgnL)-08809.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg/1920px-02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo.jpg",
+      "sha256": "16aaecd7d8a544ad2c45fa6a60841dcda7b68533a6e7aa46104a5fbad3a54454",
+      "author": "No(0)GoodNamesLeft",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2020-01-07 13:22:21",
+      "description": "Wat Chaiwatthanaram"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+    "assets/references/th_chaiwatthanaram-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo",
+    "detail_material_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the central main prang and its FOUR directly neighboring CORNER prangs and supporting shared stepped terrace at Wat Chaiwatthanaram. Image 2 shows the full group from the approach: the tall rounded central prang is centered; directly near it four small prangs surround it, with the rear ones partially hidden by perspective. Preserve the actual visible subset and occlusion, not a five-in-a-row skyline. The much larger outer structures at the FAR LEFT and FAR RIGHT are the outer eight-chapel enclosure and must be omitted. Remove approach bridge, detached foreground ruined pedestals, corridor enclosure chapels, tourists, tree, scaffolding and green shelters. Keep tall rounded central prang with its entry stair and the actual decorated redented brick plinth. Do not invent intact roofs or fill ruined openings."
+  ],
+  "material_observations": [
+    "红褐烧砖、灰褐残留灰泥、塔顶风化偏灰；洞口深暗。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为中央主塔、四角小塔及共同台基。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the central main prang and its FOUR directly neighboring CORNER prangs and supporting shared stepped terrace at Wat Chaiwatthanaram. Image 2 shows the full group from the approach: the tall rounded central prang is centered; directly near it four small prangs surround it, with the rear ones partially hidden by perspective. Preserve the actual visible subset and occlusion, not a five-in-a-row skyline. The much larger outer structures at the FAR LEFT and FAR RIGHT are the outer eight-chapel enclosure and must be omitted. Remove approach bridge, detached foreground ruined pedestals, corridor enclosure chapels, tourists, tree, scaffolding and green shelters. Keep tall rounded central prang with its entry stair and the actual decorated redented brick plinth. Do not invent intact roofs or fill ruined openings.",
+  "generated_file": "assets/generated/th_chaiwatthanaram.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T12:06:42.363534+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the central main prang and its FOUR directly neighboring CORNER prangs and supporting shared stepped terrace at Wat Chaiwatthanaram. Image 2 shows the full group from the approach: the tall rounded central prang is centered; directly near it four small prangs surround it, with the rear ones partially hidden by perspective. Preserve the actual visible subset and occlusion, not a five-in-a-row skyline. The much larger outer structures at the FAR LEFT and FAR RIGHT are the outer eight-chapel enclosure and must be omitted. Remove approach bridge, detached foreground ruined pedestals, corridor enclosure chapels, tourists, tree, scaffolding and green shelters. Keep tall rounded central prang with its entry stair and the actual decorated redented brick plinth. Do not invent intact roofs or fill ruined openings.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+        "assets/references/th_chaiwatthanaram-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:09:51.350643+08:00",
+      "saved_at": "2026-10-02T12:09:51.351018+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-7c624141-1ccf-4ff8-942f-c04986c6bc47.png",
+      "saved_file": "assets/generated/th_chaiwatthanaram.png",
+      "tool_output_id": "exec-7c624141-1ccf-4ff8-942f-c04986c6bc47"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-7c624141-1ccf-4ff8-942f-c04986c6bc47.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3d1adb9a68c204adc4d4e573ea8ed0e579c6d0b43a24fdf81ccde87867c6fcff",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:09:51.635577+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "泰国SAC：Wat Chaiwatthanaram",
+      "url": "https://seaarts.sac.or.th/artwork/34?lang=en",
+      "publisher": "泰国SAC",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1630,
+  "yearApprox": false,
+  "yearNote": "1630为史料所记寺院建置年；图版是现存中央主塔与四角塔组合，前期构筑讨论及现代修复不等同于全部砖石同年营建。",
+  "country": "TH",
+  "caption": [
+    "柴瓦塔那兰寺 · 中央主塔、四角小塔及共同台基",
+    "1630年建置"
+  ]
+}

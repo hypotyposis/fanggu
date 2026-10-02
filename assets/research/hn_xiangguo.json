@@ -1,0 +1,112 @@
+{
+  "id": "hn_xiangguo",
+  "subject": "大相国寺 · 大雄宝殿正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Yumeto",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_xiangguo-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 大相国寺 · 大雄宝殿正面. Seven front bays, TWO eave tiers, double-eaved hip-and-gable roof, stone balustraded terrace and central stairs. Remove foreground people and parasols. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_xiangguo.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "大相国寺 · 大雄宝殿正面",
+    "清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_xiangguo",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_xiangguo-photo.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Seven front bays, TWO eave tiers, double-eaved hip-and-gable roof, stone balustraded terrace and central stairs. Remove foreground people and parasols. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Muted grey-green and yellow glazed tiles, dark red wooden columns and lattice doors, blue-green bracket paint and pale stone terrace."
+  ],
+  "generated_at": "2026-10-01T19:21:41.878665+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-fc98855e-4d3c-4ce4-a78f-ab46f851e34c.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "11a93bec76e375b14db5345ca9c9e44af2a784a5f11a46610957dbf4cc14211b",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.878665+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 大相国寺 · 大雄宝殿正面. Seven front bays, TWO eave tiers, double-eaved hip-and-gable roof, stone balustraded terrace and central stairs. Remove foreground people and parasols. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_xiangguo-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_xiangguo.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-fc98855e-4d3c-4ce4-a78f-ab46f851e34c.png",
+      "sourceSha256": "11a93bec76e375b14db5345ca9c9e44af2a784a5f11a46610957dbf4cc14211b",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_xiangguo-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "大相国寺现存建筑",
+      "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hnly/zywh/articlea27d03edffc44e85a80fdf8022a87edd.html",
+      "publisher": "河南省台办",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_xiangguo",
+    "name": "大相国寺",
+    "short": "大相国寺",
+    "sub": "大雄宝殿正面",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆重建阶段，不是北齐建寺年",
+    "year": 1766,
+    "yearApprox": false,
+    "yearNote": "清乾隆重建阶段，不是北齐建寺年",
+    "yearLabel": "1766",
+    "placeKey": "hn_开封",
+    "place": "河南 · 开封",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "两重屋檐覆盖七间大殿，石栏和中央阶道把红色门窗托起。大相国寺大雄宝殿呈现清代重建的寺院尺度。",
+    "facts": [
+      "国保正式单位名称为相国寺，第七批公布。",
+      "图版选大雄宝殿正面：七间面阔、重檐歇山与石栏台基。",
+      "1766年用于清乾隆重建阶段定位；寺院初创更早，现存殿堂不能按北齐创建年断代。"
+    ],
+    "caption": [
+      "大相国寺 · 大雄宝殿正面",
+      "清 · 现存主体"
+    ]
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "hn_jiahuiguan",
+  "subject": "郏县山陕会馆 · 门楼与钟鼓楼组合",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_jiahuiguan-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郏县山陕会馆 · 门楼与钟鼓楼组合. Preserve THREE linked structures: central gate/stage block flanked by TWO tall bell/drum pavilions, each with two eave tiers and open upper storey; lower central curled gateway roof; photograph exact ensemble. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_jiahuiguan.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "郏县山陕会馆 · 门楼与钟鼓楼组合",
+    "清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_jiahuiguan",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_jiahuiguan-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Preserve THREE linked structures: central gate/stage block flanked by TWO tall bell/drum pavilions, each with two eave tiers and open upper storey; lower central curled gateway roof; photograph exact ensemble. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Grey tiled roofs, weathered grey brick and pale masonry, dark brown wood, muted remnant painted ornament."
+  ],
+  "generated_at": "2026-10-01T19:21:41.894461+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-cd4b1e0a-88a4-47bd-9ca7-b2079532e73a.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ffc90c7f1c6988b9b6f8fcf944ac76045126ae30f646e36a3720571914d9adad",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.894461+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郏县山陕会馆 · 门楼与钟鼓楼组合. Preserve THREE linked structures: central gate/stage block flanked by TWO tall bell/drum pavilions, each with two eave tiers and open upper storey; lower central curled gateway roof; photograph exact ensemble. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_jiahuiguan-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_jiahuiguan.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-cd4b1e0a-88a4-47bd-9ca7-b2079532e73a.png",
+      "sourceSha256": "ffc90c7f1c6988b9b6f8fcf944ac76045126ae30f646e36a3720571914d9adad",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_jiahuiguan-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "郏县山陕会馆",
+      "url": "https://wglj.pds.gov.cn/contents/12739/241479.html",
+      "publisher": "平顶山市文化广电和旅游局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_jiahuiguan",
+    "name": "郏县山陕会馆",
+    "short": "郏县山陕会馆",
+    "sub": "门楼与钟鼓楼组合",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代建筑，现存组合单体确年未详",
+    "year": 1700,
+    "yearApprox": true,
+    "yearNote": "清代建筑，现存组合单体确年未详",
+    "yearLabel": "清约略",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "gate",
+      "stage",
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "钟鼓楼在门楼两侧并立，灰砖和雕木把三座建筑连成一体。郏县山陕会馆的入口也承担着聚会与演戏的公共功能。",
+    "facts": [
+      "郏县山陕会馆是第七批国保，清代商帮会馆建筑。",
+      "图版选择门楼与两侧钟鼓楼组合，不绘后部拜殿及全院。",
+      "门楼兼具戏楼功能；设色参考现存青灰瓦、灰砖和暗褐雕木，具体单体营建年暂以清代约略定位。"
+    ],
+    "caption": [
+      "郏县山陕会馆 · 门楼与钟鼓楼组合",
+      "清 · 现存主体"
+    ]
+  }
+}

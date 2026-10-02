@@ -9250,6 +9250,642 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "hn_yanqing": {
+    "src": "assets/colored-transparent-avif/hn_yanqing.avif",
+    "originalSrc": "assets/colored/hn_yanqing.png",
+    "transparentSrc": "assets/colored-transparent/hn_yanqing.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "延庆观 · 玉皇阁现存主体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_yanqing.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20260119_Yanqing_Guan_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_yuefei": {
+    "src": "assets/colored-transparent-avif/hn_yuefei.avif",
+    "originalSrc": "assets/colored/hn_yuefei.png",
+    "transparentSrc": "assets/colored-transparent/hn_yuefei.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "汤阴岳飞庙 · 二殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_yuefei.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20250831_Yue_Fei_Temple_in_Tangyin_06.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_songyang": {
+    "src": "assets/colored-transparent-avif/hn_songyang.avif",
+    "originalSrc": "assets/colored/hn_songyang.png",
+    "transparentSrc": "assets/colored-transparent/hn_songyang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "嵩阳书院 · 清代大门正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_songyang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20250528_Songyang_Shuyuan.jpg",
+        "author": "Yumeto",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_xiangguo": {
+    "src": "assets/colored-transparent-avif/hn_xiangguo.avif",
+    "originalSrc": "assets/colored/hn_xiangguo.png",
+    "transparentSrc": "assets/colored-transparent/hn_xiangguo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "大相国寺 · 大雄宝殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_xiangguo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg",
+        "author": "Yumeto",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_zzchenghuang": {
+    "src": "assets/colored-transparent-avif/hn_zzchenghuang.avif",
+    "originalSrc": "assets/colored/hn_zzchenghuang.png",
+    "transparentSrc": "assets/colored-transparent/hn_zzchenghuang.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "郑州城隍庙 · 三间大殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_zzchenghuang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20240921_City_God_Temple_of_Zhengzhou_08.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_jiawenmiao": {
+    "src": "assets/colored-transparent-avif/hn_jiawenmiao.avif",
+    "originalSrc": "assets/colored/hn_jiawenmiao.png",
+    "transparentSrc": "assets/colored-transparent/hn_jiawenmiao.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "郏县文庙 · 大成殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_jiawenmiao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Confucian_Temple_08.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_jiahuiguan": {
+    "src": "assets/colored-transparent-avif/hn_jiahuiguan.avif",
+    "originalSrc": "assets/colored/hn_jiahuiguan.png",
+    "transparentSrc": "assets/colored-transparent/hn_jiahuiguan.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "郏县山陕会馆 · 门楼与钟鼓楼组合 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_jiahuiguan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_linfeng": {
+    "src": "assets/colored-transparent-avif/hn_linfeng.avif",
+    "originalSrc": "assets/colored/hn_linfeng.png",
+    "transparentSrc": "assets/colored-transparent/hn_linfeng.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "临沣寨 · 西门及相连红石寨墙 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_linfeng.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg",
+        "author": "Lanch",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "hn_gaoge": {
+    "src": "assets/colored-transparent-avif/hn_gaoge.avif",
+    "originalSrc": "assets/colored/hn_gaoge.png",
+    "transparentSrc": "assets/colored-transparent/hn_gaoge.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "高阁寺 · 阁楼及高台上部 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/hn_gaoge.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A%E9%AB%98%E9%98%81%E5%AF%BA.JPG",
+        "author": "三猎",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "hn_wenzhige": {
+    "src": "assets/colored-transparent-avif/hn_wenzhige.avif",
+    "originalSrc": "assets/colored/hn_wenzhige.png",
+    "transparentSrc": "assets/colored-transparent/hn_wenzhige.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "浚县文治阁 · 十字街钟鼓楼现存主体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/hn_wenzhige.json",
+    "references": [
+      {
+        "page": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+        "author": "翟德芳",
+        "license": "未标明（仅研究与生成参考）"
+      }
+    ]
+  },
+  "kh_angkor_wat": {
+    "src": "assets/colored-transparent-avif/kh_angkor_wat.avif",
+    "originalSrc": "assets/colored/kh_angkor_wat.png",
+    "transparentSrc": "assets/colored-transparent/kh_angkor_wat.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "中央五塔及紧邻台基回廊 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/kh_angkor_wat.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20191210_Angkor_Wat_towers-2.jpg",
+        "author": "Balon Greyjoy",
+        "license": "Public domain",
+        "date": "10 December 2019, 10:01"
+      }
+    ]
+  },
+  "kh_bayon": {
+    "src": "assets/colored-transparent-avif/kh_bayon.avif",
+    "originalSrc": "assets/colored/kh_bayon.png",
+    "transparentSrc": "assets/colored-transparent/kh_bayon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "中央面像塔群与直接支承台基 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/kh_bayon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_Bayon_(12450324194).jpg",
+        "author": "Clay Gilliland",
+        "license": "CC BY-SA 2.0",
+        "date": "2013-10-25 07:12"
+      }
+    ]
+  },
+  "kh_banteay_srei": {
+    "src": "assets/colored-transparent-avif/kh_banteay_srei.avif",
+    "originalSrc": "assets/colored/kh_banteay_srei.png",
+    "transparentSrc": "assets/colored-transparent/kh_banteay_srei.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "中央三祠塔与共同台基 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/kh_banteay_srei.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_32a.jpg",
+        "author": "Olaf Tausch",
+        "license": "CC BY 3.0",
+        "date": "2015-01-19"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_08.jpg",
+        "author": "Stefan Fussan",
+        "license": "CC BY-SA 3.0",
+        "date": "2005-12"
+      }
+    ]
+  },
+  "id_borobudur": {
+    "src": "assets/colored-transparent-avif/id_borobudur.avif",
+    "originalSrc": "assets/colored/id_borobudur.png",
+    "transparentSrc": "assets/colored-transparent/id_borobudur.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存主体与完整基座 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/id_borobudur.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+        "author": "Gunawan Kartapranata",
+        "license": "Public domain",
+        "date": "2008-06-12"
+      }
+    ]
+  },
+  "id_prambanan_shiva": {
+    "src": "assets/colored-transparent-avif/id_prambanan_shiva.avif",
+    "originalSrc": "assets/colored/id_prambanan_shiva.png",
+    "transparentSrc": "assets/colored-transparent/id_prambanan_shiva.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "单座湿婆主庙与台阶 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/id_prambanan_shiva.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+        "author": "Gunkarta",
+        "license": "CC BY-SA 3.0",
+        "date": "3 Februaty 2007, 13:27"
+      }
+    ]
+  },
+  "th_sukhothai_mahathat": {
+    "src": "assets/colored-transparent-avif/th_sukhothai_mahathat.avif",
+    "originalSrc": "assets/colored/th_sukhothai_mahathat.png",
+    "transparentSrc": "assets/colored-transparent/th_sukhothai_mahathat.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "莲苞形主塔及直接支承台基 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/th_sukhothai_mahathat.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+        "author": "Welcome to Thailand",
+        "license": "CC0",
+        "date": "2024-02-29 12:33:10"
+      }
+    ]
+  },
+  "th_chaiwatthanaram": {
+    "src": "assets/colored-transparent-avif/th_chaiwatthanaram.avif",
+    "originalSrc": "assets/colored/th_chaiwatthanaram.png",
+    "transparentSrc": "assets/colored-transparent/th_chaiwatthanaram.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "中央主塔、四角小塔及共同台基 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/th_chaiwatthanaram.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+        "author": "Welcome to Thailand",
+        "license": "CC0",
+        "date": "2024-02-27 12:22:07"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:02f-Wat_Chaiwatthanaram_(NgnL)-08809.jpg",
+        "author": "No(0)GoodNamesLeft",
+        "license": "CC BY-SA 4.0",
+        "date": "2020-01-07 13:22:21"
+      }
+    ]
+  },
+  "mm_ananda": {
+    "src": "assets/colored-transparent-avif/mm_ananda.avif",
+    "originalSrc": "assets/colored/mm_ananda.png",
+    "transparentSrc": "assets/colored-transparent/mm_ananda.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "完整寺身、中央塔冠及突出入口 · 设色图",
+    "width": 1226,
+    "height": 1283,
+    "tint": false,
+    "record": "assets/color-research/mm_ananda.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20160801_Ananda_Temple_Bagan_Myanmar_6682.jpg",
+        "author": "Jakub Hałun",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-08-01 15:41:56"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Bagan,_Myanmar,_Ananda_Temple.jpg",
+        "author": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "date": "2008-11-20 15:05:17"
+      }
+    ]
+  },
+  "la_xieng_thong_sim": {
+    "src": "assets/colored-transparent-avif/la_xieng_thong_sim.avif",
+    "originalSrc": "assets/colored/la_xieng_thong_sim.png",
+    "transparentSrc": "assets/colored-transparent/la_xieng_thong_sim.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "主佛殿sim与支承台基 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/la_xieng_thong_sim.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sim_of_Wat_Xieng_Thong.jpg",
+        "author": "Christophe95",
+        "license": "CC BY-SA 4.0",
+        "date": "2018-08-17 11:13:11"
+      }
+    ]
+  },
+  "vn_po_klong_garai": {
+    "src": "assets/colored-transparent-avif/vn_po_klong_garai.avif",
+    "originalSrc": "assets/colored/vn_po_klong_garai.png",
+    "transparentSrc": "assets/colored-transparent/vn_po_klong_garai.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存主祠塔与入口、台基 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/vn_po_klong_garai.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Po_Klong_Garai,_Champa_Hindu_temples_complex_01.jpg",
+        "author": "Ms Sarah Welch",
+        "license": "CC0",
+        "date": "2022-11-06"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Po_Klong_Garai,_Champa_Hindu_temples_complex_02.jpg",
+        "author": "Ms Sarah Welch",
+        "license": "CC0",
+        "date": "2022-11-06"
+      }
+    ]
+  },
+  "vn_hue_ngo_mon": {
+    "src": "assets/colored-transparent-avif/vn_hue_ngo_mon.avif",
+    "originalSrc": "assets/colored/vn_hue_ngo_mon.png",
+    "transparentSrc": "assets/colored-transparent/vn_hue_ngo_mon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "午门完整城台与五凤楼 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/vn_hue_ngo_mon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Meridian_Gate,_Hue_(I).jpg",
+        "author": "Supanut Arunoprayote",
+        "license": "CC BY 4.0",
+        "date": "2019-05-27 16:02:32"
+      }
+    ]
+  },
+  "ph_manila_san_agustin": {
+    "src": "assets/colored-transparent-avif/ph_manila_san_agustin.avif",
+    "originalSrc": "assets/colored/ph_manila_san_agustin.png",
+    "transparentSrc": "assets/colored-transparent/ph_manila_san_agustin.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存教堂正立面与钟塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/ph_manila_san_agustin.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+        "author": "LMP 2001",
+        "license": "CC BY-SA 4.0",
+        "date": "2023-05-28 11:57:55"
+      }
+    ]
+  },
+  "kr_sudeoksa_daeungjeon": {
+    "src": "assets/colored-transparent-avif/kr_sudeoksa_daeungjeon.avif",
+    "originalSrc": "assets/colored/kr_sudeoksa_daeungjeon.png",
+    "transparentSrc": "assets/colored-transparent/kr_sudeoksa_daeungjeon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "单座大雄殿与石台基 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/kr_sudeoksa_daeungjeon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_01.JPG",
+        "author": "Lawinc82",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-02-25"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_Daeungjeon_02.jpg",
+        "author": "Jjw",
+        "license": "CC BY 4.0",
+        "date": "2023-12-24 12:27:12"
+      }
+    ]
+  },
+  "kr_buseoksa_muryangsujeon": {
+    "src": "assets/colored-transparent-avif/kr_buseoksa_muryangsujeon.avif",
+    "originalSrc": "assets/colored/kr_buseoksa_muryangsujeon.png",
+    "transparentSrc": "assets/colored-transparent/kr_buseoksa_muryangsujeon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "单座无量寿殿与台阶 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/kr_buseoksa_muryangsujeon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "date": "2022-10-09"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_01.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "date": "2022-10-09"
+      }
+    ]
+  },
+  "kr_bulguksa_dabotap": {
+    "src": "assets/colored-transparent-avif/kr_bulguksa_dabotap.avif",
+    "originalSrc": "assets/colored/kr_bulguksa_dabotap.png",
+    "transparentSrc": "assets/colored-transparent/kr_bulguksa_dabotap.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "多宝塔完整石塔与四向台阶 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/kr_bulguksa_dabotap.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "date": "2022-10-06"
+      }
+    ]
+  },
+  "kr_changdeokgung_injeongjeon": {
+    "src": "assets/colored-transparent-avif/kr_changdeokgung_injeongjeon.avif",
+    "originalSrc": "assets/colored/kr_changdeokgung_injeongjeon.png",
+    "transparentSrc": "assets/colored-transparent/kr_changdeokgung_injeongjeon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "仁政殿单殿与月台 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/kr_changdeokgung_injeongjeon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_01.jpg",
+        "author": "Bernard Gagnon",
+        "license": "CC0",
+        "date": "2022-09-27"
+      }
+    ]
+  },
+  "kp_kaesong_namdaemun": {
+    "src": "assets/colored-transparent-avif/kp_kaesong_namdaemun.avif",
+    "originalSrc": "assets/colored/kp_kaesong_namdaemun.png",
+    "transparentSrc": "assets/colored-transparent/kp_kaesong_namdaemun.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "石门台与战后复建门楼 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/kp_kaesong_namdaemun.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Nam_Gate_in_Kaesong_(5063812320).jpg",
+        "author": "David Stanley from Nanaimo, Canada",
+        "license": "CC BY 2.0",
+        "date": "2010-10-08 17:18"
+      }
+    ]
+  },
+  "kp_pothong_gate": {
+    "src": "assets/colored-transparent-avif/kp_pothong_gate.avif",
+    "originalSrc": "assets/colored/kp_pothong_gate.png",
+    "transparentSrc": "assets/colored-transparent/kp_pothong_gate.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "普通门城台与双层檐门楼 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/kp_pothong_gate.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
+        "author": "Christophe95",
+        "license": "CC BY-SA 4.0",
+        "date": "2018-10-10 08:46:31"
+      }
+    ]
+  },
+  "kp_sungyang_hall": {
+    "src": "assets/colored-transparent-avif/kp_sungyang_hall.avif",
+    "originalSrc": "assets/colored/kp_sungyang_hall.png",
+    "transparentSrc": "assets/colored-transparent/kp_sungyang_hall.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "书院五间讲堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/kp_sungyang_hall.json",
+    "references": [
+      {
+        "page": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+        "author": "朝鲜申遗提交方；摄影者未单列",
+        "license": "文档未单列图片许可；研究参考"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sungyang_Seowon.JPG",
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "date": "during 1910-1945"
+      },
+      {
+        "page": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+        "author": "朝鲜申遗提交方；摄影者未单列",
+        "license": "文档未单列图片许可；研究参考"
+      }
+    ]
+  },
+  "kp_sonjuk_bridge": {
+    "src": "assets/colored-transparent-avif/kp_sonjuk_bridge.avif",
+    "originalSrc": "assets/colored/kp_sonjuk_bridge.png",
+    "transparentSrc": "assets/colored-transparent/kp_sonjuk_bridge.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "旧石梁桥与1780年石栏 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/kp_sonjuk_bridge.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+        "author": "David Clayton Ellsworth",
+        "license": "CC BY-SA 4.0",
+        "date": "2012-04-13 16:31:52"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

@@ -4,8 +4,13 @@
   else root.FangguCatalog = factory(root.FangguProtection);
 })(typeof globalThis === 'object' ? globalThis : this, protection => {
   'use strict';
-  const countries = { CN: '中国', JP: '日本' };
+  const countries = { KR: '韩国', KP: '朝鲜', CN: '中国', JP: '日本', KH: '柬埔寨', ID: '印度尼西亚', TH: '泰国', MM: '缅甸', LA: '老挝', VN: '越南', PH: '菲律宾' };
   const regions = {
+    kr_capital: { name: '韩国首都圈', country: 'KR', provinces: ['首尔特别市'] },
+    kr_chungcheong: { name: '忠清地区', country: 'KR', provinces: ['忠清南道'] },
+    kr_gyeongsang: { name: '庆尚地区', country: 'KR', provinces: ['庆尚北道'] },
+    kp_pyongyang: { name: '平壤地区', country: 'KP', provinces: ['平壤市'] },
+    kp_kaesong: { name: '开城地区', country: 'KP', provinces: ['开城市'] },
     north: { name: '华北', provinces: ['北京', '天津', '河北', '山西', '内蒙古'] },
     northeast: { name: '东北', provinces: ['辽宁', '吉林', '黑龙江'] },
     east: { name: '华东', provinces: ['上海', '江苏', '浙江', '安徽', '福建', '江西', '山东', '台湾'] },
@@ -16,9 +21,17 @@
     jp_kanto: { name: '关东', country: 'JP', provinces: ['东京都', '栃木县'] },
     jp_kinki: { name: '近畿', country: 'JP', provinces: ['京都府', '滋贺县', '奈良县', '大阪府', '兵库县'] },
     jp_chugoku: { name: '中国地方', country: 'JP', provinces: ['广岛县'] },
+    kh_angkor: { name: '吴哥地区', country: 'KH', provinces: ['暹粒省'] },
+    id_java: { name: '爪哇', country: 'ID', provinces: ['中爪哇省', '日惹特区'] },
+    th_north: { name: '泰国北部', country: 'TH', provinces: ['素可泰府'] },
+    th_central: { name: '泰国中部', country: 'TH', provinces: ['大城府'] },
+    mm_central: { name: '缅甸中部', country: 'MM', provinces: ['曼德勒省'] },
+    la_north: { name: '老挝北部', country: 'LA', provinces: ['琅勃拉邦省'] },
+    vn_central: { name: '越南中部', country: 'VN', provinces: ['顺化市', '庆和省'] },
+    ph_luzon: { name: '吕宋', country: 'PH', provinces: ['马尼拉大都会'] },
   };
   const types = {
-    hall: '殿堂', pagoda: '古塔', pavilion: '楼阁', stage: '戏台',
+    hall: '殿堂', temple: '寺庙', pagoda: '古塔', pavilion: '楼阁', stage: '戏台',
     grotto: '石窟石刻', que: '石阙', wall: '城墙城防', sculpture: '彩塑雕塑', gate: '门坊', bridge: '桥梁', pillar: '经幢',
     tomb: '陵墓', residence: '宅第民居', mural: '壁画', observatory: '天文台', stele: '碑刻', column: '铜柱', palace: '宫苑', church: '教堂', mosque: '清真寺', screen: '照壁', ruins: '古城遗址', garden: '古典园林', school: '古代学府', castle: '城郭', shrine: '神社社殿',
   };

@@ -1,0 +1,113 @@
+{
+  "id": "hn_jiawenmiao",
+  "subject": "郏县文庙 · 大成殿正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Confucian_Temple_08.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/20240710_Jiaxian_Confucian_Temple_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_jiawenmiao-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郏县文庙 · 大成殿正面. Five-bay single-eaved hip-and-gable hall, four carved dragon stone front columns and side masonry piers; central stair ramp with carved dragon panel. Remove obscuring trees. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_jiawenmiao.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "郏县文庙 · 大成殿正面",
+    "明清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_jiawenmiao",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Confucian_Temple_08.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/20240710_Jiaxian_Confucian_Temple_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_jiawenmiao-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Five-bay single-eaved hip-and-gable hall, four carved dragon stone front columns and side masonry piers; central stair ramp with carved dragon panel. Remove obscuring trees. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Weathered grey-green and orange glazed roof, grey carved stone columns, dark aged timber and red doors."
+  ],
+  "generated_at": "2026-10-01T19:21:41.889814+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-163e1beb-d7d9-49de-8aed-234aa82a0443.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "54da3c5662a8642659400dd6c891aa57dfa165affbf28b44d332289390404888",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.889814+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郏县文庙 · 大成殿正面. Five-bay single-eaved hip-and-gable hall, four carved dragon stone front columns and side masonry piers; central stair ramp with carved dragon panel. Remove obscuring trees. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_jiawenmiao-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_jiawenmiao.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-163e1beb-d7d9-49de-8aed-234aa82a0443.png",
+      "sourceSha256": "54da3c5662a8642659400dd6c891aa57dfa165affbf28b44d332289390404888",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_jiawenmiao-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "郏县文庙",
+      "url": "https://wglj.pds.gov.cn/contents/12739/262641.html",
+      "publisher": "平顶山市文化广电和旅游局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_jiawenmiao",
+    "name": "郏县文庙",
+    "short": "郏县文庙",
+    "sub": "大成殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "现存大成殿与明清修缮；不采用五代创庙年",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "现存大成殿与明清修缮；不采用五代创庙年",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "hall",
+      "school"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "石雕龙柱立在五间殿宇之前，御路浮雕通向高起的台明。郏县文庙大成殿将文庙礼制浓缩在一座院落主殿。",
+    "facts": [
+      "郏县文庙为第六批国保，官方名单所列时代为金至清。",
+      "大成殿面阔五间、进深三间，前檐四根石柱雕龙；图版保留中央石阶与龙纹御路。",
+      "创庙和整体重修的纪年不等于每座现存单体确年，年表以现存主殿及明清修缮约略定位。"
+    ],
+    "caption": [
+      "郏县文庙 · 大成殿正面",
+      "明清 · 现存主体"
+    ]
+  }
+}

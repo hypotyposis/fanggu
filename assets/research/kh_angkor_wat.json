@@ -1,0 +1,118 @@
+{
+  "id": "kh_angkor_wat",
+  "name": "吴哥窟",
+  "subject": "中央五塔及紧邻台基回廊",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20191210_Angkor_Wat_towers-2.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/20191210_Angkor_Wat_towers-2.jpg/1920px-20191210_Angkor_Wat_towers-2.jpg",
+  "author": "Balon Greyjoy",
+  "license": "Public domain",
+  "license_url": "",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:20191210_Angkor_Wat_towers-2.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/20191210_Angkor_Wat_towers-2.jpg/1920px-20191210_Angkor_Wat_towers-2.jpg",
+      "file": "assets/references/kh_angkor_wat-photo.jpg",
+      "sha256": "f75ec8b0cca96b9e631301bdcd44d01c7fe2a4df101c85af3e32f765103b673e",
+      "author": "Balon Greyjoy",
+      "license": "Public domain",
+      "license_url": "",
+      "date": "10 December 2019, 10:01",
+      "description": "The main towers at Angkor Wat."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:20191210_Angkor_Wat_towers-2.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/20191210_Angkor_Wat_towers-2.jpg/1920px-20191210_Angkor_Wat_towers-2.jpg",
+      "file": "assets/references/kh_angkor_wat-photo.jpg",
+      "sha256": "f75ec8b0cca96b9e631301bdcd44d01c7fe2a4df101c85af3e32f765103b673e",
+      "author": "Balon Greyjoy",
+      "license": "Public domain",
+      "license_url": "",
+      "date": "10 December 2019, 10:01",
+      "description": "The main towers at Angkor Wat."
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kh_angkor_wat-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the actual upper central sanctuary of Angkor Wat as seen in this photo, its quincunx of FIVE lotus-bud towers with only FOUR visible because the fifth is occluded. Preserve the tall closest tower, smaller towers behind and to the left/right, surrounding galleries, stair-faced stone support and visible edges. Do not spread hidden towers into an invented five-in-a-row facade. Exclude the rest of the vast temple complex."
+  ],
+  "material_observations": [
+    "灰褐砂岩，塔冠较深，回廊柱面浅灰黄，少量黑化表面。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为中央五塔及紧邻台基回廊。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the actual upper central sanctuary of Angkor Wat as seen in this photo, its quincunx of FIVE lotus-bud towers with only FOUR visible because the fifth is occluded. Preserve the tall closest tower, smaller towers behind and to the left/right, surrounding galleries, stair-faced stone support and visible edges. Do not spread hidden towers into an invented five-in-a-row facade. Exclude the rest of the vast temple complex.",
+  "generated_file": "assets/generated/kh_angkor_wat.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T11:47:58.893533+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the actual upper central sanctuary of Angkor Wat as seen in this photo, its quincunx of FIVE lotus-bud towers with only FOUR visible because the fifth is occluded. Preserve the tall closest tower, smaller towers behind and to the left/right, surrounding galleries, stair-faced stone support and visible edges. Do not spread hidden towers into an invented five-in-a-row facade. Exclude the rest of the vast temple complex.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kh_angkor_wat-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:51:17.634435+08:00",
+      "saved_at": "2026-10-02T11:51:17.634954+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-959bd4ae-fc3c-4c3e-8203-b9fac9b6690b.png",
+      "saved_file": "assets/generated/kh_angkor_wat.png",
+      "tool_output_id": "exec-959bd4ae-fc3c-4c3e-8203-b9fac9b6690b"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-959bd4ae-fc3c-4c3e-8203-b9fac9b6690b.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e72e6da8681ec72e9f8474d46eb984a14549f5bcdd7141d67e34a527c7d6c003",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T11:51:51.278379+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "APSARA：Angkor Wat",
+      "url": "https://apsaraauthority.gov.kh/2021/06/14/angkor-wat/",
+      "publisher": "APSARA",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1125,
+  "yearApprox": true,
+  "yearNote": "苏利耶跋摩二世时期；1125仅为12世纪上半叶的年表约略定位，后世保护修复另记。",
+  "country": "KH",
+  "caption": [
+    "吴哥窟 · 中央五塔及紧邻台基回廊",
+    "12世纪上半叶"
+  ]
+}

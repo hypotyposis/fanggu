@@ -25,11 +25,11 @@ test('dense future additions do not overlap point hit targets or add vertical ro
   const larger = Array.from({ length: 10 }, (_, i) => SITES.map(site => ({ ...site, id: `${site.id}_${i}` }))).flat();
   const packed = timeline.clusters(larger, DYN);
   assert.equal(packed.reduce((n, group) => n + group.sites.length, 0), larger.length);
-  for (const lane of ['north', 'south', 'japan']) {
+  for (const lane of ['north', 'south', 'japan', 'southeastAsia', 'korea']) {
     const row = packed.filter(group => group.lane === lane);
     for (let i = 1; i < row.length; i++) assert(row[i].x - row[i - 1].x >= 32);
   }
-  assert.equal(new Set(packed.map(group => group.y)).size, 3);
+  assert.equal(new Set(packed.map(group => group.y)).size, 5);
 });
 
 test('all dynasty selections and all pages remain reachable in chronological order', () => {

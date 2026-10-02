@@ -1,0 +1,127 @@
+{
+  "id": "kh_bayon",
+  "name": "巴戎寺",
+  "subject": "中央面像塔群与直接支承台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:The_Bayon_(12450324194).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Bayon_%2812450324194%29.jpg/1920px-The_Bayon_%2812450324194%29.jpg",
+  "author": "Clay Gilliland",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:The_Bayon_(12450324194).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Bayon_%2812450324194%29.jpg/1920px-The_Bayon_%2812450324194%29.jpg",
+      "file": "assets/references/kh_bayon-photo.jpg",
+      "sha256": "9403ce8ae79a787b209000a8ccf2b8c7700238bb8133e0d0fa7fa6c23a18745f",
+      "author": "Clay Gilliland",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2013-10-25 07:12",
+      "description": "The Bayon  is a well-known and richly decorated Khmer temple at Angkor in Cambodia. Built in the late 12th or early 13th century as the official state temple of the Mahayana Buddhist King Jayavarman VII, the Bayon stands at the centre of Jayavarman's capital, Angkor Thom. Following Jayavarman's death, it was modified and augmented by later Hindu and Theravada Buddhist kings in accordance with their own religious preferences.\n\nThe Bayon's most distinctive feature is the multitude of serene and massive stone faces on the many towers which jut out from the upper terrace and cluster around its central peak. The temple is known also for two impressive sets of bas-reliefs, which present an unusual combination of mythological, historical, and mundane scenes. The current main conservatory body, the Japanese Government Team for the Safeguarding of Angkor has described the temple as \"the most striking expression of the baroque style\" of Khmer architecture, as contrasted with the classical style of Angkor Wat"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:The_Bayon_(12450324194).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Bayon_%2812450324194%29.jpg/1920px-The_Bayon_%2812450324194%29.jpg",
+      "file": "assets/references/kh_bayon-photo.jpg",
+      "sha256": "9403ce8ae79a787b209000a8ccf2b8c7700238bb8133e0d0fa7fa6c23a18745f",
+      "author": "Clay Gilliland",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "date": "2013-10-25 07:12",
+      "description": "The Bayon  is a well-known and richly decorated Khmer temple at Angkor in Cambodia. Built in the late 12th or early 13th century as the official state temple of the Mahayana Buddhist King Jayavarman VII, the Bayon stands at the centre of Jayavarman's capital, Angkor Thom. Following Jayavarman's death, it was modified and augmented by later Hindu and Theravada Buddhist kings in accordance with their own religious preferences.\n\nThe Bayon's most distinctive feature is the multitude of serene and massive stone faces on the many towers which jut out from the upper terrace and cluster around its central peak. The temple is known also for two impressive sets of bas-reliefs, which present an unusual combination of mythological, historical, and mundane scenes. The current main conservatory body, the Japanese Government Team for the Safeguarding of Angkor has described the temple as \"the most striking expression of the baroque style\" of Khmer architecture, as contrasted with the classical style of Angkor Wat"
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the central face-tower cluster of BAYON shown in the subject photograph: one tall central mass, visible smaller face towers clustered at left and right, directly supporting terrace and central steps. Preserve the photograph-visible towers and their giant carved faces, not a generic Angkor Wat lotus tower. Remove foreground courtyard rubble and vegetation."
+  ],
+  "material_observations": [
+    "灰褐砂岩，风化面像与塔身略暗，浅灰门框和石阶，少量苔绿。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为中央面像塔群与直接支承台基。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 中央面像塔群与直接支承台基\nPRESERVE: Landscape 1536x1024. Draw the central face-tower cluster of BAYON shown in the subject photograph: one tall central mass, visible smaller face towers clustered at left and right, directly supporting terrace and central steps. Preserve the photograph-visible towers and their giant carved faces, not a generic Angkor Wat lotus tower. Remove foreground courtyard rubble and vegetation.\nOBSERVED MATERIAL COLORS: 灰褐砂岩，风化面像与塔身略暗，浅灰门框和石阶，少量苔绿。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generator": "built-in image_gen.imagegen",
+  "input_images": [
+    "assets/generated/kh_bayon.png",
+    "assets/references/kh_bayon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/kh_bayon.png",
+  "original_research": "assets/research/kh_bayon.json",
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T11:52:08.110046+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 中央面像塔群与直接支承台基\nPRESERVE: Landscape 1536x1024. Draw the central face-tower cluster of BAYON shown in the subject photograph: one tall central mass, visible smaller face towers clustered at left and right, directly supporting terrace and central steps. Preserve the photograph-visible towers and their giant carved faces, not a generic Angkor Wat lotus tower. Remove foreground courtyard rubble and vegetation.\nOBSERVED MATERIAL COLORS: 灰褐砂岩，风化面像与塔身略暗，浅灰门框和石阶，少量苔绿。",
+      "input_images": [
+        "assets/generated/kh_bayon.png",
+        "assets/references/kh_bayon-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:55:11.866532+08:00",
+      "saved_at": "2026-10-02T11:55:11.866955+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-2a9c2030-b4b3-4aa9-bcde-76db0d3fad6c.png",
+      "saved_file": "assets/colored/kh_bayon.png",
+      "tool_output_id": "exec-2a9c2030-b4b3-4aa9-bcde-76db0d3fad6c"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-2a9c2030-b4b3-4aa9-bcde-76db0d3fad6c.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "331ef445d921e24142c74bafd5183ce4e4be9336b3518b7b6ed5171db8e9df85",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "factual_sources": [
+    {
+      "title": "UNESCO：Bayon保护项目",
+      "url": "https://www.unesco.org/en/articles/unesco-celebrates-30-years-safeguarding-bayon-temple-angkor-thom-project",
+      "publisher": "UNESCO",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1200,
+  "yearApprox": true,
+  "yearNote": "吴哥时期；1200为12—13世纪之交的约略定位，现存塔群经历修缮，不按单一年份视为完整原构。",
+  "country": "KH",
+  "caption": [
+    "巴戎寺 · 中央面像塔群与直接支承台基",
+    "12世纪末—13世纪初"
+  ],
+  "preview_check": {
+    "observed_at": "2026-10-02T12:17:44.915228+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "note": "名单获同意，图版尚待用户人眼验收。"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "hn_gaoge",
+  "subject": "高阁寺 · 阁楼及高台上部",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A%E9%AB%98%E9%98%81%E5%AF%BA.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/%E9%AB%98%E9%98%81%E5%AF%BA.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "三猎",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_gaoge-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 高阁寺 · 阁楼及高台上部. Draw the existing double-eaved pavilion atop high masonry platform, keeping visible red upper wall and pale stone balustrade. Oblique low-angle photo geometry, retain only photographed upper platform; do not invent unseen stairs or lower platform. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_gaoge.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "高阁寺 · 阁楼及高台上部",
+    "明 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_gaoge",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A%E9%AB%98%E9%98%81%E5%AF%BA.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/%E9%AB%98%E9%98%81%E5%AF%BA.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_gaoge-photo.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Draw the existing double-eaved pavilion atop high masonry platform, keeping visible red upper wall and pale stone balustrade. Oblique low-angle photo geometry, retain only photographed upper platform; do not invent unseen stairs or lower platform. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Grey roof tiles, dark aged bracket timber with blue-green traces, red upper walls and warm grey brick platform."
+  ],
+  "generation_started_at": "2026-10-01T19:25:50.974Z",
+  "generated_at": "2026-10-01T19:26:45.657796+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-9881f721-1a25-4ec6-bd0e-7fb0a6cbbd4d.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1c5c4f84232115ab808e8878d6ae070098739ac9f6905ff0f7be9c04757f96d5",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:25:50.974Z",
+      "received_at": "2026-10-01T19:26:45.657796+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 高阁寺 · 阁楼及高台上部. Draw the existing double-eaved pavilion atop high masonry platform, keeping visible red upper wall and pale stone balustrade. Oblique low-angle photo geometry, retain only photographed upper platform; do not invent unseen stairs or lower platform. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_gaoge-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_gaoge.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-9881f721-1a25-4ec6-bd0e-7fb0a6cbbd4d.png",
+      "sourceSha256": "1c5c4f84232115ab808e8878d6ae070098739ac9f6905ff0f7be9c04757f96d5",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_gaoge-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "第七批全国重点文物保护单位：高阁寺",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf",
+      "publisher": "国务院",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_gaoge",
+    "name": "高阁寺",
+    "short": "高阁寺",
+    "sub": "阁楼及高台上部",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代建筑及后世修缮；年表为约略定位",
+    "year": 1500,
+    "yearApprox": true,
+    "yearNote": "明代建筑及后世修缮；年表为约略定位",
+    "yearLabel": "明约略",
+    "placeKey": "anyang",
+    "place": "河南 · 安阳",
+    "types": [
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "两重飞檐从高台上探出，砖石平台与红色阁壁逐级相叠。安阳高阁寺以高台楼阁的形制留在古城之中。",
+    "facts": [
+      "高阁寺位于安阳，国保第七批名单所列时代为明至清。",
+      "图版按低角度实拍绘楼阁和高台上部，未绘照片不可见的台阶及完整下部。",
+      "单体精确重建年尚缺足够直接证据，年表按明代约略定位，并保留后世修缮说明。"
+    ],
+    "caption": [
+      "高阁寺 · 阁楼及高台上部",
+      "明 · 现存主体"
+    ]
+  }
+}

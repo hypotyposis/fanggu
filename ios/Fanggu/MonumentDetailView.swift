@@ -7,7 +7,6 @@ struct MonumentDetailView: View {
     @State private var editingVisit = false
     @State private var editingReview = false
     @State private var reveal: CGFloat = 0
-    @State private var completingVisit = false
 
     private var record: VisitRecord { library.record(for: site) }
     private var review: Review { library.review(for: site) }
@@ -50,11 +49,11 @@ struct MonumentDetailView: View {
                     }
                 }
                 VStack(spacing: 8) {
-                    ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
-                                height: 320, reveal: reveal, stamping: completingVisit)
+                    ArtworkView(site: site, visited: record.status == .visited,
+                                height: 320, reveal: reveal)
                         .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
                         .accessibilityIdentifier("detail-artwork")
-                    if record.status != .visited || completingVisit {
+                    if record.status != .visited {
                         ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
                             .accessibilityIdentifier("detail-arrival-slider")
                     }
@@ -159,13 +158,7 @@ struct MonumentDetailView: View {
     }
 
     private func finishArrival() {
-        withAnimation(.spring(response: 0.82, dampingFraction: 0.7)) {
-            reveal = 1
-            completingVisit = true
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.35) {
-            withAnimation(.easeInOut(duration: 0.25)) { completingVisit = false }
-        }
+        reveal = 0
     }
 }
 
@@ -176,6 +169,8 @@ struct ArrivalSlider: View {
     let onComplete: () -> Void
     @State private var prepared = false
     @State private var finished = false
+    @State private var furthestStep = 0
+    @GestureState private var dragging = false
 
     var body: some View {
         GeometryReader { geometry in
@@ -192,12 +187,20 @@ struct ArrivalSlider: View {
                     .background(Palette.red)
                     .contentShape(Rectangle())
                     .gesture(DragGesture(minimumDistance: 5, coordinateSpace: .global)
+                        .updating($dragging) { _, active, _ in active = true }
                         .onChanged {
-                            if !prepared { Haptics.prepareArrival(); prepared = true }
+                            guard !finished else { return }
+                            if !prepared { Haptics.beginArrival(); prepared = true }
                             progress = min(1, max(0, $0.translation.width / max(1, geometry.size.width - 50)))
+                            let step = Int(progress * 5)
+                            if step > furthestStep {
+                                furthestStep = step
+                                Haptics.arrivalResistance(step: step)
+                            }
                         }
                         .onEnded { value in
                             prepared = false
+                            furthestStep = 0
                             if finished { return }
                             progress = min(1, max(0, value.translation.width / max(1, geometry.size.width - 50)))
                             if progress >= 1 && checkIn() { return }
@@ -214,6 +217,14 @@ struct ArrivalSlider: View {
             .accessibilityAction(named: Text("完成到访")) { _ = checkIn() }
         }
         .frame(height: 54)
+        .onChange(of: dragging) { _, active in
+            // SwiftUI also resets GestureState when scrolling cancels the drag.
+            if !active && prepared && !finished {
+                prepared = false
+                furthestStep = 0
+                withAnimation(.easeOut(duration: 0.38)) { progress = 0 }
+            }
+        }
     }
 
     @discardableResult private func checkIn() -> Bool {

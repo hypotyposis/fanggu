@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css?v=20260918-ningxia-integrated1">
+<link rel="stylesheet" href="style.css?v=20261002-korea1">
 </head>
 <body>
 
@@ -66,7 +66,7 @@
 
   <section class="block" id="timeline">
     <div class="wrap">
-      <div class="sec-head tl-heading"><h2>年表</h2><span class="mono">东汉至今 · 中日对照</span><label class="tl-picker"><span class="sr-only">选择朝代或时代</span><select id="tl-period"></select></label></div>
+      <div class="sec-head tl-heading"><h2>年表</h2><span class="mono">东汉至今 · 东亚与东南亚</span><label class="tl-picker"><span class="sr-only">选择朝代或时代</span><select id="tl-period"></select></label></div>
       <div class="tl-wrap" tabindex="0" role="region" aria-label="年代总览，窄屏可左右滚动"><svg class="tl" id="tlsvg"></svg></div>
       <div class="tl-legend"><span><i class="legend-dot filled"></i>已到访</span><span><i class="legend-dot"></i>尚未到访</span><span><i class="legend-count">3</i>相邻年份聚合</span><span class="tl-hint">点选朝代或圆点，展开古迹</span><span class="tl-pan-hint">← 左右滑动年表 →</span></div>
       <div class="tl-preview" id="tl-preview" role="tooltip" hidden></div>
@@ -74,7 +74,7 @@
         <div class="tl-reading-head"><div><h3 id="tl-selection-title">全部时期</h3><span id="tl-result" aria-live="polite"></span><button id="tl-reset" type="button" hidden>查看全部</button></div><div class="tl-pagination" role="group" aria-label="年表古迹翻页"><button id="tl-prev" type="button" aria-label="上一页古迹">←</button><span id="tl-page" aria-live="polite"></span><button id="tl-next" type="button" aria-label="下一页古迹">→</button></div></div>
         <div class="tl-cards" id="tl-cards"></div>
       </section>
-      <details class="tl-notes" id="tl-notes"><summary>读图说明</summary><p>点选朝代色带，可查看该朝代的全部收录；宋、辽金、明清沿用图鉴中的合并分类。中国部分将南北并立政权分列，统一时期横跨两线；北汉等北地五代遗存置于北侧，十国另标延续至979年。日本单列，仅展示涉及已收录建筑的时代，空白不代表没有历史时期。</p><p>600年以前与1250年以后的时间比例经过压缩，折线表示尺度变化。邻近年份的古迹合为一个数字圆点，点选后可逐一细读；聚合点实心表示其中全部已到访，具体状态见卡片。年表依据现存主体年代，部分仅作约略定位，确切纪年与重修沿革以详情为准。</p></details>
+      <details class="tl-notes" id="tl-notes"><summary>读图说明</summary><p>点选朝代色带，可查看该朝代的全部收录；宋、辽金、明清沿用图鉴中的合并分类。中国部分将南北并立政权分列，统一时期横跨两线；北汉等北地五代遗存置于北侧，十国另标延续至979年。日本、东南亚与朝鲜半岛分别单列；东南亚当地时代可从时期选择器查看。仅展示已收录建筑，空白不代表没有历史时期。</p><p>600年以前与1250年以后的时间比例经过压缩，折线表示尺度变化。邻近年份的古迹合为一个数字圆点，点选后可逐一细读；聚合点实心表示其中全部已到访，具体状态见卡片。年表依据现存主体年代，部分仅作约略定位，确切纪年与重修沿革以详情为准。</p></details>
     </div>
   </section>
 
@@ -95,7 +95,7 @@
         <label><span>国家</span><select id="atlas-country"><option value="all">全部国家</option></select></label>
         <label class="dynasty-select"><span>朝代 / 时代</span><select id="atlas-dynasty"><option value="all">全部时代</option></select></label>
         <label><span>地区</span><select id="atlas-region"><option value="all">全部地区</option></select></label>
-        <label><span>省份 / 都道府县</span><select id="atlas-province"><option value="all">全部省份与府县</option></select></label>
+        <label><span>行政区</span><select id="atlas-province"><option value="all">全部省份与府县</option></select></label>
         <label><span>建筑类型</span><select id="atlas-type"><option value="all">全部类型</option></select></label>
       </div>
       <div class="atlas-filter-summary"><span class="mono" id="atlas-result" role="status" aria-live="polite"></span><button type="button" id="atlas-reset" hidden>清除筛选</button></div>
@@ -153,12 +153,12 @@
 <script src="library.js?v=20260917-reviews1"></script>
 <script src="protection-data.js?v=20261002-hebei-approved1"></script>
 <script src="protection.js?v=20260917-gansu1"></script>
-<script src="catalog.js?v=20261002-taiwan1"></script>
+<script src="catalog.js?v=20261002-korea1"></script>
 <script src="navigation.js?v=20260915-timeline1"></script>
 <script src="visit-slider.js?v=20260916-reveal1"></script>
 <script src="journal.js?v=20260917-reviews1"></script>
-<script src="timeline.js?v=20261002-taiwan1"></script>
-<script src="main.js?v=20260916-map1"></script>
-<script src="atlas.js?v=20260918-reviews-merge1"></script>
+<script src="timeline.js?v=20261002-korea1"></script>
+<script src="main.js?v=20261002-southeast-asia1"></script>
+<script src="atlas.js?v=20261002-southeast-asia1"></script>
 </body>
 </html>

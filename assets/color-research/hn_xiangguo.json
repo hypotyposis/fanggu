@@ -1,0 +1,102 @@
+{
+  "id": "hn_xiangguo",
+  "name": "大相国寺",
+  "subject": "大相国寺 · 大雄宝殿正面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_xiangguo.png",
+    "assets/references/hn_xiangguo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 大相国寺 · 大雄宝殿正面\nPHOTOGRAPHED MATERIAL COLORS: Muted grey-green and yellow glazed tiles, dark red wooden columns and lattice doors, blue-green bracket paint and pale stone terrace.\nSeven front bays, TWO eave tiers, double-eaved hip-and-gable roof, stone balustraded terrace and central stairs. Remove foreground people and parasols. Landscape 1536x1024.",
+  "material_observations": [
+    "Muted grey-green and yellow glazed tiles, dark red wooden columns and lattice doors, blue-green bracket paint and pale stone terrace."
+  ],
+  "references": [
+    {
+      "id": "hn_xiangguo",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/20250531_Daxiong_Baodian%2C_Daxiangguo_Si.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_xiangguo-photo.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_xiangguo.json",
+  "output": "assets/colored/hn_xiangguo.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:22:14.277Z",
+  "generated_at": "2026-10-01T19:26:45.659828+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-c515cc7f-7d1b-4fdb-8a29-f3c88cdcbc2c.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "29f3d1dc3b5b2fe85d03bcb040644437a78ef188e836d5d47f687851559f2012",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:22:14.277Z",
+      "received_at": "2026-10-01T19:26:45.659828+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 大相国寺 · 大雄宝殿正面\nPHOTOGRAPHED MATERIAL COLORS: Muted grey-green and yellow glazed tiles, dark red wooden columns and lattice doors, blue-green bracket paint and pale stone terrace.\nSeven front bays, TWO eave tiers, double-eaved hip-and-gable roof, stone balustraded terrace and central stairs. Remove foreground people and parasols. Landscape 1536x1024.",
+      "input_images": [
+        "assets/generated/hn_xiangguo.png",
+        "assets/references/hn_xiangguo-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_xiangguo.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-c515cc7f-7d1b-4fdb-8a29-f3c88cdcbc2c.png",
+      "sourceSha256": "29f3d1dc3b5b2fe85d03bcb040644437a78ef188e836d5d47f687851559f2012",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "大相国寺现存建筑",
+      "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hnly/zywh/articlea27d03edffc44e85a80fdf8022a87edd.html",
+      "publisher": "河南省台办",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_xiangguo",
+    "name": "大相国寺",
+    "short": "大相国寺",
+    "sub": "大雄宝殿正面",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆重建阶段，不是北齐建寺年",
+    "year": 1766,
+    "yearApprox": false,
+    "yearNote": "清乾隆重建阶段，不是北齐建寺年",
+    "yearLabel": "1766",
+    "placeKey": "hn_开封",
+    "place": "河南 · 开封",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "两重屋檐覆盖七间大殿，石栏和中央阶道把红色门窗托起。大相国寺大雄宝殿呈现清代重建的寺院尺度。",
+    "facts": [
+      "国保正式单位名称为相国寺，第七批公布。",
+      "图版选大雄宝殿正面：七间面阔、重檐歇山与石栏台基。",
+      "1766年用于清乾隆重建阶段定位；寺院初创更早，现存殿堂不能按北齐创建年断代。"
+    ],
+    "caption": [
+      "大相国寺 · 大雄宝殿正面",
+      "清 · 现存主体"
+    ]
+  }
+}

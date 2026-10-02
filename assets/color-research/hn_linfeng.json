@@ -1,0 +1,109 @@
+{
+  "id": "hn_linfeng",
+  "name": "临沣寨",
+  "subject": "临沣寨 · 西门及相连红石寨墙",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_linfeng.png",
+    "assets/references/hn_linfeng-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 临沣寨 · 西门及相连红石寨墙\nPHOTOGRAPHED MATERIAL COLORS: Reddish ochre sandstone blocks with pale mortar joints, grey-brown worn stone arch and earth threshold.\nOne rounded arch gate inset in red sandstone wall, small blank rectangular plaque over arch, sloping curved masonry parapet on both sides as photo. No roofed pavilion or invented battlements. Landscape 1536x1024.",
+  "material_observations": [
+    "Reddish ochre sandstone blocks with pale mortar joints, grey-brown worn stone arch and earth threshold."
+  ],
+  "references": [
+    {
+      "id": "hn_linfeng",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_linfeng-photo.jpg",
+      "author": "Lanch",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_linfeng.json",
+  "output": "assets/colored/hn_linfeng.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:27:36.142Z",
+  "generated_at": "2026-10-01T19:30:39.893288+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-b8fe7d0d-dd41-455b-863e-226a1e85b64b.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "35754e41669a0dc317263f9ddd431d12d6eb9376e548003662907686767c8cb7",
+    "seeds": [
+      [
+        768,
+        614
+      ]
+    ],
+    "seed_note": "已查看原件：1536×1024画布中[768,614]位于寨门内的透空白色区域，非石材或门洞暗部；去除这一封闭白底。"
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:27:36.142Z",
+      "received_at": "2026-10-01T19:30:39.893288+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 临沣寨 · 西门及相连红石寨墙\nPHOTOGRAPHED MATERIAL COLORS: Reddish ochre sandstone blocks with pale mortar joints, grey-brown worn stone arch and earth threshold.\nOne rounded arch gate inset in red sandstone wall, small blank rectangular plaque over arch, sloping curved masonry parapet on both sides as photo. No roofed pavilion or invented battlements. Landscape 1536x1024.",
+      "input_images": [
+        "assets/generated/hn_linfeng.png",
+        "assets/references/hn_linfeng-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_linfeng.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-b8fe7d0d-dd41-455b-863e-226a1e85b64b.png",
+      "sourceSha256": "35754e41669a0dc317263f9ddd431d12d6eb9376e548003662907686767c8cb7",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "临沣寨",
+      "url": "https://wwj.henan.gov.cn/2022/10-18/2625360.html",
+      "publisher": "河南省文物局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_linfeng",
+    "name": "临沣寨",
+    "short": "临沣寨",
+    "sub": "西门及相连红石寨墙",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "同治元年红石寨墙重建",
+    "year": 1862,
+    "yearApprox": false,
+    "yearNote": "同治元年红石寨墙重建",
+    "yearLabel": "1862",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "gate",
+      "wall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "红石寨墙弯折围住一道拱门，石块与灰缝构成沉厚的入口。临沣寨以现存寨墙保存着清代村落防御的边界。",
+    "facts": [
+      "临沣寨位于郏县，是第七批国保。",
+      "现存红石寨墙于清同治元年（1862）重建，年表采用这一阶段。",
+      "图版仅绘参考照片中的西门及相连寨墙；保留石拱、门额和墙体起伏，不补造门楼。"
+    ],
+    "caption": [
+      "临沣寨 · 西门及相连红石寨墙",
+      "清 · 现存主体"
+    ]
+  }
+}

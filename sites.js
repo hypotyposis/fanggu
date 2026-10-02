@@ -1,5 +1,8 @@
 /* sites.js — heritage sites, their chapters, places and drawing parameters. */
 const DYN = {
+  ko_silla: { glyph: '新罗', name: '朝鲜半岛 · 统一新罗', acc: 'var(--ko-silla)', start: 668, end: 935, timelineLane: 'korea' },
+  ko_goryeo: { glyph: '高丽', name: '朝鲜半岛 · 高丽', acc: 'var(--ko-goryeo)', start: 918, end: 1392, timelineLane: 'korea' },
+  ko_joseon: { glyph: '朝鲜王朝', name: '朝鲜半岛 · 朝鲜王朝', acc: 'var(--ko-joseon)', start: 1392, end: 1910, timelineLane: 'korea' },
   han: { glyph: '汉', name: '汉', acc: 'var(--ochre)' },
   jin: { glyph: '东晋', name: '东晋', acc: 'var(--jin)', start: 317, end: 420 },
   goguryeo: { glyph: '高句丽', name: '高句丽', acc: 'var(--goguryeo)' },
@@ -29,6 +32,15 @@ const DYN = {
   jp_momoyama: { glyph: '桃山', name: '日本 · 桃山', acc: 'var(--jp-momoyama)', country: 'JP', start: 1573, end: 1615 },
   jp_edo: { glyph: '江户', name: '日本 · 江户', acc: 'var(--jp-edo)', country: 'JP', start: 1603, end: 1867 },
   jp_showa: { glyph: '昭和', name: '日本 · 昭和', acc: 'var(--jp-showa)', country: 'JP', start: 1926, end: 1989 },
+  kh_angkor: { glyph: '吴哥', name: '柬埔寨 · 吴哥', acc: 'var(--kh-angkor)', country: 'KH', start: 900, end: 1300 },
+  id_java_classical: { glyph: '古爪哇', name: '印度尼西亚 · 古典爪哇', acc: 'var(--id-java)', country: 'ID', start: 750, end: 1000 },
+  th_sukhothai: { glyph: '素可泰', name: '泰国 · 素可泰', acc: 'var(--th-sukhothai)', country: 'TH', start: 1200, end: 1500 },
+  th_ayutthaya: { glyph: '大城', name: '泰国 · 阿瑜陀耶', acc: 'var(--th-ayutthaya)', country: 'TH', start: 1350, end: 1767 },
+  mm_bagan: { glyph: '蒲甘', name: '缅甸 · 蒲甘', acc: 'var(--mm-bagan)', country: 'MM', start: 1000, end: 1300 },
+  la_lan_xang: { glyph: '澜沧', name: '老挝 · 澜沧', acc: 'var(--la-lan-xang)', country: 'LA', start: 1350, end: 1700 },
+  vn_champa: { glyph: '占婆', name: '越南 · 占婆', acc: 'var(--vn-champa)', country: 'VN', start: 1200, end: 1400 },
+  vn_nguyen: { glyph: '阮朝', name: '越南 · 阮朝', acc: 'var(--vn-nguyen)', country: 'VN', start: 1802, end: 1945 },
+  ph_spanish: { glyph: '西殖', name: '菲律宾 · 西班牙殖民时期', acc: 'var(--ph-spanish)', country: 'PH', start: 1565, end: 1898 },
 };
 
 const SITES = [
@@ -13267,3 +13279,1313 @@ SITES.push(
   "tall": true
 }
 );
+
+// 河南国保 · 2026-10-02，图版均待用户验收。
+PLACES.push(...[
+  {
+    "key": "hn_tangyin",
+    "name": "汤阴",
+    "prov": "河南",
+    "lat": 35.92,
+    "lon": 114.35
+  },
+  {
+    "key": "hn_zhengzhou",
+    "name": "郑州",
+    "prov": "河南",
+    "lat": 34.75,
+    "lon": 113.68
+  },
+  {
+    "key": "hn_jiaxian",
+    "name": "郏县",
+    "prov": "河南",
+    "lat": 33.97,
+    "lon": 113.21
+  }
+]);
+SITES.push(...[
+  {
+    "id": "hn_yanqing",
+    "name": "延庆观",
+    "short": "延庆观",
+    "sub": "玉皇阁现存主体",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代现存玉皇阁；年表为约略定位",
+    "year": 1280,
+    "yearApprox": true,
+    "yearNote": "元代现存玉皇阁；年表为约略定位",
+    "yearLabel": "元约略",
+    "placeKey": "hn_开封",
+    "place": "河南 · 开封",
+    "types": [
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "方形砖阁向上收成八角亭，琉璃构件层层托起阁顶。玉皇阁保存着延庆观元代建筑的独特轮廓。",
+    "facts": [
+      "玉皇阁是延庆观现存古建主体，为砖砌仿木楼阁，外观三层。",
+      "下层方形，上部八角；图版选玉皇阁与台基，不包含现代增建的殿堂。",
+      "建筑曾实施整体顶升保护。年表以元代约略定位，不把保护工程年代当作建造年。"
+    ],
+    "caption": [
+      "延庆观 · 玉皇阁现存主体",
+      "元 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_yuefei",
+    "name": "汤阴岳飞庙",
+    "short": "汤阴岳飞庙",
+    "sub": "二殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清建筑与后世修缮；二殿确切营建年未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "明清建筑与后世修缮；二殿确切营建年未详",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_tangyin",
+    "place": "河南 · 汤阴",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "五间殿宇排开红色门窗，青灰屋面舒展。汤阴岳飞庙以明清建筑群延续对岳飞的纪念。",
+    "facts": [
+      "汤阴岳飞庙是第五批国保，现存建筑群历经明清营建与修缮。",
+      "图版选实拍所示二殿正面，保留五间面阔、单层屋檐与门窗分布。",
+      "二殿确切营建年尚未确认，年表按明清现存主体约略定位，未采用岳飞生活年代。"
+    ],
+    "caption": [
+      "汤阴岳飞庙 · 二殿正面",
+      "明清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_songyang",
+    "name": "嵩阳书院",
+    "short": "嵩阳书院",
+    "sub": "清代大门正面",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "现存大门属清代并经修缮；康熙时期约略定位",
+    "year": 1680,
+    "yearApprox": true,
+    "yearNote": "现存大门属清代并经修缮；康熙时期约略定位",
+    "yearLabel": "清约略",
+    "placeKey": "dengfeng",
+    "place": "河南 · 登封",
+    "types": [
+      "gate",
+      "school"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "卷棚屋面低低覆盖三间大门，石柱与灰砖把入口收得朴素。书院的声名来自宋代讲学，眼前建筑则延续清代格局。",
+    "facts": [
+      "嵩阳书院中轴依次为大门、先圣殿、讲堂、道统祠和藏书楼。",
+      "现存建筑与布局主要属清代；图版仅绘大门，不将北魏创寺或北宋赐名年用作这座门的营建年。",
+      "第五批原公布名称为大唐嵩阳观纪圣德感应之颂碑；本条目的书院建筑保护范围另以登封官方资料复核。"
+    ],
+    "caption": [
+      "嵩阳书院 · 清代大门正面",
+      "清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_xiangguo",
+    "name": "大相国寺",
+    "short": "大相国寺",
+    "sub": "大雄宝殿正面",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清乾隆重建阶段，不是北齐建寺年",
+    "year": 1766,
+    "yearApprox": false,
+    "yearNote": "清乾隆重建阶段，不是北齐建寺年",
+    "yearLabel": "1766",
+    "placeKey": "hn_开封",
+    "place": "河南 · 开封",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "两重屋檐覆盖七间大殿，石栏和中央阶道把红色门窗托起。大相国寺大雄宝殿呈现清代重建的寺院尺度。",
+    "facts": [
+      "国保正式单位名称为相国寺，第七批公布。",
+      "图版选大雄宝殿正面：七间面阔、重檐歇山与石栏台基。",
+      "1766年用于清乾隆重建阶段定位；寺院初创更早，现存殿堂不能按北齐创建年断代。"
+    ],
+    "caption": [
+      "大相国寺 · 大雄宝殿正面",
+      "清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_zzchenghuang",
+    "name": "郑州城隍庙",
+    "short": "郑州城隍庙",
+    "sub": "三间大殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "现存明清古建筑；单体确切营建年未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "现存明清古建筑；单体确切营建年未详",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_zhengzhou",
+    "place": "河南 · 郑州",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "绿瓦屋面之下，浅色石柱围出三间殿面，红色门板与青绿斗拱相映。郑州城隍庙保留着明清城市祭祀建筑的片段。",
+    "facts": [
+      "第七批单位全称为郑州城隍庙（含文庙大成殿）。",
+      "图版仅绘城隍庙三间大殿，保留单檐歇山屋顶、前檐石柱和门窗，不并入另一处文庙建筑。",
+      "现存建筑历经明清营建修缮，单体确年未详；年表为约略定位。"
+    ],
+    "caption": [
+      "郑州城隍庙 · 三间大殿正面",
+      "明清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_jiawenmiao",
+    "name": "郏县文庙",
+    "short": "郏县文庙",
+    "sub": "大成殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "现存大成殿与明清修缮；不采用五代创庙年",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "现存大成殿与明清修缮；不采用五代创庙年",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "hall",
+      "school"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "石雕龙柱立在五间殿宇之前，御路浮雕通向高起的台明。郏县文庙大成殿将文庙礼制浓缩在一座院落主殿。",
+    "facts": [
+      "郏县文庙为第六批国保，官方名单所列时代为金至清。",
+      "大成殿面阔五间、进深三间，前檐四根石柱雕龙；图版保留中央石阶与龙纹御路。",
+      "创庙和整体重修的纪年不等于每座现存单体确年，年表以现存主殿及明清修缮约略定位。"
+    ],
+    "caption": [
+      "郏县文庙 · 大成殿正面",
+      "明清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_jiahuiguan",
+    "name": "郏县山陕会馆",
+    "short": "郏县山陕会馆",
+    "sub": "门楼与钟鼓楼组合",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代建筑，现存组合单体确年未详",
+    "year": 1700,
+    "yearApprox": true,
+    "yearNote": "清代建筑，现存组合单体确年未详",
+    "yearLabel": "清约略",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "gate",
+      "stage",
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "钟鼓楼在门楼两侧并立，灰砖和雕木把三座建筑连成一体。郏县山陕会馆的入口也承担着聚会与演戏的公共功能。",
+    "facts": [
+      "郏县山陕会馆是第七批国保，清代商帮会馆建筑。",
+      "图版选择门楼与两侧钟鼓楼组合，不绘后部拜殿及全院。",
+      "门楼兼具戏楼功能；设色参考现存青灰瓦、灰砖和暗褐雕木，具体单体营建年暂以清代约略定位。"
+    ],
+    "caption": [
+      "郏县山陕会馆 · 门楼与钟鼓楼组合",
+      "清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_linfeng",
+    "name": "临沣寨",
+    "short": "临沣寨",
+    "sub": "西门及相连红石寨墙",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "同治元年红石寨墙重建",
+    "year": 1862,
+    "yearApprox": false,
+    "yearNote": "同治元年红石寨墙重建",
+    "yearLabel": "1862",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "gate",
+      "wall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "红石寨墙弯折围住一道拱门，石块与灰缝构成沉厚的入口。临沣寨以现存寨墙保存着清代村落防御的边界。",
+    "facts": [
+      "临沣寨位于郏县，是第七批国保。",
+      "现存红石寨墙于清同治元年（1862）重建，年表采用这一阶段。",
+      "图版仅绘参考照片中的西门及相连寨墙；保留石拱、门额和墙体起伏，不补造门楼。"
+    ],
+    "caption": [
+      "临沣寨 · 西门及相连红石寨墙",
+      "清 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_gaoge",
+    "name": "高阁寺",
+    "short": "高阁寺",
+    "sub": "阁楼及高台上部",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代建筑及后世修缮；年表为约略定位",
+    "year": 1500,
+    "yearApprox": true,
+    "yearNote": "明代建筑及后世修缮；年表为约略定位",
+    "yearLabel": "明约略",
+    "placeKey": "anyang",
+    "place": "河南 · 安阳",
+    "types": [
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "两重飞檐从高台上探出，砖石平台与红色阁壁逐级相叠。安阳高阁寺以高台楼阁的形制留在古城之中。",
+    "facts": [
+      "高阁寺位于安阳，国保第七批名单所列时代为明至清。",
+      "图版按低角度实拍绘楼阁和高台上部，未绘照片不可见的台阶及完整下部。",
+      "单体精确重建年尚缺足够直接证据，年表按明代约略定位，并保留后世修缮说明。"
+    ],
+    "caption": [
+      "高阁寺 · 阁楼及高台上部",
+      "明 · 现存主体"
+    ]
+  },
+  {
+    "id": "hn_wenzhige",
+    "name": "浚县文治阁",
+    "short": "浚县文治阁",
+    "sub": "十字街钟鼓楼现存主体",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "现存楼阁据研究为康熙时期复建，年表约略定位；国保名单所列明代为城墙及文治阁整体时代",
+    "year": 1680,
+    "yearApprox": true,
+    "yearNote": "现存楼阁据研究为康熙时期复建，年表约略定位；国保名单所列明代为城墙及文治阁整体时代",
+    "yearLabel": "清约略",
+    "placeKey": "hn_xunxian",
+    "place": "河南 · 浚县",
+    "types": [
+      "pavilion",
+      "gate"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "砖台开一道通行拱洞，两层飞檐压在十字街上空。文治阁把街道交通与城中楼阁合为一座可穿行的建筑。",
+    "facts": [
+      "第七批国保单位为浚县古城墙及文治阁；图版只绘文治阁。",
+      "现状为砖台拱门与双层檐楼阁，参考翟德芳实拍；周边店铺、车辆和文字不入图。",
+      "所绘楼阁据研究为清康熙时期复建，年表约略定位于清代；不把整组国保名单所列明代直接当作当前木构确年。"
+    ],
+    "caption": [
+      "浚县文治阁 · 十字街钟鼓楼现存主体",
+      "清 · 现存主体"
+    ]
+  }
+]);
+
+// 东南亚首批；主体、来源及待审状态见 assets/research/southeast-asia-20261002-batch.json。
+PLACES.push(...[
+  {
+    "key": "kh_angkor_wat_place",
+    "name": "吴哥",
+    "prov": "暹粒省",
+    "country": "KH",
+    "lat": 13.41,
+    "lon": 103.87,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://apsaraauthority.gov.kh/2021/06/14/angkor-wat/"
+  },
+  {
+    "key": "kh_bayon_place",
+    "name": "吴哥通",
+    "prov": "暹粒省",
+    "country": "KH",
+    "lat": 13.44,
+    "lon": 103.86,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://www.unesco.org/en/articles/unesco-celebrates-30-years-safeguarding-bayon-temple-angkor-thom-project"
+  },
+  {
+    "key": "kh_banteay_srei_place",
+    "name": "女王宫",
+    "prov": "暹粒省",
+    "country": "KH",
+    "lat": 13.6,
+    "lon": 103.96,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://apsaraauthority.gov.kh/2021/08/04/banteay-srei/"
+  },
+  {
+    "key": "id_borobudur_place",
+    "name": "马格朗",
+    "prov": "中爪哇省",
+    "country": "ID",
+    "lat": -7.61,
+    "lon": 110.2,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://whc.unesco.org/en/list/592/"
+  },
+  {
+    "key": "id_prambanan_shiva_place",
+    "name": "普兰巴南",
+    "prov": "日惹特区",
+    "country": "ID",
+    "lat": -7.75,
+    "lon": 110.49,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://whc.unesco.org/en/list/642/"
+  },
+  {
+    "key": "th_sukhothai_mahathat_place",
+    "name": "素可泰",
+    "prov": "素可泰府",
+    "country": "TH",
+    "lat": 17.02,
+    "lon": 99.7,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://www.thailandtravel.or.jp/wat-mahathat-sukhothai/"
+  },
+  {
+    "key": "th_chaiwatthanaram_place",
+    "name": "大城",
+    "prov": "大城府",
+    "country": "TH",
+    "lat": 14.34,
+    "lon": 100.54,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://seaarts.sac.or.th/artwork/34?lang=en"
+  },
+  {
+    "key": "mm_ananda_place",
+    "name": "蒲甘",
+    "prov": "曼德勒省",
+    "country": "MM",
+    "lat": 21.17,
+    "lon": 94.87,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=170572"
+  },
+  {
+    "key": "la_xieng_thong_sim_place",
+    "name": "琅勃拉邦",
+    "prov": "琅勃拉邦省",
+    "country": "LA",
+    "lat": 19.9,
+    "lon": 102.14,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://tourismluangprabang.org/things-to-do/buddhism/wat-xiengthong/"
+  },
+  {
+    "key": "vn_po_klong_garai_place",
+    "name": "潘朗—塔占",
+    "prov": "庆和省",
+    "country": "VN",
+    "lat": 11.6,
+    "lon": 108.94,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://khanhhoa.gov.vn/vi/di-tich-lich-su/nhon-nhip-khach-tham-quan-di-tich-quoc-gia-dac-biet-thap-po-klong-garai-dip-le-2-9"
+  },
+  {
+    "key": "vn_hue_ngo_mon_place",
+    "name": "顺化",
+    "prov": "顺化市",
+    "country": "VN",
+    "lat": 16.47,
+    "lon": 107.58,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://huetourism.gov.vn/ngo-mon-bieu-tuong-vinh-hang-cua-co-do-hue/?pid=MjM3NTN8Y3NkbGRs0"
+  },
+  {
+    "key": "ph_manila_san_agustin_place",
+    "name": "马尼拉",
+    "prov": "马尼拉大都会",
+    "country": "PH",
+    "lat": 14.59,
+    "lon": 120.98,
+    "coordinate_note": "古迹附近的约略地区显示点，精度约0.01度；不作为单体测绘坐标。",
+    "source_page": "https://www.nationalmuseum.gov.ph/2023/05/11/san-agustin-church/"
+  }
+]);
+CHAPTERS.push(...[
+  {
+    "key": "kh_angkor",
+    "years": "10—13世纪 · 柬埔寨",
+    "blurb": "砂岩寺山与面像塔群在吴哥展开，女王宫则以小尺度雕饰呈现另一种细密轮廓。各图限定所绘中央主体，年代依据分别说明。"
+  },
+  {
+    "key": "id_java_classical",
+    "years": "8—10世纪 · 印度尼西亚",
+    "blurb": "婆罗浮屠以宽阔台层组织礼拜路径，普兰巴南以高耸主庙聚合塔饰。这里记录爪哇古典寺庙的两种尺度，也说明近现代保护与复原修复。"
+  },
+  {
+    "key": "th_sukhothai",
+    "years": "素可泰时期 · 泰国",
+    "blurb": "莲苞形主塔从层叠砖石台基上升起。玛哈泰寺按现存主塔入册，单体确切营建年未详，年表位置保留约略说明。"
+  },
+  {
+    "key": "th_ayutthaya",
+    "years": "阿瑜陀耶时期 · 泰国",
+    "blurb": "红砖主塔与四角小塔围合成寺山式组合。柴瓦塔那兰寺以现存中央塔群入册，寺院建置纪年与前期构筑、后世修缮分开说明。"
+  },
+  {
+    "key": "mm_bagan",
+    "years": "11—13世纪 · 缅甸",
+    "blurb": "蒲甘寺身与塔冠彼此叠起，突出入口把有内室的佛寺显露在外。阿难陀寺按12世纪初约略定位，保护修缮另记。"
+  },
+  {
+    "key": "la_lan_xang",
+    "years": "澜沧时期 · 老挝",
+    "blurb": "香通寺主佛殿以低垂层叠屋面、木构金饰和细小檐端展开琅勃拉邦传统。创建年代与后世装饰修缮分别入册。"
+  },
+  {
+    "key": "vn_champa",
+    "years": "13—14世纪 · 越南",
+    "blurb": "砖塔层层收分，门框石雕嵌在红砖之中。波克朗加莱只绘主祠塔，明确区别门塔与火塔，所祭国王生卒年不作为营建纪年。"
+  },
+  {
+    "key": "vn_nguyen",
+    "years": "1802—1945 · 越南阮朝",
+    "blurb": "午门以U形砖石城台承托五凤楼，黄绿琉璃瓦铺出屋顶层次。1833年营建纪年与现存修缮外观分别说明。"
+  },
+  {
+    "key": "ph_spanish",
+    "years": "1565—1898 · 菲律宾西班牙殖民时期",
+    "blurb": "马尼拉旧城中，石造教堂以柱式、山墙和钟塔展开正立面。圣奥古斯丁教堂按1607年现存石教堂建成纪年入册，不复原遗失钟塔。"
+  }
+]);
+SITES.push(...[
+  {
+    "id": "kh_angkor_wat",
+    "name": "吴哥窟",
+    "short": "吴哥窟",
+    "sub": "中央五塔及紧邻台基回廊",
+    "dyn": "kh_angkor",
+    "tag": "吴哥时期",
+    "era": "12世纪上半叶",
+    "year": 1125,
+    "yearApprox": true,
+    "yearLabel": "12世纪上半叶",
+    "yearNote": "苏利耶跋摩二世时期；1125仅为12世纪上半叶的年表约略定位，后世保护修复另记。",
+    "placeKey": "kh_angkor_wat_place",
+    "place": "暹粒省 · 吴哥",
+    "country": "KH",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple"
+    ],
+    "legacyNames": [
+      "Angkor Wat",
+      "吴哥寺"
+    ],
+    "lede": "莲苞形塔冠从层叠石台上升起，回廊环绕中央圣所。吴哥窟的中央五塔以高低和遮挡组成寺山的轮廓。",
+    "facts": [
+      "五塔按中央一座、四角四座排列，斜视中部分塔互相遮挡；图版保留所见关系。",
+      "APSARA记吴哥窟营建于12世纪上半叶，原供奉毗湿奴；图版只绘中央塔区及紧邻台基回廊。",
+      "苏利耶跋摩二世时期；1125仅为12世纪上半叶的年表约略定位，后世保护修复另记。"
+    ],
+    "caption": [
+      "吴哥窟 · 中央五塔及紧邻台基回廊",
+      "12世纪上半叶"
+    ],
+    "tall": false
+  },
+  {
+    "id": "kh_bayon",
+    "name": "巴戎寺",
+    "short": "巴戎寺",
+    "sub": "中央面像塔群与直接支承台基",
+    "dyn": "kh_angkor",
+    "tag": "吴哥时期",
+    "era": "12世纪末—13世纪初",
+    "year": 1200,
+    "yearApprox": true,
+    "yearLabel": "12世纪末—13世纪初",
+    "yearNote": "吴哥时期；1200为12—13世纪之交的约略定位，现存塔群经历修缮，不按单一年份视为完整原构。",
+    "placeKey": "kh_bayon_place",
+    "place": "暹粒省 · 吴哥通",
+    "country": "KH",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple"
+    ],
+    "legacyNames": [
+      "Bayon",
+      "巴扬寺"
+    ],
+    "lede": "巨大的面像在密集塔群中转向不同方向，中央塔身从石阶和台基后升起。巴戎寺把神圣的凝视刻在吴哥通的中心。",
+    "facts": [
+      "图版选择中央面像塔群与直接支承台基，按参考视角保留可见塔群，不以全寺理论塔数反推画面。",
+      "UNESCO保护项目介绍将巴戎寺断代为12—13世纪；保护修缮与原有营建阶段分开说明。",
+      "吴哥时期；1200为12—13世纪之交的约略定位，现存塔群经历修缮，不按单一年份视为完整原构。"
+    ],
+    "caption": [
+      "巴戎寺 · 中央面像塔群与直接支承台基",
+      "12世纪末—13世纪初"
+    ],
+    "tall": false
+  },
+  {
+    "id": "kh_banteay_srei",
+    "name": "女王宫",
+    "short": "女王宫",
+    "sub": "中央三祠塔与共同台基",
+    "dyn": "kh_angkor",
+    "tag": "吴哥时期",
+    "era": "967年奉献",
+    "year": 967,
+    "yearApprox": false,
+    "yearLabel": "967年奉献",
+    "yearNote": "967为碑铭所记奉献纪年，不等同于每块石构件的施工完成年；现存形态亦含保护修复。",
+    "placeKey": "kh_banteay_srei_place",
+    "place": "暹粒省 · 女王宫",
+    "country": "KH",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple"
+    ],
+    "legacyNames": [
+      "Banteay Srei",
+      "班迭斯雷"
+    ],
+    "lede": "红砂岩上，门框和山花的雕饰密集而细小。女王宫的中央祠塔尺度克制，以雕刻和层层收分的塔顶留下鲜明轮廓。",
+    "facts": [
+      "中央三座祠塔共用台基；图版按实拍斜视保留遮挡，排除两侧库房和外围建筑。",
+      "APSARA记967年4月22日奉献；这里以奉献纪年排序，并保留后世保护修复说明。",
+      "967为碑铭所记奉献纪年，不等同于每块石构件的施工完成年；现存形态亦含保护修复。"
+    ],
+    "caption": [
+      "女王宫 · 中央三祠塔与共同台基",
+      "967年奉献"
+    ],
+    "tall": false
+  },
+  {
+    "id": "id_borobudur",
+    "name": "婆罗浮屠",
+    "short": "婆罗浮屠",
+    "sub": "现存主体与完整基座",
+    "dyn": "id_java_classical",
+    "tag": "爪哇古典时期",
+    "era": "8—9世纪",
+    "year": 825,
+    "yearApprox": true,
+    "yearLabel": "8—9世纪",
+    "yearNote": "UNESCO记8—9世纪；825仅为所述时期的约略年表位置。现存石构经过20世纪保护修复。",
+    "placeKey": "id_borobudur_place",
+    "place": "中爪哇省 · 马格朗",
+    "country": "ID",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple",
+      "pagoda"
+    ],
+    "legacyNames": [
+      "Borobudur",
+      "波罗浮屠"
+    ],
+    "lede": "方形台层逐级升高，顶层转为环绕中央大塔的圆台与钟形小塔。婆罗浮屠把礼拜与行进的路径组织在一座宽阔石山中。",
+    "facts": [
+      "主体以方形台层和上部三层圆台组合，中央实心窣堵坡周围列置镂空小塔。",
+      "图版包括现存完整主体与基座，不含园区。UNESCO记8—9世纪营建，并介绍20世纪保护工程。",
+      "UNESCO记8—9世纪；825仅为所述时期的约略年表位置。现存石构经过20世纪保护修复。"
+    ],
+    "caption": [
+      "婆罗浮屠 · 现存主体与完整基座",
+      "8—9世纪"
+    ],
+    "tall": false
+  },
+  {
+    "id": "id_prambanan_shiva",
+    "name": "普兰巴南湿婆主庙",
+    "short": "普兰巴南湿婆主庙",
+    "sub": "单座湿婆主庙与台阶",
+    "dyn": "id_java_classical",
+    "tag": "爪哇古典时期",
+    "era": "9—10世纪",
+    "year": 900,
+    "yearApprox": true,
+    "yearLabel": "9—10世纪",
+    "yearNote": "UNESCO同页简述作10世纪、详细说明作9世纪；900仅作约略排序。现存主庙经过近现代复原修复。",
+    "placeKey": "id_prambanan_shiva_place",
+    "place": "日惹特区 · 普兰巴南",
+    "country": "ID",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple"
+    ],
+    "legacyNames": [
+      "Prambanan",
+      "Candi Shiva",
+      "Candi Siwa",
+      "普兰巴南湿婆庙"
+    ],
+    "lede": "高耸的石构层层向内收分，壁龛和塔饰围绕入口排列。普兰巴南的湿婆主庙以狭长而密集的轮廓立在爪哇平原。",
+    "facts": [
+      "图版只绘湿婆主庙，保留塔冠、塔身、台基与入口台阶，其他主庙及小祠塔不入图。",
+      "遗产资料中9世纪与10世纪表述并存；现存建筑包含近现代复原修复，未把约值当作确切竣工年。",
+      "UNESCO同页简述作10世纪、详细说明作9世纪；900仅作约略排序。现存主庙经过近现代复原修复。"
+    ],
+    "caption": [
+      "普兰巴南湿婆主庙 · 单座湿婆主庙与台阶",
+      "9—10世纪"
+    ],
+    "tall": true
+  },
+  {
+    "id": "th_sukhothai_mahathat",
+    "name": "素可泰玛哈泰寺主塔",
+    "short": "素可泰玛哈泰寺主塔",
+    "sub": "莲苞形主塔及直接支承台基",
+    "dyn": "th_sukhothai",
+    "tag": "素可泰时期",
+    "era": "素可泰时期 · 约略定位",
+    "year": 1350,
+    "yearApprox": true,
+    "yearLabel": "素可泰时期 · 约略定位",
+    "yearNote": "可靠资料确认素可泰时期及莲苞主塔形制，单体精确改建年未详；1350仅用于年表排序，不采用寺院初创年来替代现存主塔年龄。",
+    "placeKey": "th_sukhothai_mahathat_place",
+    "place": "素可泰府 · 素可泰",
+    "country": "TH",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "legacyNames": [
+      "Wat Mahathat Sukhothai",
+      "素可泰玛哈泰寺"
+    ],
+    "lede": "细长塔尖从莲苞形塔顶伸出，下方是逐层展开的砖石台基。玛哈泰寺的主塔保留了素可泰建筑中鲜明的莲苞轮廓。",
+    "facts": [
+      "图版限定中央莲苞主塔及直接支承台基，排除独立殿柱与邻塔，不复原消失的殿顶。",
+      "现存主塔年代按素可泰时期约略定位；精确营建年尚未确认，后世修护另记。",
+      "可靠资料确认素可泰时期及莲苞主塔形制，单体精确改建年未详；1350仅用于年表排序，不采用寺院初创年来替代现存主塔年龄。"
+    ],
+    "caption": [
+      "素可泰玛哈泰寺主塔 · 莲苞形主塔及直接支承台基",
+      "素可泰时期 · 约略定位"
+    ],
+    "tall": true
+  },
+  {
+    "id": "th_chaiwatthanaram",
+    "name": "柴瓦塔那兰寺",
+    "short": "柴瓦塔那兰寺",
+    "sub": "中央主塔、四角小塔及共同台基",
+    "dyn": "th_ayutthaya",
+    "tag": "阿瑜陀耶时期",
+    "era": "1630年建置",
+    "year": 1630,
+    "yearApprox": false,
+    "yearLabel": "1630年建置",
+    "yearNote": "1630为史料所记寺院建置年；图版是现存中央主塔与四角塔组合，前期构筑讨论及现代修复不等同于全部砖石同年营建。",
+    "placeKey": "th_chaiwatthanaram_place",
+    "place": "大城府 · 大城",
+    "country": "TH",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple",
+      "pagoda"
+    ],
+    "legacyNames": [
+      "Wat Chaiwatthanaram",
+      "柴瓦塔那兰寺",
+      "阿瑜陀耶"
+    ],
+    "lede": "圆钝而高大的主塔从红砖台基升起，较小的四角塔围绕其侧。柴瓦塔那兰寺的中央组合留下阿瑜陀耶时期寺山式布局的层次。",
+    "facts": [
+      "图版选择中央主塔、紧邻四角小塔及共同台基；外围八座建筑与前景残墙排除。",
+      "SAC记1630年建置，并说明1987—1992年保护修复；更早布局的学术讨论不改写为已证实竣工日期。",
+      "1630为史料所记寺院建置年；图版是现存中央主塔与四角塔组合，前期构筑讨论及现代修复不等同于全部砖石同年营建。"
+    ],
+    "caption": [
+      "柴瓦塔那兰寺 · 中央主塔、四角小塔及共同台基",
+      "1630年建置"
+    ],
+    "tall": false
+  },
+  {
+    "id": "mm_ananda",
+    "name": "蒲甘阿难陀寺",
+    "short": "蒲甘阿难陀寺",
+    "sub": "完整寺身、中央塔冠及突出入口",
+    "dyn": "mm_bagan",
+    "tag": "蒲甘时期",
+    "era": "12世纪初",
+    "year": 1110,
+    "yearApprox": true,
+    "yearLabel": "12世纪初",
+    "yearNote": "印度政府保护工程介绍记12世纪初；1110仅为该时期的约略定位，不选择未经核实的1090、1091或1105确年。现存形态含后世修护。",
+    "placeKey": "mm_ananda_place",
+    "place": "曼德勒省 · 蒲甘",
+    "country": "MM",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple"
+    ],
+    "legacyNames": [
+      "Ananda Temple",
+      "阿南达寺"
+    ],
+    "lede": "宽阔寺身上叠起层层平台，金色中央塔冠直指天空，入口突出在方形主体之外。阿难陀寺展现蒲甘大型有内室佛寺的轮廓。",
+    "facts": [
+      "图版包括完整寺身、中央塔冠及突出入口，不以中央塔冠局部替代整寺；外围围墙与独立门楼排除。",
+      "印度政府介绍记12世纪初营建，并记2016年地震后由印度考古局参与保护修复。",
+      "印度政府保护工程介绍记12世纪初；1110仅为该时期的约略定位，不选择未经核实的1090、1091或1105确年。现存形态含后世修护。"
+    ],
+    "caption": [
+      "蒲甘阿难陀寺 · 完整寺身、中央塔冠及突出入口",
+      "12世纪初"
+    ],
+    "tall": false
+  },
+  {
+    "id": "la_xieng_thong_sim",
+    "name": "香通寺主佛殿",
+    "short": "香通寺主佛殿",
+    "sub": "主佛殿sim与支承台基",
+    "dyn": "la_lan_xang",
+    "tag": "澜沧时期",
+    "era": "约1560年",
+    "year": 1560,
+    "yearApprox": true,
+    "yearLabel": "约1560年",
+    "yearNote": "官方资料记约1560年创建；主佛殿经历1928年、1952—1960年等修缮，不能将现存装饰全部视为16世纪原作。",
+    "placeKey": "la_xieng_thong_sim_place",
+    "place": "琅勃拉邦省 · 琅勃拉邦",
+    "country": "LA",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall",
+      "temple"
+    ],
+    "legacyNames": [
+      "Wat Xieng Thong",
+      "香通寺",
+      "寮国"
+    ],
+    "lede": "低垂屋面向两侧舒展，层叠山墙和细小金饰映出木构的轻盈。香通寺主佛殿以琅勃拉邦传统的屋顶曲线安静伏在台基上。",
+    "facts": [
+      "所绘主体是sim主佛殿及支承台基，不含后建王室葬车殿；瓦面、木构和金饰按现存实拍设色。",
+      "官方旅游资料记约1560年建寺与主殿多次修缮，创建阶段和后世装饰分别说明。",
+      "官方资料记约1560年创建；主佛殿经历1928年、1952—1960年等修缮，不能将现存装饰全部视为16世纪原作。"
+    ],
+    "caption": [
+      "香通寺主佛殿 · 主佛殿sim与支承台基",
+      "约1560年"
+    ],
+    "tall": false
+  },
+  {
+    "id": "vn_po_klong_garai",
+    "name": "波克朗加莱主塔",
+    "short": "波克朗加莱主塔",
+    "sub": "现存主祠塔与入口、台基",
+    "dyn": "vn_champa",
+    "tag": "占婆时期",
+    "era": "13世纪末—14世纪初",
+    "year": 1300,
+    "yearApprox": true,
+    "yearLabel": "13世纪末—14世纪初",
+    "yearNote": "庆和省官方资料记13世纪末—14世纪初；1300仅作约略排序，不以所祭国王生卒年断定塔的营建年。",
+    "placeKey": "vn_po_klong_garai_place",
+    "place": "庆和省 · 潘朗—塔占",
+    "country": "VN",
+    "initialStatus": "unvisited",
+    "types": [
+      "temple"
+    ],
+    "legacyNames": [
+      "Po Klong Garai",
+      "Pô Klong Garai",
+      "宁顺省",
+      "Ninh Thuan",
+      "潘朗",
+      "占婆塔"
+    ],
+    "lede": "红砖塔身以壁柱和伪门划分，塔顶的叠层砖饰不断收分。波克朗加莱主塔保存占婆塔庙的轮廓，也延续当地的祭祀传统。",
+    "facts": [
+      "图版仅绘三塔中的主祠塔，排除门塔与长脊顶火塔；主塔入口有嵌石门框和湿婆舞蹈浮雕。",
+      "庆和省官方资料记塔群营建于13世纪末—14世纪初。所在地按现行庆和省登记，旧称宁顺省保留供搜索。",
+      "庆和省官方资料记13世纪末—14世纪初；1300仅作约略排序，不以所祭国王生卒年断定塔的营建年。"
+    ],
+    "caption": [
+      "波克朗加莱主塔 · 现存主祠塔与入口、台基",
+      "13世纪末—14世纪初"
+    ],
+    "tall": true
+  },
+  {
+    "id": "vn_hue_ngo_mon",
+    "name": "顺化皇城午门",
+    "short": "顺化皇城午门",
+    "sub": "午门完整城台与五凤楼",
+    "dyn": "vn_nguyen",
+    "tag": "阮朝",
+    "era": "1833年 · 明命帝时期",
+    "year": 1833,
+    "yearApprox": false,
+    "yearLabel": "1833年 · 明命帝时期",
+    "yearNote": "1833为午门营建纪年；现存木楼、屋面和城台经历后世修缮，另有现代修缮记录。",
+    "placeKey": "vn_hue_ngo_mon_place",
+    "place": "顺化市 · 顺化",
+    "country": "VN",
+    "initialStatus": "unvisited",
+    "types": [
+      "gate",
+      "pavilion",
+      "palace"
+    ],
+    "legacyNames": [
+      "Ngo Mon",
+      "Ngọ Môn",
+      "午门",
+      "五凤楼"
+    ],
+    "lede": "宽阔城台在两侧折出翼部，上方五凤楼以高低屋顶铺开。午门把砖石宫门与木构楼阁结合成顺化皇城的正面轮廓。",
+    "facts": [
+      "城台呈U形，共五条通道，三条位于正面、两条在侧翼；不能将五条通道画成五个正面门洞。",
+      "官方旅游资料记1833年建置，中央屋顶用黄瓦、两侧用青绿瓦；图版包含完整城台及五凤楼。",
+      "1833为午门营建纪年；现存木楼、屋面和城台经历后世修缮，另有现代修缮记录。"
+    ],
+    "caption": [
+      "顺化皇城午门 · 午门完整城台与五凤楼",
+      "1833年 · 明命帝时期"
+    ],
+    "tall": false
+  },
+  {
+    "id": "ph_manila_san_agustin",
+    "name": "马尼拉圣奥古斯丁教堂",
+    "short": "马尼拉圣奥古斯丁教堂",
+    "sub": "现存教堂正立面与钟塔",
+    "dyn": "ph_spanish",
+    "tag": "西班牙殖民时期",
+    "era": "1607年石教堂建成",
+    "year": 1607,
+    "yearApprox": false,
+    "yearLabel": "1607年石教堂建成",
+    "yearNote": "1607为现存石教堂建成纪年，区别于更早木教堂。钟塔与后世维修有各自沿革，不将整座现状断作同年原构。",
+    "placeKey": "ph_manila_san_agustin_place",
+    "place": "马尼拉大都会 · 马尼拉",
+    "country": "PH",
+    "initialStatus": "unvisited",
+    "types": [
+      "church"
+    ],
+    "legacyNames": [
+      "San Agustin Church",
+      "Intramuros",
+      "圣奥古斯丁教堂"
+    ],
+    "lede": "石造立面由层叠柱式分出门窗，三角山墙上留有圆窗和十字架，现存钟塔附接在右侧。圣奥古斯丁教堂保留马尼拉旧城的另一种建筑传统。",
+    "facts": [
+      "图版绘现存正立面与单座右侧钟塔，左侧遗失钟塔的低矮残部保留，不复原为对称双塔。",
+      "菲律宾国家博物馆记现存石教堂于1607年建成；初创木教堂与后世修缮分别说明，修道院全体不入图。",
+      "1607为现存石教堂建成纪年，区别于更早木教堂。钟塔与后世维修有各自沿革，不将整座现状断作同年原构。"
+    ],
+    "caption": [
+      "马尼拉圣奥古斯丁教堂 · 现存教堂正立面与钟塔",
+      "1607年石教堂建成"
+    ],
+    "tall": true
+  }
+]);
+
+// 韩国与朝鲜古建筑；来源和真实生成记录见 assets/research/korea-20261002-batch.json。
+PLACES.push(
+  {
+    "key": "kr_yesan",
+    "name": "礼山",
+    "prov": "忠清南道",
+    "country": "KR",
+    "lat": 36.701,
+    "lon": 126.622
+  },
+  {
+    "key": "kr_yeongju",
+    "name": "荣州",
+    "prov": "庆尚北道",
+    "country": "KR",
+    "lat": 36.805,
+    "lon": 128.624
+  },
+  {
+    "key": "kr_gyeongju",
+    "name": "庆州",
+    "prov": "庆尚北道",
+    "country": "KR",
+    "lat": 35.856,
+    "lon": 129.224
+  },
+  {
+    "key": "kr_seoul",
+    "name": "首尔",
+    "prov": "首尔特别市",
+    "country": "KR",
+    "lat": 37.566,
+    "lon": 126.978
+  },
+  {
+    "key": "kp_kaesong",
+    "name": "开城",
+    "prov": "开城市",
+    "country": "KP",
+    "lat": 37.97,
+    "lon": 126.554
+  },
+  {
+    "key": "kp_pyongyang",
+    "name": "平壤",
+    "prov": "平壤市",
+    "country": "KP",
+    "lat": 39.039,
+    "lon": 125.763
+  }
+);
+CHAPTERS.push(
+  {
+    "key": "ko_silla",
+    "years": "668 — 935 · 统一新罗",
+    "blurb": "多宝塔的方形与八角石构件层层转换，留下统一新罗佛教石作的细密轮廓；具体建塔纪年与佛国寺创建分开说明。"
+  },
+  {
+    "key": "ko_goryeo",
+    "years": "918 — 1392 · 高丽",
+    "blurb": "修德寺与浮石寺的木殿保存高丽晚期梁架，开城善竹桥则以石墩石梁跨沟；约略年代与后添栏杆在各条目内分别说明。"
+  },
+  {
+    "key": "ko_joseon",
+    "years": "1392 — 1910 · 朝鲜王朝",
+    "blurb": "仁政殿的双层屋檐、普通门的城台与崧阳书院讲堂，呈现宫殿、城防和儒学空间；朝鲜王朝是历史时期，国别由古迹今日所在地派生。"
+  }
+);
+SITES.push(...[
+  {
+    "id": "kr_sudeoksa_daeungjeon",
+    "name": "修德寺大雄殿",
+    "short": "修德寺大雄殿",
+    "sub": "单座大雄殿与石台基",
+    "dyn": "ko_goryeo",
+    "tag": "高丽",
+    "era": "1308年建殿；寺院初创年代另计。",
+    "year": 1308,
+    "yearLabel": "1308年",
+    "yearApprox": false,
+    "yearNote": "1308年建殿；寺院初创年代另计。",
+    "place": "韩国 · 礼山",
+    "placeKey": "kr_yesan",
+    "country": "KR",
+    "types": [
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "平缓的悬山瓦顶压在三间木殿上，梁头从山面层层伸出。修德寺大雄殿的灰褐木色与简洁格扇，保留了高丽末期佛殿的疏朗形态。",
+    "facts": [
+      "现存大雄殿建于1308年，寺院初创与殿宇建年分开记录。",
+      "面阔三间、进深四间，单檐悬山，柱上承托屋檐；山面梁架为识别结构的重要部分。",
+      "图版只绘大雄殿和石台基，不包含前方石灯及寺院其他建筑。"
+    ],
+    "caption": [
+      "修德寺大雄殿 · 单座大雄殿与石台基",
+      "高丽 · 1308年"
+    ],
+    "legacyNames": [
+      "수덕사 대웅전",
+      "Sudeoksa Daeungjeon",
+      "修德寺"
+    ]
+  },
+  {
+    "id": "kr_buseoksa_muryangsujeon",
+    "name": "浮石寺无量寿殿",
+    "short": "浮石寺无量寿殿",
+    "sub": "单座无量寿殿与台阶",
+    "dyn": "ko_goryeo",
+    "tag": "高丽",
+    "era": "现存无量寿殿于1376年重建；676年为寺院创建。",
+    "year": 1376,
+    "yearLabel": "1376年",
+    "yearApprox": false,
+    "yearNote": "现存无量寿殿于1376年重建；676年为寺院创建。",
+    "place": "韩国 · 荣州",
+    "placeKey": "kr_yeongju",
+    "country": "KR",
+    "types": [
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "长屋檐沿五间殿身展开，木柱略有曲线，浅色格扇在深檐下排开。无量寿殿位于浮石寺高处，是高丽时期木构佛殿的重要遗存。",
+    "facts": [
+      "寺院于676年创建，所绘现存无量寿殿按1376年重建纪年归入高丽。",
+      "面阔五间、进深三间，单檐歇山；柱身有中段鼓起的形态，格扇与石台保存现状。",
+      "殿中供奉阿弥陀佛，图版取殿宇外观；前方石灯不包含在本项主体中。"
+    ],
+    "caption": [
+      "浮石寺无量寿殿 · 单座无量寿殿与台阶",
+      "高丽 · 1376年"
+    ],
+    "legacyNames": [
+      "부석사 무량수전",
+      "Buseoksa Muryangsujeon",
+      "浮石寺"
+    ]
+  },
+  {
+    "id": "kr_bulguksa_dabotap",
+    "name": "佛国寺多宝塔",
+    "short": "佛国寺多宝塔",
+    "sub": "多宝塔完整石塔与四向台阶",
+    "dyn": "ko_silla",
+    "tag": "统一新罗",
+    "era": "官方断代为统一新罗8世纪；751年为佛国寺兴建相关纪年，塔的排序年约略取751。",
+    "year": 751,
+    "yearLabel": "约751年",
+    "yearApprox": true,
+    "yearNote": "官方断代为统一新罗8世纪；751年为佛国寺兴建相关纪年，塔的排序年约略取751。",
+    "place": "韩国 · 庆州",
+    "placeKey": "kr_gyeongju",
+    "country": "KR",
+    "types": [
+      "pagoda"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "方形石柱托起层层变化的塔身，栏杆与八角盖顶在上部转换尺度。多宝塔用花岗岩雕出近似木构的复杂轮廓，与常见叠檐石塔迥然不同。",
+    "facts": [
+      "韩国官方将多宝塔定为统一新罗8世纪；751年为佛国寺兴建相关纪年，排序取约值，不声明塔的精确完工年。",
+      "下部方形石柱、四向台阶与上部八角构件组合，官方资料说明其层数难以按一般楼阁塔方式计数。",
+      "按现状保留仅存的一尊石狮，不补回失去的石狮，也不绘邻近释迦塔。"
+    ],
+    "caption": [
+      "佛国寺多宝塔 · 多宝塔完整石塔与四向台阶",
+      "统一新罗 · 约略定位"
+    ],
+    "legacyNames": [
+      "불국사 다보탑",
+      "Dabotap",
+      "佛国寺"
+    ]
+  },
+  {
+    "id": "kr_changdeokgung_injeongjeon",
+    "name": "昌德宫仁政殿",
+    "short": "昌德宫仁政殿",
+    "sub": "仁政殿单殿与月台",
+    "dyn": "ko_joseon",
+    "tag": "朝鲜王朝",
+    "era": "所绘现存仁政殿为1804年重建，宫殿创建与历次火灾另计。",
+    "year": 1804,
+    "yearLabel": "1804年",
+    "yearApprox": false,
+    "yearNote": "所绘现存仁政殿为1804年重建，宫殿创建与历次火灾另计。",
+    "place": "韩国 · 首尔",
+    "placeKey": "kr_seoul",
+    "country": "KR",
+    "types": [
+      "palace",
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "双层飞檐托起宽大的灰瓦屋顶，红柱与青绿丹青围住五间殿身。仁政殿的月台、中央阶道和高敞空间，组成昌德宫举行国家典礼的正殿。",
+    "facts": [
+      "国家遗产门户所列现存建筑年代为朝鲜纯祖四年（1804），不以宫殿初创年替代。",
+      "面阔五间、进深四间，重檐歇山；外部双层檐不等于内部有两个独立楼层。",
+      "图版只绘仁政殿与月台，侧廊、庭院品阶石和其他宫殿建筑不入图。"
+    ],
+    "caption": [
+      "昌德宫仁政殿 · 仁政殿单殿与月台",
+      "朝鲜王朝 · 1804年"
+    ],
+    "legacyNames": [
+      "창덕궁 인정전",
+      "Changdeokgung Injeongjeon",
+      "仁政殿"
+    ]
+  },
+  {
+    "id": "kp_kaesong_namdaemun",
+    "name": "开城南大门",
+    "short": "开城南大门",
+    "sub": "石门台与战后复建门楼",
+    "dyn": "modern",
+    "tag": "战后复建",
+    "era": "内城门始建于1391—1393年；门楼1950年毁于战火，1954年起复建，申遗档案图注记1955年恢复，年表按现存门楼定位。",
+    "year": 1955,
+    "yearLabel": "1955年",
+    "yearApprox": false,
+    "yearNote": "内城门始建于1391—1393年；门楼1950年毁于战火，1954年起复建，申遗档案图注记1955年恢复，年表按现存门楼定位。",
+    "place": "朝鲜 · 开城",
+    "placeKey": "kp_kaesong",
+    "country": "KP",
+    "types": [
+      "gate",
+      "wall"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "一孔石拱贯穿城台，开放的三间门楼覆以宽阔瓦顶。开城南大门把高丽都城的门址、旧石台与战后恢复的木构门楼叠在一处。",
+    "facts": [
+      "城门随内城墙于1391—1393年兴建；现存门楼为战后复建，年表取1955年。",
+      "ICOMOS评估记门楼1950年毁坏、1954年起恢复；申遗档案图注和维修说明记1955年，年代说明同时保留两种记录。",
+      "门台一孔拱券，门楼面阔三间、单檐歇山，楼内悬有大钟；本项不包含近旁小祠。"
+    ],
+    "caption": [
+      "开城南大门 · 石门台与战后复建门楼",
+      "战后复建 · 1955年"
+    ],
+    "legacyNames": [
+      "개성 남대문",
+      "Kaesong Namdae Gate",
+      "Kaesong Namdaemun",
+      "开城南门"
+    ]
+  },
+  {
+    "id": "kp_pothong_gate",
+    "name": "平壤普通门",
+    "short": "平壤普通门",
+    "sub": "普通门城台与双层檐门楼",
+    "dyn": "ko_joseon",
+    "tag": "朝鲜王朝",
+    "era": "现存普通门据金日成大学资料于1473年大修，后来仍有维修扩建；不把高句丽城址起源作为现存门楼年代。",
+    "year": 1473,
+    "yearLabel": "1473年",
+    "yearApprox": false,
+    "yearNote": "现存普通门据金日成大学资料于1473年大修，后来仍有维修扩建；不把高句丽城址起源作为现存门楼年代。",
+    "place": "朝鲜 · 平壤",
+    "placeKey": "kp_pyongyang",
+    "country": "KP",
+    "types": [
+      "gate",
+      "wall"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "厚实石台开一孔拱门，双层檐门楼从台面上抬起。普通门保存平壤旧城西侧城门的形态，石砌城台与彩绘木楼形成清楚的上下两段。",
+    "facts": [
+      "金日成大学资料记现存城门于1473年大规模维修，随后仍有扩建；高句丽城址起源不等于现存木构确年。",
+      "门楼面阔三间、进深三间，两层檐；台基用花岗岩砌筑，中央为一孔半圆拱门。",
+      "所绘主体为现存城台和门楼，不复原延伸城墙，不包含现代街景。"
+    ],
+    "caption": [
+      "平壤普通门 · 普通门城台与双层檐门楼",
+      "朝鲜王朝 · 1473年"
+    ],
+    "legacyNames": [
+      "보통문",
+      "Pothong Gate",
+      "Potong Gate",
+      "普通门"
+    ]
+  },
+  {
+    "id": "kp_sungyang_hall",
+    "name": "崧阳书院讲堂",
+    "short": "崧阳书院讲堂",
+    "sub": "书院五间讲堂单体",
+    "dyn": "ko_joseon",
+    "tag": "朝鲜王朝",
+    "era": "书院于1573年设立，讲堂经历17、19世纪维修；现存木构确切建年未定，约1600仅为朝鲜王朝时期的年表位置。",
+    "year": 1600,
+    "yearLabel": "约1600年",
+    "yearApprox": true,
+    "yearNote": "书院于1573年设立，讲堂经历17、19世纪维修；现存木构确切建年未定，约1600仅为朝鲜王朝时期的年表位置。",
+    "place": "朝鲜 · 开城",
+    "placeKey": "kp_kaesong",
+    "country": "KP",
+    "types": [
+      "school",
+      "hall"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "五间讲堂横立于书院台地，中央敞开的木地板与两端房间组成简洁殿身。崧阳书院将讲学与祭祀分置前后，讲堂是其中的学习空间。",
+    "facts": [
+      "书院1573年设立、1575年赐名，现存讲堂经历17、19世纪维修；具体木构建年未明，约1600仅供年表定位。",
+      "申遗档案记讲堂面阔五间、进深三间；平面为中央三间敞厅与两侧房间，单檐悬山。",
+      "图版仅绘讲堂单体，参考申遗照片、旧照及平面图；不把前方三门或上方祠堂误作讲堂。"
+    ],
+    "caption": [
+      "崧阳书院讲堂 · 书院五间讲堂单体",
+      "朝鲜王朝 · 约略定位"
+    ],
+    "legacyNames": [
+      "숭양서원",
+      "Sungyang Sowon",
+      "Sungyang Seowon",
+      "崧阳书院",
+      "松阳书院"
+    ]
+  },
+  {
+    "id": "kp_sonjuk_bridge",
+    "name": "开城善竹桥",
+    "short": "开城善竹桥",
+    "sub": "旧石梁桥与1780年石栏",
+    "dyn": "ko_goryeo",
+    "tag": "高丽",
+    "era": "申遗档案称桥自高丽早期使用，确年不详；约1100为排序位置，1392年为郑梦周遇害事件，1780年增设石栏。",
+    "year": 1100,
+    "yearLabel": "约1100年",
+    "yearApprox": true,
+    "yearNote": "申遗档案称桥自高丽早期使用，确年不详；约1100为排序位置，1392年为郑梦周遇害事件，1780年增设石栏。",
+    "place": "朝鲜 · 开城",
+    "placeKey": "kp_kaesong",
+    "country": "KP",
+    "types": [
+      "bridge"
+    ],
+    "initialStatus": "unvisited",
+    "timelineLane": "korea",
+    "lede": "短短的花岗岩梁桥跨过浅沟，圆顶石柱与横栏围住桥面。善竹桥因郑梦周遇害而成为纪念场所，后添的栏杆也记录了它退出日常交通的过程。",
+    "facts": [
+      "申遗档案称石桥自高丽早期使用，确切建年未确认；约1100是排序位置，1392年为遇害事件年代。",
+      "桥长8.35米、宽3.36米，石墩承石梁、上铺石板；不是拱桥。现存两侧石栏于1780年增设。",
+      "仅绘旧善竹桥与后添石栏；旁边另建的通行桥、碑亭和碑刻不包含在主体内。"
+    ],
+    "caption": [
+      "开城善竹桥 · 旧石梁桥与1780年石栏",
+      "高丽 · 约略定位"
+    ],
+    "legacyNames": [
+      "선죽교",
+      "Sonjuk Bridge",
+      "Seonjukgyo",
+      "善竹桥"
+    ]
+  }
+]);

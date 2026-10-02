@@ -1,0 +1,127 @@
+{
+  "id": "id_borobudur",
+  "name": "婆罗浮屠",
+  "subject": "现存主体与完整基座",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
+  "author": "Gunawan Kartapranata",
+  "license": "Public domain",
+  "license_url": "",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
+      "file": "assets/references/id_borobudur-photo.jpg",
+      "sha256": "905aec75d7af12e2466512134d4e647a573fa4a0bb09b143d251f5664cd80128",
+      "author": "Gunawan Kartapranata",
+      "license": "Public domain",
+      "license_url": "",
+      "date": "2008-06-12",
+      "description": "Borobudur temple view from northwest plateau, Central Java, Indonesia."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
+      "file": "assets/references/id_borobudur-photo.jpg",
+      "sha256": "905aec75d7af12e2466512134d4e647a573fa4a0bb09b143d251f5664cd80128",
+      "author": "Gunawan Kartapranata",
+      "license": "Public domain",
+      "license_url": "",
+      "date": "2008-06-12",
+      "description": "Borobudur temple view from northwest plateau, Central Java, Indonesia."
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the FULL Borobudur monument from the northwest as in the photo, entire low broad square stepped base with its nested terraces, upper THREE circular platforms of bell-shaped perforated stupas, ONE central solid stupa. Preserve the six square platform levels and three circular ones, varied visible small stupas and corner setbacks; keep the full foundation edge. Remove trees, people, garden and aerial rods."
+  ],
+  "material_observations": [
+    "深灰安山岩，台基层较浅灰褐，凸出石饰深灰，少量苔色。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为现存主体与完整基座。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 现存主体与完整基座\nPRESERVE: Landscape 1536x1024. Draw the FULL Borobudur monument from the northwest as in the photo, entire low broad square stepped base with its nested terraces, upper THREE circular platforms of bell-shaped perforated stupas, ONE central solid stupa. Preserve the six square platform levels and three circular ones, varied visible small stupas and corner setbacks; keep the full foundation edge. Remove trees, people, garden and aerial rods.\nOBSERVED MATERIAL COLORS: 深灰安山岩，台基层较浅灰褐，凸出石饰深灰，少量苔色。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generator": "built-in image_gen.imagegen",
+  "input_images": [
+    "assets/generated/id_borobudur.png",
+    "assets/references/id_borobudur-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/id_borobudur.png",
+  "original_research": "assets/research/id_borobudur.json",
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T11:52:08.242269+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 现存主体与完整基座\nPRESERVE: Landscape 1536x1024. Draw the FULL Borobudur monument from the northwest as in the photo, entire low broad square stepped base with its nested terraces, upper THREE circular platforms of bell-shaped perforated stupas, ONE central solid stupa. Preserve the six square platform levels and three circular ones, varied visible small stupas and corner setbacks; keep the full foundation edge. Remove trees, people, garden and aerial rods.\nOBSERVED MATERIAL COLORS: 深灰安山岩，台基层较浅灰褐，凸出石饰深灰，少量苔色。",
+      "input_images": [
+        "assets/generated/id_borobudur.png",
+        "assets/references/id_borobudur-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:59:05.843447+08:00",
+      "saved_at": "2026-10-02T11:59:05.843705+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-24a5daab-cfde-4535-be18-8ceb80cdb760.png",
+      "saved_file": "assets/colored/id_borobudur.png",
+      "tool_output_id": "exec-24a5daab-cfde-4535-be18-8ceb80cdb760"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-24a5daab-cfde-4535-be18-8ceb80cdb760.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "56fcc7bb5dd7075227a8cbff4919ea7b6d4f57e5fecdb6485c50f2526b26fb5c",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "factual_sources": [
+    {
+      "title": "UNESCO：Borobudur Temple Compounds",
+      "url": "https://whc.unesco.org/en/list/592/",
+      "publisher": "UNESCO",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 825,
+  "yearApprox": true,
+  "yearNote": "UNESCO记8—9世纪；825仅为所述时期的约略年表位置。现存石构经过20世纪保护修复。",
+  "country": "ID",
+  "caption": [
+    "婆罗浮屠 · 现存主体与完整基座",
+    "8—9世纪"
+  ],
+  "preview_check": {
+    "observed_at": "2026-10-02T12:17:44.915228+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "note": "名单获同意，图版尚待用户人眼验收。"
+  }
+}

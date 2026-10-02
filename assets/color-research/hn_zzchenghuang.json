@@ -1,0 +1,102 @@
+{
+  "id": "hn_zzchenghuang",
+  "name": "郑州城隍庙",
+  "subject": "郑州城隍庙 · 三间大殿正面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_zzchenghuang.png",
+    "assets/references/hn_zzchenghuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 郑州城隍庙 · 三间大殿正面\nPHOTOGRAPHED MATERIAL COLORS: Green glazed tiles, pale grey stone columns, vermilion panels, blue-green bracket paintings.\nThree-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
+  "material_observations": [
+    "Green glazed tiles, pale grey stone columns, vermilion panels, blue-green bracket paintings."
+  ],
+  "references": [
+    {
+      "id": "hn_zzchenghuang",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20240921_City_God_Temple_of_Zhengzhou_08.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/20240921_City_God_Temple_of_Zhengzhou_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_zzchenghuang-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_zzchenghuang.json",
+  "output": "assets/colored/hn_zzchenghuang.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:22:14.277Z",
+  "generated_at": "2026-10-01T19:30:39.889576+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-cf4eb56d-8e9c-4bc5-9daf-5229fcbab58d.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b4227ce86a30e4537446409b6854edf03c449f51a3801016f70867cdf4bd52d6",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:22:14.277Z",
+      "received_at": "2026-10-01T19:30:39.889576+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 郑州城隍庙 · 三间大殿正面\nPHOTOGRAPHED MATERIAL COLORS: Green glazed tiles, pale grey stone columns, vermilion panels, blue-green bracket paintings.\nThree-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
+      "input_images": [
+        "assets/generated/hn_zzchenghuang.png",
+        "assets/references/hn_zzchenghuang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_zzchenghuang.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-cf4eb56d-8e9c-4bc5-9daf-5229fcbab58d.png",
+      "sourceSha256": "b4227ce86a30e4537446409b6854edf03c449f51a3801016f70867cdf4bd52d6",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "郑州城隍庙",
+      "url": "https://wwj.zhengzhou.gov.cn/country/3175328.jhtml",
+      "publisher": "郑州市文物局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_zzchenghuang",
+    "name": "郑州城隍庙",
+    "short": "郑州城隍庙",
+    "sub": "三间大殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "现存明清古建筑；单体确切营建年未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "现存明清古建筑；单体确切营建年未详",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_zhengzhou",
+    "place": "河南 · 郑州",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "绿瓦屋面之下，浅色石柱围出三间殿面，红色门板与青绿斗拱相映。郑州城隍庙保留着明清城市祭祀建筑的片段。",
+    "facts": [
+      "第七批单位全称为郑州城隍庙（含文庙大成殿）。",
+      "图版仅绘城隍庙三间大殿，保留单檐歇山屋顶、前檐石柱和门窗，不并入另一处文庙建筑。",
+      "现存建筑历经明清营建修缮，单体确年未详；年表为约略定位。"
+    ],
+    "caption": [
+      "郑州城隍庙 · 三间大殿正面",
+      "明清 · 现存主体"
+    ]
+  }
+}

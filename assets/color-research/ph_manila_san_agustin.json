@@ -1,0 +1,127 @@
+{
+  "id": "ph_manila_san_agustin",
+  "name": "马尼拉圣奥古斯丁教堂",
+  "subject": "现存教堂正立面与钟塔",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
+  "author": "LMP 2001",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "file": "assets/references/ph_manila_san_agustin-photo.jpg",
+      "sha256": "abcfd84043dcb14cfa805a84ea3609e76ee849fab5d74099db0ec51c986e2179",
+      "author": "LMP 2001",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-05-28 11:57:55",
+      "description": "Main façade of the San Agustin Church in Intramuros, the oldest stone church in the Philippines still standing after four centuries since it was completed in 1607."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "file": "assets/references/ph_manila_san_agustin-photo.jpg",
+      "sha256": "abcfd84043dcb14cfa805a84ea3609e76ee849fab5d74099db0ec51c986e2179",
+      "author": "LMP 2001",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-05-28 11:57:55",
+      "description": "Main façade of the San Agustin Church in Intramuros, the oldest stone church in the Philippines still standing after four centuries since it was completed in 1607."
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw the present San Agustin Church Manila facade including the SINGLE standing attached bell tower at RIGHT, full main facade and ground doorway. Main triangular pediment has a round rose window and cross, below are paired pilasters, a rectangular center upper window flanked by TWO arched niches, and the large arched entrance. The left bell tower is lost: keep its surviving low masonry stump rather than rebuilding another symmetrical tower. Remove cars, tree, people and adjacent monastery wings."
+  ],
+  "material_observations": [
+    "浅灰米色石墙、灰褐柱式与门窗框、深褐门及暗窗口、屋缘少量红瓦，钟塔浅灰。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为现存教堂正立面与钟塔。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 现存教堂正立面与钟塔\nPRESERVE: Portrait 1024x1536. Draw the present San Agustin Church Manila facade including the SINGLE standing attached bell tower at RIGHT, full main facade and ground doorway. Main triangular pediment has a round rose window and cross, below are paired pilasters, a rectangular center upper window flanked by TWO arched niches, and the large arched entrance. The left bell tower is lost: keep its surviving low masonry stump rather than rebuilding another symmetrical tower. Remove cars, tree, people and adjacent monastery wings.\nOBSERVED MATERIAL COLORS: 浅灰米色石墙、灰褐柱式与门窗框、深褐门及暗窗口、屋缘少量红瓦，钟塔浅灰。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generator": "built-in image_gen.imagegen",
+  "input_images": [
+    "assets/generated/ph_manila_san_agustin.png",
+    "assets/references/ph_manila_san_agustin-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/ph_manila_san_agustin.png",
+  "original_research": "assets/research/ph_manila_san_agustin.json",
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T11:59:44.933707+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 现存教堂正立面与钟塔\nPRESERVE: Portrait 1024x1536. Draw the present San Agustin Church Manila facade including the SINGLE standing attached bell tower at RIGHT, full main facade and ground doorway. Main triangular pediment has a round rose window and cross, below are paired pilasters, a rectangular center upper window flanked by TWO arched niches, and the large arched entrance. The left bell tower is lost: keep its surviving low masonry stump rather than rebuilding another symmetrical tower. Remove cars, tree, people and adjacent monastery wings.\nOBSERVED MATERIAL COLORS: 浅灰米色石墙、灰褐柱式与门窗框、深褐门及暗窗口、屋缘少量红瓦，钟塔浅灰。",
+      "input_images": [
+        "assets/generated/ph_manila_san_agustin.png",
+        "assets/references/ph_manila_san_agustin-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:02:10.356244+08:00",
+      "saved_at": "2026-10-02T12:02:10.356499+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-f82baaf2-cd25-4028-9dac-160689327e29.png",
+      "saved_file": "assets/colored/ph_manila_san_agustin.png",
+      "tool_output_id": "exec-f82baaf2-cd25-4028-9dac-160689327e29"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-f82baaf2-cd25-4028-9dac-160689327e29.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6937e7127f2741d87ff6a26ec0cf71275d7e9b53d1af0b917b572884c633312e",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "factual_sources": [
+    {
+      "title": "菲律宾国家博物馆：San Agustin Church",
+      "url": "https://www.nationalmuseum.gov.ph/2023/05/11/san-agustin-church/",
+      "publisher": "菲律宾国家博物馆",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1607,
+  "yearApprox": false,
+  "yearNote": "1607为现存石教堂建成纪年，区别于更早木教堂。钟塔与后世维修有各自沿革，不将整座现状断作同年原构。",
+  "country": "PH",
+  "caption": [
+    "马尼拉圣奥古斯丁教堂 · 现存教堂正立面与钟塔",
+    "1607年石教堂建成"
+  ],
+  "preview_check": {
+    "observed_at": "2026-10-02T12:17:44.915228+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "note": "名单获同意，图版尚待用户人眼验收。"
+  }
+}

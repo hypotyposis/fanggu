@@ -5131,6 +5131,366 @@ const PLATES = {
       "涞源兴文塔 · 五层八角砖塔塔身与塔刹",
       "辽代形制 · 后世修缮"
     ]
+  },
+  "hn_yanqing": {
+    "src": "assets/plates/hn_yanqing.png",
+    "alt": "延庆观 · 玉皇阁现存主体 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "延庆观 · 玉皇阁现存主体",
+      "元 · 现存主体"
+    ]
+  },
+  "hn_yuefei": {
+    "src": "assets/plates/hn_yuefei.png",
+    "alt": "汤阴岳飞庙 · 二殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "汤阴岳飞庙 · 二殿正面",
+      "明清 · 现存主体"
+    ]
+  },
+  "hn_songyang": {
+    "src": "assets/plates/hn_songyang.png",
+    "alt": "嵩阳书院 · 清代大门正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "嵩阳书院 · 清代大门正面",
+      "清 · 现存主体"
+    ]
+  },
+  "hn_xiangguo": {
+    "src": "assets/plates/hn_xiangguo.png",
+    "alt": "大相国寺 · 大雄宝殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "大相国寺 · 大雄宝殿正面",
+      "清 · 现存主体"
+    ]
+  },
+  "hn_zzchenghuang": {
+    "src": "assets/plates/hn_zzchenghuang.png",
+    "alt": "郑州城隍庙 · 三间大殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "郑州城隍庙 · 三间大殿正面",
+      "明清 · 现存主体"
+    ]
+  },
+  "hn_jiawenmiao": {
+    "src": "assets/plates/hn_jiawenmiao.png",
+    "alt": "郏县文庙 · 大成殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "郏县文庙 · 大成殿正面",
+      "明清 · 现存主体"
+    ]
+  },
+  "hn_jiahuiguan": {
+    "src": "assets/plates/hn_jiahuiguan.png",
+    "alt": "郏县山陕会馆 · 门楼与钟鼓楼组合 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "郏县山陕会馆 · 门楼与钟鼓楼组合",
+      "清 · 现存主体"
+    ]
+  },
+  "hn_linfeng": {
+    "src": "assets/plates/hn_linfeng.png",
+    "alt": "临沣寨 · 西门及相连红石寨墙 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "临沣寨 · 西门及相连红石寨墙",
+      "清 · 现存主体"
+    ]
+  },
+  "hn_gaoge": {
+    "src": "assets/plates/hn_gaoge.png",
+    "alt": "高阁寺 · 阁楼及高台上部 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "高阁寺 · 阁楼及高台上部",
+      "明 · 现存主体"
+    ]
+  },
+  "hn_wenzhige": {
+    "src": "assets/plates/hn_wenzhige.png",
+    "alt": "浚县文治阁 · 十字街钟鼓楼现存主体 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "浚县文治阁 · 十字街钟鼓楼现存主体",
+      "清 · 现存主体"
+    ]
+  },
+  "kh_angkor_wat": {
+    "src": "assets/plates/kh_angkor_wat.png",
+    "alt": "中央五塔及紧邻台基回廊 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#ba9d82",
+    "tint": false,
+    "caption": [
+      "吴哥窟 · 中央五塔及紧邻台基回廊",
+      "12世纪上半叶"
+    ]
+  },
+  "kh_bayon": {
+    "src": "assets/plates/kh_bayon.png",
+    "alt": "中央面像塔群与直接支承台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#ba9d82",
+    "tint": false,
+    "caption": [
+      "巴戎寺 · 中央面像塔群与直接支承台基",
+      "12世纪末—13世纪初"
+    ]
+  },
+  "kh_banteay_srei": {
+    "src": "assets/plates/kh_banteay_srei.png",
+    "alt": "中央三祠塔与共同台基 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#ba9d82",
+    "tint": false,
+    "caption": [
+      "女王宫 · 中央三祠塔与共同台基",
+      "967年奉献"
+    ]
+  },
+  "id_borobudur": {
+    "src": "assets/plates/id_borobudur.png",
+    "alt": "现存主体与完整基座 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#90a6a0",
+    "tint": false,
+    "caption": [
+      "婆罗浮屠 · 现存主体与完整基座",
+      "8—9世纪"
+    ]
+  },
+  "id_prambanan_shiva": {
+    "src": "assets/plates/id_prambanan_shiva.png",
+    "alt": "单座湿婆主庙与台阶 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#90a6a0",
+    "tint": false,
+    "caption": [
+      "普兰巴南湿婆主庙 · 单座湿婆主庙与台阶",
+      "9—10世纪"
+    ]
+  },
+  "th_sukhothai_mahathat": {
+    "src": "assets/plates/th_sukhothai_mahathat.png",
+    "alt": "莲苞形主塔及直接支承台基 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#bcad86",
+    "tint": false,
+    "caption": [
+      "素可泰玛哈泰寺主塔 · 莲苞形主塔及直接支承台基",
+      "素可泰时期 · 约略定位"
+    ]
+  },
+  "th_chaiwatthanaram": {
+    "src": "assets/plates/th_chaiwatthanaram.png",
+    "alt": "中央主塔、四角小塔及共同台基 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c18c71",
+    "tint": false,
+    "caption": [
+      "柴瓦塔那兰寺 · 中央主塔、四角小塔及共同台基",
+      "1630年建置"
+    ]
+  },
+  "mm_ananda": {
+    "src": "assets/plates/mm_ananda.png",
+    "alt": "完整寺身、中央塔冠及突出入口 · 线稿",
+    "width": 1226,
+    "height": 1283,
+    "color": "#c3a56d",
+    "tint": false,
+    "caption": [
+      "蒲甘阿难陀寺 · 完整寺身、中央塔冠及突出入口",
+      "12世纪初"
+    ]
+  },
+  "la_xieng_thong_sim": {
+    "src": "assets/plates/la_xieng_thong_sim.png",
+    "alt": "主佛殿sim与支承台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#91af93",
+    "tint": false,
+    "caption": [
+      "香通寺主佛殿 · 主佛殿sim与支承台基",
+      "约1560年"
+    ]
+  },
+  "vn_po_klong_garai": {
+    "src": "assets/plates/vn_po_klong_garai.png",
+    "alt": "现存主祠塔与入口、台基 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c78e76",
+    "tint": false,
+    "caption": [
+      "波克朗加莱主塔 · 现存主祠塔与入口、台基",
+      "13世纪末—14世纪初"
+    ]
+  },
+  "vn_hue_ngo_mon": {
+    "src": "assets/plates/vn_hue_ngo_mon.png",
+    "alt": "午门完整城台与五凤楼 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#91abaf",
+    "tint": false,
+    "caption": [
+      "顺化皇城午门 · 午门完整城台与五凤楼",
+      "1833年 · 明命帝时期"
+    ]
+  },
+  "ph_manila_san_agustin": {
+    "src": "assets/plates/ph_manila_san_agustin.png",
+    "alt": "现存教堂正立面与钟塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b9aa99",
+    "tint": false,
+    "caption": [
+      "马尼拉圣奥古斯丁教堂 · 现存教堂正立面与钟塔",
+      "1607年石教堂建成"
+    ]
+  },
+  "kr_sudeoksa_daeungjeon": {
+    "src": "assets/plates/kr_sudeoksa_daeungjeon.png",
+    "alt": "单座大雄殿与石台基 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#81aaa2",
+    "tint": false,
+    "caption": [
+      "修德寺大雄殿 · 单座大雄殿与石台基",
+      "高丽 · 1308年"
+    ]
+  },
+  "kr_buseoksa_muryangsujeon": {
+    "src": "assets/plates/kr_buseoksa_muryangsujeon.png",
+    "alt": "单座无量寿殿与台阶 · 线稿",
+    "width": 1226,
+    "height": 1283,
+    "color": "#81aaa2",
+    "tint": false,
+    "caption": [
+      "浮石寺无量寿殿 · 单座无量寿殿与台阶",
+      "高丽 · 1376年"
+    ]
+  },
+  "kr_bulguksa_dabotap": {
+    "src": "assets/plates/kr_bulguksa_dabotap.png",
+    "alt": "多宝塔完整石塔与四向台阶 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b8a56f",
+    "tint": false,
+    "caption": [
+      "佛国寺多宝塔 · 多宝塔完整石塔与四向台阶",
+      "统一新罗 · 约略定位"
+    ]
+  },
+  "kr_changdeokgung_injeongjeon": {
+    "src": "assets/plates/kr_changdeokgung_injeongjeon.png",
+    "alt": "仁政殿单殿与月台 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a48bb4",
+    "tint": false,
+    "caption": [
+      "昌德宫仁政殿 · 仁政殿单殿与月台",
+      "朝鲜王朝 · 1804年"
+    ]
+  },
+  "kp_kaesong_namdaemun": {
+    "src": "assets/plates/kp_kaesong_namdaemun.png",
+    "alt": "石门台与战后复建门楼 · 线稿",
+    "width": 1213,
+    "height": 1297,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "开城南大门 · 石门台与战后复建门楼",
+      "战后复建 · 1955年"
+    ]
+  },
+  "kp_pothong_gate": {
+    "src": "assets/plates/kp_pothong_gate.png",
+    "alt": "普通门城台与双层檐门楼 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a48bb4",
+    "tint": false,
+    "caption": [
+      "平壤普通门 · 普通门城台与双层檐门楼",
+      "朝鲜王朝 · 1473年"
+    ]
+  },
+  "kp_sungyang_hall": {
+    "src": "assets/plates/kp_sungyang_hall.png",
+    "alt": "书院五间讲堂单体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a48bb4",
+    "tint": false,
+    "caption": [
+      "崧阳书院讲堂 · 书院五间讲堂单体",
+      "朝鲜王朝 · 约略定位"
+    ]
+  },
+  "kp_sonjuk_bridge": {
+    "src": "assets/plates/kp_sonjuk_bridge.png",
+    "alt": "旧石梁桥与1780年石栏 · 线稿",
+    "width": 1199,
+    "height": 1312,
+    "color": "#81aaa2",
+    "tint": false,
+    "caption": [
+      "开城善竹桥 · 旧石梁桥与1780年石栏",
+      "高丽 · 约略定位"
+    ]
   }
 };
 

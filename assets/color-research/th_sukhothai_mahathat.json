@@ -1,0 +1,127 @@
+{
+  "id": "th_sukhothai_mahathat",
+  "name": "素可泰玛哈泰寺主塔",
+  "subject": "莲苞形主塔及直接支承台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Temple_Wat_Mahathat_de_Sukhothai_6.jpg/1920px-Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+  "author": "Welcome to Thailand",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Temple_Wat_Mahathat_de_Sukhothai_6.jpg/1920px-Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+      "file": "assets/references/th_sukhothai_mahathat-photo.jpg",
+      "sha256": "7b1554cf432a726c9188a7222401360c799b70a0bb03709b4a8d1f4f9b1bf743",
+      "author": "Welcome to Thailand",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2024-02-29 12:33:10",
+      "description": "Chedi principal (stupa ; reliquaire) coiffé d'une flamme en forme de fleur de lotus en bouton. Le roi Li Thaï y aurait placé un cheveu et une vertèbre du Bouddha. A sa base, il y a la frise en stuc des disciples de Bouddha."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Temple_Wat_Mahathat_de_Sukhothai_6.jpg/1920px-Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
+      "file": "assets/references/th_sukhothai_mahathat-photo.jpg",
+      "sha256": "7b1554cf432a726c9188a7222401360c799b70a0bb03709b4a8d1f4f9b1bf743",
+      "author": "Welcome to Thailand",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2024-02-29 12:33:10",
+      "description": "Chedi principal (stupa ; reliquaire) coiffé d'une flamme en forme de fleur de lotus en bouton. Le roi Li Thaï y aurait placé un cheveu et une vertèbre du Bouddha. A sa base, il y a la frise en stuc des disciples de Bouddha."
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw ONLY the CENTRAL lotus-bud chedi of Wat Mahathat in Sukhothai in the photo: pointed slender finial above bulbous lotus bud, cylindrical neck, stepped square body, decorated arched front niche and directly supporting sculpted tiered base with procession relief. Remove all freestanding round foreground columns and flanking stupas; keep the actual main chedi and its support complete. No invented roofs on this ruin."
+  ],
+  "material_observations": [
+    "灰褐旧砖石，灰黑风化表面，塔身局部浅赭灰泥，底座砖偏红褐。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为莲苞形主塔及直接支承台基。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 莲苞形主塔及直接支承台基\nPRESERVE: Portrait 1024x1536. Draw ONLY the CENTRAL lotus-bud chedi of Wat Mahathat in Sukhothai in the photo: pointed slender finial above bulbous lotus bud, cylindrical neck, stepped square body, decorated arched front niche and directly supporting sculpted tiered base with procession relief. Remove all freestanding round foreground columns and flanking stupas; keep the actual main chedi and its support complete. No invented roofs on this ruin.\nOBSERVED MATERIAL COLORS: 灰褐旧砖石，灰黑风化表面，塔身局部浅赭灰泥，底座砖偏红褐。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generator": "built-in image_gen.imagegen",
+  "input_images": [
+    "assets/generated/th_sukhothai_mahathat.png",
+    "assets/references/th_sukhothai_mahathat-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/th_sukhothai_mahathat.png",
+  "original_research": "assets/research/th_sukhothai_mahathat.json",
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T11:59:44.675529+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 莲苞形主塔及直接支承台基\nPRESERVE: Portrait 1024x1536. Draw ONLY the CENTRAL lotus-bud chedi of Wat Mahathat in Sukhothai in the photo: pointed slender finial above bulbous lotus bud, cylindrical neck, stepped square body, decorated arched front niche and directly supporting sculpted tiered base with procession relief. Remove all freestanding round foreground columns and flanking stupas; keep the actual main chedi and its support complete. No invented roofs on this ruin.\nOBSERVED MATERIAL COLORS: 灰褐旧砖石，灰黑风化表面，塔身局部浅赭灰泥，底座砖偏红褐。",
+      "input_images": [
+        "assets/generated/th_sukhothai_mahathat.png",
+        "assets/references/th_sukhothai_mahathat-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:02:10.043598+08:00",
+      "saved_at": "2026-10-02T12:02:10.043976+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-06fdff81-9e1a-47ed-81a4-df5b6ac0fa81.png",
+      "saved_file": "assets/colored/th_sukhothai_mahathat.png",
+      "tool_output_id": "exec-06fdff81-9e1a-47ed-81a4-df5b6ac0fa81"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-06fdff81-9e1a-47ed-81a4-df5b6ac0fa81.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1c82ea0234b2ee8d310fe4904c71b50c4432a700c3ed35c161a2a9ee5c71ba42",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "factual_sources": [
+    {
+      "title": "泰国政府观光局：Wat Mahathat Sukhothai",
+      "url": "https://www.thailandtravel.or.jp/wat-mahathat-sukhothai/",
+      "publisher": "泰国政府观光局",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1350,
+  "yearApprox": true,
+  "yearNote": "可靠资料确认素可泰时期及莲苞主塔形制，单体精确改建年未详；1350仅用于年表排序，不采用寺院初创年来替代现存主塔年龄。",
+  "country": "TH",
+  "caption": [
+    "素可泰玛哈泰寺主塔 · 莲苞形主塔及直接支承台基",
+    "素可泰时期 · 约略定位"
+  ],
+  "preview_check": {
+    "observed_at": "2026-10-02T12:17:44.915228+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "note": "名单获同意，图版尚待用户人眼验收。"
+  }
+}

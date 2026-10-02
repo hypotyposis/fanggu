@@ -1,0 +1,113 @@
+{
+  "id": "hn_linfeng",
+  "subject": "临沣寨 · 西门及相连红石寨墙",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Lanch",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_linfeng-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 临沣寨 · 西门及相连红石寨墙. One rounded arch gate inset in red sandstone wall, small blank rectangular plaque over arch, sloping curved masonry parapet on both sides as photo. No roofed pavilion or invented battlements. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_linfeng.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "临沣寨 · 西门及相连红石寨墙",
+    "清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_linfeng",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/%E4%B8%B4%E6%B2%A3%E5%AF%A8%EF%BC%88%E8%A5%BF%E9%97%A8%EF%BC%89_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_linfeng-photo.jpg",
+      "author": "Lanch",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "One rounded arch gate inset in red sandstone wall, small blank rectangular plaque over arch, sloping curved masonry parapet on both sides as photo. No roofed pavilion or invented battlements. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Reddish ochre sandstone blocks with pale mortar joints, grey-brown worn stone arch and earth threshold."
+  ],
+  "generated_at": "2026-10-01T19:21:41.900433+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.958Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-bab6047b-f372-4776-bffd-8fc67dfa18e8.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "03033be338435efc4bf1f432f6bd83cbb2e44c8ac2ab5245e134254ff4d59ffa",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.958Z",
+      "received_at": "2026-10-01T19:21:41.900433+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 临沣寨 · 西门及相连红石寨墙. One rounded arch gate inset in red sandstone wall, small blank rectangular plaque over arch, sloping curved masonry parapet on both sides as photo. No roofed pavilion or invented battlements. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_linfeng-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_linfeng.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-bab6047b-f372-4776-bffd-8fc67dfa18e8.png",
+      "sourceSha256": "03033be338435efc4bf1f432f6bd83cbb2e44c8ac2ab5245e134254ff4d59ffa",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_linfeng-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "临沣寨",
+      "url": "https://wwj.henan.gov.cn/2022/10-18/2625360.html",
+      "publisher": "河南省文物局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_linfeng",
+    "name": "临沣寨",
+    "short": "临沣寨",
+    "sub": "西门及相连红石寨墙",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "同治元年红石寨墙重建",
+    "year": 1862,
+    "yearApprox": false,
+    "yearNote": "同治元年红石寨墙重建",
+    "yearLabel": "1862",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "gate",
+      "wall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "红石寨墙弯折围住一道拱门，石块与灰缝构成沉厚的入口。临沣寨以现存寨墙保存着清代村落防御的边界。",
+    "facts": [
+      "临沣寨位于郏县，是第七批国保。",
+      "现存红石寨墙于清同治元年（1862）重建，年表采用这一阶段。",
+      "图版仅绘参考照片中的西门及相连寨墙；保留石拱、门额和墙体起伏，不补造门楼。"
+    ],
+    "caption": [
+      "临沣寨 · 西门及相连红石寨墙",
+      "清 · 现存主体"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "hn_gaoge",
+  "name": "高阁寺",
+  "subject": "高阁寺 · 阁楼及高台上部",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_gaoge.png",
+    "assets/references/hn_gaoge-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 高阁寺 · 阁楼及高台上部\nPHOTOGRAPHED MATERIAL COLORS: Grey roof tiles, dark aged bracket timber with blue-green traces, red upper walls and warm grey brick platform.\nDraw the existing double-eaved pavilion atop high masonry platform, keeping visible red upper wall and pale stone balustrade. Oblique low-angle photo geometry, retain only photographed upper platform; do not invent unseen stairs or lower platform. Landscape 1536x1024.",
+  "material_observations": [
+    "Grey roof tiles, dark aged bracket timber with blue-green traces, red upper walls and warm grey brick platform."
+  ],
+  "references": [
+    {
+      "id": "hn_gaoge",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A%E9%AB%98%E9%98%81%E5%AF%BA.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/%E9%AB%98%E9%98%81%E5%AF%BA.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_gaoge-photo.jpg",
+      "author": "三猎",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_gaoge.json",
+  "output": "assets/colored/hn_gaoge.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:27:36.142Z",
+  "generated_at": "2026-10-01T19:30:03.717404+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-5459f874-efdb-4fa8-a44d-1bf5693467d0.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7bc7e59c90678e1db179ddbd75364e3f138bc9de3b58ad4b7b5fdb191b193e1a",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:27:36.142Z",
+      "received_at": "2026-10-01T19:30:03.717404+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 高阁寺 · 阁楼及高台上部\nPHOTOGRAPHED MATERIAL COLORS: Grey roof tiles, dark aged bracket timber with blue-green traces, red upper walls and warm grey brick platform.\nDraw the existing double-eaved pavilion atop high masonry platform, keeping visible red upper wall and pale stone balustrade. Oblique low-angle photo geometry, retain only photographed upper platform; do not invent unseen stairs or lower platform. Landscape 1536x1024.",
+      "input_images": [
+        "assets/generated/hn_gaoge.png",
+        "assets/references/hn_gaoge-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_gaoge.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-5459f874-efdb-4fa8-a44d-1bf5693467d0.png",
+      "sourceSha256": "7bc7e59c90678e1db179ddbd75364e3f138bc9de3b58ad4b7b5fdb191b193e1a",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "第七批全国重点文物保护单位：高阁寺",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf",
+      "publisher": "国务院",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_gaoge",
+    "name": "高阁寺",
+    "short": "高阁寺",
+    "sub": "阁楼及高台上部",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明代建筑及后世修缮；年表为约略定位",
+    "year": 1500,
+    "yearApprox": true,
+    "yearNote": "明代建筑及后世修缮；年表为约略定位",
+    "yearLabel": "明约略",
+    "placeKey": "anyang",
+    "place": "河南 · 安阳",
+    "types": [
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "两重飞檐从高台上探出，砖石平台与红色阁壁逐级相叠。安阳高阁寺以高台楼阁的形制留在古城之中。",
+    "facts": [
+      "高阁寺位于安阳，国保第七批名单所列时代为明至清。",
+      "图版按低角度实拍绘楼阁和高台上部，未绘照片不可见的台阶及完整下部。",
+      "单体精确重建年尚缺足够直接证据，年表按明代约略定位，并保留后世修缮说明。"
+    ],
+    "caption": [
+      "高阁寺 · 阁楼及高台上部",
+      "明 · 现存主体"
+    ]
+  }
+}

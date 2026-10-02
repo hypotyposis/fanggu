@@ -89,6 +89,16 @@
       "retrievedOn": "2026-10-02",
       "retrievedSha256": "2203e7b0708f2307263a365347dc5d7477643bdade0a80d007b53716a56c505c",
       "note": "首次公布日期为1982-02-23；本来源发布于2006-06-15，以合并项目第41项明确反证其第二批身份。原batch2链接实际返回1981年公报，未作为本条目核对证据。"
+    },
+    "batch5_songyang": {
+      "batch": 5,
+      "title": "嵩阳书院第五批国保身份与现存建筑范围复核",
+      "publisher": "登封市嵩阳街道办事处 · 郑州市政府公开平台",
+      "url": "https://df.jiceng.zhengzhou.gov.cn/020007/8163269.jhtml",
+      "announcedOn": "2001-06-25",
+      "retrievedOn": "2026-10-02",
+      "retrievedSha256": "961448bbe2f34f9ebfd4fe80ac7feac6fb3d0c6fad14fce7df8372800df26192",
+      "note": "原第五批以大唐嵩阳观纪圣德感应之颂碑公布，当前官方页面明确书院第五批身份；书院范围另见登封公开保护规划。"
     }
   },
   "entries": {
@@ -4572,6 +4582,176 @@
           }
         ],
         "checkedAt": "2026-10-02"
+      }
+    ],
+    "hn_yanqing": [
+      {
+        "batch": 4,
+        "unitName": "延庆观",
+        "relation": "merged",
+        "scope": "延庆观 · 玉皇阁现存主体",
+        "source": "batch4",
+        "locator": "PDF 第29页 · 合并项目第7项",
+        "scopeSources": [
+          {
+            "title": "国务院第四批合并名单：延庆观",
+            "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+          }
+        ],
+        "parent": {
+          "unitName": "宋东京城遗址",
+          "batch": 3
+        },
+        "note": "第四批将延庆观归入第三批宋东京城遗址；按延庆观纳入批次贴第四批标签。"
+      }
+    ],
+    "hn_yuefei": [
+      {
+        "batch": 5,
+        "unitName": "汤阴岳飞庙",
+        "relation": "part",
+        "scope": "汤阴岳飞庙 · 二殿正面",
+        "source": "batch5",
+        "locator": "PDF 第13页 · 古建筑第157项（序号351）",
+        "scopeSources": [
+          {
+            "title": "汤阴岳飞庙明清建筑群",
+            "url": "https://www.tangyin.gov.cn/2024/04-29/3473524.html"
+          }
+        ]
+      }
+    ],
+    "hn_songyang": [
+      {
+        "batch": 5,
+        "unitName": "嵩阳书院",
+        "relation": "part",
+        "scope": "嵩阳书院 · 清代大门正面",
+        "source": "batch5_songyang",
+        "locator": "2025-01-20官方介绍末段、清代建筑及中轴大门段落",
+        "scopeSources": [
+          {
+            "title": "嵩阳书院简介",
+            "url": "https://df.jiceng.zhengzhou.gov.cn/020007/8163269.jhtml"
+          },
+          {
+            "title": "嵩山古代建筑群保护规划中的书院保护范围",
+            "url": "https://public.dengfeng.gov.cn/attachment/环评正文.pdf"
+          }
+        ],
+        "note": "当前官方资料称嵩阳书院；第五批原名单名称为大唐嵩阳观纪圣德感应之颂碑。所绘大门范围以书院保护规划与现存清代建筑说明复核。"
+      }
+    ],
+    "hn_xiangguo": [
+      {
+        "batch": 7,
+        "unitName": "相国寺",
+        "relation": "part",
+        "scope": "大相国寺 · 大雄宝殿正面",
+        "source": "batch7",
+        "locator": "PDF 第67页 · 序号1203",
+        "scopeSources": [
+          {
+            "title": "大相国寺现存建筑",
+            "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hnly/zywh/articlea27d03edffc44e85a80fdf8022a87edd.html"
+          }
+        ]
+      }
+    ],
+    "hn_zzchenghuang": [
+      {
+        "batch": 7,
+        "unitName": "郑州城隍庙（含文庙大成殿）",
+        "relation": "part",
+        "scope": "郑州城隍庙 · 三间大殿正面",
+        "source": "batch7",
+        "locator": "PDF 第67页 · 序号1192",
+        "scopeSources": [
+          {
+            "title": "郑州城隍庙",
+            "url": "https://wwj.zhengzhou.gov.cn/country/3175328.jhtml"
+          }
+        ]
+      }
+    ],
+    "hn_jiawenmiao": [
+      {
+        "batch": 6,
+        "unitName": "郏县文庙",
+        "relation": "part",
+        "scope": "郏县文庙 · 大成殿正面",
+        "source": "batch6",
+        "locator": "古建筑第337项（序号634）",
+        "scopeSources": [
+          {
+            "title": "郏县文庙",
+            "url": "https://wglj.pds.gov.cn/contents/12739/262641.html"
+          }
+        ]
+      }
+    ],
+    "hn_jiahuiguan": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆 · 门楼与钟鼓楼组合",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "hn_linfeng": [
+      {
+        "batch": 7,
+        "unitName": "临沣寨",
+        "relation": "part",
+        "scope": "临沣寨 · 西门及相连红石寨墙",
+        "source": "batch7",
+        "locator": "PDF 第67页 · 序号1200",
+        "scopeSources": [
+          {
+            "title": "临沣寨",
+            "url": "https://wwj.henan.gov.cn/2022/10-18/2625360.html"
+          }
+        ]
+      }
+    ],
+    "hn_gaoge": [
+      {
+        "batch": 7,
+        "unitName": "高阁寺",
+        "relation": "part",
+        "scope": "高阁寺 · 阁楼及高台上部",
+        "source": "batch7",
+        "locator": "PDF 第67页 · 序号1195",
+        "scopeSources": [
+          {
+            "title": "第七批全国重点文物保护单位：高阁寺",
+            "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
+          }
+        ]
+      }
+    ],
+    "hn_wenzhige": [
+      {
+        "batch": 7,
+        "unitName": "浚县古城墙及文治阁",
+        "relation": "part",
+        "scope": "浚县文治阁 · 十字街钟鼓楼现存主体",
+        "source": "batch7",
+        "locator": "PDF 第66页 · 序号1182",
+        "scopeSources": [
+          {
+            "title": "第七批全国重点文物保护单位：浚县古城墙及文治阁",
+            "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf"
+          }
+        ]
       }
     ]
   },

@@ -1,0 +1,106 @@
+{
+  "id": "kr_bulguksa_dabotap",
+  "name": "佛国寺多宝塔",
+  "subject": "多宝塔完整石塔与四向台阶",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dabotap_Pagoda_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_bulguksa_dabotap-photo.jpg",
+      "sha256": "f9d64211457c221462d11c4cdab1cf117dd4789df1447b11ecc7e3ea0dfdd591",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-06",
+      "description": "Dabotap Pagoda at Bulguksa Temple, South Korea"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Dabotap_Pagoda_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Dabotap_Pagoda_01.jpg/1920px-Dabotap_Pagoda_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Dabotap_Pagoda_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_bulguksa_dabotap-photo.jpg",
+      "sha256": "f9d64211457c221462d11c4cdab1cf117dd4789df1447b11ecc7e3ea0dfdd591",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-10-06",
+      "description": "Dabotap Pagoda at Bulguksa Temple, South Korea"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://english.cha.go.kr/chaen/search/selectGeneralSearchDetail.do?ccebAsno=00200000&ccebKdcd=11&mn=EN_02_02&pageIndex=2&sCcebCtcd=37&sCcebKdcd=11",
+      "title": "佛国寺多宝塔形制与年代",
+      "note": "官方断代为统一新罗8世纪；751年为佛国寺兴建相关纪年，塔的排序年约略取751。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kr_bulguksa_dabotap-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_reference"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. ONLY the entire Dabotap granite pagoda: square base with stairways on four sides, open square stone-pillared lower canopy, balustraded octagonal upper stages, octagonal stone canopy and full stacked finial. Preserve the ONE surviving stone lion shown at lower stage; do not invent missing lions. Do not turn it into a conventional wooden pagoda. Remove modern steel fence, people, trees, neighboring halls."
+  ],
+  "material_observations": [
+    "浅灰米色花岗岩，风化面灰褐，石阶少量暗灰斑；不是金色或木结构。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；官方断代为统一新罗8世纪；751年为佛国寺兴建相关纪年，塔的排序年约略取751。 原型待用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Portrait 1024x1536. ONLY the entire Dabotap granite pagoda: square base with stairways on four sides, open square stone-pillared lower canopy, balustraded octagonal upper stages, octagonal stone canopy and full stacked finial. Preserve the ONE surviving stone lion shown at lower stage; do not invent missing lions. Do not turn it into a conventional wooden pagoda. Remove modern steel fence, people, trees, neighboring halls.",
+  "generated_file": "assets/generated/kr_bulguksa_dabotap.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "佛国寺多宝塔 · 多宝塔完整石塔与四向台阶",
+    "统一新罗 · 约略定位"
+  ],
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T04:09:22.744Z",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Portrait 1024x1536. ONLY the entire Dabotap granite pagoda: square base with stairways on four sides, open square stone-pillared lower canopy, balustraded octagonal upper stages, octagonal stone canopy and full stacked finial. Preserve the ONE surviving stone lion shown at lower stage; do not invent missing lions. Do not turn it into a conventional wooden pagoda. Remove modern steel fence, people, trees, neighboring halls.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kr_bulguksa_dabotap-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:14:14.594690+08:00",
+      "saved_at": "2026-10-02T12:14:14.594690+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-5bc41787-ac61-4d0b-8689-c48c9332f344.png",
+      "saved_file": "assets/generated/kr_bulguksa_dabotap.png",
+      "tool_output_id": "exec-5bc41787-ac61-4d0b-8689-c48c9332f344"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-5bc41787-ac61-4d0b-8689-c48c9332f344.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "91da33338c781a0b4f005f909203ab19d706ac6afe552663319297b36415e79e",
+    "seeds": []
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

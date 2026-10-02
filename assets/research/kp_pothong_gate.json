@@ -1,0 +1,106 @@
+{
+  "id": "kp_pothong_gate",
+  "name": "平壤普通门",
+  "subject": "普通门城台与双层檐门楼",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Potongmun_1.jpg/1920px-Potongmun_1.jpg",
+  "author": "Christophe95",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Potongmun_1.jpg/1920px-Potongmun_1.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Potongmun_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_pothong_gate-photo.jpg",
+      "sha256": "3cc98ccee70b447084d73a048c36ca6b8ead76acbbd9647720629084b4555206",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-10-10 08:46:31",
+      "description": "Potongmun in Pyongyang."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Potongmun_1.jpg/1920px-Potongmun_1.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Potongmun_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_pothong_gate-photo.jpg",
+      "sha256": "3cc98ccee70b447084d73a048c36ca6b8ead76acbbd9647720629084b4555206",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-10-10 08:46:31",
+      "description": "Potongmun in Pyongyang."
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://www.ryongnamsan.edu.kp/univ/en/research/articles/3f9e3767ef3b10a0de4c256d7ef9805d?cp=24",
+      "title": "平壤普通门形制与年代",
+      "note": "现存普通门据金日成大学资料于1473年大修，后来仍有维修扩建；不把高句丽城址起源作为现存门楼年代。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kp_pothong_gate-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_reference"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Pothong/Potong gate ONLY: ONE semicircular stone arch in massive granite platform, THREE front bays and THREE side bays in wooden gatehouse, TWO distinct eave tiers, hip-and-gable roof, open red columns, stepped sloping flanks to platform. Keep roof ornaments and full base; remove bushes, modern towers, streetlights, people and sky."
+  ],
+  "material_observations": [
+    "灰花岗岩城台，灰黑瓦，浅灰屋脊，暗红柱，梁枋青绿与少量红赭彩饰，门洞深灰。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；现存普通门据金日成大学资料于1473年大修，后来仍有维修扩建；不把高句丽城址起源作为现存门楼年代。 原型待用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Complete Pothong/Potong gate ONLY: ONE semicircular stone arch in massive granite platform, THREE front bays and THREE side bays in wooden gatehouse, TWO distinct eave tiers, hip-and-gable roof, open red columns, stepped sloping flanks to platform. Keep roof ornaments and full base; remove bushes, modern towers, streetlights, people and sky.",
+  "generated_file": "assets/generated/kp_pothong_gate.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "平壤普通门 · 普通门城台与双层檐门楼",
+    "朝鲜王朝 · 1473年"
+  ],
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T04:09:23.024Z",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Complete Pothong/Potong gate ONLY: ONE semicircular stone arch in massive granite platform, THREE front bays and THREE side bays in wooden gatehouse, TWO distinct eave tiers, hip-and-gable roof, open red columns, stepped sloping flanks to platform. Keep roof ornaments and full base; remove bushes, modern towers, streetlights, people and sky.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kp_pothong_gate-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:13:43.237258+08:00",
+      "saved_at": "2026-10-02T12:13:43.237258+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-1d5368a6-d7c3-42a6-910d-94427a5bb2fa.png",
+      "saved_file": "assets/generated/kp_pothong_gate.png",
+      "tool_output_id": "exec-1d5368a6-d7c3-42a6-910d-94427a5bb2fa"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-1d5368a6-d7c3-42a6-910d-94427a5bb2fa.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fd425cf82b64eb8fcd2f25602f33c52057eb40df30a1e3006bdf8dc2ad602889",
+    "seeds": []
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "hn_yuefei",
+  "name": "汤阴岳飞庙",
+  "subject": "汤阴岳飞庙 · 二殿正面",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_yuefei.png",
+    "assets/references/hn_yuefei-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 汤阴岳飞庙 · 二殿正面\nPHOTOGRAPHED MATERIAL COLORS: Grey-green tiles, faded vermilion doors and columns, light grey stone paving.\nFive-bay single-eaved hip-and-gable hall, central entrance and lattice window panels; keep the roof silhouette and low terrace. Landscape 1536x1024.",
+  "material_observations": [
+    "Grey-green tiles, faded vermilion doors and columns, light grey stone paving."
+  ],
+  "references": [
+    {
+      "id": "hn_yuefei",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250831_Yue_Fei_Temple_in_Tangyin_06.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/20250831_Yue_Fei_Temple_in_Tangyin_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_yuefei-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_yuefei.json",
+  "output": "assets/colored/hn_yuefei.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:22:14.277Z",
+  "generated_at": "2026-10-01T19:27:48.726155+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-32d9219a-e087-4881-b526-a4c5373691fd.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "109d1dd258bb97820879f0ccaf9ffb5d4006322a0a58ce47f485af1cf252b499",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:22:14.277Z",
+      "received_at": "2026-10-01T19:27:48.726155+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 汤阴岳飞庙 · 二殿正面\nPHOTOGRAPHED MATERIAL COLORS: Grey-green tiles, faded vermilion doors and columns, light grey stone paving.\nFive-bay single-eaved hip-and-gable hall, central entrance and lattice window panels; keep the roof silhouette and low terrace. Landscape 1536x1024.",
+      "input_images": [
+        "assets/generated/hn_yuefei.png",
+        "assets/references/hn_yuefei-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_yuefei.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-32d9219a-e087-4881-b526-a4c5373691fd.png",
+      "sourceSha256": "109d1dd258bb97820879f0ccaf9ffb5d4006322a0a58ce47f485af1cf252b499",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "汤阴岳飞庙明清建筑群",
+      "url": "https://www.tangyin.gov.cn/2024/04-29/3473524.html",
+      "publisher": "汤阴县人民政府",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_yuefei",
+    "name": "汤阴岳飞庙",
+    "short": "汤阴岳飞庙",
+    "sub": "二殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "明清建筑与后世修缮；二殿确切营建年未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "明清建筑与后世修缮；二殿确切营建年未详",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_tangyin",
+    "place": "河南 · 汤阴",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "五间殿宇排开红色门窗，青灰屋面舒展。汤阴岳飞庙以明清建筑群延续对岳飞的纪念。",
+    "facts": [
+      "汤阴岳飞庙是第五批国保，现存建筑群历经明清营建与修缮。",
+      "图版选实拍所示二殿正面，保留五间面阔、单层屋檐与门窗分布。",
+      "二殿确切营建年尚未确认，年表按明清现存主体约略定位，未采用岳飞生活年代。"
+    ],
+    "caption": [
+      "汤阴岳飞庙 · 二殿正面",
+      "明清 · 现存主体"
+    ]
+  }
+}

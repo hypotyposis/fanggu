@@ -52,7 +52,7 @@ test('Shanghai filtering and expansion preserve prior records and blank arrival 
 
 test('every site has a province, region and explicit architectural types', () => {
   assert.equal(catalog.length, SITES.length);
-  assert.equal(new Set(catalog.map(site => site.province)).size, 39);
+  assert.equal(new Set(catalog.map(site => site.province)).size, 54);
   assert.deepEqual(find({ province: '西藏', dynasty: 'tubo' }), ['xz_jokhang']);
   assert.deepEqual(find({ province: '新疆', type: 'grotto' }), ['xj_kizil', 'xj_kumtura']);
   assert.deepEqual(find({ type: 'column' }), ['hn_xizhou']);
@@ -89,7 +89,7 @@ test('province options follow region and only show catalogued provinces', () => 
   assert.deepEqual(facets.provinces(catalog, 'northwest'), ['陕西', '甘肃', '青海', '宁夏', '新疆']);
   assert(facets.provinces(catalog, 'east').includes('福建'));
   assert(!facets.provinces(catalog, 'east').includes('山西'));
-  assert.equal(facets.provinces(catalog).length, 39);
+  assert.equal(facets.provinces(catalog).length, new Set(catalog.map(site => site.province)).size);
 });
 
 test('aliases and geographic or type names remain searchable with facets', () => {

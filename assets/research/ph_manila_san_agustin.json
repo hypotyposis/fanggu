@@ -1,0 +1,118 @@
+{
+  "id": "ph_manila_san_agustin",
+  "name": "马尼拉圣奥古斯丁教堂",
+  "subject": "现存教堂正立面与钟塔",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
+  "author": "LMP 2001",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "file": "assets/references/ph_manila_san_agustin-photo.jpg",
+      "sha256": "abcfd84043dcb14cfa805a84ea3609e76ee849fab5d74099db0ec51c986e2179",
+      "author": "LMP 2001",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-05-28 11:57:55",
+      "description": "Main façade of the San Agustin Church in Intramuros, the oldest stone church in the Philippines still standing after four centuries since it was completed in 1607."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
+      "file": "assets/references/ph_manila_san_agustin-photo.jpg",
+      "sha256": "abcfd84043dcb14cfa805a84ea3609e76ee849fab5d74099db0ec51c986e2179",
+      "author": "LMP 2001",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2023-05-28 11:57:55",
+      "description": "Main façade of the San Agustin Church in Intramuros, the oldest stone church in the Philippines still standing after four centuries since it was completed in 1607."
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ph_manila_san_agustin-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw the present San Agustin Church Manila facade including the SINGLE standing attached bell tower at RIGHT, full main facade and ground doorway. Main triangular pediment has a round rose window and cross, below are paired pilasters, a rectangular center upper window flanked by TWO arched niches, and the large arched entrance. The left bell tower is lost: keep its surviving low masonry stump rather than rebuilding another symmetrical tower. Remove cars, tree, people and adjacent monastery wings."
+  ],
+  "material_observations": [
+    "浅灰米色石墙、灰褐柱式与门窗框、深褐门及暗窗口、屋缘少量红瓦，钟塔浅灰。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为现存教堂正立面与钟塔。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Portrait 1024x1536. Draw the present San Agustin Church Manila facade including the SINGLE standing attached bell tower at RIGHT, full main facade and ground doorway. Main triangular pediment has a round rose window and cross, below are paired pilasters, a rectangular center upper window flanked by TWO arched niches, and the large arched entrance. The left bell tower is lost: keep its surviving low masonry stump rather than rebuilding another symmetrical tower. Remove cars, tree, people and adjacent monastery wings.",
+  "generated_file": "assets/generated/ph_manila_san_agustin.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T11:47:59.779292+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Portrait 1024x1536. Draw the present San Agustin Church Manila facade including the SINGLE standing attached bell tower at RIGHT, full main facade and ground doorway. Main triangular pediment has a round rose window and cross, below are paired pilasters, a rectangular center upper window flanked by TWO arched niches, and the large arched entrance. The left bell tower is lost: keep its surviving low masonry stump rather than rebuilding another symmetrical tower. Remove cars, tree, people and adjacent monastery wings.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ph_manila_san_agustin-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:59:32.884409+08:00",
+      "saved_at": "2026-10-02T11:59:32.884648+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-6a1d3569-579a-4c37-b844-7da8ea289005.png",
+      "saved_file": "assets/generated/ph_manila_san_agustin.png",
+      "tool_output_id": "exec-6a1d3569-579a-4c37-b844-7da8ea289005"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-6a1d3569-579a-4c37-b844-7da8ea289005.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "eaed4db96b107ea2aa2e4cceb7483275b35b123120ce22cbac8030633ddd5ed3",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T11:59:44.542119+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "菲律宾国家博物馆：San Agustin Church",
+      "url": "https://www.nationalmuseum.gov.ph/2023/05/11/san-agustin-church/",
+      "publisher": "菲律宾国家博物馆",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1607,
+  "yearApprox": false,
+  "yearNote": "1607为现存石教堂建成纪年，区别于更早木教堂。钟塔与后世维修有各自沿革，不将整座现状断作同年原构。",
+  "country": "PH",
+  "caption": [
+    "马尼拉圣奥古斯丁教堂 · 现存教堂正立面与钟塔",
+    "1607年石教堂建成"
+  ]
+}

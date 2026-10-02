@@ -4,12 +4,14 @@
   else root.FangguTimeline = factory();
 })(typeof globalThis === 'object' ? globalThis : this, () => {
   'use strict';
-  const WIDTH = 1200, HEIGHT = 240, PAGE_SIZE = 4;
+  const WIDTH = 1200, HEIGHT = 380, PAGE_SIZE = 4;
   const endYear = 2026;
   const x = year => 76 + 1090 * (year <= 600 ? year / 600 * .18 : year <= 1250 ? .18 + (year - 600) / 650 * .54 : .72 + (year - 1250) / (endYear - 1250) * .28);
   const lane = (site, dynasties) => dynasties[site.dyn].country === 'JP' ? 'japan'
+    : site.timelineLane === 'korea' || dynasties[site.dyn].timelineLane === 'korea' ? 'korea'
+    : ['KH', 'ID', 'TH', 'MM', 'LA', 'VN', 'PH'].includes(dynasties[site.dyn].country) ? 'southeastAsia'
     : site.timelineLane === 'north' || ['han', 'bei', 'beiqi', 'qiuci', 'xiyu', 'sui', 'liao', 'xixia', 'yuan', 'ming', 'modern'].includes(site.dyn) ? 'north' : 'south';
-  const trackY = { north: 91, south: 155, japan: 218 };
+  const trackY = { north: 91, south: 155, japan: 218, southeastAsia: 284, korea: 352 };
   function clusters(sites, dynasties) {
     const result = [];
     for (const track of Object.keys(trackY)) {
@@ -70,11 +72,11 @@
     svg.setAttribute('viewBox', `0 0 ${WIDTH} ${HEIGHT}`);
     svg.setAttribute('aria-label', `${sites.length}处古迹的年代总览；点选朝代或聚合点，在下方查看古迹`);
     for (const year of [100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2000]) {
-      svg.append(sv('line', { class: 'axis', x1: x(year), x2: x(year), y1: 27, y2: 230 }));
+      svg.append(sv('line', { class: 'axis', x1: x(year), x2: x(year), y1: 27, y2: HEIGHT - 10 }));
       svg.append(sv('text', { class: 'tick', x: x(year), y: 17, 'text-anchor': 'middle' }, year));
     }
     for (const year of [600, 1250]) svg.append(sv('path', { class: 'axis-break', d: `M${x(year) - 5},23l4,-7l4,14l4,-7` }));
-    for (const [label, y] of [['北', 91], ['南', 155], ['日本', 214]]) svg.append(sv('text', { class: 'lane-name', x: 14, y }, label));
+    for (const [label, y] of [['北', 91], ['南', 155], ['日本', 214], ['东南亚', 280], ['朝鲜半岛', 348]]) svg.append(sv('text', { class: 'lane-name', x: 14, y }, label));
     // The paired bars use the catalogue's existing combined dynasty categories.
     const bars = [
       ['han', '东汉', 25, 220, 'unified'], ['sui', '隋', 581, 618, 'unified'],
@@ -85,17 +87,18 @@
       ['nan', '南朝', 420, 589, 'south'], ['tang', '唐', 618, 907, 'south'], ['zhou', '五代', 907, 960, 'south'],
       ['song', '北宋', 960, 1127, 'south'], ['song', '南宋', 1127, 1279, 'south'],
       ...Object.entries(dynasties).filter(([, era]) => era.country === 'JP').map(([key, era]) => [key, era.glyph, era.start, era.end, 'japan']),
+      ...Object.entries(dynasties).filter(([, era]) => era.timelineLane === 'korea').map(([key, era]) => [key, era.glyph, era.start, era.end, 'korea']),
     ];
     for (const [key, label, start, end, track] of bars) {
       // Xixia overlaps Liao/Jin in time; its narrow strip sits above those bars.
-      const y = track === 'northwest' ? 28 : track === 'south' ? 115 : track === 'japan' ? 182 : 50, height = track === 'northwest' ? 17 : track === 'unified' ? 117 : track === 'japan' ? 48 : 53;
+      const y = track === 'northwest' ? 28 : track === 'south' ? 115 : track === 'japan' ? 182 : track === 'korea' ? 316 : 50, height = track === 'northwest' ? 17 : track === 'unified' ? 117 : track === 'japan' || track === 'korea' ? 48 : 53;
       const left = x(start), width = x(end) - left, center = left + width / 2;
       const group = sv('g', { class: 'tl-period', 'data-period': key, 'aria-label': `${label}，${start}—${end}，查看${periodNames[key]}古迹` });
       group.style.setProperty('--acc', dynasties[key].acc);
       group.append(sv('title', {}, `${label} · ${start}—${end} · 查看${periodNames[key]}古迹`));
       group.append(sv('rect', { class: 'period-fill', x: left, y, width, height, rx: 2 }));
       group.append(sv('rect', { class: 'period-hit', x: center - Math.max(width, 24) / 2, y, width: Math.max(width, 24), height }));
-      const labelY = track === 'northwest' ? 41 : track === 'unified' ? 119 : track === 'japan' ? 198 : width < 30 ? 42 : y + 19;
+      const labelY = track === 'northwest' ? 41 : track === 'unified' ? 119 : track === 'japan' ? 198 : track === 'korea' ? 332 : width < 30 ? 42 : y + 19;
       if (width < 30 && track === 'north') group.append(sv('line', { class: 'narrow-leader', x1: center, x2: center, y1: 44, y2: 50 }));
       group.append(sv('text', { class: 'period-name', x: center, y: labelY, 'text-anchor': 'middle' }, label));
       activate(group, () => choose(key)); svg.append(group);

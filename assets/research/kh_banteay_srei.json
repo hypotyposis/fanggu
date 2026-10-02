@@ -1,0 +1,143 @@
+{
+  "id": "kh_banteay_srei",
+  "name": "女王宫",
+  "subject": "中央三祠塔与共同台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_32a.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Banteay_Srei_32a.jpg/1920px-Banteay_Srei_32a.jpg",
+  "author": "Olaf Tausch",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_32a.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Banteay_Srei_32a.jpg/1920px-Banteay_Srei_32a.jpg",
+      "file": "assets/references/kh_banteay_srei-photo-whole.jpg",
+      "sha256": "df51dd367cd1513cd48aab403ded36e12abb07723494f17b0141d61c2892aa0e",
+      "author": "Olaf Tausch",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "2015-01-19",
+      "description": "Zentraler und südlicher Prasat der Banteay Srei (ប្រាសាទបន្ទាយស្រី ‚Zitadelle der Frauen‘), ursprünglich Tribhuvanamahesvara (‚Großer Gott der dreifaltigen Welt‘), Provinz Siem Reap, Kambodscha"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_08.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Banteay_Srei_08.jpg",
+      "file": "assets/references/kh_banteay_srei-photo.jpg",
+      "sha256": "bacd16a66e264ceb3a74758f2ea6ba9d18c01756118fb1abb32530c82e72ae3a",
+      "author": "Stefan Fussan",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2005-12",
+      "description": "Towers of the temple of Banteay Srei"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_32a.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Banteay_Srei_32a.jpg/1920px-Banteay_Srei_32a.jpg",
+      "file": "assets/references/kh_banteay_srei-photo-whole.jpg",
+      "sha256": "df51dd367cd1513cd48aab403ded36e12abb07723494f17b0141d61c2892aa0e",
+      "author": "Olaf Tausch",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "date": "2015-01-19",
+      "description": "Zentraler und südlicher Prasat der Banteay Srei (ប្រាសាទបន្ទាយស្រី ‚Zitadelle der Frauen‘), ursprünglich Tribhuvanamahesvara (‚Großer Gott der dreifaltigen Welt‘), Provinz Siem Reap, Kambodscha"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_08.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Banteay_Srei_08.jpg",
+      "file": "assets/references/kh_banteay_srei-photo.jpg",
+      "sha256": "bacd16a66e264ceb3a74758f2ea6ba9d18c01756118fb1abb32530c82e72ae3a",
+      "author": "Stefan Fussan",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2005-12",
+      "description": "Towers of the temple of Banteay Srei"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kh_banteay_srei-photo-whole.jpg",
+    "assets/references/kh_banteay_srei-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo",
+    "detail_material_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw ONLY the CENTRAL SANCTUARY GROUP of Banteay Srei: THREE sanctuary prasats on their shared stepped plinth, as seen obliquely in the photographs. In Image 2 these are the two tall sanctuary towers in the BACKGROUND center-left and center; the third sanctuary behind the center/right is occluded. DO NOT draw the large gabled library buildings at front left and right or the cropped enclosure architecture. Image 3 corroborates the sculpted sanctuary forms and shared support. Keep this photographed oblique arrangement, with TWO fully visible towers and the third partly hidden; do not invent a three-in-a-row view. Preserve actual receding roof tiers, carved pilasters, doorway and curving carved pediments, existing irregular edges, whole supporting plinth in the selected group. Omit freestanding guardian statues, enclosing buildings and trees. No vast Angkor-Wat-style temple backdrop."
+  ],
+  "material_observations": [
+    "粉红至红褐砂岩、局部黑化和少量苔绿；雕饰暖红褐，门洞深褐。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为中央三祠塔与共同台基，遮挡关系保留，不据此宣称测绘精度。原型待用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw ONLY the CENTRAL SANCTUARY GROUP of Banteay Srei: THREE sanctuary prasats on their shared stepped plinth, as seen obliquely in the photographs. In Image 2 these are the two tall sanctuary towers in the BACKGROUND center-left and center; the third sanctuary behind the center/right is occluded. DO NOT draw the large gabled library buildings at front left and right or the cropped enclosure architecture. Image 3 corroborates the sculpted sanctuary forms and shared support. Keep this photographed oblique arrangement, with TWO fully visible towers and the third partly hidden; do not invent a three-in-a-row view. Preserve actual receding roof tiers, carved pilasters, doorway and curving carved pediments, existing irregular edges, whole supporting plinth in the selected group. Omit freestanding guardian statues, enclosing buildings and trees. No vast Angkor-Wat-style temple backdrop.",
+  "generated_file": "assets/generated/kh_banteay_srei.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T12:09:26.659008+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw ONLY the CENTRAL SANCTUARY GROUP of Banteay Srei: THREE sanctuary prasats on their shared stepped plinth, as seen obliquely in the photographs. In Image 2 these are the two tall sanctuary towers in the BACKGROUND center-left and center; the third sanctuary behind the center/right is occluded. DO NOT draw the large gabled library buildings at front left and right or the cropped enclosure architecture. Image 3 corroborates the sculpted sanctuary forms and shared support. Keep this photographed oblique arrangement, with TWO fully visible towers and the third partly hidden; do not invent a three-in-a-row view. Preserve actual receding roof tiers, carved pilasters, doorway and curving carved pediments, existing irregular edges, whole supporting plinth in the selected group. Omit freestanding guardian statues, enclosing buildings and trees. No vast Angkor-Wat-style temple backdrop.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kh_banteay_srei-photo-whole.jpg",
+        "assets/references/kh_banteay_srei-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:13:08.035108+08:00",
+      "saved_at": "2026-10-02T12:13:08.035500+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-0f767986-09e7-498c-a456-7e7bb5d98492.png",
+      "saved_file": "assets/generated/kh_banteay_srei.png",
+      "tool_output_id": "exec-0f767986-09e7-498c-a456-7e7bb5d98492"
+    }
+  ],
+  "factual_sources": [
+    {
+      "title": "APSARA：Banteay Srei",
+      "url": "https://apsaraauthority.gov.kh/2021/08/04/banteay-srei/",
+      "publisher": "APSARA",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 967,
+  "yearApprox": false,
+  "yearNote": "967为碑铭所记奉献纪年，不等同于每块石构件的施工完成年；现存形态亦含保护修复。",
+  "country": "KH",
+  "caption": [
+    "女王宫 · 中央三祠塔与共同台基",
+    "967年奉献"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-0f767986-09e7-498c-a456-7e7bb5d98492.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "538e1ac711382c987455dd922831b3c62d56050ce22dc9e8cb234da9554af2f3",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:13:08.339942+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  }
+}

@@ -19,7 +19,7 @@
   }
   function provinceOptions() {
     const country = $('#atlas-country').value;
-    options('atlas-province', country === 'JP' ? '全部都道府县' : country === 'CN' ? '全部省份' : '全部省份与府县', FangguCatalog.provinces(catalog, $('#atlas-region').value, country).map(province => [province, province]));
+    options('atlas-province', country === 'JP' ? '全部都道府县' : country === 'CN' ? '全部省份' : '全部行政区', FangguCatalog.provinces(catalog, $('#atlas-region').value, country).map(province => [province, province]));
   }
   function countryOptions() {
     const country = $('#atlas-country').value;

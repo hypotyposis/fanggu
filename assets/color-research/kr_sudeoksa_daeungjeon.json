@@ -1,0 +1,137 @@
+{
+  "id": "kr_sudeoksa_daeungjeon",
+  "name": "修德寺大雄殿",
+  "subject": "单座大雄殿与石台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_01.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sudeoksa_01.JPG",
+  "author": "Lawinc82",
+  "license": "CC BY-SA 3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_01.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sudeoksa_01.JPG",
+      "file": "assets/references/kr_sudeoksa_daeungjeon-photo-front.jpg",
+      "sha256": "4db689e6db682edce7c391cadc29a9016c0a07d46f627bae0c801b3d192f3858",
+      "author": "Lawinc82",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2007-02-25",
+      "description": "Sudeoksa"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_Daeungjeon_02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Sudeoksa_Daeungjeon_02.jpg/1920px-Sudeoksa_Daeungjeon_02.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sudeoksa_Daeungjeon_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_sudeoksa_daeungjeon-photo.jpg",
+      "sha256": "f484953d79f7561cd3f33320cadd0075c202413ce0fb9d6c118ff7928d165b14",
+      "author": "Jjw",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "date": "2023-12-24 12:27:12",
+      "description": "수덕사 대웅전"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_01.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sudeoksa_01.JPG",
+      "file": "assets/references/kr_sudeoksa_daeungjeon-photo-front.jpg",
+      "sha256": "4db689e6db682edce7c391cadc29a9016c0a07d46f627bae0c801b3d192f3858",
+      "author": "Lawinc82",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2007-02-25",
+      "description": "Sudeoksa"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_Daeungjeon_02.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Sudeoksa_Daeungjeon_02.jpg/1920px-Sudeoksa_Daeungjeon_02.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Sudeoksa_Daeungjeon_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_sudeoksa_daeungjeon-photo.jpg",
+      "sha256": "f484953d79f7561cd3f33320cadd0075c202413ce0fb9d6c118ff7928d165b14",
+      "author": "Jjw",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "date": "2023-12-24 12:27:12",
+      "description": "수덕사 대웅전"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=96644",
+      "title": "修德寺大雄殿形制与年代",
+      "note": "1308年建殿；寺院初创年代另计。"
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_reference",
+    "present_material_reference",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Sudeoksa Daeungjeon hall ONLY: THREE front bays, single gabled roof (NOT hip-and-gable), six door leaves across three bays, natural timber pillars, exposed triangular side gable, stone terrace. Remove foreground stone lantern and people. Use Image 2 front facade geometry, Image 3 gable detail."
+  ],
+  "material_observations": [
+    "灰褐木柱梁架，灰瓦，檐下黄赭墙面与少量红色线饰，石台灰褐。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；1308年建殿；寺院初创年代另计。 原型待用户人眼验收。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 单座大雄殿与石台基\nPRESERVE: Landscape 1536x1024. Complete Sudeoksa Daeungjeon hall ONLY: THREE front bays, single gabled roof (NOT hip-and-gable), six door leaves across three bays, natural timber pillars, exposed triangular side gable, stone terrace. Remove foreground stone lantern and people. Use Image 2 front facade geometry, Image 3 gable detail.\nOBSERVED MATERIAL COLORS: 灰褐木柱梁架，灰瓦，檐下黄赭墙面与少量红色线饰，石台灰褐。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "修德寺大雄殿 · 单座大雄殿与石台基",
+    "高丽 · 1308年"
+  ],
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T04:16:40.903Z",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 单座大雄殿与石台基\nPRESERVE: Landscape 1536x1024. Complete Sudeoksa Daeungjeon hall ONLY: THREE front bays, single gabled roof (NOT hip-and-gable), six door leaves across three bays, natural timber pillars, exposed triangular side gable, stone terrace. Remove foreground stone lantern and people. Use Image 2 front facade geometry, Image 3 gable detail.\nOBSERVED MATERIAL COLORS: 灰褐木柱梁架，灰瓦，檐下黄赭墙面与少量红色线饰，石台灰褐。",
+      "input_images": [
+        "assets/generated/kr_sudeoksa_daeungjeon.png",
+        "assets/references/kr_sudeoksa_daeungjeon-photo-front.jpg",
+        "assets/references/kr_sudeoksa_daeungjeon-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:20:17.998933+08:00",
+      "saved_at": "2026-10-02T12:20:17.998933+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-f16918ba-262b-410f-b045-bf71c2a691bb.png",
+      "saved_file": "assets/colored/kr_sudeoksa_daeungjeon.png",
+      "tool_output_id": "exec-f16918ba-262b-410f-b045-bf71c2a691bb"
+    }
+  ],
+  "input_images": [
+    "assets/generated/kr_sudeoksa_daeungjeon.png",
+    "assets/references/kr_sudeoksa_daeungjeon-photo-front.jpg",
+    "assets/references/kr_sudeoksa_daeungjeon-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/kr_sudeoksa_daeungjeon.png",
+  "original_research": "assets/research/kr_sudeoksa_daeungjeon.json",
+  "generator": "built-in image_gen.imagegen",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-f16918ba-262b-410f-b045-bf71c2a691bb.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dabafcc2450a89dd40719262ec3b1119a4ebcd4f034046a97c3be9af9b22e7db",
+    "seeds": [],
+    "seed_note": "按实际查看的本张原件选取门楼柱间或桥栏下透空；实体浅色石材与门窗暗部不作为种子。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

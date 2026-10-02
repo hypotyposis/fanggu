@@ -2,12 +2,26 @@ import SwiftUI
 
 struct AtlasMapView: View {
     @EnvironmentObject private var library: LibraryStore
-    @State private var selectedPlace: String?
+    @State private var selection: MapSelection?
+    @State private var search = ""
     let onBrowse: () -> Void
 
     private var visited: [Monument] { library.monuments.filter { library.record(for: $0).status == .visited } }
     private var places: [String: [Monument]] { Dictionary(grouping: visited, by: \.placeKey) }
-    private var selectedSites: [Monument] { places[selectedPlace ?? ""] ?? [] }
+    private var coordinates: [SketchMapPlace] {
+        places.keys.sorted().compactMap { key in
+            guard let site = places[key]?.first else { return nil }
+            return SketchMapPlace(id: key, latitude: site.latitude, longitude: site.longitude)
+        }
+    }
+    private var matchingPlaces: [Monument] {
+        let query = search.trimmingCharacters(in: .whitespacesAndNewlines)
+        return places.values.compactMap(\.first).filter { site in
+            query.isEmpty || [site.placeName, site.province, site.place]
+                .contains { $0.localizedStandardContains(query) }
+                || (places[site.placeKey] ?? []).contains { $0.name.localizedStandardContains(query) }
+        }.sorted { $0.placeName.localizedStandardCompare($1.placeName) == .orderedAscending }
+    }
 
     var body: some View {
         ScrollView {
@@ -27,187 +41,154 @@ struct AtlasMapView: View {
                     .background(Palette.ink2)
                     .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
                 } else {
-                    HStack(alignment: .firstTextBaseline, spacing: 8) {
-                        FangguMetricNumber(value: visited.count, size: 38)
-                        Text("处已到访 · \(places.count) 个地点")
-                            .font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
+                    ViewThatFits(in: .horizontal) {
+                        HStack(alignment: .firstTextBaseline, spacing: 8) { visitCount }
+                        VStack(alignment: .leading, spacing: 4) { visitCount }
                     }
                     GeometryReader { geometry in
-                        let projection = SketchMapProjection(size: geometry.size, sites: visited)
-                        let labels = SketchMapLabel.place(places, projection: projection)
+                        let projection = SketchMapProjection(size: geometry.size, places: coordinates)
+                        let clusters = projection.clusters(coordinates)
                         ZStack(alignment: .topLeading) {
-                            SketchMapGrid(projection: projection, labels: labels)
-                            ForEach(labels) { label in
-                                Button { openPlace(label.id) } label: {
-                                    Text(label.site.placeName)
-                                        .font(FangguFont.serif(11))
-                                        .foregroundStyle(Palette.paper)
-                                        .lineLimit(1)
-                                        .minimumScaleFactor(0.8)
-                                        .frame(width: label.rect.width, height: label.rect.height)
+                            SketchMapGrid(projection: projection)
+                            ForEach(clusters) { cluster in
+                                Button { openPlaces(cluster.placeIDs) } label: {
+                                    Circle()
+                                        .fill(cluster.placeIDs.count > 1 ? Palette.gold : accent(for: cluster))
+                                        .frame(width: cluster.placeIDs.count > 1 ? 30 : 10,
+                                               height: cluster.placeIDs.count > 1 ? 30 : 10)
+                                        .overlay {
+                                            if cluster.placeIDs.count > 1 {
+                                                Text("\(cluster.placeIDs.count)")
+                                                    .font(.system(size: 12, weight: .semibold, design: .monospaced))
+                                                    .foregroundStyle(Palette.ink)
+                                            }
+                                        }
+                                        .frame(width: 44, height: 44)
+                                        .contentShape(Circle())
                                 }
                                 .buttonStyle(.plain)
-                                .accessibilityHidden(true)
-                                .position(x: label.rect.midX, y: label.rect.midY)
-                                Button { openPlace(label.id) } label: {
-                                    Color.clear.frame(width: 44, height: 44).contentShape(Circle())
-                                }
-                                .buttonStyle(.plain)
-                                .position(label.point)
-                                .accessibilityLabel("\(label.site.place)，\(places[label.id]?.count ?? 1) 处已到访古迹")
+                                .position(cluster.point)
+                                .accessibilityLabel(cluster.placeIDs.count > 1
+                                    ? "\(cluster.placeIDs.count) 个邻近到访地点，点选展开"
+                                    : "\(places[cluster.id]?.first?.placeName ?? "地点")，点选查看古迹")
+                                .accessibilityIdentifier("map-marker-\(cluster.id)")
                             }
                         }
-                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .accessibilityElement(children: .contain)
+                        .accessibilityIdentifier("visited-map")
                     }
-                    .frame(height: 640)
-                    Text("点亮已经到访的地方，点选地点细读古迹。")
+                    .frame(height: 280)
+                    Text("数字为邻近地点数 · 点选圆点查看古迹")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
+                    FangguRule()
+                    Text("到访地点").font(FangguFont.serif(20)).foregroundStyle(Palette.paper)
+                    FangguField(placeholder: "搜索地点、省份或古迹", text: $search)
+                        .accessibilityIdentifier("map-place-search")
+                    LazyVStack(spacing: 0) {
+                        ForEach(matchingPlaces) { site in
+                            Button { openPlaces([site.placeKey]) } label: {
+                                HStack(spacing: 12) {
+                                    VStack(alignment: .leading, spacing: 5) {
+                                        Text(site.placeName).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
+                                        Text(site.province).font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                                    }
+                                    Spacer(minLength: 8)
+                                    Text("\(places[site.placeKey]?.count ?? 0) 处")
+                                        .font(FangguFont.mono(12)).foregroundStyle(Palette.gold)
+                                    Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.paper3)
+                                }
+                                .padding(.vertical, 14).contentShape(Rectangle())
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("map-place-\(site.placeKey)")
+                            FangguRule()
+                        }
+                        if matchingPlaces.isEmpty {
+                            Text("没有匹配的到访地点").font(FangguFont.serif(14))
+                                .foregroundStyle(Palette.paper2).padding(.vertical, 20)
+                        }
+                    }
                 }
             }
-            .padding(.horizontal, 24).padding(.top, 36).padding(.bottom, 70)
+            .padding(.horizontal, 24).padding(.top, 24).padding(.bottom, 24)
         }
+        .scrollDismissesKeyboard(.interactively)
         .background(Palette.ink.ignoresSafeArea())
         .toolbar(.hidden, for: .navigationBar)
-        .sheet(item: Binding(get: { selectedPlace.map(SelectedPlace.init) }, set: { selectedPlace = $0?.id })) { place in
+        .sheet(item: $selection) { selected in
             NavigationStack {
                 ScrollView {
-                    VStack(spacing: 10) {
-                        ForEach(selectedSites) { site in
-                            NavigationLink(value: site) { TimelineSiteRow(site: site) }.buttonStyle(.plain)
+                    LazyVStack(alignment: .leading, spacing: 12) {
+                        ForEach(selected.placeIDs, id: \.self) { key in
+                            if let sites = places[key], let first = sites.first {
+                                Text(first.placeName).font(FangguFont.serif(20)).foregroundStyle(Palette.gold)
+                                    .padding(.top, 8)
+                                ForEach(sites) { site in
+                                    NavigationLink(value: site) { TimelineSiteRow(site: site) }.buttonStyle(.plain)
+                                }
+                            }
                         }
                     }.padding(20)
                 }
                 .background(Palette.ink)
-                .navigationTitle(selectedSites.first?.place ?? place.id)
+                .navigationTitle(selected.placeIDs.count == 1
+                    ? (places[selected.placeIDs[0]]?.first?.placeName ?? "到访地点") : "邻近到访地点")
                 .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
-                .toolbar { Button("关闭") { selectedPlace = nil } }
+                .toolbar { Button("关闭") { selection = nil } }
             }
             .preferredColorScheme(.dark)
         }
     }
 
-    private func openPlace(_ id: String) {
-        selectedPlace = id
+    @ViewBuilder private var visitCount: some View {
+        FangguMetricNumber(value: visited.count, size: 38)
+        Text("处已到访 · \(places.count) 个地点")
+            .font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
+    }
+
+    private func accent(for cluster: SketchMapCluster) -> Color {
+        places[cluster.id]?.first?.accent ?? Palette.gold
+    }
+
+    private func openPlaces(_ ids: [String]) {
+        selection = MapSelection(placeIDs: ids)
         Haptics.selection()
     }
 }
 
-private struct SelectedPlace: Identifiable { let id: String }
-
-private struct SketchMapLabel: Identifiable {
-    let id: String
-    let site: Monument
-    let point: CGPoint
-    let rect: CGRect
-
-    static func place(_ places: [String: [Monument]], projection: SketchMapProjection) -> [SketchMapLabel] {
-        let sites = places.keys.sorted().compactMap { key -> (String, Monument)? in
-            guard let site = places[key]?.first else { return nil }
-            return (key, site)
-        }
-        let points = sites.map { projection.point($0.1) }
-        var labels: [SketchMapLabel] = []
-        let width = projection.size.width
-        let height = projection.size.height
-        for (index, pair) in sites.enumerated() {
-            let point = points[index]
-            var best: (CGRect, CGFloat)?
-            var top: CGFloat = 31
-            while top + 18 < height - 36 {
-                var left: CGFloat = 45
-                while left + 66 < width - 8 {
-                    let rect = CGRect(x: left, y: top, width: 66, height: 18)
-                    let blocked = labels.contains { $0.rect.insetBy(dx: -3, dy: -3).intersects(rect) }
-                        || points.contains { rect.insetBy(dx: -5, dy: -5).contains($0) }
-                    if !blocked {
-                        let facing = point.x <= rect.midX ? rect.minX : rect.maxX
-                        let score = abs(facing - point.x) + abs(rect.midY - point.y) * 1.3
-                        if best == nil || score < best!.1 { best = (rect, score) }
-                    }
-                    left += 70
-                }
-                top += 23
-            }
-            let fallback = CGRect(x: min(width - 75, max(45, point.x + 10)), y: max(31, point.y - 9), width: 66, height: 18)
-            labels.append(SketchMapLabel(id: pair.0, site: pair.1, point: point, rect: best?.0 ?? fallback))
-        }
-        return labels
-    }
-}
-
-private struct SketchMapProjection {
-    let size: CGSize
-    let latitude: ClosedRange<Double>
-    let longitude: ClosedRange<Double>
-    let latScale: Double
-    let lonScale: Double
-    let centerLat: Double
-    let centerLon: Double
-
-    init(size: CGSize, sites: [Monument]) {
-        // SwiftUI may evaluate GeometryReader once with a zero proposal.
-        let width = max(Double(size.width), 320)
-        let height = max(Double(size.height), 640)
-        self.size = CGSize(width: width, height: height)
-        let lat0 = min(28.8, sites.map { $0.latitude - 0.9 }.min() ?? 28.8)
-        let lat1 = max(40.7, sites.map { $0.latitude + 0.9 }.max() ?? 40.7)
-        let lon0 = min(108.2, sites.map { $0.longitude - 1.8 }.min() ?? 108.2)
-        let lon1 = max(122.6, sites.map { $0.longitude + 1.8 }.max() ?? 122.6)
-        let cosLat = cos((lat0 + lat1) / 2 * .pi / 180)
-        let scale = min((height - 64) / (lat1 - lat0), (width - 72) / ((lon1 - lon0) * cosLat))
-        latScale = scale
-        lonScale = scale * cosLat
-        centerLat = (lat0 + lat1) / 2
-        centerLon = (lon0 + lon1) / 2
-        latitude = (centerLat - (height - 64) / (2 * scale))...(centerLat + (height - 64) / (2 * scale))
-        longitude = (centerLon - (width - 72) / (2 * lonScale))...(centerLon + (width - 72) / (2 * lonScale))
-    }
-
-    func point(latitude: Double, longitude: Double) -> CGPoint {
-        CGPoint(x: CGFloat(Double(size.width) / 2 + (longitude - centerLon) * lonScale),
-                y: CGFloat(Double(size.height) / 2 - (latitude - centerLat) * latScale))
-    }
-    func point(_ site: Monument) -> CGPoint { point(latitude: site.latitude, longitude: site.longitude) }
+private struct MapSelection: Identifiable {
+    let placeIDs: [String]
+    var id: String { placeIDs.joined(separator: ".") }
 }
 
 private struct SketchMapGrid: View {
     let projection: SketchMapProjection
-    let labels: [SketchMapLabel]
 
     var body: some View {
         Canvas { context, size in
-            guard size.width > 72, size.height > 64 else { return }
             context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(Palette.ink2))
-            let frame = CGRect(x: 44, y: 28, width: size.width - 72, height: size.height - 64)
+            let frame = projection.frame
             context.stroke(Path(frame), with: .color(Palette.goldDim.opacity(0.35)), lineWidth: 1)
-            for lat in stride(from: ceil(projection.latitude.lowerBound / 4) * 4, through: projection.latitude.upperBound, by: 4) {
+            let latStep = projection.latitudeStep
+            let lonStep = projection.longitudeStep
+            for lat in stride(from: ceil(projection.latitude.lowerBound / latStep) * latStep,
+                              through: projection.latitude.upperBound, by: latStep) {
                 let y = projection.point(latitude: lat, longitude: projection.centerLon).y
-                var line = Path(); line.move(to: CGPoint(x: 44, y: y)); line.addLine(to: CGPoint(x: size.width - 28, y: y))
-                context.stroke(line, with: .color(Palette.paper.opacity(0.1)), style: StrokeStyle(lineWidth: 1, dash: [2, 5]))
-                context.draw(Text("\(Int(lat))°N").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
-                             at: CGPoint(x: 21, y: y))
+                var line = Path(); line.move(to: CGPoint(x: frame.minX, y: y)); line.addLine(to: CGPoint(x: frame.maxX, y: y))
+                context.stroke(line, with: .color(Palette.paper.opacity(0.08)), style: StrokeStyle(lineWidth: 1, dash: [2, 5]))
+                context.draw(Text("\(Int(abs(lat)))°\(lat < 0 ? "S" : "N")").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
+                             at: CGPoint(x: frame.minX - 6, y: y), anchor: .trailing)
             }
-            for lon in stride(from: ceil(projection.longitude.lowerBound / 4) * 4, through: projection.longitude.upperBound, by: 4) {
+            for lon in stride(from: ceil(projection.longitude.lowerBound / lonStep) * lonStep,
+                              through: projection.longitude.upperBound, by: lonStep) {
                 let x = projection.point(latitude: projection.centerLat, longitude: lon).x
-                var line = Path(); line.move(to: CGPoint(x: x, y: 28)); line.addLine(to: CGPoint(x: x, y: size.height - 36))
-                context.stroke(line, with: .color(Palette.paper.opacity(0.1)), style: StrokeStyle(lineWidth: 1, dash: [2, 5]))
-                context.draw(Text("\(Int(lon))°E").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
-                             at: CGPoint(x: x, y: size.height - 21))
-            }
-            for (name, lat, lon) in [("山西", 39.75, 111.6), ("陕西", 36.2, 108.6), ("江苏", 33.2, 117.6),
-                                     ("河北", 38.5, 117.2), ("河南", 33.5, 113.6), ("浙江", 31.4, 116.5)] {
-                context.draw(Text(name).font(FangguFont.brush(26)).foregroundColor(Palette.paper.opacity(0.09)),
-                             at: projection.point(latitude: lat, longitude: lon))
-            }
-            for label in labels {
-                let target = CGPoint(x: label.point.x <= label.rect.midX ? label.rect.minX : label.rect.maxX,
-                                     y: label.rect.midY)
-                var leader = Path(); leader.move(to: label.point); leader.addLine(to: target)
-                context.stroke(leader, with: .color(Palette.paper3.opacity(0.45)), lineWidth: 0.7)
-                let core = CGRect(x: label.point.x - 4, y: label.point.y - 4, width: 8, height: 8)
-                context.fill(Path(ellipseIn: core), with: .color(label.site.accent))
+                var line = Path(); line.move(to: CGPoint(x: x, y: frame.minY)); line.addLine(to: CGPoint(x: x, y: frame.maxY))
+                context.stroke(line, with: .color(Palette.paper.opacity(0.08)), style: StrokeStyle(lineWidth: 1, dash: [2, 5]))
+                context.draw(Text("\(Int(abs(lon)))°\(lon < 0 ? "W" : "E")").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
+                             at: CGPoint(x: x, y: frame.maxY + 16))
             }
         }
+        .accessibilityHidden(true)
     }
 }
 
@@ -217,7 +198,7 @@ struct TimelineView: View {
     @State private var cluster: Set<String> = []
     @State private var visibleCount = 8
 
-    private let tracks = ["北", "南", "日本"]
+    private let tracks = ["北", "南", "日本", "东南亚", "朝鲜半岛"]
     private var sorted: [Monument] { library.monuments.sorted { $0.year == $1.year ? $0.id < $1.id : $0.year < $1.year } }
     private var periods: [(String, String)] {
         let names = Dictionary(sorted.map { ($0.dynasty, $0.dynastyName) }, uniquingKeysWith: { first, _ in first })
@@ -247,7 +228,7 @@ struct TimelineView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 17) {
-                FangguSectionTitle(eyebrow: "东汉至今 · 中日对照", title: "年表", subtitle: "沿现存主体的年代，细读石与木的足迹。")
+                FangguSectionTitle(eyebrow: "东汉至今 · 东亚与东南亚", title: "年表", subtitle: "沿现存主体的年代，细读石与木的足迹。")
                 Menu {
                     ForEach(periods, id: \.0) { key, title in
                         Button("\(title) · \(key == "all" ? sorted.count : sorted.filter { $0.dynasty == key }.count) 处") {
@@ -312,7 +293,7 @@ struct TimelineView: View {
                     .frame(maxWidth: .infinity)
                 }
                 DisclosureGroup("读图说明") {
-                    Text("中国部分按北、南两线排列，日本单列。点选圆点展开古迹；邻近年份合并为一个数字圆点。年代对应图版所绘主体，部分仅作约略定位，确切纪年与重修沿革以详情为准。")
+                    Text("中国部分按北、南两线排列，日本、东南亚与朝鲜半岛分别单列。点选圆点展开古迹；邻近年份合并为一个数字圆点。年代对应图版所绘主体，部分仅作约略定位，确切纪年与重修沿革以详情为准。")
                         .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2).lineSpacing(5)
                 }
                 .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
@@ -330,7 +311,7 @@ struct TimelineView: View {
                 Palette.ink2
                 ForEach([100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2000], id: \.self) { year in
                     let x = timelineX(year)
-                    Rectangle().fill(Palette.paper.opacity(0.12)).frame(width: 1, height: 205).offset(x: x, y: 27)
+                    Rectangle().fill(Palette.paper.opacity(0.12)).frame(width: 1, height: 343).offset(x: x, y: 27)
                     Text(String(year)).font(FangguFont.mono(10)).foregroundStyle(Palette.paper3).offset(x: x - 12, y: 8)
                 }
                 ForEach(tracks.indices, id: \.self) { index in
@@ -340,7 +321,7 @@ struct TimelineView: View {
                 }
                 ForEach(periods.dropFirst(), id: \.0) { key, title in
                     let sites = sorted.filter { $0.dynasty == key }
-                    if let first = sites.first, let last = sites.last {
+                    if let first = sites.first, let last = sites.last, ["CN", "JP", "KR", "KP"].contains(first.country) {
                         let x = timelineX(first.dynastyStart)
                         let width = max(44, timelineX(last.dynastyEnd) - x)
                         let y = trackY(first)
@@ -385,7 +366,7 @@ struct TimelineView: View {
                     .offset(x: group.x, y: group.y)
                 }
             }
-            .frame(width: 1200, height: 240)
+            .frame(width: 1200, height: 380)
             .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.4), lineWidth: 1))
         }
         .scrollIndicators(.visible)
@@ -393,7 +374,7 @@ struct TimelineView: View {
 
     private var timelineClusters: [TimelineCluster] {
         var groups: [TimelineCluster] = []
-        for lane in 0..<3 {
+        for lane in tracks.indices {
             for site in sorted.filter({ laneIndex($0) == lane }) {
                 let x = timelineX(site.year)
                 if let index = groups.indices.last, groups[index].lane == lane, x - groups[index].x < 32 {
@@ -409,7 +390,9 @@ struct TimelineView: View {
     }
 
     private func laneIndex(_ site: Monument) -> Int {
+        if site.country == "KR" || site.country == "KP" { return 4 }
         if site.country == "JP" { return 2 }
+        if ["KH", "ID", "TH", "MM", "LA", "VN", "PH"].contains(site.country) { return 3 }
         if site.timelineLane == "north" { return 0 }
         return ["han", "bei", "beiqi", "qiuci", "xiyu", "sui", "liao", "xixia", "yuan", "ming", "modern"].contains(site.dynasty) ? 0 : 1
     }

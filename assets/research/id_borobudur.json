@@ -1,0 +1,118 @@
+{
+  "id": "id_borobudur",
+  "name": "婆罗浮屠",
+  "subject": "现存主体与完整基座",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
+  "author": "Gunawan Kartapranata",
+  "license": "Public domain",
+  "license_url": "",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
+      "file": "assets/references/id_borobudur-photo.jpg",
+      "sha256": "905aec75d7af12e2466512134d4e647a573fa4a0bb09b143d251f5664cd80128",
+      "author": "Gunawan Kartapranata",
+      "license": "Public domain",
+      "license_url": "",
+      "date": "2008-06-12",
+      "description": "Borobudur temple view from northwest plateau, Central Java, Indonesia."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
+      "file": "assets/references/id_borobudur-photo.jpg",
+      "sha256": "905aec75d7af12e2466512134d4e647a573fa4a0bb09b143d251f5664cd80128",
+      "author": "Gunawan Kartapranata",
+      "license": "Public domain",
+      "license_url": "",
+      "date": "2008-06-12",
+      "description": "Borobudur temple view from northwest plateau, Central Java, Indonesia."
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/id_borobudur-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the FULL Borobudur monument from the northwest as in the photo, entire low broad square stepped base with its nested terraces, upper THREE circular platforms of bell-shaped perforated stupas, ONE central solid stupa. Preserve the six square platform levels and three circular ones, varied visible small stupas and corner setbacks; keep the full foundation edge. Remove trees, people, garden and aerial rods."
+  ],
+  "material_observations": [
+    "深灰安山岩，台基层较浅灰褐，凸出石饰深灰，少量苔色。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为现存主体与完整基座。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the FULL Borobudur monument from the northwest as in the photo, entire low broad square stepped base with its nested terraces, upper THREE circular platforms of bell-shaped perforated stupas, ONE central solid stupa. Preserve the six square platform levels and three circular ones, varied visible small stupas and corner setbacks; keep the full foundation edge. Remove trees, people, garden and aerial rods.",
+  "generated_file": "assets/generated/id_borobudur.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T11:47:59.127333+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the FULL Borobudur monument from the northwest as in the photo, entire low broad square stepped base with its nested terraces, upper THREE circular platforms of bell-shaped perforated stupas, ONE central solid stupa. Preserve the six square platform levels and three circular ones, varied visible small stupas and corner setbacks; keep the full foundation edge. Remove trees, people, garden and aerial rods.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/id_borobudur-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:51:17.998390+08:00",
+      "saved_at": "2026-10-02T11:51:17.998668+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-175ff106-1955-4389-b99d-548307f36cb5.png",
+      "saved_file": "assets/generated/id_borobudur.png",
+      "tool_output_id": "exec-175ff106-1955-4389-b99d-548307f36cb5"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-175ff106-1955-4389-b99d-548307f36cb5.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8668379982a7145d2da533a2448076243c9a614c2a9cf488ced6028ae09158ac",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T11:51:51.278379+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "UNESCO：Borobudur Temple Compounds",
+      "url": "https://whc.unesco.org/en/list/592/",
+      "publisher": "UNESCO",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 825,
+  "yearApprox": true,
+  "yearNote": "UNESCO记8—9世纪；825仅为所述时期的约略年表位置。现存石构经过20世纪保护修复。",
+  "country": "ID",
+  "caption": [
+    "婆罗浮屠 · 现存主体与完整基座",
+    "8—9世纪"
+  ]
+}

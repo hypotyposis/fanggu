@@ -1,0 +1,120 @@
+{
+  "id": "hn_wenzhige",
+  "subject": "浚县文治阁 · 十字街钟鼓楼现存主体",
+  "source_page": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+  "image_url": "https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/00DEDE123CE4D9F10749222C55DE9458.jpg",
+  "author": "翟德芳",
+  "license": "未标明（仅研究与生成参考）",
+  "license_url": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_wenzhige-photo.jpg"
+  ],
+  "source_note": "已查看经济观察网刊载翟德芳实拍；原Wikimedia下载429、院校源SSL失败，换正常公开来源。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 浚县文治阁 · 十字街钟鼓楼现存主体. One square brick gate platform with a single central arched passage, TWO eave tiers above, three-bay open lower gallery and closed red upper room; front view from photograph, blank all plaques, remove shops, wires, barriers and traffic. Portrait 1024x1536.",
+  "generated_file": "assets/generated/hn_wenzhige.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "浚县文治阁 · 十字街钟鼓楼现存主体",
+    "清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_wenzhige",
+      "source_page": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+      "image_url": "https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/00DEDE123CE4D9F10749222C55DE9458.jpg",
+      "author": "翟德芳",
+      "license": "未标明（仅研究与生成参考）",
+      "license_url": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+      "reference_file": "assets/references/hn_wenzhige-photo.jpg"
+    }
+  ],
+  "structure_checkpoints": [
+    "One square brick gate platform with a single central arched passage, TWO eave tiers above, three-bay open lower gallery and closed red upper room; front view from photograph, blank all plaques, remove shops, wires, barriers and traffic. Portrait 1024x1536."
+  ],
+  "material_observations": [
+    "Weathered reddish brick platform with grey stone arch, muted red upper walls and timber, grey-green roof tiles, dark aged bracket wood."
+  ],
+  "generation_started_at": "2026-10-01T19:25:50.974Z",
+  "generated_at": "2026-10-01T19:26:45.656087+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-c7c67ecd-7a0d-4b7b-a191-5228d57a176a.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2a9962dabf904bdc2459074c6e0b19e130f735edb31a004c8a2066193d2acf62",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:25:50.974Z",
+      "received_at": "2026-10-01T19:26:45.656087+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 浚县文治阁 · 十字街钟鼓楼现存主体. One square brick gate platform with a single central arched passage, TWO eave tiers above, three-bay open lower gallery and closed red upper room; front view from photograph, blank all plaques, remove shops, wires, barriers and traffic. Portrait 1024x1536.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_wenzhige-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_wenzhige.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-c7c67ecd-7a0d-4b7b-a191-5228d57a176a.png",
+      "sourceSha256": "2a9962dabf904bdc2459074c6e0b19e130f735edb31a004c8a2066193d2acf62",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_wenzhige-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "第七批全国重点文物保护单位：浚县古城墙及文治阁",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf",
+      "publisher": "国务院",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "title": "浚县访古：辛村卫国墓和隋唐黎阳仓",
+      "url": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+      "publisher": "经济观察网 · 翟德芳",
+      "accessed_at": "2026-10-02",
+      "note": "作者实拍及康熙复建说明"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_wenzhige",
+    "name": "浚县文治阁",
+    "short": "浚县文治阁",
+    "sub": "十字街钟鼓楼现存主体",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "现存楼阁据研究为康熙时期复建，年表约略定位；国保名单所列明代为城墙及文治阁整体时代",
+    "year": 1680,
+    "yearApprox": true,
+    "yearNote": "现存楼阁据研究为康熙时期复建，年表约略定位；国保名单所列明代为城墙及文治阁整体时代",
+    "yearLabel": "清约略",
+    "placeKey": "hn_xunxian",
+    "place": "河南 · 浚县",
+    "types": [
+      "pavilion",
+      "gate"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "砖台开一道通行拱洞，两层飞檐压在十字街上空。文治阁把街道交通与城中楼阁合为一座可穿行的建筑。",
+    "facts": [
+      "第七批国保单位为浚县古城墙及文治阁；图版只绘文治阁。",
+      "现状为砖台拱门与双层檐楼阁，参考翟德芳实拍；周边店铺、车辆和文字不入图。",
+      "所绘楼阁据研究为清康熙时期复建，年表约略定位于清代；不把整组国保名单所列明代直接当作当前木构确年。"
+    ],
+    "caption": [
+      "浚县文治阁 · 十字街钟鼓楼现存主体",
+      "清 · 现存主体"
+    ]
+  }
+}

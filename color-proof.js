@@ -2,13 +2,14 @@
   'use strict';
   const $ = selector => document.querySelector(selector);
   const el = (tag, cls, text) => { const node = document.createElement(tag); if (cls) node.className = cls; if (text != null) node.textContent = text; return node; };
-  const sites = SITES.filter(site => COLORED_PLATES[site.id]);
   const params = new URLSearchParams(location.search);
+  const scopeIds = new Set((params.get('ids') || '').split(',').filter(Boolean));
+  const sites = SITES.filter(site => COLORED_PLATES[site.id] && (!scopeIds.size || scopeIds.has(site.id)));
   let background = ['dark', 'light', 'checker'].includes(params.get('bg')) ? params.get('bg') : 'checker';
   let reference = params.get('ref') === 'line' ? 'line' : 'original';
-  let mode = 'color', page = 0;
+  let mode = ['color', 'line', 'pair'].includes(params.get('mode')) ? params.get('mode') : 'color', page = 0;
   const PAGE_SIZE = 12;
-  const url = id => `color-proof.html?${new URLSearchParams({ ...(id ? { id } : {}), bg: background, ref: reference })}`;
+  const url = id => `color-proof.html?${new URLSearchParams({ ...(id ? { id } : {}), ...(scopeIds.size ? { ids: [...scopeIds].join(',') } : {}), mode, bg: background, ref: reference })}`;
   const reviewLabel = plate => plate.visualReview === 'approved_user' ? '已通过人工审阅' : '待人工审阅';
   const pending = sites.filter(site => COLORED_PLATES[site.id].visualReview !== 'approved_user').length;
   $('#color-review-summary').textContent = pending ? `当前有 ${pending} 张待人工审阅。` : '当前全部透明图版已通过人工审阅，已用于图鉴与详情页。';
@@ -24,11 +25,19 @@
     $('#color-empty').hidden = !!selected.length;
     $('#color-page').textContent = `${page + 1} / ${pages}`;
     $('#color-prev').disabled = page === 0; $('#color-next').disabled = page === pages - 1;
+    $('#color-grid').classList.toggle('is-paired', mode === 'pair');
+    document.querySelectorAll('[data-mode]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.mode === mode)));
     $('#color-grid').replaceChildren(...selected.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE).map(site => {
       const article = el('article', 'color-tile'), link = el('a'); link.href = url(site.id); link.setAttribute('aria-label', `对照${site.name}的线稿与设色图`);
-      const art = mode === 'color' ? COLORED_PLATES[site.id] : site.image;
-      const image = el('img', mode === 'color' ? 'colored-plate' : ''); image.src = art.src; image.alt = art.alt; image.width = art.width; image.height = art.height; image.loading = 'lazy'; image.decoding = 'async';
-      link.append(image, el('p', 'mono', `${DYN[site.dyn].name} · ${site.yearLabel || site.year}`), el('h2', '', site.name), el('p', '', `${site.place} · 对照 ↗`));
+      const arts = mode === 'pair' ? [['线稿', site.image], ['设色', COLORED_PLATES[site.id]]] : [[mode === 'color' ? '设色' : '线稿', mode === 'color' ? COLORED_PLATES[site.id] : site.image]];
+      const images = mode === 'pair' ? el('div', 'color-pair') : link;
+      for (const [label, art] of arts) {
+        const image = el('img', label === '设色' ? 'colored-plate' : ''); image.src = art.src; image.alt = `${site.name} · ${label}`; image.width = art.width; image.height = art.height; image.loading = 'lazy'; image.decoding = 'async';
+        if (mode === 'pair') { const figure = el('figure'); figure.append(image, el('figcaption', '', label)); images.append(figure); }
+        else images.append(image);
+      }
+      if (mode === 'pair') link.append(images);
+      link.append(el('p', 'mono', `${DYN[site.dyn].name} · ${site.yearLabel || site.year}`), el('h2', '', site.name), el('p', '', `${site.place} · 对照 ↗`));
       article.append(link); return article;
     }));
   }

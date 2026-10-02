@@ -1,0 +1,106 @@
+{
+  "id": "kr_changdeokgung_injeongjeon",
+  "name": "昌德宫仁政殿",
+  "subject": "仁政殿单殿与月台",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Injeongjeon_Hall_01.jpg/1920px-Injeongjeon_Hall_01.jpg",
+  "author": "Bernard Gagnon",
+  "license": "CC0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Injeongjeon_Hall_01.jpg/1920px-Injeongjeon_Hall_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Injeongjeon_Hall_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_changdeokgung_injeongjeon-photo.jpg",
+      "sha256": "0cb8c0000497013ba37bb2666acbbdc7a46234e495b490fefa62973ed687d3b5",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-09-27",
+      "description": "Injeongjeon Hall in Changdeokgung Palace Complex, Seoul"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Injeongjeon_Hall_01.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Injeongjeon_Hall_01.jpg/1920px-Injeongjeon_Hall_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Injeongjeon_Hall_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kr_changdeokgung_injeongjeon-photo.jpg",
+      "sha256": "0cb8c0000497013ba37bb2666acbbdc7a46234e495b490fefa62973ed687d3b5",
+      "author": "Bernard Gagnon",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-09-27",
+      "description": "Injeongjeon Hall in Changdeokgung Palace Complex, Seoul"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?ccbaCpno=1111102250000&pageNo=1_1_2_0",
+      "title": "昌德宫仁政殿形制与年代",
+      "note": "所绘现存仁政殿为1804年重建，宫殿创建与历次火灾另计。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kr_changdeokgung_injeongjeon-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_reference"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Injeongjeon throne hall ONLY with FIVE front bays, double-eaved hip-and-gable roof (two visible roof tiers but a single tall interior), red columns, raised stone terrace and central stair with carved ramp. Preserve broad upturned eaves and five plum blossom ridge emblems. Remove side corridor buildings, people, signs, fences. Plaque remains blank."
+  ],
+  "material_observations": [
+    "深灰瓦，白灰屋脊，红漆柱，青绿丹青夹蓝红细纹，黄褐格扇与白色窗纸，浅灰石月台。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；所绘现存仁政殿为1804年重建，宫殿创建与历次火灾另计。 原型待用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Complete Injeongjeon throne hall ONLY with FIVE front bays, double-eaved hip-and-gable roof (two visible roof tiers but a single tall interior), red columns, raised stone terrace and central stair with carved ramp. Preserve broad upturned eaves and five plum blossom ridge emblems. Remove side corridor buildings, people, signs, fences. Plaque remains blank.",
+  "generated_file": "assets/generated/kr_changdeokgung_injeongjeon.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "昌德宫仁政殿 · 仁政殿单殿与月台",
+    "朝鲜王朝 · 1804年"
+  ],
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T04:09:22.836Z",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Complete Injeongjeon throne hall ONLY with FIVE front bays, double-eaved hip-and-gable roof (two visible roof tiers but a single tall interior), red columns, raised stone terrace and central stair with carved ramp. Preserve broad upturned eaves and five plum blossom ridge emblems. Remove side corridor buildings, people, signs, fences. Plaque remains blank.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kr_changdeokgung_injeongjeon-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:13:42.776954+08:00",
+      "saved_at": "2026-10-02T12:13:42.776954+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-606a7976-690e-4bee-998f-b479dc989d31.png",
+      "saved_file": "assets/generated/kr_changdeokgung_injeongjeon.png",
+      "tool_output_id": "exec-606a7976-690e-4bee-998f-b479dc989d31"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-606a7976-690e-4bee-998f-b479dc989d31.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "acc4056b70bb83125a573c3becdb158516beba8552a9a058026092b1f4032676",
+    "seeds": []
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "kp_sonjuk_bridge",
+  "name": "开城善竹桥",
+  "subject": "旧石梁桥与1780年石栏",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+  "author": "David Clayton Ellsworth",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_sonjuk_bridge-photo.jpg",
+      "sha256": "065df86ffabe4ef5fda81a641bea25b214d757121b0d075104bbac66dde44ecc",
+      "author": "David Clayton Ellsworth",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-04-13 16:31:52",
+      "description": "Sonjuk bridge in Kaesong, North Korea"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_sonjuk_bridge-photo.jpg",
+      "sha256": "065df86ffabe4ef5fda81a641bea25b214d757121b0d075104bbac66dde44ecc",
+      "author": "David Clayton Ellsworth",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-04-13 16:31:52",
+      "description": "Sonjuk bridge in Kaesong, North Korea"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+      "title": "开城善竹桥形制与年代",
+      "note": "申遗档案称桥自高丽早期使用，确年不详；约1100为排序位置，1392年为郑梦周遇害事件，1780年增设石栏。"
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_reference",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. ONLY the complete old Sonjuk granite beam bridge in foreground/right of reference: short rectangular flat slab deck, stone piers and horizontal beams beneath, granite posts with rounded caps and ONE horizontal rail on each long side, short rectangular spans NOT an arch bridge. Keep viewpoint close to photo with visible deck and side openings, show full bridge endpoints. Remove adjacent modern crossing at left, visitor, trees, monument pavilions and surroundings. Preserve irregular aged stone edges."
+  ],
+  "material_observations": [
+    "浅灰花岗岩，边缘风化灰褐，接缝及桥下暗灰；保留石栏与桥板实体浅色。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；申遗档案称桥自高丽早期使用，确年不详；约1100为排序位置，1392年为郑梦周遇害事件，1780年增设石栏。 原型待用户人眼验收。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 旧石梁桥与1780年石栏\nPRESERVE: Landscape 1536x1024. ONLY the complete old Sonjuk granite beam bridge in foreground/right of reference: short rectangular flat slab deck, stone piers and horizontal beams beneath, granite posts with rounded caps and ONE horizontal rail on each long side, short rectangular spans NOT an arch bridge. Keep viewpoint close to photo with visible deck and side openings, show full bridge endpoints. Remove adjacent modern crossing at left, visitor, trees, monument pavilions and surroundings. Preserve irregular aged stone edges.\nOBSERVED MATERIAL COLORS: 浅灰花岗岩，边缘风化灰褐，接缝及桥下暗灰；保留石栏与桥板实体浅色。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "开城善竹桥 · 旧石梁桥与1780年石栏",
+    "高丽 · 约略定位"
+  ],
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T04:16:41.274Z",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 旧石梁桥与1780年石栏\nPRESERVE: Landscape 1536x1024. ONLY the complete old Sonjuk granite beam bridge in foreground/right of reference: short rectangular flat slab deck, stone piers and horizontal beams beneath, granite posts with rounded caps and ONE horizontal rail on each long side, short rectangular spans NOT an arch bridge. Keep viewpoint close to photo with visible deck and side openings, show full bridge endpoints. Remove adjacent modern crossing at left, visitor, trees, monument pavilions and surroundings. Preserve irregular aged stone edges.\nOBSERVED MATERIAL COLORS: 浅灰花岗岩，边缘风化灰褐，接缝及桥下暗灰；保留石栏与桥板实体浅色。",
+      "input_images": [
+        "assets/generated/kp_sonjuk_bridge.png",
+        "assets/references/kp_sonjuk_bridge-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:20:17.999090+08:00",
+      "saved_at": "2026-10-02T12:20:17.999090+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-881e7f13-7611-4d2d-b387-63602bcba135.png",
+      "saved_file": "assets/colored/kp_sonjuk_bridge.png",
+      "tool_output_id": "exec-881e7f13-7611-4d2d-b387-63602bcba135"
+    }
+  ],
+  "input_images": [
+    "assets/generated/kp_sonjuk_bridge.png",
+    "assets/references/kp_sonjuk_bridge-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/kp_sonjuk_bridge.png",
+  "original_research": "assets/research/kp_sonjuk_bridge.json",
+  "generator": "built-in image_gen.imagegen",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-881e7f13-7611-4d2d-b387-63602bcba135.png",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "width": 1448,
+  "height": 1086,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fe89bbe99a2fbc7d1a0fe0df5c33ec6b563bde0d338d693ff4388c604dfae9e3",
+    "seeds": [
+      [
+        420,
+        415
+      ],
+      [
+        725,
+        322
+      ]
+    ],
+    "seed_note": "根据实看白底原件修正开放空间种子；避开柱、钟与浅色石材；不修改生图原件。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  },
+  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。"
+}

@@ -1,0 +1,104 @@
+{
+  "id": "hn_jiahuiguan",
+  "name": "郏县山陕会馆",
+  "subject": "郏县山陕会馆 · 门楼与钟鼓楼组合",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_jiahuiguan.png",
+    "assets/references/hn_jiahuiguan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 郏县山陕会馆 · 门楼与钟鼓楼组合\nPHOTOGRAPHED MATERIAL COLORS: Grey tiled roofs, weathered grey brick and pale masonry, dark brown wood, muted remnant painted ornament.\nPreserve THREE linked structures: central gate/stage block flanked by TWO tall bell/drum pavilions, each with two eave tiers and open upper storey; lower central curled gateway roof; photograph exact ensemble. Landscape 1536x1024.",
+  "material_observations": [
+    "Grey tiled roofs, weathered grey brick and pale masonry, dark brown wood, muted remnant painted ornament."
+  ],
+  "references": [
+    {
+      "id": "hn_jiahuiguan",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_jiahuiguan-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_jiahuiguan.json",
+  "output": "assets/colored/hn_jiahuiguan.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:27:36.142Z",
+  "generated_at": "2026-10-01T19:30:39.889577+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-bef57471-a652-47ed-92f8-d52da13d79ad.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ebac7067d9294424b6bf76910ae14046c232efb1d8583336432008ef81c306a4",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:27:36.142Z",
+      "received_at": "2026-10-01T19:30:39.889577+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 郏县山陕会馆 · 门楼与钟鼓楼组合\nPHOTOGRAPHED MATERIAL COLORS: Grey tiled roofs, weathered grey brick and pale masonry, dark brown wood, muted remnant painted ornament.\nPreserve THREE linked structures: central gate/stage block flanked by TWO tall bell/drum pavilions, each with two eave tiers and open upper storey; lower central curled gateway roof; photograph exact ensemble. Landscape 1536x1024.",
+      "input_images": [
+        "assets/generated/hn_jiahuiguan.png",
+        "assets/references/hn_jiahuiguan-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_jiahuiguan.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-bef57471-a652-47ed-92f8-d52da13d79ad.png",
+      "sourceSha256": "ebac7067d9294424b6bf76910ae14046c232efb1d8583336432008ef81c306a4",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "郏县山陕会馆",
+      "url": "https://wglj.pds.gov.cn/contents/12739/241479.html",
+      "publisher": "平顶山市文化广电和旅游局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_jiahuiguan",
+    "name": "郏县山陕会馆",
+    "short": "郏县山陕会馆",
+    "sub": "门楼与钟鼓楼组合",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代建筑，现存组合单体确年未详",
+    "year": 1700,
+    "yearApprox": true,
+    "yearNote": "清代建筑，现存组合单体确年未详",
+    "yearLabel": "清约略",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "types": [
+      "gate",
+      "stage",
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "钟鼓楼在门楼两侧并立，灰砖和雕木把三座建筑连成一体。郏县山陕会馆的入口也承担着聚会与演戏的公共功能。",
+    "facts": [
+      "郏县山陕会馆是第七批国保，清代商帮会馆建筑。",
+      "图版选择门楼与两侧钟鼓楼组合，不绘后部拜殿及全院。",
+      "门楼兼具戏楼功能；设色参考现存青灰瓦、灰砖和暗褐雕木，具体单体营建年暂以清代约略定位。"
+    ],
+    "caption": [
+      "郏县山陕会馆 · 门楼与钟鼓楼组合",
+      "清 · 现存主体"
+    ]
+  }
+}

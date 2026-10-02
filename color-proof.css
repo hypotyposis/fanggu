@@ -62,3 +62,8 @@
   .color-comparison img { height: 340px; }
   .color-single-heading h2 { font-size: 23px; }
 }
+.color-grid.is-paired { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.color-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.color-pair figure { margin: 0; min-width: 0; }
+.color-pair figcaption { font-size: 12px; color: var(--paper-2); text-align: center; }
+@media (max-width: 600px) { .color-grid.is-paired { grid-template-columns: 1fr; } }

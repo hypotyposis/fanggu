@@ -47,7 +47,7 @@
     svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
     svg.setAttribute('aria-label', `${places.length}地、${visitedSites.length - unmapped.length}处已到访古迹的位置示意图`);
     const gridStep = W < 640 ? 4 : 2;
-    for (let lat = Math.ceil(south / gridStep) * gridStep; lat <= north; lat += gridStep) { svg.appendChild(sv('line', { class: 'grid', x1: pad.l, x2: W - pad.r, y1: Y(lat), y2: Y(lat) })); svg.appendChild(sv('text', { x: pad.l - 6, y: Y(lat) + 4, 'text-anchor': 'end' }, `${lat}°N`)); }
+    for (let lat = Math.ceil(south / gridStep) * gridStep; lat <= north; lat += gridStep) { svg.appendChild(sv('line', { class: 'grid', x1: pad.l, x2: W - pad.r, y1: Y(lat), y2: Y(lat) })); svg.appendChild(sv('text', { x: pad.l - 6, y: Y(lat) + 4, 'text-anchor': 'end' }, `${Math.abs(lat)}°${lat < 0 ? 'S' : 'N'}`)); }
     for (let lon = Math.ceil(west / gridStep) * gridStep; lon <= east; lon += gridStep) { svg.appendChild(sv('line', { class: 'grid', x1: X(lon), x2: X(lon), y1: pad.t, y2: H - pad.b })); svg.appendChild(sv('text', { x: X(lon), y: H - pad.b + 20, 'text-anchor': 'middle' }, `${lon}°E`)); }
     svg.appendChild(sv('rect', { class: 'frame', x: pad.l, y: pad.t, width: W - pad.l - pad.r, height: H - pad.t - pad.b }));
     svg.appendChild(sv('text', { class: 'prov', x: X(111.6), y: Y(39.75) }, '山西'));

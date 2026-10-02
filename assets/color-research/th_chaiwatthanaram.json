@@ -1,0 +1,152 @@
+{
+  "id": "th_chaiwatthanaram",
+  "name": "柴瓦塔那兰寺",
+  "subject": "中央主塔、四角小塔及共同台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
+  "author": "Welcome to Thailand",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+      "sha256": "084818f944eda3147a7b8e87acd49c9e738a5a932649ad9d3c9db5cbf5531f32",
+      "author": "Welcome to Thailand",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2024-02-27 12:22:07",
+      "description": "Grand prang central entouré de 4 petits prangs et enceinte (Phra rabiang ; \"cloître\" ; galerie) avec 8 chapelles en forme de stupas (chedis)"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:02f-Wat_Chaiwatthanaram_(NgnL)-08809.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg/1920px-02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo.jpg",
+      "sha256": "16aaecd7d8a544ad2c45fa6a60841dcda7b68533a6e7aa46104a5fbad3a54454",
+      "author": "No(0)GoodNamesLeft",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2020-01-07 13:22:21",
+      "description": "Wat Chaiwatthanaram"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+      "sha256": "084818f944eda3147a7b8e87acd49c9e738a5a932649ad9d3c9db5cbf5531f32",
+      "author": "Welcome to Thailand",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2024-02-27 12:22:07",
+      "description": "Grand prang central entouré de 4 petits prangs et enceinte (Phra rabiang ; \"cloître\" ; galerie) avec 8 chapelles en forme de stupas (chedis)"
+    },
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:02f-Wat_Chaiwatthanaram_(NgnL)-08809.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg/1920px-02f-Wat_Chaiwatthanaram_%28NgnL%29-08809.jpg",
+      "file": "assets/references/th_chaiwatthanaram-photo.jpg",
+      "sha256": "16aaecd7d8a544ad2c45fa6a60841dcda7b68533a6e7aa46104a5fbad3a54454",
+      "author": "No(0)GoodNamesLeft",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2020-01-07 13:22:21",
+      "description": "Wat Chaiwatthanaram"
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the central main prang and its FOUR directly neighboring CORNER prangs and supporting shared stepped terrace at Wat Chaiwatthanaram. Image 2 shows the full group from the approach: the tall rounded central prang is centered; directly near it four small prangs surround it, with the rear ones partially hidden by perspective. Preserve the actual visible subset and occlusion, not a five-in-a-row skyline. The much larger outer structures at the FAR LEFT and FAR RIGHT are the outer eight-chapel enclosure and must be omitted. Remove approach bridge, detached foreground ruined pedestals, corridor enclosure chapels, tourists, tree, scaffolding and green shelters. Keep tall rounded central prang with its entry stair and the actual decorated redented brick plinth. Do not invent intact roofs or fill ruined openings."
+  ],
+  "material_observations": [
+    "红褐烧砖、灰褐残留灰泥、塔顶风化偏灰；洞口深暗。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为中央主塔、四角小塔及共同台基。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 中央主塔、四角小塔及共同台基\nPRESERVE: Landscape 1536x1024. Draw the central main prang and its FOUR directly neighboring CORNER prangs and supporting shared stepped terrace at Wat Chaiwatthanaram. Image 2 shows the full group from the approach: the tall rounded central prang is centered; directly near it four small prangs surround it, with the rear ones partially hidden by perspective. Preserve the actual visible subset and occlusion, not a five-in-a-row skyline. The much larger outer structures at the FAR LEFT and FAR RIGHT are the outer eight-chapel enclosure and must be omitted. Remove approach bridge, detached foreground ruined pedestals, corridor enclosure chapels, tourists, tree, scaffolding and green shelters. Keep tall rounded central prang with its entry stair and the actual decorated redented brick plinth. Do not invent intact roofs or fill ruined openings.\nOBSERVED MATERIAL COLORS: 红褐烧砖、灰褐残留灰泥、塔顶风化偏灰；洞口深暗。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generator": "built-in image_gen.imagegen",
+  "input_images": [
+    "assets/generated/th_chaiwatthanaram.png",
+    "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+    "assets/references/th_chaiwatthanaram-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/th_chaiwatthanaram.png",
+  "original_research": "assets/research/th_chaiwatthanaram.json",
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T12:09:51.764562+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 中央主塔、四角小塔及共同台基\nPRESERVE: Landscape 1536x1024. Draw the central main prang and its FOUR directly neighboring CORNER prangs and supporting shared stepped terrace at Wat Chaiwatthanaram. Image 2 shows the full group from the approach: the tall rounded central prang is centered; directly near it four small prangs surround it, with the rear ones partially hidden by perspective. Preserve the actual visible subset and occlusion, not a five-in-a-row skyline. The much larger outer structures at the FAR LEFT and FAR RIGHT are the outer eight-chapel enclosure and must be omitted. Remove approach bridge, detached foreground ruined pedestals, corridor enclosure chapels, tourists, tree, scaffolding and green shelters. Keep tall rounded central prang with its entry stair and the actual decorated redented brick plinth. Do not invent intact roofs or fill ruined openings.\nOBSERVED MATERIAL COLORS: 红褐烧砖、灰褐残留灰泥、塔顶风化偏灰；洞口深暗。",
+      "input_images": [
+        "assets/generated/th_chaiwatthanaram.png",
+        "assets/references/th_chaiwatthanaram-photo-whole.jpg",
+        "assets/references/th_chaiwatthanaram-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:16:06.706272+08:00",
+      "saved_at": "2026-10-02T12:16:06.706501+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-4c6dc11b-1c4a-4819-9dbf-60f02005785f.png",
+      "saved_file": "assets/colored/th_chaiwatthanaram.png",
+      "tool_output_id": "exec-4c6dc11b-1c4a-4819-9dbf-60f02005785f"
+    }
+  ],
+  "factual_sources": [
+    {
+      "title": "泰国SAC：Wat Chaiwatthanaram",
+      "url": "https://seaarts.sac.or.th/artwork/34?lang=en",
+      "publisher": "泰国SAC",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1630,
+  "yearApprox": false,
+  "yearNote": "1630为史料所记寺院建置年；图版是现存中央主塔与四角塔组合，前期构筑讨论及现代修复不等同于全部砖石同年营建。",
+  "country": "TH",
+  "caption": [
+    "柴瓦塔那兰寺 · 中央主塔、四角小塔及共同台基",
+    "1630年建置"
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-4c6dc11b-1c4a-4819-9dbf-60f02005785f.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bdf07140b7b1596b21ddc83ca60a03113eb1db68a939b9b681bb2417382ecd87",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:17:44.915228+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "note": "名单获同意，图版尚待用户人眼验收。"
+  }
+}

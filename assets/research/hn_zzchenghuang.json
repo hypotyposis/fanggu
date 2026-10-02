@@ -1,0 +1,112 @@
+{
+  "id": "hn_zzchenghuang",
+  "subject": "郑州城隍庙 · 三间大殿正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20240921_City_God_Temple_of_Zhengzhou_08.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/20240921_City_God_Temple_of_Zhengzhou_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_zzchenghuang-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郑州城隍庙 · 三间大殿正面. Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_zzchenghuang.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "郑州城隍庙 · 三间大殿正面",
+    "明清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_zzchenghuang",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20240921_City_God_Temple_of_Zhengzhou_08.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/20240921_City_God_Temple_of_Zhengzhou_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_zzchenghuang-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Green glazed tiles, pale grey stone columns, vermilion panels, blue-green bracket paintings."
+  ],
+  "generated_at": "2026-10-01T19:21:41.883155+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-1ca15e59-658f-43fd-8998-5230f1f2730c.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ae610b10577c949b3f6a13818b7b6c40a48757bdb48b939e92053b7c54642a05",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.883155+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郑州城隍庙 · 三间大殿正面. Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_zzchenghuang-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_zzchenghuang.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-1ca15e59-658f-43fd-8998-5230f1f2730c.png",
+      "sourceSha256": "ae610b10577c949b3f6a13818b7b6c40a48757bdb48b939e92053b7c54642a05",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_zzchenghuang-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "郑州城隍庙",
+      "url": "https://wwj.zhengzhou.gov.cn/country/3175328.jhtml",
+      "publisher": "郑州市文物局",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_zzchenghuang",
+    "name": "郑州城隍庙",
+    "short": "郑州城隍庙",
+    "sub": "三间大殿正面",
+    "dyn": "ming",
+    "tag": "明清",
+    "era": "现存明清古建筑；单体确切营建年未详",
+    "year": 1650,
+    "yearApprox": true,
+    "yearNote": "现存明清古建筑；单体确切营建年未详",
+    "yearLabel": "明清约略",
+    "placeKey": "hn_zhengzhou",
+    "place": "河南 · 郑州",
+    "types": [
+      "hall"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "绿瓦屋面之下，浅色石柱围出三间殿面，红色门板与青绿斗拱相映。郑州城隍庙保留着明清城市祭祀建筑的片段。",
+    "facts": [
+      "第七批单位全称为郑州城隍庙（含文庙大成殿）。",
+      "图版仅绘城隍庙三间大殿，保留单檐歇山屋顶、前檐石柱和门窗，不并入另一处文庙建筑。",
+      "现存建筑历经明清营建修缮，单体确年未详；年表为约略定位。"
+    ],
+    "caption": [
+      "郑州城隍庙 · 三间大殿正面",
+      "明清 · 现存主体"
+    ]
+  }
+}

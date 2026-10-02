@@ -1,0 +1,118 @@
+{
+  "id": "id_prambanan_shiva",
+  "name": "普兰巴南湿婆主庙",
+  "subject": "单座湿婆主庙与台阶",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
+  "author": "Gunkarta",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
+      "file": "assets/references/id_prambanan_shiva-photo.jpg",
+      "sha256": "bc52698636e5ce59750f0195975ff30416792c0532c9d47003a2f2e18cd7a535",
+      "author": "Gunkarta",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "3 Februaty 2007, 13:27",
+      "description": "Shiva temple, the main temple at Prambanan temple complex rising 47m high (130 feet)and measures 34m x 34m at its base. The main temple houses the statue of Shiva Mahadewa, Ganesha, Durga Mahisashuramardhini, and Agastya on each chamber of cardinal points. On the far right is stood Wishnu temple. Around the ballustrade of the Shiva temple adorned with panels of bas reliefs narating the story from Ramayana. This ninth century temple complex was build by Hindu Mataram Kingdom."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
+      "file": "assets/references/id_prambanan_shiva-photo.jpg",
+      "sha256": "bc52698636e5ce59750f0195975ff30416792c0532c9d47003a2f2e18cd7a535",
+      "author": "Gunkarta",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "3 Februaty 2007, 13:27",
+      "description": "Shiva temple, the main temple at Prambanan temple complex rising 47m high (130 feet)and measures 34m x 34m at its base. The main temple houses the statue of Shiva Mahadewa, Ganesha, Durga Mahisashuramardhini, and Agastya on each chamber of cardinal points. On the far right is stood Wishnu temple. Around the ballustrade of the Shiva temple adorned with panels of bas reliefs narating the story from Ramayana. This ninth century temple complex was build by Hindu Mataram Kingdom."
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/id_prambanan_shiva-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw ONLY the complete large SHIVA temple in the center-left of Image 2; the photo contains other temples that must be omitted. Include its full stepped base and entry stairs, tall densely receding stone superstructure, central finial and wall niche ornament. Preserve the shrine as a single building, not an invented trio. Remove cropped foreground temple on left, right smaller Vishnu temple and all other structures."
+  ],
+  "material_observations": [
+    "灰色安山岩，局部灰绿风化面，石阶灰褐，门洞深灰黑。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为单座湿婆主庙与台阶。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Portrait 1024x1536. Draw ONLY the complete large SHIVA temple in the center-left of Image 2; the photo contains other temples that must be omitted. Include its full stepped base and entry stairs, tall densely receding stone superstructure, central finial and wall niche ornament. Preserve the shrine as a single building, not an invented trio. Remove cropped foreground temple on left, right smaller Vishnu temple and all other structures.",
+  "generated_file": "assets/generated/id_prambanan_shiva.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T11:47:59.257577+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Portrait 1024x1536. Draw ONLY the complete large SHIVA temple in the center-left of Image 2; the photo contains other temples that must be omitted. Include its full stepped base and entry stairs, tall densely receding stone superstructure, central finial and wall niche ornament. Preserve the shrine as a single building, not an invented trio. Remove cropped foreground temple on left, right smaller Vishnu temple and all other structures.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/id_prambanan_shiva-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:51:18.192804+08:00",
+      "saved_at": "2026-10-02T11:51:18.193049+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-89caacad-9c60-4686-9e1f-1a5e761e3e70.png",
+      "saved_file": "assets/generated/id_prambanan_shiva.png",
+      "tool_output_id": "exec-89caacad-9c60-4686-9e1f-1a5e761e3e70"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-89caacad-9c60-4686-9e1f-1a5e761e3e70.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1f5e5dbfaae46a4971d0d76bd5f896cddac6a9197577320e32e0f505f51ea516",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T11:51:51.278379+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "UNESCO：Prambanan Temple Compounds",
+      "url": "https://whc.unesco.org/en/list/642/",
+      "publisher": "UNESCO",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 900,
+  "yearApprox": true,
+  "yearNote": "UNESCO同页简述作10世纪、详细说明作9世纪；900仅作约略排序。现存主庙经过近现代复原修复。",
+  "country": "ID",
+  "caption": [
+    "普兰巴南湿婆主庙 · 单座湿婆主庙与台阶",
+    "9—10世纪"
+  ]
+}

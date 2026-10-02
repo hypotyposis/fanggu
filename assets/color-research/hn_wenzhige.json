@@ -1,0 +1,110 @@
+{
+  "id": "hn_wenzhige",
+  "name": "浚县文治阁",
+  "subject": "浚县文治阁 · 十字街钟鼓楼现存主体",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_wenzhige.png",
+    "assets/references/hn_wenzhige-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 浚县文治阁 · 十字街钟鼓楼现存主体\nPHOTOGRAPHED MATERIAL COLORS: Weathered reddish brick platform with grey stone arch, muted red upper walls and timber, grey-green roof tiles, dark aged bracket wood.\nOne square brick gate platform with a single central arched passage, TWO eave tiers above, three-bay open lower gallery and closed red upper room; front view from photograph, blank all plaques, remove shops, wires, barriers and traffic. Portrait 1024x1536.",
+  "material_observations": [
+    "Weathered reddish brick platform with grey stone arch, muted red upper walls and timber, grey-green roof tiles, dark aged bracket wood."
+  ],
+  "references": [
+    {
+      "id": "hn_wenzhige",
+      "source_page": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+      "image_url": "https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/0/jpg/00DEDE123CE4D9F10749222C55DE9458.jpg",
+      "author": "翟德芳",
+      "license": "未标明（仅研究与生成参考）",
+      "license_url": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+      "reference_file": "assets/references/hn_wenzhige-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/hn_wenzhige.json",
+  "output": "assets/colored/hn_wenzhige.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:27:36.142Z",
+  "generated_at": "2026-10-01T19:30:39.887622+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-866af5ff-1a89-4958-887c-581ac6aac5d6.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "69741baded309c78776f09619ab8a344d4f0282938db32b59a02435652122976",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:27:36.142Z",
+      "received_at": "2026-10-01T19:30:39.887622+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 浚县文治阁 · 十字街钟鼓楼现存主体\nPHOTOGRAPHED MATERIAL COLORS: Weathered reddish brick platform with grey stone arch, muted red upper walls and timber, grey-green roof tiles, dark aged bracket wood.\nOne square brick gate platform with a single central arched passage, TWO eave tiers above, three-bay open lower gallery and closed red upper room; front view from photograph, blank all plaques, remove shops, wires, barriers and traffic. Portrait 1024x1536.",
+      "input_images": [
+        "assets/generated/hn_wenzhige.png",
+        "assets/references/hn_wenzhige-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_wenzhige.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-866af5ff-1a89-4958-887c-581ac6aac5d6.png",
+      "sourceSha256": "69741baded309c78776f09619ab8a344d4f0282938db32b59a02435652122976",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "第七批全国重点文物保护单位：浚县古城墙及文治阁",
+      "url": "https://www.gov.cn/guoqing/2014-07/21/dqpqgzdwwbhdwmd.pdf",
+      "publisher": "国务院",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "title": "浚县访古：辛村卫国墓和隋唐黎阳仓",
+      "url": "https://www.eeo.com.cn/2024/1205/701002.shtml",
+      "publisher": "经济观察网 · 翟德芳",
+      "accessed_at": "2026-10-02",
+      "note": "作者实拍及康熙复建说明"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_wenzhige",
+    "name": "浚县文治阁",
+    "short": "浚县文治阁",
+    "sub": "十字街钟鼓楼现存主体",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "现存楼阁据研究为康熙时期复建，年表约略定位；国保名单所列明代为城墙及文治阁整体时代",
+    "year": 1680,
+    "yearApprox": true,
+    "yearNote": "现存楼阁据研究为康熙时期复建，年表约略定位；国保名单所列明代为城墙及文治阁整体时代",
+    "yearLabel": "清约略",
+    "placeKey": "hn_xunxian",
+    "place": "河南 · 浚县",
+    "types": [
+      "pavilion",
+      "gate"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "砖台开一道通行拱洞，两层飞檐压在十字街上空。文治阁把街道交通与城中楼阁合为一座可穿行的建筑。",
+    "facts": [
+      "第七批国保单位为浚县古城墙及文治阁；图版只绘文治阁。",
+      "现状为砖台拱门与双层檐楼阁，参考翟德芳实拍；周边店铺、车辆和文字不入图。",
+      "所绘楼阁据研究为清康熙时期复建，年表约略定位于清代；不把整组国保名单所列明代直接当作当前木构确年。"
+    ],
+    "caption": [
+      "浚县文治阁 · 十字街钟鼓楼现存主体",
+      "清 · 现存主体"
+    ]
+  }
+}

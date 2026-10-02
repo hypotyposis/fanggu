@@ -1,0 +1,112 @@
+{
+  "id": "hn_yanqing",
+  "subject": "延庆观 · 玉皇阁现存主体",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20260119_Yanqing_Guan_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/20260119_Yanqing_Guan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_yanqing-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 延庆观 · 玉皇阁现存主体. Square masonry base with three arched openings in front, octagonal upper drum and single octagonal canopy; retain the glazed sloping transition roof and terrace. Portrait 1024x1536.",
+  "generated_file": "assets/generated/hn_yanqing.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "延庆观 · 玉皇阁现存主体",
+    "元 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_yanqing",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20260119_Yanqing_Guan_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/20260119_Yanqing_Guan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_yanqing-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Square masonry base with three arched openings in front, octagonal upper drum and single octagonal canopy; retain the glazed sloping transition roof and terrace. Portrait 1024x1536."
+  ],
+  "material_observations": [
+    "Muted brick red wall, grey-green glazed roof and muted yellow-green ornament, pale stone balustrade."
+  ],
+  "generated_at": "2026-10-01T19:21:41.863862+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-0a55dd63-3f18-4263-931b-0c618242ef2f.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e9eea782c635728721a17929949561b5f4215427fc09959732e09290d7bb653d",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.863862+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 延庆观 · 玉皇阁现存主体. Square masonry base with three arched openings in front, octagonal upper drum and single octagonal canopy; retain the glazed sloping transition roof and terrace. Portrait 1024x1536.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_yanqing-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_yanqing.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-0a55dd63-3f18-4263-931b-0c618242ef2f.png",
+      "sourceSha256": "e9eea782c635728721a17929949561b5f4215427fc09959732e09290d7bb653d",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_yanqing-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "延庆观玉皇阁整体顶升保护",
+      "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/hnsbwg/wbdt/article72350c2c046f4c28b00f92e6ca099472.html",
+      "publisher": "河南博物院",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_yanqing",
+    "name": "延庆观",
+    "short": "延庆观",
+    "sub": "玉皇阁现存主体",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代现存玉皇阁；年表为约略定位",
+    "year": 1280,
+    "yearApprox": true,
+    "yearNote": "元代现存玉皇阁；年表为约略定位",
+    "yearLabel": "元约略",
+    "placeKey": "hn_开封",
+    "place": "河南 · 开封",
+    "types": [
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "方形砖阁向上收成八角亭，琉璃构件层层托起阁顶。玉皇阁保存着延庆观元代建筑的独特轮廓。",
+    "facts": [
+      "玉皇阁是延庆观现存古建主体，为砖砌仿木楼阁，外观三层。",
+      "下层方形，上部八角；图版选玉皇阁与台基，不包含现代增建的殿堂。",
+      "建筑曾实施整体顶升保护。年表以元代约略定位，不把保护工程年代当作建造年。"
+    ],
+    "caption": [
+      "延庆观 · 玉皇阁现存主体",
+      "元 · 现存主体"
+    ]
+  }
+}

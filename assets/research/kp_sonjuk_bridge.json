@@ -1,0 +1,106 @@
+{
+  "id": "kp_sonjuk_bridge",
+  "name": "开城善竹桥",
+  "subject": "旧石梁桥与1780年石栏",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+  "author": "David Clayton Ellsworth",
+  "license": "CC BY-SA 4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_sonjuk_bridge-photo.jpg",
+      "sha256": "065df86ffabe4ef5fda81a641bea25b214d757121b0d075104bbac66dde44ecc",
+      "author": "David Clayton Ellsworth",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-04-13 16:31:52",
+      "description": "Sonjuk bridge in Kaesong, North Korea"
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_sonjuk_bridge-photo.jpg",
+      "sha256": "065df86ffabe4ef5fda81a641bea25b214d757121b0d075104bbac66dde44ecc",
+      "author": "David Clayton Ellsworth",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2012-04-13 16:31:52",
+      "description": "Sonjuk bridge in Kaesong, North Korea"
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://whc.unesco.org/uploads/nominations/1278rev.pdf",
+      "title": "开城善竹桥形制与年代",
+      "note": "申遗档案称桥自高丽早期使用，确年不详；约1100为排序位置，1392年为郑梦周遇害事件，1780年增设石栏。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kp_sonjuk_bridge-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_reference"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. ONLY the complete old Sonjuk granite beam bridge in foreground/right of reference: short rectangular flat slab deck, stone piers and horizontal beams beneath, granite posts with rounded caps and ONE horizontal rail on each long side, short rectangular spans NOT an arch bridge. Keep viewpoint close to photo with visible deck and side openings, show full bridge endpoints. Remove adjacent modern crossing at left, visitor, trees, monument pavilions and surroundings. Preserve irregular aged stone edges."
+  ],
+  "material_observations": [
+    "浅灰花岗岩，边缘风化灰褐，接缝及桥下暗灰；保留石栏与桥板实体浅色。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；申遗档案称桥自高丽早期使用，确年不详；约1100为排序位置，1392年为郑梦周遇害事件，1780年增设石栏。 原型待用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. ONLY the complete old Sonjuk granite beam bridge in foreground/right of reference: short rectangular flat slab deck, stone piers and horizontal beams beneath, granite posts with rounded caps and ONE horizontal rail on each long side, short rectangular spans NOT an arch bridge. Keep viewpoint close to photo with visible deck and side openings, show full bridge endpoints. Remove adjacent modern crossing at left, visitor, trees, monument pavilions and surroundings. Preserve irregular aged stone edges.",
+  "generated_file": "assets/generated/kp_sonjuk_bridge.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "开城善竹桥 · 旧石梁桥与1780年石栏",
+    "高丽 · 约略定位"
+  ],
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T04:09:23.207Z",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. ONLY the complete old Sonjuk granite beam bridge in foreground/right of reference: short rectangular flat slab deck, stone piers and horizontal beams beneath, granite posts with rounded caps and ONE horizontal rail on each long side, short rectangular spans NOT an arch bridge. Keep viewpoint close to photo with visible deck and side openings, show full bridge endpoints. Remove adjacent modern crossing at left, visitor, trees, monument pavilions and surroundings. Preserve irregular aged stone edges.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kp_sonjuk_bridge-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:14:14.598100+08:00",
+      "saved_at": "2026-10-02T12:14:14.598100+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-4a30f55b-d857-46e7-bb7e-662ae7112a4a.png",
+      "saved_file": "assets/generated/kp_sonjuk_bridge.png",
+      "tool_output_id": "exec-4a30f55b-d857-46e7-bb7e-662ae7112a4a"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-4a30f55b-d857-46e7-bb7e-662ae7112a4a.png",
+  "dimensions": [
+    1199,
+    1312
+  ],
+  "width": 1199,
+  "height": 1312,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fc558fb2887f945f1244eaf1f7f5f4cf82dcf8fe615c7a1ec5b5fe90689a6686",
+    "seeds": []
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

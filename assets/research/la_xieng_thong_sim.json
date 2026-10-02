@@ -1,0 +1,118 @@
+{
+  "id": "la_xieng_thong_sim",
+  "name": "香通寺主佛殿",
+  "subject": "主佛殿sim与支承台基",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sim_of_Wat_Xieng_Thong.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Sim_of_Wat_Xieng_Thong.jpg/1920px-Sim_of_Wat_Xieng_Thong.jpg",
+  "author": "Christophe95",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sim_of_Wat_Xieng_Thong.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Sim_of_Wat_Xieng_Thong.jpg/1920px-Sim_of_Wat_Xieng_Thong.jpg",
+      "file": "assets/references/la_xieng_thong_sim-photo.jpg",
+      "sha256": "9bddea8c4f6d7380a6e5360e7fcd8861d2c32ce78e85b5fdfa2393e1d5ca1c2b",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-08-17 11:13:11",
+      "description": "The sim of Wat Xieng Thong in Luang Prabang."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Sim_of_Wat_Xieng_Thong.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Sim_of_Wat_Xieng_Thong.jpg/1920px-Sim_of_Wat_Xieng_Thong.jpg",
+      "file": "assets/references/la_xieng_thong_sim-photo.jpg",
+      "sha256": "9bddea8c4f6d7380a6e5360e7fcd8861d2c32ce78e85b5fdfa2393e1d5ca1c2b",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-08-17 11:13:11",
+      "description": "The sim of Wat Xieng Thong in Luang Prabang."
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/la_xieng_thong_sim-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw ONLY the sim main hall of Wat Xieng Thong in Image 2, full low sweeping roof with THREE successive gable peaks along its ridge as visible, descending side roof tiers, curved finials, gilded timber front and supporting plinth/stairs. Preserve the long sloping Lao roof, front column rhythm and delicate central ridge ornament. Omit funeral chariot chapel, adjacent buildings, vegetation and external white garden fence."
+  ],
+  "material_observations": [
+    "深灰褐瓦面、金色山墙与木构饰纹、暗褐柱和墙面、绿色檐端饰，浅灰石台阶。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为主佛殿sim与支承台基。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw ONLY the sim main hall of Wat Xieng Thong in Image 2, full low sweeping roof with THREE successive gable peaks along its ridge as visible, descending side roof tiers, curved finials, gilded timber front and supporting plinth/stairs. Preserve the long sloping Lao roof, front column rhythm and delicate central ridge ornament. Omit funeral chariot chapel, adjacent buildings, vegetation and external white garden fence.",
+  "generated_file": "assets/generated/la_xieng_thong_sim.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T11:47:59.385066+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw ONLY the sim main hall of Wat Xieng Thong in Image 2, full low sweeping roof with THREE successive gable peaks along its ridge as visible, descending side roof tiers, curved finials, gilded timber front and supporting plinth/stairs. Preserve the long sloping Lao roof, front column rhythm and delicate central ridge ornament. Omit funeral chariot chapel, adjacent buildings, vegetation and external white garden fence.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/la_xieng_thong_sim-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:51:18.394399+08:00",
+      "saved_at": "2026-10-02T11:51:18.394661+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-a03c6a8c-a02f-4dd7-8511-dce07c83fc75.png",
+      "saved_file": "assets/generated/la_xieng_thong_sim.png",
+      "tool_output_id": "exec-a03c6a8c-a02f-4dd7-8511-dce07c83fc75"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-a03c6a8c-a02f-4dd7-8511-dce07c83fc75.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3ce02b5a62043f31036ece61bb24a2559f2600eeebc155eae0efa385eec65147",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T11:51:51.278379+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "琅勃拉邦官方旅游站：Wat Xiengthong",
+      "url": "https://tourismluangprabang.org/things-to-do/buddhism/wat-xiengthong/",
+      "publisher": "琅勃拉邦官方旅游站",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1560,
+  "yearApprox": true,
+  "yearNote": "官方资料记约1560年创建；主佛殿经历1928年、1952—1960年等修缮，不能将现存装饰全部视为16世纪原作。",
+  "country": "LA",
+  "caption": [
+    "香通寺主佛殿 · 主佛殿sim与支承台基",
+    "约1560年"
+  ]
+}

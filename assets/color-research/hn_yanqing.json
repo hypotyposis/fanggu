@@ -1,0 +1,102 @@
+{
+  "id": "hn_yanqing",
+  "name": "延庆观",
+  "subject": "延庆观 · 玉皇阁现存主体",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hn_yanqing.png",
+    "assets/references/hn_yanqing-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 延庆观 · 玉皇阁现存主体\nPHOTOGRAPHED MATERIAL COLORS: Muted brick red wall, grey-green glazed roof and muted yellow-green ornament, pale stone balustrade.\nSquare masonry base with three arched openings in front, octagonal upper drum and single octagonal canopy; retain the glazed sloping transition roof and terrace. Portrait 1024x1536.",
+  "material_observations": [
+    "Muted brick red wall, grey-green glazed roof and muted yellow-green ornament, pale stone balustrade."
+  ],
+  "references": [
+    {
+      "id": "hn_yanqing",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20260119_Yanqing_Guan_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/20260119_Yanqing_Guan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_yanqing-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "original_research": "assets/research/hn_yanqing.json",
+  "output": "assets/colored/hn_yanqing.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "原型候选，待用户人眼验收。"
+  },
+  "generation_started_at": "2026-10-01T19:22:14.277Z",
+  "generated_at": "2026-10-01T19:27:48.721996+00:00",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-69b3dedf-458d-4df2-b43f-999a475ad955.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "210e8f24b73ce4c913d508090c52a4c09765035a3be1bd2efcac81901e572496",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:22:14.277Z",
+      "received_at": "2026-10-01T19:27:48.721996+00:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 延庆观 · 玉皇阁现存主体\nPHOTOGRAPHED MATERIAL COLORS: Muted brick red wall, grey-green glazed roof and muted yellow-green ornament, pale stone balustrade.\nSquare masonry base with three arched openings in front, octagonal upper drum and single octagonal canopy; retain the glazed sloping transition roof and terrace. Portrait 1024x1536.",
+      "input_images": [
+        "assets/generated/hn_yanqing.png",
+        "assets/references/hn_yanqing-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "assets/colored/hn_yanqing.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-69b3dedf-458d-4df2-b43f-999a475ad955.png",
+      "sourceSha256": "210e8f24b73ce4c913d508090c52a4c09765035a3be1bd2efcac81901e572496",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "historical_sources": [
+    {
+      "title": "延庆观玉皇阁整体顶升保护",
+      "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/hnsbwg/wbdt/article72350c2c046f4c28b00f92e6ca099472.html",
+      "publisher": "河南博物院",
+      "accessed_at": "2026-10-02"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_yanqing",
+    "name": "延庆观",
+    "short": "延庆观",
+    "sub": "玉皇阁现存主体",
+    "dyn": "yuan",
+    "tag": "元",
+    "era": "元代现存玉皇阁；年表为约略定位",
+    "year": 1280,
+    "yearApprox": true,
+    "yearNote": "元代现存玉皇阁；年表为约略定位",
+    "yearLabel": "元约略",
+    "placeKey": "hn_开封",
+    "place": "河南 · 开封",
+    "types": [
+      "pavilion"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "方形砖阁向上收成八角亭，琉璃构件层层托起阁顶。玉皇阁保存着延庆观元代建筑的独特轮廓。",
+    "facts": [
+      "玉皇阁是延庆观现存古建主体，为砖砌仿木楼阁，外观三层。",
+      "下层方形，上部八角；图版选玉皇阁与台基，不包含现代增建的殿堂。",
+      "建筑曾实施整体顶升保护。年表以元代约略定位，不把保护工程年代当作建造年。"
+    ],
+    "caption": [
+      "延庆观 · 玉皇阁现存主体",
+      "元 · 现存主体"
+    ]
+  }
+}

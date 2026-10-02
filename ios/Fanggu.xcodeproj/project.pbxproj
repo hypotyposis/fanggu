@@ -17,6 +17,7 @@
 		5F39F8681337A41498B8412B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941369201341EDC769D0A968 /* DesignSystem.swift */; };
 		645323A38BAA24C69AE53B94 /* FangguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E3B4610C6D7B304A97666 /* FangguApp.swift */; };
 		6455D8FF1495301B0E8144D4 /* MonumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */; };
+		66B9CCA7F19AB1FE7F3636AE /* SketchMapLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE791FF657D724DB06BE27FF /* SketchMapLayout.swift */; };
 		7220089D2A39C1DF1A69F17A /* MapTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */; };
 		73CE79656BA0B4D8631D244B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14485AADE6D55976CAAD1E /* ContentView.swift */; };
 		94319EB3331BA8802B670F1C /* MyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B840132592E220716D66BF0 /* MyLibraryView.swift */; };
@@ -54,6 +55,7 @@
 		E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaShanZheng-Regular.ttf"; sourceTree = "<group>"; };
 		EBA07A3A66551D2FDC02E96B /* FangguUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FangguUITests.swift; sourceTree = "<group>"; };
 		ECBFAFF8D85210B9EEC82594 /* MaShanZheng-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "MaShanZheng-OFL.txt"; sourceTree = "<group>"; };
+		EE791FF657D724DB06BE27FF /* SketchMapLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchMapLayout.swift; sourceTree = "<group>"; };
 		F4CED4570A3CEC1B630EC8FE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTimelineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +113,7 @@
 				F4CED4570A3CEC1B630EC8FE /* Models.swift */,
 				1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */,
 				7B840132592E220716D66BF0 /* MyLibraryView.swift */,
+				EE791FF657D724DB06BE27FF /* SketchMapLayout.swift */,
 				9BE18DA2E8D25129B6858F58 /* Resources */,
 			);
 			path = Fanggu;
@@ -228,6 +231,7 @@
 				983CB5B041412B7DA4962914 /* Models.swift in Sources */,
 				6455D8FF1495301B0E8144D4 /* MonumentDetailView.swift in Sources */,
 				94319EB3331BA8802B670F1C /* MyLibraryView.swift in Sources */,
+				66B9CCA7F19AB1FE7F3636AE /* SketchMapLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

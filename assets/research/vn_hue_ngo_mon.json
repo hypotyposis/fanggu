@@ -1,0 +1,120 @@
+{
+  "id": "vn_hue_ngo_mon",
+  "name": "顺化皇城午门",
+  "subject": "午门完整城台与五凤楼",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Meridian_Gate,_Hue_(I).jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Meridian_Gate%2C_Hue_%28I%29.jpg/1920px-Meridian_Gate%2C_Hue_%28I%29.jpg",
+  "author": "Supanut Arunoprayote",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Meridian_Gate,_Hue_(I).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Meridian_Gate%2C_Hue_%28I%29.jpg/1920px-Meridian_Gate%2C_Hue_%28I%29.jpg",
+      "file": "assets/references/vn_hue_ngo_mon-photo.jpg",
+      "sha256": "9116ac7e3eeb01ae44921a653206d70c70c49d10795b4ea0722d8226a6295594",
+      "author": "Supanut Arunoprayote",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "date": "2019-05-27 16:02:32",
+      "description": "The Meridian Gate (Vietnamese: Ngọ Môn, Chinese character: 午門), also known as the South Gate, is the main gate to the Imperial City, Huế, located within the citadel of Huế.",
+      "original_author_metadata": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Meridian_Gate,_Hue_(I).jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Meridian_Gate%2C_Hue_%28I%29.jpg/1920px-Meridian_Gate%2C_Hue_%28I%29.jpg",
+      "file": "assets/references/vn_hue_ngo_mon-photo.jpg",
+      "sha256": "9116ac7e3eeb01ae44921a653206d70c70c49d10795b4ea0722d8226a6295594",
+      "author": "Supanut Arunoprayote",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "date": "2019-05-27 16:02:32",
+      "description": "The Meridian Gate (Vietnamese: Ngọ Môn, Chinese character: 午門), also known as the South Gate, is the main gate to the Imperial City, Huế, located within the citadel of Huế.",
+      "original_author_metadata": "This Photo was taken by Supanut Arunoprayote.\n\nFeel free to use any of my images, but please mention me as the author and may send me a message.  (สามารถใช้ภาพได้อิสระ แต่กรุณาใส่เครดิตผู้ถ่ายและอาจส่งข้อความบอกกล่าวด้วย) \n\n\n\nPlease do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract."
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/vn_hue_ngo_mon-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Draw the COMPLETE Ngo Mon gate at Hue shown in the photo: broad U-shaped brick/stone gate platform, central THREE front rectangular openings and ONE side passage on each flank (five passages total, not five frontal arches), the entire timber Ngu Phung upper pavilion with tall corner roof pavilions, central stacked horizontal roofs, balustrades, ornament. Keep all left/right extremities. Remove bridge in foreground, visitors, trees and scaffolding; no extra palace backdrop."
+  ],
+  "material_observations": [
+    "红褐砖城台、中央灰石门台、暗红木柱和墙板、金黄中央琉璃瓦、青绿色两侧瓦面与多彩脊饰。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为午门完整城台与五凤楼。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the COMPLETE Ngo Mon gate at Hue shown in the photo: broad U-shaped brick/stone gate platform, central THREE front rectangular openings and ONE side passage on each flank (five passages total, not five frontal arches), the entire timber Ngu Phung upper pavilion with tall corner roof pavilions, central stacked horizontal roofs, balustrades, ornament. Keep all left/right extremities. Remove bridge in foreground, visitors, trees and scaffolding; no extra palace backdrop.",
+  "generated_file": "assets/generated/vn_hue_ngo_mon.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T11:47:59.656647+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Draw the COMPLETE Ngo Mon gate at Hue shown in the photo: broad U-shaped brick/stone gate platform, central THREE front rectangular openings and ONE side passage on each flank (five passages total, not five frontal arches), the entire timber Ngu Phung upper pavilion with tall corner roof pavilions, central stacked horizontal roofs, balustrades, ornament. Keep all left/right extremities. Remove bridge in foreground, visitors, trees and scaffolding; no extra palace backdrop.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/vn_hue_ngo_mon-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:59:32.715349+08:00",
+      "saved_at": "2026-10-02T11:59:32.715609+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-f45ab142-1eed-4ef4-a468-cfbb31f5ed02.png",
+      "saved_file": "assets/generated/vn_hue_ngo_mon.png",
+      "tool_output_id": "exec-f45ab142-1eed-4ef4-a468-cfbb31f5ed02"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-f45ab142-1eed-4ef4-a468-cfbb31f5ed02.png",
+  "width": 1536,
+  "height": 1024,
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "12eb07dadc8d33334b0a3cd02caaddffbf1c1d78c32d1bb6ff89f84dd61b765a",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T11:59:44.542119+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "factual_sources": [
+    {
+      "title": "顺化官方旅游站：Ngọ Môn",
+      "url": "https://huetourism.gov.vn/ngo-mon-bieu-tuong-vinh-hang-cua-co-do-hue/?pid=MjM3NTN8Y3NkbGRs0",
+      "publisher": "顺化官方旅游站",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 1833,
+  "yearApprox": false,
+  "yearNote": "1833为午门营建纪年；现存木楼、屋面和城台经历后世修缮，另有现代修缮记录。",
+  "country": "VN",
+  "caption": [
+    "顺化皇城午门 · 午门完整城台与五凤楼",
+    "1833年 · 明命帝时期"
+  ]
+}

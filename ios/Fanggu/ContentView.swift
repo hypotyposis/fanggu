@@ -160,7 +160,8 @@ struct ExploreView: View {
     @State private var showingFilters = false
     @State private var showingAbout = false
 
-    private let regionNames = ["north": "华北", "northeast": "东北", "east": "华东", "central": "华中", "south": "华南", "southwest": "西南", "northwest": "西北", "jp_kinki": "近畿"]
+    private let regionNames = ["north": "华北", "northeast": "东北", "east": "华东", "central": "华中", "south": "华南", "southwest": "西南", "northwest": "西北", "jp_kinki": "近畿", "kr_capital": "韩国首都圈", "kr_chungcheong": "忠清地区", "kr_gyeongsang": "庆尚地区", "kp_pyongyang": "平壤地区", "kp_kaesong": "开城地区", "jp_kanto": "关东", "jp_chugoku": "中国地方", "kh_angkor": "吴哥地区", "id_java": "爪哇", "th_north": "泰国北部", "th_central": "泰国中部", "mm_central": "缅甸中部", "la_north": "老挝北部", "vn_central": "越南中部", "ph_luzon": "吕宋"]
+    private let countryNames = ["CN": "中国", "JP": "日本", "KR": "韩国", "KP": "朝鲜", "KH": "柬埔寨", "ID": "印度尼西亚", "TH": "泰国", "MM": "缅甸", "LA": "老挝", "VN": "越南", "PH": "菲律宾"]
     private let typeAliases = ["sculpture": "彩塑悬塑 造像 雕塑", "gate": "山门 牌坊 牌楼", "screen": "影壁 琉璃照壁"]
 
     private var dynastyOptions: [String: String] {
@@ -176,12 +177,12 @@ struct ExploreView: View {
         library.monuments.filter { country == "all" || $0.country == country }
             .reduce(into: ["all": "全部地区"]) { result, site in
                 let name = regionNames[site.region] ?? site.region
-                result[site.region] = country == "all" ? "\(site.country == "JP" ? "日本" : "中国") · \(name)" : name
+                result[site.region] = country == "all" ? "\(countryNames[site.country] ?? site.country) · \(name)" : name
             }
     }
     private var provinceOptions: [String: String] {
         library.monuments.filter { (country == "all" || $0.country == country) && (region == "all" || $0.region == region) }
-            .reduce(into: ["all": country == "JP" ? "全部都道府县" : country == "CN" ? "全部省份" : "全部省份与府县"]) { result, site in result[site.province] = site.province }
+            .reduce(into: ["all": country == "JP" ? "全部都道府县" : country == "CN" ? "全部省份" : "全部行政区"]) { result, site in result[site.province] = site.province }
     }
     private var statusCounts: [String: Int] {
         let records = library.monuments.map { library.record(for: $0).status }
@@ -211,7 +212,7 @@ struct ExploreView: View {
             let statusMatches = status == "all" || record.status.rawValue == status
             let protection = site.protection.flatMap { [$0.unitName, $0.scope, $0.batchLabel, "第\($0.batch)批国保", "国保", "全国重点文物保护单位"] }
             let haystack = ([site.name, site.short, site.sub, site.place, site.province, site.dynastyName,
-                             site.country == "JP" ? "日本" : "中国", regionNames[site.region] ?? site.region]
+                             countryNames[site.country] ?? site.country, regionNames[site.region] ?? site.region]
                 + site.typeNames + site.types.compactMap { typeAliases[$0] }
                 + site.legacyNames + site.legacyPlaces + protection).joined(separator: " ")
             return statusMatches && (country == "all" || site.country == country)
@@ -314,7 +315,7 @@ struct ExploreView: View {
                 VStack(alignment: .leading, spacing: 14) {
                     Text("按地域、时代和建筑类型缩小范围。")
                         .font(FangguFont.serif(14)).foregroundStyle(Palette.paper2)
-                    FilterMenu(title: "国家", value: $country, options: ["all": "全部国家", "CN": "中国", "JP": "日本"])
+                    FilterMenu(title: "国家", value: $country, options: countryNames.merging(["all": "全部国家"]) { current, _ in current })
                     FilterMenu(title: "时代", value: $dynasty, options: dynastyOptions)
                     FilterMenu(title: "地区", value: $region, options: regionOptions)
                     FilterMenu(title: "省份", value: $province, options: provinceOptions)
@@ -503,11 +504,11 @@ private struct FilterMenu: View {
 }
 
 struct ArtworkView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let site: Monument
     let visited: Bool
     var height: CGFloat = 220
     var reveal: CGFloat = 0
-    var stamping = false
 
     private static let images = NSCache<NSString, UIImage>()
 
@@ -522,7 +523,7 @@ struct ArtworkView: View {
     var body: some View {
         let color = Self.artwork(site.colorImage)
         let progress = min(1, max(0, reveal))
-        let lineOpacity = color == nil ? 1 : (visited || stamping ? 0 : progress <= 0.8 ? 1 : (1 - progress) / 0.2)
+        let lineOpacity = color == nil ? 1 : (visited ? 0 : progress <= 0.8 ? 1 : (1 - progress) / 0.2)
         return ZStack {
             Palette.ink2
             if let line = Self.artwork(site.lineImage) {
@@ -532,12 +533,12 @@ struct ArtworkView: View {
                     .font(FangguFont.serif(13))
                     .foregroundStyle(Palette.paper3)
             }
-            if let color, visited || stamping || progress > 0 {
+            if let color, visited || progress > 0 {
                 Image(uiImage: color)
                     .resizable().scaledToFit().padding(14)
-                    .opacity(visited || stamping ? 1 : progress)
+                    .opacity(visited ? 1 : progress)
             }
-            if visited || stamping {
+            if visited {
                 Text("亲\n见")
                     .font(FangguFont.brush(19))
                     .lineSpacing(-3)
@@ -547,11 +548,12 @@ struct ArtworkView: View {
                     .rotationEffect(.degrees(-8))
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
                     .padding(20)
-                    .transition(.scale(scale: 2.4).combined(with: .opacity))
+                    .transition(reduceMotion ? .identity : .scale(scale: 1.18))
             }
         }
+        .animation(reduceMotion ? nil : .spring(response: 0.32, dampingFraction: 0.78), value: visited)
         .frame(height: height)
-        .accessibilityLabel("\(site.name)\(visited || stamping ? "设色图" : "线稿")")
+        .accessibilityLabel("\(site.name)\(visited ? "设色图" : "线稿")")
     }
 }
 
@@ -561,7 +563,6 @@ struct MonumentCard: View {
     @State private var editingVisit = false
     @State private var editingReview = false
     @State private var reveal: CGFloat = 0
-    @State private var completingVisit = false
 
     private var record: VisitRecord { library.record(for: site) }
 
@@ -569,8 +570,8 @@ struct MonumentCard: View {
         VStack(alignment: .leading, spacing: 0) {
             NavigationLink(value: site) {
                 VStack(alignment: .leading, spacing: 0) {
-                    ArtworkView(site: site, visited: record.status == .visited && !completingVisit,
-                                height: 240, reveal: reveal, stamping: completingVisit)
+                    ArtworkView(site: site, visited: record.status == .visited,
+                                height: 240, reveal: reveal)
                     VStack(alignment: .leading, spacing: 9) {
                         HStack(spacing: 8) {
                             Text(record.status.title)
@@ -608,7 +609,7 @@ struct MonumentCard: View {
                 .padding(.horizontal, 17)
                 .padding(.bottom, 14)
             }
-            if record.status != .visited || completingVisit {
+            if record.status != .visited {
                 VStack(alignment: .leading, spacing: 10) {
                     ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
                     Button("填写到访日期与笔记") { editingVisit = true }
@@ -652,15 +653,6 @@ struct MonumentCard: View {
     }
 
     private func finishArrival() {
-        withAnimation(.spring(response: 0.82, dampingFraction: 0.7)) {
-            reveal = 1
-            completingVisit = true
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.35) {
-            withAnimation(.easeInOut(duration: 0.25)) {
-                completingVisit = false
-                reveal = 0
-            }
-        }
+        reveal = 0
     }
 }

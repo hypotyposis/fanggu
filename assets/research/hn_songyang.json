@@ -1,0 +1,120 @@
+{
+  "id": "hn_songyang",
+  "subject": "嵩阳书院 · 清代大门正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File%3A20250528_Songyang_Shuyuan.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/20250528_Songyang_Shuyuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Yumeto",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_songyang-photo.jpg"
+  ],
+  "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 嵩阳书院 · 清代大门正面. Three-bay gate with ONE round rolled roof without straight ridge, central rectangular open doorway, stone side columns, brick side walls and central stone stairs. Landscape 1536x1024.",
+  "generated_file": "assets/generated/hn_songyang.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "嵩阳书院 · 清代大门正面",
+    "清 · 现存主体"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "pending_user",
+  "sources": [
+    {
+      "id": "hn_songyang",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250528_Songyang_Shuyuan.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/20250528_Songyang_Shuyuan.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_songyang-photo.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Three-bay gate with ONE round rolled roof without straight ridge, central rectangular open doorway, stone side columns, brick side walls and central stone stairs. Landscape 1536x1024."
+  ],
+  "material_observations": [
+    "Grey roof tiles, grey brick walls, faded dark red lintel and door, pale grey stone columns."
+  ],
+  "generated_at": "2026-10-01T19:21:41.872287+00:00",
+  "generation_started_at": "2026-10-01T19:12:29.957Z",
+  "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-6665efd0-f574-42f5-acd6-46c4c6d3837f.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f4646801f7d34d916f184882a022b80069914e65dff5346f08afffc2231e7fad",
+    "seeds": []
+  },
+  "output_viewed": true,
+  "visual_inspection": {
+    "status": "pending_user",
+    "note": "已查看原件；保留生成候选交用户审阅，不作视觉通过或淘汰决定。"
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "started_at": "2026-10-01T19:12:29.957Z",
+      "received_at": "2026-10-01T19:21:41.872287+00:00",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 嵩阳书院 · 清代大门正面. Three-bay gate with ONE round rolled roof without straight ridge, central rectangular open doorway, stone side columns, brick side walls and central stone stairs. Landscape 1536x1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hn_songyang-photo.jpg"
+      ],
+      "original_file": "assets/generated/hn_songyang.png",
+      "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8db-638a-7b91-9914-f217278e3a3f/exec-6665efd0-f574-42f5-acd6-46c4c6d3837f.png",
+      "sourceSha256": "f4646801f7d34d916f184882a022b80069914e65dff5346f08afffc2231e7fad",
+      "result": "original_saved",
+      "visual_review_status": "pending_user"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_songyang-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "嵩阳书院简介",
+      "url": "https://df.jiceng.zhengzhou.gov.cn/020007/8163269.jhtml",
+      "publisher": "登封市嵩阳街道办事处",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "title": "嵩山古代建筑群总体保护规划保护区划",
+      "url": "https://public.dengfeng.gov.cn/attachment/环评正文.pdf",
+      "publisher": "登封市政府公开附件",
+      "accessed_at": "2026-10-02",
+      "note": "大唐嵩阳观纪圣德感应之颂碑与嵩阳书院保护范围"
+    }
+  ],
+  "site_recommendation": {
+    "id": "hn_songyang",
+    "name": "嵩阳书院",
+    "short": "嵩阳书院",
+    "sub": "清代大门正面",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "现存大门属清代并经修缮；康熙时期约略定位",
+    "year": 1680,
+    "yearApprox": true,
+    "yearNote": "现存大门属清代并经修缮；康熙时期约略定位",
+    "yearLabel": "清约略",
+    "placeKey": "dengfeng",
+    "place": "河南 · 登封",
+    "types": [
+      "gate",
+      "school"
+    ],
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "lede": "卷棚屋面低低覆盖三间大门，石柱与灰砖把入口收得朴素。书院的声名来自宋代讲学，眼前建筑则延续清代格局。",
+    "facts": [
+      "嵩阳书院中轴依次为大门、先圣殿、讲堂、道统祠和藏书楼。",
+      "现存建筑与布局主要属清代；图版仅绘大门，不将北魏创寺或北宋赐名年用作这座门的营建年。",
+      "第五批原公布名称为大唐嵩阳观纪圣德感应之颂碑；本条目的书院建筑保护范围另以登封官方资料复核。"
+    ],
+    "caption": [
+      "嵩阳书院 · 清代大门正面",
+      "清 · 现存主体"
+    ]
+  }
+}

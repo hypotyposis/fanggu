@@ -1,0 +1,106 @@
+{
+  "id": "kp_kaesong_namdaemun",
+  "name": "开城南大门",
+  "subject": "石门台与战后复建门楼",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Nam_Gate_in_Kaesong_(5063812320).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg",
+  "author": "David Stanley from Nanaimo, Canada",
+  "license": "CC BY 2.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Nam_Gate_in_Kaesong_(5063812320).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_kaesong_namdaemun-photo.jpg",
+      "sha256": "293d968efedb51d8ab733d47fc9b42b8b64b52703c83f101333afe69c1b9c500",
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "date": "2010-10-08 17:18",
+      "description": "The old city gate in the center of Kaesong, Democratic People's Republic of Korea."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Nam_Gate_in_Kaesong_(5063812320).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Nam_Gate_in_Kaesong_%285063812320%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "file": "assets/references/kp_kaesong_namdaemun-photo.jpg",
+      "sha256": "293d968efedb51d8ab733d47fc9b42b8b64b52703c83f101333afe69c1b9c500",
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "date": "2010-10-08 17:18",
+      "description": "The old city gate in the center of Kaesong, Democratic People's Republic of Korea."
+    }
+  ],
+  "historical_sources": [
+    {
+      "url": "https://whc.unesco.org/document/122862",
+      "title": "开城南大门形制与年代",
+      "note": "内城门始建于1391—1393年；门楼1950年毁于战火，1954年起复建，申遗档案图注记1955年恢复，年表按现存门楼定位。"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/kp_kaesong_namdaemun-photo.jpg"
+  ],
+  "input_roles": [
+    "line_style_master",
+    "subject_geometry_reference"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Landscape 1536x1024. Complete Kaesong Namdae Gate ONLY: broad stone platform with ONE central semicircular passage, single-eaved hip-and-gable wooden pavilion with THREE front bays, open columns and the large bell seen inside the right bay. Preserve complete stone base and roof, no ivy, neighboring small shrine, modern apartments, road signs, bicycles or people. Do NOT add a second roof tier."
+  ],
+  "material_observations": [
+    "灰褐花岗岩城台，灰瓦与浅灰屋脊，暗红柱，青绿檐下梁枋和少量橙红彩画，深灰铜钟。"
+  ],
+  "source_note": "依据所列参考进行艺术简化；内城门始建于1391—1393年；门楼1950年毁于战火，1954年起复建，申遗档案图注记1955年恢复，年表按现存门楼定位。 原型待用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Complete Kaesong Namdae Gate ONLY: broad stone platform with ONE central semicircular passage, single-eaved hip-and-gable wooden pavilion with THREE front bays, open columns and the large bell seen inside the right bay. Preserve complete stone base and roof, no ivy, neighboring small shrine, modern apartments, road signs, bicycles or people. Do NOT add a second roof tier.",
+  "generated_file": "assets/generated/kp_kaesong_namdaemun.png",
+  "generation_tool": "built-in image_gen.imagegen",
+  "caption": [
+    "开城南大门 · 石门台与战后复建门楼",
+    "战后复建 · 1955年"
+  ],
+  "generation_history": [
+    {
+      "kind": "line",
+      "submitted_at": "2026-10-02T04:09:22.928Z",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, visible counts, openings, proportions and perspective.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. Draw only ink strokes; the white background will be removed by a local script.\nShow the entire selected subject, centered, verticals vertical and minimal perspective. Remove tourists, foliage, vehicles, wires, modern signage, scaffolding, fences, neighboring distractions and sky. Preserve ornament selectively without every brick or roof tile. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border. Subject occupies about 82% of canvas width/height, apex and base uncut, with generous balanced margins.\nSPECIFIC SUBJECT AND SCOPE: Landscape 1536x1024. Complete Kaesong Namdae Gate ONLY: broad stone platform with ONE central semicircular passage, single-eaved hip-and-gable wooden pavilion with THREE front bays, open columns and the large bell seen inside the right bay. Preserve complete stone base and roof, no ivy, neighboring small shrine, modern apartments, road signs, bicycles or people. Do NOT add a second roof tier.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/kp_kaesong_namdaemun-photo.jpg"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T12:13:43.063074+08:00",
+      "saved_at": "2026-10-02T12:13:43.063074+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-5b53351f-a933-4311-9199-350a2c8759b0.png",
+      "saved_file": "assets/generated/kp_kaesong_namdaemun.png",
+      "tool_output_id": "exec-5b53351f-a933-4311-9199-350a2c8759b0"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0fac4-8b65-77f0-9e1a-915109ff95fa/exec-5b53351f-a933-4311-9199-350a2c8759b0.png",
+  "dimensions": [
+    1213,
+    1297
+  ],
+  "width": 1213,
+  "height": 1297,
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a9baee41af7b4e2058b832c0b70f2d3a1551ae218d743b002e1b6fd52b750127",
+    "seeds": []
+  },
+  "preview_check": {
+    "observed_at": "2026-10-02T12:22:06.164370+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  }
+}

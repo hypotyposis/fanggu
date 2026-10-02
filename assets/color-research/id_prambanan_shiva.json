@@ -1,0 +1,127 @@
+{
+  "id": "id_prambanan_shiva",
+  "name": "普兰巴南湿婆主庙",
+  "subject": "单座湿婆主庙与台阶",
+  "status": "needs_review",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
+  "author": "Gunkarta",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "references": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
+      "file": "assets/references/id_prambanan_shiva-photo.jpg",
+      "sha256": "bc52698636e5ce59750f0195975ff30416792c0532c9d47003a2f2e18cd7a535",
+      "author": "Gunkarta",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "3 Februaty 2007, 13:27",
+      "description": "Shiva temple, the main temple at Prambanan temple complex rising 47m high (130 feet)and measures 34m x 34m at its base. The main temple houses the statue of Shiva Mahadewa, Ganesha, Durga Mahisashuramardhini, and Agastya on each chamber of cardinal points. On the far right is stood Wishnu temple. Around the ballustrade of the Shiva temple adorned with panels of bas reliefs narating the story from Ramayana. This ninth century temple complex was build by Hindu Mataram Kingdom."
+    }
+  ],
+  "sources": [
+    {
+      "page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
+      "file": "assets/references/id_prambanan_shiva-photo.jpg",
+      "sha256": "bc52698636e5ce59750f0195975ff30416792c0532c9d47003a2f2e18cd7a535",
+      "author": "Gunkarta",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "3 Februaty 2007, 13:27",
+      "description": "Shiva temple, the main temple at Prambanan temple complex rising 47m high (130 feet)and measures 34m x 34m at its base. The main temple houses the statue of Shiva Mahadewa, Ganesha, Durga Mahisashuramardhini, and Agastya on each chamber of cardinal points. On the far right is stood Wishnu temple. Around the ballustrade of the Shiva temple adorned with panels of bas reliefs narating the story from Ramayana. This ninth century temple complex was build by Hindu Mataram Kingdom."
+    }
+  ],
+  "input_roles": [
+    "line_composition_master",
+    "present_material_photo",
+    "colored_style_only"
+  ],
+  "inputs_viewed": true,
+  "structure_checkpoints": [
+    "Portrait 1024x1536. Draw ONLY the complete large SHIVA temple in the center-left of Image 2; the photo contains other temples that must be omitted. Include its full stepped base and entry stairs, tall densely receding stone superstructure, central finial and wall niche ornament. Preserve the shrine as a single building, not an invented trio. Remove cropped foreground temple on left, right smaller Vishnu temple and all other structures."
+  ],
+  "material_observations": [
+    "灰色安山岩，局部灰绿风化面，石阶灰褐，门洞深灰黑。"
+  ],
+  "source_note": "依据所列实拍进行艺术简化；范围为单座湿婆主庙与台阶。原型待用户人眼验收，不作实测或文保复原声明。",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 单座湿婆主庙与台阶\nPRESERVE: Portrait 1024x1536. Draw ONLY the complete large SHIVA temple in the center-left of Image 2; the photo contains other temples that must be omitted. Include its full stepped base and entry stairs, tall densely receding stone superstructure, central finial and wall niche ornament. Preserve the shrine as a single building, not an invented trio. Remove cropped foreground temple on left, right smaller Vishnu temple and all other structures.\nOBSERVED MATERIAL COLORS: 灰色安山岩，局部灰绿风化面，石阶灰褐，门洞深灰黑。",
+  "generation_tool": "built-in image_gen.imagegen",
+  "generator": "built-in image_gen.imagegen",
+  "input_images": [
+    "assets/generated/id_prambanan_shiva.png",
+    "assets/references/id_prambanan_shiva-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "output": "assets/colored/id_prambanan_shiva.png",
+  "original_research": "assets/research/id_prambanan_shiva.json",
+  "generation_history": [
+    {
+      "kind": "color",
+      "submitted_at": "2026-10-02T11:52:08.368860+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 单座湿婆主庙与台阶\nPRESERVE: Portrait 1024x1536. Draw ONLY the complete large SHIVA temple in the center-left of Image 2; the photo contains other temples that must be omitted. Include its full stepped base and entry stairs, tall densely receding stone superstructure, central finial and wall niche ornament. Preserve the shrine as a single building, not an invented trio. Remove cropped foreground temple on left, right smaller Vishnu temple and all other structures.\nOBSERVED MATERIAL COLORS: 灰色安山岩，局部灰绿风化面，石阶灰褐，门洞深灰黑。",
+      "input_images": [
+        "assets/generated/id_prambanan_shiva.png",
+        "assets/references/id_prambanan_shiva-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "status": "saved",
+      "completed_at": null,
+      "received_at": "2026-10-02T11:59:06.127471+08:00",
+      "saved_at": "2026-10-02T11:59:06.129720+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-6f54940e-9c47-4742-a107-1253cfb255f8.png",
+      "saved_file": "assets/colored/id_prambanan_shiva.png",
+      "tool_output_id": "exec-6f54940e-9c47-4742-a107-1253cfb255f8"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8dc-3040-75a3-bdab-f13be5b012bc/exec-6f54940e-9c47-4742-a107-1253cfb255f8.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "63aed63c3c1f8a3928050b6667dcc8082986281e6fc0afca24775cace578e49e",
+    "seeds": []
+  },
+  "actual_original_background": {
+    "mode": "RGB",
+    "alpha_extrema": [
+      255,
+      255
+    ],
+    "note": "请求纯白不透明原件；记录实际解码结果。"
+  },
+  "factual_sources": [
+    {
+      "title": "UNESCO：Prambanan Temple Compounds",
+      "url": "https://whc.unesco.org/en/list/642/",
+      "publisher": "UNESCO",
+      "accessed": "2026-10-02"
+    }
+  ],
+  "year": 900,
+  "yearApprox": true,
+  "yearNote": "UNESCO同页简述作10世纪、详细说明作9世纪；900仅作约略排序。现存主庙经过近现代复原修复。",
+  "country": "ID",
+  "caption": [
+    "普兰巴南湿婆主庙 · 单座湿婆主庙与台阶",
+    "9—10世纪"
+  ],
+  "preview_check": {
+    "observed_at": "2026-10-02T12:17:44.915228+08:00",
+    "original_viewed": true,
+    "visual_verdict": "pending_user",
+    "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
+  },
+  "visual_review": {
+    "status": "pending_user",
+    "note": "名单获同意，图版尚待用户人眼验收。"
+  }
+}
