@@ -1,0 +1,88 @@
+{
+  "id": "cq_diaoyu",
+  "subject": "钓鱼城护国门石砌城门、上部后修门楼与前方石阶",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Fishingtown.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Fishingtown.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Chen Hualin (Harveychl)",
+  "license": "Public domain (author release)",
+  "license_url": "",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_diaoyu-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. HUGUO GATE: ONE arched doorway in thick stone gate wall, stone crenellations, small two-tier tiled pavilion above, steep ascending stone steps and compact left rock face. Preserve narrow cliff-side gateway arrangement. Remove bamboo and all people. Portrait 1024x1536, subject about 82% of height.",
+  "generated_file": "assets/generated/cq_diaoyu.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "钓鱼城遗址 · 护国门",
+    "1243年筑城扩建 · 门楼后修"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "cq_diaoyu",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fishingtown.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Fishingtown.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Chen Hualin (Harveychl)",
+      "license_url": "",
+      "license": "Public domain (author release)",
+      "date": "2006-01-30",
+      "description": "English: The cliffy road up to the front gate of Fishing Town,Hechuan,Chongqing,China.The photo was taken by Mr Chen Hualin on January 30, 2006.",
+      "reference_file": "assets/references/cq_diaoyu-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_diaoyu-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "重庆市地方志办公室：钓鱼城历史",
+      "url": "https://dfz.cq.gov.cn/zqlswh/rwby_417819/202408/t20240801_13448635.html"
+    },
+    {
+      "title": "重庆市人民政府：钓鱼城遗址",
+      "url": "https://www.cq.gov.cn/ywdt/zwhd/qxdt/202006/t20200616_8627588.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "49fa1fafac0c6954be0665aabb9e41a66f8554b093f77bc32fc7e4cee890d0ae",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. HUGUO GATE: ONE arched doorway in thick stone gate wall, stone crenellations, small two-tier tiled pavilion above, steep ascending stone steps and compact left rock face. Preserve narrow cliff-side gateway arrangement. Remove bamboo and all people. Portrait 1024x1536, subject about 82% of height.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/cq_diaoyu-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-45c26aef-c545-4f61-ba13-123db54c6a98.png",
+      "saved_file": "assets/generated/cq_diaoyu.png",
+      "started_at": "2026-10-01T18:58:07.193Z",
+      "received_at": "2026-10-01T18:58:32.381Z"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-45c26aef-c545-4f61-ba13-123db54c6a98.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.189Z",
+    "sourceSha256": "49fa1fafac0c6954be0665aabb9e41a66f8554b093f77bc32fc7e4cee890d0ae"
+  }
+}

@@ -8638,6 +8638,206 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sc_leshan": {
+    "src": "assets/colored-transparent-avif/sc_leshan.avif",
+    "originalSrc": "assets/colored/sc_leshan.png",
+    "transparentSrc": "assets/colored-transparent/sc_leshan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "乐山大佛头部至胸腹的现存摩崖造像 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sc_leshan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Leshan_Giant_Buddha_%282%29.jpg",
+        "author": "xiquinhosilva",
+        "license": "https://creativecommons.org/licenses/by/2.0",
+        "date": "23 May 2018, 14:42:45"
+      }
+    ]
+  },
+  "sc_baoen": {
+    "src": "assets/colored-transparent-avif/sc_baoen.avif",
+    "originalSrc": "assets/colored/sc_baoen.png",
+    "transparentSrc": "assets/colored-transparent/sc_baoen.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "平武报恩寺大雄宝殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sc_baoen.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%B9%B3%E6%AD%A6%E6%8A%A5%E6%81%A9%E5%AF%BA%E5%A4%A7%E9%9B%84%E5%AE%9D%E6%AE%BF%E7%85%A7%E7%89%87.jpg",
+        "author": "Nekitarc",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "22 November 2016"
+      }
+    ]
+  },
+  "sc_wuliang": {
+    "src": "assets/colored-transparent-avif/sc_wuliang.avif",
+    "originalSrc": "assets/colored/sc_wuliang.png",
+    "transparentSrc": "assets/colored-transparent/sc_wuliang.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "南充无量宝塔现存十三层砖塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sc_wuliang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%97%A0%E9%87%8F%E5%AE%9D%E5%A1%94%E7%85%A7%E7%89%87.JPG",
+        "author": "Nekitarc",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "12 November 2015, 13:48:54"
+      }
+    ]
+  },
+  "sc_zhanghuan": {
+    "src": "assets/colored-transparent-avif/sc_zhanghuan.avif",
+    "originalSrc": "assets/colored/sc_zhanghuan.png",
+    "transparentSrc": "assets/colored-transparent/sc_zhanghuan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "阆中张桓侯祠敌万楼及相连前檐 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sc_zhanghuan.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Zfm001.jpg",
+        "author": "Zeuce",
+        "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "date": "7 October 2005 (original upload date)"
+      }
+    ]
+  },
+  "sc_luodai": {
+    "src": "assets/colored-transparent-avif/sc_luodai.avif",
+    "originalSrc": "assets/colored/sc_luodai.png",
+    "transparentSrc": "assets/colored-transparent/sc_luodai.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "洛带湖广会馆禹王宫现存门楼 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sc_luodai.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%B4%9B%E5%B8%A6%E4%BC%9A%E9%A6%86%E7%85%A7%E7%89%87.JPG",
+        "author": "Nekitarc",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "12 February 2015"
+      }
+    ]
+  },
+  "sc_shenque": {
+    "src": "assets/colored-transparent-avif/sc_shenque.avif",
+    "originalSrc": "assets/colored/sc_shenque.png",
+    "transparentSrc": "assets/colored-transparent/sc_shenque.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "渠县沈府君阙一座现存主阙的近正面 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/sc_shenque.json",
+    "references": [
+      {
+        "page": "https://k.sina.com.cn/article_2662423037_p9eb159fd02700jk6i.html",
+        "author": "未知（新浪来源页）",
+        "license": "未标注，参考研究用途",
+        "date": "未知；来源页发表于2018-12-15"
+      }
+    ]
+  },
+  "cq_shibao": {
+    "src": "assets/colored-transparent-avif/cq_shibao.avif",
+    "originalSrc": "assets/colored/cq_shibao.png",
+    "transparentSrc": "assets/colored-transparent/cq_shibao.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "石宝寨现存十二层寨楼及紧邻岩壁 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/cq_shibao.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Shibaozhai_2016_1.jpg",
+        "author": "Fredlyfish4",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0 / https://creativecommons.org/licenses/by-sa/4.0/",
+        "date": "1 October 2016, 17:20:34"
+      }
+    ]
+  },
+  "cq_huguang": {
+    "src": "assets/colored-transparent-avif/cq_huguang.avif",
+    "originalSrc": "assets/colored/cq_huguang.png",
+    "transparentSrc": "assets/colored-transparent/cq_huguang.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "重庆湖广会馆现存戏楼正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/cq_huguang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E6%B9%96%E5%B9%BF%E4%BC%9A%E9%A6%86%E6%88%8F%E6%A5%BC.jpg",
+        "author": "不秋齋主人",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0",
+        "date": "31 July 2018, 17:07:29"
+      }
+    ]
+  },
+  "cq_diaoyu": {
+    "src": "assets/colored-transparent-avif/cq_diaoyu.avif",
+    "originalSrc": "assets/colored/cq_diaoyu.png",
+    "transparentSrc": "assets/colored-transparent/cq_diaoyu.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "钓鱼城护国门石砌城门、上部后修门楼与前方石阶 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/cq_diaoyu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Fishingtown.jpg",
+        "author": "Chen Hualin (Harveychl)",
+        "license": "Public domain (author release)",
+        "date": "2006-01-30"
+      }
+    ]
+  },
+  "cq_tongnan": {
+    "src": "assets/colored-transparent-avif/cq_tongnan.avif",
+    "originalSrc": "assets/colored/cq_tongnan.png",
+    "transparentSrc": "assets/colored-transparent/cq_tongnan.png",
+    "transparent": true,
+    "visualReview": "approved_user",
+    "alt": "潼南大佛寺大佛现存饰金坐像 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/cq_tongnan.json",
+    "references": [
+      {
+        "page": "https://www.thepaper.cn/newsDetail_forward_27110662",
+        "author": "海笛老三届千寻",
+        "license": "未标注，参考研究用途",
+        "date": "未知；来源页发表于2024-04-29"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

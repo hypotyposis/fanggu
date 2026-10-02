@@ -1,0 +1,88 @@
+{
+  "id": "cq_shibao",
+  "subject": "石宝寨现存十二层寨楼及紧邻岩壁",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Shibaozhai_2016_1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Shibaozhai_2016_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Fredlyfish4",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0 / https://creativecommons.org/licenses/by-sa/4.0/",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_shibao-photo.jpg"
+  ],
+  "source_note": "十二层现状按实拍绘制。真实线稿提示词曾含“顶三层1956年新增”，此年代说法与重庆档案馆1909年十二层照片冲突，未采纳为目录事实；保留提示词原文以供追溯。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. TWELVE eave/storey tiers of the stepped red wooden pavilion against a narrow rock backing. Nine lower historic tiers plus three smaller upper tiers added in 1956. Keep circular windows and narrowing outline, only a compact strip of supporting rock; no trees, river, embankment or bridge. Portrait 1024x1536, subject about 82% of height.",
+  "generated_file": "assets/generated/cq_shibao.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "石宝寨 · 十二层寨楼",
+    "明代始建 · 清代扩修"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "cq_shibao",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shibaozhai_2016_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Shibaozhai_2016_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Fredlyfish4",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0 / https://creativecommons.org/licenses/by-sa/4.0/",
+      "date": "1 October 2016, 17:20:34",
+      "description": "English: Shibaozhai along the Yangtze River, China in 2016",
+      "reference_file": "assets/references/cq_shibao-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_shibao-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-5c1f0830-d7b7-4b4f-a1dc-ddc18cf0b607.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6272afe8fbfbaf78d3fa5423b55cab083ef86335dd1c630c3e3c29d8ad5ab8d9",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "historical_sources": [
+    {
+      "title": "重庆市城市管理局：石宝寨营建及国保身份",
+      "url": "https://cgj.cq.gov.cn/rdzt/ylsmypcswm/202207/t20220708_10901996.html"
+    },
+    {
+      "title": "重庆市档案馆：忠县石宝寨",
+      "url": "https://jda.cq.gov.cn/web/article/1464346346347646976/web/content_1464346346347646976.html"
+    }
+  ],
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. TWELVE eave/storey tiers of the stepped red wooden pavilion against a narrow rock backing. Nine lower historic tiers plus three smaller upper tiers added in 1956. Keep circular windows and narrowing outline, only a compact strip of supporting rock; no trees, river, embankment or bridge. Portrait 1024x1536, subject about 82% of height.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/cq_shibao-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-5c1f0830-d7b7-4b4f-a1dc-ddc18cf0b607.png",
+      "saved_file": "assets/generated/cq_shibao.png",
+      "started_at": "2026-10-01T18:51:06.625Z",
+      "received_at": "2026-10-01T18:54:42.929Z"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.184Z",
+    "sourceSha256": "6272afe8fbfbaf78d3fa5423b55cab083ef86335dd1c630c3e3c29d8ad5ab8d9"
+  }
+}

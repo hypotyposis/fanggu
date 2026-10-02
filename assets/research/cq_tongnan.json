@@ -1,0 +1,85 @@
+{
+  "id": "cq_tongnan",
+  "subject": "潼南大佛寺大佛现存饰金坐像",
+  "source_page": "https://www.thepaper.cn/newsDetail_forward_27110662",
+  "image_url": "https://imagepphcloud.thepaper.cn/pph/image/301/475/531.jpg",
+  "author": "海笛老三届千寻",
+  "license": "未标注，参考研究用途",
+  "license_url": "",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_tongnan-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. Exact seated Buddha statue from the subject photo, right palm upward at abdomen and left hand resting on knee. Preserve crown curls, robe folds, large seated legs and visible lower robe boundary; do not invent feet concealed by altar. No temple pavilion or unrelated altar furnishings. Portrait 1024x1536, subject about 82% of height.",
+  "generated_file": "assets/generated/cq_tongnan.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "潼南大佛寺摩崖造像 · 现存饰金大佛",
+    "唐代凿首 · 1151年全像完成"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "source_page": "https://www.thepaper.cn/newsDetail_forward_27110662",
+      "image_url": "https://imagepphcloud.thepaper.cn/pph/image/301/475/531.jpg",
+      "author": "海笛老三届千寻",
+      "license": "未标注，参考研究用途",
+      "date": "未知；来源页发表于2024-04-29",
+      "reference_file": "assets/references/cq_tongnan-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_tongnan-photo.jpg"
+  ],
+  "historical_sources": [
+    {
+      "title": "昆明市博物馆转载中国文物报：潼南大佛本体保护修复工程",
+      "url": "https://www.kmmuseum.com/wap/info.asp?id=522"
+    },
+    {
+      "title": "重庆市文化和旅游发展委员会：潼南大佛寺摩崖造像",
+      "url": "https://whlyw.cq.gov.cn/zjwl/yzq/cqwlzy/zqwwzy/202405/t20240507_13182696.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f99aacdd00d904eda8d3535bc39e6873a1120bd76f99a46bcd92fc40537f5238",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. Exact seated Buddha statue from the subject photo, right palm upward at abdomen and left hand resting on knee. Preserve crown curls, robe folds, large seated legs and visible lower robe boundary; do not invent feet concealed by altar. No temple pavilion or unrelated altar furnishings. Portrait 1024x1536, subject about 82% of height.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/cq_tongnan-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-42a8be39-f742-4f61-89cf-3cfba8a00357.png",
+      "saved_file": "assets/generated/cq_tongnan.png",
+      "started_at": "2026-10-01T18:58:07.193Z",
+      "received_at": "2026-10-01T18:58:58.664Z"
+    }
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-42a8be39-f742-4f61-89cf-3cfba8a00357.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.192Z",
+    "sourceSha256": "f99aacdd00d904eda8d3535bc39e6873a1120bd76f99a46bcd92fc40537f5238"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "sc_wuliang",
+  "name": "无量宝塔",
+  "subject": "南充无量宝塔现存十三层砖塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/sc_wuliang.png",
+    "assets/references/sc_wuliang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 南充无量宝塔现存十三层砖塔\nPHOTOGRAPHED MATERIAL COLORS: Cream-white grey brick walls, dark charcoal-green brick eaves, restrained orange-red trim seen in photograph. Door recesses dark.\nPortrait 1024x1536.",
+  "material_observations": [
+    "浅灰乳白塔身，灰黑砖檐，局部橙红装饰和暗门洞。"
+  ],
+  "references": [
+    {
+      "id": "sc_wuliang",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%97%A0%E9%87%8F%E5%AE%9D%E5%A1%94%E7%85%A7%E7%89%87.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/%E6%97%A0%E9%87%8F%E5%AE%9D%E5%A1%94%E7%85%A7%E7%89%87.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Nekitarc",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "12 November 2015, 13:48:54",
+      "description": "English: Boundless pagoda",
+      "reference_file": "assets/references/sc_wuliang-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/sc_wuliang.json",
+  "output": "assets/colored/sc_wuliang.png",
+  "visual_review": {
+    "status": "approved_user",
+    "note": "用户明确验收本批10处线稿及设色通过；具体对象绑定user_review中的原件、透明PNG和AVIF哈希。",
+    "inputs_viewed": true,
+    "output_viewed": true
+  },
+  "historical_sources": [
+    {
+      "title": "国务院第六批名单：无量宝塔",
+      "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+    },
+    {
+      "title": "南充市地方志办公室：南充市情",
+      "url": "https://www.scdfz.org.cn/upload/main/contentmanage/article/file/201701202147580264.pdf"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8eb51fe759d7f2e427609df64bfb051eb4e592fd131a1c774a96ea2a2cb9533c",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 南充无量宝塔现存十三层砖塔\nPHOTOGRAPHED MATERIAL COLORS: Cream-white grey brick walls, dark charcoal-green brick eaves, restrained orange-red trim seen in photograph. Door recesses dark.\nPortrait 1024x1536.",
+      "input_images": [
+        "assets/generated/sc_wuliang.png",
+        "assets/references/sc_wuliang-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-930e8d55-7641-4440-9764-78fa66ebbb65.png",
+      "saved_file": "assets/colored/sc_wuliang.png",
+      "started_at": "2026-10-01T18:58:07.193Z",
+      "received_at": "2026-10-01T19:00:50.555Z"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-930e8d55-7641-4440-9764-78fa66ebbb65.png",
+  "width": 1024,
+  "height": 1536,
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.268Z",
+    "sourceSha256": "8eb51fe759d7f2e427609df64bfb051eb4e592fd131a1c774a96ea2a2cb9533c",
+    "inputSha256": "620586adeee99d3d4641c656c5487d640153c8249804a441e9194f6b42bcee02",
+    "avifSha256": "c4b021b831210f1635eca452686cc09539f1c11021727bc00441071f43877f89"
+  }
+}

@@ -4,7 +4,7 @@
   else root.FangguProtectionData = factory();
 })(typeof globalThis === 'object' ? globalThis : this, () => ({
   "version": 1,
-  "checkedAt": "2026-09-30",
+  "checkedAt": "2026-10-02",
   "level": "全国重点文物保护单位",
   "batchMeaning": "所绘主体首次被该批正式公布或纳入合并项目；不是合并后母单位的最早批次。",
   "sources": {
@@ -79,6 +79,16 @@
       "announcedOn": "2019-10-07",
       "retrievedOn": "2026-09-17",
       "retrievedSha256": "0bbfbe9b8e054283b0632c059e0dc3a98e2c10733f8508e877cbc9618cf80d8a"
+    },
+    "batch2_leshan": {
+      "batch": 2,
+      "title": "乐山大佛第二批身份复核（国务院第六批合并名单）",
+      "publisher": "国家民族事务委员会（转载国务院通知）",
+      "url": "https://www.neac.gov.cn/seac/xxgk/200606/1073187.shtml",
+      "announcedOn": "1982-02-23",
+      "retrievedOn": "2026-10-02",
+      "retrievedSha256": "2203e7b0708f2307263a365347dc5d7477643bdade0a80d007b53716a56c505c",
+      "note": "首次公布日期为1982-02-23；本来源发布于2006-06-15，以合并项目第41项明确反证其第二批身份。原batch2链接实际返回1981年公报，未作为本条目核对证据。"
     }
   },
   "entries": {
@@ -4033,6 +4043,213 @@
           {
             "title": "福州市人民政府：大成殿修缮及七开间形制",
             "url": "https://www.fuzhou.gov.cn/zwgk/gzdt/rcyw/202512/t20251212_5256340.htm"
+          }
+        ]
+      }
+    ],
+    "sc_leshan": [
+      {
+        "batch": 2,
+        "unitName": "乐山大佛",
+        "relation": "part",
+        "scope": "乐山大佛头部至胸腹的现存摩崖造像",
+        "source": "batch2_leshan",
+        "locator": "与现有全国重点文物保护单位合并项目第41项：灵宝塔归入第二批全国重点文物保护单位乐山大佛",
+        "scopeSources": [
+          {
+            "title": "国务院第六批合并名单：灵宝塔归入第二批乐山大佛",
+            "url": "https://www.neac.gov.cn/seac/xxgk/200606/1073187.shtml"
+          }
+        ],
+        "note": "第二批首次公布身份由国务院第六批合并名单明确确认；所绘仅为大佛现存头部至胸腹，不含并入的灵宝塔。"
+      }
+    ],
+    "sc_baoen": [
+      {
+        "batch": 4,
+        "unitName": "平武报恩寺",
+        "relation": "part",
+        "scope": "平武报恩寺大雄宝殿正面",
+        "source": "batch4",
+        "locator": "PDF第25页 · 总序号156／古建筑78 · 平武报恩寺",
+        "scopeSources": [
+          {
+            "title": "国务院公布第4批全国重点文物保护单位名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+          }
+        ]
+      }
+    ],
+    "sc_wuliang": [
+      {
+        "batch": 6,
+        "unitName": "无量宝塔",
+        "relation": "unit",
+        "scope": "南充无量宝塔现存十三层砖塔",
+        "source": "batch6",
+        "locator": "国务院第六批名单 · 总序号699／Ⅲ－402 · 无量宝塔",
+        "scopeSources": [
+          {
+            "title": "国务院第六批名单：无量宝塔",
+            "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+          },
+          {
+            "title": "国务院公布第6批全国重点文物保护单位名单",
+            "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+          }
+        ]
+      }
+    ],
+    "sc_zhanghuan": [
+      {
+        "batch": 4,
+        "unitName": "张桓侯祠",
+        "relation": "part",
+        "scope": "阆中张桓侯祠敌万楼及相连前檐",
+        "source": "batch4",
+        "locator": "PDF第25页 · 总序号158／古建筑80 · 张桓侯祠",
+        "scopeSources": [
+          {
+            "title": "国务院第四批名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+          },
+          {
+            "title": "国务院公布第4批全国重点文物保护单位名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+          }
+        ]
+      }
+    ],
+    "sc_luodai": [
+      {
+        "batch": 6,
+        "unitName": "洛带会馆",
+        "relation": "part",
+        "scope": "洛带湖广会馆禹王宫现存门楼",
+        "source": "batch6",
+        "locator": "国务院第六批名单 · 总序号718／Ⅲ－421 · 洛带会馆",
+        "scopeSources": [
+          {
+            "title": "国务院公布第6批全国重点文物保护单位名单",
+            "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+          }
+        ]
+      }
+    ],
+    "sc_shenque": [
+      {
+        "batch": 1,
+        "unitName": "沈府君阙",
+        "relation": "part",
+        "scope": "渠县沈府君阙一座现存主阙的近正面",
+        "source": "batch1",
+        "locator": "PDF第10页 · 总序号53／古建筑6 · 沈府君阙",
+        "scopeSources": [
+          {
+            "title": "渠县人民政府：渠县汉阙保护规划",
+            "url": "https://www.quxian.gov.cn/uploadfile/44/Attachment/ae1c6cb233.pdf"
+          },
+          {
+            "title": "国务院第一批名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          },
+          {
+            "title": "国务院公布第1批全国重点文物保护单位名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+          }
+        ],
+        "note": "1961年以沈府君阙独立公布；2001年后并入渠县汉阙。本主体按首次公布的第一批标记。"
+      }
+    ],
+    "cq_shibao": [
+      {
+        "batch": 5,
+        "unitName": "石宝寨",
+        "relation": "part",
+        "scope": "石宝寨现存十二层寨楼及紧邻岩壁",
+        "source": "batch5",
+        "locator": "PDF第14页 · 总序号381／古建筑187 · 石宝寨",
+        "scopeSources": [
+          {
+            "title": "重庆市城市管理局：石宝寨营建及国保身份",
+            "url": "https://cgj.cq.gov.cn/rdzt/ylsmypcswm/202207/t20220708_10901996.html"
+          },
+          {
+            "title": "重庆市档案馆：忠县石宝寨",
+            "url": "https://jda.cq.gov.cn/web/article/1464346346347646976/web/content_1464346346347646976.html"
+          },
+          {
+            "title": "国务院公布第5批全国重点文物保护单位名单",
+            "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+          }
+        ]
+      }
+    ],
+    "cq_huguang": [
+      {
+        "batch": 6,
+        "unitName": "湖广会馆",
+        "relation": "part",
+        "scope": "重庆湖广会馆现存戏楼正面",
+        "source": "batch6",
+        "locator": "国务院第六批名单 · 总序号693／Ⅲ－396 · 湖广会馆",
+        "scopeSources": [
+          {
+            "title": "重庆市档案馆：重庆湖广会馆",
+            "url": "https://jda.cq.gov.cn/web/article/web/content_1461428557456216064.html"
+          },
+          {
+            "title": "重庆市地方志办公室：湖广会馆沿革",
+            "url": "https://dfz.cq.gov.cn/zqlswh/fjms_417821/202311/t20231102_12510896.html"
+          },
+          {
+            "title": "国务院公布第6批全国重点文物保护单位名单",
+            "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
+          }
+        ]
+      }
+    ],
+    "cq_diaoyu": [
+      {
+        "batch": 4,
+        "unitName": "钓鱼城遗址",
+        "relation": "part",
+        "scope": "钓鱼城护国门石砌城门、上部后修门楼与前方石阶",
+        "source": "batch4",
+        "locator": "PDF第21页 · 古遗址55 · 钓鱼城遗址（原登记四川省合川市）",
+        "scopeSources": [
+          {
+            "title": "重庆市地方志办公室：钓鱼城历史",
+            "url": "https://dfz.cq.gov.cn/zqlswh/rwby_417819/202408/t20240801_13448635.html"
+          },
+          {
+            "title": "重庆市人民政府：钓鱼城遗址",
+            "url": "https://www.cq.gov.cn/ywdt/zwhd/qxdt/202006/t20200616_8627588.html"
+          },
+          {
+            "title": "国务院公布第4批全国重点文物保护单位名单",
+            "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+          }
+        ],
+        "note": "原公布地名四川省合川市，现属重庆市合川区；上部门楼后修，国保标签对应遗址中的护国门主体。"
+      }
+    ],
+    "cq_tongnan": [
+      {
+        "batch": 6,
+        "unitName": "潼南大佛寺摩崖造像",
+        "relation": "part",
+        "scope": "潼南大佛寺大佛现存饰金坐像",
+        "source": "batch6",
+        "locator": "国务院第六批名单 · 总序号851／Ⅳ－41 · 潼南大佛寺摩崖造像",
+        "scopeSources": [
+          {
+            "title": "重庆市文化和旅游发展委员会：潼南大佛寺摩崖造像",
+            "url": "https://whlyw.cq.gov.cn/zjwl/yzq/cqwlzy/zqwwzy/202405/t20240507_13182696.html"
+          },
+          {
+            "title": "国务院公布第6批全国重点文物保护单位名单",
+            "url": "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html"
           }
         ]
       }

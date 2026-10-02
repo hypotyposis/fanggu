@@ -1,0 +1,88 @@
+{
+  "id": "sc_luodai",
+  "subject": "洛带湖广会馆禹王宫现存门楼",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%B4%9B%E5%B8%A6%E4%BC%9A%E9%A6%86%E7%85%A7%E7%89%87.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/%E6%B4%9B%E5%B8%A6%E4%BC%9A%E9%A6%86%E7%85%A7%E7%89%87.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Nekitarc",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_luodai-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. HUGUANG guild hall YUWANG GONG gate, not Guangdong hall: exactly THREE arched doorways, center taller, symmetrical wavy curved fire-wall crown, central sculpted seated figure and cloud reliefs. Draw complete central gate only; no neighboring shops. Blank plaques. Landscape 1536x1024, building about 82% width.",
+  "generated_file": "assets/generated/sc_luodai.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "洛带会馆 · 禹王宫门楼",
+    "清代初建 · 1913年重建"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "sc_luodai",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%B4%9B%E5%B8%A6%E4%BC%9A%E9%A6%86%E7%85%A7%E7%89%87.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/%E6%B4%9B%E5%B8%A6%E4%BC%9A%E9%A6%86%E7%85%A7%E7%89%87.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Nekitarc",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "12 February 2015",
+      "description": "English: Luodai Guildhall",
+      "reference_file": "assets/references/sc_luodai-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_luodai-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-70c77639-1506-4bc9-b1fb-196b432b3049.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d1a50a4c53f71bcb118e8787b010203fe8853ac8eac8e9206cb20dc3b0a5c5b1",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "historical_sources": [
+    {
+      "title": "中国旅游报：洛带会馆的移民史",
+      "url": "https://www.ctnews.com.cn/paper/content/202305/09/content_79680.html"
+    },
+    {
+      "title": "洛带会馆：引国家文物局《中国文物地图集·四川分册》的重建记载",
+      "url": "https://zh.wikipedia.org/wiki/洛带会馆"
+    }
+  ],
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. HUGUANG guild hall YUWANG GONG gate, not Guangdong hall: exactly THREE arched doorways, center taller, symmetrical wavy curved fire-wall crown, central sculpted seated figure and cloud reliefs. Draw complete central gate only; no neighboring shops. Blank plaques. Landscape 1536x1024, building about 82% width.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sc_luodai-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-70c77639-1506-4bc9-b1fb-196b432b3049.png",
+      "saved_file": "assets/generated/sc_luodai.png",
+      "started_at": "2026-10-01T18:51:06.625Z",
+      "received_at": "2026-10-01T18:53:30.638Z"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.176Z",
+    "sourceSha256": "d1a50a4c53f71bcb118e8787b010203fe8853ac8eac8e9206cb20dc3b0a5c5b1"
+  }
+}

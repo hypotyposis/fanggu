@@ -1,0 +1,75 @@
+{
+  "id": "cq_tongnan",
+  "name": "潼南大佛寺摩崖造像",
+  "subject": "潼南大佛寺大佛现存饰金坐像",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/cq_tongnan.png",
+    "assets/references/cq_tongnan-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 潼南大佛寺大佛现存饰金坐像\nPHOTOGRAPHED MATERIAL COLORS: Gold-leaf face, hands and robe with pale dusty gold-grey worn areas, blue-black hair curls, ivory eyes with dark pupils, muted reddish brown lips.\nPortrait 1024x1536.",
+  "material_observations": [
+    "面部、手部及袈裟金箔呈黄金色，衣身有浅灰金磨损和灰尘；螺发深蓝黑，眼白乳白、瞳孔黑，唇口暗红褐。"
+  ],
+  "references": [
+    {
+      "source_page": "https://www.thepaper.cn/newsDetail_forward_27110662",
+      "image_url": "https://imagepphcloud.thepaper.cn/pph/image/301/475/531.jpg",
+      "author": "海笛老三届千寻",
+      "license": "未标注，参考研究用途",
+      "date": "未知；来源页发表于2024-04-29",
+      "reference_file": "assets/references/cq_tongnan-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/cq_tongnan.json",
+  "output": "assets/colored/cq_tongnan.png",
+  "visual_review": {
+    "status": "approved_user",
+    "note": "用户明确验收本批10处线稿及设色通过；具体对象绑定user_review中的原件、透明PNG和AVIF哈希。",
+    "inputs_viewed": true,
+    "output_viewed": true
+  },
+  "historical_sources": [
+    {
+      "title": "昆明市博物馆转载中国文物报：潼南大佛本体保护修复工程",
+      "url": "https://www.kmmuseum.com/wap/info.asp?id=522"
+    },
+    {
+      "title": "重庆市文化和旅游发展委员会：潼南大佛寺摩崖造像",
+      "url": "https://whlyw.cq.gov.cn/zjwl/yzq/cqwlzy/zqwwzy/202405/t20240507_13182696.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d26223b439d9e4100eb23266176bf27a87a739c0ccf1d650bb17cd6442424cb4",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 潼南大佛寺大佛现存饰金坐像\nPHOTOGRAPHED MATERIAL COLORS: Gold-leaf face, hands and robe with pale dusty gold-grey worn areas, blue-black hair curls, ivory eyes with dark pupils, muted reddish brown lips.\nPortrait 1024x1536.",
+      "input_images": [
+        "assets/generated/cq_tongnan.png",
+        "assets/references/cq_tongnan-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-eb5f6043-2f6f-4428-95d1-700a1c01ea5b.png",
+      "saved_file": "assets/colored/cq_tongnan.png",
+      "started_at": "2026-10-01T19:05:59.495Z",
+      "received_at": "2026-10-01T19:07:44.059Z"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-eb5f6043-2f6f-4428-95d1-700a1c01ea5b.png",
+  "width": 1024,
+  "height": 1536,
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.313Z",
+    "sourceSha256": "d26223b439d9e4100eb23266176bf27a87a739c0ccf1d650bb17cd6442424cb4",
+    "inputSha256": "c95e9a0647cc9a44e0409c1f764c380f00153aec46b854a5d8d5ae82d4fe0faa",
+    "avifSha256": "df1c6b91eee7a5db0ce867c21b49b80b98ffd85b35a5fe764e97fff895f58325"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sc_zhanghuan",
+  "subject": "阆中张桓侯祠敌万楼及相连前檐",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Zfm001.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Zfm001.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Zeuce",
+  "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_zhanghuan-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. The specific DIWAN LOU in the photo: central raised pavilion over broad lower eaves, dark bracket system, three front openings defined by four columns. Preserve this two-tier facade, shallow three-quarter view. Do not draw the tomb or another temple. Landscape 1536x1024, building about 82% width.",
+  "generated_file": "assets/generated/sc_zhanghuan.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "张桓侯祠 · 敌万楼",
+    "现存明清建筑 · 年份约略"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "sc_zhanghuan",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zfm001.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Zfm001.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Zeuce",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "license": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "date": "7 October 2005 (original upload date)",
+      "description": "中文： ​张桓侯祠",
+      "reference_file": "assets/references/sc_zhanghuan-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_zhanghuan-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-c2be0012-2b0a-48e6-b1da-f813b2dfb629.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "716004ccb4874bf7582d0800de09d131ca4cd3498a2e9094b04ac5668b8c24b8",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "historical_sources": [
+    {
+      "title": "阆中名城经营投资有限公司：祠庙建筑说明（上交所披露）",
+      "url": "https://static.sse.com.cn/disclosure/bond/announcement/corporate/c/2608974791786042.pdf"
+    },
+    {
+      "title": "国务院第四批名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+    }
+  ],
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. The specific DIWAN LOU in the photo: central raised pavilion over broad lower eaves, dark bracket system, three front openings defined by four columns. Preserve this two-tier facade, shallow three-quarter view. Do not draw the tomb or another temple. Landscape 1536x1024, building about 82% width.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sc_zhanghuan-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-c2be0012-2b0a-48e6-b1da-f813b2dfb629.png",
+      "saved_file": "assets/generated/sc_zhanghuan.png",
+      "started_at": "2026-10-01T18:51:06.625Z",
+      "received_at": "2026-10-01T18:52:54.573Z"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.174Z",
+    "sourceSha256": "716004ccb4874bf7582d0800de09d131ca4cd3498a2e9094b04ac5668b8c24b8"
+  }
+}

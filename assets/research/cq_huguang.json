@@ -1,0 +1,88 @@
+{
+  "id": "cq_huguang",
+  "subject": "重庆湖广会馆现存戏楼正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E6%B9%96%E5%B9%BF%E4%BC%9A%E9%A6%86%E6%88%8F%E6%A5%BC.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/%E9%87%8D%E5%BA%86%E6%B9%96%E5%B9%BF%E4%BC%9A%E9%A6%86%E6%88%8F%E6%A5%BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "不秋齋主人",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_huguang-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. The single raised THEATRE stage in photo: central high hip-and-gable roof, lower projecting side eaves, four facade columns dividing three stage bays, richly carved raised balcony and central circular relief on backdrop. Remove connected courtyard wings and all umbrellas. Landscape 1536x1024, building about 82% width.",
+  "generated_file": "assets/generated/cq_huguang.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "重庆湖广会馆 · 戏楼正面",
+    "清代会馆 · 道光年间扩修"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "cq_huguang",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E6%B9%96%E5%B9%BF%E4%BC%9A%E9%A6%86%E6%88%8F%E6%A5%BC.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/%E9%87%8D%E5%BA%86%E6%B9%96%E5%B9%BF%E4%BC%9A%E9%A6%86%E6%88%8F%E6%A5%BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "不秋齋主人",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "31 July 2018, 17:07:29",
+      "description": "中文（中国大陆）： ​重庆湖广会馆戏楼",
+      "reference_file": "assets/references/cq_huguang-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/cq_huguang-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-fe7c3ba1-a7cf-4431-a3ca-fbbab661071f.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "49eccbbdbebc9ed4d5ea9c46fc531e6190113bf202bba02880592ab034491a23",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "historical_sources": [
+    {
+      "title": "重庆市档案馆：重庆湖广会馆",
+      "url": "https://jda.cq.gov.cn/web/article/web/content_1461428557456216064.html"
+    },
+    {
+      "title": "重庆市地方志办公室：湖广会馆沿革",
+      "url": "https://dfz.cq.gov.cn/zqlswh/fjms_417821/202311/t20231102_12510896.html"
+    }
+  ],
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. The single raised THEATRE stage in photo: central high hip-and-gable roof, lower projecting side eaves, four facade columns dividing three stage bays, richly carved raised balcony and central circular relief on backdrop. Remove connected courtyard wings and all umbrellas. Landscape 1536x1024, building about 82% width.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/cq_huguang-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-fe7c3ba1-a7cf-4431-a3ca-fbbab661071f.png",
+      "saved_file": "assets/generated/cq_huguang.png",
+      "started_at": "2026-10-01T18:51:06.625Z",
+      "received_at": "2026-10-01T18:55:23.009Z"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.186Z",
+    "sourceSha256": "49eccbbdbebc9ed4d5ea9c46fc531e6190113bf202bba02880592ab034491a23"
+  }
+}

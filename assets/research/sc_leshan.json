@@ -1,0 +1,88 @@
+{
+  "id": "sc_leshan",
+  "subject": "乐山大佛头部至胸腹的现存摩崖造像",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Leshan_Giant_Buddha_%282%29.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Leshan_Giant_Buddha_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "xiquinhosilva",
+  "license": "https://creativecommons.org/licenses/by/2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_leshan-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. BUST ONLY as photograph: head, long ears, shoulders, robe and chest terminating with a natural lower outline; do not invent legs or a full pedestal. Wide serene head with rows of tight hair curls. Preserve the actual damaged rock surfaces and a small adjoining cliff contour. Portrait 1024x1536, subject about 82% of height.",
+  "generated_file": "assets/generated/sc_leshan.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "乐山大佛 · 头部至胸腹",
+    "713年始凿 · 803年完成"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "sc_leshan",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Leshan_Giant_Buddha_%282%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Leshan_Giant_Buddha_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "xiquinhosilva",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "license": "https://creativecommons.org/licenses/by/2.0",
+      "date": "23 May 2018, 14:42:45",
+      "description": "English: Leshan Giant Buddha",
+      "reference_file": "assets/references/sc_leshan-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_leshan-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-28c9624a-7b57-41a0-8db2-893902d7a43b.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "4385fea991659a6333ca769b8c7b7c2df6df3a14866137b72574f8b38028fd0b",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "historical_sources": [
+    {
+      "title": "日本驻重庆总领事馆：乐山大佛",
+      "url": "https://www.chongqing.cn.emb-japan.go.jp/itpr_ja/11_000001_00460.html"
+    },
+    {
+      "title": "联合国教科文组织：峨眉山及乐山大佛",
+      "url": "https://whc.unesco.org/en/list/779/"
+    }
+  ],
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. BUST ONLY as photograph: head, long ears, shoulders, robe and chest terminating with a natural lower outline; do not invent legs or a full pedestal. Wide serene head with rows of tight hair curls. Preserve the actual damaged rock surfaces and a small adjoining cliff contour. Portrait 1024x1536, subject about 82% of height.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sc_leshan-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-28c9624a-7b57-41a0-8db2-893902d7a43b.png",
+      "saved_file": "assets/generated/sc_leshan.png",
+      "started_at": "2026-10-01T18:51:06.624Z",
+      "received_at": "2026-10-01T18:51:33.160Z"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.161Z",
+    "sourceSha256": "4385fea991659a6333ca769b8c7b7c2df6df3a14866137b72574f8b38028fd0b"
+  }
+}

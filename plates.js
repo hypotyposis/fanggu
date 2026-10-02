@@ -4771,6 +4771,126 @@ const PLATES = {
       "臺北府城北門 · 承恩門",
       "清光绪十年（1884）"
     ]
+  },
+  "sc_leshan": {
+    "src": "assets/plates/sc_leshan.png",
+    "alt": "乐山大佛头部至胸腹的现存摩崖造像 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "乐山大佛 · 头部至胸腹",
+      "713年始凿 · 803年完成"
+    ]
+  },
+  "sc_baoen": {
+    "src": "assets/plates/sc_baoen.png",
+    "alt": "平武报恩寺大雄宝殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "平武报恩寺 · 大雄宝殿",
+      "明正统至天顺（1439—1460）"
+    ]
+  },
+  "sc_wuliang": {
+    "src": "assets/plates/sc_wuliang.png",
+    "alt": "南充无量宝塔现存十三层砖塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "无量宝塔 · 十三层砖塔",
+      "宋代 · 建造年份未定"
+    ]
+  },
+  "sc_zhanghuan": {
+    "src": "assets/plates/sc_zhanghuan.png",
+    "alt": "阆中张桓侯祠敌万楼及相连前檐 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "张桓侯祠 · 敌万楼",
+      "现存明清建筑 · 年份约略"
+    ]
+  },
+  "sc_luodai": {
+    "src": "assets/plates/sc_luodai.png",
+    "alt": "洛带湖广会馆禹王宫现存门楼 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "洛带会馆 · 禹王宫门楼",
+      "清代初建 · 1913年重建"
+    ]
+  },
+  "sc_shenque": {
+    "src": "assets/plates/sc_shenque.png",
+    "alt": "渠县沈府君阙一座现存主阙的近正面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b79d77",
+    "tint": false,
+    "caption": [
+      "沈府君阙 · 一座现存主阙",
+      "东汉石阙 · 年份约略"
+    ]
+  },
+  "cq_shibao": {
+    "src": "assets/plates/cq_shibao.png",
+    "alt": "石宝寨现存十二层寨楼及紧邻岩壁 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "石宝寨 · 十二层寨楼",
+      "明代始建 · 清代扩修"
+    ]
+  },
+  "cq_huguang": {
+    "src": "assets/plates/cq_huguang.png",
+    "alt": "重庆湖广会馆现存戏楼正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "重庆湖广会馆 · 戏楼正面",
+      "清代会馆 · 道光年间扩修"
+    ]
+  },
+  "cq_diaoyu": {
+    "src": "assets/plates/cq_diaoyu.png",
+    "alt": "钓鱼城护国门石砌城门、上部后修门楼与前方石阶 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "钓鱼城遗址 · 护国门",
+      "1243年筑城扩建 · 门楼后修"
+    ]
+  },
+  "cq_tongnan": {
+    "src": "assets/plates/cq_tongnan.png",
+    "alt": "潼南大佛寺大佛现存饰金坐像 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "潼南大佛寺摩崖造像 · 现存饰金大佛",
+      "唐代凿首 · 1151年全像完成"
+    ]
   }
 };
 

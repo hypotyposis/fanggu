@@ -1,0 +1,88 @@
+{
+  "id": "sc_shenque",
+  "subject": "渠县沈府君阙一座现存主阙的近正面",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E6%B8%A0%E7%B8%A3%E6%BC%A2%E9%97%95%E5%8F%8A%E7%9F%B3%E7%8D%B8_06.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%E6%B8%A0%E7%B8%A3%E6%BC%A2%E9%97%95%E5%8F%8A%E7%9F%B3%E7%8D%B8_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+  "author": "Victor Segalen",
+  "license": "Public domain (PDM 1.0)",
+  "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_shenque-photo.jpg"
+  ],
+  "source_note": "按照片绘指定主体；原型图待用户审阅。",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. A SINGLE existing stone QUE from the archival photo: tall rectangular shaft, carved animal reliefs, layered imitation-timber bracket capital and damaged broad stone roof. Keep losses, do not reconstruct missing subsidiary que, do not duplicate it. Entire top and base. Portrait 1024x1536, subject about 82% of height.",
+  "generated_file": "assets/generated/sc_shenque.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "沈府君阙 · 一座现存主阙",
+    "东汉石阙 · 年份约略"
+  ],
+  "status": "needs_review",
+  "visual_review_status": "approved_user",
+  "sources": [
+    {
+      "id": "sc_shenque",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%B8%A0%E7%B8%A3%E6%BC%A2%E9%97%95%E5%8F%8A%E7%9F%B3%E7%8D%B8_06.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/%E6%B8%A0%E7%B8%A3%E6%BC%A2%E9%97%95%E5%8F%8A%E7%9F%B3%E7%8D%B8_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Victor Segalen",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "license": "Public domain (PDM 1.0)",
+      "date": "1914",
+      "description": "中文（臺灣）： ​法國人謝閣蘭1914年拍攝的渠縣漢闕及石獸",
+      "reference_file": "assets/references/sc_shenque-photo.jpg"
+    }
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_shenque-photo.jpg"
+  ],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-bddbb6e7-feed-44eb-918a-c5e80ac49dbf.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7ecbb5bff346e6fa3b2c5501ab8734381f36a446143d26fbf7cf8c71b035a540",
+    "seeds": []
+  },
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "实际参考、原件与交付已查看；用户于本次回复明确验收本批10处线稿及设色通过。"
+    ],
+    "limitations": "艺术转译，并非测绘或文保级色彩复原。"
+  },
+  "historical_sources": [
+    {
+      "title": "渠县人民政府：渠县汉阙保护规划",
+      "url": "https://www.quxian.gov.cn/uploadfile/44/Attachment/ae1c6cb233.pdf"
+    },
+    {
+      "title": "国务院第一批名单",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "generation_history": [
+    {
+      "tool": "built-in image_gen",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK line drawing on perfectly flat opaque PURE WHITE #FFFFFF. Match elegant delicate thin organic contours, restrained internal detail, generous white surfaces. No fills, shadows, grey shading, crosshatching, grain, paper texture, gradients, halos or checkerboards. Door recesses are outlines, not black blocks. Show the selected subject complete and centered with 8% margins, verticals vertical and minimal perspective; photograph fixes identity and proportions. Remove tourists, trees, foliage, vehicles, wires, signs, clutter and sky. No letters, calligraphy, labels, captions, border or watermark. A SINGLE existing stone QUE from the archival photo: tall rectangular shaft, carved animal reliefs, layered imitation-timber bracket capital and damaged broad stone roof. Keep losses, do not reconstruct missing subsidiary que, do not duplicate it. Entire top and base. Portrait 1024x1536, subject about 82% of height.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sc_shenque-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0f8ca-09fe-71e2-a34b-752ce2a4bec1/exec-bddbb6e7-feed-44eb-918a-c5e80ac49dbf.png",
+      "saved_file": "assets/generated/sc_shenque.png",
+      "started_at": "2026-10-01T18:51:06.625Z",
+      "received_at": "2026-10-01T18:54:01.510Z"
+    }
+  ],
+  "user_review": {
+    "status": "approved_user",
+    "reviewer": "user",
+    "reviewed_at": "2026-10-02T03:42:09.178Z",
+    "sourceSha256": "7ecbb5bff346e6fa3b2c5501ab8734381f36a446143d26fbf7cf8c71b035a540"
+  }
+}
