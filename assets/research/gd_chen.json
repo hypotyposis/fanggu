@@ -7,11 +7,12 @@
   "author": "Shujianyang",
   "license": "CC BY-SA 4.0",
   "reference_files": [
+    "assets/research/history/line-openings-20261003/gd_chen-original-before.png",
     "assets/references/longmen-style-black.png",
     "assets/references/gd_chen-photo.jpg"
   ],
   "source_note": "1893为陈家祠落成年；图版取中央头门现状，修护后的构件不全部视为同年原作。 实拍仅作形制与材质参考；图版由用户人眼验收。",
-  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 陈家祠中央头门立面.\nLandscape 1536x1024. Draw the entrance facade seen in the photograph, with the central higher hard-gabled tiled roof and its two flanking lower roof sections, ornate ceramic ridge, stone porch beams and columns, and central doorway. Preserve visible facade boundaries, no invented courtyard or rear halls. Remove text, people, red lanterns, plants and flagpoles.\nStructure checkpoints: 中央头门及左右相接屋面的可见立面；硬山坡屋面、人物陶塑花脊、石柱石梁，中央门洞，不复原庭院后殿。",
+  "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 陈家祠中央头门立面.\nPreserve the decorated ridge silhouettes, entire five-bay front, twin stone lions and central steps. In particular, clean the entire dark central doorway and four carved door leaves: redraw their existing borders and selective carving with thin black contours, leaving white panel interiors. Remove dark fill and dense black hatch from the lintel/recess and door surfaces. Do not remove the doors or invent another doorway. Landscape 1536x1024.",
   "generated_file": "assets/generated/gd_chen.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
@@ -39,9 +40,45 @@
       "saved_at": "2026-09-17T12:35:42.806Z",
       "received_at": "2026-09-17T12:32:57.842Z",
       "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-ebfeaa54-cd42-41f8-abb7-96d5577e1c74.png"
+    },
+    {
+      "stage": "line_edit",
+      "status": "saved",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 陈家祠中央头门立面.\nPreserve the decorated ridge silhouettes, entire five-bay front, twin stone lions and central steps. In particular, clean the entire dark central doorway and four carved door leaves: redraw their existing borders and selective carving with thin black contours, leaving white panel interiors. Remove dark fill and dense black hatch from the lintel/recess and door surfaces. Do not remove the doors or invent another doorway. Landscape 1536x1024.",
+      "submitted_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:36:42.098Z",
+      "returned_at": "2026-10-03T13:36:42.098Z",
+      "saved_at": "2026-10-03T13:37:57.471515+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-d2471c1c-1a2c-4edf-871e-82e6993b41f3.png",
+      "saved_file": "assets/generated/gd_chen.png",
+      "sourceSha256": "773b0f1ff2d186b098619c96dc48b142914aa6e6acfcbf52dc021d735ad58609",
+      "reference_files": [
+        "assets/research/history/line-openings-20261003/gd_chen-original-before.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_chen-photo.jpg"
+      ],
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/gd_chen.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/gd_chen-original-before.png",
+          "sha256": "a85fbd751b98ce7cf9accb0f0b4fc074f7f9f050b258aef8c13e3304ed7ba1c3"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/gd_chen-photo.jpg",
+          "preserved_path": "assets/references/gd_chen-photo.jpg",
+          "sha256": "071071e842be1dc3193f7f611432ec231086bc5f9c6d0353ef4b7f50a3e2baff"
+        }
+      ],
+      "edit_scope": "Remove solid door/window fill; retain contours and building geometry."
     }
   ],
-  "generated_original": "assets/generated/gd_chen.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-d2471c1c-1a2c-4edf-871e-82e6993b41f3.png",
   "dimensions": [
     1536,
     1024
@@ -50,7 +87,7 @@
   "height": 1024,
   "background_preparation": {
     "method": "white-matte-v1",
-    "sourceSha256": "a85fbd751b98ce7cf9accb0f0b4fc074f7f9f050b258aef8c13e3304ed7ba1c3",
+    "sourceSha256": "773b0f1ff2d186b098619c96dc48b142914aa6e6acfcbf52dc021d735ad58609",
     "seeds": []
   },
   "references": [
@@ -131,5 +168,28 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Chen_Clan_Ancestral_Hall_2025.06_01.jpg"
     }
   ],
-  "additional_sources": []
+  "additional_sources": [],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-d2471c1c-1a2c-4edf-871e-82e6993b41f3.png",
+  "input_images": [
+    "assets/research/history/line-openings-20261003/gd_chen-original-before.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/gd_chen-photo.jpg"
+  ],
+  "input_roles": [
+    "edit_target",
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "output_viewed": true,
+  "line_repair": {
+    "date": "2026-10-03",
+    "user_request": "修复这些问题",
+    "scope": "门窗黑块、灰色填充改为留白轮廓线",
+    "previous_record": "assets/research/history/line-openings-20261003/gd_chen-record-before.json",
+    "previous_original": "assets/research/history/line-openings-20261003/gd_chen-original-before.png",
+    "previous_delivery": "assets/research/history/line-openings-20261003/gd_chen-delivery-before.png",
+    "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-d2471c1c-1a2c-4edf-871e-82e6993b41f3.png",
+    "review_status": "pending_user",
+    "sourceSha256": "773b0f1ff2d186b098619c96dc48b142914aa6e6acfcbf52dc021d735ad58609"
+  }
 }

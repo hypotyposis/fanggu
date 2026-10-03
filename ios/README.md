@@ -6,6 +6,8 @@ SwiftUI 原生 App，最低 iOS 18。古迹目录由维护源数据中的 `sites
 
 “我的 → 外观”提供跟随系统、亮色和深色，默认跟随系统，选择会在本机保存。亮色使用暖白纸面、深褐文字与沉金强调色；图鉴、地图、年表、详情和弹出表单共用自适应色板。亮色下朝代标签与透明线稿加深以保持可读性，设色图保留原色；红底印章始终使用浅色字。外观设置独立于个人记录，不包含在访古备份中。配色入口在 `Fanggu/Models.swift`，外观选项在 `Fanggu/DesignSystem.swift`，根视图与弹出页统一应用外观，子页面不单独锁定深色。
 
+年表的年代排序、时期分组、快捷时期与聚合点由 `LibraryStore` 加载目录时通过 `TimelineCatalog` 一次计算，切换 tab、外观或到访状态时复用；聚合点的到访样式仍读取最新个人记录。“我的”列表按可见范围加载，未显示的设色图不提前解码。图鉴每次更新只计算一次筛选结果，列表和大图各自使用固定行结构，避免切换时构建整份目录的视图。旧系统的 tab 弹簧动画仅作用于导航选中态，主页面直接切换。切换耗时与年表完整性回归见 `testTabAndAppearanceSwitchingLatency` 和 `testTimelineIndexKeepsOrderingPeriodsAndAllTracks`。
+
 图鉴首页直接显示搜索、互斥的全部／心愿单／已到访／未标记状态与紧凑列表，默认心愿优先。可切换年代或名称排序、打开展示大图的卡片视图；未到访的大图卡片与详情页共用拖动打卡，也可填写到访日期与笔记。国家、地区、时代和类型筛选收在筛选页。品牌长卷放在右上角印章打开的“关于访古”页。详情顶部提供明确的到访和心愿操作，拖动条紧挨图版下方，拖动时可同时看到设色渐显。未有到访记录时，地图显示引导入口；有记录时使用紧凑的经纬网示意图，邻近地点合并为数字圆点（数字为地点数），点选后按地点列出古迹。下方到访地点列表支持按地名、省份或古迹名搜索，地图与列表操作只读取个人记录；年表可用常见时期快捷入口及“显示更多”逐段浏览。辅助字号下状态筛选改为两列，“我的”计数改为逐行展示。地图与“我的”的突出数字共用宋体数字样式；等宽字体用于次级统计、年代和坐标，手写体用于印章等装饰。图鉴、详情和个人列表共用状态名称与文字颜色，年代标签留空时不显示排序用的年份。
 
 ## 构建
@@ -25,7 +27,7 @@ xcodebuild -project Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS S
 
 `sync-artwork.sh` 检查全部目录条目所需的线稿 PNG 和设色 AVIF。图片位于被忽略的 `ios/Fanggu/Resources/Artwork/`，不会误提交原件。数据、朝代色或图版清单变更时重新运行导出和同步命令。中文标题使用随 App 打包的 Ma Shan Zheng 与 Noto Serif SC 字体，均按 SIL Open Font License 授权，许可文本在 `Fanggu/Resources/Fonts/`。
 
-App 图标以辽代木构檐下莲花状斗栱的转角结构为灵感，保留用户选定图片中的 V 形檐角、中心斗块和多层外展拱臂。正式源稿是[用户选定的黛绿米白 PNG](icon-concepts/round-7/selected-raster-source.png)，保留其柔和明暗与原始细节；`Fanggu/Assets.xcassets/AppIcon.appiconset/AppIcon.png` 是将源稿缩为 1024 × 1024 的交付图。需要重建时，在 `ios/` 目录运行 `sips -z 1024 1024 icon-concepts/round-7/selected-raster-source.png --out Fanggu/Assets.xcassets/AppIcon.appiconset/AppIcon.png`。交付图为无透明区域的 RGB PNG。早期平面矢量与配色对照见[图标设计记录](icon-concepts/round-7/README.md)。
+App 图标使用用户提供的[鸱吻图标素材包](icon-concepts/chiwen/README.md)：默认版为朱红底金色剪影，另有深色与系统着色版本。三个 1024 × 1024 PNG 和 `Contents.json` 原样接入 `Fanggu/Assets.xcassets/AppIcon.appiconset/`，圆角由 iOS 添加。完整矢量源稿、旧版各尺寸 PNG 和原始说明保存在 `icon-concepts/chiwen/`。需要恢复交付图时，在仓库根目录运行 `python3 ios/scripts/build-icon.py`；该脚本只复制提供的图标，不重绘。此前斗栱方案保留为历史设计记录。
 
 ## 迁移记录
 

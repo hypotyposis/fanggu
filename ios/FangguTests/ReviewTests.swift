@@ -2,6 +2,45 @@ import XCTest
 @testable import Fanggu
 
 final class ReviewTests: XCTestCase {
+    @MainActor func testTimelineIndexKeepsOrderingPeriodsAndAllTracks() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let timeline = store.timeline
+        let expected = store.monuments.sorted { $0.year == $1.year ? $0.id < $1.id : $0.year < $1.year }
+        XCTAssertEqual(timeline.sorted.map(\.id), expected.map(\.id))
+        XCTAssertEqual(timeline.periods.first?.0, "all")
+        XCTAssertEqual(Set(timeline.periods.dropFirst().map { $0.0 }), Set(expected.map(\.dynasty)))
+        for (key, title) in timeline.periods.dropFirst() {
+            let sites = expected.filter { $0.dynasty == key }
+            XCTAssertEqual(timeline.sitesByPeriod[key]?.map(\.id), sites.map(\.id))
+            XCTAssertEqual(title, sites.first?.dynastyName)
+        }
+        let years = timeline.periods.dropFirst().compactMap { timeline.sitesByPeriod[$0.0]?.first?.year }
+        XCTAssertEqual(years, years.sorted())
+        let counts = timeline.quickPeriods.map { timeline.sitesByPeriod[$0.0]?.count ?? 0 }
+        XCTAssertEqual(counts, Array(timeline.sitesByPeriod.values.map(\.count).sorted(by: >).prefix(4)))
+        let clustered = timeline.clusters.flatMap(\.sites).map(\.id)
+        XCTAssertEqual(Set(clustered), Set(expected.map(\.id)))
+        XCTAssertEqual(clustered.count, expected.count, "Each monument belongs to exactly one cluster")
+        XCTAssertEqual(Set(timeline.clusters.map(\.id)).count, timeline.clusters.count)
+        XCTAssertEqual(Set(timeline.clusters.map(\.lane)), Set(0..<5))
+        for cluster in timeline.clusters {
+            XCTAssertTrue(cluster.sites.allSatisfy { TimelineCatalog.laneIndex($0) == cluster.lane })
+            let mean = cluster.sites.map { TimelineCatalog.x($0.year) }.reduce(0, +) / CGFloat(cluster.sites.count)
+            XCTAssertEqual(cluster.x, mean, accuracy: 0.001)
+        }
+        let start = ProcessInfo.processInfo.systemUptime
+        for _ in 0..<10 { _ = TimelineCatalog(monuments: store.monuments) }
+        let average = (ProcessInfo.processInfo.systemUptime - start) / 10
+        print("TIMELINE_INDEX seconds=\(average)")
+        XCTAssertLessThan(average, 0.1, "Preparing timeline data must not repeat whole-catalog sorts inside comparisons")
+        let site = try XCTUnwrap(store.monuments.first)
+        XCTAssertTrue(store.setRecord(VisitRecord(status: .visited), for: site))
+        XCTAssertEqual(store.timeline.sorted.map(\.id), expected.map(\.id))
+        XCTAssertEqual(store.record(for: site).status, .visited, "Visit state remains live outside the static index")
+    }
+
     func testOldReviewDoesNotInventDimensions() throws {
         let review = try JSONDecoder().decode(Review.self, from: Data(#"{"rating":5,"text":"旧短评","updatedAt":"2026-09-17T08:00:00.000Z"}"#.utf8))
         XCTAssertEqual(review.rating, 5)

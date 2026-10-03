@@ -1,6 +1,61 @@
 import XCTest
 
 final class FangguUITests: XCTestCase {
+    func testTabAndAppearanceSwitchingLatency() {
+        let app = XCUIApplication()
+        app.launch()
+        func switchTab(_ title: String, expected: String) {
+            let start = ProcessInfo.processInfo.systemUptime
+            app.buttons[title].tap()
+            XCTAssertTrue(app.staticTexts[expected].waitForExistence(timeout: 5))
+            let elapsed = ProcessInfo.processInfo.systemUptime - start
+            print("SWITCH_LATENCY tab=\(title) seconds=\(elapsed)")
+            XCTAssertLessThan(elapsed, 5, "Tab switching must not stall the main thread")
+            if title == "年表" { capture(app, "switching-timeline") }
+        }
+        for _ in 0..<2 {
+            switchTab("地图", expected: "到访地图")
+            switchTab("年表", expected: "东汉至今 · 东亚与东南亚")
+            switchTab("我的", expected: "亲见 · 所愿 · 私人记录")
+            let appearance = app.segmentedControls["appearance-picker"]
+            for mode in ["亮色", "深色", "跟随系统"] {
+                let start = ProcessInfo.processInfo.systemUptime
+                appearance.buttons[mode].tap()
+                XCTAssertTrue(appearance.buttons[mode].isSelected)
+                let elapsed = ProcessInfo.processInfo.systemUptime - start
+                print("SWITCH_LATENCY appearance=\(mode) seconds=\(elapsed)")
+                XCTAssertLessThan(elapsed, 5, "Appearance changes must not stall the main thread")
+            }
+            switchTab("图鉴", expected: "古迹图鉴")
+        }
+    }
+
+    func testTokyoCatalogFilterAliasAndDetailReturn() {
+        let app = XCUIApplication()
+        app.launch()
+        app.buttons["筛选"].tap()
+        app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "全部国家")).firstMatch.tap()
+        app.buttons["日本"].tap()
+        app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "省份")).firstMatch.tap()
+        app.buttons["东京都"].tap()
+        app.buttons["完成"].tap()
+        let search = app.textFields["搜索古迹、地点或时代"]
+        XCTAssertTrue(search.waitForExistence(timeout: 10))
+        search.tap()
+        search.typeText("Nezu")
+        let result = app.buttons.matching(NSPredicate(format: "label CONTAINS %@ AND label CONTAINS %@", "根津神社楼门", "细读")).firstMatch
+        XCTAssertTrue(result.waitForExistence(timeout: 5))
+        result.tap()
+        XCTAssertTrue(app.buttons["标记到访"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["根津神社楼门"].exists)
+        XCTAssertTrue(app.descendants(matching: .any)["detail-artwork"].firstMatch.exists)
+        capture(app, "tokyo-nezu-detail")
+        app.buttons["返回"].tap()
+        XCTAssertEqual(search.value as? String, "Nezu")
+        XCTAssertTrue(result.exists)
+        capture(app, "tokyo-filter-return")
+    }
+
     func testAppearancePersistsAndCoversNativeScreens() {
         let app = XCUIApplication()
         app.launch()
@@ -67,6 +122,7 @@ final class FangguUITests: XCTestCase {
         capture(app, "timeline")
         app.buttons["我的"].tap()
         XCTAssertTrue(app.staticTexts["亲见 · 所愿 · 私人记录"].waitForExistence(timeout: 10))
+        for _ in 0..<40 where !app.buttons["导入备份"].isHittable { app.swipeUp(velocity: .fast) }
         XCTAssertTrue(app.buttons["导入备份"].exists)
         XCTAssertFalse(app.buttons["导入网页或 App 备份"].exists)
         capture(app, "library")

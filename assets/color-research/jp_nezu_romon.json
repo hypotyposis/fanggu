@@ -1,0 +1,63 @@
+{
+  "id": "jp_nezu_romon",
+  "name": "根津神社楼门",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_nezu_romon.png",
+    "assets/references/jp_nezu_romon-photo2.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion architectural plate. Image 1 is the EXACT LINE DRAWING TO COLOR; preserve its composition, silhouette, scale, viewpoint, all roofs, storeys, bays, openings and base. Image 2 is the actual monument photograph for material color only. Image 3 is the STYLE SAMPLE: borrow thin contours and restrained matte mineral-pigment planes, NEVER its warm palette, architecture or dark background. Color only the monument already in Image 1. Material observations: vermilion red posts and balcony, charcoal gray tiles, green niche palings, muted gold, green, blue and cream bracket ornament; dark recessed guardian niches. Elegant fine dark contours, semi-flat pigment areas, modest shading only inside solid surfaces. Keep blank plaques blank. No redesign, new structures, people, foliage, labels, lettering, border, watermark or ground shadow. Retain the full canvas aspect ratio and all margins of Image 1. Flat opaque PURE WHITE #FFFFFF background throughout the entire exterior and real open-air gaps. No paper grain on the backdrop, gradient, gray haze, vignette, glow, checkerboard or transparency. Preserve real pale materials and dark recesses; they are not background. White background will be removed locally.",
+  "material_observations": "vermilion red posts and balcony, charcoal gray tiles, green niche palings, muted gold, green, blue and cream bracket ornament; dark recessed guardian niches",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nezu-jinja_Romon_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Nezu-jinja_Romon_3.jpg/1280px-Nezu-jinja_Romon_3.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-04-05 04:02:54",
+      "reference_file": "assets/references/jp_nezu_romon-photo2.jpg",
+      "title": "File:Nezu-jinja Romon 3.jpg",
+      "sha256": "df0a4be84fee8da89154f46a4ad030b54737d65e80e70396f680678ecd0d80c2"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化遗产在线 · 根津神社楼门",
+      "url": "https://online.bunka.go.jp/heritages/detail/144228/1"
+    }
+  ],
+  "output": "assets/colored/jp_nezu_romon.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
+    "original_viewed": true
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-14259209-c32a-4e62-b631-0204a18ea9ab.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "091f84f2b041aaebd922db7bea6e2249038c5cc8fe167b4600ff3a4b857247ae",
+    "seeds": [
+      [
+        760,
+        880
+      ],
+      [
+        765,
+        695
+      ]
+    ],
+    "seed_note": "已查看生成图，仅选门洞通路或檐廊/舞台下方可见白色透空；不移除实体浅色、纸窗或殿内门窗区域。"
+  },
+  "width": 1536,
+  "height": 1024,
+  "generation_timing": {
+    "started_at": "2026-10-03T13:33:14.049Z",
+    "received_at": "2026-10-03T13:33:57.680Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-14259209-c32a-4e62-b631-0204a18ea9ab"
+}

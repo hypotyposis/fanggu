@@ -5507,6 +5507,102 @@ const PLATES = {
       "开城善竹桥 · 旧石梁桥与1780年石栏",
       "高丽 · 约略定位"
     ]
+  },
+  "jp_ueno_toshogu_karamon": {
+    "src": "assets/plates/jp_ueno_toshogu_karamon.png",
+    "alt": "唐门单体 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "上野东照宫唐门 · 唐门单体",
+      "江户时代 · 1651年"
+    ]
+  },
+  "jp_nezu_romon": {
+    "src": "assets/plates/jp_nezu_romon.png",
+    "alt": "三间一户楼门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "根津神社楼门 · 三间一户楼门",
+      "江户时代 · 1706年"
+    ]
+  },
+  "jp_asakusa_jinja": {
+    "src": "assets/plates/jp_asakusa_jinja.png",
+    "alt": "拜殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "浅草神社 · 拜殿正面",
+      "江户时代 · 1649年"
+    ]
+  },
+  "jp_zojoji_sangedatsumon": {
+    "src": "assets/plates/jp_zojoji_sangedatsumon.png",
+    "alt": "五间三户二重门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "增上寺三解脱门 · 五间三户二重门",
+      "江户时代 · 1622年"
+    ]
+  },
+  "jp_kaneiji_kiyomizu": {
+    "src": "assets/plates/jp_kaneiji_kiyomizu.png",
+    "alt": "观音堂与前方舞台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "宽永寺清水观音堂 · 观音堂与前方舞台",
+      "江户时代 · 1631年"
+    ]
+  },
+  "jp_gokokuji_hondo": {
+    "src": "assets/plates/jp_gokokuji_hondo.png",
+    "alt": "本堂 · 观音堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "护国寺本堂 · 本堂 · 观音堂",
+      "江户时代 · 1697年"
+    ]
+  },
+  "jp_ikegami_pagoda": {
+    "src": "assets/plates/jp_ikegami_pagoda.png",
+    "alt": "现存五重木塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "池上本门寺五重塔 · 现存五重木塔",
+      "江户时代 · 1608年"
+    ]
+  },
+  "jp_shofukuji_jizodo": {
+    "src": "assets/plates/jp_shofukuji_jizodo.png",
+    "alt": "单层裳阶禅宗佛殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "正福寺地藏堂 · 单层裳阶禅宗佛殿",
+      "室町时代 · 1407年"
+    ]
   }
 };
 

@@ -73,11 +73,12 @@ const henanNationalTen = JSON.parse(read('assets/research/henan-national-2026100
 const southeastAsiaTwelve = JSON.parse(read('assets/research/southeast-asia-20261002-batch.json')).ids;
 additions.push(...henanNationalTen, ...southeastAsiaTwelve);
 const koreaEight = JSON.parse(read('assets/research/korea-20261002-batch.json')).ids;
-additions.push(...koreaEight, 'xian_small');
+const tokyoEight = JSON.parse(read('assets/research/tokyo-20261003-batch.json')).added_ids;
+additions.push(...koreaEight, ...tokyoEight, 'xian_small');
 test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
   assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
   assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
-  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length + taiwanThree.length + sichuanChongqingTen.length + shanxiNationalTen.length + hebeiNationalTen.length + henanNationalTen.length + southeastAsiaTwelve.length + koreaEight.length + 1); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
+  assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length + taiwanThree.length + sichuanChongqingTen.length + shanxiNationalTen.length + hebeiNationalTen.length + henanNationalTen.length + southeastAsiaTwelve.length + koreaEight.length + tokyoEight.length + 1); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
   for (const site of SITES) {
     assert(site.image?.src, `${site.id} has no plate`);
     const bytes = fs.readFileSync(path.join(root, site.image.src));
@@ -286,7 +287,7 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
   }
   const laterIds = new Set([batch, northeastExpansion, imYunnanGuizhouExpansion, fujianShandongExpansion, shaanxiExpansion, twoGuangExpansion, hunanHubeiExpansion, gansuExpansion, shandongExpansion, hebeiExpansion, shanghaiExpansion, anhuiExpansion, henanAdditions].flatMap(expansion => expansion.ids));
-  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight, ...japanSix, ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...jiangzheTwenty, ...fujianNationalTen, ...taiwanThree, ...sichuanChongqingTen, ...shanxiNationalTen, ...hebeiNationalTen, ...henanNationalTen, ...southeastAsiaTwelve, ...koreaEight]) laterIds.add(id);
+  for (const id of ['sd_pizhi', 'sx_doudafu', 'sx_jiulongbi', 'nx_xumishan', 'nx_xixialing', 'nx_108towers', ...firstBatchNewIds, ...firstBatchFive, ...firstBatchEight, ...japanSix, ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...jiangzheTwenty, ...fujianNationalTen, ...taiwanThree, ...sichuanChongqingTen, ...shanxiNationalTen, ...hebeiNationalTen, ...henanNationalTen, ...southeastAsiaTwelve, ...koreaEight, ...tokyoEight]) laterIds.add(id);
   // The old paired xian plate was replaced; its approval stays in the historical record.
   laterIds.add('xian'); laterIds.add('xian_small');
   assertArchivedTiantai({ visualReview: 'approved_user' });

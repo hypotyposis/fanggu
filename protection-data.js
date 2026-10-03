@@ -5013,6 +5013,38 @@
     "tw_taipei_northgate": {
       "status": "not_applicable",
       "reason": "当地文化资产资料列为台湾国定古迹；本项目国保标签专指国务院公布的全国重点文物保护单位批次，两套制度不混标。"
+    },
+    "jp_ueno_toshogu_karamon": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_nezu_romon": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_asakusa_jinja": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_zojoji_sangedatsumon": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_kaneiji_kiyomizu": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_gokokuji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_ikegami_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "jp_shofukuji_jizodo": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
     }
   }
 }));

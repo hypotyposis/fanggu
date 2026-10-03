@@ -1,0 +1,68 @@
+{
+  "id": "jp_ikegami_pagoda",
+  "subject": "现存五重木塔",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Five-storied_Pagoda,_Ikegami_Honmonji_01.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Five-storied_Pagoda%2C_Ikegami_Honmonji_01.jpg/1280px-Five-storied_Pagoda%2C_Ikegami_Honmonji_01.jpg",
+  "author": "Higa4",
+  "license": "CC0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_ikegami_pagoda-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_ikegami_pagoda-photo.jpg"
+  ],
+  "source_note": "已查看实拍。所绘范围：现存五重木塔；省略周围景物及现代设施，照片中的遮挡不作为可精确测绘的证据。",
+  "prompt": "Use case: style-transfer. Asset type: single Fanggu heritage architectural fine-line plate. Image 1 is ONLY the STYLE MASTER: use its delicate, slightly organic sparse thin black ink contours, restrained detail and generous blank areas, never its subject. Image 2 is the documentary SUBJECT GEOMETRY reference. Subject: Ikegami Honmonji five-storey pagoda, Tokyo, built 1608. Draw the entire freestanding square wooden pagoda, exactly FIVE distinct roof tiers and five wooden storeys, tapering upward, balcony rails, central tall bronze sorin finial. Near-front three-quarter view as photo; keep complete tip and base. Remove cemetery, monuments, trees, poles and outer security fence. Draw fine neutral BLACK contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas. Every unmarked surface inside and outside the building remains white. No solid black fills, broad gray shading, crosshatching, pencil grain, paper texture, gradient, color, gold, glow, cast shadow, checkerboard, transparency, labels, calligraphy, text, watermark, frame or border. Preserve Japanese architectural geometry, roof counts and openings. Vertical lines remain vertical. Complete subject centered with 9 percent breathing room. Portrait 1024x1536, tower occupies about 82 percent of height.",
+  "generated_file": "assets/generated/jp_ikegami_pagoda.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "池上本门寺五重塔 · 现存五重木塔",
+    "江户时代 · 1608年"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Five-storied_Pagoda,_Ikegami_Honmonji_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Five-storied_Pagoda%2C_Ikegami_Honmonji_01.jpg/1280px-Five-storied_Pagoda%2C_Ikegami_Honmonji_01.jpg",
+      "author": "Higa4",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "date": "2022-11-26 13:47:18",
+      "reference_file": "assets/references/jp_ikegami_pagoda-photo.jpg",
+      "title": "File:Five-storied Pagoda, Ikegami Honmonji 01.jpg",
+      "sha256": "b60cf6a2d0608f8a2c53b3b740d30add9f793c387b63008a9536adea0d2d96d7"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "池上本门寺官方 · 文化遗产",
+      "url": "https://honmonji.jp/outline/reiho.html"
+    }
+  ],
+  "structure_checkpoints": "Ikegami Honmonji five-storey pagoda, Tokyo, built 1608. Draw the entire freestanding square wooden pagoda, exactly FIVE distinct roof tiers and five wooden storeys, tapering upward, balcony rails, central tall bronze sorin finial. Near-front three-quarter view as photo; keep complete tip and base. Remove cemetery, monuments, trees, poles and outer security fence.",
+  "visual_review_status": "pending_user",
+  "review": {
+    "inputs_viewed": true,
+    "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
+    "output_viewed": true
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-76093f42-7948-49c7-83cf-b3e0c0ed80fa.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "48f954e9cfbac5e0592d0d0f7c56b3d0b5ad5e8f9af6d475b9dc465007f72de3",
+    "seeds": []
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "generation_timing": {
+    "started_at": "2026-10-03T13:31:40.248Z",
+    "received_at": "2026-10-03T13:35:30.019Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-76093f42-7948-49c7-83cf-b3e0c0ed80fa"
+}

@@ -21511,6 +21511,498 @@
       },
       "qualityMode": "prototype"
     },
+    "jp_ueno_toshogu_karamon": {
+      "source": "assets/colored/jp_ueno_toshogu_karamon.png",
+      "sourceSha256": "c5120e912a3e84869ef8657e6457f9058d4bbea1dbfcc8912e212bd3b6e18db5",
+      "sourceBytes": 2218066,
+      "input": "assets/colored-transparent/jp_ueno_toshogu_karamon.png",
+      "inputSha256": "eb8279850a39f0153a3ffc473bf635a839be5563d188b360a560599b6d5ccc11",
+      "inputBytes": 2163114,
+      "src": "assets/colored-transparent-avif/jp_ueno_toshogu_karamon.avif",
+      "sha256": "185e41452d771e174745af46c4b5aa8d881e3e7cc856ae517ff24bb266fee0d4",
+      "bytes": 286019,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 864399,
+        "opaquePixels": 698649,
+        "meanError": 0.007659912109375,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 4.007,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c5120e912a3e84869ef8657e6457f9058d4bbea1dbfcc8912e212bd3b6e18db5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_nezu_romon": {
+      "source": "assets/colored/jp_nezu_romon.png",
+      "sourceSha256": "091f84f2b041aaebd922db7bea6e2249038c5cc8fe167b4600ff3a4b857247ae",
+      "sourceBytes": 2040521,
+      "input": "assets/colored-transparent/jp_nezu_romon.png",
+      "inputSha256": "cfb75d2097e98c1aa162c5fccb4c4b909cc1251b9eccf503cb6ea7db20e8aa03",
+      "inputBytes": 2002159,
+      "src": "assets/colored-transparent-avif/jp_nezu_romon.avif",
+      "sha256": "97f4d2e0c9a6ef2a07fae368de8c5de927334ca335e779ddc7388f42ecc0af9b",
+      "bytes": 251480,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 702359,
+        "opaquePixels": 856707,
+        "meanError": 0.010241826375325521,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [
+          [
+            760,
+            880
+          ],
+          [
+            765,
+            695
+          ]
+        ],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.85,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "091f84f2b041aaebd922db7bea6e2249038c5cc8fe167b4600ff3a4b857247ae",
+        "seeds": [
+          [
+            760,
+            880
+          ],
+          [
+            765,
+            695
+          ]
+        ],
+        "seed_note": "已查看生成图，仅选门洞通路或檐廊/舞台下方可见白色透空；不移除实体浅色、纸窗或殿内门窗区域。",
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_asakusa_jinja": {
+      "source": "assets/colored/jp_asakusa_jinja.png",
+      "sourceSha256": "f5a585f98450f3a02707b591e9adc0063e10abcebf278750261c901d3a6295e4",
+      "sourceBytes": 1927438,
+      "input": "assets/colored-transparent/jp_asakusa_jinja.png",
+      "inputSha256": "f66bda788bf75f698ac744a60cc27bb26b6813072177f19df531e6b1e2f58668",
+      "inputBytes": 1845565,
+      "src": "assets/colored-transparent-avif/jp_asakusa_jinja.avif",
+      "sha256": "8b2cc2f9e2ce200fb84f153cc60b52473b593a6501433546444a7e36544e0908",
+      "bytes": 231072,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 807933,
+        "opaquePixels": 754046,
+        "meanError": 0.008115768432617188,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.431,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "f5a585f98450f3a02707b591e9adc0063e10abcebf278750261c901d3a6295e4",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_zojoji_sangedatsumon": {
+      "source": "assets/colored/jp_zojoji_sangedatsumon.png",
+      "sourceSha256": "45da5ae54b52a8ef1d7fb384fa2de0ce98d0dc90c3885313e226be9015792944",
+      "sourceBytes": 2143500,
+      "input": "assets/colored-transparent/jp_zojoji_sangedatsumon.png",
+      "inputSha256": "1782e38414bd858305d068ee714755b977bd6d7488cad824405af5ece79092af",
+      "inputBytes": 2073423,
+      "src": "assets/colored-transparent-avif/jp_zojoji_sangedatsumon.avif",
+      "sha256": "6f182bd83dbce8e1c57cda1ec8482f0dc7a194680bfd10fa05fdc78ea9d078ef",
+      "bytes": 245123,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 667144,
+        "opaquePixels": 889733,
+        "meanError": 0.012149810791015625,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [
+          [
+            560,
+            820
+          ],
+          [
+            760,
+            820
+          ],
+          [
+            980,
+            820
+          ]
+        ],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.722,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "45da5ae54b52a8ef1d7fb384fa2de0ce98d0dc90c3885313e226be9015792944",
+        "seeds": [
+          [
+            560,
+            820
+          ],
+          [
+            760,
+            820
+          ],
+          [
+            980,
+            820
+          ]
+        ],
+        "seed_note": "已查看生成图，仅选门洞通路或檐廊/舞台下方可见白色透空；不移除实体浅色、纸窗或殿内门窗区域。",
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_kaneiji_kiyomizu": {
+      "source": "assets/colored/jp_kaneiji_kiyomizu.png",
+      "sourceSha256": "1f9d892324866dd9134b664beb7592caf9b67d7737aab5b77685d209593964ea",
+      "sourceBytes": 2050172,
+      "input": "assets/colored-transparent/jp_kaneiji_kiyomizu.png",
+      "inputSha256": "bad17d0d32b5a51e617c3b1d798f5b98f287696fb05762c3ba8efa5baa005b51",
+      "inputBytes": 2017227,
+      "src": "assets/colored-transparent-avif/jp_kaneiji_kiyomizu.avif",
+      "sha256": "b1822029228a6103bf8cd664217c7adbfaa04db22f78f8f869da3b29de4a1409",
+      "bytes": 239929,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 782276,
+        "opaquePixels": 771963,
+        "meanError": 0.014016469319661459,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [
+          [
+            175,
+            790
+          ],
+          [
+            390,
+            790
+          ],
+          [
+            550,
+            790
+          ],
+          [
+            760,
+            790
+          ],
+          [
+            955,
+            790
+          ],
+          [
+            1130,
+            790
+          ],
+          [
+            1320,
+            790
+          ]
+        ],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.839,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "1f9d892324866dd9134b664beb7592caf9b67d7737aab5b77685d209593964ea",
+        "seeds": [
+          [
+            175,
+            790
+          ],
+          [
+            390,
+            790
+          ],
+          [
+            550,
+            790
+          ],
+          [
+            760,
+            790
+          ],
+          [
+            955,
+            790
+          ],
+          [
+            1130,
+            790
+          ],
+          [
+            1320,
+            790
+          ]
+        ],
+        "seed_note": "已查看生成图，仅选门洞通路或檐廊/舞台下方可见白色透空；不移除实体浅色、纸窗或殿内门窗区域。",
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_gokokuji_hondo": {
+      "source": "assets/colored/jp_gokokuji_hondo.png",
+      "sourceSha256": "3ebaf79044d852685be8d99ae0cf2ffed9005bbe7495968a75c4c02fd0517de6",
+      "sourceBytes": 1976257,
+      "input": "assets/colored-transparent/jp_gokokuji_hondo.png",
+      "inputSha256": "163258b53aa29cca75e33ff249f7b947e123008c7b9227d56d762ded4b13dbca",
+      "inputBytes": 1905987,
+      "src": "assets/colored-transparent-avif/jp_gokokuji_hondo.avif",
+      "sha256": "88b73406b45698bccc1d0349589ab70ee59dcfee15fc3d0932032e094c60e02a",
+      "bytes": 213117,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 842412,
+        "opaquePixels": 717668,
+        "meanError": 0.009898503621419271,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [
+          [
+            174,
+            808
+          ],
+          [
+            290,
+            808
+          ],
+          [
+            400,
+            808
+          ],
+          [
+            1140,
+            808
+          ],
+          [
+            1250,
+            808
+          ],
+          [
+            1350,
+            808
+          ]
+        ],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.657,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "3ebaf79044d852685be8d99ae0cf2ffed9005bbe7495968a75c4c02fd0517de6",
+        "seeds": [
+          [
+            174,
+            808
+          ],
+          [
+            290,
+            808
+          ],
+          [
+            400,
+            808
+          ],
+          [
+            1140,
+            808
+          ],
+          [
+            1250,
+            808
+          ],
+          [
+            1350,
+            808
+          ]
+        ],
+        "seed_note": "已查看生成图，仅选门洞通路或檐廊/舞台下方可见白色透空；不移除实体浅色、纸窗或殿内门窗区域。",
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_ikegami_pagoda": {
+      "source": "assets/colored/jp_ikegami_pagoda.png",
+      "sourceSha256": "5e9c6389e7d6799110f217e74fdbe0bfbe9f79da13c0f79f136069860ca5c588",
+      "sourceBytes": 1915337,
+      "input": "assets/colored-transparent/jp_ikegami_pagoda.png",
+      "inputSha256": "41cb4df77069e32ec605ec17ef0db0415bec6f97d8eaf545c1d9b53f2d5c918b",
+      "inputBytes": 1852786,
+      "src": "assets/colored-transparent-avif/jp_ikegami_pagoda.avif",
+      "sha256": "55692d9c1d8113fe2769c3991708a5fba1c94d7d0c59ca0e94c56489db74e715",
+      "bytes": 215297,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1044127,
+        "opaquePixels": 512276,
+        "meanError": 0.013085047403971354,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.881,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "5e9c6389e7d6799110f217e74fdbe0bfbe9f79da13c0f79f136069860ca5c588",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
+    "jp_shofukuji_jizodo": {
+      "source": "assets/colored/jp_shofukuji_jizodo.png",
+      "sourceSha256": "8401821872a842fcc6e25d6417194cbf5cb8757beb2c57817de6d32724efe644",
+      "sourceBytes": 2204639,
+      "input": "assets/colored-transparent/jp_shofukuji_jizodo.png",
+      "inputSha256": "f423158ae1926b9f2c27aff2db109a723ac8e1e6b3aecb3d20ca2d63cf42a371",
+      "inputBytes": 2114295,
+      "src": "assets/colored-transparent-avif/jp_shofukuji_jizodo.avif",
+      "sha256": "efde5e97e36d2dc43553eb38461e75688ae78a4e3aef906c14ed5fb7041e68dc",
+      "bytes": 252594,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 675920,
+        "opaquePixels": 884685,
+        "meanError": 0.009493509928385416,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "pending_user",
+      "processingSeconds": 3.359,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "8401821872a842fcc6e25d6417194cbf5cb8757beb2c57817de6d32724efe644",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype"
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

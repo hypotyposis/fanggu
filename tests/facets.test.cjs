@@ -6,6 +6,7 @@ const vm = require('node:vm');
 const facets = require('../catalog.js');
 const { SITES, PLACES } = vm.runInNewContext(fs.readFileSync(require.resolve('../sites.js'), 'utf8') + '\n({SITES, PLACES})');
 const catalog = facets.classify(SITES, PLACES);
+const tokyoEight = JSON.parse(fs.readFileSync(require.resolve('../assets/research/tokyo-20261003-batch.json'), 'utf8')).added_ids;
 const find = filters => Array.from(catalog.filter(site => facets.matches(site, filters)), site => site.id).sort();
 const kansaiTwelve = ['jp_daigoji_tower', 'jp_sanjusangendo', 'jp_nijo_ninomaru', 'jp_yasaka_honden', 'jp_yakushiji_east', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'jp_kasuga_honden', 'jp_sumiyoshi_honden', 'jp_osaka_sengan', 'jp_jigenin_tahoto', 'jp_kanshinji_kondo'];
 const kyotoNearbyTen = ['jp_tofukuji_sanmon', 'jp_fushimi_inari_honden', 'jp_kitano_honden', 'jp_ninnaji_kondo', 'jp_hongwanji_hiunkaku', 'jp_manpukuji_daiou', 'jp_iwashimizu_honden', 'jp_ishiyamadera_tahoto', 'jp_ishiyamadera_hondo', 'jp_chionin_sanmon'];
@@ -83,12 +84,13 @@ test('aliases and geographic or type names remain searchable with facets', () =>
 });
 
 test('Japanese country, prefecture and era facets stay separate from Chinese regions and dynasties', () => {
-  const ids = ['byodoin', 'horyuji', 'jp_ginkaku', 'jp_himeji', 'jp_itsukushima', 'jp_kinkaku', 'jp_nikko_toshogu', 'jp_sensoji', 'kiyomizu', 'todaiji', 'toji', 'toshodaiji', ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine].sort();
+  const ids = ['byodoin', 'horyuji', 'jp_ginkaku', 'jp_himeji', 'jp_itsukushima', 'jp_kinkaku', 'jp_nikko_toshogu', 'jp_sensoji', 'kiyomizu', 'todaiji', 'toji', 'toshodaiji', ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...tokyoEight].sort();
   assert.deepEqual(find({ country: 'JP' }), ids);
   assert.deepEqual(find({ query: '日本' }), ids);
-  assert.deepEqual(find({ country: 'JP', dynasty: 'jp_edo' }), ['jp_chionin_mieido', 'jp_chionin_sanmon', 'jp_daitokuji_hojo', 'jp_enryakuji_komponchudo', 'jp_gosho_shishinden', 'jp_himeji', 'jp_hongwanji_goeido', 'jp_iwashimizu_honden', 'jp_kamigamo_honden', 'jp_kasuga_honden', 'jp_katsura_koshoin', 'jp_kitano_honden', 'jp_manpukuji_daiou', 'jp_nanzenji_sanmon', 'jp_nijo_ninomaru', 'jp_nikko_toshogu', 'jp_osaka_sengan', 'jp_shimogamo_honden', 'jp_sumiyoshi_honden', 'jp_yasaka_honden', 'kiyomizu', 'toji']);
+  assert.deepEqual(find({ country: 'JP', province: '东京都' }), ['jp_sensoji', ...tokyoEight].sort());
+  assert.deepEqual(find({ country: 'JP', dynasty: 'jp_edo' }), ['jp_chionin_mieido', 'jp_chionin_sanmon', 'jp_daitokuji_hojo', 'jp_enryakuji_komponchudo', 'jp_gosho_shishinden', 'jp_himeji', 'jp_hongwanji_goeido', 'jp_iwashimizu_honden', 'jp_kamigamo_honden', 'jp_kasuga_honden', 'jp_katsura_koshoin', 'jp_kitano_honden', 'jp_manpukuji_daiou', 'jp_nanzenji_sanmon', 'jp_nijo_ninomaru', 'jp_nikko_toshogu', 'jp_osaka_sengan', 'jp_shimogamo_honden', 'jp_sumiyoshi_honden', 'jp_yasaka_honden', 'kiyomizu', 'toji', 'jp_ueno_toshogu_karamon', 'jp_nezu_romon', 'jp_asakusa_jinja', 'jp_zojoji_sangedatsumon', 'jp_kaneiji_kiyomizu', 'jp_gokokuji_hondo', 'jp_ikegami_pagoda'].sort());
   assert.deepEqual(find({ country: 'JP', province: '奈良县', type: 'hall' }), ['horyuji', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'toshodaiji']);
-  assert.deepEqual(find({ country: 'JP', type: 'gate' }), ['jp_chionin_sanmon', 'jp_daitokuji_karamon', 'jp_iwashimizu_honden', 'jp_nanzenji_sanmon', 'jp_nikko_toshogu', 'jp_tofukuji_sanmon', 'todaiji']);
+  assert.deepEqual(find({ country: 'JP', type: 'gate' }), ['jp_chionin_sanmon', 'jp_daitokuji_karamon', 'jp_iwashimizu_honden', 'jp_nanzenji_sanmon', 'jp_nikko_toshogu', 'jp_tofukuji_sanmon', 'todaiji', 'jp_ueno_toshogu_karamon', 'jp_nezu_romon', 'jp_zojoji_sangedatsumon'].sort());
   assert.deepEqual(find({ country: 'JP', type: 'garden' }), ['jp_ryoanji_garden', 'jp_saihoji_garden', 'jp_tenryuji_garden']);
   assert.deepEqual(find({ country: 'JP', region: 'jp_kanto', dynasty: 'jp_showa' }), ['jp_sensoji']);
   assert.deepEqual(find({ country: 'JP', region: 'jp_chugoku', type: 'shrine' }), ['jp_itsukushima']);

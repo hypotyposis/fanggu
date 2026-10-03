@@ -1,0 +1,83 @@
+{
+  "id": "jp_kaneiji_kiyomizu",
+  "name": "宽永寺清水观音堂",
+  "status": "needs_review",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_kaneiji_kiyomizu.png",
+    "assets/references/jp_kaneiji_kiyomizu-photo2.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: Fanggu colored companion architectural plate. Image 1 is the EXACT LINE DRAWING TO COLOR; preserve its composition, silhouette, scale, viewpoint, all roofs, storeys, bays, openings and base. Image 2 is the actual monument photograph for material color only. Image 3 is the STYLE SAMPLE: borrow thin contours and restrained matte mineral-pigment planes, NEVER its warm palette, architecture or dark background. Color only the monument already in Image 1. Material observations: vermilion red hall and upper stage railing, charcoal gray roof tiles, small gold fittings, weathered gray-brown structural supports beneath the stage. Elegant fine dark contours, semi-flat pigment areas, modest shading only inside solid surfaces. Keep blank plaques blank. No redesign, new structures, people, foliage, labels, lettering, border, watermark or ground shadow. Retain the full canvas aspect ratio and all margins of Image 1. Flat opaque PURE WHITE #FFFFFF background throughout the entire exterior and real open-air gaps. No paper grain on the backdrop, gradient, gray haze, vignette, glow, checkerboard or transparency. Preserve real pale materials and dark recesses; they are not background. White background will be removed locally.",
+  "material_observations": "vermilion red hall and upper stage railing, charcoal gray roof tiles, small gold fittings, weathered gray-brown structural supports beneath the stage",
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kiyomizu_Kannondo_06.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Kiyomizu_Kannondo_06.jpg/1280px-Kiyomizu_Kannondo_06.jpg",
+      "author": "tak1701d",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "Taken on 9 February 2020",
+      "reference_file": "assets/references/jp_kaneiji_kiyomizu-photo2.jpg",
+      "title": "File:Kiyomizu Kannondo 06.jpg",
+      "sha256": "422e15bd43cf32a38f7fd31e4d063439a3089da74641e81319b9167e050bd0d2"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "清水观音堂官方 · 建立与移筑",
+      "url": "https://kiyomizu.kaneiji.jp/about"
+    }
+  ],
+  "output": "assets/colored/jp_kaneiji_kiyomizu.png",
+  "visual_review": {
+    "status": "pending_user",
+    "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
+    "original_viewed": true
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-3752acda-09e4-4718-957e-a117c46ff108.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1f9d892324866dd9134b664beb7592caf9b67d7737aab5b77685d209593964ea",
+    "seeds": [
+      [
+        175,
+        790
+      ],
+      [
+        390,
+        790
+      ],
+      [
+        550,
+        790
+      ],
+      [
+        760,
+        790
+      ],
+      [
+        955,
+        790
+      ],
+      [
+        1130,
+        790
+      ],
+      [
+        1320,
+        790
+      ]
+    ],
+    "seed_note": "已查看生成图，仅选门洞通路或檐廊/舞台下方可见白色透空；不移除实体浅色、纸窗或殿内门窗区域。"
+  },
+  "width": 1536,
+  "height": 1024,
+  "generation_timing": {
+    "started_at": "2026-10-03T13:34:52.653Z",
+    "received_at": "2026-10-03T13:35:17.187Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-3752acda-09e4-4718-957e-a117c46ff108"
+}

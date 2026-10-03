@@ -7,18 +7,20 @@
   "author": "そらみみ (Soramimi)",
   "license": "CC BY-SA 4.0",
   "reference_files": [
-    "assets/references/jp_sensoji-photo.jpg",
-    "assets/references/longmen-style-black.png"
+    "assets/research/history/line-openings-20261003/jp_sensoji-original-before.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sensoji-photo.jpg"
   ],
   "input_images": [
-    "assets/references/jp_sensoji-photo.jpg",
-    "assets/references/longmen-style-black.png"
+    "assets/research/history/line-openings-20261003/jp_sensoji-original-before.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sensoji-photo.jpg"
   ],
   "source_note": "1958年重建的本堂，去除照片中的游客与两侧摊铺，不画雷门。",
-  "prompt": "Use case: scientific-educational. Asset type: Fanggu heritage monument line plate. Image 1 is a documentary photograph of the ACTUAL current Senso-ji Hondo (Kannon Hall) in Asakusa, Tokyo; use its geometry. Image 2 is ONLY the project's fine black ink line style sample. Draw ONLY the complete present main hall rebuilt in 1958, near-front perspective: extremely broad hipped-and-gabled tiled roof with upturned corners, deep eaves, lower open front colonnade and central dark entry. Keep identifiable Japanese temple proportions. Remove all visitors, stalls, signs, side buildings, incense burner and sky. Do NOT draw Kaminarimon or the five-story pagoda. Sparse neutral BLACK contour drawing, no heavy filled areas. Landscape 4:3 framing, whole roof and base uncut with white breathing room. Perfectly flat opaque PURE WHITE #FFFFFF background inside and outside gaps. No shadow, gradient, paper texture, gray wash, glow, checkerboard, transparency, text, labels, border or watermark.",
+  "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 浅草寺现存本堂正面.\nPreserve the huge single roof mass, eave brackets, front colonnade, three central door openings, side openings, railings and stairs. Convert all deep grey gradients within the entrances into white interiors with thin existing frame and door-leaf lines. This is Senso-ji Hondo, not Kaminarimon. Preserve target 4:3 aspect ratio and framing, around 1448x1086.",
   "generated_file": "assets/generated/jp_sensoji.png",
   "generation_tool": "built-in image_gen",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0d788-5ecc-7591-9fab-274afcc0b5c4/exec-ecb37ba1-e81b-4b8b-9145-2dc68bb77b49.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-5c013bbb-8a33-4b81-90f3-8f3535c229a0.png",
   "dimensions": [
     1448,
     1086
@@ -29,7 +31,7 @@
   ],
   "background_preparation": {
     "method": "white-matte-v1",
-    "sourceSha256": "4be3608450dabce7a5dfbe7ff690439dcc850f96f8f2668caf4b0c43a0054176",
+    "sourceSha256": "04c67611e218cd4b7c3109fc3a2adaf152fde374dd9465741087a95287c62554",
     "seeds": []
   },
   "sources": [
@@ -57,5 +59,64 @@
     ],
     "limitations": "1958年重建的本堂，去除照片中的游客与两侧摊铺，不画雷门。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "pending_user",
+  "generation_history": [
+    {
+      "stage": "line_edit",
+      "status": "saved",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 浅草寺现存本堂正面.\nPreserve the huge single roof mass, eave brackets, front colonnade, three central door openings, side openings, railings and stairs. Convert all deep grey gradients within the entrances into white interiors with thin existing frame and door-leaf lines. This is Senso-ji Hondo, not Kaminarimon. Preserve target 4:3 aspect ratio and framing, around 1448x1086.",
+      "submitted_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:35:09.448Z",
+      "returned_at": "2026-10-03T13:35:09.448Z",
+      "saved_at": "2026-10-03T13:37:57.471515+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-5c013bbb-8a33-4b81-90f3-8f3535c229a0.png",
+      "saved_file": "assets/generated/jp_sensoji.png",
+      "sourceSha256": "04c67611e218cd4b7c3109fc3a2adaf152fde374dd9465741087a95287c62554",
+      "reference_files": [
+        "assets/research/history/line-openings-20261003/jp_sensoji-original-before.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_sensoji-photo.jpg"
+      ],
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/jp_sensoji.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/jp_sensoji-original-before.png",
+          "sha256": "4be3608450dabce7a5dfbe7ff690439dcc850f96f8f2668caf4b0c43a0054176"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/jp_sensoji-photo.jpg",
+          "preserved_path": "assets/references/jp_sensoji-photo.jpg",
+          "sha256": "bd7f4a15a557aa8a10ac6c94d6da6d0cb6f1c99df503253caf04a4c470d00f73"
+        }
+      ],
+      "edit_scope": "Remove solid door/window fill; retain contours and building geometry."
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-5c013bbb-8a33-4b81-90f3-8f3535c229a0.png",
+  "input_roles": [
+    "edit_target",
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "inputs_viewed": true,
+  "output_viewed": true,
+  "width": 1448,
+  "height": 1086,
+  "line_repair": {
+    "date": "2026-10-03",
+    "user_request": "修复这些问题",
+    "scope": "门窗黑块、灰色填充改为留白轮廓线",
+    "previous_record": "assets/research/history/line-openings-20261003/jp_sensoji-record-before.json",
+    "previous_original": "assets/research/history/line-openings-20261003/jp_sensoji-original-before.png",
+    "previous_delivery": "assets/research/history/line-openings-20261003/jp_sensoji-delivery-before.png",
+    "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-5c013bbb-8a33-4b81-90f3-8f3535c229a0.png",
+    "review_status": "pending_user",
+    "sourceSha256": "04c67611e218cd4b7c3109fc3a2adaf152fde374dd9465741087a95287c62554"
+  }
 }

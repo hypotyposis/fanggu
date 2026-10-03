@@ -28,7 +28,7 @@
     "室町时代 · 1425年"
   ],
   "background_preparation": {
-    "method": "white-matte-v1",
+    "method": "adaptive-ink-v1",
     "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
     "seeds": []
   },
@@ -58,13 +58,27 @@
     ],
     "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
   },
-  "visual_review_status": "approved_user",
-  "user_review": {
-    "status": "approved_user",
-    "reviewer": "user",
-    "reviewed_at": "2026-09-25T17:07:12.467Z",
-    "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
-    "statement": "验收没问题",
-    "lineSha256": "bf7ec623ab60f7b5c3746db4921b73459ffe630931af56e27975e1c321176b80"
+  "visual_review_status": "pending_user",
+  "user_review_history": [
+    {
+      "status": "approved_user",
+      "reviewer": "user",
+      "reviewed_at": "2026-09-25T17:07:12.467Z",
+      "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
+      "statement": "验收没问题",
+      "lineSha256": "bf7ec623ab60f7b5c3746db4921b73459ffe630931af56e27975e1c321176b80"
+    }
+  ],
+  "line_repair": {
+    "date": "2026-10-03",
+    "user_report": "这俩线稿图有问题：飞云阁和东福寺三门显示为实心剪影。",
+    "reason": "原稿虽有透明背景，但建筑内部包含灰白填充；按原 alpha 着时代色将填充变为实心区域。改用已有 adaptive-ink-v1 从局部明度差提取笔画，保留原稿、来源和实际提示词。",
+    "previous_preparation": {
+      "method": "white-matte-v1",
+      "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
+      "seeds": []
+    },
+    "previous_delivery": "assets/research/history/line-repairs-20261003/jp_tofukuji_sanmon-before.png",
+    "review_status": "pending_user"
   }
 }

@@ -1,0 +1,68 @@
+{
+  "id": "jp_nezu_romon",
+  "subject": "三间一户楼门",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Nezu-jinja_Romon_3.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Nezu-jinja_Romon_3.jpg/1280px-Nezu-jinja_Romon_3.jpg",
+  "author": "Zairon",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_nezu_romon-photo2.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_nezu_romon-photo2.jpg"
+  ],
+  "source_note": "已查看实拍。所绘范围：三间一户楼门；省略周围景物及现代设施，照片中的遮挡不作为可精确测绘的证据。",
+  "prompt": "Use case: style-transfer. Asset type: single Fanggu heritage architectural fine-line plate. Image 1 is ONLY the STYLE MASTER: use its delicate, slightly organic sparse thin black ink contours, restrained detail and generous blank areas, never its subject. Image 2 is the documentary SUBJECT GEOMETRY reference. Subject: Nezu Shrine Romon in Tokyo, built 1706. FRONT VIEW of the full two-storey gate with ONLY ONE main tiled roof, NO lower tier roof. Three bays across ground floor: central open passage and two enclosed guardian niches; upper balcony railing and painted brackets. Match the photo exactly. Draw fine neutral BLACK contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas. Every unmarked surface inside and outside the building remains white. No solid black fills, broad gray shading, crosshatching, pencil grain, paper texture, gradient, color, gold, glow, cast shadow, checkerboard, transparency, labels, calligraphy, text, watermark, frame or border. Preserve Japanese architectural geometry, roof counts and openings. Vertical lines remain vertical. Complete subject centered with 9 percent breathing room. Landscape 1536x1024, whole structure occupies about 82 percent of width.",
+  "generated_file": "assets/generated/jp_nezu_romon.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "根津神社楼门 · 三间一户楼门",
+    "江户时代 · 1706年"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nezu-jinja_Romon_3.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Nezu-jinja_Romon_3.jpg/1280px-Nezu-jinja_Romon_3.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-04-05 04:02:54",
+      "reference_file": "assets/references/jp_nezu_romon-photo2.jpg",
+      "title": "File:Nezu-jinja Romon 3.jpg",
+      "sha256": "df0a4be84fee8da89154f46a4ad030b54737d65e80e70396f680678ecd0d80c2"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化遗产在线 · 根津神社楼门",
+      "url": "https://online.bunka.go.jp/heritages/detail/144228/1"
+    }
+  ],
+  "structure_checkpoints": "Nezu Shrine Romon in Tokyo, built 1706. FRONT VIEW of the full two-storey gate with ONLY ONE main tiled roof, NO lower tier roof. Three bays across ground floor: central open passage and two enclosed guardian niches; upper balcony railing and painted brackets. Match the photo exactly.",
+  "visual_review_status": "pending_user",
+  "review": {
+    "inputs_viewed": true,
+    "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
+    "output_viewed": true
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-2c5a81b5-98d0-4c37-a30c-30ecfccb7d96.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "90d948a1f5736259ef72974e262167ae2632586dfc194f79d0d516bed0be1b34",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "generation_timing": {
+    "started_at": "2026-10-03T13:31:40.248Z",
+    "received_at": "2026-10-03T13:32:39.596Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-2c5a81b5-98d0-4c37-a30c-30ecfccb7d96"
+}

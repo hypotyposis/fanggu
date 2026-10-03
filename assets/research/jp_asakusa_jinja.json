@@ -1,0 +1,68 @@
+{
+  "id": "jp_asakusa_jinja",
+  "subject": "拜殿正面",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Asakusa_shrine_2012.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Asakusa_shrine_2012.JPG/1280px-Asakusa_shrine_2012.JPG",
+  "author": "Kakidai",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_asakusa_jinja-photo2.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_asakusa_jinja-photo2.jpg"
+  ],
+  "source_note": "已查看实拍。所绘范围：拜殿正面；省略周围景物及现代设施，照片中的遮挡不作为可精确测绘的证据。",
+  "prompt": "Use case: style-transfer. Asset type: single Fanggu heritage architectural fine-line plate. Image 1 is ONLY the STYLE MASTER: use its delicate, slightly organic sparse thin black ink contours, restrained detail and generous blank areas, never its subject. Image 2 is the documentary SUBJECT GEOMETRY reference. Subject: Asakusa Jinja Haiden in Tokyo, built 1649. Draw ONLY the low broad central worship hall in the photo, NOT the taller modern building on the right or small shrine on the left. Straight front view, a single tiled gabled roof, five facade bays, three central door bays flanked by lattice windows, six front posts, restrained decorative frieze and shallow stone steps. Omit lions, noticeboards, people and movable offering boxes. Draw fine neutral BLACK contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas. Every unmarked surface inside and outside the building remains white. No solid black fills, broad gray shading, crosshatching, pencil grain, paper texture, gradient, color, gold, glow, cast shadow, checkerboard, transparency, labels, calligraphy, text, watermark, frame or border. Preserve Japanese architectural geometry, roof counts and openings. Vertical lines remain vertical. Complete subject centered with 9 percent breathing room. Landscape 1536x1024, whole structure occupies about 82 percent of width.",
+  "generated_file": "assets/generated/jp_asakusa_jinja.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "浅草神社 · 拜殿正面",
+    "江户时代 · 1649年"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Asakusa_shrine_2012.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Asakusa_shrine_2012.JPG/1280px-Asakusa_shrine_2012.JPG",
+      "author": "Kakidai",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2012-03-12",
+      "reference_file": "assets/references/jp_asakusa_jinja-photo2.jpg",
+      "title": "File:Asakusa shrine 2012.JPG",
+      "sha256": "1b782142100eedcc8e7d1d1f88e6d01a26b3e2db1cde9e0730d5b860eeb71f3b"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "浅草神社官方 · 由绪与社殿",
+      "url": "https://asakusajinja.jp/asakusajinja/about/"
+    }
+  ],
+  "structure_checkpoints": "Asakusa Jinja Haiden in Tokyo, built 1649. Draw ONLY the low broad central worship hall in the photo, NOT the taller modern building on the right or small shrine on the left. Straight front view, a single tiled gabled roof, five facade bays, three central door bays flanked by lattice windows, six front posts, restrained decorative frieze and shallow stone steps. Omit lions, noticeboards, people and movable offering boxes.",
+  "visual_review_status": "pending_user",
+  "review": {
+    "inputs_viewed": true,
+    "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
+    "output_viewed": true
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-5f4cdaf7-1fbd-47d6-8006-44a450797c6e.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "22d85b14d4061a510520ae3ae180b7f8e43fa944ee375b5cd9df5141dd6d51d6",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "generation_timing": {
+    "started_at": "2026-10-03T13:31:40.248Z",
+    "received_at": "2026-10-03T13:33:12.571Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-5f4cdaf7-1fbd-47d6-8006-44a450797c6e"
+}

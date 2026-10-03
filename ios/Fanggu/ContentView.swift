@@ -80,6 +80,7 @@ private struct FrostedTabBar: View {
     @Binding var selection: Int
     @Namespace private var selectionAnimation
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.colorScheme) private var colorScheme
 
@@ -95,7 +96,7 @@ private struct FrostedTabBar: View {
             ForEach(items.indices, id: \.self) { index in
                 Button {
                     guard selection != index else { return }
-                    withAnimation(.spring(response: 0.34, dampingFraction: 0.82)) { selection = index }
+                    selection = index
                     Haptics.selection()
                 } label: {
                     VStack(spacing: 3) {
@@ -126,6 +127,7 @@ private struct FrostedTabBar: View {
                 .accessibilityAddTraits(selection == index ? .isSelected : [])
             }
         }
+        .animation(reduceMotion ? nil : .spring(response: 0.34, dampingFraction: 0.82), value: selection)
         .padding(6)
         .background {
             let shape = RoundedRectangle(cornerRadius: 28, style: .continuous)
@@ -234,6 +236,7 @@ struct ExploreView: View {
     }
 
     var body: some View {
+        let results = results
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
                 HStack(alignment: .top, spacing: 12) {
@@ -277,10 +280,12 @@ struct ExploreView: View {
                     }
                     .frame(maxWidth: .infinity, minHeight: 180, alignment: .leading)
                 } else {
-                    ForEach(results) { site in
-                        if showCards {
+                    if showCards {
+                        ForEach(results) { site in
                             MonumentCard(site: site).padding(.bottom, 18)
-                        } else {
+                        }
+                    } else {
+                        ForEach(results) { site in
                             NavigationLink(value: site) { TimelineSiteRow(site: site) }
                                 .buttonStyle(.plain)
                                 .padding(.bottom, 10)
@@ -523,8 +528,8 @@ struct ArtworkView: View {
     }
 
     var body: some View {
-        let color = Self.artwork(site.colorImage)
         let progress = min(1, max(0, reveal))
+        let color = visited || progress > 0 ? Self.artwork(site.colorImage) : nil
         let lineOpacity = color == nil ? 1 : (visited ? 0 : progress <= 0.8 ? 1 : (1 - progress) / 0.2)
         return ZStack {
             Palette.ink2

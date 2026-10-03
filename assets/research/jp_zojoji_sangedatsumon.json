@@ -1,0 +1,72 @@
+{
+  "id": "jp_zojoji_sangedatsumon",
+  "subject": "五间三户二重门",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Zojo-ji_Sangedatsu-mon_1.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Zojo-ji_Sangedatsu-mon_1.jpg/1280px-Zojo-ji_Sangedatsu-mon_1.jpg",
+  "author": "Zairon",
+  "license": "CC BY-SA 4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_zojoji_sangedatsumon-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_zojoji_sangedatsumon-photo.jpg"
+  ],
+  "source_note": "已查看实拍。所绘范围：五间三户二重门；省略周围景物及现代设施，照片中的遮挡不作为可精确测绘的证据。",
+  "prompt": "Use case: style-transfer. Asset type: single Fanggu heritage architectural fine-line plate. Image 1 is ONLY the STYLE MASTER: use its delicate, slightly organic sparse thin black ink contours, restrained detail and generous blank areas, never its subject. Image 2 is the documentary SUBJECT GEOMETRY reference. Subject: Zojoji Sangedatsumon in Tokyo, built 1622. Complete front facade: TWO roof tiers, two-storey broad red timber gate, FIVE structural bays across, THREE open central ground passages with closed end bays, continuous upper balcony, gray tiled hipped-and-gabled main roof. Complete both eave tips even though photo is close framed. Remove temporary white event curtain and banners, signs, cars, visitors, side gates and Tokyo Tower. Draw fine neutral BLACK contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas. Every unmarked surface inside and outside the building remains white. No solid black fills, broad gray shading, crosshatching, pencil grain, paper texture, gradient, color, gold, glow, cast shadow, checkerboard, transparency, labels, calligraphy, text, watermark, frame or border. Preserve Japanese architectural geometry, roof counts and openings. Vertical lines remain vertical. Complete subject centered with 9 percent breathing room. Landscape 1536x1024, whole structure occupies about 82 percent of width.",
+  "generated_file": "assets/generated/jp_zojoji_sangedatsumon.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "增上寺三解脱门 · 五间三户二重门",
+    "江户时代 · 1622年"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zojo-ji_Sangedatsu-mon_1.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Zojo-ji_Sangedatsu-mon_1.jpg/1280px-Zojo-ji_Sangedatsu-mon_1.jpg",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2018-04-04 08:27:15",
+      "reference_file": "assets/references/jp_zojoji_sangedatsumon-photo.jpg",
+      "title": "File:Zojo-ji Sangedatsu-mon 1.jpg",
+      "sha256": "97e5567168b6ac816e721ed391e13ef2b462d9c249e1071e2a946e34a0d56b9b"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "增上寺官方 · Sangedatsumon",
+      "url": "https://www.zojoji.or.jp/en/index.html"
+    },
+    {
+      "title": "增上寺 · 三解脱门保存修理公告",
+      "url": "https://www.zojoji.or.jp/news/1262.html"
+    }
+  ],
+  "structure_checkpoints": "Zojoji Sangedatsumon in Tokyo, built 1622. Complete front facade: TWO roof tiers, two-storey broad red timber gate, FIVE structural bays across, THREE open central ground passages with closed end bays, continuous upper balcony, gray tiled hipped-and-gabled main roof. Complete both eave tips even though photo is close framed. Remove temporary white event curtain and banners, signs, cars, visitors, side gates and Tokyo Tower.",
+  "visual_review_status": "pending_user",
+  "review": {
+    "inputs_viewed": true,
+    "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
+    "output_viewed": true
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-a1e84880-7dc6-4310-8e95-36f765b35054.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f5fa24b2a42cd4dd568d0dad63b337a4c3dfaca7889f4b3a4d8ff197be3b5418",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "generation_timing": {
+    "started_at": "2026-10-03T13:31:40.248Z",
+    "received_at": "2026-10-03T13:33:48.294Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-a1e84880-7dc6-4310-8e95-36f765b35054"
+}

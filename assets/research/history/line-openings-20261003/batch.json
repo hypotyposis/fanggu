@@ -1,0 +1,235 @@
+{
+  "started_at": "2026-10-03T13:32:57.982Z",
+  "scope": "line door/window fill cleanup only",
+  "requested_count": 4,
+  "concurrency_target": 8,
+  "ready_count": 4,
+  "items": [
+    {
+      "id": "im_dazhao",
+      "photo": "assets/references/im_dazhao-hall-photo.jpg",
+      "subject": "呼和浩特大召寺大雄宝殿",
+      "detail": "Preserve the two broad roof levels, upper balcony and central steps. Specifically hollow out the two black upper balcony openings and all black lower door/passages behind the columns. Keep the currently drawn window lattice. Landscape 1536x1024.",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 呼和浩特大召寺大雄宝殿.\nPreserve the two broad roof levels, upper balcony and central steps. Specifically hollow out the two black upper balcony openings and all black lower door/passages behind the columns. Keep the currently drawn window lattice. Landscape 1536x1024.",
+      "refs": [
+        "assets/generated/im_dazhao.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/im_dazhao-hall-photo.jpg"
+      ],
+      "started_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:34:34.469Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-45d50310-4203-41ce-bebf-065ba1165d53.png",
+      "saved_file": "assets/research/history/line-openings-20261003/im_dazhao-edited.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "c35a7b9b8c1405e893197a12aac3065a939be0e071e8279f2ade421444476779",
+      "state": "integrated_pending_user",
+      "generation_count": 1,
+      "rework_count": 0,
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/im_dazhao.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/im_dazhao-original-before.png",
+          "sha256": "2124c8337842f57f89fc87452562ea18e7691160c10ceb621ee995329ae56460"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/im_dazhao-hall-photo.jpg",
+          "preserved_path": "assets/references/im_dazhao-hall-photo.jpg",
+          "sha256": "7b9dae05161318eaba881166b0622db630ed6752eab825c19ac6a4aa96d7b6b0"
+        }
+      ]
+    },
+    {
+      "id": "gd_ruishi",
+      "photo": "assets/references/gd_ruishi-photo.jpg",
+      "subject": "开平锦江里瑞石楼完整楼体",
+      "detail": "Preserve the complete tall diaolou in the target, its mild three-quarter upward view, five main residential floors and upper arched colonnade, corner domed pavilions and lookout. Hollow out every black window rectangle, including the upper turrets, and turn the dark open shutters into outlined white shutters. Preserve the exact window count, spacing and ornamental surrounds. Portrait 1024x1536.",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 开平锦江里瑞石楼完整楼体.\nPreserve the complete tall diaolou in the target, its mild three-quarter upward view, five main residential floors and upper arched colonnade, corner domed pavilions and lookout. Hollow out every black window rectangle, including the upper turrets, and turn the dark open shutters into outlined white shutters. Preserve the exact window count, spacing and ornamental surrounds. Portrait 1024x1536.",
+      "refs": [
+        "assets/generated/gd_ruishi.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_ruishi-photo.jpg"
+      ],
+      "started_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:33:46.355Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-ad69d536-1e59-40e0-9834-825ef8fab6fa.png",
+      "saved_file": "assets/research/history/line-openings-20261003/gd_ruishi-edited.png",
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "sourceSha256": "654c3fcdaf2350643141f1079de96dcf75d4508322910c67f48d79243ebcf34c",
+      "state": "integrated_pending_user",
+      "generation_count": 1,
+      "rework_count": 0,
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/gd_ruishi.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/gd_ruishi-original-before.png",
+          "sha256": "87da6ea5537a6f0f3f57245595fb179cd0f5e19e173140439422b73a20fab5c6"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/gd_ruishi-photo.jpg",
+          "preserved_path": "assets/references/gd_ruishi-photo.jpg",
+          "sha256": "f95f7ed900a63e41bf673466c74b8fb21e51a1044be709441dbabf3c61eb1262"
+        }
+      ]
+    },
+    {
+      "id": "jp_sensoji",
+      "photo": "assets/references/jp_sensoji-photo.jpg",
+      "subject": "浅草寺现存本堂正面",
+      "detail": "Preserve the huge single roof mass, eave brackets, front colonnade, three central door openings, side openings, railings and stairs. Convert all deep grey gradients within the entrances into white interiors with thin existing frame and door-leaf lines. This is Senso-ji Hondo, not Kaminarimon. Preserve target 4:3 aspect ratio and framing, around 1448x1086.",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 浅草寺现存本堂正面.\nPreserve the huge single roof mass, eave brackets, front colonnade, three central door openings, side openings, railings and stairs. Convert all deep grey gradients within the entrances into white interiors with thin existing frame and door-leaf lines. This is Senso-ji Hondo, not Kaminarimon. Preserve target 4:3 aspect ratio and framing, around 1448x1086.",
+      "refs": [
+        "assets/generated/jp_sensoji.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_sensoji-photo.jpg"
+      ],
+      "started_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:35:09.448Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-5c013bbb-8a33-4b81-90f3-8f3535c229a0.png",
+      "saved_file": "assets/research/history/line-openings-20261003/jp_sensoji-edited.png",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sourceSha256": "04c67611e218cd4b7c3109fc3a2adaf152fde374dd9465741087a95287c62554",
+      "state": "integrated_pending_user",
+      "generation_count": 1,
+      "rework_count": 0,
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/jp_sensoji.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/jp_sensoji-original-before.png",
+          "sha256": "4be3608450dabce7a5dfbe7ff690439dcc850f96f8f2668caf4b0c43a0054176"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/jp_sensoji-photo.jpg",
+          "preserved_path": "assets/references/jp_sensoji-photo.jpg",
+          "sha256": "bd7f4a15a557aa8a10ac6c94d6da6d0cb6f1c99df503253caf04a4c470d00f73"
+        }
+      ]
+    },
+    {
+      "id": "gd_chen",
+      "photo": "assets/references/gd_chen-photo.jpg",
+      "subject": "陈家祠中央头门立面",
+      "detail": "Preserve the decorated ridge silhouettes, entire five-bay front, twin stone lions and central steps. In particular, clean the entire dark central doorway and four carved door leaves: redraw their existing borders and selective carving with thin black contours, leaving white panel interiors. Remove dark fill and dense black hatch from the lintel/recess and door surfaces. Do not remove the doors or invent another doorway. Landscape 1536x1024.",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 陈家祠中央头门立面.\nPreserve the decorated ridge silhouettes, entire five-bay front, twin stone lions and central steps. In particular, clean the entire dark central doorway and four carved door leaves: redraw their existing borders and selective carving with thin black contours, leaving white panel interiors. Remove dark fill and dense black hatch from the lintel/recess and door surfaces. Do not remove the doors or invent another doorway. Landscape 1536x1024.",
+      "refs": [
+        "assets/generated/gd_chen.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_chen-photo.jpg"
+      ],
+      "started_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:36:42.098Z",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-d2471c1c-1a2c-4edf-871e-82e6993b41f3.png",
+      "saved_file": "assets/research/history/line-openings-20261003/gd_chen-edited.png",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceSha256": "773b0f1ff2d186b098619c96dc48b142914aa6e6acfcbf52dc021d735ad58609",
+      "state": "integrated_pending_user",
+      "generation_count": 1,
+      "rework_count": 0,
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/gd_chen.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/gd_chen-original-before.png",
+          "sha256": "a85fbd751b98ce7cf9accb0f0b4fc074f7f9f050b258aef8c13e3304ed7ba1c3"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/gd_chen-photo.jpg",
+          "preserved_path": "assets/references/gd_chen-photo.jpg",
+          "sha256": "071071e842be1dc3193f7f611432ec231086bc5f9c6d0353ef4b7f50a3e2baff"
+        }
+      ]
+    }
+  ],
+  "actual_generation_calls": 4,
+  "rework_count": 0,
+  "peak_generation_concurrency": 4,
+  "concurrency_note": "Only four ready repairs; all four submitted together. No tool rate limit or service overload.",
+  "blocked_items": [],
+  "visual_review_status": "pending_user",
+  "checks": {
+    "all_requested_outputs_saved": true,
+    "dimensions_preserved": true,
+    "decoded_transparent_delivery_and_ios_sha256_match": true,
+    "source_and_input_sha256_bound": true,
+    "targeted_node_tests": {
+      "command": "node --test tests/guangdong-guangxi.test.cjs tests/im-yn-gz.test.cjs tests/japan-six.test.cjs",
+      "passed": 11,
+      "failed": 0
+    },
+    "browser": {
+      "ids": [
+        "im_dazhao",
+        "gd_ruishi",
+        "jp_sensoji",
+        "gd_chen"
+      ],
+      "backgrounds": [
+        "dark",
+        "light",
+        "checker"
+      ],
+      "view": "line and existing color pair",
+      "observation": "All four replacement line deliveries loaded; transparent interiors visible. No user approval recorded."
+    },
+    "native_runtime": "Four PNG resources synchronized and hash-checked; simulator/device not run for this repair.",
+    "asset_bundle": {
+      "asset_set": "cf6c5b418fe0d347e309",
+      "files_verified": 3785,
+      "profile": "full",
+      "path": "asset-dist/cf6c5b418fe0d347e309",
+      "pack_completed": true,
+      "current_lock_matches": true
+    },
+    "git_diff_check": true,
+    "full_node_tests": {
+      "command": "node --test tests/*.test.cjs",
+      "passed": 118,
+      "failed": 4,
+      "failure_context": "Concurrent Tokyo eight-item intake changed catalog size and Japanese facets. Unrelated expected counts and protection entries are still being integrated. No scope expansion or blind count changes made in this repair.",
+      "failures": [
+        "catalog.test.cjs:80 catalog 476 vs expected 468",
+        "catalog.test.cjs:295 previous approved set 206 vs expected 198 after Tokyo additions",
+        "facets.test.cjs:85 Japanese expected list missing Tokyo eight",
+        "protection.test.cjs:76 new Japanese IDs missing untagged entries"
+      ],
+      "initial_run": {
+        "passed": 109,
+        "failed": 13,
+        "reason": "Concurrent intake had not yet synchronized generated manifests and native catalog."
+      }
+    }
+  },
+  "color_provenance_note": "Existing colored deliveries retained. The previous line inputs they used are preserved and hash-bound in each color research record.",
+  "finished_at": "2026-10-03T13:42:24.016988+00:00",
+  "wall_clock_seconds": 566.03
+}

@@ -1,0 +1,149 @@
+{
+  "id": "gd_ruishi",
+  "subject": "开平锦江里瑞石楼完整楼体",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jinjiangli_Ruishi_Lou_SF0007.jpg",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Jinjiangli_Ruishi_Lou_SF0007.jpg/1280px-Jinjiangli_Ruishi_Lou_SF0007.jpg",
+  "author": "Stefan Fussan",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/gd_ruishi-photo.jpg"
+  ],
+  "source_note": "1925取瑞石楼落成年，非开平全部碉楼年代；国保归属“开平碉楼”，世界遗产认定另属一种制度。 实拍仅作形制与材质参考；图版由用户人眼验收。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 开平锦江里瑞石楼完整楼体.\nPortrait 1024x1536. Draw ONLY Ruishi Lou, the complete nine-level fortified residential diaolou seen in the photograph. Five lower rectangular residential storeys, upper arched colonnade, corner domed pavilions and central lookout pavilion. Keep its unique windows and decorated masonry bands. This is Western-influenced reinforced concrete, NOT a Chinese pagoda. Preserve the photographed mild three-quarter elevation, removing perspective exaggeration only. Full apex and base. Remove foliage, neighbouring tower, people, wires and all lettering.\nStructure checkpoints: 九层碉楼体量，五层主体与上部柱廊、角亭、中央瞭望亭分开；保留照片轻微仰视，不变成中国 pagoda。",
+  "generated_file": "assets/generated/gd_ruishi.png",
+  "generation_tool": "built-in image_gen",
+  "quality_mode": "prototype",
+  "visual_review_status": "pending_user",
+  "structure_checkpoints": [
+    "九层碉楼体量，五层主体与上部柱廊、角亭、中央瞭望亭分开；保留照片轻微仰视，不变成中国 pagoda。"
+  ],
+  "caption": [
+    "开平锦江里瑞石楼完整楼体 · 线稿",
+    "民国 · 1925"
+  ],
+  "inputs_viewed": true,
+  "generation_history": [
+    {
+      "stage": "line",
+      "submitted_at": "2026-09-17T12:34:28.585Z",
+      "completed_at": null,
+      "status": "saved",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 开平锦江里瑞石楼完整楼体.\nPortrait 1024x1536. Draw ONLY Ruishi Lou, the complete nine-level fortified residential diaolou seen in the photograph. Five lower rectangular residential storeys, upper arched colonnade, corner domed pavilions and central lookout pavilion. Keep its unique windows and decorated masonry bands. This is Western-influenced reinforced concrete, NOT a Chinese pagoda. Preserve the photographed mild three-quarter elevation, removing perspective exaggeration only. Full apex and base. Remove foliage, neighbouring tower, people, wires and all lettering.\nStructure checkpoints: 九层碉楼体量，五层主体与上部柱廊、角亭、中央瞭望亭分开；保留照片轻微仰视，不变成中国 pagoda。",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_ruishi-photo.jpg"
+      ],
+      "received_at": "2026-09-17T12:36:35.442Z",
+      "saved_at": "2026-09-17T12:41:14.659Z",
+      "original_file": "assets/generated/gd_ruishi.png",
+      "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5025c2f9-b5a4-42bc-9a4a-1ee7d87e8021.png"
+    }
+  ],
+  "generated_original": "assets/generated/gd_ruishi.png",
+  "width": 1024,
+  "height": 1536,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "87da6ea5537a6f0f3f57245595fb179cd0f5e19e173140439422b73a20fab5c6",
+    "seeds": []
+  },
+  "references": [
+    {
+      "id": "gd_ruishi",
+      "file": "assets/references/gd_ruishi-photo.jpg",
+      "sha256": "f95f7ed900a63e41bf673466c74b8fb21e51a1044be709441dbabf3c61eb1262",
+      "page": "https://commons.wikimedia.org/wiki/File:Jinjiangli_Ruishi_Lou_SF0007.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Jinjiangli_Ruishi_Lou_SF0007.jpg/1280px-Jinjiangli_Ruishi_Lou_SF0007.jpg",
+      "author": "Stefan Fussan",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "江门市政府：瑞石楼（1923开工、1925落成，九层）",
+      "url": "https://www.jiangmen.gov.cn/newzjqx/qdqq/hwqq/content/post_3192876.html"
+    },
+    {
+      "title": "江门市政府：全国重点文物保护单位开平碉楼（35座）保护范围，含瑞石楼",
+      "url": "https://www.jiangmen.gov.cn/newzwgk/zcjd/tjzc/content/post_3409845.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "开平瑞石楼",
+    "short": "瑞石楼",
+    "sub": "锦江里碉楼 · 中西合璧",
+    "place": "广东开平 · 锦江里",
+    "placeKey": "gd_jinjiangli",
+    "types": [
+      "residence",
+      "pavilion"
+    ],
+    "dyn": "modern",
+    "tag": "民国",
+    "era": "1923开工 · 1925落成",
+    "year": 1925,
+    "yearLabel": "1925",
+    "yearNote": "1925取瑞石楼落成年，非开平全部碉楼年代；国保归属“开平碉楼”，世界遗产认定另属一种制度。",
+    "lede": "方整的居住楼体上，柱廊、穹顶与瞭望亭层层升起。乡土防卫与侨乡建筑趣味在一座九层碉楼上相遇。",
+    "tall": true,
+    "history": [
+      {
+        "title": "江门市政府：瑞石楼（1923开工、1925落成，九层）",
+        "url": "https://www.jiangmen.gov.cn/newzjqx/qdqq/hwqq/content/post_3192876.html"
+      },
+      {
+        "title": "江门市政府：全国重点文物保护单位开平碉楼（35座）保护范围，含瑞石楼",
+        "url": "https://www.jiangmen.gov.cn/newzwgk/zcjd/tjzc/content/post_3409845.html"
+      }
+    ],
+    "protection": {
+      "batch": 5,
+      "unitName": "开平碉楼",
+      "relation": "part",
+      "locator": "第五批名单 · 近现代重要史迹及代表性建筑 · 开平碉楼",
+      "scopeSources": [
+        {
+          "title": "开平碉楼（35座）保护范围，序号2：瑞石楼",
+          "url": "https://www.jiangmen.gov.cn/newzwgk/zcjd/tjzc/content/post_3409845.html"
+        }
+      ]
+    },
+    "id": "gd_ruishi",
+    "subject": "开平锦江里瑞石楼完整楼体",
+    "checkpoint": "九层碉楼体量，五层主体与上部柱廊、角亭、中央瞭望亭分开；保留照片轻微仰视，不变成中国 pagoda。",
+    "material": "灰米白混凝土墙、深棕百叶窗，蓝黄红彩色浮雕装饰，柱廊灰褐、穹顶灰白；不统一刷金。",
+    "initialStatus": "unvisited",
+    "country": "CN",
+    "caption": [
+      "开平锦江里瑞石楼完整楼体 · 线稿",
+      "民国 · 1925"
+    ],
+    "facts": [
+      "<b>主体</b> 开平锦江里瑞石楼完整楼体。",
+      "<b>年代</b> 1925取瑞石楼落成年，非开平全部碉楼年代；国保归属“开平碉楼”，世界遗产认定另属一种制度。",
+      "<b>图版范围</b> 九层碉楼体量，五层主体与上部柱廊、角亭、中央瞭望亭分开；保留照片轻微仰视，不变成中国 pagoda。"
+    ]
+  },
+  "sources": [
+    {
+      "id": "gd_ruishi",
+      "file": "assets/references/gd_ruishi-photo.jpg",
+      "sha256": "f95f7ed900a63e41bf673466c74b8fb21e51a1044be709441dbabf3c61eb1262",
+      "page": "https://commons.wikimedia.org/wiki/File:Jinjiangli_Ruishi_Lou_SF0007.jpg",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Jinjiangli_Ruishi_Lou_SF0007.jpg/1280px-Jinjiangli_Ruishi_Lou_SF0007.jpg",
+      "author": "Stefan Fussan",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jinjiangli_Ruishi_Lou_SF0007.jpg"
+    }
+  ],
+  "additional_sources": []
+}

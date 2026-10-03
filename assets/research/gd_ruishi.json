@@ -8,11 +8,12 @@
   "license": "CC BY-SA 3.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
   "reference_files": [
+    "assets/research/history/line-openings-20261003/gd_ruishi-original-before.png",
     "assets/references/longmen-style-black.png",
     "assets/references/gd_ruishi-photo.jpg"
   ],
   "source_note": "1925取瑞石楼落成年，非开平全部碉楼年代；国保归属“开平碉楼”，世界遗产认定另属一种制度。 实拍仅作形制与材质参考；图版由用户人眼验收。",
-  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\n\n\nNAMED SUBJECT: 开平锦江里瑞石楼完整楼体.\nPortrait 1024x1536. Draw ONLY Ruishi Lou, the complete nine-level fortified residential diaolou seen in the photograph. Five lower rectangular residential storeys, upper arched colonnade, corner domed pavilions and central lookout pavilion. Keep its unique windows and decorated masonry bands. This is Western-influenced reinforced concrete, NOT a Chinese pagoda. Preserve the photographed mild three-quarter elevation, removing perspective exaggeration only. Full apex and base. Remove foliage, neighbouring tower, people, wires and all lettering.\nStructure checkpoints: 九层碉楼体量，五层主体与上部柱廊、角亭、中央瞭望亭分开；保留照片轻微仰视，不变成中国 pagoda。",
+  "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 开平锦江里瑞石楼完整楼体.\nPreserve the complete tall diaolou in the target, its mild three-quarter upward view, five main residential floors and upper arched colonnade, corner domed pavilions and lookout. Hollow out every black window rectangle, including the upper turrets, and turn the dark open shutters into outlined white shutters. Preserve the exact window count, spacing and ornamental surrounds. Portrait 1024x1536.",
   "generated_file": "assets/generated/gd_ruishi.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
@@ -40,9 +41,45 @@
       "saved_at": "2026-09-17T12:41:14.659Z",
       "original_file": "assets/generated/gd_ruishi.png",
       "tool_output_path": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5025c2f9-b5a4-42bc-9a4a-1ee7d87e8021.png"
+    },
+    {
+      "stage": "line_edit",
+      "status": "saved",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 开平锦江里瑞石楼完整楼体.\nPreserve the complete tall diaolou in the target, its mild three-quarter upward view, five main residential floors and upper arched colonnade, corner domed pavilions and lookout. Hollow out every black window rectangle, including the upper turrets, and turn the dark open shutters into outlined white shutters. Preserve the exact window count, spacing and ornamental surrounds. Portrait 1024x1536.",
+      "submitted_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:33:46.355Z",
+      "returned_at": "2026-10-03T13:33:46.355Z",
+      "saved_at": "2026-10-03T13:37:57.471515+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-ad69d536-1e59-40e0-9834-825ef8fab6fa.png",
+      "saved_file": "assets/generated/gd_ruishi.png",
+      "sourceSha256": "654c3fcdaf2350643141f1079de96dcf75d4508322910c67f48d79243ebcf34c",
+      "reference_files": [
+        "assets/research/history/line-openings-20261003/gd_ruishi-original-before.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/gd_ruishi-photo.jpg"
+      ],
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/gd_ruishi.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/gd_ruishi-original-before.png",
+          "sha256": "87da6ea5537a6f0f3f57245595fb179cd0f5e19e173140439422b73a20fab5c6"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/gd_ruishi-photo.jpg",
+          "preserved_path": "assets/references/gd_ruishi-photo.jpg",
+          "sha256": "f95f7ed900a63e41bf673466c74b8fb21e51a1044be709441dbabf3c61eb1262"
+        }
+      ],
+      "edit_scope": "Remove solid door/window fill; retain contours and building geometry."
     }
   ],
-  "generated_original": "assets/generated/gd_ruishi.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-ad69d536-1e59-40e0-9834-825ef8fab6fa.png",
   "width": 1024,
   "height": 1536,
   "dimensions": [
@@ -51,7 +88,7 @@
   ],
   "background_preparation": {
     "method": "white-matte-v1",
-    "sourceSha256": "87da6ea5537a6f0f3f57245595fb179cd0f5e19e173140439422b73a20fab5c6",
+    "sourceSha256": "654c3fcdaf2350643141f1079de96dcf75d4508322910c67f48d79243ebcf34c",
     "seeds": []
   },
   "references": [
@@ -145,5 +182,28 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:Jinjiangli_Ruishi_Lou_SF0007.jpg"
     }
   ],
-  "additional_sources": []
+  "additional_sources": [],
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-ad69d536-1e59-40e0-9834-825ef8fab6fa.png",
+  "input_images": [
+    "assets/research/history/line-openings-20261003/gd_ruishi-original-before.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/gd_ruishi-photo.jpg"
+  ],
+  "input_roles": [
+    "edit_target",
+    "line_style_master",
+    "subject_geometry_photo"
+  ],
+  "output_viewed": true,
+  "line_repair": {
+    "date": "2026-10-03",
+    "user_request": "修复这些问题",
+    "scope": "门窗黑块、灰色填充改为留白轮廓线",
+    "previous_record": "assets/research/history/line-openings-20261003/gd_ruishi-record-before.json",
+    "previous_original": "assets/research/history/line-openings-20261003/gd_ruishi-original-before.png",
+    "previous_delivery": "assets/research/history/line-openings-20261003/gd_ruishi-delivery-before.png",
+    "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-ad69d536-1e59-40e0-9834-825ef8fab6fa.png",
+    "review_status": "pending_user",
+    "sourceSha256": "654c3fcdaf2350643141f1079de96dcf75d4508322910c67f48d79243ebcf34c"
+  }
 }

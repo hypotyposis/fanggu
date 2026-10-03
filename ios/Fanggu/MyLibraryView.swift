@@ -15,8 +15,11 @@ struct MyLibraryView: View {
     private var legacy: [LegacySite] { library.data.customSites.filter { library.data.links[$0.id] == nil } }
 
     var body: some View {
+        let visited = visited
+        let wishes = wishes
+        let legacy = legacy
         ScrollView {
-            VStack(alignment: .leading, spacing: 28) {
+            LazyVStack(alignment: .leading, spacing: 28) {
                 FangguSectionTitle(eyebrow: "亲见 · 所愿 · 私人记录", title: "我的访古", subtitle: "把到访和心愿，慢慢写成自己的古迹图鉴。")
                 if dynamicTypeSize.isAccessibilitySize {
                     VStack(spacing: 10) {

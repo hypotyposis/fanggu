@@ -4,6 +4,7 @@ import Foundation
     @Published private(set) var data = LibraryData()
     @Published private(set) var error: String?
     let monuments: [Monument]
+    let timeline: TimelineCatalog
     private let ids: Set<String>
     private let fileURL: URL
     private var loadFailed = false
@@ -11,6 +12,7 @@ import Foundation
     init(fileURL suppliedURL: URL? = nil) {
         let url = Bundle.main.url(forResource: "catalog", withExtension: "json")!
         monuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
+        timeline = TimelineCatalog(monuments: monuments)
         ids = Set(monuments.map(\.id))
         let directory = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
             .appendingPathComponent("Fanggu", isDirectory: true)

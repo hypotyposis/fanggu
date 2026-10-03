@@ -198,24 +198,15 @@ struct TimelineView: View {
     @State private var cluster: Set<String> = []
     @State private var visibleCount = 8
 
-    private let tracks = ["北", "南", "日本", "东南亚", "朝鲜半岛"]
-    private var sorted: [Monument] { library.monuments.sorted { $0.year == $1.year ? $0.id < $1.id : $0.year < $1.year } }
-    private var periods: [(String, String)] {
-        let names = Dictionary(sorted.map { ($0.dynasty, $0.dynastyName) }, uniquingKeysWith: { first, _ in first })
-        return [("all", "全部时期")] + names.keys.sorted { a, b in
-            (sorted.first { $0.dynasty == a }?.year ?? 0) < (sorted.first { $0.dynasty == b }?.year ?? 0)
-        }.map { ($0, names[$0] ?? $0) }
-    }
+    private let tracks = TimelineCatalog.tracks
+    private var sorted: [Monument] { library.timeline.sorted }
+    private var periods: [(String, String)] { library.timeline.periods }
     private var selected: [Monument] {
         if !cluster.isEmpty { return sorted.filter { cluster.contains($0.id) } }
-        return period == "all" ? sorted : sorted.filter { $0.dynasty == period }
+        return period == "all" ? sorted : library.timeline.sitesByPeriod[period] ?? []
     }
     private var visible: [Monument] { Array(selected.prefix(visibleCount)) }
-    private var quickPeriods: [(String, String)] {
-        Array(periods.dropFirst().sorted { lhs, rhs in
-            sorted.filter { $0.dynasty == lhs.0 }.count > sorted.filter { $0.dynasty == rhs.0 }.count
-        }.prefix(4))
-    }
+    private var quickPeriods: [(String, String)] { library.timeline.quickPeriods }
 
     private func selectPeriod(_ key: String) {
         guard period != key || !cluster.isEmpty else { return }
@@ -231,7 +222,7 @@ struct TimelineView: View {
                 FangguSectionTitle(eyebrow: "东汉至今 · 东亚与东南亚", title: "年表", subtitle: "沿现存主体的年代，细读石与木的足迹。")
                 Menu {
                     ForEach(periods, id: \.0) { key, title in
-                        Button("\(title) · \(key == "all" ? sorted.count : sorted.filter { $0.dynasty == key }.count) 处") {
+                        Button("\(title) · \(key == "all" ? sorted.count : library.timeline.sitesByPeriod[key]?.count ?? 0) 处") {
                             selectPeriod(key)
                         }
                     }
@@ -320,11 +311,11 @@ struct TimelineView: View {
                         .offset(x: 12, y: CGFloat(74 + index * 63))
                 }
                 ForEach(periods.dropFirst(), id: \.0) { key, title in
-                    let sites = sorted.filter { $0.dynasty == key }
+                    let sites = library.timeline.sitesByPeriod[key] ?? []
                     if let first = sites.first, let last = sites.last, ["CN", "JP", "KR", "KP"].contains(first.country) {
-                        let x = timelineX(first.dynastyStart)
-                        let width = max(44, timelineX(last.dynastyEnd) - x)
-                        let y = trackY(first)
+                        let x = TimelineCatalog.x(first.dynastyStart)
+                        let width = max(44, TimelineCatalog.x(last.dynastyEnd) - x)
+                        let y = CGFloat(57 + TimelineCatalog.laneIndex(first) * 63)
                         Button {
                             selectPeriod(key)
                         } label: {
@@ -340,7 +331,7 @@ struct TimelineView: View {
                         .offset(x: x, y: y - 24)
                     }
                 }
-                ForEach(timelineClusters, id: \.id) { group in
+                ForEach(library.timeline.clusters) { group in
                     Button {
                         let next = Set(group.sites.map(\.id))
                         if cluster != next || period != "all" {
@@ -372,11 +363,46 @@ struct TimelineView: View {
         .scrollIndicators(.visible)
     }
 
-    private var timelineClusters: [TimelineCluster] {
+    private func timelineX(_ year: Int) -> CGFloat { TimelineCatalog.x(year) }
+
+    private func legend(_ symbol: String, _ title: String) -> some View {
+        HStack(spacing: 4) {
+            Text(symbol).foregroundStyle(Palette.gold)
+            Text(title).foregroundStyle(Palette.paper2)
+        }.font(FangguFont.mono(10))
+    }
+}
+
+// The catalog is immutable for the lifetime of LibraryStore. Prepare its ordering,
+// period counts and geometry once, rather than sorting inside view comparisons.
+struct TimelineCatalog {
+    static let tracks = ["北", "南", "日本", "东南亚", "朝鲜半岛"]
+    let sorted: [Monument]
+    let sitesByPeriod: [String: [Monument]]
+    let periods: [(String, String)]
+    let quickPeriods: [(String, String)]
+    let clusters: [TimelineCluster]
+
+    init(monuments: [Monument]) {
+        let sorted = monuments.sorted { $0.year == $1.year ? $0.id < $1.id : $0.year < $1.year }
+        let sitesByPeriod = Dictionary(grouping: sorted, by: \.dynasty)
+        let keys = sitesByPeriod.keys.sorted { a, b in
+            let firstYear = sitesByPeriod[a]?.first?.year ?? 0
+            let secondYear = sitesByPeriod[b]?.first?.year ?? 0
+            return firstYear == secondYear ? a < b : firstYear < secondYear
+        }
+        let periods = [("all", "全部时期")] + keys.map { ($0, sitesByPeriod[$0]?.first?.dynastyName ?? $0) }
+        let order = Dictionary(uniqueKeysWithValues: keys.enumerated().map { ($0.element, $0.offset) })
+        let quickPeriods = Array(periods.dropFirst().sorted { lhs, rhs in
+            let left = sitesByPeriod[lhs.0]?.count ?? 0
+            let right = sitesByPeriod[rhs.0]?.count ?? 0
+            return left == right ? (order[lhs.0] ?? 0) < (order[rhs.0] ?? 0) : left > right
+        }.prefix(4))
+
         var groups: [TimelineCluster] = []
-        for lane in tracks.indices {
-            for site in sorted.filter({ laneIndex($0) == lane }) {
-                let x = timelineX(site.year)
+        for lane in Self.tracks.indices {
+            for site in sorted.filter({ Self.laneIndex($0) == lane }) {
+                let x = Self.x(site.year)
                 if let index = groups.indices.last, groups[index].lane == lane, x - groups[index].x < 32 {
                     let count = groups[index].sites.count
                     groups[index].x = (groups[index].x * CGFloat(count) + x) / CGFloat(count + 1)
@@ -386,32 +412,29 @@ struct TimelineView: View {
                 }
             }
         }
-        return groups
+        self.sorted = sorted
+        self.sitesByPeriod = sitesByPeriod
+        self.periods = periods
+        self.quickPeriods = quickPeriods
+        self.clusters = groups
     }
 
-    private func laneIndex(_ site: Monument) -> Int {
+    static func laneIndex(_ site: Monument) -> Int {
         if site.country == "KR" || site.country == "KP" { return 4 }
         if site.country == "JP" { return 2 }
         if ["KH", "ID", "TH", "MM", "LA", "VN", "PH"].contains(site.country) { return 3 }
         if site.timelineLane == "north" { return 0 }
         return ["han", "bei", "beiqi", "qiuci", "xiyu", "sui", "liao", "xixia", "yuan", "ming", "modern"].contains(site.dynasty) ? 0 : 1
     }
-    private func trackY(_ site: Monument) -> CGFloat { CGFloat(57 + laneIndex(site) * 63) }
-    private func timelineX(_ year: Int) -> CGFloat {
+    static func x(_ year: Int) -> CGFloat {
         let value = Double(year)
         let scaled = value <= 600 ? value / 600 * 0.18 : value <= 1250 ? 0.18 + (value - 600) / 650 * 0.54 : 0.72 + (value - 1250) / 776 * 0.28
         return CGFloat(76 + 1090 * scaled)
     }
-    private func legend(_ symbol: String, _ title: String) -> some View {
-        HStack(spacing: 4) {
-            Text(symbol).foregroundStyle(Palette.gold)
-            Text(title).foregroundStyle(Palette.paper2)
-        }.font(FangguFont.mono(10))
-    }
 }
 
-private struct TimelineCluster: Identifiable {
-    var id: String { sites.map(\.id).joined(separator: ".") }
+struct TimelineCluster: Identifiable {
+    var id: String { sites[0].id }
     let lane: Int
     var x: CGFloat
     let y: CGFloat

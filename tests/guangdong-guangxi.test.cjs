@@ -43,8 +43,8 @@ test('two Guang additions cover both new provinces with paired artwork and genui
         assert(['pending_user', 'approved_user'].includes(record.visual_review_status));
         assert.equal(record.background_preparation.method, 'white-matte-v1');
         assert.equal(record.background_preparation.sourceSha256, hash(record.output || record.generated_file));
-        assert.equal(record.generation_history.length, 1);
-        const event = record.generation_history[0];
+        assert(record.generation_history.length >= 1);
+        const event = record.generation_history.at(-1);
         assert.equal(event.status, 'saved');
         assert.equal(event.prompt, record.prompt);
         assert(Date.parse(event.received_at) >= Date.parse(event.submitted_at));

@@ -9897,6 +9897,166 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "jp_ueno_toshogu_karamon": {
+    "src": "assets/colored-transparent-avif/jp_ueno_toshogu_karamon.avif",
+    "originalSrc": "assets/colored/jp_ueno_toshogu_karamon.png",
+    "transparentSrc": "assets/colored-transparent/jp_ueno_toshogu_karamon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "唐门单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ueno_toshogu_karamon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Toshogu_Shrine_@_Ueno_(10065271306).jpg",
+        "author": "Guilhem Vellut from Annecy, France",
+        "license": "CC BY 2.0",
+        "date": "2013-10-01 15:02"
+      }
+    ]
+  },
+  "jp_nezu_romon": {
+    "src": "assets/colored-transparent-avif/jp_nezu_romon.avif",
+    "originalSrc": "assets/colored/jp_nezu_romon.png",
+    "transparentSrc": "assets/colored-transparent/jp_nezu_romon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "三间一户楼门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_nezu_romon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Nezu-jinja_Romon_3.jpg",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0",
+        "date": "2018-04-05 04:02:54"
+      }
+    ]
+  },
+  "jp_asakusa_jinja": {
+    "src": "assets/colored-transparent-avif/jp_asakusa_jinja.avif",
+    "originalSrc": "assets/colored/jp_asakusa_jinja.png",
+    "transparentSrc": "assets/colored-transparent/jp_asakusa_jinja.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "拜殿正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_asakusa_jinja.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Asakusa_shrine_2012.JPG",
+        "author": "Kakidai",
+        "license": "CC BY-SA 3.0",
+        "date": "2012-03-12"
+      }
+    ]
+  },
+  "jp_zojoji_sangedatsumon": {
+    "src": "assets/colored-transparent-avif/jp_zojoji_sangedatsumon.avif",
+    "originalSrc": "assets/colored/jp_zojoji_sangedatsumon.png",
+    "transparentSrc": "assets/colored-transparent/jp_zojoji_sangedatsumon.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "五间三户二重门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_zojoji_sangedatsumon.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Zojo-ji_Sangedatsu-mon_1.jpg",
+        "author": "Zairon",
+        "license": "CC BY-SA 4.0",
+        "date": "2018-04-04 08:27:15"
+      }
+    ]
+  },
+  "jp_kaneiji_kiyomizu": {
+    "src": "assets/colored-transparent-avif/jp_kaneiji_kiyomizu.avif",
+    "originalSrc": "assets/colored/jp_kaneiji_kiyomizu.png",
+    "transparentSrc": "assets/colored-transparent/jp_kaneiji_kiyomizu.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "观音堂与前方舞台 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kaneiji_kiyomizu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Kiyomizu_Kannondo_06.jpg",
+        "author": "tak1701d",
+        "license": "CC BY-SA 3.0",
+        "date": "Taken on 9 February 2020"
+      }
+    ]
+  },
+  "jp_gokokuji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_gokokuji_hondo.avif",
+    "originalSrc": "assets/colored/jp_gokokuji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_gokokuji_hondo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "本堂 · 观音堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_gokokuji_hondo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Gokokuji_-_hondo.jpg",
+        "author": "Kakidai",
+        "license": "CC BY-SA 4.0",
+        "date": "2016-12-23"
+      }
+    ]
+  },
+  "jp_ikegami_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_ikegami_pagoda.avif",
+    "originalSrc": "assets/colored/jp_ikegami_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_ikegami_pagoda.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "现存五重木塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_ikegami_pagoda.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Five-storied_Pagoda,_Ikegami_Honmonji_01.jpg",
+        "author": "Higa4",
+        "license": "CC0",
+        "date": "2022-11-26 13:47:18"
+      }
+    ]
+  },
+  "jp_shofukuji_jizodo": {
+    "src": "assets/colored-transparent-avif/jp_shofukuji_jizodo.avif",
+    "originalSrc": "assets/colored/jp_shofukuji_jizodo.png",
+    "transparentSrc": "assets/colored-transparent/jp_shofukuji_jizodo.png",
+    "transparent": true,
+    "visualReview": "pending_user",
+    "alt": "单层裳阶禅宗佛殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_shofukuji_jizodo.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Shohukuji2.JPG",
+        "author": "fitm",
+        "license": "CC BY-SA 3.0",
+        "date": "2008"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

@@ -83,15 +83,17 @@
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "date": "2016-01-04",
   "reference_files": [
+    "assets/research/history/line-openings-20261003/im_dazhao-original-before.png",
     "assets/references/longmen-style-black.png",
     "assets/references/im_dazhao-hall-photo.jpg"
   ],
   "input_roles": [
+    "edit_target",
     "line_style_master",
     "subject_geometry_photo"
   ],
   "inputs_viewed": true,
-  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural atlas plate for 访古.\nImage 1 is the STYLE MASTER only: match its delicate, elegant, sparse black contours and restrained internal detail. Image 2 and any following photographs are SUBJECT GEOMETRY ONLY. Draw the actual named structure; do not copy the Buddha shape from the style master.\nMake one complete BLACK INK contour drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All blank surfaces inside and outside the drawing remain pure white. Thin confident organic contours, sparse selective roof and ornament detail. No grey shading, solid black door/window fills, hatching, pencil grain, paper texture, gradient, color, halo, cast shadow, checkerboard, frame, labels, lettering or watermark. Plaques remain blank. Remove trees, tourists, vehicles, wires, incense burners, signs, sky and neighboring buildings. Preserve the source's identifying architecture; do not invent hidden buildings.\nCentered approximately facade-level near-frontal view, verticals vertical, minimal perspective, complete apex/roof corners and base with balanced generous margins. A few short ground lines only. Landscape 1536×1024 unless specified portrait; subject fills approximately 82% of the useful axis. This is a WHITE-BACKGROUND original, not native transparent; a local script will prepare a transparent copy later.\nSUBJECT: 呼和浩特大召寺大雄宝殿.\nSCOPE AND IDENTIFYING STRUCTURE: 固定实拍的大雄宝殿，汉藏结合经堂前立面与后部屋面；不画驻云径处过殿或外部新山门。\nLandscape 1536×1024.",
+  "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 呼和浩特大召寺大雄宝殿.\nPreserve the two broad roof levels, upper balcony and central steps. Specifically hollow out the two black upper balcony openings and all black lower door/passages behind the columns. Keep the currently drawn window lattice. Landscape 1536x1024.",
   "generation_history": [
     {
       "stage": "line",
@@ -105,11 +107,47 @@
       "returned_at": "2026-09-16T16:49:17.183Z",
       "saved_at": "2026-09-16T16:49:17.458Z",
       "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-34b93be5-8ec4-41a8-a83d-cee42e429bc7.png"
+    },
+    {
+      "stage": "line_edit",
+      "status": "saved",
+      "tool": "built-in image_gen",
+      "prompt": "Use case: precise-object-edit. Asset type: an existing fine-line architectural plate for 访古.\nImage 1 is the EDIT TARGET. Make a surgical cleanup of its dark door/window fills only. Preserve the same building, all visible storeys, bays, columns, roofs, ornament positions, opening count, proportions, perspective, silhouette, framing and empty margins. Do not redesign or change the viewpoint.\nImage 2 is the line STYLE MASTER only, showing the fine contour character and generous unmarked surfaces; never copy its Buddha subject.\nImage 3 is the same building's documentary PHOTO, for recognizing the structure only. Do not reproduce photographic darkness, shadows, people, trees, sky, neighboring buildings, signs or text.\nPRIMARY CHANGE: Every door opening, window opening, shutter, inner recess and shadowed panel that is a solid black or grey area in Image 1 must become clean PURE WHITE #FFFFFF inside, bounded by delicate black contour lines. Preserve existing window/door frames, mullions, shutters, lattice and door-leaf divisions as sparse thin black linework with white spaces. Keep these openings in exactly their existing locations. Depth is suggested with one or two thin reveal lines, not shading. Retain exterior outlines and existing architectural detail outside these filled regions.\nOutput only the complete building line drawing on a perfectly flat opaque PURE WHITE #FFFFFF canvas. All unmarked surfaces inside and outside the architecture are uniformly white. BLACK INK lines only. No filled black or grey areas, no gradients, cast shadow, grey matte, paper grain, colored lines, glow, checkerboard, lettering, watermark, labels, captions or comparison panel. The white canvas will later be removed with the project's local script.\nNAMED SUBJECT: 呼和浩特大召寺大雄宝殿.\nPreserve the two broad roof levels, upper balcony and central steps. Specifically hollow out the two black upper balcony openings and all black lower door/passages behind the columns. Keep the currently drawn window lattice. Landscape 1536x1024.",
+      "submitted_at": "2026-10-03T13:33:07.497Z",
+      "received_at": "2026-10-03T13:34:34.469Z",
+      "returned_at": "2026-10-03T13:34:34.469Z",
+      "saved_at": "2026-10-03T13:37:57.471515+00:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-45d50310-4203-41ce-bebf-065ba1165d53.png",
+      "saved_file": "assets/generated/im_dazhao.png",
+      "sourceSha256": "c35a7b9b8c1405e893197a12aac3065a939be0e071e8279f2ade421444476779",
+      "reference_files": [
+        "assets/research/history/line-openings-20261003/im_dazhao-original-before.png",
+        "assets/references/longmen-style-black.png",
+        "assets/references/im_dazhao-hall-photo.jpg"
+      ],
+      "input_assets": [
+        {
+          "submitted_path": "assets/generated/im_dazhao.png",
+          "preserved_path": "assets/research/history/line-openings-20261003/im_dazhao-original-before.png",
+          "sha256": "2124c8337842f57f89fc87452562ea18e7691160c10ceb621ee995329ae56460"
+        },
+        {
+          "submitted_path": "assets/references/longmen-style-black.png",
+          "preserved_path": "assets/references/longmen-style-black.png",
+          "sha256": "93b25f53a3a7a1bb79cb26fea3fc2e8f659d00a5e47e005560060af107bb7ce4"
+        },
+        {
+          "submitted_path": "assets/references/im_dazhao-hall-photo.jpg",
+          "preserved_path": "assets/references/im_dazhao-hall-photo.jpg",
+          "sha256": "7b9dae05161318eaba881166b0622db630ed6752eab825c19ac6a4aa96d7b6b0"
+        }
+      ],
+      "edit_scope": "Remove solid door/window fill; retain contours and building geometry."
     }
   ],
   "background_preparation": {
     "method": "white-matte-v1",
-    "sourceSha256": "2124c8337842f57f89fc87452562ea18e7691160c10ceb621ee995329ae56460",
+    "sourceSha256": "c35a7b9b8c1405e893197a12aac3065a939be0e071e8279f2ade421444476779",
     "seeds": []
   },
   "dimensions": [
@@ -118,6 +156,23 @@
   ],
   "width": 1536,
   "height": 1024,
-  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-34b93be5-8ec4-41a8-a83d-cee42e429bc7.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-34b93be5-8ec4-41a8-a83d-cee42e429bc7.png"
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-45d50310-4203-41ce-bebf-065ba1165d53.png",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-45d50310-4203-41ce-bebf-065ba1165d53.png",
+  "input_images": [
+    "assets/research/history/line-openings-20261003/im_dazhao-original-before.png",
+    "assets/references/longmen-style-black.png",
+    "assets/references/im_dazhao-hall-photo.jpg"
+  ],
+  "output_viewed": true,
+  "line_repair": {
+    "date": "2026-10-03",
+    "user_request": "修复这些问题",
+    "scope": "门窗黑块、灰色填充改为留白轮廓线",
+    "previous_record": "assets/research/history/line-openings-20261003/im_dazhao-record-before.json",
+    "previous_original": "assets/research/history/line-openings-20261003/im_dazhao-original-before.png",
+    "previous_delivery": "assets/research/history/line-openings-20261003/im_dazhao-delivery-before.png",
+    "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-45d50310-4203-41ce-bebf-065ba1165d53.png",
+    "review_status": "pending_user",
+    "sourceSha256": "c35a7b9b8c1405e893197a12aac3065a939be0e071e8279f2ade421444476779"
+  }
 }

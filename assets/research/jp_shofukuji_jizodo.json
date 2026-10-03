@@ -1,0 +1,68 @@
+{
+  "id": "jp_shofukuji_jizodo",
+  "subject": "单层裳阶禅宗佛殿",
+  "status": "needs_review",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Shohukuji2.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shohukuji2.JPG/1280px-Shohukuji2.JPG",
+  "author": "fitm",
+  "license": "CC BY-SA 3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_shofukuji_jizodo-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_shofukuji_jizodo-photo.jpg"
+  ],
+  "source_note": "已查看实拍。所绘范围：单层裳阶禅宗佛殿；省略周围景物及现代设施，照片中的遮挡不作为可精确测绘的证据。",
+  "prompt": "Use case: style-transfer. Asset type: single Fanggu heritage architectural fine-line plate. Image 1 is ONLY the STYLE MASTER: use its delicate, slightly organic sparse thin black ink contours, restrained detail and generous blank areas, never its subject. Image 2 is the documentary SUBJECT GEOMETRY reference. Subject: Shofukuji Jizodo in Higashimurayama Tokyo, built 1407. Front view of compact square Zen hall, a SINGLE storey with lower surrounding mokoshi pent roof, not a two-storey pagoda. Core three-by-three bays; high sweeping wood-shingle hipped-and-gabled main roof with sharply lifted corners, thin lower copper-covered mokoshi roof, wooden doors and flanking cusped windows. Keep both roof outlines and the full base. Remove stone lanterns, trees, people and modern fence. Draw fine neutral BLACK contours on a perfectly flat opaque PURE WHITE #FFFFFF canvas. Every unmarked surface inside and outside the building remains white. No solid black fills, broad gray shading, crosshatching, pencil grain, paper texture, gradient, color, gold, glow, cast shadow, checkerboard, transparency, labels, calligraphy, text, watermark, frame or border. Preserve Japanese architectural geometry, roof counts and openings. Vertical lines remain vertical. Complete subject centered with 9 percent breathing room. Landscape 1536x1024, whole structure occupies about 82 percent of width.",
+  "generated_file": "assets/generated/jp_shofukuji_jizodo.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "正福寺地藏堂 · 单层裳阶禅宗佛殿",
+    "室町时代 · 1407年"
+  ],
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shohukuji2.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shohukuji2.JPG/1280px-Shohukuji2.JPG",
+      "author": "fitm",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "date": "2008",
+      "reference_file": "assets/references/jp_shofukuji_jizodo-photo.jpg",
+      "title": "File:Shohukuji2.JPG",
+      "sha256": "a3e1f5d6b0c7fda4fa98a11e47e800fc3bb069f339e93cc1fffbd15d1ccaa47d"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化遗产在线 · 正福寺地藏堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/173812"
+    }
+  ],
+  "structure_checkpoints": "Shofukuji Jizodo in Higashimurayama Tokyo, built 1407. Front view of compact square Zen hall, a SINGLE storey with lower surrounding mokoshi pent roof, not a two-storey pagoda. Core three-by-three bays; high sweeping wood-shingle hipped-and-gabled main roof with sharply lifted corners, thin lower copper-covered mokoshi roof, wooden doors and flanking cusped windows. Keep both roof outlines and the full base. Remove stone lanterns, trees, people and modern fence.",
+  "visual_review_status": "pending_user",
+  "review": {
+    "inputs_viewed": true,
+    "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
+    "output_viewed": true
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-01973806-7d88-434c-9106-01bb04bdf2c2.png",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2b1e7ff76e7b696c2d41490cdd795ac56346f98e561960c593706139e91732e1",
+    "seeds": []
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "generation_timing": {
+    "started_at": "2026-10-03T13:31:40.248Z",
+    "received_at": "2026-10-03T13:36:09.119Z",
+    "completed_at": null,
+    "note": "completed_at未由工具提供；received_at不作服务计算时长。"
+  },
+  "generation_call_id": "exec-01973806-7d88-434c-9106-01bb04bdf2c2"
+}
