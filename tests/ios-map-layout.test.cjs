@@ -37,12 +37,17 @@ for width in [272.0, 327, 345, 354, 382, 720] {
     for i in clusters.indices {
         for j in clusters.indices where j > i {
             precondition(hypot(clusters[i].point.x - clusters[j].point.x, clusters[i].point.y - clusters[j].point.y) >= 46)
+            precondition(abs(clusters[i].point.x - clusters[j].point.x) >= 76 || abs(clusters[i].point.y - clusters[j].point.y) >= 50, "Named map markers must not overlap")
         }
+    }
+    for cluster in clusters {
+        precondition(cluster.point.x >= 33 && cluster.point.x <= width - 33, "Keep full 66pt labels inside the viewport")
     }
 }
 for subset in [[], Array(places.prefix(1)), Array(places.prefix(2))] {
     let projection = SketchMapProjection(size: CGSize(width: 272, height: 280), places: subset)
     precondition(projection.latScale.isFinite && projection.latScale > 0)
+    precondition(projection.longitude.contains(142) && projection.longitude.contains(100), "Single inland visits still need coastal context")
     precondition(projection.clusters(subset).flatMap(\\.placeIDs).sorted() == subset.map(\\.id).sorted())
 }
 print("Map geometry and cluster coverage passed")

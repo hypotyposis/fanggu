@@ -2,8 +2,10 @@ import SwiftUI
 
 struct AtlasMapView: View {
     @EnvironmentObject private var library: LibraryStore
+    @EnvironmentObject private var undoPresentation: UndoPresentation
     @State private var selection: MapSelection?
     @State private var search = ""
+    @State private var highlighted: Set<String> = []
     let onBrowse: () -> Void
 
     private var visited: [Monument] { library.monuments.filter { library.record(for: $0).status == .visited } }
@@ -26,7 +28,7 @@ struct AtlasMapView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                FangguSectionTitle(eyebrow: "亲见 · 行迹所至", title: "到访地图", subtitle: "点亮已经到访的地方，点选地点细读古迹。")
+                FangguSectionTitle(eyebrow: "亲见 · 行迹所至", title: "我的足迹", subtitle: "只展示已经到访的地方，点选地名细读古迹。")
                 if visited.isEmpty {
                     VStack(alignment: .leading, spacing: 14) {
                         Text("地图上还没有足迹")
@@ -50,27 +52,40 @@ struct AtlasMapView: View {
                         let clusters = projection.clusters(coordinates)
                         ZStack(alignment: .topLeading) {
                             SketchMapGrid(projection: projection)
+                            if !highlighted.isEmpty {
+                                let points = coordinates.filter { highlighted.contains($0.id) }.map {
+                                    projection.point(latitude: $0.latitude, longitude: $0.longitude)
+                                }
+                                if let first = points.first {
+                                    let bounds = points.reduce(CGRect(origin: first, size: .zero)) {
+                                        $0.union(CGRect(origin: $1, size: .zero))
+                                    }.insetBy(dx: -16, dy: -16)
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .fill(Palette.gold.opacity(0.12))
+                                        .overlay(RoundedRectangle(cornerRadius: 10).stroke(Palette.gold, style: StrokeStyle(lineWidth: 1, dash: [3, 3])))
+                                        .frame(width: bounds.width, height: bounds.height)
+                                        .position(x: bounds.midX, y: bounds.midY)
+                                        .allowsHitTesting(false).accessibilityHidden(true)
+                                }
+                            }
                             ForEach(clusters) { cluster in
+                                let isSelected = !highlighted.isDisjoint(with: cluster.placeIDs)
                                 Button { openPlaces(cluster.placeIDs) } label: {
-                                    Circle()
-                                        .fill(cluster.placeIDs.count > 1 ? Palette.gold : accent(for: cluster))
-                                        .frame(width: cluster.placeIDs.count > 1 ? 30 : 10,
-                                               height: cluster.placeIDs.count > 1 ? 30 : 10)
-                                        .overlay {
-                                            if cluster.placeIDs.count > 1 {
-                                                Text("\(cluster.placeIDs.count)")
-                                                    .font(.system(size: 12, weight: .semibold, design: .monospaced))
-                                                    .foregroundStyle(Palette.ink)
-                                            }
-                                        }
-                                        .frame(width: 44, height: 44)
-                                        .contentShape(Circle())
+                                    VStack(spacing: 2) {
+                                        Text(clusterTitle(cluster.placeIDs))
+                                            .font(FangguFont.serif(12)).lineLimit(1).minimumScaleFactor(0.8)
+                                        Text("\(cluster.placeIDs.count) 地")
+                                            .font(FangguFont.mono(10))
+                                    }
+                                    .foregroundStyle(isSelected ? Palette.ink : Palette.paper)
+                                    .frame(width: 66, height: 44)
+                                    .background(isSelected ? Palette.gold : Palette.ink.opacity(0.93), in: RoundedRectangle(cornerRadius: 7))
+                                    .overlay(RoundedRectangle(cornerRadius: 7).stroke(Palette.gold.opacity(isSelected ? 1 : 0.65), lineWidth: 1))
                                 }
                                 .buttonStyle(.plain)
                                 .position(cluster.point)
-                                .accessibilityLabel(cluster.placeIDs.count > 1
-                                    ? "\(cluster.placeIDs.count) 个邻近到访地点，点选展开"
-                                    : "\(places[cluster.id]?.first?.placeName ?? "地点")，点选查看古迹")
+                                .accessibilityLabel("\(clusterTitle(cluster.placeIDs))，\(cluster.placeIDs.count) 个到访地点，点选查看古迹")
+                                .accessibilityAddTraits(isSelected ? .isSelected : [])
                                 .accessibilityIdentifier("map-marker-\(cluster.id)")
                             }
                         }
@@ -78,11 +93,18 @@ struct AtlasMapView: View {
                         .accessibilityIdentifier("visited-map")
                     }
                     .frame(height: 280)
-                    Text("数字为邻近地点数 · 点选圆点查看古迹")
+                    Text("邻近地点合并展示 · 点选地名展开")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
+                    Text("离线地理概览 · Natural Earth")
+                        .font(FangguFont.mono(10)).foregroundStyle(Palette.paper3)
+                    if !highlighted.isEmpty {
+                        Text("已选：\(highlighted.sorted().compactMap { places[$0]?.first?.placeName }.joined(separator: "、"))")
+                            .font(FangguFont.serif(13)).foregroundStyle(Palette.gold)
+                            .accessibilityIdentifier("map-selected-places")
+                    }
                     FangguRule()
                     Text("到访地点").font(FangguFont.serif(20)).foregroundStyle(Palette.paper)
-                    FangguField(placeholder: "搜索地点、省份或古迹", text: $search)
+                    FangguField(placeholder: "搜索地点、省份或古迹", text: $search, showsClearButton: true)
                         .accessibilityIdentifier("map-place-search")
                     LazyVStack(spacing: 0) {
                         ForEach(matchingPlaces) { site in
@@ -121,7 +143,7 @@ struct AtlasMapView: View {
                     LazyVStack(alignment: .leading, spacing: 12) {
                         ForEach(selected.placeIDs, id: \.self) { key in
                             if let sites = places[key], let first = sites.first {
-                                Text(first.placeName).font(FangguFont.serif(20)).foregroundStyle(Palette.gold)
+                                Text("\(first.province) · \(first.placeName)").font(FangguFont.serif(20)).foregroundStyle(Palette.gold)
                                     .padding(.top, 8)
                                 ForEach(sites) { site in
                                     NavigationLink(value: site) { TimelineSiteRow(site: site) }.buttonStyle(.plain)
@@ -130,13 +152,16 @@ struct AtlasMapView: View {
                         }
                     }.padding(20)
                 }
+                .safeAreaInset(edge: .bottom, spacing: 0) { UndoFeedback() }
                 .background(Palette.ink)
-                .navigationTitle(selected.placeIDs.count == 1
-                    ? (places[selected.placeIDs[0]]?.first?.placeName ?? "到访地点") : "邻近到访地点")
+                .navigationTitle(clusterTitle(selected.placeIDs))
                 .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                 .toolbar { Button("关闭") { selection = nil } }
             }
             .fangguAppearance()
+            .environment(\.inMapSheet, true)
+            .onAppear { undoPresentation.mapIsPresented = true }
+            .onDisappear { undoPresentation.mapIsPresented = false }
         }
     }
 
@@ -146,11 +171,15 @@ struct AtlasMapView: View {
             .font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
     }
 
-    private func accent(for cluster: SketchMapCluster) -> Color {
-        places[cluster.id]?.first?.accent ?? Palette.gold
+    private func clusterTitle(_ ids: [String]) -> String {
+        let sites = ids.compactMap { places[$0]?.first }
+        if sites.count == 1 { return sites.first?.placeName ?? "到访地点" }
+        let regions = Array(Set(sites.map { CatalogSearch.regionNames[$0.region] ?? $0.province })).sorted()
+        return regions.prefix(2).joined(separator: "·") + (regions.count > 2 ? "等" : "")
     }
 
     private func openPlaces(_ ids: [String]) {
+        highlighted = Set(ids)
         selection = MapSelection(placeIDs: ids)
         Haptics.selection()
     }
@@ -168,6 +197,22 @@ private struct SketchMapGrid: View {
         Canvas { context, size in
             context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(Palette.ink2))
             let frame = projection.frame
+            if let land = OfflineLand.shared {
+                var landContext = context
+                landContext.clip(to: Path(frame))
+                for feature in land.features {
+                    var shape = Path()
+                    for ring in feature.geometry.coordinates {
+                        for (index, coordinate) in ring.enumerated() where coordinate.count >= 2 {
+                            let point = projection.point(latitude: coordinate[1], longitude: coordinate[0])
+                            if index == 0 { shape.move(to: point) } else { shape.addLine(to: point) }
+                        }
+                        shape.closeSubpath()
+                    }
+                    landContext.fill(shape, with: .color(Palette.gold.opacity(0.13)), style: FillStyle(eoFill: true))
+                    landContext.stroke(shape, with: .color(Palette.gold.opacity(0.5)), lineWidth: 0.8)
+                }
+            }
             context.stroke(Path(frame), with: .color(Palette.goldDim.opacity(0.35)), lineWidth: 1)
             let latStep = projection.latitudeStep
             let lonStep = projection.longitudeStep
@@ -192,191 +237,10 @@ private struct SketchMapGrid: View {
     }
 }
 
-struct TimelineView: View {
-    @EnvironmentObject private var library: LibraryStore
-    @State private var period = "all"
-    @State private var cluster: Set<String> = []
-    @State private var visibleCount = 8
-
-    private let tracks = TimelineCatalog.tracks
-    private var sorted: [Monument] { library.timeline.sorted }
-    private var periods: [(String, String)] { library.timeline.periods }
-    private var selected: [Monument] {
-        if !cluster.isEmpty { return sorted.filter { cluster.contains($0.id) } }
-        return period == "all" ? sorted : library.timeline.sitesByPeriod[period] ?? []
-    }
-    private var visible: [Monument] { Array(selected.prefix(visibleCount)) }
-    private var quickPeriods: [(String, String)] { library.timeline.quickPeriods }
-
-    private func selectPeriod(_ key: String) {
-        guard period != key || !cluster.isEmpty else { return }
-        period = key
-        cluster = []
-        visibleCount = 8
-        Haptics.selection()
-    }
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 17) {
-                FangguSectionTitle(eyebrow: "东汉至今 · 东亚与东南亚", title: "年表", subtitle: "沿现存主体的年代，细读石与木的足迹。")
-                Menu {
-                    ForEach(periods, id: \.0) { key, title in
-                        Button("\(title) · \(key == "all" ? sorted.count : library.timeline.sitesByPeriod[key]?.count ?? 0) 处") {
-                            selectPeriod(key)
-                        }
-                    }
-                } label: {
-                    HStack {
-                        Text(periods.first { $0.0 == period }?.1 ?? "全部时期")
-                        Spacer()
-                        Image(systemName: "chevron.down")
-                    }
-                    .font(FangguFont.serif(15)).foregroundStyle(Palette.paper)
-                    .padding(12).background(Palette.ink2)
-                    .overlay(Rectangle().stroke(Palette.paper.opacity(0.22), lineWidth: 1))
-                }
-                ScrollView(.horizontal) {
-                    HStack(spacing: 8) {
-                        ForEach(quickPeriods, id: \.0) { key, title in
-                            Button(title) { selectPeriod(key) }
-                                .font(FangguFont.serif(13))
-                                .foregroundStyle(period == key ? Palette.ink : Palette.paper)
-                                .padding(.horizontal, 14)
-                                .frame(minHeight: 44)
-                                .background(period == key ? Palette.gold : Palette.ink2)
-                                .overlay(Rectangle().stroke(Palette.gold.opacity(0.45), lineWidth: 1))
-                                .accessibilityAddTraits(period == key ? .isSelected : [])
-                        }
-                    }
-                }
-                .scrollIndicators(.hidden)
-                timelineGraphic
-                HStack(spacing: 16) {
-                    legend("●", "已到访")
-                    legend("○", "尚未到访")
-                    Text("← 左右滑动年表 →")
-                        .font(FangguFont.mono(10)).foregroundStyle(Palette.paper3)
-                }
-                FangguRule()
-                HStack {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text(cluster.isEmpty ? (periods.first { $0.0 == period }?.1 ?? "全部时期") : "选中年代")
-                            .font(FangguFont.serif(18)).foregroundStyle(Palette.paper)
-                        Text("\(selected.count) 处古迹")
-                            .font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
-                    }
-                    Spacer()
-                }
-                .foregroundStyle(Palette.paper2)
-                if period != "all" || !cluster.isEmpty {
-                    Button("查看全部") { selectPeriod("all") }
-                        .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
-                }
-                ForEach(visible) { site in
-                    NavigationLink(value: site) { TimelineSiteRow(site: site) }.buttonStyle(.plain)
-                }
-                if visibleCount < selected.count {
-                    Button("显示更多 · 已显示 \(visible.count) / \(selected.count)") {
-                        visibleCount += 12
-                    }
-                    .buttonStyle(FangguOutlineButton())
-                    .frame(maxWidth: .infinity)
-                }
-                DisclosureGroup("读图说明") {
-                    Text("中国部分按北、南两线排列，日本、东南亚与朝鲜半岛分别单列。点选圆点展开古迹；邻近年份合并为一个数字圆点。年代对应图版所绘主体，部分仅作约略定位，确切纪年与重修沿革以详情为准。")
-                        .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2).lineSpacing(5)
-                }
-                .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
-                .padding(.top, 10)
-            }
-            .padding(.horizontal, 24).padding(.top, 36).padding(.bottom, 70)
-        }
-        .background(Palette.ink.ignoresSafeArea())
-        .toolbar(.hidden, for: .navigationBar)
-    }
-
-    private var timelineGraphic: some View {
-        ScrollView(.horizontal) {
-            ZStack(alignment: .topLeading) {
-                Palette.ink2
-                ForEach([100, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2000], id: \.self) { year in
-                    let x = timelineX(year)
-                    Rectangle().fill(Palette.paper.opacity(0.12)).frame(width: 1, height: 343).offset(x: x, y: 27)
-                    Text(String(year)).font(FangguFont.mono(10)).foregroundStyle(Palette.paper3).offset(x: x - 12, y: 8)
-                }
-                ForEach(tracks.indices, id: \.self) { index in
-                    Text(tracks[index])
-                        .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
-                        .offset(x: 12, y: CGFloat(74 + index * 63))
-                }
-                ForEach(periods.dropFirst(), id: \.0) { key, title in
-                    let sites = library.timeline.sitesByPeriod[key] ?? []
-                    if let first = sites.first, let last = sites.last, ["CN", "JP", "KR", "KP"].contains(first.country) {
-                        let x = TimelineCatalog.x(first.dynastyStart)
-                        let width = max(44, TimelineCatalog.x(last.dynastyEnd) - x)
-                        let y = CGFloat(57 + TimelineCatalog.laneIndex(first) * 63)
-                        Button {
-                            selectPeriod(key)
-                        } label: {
-                            Rectangle().fill(first.accent.opacity(period == key ? 0.38 : 0.16))
-                                .overlay(Rectangle().stroke(first.accent.opacity(0.6), lineWidth: 1))
-                                .frame(width: width, height: 46)
-                                .overlay(alignment: .topLeading) {
-                                    Text(title).font(FangguFont.serif(11)).foregroundStyle(first.accent)
-                                        .lineLimit(1).padding(3)
-                                }
-                        }
-                        .buttonStyle(.plain)
-                        .offset(x: x, y: y - 24)
-                    }
-                }
-                ForEach(library.timeline.clusters) { group in
-                    Button {
-                        let next = Set(group.sites.map(\.id))
-                        if cluster != next || period != "all" {
-                            cluster = next; period = "all"; visibleCount = 8
-                            Haptics.selection()
-                        }
-                    } label: {
-                        let allVisited = group.sites.allSatisfy { library.record(for: $0).status == .visited }
-                        Circle()
-                            .fill(allVisited ? group.sites[0].accent : Palette.ink)
-                            .frame(width: group.sites.count > 1 ? 25 : 13, height: group.sites.count > 1 ? 25 : 13)
-                            .overlay(Circle().stroke(group.sites[0].accent, lineWidth: 1.5))
-                            .overlay {
-                                if group.sites.count > 1 {
-                                    Text("\(group.sites.count)").font(FangguFont.mono(10))
-                                        .foregroundStyle(allVisited ? Palette.ink : group.sites[0].accent)
-                                }
-                            }
-                            .frame(width: 44, height: 44)
-                    }
-                    .buttonStyle(.plain)
-                    .accessibilityLabel("\(group.sites.count) 处古迹，\(group.sites.first?.year ?? 0) 年前后")
-                    .offset(x: group.x, y: group.y)
-                }
-            }
-            .frame(width: 1200, height: 380)
-            .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.4), lineWidth: 1))
-        }
-        .scrollIndicators(.visible)
-    }
-
-    private func timelineX(_ year: Int) -> CGFloat { TimelineCatalog.x(year) }
-
-    private func legend(_ symbol: String, _ title: String) -> some View {
-        HStack(spacing: 4) {
-            Text(symbol).foregroundStyle(Palette.gold)
-            Text(title).foregroundStyle(Palette.paper2)
-        }.font(FangguFont.mono(10))
-    }
-}
-
 // The catalog is immutable for the lifetime of LibraryStore. Prepare its ordering,
 // period counts and geometry once, rather than sorting inside view comparisons.
 struct TimelineCatalog {
-    static let tracks = ["北", "南", "日本", "东南亚", "朝鲜半岛"]
+    static let tracks = ["中国北方", "中国南方", "日本", "东南亚", "朝鲜半岛"]
     let sorted: [Monument]
     let sitesByPeriod: [String: [Monument]]
     let periods: [(String, String)]
@@ -399,18 +263,8 @@ struct TimelineCatalog {
             return left == right ? (order[lhs.0] ?? 0) < (order[rhs.0] ?? 0) : left > right
         }.prefix(4))
 
-        var groups: [TimelineCluster] = []
-        for lane in Self.tracks.indices {
-            for site in sorted.filter({ Self.laneIndex($0) == lane }) {
-                let x = Self.x(site.year)
-                if let index = groups.indices.last, groups[index].lane == lane, x - groups[index].x < 32 {
-                    let count = groups[index].sites.count
-                    groups[index].x = (groups[index].x * CGFloat(count) + x) / CGFloat(count + 1)
-                    groups[index].sites.append(site)
-                } else {
-                    groups.append(TimelineCluster(lane: lane, x: x, y: CGFloat(80 + lane * 63), sites: [site]))
-                }
-            }
+        let groups = Self.tracks.indices.flatMap { lane in
+            Self.makeClusters(sorted.filter { Self.laneIndex($0) == lane }, lane: lane)
         }
         self.sorted = sorted
         self.sitesByPeriod = sitesByPeriod
@@ -426,11 +280,33 @@ struct TimelineCatalog {
         if site.timelineLane == "north" { return 0 }
         return ["han", "bei", "beiqi", "qiuci", "xiyu", "sui", "liao", "xixia", "yuan", "ming", "modern"].contains(site.dynasty) ? 0 : 1
     }
-    static func x(_ year: Int) -> CGFloat {
-        let value = Double(year)
-        let scaled = value <= 600 ? value / 600 * 0.18 : value <= 1250 ? 0.18 + (value - 600) / 650 * 0.54 : 0.72 + (value - 1250) / 776 * 0.28
-        return CGFloat(76 + 1090 * scaled)
+    static let pointsPerYear: CGFloat = 0.7
+    static let width: CGFloat = 1518
+    static func x(_ year: Int) -> CGFloat { 24 + CGFloat(year) * pointsPerYear }
+
+    func sites(lane: Int, period: String) -> [Monument] {
+        (period == "all" ? sorted : sitesByPeriod[period] ?? []).filter { Self.laneIndex($0) == lane }
     }
+
+    func groups(lane: Int, period: String) -> [TimelineCluster] {
+        period == "all" ? clusters.filter { $0.lane == lane } : Self.makeClusters(sites(lane: lane, period: period), lane: lane)
+    }
+
+    static func makeClusters(_ sites: [Monument], lane: Int) -> [TimelineCluster] {
+        var groups = sites.map { TimelineCluster(lane: lane, x: x($0.year), y: 94, sites: [$0]) }
+        // Merge adjacent touch targets until the final weighted centers are separated.
+        var index = 0
+        while index + 1 < groups.count {
+            if groups[index + 1].x - groups[index].x < 48 {
+                groups[index].sites += groups[index + 1].sites
+                groups[index].x = groups[index].sites.map { x($0.year) }.reduce(0, +) / CGFloat(groups[index].sites.count)
+                groups.remove(at: index + 1)
+                index = max(0, index - 1)
+            } else { index += 1 }
+        }
+        return groups
+    }
+
 }
 
 struct TimelineCluster: Identifiable {

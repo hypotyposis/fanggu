@@ -88,7 +88,7 @@ enum VisitStatus: String, Codable, CaseIterable, Identifiable {
     }
 }
 
-struct VisitRecord: Codable {
+struct VisitRecord: Codable, Equatable {
     var status: VisitStatus = .unvisited
     var visitedOn: String = ""
     var note: String = ""

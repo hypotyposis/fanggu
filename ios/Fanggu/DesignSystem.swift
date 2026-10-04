@@ -127,6 +127,7 @@ struct FangguOutlineButton: ButtonStyle {
 struct FangguField: View {
     let placeholder: String
     @Binding var text: String
+    var showsClearButton = false
 
     var body: some View {
         HStack(spacing: 10) {
@@ -137,9 +138,18 @@ struct FangguField: View {
                 .tint(Palette.gold)
                 .foregroundStyle(Palette.paper)
                 .autocorrectionDisabled()
+            if showsClearButton && !text.isEmpty {
+                Button { text = "" } label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .frame(minWidth: 44, minHeight: 44)
+                }
+                .buttonStyle(.plain).foregroundStyle(Palette.paper2)
+                .accessibilityLabel("清空搜索")
+                .accessibilityIdentifier("clear-catalog-search")
+            }
         }
         .padding(.horizontal, 14)
-        .padding(.vertical, 10)
+        .padding(.vertical, showsClearButton ? 0 : 10)
         .frame(minHeight: 46)
         .background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.23), lineWidth: 1))

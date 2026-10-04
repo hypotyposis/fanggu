@@ -52,6 +52,7 @@ struct ReviewRadar: View {
     var onCommit: (DimensionScores) -> Bool = { _ in true }
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @State private var selected: ReviewDimension?
     @State private var drag: RatingDrag?
     @GestureState private var dragging = false
@@ -64,6 +65,70 @@ struct ReviewRadar: View {
     }
 
     var body: some View {
+        Group {
+            if dynamicTypeSize.isAccessibilitySize { dimensionList }
+            else { diagram }
+        }
+        .onChange(of: dynamicTypeSize) { _, _ in cancelDrag() }
+    }
+
+    private var dimensionList: some View {
+        VStack(alignment: .leading, spacing: 24) {
+            ForEach(ReviewDimension.allCases) { axis in
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(axis.title).font(FangguFont.serif(17)).foregroundStyle(Palette.paper)
+                        .accessibilityIdentifier("dimension-title-\(axis.rawValue)")
+                    Text(axis.hint).font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
+                    if editable {
+                        Menu {
+                            Button("未评分") { selectGrade(nil, for: axis) }
+                            ForEach(1...5, id: \.self) { grade in
+                                Button("\(ReviewDimension.grade(grade)) · \(ReviewDimension.description(grade))") {
+                                    selectGrade(grade, for: axis)
+                                }
+                            }
+                        } label: {
+                            Label(gradeTitle(axis), systemImage: "chevron.down")
+                                .font(FangguFont.serif(16))
+                                .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                                .padding(10).contentShape(Rectangle())
+                                .overlay(Rectangle().stroke(Palette.goldDim, lineWidth: 1))
+                        }
+                        .foregroundStyle(Palette.gold)
+                        .accessibilityLabel(axis.title)
+                        .accessibilityValue(gradeTitle(axis))
+                        .accessibilityHint("选择档位即保存；未评分会清空这一项")
+                        .accessibilityIdentifier("dimension-picker-\(axis.rawValue)")
+                    } else {
+                        Text(gradeTitle(axis)).font(FangguFont.serif(16)).foregroundStyle(Palette.gold)
+                            .accessibilityIdentifier("radar-summary-\(axis.rawValue)")
+                    }
+                }
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            if editable {
+                Text("选定档位即保存 · 不确定的项可以留空")
+                    .font(FangguFont.serif(13)).foregroundStyle(Palette.paper3)
+            }
+        }
+        .padding(.top, 12)
+    }
+
+    private func gradeTitle(_ axis: ReviewDimension) -> String {
+        guard let grade = scores[axis] else { return "未评分" }
+        return "\(ReviewDimension.grade(grade)) · \(ReviewDimension.description(grade))"
+    }
+
+    private func selectGrade(_ grade: Int?, for axis: ReviewDimension) {
+        guard scores[axis] != grade else { return }
+        var next = scores
+        next[axis] = grade
+        scores = next
+        if onCommit(next) { Haptics.ratingStep() }
+    }
+
+    private var diagram: some View {
         VStack(spacing: 12) {
             GeometryReader { geometry in
                 let layout = RadarLayout(size: geometry.size)

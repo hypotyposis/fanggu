@@ -62,7 +62,7 @@ struct DimensionScores: Codable, Equatable {
     }
 }
 
-struct Review: Codable {
+struct Review: Codable, Equatable {
     // Preserve an imported five-star score without converting it to six dimensions.
     var rating: Int? = nil
     var dimensions = DimensionScores()

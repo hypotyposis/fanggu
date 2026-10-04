@@ -37,17 +37,7 @@ struct MonumentDetailView: View {
                         }
                     }
                 }
-                HStack(spacing: 10) {
-                    Button(record.status == .visited ? "编辑到访记录" : "标记到访") { editingVisit = true }
-                        .buttonStyle(FangguOutlineButton())
-                    if record.status == .unvisited {
-                        Button("加入心愿单") { setStatus(.wishlist) }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                    } else if record.status == .wishlist {
-                        Button("移出心愿单") { setStatus(.unvisited) }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                    }
-                }
+                VisitActions(site: site, editingVisit: $editingVisit)
                 VStack(spacing: 8) {
                     ArtworkView(site: site, visited: record.status == .visited,
                                 height: 320, reveal: reveal)
@@ -98,11 +88,11 @@ struct MonumentDetailView: View {
                 FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
                     Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
-                    Text(record.status.title + (record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
+                    Text(record.status.title + (record.status != .visited || record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
                         .font(FangguFont.mono(12)).foregroundStyle(record.status.textColor)
-                    if record.status == .visited {
-                        Button("移至心愿单") { setStatus(.wishlist) }
-                            .buttonStyle(FangguOutlineButton())
+                    if record.status != .visited && !record.visitedOn.isEmpty {
+                        Text("保留的原到访日期 · \(record.visitedOn)")
+                            .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                     }
                     if !record.note.isEmpty {
                         Text(record.note).font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
@@ -135,6 +125,9 @@ struct MonumentDetailView: View {
             }
             .padding(24)
         }
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            if !editingReview && !editingVisit { UndoFeedback() }
+        }
         .background(Palette.ink.ignoresSafeArea())
         .navigationTitle(site.short.isEmpty ? site.name : site.short)
         .navigationBarTitleDisplayMode(.inline)
@@ -153,13 +146,6 @@ struct MonumentDetailView: View {
         .toolbarBackground(.visible, for: .navigationBar)
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
-    }
-
-    private func setStatus(_ status: VisitStatus) {
-        var next = record
-        next.status = status
-        if library.setRecord(next, for: site) { Haptics.soft() }
-        else { Haptics.error() }
     }
 
     private func finishArrival() {
@@ -183,7 +169,7 @@ struct ArrivalSlider: View {
             ZStack(alignment: .leading) {
                 Rectangle().fill(Palette.ink3).overlay(Rectangle().stroke(Palette.red.opacity(0.6), lineWidth: 1))
                 Rectangle().fill(Palette.red.opacity(0.25)).frame(width: max(50, geometry.size.width * progress))
-                Text(!colorReady ? "设色图暂未加载" : finished ? "已到访 · 留印" : progress >= 1 ? "松手 · 留印" : progress > 0 ? "慢慢为古迹添色" : "向右拖动 · 设色")
+                Text(!colorReady ? "设色图暂未加载" : finished ? "已到访 · 留印" : progress >= 1 ? "松手记录今日到访" : "滑动记录今日到访")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                     .frame(maxWidth: .infinity)
                 Text("访").font(FangguFont.brush(29))
@@ -217,9 +203,9 @@ struct ArrivalSlider: View {
             .frame(height: 54)
             .accessibilityElement()
             .accessibilityLabel("到访打卡")
-            .accessibilityValue(finished ? "已完成设色，到访已保存" : "设色 \(Int(progress * 100))%")
-            .accessibilityHint(colorReady ? "向右拖到底并松手，或使用完成到访操作" : "设色图暂未加载")
-            .accessibilityAction(named: Text("完成到访")) { _ = checkIn() }
+            .accessibilityValue(finished ? "今日到访已保存" : "今日到访，拖动进度 \(Int(progress * 100))%")
+            .accessibilityHint(colorReady ? "向右拖到底并松手，将保存今天的到访日期；也可使用记录今日到访操作" : "设色图暂未加载")
+            .accessibilityAction(named: Text("记录今日到访")) { _ = checkIn() }
         }
         .frame(height: 54)
         .onChange(of: dragging) { _, active in
@@ -234,11 +220,8 @@ struct ArrivalSlider: View {
 
     @discardableResult private func checkIn() -> Bool {
         guard !finished, ArtworkView.artwork(site.colorImage) != nil else { return false }
-        var next = library.record(for: site)
-        guard next.status != .visited else { return false }
-        next.status = .visited
-        next.visitedOn = Self.today()
-        if library.setRecord(next, for: site) {
+        guard library.record(for: site).status != .visited else { return false }
+        if library.recordToday(for: site) {
             finished = true
             progress = 1
             Haptics.success()
@@ -248,32 +231,37 @@ struct ArrivalSlider: View {
         Haptics.error()
         return false
     }
-
-    static func today() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd"
-        return formatter.string(from: .now)
-    }
 }
 
 struct VisitEditor: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dismiss) private var dismiss
     let site: Monument
-    @State private var date = ""
+    @State private var date = Date()
+    @State private var dateKnown = false
+    @State private var loaded = false
+    @State private var wasVisited = false
     @State private var note = ""
     @State private var error: String?
 
     var body: some View {
         NavigationStack {
             Form {
-                Section("到访日期 · 可留空") {
-                    TextField("YYYY-MM-DD", text: $date, prompt: Text("YYYY-MM-DD").foregroundStyle(Palette.paper3))
-                        .keyboardType(.numbersAndPunctuation)
+                Section("到访日期") {
+                    Toggle("记得具体日期", isOn: $dateKnown)
+                        .accessibilityIdentifier("visit-date-known")
+                    if dateKnown {
+                        DatePicker("选择日期", selection: $date, in: ...Date(), displayedComponents: .date)
+                            .accessibilityIdentifier("visit-date")
+                    } else {
+                        Text("日期不详 · 留空保存，不自动填写今天")
+                            .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
+                    }
                 }
                 .listRowBackground(Palette.ink2)
                 Section("到访笔记") {
                     TextEditor(text: $note).frame(minHeight: 160)
+                        .accessibilityLabel("到访笔记").accessibilityIdentifier("visit-note")
                     Text("\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
                 .listRowBackground(Palette.ink2)
@@ -282,25 +270,34 @@ struct VisitEditor: View {
             .foregroundStyle(Palette.paper)
             .scrollContentBackground(.hidden)
             .background(Palette.ink)
-            .navigationTitle("记录到访")
+            .navigationTitle(wasVisited ? "编辑到访记录" : "补记到访")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
-                ToolbarItem(placement: .confirmationAction) { Button("保存") { save() } }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button(wasVisited ? "保存修改" : "记录到访") { save() }
+                        .accessibilityIdentifier("save-visit")
+                }
             }
             .onAppear {
+                guard !loaded else { return }
                 let record = library.record(for: site)
-                date = record.visitedOn
+                wasVisited = record.status == .visited
+                dateKnown = !record.visitedOn.isEmpty
+                date = LibraryStore.dateFormatter().date(from: record.visitedOn) ?? .now
                 note = record.note
+                loaded = true
             }
         }
         .fangguAppearance()
     }
 
     private func save() {
-        guard date.isEmpty || LibraryStore.validDate(date) else { error = "请输入有效且不晚于今天的日期"; Haptics.error(); return }
+        let dateText = dateKnown ? LibraryStore.dateFormatter().string(from: date) : ""
+        guard dateText.isEmpty || LibraryStore.validDate(dateText) else { error = "请选择不晚于今天的日期"; Haptics.error(); return }
         guard note.utf16.count <= 12000 else { error = "笔记不能超过 12000 字"; Haptics.error(); return }
         let wasVisited = library.record(for: site).status == .visited
-        if library.setRecord(VisitRecord(status: .visited, visitedOn: date, note: note), for: site) {
+        if library.setRecord(VisitRecord(status: .visited, visitedOn: dateText, note: note), for: site) {
             if wasVisited { Haptics.soft() } else { Haptics.success() }
             dismiss()
         } else { error = library.error; Haptics.error() }
@@ -309,8 +306,10 @@ struct VisitEditor: View {
 
 struct ReviewEditor: View {
     @EnvironmentObject private var library: LibraryStore
+    @EnvironmentObject private var undoPresentation: UndoPresentation
     @Environment(\.dismiss) private var dismiss
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let site: Monument
     @State private var dimensions = DimensionScores()
     @State private var legacyRating: Int?
@@ -346,18 +345,11 @@ struct ReviewEditor: View {
                         .accessibilityIdentifier("review-save-error")
                     }
                     VStack(spacing: 8) {
-                        HStack {
-                            Text("我的六维图").font(FangguFont.serif(17))
-                            Spacer()
-                            Button {
-                                dimensions = DimensionScores()
-                                if saveDimensions(dimensions) { Haptics.selection() }
-                            } label: {
-                                Text("重置六项").font(FangguFont.serif(12))
-                                    .frame(minHeight: 44).contentShape(Rectangle())
-                            }
-                            .disabled(dimensions.isEmpty)
-                            .accessibilityIdentifier("reset-dimensions")
+                        if dynamicTypeSize.isAccessibilitySize {
+                            VStack(alignment: .leading, spacing: 8) { reviewHeading }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        } else {
+                            HStack { reviewHeading }
                         }
                         ReviewRadar(scores: $dimensions, onCommit: saveDimensions)
                     }
@@ -377,7 +369,8 @@ struct ReviewEditor: View {
                         Text("\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                     }
                     Button("清除评价", role: .destructive) {
-                        if library.setReview(dimensions: DimensionScores(), text: "", for: site, clearLegacyRating: true) {
+                        guard flushChanges() else { return }
+                        if library.clearReview(for: site) {
                             textSaveTask?.cancel()
                             dimensions = DimensionScores(); text = ""; legacyRating = nil; error = nil
                             Haptics.selection()
@@ -385,7 +378,7 @@ struct ReviewEditor: View {
                     }
                     .foregroundStyle(Palette.redText).frame(minHeight: 44)
                     .disabled(dimensions.isEmpty && text.isEmpty && legacyRating == nil)
-                    Text(hasUnsavedChanges ? "修改尚未保存" : "松手即保存，短评自动保存。")
+                    Text(hasUnsavedChanges ? "修改尚未保存" : dynamicTypeSize.isAccessibilitySize ? "选定档位即保存，短评自动保存。" : "松手即保存，短评自动保存。")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                         .accessibilityIdentifier("review-autosave-status")
                 }
@@ -394,18 +387,26 @@ struct ReviewEditor: View {
             .foregroundStyle(Palette.paper)
             .background(Palette.ink)
             .scrollDismissesKeyboard(.interactively)
+            .safeAreaInset(edge: .bottom, spacing: 0) { UndoFeedback(inReviewEditor: true) }
             .navigationTitle("我的评价")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) { Button("完成") { close() } }
             }
             .onAppear {
+                undoPresentation.reviewIsPresented = true
                 guard !loaded else { return }
                 let review = library.review(for: site)
                 dimensions = review.dimensions
                 legacyRating = review.rating
                 text = review.text
                 loaded = true
+            }
+            .onChange(of: library.data.reviews[site.id]) { old, new in
+                // Undo updates only fields which have no unsaved local edit.
+                if dimensions == (old?.dimensions ?? DimensionScores()) { dimensions = new?.dimensions ?? DimensionScores() }
+                if text == (old?.text ?? "") { text = new?.text ?? "" }
+                legacyRating = new?.rating
             }
             .onChange(of: text) { _, _ in scheduleTextSave() }
             .onChange(of: editingText) { _, focused in
@@ -414,10 +415,30 @@ struct ReviewEditor: View {
             .onChange(of: scenePhase) { _, phase in
                 if phase != .active { _ = saveText() }
             }
-            .onDisappear { textSaveTask?.cancel() }
+            .onDisappear {
+                textSaveTask?.cancel()
+                undoPresentation.reviewIsPresented = false
+            }
             .interactiveDismissDisabled(hasUnsavedChanges)
         }
         .fangguAppearance()
+    }
+
+    @ViewBuilder private var reviewHeading: some View {
+        Text("我的六维图").font(FangguFont.serif(17))
+        if !dynamicTypeSize.isAccessibilitySize { Spacer() }
+        Button {
+            if library.resetReviewDimensions(for: site) {
+                dimensions = DimensionScores()
+                if !hasUnsavedChanges { error = nil }
+                Haptics.selection()
+            } else { showSaveError() }
+        } label: {
+            Text("重置六项").font(FangguFont.serif(12))
+                .frame(minHeight: 44).contentShape(Rectangle())
+        }
+        .disabled(dimensions.isEmpty)
+        .accessibilityIdentifier("reset-dimensions")
     }
 
     private func saveDimensions(_ next: DimensionScores) -> Bool {

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject private var library: LibraryStore
+    @StateObject private var undoPresentation = UndoPresentation()
     @State private var selectedTab = 0
     @State private var keyboardVisible = false
 
@@ -15,6 +16,7 @@ struct ContentView: View {
             }
         }
         .fangguAppearance()
+        .environmentObject(undoPresentation)
         .tint(Palette.gold)
         .overlay(alignment: .top) {
             if let error = library.error {
@@ -47,7 +49,7 @@ struct ContentView: View {
                 tabRoot(AtlasMapView(onBrowse: { selectedTab = 0 }))
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
             }
-            .tabItem { Label("地图", systemImage: "map") }.tag(1)
+            .tabItem { Label("足迹", systemImage: "map") }.tag(1)
 
             NavigationStack {
                 tabRoot(TimelineView())
@@ -64,10 +66,11 @@ struct ContentView: View {
     }
 
     @ViewBuilder private func tabRoot<Content: View>(_ content: Content) -> some View {
+        let root = content.safeAreaInset(edge: .bottom, spacing: 0) { UndoFeedback() }
         if #available(iOS 26.0, *) {
-            content
+            root
         } else {
-            content
+            root
                 .toolbar(.hidden, for: .tabBar)
                 .safeAreaInset(edge: .bottom, spacing: 0) {
                     if !keyboardVisible { FrostedTabBar(selection: $selectedTab) }
@@ -86,7 +89,7 @@ private struct FrostedTabBar: View {
 
     private let items: [(title: String, icon: String)] = [
         ("图鉴", "square.grid.2x2"),
-        ("地图", "map"),
+        ("足迹", "map"),
         ("年表", "circle.grid.cross"),
         ("我的", "seal")
     ]
@@ -163,9 +166,8 @@ struct ExploreView: View {
     @State private var showingFilters = false
     @State private var showingAbout = false
 
-    private let regionNames = ["north": "华北", "northeast": "东北", "east": "华东", "central": "华中", "south": "华南", "southwest": "西南", "northwest": "西北", "jp_kinki": "近畿", "kr_capital": "韩国首都圈", "kr_chungcheong": "忠清地区", "kr_gyeongsang": "庆尚地区", "kp_pyongyang": "平壤地区", "kp_kaesong": "开城地区", "jp_kanto": "关东", "jp_chugoku": "中国地方", "kh_angkor": "吴哥地区", "id_java": "爪哇", "th_north": "泰国北部", "th_central": "泰国中部", "mm_central": "缅甸中部", "la_north": "老挝北部", "vn_central": "越南中部", "ph_luzon": "吕宋"]
-    private let countryNames = ["CN": "中国", "JP": "日本", "KR": "韩国", "KP": "朝鲜", "KH": "柬埔寨", "ID": "印度尼西亚", "TH": "泰国", "MM": "缅甸", "LA": "老挝", "VN": "越南", "PH": "菲律宾"]
-    private let typeAliases = ["sculpture": "彩塑悬塑 造像 雕塑", "gate": "山门 牌坊 牌楼", "screen": "影壁 琉璃照壁"]
+    private let regionNames = CatalogSearch.regionNames
+    private let countryNames = CatalogSearch.countryNames
 
     private var dynastyOptions: [String: String] {
         library.monuments.filter { country == "all" || $0.country == country }
@@ -209,21 +211,16 @@ struct ExploreView: View {
         let sorted = library.monuments.enumerated().sorted {
             $0.element.year == $1.element.year ? $0.offset < $1.offset : $0.element.year < $1.element.year
         }.map(\.element)
-        let search = query.trimmingCharacters(in: .whitespacesAndNewlines)
+        let terms = CatalogSearch.terms(query)
         let matches = sorted.filter { site in
             let record = library.record(for: site)
             let statusMatches = status == "all" || record.status.rawValue == status
-            let protection = site.protection.flatMap { [$0.unitName, $0.scope, $0.batchLabel, "第\($0.batch)批国保", "国保", "全国重点文物保护单位"] }
-            let haystack = ([site.name, site.short, site.sub, site.place, site.province, site.dynastyName,
-                             countryNames[site.country] ?? site.country, regionNames[site.region] ?? site.region]
-                + site.typeNames + site.types.compactMap { typeAliases[$0] }
-                + site.legacyNames + site.legacyPlaces + protection).joined(separator: " ")
             return statusMatches && (country == "all" || site.country == country)
                 && (region == "all" || site.region == region)
                 && (province == "all" || site.province == province)
                 && (dynasty == "all" || site.dynasty == dynasty)
                 && (type == "all" || site.types.contains(type))
-                && (search.isEmpty || haystack.localizedCaseInsensitiveContains(search))
+                && CatalogSearch.matches(site, terms: terms)
         }
         switch sortOrder {
         case "wishlist":
@@ -249,7 +246,7 @@ struct ExploreView: View {
                 }
                 .padding(.top, 28)
                 .padding(.bottom, 20)
-                FangguField(placeholder: "搜索古迹、地点或时代", text: $query)
+                FangguField(placeholder: "搜索古迹、地点或时代", text: $query, showsClearButton: true)
                     .padding(.bottom, 18)
                 statusTabs.padding(.bottom, 16)
                 catalogControls
@@ -257,6 +254,7 @@ struct ExploreView: View {
                 .padding(.bottom, 20)
                 HStack {
                     Text("共 \(results.count) 处")
+                        .accessibilityIdentifier("catalog-result-count")
                         .font(FangguFont.mono(12))
                         .foregroundStyle(Palette.paper2)
                     Spacer()
@@ -620,31 +618,17 @@ struct MonumentCard: View {
                 .padding(.horizontal, 17)
                 .padding(.bottom, 14)
             }
-            if record.status != .visited {
-                VStack(alignment: .leading, spacing: 10) {
-                    ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
-                    Button("填写到访日期与笔记") { editingVisit = true }
-                        .buttonStyle(FangguOutlineButton())
-                }
-                .padding(.horizontal, 17)
-                .padding(.bottom, 12)
-            } else {
-                Text(record.visitedOn.isEmpty ? "已到访" : "已到访 · \(record.visitedOn)")
-                    .font(FangguFont.mono(11))
-                    .foregroundStyle(Palette.redText)
-                    .padding(.horizontal, 17)
-                    .padding(.bottom, 12)
-            }
-            HStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 10) {
                 if record.status != .visited {
-                    Button(record.status == .wishlist ? "移出心愿单" : "加入心愿单") {
-                        var next = record
-                        next.status = record.status == .wishlist ? .unvisited : .wishlist
-                        if library.setRecord(next, for: site) { Haptics.soft() }
-                        else { Haptics.error() }
-                    }
-                    .buttonStyle(FangguOutlineButton())
+                    ArrivalSlider(site: site, progress: $reveal, onComplete: finishArrival)
+                } else {
+                    Text(record.visitedOn.isEmpty ? "已到访 · 日期不详" : "已到访 · \(record.visitedOn)")
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.redText)
                 }
+                VisitActions(site: site, editingVisit: $editingVisit)
+            }
+            .padding(.horizontal, 17).padding(.bottom, 12)
+            HStack(spacing: 10) {
                 Button("写短评 / 打分") { editingReview = true }
                     .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
                 Spacer(minLength: 0)

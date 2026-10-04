@@ -29,10 +29,11 @@ struct SketchMapProjection {
         let width = max(Double(size.width), 100)
         let height = max(Double(size.height), 100)
         frame = CGRect(x: 42, y: 24, width: width - 62, height: height - 54)
-        let lat0 = places.map(\.latitude).min() ?? 28.8
-        let lat1 = places.map(\.latitude).max() ?? 40.7
-        let lon0 = places.map(\.longitude).min() ?? 108.2
-        let lon1 = places.map(\.longitude).max() ?? 122.6
+        // Keep recognizable coastlines in view even for a single inland visit.
+        let lat0 = min(20, places.map(\.latitude).min() ?? 20)
+        let lat1 = max(45, places.map(\.latitude).max() ?? 45)
+        let lon0 = min(100, places.map(\.longitude).min() ?? 100)
+        let lon1 = max(142, places.map(\.longitude).max() ?? 142)
         centerLat = (lat0 + lat1) / 2
         centerLon = (lon0 + lon1) / 2
         let cosLat = max(0.1, cos(centerLat * .pi / 180))
@@ -58,11 +59,14 @@ struct SketchMapProjection {
         // Weighted centroids preserve the geographic center of every group.
         while result.count > 1 {
             var closest: (Int, Int)?
-            var distance: CGFloat = 46
+            var distance = CGFloat.infinity
             for i in result.indices {
                 for j in result.indices where j > i {
                     let delta = hypot(result[i].point.x - result[j].point.x, result[i].point.y - result[j].point.y)
-                    if delta < distance { closest = (i, j); distance = delta }
+                    // Named markers are 66 × 44pt, with space between labels.
+                    if abs(result[i].point.x - result[j].point.x) < 76,
+                       abs(result[i].point.y - result[j].point.y) < 50,
+                       delta < distance { closest = (i, j); distance = delta }
                 }
             }
             guard let (i, j) = closest else { break }

@@ -3,6 +3,7 @@ import Foundation
 @MainActor final class LibraryStore: ObservableObject {
     @Published private(set) var data = LibraryData()
     @Published private(set) var error: String?
+    @Published private(set) var undoAction: LibraryUndo?
     let monuments: [Monument]
     let timeline: TimelineCatalog
     private let ids: Set<String>
@@ -36,18 +37,84 @@ import Foundation
     func review(for site: Monument) -> Review { data.reviews[site.id] ?? Review() }
 
     @discardableResult func setRecord(_ record: VisitRecord, for site: Monument) -> Bool {
-        guard ids.contains(site.id) else { return false }
-        return commit { $0.records[site.id] = record }
+        guard ids.contains(site.id), !loadFailed else { return false }
+        guard record != self.record(for: site) else { return true }
+        let previous = data.records[site.id]
+        guard commit({ $0.records[site.id] = record }) else { return false }
+        undoAction = LibraryUndo(message: "\(site.short.isEmpty ? site.name : site.short) · \(record.status.title)",
+                                 change: .record(site.id, previous))
+        return true
+    }
+
+    /// A status correction preserves the date and note; only an explicit today action supplies a date.
+    @discardableResult func setStatus(_ status: VisitStatus, for site: Monument) -> Bool {
+        var next = record(for: site)
+        next.status = status
+        return setRecord(next, for: site)
+    }
+
+    @discardableResult func recordToday(for site: Monument) -> Bool {
+        var next = record(for: site)
+        guard next.status != .visited else { return setRecord(next, for: site) }
+        next.status = .visited
+        next.visitedOn = Self.today()
+        return setRecord(next, for: site)
     }
 
     @discardableResult func setReview(dimensions: DimensionScores, text: String, for site: Monument, clearLegacyRating: Bool = false) -> Bool {
         guard ids.contains(site.id) else { return false }
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
-        return commit {
+        let previous = review(for: site)
+        let saved = commit {
             let legacyRating = clearLegacyRating ? nil : $0.reviews[site.id]?.rating
-            $0.reviews[site.id] = Review(rating: legacyRating, dimensions: dimensions, text: text, updatedAt: formatter.string(from: .now))
+            $0.reviews[site.id] = Review(rating: legacyRating, dimensions: dimensions, text: text, updatedAt: Self.timestamp())
         }
+        if saved, let action = undoAction {
+            switch action.change {
+            case .review(let id, _) where id == site.id: undoAction = nil
+            case .dimensions(let id, _) where id == site.id && previous.dimensions != dimensions: undoAction = nil
+            default: break
+            }
+        }
+        return saved
+    }
+
+    @discardableResult func resetReviewDimensions(for site: Monument) -> Bool {
+        let previous = review(for: site).dimensions
+        guard !previous.isEmpty else { return true }
+        guard setReviewDimensions(DimensionScores(), for: site) else { return false }
+        undoAction = LibraryUndo(message: "\(site.short.isEmpty ? site.name : site.short) · 已重置六项评分", change: .dimensions(site.id, previous))
+        return true
+    }
+
+    @discardableResult func clearReview(for site: Monument) -> Bool {
+        let previous = review(for: site)
+        guard previous.rating != nil || !previous.dimensions.isEmpty || !previous.text.isEmpty else { return true }
+        guard setReview(dimensions: DimensionScores(), text: "", for: site, clearLegacyRating: true) else { return false }
+        undoAction = LibraryUndo(message: "\(site.short.isEmpty ? site.name : site.short) · 已清除评价", change: .review(site.id, previous))
+        return true
+    }
+
+    @discardableResult func undoLastChange() -> Bool {
+        guard let action = undoAction else { return false }
+        let saved = commit { next in
+            switch action.change {
+            case .record(let id, let previous): next.records[id] = previous
+            case .dimensions(let id, let previous):
+                var review = next.reviews[id] ?? Review()
+                review.dimensions = previous
+                review.updatedAt = Self.timestamp()
+                next.reviews[id] = review
+            case .review(let id, var previous):
+                previous.updatedAt = Self.timestamp()
+                next.reviews[id] = previous
+            }
+        }
+        if saved { undoAction = nil }
+        return saved
+    }
+
+    func dismissUndo(_ id: UUID) {
+        if undoAction?.id == id { undoAction = nil }
     }
 
     @discardableResult func setReviewDimensions(_ dimensions: DimensionScores, for site: Monument) -> Bool {
@@ -99,11 +166,12 @@ import Foundation
         loadFailed = false
         error = nil
         data = merged
+        undoAction = nil
     }
 
     @discardableResult func linkLegacy(_ oldID: String, to site: Monument) -> Bool {
         guard let old = data.customSites.first(where: { $0.id == oldID }), data.links[oldID] == nil else { return false }
-        return commit { next in
+        let saved = commit { next in
             let existing = next.records[site.id] ?? VisitRecord(status: site.initialStatus)
             let previous = next.records[oldID] ?? VisitRecord(status: .wishlist)
             let status: VisitStatus = existing.status == .visited || previous.status == .visited ? .visited :
@@ -114,6 +182,8 @@ import Foundation
             next.records[site.id] = VisitRecord(status: status, visitedOn: existing.visitedOn.isEmpty ? previous.visitedOn : existing.visitedOn, note: note)
             next.links[oldID] = site.id
         }
+        if saved { undoAction = nil }
+        return saved
     }
 
     private func commit(_ change: (inout LibraryData) -> Void) -> Bool {
@@ -164,14 +234,39 @@ import Foundation
     }
 
     static func validDate(_ value: String) -> Bool {
+        let formatter = dateFormatter()
+        formatter.isLenient = false
+        guard let date = formatter.date(from: value), formatter.string(from: date) == value else { return false }
+        return date <= .now
+    }
+
+    static func today() -> String { dateFormatter().string(from: .now) }
+
+    static func dateFormatter() -> DateFormatter {
         let formatter = DateFormatter()
         formatter.calendar = Calendar(identifier: .gregorian)
         formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.timeZone = .current
         formatter.dateFormat = "yyyy-MM-dd"
-        formatter.isLenient = false
-        guard let date = formatter.date(from: value), formatter.string(from: date) == value else { return false }
-        return date <= .now
+        return formatter
+    }
+
+    private static func timestamp() -> String {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return formatter.string(from: .now)
+    }
+}
+
+struct LibraryUndo: Identifiable {
+    let id = UUID()
+    let message: String
+    let change: Change
+
+    enum Change {
+        case record(String, VisitRecord?)
+        case dimensions(String, DimensionScores)
+        case review(String, Review)
     }
 }
 

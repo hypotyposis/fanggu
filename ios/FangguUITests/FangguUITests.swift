@@ -14,7 +14,7 @@ final class FangguUITests: XCTestCase {
             if title == "年表" { capture(app, "switching-timeline") }
         }
         for _ in 0..<2 {
-            switchTab("地图", expected: "到访地图")
+            switchTab("足迹", expected: "我的足迹")
             switchTab("年表", expected: "东汉至今 · 东亚与东南亚")
             switchTab("我的", expected: "亲见 · 所愿 · 私人记录")
             let appearance = app.segmentedControls["appearance-picker"]
@@ -46,7 +46,7 @@ final class FangguUITests: XCTestCase {
         let result = app.buttons.matching(NSPredicate(format: "label CONTAINS %@ AND label CONTAINS %@", "根津神社楼门", "细读")).firstMatch
         XCTAssertTrue(result.waitForExistence(timeout: 5))
         result.tap()
-        XCTAssertTrue(app.buttons["标记到访"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["补记到访"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["根津神社楼门"].exists)
         XCTAssertTrue(app.descendants(matching: .any)["detail-artwork"].firstMatch.exists)
         capture(app, "tokyo-nezu-detail")
@@ -72,8 +72,8 @@ final class FangguUITests: XCTestCase {
         XCTAssertTrue(appearance.waitForExistence(timeout: 10))
         XCTAssertTrue(appearance.buttons["亮色"].isSelected, "Appearance must survive relaunch")
 
-        app.buttons["地图"].tap()
-        XCTAssertTrue(app.staticTexts["到访地图"].waitForExistence(timeout: 10))
+        app.buttons["足迹"].tap()
+        XCTAssertTrue(app.staticTexts["我的足迹"].waitForExistence(timeout: 10))
         capture(app, "light-map")
         app.buttons["年表"].tap()
         capture(app, "light-timeline")
@@ -90,7 +90,7 @@ final class FangguUITests: XCTestCase {
         app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "未标记")).firstMatch.tap()
         openFirstCatalogSite(in: app)
         capture(app, "light-detail")
-        let visit = app.buttons["标记到访"].exists ? app.buttons["标记到访"] : app.buttons["编辑到访记录"]
+        let visit = app.buttons["补记到访"].exists ? app.buttons["补记到访"] : app.buttons["编辑到访记录"]
         for _ in 0..<8 where !visit.isHittable { app.swipeDown() }
         visit.tap()
         XCTAssertTrue(app.buttons["取消"].waitForExistence(timeout: 5))
@@ -114,8 +114,8 @@ final class FangguUITests: XCTestCase {
     func testNativeSectionsStayAvailable() {
         let app = XCUIApplication()
         app.launch()
-        app.buttons["地图"].tap()
-        XCTAssertTrue(app.staticTexts["到访地图"].waitForExistence(timeout: 10))
+        app.buttons["足迹"].tap()
+        XCTAssertTrue(app.staticTexts["我的足迹"].waitForExistence(timeout: 10))
         capture(app, "map")
         app.buttons["年表"].tap()
         XCTAssertTrue(app.staticTexts["东汉至今 · 东亚与东南亚"].waitForExistence(timeout: 10))
@@ -279,7 +279,7 @@ final class FangguUITests: XCTestCase {
         openFirstCatalogSite(in: app)
         XCTAssertTrue(app.staticTexts["我的访古记"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.staticTexts["我的评价"].exists)
-        XCTAssertTrue(app.buttons["标记到访"].exists || app.buttons["编辑到访记录"].exists)
+        XCTAssertTrue(app.buttons["补记到访"].exists || app.buttons["编辑到访记录"].exists)
         capture(app, "detail")
     }
 
@@ -299,11 +299,12 @@ final class FangguUITests: XCTestCase {
         app.launch()
         openFirstCatalogSite(in: app)
 
-        let reset = app.buttons["移至心愿单"]
-        if reset.exists {
-            for _ in 0..<8 where !reset.isHittable { app.swipeUp() }
-            XCTAssertTrue(reset.isHittable)
-            reset.tap()
+        let statusMenu = app.buttons["visit-status-menu"]
+        if statusMenu.exists {
+            for _ in 0..<8 where !statusMenu.isHittable { app.swipeDown() }
+            statusMenu.tap()
+            app.buttons["改为未标记"].tap()
+            app.buttons["关闭提示"].tap()
         }
         let slider = app.descendants(matching: .any)["到访打卡"].firstMatch
         for _ in 0..<8 where !slider.isHittable { app.swipeUp() }
@@ -327,13 +328,13 @@ final class FangguUITests: XCTestCase {
                        "The arrival control must not hold the UI for the old 1.35-second delay")
         let visited = app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", "已到访")).firstMatch
         XCTAssertTrue(visited.waitForExistence(timeout: 5))
-        XCTAssertTrue(app.buttons["移至心愿单"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["visit-status-menu"].waitForExistence(timeout: 5))
     }
 
     func testMapMarkersAndSearchOpenVisitedSites() {
         let app = XCUIApplication()
         app.launch()
-        app.buttons["地图"].tap()
+        app.buttons["足迹"].tap()
         let map = app.descendants(matching: .any)["visited-map"].firstMatch
         XCTAssertTrue(map.waitForExistence(timeout: 10))
         XCTAssertEqual(map.frame.height, 280, accuracy: 2,
