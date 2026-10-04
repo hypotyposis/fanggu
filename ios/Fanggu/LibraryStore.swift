@@ -6,6 +6,9 @@ import Foundation
     @Published private(set) var undoAction: LibraryUndo?
     let monuments: [Monument]
     let timeline: TimelineCatalog
+    let curations: [Curation]
+    private let monumentsByID: [String: Monument]
+    private let curationsBySite: [String: [Curation]]
     private let ids: Set<String>
     private let fileURL: URL
     private var loadFailed = false
@@ -14,7 +17,17 @@ import Foundation
         let url = Bundle.main.url(forResource: "catalog", withExtension: "json")!
         monuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
         timeline = TimelineCatalog(monuments: monuments)
-        ids = Set(monuments.map(\.id))
+        let catalogIDs = Set(monuments.map(\.id))
+        ids = catalogIDs
+        monumentsByID = Dictionary(monuments.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+        // Lists ship with the catalogue; members that are missing from this build are dropped rather than shown empty.
+        let lists = Bundle.main.url(forResource: "curations", withExtension: "json")
+            .flatMap { try? JSONDecoder().decode([Curation].self, from: Data(contentsOf: $0)) } ?? []
+        let available = lists.filter { list in list.items.contains { catalogIDs.contains($0) } }
+        var bySite: [String: [Curation]] = [:]
+        for list in available { for id in list.items where catalogIDs.contains(id) { bySite[id, default: []].append(list) } }
+        curations = available
+        curationsBySite = bySite
         fileURL = suppliedURL ?? TestScope.libraryFileURL(for: scope)
         do {
             if FileManager.default.fileExists(atPath: fileURL.path) {
@@ -33,6 +46,44 @@ import Foundation
     }
 
     func review(for site: Monument) -> Review { data.reviews[site.id] ?? Review() }
+
+    func curations(for site: Monument) -> [Curation] { curationsBySite[site.id] ?? [] }
+
+    /// Members in editorial order; IDs absent from this catalogue build are skipped.
+    func members(of list: Curation) -> [Monument] { list.items.compactMap { monumentsByID[$0] } }
+
+    func progress(of list: Curation) -> CurationProgress {
+        let members = members(of: list)
+        return CurationProgress(visited: members.filter { record(for: $0).status == .visited }.count, total: members.count)
+    }
+
+    /// Derived collection progress per dynasty, province or type; totals are catalogue counts, visited reads personal records.
+    func collectionGroups(by facet: CollectionFacet) -> [CollectionGroup] {
+        var totals: [String: CollectionGroup] = [:]
+        var order: [String: Int] = [:]
+        for site in monuments {
+            let visited = record(for: site).status == .visited
+            let keys: [(String, String, String?, Int)]
+            switch facet {
+            case .dynasty: keys = [(site.dynasty, site.dynastyName, site.dynastyColor, site.dynastyStart)]
+            case .province:
+                let country = CatalogSearch.countryNames[site.country] ?? site.country
+                keys = [(site.province, site.country == "CN" ? site.province : "\(country) · \(site.province)", nil, 0)]
+            case .type: keys = zip(site.types, site.typeNames).map { ($0, $1, nil, 0) }
+            }
+            for (key, name, color, start) in keys {
+                let current = totals[key] ?? CollectionGroup(id: key, name: name, colorHex: color, total: 0, visited: 0)
+                totals[key] = CollectionGroup(id: key, name: name, colorHex: color, total: current.total + 1, visited: current.visited + (visited ? 1 : 0))
+                order[key] = min(order[key] ?? start, start)
+            }
+        }
+        // Larger groups first so the main collections lead; ties fall back to chronology for dynasties and name otherwise.
+        return totals.values.sorted { lhs, rhs in
+            if lhs.total != rhs.total { return lhs.total > rhs.total }
+            if facet == .dynasty, order[lhs.id] != order[rhs.id] { return (order[lhs.id] ?? 0) < (order[rhs.id] ?? 0) }
+            return lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending
+        }
+    }
 
     @discardableResult func setRecord(_ record: VisitRecord, for site: Monument) -> Bool {
         guard ids.contains(site.id), !loadFailed else { return false }
@@ -254,6 +305,27 @@ import Foundation
         formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
         return formatter.string(from: .now)
     }
+}
+
+enum CollectionFacet: String, CaseIterable, Identifiable {
+    case dynasty, province, type
+    var id: String { rawValue }
+    var title: String {
+        switch self {
+        case .dynasty: "时代"
+        case .province: "省份"
+        case .type: "类型"
+        }
+    }
+}
+
+struct CollectionGroup: Identifiable, Equatable {
+    let id: String
+    let name: String
+    let colorHex: String?
+    let total: Int
+    let visited: Int
+    var progress: CurationProgress { CurationProgress(visited: visited, total: total) }
 }
 
 struct LibraryUndo: Identifiable {

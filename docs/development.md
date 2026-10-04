@@ -1,6 +1,6 @@
 # 开发指南
 
-本指南说明当前项目的模块关系、数据约束、资产流程和验证方法。简要约定见 [AGENTS.md](../AGENTS.md)，产品操作见 [README](../README.md)，图版目录见 [assets/README.md](../assets/README.md)。
+本指南说明当前项目的模块关系、数据约束、资产流程和验证方法。简要约定见 [AGENTS.md](../AGENTS.md)，产品操作见 [README](../README.md)，图版目录见 [assets/README.md](../assets/README.md)。第一次进入仓库先看 [架构与数据流](architecture.md)；字段定义见 [数据模型](data-model.md)，按任务的操作步骤见 [常见任务](tasks.md)，检查的选择与汇报见 [测试与验证](testing.md)，名词见 [术语表](glossary.md)。
 
 ## 环境与首次运行
 
@@ -48,6 +48,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `sites.js` | `SITES` 古迹正文、`DYN` 朝代、`CHAPTERS` 章节、`PLACES` 地点 |
 | `catalog.js` | 国家、地区、行政区、类型和搜索分类；供 iOS 导出和目录验证使用 |
 | `protection.js` / `protection-data.js` | 国保资料查询 / 生成的官方登记数据 |
+| `curations.js` | 专题名录（名录／线路／专题）的编辑清单，只引用古迹 ID；由导出脚本校验并写入 `ios/Fanggu/Resources/curations.json`，进度在 App 内按个人记录派生 |
 | `plates.js` / `colored-plates.js` | 生成的线稿 / 设色清单，路径相对仓库根目录 |
 | `palette.css` | 制图、App 导出与本地审图共用的朝代色板 |
 | `plate-preview.css` | 本地审图的基础样式与参数 SVG 样式 |
@@ -58,9 +59,9 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `ios/Fanggu/LibraryStore.swift` | 个人记录校验、保存、备份迁移与失败恢复 |
 | `ios/Fanggu/ContentView.swift` / `MonumentDetailView.swift` / `MapTimelineView.swift` / `TimelineView.swift` / `MyLibraryView.swift` | 原生图鉴、详情、地图年表和个人资料 |
 
-目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
+目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js → curations.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
 
-国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
+国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
 
 ## 数据和个人记录
 
@@ -223,6 +224,7 @@ App 目录更新后同步全部运行图版，再构建；Git 中的路径和清
 ## 文档维护
 
 - [AGENTS.md](../AGENTS.md) 保存跨任务的简要规则；本指南保存机制、命令和操作步骤；图版规范保存领域约束。避免多处复制相同长规则。
+- [架构与数据流](architecture.md)、[数据模型](data-model.md)、[常见任务](tasks.md)、[测试与验证](testing.md)、[术语表](glossary.md)、[脚本一览](../scripts/README.md)、[测试一览](../tests/README.md) 面向第一次进入仓库的人和代理：只做地图、字段、步骤与检查的索引，不新增规则。接口、命令、字段或测试布局变化时同步它们。
 - [增量制图操作手册](monument-batch-workflow.md) 保存新增古迹的调度、止损、恢复和耗时记录规则；线稿与设色规范共同引用它，不另建互相矛盾的批量流程。
 - [线稿历史任务](../assets/research/history/line-production-2026-09-15.md)、[设色历史任务](../assets/color-research/history/color-production-2026-09-15.md) 保存原始分工和当时授权，供追溯；不用于启动新任务。
 - [恢复摘要](../assets/color-research/history/recovery-2026-09-15.md)、批次清单和考据提示词保留历史事实。详细 `recovery/` 材料仅在本地保存。可以追加状态说明与当前入口，不篡改当时实际输入、数量或验证结果。

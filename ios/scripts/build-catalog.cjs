@@ -5,7 +5,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const root = path.resolve(__dirname, '../..');
 const context = vm.createContext({});
-for (const filename of ['sites.js', 'plates.js', 'colored-plates.js', 'protection-data.js', 'protection.js', 'catalog.js']) {
+for (const filename of ['sites.js', 'plates.js', 'colored-plates.js', 'protection-data.js', 'protection.js', 'catalog.js', 'curations.js']) {
   if (!fs.existsSync(path.join(root, filename))) continue;
   vm.runInContext(fs.readFileSync(path.join(root, filename), 'utf8'), context, { filename });
 }
@@ -69,3 +69,14 @@ const destination = path.join(root, 'ios/Fanggu/Resources/catalog.json');
 fs.mkdirSync(path.dirname(destination), { recursive: true });
 fs.writeFileSync(destination, JSON.stringify(output, null, 2) + '\n');
 process.stdout.write(`Exported ${output.length} monuments to ${path.relative(root, destination)}\n`);
+
+// Editorial lists reference catalogue IDs only; the App resolves members and personal progress at runtime.
+const { kinds, curations, validate } = vm.runInContext('FangguCurations', context);
+const siteIDs = new Set(output.map(site => site.id));
+const lists = validate(curations, siteIDs).map(list => ({
+  id: list.id, kind: list.kind, kindName: kinds[list.kind], name: list.name,
+  eyebrow: text(list.eyebrow), lede: text(list.lede), note: text(list.note), items: list.items
+}));
+const listDestination = path.join(root, 'ios/Fanggu/Resources/curations.json');
+fs.writeFileSync(listDestination, JSON.stringify(lists, null, 2) + '\n');
+process.stdout.write(`Exported ${lists.length} curations to ${path.relative(root, listDestination)}\n`);
