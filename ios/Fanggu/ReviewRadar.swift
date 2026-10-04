@@ -135,14 +135,16 @@ struct ReviewRadar: View {
                 ZStack {
                     grid(layout)
                     RadarPolygon(values: ReviewDimension.allCases.map { polygonValue($0) })
-                        .fill(Palette.gold.opacity(0.15))
+                        .fill(LinearGradient(colors: [Palette.redText.opacity(0.18), Palette.redText.opacity(0.04)],
+                                             startPoint: .top, endPoint: .bottom))
                     RadarPolygon(values: ReviewDimension.allCases.map { polygonValue($0) })
-                        .stroke(Palette.gold, style: StrokeStyle(lineWidth: 1.8, lineJoin: .round))
+                        .stroke(Palette.redText.opacity(0.9), style: StrokeStyle(lineWidth: 1.5, lineJoin: .round))
                     ForEach(ReviewDimension.allCases) { axis in
                         axisLabel(axis).position(layout.label(axis))
                         if editable { handle(axis, layout: layout) }
                         else if let value = scores[axis] {
-                            Circle().fill(Palette.gold).frame(width: 7, height: 7)
+                            Circle().fill(Palette.redText).frame(width: 6, height: 6)
+                                .overlay(Circle().stroke(Palette.ink2, lineWidth: 1))
                                 .position(layout.point(axis, value: Double(value)))
                                 .accessibilityHidden(true)
                         }
@@ -150,19 +152,11 @@ struct ReviewRadar: View {
                 }
                 .coordinateSpace(name: "review-radar")
             }
-            .frame(height: 330)
+            // Leave room for the top and bottom captions inside the album rules.
+            .frame(height: 360)
             if editable {
                 readout
-                HStack(spacing: 0) {
-                    ForEach(1...5, id: \.self) { value in
-                        VStack(spacing: 3) {
-                            Text(ReviewDimension.grade(value)).font(FangguFont.mono(12))
-                            Text(ReviewDimension.description(value)).font(FangguFont.serif(11))
-                        }
-                        .foregroundStyle(Palette.paper2)
-                        .frame(maxWidth: .infinity)
-                    }
-                }
+                gradeLegend
                 .accessibilityElement(children: .combine)
                 Text("向外拉更高 · 松手即保存 · 不确定的项可以留空")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
@@ -181,30 +175,50 @@ struct ReviewRadar: View {
         ZStack {
             ForEach(1...5, id: \.self) { grade in
                 RadarPolygon(values: Array(repeating: Double(grade), count: 6))
-                    .stroke(Palette.paper.opacity(grade == 5 ? 0.22 : 0.1), lineWidth: 1)
+                    .stroke(Palette.goldDim.opacity(grade == 5 ? 0.5 : 0.22),
+                            lineWidth: grade == 5 ? 0.9 : 0.5)
             }
             Path { path in
                 for axis in ReviewDimension.allCases {
                     path.move(to: layout.center)
                     path.addLine(to: layout.point(axis, value: 5))
                 }
-            }.stroke(Palette.paper.opacity(0.14), lineWidth: 1)
+            }.stroke(Palette.goldDim.opacity(0.25), lineWidth: 0.5)
+            // Short transverse marks make each grade read as an engraved scale.
+            Path { path in
+                for axis in ReviewDimension.allCases {
+                    let angle = Double(axis.index) * .pi / 3
+                    for grade in 1...5 {
+                        let point = layout.point(axis, value: Double(grade))
+                        let dx = cos(angle) * 2.5
+                        let dy = sin(angle) * 2.5
+                        path.move(to: CGPoint(x: point.x - dx, y: point.y - dy))
+                        path.addLine(to: CGPoint(x: point.x + dx, y: point.y + dy))
+                    }
+                }
+            }.stroke(Palette.goldDim.opacity(0.5), lineWidth: 0.7)
+            Rectangle().fill(Palette.goldDim.opacity(0.6))
+                .frame(width: 3, height: 3).rotationEffect(.degrees(45))
+                .position(layout.center)
             if editable, let axis = selected {
                 Path { path in
                     path.move(to: layout.center)
                     path.addLine(to: layout.point(axis, value: 5))
-                }.stroke(Palette.gold.opacity(0.6), lineWidth: 1.5)
+                }.stroke(Palette.redText.opacity(0.5), lineWidth: 1)
             }
         }
         .accessibilityHidden(true)
     }
 
     private func axisLabel(_ axis: ReviewDimension) -> some View {
-        VStack(spacing: 2) {
-            Text(axis.title).font(FangguFont.serif(12))
-            Text(ReviewDimension.grade(displayGrade(axis))).font(FangguFont.mono(16))
+        VStack(spacing: 4) {
+            Text(axis.title).font(FangguFont.serif(12)).tracking(0.5)
+                .lineLimit(1).minimumScaleFactor(0.7)
+            Text(ReviewDimension.grade(displayGrade(axis)))
+                .font(FangguFont.serif(16, weight: .medium)).monospacedDigit()
+                .foregroundStyle(selected == axis && editable ? Palette.redText : Palette.gold)
         }
-        .foregroundStyle(selected == axis && editable ? Palette.gold : Palette.paper2)
+        .foregroundStyle(selected == axis && editable ? Palette.paper : Palette.paper2)
         .frame(width: 60)
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("\(axis.title)，\(ReviewDimension.grade(scores[axis]))，\(ReviewDimension.description(scores[axis]))")
@@ -216,9 +230,20 @@ struct ReviewRadar: View {
         let active = drag?.axis == axis
         let hasValue = scores[axis] != nil || active
         return Circle()
-            .fill(hasValue ? Palette.gold : Palette.ink2)
-            .frame(width: active ? 20 : 12, height: active ? 20 : 12)
-            .overlay(Circle().stroke(Palette.gold, lineWidth: 2))
+            .fill(Palette.ink2)
+            .frame(width: active ? 22 : 16, height: active ? 22 : 16)
+            .overlay(Circle().stroke(hasValue ? Palette.redText : Palette.goldDim, lineWidth: active ? 1.5 : 1))
+            .overlay {
+                if hasValue {
+                    Circle().fill(Palette.redText).padding(active ? 5 : 4)
+                }
+            }
+            .background {
+                if active {
+                    Circle().stroke(Palette.redText.opacity(0.16), lineWidth: 5)
+                        .padding(-5)
+                }
+            }
             .frame(width: 44, height: 44)
             .contentShape(Circle())
             .position(layout.point(axis, value: handleValue(axis)))
@@ -267,7 +292,7 @@ struct ReviewRadar: View {
                 Spacer()
                 if let axis = selected {
                     Text("\(ReviewDimension.grade(displayGrade(axis)))  \(ReviewDimension.description(displayGrade(axis)))")
-                        .font(FangguFont.serif(14)).foregroundStyle(Palette.gold)
+                        .font(FangguFont.serif(14)).foregroundStyle(Palette.redText)
                         .accessibilityIdentifier("radar-active-grade")
                     Button { clear(axis) } label: {
                         Image(systemName: "arrow.uturn.backward").frame(width: 44, height: 44)
@@ -281,9 +306,33 @@ struct ReviewRadar: View {
                 .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(4)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(14).background(Palette.ink3.opacity(0.6))
+        .padding(.horizontal, 14).padding(.vertical, 10)
+        .background(Palette.ink3.opacity(0.35))
+        .overlay(alignment: .leading) {
+            Rectangle().fill(Palette.goldDim.opacity(0.5)).frame(width: 1)
+        }
         // Keep the diagram still when a different explanation wraps onto two lines.
         .frame(minHeight: 100, alignment: .top)
+    }
+
+    private var gradeLegend: some View {
+        HStack(spacing: 0) {
+            ForEach(1...5, id: \.self) { value in
+                let highlighted = selected.map { displayGrade($0) == value } ?? false
+                VStack(spacing: 5) {
+                    Text(ReviewDimension.grade(value))
+                        .font(FangguFont.serif(13, weight: .medium))
+                        .frame(width: 26, height: 26)
+                        .background(Circle().fill(highlighted ? Palette.redText.opacity(0.08) : Color.clear))
+                        .overlay(Circle().stroke(highlighted ? Palette.redText.opacity(0.6) : Palette.goldDim.opacity(0.3), lineWidth: 0.7))
+                    Text(ReviewDimension.description(value)).font(FangguFont.serif(11))
+                        .lineLimit(1).minimumScaleFactor(0.7)
+                }
+                .foregroundStyle(highlighted ? Palette.redText : Palette.paper2)
+                .frame(maxWidth: .infinity)
+            }
+        }
+        .padding(.vertical, 6)
     }
 
     private func displayGrade(_ axis: ReviewDimension) -> Int? {
