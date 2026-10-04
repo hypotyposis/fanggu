@@ -90,18 +90,18 @@ FANGGU_TEST_ACTION=build-for-testing sh ios/scripts/run-ios-tests.sh
 FANGGU_TEST_ACTION=test-without-building sh ios/scripts/run-ios-tests.sh -only-testing:FangguUITests/UIUXFixTests
 ```
 
-`test-without-building` 读取 `ios/build/DerivedData/Build/Products/` 下最近一次编译生成的 `.xctestrun`；没有时脚本会提示先编译。`-resultBundlePath` 可以保留截图附件。
+`test-without-building` 直接运行 `ios/build/DerivedData` 里上一次编译出的 App 与测试 bundle；还没编译过时 `xcodebuild` 会报错，先执行上面的 `build-for-testing`。`-only-testing` 可以精确到 `FangguUITests/FangguUITests/testArrivalOnlySavesAfterReleasingAtTheEnd` 这样的单个方法；`-resultBundlePath` 指定路径可以保留截图附件。
 
 ### 用例按类并行
 
-Scheme 已把 `FangguUITests` 标为可并行（`ios/project.yml` 中的 `parallelizable: true`）。`FANGGU_PARALLEL=YES` 让 xcodebuild 以测试类为单位分配给克隆出来的模拟器，`FANGGU_WORKERS` 限制克隆数量（默认 2）；同一类内部仍按方法名顺序串行。
+Scheme 已把 `FangguUITests` 标为可并行（`ios/project.yml` 中的 `parallelizable: true`）。脚本默认传 `-parallel-testing-enabled NO`，在目标模拟器上串行执行；设 `FANGGU_PARALLEL_TESTS=1` 改为 `-parallel-testing-enabled YES`，xcodebuild 以测试类为单位分配给克隆出来的模拟器，`FANGGU_PARALLEL_WORKERS`（默认 2）作为 `-parallel-testing-worker-count` 限制克隆数量；同一类内部仍按方法名顺序串行。
 
 ```bash
-FANGGU_PARALLEL=YES FANGGU_TEST_ACTION=test-without-building sh ios/scripts/run-ios-tests.sh -only-testing:FangguUITests
+FANGGU_PARALLEL_TESTS=1 FANGGU_TEST_ACTION=test-without-building sh ios/scripts/run-ios-tests.sh -only-testing:FangguUITests
 ```
 
 - 克隆以目标模拟器当时的内容为起点，结束后自动删除，目标模拟器不被修改。每个克隆都要启动，机器繁忙时并行未必更快；只跑一个类时没有收益。
-- 每个 UI 用例通过 `XCUIApplication.isolated()` 使用全新的记录与外观作用域，用例之间不共享数据，顺序与并行结果一致。排查顺序相关问题时去掉 `FANGGU_PARALLEL`，即在目标模拟器上串行执行。
+- 每个 UI 用例通过 `XCUIApplication.isolated()` 使用全新的记录与外观作用域，用例之间不共享数据，顺序与并行结果一致。排查顺序相关问题时去掉 `FANGGU_PARALLEL_TESTS`，即在目标模拟器上串行执行。
 
 ### 测试专用启动参数
 
@@ -140,8 +140,7 @@ App 在 DEBUG 构建里识别以下参数，实现在 `ios/Fanggu/UITestLaunch.s
 - 修复行为缺陷时补一条能复现缺陷的测试；格式或静态说明改动不加测试。
 - 每个新增批次一个文件，命名为 `<地区或主题>-<yyyymmdd>.test.cjs`，或沿用已有的 `<地区>.test.cjs`。断言内容：ID 唯一、所绘主体与年代、国别与地域、默认未到访、线稿与设色记录和原件哈希绑定、验收状态为 `approved_default`（用户明确通过的为 `approved_user`，不再断言新图为 `pending_user`）、队列与清单覆盖、iOS 导出一致。批次 ID 优先从 `assets/research/<batch>-batch.json` 读取。
 - `tests/catalog.test.cjs` 维护全库覆盖列表，新增 ID 加入其中；`tests/helpers/native-catalog.cjs` 提供 `assertUnvisited`，`archived-*.cjs` 保护历史验收记录。
-- 原生测试放在 `ios/FangguTests`（逻辑、存储）或 `ios/FangguUITests`（交互）。单元测试用临时目录；UI 用例通过 `XCUIApplication.isolated()` 启动 App，不直接用 `XCUIApplication()`。
-- UI 用例从 `XCUIApplication.isolated()` 加 `launchForTest` 开始；深链接只用于页面导航不是验证对象的用例，找按钮用 `reveal`，重启验证用 `relaunch`。
+- 原生测试放在 `ios/FangguTests`（逻辑、存储）或 `ios/FangguUITests`（交互）。单元测试用临时目录；UI 用例从 `XCUIApplication.isolated()` 加 `launchForTest` 开始，不直接用 `XCUIApplication()` 或裸 `launch()`；深链接只用于页面导航不是验证对象的用例，找按钮用 `reveal`，重启验证用 `relaunch`。
 
 ## 汇报约定
 
