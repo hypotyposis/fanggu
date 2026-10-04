@@ -34,6 +34,7 @@
 2. 不能恢复时，运行全套并在汇报中写出跳过的数量与原因；不要把跳过写成通过。
 3. 改动只涉及文档或 iOS 代码时不需要补素材；改动涉及目录数据时，至少确保 `facets`、`ios-catalog`、`protection` 和 `catalog` 中运行的用例通过。
 4. 新增读取被忽略文件的用例时同样传入 `requiresLocalAssets`，不要在断言里用 `existsSync` 静默放行。
+5. 构建 App 或跑原生测试前必须让 `ios/Fanggu/Resources/Artwork/` 存在：`project.yml` 虽把该文件夹标为 `optional`，Xcode 复制资源时仍会因目录缺失报错（“The file Artwork couldn't be opened”）。同一台机器上有完整素材的工作区时，可直接 `sh ios/scripts/sync-artwork.sh /path/to/那个工作区/assets` 同步到当前 worktree；没有素材时至少 `mkdir -p ios/Fanggu/Resources/Artwork` 让单元测试可以编译运行，图版缺失不影响逻辑测试。
 
 ## 常用子集命令
 
