@@ -7,7 +7,7 @@ final class CurationUITests: XCTestCase {
     }
 
     func testCatalogStripOpensCurationAndSharePreview() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         let strip = app.descendants(matching: .any)["curation-strip"].firstMatch
         XCTAssertTrue(strip.waitForExistence(timeout: 10))
@@ -35,7 +35,7 @@ final class CurationUITests: XCTestCase {
     }
 
     func testSearchHidesStripAndLibraryShowsProgress() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         let strip = app.descendants(matching: .any)["curation-strip"].firstMatch
         XCTAssertTrue(strip.waitForExistence(timeout: 10))

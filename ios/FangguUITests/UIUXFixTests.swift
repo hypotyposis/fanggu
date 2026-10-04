@@ -5,7 +5,7 @@ final class UIUXFixTests: XCTestCase {
         continueAfterFailure = false
     }
     func testMultiwordSearchAndIndependentClear() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         let search = app.textFields["搜索古迹、地点或时代"]
         XCTAssertTrue(search.waitForExistence(timeout: 10))
@@ -29,7 +29,7 @@ final class UIUXFixTests: XCTestCase {
     }
 
     func testTodayUndoUnknownDateAndDirectStatusCorrection() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         openFirstSite(in: app)
         let menu = app.buttons["visit-status-menu"]
@@ -68,7 +68,7 @@ final class UIUXFixTests: XCTestCase {
     }
 
     func testReviewResetAndClearCanBeUndone() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         openFirstSite(in: app); openReview(in: app)
         let era = app.descendants(matching: .any)["radar-axis-eraRarity"].firstMatch
@@ -101,7 +101,7 @@ final class UIUXFixTests: XCTestCase {
     }
 
     func testMaximumAccessibilitySizeSupportsAllSixRatingsAndText() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchArguments += ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
         app.launch()
         openFirstSite(in: app); openReview(in: app)
@@ -131,7 +131,7 @@ final class UIUXFixTests: XCTestCase {
     }
 
     func testLargeCardReviewHasOneWorkingUndo() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         app.buttons["大图"].tap()
         let entry = app.buttons["写短评 / 打分"].firstMatch

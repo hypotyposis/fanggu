@@ -66,6 +66,8 @@
 | `FangguTests/ReviewTests.swift` | 年表索引完整、旧评价不臆造六维、档位往返与非法值、径向投影与防抖、持久化与备份、版本 3 导入保留六维、首次保存才升级、独立自动保存、失败保留原数据、旧记录与新增条目的备份 |
 | `FangguTests/UXRegressionTests.swift` | 多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存 |
 | `FangguTests/AtlasTimelineTests.swift` | 每个地域时期的节点间距与完整覆盖、等距时间轴、离线底图打包与多边形有效 |
+| `FangguTests/TestScopeTests.swift` | `FANGGU_LIBRARY_SCOPE` 作用域名清洗与长度、作用域路径与默认库分离、作用域内保存不触碰真实记录 |
 | `FangguUITests/FangguUITests.swift` | tab 与外观切换耗时、东京筛选与别名、外观持久化、原生各栏可用、六维松手自动保存与重置、低档位可拖、短评自动保存、详情导航、大图拖动条、终点松手才保存、足迹标记与搜索 |
 | `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口 |
 | `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口 |
+| `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域 |

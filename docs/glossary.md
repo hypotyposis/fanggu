@@ -82,5 +82,6 @@
 | 资源包、`asset-dist/<assetSet>/` | `asset-bundle.py pack` 产出的分卷 TAR 与索引，复制到独立存储保管 |
 | `asset-lock.json`、`assetSet` | 被忽略素材的逐文件哈希清单与其集合 ID |
 | worktree | Git 工作树副本；默认没有素材，部分测试与同步脚本会失败 |
-| 独立模拟器 | 专为测试创建的 iOS 模拟器，避免改动真实个人记录 |
+| 独立模拟器 | 专为测试创建的 iOS 模拟器，避免改动真实个人记录；`ios/scripts/test-device.sh` 按检出目录名创建与回收 |
+| 测试作用域、`FANGGU_LIBRARY_SCOPE` | Debug 构建读取的环境变量；设置后个人记录与外观写入 `scopes/<scope>/`，UI 测试每个用例一个 |
 | 历史资料 | `history/`、`recovery/`、带日期的计划与报告、`docs/reviews/`；记录当时事实，不构成新任务的授权或分工 |
