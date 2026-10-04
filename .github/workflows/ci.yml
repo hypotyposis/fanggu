@@ -103,45 +103,25 @@ jobs:
         # Artwork 由 ios/scripts/sync-artwork.sh 从本地素材同步且被 Git 忽略；没有该目录时 Copy Bundle Resources 会失败。
         run: mkdir -p ios/Fanggu/Resources/Artwork
 
-      - name: 创建独立模拟器
-        id: simulator
-        run: |
-          runtime=$(xcrun simctl list runtimes -j | jq -c '[.runtimes[] | select(.isAvailable and .platform == "iOS")] | sort_by(.version | split(".") | map(tonumber)) | last')
-          if [ -z "$runtime" ] || [ "$runtime" = "null" ]; then
-            echo "::error::没有可用的 iOS 模拟器运行时"
-            exit 1
-          fi
-          runtime_id=$(jq -r '.identifier' <<<"$runtime")
-          device_type=$(jq -r '[.supportedDeviceTypes[] | select(.productFamily == "iPhone")] as $phones
-            | (($phones | map(select(.name | test("^iPhone [0-9]+ Pro$"))) | sort_by(.name | capture("^iPhone (?<n>[0-9]+) Pro$").n | tonumber) | last) // ($phones | last))
-            | .identifier' <<<"$runtime")
-          udid=$(xcrun simctl create "Fanggu CI" "$device_type" "$runtime_id")
-          xcrun simctl boot "$udid"
-          echo "模拟器：$(jq -r '.name' <<<"$runtime") / $device_type / $udid"
-          echo "udid=$udid" >> "$GITHUB_OUTPUT"
-
-      - name: 构建并运行 FangguTests
+      - name: 运行 FangguTests
+        # run-ios-tests.sh 通过 test-device.sh 创建独立模拟器（默认 iPhone 16 Pro、最新 iOS 运行时）并使用 ios/build/DerivedData。
+        env:
+          FANGGU_SIM_NAME: Fanggu CI
         run: |
           set -o pipefail
           mkdir -p ios/build
-          xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu \
-            -destination "platform=iOS Simulator,id=${{ steps.simulator.outputs.udid }}" \
-            -derivedDataPath ios/build/DerivedData \
-            -resultBundlePath ios/build/FangguTests.xcresult \
-            -parallel-testing-enabled NO -only-testing:FangguTests \
-            CODE_SIGNING_ALLOWED=NO test \
+          sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests \
+            -resultBundlePath ios/build/FangguTests.xcresult CODE_SIGNING_ALLOWED=NO \
             | tee ios/build/unit-tests.log | xcbeautify --renderer github-actions
 
       - name: 运行 FangguUITests
         if: inputs.ui_tests
+        env:
+          FANGGU_SIM_NAME: Fanggu CI
         run: |
           set -o pipefail
-          xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu \
-            -destination "platform=iOS Simulator,id=${{ steps.simulator.outputs.udid }}" \
-            -derivedDataPath ios/build/DerivedData \
-            -resultBundlePath ios/build/FangguUITests.xcresult \
-            -parallel-testing-enabled NO -only-testing:FangguUITests \
-            CODE_SIGNING_ALLOWED=NO test \
+          sh ios/scripts/run-ios-tests.sh -only-testing:FangguUITests \
+            -resultBundlePath ios/build/FangguUITests.xcresult CODE_SIGNING_ALLOWED=NO \
             | tee ios/build/ui-tests.log | xcbeautify --renderer github-actions
 
       - name: 上传测试结果

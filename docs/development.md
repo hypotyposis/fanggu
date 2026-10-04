@@ -195,13 +195,28 @@ git diff --check
 | 原生界面、手势和导航 | 独立模拟器检查相应页面；触觉和实际触摸体验由真机验收 |
 | 审图工具、图片或链接 | 真实浏览器检查受影响工具；模拟 DOM 不能证明布局和图片解码正常 |
 | 文档 | 本地链接、路径、命令描述与 `git diff --check` |
-| 持续集成 | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)：Linux job 运行 Node 测试、`prepare-protection.mjs --check`、`build-catalog.cjs` 导出与 `catalog.json` 一致性和 Python 单元测试；macOS job 用 XcodeGen 生成工程，以空 `Artwork` 目录构建并运行 `FangguTests` 与 Swift 地图几何测试。`FangguUITests` 仅在手动触发时运行 |
+| 持续集成 | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)：Linux job 运行 Node 测试、`prepare-protection.mjs --check`、`build-catalog.cjs` 导出与 `catalog.json` 一致性和 Python 单元测试；macOS job 用 XcodeGen 生成工程，以空 `Artwork` 目录通过 `ios/scripts/run-ios-tests.sh` 在独立模拟器上运行 `FangguTests`，并运行 Swift 地图几何测试。`FangguUITests` 仅在手动触发时运行 |
 
 依赖本地图版、原稿或参考照片的 Node 测试用 [`tests/helpers/local-assets.cjs`](../tests/helpers/local-assets.cjs) 的 `requiresLocalAssets` 声明：缺少 `assets/plates`、`assets/generated` 或 `assets/colored-transparent-avif` 时报告为跳过而不是 ENOENT，CI 和新克隆因此只运行可从 Git 判定的检查。新增读取被忽略文件的测试同样声明；恢复素材后设置 `FANGGU_REQUIRE_LOCAL_ASSETS=1` 可强制全部运行，确认没有被跳过的检查。CI 会在 `sites.js` 等目录源改动而未重新导出时失败，此时运行 `node ios/scripts/build-catalog.cjs` 并提交 `catalog.json`。
 
 审图浏览器检查直接打开单处线稿、设色并列及来源页；核对图片请求、图注、深浅/棋盘背景、搜索与前后翻阅。新地区的筛选、别名搜索、原生详情与年表在 App 中验证，不再检查网页首页或 Back。
 
 原生验证使用独立模拟器和测试存储，避免导入或清空真实个人数据。记录与评价、取消手势、终点保存和失败重试的验证由原生测试承担。没有改到的交互不重复整套测试。汇报本次执行的检查和未验证项，历史截图与报告不代表本次结果。
+
+## 并行会话与测试隔离
+
+多个会话或代理同时验证时按下面的边界隔离；只读检查可以并行，共享资源不能共用。
+
+| 资源 | 冲突 | 处理 |
+| --- | --- | --- |
+| 检出目录 | 同一检出里并行 `xcodegen`、`xcodebuild` 会改写同一份工程与 DerivedData | 每个会话使用独立 worktree，先按[本地资源包](#本地资源包)补齐被忽略的素材，否则依赖图片的 Node 用例会直接失败 |
+| 模拟器 | 同一台模拟器上的两次 `xcodebuild test` 互相覆盖安装、打断 UI 测试，App 容器内的记录互相污染 | `ios/scripts/run-ios-tests.sh` 为当前 worktree 创建并启动独立模拟器，以 `id=` 指定目标；任务结束运行 `sh ios/scripts/test-device.sh delete` 回收 |
+| 个人记录与外观 | UI 测试读写 App 容器内真实 `library.json` 与标准 `UserDefaults` | Debug 构建的 `FANGGU_LIBRARY_SCOPE` 把记录与外观切到独立作用域；`XCUIApplication.isolated()` 为每个用例生成新作用域，详见 [iOS 开发说明](../ios/README.md#测试隔离与并行会话) |
+| DerivedData | 不同 worktree 默认已按路径分目录，显式指定更稳妥 | 脚本默认 `ios/build/DerivedData`，被 Git 忽略，可用 `FANGGU_DERIVED_DATA` 覆盖 |
+| 审图端口 | `8765` 只能绑定一个进程 | 被占用时运行 `python3 -m http.server 0 --bind 127.0.0.1`，按输出的端口打开页面；审图页之间使用相对链接 |
+| CPU 负载 | `testTabAndAppearanceSwitchingLatency` 与 `ReviewTests` 的耗时阈值在多个构建并行时可能超时 | 这类用例尽量单独运行；并行下失败先复跑，再判断是否真的退化 |
+
+Node 与 Python 测试只读仓库文件，写盘都在带随机前缀的临时目录，可以并行；`node --test` 需在仓库根目录运行。Git 对象库在 worktree 之间共享，各自提交是安全的，但 stash 栈也共享，不要使用无标签的 `git stash`。
 
 ## 素材保管与 App 交付
 
