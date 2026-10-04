@@ -1,6 +1,6 @@
 # 访古
 
-以细线描的笔意，记下走过与向往的古迹。访古是一款可离线浏览的 iOS 原生 App，提供古迹图鉴、搜索筛选、地图年表、拖动打卡、心愿单、笔记、六维评价，以及可选的附近未打卡古迹提醒。图版随 App 打包，个人记录保存在本机，可通过 JSON 备份迁移。
+以细线描的笔意，记下走过与向往的古迹。访古是一款可离线浏览的 iOS 原生 App，提供古迹图鉴、搜索筛选、专题名录与收集进度、地图年表、拖动打卡、心愿单、笔记、六维评价与访古卡分享，以及按距离浏览和可选的附近未打卡古迹提醒。图版随 App 打包，个人记录保存在本机，可通过 JSON 备份迁移。
 
 开发入口：[iOS App](ios/README.md) · [AGENTS.md](AGENTS.md) · [架构与数据流](docs/architecture.md) · [开发指南](docs/development.md) · [图版维护](assets/README.md)
 
@@ -41,7 +41,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 直接打开 [线稿总览](http://localhost:8765/proof.html?view=grid)、[设色校对](http://localhost:8765/color-proof.html)或 [图版来源](http://localhost:8765/sources.html)。浏览和对照只读取本地素材，不写个人记录。
 
-古迹目录由 `sites.js`、图版清单、文保资料、分类与 `palette.css` 导出到 iOS。来源、原件、真实提示词和用户验收对象继续保留。新增或重绘使用内置 imagegen 生成白底 PNG，再本地去底并交付透明 PNG／AVIF；线稿为照片参考的艺术意写，非实测或修缮图。原型阶段以用户人眼验收为准。
+古迹目录由 `sites.js`、图版清单、文保资料、分类、`curations.js` 专题名录与 `palette.css` 导出到 iOS。来源、原件、真实提示词和用户验收对象继续保留。新增或重绘使用内置 imagegen 生成白底 PNG，再本地去底并交付透明 PNG／AVIF；线稿为照片参考的艺术意写，非实测或修缮图。原型阶段以用户人眼验收为准。
 
 生产流程见 [增量制图手册](docs/monument-batch-workflow.md)、[线稿规范](assets/research/STYLE.md)、[设色流程](assets/color-research/WORKFLOW.md)和 [国保标签规则](docs/national-protection.md)。
 

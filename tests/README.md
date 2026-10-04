@@ -69,6 +69,8 @@
 | `FangguTests/NearbyReminderTests.swift` | 附近提醒规则：3 公里内外与排序、最近 20 处围栏及只报进入、每日一次、目录目标排除已到访与城镇级点 |
 | `FangguTests/CatalogDistanceTests.swift` | 距离标签格式、约略位置判断、各种授权与定位状态下的说明文案、最近在前且同距离保持年代顺序、“就在附近”只认本体坐标 |
 | `FangguUITests/NearbyUITests.swift` | 注入模拟位置：按距离排序后首行是最近古迹并带距离与“就在附近”；远离收录地点时“附近”空态与一键关闭 |
+| `FangguTests/TestScopeTests.swift` | `FANGGU_LIBRARY_SCOPE` 作用域名清洗与长度、作用域路径与默认库分离、作用域内保存不触碰真实记录 |
 | `FangguUITests/FangguUITests.swift` | tab 与外观切换耗时、东京筛选与别名、外观持久化、原生各栏可用、六维松手自动保存与重置、低档位可拖、短评自动保存、详情导航、大图拖动条、终点松手才保存、足迹标记与搜索 |
 | `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口 |
 | `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口 |
+| `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域 |

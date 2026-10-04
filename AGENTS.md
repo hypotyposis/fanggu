@@ -53,7 +53,7 @@
 
 - 正式产品只维护 `ios/` 原生 App。网页产品已移除；根目录 HTML/CSS/JavaScript 是目录数据与本地审图工具。构建和验证见 `ios/README.md`，不新增网页产品或公网素材分发。沿用现有模块与局部风格。
 - 数据与审图脚本依赖全局对象和加载顺序。修改公共接口时检查 iOS 目录导出及相关审图页；供 Node 测试使用的模块保留 CommonJS 入口。
-- 个人记录在 `ios/Fanggu/LibraryStore.swift`，图版与打卡在原生共用视图中。目录输入为 `sites.js`、图版清单、文保资料、`catalog.js` 与 `palette.css`，通过 `ios/scripts/build-catalog.cjs` 导出；图版通过 `sync-artwork.sh` 打包。
+- 个人记录在 `ios/Fanggu/LibraryStore.swift`，图版与打卡在原生共用视图中。目录输入为 `sites.js`、图版清单、文保资料、`catalog.js`、`curations.js` 与 `palette.css`，通过 `ios/scripts/build-catalog.cjs` 导出；图版通过 `sync-artwork.sh` 打包。
 - `plates.js`、`colored-plates.js`、`sources.html` 及汇总清单由脚本生成：修改源数据或生成器后重建，不手工修补生成结果。命令及副作用见开发指南。
 - 图版清单保存站点相对的 `assets/...` 路径。图片、原稿和参考照片不随 Git 交付；在新克隆或 worktree 中先补齐本地素材，保持目录层级和来源记录。缺素材时 `sync-artwork.sh` 与多数 Node 测试会失败，这是环境问题而非代码缺陷；能运行的检查子集见 [测试与验证](docs/testing.md#没有本地素材时)。
 - **新增或重绘古迹默认使用内置 imagegen 生成纯白底 PNG 原件，再由本地脚本生成透明交付图。** 用户已明确授权这条无需 API Key 的流程。提示词要求纯白 `#FFFFFF`、无阴影、渐变、纸纹、光晕或棋盘格；白底原件完整保留，不标成原生透明图。生成后在逐图 JSON 写入 `background_preparation: { method: "white-matte-v1", sourceSha256, seeds }`，绑定实际原件哈希。线稿按灰度生成笔画 alpha 并着朝代色；设色仅去除与外部连通的白底和记录过的透空种子，保留实体浅色与门窗暗部，仅在最外层轮廓去白边。`scripts/white-matte.py` 检查近纯白边缘，拒绝不合格底图。最终 PNG/AVIF 须有真实透明与可见主体；白色画布被移除不代表视觉自动验收。既有已通过图版按原哈希缓存，不批量重画；已有原生 alpha 继续直接保留。API 透明参数入口为可选路径，只有用户另行选择并提供凭证时使用。
@@ -92,12 +92,14 @@
 | `node --test tests/*.test.cjs` | 自动测试；多数文件需要本地素材 |
 | `node scripts/prepare-protection.mjs --check` | 只读核对国保生成数据是否过期 |
 | `python3 -B -m unittest discover -s tests -p 'test_*.py'` | 去底、转码、素材包的合成数据测试 |
+| `sh ios/scripts/run-ios-tests.sh [-only-testing:…]` | 在本会话独立模拟器和 `ios/build/DerivedData` 上运行原生测试 |
 | `git diff --check` | 差异空白检查 |
 
 - 纯文档改动检查链接、路径、命令描述及 `git diff --check` 即可。
 - 代码或目录数据改动运行现有测试；修复行为缺陷时补能复现缺陷的测试。不要仅为格式或静态说明改动添加测试。
 - 涉及 UI、输入手势、导航或图片地址时，按开发指南在模拟器／真机检查原生流程；审图工具在真实浏览器检查；模拟 DOM 测试不能证明布局和触摸体验正确。
 - 新增古迹时同步检查图版队列、覆盖范围和测试中的批次数量；不能只改数量断言使测试通过。
+- 多个会话或代理并行时：各在独立 worktree 工作并先补齐被忽略的本地素材；原生测试通过 `ios/scripts/run-ios-tests.sh` 使用各自的模拟器与 DerivedData，不共用模拟器，`-destination` 用 `id=` 而非 `name=`；审图服务器端口被占用时用 `python3 -m http.server 0 --bind 127.0.0.1` 取空闲端口；耗时阈值用例在其他 xcodebuild 并行时可能误报，复跑后再判断。细节见 [并行会话与测试隔离](docs/development.md#并行会话与测试隔离)。
 - 汇报改动、实际执行的检查与未验证项。历史报告中的测试数量和截图不代表本次验证。
 - 文档链接使用仓库相对路径。接口、命令、存储格式或生产流程改变时，同步更新对应开发文档；长期规则引用数据来源，不复制固定数量和旧分工。
 

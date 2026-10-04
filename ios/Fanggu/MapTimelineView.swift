@@ -334,7 +334,11 @@ struct TimelineSiteRow: View {
             VStack(alignment: .leading, spacing: 5) {
                 Text(site.periodLabel)
                     .font(FangguFont.mono(10)).foregroundStyle(site.accent)
-                Text(site.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
+                HStack(alignment: .firstTextBaseline, spacing: 10) {
+                    Text(site.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
+                    Spacer(minLength: 4)
+                    ReviewScoreLabel(scores: library.review(for: site).dimensions)
+                }
                 Text(site.place).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
                 if distance != nil || here {
                     HStack(spacing: 6) {
@@ -349,7 +353,6 @@ struct TimelineSiteRow: View {
                 }
                 .font(FangguFont.mono(10))
             }
-            Spacer(minLength: 0)
         }
         .padding(10).background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))

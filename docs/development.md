@@ -48,6 +48,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `sites.js` | `SITES` 古迹正文、`DYN` 朝代、`CHAPTERS` 章节、`PLACES` 地点 |
 | `catalog.js` | 国家、地区、行政区、类型和搜索分类；供 iOS 导出和目录验证使用 |
 | `protection.js` / `protection-data.js` | 国保资料查询 / 生成的官方登记数据 |
+| `curations.js` | 专题名录（名录／线路／专题）的编辑清单，只引用古迹 ID；由导出脚本校验并写入 `ios/Fanggu/Resources/curations.json`，进度在 App 内按个人记录派生 |
 | `plates.js` / `colored-plates.js` | 生成的线稿 / 设色清单，路径相对仓库根目录 |
 | `palette.css` | 制图、App 导出与本地审图共用的朝代色板 |
 | `plate-preview.css` | 本地审图的基础样式与参数 SVG 样式 |
@@ -58,9 +59,9 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `ios/Fanggu/LibraryStore.swift` | 个人记录校验、保存、备份迁移与失败恢复 |
 | `ios/Fanggu/ContentView.swift` / `MonumentDetailView.swift` / `MapTimelineView.swift` / `TimelineView.swift` / `MyLibraryView.swift` | 原生图鉴、详情、地图年表和个人资料 |
 
-目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
+目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js → curations.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
 
-国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
+国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
 
 ## 数据和个人记录
 
@@ -198,6 +199,21 @@ git diff --check
 审图浏览器检查直接打开单处线稿、设色并列及来源页；核对图片请求、图注、深浅/棋盘背景、搜索与前后翻阅。新地区的筛选、别名搜索、原生详情与年表在 App 中验证，不再检查网页首页或 Back。
 
 原生验证使用独立模拟器和测试存储，避免导入或清空真实个人数据。记录与评价、取消手势、终点保存和失败重试的验证由原生测试承担。没有改到的交互不重复整套测试。汇报本次执行的检查和未验证项，历史截图与报告不代表本次结果。
+
+## 并行会话与测试隔离
+
+多个会话或代理同时验证时按下面的边界隔离；只读检查可以并行，共享资源不能共用。
+
+| 资源 | 冲突 | 处理 |
+| --- | --- | --- |
+| 检出目录 | 同一检出里并行 `xcodegen`、`xcodebuild` 会改写同一份工程与 DerivedData | 每个会话使用独立 worktree，先按[本地资源包](#本地资源包)补齐被忽略的素材，否则依赖图片的 Node 用例会直接失败 |
+| 模拟器 | 同一台模拟器上的两次 `xcodebuild test` 互相覆盖安装、打断 UI 测试，App 容器内的记录互相污染 | `ios/scripts/run-ios-tests.sh` 为当前 worktree 创建并启动独立模拟器，以 `id=` 指定目标；任务结束运行 `sh ios/scripts/test-device.sh delete` 回收 |
+| 个人记录与外观 | UI 测试读写 App 容器内真实 `library.json` 与标准 `UserDefaults` | Debug 构建的 `FANGGU_LIBRARY_SCOPE` 把记录与外观切到独立作用域；`XCUIApplication.isolated()` 为每个用例生成新作用域，详见 [iOS 开发说明](../ios/README.md#测试隔离与并行会话) |
+| DerivedData | 不同 worktree 默认已按路径分目录，显式指定更稳妥 | 脚本默认 `ios/build/DerivedData`，被 Git 忽略，可用 `FANGGU_DERIVED_DATA` 覆盖 |
+| 审图端口 | `8765` 只能绑定一个进程 | 被占用时运行 `python3 -m http.server 0 --bind 127.0.0.1`，按输出的端口打开页面；审图页之间使用相对链接 |
+| CPU 负载 | `testTabAndAppearanceSwitchingLatency` 与 `ReviewTests` 的耗时阈值在多个构建并行时可能超时 | 这类用例尽量单独运行；并行下失败先复跑，再判断是否真的退化 |
+
+Node 与 Python 测试只读仓库文件，写盘都在带随机前缀的临时目录，可以并行；`node --test` 需在仓库根目录运行。Git 对象库在 worktree 之间共享，各自提交是安全的，但 stash 栈也共享，不要使用无标签的 `git stash`。
 
 ## 素材保管与 App 交付
 

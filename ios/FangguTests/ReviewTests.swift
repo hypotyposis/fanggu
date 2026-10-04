@@ -2,6 +2,38 @@ import XCTest
 @testable import Fanggu
 
 final class ReviewTests: XCTestCase {
+    func testAggregateScoreUsesOnlyRatedDimensionsAndDoesNotSerializeATotal() throws {
+        var scores = DimensionScores()
+        XCTAssertNil(scores.aggregateScore)
+        XCTAssertNil(scores.aggregateScoreLabel)
+        scores[.eraRarity] = 5
+        XCTAssertEqual(scores.aggregateScore, 5)
+        XCTAssertEqual(scores.aggregateScoreLabel, "5.00")
+        scores[.art] = 1
+        XCTAssertEqual(scores.count, 2)
+        XCTAssertEqual(scores.aggregateScore, 3, "The four missing axes must not count as zero")
+        scores[.art] = nil
+        XCTAssertEqual(scores.aggregateScore, 5, "Clearing an axis immediately removes it from the mean")
+        let object = try XCTUnwrap(JSONSerialization.jsonObject(with: JSONEncoder().encode(scores)) as? [String: Int])
+        XCTAssertEqual(object, ["eraRarity": 5], "Backups keep only the original dimensions")
+        scores[.eraRarity] = nil
+        XCTAssertNil(scores.aggregateScore)
+        XCTAssertNil(Review(rating: 5).dimensions.aggregateScore, "Legacy stars do not become a six-axis total")
+    }
+
+    func testAggregateScoreWeightsAllAxesEquallyAndRoundsForDisplay() throws {
+        var scores = DimensionScores()
+        for (axis, value) in zip(ReviewDimension.allCases, [5, 5, 1, 4, 3, 1]) { scores[axis] = value }
+        XCTAssertEqual(try XCTUnwrap(scores.aggregateScore), 19.0 / 6, accuracy: 0.00001)
+        XCTAssertEqual(scores.aggregateScoreLabel, "3.17")
+        for axis in ReviewDimension.allCases { scores[axis] = 1 }
+        XCTAssertEqual(scores.aggregateScore, 1)
+        for axis in ReviewDimension.allCases { scores[axis] = 5 }
+        XCTAssertEqual(scores.aggregateScore, 5)
+        scores[.setting] = 0
+        XCTAssertNil(scores.aggregateScore, "Invalid drafts must not appear as a valid aggregate")
+    }
+
     @MainActor func testTimelineIndexKeepsOrderingPeriodsAndAllTracks() throws {
         let url = temporaryFile()
         defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
@@ -99,6 +131,8 @@ final class ReviewTests: XCTestCase {
         XCTAssertTrue(store.setReview(dimensions: scores, text: "<b>照样作为文字</b>", for: site))
         let restored = LibraryStore(fileURL: url)
         XCTAssertEqual(restored.review(for: site).dimensions, scores)
+        XCTAssertEqual(restored.review(for: site).dimensions.aggregateScore, 3.5)
+        XCTAssertEqual(restored.review(for: site).dimensions.aggregateScoreLabel, "3.50")
         XCTAssertEqual(restored.record(for: site).note, "独立笔记")
         let backup = try restored.backup().data
         XCTAssertEqual(try JSONDecoder().decode(LibraryData.self, from: backup).version, 4)
@@ -106,6 +140,7 @@ final class ReviewTests: XCTestCase {
         XCTAssertTrue(store.setReview(dimensions: DimensionScores(), text: "", for: site, clearLegacyRating: true))
         let cleared = store.review(for: site)
         XCTAssertTrue(cleared.dimensions.isEmpty)
+        XCTAssertNil(cleared.dimensions.aggregateScore)
         XCTAssertFalse(cleared.updatedAt.isEmpty)
         XCTAssertEqual(store.record(for: site).status, .visited)
         XCTAssertEqual(store.record(for: site).visitedOn, "2026-09-01")

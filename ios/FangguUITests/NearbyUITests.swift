@@ -21,7 +21,7 @@ final class NearbyUITests: XCTestCase {
     func testDistanceSortPutsTheNearestMonumentFirstWithDistanceAndHereHint() {
         // 336 m from 少林寺初祖庵, which has its own coordinate; the next monument is over 6 km away.
         XCUIDevice.shared.location = XCUILocation(location: CLLocation(latitude: 34.512, longitude: 112.930))
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         let sortMenu = app.buttons["心愿优先"]
         XCTAssertTrue(sortMenu.waitForExistence(timeout: 10))
@@ -48,7 +48,7 @@ final class NearbyUITests: XCTestCase {
     func testNearbyFilterShowsEmptyStateFarFromEveryMonumentAndClosesWithOneTap() {
         // Mid-Pacific: thousands of kilometres from every catalogued place.
         XCUIDevice.shared.location = XCUILocation(location: CLLocation(latitude: -40.0, longitude: -150.0))
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         let count = app.staticTexts["catalog-result-count"]
         XCTAssertTrue(count.waitForExistence(timeout: 10))

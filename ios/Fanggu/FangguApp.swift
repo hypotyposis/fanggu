@@ -14,7 +14,7 @@ import SwiftUI
         let library = LibraryStore()
         _library = StateObject(wrappedValue: library)
         // Created at launch so a geofence or notification that relaunches the app is delivered.
-        _nearby = StateObject(wrappedValue: LocationCenter(library: library))
+        _nearby = StateObject(wrappedValue: LocationCenter(library: library, defaults: TestScope.defaults(for: TestScope.current)))
     }
 
     var body: some Scene {

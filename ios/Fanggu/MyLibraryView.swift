@@ -4,7 +4,7 @@ import UniformTypeIdentifiers
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
+    @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
     @State private var importing = false
     @State private var exporting = false
     @State private var exportDocument: BackupDocument?
@@ -34,6 +34,24 @@ struct MyLibraryView: View {
                         count("收录", library.monuments.count)
                     }
                 }
+                FangguRule()
+                if !library.curations.isEmpty {
+                    sectionTitle("专题进度")
+                    ForEach(library.curations) { list in
+                        NavigationLink(value: list) { CurationSummaryRow(curation: list) }
+                            .buttonStyle(.plain)
+                    }
+                }
+                NavigationLink { CollectionProgressView() } label: {
+                    HStack {
+                        Label("按时代、省份、类型看收集进度", systemImage: "chart.bar")
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.system(size: 11))
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                .accessibilityIdentifier("collection-progress-link")
                 FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
                     sectionTitle("外观")

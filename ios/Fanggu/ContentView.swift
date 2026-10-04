@@ -54,24 +54,28 @@ struct ContentView: View {
             NavigationStack(path: $explorePath) {
                 tabRoot(ExploreView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("图鉴", systemImage: "square.grid.2x2") }.tag(0)
 
             NavigationStack {
                 tabRoot(AtlasMapView(onBrowse: { selectedTab = 0 }))
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("足迹", systemImage: "map") }.tag(1)
 
             NavigationStack {
                 tabRoot(TimelineView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("年表", systemImage: "circle.grid.cross") }.tag(2)
 
             NavigationStack {
                 tabRoot(MyLibraryView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("我的", systemImage: "seal") }.tag(3)
         }
@@ -215,6 +219,10 @@ struct ExploreView: View {
     private var activeFilterCount: Int {
         [country, region, province, dynasty, type].filter { $0 != "all" }.count
     }
+    /// Lists sit above the full catalogue only; any search, status or facet filter brings results forward instead.
+    private var showsCurations: Bool {
+        !library.curations.isEmpty && query.isEmpty && status == "all" && activeFilterCount == 0
+    }
     private var sortTitle: String {
         switch sortOrder {
         case "newest": "新到旧"
@@ -291,6 +299,9 @@ struct ExploreView: View {
                     }
                     .padding(.bottom, 14)
                 }
+                if showsCurations {
+                    CurationStrip().padding(.bottom, 22)
+                }
                 HStack {
                     Text("共 \(results.count) 处")
                         .accessibilityIdentifier("catalog-result-count")
@@ -323,16 +334,24 @@ struct ExploreView: View {
                     }
                     .frame(maxWidth: .infinity, minHeight: 180, alignment: .leading)
                 } else {
+                    // Each display mode owns a lazy cache; shared ForEach IDs can retain the old row layout.
                     if showCards {
-                        ForEach(results) { site in
-                            MonumentCard(site: site, distance: distanceLabel(site), here: isHere(site)).padding(.bottom, 18)
+                        LazyVStack(spacing: 0) {
+                            ForEach(results) { site in
+                                MonumentCard(site: site, distance: distanceLabel(site), here: isHere(site)).padding(.bottom, 18)
+                            }
                         }
+                        .id("catalog-cards")
                     } else {
-                        ForEach(results) { site in
-                            NavigationLink(value: site) { TimelineSiteRow(site: site, distance: distanceLabel(site), here: isHere(site)) }
-                                .buttonStyle(.plain)
-                                .padding(.bottom, 10)
+                        LazyVStack(spacing: 0) {
+                            ForEach(results) { site in
+                                NavigationLink(value: site) { TimelineSiteRow(site: site, distance: distanceLabel(site), here: isHere(site)) }
+                                    .buttonStyle(.plain)
+                                    .accessibilityIdentifier("catalog-site-\(site.id)")
+                                    .padding(.bottom, 10)
+                            }
                         }
+                        .id("catalog-list")
                     }
                 }
             }
@@ -714,9 +733,22 @@ struct MonumentCard: View {
                             }
                             .font(.system(size: distanceSize, design: .monospaced))
                         }
-                        Text(site.name)
-                            .font(FangguFont.serif(22, weight: .medium))
-                            .foregroundStyle(Palette.paper)
+                        ViewThatFits(in: .horizontal) {
+                            HStack(alignment: .firstTextBaseline, spacing: 12) {
+                                Text(site.name)
+                                    .font(FangguFont.serif(22, weight: .medium))
+                                    .foregroundStyle(Palette.paper)
+                                    .fixedSize(horizontal: true, vertical: false)
+                                Spacer(minLength: 0)
+                                ReviewScoreLabel(scores: library.review(for: site).dimensions, size: 20)
+                            }
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(site.name)
+                                    .font(FangguFont.serif(22, weight: .medium))
+                                    .foregroundStyle(Palette.paper)
+                                ReviewScoreLabel(scores: library.review(for: site).dimensions, size: 20)
+                            }
+                        }
                         Text("\(site.place)  ·  \(site.typeNames.joined(separator: " · "))")
                             .font(FangguFont.serif(12))
                             .foregroundStyle(Palette.paper2)
@@ -726,6 +758,7 @@ struct MonumentCard: View {
                 }
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("catalog-site-\(site.id)")
             if !site.protection.isEmpty {
                 HStack(spacing: 8) {
                     ForEach(site.protection, id: \.self) { entry in
