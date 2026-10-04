@@ -113,9 +113,9 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 App 支持简体中文、英文和日文，跟随 iOS 为访古解析的语言。源数据仍以中文维护；`i18n/<语言>.json` 的 `terms` 按键翻译国家、地区、类型、时代、省份（以中文省名为键）、地点（以 `placeKey` 为键）和国保来源名，`sites` 按古迹 ID 翻译 `name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 与 `protection` 的 `unitName`、`scope`、`note`。只为源数据中非空的字段写译文；`facts`、`captions`、`protection` 逐项对应，不能增删或调换顺序。
 
-专题名录的译文在同一文件的 `curations`（按专题 ID 翻译 `name`、`eyebrow`、`lede`、`note`）与 `terms.curationKinds`。`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json` 及对应的 `curations*.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。`tests/i18n.test.cjs` 要求每个古迹都有完整且对齐的英日译文、英文展示文字不含汉字、日文不含简体专用字形，并检查界面字符串的占位符。
+专题名录的译文在同一文件的 `curations`（按专题 ID 翻译 `name`、`eyebrow`、`lede`、`note`）与 `terms.curationKinds`。`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json` 及对应的 `curations*.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。译文是机器译文，随同批产出，但不是入库门槛：`tests/i18n.test.cjs` 要求术语表（含 `curationKinds`）全覆盖、界面字符串英日齐全且占位符一致；逐古迹与专题译文“有则必须对齐”——字段非空与源一致，`facts`、`captions`、`protection` 长度与顺序一致，英文不含汉字，日文不含简体专用字形——缺译不报错，只打印覆盖率，App 中缺译字段显示中文。
 
-译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
+译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录；来不及补译时照常导出，缺译字段回退中文。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
 
 ### 存储与兼容
 
@@ -184,7 +184,7 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 4. 运行线稿生成器并检查原稿、交付图、`plates.js` 与 `sources.html` 的差异。缺少文件时补齐输入，不能用任意占位图片凑数。
 5. 按 [设色流程](../assets/color-research/WORKFLOW.md) 制作并登记设色图。向 `queue.json.entries` 加入对应条目并同步 `count`；沿用现有字段和真实路径，不伪造 worker 分工。三张已确认图版的 `excluded` 是特殊入口，变更它们需要同步汇总逻辑。
 6. 运行 AVIF 转码脚本，再运行默认通过命令（`record-plate-review.mjs color|line --default --all-pending`）、重新转码并汇总设色清单，比较 `SITES` 与 `COLORED_PLATES` 的 ID，确认整库覆盖。检查 `progress.pending` 与 `visualReview` 无残留 `pending_user`；目录完整只说明交付齐备，`approved_default` 不表示有人看过。
-7. 在 `i18n/en.json`、`i18n/ja.json` 为新条目补齐译文；新地点、省份、地区、类型或时代同时补 `terms`。
+7. 在 `i18n/en.json`、`i18n/ja.json` 为新条目产出机器译文；新地点、省份、地区、类型或时代必须同时补 `terms`（测试要求全覆盖）。逐古迹译文随批交付但不是入库门槛，缺译在英日界面显示中文。
 8. 更新测试涉及的新增记录覆盖和数量基线。当前 `catalog.test.cjs` 及部分批次测试包含数量基线，考据覆盖列表还包含手写 ID；新条目也应进入有效性检查，不能只调大数量。
 9. 确认上述写文件命令均已退出成功，再运行自动测试和相关浏览器检查。图版交付变化时同步本地素材副本；需要构建 App 时运行 `sh ios/scripts/sync-artwork.sh assets`。运行 `node ios/scripts/build-catalog.cjs` 并检查 iOS 导出；同步 README 中对用户有意义的数量或功能说明。Git 中的清单更新不会自动交付被忽略的图片。
 

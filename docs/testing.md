@@ -142,7 +142,7 @@ App 在 DEBUG 构建里识别以下参数，实现在 `ios/Fanggu/UITestLaunch.s
 - `tests/catalog.test.cjs` 维护全库覆盖列表，新增 ID 加入其中；`tests/helpers/native-catalog.cjs` 提供 `assertUnvisited`，`archived-*.cjs` 保护历史验收记录。
 - 原生测试放在 `ios/FangguTests`（逻辑、存储）或 `ios/FangguUITests`（交互）。单元测试用临时目录；UI 用例通过 `XCUIApplication.isolated()` 启动 App，不直接用 `XCUIApplication()`。
 - UI 用例从 `XCUIApplication.isolated()` 加 `launchForTest` 开始；深链接只用于页面导航不是验证对象的用例，找按钮用 `reveal`，重启验证用 `relaunch`。
-- 多语言：Xcode 方案的测试动作固定为简体中文，单元测试可直接断言中文文案；需要其他语言的单元测试给 `LibraryStore` 传 `language:`。`isolated()` 默认以简体中文启动 App，`isolated(language: "en", locale: "en_US")` 等用于英日界面；`LocalizationUITests` 检查英日主要页面没有遗留中文。新增界面文字后确认 `Localizable.xcstrings` 有英日译文，`tests/i18n.test.cjs` 会检查。
+- 多语言：Xcode 方案的测试动作固定为简体中文，单元测试可直接断言中文文案；需要其他语言的单元测试给 `LibraryStore` 传 `language:`。`isolated()` 默认以简体中文启动 App，`isolated(language: "en", locale: "en_US")` 等用于英日界面；`LocalizationUITests` 检查英日主要页面没有遗留中文。新增界面文字后确认 `Localizable.xcstrings` 有英日译文，`tests/i18n.test.cjs` 会检查；命令行 `xcodebuild` 不会把新字串写回 `Localizable.xcstrings`，编译后可对照 `ios/build/DerivedData/Build/Intermediates.noindex/Fanggu.build/Debug-iphonesimulator/Fanggu.build/Objects-normal/arm64/*.stringsdata` 里编译器抽取的键补齐。逐古迹与专题译文缺失不算失败，测试只打印覆盖率。
 
 ## 汇报约定
 
