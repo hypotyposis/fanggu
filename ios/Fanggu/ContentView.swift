@@ -280,16 +280,24 @@ struct ExploreView: View {
                     }
                     .frame(maxWidth: .infinity, minHeight: 180, alignment: .leading)
                 } else {
+                    // Each display mode owns a lazy cache; shared ForEach IDs can retain the old row layout.
                     if showCards {
-                        ForEach(results) { site in
-                            MonumentCard(site: site).padding(.bottom, 18)
+                        LazyVStack(spacing: 0) {
+                            ForEach(results) { site in
+                                MonumentCard(site: site).padding(.bottom, 18)
+                            }
                         }
+                        .id("catalog-cards")
                     } else {
-                        ForEach(results) { site in
-                            NavigationLink(value: site) { TimelineSiteRow(site: site) }
-                                .buttonStyle(.plain)
-                                .padding(.bottom, 10)
+                        LazyVStack(spacing: 0) {
+                            ForEach(results) { site in
+                                NavigationLink(value: site) { TimelineSiteRow(site: site) }
+                                    .buttonStyle(.plain)
+                                    .accessibilityIdentifier("catalog-site-\(site.id)")
+                                    .padding(.bottom, 10)
+                            }
                         }
+                        .id("catalog-list")
                     }
                 }
             }
@@ -594,9 +602,22 @@ struct MonumentCard: View {
                             }
                         }
                         .font(FangguFont.mono(11))
-                        Text(site.name)
-                            .font(FangguFont.serif(22, weight: .medium))
-                            .foregroundStyle(Palette.paper)
+                        ViewThatFits(in: .horizontal) {
+                            HStack(alignment: .firstTextBaseline, spacing: 12) {
+                                Text(site.name)
+                                    .font(FangguFont.serif(22, weight: .medium))
+                                    .foregroundStyle(Palette.paper)
+                                    .fixedSize(horizontal: true, vertical: false)
+                                Spacer(minLength: 0)
+                                ReviewScoreLabel(scores: library.review(for: site).dimensions, size: 20)
+                            }
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text(site.name)
+                                    .font(FangguFont.serif(22, weight: .medium))
+                                    .foregroundStyle(Palette.paper)
+                                ReviewScoreLabel(scores: library.review(for: site).dimensions, size: 20)
+                            }
+                        }
                         Text("\(site.place)  ·  \(site.typeNames.joined(separator: " · "))")
                             .font(FangguFont.serif(12))
                             .foregroundStyle(Palette.paper2)
@@ -606,6 +627,7 @@ struct MonumentCard: View {
                 }
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("catalog-site-\(site.id)")
             if !site.protection.isEmpty {
                 HStack(spacing: 8) {
                     ForEach(site.protection, id: \.self) { entry in
