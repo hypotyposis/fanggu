@@ -110,7 +110,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `background_preparation` | `{ method, sourceSha256, seeds[] }`；`method` 为 `white-matte-v1` 或 `adaptive-ink-v1`，哈希绑定 `generated_file` 的实际字节 |
 | `review` | 制作时的查看记录 |
 | `user_review` | 由 `record-plate-review.mjs line` 写入：`{ status: "approved_user", reviewer: "user", reviewed_at, sourceSha256 }` |
-| `site_recommendation`、`coordinates` | 入库建议与坐标来源，供维护者参考 |
+| `site_recommendation` | 入库建议，含 `lat`、`lon`、`coordinate_source` 等，供维护者参考；其经纬度不导出，经核实的坐标应复制到 `coordinates` |
+| `coordinates` | `{ lat, lng 或 lon, source, url? }`：古迹本体坐标与来源说明（通常引用 Wikimedia Commons 或申遗文本的坐标，非测绘成果）。`source` 必填；有此字段的条目导出 `siteLatitude`、`siteLongitude`，参与附近提醒 |
 
 ## 设色记录 `assets/color-research/<id>.json` 与队列
 
@@ -171,7 +172,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `id`、`name`、`short`、`sub`、`tag`、`era`、`year`、`yearLabel`、`yearApprox`、`yearNote`、`place`、`placeKey`、`types`、`initialStatus`、`legacyNames`、`legacyPlaces` | `SITES` 原值；空值补 `""`、`false` 或 `[]` |
 | `dynasty`、`dynastyName`、`dynastyGlyph`、`dynastyStart`、`dynastyEnd`、`timelineLane` | `DYN`；起止年用回退表补齐 |
 | `dynastyColor` | `palette.css` 中 `DYN.acc` 指向的色值 |
-| `placeName`、`country`、`province`、`region`、`latitude`、`longitude` | `PLACES` 与 `classify()` |
+| `placeName`、`country`、`province`、`region`、`latitude`、`longitude` | `PLACES` 与 `classify()`；经纬度是城镇级显示点 |
+| `siteLatitude`、`siteLongitude`、`siteCoordinateSource` | 研究 JSON 的 `coordinates` 本体坐标与其 `source`；没有登记时为 `null` 与 `""`。`site_recommendation` 的经纬度不导出，因为其中不少只是城镇点的复制。只用于附近提醒，不改变地图点；导出要求带 `source` 且距城镇点不超过 60 公里 |
 | `typeNames` | `catalog.js` 的类型名 |
 | `lede`、`facts`、`quote` | 去除 HTML 标签后的文字 |
 | `captions` | `image.caption`，否则 `SITES.caption` |
@@ -217,6 +219,8 @@ App 在本机 Application Support 下 `Fanggu/library.json` 保存 `LibraryData`
 导入规则：文件不超过 2 MB；版本 1、2 不带 `reviews`；版本 3 的评价合并时保留本机已有的六维分数；版本 4 可明确清空。`customSites` 按 ID 覆盖或追加，`records` 与 `links` 以导入值为准。导入成功后 `version` 变为 4，并清除当前撤销。读取失败时保留原文件、拒绝所有写入，直到导入有效备份。
 
 旧记录关联 `linkLegacy` 把自建条目并入目录条目：状态取两者中更高者（已到访、心愿、未标记依次降低），笔记去重拼接，日期优先保留目录记录已有的值。
+
+附近提醒的开关与每处最近一次提醒时间保存在 `UserDefaults` 键 `fanggu.nearbyReminder.enabled`、`fanggu.nearbyReminder.reminded`，不进入 `library.json` 与备份；位置从不持久化。
 
 六维键与显示名：`eraRarity` 年代稀缺、`authenticity` 原真完整、`construction` 结构营造、`art` 艺术遗存、`scale` 规制体量、`setting` 环境格局；档位 1–5 对应 E–A。
 

@@ -23,7 +23,7 @@
 | 改了什么 | 必须重建 | 至少验证 |
 | --- | --- | --- |
 | 只有 `*.md` | 无 | 链接、路径、命令描述；`git diff --check` |
-| `sites.js`、`catalog.js` 或 `assets/research/<id>.json` 的文字与分类 | `node ios/scripts/build-catalog.cjs` | `node --test tests/*.test.cjs` |
+| `sites.js`、`catalog.js` 或 `assets/research/<id>.json` 的文字、分类与坐标 | `node ios/scripts/build-catalog.cjs` | `node --test tests/*.test.cjs` |
 | `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs`，再 `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check` 与 Node 测试 |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs`，再 `build-catalog.cjs`、`sh ios/scripts/sync-artwork.sh assets` | Node 测试、审图页、App |
 | 新增古迹或图版 | [手册第 5 节](docs/monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App |
@@ -79,6 +79,8 @@
 - 个人笔记、短评、备份内容和搜索输入作为文本处理，不作为 HTML 插入。
 - 原生详情返回保留浏览状态；设色图缺失或失败时保留线稿回退。本地审图页互相链接，不指向已移除的网页首页或详情。
 - 年代对应图版所绘主体，区分初创、现存、重建与约略定位；英日译文同样保留这些区分。中国朝代和日本时代分别分类；地图地域来自 `PLACES` 与 `catalog.js` 的规则。
+- 附近提醒默认关闭，只在用户开启后请求定位与通知权限；只对目录中登记了本体坐标（`siteLatitude`、`siteLongitude`）且未到访的古迹提醒，城镇级显示点不参与。它只读取个人记录，不写记录；位置不保存、不上传、不进备份。
+- 图鉴的“按距离”“附近”“就在附近”在用户第一次选择时才请求“使用期间”定位，不在启动时请求；拒绝后不重复弹窗，其他排序与筛选不受影响。距离按本体坐标优先、城镇点兜底并一律写“约”，“就在附近”只认本体坐标；距离文字只在图鉴出现，足迹、年表、我的不变。定位相关代码集中在 `ios/Fanggu/LocationCenter.swift`。
 - 实际图片、参考来源和生成记录齐备后再把新条目接入交付。保留真实提示词、来源署名和目检结果，不把文件存在等同于视觉验收。
 
 ## 验证与交付

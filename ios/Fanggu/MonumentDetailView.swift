@@ -2,7 +2,9 @@ import SwiftUI
 
 struct MonumentDetailView: View {
     @EnvironmentObject private var library: LibraryStore
+    @EnvironmentObject private var location: LocationCenter
     @Environment(\.dismiss) private var dismiss
+    @ScaledMetric(relativeTo: .caption) private var distanceSize: CGFloat = 11
     let site: Monument
     @State private var editingVisit = false
     @State private var editingReview = false
@@ -28,6 +30,15 @@ struct MonumentDetailView: View {
                     if !site.sub.isEmpty { Text(site.sub).font(FangguFont.serif(15)).foregroundStyle(Palette.gold) }
                     Text(verbatim: "\(site.place) · \(site.typeNames.joined(separator: " · "))")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
+                    // Shown only with a fix already known; the detail page never requests location itself.
+                    if let current = location.currentLocation {
+                        let label = CatalogDistance.label(CatalogDistance.metres(from: current, to: site))
+                        let here = record.status != .visited && CatalogDistance.isHere(site, from: current)
+                        Text(here ? "就在附近 · \(label)" : label)
+                            .font(.system(size: distanceSize, design: .monospaced))
+                            .foregroundStyle(here ? Palette.gold : Palette.paper2)
+                            .accessibilityIdentifier(here ? "detail-here-hint" : "detail-distance")
+                    }
                 }
                 if !site.protection.isEmpty {
                     HStack(spacing: 8) {

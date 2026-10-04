@@ -32,6 +32,9 @@ struct Monument: Decodable, Identifiable, Hashable {
     let regionName: String
     let latitude: Double
     let longitude: Double
+    let siteLatitude: Double?
+    let siteLongitude: Double?
+    let siteCoordinateSource: String
     let types: [String]
     let typeNames: [String]
     let lede: String
@@ -53,6 +56,11 @@ struct Monument: Decodable, Identifiable, Hashable {
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
     var periodLabel: String {
         displayYearLabel.isEmpty ? dynastyName : "\(dynastyName) · \(displayYearLabel)"
+    }
+    /// The monument's own point for proximity; nil when only the town-level map marker is recorded.
+    var nearbyTarget: NearbyTarget? {
+        guard let siteLatitude, let siteLongitude else { return nil }
+        return NearbyTarget(id: id, name: name, latitude: siteLatitude, longitude: siteLongitude)
     }
 
     static func == (lhs: Monument, rhs: Monument) -> Bool { lhs.id == rhs.id }

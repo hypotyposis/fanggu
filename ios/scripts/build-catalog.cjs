@@ -31,6 +31,24 @@ const translations = Object.fromEntries(languages.map(language => {
   const data = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
   return [language, { terms: data.terms || {}, sites: data.sites || {} }];
 }));
+
+// Monument-level coordinates come only from a research record's sourced `coordinates`; the
+// place point stays the map marker. `site_recommendation` often just repeats the town point.
+const kilometres = (a, b) => {
+  const rad = degrees => degrees * Math.PI / 180;
+  const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lon - a.lon) / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.sqrt(h));
+};
+function monumentCoordinate(id, research, place) {
+  const recorded = research.coordinates;
+  if (!recorded || !Number.isFinite(recorded.lat) || !Number.isFinite(recorded.lng ?? recorded.lon)) return null;
+  if (!recorded.source) throw new Error(`Monument coordinate without a source: ${id}`);
+  const point = { lat: recorded.lat, lon: recorded.lng ?? recorded.lon, source: recorded.source };
+  if (Math.abs(point.lat) > 90 || Math.abs(point.lon) > 180) throw new Error(`Invalid monument coordinate: ${id}`);
+  const distance = kilometres(point, place);
+  if (distance > 60) throw new Error(`Monument coordinate is ${distance.toFixed(0)} km from its place point: ${id}`);
+  return point;
+}
 const text = value => String(value || '').replace(/<br\s*\/?\s*>/gi, '\n')
   .replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
@@ -44,6 +62,7 @@ const base = sites.map(site => {
   if (!dynastyColor) throw new Error(`Missing dynasty color: ${site.id}`);
   const researchPath = path.join(root, `assets/research/${site.id}.json`);
   const research = fs.existsSync(researchPath) ? JSON.parse(fs.readFileSync(researchPath, 'utf8')) : {};
+  const siteCoordinate = monumentCoordinate(site.id, research, location);
   const sourceLinks = [...(research.sources || []), ...(color.references || [])]
     .map((source, index) => ({ title: source.title || source.author || '', index: index + 1, url: source.source_page || source.page || source.url }))
     .filter(source => /^https?:\/\//.test(source.url || ''))
@@ -60,6 +79,8 @@ const base = sites.map(site => {
     province: site.province, provinceName: site.province,
     region: site.region, regionName: regions[site.region].name,
     latitude: location.lat, longitude: location.lon,
+    siteLatitude: siteCoordinate?.lat ?? null, siteLongitude: siteCoordinate?.lon ?? null,
+    siteCoordinateSource: text(siteCoordinate?.source),
     types: site.types, typeNames: site.types.map(type => types[type]),
     lede: text(site.lede), facts: site.facts.map(text), quote: text(site.quote),
     captions: site.image.caption || site.caption || [],
@@ -134,7 +155,8 @@ const coverage = languages.map(language => {
   if (missing.length) process.stderr.write(`Untranslated (${language}, shown in Chinese): ${missing.join(', ')}\n`);
   return `${language} ${base.length - missing.length}/${base.length}`;
 });
-process.stdout.write(`Exported ${base.length} monuments to ${path.relative(root, destination)} (translated: ${coverage.join(', ')})\n`);
+const located = base.filter(site => site.siteLatitude !== null).length;
+process.stdout.write(`Exported ${base.length} monuments (${located} with monument-level coordinates) to ${path.relative(root, destination)} (translated: ${coverage.join(', ')})\n`);
 
 // Editorial lists reference catalogue IDs only; the App resolves members and personal progress at runtime.
 const { kinds, curations, validate } = vm.runInContext('FangguCurations', context);
