@@ -24,7 +24,7 @@
 
 - 正式产品只维护 `ios/` 原生 App。网页产品已移除；根目录 HTML/CSS/JavaScript 是目录数据与本地审图工具。构建和验证见 `ios/README.md`，不新增网页产品或公网素材分发。沿用现有模块与局部风格。
 - 数据与审图脚本依赖全局对象和加载顺序。修改公共接口时检查 iOS 目录导出及相关审图页；供 Node 测试使用的模块保留 CommonJS 入口。
-- 个人记录在 `ios/Fanggu/LibraryStore.swift`，图版与打卡在原生共用视图中。目录输入为 `sites.js`、图版清单、文保资料、`catalog.js` 与 `palette.css`，通过 `ios/scripts/build-catalog.cjs` 导出；图版通过 `sync-artwork.sh` 打包。
+- 个人记录在 `ios/Fanggu/LibraryStore.swift`，图版与打卡在原生共用视图中。目录输入为 `sites.js`、图版清单、文保资料、`catalog.js`、`curations.js` 与 `palette.css`，通过 `ios/scripts/build-catalog.cjs` 导出；图版通过 `sync-artwork.sh` 打包。
 - `plates.js`、`colored-plates.js`、`sources.html` 及汇总清单由脚本生成：修改源数据或生成器后重建，不手工修补生成结果。命令及副作用见开发指南。
 - 图版清单保存站点相对的 `assets/...` 路径。图片、原稿和参考照片不随 Git 交付；在新克隆或 worktree 中先补齐本地素材，保持目录层级和来源记录。
 - **新增或重绘古迹默认使用内置 imagegen 生成纯白底 PNG 原件，再由本地脚本生成透明交付图。** 用户已明确授权这条无需 API Key 的流程。提示词要求纯白 `#FFFFFF`、无阴影、渐变、纸纹、光晕或棋盘格；白底原件完整保留，不标成原生透明图。生成后在逐图 JSON 写入 `background_preparation: { method: "white-matte-v1", sourceSha256, seeds }`，绑定实际原件哈希。线稿按灰度生成笔画 alpha 并着朝代色；设色仅去除与外部连通的白底和记录过的透空种子，保留实体浅色与门窗暗部，仅在最外层轮廓去白边。`scripts/white-matte.py` 检查近纯白边缘，拒绝不合格底图。最终 PNG/AVIF 须有真实透明与可见主体；白色画布被移除不代表视觉自动验收。既有已通过图版按原哈希缓存，不批量重画；已有原生 alpha 继续直接保留。API 透明参数入口为可选路径，只有用户另行选择并提供凭证时使用。
