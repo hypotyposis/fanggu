@@ -14,7 +14,7 @@
 | 原生 UI | `sh ios/scripts/run-ios-tests.sh -only-testing:FangguUITests/…` | 打卡拖动、评价、撤销、搜索、足迹与年表交互、外观 | 同上，耗时较长；每个用例使用独立记录作用域 |
 | 浏览器审图 | 真实浏览器打开本地审图页 | 图片请求、图注、背景、翻页 | 本地 HTTP 服务与素材 |
 | 真机 | 手动 | 触觉、实际触摸体验 | 支持 Taptic Engine 的 iPhone |
-| 持续集成 | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) | 前四项、`build-catalog.cjs` 导出与 Git 一致、原生单元测试与 Swift 地图几何；UI 测试仅手动触发 | GitHub Actions；没有本地素材，读图用例跳过 |
+| 持续集成 | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) | 前四项、`build-catalog.cjs` 导出与 Git 一致、原生单元测试与 Swift 地图几何；UI 测试仅手动触发 | GitHub Actions；Linux job 安装 NumPy、Pillow 与 ImageMagick 7；没有本地素材，读图用例跳过 |
 
 代码或目录数据改动的基线是前四项；纯文档改动只需链接、路径、命令描述与 `git diff --check`。
 
