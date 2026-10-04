@@ -1,6 +1,7 @@
 name: Fanggu
 options:
   bundleIdPrefix: com.fanggu
+  developmentLanguage: zh-Hans
   deploymentTarget:
     iOS: "18.0"
 targets:
@@ -29,11 +30,8 @@ targets:
         INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 把访古卡保存到你的相册。访古只添加图片，不读取相册内容。
         SUPPORTS_MACCATALYST: NO
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
-    scheme:
-      testTargets:
-        - FangguTests
-        - name: FangguUITests
-          parallelizable: true
+        LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
   FangguTests:
     type: bundle.unit-test
     platform: iOS
@@ -56,3 +54,27 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.fanggu.app.uitests
         SWIFT_VERSION: 5.0
         GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Fanggu:
+    build:
+      targets:
+        Fanggu: all
+        FangguTests: [test]
+        FangguUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      # Unit tests assert the Chinese copy; UI tests choose their own language when launching the app.
+      language: zh-Hans
+      region: CN
+      targets:
+        - FangguTests
+        - name: FangguUITests
+          parallelizable: true
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

@@ -12,6 +12,8 @@
 | `facets.test.cjs` | `catalog.js` 的国家、地区、省份、类型、状态组合筛选与别名搜索；原生导出默认未到访 | 否 | |
 | `protection.test.cjs` | 国保源数据与生成数据一致、批次公布日期、合并关系、未确认条目不贴标签、搜索组合、CommonJS 与全局一致 | 否 | 调用 `prepare-protection.mjs --check` |
 | `ios-catalog.test.cjs` | `catalog.json` 与源数据逐项一致：ID、名称、状态、图版文件名、城镇点坐标、本体坐标与研究记录一致且在城镇点附近、时代色、年代范围、国保、来源链接 | 否 | |
+| `curations.test.cjs` | `curations.js` 的专题只引用已收录古迹、结构合法；中、英、日三份 `curations*.json` 导出的 ID、类型、成员一致，译文缺失时回退中文 | 否 | |
+| `i18n.test.cjs` | 英日术语表（含专题类型）全覆盖；逐古迹与专题译文“有则必须对齐”，缺译只打印覆盖率；三语目录固定字段一致、缺译回退中文；界面字符串与权限说明英日齐全且占位符一致 | 否 | |
 | `ios-map-layout.test.cjs` | 用真实 Swift 源编译 `SketchMapLayout.swift`，检查多种手机宽度下的投影、覆盖与触控间距 | 否 | `xcrun swiftc`；没有则跳过 |
 | `line-plate.test.cjs` | 线稿着色保留原生 alpha、拒绝未登记的白底原件、旧哈希白名单 | 否 | `magick` |
 | `plate-tools.test.cjs` | `prepare-plates.mjs --sources-only` 不改图版、不需原件、导航正确 | 否 | |

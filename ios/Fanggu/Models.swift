@@ -25,8 +25,11 @@ struct Monument: Decodable, Identifiable, Hashable {
     let placeKey: String
     let placeName: String
     let country: String
+    let countryName: String
     let province: String
+    let provinceName: String
     let region: String
+    let regionName: String
     let latitude: Double
     let longitude: Double
     let siteLatitude: Double?
@@ -46,6 +49,8 @@ struct Monument: Decodable, Identifiable, Hashable {
     let sourceURL: String
     let sourceLinks: [SourceLink]
     let protection: [ProtectionEntry]
+    /// Names and places in the other catalog languages, so any spelling finds the monument.
+    let searchAliases: [String]
 
     var accent: Color { Palette.dynasty(dynastyColor) }
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
@@ -100,6 +105,7 @@ struct ProtectionEntry: Decodable, Hashable {
     let sourceURL: String
 
     var batchLabel: String {
+        guard AppLanguage.current == .simplifiedChinese else { return String(localized: "第\(batch)批国保") }
         let numerals = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"]
         let number = batch < 10 ? numerals[batch] : "\(numerals[batch / 10])十\(batch % 10 == 0 ? "" : numerals[batch % 10])"
         return "第\(number)批国保"
@@ -111,9 +117,9 @@ enum VisitStatus: String, Codable, CaseIterable, Identifiable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .unvisited: "未标记"
-        case .wishlist: "心愿单"
-        case .visited: "已到访"
+        case .unvisited: String(localized: "未标记")
+        case .wishlist: String(localized: "心愿单")
+        case .visited: String(localized: "已到访")
         }
     }
 }
@@ -243,8 +249,14 @@ enum Palette {
 }
 
 enum FangguFont {
+    // Japanese text needs Japanese glyph forms, so it uses the system Mincho instead of Noto Serif SC.
+    private static let serifName = AppLanguage.current == .japanese ? "HiraMinProN-W3" : "NotoSerifSC-Regular"
+
     static func serif(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        .custom("NotoSerifSC-Regular", size: size).weight(weight)
+        // Display sizes grow like titles rather than body text, so a single long word
+        // (common in English) still fits a line at the largest accessibility sizes.
+        let style: Font.TextStyle = size >= 30 ? .largeTitle : size >= 19 ? .title : .body
+        return .custom(serifName, size: size, relativeTo: style).weight(weight)
     }
     static func brush(_ size: CGFloat) -> Font { .custom("MaShanZheng-Regular", size: size) }
     static func mono(_ size: CGFloat) -> Font { .system(size: max(11, size), design: .monospaced) }

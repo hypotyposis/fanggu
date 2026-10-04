@@ -4,6 +4,7 @@ import UniformTypeIdentifiers
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.openURL) private var openURL
     @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
     @State private var importing = false
     @State private var exporting = false
@@ -66,6 +67,8 @@ struct MyLibraryView: View {
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(5)
                 }
                 FangguRule()
+                languageSection
+                FangguRule()
                 NearbyReminderSection()
                 FangguRule()
                 sectionTitle("已到访")
@@ -102,21 +105,54 @@ struct MyLibraryView: View {
                 let access = url.startAccessingSecurityScopedResource()
                 defer { if access { url.stopAccessingSecurityScopedResource() } }
                 try library.importBackup(Data(contentsOf: url))
-                message = "备份已导入"
+                message = String(localized: "备份已导入")
                 Haptics.success()
             } catch {
-                if !Self.isCancellation(error) { message = "导入失败：\(error.localizedDescription)"; Haptics.error() }
+                if !Self.isCancellation(error) { message = String(localized: "导入失败：\(error.localizedDescription)"); Haptics.error() }
             }
         }
-        .fileExporter(isPresented: $exporting, document: exportDocument, contentType: .json, defaultFilename: "访古备份") { result in
+        .fileExporter(isPresented: $exporting, document: exportDocument, contentType: .json, defaultFilename: String(localized: "访古备份")) { result in
             if case .failure(let error) = result, !Self.isCancellation(error) {
-                message = "导出失败：\(error.localizedDescription)"
+                message = String(localized: "导出失败：\(error.localizedDescription)")
                 Haptics.error()
             }
         }
     }
 
-    private func count(_ title: String, _ number: Int) -> some View {
+    private var languageSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionTitle("语言")
+            Button {
+                if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
+            } label: {
+                ViewThatFits(in: .horizontal) {
+                    HStack {
+                        Text(verbatim: AppLanguage.current.displayName).fixedSize()
+                        Spacer()
+                        Text("在系统设置中更改").fixedSize()
+                        Image(systemName: "arrow.up.forward")
+                    }
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(verbatim: AppLanguage.current.displayName)
+                        HStack(alignment: .firstTextBaseline) {
+                            Text("在系统设置中更改")
+                            Image(systemName: "arrow.up.forward")
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 8)
+                }
+                .multilineTextAlignment(.leading)
+            }
+            .buttonStyle(FangguOutlineButton())
+            .accessibilityHint("打开系统设置，为访古选择语言")
+            .accessibilityIdentifier("language-settings")
+            Text("访古跟随系统语言，支持简体中文、English 与日本語。可在系统设置中为访古单独选择语言。")
+                .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(5)
+        }
+    }
+
+    private func count(_ title: LocalizedStringKey, _ number: Int) -> some View {
         Group {
             if dynamicTypeSize.isAccessibilitySize {
                 HStack {
@@ -145,11 +181,11 @@ struct MyLibraryView: View {
         .buttonStyle(.plain)
     }
 
-    private func sectionTitle(_ text: String) -> some View {
+    private func sectionTitle(_ text: LocalizedStringKey) -> some View {
         Text(text).font(FangguFont.serif(22)).foregroundStyle(Palette.paper)
     }
 
-    private func empty(_ text: String) -> some View {
+    private func empty(_ text: LocalizedStringKey) -> some View {
         Text(text).font(FangguFont.serif(13)).foregroundStyle(Palette.paper3)
             .frame(maxWidth: .infinity, minHeight: 100)
             .background(Palette.ink2)
@@ -158,7 +194,7 @@ struct MyLibraryView: View {
 
     private func prepareExport() {
         do { exportDocument = try library.backup(); exporting = true }
-        catch { message = "导出失败：\(error.localizedDescription)"; Haptics.error() }
+        catch { message = String(localized: "导出失败：\(error.localizedDescription)"); Haptics.error() }
     }
 
     private static func isCancellation(_ error: Error) -> Bool {
@@ -184,16 +220,16 @@ private struct NearbyReminderSection: View {
         problem || (nearby.enabled && nearby.authorization == .authorizedWhenInUse)
     }
     private var status: String {
-        guard nearby.enabled else { return "开启后会请求定位与通知权限。App 不在前台时也要提醒，需要把定位设为“始终允许”。" }
-        let notifications = nearby.notificationsAuthorized == false ? " 通知权限已关闭，提醒无法显示。" : ""
+        guard nearby.enabled else { return String(localized: "开启后会请求定位与通知权限。App 不在前台时也要提醒，需要把定位设为“始终允许”。") }
+        let notifications = nearby.notificationsAuthorized == false ? String(localized: " 通知权限已关闭，提醒无法显示。") : ""
         switch nearby.authorization {
-        case .denied, .restricted: return "定位权限已关闭，请在系统设置中允许访古使用位置。" + notifications
-        case .notDetermined: return "等待定位授权。" + notifications
+        case .denied, .restricted: return String(localized: "定位权限已关闭，请在系统设置中允许访古使用位置。") + notifications
+        case .notDetermined: return String(localized: "等待定位授权。") + notifications
         case .authorizedWhenInUse:
-            return "目前只在使用 App 时定位。要在不打开 App 时也收到提醒，请在系统设置中改为“始终允许”。" + notifications
+            return String(localized: "目前只在使用 App 时定位。要在不打开 App 时也收到提醒，请在系统设置中改为“始终允许”。") + notifications
         case .authorizedAlways:
-            return (nearby.monitoredIDs.isEmpty ? "已开启，等待首次定位后开始监控附近古迹。"
-                    : "已监控最近的 \(nearby.monitoredIDs.count) 处未打卡古迹。") + notifications
+            return (nearby.monitoredIDs.isEmpty ? String(localized: "已开启，等待首次定位后开始监控附近古迹。")
+                    : String(localized: "已监控最近的 \(nearby.monitoredIDs.count) 处未打卡古迹。")) + notifications
         @unknown default: return notifications
         }
     }
@@ -230,7 +266,7 @@ private struct LegacyLinkRow: View {
             Text(item.place).font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
             Picker("关联图版", selection: $target) {
                 Text("选择古迹").tag("")
-                ForEach(library.monuments) { site in Text("\(site.name) · \(site.place)").tag(site.id) }
+                ForEach(library.monuments) { site in Text(verbatim: "\(site.name) · \(site.place)").tag(site.id) }
             }
             Button("关联") {
                 if let site = library.monuments.first(where: { $0.id == target }) {

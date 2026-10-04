@@ -9,9 +9,10 @@ import XCTest
 extension XCUIApplication {
     /// Launches in a fresh record scope with UIKit transitions off. Pass a monument id to start on
     /// its detail page, and `review: true` to have that page open its review editor immediately.
+    /// The language pinned by `isolated(language:locale:)` (Simplified Chinese by default) is kept.
     func launchForTest(site: String? = nil, review: Bool = false, arguments: [String] = []) {
         isolate()
-        var all = ["-uiTestDisableAnimations"]
+        var all = languageArguments + ["-uiTestDisableAnimations"]
         if let site { all += ["-uiTestOpenSite", site] }
         if review { all.append("-uiTestOpenReview") }
         launchArguments = all + arguments

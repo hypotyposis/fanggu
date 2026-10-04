@@ -9,9 +9,9 @@ enum AppAppearance: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .system: "跟随系统"
-        case .light: "亮色"
-        case .dark: "深色"
+        case .system: String(localized: "跟随系统")
+        case .light: String(localized: "亮色")
+        case .dark: String(localized: "深色")
         }
     }
     var colorScheme: ColorScheme? {
@@ -28,6 +28,9 @@ private struct FangguAppearance: ViewModifier {
 
     func body(content: Content) -> some View {
         content.preferredColorScheme((AppAppearance(rawValue: appearance) ?? .system).colorScheme)
+            // Hiragino Mincho sets lines much tighter than Noto Serif SC; views with their own
+            // line spacing still override this.
+            .lineSpacing(AppLanguage.current == .japanese ? 4 : 0)
     }
 }
 
@@ -40,8 +43,9 @@ struct FangguSeal: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            Text("访古")
-            Text("之印")
+            // The seal is part of the brand mark and keeps its Chinese characters in every language.
+            Text(verbatim: "访古")
+            Text(verbatim: "之印")
         }
         .font(.custom("MaShanZheng-Regular", fixedSize: size * 0.25))
         .lineSpacing(-2)
@@ -56,9 +60,9 @@ struct FangguSeal: View {
 
 struct FangguSectionTitle: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    let eyebrow: String
-    let title: String
-    let subtitle: String
+    let eyebrow: LocalizedStringKey
+    let title: LocalizedStringKey
+    let subtitle: LocalizedStringKey
 
     var body: some View {
         VStack(alignment: .leading, spacing: 7) {
@@ -70,7 +74,8 @@ struct FangguSectionTitle: View {
                 .font(FangguFont.serif(31, weight: .medium))
                 .tracking(3)
                 .foregroundStyle(Palette.paper)
-                .lineLimit(1)
+                // Long English titles may take a second line at accessibility sizes instead of truncating.
+                .lineLimit(dynamicTypeSize.isAccessibilitySize ? 2 : 1)
                 .minimumScaleFactor(0.45)
             if !dynamicTypeSize.isAccessibilitySize {
                 Text(subtitle)
@@ -80,6 +85,20 @@ struct FangguSectionTitle: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+/// Lays short labels out side by side when they fit on one line, otherwise stacks them.
+/// Translations are often longer than the Chinese, so fixed rows of tags must be able to wrap.
+struct FangguFittingRow<Content: View>: View {
+    var spacing: CGFloat = 8
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        ViewThatFits(in: .horizontal) {
+            HStack(alignment: .firstTextBaseline, spacing: spacing) { content() }
+            VStack(alignment: .leading, spacing: 6) { content() }
+        }
     }
 }
 
@@ -185,7 +204,7 @@ struct FangguOutlineButton: ButtonStyle {
 }
 
 struct FangguField: View {
-    let placeholder: String
+    let placeholder: LocalizedStringKey
     @Binding var text: String
     var showsClearButton = false
 
