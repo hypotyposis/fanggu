@@ -150,6 +150,28 @@ final class UXRegressionTests: XCTestCase {
         XCTAssertEqual(try Data(contentsOf: url), original)
     }
 
+    @MainActor func testTypeAliasSearchFindsRuinsGardensSchoolsCastlesAndShrines() throws {
+        let store = LibraryStore(fileURL: temporaryFile())
+        // One alias per type added alongside catalog.js; each term is absent from the
+        // site's plain fields so only the typeAliases table can produce the match.
+        let cases: [(type: String, alias: String, id: String)] = [
+            ("ruins", "城址", "xj_jiaohe"),
+            ("garden", "苏州园林", "js_liuyuan"),
+            ("school", "国学", "bj_guozijian"),
+            ("castle", "天守", "jp_osaka_sengan"),
+            ("shrine", "神宫", "jp_kasuga_honden"),
+        ]
+        for item in cases {
+            let site = try XCTUnwrap(store.monuments.first { $0.id == item.id }, "\(item.id) is in the bundled catalog")
+            XCTAssertTrue(site.types.contains(item.type), "\(item.id) is typed \(item.type)")
+            let plain = [site.name, site.short, site.sub, site.place] + site.legacyNames + site.typeNames
+            XCTAssertFalse(plain.contains { $0.localizedCaseInsensitiveContains(item.alias) },
+                           "\(item.alias) must reach \(item.id) only through the \(item.type) alias")
+            XCTAssertTrue(CatalogSearch.matches(site, terms: CatalogSearch.terms(item.alias)),
+                          "\(item.alias) should find \(item.id) via the \(item.type) alias")
+        }
+    }
+
     private func temporaryFile() -> URL {
         FileManager.default.temporaryDirectory.appendingPathComponent("fanggu-ux-\(UUID().uuidString)")
             .appendingPathComponent("library.json")

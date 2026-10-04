@@ -48,6 +48,16 @@ struct DimensionScores: Codable, Equatable {
     }
     var isEmpty: Bool { values.isEmpty }
     var count: Int { values.count }
+
+    /// Equal weight for each rated axis. Missing dimensions never count as zero.
+    /// Derived on read so edits, resets and imports cannot leave a stale total.
+    var aggregateScore: Double? {
+        guard !isEmpty, isValid else { return nil }
+        return Double(values.values.reduce(0, +)) / Double(count)
+    }
+    var aggregateScoreLabel: String? {
+        aggregateScore.map { String(format: "%.2f", locale: Locale(identifier: "en_US_POSIX"), $0) }
+    }
     var isValid: Bool {
         values.allSatisfy { ReviewDimension(rawValue: $0.key) != nil && (1...5).contains($0.value) }
     }

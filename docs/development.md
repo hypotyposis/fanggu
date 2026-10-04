@@ -1,6 +1,6 @@
 # 开发指南
 
-本指南说明当前项目的模块关系、数据约束、资产流程和验证方法。简要约定见 [AGENTS.md](../AGENTS.md)，产品操作见 [README](../README.md)，图版目录见 [assets/README.md](../assets/README.md)。
+本指南说明当前项目的模块关系、数据约束、资产流程和验证方法。简要约定见 [AGENTS.md](../AGENTS.md)，产品操作见 [README](../README.md)，图版目录见 [assets/README.md](../assets/README.md)。第一次进入仓库先看 [架构与数据流](architecture.md)；字段定义见 [数据模型](data-model.md)，按任务的操作步骤见 [常见任务](tasks.md)，检查的选择与汇报见 [测试与验证](testing.md)，名词见 [术语表](glossary.md)。
 
 ## 环境与首次运行
 
@@ -48,6 +48,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `sites.js` | `SITES` 古迹正文、`DYN` 朝代、`CHAPTERS` 章节、`PLACES` 地点 |
 | `catalog.js` | 国家、地区、行政区、类型和搜索分类；供 iOS 导出和目录验证使用 |
 | `protection.js` / `protection-data.js` | 国保资料查询 / 生成的官方登记数据 |
+| `curations.js` | 专题名录（名录／线路／专题）的编辑清单，只引用古迹 ID；由导出脚本校验并写入 `ios/Fanggu/Resources/curations.json`，进度在 App 内按个人记录派生 |
 | `plates.js` / `colored-plates.js` | 生成的线稿 / 设色清单，路径相对仓库根目录 |
 | `palette.css` | 制图、App 导出与本地审图共用的朝代色板 |
 | `plate-preview.css` | 本地审图的基础样式与参数 SVG 样式 |
@@ -60,9 +61,9 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `ios/Fanggu/ContentView.swift` / `MonumentDetailView.swift` / `MapTimelineView.swift` / `TimelineView.swift` / `MyLibraryView.swift` | 原生图鉴、详情、地图年表和个人资料 |
 | `ios/Fanggu/Localizable.xcstrings` / `InfoPlist.xcstrings` / `Localization.swift` | 界面文字与 App 名称的英日译文；按系统为 App 解析的语言选择目录与字体 |
 
-目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
+目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js → curations.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
 
-国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
+国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
 
 ## 数据和个人记录
 
@@ -211,6 +212,21 @@ git diff --check
 
 原生验证使用独立模拟器和测试存储，避免导入或清空真实个人数据。记录与评价、取消手势、终点保存和失败重试的验证由原生测试承担。没有改到的交互不重复整套测试。汇报本次执行的检查和未验证项，历史截图与报告不代表本次结果。
 
+## 并行会话与测试隔离
+
+多个会话或代理同时验证时按下面的边界隔离；只读检查可以并行，共享资源不能共用。
+
+| 资源 | 冲突 | 处理 |
+| --- | --- | --- |
+| 检出目录 | 同一检出里并行 `xcodegen`、`xcodebuild` 会改写同一份工程与 DerivedData | 每个会话使用独立 worktree，先按[本地资源包](#本地资源包)补齐被忽略的素材，否则依赖图片的 Node 用例会直接失败 |
+| 模拟器 | 同一台模拟器上的两次 `xcodebuild test` 互相覆盖安装、打断 UI 测试，App 容器内的记录互相污染 | `ios/scripts/run-ios-tests.sh` 为当前 worktree 创建并启动独立模拟器，以 `id=` 指定目标；任务结束运行 `sh ios/scripts/test-device.sh delete` 回收 |
+| 个人记录与外观 | UI 测试读写 App 容器内真实 `library.json` 与标准 `UserDefaults` | Debug 构建的 `FANGGU_LIBRARY_SCOPE` 把记录与外观切到独立作用域；`XCUIApplication.isolated()` 为每个用例生成新作用域，详见 [iOS 开发说明](../ios/README.md#测试隔离与并行会话) |
+| DerivedData | 不同 worktree 默认已按路径分目录，显式指定更稳妥 | 脚本默认 `ios/build/DerivedData`，被 Git 忽略，可用 `FANGGU_DERIVED_DATA` 覆盖 |
+| 审图端口 | `8765` 只能绑定一个进程 | 被占用时运行 `python3 -m http.server 0 --bind 127.0.0.1`，按输出的端口打开页面；审图页之间使用相对链接 |
+| CPU 负载 | `testTabAndAppearanceSwitchingLatency` 与 `ReviewTests` 的耗时阈值在多个构建并行时可能超时 | 这类用例尽量单独运行；并行下失败先复跑，再判断是否真的退化 |
+
+Node 与 Python 测试只读仓库文件，写盘都在带随机前缀的临时目录，可以并行；`node --test` 需在仓库根目录运行。Git 对象库在 worktree 之间共享，各自提交是安全的，但 stash 栈也共享，不要使用无标签的 `git stash`。
+
 ## 素材保管与 App 交付
 
 运行图版按本地相对路径维护，由 `sync-artwork.sh` 随 App 打包；无需部署图片服务器。原稿、参考照片和恢复资料仍独立保管，按 [本地资源包](#本地资源包)打包并复制到独立存储。
@@ -220,6 +236,7 @@ App 目录更新后同步全部运行图版，再构建；Git 中的路径和清
 ## 文档维护
 
 - [AGENTS.md](../AGENTS.md) 保存跨任务的简要规则；本指南保存机制、命令和操作步骤；图版规范保存领域约束。避免多处复制相同长规则。
+- [架构与数据流](architecture.md)、[数据模型](data-model.md)、[常见任务](tasks.md)、[测试与验证](testing.md)、[术语表](glossary.md)、[脚本一览](../scripts/README.md)、[测试一览](../tests/README.md) 面向第一次进入仓库的人和代理：只做地图、字段、步骤与检查的索引，不新增规则。接口、命令、字段或测试布局变化时同步它们。
 - [增量制图操作手册](monument-batch-workflow.md) 保存新增古迹的调度、止损、恢复和耗时记录规则；线稿与设色规范共同引用它，不另建互相矛盾的批量流程。
 - [线稿历史任务](../assets/research/history/line-production-2026-09-15.md)、[设色历史任务](../assets/color-research/history/color-production-2026-09-15.md) 保存原始分工和当时授权，供追溯；不用于启动新任务。
 - [恢复摘要](../assets/color-research/history/recovery-2026-09-15.md)、批次清单和考据提示词保留历史事实。详细 `recovery/` 材料仅在本地保存。可以追加状态说明与当前入口，不篡改当时实际输入、数量或验证结果。
