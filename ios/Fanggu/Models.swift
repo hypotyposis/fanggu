@@ -253,7 +253,10 @@ enum FangguFont {
     private static let serifName = AppLanguage.current == .japanese ? "HiraMinProN-W3" : "NotoSerifSC-Regular"
 
     static func serif(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
-        .custom(serifName, size: size).weight(weight)
+        // Display sizes grow like titles rather than body text, so a single long word
+        // (common in English) still fits a line at the largest accessibility sizes.
+        let style: Font.TextStyle = size >= 30 ? .largeTitle : size >= 19 ? .title : .body
+        return .custom(serifName, size: size, relativeTo: style).weight(weight)
     }
     static func brush(_ size: CGFloat) -> Font { .custom("MaShanZheng-Regular", size: size) }
     static func mono(_ size: CGFloat) -> Font { .system(size: max(11, size), design: .monospaced) }

@@ -113,7 +113,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 App 支持简体中文、英文和日文，跟随 iOS 为访古解析的语言。源数据仍以中文维护；`i18n/<语言>.json` 的 `terms` 按键翻译国家、地区、类型、时代、省份（以中文省名为键）、地点（以 `placeKey` 为键）和国保来源名，`sites` 按古迹 ID 翻译 `name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 与 `protection` 的 `unitName`、`scope`、`note`。只为源数据中非空的字段写译文；`facts`、`captions`、`protection` 逐项对应，不能增删或调换顺序。
 
-`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。`tests/i18n.test.cjs` 要求每个古迹都有完整且对齐的英日译文、英文展示文字不含汉字、日文不含简体专用字形，并检查界面字符串的占位符。
+专题名录的译文在同一文件的 `curations`（按专题 ID 翻译 `name`、`eyebrow`、`lede`、`note`）与 `terms.curationKinds`。`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json` 及对应的 `curations*.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。`tests/i18n.test.cjs` 要求每个古迹都有完整且对齐的英日译文、英文展示文字不含汉字、日文不含简体专用字形，并检查界面字符串的占位符。
 
 译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
 

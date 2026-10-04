@@ -16,6 +16,9 @@ enum AppLanguage: String, CaseIterable, Identifiable {
     var catalogResource: String {
         self == .simplifiedChinese ? "catalog" : "catalog-\(rawValue)"
     }
+    var curationResource: String {
+        self == .simplifiedChinese ? "curations" : "curations-\(rawValue)"
+    }
 
     /// Endonyms stay untranslated so every reader can find their own language.
     var displayName: String {
@@ -28,6 +31,14 @@ enum AppLanguage: String, CaseIterable, Identifiable {
 
     /// Separates names inside a sentence: "、" in Chinese and Japanese, a comma in English.
     var listSeparator: String { self == .english ? ", " : "、" }
+    /// Joins two short names into one label, e.g. two regions on a map marker.
+    var nameSeparator: String {
+        switch self {
+        case .simplifiedChinese: "·"
+        case .english: " · "
+        case .japanese: "・"
+        }
+    }
 
     static func resolve(_ localizations: [String]) -> AppLanguage {
         for identifier in localizations {

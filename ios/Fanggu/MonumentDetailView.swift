@@ -19,10 +19,16 @@ struct MonumentDetailView: View {
             VStack(alignment: .leading, spacing: 22) {
                 Text("图鉴  /  \(site.name)")
                     .font(FangguFont.mono(11)).foregroundStyle(Palette.gold)
-                HStack {
-                    Text(site.dynastyName).foregroundStyle(site.accent)
-                    Spacer()
-                    Text(site.era).foregroundStyle(Palette.paper2)
+                ViewThatFits(in: .horizontal) {
+                    HStack {
+                        Text(site.dynastyName).foregroundStyle(site.accent).fixedSize()
+                        Spacer()
+                        Text(site.era).foregroundStyle(Palette.paper2).fixedSize()
+                    }
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(site.dynastyName).foregroundStyle(site.accent)
+                        Text(site.era).foregroundStyle(Palette.paper2)
+                    }
                 }
                 .font(FangguFont.mono(11))
                 VStack(alignment: .leading, spacing: 5) {
@@ -34,16 +40,16 @@ struct MonumentDetailView: View {
                     if let current = location.currentLocation {
                         let label = CatalogDistance.label(CatalogDistance.metres(from: current, to: site))
                         let here = record.status != .visited && CatalogDistance.isHere(site, from: current)
-                        Text(here ? "就在附近 · \(label)" : label)
+                        Text(here ? String(localized: "就在附近 · \(label)") : label)
                             .font(.system(size: distanceSize, design: .monospaced))
                             .foregroundStyle(here ? Palette.gold : Palette.paper2)
                             .accessibilityIdentifier(here ? "detail-here-hint" : "detail-distance")
                     }
                 }
                 if !site.protection.isEmpty {
-                    HStack(spacing: 8) {
+                    FangguFittingRow {
                         ForEach(site.protection, id: \.self) { entry in
-                            Text(entry.batchLabel).font(FangguFont.mono(10))
+                            Text(entry.batchLabel).font(FangguFont.mono(10)).fixedSize()
                                 .foregroundStyle(Palette.gold).padding(6)
                                 .overlay(Rectangle().stroke(Palette.goldDim, lineWidth: 1))
                         }
@@ -90,6 +96,7 @@ struct MonumentDetailView: View {
                             if let url = URL(string: entry.sourceURL), !entry.sourceURL.isEmpty {
                                 Link(destination: url) {
                                     Text(verbatim: "\(entry.sourceTitle.isEmpty ? String(localized: "保护信息来源") : entry.sourceTitle) ↗")
+                                        .multilineTextAlignment(.leading)
                                 }
                                     .foregroundStyle(Palette.gold)
                             }
@@ -133,7 +140,7 @@ struct MonumentDetailView: View {
                 Text("图版与资料来源").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                 ForEach(site.sourceLinks, id: \.self) { source in
                     if let url = URL(string: source.url) {
-                        Link(destination: url) { Text(verbatim: "\(source.title) ↗") }
+                        Link(destination: url) { Text(verbatim: "\(source.title) ↗").multilineTextAlignment(.leading) }
                             .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
                     }
                 }
@@ -164,6 +171,12 @@ struct MonumentDetailView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Button { sharing = true } label: { Label("分享访古卡", systemImage: "square.and.arrow.up") }
                     .accessibilityIdentifier("share-card")
+            }
+            // Long translated names shrink a little instead of ending in "…".
+            ToolbarItem(placement: .principal) {
+                Text(site.short.isEmpty ? site.name : site.short)
+                    .font(.headline).lineLimit(1).minimumScaleFactor(0.7)
+                    .accessibilityAddTraits(.isHeader)
             }
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
@@ -218,7 +231,9 @@ struct ArrivalSlider: View {
                 HStack(spacing: 6) {
                     Text(colorReady ? instruction : String(localized: "设色图暂未加载"))
                         .font(FangguFont.serif(12)).tracking(1)
-                        .lineLimit(1).minimumScaleFactor(0.7)
+                        .lineLimit(1).minimumScaleFactor(0.6)
+                        // The slider keeps a fixed height; its caption stops growing like other controls.
+                        .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                     if colorReady && progress == 0 {
                         Image(systemName: "arrow.right").font(.system(size: 10, weight: .light))
                     }
@@ -513,7 +528,8 @@ struct ReviewEditor: View {
 
     @ViewBuilder private var reviewHeading: some View {
         HStack {
-            Text("私评").font(FangguFont.brush(12))
+            // A small seal, like the brand seals, keeps its Chinese characters.
+            Text(verbatim: "私评").font(FangguFont.brush(12))
                 .foregroundStyle(Palette.redText)
                 .frame(width: 30, height: 30)
                 .overlay(Rectangle().stroke(Palette.redText.opacity(0.6), lineWidth: 0.7).padding(2))

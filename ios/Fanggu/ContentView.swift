@@ -124,6 +124,7 @@ private struct FrostedTabBar: View {
                             .frame(height: 24)
                         Text(items[index].title)
                             .font(FangguFont.serif(11, weight: .medium))
+                            .lineLimit(1).minimumScaleFactor(0.7)
                     }
                     .foregroundStyle(selection == index ? Palette.gold : Palette.paper2)
                     .frame(maxWidth: .infinity)
@@ -144,8 +145,11 @@ private struct FrostedTabBar: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel(items[index].title)
                 .accessibilityAddTraits(selection == index ? .isSelected : [])
+                // Like the system tab bar: labels stop growing, and a long press shows them enlarged.
+                .accessibilityShowsLargeContentViewer { Label(items[index].title, systemImage: items[index].icon) }
             }
         }
+        .dynamicTypeSize(...DynamicTypeSize.xxLarge)
         .animation(reduceMotion ? nil : .spring(response: 0.34, dampingFraction: 0.82), value: selection)
         .padding(6)
         .background {
@@ -397,13 +401,13 @@ struct ExploreView: View {
     }
 
     private var emptyTitle: String {
-        guard nearbyOnly else { return "暂无符合条件的古迹" }
-        return location.currentLocation == nil ? "还没有位置，无法筛选附近" : "30 公里内没有收录的古迹"
+        guard nearbyOnly else { return String(localized: "暂无符合条件的古迹") }
+        return location.currentLocation == nil ? String(localized: "还没有位置，无法筛选附近") : String(localized: "30 公里内没有收录的古迹")
     }
 
     private var emptySubtitle: String {
-        guard nearbyOnly else { return "试试其他时代、地区或搜索词。" }
-        return location.currentLocation == nil ? "原因见上方说明；关闭附近筛选可继续浏览全部。" : "换个地方再看，或者关闭附近筛选浏览全部。"
+        guard nearbyOnly else { return String(localized: "试试其他时代、地区或搜索词。") }
+        return location.currentLocation == nil ? String(localized: "原因见上方说明；关闭附近筛选可继续浏览全部。") : String(localized: "换个地方再看，或者关闭附近筛选浏览全部。")
     }
 
     private func distanceLabel(_ site: Monument) -> String? {
@@ -613,6 +617,7 @@ struct ExploreView: View {
 }
 
 private struct FilterMenu: View {
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let title: LocalizedStringKey
     @Binding var value: String
     let options: [String: String]
@@ -631,7 +636,8 @@ private struct FilterMenu: View {
                     .foregroundStyle(Palette.paper3)
                 HStack(spacing: 3) {
                     Text(options[value] ?? String(localized: "全部"))
-                        .lineLimit(1)
+                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
+                        .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.8)
                     Spacer(minLength: 2)
                     Image(systemName: "chevron.down").font(.system(size: 9))
@@ -726,13 +732,23 @@ struct MonumentCard: View {
                     ArtworkView(site: site, visited: record.status == .visited,
                                 height: 240, reveal: reveal)
                     VStack(alignment: .leading, spacing: 9) {
-                        HStack(spacing: 8) {
-                            Text(record.status.title)
-                                .foregroundStyle(record.status.textColor)
-                            Text(site.dynastyName)
-                                .foregroundStyle(site.accent)
-                            if !site.displayYearLabel.isEmpty {
-                                Text(site.displayYearLabel).foregroundStyle(Palette.paper3)
+                        // Long translated dates move to their own line instead of squeezing the row.
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 8) {
+                                Text(record.status.title).foregroundStyle(record.status.textColor).fixedSize()
+                                Text(site.dynastyName).foregroundStyle(site.accent).fixedSize()
+                                if !site.displayYearLabel.isEmpty {
+                                    Text(site.displayYearLabel).foregroundStyle(Palette.paper3).fixedSize()
+                                }
+                            }
+                            VStack(alignment: .leading, spacing: 4) {
+                                HStack(spacing: 8) {
+                                    Text(record.status.title).foregroundStyle(record.status.textColor)
+                                    Text(site.dynastyName).foregroundStyle(site.accent)
+                                }
+                                if !site.displayYearLabel.isEmpty {
+                                    Text(site.displayYearLabel).foregroundStyle(Palette.paper3)
+                                }
                             }
                         }
                         .font(FangguFont.mono(11))
@@ -770,10 +786,10 @@ struct MonumentCard: View {
             .buttonStyle(.plain)
             .accessibilityIdentifier("catalog-site-\(site.id)")
             if !site.protection.isEmpty {
-                HStack(spacing: 8) {
+                FangguFittingRow {
                     ForEach(site.protection, id: \.self) { entry in
                         Text(entry.batchLabel)
-                            .font(FangguFont.mono(10))
+                            .font(FangguFont.mono(10)).fixedSize()
                             .foregroundStyle(Palette.gold)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 4)

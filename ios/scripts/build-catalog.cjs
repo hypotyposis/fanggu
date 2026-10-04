@@ -29,7 +29,7 @@ const referenceTitle = { 'zh-Hans': n => `参考图 ${n}`, en: n => `Reference i
 const translations = Object.fromEntries(languages.map(language => {
   const file = path.join(root, 'i18n', `${language}.json`);
   const data = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
-  return [language, { terms: data.terms || {}, sites: data.sites || {} }];
+  return [language, { terms: data.terms || {}, sites: data.sites || {}, curations: data.curations || {} }];
 }));
 
 // Monument-level coordinates come only from a research record's sourced `coordinates`; the
@@ -165,6 +165,16 @@ const lists = validate(curations, siteIDs).map(list => ({
   id: list.id, kind: list.kind, kindName: kinds[list.kind], name: list.name,
   eyebrow: text(list.eyebrow), lede: text(list.lede), note: text(list.note), items: list.items
 }));
-const listDestination = path.join(root, 'ios/Fanggu/Resources/curations.json');
-fs.writeFileSync(listDestination, JSON.stringify(lists, null, 2) + '\n');
-process.stdout.write(`Exported ${lists.length} curations to ${path.relative(root, listDestination)}\n`);
+for (const language of ['zh-Hans', ...languages]) {
+  const localized = language === 'zh-Hans' ? lists : lists.map(list => {
+    const entry = translations[language].curations[list.id] || {};
+    const kindName = translations[language].terms.curationKinds?.[list.kind] || list.kindName;
+    const pick = field => list[field] && entry[field] || list[field];
+    return { ...list, kindName, name: pick('name'), eyebrow: pick('eyebrow'), lede: pick('lede'), note: pick('note') };
+  });
+  const filename = language === 'zh-Hans' ? 'curations.json' : `curations-${language}.json`;
+  fs.writeFileSync(path.join(destination, filename), JSON.stringify(localized, null, 2) + '\n');
+}
+const untranslatedLists = languages.flatMap(language => lists.filter(list => !translations[language].curations[list.id]).map(list => `${language}:${list.id}`));
+if (untranslatedLists.length) process.stderr.write(`Untranslated curations (shown in Chinese): ${untranslatedLists.join(', ')}\n`);
+process.stdout.write(`Exported ${lists.length} curations in ${languages.length + 1} languages\n`);

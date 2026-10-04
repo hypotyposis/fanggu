@@ -97,3 +97,19 @@ test('every interface string has English and Japanese translations with matching
   const info = read('ios/Fanggu/InfoPlist.xcstrings').strings.CFBundleDisplayName.localizations;
   assert.deepEqual(Object.keys(info).sort(), ['en', 'ja', 'zh-Hans']);
 });
+
+test('editorial lists are translated and keep the same members in every language', () => {
+  const source = read('ios/Fanggu/Resources/curations.json');
+  for (const language of languages) {
+    const { terms, curations } = read(`i18n/${language}.json`);
+    const exported = read(`ios/Fanggu/Resources/curations-${language}.json`);
+    assert.deepEqual(exported.map(list => [list.id, list.kind, list.items]), source.map(list => [list.id, list.kind, list.items]));
+    for (const list of source) {
+      assert.ok(terms.curationKinds?.[list.kind]?.trim(), `${language} terms.curationKinds.${list.kind}`);
+      for (const field of ['name', 'eyebrow', 'lede', 'note']) {
+        assert.equal(Boolean(curations?.[list.id]?.[field]?.trim()), Boolean(list[field]), `${language} curations.${list.id}.${field}`);
+      }
+    }
+    if (language === 'en') for (const list of exported) assert.doesNotMatch([list.kindName, list.name, list.eyebrow, list.lede, list.note].join(' '), han, list.id);
+  }
+});

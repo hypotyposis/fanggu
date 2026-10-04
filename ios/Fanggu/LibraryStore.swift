@@ -22,7 +22,8 @@ import Foundation
         ids = catalogIDs
         monumentsByID = Dictionary(monuments.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
         // Lists ship with the catalogue; members that are missing from this build are dropped rather than shown empty.
-        let lists = Bundle.main.url(forResource: "curations", withExtension: "json")
+        let lists = (Bundle.main.url(forResource: language.curationResource, withExtension: "json")
+            ?? Bundle.main.url(forResource: "curations", withExtension: "json"))
             .flatMap { try? JSONDecoder().decode([Curation].self, from: Data(contentsOf: $0)) } ?? []
         let available = lists.filter { list in list.items.contains { catalogIDs.contains($0) } }
         var bySite: [String: [Curation]] = [:]
@@ -315,9 +316,9 @@ enum CollectionFacet: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .dynasty: "时代"
-        case .province: "省份"
-        case .type: "类型"
+        case .dynasty: String(localized: "时代")
+        case .province: String(localized: "省份")
+        case .type: String(localized: "类型")
         }
     }
 }

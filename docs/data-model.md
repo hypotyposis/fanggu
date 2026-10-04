@@ -175,6 +175,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `placeName`、`country`、`province`、`region`、`latitude`、`longitude` | `PLACES` 与 `classify()`；经纬度是城镇级显示点 |
 | `siteLatitude`、`siteLongitude`、`siteCoordinateSource` | 研究 JSON 的 `coordinates` 本体坐标与其 `source`；没有登记时为 `null` 与 `""`。`site_recommendation` 的经纬度不导出，因为其中不少只是城镇点的复制。只用于附近提醒，不改变地图点；导出要求带 `source` 且距城镇点不超过 60 公里 |
 | `typeNames` | `catalog.js` 的类型名 |
+| `countryName`、`provinceName`、`regionName` | 国家、省份、地区的显示名；中文目录与 `country`、`province`、`regions[].name` 相同，`province` 仍是筛选键 |
+| `searchAliases` | 其他语言目录中的名称、短名、地点、地点名与省份名，供跨语言搜索 |
 | `lede`、`facts`、`quote` | 去除 HTML 标签后的文字 |
 | `captions` | `image.caption`，否则 `SITES.caption` |
 | `lineImage`、`colorImage` | 线稿 PNG 与设色 AVIF 的文件名，不含目录 |
@@ -182,6 +184,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `protection[]` | `{ batch, unitName, relation, scope, locator, note, sourceTitle, sourceURL }` |
 
 导出在重复 ID、缺地点、缺图版、缺时代色时失败。
+
+`catalog-en.json`、`catalog-ja.json` 与 `catalog.json` 条目一一对应、顺序相同；ID、年代、筛选键、坐标、图版、来源链接与国保批次不变，只替换展示文字：`name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 取 `i18n/<语言>.json` 的 `sites[id]`；`placeName`、`provinceName`、`countryName`、`regionName`、`dynastyName`、`typeNames` 与国保来源名取 `terms`；国保的 `unitName`、`scope`、`note` 逐项取译文。缺少译文的字段回退中文。专题名录同理导出为 `curations-en.json`、`curations-ja.json`，译文在 `i18n/<语言>.json` 的 `curations` 与 `terms.curationKinds`。字段约定见 [开发指南 · 多语言目录](development.md#多语言目录)。
 
 ## 个人记录 library.json
 

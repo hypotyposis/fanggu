@@ -28,6 +28,9 @@ private struct FangguAppearance: ViewModifier {
 
     func body(content: Content) -> some View {
         content.preferredColorScheme((AppAppearance(rawValue: appearance) ?? .system).colorScheme)
+            // Hiragino Mincho sets lines much tighter than Noto Serif SC; views with their own
+            // line spacing still override this.
+            .lineSpacing(AppLanguage.current == .japanese ? 4 : 0)
     }
 }
 
@@ -71,7 +74,8 @@ struct FangguSectionTitle: View {
                 .font(FangguFont.serif(31, weight: .medium))
                 .tracking(3)
                 .foregroundStyle(Palette.paper)
-                .lineLimit(1)
+                // Long English titles may take a second line at accessibility sizes instead of truncating.
+                .lineLimit(dynamicTypeSize.isAccessibilitySize ? 2 : 1)
                 .minimumScaleFactor(0.45)
             if !dynamicTypeSize.isAccessibilitySize {
                 Text(subtitle)
@@ -81,6 +85,20 @@ struct FangguSectionTitle: View {
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+/// Lays short labels out side by side when they fit on one line, otherwise stacks them.
+/// Translations are often longer than the Chinese, so fixed rows of tags must be able to wrap.
+struct FangguFittingRow<Content: View>: View {
+    var spacing: CGFloat = 8
+    @ViewBuilder let content: () -> Content
+
+    var body: some View {
+        ViewThatFits(in: .horizontal) {
+            HStack(alignment: .firstTextBaseline, spacing: spacing) { content() }
+            VStack(alignment: .leading, spacing: 6) { content() }
+        }
     }
 }
 

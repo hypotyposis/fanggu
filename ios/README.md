@@ -28,11 +28,13 @@ SwiftUI 原生 App，最低 iOS 18。古迹目录由维护源数据中的 `sites
 
 ## 多语言
 
-App 提供简体中文、English 与日本語，跟随 iOS 为访古解析的语言；可在系统“设置 → 访古 → 语言”单独指定，“我的 → 语言”直接打开该设置页。系统语言不是三者之一时显示中文。界面文字、App 名称、古迹名称、地点、年代、正文、图注、国保条目和筛选术语都已翻译；图版来源的作者与发布者署名保持原文，品牌印章「访古之印」、到访印「亲见」与打卡拖块「访」各语言都保留中文。
+App 提供简体中文、English 与日本語，跟随 iOS 为访古解析的语言；可在系统“设置 → 访古 → 语言”单独指定，“我的 → 语言”直接打开该设置页。系统语言不是三者之一时显示中文。界面文字、App 名称、古迹名称、地点、年代、正文、图注、国保条目和筛选术语都已翻译；图版来源的作者与发布者署名保持原文，品牌印章「访古之印」、到访印「亲见」、打卡拖块「访」「印」、评价小印「私评」与访古卡落款「访古」各语言都保留中文。
 
 界面译文在 `Fanggu/Localizable.xcstrings`（源语言 zh-Hans），App 名称在 `Fanggu/InfoPlist.xcstrings`。需要翻译的界面文字用字符串字面量传给 `Text`、`Button` 等，或用 `String(localized:)` 生成；作为普通 `String` 传入的文字不会被翻译。古迹内容由 `build-catalog.cjs` 按 `i18n/en.json`、`i18n/ja.json` 导出 `catalog-en.json`、`catalog-ja.json`，`LibraryStore` 按当前语言读取对应目录。三份目录的古迹 ID、筛选键与图版相同，切换语言不改个人记录和备份。搜索同时匹配其他语言的名称与地点。日文界面使用系统明朝体（Hiragino Mincho），以显示日本字形；中文与英文继续使用 Noto Serif SC。
 
-既有 UI 测试按中文标签操作，`XCUIApplication.isolated()` 在生成独立记录作用域的同时固定为简体中文启动，不受模拟器语言影响；`LocalizationUITests` 以 `isolated(language:locale:)` 分别用英文、日文启动，检查主要页面没有遗留中文或简体字。
+专题名录的名称与说明由 `curations-en.json`、`curations-ja.json` 提供，定位与相册权限说明在 `InfoPlist.xcstrings`。较大的衬线字号按标题样式随动态字体缩放，避免英文单词在最大辅助字号下被拆开；日文明朝体在根视图统一加了行距；底栏与打卡滑块的文字在辅助字号下不再继续放大，长按底栏可看放大标签。
+
+既有 UI 测试按中文标签操作，`XCUIApplication.isolated()` 在生成独立记录作用域的同时固定为简体中文启动，不受模拟器语言影响；Xcode 方案的测试动作也固定为简体中文，单元测试可直接断言中文文案，从 Xcode 运行 App 时仍跟随模拟器语言。`LocalizationUITests` 以 `isolated(language:locale:)` 分别用英文、日文启动，检查主要页面没有遗留中文或简体字。
 
 ## 专题名录与收集进度
 

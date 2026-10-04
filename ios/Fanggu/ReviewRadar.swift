@@ -331,6 +331,7 @@ struct ReviewRadar: View {
                         .overlay(Circle().stroke(highlighted ? Palette.redText.opacity(0.6) : Palette.goldDim.opacity(0.3), lineWidth: 0.7))
                     Text(ReviewDimension.description(value)).font(FangguFont.serif(11))
                         .lineLimit(1).minimumScaleFactor(0.7)
+                        .padding(.horizontal, 2)
                 }
                 .foregroundStyle(highlighted ? Palette.redText : Palette.paper2)
                 .frame(maxWidth: .infinity)

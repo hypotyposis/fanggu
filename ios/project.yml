@@ -32,10 +32,6 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         LOCALIZATION_PREFERS_STRING_CATALOGS: YES
         SWIFT_EMIT_LOC_STRINGS: YES
-    scheme:
-      testTargets:
-        - FangguTests
-        - FangguUITests
   FangguTests:
     type: bundle.unit-test
     platform: iOS
@@ -58,3 +54,26 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.fanggu.app.uitests
         SWIFT_VERSION: 5.0
         GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Fanggu:
+    build:
+      targets:
+        Fanggu: all
+        FangguTests: [test]
+        FangguUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      # Unit tests assert the Chinese copy; UI tests choose their own language when launching the app.
+      language: zh-Hans
+      region: CN
+      targets:
+        - FangguTests
+        - FangguUITests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

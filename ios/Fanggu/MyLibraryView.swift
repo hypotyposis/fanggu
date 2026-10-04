@@ -125,12 +125,24 @@ struct MyLibraryView: View {
             Button {
                 if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
             } label: {
-                HStack {
-                    Text(verbatim: AppLanguage.current.displayName)
-                    Spacer()
-                    Text("在系统设置中更改")
-                    Image(systemName: "arrow.up.forward")
+                ViewThatFits(in: .horizontal) {
+                    HStack {
+                        Text(verbatim: AppLanguage.current.displayName).fixedSize()
+                        Spacer()
+                        Text("在系统设置中更改").fixedSize()
+                        Image(systemName: "arrow.up.forward")
+                    }
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text(verbatim: AppLanguage.current.displayName)
+                        HStack(alignment: .firstTextBaseline) {
+                            Text("在系统设置中更改")
+                            Image(systemName: "arrow.up.forward")
+                        }
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 8)
                 }
+                .multilineTextAlignment(.leading)
             }
             .buttonStyle(FangguOutlineButton())
             .accessibilityHint("打开系统设置，为访古选择语言")
@@ -208,16 +220,16 @@ private struct NearbyReminderSection: View {
         problem || (nearby.enabled && nearby.authorization == .authorizedWhenInUse)
     }
     private var status: String {
-        guard nearby.enabled else { return "开启后会请求定位与通知权限。App 不在前台时也要提醒，需要把定位设为“始终允许”。" }
-        let notifications = nearby.notificationsAuthorized == false ? " 通知权限已关闭，提醒无法显示。" : ""
+        guard nearby.enabled else { return String(localized: "开启后会请求定位与通知权限。App 不在前台时也要提醒，需要把定位设为“始终允许”。") }
+        let notifications = nearby.notificationsAuthorized == false ? String(localized: " 通知权限已关闭，提醒无法显示。") : ""
         switch nearby.authorization {
-        case .denied, .restricted: return "定位权限已关闭，请在系统设置中允许访古使用位置。" + notifications
-        case .notDetermined: return "等待定位授权。" + notifications
+        case .denied, .restricted: return String(localized: "定位权限已关闭，请在系统设置中允许访古使用位置。") + notifications
+        case .notDetermined: return String(localized: "等待定位授权。") + notifications
         case .authorizedWhenInUse:
-            return "目前只在使用 App 时定位。要在不打开 App 时也收到提醒，请在系统设置中改为“始终允许”。" + notifications
+            return String(localized: "目前只在使用 App 时定位。要在不打开 App 时也收到提醒，请在系统设置中改为“始终允许”。") + notifications
         case .authorizedAlways:
-            return (nearby.monitoredIDs.isEmpty ? "已开启，等待首次定位后开始监控附近古迹。"
-                    : "已监控最近的 \(nearby.monitoredIDs.count) 处未打卡古迹。") + notifications
+            return (nearby.monitoredIDs.isEmpty ? String(localized: "已开启，等待首次定位后开始监控附近古迹。")
+                    : String(localized: "已监控最近的 \(nearby.monitoredIDs.count) 处未打卡古迹。")) + notifications
         @unknown default: return notifications
         }
     }
