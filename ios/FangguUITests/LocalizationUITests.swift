@@ -16,16 +16,7 @@ final class LocalizationUITests: XCTestCase {
         assertNoCharacters(matching: "\\p{Han}", in: app, screen: "catalog")
         capture(app, "en-catalog")
 
-        search.tap(); search.typeText("Foguang")
-        let count = app.staticTexts["catalog-result-count"]
-        XCTAssertTrue(count.waitForExistence(timeout: 5))
-        XCTAssertTrue(count.label.hasSuffix("monuments") || count.label.hasSuffix("monument"), count.label)
-        XCTAssertNotEqual(count.label, "0 monuments")
-        app.buttons["clear-catalog-search"].tap()
-        search.tap(); search.typeText("佛光寺")
-        XCTAssertNotEqual(count.label, "0 monuments", "Chinese names still find monuments in English")
-        app.buttons["clear-catalog-search"].tap()
-
+        // The floating tab bar collapses while the keyboard is up, so tour the tabs before typing.
         for (tab, title, screen) in [("Footprints", "My Footprints", "footprints"), ("Timeline", "Timeline", "timeline"), ("Me", "My Fanggu", "me")] {
             app.buttons[tab].tap()
             XCTAssertTrue(app.staticTexts[title].waitForExistence(timeout: 5), title)
@@ -33,6 +24,19 @@ final class LocalizationUITests: XCTestCase {
             capture(app, "en-\(screen)")
         }
         XCTAssertTrue(app.buttons["language-settings"].exists)
+
+        app.buttons["Catalog"].tap()
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        let count = app.staticTexts["catalog-result-count"]
+        let foguang = app.buttons["catalog-site-foguang"]
+        search.tap(); search.typeText("Foguang")
+        XCTAssertTrue(foguang.waitForExistence(timeout: 5), "The English name finds the monument")
+        XCTAssertTrue(count.label.hasSuffix("monuments") || count.label.hasSuffix("monument"), count.label)
+        XCTAssertNotEqual(count.label, "0 monuments")
+        app.buttons["clear-catalog-search"].tap()
+        search.tap(); search.typeText("佛光寺")
+        XCTAssertTrue(foguang.waitForExistence(timeout: 5), "Chinese names still find monuments in English")
+        XCTAssertNotEqual(count.label, "0 monuments")
     }
 
     func testJapaneseInterfaceUsesJapaneseLabels() {
