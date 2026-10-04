@@ -16,6 +16,7 @@
 		43F2EAB2A712A3A78A522167 /* UXRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18636163552E611EFD7050C2 /* UXRegressionTests.swift */; };
 		446081072BE3002D27313AC8 /* Artwork in Resources */ = {isa = PBXBuildFile; fileRef = 132DEA14D9216B3216E55681 /* Artwork */; };
 		4543125B3B12B16E913B1855 /* AtlasTimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2CF76E97DA2434D1E6EDE /* AtlasTimelineTests.swift */; };
+		4652453AB7CE1737C6064778 /* TestScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C52C00C935B0C7AF10F272 /* TestScopeTests.swift */; };
 		50B751F1C76D374CD610986C /* CatalogSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0C883026126C5C9D1752B /* CatalogSearch.swift */; };
 		555036135F1E588E2351B04E /* NotoSerifSC-wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0F41782AA5F707B36F5780 /* NotoSerifSC-wght.ttf */; };
 		5F39F8681337A41498B8412B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941369201341EDC769D0A968 /* DesignSystem.swift */; };
@@ -26,11 +27,13 @@
 		73CE79656BA0B4D8631D244B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14485AADE6D55976CAAD1E /* ContentView.swift */; };
 		77202B1E9C9F527BEFEDA9AA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D03C4F19C5416163862612 /* Review.swift */; };
 		890BC744B4DDBB084EDFE354 /* OfflineLand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC54B130694982CA1A92E7 /* OfflineLand.swift */; };
+		89979D04BCAA9530B8EC4A09 /* IsolatedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0955D67A1900762B4F22FC /* IsolatedApp.swift */; };
 		91BAE2E904EB8AABF77588F2 /* RecordControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA836F5CFAAE877E4660FFB /* RecordControls.swift */; };
 		94319EB3331BA8802B670F1C /* MyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B840132592E220716D66BF0 /* MyLibraryView.swift */; };
 		9731F0C81120EE24C4234ED0 /* AtlasTimelineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA079CD4879D0E99E087BBD /* AtlasTimelineUITests.swift */; };
 		983CB5B041412B7DA4962914 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CED4570A3CEC1B630EC8FE /* Models.swift */; };
 		9F5D03D4348614A0EB306ECE /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */; };
+		A0F3EF3349BF0D8672927A7A /* TestScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437FD06936B24F9C4462019 /* TestScope.swift */; };
 		B1DE8D29EEAD8E4FCAF97E60 /* NotoSerifSC-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24B18515ED5644793FAA1C96 /* NotoSerifSC-OFL.txt */; };
 		B43D8DD3205AF5A4B13D463E /* ne_110m_land.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 23CDAF5393A4CDDCD7EAD608 /* ne_110m_land.geojson */; };
 		DB3F190901AB12E09B3F4F17 /* ReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2EF0E8D29DED433004482 /* ReviewTests.swift */; };
@@ -73,6 +76,7 @@
 		4D250EC4BD4A9589E2D7AFDE /* FangguTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FangguTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CC9E9CD88419345D7E3F30F /* Fanggu.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Fanggu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA079CD4879D0E99E087BBD /* AtlasTimelineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasTimelineUITests.swift; sourceTree = "<group>"; };
+		70C52C00C935B0C7AF10F272 /* TestScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScopeTests.swift; sourceTree = "<group>"; };
 		7B840132592E220716D66BF0 /* MyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryView.swift; sourceTree = "<group>"; };
 		7F2E3B4610C6D7B304A97666 /* FangguApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FangguApp.swift; sourceTree = "<group>"; };
 		8AB46DE790EAC210C1B00540 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		AB14485AADE6D55976CAAD1E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BA0F41782AA5F707B36F5780 /* NotoSerifSC-wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerifSC-wght.ttf"; sourceTree = "<group>"; };
 		BAC4414AA8D68FF24A96E42E /* FangguUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FangguUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0955D67A1900762B4F22FC /* IsolatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedApp.swift; sourceTree = "<group>"; };
+		C437FD06936B24F9C4462019 /* TestScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScope.swift; sourceTree = "<group>"; };
 		D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
 		D8EFEA8F598513230A4CD144 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
 		E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaShanZheng-Regular.ttf"; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 			children = (
 				9BC2CF76E97DA2434D1E6EDE /* AtlasTimelineTests.swift */,
 				E7B2EF0E8D29DED433004482 /* ReviewTests.swift */,
+				70C52C00C935B0C7AF10F272 /* TestScopeTests.swift */,
 				18636163552E611EFD7050C2 /* UXRegressionTests.swift */,
 			);
 			path = FangguTests;
@@ -167,6 +174,7 @@
 				33D03C4F19C5416163862612 /* Review.swift */,
 				3F18C69233548DDEAEE8A1BA /* ReviewRadar.swift */,
 				EE791FF657D724DB06BE27FF /* SketchMapLayout.swift */,
+				C437FD06936B24F9C4462019 /* TestScope.swift */,
 				8AB46DE790EAC210C1B00540 /* TimelineView.swift */,
 				9BE18DA2E8D25129B6858F58 /* Resources */,
 			);
@@ -178,6 +186,7 @@
 			children = (
 				6EA079CD4879D0E99E087BBD /* AtlasTimelineUITests.swift */,
 				EBA07A3A66551D2FDC02E96B /* FangguUITests.swift */,
+				BB0955D67A1900762B4F22FC /* IsolatedApp.swift */,
 				1FB416C4A1BBB2B92F3442FA /* UIUXFixTests.swift */,
 			);
 			path = FangguUITests;
@@ -314,6 +323,7 @@
 				77202B1E9C9F527BEFEDA9AA /* Review.swift in Sources */,
 				E55F15C9AD50B1A35A914FF3 /* ReviewRadar.swift in Sources */,
 				66B9CCA7F19AB1FE7F3636AE /* SketchMapLayout.swift in Sources */,
+				A0F3EF3349BF0D8672927A7A /* TestScope.swift in Sources */,
 				2C37F4310E7EF537A6443251 /* TimelineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +334,7 @@
 			files = (
 				9731F0C81120EE24C4234ED0 /* AtlasTimelineUITests.swift in Sources */,
 				34D87544ABD4146139644BC2 /* FangguUITests.swift in Sources */,
+				89979D04BCAA9530B8EC4A09 /* IsolatedApp.swift in Sources */,
 				F633210B92BC4071EE108553 /* UIUXFixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +345,7 @@
 			files = (
 				4543125B3B12B16E913B1855 /* AtlasTimelineTests.swift in Sources */,
 				DB3F190901AB12E09B3F4F17 /* ReviewTests.swift in Sources */,
+				4652453AB7CE1737C6064778 /* TestScopeTests.swift in Sources */,
 				43F2EAB2A712A3A78A522167 /* UXRegressionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

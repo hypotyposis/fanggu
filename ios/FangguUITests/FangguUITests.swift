@@ -2,7 +2,7 @@ import XCTest
 
 final class FangguUITests: XCTestCase {
     func testTabAndAppearanceSwitchingLatency() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         func switchTab(_ title: String, expected: String) {
             let start = ProcessInfo.processInfo.systemUptime
@@ -31,7 +31,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testTokyoCatalogFilterAliasAndDetailReturn() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         app.buttons["筛选"].tap()
         app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "全部国家")).firstMatch.tap()
@@ -57,7 +57,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testAppearancePersistsAndCoversNativeScreens() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         app.buttons["我的"].tap()
         let appearance = app.segmentedControls["appearance-picker"]
@@ -112,7 +112,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testNativeSectionsStayAvailable() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         app.buttons["足迹"].tap()
         XCTAssertTrue(app.staticTexts["我的足迹"].waitForExistence(timeout: 10))
@@ -129,7 +129,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testSixDimensionReleaseAutosavesAndResets() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         openFirstCatalogSite(in: app)
         openReview(in: app)
@@ -198,7 +198,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testSixDimensionLowGradesStayIndividuallyDraggable() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         app.buttons["我的"].tap()
         let appearance = app.segmentedControls["appearance-picker"]
@@ -232,7 +232,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testReviewShortTextAutosavesAndClearIsImmediate() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         openFirstCatalogSite(in: app)
         openReview(in: app)
@@ -273,7 +273,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testCatalogOpensNativeDetail() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         XCTAssertTrue(app.buttons["图鉴"].waitForExistence(timeout: 10))
         openFirstCatalogSite(in: app)
@@ -284,7 +284,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testLargeCardShowsArrivalSlider() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         let displayButton = app.buttons["大图"]
         XCTAssertTrue(displayButton.waitForExistence(timeout: 10))
@@ -295,7 +295,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testArrivalOnlySavesAfterReleasingAtTheEnd() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         openFirstCatalogSite(in: app)
 
@@ -332,7 +332,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testMapMarkersAndSearchOpenVisitedSites() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launch()
         app.buttons["足迹"].tap()
         let map = app.descendants(matching: .any)["visited-map"].firstMatch

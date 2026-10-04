@@ -199,6 +199,21 @@ git diff --check
 
 原生验证使用独立模拟器和测试存储，避免导入或清空真实个人数据。记录与评价、取消手势、终点保存和失败重试的验证由原生测试承担。没有改到的交互不重复整套测试。汇报本次执行的检查和未验证项，历史截图与报告不代表本次结果。
 
+## 并行会话与测试隔离
+
+多个会话或代理同时验证时按下面的边界隔离；只读检查可以并行，共享资源不能共用。
+
+| 资源 | 冲突 | 处理 |
+| --- | --- | --- |
+| 检出目录 | 同一检出里并行 `xcodegen`、`xcodebuild` 会改写同一份工程与 DerivedData | 每个会话使用独立 worktree，先按[本地资源包](#本地资源包)补齐被忽略的素材，否则依赖图片的 Node 用例会直接失败 |
+| 模拟器 | 同一台模拟器上的两次 `xcodebuild test` 互相覆盖安装、打断 UI 测试，App 容器内的记录互相污染 | `ios/scripts/run-ios-tests.sh` 为当前 worktree 创建并启动独立模拟器，以 `id=` 指定目标；任务结束运行 `sh ios/scripts/test-device.sh delete` 回收 |
+| 个人记录与外观 | UI 测试读写 App 容器内真实 `library.json` 与标准 `UserDefaults` | Debug 构建的 `FANGGU_LIBRARY_SCOPE` 把记录与外观切到独立作用域；`XCUIApplication.isolated()` 为每个用例生成新作用域，详见 [iOS 开发说明](../ios/README.md#测试隔离与并行会话) |
+| DerivedData | 不同 worktree 默认已按路径分目录，显式指定更稳妥 | 脚本默认 `ios/build/DerivedData`，被 Git 忽略，可用 `FANGGU_DERIVED_DATA` 覆盖 |
+| 审图端口 | `8765` 只能绑定一个进程 | 被占用时运行 `python3 -m http.server 0 --bind 127.0.0.1`，按输出的端口打开页面；审图页之间使用相对链接 |
+| CPU 负载 | `testTabAndAppearanceSwitchingLatency` 与 `ReviewTests` 的耗时阈值在多个构建并行时可能超时 | 这类用例尽量单独运行；并行下失败先复跑，再判断是否真的退化 |
+
+Node 与 Python 测试只读仓库文件，写盘都在带随机前缀的临时目录，可以并行；`node --test` 需在仓库根目录运行。Git 对象库在 worktree 之间共享，各自提交是安全的，但 stash 栈也共享，不要使用无标签的 `git stash`。
+
 ## 素材保管与 App 交付
 
 运行图版按本地相对路径维护，由 `sync-artwork.sh` 随 App 打包；无需部署图片服务器。原稿、参考照片和恢复资料仍独立保管，按 [本地资源包](#本地资源包)打包并复制到独立存储。

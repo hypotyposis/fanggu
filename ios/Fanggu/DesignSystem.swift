@@ -2,6 +2,8 @@ import SwiftUI
 
 enum AppAppearance: String, CaseIterable, Identifiable {
     static let storageKey = "fanggu.appearance"
+    /// Appearance follows the same test scope as personal records.
+    static let store = TestScope.defaults(for: TestScope.current)
     case system, light, dark
 
     var id: String { rawValue }
@@ -22,7 +24,7 @@ enum AppAppearance: String, CaseIterable, Identifiable {
 }
 
 private struct FangguAppearance: ViewModifier {
-    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
+    @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
 
     func body(content: Content) -> some View {
         content.preferredColorScheme((AppAppearance(rawValue: appearance) ?? .system).colorScheme)

@@ -4,7 +4,7 @@ import UniformTypeIdentifiers
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
+    @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
     @State private var importing = false
     @State private var exporting = false
     @State private var exportDocument: BackupDocument?

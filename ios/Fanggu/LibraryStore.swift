@@ -10,14 +10,12 @@ import Foundation
     private let fileURL: URL
     private var loadFailed = false
 
-    init(fileURL suppliedURL: URL? = nil) {
+    init(fileURL suppliedURL: URL? = nil, scope: String? = TestScope.current) {
         let url = Bundle.main.url(forResource: "catalog", withExtension: "json")!
         monuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
         timeline = TimelineCatalog(monuments: monuments)
         ids = Set(monuments.map(\.id))
-        let directory = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("Fanggu", isDirectory: true)
-        fileURL = suppliedURL ?? directory.appendingPathComponent("library.json")
+        fileURL = suppliedURL ?? TestScope.libraryFileURL(for: scope)
         do {
             if FileManager.default.fileExists(atPath: fileURL.path) {
                 let loaded = try JSONDecoder().decode(LibraryData.self, from: Data(contentsOf: fileURL))

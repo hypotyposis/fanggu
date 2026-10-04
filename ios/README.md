@@ -43,10 +43,10 @@ App 图标使用用户提供的[鸱吻图标素材包](icon-concepts/chiwen/READ
 
 `Fanggu/Review.swift` 定义维度、档位、投影及防抖逻辑，`Fanggu/ReviewRadar.swift` 共用编辑与只读图形。`reviews[id].dimensions` 为维度键到整数的对象，未评分项省略，键为 `eraRarity`、`authenticity`、`construction`、`art`、`scale`、`setting`。旧 `rating` 字段继续保留，不自动换算；`text`、`updatedAt` 和到访记录规则不变。首次保存时将原文件升级为版本 4；读取损坏文件或保存失败时保留原数据。
 
-构建与数据回归使用 `FangguTests/ReviewTests.swift`；交互回归使用 `FangguUITests` 中的 `testSixDimensionReleaseAutosavesAndResets`、`testSixDimensionLowGradesStayIndividuallyDraggable` 与 `testReviewShortTextAutosavesAndClearIsImmediate`，覆盖松手后直接重启、即时重置、短评自动保存、关闭时补写、空白滚动和密集圆点。在仓库根目录运行以下命令，先创建独立模拟器并将名称换成自己的测试设备，避免修改真实个人记录：
+构建与数据回归使用 `FangguTests/ReviewTests.swift`；交互回归使用 `FangguUITests` 中的 `testSixDimensionReleaseAutosavesAndResets`、`testSixDimensionLowGradesStayIndividuallyDraggable` 与 `testReviewShortTextAutosavesAndClearIsImmediate`，覆盖松手后直接重启、即时重置、短评自动保存、关闭时补写、空白滚动和密集圆点。在仓库根目录运行以下命令。脚本为当前 worktree 创建并启动独立模拟器，使用 `ios/build/DerivedData`；UI 测试以独立记录作用域启动 App，不会改写模拟器中的真实个人记录，见[测试隔离与并行会话](#测试隔离与并行会话)：
 
 ```bash
-xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=Fanggu Radar Review' -parallel-testing-enabled NO -only-testing:FangguTests -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets -only-testing:FangguUITests/FangguUITests/testSixDimensionLowGradesStayIndividuallyDraggable -only-testing:FangguUITests/FangguUITests/testReviewShortTextAutosavesAndClearIsImmediate test
+sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets -only-testing:FangguUITests/FangguUITests/testSixDimensionLowGradesStayIndividuallyDraggable -only-testing:FangguUITests/FangguUITests/testReviewShortTextAutosavesAndClearIsImmediate
 ```
 
 首版包含原生图鉴、搜索与筛选、古迹详情、仅显示已到访地点的离线足迹地图、按年代浏览、拖动打卡、心愿、日期与笔记、私人评分与短评、备份迁移。地图、图鉴与图片可离线浏览。图版与文保来源在详情页以参考链接提供。私人记录通过备份文件迁移，没有在线同步。App Store 分发还需要开发者账号、签名和应用商店素材。
@@ -59,11 +59,17 @@ xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu -destination 'platform=i
 
 撤销按字段恢复：到访恢复原始记录（首次登记可恢复为没有个人覆盖记录），不改变评价；六项重置的撤销只恢复六维，保留重置后写入的短评；清除评价可恢复六维、短评和旧五星，再次编辑该评价则使这次清空的撤销失效。恢复评价时更新时间仍记录本次修改。导入和旧记录关联会结束先前的撤销，避免恢复旧快照覆盖新数据。撤销写入失败时保留当前记录、撤销入口与错误，可继续重试。
 
-`FangguTests/UXRegressionTests.swift` 覆盖关键词词序、空白、别名、状态纠错、首次记录撤销、未知日期、评价恢复与失败重试；`FangguUITests/UIUXFixTests.swift` 覆盖搜索独立清空、今日／补记到访、直接改为未标记、评价撤销及最大辅助字号逐项评分。使用独立模拟器运行：
+`FangguTests/UXRegressionTests.swift` 覆盖关键词词序、空白、别名、状态纠错、首次记录撤销、未知日期、评价恢复与失败重试；`FangguUITests/UIUXFixTests.swift` 覆盖搜索独立清空、今日／补记到访、直接改为未标记、评价撤销及最大辅助字号逐项评分。在仓库根目录运行：
 
 ```bash
-xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=你的独立测试设备' -parallel-testing-enabled NO -only-testing:FangguTests -only-testing:FangguUITests/UIUXFixTests -only-testing:FangguUITests/FangguUITests/testArrivalOnlySavesAfterReleasingAtTheEnd -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets test
+sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUITests/UIUXFixTests -only-testing:FangguUITests/FangguUITests/testArrivalOnlySavesAfterReleasingAtTheEnd -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets
 ```
+
+## 测试隔离与并行会话
+
+多个会话同时跑原生测试时，隔离单位是模拟器：同一台模拟器上的两次 `xcodebuild test` 会互相覆盖安装、打断启动，App 容器里的个人记录也会串。`ios/scripts/test-device.sh ensure|delete|list [NAME]` 按名称创建、启动或删除一次性模拟器，默认名称为 `Fanggu <检出目录名>`，可用 `FANGGU_SIM_NAME` 或参数指定，机型由 `FANGGU_SIM_DEVICE_TYPE` 决定；`ios/scripts/run-ios-tests.sh` 用该模拟器的 `id=` 与 `ios/build/DerivedData` 运行测试，不带参数时运行 scheme 内全部测试，其余 `xcodebuild` 参数原样透传，并在发现其他测试进程时提示耗时断言可能受负载影响。任务结束后运行 `sh ios/scripts/test-device.sh delete` 回收设备。
+
+Debug 构建读取环境变量 `FANGGU_LIBRARY_SCOPE`：设置后个人记录写入 `Application Support/Fanggu/scopes/<scope>/library.json`，外观设置使用同名 `UserDefaults` 套件，真实 `library.json` 与标准设置不被触碰；未设置或 Release 构建行为不变。作用域名只保留字母、数字、`-` 和 `_`，最长 64 个字符。`FangguUITests` 中的 `XCUIApplication.isolated()` 为每个用例生成新的作用域，用例从目录默认状态开始，同一实例 `terminate()` 后再 `launch()` 仍沿用该作用域以验证持久化。`FangguTests/TestScopeTests.swift` 覆盖作用域命名、路径隔离与真实记录不受影响。
 
 ## 触觉反馈
 
