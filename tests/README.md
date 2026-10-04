@@ -74,3 +74,5 @@
 | `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口 |
 | `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口 |
 | `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域 |
+| `FangguUITests/UITestSupport.swift` | 辅助：`launchForTest` 关闭过渡动画并可直达详情或评价页、`relaunch` 真实重启、`dragPage`／`reveal` 沿左缘匀速滚动到目标可点 |
+| `Fanggu/UITestLaunch.swift`（App 内） | DEBUG 专用启动参数 `-uiTestDisableAnimations`、`-uiTestOpenSite <id>`、`-uiTestOpenReview`，Release 构建编译掉 |
