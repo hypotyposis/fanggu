@@ -36,5 +36,23 @@ test('iOS catalog stays aligned with site IDs, artwork and original status', () 
     assert.deepEqual(native.protection.map(entry => [entry.batch, entry.unitName]),
       Array.from(site.protection, entry => [entry.batch, entry.unitName]));
     assert.equal(new Set(native.sourceLinks.map(link => link.url)).size, native.sourceLinks.length);
+    const researchPath = path.join(root, `assets/research/${site.id}.json`);
+    const research = fs.existsSync(researchPath) ? JSON.parse(fs.readFileSync(researchPath, 'utf8')) : {};
+    const recorded = research.coordinates;
+    const expected = recorded && Number.isFinite(recorded.lat) ? [recorded.lat, recorded.lng ?? recorded.lon] : null;
+    if (expected) {
+      assert.deepEqual([native.siteLatitude, native.siteLongitude], expected, site.id);
+      assert.ok(native.siteCoordinateSource, `${site.id}: a monument coordinate carries its source`);
+      // site_recommendation often repeats the town point and is deliberately not exported.
+      // A monument point is only meaningful near its own town marker.
+      assert.ok(Math.abs(native.siteLatitude - native.latitude) < 0.6 && Math.abs(native.siteLongitude - native.longitude) < 0.6, site.id);
+    } else {
+      assert.equal(native.siteLatitude, null, site.id);
+      assert.equal(native.siteLongitude, null, site.id);
+      assert.equal(native.siteCoordinateSource, '', site.id);
+    }
   }
+  const located = exported.filter(site => site.siteLatitude !== null);
+  assert.ok(located.length > 0, 'monument-level coordinates feed the nearby reminder');
+  assert.ok(located.length < exported.length, 'town-level markers alone must not become monument coordinates');
 });

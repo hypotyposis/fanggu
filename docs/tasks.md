@@ -11,6 +11,7 @@
 | 只有 `*.md` | 无 | 链接与路径存在、命令描述正确；`git diff --check` | 不跑任何图版脚本 |
 | `sites.js` 的文字：`lede`、`facts`、`yearNote`、`legacyNames` 等 | `node ios/scripts/build-catalog.cjs` | `node --test tests/*.test.cjs`；App 详情页 | 图注若来自研究 JSON 的 `caption`，要改研究 JSON 并重建线稿清单 |
 | `sites.js` 的年代、时代、地点、类型、`initialStatus` | `build-catalog.cjs` | 全套 Node；批次测试中涉及的断言；App 筛选与年表 | 新时代、新地区、新类型见下文对应步骤 |
+| 研究 JSON 的 `coordinates` 本体坐标 | `build-catalog.cjs` | `ios-catalog` 测试；`FangguTests/NearbyReminderTests` | 坐标须距城镇点 60 公里内，否则导出报错；只影响附近提醒，不改地图点 |
 | `catalog.js` 地区、国家、类型 | `build-catalog.cjs` | `facets`、`protection`、`ios-catalog` 测试与全套；App 筛选、搜索 | 同步 `ios/Fanggu/CatalogSearch.swift` 的名称与别名表 |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs` → `build-catalog.cjs` → `sh ios/scripts/sync-artwork.sh assets` | `ios-catalog` 测试；审图页；App | 线稿 PNG 会按新色重建，需要完整素材与 `magick`；随后更新 `asset-lock` |
 | `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs` → `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check`；`protection` 测试与全套；App 标签与搜索 | 不跑图版脚本，不改验收记录 |
@@ -63,6 +64,16 @@
 3. 需要时增加 `CHAPTERS` 章节；没有 `start`、`end` 的时代要在 `build-catalog.cjs` 的 `timelineSpans` 补回退范围。
 4. 该时代的线稿由 `prepare-plates.mjs` 按新色着色（需要完整素材），再 `build-catalog.cjs`、`sync-artwork.sh`。
 5. Node 全套；`catalog.test.cjs` 的时代色断言；App 年表时期选择与自动定位。
+
+### 为古迹补本体坐标
+
+附近提醒只对有本体坐标的古迹生效；目录里的 `latitude`、`longitude` 是城镇级显示点，不能拿来判断 3 公里。
+
+1. 在 `assets/research/<id>.json` 增加 `coordinates: { lat, lng, source }`：`source` 必填，写明出处（Wikimedia Commons 分类页、申遗文本页码、官方公告等）与“非测绘成果”之类的性质说明；不凭地图目测或猜测。`site_recommendation` 里的经纬度不会被导出，其中不少只是城镇点的复制；确认过的可以复制到 `coordinates` 并补来源。
+2. 坐标指所绘主体本身（某殿、某塔），不是寺院大门或景区入口；多主体组合图取主要主体。
+3. `node ios/scripts/build-catalog.cjs`。坐标距该条目城镇点超过 60 公里会报错，先核对是哪一方写错。
+4. `node --test tests/ios-catalog.test.cjs`，有模拟器时运行 `FangguTests/NearbyReminderTests`。
+5. 不改 `PLACES`，不把本体坐标写成新地点；地图聚合继续按城镇点。
 
 ### 更新国保资料
 
@@ -126,6 +137,7 @@
 - **用户验收只能由用户给出。** `record-plate-review.mjs` 只在用户明确说出通过的具体 ID 后运行；AI 不判通过或淘汰。
 - **不改真实个人数据。** 原生测试用独立模拟器与临时目录；不清空、不导入用户真机或默认模拟器的记录。
 - **iOS 侧有重复的名称表。** `CatalogSearch.swift` 的地区名、国家名、类型别名与 `catalog.js` 需要手工同步，没有自动生成。
+- **两套坐标。** `latitude`、`longitude` 是城镇级显示点，供足迹地图聚合；`siteLatitude`、`siteLongitude` 才是古迹本体坐标，供附近提醒。不要互相替代，也不要把本体坐标加进 `PLACES`。
 - **图版清单的 caption 优先。** 研究 JSON 有 `caption` 时覆盖 `SITES.caption`；改图注要改对位置。
 - **Python 命令带 `-B`。** 仓库里的转码与测试命令示例使用 `python3 -B`，避免写入 `__pycache__`；沿用即可。
 - **历史资料不是授权。** `history/`、`recovery/`、带日期的计划与报告、`docs/reviews/` 记录当时情况；代理人数、分工、绝对路径不延续到新任务。

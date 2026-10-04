@@ -23,6 +23,23 @@ const timelineSpans = {
   zhou: [907, 979], song: [960, 1279], liao: [907, 1234], yuan: [1271, 1368],
   ming: [1368, 1912], modern: [1912, 2026]
 };
+// Monument-level coordinates come only from a research record's sourced `coordinates`; the
+// place point stays the map marker. `site_recommendation` often just repeats the town point.
+const kilometres = (a, b) => {
+  const rad = degrees => degrees * Math.PI / 180;
+  const h = Math.sin(rad(b.lat - a.lat) / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lon - a.lon) / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.sqrt(h));
+};
+function monumentCoordinate(id, research, place) {
+  const recorded = research.coordinates;
+  if (!recorded || !Number.isFinite(recorded.lat) || !Number.isFinite(recorded.lng ?? recorded.lon)) return null;
+  if (!recorded.source) throw new Error(`Monument coordinate without a source: ${id}`);
+  const point = { lat: recorded.lat, lon: recorded.lng ?? recorded.lon, source: recorded.source };
+  if (Math.abs(point.lat) > 90 || Math.abs(point.lon) > 180) throw new Error(`Invalid monument coordinate: ${id}`);
+  const distance = kilometres(point, place);
+  if (distance > 60) throw new Error(`Monument coordinate is ${distance.toFixed(0)} km from its place point: ${id}`);
+  return point;
+}
 const text = value => String(value || '').replace(/<br\s*\/?\s*>/gi, '\n')
   .replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&')
   .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"')
@@ -36,6 +53,7 @@ const output = sites.map(site => {
   if (!dynastyColor) throw new Error(`Missing dynasty color: ${site.id}`);
   const researchPath = path.join(root, `assets/research/${site.id}.json`);
   const research = fs.existsSync(researchPath) ? JSON.parse(fs.readFileSync(researchPath, 'utf8')) : {};
+  const siteCoordinate = monumentCoordinate(site.id, research, location);
   const sourceLinks = [...(research.sources || []), ...(color.references || [])]
     .map((source, index) => ({ title: source.title || source.author || `参考图 ${index + 1}`, url: source.source_page || source.page || source.url }))
     .filter(source => /^https?:\/\//.test(source.url || ''))
@@ -49,6 +67,8 @@ const output = sites.map(site => {
     era: site.era, year: site.year, yearLabel: site.yearLabel || '', yearApprox: !!site.yearApprox, yearNote: site.yearNote || '',
     place: site.place, placeKey: site.placeKey, placeName: location.name, country: site.country,
     province: site.province, region: site.region, latitude: location.lat, longitude: location.lon,
+    siteLatitude: siteCoordinate?.lat ?? null, siteLongitude: siteCoordinate?.lon ?? null,
+    siteCoordinateSource: text(siteCoordinate?.source),
     types: site.types, typeNames: site.types.map(type => types[type]),
     lede: text(site.lede), facts: site.facts.map(text), quote: text(site.quote),
     captions: site.image.caption || site.caption || [],
@@ -68,4 +88,5 @@ if (new Set(output.map(site => site.id)).size !== output.length) throw new Error
 const destination = path.join(root, 'ios/Fanggu/Resources/catalog.json');
 fs.mkdirSync(path.dirname(destination), { recursive: true });
 fs.writeFileSync(destination, JSON.stringify(output, null, 2) + '\n');
-process.stdout.write(`Exported ${output.length} monuments to ${path.relative(root, destination)}\n`);
+const located = output.filter(site => site.siteLatitude !== null).length;
+process.stdout.write(`Exported ${output.length} monuments (${located} with monument-level coordinates) to ${path.relative(root, destination)}\n`);

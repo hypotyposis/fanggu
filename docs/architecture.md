@@ -42,7 +42,7 @@ sites.js → plates.js → colored-plates.js → protection-data.js → protecti
       │
       │  FangguCatalog.classify(SITES, PLACES)：按 placeKey 对应地点派生 country / province / region，附国保登记
       │  + palette.css 的色值（DYN.acc 指向的 CSS 变量）
-      │  + assets/research/<id>.json 与设色记录中的来源链接
+      │  + assets/research/<id>.json 的本体坐标（siteLatitude / siteLongitude）与来源链接
       ▼
 node ios/scripts/build-catalog.cjs
       ▼
@@ -112,10 +112,11 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `Models.swift` | `Monument`（`catalog.json` 的解码类型）、`VisitRecord`、`LibraryData`、`Palette`、`FangguFont` |
 | `Review.swift`、`ReviewRadar.swift` | 六维评价的维度、档位、投影与防抖；六维图的编辑与只读视图 |
 | `CatalogSearch.swift` | 多关键词搜索；自带地区名、国家名与类型别名表，须与 `catalog.js` 保持同步 |
+| `LocationCenter.swift` | 位置中心：`CatalogDistance`（按距离排序、附近 30 公里筛选、就在附近 2 公里的纯函数）、`NearbyPlanner`（提醒规则：3 公里、最近 20 处围栏、每日一次）、`LocationCenter`（定位授权、当前位置、围栏与本地通知）；只读个人记录 |
 | `DesignSystem.swift` | 外观设置、印章、标题、分隔线、按钮、输入框等共用控件 |
 | `Haptics.swift` | 触觉反馈的集中实现 |
 
-个人记录保存在本机 Application Support 下 `Fanggu/library.json`（版本 4）；外观选项保存在 `UserDefaults` 键 `fanggu.appearance`；撤销只在内存中保留最近一次，不进备份。格式与约束见 [数据模型 · 个人记录](data-model.md#个人记录-libraryjson)。
+个人记录保存在本机 Application Support 下 `Fanggu/library.json`（版本 4）；外观选项与附近提醒开关保存在 `UserDefaults`（`fanggu.appearance`、`fanggu.nearbyReminder.*`）；撤销只在内存中保留最近一次，不进备份。格式与约束见 [数据模型 · 个人记录](data-model.md#个人记录-libraryjson)。
 
 ## 本地素材分层
 
@@ -127,7 +128,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `source` | `assets/generated/`、`assets/colored/`、`assets/colored-transparent/`、`assets/colored-avif/`、`assets/references/`、`assets/color-references/`、本地人审页等 | 重新制图、原设色对照、完整 Node 测试所需 |
 | `full` | `runtime` 加 `source` | `asset-bundle.py` 的 `--profile full` |
 
-新克隆或 worktree 默认没有这些文件：`sync-artwork.sh` 会报缺目录，大多数 Node 测试会因 `ENOENT` 失败。恢复方法见 [开发指南 · 本地资源包](development.md#本地资源包)，可运行的测试子集见 [测试与验证 · 没有本地素材时](testing.md#没有本地素材时)。
+新克隆或 worktree 默认没有这些文件：`sync-artwork.sh` 会报缺目录，大多数 Node 测试会因 `ENOENT` 失败，Xcode 构建也会因 `ios/Fanggu/Resources/Artwork/` 不存在而失败。恢复方法见 [开发指南 · 本地资源包](development.md#本地资源包)，可运行的测试子集见 [测试与验证 · 没有本地素材时](testing.md#没有本地素材时)。
 
 ## 本地审图工具
 
