@@ -1,6 +1,6 @@
 # 开发指南
 
-本指南说明当前项目的模块关系、数据约束、资产流程和验证方法。简要约定见 [AGENTS.md](../AGENTS.md)，产品操作见 [README](../README.md)，图版目录见 [assets/README.md](../assets/README.md)。
+本指南说明当前项目的模块关系、数据约束、资产流程和验证方法。简要约定见 [AGENTS.md](../AGENTS.md)，产品操作见 [README](../README.md)，图版目录见 [assets/README.md](../assets/README.md)。第一次进入仓库先看 [架构与数据流](architecture.md)；字段定义见 [数据模型](data-model.md)，按任务的操作步骤见 [常见任务](tasks.md)，检查的选择与汇报见 [测试与验证](testing.md)，名词见 [术语表](glossary.md)。
 
 ## 环境与首次运行
 
@@ -208,6 +208,7 @@ App 目录更新后同步全部运行图版，再构建；Git 中的路径和清
 ## 文档维护
 
 - [AGENTS.md](../AGENTS.md) 保存跨任务的简要规则；本指南保存机制、命令和操作步骤；图版规范保存领域约束。避免多处复制相同长规则。
+- [架构与数据流](architecture.md)、[数据模型](data-model.md)、[常见任务](tasks.md)、[测试与验证](testing.md)、[术语表](glossary.md)、[脚本一览](../scripts/README.md)、[测试一览](../tests/README.md) 面向第一次进入仓库的人和代理：只做地图、字段、步骤与检查的索引，不新增规则。接口、命令、字段或测试布局变化时同步它们。
 - [增量制图操作手册](monument-batch-workflow.md) 保存新增古迹的调度、止损、恢复和耗时记录规则；线稿与设色规范共同引用它，不另建互相矛盾的批量流程。
 - [线稿历史任务](../assets/research/history/line-production-2026-09-15.md)、[设色历史任务](../assets/color-research/history/color-production-2026-09-15.md) 保存原始分工和当时授权，供追溯；不用于启动新任务。
 - [恢复摘要](../assets/color-research/history/recovery-2026-09-15.md)、批次清单和考据提示词保留历史事实。详细 `recovery/` 材料仅在本地保存。可以追加状态说明与当前入口，不篡改当时实际输入、数量或验证结果。
