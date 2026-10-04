@@ -155,9 +155,21 @@ final class UIUXFixTests: XCTestCase {
         search.tap(); search.typeText("Nezu\n")
         let result = app.buttons.matching(NSPredicate(format: "label CONTAINS %@ AND label CONTAINS %@", "根津神社楼门", "细读")).firstMatch
         for _ in 0..<12 where !result.isHittable { app.swipeUp() }
+        bringIntoView(result, in: app)
         XCTAssertTrue(result.isHittable)
         result.tap()
         XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 5))
+    }
+
+    /// XCUITest taps the frame centre. Tall rows at accessibility sizes can leave that centre below the
+    /// window or under the floating tab bar, so scroll until the centre sits clear of both.
+    private func bringIntoView(_ element: XCUIElement, in app: XCUIApplication) {
+        let limit = app.windows.firstMatch.frame.maxY - 150
+        for _ in 0..<6 where element.exists && element.frame.midY > limit {
+            let overflow = element.frame.midY - limit + 40
+            let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.55))
+            start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -min(max(overflow, 60), 380))))
+        }
     }
 
     private func openReview(in app: XCUIApplication) {

@@ -2,9 +2,11 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject private var library: LibraryStore
+    @EnvironmentObject private var nearby: LocationCenter
     @StateObject private var undoPresentation = UndoPresentation()
     @State private var selectedTab = 0
     @State private var keyboardVisible = false
+    @State private var explorePath = NavigationPath()
 
     var body: some View {
         Group {
@@ -35,11 +37,21 @@ struct ContentView: View {
         .onReceive(NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)) { _ in
             keyboardVisible = false
         }
+        .onAppear(perform: openPendingMonument)
+        .onChange(of: nearby.pendingMonumentID) { _, _ in openPendingMonument() }
+    }
+
+    /// A tapped nearby reminder opens that monument in the catalogue; records are untouched.
+    private func openPendingMonument() {
+        guard let id = nearby.pendingMonumentID, let site = library.monuments.first(where: { $0.id == id }) else { return }
+        nearby.pendingMonumentID = nil
+        selectedTab = 0
+        explorePath = NavigationPath([site])
     }
 
     private var tabs: some View {
         TabView(selection: $selectedTab) {
-            NavigationStack {
+            NavigationStack(path: $explorePath) {
                 tabRoot(ExploreView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                     .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
@@ -157,8 +169,12 @@ private struct FrostedTabBar: View {
 
 struct ExploreView: View {
     @EnvironmentObject private var library: LibraryStore
+    @EnvironmentObject private var location: LocationCenter
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.scenePhase) private var scenePhase
     @State private var query = ""
+    @State private var nearbyOnly = false
+    @State private var fallbackSort = "wishlist"
     @State private var status = "all"
     @State private var country = "all"
     @State private var region = "all"
@@ -212,6 +228,7 @@ struct ExploreView: View {
         case "newest": "新到旧"
         case "name": "名称"
         case "oldest": "旧到新"
+        case "distance": "按距离"
         default: "心愿优先"
         }
     }
@@ -220,6 +237,7 @@ struct ExploreView: View {
             $0.element.year == $1.element.year ? $0.offset < $1.offset : $0.element.year < $1.element.year
         }.map(\.element)
         let terms = CatalogSearch.terms(query)
+        let current = location.currentLocation
         let matches = sorted.filter { site in
             let record = library.record(for: site)
             let statusMatches = status == "all" || record.status.rawValue == status
@@ -229,8 +247,17 @@ struct ExploreView: View {
                 && (dynasty == "all" || site.dynasty == dynasty)
                 && (type == "all" || site.types.contains(type))
                 && CatalogSearch.matches(site, terms: terms)
+                && (!nearbyOnly || current.map { CatalogDistance.metres(from: $0, to: site) <= CatalogDistance.nearbyRadius } ?? false)
         }
-        switch sortOrder {
+        if sortOrder == "distance" {
+            // Until a fix arrives the list keeps the order chosen before 按距离; the note above says why.
+            return current.map { CatalogDistance.sorted(matches, from: $0) } ?? ordered(matches, by: fallbackSort)
+        }
+        return ordered(matches, by: sortOrder)
+    }
+
+    private func ordered(_ matches: [Monument], by order: String) -> [Monument] {
+        switch order {
         case "wishlist":
             return matches.filter { library.record(for: $0).status == .wishlist }
                 + matches.filter { library.record(for: $0).status != .wishlist }
@@ -260,6 +287,18 @@ struct ExploreView: View {
                 catalogControls
                 .labelStyle(.titleOnly)
                 .padding(.bottom, 20)
+                if let note = locationNote {
+                    HStack(alignment: .firstTextBaseline, spacing: 10) {
+                        Text(note)
+                            .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(4)
+                            .accessibilityIdentifier("catalog-location-note")
+                        if location.locationDenied {
+                            Button("打开系统设置") { location.openSystemSettings() }
+                                .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
+                        }
+                    }
+                    .padding(.bottom, 14)
+                }
                 if showsCurations {
                     CurationStrip().padding(.bottom, 22)
                 }
@@ -269,7 +308,7 @@ struct ExploreView: View {
                         .font(FangguFont.mono(12))
                         .foregroundStyle(Palette.paper2)
                     Spacer()
-                    if status != "all" || country != "all" || region != "all" || province != "all" || dynasty != "all" || type != "all" || !query.isEmpty {
+                    if status != "all" || country != "all" || region != "all" || province != "all" || dynasty != "all" || type != "all" || !query.isEmpty || nearbyOnly {
                         Button("清除筛选") { clearFilters() }
                             .font(FangguFont.serif(12))
                             .foregroundStyle(Palette.gold)
@@ -278,14 +317,20 @@ struct ExploreView: View {
                 .padding(.bottom, 14)
                 if results.isEmpty {
                     VStack(alignment: .leading, spacing: 10) {
-                        Text("暂无符合条件的古迹")
+                        Text(emptyTitle)
                             .font(FangguFont.serif(21))
                             .foregroundStyle(Palette.paper)
-                        Text("试试其他时代、地区或搜索词。")
+                        Text(emptySubtitle)
                             .font(FangguFont.serif(13))
                             .foregroundStyle(Palette.paper2)
-                        Button("清除筛选") { clearFilters() }
-                            .buttonStyle(FangguOutlineButton())
+                        if nearbyOnly {
+                            Button("关闭附近筛选") { nearbyOnly = false }
+                                .buttonStyle(FangguOutlineButton())
+                                .accessibilityIdentifier("close-nearby-filter")
+                        } else {
+                            Button("清除筛选") { clearFilters() }
+                                .buttonStyle(FangguOutlineButton())
+                        }
                     }
                     .frame(maxWidth: .infinity, minHeight: 180, alignment: .leading)
                 } else {
@@ -293,14 +338,14 @@ struct ExploreView: View {
                     if showCards {
                         LazyVStack(spacing: 0) {
                             ForEach(results) { site in
-                                MonumentCard(site: site).padding(.bottom, 18)
+                                MonumentCard(site: site, distance: distanceLabel(site), here: isHere(site)).padding(.bottom, 18)
                             }
                         }
                         .id("catalog-cards")
                     } else {
                         LazyVStack(spacing: 0) {
                             ForEach(results) { site in
-                                NavigationLink(value: site) { TimelineSiteRow(site: site) }
+                                NavigationLink(value: site) { TimelineSiteRow(site: site, distance: distanceLabel(site), here: isHere(site)) }
                                     .buttonStyle(.plain)
                                     .accessibilityIdentifier("catalog-site-\(site.id)")
                                     .padding(.bottom, 10)
@@ -330,6 +375,43 @@ struct ExploreView: View {
             if dynastyOptions[dynasty] == nil { dynasty = "all" }
         }
         .onChange(of: region) { _, _ in province = "all" }
+        // Location is asked for on first use of a distance feature, never at launch.
+        .onChange(of: sortOrder) { previous, order in
+            guard order == "distance" else { return }
+            if previous != "distance" { fallbackSort = previous }
+            location.requestForegroundLocation()
+        }
+        .onChange(of: nearbyOnly) { _, on in if on { location.requestForegroundLocation() } }
+        .onChange(of: scenePhase) { _, phase in if phase == .active && wantsLocation { location.requestForegroundLocation() } }
+    }
+
+    private var wantsLocation: Bool { sortOrder == "distance" || nearbyOnly }
+
+    /// Explains why distances are missing or rough; nil when nothing needs saying.
+    private var locationNote: String? {
+        guard wantsLocation else { return nil }
+        return CatalogDistance.note(authorization: location.authorization, hasLocation: location.currentLocation != nil,
+                                    failed: location.locationFailed, approximate: location.isApproximate,
+                                    precise: location.preciseLocation)
+    }
+
+    private var emptyTitle: String {
+        guard nearbyOnly else { return "暂无符合条件的古迹" }
+        return location.currentLocation == nil ? "还没有位置，无法筛选附近" : "30 公里内没有收录的古迹"
+    }
+
+    private var emptySubtitle: String {
+        guard nearbyOnly else { return "试试其他时代、地区或搜索词。" }
+        return location.currentLocation == nil ? "原因见上方说明；关闭附近筛选可继续浏览全部。" : "换个地方再看，或者关闭附近筛选浏览全部。"
+    }
+
+    private func distanceLabel(_ site: Monument) -> String? {
+        location.currentLocation.map { CatalogDistance.label(CatalogDistance.metres(from: $0, to: site)) }
+    }
+
+    private func isHere(_ site: Monument) -> Bool {
+        guard let current = location.currentLocation, library.record(for: site).status != .visited else { return false }
+        return CatalogDistance.isHere(site, from: current)
     }
 
     private var filtersSheet: some View {
@@ -359,12 +441,26 @@ struct ExploreView: View {
     private var catalogControls: some View {
         Group {
             if dynamicTypeSize.isAccessibilitySize {
-                VStack(alignment: .leading, spacing: 8) {
-                    sortMenu
-                    HStack(spacing: 8) { filterButton; displayButton }
+                // Two rows as before the 附近 chip existed, so the list keeps its place under the controls.
+                ViewThatFits(in: .horizontal) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack(spacing: 8) { sortMenu; nearbyButton }
+                        HStack(spacing: 8) { filterButton; displayButton }
+                    }
+                    VStack(alignment: .leading, spacing: 8) {
+                        sortMenu
+                        HStack(spacing: 8) { filterButton; displayButton }
+                        nearbyButton
+                    }
                 }
             } else {
-                HStack(spacing: 8) { sortMenu; filterButton; displayButton }
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: 8) { sortMenu; filterButton; nearbyButton; displayButton }
+                    VStack(alignment: .leading, spacing: 8) {
+                        HStack(spacing: 8) { sortMenu; filterButton }
+                        HStack(spacing: 8) { nearbyButton; displayButton }
+                    }
+                }
             }
         }
     }
@@ -372,11 +468,26 @@ struct ExploreView: View {
     private var sortMenu: some View {
         Menu {
             Button("心愿优先") { sortOrder = "wishlist" }
+            Button("按距离") { sortOrder = "distance" }
             Button("年代从早到晚") { sortOrder = "oldest" }
             Button("年代从晚到早") { sortOrder = "newest" }
             Button("名称") { sortOrder = "name" }
         } label: { Label(sortTitle, systemImage: "arrow.up.arrow.down") }
             .buttonStyle(FangguOutlineButton())
+    }
+
+    /// Quick filter to the 30 km around the current position; the result count shows the hits.
+    private var nearbyButton: some View {
+        Button {
+            nearbyOnly.toggle()
+            Haptics.selection()
+        } label: {
+            Label("附近", systemImage: "location")
+        }
+        .buttonStyle(FangguOutlineButton(filled: nearbyOnly))
+        .accessibilityIdentifier("nearby-filter")
+        .accessibilityLabel(nearbyOnly ? "附近 30 公里，已开启" : "附近 30 公里")
+        .accessibilityAddTraits(nearbyOnly ? .isSelected : [])
     }
 
     private var filterButton: some View {
@@ -486,6 +597,7 @@ struct ExploreView: View {
     }
 
     private func clearFilters() {
+        nearbyOnly = false
         query = ""; status = "all"; country = "all"; region = "all"
         province = "all"; dynasty = "all"; type = "all"
     }
@@ -588,6 +700,9 @@ struct ArtworkView: View {
 struct MonumentCard: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
+    var distance: String? = nil
+    var here = false
+    @ScaledMetric(relativeTo: .caption) private var distanceSize: CGFloat = 11
     @State private var editingVisit = false
     @State private var editingReview = false
     @State private var reveal: CGFloat = 0
@@ -611,6 +726,13 @@ struct MonumentCard: View {
                             }
                         }
                         .font(FangguFont.mono(11))
+                        if distance != nil || here {
+                            HStack(spacing: 8) {
+                                if here { Text("就在附近").foregroundStyle(Palette.gold) }
+                                if let distance { Text(distance).foregroundStyle(Palette.paper2) }
+                            }
+                            .font(.system(size: distanceSize, design: .monospaced))
+                        }
                         ViewThatFits(in: .horizontal) {
                             HStack(alignment: .firstTextBaseline, spacing: 12) {
                                 Text(site.name)
