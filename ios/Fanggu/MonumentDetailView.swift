@@ -19,31 +19,37 @@ struct MonumentDetailView: View {
             VStack(alignment: .leading, spacing: 22) {
                 Text("图鉴  /  \(site.name)")
                     .font(FangguFont.mono(11)).foregroundStyle(Palette.gold)
-                HStack {
-                    Text(site.dynastyName).foregroundStyle(site.accent)
-                    Spacer()
-                    Text(site.era).foregroundStyle(Palette.paper2)
+                ViewThatFits(in: .horizontal) {
+                    HStack {
+                        Text(site.dynastyName).foregroundStyle(site.accent).fixedSize()
+                        Spacer()
+                        Text(site.era).foregroundStyle(Palette.paper2).fixedSize()
+                    }
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(site.dynastyName).foregroundStyle(site.accent)
+                        Text(site.era).foregroundStyle(Palette.paper2)
+                    }
                 }
                 .font(FangguFont.mono(11))
                 VStack(alignment: .leading, spacing: 5) {
                     Text(site.name).font(FangguFont.serif(35, weight: .medium)).foregroundStyle(Palette.paper)
                     if !site.sub.isEmpty { Text(site.sub).font(FangguFont.serif(15)).foregroundStyle(Palette.gold) }
-                    Text("\(site.place) · \(site.typeNames.joined(separator: " · "))")
+                    Text(verbatim: "\(site.place) · \(site.typeNames.joined(separator: " · "))")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                     // Shown only with a fix already known; the detail page never requests location itself.
                     if let current = location.currentLocation {
                         let label = CatalogDistance.label(CatalogDistance.metres(from: current, to: site))
                         let here = record.status != .visited && CatalogDistance.isHere(site, from: current)
-                        Text(here ? "就在附近 · \(label)" : label)
+                        Text(here ? String(localized: "就在附近 · \(label)") : label)
                             .font(.system(size: distanceSize, design: .monospaced))
                             .foregroundStyle(here ? Palette.gold : Palette.paper2)
                             .accessibilityIdentifier(here ? "detail-here-hint" : "detail-distance")
                     }
                 }
                 if !site.protection.isEmpty {
-                    HStack(spacing: 8) {
+                    FangguFittingRow {
                         ForEach(site.protection, id: \.self) { entry in
-                            Text(entry.batchLabel).font(FangguFont.mono(10))
+                            Text(entry.batchLabel).font(FangguFont.mono(10)).fixedSize()
                                 .foregroundStyle(Palette.gold).padding(6)
                                 .overlay(Rectangle().stroke(Palette.goldDim, lineWidth: 1))
                         }
@@ -83,12 +89,15 @@ struct MonumentDetailView: View {
                     Text("文物保护").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     ForEach(site.protection, id: \.self) { entry in
                         VStack(alignment: .leading, spacing: 6) {
-                            Text("\(entry.batchLabel) · \(entry.unitName)")
+                            Text(verbatim: "\(entry.batchLabel) · \(entry.unitName)")
                                 .font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
                             if !entry.scope.isEmpty { Text(entry.scope).foregroundStyle(Palette.paper2) }
                             if !entry.note.isEmpty { Text(entry.note).foregroundStyle(Palette.paper3) }
                             if let url = URL(string: entry.sourceURL), !entry.sourceURL.isEmpty {
-                                Link("\(entry.sourceTitle.isEmpty ? "保护信息来源" : entry.sourceTitle) ↗", destination: url)
+                                Link(destination: url) {
+                                    Text(verbatim: "\(entry.sourceTitle.isEmpty ? String(localized: "保护信息来源") : entry.sourceTitle) ↗")
+                                        .multilineTextAlignment(.leading)
+                                }
                                     .foregroundStyle(Palette.gold)
                             }
                         }
@@ -101,7 +110,7 @@ struct MonumentDetailView: View {
                 FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
                     Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
-                    Text(record.status.title + (record.status != .visited || record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
+                    Text(verbatim: record.status.title + (record.status != .visited || record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
                         .font(FangguFont.mono(12)).foregroundStyle(record.status.textColor)
                     if record.status != .visited && !record.visitedOn.isEmpty {
                         Text("保留的原到访日期 · \(record.visitedOn)")
@@ -131,7 +140,7 @@ struct MonumentDetailView: View {
                 Text("图版与资料来源").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                 ForEach(site.sourceLinks, id: \.self) { source in
                     if let url = URL(string: source.url) {
-                        Link("\(source.title) ↗", destination: url)
+                        Link(destination: url) { Text(verbatim: "\(source.title) ↗").multilineTextAlignment(.leading) }
                             .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
                     }
                 }
@@ -157,10 +166,17 @@ struct MonumentDetailView: View {
                     Label("返回", systemImage: "chevron.left")
                         .font(FangguFont.serif(13))
                 }
+                .accessibilityIdentifier("detail-back")
             }
             ToolbarItem(placement: .topBarTrailing) {
                 Button { sharing = true } label: { Label("分享访古卡", systemImage: "square.and.arrow.up") }
                     .accessibilityIdentifier("share-card")
+            }
+            // Long translated names shrink a little instead of ending in "…".
+            ToolbarItem(placement: .principal) {
+                Text(site.short.isEmpty ? site.name : site.short)
+                    .font(.headline).lineLimit(1).minimumScaleFactor(0.7)
+                    .accessibilityAddTraits(.isHeader)
             }
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
@@ -193,7 +209,8 @@ struct ArrivalSlider: View {
     @GestureState private var dragging = false
 
     private var instruction: String {
-        finished ? "已到访 · 留印" : progress >= 1 ? "松手记录今日到访" : "滑动记录今日到访"
+        finished ? String(localized: "已到访 · 留印")
+            : progress >= 1 ? String(localized: "松手记录今日到访") : String(localized: "滑动记录今日到访")
     }
 
     var body: some View {
@@ -218,9 +235,11 @@ struct ArrivalSlider: View {
                 .stroke(Palette.goldDim.opacity(0.3), lineWidth: 0.6)
                 .accessibilityHidden(true)
                 HStack(spacing: 6) {
-                    Text(!colorReady ? "设色图暂未加载" : instruction)
+                    Text(colorReady ? instruction : String(localized: "设色图暂未加载"))
                         .font(FangguFont.serif(12)).tracking(1)
-                        .lineLimit(1).minimumScaleFactor(0.7)
+                        .lineLimit(1).minimumScaleFactor(0.6)
+                        // The slider keeps a fixed height; its caption stops growing like other controls.
+                        .dynamicTypeSize(...DynamicTypeSize.xxLarge)
                     if colorReady && progress == 0 {
                         Image(systemName: "arrow.right").font(.system(size: 10, weight: .light))
                     }
@@ -230,7 +249,7 @@ struct ArrivalSlider: View {
                 .padding(.horizontal, 56).padding(.bottom, 5)
                 .opacity(progress > 0 && progress < 0.9 ? 0.35 : 1)
                 .accessibilityHidden(true)
-                Text("印").font(FangguFont.brush(21))
+                Text(verbatim: "印").font(FangguFont.brush(21))
                     .foregroundStyle(progress >= 1 ? Palette.redText : Palette.goldDim.opacity(0.6))
                     .frame(width: 32, height: 32)
                     .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.3), lineWidth: 0.6))
@@ -282,7 +301,7 @@ struct ArrivalSlider: View {
     }
 
     private var sealThumb: some View {
-        Text("访").font(FangguFont.brush(28))
+        Text(verbatim: "访").font(FangguFont.brush(28))
             .foregroundStyle(Palette.sealPaper)
             .frame(width: 48, height: 48)
             .background(Palette.red)
@@ -340,7 +359,7 @@ struct VisitEditor: View {
                 Section("到访笔记") {
                     TextEditor(text: $note).frame(minHeight: 160)
                         .accessibilityLabel("到访笔记").accessibilityIdentifier("visit-note")
-                    Text("\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
+                    Text(verbatim: "\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
                 .listRowBackground(Palette.ink2)
                 if let error { Text(error).foregroundStyle(Palette.redText) }
@@ -351,7 +370,7 @@ struct VisitEditor: View {
             .navigationTitle(wasVisited ? "编辑到访记录" : "补记到访")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() }.accessibilityIdentifier("cancel-visit") }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(wasVisited ? "保存修改" : "记录到访") { save() }
                         .accessibilityIdentifier("save-visit")
@@ -372,8 +391,8 @@ struct VisitEditor: View {
 
     private func save() {
         let dateText = dateKnown ? LibraryStore.dateFormatter().string(from: date) : ""
-        guard dateText.isEmpty || LibraryStore.validDate(dateText) else { error = "请选择不晚于今天的日期"; Haptics.error(); return }
-        guard note.utf16.count <= 12000 else { error = "笔记不能超过 12000 字"; Haptics.error(); return }
+        guard dateText.isEmpty || LibraryStore.validDate(dateText) else { error = String(localized: "请选择不晚于今天的日期"); Haptics.error(); return }
+        guard note.utf16.count <= 12000 else { error = String(localized: "笔记不能超过 12000 字"); Haptics.error(); return }
         let wasVisited = library.record(for: site).status == .visited
         if library.setRecord(VisitRecord(status: .visited, visitedOn: dateText, note: note), for: site) {
             if wasVisited { Haptics.soft() } else { Haptics.success() }
@@ -401,7 +420,7 @@ struct ReviewEditor: View {
         let stored = library.review(for: site)
         return dimensions != stored.dimensions || text != stored.text
     }
-    private var validationError: String? { text.utf16.count > 500 ? "短评不能超过 500 字" : nil }
+    private var validationError: String? { text.utf16.count > 500 ? String(localized: "短评不能超过 500 字") : nil }
 
     var body: some View {
         NavigationStack {
@@ -455,7 +474,7 @@ struct ReviewEditor: View {
                             .focused($editingText)
                             .scrollContentBackground(.hidden).padding(8).background(Palette.ink2)
                             .accessibilityLabel("短评").accessibilityIdentifier("review-text")
-                        Text("\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                        Text(verbatim: "\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                     }
                     Button("清除评价", role: .destructive) {
                         guard flushChanges() else { return }
@@ -480,7 +499,7 @@ struct ReviewEditor: View {
             .navigationTitle("我的评价")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) { Button("完成") { close() } }
+                ToolbarItem(placement: .confirmationAction) { Button("完成") { close() }.accessibilityIdentifier("review-done") }
             }
             .onAppear {
                 undoPresentation.reviewIsPresented = true
@@ -515,7 +534,8 @@ struct ReviewEditor: View {
 
     @ViewBuilder private var reviewHeading: some View {
         HStack {
-            Text("私评").font(FangguFont.brush(12))
+            // A small seal, like the brand seals, keeps its Chinese characters.
+            Text(verbatim: "私评").font(FangguFont.brush(12))
                 .foregroundStyle(Palette.redText)
                 .frame(width: 30, height: 30)
                 .overlay(Rectangle().stroke(Palette.redText.opacity(0.6), lineWidth: 0.7).padding(2))
@@ -577,7 +597,7 @@ struct ReviewEditor: View {
     }
 
     private func showSaveError() {
-        error = library.error ?? "保存失败，请重试。"
+        error = library.error ?? String(localized: "保存失败，请重试。")
         Haptics.error()
     }
 

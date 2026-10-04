@@ -54,10 +54,12 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `plate-preview.css` | 本地审图的基础样式与参数 SVG 样式 |
 | `draft.js` / `buildings.js` | 本地线稿校对页的历史参数 SVG 回退 |
 | `proof.html` / `color-proof.*` / `color-studies.*` / `sources.html` | 本地线稿、设色、三处正式版和来源查阅工具 |
-| `ios/scripts/build-catalog.cjs` | 从上述数据、研究 JSON 和色板导出 App 目录 |
+| `i18n/en.json` / `i18n/ja.json` | 英文、日文目录译文：国家、地区、类型、时代、行政区、地点、国保来源名等术语，以及逐个古迹的正文译文 |
+| `ios/scripts/build-catalog.cjs` | 从上述数据、研究 JSON、色板和译文导出 App 的中文、英文、日文目录 |
 | `ios/scripts/sync-artwork.sh` | 将完整运行图版同步到 App 资源目录 |
 | `ios/Fanggu/LibraryStore.swift` | 个人记录校验、保存、备份迁移与失败恢复 |
 | `ios/Fanggu/ContentView.swift` / `MonumentDetailView.swift` / `MapTimelineView.swift` / `TimelineView.swift` / `MyLibraryView.swift` | 原生图鉴、详情、地图年表和个人资料 |
+| `ios/Fanggu/Localizable.xcstrings` / `InfoPlist.xcstrings` / `Localization.swift` | 界面文字与 App 名称的英日译文；按系统为 App 解析的语言选择目录与字体 |
 
 目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js → curations.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
 
@@ -106,6 +108,14 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 教堂使用 `catalog.js` 的 `church` 类型，清净寺使用 `mosque` 类型，不强制归入传统殿堂；独立石灯幢按石刻主体使用 `sculpture`，不因“幢”字归成经幢。新增类型还须验证实际筛选、搜索及详情分类。
 
 韩国、朝鲜条目的现所在地分别使用 `KR`、`KP`；地域由 `PLACES` 与 `catalog.js` 派生。朝鲜半岛使用 `ko_silla`（统一新罗）、`ko_goryeo`（高丽）、`ko_joseon`（朝鲜王朝）独立时期，两国共享历史分类，年表单列朝鲜半岛轨道。朝鲜王朝是时代名，不能据此推导今日国别。现存战后复建主体归近现代，并在 `yearNote` 说明旧门址、毁坏和复建年代；确年不详时保留 `yearApprox`。首批依据与范围见 [本批计划](../assets/research/korea-20261002-plan.md)。
+
+### 多语言目录
+
+App 支持简体中文、英文和日文，跟随 iOS 为访古解析的语言。源数据仍以中文维护；`i18n/<语言>.json` 的 `terms` 按键翻译国家、地区、类型、时代、省份（以中文省名为键）、地点（以 `placeKey` 为键）和国保来源名，`sites` 按古迹 ID 翻译 `name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 与 `protection` 的 `unitName`、`scope`、`note`。只为源数据中非空的字段写译文；`facts`、`captions`、`protection` 逐项对应，不能增删或调换顺序。
+
+专题名录的译文在同一文件的 `curations`（按专题 ID 翻译 `name`、`eyebrow`、`lede`、`note`）与 `terms.curationKinds`。`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json` 及对应的 `curations*.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。`tests/i18n.test.cjs` 要求每个古迹都有完整且对齐的英日译文、英文展示文字不含汉字、日文不含简体专用字形，并检查界面字符串的占位符。
+
+译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
 
 ### 存储与兼容
 
@@ -174,8 +184,9 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 4. 运行线稿生成器并检查原稿、交付图、`plates.js` 与 `sources.html` 的差异。缺少文件时补齐输入，不能用任意占位图片凑数。
 5. 按 [设色流程](../assets/color-research/WORKFLOW.md) 制作并登记设色图。向 `queue.json.entries` 加入对应条目并同步 `count`；沿用现有字段和真实路径，不伪造 worker 分工。三张已确认图版的 `excluded` 是特殊入口，变更它们需要同步汇总逻辑。
 6. 运行 AVIF 转码脚本，再运行默认通过命令（`record-plate-review.mjs color|line --default --all-pending`）、重新转码并汇总设色清单，比较 `SITES` 与 `COLORED_PLATES` 的 ID，确认整库覆盖。检查 `progress.pending` 与 `visualReview` 无残留 `pending_user`；目录完整只说明交付齐备，`approved_default` 不表示有人看过。
-7. 更新测试涉及的新增记录覆盖和数量基线。当前 `catalog.test.cjs` 及部分批次测试包含数量基线，考据覆盖列表还包含手写 ID；新条目也应进入有效性检查，不能只调大数量。
-8. 确认上述写文件命令均已退出成功，再运行自动测试和相关浏览器检查。图版交付变化时同步本地素材副本；需要构建 App 时运行 `sh ios/scripts/sync-artwork.sh assets`。运行 `node ios/scripts/build-catalog.cjs` 并检查 iOS 导出；同步 README 中对用户有意义的数量或功能说明。Git 中的清单更新不会自动交付被忽略的图片。
+7. 在 `i18n/en.json`、`i18n/ja.json` 为新条目补齐译文；新地点、省份、地区、类型或时代同时补 `terms`。
+8. 更新测试涉及的新增记录覆盖和数量基线。当前 `catalog.test.cjs` 及部分批次测试包含数量基线，考据覆盖列表还包含手写 ID；新条目也应进入有效性检查，不能只调大数量。
+9. 确认上述写文件命令均已退出成功，再运行自动测试和相关浏览器检查。图版交付变化时同步本地素材副本；需要构建 App 时运行 `sh ios/scripts/sync-artwork.sh assets`。运行 `node ios/scripts/build-catalog.cjs` 并检查 iOS 导出；同步 README 中对用户有意义的数量或功能说明。Git 中的清单更新不会自动交付被忽略的图片。
 
 只改正文或研究来源时，可复用已核验图版；如果修改了所绘主体、形制、图注或年代配色，重新判断需要重画、重建或复核的范围。
 
@@ -191,7 +202,8 @@ git diff --check
 
 | 改动 | 重点检查 |
 | --- | --- |
-| 目录、年代、地域、分类、来源和图版路径 | Node 全套；`ios-catalog.test.cjs` 核对导出与源数据；`ios-map-layout.test.cjs` 运行真实 Swift 地图几何 |
+| 目录、年代、地域、分类、来源和图版路径 | Node 全套；`ios-catalog.test.cjs` 核对导出与源数据；`i18n.test.cjs` 核对英日译文；`ios-map-layout.test.cjs` 运行真实 Swift 地图几何 |
+| 界面文字与多语言 | `Localizable.xcstrings` 英日译文齐全；`FangguUITests/LocalizationUITests` 在英文、日文下检查主要页面，并在独立模拟器目视检查长文本 |
 | 原生个人记录、备份和评价 | `FangguTests`；根据行为运行 `FangguUITests`，编译与运行分开、按类并行和测试专用启动参数见 [测试与验证 · 原生测试](testing.md#原生测试)，用例选择见 [iOS 开发说明](../ios/README.md#六维评价) |
 | 原生界面、手势和导航 | 独立模拟器检查相应页面；触觉和实际触摸体验由真机验收 |
 | 审图工具、图片或链接 | 真实浏览器检查受影响工具；模拟 DOM 不能证明布局和图片解码正常 |

@@ -19,7 +19,7 @@ struct AtlasMapView: View {
     private var matchingPlaces: [Monument] {
         let query = search.trimmingCharacters(in: .whitespacesAndNewlines)
         return places.values.compactMap(\.first).filter { site in
-            query.isEmpty || [site.placeName, site.province, site.place]
+            query.isEmpty || [site.placeName, site.provinceName, site.province, site.place]
                 .contains { $0.localizedStandardContains(query) }
                 || (places[site.placeKey] ?? []).contains { $0.name.localizedStandardContains(query) }
         }.sorted { $0.placeName.localizedStandardCompare($1.placeName) == .orderedAscending }
@@ -72,8 +72,12 @@ struct AtlasMapView: View {
                                 let isSelected = !highlighted.isDisjoint(with: cluster.placeIDs)
                                 Button { openPlaces(cluster.placeIDs) } label: {
                                     VStack(spacing: 2) {
-                                        Text(clusterTitle(cluster.placeIDs))
-                                            .font(FangguFont.serif(12)).lineLimit(1).minimumScaleFactor(0.8)
+                                        // English names are several times wider than Chinese ones; they get a
+                                        // compact title over two lines instead of being cut off.
+                                        Text(markerTitle(cluster.placeIDs))
+                                            .font(FangguFont.serif(AppLanguage.current == .english ? 11 : 12))
+                                            .lineLimit(AppLanguage.current == .english ? 2 : 1).minimumScaleFactor(0.7)
+                                            .multilineTextAlignment(.center)
                                         Text("\(cluster.placeIDs.count) 地")
                                             .font(FangguFont.mono(10))
                                     }
@@ -98,7 +102,7 @@ struct AtlasMapView: View {
                     Text("离线地理概览 · Natural Earth")
                         .font(FangguFont.mono(10)).foregroundStyle(Palette.paper3)
                     if !highlighted.isEmpty {
-                        Text("已选：\(highlighted.sorted().compactMap { places[$0]?.first?.placeName }.joined(separator: "、"))")
+                        Text("已选：\(highlighted.sorted().compactMap { places[$0]?.first?.placeName }.joined(separator: AppLanguage.current.listSeparator))")
                             .font(FangguFont.serif(13)).foregroundStyle(Palette.gold)
                             .accessibilityIdentifier("map-selected-places")
                     }
@@ -112,7 +116,7 @@ struct AtlasMapView: View {
                                 HStack(spacing: 12) {
                                     VStack(alignment: .leading, spacing: 5) {
                                         Text(site.placeName).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
-                                        Text(site.province).font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                                        Text(site.provinceName).font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                                     }
                                     Spacer(minLength: 8)
                                     Text("\(places[site.placeKey]?.count ?? 0) 处")
@@ -141,9 +145,12 @@ struct AtlasMapView: View {
             NavigationStack {
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 12) {
+                        Text(clusterTitle(selected.placeIDs))
+                            .font(FangguFont.serif(24)).foregroundStyle(Palette.paper)
+                            .fixedSize(horizontal: false, vertical: true)
                         ForEach(selected.placeIDs, id: \.self) { key in
                             if let sites = places[key], let first = sites.first {
-                                Text("\(first.province) · \(first.placeName)").font(FangguFont.serif(20)).foregroundStyle(Palette.gold)
+                                Text(verbatim: "\(first.provinceName) · \(first.placeName)").font(FangguFont.serif(20)).foregroundStyle(Palette.gold)
                                     .padding(.top, 8)
                                 ForEach(sites) { site in
                                     NavigationLink(value: site) { TimelineSiteRow(site: site) }.buttonStyle(.plain)
@@ -154,9 +161,10 @@ struct AtlasMapView: View {
                 }
                 .safeAreaInset(edge: .bottom, spacing: 0) { UndoFeedback() }
                 .background(Palette.ink)
-                .navigationTitle(clusterTitle(selected.placeIDs))
+                .navigationTitle(markerTitle(selected.placeIDs))
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
-                .toolbar { Button("关闭") { selection = nil } }
+                .toolbar { Button("关闭") { selection = nil }.accessibilityIdentifier("map-sheet-close") }
             }
             .fangguAppearance()
             .environment(\.inMapSheet, true)
@@ -173,9 +181,22 @@ struct AtlasMapView: View {
 
     private func clusterTitle(_ ids: [String]) -> String {
         let sites = ids.compactMap { places[$0]?.first }
-        if sites.count == 1 { return sites.first?.placeName ?? "到访地点" }
-        let regions = Array(Set(sites.map { CatalogSearch.regionNames[$0.region] ?? $0.province })).sorted()
-        return regions.prefix(2).joined(separator: "·") + (regions.count > 2 ? "等" : "")
+        if sites.count == 1 { return sites.first?.placeName ?? String(localized: "到访地点") }
+        let regions = Array(Set(sites.map(\.regionName))).sorted()
+        let names = regions.prefix(2).joined(separator: AppLanguage.current.nameSeparator)
+        return regions.count > 2 ? String(localized: "\(names)等") : names
+    }
+
+    /// The marker and the sheet's bar title; English uses the first place or region and a count.
+    private func markerTitle(_ ids: [String]) -> String {
+        guard AppLanguage.current == .english else { return clusterTitle(ids) }
+        let sites = ids.compactMap { places[$0]?.first }
+        if sites.count == 1 {
+            let name = sites.first?.placeName ?? String(localized: "到访地点")
+            return name.components(separatedBy: " · ").first ?? name
+        }
+        let regions = Array(Set(sites.map(\.regionName))).sorted()
+        return regions.count > 1 ? "\(regions[0]) +\(regions.count - 1)" : regions.first ?? ""
     }
 
     private func openPlaces(_ ids: [String]) {
@@ -221,7 +242,7 @@ private struct SketchMapGrid: View {
                 let y = projection.point(latitude: lat, longitude: projection.centerLon).y
                 var line = Path(); line.move(to: CGPoint(x: frame.minX, y: y)); line.addLine(to: CGPoint(x: frame.maxX, y: y))
                 context.stroke(line, with: .color(Palette.paper.opacity(0.08)), style: StrokeStyle(lineWidth: 1, dash: [2, 5]))
-                context.draw(Text("\(Int(abs(lat)))°\(lat < 0 ? "S" : "N")").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
+                context.draw(Text(verbatim: "\(Int(abs(lat)))°\(lat < 0 ? "S" : "N")").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
                              at: CGPoint(x: frame.minX - 6, y: y), anchor: .trailing)
             }
             for lon in stride(from: ceil(projection.longitude.lowerBound / lonStep) * lonStep,
@@ -229,7 +250,7 @@ private struct SketchMapGrid: View {
                 let x = projection.point(latitude: projection.centerLat, longitude: lon).x
                 var line = Path(); line.move(to: CGPoint(x: x, y: frame.minY)); line.addLine(to: CGPoint(x: x, y: frame.maxY))
                 context.stroke(line, with: .color(Palette.paper.opacity(0.08)), style: StrokeStyle(lineWidth: 1, dash: [2, 5]))
-                context.draw(Text("\(Int(abs(lon)))°\(lon < 0 ? "W" : "E")").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
+                context.draw(Text(verbatim: "\(Int(abs(lon)))°\(lon < 0 ? "W" : "E")").font(FangguFont.mono(9)).foregroundColor(Palette.paper3),
                              at: CGPoint(x: x, y: frame.maxY + 16))
             }
         }
@@ -240,7 +261,10 @@ private struct SketchMapGrid: View {
 // The catalog is immutable for the lifetime of LibraryStore. Prepare its ordering,
 // period counts and geometry once, rather than sorting inside view comparisons.
 struct TimelineCatalog {
-    static let tracks = ["中国北方", "中国南方", "日本", "东南亚", "朝鲜半岛"]
+    // Period names for Japan and Korea start with the same words ("日本 · 奈良"), so the
+    // timeline can drop the prefix inside a track. Keep the translations in step with the catalog.
+    static let tracks = [String(localized: "中国北方"), String(localized: "中国南方"), String(localized: "日本"),
+                         String(localized: "东南亚"), String(localized: "朝鲜半岛")]
     let sorted: [Monument]
     let sitesByPeriod: [String: [Monument]]
     let periods: [(String, String)]
@@ -255,7 +279,7 @@ struct TimelineCatalog {
             let secondYear = sitesByPeriod[b]?.first?.year ?? 0
             return firstYear == secondYear ? a < b : firstYear < secondYear
         }
-        let periods = [("all", "全部时期")] + keys.map { ($0, sitesByPeriod[$0]?.first?.dynastyName ?? $0) }
+        let periods = [("all", String(localized: "全部时期"))] + keys.map { ($0, sitesByPeriod[$0]?.first?.dynastyName ?? $0) }
         let order = Dictionary(uniqueKeysWithValues: keys.enumerated().map { ($0.element, $0.offset) })
         let quickPeriods = Array(periods.dropFirst().sorted { lhs, rhs in
             let left = sitesByPeriod[lhs.0]?.count ?? 0
@@ -324,22 +348,28 @@ struct TimelineSiteRow: View {
     var distance: String? = nil
     var here = false
     @ScaledMetric(relativeTo: .caption) private var distanceSize: CGFloat = 10
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     private var status: VisitStatus { library.record(for: site).status }
 
     var body: some View {
-        HStack(spacing: 12) {
+        // At accessibility sizes the plate moves above the text so names keep the full row width.
+        let layout = dynamicTypeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10)) : AnyLayout(HStackLayout(spacing: 12))
+        layout {
             ArtworkView(site: site, visited: status == .visited, height: 92)
-                .frame(width: 85)
+                .frame(width: dynamicTypeSize.isAccessibilitySize ? nil : 85)
             VStack(alignment: .leading, spacing: 5) {
                 Text(site.periodLabel)
                     .font(FangguFont.mono(10)).foregroundStyle(site.accent)
                 HStack(alignment: .firstTextBaseline, spacing: 10) {
                     Text(site.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
+                        .fixedSize(horizontal: false, vertical: true)
                     Spacer(minLength: 4)
                     ReviewScoreLabel(scores: library.review(for: site).dimensions)
                 }
                 Text(site.place).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                    .fixedSize(horizontal: false, vertical: true)
                 if distance != nil || here {
                     HStack(spacing: 6) {
                         if here { Text("就在附近").foregroundStyle(Palette.gold) }

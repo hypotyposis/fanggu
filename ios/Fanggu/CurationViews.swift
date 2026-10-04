@@ -50,13 +50,13 @@ struct CurationCard: View {
     var body: some View {
         let progress = library.progress(of: curation)
         VStack(alignment: .leading, spacing: 6) {
-            Text("\(curation.kindName) · \(curation.eyebrow)")
+            Text(verbatim: "\(curation.kindName) · \(curation.eyebrow)")
                 .font(FangguFont.mono(10)).foregroundStyle(Palette.gold).lineLimit(1)
             Text(curation.name)
                 .font(FangguFont.serif(18, weight: .medium)).foregroundStyle(Palette.paper).lineLimit(1)
             Spacer(minLength: 0)
             HStack(alignment: .firstTextBaseline, spacing: 4) {
-                Text("\(progress.visited)")
+                Text(verbatim: "\(progress.visited)")
                     .font(FangguFont.serif(18, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
                 Text("/ \(progress.total) 已见").font(FangguFont.mono(11)).foregroundStyle(Palette.paper2)
                 Spacer()
@@ -94,8 +94,8 @@ struct CurationSummaryRow: View {
                 if progress.isComplete {
                     Text("集齐").font(FangguFont.mono(10)).foregroundStyle(Palette.redText)
                 }
-                Text("\(progress.visited)").font(FangguFont.serif(16, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
-                Text("/ \(progress.total)").font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
+                Text(verbatim: "\(progress.visited)").font(FangguFont.serif(16, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
+                Text(verbatim: "/ \(progress.total)").font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
                 Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.paper3)
             }
             CurationProgressBar(progress: progress)
@@ -105,7 +105,9 @@ struct CurationSummaryRow: View {
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
         .contentShape(Rectangle())
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(curation.kindName) \(curation.name)，已到访 \(progress.visited) 处，共 \(progress.total) 处\(progress.isComplete ? "，已集齐" : "")")
+        .accessibilityLabel(progress.isComplete
+            ? Text("\(curation.kindName) \(curation.name)，已到访 \(progress.visited) 处，共 \(progress.total) 处，已集齐")
+            : Text("\(curation.kindName) \(curation.name)，已到访 \(progress.visited) 处，共 \(progress.total) 处"))
         .accessibilityIdentifier("curation-row-\(curation.id)")
     }
 }
@@ -128,7 +130,7 @@ struct CurationChips: View {
                                 .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.7), lineWidth: 1))
                             Text(list.name).font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
                             Spacer(minLength: 8)
-                            Text("\(progress.visited) / \(progress.total)").font(FangguFont.mono(11)).foregroundStyle(Palette.gold)
+                            Text(verbatim: "\(progress.visited) / \(progress.total)").font(FangguFont.mono(11)).foregroundStyle(Palette.gold)
                             Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.paper3)
                         }
                         .padding(.horizontal, 12).frame(minHeight: 44)
@@ -156,7 +158,7 @@ struct CurationView: View {
         let progress = library.progress(of: curation)
         ScrollView {
             VStack(alignment: .leading, spacing: 22) {
-                Text("\(curation.kindName) · \(curation.eyebrow)")
+                Text(verbatim: "\(curation.kindName) · \(curation.eyebrow)")
                     .font(FangguFont.mono(11)).foregroundStyle(Palette.gold)
                 Text(curation.name)
                     .font(FangguFont.serif(35, weight: .medium)).foregroundStyle(Palette.paper)
@@ -164,12 +166,14 @@ struct CurationView: View {
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(alignment: .lastTextBaseline, spacing: 8) {
                         FangguMetricNumber(value: progress.visited, size: 44)
-                        Text("/ \(progress.total)").font(FangguFont.serif(20)).foregroundStyle(Palette.paper2)
+                        Text(verbatim: "/ \(progress.total)").font(FangguFont.serif(20)).foregroundStyle(Palette.paper2)
                         Text(progress.isComplete ? "已集齐" : "已到访").font(FangguFont.mono(11)).foregroundStyle(progress.isComplete ? Palette.redText : Palette.paper2)
                         Spacer()
                     }
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("已到访 \(progress.visited) 处，共 \(progress.total) 处\(progress.isComplete ? "，已集齐" : "")")
+                    .accessibilityLabel(progress.isComplete
+                        ? Text("已到访 \(progress.visited) 处，共 \(progress.total) 处，已集齐")
+                        : Text("已到访 \(progress.visited) 处，共 \(progress.total) 处"))
                     .accessibilityIdentifier("curation-progress")
                     CurationProgressBar(progress: progress, height: 4)
                 }
@@ -206,6 +210,10 @@ struct CurationView: View {
                 Button { sharing = true } label: { Label("分享专题卡", systemImage: "square.and.arrow.up") }
                     .accessibilityIdentifier("share-curation-card")
             }
+            ToolbarItem(placement: .principal) {
+                Text(curation.name).font(.headline).lineLimit(1).minimumScaleFactor(0.7)
+                    .accessibilityAddTraits(.isHeader)
+            }
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
@@ -240,8 +248,8 @@ struct CollectionProgressView: View {
                                 Text(group.name).font(FangguFont.serif(15))
                                     .foregroundStyle(group.colorHex.map { Palette.dynasty($0) } ?? Palette.paper)
                                 Spacer(minLength: 8)
-                                Text("\(group.visited)").font(FangguFont.serif(15, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
-                                Text("/ \(group.total)").font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
+                                Text(verbatim: "\(group.visited)").font(FangguFont.serif(15, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
+                                Text(verbatim: "/ \(group.total)").font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
                             }
                             CurationProgressBar(progress: group.progress)
                         }

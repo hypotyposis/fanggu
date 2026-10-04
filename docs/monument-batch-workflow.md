@@ -127,7 +127,7 @@ AI 仍不做淘汰决定。可选做法：在不拦截交付的前提下做一�
 
 ## 5. 集中接入与验证：先完成写入，再读结果
 
-1. 只接入图像、来源、真实生成记录齐备的 ID。集中更新 `SITES`、`PLACES`、`queue.json.entries/count` 和必要测试覆盖，默认未到访。保留旧 ID、队列特殊入口、个人记录及既有图版验收记录。
+1. 只接入图像、来源、真实生成记录齐备的 ID。集中更新 `SITES`、`PLACES`、`queue.json.entries/count` 和必要测试覆盖，默认未到访。保留旧 ID、队列特殊入口、个人记录及既有图版验收记录。同批在 `i18n/en.json`、`i18n/ja.json` 补齐译文和新术语，规则见 [多语言目录](development.md#多语言目录)。
 2. 在仓库根目录依次执行以下命令。每条必须确认退出成功后才进入下一条；返回会话 ID 时继续等待完成，不能认为命令已结束。第一次转码产出 AVIF 与清单，默认通过命令据此把仍为 `pending_user` 的图记为 `approved_default`，第二次转码把状态写入清单，再汇总。
 
 ```bash
@@ -137,6 +137,7 @@ node scripts/record-plate-review.mjs color --default --all-pending
 node scripts/record-plate-review.mjs line --default --all-pending
 python3 -B scripts/prepare-colored-avif.py
 node scripts/collect-colored-plates.mjs --require-complete
+node ios/scripts/build-catalog.cjs
 node --test tests/*.test.cjs
 python3 -B tests/test_transparency.py
 git diff --check

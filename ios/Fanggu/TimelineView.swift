@@ -16,15 +16,17 @@ struct TimelineView: View {
     private var currentGroup: TimelineCluster? { groups.first { $0.id == selectedCluster } }
     private var selected: [Monument] { currentGroup?.sites ?? catalog.sites(lane: lane, period: period) }
     private var visitedCount: Int { selected.filter { library.record(for: $0).status == .visited }.count }
-    private var periodName: String { catalog.periods.first { $0.0 == period }?.1 ?? "全部时期" }
+    private var periodName: String { catalog.periods.first { $0.0 == period }?.1 ?? String(localized: "全部时期") }
     private var range: ClosedRange<Int>? {
         guard let first = selected.first, let last = selected.last else { return nil }
         if currentGroup != nil || period == "all" { return first.year...last.year }
         return (selected.map(\.dynastyStart).min() ?? first.year)...(selected.map(\.dynastyEnd).max() ?? last.year)
     }
     private var rangeText: String {
-        guard let range else { return "暂无古迹" }
-        return range.lowerBound == range.upperBound ? "\(range.lowerBound) 年" : "\(range.lowerBound)–\(range.upperBound) 年"
+        guard let range else { return String(localized: "暂无古迹") }
+        // Years are written without digit grouping ("1368", not "1,368").
+        return range.lowerBound == range.upperBound ? String(localized: "\(String(range.lowerBound)) 年")
+            : String(localized: "\(String(range.lowerBound))–\(String(range.upperBound)) 年")
     }
     private var focusYear: Int {
         // Center the first actual monument in the chosen era, not an empty interval.
@@ -51,11 +53,12 @@ struct TimelineView: View {
             VStack(alignment: .leading, spacing: 16) {
                 FangguSectionTitle(eyebrow: "东汉至今 · 东亚与东南亚", title: "年表", subtitle: "按地域与时期，细读现存主体的年代。")
                 if dynamicTypeSize.isAccessibilitySize {
-                    VStack(spacing: 10) { regionMenu; periodMenu }
+                    VStack(spacing: 10) { regionMenu(); periodMenu() }
                 } else {
+                    // Side by side only when both labels fit on one line each.
                     ViewThatFits(in: .horizontal) {
-                        HStack(spacing: 10) { regionMenu; periodMenu }
-                        VStack(spacing: 10) { regionMenu; periodMenu }
+                        HStack(spacing: 10) { regionMenu(singleLine: true); periodMenu(singleLine: true) }
+                        VStack(spacing: 10) { regionMenu(); periodMenu() }
                     }
                 }
                 ScrollViewReader { proxy in
@@ -75,14 +78,16 @@ struct TimelineView: View {
                         }
                     }
                     .scrollIndicators(.hidden)
+                    // The menus above carry the full names; chips stay a readable single line.
+                    .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
                     .onChange(of: period) { _, key in withAnimation { proxy.scrollTo(key, anchor: .center) } }
                     .onChange(of: lane) { _, _ in proxy.scrollTo(period, anchor: .center) }
                 }
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("\(TimelineCatalog.tracks[lane]) · \(currentGroup == nil ? regionalTitle(periodName) : rangeText)")
+                    Text(verbatim: "\(TimelineCatalog.tracks[lane]) · \(currentGroup == nil ? regionalTitle(periodName) : rangeText)")
                         .font(FangguFont.serif(19)).foregroundStyle(Palette.paper)
                         .accessibilityIdentifier("timeline-selection-title")
-                    Text("\(currentGroup == nil ? rangeText : Array(Set(selected.map(\.dynastyName))).sorted().joined(separator: "、")) · 已到访 \(visitedCount) / \(selected.count) 处")
+                    Text("\(currentGroup == nil ? rangeText : Array(Set(selected.map(\.dynastyName))).sorted().joined(separator: AppLanguage.current.listSeparator)) · 已到访 \(visitedCount) / \(selected.count) 处")
                         .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
                         .accessibilityIdentifier("timeline-selection-summary")
                 }
@@ -111,9 +116,11 @@ struct TimelineView: View {
                     Button("显示更多 · 已显示 \(min(visibleCount, selected.count)) / \(selected.count)") { visibleCount += 12 }
                         .buttonStyle(FangguOutlineButton()).frame(maxWidth: .infinity)
                 }
-                DisclosureGroup("读图说明") {
+                DisclosureGroup {
                     Text("中国北方、中国南方、日本、东南亚与朝鲜半岛分别浏览。所有时期可从菜单切换；浅色带表示所选时期或年份范围，外圈表示选中圆点。数字是邻近年份的古迹数，半圆表示其中部分已到访。年代对应图版所绘主体，部分仅作约略定位，确切纪年与重修沿革以详情为准。")
                         .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2).lineSpacing(5)
+                } label: {
+                    Text("读图说明").multilineTextAlignment(.leading)
                 }
                 .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
             }
@@ -123,7 +130,7 @@ struct TimelineView: View {
         .toolbar(.hidden, for: .navigationBar)
     }
 
-    private var regionMenu: some View {
+    private func regionMenu(singleLine: Bool = false) -> some View {
         Menu {
             ForEach(TimelineCatalog.tracks.indices, id: \.self) { index in
                 Button(TimelineCatalog.tracks[index]) {
@@ -132,21 +139,26 @@ struct TimelineView: View {
                 }
                 .accessibilityIdentifier("timeline-region-choice-\(index)")
             }
-        } label: { menuLabel(TimelineCatalog.tracks[lane]) }
+        } label: { menuLabel(TimelineCatalog.tracks[lane], singleLine: singleLine) }
         .accessibilityIdentifier("timeline-region-menu")
     }
-    private var periodMenu: some View {
+    private func periodMenu(singleLine: Bool = false) -> some View {
         Menu {
             ForEach(catalog.periods, id: \.0) { key, title in
                 Button(title) { selectPeriod(key) }
                     .accessibilityIdentifier("timeline-period-choice-\(key)")
             }
-        } label: { menuLabel(regionalTitle(periodName)) }
+        } label: { menuLabel(regionalTitle(periodName), singleLine: singleLine) }
         .accessibilityLabel("选择时期，\(periodName)")
         .accessibilityIdentifier("timeline-period-menu")
     }
-    private func menuLabel(_ title: String) -> some View {
-        HStack(spacing: 10) { Text(title).fixedSize(horizontal: false, vertical: true); Spacer(minLength: 4); Image(systemName: "chevron.down") }
+    private func menuLabel(_ title: String, singleLine: Bool = false) -> some View {
+        HStack(spacing: 10) {
+            Text(title).multilineTextAlignment(.leading)
+                .fixedSize(horizontal: singleLine, vertical: true)
+            Spacer(minLength: 4)
+            Image(systemName: "chevron.down")
+        }
             .font(FangguFont.serif(15)).foregroundStyle(Palette.paper)
             .padding(12).frame(minHeight: 44).background(Palette.ink2)
             .overlay(Rectangle().stroke(Palette.paper.opacity(0.22), lineWidth: 1))
@@ -186,7 +198,7 @@ struct TimelineView: View {
                                 .frame(width: 44, height: 44)
                         }
                         .buttonStyle(.plain).position(x: group.x, y: 94)
-                        .accessibilityLabel("\(group.sites.first?.year ?? 0)–\(group.sites.last?.year ?? 0) 年，\(group.sites.count) 处古迹")
+                        .accessibilityLabel("\(String(group.sites.first?.year ?? 0))–\(String(group.sites.last?.year ?? 0)) 年，\(group.sites.count) 处古迹")
                         .accessibilityValue("已到访 \(count) / \(group.sites.count)")
                         .accessibilityAddTraits(isSelected ? .isSelected : [])
                         .accessibilityIdentifier("timeline-marker-\(group.id)")
@@ -209,7 +221,7 @@ struct TimelineView: View {
         legend("circle.lefthalf.filled", "部分到访")
         legend("circle", "尚未到访")
     }
-    private func legend(_ symbol: String, _ title: String) -> some View {
+    private func legend(_ symbol: String, _ title: LocalizedStringKey) -> some View {
         Label(title, systemImage: symbol).font(FangguFont.serif(11)).foregroundStyle(Palette.paper2)
     }
 }
@@ -224,7 +236,7 @@ private struct TimelineMarker: View {
             Image(systemName: visited == 0 ? "circle" : visited == total ? "circle.fill" : "circle.lefthalf.filled")
                 .font(.system(size: 30)).foregroundStyle(Palette.gold)
             if total > 1 {
-                Text("\(total)").font(FangguFont.mono(11))
+                Text(verbatim: "\(total)").font(FangguFont.mono(11))
                     .foregroundStyle(visited == total ? Palette.ink : Palette.paper)
                     .padding(.horizontal, 3).background(visited == total ? Palette.gold : Palette.ink, in: Capsule())
             }
