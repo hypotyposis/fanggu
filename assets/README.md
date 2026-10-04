@@ -4,6 +4,34 @@
 
 当前素材由 Git 跟踪的 [资源锁定清单](asset-lock.json)逐文件校验。本地执行 `python3 scripts/asset-bundle.py pack` 会生成被忽略的 `asset-dist/<assetSet>/`：`runtime` 分卷供 iOS 和本地审图显示，其余 `source` 分卷保留原稿、参考资料与审图记录。新克隆使用 `python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile runtime`；需要完整素材时改用 `--profile full`。素材变化后先重新运行 `lock`，详细命令和备份要求见[开发指南](../docs/development.md#本地资源包)。资源包可能包含有使用限制的参考照片，不放到公开 GitHub 仓库或 Release。
 
+## 目录结构
+
+| 目录或文件 | 内容 | Git | 素材层级 |
+| --- | --- | --- | --- |
+| `asset-lock.json` | 被忽略素材的逐文件哈希清单 | 跟踪 | — |
+| `longmen-vairocana.png` | 卢舍那大佛原图，App 使用，也是风格母版的来源 | 忽略 | runtime |
+| `generated/<id>.png` | imagegen 线稿原件（白底或原生透明） | 忽略 | source |
+| `plates/<id>.png` | 着时代色的透明线稿交付版 | 忽略 | runtime |
+| `research/<id>.json` | 线稿考据与生成记录 | 跟踪 | — |
+| `research/*-plan.md`、`*-batch.json`、`*-report.md` | 批次计划、本批 ID 列表、交付报告 | 跟踪 | 历史资料 |
+| `research/national-protection.json` | 国保源数据 | 跟踪 | — |
+| `research/legacy-line-originals.json` | 允许走旧白底抠图路径的线稿原件哈希白名单 | 跟踪 | — |
+| `research/japan-periods.json`、`STYLE.md` | 日本时代分界依据、线稿规范 | 跟踪 | — |
+| `research/history/` | 历史任务快照与归档原件记录 | 跟踪 | 不作为授权 |
+| `research/*.html` | 本地人审页 | 忽略 | — |
+| `references/`、`color-references/` | 参考照片与风格母版 | 忽略 | source |
+| `colored/<id>.png` | 设色原件 | 忽略 | source |
+| `colored-transparent/<id>.png` | 去底后的透明 PNG 中间稿 | 忽略 | source |
+| `colored-transparent-avif/<id>.avif` | App 与审图使用的设色交付副本 | 忽略 | runtime |
+| `colored-avif/` | 旧暗底 AVIF，已不使用 | 忽略 | source |
+| `color-research/<id>.json`、`queue.json`、`avif-manifest.json`、`progress.json`、`prompts.json`、`common-prompt.txt`、`WORKFLOW.md` | 设色记录、队列、转码清单、汇总、共用提示词、设色流程 | 跟踪 | — |
+| `color-research/batches/`、`history/` | 原批次分工与历史快照 | 跟踪 | 不作为授权 |
+| `color-studies/v1/` | 三张正式版设色图版；PNG 忽略，`README.md` 与 `prompts.json` 跟踪 | 混合 | source |
+| `transparency-studies/` | 去底实验记录；图片忽略 | 跟踪 | 历史资料 |
+| `reviews/` | 设计评审截图 | 忽略 | 本地 |
+
+字段含义见 [数据模型](../docs/data-model.md)，层级含义与恢复方法见 [架构 · 本地素材分层](../docs/architecture.md#本地素材分层)。
+
 ## 维护入口
 
 - [开发约定](../AGENTS.md) / [开发指南](../docs/development.md)：数据、模块、生成命令与检查范围。

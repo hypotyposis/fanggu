@@ -6,6 +6,7 @@ struct MonumentDetailView: View {
     let site: Monument
     @State private var editingVisit = false
     @State private var editingReview = false
+    @State private var sharing = false
     @State private var reveal: CGFloat = 0
 
     private var record: VisitRecord { library.record(for: site) }
@@ -37,6 +38,7 @@ struct MonumentDetailView: View {
                         }
                     }
                 }
+                CurationChips(site: site)
                 VisitActions(site: site, editingVisit: $editingVisit)
                 VStack(spacing: 8) {
                     ArtworkView(site: site, visited: record.status == .visited,
@@ -100,7 +102,11 @@ struct MonumentDetailView: View {
                     }
                 }
                 VStack(alignment: .leading, spacing: 8) {
-                    Text("我的评价").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                    HStack {
+                        Text("我的评价").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                        Spacer()
+                        ReviewScoreLabel(scores: review.dimensions)
+                    }
                     if !review.dimensions.isEmpty {
                         ReviewRadar(scores: .constant(review.dimensions), editable: false)
                     } else if let rating = review.rating {
@@ -126,7 +132,7 @@ struct MonumentDetailView: View {
             .padding(24)
         }
         .safeAreaInset(edge: .bottom, spacing: 0) {
-            if !editingReview && !editingVisit { UndoFeedback() }
+            if !editingReview && !editingVisit && !sharing { UndoFeedback() }
         }
         .background(Palette.ink.ignoresSafeArea())
         .navigationTitle(site.short.isEmpty ? site.name : site.short)
@@ -141,11 +147,16 @@ struct MonumentDetailView: View {
                         .font(FangguFont.serif(13))
                 }
             }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button { sharing = true } label: { Label("分享访古卡", systemImage: "square.and.arrow.up") }
+                    .accessibilityIdentifier("share-card")
+            }
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
+        .sheet(isPresented: $sharing) { ShareCardSheet(content: .monument(site)) }
     }
 
     private func finishArrival() {
@@ -155,6 +166,7 @@ struct MonumentDetailView: View {
 
 struct ArrivalSlider: View {
     @EnvironmentObject private var library: LibraryStore
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let site: Monument
     @Binding var progress: CGFloat
     let onComplete: () -> Void
@@ -163,26 +175,58 @@ struct ArrivalSlider: View {
     @State private var furthestStep = 0
     @GestureState private var dragging = false
 
+    private var instruction: String {
+        finished ? "已到访 · 留印" : progress >= 1 ? "松手记录今日到访" : "滑动记录今日到访"
+    }
+
     var body: some View {
         GeometryReader { geometry in
             let colorReady = ArtworkView.artwork(site.colorImage) != nil
+            let travel = max(1, geometry.size.width - 54)
             ZStack(alignment: .leading) {
-                Rectangle().fill(Palette.ink3).overlay(Rectangle().stroke(Palette.red.opacity(0.6), lineWidth: 1))
-                Rectangle().fill(Palette.red.opacity(0.25)).frame(width: max(50, geometry.size.width * progress))
-                Text(!colorReady ? "设色图暂未加载" : finished ? "已到访 · 留印" : progress >= 1 ? "松手记录今日到访" : "滑动记录今日到访")
-                    .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
-                    .frame(maxWidth: .infinity)
-                Text("访").font(FangguFont.brush(29))
-                    .foregroundStyle(Palette.sealPaper)
-                    .frame(width: 50, height: 50)
-                    .background(Palette.red)
+                Rectangle().fill(Palette.ink2)
+                FangguPaperGrain()
+                Rectangle().fill(Palette.redText.opacity(0.07))
+                    .frame(width: 51 + travel * progress)
+                // A thin ruled track and five notches echo the binding of a paper scroll.
+                Path { path in
+                    path.move(to: CGPoint(x: 27, y: 43))
+                    path.addLine(to: CGPoint(x: geometry.size.width - 27, y: 43))
+                    for step in 1...5 {
+                        let x = 27 + travel * CGFloat(step) / 5
+                        path.move(to: CGPoint(x: x, y: 41))
+                        path.addLine(to: CGPoint(x: x, y: 45))
+                    }
+                }
+                .stroke(Palette.goldDim.opacity(0.3), lineWidth: 0.6)
+                .accessibilityHidden(true)
+                HStack(spacing: 6) {
+                    Text(!colorReady ? "设色图暂未加载" : instruction)
+                        .font(FangguFont.serif(12)).tracking(1)
+                        .lineLimit(1).minimumScaleFactor(0.7)
+                    if colorReady && progress == 0 {
+                        Image(systemName: "arrow.right").font(.system(size: 10, weight: .light))
+                    }
+                }
+                .foregroundStyle(progress >= 1 ? Palette.redText : Palette.paper2)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 56).padding(.bottom, 5)
+                .opacity(progress > 0 && progress < 0.9 ? 0.35 : 1)
+                .accessibilityHidden(true)
+                Text("印").font(FangguFont.brush(21))
+                    .foregroundStyle(progress >= 1 ? Palette.redText : Palette.goldDim.opacity(0.6))
+                    .frame(width: 32, height: 32)
+                    .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.3), lineWidth: 0.6))
+                    .frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing, 11)
+                    .accessibilityHidden(true)
+                sealThumb
                     .contentShape(Rectangle())
                     .gesture(DragGesture(minimumDistance: 5, coordinateSpace: .global)
                         .updating($dragging) { _, active, _ in active = true }
                         .onChanged {
                             guard !finished else { return }
                             if !prepared { Haptics.beginArrival(); prepared = true }
-                            progress = min(1, max(0, $0.translation.width / max(1, geometry.size.width - 50)))
+                            progress = min(1, max(0, $0.translation.width / travel))
                             let step = Int(progress * 5)
                             if step > furthestStep {
                                 furthestStep = step
@@ -193,14 +237,16 @@ struct ArrivalSlider: View {
                             prepared = false
                             furthestStep = 0
                             if finished { return }
-                            progress = min(1, max(0, value.translation.width / max(1, geometry.size.width - 50)))
+                            progress = min(1, max(0, value.translation.width / travel))
                             if progress >= 1 && checkIn() { return }
-                            withAnimation(.easeOut(duration: 0.38)) { progress = 0 }
+                            resetProgress()
                         })
-                    .offset(x: (geometry.size.width - 50) * progress)
+                    .offset(x: 3 + travel * progress)
                     .allowsHitTesting(colorReady && !finished)
             }
             .frame(height: 54)
+            .overlay(Rectangle().stroke(Palette.goldDim.opacity(colorReady ? 0.45 : 0.25), lineWidth: 0.7).allowsHitTesting(false))
+            .overlay(FangguAlbumCorners().stroke(Palette.goldDim.opacity(0.45), lineWidth: 0.7).allowsHitTesting(false))
             .accessibilityElement()
             .accessibilityLabel("到访打卡")
             .accessibilityValue(finished ? "今日到访已保存" : "今日到访，拖动进度 \(Int(progress * 100))%")
@@ -213,9 +259,24 @@ struct ArrivalSlider: View {
             if !active && prepared && !finished {
                 prepared = false
                 furthestStep = 0
-                withAnimation(.easeOut(duration: 0.38)) { progress = 0 }
+                resetProgress()
             }
         }
+    }
+
+    private var sealThumb: some View {
+        Text("访").font(FangguFont.brush(28))
+            .foregroundStyle(Palette.sealPaper)
+            .frame(width: 48, height: 48)
+            .background(Palette.red)
+            .overlay(Rectangle().stroke(Palette.sealPaper.opacity(0.7), lineWidth: 0.7).padding(4))
+            .overlay(Rectangle().stroke(Palette.sealPaper.opacity(0.25), lineWidth: 0.5).padding(6))
+            .shadow(color: Palette.shadow.opacity(dragging ? 0.4 : 0.2), radius: dragging ? 3 : 1, x: 1, y: 2)
+    }
+
+    private func resetProgress() {
+        if reduceMotion { progress = 0 }
+        else { withAnimation(.easeOut(duration: 0.38)) { progress = 0 } }
     }
 
     @discardableResult private func checkIn() -> Bool {
@@ -345,17 +406,28 @@ struct ReviewEditor: View {
                         .accessibilityIdentifier("review-save-error")
                     }
                     VStack(spacing: 8) {
-                        if dynamicTypeSize.isAccessibilitySize {
-                            VStack(alignment: .leading, spacing: 8) { reviewHeading }
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                        } else {
-                            HStack { reviewHeading }
+                        Group {
+                            if dynamicTypeSize.isAccessibilitySize {
+                                VStack(alignment: .leading, spacing: 8) { reviewHeading }
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            } else {
+                                HStack { reviewHeading }
+                            }
                         }
+                        .padding(.top, 6)
+                        Rectangle().fill(Palette.goldDim.opacity(0.25)).frame(height: 0.5)
                         ReviewRadar(scores: $dimensions, onCommit: saveDimensions)
+                        HStack {
+                            Text("已评维度等权平均 · 未评项不计入")
+                                .font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                            Spacer(minLength: 8)
+                            ReviewScoreLabel(scores: dimensions)
+                        }
                     }
                     .padding(.horizontal, 12).padding(.bottom, 18)
-                    .background(Palette.ink2)
-                    .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+                    .background { Palette.ink2.overlay(FangguPaperGrain()) }
+                    .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.3), lineWidth: 0.7).allowsHitTesting(false))
+                    .overlay(FangguAlbumCorners().stroke(Palette.goldDim.opacity(0.6), lineWidth: 0.7).allowsHitTesting(false))
                     if let rating = legacyRating {
                         Text("旧版 \(rating) 星评分已保留。六个维度由你重新描画。")
                             .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
@@ -425,7 +497,14 @@ struct ReviewEditor: View {
     }
 
     @ViewBuilder private var reviewHeading: some View {
-        Text("我的六维图").font(FangguFont.serif(17))
+        HStack {
+            Text("私评").font(FangguFont.brush(12))
+                .foregroundStyle(Palette.redText)
+                .frame(width: 30, height: 30)
+                .overlay(Rectangle().stroke(Palette.redText.opacity(0.6), lineWidth: 0.7).padding(2))
+                .accessibilityHidden(true)
+            Text("我的六维图").font(FangguFont.serif(17)).tracking(1)
+        }
         if !dynamicTypeSize.isAccessibilitySize { Spacer() }
         Button {
             if library.resetReviewDimensions(for: site) {

@@ -35,6 +35,24 @@ struct MyLibraryView: View {
                     }
                 }
                 FangguRule()
+                if !library.curations.isEmpty {
+                    sectionTitle("专题进度")
+                    ForEach(library.curations) { list in
+                        NavigationLink(value: list) { CurationSummaryRow(curation: list) }
+                            .buttonStyle(.plain)
+                    }
+                }
+                NavigationLink { CollectionProgressView() } label: {
+                    HStack {
+                        Label("按时代、省份、类型看收集进度", systemImage: "chart.bar")
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.system(size: 11))
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                .accessibilityIdentifier("collection-progress-link")
+                FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
                     sectionTitle("外观")
                     Picker("外观模式", selection: $appearance) {

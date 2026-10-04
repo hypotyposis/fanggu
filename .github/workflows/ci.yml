@@ -57,9 +57,9 @@ jobs:
       - name: iOS 目录导出与 Git 一致
         run: |
           node ios/scripts/build-catalog.cjs
-          if ! git diff --quiet -- ios/Fanggu/Resources/catalog.json; then
-            echo "::error file=ios/Fanggu/Resources/catalog.json::目录导出已过期：本地运行 node ios/scripts/build-catalog.cjs 后提交"
-            git --no-pager diff --stat -- ios/Fanggu/Resources/catalog.json
+          if ! git diff --quiet -- ios/Fanggu/Resources/catalog.json ios/Fanggu/Resources/curations.json; then
+            echo "::error file=ios/scripts/build-catalog.cjs::目录导出已过期：本地运行 node ios/scripts/build-catalog.cjs 后提交 catalog.json 与 curations.json"
+            git --no-pager diff --stat -- ios/Fanggu/Resources/catalog.json ios/Fanggu/Resources/curations.json
             exit 1
           fi
 
