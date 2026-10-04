@@ -41,7 +41,7 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 直接打开 [线稿总览](http://localhost:8765/proof.html?view=grid)、[设色校对](http://localhost:8765/color-proof.html)或 [图版来源](http://localhost:8765/sources.html)。浏览和对照只读取本地素材，不写个人记录。
 
-古迹目录由 `sites.js`、图版清单、文保资料、分类、`curations.js` 专题名录与 `palette.css` 导出到 iOS。来源、原件、真实提示词和用户验收对象继续保留。新增或重绘使用内置 imagegen 生成白底 PNG，再本地去底并交付透明 PNG／AVIF；线稿为照片参考的艺术意写，非实测或修缮图。原型阶段以用户人眼验收为准。
+古迹目录由 `sites.js`、图版清单、文保资料、分类、`curations.js` 专题名录与 `palette.css` 导出到 iOS。来源、原件、真实提示词和验收记录继续保留。新增或重绘使用内置 imagegen 生成白底 PNG，再本地去底并交付透明 PNG／AVIF；线稿为照片参考的艺术意写，非实测或修缮图。原型阶段图版生成后默认通过并交付（2026-10-05 用户决定），用户明确说通过的另记为 `approved_user`。
 
 生产流程见 [增量制图手册](docs/monument-batch-workflow.md)、[线稿规范](assets/research/STYLE.md)、[设色流程](assets/color-research/WORKFLOW.md)和 [国保标签规则](docs/national-protection.md)。
 

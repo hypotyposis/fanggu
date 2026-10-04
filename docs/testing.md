@@ -82,7 +82,7 @@ sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUI
 ## 新增测试的约定
 
 - 修复行为缺陷时补一条能复现缺陷的测试；格式或静态说明改动不加测试。
-- 每个新增批次一个文件，命名为 `<地区或主题>-<yyyymmdd>.test.cjs`，或沿用已有的 `<地区>.test.cjs`。断言内容：ID 唯一、所绘主体与年代、国别与地域、默认未到访、线稿与设色记录和原件哈希绑定、队列与清单覆盖、iOS 导出一致。批次 ID 优先从 `assets/research/<batch>-batch.json` 读取。
+- 每个新增批次一个文件，命名为 `<地区或主题>-<yyyymmdd>.test.cjs`，或沿用已有的 `<地区>.test.cjs`。断言内容：ID 唯一、所绘主体与年代、国别与地域、默认未到访、线稿与设色记录和原件哈希绑定、验收状态为 `approved_default`（用户明确通过的为 `approved_user`，不再断言新图为 `pending_user`）、队列与清单覆盖、iOS 导出一致。批次 ID 优先从 `assets/research/<batch>-batch.json` 读取。
 - `tests/catalog.test.cjs` 维护全库覆盖列表，新增 ID 加入其中；`tests/helpers/native-catalog.cjs` 提供 `assertUnvisited`，`archived-*.cjs` 保护历史验收记录。
 - 原生测试放在 `ios/FangguTests`（逻辑、存储）或 `ios/FangguUITests`（交互）。单元测试用临时目录；UI 用例通过 `XCUIApplication.isolated()` 启动 App，不直接用 `XCUIApplication()`。
 
@@ -91,4 +91,4 @@ sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUI
 - 列出实际执行的命令与结果；未执行或被跳过的检查单独列出，并说明原因，如缺素材、无模拟器、超时。
 - 失败如实给出输出，不以历史报告或截图代替本次验证。
 - 涉及界面、手势、导航、图片地址的改动，说明是否在模拟器或真机实际操作过；模拟 DOM 与单元测试不能代替。
-- 新增古迹时同时报告图版验收状态（`pending_user` 或 `approved_user`）、素材是否打包、代码是否提交。
+- 新增古迹时同时报告图版验收状态（默认通过 `approved_default` 与用户明确通过 `approved_user` 各多少，不应残留 `pending_user`）、素材是否打包、代码是否提交。
