@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
@@ -51,7 +52,7 @@ test('Korean dates distinguish uncertain construction, later additions and war r
   assert(get('kp_sungyang_hall').yearNote.includes('未定'));
 });
 
-test('Korean line/color originals, references, queue and actual transparent deliveries cover every ID', () => {
+test('Korean line/color originals, references, queue and actual transparent deliveries cover every ID', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(queue.count, queue.entries.length);

@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -58,7 +59,7 @@ test('Kyoto additions preserve distinct subjects, geography, approximate chronol
   assert.equal(SITES.length, queue.entries.length + queue.excluded.length);
 });
 
-test('all thirteen have source-bound local plates, explicit pending review and iOS art', () => {
+test('all thirteen have source-bound local plates, explicit pending review and iOS art', requiresLocalAssets, () => {
   for (const id of Object.keys(expected)) {
     const site = SITES.find(x => x.id === id);
     const line = json(`assets/research/${id}.json`);

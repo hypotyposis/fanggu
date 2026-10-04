@@ -194,6 +194,9 @@ git diff --check
 | 原生界面、手势和导航 | 独立模拟器检查相应页面；触觉和实际触摸体验由真机验收 |
 | 审图工具、图片或链接 | 真实浏览器检查受影响工具；模拟 DOM 不能证明布局和图片解码正常 |
 | 文档 | 本地链接、路径、命令描述与 `git diff --check` |
+| 持续集成 | [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)：Linux job 运行 Node 测试、`prepare-protection.mjs --check`、`build-catalog.cjs` 导出与 `catalog.json` 一致性和 Python 单元测试；macOS job 用 XcodeGen 生成工程，以空 `Artwork` 目录构建并运行 `FangguTests` 与 Swift 地图几何测试。`FangguUITests` 仅在手动触发时运行 |
+
+依赖本地图版、原稿或参考照片的 Node 测试用 [`tests/helpers/local-assets.cjs`](../tests/helpers/local-assets.cjs) 的 `requiresLocalAssets` 声明：缺少 `assets/plates`、`assets/generated` 或 `assets/colored-transparent-avif` 时报告为跳过而不是 ENOENT，CI 和新克隆因此只运行可从 Git 判定的检查。新增读取被忽略文件的测试同样声明；恢复素材后设置 `FANGGU_REQUIRE_LOCAL_ASSETS=1` 可强制全部运行，确认没有被跳过的检查。CI 会在 `sites.js` 等目录源改动而未重新导出时失败，此时运行 `node ios/scripts/build-catalog.cjs` 并提交 `catalog.json`。
 
 审图浏览器检查直接打开单处线稿、设色并列及来源页；核对图片请求、图注、深浅/棋盘背景、搜索与前后翻阅。新地区的筛选、别名搜索、原生详情与年表在 App 中验证，不再检查网页首页或 Back。
 

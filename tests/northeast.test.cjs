@@ -1,6 +1,7 @@
 const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -16,7 +17,7 @@ const batch = json('assets/research/northeast-batch.json');
 const catalog = facets.classify(SITES, PLACES);
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
 
-test('northeast delivery distinguishes requested ten from structurally blocked or unapproved scope', () => {
+test('northeast delivery distinguishes requested ten from structurally blocked or unapproved scope', requiresLocalAssets, () => {
   assert.equal(batch.requested_ids.length, 10);
   assert.deepEqual(Object.values(batch.requested_groups).map(ids => ids.length), [4, 3, 3]);
   assert.deepEqual(Object.values(batch.groups).flat().sort(), [...batch.ids].sort());
@@ -32,7 +33,7 @@ test('northeast delivery distinguishes requested ten from structurally blocked o
   assert(blocked.generation_history.every(attempt => !attempt.accepted && attempt.prompt && fs.existsSync(path.join(root, attempt.retained_file))));
 });
 
-test('northeast paired plates bind real originals, transparency and existing artwork hashes', () => {
+test('northeast paired plates bind real originals, transparency and existing artwork hashes', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json'), manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(queue.count, queue.entries.length);
   assert.deepEqual([...queue.entries.map(item => item.id), ...queue.excluded].sort(), Array.from(SITES, site => site.id).sort());

@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -48,7 +49,7 @@ test('Tokyo additions retain subject dates, Japanese geography and independent u
   assert.match(sites.find(site => site.id === 'jp_shofukuji_jizodo').facts.join(''), /单层带裳阶/);
 });
 
-test('Tokyo source records bind actual originals, deliveries and any explicit user reviews', () => {
+test('Tokyo source records bind actual originals, deliveries and any explicit user reviews', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(queue.count, queue.entries.length);

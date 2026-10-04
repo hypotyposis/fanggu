@@ -1,5 +1,6 @@
 const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -43,7 +44,7 @@ test('new entries export unvisited defaults to the native catalogue', () => {
   assertUnvisited(ids);
 });
 
-test('Ningxia white originals and deliveries are complete with explicit hash-bound user approval', () => {
+test('Ningxia white originals and deliveries are complete with explicit hash-bound user approval', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json'), delivery = json('assets/color-research/avif-manifest.json');
   assert.equal(queue.count, queue.entries.length);
   assert.deepEqual(Object.keys(colors).sort(), Array.from(SITES, site => site.id).sort());

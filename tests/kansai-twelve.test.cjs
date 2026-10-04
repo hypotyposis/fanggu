@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -49,7 +50,7 @@ test('Kansai batch keeps twelve distinct subjects, map regions and depicted date
   assert.equal(queue.count, SITES.length - queue.excluded.length);
 });
 
-test('Kansai artwork retains licensed sources, exact originals and transparent deliveries', () => {
+test('Kansai artwork retains licensed sources, exact originals and transparent deliveries', requiresLocalAssets, () => {
   for (const id of Object.keys(batch)) {
     const line = JSON.parse(read(`assets/research/${id}.json`));
     const color = JSON.parse(read(`assets/color-research/${id}.json`));

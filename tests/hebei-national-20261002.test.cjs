@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -17,7 +18,7 @@ const facets = require('../catalog.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('ten Hebei national monuments have complete source-bound line and color pairs', () => {
+test('ten Hebei national monuments have complete source-bound line and color pairs', requiresLocalAssets, () => {
   assert.equal(batch.ids.length, 10);
   assert.equal(new Set(batch.ids).size, 10);
   assert.deepEqual(batch.ids, batch.plannedIds);
@@ -86,7 +87,7 @@ test('new Hebei sites are searchable and default unvisited without disturbing ol
   for (const id of batch.previousIds) assert(SITES.some(s => s.id === id), id);
 });
 
-test('Hebei intake preserves older plate content and human acceptance', () => {
+test('Hebei intake preserves older plate content and human acceptance', requiresLocalAssets, () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   for (const [id, previous] of Object.entries(batch.previousDeliveries)) {
     if (id === 'xian') { assertArchivedXian(previous); continue; }

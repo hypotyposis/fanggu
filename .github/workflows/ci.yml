@@ -1,0 +1,156 @@
+# 访古持续集成：push 到 main 和所有 pull request 都运行。
+# 图片、原稿和参考照片不在 Git 中（见 docs/development.md#本地资源包），
+# 因此依赖本地图版的 Node 测试会在这里报告为跳过，iOS 以空图版目录构建；完整验证仍在本地执行。
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      ui_tests:
+        description: 同时运行 FangguUITests（较慢）
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  NODE_VERSION: '22'
+  PYTHON_VERSION: '3.12'
+
+jobs:
+  catalog:
+    name: 目录数据、脚本与测试
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: 安装 Python 依赖
+        run: python -m pip install --quiet --upgrade pip numpy pillow
+
+      - name: 空白与行尾检查
+        run: git diff --check "$(git hash-object -t tree /dev/null)" HEAD
+
+      - name: Node 测试
+        # 需要本地图版素材的测试由 tests/helpers/local-assets.cjs 标记，在 CI 中跳过。
+        run: node --test tests/*.test.cjs
+
+      - name: 国保资料核对
+        run: node scripts/prepare-protection.mjs --check
+
+      - name: iOS 目录导出与 Git 一致
+        run: |
+          node ios/scripts/build-catalog.cjs
+          if ! git diff --quiet -- ios/Fanggu/Resources/catalog.json; then
+            echo "::error file=ios/Fanggu/Resources/catalog.json::目录导出已过期：本地运行 node ios/scripts/build-catalog.cjs 后提交"
+            git --no-pager diff --stat -- ios/Fanggu/Resources/catalog.json
+            exit 1
+          fi
+
+      - name: Python 测试
+        run: python -B -m unittest discover -s tests -p 'test_*.py'
+
+  ios:
+    name: iOS 构建与单元测试
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: 工具版本
+        run: |
+          xcodebuild -version
+          swift --version
+          node --version
+
+      - name: 安装 XcodeGen 与 xcbeautify
+        run: brew install xcodegen xcbeautify
+
+      - name: 生成 Xcode 工程
+        working-directory: ios
+        run: |
+          xcodegen generate
+          if ! git diff --quiet -- Fanggu.xcodeproj; then
+            echo "::warning file=ios/project.yml::xcodegen generate 的结果与提交的 Fanggu.xcodeproj 不一致，本地重新生成后提交（也可能只是 XcodeGen 版本差异）"
+            git --no-pager diff --stat -- Fanggu.xcodeproj
+          fi
+
+      - name: 原生地图几何与目录导出测试
+        # ios-map-layout 需要 Swift 工具链，在 Linux job 中会跳过。
+        run: node --test tests/ios-map-layout.test.cjs tests/ios-catalog.test.cjs
+
+      - name: 准备空图版目录
+        # Artwork 由 ios/scripts/sync-artwork.sh 从本地素材同步且被 Git 忽略；没有该目录时 Copy Bundle Resources 会失败。
+        run: mkdir -p ios/Fanggu/Resources/Artwork
+
+      - name: 创建独立模拟器
+        id: simulator
+        run: |
+          runtime=$(xcrun simctl list runtimes -j | jq -c '[.runtimes[] | select(.isAvailable and .platform == "iOS")] | sort_by(.version | split(".") | map(tonumber)) | last')
+          if [ -z "$runtime" ] || [ "$runtime" = "null" ]; then
+            echo "::error::没有可用的 iOS 模拟器运行时"
+            exit 1
+          fi
+          runtime_id=$(jq -r '.identifier' <<<"$runtime")
+          device_type=$(jq -r '[.supportedDeviceTypes[] | select(.productFamily == "iPhone")] as $phones
+            | (($phones | map(select(.name | test("^iPhone [0-9]+ Pro$"))) | sort_by(.name | capture("^iPhone (?<n>[0-9]+) Pro$").n | tonumber) | last) // ($phones | last))
+            | .identifier' <<<"$runtime")
+          udid=$(xcrun simctl create "Fanggu CI" "$device_type" "$runtime_id")
+          xcrun simctl boot "$udid"
+          echo "模拟器：$(jq -r '.name' <<<"$runtime") / $device_type / $udid"
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"
+
+      - name: 构建并运行 FangguTests
+        run: |
+          set -o pipefail
+          mkdir -p ios/build
+          xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu \
+            -destination "platform=iOS Simulator,id=${{ steps.simulator.outputs.udid }}" \
+            -derivedDataPath ios/build/DerivedData \
+            -resultBundlePath ios/build/FangguTests.xcresult \
+            -parallel-testing-enabled NO -only-testing:FangguTests \
+            CODE_SIGNING_ALLOWED=NO test \
+            | tee ios/build/unit-tests.log | xcbeautify --renderer github-actions
+
+      - name: 运行 FangguUITests
+        if: inputs.ui_tests
+        run: |
+          set -o pipefail
+          xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu \
+            -destination "platform=iOS Simulator,id=${{ steps.simulator.outputs.udid }}" \
+            -derivedDataPath ios/build/DerivedData \
+            -resultBundlePath ios/build/FangguUITests.xcresult \
+            -parallel-testing-enabled NO -only-testing:FangguUITests \
+            CODE_SIGNING_ALLOWED=NO test \
+            | tee ios/build/ui-tests.log | xcbeautify --renderer github-actions
+
+      - name: 上传测试结果
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ios-test-results
+          path: |
+            ios/build/*.xcresult
+            ios/build/*.log
+          if-no-files-found: ignore
+          retention-days: 7

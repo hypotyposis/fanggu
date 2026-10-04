@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -23,7 +24,7 @@ test('first-batch grottoes and stone/metal relics are all represented once', () 
   for (const unit of batch.units) assert.equal(SITES.filter(site => site.id === unit.id).length, 1, unit.name);
 });
 
-test('new entries are unvisited and have source-bound, transparent artwork', () => {
+test('new entries are unvisited and have source-bound, transparent artwork', requiresLocalAssets, () => {
   assert.equal(queue.count, queue.entries.length);
   for (const unit of batch.units.filter(unit => unit.added)) {
     const id = unit.id, site = SITES.find(site => site.id === id);

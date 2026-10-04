@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -9,7 +10,7 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const { SITES, PLACES, COLORED_PLATES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n' + read('colored-plates.js') + '\n({SITES, PLACES, COLORED_PLATES})');
 const batch = json('assets/research/henan-national-20261002-batch.json');
-test('Henan national ten have distinct protected scopes, source records and complete pending art', () => {
+test('Henan national ten have distinct protected scopes, source records and complete pending art', requiresLocalAssets, () => {
   assert.equal(batch.count, 10);
   assert.equal(new Set(batch.ids).size, 10);
   const queue = json('assets/color-research/queue.json');

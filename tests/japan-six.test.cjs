@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -37,7 +38,7 @@ test('six Japanese additions have unique IDs, subject dates and independent geog
   assert.equal(classified.find(site => site.id === 'jp_itsukushima').yearApprox, true);
 });
 
-test('each new Japanese plate has a licensed photo, source-bound originals and pending review', () => {
+test('each new Japanese plate has a licensed photo, source-bound originals and pending review', requiresLocalAssets, () => {
   assert.equal(queue.count, queue.entries.length);
   assert.equal(queue.count, SITES.length - queue.excluded.length);
   for (const id of ids) {
