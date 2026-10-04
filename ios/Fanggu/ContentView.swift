@@ -4,6 +4,8 @@ struct ContentView: View {
     @EnvironmentObject private var library: LibraryStore
     @StateObject private var undoPresentation = UndoPresentation()
     @State private var selectedTab = 0
+    @State private var explorePath: [Monument] = []
+    @State private var launchTargetApplied = false
     @State private var keyboardVisible = false
 
     var body: some View {
@@ -18,6 +20,7 @@ struct ContentView: View {
         .fangguAppearance()
         .environmentObject(undoPresentation)
         .tint(Palette.gold)
+        .onAppear(perform: openLaunchTarget)
         .overlay(alignment: .top) {
             if let error = library.error {
                 Text(error)
@@ -39,7 +42,7 @@ struct ContentView: View {
 
     private var tabs: some View {
         TabView(selection: $selectedTab) {
-            NavigationStack {
+            NavigationStack(path: $explorePath) {
                 tabRoot(ExploreView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
             }
@@ -63,6 +66,14 @@ struct ContentView: View {
             }
             .tabItem { Label("我的", systemImage: "seal") }.tag(3)
         }
+    }
+
+    /// UI tests may ask for a detail page directly; the catalog stays underneath, so 返回 still works.
+    private func openLaunchTarget() {
+        guard !launchTargetApplied else { return }
+        launchTargetApplied = true
+        guard let id = UITestLaunch.siteID, let site = library.monuments.first(where: { $0.id == id }) else { return }
+        explorePath = [site]
     }
 
     @ViewBuilder private func tabRoot<Content: View>(_ content: Content) -> some View {

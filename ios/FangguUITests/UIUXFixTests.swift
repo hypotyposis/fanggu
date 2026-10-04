@@ -1,12 +1,17 @@
 import XCTest
 
 final class UIUXFixTests: XCTestCase {
+    /// A single stable catalogue entry avoids the default wishlist order changing after a visit.
+    /// Detail and review tests deep-link to it; the search route itself is covered by
+    /// `FangguUITests.testTokyoCatalogFilterAliasAndDetailReturn`.
+    private let site = "jp_nezu_romon"
+
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
     func testMultiwordSearchAndIndependentClear() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         let search = app.textFields["搜索古迹、地点或时代"]
         XCTAssertTrue(search.waitForExistence(timeout: 10))
         search.tap(); search.typeText("山西 唐")
@@ -30,8 +35,8 @@ final class UIUXFixTests: XCTestCase {
 
     func testTodayUndoUnknownDateAndDirectStatusCorrection() {
         let app = XCUIApplication()
-        app.launch()
-        openFirstSite(in: app)
+        app.launchForTest(site: site)
+        XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 10))
         let menu = app.buttons["visit-status-menu"]
         if menu.exists {
             menu.tap(); app.buttons["改为未标记"].tap()
@@ -69,9 +74,10 @@ final class UIUXFixTests: XCTestCase {
 
     func testReviewResetAndClearCanBeUndone() {
         let app = XCUIApplication()
-        app.launch()
-        openFirstSite(in: app); openReview(in: app)
+        app.launchForTest(site: site, review: true)
+        app.waitForReviewEditor()
         let era = app.descendants(matching: .any)["radar-axis-eraRarity"].firstMatch
+        XCTAssertTrue(era.waitForExistence(timeout: 5))
         let start = era.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
         start.press(forDuration: 0.1, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -120)))
         XCTAssertEqual(era.value as? String, "A，卓越")
@@ -81,30 +87,30 @@ final class UIUXFixTests: XCTestCase {
         XCTAssertEqual(era.value as? String, "A，卓越")
 
         let field = app.textViews["review-text"]
-        for _ in 0..<8 where !field.isHittable { scrollSheet(in: app) }
+        app.reveal(field)
         field.tap()
         field.typeText("\nundo-includes-latest-text\n")
         let expectedText = field.value as? String
         XCTAssertTrue(expectedText?.contains("undo-includes-latest-text") == true)
         let clear = app.buttons["清除评价"]
-        for _ in 0..<8 where !clear.isHittable { scrollSheet(in: app) }
+        app.reveal(clear)
         clear.tap()
         XCTAssertEqual(field.value as? String, "")
         app.buttons["undo-change"].tap()
         XCTAssertEqual(field.value as? String, expectedText)
         XCTAssertEqual(era.value as? String, "A，卓越")
         app.buttons["完成"].tap()
-        app.terminate(); app.launch()
-        openFirstSite(in: app); openReview(in: app)
+        app.relaunch()
+        app.waitForReviewEditor()
         XCTAssertEqual(field.value as? String, expectedText)
         XCTAssertEqual(era.value as? String, "A，卓越")
     }
 
     func testMaximumAccessibilitySizeSupportsAllSixRatingsAndText() {
         let app = XCUIApplication()
-        app.launchArguments += ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
-        app.launch()
-        openFirstSite(in: app); openReview(in: app)
+        app.launchForTest(site: site, review: true,
+                          arguments: ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"])
+        app.waitForReviewEditor()
         let keys = ["eraRarity", "authenticity", "construction", "art", "scale", "setting"]
         let values = ["A · 卓越", "E · 较弱", "B · 突出", "C · 有看点", "D · 平常", "未评分"]
         XCTAssertTrue(app.descendants(matching: .any)["dimension-picker-eraRarity"].firstMatch.waitForExistence(timeout: 5))
@@ -112,7 +118,7 @@ final class UIUXFixTests: XCTestCase {
         capture(app, "accessible-rating-first-dimension")
         for (index, key) in keys.enumerated() {
             let picker = app.descendants(matching: .any)["dimension-picker-\(key)"].firstMatch
-            for _ in 0..<15 where !picker.isHittable { scrollSheet(in: app) }
+            app.reveal(picker, attempts: 15)
             XCTAssertTrue(picker.isHittable)
             XCTAssertGreaterThanOrEqual(picker.frame.height, 44)
             picker.tap()
@@ -120,7 +126,7 @@ final class UIUXFixTests: XCTestCase {
             XCTAssertEqual(picker.value as? String, values[index])
         }
         let field = app.textViews["review-text"]
-        for _ in 0..<12 where !field.isHittable { scrollSheet(in: app) }
+        app.reveal(field, attempts: 12)
         XCTAssertTrue(field.isHittable)
         capture(app, "accessible-rating-last-dimension-and-text")
         app.buttons["完成"].tap()
@@ -132,10 +138,10 @@ final class UIUXFixTests: XCTestCase {
 
     func testLargeCardReviewHasOneWorkingUndo() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         app.buttons["大图"].tap()
         let entry = app.buttons["写短评 / 打分"].firstMatch
-        for _ in 0..<8 where !entry.isHittable { app.swipeUp() }
+        app.reveal(entry)
         XCTAssertTrue(entry.isHittable)
         entry.tap()
         let era = app.descendants(matching: .any)["radar-axis-eraRarity"].firstMatch
@@ -148,29 +154,12 @@ final class UIUXFixTests: XCTestCase {
         XCTAssertEqual(era.value as? String, "A，卓越")
     }
 
-    private func openFirstSite(in app: XCUIApplication) {
-        let search = app.textFields["搜索古迹、地点或时代"]
-        XCTAssertTrue(search.waitForExistence(timeout: 10))
-        // A single stable catalogue entry avoids the default wishlist order changing after a visit.
-        search.tap(); search.typeText("Nezu\n")
-        let result = app.buttons.matching(NSPredicate(format: "label CONTAINS %@ AND label CONTAINS %@", "根津神社楼门", "细读")).firstMatch
-        for _ in 0..<12 where !result.isHittable { app.swipeUp() }
-        XCTAssertTrue(result.isHittable)
-        result.tap()
-        XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 5))
-    }
-
     private func openReview(in app: XCUIApplication) {
         let button = app.buttons["edit-review"]
-        for _ in 0..<30 where !button.isHittable { app.swipeUp() }
+        app.reveal(button, attempts: 30)
         XCTAssertTrue(button.isHittable)
         button.tap()
         XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
-    }
-
-    private func scrollSheet(in app: XCUIApplication) {
-        app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.78))
-            .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.3)))
     }
 
     private func capture(_ app: XCUIApplication, _ name: String) {

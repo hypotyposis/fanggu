@@ -43,10 +43,10 @@ App 图标使用用户提供的[鸱吻图标素材包](icon-concepts/chiwen/READ
 
 `Fanggu/Review.swift` 定义维度、档位、投影及防抖逻辑，`Fanggu/ReviewRadar.swift` 共用编辑与只读图形。`reviews[id].dimensions` 为维度键到整数的对象，未评分项省略，键为 `eraRarity`、`authenticity`、`construction`、`art`、`scale`、`setting`。旧 `rating` 字段继续保留，不自动换算；`text`、`updatedAt` 和到访记录规则不变。首次保存时将原文件升级为版本 4；读取损坏文件或保存失败时保留原数据。
 
-构建与数据回归使用 `FangguTests/ReviewTests.swift`；交互回归使用 `FangguUITests` 中的 `testSixDimensionReleaseAutosavesAndResets`、`testSixDimensionLowGradesStayIndividuallyDraggable` 与 `testReviewShortTextAutosavesAndClearIsImmediate`，覆盖松手后直接重启、即时重置、短评自动保存、关闭时补写、空白滚动和密集圆点。在仓库根目录运行以下命令，先创建独立模拟器并将名称换成自己的测试设备，避免修改真实个人记录：
+构建与数据回归使用 `FangguTests/ReviewTests.swift`；交互回归使用 `FangguUITests` 中的 `testSixDimensionReleaseAutosavesAndResets`、`testSixDimensionLowGradesStayIndividuallyDraggable` 与 `testReviewShortTextAutosavesAndClearIsImmediate`，覆盖松手后直接重启、即时重置、短评自动保存、关闭时补写、空白滚动和密集圆点。这些用例通过测试专用启动参数直达评价页，重启验证仍真实杀进程。先按 [测试运行说明](../docs/testing.md) 创建独立模拟器并 `build-for-testing`，再在仓库根目录挑选用例运行：
 
 ```bash
-xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=Fanggu Radar Review' -parallel-testing-enabled NO -only-testing:FangguTests -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets -only-testing:FangguUITests/FangguUITests/testSixDimensionLowGradesStayIndividuallyDraggable -only-testing:FangguUITests/FangguUITests/testReviewShortTextAutosavesAndClearIsImmediate test
+xcodebuild test-without-building -xctestrun "$(ls ios/build/DerivedData/Build/Products/Fanggu_iphonesimulator*.xctestrun | head -1)" -destination 'platform=iOS Simulator,name=你的独立测试设备' -only-testing:FangguTests -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets -only-testing:FangguUITests/FangguUITests/testSixDimensionLowGradesStayIndividuallyDraggable -only-testing:FangguUITests/FangguUITests/testReviewShortTextAutosavesAndClearIsImmediate
 ```
 
 首版包含原生图鉴、搜索与筛选、古迹详情、仅显示已到访地点的离线足迹地图、按年代浏览、拖动打卡、心愿、日期与笔记、私人评分与短评、备份迁移。地图、图鉴与图片可离线浏览。图版与文保来源在详情页以参考链接提供。私人记录通过备份文件迁移，没有在线同步。App Store 分发还需要开发者账号、签名和应用商店素材。
@@ -59,10 +59,10 @@ xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu -destination 'platform=i
 
 撤销按字段恢复：到访恢复原始记录（首次登记可恢复为没有个人覆盖记录），不改变评价；六项重置的撤销只恢复六维，保留重置后写入的短评；清除评价可恢复六维、短评和旧五星，再次编辑该评价则使这次清空的撤销失效。恢复评价时更新时间仍记录本次修改。导入和旧记录关联会结束先前的撤销，避免恢复旧快照覆盖新数据。撤销写入失败时保留当前记录、撤销入口与错误，可继续重试。
 
-`FangguTests/UXRegressionTests.swift` 覆盖关键词词序、空白、别名、状态纠错、首次记录撤销、未知日期、评价恢复与失败重试；`FangguUITests/UIUXFixTests.swift` 覆盖搜索独立清空、今日／补记到访、直接改为未标记、评价撤销及最大辅助字号逐项评分。使用独立模拟器运行：
+`FangguTests/UXRegressionTests.swift` 覆盖关键词词序、空白、别名、状态纠错、首次记录撤销、未知日期、评价恢复与失败重试；`FangguUITests/UIUXFixTests.swift` 覆盖搜索独立清空、今日／补记到访、直接改为未标记、评价撤销及最大辅助字号逐项评分。编译后在独立模拟器上运行，两个 UI 测试类可按 [测试运行说明](../docs/testing.md#用例按类并行) 并行：
 
 ```bash
-xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=你的独立测试设备' -parallel-testing-enabled NO -only-testing:FangguTests -only-testing:FangguUITests/UIUXFixTests -only-testing:FangguUITests/FangguUITests/testArrivalOnlySavesAfterReleasingAtTheEnd -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets test
+xcodebuild test-without-building -xctestrun "$(ls ios/build/DerivedData/Build/Products/Fanggu_iphonesimulator*.xctestrun | head -1)" -destination 'platform=iOS Simulator,name=你的独立测试设备' -parallel-testing-enabled YES -parallel-testing-worker-count 2 -only-testing:FangguTests -only-testing:FangguUITests/UIUXFixTests -only-testing:FangguUITests/FangguUITests/testArrivalOnlySavesAfterReleasingAtTheEnd -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets
 ```
 
 ## 触觉反馈

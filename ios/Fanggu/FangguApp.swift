@@ -5,6 +5,7 @@ import SwiftUI
     @StateObject private var library = LibraryStore()
 
     init() {
+        UITestLaunch.applyAtLaunch()
         for name in ["MaShanZheng-Regular", "NotoSerifSC-wght"] {
             if let url = Bundle.main.url(forResource: name, withExtension: "ttf") {
                 CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)

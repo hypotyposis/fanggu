@@ -1,9 +1,13 @@
 import XCTest
 
 final class FangguUITests: XCTestCase {
+    /// The catalogue's first wishlist entry on a fresh simulator. Review and arrival tests deep-link
+    /// to it instead of walking there; catalog navigation keeps its own tests below.
+    private let reviewSite = "liyeque"
+
     func testTabAndAppearanceSwitchingLatency() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         func switchTab(_ title: String, expected: String) {
             let start = ProcessInfo.processInfo.systemUptime
             app.buttons[title].tap()
@@ -32,7 +36,7 @@ final class FangguUITests: XCTestCase {
 
     func testTokyoCatalogFilterAliasAndDetailReturn() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         app.buttons["筛选"].tap()
         app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "全部国家")).firstMatch.tap()
         app.buttons["日本"].tap()
@@ -58,7 +62,7 @@ final class FangguUITests: XCTestCase {
 
     func testAppearancePersistsAndCoversNativeScreens() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         app.buttons["我的"].tap()
         let appearance = app.segmentedControls["appearance-picker"]
         XCTAssertTrue(appearance.waitForExistence(timeout: 10))
@@ -66,8 +70,7 @@ final class FangguUITests: XCTestCase {
         XCTAssertTrue(appearance.buttons["亮色"].isSelected)
         capture(app, "light-library")
 
-        app.terminate()
-        app.launch()
+        app.relaunch()
         app.buttons["我的"].tap()
         XCTAssertTrue(appearance.waitForExistence(timeout: 10))
         XCTAssertTrue(appearance.buttons["亮色"].isSelected, "Appearance must survive relaunch")
@@ -91,13 +94,13 @@ final class FangguUITests: XCTestCase {
         openFirstCatalogSite(in: app)
         capture(app, "light-detail")
         let visit = app.buttons["补记到访"].exists ? app.buttons["补记到访"] : app.buttons["编辑到访记录"]
-        for _ in 0..<8 where !visit.isHittable { app.swipeDown() }
+        app.reveal(visit, up: false)
         visit.tap()
         XCTAssertTrue(app.buttons["取消"].waitForExistence(timeout: 5))
         capture(app, "light-visit-editor")
         app.buttons["取消"].tap()
         let review = app.buttons["edit-review"]
-        for _ in 0..<8 where !review.isHittable { app.swipeUp() }
+        app.reveal(review)
         review.tap()
         XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
         capture(app, "light-review-editor")
@@ -113,7 +116,7 @@ final class FangguUITests: XCTestCase {
 
     func testNativeSectionsStayAvailable() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         app.buttons["足迹"].tap()
         XCTAssertTrue(app.staticTexts["我的足迹"].waitForExistence(timeout: 10))
         capture(app, "map")
@@ -122,7 +125,7 @@ final class FangguUITests: XCTestCase {
         capture(app, "timeline")
         app.buttons["我的"].tap()
         XCTAssertTrue(app.staticTexts["亲见 · 所愿 · 私人记录"].waitForExistence(timeout: 10))
-        for _ in 0..<40 where !app.buttons["导入备份"].isHittable { app.swipeUp(velocity: .fast) }
+        app.reveal(app.buttons["导入备份"], attempts: 40)
         XCTAssertTrue(app.buttons["导入备份"].exists)
         XCTAssertFalse(app.buttons["导入网页或 App 备份"].exists)
         capture(app, "library")
@@ -130,9 +133,8 @@ final class FangguUITests: XCTestCase {
 
     func testSixDimensionReleaseAutosavesAndResets() {
         let app = XCUIApplication()
-        app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.launchForTest(site: reviewSite, review: true)
+        app.waitForReviewEditor()
         // This test runs on a disposable simulator, with all changes made through the UI.
         let reset = app.buttons["reset-dimensions"]
         if reset.isEnabled { reset.tap() }
@@ -156,9 +158,8 @@ final class FangguUITests: XCTestCase {
         sideStart.press(forDuration: 0.1, thenDragTo: sideStart.withOffset(CGVector(dx: 70, dy: 0)))
         XCTAssertEqual(era.value as? String, "A，卓越", "Sideways movement must stay on the selected axis")
         // Terminate while the editor is still open: release itself must have saved.
-        app.terminate(); app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.relaunch()
+        app.waitForReviewEditor()
         XCTAssertEqual(era.value as? String, "A，卓越", "Release must persist without closing or tapping Save")
         app.buttons["reset-dimensions"].tap()
 
@@ -178,15 +179,13 @@ final class FangguUITests: XCTestCase {
         capture(app, "six-dimension-profile")
         app.buttons["完成"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["radar-summary-eraRarity"].firstMatch.waitForExistence(timeout: 5))
-        app.terminate(); app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.relaunch()
+        app.waitForReviewEditor()
         for (index, key) in axes.enumerated() { XCTAssertEqual(axis(key).value as? String, expected[index]) }
 
         app.buttons["reset-dimensions"].tap()
-        app.terminate(); app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.relaunch()
+        app.waitForReviewEditor()
         for key in axes { XCTAssertEqual(axis(key).value as? String, "—，未评分") }
         let beforeScroll = era.frame.minY
         let center = era.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
@@ -199,15 +198,9 @@ final class FangguUITests: XCTestCase {
 
     func testSixDimensionLowGradesStayIndividuallyDraggable() {
         let app = XCUIApplication()
-        app.launch()
-        app.buttons["我的"].tap()
-        let appearance = app.segmentedControls["appearance-picker"]
-        XCTAssertTrue(appearance.waitForExistence(timeout: 5))
-        for _ in 0..<4 where !appearance.isHittable { app.swipeUp() }
-        appearance.buttons["深色"].tap()
-        app.buttons["图鉴"].tap()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        // Dark appearance comes from the defaults argument domain, so no walk through 我的 is needed.
+        app.launchForTest(site: reviewSite, review: true, arguments: ["-fanggu.appearance", "dark"])
+        app.waitForReviewEditor()
         if app.buttons["reset-dimensions"].isEnabled { app.buttons["reset-dimensions"].tap() }
         let axes = ["eraRarity", "authenticity", "construction", "art", "scale", "setting"]
         func handle(_ key: String) -> XCUIElement { app.descendants(matching: .any)["radar-axis-\(key)"].firstMatch }
@@ -233,11 +226,10 @@ final class FangguUITests: XCTestCase {
 
     func testReviewShortTextAutosavesAndClearIsImmediate() {
         let app = XCUIApplication()
-        app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.launchForTest(site: reviewSite, review: true)
+        app.waitForReviewEditor()
         let field = app.textViews["review-text"]
-        for _ in 0..<6 where !field.isHittable { scrollReviewUp(in: app) }
+        app.reveal(field, attempts: 6)
         XCTAssertTrue(field.isHittable)
         field.tap()
         if let existing = field.value as? String, !existing.isEmpty {
@@ -248,11 +240,10 @@ final class FangguUITests: XCTestCase {
         let saved = XCTNSPredicateExpectation(predicate: NSPredicate(format: "label == %@", "松手即保存，短评自动保存。"), object: status)
         XCTAssertEqual(XCTWaiter.wait(for: [saved], timeout: 5), .completed)
         // Do not use Complete: the text must survive termination by itself.
-        app.terminate(); app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.relaunch()
+        app.waitForReviewEditor()
         XCTAssertEqual(field.value as? String, "auto-review")
-        for _ in 0..<6 where !field.isHittable { scrollReviewUp(in: app) }
+        app.reveal(field, attempts: 6)
         field.tap(); field.typeText("-extra")
         let editedText = field.value as? String
         XCTAssertTrue(editedText?.contains("-extra") == true)
@@ -260,11 +251,10 @@ final class FangguUITests: XCTestCase {
         openReview(in: app)
         XCTAssertEqual(field.value as? String, editedText, "Closing must flush any pending text debounce")
         let clear = app.buttons["清除评价"]
-        for _ in 0..<6 where !clear.isHittable { scrollReviewUp(in: app) }
+        app.reveal(clear, attempts: 6)
         clear.tap()
-        app.terminate(); app.launch()
-        openFirstCatalogSite(in: app)
-        openReview(in: app)
+        app.relaunch()
+        app.waitForReviewEditor()
         XCTAssertEqual(field.value as? String, "")
         let era = app.descendants(matching: .any)["radar-axis-eraRarity"].firstMatch
         XCTAssertEqual(era.value as? String, "—，未评分")
@@ -274,7 +264,7 @@ final class FangguUITests: XCTestCase {
 
     func testCatalogOpensNativeDetail() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         XCTAssertTrue(app.buttons["图鉴"].waitForExistence(timeout: 10))
         openFirstCatalogSite(in: app)
         XCTAssertTrue(app.staticTexts["我的访古记"].waitForExistence(timeout: 10))
@@ -285,29 +275,29 @@ final class FangguUITests: XCTestCase {
 
     func testLargeCardShowsArrivalSlider() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         let displayButton = app.buttons["大图"]
         XCTAssertTrue(displayButton.waitForExistence(timeout: 10))
         displayButton.tap()
         let slider = app.descendants(matching: .any)["到访打卡"].firstMatch
-        for _ in 0..<8 where !slider.isHittable { app.swipeUp() }
+        app.reveal(slider)
         XCTAssertTrue(slider.isHittable)
     }
 
     func testArrivalOnlySavesAfterReleasingAtTheEnd() {
         let app = XCUIApplication()
-        app.launch()
-        openFirstCatalogSite(in: app)
+        app.launchForTest(site: reviewSite)
+        XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 10))
 
         let statusMenu = app.buttons["visit-status-menu"]
         if statusMenu.exists {
-            for _ in 0..<8 where !statusMenu.isHittable { app.swipeDown() }
+            app.reveal(statusMenu, up: false)
             statusMenu.tap()
             app.buttons["改为未标记"].tap()
             app.buttons["关闭提示"].tap()
         }
         let slider = app.descendants(matching: .any)["到访打卡"].firstMatch
-        for _ in 0..<8 where !slider.isHittable { app.swipeUp() }
+        app.reveal(slider)
         XCTAssertTrue(slider.isHittable)
         let artwork = app.descendants(matching: .any)["detail-artwork"].firstMatch
         XCTAssertTrue(artwork.exists)
@@ -333,7 +323,7 @@ final class FangguUITests: XCTestCase {
 
     func testMapMarkersAndSearchOpenVisitedSites() {
         let app = XCUIApplication()
-        app.launch()
+        app.launchForTest()
         app.buttons["足迹"].tap()
         let map = app.descendants(matching: .any)["visited-map"].firstMatch
         XCTAssertTrue(map.waitForExistence(timeout: 10))
@@ -354,13 +344,13 @@ final class FangguUITests: XCTestCase {
         app.buttons["关闭"].tap()
 
         let search = app.textFields["搜索地点、省份或古迹"]
-        for _ in 0..<4 where !search.isHittable { app.swipeUp() }
+        app.reveal(search, attempts: 4)
         XCTAssertTrue(search.isHittable)
         search.tap()
         search.typeText("no-such-place")
         XCTAssertTrue(app.staticTexts["没有匹配的到访地点"].waitForExistence(timeout: 5))
         search.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: 13))
-        app.swipeUp()
+        app.dragPage()
         let rows = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "map-place-"))
         guard let place = rows.allElementsBoundByIndex.first(where: { $0.isHittable }) else {
             XCTFail("At least one visited place must be reachable after dismissing search")
@@ -379,25 +369,17 @@ final class FangguUITests: XCTestCase {
                 visible.tap()
                 return
             }
-            app.swipeUp()
+            app.dragPage()
         }
         XCTFail("At least one catalog site must be reachable")
     }
 
     private func openReview(in app: XCUIApplication) {
         let button = app.buttons["edit-review"]
-        for _ in 0..<12 where !button.isHittable { app.swipeUp() }
+        app.reveal(button, attempts: 12)
         XCTAssertTrue(button.isHittable)
         button.tap()
         XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
-    }
-
-    private func scrollReviewUp(in app: XCUIApplication) {
-        // Use the sheet's empty margin so the gesture cannot grab a radar vertex
-        // or scroll inside the text editor instead of its containing page.
-        let from = app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.78))
-        let to = app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.32))
-        from.press(forDuration: 0.05, thenDragTo: to)
     }
 
     private func capture(_ app: XCUIApplication, _ name: String) {

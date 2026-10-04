@@ -190,7 +190,7 @@ git diff --check
 | 改动 | 重点检查 |
 | --- | --- |
 | 目录、年代、地域、分类、来源和图版路径 | Node 全套；`ios-catalog.test.cjs` 核对导出与源数据；`ios-map-layout.test.cjs` 运行真实 Swift 地图几何 |
-| 原生个人记录、备份和评价 | `FangguTests`；根据行为运行 `FangguUITests`，命令见 [iOS 开发说明](../ios/README.md#六维评价) |
+| 原生个人记录、备份和评价 | `FangguTests`；根据行为运行 `FangguUITests`，编译与运行分开、按类并行和测试专用启动参数见 [测试运行说明](testing.md)，用例选择见 [iOS 开发说明](../ios/README.md#六维评价) |
 | 原生界面、手势和导航 | 独立模拟器检查相应页面；触觉和实际触摸体验由真机验收 |
 | 审图工具、图片或链接 | 真实浏览器检查受影响工具；模拟 DOM 不能证明布局和图片解码正常 |
 | 文档 | 本地链接、路径、命令描述与 `git diff --check` |
