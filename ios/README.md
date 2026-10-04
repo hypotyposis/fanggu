@@ -34,7 +34,7 @@ App 提供简体中文、English 与日本語，跟随 iOS 为访古解析的语
 
 专题名录的名称与说明由 `curations-en.json`、`curations-ja.json` 提供，定位与相册权限说明在 `InfoPlist.xcstrings`。较大的衬线字号按标题样式随动态字体缩放，避免英文单词在最大辅助字号下被拆开；日文明朝体在根视图统一加了行距；底栏与打卡滑块的文字在辅助字号下不再继续放大，长按底栏可看放大标签。
 
-既有 UI 测试按中文标签操作，`XCUIApplication.isolated()` 在生成独立记录作用域的同时固定为简体中文启动，不受模拟器语言影响；Xcode 方案的测试动作也固定为简体中文，单元测试可直接断言中文文案，从 Xcode 运行 App 时仍跟随模拟器语言。`LocalizationUITests` 以 `isolated(language:locale:)` 分别用英文、日文启动，检查主要页面没有遗留中文或简体字。
+既有 UI 测试按中文标签操作，`XCUIApplication.isolated()` 在生成独立记录作用域的同时固定为简体中文启动，不受模拟器语言影响，`launchForTest` 的关动画与深链参数追加在语言参数之后；Xcode 方案的测试动作也固定为简体中文，单元测试可直接断言中文文案，从 Xcode 运行 App 时仍跟随模拟器语言。`LocalizationUITests` 以 `isolated(language:locale:)` 分别用英文、日文启动，检查主要页面没有遗留中文或简体字。
 
 ## 专题名录与收集进度
 

@@ -9,7 +9,7 @@ final class LocalizationUITests: XCTestCase {
 
     func testEnglishInterfaceShowsNoChineseOnMainScreens() {
         let app = XCUIApplication.isolated(language: "en", locale: "en_US")
-        app.launch()
+        app.launchForTest()
         XCTAssertTrue(app.staticTexts["Monument Catalog"].waitForExistence(timeout: 10))
         let search = app.textFields["Search monuments, places or periods"]
         XCTAssertTrue(search.exists)
@@ -37,7 +37,7 @@ final class LocalizationUITests: XCTestCase {
 
     func testJapaneseInterfaceUsesJapaneseLabels() {
         let app = XCUIApplication.isolated(language: "ja", locale: "ja_JP")
-        app.launch()
+        app.launchForTest()
         XCTAssertTrue(app.staticTexts["古跡図鑑"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.textFields["古跡・場所・時代を検索"].exists)
         let count = app.staticTexts["catalog-result-count"]
