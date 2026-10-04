@@ -83,7 +83,7 @@ struct ReviewRadar: View {
                         Menu {
                             Button("未评分") { selectGrade(nil, for: axis) }
                             ForEach(1...5, id: \.self) { grade in
-                                Button("\(ReviewDimension.grade(grade)) · \(ReviewDimension.description(grade))") {
+                                Button(gradeLabel(grade)) {
                                     selectGrade(grade, for: axis)
                                 }
                             }
@@ -116,8 +116,12 @@ struct ReviewRadar: View {
     }
 
     private func gradeTitle(_ axis: ReviewDimension) -> String {
-        guard let grade = scores[axis] else { return "未评分" }
-        return "\(ReviewDimension.grade(grade)) · \(ReviewDimension.description(grade))"
+        guard let grade = scores[axis] else { return String(localized: "未评分") }
+        return gradeLabel(grade)
+    }
+
+    private func gradeLabel(_ grade: Int) -> String {
+        "\(ReviewDimension.grade(grade)) · \(ReviewDimension.description(grade))"
     }
 
     private func selectGrade(_ grade: Int?, for axis: ReviewDimension) {
@@ -262,11 +266,11 @@ struct ReviewRadar: View {
     private var readout: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack {
-                Text(selected?.title ?? "从任意圆点开始")
+                Text(selected?.title ?? String(localized: "从任意圆点开始"))
                     .font(FangguFont.serif(17)).foregroundStyle(Palette.paper)
                 Spacer()
                 if let axis = selected {
-                    Text("\(ReviewDimension.grade(displayGrade(axis)))  \(ReviewDimension.description(displayGrade(axis)))")
+                    Text(verbatim: "\(ReviewDimension.grade(displayGrade(axis)))  \(ReviewDimension.description(displayGrade(axis)))")
                         .font(FangguFont.serif(14)).foregroundStyle(Palette.gold)
                         .accessibilityIdentifier("radar-active-grade")
                     Button { clear(axis) } label: {
@@ -277,7 +281,7 @@ struct ReviewRadar: View {
                     .accessibilityLabel("清空\(axis.title)")
                 }
             }
-            Text(selected?.hint ?? "空心圆点还未评分。先拉一项，慢慢画出你的印象。")
+            Text(selected?.hint ?? String(localized: "空心圆点还未评分。先拉一项，慢慢画出你的印象。"))
                 .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(4)
         }
         .frame(maxWidth: .infinity, alignment: .leading)

@@ -1,6 +1,7 @@
 name: Fanggu
 options:
   bundleIdPrefix: com.fanggu
+  developmentLanguage: zh-Hans
   deploymentTarget:
     iOS: "18.0"
 targets:
@@ -26,6 +27,8 @@ targets:
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.travel
         SUPPORTS_MACCATALYST: NO
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
     scheme:
       testTargets:
         - FangguTests

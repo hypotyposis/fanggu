@@ -7,9 +7,9 @@ enum AppAppearance: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var title: String {
         switch self {
-        case .system: "跟随系统"
-        case .light: "亮色"
-        case .dark: "深色"
+        case .system: String(localized: "跟随系统")
+        case .light: String(localized: "亮色")
+        case .dark: String(localized: "深色")
         }
     }
     var colorScheme: ColorScheme? {
@@ -38,8 +38,9 @@ struct FangguSeal: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            Text("访古")
-            Text("之印")
+            // The seal is part of the brand mark and keeps its Chinese characters in every language.
+            Text(verbatim: "访古")
+            Text(verbatim: "之印")
         }
         .font(.custom("MaShanZheng-Regular", fixedSize: size * 0.25))
         .lineSpacing(-2)
@@ -54,9 +55,9 @@ struct FangguSeal: View {
 
 struct FangguSectionTitle: View {
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    let eyebrow: String
-    let title: String
-    let subtitle: String
+    let eyebrow: LocalizedStringKey
+    let title: LocalizedStringKey
+    let subtitle: LocalizedStringKey
 
     var body: some View {
         VStack(alignment: .leading, spacing: 7) {
@@ -125,7 +126,7 @@ struct FangguOutlineButton: ButtonStyle {
 }
 
 struct FangguField: View {
-    let placeholder: String
+    let placeholder: LocalizedStringKey
     @Binding var text: String
     var showsClearButton = false
 

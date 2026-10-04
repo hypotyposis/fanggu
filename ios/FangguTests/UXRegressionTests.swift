@@ -3,7 +3,7 @@ import XCTest
 
 final class UXRegressionTests: XCTestCase {
     @MainActor func testSearchMatchesEveryKeywordRegardlessOfOrderOrWhitespace() throws {
-        let store = LibraryStore(fileURL: temporaryFile())
+        let store = LibraryStore(fileURL: temporaryFile(), language: .simplifiedChinese)
         func matches(_ query: String) -> Set<String> {
             Set(store.monuments.filter { CatalogSearch.matches($0, terms: CatalogSearch.terms(query)) }.map(\.id))
         }

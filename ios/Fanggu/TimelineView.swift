@@ -16,15 +16,16 @@ struct TimelineView: View {
     private var currentGroup: TimelineCluster? { groups.first { $0.id == selectedCluster } }
     private var selected: [Monument] { currentGroup?.sites ?? catalog.sites(lane: lane, period: period) }
     private var visitedCount: Int { selected.filter { library.record(for: $0).status == .visited }.count }
-    private var periodName: String { catalog.periods.first { $0.0 == period }?.1 ?? "全部时期" }
+    private var periodName: String { catalog.periods.first { $0.0 == period }?.1 ?? String(localized: "全部时期") }
     private var range: ClosedRange<Int>? {
         guard let first = selected.first, let last = selected.last else { return nil }
         if currentGroup != nil || period == "all" { return first.year...last.year }
         return (selected.map(\.dynastyStart).min() ?? first.year)...(selected.map(\.dynastyEnd).max() ?? last.year)
     }
     private var rangeText: String {
-        guard let range else { return "暂无古迹" }
-        return range.lowerBound == range.upperBound ? "\(range.lowerBound) 年" : "\(range.lowerBound)–\(range.upperBound) 年"
+        guard let range else { return String(localized: "暂无古迹") }
+        return range.lowerBound == range.upperBound ? String(localized: "\(range.lowerBound) 年")
+            : String(localized: "\(range.lowerBound)–\(range.upperBound) 年")
     }
     private var focusYear: Int {
         // Center the first actual monument in the chosen era, not an empty interval.
@@ -79,10 +80,10 @@ struct TimelineView: View {
                     .onChange(of: lane) { _, _ in proxy.scrollTo(period, anchor: .center) }
                 }
                 VStack(alignment: .leading, spacing: 6) {
-                    Text("\(TimelineCatalog.tracks[lane]) · \(currentGroup == nil ? regionalTitle(periodName) : rangeText)")
+                    Text(verbatim: "\(TimelineCatalog.tracks[lane]) · \(currentGroup == nil ? regionalTitle(periodName) : rangeText)")
                         .font(FangguFont.serif(19)).foregroundStyle(Palette.paper)
                         .accessibilityIdentifier("timeline-selection-title")
-                    Text("\(currentGroup == nil ? rangeText : Array(Set(selected.map(\.dynastyName))).sorted().joined(separator: "、")) · 已到访 \(visitedCount) / \(selected.count) 处")
+                    Text("\(currentGroup == nil ? rangeText : Array(Set(selected.map(\.dynastyName))).sorted().joined(separator: AppLanguage.current.listSeparator)) · 已到访 \(visitedCount) / \(selected.count) 处")
                         .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
                         .accessibilityIdentifier("timeline-selection-summary")
                 }
@@ -209,7 +210,7 @@ struct TimelineView: View {
         legend("circle.lefthalf.filled", "部分到访")
         legend("circle", "尚未到访")
     }
-    private func legend(_ symbol: String, _ title: String) -> some View {
+    private func legend(_ symbol: String, _ title: LocalizedStringKey) -> some View {
         Label(title, systemImage: symbol).font(FangguFont.serif(11)).foregroundStyle(Palette.paper2)
     }
 }
@@ -224,7 +225,7 @@ private struct TimelineMarker: View {
             Image(systemName: visited == 0 ? "circle" : visited == total ? "circle.fill" : "circle.lefthalf.filled")
                 .font(.system(size: 30)).foregroundStyle(Palette.gold)
             if total > 1 {
-                Text("\(total)").font(FangguFont.mono(11))
+                Text(verbatim: "\(total)").font(FangguFont.mono(11))
                     .foregroundStyle(visited == total ? Palette.ink : Palette.paper)
                     .padding(.horizontal, 3).background(visited == total ? Palette.gold : Palette.ink, in: Capsule())
             }

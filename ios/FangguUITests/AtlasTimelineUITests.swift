@@ -4,7 +4,7 @@ final class AtlasTimelineUITests: XCTestCase {
     override func setUpWithError() throws { continueAfterFailure = false }
 
     func testEraSelectionLocatesNodesAndKeepsSelectionAfterDetail() {
-        let app = XCUIApplication(); app.launch()
+        let app = XCUIApplication.fanggu(); app.launch()
         app.buttons["年表"].tap()
         let menu = app.buttons["timeline-period-menu"]
         XCTAssertTrue(menu.waitForExistence(timeout: 10)); menu.tap()
@@ -38,7 +38,7 @@ final class AtlasTimelineUITests: XCTestCase {
     }
 
     func testAllRegionsAndCrossRegionEraAreReachable() {
-        let app = XCUIApplication(); app.launch(); app.buttons["年表"].tap()
+        let app = XCUIApplication.fanggu(); app.launch(); app.buttons["年表"].tap()
         let region = app.buttons["timeline-region-menu"]
         XCTAssertTrue(region.waitForExistence(timeout: 10))
         for (index, title) in [(2, "日本"), (3, "东南亚"), (4, "朝鲜半岛"), (1, "中国南方"), (0, "中国北方")] {
@@ -56,7 +56,7 @@ final class AtlasTimelineUITests: XCTestCase {
     }
 
     func testMapDetailStatusCorrectionHasOneWorkingUndo() {
-        let app = XCUIApplication(); app.launch(); app.buttons["足迹"].tap()
+        let app = XCUIApplication.fanggu(); app.launch(); app.buttons["足迹"].tap()
         let marker = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "map-marker-")).firstMatch
         XCTAssertTrue(marker.waitForExistence(timeout: 10)); marker.tap()
         let site = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "细读")).firstMatch

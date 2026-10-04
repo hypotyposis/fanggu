@@ -4,6 +4,7 @@ import UniformTypeIdentifiers
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.openURL) private var openURL
     @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
     @State private var importing = false
     @State private var exporting = false
@@ -48,6 +49,8 @@ struct MyLibraryView: View {
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(5)
                 }
                 FangguRule()
+                languageSection
+                FangguRule()
                 sectionTitle("已到访")
                 if visited.isEmpty { empty("还没有到访记录") }
                 ForEach(visited) { site in siteRow(site) }
@@ -82,21 +85,42 @@ struct MyLibraryView: View {
                 let access = url.startAccessingSecurityScopedResource()
                 defer { if access { url.stopAccessingSecurityScopedResource() } }
                 try library.importBackup(Data(contentsOf: url))
-                message = "备份已导入"
+                message = String(localized: "备份已导入")
                 Haptics.success()
             } catch {
-                if !Self.isCancellation(error) { message = "导入失败：\(error.localizedDescription)"; Haptics.error() }
+                if !Self.isCancellation(error) { message = String(localized: "导入失败：\(error.localizedDescription)"); Haptics.error() }
             }
         }
-        .fileExporter(isPresented: $exporting, document: exportDocument, contentType: .json, defaultFilename: "访古备份") { result in
+        .fileExporter(isPresented: $exporting, document: exportDocument, contentType: .json, defaultFilename: String(localized: "访古备份")) { result in
             if case .failure(let error) = result, !Self.isCancellation(error) {
-                message = "导出失败：\(error.localizedDescription)"
+                message = String(localized: "导出失败：\(error.localizedDescription)")
                 Haptics.error()
             }
         }
     }
 
-    private func count(_ title: String, _ number: Int) -> some View {
+    private var languageSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            sectionTitle("语言")
+            Button {
+                if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
+            } label: {
+                HStack {
+                    Text(verbatim: AppLanguage.current.displayName)
+                    Spacer()
+                    Text("在系统设置中更改")
+                    Image(systemName: "arrow.up.forward")
+                }
+            }
+            .buttonStyle(FangguOutlineButton())
+            .accessibilityHint("打开系统设置，为访古选择语言")
+            .accessibilityIdentifier("language-settings")
+            Text("访古跟随系统语言，支持简体中文、English 与日本語。可在系统设置中为访古单独选择语言。")
+                .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(5)
+        }
+    }
+
+    private func count(_ title: LocalizedStringKey, _ number: Int) -> some View {
         Group {
             if dynamicTypeSize.isAccessibilitySize {
                 HStack {
@@ -125,11 +149,11 @@ struct MyLibraryView: View {
         .buttonStyle(.plain)
     }
 
-    private func sectionTitle(_ text: String) -> some View {
+    private func sectionTitle(_ text: LocalizedStringKey) -> some View {
         Text(text).font(FangguFont.serif(22)).foregroundStyle(Palette.paper)
     }
 
-    private func empty(_ text: String) -> some View {
+    private func empty(_ text: LocalizedStringKey) -> some View {
         Text(text).font(FangguFont.serif(13)).foregroundStyle(Palette.paper3)
             .frame(maxWidth: .infinity, minHeight: 100)
             .background(Palette.ink2)
@@ -138,7 +162,7 @@ struct MyLibraryView: View {
 
     private func prepareExport() {
         do { exportDocument = try library.backup(); exporting = true }
-        catch { message = "导出失败：\(error.localizedDescription)"; Haptics.error() }
+        catch { message = String(localized: "导出失败：\(error.localizedDescription)"); Haptics.error() }
     }
 
     private static func isCancellation(_ error: Error) -> Bool {
@@ -158,7 +182,7 @@ private struct LegacyLinkRow: View {
             Text(item.place).font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
             Picker("关联图版", selection: $target) {
                 Text("选择古迹").tag("")
-                ForEach(library.monuments) { site in Text("\(site.name) · \(site.place)").tag(site.id) }
+                ForEach(library.monuments) { site in Text(verbatim: "\(site.name) · \(site.place)").tag(site.id) }
             }
             Button("关联") {
                 if let site = library.monuments.first(where: { $0.id == target }) {

@@ -10,8 +10,9 @@ import Foundation
     private let fileURL: URL
     private var loadFailed = false
 
-    init(fileURL suppliedURL: URL? = nil) {
-        let url = Bundle.main.url(forResource: "catalog", withExtension: "json")!
+    init(fileURL suppliedURL: URL? = nil, language: AppLanguage = .current) {
+        let url = Bundle.main.url(forResource: language.catalogResource, withExtension: "json")
+            ?? Bundle.main.url(forResource: "catalog", withExtension: "json")!
         monuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
         timeline = TimelineCatalog(monuments: monuments)
         ids = Set(monuments.map(\.id))
@@ -26,7 +27,7 @@ import Foundation
             }
         } catch {
             loadFailed = true
-            self.error = "已有记录无法读取，原文件已保留。请导入有效备份恢复。"
+            self.error = String(localized: "已有记录无法读取，原文件已保留。请导入有效备份恢复。")
         }
     }
 
@@ -82,7 +83,8 @@ import Foundation
         let previous = review(for: site).dimensions
         guard !previous.isEmpty else { return true }
         guard setReviewDimensions(DimensionScores(), for: site) else { return false }
-        undoAction = LibraryUndo(message: "\(site.short.isEmpty ? site.name : site.short) · 已重置六项评分", change: .dimensions(site.id, previous))
+        undoAction = LibraryUndo(message: String(localized: "\(site.short.isEmpty ? site.name : site.short) · 已重置六项评分"),
+                                 change: .dimensions(site.id, previous))
         return true
     }
 
@@ -90,7 +92,8 @@ import Foundation
         let previous = review(for: site)
         guard previous.rating != nil || !previous.dimensions.isEmpty || !previous.text.isEmpty else { return true }
         guard setReview(dimensions: DimensionScores(), text: "", for: site, clearLegacyRating: true) else { return false }
-        undoAction = LibraryUndo(message: "\(site.short.isEmpty ? site.name : site.short) · 已清除评价", change: .review(site.id, previous))
+        undoAction = LibraryUndo(message: String(localized: "\(site.short.isEmpty ? site.name : site.short) · 已清除评价"),
+                                 change: .review(site.id, previous))
         return true
     }
 
@@ -142,7 +145,7 @@ import Foundation
     }
 
     func importBackup(_ content: Data) throws {
-        guard content.count <= 2_000_000 else { throw StoreError.invalid("备份不能超过 2 MB") }
+        guard content.count <= 2_000_000 else { throw StoreError.invalid(String(localized: "备份不能超过 2 MB")) }
         let imported = try JSONDecoder().decode(LibraryData.self, from: content)
         try validate(imported)
         var merged = loadFailed ? LibraryData() : data
@@ -192,7 +195,7 @@ import Foundation
         change(&next)
         next.version = 4
         do { try validate(next); try save(next); data = next; error = nil; return true }
-        catch { self.error = "保存失败：\(error.localizedDescription)"; return false }
+        catch { self.error = String(localized: "保存失败：\(error.localizedDescription)"); return false }
     }
 
     private func save(_ next: LibraryData) throws {
@@ -205,24 +208,24 @@ import Foundation
 
     private func validate(_ value: LibraryData) throws {
         guard [1, 2, 3, 4].contains(value.version), value.customSites.count <= 2000,
-              value.records.count <= 5000, value.reviews.count <= 5000 else { throw StoreError.invalid("备份格式不正确") }
+              value.records.count <= 5000, value.reviews.count <= 5000 else { throw StoreError.invalid(String(localized: "备份格式不正确")) }
         let customIDs = Set(value.customSites.map(\.id))
         guard customIDs.count == value.customSites.count, customIDs.isDisjoint(with: ids),
               value.customSites.allSatisfy({ $0.id.range(of: "^personal-[a-z0-9-]{6,80}$", options: .regularExpression) != nil && !$0.name.isEmpty && !$0.place.isEmpty }) else {
-            throw StoreError.invalid("旧登记资料不完整")
+            throw StoreError.invalid(String(localized: "旧登记资料不完整"))
         }
         for (id, record) in value.records {
             guard ids.contains(id) || customIDs.contains(id), record.note.utf16.count <= 12000,
-                  record.visitedOn.isEmpty || Self.validDate(record.visitedOn) else { throw StoreError.invalid("到访记录无效") }
+                  record.visitedOn.isEmpty || Self.validDate(record.visitedOn) else { throw StoreError.invalid(String(localized: "到访记录无效")) }
         }
         for (id, target) in value.links {
-            guard customIDs.contains(id), ids.contains(target), value.records[target] != nil else { throw StoreError.invalid("旧记录关联无效") }
+            guard customIDs.contains(id), ids.contains(target), value.records[target] != nil else { throw StoreError.invalid(String(localized: "旧记录关联无效")) }
         }
         for (id, review) in value.reviews {
             guard ids.contains(id), review.rating.map({ (1...5).contains($0) }) ?? true, review.dimensions.isValid,
                   review.text.utf16.count <= 500,
                   Self.validTimestamp(review.updatedAt) else {
-                throw StoreError.invalid("评价无效")
+                throw StoreError.invalid(String(localized: "评价无效"))
             }
         }
     }

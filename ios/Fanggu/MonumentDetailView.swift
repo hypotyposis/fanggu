@@ -25,7 +25,7 @@ struct MonumentDetailView: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(site.name).font(FangguFont.serif(35, weight: .medium)).foregroundStyle(Palette.paper)
                     if !site.sub.isEmpty { Text(site.sub).font(FangguFont.serif(15)).foregroundStyle(Palette.gold) }
-                    Text("\(site.place) · \(site.typeNames.joined(separator: " · "))")
+                    Text(verbatim: "\(site.place) · \(site.typeNames.joined(separator: " · "))")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                 }
                 if !site.protection.isEmpty {
@@ -70,12 +70,14 @@ struct MonumentDetailView: View {
                     Text("文物保护").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     ForEach(site.protection, id: \.self) { entry in
                         VStack(alignment: .leading, spacing: 6) {
-                            Text("\(entry.batchLabel) · \(entry.unitName)")
+                            Text(verbatim: "\(entry.batchLabel) · \(entry.unitName)")
                                 .font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
                             if !entry.scope.isEmpty { Text(entry.scope).foregroundStyle(Palette.paper2) }
                             if !entry.note.isEmpty { Text(entry.note).foregroundStyle(Palette.paper3) }
                             if let url = URL(string: entry.sourceURL), !entry.sourceURL.isEmpty {
-                                Link("\(entry.sourceTitle.isEmpty ? "保护信息来源" : entry.sourceTitle) ↗", destination: url)
+                                Link(destination: url) {
+                                    Text(verbatim: "\(entry.sourceTitle.isEmpty ? String(localized: "保护信息来源") : entry.sourceTitle) ↗")
+                                }
                                     .foregroundStyle(Palette.gold)
                             }
                         }
@@ -88,7 +90,7 @@ struct MonumentDetailView: View {
                 FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
                     Text("我的访古记").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
-                    Text(record.status.title + (record.status != .visited || record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
+                    Text(verbatim: record.status.title + (record.status != .visited || record.visitedOn.isEmpty ? "" : " · " + record.visitedOn))
                         .font(FangguFont.mono(12)).foregroundStyle(record.status.textColor)
                     if record.status != .visited && !record.visitedOn.isEmpty {
                         Text("保留的原到访日期 · \(record.visitedOn)")
@@ -114,7 +116,7 @@ struct MonumentDetailView: View {
                 Text("图版与资料来源").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                 ForEach(site.sourceLinks, id: \.self) { source in
                     if let url = URL(string: source.url) {
-                        Link("\(source.title) ↗", destination: url)
+                        Link(destination: url) { Text(verbatim: "\(source.title) ↗") }
                             .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
                     }
                 }
@@ -140,6 +142,7 @@ struct MonumentDetailView: View {
                     Label("返回", systemImage: "chevron.left")
                         .font(FangguFont.serif(13))
                 }
+                .accessibilityIdentifier("detail-back")
             }
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
@@ -172,7 +175,7 @@ struct ArrivalSlider: View {
                 Text(!colorReady ? "设色图暂未加载" : finished ? "已到访 · 留印" : progress >= 1 ? "松手记录今日到访" : "滑动记录今日到访")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
                     .frame(maxWidth: .infinity)
-                Text("访").font(FangguFont.brush(29))
+                Text(verbatim: "访").font(FangguFont.brush(29))
                     .foregroundStyle(Palette.sealPaper)
                     .frame(width: 50, height: 50)
                     .background(Palette.red)
@@ -262,7 +265,7 @@ struct VisitEditor: View {
                 Section("到访笔记") {
                     TextEditor(text: $note).frame(minHeight: 160)
                         .accessibilityLabel("到访笔记").accessibilityIdentifier("visit-note")
-                    Text("\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
+                    Text(verbatim: "\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
                 .listRowBackground(Palette.ink2)
                 if let error { Text(error).foregroundStyle(Palette.redText) }
@@ -273,7 +276,7 @@ struct VisitEditor: View {
             .navigationTitle(wasVisited ? "编辑到访记录" : "补记到访")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() } }
+                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() }.accessibilityIdentifier("cancel-visit") }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(wasVisited ? "保存修改" : "记录到访") { save() }
                         .accessibilityIdentifier("save-visit")
@@ -294,8 +297,8 @@ struct VisitEditor: View {
 
     private func save() {
         let dateText = dateKnown ? LibraryStore.dateFormatter().string(from: date) : ""
-        guard dateText.isEmpty || LibraryStore.validDate(dateText) else { error = "请选择不晚于今天的日期"; Haptics.error(); return }
-        guard note.utf16.count <= 12000 else { error = "笔记不能超过 12000 字"; Haptics.error(); return }
+        guard dateText.isEmpty || LibraryStore.validDate(dateText) else { error = String(localized: "请选择不晚于今天的日期"); Haptics.error(); return }
+        guard note.utf16.count <= 12000 else { error = String(localized: "笔记不能超过 12000 字"); Haptics.error(); return }
         let wasVisited = library.record(for: site).status == .visited
         if library.setRecord(VisitRecord(status: .visited, visitedOn: dateText, note: note), for: site) {
             if wasVisited { Haptics.soft() } else { Haptics.success() }
@@ -323,7 +326,7 @@ struct ReviewEditor: View {
         let stored = library.review(for: site)
         return dimensions != stored.dimensions || text != stored.text
     }
-    private var validationError: String? { text.utf16.count > 500 ? "短评不能超过 500 字" : nil }
+    private var validationError: String? { text.utf16.count > 500 ? String(localized: "短评不能超过 500 字") : nil }
 
     var body: some View {
         NavigationStack {
@@ -366,7 +369,7 @@ struct ReviewEditor: View {
                             .focused($editingText)
                             .scrollContentBackground(.hidden).padding(8).background(Palette.ink2)
                             .accessibilityLabel("短评").accessibilityIdentifier("review-text")
-                        Text("\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                        Text(verbatim: "\(text.utf16.count) / 500").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                     }
                     Button("清除评价", role: .destructive) {
                         guard flushChanges() else { return }
@@ -391,7 +394,7 @@ struct ReviewEditor: View {
             .navigationTitle("我的评价")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .confirmationAction) { Button("完成") { close() } }
+                ToolbarItem(placement: .confirmationAction) { Button("完成") { close() }.accessibilityIdentifier("review-done") }
             }
             .onAppear {
                 undoPresentation.reviewIsPresented = true
@@ -481,7 +484,7 @@ struct ReviewEditor: View {
     }
 
     private func showSaveError() {
-        error = library.error ?? "保存失败，请重试。"
+        error = library.error ?? String(localized: "保存失败，请重试。")
         Haptics.error()
     }
 
