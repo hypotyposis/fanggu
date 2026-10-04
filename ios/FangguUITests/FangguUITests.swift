@@ -5,8 +5,67 @@ final class FangguUITests: XCTestCase {
     /// to it instead of walking there; catalog navigation keeps its own tests below.
     private let reviewSite = "liyeque"
 
+    func testAggregateScoreUpdatesInCompactListAndCards() {
+        // The list row itself is under test here, so this case walks the real catalogue path.
+        let app = XCUIApplication.isolated()
+        app.launchForTest()
+        let rows = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "catalog-site-"))
+        XCTAssertTrue(rows.firstMatch.waitForExistence(timeout: 10))
+        guard let first = rows.allElementsBoundByIndex.first(where: { $0.isHittable }) else {
+            XCTFail("A catalog row must be reachable")
+            return
+        }
+        let identifier = first.identifier
+        let row = app.buttons[identifier]
+        row.tap()
+        openReview(in: app)
+        if app.buttons["reset-dimensions"].isEnabled { app.buttons["reset-dimensions"].tap() }
+        let era = app.descendants(matching: .any)["radar-axis-eraRarity"].firstMatch
+        let origin = era.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        origin.press(forDuration: 0.1, thenDragTo: origin.withOffset(CGVector(dx: 0, dy: -100)))
+        app.buttons["完成"].tap()
+        app.buttons["返回"].tap()
+        XCTAssertTrue(row.label.contains("私人综合评分，5.00 分"))
+        XCTAssertFalse(row.label.contains("满分"))
+        XCTAssertFalse(row.label.contains("已评"))
+        capture(app, "aggregate-compact-list")
+
+        app.relaunch()
+        XCTAssertTrue(row.waitForExistence(timeout: 10))
+        XCTAssertTrue(row.label.contains("私人综合评分，5.00 分"), "List scores must derive from persisted dimensions")
+        app.buttons["大图"].tap()
+        app.reveal(row, attempts: 5)
+        XCTAssertGreaterThan(row.frame.height, 300, "Changing display must replace cached compact rows with actual artwork cards")
+        XCTAssertTrue(row.label.contains("私人综合评分，5.00 分"))
+        scrollCatalogCardForCapture(in: app)
+        capture(app, "aggregate-large-card")
+        row.tap()
+        openReview(in: app)
+        let authenticity = app.descendants(matching: .any)["radar-axis-authenticity"].firstMatch
+        let start = authenticity.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        start.press(forDuration: 0.1, thenDragTo: start.withOffset(CGVector(dx: -100, dy: 60)))
+        app.buttons["完成"].tap()
+        app.buttons["返回"].tap()
+        XCTAssertTrue(row.label.contains("私人综合评分，3.00 分"))
+        XCTAssertFalse(row.label.contains("满分"))
+        XCTAssertFalse(row.label.contains("已评"))
+        scrollCatalogCardForCapture(in: app)
+        capture(app, "aggregate-updated-card")
+
+        row.tap()
+        openReview(in: app)
+        app.buttons["reset-dimensions"].tap()
+        app.buttons["完成"].tap()
+        app.buttons["返回"].tap()
+        XCTAssertFalse(row.label.contains("私人综合评分"), "Resetting the profile immediately removes the list total")
+        app.reveal(app.buttons["列表"], up: false)
+        app.buttons["列表"].tap()
+        XCTAssertLessThan(row.frame.height, 200, "Returning to the list must replace the artwork card")
+        XCTAssertFalse(row.label.contains("私人综合评分"))
+    }
+
     func testTabAndAppearanceSwitchingLatency() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         func switchTab(_ title: String, expected: String) {
             let start = ProcessInfo.processInfo.systemUptime
@@ -35,7 +94,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testTokyoCatalogFilterAliasAndDetailReturn() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         app.buttons["筛选"].tap()
         app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "全部国家")).firstMatch.tap()
@@ -61,7 +120,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testAppearancePersistsAndCoversNativeScreens() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         app.buttons["我的"].tap()
         let appearance = app.segmentedControls["appearance-picker"]
@@ -115,7 +174,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testNativeSectionsStayAvailable() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         app.buttons["足迹"].tap()
         XCTAssertTrue(app.staticTexts["我的足迹"].waitForExistence(timeout: 10))
@@ -132,7 +191,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testSixDimensionReleaseAutosavesAndResets() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest(site: reviewSite, review: true)
         app.waitForReviewEditor()
         // This test runs on a disposable simulator, with all changes made through the UI.
@@ -197,7 +256,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testSixDimensionLowGradesStayIndividuallyDraggable() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         // Dark appearance comes from the defaults argument domain, so no walk through 我的 is needed.
         app.launchForTest(site: reviewSite, review: true, arguments: ["-fanggu.appearance", "dark"])
         app.waitForReviewEditor()
@@ -225,7 +284,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testReviewShortTextAutosavesAndClearIsImmediate() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest(site: reviewSite, review: true)
         app.waitForReviewEditor()
         let field = app.textViews["review-text"]
@@ -263,7 +322,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testCatalogOpensNativeDetail() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         XCTAssertTrue(app.buttons["图鉴"].waitForExistence(timeout: 10))
         openFirstCatalogSite(in: app)
@@ -274,7 +333,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testLargeCardShowsArrivalSlider() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         let displayButton = app.buttons["大图"]
         XCTAssertTrue(displayButton.waitForExistence(timeout: 10))
@@ -282,10 +341,11 @@ final class FangguUITests: XCTestCase {
         let slider = app.descendants(matching: .any)["到访打卡"].firstMatch
         app.reveal(slider)
         XCTAssertTrue(slider.isHittable)
+        capture(app, "arrival-card-ready")
     }
 
     func testArrivalOnlySavesAfterReleasingAtTheEnd() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest(site: reviewSite)
         XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 10))
 
@@ -303,12 +363,14 @@ final class FangguUITests: XCTestCase {
         XCTAssertTrue(artwork.exists)
         XCTAssertEqual(slider.frame.minY - artwork.frame.maxY, 8, accuracy: 2,
                        "The reveal control should stay directly below its artwork")
+        capture(app, "arrival-ready")
 
         let thumb = slider.coordinate(withNormalizedOffset: CGVector(dx: 0.07, dy: 0.5))
         let nearEnd = slider.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5))
         thumb.press(forDuration: 0.1, thenDragTo: nearEnd)
         Thread.sleep(forTimeInterval: 1.5)
         XCTAssertTrue(slider.exists, "Releasing before the end must leave the visit unchanged")
+        capture(app, "arrival-release-before-end")
 
         let end = slider.coordinate(withNormalizedOffset: CGVector(dx: 0.99, dy: 0.5))
         thumb.press(forDuration: 0.1, thenDragTo: end)
@@ -322,7 +384,7 @@ final class FangguUITests: XCTestCase {
     }
 
     func testMapMarkersAndSearchOpenVisitedSites() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         app.launchForTest()
         app.buttons["足迹"].tap()
         let map = app.descendants(matching: .any)["visited-map"].firstMatch
@@ -380,6 +442,12 @@ final class FangguUITests: XCTestCase {
         XCTAssertTrue(button.isHittable)
         button.tap()
         XCTAssertTrue(app.buttons["完成"].waitForExistence(timeout: 5))
+    }
+
+    private func scrollCatalogCardForCapture(in app: XCUIApplication) {
+        let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: 0.72))
+        start.press(forDuration: 0.05, thenDragTo: start.withOffset(CGVector(dx: 0, dy: -220)),
+                    withVelocity: XCUIGestureVelocity(rawValue: 180), thenHoldForDuration: 0.3)
     }
 
     private func capture(_ app: XCUIApplication, _ name: String) {

@@ -2,6 +2,8 @@ import SwiftUI
 
 enum AppAppearance: String, CaseIterable, Identifiable {
     static let storageKey = "fanggu.appearance"
+    /// Appearance follows the same test scope as personal records.
+    static let store = TestScope.defaults(for: TestScope.current)
     case system, light, dark
 
     var id: String { rawValue }
@@ -22,7 +24,7 @@ enum AppAppearance: String, CaseIterable, Identifiable {
 }
 
 private struct FangguAppearance: ViewModifier {
-    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
+    @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
 
     func body(content: Content) -> some View {
         content.preferredColorScheme((AppAppearance(rawValue: appearance) ?? .system).colorScheme)
@@ -87,6 +89,43 @@ struct FangguRule: View {
     }
 }
 
+/// Fine corner cuts echo the ruled borders of an album leaf.
+struct FangguAlbumCorners: Shape {
+    func path(in rect: CGRect) -> Path {
+        let inset: CGFloat = 5
+        let length: CGFloat = 10
+        return Path { path in
+            for x in [rect.minX + inset, rect.maxX - inset] {
+                for y in [rect.minY + inset, rect.maxY - inset] {
+                    let dx: CGFloat = x < rect.midX ? 1 : -1
+                    let dy: CGFloat = y < rect.midY ? 1 : -1
+                    path.move(to: CGPoint(x: x, y: y + dy * length))
+                    path.addLine(to: CGPoint(x: x, y: y))
+                    path.addLine(to: CGPoint(x: x + dx * length, y: y))
+                }
+            }
+        }
+    }
+}
+
+/// Deterministic, low-contrast fibres; no image asset or animated noise needed.
+struct FangguPaperGrain: View {
+    var body: some View {
+        Canvas { context, size in
+            var fibres = Path()
+            for index in 0..<Int(size.width * size.height / 650) {
+                let x = CGFloat((index * 73 + 19) % 997) / 997 * size.width
+                let y = CGFloat((index * 137 + 47) % 991) / 991 * size.height
+                fibres.move(to: CGPoint(x: x, y: y))
+                fibres.addLine(to: CGPoint(x: x + CGFloat(2 + index % 4), y: y + 0.5))
+            }
+            context.stroke(fibres, with: .color(Palette.goldDim.opacity(0.09)), lineWidth: 0.5)
+        }
+        .allowsHitTesting(false)
+        .accessibilityHidden(true)
+    }
+}
+
 struct FangguMetricNumber: View {
     let value: Int
     let size: CGFloat
@@ -96,6 +135,24 @@ struct FangguMetricNumber: View {
             .font(FangguFont.serif(size, weight: .medium))
             .monospacedDigit()
             .foregroundStyle(Palette.gold)
+    }
+}
+
+struct ReviewScoreLabel: View {
+    let scores: DimensionScores
+    var size: CGFloat = 18
+
+    var body: some View {
+        if let score = scores.aggregateScoreLabel {
+            Text(score)
+                .font(FangguFont.serif(size))
+                .monospacedDigit()
+                .tracking(-0.3)
+                .foregroundStyle(Palette.gold)
+                .fixedSize(horizontal: true, vertical: false)
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel("私人综合评分，\(score) 分")
+        }
     }
 }
 
@@ -111,14 +168,17 @@ extension VisitStatus {
 
 struct FangguOutlineButton: ButtonStyle {
     var accent: Color = Palette.gold
+    /// A toggle that is currently on; drawn like the pressed state so the choice stays visible.
+    var filled = false
 
     func makeBody(configuration: Configuration) -> some View {
+        let active = configuration.isPressed || filled
         configuration.label
             .font(FangguFont.serif(14))
-            .foregroundStyle(configuration.isPressed ? Palette.ink : accent)
+            .foregroundStyle(active ? Palette.ink : accent)
             .padding(.horizontal, 16)
             .frame(minHeight: 44)
-            .background(configuration.isPressed ? accent : Palette.ink2)
+            .background(active ? accent : Palette.ink2)
             .overlay(Rectangle().stroke(accent.opacity(0.65), lineWidth: 1))
             .animation(.easeOut(duration: 0.18), value: configuration.isPressed)
     }

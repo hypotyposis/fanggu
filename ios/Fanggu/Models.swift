@@ -29,6 +29,9 @@ struct Monument: Decodable, Identifiable, Hashable {
     let region: String
     let latitude: Double
     let longitude: Double
+    let siteLatitude: Double?
+    let siteLongitude: Double?
+    let siteCoordinateSource: String
     let types: [String]
     let typeNames: [String]
     let lede: String
@@ -49,9 +52,36 @@ struct Monument: Decodable, Identifiable, Hashable {
     var periodLabel: String {
         displayYearLabel.isEmpty ? dynastyName : "\(dynastyName) · \(displayYearLabel)"
     }
+    /// The monument's own point for proximity; nil when only the town-level map marker is recorded.
+    var nearbyTarget: NearbyTarget? {
+        guard let siteLatitude, let siteLongitude else { return nil }
+        return NearbyTarget(id: id, name: name, latitude: siteLatitude, longitude: siteLongitude)
+    }
 
     static func == (lhs: Monument, rhs: Monument) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
+}
+
+/// An editorial list (名录／线路／专题). Membership is catalogue metadata; progress is derived from personal records at runtime.
+struct Curation: Decodable, Identifiable, Hashable {
+    let id: String
+    let kind: String
+    let kindName: String
+    let name: String
+    let eyebrow: String
+    let lede: String
+    let note: String
+    let items: [String]
+
+    static func == (lhs: Curation, rhs: Curation) -> Bool { lhs.id == rhs.id }
+    func hash(into hasher: inout Hasher) { hasher.combine(id) }
+}
+
+struct CurationProgress: Equatable {
+    let visited: Int
+    let total: Int
+    var fraction: Double { total == 0 ? 0 : Double(visited) / Double(total) }
+    var isComplete: Bool { total > 0 && visited == total }
 }
 
 struct SourceLink: Decodable, Hashable {
@@ -195,6 +225,13 @@ enum Palette {
 
     static func color(_ hex: String) -> Color {
         Color(uiColor: uiColor(hex))
+    }
+
+    /// The light-scheme dynasty tint as a fixed colour, for artwork rendered on paper-coloured share cards.
+    static func dynastyOnPaper(_ hex: String) -> Color {
+        var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
+        uiColor(hex).getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return Color(uiColor: UIColor(red: red * 0.55, green: green * 0.55, blue: blue * 0.55, alpha: alpha))
     }
 
     private static func uiColor(_ hex: String) -> UIColor {

@@ -2,10 +2,15 @@ import XCTest
 
 /// Shared launch and scrolling helpers. Deep links and disabled transitions exist only in DEBUG
 /// builds of the app; they skip the walk to a page, never the behaviour a test asserts.
+///
+/// Every launch here is isolated as well: `launchForTest` builds on `isolated()` (see
+/// `IsolatedApp.swift`), so each test gets its own record and appearance scope and the speed-ups
+/// never trade away the isolation that lets sessions share one simulator.
 extension XCUIApplication {
-    /// Launches with UIKit transitions off. Pass a monument id to start on its detail page, and
-    /// `review: true` to have that page open its review editor immediately.
+    /// Launches in a fresh record scope with UIKit transitions off. Pass a monument id to start on
+    /// its detail page, and `review: true` to have that page open its review editor immediately.
     func launchForTest(site: String? = nil, review: Bool = false, arguments: [String] = []) {
+        isolate()
         var all = ["-uiTestDisableAnimations"]
         if let site { all += ["-uiTestOpenSite", site] }
         if review { all.append("-uiTestOpenReview") }
@@ -13,8 +18,8 @@ extension XCUIApplication {
         launch()
     }
 
-    /// Kills the process and launches it again with the same arguments, so a deep-linked test
-    /// lands on the same page after a real restart. Persistence checks keep using this.
+    /// Kills the process and launches it again with the same arguments and scope, so a deep-linked
+    /// test lands on the same page after a real restart. Persistence checks keep using this.
     func relaunch() {
         terminate()
         launch()
@@ -42,12 +47,23 @@ extension XCUIApplication {
         start.press(forDuration: 0.02, thenDragTo: end)
     }
 
-    /// Drags until the element can be tapped and reports whether it can.
+    /// Drags until the element can be tapped and reports whether it can. A tap lands on the frame
+    /// centre, so the element also has to sit clear of the top bars and the bottom inset; a sliver
+    /// peeking over the edge counts as hittable but does not take focus. Stops early once the page
+    /// no longer moves.
     @discardableResult func reveal(_ element: XCUIElement, up: Bool = true, attempts: Int = 8) -> Bool {
         for _ in 0..<attempts {
-            if element.isHittable { return true }
+            if isComfortablyVisible(element) { return true }
+            let before = element.frame.midY
             dragPage(up: up)
+            if element.exists, abs(element.frame.midY - before) < 1 { break }
         }
         return element.isHittable
+    }
+
+    private func isComfortablyVisible(_ element: XCUIElement) -> Bool {
+        guard element.isHittable else { return false }
+        let mid = element.frame.midY
+        return mid >= frame.minY + 100 && mid <= frame.maxY - 150
     }
 }

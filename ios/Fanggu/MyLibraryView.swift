@@ -4,7 +4,7 @@ import UniformTypeIdentifiers
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @AppStorage(AppAppearance.storageKey) private var appearance = AppAppearance.system.rawValue
+    @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
     @State private var importing = false
     @State private var exporting = false
     @State private var exportDocument: BackupDocument?
@@ -35,6 +35,24 @@ struct MyLibraryView: View {
                     }
                 }
                 FangguRule()
+                if !library.curations.isEmpty {
+                    sectionTitle("专题进度")
+                    ForEach(library.curations) { list in
+                        NavigationLink(value: list) { CurationSummaryRow(curation: list) }
+                            .buttonStyle(.plain)
+                    }
+                }
+                NavigationLink { CollectionProgressView() } label: {
+                    HStack {
+                        Label("按时代、省份、类型看收集进度", systemImage: "chart.bar")
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.system(size: 11))
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                .accessibilityIdentifier("collection-progress-link")
+                FangguRule()
                 VStack(alignment: .leading, spacing: 12) {
                     sectionTitle("外观")
                     Picker("外观模式", selection: $appearance) {
@@ -47,6 +65,8 @@ struct MyLibraryView: View {
                     Text("亮色如纸，深色如墨。跟随系统会随设备外观切换。")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper2).lineSpacing(5)
                 }
+                FangguRule()
+                NearbyReminderSection()
                 FangguRule()
                 sectionTitle("已到访")
                 if visited.isEmpty { empty("还没有到访记录") }
@@ -144,6 +164,58 @@ struct MyLibraryView: View {
     private static func isCancellation(_ error: Error) -> Bool {
         let nsError = error as NSError
         return nsError.domain == NSCocoaErrorDomain && nsError.code == NSUserCancelledError
+    }
+}
+
+/// Opt-in proximity reminders. The toggle is the only thing stored; location never is.
+private struct NearbyReminderSection: View {
+    @EnvironmentObject private var nearby: LocationCenter
+
+    private var enabled: Binding<Bool> {
+        Binding(get: { nearby.enabled }, set: { value in
+            nearby.setEnabled(value)
+            Haptics.selection()
+        })
+    }
+    private var problem: Bool {
+        nearby.enabled && (nearby.authorization == .denied || nearby.authorization == .restricted || nearby.notificationsAuthorized == false)
+    }
+    private var needsSettings: Bool {
+        problem || (nearby.enabled && nearby.authorization == .authorizedWhenInUse)
+    }
+    private var status: String {
+        guard nearby.enabled else { return "开启后会请求定位与通知权限。App 不在前台时也要提醒，需要把定位设为“始终允许”。" }
+        let notifications = nearby.notificationsAuthorized == false ? " 通知权限已关闭，提醒无法显示。" : ""
+        switch nearby.authorization {
+        case .denied, .restricted: return "定位权限已关闭，请在系统设置中允许访古使用位置。" + notifications
+        case .notDetermined: return "等待定位授权。" + notifications
+        case .authorizedWhenInUse:
+            return "目前只在使用 App 时定位。要在不打开 App 时也收到提醒，请在系统设置中改为“始终允许”。" + notifications
+        case .authorizedAlways:
+            return (nearby.monitoredIDs.isEmpty ? "已开启，等待首次定位后开始监控附近古迹。"
+                    : "已监控最近的 \(nearby.monitoredIDs.count) 处未打卡古迹。") + notifications
+        @unknown default: return notifications
+        }
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("附近提醒").font(FangguFont.serif(22)).foregroundStyle(Palette.paper)
+            Toggle(isOn: enabled) {
+                Text("靠近未打卡的古迹时提醒我").font(FangguFont.serif(15)).foregroundStyle(Palette.paper)
+            }
+            .tint(Palette.gold)
+            .accessibilityIdentifier("nearby-reminder-toggle")
+            Text(status)
+                .font(FangguFont.serif(12)).foregroundStyle(problem ? Palette.redText : Palette.paper2).lineSpacing(5)
+                .accessibilityIdentifier("nearby-reminder-status")
+            if needsSettings {
+                Button { nearby.openSystemSettings() } label: { Label("打开系统设置", systemImage: "gear") }
+                    .buttonStyle(FangguOutlineButton())
+            }
+            Text("只对登记了本体坐标的 \(nearby.targetCount) 处古迹提醒，范围 3 公里，同一处每天最多一次。位置只在本机比较距离，不保存，也不进入备份。")
+                .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
+        }
     }
 }
 
