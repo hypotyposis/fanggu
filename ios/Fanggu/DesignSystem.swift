@@ -168,14 +168,17 @@ extension VisitStatus {
 
 struct FangguOutlineButton: ButtonStyle {
     var accent: Color = Palette.gold
+    /// A toggle that is currently on; drawn like the pressed state so the choice stays visible.
+    var filled = false
 
     func makeBody(configuration: Configuration) -> some View {
+        let active = configuration.isPressed || filled
         configuration.label
             .font(FangguFont.serif(14))
-            .foregroundStyle(configuration.isPressed ? Palette.ink : accent)
+            .foregroundStyle(active ? Palette.ink : accent)
             .padding(.horizontal, 16)
             .frame(minHeight: 44)
-            .background(configuration.isPressed ? accent : Palette.ink2)
+            .background(active ? accent : Palette.ink2)
             .overlay(Rectangle().stroke(accent.opacity(0.65), lineWidth: 1))
             .animation(.easeOut(duration: 0.18), value: configuration.isPressed)
     }

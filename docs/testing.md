@@ -32,6 +32,7 @@
 1. 能恢复素材就恢复：`python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile full`，再 `verify --profile full`。批次测试读取 `assets/generated/` 与 `assets/references/`，`runtime` 层级不够。
 2. 不能恢复时，运行能跑的子集，并在汇报中明确写出哪些文件因缺素材未运行。不要把未运行写成通过。
 3. 改动只涉及文档或 iOS 代码时不需要补素材；改动涉及目录数据时，至少确保 `facets`、`ios-catalog`、`protection` 通过。
+4. 构建 App 或跑原生测试前必须让 `ios/Fanggu/Resources/Artwork/` 存在：`project.yml` 虽把该文件夹标为 `optional`，Xcode 复制资源时仍会因目录缺失报错（“The file Artwork couldn't be opened”）。同一台机器上有完整素材的工作区时，可直接 `sh ios/scripts/sync-artwork.sh /path/to/那个工作区/assets` 同步到当前 worktree；没有素材时至少 `mkdir -p ios/Fanggu/Resources/Artwork` 让单元测试可以编译运行，图版缺失不影响逻辑测试。
 
 ## 常用子集命令
 

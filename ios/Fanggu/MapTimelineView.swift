@@ -320,6 +320,10 @@ struct TimelineCluster: Identifiable {
 struct TimelineSiteRow: View {
     @EnvironmentObject private var library: LibraryStore
     let site: Monument
+    /// Only the catalogue passes these; 足迹, 年表 and 我的 keep the row unchanged.
+    var distance: String? = nil
+    var here = false
+    @ScaledMetric(relativeTo: .caption) private var distanceSize: CGFloat = 10
 
     private var status: VisitStatus { library.record(for: site).status }
 
@@ -336,6 +340,13 @@ struct TimelineSiteRow: View {
                     ReviewScoreLabel(scores: library.review(for: site).dimensions)
                 }
                 Text(site.place).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                if distance != nil || here {
+                    HStack(spacing: 6) {
+                        if here { Text("就在附近").foregroundStyle(Palette.gold) }
+                        if let distance { Text(distance).foregroundStyle(Palette.paper2) }
+                    }
+                    .font(.system(size: distanceSize, design: .monospaced))
+                }
                 HStack(spacing: 4) {
                     Text(status.title).foregroundStyle(status.textColor)
                     Text("· 细读 ↗").foregroundStyle(Palette.paper2)

@@ -17,15 +17,18 @@
 		43F2EAB2A712A3A78A522167 /* UXRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18636163552E611EFD7050C2 /* UXRegressionTests.swift */; };
 		446081072BE3002D27313AC8 /* Artwork in Resources */ = {isa = PBXBuildFile; fileRef = 132DEA14D9216B3216E55681 /* Artwork */; };
 		4543125B3B12B16E913B1855 /* AtlasTimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2CF76E97DA2434D1E6EDE /* AtlasTimelineTests.swift */; };
+		4596DFC45786288A8D877065 /* CatalogDistanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBB6B695066C2496757575 /* CatalogDistanceTests.swift */; };
 		4652453AB7CE1737C6064778 /* TestScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C52C00C935B0C7AF10F272 /* TestScopeTests.swift */; };
 		50B751F1C76D374CD610986C /* CatalogSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0C883026126C5C9D1752B /* CatalogSearch.swift */; };
 		555036135F1E588E2351B04E /* NotoSerifSC-wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA0F41782AA5F707B36F5780 /* NotoSerifSC-wght.ttf */; };
+		5A28177952C6DCA4F9B7BA07 /* NearbyReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAEBAB6AF5366BE5DB4C141 /* NearbyReminderTests.swift */; };
 		5F39F8681337A41498B8412B /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941369201341EDC769D0A968 /* DesignSystem.swift */; };
 		635691A45CFABAF3428DAB17 /* ShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E149E9C8373B489D9B8FC04 /* ShareCard.swift */; };
 		645323A38BAA24C69AE53B94 /* FangguApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2E3B4610C6D7B304A97666 /* FangguApp.swift */; };
 		6455D8FF1495301B0E8144D4 /* MonumentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */; };
 		66B9CCA7F19AB1FE7F3636AE /* SketchMapLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE791FF657D724DB06BE27FF /* SketchMapLayout.swift */; };
 		7220089D2A39C1DF1A69F17A /* MapTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */; };
+		7298C2041DF87B1955B5DA37 /* LocationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A3414ECDFDB0266F77E97 /* LocationCenter.swift */; };
 		73CE79656BA0B4D8631D244B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB14485AADE6D55976CAAD1E /* ContentView.swift */; };
 		77202B1E9C9F527BEFEDA9AA /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D03C4F19C5416163862612 /* Review.swift */; };
 		890BC744B4DDBB084EDFE354 /* OfflineLand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EC54B130694982CA1A92E7 /* OfflineLand.swift */; };
@@ -37,6 +40,7 @@
 		9F5D03D4348614A0EB306ECE /* LibraryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */; };
 		A0F3EF3349BF0D8672927A7A /* TestScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = C437FD06936B24F9C4462019 /* TestScope.swift */; };
 		AEA5AF46E92DB922768F237D /* curations.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EE32E0BACF2B10941D2F194 /* curations.json */; };
+		B1BEE1848870CAA7A01FAECF /* NearbyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48EF388CE314074A1CE9648 /* NearbyUITests.swift */; };
 		B1DE8D29EEAD8E4FCAF97E60 /* NotoSerifSC-OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 24B18515ED5644793FAA1C96 /* NotoSerifSC-OFL.txt */; };
 		B43D8DD3205AF5A4B13D463E /* ne_110m_land.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 23CDAF5393A4CDDCD7EAD608 /* ne_110m_land.geojson */; };
 		C1429B846725C5F365DEF9B0 /* CurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14127091142D650CC130428 /* CurationTests.swift */; };
@@ -68,6 +72,7 @@
 /* Begin PBXFileReference section */
 		00D999620921C3D1C50404A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BA49833E5FF395DB328CB1 /* CurationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationViews.swift; sourceTree = "<group>"; };
+		0BAEBAB6AF5366BE5DB4C141 /* NearbyReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyReminderTests.swift; sourceTree = "<group>"; };
 		0EE32E0BACF2B10941D2F194 /* curations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = curations.json; sourceTree = "<group>"; };
 		1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonumentDetailView.swift; sourceTree = "<group>"; };
 		132DEA14D9216B3216E55681 /* Artwork */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Artwork; path = Fanggu/Resources/Artwork; sourceTree = SOURCE_ROOT; };
@@ -78,9 +83,11 @@
 		24B18515ED5644793FAA1C96 /* NotoSerifSC-OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "NotoSerifSC-OFL.txt"; sourceTree = "<group>"; };
 		33D03C4F19C5416163862612 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		3F18C69233548DDEAEE8A1BA /* ReviewRadar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRadar.swift; sourceTree = "<group>"; };
+		46BBB6B695066C2496757575 /* CatalogDistanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDistanceTests.swift; sourceTree = "<group>"; };
 		47ADF3236CB95E16855814CE /* MAP-SOURCES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "MAP-SOURCES.md"; sourceTree = "<group>"; };
 		4BA836F5CFAAE877E4660FFB /* RecordControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordControls.swift; sourceTree = "<group>"; };
 		4D250EC4BD4A9589E2D7AFDE /* FangguTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FangguTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		566A3414ECDFDB0266F77E97 /* LocationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCenter.swift; sourceTree = "<group>"; };
 		6CC9E9CD88419345D7E3F30F /* Fanggu.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Fanggu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA079CD4879D0E99E087BBD /* AtlasTimelineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasTimelineUITests.swift; sourceTree = "<group>"; };
 		70C52C00C935B0C7AF10F272 /* TestScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScopeTests.swift; sourceTree = "<group>"; };
@@ -99,6 +106,7 @@
 		BB0955D67A1900762B4F22FC /* IsolatedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsolatedApp.swift; sourceTree = "<group>"; };
 		C14127091142D650CC130428 /* CurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationTests.swift; sourceTree = "<group>"; };
 		C437FD06936B24F9C4462019 /* TestScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScope.swift; sourceTree = "<group>"; };
+		C48EF388CE314074A1CE9648 /* NearbyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyUITests.swift; sourceTree = "<group>"; };
 		D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryStore.swift; sourceTree = "<group>"; };
 		D8EFEA8F598513230A4CD144 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
 		E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MaShanZheng-Regular.ttf"; sourceTree = "<group>"; };
@@ -115,7 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				9BC2CF76E97DA2434D1E6EDE /* AtlasTimelineTests.swift */,
+				46BBB6B695066C2496757575 /* CatalogDistanceTests.swift */,
 				C14127091142D650CC130428 /* CurationTests.swift */,
+				0BAEBAB6AF5366BE5DB4C141 /* NearbyReminderTests.swift */,
 				E7B2EF0E8D29DED433004482 /* ReviewTests.swift */,
 				70C52C00C935B0C7AF10F272 /* TestScopeTests.swift */,
 				18636163552E611EFD7050C2 /* UXRegressionTests.swift */,
@@ -178,6 +188,7 @@
 				7F2E3B4610C6D7B304A97666 /* FangguApp.swift */,
 				A5951C997CF6D12053F26AB4 /* Haptics.swift */,
 				D3CF374889E2EDF3D90F94A8 /* LibraryStore.swift */,
+				566A3414ECDFDB0266F77E97 /* LocationCenter.swift */,
 				F65BEA08CA9B1D5E9721A395 /* MapTimelineView.swift */,
 				F4CED4570A3CEC1B630EC8FE /* Models.swift */,
 				1309585BD62519DE9D56DDB6 /* MonumentDetailView.swift */,
@@ -202,6 +213,7 @@
 				A3DC36FF5E462D748C6A6FCD /* CurationUITests.swift */,
 				EBA07A3A66551D2FDC02E96B /* FangguUITests.swift */,
 				BB0955D67A1900762B4F22FC /* IsolatedApp.swift */,
+				C48EF388CE314074A1CE9648 /* NearbyUITests.swift */,
 				1FB416C4A1BBB2B92F3442FA /* UIUXFixTests.swift */,
 			);
 			path = FangguUITests;
@@ -331,6 +343,7 @@
 				645323A38BAA24C69AE53B94 /* FangguApp.swift in Sources */,
 				26E86B29C102275A8181930D /* Haptics.swift in Sources */,
 				9F5D03D4348614A0EB306ECE /* LibraryStore.swift in Sources */,
+				7298C2041DF87B1955B5DA37 /* LocationCenter.swift in Sources */,
 				7220089D2A39C1DF1A69F17A /* MapTimelineView.swift in Sources */,
 				983CB5B041412B7DA4962914 /* Models.swift in Sources */,
 				6455D8FF1495301B0E8144D4 /* MonumentDetailView.swift in Sources */,
@@ -354,6 +367,7 @@
 				F8CA8C33D1F9D9CA3AD0A82F /* CurationUITests.swift in Sources */,
 				34D87544ABD4146139644BC2 /* FangguUITests.swift in Sources */,
 				89979D04BCAA9530B8EC4A09 /* IsolatedApp.swift in Sources */,
+				B1BEE1848870CAA7A01FAECF /* NearbyUITests.swift in Sources */,
 				F633210B92BC4071EE108553 /* UIUXFixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +377,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4543125B3B12B16E913B1855 /* AtlasTimelineTests.swift in Sources */,
+				4596DFC45786288A8D877065 /* CatalogDistanceTests.swift in Sources */,
 				C1429B846725C5F365DEF9B0 /* CurationTests.swift in Sources */,
+				5A28177952C6DCA4F9B7BA07 /* NearbyReminderTests.swift in Sources */,
 				DB3F190901AB12E09B3F4F17 /* ReviewTests.swift in Sources */,
 				4652453AB7CE1737C6064778 /* TestScopeTests.swift in Sources */,
 				43F2EAB2A712A3A78A522167 /* UXRegressionTests.swift in Sources */,
@@ -394,6 +410,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "访古";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "选择“始终允许”后，访古不在前台时也能提醒你附近 3 公里内的未打卡古迹。位置只在本机比较距离，不会保存或上传。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于按距离浏览古迹，以及在你靠近 3 公里内未打卡的古迹时提醒你。位置只在本机比较距离，不会保存或上传。";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "把访古卡保存到你的相册。访古只添加图片，不读取相册内容。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -590,6 +608,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "访古";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.travel";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "选择“始终允许”后，访古不在前台时也能提醒你附近 3 公里内的未打卡古迹。位置只在本机比较距离，不会保存或上传。";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "用于按距离浏览古迹，以及在你靠近 3 公里内未打卡的古迹时提醒你。位置只在本机比较距离，不会保存或上传。";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "把访古卡保存到你的相册。访古只添加图片，不读取相册内容。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
