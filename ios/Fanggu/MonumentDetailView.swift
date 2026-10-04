@@ -6,6 +6,7 @@ struct MonumentDetailView: View {
     let site: Monument
     @State private var editingVisit = false
     @State private var editingReview = false
+    @State private var sharing = false
     @State private var reveal: CGFloat = 0
 
     private var record: VisitRecord { library.record(for: site) }
@@ -37,6 +38,7 @@ struct MonumentDetailView: View {
                         }
                     }
                 }
+                CurationChips(site: site)
                 VisitActions(site: site, editingVisit: $editingVisit)
                 VStack(spacing: 8) {
                     ArtworkView(site: site, visited: record.status == .visited,
@@ -130,7 +132,7 @@ struct MonumentDetailView: View {
             .padding(24)
         }
         .safeAreaInset(edge: .bottom, spacing: 0) {
-            if !editingReview && !editingVisit { UndoFeedback() }
+            if !editingReview && !editingVisit && !sharing { UndoFeedback() }
         }
         .background(Palette.ink.ignoresSafeArea())
         .navigationTitle(site.short.isEmpty ? site.name : site.short)
@@ -145,11 +147,16 @@ struct MonumentDetailView: View {
                         .font(FangguFont.serif(13))
                 }
             }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button { sharing = true } label: { Label("分享访古卡", systemImage: "square.and.arrow.up") }
+                    .accessibilityIdentifier("share-card")
+            }
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
+        .sheet(isPresented: $sharing) { ShareCardSheet(content: .monument(site)) }
     }
 
     private func finishArrival() {

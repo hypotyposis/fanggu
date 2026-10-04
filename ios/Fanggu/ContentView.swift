@@ -42,24 +42,28 @@ struct ContentView: View {
             NavigationStack {
                 tabRoot(ExploreView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("图鉴", systemImage: "square.grid.2x2") }.tag(0)
 
             NavigationStack {
                 tabRoot(AtlasMapView(onBrowse: { selectedTab = 0 }))
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("足迹", systemImage: "map") }.tag(1)
 
             NavigationStack {
                 tabRoot(TimelineView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("年表", systemImage: "circle.grid.cross") }.tag(2)
 
             NavigationStack {
                 tabRoot(MyLibraryView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                    .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
             }
             .tabItem { Label("我的", systemImage: "seal") }.tag(3)
         }
@@ -199,6 +203,10 @@ struct ExploreView: View {
     private var activeFilterCount: Int {
         [country, region, province, dynasty, type].filter { $0 != "all" }.count
     }
+    /// Lists sit above the full catalogue only; any search, status or facet filter brings results forward instead.
+    private var showsCurations: Bool {
+        !library.curations.isEmpty && query.isEmpty && status == "all" && activeFilterCount == 0
+    }
     private var sortTitle: String {
         switch sortOrder {
         case "newest": "新到旧"
@@ -252,6 +260,9 @@ struct ExploreView: View {
                 catalogControls
                 .labelStyle(.titleOnly)
                 .padding(.bottom, 20)
+                if showsCurations {
+                    CurationStrip().padding(.bottom, 22)
+                }
                 HStack {
                     Text("共 \(results.count) 处")
                         .accessibilityIdentifier("catalog-result-count")
