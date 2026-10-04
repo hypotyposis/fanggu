@@ -32,6 +32,13 @@ targets:
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         LOCALIZATION_PREFERS_STRING_CATALOGS: YES
         SWIFT_EMIT_LOC_STRINGS: YES
+    info:
+      path: Fanggu/Info.plist
+      properties:
+        NSLocalNetworkUsageDescription: 连接你选择的局域网访古社区服务，用于同步公开评分、短评与关注关系。
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+        UILaunchScreen: {}
   FangguTests:
     type: bundle.unit-test
     platform: iOS

@@ -3,14 +3,17 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject private var library: LibraryStore
     @EnvironmentObject private var nearby: LocationCenter
+    @EnvironmentObject private var community: CommunityStore
     @StateObject private var undoPresentation = UndoPresentation()
     @State private var selectedTab = 0
+    @State private var previousLibraryTab = 0
     @State private var launchTargetApplied = false
     @State private var keyboardVisible = false
     @State private var explorePath = NavigationPath()
 
     var body: some View {
-        Group {
+        VStack(spacing: 0) {
+            if !keyboardVisible { CommunityModeBar() }
             if #available(iOS 26.0, *) {
                 tabs
                     .tabBarMinimizeBehavior(.onScrollDown)
@@ -22,6 +25,13 @@ struct ContentView: View {
         .environmentObject(undoPresentation)
         .tint(Palette.gold)
         .onAppear(perform: openLaunchTarget)
+        .sheet(isPresented: $community.showingAccount) { CommunityAccountView() }
+        .onChange(of: selectedTab) { _, value in
+            if value != 4 { previousLibraryTab = value }
+        }
+        .onChange(of: community.online) { _, value in
+            if !value && selectedTab == 4 { selectedTab = previousLibraryTab }
+        }
         .overlay(alignment: .top) {
             if let error = library.error {
                 Text(error)
@@ -80,6 +90,17 @@ struct ContentView: View {
             }
             .tabItem { Label("年表", systemImage: "circle.grid.cross") }.tag(2)
 
+            if community.online {
+                NavigationStack {
+                    tabRoot(CommunityView())
+                        .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                        .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
+                        .navigationDestination(for: PersonalListRoute.self) { PersonalListView(id: $0.id) }
+                        .navigationDestination(for: PersonalListsRoute.self) { _ in PersonalListsView() }
+                }
+                .tabItem { Label("社区", systemImage: "person.2") }.tag(4)
+            }
+
             NavigationStack {
                 tabRoot(MyLibraryView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
@@ -107,7 +128,7 @@ struct ContentView: View {
             root
                 .toolbar(.hidden, for: .tabBar)
                 .safeAreaInset(edge: .bottom, spacing: 0) {
-                    if !keyboardVisible { FrostedTabBar(selection: $selectedTab) }
+                    if !keyboardVisible { FrostedTabBar(selection: $selectedTab, online: community.online) }
                 }
         }
     }
@@ -115,25 +136,27 @@ struct ContentView: View {
 
 private struct FrostedTabBar: View {
     @Binding var selection: Int
+    let online: Bool
     @Namespace private var selectionAnimation
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.colorScheme) private var colorScheme
 
-    private let items: [(title: String, icon: String)] = [
-        (String(localized: "图鉴"), "square.grid.2x2"),
-        (String(localized: "足迹"), "map"),
-        (String(localized: "年表"), "circle.grid.cross"),
-        (String(localized: "我的"), "seal")
-    ]
+    private var items: [(title: String, icon: String, tag: Int)] {
+        [(String(localized: "图鉴"), "square.grid.2x2", 0),
+         (String(localized: "足迹"), "map", 1),
+         (String(localized: "年表"), "circle.grid.cross", 2)]
+        + (online ? [(String(localized: "社区"), "person.2", 4)] : [])
+        + [(String(localized: "我的"), "seal", 3)]
+    }
 
     var body: some View {
         HStack(spacing: 3) {
             ForEach(items.indices, id: \.self) { index in
                 Button {
-                    guard selection != index else { return }
-                    selection = index
+                    guard selection != items[index].tag else { return }
+                    selection = items[index].tag
                     Haptics.selection()
                 } label: {
                     VStack(spacing: 3) {
@@ -144,11 +167,11 @@ private struct FrostedTabBar: View {
                             .font(FangguFont.serif(11, weight: .medium))
                             .lineLimit(1).minimumScaleFactor(0.7)
                     }
-                    .foregroundStyle(selection == index ? Palette.gold : Palette.paper2)
+                    .foregroundStyle(selection == items[index].tag ? Palette.gold : Palette.paper2)
                     .frame(maxWidth: .infinity)
                     .frame(minHeight: dynamicTypeSize.isAccessibilitySize ? 80 : 56)
                     .background {
-                        if selection == index {
+                        if selection == items[index].tag {
                             RoundedRectangle(cornerRadius: 20, style: .continuous)
                                 .fill(Palette.paper.opacity(colorScheme == .light ? 0.035 : 0.13))
                                 .overlay {
@@ -162,7 +185,7 @@ private struct FrostedTabBar: View {
                 }
                 .buttonStyle(.plain)
                 .accessibilityLabel(items[index].title)
-                .accessibilityAddTraits(selection == index ? .isSelected : [])
+                .accessibilityAddTraits(selection == items[index].tag ? .isSelected : [])
                 // Like the system tab bar: labels stop growing, and a long press shows them enlarged.
                 .accessibilityShowsLargeContentViewer { Label(items[index].title, systemImage: items[index].icon) }
             }

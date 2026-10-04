@@ -58,6 +58,8 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `ios/scripts/build-catalog.cjs` | 从上述数据、研究 JSON、色板和译文导出 App 的中文、英文、日文目录 |
 | `ios/scripts/sync-artwork.sh` | 将完整运行图版同步到 App 资源目录 |
 | `ios/Fanggu/LibraryStore.swift` | 个人记录校验、保存、备份迁移与失败恢复 |
+| `ios/Fanggu/CommunityStore.swift` / `CommunityAPI.swift` | 社区账号、公开评价同步、冲突处理及 HTTP / Keychain |
+| `community/server.py` | 本机或局域网原型的账号、评价、关注、评分汇总和举报服务 |
 | `ios/Fanggu/ContentView.swift` / `MonumentDetailView.swift` / `MapTimelineView.swift` / `TimelineView.swift` / `MyLibraryView.swift` | 原生图鉴、详情、地图年表和个人资料 |
 | `ios/Fanggu/Localizable.xcstrings` / `InfoPlist.xcstrings` / `Localization.swift` | 界面文字与 App 名称的英日译文；按系统为 App 解析的语言选择目录与字体 |
 
@@ -125,7 +127,7 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 
 古迹 ID 必须稳定，新条目默认未到访；已有个人记录优先于目录默认值。个人笔记、短评、备份和搜索输入按文本处理。保存失败保留原文件与输入，并展示可重试的错误。图版读取和动效不得改写个人记录；打卡仅在终点松手并保存成功后呈现完成，取消手势不写入。今日到访明确写入当天日期，补记可以保留日期不详；状态更正保留原日期和笔记。记录更正、评价重置与清空提供按字段撤销，机制与回归命令见 [状态更正与撤销](../ios/README.md#状态更正与撤销)。
 
-网页产品已移除，旧版 JSON 备份仍可直接导入 App，不依赖网页代码或浏览器存储。该任务不清理任何浏览器的历史个人数据。地图、图鉴与图片读取随 App 打包的资源，可离线浏览；没有在线同步。
+网页产品已移除，旧版 JSON 备份仍可直接导入 App，不依赖网页代码或浏览器存储。该任务不清理任何浏览器的历史个人数据。地图、图鉴与图片读取随 App 打包的资源，可离线浏览。社区账号公开同步评分与短评，私人到访数据仍在本机；运行与数据边界见 [联机服务说明](../community/README.md)。
 
 ## 生成文件与命令副作用
 

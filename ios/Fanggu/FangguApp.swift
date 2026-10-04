@@ -4,6 +4,8 @@ import SwiftUI
 @main struct FangguApp: App {
     @StateObject private var library: LibraryStore
     @StateObject private var nearby: LocationCenter
+    @StateObject private var community: CommunityStore
+    @Environment(\.scenePhase) private var scenePhase
 
     init() {
         UITestLaunch.applyAtLaunch()
@@ -16,6 +18,10 @@ import SwiftUI
         _library = StateObject(wrappedValue: library)
         // Created at launch so a geofence or notification that relaunches the app is delivered.
         _nearby = StateObject(wrappedValue: LocationCenter(library: library, defaults: TestScope.defaults(for: TestScope.current)))
+        // Community state sits beside the scoped library so parallel test runs never share accounts or queues.
+        _community = StateObject(wrappedValue: CommunityStore(
+            directory: TestScope.libraryFileURL(for: TestScope.current).deletingLastPathComponent(),
+            defaults: TestScope.defaults(for: TestScope.current)))
     }
 
     var body: some Scene {
@@ -23,7 +29,12 @@ import SwiftUI
             ContentView()
                 .environmentObject(library)
                 .environmentObject(nearby)
+                .environmentObject(community)
                 .tint(Palette.gold)
+                .task { community.attach(library) }
+                .onChange(of: scenePhase) { _, phase in
+                    if phase == .active { Task { await community.synchronize() } }
+                }
         }
     }
 }

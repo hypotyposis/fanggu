@@ -105,6 +105,13 @@ import Foundation
         }
     }
 
+    /// Account switching and remote merges use the same validation and atomic save as local edits.
+    /// Visit records, dates, wishes and notes are never replaced by community synchronization.
+    @discardableResult func replaceCommunityReviews(_ reviews: [String: Review]) -> Bool {
+        guard !loadFailed else { return false }
+        return commit { $0.reviews = reviews }
+    }
+
     @discardableResult func setRecord(_ record: VisitRecord, for site: Monument) -> Bool {
         guard ids.contains(site.id), !loadFailed else { return false }
         guard record != self.record(for: site) else { return true }

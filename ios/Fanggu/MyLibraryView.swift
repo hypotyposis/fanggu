@@ -3,6 +3,7 @@ import UniformTypeIdentifiers
 
 struct MyLibraryView: View {
     @EnvironmentObject private var library: LibraryStore
+    @EnvironmentObject private var community: CommunityStore
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.openURL) private var openURL
     @AppStorage(AppAppearance.storageKey, store: AppAppearance.store) private var appearance = AppAppearance.system.rawValue
@@ -36,6 +37,18 @@ struct MyLibraryView: View {
                     }
                 }
                 FangguRule()
+                Button { community.showingAccount = true } label: {
+                    HStack(spacing: 12) {
+                        if let user = community.user { CommunityAvatar(user: user, size: 40) }
+                        else { Image(systemName: "person.crop.circle").font(.system(size: 27)).foregroundStyle(Palette.gold) }
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text(community.user?.nickname ?? "开启联机，遇见同好").font(FangguFont.serif(15, weight: .medium)).foregroundStyle(Palette.paper)
+                            Text(community.syncLabel).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                        }
+                        Spacer()
+                        Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.gold)
+                    }.padding(.vertical, 6)
+                }.buttonStyle(.plain).accessibilityIdentifier("community-account-entry")
                 NavigationLink(value: PersonalListsRoute()) {
                     VStack(alignment: .leading, spacing: 8) {
                         Label("我的名单", systemImage: "list.bullet.rectangle").font(FangguFont.serif(22))

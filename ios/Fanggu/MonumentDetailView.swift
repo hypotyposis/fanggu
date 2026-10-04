@@ -3,6 +3,7 @@ import SwiftUI
 struct MonumentDetailView: View {
     @EnvironmentObject private var library: LibraryStore
     @EnvironmentObject private var location: LocationCenter
+    @EnvironmentObject private var community: CommunityStore
     @Environment(\.dismiss) private var dismiss
     @ScaledMetric(relativeTo: .caption) private var distanceSize: CGFloat = 11
     let site: Monument
@@ -79,6 +80,10 @@ struct MonumentDetailView: View {
                 if !site.captions.isEmpty {
                     Text(site.captions.joined(separator: " · "))
                         .font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                }
+                if community.online {
+                    FangguRule()
+                    CommunitySiteSection(site: site)
                 }
                 FangguRule()
                 Text(site.lede).font(FangguFont.serif(17)).foregroundStyle(Palette.paper).lineSpacing(8)
@@ -460,6 +465,7 @@ struct VisitEditor: View {
 struct ReviewEditor: View {
     @EnvironmentObject private var library: LibraryStore
     @EnvironmentObject private var undoPresentation: UndoPresentation
+    @EnvironmentObject private var community: CommunityStore
     @Environment(\.dismiss) private var dismiss
     @Environment(\.scenePhase) private var scenePhase
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
@@ -483,6 +489,13 @@ struct ReviewEditor: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     Text(site.name).font(FangguFont.serif(19)).foregroundStyle(Palette.paper)
+                    if community.isAuthenticated {
+                        HStack(alignment: .top, spacing: 8) {
+                            Image(systemName: "globe.asia.australia")
+                            Text("评分与短评自动公开同步。私人记录请写在到访笔记中。")
+                        }.font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
+                        Text(community.syncLabel).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                    }
                     if let message = validationError ?? error {
                         VStack(alignment: .leading, spacing: 8) {
                             Text(message).foregroundStyle(Palette.redText)
