@@ -18,8 +18,8 @@
     "高阁寺 · 阁楼及高台上部",
     "明 · 现存主体"
   ],
-  "status": "needs_review",
-  "visual_review_status": "pending_user",
+  "status": "complete",
+  "visual_review_status": "approved_default",
   "sources": [
     {
       "id": "hn_gaoge",
@@ -108,5 +108,13 @@
       "高阁寺 · 阁楼及高台上部",
       "明 · 现存主体"
     ]
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "1c5c4f84232115ab808e8878d6ae070098739ac9f6905ff0f7be9c04757f96d5",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "20ad57845ec8185ae3a40beae05f4106c36e822e59ca253803ed891256db8d3b"
   }
 }

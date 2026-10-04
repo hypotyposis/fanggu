@@ -65,7 +65,19 @@
     ],
     "limitations": [
       "室内图为局部剖取式表达；藻井和人物雕花不是构件测绘，照片室内色温未经标定。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 12:10:25 UTC"
+  "completed_at": "2026-09-16 12:10:25 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "2dd6258ed8cb8f21c01cf3fcdbc64597ee8d7ac7a259d8c09fac5e267c7b5168",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "b3005cc3413d1e52d99f7aed20da1f9fe59717725908fb34beade4b85c041fd3",
+    "avifSha256": "22aff41e452ff435838b70cd83a7041a82aff01f9ef3ba204a31c10f3c72dd6f"
+  }
 }

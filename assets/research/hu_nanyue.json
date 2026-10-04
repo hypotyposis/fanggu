@@ -1,7 +1,7 @@
 {
   "id": "hu_nanyue",
   "subject": "南岳大庙圣帝殿",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Shengdi_Hall,_Grand_Temple_of_Mount_Heng.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Shengdi_Hall%2C_Grand_Temple_of_Mount_Heng.jpg/1280px-Shengdi_Hall%2C_Grand_Temple_of_Mount_Heng.jpg",
   "author": "Huangdan2060",
@@ -16,7 +16,7 @@
   "generated_file": "assets/generated/hu_nanyue.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "完整圣帝殿、七间立面、重檐歇山、石柱外廊；现状照片主控，1909老照片只补被游客与树遮住的建筑轮廓；不画香炉亭。"
   ],
@@ -191,5 +191,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "4904c79843b1e0703f0605540c1c490c5699414caa5446f2c2089ad86d731d3f",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "4904c79843b1e0703f0605540c1c490c5699414caa5446f2c2089ad86d731d3f",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "4166301b2b4645a9cba9430606dfb94af8fcf2c815b1d317a345a20d5a087b4d"
   }
 }

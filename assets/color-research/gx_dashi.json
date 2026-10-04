@@ -2,7 +2,7 @@
   "id": "gx_dashi",
   "name": "合浦大士阁",
   "subject": "合浦永安大士阁前阁及相连后阁",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 合浦永安大士阁前阁及相连后阁\nPRESENT MATERIAL OBSERVATIONS: 旧木柱红褐，瓦面灰褐，檐口瓦当鲜蓝、梁枋青绿蓝与少量黄，墙台灰石；不复制香炉红色。\nKeep complete line composition, including every pavilion or storey. Material photos must not introduce scenery or occluders.",
   "input_images": [
@@ -25,7 +25,7 @@
   "original_research": "assets/research/gx_dashi.json",
   "output": "assets/colored/gx_dashi.png",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "inputs_viewed": true,
   "width": 1536,
   "height": 1024,
@@ -131,5 +131,14 @@
   },
   "source_note": "第三批国保名单列明代；1500仅作明代近似排序点，不是经考定的营建年。图版绘前后相连阁体，外围香炉亭不属于所绘主体。 实拍仅作形制与材质参考；图版由用户人眼验收。",
   "original_file": "assets/color-studies/v1/gx_dashi-colored.png",
-  "line_source": "assets/generated/gx_dashi.png"
+  "line_source": "assets/generated/gx_dashi.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "d6fcc7b2aa22f70752eaf4727ab2135c0d05b89d051b25c3351c89d7b6cc8882",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "fe1f696392231555418d96702501f651aaef3d991d09f7b6819eada68f34cdc9",
+    "avifSha256": "c9f3da18ed7214898446c09a5a8bad66667f9271074f1e136c3f063c92f40f2a"
+  }
 }

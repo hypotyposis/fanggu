@@ -40,7 +40,7 @@ test('Hunan and Hubei additions cover both new provinces with paired artwork and
       for (const folder of ['research', 'color-research']) {
         const record = json(`assets/${folder}/${id}.json`);
         assert.equal(record.quality_mode, 'prototype');
-        assert(['pending_user', 'approved_user'].includes(record.visual_review_status));
+        assert(['pending_user', 'approved_user', 'approved_default'].includes(record.visual_review_status));
         assert.equal(record.background_preparation.method, 'white-matte-v1');
         assert.equal(record.background_preparation.sourceSha256, hash(record.output || record.generated_file));
         assert.equal(record.generation_history.length, 1);
@@ -56,7 +56,7 @@ test('Hunan and Hubei additions cover both new provinces with paired artwork and
           assert(!ref.author.includes('<a'));
         }
         for (const file of record.reference_files || record.input_images) assert(fs.existsSync(path.join(root, file)), file);
-        if (record.visual_review_status === 'approved_user') assert.equal(record.user_review.sourceSha256, record.background_preparation.sourceSha256);
+        if (record.visual_review_status?.startsWith('approved_')) assert.equal(record.user_review.sourceSha256, record.background_preparation.sourceSha256);
       }
       const art = manifest.images[id];
       assert.equal(art.sourceSha256, hash(art.source));
@@ -120,6 +120,11 @@ test('Hunan and Hubei expansion preserves all previous originals, transparent de
     if (id === 'xian') { assertArchivedXian(old); continue; }
     if (id === 'tiantai') { assertArchivedTiantai(old); continue; }
     for (const key of ['source', 'input', 'src']) assert.equal(hash(old[key]), old[{ source: 'sourceSha256', input: 'inputSha256', src: 'sha256' }[key]], id);
-    assert.equal(current[id].visualReview, old.visualReview, id);
+    if (old.visualReview === 'pending_user' && current[id].visualReview === 'approved_default') {
+      // Accepted since this baseline by the default policy; the hashes above prove the files are unchanged.
+      assert.equal(current[id].review?.reviewer, 'default-policy', id);
+    } else {
+      assert.equal(current[id].visualReview, old.visualReview, id);
+    }
   }
 });

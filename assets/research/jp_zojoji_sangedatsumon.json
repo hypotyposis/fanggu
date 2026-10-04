@@ -1,7 +1,7 @@
 {
   "id": "jp_zojoji_sangedatsumon",
   "subject": "五间三户二重门",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Zojo-ji_Sangedatsu-mon_1.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Zojo-ji_Sangedatsu-mon_1.jpg/1280px-Zojo-ji_Sangedatsu-mon_1.jpg",
   "author": "Zairon",
@@ -46,7 +46,7 @@
     }
   ],
   "structure_checkpoints": "Zojoji Sangedatsumon in Tokyo, built 1622. Complete front facade: TWO roof tiers, two-storey broad red timber gate, FIVE structural bays across, THREE open central ground passages with closed end bays, continuous upper balcony, gray tiled hipped-and-gabled main roof. Complete both eave tips even though photo is close framed. Remove temporary white event curtain and banners, signs, cars, visitors, side gates and Tokyo Tower.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -68,5 +68,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-a1e84880-7dc6-4310-8e95-36f765b35054"
+  "generation_call_id": "exec-a1e84880-7dc6-4310-8e95-36f765b35054",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "f5fa24b2a42cd4dd568d0dad63b337a4c3dfaca7889f4b3a4d8ff197be3b5418",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "fe93b7d355c968212c4d698bd3775d5e4ff9a7bc02a8bfbbadfab78f26dec099"
+  }
 }

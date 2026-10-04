@@ -98,12 +98,16 @@ test('all ten keep source-bound originals and review history; repaired lines awa
     assert(line.sources[0].source_page.startsWith('https://commons.wikimedia.org/wiki/File:'), id);
     assert(line.sources[0].author && line.sources[0].license, id);
     const lineReview = repairedLines[id] ? line.user_review_history.at(-1) : line.user_review;
-    assert.equal(line.visual_review_status, repairedLines[id] ? 'pending_user' : 'approved_user', id);
+    assert.equal(line.visual_review_status, repairedLines[id] ? 'approved_default' : 'approved_user', id);
     assert.equal(lineReview.status, 'approved_user', id);
     assert.equal(lineReview.statement, '验收没问题', id);
     assert.equal(lineReview.sourceSha256, sha(line.generated_file), id);
     if (repairedLines[id]) {
-      assert.equal(line.user_review, undefined, id);
+      // The repaired delivery carries the default approval; the user's earlier acceptance stays in history.
+      assert.equal(line.user_review.status, 'approved_default', id);
+      assert.equal(line.user_review.reviewer, 'default-policy', id);
+      assert.equal(line.user_review.sourceSha256, sha(line.generated_file), id);
+      assert.equal(line.user_review.lineSha256, sha(`assets/plates/${id}.png`), id);
       assert.equal(lineReview.lineSha256, sha(line.line_repair.previous_delivery), id);
       assert.notEqual(lineReview.lineSha256, sha(`assets/plates/${id}.png`), id);
     } else {

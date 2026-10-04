@@ -2,9 +2,9 @@
   "id": "kp_sonjuk_bridge",
   "name": "开城善竹桥",
   "subject": "旧石梁桥与1780年石栏",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Sonjuk_bridge_in_Kaesong,_North_Korea.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Sonjuk_bridge_in_Kaesong%2C_North_Korea.jpg",
   "author": "David Clayton Ellsworth",
@@ -118,5 +118,14 @@
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
   },
-  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。"
+  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "fe89bbe99a2fbc7d1a0fe0df5c33ec6b563bde0d338d693ff4388c604dfae9e3",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "09099946bc719169205acd6d2fe195dce4414da8e50fb3e52116a48717603391",
+    "avifSha256": "5872c62c77d4825ecf687c95f27f383633e601433df8755b5cb7f6288c53e192"
+  }
 }

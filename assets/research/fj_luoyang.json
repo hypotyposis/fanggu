@@ -38,7 +38,7 @@
       "selected_for_preview": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-61045909-fccf-4cd3-9b5d-d20bf668b1b3.png",
   "dimensions": {
     "width": 1536,
@@ -59,5 +59,13 @@
       "title": "福建及地方主管部门：所绘主体资料",
       "url": "https://fj.gov.cn/zwgk/ztzl/sxzygwzxsgzx/flsxkmh/202605/t20260515_7148175.htm"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "e2e897fd042cb72a3df416439e0884eb692a4490c22806d3448cc2851e2a0af5",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "53c150b95bf337be8bda06c82d88bd1c4945ee98e3a1bb5f1048d9b0b62e05fe"
+  }
 }

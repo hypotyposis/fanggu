@@ -18,8 +18,8 @@
     "郑州城隍庙 · 三间大殿正面",
     "明清 · 现存主体"
   ],
-  "status": "needs_review",
-  "visual_review_status": "pending_user",
+  "status": "complete",
+  "visual_review_status": "approved_default",
   "sources": [
     {
       "id": "hn_zzchenghuang",
@@ -108,5 +108,13 @@
       "郑州城隍庙 · 三间大殿正面",
       "明清 · 现存主体"
     ]
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "ae610b10577c949b3f6a13818b7b6c40a48757bdb48b939e92053b7c54642a05",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "cbcab4a06387dbdb07cd06de10d71047fd6bcbd56c9fa224d4fa679af9b05f71"
   }
 }

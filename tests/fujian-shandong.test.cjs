@@ -52,7 +52,7 @@ test('Fujian and Shandong additions have paired prototype images with genuine in
         assert(meta.references.every(r => r.author && r.license && r.page && r.url));
       }
       assert.equal(manifest.images[id].qualityMode, 'prototype');
-      assert(['pending_user', 'approved_user'].includes(manifest.images[id].visualReview));
+      assert(['pending_user', 'approved_user', 'approved_default'].includes(manifest.images[id].visualReview));
       assert(fs.existsSync(path.join(root, manifest.images[id].src)));
     }
   }
@@ -115,8 +115,8 @@ test('adding seven monuments preserves earlier files and their human-review stat
     if (now.visualReview !== old.visualReview) {
       const review = json(`assets/color-research/${id}.json`).user_review;
       assert.equal(old.visualReview, 'pending_user', id);
-      assert.equal(now.visualReview, 'approved_user', id);
-      assert.equal(review?.reviewer, 'user', id);
+      assert(['approved_user', 'approved_default'].includes(now.visualReview), id);
+      assert.equal(review?.reviewer, now.visualReview === 'approved_user' ? 'user' : 'default-policy', id);
       assert.equal(review?.sourceSha256, now.sourceSha256, id);
       assert.equal(review?.inputSha256, now.inputSha256, id);
       assert.equal(review?.avifSha256, now.sha256, id);

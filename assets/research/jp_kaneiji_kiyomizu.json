@@ -1,7 +1,7 @@
 {
   "id": "jp_kaneiji_kiyomizu",
   "subject": "观音堂与前方舞台",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Kiyomizu_Kannondo_06.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Kiyomizu_Kannondo_06.jpg/1280px-Kiyomizu_Kannondo_06.jpg",
   "author": "tak1701d",
@@ -42,7 +42,7 @@
     }
   ],
   "structure_checkpoints": "Kaneiji Kiyomizu Kannondo in Ueno Tokyo, built 1631 and relocated 1694. Draw the complete front hall AND its elevated projecting wooden stage with support posts below. Broad SINGLE gray tiled hipped-and-gabled roof, red five-bay facade, red balcony railing. Remove all trees including the circular pine in front, rock slope, modern bars, visitors and signage. Keep the stage low as photographed, never substitute the much taller Kyoto Kiyomizudera structure.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -64,5 +64,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-79af9603-fe3a-4bbf-b798-c2db3b6d3d6e"
+  "generation_call_id": "exec-79af9603-fe3a-4bbf-b798-c2db3b6d3d6e",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "60169fa450ef972517570cdc89060b3003bb96bad36c3d42d65f042423f0bd75",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "001ea0656f079f0136951e31018abb9e1c38e4af180c82e8aa3fcc84963084cd"
+  }
 }

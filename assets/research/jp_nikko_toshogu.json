@@ -61,5 +61,13 @@
     ],
     "limitations": "对繁密雕饰作选择性概括，图稿不能充当逐件装饰的实测记录。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "aba382dec555144fbd266d38fd7370f2d547827090c523d38d26f5d36c18c4b8",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ba9fe833c2521048823acc8aa7043473272e7f3d1c5d7648a36d4318e0e1afc3"
+  }
 }

@@ -2,7 +2,7 @@
   "id": "hn_linfeng",
   "name": "临沣寨",
   "subject": "临沣寨 · 西门及相连红石寨墙",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_linfeng.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_linfeng.json",
   "output": "assets/colored/hn_linfeng.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:27:36.142Z",
   "generated_at": "2026-10-01T19:30:39.893288+00:00",
@@ -105,5 +106,15 @@
       "临沣寨 · 西门及相连红石寨墙",
       "清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "35754e41669a0dc317263f9ddd431d12d6eb9376e548003662907686767c8cb7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "528c0032c603bbe8b4ff103dee6190bde58ea8e886d27440fef5ebd250837d31",
+    "avifSha256": "d6aa5a4d8736bac9c1b368160482fdd6a1eef94d57ed52ae71db54f030adcbeb"
   }
 }

@@ -35,16 +35,15 @@ test('new entries are unvisited and have source-bound, transparent artwork', () 
     assert.equal(site.initialStatus, 'unvisited');
     assert(PLACES.some(place => place.key === site.placeKey));
     assert.equal(entry.length, 1);
-    // Bingling was already added on main as a prototype and still awaits review.
-    const expectedStatus = id === 'gs_bingling' ? 'needs_review' : 'complete';
-    assert.equal(line.status, expectedStatus);
-    assert.equal(color.status, expectedStatus);
+    // Bingling entered as a prototype awaiting review; the default policy has since completed both records.
+    assert.equal(line.status, 'complete');
+    assert.equal(color.status, 'complete');
     assert.equal(line.background_preparation.sourceSha256, hash(line.generated_file));
     assert.equal(color.background_preparation.sourceSha256, hash(color.output));
     assert(line.sources.every(source => /^https?:\/\//.test(source.source_page)));
     assert.equal(delivered.sourceSha256, hash(color.output));
     assert.equal(delivered.alpha.min, 0);
     assert.equal(delivered.alpha.max, 255);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default');
   }
 });

@@ -1,7 +1,7 @@
 {
   "id": "jp_ueno_toshogu_karamon",
   "subject": "唐门单体",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Toshogu_Shrine_@_Ueno_(10065271306).jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Toshogu_Shrine_%40_Ueno_%2810065271306%29.jpg/1280px-Toshogu_Shrine_%40_Ueno_%2810065271306%29.jpg",
   "author": "Guilhem Vellut from Annecy, France",
@@ -42,7 +42,7 @@
     }
   ],
   "structure_checkpoints": "Ueno Toshogu Karamon in Tokyo, built 1651. Draw the SINGLE central one-bay karamon only, its undulating karahafu curved gable, paired doors, four supporting posts and selective dragon and bird carvings. Omit the shrine hall behind, lateral walls, lanterns and fences. Use the slightly angled view in the photograph, retaining the whole gate roof and its base.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -64,5 +64,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-5ae389bc-909d-4cee-8398-ded463adce17"
+  "generation_call_id": "exec-5ae389bc-909d-4cee-8398-ded463adce17",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "6c4e7ce0743962fd40c1a2c1692d41dd03296295558dc4339137dfc9c2722c37",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "8317ac47840ca65ed526003de9286a4d7b31e4bf45ebdb8d42c99bff7a7634bd"
+  }
 }

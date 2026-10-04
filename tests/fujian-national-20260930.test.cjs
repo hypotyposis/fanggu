@@ -40,9 +40,10 @@ test('ten distinct Fujian national units have scoped titles, saved references an
     assert.equal(queue.entries.filter(item => item.id === id).length, 1, id);
     const line = json(`assets/research/${id}.json`);
     const color = json(`assets/color-research/${id}.json`);
-    assert.equal(line.visual_review_status, 'pending_user', id);
-    assert.equal(color.visual_review.status, 'pending_user', id);
-    assert.equal(color.user_review, undefined, id);
+    assert.equal(line.visual_review_status, 'approved_default', id);
+    assert.equal(color.visual_review.status, 'approved_default', id);
+    assert.equal(color.user_review.status, 'approved_default', id);
+    assert.equal(color.user_review.reviewer, 'default-policy', id);
     assert(line.prompt && color.prompt && line.source_page.startsWith('https://commons.wikimedia.org/wiki/File:'), id);
     assert(color.references.photo_sources[0].author && color.references.photo_sources[0].license, id);
     for (const record of [line, color]) {
@@ -50,7 +51,7 @@ test('ten distinct Fujian national units have scoped titles, saved references an
       assert.equal(record.background_preparation.sourceSha256, hash(record.generated_file || record.output), id);
     }
     const image = delivered.images[id];
-    assert.equal(image.visualReview, 'pending_user', id);
+    assert.equal(image.visualReview, 'approved_default', id);
     assert.equal(image.sourceSha256, hash(color.output), id);
     for (const file of [line.generated_file, color.output, image.src, ...line.reference_files]) {
       assert(fs.existsSync(path.join(root, file)), file);

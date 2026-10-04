@@ -40,7 +40,9 @@
     "limitations": [
       "用户视觉验收待确认，艺术图版非实测。",
       "两矩形窗显露白色远端透空；上部三角孔为灯室内部暗腔，保留暗部，不强制去为白底。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
   "background_preparation": {
     "method": "white-matte-v1",
@@ -70,5 +72,15 @@
     "image_loads_passed": true,
     "subject_and_materials_preserved": true,
     "user_acceptance": "pending_user"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "dbb505081ab76ee157be65fec4ed97b49a0a53498660c094f32987d2f8a39a59",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "d56d1292974b34196d4391537d131f30405718fc43e42e6a196364d066a1085a",
+    "avifSha256": "bb8d6f076b7e87e48c59fe55a851aad80527216e7c731ccddc46c79fdf5fb2d4"
   }
 }

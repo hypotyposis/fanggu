@@ -58,7 +58,7 @@
     ],
     "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
   },
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "user_review_history": [
     {
       "status": "approved_user",
@@ -80,5 +80,13 @@
     },
     "previous_delivery": "assets/research/history/line-repairs-20261003/jp_tofukuji_sanmon-before.png",
     "review_status": "pending_user"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "16d52904d6095fb7a856dd5918b2da52ffd526991ce8d276c7863cca9433992e"
   }
 }

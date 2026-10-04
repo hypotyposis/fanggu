@@ -2,7 +2,7 @@
   "id": "hn_jiahuiguan",
   "name": "郏县山陕会馆",
   "subject": "郏县山陕会馆 · 门楼与钟鼓楼组合",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_jiahuiguan.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_jiahuiguan.json",
   "output": "assets/colored/hn_jiahuiguan.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:27:36.142Z",
   "generated_at": "2026-10-01T19:30:39.889577+00:00",
@@ -100,5 +101,15 @@
       "郏县山陕会馆 · 门楼与钟鼓楼组合",
       "清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "ebac7067d9294424b6bf76910ae14046c232efb1d8583336432008ef81c306a4",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "e244652297040e491a8f124a3923bb2822a9c62a5e343ee7920773e52d43f176",
+    "avifSha256": "8c0a43009a659d587015b842bdfe6d985c73d9e6614a22424c82b31f0bf99871"
   }
 }

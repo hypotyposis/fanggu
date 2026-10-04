@@ -1,7 +1,7 @@
 {
   "id": "jp_gokokuji_hondo",
   "name": "护国寺本堂",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_gokokuji_hondo.png",
@@ -35,9 +35,10 @@
   ],
   "output": "assets/colored/jp_gokokuji_hondo.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-df1b7f16-8a65-466b-82dc-394615a82162.png",
   "background_preparation": {
@@ -79,5 +80,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-df1b7f16-8a65-466b-82dc-394615a82162"
+  "generation_call_id": "exec-df1b7f16-8a65-466b-82dc-394615a82162",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "3ebaf79044d852685be8d99ae0cf2ffed9005bbe7495968a75c4c02fd0517de6",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "163258b53aa29cca75e33ff249f7b947e123008c7b9227d56d762ded4b13dbca",
+    "avifSha256": "88b73406b45698bccc1d0349589ab70ee59dcfee15fc3d0932032e094c60e02a"
+  }
 }

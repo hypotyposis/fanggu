@@ -1,7 +1,7 @@
 {
   "id": "jp_asakusa_jinja",
   "name": "浅草神社",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_asakusa_jinja.png",
@@ -31,9 +31,10 @@
   ],
   "output": "assets/colored/jp_asakusa_jinja.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-a49a89c7-77c5-418b-8ecd-d0083c226375.png",
   "background_preparation": {
@@ -49,5 +50,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-a49a89c7-77c5-418b-8ecd-d0083c226375"
+  "generation_call_id": "exec-a49a89c7-77c5-418b-8ecd-d0083c226375",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "f5a585f98450f3a02707b591e9adc0063e10abcebf278750261c901d3a6295e4",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f66bda788bf75f698ac744a60cc27bb26b6813072177f19df531e6b1e2f58668",
+    "avifSha256": "8b2cc2f9e2ce200fb84f153cc60b52473b593a6501433546444a7e36544e0908"
+  }
 }

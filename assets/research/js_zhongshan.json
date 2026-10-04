@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-1ff4a16b-f434-447d-b1ff-79df55023b3a.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,13 @@
     "sourceSha256": "7630f9c849bc6b7cc7c055bdfb0f61f39f5abcc83628d514096cf0f34d1389f6",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "7630f9c849bc6b7cc7c055bdfb0f61f39f5abcc83628d514096cf0f34d1389f6",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "eddb44020ee646a6e8b6e3bc284a72ea56c364be5d4af363eacf32d12b4065d3"
+  }
 }

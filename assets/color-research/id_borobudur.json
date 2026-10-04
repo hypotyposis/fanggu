@@ -2,9 +2,9 @@
   "id": "id_borobudur",
   "name": "婆罗浮屠",
   "subject": "现存主体与完整基座",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Borobudur-Nothwest-view.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Borobudur-Nothwest-view.jpg/1920px-Borobudur-Nothwest-view.jpg",
   "author": "Gunawan Kartapranata",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "56fcc7bb5dd7075227a8cbff4919ea7b6d4f57e5fecdb6485c50f2526b26fb5c",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "60eeada6a19ab28a546752e656a895de1490a3cf1eed0c9736a76a2ea7c66b34",
+    "avifSha256": "0652e8d3fe6a9eab8d0bbf4089ccc71e492202e1eb9722d83103471045f14b85"
   }
 }

@@ -58,5 +58,13 @@
     ],
     "limitations": "本图为依据实拍绘制的示意图，不是测绘图；不可见构件不作为历史证据。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "614e713003e10cc21b72bd4602d81ecd1f391a88b9646fc580e61b7dcf09cb4e",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "d2a5535940bf20223c01113308fd476777c1cd6e778b3609b793f293fad2fe37"
+  }
 }

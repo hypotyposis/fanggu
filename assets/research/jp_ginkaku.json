@@ -61,5 +61,13 @@
     ],
     "limitations": "银阁并无银箔；照片遮挡的部分按可见屋顶和壁面概括，等待用户审图。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "fbe4ecd56e10276b69a30bb2d94d4dae35d550bbaff7fe381d8a5328e1b33c61",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "97fb4c27ffe42df41c8f4b60276e3378d110e3447ce63c00fd9a4363818439e0"
+  }
 }

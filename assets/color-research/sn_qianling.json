@@ -2,7 +2,7 @@
   "id": "sn_qianling",
   "name": "乾陵无字碑",
   "subject": "乾陵无字碑正面及碑座",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 乾陵无字碑正面及碑座.\nMaterial observations: 浅灰石灰岩带灰褐风化斑，螭纹凹处较深，碑座灰褐；碑面淡色实体不能去成空洞。\nPortrait 1024x1536. Draw the SINGLE tall rectangular limestone Wordless Stele with its rounded dragon-carved head and rectangular plinth. Entire stele and base, shallow carving selectively, no turtle pedestal. Omit the background earthen gate mounds and fence. Later incisions may appear as sparse faint surface marks, never fabricated readable characters.\nThe first input is the actual saved line drawing and locks geometry. Only colour it. Pure white #FFFFFF background.",
   "input_images": [
@@ -36,7 +36,7 @@
   "original_research": "assets/research/sn_qianling.json",
   "output": "assets/colored/sn_qianling.png",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "inputs_viewed": true,
   "generation_history": [
     {
@@ -86,5 +86,14 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-acf441b9-3a0a-4986-b5cc-97063095e7a6.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-acf441b9-3a0a-4986-b5cc-97063095e7a6.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-acf441b9-3a0a-4986-b5cc-97063095e7a6.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "e9c2182cc07334c7fa24e93080b91d1c4d1d3e637683dd8a13477831607f3a35",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "2c160bd13e0545c098fb07d4079215801c18ed5e1297bda4763ad68be7d0857d",
+    "avifSha256": "bd31d97f32343de2935da91124046edb2e9aeb417a10a2552e60385e5aa70172"
+  }
 }

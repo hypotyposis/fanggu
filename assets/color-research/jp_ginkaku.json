@@ -36,11 +36,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已查看原稿与实拍材料色；不等于用户视觉验收。下层与树木遮挡部分按可见实拍及线稿意写，待用户审图。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "24e92d9abcfaca7b4e0a97aa7b7236dd2a94fc0a13755d62da0cd56e3c3c0b00",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "7ecdcf5db34ac78a16817c5483b8723a3ba3fbd1fef40e83c5cd1fde2da8d4f2",
+    "avifSha256": "c3766ea38a3bef9eb77fee4a0930f46e168d32fb92cb0531baacfba514444619"
   }
 }

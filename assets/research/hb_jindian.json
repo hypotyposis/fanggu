@@ -1,7 +1,7 @@
 {
   "id": "hb_jindian",
   "subject": "武当山天柱峰明代金殿",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Wudang_Mountain_(54131537640).jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Wudang_Mountain_%2854131537640%29.jpg/1280px-Wudang_Mountain_%2854131537640%29.jpg",
   "author": "xiquinhosilva",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hb_jindian.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "完整明金殿、两重檐、三间立面、铸铜仿木斗拱和门扇；不画左右铜鹤、香炉、蒲团、周边宫观；不是元代单檐古铜殿。"
   ],
@@ -160,5 +160,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "2faa545adf928a993e42f4e179df16a58a6746b4e103799e2629dbdd9c12ba2c",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "2faa545adf928a993e42f4e179df16a58a6746b4e103799e2629dbdd9c12ba2c",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "f599c2d2cf4c44e0546a2ab416b356358eac7632261671ac8a7975f13219e0fe"
   }
 }

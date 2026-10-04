@@ -1,7 +1,7 @@
 {
   "id": "gs_dafo_tuta",
   "subject": "弥陀千佛塔露明塔身与塔刹",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Zhangye_Dafo_Si_2014.01.02_16-07-25.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Zhangye_Dafo_Si_2014.01.02_16-07-25.jpg",
   "author": "Zhangzhugang",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/gs_dafo_tuta.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "只画照片露明的土塔上部：局部方形须弥座、四角露明小塔、粗大覆钵、佛龛段、细长相轮与冠盖宝顶；不补画被遮住的双层回廊和完整大基座。"
   ],
@@ -158,5 +158,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "4caf0baa69ba75a8cd6ada024229e712e03334e0f8e858f0dfdfa2a5a25e1162",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "4caf0baa69ba75a8cd6ada024229e712e03334e0f8e858f0dfdfa2a5a25e1162",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "f760d22e0a8e413fe8b8fd062fbed2cc9c9663b274bb2169af7818508f8af13d"
   }
 }

@@ -57,5 +57,13 @@
     ],
     "limitations": "图版为依据实拍的建筑示意，不等同测绘图。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "6b4b692ba22f7a9072452b7c7aef6568a9e2bff020e2d3cc109a6ebeba4fa005",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "73ecf0a9b1a7b9f81260d7ac70035239551419748694636c8de9f43c8c989dcf"
+  }
 }

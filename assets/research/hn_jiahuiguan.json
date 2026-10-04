@@ -18,8 +18,8 @@
     "郏县山陕会馆 · 门楼与钟鼓楼组合",
     "清 · 现存主体"
   ],
-  "status": "needs_review",
-  "visual_review_status": "pending_user",
+  "status": "complete",
+  "visual_review_status": "approved_default",
   "sources": [
     {
       "id": "hn_jiahuiguan",
@@ -110,5 +110,13 @@
       "郏县山陕会馆 · 门楼与钟鼓楼组合",
       "清 · 现存主体"
     ]
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "ffc90c7f1c6988b9b6f8fcf944ac76045126ae30f646e36a3720571914d9adad",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "685af180aa6ffa9fd08a17f095949c05d93d940b734c5200a2992efdc04e6213"
   }
 }

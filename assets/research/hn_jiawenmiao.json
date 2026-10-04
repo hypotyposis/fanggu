@@ -18,8 +18,8 @@
     "郏县文庙 · 大成殿正面",
     "明清 · 现存主体"
   ],
-  "status": "needs_review",
-  "visual_review_status": "pending_user",
+  "status": "complete",
+  "visual_review_status": "approved_default",
   "sources": [
     {
       "id": "hn_jiawenmiao",
@@ -109,5 +109,13 @@
       "郏县文庙 · 大成殿正面",
       "明清 · 现存主体"
     ]
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "54da3c5662a8642659400dd6c891aa57dfa165affbf28b44d332289390404888",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "6129207aa58c26196791f5a7e24e80e63639f00b7733094800e82496e96906c8"
   }
 }

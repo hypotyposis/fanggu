@@ -82,7 +82,19 @@
     ],
     "limitations": [
       "修订时局部细线与颜料纹理有小幅变化，不宣称严格像素配准；雕花、纵深取景与照片色温为艺术概括。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 12:31:15 UTC"
+  "completed_at": "2026-09-16 12:31:15 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "abcff7de32bd71cc5c9f62a6b17f77b397db2a4dfd305825c388a31119b01a63",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "0a15c67ab1a9756e1e810c841211317cc32c9aef0af0f9fd5268d5672402ce70",
+    "avifSha256": "7a8fbd64f6ebf38d4e9bac8339031c90b4c7123ba287815a8e6471fe611dd483"
+  }
 }

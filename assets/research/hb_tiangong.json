@@ -1,9 +1,9 @@
 {
   "id": "hb_tiangong",
   "subject": "丰润天宫寺塔整塔",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg",
   "author": "維基小霸王",
@@ -133,5 +133,13 @@
       "sha256": "c92691b680ef959805e17543d394c1055f56213f7d0d6d20f11e74946e489740",
       "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E5%AE%AB%E5%AF%BA%E5%A1%94_%E6%AD%A3%E9%9D%A2.jpg"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "2e66fec23c58ed4e188c6596c5a0a2cc8b956dc75b71293d0884a4f3572d5d77",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1dae633c509cd31624b010c2c035e138337c41eb694eb3299068947141fd3a82"
+  }
 }

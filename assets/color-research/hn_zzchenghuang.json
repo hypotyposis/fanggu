@@ -2,7 +2,7 @@
   "id": "hn_zzchenghuang",
   "name": "郑州城隍庙",
   "subject": "郑州城隍庙 · 三间大殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_zzchenghuang.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_zzchenghuang.json",
   "output": "assets/colored/hn_zzchenghuang.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:22:14.277Z",
   "generated_at": "2026-10-01T19:30:39.889576+00:00",
@@ -98,5 +99,15 @@
       "郑州城隍庙 · 三间大殿正面",
       "明清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "b4227ce86a30e4537446409b6854edf03c449f51a3801016f70867cdf4bd52d6",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f3fbd1311eef48ec732784824786e01783490c7429b5bca407f01afab7bc6d4f",
+    "avifSha256": "9f3e5c00e3cc235b67879b38e2763c5a7e39a3398959f6031b01672c288ffc7f"
   }
 }

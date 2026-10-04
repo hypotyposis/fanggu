@@ -57,5 +57,13 @@
     ],
     "limitations": "参考照片显示桥体与河岸；图版两端桥台建筑为简化意写，右端局部接近画幅边缘，待用户审阅。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "b0d4bf75d66f418f244137deb73f6b2e4bb7a3bb5fe62d023533806e5d880292",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "df42273cc4174bc75604574cdd9c666d0bb0a164164e72f81a0ef92a23421425"
+  }
 }

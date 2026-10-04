@@ -2,9 +2,9 @@
   "id": "kh_banteay_srei",
   "name": "女王宫",
   "subject": "中央三祠塔与共同台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Banteay_Srei_32a.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Banteay_Srei_32a.jpg/1920px-Banteay_Srei_32a.jpg",
   "author": "Olaf Tausch",
@@ -139,5 +139,13 @@
     "original_viewed": true,
     "visual_verdict": "pending_user",
     "note": "已实际查看解码原件；按原型约定保留供用户审阅，不作视觉通过或淘汰判断。"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "538e1ac711382c987455dd922831b3c62d56050ce22dc9e8cb234da9554af2f3",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "64186ae25f46d1131cbe5701839b731e0e5d2628d30e25dcce5ab54bee38c06e"
   }
 }

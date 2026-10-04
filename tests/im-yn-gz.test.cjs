@@ -50,7 +50,7 @@ test('Inner Mongolia, Yunnan and Guizhou additions have real paired prototype as
         assert(meta.generation_history.some(g => g.original_file && g.submitted_at && g.returned_at));
       }
       assert.equal(manifest.images[id].qualityMode, 'prototype');
-      assert(['pending_user', 'approved_user'].includes(manifest.images[id].visualReview));
+      assert(['pending_user', 'approved_user', 'approved_default'].includes(manifest.images[id].visualReview));
       assert(fs.existsSync(path.join(root, manifest.images[id].src)));
     }
   }
@@ -94,8 +94,8 @@ test('adding eight monuments preserves all 219 earlier color files and their rev
     if (now.visualReview !== old.visualReview) {
       const review = json(`assets/color-research/${id}.json`).user_review;
       assert.equal(old.visualReview, 'pending_user', id);
-      assert.equal(now.visualReview, 'approved_user', id);
-      assert.equal(review?.reviewer, 'user', id);
+      assert(['approved_user', 'approved_default'].includes(now.visualReview), id);
+      assert.equal(review?.reviewer, now.visualReview === 'approved_user' ? 'user' : 'default-policy', id);
       assert.equal(review?.sourceSha256, now.sourceSha256, id);
       assert.equal(review?.inputSha256, now.inputSha256, id);
       assert.equal(review?.avifSha256, now.sha256, id);

@@ -2,9 +2,9 @@
   "id": "kr_buseoksa_muryangsujeon",
   "name": "浮石寺无量寿殿",
   "subject": "单座无量寿殿与台阶",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
   "author": "Bernard Gagnon",
@@ -127,5 +127,13 @@
     "original_viewed": true,
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "a173d667c589d697f7b9ef0f8b94099420151da767a01b5844100ba979abba34",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "8f4f7026edcfc266759068a8291e79c8a4de444fa3655cfa8e7462958ea8003c"
   }
 }

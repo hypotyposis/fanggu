@@ -30,20 +30,21 @@ test('Henan national ten have distinct protected scopes, source records and comp
     assert(protectedScope.scope.includes(item.subject));
     assert(protectedScope.scopeSources.length > 0);
     assert.equal(protection.sources[protectedScope.source].batch, item.batch);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default');
     assert(delivery.images[id].alpha.transparentPixels > 0);
     assert(delivery.images[id].alpha.opaquePixels > 0);
     for (const folder of ['research', 'color-research']) {
       const meta = json(`assets/${folder}/${id}.json`);
       const original = meta.generated_file || meta.output;
-      assert.equal(meta.status, 'needs_review');
+      assert.equal(meta.status, 'complete');
       assert.equal(meta.background_preparation.method, 'white-matte-v1');
       assert.equal(meta.background_preparation.sourceSha256, createHash('sha256').update(fs.readFileSync(path.join(root, original))).digest('hex'));
       assert(meta.historical_sources.length > 0);
       assert(meta.input_images.every(file => fs.existsSync(path.join(root, file))));
       assert.equal(meta.generation_history.length, 1);
       assert.equal(meta.generation_history[0].prompt, meta.prompt);
-      assert(!meta.user_review);
+      assert.equal(meta.user_review.status, 'approved_default');
+      assert.equal(meta.user_review.reviewer, 'default-policy');
     }
   }
 });

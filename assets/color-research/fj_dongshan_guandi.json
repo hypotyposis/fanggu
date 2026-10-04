@@ -34,10 +34,11 @@
   },
   "output": "assets/colored/fj_dongshan_guandi.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型阶段保留候选，待用户集中审图。"
+    "notes": "原型阶段保留候选，待用户集中审图。",
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-6895decd-68e3-44ad-bdfd-b3c2f4df354c.png",
   "width": 1536,
@@ -46,5 +47,15 @@
     "method": "white-matte-v1",
     "sourceSha256": "d6c1162396c88f9117438bfdb0286ea87eca15ee333a57252cbb6ec0c2ec4410",
     "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "d6c1162396c88f9117438bfdb0286ea87eca15ee333a57252cbb6ec0c2ec4410",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f2786a71f5f3904295f3ec392a362c9ab5402f1bcb89e6ded123018a2b46b617",
+    "avifSha256": "2d3a48f152470d37202f1d76b1ba3794c63b419ba957bc611bf9a044088edd1d"
   }
 }

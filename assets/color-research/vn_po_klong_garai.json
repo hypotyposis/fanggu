@@ -2,9 +2,9 @@
   "id": "vn_po_klong_garai",
   "name": "波克朗加莱主塔",
   "subject": "现存主祠塔与入口、台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Po_Klong_Garai,_Champa_Hindu_temples_complex_01.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Po_Klong_Garai%2C_Champa_Hindu_temples_complex_01.jpg/1920px-Po_Klong_Garai%2C_Champa_Hindu_temples_complex_01.jpg",
   "author": "Ms Sarah Welch",
@@ -146,7 +146,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "d7741b0322eaf7618d3e37b21cf648b5ab978ef30d18f97f1e226c6eb57095aa",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f5291dd827a86cf59fec8ea2b637665d5704ee2baee90ff849e064bc2eaff1a9",
+    "avifSha256": "aa4c2340ea96b37db1670724b769d3f86055e6a44d33456a1723bd940bfaee65"
   }
 }

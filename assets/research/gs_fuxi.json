@@ -1,7 +1,7 @@
 {
   "id": "gs_fuxi",
   "subject": "伏羲庙仪门",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/%E4%BC%8F%E7%BE%B2%E5%BA%99%E5%86%85_01.jpg",
   "author": "Shizhao",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/gs_fuxi.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "五间单檐仪门与门前短台阶；红柱与通透的中央通道；不画后方先天殿、柏树和左右附属建筑；牌匾留白。"
   ],
@@ -175,5 +175,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "5bec5f4a63bbb214ebfcf7c084602a456940c65e05734479f4d24bdadd75d9c5",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "5bec5f4a63bbb214ebfcf7c084602a456940c65e05734479f4d24bdadd75d9c5",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "cfbbf7aa096b1b5d59dbb6a2e1210134f43652e2e402f564fe7eb7059cbce761"
   }
 }

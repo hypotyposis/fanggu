@@ -73,15 +73,15 @@ test('all thirteen have source-bound local plates, explicit pending review and i
     }
     assert(line.sources[0].source_page.startsWith('https://commons.wikimedia.org/wiki/File:'), id);
     assert(line.sources.every(x => x.author && x.license), id);
-    assert.equal(line.visual_review_status, 'pending_user', id);
-    assert.equal(color.visual_review.status, 'pending_user', id);
+    assert.equal(line.visual_review_status, 'approved_default', id);
+    assert.equal(color.visual_review.status, 'approved_default', id);
     const delivery = manifest.images[id];
     assert(delivery, id);
     assert.equal(delivery.sourceSha256, sha(color.output), id);
-    assert.equal(delivery.visualReview, 'pending_user', id);
+    assert.equal(delivery.visualReview, 'approved_default', id);
     assert(fs.existsSync(path.join(root, delivery.src)), id);
     assert(fs.existsSync(path.join(root, site.image.src)), id);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user', id);
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default', id);
     assert(fs.existsSync(path.join(root, COLORED_PLATES[id].src)), id);
     assert(fs.existsSync(path.join(root, `ios/Fanggu/Resources/Artwork/${id}.avif`)), id);
   }

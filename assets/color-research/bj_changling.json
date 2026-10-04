@@ -57,7 +57,19 @@
     ],
     "limitations": [
       "图版纹饰简化且瓦面细线较密；按照片艺术转译，不是文保级色彩复原。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 12:10:25 UTC"
+  "completed_at": "2026-09-16 12:10:25 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "dc4ca2444ebf61e817abe2c307fbcd43efdfed2adc4e4872f74fc62e768118e7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f4a7f904036372091fda2d0cc6f98b99a6cac4c059996ccd11731da1839bc3c5",
+    "avifSha256": "199a893d4c2092c0e89a0ba300e898c0828d2d76d74ab78b5ea62a4d46e39a2e"
+  }
 }

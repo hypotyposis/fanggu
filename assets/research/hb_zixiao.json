@@ -1,7 +1,7 @@
 {
   "id": "hb_zixiao",
   "subject": "紫霄宫紫霄大殿与正面台基",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:%E7%B4%AB%E9%9C%84%E5%AE%AE.JPG",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/%E7%B4%AB%E9%9C%84%E5%AE%AE.JPG/1280px-%E7%B4%AB%E9%9C%84%E5%AE%AE.JPG",
   "author": "Gisling",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hb_zixiao.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "五间紫霄大殿、重檐歇山、三层正面石台与中央台阶；不画左右庑房与远山，移除石碑、香炉、游客。"
   ],
@@ -165,5 +165,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "cf5348761c65632c9edc7ecf273bc8ade92ce7643d5fa8bfe8efa0823f08f775",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "cf5348761c65632c9edc7ecf273bc8ade92ce7643d5fa8bfe8efa0823f08f775",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "eabac89de6ea82ce57a1c6a979cec481e794c193c485bbd8f92d06d3792fb047"
   }
 }

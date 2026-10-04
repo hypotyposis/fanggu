@@ -45,7 +45,19 @@
       "原件和暗底透明副本均目检，完整未裁切，无文字或外景。",
       "近白边缘、真实透明与可见实体通过脚本检查，内部RGB保持原样。"
     ],
-    "limitations": "彩画细节和门窗状态为建筑图版简化，非色彩校准或严格实景复刻；侧边留白较少但未裁切。"
+    "limitations": "彩画细节和门窗状态为建筑图版简化，非色彩校准或严格实景复刻；侧边留白较少但未裁切。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 11:07:52 UTC"
+  "completed_at": "2026-09-16 11:07:52 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "2da101cdbc64ce0499ab4ca83ecee097f511667879a55e3d3349e014cbc4f457",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "3c2e04a82675e33e9f837abfc062ec91ba560d4b8ef3536e01f5c78bdfbe260b",
+    "avifSha256": "100cd33b5ea5037605520d3436fd48376d10723a26efbb1705c358a3af38c229"
+  }
 }

@@ -2,7 +2,7 @@
   "id": "hn_songyang",
   "name": "嵩阳书院",
   "subject": "嵩阳书院 · 清代大门正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_songyang.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_songyang.json",
   "output": "assets/colored/hn_songyang.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:22:14.277Z",
   "generated_at": "2026-10-01T19:25:21.476968+00:00",
@@ -106,5 +107,15 @@
       "嵩阳书院 · 清代大门正面",
       "清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "4998e5a37bfb6ba2aca27b8e1b28c7a1f1e3d2095b016078cbfeb287f34e12d1",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f2c8e2cf16b93cd7d62920a5a565143d4903bc5754cdb645f0f32a1c492dcaa0",
+    "avifSha256": "6b225428cc40acc5f88cc63be7b1bb4ea61a0932a5f8bb8ed3c3aa3eda16d091"
   }
 }

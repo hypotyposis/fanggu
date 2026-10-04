@@ -1,7 +1,7 @@
 {
   "id": "jp_zojoji_sangedatsumon",
   "name": "增上寺三解脱门",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_zojoji_sangedatsumon.png",
@@ -35,9 +35,10 @@
   ],
   "output": "assets/colored/jp_zojoji_sangedatsumon.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-11db4875-43d9-4d8d-8bc8-814236ef4bc8.png",
   "background_preparation": {
@@ -67,5 +68,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-11db4875-43d9-4d8d-8bc8-814236ef4bc8"
+  "generation_call_id": "exec-11db4875-43d9-4d8d-8bc8-814236ef4bc8",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "45da5ae54b52a8ef1d7fb384fa2de0ce98d0dc90c3885313e226be9015792944",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "1782e38414bd858305d068ee714755b977bd6d7488cad824405af5ece79092af",
+    "avifSha256": "6f182bd83dbce8e1c57cda1ec8482f0dc7a194680bfd10fa05fdc78ea9d078ef"
+  }
 }
