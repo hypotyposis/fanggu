@@ -189,7 +189,8 @@ for (const [id, entry] of valid) {
   const list = Array.isArray(meta.historical_sources) ? meta.historical_sources : [];
   const seen = new Set(list.map(s => s.url));
   for (const s of entry.sources) {
-    if (!s || typeof s.url !== 'string' || !/^https?:\/\//.test(s.url) || seen.has(s.url)) continue;
+    // Batch tests require https sources in research records; plain-http links stay in the archived agent output only.
+    if (!s || typeof s.url !== 'string' || !/^https:\/\//.test(s.url) || seen.has(s.url)) continue;
     const item = { title: String(s.title || s.publisher || '来源'), url: s.url };
     if (s.publisher) item.publisher = String(s.publisher);
     if (s.note) item.note = String(s.note);
