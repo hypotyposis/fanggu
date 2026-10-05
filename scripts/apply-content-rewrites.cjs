@@ -33,6 +33,15 @@ for (const file of fs.readdirSync(outDir).filter(f => f.endsWith('.json'))) {
   }
 }
 
+// Japanese text must use shinjitai forms; agents occasionally leak simplified-only characters.
+const JA_FORMS = { '为': '為', '东': '東', '门': '門', '马': '馬', '长': '長', '书': '書', '车': '車', '说': '説', '贝': '貝', '见': '見', '风': '風', '鸟': '鳥', '龙': '龍', '广': '広', '实': '実', '层': '層', '庙': '廟', '图': '図', '齐': '斉', '汉': '漢', '经': '経', '阁': '閣', '乐': '楽', '县': '県', '开': '開', '关': '関', '观': '観', '觉': '覚', '记': '記', '论': '論', '设': '設', '证': '証', '译': '訳', '读': '読', '贵': '貴', '资': '資', '过': '過', '还': '還', '进': '進', '远': '遠', '连': '連', '选': '選', '铁': '鉄', '铜': '銅', '银': '銀', '钟': '鐘', '镇': '鎮', '间': '間', '问': '問', '阙': '闕', '陕': '陝', '顶': '頂', '须': '須', '顺': '順', '题': '題', '飞': '飛', '驿': '駅', '鸡': '鶏', '鹤': '鶴', '龟': '亀', '访': '訪', '迹': '跡', '录': '録', '评': '評', '维': '維', '愿': '願' };
+const jaFix = text => String(text).replace(/[为东门马长书车说贝见风鸟龙广实层庙图齐汉经阁乐县开关观觉记论设证译读贵资过还进远连选铁铜银钟镇间问阙陕顶须顺题飞驿鸡鹤龟访迹录评维愿]/gu, ch => JA_FORMS[ch] || ch);
+for (const entry of rewrites.values()) {
+  if (entry.ja && typeof entry.ja === 'object') {
+    if (typeof entry.ja.lede === 'string') entry.ja.lede = jaFix(entry.ja.lede);
+    if (Array.isArray(entry.ja.facts)) entry.ja.facts = entry.ja.facts.map(jaFix);
+  }
+}
 const problems = [];
 const valid = new Map();
 const han = s => (String(s).match(/\p{Script=Han}/gu) || []).length;
@@ -47,6 +56,7 @@ for (const [id, entry] of rewrites) {
     const t = entry[lang];
     if (!t || typeof t.lede !== 'string' || !t.lede.trim() || !Array.isArray(t.facts) || t.facts.length !== 3 || t.facts.some(f => !String(f).trim())) issues.push(`${lang} missing or misaligned`);
     else if (lang === 'en' && /\p{Script=Han}/u.test(t.lede + t.facts.join(''))) issues.push('en contains Han');
+    else if (lang === 'ja' && /[这们]/u.test(t.lede + t.facts.join(''))) issues.push('ja contains Chinese-only characters');
   }
   if (!Array.isArray(entry.sources) || !entry.sources.length) issues.push('no sources');
   if (issues.length) problems.push(`${id} (${entry._file}): ${issues.join('; ')}`); else valid.set(id, entry);
@@ -71,18 +81,22 @@ function skipStringOrComment(src, i) {
   return i;
 }
 function objectSpans(src) {
-  const arrayStart = src.indexOf('const SITES = [');
-  if (arrayStart < 0) throw new Error('SITES array not found');
-  let i = arrayStart + 'const SITES = ['.length, depth = 0, bracket = 1, objStart = -1;
+  // Every object literal in the file is a candidate; entries are the ones with string `id` and `lede` props.
+  // Nested braces are examined too, so SITES.push({...}) and SITES.push(...[{...}]) forms all work.
   const spans = [];
-  for (; i < src.length; i++) {
+  for (let i = 0; i < src.length; i++) {
     const skipped = skipStringOrComment(src, i);
     if (skipped !== i) { i = skipped - 1; continue; }
-    const ch = src[i];
-    if (ch === '{') { if (depth === 0 && bracket === 1) objStart = i; depth++; }
-    else if (ch === '}') { depth--; if (depth === 0 && bracket === 1) { spans.push([objStart, i + 1]); objStart = -1; } }
-    else if (ch === '[') { if (depth === 0) bracket++; }
-    else if (ch === ']') { if (depth === 0) { bracket--; if (bracket === 0) break; } }
+    if (src[i] !== '{') continue;
+    let depth = 0, j = i;
+    for (; j < src.length; j++) {
+      const s2 = skipStringOrComment(src, j);
+      if (s2 !== j) { j = s2 - 1; continue; }
+      if (src[j] === '{') depth++;
+      else if (src[j] === '}') { depth--; if (depth === 0) break; }
+    }
+    if (depth !== 0) break;
+    spans.push([i, j + 1]);
   }
   return spans;
 }
@@ -133,10 +147,12 @@ let patched = 0;
   const spans = objectSpans(sites);
   const byId = new Map();
   for (const [a, b] of spans) {
-    const props = topLevelProps(sites, a, b);
+    let props;
+    try { props = topLevelProps(sites, a, b); } catch { continue; }
     const idProp = props.find(p => p.key === 'id');
-    if (!idProp) continue;
-    const idValue = idProp.value.replace(/^['"]|['"]$/g, '');
+    if (!idProp || !/^['"][a-z0-9_]+['"]$/.test(idProp.value) || !props.some(p => p.key === 'lede')) continue;
+    const idValue = idProp.value.slice(1, -1);
+    if (byId.has(idValue)) throw new Error(`duplicate entry object for ${idValue}`);
     byId.set(idValue, { props });
   }
   for (const [id, entry] of valid) {
