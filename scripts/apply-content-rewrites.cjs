@@ -24,7 +24,8 @@ const current = new Map(loadSites(sites).map(site => [site.id, site]));
 
 // Collect rewrites from every group file.
 const rewrites = new Map();
-for (const file of fs.readdirSync(outDir).filter(f => f.endsWith('.json'))) {
+// Agents sometimes leave intermediate chunk files beside the group file; only the group files count.
+for (const file of fs.readdirSync(outDir).filter(f => f.endsWith('.json') && !/\.chunk\d*\.json$/.test(f) && !f.startsWith('_'))) {
   let data; try { data = JSON.parse(fs.readFileSync(path.join(outDir, file), 'utf8')); } catch (error) { console.error(`skip ${file}: ${error.message}`); continue; }
   for (const [id, entry] of Object.entries(data)) {
     if (only && !only.has(id)) continue;
