@@ -1,0 +1,104 @@
+{
+  "id": "jp_osaki_hachimangu",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "大崎八幡宫 · 拜殿正面",
+  "name": "大崎八幡宫",
+  "short": "大崎八幡宫",
+  "sub": "权现造社殿 · 拜殿正面",
+  "dyn": "jp_momoyama",
+  "tag": "桃山",
+  "era": "约1607年建成",
+  "year": 1607,
+  "yearLabel": "约1607年",
+  "yearApprox": true,
+  "yearNote": "文化厅数据库记「桃山／1607」：伊达政宗造营，庆长十二年（1607）前后完成；本殿、石之间、拜殿连为一栋权现造。1903年指定重要文化财，1952年11月22日指定国宝。1969年长床解体修理不涉社殿年代。",
+  "country": "JP",
+  "province": "宫城县",
+  "placeKey": "jp_sendai",
+  "placeName": "仙台",
+  "place": "日本 · 宫城县 · 仙台",
+  "lat": 38.27219,
+  "lon": 140.845,
+  "coordinate_source": "ja.wikipedia GeoData（大崎八幡宮）坐标 38.272194, 140.845，作为仙台城镇级显示点，非社殿测绘坐标。",
+  "types": [
+    "shrine"
+  ],
+  "lede": "伊达政宗1607年前后为仙台营造的大崎八幡宫，把拜殿、石之间与本殿连成一栋权现造，是现存最早的权现造社殿。黑漆社身上金饰与彩色雕刻层层堆叠，正面千鸟破风与轩唐破风一上一下，桃山的豪华被原样搬到东北。",
+  "facts": [
+    "庆长十二年（1607）前后建成，本殿桁行五间梁间三间、石之间一间、拜殿正面七间，入母屋造柿葺；1952年指定国宝。",
+    "相传仿丰国庙而建，随处施以精美雕刻与彩色，为移入仙台的桃山建筑优秀遗构；现存权现造社殿以此为最古。",
+    "图版只绘正面拜殿：中央千鸟破风、五间向拝带轩唐破风及中央三条铃绳，后方的石之间与本殿不入画。"
+  ],
+  "caption": [
+    "大崎八幡宫 · 拜殿正面",
+    "桃山庆长十二年（1607）"
+  ],
+  "legacyNames": [
+    "大崎八幡宮",
+    "大崎八幡神社",
+    "Ōsaki Hachimangū",
+    "Osaki Hachiman Shrine"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "拜殿单层入母屋造柿葺，正面屋坡中央一座大千鸟破风（三角形），破风内金色饰件；其下为五间向拝，向拝前檐中央一座轩唐破风（曲线形）。",
+    "拜殿正面七间（文化厅记录），前檐下为开敞柱列；檐下一道雕刻彩绘的饰带；中央垂三条铃绳；阶前短石阶。",
+    "社殿通体黑漆，金具、金色饰件与红蓝绿雕刻点缀；线稿只勾轮廓，不作黑色填充。",
+    "后方石之间与本殿自正面不可见，不补画；两侧木栅栏、绘马架、灯笼去除。"
+  ],
+  "material_observations": "黑漆壁柱，金箔饰件与金具，彩绘雕刻（红、蓝、绿）饰带，灰褐色柿葺屋面，白石阶。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Osaki_Hachiman-gu_20130819a.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Osaki_Hachiman-gu_20130819a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Tak1701d",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_osaki_hachimangu-photo.jpg",
+    "assets/references/jp_osaki_hachimangu-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_osaki_hachimangu-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Osakimachimangu.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Osakimachimangu.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "ジダネ",
+      "license": "Public domain",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "photo_date": "2007-05-05",
+      "role": "同一正面的另一次实拍，核对千鸟破风、向拝与柱列"
+    }
+  ],
+  "source_note": "主图为Tak1701d 2013年正面实拍（CC BY-SA 3.0），第二图为ジダネ2007年同一正面（公有领域自释），用于核对破风、向拝与铃绳。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nOsaki Hachimangu, Sendai, built c.1607, gongen-zukuri shrine. Draw ONLY the FRONT worship hall (haiden) as in photo 2: a single hip-and-gable shingled roof with a large triangular chidori-hafu dormer gable at the centre of the front slope, carrying a gilt ornament; below it the five-bay step canopy (gohai) with an undulating karahafu curved gable; the open front with its row of posts and the seven-bay width; a carved and gilded frieze band under the eaves; three bell ropes hanging at the centre; a short central stone stair. The hall behind (ishi-no-ma and honden) is not visible and must not be invented. Outline the gable ornaments and brackets sparingly; no black fill for the dark lacquer. Remove side fences, ema boards, signs, lanterns, people and trees.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 大崎八幡宮",
+      "url": "https://online.bunka.go.jp/heritages/detail/184266"
+    },
+    {
+      "title": "ja.wikipedia · 大崎八幡宮",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B4%8E%E5%85%AB%E5%B9%A1%E5%AE%AE"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-11-22",
+      "juyo_bunkazai_designated": "1903-04-15",
+      "database_detail_id": 184266
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/184266"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2013-08-19",
+  "photo_pixels": [
+    2400,
+    1800
+  ]
+}
