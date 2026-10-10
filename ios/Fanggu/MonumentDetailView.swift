@@ -333,6 +333,7 @@ struct ArrivalSlider: View {
 struct VisitEditor: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let site: Monument
     @State private var date = Date()
     @State private var dateKnown = false
@@ -347,7 +348,18 @@ struct VisitEditor: View {
                 Section("到访日期") {
                     Toggle("记得具体日期", isOn: $dateKnown)
                         .accessibilityIdentifier("visit-date-known")
-                    if dateKnown {
+                    if dateKnown && dynamicTypeSize.isAccessibilitySize {
+                        // At accessibility sizes the label and the date button no longer fit one row.
+                        VStack(alignment: .leading, spacing: 8) {
+                            Text("选择日期")
+                            DatePicker("选择日期", selection: $date, in: ...Date(), displayedComponents: .date)
+                                .labelsHidden()
+                                // A long written date ("2026年10月10日") would run past the row at the largest sizes.
+                                .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                                .accessibilityIdentifier("visit-date")
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    } else if dateKnown {
                         DatePicker("选择日期", selection: $date, in: ...Date(), displayedComponents: .date)
                             .accessibilityIdentifier("visit-date")
                     } else {

@@ -182,9 +182,10 @@ struct CurationShareCard: View {
                 Spacer()
                 FangguSeal(size: 34)
             }
+            // The card image has a fixed height, so long translated names shrink on one line instead of wrapping.
             Text(curation.name)
                 .font(FangguFont.serif(30, weight: .medium)).foregroundStyle(CardPalette.ink)
-                .lineLimit(2).minimumScaleFactor(0.7)
+                .lineLimit(1).minimumScaleFactor(0.5)
                 .padding(.top, 14)
             Text(curation.lede)
                 .font(FangguFont.serif(12)).foregroundStyle(CardPalette.ink2).lineSpacing(4).lineLimit(3)
