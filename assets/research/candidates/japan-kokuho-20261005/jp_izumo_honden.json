@@ -1,0 +1,104 @@
+{
+  "id": "jp_izumo_honden",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "出云大社 · 本殿（瑞垣外所见）",
+  "name": "出云大社本殿",
+  "short": "出云大社",
+  "sub": "大社造本殿（瑞垣外所见）",
+  "dyn": "jp_edo",
+  "tag": "江户",
+  "era": "1744年造营",
+  "year": 1744,
+  "yearLabel": "1744年",
+  "yearApprox": false,
+  "yearNote": "文化厅数据库记「江户中期／1744」：现本殿延享元年（1744）建，大社造桧皮葺。2008–2013年平成大迁宫整修屋顶。1900年指定重要文化财，1952年3月29日指定国宝。古代社殿更高大之说依史料传承，不作为现存主体年代。",
+  "country": "JP",
+  "province": "岛根县",
+  "placeKey": "jp_izumo",
+  "placeName": "出云",
+  "place": "日本 · 岛根县 · 出云",
+  "lat": 35.40194,
+  "lon": 132.68544,
+  "coordinate_source": "ja.wikipedia GeoData（出雲大社）坐标 35.401944, 132.685444，作为出云显示点，非本殿测绘坐标。",
+  "types": [
+    "shrine"
+  ],
+  "lede": "出云大社本殿是延享元年（1744）造营的大社造：正方形平面、切妻妻入，桧皮葺屋顶上立三根胜男木、两端交叉千木，高约二十四米，在神社中规模破格。本殿四周围以瑞垣，参拜者只能望见垣上的大屋顶与千木；史料与传说更说古代社殿高达十六丈。",
+  "facts": [
+    "现本殿延享元年（1744）建，大社造桧皮葺，高八丈约24米；2008至2013年平成大迁宫整修屋顶。1952年指定国宝。",
+    "《日本书纪》《古事记》载其起源；式年造替不如伊势明确，但历次造营，古代本殿据传倍于今制，中古高达十六丈。",
+    "图版取瑞垣外所见：本殿上部、千木与三根胜男木立于有顶板垣之后；被垣遮挡的高床、阶梯与楼门不作补画。"
+  ],
+  "caption": [
+    "出云大社 · 本殿（瑞垣外所见）",
+    "江户延享元年（1744）"
+  ],
+  "legacyNames": [
+    "出雲大社本殿",
+    "杵築大社",
+    "Izumo Taisha Honden",
+    "Izumo Grand Shrine"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "本殿为切妻妻入的大社造：山面朝向观者，桧皮葺屋面曲线内凹而陡，屋脊两端各一组交叉千木，脊上三根胜男木。",
+    "素木板壁，外圈有带高栏的缘（照片中仅见上部）；破风板与悬鱼有绿色金具点缀。",
+    "本殿下部被有顶的竖板瑞垣遮挡，图版以瑞垣檐口与板栅为底边，不补画高床、阶梯与楼门。",
+    "后方较小的摄社屋顶、树木、积雪与石砌地基去除。"
+  ],
+  "material_observations": "深灰褐色桧皮葺屋面，银灰色素木板壁，深色千木与胜男木，绿色金具点缀，深褐色瑞垣；天空与树木去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:The_main_shrine,_Izumo-taisha_(35933485350).jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/The_main_shrine%2C_Izumo-taisha_%2835933485350%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Big Ben in Japan from Kawasaki, Japan",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_izumo_honden-photo.jpg",
+    "assets/references/jp_izumo_honden-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_izumo_honden-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Izumo_Taisha_20170126-6.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Izumo_Taisha_20170126-6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2017-01-26 14:12:22",
+      "role": "同一角度雪景，核对千木、胜男木与瑞垣檐口"
+    }
+  ],
+  "source_note": "主图为Big Ben in Japan 2017年7月自西南瑞垣外实拍（CC BY-SA 2.0，7903×5271），第二图为Suicasmo 2017年1月同一角度雪景（CC BY-SA 4.0），用于核对千木、胜男木与瑞垣檐口。本殿下部自垣外不可见，所绘范围为垣上部分，属已约定的局部主体。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nIzumo Taisha Main Sanctuary, Shimane, rebuilt 1744, taisha-zukuri. The sanctuary stands inside a roofed board fence and only its upper part is visible, as in photos 2 and 3. Draw it exactly that way: the tall gabled sanctuary with its gable end toward the viewer, a steep cypress-bark roof with a strong concave curve, crossed chigi finials at both ends of the ridge and THREE katsuogi billets on the ridge, plain board walls and a railed veranda, rising behind the low roofed fence of vertical slats whose roofline forms the base of the composition. Do not invent the hidden floor, stairs or gate. Omit the smaller shrines behind, trees, snow and the stone wall.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 出雲大社本殿",
+      "url": "https://online.bunka.go.jp/heritages/detail/146668"
+    },
+    {
+      "title": "ja.wikipedia · 出雲大社（含本殿高度与平成大迁宫）",
+      "url": "https://ja.wikipedia.org/wiki/%E5%87%BA%E9%9B%B2%E5%A4%A7%E7%A4%BE"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-03-29",
+      "juyo_bunkazai_designated": "1900-04-07",
+      "database_detail_id": 146668
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/146668"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2017-07-10 06:24",
+  "photo_pixels": [
+    7903,
+    5271
+  ]
+}

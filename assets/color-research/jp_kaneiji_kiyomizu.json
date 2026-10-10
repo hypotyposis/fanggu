@@ -1,7 +1,7 @@
 {
   "id": "jp_kaneiji_kiyomizu",
   "name": "宽永寺清水观音堂",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_kaneiji_kiyomizu.png",
@@ -31,9 +31,10 @@
   ],
   "output": "assets/colored/jp_kaneiji_kiyomizu.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-3752acda-09e4-4718-957e-a117c46ff108.png",
   "background_preparation": {
@@ -79,5 +80,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-3752acda-09e4-4718-957e-a117c46ff108"
+  "generation_call_id": "exec-3752acda-09e4-4718-957e-a117c46ff108",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "1f9d892324866dd9134b664beb7592caf9b67d7737aab5b77685d209593964ea",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "bad17d0d32b5a51e617c3b1d798f5b98f287696fb05762c3ba8efa5baa005b51",
+    "avifSha256": "b1822029228a6103bf8cd664217c7adbfaa04db22f78f8f869da3b29de4a1409"
+  }
 }

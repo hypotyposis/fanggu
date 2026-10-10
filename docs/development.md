@@ -99,7 +99,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 日本目录另含室町、桃山、昭和分类；金阁与浅草寺按现存复建主体归昭和，寺院初创和原构年代在条目内另述。`catalog.js` 为关东、近畿及中国地方配置独立地域；近畿包括京都府、滋贺县、奈良县、大阪府、兵库县，并有城郭、神社社殿类型；对应时代及城市示意点见 [`japan-periods.json`](../assets/research/japan-periods.json)。
 
-东京条目以现存主体断代，并将浅草神社拜殿与浅草寺战后复建本堂分开登记。宽永寺清水观音堂分别注明1631年建立、1694年移建；东村山正福寺地藏堂归室町，单层裳阶不作双层楼。上野、根津、芝公园、大塚、池上及东村山的地点均由 `PLACES` 派生东京都与关东筛选。来源和待审图版范围见 [东京增补计划](../assets/research/tokyo-20261003-plan.md)。
+东京条目以现存主体断代，并将浅草神社拜殿与浅草寺战后复建本堂分开登记。宽永寺清水观音堂分别注明1631年建立、1694年移建；东村山正福寺地藏堂归室町，单层裳阶不作双层楼。上野、根津、芝公园、大塚、池上及东村山的地点均由 `PLACES` 派生东京都与关东筛选。来源和图版范围见 [东京增补计划](../assets/research/tokyo-20261003-plan.md)。
 
 高句丽、渤海遗存使用独立 `goguryeo`、`balhae` 时期，不套用北魏或唐；依据见逐图研究记录。其目录章节说明本库所收遗迹年代，年表使用北轨古迹点和独立时期选择器，不将章节范围伪装成完整政权起止。`country` 仍由遗迹今日所在地派生。
 
@@ -113,9 +113,9 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 App 支持简体中文、英文和日文，跟随 iOS 为访古解析的语言。源数据仍以中文维护；`i18n/<语言>.json` 的 `terms` 按键翻译国家、地区、类型、时代、省份（以中文省名为键）、地点（以 `placeKey` 为键）和国保来源名，`sites` 按古迹 ID 翻译 `name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 与 `protection` 的 `unitName`、`scope`、`note`。只为源数据中非空的字段写译文；`facts`、`captions`、`protection` 逐项对应，不能增删或调换顺序。
 
-专题名录的译文在同一文件的 `curations`（按专题 ID 翻译 `name`、`eyebrow`、`lede`、`note`）与 `terms.curationKinds`。`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json` 及对应的 `curations*.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。`tests/i18n.test.cjs` 要求每个古迹都有完整且对齐的英日译文、英文展示文字不含汉字、日文不含简体专用字形，并检查界面字符串的占位符。
+专题名录的译文在同一文件的 `curations`（按专题 ID 翻译 `name`、`eyebrow`、`lede`、`note`）与 `terms.curationKinds`。`node ios/scripts/build-catalog.cjs` 写出 `catalog.json`（中文）、`catalog-en.json`、`catalog-ja.json` 及对应的 `curations*.json`。三份目录的 ID、顺序、年代、筛选键、图版与个人记录相关字段完全一致，只有展示文字不同；缺少译文的字段回退为中文并在导出时列出。每份目录的 `searchAliases` 收录其他语言的名称与地点，任一语言的名称都能搜到同一古迹。译文是机器译文，随同批产出，但不是入库门槛：`tests/i18n.test.cjs` 要求术语表（含 `curationKinds`）全覆盖、界面字符串英日齐全且占位符一致；逐古迹与专题译文“有则必须对齐”——字段非空与源一致，`facts`、`captions`、`protection` 长度与顺序一致，英文不含汉字，日文不含简体专用字形——缺译不报错，只打印覆盖率，App 中缺译字段显示中文。
 
-译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
+译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录；来不及补译时照常导出，缺译字段回退中文。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
 
 ### 存储与兼容
 
@@ -129,7 +129,7 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 
 ### 当前原型阶段的例外
 
-当前 `scripts/plate-policy.json` 默认 `prototype`。图版技术质量阈值与 AI 视觉验收暂时关闭，以用户人眼明确通过为准；生成、原件保留、尽力去底/转码、缓存及实际验收对象记录继续执行。下面严格去底/像素校验描述只在严格模式阻塞交付，原型命令无需逐图白底预检或自动质量返工。具体流程、用户验收记录命令及 `--strict` 恢复方法见 [当前原型模式](monument-batch-workflow.md#当前原型模式)。文件缺失或不能解码/编码仍是执行失败，不将失败伪称成功。新图可进入本地待审预览，未审仍为 `pending_user`。
+当前 `scripts/plate-policy.json` 默认 `prototype`。图版技术质量阈值与 AI 视觉验收暂时关闭；用户于 2026-10-05 决定审图时间不是瓶颈，图版默认通过，不等人眼验收。生成、原件保留、尽力去底/转码、缓存及哈希绑定的状态记录继续执行。下面严格去底/像素校验描述只在严格模式阻塞交付，原型命令无需逐图白底预检或自动质量返工。每批转码后运行 `node scripts/record-plate-review.mjs color --default --all-pending` 与 `line --default --all-pending`，把仍为 `pending_user` 的新图记为 `approved_default`（`reviewer: default-policy`，没有人眼审阅），再转码、汇总即交付；只有用户明确说通过的 ID 才记为 `approved_user`。三种状态都交付，iOS 打包不区分。完整流程、字段及 `--strict` 恢复方法见 [当前原型模式](monument-batch-workflow.md#当前原型模式)。文件缺失或不能解码/编码仍是执行失败，不将失败伪称成功。
 
 ### 新图默认白底生成、脚本去底
 
@@ -141,11 +141,11 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 - 东晋、龟兹、吐蕃、南诏、大理条目各用独立时代标签和配色；不要把同期的碑刻或石窟归入北魏、唐宋等中原朝代。无精确断代的局部图版以 `yearApprox` 和 `yearNote` 明示年表位置仅供排序。
 - 设色：`prepare-colored-avif.py` 经 `white-matte.py` 只移除与画布外缘连通的近白底色；封闭透空处按记录的种子移除，内部浅色石材和门窗暗部保留。仅最外层轮廓去除混入的白色，内部 RGB 不变。生成透明 PNG 后转 AVIF，解码检查尺寸与 alpha。
 - 白底边缘校验失败、没有可见主体或种子落在非白处时立即报错；假棋盘格不能当成白底放行。现有原生 alpha 可直接保留，已通过的旧图按原哈希复用。
-- 白底处理器的版本哈希与逐图参数进入缓存键。改变处理方式只重建相应图版，并重新等待用户审阅，不重置其他图的验收。
+- 白底处理器的版本哈希与逐图参数进入缓存键。改变处理方式只重建相应图版；其状态回落为 `pending_user`，重新运行默认通过命令后记为 `approved_default`，不重置其他图的验收记录。
 
-京都及周边 2026-09-26 批次的部分线稿原件虽含 alpha，主体内部却有灰色柔和底。其逐图记录使用 `adaptive-ink-v1` 并锁定原件哈希；原型模式的线稿处理以局部明度差提取细线，再着时代色。它保留原件且不把灰底或浅色填充当成笔画；这批图仍需逐张目检和用户审阅。严格模式仍沿用上述白底或真实透明图的质量门槛。
+京都及周边 2026-09-26 批次的部分线稿原件虽含 alpha，主体内部却有灰色柔和底。其逐图记录使用 `adaptive-ink-v1` 并锁定原件哈希；原型模式的线稿处理以局部明度差提取细线，再着时代色。它保留原件且不把灰底或浅色填充当成笔画；这批图的验收状态同样由默认通过命令记录，不另等人审。严格模式仍沿用上述白底或真实透明图的质量门槛。
 
-回归检查：`python3 -B tests/test_transparency.py`。它覆盖实体白色、封闭空隙、暗部、白边、中性线条及不合格背景，不替代用户图版审阅。
+回归检查：`python3 -B tests/test_transparency.py`。它覆盖实体白色、封闭空隙、暗部、白边、中性线条及不合格背景，只用合成数据验证规则，不代表任何真实图版被看过。
 
 前一阶段的 `scripts/generate-transparent-plate.py` 和 API 请求预检作为可选路径保留，当前流程不使用它，也不需要配置 API 凭证。若未来用户主动改用 API，才启用显式透明参数及相应依赖。
 
@@ -156,21 +156,22 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 | `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
 | `node scripts/prepare-plates.mjs` | `sites.js`、`palette.css`、线稿原稿、线稿考据 JSON 与白底处理记录 | `assets/plates/`、`plates.js`、`sources.html`；需要 `magick`，按单张原稿、考据记录、处理器时间和图版配色增量重建 |
 | `python3 -B scripts/prepare-colored-avif.py` | `queue.json`、批量设色 PNG、三张已确认 PNG | 白底去底或保留原生 alpha（旧暗底原件按哈希兼容），生成 `assets/colored-transparent/` 透明 PNG，再写 `assets/colored-transparent-avif/` 与 `assets/color-research/avif-manifest.json`；AVIF Q85、4:4:4、speed=6，原 PNG 不变，按来源、抠图参数和编码器哈希复用 |
-| `node scripts/collect-colored-plates.mjs --require-complete` | `queue.json`、逐图设色 JSON、保留的 PNG、AVIF 与转码清单 | `colored-plates.js`、`progress.json`、`prompts.json`；验证来源/交付哈希，缺少或过期 AVIF 会报错；不改图片 |
+| `node scripts/record-plate-review.mjs color --default --all-pending`（`line` 同理） | 逐图记录、原件、透明 PNG、AVIF 与转码清单 | 把仍为 `pending_user` 的图写成 `approved_default`（`reviewer: default-policy`、`policy: default-approve-2026-10-05`），绑定当前文件哈希并同步 `visual_review_status`；不改图片，不覆盖已有 `approved_user`。不带 `--default` 而列 ID 时记 `approved_user`，只在用户明确说通过后使用；之后重跑转码与汇总 |
+| `node scripts/collect-colored-plates.mjs --require-complete` | `queue.json`、逐图设色 JSON、保留的 PNG、AVIF 与转码清单 | `colored-plates.js`、`progress.json`、`prompts.json`；验证来源/交付哈希，缺少或过期 AVIF 会报错；哈希不匹配的图 `visualReview` 回落为 `pending_user`；不改图片 |
 
-透明处理需要 NumPy，AVIF 转码需要带 AVIF/AOM 编码支持的 Pillow，本次使用 Pillow 12.2.0 / libavif 1.4.1。先转码，再运行设色汇总器；App 本地读取 AVIF，审图工具由浏览器直接解码 AVIF。`COLORED_PLATES.src` 是 AVIF 交付路径，`originalSrc` 是素材 PNG 路径，原图仅在用户打开原图链接时加载。
+透明处理需要 NumPy，AVIF 转码需要带 AVIF/AOM 编码支持的 Pillow，本次使用 Pillow 12.2.0 / libavif 1.4.1。先转码，再记录默认通过并重新转码，最后运行设色汇总器；App 本地读取 AVIF，审图工具由浏览器直接解码 AVIF。`COLORED_PLATES.src` 是 AVIF 交付路径，`originalSrc` 是素材 PNG 路径，原图仅在用户打开原图链接时加载。
 
 `scripts/plan-colored-plates.mjs` 是 2026-09-15 批次规划器：固定排除三张小样、要求 197 张并重写队列及 worker 分组。它不是后续新增条目的通用命令；不要为刷新进度重新运行。长期增量规划器尚未实现。
 
-新增或重绘默认采用上述白底脚本流程，交付图片必须有真实透明像素与可见主体。原生透明线稿由 `scripts/line-plate.mjs` 只改笔画 RGB、保留 alpha；白底线稿走已登记的新处理流程；`legacy-line-originals.json` 仅允许原哈希匹配的旧白底原件走旧路径，不为新图扩充旧哈希例外。设色转码对原生透明图直接保留 alpha，新白底图走 `white-matte.py`；只有已发布清单原哈希匹配的旧暗底原件才使用 `scripts/extract-transparent-background.py`。旧提取流程按边界最常见色块估计底色，容差 12，不自动清除所有封闭暗区。报恩寺塔沿用 [样本参数与四个背景点](../assets/transparency-studies/baoen-v1/README.md)。`prepare-colored-avif.py` 使用 4 个本地进程，逐张保存可恢复进度，全部完成后发布清单；原生及旧图 RGB、新白底图内部 RGB、PNG 无损往返、AVIF 尺寸和 alpha 自动校验。本轮 200 张透明交付版已由用户于 2026-09-16 全部确认通过，`visualReview: approved_user` 和验收时的 PNG／AVIF 哈希分别保存，不改写原画既有记录；新增图默认为 `pending_user`。缓存复用保留已通过状态，改变图版内容必须重新验收。交付图版清单由汇总器生成，读取透明 AVIF；`transparentSrc` 指向透明 PNG，`originalSrc` 仍指向原件。旧 `assets/colored-avif/` 文件保留但不再用于 App 和审图工具。
+新增或重绘默认采用上述白底脚本流程，交付图片必须有真实透明像素与可见主体。原生透明线稿由 `scripts/line-plate.mjs` 只改笔画 RGB、保留 alpha；白底线稿走已登记的新处理流程；`legacy-line-originals.json` 仅允许原哈希匹配的旧白底原件走旧路径，不为新图扩充旧哈希例外。设色转码对原生透明图直接保留 alpha，新白底图走 `white-matte.py`；只有已发布清单原哈希匹配的旧暗底原件才使用 `scripts/extract-transparent-background.py`。旧提取流程按边界最常见色块估计底色，容差 12，不自动清除所有封闭暗区。报恩寺塔沿用 [样本参数与四个背景点](../assets/transparency-studies/baoen-v1/README.md)。`prepare-colored-avif.py` 使用 4 个本地进程，逐张保存可恢复进度，全部完成后发布清单；原生及旧图 RGB、新白底图内部 RGB、PNG 无损往返、AVIF 尺寸和 alpha 自动校验。本轮 200 张透明交付版已由用户于 2026-09-16 全部确认通过，`visualReview: approved_user` 和验收时的 PNG／AVIF 哈希分别保存，不改写原画既有记录；新增图转码后为 `pending_user`，经默认通过命令记为 `approved_default`。缓存复用保留已有状态，改变图版内容后状态回落，重新转码后再次运行默认通过命令。交付图版清单由汇总器生成，读取透明 AVIF；`transparentSrc` 指向透明 PNG，`originalSrc` 仍指向原件。旧 `assets/colored-avif/` 文件保留但不再用于 App 和审图工具。
 
-批处理及人工审图入口见 [本轮记录](../assets/transparency-studies/batch-v1/README.md)。提取算法的合成回归检查可运行 `python3 -B tests/test_transparency.py`；它不替代用户目检。
+批处理及当时的人工审图入口见 [本轮记录](../assets/transparency-studies/batch-v1/README.md)。提取算法的合成回归检查可运行 `python3 -B tests/test_transparency.py`；它只验证规则，不代表真实图版被看过。
 
-修补已有暗底图的封闭透空时，在逐图设色 JSON 的 `background_preparation` 登记 `method: "edge-connected-matte-v1"`、原件 `sourceSha256` 与实际查看过的 `seeds`。仅允许与已发布旧暗底清单哈希一致的原件使用此方法；原型模式也按这些种子提取，保留未指定的门窗暗部。运行 `python3 -B scripts/prepare-colored-avif.py --ids tiantai` 可只重建指定条目（多个 ID 用逗号分隔），其余交付文件和验收记录保持原样；随后运行设色汇总器。修补后的图仍需用户重新审阅，不能继承旧图片的通过状态。
+修补已有暗底图的封闭透空时，在逐图设色 JSON 的 `background_preparation` 登记 `method: "edge-connected-matte-v1"`、原件 `sourceSha256` 与实际查看过的 `seeds`。仅允许与已发布旧暗底清单哈希一致的原件使用此方法；原型模式也按这些种子提取，保留未指定的门窗暗部。运行 `python3 -B scripts/prepare-colored-avif.py --ids tiantai` 可只重建指定条目（多个 ID 用逗号分隔），其余交付文件和验收记录保持原样；随后运行默认通过命令、再次转码和设色汇总器。修补后的图不能继承旧图片的状态，默认记为 `approved_default`，用户明确说通过才记 `approved_user`。
 
-线稿生成器检查文件存在、色板和部分字段，但没有覆盖全部来源质量要求。设色汇总器仅遍历队列，`--require-complete` 不会发现遗漏在队列外的新古迹，不能代替视觉验收。三张原小样已由用户确认保持原样并定为正式版，记录见 [正式版确认](../assets/color-studies/v1/README.md)。其他新增图仍需另行检查整库覆盖和逐图验收。
+线稿生成器检查文件存在、色板和部分字段，但没有覆盖全部来源质量要求。设色汇总器仅遍历队列，`--require-complete` 不会发现遗漏在队列外的新古迹，不能代替整库覆盖检查。三张原小样已由用户确认保持原样并定为正式版，记录见 [正式版确认](../assets/color-studies/v1/README.md)。其他新增图仍需另行比较 `SITES` 与 `COLORED_PLATES` 的 ID 集合，验收状态由默认通过命令记录。
 
-2026-09-16 的 [辟支塔规则实测](../assets/transparency-studies/sd_pizhi-rule-test/README.md) 第一阶段未取得合格原生透明原件：四次内置 imagegen 输出中，三次为无 alpha 的假棋盘格，一次虽有 alpha 仍有白色填充和光晕。生成要求不等于工具输出保证；必须保留实际通道检查与目检。原生透明失败候选留在测试记录中；用户随后授权白底脚本流程，辟支塔已通过该流程接入，仍待用户审图。
+2026-09-16 的 [辟支塔规则实测](../assets/transparency-studies/sd_pizhi-rule-test/README.md) 第一阶段未取得合格原生透明原件：四次内置 imagegen 输出中，三次为无 alpha 的假棋盘格，一次虽有 alpha 仍有白色填充和光晕。生成要求不等于工具输出保证；必须保留实际通道检查与目检。原生透明失败候选留在测试记录中；用户随后授权白底脚本流程，辟支塔已通过该流程接入，其验收状态与其他图一样由 `record-plate-review.mjs` 记录。
 
 ## 新增或修改古迹
 
@@ -181,9 +182,9 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 2. 按 [线稿规范](../assets/research/STYLE.md) 准备照片、真实来源、由内置 imagegen 生成的白底 PNG 原稿、绑定哈希的去底记录及通过 alpha 校验的透明交付版、两项图注与研究 JSON。新 JSON 使用现有字段，参考 `hn_chuzu.json`；历史提示词和输入按当时真实记录保留。
 3. 更新 `SITES`，补齐 `PLACES` 和必要分类。检查所绘主体年代和国别。
 4. 运行线稿生成器并检查原稿、交付图、`plates.js` 与 `sources.html` 的差异。缺少文件时补齐输入，不能用任意占位图片凑数。
-5. 按 [设色流程](../assets/color-research/WORKFLOW.md) 制作、登记并验收设色图。向 `queue.json.entries` 加入对应条目并同步 `count`；沿用现有字段和真实路径，不伪造 worker 分工。三张已确认图版的 `excluded` 是特殊入口，变更它们需要同步汇总逻辑。
-6. 运行 AVIF 转码脚本，再汇总设色清单，并比较 `SITES` 与 `COLORED_PLATES` 的 ID，确认整库覆盖。检查 `progress.pending`；目录完整不等于图版视觉合格。
-7. 在 `i18n/en.json`、`i18n/ja.json` 为新条目补齐译文；新地点、省份、地区、类型或时代同时补 `terms`。
+5. 按 [设色流程](../assets/color-research/WORKFLOW.md) 制作并登记设色图。向 `queue.json.entries` 加入对应条目并同步 `count`；沿用现有字段和真实路径，不伪造 worker 分工。三张已确认图版的 `excluded` 是特殊入口，变更它们需要同步汇总逻辑。
+6. 运行 AVIF 转码脚本，再运行默认通过命令（`record-plate-review.mjs color|line --default --all-pending`）、重新转码并汇总设色清单，比较 `SITES` 与 `COLORED_PLATES` 的 ID，确认整库覆盖。检查 `progress.pending` 与 `visualReview` 无残留 `pending_user`；目录完整只说明交付齐备，`approved_default` 不表示有人看过。
+7. 在 `i18n/en.json`、`i18n/ja.json` 为新条目产出机器译文；新地点、省份、地区、类型或时代必须同时补 `terms`（测试要求全覆盖）。逐古迹译文随批交付但不是入库门槛，缺译在英日界面显示中文。
 8. 更新测试涉及的新增记录覆盖和数量基线。当前 `catalog.test.cjs` 及部分批次测试包含数量基线，考据覆盖列表还包含手写 ID；新条目也应进入有效性检查，不能只调大数量。
 9. 确认上述写文件命令均已退出成功，再运行自动测试和相关浏览器检查。图版交付变化时同步本地素材副本；需要构建 App 时运行 `sh ios/scripts/sync-artwork.sh assets`。运行 `node ios/scripts/build-catalog.cjs` 并检查 iOS 导出；同步 README 中对用户有意义的数量或功能说明。Git 中的清单更新不会自动交付被忽略的图片。
 
@@ -203,7 +204,7 @@ git diff --check
 | --- | --- |
 | 目录、年代、地域、分类、来源和图版路径 | Node 全套；`ios-catalog.test.cjs` 核对导出与源数据；`i18n.test.cjs` 核对英日译文；`ios-map-layout.test.cjs` 运行真实 Swift 地图几何 |
 | 界面文字与多语言 | `Localizable.xcstrings` 英日译文齐全；`FangguUITests/LocalizationUITests` 在英文、日文下检查主要页面，并在独立模拟器目视检查长文本 |
-| 原生个人记录、备份和评价 | `FangguTests`；根据行为运行 `FangguUITests`，命令见 [iOS 开发说明](../ios/README.md#六维评价) |
+| 原生个人记录、备份和评价 | `FangguTests`；根据行为运行 `FangguUITests`，编译与运行分开、按类并行和测试专用启动参数见 [测试与验证 · 原生测试](testing.md#原生测试)，用例选择见 [iOS 开发说明](../ios/README.md#六维评价) |
 | 原生界面、手势和导航 | 独立模拟器检查相应页面；触觉和实际触摸体验由真机验收 |
 | 审图工具、图片或链接 | 真实浏览器检查受影响工具；模拟 DOM 不能证明布局和图片解码正常 |
 | 文档 | 本地链接、路径、命令描述与 `git diff --check` |

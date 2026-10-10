@@ -50,10 +50,10 @@ test('northeast paired plates bind real originals, transparency and existing art
     }
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
     const image = manifest.images[id];
-    assert(['pending_user', 'approved_user'].includes(image.visualReview));
-    if (image.visualReview === 'approved_user') {
+    assert(['pending_user', 'approved_user', 'approved_default'].includes(image.visualReview));
+    if (image.visualReview.startsWith('approved_')) {
       const userReview = json(`assets/color-research/${id}.json`).user_review;
-      assert.equal(userReview?.reviewer, 'user');
+      assert.equal(userReview?.reviewer, image.visualReview === 'approved_user' ? 'user' : 'default-policy');
       assert.equal(userReview?.sourceSha256, image.sourceSha256);
       assert.equal(userReview?.inputSha256, image.inputSha256);
       assert.equal(userReview?.avifSha256, image.sha256);
@@ -71,8 +71,8 @@ test('northeast paired plates bind real originals, transparency and existing art
     if (after.visualReview !== before.visualReview) {
       const userReview = json(`assets/color-research/${id}.json`).user_review;
       assert.equal(before.visualReview, 'pending_user', id);
-      assert.equal(after.visualReview, 'approved_user', id);
-      assert.equal(userReview?.reviewer, 'user', id);
+      assert(['approved_user', 'approved_default'].includes(after.visualReview), id);
+      assert.equal(userReview?.reviewer, after.visualReview === 'approved_user' ? 'user' : 'default-policy', id);
       assert.equal(userReview?.sourceSha256, after.sourceSha256, id);
       assert.equal(userReview?.inputSha256, after.inputSha256, id);
       assert.equal(userReview?.avifSha256, after.sha256, id);

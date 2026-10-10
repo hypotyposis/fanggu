@@ -52,5 +52,13 @@
     ],
     "limitations": "艺术意写；尚待用户逐图验收。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "d2b0db0ddcc259ebf1df2d6501e8c5ca5db4a057f3252b0e614d87f5fee6ce6d",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "602afe96bf0297686b4f3097edff927dcbb46e20918534631757b8abaa0670d3"
+  }
 }

@@ -34,10 +34,11 @@
   },
   "output": "assets/colored/fj_fuzhou_wenmiao.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型阶段保留候选，待用户集中审图。"
+    "notes": "原型阶段保留候选，待用户集中审图。",
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-2373f30b-7518-429c-835f-616a8e950d3c.png",
   "width": 1536,
@@ -46,5 +47,15 @@
     "method": "white-matte-v1",
     "sourceSha256": "2034b58cc2219c9c6759eda275d16679707a7f7c706e26627ed45cb211e91d01",
     "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "2034b58cc2219c9c6759eda275d16679707a7f7c706e26627ed45cb211e91d01",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "8d19b97f65f080b29f3d495c1581c5e12627d765d0a073c86b175d7c2867c108",
+    "avifSha256": "b3329f59aaff443fc167eb72cc04dab024b8fe7e12ccb271ec5161cb6274fc9e"
   }
 }

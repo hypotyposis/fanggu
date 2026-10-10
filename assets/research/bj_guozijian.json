@@ -66,5 +66,13 @@
     ],
     "limitations": "正面照片确认辟雍殿，侧面照片确认环水与石桥；1784年为辟雍而非国子监始建。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "b04e6daa69ad31e6d13d244eaf88b19cbe2090991cf4d2b95a28b7efc4f433ce",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "7d7c845136934f269f781f686e0350bdea3867be85c5003796ae718055e5c1f9"
+  }
 }

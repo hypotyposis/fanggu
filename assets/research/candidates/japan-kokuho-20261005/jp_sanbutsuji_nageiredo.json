@@ -1,0 +1,106 @@
+{
+  "id": "jp_sanbutsuji_nageiredo",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "三佛寺 · 投入堂",
+  "name": "三佛寺投入堂",
+  "short": "投入堂",
+  "sub": "悬造奥院 · 崖上小堂",
+  "dyn": "jp_heian",
+  "tag": "平安",
+  "era": "平安后期 · 用材伐于1165年",
+  "year": 1165,
+  "yearLabel": "约1165年",
+  "yearApprox": true,
+  "yearNote": "文化厅数据库记「平安后期／1086-1184」，建立年代不明、仅知永和元年（1375）修理；奈良文化财研究所年轮年代测定得用材伐于1165年（树皮型）。年表点取1165为约略定位。1904年指定重要文化财，1952年3月29日指定国宝，附指定爱染堂。",
+  "country": "JP",
+  "province": "鸟取县",
+  "placeKey": "jp_misasa",
+  "placeName": "三朝 · 三德山",
+  "place": "日本 · 鸟取县 · 三朝 · 三德山",
+  "lat": 35.39653,
+  "lon": 133.9594,
+  "coordinate_source": "ja.wikipedia GeoData（投入堂）坐标 35.39653, 133.9594，为投入堂公开点位，用作三德山显示点，非本项目测绘。",
+  "types": [
+    "hall",
+    "temple"
+  ],
+  "lede": "三德山的绝壁凹处，投入堂靠一排细长的悬造长柱贴在岩面上，相传为役行者以法力投入。文化厅断为平安后期，奈良文化财研究所年轮测定用材伐于1165年，是山阴最古的建筑；流造母屋两侧加庇，木割纤细，构成奇拔而优美。原称三佛寺镇守藏王殿，左侧小小的爱染堂与之同时。",
+  "facts": [
+    "悬造，桁行一间、梁间二间，单层流造，两侧面及隅加庇屋顶，桧皮葺；床下以极长的柱支撑。1952年指定国宝。",
+    "文化厅记平安后期（1086–1184），仅知永和元年（1375）修理；年轮年代测得用材伐于1165年，位于海拔约470米的岩窟内。",
+    "堂右（向左）的爱染堂为附指定，被认为与投入堂同时建立；图版保留两堂与岩面的位置关系，不补画崖下山林。"
+  ],
+  "caption": [
+    "三佛寺 · 投入堂",
+    "平安后期 · 约1165年"
+  ],
+  "legacyNames": [
+    "三佛寺奥院（投入堂）",
+    "三徳山三佛寺投入堂",
+    "蔵王殿",
+    "Sanbutsu-ji Nageiredō",
+    "Nageire-dō"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "小堂嵌于岩壁凹处，床下一排细长的悬造长柱与斜撑落在倾斜岩面上；柱极长，是识别特征。",
+    "流造屋顶（不对称两坡，前坡长），两侧加庇屋顶与隅庇，桧皮葺；正面一道带高栏的缘。",
+    "堂左端可见格子壁板；紧邻其左为更小的爱染堂（附指定），同入画。",
+    "岩面只用少量轮廓线示意柱下岩棱与上方岩檐，不画植被与大面积崖壁。"
+  ],
+  "material_observations": "极浅的银灰色素木，灰褐色桧皮葺屋面，灰色岩石；绿色植被去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Sanbutsu-ji,_nageiredou-1-1.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Sanbutsu-ji%2C_nageiredou-1-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Saigen Jiro",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+    "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanbutsu-ji,_nageiredou-2-1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sanbutsu-ji%2C_nageiredou-2-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "photo_date": "2020-07-12 13:00:37",
+      "role": "同日竖幅实拍，核对悬造长柱与爱染堂"
+    }
+  ],
+  "source_note": "主图为Saigen Jiro 2020年7月自崖下遥拜处实拍（CC0，横幅），第二图为同作者同日竖幅（CC0），用于核对悬造长柱与两堂关系。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSanbutsuji Nageiredo, Misasa, Tottori, late Heian. Draw the hall as seen from below the cliff in photo 2 (photo 3 is a portrait view of the same): a small timber hall perched in a hollow of a rock face on a row of very long slender stilt posts with diagonal braces (kake-zukuri); an asymmetrical nagare-style gabled roof of cypress-bark shingles with pent roofs on both sides and corner pents; a railed veranda along the front; a lattice panel at the left end; the tiny Aizendo chapel immediately to its left. Keep a few sparse contour lines for the rock ledge directly under the posts and the overhang above; omit all vegetation and the wider cliff. Unpainted timber, no colour.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 三仏寺奥院(投入堂)",
+      "url": "https://online.bunka.go.jp/heritages/detail/123947"
+    },
+    {
+      "title": "ja.wikipedia · 三仏寺（含年轮年代测定1165年）",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BB%8F%E5%AF%BA"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-03-29",
+      "juyo_bunkazai_designated": "1904-02-18",
+      "database_detail_id": 123947
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/123947"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2020-07-12 13:00:27",
+  "photo_pixels": [
+    5958,
+    3912
+  ]
+}

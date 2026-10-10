@@ -29,7 +29,7 @@ test('approved Southeast Asia selection has twelve source-bound local line/color
     for (const kind of ['research', 'color-research']) {
       const record = json(`assets/${kind}/${id}.json`);
       assert.equal(record.quality_mode, 'prototype');
-      assert.equal(record.visual_review_status, 'pending_user');
+      assert.equal(record.visual_review_status, 'approved_default');
       assert(record.inputs_viewed && record.preview_check.original_viewed, id);
       assert.equal(record.background_preparation.sourceSha256, sha(record.generated_file || record.output));
       assert(record.factual_sources.length && record.factual_sources.every(source => /^https:\/\//.test(source.url)));
@@ -51,8 +51,8 @@ test('approved Southeast Asia selection has twelve source-bound local line/color
     assert.equal(image.sourceSha256, sha(image.source));
     assert.equal(image.inputSha256, sha(image.input));
     assert.equal(image.sha256, sha(image.src));
-    assert.equal(image.visualReview, 'pending_user');
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    assert.equal(image.visualReview, 'approved_default');
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default');
     assert(image.alpha.min === 0 && image.alpha.max > 0, `${id} needs transparent background and visible subject`);
   }
   for (const [id, before] of Object.entries(batch.previousDeliveries)) {
@@ -62,8 +62,8 @@ test('approved Southeast Asia selection has twelve source-bound local line/color
     for (const key of ['sourceSha256', 'inputSha256', 'sha256']) assert.equal(image[key], before[key], `${id}: ${key}`);
     if (image.visualReview !== before.visualReview) {
       assert.equal(before.visualReview, 'pending_user');
-      assert.equal(image.visualReview, 'approved_user');
-      assert.equal(image.review.reviewer, 'user');
+      assert(['approved_user', 'approved_default'].includes(image.visualReview));
+      assert.equal(image.review.reviewer, image.visualReview === 'approved_user' ? 'user' : 'default-policy');
       assert.equal(image.review.avifSha256, image.sha256);
       assert.equal(image.review.inputSha256, image.inputSha256);
     }

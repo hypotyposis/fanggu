@@ -1,7 +1,7 @@
 {
   "id": "sn_daqin",
   "subject": "周至大秦寺塔现存整塔",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "浙江省政府公报2006年第25期：第六批全国重点文物保护单位（大秦寺塔：宋）",
@@ -19,7 +19,7 @@
   "generated_file": "assets/generated/sn_daqin.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_daqin",
     "name": "周至大秦寺塔",
@@ -133,5 +133,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d64a5f76-c49a-44db-b1fc-3b18794f2bf2.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d64a5f76-c49a-44db-b1fc-3b18794f2bf2.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-d64a5f76-c49a-44db-b1fc-3b18794f2bf2.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "76ed71fc518cd88681b3a433dc8d63a842e205729cc931491df862342deb55b7",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1fb0c526aba9544c1c1e644f706e8da253e1adb6c2cff3836f7f8d4d65268678"
+  }
 }

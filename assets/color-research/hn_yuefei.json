@@ -2,7 +2,7 @@
   "id": "hn_yuefei",
   "name": "汤阴岳飞庙",
   "subject": "汤阴岳飞庙 · 二殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_yuefei.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_yuefei.json",
   "output": "assets/colored/hn_yuefei.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:22:14.277Z",
   "generated_at": "2026-10-01T19:27:48.726155+00:00",
@@ -98,5 +99,15 @@
       "汤阴岳飞庙 · 二殿正面",
       "明清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "109d1dd258bb97820879f0ccaf9ffb5d4006322a0a58ce47f485af1cf252b499",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "a0c359e72c70c290321607afac1e491d7d08a3d42f851357983de71b684427fe",
+    "avifSha256": "6f8b4502a0ded9fc5bbc0fddbf71d096fbbca37cd1cffdf857f3c23554c8e31d"
   }
 }

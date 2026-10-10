@@ -68,11 +68,11 @@ test('Tokyo source records bind actual originals, deliveries and any explicit us
     assert.equal(manifest.images[id].sha256, sha(COLORED_PLATES[id].src), id);
     for (const [record, source] of [[line, line.generated_file], [color, color.output]]) {
       if (!record.user_review) continue;
-      assert.equal(record.user_review.status, 'approved_user', id);
-      assert.equal(record.user_review.reviewer, 'user', id);
+      assert(['approved_user', 'approved_default'].includes(record.user_review.status), id);
+      assert.equal(record.user_review.reviewer, record.user_review.status === 'approved_user' ? 'user' : 'default-policy', id);
       assert.equal(record.user_review.sourceSha256, sha(source), id);
     }
-    assert.equal(manifest.images[id].visualReview, color.user_review ? 'approved_user' : 'pending_user', id);
+    assert.equal(manifest.images[id].visualReview, color.user_review?.status ?? 'pending_user', id);
     if (color.user_review) {
       assert.equal(color.user_review.inputSha256, sha(`assets/colored-transparent/${id}.png`), id);
       assert.equal(color.user_review.avifSha256, sha(COLORED_PLATES[id].src), id);

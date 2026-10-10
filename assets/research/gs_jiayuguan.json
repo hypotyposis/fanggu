@@ -1,7 +1,7 @@
 {
   "id": "gs_jiayuguan",
   "subject": "西侧嘉峪关楼与门台",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Jiayuguan_Gatetower_(20230919150124).jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Jiayuguan_Gatetower_%2820230919150124%29.jpg",
   "author": "N509FZ",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/gs_jiayuguan.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "三层三重檐楼阁；厚门台、正下方一处拱券和左右短雉堞城墙；完整屋角与台基，不画另外两座楼。"
   ],
@@ -164,5 +164,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "bee1ebe4e3cc80e7b509ebbdb959504782c77d9fd5d05fb013d617ae00fa4cf1",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "bee1ebe4e3cc80e7b509ebbdb959504782c77d9fd5d05fb013d617ae00fa4cf1",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "a1258503342f4799bd9881718e26672987901015b9fcecabe07594608e4a0a6b"
   }
 }

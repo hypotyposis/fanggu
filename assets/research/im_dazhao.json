@@ -1,7 +1,7 @@
 {
   "id": "im_dazhao",
   "subject": "呼和浩特大召寺大雄宝殿",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "大召沿革与现存经堂、大佛殿",
@@ -35,7 +35,7 @@
     }
   ],
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "im_dazhao",
     "name": "呼和浩特大召寺",
@@ -174,5 +174,13 @@
     "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-45d50310-4203-41ce-bebf-065ba1165d53.png",
     "review_status": "pending_user",
     "sourceSha256": "c35a7b9b8c1405e893197a12aac3065a939be0e071e8279f2ade421444476779"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "c35a7b9b8c1405e893197a12aac3065a939be0e071e8279f2ade421444476779",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1995de9eb661374dbd21a3d552167d8c7e215adb2a2d3a0595578745ead4a20b"
   }
 }

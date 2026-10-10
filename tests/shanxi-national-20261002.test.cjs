@@ -61,7 +61,9 @@ test('Shanxi additions preserve protected names, drawn scope and unvisited defau
 test('Shanxi subjects distinguish tower protection and approximate dating', () => {
   const site = id => SITES.find(item => item.id === id);
   assert.equal(site('sx_ruicheng_chenghuang').dyn, 'song');
-  assert(site('sx_pujiu').facts.some(fact => fact.includes('现代复建')));
+  // The Ming pagoda must stay distinguished from the temple halls rebuilt in the 1980s, whatever the wording.
+  const pujiuText = [site('sx_pujiu').lede, ...site('sx_pujiu').facts].join('');
+  assert(/现代复建|1986/.test(pujiuText) && /嘉靖|明/.test(pujiuText));
   assert(site('sx_pujiu').yearNote.includes('差异'));
   assert(site('sx_rishengchang').yearNote.includes('单体建造年未确定'));
   assert(site('sx_wang').sub.includes('局部'));

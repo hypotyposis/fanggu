@@ -1,7 +1,7 @@
 {
   "id": "sn_chongwen",
   "subject": "泾阳崇文塔现存整塔",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "陕西省生态环境厅公开项目报告：崇文塔碑记及形制",
@@ -19,7 +19,7 @@
   "generated_file": "assets/generated/sn_chongwen.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_chongwen",
     "name": "泾阳崇文塔",
@@ -132,5 +132,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-59c45904-33f1-4a18-a127-11cc453325d1.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-59c45904-33f1-4a18-a127-11cc453325d1.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-59c45904-33f1-4a18-a127-11cc453325d1.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "eed395dc56492b0f63a8ace4bf32a0d979c97fa9c201c8c60efb69a9d82e89ac",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "88dcc64ed12a5d641a3c5f13d19ad8ae433540da7f14abda17953a4bd251c55b"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "hu_yueyang",
   "subject": "岳阳楼三层主体楼阁",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Frontal_view_of_Yueyang_Tower,_Hunan,_China1.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Frontal_view_of_Yueyang_Tower%2C_Hunan%2C_China1.jpg",
   "author": "Huangdan2060",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hu_yueyang.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "三层、三重檐、盔式屋顶；只画楼体、短石台基和栏杆，不画下方城门、左右石坊或附属亭。"
   ],
@@ -152,5 +152,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "3cec0c6784ac1c8d867c166b9074cc80961402c6a14d3ad28f1890860b93600c",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "3cec0c6784ac1c8d867c166b9074cc80961402c6a14d3ad28f1890860b93600c",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "a0cfab65f42be1333ea2d6eb9c791f779ddb5040824062749c0925b80447423b"
   }
 }

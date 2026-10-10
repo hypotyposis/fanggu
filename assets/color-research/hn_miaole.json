@@ -36,7 +36,16 @@
   "background_preparation": {
     "method": "white-matte-v1",
     "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
-    "seeds": [[465, 229], [559, 260]]
+    "seeds": [
+      [
+        465,
+        229
+      ],
+      [
+        559,
+        260
+      ]
+    ]
   },
   "visual_review": "已查看重试白底原件。十三重主要密檐加单独下层台座檐口、塔刹与链条保留；灰米色下塔身与粉褐上部区分。首稿含透明灰雾拒绝交付。去底后仍须核对透空与白边，用户尚未验收。",
   "generation_history": [
@@ -62,5 +71,15 @@
       "status": "accepted_white_source",
       "method": "white-background-then-script"
     }
-  ]
+  ],
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "396cb9db53ff2bcd7df1595d0eda8bb023fe3c3c66d00bd00133b046aa8a9bbc",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "39f54ef7ee4c61b0a2a6b1e4aaa03ad49f34a1d3f9019594264bef03994903ed",
+    "avifSha256": "03e4baca064fbd267cba6c894e03af7e88134f591a2869e5511e7a8cb98d0d7a"
+  }
 }

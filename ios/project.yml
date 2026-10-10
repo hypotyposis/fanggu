@@ -70,7 +70,8 @@ schemes:
       region: CN
       targets:
         - FangguTests
-        - FangguUITests
+        - name: FangguUITests
+          parallelizable: true
     profile:
       config: Release
     analyze:

@@ -18,7 +18,7 @@
 | `research/legacy-line-originals.json` | 允许走旧白底抠图路径的线稿原件哈希白名单 | 跟踪 | — |
 | `research/japan-periods.json`、`STYLE.md` | 日本时代分界依据、线稿规范 | 跟踪 | — |
 | `research/history/` | 历史任务快照与归档原件记录 | 跟踪 | 不作为授权 |
-| `research/*.html` | 本地人审页 | 忽略 | — |
+| `research/*.html` | 本地审图页 | 忽略 | — |
 | `references/`、`color-references/` | 参考照片与风格母版 | 忽略 | source |
 | `colored/<id>.png` | 设色原件 | 忽略 | source |
 | `colored-transparent/<id>.png` | 去底后的透明 PNG 中间稿 | 忽略 | source |
@@ -46,9 +46,9 @@
 
 上述 PNG 均为保留的素材原件。App 与审图交付副本统一在 `colored-transparent-avif/<id>.avif`，使用 AVIF Q85、4:4:4 完整颜色采样，保持原始尺寸与构图；透明线稿仍为无损 PNG。原来的 `colored-avif/` 暗底副本保留，但当前 App 与审图工具使用透明 AVIF。`python3 scripts/prepare-colored-avif.py` 对白底原件按登记方法去底，对原生透明图保留 alpha，保存 `colored-transparent/<id>.png` 无损副本后输出透明 AVIF；只有清单中原哈希匹配的既有暗底原件兼容旧抠图路径；解码检查尺寸、透明通道和原件哈希，将参数与输入/输出 SHA-256 写入 `color-research/avif-manifest.json`。相同来源和参数的已有副本会复用；不会覆盖或删除原 PNG。
 
-`color-research/` 中逐图保存实际输入、完整提示词、参考照片署名与许可、颜色判断和输出目检。`color-references/` 保存补充参考。转码后使用 `node scripts/collect-colored-plates.mjs --require-complete` 检查队列和 AVIF 清单，生成 `colored-plates.js`、进度和完整提示词清单；此脚本写汇总文件，不改色或转码。新增图必须先入队列，整库覆盖与视觉验收另行检查，步骤见设色流程。
+`color-research/` 中逐图保存实际输入、完整提示词、参考照片署名与许可、颜色判断和输出目检。`color-references/` 保存补充参考。转码后使用 `node scripts/collect-colored-plates.mjs --require-complete` 检查队列和 AVIF 清单，生成 `colored-plates.js`、进度和完整提示词清单；此脚本写汇总文件，不改色或转码。新增图必须先入队列，整库覆盖另行检查，验收状态由默认通过命令记录，步骤见设色流程。
 
-App 根据到访状态选择图像：未到访保留朝代色线稿，到访显示实物设色。本轮 200 张透明副本已于 2026-09-16 由用户确认全部通过，清单标记为 `approved_user`，并按 PNG 与 AVIF 哈希保存验收记录；新增或内容变更的图版仍需单独验收。`color-proof.html` 提供深色、浅色、棋盘格背景，以及原设色／线稿对照和逐张浏览。原线稿生产流程如下。
+App 根据到访状态选择图像：未到访保留朝代色线稿，到访显示实物设色。本轮 200 张透明副本已于 2026-09-16 由用户确认全部通过，清单标记为 `approved_user`，并按 PNG 与 AVIF 哈希保存验收记录；新增或内容变更的图版不继承该记录，按 2026-10-05 起的默认通过策略记为 `approved_default`，用户明确说过通过的才记 `approved_user`。`color-proof.html` 提供深色、浅色、棋盘格背景，以及原设色／线稿对照和逐张浏览。原线稿生产流程如下。
 
 - `longmen-vairocana.png`：原有卢舍那大佛，保持不变。
 - `references/longmen-style-black.png`：从原图透明度提取的黑线白底母版，每次生成都作为风格输入。
@@ -66,22 +66,24 @@ App 根据到访状态选择图像：未到访保留朝代色线稿，到访显�
 
 日本时代配色：飞鸟 `#c2ad78`、奈良 `#9caa76`、平安 `#b79aca`、镰仓 `#68a6ad`、江户 `#bd8e7b`。首批六处的绘制对象、最终文件与参考记录见 [日本古寺图版](research/japan-plates.md)。
 
+以下各批的验收状态以逐图 `user_review` 为准：2026-10-05 起新图经默认通过命令记为 `approved_default`，用户明确说过通过的记为 `approved_user`；已记录的用户确认是历史事实，保持不变。
+
 江浙新增23张及各自完整提示词、实拍来源与年代说明见 [江浙图版](research/jiangzhe-plates.md)。
 
 河南、河北、山西新增82张及来源、所绘部位与年代说明见 [三省补遗图版](research/north200-plates.md)。新图继续以同一卢舍那母版为风格输入，主体层数、开间与残损按实拍核对。
 
-本轮山西两处增补的素材、提示词、来源与验收状态见 [山西增补图版记录](research/shanxi-additions.md)。窦大夫祠与大同九龙壁保留白底原件，新增透明设色默认 `pending_user`，不继承既有图版验收。
+本轮山西两处增补的素材、提示词、来源与验收状态见 [山西增补图版记录](research/shanxi-additions.md)。窦大夫祠与大同九龙壁保留白底原件，新增透明设色不继承既有图版验收，状态以逐图记录为准。
 
-内蒙古、云南、贵州本批新增八处（3／3／2），全为原型待用户人审图版；安顺文庙因缺完整大成殿实拍暂缓。真实来源、提示词与名单见 [本批记录](research/im-yn-gz-plan.md)。
+内蒙古、云南、贵州本批新增八处（3／3／2），均为原型图版，状态以逐图记录为准；安顺文庙因缺完整大成殿实拍暂缓。真实来源、提示词与名单见 [本批记录](research/im-yn-gz-plan.md)。
 
 福建、山东本批新增七处（4／3），线稿及设色均于 2026-09-17 经用户人眼确认通过，实际文件哈希保存于逐图 `user_review`；蓬莱阁因缺主阁整体现状实拍暂缓，不在本次验收内。原件完整保留，本地去底仅作尽力处理，不以技术质量阈值拒绝首稿。名单、来源与生成记录见 [本批记录](research/fujian-shandong-plan.md)。
 
-陕西本批新增七处，线稿及设色均待用户验收；普照寺大佛殿参考不足暂缓，不接入。计划与真实生成记录见 [陕西批次](research/shaanxi-plan.md)，本地人审页为 `research/shaanxi-review.html`，原件与审图页不随 Git 交付。
+陕西本批新增七处，线稿及设色状态以逐图记录为准；普照寺大佛殿参考不足暂缓，不接入。计划与真实生成记录见 [陕西批次](research/shaanxi-plan.md)，本地审图页为 `research/shaanxi-review.html`，原件与审图页不随 Git 交付。
 
-河北本批新增八处，线稿与设色均待用户人眼验收。所绘主体、官方年代依据、照片署名和真实提示词见 [河北批次](research/hebei-20260917-plan.md)；既有图版哈希和验收状态保持不变。
+河北本批新增八处，线稿与设色状态以逐图记录为准。所绘主体、官方年代依据、照片署名和真实提示词见 [河北批次](research/hebei-20260917-plan.md)；既有图版哈希和验收状态保持不变。
 
-上海四处的白底原件、透明交付图、真实提示词及实拍来源见 [上海补遗记录](research/shanghai-additions.md)。新图保持待用户审阅，不继承既有验收。
+上海四处的白底原件、透明交付图、真实提示词及实拍来源见 [上海补遗记录](research/shanghai-additions.md)。新图不继承既有验收，状态以逐图记录为准。
 
-安徽三处的实拍来源、所绘主体、实际提示词与透明交付说明见 [安徽补遗图版](research/anhui-plates.md)。新图保留待用户审图状态。
+安徽三处的实拍来源、所绘主体、实际提示词与透明交付说明见 [安徽补遗图版](research/anhui-plates.md)。新图状态以逐图记录为准。
 
 宁夏新增 [须弥山第5窟胸膝局部](research/nx_xumishan.json)、[西夏陵3号陵现存夯土陵塔](research/nx_xixialing.json)、[一百零八塔最上三行七塔局部](research/nx_108towers.json)。线稿、设色白底原件、参考照片及透明 PNG／AVIF 保持上述目录层级；每张绑定实际白底原件 SHA-256，未采用旧图兼容例外。设色输入、材质判断及目检见 `color-research/nx_*.json`，用户于2026-09-18明确确认“验收通过”，透明清单已标记 `approved_user` 并绑定实际 PNG／AVIF 哈希；线稿的独立验收及交付哈希亦保存在逐图记录中。

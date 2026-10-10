@@ -2,7 +2,7 @@
   "id": "hn_gaoge",
   "name": "高阁寺",
   "subject": "高阁寺 · 阁楼及高台上部",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_gaoge.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_gaoge.json",
   "output": "assets/colored/hn_gaoge.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:27:36.142Z",
   "generated_at": "2026-10-01T19:30:03.717404+00:00",
@@ -98,5 +99,15 @@
       "高阁寺 · 阁楼及高台上部",
       "明 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "7bc7e59c90678e1db179ddbd75364e3f138bc9de3b58ad4b7b5fdb191b193e1a",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "fe590812b1506b0e07e3eaf9ad375e232f2dd19f0ef7bbac6ef74ba8805257e2",
+    "avifSha256": "29d7c9d316225345e12a8f6a73e4864b20bfe5455927dd64aad12192f109ca78"
   }
 }

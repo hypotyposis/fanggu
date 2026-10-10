@@ -40,7 +40,7 @@ test('Jiangsu and Zhejiang twenty have scoped national titles and complete sourc
     const line = json(`assets/research/${id}.json`);
     const color = json(`assets/color-research/${id}.json`);
     assert.deepEqual(Array.from(site.caption), line.caption, id);
-    assert.equal(line.visual_review_status, 'pending_user');
+    assert.equal(line.visual_review_status, 'approved_default');
     assert.equal(color.user_review.status, 'approved_user');
     assert.equal(color.user_review.reviewer, 'user');
     assert(line.prompt && color.prompt, id);

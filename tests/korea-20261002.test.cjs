@@ -61,7 +61,7 @@ test('Korean line/color originals, references, queue and actual transparent deli
     assert.equal(queue.entries.filter(entry => entry.id === id).length, 1);
     for (const folder of ['research', 'color-research']) {
       const meta = json(`assets/${folder}/${id}.json`);
-      assert.equal(meta.id, id); assert(['pending_user', 'approved_user'].includes(meta.visual_review_status));
+      assert.equal(meta.id, id); assert(['pending_user', 'approved_user', 'approved_default'].includes(meta.visual_review_status));
       assert.equal(meta.background_preparation.sourceSha256, hash(meta.output || meta.generated_file));
       assert(meta.prompt.length > 500); assert(meta.inputs_viewed && meta.preview_check.original_viewed);
       assert(meta.generation_history.length >= 1);

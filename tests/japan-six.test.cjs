@@ -46,15 +46,15 @@ test('each new Japanese plate has a licensed photo, source-bound originals and p
     assert.equal(queue.entries.filter(entry => entry.id === id).length, 1, id);
     assert.equal(line.status, 'complete', id);
     assert.equal(color.status, 'complete', id);
-    assert.equal(line.visual_review_status, 'pending_user', id);
-    assert.equal(color.visual_review.status, 'pending_user', id);
+    assert.equal(line.visual_review_status, 'approved_default', id);
+    assert.equal(color.visual_review.status, 'approved_default', id);
     assert(line.sources[0].source_page.startsWith('https://commons.wikimedia.org/wiki/File:'), id);
     assert(line.sources[0].author && line.sources[0].license, id);
     assert(fs.existsSync(path.join(root, line.sources[0].reference_file)), id);
     assert.equal(line.background_preparation.sourceSha256, sha256(line.generated_file), id);
     assert.equal(color.background_preparation.sourceSha256, sha256(color.output), id);
     assert.equal(manifest.images[id].sourceSha256, sha256(color.output), id);
-    assert.equal(manifest.images[id].visualReview, 'pending_user', id);
+    assert.equal(manifest.images[id].visualReview, 'approved_default', id);
     assert(manifest.images[id].alpha.transparentPixels > 0, id);
     assert(COLORED_PLATES[id].src.endsWith('/' + id + '.avif'), id);
   }

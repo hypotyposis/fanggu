@@ -1,7 +1,7 @@
 {
   "id": "hu_tianhou",
   "subject": "芷江天后宫石坊完整立面",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg/1280px-%E8%8A%B7%E6%B1%9F%E5%A4%A9%E5%90%8E%E5%AE%AB%E7%9F%B3%E5%9D%8A.jpg",
   "author": "三猎",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hu_tianhou.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "中央高、左右低的石坊门楼，石雕面板与中央门洞；顶端鱼吻完整，底部石鼓与两侧近门石狮保留，不延伸整面围墙。"
   ],
@@ -154,5 +154,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "bb5105144d4b679eace58e21f40c09036baf4ba3018d917a0d6b8f367fd098d3",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "bb5105144d4b679eace58e21f40c09036baf4ba3018d917a0d6b8f367fd098d3",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "032a9c8d62d3f6f21ec0550febda6836c41cce9b64c6993eb4caf9cb186cbecc"
   }
 }

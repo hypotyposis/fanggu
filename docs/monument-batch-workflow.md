@@ -4,30 +4,33 @@
 
 ## 当前原型模式
 
-用户要求先验证原型并增加收录量，当前 `scripts/plate-policy.json` 为 `{"mode":"prototype"}`。下文质量目检、技术阈值、由质量问题触发的自动返工与前置验收步骤只适用于严格模式；搜索收口、持续补位、及时落盘、真实来源与执行顺序仍适用。
+用户要求先验证原型并增加收录量，当前 `scripts/plate-policy.json` 为 `{"mode":"prototype"}`。用户于 2026-10-05 进一步决定：审图时间不是瓶颈，默认通过即可，不必等人眼验收。下文质量目检、技术阈值、由质量问题触发的自动返工与前置验收步骤只适用于严格模式；搜索收口、持续补位、及时落盘、真实来源与执行顺序仍适用。
 
 ```text
-资料/照片 → 并发线稿 → 保存原件 → 设色 → 尽力去底/转码 → 本地预览 → 用户集中人审
-                                                                      ├ 通过：记录用户验收，接入
-                                                                      └ 不通过：按用户反馈修正
+资料/照片 → 并发线稿 → 保存原件 → 设色 → 尽力去底/转码 → 默认通过（approved_default）→ 汇总、交付
+                                                            └ 用户随时可在本地对照页翻看；明确说通过的 ID 另记 approved_user
 ```
 
-- AI 不反复数层、判风格或淘汰生成稿，不以技术指标自动重画。默认不等待前置线稿人审；用户明确要先看线稿时只暂停对应项。
-- 线稿使用 `prototype-matte.py` 按灰度生成 alpha、着朝代色，跳过近白边缘与中性笔画拦截。设色继续只去外部连通白底及指定透空；不合适的种子跳过，若去底会删除整图则保留原件副本供人审，不宣称一定透明。
-- 转码/汇总跳过 RGB、alpha、尺寸等质量拒绝；图片可先进入本地待审预览，不等于用户已通过。文件不存在、格式无法解码、编码器失败及输入执行中被修改仍如实报告，不能把这些执行失败记作已交付。
-- 同一原件和去底参数的既有设色缓存优先复用，保留原有验收。哈希用于缓存和绑定你实际通过的图片，不作为视觉质量否决。来源、提示词仍保存，不为凑数擅改主体或臆填到访。
-- 用户明确通过某些 ID 后才执行下面的记录命令；命令不代表代理可以自行批准。未审仍 `pending_user`。这次流程调整不批准历史失败稿，也不重画既有图。
+- AI 不反复数层、判风格或淘汰生成稿，不以技术指标自动重画。默认不等待线稿人审；用户明确要先看线稿时只暂停对应项。
+- 线稿使用 `prototype-matte.py` 按灰度生成 alpha、着朝代色，跳过近白边缘与中性笔画拦截。设色继续只去外部连通白底及指定透空；不合适的种子跳过，若去底会删除整图则保留原件副本并如实报告，不宣称一定透明。
+- 转码/汇总跳过 RGB、alpha、尺寸等质量拒绝。文件不存在、格式无法解码、编码器失败及输入执行中被修改仍如实报告，不能把这些执行失败记作已交付。
+- 同一原件和去底参数的既有设色缓存优先复用，保留原有状态。哈希用于缓存和绑定实际交付的图片，不作为视觉质量否决。来源、提示词仍保存，不为凑数擅改主体或臆填到访；资料不足的条目仍按第 2 节阻塞。
+- 验收状态有三种，都会交付，iOS 打包从不区分：`pending_user` 只是转码之后、默认通过命令之前的瞬时状态；`approved_default` 表示按默认通过策略接入，没有人眼审阅，`user_review` 为 `{ status: "approved_default", reviewer: "default-policy", policy: "default-approve-2026-10-05", reviewed_at, sourceSha256, inputSha256, avifSha256 }`（line 阶段为 `sourceSha256` 与 `lineSha256`），`visual_review_status` 同步写成 `approved_default`，设色 JSON 若有 `visual_review` 对象，其 `status` 也同步；`approved_user` 只在用户明确说过通过时记录，`reviewer` 为 `user`。`avif-manifest.json` 的 `images[id].visualReview` 与 `colored-plates.js` 的 `visualReview` 取 `approved_default` 或 `approved_user`。标签必须诚实：默认通过的图不得写成 `approved_user`，默认命令也不覆盖已有的 `approved_user`。这次流程调整不重画既有图。
+
+每批转码后在仓库根目录运行：
 
 ```bash
-# 只填写用户明确通过的真实 ID；line 用于用户选择提前审线稿的情况。
-node scripts/record-plate-review.mjs color <id> [<id> ...]
+node scripts/record-plate-review.mjs color --default --all-pending
+node scripts/record-plate-review.mjs line --default --all-pending
 python3 -B scripts/prepare-colored-avif.py
 node scripts/collect-colored-plates.mjs --require-complete
 ```
 
-只要用户验收与当前原件/PNG/AVIF 哈希一致，就标为 `approved_user`，不再由技术质量阈值二次否决。图片改变后需重新人审。
+`--all-pending` 把所有仍为 `pending_user` 的图标为 `approved_default`；也可以在 `--default` 后列具体 ID。用户主动说某些 ID 通过时，改用 `node scripts/record-plate-review.mjs color <id> [<id> ...]` 或 `line <id> [<id> ...]` 记为 `approved_user`，随后同样重跑转码与汇总。记录绑定当时的原件/PNG/AVIF 哈希；图片改变后旧记录失效、清单回落为 `pending_user`，重新转码后再次运行默认通过命令即可，已有 `approved_user` 的图改变后需用户再次说通过。
 
-恢复严格模式：将配置的 `mode` 改为 `strict`，或依次对线稿、转码、汇总命令加 `--strict`。`white-matte.py` 及其严格回归测试保留；原型使用独立处理器，避免改动严格处理器哈希而重做旧图。生产批次不再以完整审图/像素回归作为原型交付门槛；修改代码时仍运行相关自动测试。
+AI 仍不做淘汰决定。可选做法：在不拦截交付的前提下做一次只标记的旁路目检，把主体、层数、裁切等可疑的 ID 列成清单附在批次报告里，供用户随时翻看；清单不改变任何状态，也不触发重画。
+
+恢复严格模式：将配置的 `mode` 改为 `strict`，或依次对线稿、转码、汇总命令加 `--strict`。`white-matte.py` 及其严格回归测试保留；原型使用独立处理器，避免改动严格处理器哈希而重做旧图。生产批次不以人审或像素回归作为原型交付门槛；修改代码时仍运行相关自动测试。
 
 ## 1. 开工：先准备一批就绪项
 
@@ -71,12 +74,12 @@ node scripts/collect-colored-plates.mjs --require-complete
 - 生成调用总数、返工数；服务耗时（工具可核对时填写，否则写未知）：
 - 峰值在途数量、最终有效并发、降档原因及服务失败数：
 - 阶段时间窗及超预算原因；用户等待/服务异常单列：
-- 新增、复用、阻塞、待用户审图的 ID：
+- 新增、复用、阻塞的 ID；默认通过（`approved_default`）数量 / 用户明确通过（`approved_user`）数量：
 - 实际检查命令及结果、浏览器检查范围、未验证项：
 - 素材是否备份/发布、代码是否提交：
 ```
 
-阶段采用 `ready → line_running → line_reviewed → color_running → color_reviewed → delivery_ready`；资料或质量问题可转 `blocked` 并写明恢复条件。这里的阶段不替代逐图 JSON 的状态，也不代表 `approved_user`。就绪、失败和在途项必须能从落盘文件恢复，不能只保存在代理内存中。
+阶段采用 `ready → line_running → line_reviewed → color_running → color_reviewed → delivery_ready`；资料或质量问题可转 `blocked` 并写明恢复条件。这里的阶段不替代逐图 JSON 的验收状态；`approved_default` / `approved_user` 只由 `record-plate-review.mjs` 写入。就绪、失败和在途项必须能从落盘文件恢复，不能只保存在代理内存中。
 
 ## 2. 资料搜索：限时收口，不降低证据要求
 
@@ -124,11 +127,14 @@ node scripts/collect-colored-plates.mjs --require-complete
 
 ## 5. 集中接入与验证：先完成写入，再读结果
 
-1. 只接入图像、来源、真实生成记录及目检齐备的 ID。集中更新 `SITES`、`PLACES`、`queue.json.entries/count` 和必要测试覆盖，默认未到访。保留旧 ID、队列特殊入口、个人记录及已通过图版验收。同批在 `i18n/en.json`、`i18n/ja.json` 补齐译文和新术语，规则见 [多语言目录](development.md#多语言目录)。
-2. 在仓库根目录依次执行以下命令。每条必须确认退出成功后才进入下一条；返回会话 ID 时继续等待完成，不能认为命令已结束。
+1. 只接入图像、来源、真实生成记录齐备的 ID。集中更新 `SITES`、`PLACES`、`queue.json.entries/count` 和必要测试覆盖，默认未到访。保留旧 ID、队列特殊入口、个人记录及既有图版验收记录。同批在 `i18n/en.json`、`i18n/ja.json` 产出机器译文：新术语（地点、省份、地区、类型、时代）必须补齐，逐古迹译文随批交付但不是入库门槛，缺译在英日界面回退中文；规则见 [多语言目录](development.md#多语言目录)。
+2. 在仓库根目录依次执行以下命令。每条必须确认退出成功后才进入下一条；返回会话 ID 时继续等待完成，不能认为命令已结束。第一次转码产出 AVIF 与清单，默认通过命令据此把仍为 `pending_user` 的图记为 `approved_default`，第二次转码把状态写入清单，再汇总。
 
 ```bash
 node scripts/prepare-plates.mjs
+python3 -B scripts/prepare-colored-avif.py
+node scripts/record-plate-review.mjs color --default --all-pending
+node scripts/record-plate-review.mjs line --default --all-pending
 python3 -B scripts/prepare-colored-avif.py
 node scripts/collect-colored-plates.mjs --require-complete
 node ios/scripts/build-catalog.cjs
@@ -138,14 +144,14 @@ git diff --check
 ```
 
 3. 线稿生成器可能因 `sites.js` 时间变化重处理旧线稿；不把脚本重处理说成重新 imagegen 出图。设色转码按哈希复用旧图，不手改清单伪造复用。除失败修复或输入确实改变外，每批集中重建一次，不每新增一项全量重跑。
-4. 核对 `SITES` 与 `COLORED_PLATES` 的 ID 集合，队列 `entries + excluded` 无遗漏/重复且 `count === entries.length`，`progress.pending` 无意外项；旧交付哈希及用户验收未被无关改写。汇总器的 `--require-complete` 不检测队列外遗漏，不能只调数量断言。
+4. 核对 `SITES` 与 `COLORED_PLATES` 的 ID 集合，队列 `entries + excluded` 无遗漏/重复且 `count === entries.length`，`progress.pending` 无意外项；旧交付哈希及既有验收记录未被无关改写，默认通过命令没有覆盖任何 `approved_user`。汇总器的 `--require-complete` 不检测队列外遗漏，不能只调数量断言。
 5. 浏览器检查首轮预算为 10 分钟。在独立测试 origin/配置上，核对本批各图请求、图注和深浅底效果；每个新增地区在 App 检查筛选与别名搜索，代表项检查原生详情、返回和窄屏。逐图目检不能仅抽样；未改共享记录或交互逻辑时不重复整套存储与手势测试，修改了就按开发指南的验证矩阵补查。
 6. 页面计数或图片仍旧时，先用一次重新加载及实际响应检查判断缓存；确认缓存后使用隔离预览 origin，或按任务范围更新受影响资源版本，不反复盲目刷新。审图工具不维护个人记录；不清空用户真实存储，也不擅停其他任务服务器。超过检查预算时记录具体异常并进入诊断，不跳过剩余检查。
-7. 集中更新用户可见说明和批次交付记录；新图仍为 `pending_user`，逐图技术 `complete` 不代表用户通过。只有当前任务明确要求时才提交代码或发布；被 Git 忽略的图片须单独保管，清单入库不等于素材已经发布。
+7. 集中更新用户可见说明和批次交付记录；新图经默认通过命令记为 `approved_default`，逐图技术 `complete` 与默认通过都不表示用户看过，不写成 `approved_user`。只有当前任务明确要求时才提交代码或发布；被 Git 忽略的图片须单独保管，清单入库不等于素材已经发布。
 
 ## 6. 恢复与耗时交付
 
-- 中断后先查 Git、批次计划、在途标识和当前项 JSON；核对原件及哈希。已生成但未审的先审，交付缺失的只补处理；不因汇总进度滞后从头重画。不确定的输出先核验对应关系，不猜测归属。
+- 中断后先查 Git、批次计划、在途标识和当前项 JSON；核对原件及哈希。已生成但未记录状态的先补默认通过命令，交付缺失的只补处理；不因汇总进度滞后从头重画。不确定的输出先核验对应关系，不猜测归属。
 - 每阶段及每次返工及时记录时间。`completed_at` 用工具可核对的完成时间；只有领取时间时填写 `received_at`，不能将晚领取造成的间隔记作生成服务耗时。
 - 报告墙钟起止、生成总数和返工数、服务耗时（已知时）、连续阶段时间窗及超预算原因。线稿与设色、资料与生成可能重叠，累计服务耗时和阶段耗时不能简单相加；主动分析/组织时间也不能全部归为工具等待。
-- 以本次实际结果说明新增、复用、阻塞、待审、测试、素材和提交/发布状态；不复制历史批次数量或宣称固定时长保证。效率由收口、并发、止损与可核对记录约束，质量底线不变。
+- 以本次实际结果说明新增、复用、阻塞、默认通过与用户明确通过的数量、测试、素材和提交/发布状态；不复制历史批次数量或宣称固定时长保证。效率由收口、并发、止损与可核对记录约束，质量底线不变。

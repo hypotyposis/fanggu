@@ -2,9 +2,9 @@
   "id": "kh_bayon",
   "name": "巴戎寺",
   "subject": "中央面像塔群与直接支承台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:The_Bayon_(12450324194).jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Bayon_%2812450324194%29.jpg/1920px-The_Bayon_%2812450324194%29.jpg",
   "author": "Clay Gilliland",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "331ef445d921e24142c74bafd5183ce4e4be9336b3518b7b6ed5171db8e9df85",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "138f98e9c057b9f4fde6183497961002539d037ed151e1738ff1d94f2e555f44",
+    "avifSha256": "b1e888b91b6d27e63d4f172c838d97c3bc4149d6b13537176bba80f75643bc13"
   }
 }

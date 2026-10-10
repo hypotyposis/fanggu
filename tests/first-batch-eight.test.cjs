@@ -47,13 +47,13 @@ test('each new artwork has a source, hash binding, queue entry and pending revie
     assert.equal(entries.length, 1, id);
     assert.equal(line.status, 'complete');
     assert.equal(color.status, 'complete');
-    assert.equal(line.visual_review_status, 'pending_user');
-    assert.equal(color.visual_review.status, 'pending_user');
+    assert.equal(line.visual_review_status, 'approved_default');
+    assert.equal(color.visual_review.status, 'approved_default');
     assert.equal(line.background_preparation.sourceSha256, hash(line.generated_file));
     assert.equal(color.background_preparation.sourceSha256, hash(color.output));
     assert(line.sources.every(source => fs.existsSync(path.join(root, source.reference_file))));
     assert.equal(delivered.images[id].sourceSha256, hash(color.output));
     assert.equal(delivered.images[id].alpha.min, 0);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default');
   }
 });

@@ -38,7 +38,7 @@
       "selected_for_preview": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-e1d0f9a0-7015-419c-a2fc-47adc4312447.png",
   "dimensions": {
     "width": 1024,
@@ -58,6 +58,28 @@
     {
       "title": "福建及地方主管部门：所绘主体资料",
       "url": "https://www.fj.gov.cn/yy/wxym/zfgbwxts/201605/t20160503_1183826.htm"
+    },
+    {
+      "title": "漳州石牌坊",
+      "url": "https://web.archive.org/web/20160310153319/http://fjww.com/old/shownews.asp?newsid=231",
+      "publisher": "福建省文物局（福建文物网，互联网档案馆存档）",
+      "note": "1619年为蒋孟育及父祖立坊、宽8.09米高11米、南北向、匾文、两坊相距28.5米、三间五楼十二柱、青白石、鱼形脊饰、外国人形象花板、1996年国保",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "漳州石牌坊",
+      "url": "https://zh.wikipedia.org/wiki/%E6%BC%B3%E5%B7%9E%E7%9F%B3%E7%89%8C%E5%9D%8A",
+      "publisher": "维基百科（中文），二手来源",
+      "note": "四坊位置与尺寸的汇总，引福建省文物局与《全国重点文物保护单位》第Ⅱ卷",
+      "added": "content-rewrite-20261005"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "28bccbb3866e876b3abfb654c3bbc349978da81852c4bc3ee65807205a79685f",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "37f899a00d2c45c44daa6602a5711e32d298072ed0bee7c285f9e6532496aa78"
+  }
 }

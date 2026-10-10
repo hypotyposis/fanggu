@@ -1,7 +1,7 @@
 {
   "id": "jp_gokokuji_hondo",
   "subject": "本堂 · 观音堂",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Gokokuji_-_hondo.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Gokokuji_-_hondo.jpg/1280px-Gokokuji_-_hondo.jpg",
   "author": "Kakidai",
@@ -46,7 +46,7 @@
     }
   ],
   "structure_checkpoints": "Gokokuji Hondo (Kannon-do), Tokyo, built 1697. Complete front view of broad seven-bay main hall, ONE massive hipped-and-gabled ribbed COPPER roof, three-bay central worship porch below the continuous eaves, timber veranda, pale window panels and broad central steps. No pagoda, side halls, trees, visitors, lanterns or signs. Preserve the distinctive very tall sweeping roof and understated timber structure.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -68,5 +68,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-f7909a21-6207-47d3-8a03-b287732099f9"
+  "generation_call_id": "exec-f7909a21-6207-47d3-8a03-b287732099f9",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "d24d93aa240a7b146db54bda71be57415660b6555ff15bdb757cf95da0229c23",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "910398bf53fee938394691739c7caa73d8bedaa2a5931150436fd378c2a38f1f"
+  }
 }

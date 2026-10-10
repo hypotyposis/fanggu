@@ -2,7 +2,7 @@
   "id": "hn_wenzhige",
   "name": "浚县文治阁",
   "subject": "浚县文治阁 · 十字街钟鼓楼现存主体",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_wenzhige.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_wenzhige.json",
   "output": "assets/colored/hn_wenzhige.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:27:36.142Z",
   "generated_at": "2026-10-01T19:30:39.887622+00:00",
@@ -106,5 +107,15 @@
       "浚县文治阁 · 十字街钟鼓楼现存主体",
       "清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "69741baded309c78776f09619ab8a344d4f0282938db32b59a02435652122976",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "8bdc38e0c84b4feb5e3a9fb70e1ffd70525561170f1ca2feef91e67c5f62a790",
+    "avifSha256": "2b5aca62c689596769b651c866c291c18d0709340c29d3c7bb448c3ceb2e1623"
   }
 }

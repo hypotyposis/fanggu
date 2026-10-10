@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0289BA0176111CFE18A0D712 /* MaShanZheng-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E0678EBC3D3425137F4D8B16 /* MaShanZheng-Regular.ttf */; };
 		0A8AEC02D27666C7FAF54F17 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C59EB311418B9398E48B6B5C /* InfoPlist.xcstrings */; };
+		1EE11A2735423C6012129B9E /* UITestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B95612814643F7A1AE8651E /* UITestSupport.swift */; };
 		24C8EAADD27AE8E637BB15CF /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = D8EFEA8F598513230A4CD144 /* catalog.json */; };
 		26E86B29C102275A8181930D /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5951C997CF6D12053F26AB4 /* Haptics.swift */; };
 		2C37F4310E7EF537A6443251 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB46DE790EAC210C1B00540 /* TimelineView.swift */; };
@@ -18,6 +19,7 @@
 		359AB7BBF2A33BAC93464D2E /* CurationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BA49833E5FF395DB328CB1 /* CurationViews.swift */; };
 		3F0A9E78E2D18463E6017BF9 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E90F2F0EF66217E12232D1F /* LocalizationTests.swift */; };
 		3FD65A7E3C91E1AD318972E5 /* catalog-ja.json in Resources */ = {isa = PBXBuildFile; fileRef = E9E49FAA1DD0324DAAFBDE1B /* catalog-ja.json */; };
+		42CF885123615F5B6C19C368 /* UITestLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C6C54EEE6B929972C4945A /* UITestLaunch.swift */; };
 		43F2EAB2A712A3A78A522167 /* UXRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18636163552E611EFD7050C2 /* UXRegressionTests.swift */; };
 		446081072BE3002D27313AC8 /* Artwork in Resources */ = {isa = PBXBuildFile; fileRef = 132DEA14D9216B3216E55681 /* Artwork */; };
 		4543125B3B12B16E913B1855 /* AtlasTimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC2CF76E97DA2434D1E6EDE /* AtlasTimelineTests.swift */; };
@@ -80,6 +82,7 @@
 
 /* Begin PBXFileReference section */
 		00D999620921C3D1C50404A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		02C6C54EEE6B929972C4945A /* UITestLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestLaunch.swift; sourceTree = "<group>"; };
 		06BA49833E5FF395DB328CB1 /* CurationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationViews.swift; sourceTree = "<group>"; };
 		0BAEBAB6AF5366BE5DB4C141 /* NearbyReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyReminderTests.swift; sourceTree = "<group>"; };
 		0EE32E0BACF2B10941D2F194 /* curations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = curations.json; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		8E90F2F0EF66217E12232D1F /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		941369201341EDC769D0A968 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		94EC54B130694982CA1A92E7 /* OfflineLand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineLand.swift; sourceTree = "<group>"; };
+		9B95612814643F7A1AE8651E /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
 		9BC2CF76E97DA2434D1E6EDE /* AtlasTimelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlasTimelineTests.swift; sourceTree = "<group>"; };
 		A3DC36FF5E462D748C6A6FCD /* CurationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationUITests.swift; sourceTree = "<group>"; };
 		A5951C997CF6D12053F26AB4 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 				EE791FF657D724DB06BE27FF /* SketchMapLayout.swift */,
 				C437FD06936B24F9C4462019 /* TestScope.swift */,
 				8AB46DE790EAC210C1B00540 /* TimelineView.swift */,
+				02C6C54EEE6B929972C4945A /* UITestLaunch.swift */,
 				9BE18DA2E8D25129B6858F58 /* Resources */,
 			);
 			path = Fanggu;
@@ -241,6 +246,7 @@
 				BB0955D67A1900762B4F22FC /* IsolatedApp.swift */,
 				28144A233EE221147145D16B /* LocalizationUITests.swift */,
 				C48EF388CE314074A1CE9648 /* NearbyUITests.swift */,
+				9B95612814643F7A1AE8651E /* UITestSupport.swift */,
 				1FB416C4A1BBB2B92F3442FA /* UIUXFixTests.swift */,
 			);
 			path = FangguUITests;
@@ -392,6 +398,7 @@
 				66B9CCA7F19AB1FE7F3636AE /* SketchMapLayout.swift in Sources */,
 				A0F3EF3349BF0D8672927A7A /* TestScope.swift in Sources */,
 				2C37F4310E7EF537A6443251 /* TimelineView.swift in Sources */,
+				42CF885123615F5B6C19C368 /* UITestLaunch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +412,7 @@
 				89979D04BCAA9530B8EC4A09 /* IsolatedApp.swift in Sources */,
 				E57B7E22138C67ED823E2294 /* LocalizationUITests.swift in Sources */,
 				B1BEE1848870CAA7A01FAECF /* NearbyUITests.swift in Sources */,
+				1EE11A2735423C6012129B9E /* UITestSupport.swift in Sources */,
 				F633210B92BC4071EE108553 /* UIUXFixTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -36,11 +36,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已查看设色原稿及实拍材料色；不等于用户视觉验收。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "30a9fc7f1d9f07ebbece57144a7618d3d9d37c31df10cc4c204c4387a801b379",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "6e51d33dd6a54f46544d1bd6783c51163ad594abcb601d7b92ff2b9ba1aa0b1d",
+    "avifSha256": "4a5ab972f756fc5e1cd40546a5a2c3ef3d3b3e749ffd55e0e6b73ec34774566d"
   }
 }

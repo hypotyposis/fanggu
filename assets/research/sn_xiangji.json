@@ -1,7 +1,7 @@
 {
   "id": "sn_xiangji",
   "subject": "西安香积寺善导塔现存整塔",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "徐怡涛：公元5至13世纪中国砖石佛塔塔壁装饰类型分期研究，故宫博物院院刊2016年第2期表一",
@@ -23,7 +23,7 @@
   "generated_file": "assets/generated/sn_xiangji.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_xiangji",
     "name": "香积寺善导塔",
@@ -141,5 +141,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4854ffce-5547-4d80-98c6-46f706452130.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4854ffce-5547-4d80-98c6-46f706452130.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-4854ffce-5547-4d80-98c6-46f706452130.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "ff062e8ae383cf279b8598b77407894f4581a8e3411554e7673b457d5eede334",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "5180a2b84301c38246f645cc796576ce9cc7874cc2e5023d05f3ea8e5ea6ce94"
+  }
 }

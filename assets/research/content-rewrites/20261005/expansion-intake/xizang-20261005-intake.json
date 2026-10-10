@@ -1,0 +1,361 @@
+{
+  "batch": "xizang-20261005",
+  "created": "2026-10-05T22:27:06+09:00",
+  "ready": [
+    "xz_drepung",
+    "xz_guge",
+    "xz_gyantse_dzong",
+    "xz_gyantse_kumbum",
+    "xz_ramoche",
+    "xz_sakya_south",
+    "xz_samye_utse",
+    "xz_sera",
+    "xz_shalu",
+    "xz_tholing",
+    "xz_tradruk"
+  ],
+  "blocked": [
+    {
+      "id": "xz_tashilhunpo",
+      "reason": "缺主体照片：现有两张授权照片（Prof. Mortel 2018 CC BY 2.0；Bgabel 2010 CC BY-SA 3.0）及 Commons 分类 Tashilhunpo Monastery 中另 11 张候选（见 $S/expansion/tashi/info.json 与 montage.png）均自寺内屋顶或街巷仰视，强巴佛殿下部一至二层被前景屋顶遮挡，没有一张能完整看到主体底部的正面照；措钦大殿、班禅灵塔殿亦无正面全貌照。另需用户确认所绘主体取强巴佛殿还是措钦大殿。强巴佛殿“高约30米、主体五层”“1914年由九世班禅主持营造”来自检索摘要（携程、凤凰网、China Daily），未直接核读，一并待核。"
+    }
+  ],
+  "new_places": [
+    {
+      "key": "xz_drepung",
+      "name": "拉萨 · 哲蚌寺",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 29.676709,
+      "lon": 91.046991,
+      "coordinate_note": "Wikidata Q241937（哲蚌寺 Drepung Monastery）P625 坐标 29.676709, 91.046991，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_drepung（仿 xz_sera 的“拉萨 · 色拉寺”命名）。",
+      "used_by": [
+        "xz_drepung"
+      ]
+    },
+    {
+      "key": "xz_tsaparang",
+      "name": "札达 · 札布让",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 31.46615,
+      "lon": 79.6706,
+      "coordinate_note": "Wikidata Q2658740（古格王国遗址）P625 坐标 31.46615, 79.6706，遗址本体近似坐标，非本项目测绘；地图显示点新建 xz_tsaparang。",
+      "used_by": [
+        "xz_guge"
+      ]
+    },
+    {
+      "key": "xz_gyantse",
+      "name": "江孜",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 28.91782,
+      "lon": 89.59921,
+      "coordinate_note": "Wikidata Q1297848（江孜宗山抗英遗址）P625 坐标 28.91782, 89.59921，宗山本体近似坐标，非本项目测绘；地图显示点新建 xz_gyantse（与白居寺共用）。",
+      "used_by": [
+        "xz_gyantse_dzong",
+        "xz_gyantse_kumbum"
+      ]
+    },
+    {
+      "key": "xz_sakya",
+      "name": "萨迦",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 28.90476,
+      "lon": 88.01782,
+      "coordinate_note": "Wikidata Q1585564（萨迦寺）P625 坐标 28.90476, 88.01782，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_sakya。",
+      "used_by": [
+        "xz_sakya_south"
+      ]
+    },
+    {
+      "key": "xz_samye",
+      "name": "扎囊 · 桑耶",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 29.32644,
+      "lon": 91.50422,
+      "coordinate_note": "Wikidata Q1430211（桑耶寺）P625 坐标 29.32644, 91.50422，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_samye。",
+      "used_by": [
+        "xz_samye_utse"
+      ]
+    },
+    {
+      "key": "xz_sera",
+      "name": "拉萨 · 色拉寺",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 29.69679,
+      "lon": 91.13275,
+      "coordinate_note": "Wikidata Q124848（色拉寺）P625 坐标 29.69679, 91.13275，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_sera。",
+      "used_by": [
+        "xz_sera"
+      ]
+    },
+    {
+      "key": "xz_shalu",
+      "name": "日喀则 · 夏鲁",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 29.12732,
+      "lon": 88.99308,
+      "coordinate_note": "Wikidata Q25681（夏鲁寺）P625 坐标 29.12732, 88.99308，与维基百科条目所列 29°7′38″N 88°59′35″E 一致；寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_shalu。",
+      "used_by": [
+        "xz_shalu"
+      ]
+    },
+    {
+      "key": "xz_shigatse",
+      "name": "日喀则",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 29.26706,
+      "lon": 88.870511,
+      "coordinate_note": "Wikidata Q877445（扎什伦布寺 Tashilhunpo Monastery）P625 坐标 29.26706, 88.870511，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_shigatse。",
+      "used_by": [
+        "xz_tashilhunpo"
+      ]
+    },
+    {
+      "key": "xz_tholing",
+      "name": "札达 · 托林",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 31.48283,
+      "lon": 79.79756,
+      "coordinate_note": "Wikidata Q770276（托林寺）P625 坐标 31.48283, 79.79756，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_tholing。",
+      "used_by": [
+        "xz_tholing"
+      ]
+    },
+    {
+      "key": "xz_tradruk",
+      "name": "乃东 · 昌珠",
+      "prov": "西藏",
+      "country": "CN",
+      "lat": 29.19373,
+      "lon": 91.77181,
+      "coordinate_note": "Wikidata Q601022（昌珠寺）P625 坐标 29.19373, 91.77181，寺院本体近似坐标，非本项目测绘；地图显示点新建 xz_tradruk。",
+      "used_by": [
+        "xz_tradruk"
+      ]
+    }
+  ],
+  "new_regions_or_provinces": [],
+  "new_periods": [],
+  "protection_entries": {
+    "xz_drepung": [
+      {
+        "batch": 2,
+        "unitName": "哲蚌寺",
+        "relation": "part",
+        "scope": "措钦大殿正面现状（明清陆续修建，改建年代未知）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（三）古建筑及历史纪念建筑物 · 编号27 分类号12 哲蚌寺 · 明 · 西藏自治区拉萨市 · PDF第23页（公报第279页）",
+        "scopeSources": [
+          {
+            "title": "中国西藏网：哲蚌寺 · 措钦大殿为明清两代陆续修建",
+            "url": "http://media.tibet.cn/xzly/wzz/201005/t20100526_583658.htm"
+          },
+          {
+            "title": "中国西藏网：哲蚌寺措钦大殿 · 17级石阶与8根列柱明廊",
+            "url": "http://m.tibet.cn/cn/religion/201804/t20180426_5798176.html"
+          }
+        ]
+      }
+    ],
+    "xz_guge": [
+      {
+        "batch": 1,
+        "unitName": "古格王国遗址",
+        "relation": "unit",
+        "scope": "札布让王城遗址现状（红殿、残墙、洞窟与山顶宫堡）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（五）古遗址 · 编号161 分类号26 古格王国遗址 · 西藏自治区普兰县（1961年时属普兰县，今札达县；备注：约为公元十世纪前后）· PDF第14页（公报第87页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：古格王国遗址 · 遗址构成",
+            "url": "https://zh.wikipedia.org/wiki/古格王国遗址"
+          }
+        ]
+      }
+    ],
+    "xz_gyantse_dzong": [
+      {
+        "batch": 1,
+        "unitName": "江孜宗山抗英遗址",
+        "relation": "unit",
+        "scope": "宗山城堡现状（1904年抗英战场的主体建筑，后世修复）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（一）革命遗址及革命纪念建筑物 · 编号5 分类号5 江孜宗山抗英遗址 · 1904年 · 西藏自治区江孜县 · PDF第7页（公报第80页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：江孜宗山 · 宗山城堡与1904年战役",
+            "url": "https://zh.wikipedia.org/wiki/江孜宗山"
+          }
+        ]
+      }
+    ],
+    "xz_gyantse_kumbum": [
+      {
+        "batch": 4,
+        "unitName": "白居寺",
+        "relation": "part",
+        "scope": "吉祥多门塔（十万佛塔）全貌",
+        "source": "batch4",
+        "locator": "第四批名单 ·（三）古建筑 · 编号160 分类号82 白居寺 · 明 · 西藏自治区江孜县 · PDF第25页（公报第1464页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：白居寺 · 吉祥多门塔",
+            "url": "https://zh.wikipedia.org/wiki/白居寺"
+          },
+          {
+            "title": "人民网：白居寺建筑与壁画艺术 · 白居寺吉祥多门塔",
+            "url": "http://art.people.com.cn/n/2014/0829/c206244-25566970.html"
+          }
+        ]
+      }
+    ],
+    "xz_ramoche": [
+      {
+        "batch": 5,
+        "unitName": "小昭寺",
+        "relation": "unit",
+        "scope": "主殿正立面现状（1474年重建格局、1986年重修）",
+        "source": "batch5",
+        "locator": "第五批名单 · 古建筑 · 编号411 分类号217 小昭寺 · 641年 · 西藏自治区拉萨市 · PDF第14页（浙江政报2002年第21期第17页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：小昭寺 · 1986年重建",
+            "url": "https://zh.wikipedia.org/wiki/小昭寺"
+          }
+        ]
+      }
+    ],
+    "xz_sakya_south": [
+      {
+        "batch": 1,
+        "unitName": "萨迦寺",
+        "relation": "unit",
+        "scope": "南寺拉康钦莫大殿正面（1268年建，历代维修）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号95 分类号48 萨迦寺 · 元 · 西藏自治区萨迦县 · PDF第11页（公报第84页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：萨迦寺 · 南寺与拉康钦莫",
+            "url": "https://zh.wikipedia.org/wiki/萨迦寺"
+          }
+        ]
+      }
+    ],
+    "xz_samye_utse": [
+      {
+        "batch": 4,
+        "unitName": "桑耶寺",
+        "relation": "unit",
+        "scope": "乌策大殿正面现状（文革后重建的金顶与上层）",
+        "source": "batch4",
+        "locator": "第四批名单 ·（三）古建筑 · 编号90 分类号12 桑耶寺 · 787～799年 · 西藏自治区扎囊县 · PDF第23页（公报第1462页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：桑耶寺 · 乌策大殿",
+            "url": "https://zh.wikipedia.org/wiki/桑耶寺"
+          },
+          {
+            "title": "Wikipedia (en): Samye · rebuilt after 1988",
+            "url": "https://en.wikipedia.org/wiki/Samye"
+          }
+        ]
+      }
+    ],
+    "xz_sera": [
+      {
+        "batch": 2,
+        "unitName": "色拉寺",
+        "relation": "unit",
+        "scope": "措钦大殿正面（1710年建，历代维修）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（三）古建筑及历史纪念建筑物 · 编号28 分类号13 色拉寺 · 明 · 西藏自治区拉萨市 · PDF第23页（公报第279页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：色拉寺 · 措钦大殿建于1710年",
+            "url": "https://zh.wikipedia.org/wiki/色拉寺"
+          }
+        ]
+      }
+    ],
+    "xz_shalu": [
+      {
+        "batch": 3,
+        "unitName": "夏鲁寺",
+        "relation": "unit",
+        "scope": "措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶",
+        "source": "batch3",
+        "locator": "第三批名单 · 古建筑及历史纪念建筑物 · 编号118 分类号66 夏鲁寺 · 元至清 · 西藏自治区日喀则市 · PDF第13页（公报第109页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：夏鲁寺 · 主殿与1333年重建",
+            "url": "https://zh.wikipedia.org/wiki/夏鲁寺"
+          }
+        ]
+      }
+    ],
+    "xz_tashilhunpo": [
+      {
+        "batch": 1,
+        "unitName": "扎什伦布寺",
+        "relation": "part",
+        "scope": "强巴佛殿正面（所绘主体待定）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号109 分类号62 扎什伦布寺 · 明初至清 · 西藏自治区日喀则县 · PDF第12页（公报第85页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：扎什伦布寺 · 强康（弥勒佛殿）",
+            "url": "https://zh.wikipedia.org/wiki/扎什伦布寺"
+          }
+        ]
+      }
+    ],
+    "xz_tholing": [
+      {
+        "batch": 4,
+        "unitName": "托林寺",
+        "relation": "unit",
+        "scope": "红殿正面与殿前佛塔现状",
+        "source": "batch4",
+        "locator": "第四批名单 ·（三）古建筑 · 编号110 分类号32 托林寺 · 宋 · 西藏自治区札达县 · PDF第24页（公报第1463页）",
+        "scopeSources": [
+          {
+            "title": "Wikipedia (de): Thoding-Kloster · 红殿",
+            "url": "https://de.wikipedia.org/wiki/Thoding-Kloster"
+          }
+        ]
+      }
+    ],
+    "xz_tradruk": [
+      {
+        "batch": 1,
+        "unitName": "昌珠寺",
+        "relation": "unit",
+        "scope": "入口正面与金顶现状（14世纪定型、1980年代重修）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号82 分类号35 昌珠寺 · 西藏自治区乃东县（备注：传为七世纪建）· PDF第11页（公报第84页）",
+        "scopeSources": [
+          {
+            "title": "Wikipedia (en): Tradruk Temple · 1980s renovation, 1988 reconsecration",
+            "url": "https://en.wikipedia.org/wiki/Tradruk_Temple"
+          }
+        ]
+      }
+    ]
+  },
+  "protection_untagged": {},
+  "notes": [
+    "本会话无 imagegen，仅完成资料就绪；生图待后续会话。",
+    "西藏已属 regions.southwest，省份“西藏”已有，无需新增地区或省份。",
+    "dyn 仅使用现有键：ming, modern, song, tubo, yuan；古格、托林按国保名单“宋”归 song，为约略归期。",
+    "所有照片许可均为 CC BY / CC BY-SA（2.0–4.0）或公有领域，来源 Wikimedia Commons。"
+  ]
+}

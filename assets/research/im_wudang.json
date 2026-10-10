@@ -1,7 +1,7 @@
 {
   "id": "im_wudang",
   "subject": "五当召苏古沁殿",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "五当召沿革、苏古沁独宫与文保资料",
@@ -35,7 +35,7 @@
     }
   ],
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "im_wudang",
     "name": "五当召",
@@ -119,5 +119,13 @@
   "width": 1536,
   "height": 1024,
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-882b609a-5d07-4f89-9af9-8519ff958acc.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-882b609a-5d07-4f89-9af9-8519ff958acc.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-882b609a-5d07-4f89-9af9-8519ff958acc.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "ae170cbea8e22331efed1136eb96b8777b76a26f47543c21aa8ccb58bb8af27c",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "80997668db12d33cd8405711c07e8cad24fc3cc208777a417c13a9f602daf79e"
+  }
 }

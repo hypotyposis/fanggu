@@ -29,7 +29,7 @@ test('ten Hebei national monuments have complete source-bound line and color pai
     for (const folder of ['research', 'color-research']) {
       const record = json(`assets/${folder}/${id}.json`);
       assert.equal(record.quality_mode, 'prototype');
-      assert(['pending_user', 'approved_user'].includes(record.visual_review_status));
+      assert(['pending_user', 'approved_user', 'approved_default'].includes(record.visual_review_status));
       assert.equal(record.background_preparation.sourceSha256, sha(record.generated_file || record.output));
       assert(record.inputs_viewed && record.preview_check.original_viewed);
       assert(record.historical_sources.some(s => s.url.includes('.gov.cn')));
@@ -97,10 +97,11 @@ test('Hebei intake preserves older plate content and human acceptance', () => {
     assert.equal(now.sha256, previous.sha256, id);
     if (previous.visualReview === 'approved_user') {
       assert.equal(now.visualReview, 'approved_user', id);
-    } else if (now.visualReview === 'approved_user') {
-      // A different batch may receive explicit acceptance after this baseline.
+    } else if (now.visualReview === 'approved_user' || now.visualReview === 'approved_default') {
+      // A plate pending at this baseline may since have been accepted by the user or by the default policy.
       const review = json(`assets/color-research/${id}.json`).user_review;
-      assert.equal(review.status, 'approved_user', id);
+      assert.equal(review.status, now.visualReview, id);
+      assert.equal(review.reviewer, now.visualReview === 'approved_user' ? 'user' : 'default-policy', id);
       assert.equal(review.sourceSha256, now.sourceSha256, id);
       assert.equal(review.inputSha256, now.inputSha256, id);
       assert.equal(review.avifSha256, now.sha256, id);

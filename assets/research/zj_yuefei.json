@@ -57,5 +57,13 @@
     ],
     "limitations": "图版不复制可读碑文；1163年为迁葬年，现存石件历经修葺。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "c989b0333cdefef70ef228ba9c38d0b324ed877f7e4292f02197cb4d267bb9d6",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "3d0aa8c5e3670169180afdc49d80a80e62a0c5c3527a73196a4ad5ebf41b6b06"
+  }
 }

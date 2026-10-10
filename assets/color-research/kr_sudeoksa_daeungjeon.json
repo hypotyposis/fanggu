@@ -2,9 +2,9 @@
   "id": "kr_sudeoksa_daeungjeon",
   "name": "修德寺大雄殿",
   "subject": "单座大雄殿与石台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Sudeoksa_01.JPG",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Sudeoksa_01.JPG",
   "author": "Lawinc82",
@@ -133,5 +133,14 @@
     "original_viewed": true,
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "dabafcc2450a89dd40719262ec3b1119a4ebcd4f034046a97c3be9af9b22e7db",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "0dfef43c69d590b5f2291de582cf30548bca87b71f901c2afc02cba1ca5f07cf",
+    "avifSha256": "c96ce9e9e2b23f543ecbe86a9a9de028195a20ead31b6a8c882fe02d1896471c"
   }
 }

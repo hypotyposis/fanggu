@@ -2,7 +2,7 @@
   "id": "hn_xiangguo",
   "name": "大相国寺",
   "subject": "大相国寺 · 大雄宝殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_xiangguo.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_xiangguo.json",
   "output": "assets/colored/hn_xiangguo.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:22:14.277Z",
   "generated_at": "2026-10-01T19:26:45.659828+00:00",
@@ -98,5 +99,15 @@
       "大相国寺 · 大雄宝殿正面",
       "清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "29f3d1dc3b5b2fe85d03bcb040644437a78ef188e836d5d47f687851559f2012",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "c2c8f25ae27f2eb72570cf7c81b9cf41f05e055726dd9c1c9f97955d822b3ab2",
+    "avifSha256": "b99b7a381f328612bd145e7aff7236a75c5ec16b47685d8d92b1b1f1391d66da"
   }
 }

@@ -33,7 +33,7 @@ test('Hebei intake has complete sourced pairs and preserves real generation inpu
     for (const folder of ['research', 'color-research']) {
       const record = json(`assets/${folder}/${id}.json`);
       assert.equal(record.quality_mode, 'prototype');
-      assert(['pending_user', 'approved_user'].includes(record.visual_review_status));
+      assert(['pending_user', 'approved_user', 'approved_default'].includes(record.visual_review_status));
       assert.equal(record.background_preparation.method, 'white-matte-v1');
       assert.equal(record.background_preparation.sourceSha256, hash(record.generated_file || record.output));
       assert(record.inputs_viewed && record.historical_sources.length);
@@ -93,6 +93,11 @@ test('Hebei intake preserves all previous colored deliverables and human approva
     assert.equal(now.sourceSha256, previous.source, id);
     assert.equal(now.inputSha256, previous.input, id);
     assert.equal(now.sha256, previous.avif, id);
-    assert.equal(now.visualReview, previous.visualReview, id);
+    if (previous.visualReview === 'pending_user' && now.visualReview === 'approved_default') {
+      // Accepted since this baseline by the default policy; the hashes above prove the files are unchanged.
+      assert.equal(now.review?.reviewer, 'default-policy', id);
+    } else {
+      assert.equal(now.visualReview, previous.visualReview, id);
+    }
   }
 });

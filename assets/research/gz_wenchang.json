@@ -1,7 +1,7 @@
 {
   "id": "gz_wenchang",
   "subject": "贵阳文昌阁现存阁体",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "贵阳市云岩区：1609初建、1669重建，三层九角屋面",
@@ -31,7 +31,7 @@
     }
   ],
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "gz_wenchang",
     "name": "贵阳文昌阁",
@@ -110,5 +110,13 @@
   "width": 1536,
   "height": 1024,
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-7f1adf98-da07-4ece-9f99-8494dcb535c3.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-7f1adf98-da07-4ece-9f99-8494dcb535c3.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-7f1adf98-da07-4ece-9f99-8494dcb535c3.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "bbbe05d4a3aed8be2da3ef0c86f1d6457cef92ab5e09f3caed53a74053d41f67",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "f4d63278e27ec11756bf827f1723383e4d89a31110850cea5fad239a40a081f0"
+  }
 }

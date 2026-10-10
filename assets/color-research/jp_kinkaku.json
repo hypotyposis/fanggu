@@ -40,11 +40,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已查看原稿与实拍材料色；不等于用户视觉验收。依照现存复建体，金箔色可能因光照与修缮而变化。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "2ba2eea7c438eb379b2b8b07a9b4e78503e547f7ba36dcc0a1736e45ed9944ca",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "6ed74ea4b84be88776e73b963be3dfe577844b52ad3fccc86d9e6c9686b914ba",
+    "avifSha256": "29626557f763be3267141962037c1e9fca2bf5ceec4b024707194ecd14464aed"
   }
 }

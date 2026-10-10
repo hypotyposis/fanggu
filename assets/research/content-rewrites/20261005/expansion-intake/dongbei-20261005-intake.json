@@ -1,0 +1,184 @@
+{
+  "batch": "dongbei-20261005",
+  "created": "2026-10-05T22:56:56+09:00",
+  "ready": [
+    "ln_wanfotang",
+    "ln_xingcheng",
+    "ln_guangjita",
+    "ln_zhaoling",
+    "ln_shenyang_beita",
+    "jl_haotaiwangbei",
+    "jl_wandu",
+    "hlj_wenmiao",
+    "ln_chaoyangbei"
+  ],
+  "blocked": [
+    {
+      "id": "jl_lingguang",
+      "reason": "缺主体照片：Wikimedia Commons 文件搜索“灵光塔／영광탑／Lingguang Pagoda／長白 靈光塔”无结果，Category:Changbai Korean Autonomous County 为空，韩文维基“영광탑”条目无图；在本处首轮搜索预算内未取得 CC0/CC BY/CC BY-SA/公有领域的主体照片。年代、层数、高度与国保批次已核实，补到授权正面照片即可就绪。"
+    },
+    {
+      "id": "hlj_shangjing",
+      "reason": "缺主体照片：Wikimedia Commons 关于金上京会宁府遗址的文件只有1930年代 Tolmatscheff 平面图局部（Herrmann 地图集，公有领域）与出土文物（铜坐龙、官印、砖）照片，没有城垣、皇城或午门基址的实景照片；Category:Acheng District 为空。首轮搜索预算内未取得可作主体几何依据的授权照片。年代与国保批次已核实。"
+    }
+  ],
+  "new_places": [
+    {
+      "key": "ln_xingcheng",
+      "name": "兴城",
+      "prov": "辽宁",
+      "lat": 40.61886,
+      "lon": 120.7205,
+      "coordinate_note": "兴城市代表点（Wikidata Q1375638），非城门实测坐标。"
+    },
+    {
+      "key": "ln_jinzhou",
+      "name": "锦州",
+      "prov": "辽宁",
+      "lat": 41.11444,
+      "lon": 121.12917,
+      "coordinate_note": "锦州市代表点（Wikidata Q28996），非塔体实测坐标。"
+    },
+    {
+      "key": "jl_changbai",
+      "name": "长白",
+      "prov": "吉林",
+      "lat": 41.4167,
+      "lon": 128.2,
+      "coordinate_note": "长白朝鲜族自治县代表点（Wikidata Q700652，精度约1′），非塔体实测坐标。"
+    },
+    {
+      "key": "hlj_acheng",
+      "name": "阿城",
+      "prov": "黑龙江",
+      "lat": 45.53639,
+      "lon": 126.96907,
+      "coordinate_note": "阿城区代表点（Wikidata Q145263），非遗址实测坐标。"
+    }
+  ],
+  "new_regions_or_provinces": [],
+  "new_periods": [],
+  "protection_entries": {
+    "ln_wanfotang": [
+      {
+        "batch": 3,
+        "unitName": "万佛堂石窟",
+        "relation": "part",
+        "scope": "西区第六窟交脚弥勒大佛（石窟群组成部分）",
+        "source": "batch3",
+        "locator": "第三批名单 ·（二）石窟寺 · 序号4 万佛堂石窟 · 北魏 · 辽宁省义县 · PDF第10页（公报第106页）"
+      }
+    ],
+    "ln_xingcheng": [
+      {
+        "batch": 3,
+        "unitName": "兴城城墙",
+        "relation": "part",
+        "scope": "东门春和门城楼与瓮城（城墙组成部分）",
+        "source": "batch3",
+        "locator": "第三批名单 ·（三）古建筑及历史纪念建筑物 · 兴城城墙 · 明 · 辽宁省兴城市 · PDF第11页（公报第107页）",
+        "note": "2006年第六批合并项目第38项：兴城古城（明至清，辽宁省兴城市）与第三批全国重点文物保护单位兴城古城墙合并，名称：兴城古城。第六批通知写作“兴城古城墙”，第三批公报原文为“兴城城墙”；所绘城楼与瓮城按首次公布的第三批记。"
+      }
+    ],
+    "ln_guangjita": [
+      {
+        "batch": 5,
+        "unitName": "广济寺古建筑群",
+        "relation": "part",
+        "scope": "广济寺塔（古建筑群组成部分）",
+        "source": "batch5",
+        "locator": "第五批名单 · 古建筑 · 广济寺古建筑群 · 辽至清 · 辽宁省锦州市 · PDF第12页"
+      }
+    ],
+    "ln_zhaoling": [
+      {
+        "batch": 2,
+        "unitName": "清昭陵",
+        "relation": "part",
+        "scope": "隆恩殿正面（陵寝组成部分）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（六）古墓葬 · 编号61 序号6 清昭陵 · 清 · 辽宁省沈阳市 · PDF第25页"
+      }
+    ],
+    "jl_haotaiwangbei": [
+      {
+        "batch": 1,
+        "unitName": "洞沟古墓群",
+        "relation": "part",
+        "scope": "好太王碑（第一批名单备注“包括好太王碑”）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（六）古墓葬 · 编号168 序号7 洞沟古墓群 · 高句丽 · 吉林省辑安县 · 备注“包括好太王碑” · PDF第15页"
+      }
+    ],
+    "jl_wandu": [
+      {
+        "batch": 2,
+        "unitName": "丸都山故城",
+        "relation": "part",
+        "scope": "瞭望台（山城组成部分）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（五）古遗址 · 编号52 序号7 丸都山故城 · 吉林省集安县 · PDF第24页（公报第280页）",
+        "note": "2001年第五批合并项目：国内城“与丸都山城合并，名称：丸都山城与国内城”（第五批名单 PDF第17页备注）；所绘瞭望台按首次公布的第二批记。"
+      }
+    ],
+    "hlj_wenmiao": [
+      {
+        "batch": 4,
+        "unitName": "哈尔滨文庙",
+        "relation": "part",
+        "scope": "大成殿正面（文庙组成部分）",
+        "source": "batch4",
+        "locator": "第四批名单 · 近现代重要史迹及代表性建筑 · 编号228 序号30 哈尔滨文庙 · 1926~1929年 · PDF第28页"
+      }
+    ],
+    "ln_chaoyangbei": [
+      {
+        "batch": 3,
+        "unitName": "朝阳北塔",
+        "relation": "unit",
+        "scope": "朝阳北塔 · 方形十三层密檐砖塔",
+        "source": "batch3",
+        "locator": "第三批名单 ·（三）古建筑及历史纪念建筑物 · 朝阳北塔 · 唐至辽 · 辽宁省朝阳市 · PDF第14页（公报第110页）"
+      }
+    ],
+    "jl_lingguang": [
+      {
+        "batch": 3,
+        "unitName": "灵光塔",
+        "relation": "unit",
+        "scope": "长白灵光塔 · 渤海五层方砖塔",
+        "source": "batch3",
+        "locator": "第三批名单 ·（三）古建筑及历史纪念建筑物 · 灵光塔 · 渤海 · 吉林省长白朝鲜族自治县 · PDF第14页（公报第110页）"
+      }
+    ],
+    "hlj_shangjing": [
+      {
+        "batch": 2,
+        "unitName": "金上京会宁府遗址",
+        "relation": "part",
+        "scope": "城垣／皇城遗址（所绘段落待定）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（五）古遗址 · 编号54 序号9 金上京会宁府遗址 · 黑龙江省阿城县 · PDF第24页（公报第280页）",
+        "note": "2013年第七批合并项目：驸马城、小城子、刘秀屯宫殿基址、半拉城遗址归入第二批金上京会宁府遗址（第七批名单 PDF第117—118页备注）。"
+      }
+    ]
+  },
+  "protection_untagged": {
+    "ln_shenyang_beita": {
+      "status": "unconfirmed",
+      "reason": "现有资料为辽宁省级文物保护单位（2003年省保“沈阳东、南、北塔（含法轮寺）”）。第一至五批公报 OCR、第六批与第八批通知网页及第七批名单 OCR 中均未见法轮寺或沈阳北塔；第七批辽宁省沈阳市皇姑区条目为无垢净光舍利塔，第七批的“法轮寺”（7-0917-3-215）在内蒙古。不贴国保标签，也不断言非国保。"
+    }
+  },
+  "reused_places": [
+    "chaoyang",
+    "harbin",
+    "jian_jilin",
+    "shenyang",
+    "yixian"
+  ],
+  "notes": [
+    "本会话无 imagegen，未生图；候选 JSON 在 assets/research/candidates/dongbei-20261005/。",
+    "照片许可：CC0 ×2（北塔主图、昭陵两图）、CC BY-SA 4.0 ×9、CC BY-SA 3.0 ×6、公有领域 ×2（万佛堂1930年代旧照、好太王碑1903旧照）。",
+    "未进入本批：崇兴寺双塔、吉林文庙已收录；析木金塔（第七批国保“金塔”）Commons 无照片，未展开；卜奎东寺维持上一轮阻塞，未重开。"
+  ]
+}

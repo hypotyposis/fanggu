@@ -57,5 +57,13 @@
     ],
     "limitations": "四座布局为便于阅读的组合示意，非单视角实测透视。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "83045f6a042d7499923a0eea253d9113b1790b65ba00aad9341d86936694cc1a",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "18bd87a89a4f0f4f942a6cd57f7099dc3ecd6ce13b50b2d8ff92714fe19a0402"
+  }
 }

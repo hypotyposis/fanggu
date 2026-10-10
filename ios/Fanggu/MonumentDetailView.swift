@@ -184,6 +184,12 @@ struct MonumentDetailView: View {
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
         .sheet(isPresented: $sharing) { ShareCardSheet(content: .monument(site)) }
+        .task {
+            // A UI test may ask for the editor straight away; it is still this page's sheet.
+            guard UITestLaunch.consumeOpenReview() else { return }
+            try? await Task.sleep(for: .milliseconds(50))
+            editingReview = true
+        }
     }
 
     private func finishArrival() {

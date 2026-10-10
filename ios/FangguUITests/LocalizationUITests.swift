@@ -9,25 +9,14 @@ final class LocalizationUITests: XCTestCase {
 
     func testEnglishInterfaceShowsNoChineseOnMainScreens() {
         let app = XCUIApplication.isolated(language: "en", locale: "en_US")
-        app.launch()
+        app.launchForTest()
         XCTAssertTrue(app.staticTexts["Monument Catalog"].waitForExistence(timeout: 10))
         let search = app.textFields["Search monuments, places or periods"]
         XCTAssertTrue(search.exists)
         assertNoCharacters(matching: "\\p{Han}", in: app, screen: "catalog")
         capture(app, "en-catalog")
 
-        search.tap(); search.typeText("Foguang")
-        let count = app.staticTexts["catalog-result-count"]
-        XCTAssertTrue(count.waitForExistence(timeout: 5))
-        XCTAssertTrue(count.label.hasSuffix("monuments") || count.label.hasSuffix("monument"), count.label)
-        XCTAssertNotEqual(count.label, "0 monuments")
-        app.buttons["clear-catalog-search"].tap()
-        search.tap(); search.typeText("佛光寺")
-        XCTAssertNotEqual(count.label, "0 monuments", "Chinese names still find monuments in English")
-        app.buttons["clear-catalog-search"].tap()
-        // The floating tab bar hides while the keyboard is up.
-        if app.keyboards.count > 0 { app.typeText("\n") }
-
+        // The floating tab bar collapses while the keyboard is up, so tour the tabs before typing.
         for (tab, title, screen) in [("Footprints", "My Footprints", "footprints"), ("Timeline", "Timeline", "timeline"), ("Me", "My Fanggu", "me")] {
             app.buttons[tab].tap()
             XCTAssertTrue(app.staticTexts[title].waitForExistence(timeout: 5), title)
@@ -35,11 +24,24 @@ final class LocalizationUITests: XCTestCase {
             capture(app, "en-\(screen)")
         }
         XCTAssertTrue(app.buttons["language-settings"].exists)
+
+        app.buttons["Catalog"].tap()
+        XCTAssertTrue(search.waitForExistence(timeout: 5))
+        let count = app.staticTexts["catalog-result-count"]
+        let foguang = app.buttons["catalog-site-foguang"]
+        search.tap(); search.typeText("Foguang")
+        XCTAssertTrue(foguang.waitForExistence(timeout: 5), "The English name finds the monument")
+        XCTAssertTrue(count.label.hasSuffix("monuments") || count.label.hasSuffix("monument"), count.label)
+        XCTAssertNotEqual(count.label, "0 monuments")
+        app.buttons["clear-catalog-search"].tap()
+        search.tap(); search.typeText("佛光寺")
+        XCTAssertTrue(foguang.waitForExistence(timeout: 5), "Chinese names still find monuments in English")
+        XCTAssertNotEqual(count.label, "0 monuments")
     }
 
     func testJapaneseInterfaceUsesJapaneseLabels() {
         let app = XCUIApplication.isolated(language: "ja", locale: "ja_JP")
-        app.launch()
+        app.launchForTest()
         XCTAssertTrue(app.staticTexts["古跡図鑑"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.textFields["古跡・場所・時代を検索"].exists)
         let count = app.staticTexts["catalog-result-count"]

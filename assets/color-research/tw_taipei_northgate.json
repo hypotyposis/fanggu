@@ -45,11 +45,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "单一拱洞、灰石基座与上部红墙、正面圆窗及侧面长窄窗可辨；没有绘已拆瓮城。 已查看实拍、风格样本、两张原件；仍待用户人眼验收。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "451eed9c707efc90b532735473bcd92650002268c27fbe763c22d5f4a98705a7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "ff142c872a028289b3a41afb337dbfefce081848505efdd2ed7b31598925cec8",
+    "avifSha256": "b1d8dd7eb109b14ffdaa06e9c98c7c6cb8c4076176bbe883087930c1e28ba095"
   }
 }

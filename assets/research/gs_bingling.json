@@ -1,7 +1,7 @@
 {
   "id": "gs_bingling",
   "subject": "第171龛弥勒大佛",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:202609_Bingling_Temple_74.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/202609_Bingling_Temple_74.jpg",
   "author": "Jonashtand",
@@ -16,7 +16,7 @@
   "generated_file": "assets/generated/gs_bingling.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "完整弥勒坐像：卷发、长耳、宽袈裟、垂足；保留现状一侧完整按膝手与另一侧残损，不补成双手完好；仅留贴体短岩龛，不画第169窟和栈道。"
   ],
@@ -185,5 +185,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "d51d9df1bae7472ca189338d0bd3d1e0ffd9de772ac5ddfdef99f1983ea12dc6",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "d51d9df1bae7472ca189338d0bd3d1e0ffd9de772ac5ddfdef99f1983ea12dc6",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "35ecf50277aa3d22a337e58d9345f0b1a3d225979513207292a1bc80f190f81a"
   }
 }

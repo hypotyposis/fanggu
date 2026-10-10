@@ -46,7 +46,19 @@
     ],
     "limitations": [
       "以参考照片现貌概括浮雕、门钉与塔刹细节，并非测绘复原。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 11:55:27 UTC"
+  "completed_at": "2026-09-16 11:55:27 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "0d8cdfe3a1e6be971dd535ae3d0eba53b706f1d093e69924f02e2db3c544d1e7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "bec7becc0e979b096b9e35f1545048c7aaae4cb037bc9453ebfab18810ac8c3c",
+    "avifSha256": "2bbab898e9e41d2b3c72006707b3a4005534f0db0ab58991d4d281627f0abe23"
+  }
 }

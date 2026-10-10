@@ -2,7 +2,7 @@
   "id": "gx_zhenwu",
   "name": "经略台真武阁",
   "subject": "经略台真武阁完整阁体",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nNAMED SUBJECT: 经略台真武阁完整阁体\nPRESENT MATERIAL OBSERVATIONS: 灰褐木柱梁，绿釉瓦当与灰棕瓦面、红褐屋脊和翘角，台基灰石，不能整阁刷红或铺金。\nKeep the complete original line composition and geometry; the material photo must not introduce scenery or occluding objects.",
   "input_images": [
@@ -21,7 +21,7 @@
   "original_research": "assets/research/gx_zhenwu.json",
   "output": "assets/colored/gx_zhenwu.png",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "inputs_viewed": true,
   "width": 1536,
   "height": 1024,
@@ -122,5 +122,14 @@
   "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg/1280px-%E5%AE%B9%E5%8E%BF%E7%9C%9F%E6%AD%A6%E9%98%81.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
   "author": "汀海岸上",
-  "license": "CC BY-SA 4.0"
+  "license": "CC BY-SA 4.0",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "d224201133aa141b7c845c8950b612100b337ee1481ce44328294aa8678bc6c2",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "909f3276063f182409115a1b2d47320c0c56b6ae7bdbe028f9fbcefe39cbd881",
+    "avifSha256": "e7bbedba667bfd1e4fdf41373981b54c5f4bf31d718a29ac46e2f31d4c950da5"
+  }
 }

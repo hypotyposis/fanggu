@@ -2,7 +2,7 @@
   "id": "gz_wenchang",
   "name": "贵阳文昌阁",
   "subject": "贵阳文昌阁现存阁体",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 贵阳文昌阁现存阁体.\nMATERIALS OBSERVED IN THE ACTUAL PHOTO: 屋面为灰瓦，顶刹暗金铜色，轮廓装饰浅灰石色。 阁体红褐木构、深褐窗格，部分墙面灰白；石阶灰白，去除盆栽灯笼。\nKEEP EXACTLY THE COMPOSITION OF THE LINE INPUT.",
   "input_images": [
@@ -39,7 +39,7 @@
   "original_research": "assets/research/gz_wenchang.json",
   "output": "assets/colored/gz_wenchang.png",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "inputs_viewed": true,
   "generation_history": [
     {
@@ -69,5 +69,14 @@
   "width": 1536,
   "height": 1024,
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3d45cd8-4955-4a6d-8aa4-17d820177838.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3d45cd8-4955-4a6d-8aa4-17d820177838.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-b3d45cd8-4955-4a6d-8aa4-17d820177838.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "93355cbf0ddfa803a9462a8ec8b92245bbe13093f59f7cc413d8528258c49eb2",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "40fb956bfc77222bdb98d97f1f058d8a11c864cfffad78261b481dbdd66f7c03",
+    "avifSha256": "764db3fd8e2d5d502bc42046ce3def800251609febae0823d779be3dc7396c0a"
+  }
 }

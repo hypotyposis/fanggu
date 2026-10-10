@@ -1,7 +1,7 @@
 {
   "id": "jp_shofukuji_jizodo",
   "subject": "单层裳阶禅宗佛殿",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Shohukuji2.JPG",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Shohukuji2.JPG/1280px-Shohukuji2.JPG",
   "author": "fitm",
@@ -42,7 +42,7 @@
     }
   ],
   "structure_checkpoints": "Shofukuji Jizodo in Higashimurayama Tokyo, built 1407. Front view of compact square Zen hall, a SINGLE storey with lower surrounding mokoshi pent roof, not a two-storey pagoda. Core three-by-three bays; high sweeping wood-shingle hipped-and-gabled main roof with sharply lifted corners, thin lower copper-covered mokoshi roof, wooden doors and flanking cusped windows. Keep both roof outlines and the full base. Remove stone lanterns, trees, people and modern fence.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -64,5 +64,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-01973806-7d88-434c-9106-01bb04bdf2c2"
+  "generation_call_id": "exec-01973806-7d88-434c-9106-01bb04bdf2c2",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "2b1e7ff76e7b696c2d41490cdd795ac56346f98e561960c593706139e91732e1",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "0b07ffcd7d175486f041f6b8d4b7685e626806274f67411203b04e44f35c57f4"
+  }
 }

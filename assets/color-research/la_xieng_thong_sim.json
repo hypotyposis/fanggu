@@ -2,9 +2,9 @@
   "id": "la_xieng_thong_sim",
   "name": "香通寺主佛殿",
   "subject": "主佛殿sim与支承台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Sim_of_Wat_Xieng_Thong.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Sim_of_Wat_Xieng_Thong.jpg/1920px-Sim_of_Wat_Xieng_Thong.jpg",
   "author": "Christophe95",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "2e57250beacb567caecfa1ec9a05245a5072a8b699f6e06927f487b6efb20a87",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "5eb18763994910caf089b7fbb6cf9e534aa272e49cc2eca53c8099662ab39d9f",
+    "avifSha256": "dddb25f95d976941ea477ee384da5b240c97ddc103850950b25917f4941625aa"
   }
 }

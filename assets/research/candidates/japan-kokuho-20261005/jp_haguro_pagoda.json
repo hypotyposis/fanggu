@@ -1,0 +1,106 @@
+{
+  "id": "jp_haguro_pagoda",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "羽黑山五重塔 · 素木五重塔",
+  "name": "羽黑山五重塔",
+  "short": "羽黑山五重塔",
+  "sub": "三间五重木塔",
+  "dyn": "jp_muromachi",
+  "tag": "室町",
+  "era": "约1372年重建",
+  "year": 1372,
+  "yearLabel": "约1372年",
+  "yearApprox": true,
+  "yearNote": "文化厅数据库记「室町前期／1372」：据《羽黑山旧记》应安五年（1372）前后由别当大宝寺政氏重建；栋札抄本记1369年立柱、1377年上相轮；1608年最上义光修理。1908年指定重要文化财，1966年6月11日指定国宝。",
+  "country": "JP",
+  "province": "山形县",
+  "placeKey": "jp_haguro",
+  "placeName": "鹤冈 · 羽黑山",
+  "place": "日本 · 山形县 · 鹤冈 · 羽黑山",
+  "lat": 38.70476,
+  "lon": 139.96761,
+  "coordinate_source": "ja.wikipedia GeoData（羽黒山五重塔）坐标 38.704756, 139.967614，为塔本体公开点位，用作羽黑山显示点，非本项目测绘。",
+  "types": [
+    "pagoda",
+    "shrine"
+  ],
+  "lede": "出羽三山参道的杉林里，一座不施彩色的素木五重塔静静立着。应安五年（1372）前后由羽黑山别当大宝寺政氏重建，纯和样，柿葺屋顶，高约二十九米，相传为东北最古的塔，与明王院五重塔并称室町五重塔的代表。",
+  "facts": [
+    "《羽黑山旧记》记应安五年（1372）前后重建；栋札抄本称1369年立柱、1377年上相轮，1608年最上义光曾修理。",
+    "三间五重塔婆，柿葺，总高约29.2米、塔身高22.2米；塔身不施彩色，为纯和样的素木塔。1966年指定国宝。",
+    "文化厅称其与福山明王院五重塔并列为室町时代五重塔的代表；塔今属出羽三山神社（月山、出羽、汤殿山三神社）。"
+  ],
+  "caption": [
+    "羽黑山五重塔 · 素木五重塔",
+    "室町应安五年（1372）前后"
+  ],
+  "legacyNames": [
+    "羽黒山五重塔",
+    "出羽三山神社五重塔",
+    "Hagurosan Gojūnotō",
+    "Mount Haguro Five-storied Pagoda"
+  ],
+  "orientation": "portrait 1024×1536",
+  "structure_checkpoints": [
+    "五层屋檐（五重），每层三间，自下而上逐层收分；屋面为薄柿葺，檐角微翘。",
+    "每层檐下为密集斗栱组，无回缘高栏；初重正面中央一扇格子门，两侧为板壁。",
+    "塔顶铜制相轮完整；塔基低矮，前有低木栅（去除）。",
+    "通体素木，无彩色、无白灰壁。"
+  ],
+  "material_observations": "风化成银灰色的素木柱壁，灰褐色柿葺屋面，深灰铜色相轮；周围杉林、石灯笼、石板路去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:2023.04.23_Five-storied_Pagoda,_Haguro-san_2.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/2023.04.23_Five-storied_Pagoda%2C_Haguro-san_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "YedidyaPopper",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_haguro_pagoda-photo.jpg",
+    "assets/references/jp_haguro_pagoda-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_haguro_pagoda-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%87%BA%E7%BE%BD%E4%B8%89%E5%B1%B1%E7%A5%9E%E7%A4%BE%E4%BA%94%E9%87%8D%E5%A1%9420221015-IMG_4041.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%E5%87%BA%E7%BE%BD%E4%B8%89%E5%B1%B1%E7%A5%9E%E7%A4%BE%E4%BA%94%E9%87%8D%E5%A1%9420221015-IMG_4041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "くろふね",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "photo_date": "15 October 2022, 16:38:13",
+      "role": "同塔另一实拍，核对五重层数与初重门窗"
+    }
+  ],
+  "source_note": "主图为YedidyaPopper 2023年4月正面仰视实拍（CC BY 4.0），第二图为くろふね2022年10月同塔（CC BY 4.0），用于核对层数与初重门窗。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nMount Haguro Five-storied Pagoda, Tsuruoka, Yamagata, rebuilt c.1372. Draw the whole free-standing wooden pagoda straight on as in photo 2: EXACTLY FIVE roof tiers with thin shingled roofs (kokera-buki) and gently lifted corners, each storey THREE bays wide, tapering upward; dense bracket clusters under each eave; ground storey with a central lattice door flanked by board walls; a tall bronze sorin finial on top; apex and base uncut. Unpainted plain timber, no colour, no railing balconies. Remove the low fence, cobbled path, stone lanterns, signboard and cedar trees.\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 羽黒山五重塔",
+      "url": "https://online.bunka.go.jp/heritages/detail/199129"
+    },
+    {
+      "title": "ja.wikipedia · 羽黒山五重塔",
+      "url": "https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E4%BA%94%E9%87%8D%E5%A1%94"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1966-06-11",
+      "juyo_bunkazai_designated": "1908-04-23",
+      "database_detail_id": 199129
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/199129"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "tall": true,
+  "photo_date": "2023-04-23 09:14:07",
+  "photo_pixels": [
+    3000,
+    4000
+  ]
+}

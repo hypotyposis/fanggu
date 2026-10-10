@@ -1,7 +1,7 @@
 {
   "id": "jp_ikegami_pagoda",
   "name": "池上本门寺五重塔",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_ikegami_pagoda.png",
@@ -31,9 +31,10 @@
   ],
   "output": "assets/colored/jp_ikegami_pagoda.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-b39b5f62-ea70-4c36-aa02-e8d8a2147dac.png",
   "background_preparation": {
@@ -49,5 +50,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-b39b5f62-ea70-4c36-aa02-e8d8a2147dac"
+  "generation_call_id": "exec-b39b5f62-ea70-4c36-aa02-e8d8a2147dac",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "5e9c6389e7d6799110f217e74fdbe0bfbe9f79da13c0f79f136069860ca5c588",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "41cb4df77069e32ec605ec17ef0db0415bec6f97d8eaf545c1d9b53f2d5c918b",
+    "avifSha256": "55692d9c1d8113fe2769c3991708a5fba1c94d7d0c59ca0e94c56489db74e715"
+  }
 }

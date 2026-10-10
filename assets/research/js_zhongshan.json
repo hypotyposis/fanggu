@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-1ff4a16b-f434-447d-b1ff-79df55023b3a.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,36 @@
     "sourceSha256": "7630f9c849bc6b7cc7c055bdfb0f61f39f5abcc83628d514096cf0f34d1389f6",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "7630f9c849bc6b7cc7c055bdfb0f61f39f5abcc83628d514096cf0f34d1389f6",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "eddb44020ee646a6e8b6e3bc284a72ea56c364be5d4af363eacf32d12b4065d3"
+  },
+  "historical_sources": [
+    {
+      "title": "中山陵",
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E9%99%B5",
+      "publisher": "维基百科（中文），二手来源（引刘叙杰《巍巍中山陵》、《中山陵档案史料选编》等）",
+      "note": "1925年征求图案与吕彦直首奖、1926年1月15日开工、1929年春祭堂成、6月1日奉安、1931年全部完工；钟形平面、700米与73米落差；祭堂28×22.5×26米、重檐歇山蓝琉璃瓦、三拱门与题字、堡垒式方屋、12根石柱、坐像4.6米、墓室直径18米高11米",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "Sun Yat-sen Mausoleum",
+      "url": "https://en.wikipedia.org/wiki/Sun_Yat-sen_Mausoleum",
+      "publisher": "维基百科（英文），二手来源",
+      "note": "1926年1月开工、1929年春完工、设计师吕彦直及其合伙人黄檀甫、1925年设计竞赛",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "南京市中山陵园管理局官网",
+      "url": "https://zschina.nanjing.gov.cn/",
+      "publisher": "南京市中山陵园管理局",
+      "note": "陵园管理机构官方网站（景区景点与文保单位栏目）",
+      "added": "content-rewrite-20261005"
+    }
+  ]
 }

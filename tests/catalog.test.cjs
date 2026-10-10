@@ -162,7 +162,7 @@ test('Taiwan additions retain distinct subjects, sourced originals and unvisited
       assert.equal(meta.background_preparation.method, 'white-matte-v1');
       assert.equal(meta.background_preparation.sourceSha256, hash(meta.generated_file || meta.output));
       assert(meta.historical_sources.length && meta.prompt.length > 100);
-      assert.equal(folder === 'research' ? meta.visual_review_status : meta.visual_review.status, 'pending_user');
+      assert.equal(folder === 'research' ? meta.visual_review_status : meta.visual_review.status, 'approved_default');
     }
   }
 });
@@ -234,14 +234,14 @@ test('Shanxi additions have hash-bound white originals and complete transparent 
       for (const file of meta.input_images) assert(fs.existsSync(path.join(root, file)), file);
     }
     const item = delivery.images[id];
-    assert(['pending_user', 'approved_user'].includes(item.visualReview));
+    assert(['pending_user', 'approved_user', 'approved_default'].includes(item.visualReview));
     assert.equal(item.alpha.min, 0); assert.equal(item.alpha.max, 255);
     assert(item.alpha.transparentPixels > 0 && item.alpha.opaquePixels > 0);
     assert.equal(item.sourceSha256, hash(item.source));
     assert.equal(item.inputSha256, hash(item.input)); assert.equal(item.sha256, hash(item.src));
     assert.equal(COLORED_PLATES[id].visualReview, item.visualReview);
-    if (item.visualReview === 'approved_user') {
-      assert.equal(item.review.reviewer, 'user');
+    if (item.visualReview.startsWith('approved_')) {
+      assert.equal(item.review.reviewer, item.visualReview === 'approved_user' ? 'user' : 'default-policy');
       assert.equal(item.review.avifSha256, item.sha256);
       assert.equal(item.review.inputSha256, item.inputSha256);
     } else {
@@ -277,8 +277,8 @@ test('Beijing and Tianjin additions have paired artwork, real inputs and recorde
       for (const file of meta.input_images || meta.reference_files) assert(fs.existsSync(path.resolve(root, file)), file);
     }
     const delivery = avif.images[id];
-    assert(['pending_user', 'approved_user'].includes(delivery.visualReview));
-    if (delivery.visualReview === 'approved_user') {
+    assert(['pending_user', 'approved_user', 'approved_default'].includes(delivery.visualReview));
+    if (delivery.visualReview.startsWith('approved_')) {
       assert.equal(delivery.review?.inputSha256, delivery.inputSha256);
       assert.equal(delivery.review?.avifSha256, delivery.sha256);
     }
@@ -353,7 +353,7 @@ test('Henan additions preserve subject dates, registration and source-bound whit
     assert.equal(site.country, 'CN');
     assert.equal(PLACES.find(p => p.key === site.placeKey).prov, '河南');
     assert.equal(queue.entries.filter(s => s.id === id).length, 1);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user');
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default');
     for (const folder of ['research', 'color-research']) {
       const meta = JSON.parse(read(`assets/${folder}/${id}.json`));
       const original = fs.readFileSync(path.join(root, folder === 'research' ? meta.generated_file : meta.output));

@@ -41,7 +41,7 @@ test('Kansai batch keeps twelve distinct subjects, map regions and depicted date
     assert.equal(site.year, year, id);
     assert.equal(PLACES.find(place => place.key === site.placeKey)?.prov, province, id);
     assert.equal(queue.entries.filter(entry => entry.id === id).length, 1, id);
-    assert.equal(COLORED_PLATES[id].visualReview, 'pending_user', id);
+    assert.equal(COLORED_PLATES[id].visualReview, 'approved_default', id);
   }
   assert(SITES.find(site => site.id === 'jp_kasuga_honden').facts.some(fact => fact.includes('四座')));
   assert(SITES.find(site => site.id === 'jp_sumiyoshi_honden').facts.some(fact => fact.includes('第四')));
@@ -66,8 +66,8 @@ test('Kansai artwork retains licensed sources, exact originals and transparent d
       assert(source.author && source.license && source.license_url, id);
       assert(fs.existsSync(path.join(root, source.reference_file)), source.reference_file);
     }
-    assert.equal(line.visual_review_status, 'pending_user', id);
-    assert.equal(color.visual_review.status, 'pending_user', id);
+    assert.equal(line.visual_review_status, 'approved_default', id);
+    assert.equal(color.visual_review.status, 'approved_default', id);
     assert.equal(delivery.images[id].sourceSha256, digest(color.output), id);
     assert(delivery.images[id].alpha.transparentPixels > 0, id);
     assert(delivery.images[id].alpha.opaquePixels > 0, id);

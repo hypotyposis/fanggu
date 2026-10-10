@@ -1,0 +1,105 @@
+{
+  "id": "jp_fukiji_odo",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "富贵寺 · 大堂正面",
+  "name": "富贵寺大堂",
+  "short": "富贵寺",
+  "sub": "宝形造阿弥陀堂正面",
+  "dyn": "jp_heian",
+  "tag": "平安",
+  "era": "平安后期建立",
+  "year": 1150,
+  "yearLabel": "12世纪",
+  "yearApprox": true,
+  "yearNote": "文化厅数据库记「平安后期／1086-1184」：寺传养老二年（718）仁闻开基，现堂为平安后期手法；存文和二年（1353）墨书旧栋木，知曾一度为寄栋造，现为宝形造。年表点取1150为区间约略定位。1907年指定重要文化财，1952年11月22日指定国宝。",
+  "country": "JP",
+  "province": "大分县",
+  "placeKey": "jp_bungotakada",
+  "placeName": "丰后高田",
+  "place": "日本 · 大分县 · 丰后高田",
+  "lat": 33.53772,
+  "lon": 131.52875,
+  "coordinate_source": "ja.wikipedia GeoData（富貴寺）坐标 33.537722, 131.52875，作为丰后高田显示点，非大堂测绘坐标。",
+  "types": [
+    "hall",
+    "temple"
+  ],
+  "lede": "国东半岛的富贵寺大堂是九州最古的木构，平安后期的阿弥陀堂。方柱舟肘木，三间四间，宝形造屋顶铺行基葺圆瓦，外观极简；堂内板敷、四天柱、小组格天井，壁上极彩色佛菩萨与来迎壁净土曼荼罗，是平安阿弥陀堂遍布全国的实例。",
+  "facts": [
+    "桁行三间、梁间四间，单层宝形造行基葺；大面取的方柱上只置舟肘木，形态极为简素，为九州最古的木构。1952年指定国宝。",
+    "寺传养老二年（718）仁闻开基，现堂为平安后期手法；存文和二年（1353）墨书旧栋木，知曾一度为寄栋造。",
+    "堂内四本圆柱四天柱围佛坛，小组格天井，各部以极彩色绘佛菩萨、宝相华、唐草，来迎壁绘净土曼荼罗。"
+  ],
+  "caption": [
+    "富贵寺 · 大堂正面",
+    "平安后期（12世纪）"
+  ],
+  "legacyNames": [
+    "富貴寺大堂",
+    "蓮華山富貴寺",
+    "Fuki-ji Ōdō",
+    "Fukiji Temple"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "单层，一座宝形造（四坡攒尖）屋顶，顶上露盘宝珠；屋面为行基葺圆瓦，瓦列粗壮，线稿稀疏示意即可。",
+    "正面三间，每间一对板扉；方柱，柱头舟肘木，一道素枋，无斗栱。",
+    "开敞木缘无高栏，立于低石台基；正面中央三级石阶。",
+    "左侧石塔与小祠、鞋、告示牌、落叶与树木去除。"
+  ],
+  "material_observations": "银灰色风化木构与板扉，灰色瓦，灰石台基；林木与沙地去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E8%B2%B4%E5%AF%BA_%E5%A4%A7%E5%A0%82.JPG",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/%E5%AF%8C%E8%B2%B4%E5%AF%BA_%E5%A4%A7%E5%A0%82.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "JNN360",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_fukiji_odo-photo.jpg",
+    "assets/references/jp_fukiji_odo-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_fukiji_odo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E8%B2%B4%E5%AF%BA%E5%A4%A7%E5%A0%82.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/%E5%AF%8C%E8%B2%B4%E5%AF%BA%E5%A4%A7%E5%A0%82.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "JNN360",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2015-10-22 14:48:07",
+      "role": "同一正面三分钟后的实拍，互相核对"
+    }
+  ],
+  "source_note": "主图与第二图均为JNN360 2015年10月正面实拍（CC BY-SA 4.0），相隔三分钟，用于互相核对三间板扉与行基葺屋面。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nFukiji Odo, Bungotakada, Oita, late Heian Amida hall. Draw the FRONT elevation straight on as in photo 2 (photo 3 is the same front): a single-storey hall THREE bays wide under ONE pyramidal roof (hogyo) topped by a jewel finial on a small base; the roof is of round overlapping tiles (gyogi-buki), suggest the rows sparsely; each bay has a pair of plank doors; plain square posts with boat-shaped bracket blocks and a simple beam, no bracket clusters; an open wooden veranda without railing on a low stone platform with a central three-step stair. Remove the stone stupa and small shrine at left, sandals, signs, fallen leaves and trees.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 富貴寺大堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/124404"
+    },
+    {
+      "title": "ja.wikipedia · 富貴寺",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E8%B2%B4%E5%AF%BA"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-11-22",
+      "juyo_bunkazai_designated": "1907-05-27",
+      "database_detail_id": 124404
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/124404"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2015-10-22 14:45:33",
+  "photo_pixels": [
+    6000,
+    4000
+  ]
+}

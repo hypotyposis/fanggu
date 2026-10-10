@@ -46,7 +46,19 @@
     ],
     "limitations": [
       "仅有近景照片，本图不提供全殿开间或完整屋顶外形；香炉与雕花细部为概括。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 12:10:25 UTC"
+  "completed_at": "2026-09-16 12:10:25 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "8843dbb4cf3ca7f47bd7f5e233a4656e19b46c5bae8868a8b14d7294e339d528",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "60edd73e70accbfd7156adafab3134cf468951d0418d6cb8d2660181de527184",
+    "avifSha256": "339cf4091f11ad8f8d8bcddbd1d5c5cf24b7a6ae6dc29cd97adefd80662addd3"
+  }
 }

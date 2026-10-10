@@ -67,7 +67,7 @@
     ],
     "limitations": "原型候选图版，建筑轮廓并非测绘；最终由用户人眼验收。"
   },
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "generation_attempts": [
     {
       "result": "input_error",
@@ -78,5 +78,13 @@
         "assets/references/tw_tainan_confucius-side.jpg"
       ]
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "380a763a1e74a992e4d1cbebab9426eceae5d558ae8e74b4b443b4214098af0e",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "28f91ed580273f8ded33fae02772b2fde37359e6e79d82af412d10699dedf1de"
+  }
 }
