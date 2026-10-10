@@ -101,6 +101,7 @@
 - 涉及 UI、输入手势、导航或图片地址时，按开发指南在模拟器／真机检查原生流程；审图工具在真实浏览器检查；模拟 DOM 测试不能证明布局和触摸体验正确。
 - 新增古迹时同步检查图版队列、覆盖范围和测试中的批次数量；不能只改数量断言使测试通过。
 - 多个会话或代理并行时：各在独立 worktree 工作并先补齐被忽略的本地素材；原生测试通过 `ios/scripts/run-ios-tests.sh` 使用各自的模拟器与 DerivedData，不共用模拟器，`-destination` 用 `id=` 而非 `name=`；审图服务器端口被占用时用 `python3 -m http.server 0 --bind 127.0.0.1` 取空闲端口；耗时阈值用例在其他 xcodebuild 并行时可能误报，复跑后再判断。细节见 [并行会话与测试隔离](docs/development.md#并行会话与测试隔离)。
+- GitHub Actions（`.github/workflows/ci.yml`）对 push 到 main 和 pull request 运行 Node 测试、国保核对、iOS 目录导出一致性、Python 测试、通过 `ios/scripts/run-ios-tests.sh` 构建并运行 `FangguTests`。CI 没有本地图版，依赖素材的测试跳过；改动目录源后重新运行 `node ios/scripts/build-catalog.cjs` 并提交 `catalog.json`，否则 CI 失败。
 - 汇报改动、实际执行的检查与未验证项。历史报告中的测试数量和截图不代表本次验证。
 - 文档链接使用仓库相对路径。接口、命令、存储格式或生产流程改变时，同步更新对应开发文档；长期规则引用数据来源，不复制固定数量和旧分工。
 

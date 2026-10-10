@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -33,7 +34,7 @@ const repairedLines = {
   jp_hongwanji_hiunkaku: [780, 680],
 };
 
-test('reported Kyoto silhouettes rebuild with transparent wall fill and visible internal strokes', async () => {
+test('reported Kyoto silhouettes rebuild with transparent wall fill and visible internal strokes', requiresLocalAssets, async () => {
   const { recolorLinePlate } = await import('../scripts/line-plate.mjs');
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'fanggu-kyoto-lines-'));
   const alpha = file => execFileSync('magick', [file, '-alpha', 'extract', '-depth', '8', 'gray:-'], { maxBuffer: 8 * 1024 * 1024 });
@@ -82,7 +83,7 @@ test('Kyoto and nearby batch keeps ten distinct mapped subjects with qualified c
   assert(SITES.find(item => item.id === 'jp_iwashimizu_honden').sub.includes('局部'));
 });
 
-test('all ten keep source-bound originals and review history; repaired lines await renewed approval', () => {
+test('all ten keep source-bound originals and review history; repaired lines await renewed approval', requiresLocalAssets, () => {
   assert.equal(queue.count, SITES.length - queue.excluded.length);
   for (const id of Object.keys(expected)) {
     const line = JSON.parse(read(`assets/research/${id}.json`));

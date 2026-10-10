@@ -40,7 +40,7 @@
 2. 更名优先改 `name`、`short`，把旧名放入 `legacyNames` 以便搜索。
 3. 改 `year`、`yearLabel`、`yearNote` 时核对所绘主体与依据，必要时更新研究 JSON 的 `historical_sources`。
 4. `node ios/scripts/build-catalog.cjs`。
-5. `node --test tests/*.test.cjs`。没有本地素材时至少运行 `facets`、`ios-catalog`、`protection` 三个文件，并在汇报中说明其余未运行。
+5. `node --test tests/*.test.cjs`。没有本地素材时读取图片的用例报告为跳过，汇报中写出跳过数量与原因；恢复素材后用 `FANGGU_REQUIRE_LOCAL_ASSETS=1 node --test tests/*.test.cjs` 全量运行。
 6. 涉及搜索或筛选时在 App 中实际检查。
 
 ### 新增地点、省份、地区或国家
@@ -129,7 +129,7 @@
 
 - **生成文件不手改。** `plates.js`、`colored-plates.js`、`protection-data.js`、`sources.html`、`catalog.json`、`progress.json`、`prompts.json`、`avif-manifest.json` 都由脚本写出。
 - **加载顺序。** 根目录 JS 依赖全局对象，顺序是 `sites → plates → colored-plates → protection-data → protection → catalog`；Node 测试同样按这个顺序用 `vm` 执行。
-- **worktree 没有图片。** 这不是缺陷。缺素材时 `prepare-plates.mjs` 无法重建 `plates.js`，只有 `--sources-only` 可用；多数 Node 测试会 `ENOENT`。见 [没有本地素材时](testing.md#没有本地素材时)。
+- **worktree 没有图片。** 这不是缺陷。缺素材时 `prepare-plates.mjs` 无法重建 `plates.js`，只有 `--sources-only` 可用；读取图片的 Node 用例报告为跳过。见 [没有本地素材时](testing.md#没有本地素材时)。
 - **汇总器不查队列外的遗漏。** `collect-colored-plates.mjs --require-complete` 只遍历 `queue.json`；新增条目必须先入队列，并核对 `SITES` 与 `COLORED_PLATES` 的 ID 集合相等。
 - **数量断言。** `tests/catalog.test.cjs` 与批次测试含基线数量和手写 ID 列表；新增条目要进入覆盖列表，不能只调大数字。
 - **不要运行 `plan-colored-plates.mjs`。** 它是 2026-09-15 的历史规划器，要求恰好 197 张并重写队列，在当前目录规模下会直接报错。

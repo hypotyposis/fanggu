@@ -59,7 +59,7 @@ xcodegen generate
 xcodebuild -project Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=iPhone 16 Pro' build
 ```
 
-`sync-artwork.sh` 检查全部目录条目所需的线稿 PNG 和设色 AVIF。图片位于被忽略的 `ios/Fanggu/Resources/Artwork/`，不会误提交原件。数据、朝代色或图版清单变更时重新运行导出和同步命令。中文标题使用随 App 打包的 Ma Shan Zheng 与 Noto Serif SC 字体，均按 SIL Open Font License 授权，许可文本在 `Fanggu/Resources/Fonts/`。
+`sync-artwork.sh` 检查全部目录条目所需的线稿 PNG 和设色 AVIF。图片位于被忽略的 `ios/Fanggu/Resources/Artwork/`，不会误提交原件。没有本地素材时（如 CI）先 `mkdir -p ios/Fanggu/Resources/Artwork` 再构建，否则 Copy Bundle Resources 找不到该目录会失败；这样构建出的 App 只能验证代码与界面流程，不能验收图版。数据、朝代色或图版清单变更时重新运行导出和同步命令。中文标题使用随 App 打包的 Ma Shan Zheng 与 Noto Serif SC 字体，均按 SIL Open Font License 授权，许可文本在 `Fanggu/Resources/Fonts/`。
 
 App 图标使用用户提供的[鸱吻图标素材包](icon-concepts/chiwen/README.md)：默认版为朱红底金色剪影，另有深色与系统着色版本。三个 1024 × 1024 PNG 和 `Contents.json` 原样接入 `Fanggu/Assets.xcassets/AppIcon.appiconset/`，圆角由 iOS 添加。完整矢量源稿、旧版各尺寸 PNG 和原始说明保存在 `icon-concepts/chiwen/`。需要恢复交付图时，在仓库根目录运行 `python3 ios/scripts/build-icon.py`；该脚本只复制提供的图标，不重绘。此前斗栱方案保留为历史设计记录。
 

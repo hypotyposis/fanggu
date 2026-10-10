@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -22,7 +23,7 @@ const expected = [
   ['fj_laojun', 3, '老君岩造像'], ['fj_fuzhou_wenmiao', 6, '福州文庙'],
 ];
 
-test('ten distinct Fujian national units have scoped titles, saved references and pending artwork', () => {
+test('ten distinct Fujian national units have scoped titles, saved references and pending artwork', requiresLocalAssets, () => {
   assert.equal(expected.length, 10);
   assert.equal(new Set(expected.map(([id]) => id)).size, 10);
   const catalog = classify(SITES, PLACES);

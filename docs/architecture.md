@@ -131,7 +131,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `source` | `assets/generated/`、`assets/colored/`、`assets/colored-transparent/`、`assets/colored-avif/`、`assets/references/`、`assets/color-references/`、本地人审页等 | 重新制图、原设色对照、完整 Node 测试所需 |
 | `full` | `runtime` 加 `source` | `asset-bundle.py` 的 `--profile full` |
 
-新克隆或 worktree 默认没有这些文件：`sync-artwork.sh` 会报缺目录，大多数 Node 测试会因 `ENOENT` 失败，Xcode 构建也会因 `ios/Fanggu/Resources/Artwork/` 不存在而失败。恢复方法见 [开发指南 · 本地资源包](development.md#本地资源包)，可运行的测试子集见 [测试与验证 · 没有本地素材时](testing.md#没有本地素材时)。
+新克隆或 worktree 默认没有这些文件：`sync-artwork.sh` 会报缺目录，读取图片的 Node 用例报告为跳过（见 [测试与验证 · 没有本地素材时](testing.md#没有本地素材时)），Xcode 构建也会因 `ios/Fanggu/Resources/Artwork/` 不存在而失败。恢复方法见 [开发指南 · 本地资源包](development.md#本地资源包)，可运行的测试子集见 [测试与验证 · 没有本地素材时](testing.md#没有本地素材时)。
 
 ## 本地审图工具
 

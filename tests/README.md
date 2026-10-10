@@ -2,7 +2,7 @@
 
 运行方式、环境前置与汇报约定见 [测试与验证](../docs/testing.md)。本文只列每个文件覆盖什么、是否需要本地素材。
 
-“需要素材”指读取被 Git 忽略的 `assets/` 图片（`generated/`、`plates/`、`references/`、`colored*/`）。没有素材时这些文件以 `ENOENT` 失败，是环境问题而非缺陷。
+“需要素材”指读取被 Git 忽略的 `assets/` 图片（`generated/`、`plates/`、`references/`、`colored*/`）。这些用例声明 `helpers/local-assets.cjs` 的 `requiresLocalAssets`：没有素材时报告为跳过而不是 `ENOENT` 失败；`FANGGU_REQUIRE_LOCAL_ASSETS=1` 关闭跳过。同一文件里不读图片的用例照常运行。
 
 ## Node：横切检查
 
@@ -46,6 +46,7 @@
 
 | 文件 | 作用 |
 | --- | --- |
+| `local-assets.cjs` | `requiresLocalAssets`：传给 `test()` 的选项，缺少本地图版目录时把用例标为跳过并给出恢复提示；`hasLocalAssets` 供需要分支的测试使用 |
 | `native-catalog.cjs` | `assertUnvisited(ids)`：原生目录中这些 ID 默认未到访且不含个人数据 |
 | `archived-tiantai.cjs`、`archived-xian.cjs` | 天台庵去底修补、大小雁塔拆分后，继续校验归档在 `assets/research/history/` 中的历史原件与验收哈希 |
 

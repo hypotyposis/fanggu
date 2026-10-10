@@ -1,6 +1,7 @@
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -16,7 +17,7 @@ const facets = require('../catalog.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('Shandong expansion has eight complete pairs with genuine generation inputs and pending human review', () => {
+test('Shandong expansion has eight complete pairs with genuine generation inputs and pending human review', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.beforeCount, 261);
@@ -83,7 +84,7 @@ test('Shandong additions are searchable and start unvisited while the blocked hi
   assert.equal(json('assets/research/sd_penglai.json').status, 'blocked');
 });
 
-test('Shandong intake preserves all previous colored deliverables and human approvals', () => {
+test('Shandong intake preserves all previous colored deliverables and human approvals', requiresLocalAssets, () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   for (const [id, previous] of Object.entries(batch.previousDeliveries)) {
     if (id === 'xian') { assertArchivedXian(previous); continue; }

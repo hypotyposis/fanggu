@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -16,7 +17,7 @@ const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('pla
 const facets = require('../catalog.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('Fujian and Shandong additions have paired prototype images with genuine inputs and histories', () => {
+test('Fujian and Shandong additions have paired prototype images with genuine inputs and histories', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.plannedIds.length, 8);
@@ -101,7 +102,7 @@ test('Penglai lacks a full-subject input and remains blocked rather than becomin
   assert(!json('assets/color-research/avif-manifest.json').images.sd_penglai);
 });
 
-test('adding seven monuments preserves earlier files and their human-review state', () => {
+test('adding seven monuments preserves earlier files and their human-review state', requiresLocalAssets, () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   assert.equal(batch.beforeCount, 227);

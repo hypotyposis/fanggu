@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -16,7 +17,7 @@ const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('pla
 const facets = require('../catalog.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('Inner Mongolia, Yunnan and Guizhou additions have real paired prototype assets and traceable inputs', () => {
+test('Inner Mongolia, Yunnan and Guizhou additions have real paired prototype assets and traceable inputs', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.ids.length, 8);
@@ -81,7 +82,7 @@ test('dates distinguish foundation, surviving subject, reconstruction and approx
   for (const id of batch.ids) assert(site(id).yearNote);
 });
 
-test('adding eight monuments preserves all 219 earlier color files and their review state', () => {
+test('adding eight monuments preserves all 219 earlier color files and their review state', requiresLocalAssets, () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(Object.keys(batch.previousDeliveries).length, 219);
   for (const [id, old] of Object.entries(batch.previousDeliveries)) {
