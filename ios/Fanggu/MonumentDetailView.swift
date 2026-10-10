@@ -145,7 +145,7 @@ struct MonumentDetailView: View {
                     }
                 }
                 if let url = URL(string: site.sourceURL), !site.sourceURL.isEmpty {
-                    Link("图版参考来源 ↗", destination: url)
+                    Link(destination: url) { Text("图版参考来源 ↗").multilineTextAlignment(.leading) }
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
                 }
             }

@@ -24,19 +24,27 @@ struct CurationStrip: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(alignment: .firstTextBaseline) {
-                Text("专题").font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
-                Text("名录与线路 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
-                Spacer()
+            ViewThatFits(in: .horizontal) {
+                HStack(alignment: .firstTextBaseline) {
+                    Text("专题").font(FangguFont.serif(14)).foregroundStyle(Palette.paper).fixedSize()
+                    Text("名录与线路 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).fixedSize()
+                    Spacer()
+                }
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("专题").font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
+                    Text("名录与线路 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                }
             }
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
+                HStack(alignment: .top, spacing: 10) {
                     ForEach(library.curations) { list in
                         NavigationLink(value: list) { CurationCard(curation: list) }
                             .buttonStyle(.plain)
                     }
                 }
                 .padding(.vertical, 1)
+                // Cards keep a fixed width in a horizontal strip, so their text stops growing like a toolbar's.
+                .dynamicTypeSize(...DynamicTypeSize.xxLarge)
             }
         }
         .accessibilityIdentifier("curation-strip")
@@ -51,9 +59,13 @@ struct CurationCard: View {
         let progress = library.progress(of: curation)
         VStack(alignment: .leading, spacing: 6) {
             Text(verbatim: "\(curation.kindName) · \(curation.eyebrow)")
-                .font(FangguFont.mono(10)).foregroundStyle(Palette.gold).lineLimit(1)
+                .font(FangguFont.mono(10)).foregroundStyle(Palette.gold).lineLimit(2)
+                .fixedSize(horizontal: false, vertical: true)
+            // Translated names are longer than the Chinese; they take two lines rather than "…".
             Text(curation.name)
-                .font(FangguFont.serif(18, weight: .medium)).foregroundStyle(Palette.paper).lineLimit(1)
+                .font(FangguFont.serif(18, weight: .medium)).foregroundStyle(Palette.paper)
+                .lineLimit(2).minimumScaleFactor(0.85)
+                .fixedSize(horizontal: false, vertical: true)
             Spacer(minLength: 0)
             HStack(alignment: .firstTextBaseline, spacing: 4) {
                 Text(verbatim: "\(progress.visited)")
@@ -67,7 +79,8 @@ struct CurationCard: View {
             CurationProgressBar(progress: progress)
         }
         .padding(14)
-        .frame(width: 196, height: 116, alignment: .leading)
+        .frame(width: 220, alignment: .leading)
+        .frame(minHeight: 116)
         .background(Palette.ink2)
         .overlay(Rectangle().stroke(Palette.paper.opacity(0.15), lineWidth: 1))
         .contentShape(Rectangle())
@@ -85,18 +98,23 @@ struct CurationSummaryRow: View {
     var body: some View {
         let progress = library.progress(of: curation)
         VStack(alignment: .leading, spacing: 8) {
-            HStack(alignment: .firstTextBaseline, spacing: 8) {
-                Text(curation.kindName).font(FangguFont.mono(10)).foregroundStyle(Palette.gold)
-                    .padding(.horizontal, 6).padding(.vertical, 3)
-                    .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.7), lineWidth: 1))
-                Text(curation.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper).lineLimit(1)
-                Spacer(minLength: 8)
-                if progress.isComplete {
-                    Text("集齐").font(FangguFont.mono(10)).foregroundStyle(Palette.redText)
+            // One line when the name fits beside the counts; otherwise the name gets its own line.
+            ViewThatFits(in: .horizontal) {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
+                    kindBadge
+                    Text(curation.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper).fixedSize()
+                    Spacer(minLength: 8)
+                    counts(progress)
                 }
-                Text(verbatim: "\(progress.visited)").font(FangguFont.serif(16, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
-                Text(verbatim: "/ \(progress.total)").font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
-                Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.paper3)
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        kindBadge
+                        Spacer(minLength: 8)
+                        counts(progress)
+                    }
+                    Text(curation.name).font(FangguFont.serif(16)).foregroundStyle(Palette.paper)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
             }
             CurationProgressBar(progress: progress)
         }
@@ -109,6 +127,21 @@ struct CurationSummaryRow: View {
             ? Text("\(curation.kindName) \(curation.name)，已到访 \(progress.visited) 处，共 \(progress.total) 处，已集齐")
             : Text("\(curation.kindName) \(curation.name)，已到访 \(progress.visited) 处，共 \(progress.total) 处"))
         .accessibilityIdentifier("curation-row-\(curation.id)")
+    }
+
+    private var kindBadge: some View {
+        Text(curation.kindName).font(FangguFont.mono(10)).foregroundStyle(Palette.gold).fixedSize()
+            .padding(.horizontal, 6).padding(.vertical, 3)
+            .overlay(Rectangle().stroke(Palette.goldDim.opacity(0.7), lineWidth: 1))
+    }
+
+    @ViewBuilder private func counts(_ progress: CurationProgress) -> some View {
+        if progress.isComplete {
+            Text("集齐").font(FangguFont.mono(10)).foregroundStyle(Palette.redText).fixedSize()
+        }
+        Text(verbatim: "\(progress.visited)").font(FangguFont.serif(16, weight: .medium)).monospacedDigit().foregroundStyle(Palette.gold)
+        Text(verbatim: "/ \(progress.total)").font(FangguFont.mono(12)).foregroundStyle(Palette.paper2)
+        Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.paper3)
     }
 }
 

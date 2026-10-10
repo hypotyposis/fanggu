@@ -25,6 +25,8 @@ final class LocalizationUITests: XCTestCase {
         search.tap(); search.typeText("佛光寺")
         XCTAssertNotEqual(count.label, "0 monuments", "Chinese names still find monuments in English")
         app.buttons["clear-catalog-search"].tap()
+        // The floating tab bar hides while the keyboard is up.
+        if app.keyboards.count > 0 { app.typeText("\n") }
 
         for (tab, title, screen) in [("Footprints", "My Footprints", "footprints"), ("Timeline", "Timeline", "timeline"), ("Me", "My Fanggu", "me")] {
             app.buttons[tab].tap()

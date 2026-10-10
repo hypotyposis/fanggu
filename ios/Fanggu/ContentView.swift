@@ -371,6 +371,7 @@ struct ExploreView: View {
                 ScrollView { hero.padding(.horizontal, 24) }
                     .background(Palette.ink.ignoresSafeArea())
                     .navigationTitle("关于访古")
+                    .navigationBarTitleDisplayMode(.inline)
                     .toolbar { Button("关闭") { showingAbout = false }.accessibilityIdentifier("about-close") }
             }
             .fangguAppearance()
@@ -437,6 +438,7 @@ struct ExploreView: View {
             }
             .background(Palette.ink.ignoresSafeArea())
             .navigationTitle("筛选古迹")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar { Button("完成") { showingFilters = false }.accessibilityIdentifier("filters-done") }
         }
         .fangguAppearance()
@@ -715,6 +717,7 @@ struct ArtworkView: View {
 
 struct MonumentCard: View {
     @EnvironmentObject private var library: LibraryStore
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let site: Monument
     var distance: String? = nil
     var here = false
@@ -778,7 +781,7 @@ struct MonumentCard: View {
                         Text(verbatim: "\(site.place)  ·  \(site.typeNames.joined(separator: " · "))")
                             .font(FangguFont.serif(12))
                             .foregroundStyle(Palette.paper2)
-                            .lineLimit(2)
+                            .lineLimit(dynamicTypeSize.isAccessibilitySize ? 5 : 2)
                     }
                     .padding(17)
                 }
@@ -809,10 +812,12 @@ struct MonumentCard: View {
                 VisitActions(site: site, editingVisit: $editingVisit)
             }
             .padding(.horizontal, 17).padding(.bottom, 12)
-            HStack(spacing: 10) {
+            let footer = dynamicTypeSize.isAccessibilitySize
+                ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10)) : AnyLayout(HStackLayout(spacing: 10))
+            footer {
                 Button("写短评 / 打分") { editingReview = true }
                     .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                Spacer(minLength: 0)
+                if !dynamicTypeSize.isAccessibilitySize { Spacer(minLength: 0) }
                 NavigationLink(value: site) {
                     Text("细读 ↗")
                         .font(FangguFont.serif(12))

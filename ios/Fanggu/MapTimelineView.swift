@@ -72,17 +72,17 @@ struct AtlasMapView: View {
                                 let isSelected = !highlighted.isDisjoint(with: cluster.placeIDs)
                                 Button { openPlaces(cluster.placeIDs) } label: {
                                     VStack(spacing: 2) {
-                                        // English names are several times wider than Chinese ones; they get a
-                                        // compact title over two lines instead of being cut off.
+                                        // Translated names are wider than Chinese ones; markers show a compact
+                                        // title, and the sheet heading gives the full one.
                                         Text(markerTitle(cluster.placeIDs))
-                                            .font(FangguFont.serif(AppLanguage.current == .english ? 11 : 12))
-                                            .lineLimit(AppLanguage.current == .english ? 2 : 1).minimumScaleFactor(0.7)
-                                            .multilineTextAlignment(.center)
+                                            .font(FangguFont.serif(12)).lineLimit(1).minimumScaleFactor(0.6)
                                         Text("\(cluster.placeIDs.count) 地")
                                             .font(FangguFont.mono(10))
                                     }
                                     .foregroundStyle(isSelected ? Palette.ink : Palette.paper)
                                     .frame(width: 66, height: 44)
+                                    // The marker box is fixed, so its labels stop growing with Dynamic Type.
+                                    .dynamicTypeSize(...DynamicTypeSize.large)
                                     .background(isSelected ? Palette.gold : Palette.ink.opacity(0.93), in: RoundedRectangle(cornerRadius: 7))
                                     .overlay(RoundedRectangle(cornerRadius: 7).stroke(Palette.gold.opacity(isSelected ? 1 : 0.65), lineWidth: 1))
                                 }
@@ -187,9 +187,9 @@ struct AtlasMapView: View {
         return regions.count > 2 ? String(localized: "\(names)等") : names
     }
 
-    /// The marker and the sheet's bar title; English uses the first place or region and a count.
+    /// The marker and the sheet's bar title; translations use the first place or region and a count.
     private func markerTitle(_ ids: [String]) -> String {
-        guard AppLanguage.current == .english else { return clusterTitle(ids) }
+        guard AppLanguage.current != .simplifiedChinese else { return clusterTitle(ids) }
         let sites = ids.compactMap { places[$0]?.first }
         if sites.count == 1 {
             let name = sites.first?.placeName ?? String(localized: "到访地点")
