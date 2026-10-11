@@ -16,7 +16,7 @@ const expected = [
   ['sx_daixian_wenmiao', 6, '代县文庙', '大成殿'],
   ['sx_ciyun', 6, '慈云寺', '大雄宝殿'],
   ['sx_wuyue', 6, '介休五岳庙', '戏楼'],
-  ['sx_pingyao_chenghuang', 6, '平遥城隍庙', '前殿'],
+  ['sx_pingyao_chenghuang', 6, '平遥城隍庙', '戏楼'],
   ['sx_rishengchang', 6, '日昇昌旧址', '临街门面'],
   ['sx_pujiu', 8, '普救寺塔', '莺莺塔'],
 ];

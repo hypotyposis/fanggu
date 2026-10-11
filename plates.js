@@ -4994,13 +4994,13 @@ const PLATES = {
   },
   "sx_pingyao_chenghuang": {
     "src": "assets/plates/sx_pingyao_chenghuang.png",
-    "alt": "平遥城隍庙 · 前殿正面 · 线稿",
+    "alt": "平遥城隍庙 · 戏楼昭格楼南面 · 线稿",
     "width": 1536,
     "height": 1024,
     "color": "#7290bd",
     "tint": false,
     "caption": [
-      "平遥城隍庙 · 前殿正面",
+      "平遥城隍庙 · 戏楼昭格楼南面",
       "清代建筑 · 后世维修"
     ]
   },
@@ -5198,13 +5198,13 @@ const PLATES = {
   },
   "hn_zzchenghuang": {
     "src": "assets/plates/hn_zzchenghuang.png",
-    "alt": "郑州城隍庙 · 三间大殿正面 · 线稿",
+    "alt": "郑州城隍庙 · 山门正面 · 线稿",
     "width": 1536,
     "height": 1024,
     "color": "#7290bd",
     "tint": false,
     "caption": [
-      "郑州城隍庙 · 三间大殿正面",
+      "郑州城隍庙 · 山门正面",
       "明清 · 现存主体"
     ]
   },

@@ -8,11 +8,8 @@
     "hb_taihui",
     "hb_zhongxiang_wenfeng",
     "hb_huanghelou",
-    "hb_ezhou_guanyin",
-    "hb_wanshou_pagoda",
     "hu_yuelu",
-    "hu_liuyang_wenmiao",
-    "hu_cishi"
+    "hu_liuyang_wenmiao"
   ],
   "blocked": [
     {
@@ -349,5 +346,19 @@
       "CC BY-SA 4.0",
       "CC BY-SA 3.0"
     ]
-  }
+  },
+  "dropped": [
+    {
+      "id": "hb_ezhou_guanyin",
+      "reason": "用户 2026-10-11 决定不收录"
+    },
+    {
+      "id": "hb_wanshou_pagoda",
+      "reason": "用户 2026-10-11 决定不收录"
+    },
+    {
+      "id": "hu_cishi",
+      "reason": "用户 2026-10-11 决定不收录"
+    }
+  ]
 }
