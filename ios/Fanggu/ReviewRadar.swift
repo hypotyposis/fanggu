@@ -217,7 +217,7 @@ struct ReviewRadar: View {
     private func axisLabel(_ axis: ReviewDimension) -> some View {
         VStack(spacing: 4) {
             Text(axis.title).font(FangguFont.serif(12)).tracking(0.5)
-                .lineLimit(1).minimumScaleFactor(0.7)
+                .lineLimit(1).minimumScaleFactor(0.6)
             Text(ReviewDimension.grade(displayGrade(axis)))
                 .font(FangguFont.serif(16, weight: .medium)).monospacedDigit()
                 .foregroundStyle(selected == axis && editable ? Palette.redText : Palette.gold)

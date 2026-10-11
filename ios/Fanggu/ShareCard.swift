@@ -142,6 +142,7 @@ struct MonumentShareCard: View {
                             Text(ReviewDimension.grade(review.dimensions[axis]))
                                 .font(FangguFont.mono(16)).foregroundStyle(review.dimensions[axis] == nil ? CardPalette.ink3 : CardPalette.gold)
                             Text(axis.title).font(FangguFont.serif(9)).foregroundStyle(CardPalette.ink2)
+                                .lineLimit(1).minimumScaleFactor(0.6)
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -181,9 +182,10 @@ struct CurationShareCard: View {
                 Spacer()
                 FangguSeal(size: 34)
             }
+            // The card image has a fixed height, so long translated names shrink on one line instead of wrapping.
             Text(curation.name)
                 .font(FangguFont.serif(30, weight: .medium)).foregroundStyle(CardPalette.ink)
-                .lineLimit(1).minimumScaleFactor(0.7)
+                .lineLimit(1).minimumScaleFactor(0.5)
                 .padding(.top, 14)
             Text(curation.lede)
                 .font(FangguFont.serif(12)).foregroundStyle(CardPalette.ink2).lineSpacing(4).lineLimit(3)
@@ -214,7 +216,8 @@ struct CurationShareCard: View {
                                 }
                                 .frame(height: 74)
                                 Text(site.short.isEmpty ? site.name : site.short)
-                                    .font(FangguFont.serif(10)).foregroundStyle(CardPalette.ink).lineLimit(1)
+                                    .font(FangguFont.serif(10)).foregroundStyle(CardPalette.ink)
+                                    .lineLimit(1).minimumScaleFactor(0.65)
                             }
                             .frame(maxWidth: .infinity)
                         }
@@ -293,17 +296,10 @@ struct ShareCardSheet: View {
                         }
                         .buttonStyle(FangguOutlineButton())
                         .accessibilityIdentifier("share-card-link")
-                        HStack(spacing: 10) {
-                            Button { save(image) } label: {
-                                Label("保存到相册", systemImage: "photo.on.rectangle").frame(maxWidth: .infinity)
-                            }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                            .accessibilityIdentifier("share-card-save")
-                            Button { copy(image) } label: {
-                                Label("复制图片", systemImage: "doc.on.doc").frame(maxWidth: .infinity)
-                            }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                            .accessibilityIdentifier("share-card-copy")
+                        // Side by side while both labels fit on one line; stacked otherwise.
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 10) { saveButton(image, singleLine: true); copyButton(image, singleLine: true) }
+                            VStack(spacing: 10) { saveButton(image); copyButton(image) }
                         }
                     }
                     Text(footnote).font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
@@ -322,6 +318,24 @@ struct ShareCardSheet: View {
         }
         .fangguAppearance()
         .task(id: options) { message = nil; render() }
+    }
+
+    private func saveButton(_ image: UIImage, singleLine: Bool = false) -> some View {
+        Button { save(image) } label: {
+            Label("保存到相册", systemImage: "photo.on.rectangle")
+                .fixedSize(horizontal: singleLine, vertical: false).frame(maxWidth: .infinity)
+        }
+        .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+        .accessibilityIdentifier("share-card-save")
+    }
+
+    private func copyButton(_ image: UIImage, singleLine: Bool = false) -> some View {
+        Button { copy(image) } label: {
+            Label("复制图片", systemImage: "doc.on.doc")
+                .fixedSize(horizontal: singleLine, vertical: false).frame(maxWidth: .infinity)
+        }
+        .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+        .accessibilityIdentifier("share-card-copy")
     }
 
     private var footnote: String {

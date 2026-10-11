@@ -258,6 +258,7 @@ enum FangguFont {
         let style: Font.TextStyle = size >= 30 ? .largeTitle : size >= 19 ? .title : .body
         return .custom(serifName, size: size, relativeTo: style).weight(weight)
     }
-    static func brush(_ size: CGFloat) -> Font { .custom("MaShanZheng-Regular", size: size) }
+    /// Brush lettering is used for seals and stamps inside fixed frames, so it keeps its size like the seal does.
+    static func brush(_ size: CGFloat) -> Font { .custom("MaShanZheng-Regular", fixedSize: size) }
     static func mono(_ size: CGFloat) -> Font { .system(size: max(11, size), design: .monospaced) }
 }
