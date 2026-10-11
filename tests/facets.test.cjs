@@ -7,6 +7,10 @@ const facets = require('../catalog.js');
 const { SITES, PLACES } = vm.runInNewContext(fs.readFileSync(require.resolve('../sites.js'), 'utf8') + '\n({SITES, PLACES})');
 const catalog = facets.classify(SITES, PLACES);
 const readyExpansion = JSON.parse(fs.readFileSync(require.resolve('../assets/research/expansion-ready-20261011-batch.json'), 'utf8'));
+const japanFirst = JSON.parse(fs.readFileSync(require.resolve('../assets/research/japan-first-20261011-batch.json'), 'utf8'));
+const japanSecond = JSON.parse(fs.readFileSync(require.resolve('../assets/research/japan-second-20261012-batch.json'), 'utf8'));
+const japanSecondSites = catalog.filter(site => japanSecond.ids.includes(site.id));
+const japanFirstSites = catalog.filter(site => japanFirst.ids.includes(site.id));
 const japanReady = readyExpansion.groups['japan-kokuho-20261005'];
 const readySites = catalog.filter(site => readyExpansion.ids.includes(site.id));
 const tokyoEight = JSON.parse(fs.readFileSync(require.resolve('../assets/research/tokyo-20261003-batch.json'), 'utf8')).added_ids;
@@ -87,24 +91,24 @@ test('aliases and geographic or type names remain searchable with facets', () =>
 });
 
 test('Japanese country, prefecture and era facets stay separate from Chinese regions and dynasties', () => {
-  const ids = ['byodoin', 'horyuji', 'jp_ginkaku', 'jp_himeji', 'jp_itsukushima', 'jp_kinkaku', 'jp_nikko_toshogu', 'jp_sensoji', 'kiyomizu', 'todaiji', 'toji', 'toshodaiji', ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...tokyoEight, ...japanReady].sort();
+  const ids = ['byodoin', 'horyuji', 'jp_ginkaku', 'jp_himeji', 'jp_itsukushima', 'jp_kinkaku', 'jp_nikko_toshogu', 'jp_sensoji', 'kiyomizu', 'todaiji', 'toji', 'toshodaiji', ...kansaiTwelve, ...kyotoNearbyTen, ...kyotoThirteen, ...kyotoNine, ...tokyoEight, ...japanReady, ...japanFirst.ids, ...japanSecond.ids].sort();
   assert.deepEqual(find({ country: 'JP' }), ids);
   assert.deepEqual(find({ query: '日本' }), ids);
   assert.deepEqual(find({ country: 'JP', province: '东京都' }), ['jp_sensoji', ...tokyoEight].sort());
-  assert.deepEqual(find({ country: 'JP', dynasty: 'jp_edo' }), ['jp_chionin_mieido', 'jp_chionin_sanmon', 'jp_daitokuji_hojo', 'jp_enryakuji_komponchudo', 'jp_gosho_shishinden', 'jp_himeji', 'jp_hongwanji_goeido', 'jp_iwashimizu_honden', 'jp_kamigamo_honden', 'jp_kasuga_honden', 'jp_katsura_koshoin', 'jp_kitano_honden', 'jp_manpukuji_daiou', 'jp_nanzenji_sanmon', 'jp_nijo_ninomaru', 'jp_nikko_toshogu', 'jp_osaka_sengan', 'jp_shimogamo_honden', 'jp_sumiyoshi_honden', 'jp_yasaka_honden', 'kiyomizu', 'toji', 'jp_ueno_toshogu_karamon', 'jp_nezu_romon', 'jp_asakusa_jinja', 'jp_zojoji_sangedatsumon', 'jp_kaneiji_kiyomizu', 'jp_gokokuji_hondo', 'jp_ikegami_pagoda', ...readySites.filter(site => site.dyn === 'jp_edo').map(site => site.id)].sort());
-  assert.deepEqual(find({ country: 'JP', province: '奈良县', type: 'hall' }), ['horyuji', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'toshodaiji']);
-  assert.deepEqual(find({ country: 'JP', type: 'gate' }), ['jp_chionin_sanmon', 'jp_daitokuji_karamon', 'jp_iwashimizu_honden', 'jp_nanzenji_sanmon', 'jp_nikko_toshogu', 'jp_tofukuji_sanmon', 'todaiji', 'jp_ueno_toshogu_karamon', 'jp_nezu_romon', 'jp_zojoji_sangedatsumon'].sort());
+  assert.deepEqual(find({ country: 'JP', dynasty: 'jp_edo' }), ['jp_chionin_mieido', 'jp_chionin_sanmon', 'jp_daitokuji_hojo', 'jp_enryakuji_komponchudo', 'jp_gosho_shishinden', 'jp_himeji', 'jp_hongwanji_goeido', 'jp_iwashimizu_honden', 'jp_kamigamo_honden', 'jp_kasuga_honden', 'jp_katsura_koshoin', 'jp_kitano_honden', 'jp_manpukuji_daiou', 'jp_nanzenji_sanmon', 'jp_nijo_ninomaru', 'jp_nikko_toshogu', 'jp_osaka_sengan', 'jp_shimogamo_honden', 'jp_sumiyoshi_honden', 'jp_yasaka_honden', 'kiyomizu', 'toji', 'jp_ueno_toshogu_karamon', 'jp_nezu_romon', 'jp_asakusa_jinja', 'jp_zojoji_sangedatsumon', 'jp_kaneiji_kiyomizu', 'jp_gokokuji_hondo', 'jp_ikegami_pagoda', ...readySites.filter(site => site.dyn === 'jp_edo').map(site => site.id), ...japanFirstSites.filter(site => site.dyn === 'jp_edo').map(site => site.id), ...japanSecondSites.filter(site => site.dyn === 'jp_edo').map(site => site.id)].sort());
+  assert.deepEqual(find({ country: 'JP', province: '奈良县', type: 'hall' }), ['horyuji', 'jp_gangoji_gokuraku', 'jp_kofukuji_hokuen', 'jp_murouji_kondo', 'jp_shinyakushiji_hondo', 'jp_shosoin_shoso', 'toshodaiji', 'jp_kinpusenji_zaodo', 'jp_todaiji_daibutsuden', 'jp_todaiji_nigatsudo', 'jp_horyuji_yumedono', 'jp_yakushiji_toindo', 'jp_hasedera_hondo'].sort());
+  assert.deepEqual(find({ country: 'JP', type: 'gate' }), ['jp_chionin_sanmon', 'jp_daitokuji_karamon', 'jp_iwashimizu_honden', 'jp_nanzenji_sanmon', 'jp_nikko_toshogu', 'jp_tofukuji_sanmon', 'todaiji', 'jp_ueno_toshogu_karamon', 'jp_nezu_romon', 'jp_zojoji_sangedatsumon', 'jp_sofukuji_daiippomon', 'jp_hogonji_karamon'].sort());
   assert.deepEqual(find({ country: 'JP', type: 'garden' }), ['jp_ryoanji_garden', 'jp_saihoji_garden', 'jp_tenryuji_garden']);
   assert.deepEqual(find({ country: 'JP', region: 'jp_kanto', dynasty: 'jp_showa' }), ['jp_sensoji']);
-  assert.deepEqual(find({ country: 'JP', region: 'jp_chugoku', type: 'shrine' }), ['jp_itsukushima', 'jp_izumo_honden'].sort());
-  assert.deepEqual(find({ country: 'JP', type: 'castle' }), ['jp_himeji', 'jp_osaka_sengan', 'jp_inuyama_tenshu', 'jp_matsumoto_tenshu'].sort());
+  assert.deepEqual(find({ country: 'JP', region: 'jp_chugoku', type: 'shrine' }), ['jp_itsukushima', 'jp_izumo_honden', 'jp_kibitsu_honden', 'jp_kamosu_honden'].sort());
+  assert.deepEqual(find({ country: 'JP', type: 'castle' }), ['jp_himeji', 'jp_osaka_sengan', 'jp_inuyama_tenshu', 'jp_matsumoto_tenshu', 'jp_hikone_tenshu', 'jp_matsue_tenshu'].sort());
   assert.deepEqual(find({ country: 'JP', region: 'jp_kinki', province: '大阪府' }), ['jp_jigenin_tahoto', 'jp_kanshinji_kondo', 'jp_osaka_sengan', 'jp_sumiyoshi_honden']);
   assert.deepEqual(find({ country: 'JP', query: 'Kinkaku-ji' }), ['jp_kinkaku']);
   assert.deepEqual(find({ country: 'CN', dynasty: 'jp_edo' }), []);
   assert.deepEqual(find({ country: 'JP', region: 'north' }), []);
-  assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['宫城县', '山形县', '长野县', '山梨县', '岐阜县', '富山县', '爱知县', '大分县', '东京都', '栃木县', '京都府', '滋贺县', '奈良县', '大阪府', '兵库县', '广岛县', '岛根县', '鸟取县']);
-  assert.deepEqual(facets.provinces(catalog, 'jp_tohoku', 'JP'), ['宫城县', '山形县']);
-  assert(!facets.provinces(catalog, 'all', 'JP').includes('岩手县'), 'Blocked Hiraizumi is not an active prefecture option');
+  assert.deepEqual(facets.provinces(catalog, 'all', 'JP'), ['岩手县', '宫城县', '山形县', '福岛县', '长野县', '山梨县', '岐阜县', '富山县', '爱知县', '福井县', '大分县', '长崎县', '熊本县', '东京都', '栃木县', '神奈川县', '京都府', '滋贺县', '奈良县', '大阪府', '兵库县', '和歌山县', '三重县', '香川县', '高知县', '冲绳县', '广岛县', '岛根县', '鸟取县', '山口县', '冈山县']);
+  assert.deepEqual(facets.provinces(catalog, 'jp_tohoku', 'JP'), ['岩手县', '宫城县', '山形县', '福岛县']);
+  assert(facets.provinces(catalog, 'all', 'JP').includes('岩手县'), 'Sourced Konjikido makes Iwate an active prefecture option');
   assert.equal(facets.provinces(catalog, 'all', 'CN').length, 31);
 });
 

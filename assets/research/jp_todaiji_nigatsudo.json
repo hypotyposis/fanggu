@@ -1,0 +1,127 @@
+{
+  "id": "jp_todaiji_nigatsudo",
+  "name": "东大寺二月堂",
+  "subject": "东大寺1669年再建二月堂单体",
+  "source_page": "https://www.todaiji.or.jp/information/nigatsudo/",
+  "image_url": "https://www.todaiji.or.jp/wp-content/uploads/2022/01/nigatsudo01.jpg",
+  "author": "官方文化财或寺院资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_todaiji_nigatsudo-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_todaiji_nigatsudo-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Todaiji Nigatsudo hall, Nara, rebuilt 1669, exterior with elevated projecting stage\nSTRUCTURAL CHECKPOINTS: Single hipped tiled main roof, front seven bays and deep ten-bay plan; Large elevated timber viewing stage with visible supporting wooden posts on sloping stone foundations; Long balustraded veranda, dark lattice facade and steps immediately attached; exclude adjacent stairs across the hillside and trees\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://online.bunka.go.jp/heritages/detail/123264"
+    }
+  ],
+  "structure_checkpoints": [
+    "Single hipped tiled main roof, front seven bays and deep ten-bay plan",
+    "Large elevated timber viewing stage with visible supporting wooden posts on sloping stone foundations",
+    "Long balustraded veranda, dark lattice facade and steps immediately attached; exclude adjacent stairs across the hillside and trees"
+  ],
+  "material_observations": "Gray-brown roof tiles, deep brown weathered timber, pale stone footing; no brightly colored shrine in the foreground.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "东大寺1669年再建二月堂单体",
+    "1669年再建"
+  ],
+  "generated_file": "assets/generated/jp_todaiji_nigatsudo.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:20.017216+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/123264"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:49:31.784330+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "a99e7abf8c55d52789684016b52c477d5d29d13d499c8909a643aa85f8f1e281",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-64ad9cfa-8079-417f-9155-45876584828e.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:46:20.378011+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Todaiji Nigatsudo hall, Nara, rebuilt 1669, exterior with elevated projecting stage\nSTRUCTURAL CHECKPOINTS: Single hipped tiled main roof, front seven bays and deep ten-bay plan; Large elevated timber viewing stage with visible supporting wooden posts on sloping stone foundations; Long balustraded veranda, dark lattice facade and steps immediately attached; exclude adjacent stairs across the hillside and trees\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_todaiji_nigatsudo-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:49:31.784672+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-64ad9cfa-8079-417f-9155-45876584828e.png",
+      "retained_file": "assets/generated/jp_todaiji_nigatsudo.png",
+      "sourceSha256": "a99e7abf8c55d52789684016b52c477d5d29d13d499c8909a643aa85f8f1e281"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_todaiji_nigatsudo-photo.jpg",
+      "source_page": "https://www.todaiji.or.jp/information/nigatsudo/",
+      "image_url": "https://www.todaiji.or.jp/wp-content/uploads/2022/01/nigatsudo01.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "东大寺1669年再建二月堂单体"
+    },
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://online.bunka.go.jp/heritages/detail/123264"
+    }
+  ],
+  "site_recommendation": {
+    "name": "东大寺二月堂",
+    "year": 1669,
+    "yearApprox": false,
+    "yearLabel": "1669年再建",
+    "yearNote": "现存二月堂在1667年火灾后，于1669年再建；修二会仪式更古老，不作为现建筑年代。",
+    "dyn": "jp_edo",
+    "country": "JP",
+    "placeKey": "jp_nara"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "a99e7abf8c55d52789684016b52c477d5d29d13d499c8909a643aa85f8f1e281",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "a95ea3661cee944a617e302282e38aa62c134d89a01f136eff1c61576fa1002e"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

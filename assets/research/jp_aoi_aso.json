@@ -1,0 +1,138 @@
+{
+  "id": "jp_aoi_aso",
+  "name": "青井阿苏神社",
+  "subject": "青井阿苏神社 · 楼门",
+  "source_page": "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341",
+  "image_url": "https://www.city.hitoyoshi.lg.jp/resource.php?e=bbbd1306a5b9ce3841a24fbc05311338e6472cc33dcb54f457fc6b6fc6762528c57b81a5fbc9848e74ace110f3386fb6",
+  "author": "人吉市官方资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_aoi_aso-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_aoi_aso-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Aoi Aso Shrine Romon, dated 1613, ONLY the large central two-level thatched gate; omit the red gabled structure at left and street lamps.\nSTRUCTURAL CHECKPOINTS: TWO-level romon gate with ONE broad steep thatched hip-and-gable roof and rustic wood ridge ties, not tiled roof.; Three front bays, central opening and two enclosed guardian bays, upper balcony railing, dark lacquered timber with red and green bracket highlights.; Preserve the distinctive sculpted bracket and face ornaments selectively; only gate body and its low base, omit foreground lamps, signs, red neighboring building and foliage.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "人吉市 · 青井阿苏神社 · 楼门",
+      "url": "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://www.city.hitoyoshi.lg.jp/kosodate_kyoiku/kyoiku_bunka/rekishi_bunka/2421063"
+    }
+  ],
+  "structure_checkpoints": [
+    "TWO-level romon gate with ONE broad steep thatched hip-and-gable roof and rustic wood ridge ties, not tiled roof.",
+    "Three front bays, central opening and two enclosed guardian bays, upper balcony railing, dark lacquered timber with red and green bracket highlights.",
+    "Preserve the distinctive sculpted bracket and face ornaments selectively; only gate body and its low base, omit foreground lamps, signs, red neighboring building and foliage."
+  ],
+  "material_observations": "灰褐厚茅葺，黑褐漆木主体，斗栱残红绿彩与白色角面雕刻，石基灰白。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "青井阿苏神社 · 楼门",
+    "桃山庆长十八年（1613）"
+  ],
+  "generated_file": "assets/generated/jp_aoi_aso.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.961799+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341",
+      "https://www.city.hitoyoshi.lg.jp/kosodate_kyoiku/kyoiku_bunka/rekishi_bunka/2421063"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:20:10.193515+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "fe14e190c4733998d13331c27f34a16b840bcbd7f7c2f418a6aa1be2a090a3d1",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e34ece18-ab38-4dd9-8ef8-8972bc7c63e7.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:16:44.404315+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Aoi Aso Shrine Romon, dated 1613, ONLY the large central two-level thatched gate; omit the red gabled structure at left and street lamps.\nSTRUCTURAL CHECKPOINTS: TWO-level romon gate with ONE broad steep thatched hip-and-gable roof and rustic wood ridge ties, not tiled roof.; Three front bays, central opening and two enclosed guardian bays, upper balcony railing, dark lacquered timber with red and green bracket highlights.; Preserve the distinctive sculpted bracket and face ornaments selectively; only gate body and its low base, omit foreground lamps, signs, red neighboring building and foliage.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_aoi_aso-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:20:10.193781+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e34ece18-ab38-4dd9-8ef8-8972bc7c63e7.png",
+      "retained_file": "assets/generated/jp_aoi_aso.png",
+      "sourceSha256": "fe14e190c4733998d13331c27f34a16b840bcbd7f7c2f418a6aa1be2a090a3d1"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_aoi_aso-photo.jpg",
+      "source_page": "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341",
+      "image_url": "https://www.city.hitoyoshi.lg.jp/resource.php?e=bbbd1306a5b9ce3841a24fbc05311338e6472cc33dcb54f457fc6b6fc6762528c57b81a5fbc9848e74ace110f3386fb6",
+      "author": "人吉市官方资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "青井阿苏神社 · 楼门"
+    },
+    {
+      "title": "人吉市 · 青井阿苏神社 · 楼门",
+      "url": "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://www.city.hitoyoshi.lg.jp/kosodate_kyoiku/kyoiku_bunka/rekishi_bunka/2421063"
+    }
+  ],
+  "site_recommendation": {
+    "name": "青井阿苏神社",
+    "year": 1613,
+    "yearApprox": false,
+    "yearLabel": "1613年楼门",
+    "yearNote": "所绘楼门为庆长十八年（1613），神社其余主要建筑约1610—1613年营建；本条以楼门主体纪年，归桃山艺术史时期。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_hitoyoshi"
+  },
+  "factual_note": "官方楼门形制为寄棟造茅葺。首次线稿提示词出现hip-and-gable误述，真实提示词原样保存；资料与目录按官方寄棟造校正。",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "fe14e190c4733998d13331c27f34a16b840bcbd7f7c2f418a6aa1be2a090a3d1",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "02b8b00a06eb39e26edfbf4c196b816ec5d7afc80c45dd41260e75a5ba332411"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

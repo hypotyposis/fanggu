@@ -1,0 +1,128 @@
+{
+  "id": "jp_murouji_kondo",
+  "name": "室生寺金堂",
+  "subject": "室生寺金堂本体",
+  "source_page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+  "image_url": "https://www.city.uda.lg.jp/uploaded/image/1103.jpg",
+  "author": "宇陀市官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_murouji_kondo-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_murouji_kondo-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Muroji Kondo on a slope, surviving early-Heian hall with later forward extension; complete hall with raised front veranda.\nSTRUCTURAL CHECKPOINTS: FIVE-bay main hall with single hip roof; preserve its long asymmetric forward roof extension and roof dip from the photographed 1672 front modification.; Tall veranda posts over the sloping stone base, five-bay front and low railing; simple wooden doors and white infill.; No tower roof, trees, modern fencing or invented level-ground foundation.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "宇陀市官方网站 · 室生寺金堂",
+      "url": "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "FIVE-bay main hall with single hip roof; preserve its long asymmetric forward roof extension and roof dip from the photographed 1672 front modification.",
+    "Tall veranda posts over the sloping stone base, five-bay front and low railing; simple wooden doors and white infill.",
+    "No tower roof, trees, modern fencing or invented level-ground foundation."
+  ],
+  "material_observations": "灰褐柿葺屋面，暗红褐木柱梁与白壁，淡褐栏杆，石基灰色。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "室生寺金堂",
+    "平安前期，9世纪"
+  ],
+  "generated_file": "assets/generated/jp_murouji_kondo.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.199026+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:13:25.570016+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b12784d6b0d77af310d1f2c75c681c7f6161f3744a0b353c505ac41a3bb7f18f",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-0e5535b9-611a-4af4-b717-58cb20e311be.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:08:19.501707+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Muroji Kondo on a slope, surviving early-Heian hall with later forward extension; complete hall with raised front veranda.\nSTRUCTURAL CHECKPOINTS: FIVE-bay main hall with single hip roof; preserve its long asymmetric forward roof extension and roof dip from the photographed 1672 front modification.; Tall veranda posts over the sloping stone base, five-bay front and low railing; simple wooden doors and white infill.; No tower roof, trees, modern fencing or invented level-ground foundation.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_murouji_kondo-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:13:25.570226+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-0e5535b9-611a-4af4-b717-58cb20e311be.png",
+      "retained_file": "assets/generated/jp_murouji_kondo.png",
+      "sourceSha256": "b12784d6b0d77af310d1f2c75c681c7f6161f3744a0b353c505ac41a3bb7f18f"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_murouji_kondo-photo.jpg",
+      "source_page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+      "image_url": "https://www.city.uda.lg.jp/uploaded/image/1103.jpg",
+      "author": "宇陀市官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "室生寺金堂本体"
+    },
+    {
+      "title": "宇陀市官方网站 · 室生寺金堂",
+      "url": "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "室生寺金堂",
+    "year": 850,
+    "yearApprox": true,
+    "yearLabel": "9世纪",
+    "yearNote": "主体按9世纪平安前期定位，850为约略排序值；1672年增建前部，图版保留现存完整轮廓，不将全部构件视为同年。",
+    "dyn": "jp_heian",
+    "country": "JP",
+    "placeKey": "jp_uda"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "b12784d6b0d77af310d1f2c75c681c7f6161f3744a0b353c505ac41a3bb7f18f",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "14f0336693070e9335c85f1b105606678eecc5f8e1ea68ab174f19ba3717b937"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

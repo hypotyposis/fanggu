@@ -1,0 +1,128 @@
+{
+  "id": "jp_shosoin_shoso",
+  "name": "正仓院正仓",
+  "subject": "正仓院正仓本体",
+  "source_page": "https://www.kunaicho.go.jp/visit/shosoin/index.html",
+  "image_url": "https://www.kunaicho.go.jp/event/img/13ph-68_high.jpg",
+  "author": "宫内厅官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_shosoin_shoso-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_shosoin_shoso-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Shosoin Shoso raised timber storehouse, full front elevation, Nara period around 756.\nSTRUCTURAL CHECKPOINTS: One long hip-and-tile roof covering all THREE joined repositories, NINE front bays, three bays deep.; The north and south repositories have horizontal triangular log azekura walls; the middle repository uses vertical planks. Preserve the three entrances and high round timber stilts beneath.; No modern railings, visitors, surrounding trees or invented external stairs.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "宫内厅官方网站 · 正仓院正仓",
+      "url": "https://www.kunaicho.go.jp/visit/shosoin/index.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "One long hip-and-tile roof covering all THREE joined repositories, NINE front bays, three bays deep.",
+    "The north and south repositories have horizontal triangular log azekura walls; the middle repository uses vertical planks. Preserve the three entrances and high round timber stilts beneath.",
+    "No modern railings, visitors, surrounding trees or invented external stairs."
+  ],
+  "material_observations": "灰褐色木仓壁、木柱及高床，屋面灰瓦；两端井干壁与中间板壁质感分别表现。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "正仓院正仓",
+    "奈良时代，756年前后"
+  ],
+  "generated_file": "assets/generated/jp_shosoin_shoso.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.108276+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.kunaicho.go.jp/visit/shosoin/index.html"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:11:48.746665+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b31b0a5829279a3b52ef3d5e34791e4e6b9733ca71561fe691ba68db0cc31a7c",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-73708704-672f-45a5-a2da-c9cea21ada53.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:08:19.240024+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Shosoin Shoso raised timber storehouse, full front elevation, Nara period around 756.\nSTRUCTURAL CHECKPOINTS: One long hip-and-tile roof covering all THREE joined repositories, NINE front bays, three bays deep.; The north and south repositories have horizontal triangular log azekura walls; the middle repository uses vertical planks. Preserve the three entrances and high round timber stilts beneath.; No modern railings, visitors, surrounding trees or invented external stairs.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_shosoin_shoso-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:11:48.746909+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-73708704-672f-45a5-a2da-c9cea21ada53.png",
+      "retained_file": "assets/generated/jp_shosoin_shoso.png",
+      "sourceSha256": "b31b0a5829279a3b52ef3d5e34791e4e6b9733ca71561fe691ba68db0cc31a7c"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_shosoin_shoso-photo.jpg",
+      "source_page": "https://www.kunaicho.go.jp/visit/shosoin/index.html",
+      "image_url": "https://www.kunaicho.go.jp/event/img/13ph-68_high.jpg",
+      "author": "宫内厅官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "正仓院正仓本体"
+    },
+    {
+      "title": "宫内厅官方网站 · 正仓院正仓",
+      "url": "https://www.kunaicho.go.jp/visit/shosoin/index.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "正仓院正仓",
+    "year": 756,
+    "yearApprox": true,
+    "yearLabel": "8世纪中叶",
+    "yearNote": "按奈良时代、8世纪中叶定位；756年是圣武天皇遗爱品献纳的重要背景，本条以约值参与排序，不称该年确定竣工。",
+    "dyn": "jp_nara",
+    "country": "JP",
+    "placeKey": "jp_nara"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "b31b0a5829279a3b52ef3d5e34791e4e6b9733ca71561fe691ba68db0cc31a7c",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "92e0b5f1695cec6713544ffb79381b9380440a652c0e57ee485bd4b187a819ce"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

@@ -40,7 +40,9 @@
       "ph_luzon": "Luzon",
       "jp_tohoku": "Tōhoku",
       "jp_chubu": "Chūbu",
-      "jp_kyushu": "Kyushu"
+      "jp_kyushu": "Kyushu",
+      "jp_shikoku": "Shikoku",
+      "jp_okinawa": "Okinawa"
     },
     "types": {
       "hall": "Hall",
@@ -112,7 +114,8 @@
       "la_lan_xang": "Laos · Lan Xang",
       "vn_champa": "Vietnam · Champa",
       "vn_nguyen": "Vietnam · Nguyễn Dynasty",
-      "ph_spanish": "Philippines · Spanish Colonial Era"
+      "ph_spanish": "Philippines · Spanish Colonial Era",
+      "jp_ryukyu": "Japan · Ryūkyū"
     },
     "provinces": {
       "四川": "Sichuan",
@@ -179,7 +182,19 @@
       "爱知县": "Aichi",
       "岛根县": "Shimane",
       "鸟取县": "Tottori",
-      "大分县": "Oita"
+      "大分县": "Oita",
+      "福岛县": "Fukushima Prefecture",
+      "神奈川县": "Kanagawa Prefecture",
+      "山口县": "Yamaguchi Prefecture",
+      "高知县": "Kōchi Prefecture",
+      "香川县": "Kagawa Prefecture",
+      "冈山县": "Okayama Prefecture",
+      "和歌山县": "Wakayama Prefecture",
+      "长崎县": "Nagasaki Prefecture",
+      "熊本县": "Kumamoto Prefecture",
+      "冲绳县": "Okinawa Prefecture",
+      "福井县": "Fukui Prefecture",
+      "三重县": "Mie Prefecture"
     },
     "places": {
       "zitong": "Zitong",
@@ -473,7 +488,38 @@
       "jp_izumo": "Izumo",
       "jp_misasa": "Misasa · Mount Mitoku",
       "jp_bungotakada": "Bungotakada",
-      "jp_ono_hyogo": "Ono"
+      "jp_ono_hyogo": "Ono",
+      "jp_hiraizumi": "Hiraizumi",
+      "jp_iwaki": "Iwaki",
+      "jp_uda": "Uda",
+      "jp_kamakura_city": "Kamakura",
+      "jp_shimonoseki": "Shimonoseki",
+      "jp_hikone": "Hikone",
+      "jp_matsue": "Matsue",
+      "jp_otoyo": "Ōtoyo",
+      "jp_sakaide": "Sakaide",
+      "jp_yamaguchi": "Yamaguchi",
+      "jp_okayama": "Okayama",
+      "jp_koya": "Kōya",
+      "jp_iwade": "Iwade",
+      "jp_nagasaki": "Nagasaki",
+      "jp_hitoyoshi": "Hitoyoshi",
+      "jp_naha": "Naha",
+      "jp_oyamazaki": "Ōyamazaki",
+      "jp_kobe": "Kobe · Yamada",
+      "jp_ashikaga": "Ashikaga",
+      "jp_obama": "Obama",
+      "jp_yamanashi_city": "Yamanashi",
+      "jp_aoki": "Aoki",
+      "jp_takayama": "Takayama",
+      "jp_nishio": "Nishio",
+      "jp_tsu": "Tsu",
+      "jp_aisho": "Aishō",
+      "jp_kora": "Kōra",
+      "jp_konan": "Konan",
+      "jp_nagahama": "Nagahama",
+      "jp_yoshino": "Yoshino",
+      "jp_sakurai": "Sakurai"
     },
     "protectionSources": {
       "国务院公布第1批全国重点文物保护单位名单": "State Council list of Major Historical and Cultural Sites Protected at the National Level, batch 1",
@@ -12417,6 +12463,942 @@
       "captions": [
         "Jōdo-ji Jōdo Hall · Daibutsu-style Amida hall · east front",
         "Built in 1192"
+      ]
+    },
+    "jp_chusonji_konjikido": {
+      "name": "Chūsonji Konjikidō",
+      "short": "Chūsonji Konjikidō",
+      "sub": "Chūsonji Konjikidō",
+      "era": "1124",
+      "yearLabel": "1124",
+      "yearNote": "The surviving hall dates to Tenji 1 (1124). Its modern protective enclosure is excluded from the dating and depicted scope.",
+      "place": "Japan · Iwate · Hiraizumi",
+      "lede": "This compact golden hall was built in 1124 for the Ōshū Fujiwara. Gold leaf unifies its roof, columns and interior decoration. The plate depicts Konjikidō itself, omitting its modern protective enclosure.",
+      "facts": [
+        "A three-bay square, single-storey hall with a pyramidal roof and low surrounding veranda; the timber structure is covered with gold leaf.",
+        "The surviving hall dates to Tenji 1 (1124). Its modern protective enclosure is excluded from the dating and depicted scope."
+      ],
+      "captions": [
+        "Chūsonji Konjikidō",
+        "1124"
+      ]
+    },
+    "jp_shiramizu_amidado": {
+      "name": "Shiramizu Amidado",
+      "short": "Shiramizu Amidado",
+      "sub": "Shiramizu Amidado",
+      "era": "1160",
+      "yearLabel": "1160",
+      "yearNote": "The existing Amida Hall was built in Eiryaku 1 (1160); earlier foundation traditions do not determine this entry’s date.",
+      "place": "Japan · Fukushima Prefecture · Iwaki",
+      "lede": "The three-bay Shiramizu Amida Hall, built in 1160, shelters Pure Land worship beneath a gently curved pyramidal roof. The plate includes the hall and veranda, with the surrounding pond garden omitted.",
+      "facts": [
+        "Three bays square, with a single pyramidal wood-shingle roof, timber doors and board walls, and a surrounding veranda.",
+        "The existing Amida Hall was built in Eiryaku 1 (1160); earlier foundation traditions do not determine this entry’s date."
+      ],
+      "captions": [
+        "Shiramizu Amidado",
+        "1160"
+      ]
+    },
+    "jp_hokiji_pagoda": {
+      "name": "Hōkiji Three-storey Pagoda",
+      "short": "Hōkiji Three-storey Pagoda",
+      "sub": "Hōkiji Three-storey Pagoda",
+      "era": "706",
+      "yearLabel": "706",
+      "yearNote": "The temple’s official account dates completion of the pagoda to Keiun 3 (706), separately from the foundation of the temple.",
+      "place": "Japan · Nara Prefecture · Ikaruga",
+      "lede": "Hōkiji’s three-storey pagoda was completed in 706. Its gradually narrowing roofs preserve the substantial proportions of Asuka-period Buddhist towers. The plate depicts the tower, finial and base.",
+      "facts": [
+        "A square, three-storey timber pagoda with tiled roofs, deep layered eaves and a metal finial.",
+        "The temple’s official account dates completion of the pagoda to Keiun 3 (706), separately from the foundation of the temple."
+      ],
+      "captions": [
+        "Hōkiji Three-storey Pagoda",
+        "706"
+      ]
+    },
+    "jp_shosoin_shoso": {
+      "name": "Shōsōin Storehouse",
+      "short": "Shōsōin Storehouse",
+      "sub": "Shōsōin Storehouse",
+      "era": "Mid-eighth century",
+      "yearLabel": "Mid-eighth century",
+      "yearNote": "Dated approximately to the mid-eighth century. The donation of Emperor Shōmu’s possessions in 756 provides historical context, not a confirmed construction-completion date.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Raised on tall posts, Shōsōin’s storehouse combines north, middle and south vaults. Log walls at the ends and board walls in the middle reveal different construction systems in a Nara-period treasury.",
+      "facts": [
+        "Nine bays long and three deep under a single hipped roof; tall supports carry log-built north and south vaults and a board-built middle vault.",
+        "Dated approximately to the mid-eighth century. The donation of Emperor Shōmu’s possessions in 756 provides historical context, not a confirmed construction-completion date."
+      ],
+      "captions": [
+        "Shōsōin Storehouse",
+        "Mid-eighth century"
+      ]
+    },
+    "jp_shinyakushiji_hondo": {
+      "name": "Shinyakushiji Main Hall",
+      "short": "Shinyakushiji Main Hall",
+      "sub": "Shinyakushiji Main Hall",
+      "era": "Eighth century",
+      "yearLabel": "Eighth century",
+      "yearNote": "The surviving hall is placed in the eighth-century Nara period; 750 is an approximate sorting value. 747 refers to the temple’s foundation.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "The broad, seven-bay main hall of Shinyakushiji survives from the Nara period. Its restrained exterior shelters the Yakushi and Twelve Divine Generals. The temple foundation in 747 is not treated as the hall’s exact construction date.",
+      "facts": [
+        "Seven bays wide and five deep, single-storey, with a tiled hip-and-gable roof and a broad horizontal arrangement of doors and windows.",
+        "The surviving hall is placed in the eighth-century Nara period; 750 is an approximate sorting value. 747 refers to the temple’s foundation."
+      ],
+      "captions": [
+        "Shinyakushiji Main Hall",
+        "Eighth century"
+      ]
+    },
+    "jp_murouji_kondo": {
+      "name": "Murōji Golden Hall",
+      "short": "Murōji Golden Hall",
+      "sub": "Murōji Golden Hall",
+      "era": "Ninth century",
+      "yearLabel": "Ninth century",
+      "yearNote": "The main fabric is approximately ninth century; 850 is a sorting estimate. A front extension was added in 1672 and is retained in the present-day outline.",
+      "place": "Japan · Nara Prefecture · Uda",
+      "lede": "Murōji’s Golden Hall stands on a slope with tall posts beneath its front veranda. The early-Heian core is combined with a forward extension added in the Edo period.",
+      "facts": [
+        "The present five-by-five-bay hall has a wood-shingle hip-and-gable roof and a raised front supported above the slope.",
+        "The main fabric is approximately ninth century; 850 is a sorting estimate. A front extension was added in 1672 and is retained in the present-day outline."
+      ],
+      "captions": [
+        "Murōji Golden Hall",
+        "Ninth century"
+      ]
+    },
+    "jp_murouji_pagoda": {
+      "name": "Murōji Five-storey Pagoda",
+      "short": "Murōji Five-storey Pagoda",
+      "sub": "Murōji Five-storey Pagoda",
+      "era": "Early Heian period",
+      "yearLabel": "Early Heian period",
+      "yearNote": "Classified as early Heian, with no exact construction year; 800 is an approximate timeline value. The plate follows the present form after repairs to 1998 typhoon damage.",
+      "place": "Japan · Nara Prefecture · Uda",
+      "lede": "Murōji’s compact five-storey pagoda combines closely layered shingle roofs with an unusual finial canopy and bowl. The plate preserves the small tower’s scale and depicts it alone.",
+      "facts": [
+        "A three-bay square five-storey pagoda, approximately 16.22 metres high, with wood-shingle roofs, vermilion timber and white panels.",
+        "Classified as early Heian, with no exact construction year; 800 is an approximate timeline value. The plate follows the present form after repairs to 1998 typhoon damage."
+      ],
+      "captions": [
+        "Murōji Five-storey Pagoda",
+        "Early Heian period"
+      ]
+    },
+    "jp_engakuji_shariden": {
+      "name": "Engakuji Shariden",
+      "short": "Engakuji Shariden",
+      "sub": "Engakuji Shariden",
+      "era": "First half of the fifteenth century",
+      "yearLabel": "First half of the fifteenth century",
+      "yearNote": "Culture Agency material places it in the first half of the fifteenth century; 1425 is approximate. The former Taiheiji hall was moved here after the 1563 fire.",
+      "place": "Japan · Kanagawa Prefecture · Kamakura",
+      "lede": "A low surrounding pent roof and dense brackets give Engakuji’s Shariden its Zen architectural profile. The surviving building was moved from Taiheiji and is distinct from Engakuji’s foundation in 1282.",
+      "facts": [
+        "A three-bay square core with a surrounding pent roof and cypress-bark hip-and-gable roof; its two eave bands do not indicate two occupied storeys.",
+        "Culture Agency material places it in the first half of the fifteenth century; 1425 is approximate. The former Taiheiji hall was moved here after the 1563 fire."
+      ],
+      "captions": [
+        "Engakuji Shariden",
+        "First half of the fifteenth century"
+      ]
+    },
+    "jp_kozanji_butsuden": {
+      "name": "Kōzanji Buddha Hall",
+      "short": "Kōzanji Buddha Hall",
+      "sub": "Kōzanji Buddha Hall",
+      "era": "1320",
+      "yearLabel": "1320",
+      "yearNote": "A column inscription gives Gen’ō 2 (1320). This dates the hall, while the temple’s 1327 foundation is separate historical context.",
+      "place": "Japan · Yamaguchi Prefecture · Shimonoseki",
+      "lede": "Round columns, cusped windows and a surrounding pent roof preserve late-Kamakura Zen architecture at Kōzanji. An inscription dates the hall to 1320, earlier than the temple’s 1327 foundation account.",
+      "facts": [
+        "Three bays square with a pent roof, a cypress-bark hip-and-gable main roof, dense brackets and cusped windows.",
+        "A column inscription gives Gen’ō 2 (1320). This dates the hall, while the temple’s 1327 foundation is separate historical context."
+      ],
+      "captions": [
+        "Kōzanji Buddha Hall",
+        "1320"
+      ]
+    },
+    "jp_hikone_tenshu": {
+      "name": "Hikone Castle Keep",
+      "short": "Hikone Castle Keep",
+      "sub": "Hikone Castle Keep",
+      "era": "1606–1607",
+      "yearLabel": "1606–1607",
+      "yearNote": "The cultural-property database gives 1606, while Hikone City records completion in 1607. The entry uses the 1606–1607 range and Momoyama artistic classification.",
+      "place": "Japan · Shiga Prefecture · Hikone",
+      "lede": "Hikone Castle’s compact three-storey keep combines several gable forms in a late-Momoyama castle silhouette. The plate includes the keep and its stone base, omitting gates and surrounding turrets.",
+      "facts": [
+        "Three roof tiers and three floors, with white plaster, dark timber, grey roof tiles, cusped upper windows and a railing.",
+        "The cultural-property database gives 1606, while Hikone City records completion in 1607. The entry uses the 1606–1607 range and Momoyama artistic classification."
+      ],
+      "captions": [
+        "Hikone Castle Keep",
+        "1606–1607"
+      ]
+    },
+    "jp_matsue_tenshu": {
+      "name": "Matsue Castle Keep",
+      "short": "Matsue Castle Keep",
+      "sub": "Matsue Castle Keep",
+      "era": "1611",
+      "yearLabel": "1611",
+      "yearNote": "Prayer tablets and related evidence confirm Keichō 16 (1611) for the keep, distinguished from the castle-building process in 1610.",
+      "place": "Japan · Shimane · Matsue",
+      "lede": "Dark weatherboards wrap Matsue Castle’s lower floors beneath the white upper lookout. Prayer tablets confirm its construction in 1611. Four visible roof tiers contain five floors and a basement.",
+      "facts": [
+        "Four external roof tiers, five internal floors and one basement; the plate retains the small entrance projection directly attached to the keep.",
+        "Prayer tablets and related evidence confirm Keichō 16 (1611) for the keep, distinguished from the castle-building process in 1610."
+      ],
+      "captions": [
+        "Matsue Castle Keep",
+        "1611"
+      ]
+    },
+    "jp_burakuji_yakushido": {
+      "name": "Burakuji Yakushidō",
+      "short": "Burakuji Yakushidō",
+      "sub": "Burakuji Yakushidō",
+      "era": "Twelfth century",
+      "yearLabel": "Twelfth century",
+      "yearNote": "Dated to the late-Heian twelfth century. 1151 comes from a statue inscription and is used approximately, not asserted as the entire hall’s exact completion year.",
+      "place": "Japan · Kōchi Prefecture · Ōtoyo",
+      "lede": "Burakuji’s five-bay Yakushi Hall spreads beneath a broad shingle roof with restrained doors, windows and veranda. A statue inscription dated 1151 provides context for this late-Heian timber building.",
+      "facts": [
+        "Five bays square, single-storey, with a shingled hip-and-gable roof, timber panels and surrounding veranda; the small foreground offering shelter is omitted.",
+        "Dated to the late-Heian twelfth century. 1151 comes from a statue inscription and is used approximately, not asserted as the entire hall’s exact completion year."
+      ],
+      "captions": [
+        "Burakuji Yakushidō",
+        "Twelfth century"
+      ]
+    },
+    "jp_kamitani_honden": {
+      "name": "Kandani Shrine Main Sanctuary",
+      "short": "Kandani Shrine Main Sanctuary",
+      "sub": "Kandani Shrine Main Sanctuary",
+      "era": "1219",
+      "yearLabel": "1219",
+      "yearNote": "An inscription dates the sanctuary to Jōkyū 1 (1219). The reference photograph predates the 2022 lightning fire; repair history is separate from the original date.",
+      "place": "Japan · Kagawa Prefecture · Sakaide",
+      "lede": "Kandani Shrine’s three-bay nagare-style sanctuary extends a long front eave over its steps. Plain timber and a restrained porch preserve early-Kamakura shrine architecture, dated by an inscription to 1219.",
+      "facts": [
+        "A three-bay nagare-style sanctuary with a cypress-bark roof, raised floor and front stair, distinguishing the main columns from the porch supports.",
+        "An inscription dates the sanctuary to Jōkyū 1 (1219). The reference photograph predates the 2022 lightning fire; repair history is separate from the original date."
+      ],
+      "captions": [
+        "Kandani Shrine Main Sanctuary",
+        "1219"
+      ]
+    },
+    "jp_rurikoji_pagoda": {
+      "name": "Rurikōji Five-storey Pagoda",
+      "short": "Rurikōji Five-storey Pagoda",
+      "sub": "Rurikōji Five-storey Pagoda",
+      "era": "1442",
+      "yearLabel": "1442",
+      "yearNote": "Completed in Kakitsu 2 (1442). Conservation and roof renewal are recorded separately and do not replace the original construction date.",
+      "place": "Japan · Yamaguchi Prefecture · Yamaguchi",
+      "lede": "Rurikōji’s cypress-bark roofs narrow gently upward, with a railing only at the second tier. Built in 1442, the pagoda is depicted from an official photograph after recent conservation work.",
+      "facts": [
+        "Three bays square, five storeys and about 31.2 metres high, with cypress-bark roofs, a second-tier railing and a tall finial.",
+        "Completed in Kakitsu 2 (1442). Conservation and roof renewal are recorded separately and do not replace the original construction date."
+      ],
+      "captions": [
+        "Rurikōji Five-storey Pagoda",
+        "1442"
+      ]
+    },
+    "jp_kibitsu_honden": {
+      "name": "Kibitsu Shrine Main and Worship Halls",
+      "short": "Kibitsu Shrine Main and Worship Halls",
+      "sub": "Kibitsu Shrine Main and Worship Halls",
+      "era": "1425",
+      "yearLabel": "1425",
+      "yearNote": "The existing main and worship halls were rebuilt in Ōei 32 (1425); earlier worship traditions are not used to date their surviving timber fabric.",
+      "place": "Japan · Okayama Prefecture · Okayama",
+      "lede": "Two parallel roof forms rise over Kibitsu Shrine’s main hall, joined to the projecting worship hall. The plate retains both buildings as the designated pair and their distinctive linked hip-and-gable composition.",
+      "facts": [
+        "The main hall has a paired hip-and-gable cypress-bark roof and adjoining worship hall, with repeated gables, chigi and layered rooflines.",
+        "The existing main and worship halls were rebuilt in Ōei 32 (1425); earlier worship traditions are not used to date their surviving timber fabric."
+      ],
+      "captions": [
+        "Kibitsu Shrine Main and Worship Halls",
+        "1425"
+      ]
+    },
+    "jp_kamosu_honden": {
+      "name": "Kamosu Shrine Main Sanctuary",
+      "short": "Kamosu Shrine Main Sanctuary",
+      "sub": "Kamosu Shrine Main Sanctuary",
+      "era": "1583",
+      "yearLabel": "1583",
+      "yearNote": "Cultural-property records date the surviving sanctuary to Tenshō 11 (1583). A 1346 inscription concerns earlier fabric and does not date the whole present building.",
+      "place": "Japan · Shimane · Matsue",
+      "lede": "Massive timber posts raise Kamosu Shrine’s two-bay sanctuary beneath a steep roof with chigi and katsuogi. The plate depicts the elevated taisha-style main sanctuary alone, omitting the lower worship hall.",
+      "facts": [
+        "A two-by-two-bay raised taisha-style sanctuary with wood shingles, chigi, katsuogi and an off-centre gable-side entrance and stair.",
+        "Cultural-property records date the surviving sanctuary to Tenshō 11 (1583). A 1346 inscription concerns earlier fabric and does not date the whole present building."
+      ],
+      "captions": [
+        "Kamosu Shrine Main Sanctuary",
+        "1583"
+      ]
+    },
+    "jp_kongosanmaiin_tahoto": {
+      "name": "Kongōsanmaiin Tahōtō",
+      "short": "Kongōsanmaiin Tahōtō",
+      "sub": "Kongōsanmaiin Tahōtō",
+      "era": "1223",
+      "yearLabel": "1223",
+      "yearNote": "Built in Jōō 2 (1223). The plate depicts this tahōtō itself, without substituting the larger five-bay proportions of Negoroji’s Daitō.",
+      "place": "Japan · Wakayama Prefecture · Kōya",
+      "lede": "A white rounded body sits between two dark bark roofs at Kongōsanmaiin. Built in 1223, this compact tahōtō joins a square lower storey to a circular upper body, retaining its three-bay scale.",
+      "facts": [
+        "A three-bay square lower storey, circular upper body, two cypress-bark roofs, central vermilion doors, lattice windows and finial.",
+        "Built in Jōō 2 (1223). The plate depicts this tahōtō itself, without substituting the larger five-bay proportions of Negoroji’s Daitō."
+      ],
+      "captions": [
+        "Kongōsanmaiin Tahōtō",
+        "1223"
+      ]
+    },
+    "jp_negoroji_daito": {
+      "name": "Negoroji Daitō",
+      "short": "Negoroji Daitō",
+      "sub": "Negoroji Daitō",
+      "era": "1547",
+      "yearLabel": "1547",
+      "yearNote": "Cultural-property records give completion in Tenbun 16 (1547); earlier construction beginnings and temple foundation are recorded separately.",
+      "place": "Japan · Wakayama Prefecture · Iwade",
+      "lede": "Negoroji’s Daitō enlarges the tahōtō form into a substantial interior: a five-bay square lower body supports a white dome and circular upper body. Completed in 1547, it is depicted without the neighbouring hall.",
+      "facts": [
+        "A five-bay lower storey and circular upper body, two large tiled roofs, a white rounded body, tall finial and surrounding veranda.",
+        "Cultural-property records give completion in Tenbun 16 (1547); earlier construction beginnings and temple foundation are recorded separately."
+      ],
+      "captions": [
+        "Negoroji Daitō",
+        "1547"
+      ]
+    },
+    "jp_sofukuji_daiou": {
+      "name": "Sōfukuji Daiōhōden",
+      "short": "Sōfukuji Daiōhōden",
+      "sub": "Sōfukuji Daiōhōden",
+      "era": "1646; upper addition c. 1681",
+      "yearLabel": "1646; upper addition c. 1681",
+      "yearNote": "The lower structure was completed in Shōhō 3 (1646), with an upper addition around 1681. The present two-roof form is not attributed wholly to 1646.",
+      "place": "Japan · Nagasaki Prefecture · Nagasaki",
+      "lede": "Sōfukuji’s Daiōhōden combines vermilion columns and white walls with timber prepared in Fujian and assembled in Nagasaki. The 1646 lower structure received an upper roof around 1681.",
+      "facts": [
+        "Vermilion posts, lattice doors and white panels beneath two tiled roof bands, with southern Chinese construction characteristics.",
+        "The lower structure was completed in Shōhō 3 (1646), with an upper addition around 1681. The present two-roof form is not attributed wholly to 1646."
+      ],
+      "captions": [
+        "Sōfukuji Daiōhōden",
+        "1646; upper addition c. 1681"
+      ]
+    },
+    "jp_sofukuji_daiippomon": {
+      "name": "Sōfukuji Daiippōmon",
+      "short": "Sōfukuji Daiippōmon",
+      "sub": "Sōfukuji Daiippōmon",
+      "era": "Rebuilt in 1695",
+      "yearLabel": "Rebuilt in 1695",
+      "yearNote": "Nagasaki City’s current account dates rebuilding to Genroku 8 (1695), using parts prepared in Ningbo. Earlier foundation history, including 1629, does not date the surviving gate.",
+      "place": "Japan · Nagasaki Prefecture · Nagasaki",
+      "lede": "Trefoil brackets and fan-shaped rafters distinguish Sōfukuji’s Daiippōmon, a gate reflecting Ningbo craftsmanship. The plate depicts this inner gate, separately from the temple’s outer Sanmon.",
+      "facts": [
+        "A single gateway under a broad tiled eave, with vermilion posts, polychrome brackets, trefoil bracket arms and fan rafters.",
+        "Nagasaki City’s current account dates rebuilding to Genroku 8 (1695), using parts prepared in Ningbo. Earlier foundation history, including 1629, does not date the surviving gate."
+      ],
+      "captions": [
+        "Sōfukuji Daiippōmon",
+        "Rebuilt in 1695"
+      ]
+    },
+    "jp_aoi_aso": {
+      "name": "Aoi Aso Shrine Gate",
+      "short": "Aoi Aso Shrine Gate",
+      "sub": "Aoi Aso Shrine Gate",
+      "era": "Gate of 1613",
+      "yearLabel": "Gate of 1613",
+      "yearNote": "The depicted gate dates to Keichō 18 (1613), within the shrine’s 1610–1613 building campaign. It is classified in the Momoyama artistic period.",
+      "place": "Japan · Kumamoto Prefecture · Hitoyoshi",
+      "lede": "A thick thatched hipped roof crowns Aoi Aso Shrine’s two-level gate. Carved corner faces and surviving colour details distinguish the 1613 gate; other shrine buildings are outside this plate’s scope.",
+      "facts": [
+        "A three-bay, one-opening, two-level timber gate with a single thatched hipped roof and carved corner faces.",
+        "The depicted gate dates to Keichō 18 (1613), within the shrine’s 1610–1613 building campaign. It is classified in the Momoyama artistic period."
+      ],
+      "captions": [
+        "Aoi Aso Shrine Gate",
+        "Gate of 1613"
+      ]
+    },
+    "jp_tamaudun": {
+      "name": "Tamaudun Royal Mausoleum",
+      "short": "Tamaudun Royal Mausoleum",
+      "sub": "Tamaudun Royal Mausoleum",
+      "era": "1501; repaired after the war",
+      "yearLabel": "1501; repaired after the war",
+      "yearNote": "Founded by King Shō Shin in 1501, damaged in 1945 and repaired after the war. The original foundation date and subsequent repairs are both retained under the Ryūkyū period.",
+      "place": "Japan · Okinawa Prefecture · Naha",
+      "lede": "Tamaudun’s three adjacent stone chambers imitate timber architecture in their roofs and framing. Built by King Shō Shin in 1501, the royal Ryūkyū mausoleum survives with repairs after wartime destruction.",
+      "facts": [
+        "Three connected stone chambers with stone imitations of timber roofs, front platforms, doorways and shisa figures.",
+        "Founded by King Shō Shin in 1501, damaged in 1945 and repaired after the war. The original foundation date and subsequent repairs are both retained under the Ryūkyū period."
+      ],
+      "captions": [
+        "Tamaudun Royal Mausoleum",
+        "1501; repaired after the war"
+      ]
+    },
+    "jp_myoikian_taian": {
+      "name": "Myōkian Tai-an",
+      "short": "Myōkian Tai-an",
+      "sub": "Myōkian Tai-an",
+      "era": "Traditionally c. 1582",
+      "yearLabel": "Traditionally c. 1582",
+      "yearNote": "The cultural-property database gives the Tenshō era (1573–1592). Attribution to Rikyū around 1582 remains traditional, not a confirmed completion date. Modern viewing structures are omitted.",
+      "place": "Japan · Kyoto Prefecture · Ōyamazaki",
+      "lede": "Tai-an’s two-mat tea room uses earthen walls, bamboo, timber and a low entrance to create a compact space for tea. Its traditional association with Sen no Rikyū and the 1582 Yamazaki campaign is recorded as approximate.",
+      "facts": [
+        "A two-mat tea house with earthen walls, lattice windows, low entrance, a bamboo-and-timber eave and wood-shingle roof.",
+        "The cultural-property database gives the Tenshō era (1573–1592). Attribution to Rikyū around 1582 remains traditional, not a confirmed completion date. Modern viewing structures are omitted."
+      ],
+      "captions": [
+        "Myōkian Tai-an",
+        "Traditionally c. 1582"
+      ]
+    },
+    "jp_urakuen_joan": {
+      "name": "Urakuen Jo-an",
+      "short": "Urakuen Jo-an",
+      "sub": "Urakuen Jo-an",
+      "era": "c. 1618; relocated in 1972",
+      "yearLabel": "c. 1618; relocated in 1972",
+      "yearNote": "The Culture Agency dates it approximately to Genna 4 (c. 1618) and relocated to Inuyama in 1972. The plate depicts Jo-an alone, excluding the neighbouring former Shōden-in Shoin; relocation does not replace the original date.",
+      "place": "Japan · Aichi · Inuyama",
+      "lede": "Natural timber, ochre earthen walls, bamboo lattice windows and a recessed left-hand porch define Jo-an. Built at Kenninji in Kyoto around 1618, the tea house now stands in Inuyama’s Urakuen.",
+      "facts": [
+        "A tea room of two and a half mats plus a daime mat, with a front-facing shingled hip-and-gable roof, recessed earthen porch and bamboo lattice windows.",
+        "The Culture Agency dates it approximately to Genna 4 (c. 1618) and relocated to Inuyama in 1972. The plate depicts Jo-an alone, excluding the neighbouring former Shōden-in Shoin; relocation does not replace the original date."
+      ],
+      "captions": [
+        "Urakuen Jo-an",
+        "c. 1618"
+      ]
+    },
+    "jp_hakogi_house": {
+      "name": "Hakogi House Main Building",
+      "short": "Hakogi House Main Building",
+      "sub": "Hakogi House Main Building",
+      "era": "Fourteenth century",
+      "yearLabel": "Fourteenth century",
+      "yearNote": "The main building is dated approximately to the fourteenth century, with 1350 as a sorting estimate. It was relocated about 70 metres in the 1970s; the later detached room is omitted.",
+      "place": "Japan · Hyōgo Prefecture · Kobe · Yamada",
+      "lede": "The Hakogi main house encloses its rooms beneath thick thatch and broad earthen walls with small openings. Material studies place it in the fourteenth century; reservoir construction prompted relocation.",
+      "facts": [
+        "The main house is about 11.4 by 8.4 metres, with a thatched hip-and-gable roof, earthen walls, aged timber and small windows. Its map point is a Kobe-area approximation.",
+        "The main building is dated approximately to the fourteenth century, with 1350 as a sorting estimate. It was relocated about 70 metres in the 1970s; the later detached room is omitted."
+      ],
+      "captions": [
+        "Hakogi House Main Building",
+        "Fourteenth century"
+      ]
+    },
+    "jp_furui_house": {
+      "name": "Former Furui House",
+      "short": "Former Furui House",
+      "sub": "Former Furui House",
+      "era": "Fifteenth century",
+      "yearLabel": "Fifteenth century",
+      "yearNote": "Himeji City places the surviving main house in the fifteenth-century Muromachi period. 1450 is an approximate timeline value, not an exact construction date.",
+      "place": "Japan · Hyōgo Prefecture · Himeji",
+      "lede": "A broad thatched roof shelters the earthen walls and timber doors of the former Furui House. The plate depicts the fifteenth-century main house alone, omitting neighbouring modern facilities.",
+      "facts": [
+        "A single-storey house with a thatched hip-and-gable roof, thick earthen walls, timber posts and lattice windows.",
+        "Himeji City places the surviving main house in the fifteenth-century Muromachi period. 1450 is an approximate timeline value, not an exact construction date."
+      ],
+      "captions": [
+        "Former Furui House",
+        "Fifteenth century"
+      ]
+    },
+    "jp_bannaji_hondo": {
+      "name": "Bannaji Main Hall",
+      "short": "Bannaji Main Hall",
+      "sub": "Bannaji Main Hall",
+      "era": "1299; later alterations",
+      "yearLabel": "1299; later alterations",
+      "yearNote": "The surviving hall dates to 1299. Columns and roofing were altered in 1407–1432; the temple’s foundation is a separate event.",
+      "place": "Japan · Tochigi Prefecture · Ashikaga",
+      "lede": "On the former Ashikaga residence site, the hall combines late Kamakura Zen-style framing with a broad tiled roof.",
+      "facts": [
+        "Five bays wide and deep, with a single-story hip-and-gable tiled roof. The plate depicts the hall alone.",
+        "The surviving hall dates to 1299. Columns and roofing were altered in 1407–1432; the temple’s foundation is a separate event."
+      ],
+      "captions": [
+        "Bannaji Main Hall",
+        "1299; later alterations"
+      ]
+    },
+    "jp_myotsuji_hondo": {
+      "name": "Myōtsūji Main Hall",
+      "short": "Myōtsūji Main Hall",
+      "sub": "Myōtsūji Main Hall",
+      "era": "1258; dedication in 1265",
+      "yearLabel": "1258; dedication in 1265",
+      "yearNote": "A ridge inscription records 1258; the dedication followed in 1265. These are construction and ceremony dates respectively.",
+      "place": "Japan · Fukui Prefecture · Obama",
+      "lede": "Myōtsūji’s main hall preserves substantial Kamakura proportions in the hills of Obama; its pagoda has a separate entry.",
+      "facts": [
+        "Five bays across and six deep, with a cypress-bark hip-and-gable roof and a front porch.",
+        "A ridge inscription records 1258; the dedication followed in 1265. These are construction and ceremony dates respectively."
+      ],
+      "captions": [
+        "Myōtsūji Main Hall",
+        "1258; dedication in 1265"
+      ]
+    },
+    "jp_myotsuji_pagoda": {
+      "name": "Myōtsūji Three-Story Pagoda",
+      "short": "Myōtsūji Three-Story Pagoda",
+      "sub": "Myōtsūji Three-Story Pagoda",
+      "era": "1270",
+      "yearLabel": "1270",
+      "yearNote": "The surviving pagoda was built in 1270. The hall’s 1258 ridge inscription does not date the tower.",
+      "place": "Japan · Fukui Prefecture · Obama",
+      "lede": "Standing beside the hall, three tapering cypress-bark roofs define Myōtsūji’s pagoda.",
+      "facts": [
+        "Three stories, each three bays wide, with cypress-bark roofing; approximately 22.12 m including the finial.",
+        "The surviving pagoda was built in 1270. The hall’s 1258 ridge inscription does not date the tower."
+      ],
+      "captions": [
+        "Myōtsūji Three-Story Pagoda",
+        "1270"
+      ]
+    },
+    "jp_seihakuji_butsuden": {
+      "name": "Seihakuji Buddha Hall",
+      "short": "Seihakuji Buddha Hall",
+      "sub": "Seihakuji Buddha Hall",
+      "era": "1415",
+      "yearLabel": "1415",
+      "yearNote": "An ink inscription dates the surviving hall to 1415; the temple’s traditional 1333 foundation is separate.",
+      "place": "Japan · Yamanashi · Yamanashi",
+      "lede": "Compact Seihakuji Buddha Hall expresses Zen-style detail through its lower pent roof, bracket clusters and steep bark roof.",
+      "facts": [
+        "A three-bay-square core is single-story with a surrounding mokoshi pent roof, rather than two floors.",
+        "An ink inscription dates the surviving hall to 1415; the temple’s traditional 1333 foundation is separate."
+      ],
+      "captions": [
+        "Seihakuji Buddha Hall",
+        "1415"
+      ]
+    },
+    "jp_daihoji_pagoda": {
+      "name": "Daihōji Three-Story Pagoda",
+      "short": "Daihōji Three-Story Pagoda",
+      "sub": "Daihōji Three-Story Pagoda",
+      "era": "1333",
+      "yearLabel": "1333",
+      "yearNote": "Built in 1333, the surviving pagoda belongs to the end of the Kamakura period; this dates the tower, not the temple’s foundation.",
+      "place": "Japan · Nagano · Aoki",
+      "lede": "Daihōji’s pagoda in Aoki is known as the “look-back pagoda,” with an expansive first story and tapering upper stories.",
+      "facts": [
+        "Three cypress-bark-roofed stories with a broad lower tier; the plate includes the brackets and finial, without adjacent halls.",
+        "Built in 1333, the surviving pagoda belongs to the end of the Kamakura period; this dates the tower, not the temple’s foundation."
+      ],
+      "captions": [
+        "Daihōji Three-Story Pagoda",
+        "1333"
+      ]
+    },
+    "jp_ankokuji_kyozo": {
+      "name": "Ankokuji Sutra Repository",
+      "short": "Ankokuji Sutra Repository",
+      "sub": "Ankokuji Sutra Repository",
+      "era": "1408",
+      "yearLabel": "1408",
+      "yearNote": "The repository dates to 1408. The plate shows its exterior; the revolving sutra cabinet is an interior feature.",
+      "place": "Japan · Gifu · Takayama",
+      "lede": "Ankokuji’s compact repository in Hida combines a small core with a surrounding mokoshi in Zen style.",
+      "facts": [
+        "A one-bay-square core, single-story with a mokoshi, appears three bays across; hip-and-gable shingle roofs do not imply two floors.",
+        "The repository dates to 1408. The plate shows its exterior; the revolving sutra cabinet is an interior feature."
+      ],
+      "captions": [
+        "Ankokuji Sutra Repository",
+        "1408"
+      ]
+    },
+    "jp_konrenji_midado": {
+      "name": "Konrenji Amida Hall",
+      "short": "Konrenji Amida Hall",
+      "sub": "Konrenji Amida Hall",
+      "era": "Kamakura period; placed c. 1300",
+      "yearLabel": "Kamakura period; placed c. 1300",
+      "yearNote": "Local and cultural-property sources place the surviving hall in the Kamakura period. c. 1300 is a timeline placement; the traditional 1186 date is not treated as proven.",
+      "place": "Japan · Aichi · Nishio",
+      "lede": "Konrenji’s small timber hall preserves a modest medieval devotional space beneath a low shingle roof and deep eaves.",
+      "facts": [
+        "The three-bay-square hall has a hipped shingle roof; the lower front eaves follow its present appearance.",
+        "Local and cultural-property sources place the surviving hall in the Kamakura period. c. 1300 is a timeline placement; the traditional 1186 date is not treated as proven."
+      ],
+      "captions": [
+        "Konrenji Amida Hall",
+        "Kamakura period; placed c. 1300"
+      ]
+    },
+    "jp_senshuji_mieido": {
+      "name": "Senjuji Mieidō",
+      "short": "Senjuji Mieidō",
+      "sub": "Senjuji Mieidō",
+      "era": "1666; dedication in 1679",
+      "yearLabel": "1666; dedication in 1679",
+      "yearNote": "The ridge record dates construction to 1666; dedication took place in 1679. The timeline uses the construction record.",
+      "place": "Japan · Mie Prefecture · Tsu",
+      "lede": "Senjuji’s Mieidō is a principal worship hall at Takada Honzan, with an expansive tiled roof and vast timber interior.",
+      "facts": [
+        "Nine bays across and deep, single-story with a tiled hip-and-gable roof and a three-bay front porch.",
+        "The ridge record dates construction to 1666; dedication took place in 1679. The timeline uses the construction record."
+      ],
+      "captions": [
+        "Senjuji Mieidō",
+        "1666; dedication in 1679"
+      ]
+    },
+    "jp_senshuji_nyoraido": {
+      "name": "Senjuji Nyoraidō",
+      "short": "Senjuji Nyoraidō",
+      "sub": "Senjuji Nyoraidō",
+      "era": "1748",
+      "yearLabel": "1748",
+      "yearNote": "The present Nyoraidō was completed in 1748. It is catalogued separately from the Mieidō, with its own date and scope.",
+      "place": "Japan · Mie Prefecture · Tsu",
+      "lede": "A tall main roof, encircling mokoshi and ornate porch give the Nyoraidō its elaborate Edo-period silhouette.",
+      "facts": [
+        "A five-by-four-bay core is single-story with a tiled mokoshi and a three-bay porch featuring a curved gable.",
+        "The present Nyoraidō was completed in 1748. It is catalogued separately from the Mieidō, with its own date and scope."
+      ],
+      "captions": [
+        "Senjuji Nyoraidō",
+        "1748"
+      ]
+    },
+    "jp_onjoji_kondo": {
+      "name": "Onjōji Kondō",
+      "short": "Onjōji Kondō",
+      "sub": "Onjōji Kondō",
+      "era": "Rebuilt in 1599",
+      "yearLabel": "Rebuilt in 1599",
+      "yearNote": "The surviving Kondō was rebuilt in 1599 under Kita-no-Mandokoro’s patronage, distinct from the temple’s much earlier origins.",
+      "place": "Japan · Shiga Prefecture · Ōtsu",
+      "lede": "Miidera’s Kondō sets a seven-bay-square hall beneath a broad cypress-bark hip-and-gable roof.",
+      "facts": [
+        "Single-story with cypress-bark roofing and a one-bay front porch; the plate depicts only the Kondō.",
+        "The surviving Kondō was rebuilt in 1599 under Kita-no-Mandokoro’s patronage, distinct from the temple’s much earlier origins."
+      ],
+      "captions": [
+        "Onjōji Kondō",
+        "Rebuilt in 1599"
+      ]
+    },
+    "jp_kongorinji_hondo": {
+      "name": "Kongōrinji Main Hall",
+      "short": "Kongōrinji Main Hall",
+      "sub": "Kongōrinji Main Hall",
+      "era": "Fourteenth century; placed c. 1350",
+      "yearLabel": "Fourteenth century; placed c. 1350",
+      "yearNote": "The database dates the surviving hall to 1333–1392. 1288 is an inscription on altar fittings, not proof of the hall’s construction year; c. 1350 is a timeline placement.",
+      "place": "Japan · Shiga Prefecture · Aishō",
+      "lede": "Kongōrinji, one of the three Kotō temples, presents medieval wayō architecture through broad eaves and cypress-bark roofing.",
+      "facts": [
+        "A seven-bay-square, single-story hall with a cypress-bark hip-and-gable roof, front colonnade and porch.",
+        "The database dates the surviving hall to 1333–1392. 1288 is an inscription on altar fittings, not proof of the hall’s construction year; c. 1350 is a timeline placement."
+      ],
+      "captions": [
+        "Kongōrinji Main Hall",
+        "Fourteenth century; placed c. 1350"
+      ]
+    },
+    "jp_saimyoji_hondo": {
+      "name": "Saimyōji Main Hall",
+      "short": "Saimyōji Main Hall",
+      "sub": "Saimyōji Main Hall",
+      "era": "Early Kamakura; later enlarged",
+      "yearLabel": "Early Kamakura; later enlarged",
+      "yearNote": "The core dates to early Kamakura, within the database’s 1185–1274 range. Later enlargements and a porch shaped the present hall; c. 1225 locates the early fabric.",
+      "place": "Japan · Shiga Prefecture · Kōra",
+      "lede": "Saimyōji’s broad bark roof covers spaces formed by successive enlargements, recording the hall’s medieval development.",
+      "facts": [
+        "The original five-bay core was enlarged to seven bays square; the three-bay porch was added in the mid-Muromachi period.",
+        "The core dates to early Kamakura, within the database’s 1185–1274 range. Later enlargements and a porch shaped the present hall; c. 1225 locates the early fabric."
+      ],
+      "captions": [
+        "Saimyōji Main Hall",
+        "Early Kamakura; later enlarged"
+      ]
+    },
+    "jp_saimyoji_pagoda": {
+      "name": "Saimyōji Three-Story Pagoda",
+      "short": "Saimyōji Three-Story Pagoda",
+      "sub": "Saimyōji Three-Story Pagoda",
+      "era": "Late Kamakura; placed c. 1300",
+      "yearLabel": "Late Kamakura; placed c. 1300",
+      "yearNote": "Official sources assign the pagoda to late Kamakura, within 1275–1332. c. 1300 is not a documented single construction year.",
+      "place": "Japan · Shiga Prefecture · Kōra",
+      "lede": "Saimyōji’s pagoda complements the medieval halls of Kotō with tapering bark roofs and intricate timber brackets.",
+      "facts": [
+        "Three square, three-bay stories with bark roofing; interior paintings are not transferred to the exterior.",
+        "Official sources assign the pagoda to late Kamakura, within 1275–1332. c. 1300 is not a documented single construction year."
+      ],
+      "captions": [
+        "Saimyōji Three-Story Pagoda",
+        "Late Kamakura; placed c. 1300"
+      ]
+    },
+    "jp_jorakuji_hondo": {
+      "name": "Jōrakuji Main Hall",
+      "short": "Jōrakuji Main Hall",
+      "sub": "Jōrakuji Main Hall",
+      "era": "Rebuilt after the 1360 fire",
+      "yearLabel": "Rebuilt after the 1360 fire",
+      "yearNote": "Rebuilt after the 1360 fire, the hall has no confirmed completion year and received later Muromachi alterations; c. 1360 is used for placement.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "Jōrakuji’s main hall, one of the Konan Sanzan landmarks, has a broad bark roof and deep front eaves.",
+      "facts": [
+        "Seven bays wide and six deep, with a bark hip-and-gable roof and a three-bay porch; the present hall alone is depicted.",
+        "Rebuilt after the 1360 fire, the hall has no confirmed completion year and received later Muromachi alterations; c. 1360 is used for placement."
+      ],
+      "captions": [
+        "Jōrakuji Main Hall",
+        "Rebuilt after the 1360 fire"
+      ]
+    },
+    "jp_jorakuji_pagoda": {
+      "name": "Jōrakuji Three-Story Pagoda",
+      "short": "Jōrakuji Three-Story Pagoda",
+      "sub": "Jōrakuji Three-Story Pagoda",
+      "era": "1400",
+      "yearLabel": "1400",
+      "yearNote": "A fundraising record dates to 1398, while a tile inscription supports the pagoda’s 1400 construction date.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "On Jōrakuji’s hillside, three tiled roofs and a long finial create a slender outline.",
+      "facts": [
+        "Three stories, each three bays wide, tiled roofs and approximately 22.8 m overall; the finial accounts for about one-third of the height.",
+        "A fundraising record dates to 1398, while a tile inscription supports the pagoda’s 1400 construction date."
+      ],
+      "captions": [
+        "Jōrakuji Three-Story Pagoda",
+        "1400"
+      ]
+    },
+    "jp_zensuiji_hondo": {
+      "name": "Zensuiji Main Hall",
+      "short": "Zensuiji Main Hall",
+      "sub": "Zensuiji Main Hall",
+      "era": "Traditionally rebuilt in 1366",
+      "yearLabel": "Traditionally rebuilt in 1366",
+      "yearNote": "Cultural-property sources assign the hall to the Nanbokuchō period. Its traditional 1366 rebuilding date agrees with the style but remains qualified.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "Zensuiji’s seven-bay-wide main hall preserves a substantial medieval form beneath an expansive bark roof.",
+      "facts": [
+        "Seven bays wide and five deep, single-story with a bark hip-and-gable roof; doors, lattices and raised floor follow the surviving hall.",
+        "Cultural-property sources assign the hall to the Nanbokuchō period. Its traditional 1366 rebuilding date agrees with the style but remains qualified."
+      ],
+      "captions": [
+        "Zensuiji Main Hall",
+        "Traditionally rebuilt in 1366"
+      ]
+    },
+    "jp_chojuji_hondo": {
+      "name": "Chōjuji Main Hall",
+      "short": "Chōjuji Main Hall",
+      "sub": "Chōjuji Main Hall",
+      "era": "Early Kamakura; placed c. 1200",
+      "yearLabel": "Early Kamakura; placed c. 1200",
+      "yearNote": "The database dates the surviving hall to 1185–1274. A Heian attribution occurs in temple accounts; this entry follows the building classification, with c. 1200 for placement.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "Chōjuji’s hipped bark roof and restrained facade preserve a modest early medieval Buddhist hall.",
+      "facts": [
+        "Five bays square, with a hipped bark roof and a three-bay porch; later ancillary buildings are excluded.",
+        "The database dates the surviving hall to 1185–1274. A Heian attribution occurs in temple accounts; this entry follows the building classification, with c. 1200 for placement."
+      ],
+      "captions": [
+        "Chōjuji Main Hall",
+        "Early Kamakura; placed c. 1200"
+      ]
+    },
+    "jp_hogonji_karamon": {
+      "name": "Hōgonji Karamon",
+      "short": "Hōgonji Karamon",
+      "sub": "Hōgonji Karamon",
+      "era": "Relocation recorded in 1603",
+      "yearLabel": "Relocation recorded in 1603",
+      "yearNote": "A ridge record documents relocation in 1603. Its association with Toyotomi-period architecture does not make that relocation date the initial date of every member.",
+      "place": "Japan · Shiga Prefecture · Nagahama",
+      "lede": "Hōgonji’s compact Karamon on Chikubushima combines black lacquer, gilded fittings and dense polychrome carving.",
+      "facts": [
+        "The curved-gable gate and bark roofing are depicted; the adjoining hall and island panorama are outside the plate’s scope.",
+        "A ridge record documents relocation in 1603. Its association with Toyotomi-period architecture does not make that relocation date the initial date of every member."
+      ],
+      "captions": [
+        "Hōgonji Karamon",
+        "Relocation recorded in 1603"
+      ]
+    },
+    "jp_kaijusenji_pagoda": {
+      "name": "Kaijūsenji Five-Story Pagoda",
+      "short": "Kaijūsenji Five-Story Pagoda",
+      "sub": "Kaijūsenji Five-Story Pagoda",
+      "era": "1214; mokoshi restored in 1963",
+      "yearLabel": "1214; mokoshi restored in 1963",
+      "yearNote": "The pagoda dates to 1214; its first-story mokoshi was restored during repairs in 1963. The plate depicts that present form.",
+      "place": "Japan · Kyoto Prefecture · Kizugawa",
+      "lede": "Kaijūsenji’s slender small pagoda is distinguished by the mokoshi around its first story.",
+      "facts": [
+        "Five stories plus a first-story mokoshi give six visible roof lines; the pagoda remains five-story.",
+        "The pagoda dates to 1214; its first-story mokoshi was restored during repairs in 1963. The plate depicts that present form."
+      ],
+      "captions": [
+        "Kaijūsenji Five-Story Pagoda",
+        "1214; mokoshi restored in 1963"
+      ]
+    },
+    "jp_daihoonji_hondo": {
+      "name": "Daihōonji Main Hall",
+      "short": "Daihōonji Main Hall",
+      "sub": "Daihōonji Main Hall",
+      "era": "1227",
+      "yearLabel": "1227",
+      "yearNote": "A ridge inscription dates the present hall to 1227. The temple’s 1220 foundation is distinct.",
+      "place": "Japan · Kyoto Prefecture · Kyoto",
+      "lede": "Known as Senbon Shakadō, Daihōonji’s main hall is a major Kamakura timber building in Kyoto, with a restrained facade and broad roof.",
+      "facts": [
+        "Five bays square, single-story, with a cypress-bark hip-and-gable roof and the present front porch.",
+        "A ridge inscription dates the present hall to 1227. The temple’s 1220 foundation is distinct."
+      ],
+      "captions": [
+        "Daihōonji Main Hall",
+        "1227"
+      ]
+    },
+    "jp_kinpusenji_zaodo": {
+      "name": "Kinpusenji Zaōdō",
+      "short": "Kinpusenji Zaōdō",
+      "sub": "Kinpusenji Zaōdō",
+      "era": "Rebuilt c. 1592",
+      "yearLabel": "Rebuilt c. 1592",
+      "yearNote": "The temple describes completion around 1592; cultural-property records use 1592. The approximate qualifier is retained, separate from earlier foundation traditions.",
+      "place": "Japan · Nara Prefecture · Yoshino",
+      "lede": "On Mount Yoshino, the immense Zaōdō combines a timber core, mokoshi and deep eaves in a Momoyama mountain sanctuary.",
+      "facts": [
+        "The present hall and encircling mokoshi are shown; the two roof levels are not interpreted as two floors.",
+        "The temple describes completion around 1592; cultural-property records use 1592. The approximate qualifier is retained, separate from earlier foundation traditions."
+      ],
+      "captions": [
+        "Kinpusenji Zaōdō",
+        "Rebuilt c. 1592"
+      ]
+    },
+    "jp_todaiji_daibutsuden": {
+      "name": "Tōdaiji Great Buddha Hall",
+      "short": "Tōdaiji Great Buddha Hall",
+      "sub": "Tōdaiji Great Buddha Hall",
+      "era": "Dedication in 1709",
+      "yearLabel": "Dedication in 1709",
+      "yearNote": "The surviving Great Buddha Hall was dedicated in 1709, distinct from its eighth-century predecessor and the temple’s gates. 1705 is not its completion date.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Tōdaiji’s Edo-period Great Buddha Hall is defined by immense roof tiers, golden ridge ornaments and white infill between timber members.",
+      "facts": [
+        "The plate depicts the current Great Buddha Hall exterior; the existing South Gate entry retains its ID and scope.",
+        "The surviving Great Buddha Hall was dedicated in 1709, distinct from its eighth-century predecessor and the temple’s gates. 1705 is not its completion date."
+      ],
+      "captions": [
+        "Tōdaiji Great Buddha Hall",
+        "Dedication in 1709"
+      ]
+    },
+    "jp_todaiji_nigatsudo": {
+      "name": "Tōdaiji Nigatsudō",
+      "short": "Tōdaiji Nigatsudō",
+      "sub": "Tōdaiji Nigatsudō",
+      "era": "Rebuilt in 1669",
+      "yearLabel": "Rebuilt in 1669",
+      "yearNote": "The present Nigatsudō was rebuilt in 1669 after the 1667 fire. The older Shuni-e ritual does not date the surviving building.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Nigatsudō projects a raised stage toward the Nara basin beneath a broad tiled roof on the hillside.",
+      "facts": [
+        "Seven bays across and ten deep, single-story with a hipped tiled roof; stage supports are not a separate floor.",
+        "The present Nigatsudō was rebuilt in 1669 after the 1667 fire. The older Shuni-e ritual does not date the surviving building."
+      ],
+      "captions": [
+        "Tōdaiji Nigatsudō",
+        "Rebuilt in 1669"
+      ]
+    },
+    "jp_horyuji_yumedono": {
+      "name": "Hōryūji Yumedono",
+      "short": "Hōryūji Yumedono",
+      "sub": "Hōryūji Yumedono",
+      "era": "c. 739; major repair in 1230",
+      "yearLabel": "c. 739; major repair in 1230",
+      "yearNote": "The Yumedono originated around 739, with a dedication recorded in 748. Major repairs in 1230 altered roof pitch and eave depth; the plate shows the surviving form.",
+      "place": "Japan · Nara Prefecture · Ikaruga",
+      "lede": "The octagonal Yumedono in Hōryūji’s east precinct has a distinct form from the west precinct’s hall and pagoda.",
+      "facts": [
+        "An octagonal single-story hall, tiled pyramidal roof and top jewel; surrounding cloisters are excluded.",
+        "The Yumedono originated around 739, with a dedication recorded in 748. Major repairs in 1230 altered roof pitch and eave depth; the plate shows the surviving form."
+      ],
+      "captions": [
+        "Hōryūji Yumedono",
+        "c. 739; major repair in 1230"
+      ]
+    },
+    "jp_yakushiji_toindo": {
+      "name": "Yakushiji Tōindō",
+      "short": "Yakushiji Tōindō",
+      "sub": "Yakushiji Tōindō",
+      "era": "Rebuilt in 1285; reoriented in 1733",
+      "yearLabel": "Rebuilt in 1285; reoriented in 1733",
+      "yearNote": "The surviving Tōindō was rebuilt in 1285 and reoriented from south to west in 1733, distinct from the earlier east precinct.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Yakushiji’s Tōindō preserves a restrained Kamakura colonnade and broad tiled eaves, separately from the East Pagoda.",
+      "facts": [
+        "Seven bays across and four deep, single-story with a tiled hip-and-gable roof; the present west-facing front is shown.",
+        "The surviving Tōindō was rebuilt in 1285 and reoriented from south to west in 1733, distinct from the earlier east precinct."
+      ],
+      "captions": [
+        "Yakushiji Tōindō",
+        "Rebuilt in 1285; reoriented in 1733"
+      ]
+    },
+    "jp_hasedera_hondo": {
+      "name": "Hasedera Main Hall",
+      "short": "Hasedera Main Hall",
+      "sub": "Hasedera Main Hall",
+      "era": "Rebuilt in 1650",
+      "yearLabel": "Rebuilt in 1650",
+      "yearNote": "The present hall was rebuilt in 1650; the temple’s foundation and earlier halls do not date this surviving building.",
+      "place": "Japan · Nara Prefecture · Sakurai",
+      "lede": "Hasedera’s main hall in Sakurai spreads across the hillside, joining front and rear spaces above a tall projecting stage.",
+      "facts": [
+        "The rear sanctuary is nine bays across and five deep, with a four-bay-deep front worship hall; joined roofs and stage supports are shown, excluding the covered approach.",
+        "The present hall was rebuilt in 1650; the temple’s foundation and earlier halls do not date this surviving building."
+      ],
+      "captions": [
+        "Hasedera Main Hall",
+        "Rebuilt in 1650"
       ]
     }
   },

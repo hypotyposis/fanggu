@@ -1,0 +1,96 @@
+{
+  "id": "jp_hakogi_house",
+  "name": "箱木家住宅主屋",
+  "subject": "箱木家住宅 · 主屋",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_hakogi_house.png",
+    "assets/references/jp_hakogi_house-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 箱木家住宅 · 主屋\nMATERIAL OBSERVATIONS: 主屋灰褐厚茅顶，土黄土壁、暗褐柱梁和门板，低石基灰褐。\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+  "material_observations": [
+    "主屋灰褐厚茅顶，土黄土壁、暗褐柱梁和门板，低石基灰褐。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_hakogi_house-photo.jpg",
+      "source_page": "https://www.city.kobe.lg.jp/a21651/556604195933.html",
+      "image_url": "https://www.city.kobe.lg.jp/images/85293/20260529110957.jpg",
+      "author": "神户市官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "page": "https://www.city.kobe.lg.jp/a21651/556604195933.html"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "神户市 · 箱木家住宅 · 主屋",
+      "url": "https://www.city.kobe.lg.jp/a21651/556604195933.html"
+    }
+  ],
+  "original_research": "assets/research/jp_hakogi_house.json",
+  "output": "assets/colored/jp_hakogi_house.png",
+  "production_batch": "japan-first-20261011",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:36:16.361062+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "aa61b3d2dac1ab67e6958153fd425d088ee96ef56c3c3f3d3ec5c329fceba83c",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-b90da6a7-ae2b-4dd8-8fb8-11a70fbdfe26.png",
+  "generation_history": [
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:31:00.260662+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 箱木家住宅 · 主屋\nMATERIAL OBSERVATIONS: 主屋灰褐厚茅顶，土黄土壁、暗褐柱梁和门板，低石基灰褐。\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_hakogi_house.png",
+        "assets/references/jp_hakogi_house-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:36:16.361301+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-b90da6a7-ae2b-4dd8-8fb8-11a70fbdfe26.png",
+      "retained_file": "assets/colored/jp_hakogi_house.png",
+      "sourceSha256": "aa61b3d2dac1ab67e6958153fd425d088ee96ef56c3c3f3d3ec5c329fceba83c"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:36.173649+08:00",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:54:02.779Z",
+    "sourceSha256": "aa61b3d2dac1ab67e6958153fd425d088ee96ef56c3c3f3d3ec5c329fceba83c",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "89d537c7b91bbe27284569a10aa88be0dd79010471f8bbe077563a8449ec102a",
+    "avifSha256": "6c7738382f3b4e6626f6acf49949a2c49f03e2fe65d595f68544f4e4805b7be4"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

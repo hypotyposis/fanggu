@@ -1,0 +1,137 @@
+{
+  "id": "jp_kongosanmaiin_tahoto",
+  "name": "金刚三昧院多宝塔",
+  "subject": "金刚三昧院 · 多宝塔",
+  "source_page": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/",
+  "image_url": "https://ibmuseum.mapps.ne.jp/files/1422/media_files/large/484.jpg",
+  "author": "和歌山县文化财门户（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kongosanmaiin_tahoto-full-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kongosanmaiin_tahoto-full-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kongosanmaiin Tahoto, dated 1223, full front elevation of this small two-roof pagoda only.\nSTRUCTURAL CHECKPOINTS: TWO roof levels, three-bay square lower body, white rounded dome between roofs and round upper timber cylinder.; Hinoki-bark roofs with curved eaves, tall nine-ring finial, low front veranda, a central pair of doors between slatted windows.; Preserve the three-bay scale; no five-bay Daito, neighboring buildings, trees or foreground stone lantern.\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "和歌山县文化财门户 · 金刚三昧院 · 多宝塔",
+      "url": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/"
+    },
+    {
+      "title": "主体断代与形制依据",
+      "url": "https://www.town.koya.wakayama.jp/img_data/2019/09/fa90a2311932eae815212f09b5d67dd4.pdf"
+    }
+  ],
+  "structure_checkpoints": [
+    "TWO roof levels, three-bay square lower body, white rounded dome between roofs and round upper timber cylinder.",
+    "Hinoki-bark roofs with curved eaves, tall nine-ring finial, low front veranda, a central pair of doors between slatted windows.",
+    "Preserve the three-bay scale; no five-bay Daito, neighboring buildings, trees or foreground stone lantern."
+  ],
+  "material_observations": "桧皮屋面深灰褐，主体旧木及残朱色，白灰泥圆腹和下部壁，相轮暗褐，不仿成瓦屋面。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "金刚三昧院 · 多宝塔",
+    "镰仓贞应二年（1223）"
+  ],
+  "generated_file": "assets/generated/jp_kongosanmaiin_tahoto.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.756473+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/",
+      "https://www.town.koya.wakayama.jp/img_data/2019/09/fa90a2311932eae815212f09b5d67dd4.pdf"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T23:27:02.655961+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c2fd83b18bb52e43f5a63e2be513fe356e5a3567e68bc060e43fdfce9b8f1514",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-d3d615a4-9f76-4c1d-8a92-c6ddcb6a0849.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:25:25.482218+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kongosanmaiin Tahoto, dated 1223, full front elevation of this small two-roof pagoda only.\nSTRUCTURAL CHECKPOINTS: TWO roof levels, three-bay square lower body, white rounded dome between roofs and round upper timber cylinder.; Hinoki-bark roofs with curved eaves, tall nine-ring finial, low front veranda, a central pair of doors between slatted windows.; Preserve the three-bay scale; no five-bay Daito, neighboring buildings, trees or foreground stone lantern.\nOrientation: portrait 1024×1536.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_kongosanmaiin_tahoto-full-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:27:02.656248+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-d3d615a4-9f76-4c1d-8a92-c6ddcb6a0849.png",
+      "retained_file": "assets/generated/jp_kongosanmaiin_tahoto.png",
+      "sourceSha256": "c2fd83b18bb52e43f5a63e2be513fe356e5a3567e68bc060e43fdfce9b8f1514"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_kongosanmaiin_tahoto-full-photo.jpg",
+      "source_page": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/",
+      "image_url": "https://ibmuseum.mapps.ne.jp/files/1422/media_files/large/484.jpg",
+      "author": "和歌山县文化财门户（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "金刚三昧院 · 多宝塔"
+    },
+    {
+      "title": "和歌山县文化财门户 · 金刚三昧院 · 多宝塔",
+      "url": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/"
+    },
+    {
+      "title": "主体断代与形制依据",
+      "url": "https://www.town.koya.wakayama.jp/img_data/2019/09/fa90a2311932eae815212f09b5d67dd4.pdf"
+    }
+  ],
+  "site_recommendation": {
+    "name": "金刚三昧院多宝塔",
+    "year": 1223,
+    "yearApprox": false,
+    "yearLabel": "1223年",
+    "yearNote": "贞应二年（1223）建立；图版取多宝塔本体，不混入根来寺五间大塔的比例。",
+    "dyn": "jp_kamakura",
+    "country": "JP",
+    "placeKey": "jp_koya"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "c2fd83b18bb52e43f5a63e2be513fe356e5a3567e68bc060e43fdfce9b8f1514",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "d0cfc4dabab8a8aa2bb29d2fdd770a0a74cb7809e26e6eb7bc3eb8061de2e531"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

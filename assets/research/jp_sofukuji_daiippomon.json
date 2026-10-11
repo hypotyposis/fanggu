@@ -1,0 +1,128 @@
+{
+  "id": "jp_sofukuji_daiippomon",
+  "name": "崇福寺第一峰门",
+  "subject": "崇福寺 · 第一峰门",
+  "source_page": "https://www.city.nagasaki.lg.jp/page/1197.html",
+  "image_url": "https://www.city.nagasaki.lg.jp/uploaded/image/1228.jpg",
+  "author": "长崎市官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sofukuji_daiippomon-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sofukuji_daiippomon-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Sofukuji Daiippomon, the compact Chinese-style inner gate rebuilt in 1695; NOT the large three-opening outer romon.\nSTRUCTURAL CHECKPOINTS: ONE central gateway under a broad single hip-and-gable roof, elaborate compact Chinese multilevel bracket stack above the opening.; Paired red doors stand open outward, preserve the dense three-leaf bracket pattern and fan-shaped rafters.; Remove flanking modern enclosures and plants; include short stone stairs; keep plaque shapes but NO text.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "长崎市 · 崇福寺 · 第一峰门",
+      "url": "https://www.city.nagasaki.lg.jp/page/1197.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "ONE central gateway under a broad single hip-and-gable roof, elaborate compact Chinese multilevel bracket stack above the opening.",
+    "Paired red doors stand open outward, preserve the dense three-leaf bracket pattern and fan-shaped rafters.",
+    "Remove flanking modern enclosures and plants; include short stone stairs; keep plaque shapes but NO text."
+  ],
+  "material_observations": "门扇与柱为朱红色，斗栱密集蓝绿朱黑彩绘，屋面灰瓦，踏步灰石，不复制门上文字。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "崇福寺 · 第一峰门",
+    "江户元禄八年（1695）"
+  ],
+  "generated_file": "assets/generated/jp_sofukuji_daiippomon.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.910521+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.nagasaki.lg.jp/page/1197.html"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:14:18.963725+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "896d3f6387cc700d50081030ffae12e5fc2bc0099997792d1631a31df2656785",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-75b6f0f7-6ec4-4544-afad-7362891a4b23.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:13:00.903153+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Sofukuji Daiippomon, the compact Chinese-style inner gate rebuilt in 1695; NOT the large three-opening outer romon.\nSTRUCTURAL CHECKPOINTS: ONE central gateway under a broad single hip-and-gable roof, elaborate compact Chinese multilevel bracket stack above the opening.; Paired red doors stand open outward, preserve the dense three-leaf bracket pattern and fan-shaped rafters.; Remove flanking modern enclosures and plants; include short stone stairs; keep plaque shapes but NO text.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_sofukuji_daiippomon-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:14:18.963962+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-75b6f0f7-6ec4-4544-afad-7362891a4b23.png",
+      "retained_file": "assets/generated/jp_sofukuji_daiippomon.png",
+      "sourceSha256": "896d3f6387cc700d50081030ffae12e5fc2bc0099997792d1631a31df2656785"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_sofukuji_daiippomon-photo.jpg",
+      "source_page": "https://www.city.nagasaki.lg.jp/page/1197.html",
+      "image_url": "https://www.city.nagasaki.lg.jp/uploaded/image/1228.jpg",
+      "author": "长崎市官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "崇福寺 · 第一峰门"
+    },
+    {
+      "title": "长崎市 · 崇福寺 · 第一峰门",
+      "url": "https://www.city.nagasaki.lg.jp/page/1197.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "崇福寺第一峰门",
+    "year": 1695,
+    "yearApprox": false,
+    "yearLabel": "1695年再建",
+    "yearNote": "长崎市现行资料记元禄八年（1695）再建，构件在宁波加工后运来组装；1629年等初建沿革不作为现存门纪年。",
+    "dyn": "jp_edo",
+    "country": "JP",
+    "placeKey": "jp_nagasaki"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "896d3f6387cc700d50081030ffae12e5fc2bc0099997792d1631a31df2656785",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "d36f29f7f481860d3ae27556784b1e0489485ca2cee1fb87ea6c86460e43545d"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

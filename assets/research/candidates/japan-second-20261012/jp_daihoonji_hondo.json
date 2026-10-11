@@ -1,0 +1,83 @@
+{
+  "id": "jp_daihoonji_hondo",
+  "name": "大报恩寺本堂",
+  "province": "京都府",
+  "city": "京都",
+  "kind": "hall",
+  "stage": "delivery_ready",
+  "calls": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:47:58.152086+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Daihoonji main hall / Senbon Shakado, Kyoto, 1227\nSTRUCTURAL CHECKPOINTS: Compact square medieval timber hall with ONE hip-and-gable cypress-bark roof; Low raised veranda and small projecting entrance canopy; dark boarded and lattice facade; Roof gable visible at the side, pale plaster above beams; exclude temple garden and Okame statues\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_daihoonji_hondo-photo-final.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:49:56.780216+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-92aa51a2-1c18-4c33-96f7-5da65a70ac49.png",
+      "retained_file": "assets/generated/jp_daihoonji_hondo.png",
+      "sourceSha256": "450e35959be61843ea2f092a4ebf213a5874073f4a424ab4e3fcf0e47ed29282"
+    },
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:52:10.641050+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 大报恩寺千本释迦堂现存本堂单体\nMATERIAL OBSERVATIONS: Warm brown bark roof, weathered medium-dark brown timber, subdued off-white plaster walls.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_daihoonji_hondo.png",
+        "assets/references/jp_daihoonji_hondo-photo-final.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:54:19.040654+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-1e411f74-9fec-4ec8-a9c1-9e82b93746e7.png",
+      "retained_file": "assets/colored/jp_daihoonji_hondo.png",
+      "sourceSha256": "d28f8846e89ae29f7c3d8264280aab14b4cdd35659fc860d7abf1efa889412ee"
+    }
+  ],
+  "subject": "大报恩寺千本释迦堂现存本堂单体",
+  "english_subject": "Daihoonji main hall / Senbon Shakado, Kyoto, 1227",
+  "dyn": "jp_kamakura",
+  "photo": {
+    "file": "assets/references/jp_daihoonji_hondo-photo-final.jpg",
+    "source_page": "https://daihoonji.jp/cultural-heritage/architectural",
+    "image_url": "https://daihoonji.jp/images/add_slide-image_hondo.jpg",
+    "author": "官方文化财或寺院资料（摄影者未署名）",
+    "license": "未注明开放许可；仅作研究参考，不分发原照"
+  },
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.city.kyoto.lg.jp/kamigyo/page/0000012874.html"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://daihoonji.jp/cultural-heritage/architectural"
+    }
+  ],
+  "checkpoints": [
+    "Compact square medieval timber hall with ONE hip-and-gable cypress-bark roof",
+    "Low raised veranda and small projecting entrance canopy; dark boarded and lattice facade",
+    "Roof gable visible at the side, pale plaster above beams; exclude temple garden and Okame statues"
+  ],
+  "materials": "Warm brown bark roof, weathered medium-dark brown timber, subdued off-white plaster walls.",
+  "caption": [
+    "现存本堂按1227年上梁记录，区别于1220年寺院开创。",
+    "绘洛中现存的镰仓本堂单体，不把传说中的人物故事作建筑实证。"
+  ],
+  "tall": false,
+  "references": [
+    {
+      "file": "assets/references/jp_daihoonji_hondo-photo-final.jpg",
+      "source_page": "https://daihoonji.jp/cultural-heritage/architectural",
+      "image_url": "https://daihoonji.jp/images/add_slide-image_hondo.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照"
+    }
+  ]
+}

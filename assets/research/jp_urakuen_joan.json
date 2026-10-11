@@ -1,0 +1,145 @@
+{
+  "id": "jp_urakuen_joan",
+  "name": "如庵",
+  "subject": "有乐苑 · 如庵茶室外观（照片右侧小茶室）",
+  "source_page": "https://inuyama.gr.jp/experience/detail/9/",
+  "image_url": "https://inuyama.gr.jp/upload/site/spots/retina/7f3a483f322f809135d9c3724e7bab94.jpeg",
+  "author": "犬山市观光协会（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_urakuen_joan-exterior-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_urakuen_joan-exterior-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Joan tea house, dated 1618 and relocated to Inuyama in 1972. ONLY the small ochre earthen-walled tea house on the RIGHT of the reference; do not include the broad Shoin veranda on the left.\nSTRUCTURAL CHECKPOINTS: Small one-storey earthen-walled teahouse; kokera wood-shingle hip-and-gable roof with gable facing front, recessed earthen porch on the left.; Round bamboo lattice window on left wall, broad horizontal lattice window under low front eave, narrow right-hand opening; natural rough timber columns.; Draw only the small tea house on the RIGHT of the overview photo, omit trees, garden, signs, fences and the adjoining large Shoin hall.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "名铁 · 如庵形制",
+      "url": "https://www.meitetsu.co.jp/urakuen/joan/index.html"
+    },
+    {
+      "title": "爱知县 · 有乐苑迁建沿革",
+      "url": "https://www.aichinow.pref.aichi.jp/spots/detail/179/"
+    },
+    {
+      "title": "文化厅 · 如庵（1618年頃）",
+      "url": "https://online.bunka.go.jp/heritages/detail/193900"
+    }
+  ],
+  "structure_checkpoints": [
+    "Small one-storey earthen-walled teahouse; kokera wood-shingle hip-and-gable roof with gable facing front, recessed earthen porch on the left.",
+    "Round bamboo lattice window on left wall, broad horizontal lattice window under low front eave, narrow right-hand opening; natural rough timber columns.",
+    "Draw only the small tea house on the RIGHT of the overview photo, omit trees, garden, signs, fences and the adjoining large Shoin hall."
+  ],
+  "material_observations": "黄赭泥壁、自然旧木柱，灰褐柿葺屋面，竹窗淡褐，门洞暗褐；保留小茶室的克制色调。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "有乐苑 · 如庵茶室外观",
+    "江户 · 约1618年"
+  ],
+  "generated_file": "assets/generated/jp_urakuen_joan.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:36.105673+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.meitetsu.co.jp/urakuen/joan/index.html",
+      "https://www.aichinow.pref.aichi.jp/spots/detail/179/"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:33:18.164457+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3ada52d0feb7d84cfffdd060ceebcb13d8be1ad9995089fe7851b9ea9da40bce",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-863eb170-1373-406d-89ca-933e159f2bb2.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:30:59.347601+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Joan tea house, dated 1618 and relocated to Inuyama in 1972. ONLY the small ochre earthen-walled tea house on the RIGHT of the reference; do not include the broad Shoin veranda on the left.\nSTRUCTURAL CHECKPOINTS: Small one-storey earthen-walled teahouse; kokera wood-shingle hip-and-gable roof with gable facing front, recessed earthen porch on the left.; Round bamboo lattice window on left wall, broad horizontal lattice window under low front eave, narrow right-hand opening; natural rough timber columns.; Draw only the small tea house on the RIGHT of the overview photo, omit trees, garden, signs, fences and the adjoining large Shoin hall.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_urakuen_joan-exterior-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:33:18.164739+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-863eb170-1373-406d-89ca-933e159f2bb2.png",
+      "retained_file": "assets/generated/jp_urakuen_joan.png",
+      "sourceSha256": "3ada52d0feb7d84cfffdd060ceebcb13d8be1ad9995089fe7851b9ea9da40bce"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_urakuen_joan-exterior-photo.jpg",
+      "source_page": "https://inuyama.gr.jp/experience/detail/9/",
+      "image_url": "https://inuyama.gr.jp/upload/site/spots/retina/7f3a483f322f809135d9c3724e7bab94.jpeg",
+      "author": "犬山市观光协会（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "有乐苑 · 如庵茶室外观（照片右侧小茶室）"
+    },
+    {
+      "title": "名铁 · 如庵形制",
+      "url": "https://www.meitetsu.co.jp/urakuen/joan/index.html"
+    },
+    {
+      "title": "爱知县 · 有乐苑迁建沿革",
+      "url": "https://www.aichinow.pref.aichi.jp/spots/detail/179/"
+    },
+    {
+      "title": "文化厅 · 如庵（1618年頃）",
+      "url": "https://online.bunka.go.jp/heritages/detail/193900"
+    }
+  ],
+  "site_recommendation": {
+    "name": "如庵",
+    "year": 1618,
+    "yearApprox": true,
+    "yearLabel": "约1618年；1972年移建",
+    "yearNote": "文化厅定元和四年頃（约1618），1972年移至犬山。",
+    "dyn": "jp_edo",
+    "country": "JP",
+    "placeKey": "jp_inuyama"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "3ada52d0feb7d84cfffdd060ceebcb13d8be1ad9995089fe7851b9ea9da40bce",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "db8813f8280ecf752ca88c11c5315ee6a8881be9cf8b06de1419a1532ce4990f"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

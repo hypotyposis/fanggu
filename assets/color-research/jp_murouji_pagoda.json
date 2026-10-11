@@ -1,0 +1,96 @@
+{
+  "id": "jp_murouji_pagoda",
+  "name": "室生寺五重塔",
+  "subject": "室生寺五重塔本体",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_murouji_pagoda.png",
+    "assets/references/jp_murouji_pagoda-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 室生寺五重塔本体\nMATERIAL OBSERVATIONS: 朱红木构、白粉壁与灰褐柿葺屋面，淡色金属相轮，不涂成灰瓦。\nKeep the supplied line drawing as the exact geometry master. portrait 1024×1536.",
+  "material_observations": [
+    "朱红木构、白粉壁与灰褐柿葺屋面，淡色金属相轮，不涂成灰瓦。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_murouji_pagoda-photo.jpg",
+      "source_page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+      "image_url": "https://www.city.uda.lg.jp/uploaded/image/1102.jpg",
+      "author": "宇陀市官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "page": "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "宇陀市官方网站 · 室生寺五重塔",
+      "url": "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    }
+  ],
+  "original_research": "assets/research/jp_murouji_pagoda.json",
+  "output": "assets/colored/jp_murouji_pagoda.png",
+  "production_batch": "japan-first-20261011",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T23:15:06.082677+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1660a08a56bb5c33d732b3c841ccc4241ea8fd17dd49db7950905888f7b483e7",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-318b36c4-1ed2-41c1-b90e-e7eeed41a849.png",
+  "generation_history": [
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:13:26.046488+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 室生寺五重塔本体\nMATERIAL OBSERVATIONS: 朱红木构、白粉壁与灰褐柿葺屋面，淡色金属相轮，不涂成灰瓦。\nKeep the supplied line drawing as the exact geometry master. portrait 1024×1536.",
+      "input_images": [
+        "assets/generated/jp_murouji_pagoda.png",
+        "assets/references/jp_murouji_pagoda-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:15:06.082900+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-318b36c4-1ed2-41c1-b90e-e7eeed41a849.png",
+      "retained_file": "assets/colored/jp_murouji_pagoda.png",
+      "sourceSha256": "1660a08a56bb5c33d732b3c841ccc4241ea8fd17dd49db7950905888f7b483e7"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.275715+08:00",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:54:02.779Z",
+    "sourceSha256": "1660a08a56bb5c33d732b3c841ccc4241ea8fd17dd49db7950905888f7b483e7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "d2563078dadffd22641bedfc8561955008e9bb4a3eaab29002147015522d9e4c",
+    "avifSha256": "1c1bbb12e0b80a51a5f96cbcb90831d4ccef70e179b50127b6a819dbf57454ba"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

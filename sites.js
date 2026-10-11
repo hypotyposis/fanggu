@@ -31,6 +31,7 @@ const DYN = {
   jp_muromachi: { glyph: '室町', name: '日本 · 室町', acc: 'var(--jp-muromachi)', country: 'JP', start: 1336, end: 1573 },
   jp_momoyama: { glyph: '桃山', name: '日本 · 桃山', acc: 'var(--jp-momoyama)', country: 'JP', start: 1573, end: 1615 },
   jp_edo: { glyph: '江户', name: '日本 · 江户', acc: 'var(--jp-edo)', country: 'JP', start: 1603, end: 1867 },
+  jp_ryukyu: { glyph: '琉球', name: '日本 · 琉球', acc: 'var(--jp-ryukyu)', country: 'JP', start: 1429, end: 1879 },
   jp_showa: { glyph: '昭和', name: '日本 · 昭和', acc: 'var(--jp-showa)', country: 'JP', start: 1926, end: 1989 },
   kh_angkor: { glyph: '吴哥', name: '柬埔寨 · 吴哥', acc: 'var(--kh-angkor)', country: 'KH', start: 900, end: 1300 },
   id_java_classical: { glyph: '古爪哇', name: '印度尼西亚 · 古典爪哇', acc: 'var(--id-java)', country: 'ID', start: 750, end: 1000 },
@@ -16793,6 +16794,2066 @@ SITES.push(...[
       "極楽山浄土寺",
       "Jōdo-ji Jōdodō",
       "Jodoji Amida Hall"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  }
+]);
+
+// japan-first-20261011 — sourced Japanese buildings; town points are display-only.
+PLACES.push(...[
+  {
+    "key": "jp_hiraizumi",
+    "name": "平泉",
+    "prov": "岩手县",
+    "country": "JP",
+    "lat": 38.99,
+    "lon": 141.11,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_iwaki",
+    "name": "磐城",
+    "prov": "福岛县",
+    "country": "JP",
+    "lat": 37.04,
+    "lon": 140.83,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_uda",
+    "name": "宇陀",
+    "prov": "奈良县",
+    "country": "JP",
+    "lat": 34.54,
+    "lon": 136.05,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_kamakura_city",
+    "name": "镰仓",
+    "prov": "神奈川县",
+    "country": "JP",
+    "lat": 35.33,
+    "lon": 139.55,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_shimonoseki",
+    "name": "下关",
+    "prov": "山口县",
+    "country": "JP",
+    "lat": 34.03,
+    "lon": 130.95,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_hikone",
+    "name": "彦根",
+    "prov": "滋贺县",
+    "country": "JP",
+    "lat": 35.27,
+    "lon": 136.25,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_matsue",
+    "name": "松江",
+    "prov": "岛根县",
+    "country": "JP",
+    "lat": 35.46,
+    "lon": 133.05,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_otoyo",
+    "name": "大丰",
+    "prov": "高知县",
+    "country": "JP",
+    "lat": 33.76,
+    "lon": 133.67,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_sakaide",
+    "name": "坂出",
+    "prov": "香川县",
+    "country": "JP",
+    "lat": 34.31,
+    "lon": 133.94,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_yamaguchi",
+    "name": "山口",
+    "prov": "山口县",
+    "country": "JP",
+    "lat": 34.18,
+    "lon": 131.47,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_okayama",
+    "name": "冈山",
+    "prov": "冈山县",
+    "country": "JP",
+    "lat": 34.66,
+    "lon": 133.92,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_koya",
+    "name": "高野",
+    "prov": "和歌山县",
+    "country": "JP",
+    "lat": 34.22,
+    "lon": 135.59,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_iwade",
+    "name": "岩出",
+    "prov": "和歌山县",
+    "country": "JP",
+    "lat": 34.26,
+    "lon": 135.32,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_nagasaki",
+    "name": "长崎",
+    "prov": "长崎县",
+    "country": "JP",
+    "lat": 32.75,
+    "lon": 129.88,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_hitoyoshi",
+    "name": "人吉",
+    "prov": "熊本县",
+    "country": "JP",
+    "lat": 32.22,
+    "lon": 130.75,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_naha",
+    "name": "那霸",
+    "prov": "冲绳县",
+    "country": "JP",
+    "lat": 26.22,
+    "lon": 127.72,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_oyamazaki",
+    "name": "大山崎",
+    "prov": "京都府",
+    "country": "JP",
+    "lat": 34.89,
+    "lon": 135.68,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_kobe",
+    "name": "神户",
+    "prov": "兵库县",
+    "country": "JP",
+    "lat": 34.78,
+    "lon": 135.09,
+    "coordinate_note": "城镇或古迹所在地区的约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  }
+]);
+SITES.push(...[
+  {
+    "id": "jp_chusonji_konjikido",
+    "name": "中尊寺金色堂",
+    "short": "中尊寺金色堂",
+    "sub": "中尊寺 · 金色堂本体正面",
+    "country": "JP",
+    "dyn": "jp_heian",
+    "tag": "平安",
+    "era": "1124年",
+    "year": 1124,
+    "yearApprox": false,
+    "yearLabel": "1124年",
+    "yearNote": "现存金色堂建于天治元年（1124）。现代覆堂属于保护设施，其年代不作为本条纪年。",
+    "place": "日本 · 岩手县 · 平泉",
+    "placeKey": "jp_hiraizumi",
+    "types": [
+      "hall"
+    ],
+    "lede": "三间见方的小堂，屋面、柱身与堂内装饰以金箔联成一体。中尊寺金色堂建于1124年，是奥州藤原氏净土信仰的遗构；图版只取金色堂本体，不包括今日外罩的保护建筑。",
+    "facts": [
+      "方三间，单层宝形造，低缘侧环绕；小尺度的木构与金箔表面共同构成主体。",
+      "现存金色堂建于天治元年（1124）。现代覆堂属于保护设施，其年代不作为本条纪年。"
+    ],
+    "caption": [
+      "中尊寺 · 金色堂本体",
+      "平安天治元年（1124）"
+    ],
+    "legacyNames": [
+      "Chūsonji Konjikidō",
+      "中尊寺金色堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_shiramizu_amidado",
+    "name": "白水阿弥陀堂",
+    "short": "白水阿弥陀堂",
+    "sub": "白水阿弥陀堂本体",
+    "country": "JP",
+    "dyn": "jp_heian",
+    "tag": "平安",
+    "era": "1160年",
+    "year": 1160,
+    "yearApprox": false,
+    "yearLabel": "1160年",
+    "yearNote": "现存堂为永历元年（1160）建立，纪年对应阿弥陀堂，不以更早的寺院传说定位。",
+    "place": "日本 · 福岛县 · 磐城",
+    "placeKey": "jp_iwaki",
+    "types": [
+      "hall"
+    ],
+    "lede": "木色柱廊托起轻缓的宝形屋顶，白水阿弥陀堂以三间见方的体量安放净土信仰。1160年建立的堂身保存平安后期的简静比例；图版取堂本体与缘侧，不画周围池庭。",
+    "facts": [
+      "方三间，单层宝形造，木片葺屋顶、木门与板壁，四周环绕缘侧。",
+      "现存堂为永历元年（1160）建立，纪年对应阿弥陀堂，不以更早的寺院传说定位。"
+    ],
+    "caption": [
+      "白水阿弥陀堂",
+      "平安永历元年（1160）"
+    ],
+    "legacyNames": [
+      "Shiramizu Amidado",
+      "白水阿弥陀堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_hokiji_pagoda",
+    "name": "法起寺三重塔",
+    "short": "法起寺三重塔",
+    "sub": "法起寺三重塔本体",
+    "country": "JP",
+    "dyn": "jp_asuka",
+    "tag": "飞鸟",
+    "era": "706年",
+    "year": 706,
+    "yearApprox": false,
+    "yearLabel": "706年",
+    "yearNote": "官方寺院资料以庆云三年（706）为三重塔完成年；寺院开基与塔的竣工分别记录。",
+    "place": "日本 · 奈良县 · 斑鸠",
+    "placeKey": "jp_ikaruga",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "三层屋檐逐级收小，法起寺三重塔把飞鸟时代佛塔的厚重比例保存在斑鸠。塔于706年完成，图版独立取塔身、相轮与基坛。",
+    "facts": [
+      "方形三重木塔，瓦葺屋面与深檐层叠，上立金属相轮。",
+      "官方寺院资料以庆云三年（706）为三重塔完成年；寺院开基与塔的竣工分别记录。"
+    ],
+    "caption": [
+      "法起寺三重塔",
+      "706"
+    ],
+    "legacyNames": [
+      "Hōkiji Three-storey Pagoda",
+      "法起寺三重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_shosoin_shoso",
+    "name": "正仓院正仓",
+    "short": "正仓院正仓",
+    "sub": "正仓院正仓本体",
+    "country": "JP",
+    "dyn": "jp_nara",
+    "tag": "奈良",
+    "era": "8世纪中叶",
+    "year": 756,
+    "yearApprox": true,
+    "yearLabel": "8世纪中叶",
+    "yearNote": "按奈良时代、8世纪中叶定位；756年是圣武天皇遗爱品献纳的重要背景，本条以约值参与排序，不称该年确定竣工。",
+    "place": "日本 · 奈良县 · 奈良",
+    "placeKey": "jp_nara",
+    "types": [
+      "hall"
+    ],
+    "lede": "高床之上，一座长仓分为北仓、中仓、南仓。正仓院正仓以两端校仓式木壁与中部板壁显露不同构法，保存奈良时代的皇家宝物仓储形态。",
+    "facts": [
+      "桁行九间、梁间三间，单层寄栋造；高床柱托起三仓，北南仓为校仓、中仓为板仓。",
+      "按奈良时代、8世纪中叶定位；756年是圣武天皇遗爱品献纳的重要背景，本条以约值参与排序，不称该年确定竣工。"
+    ],
+    "caption": [
+      "正仓院正仓",
+      "奈良时代，756年前后"
+    ],
+    "legacyNames": [
+      "Shōsōin Storehouse",
+      "正倉院正倉"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_shinyakushiji_hondo",
+    "name": "新药师寺本堂",
+    "short": "新药师寺本堂",
+    "sub": "新药师寺本堂本体",
+    "country": "JP",
+    "dyn": "jp_nara",
+    "tag": "奈良",
+    "era": "8世纪",
+    "year": 750,
+    "yearApprox": true,
+    "yearLabel": "8世纪",
+    "yearNote": "现存堂按奈良时代、8世纪定位，750为年表约略排序值；天平十九年（747）是寺院初创背景。",
+    "place": "日本 · 奈良县 · 奈良",
+    "placeKey": "jp_nara",
+    "types": [
+      "hall"
+    ],
+    "lede": "七间宽的低阔瓦顶覆盖新药师寺本堂，外观平实，堂内却围绕药师如来展开十二神将群像。图版只取现存奈良时代堂身，不把747年的创寺年当作本堂确切纪年。",
+    "facts": [
+      "桁行七间、梁间五间，单层入母屋造瓦葺；柱间门窗与厚重屋顶形成横向展开的立面。",
+      "现存堂按奈良时代、8世纪定位，750为年表约略排序值；天平十九年（747）是寺院初创背景。"
+    ],
+    "caption": [
+      "新药师寺本堂",
+      "奈良时代，8世纪"
+    ],
+    "legacyNames": [
+      "Shinyakushiji Main Hall",
+      "新薬師寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_murouji_kondo",
+    "name": "室生寺金堂",
+    "short": "室生寺金堂",
+    "sub": "室生寺金堂本体",
+    "country": "JP",
+    "dyn": "jp_heian",
+    "tag": "平安",
+    "era": "9世纪",
+    "year": 850,
+    "yearApprox": true,
+    "yearLabel": "9世纪",
+    "yearNote": "主体按9世纪平安前期定位，850为约略排序值；1672年增建前部，图版保留现存完整轮廓，不将全部构件视为同年。",
+    "place": "日本 · 奈良县 · 宇陀",
+    "placeKey": "jp_uda",
+    "types": [
+      "hall"
+    ],
+    "lede": "金堂立在室生山的坡面，前缘侧由高柱支撑，柿葺屋顶沿山势展开。主体保留平安前期木构，今日向前伸出的部分包含江户时期增建。",
+    "facts": [
+      "现状五间五间，入母屋造柿葺；前方高床与山坡上的基座共同形成堂的轮廓。",
+      "主体按9世纪平安前期定位，850为约略排序值；1672年增建前部，图版保留现存完整轮廓，不将全部构件视为同年。"
+    ],
+    "caption": [
+      "室生寺金堂",
+      "平安前期，9世纪"
+    ],
+    "legacyNames": [
+      "Murōji Golden Hall",
+      "室生寺金堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_murouji_pagoda",
+    "name": "室生寺五重塔",
+    "short": "室生寺五重塔",
+    "sub": "室生寺五重塔本体",
+    "country": "JP",
+    "dyn": "jp_heian",
+    "tag": "平安",
+    "era": "平安初期",
+    "year": 800,
+    "yearApprox": true,
+    "yearLabel": "平安初期",
+    "yearNote": "文化财资料归平安初期，具体建造年未详；800为年表约值。1998年台风损伤后修理，按现存形态描绘。",
+    "place": "日本 · 奈良县 · 宇陀",
+    "placeKey": "jp_uda",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "小尺度的五重塔立在室生寺山中，木片屋顶层层密叠，相轮上方另有独特的覆钵与伞盖。图版只取塔本体，不补成大型平地寺院的比例。",
+    "facts": [
+      "方三间五重，通高约16.22米，木片葺屋面，朱木与白壁相间。",
+      "文化财资料归平安初期，具体建造年未详；800为年表约值。1998年台风损伤后修理，按现存形态描绘。"
+    ],
+    "caption": [
+      "室生寺五重塔",
+      "平安前期，约800年"
+    ],
+    "legacyNames": [
+      "Murōji Five-storey Pagoda",
+      "室生寺五重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_engakuji_shariden",
+    "name": "圆觉寺舍利殿",
+    "short": "圆觉寺舍利殿",
+    "sub": "圆觉寺舍利殿本体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "15世纪前半",
+    "year": 1425,
+    "yearApprox": true,
+    "yearLabel": "15世纪前半",
+    "yearNote": "文化厅相关资料归15世纪前半，1425为约值；1563年火灾后移入原太平寺佛殿，不将移建年写成主体建造年。",
+    "place": "日本 · 神奈川县 · 镰仓",
+    "placeKey": "jp_kamakura_city",
+    "types": [
+      "hall"
+    ],
+    "lede": "低层裳阶环绕舍利殿，深檐与细密斗栱把禅宗样的结构集中在小堂之上。现存建筑由太平寺佛殿移来，并非1282年圆觉寺初创时的原殿。",
+    "facts": [
+      "方三间主屋附裳阶，入母屋造桧皮葺；两道檐口属于主屋与裳阶，不当作二层楼阁。",
+      "文化厅相关资料归15世纪前半，1425为约值；1563年火灾后移入原太平寺佛殿，不将移建年写成主体建造年。"
+    ],
+    "caption": [
+      "圆觉寺舍利殿",
+      "室町时代，约15世纪"
+    ],
+    "legacyNames": [
+      "Engakuji Shariden",
+      "円覚寺舎利殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kozanji_butsuden",
+    "name": "功山寺佛殿",
+    "short": "功山寺佛殿",
+    "sub": "功山寺佛殿本体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1320年",
+    "year": 1320,
+    "yearApprox": false,
+    "yearLabel": "1320年",
+    "yearNote": "柱墨书记元应二年（1320）；图版与年表按佛殿现存主体纪年，寺院1327年开创另列背景。",
+    "place": "日本 · 山口县 · 下关",
+    "placeKey": "jp_shimonoseki",
+    "types": [
+      "hall"
+    ],
+    "lede": "功山寺佛殿的圆柱、花头窗与裳阶，保存镰仓后期禅宗样的组合。柱上墨书将建筑定位到1320年，比寺院1327年的开创沿革更早。",
+    "facts": [
+      "方三间附裳阶，入母屋造桧皮葺；柱上密集组物、花头窗和梁架共同呈现禅宗样。",
+      "柱墨书记元应二年（1320）；图版与年表按佛殿现存主体纪年，寺院1327年开创另列背景。"
+    ],
+    "caption": [
+      "功山寺佛殿",
+      "镰仓元应二年（1320）"
+    ],
+    "legacyNames": [
+      "Kōzanji Buddha Hall",
+      "功山寺仏殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_hikone_tenshu",
+    "name": "彦根城天守",
+    "short": "彦根城天守",
+    "sub": "彦根城 · 天守本体",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "1606—1607年",
+    "year": 1606,
+    "yearApprox": true,
+    "yearLabel": "1606—1607年",
+    "yearNote": "文化财数据库记1606年，彦根市营建说明另记1607年完成；按1606—1607年范围定位，属桃山艺术史时期。",
+    "place": "日本 · 滋贺县 · 彦根",
+    "placeKey": "jp_hikone",
+    "types": [
+      "castle"
+    ],
+    "lede": "唐破风、切妻与入母屋的破风交错，三重天守把桃山末期的城郭轮廓压缩在不大的体量里。图版取彦根城天守本体与石垣，不收入城门与周边橹。",
+    "facts": [
+      "三重三阶，白漆喰壁、深色木部与灰瓦屋顶相间，最上层花头窗与栏杆可辨。",
+      "文化财数据库记1606年，彦根市营建说明另记1607年完成；按1606—1607年范围定位，属桃山艺术史时期。"
+    ],
+    "caption": [
+      "彦根城 · 天守本体",
+      "桃山庆长十一至十二年（1606—1607）"
+    ],
+    "legacyNames": [
+      "Hikone Castle Keep",
+      "彦根城天守"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_matsue_tenshu",
+    "name": "松江城天守",
+    "short": "松江城天守",
+    "sub": "松江城 · 天守本体",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "1611年",
+    "year": 1611,
+    "yearApprox": false,
+    "yearLabel": "1611年",
+    "yearNote": "庆长十六年（1611）营建由祈祷札等史料确认；与1610年的城郭营建过程区分。",
+    "place": "日本 · 岛根县 · 松江",
+    "placeKey": "jp_matsue",
+    "types": [
+      "castle"
+    ],
+    "lede": "黑色雨板包围下部楼层，最上层白壁与望楼高出石垣。松江城天守的祈祷札确认1611年的营建年代；外观四重，内部五阶并设地阶。",
+    "facts": [
+      "外四重、内五阶地阶一层，黑雨板与白漆喰分层；图版含天守相连的入口小突部。",
+      "庆长十六年（1611）营建由祈祷札等史料确认；与1610年的城郭营建过程区分。"
+    ],
+    "caption": [
+      "松江城 · 天守本体",
+      "桃山庆长十六年（1611）"
+    ],
+    "legacyNames": [
+      "Matsue Castle Keep",
+      "松江城天守"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_burakuji_yakushido",
+    "name": "丰乐寺药师堂",
+    "short": "丰乐寺药师堂",
+    "sub": "丰乐寺 · 药师堂",
+    "country": "JP",
+    "dyn": "jp_heian",
+    "tag": "平安",
+    "era": "12世纪",
+    "year": 1151,
+    "yearApprox": true,
+    "yearLabel": "12世纪",
+    "yearNote": "现存堂按平安后期、12世纪定位；1151是堂内造像铭年，本条仅作约值，不称整座药师堂当年确切竣工。",
+    "place": "日本 · 高知县 · 大丰",
+    "placeKey": "jp_otoyo",
+    "types": [
+      "hall"
+    ],
+    "lede": "五间木堂以柿葺大屋顶展开，门窗与缘侧几乎不施繁饰。丰乐寺药师堂保存平安后期的乡土木构尺度，1151年的造像铭为其年代提供背景。",
+    "facts": [
+      "五间五间，单层入母屋造柿葺，板壁、木门、格窗与环绕缘侧；图版不画前方小供台屋。",
+      "现存堂按平安后期、12世纪定位；1151是堂内造像铭年，本条仅作约值，不称整座药师堂当年确切竣工。"
+    ],
+    "caption": [
+      "丰乐寺 · 药师堂",
+      "平安后期，12世纪"
+    ],
+    "legacyNames": [
+      "Burakuji Yakushidō",
+      "豊楽寺薬師堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kamitani_honden",
+    "name": "神谷神社本殿",
+    "short": "神谷神社本殿",
+    "sub": "神谷神社本殿",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1219年",
+    "year": 1219,
+    "yearApprox": false,
+    "yearLabel": "1219年",
+    "yearNote": "墨书纪承久元年（1219）。参考照片为2022年雷火受损前形态，修理沿革与原构纪年分别记录。",
+    "place": "日本 · 香川县 · 坂出",
+    "placeKey": "jp_sakaide",
+    "types": [
+      "shrine"
+    ],
+    "lede": "三间流造的长前檐伸向阶梯，神谷神社本殿以素木与简洁柱廊保存镰仓初期神社形制。1219年墨书把它定位在承久元年。",
+    "facts": [
+      "三间社流造、桧皮葺，高床与前方阶梯相接；本殿与前廊柱形分别表现。",
+      "墨书纪承久元年（1219）。参考照片为2022年雷火受损前形态，修理沿革与原构纪年分别记录。"
+    ],
+    "caption": [
+      "神谷神社本殿",
+      "镰仓建保七年（1219）"
+    ],
+    "legacyNames": [
+      "Kandani Shrine Main Sanctuary",
+      "神谷神社本殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_rurikoji_pagoda",
+    "name": "瑠璃光寺五重塔",
+    "short": "瑠璃光寺五重塔",
+    "sub": "瑠璃光寺五重塔",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1442年",
+    "year": 1442,
+    "yearApprox": false,
+    "yearLabel": "1442年",
+    "yearNote": "嘉吉二年（1442）完成；现存塔经过修理，屋面更新不改写原构纪年。",
+    "place": "日本 · 山口县 · 山口",
+    "placeKey": "jp_yamaguchi",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "桧皮屋檐由下而上轻巧收分，只有第二重设置栏杆。瑠璃光寺五重塔建于1442年，线稿按近年修理后的官方实拍取塔本体。",
+    "facts": [
+      "方三间五重，通高约31.2米，桧皮葺；二重栏杆、逐层收分与高相轮为识别点。",
+      "嘉吉二年（1442）完成；现存塔经过修理，屋面更新不改写原构纪年。"
+    ],
+    "caption": [
+      "瑠璃光寺五重塔",
+      "室町嘉吉二年（1442）"
+    ],
+    "legacyNames": [
+      "Rurikōji Five-storey Pagoda",
+      "瑠璃光寺五重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_kibitsu_honden",
+    "name": "吉备津神社本殿及拜殿",
+    "short": "吉备津神社本殿及拜殿",
+    "sub": "吉备津神社 · 本殿及拜殿",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1425年",
+    "year": 1425,
+    "yearApprox": false,
+    "yearLabel": "1425年",
+    "yearNote": "现存本殿及拜殿于应永三十二年（1425）再建；早期祭祀传说不作为现存木构年代。",
+    "place": "日本 · 冈山县 · 冈山",
+    "placeKey": "jp_okayama",
+    "types": [
+      "shrine"
+    ],
+    "lede": "本殿的两组大屋顶并列，拜殿从前方伸出，形成吉备津神社独特的比翼入母屋轮廓。图版保留本殿与拜殿这一指定组合，不只截取其中一座。",
+    "facts": [
+      "本殿为比翼入母屋造桧皮葺，前接拜殿；成对破风、千木与不同层次的屋面共同构成轮廓。",
+      "现存本殿及拜殿于应永三十二年（1425）再建；早期祭祀传说不作为现存木构年代。"
+    ],
+    "caption": [
+      "吉备津神社 · 本殿及拜殿",
+      "室町应永三十二年（1425）"
+    ],
+    "legacyNames": [
+      "Kibitsu Shrine Main and Worship Halls",
+      "吉備津神社本殿及び拝殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kamosu_honden",
+    "name": "神魂神社本殿",
+    "short": "神魂神社本殿",
+    "sub": "神魂神社 · 本殿",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "1583年",
+    "year": 1583,
+    "yearApprox": false,
+    "yearLabel": "1583年",
+    "yearNote": "文化财资料将现存本殿定位在天正十一年（1583）；1346年铭涉及旧构材料，不将本殿整体归为14世纪。",
+    "place": "日本 · 岛根县 · 松江",
+    "placeKey": "jp_matsue",
+    "types": [
+      "shrine"
+    ],
+    "lede": "粗大木柱托起高床，两间见方的神魂神社本殿以陡峭屋顶、千木和鲣木形成大社造轮廓。图版只取高处本殿，不收入下方拜殿。",
+    "facts": [
+      "两间两间的大社造高床本殿，木片葺、千木与鲣木；山墙侧入口与阶梯偏置。",
+      "文化财资料将现存本殿定位在天正十一年（1583）；1346年铭涉及旧构材料，不将本殿整体归为14世纪。"
+    ],
+    "caption": [
+      "神魂神社 · 本殿",
+      "桃山天正十一年（1583）"
+    ],
+    "legacyNames": [
+      "Kamosu Shrine Main Sanctuary",
+      "神魂神社本殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kongosanmaiin_tahoto",
+    "name": "金刚三昧院多宝塔",
+    "short": "金刚三昧院多宝塔",
+    "sub": "金刚三昧院 · 多宝塔",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1223年",
+    "year": 1223,
+    "yearApprox": false,
+    "yearLabel": "1223年",
+    "yearNote": "贞应二年（1223）建立；图版取多宝塔本体，不混入根来寺五间大塔的比例。",
+    "place": "日本 · 和歌山县 · 高野",
+    "placeKey": "jp_koya",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "白色圆腹夹在两层深褐屋檐之间，小巧多宝塔把方形下层与圆形上层接在一起。金刚三昧院塔建于1223年，图版保留三间下层的小尺度。",
+    "facts": [
+      "初重方三间、上层圆形，双重桧皮屋面，中央朱门、格窗与相轮。",
+      "贞应二年（1223）建立；图版取多宝塔本体，不混入根来寺五间大塔的比例。"
+    ],
+    "caption": [
+      "金刚三昧院 · 多宝塔",
+      "镰仓贞应二年（1223）"
+    ],
+    "legacyNames": [
+      "Kongōsanmaiin Tahōtō",
+      "金剛三昧院多宝塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_negoroji_daito",
+    "name": "根来寺大塔",
+    "short": "根来寺大塔",
+    "sub": "根来寺 · 大塔本体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1547年",
+    "year": 1547,
+    "yearApprox": false,
+    "yearLabel": "1547年",
+    "yearNote": "文化财资料记天文十六年（1547）完成；较早的开工与寺院创立不替代塔的完成年代。",
+    "place": "日本 · 和歌山县 · 岩出",
+    "placeKey": "jp_iwade",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "方五间的下层托起白色圆腹与圆形上层，根来寺大塔把多宝塔的构成放大为可进入的内部空间。现存塔1547年完成，图版不收入相邻大传法堂。",
+    "facts": [
+      "初重五间、上层圆形，双层瓦葺大屋顶、白色圆腹与高相轮；周围缘侧环绕。",
+      "文化财资料记天文十六年（1547）完成；较早的开工与寺院创立不替代塔的完成年代。"
+    ],
+    "caption": [
+      "根来寺 · 大塔",
+      "室町天文十六年（1547）"
+    ],
+    "legacyNames": [
+      "Negoroji Daitō",
+      "根来寺大塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_sofukuji_daiou",
+    "name": "崇福寺大雄宝殿",
+    "short": "崇福寺大雄宝殿",
+    "sub": "崇福寺 · 大雄宝殿",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1646年；约1681年加上层",
+    "year": 1646,
+    "yearApprox": false,
+    "yearLabel": "1646年；约1681年加上层",
+    "yearNote": "初层正保三年（1646）完成，上层约天和元年（1681）增建；图版描现存两层屋面，不称现状全部建于1646年。",
+    "place": "日本 · 长崎县 · 长崎",
+    "placeKey": "jp_nagasaki",
+    "types": [
+      "hall"
+    ],
+    "lede": "朱柱白壁之间，福建匠作的构件在长崎重新组装为佛殿。崇福寺大雄宝殿初层于1646年建成，约1681年增设上层屋顶，现状两道檐口包含两期营建。",
+    "facts": [
+      "红色木柱、格扇与白壁，瓦葺屋面呈上下两层；采用中国南方营造特征。",
+      "初层正保三年（1646）完成，上层约天和元年（1681）增建；图版描现存两层屋面，不称现状全部建于1646年。"
+    ],
+    "caption": [
+      "崇福寺 · 大雄宝殿",
+      "江户正保三年（1646）；上层约1681年"
+    ],
+    "legacyNames": [
+      "Sōfukuji Daiōhōden",
+      "崇福寺大雄宝殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_sofukuji_daiippomon",
+    "name": "崇福寺第一峰门",
+    "short": "崇福寺第一峰门",
+    "sub": "崇福寺 · 第一峰门",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1695年再建",
+    "year": 1695,
+    "yearApprox": false,
+    "yearLabel": "1695年再建",
+    "yearNote": "长崎市现行资料记元禄八年（1695）再建，构件在宁波加工后运来组装；1629年等初建沿革不作为现存门纪年。",
+    "place": "日本 · 长崎县 · 长崎",
+    "placeKey": "jp_nagasaki",
+    "types": [
+      "gate"
+    ],
+    "lede": "檐下三叶栱与扇形垂木层层展开，第一峰门保存宁波匠作移来长崎的门楼形态。图版取寺内这座单门，不混同外侧三门。",
+    "facts": [
+      "单一门洞、厚重瓦檐，朱色门柱与彩色斗栱；三叶栱与扇垂木为重点。",
+      "长崎市现行资料记元禄八年（1695）再建，构件在宁波加工后运来组装；1629年等初建沿革不作为现存门纪年。"
+    ],
+    "caption": [
+      "崇福寺 · 第一峰门",
+      "江户元禄八年（1695）"
+    ],
+    "legacyNames": [
+      "Sōfukuji Daiippōmon",
+      "崇福寺第一峰門"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_aoi_aso",
+    "name": "青井阿苏神社",
+    "short": "青井阿苏神社",
+    "sub": "青井阿苏神社 · 楼门",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "1613年楼门",
+    "year": 1613,
+    "yearApprox": false,
+    "yearLabel": "1613年楼门",
+    "yearNote": "所绘楼门为庆长十八年（1613），神社其余主要建筑约1610—1613年营建；本条以楼门主体纪年，归桃山艺术史时期。",
+    "place": "日本 · 熊本县 · 人吉",
+    "placeKey": "jp_hitoyoshi",
+    "types": [
+      "shrine"
+    ],
+    "lede": "厚厚的茅葺寄栋屋顶压在两层楼门之上，檐角的面具雕刻与残存彩色细部为人吉神社增添独特表情。本条取1613年楼门，神社本殿等建筑不入图。",
+    "facts": [
+      "三间一户楼门，单檐寄栋造茅葺，二层木构与角部雕刻；并非入母屋造。",
+      "所绘楼门为庆长十八年（1613），神社其余主要建筑约1610—1613年营建；本条以楼门主体纪年，归桃山艺术史时期。"
+    ],
+    "caption": [
+      "青井阿苏神社 · 楼门",
+      "桃山庆长十八年（1613）"
+    ],
+    "legacyNames": [
+      "Aoi Aso Shrine Gate",
+      "青井阿蘇神社楼門"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_tamaudun",
+    "name": "玉陵",
+    "short": "玉陵",
+    "sub": "玉陵 · 三室石造陵墓",
+    "country": "JP",
+    "dyn": "jp_ryukyu",
+    "tag": "琉球",
+    "era": "1501年；战后修复",
+    "year": 1501,
+    "yearApprox": false,
+    "yearLabel": "1501年；战后修复",
+    "yearNote": "1501年尚真王营建，1945年战争中受损、战后修复。纪年保留原陵创建年并明确修复沿革，时代归琉球。",
+    "place": "日本 · 冲绳县 · 那霸",
+    "placeKey": "jp_naha",
+    "types": [
+      "tomb"
+    ],
+    "lede": "三座石室并排，以石材模仿木造殿宇的屋顶与梁柱。玉陵由尚真王于1501年营建，是琉球王室陵墓；今日形态包含战争破坏后的修复。",
+    "facts": [
+      "三室连排、石造仿木屋面，前方石台、门口与石狮；图版不补成木构寺殿。",
+      "1501年尚真王营建，1945年战争中受损、战后修复。纪年保留原陵创建年并明确修复沿革，时代归琉球。"
+    ],
+    "caption": [
+      "玉陵 · 三室石造陵墓",
+      "琉球王国，1501年"
+    ],
+    "legacyNames": [
+      "Tamaudun Royal Mausoleum",
+      "玉陵"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_myoikian_taian",
+    "name": "妙喜庵待庵",
+    "short": "妙喜庵待庵",
+    "sub": "妙喜庵 · 待庵外观",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "传约1582年",
+    "year": 1582,
+    "yearApprox": true,
+    "yearLabel": "传约1582年",
+    "yearNote": "文化财数据库定天正期（1573—1592）；传统说法为约1582年、千利休作，不作确切竣工年承诺。图版不收入现代参观廊架。",
+    "place": "日本 · 京都府 · 大山崎",
+    "placeKey": "jp_oyamazaki",
+    "types": [
+      "residence"
+    ],
+    "lede": "两叠的茶室以土壁、竹木与低入口构成最小的待客空间。待庵传统上与千利休和1582年山崎合战联系，本条保留这一传承的约略性质。",
+    "facts": [
+      "两叠茶室的土壁、格窗、低入口与竹木小庇；屋面为木片葺。",
+      "文化财数据库定天正期（1573—1592）；传统说法为约1582年、千利休作，不作确切竣工年承诺。图版不收入现代参观廊架。"
+    ],
+    "caption": [
+      "妙喜庵 · 待庵外观",
+      "桃山天正年间；传1582年前后"
+    ],
+    "legacyNames": [
+      "Myōkian Tai-an",
+      "妙喜庵待庵"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_urakuen_joan",
+    "name": "如庵",
+    "short": "如庵",
+    "sub": "有乐苑 · 如庵茶室外观（照片右侧小茶室）",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "约1618年；1972年移建",
+    "year": 1618,
+    "yearApprox": true,
+    "yearLabel": "约1618年；1972年移建",
+    "yearNote": "文化厅定元和四年頃（约1618），1972年移至犬山。图版只取如庵茶室，不收入旁边旧正传院书院，移建年不替代原构年代。",
+    "place": "日本 · 爱知县 · 犬山",
+    "placeKey": "jp_inuyama",
+    "types": [
+      "residence"
+    ],
+    "lede": "自然木柱与黄赭土壁围出小茶室，竹格窗和左侧凹入的土间庇形成如庵的外观。约1618年京都建仁寺创建的茶室，如今移存犬山有乐苑。",
+    "facts": [
+      "二叠半台目的茶室，柿葺入母屋式屋面向前出山墙，土间庇凹入，竹格窗强调采光。",
+      "文化厅定元和四年頃（约1618），1972年移至犬山。图版只取如庵茶室，不收入旁边旧正传院书院，移建年不替代原构年代。"
+    ],
+    "caption": [
+      "有乐苑 · 如庵茶室外观",
+      "江户 · 约1618年"
+    ],
+    "legacyNames": [
+      "Urakuen Jo-an",
+      "有楽苑如庵"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_hakogi_house",
+    "name": "箱木家住宅主屋",
+    "short": "箱木家住宅主屋",
+    "sub": "箱木家住宅 · 主屋",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "14世纪",
+    "year": 1350,
+    "yearApprox": true,
+    "yearLabel": "14世纪",
+    "yearNote": "主屋按14世纪定位，1350为约值；1970年代因水库迁建约70米。图版仅主屋，不画后来分离的附属座敷。",
+    "place": "日本 · 兵库县 · 神户",
+    "placeKey": "jp_kobe",
+    "types": [
+      "residence"
+    ],
+    "lede": "厚茅顶与大段泥壁包住箱木家住宅主屋，狭小开口留下中世民居的封闭尺度。主屋经材料研究定位于14世纪，修建水库时迁离原址。",
+    "facts": [
+      "主屋约11.4米乘8.4米，茅葺入母屋式大屋顶，泥壁、旧木柱与小窗；现址按神户地区示意点归并。",
+      "主屋按14世纪定位，1350为约值；1970年代因水库迁建约70米。图版仅主屋，不画后来分离的附属座敷。"
+    ],
+    "caption": [
+      "箱木家住宅 · 主屋",
+      "室町时代，14世纪"
+    ],
+    "legacyNames": [
+      "Hakogi House Main Building",
+      "箱木家住宅主屋"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_furui_house",
+    "name": "旧古井家住宅",
+    "short": "旧古井家住宅",
+    "sub": "旧古井家住宅本体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "15世纪",
+    "year": 1450,
+    "yearApprox": true,
+    "yearLabel": "15世纪",
+    "yearNote": "姬路市资料将现存主屋定位在室町时代、15世纪；1450为年表约略值，不视作确切建造年。",
+    "place": "日本 · 兵库县 · 姬路",
+    "placeKey": "jp_himeji",
+    "types": [
+      "residence"
+    ],
+    "lede": "大茅顶低低覆盖泥壁与木门，旧古井家住宅保存播磨中世民居的朴素轮廓。图版独立取15世纪主屋，不收入旁边现代设施。",
+    "facts": [
+      "单层茅葺入母屋式屋顶，宽厚土壁、木柱与格子窗，保留简洁外轮廓。",
+      "姬路市资料将现存主屋定位在室町时代、15世纪；1450为年表约略值，不视作确切建造年。"
+    ],
+    "caption": [
+      "旧古井家住宅本体",
+      "室町时代，15世纪"
+    ],
+    "legacyNames": [
+      "Former Furui House",
+      "旧古井家住宅"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  }
+]);
+CHAPTERS.push({ key: 'jp_ryukyu', years: '1429 — 1879 · 琉球', blurb: '玉陵以石造仿木形制保存琉球王室墓制。年表按琉球文化史时期单列，原陵营建与战后修复分别说明；1872年改置琉球藩与1879年设冲绳县的行政沿革另见时代依据。' });
+
+// japan-second-20261012 — sourced Japanese buildings; town points are display-only.
+PLACES.push(...[
+  {
+    "key": "jp_ashikaga",
+    "name": "足利",
+    "prov": "栃木县",
+    "country": "JP",
+    "lat": 36.34,
+    "lon": 139.45,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_obama",
+    "name": "小滨",
+    "prov": "福井县",
+    "country": "JP",
+    "lat": 35.5,
+    "lon": 135.75,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_yamanashi_city",
+    "name": "山梨",
+    "prov": "山梨县",
+    "country": "JP",
+    "lat": 35.69,
+    "lon": 138.69,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_aoki",
+    "name": "青木",
+    "prov": "长野县",
+    "country": "JP",
+    "lat": 36.37,
+    "lon": 138.13,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_takayama",
+    "name": "高山",
+    "prov": "岐阜县",
+    "country": "JP",
+    "lat": 36.15,
+    "lon": 137.25,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_nishio",
+    "name": "西尾",
+    "prov": "爱知县",
+    "country": "JP",
+    "lat": 34.86,
+    "lon": 137.06,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_tsu",
+    "name": "津",
+    "prov": "三重县",
+    "country": "JP",
+    "lat": 34.72,
+    "lon": 136.51,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_aisho",
+    "name": "爱庄",
+    "prov": "滋贺县",
+    "country": "JP",
+    "lat": 35.18,
+    "lon": 136.21,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_kora",
+    "name": "甲良",
+    "prov": "滋贺县",
+    "country": "JP",
+    "lat": 35.2,
+    "lon": 136.26,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_konan",
+    "name": "湖南",
+    "prov": "滋贺县",
+    "country": "JP",
+    "lat": 35.0,
+    "lon": 136.08,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_nagahama",
+    "name": "长滨",
+    "prov": "滋贺县",
+    "country": "JP",
+    "lat": 35.38,
+    "lon": 136.27,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_yoshino",
+    "name": "吉野",
+    "prov": "奈良县",
+    "country": "JP",
+    "lat": 34.4,
+    "lon": 135.86,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  },
+  {
+    "key": "jp_sakurai",
+    "name": "樱井",
+    "prov": "奈良县",
+    "country": "JP",
+    "lat": 34.52,
+    "lon": 135.84,
+    "coordinate_note": "城镇约略地图显示点，非建筑本体测绘坐标，不用于附近提醒。"
+  }
+]);
+SITES.push(...[
+  {
+    "id": "jp_bannaji_hondo",
+    "name": "鑁阿寺本堂",
+    "short": "鑁阿寺本堂",
+    "sub": "鑁阿寺现存本堂，正面五间的入母屋顶木构佛殿",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1299年，后经修缮",
+    "year": 1299,
+    "yearApprox": false,
+    "yearLabel": "1299年，后经修缮",
+    "yearNote": "现存本堂以1299年为营建年代；1407—1432年间曾改动柱架和屋面，不以寺院初创年代代替现存建筑。",
+    "place": "日本 · 栃木县 · 足利",
+    "placeKey": "jp_ashikaga",
+    "types": [
+      "hall"
+    ],
+    "lede": "足利氏宅邸旧址上的本堂，以镰仓末期的禅宗样构架和宽阔瓦顶为核心。",
+    "facts": [
+      "本堂面阔、进深各五间，单层入母屋造，瓦葺；只绘本堂，不包含环壕与其他堂塔。",
+      "现存本堂以1299年为营建年代；1407—1432年间曾改动柱架和屋面，不以寺院初创年代代替现存建筑。"
+    ],
+    "caption": [
+      "鑁阿寺现存本堂，正面五间的入母屋顶木构佛殿",
+      "1299年，后经修缮"
+    ],
+    "legacyNames": [
+      "Bannaji Main Hall",
+      "鑁阿寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_myotsuji_hondo",
+    "name": "明通寺本堂",
+    "short": "明通寺本堂",
+    "sub": "明通寺现存本堂单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1258年；1265年供养",
+    "year": 1258,
+    "yearApprox": false,
+    "yearLabel": "1258年；1265年供养",
+    "yearNote": "1258年见于栋札，1265年举行落成供养；两者分别是营建依据与仪式记录。",
+    "place": "日本 · 福井县 · 小滨",
+    "placeKey": "jp_obama",
+    "types": [
+      "hall"
+    ],
+    "lede": "小滨山间的明通寺本堂保存镰仓时期堂宇的厚重比例，与近旁三重塔分别收录。",
+    "facts": [
+      "面阔五间、进深六间，入母屋造、桧皮葺，前檐有向拝。",
+      "1258年见于栋札，1265年举行落成供养；两者分别是营建依据与仪式记录。"
+    ],
+    "caption": [
+      "明通寺现存本堂单体",
+      "1258年；1265年供养"
+    ],
+    "legacyNames": [
+      "Myōtsūji Main Hall",
+      "明通寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_myotsuji_pagoda",
+    "name": "明通寺三重塔",
+    "short": "明通寺三重塔",
+    "sub": "明通寺三重塔单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1270年",
+    "year": 1270,
+    "yearApprox": false,
+    "yearLabel": "1270年",
+    "yearNote": "现存三重塔建于1270年；本堂的1258年栋札不用于这座塔的年代。",
+    "place": "日本 · 福井县 · 小滨",
+    "placeKey": "jp_obama",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "三重塔与本堂并立山中，逐层收分的桧皮屋顶构成明通寺另一处鲜明轮廓。",
+    "facts": [
+      "三层、各层三间，桧皮葺，总高约22.12米；相轮与三重檐一并绘出。",
+      "现存三重塔建于1270年；本堂的1258年栋札不用于这座塔的年代。"
+    ],
+    "caption": [
+      "明通寺三重塔单体",
+      "1270年"
+    ],
+    "legacyNames": [
+      "Myōtsūji Three-Story Pagoda",
+      "明通寺三重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_seihakuji_butsuden",
+    "name": "清白寺佛殿",
+    "short": "清白寺佛殿",
+    "sub": "清白寺1415年佛殿单体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1415年",
+    "year": 1415,
+    "yearApprox": false,
+    "yearLabel": "1415年",
+    "yearNote": "现存佛殿以1415年墨书为年代依据；寺院相传1333年创立，不混同为佛殿营建年。",
+    "place": "日本 · 山梨县 · 山梨",
+    "placeKey": "jp_yamanashi_city",
+    "types": [
+      "hall"
+    ],
+    "lede": "清白寺佛殿体量不大，却以裳阶、密集斗栱和陡峭桧皮屋顶展示禅宗样细部。",
+    "facts": [
+      "本体三间见方，单层附裳阶；上下两道屋面不是两层楼。",
+      "现存佛殿以1415年墨书为年代依据；寺院相传1333年创立，不混同为佛殿营建年。"
+    ],
+    "caption": [
+      "清白寺1415年佛殿单体",
+      "1415年"
+    ],
+    "legacyNames": [
+      "Seihakuji Buddha Hall",
+      "清白寺仏殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_daihoji_pagoda",
+    "name": "大法寺三重塔",
+    "short": "大法寺三重塔",
+    "sub": "大法寺1333年三重塔单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1333年",
+    "year": 1333,
+    "yearApprox": false,
+    "yearLabel": "1333年",
+    "yearNote": "现存三重塔建于1333年，为镰仓末期建筑；年代对应塔本体而非寺院初创。",
+    "place": "日本 · 长野县 · 青木",
+    "placeKey": "jp_aoki",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "青木村的大法寺三重塔以舒展的初层和逐渐收束的上层，被称作“见返塔”。",
+    "facts": [
+      "三重桧皮葺，初层尺度较大；保留屋面收分、斗栱层次与相轮，不附画其他殿堂。",
+      "现存三重塔建于1333年，为镰仓末期建筑；年代对应塔本体而非寺院初创。"
+    ],
+    "caption": [
+      "大法寺1333年三重塔单体",
+      "1333年"
+    ],
+    "legacyNames": [
+      "Daihōji Three-Story Pagoda",
+      "大法寺三重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_ankokuji_kyozo",
+    "name": "安国寺经藏",
+    "short": "安国寺经藏",
+    "sub": "安国寺1408年经藏外观单体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1408年",
+    "year": 1408,
+    "yearApprox": false,
+    "yearLabel": "1408年",
+    "yearNote": "经藏营建年代为1408年；绘制现存经藏外观，不将室内转轮藏误画成外部楼层。",
+    "place": "日本 · 岐阜县 · 高山",
+    "placeKey": "jp_takayama",
+    "types": [
+      "hall"
+    ],
+    "lede": "飞驒安国寺经藏以小型身舍配裳阶，形成紧凑而完整的禅宗样藏经空间。",
+    "facts": [
+      "身舍一间见方，单层附裳阶，外观为三间尺度，入母屋造、柿葺；两道屋面不表示两层楼。",
+      "经藏营建年代为1408年；绘制现存经藏外观，不将室内转轮藏误画成外部楼层。"
+    ],
+    "caption": [
+      "安国寺1408年经藏外观单体",
+      "1408年"
+    ],
+    "legacyNames": [
+      "Ankokuji Sutra Repository",
+      "安国寺経蔵"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_konrenji_midado",
+    "name": "金莲寺弥陀堂",
+    "short": "金莲寺弥陀堂",
+    "sub": "金莲寺现存弥陀堂单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "镰仓时期，约1300年定位",
+    "year": 1300,
+    "yearApprox": true,
+    "yearLabel": "镰仓时期，约1300年定位",
+    "yearNote": "地方资料与文化财数据库将现存堂宇置于镰仓时期；年表约1300年仅作定位，不采用传说1186年为确证营建年。",
+    "place": "日本 · 爱知县 · 西尾",
+    "placeKey": "jp_nishio",
+    "types": [
+      "hall"
+    ],
+    "lede": "金莲寺弥陀堂以低缓柿葺屋顶、深檐与素木小堂，保存朴素的中世净土信仰空间。",
+    "facts": [
+      "主体三间见方、寄栋造、柿葺；按现状保留低矮前檐部分，不扩展为寺院全景。",
+      "地方资料与文化财数据库将现存堂宇置于镰仓时期；年表约1300年仅作定位，不采用传说1186年为确证营建年。"
+    ],
+    "caption": [
+      "金莲寺现存弥陀堂单体",
+      "镰仓时期，约1300年定位"
+    ],
+    "legacyNames": [
+      "Konrenji Amida Hall",
+      "金蓮寺弥陀堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_senshuji_mieido",
+    "name": "专修寺御影堂",
+    "short": "专修寺御影堂",
+    "sub": "专修寺1666年上梁的御影堂单体",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1666年；1679年落成供养",
+    "year": 1666,
+    "yearApprox": false,
+    "yearLabel": "1666年；1679年落成供养",
+    "yearNote": "栋札所记营建年为1666年，落成供养在1679年；年表以现存堂宇的营建记录定位。",
+    "place": "日本 · 三重县 · 津",
+    "placeKey": "jp_tsu",
+    "types": [
+      "hall"
+    ],
+    "lede": "专修寺御影堂以宽阔瓦顶与巨大木构内部，为高田本山的核心礼拜堂之一。",
+    "facts": [
+      "桁行、梁间各九间，单层入母屋造、本瓦葺，正面三间向拝。",
+      "栋札所记营建年为1666年，落成供养在1679年；年表以现存堂宇的营建记录定位。"
+    ],
+    "caption": [
+      "专修寺1666年上梁的御影堂单体",
+      "1666年；1679年落成供养"
+    ],
+    "legacyNames": [
+      "Senjuji Mieidō",
+      "専修寺御影堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_senshuji_nyoraido",
+    "name": "专修寺如来堂",
+    "short": "专修寺如来堂",
+    "sub": "专修寺1748年如来堂单体",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1748年",
+    "year": 1748,
+    "yearApprox": false,
+    "yearLabel": "1748年",
+    "yearNote": "现存如来堂于1748年落成；与御影堂分列，保留各自的营建年代和所绘范围。",
+    "place": "日本 · 三重县 · 津",
+    "placeKey": "jp_tsu",
+    "types": [
+      "hall"
+    ],
+    "lede": "如来堂以高耸主屋面、周匝裳阶和装饰性向拝，呈现江户时期大型佛堂的华丽轮廓。",
+    "facts": [
+      "主体五间宽、四间深，单层附裳阶，瓦葺；正面三间向拝，保留唐破风。",
+      "现存如来堂于1748年落成；与御影堂分列，保留各自的营建年代和所绘范围。"
+    ],
+    "caption": [
+      "专修寺1748年如来堂单体",
+      "1748年"
+    ],
+    "legacyNames": [
+      "Senjuji Nyoraidō",
+      "専修寺如来堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_onjoji_kondo",
+    "name": "园城寺金堂",
+    "short": "园城寺金堂",
+    "sub": "园城寺1599年再建金堂单体",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "1599年再建",
+    "year": 1599,
+    "yearApprox": false,
+    "yearLabel": "1599年再建",
+    "yearNote": "现存金堂由北政所于1599年再建；园城寺的古老创立史与这座金堂的年代分别说明。",
+    "place": "日本 · 滋贺县 · 大津",
+    "placeKey": "jp_otsu",
+    "types": [
+      "hall"
+    ],
+    "lede": "三井寺金堂将七间见方的堂身置于宽大的桧皮入母屋顶下，轮廓稳重舒展。",
+    "facts": [
+      "单层、桧皮葺，正面一间向拝；只绘金堂，其他园城寺建筑另计。",
+      "现存金堂由北政所于1599年再建；园城寺的古老创立史与这座金堂的年代分别说明。"
+    ],
+    "caption": [
+      "园城寺1599年再建金堂单体",
+      "1599年再建"
+    ],
+    "legacyNames": [
+      "Onjōji Kondō",
+      "園城寺金堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kongorinji_hondo",
+    "name": "金刚轮寺本堂",
+    "short": "金刚轮寺本堂",
+    "sub": "金刚轮寺现存本堂单体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "14世纪，约1350年定位",
+    "year": 1350,
+    "yearApprox": true,
+    "yearLabel": "14世纪，约1350年定位",
+    "yearNote": "文化财数据库将现存本堂置于1333—1392年；1288年是须弥坛金具铭记，不能直接作为堂宇营建年。约1350年仅作年表定位。",
+    "place": "日本 · 滋贺县 · 爱庄",
+    "placeKey": "jp_aisho",
+    "types": [
+      "hall"
+    ],
+    "lede": "湖东三山之一的金刚轮寺，本堂以中世和样堂宇的宽檐、素木与桧皮屋面呈现层次。",
+    "facts": [
+      "堂身七间见方，单层入母屋造、桧皮葺；关注正面柱列、向拝和高起屋脊。",
+      "文化财数据库将现存本堂置于1333—1392年；1288年是须弥坛金具铭记，不能直接作为堂宇营建年。约1350年仅作年表定位。"
+    ],
+    "caption": [
+      "金刚轮寺现存本堂单体",
+      "14世纪，约1350年定位"
+    ],
+    "legacyNames": [
+      "Kongōrinji Main Hall",
+      "金剛輪寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_saimyoji_hondo",
+    "name": "西明寺本堂",
+    "short": "西明寺本堂",
+    "sub": "滋贺甲良西明寺本堂单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "镰仓前期；后经扩建",
+    "year": 1225,
+    "yearApprox": true,
+    "yearLabel": "镰仓前期；后经扩建",
+    "yearNote": "核心为镰仓前期建筑，文化财资料给出1185—1274年范围；现状经过扩建与向拝增设，约1225年仅定位早期主体。",
+    "place": "日本 · 滋贺县 · 甲良",
+    "placeKey": "jp_kora",
+    "types": [
+      "hall"
+    ],
+    "lede": "西明寺本堂的宽大桧皮屋顶覆盖历次扩建留下的空间，外观与内部构架共同记录中世演变。",
+    "facts": [
+      "早期五间主体后扩为七间见方；正面三间向拝为室町中期增设。",
+      "核心为镰仓前期建筑，文化财资料给出1185—1274年范围；现状经过扩建与向拝增设，约1225年仅定位早期主体。"
+    ],
+    "caption": [
+      "滋贺甲良西明寺本堂单体",
+      "镰仓前期；后经扩建"
+    ],
+    "legacyNames": [
+      "Saimyōji Main Hall",
+      "西明寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_saimyoji_pagoda",
+    "name": "西明寺三重塔",
+    "short": "西明寺三重塔",
+    "sub": "滋贺甲良西明寺三重塔单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "镰仓后期，约1300年定位",
+    "year": 1300,
+    "yearApprox": true,
+    "yearLabel": "镰仓后期，约1300年定位",
+    "yearNote": "官方资料将三重塔置于镰仓后期，数据库范围1275—1332年；约1300年不是确证的单年营建日期。",
+    "place": "日本 · 滋贺县 · 甲良",
+    "placeKey": "jp_kora",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "西明寺三重塔以规则收分的桧皮屋檐和精密木构，补充湖东中世堂塔的组合。",
+    "facts": [
+      "三重、三间方形，各层桧皮葺；只绘塔外观，内部壁画不移至外壁。",
+      "官方资料将三重塔置于镰仓后期，数据库范围1275—1332年；约1300年不是确证的单年营建日期。"
+    ],
+    "caption": [
+      "滋贺甲良西明寺三重塔单体",
+      "镰仓后期，约1300年定位"
+    ],
+    "legacyNames": [
+      "Saimyōji Three-Story Pagoda",
+      "西明寺三重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_jorakuji_hondo",
+    "name": "常乐寺本堂",
+    "short": "常乐寺本堂",
+    "sub": "常乐寺现存本堂单体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1360年火灾后再建",
+    "year": 1360,
+    "yearApprox": true,
+    "yearLabel": "1360年火灾后再建",
+    "yearNote": "本堂为1360年火灾后再建，具体落成年未能确证，后来又有室町后期改造；年表约1360年定位。",
+    "place": "日本 · 滋贺县 · 湖南",
+    "placeKey": "jp_konan",
+    "types": [
+      "hall"
+    ],
+    "lede": "湖南三山的常乐寺本堂，以深阔桧皮屋顶与前檐空间构成南北朝时期堂宇的安定形象。",
+    "facts": [
+      "七间宽、六间深，入母屋造、桧皮葺，正面三间向拝；只绘现存本堂。",
+      "本堂为1360年火灾后再建，具体落成年未能确证，后来又有室町后期改造；年表约1360年定位。"
+    ],
+    "caption": [
+      "常乐寺现存本堂单体",
+      "1360年火灾后再建"
+    ],
+    "legacyNames": [
+      "Jōrakuji Main Hall",
+      "常楽寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_jorakuji_pagoda",
+    "name": "常乐寺三重塔",
+    "short": "常乐寺三重塔",
+    "sub": "常乐寺1400年三重塔单体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "1400年",
+    "year": 1400,
+    "yearApprox": false,
+    "yearLabel": "1400年",
+    "yearNote": "1398年有募资记录，1400年见于瓦铭并据此定年；募资与塔的营建年代分别保留。",
+    "place": "日本 · 滋贺县 · 湖南",
+    "placeKey": "jp_konan",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "常乐寺三重塔在山坡上逐层展开瓦檐，长相轮使塔的轮廓更为修长。",
+    "facts": [
+      "三重、各层三间，本瓦葺，总高约22.8米；相轮约占全高三分之一。",
+      "1398年有募资记录，1400年见于瓦铭并据此定年；募资与塔的营建年代分别保留。"
+    ],
+    "caption": [
+      "常乐寺1400年三重塔单体",
+      "1400年"
+    ],
+    "legacyNames": [
+      "Jōrakuji Three-Story Pagoda",
+      "常楽寺三重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_zensuiji_hondo",
+    "name": "善水寺本堂",
+    "short": "善水寺本堂",
+    "sub": "善水寺现存本堂单体",
+    "country": "JP",
+    "dyn": "jp_muromachi",
+    "tag": "室町",
+    "era": "传1366年再建",
+    "year": 1366,
+    "yearApprox": true,
+    "yearLabel": "传1366年再建",
+    "yearNote": "文化财资料将本堂定为南北朝建筑，传1366年再建且与样式相合；保留传承限定，不将落成年写成完全确证。",
+    "place": "日本 · 滋贺县 · 湖南",
+    "placeKey": "jp_konan",
+    "types": [
+      "hall"
+    ],
+    "lede": "善水寺本堂以七间宽的堂身和大幅桧皮屋顶，保存湖南中世佛堂的深厚体量。",
+    "facts": [
+      "七间宽、五间深，单层入母屋造、桧皮葺；参考现存板扉、格子与高床柱列。",
+      "文化财资料将本堂定为南北朝建筑，传1366年再建且与样式相合；保留传承限定，不将落成年写成完全确证。"
+    ],
+    "caption": [
+      "善水寺现存本堂单体",
+      "传1366年再建"
+    ],
+    "legacyNames": [
+      "Zensuiji Main Hall",
+      "善水寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_chojuji_hondo",
+    "name": "长寿寺本堂",
+    "short": "长寿寺本堂",
+    "sub": "湖南长寿寺现存本堂单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "镰仓前期，约1200年定位",
+    "year": 1200,
+    "yearApprox": true,
+    "yearLabel": "镰仓前期，约1200年定位",
+    "yearNote": "文化财数据库将现存本堂置于1185—1274年。寺院沿革另有平安时期的说法；本条按现存建筑分类，约1200年仅作定位。",
+    "place": "日本 · 滋贺县 · 湖南",
+    "placeKey": "jp_konan",
+    "types": [
+      "hall"
+    ],
+    "lede": "长寿寺本堂以寄栋桧皮屋顶与简洁的正面，展现湖南早期中世佛堂的素朴面貌。",
+    "facts": [
+      "五间见方，寄栋造、桧皮葺，正面三间向拝；不把其他时代的附属建筑并入主体。",
+      "文化财数据库将现存本堂置于1185—1274年。寺院沿革另有平安时期的说法；本条按现存建筑分类，约1200年仅作定位。"
+    ],
+    "caption": [
+      "湖南长寿寺现存本堂单体",
+      "镰仓前期，约1200年定位"
+    ],
+    "legacyNames": [
+      "Chōjuji Main Hall",
+      "長寿寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_hogonji_karamon",
+    "name": "宝严寺唐门",
+    "short": "宝严寺唐门",
+    "sub": "宝严寺1603年移建唐门单体",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "1603年移建记录",
+    "year": 1603,
+    "yearApprox": false,
+    "yearLabel": "1603年移建记录",
+    "yearNote": "现址栋札记录1603年移建；门与丰臣时代建筑的关联另述，不以移建年直接断言全部构件初造年。",
+    "place": "日本 · 滋贺县 · 长滨",
+    "placeKey": "jp_nagahama",
+    "types": [
+      "gate"
+    ],
+    "lede": "竹生岛宝严寺唐门以黑漆、金色饰件和密集彩色雕刻，形成小尺度而华美的入口。",
+    "facts": [
+      "绘制带唐破风的门本体与桧皮屋面，不把后接堂宇或岛上全景作为同一主体。",
+      "现址栋札记录1603年移建；门与丰臣时代建筑的关联另述，不以移建年直接断言全部构件初造年。"
+    ],
+    "caption": [
+      "宝严寺1603年移建唐门单体",
+      "1603年移建记录"
+    ],
+    "legacyNames": [
+      "Hōgonji Karamon",
+      "宝厳寺唐門"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kaijusenji_pagoda",
+    "name": "海住山寺五重塔",
+    "short": "海住山寺五重塔",
+    "sub": "海住山寺现存五重塔单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1214年；1963年复原裳阶",
+    "year": 1214,
+    "yearApprox": false,
+    "yearLabel": "1214年；1963年复原裳阶",
+    "yearNote": "五重塔建于1214年；初重裳阶在1963年修理时复原，图版表现修理后的现状。",
+    "place": "日本 · 京都府 · 木津川",
+    "placeKey": "jp_kizugawa",
+    "types": [
+      "pagoda"
+    ],
+    "lede": "海住山寺五重塔以小巧高耸的塔身和底层裳阶，构成山中寺院的鲜明标志。",
+    "facts": [
+      "五层塔身加初重裳阶，外观共六道屋檐；层数仍是五重，不记为六重塔。",
+      "五重塔建于1214年；初重裳阶在1963年修理时复原，图版表现修理后的现状。"
+    ],
+    "caption": [
+      "海住山寺现存五重塔单体",
+      "1214年；1963年复原裳阶"
+    ],
+    "legacyNames": [
+      "Kaijūsenji Five-Story Pagoda",
+      "海住山寺五重塔"
+    ],
+    "initialStatus": "unvisited",
+    "tall": true
+  },
+  {
+    "id": "jp_daihoonji_hondo",
+    "name": "大报恩寺本堂",
+    "short": "大报恩寺本堂",
+    "sub": "大报恩寺千本释迦堂现存本堂单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1227年",
+    "year": 1227,
+    "yearApprox": false,
+    "yearLabel": "1227年",
+    "yearNote": "现存本堂据栋札定为1227年；1220年为寺院创立，不能代替堂宇营建年代。",
+    "place": "日本 · 京都府 · 京都",
+    "placeKey": "jp_kyoto",
+    "types": [
+      "hall"
+    ],
+    "lede": "千本释迦堂的本堂是京都市区重要的镰仓木构，以素木正面与宽缓屋顶保存古朴比例。",
+    "facts": [
+      "五间见方，单层入母屋造、桧皮葺；前檐向拝按现状绘制。",
+      "现存本堂据栋札定为1227年；1220年为寺院创立，不能代替堂宇营建年代。"
+    ],
+    "caption": [
+      "大报恩寺千本释迦堂现存本堂单体",
+      "1227年"
+    ],
+    "legacyNames": [
+      "Daihōonji Main Hall",
+      "大報恩寺本堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_kinpusenji_zaodo",
+    "name": "金峰山寺藏王堂",
+    "short": "金峰山寺藏王堂",
+    "sub": "金峰山寺现存藏王堂单体",
+    "country": "JP",
+    "dyn": "jp_momoyama",
+    "tag": "桃山",
+    "era": "约1592年再建",
+    "year": 1592,
+    "yearApprox": true,
+    "yearLabel": "约1592年再建",
+    "yearNote": "寺院官方资料称现存藏王堂约1592年完成，文化财资料采用1592年；沿用“约”的限定，区别更早的信仰与创立传承。",
+    "place": "日本 · 奈良县 · 吉野",
+    "placeKey": "jp_yoshino",
+    "types": [
+      "hall"
+    ],
+    "lede": "吉野山藏王堂以巨大的木构堂身、裳阶与深檐，呈现桃山时期山岳信仰建筑的尺度。",
+    "facts": [
+      "绘现存大堂及周匝裳阶，主屋面与裳阶屋面分层，不据此误认两层楼。",
+      "寺院官方资料称现存藏王堂约1592年完成，文化财资料采用1592年；沿用“约”的限定，区别更早的信仰与创立传承。"
+    ],
+    "caption": [
+      "金峰山寺现存藏王堂单体",
+      "约1592年再建"
+    ],
+    "legacyNames": [
+      "Kinpusenji Zaōdō",
+      "金峯山寺蔵王堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_todaiji_daibutsuden",
+    "name": "东大寺大佛殿",
+    "short": "东大寺大佛殿",
+    "sub": "东大寺现存大佛殿外观单体",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1709年落成供养",
+    "year": 1709,
+    "yearApprox": false,
+    "yearLabel": "1709年落成供养",
+    "yearNote": "现存大佛殿于1709年落成供养；不同于8世纪初建、南大门及其他寺院建筑，不以1705年作为现殿落成年。",
+    "place": "日本 · 奈良县 · 奈良",
+    "placeKey": "jp_nara",
+    "types": [
+      "hall"
+    ],
+    "lede": "东大寺大佛殿以巨大的双重屋面、金色鸱尾与白墙木架，构成江户再建佛殿的标志形象。",
+    "facts": [
+      "所绘主体为现存大佛殿外观；“东大寺南大门”既有条目保留，不替换其ID或范围。",
+      "现存大佛殿于1709年落成供养；不同于8世纪初建、南大门及其他寺院建筑，不以1705年作为现殿落成年。"
+    ],
+    "caption": [
+      "东大寺现存大佛殿外观单体",
+      "1709年落成供养"
+    ],
+    "legacyNames": [
+      "Tōdaiji Great Buddha Hall",
+      "東大寺大仏殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_todaiji_nigatsudo",
+    "name": "东大寺二月堂",
+    "short": "东大寺二月堂",
+    "sub": "东大寺1669年再建二月堂单体",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1669年再建",
+    "year": 1669,
+    "yearApprox": false,
+    "yearLabel": "1669年再建",
+    "yearNote": "现存二月堂在1667年火灾后，于1669年再建；修二会仪式更古老，不作为现建筑年代。",
+    "place": "日本 · 奈良县 · 奈良",
+    "placeKey": "jp_nara",
+    "types": [
+      "hall"
+    ],
+    "lede": "二月堂依山建起，以面向奈良盆地的悬造舞台和宽大瓦顶，将礼仪空间伸向坡外。",
+    "facts": [
+      "桁行七间、梁间十间，单层寄栋造、瓦葺；舞台下支柱不是独立楼层。",
+      "现存二月堂在1667年火灾后，于1669年再建；修二会仪式更古老，不作为现建筑年代。"
+    ],
+    "caption": [
+      "东大寺1669年再建二月堂单体",
+      "1669年再建"
+    ],
+    "legacyNames": [
+      "Tōdaiji Nigatsudō",
+      "東大寺二月堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_horyuji_yumedono",
+    "name": "法隆寺梦殿",
+    "short": "法隆寺梦殿",
+    "sub": "法隆寺现存梦殿八角圆堂单体",
+    "country": "JP",
+    "dyn": "jp_nara",
+    "tag": "奈良",
+    "era": "约739年；1230年大修",
+    "year": 739,
+    "yearApprox": true,
+    "yearLabel": "约739年；1230年大修",
+    "yearNote": "梦殿初建于约739年，748年有供养记录；1230年大修改变屋顶坡度与檐深。图版呈现修理后的现存形态。",
+    "place": "日本 · 奈良县 · 斑鸠",
+    "placeKey": "jp_ikaruga",
+    "types": [
+      "hall"
+    ],
+    "lede": "梦殿是法隆寺东院的八角堂，单体几何形制与深远屋檐有别于西院金堂和五重塔。",
+    "facts": [
+      "八角单层堂、瓦葺宝形屋顶与顶端宝珠；只绘梦殿，不把回廊并为主体。",
+      "梦殿初建于约739年，748年有供养记录；1230年大修改变屋顶坡度与檐深。图版呈现修理后的现存形态。"
+    ],
+    "caption": [
+      "法隆寺现存梦殿八角圆堂单体",
+      "约739年；1230年大修"
+    ],
+    "legacyNames": [
+      "Hōryūji Yumedono",
+      "法隆寺夢殿"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_yakushiji_toindo",
+    "name": "药师寺东院堂",
+    "short": "药师寺东院堂",
+    "sub": "药师寺1285年再建东院堂单体",
+    "country": "JP",
+    "dyn": "jp_kamakura",
+    "tag": "镰仓",
+    "era": "1285年再建；1733年转向",
+    "year": 1285,
+    "yearApprox": false,
+    "yearLabel": "1285年再建；1733年转向",
+    "yearNote": "现存东院堂为1285年再建；1733年由南向改为西向。早期东院沿革与现存镰仓堂宇分开。",
+    "place": "日本 · 奈良县 · 奈良",
+    "placeKey": "jp_nara",
+    "types": [
+      "hall"
+    ],
+    "lede": "药师寺东院堂保留镰仓时期佛堂的简洁柱列与舒展瓦檐，独立于东塔条目收录。",
+    "facts": [
+      "七间宽、四间深，单层入母屋造、瓦葺；依现状绘出西向正面。",
+      "现存东院堂为1285年再建；1733年由南向改为西向。早期东院沿革与现存镰仓堂宇分开。"
+    ],
+    "caption": [
+      "药师寺1285年再建东院堂单体",
+      "1285年再建；1733年转向"
+    ],
+    "legacyNames": [
+      "Yakushiji Tōindō",
+      "薬師寺東院堂"
+    ],
+    "initialStatus": "unvisited",
+    "tall": false
+  },
+  {
+    "id": "jp_hasedera_hondo",
+    "name": "长谷寺本堂",
+    "short": "长谷寺本堂",
+    "sub": "长谷寺1650年再建本堂及本体悬造舞台",
+    "country": "JP",
+    "dyn": "jp_edo",
+    "tag": "江户",
+    "era": "1650年再建",
+    "year": 1650,
+    "yearApprox": false,
+    "yearLabel": "1650年再建",
+    "yearNote": "现存本堂于1650年再建；寺院初创与此前本堂均不代替这次现存堂宇营建年代。",
+    "place": "日本 · 奈良县 · 樱井",
+    "placeKey": "jp_sakurai",
+    "types": [
+      "hall"
+    ],
+    "lede": "樱井长谷寺本堂在山腰展开，以前后堂体和高起悬造舞台构成江户时期大型山寺的轮廓。",
+    "facts": [
+      "后部内阵九间宽、五间深，前部礼堂四间深，组合屋面与舞台支柱一并绘出；不并入登廊。",
+      "现存本堂于1650年再建；寺院初创与此前本堂均不代替这次现存堂宇营建年代。"
+    ],
+    "caption": [
+      "长谷寺1650年再建本堂及本体悬造舞台",
+      "1650年再建"
+    ],
+    "legacyNames": [
+      "Hasedera Main Hall",
+      "長谷寺本堂"
     ],
     "initialStatus": "unvisited",
     "tall": false

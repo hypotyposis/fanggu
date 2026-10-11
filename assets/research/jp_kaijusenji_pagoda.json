@@ -1,0 +1,127 @@
+{
+  "id": "jp_kaijusenji_pagoda",
+  "name": "海住山寺五重塔",
+  "subject": "海住山寺现存五重塔单体",
+  "source_page": "https://www.city.kizugawa.lg.jp/0000001912.html",
+  "image_url": "https://www.city.kizugawa.lg.jp/cmsfiles/contents/0000001/1912/1331105453.jpg",
+  "author": "官方文化财或寺院资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kaijusenji_pagoda-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kaijusenji_pagoda-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kaijusenji five-story pagoda, Kizugawa, 1214, including its restored first-story mokoshi\nSTRUCTURAL CHECKPOINTS: Exactly FIVE actual stories; an extra low first-story mokoshi makes SIX roof levels; Slender tall tower with strongly tapering upper stories and ringed central finial; Retain open colonnaded lower skirt roof; omit forest, stone lanterns and nearby buildings\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.city.kizugawa.lg.jp/0000001912.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "Exactly FIVE actual stories; an extra low first-story mokoshi makes SIX roof levels",
+    "Slender tall tower with strongly tapering upper stories and ringed central finial",
+    "Retain open colonnaded lower skirt roof; omit forest, stone lanterns and nearby buildings"
+  ],
+  "material_observations": "Muted reddish brown timber; gray-brown wood-shingle roof planes and dark finial, pale stone base.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "海住山寺现存五重塔单体",
+    "1214年；1963年复原裳阶"
+  ],
+  "generated_file": "assets/generated/jp_kaijusenji_pagoda.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.761454+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.kizugawa.lg.jp/0000001912.html"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-12T00:44:56.556526+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c7a9abf02560eb16b2a67e23e332844b7d022c236ef3fe67c35b88f456f24f61",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-a26eb01e-82f2-44ec-8704-5d31a44b6ca0.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:42:39.314367+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kaijusenji five-story pagoda, Kizugawa, 1214, including its restored first-story mokoshi\nSTRUCTURAL CHECKPOINTS: Exactly FIVE actual stories; an extra low first-story mokoshi makes SIX roof levels; Slender tall tower with strongly tapering upper stories and ringed central finial; Retain open colonnaded lower skirt roof; omit forest, stone lanterns and nearby buildings\nOrientation: portrait 1024×1536.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_kaijusenji_pagoda-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:44:56.556748+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-a26eb01e-82f2-44ec-8704-5d31a44b6ca0.png",
+      "retained_file": "assets/generated/jp_kaijusenji_pagoda.png",
+      "sourceSha256": "c7a9abf02560eb16b2a67e23e332844b7d022c236ef3fe67c35b88f456f24f61"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_kaijusenji_pagoda-photo.jpg",
+      "source_page": "https://www.city.kizugawa.lg.jp/0000001912.html",
+      "image_url": "https://www.city.kizugawa.lg.jp/cmsfiles/contents/0000001/1912/1331105453.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "海住山寺现存五重塔单体"
+    },
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.city.kizugawa.lg.jp/0000001912.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "海住山寺五重塔",
+    "year": 1214,
+    "yearApprox": false,
+    "yearLabel": "1214年；1963年复原裳阶",
+    "yearNote": "五重塔建于1214年；初重裳阶在1963年修理时复原，图版表现修理后的现状。",
+    "dyn": "jp_kamakura",
+    "country": "JP",
+    "placeKey": "jp_kizugawa"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "c7a9abf02560eb16b2a67e23e332844b7d022c236ef3fe67c35b88f456f24f61",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "15ebce95f9817833d19d3f6287dc6ef494cd41d0be045579f87a041cd89f4d0a"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

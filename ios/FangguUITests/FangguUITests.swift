@@ -93,6 +93,94 @@ final class FangguUITests: XCTestCase {
         }
     }
 
+    func testJapanFirstBatchRegionsAliasesArtworkAndDetailReturn() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest()
+        app.buttons["catalog-filter"].tap()
+        app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "全部国家")).firstMatch.tap()
+        app.buttons["日本"].tap()
+        app.buttons["filters-done"].tap()
+        let cases = [
+            ("东北", "Chūsonji", "jp_chusonji_konjikido"),
+            ("中部", "Jo-an", "jp_urakuen_joan"),
+            ("近畿", "Hikone", "jp_hikone_tenshu"),
+            ("关东", "Engakuji", "jp_engakuji_shariden"),
+            ("中国地方", "Rurikōji", "jp_rurikoji_pagoda"),
+            ("九州", "Aoi Aso", "jp_aoi_aso"),
+            ("四国", "Burakuji", "jp_burakuji_yakushido"),
+            ("冲绳", "Tamaudun", "jp_tamaudun")
+        ]
+        let search = app.textFields["搜索古迹、地点或时代"]
+        for (region, alias, id) in cases {
+            if app.buttons["clear-catalog-search"].exists { app.buttons["clear-catalog-search"].tap() }
+            app.buttons["catalog-filter"].tap()
+            app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "地区")).firstMatch.tap()
+            app.buttons[region].tap()
+            app.buttons["filters-done"].tap()
+            search.tap(); search.typeText(alias)
+            let row = app.buttons["catalog-site-\(id)"]
+            XCTAssertTrue(row.waitForExistence(timeout: 5), "\(region): alias must find the new monument")
+            row.tap()
+            XCTAssertTrue(app.buttons["补记到访"].waitForExistence(timeout: 5))
+            XCTAssertTrue(app.descendants(matching: .any)["detail-artwork"].firstMatch.exists)
+            XCTAssertFalse(app.staticTexts["设色图暂未加载"].exists, "Bundled color artwork must decode")
+            capture(app, "japan-first-\(id)-detail")
+            // This application uses a disposable record scope; exercise the colored plate too.
+            app.buttons["record-today"].tap()
+            XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 5))
+            XCTAssertFalse(app.staticTexts["设色图暂未加载"].exists)
+            capture(app, "japan-first-\(id)-colored")
+            app.buttons["undo-change"].tap()
+            XCTAssertTrue(app.buttons["record-today"].waitForExistence(timeout: 5))
+            app.buttons["返回"].tap()
+            XCTAssertEqual(search.value as? String, alias, "Detail return must retain the query")
+            XCTAssertTrue(row.waitForExistence(timeout: 5))
+        }
+    }
+
+    func testJapanSecondBatchPrefecturesAliasesArtworkAndDetailReturn() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest()
+        app.buttons["catalog-filter"].tap()
+        app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "全部国家")).firstMatch.tap()
+        app.buttons["日本"].tap()
+        app.buttons["filters-done"].tap()
+        let cases = [
+            ("关东", "栃木县", "Bannaji", "jp_bannaji_hondo"),
+            ("中部", "福井县", "Myōtsūji Main", "jp_myotsuji_hondo"),
+            ("近畿", "三重县", "Senjuji Nyoraidō", "jp_senshuji_nyoraido"),
+            ("近畿", "奈良县", "Tōdaiji Great", "jp_todaiji_daibutsuden")
+        ]
+        let search = app.textFields["搜索古迹、地点或时代"]
+        for (region, province, alias, id) in cases {
+            if app.buttons["clear-catalog-search"].exists { app.buttons["clear-catalog-search"].tap() }
+            app.buttons["catalog-filter"].tap()
+            app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "地区")).firstMatch.tap()
+            app.buttons[region].tap()
+            app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "省份")).firstMatch.tap()
+            app.buttons[province].tap()
+            app.buttons["filters-done"].tap()
+            search.tap(); search.typeText(alias)
+            let row = app.buttons["catalog-site-\(id)"]
+            XCTAssertTrue(row.waitForExistence(timeout: 5), "\(province): alias must find the new monument")
+            row.tap()
+            XCTAssertTrue(app.buttons["补记到访"].waitForExistence(timeout: 5))
+            XCTAssertTrue(app.descendants(matching: .any)["detail-artwork"].firstMatch.exists)
+            XCTAssertFalse(app.staticTexts["设色图暂未加载"].exists, "Bundled color artwork must decode")
+            capture(app, "japan-second-\(id)-detail")
+            // This application uses a disposable record scope; exercise the colored plate too.
+            app.buttons["record-today"].tap()
+            XCTAssertTrue(app.buttons["edit-visit"].waitForExistence(timeout: 5))
+            XCTAssertFalse(app.staticTexts["设色图暂未加载"].exists)
+            capture(app, "japan-second-\(id)-colored")
+            app.buttons["undo-change"].tap()
+            XCTAssertTrue(app.buttons["record-today"].waitForExistence(timeout: 5))
+            app.buttons["返回"].tap()
+            XCTAssertEqual(search.value as? String, alias, "Detail return must retain the query")
+            XCTAssertTrue(row.waitForExistence(timeout: 5))
+        }
+    }
+
     func testTokyoCatalogFilterAliasAndDetailReturn() {
         let app = XCUIApplication.isolated()
         app.launchForTest()

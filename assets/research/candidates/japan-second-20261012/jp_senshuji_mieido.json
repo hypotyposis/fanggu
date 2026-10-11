@@ -1,0 +1,79 @@
+{
+  "id": "jp_senshuji_mieido",
+  "name": "专修寺御影堂",
+  "province": "三重县",
+  "city": "津",
+  "kind": "hall",
+  "stage": "delivery_ready",
+  "calls": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:37:26.510647+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Senjuji Mieido founders hall, Tsu, completed structurally in 1666 with dedication in 1679\nSTRUCTURAL CHECKPOINTS: Broad nine-by-nine-bay main hall with ONE monumental hip-and-gable tile roof; Central three-bay entrance porch beneath the main eaves; Large deep eaves, dark timber facade and raised veranda; exclude banners, signs and adjacent halls\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_senshuji_mieido-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:41:16.143708+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-55abad21-4c27-47a4-955b-cdc224f4cfce.png",
+      "retained_file": "assets/generated/jp_senshuji_mieido.png",
+      "sourceSha256": "8447b4ccf8c34142eb972aa1af774d56ad7f25ec7ba163b3a8aa728e12db4dd4"
+    },
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:43:15.528482+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 专修寺1666年上梁的御影堂单体\nMATERIAL OBSERVATIONS: Dark gray tile roof, weathered brown timber, quiet white plaster wall panels and plain wood doors; omit temporary curtains.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_senshuji_mieido.png",
+        "assets/references/jp_senshuji_mieido-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:45:08.536885+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e551fd3d-ddbe-4eeb-982c-d2b98fec193e.png",
+      "retained_file": "assets/colored/jp_senshuji_mieido.png",
+      "sourceSha256": "6a53da2f032cde9dbcda055489e04d827f59f3f793507caeaf2023a16e351063"
+    }
+  ],
+  "subject": "专修寺1666年上梁的御影堂单体",
+  "english_subject": "Senjuji Mieido founders hall, Tsu, completed structurally in 1666 with dedication in 1679",
+  "dyn": "jp_edo",
+  "photo": {
+    "file": "assets/references/jp_senshuji_mieido-photo.jpg",
+    "source_page": "https://senjuji-guide.jp/contents/content01/",
+    "image_url": "https://senjuji-guide.jp/system/wp-content/uploads/2026/02/content01_mv.jpg",
+    "author": "官方文化财资料（摄影者未署名）",
+    "license": "未注明开放许可；仅作研究参考，不分发原照"
+  },
+  "historical_sources": [
+    {
+      "title": "官方现存建筑与年代资料",
+      "url": "https://senjuji-guide.jp/contents/content01/"
+    }
+  ],
+  "checkpoints": [
+    "Broad nine-by-nine-bay main hall with ONE monumental hip-and-gable tile roof",
+    "Central three-bay entrance porch beneath the main eaves",
+    "Large deep eaves, dark timber facade and raised veranda; exclude banners, signs and adjacent halls"
+  ],
+  "materials": "Dark gray tile roof, weathered brown timber, quiet white plaster wall panels and plain wood doors; omit temporary curtains.",
+  "caption": [
+    "御影堂棟札记1666年上梁，1679年举行落成供养，两者分别记录。",
+    "绘九间见方的巨大单檐入母屋堂及三间向拝，不含如来堂。"
+  ],
+  "tall": false,
+  "references": [
+    {
+      "file": "assets/references/jp_senshuji_mieido-photo.jpg",
+      "source_page": "https://senjuji-guide.jp/contents/content01/",
+      "image_url": "https://senjuji-guide.jp/system/wp-content/uploads/2026/02/content01_mv.jpg",
+      "author": "官方文化财资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "jp_bannaji_hondo",
+  "name": "鑁阿寺本堂",
+  "province": "栃木县",
+  "city": "足利",
+  "kind": "hall",
+  "stage": "delivery_ready",
+  "calls": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:37:25.947869+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Bannaji main hall in Ashikaga: the existing 1299 timber hall only\nSTRUCTURAL CHECKPOINTS: Five-bay front, one main hip-and-gable roof with gray tiles; Central curved entrance canopy and shallow front veranda; Exclude stone lanterns, trees, neighboring buildings and signs\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_bannaji_hondo-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:39:11.056592+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-46278e18-157a-48bb-90b3-96062ceef763.png",
+      "retained_file": "assets/generated/jp_bannaji_hondo.png",
+      "sourceSha256": "31827b6079d4e4407132366dc0095596366750bc11b158addc2ad26042541d96"
+    },
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:39:11.618151+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 鑁阿寺现存本堂，正面五间的入母屋顶木构佛殿\nMATERIAL OBSERVATIONS: Weathered dark brown timber, gray tile roof, subdued off-white wall panels; no bright red reconstruction.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_bannaji_hondo.png",
+        "assets/references/jp_bannaji_hondo-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:40:00.340755+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-4ea1877b-9eed-495c-ab03-c7e329242527.png",
+      "retained_file": "assets/colored/jp_bannaji_hondo.png",
+      "sourceSha256": "e076d02dd4f6f47b25be5a3f41215d9f4ee67a36a49f86cf76b11eb4c94e5f8d"
+    }
+  ],
+  "subject": "鑁阿寺现存本堂，正面五间的入母屋顶木构佛殿",
+  "english_subject": "Bannaji main hall in Ashikaga: the existing 1299 timber hall only",
+  "dyn": "jp_kamakura",
+  "photo": {
+    "file": "assets/references/jp_bannaji_hondo-photo.jpg",
+    "source_page": "https://www.city.ashikaga.tochigi.jp/education/000029/000169/000627/p001299.html",
+    "image_url": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc9cfbad4c.jpg",
+    "author": "官方文化财资料（摄影者未署名）",
+    "license": "未注明开放许可；仅作研究参考，不分发原照"
+  },
+  "historical_sources": [
+    {
+      "title": "官方现存建筑与年代资料",
+      "url": "https://www.city.ashikaga.tochigi.jp/education/000029/000169/000627/p001299.html"
+    }
+  ],
+  "checkpoints": [
+    "Five-bay front, one main hip-and-gable roof with gray tiles",
+    "Central curved entrance canopy and shallow front veranda",
+    "Exclude stone lanterns, trees, neighboring buildings and signs"
+  ],
+  "materials": "Weathered dark brown timber, gray tile roof, subdued off-white wall panels; no bright red reconstruction.",
+  "caption": [
+    "现存本堂重建于1299年，室町期又改造柱架与瓦顶。",
+    "绘本堂单体，保留五间正面、入母屋大屋顶与中央向拝。"
+  ],
+  "tall": false,
+  "references": [
+    {
+      "file": "assets/references/jp_bannaji_hondo-photo.jpg",
+      "source_page": "https://www.city.ashikaga.tochigi.jp/education/000029/000169/000627/p001299.html",
+      "image_url": "https://www.city.ashikaga.tochigi.jp/manage/contents/upload/633fc9cfbad4c.jpg",
+      "author": "官方文化财资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照"
+    }
+  ]
+}

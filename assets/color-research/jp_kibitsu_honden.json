@@ -1,0 +1,100 @@
+{
+  "id": "jp_kibitsu_honden",
+  "name": "吉备津神社本殿及拜殿",
+  "subject": "吉备津神社 · 本殿及拜殿",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_kibitsu_honden.png",
+    "assets/references/jp_kibitsu_honden-actual-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 吉备津神社 · 本殿及拜殿\nMATERIAL OBSERVATIONS: 本殿与拜殿旧木为红褐至深褐，桧皮屋面深褐，拜殿裳阶灰瓦，破风白壁局部残朱，石基灰色。\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+  "material_observations": [
+    "本殿与拜殿旧木为红褐至深褐，桧皮屋面深褐，拜殿裳阶灰瓦，破风白壁局部残朱，石基灰色。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_kibitsu_honden-actual-photo.jpg",
+      "source_page": "https://www.kibitujinja.com/about/honden.php",
+      "image_url": "https://www.kibitujinja.com/about/images/about_honden_img01.png",
+      "author": "吉备津神社官方资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "page": "https://www.kibitujinja.com/about/honden.php"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "吉备津神社 · 吉备津神社 · 本殿及拜殿",
+      "url": "https://www.kibitujinja.com/about/honden.php"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://kibitujinja.com/faq/"
+    }
+  ],
+  "original_research": "assets/research/jp_kibitsu_honden.json",
+  "output": "assets/colored/jp_kibitsu_honden.png",
+  "production_batch": "japan-first-20261011",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:29:47.597811+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "9fba8be6be31594bb79221a62cdd3269f0b341aecaa8718f00c63c1f5c1df7cd",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-6c3b564d-942a-44a9-9705-5c58413f9e6e.png",
+  "generation_history": [
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:27:41.699464+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 吉备津神社 · 本殿及拜殿\nMATERIAL OBSERVATIONS: 本殿与拜殿旧木为红褐至深褐，桧皮屋面深褐，拜殿裳阶灰瓦，破风白壁局部残朱，石基灰色。\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_kibitsu_honden.png",
+        "assets/references/jp_kibitsu_honden-actual-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:29:47.598063+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-6c3b564d-942a-44a9-9705-5c58413f9e6e.png",
+      "retained_file": "assets/colored/jp_kibitsu_honden.png",
+      "sourceSha256": "9fba8be6be31594bb79221a62cdd3269f0b341aecaa8718f00c63c1f5c1df7cd"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.680334+08:00",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:54:02.779Z",
+    "sourceSha256": "9fba8be6be31594bb79221a62cdd3269f0b341aecaa8718f00c63c1f5c1df7cd",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "804bb6d6272642e02783df0f7ea031a4712e44efb6207352d793970aaee46870",
+    "avifSha256": "d08fa857fdf78ce5c85fe2c10f98c009951565fdcff3768e03a7445e8fb446e3"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

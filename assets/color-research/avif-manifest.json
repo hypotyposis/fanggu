@@ -25921,6 +25921,2658 @@
         "avifSha256": "3be60f9c39777d895c26344123e56547184a12ef538b941c6fba7de498892c9a"
       }
     },
+    "jp_chusonji_konjikido": {
+      "source": "assets/colored/jp_chusonji_konjikido.png",
+      "sourceSha256": "a1d381f0edd81ce9a673558810db6ad1ba54df6ec0bc57581925a8838971254f",
+      "sourceBytes": 2093992,
+      "input": "assets/colored-transparent/jp_chusonji_konjikido.png",
+      "inputSha256": "f9322c2e918ec8dceb42078430ef85f7709ad77374102cc37c67a2e54226817b",
+      "inputBytes": 2019150,
+      "src": "assets/colored-transparent-avif/jp_chusonji_konjikido.avif",
+      "sha256": "aae6246f188da7003439196fae8ea150973dd4b136a67e7bae1c43782329cb17",
+      "bytes": 259178,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 839342,
+        "opaquePixels": 721873,
+        "meanError": 0.009164174397786459,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.317,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "a1d381f0edd81ce9a673558810db6ad1ba54df6ec0bc57581925a8838971254f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "a1d381f0edd81ce9a673558810db6ad1ba54df6ec0bc57581925a8838971254f",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "f9322c2e918ec8dceb42078430ef85f7709ad77374102cc37c67a2e54226817b",
+        "avifSha256": "aae6246f188da7003439196fae8ea150973dd4b136a67e7bae1c43782329cb17"
+      }
+    },
+    "jp_shiramizu_amidado": {
+      "source": "assets/colored/jp_shiramizu_amidado.png",
+      "sourceSha256": "0b78a78404a90ce0434d3b426ec4803f6b7d5b85aac223502d2df6bdae3882fe",
+      "sourceBytes": 1921947,
+      "input": "assets/colored-transparent/jp_shiramizu_amidado.png",
+      "inputSha256": "74f1328f15cb283f94c2046e1c4f574212db82d6b7712bc66558b2d780f1dc80",
+      "inputBytes": 1775896,
+      "src": "assets/colored-transparent-avif/jp_shiramizu_amidado.avif",
+      "sha256": "15898db08c350ea98b5d0221f6e110e689bed377673ea2ba614ffe95f2d593a9",
+      "bytes": 211313,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 889428,
+        "opaquePixels": 672847,
+        "meanError": 0.008413314819335938,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.02,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "0b78a78404a90ce0434d3b426ec4803f6b7d5b85aac223502d2df6bdae3882fe",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "0b78a78404a90ce0434d3b426ec4803f6b7d5b85aac223502d2df6bdae3882fe",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "74f1328f15cb283f94c2046e1c4f574212db82d6b7712bc66558b2d780f1dc80",
+        "avifSha256": "15898db08c350ea98b5d0221f6e110e689bed377673ea2ba614ffe95f2d593a9"
+      }
+    },
+    "jp_hokiji_pagoda": {
+      "source": "assets/colored/jp_hokiji_pagoda.png",
+      "sourceSha256": "dfdcc446b243785e68d23d312cd4c39324744f2f9636b85fc875e0117f953040",
+      "sourceBytes": 1903266,
+      "input": "assets/colored-transparent/jp_hokiji_pagoda.png",
+      "inputSha256": "865f6f9218d85ea687aa952d30b24fcb86859f0767137bb48faa1286dfa08175",
+      "inputBytes": 1747076,
+      "src": "assets/colored-transparent-avif/jp_hokiji_pagoda.avif",
+      "sha256": "1d6b9f91f78a09ec255ae8c46846e8109a4e27d4a6c13c40ac496ecdcfb2de32",
+      "bytes": 210427,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1001965,
+        "opaquePixels": 554362,
+        "meanError": 0.013012568155924479,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.153,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "dfdcc446b243785e68d23d312cd4c39324744f2f9636b85fc875e0117f953040",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "dfdcc446b243785e68d23d312cd4c39324744f2f9636b85fc875e0117f953040",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "865f6f9218d85ea687aa952d30b24fcb86859f0767137bb48faa1286dfa08175",
+        "avifSha256": "1d6b9f91f78a09ec255ae8c46846e8109a4e27d4a6c13c40ac496ecdcfb2de32"
+      }
+    },
+    "jp_shosoin_shoso": {
+      "source": "assets/colored/jp_shosoin_shoso.png",
+      "sourceSha256": "ad58128ca5a6c6527b5fd8cb10f1a44928bcd91fa51fab5f9a60fe930fadafaf",
+      "sourceBytes": 1725074,
+      "input": "assets/colored-transparent/jp_shosoin_shoso.png",
+      "inputSha256": "8de956392760408cc687845278eef2601e703bc45a403ae700b063582b3f0ff9",
+      "inputBytes": 1489579,
+      "src": "assets/colored-transparent-avif/jp_shosoin_shoso.avif",
+      "sha256": "1ec46045396fb49dc4b6a7b4fcbd9e2000e9cc8c504f7bf271e415f5c92eee08",
+      "bytes": 167709,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1045886,
+        "opaquePixels": 517467,
+        "meanError": 0.007216135660807292,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.015,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ad58128ca5a6c6527b5fd8cb10f1a44928bcd91fa51fab5f9a60fe930fadafaf",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "ad58128ca5a6c6527b5fd8cb10f1a44928bcd91fa51fab5f9a60fe930fadafaf",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "8de956392760408cc687845278eef2601e703bc45a403ae700b063582b3f0ff9",
+        "avifSha256": "1ec46045396fb49dc4b6a7b4fcbd9e2000e9cc8c504f7bf271e415f5c92eee08"
+      }
+    },
+    "jp_shinyakushiji_hondo": {
+      "source": "assets/colored/jp_shinyakushiji_hondo.png",
+      "sourceSha256": "c1525f518f4ab17e22b89d5fa0771ec4ad13e4d6e32ebef558fcab3d9199c042",
+      "sourceBytes": 1903644,
+      "input": "assets/colored-transparent/jp_shinyakushiji_hondo.png",
+      "inputSha256": "25a154e1074aac6c7d4a2f12ebd6ada9ae4bdda68f082fcb9093155dd711b900",
+      "inputBytes": 1725068,
+      "src": "assets/colored-transparent-avif/jp_shinyakushiji_hondo.avif",
+      "sha256": "9a7934f7cf7d167782e503f4ebb262983741718aa23e5cfbcca18c8cd3be4348",
+      "bytes": 188466,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 961065,
+        "opaquePixels": 601812,
+        "meanError": 0.0075117746988932295,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.974,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c1525f518f4ab17e22b89d5fa0771ec4ad13e4d6e32ebef558fcab3d9199c042",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "c1525f518f4ab17e22b89d5fa0771ec4ad13e4d6e32ebef558fcab3d9199c042",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "25a154e1074aac6c7d4a2f12ebd6ada9ae4bdda68f082fcb9093155dd711b900",
+        "avifSha256": "9a7934f7cf7d167782e503f4ebb262983741718aa23e5cfbcca18c8cd3be4348"
+      }
+    },
+    "jp_murouji_kondo": {
+      "source": "assets/colored/jp_murouji_kondo.png",
+      "sourceSha256": "40755877380f208bcc81f5201f13da8701713fd03d20a286744088fca69ccd2d",
+      "sourceBytes": 2418252,
+      "input": "assets/colored-transparent/jp_murouji_kondo.png",
+      "inputSha256": "3920c4b9f9bc55a92a13768ec8cec9c1d02764c1c1d8ba6e62f22dd0531166ed",
+      "inputBytes": 2291156,
+      "src": "assets/colored-transparent-avif/jp_murouji_kondo.avif",
+      "sha256": "5d60b698316e587c7f6e7dc433ac4b4f830962aa4708966ad913562bf433021f",
+      "bytes": 304726,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 676466,
+        "opaquePixels": 883750,
+        "meanError": 0.010143280029296875,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.056,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "40755877380f208bcc81f5201f13da8701713fd03d20a286744088fca69ccd2d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "40755877380f208bcc81f5201f13da8701713fd03d20a286744088fca69ccd2d",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "3920c4b9f9bc55a92a13768ec8cec9c1d02764c1c1d8ba6e62f22dd0531166ed",
+        "avifSha256": "5d60b698316e587c7f6e7dc433ac4b4f830962aa4708966ad913562bf433021f"
+      }
+    },
+    "jp_murouji_pagoda": {
+      "source": "assets/colored/jp_murouji_pagoda.png",
+      "sourceSha256": "1660a08a56bb5c33d732b3c841ccc4241ea8fd17dd49db7950905888f7b483e7",
+      "sourceBytes": 1783354,
+      "input": "assets/colored-transparent/jp_murouji_pagoda.png",
+      "inputSha256": "d2563078dadffd22641bedfc8561955008e9bb4a3eaab29002147015522d9e4c",
+      "inputBytes": 1710129,
+      "src": "assets/colored-transparent-avif/jp_murouji_pagoda.avif",
+      "sha256": "1c1bbb12e0b80a51a5f96cbcb90831d4ccef70e179b50127b6a819dbf57454ba",
+      "bytes": 196588,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1046773,
+        "opaquePixels": 512204,
+        "meanError": 0.011061986287434896,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.159,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "1660a08a56bb5c33d732b3c841ccc4241ea8fd17dd49db7950905888f7b483e7",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "1660a08a56bb5c33d732b3c841ccc4241ea8fd17dd49db7950905888f7b483e7",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "d2563078dadffd22641bedfc8561955008e9bb4a3eaab29002147015522d9e4c",
+        "avifSha256": "1c1bbb12e0b80a51a5f96cbcb90831d4ccef70e179b50127b6a819dbf57454ba"
+      }
+    },
+    "jp_engakuji_shariden": {
+      "source": "assets/colored/jp_engakuji_shariden.png",
+      "sourceSha256": "0b7db9a343a67a2597a3b6aad8794983cfe62af5a633c096cc91c68018eb0be8",
+      "sourceBytes": 2072931,
+      "input": "assets/colored-transparent/jp_engakuji_shariden.png",
+      "inputSha256": "ccde3d4974011fa237ffef3b18d0cbbbb0201dd6b421728dda2f70fd9f42ee64",
+      "inputBytes": 1971534,
+      "src": "assets/colored-transparent-avif/jp_engakuji_shariden.avif",
+      "sha256": "4b9f8db930437f7d8b0721984f3f0432ed4f95a09ae980b26da171595b56523e",
+      "bytes": 245383,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 758628,
+        "opaquePixels": 801535,
+        "meanError": 0.009960810343424479,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.978,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "0b7db9a343a67a2597a3b6aad8794983cfe62af5a633c096cc91c68018eb0be8",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "0b7db9a343a67a2597a3b6aad8794983cfe62af5a633c096cc91c68018eb0be8",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "ccde3d4974011fa237ffef3b18d0cbbbb0201dd6b421728dda2f70fd9f42ee64",
+        "avifSha256": "4b9f8db930437f7d8b0721984f3f0432ed4f95a09ae980b26da171595b56523e"
+      }
+    },
+    "jp_kozanji_butsuden": {
+      "source": "assets/colored/jp_kozanji_butsuden.png",
+      "sourceSha256": "ae22b75a8002a558d2b594668b60ee78b2e44cddc5805a9ec9567432f5e578f3",
+      "sourceBytes": 2364841,
+      "input": "assets/colored-transparent/jp_kozanji_butsuden.png",
+      "inputSha256": "13b446b2eb825f41a5fcd062e53c10bb3a55789c13211d3c3393427e6e321e8d",
+      "inputBytes": 2227706,
+      "src": "assets/colored-transparent-avif/jp_kozanji_butsuden.avif",
+      "sha256": "0493c37bae05673c7d0c5987e0eb9e7fd6cb055826abca7296cf52281016e3e0",
+      "bytes": 277713,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 694467,
+        "opaquePixels": 866489,
+        "meanError": 0.009408950805664062,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.888,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ae22b75a8002a558d2b594668b60ee78b2e44cddc5805a9ec9567432f5e578f3",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "ae22b75a8002a558d2b594668b60ee78b2e44cddc5805a9ec9567432f5e578f3",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "13b446b2eb825f41a5fcd062e53c10bb3a55789c13211d3c3393427e6e321e8d",
+        "avifSha256": "0493c37bae05673c7d0c5987e0eb9e7fd6cb055826abca7296cf52281016e3e0"
+      }
+    },
+    "jp_hikone_tenshu": {
+      "source": "assets/colored/jp_hikone_tenshu.png",
+      "sourceSha256": "aabade8428a1826d7c2996b4cc6e5a282695378ceffd6ba09a11242f8b9b1e2c",
+      "sourceBytes": 2389129,
+      "input": "assets/colored-transparent/jp_hikone_tenshu.png",
+      "inputSha256": "796c03b8f9e2275467e9e5e0e346b827e16bf9ad24cc98a6960e5ae0808db42a",
+      "inputBytes": 2186747,
+      "src": "assets/colored-transparent-avif/jp_hikone_tenshu.avif",
+      "sha256": "82b7098efb2c87641e6fb45441a2c58c348372ac9daf8174b747f8398e60ce1d",
+      "bytes": 283050,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 793999,
+        "opaquePixels": 763285,
+        "meanError": 0.012365976969401041,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.045,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "aabade8428a1826d7c2996b4cc6e5a282695378ceffd6ba09a11242f8b9b1e2c",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "aabade8428a1826d7c2996b4cc6e5a282695378ceffd6ba09a11242f8b9b1e2c",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "796c03b8f9e2275467e9e5e0e346b827e16bf9ad24cc98a6960e5ae0808db42a",
+        "avifSha256": "82b7098efb2c87641e6fb45441a2c58c348372ac9daf8174b747f8398e60ce1d"
+      }
+    },
+    "jp_matsue_tenshu": {
+      "source": "assets/colored/jp_matsue_tenshu.png",
+      "sourceSha256": "22c7df445f0a96b0e0f5641a5a7e088f754b190a994e76197f0073070de879bb",
+      "sourceBytes": 2340664,
+      "input": "assets/colored-transparent/jp_matsue_tenshu.png",
+      "inputSha256": "a6d8b371cf6c7eec3c797bf1af9132b5851c44a10ddd4355aeb1f3ceb6e62be1",
+      "inputBytes": 2176081,
+      "src": "assets/colored-transparent-avif/jp_matsue_tenshu.avif",
+      "sha256": "560f67e59197ce85df57cd099a87ecf3b06e2988f95b664ca1cb57aac585cf52",
+      "bytes": 278511,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 843842,
+        "opaquePixels": 717220,
+        "meanError": 0.009585698445638021,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.106,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "22c7df445f0a96b0e0f5641a5a7e088f754b190a994e76197f0073070de879bb",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "22c7df445f0a96b0e0f5641a5a7e088f754b190a994e76197f0073070de879bb",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "a6d8b371cf6c7eec3c797bf1af9132b5851c44a10ddd4355aeb1f3ceb6e62be1",
+        "avifSha256": "560f67e59197ce85df57cd099a87ecf3b06e2988f95b664ca1cb57aac585cf52"
+      }
+    },
+    "jp_burakuji_yakushido": {
+      "source": "assets/colored/jp_burakuji_yakushido.png",
+      "sourceSha256": "f126d7b1091e74feb0a4c4a85efb76a10a024d219e2d062f8331e825dc96e49f",
+      "sourceBytes": 2075325,
+      "input": "assets/colored-transparent/jp_burakuji_yakushido.png",
+      "inputSha256": "3678818bcb803e296ab7d47a81c8431aa161d77c9cb9ba1957e7c1eb15acf1c3",
+      "inputBytes": 1902304,
+      "src": "assets/colored-transparent-avif/jp_burakuji_yakushido.avif",
+      "sha256": "d59529b11d64768fb7d4f8e37f19f23a914e96637cf333bab92bc734031802a6",
+      "bytes": 239800,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 846503,
+        "opaquePixels": 715283,
+        "meanError": 0.008728663126627604,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.983,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "f126d7b1091e74feb0a4c4a85efb76a10a024d219e2d062f8331e825dc96e49f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "f126d7b1091e74feb0a4c4a85efb76a10a024d219e2d062f8331e825dc96e49f",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "3678818bcb803e296ab7d47a81c8431aa161d77c9cb9ba1957e7c1eb15acf1c3",
+        "avifSha256": "d59529b11d64768fb7d4f8e37f19f23a914e96637cf333bab92bc734031802a6"
+      }
+    },
+    "jp_kamitani_honden": {
+      "source": "assets/colored/jp_kamitani_honden.png",
+      "sourceSha256": "ceac163567233a1efe12136e1dfb9774332ed97bbcae568ffce1d351cbf44bab",
+      "sourceBytes": 2255848,
+      "input": "assets/colored-transparent/jp_kamitani_honden.png",
+      "inputSha256": "187a2728c98f768c4fc71a8bbb43f14cb472acce7201b16ad3f6b7ad4615ecf8",
+      "inputBytes": 2083954,
+      "src": "assets/colored-transparent-avif/jp_kamitani_honden.avif",
+      "sha256": "4f7cb1121af6abd53bdd53df161d397184a4c61bcc88d59aec11524c1124ec19",
+      "bytes": 261037,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 825250,
+        "opaquePixels": 737128,
+        "meanError": 0.008420944213867188,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.017,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ceac163567233a1efe12136e1dfb9774332ed97bbcae568ffce1d351cbf44bab",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "ceac163567233a1efe12136e1dfb9774332ed97bbcae568ffce1d351cbf44bab",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "187a2728c98f768c4fc71a8bbb43f14cb472acce7201b16ad3f6b7ad4615ecf8",
+        "avifSha256": "4f7cb1121af6abd53bdd53df161d397184a4c61bcc88d59aec11524c1124ec19"
+      }
+    },
+    "jp_rurikoji_pagoda": {
+      "source": "assets/colored/jp_rurikoji_pagoda.png",
+      "sourceSha256": "d26181537bcd17bb42c8117202ea64e96d2715c0d93c6c0660a596d1e33ba9af",
+      "sourceBytes": 1883980,
+      "input": "assets/colored-transparent/jp_rurikoji_pagoda.png",
+      "inputSha256": "358cbf3fc3ef33f24bd499f6d7dbfbd6234b8ead15c467d2e64ee37e6071db29",
+      "inputBytes": 1805401,
+      "src": "assets/colored-transparent-avif/jp_rurikoji_pagoda.avif",
+      "sha256": "69adbe83d554e71440ec3ca81af9af8d843184e9f7571ed71f8ea59e17dcce37",
+      "bytes": 204229,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1075061,
+        "opaquePixels": 481938,
+        "meanError": 0.012813568115234375,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.123,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d26181537bcd17bb42c8117202ea64e96d2715c0d93c6c0660a596d1e33ba9af",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "d26181537bcd17bb42c8117202ea64e96d2715c0d93c6c0660a596d1e33ba9af",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "358cbf3fc3ef33f24bd499f6d7dbfbd6234b8ead15c467d2e64ee37e6071db29",
+        "avifSha256": "69adbe83d554e71440ec3ca81af9af8d843184e9f7571ed71f8ea59e17dcce37"
+      }
+    },
+    "jp_kibitsu_honden": {
+      "source": "assets/colored/jp_kibitsu_honden.png",
+      "sourceSha256": "9fba8be6be31594bb79221a62cdd3269f0b341aecaa8718f00c63c1f5c1df7cd",
+      "sourceBytes": 2225936,
+      "input": "assets/colored-transparent/jp_kibitsu_honden.png",
+      "inputSha256": "804bb6d6272642e02783df0f7ea031a4712e44efb6207352d793970aaee46870",
+      "inputBytes": 2119886,
+      "src": "assets/colored-transparent-avif/jp_kibitsu_honden.avif",
+      "sha256": "d08fa857fdf78ce5c85fe2c10f98c009951565fdcff3768e03a7445e8fb446e3",
+      "bytes": 273388,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 819306,
+        "opaquePixels": 739578,
+        "meanError": 0.010914484659830729,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.227,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "9fba8be6be31594bb79221a62cdd3269f0b341aecaa8718f00c63c1f5c1df7cd",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "9fba8be6be31594bb79221a62cdd3269f0b341aecaa8718f00c63c1f5c1df7cd",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "804bb6d6272642e02783df0f7ea031a4712e44efb6207352d793970aaee46870",
+        "avifSha256": "d08fa857fdf78ce5c85fe2c10f98c009951565fdcff3768e03a7445e8fb446e3"
+      }
+    },
+    "jp_kamosu_honden": {
+      "source": "assets/colored/jp_kamosu_honden.png",
+      "sourceSha256": "4f19a9c36b354fa88e5403dd6152877f3c804b43440c20feecdd69fee4fcb72b",
+      "sourceBytes": 2093838,
+      "input": "assets/colored-transparent/jp_kamosu_honden.png",
+      "inputSha256": "01a822b7566692f55cf1cd6d9def715cd8c244d4ceb7be07629a42a4cdef0919",
+      "inputBytes": 1942103,
+      "src": "assets/colored-transparent-avif/jp_kamosu_honden.avif",
+      "sha256": "5a87fb2f92ca3d974be4d6c044653f5c190a97ad0334bf89f47aa52393e3ec2f",
+      "bytes": 225772,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 851293,
+        "opaquePixels": 710007,
+        "meanError": 0.009266535441080729,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.983,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "4f19a9c36b354fa88e5403dd6152877f3c804b43440c20feecdd69fee4fcb72b",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "4f19a9c36b354fa88e5403dd6152877f3c804b43440c20feecdd69fee4fcb72b",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "01a822b7566692f55cf1cd6d9def715cd8c244d4ceb7be07629a42a4cdef0919",
+        "avifSha256": "5a87fb2f92ca3d974be4d6c044653f5c190a97ad0334bf89f47aa52393e3ec2f"
+      }
+    },
+    "jp_kongosanmaiin_tahoto": {
+      "source": "assets/colored/jp_kongosanmaiin_tahoto.png",
+      "sourceSha256": "2c4fb9d9a192d0c9d46619f30de50bc2504eac46f99f4059c05086204fdef438",
+      "sourceBytes": 1879601,
+      "input": "assets/colored-transparent/jp_kongosanmaiin_tahoto.png",
+      "inputSha256": "f23de56359cfb111eaa0adda72b4974db9d33ca0ef15c9a595ef2318935ac95a",
+      "inputBytes": 1721502,
+      "src": "assets/colored-transparent-avif/jp_kongosanmaiin_tahoto.avif",
+      "sha256": "048bf4780c6531a1ab06517c5f47fb93a6cfb81b2e7e82bf02650f289498acf9",
+      "bytes": 215401,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1009733,
+        "opaquePixels": 549255,
+        "meanError": 0.010869979858398438,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.09,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "2c4fb9d9a192d0c9d46619f30de50bc2504eac46f99f4059c05086204fdef438",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "2c4fb9d9a192d0c9d46619f30de50bc2504eac46f99f4059c05086204fdef438",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "f23de56359cfb111eaa0adda72b4974db9d33ca0ef15c9a595ef2318935ac95a",
+        "avifSha256": "048bf4780c6531a1ab06517c5f47fb93a6cfb81b2e7e82bf02650f289498acf9"
+      }
+    },
+    "jp_negoroji_daito": {
+      "source": "assets/colored/jp_negoroji_daito.png",
+      "sourceSha256": "8feb3490230e7c9cdae6bbbbcc1162f95b8aaedc5eacde86caf2198d10f42356",
+      "sourceBytes": 2026498,
+      "input": "assets/colored-transparent/jp_negoroji_daito.png",
+      "inputSha256": "bc3c66033a108e173c48a7badded2fa570fe4f38427f8c5a3b68f80fe3872ce0",
+      "inputBytes": 1945495,
+      "src": "assets/colored-transparent-avif/jp_negoroji_daito.avif",
+      "sha256": "468508740f13119e016ef572c47f73ebcb81ca41c13f8162fc749ed135e80382",
+      "bytes": 239186,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 949653,
+        "opaquePixels": 606497,
+        "meanError": 0.012964248657226562,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.119,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "8feb3490230e7c9cdae6bbbbcc1162f95b8aaedc5eacde86caf2198d10f42356",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "8feb3490230e7c9cdae6bbbbcc1162f95b8aaedc5eacde86caf2198d10f42356",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "bc3c66033a108e173c48a7badded2fa570fe4f38427f8c5a3b68f80fe3872ce0",
+        "avifSha256": "468508740f13119e016ef572c47f73ebcb81ca41c13f8162fc749ed135e80382"
+      }
+    },
+    "jp_sofukuji_daiou": {
+      "source": "assets/colored/jp_sofukuji_daiou.png",
+      "sourceSha256": "9cb18a78ac4483bac4c6479a5b6894208d4d5fbae66cf4f9a6ecf344ddff345a",
+      "sourceBytes": 2208682,
+      "input": "assets/colored-transparent/jp_sofukuji_daiou.png",
+      "inputSha256": "8408adba1dcebbe8a9fde7ab51bd80ecd0b7d62a0349790c1da1ff3a7892aaee",
+      "inputBytes": 2112983,
+      "src": "assets/colored-transparent-avif/jp_sofukuji_daiou.avif",
+      "sha256": "f8987ce9228fd8ad4f8149c11ec05dcb5b255fa8fee760e004f26470d053de0d",
+      "bytes": 272342,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 775003,
+        "opaquePixels": 785905,
+        "meanError": 0.009538014729817709,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.158,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "9cb18a78ac4483bac4c6479a5b6894208d4d5fbae66cf4f9a6ecf344ddff345a",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "9cb18a78ac4483bac4c6479a5b6894208d4d5fbae66cf4f9a6ecf344ddff345a",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "8408adba1dcebbe8a9fde7ab51bd80ecd0b7d62a0349790c1da1ff3a7892aaee",
+        "avifSha256": "f8987ce9228fd8ad4f8149c11ec05dcb5b255fa8fee760e004f26470d053de0d"
+      }
+    },
+    "jp_sofukuji_daiippomon": {
+      "source": "assets/colored/jp_sofukuji_daiippomon.png",
+      "sourceSha256": "208a29f09627209d6f671fb999f83fcd5739e6ff481c6c400ca1755a4c93b4c7",
+      "sourceBytes": 2316649,
+      "input": "assets/colored-transparent/jp_sofukuji_daiippomon.png",
+      "inputSha256": "629c947ccd24c8dca36437948bc75e3cbb72513c1e114e0e95dda4ae3c77392b",
+      "inputBytes": 2234239,
+      "src": "assets/colored-transparent-avif/jp_sofukuji_daiippomon.avif",
+      "sha256": "3e557edc2fff16d3c9a5229bebe9b32056483273cfe008df4d7c1c144da76e7c",
+      "bytes": 274310,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 565212,
+        "opaquePixels": 995878,
+        "meanError": 0.008685429890950521,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.905,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "208a29f09627209d6f671fb999f83fcd5739e6ff481c6c400ca1755a4c93b4c7",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "208a29f09627209d6f671fb999f83fcd5739e6ff481c6c400ca1755a4c93b4c7",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "629c947ccd24c8dca36437948bc75e3cbb72513c1e114e0e95dda4ae3c77392b",
+        "avifSha256": "3e557edc2fff16d3c9a5229bebe9b32056483273cfe008df4d7c1c144da76e7c"
+      }
+    },
+    "jp_aoi_aso": {
+      "source": "assets/colored/jp_aoi_aso.png",
+      "sourceSha256": "c0ef1a5389a7a637db75a384bdb405d911db639f04719e24733cdaf21dae9e40",
+      "sourceBytes": 2289797,
+      "input": "assets/colored-transparent/jp_aoi_aso.png",
+      "inputSha256": "fd7854d3b386129df8c73927f15a889eff08f235eeee5189255acd4093a9dbd1",
+      "inputBytes": 2192881,
+      "src": "assets/colored-transparent-avif/jp_aoi_aso.avif",
+      "sha256": "f1b449f20b3428360f152f6025de3998bf343bd2cdb9615ac853cdfb0e4e0a75",
+      "bytes": 278964,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 806640,
+        "opaquePixels": 754344,
+        "meanError": 0.009264628092447916,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.02,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c0ef1a5389a7a637db75a384bdb405d911db639f04719e24733cdaf21dae9e40",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "c0ef1a5389a7a637db75a384bdb405d911db639f04719e24733cdaf21dae9e40",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "fd7854d3b386129df8c73927f15a889eff08f235eeee5189255acd4093a9dbd1",
+        "avifSha256": "f1b449f20b3428360f152f6025de3998bf343bd2cdb9615ac853cdfb0e4e0a75"
+      }
+    },
+    "jp_tamaudun": {
+      "source": "assets/colored/jp_tamaudun.png",
+      "sourceSha256": "21486bcec60eaffccf1f41a0df6688aa3e7a638099930ef844cb6dec10be7eb9",
+      "sourceBytes": 2227659,
+      "input": "assets/colored-transparent/jp_tamaudun.png",
+      "inputSha256": "52b01b4715558955b97c1ffb242375547f43d009ff7d257589e66553a6ee99b2",
+      "inputBytes": 2001417,
+      "src": "assets/colored-transparent-avif/jp_tamaudun.avif",
+      "sha256": "081a1782c44f9e949f835398f5d38bd355fd4efba04c4164b6f2f256faa2a745",
+      "bytes": 265116,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 893375,
+        "opaquePixels": 666604,
+        "meanError": 0.009965896606445312,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.053,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "21486bcec60eaffccf1f41a0df6688aa3e7a638099930ef844cb6dec10be7eb9",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "21486bcec60eaffccf1f41a0df6688aa3e7a638099930ef844cb6dec10be7eb9",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "52b01b4715558955b97c1ffb242375547f43d009ff7d257589e66553a6ee99b2",
+        "avifSha256": "081a1782c44f9e949f835398f5d38bd355fd4efba04c4164b6f2f256faa2a745"
+      }
+    },
+    "jp_myoikian_taian": {
+      "source": "assets/colored/jp_myoikian_taian.png",
+      "sourceSha256": "4604d26c0a01a55aaffefb977570f6d8a2a6d566b6c632b4fdfd2d90a4a62021",
+      "sourceBytes": 2081907,
+      "input": "assets/colored-transparent/jp_myoikian_taian.png",
+      "inputSha256": "6c57df360d3410456d56db71dd0fc62a7eddd8608a4fdf8874dc4c5e281f3eaa",
+      "inputBytes": 1939051,
+      "src": "assets/colored-transparent-avif/jp_myoikian_taian.avif",
+      "sha256": "dac11abbe1d4effe4764b287ca57f3f5876274aac00c9fc572435c296331e53f",
+      "bytes": 230452,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 722309,
+        "opaquePixels": 837714,
+        "meanError": 0.010059356689453125,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.833,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "4604d26c0a01a55aaffefb977570f6d8a2a6d566b6c632b4fdfd2d90a4a62021",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "4604d26c0a01a55aaffefb977570f6d8a2a6d566b6c632b4fdfd2d90a4a62021",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "6c57df360d3410456d56db71dd0fc62a7eddd8608a4fdf8874dc4c5e281f3eaa",
+        "avifSha256": "dac11abbe1d4effe4764b287ca57f3f5876274aac00c9fc572435c296331e53f"
+      }
+    },
+    "jp_urakuen_joan": {
+      "source": "assets/colored/jp_urakuen_joan.png",
+      "sourceSha256": "de6797042797a729fbd37e00881039c34dde4fe2e186483ae9a913ef5e02f27c",
+      "sourceBytes": 1984480,
+      "input": "assets/colored-transparent/jp_urakuen_joan.png",
+      "inputSha256": "521cd79539e797f28c30729ce1135b32c25ce7552b30f5cac06aa4ca6eb3d98d",
+      "inputBytes": 1865949,
+      "src": "assets/colored-transparent-avif/jp_urakuen_joan.avif",
+      "sha256": "899bb3db6d39005b8bd4343a2253ec3e7ba692bc52e699b4b182ce7e33061086",
+      "bytes": 202303,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 830480,
+        "opaquePixels": 733397,
+        "meanError": 0.0071735382080078125,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.864,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "de6797042797a729fbd37e00881039c34dde4fe2e186483ae9a913ef5e02f27c",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "de6797042797a729fbd37e00881039c34dde4fe2e186483ae9a913ef5e02f27c",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "521cd79539e797f28c30729ce1135b32c25ce7552b30f5cac06aa4ca6eb3d98d",
+        "avifSha256": "899bb3db6d39005b8bd4343a2253ec3e7ba692bc52e699b4b182ce7e33061086"
+      }
+    },
+    "jp_hakogi_house": {
+      "source": "assets/colored/jp_hakogi_house.png",
+      "sourceSha256": "aa61b3d2dac1ab67e6958153fd425d088ee96ef56c3c3f3d3ec5c329fceba83c",
+      "sourceBytes": 2130611,
+      "input": "assets/colored-transparent/jp_hakogi_house.png",
+      "inputSha256": "89d537c7b91bbe27284569a10aa88be0dd79010471f8bbe077563a8449ec102a",
+      "inputBytes": 1950541,
+      "src": "assets/colored-transparent-avif/jp_hakogi_house.avif",
+      "sha256": "6c7738382f3b4e6626f6acf49949a2c49f03e2fe65d595f68544f4e4805b7be4",
+      "bytes": 228227,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 981367,
+        "opaquePixels": 583141,
+        "meanError": 0.006757100423177083,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.865,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "aa61b3d2dac1ab67e6958153fd425d088ee96ef56c3c3f3d3ec5c329fceba83c",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "aa61b3d2dac1ab67e6958153fd425d088ee96ef56c3c3f3d3ec5c329fceba83c",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "89d537c7b91bbe27284569a10aa88be0dd79010471f8bbe077563a8449ec102a",
+        "avifSha256": "6c7738382f3b4e6626f6acf49949a2c49f03e2fe65d595f68544f4e4805b7be4"
+      }
+    },
+    "jp_furui_house": {
+      "source": "assets/colored/jp_furui_house.png",
+      "sourceSha256": "6fe931759e39d74035a08d26b85c08ff51aa949fe6028af902af3069f87cbcd0",
+      "sourceBytes": 2141915,
+      "input": "assets/colored-transparent/jp_furui_house.png",
+      "inputSha256": "7490a90076054f74b5c88f902af15abfb9f684433cbd1427359d0e6623e4f951",
+      "inputBytes": 1974206,
+      "src": "assets/colored-transparent-avif/jp_furui_house.avif",
+      "sha256": "ad1580ec2cfff0371316b59388df1a5dea88b4012372351a731b851a42f24f29",
+      "bytes": 236698,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 972059,
+        "opaquePixels": 590928,
+        "meanError": 0.007947921752929688,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.867,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "6fe931759e39d74035a08d26b85c08ff51aa949fe6028af902af3069f87cbcd0",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T15:54:02.779Z",
+        "sourceSha256": "6fe931759e39d74035a08d26b85c08ff51aa949fe6028af902af3069f87cbcd0",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "7490a90076054f74b5c88f902af15abfb9f684433cbd1427359d0e6623e4f951",
+        "avifSha256": "ad1580ec2cfff0371316b59388df1a5dea88b4012372351a731b851a42f24f29"
+      }
+    },
+    "jp_bannaji_hondo": {
+      "source": "assets/colored/jp_bannaji_hondo.png",
+      "sourceSha256": "e076d02dd4f6f47b25be5a3f41215d9f4ee67a36a49f86cf76b11eb4c94e5f8d",
+      "sourceBytes": 2114881,
+      "input": "assets/colored-transparent/jp_bannaji_hondo.png",
+      "inputSha256": "3d4910592adabc0aecc9575971943ad983b54fe479582bb630989aaaf985218e",
+      "inputBytes": 1890302,
+      "src": "assets/colored-transparent-avif/jp_bannaji_hondo.avif",
+      "sha256": "43972b4398cd0fb97ea0610b965e470e74efd5ce35539ac779b17979ac721727",
+      "bytes": 226872,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 890147,
+        "opaquePixels": 671479,
+        "meanError": 0.008670171101888021,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.407,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e076d02dd4f6f47b25be5a3f41215d9f4ee67a36a49f86cf76b11eb4c94e5f8d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "e076d02dd4f6f47b25be5a3f41215d9f4ee67a36a49f86cf76b11eb4c94e5f8d",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "3d4910592adabc0aecc9575971943ad983b54fe479582bb630989aaaf985218e",
+        "avifSha256": "43972b4398cd0fb97ea0610b965e470e74efd5ce35539ac779b17979ac721727"
+      }
+    },
+    "jp_myotsuji_hondo": {
+      "source": "assets/colored/jp_myotsuji_hondo.png",
+      "sourceSha256": "789bf2cde5aef950b185e89a39491135de727ff504b0b4bfd1915a11ec16d9b7",
+      "sourceBytes": 2077667,
+      "input": "assets/colored-transparent/jp_myotsuji_hondo.png",
+      "inputSha256": "37201149ffd1ec2adab2c49478f580eaf6f25f5c816f8e8f7358ca5781b46058",
+      "inputBytes": 1904181,
+      "src": "assets/colored-transparent-avif/jp_myotsuji_hondo.avif",
+      "sha256": "46f55ab3a526dc716a68cfe92f71deee6c5a680d596e7ee40c0e8342ba1058d3",
+      "bytes": 237104,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 858394,
+        "opaquePixels": 704064,
+        "meanError": 0.008214950561523438,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.394,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "789bf2cde5aef950b185e89a39491135de727ff504b0b4bfd1915a11ec16d9b7",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "789bf2cde5aef950b185e89a39491135de727ff504b0b4bfd1915a11ec16d9b7",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "37201149ffd1ec2adab2c49478f580eaf6f25f5c816f8e8f7358ca5781b46058",
+        "avifSha256": "46f55ab3a526dc716a68cfe92f71deee6c5a680d596e7ee40c0e8342ba1058d3"
+      }
+    },
+    "jp_myotsuji_pagoda": {
+      "source": "assets/colored/jp_myotsuji_pagoda.png",
+      "sourceSha256": "a6fe8e6f965f8ec057b3d637b81c733f90e52e246f3b64174b60b4c601067446",
+      "sourceBytes": 1988522,
+      "input": "assets/colored-transparent/jp_myotsuji_pagoda.png",
+      "inputSha256": "dbfc2bc4193d9d7919fe4542dadbe414f9bbc218b6b9f1deb84fc1fc0f3a9407",
+      "inputBytes": 1817893,
+      "src": "assets/colored-transparent-avif/jp_myotsuji_pagoda.avif",
+      "sha256": "d5bd4bde51fcdf41fed2547229307e524ca11e6aa559eb0d214231bfa1b98544",
+      "bytes": 228555,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 952129,
+        "opaquePixels": 604623,
+        "meanError": 0.012792587280273438,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.473,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "a6fe8e6f965f8ec057b3d637b81c733f90e52e246f3b64174b60b4c601067446",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "a6fe8e6f965f8ec057b3d637b81c733f90e52e246f3b64174b60b4c601067446",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "dbfc2bc4193d9d7919fe4542dadbe414f9bbc218b6b9f1deb84fc1fc0f3a9407",
+        "avifSha256": "d5bd4bde51fcdf41fed2547229307e524ca11e6aa559eb0d214231bfa1b98544"
+      }
+    },
+    "jp_seihakuji_butsuden": {
+      "source": "assets/colored/jp_seihakuji_butsuden.png",
+      "sourceSha256": "c77452fa7100cb08c8a37afc6799c9b2fda7f5b5cacf61159d67d4f7699c0b61",
+      "sourceBytes": 1937684,
+      "input": "assets/colored-transparent/jp_seihakuji_butsuden.png",
+      "inputSha256": "b641ca93553ee3451e7ec246e0521b9b4aa9329199aa6fe07642163fc3ad68e0",
+      "inputBytes": 1782309,
+      "src": "assets/colored-transparent-avif/jp_seihakuji_butsuden.avif",
+      "sha256": "6d4d8287ca33dca930c96c1a3454a031b9b2dbb5ad94dcab62d55880e82b4b1b",
+      "bytes": 207689,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 859999,
+        "opaquePixels": 702834,
+        "meanError": 0.007940292358398438,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.336,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c77452fa7100cb08c8a37afc6799c9b2fda7f5b5cacf61159d67d4f7699c0b61",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "c77452fa7100cb08c8a37afc6799c9b2fda7f5b5cacf61159d67d4f7699c0b61",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "b641ca93553ee3451e7ec246e0521b9b4aa9329199aa6fe07642163fc3ad68e0",
+        "avifSha256": "6d4d8287ca33dca930c96c1a3454a031b9b2dbb5ad94dcab62d55880e82b4b1b"
+      }
+    },
+    "jp_daihoji_pagoda": {
+      "source": "assets/colored/jp_daihoji_pagoda.png",
+      "sourceSha256": "93188259899504d980dc175e9f0f42892ec839d0b1af0e351bd2e6132e6a1c52",
+      "sourceBytes": 1870794,
+      "input": "assets/colored-transparent/jp_daihoji_pagoda.png",
+      "inputSha256": "21bbdf3988dd6caf8ea6d43efc0b6601220c33c56285b3caafc4ba9343fd9478",
+      "inputBytes": 1709647,
+      "src": "assets/colored-transparent-avif/jp_daihoji_pagoda.avif",
+      "sha256": "6738879b7079f4996fb79f0075fcc507b16fc5acadb5ee0ba2242d162891cda3",
+      "bytes": 203459,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 970415,
+        "opaquePixels": 586682,
+        "meanError": 0.012437184651692709,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.426,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "93188259899504d980dc175e9f0f42892ec839d0b1af0e351bd2e6132e6a1c52",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "93188259899504d980dc175e9f0f42892ec839d0b1af0e351bd2e6132e6a1c52",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "21bbdf3988dd6caf8ea6d43efc0b6601220c33c56285b3caafc4ba9343fd9478",
+        "avifSha256": "6738879b7079f4996fb79f0075fcc507b16fc5acadb5ee0ba2242d162891cda3"
+      }
+    },
+    "jp_ankokuji_kyozo": {
+      "source": "assets/colored/jp_ankokuji_kyozo.png",
+      "sourceSha256": "84e153628387344abc14b246c05c6e03e0d3a6ee7eae9ff3e5e7619bbfa04f7d",
+      "sourceBytes": 2323703,
+      "input": "assets/colored-transparent/jp_ankokuji_kyozo.png",
+      "inputSha256": "d42936629b2c8350cd52eda29b5e471b9caec8ab02bf8696ca5ea5b8f6864b5e",
+      "inputBytes": 2273208,
+      "src": "assets/colored-transparent-avif/jp_ankokuji_kyozo.avif",
+      "sha256": "b3cfbcde3485042982787033893b1e6db9cb2adb287f6caaeb591f61c97ab0dc",
+      "bytes": 270916,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 621928,
+        "opaquePixels": 938293,
+        "meanError": 0.009855906168619791,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.261,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "84e153628387344abc14b246c05c6e03e0d3a6ee7eae9ff3e5e7619bbfa04f7d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "84e153628387344abc14b246c05c6e03e0d3a6ee7eae9ff3e5e7619bbfa04f7d",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "d42936629b2c8350cd52eda29b5e471b9caec8ab02bf8696ca5ea5b8f6864b5e",
+        "avifSha256": "b3cfbcde3485042982787033893b1e6db9cb2adb287f6caaeb591f61c97ab0dc"
+      }
+    },
+    "jp_konrenji_midado": {
+      "source": "assets/colored/jp_konrenji_midado.png",
+      "sourceSha256": "c95a68e9b55e46902d351e3e4400ceb3e77b4ce752bf0028cdf7ea50d88475ab",
+      "sourceBytes": 1926895,
+      "input": "assets/colored-transparent/jp_konrenji_midado.png",
+      "inputSha256": "952d1a968adb61184bf5e188ea087a78d41080b950caefebbf6eee50c3255374",
+      "inputBytes": 1763212,
+      "src": "assets/colored-transparent-avif/jp_konrenji_midado.avif",
+      "sha256": "79c462369539c1d6e18621cd98b6d5f8da6ccfa323a47653a0cbc2a3e0eb1147",
+      "bytes": 210875,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 912938,
+        "opaquePixels": 646930,
+        "meanError": 0.010325113932291666,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.364,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c95a68e9b55e46902d351e3e4400ceb3e77b4ce752bf0028cdf7ea50d88475ab",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "c95a68e9b55e46902d351e3e4400ceb3e77b4ce752bf0028cdf7ea50d88475ab",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "952d1a968adb61184bf5e188ea087a78d41080b950caefebbf6eee50c3255374",
+        "avifSha256": "79c462369539c1d6e18621cd98b6d5f8da6ccfa323a47653a0cbc2a3e0eb1147"
+      }
+    },
+    "jp_senshuji_mieido": {
+      "source": "assets/colored/jp_senshuji_mieido.png",
+      "sourceSha256": "6a53da2f032cde9dbcda055489e04d827f59f3f793507caeaf2023a16e351063",
+      "sourceBytes": 2278250,
+      "input": "assets/colored-transparent/jp_senshuji_mieido.png",
+      "inputSha256": "9e48d9e3ba9c64a4632feaa65fecc81c29e68bf9c10246135555ef2e933ddfb4",
+      "inputBytes": 2030106,
+      "src": "assets/colored-transparent-avif/jp_senshuji_mieido.avif",
+      "sha256": "278dcc675b481fa5eca7b24811b42d23a2df97d291cb919dde481fec590ed5c3",
+      "bytes": 249753,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 784127,
+        "opaquePixels": 778965,
+        "meanError": 0.0076007843017578125,
+        "maxError": 10
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.328,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "6a53da2f032cde9dbcda055489e04d827f59f3f793507caeaf2023a16e351063",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "6a53da2f032cde9dbcda055489e04d827f59f3f793507caeaf2023a16e351063",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "9e48d9e3ba9c64a4632feaa65fecc81c29e68bf9c10246135555ef2e933ddfb4",
+        "avifSha256": "278dcc675b481fa5eca7b24811b42d23a2df97d291cb919dde481fec590ed5c3"
+      }
+    },
+    "jp_senshuji_nyoraido": {
+      "source": "assets/colored/jp_senshuji_nyoraido.png",
+      "sourceSha256": "98ab8389ce294e31e42fc3363c9f0fe6d917b3ea219ff7f6aead4d3c738f53f5",
+      "sourceBytes": 2475289,
+      "input": "assets/colored-transparent/jp_senshuji_nyoraido.png",
+      "inputSha256": "f1c82c560c8e5519a486107a27ed9004a46376c9a2a15c96f9a5f5af66e7f077",
+      "inputBytes": 2337653,
+      "src": "assets/colored-transparent-avif/jp_senshuji_nyoraido.avif",
+      "sha256": "f352ed6b9710ea3d017320d4f7e0f2b0081520d2d65d7c5f0a54c142bba749dd",
+      "bytes": 302683,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 656124,
+        "opaquePixels": 904198,
+        "meanError": 0.009820938110351562,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.515,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "98ab8389ce294e31e42fc3363c9f0fe6d917b3ea219ff7f6aead4d3c738f53f5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "98ab8389ce294e31e42fc3363c9f0fe6d917b3ea219ff7f6aead4d3c738f53f5",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "f1c82c560c8e5519a486107a27ed9004a46376c9a2a15c96f9a5f5af66e7f077",
+        "avifSha256": "f352ed6b9710ea3d017320d4f7e0f2b0081520d2d65d7c5f0a54c142bba749dd"
+      }
+    },
+    "jp_onjoji_kondo": {
+      "source": "assets/colored/jp_onjoji_kondo.png",
+      "sourceSha256": "ad214c1243fbb16787738a0eb3d5eb85ee0c6d5ead968129a8e6df2f388d1d98",
+      "sourceBytes": 1869894,
+      "input": "assets/colored-transparent/jp_onjoji_kondo.png",
+      "inputSha256": "78fb0a04c92891f3e8790f0175ec682c22a2726b9b713becdae7f9fbaec3abc9",
+      "inputBytes": 1753356,
+      "src": "assets/colored-transparent-avif/jp_onjoji_kondo.avif",
+      "sha256": "ddee6375380080be05deb3f1940c4c59fd419f5b1f33b54692a755561d484b23",
+      "bytes": 217968,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 907909,
+        "opaquePixels": 654785,
+        "meanError": 0.007839838663736979,
+        "maxError": 10
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.567,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ad214c1243fbb16787738a0eb3d5eb85ee0c6d5ead968129a8e6df2f388d1d98",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "ad214c1243fbb16787738a0eb3d5eb85ee0c6d5ead968129a8e6df2f388d1d98",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "78fb0a04c92891f3e8790f0175ec682c22a2726b9b713becdae7f9fbaec3abc9",
+        "avifSha256": "ddee6375380080be05deb3f1940c4c59fd419f5b1f33b54692a755561d484b23"
+      }
+    },
+    "jp_kongorinji_hondo": {
+      "source": "assets/colored/jp_kongorinji_hondo.png",
+      "sourceSha256": "ab319b08bf1300a86eb30e5450f824607a1a09b728a3c45c39b7ff7037f3ceb3",
+      "sourceBytes": 2195260,
+      "input": "assets/colored-transparent/jp_kongorinji_hondo.png",
+      "inputSha256": "4e0ff0b12228288570ddefea8b515f84afb80683a7824316191b3b6af0b9a94f",
+      "inputBytes": 2024974,
+      "src": "assets/colored-transparent-avif/jp_kongorinji_hondo.avif",
+      "sha256": "a9d521448d089e0fa6e2b3a24c292ff269fa185597acc426a63b6b2a65c409a6",
+      "bytes": 247643,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 836135,
+        "opaquePixels": 726280,
+        "meanError": 0.008421579996744791,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.517,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ab319b08bf1300a86eb30e5450f824607a1a09b728a3c45c39b7ff7037f3ceb3",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "ab319b08bf1300a86eb30e5450f824607a1a09b728a3c45c39b7ff7037f3ceb3",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "4e0ff0b12228288570ddefea8b515f84afb80683a7824316191b3b6af0b9a94f",
+        "avifSha256": "a9d521448d089e0fa6e2b3a24c292ff269fa185597acc426a63b6b2a65c409a6"
+      }
+    },
+    "jp_saimyoji_hondo": {
+      "source": "assets/colored/jp_saimyoji_hondo.png",
+      "sourceSha256": "3fa482abeb7c0ca7bd210f1c178a43a8ad11a17864b2b5f856153606f28085eb",
+      "sourceBytes": 2036162,
+      "input": "assets/colored-transparent/jp_saimyoji_hondo.png",
+      "inputSha256": "edef501dcc7bb76bd981bdb10df7e25ea26fb3b6935963b6f6a059588d6799d5",
+      "inputBytes": 1899330,
+      "src": "assets/colored-transparent-avif/jp_saimyoji_hondo.avif",
+      "sha256": "e56ca721d5f316855fc5d771634e72d693983f358b0c7572cdac934cd83d204c",
+      "bytes": 228555,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 841600,
+        "opaquePixels": 719557,
+        "meanError": 0.009192784627278646,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.435,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "3fa482abeb7c0ca7bd210f1c178a43a8ad11a17864b2b5f856153606f28085eb",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "3fa482abeb7c0ca7bd210f1c178a43a8ad11a17864b2b5f856153606f28085eb",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "edef501dcc7bb76bd981bdb10df7e25ea26fb3b6935963b6f6a059588d6799d5",
+        "avifSha256": "e56ca721d5f316855fc5d771634e72d693983f358b0c7572cdac934cd83d204c"
+      }
+    },
+    "jp_saimyoji_pagoda": {
+      "source": "assets/colored/jp_saimyoji_pagoda.png",
+      "sourceSha256": "8b99c543b6eddfc760e8461298db7c008bc4a7c3826f7218f2cc74bda5771afe",
+      "sourceBytes": 1891381,
+      "input": "assets/colored-transparent/jp_saimyoji_pagoda.png",
+      "inputSha256": "bdb3459c9ed29f7e131dd364b272b51d0cd3fc9a612e4e62d0c0aa7b5fc4f2c9",
+      "inputBytes": 1737424,
+      "src": "assets/colored-transparent-avif/jp_saimyoji_pagoda.avif",
+      "sha256": "fc37d117e7b5df96d1cf80de14c29e7dfc9a63413bef13ee587cea2e12fc81b3",
+      "bytes": 217759,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 995622,
+        "opaquePixels": 562097,
+        "meanError": 0.012202580769856771,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.631,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "8b99c543b6eddfc760e8461298db7c008bc4a7c3826f7218f2cc74bda5771afe",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "8b99c543b6eddfc760e8461298db7c008bc4a7c3826f7218f2cc74bda5771afe",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "bdb3459c9ed29f7e131dd364b272b51d0cd3fc9a612e4e62d0c0aa7b5fc4f2c9",
+        "avifSha256": "fc37d117e7b5df96d1cf80de14c29e7dfc9a63413bef13ee587cea2e12fc81b3"
+      }
+    },
+    "jp_jorakuji_hondo": {
+      "source": "assets/colored/jp_jorakuji_hondo.png",
+      "sourceSha256": "619708b16abe07e73de24a7150e806a38aaf77a4b98cddc7c2719f660b7e420d",
+      "sourceBytes": 2234186,
+      "input": "assets/colored-transparent/jp_jorakuji_hondo.png",
+      "inputSha256": "9e4a87a58456f8c4abc3b4ae2b8896a2338055cd216282f204e1a70cc493ead1",
+      "inputBytes": 2066293,
+      "src": "assets/colored-transparent-avif/jp_jorakuji_hondo.avif",
+      "sha256": "dbb43f660840a9161e15a1dfa2ede8df4c4f12b3b22b75a3bd93dc20f567bb24",
+      "bytes": 265346,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 781988,
+        "opaquePixels": 781180,
+        "meanError": 0.00771331787109375,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.478,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "619708b16abe07e73de24a7150e806a38aaf77a4b98cddc7c2719f660b7e420d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "619708b16abe07e73de24a7150e806a38aaf77a4b98cddc7c2719f660b7e420d",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "9e4a87a58456f8c4abc3b4ae2b8896a2338055cd216282f204e1a70cc493ead1",
+        "avifSha256": "dbb43f660840a9161e15a1dfa2ede8df4c4f12b3b22b75a3bd93dc20f567bb24"
+      }
+    },
+    "jp_jorakuji_pagoda": {
+      "source": "assets/colored/jp_jorakuji_pagoda.png",
+      "sourceSha256": "8e8cc7654818c31c0c88e6a984a12a744aff77f281704bbb3c500b31d2355923",
+      "sourceBytes": 1930198,
+      "input": "assets/colored-transparent/jp_jorakuji_pagoda.png",
+      "inputSha256": "fa045ba2580084989ff11b6d03a452c3866120288eebcc5fefa7703ce1024c1c",
+      "inputBytes": 1758356,
+      "src": "assets/colored-transparent-avif/jp_jorakuji_pagoda.avif",
+      "sha256": "d20c64e8aa585dd66a5de5a380427f4efabf9335ff8ba09998e343fd3a0e655d",
+      "bytes": 221485,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 992403,
+        "opaquePixels": 564546,
+        "meanError": 0.012852986653645834,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.569,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "8e8cc7654818c31c0c88e6a984a12a744aff77f281704bbb3c500b31d2355923",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "8e8cc7654818c31c0c88e6a984a12a744aff77f281704bbb3c500b31d2355923",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "fa045ba2580084989ff11b6d03a452c3866120288eebcc5fefa7703ce1024c1c",
+        "avifSha256": "d20c64e8aa585dd66a5de5a380427f4efabf9335ff8ba09998e343fd3a0e655d"
+      }
+    },
+    "jp_zensuiji_hondo": {
+      "source": "assets/colored/jp_zensuiji_hondo.png",
+      "sourceSha256": "9459043cf915b97824391ca0d3868af029a02af2820d41925c132a97c6d499dc",
+      "sourceBytes": 1946633,
+      "input": "assets/colored-transparent/jp_zensuiji_hondo.png",
+      "inputSha256": "0069bd7740d11c4e430a3ffe070974a571f25a9157720c703a628684466e0590",
+      "inputBytes": 1813511,
+      "src": "assets/colored-transparent-avif/jp_zensuiji_hondo.avif",
+      "sha256": "99125f82b3a0cd68140e285ca05ace7466a98f3d7ab8db0b463c36981a032542",
+      "bytes": 216067,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 891202,
+        "opaquePixels": 669083,
+        "meanError": 0.009672164916992188,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.552,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "9459043cf915b97824391ca0d3868af029a02af2820d41925c132a97c6d499dc",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "9459043cf915b97824391ca0d3868af029a02af2820d41925c132a97c6d499dc",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "0069bd7740d11c4e430a3ffe070974a571f25a9157720c703a628684466e0590",
+        "avifSha256": "99125f82b3a0cd68140e285ca05ace7466a98f3d7ab8db0b463c36981a032542"
+      }
+    },
+    "jp_chojuji_hondo": {
+      "source": "assets/colored/jp_chojuji_hondo.png",
+      "sourceSha256": "abfc1d9aabea31c623dc011bbd749dca58bb920bd4f1a322f0b743655cf3fd58",
+      "sourceBytes": 2153296,
+      "input": "assets/colored-transparent/jp_chojuji_hondo.png",
+      "inputSha256": "dc7cdcd3720bd885e700206a40fe6515c1f522110f64e8d0d44fc61b2cb16f38",
+      "inputBytes": 1966465,
+      "src": "assets/colored-transparent-avif/jp_chojuji_hondo.avif",
+      "sha256": "d39f0185b575ddaaeb9c15ea56d1d6e248b3f0dfb60cc1242f83730676cfa500",
+      "bytes": 258154,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 867169,
+        "opaquePixels": 694720,
+        "meanError": 0.008594512939453125,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 3.547,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "abfc1d9aabea31c623dc011bbd749dca58bb920bd4f1a322f0b743655cf3fd58",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "abfc1d9aabea31c623dc011bbd749dca58bb920bd4f1a322f0b743655cf3fd58",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "dc7cdcd3720bd885e700206a40fe6515c1f522110f64e8d0d44fc61b2cb16f38",
+        "avifSha256": "d39f0185b575ddaaeb9c15ea56d1d6e248b3f0dfb60cc1242f83730676cfa500"
+      }
+    },
+    "jp_hogonji_karamon": {
+      "source": "assets/colored/jp_hogonji_karamon.png",
+      "sourceSha256": "102a582f373aff9fc91ebe72ca57163748b48978d9b88e333edbb34dd747e7cf",
+      "sourceBytes": 1937156,
+      "input": "assets/colored-transparent/jp_hogonji_karamon.png",
+      "inputSha256": "838167d1cf957159221a2a63a9599a1e75cbb73d237f48b3ce54cf8f70742987",
+      "inputBytes": 1828184,
+      "src": "assets/colored-transparent-avif/jp_hogonji_karamon.avif",
+      "sha256": "f465f322aed7236202adda618add203e42d23dfc525fc8a30ac6126fc5fdec0d",
+      "bytes": 208451,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 904137,
+        "opaquePixels": 658621,
+        "meanError": 0.008068084716796875,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 3.69,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "102a582f373aff9fc91ebe72ca57163748b48978d9b88e333edbb34dd747e7cf",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "102a582f373aff9fc91ebe72ca57163748b48978d9b88e333edbb34dd747e7cf",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "838167d1cf957159221a2a63a9599a1e75cbb73d237f48b3ce54cf8f70742987",
+        "avifSha256": "f465f322aed7236202adda618add203e42d23dfc525fc8a30ac6126fc5fdec0d"
+      }
+    },
+    "jp_kaijusenji_pagoda": {
+      "source": "assets/colored/jp_kaijusenji_pagoda.png",
+      "sourceSha256": "cedc60803acbe0a6e4f3dda5ba89d0d3dbaf193a5f716c8cc037d5bba83b122c",
+      "sourceBytes": 1794581,
+      "input": "assets/colored-transparent/jp_kaijusenji_pagoda.png",
+      "inputSha256": "dcb64f98ff6249646087a6f5962e8f7e8dfc75b53b5d38a4b69bbdefd18e9bd5",
+      "inputBytes": 1649781,
+      "src": "assets/colored-transparent-avif/jp_kaijusenji_pagoda.avif",
+      "sha256": "a0a50e86aa2d1365cbfc91512fd1f236f4632b665c367a0ff83f208850f34dd2",
+      "bytes": 202079,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1071598,
+        "opaquePixels": 484444,
+        "meanError": 0.013470331827799479,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 3.864,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "cedc60803acbe0a6e4f3dda5ba89d0d3dbaf193a5f716c8cc037d5bba83b122c",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "cedc60803acbe0a6e4f3dda5ba89d0d3dbaf193a5f716c8cc037d5bba83b122c",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "dcb64f98ff6249646087a6f5962e8f7e8dfc75b53b5d38a4b69bbdefd18e9bd5",
+        "avifSha256": "a0a50e86aa2d1365cbfc91512fd1f236f4632b665c367a0ff83f208850f34dd2"
+      }
+    },
+    "jp_daihoonji_hondo": {
+      "source": "assets/colored/jp_daihoonji_hondo.png",
+      "sourceSha256": "d28f8846e89ae29f7c3d8264280aab14b4cdd35659fc860d7abf1efa889412ee",
+      "sourceBytes": 2208680,
+      "input": "assets/colored-transparent/jp_daihoonji_hondo.png",
+      "inputSha256": "92e33f5ddb37ff7f6bb9f469f45b5199a90280fe1f552c93143f5b9747b83523",
+      "inputBytes": 2057741,
+      "src": "assets/colored-transparent-avif/jp_daihoonji_hondo.avif",
+      "sha256": "846bb8777a5548b4aa612aea3291edae563956a3db5b3ada0b0545b44a400bf4",
+      "bytes": 248495,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 824300,
+        "opaquePixels": 739324,
+        "meanError": 0.007467905680338542,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 3.748,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d28f8846e89ae29f7c3d8264280aab14b4cdd35659fc860d7abf1efa889412ee",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "d28f8846e89ae29f7c3d8264280aab14b4cdd35659fc860d7abf1efa889412ee",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "92e33f5ddb37ff7f6bb9f469f45b5199a90280fe1f552c93143f5b9747b83523",
+        "avifSha256": "846bb8777a5548b4aa612aea3291edae563956a3db5b3ada0b0545b44a400bf4"
+      }
+    },
+    "jp_kinpusenji_zaodo": {
+      "source": "assets/colored/jp_kinpusenji_zaodo.png",
+      "sourceSha256": "9546fe07363f353fba15f15c56361c9b038ca9ef8a6640bc2f72b6663b9206db",
+      "sourceBytes": 2312845,
+      "input": "assets/colored-transparent/jp_kinpusenji_zaodo.png",
+      "inputSha256": "e9849e612cf0dd95714a48cc751f3b31bc34dc0e6143cc7a41a8c382aad40064",
+      "inputBytes": 2228896,
+      "src": "assets/colored-transparent-avif/jp_kinpusenji_zaodo.avif",
+      "sha256": "3666320f04161c9ef01377506d000395f5c6c2336a329d185bb9f598640010fb",
+      "bytes": 279089,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 698752,
+        "opaquePixels": 862807,
+        "meanError": 0.008818308512369791,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.399,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "9546fe07363f353fba15f15c56361c9b038ca9ef8a6640bc2f72b6663b9206db",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "9546fe07363f353fba15f15c56361c9b038ca9ef8a6640bc2f72b6663b9206db",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "e9849e612cf0dd95714a48cc751f3b31bc34dc0e6143cc7a41a8c382aad40064",
+        "avifSha256": "3666320f04161c9ef01377506d000395f5c6c2336a329d185bb9f598640010fb"
+      }
+    },
+    "jp_todaiji_daibutsuden": {
+      "source": "assets/colored/jp_todaiji_daibutsuden.png",
+      "sourceSha256": "9a4f6430e8a2ab0586d13a88d62e523579b6250ed554e3bf4432067027fac8d4",
+      "sourceBytes": 2448366,
+      "input": "assets/colored-transparent/jp_todaiji_daibutsuden.png",
+      "inputSha256": "cf5d6e65fefed85183c251ad53ffd8aaeb9853d409cf80668a248c4f9d47c813",
+      "inputBytes": 2283189,
+      "src": "assets/colored-transparent-avif/jp_todaiji_daibutsuden.avif",
+      "sha256": "6cad00b97c6d2084bb1b39acce5ede4753ee00103fa953581764114646a18392",
+      "bytes": 289784,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 692570,
+        "opaquePixels": 867561,
+        "meanError": 0.009847640991210938,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.383,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "9a4f6430e8a2ab0586d13a88d62e523579b6250ed554e3bf4432067027fac8d4",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "9a4f6430e8a2ab0586d13a88d62e523579b6250ed554e3bf4432067027fac8d4",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "cf5d6e65fefed85183c251ad53ffd8aaeb9853d409cf80668a248c4f9d47c813",
+        "avifSha256": "6cad00b97c6d2084bb1b39acce5ede4753ee00103fa953581764114646a18392"
+      }
+    },
+    "jp_todaiji_nigatsudo": {
+      "source": "assets/colored/jp_todaiji_nigatsudo.png",
+      "sourceSha256": "d4e0d940d9f0517b27629be73ca09867c5713b85730ba02b7a9b42b6ef54bfd7",
+      "sourceBytes": 2481304,
+      "input": "assets/colored-transparent/jp_todaiji_nigatsudo.png",
+      "inputSha256": "01ea34d8ee1094389d5e79d20851fc6bc978a8b12c066d9972ce5ba66b59324d",
+      "inputBytes": 2366508,
+      "src": "assets/colored-transparent-avif/jp_todaiji_nigatsudo.avif",
+      "sha256": "d0f9def8946debc8fa4cd8299ca2e5e902cc9fbf92a56bfd96589bdb01cd70bd",
+      "bytes": 312248,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 740663,
+        "opaquePixels": 821292,
+        "meanError": 0.008667627970377604,
+        "maxError": 10
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.564,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d4e0d940d9f0517b27629be73ca09867c5713b85730ba02b7a9b42b6ef54bfd7",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "d4e0d940d9f0517b27629be73ca09867c5713b85730ba02b7a9b42b6ef54bfd7",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "01ea34d8ee1094389d5e79d20851fc6bc978a8b12c066d9972ce5ba66b59324d",
+        "avifSha256": "d0f9def8946debc8fa4cd8299ca2e5e902cc9fbf92a56bfd96589bdb01cd70bd"
+      }
+    },
+    "jp_horyuji_yumedono": {
+      "source": "assets/colored/jp_horyuji_yumedono.png",
+      "sourceSha256": "e70b683fc7901862fe8ad92660817eee6d70750b91721f1b57b9a51b6c4978ee",
+      "sourceBytes": 2265879,
+      "input": "assets/colored-transparent/jp_horyuji_yumedono.png",
+      "inputSha256": "1227b439402f761c8cd4b679023ca2c5213a32c7648a19a6c6ced96cc54c7f27",
+      "inputBytes": 2097275,
+      "src": "assets/colored-transparent-avif/jp_horyuji_yumedono.avif",
+      "sha256": "4bfa579049e594d4930df7a06f8d085dde5c82cce150ae4dc8265a894b8b3d8c",
+      "bytes": 263385,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 819000,
+        "opaquePixels": 739297,
+        "meanError": 0.011601765950520834,
+        "maxError": 12
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.422,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e70b683fc7901862fe8ad92660817eee6d70750b91721f1b57b9a51b6c4978ee",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "e70b683fc7901862fe8ad92660817eee6d70750b91721f1b57b9a51b6c4978ee",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "1227b439402f761c8cd4b679023ca2c5213a32c7648a19a6c6ced96cc54c7f27",
+        "avifSha256": "4bfa579049e594d4930df7a06f8d085dde5c82cce150ae4dc8265a894b8b3d8c"
+      }
+    },
+    "jp_yakushiji_toindo": {
+      "source": "assets/colored/jp_yakushiji_toindo.png",
+      "sourceSha256": "50e568565355c29857a2d6fe171e233735cf2e69418481e49af607c3d1cca4dd",
+      "sourceBytes": 2100386,
+      "input": "assets/colored-transparent/jp_yakushiji_toindo.png",
+      "inputSha256": "b83d9bb10a35e85cd76a8f1d8130b34777006ed79512be6d670a403acf72f929",
+      "inputBytes": 1947868,
+      "src": "assets/colored-transparent-avif/jp_yakushiji_toindo.avif",
+      "sha256": "d0d76a72158c748560c040f37732b29681e1066c21fa6454ea74b04418709fd2",
+      "bytes": 222411,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 843130,
+        "opaquePixels": 719309,
+        "meanError": 0.008178075154622396,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.982,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "50e568565355c29857a2d6fe171e233735cf2e69418481e49af607c3d1cca4dd",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "50e568565355c29857a2d6fe171e233735cf2e69418481e49af607c3d1cca4dd",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "b83d9bb10a35e85cd76a8f1d8130b34777006ed79512be6d670a403acf72f929",
+        "avifSha256": "d0d76a72158c748560c040f37732b29681e1066c21fa6454ea74b04418709fd2"
+      }
+    },
+    "jp_hasedera_hondo": {
+      "source": "assets/colored/jp_hasedera_hondo.png",
+      "sourceSha256": "360fee7df267d74ef296be473dd8cc60d63a237c67ecdeaac23408f779f17ad0",
+      "sourceBytes": 2280980,
+      "input": "assets/colored-transparent/jp_hasedera_hondo.png",
+      "inputSha256": "f0cd16a6db6a0adda23f78683d530dec8be83ca99f3e47d823670e0d2bb0fb15",
+      "inputBytes": 2128224,
+      "src": "assets/colored-transparent-avif/jp_hasedera_hondo.avif",
+      "sha256": "0cdf8835e5844cfe4d70778f3bb8b2ba60b66b2762d2e463831ed615b3746568",
+      "bytes": 276871,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 798572,
+        "opaquePixels": 760396,
+        "meanError": 0.010941823323567709,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.03,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "360fee7df267d74ef296be473dd8cc60d63a237c67ecdeaac23408f779f17ad0",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-11T17:08:14.401Z",
+        "sourceSha256": "360fee7df267d74ef296be473dd8cc60d63a237c67ecdeaac23408f779f17ad0",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "f0cd16a6db6a0adda23f78683d530dec8be83ca99f3e47d823670e0d2bb0fb15",
+        "avifSha256": "0cdf8835e5844cfe4d70778f3bb8b2ba60b66b2762d2e463831ed615b3746568"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

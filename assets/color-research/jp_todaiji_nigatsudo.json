@@ -1,0 +1,95 @@
+{
+  "id": "jp_todaiji_nigatsudo",
+  "name": "东大寺二月堂",
+  "subject": "东大寺1669年再建二月堂单体",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_todaiji_nigatsudo.png",
+    "assets/references/jp_todaiji_nigatsudo-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 东大寺1669年再建二月堂单体\nMATERIAL OBSERVATIONS: Gray-brown roof tiles, deep brown weathered timber, pale stone footing; no brightly colored shrine in the foreground.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+  "material_observations": [
+    "Gray-brown roof tiles, deep brown weathered timber, pale stone footing; no brightly colored shrine in the foreground."
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_todaiji_nigatsudo-photo.jpg",
+      "source_page": "https://www.todaiji.or.jp/information/nigatsudo/",
+      "image_url": "https://www.todaiji.or.jp/wp-content/uploads/2022/01/nigatsudo01.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "page": "https://www.todaiji.or.jp/information/nigatsudo/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://online.bunka.go.jp/heritages/detail/123264"
+    }
+  ],
+  "original_research": "assets/research/jp_todaiji_nigatsudo.json",
+  "output": "assets/colored/jp_todaiji_nigatsudo.png",
+  "production_batch": "japan-second-20261012",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:52:57.383142+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d4e0d940d9f0517b27629be73ca09867c5713b85730ba02b7a9b42b6ef54bfd7",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-2858cf88-e47e-4ad1-b575-d71c8403241d.png",
+  "generation_history": [
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:50:26.685781+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 东大寺1669年再建二月堂单体\nMATERIAL OBSERVATIONS: Gray-brown roof tiles, deep brown weathered timber, pale stone footing; no brightly colored shrine in the foreground.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_todaiji_nigatsudo.png",
+        "assets/references/jp_todaiji_nigatsudo-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:52:57.383436+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-2858cf88-e47e-4ad1-b575-d71c8403241d.png",
+      "retained_file": "assets/colored/jp_todaiji_nigatsudo.png",
+      "sourceSha256": "d4e0d940d9f0517b27629be73ca09867c5713b85730ba02b7a9b42b6ef54bfd7"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:20.049280+08:00",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.401Z",
+    "sourceSha256": "d4e0d940d9f0517b27629be73ca09867c5713b85730ba02b7a9b42b6ef54bfd7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "01ea34d8ee1094389d5e79d20851fc6bc978a8b12c066d9972ce5ba66b59324d",
+    "avifSha256": "d0f9def8946debc8fa4cd8299ca2e5e902cc9fbf92a56bfd96589bdb01cd70bd"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

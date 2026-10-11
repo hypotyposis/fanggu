@@ -11046,6 +11046,999 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "jp_chusonji_konjikido": {
+    "src": "assets/colored-transparent-avif/jp_chusonji_konjikido.avif",
+    "originalSrc": "assets/colored/jp_chusonji_konjikido.png",
+    "transparentSrc": "assets/colored-transparent/jp_chusonji_konjikido.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "中尊寺 · 金色堂本体正面 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_chusonji_konjikido.json",
+    "references": [
+      {
+        "page": "https://www.chusonji.or.jp/know/konjikido.html",
+        "author": "中尊寺官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_shiramizu_amidado": {
+    "src": "assets/colored-transparent-avif/jp_shiramizu_amidado.avif",
+    "originalSrc": "assets/colored/jp_shiramizu_amidado.png",
+    "transparentSrc": "assets/colored-transparent/jp_shiramizu_amidado.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "白水阿弥陀堂本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_shiramizu_amidado.json",
+    "references": [
+      {
+        "page": "https://iwaki-museum.com/gallery/detail/25/",
+        "author": "磐城市文化财数字博物馆（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_hokiji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_hokiji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_hokiji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_hokiji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "法起寺三重塔本体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_hokiji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www.horyuji.or.jp/hokiji/",
+        "author": "法隆寺官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_shosoin_shoso": {
+    "src": "assets/colored-transparent-avif/jp_shosoin_shoso.avif",
+    "originalSrc": "assets/colored/jp_shosoin_shoso.png",
+    "transparentSrc": "assets/colored-transparent/jp_shosoin_shoso.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "正仓院正仓本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_shosoin_shoso.json",
+    "references": [
+      {
+        "page": "https://www.kunaicho.go.jp/visit/shosoin/index.html",
+        "author": "宫内厅官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_shinyakushiji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_shinyakushiji_hondo.avif",
+    "originalSrc": "assets/colored/jp_shinyakushiji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_shinyakushiji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "新药师寺本堂本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_shinyakushiji_hondo.json",
+    "references": [
+      {
+        "page": "https://www.shinyakushiji.or.jp/guide/",
+        "author": "新药师寺官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_murouji_kondo": {
+    "src": "assets/colored-transparent-avif/jp_murouji_kondo.avif",
+    "originalSrc": "assets/colored/jp_murouji_kondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_murouji_kondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "室生寺金堂本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_murouji_kondo.json",
+    "references": [
+      {
+        "page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+        "author": "宇陀市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_murouji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_murouji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_murouji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_murouji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "室生寺五重塔本体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_murouji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+        "author": "宇陀市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_engakuji_shariden": {
+    "src": "assets/colored-transparent-avif/jp_engakuji_shariden.avif",
+    "originalSrc": "assets/colored/jp_engakuji_shariden.png",
+    "transparentSrc": "assets/colored-transparent/jp_engakuji_shariden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "圆觉寺舍利殿本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_engakuji_shariden.json",
+    "references": [
+      {
+        "page": "https://www.engakuji.or.jp/grounds/",
+        "author": "圆觉寺官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kozanji_butsuden": {
+    "src": "assets/colored-transparent-avif/jp_kozanji_butsuden.avif",
+    "originalSrc": "assets/colored/jp_kozanji_butsuden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kozanji_butsuden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "功山寺佛殿本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kozanji_butsuden.json",
+    "references": [
+      {
+        "page": "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002",
+        "author": "山口县文化财官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_hikone_tenshu": {
+    "src": "assets/colored-transparent-avif/jp_hikone_tenshu.avif",
+    "originalSrc": "assets/colored/jp_hikone_tenshu.png",
+    "transparentSrc": "assets/colored-transparent/jp_hikone_tenshu.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "彦根城 · 天守本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_hikone_tenshu.json",
+    "references": [
+      {
+        "page": "https://www.city.hikone.lg.jp/kakuka/kanko_bunka/8/2_1/3/4581.html",
+        "author": "彦根市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_matsue_tenshu": {
+    "src": "assets/colored-transparent-avif/jp_matsue_tenshu.avif",
+    "originalSrc": "assets/colored/jp_matsue_tenshu.png",
+    "transparentSrc": "assets/colored-transparent/jp_matsue_tenshu.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "松江城 · 天守本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_matsue_tenshu.json",
+    "references": [
+      {
+        "page": "https://www.matsue-castle.jp/",
+        "author": "松江城官网官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_burakuji_yakushido": {
+    "src": "assets/colored-transparent-avif/jp_burakuji_yakushido.avif",
+    "originalSrc": "assets/colored/jp_burakuji_yakushido.png",
+    "transparentSrc": "assets/colored-transparent/jp_burakuji_yakushido.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "丰乐寺 · 药师堂 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_burakuji_yakushido.json",
+    "references": [
+      {
+        "page": "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440",
+        "author": "大丰町（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kamitani_honden": {
+    "src": "assets/colored-transparent-avif/jp_kamitani_honden.avif",
+    "originalSrc": "assets/colored/jp_kamitani_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kamitani_honden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "神谷神社本殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kamitani_honden.json",
+    "references": [
+      {
+        "page": "https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kandanijinjya.html",
+        "author": "坂出市官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_rurikoji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_rurikoji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_rurikoji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_rurikoji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "瑠璃光寺五重塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_rurikoji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www.city.yamaguchi.lg.jp/soshiki/110/192674.html",
+        "author": "山口市官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kibitsu_honden": {
+    "src": "assets/colored-transparent-avif/jp_kibitsu_honden.avif",
+    "originalSrc": "assets/colored/jp_kibitsu_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kibitsu_honden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "吉备津神社 · 本殿及拜殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kibitsu_honden.json",
+    "references": [
+      {
+        "page": "https://www.kibitujinja.com/about/honden.php",
+        "author": "吉备津神社官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kamosu_honden": {
+    "src": "assets/colored-transparent-avif/jp_kamosu_honden.avif",
+    "originalSrc": "assets/colored/jp_kamosu_honden.png",
+    "transparentSrc": "assets/colored-transparent/jp_kamosu_honden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "神魂神社 · 本殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kamosu_honden.json",
+    "references": [
+      {
+        "page": "https://www.kankou-shimane.com/destination/20261",
+        "author": "岛根县观光联盟官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kongosanmaiin_tahoto": {
+    "src": "assets/colored-transparent-avif/jp_kongosanmaiin_tahoto.avif",
+    "originalSrc": "assets/colored/jp_kongosanmaiin_tahoto.png",
+    "transparentSrc": "assets/colored-transparent/jp_kongosanmaiin_tahoto.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "金刚三昧院 · 多宝塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_kongosanmaiin_tahoto.json",
+    "references": [
+      {
+        "page": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/",
+        "author": "和歌山县文化财门户（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_negoroji_daito": {
+    "src": "assets/colored-transparent-avif/jp_negoroji_daito.avif",
+    "originalSrc": "assets/colored/jp_negoroji_daito.png",
+    "transparentSrc": "assets/colored-transparent/jp_negoroji_daito.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "根来寺 · 大塔本体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_negoroji_daito.json",
+    "references": [
+      {
+        "page": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-487/",
+        "author": "和歌山县文化财门户（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_sofukuji_daiou": {
+    "src": "assets/colored-transparent-avif/jp_sofukuji_daiou.avif",
+    "originalSrc": "assets/colored/jp_sofukuji_daiou.png",
+    "transparentSrc": "assets/colored-transparent/jp_sofukuji_daiou.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇福寺 · 大雄宝殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_sofukuji_daiou.json",
+    "references": [
+      {
+        "page": "https://www.city.nagasaki.lg.jp/page/1196.html",
+        "author": "长崎市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_sofukuji_daiippomon": {
+    "src": "assets/colored-transparent-avif/jp_sofukuji_daiippomon.avif",
+    "originalSrc": "assets/colored/jp_sofukuji_daiippomon.png",
+    "transparentSrc": "assets/colored-transparent/jp_sofukuji_daiippomon.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇福寺 · 第一峰门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_sofukuji_daiippomon.json",
+    "references": [
+      {
+        "page": "https://www.city.nagasaki.lg.jp/page/1197.html",
+        "author": "长崎市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_aoi_aso": {
+    "src": "assets/colored-transparent-avif/jp_aoi_aso.avif",
+    "originalSrc": "assets/colored/jp_aoi_aso.png",
+    "transparentSrc": "assets/colored-transparent/jp_aoi_aso.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "青井阿苏神社 · 楼门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_aoi_aso.json",
+    "references": [
+      {
+        "page": "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341",
+        "author": "人吉市官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_tamaudun": {
+    "src": "assets/colored-transparent-avif/jp_tamaudun.avif",
+    "originalSrc": "assets/colored/jp_tamaudun.png",
+    "transparentSrc": "assets/colored-transparent/jp_tamaudun.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "玉陵 · 三室石造陵墓 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_tamaudun.json",
+    "references": [
+      {
+        "page": "https://www.city.naha.okinawa.jp/kankou-bunka/kankou/1003485/1003489.html",
+        "author": "那霸市官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_myoikian_taian": {
+    "src": "assets/colored-transparent-avif/jp_myoikian_taian.avif",
+    "originalSrc": "assets/colored/jp_myoikian_taian.png",
+    "transparentSrc": "assets/colored-transparent/jp_myoikian_taian.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "妙喜庵 · 待庵外观 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_myoikian_taian.json",
+    "references": [
+      {
+        "page": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html",
+        "author": "大山崎町官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_urakuen_joan": {
+    "src": "assets/colored-transparent-avif/jp_urakuen_joan.avif",
+    "originalSrc": "assets/colored/jp_urakuen_joan.png",
+    "transparentSrc": "assets/colored-transparent/jp_urakuen_joan.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "有乐苑 · 如庵茶室外观（照片右侧小茶室） · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_urakuen_joan.json",
+    "references": [
+      {
+        "page": "https://inuyama.gr.jp/experience/detail/9/",
+        "author": "犬山市观光协会（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_hakogi_house": {
+    "src": "assets/colored-transparent-avif/jp_hakogi_house.avif",
+    "originalSrc": "assets/colored/jp_hakogi_house.png",
+    "transparentSrc": "assets/colored-transparent/jp_hakogi_house.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "箱木家住宅 · 主屋 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_hakogi_house.json",
+    "references": [
+      {
+        "page": "https://www.city.kobe.lg.jp/a21651/556604195933.html",
+        "author": "神户市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_furui_house": {
+    "src": "assets/colored-transparent-avif/jp_furui_house.avif",
+    "originalSrc": "assets/colored/jp_furui_house.png",
+    "transparentSrc": "assets/colored-transparent/jp_furui_house.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "旧古井家住宅本体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_furui_house.json",
+    "references": [
+      {
+        "page": "https://www.city.himeji.lg.jp/kanko/0000001774.html",
+        "author": "姬路市官方网站（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_bannaji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_bannaji_hondo.avif",
+    "originalSrc": "assets/colored/jp_bannaji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_bannaji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "鑁阿寺现存本堂，正面五间的入母屋顶木构佛殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_bannaji_hondo.json",
+    "references": [
+      {
+        "page": "https://www.city.ashikaga.tochigi.jp/education/000029/000169/000627/p001299.html",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_myotsuji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_myotsuji_hondo.avif",
+    "originalSrc": "assets/colored/jp_myotsuji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_myotsuji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "明通寺现存本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_myotsuji_hondo.json",
+    "references": [
+      {
+        "page": "https://www1.city.obama.fukui.jp/kanko-bunka/jisha-shiseki/96.html",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_myotsuji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_myotsuji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_myotsuji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_myotsuji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "明通寺三重塔单体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_myotsuji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www1.city.obama.fukui.jp/obm/rekisi/sekai_isan/Japanese/data/126.htm",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_seihakuji_butsuden": {
+    "src": "assets/colored-transparent-avif/jp_seihakuji_butsuden.avif",
+    "originalSrc": "assets/colored/jp_seihakuji_butsuden.png",
+    "transparentSrc": "assets/colored-transparent/jp_seihakuji_butsuden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "清白寺1415年佛殿单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_seihakuji_butsuden.json",
+    "references": [
+      {
+        "page": "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_daihoji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_daihoji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_daihoji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_daihoji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "大法寺1333年三重塔单体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_daihoji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www.vill.aoki.nagano.jp/assoc/see/tera/daihouji.html",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_ankokuji_kyozo": {
+    "src": "assets/colored-transparent-avif/jp_ankokuji_kyozo.avif",
+    "originalSrc": "assets/colored/jp_ankokuji_kyozo.png",
+    "transparentSrc": "assets/colored-transparent/jp_ankokuji_kyozo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "安国寺1408年经藏外观单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_ankokuji_kyozo.json",
+    "references": [
+      {
+        "page": "https://japan-heritage.bunka.go.jp/ja/culturalproperties/result/2047/",
+        "author": "文化厅日本遗产资料（高山市教育委员会提供）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_konrenji_midado": {
+    "src": "assets/colored-transparent-avif/jp_konrenji_midado.avif",
+    "originalSrc": "assets/colored/jp_konrenji_midado.png",
+    "transparentSrc": "assets/colored-transparent/jp_konrenji_midado.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "金莲寺现存弥陀堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_konrenji_midado.json",
+    "references": [
+      {
+        "page": "https://www.city.nishio.aichi.jp/sportskanko/bunkazai/1001485/1001608/1001659/1002705.html",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_senshuji_mieido": {
+    "src": "assets/colored-transparent-avif/jp_senshuji_mieido.avif",
+    "originalSrc": "assets/colored/jp_senshuji_mieido.png",
+    "transparentSrc": "assets/colored-transparent/jp_senshuji_mieido.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "专修寺1666年上梁的御影堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_senshuji_mieido.json",
+    "references": [
+      {
+        "page": "https://senjuji-guide.jp/contents/content01/",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_senshuji_nyoraido": {
+    "src": "assets/colored-transparent-avif/jp_senshuji_nyoraido.avif",
+    "originalSrc": "assets/colored/jp_senshuji_nyoraido.png",
+    "transparentSrc": "assets/colored-transparent/jp_senshuji_nyoraido.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "专修寺1748年如来堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_senshuji_nyoraido.json",
+    "references": [
+      {
+        "page": "https://senjuji-guide.jp/contents/content02/",
+        "author": "官方文化财资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_onjoji_kondo": {
+    "src": "assets/colored-transparent-avif/jp_onjoji_kondo.avif",
+    "originalSrc": "assets/colored/jp_onjoji_kondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_onjoji_kondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "园城寺1599年再建金堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_onjoji_kondo.json",
+    "references": [
+      {
+        "page": "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kongorinji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_kongorinji_hondo.avif",
+    "originalSrc": "assets/colored/jp_kongorinji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_kongorinji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "金刚轮寺现存本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kongorinji_hondo.json",
+    "references": [
+      {
+        "page": "https://kongourinji.jp/precinct",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_saimyoji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_saimyoji_hondo.avif",
+    "originalSrc": "assets/colored/jp_saimyoji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_saimyoji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "滋贺甲良西明寺本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_saimyoji_hondo.json",
+    "references": [
+      {
+        "page": "https://saimyouji.com/walk/",
+        "author": "西明寺官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_saimyoji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_saimyoji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_saimyoji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_saimyoji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "滋贺甲良西明寺三重塔单体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_saimyoji_pagoda.json",
+    "references": [
+      {
+        "page": "https://saimyouji.com/walk/",
+        "author": "西明寺官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_jorakuji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_jorakuji_hondo.avif",
+    "originalSrc": "assets/colored/jp_jorakuji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_jorakuji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "常乐寺现存本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_jorakuji_hondo.json",
+    "references": [
+      {
+        "page": "https://www.biwako-visitors.jp/spot/detail/462/",
+        "author": "滋贺县观光官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_jorakuji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_jorakuji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_jorakuji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_jorakuji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "常乐寺1400年三重塔单体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_jorakuji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www.eonet.ne.jp/~jo-rakuji/",
+        "author": "官方寺院或滋贺县观光资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      },
+      {
+        "page": "https://www.eonet.ne.jp/~jo-rakuji/",
+        "author": "官方寺院或滋贺县观光资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_zensuiji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_zensuiji_hondo.avif",
+    "originalSrc": "assets/colored/jp_zensuiji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_zensuiji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "善水寺现存本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_zensuiji_hondo.json",
+    "references": [
+      {
+        "page": "https://ja.biwako-visitors.jp/spot/detail/127",
+        "author": "官方寺院或滋贺县观光资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_chojuji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_chojuji_hondo.avif",
+    "originalSrc": "assets/colored/jp_chojuji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_chojuji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "湖南长寿寺现存本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_chojuji_hondo.json",
+    "references": [
+      {
+        "page": "https://chojyuji.jp/cultural/",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_hogonji_karamon": {
+    "src": "assets/colored-transparent-avif/jp_hogonji_karamon.avif",
+    "originalSrc": "assets/colored/jp_hogonji_karamon.png",
+    "transparentSrc": "assets/colored-transparent/jp_hogonji_karamon.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "宝严寺1603年移建唐门单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_hogonji_karamon.json",
+    "references": [
+      {
+        "page": "https://www.chikubushima.jp/precincts/precincts1.html",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kaijusenji_pagoda": {
+    "src": "assets/colored-transparent-avif/jp_kaijusenji_pagoda.avif",
+    "originalSrc": "assets/colored/jp_kaijusenji_pagoda.png",
+    "transparentSrc": "assets/colored-transparent/jp_kaijusenji_pagoda.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "海住山寺现存五重塔单体 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jp_kaijusenji_pagoda.json",
+    "references": [
+      {
+        "page": "https://www.city.kizugawa.lg.jp/0000001912.html",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_daihoonji_hondo": {
+    "src": "assets/colored-transparent-avif/jp_daihoonji_hondo.avif",
+    "originalSrc": "assets/colored/jp_daihoonji_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_daihoonji_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "大报恩寺千本释迦堂现存本堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_daihoonji_hondo.json",
+    "references": [
+      {
+        "page": "https://daihoonji.jp/cultural-heritage/architectural",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_kinpusenji_zaodo": {
+    "src": "assets/colored-transparent-avif/jp_kinpusenji_zaodo.avif",
+    "originalSrc": "assets/colored/jp_kinpusenji_zaodo.png",
+    "transparentSrc": "assets/colored-transparent/jp_kinpusenji_zaodo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "金峰山寺现存藏王堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_kinpusenji_zaodo.json",
+    "references": [
+      {
+        "page": "https://www.kinpusen.or.jp/guide/",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_todaiji_daibutsuden": {
+    "src": "assets/colored-transparent-avif/jp_todaiji_daibutsuden.avif",
+    "originalSrc": "assets/colored/jp_todaiji_daibutsuden.png",
+    "transparentSrc": "assets/colored-transparent/jp_todaiji_daibutsuden.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "东大寺现存大佛殿外观单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_todaiji_daibutsuden.json",
+    "references": [
+      {
+        "page": "https://www.todaiji.or.jp/information/daibutsuden/",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_todaiji_nigatsudo": {
+    "src": "assets/colored-transparent-avif/jp_todaiji_nigatsudo.avif",
+    "originalSrc": "assets/colored/jp_todaiji_nigatsudo.png",
+    "transparentSrc": "assets/colored-transparent/jp_todaiji_nigatsudo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "东大寺1669年再建二月堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_todaiji_nigatsudo.json",
+    "references": [
+      {
+        "page": "https://www.todaiji.or.jp/information/nigatsudo/",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_horyuji_yumedono": {
+    "src": "assets/colored-transparent-avif/jp_horyuji_yumedono.avif",
+    "originalSrc": "assets/colored/jp_horyuji_yumedono.png",
+    "transparentSrc": "assets/colored-transparent/jp_horyuji_yumedono.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "法隆寺现存梦殿八角圆堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_horyuji_yumedono.json",
+    "references": [
+      {
+        "page": "https://www.horyuji.or.jp/sp/garan/yumedono/",
+        "author": "法隆寺官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_yakushiji_toindo": {
+    "src": "assets/colored-transparent-avif/jp_yakushiji_toindo.avif",
+    "originalSrc": "assets/colored/jp_yakushiji_toindo.png",
+    "transparentSrc": "assets/colored-transparent/jp_yakushiji_toindo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "药师寺1285年再建东院堂单体 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_yakushiji_toindo.json",
+    "references": [
+      {
+        "page": "https://www.yakushiji.or.jp/guide/garan_toindo.html",
+        "author": "官方文化财或寺院资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
+  "jp_hasedera_hondo": {
+    "src": "assets/colored-transparent-avif/jp_hasedera_hondo.avif",
+    "originalSrc": "assets/colored/jp_hasedera_hondo.png",
+    "transparentSrc": "assets/colored-transparent/jp_hasedera_hondo.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "长谷寺1650年再建本堂及本体悬造舞台 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jp_hasedera_hondo.json",
+    "references": [
+      {
+        "page": "https://www.hasedera.or.jp/guide/",
+        "author": "长谷寺官方资料（摄影者未署名）",
+        "license": "未注明开放许可；仅作研究参考，不分发原照"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

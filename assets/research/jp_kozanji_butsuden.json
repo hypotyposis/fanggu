@@ -1,0 +1,128 @@
+{
+  "id": "jp_kozanji_butsuden",
+  "name": "功山寺佛殿",
+  "subject": "功山寺佛殿本体",
+  "source_page": "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002",
+  "image_url": "https://bunkazai.pref.yamaguchi.lg.jp/common/images/original/Dsc%2053.jpg",
+  "author": "山口县文化财官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kozanji_butsuden-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kozanji_butsuden-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kozanji Butsuden, dated 1320, complete Zen Buddhist hall front elevation.\nSTRUCTURAL CHECKPOINTS: THREE-bay main hall plus surrounding mokoshi, TWO eave bands, one principal storey.; Steep hip-and-gable roof with fine hinoki-bark layers, rich brackets, central doors and cusped windows on the outer bays.; No foreground fence, lantern shrine, placards, trees or added tower storey.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "山口县文化财官方网站 · 功山寺佛殿",
+      "url": "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002"
+    }
+  ],
+  "structure_checkpoints": [
+    "THREE-bay main hall plus surrounding mokoshi, TWO eave bands, one principal storey.",
+    "Steep hip-and-gable roof with fine hinoki-bark layers, rich brackets, central doors and cusped windows on the outer bays.",
+    "No foreground fence, lantern shrine, placards, trees or added tower storey."
+  ],
+  "material_observations": "深褐木构，灰褐桧皮葺双重屋面，浅灰石基，门窗内暗部保留。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "功山寺佛殿",
+    "镰仓元应二年（1320）"
+  ],
+  "generated_file": "assets/generated/jp_kozanji_butsuden.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.345704+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:13:26.193559+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c2f01562cc5d1fb7111b716c4280468adf27daaed1a1608f47785face7a7875e",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-852f295d-e4f6-42ea-9a8c-bb8b4ca43461.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:08:19.694809+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kozanji Butsuden, dated 1320, complete Zen Buddhist hall front elevation.\nSTRUCTURAL CHECKPOINTS: THREE-bay main hall plus surrounding mokoshi, TWO eave bands, one principal storey.; Steep hip-and-gable roof with fine hinoki-bark layers, rich brackets, central doors and cusped windows on the outer bays.; No foreground fence, lantern shrine, placards, trees or added tower storey.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_kozanji_butsuden-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:13:26.193801+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-852f295d-e4f6-42ea-9a8c-bb8b4ca43461.png",
+      "retained_file": "assets/generated/jp_kozanji_butsuden.png",
+      "sourceSha256": "c2f01562cc5d1fb7111b716c4280468adf27daaed1a1608f47785face7a7875e"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_kozanji_butsuden-photo.jpg",
+      "source_page": "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002",
+      "image_url": "https://bunkazai.pref.yamaguchi.lg.jp/common/images/original/Dsc%2053.jpg",
+      "author": "山口县文化财官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "功山寺佛殿本体"
+    },
+    {
+      "title": "山口县文化财官方网站 · 功山寺佛殿",
+      "url": "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002"
+    }
+  ],
+  "site_recommendation": {
+    "name": "功山寺佛殿",
+    "year": 1320,
+    "yearApprox": false,
+    "yearLabel": "1320年",
+    "yearNote": "柱墨书记元应二年（1320）；图版与年表按佛殿现存主体纪年，寺院1327年开创另列背景。",
+    "dyn": "jp_kamakura",
+    "country": "JP",
+    "placeKey": "jp_shimonoseki"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "c2f01562cc5d1fb7111b716c4280468adf27daaed1a1608f47785face7a7875e",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "5faec3df82cd52c2ba2f0e88d2d08e5582488eb151a145e44b2db17b12c1f4c7"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

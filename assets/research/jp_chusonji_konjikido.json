@@ -1,0 +1,137 @@
+{
+  "id": "jp_chusonji_konjikido",
+  "name": "中尊寺金色堂",
+  "subject": "中尊寺 · 金色堂本体正面",
+  "source_page": "https://www.chusonji.or.jp/know/konjikido.html",
+  "image_url": "https://www.chusonji.or.jp/know/images/konjikido_01.jpg",
+  "author": "中尊寺官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_chusonji_konjikido-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_chusonji_konjikido-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Chusonji Konjikido itself (1124), the small golden hall enclosed in a modern shelter. Draw only the golden historic hall, omit the enclosing shelter and all its beams.\nSTRUCTURAL CHECKPOINTS: A small single-storey square hall with THREE front bays, a single hogyo pyramidal wooden-tile roof and jewel finial; curved eaves, no upper storey.; Round columns and simple bracket blocks, a surrounding low timber veranda; three paired doors open outward, only lightly suggest the altar without dark fills.; Exclude all modern shelter walls, rafters, glass, lighting and modern walkway visible around the golden building; do not draw the shelter as part of the monument.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "中尊寺 · 金色堂について",
+      "url": "https://www.chusonji.or.jp/know/konjikido.html"
+    },
+    {
+      "title": "文化厅 · 中尊寺金色堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/199039"
+    }
+  ],
+  "structure_checkpoints": [
+    "A small single-storey square hall with THREE front bays, a single hogyo pyramidal wooden-tile roof and jewel finial; curved eaves, no upper storey.",
+    "Round columns and simple bracket blocks, a surrounding low timber veranda; three paired doors open outward, only lightly suggest the altar without dark fills.",
+    "Exclude all modern shelter walls, rafters, glass, lighting and modern walkway visible around the golden building; do not draw the shelter as part of the monument."
+  ],
+  "material_observations": "寺方本体彩照：屋面呈暗褐木瓦与金褐色，柱梁、门扉、缘侧及饰件有金箔；黑漆底与内阵暗部保留。展示照有暖色室内灯光，设色取克制的金箔材料色，不复制照明光晕。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "中尊寺 · 金色堂本体",
+    "平安天治元年（1124）"
+  ],
+  "generated_file": "assets/generated/jp_chusonji_konjikido.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:34.957277+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.chusonji.or.jp/know/konjikido.html",
+      "https://online.bunka.go.jp/heritages/detail/199039"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:07:08.729162+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ffb4030f6ce1609d5d6537a758fba323fd3109287b471a0e7248fea4e2992655",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-2d215ad4-0c1a-417e-ad84-8d2d57874da2.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:02:36.755588+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Chusonji Konjikido itself (1124), the small golden hall enclosed in a modern shelter. Draw only the golden historic hall, omit the enclosing shelter and all its beams.\nSTRUCTURAL CHECKPOINTS: A small single-storey square hall with THREE front bays, a single hogyo pyramidal wooden-tile roof and jewel finial; curved eaves, no upper storey.; Round columns and simple bracket blocks, a surrounding low timber veranda; three paired doors open outward, only lightly suggest the altar without dark fills.; Exclude all modern shelter walls, rafters, glass, lighting and modern walkway visible around the golden building; do not draw the shelter as part of the monument.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_chusonji_konjikido-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:07:08.729695+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-2d215ad4-0c1a-417e-ad84-8d2d57874da2.png",
+      "retained_file": "assets/generated/jp_chusonji_konjikido.png",
+      "sourceSha256": "ffb4030f6ce1609d5d6537a758fba323fd3109287b471a0e7248fea4e2992655"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_chusonji_konjikido-photo.jpg",
+      "source_page": "https://www.chusonji.or.jp/know/konjikido.html",
+      "image_url": "https://www.chusonji.or.jp/know/images/konjikido_01.jpg",
+      "author": "中尊寺官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "中尊寺 · 金色堂本体正面"
+    },
+    {
+      "title": "中尊寺 · 金色堂について",
+      "url": "https://www.chusonji.or.jp/know/konjikido.html"
+    },
+    {
+      "title": "文化厅 · 中尊寺金色堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/199039"
+    }
+  ],
+  "site_recommendation": {
+    "name": "中尊寺金色堂",
+    "year": 1124,
+    "yearApprox": false,
+    "yearLabel": "1124年",
+    "yearNote": "现存金色堂建于天治元年（1124）。现代覆堂属于保护设施，其年代不作为本条纪年。",
+    "dyn": "jp_heian",
+    "country": "JP",
+    "placeKey": "jp_hiraizumi"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "ffb4030f6ce1609d5d6537a758fba323fd3109287b471a0e7248fea4e2992655",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "750428d6b70f63e6a8b1598f2027993722762c62abb216c29d3406c92b79416e"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

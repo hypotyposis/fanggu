@@ -1,0 +1,136 @@
+{
+  "id": "jp_chojuji_hondo",
+  "name": "长寿寺本堂",
+  "subject": "湖南长寿寺现存本堂单体",
+  "source_page": "https://chojyuji.jp/cultural/",
+  "image_url": "https://chojyuji.jp/file/img/cultural/img-11.jpg",
+  "author": "官方文化财或寺院资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_chojuji_hondo-photo-final.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_chojuji_hondo-photo-final.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Chojuji main hall, Konan, Shiga, surviving medieval hall dated to early Kamakura by cultural-property catalog\nSTRUCTURAL CHECKPOINTS: Five-by-five-bay hall with ONE hipped cypress-bark roof; Three-bay entrance porch, low raised veranda and restrained plain timber doors; Rounded hip-roof silhouette rather than a large triangular gable; remove foliage and scenery\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/122264"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://chojyuji.jp/cultural/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Five-by-five-bay hall with ONE hipped cypress-bark roof",
+    "Three-bay entrance porch, low raised veranda and restrained plain timber doors",
+    "Rounded hip-roof silhouette rather than a large triangular gable; remove foliage and scenery"
+  ],
+  "material_observations": "Weathered brown timber, warm muted brown cypress-bark roof and pale stone footing.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "湖南长寿寺现存本堂单体",
+    "镰仓前期，约1200年定位"
+  ],
+  "generated_file": "assets/generated/jp_chojuji_hondo.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.644466+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://online.bunka.go.jp/db/heritages/detail/122264",
+      "https://chojyuji.jp/cultural/"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:49:44.344376+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "23dd2edf006259022c90758704f5a309fc9e62a356202571bf5bfc461d77a72f",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-f378e7d2-27fb-4911-b95e-1bec4867c00c.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:48:32.717481+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Chojuji main hall, Konan, Shiga, surviving medieval hall dated to early Kamakura by cultural-property catalog\nSTRUCTURAL CHECKPOINTS: Five-by-five-bay hall with ONE hipped cypress-bark roof; Three-bay entrance porch, low raised veranda and restrained plain timber doors; Rounded hip-roof silhouette rather than a large triangular gable; remove foliage and scenery\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_chojuji_hondo-photo-final.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:49:44.344698+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-f378e7d2-27fb-4911-b95e-1bec4867c00c.png",
+      "retained_file": "assets/generated/jp_chojuji_hondo.png",
+      "sourceSha256": "23dd2edf006259022c90758704f5a309fc9e62a356202571bf5bfc461d77a72f"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_chojuji_hondo-photo-final.jpg",
+      "source_page": "https://chojyuji.jp/cultural/",
+      "image_url": "https://chojyuji.jp/file/img/cultural/img-11.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "湖南长寿寺现存本堂单体"
+    },
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/122264"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://chojyuji.jp/cultural/"
+    }
+  ],
+  "site_recommendation": {
+    "name": "长寿寺本堂",
+    "year": 1200,
+    "yearApprox": true,
+    "yearLabel": "镰仓前期，约1200年定位",
+    "yearNote": "文化财数据库将现存本堂置于1185—1274年。寺院沿革另有平安时期的说法；本条按现存建筑分类，约1200年仅作定位。",
+    "dyn": "jp_kamakura",
+    "country": "JP",
+    "placeKey": "jp_konan"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "23dd2edf006259022c90758704f5a309fc9e62a356202571bf5bfc461d77a72f",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "02f52e96475593f41e54dffea572a3901767be92cd34be82e08ddb47d7507b74"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

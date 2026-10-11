@@ -1,0 +1,139 @@
+{
+  "id": "jp_onjoji_kondo",
+  "name": "园城寺金堂",
+  "subject": "园城寺1599年再建金堂单体",
+  "source_page": "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+  "image_url": "http://www.shiga-miidera.or.jp/treasure/building/img/jpg/01.jpg",
+  "author": "官方文化财或寺院资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_onjoji_kondo-photo-final.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_onjoji_kondo-photo-final.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Onjoji / Miidera Kondo main hall, Otsu, rebuilt 1599\nSTRUCTURAL CHECKPOINTS: Seven-by-seven-bay single-story timber hall; ONE large hip-and-gable cypress-bark roof and a narrow one-bay center entrance canopy; Deep eaves and raised veranda; omit stone lanterns, trees and neighboring buildings\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.shiga-miidera.or.jp/treasure/building/01.htm"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+      "retrieved_from": "http://www.shiga-miidera.or.jp/treasure/building/01.htm"
+    }
+  ],
+  "structure_checkpoints": [
+    "Seven-by-seven-bay single-story timber hall",
+    "ONE large hip-and-gable cypress-bark roof and a narrow one-bay center entrance canopy",
+    "Deep eaves and raised veranda; omit stone lanterns, trees and neighboring buildings"
+  ],
+  "material_observations": "Warm brown layered cypress-bark roof, aged brown timber facade and subtle pale plaster areas.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "园城寺1599年再建金堂单体",
+    "1599年再建"
+  ],
+  "generated_file": "assets/generated/jp_onjoji_kondo.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.274933+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+      "http://www.shiga-miidera.or.jp/treasure/building/01.htm"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:49:21.299228+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "1438bf5d98a21166612a02fb50485b59183732a5a2d8feb3b9c03fae7b28d6a4",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-38a51ff1-5317-41f8-a21f-54727473cbe3.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:47:58.055044+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Onjoji / Miidera Kondo main hall, Otsu, rebuilt 1599\nSTRUCTURAL CHECKPOINTS: Seven-by-seven-bay single-story timber hall; ONE large hip-and-gable cypress-bark roof and a narrow one-bay center entrance canopy; Deep eaves and raised veranda; omit stone lanterns, trees and neighboring buildings\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_onjoji_kondo-photo-final.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:49:21.299477+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-38a51ff1-5317-41f8-a21f-54727473cbe3.png",
+      "retained_file": "assets/generated/jp_onjoji_kondo.png",
+      "sourceSha256": "1438bf5d98a21166612a02fb50485b59183732a5a2d8feb3b9c03fae7b28d6a4"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_onjoji_kondo-photo-final.jpg",
+      "source_page": "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+      "image_url": "http://www.shiga-miidera.or.jp/treasure/building/img/jpg/01.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "retrieved_from": "http://www.shiga-miidera.or.jp/treasure/building/01.htm",
+      "title": "园城寺1599年再建金堂单体"
+    },
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.shiga-miidera.or.jp/treasure/building/01.htm"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+      "retrieved_from": "http://www.shiga-miidera.or.jp/treasure/building/01.htm"
+    }
+  ],
+  "site_recommendation": {
+    "name": "园城寺金堂",
+    "year": 1599,
+    "yearApprox": false,
+    "yearLabel": "1599年再建",
+    "yearNote": "现存金堂由北政所于1599年再建；园城寺的古老创立史与这座金堂的年代分别说明。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_otsu"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "1438bf5d98a21166612a02fb50485b59183732a5a2d8feb3b9c03fae7b28d6a4",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "dbd3a1a9f711399e1fe25610c12a9abdb2a6cff5659546744de616271959caa9"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

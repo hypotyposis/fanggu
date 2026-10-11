@@ -1,0 +1,136 @@
+{
+  "id": "jp_hogonji_karamon",
+  "name": "宝严寺唐门",
+  "subject": "宝严寺1603年移建唐门单体",
+  "source_page": "https://www.chikubushima.jp/precincts/precincts1.html",
+  "image_url": "https://www.chikubushima.jp/precincts/images/karamon.jpg",
+  "author": "官方文化财或寺院资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_hogonji_karamon-photo-final.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_hogonji_karamon-photo-final.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Hogonji Karamon gateway, Chikubushima, Nagahama, moved and erected here in 1603: foreground small ornate gate ONLY\nSTRUCTURAL CHECKPOINTS: One-bay one-door mukai-karamon with a curved karahafu roof gable facing front; Cypress-bark curved roof, black lacquer framing, detailed carved floral door panels and metal fittings; Isolate the SMALL FOREGROUND GATE ONLY, exclude larger Kannon hall attached behind it, stairs and lake\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://chikubushima.jp/construction/"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.chikubushima.jp/precincts/precincts1.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "One-bay one-door mukai-karamon with a curved karahafu roof gable facing front",
+    "Cypress-bark curved roof, black lacquer framing, detailed carved floral door panels and metal fittings",
+    "Isolate the SMALL FOREGROUND GATE ONLY, exclude larger Kannon hall attached behind it, stairs and lake"
+  ],
+  "material_observations": "Black lacquer framework, dark brown cypress-bark roof, restrained gold fittings and red/green/blue painted carved panels, stone sill.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "宝严寺1603年移建唐门单体",
+    "1603年移建记录"
+  ],
+  "generated_file": "assets/generated/jp_hogonji_karamon.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.707495+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://chikubushima.jp/construction/",
+      "https://www.chikubushima.jp/precincts/precincts1.html"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:50:24.858603+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "78a8523abca2b6ed24010e02ee588a446a79c60fc37eccd7a4c8353b511f1dfb",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-40052895-7515-4a89-b576-cab877a73f04.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:49:38.480122+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Hogonji Karamon gateway, Chikubushima, Nagahama, moved and erected here in 1603: foreground small ornate gate ONLY\nSTRUCTURAL CHECKPOINTS: One-bay one-door mukai-karamon with a curved karahafu roof gable facing front; Cypress-bark curved roof, black lacquer framing, detailed carved floral door panels and metal fittings; Isolate the SMALL FOREGROUND GATE ONLY, exclude larger Kannon hall attached behind it, stairs and lake\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_hogonji_karamon-photo-final.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:50:24.858960+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-40052895-7515-4a89-b576-cab877a73f04.png",
+      "retained_file": "assets/generated/jp_hogonji_karamon.png",
+      "sourceSha256": "78a8523abca2b6ed24010e02ee588a446a79c60fc37eccd7a4c8353b511f1dfb"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_hogonji_karamon-photo-final.jpg",
+      "source_page": "https://www.chikubushima.jp/precincts/precincts1.html",
+      "image_url": "https://www.chikubushima.jp/precincts/images/karamon.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "宝严寺1603年移建唐门单体"
+    },
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://chikubushima.jp/construction/"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.chikubushima.jp/precincts/precincts1.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "宝严寺唐门",
+    "year": 1603,
+    "yearApprox": false,
+    "yearLabel": "1603年移建记录",
+    "yearNote": "现址栋札记录1603年移建；门与丰臣时代建筑的关联另述，不以移建年直接断言全部构件初造年。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_nagahama"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "78a8523abca2b6ed24010e02ee588a446a79c60fc37eccd7a4c8353b511f1dfb",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "7018e14f8ce77844a4662d70c5768999b174ca525e6a05abc9ec4683bcfc50d7"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}
