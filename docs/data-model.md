@@ -73,7 +73,7 @@
 | `matches(site, filters)` | 筛选 `status`、`dynasty`、`country`、`region`、`province`、`type`、`query`；搜索文本含名称、别名、地点、时代、类型及类型别名、国保文本 |
 | `provinces(sites, region, country)` | 当前范围内实际有条目的省份 |
 
-iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与类型别名表。新增地区、国家或类型别名时两处同步，否则 App 搜索不到。
+iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`regionName`、`provinceName` 读取地理显示名；新增地区或省份后补齐 `i18n/` 术语并重建目录即可。类型别名仍在该文件另行维护，新增类型别名时与 `catalog.js` 同步。
 
 ## 国保源数据 `assets/research/national-protection.json`
 

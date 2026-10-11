@@ -457,3 +457,35 @@ final class FangguUITests: XCTestCase {
         add(attachment)
     }
 }
+
+/// New catalogue regions and artwork must work in the bundled native product.
+final class ExpansionUITests: XCTestCase {
+    func testNewChineseEntriesOpenWithArtworkAndRemainUnvisited() {
+        for id in ["ln_wanfotang", "hb_huanghelou", "xz_shalu", "jp_matsumoto_tenshu", "jp_izumo_honden", "jp_fukiji_odo"] {
+            let app = XCUIApplication.isolated()
+            app.launchForTest(site: id)
+            XCTAssertTrue(app.descendants(matching: .any)["detail-artwork"].firstMatch.waitForExistence(timeout: 10), id)
+            XCTAssertTrue(app.buttons["补记到访"].exists, id)
+            XCTAssertFalse(app.staticTexts["设色图暂未加载"].exists, id)
+            let attachment = XCTAttachment(screenshot: app.screenshot())
+            attachment.name = "expansion-zh-" + id
+            attachment.lifetime = .keepAlways
+            add(attachment)
+            app.terminate()
+        }
+    }
+
+    func testExpandedEntryShowsEnglishAndJapaneseText() {
+        for (language, locale, name) in [("en", "en_US", "Fuki-ji Great Hall"), ("ja", "ja_JP", "富貴寺大堂")] {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest(site: "jp_fukiji_odo")
+            XCTAssertTrue(app.staticTexts[name].waitForExistence(timeout: 10))
+            XCTAssertTrue(app.descendants(matching: .any)["detail-artwork"].firstMatch.exists)
+            let attachment = XCTAttachment(screenshot: app.screenshot())
+            attachment.name = "expansion-" + language + "-fukiji"
+            attachment.lifetime = .keepAlways
+            add(attachment)
+            app.terminate()
+        }
+    }
+}

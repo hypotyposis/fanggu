@@ -1,0 +1,98 @@
+{
+  "id": "jp_inuyama_tenshu",
+  "name": "犬山城天守",
+  "subject": "犬山城 · 天守正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_inuyama_tenshu.png",
+    "assets/references/jp_inuyama_tenshu-photo.jpg",
+    "assets/references/jp_inuyama_tenshu-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 犬山城 · 天守正面\nMATERIAL OBSERVATIONS: 白灰壁、深褐色板壁，灰色本瓦，金黄褐色野面积石垣；天空与树木去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "白灰壁、深褐色板壁，灰色本瓦，金黄褐色野面积石垣；天空与树木去除。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_inuyama_tenshu-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Inuyama_Castle_Keep_Tower_2018.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Inuyama_Castle_Keep_Tower_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Suikotei",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "16 December 2018, 14:08:50",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jp_inuyama_tenshu-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Inuyama_Castle_Keep_Tower_20170409.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Inuyama_Castle_Keep_Tower_20170409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2017-04-09 13:36:33",
+      "role": "斜侧实拍，核对望楼回缘与唐破风"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 犬山城天守",
+      "url": "https://online.bunka.go.jp/heritages/detail/200169"
+    },
+    {
+      "title": "ja.wikipedia · 犬山城",
+      "url": "https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%B1%B1%E5%9F%8E"
+    }
+  ],
+  "original_research": "assets/research/jp_inuyama_tenshu.json",
+  "output": "assets/colored/jp_inuyama_tenshu.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "729d52e49198ff8338d8f32fbcdc54b53d1bfbd9e11f437d67da42db7ad5dd7f",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 犬山城 · 天守正面\nMATERIAL OBSERVATIONS: 白灰壁、深褐色板壁，灰色本瓦，金黄褐色野面积石垣；天空与树木去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/jp_inuyama_tenshu.png",
+        "assets/references/jp_inuyama_tenshu-photo.jpg",
+        "assets/references/jp_inuyama_tenshu-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-ecbbf66e-c294-4269-adbe-7ccf163dfc9c.png",
+      "retained_file": "assets/colored/jp_inuyama_tenshu.png",
+      "received_at": "2026-10-11T12:56:40.135Z",
+      "sourceSha256": "729d52e49198ff8338d8f32fbcdc54b53d1bfbd9e11f437d67da42db7ad5dd7f",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-ecbbf66e-c294-4269-adbe-7ccf163dfc9c.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:56:40.135Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "729d52e49198ff8338d8f32fbcdc54b53d1bfbd9e11f437d67da42db7ad5dd7f",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "9a3c9e21229620d8aaad28544cf6c238f52e9c0f41e944c2c07e5a0d8c893529",
+    "avifSha256": "2c62e3282f45e08e7a1b6f9b90ac26966c9894d55bdb352dbcfbd231235d6c38"
+  }
+}

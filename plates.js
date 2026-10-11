@@ -5603,6 +5603,498 @@ const PLATES = {
       "正福寺地藏堂 · 单层裳阶禅宗佛殿",
       "室町时代 · 1407年"
     ]
+  },
+  "ln_wanfotang": {
+    "src": "assets/plates/ln_wanfotang.png",
+    "alt": "义县万佛堂石窟 · 西区第六窟交脚弥勒大佛正面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#ac8fa6",
+    "tint": false,
+    "caption": [
+      "义县万佛堂石窟 · 第六窟交脚弥勒",
+      "北魏 · 499"
+    ]
+  },
+  "ln_xingcheng": {
+    "src": "assets/plates/ln_xingcheng.png",
+    "alt": "兴城古城 · 东门春和门城楼与瓮城正面（城外视角） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "兴城古城 · 春和门城楼与瓮城",
+      "明 · 1428"
+    ]
+  },
+  "ln_guangjita": {
+    "src": "assets/plates/ln_guangjita.png",
+    "alt": "锦州广济寺塔 · 八角十三层密檐塔正面全貌 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "锦州广济寺塔 · 八角十三层密檐",
+      "辽 · 1057"
+    ]
+  },
+  "ln_zhaoling": {
+    "src": "assets/plates/ln_zhaoling.png",
+    "alt": "沈阳清昭陵 · 隆恩殿正面（含须弥座台基与月台三出陛） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "清昭陵 · 隆恩殿正面",
+      "清 · 1643–1651"
+    ]
+  },
+  "ln_shenyang_beita": {
+    "src": "assets/plates/ln_shenyang_beita.png",
+    "alt": "沈阳北塔（护国法轮寺塔）· 藏式覆钵式白塔正面 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "沈阳北塔 · 藏式覆钵白塔",
+      "清 · 1643–1645"
+    ]
+  },
+  "jl_haotaiwangbei": {
+    "src": "assets/plates/jl_haotaiwangbei.png",
+    "alt": "集安好太王碑 · 碑体正面（碑亭内） · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b0a18b",
+    "tint": false,
+    "caption": [
+      "集安好太王碑 · 四面刻石",
+      "高句丽 · 414"
+    ]
+  },
+  "jl_wandu": {
+    "src": "assets/plates/jl_wandu.png",
+    "alt": "集安丸都山城 · 石砌瞭望台正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b0a18b",
+    "tint": false,
+    "caption": [
+      "丸都山城 · 石砌瞭望台",
+      "高句丽 · 198"
+    ]
+  },
+  "hlj_wenmiao": {
+    "src": "assets/plates/hlj_wenmiao.png",
+    "alt": "哈尔滨文庙 · 大成殿正面（含月台与汉白玉栏杆） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "哈尔滨文庙 · 十一开间大成殿",
+      "民国 · 1926–1929"
+    ]
+  },
+  "ln_chaoyangbei": {
+    "src": "assets/plates/ln_chaoyangbei.png",
+    "alt": "朝阳北塔 · 方形十三层密檐塔南面全貌 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "朝阳北塔 · 方形十三层密檐",
+      "辽 · 1044重修"
+    ]
+  },
+  "hb_jingzhou_wall": {
+    "src": "assets/plates/hb_jingzhou_wall.png",
+    "alt": "荆州城墙 · 东门寅宾门城台与宾阳楼正面（自城外东侧） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "荆州城墙 · 寅宾门与宾阳楼",
+      "清 · 1646年重建城垣"
+    ]
+  },
+  "hb_xiangyang_wall": {
+    "src": "assets/plates/hb_xiangyang_wall.png",
+    "alt": "襄阳城墙 · 临汉门（小北门）城台与城楼正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "襄阳城墙 · 临汉门城楼",
+      "清 · 1826年重修"
+    ]
+  },
+  "hb_taihui": {
+    "src": "assets/plates/hb_taihui.png",
+    "alt": "荆州太晖观 · 朝圣门、阙楼与祖师殿正面（高台金顶） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "荆州太晖观 · 朝圣门与祖师殿",
+      "明 · 1393年重建"
+    ]
+  },
+  "hb_zhongxiang_wenfeng": {
+    "src": "assets/plates/hb_zhongxiang_wenfeng.png",
+    "alt": "钟祥文风塔 · 覆钵式砖塔全貌（正南面） · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "钟祥文风塔",
+      "明 · 1389年重建"
+    ]
+  },
+  "hb_huanghelou": {
+    "src": "assets/plates/hb_huanghelou.png",
+    "alt": "黄鹤楼 · 1985年重建主楼正面（黄鹤楼匾一侧） · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "黄鹤楼 · 主楼正面",
+      "近现代 · 1985年重建"
+    ]
+  },
+  "hu_yuelu": {
+    "src": "assets/plates/hu_yuelu.png",
+    "alt": "岳麓书院 · 大门正面（白墙青瓦、惟楚有材联） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "岳麓书院 · 大门",
+      "清 · 1868年重建"
+    ]
+  },
+  "hu_liuyang_wenmiao": {
+    "src": "assets/plates/hu_liuyang_wenmiao.png",
+    "alt": "浏阳文庙 · 大成殿正面与月台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "浏阳文庙 · 大成殿",
+      "清 · 1843年重建"
+    ]
+  },
+  "xz_drepung": {
+    "src": "assets/plates/xz_drepung.png",
+    "alt": "哲蚌寺 · 措钦大殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "哲蚌寺 · 措钦大殿正面",
+      "15世纪起营建 · 明清扩建"
+    ]
+  },
+  "xz_guge": {
+    "src": "assets/plates/xz_guge.png",
+    "alt": "古格王国遗址 · 札布让王城遗址（红殿与山顶宫堡，自山下仰视） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "古格王国遗址 · 札布让王城",
+      "约10世纪建都 · 1630年废弃"
+    ]
+  },
+  "xz_gyantse_dzong": {
+    "src": "assets/plates/xz_gyantse_dzong.png",
+    "alt": "江孜宗山 · 宗山城堡现状（自县城仰视） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "江孜宗山 · 宗山城堡现状",
+      "14世纪筑堡 · 1904年抗英"
+    ]
+  },
+  "xz_gyantse_kumbum": {
+    "src": "assets/plates/xz_gyantse_kumbum.png",
+    "alt": "白居寺 · 吉祥多门塔（十万佛塔）全貌 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "白居寺吉祥多门塔 · 十万佛塔全貌",
+      "明 · 1427–1436"
+    ]
+  },
+  "xz_ramoche": {
+    "src": "assets/plates/xz_ramoche.png",
+    "alt": "小昭寺 · 主殿正立面（现状，三层红墙与金顶） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "小昭寺 · 主殿正立面",
+      "641年创建 · 1474年格局 · 1986年重修"
+    ]
+  },
+  "xz_sakya_south": {
+    "src": "assets/plates/xz_sakya_south.png",
+    "alt": "萨迦寺 · 南寺拉康钦莫大殿正面（1268年建，现状） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "萨迦寺 · 拉康钦莫大殿正面",
+      "元 · 1268"
+    ]
+  },
+  "xz_samye_utse": {
+    "src": "assets/plates/xz_samye_utse.png",
+    "alt": "桑耶寺 · 乌策大殿正面（现状，三层金顶） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "桑耶寺 · 乌策大殿正面",
+      "8世纪创建 · 1988年后重建"
+    ]
+  },
+  "xz_sera": {
+    "src": "assets/plates/xz_sera.png",
+    "alt": "色拉寺 · 措钦大殿正面（1710年建，现状） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "色拉寺 · 措钦大殿正面",
+      "清 · 1710"
+    ]
+  },
+  "xz_shalu": {
+    "src": "assets/plates/xz_shalu.png",
+    "alt": "夏鲁寺 · 措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "夏鲁寺 · 措钦大殿正面",
+      "元 · 1333年重建"
+    ]
+  },
+  "xz_tholing": {
+    "src": "assets/plates/xz_tholing.png",
+    "alt": "托林寺 · 红殿正面与殿前佛塔（现状） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "托林寺 · 红殿与佛塔",
+      "996年创寺 · 1028年扩建红殿"
+    ]
+  },
+  "xz_tradruk": {
+    "src": "assets/plates/xz_tradruk.png",
+    "alt": "昌珠寺 · 入口正面与金顶（现状） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c98a3f",
+    "tint": false,
+    "caption": [
+      "昌珠寺 · 入口正面与金顶",
+      "7世纪创建 · 14世纪格局 · 1980年代重修"
+    ]
+  },
+  "jp_zuiganji_hondo": {
+    "src": "assets/plates/jp_zuiganji_hondo.png",
+    "alt": "瑞岩寺 · 本堂正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "瑞岩寺 · 本堂正面",
+      "桃山庆长十四年（1609）"
+    ]
+  },
+  "jp_osaki_hachimangu": {
+    "src": "assets/plates/jp_osaki_hachimangu.png",
+    "alt": "大崎八幡宫 · 拜殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "大崎八幡宫 · 拜殿正面",
+      "桃山庆长十二年（1607）"
+    ]
+  },
+  "jp_haguro_pagoda": {
+    "src": "assets/plates/jp_haguro_pagoda.png",
+    "alt": "羽黑山五重塔 · 素木五重塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "羽黑山五重塔 · 素木五重塔",
+      "室町应安五年（1372）前后"
+    ]
+  },
+  "jp_zenkoji_hondo": {
+    "src": "assets/plates/jp_zenkoji_hondo.png",
+    "alt": "善光寺 · 本堂正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "善光寺 · 本堂正面",
+      "江户宝永四年（1707）"
+    ]
+  },
+  "jp_anrakuji_pagoda": {
+    "src": "assets/plates/jp_anrakuji_pagoda.png",
+    "alt": "安乐寺 · 八角三重塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "安乐寺 · 八角三重塔",
+      "镰仓后期 · 约1290年代"
+    ]
+  },
+  "jp_daizenji_hondo": {
+    "src": "assets/plates/jp_daizenji_hondo.png",
+    "alt": "大善寺 · 本堂正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "大善寺 · 本堂正面",
+      "镰仓弘安九年（1286）"
+    ]
+  },
+  "jp_eihoji_kannondo": {
+    "src": "assets/plates/jp_eihoji_kannondo.png",
+    "alt": "永保寺 · 观音堂正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#9fa17f",
+    "tint": false,
+    "caption": [
+      "永保寺 · 观音堂正面",
+      "室町前期 · 南北朝期（1333–1392）"
+    ]
+  },
+  "jp_zuiryuji_butsuden": {
+    "src": "assets/plates/jp_zuiryuji_butsuden.png",
+    "alt": "瑞龙寺 · 佛殿正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "瑞龙寺 · 佛殿正面",
+      "江户万治二年（1659）"
+    ]
+  },
+  "jp_matsumoto_tenshu": {
+    "src": "assets/plates/jp_matsumoto_tenshu.png",
+    "alt": "松本城 · 大天守与连结天守群 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "松本城 · 大天守与连结天守群",
+      "江户前期 · 约1615年（另说1594–1599）"
+    ]
+  },
+  "jp_inuyama_tenshu": {
+    "src": "assets/plates/jp_inuyama_tenshu.png",
+    "alt": "犬山城 · 天守正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c5a071",
+    "tint": false,
+    "caption": [
+      "犬山城 · 天守正面",
+      "桃山庆长六年（1601）· 约1620年加望楼"
+    ]
+  },
+  "jp_izumo_honden": {
+    "src": "assets/plates/jp_izumo_honden.png",
+    "alt": "出云大社 · 本殿（瑞垣外所见） · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#bd8e7b",
+    "tint": false,
+    "caption": [
+      "出云大社 · 本殿（瑞垣外所见）",
+      "江户延享元年（1744）"
+    ]
+  },
+  "jp_sanbutsuji_nageiredo": {
+    "src": "assets/plates/jp_sanbutsuji_nageiredo.png",
+    "alt": "三佛寺 · 投入堂 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "三佛寺 · 投入堂",
+      "平安后期 · 约1165年"
+    ]
+  },
+  "jp_fukiji_odo": {
+    "src": "assets/plates/jp_fukiji_odo.png",
+    "alt": "富贵寺 · 大堂正面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#b79aca",
+    "tint": false,
+    "caption": [
+      "富贵寺 · 大堂正面",
+      "平安后期（12世纪）"
+    ]
+  },
+  "jp_jodoji_jododo": {
+    "src": "assets/plates/jp_jodoji_jododo.png",
+    "alt": "净土寺 · 净土堂东面 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#68a6ad",
+    "tint": false,
+    "caption": [
+      "净土寺 · 净土堂东面",
+      "镰仓建久三年（1192）"
+    ]
   }
 };
 

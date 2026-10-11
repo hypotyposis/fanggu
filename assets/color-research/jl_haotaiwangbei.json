@@ -1,0 +1,112 @@
+{
+  "id": "jl_haotaiwangbei",
+  "name": "集安好太王碑",
+  "subject": "集安好太王碑 · 碑体正面（碑亭内）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jl_haotaiwangbei.png",
+    "assets/references/jl_haotaiwangbei-photo.jpg",
+    "assets/references/jl_haotaiwangbei-2-photo.jpg",
+    "assets/references/jl_haotaiwangbei-3-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 集安好太王碑 · 碑体正面（碑亭内）\nMATERIAL OBSERVATIONS: 碑体为灰黑至灰褐色角砾凝灰岩，表面粗糙多孔、有浅色风化斑块与裂纹；刻字处略显白色；岩基灰黄色；碑亭地面灰白石板（不入图）。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+  "material_observations": [
+    "碑体为灰黑至灰褐色角砾凝灰岩，表面粗糙多孔、有浅色风化斑块与裂纹；刻字处略显白色；岩基灰黄色；碑亭地面灰白石板（不入图）。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jl_haotaiwangbei-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20230605_Stela_for_Gwanggaeto.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/20230605_Stela_for_Gwanggaeto.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2023-06-05 09:11",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jl_haotaiwangbei-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gwanggaeto_Stele_3.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Gwanggaeto_Stele_3.jpg",
+      "author": "EditQ（호고호）",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "role": "2023年10月另一侧面，核对收分与岩面起伏。"
+    },
+    {
+      "file": "assets/references/jl_haotaiwangbei-3-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gwanggaeto_Stele_1903.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Gwanggaeto_Stele_1903.jpg",
+      "author": "1903年日本出版旧照，摄影者未署名（Commons 上传者 최현진）",
+      "license": "Public domain",
+      "license_url": null,
+      "role": "碑亭建成前的露天旧照，有人物比例，核对整体轮廓与基部。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：好太王碑（414年晋义熙十年长寿王立；角砾凝灰岩，高6.39米、底宽1.34—1.97米，约1775字、141字脱落；1877年前后重新发现；1961年第一批国保；1982年建钢筋混凝土碑亭；2004年世界遗产）",
+      "url": "https://zh.wikipedia.org/wiki/好太王碑"
+    },
+    {
+      "title": "国务院公报1961年第4号：第一批全国重点文物保护单位名单（（六）古墓葬 编号168 序号7 洞沟古墓群 高句丽 吉林省辑安县，备注“包括好太王碑”）",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    },
+    {
+      "title": "Wikimedia Commons：Gwanggaeto Stele 1903.jpg 文件说明（1903年日本出版的朝鲜古迹图集中的旧照）",
+      "url": "https://commons.wikimedia.org/wiki/File:Gwanggaeto_Stele_1903.jpg"
+    }
+  ],
+  "original_research": "assets/research/jl_haotaiwangbei.json",
+  "output": "assets/colored/jl_haotaiwangbei.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6de7db867b900e8cda20c461a4d3a87d2d08e325ac09ace535cdc9a6d1b05e93",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 集安好太王碑 · 碑体正面（碑亭内）\nMATERIAL OBSERVATIONS: 碑体为灰黑至灰褐色角砾凝灰岩，表面粗糙多孔、有浅色风化斑块与裂纹；刻字处略显白色；岩基灰黄色；碑亭地面灰白石板（不入图）。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+      "input_images": [
+        "assets/generated/jl_haotaiwangbei.png",
+        "assets/references/jl_haotaiwangbei-photo.jpg",
+        "assets/references/jl_haotaiwangbei-2-photo.jpg",
+        "assets/references/jl_haotaiwangbei-3-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-431a7b1f-8dc2-4b56-a53d-f9b15e67baa2.png",
+      "retained_file": "assets/colored/jl_haotaiwangbei.png",
+      "received_at": "2026-10-11T11:55:24.626Z",
+      "sourceSha256": "6de7db867b900e8cda20c461a4d3a87d2d08e325ac09ace535cdc9a6d1b05e93",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-431a7b1f-8dc2-4b56-a53d-f9b15e67baa2.png",
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T11:55:24.626Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "6de7db867b900e8cda20c461a4d3a87d2d08e325ac09ace535cdc9a6d1b05e93",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "5e16c2321267a61b602adf947591190d6e119ccb05538241e98d7a8f002f7e6d",
+    "avifSha256": "f12a9d791418261f0c0e270f08c2ba5f5556eb4917e8c0a558d5d5fc542dd3b2"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "ln_chaoyangbei",
+  "name": "朝阳北塔",
+  "subject": "朝阳北塔 · 方形十三层密檐塔南面全貌",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/ln_chaoyangbei.png",
+    "assets/references/ln_chaoyangbei-photo.jpg",
+    "assets/references/ln_chaoyangbei-eaves-crop.png",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 朝阳北塔 · 方形十三层密檐塔南面全貌\nMATERIAL OBSERVATIONS: 塔身与檐为青灰色砖，檐面覆灰筒瓦、檐端有瓦当滴水；塔身浮雕砖雕灰色、局部泛土黄；塔顶宝盖为绿色琉璃；基座灰砖、栏板灰白。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+  "material_observations": [
+    "塔身与檐为青灰色砖，檐面覆灰筒瓦、檐端有瓦当滴水；塔身浮雕砖雕灰色、局部泛土黄；塔顶宝盖为绿色琉璃；基座灰砖、栏板灰白。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/ln_chaoyangbei-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Northern_Chaoyang_Pagoda_04_2015-09.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Northern_Chaoyang_Pagoda_04_2015-09.JPG",
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2015-09-08 10:23",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/ln_chaoyangbei-eaves-crop.png",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Northern_Chaoyang_Pagoda_04_2015-09.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Northern_Chaoyang_Pagoda_04_2015-09.JPG",
+      "author": "猫猫的日记本（上一轮自同一照片裁出的檐部局部）",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "role": "檐部局部裁图，用于向生图模型强调逐檐计数；非独立来源。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "辽宁省文化和旅游厅 · 重点文物保护单位：朝阳北塔（三燕宫殿夯土台基、北魏思燕佛图台基、隋唐砖塔内核、辽塔外表的“五世同体”；辽初和辽重熙十三年两度维修并更名延昌寺塔；方形空心十三级叠涩密檐式砖筑佛塔，现高42.6米；塔身密宗金刚界四方如来、八胁侍菩萨、八大灵塔、二十四飞天；1984—1992年修缮发现地宫、中宫、天宫；1988年第三批国保）",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/8A68EB2D6A244A1F8C64DA4A1DB8E4FC/index.shtml"
+    },
+    {
+      "title": "国务院公报1988年第4号：第三批全国重点文物保护单位名单（（三）古建筑及历史纪念建筑物 朝阳北塔 唐至辽 辽宁省朝阳市）",
+      "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+    },
+    {
+      "title": "本仓库上一轮研究记录 assets/research/ln_chaoyangbei.json（三稿檐数14/12/12未通过，不交付）",
+      "url": "assets/research/ln_chaoyangbei.json"
+    }
+  ],
+  "original_research": "assets/research/ln_chaoyangbei.json",
+  "output": "assets/colored/ln_chaoyangbei.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3d5da5755f4990db34113e43a91a14c3e2e327df82d5a6e371f9df699c6a60ab",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 朝阳北塔 · 方形十三层密檐塔南面全貌\nMATERIAL OBSERVATIONS: 塔身与檐为青灰色砖，檐面覆灰筒瓦、檐端有瓦当滴水；塔身浮雕砖雕灰色、局部泛土黄；塔顶宝盖为绿色琉璃；基座灰砖、栏板灰白。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+      "input_images": [
+        "assets/generated/ln_chaoyangbei.png",
+        "assets/references/ln_chaoyangbei-photo.jpg",
+        "assets/references/ln_chaoyangbei-eaves-crop.png",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-0ceb372e-1e0c-4d4a-9db6-3fa8c4997190.png",
+      "retained_file": "assets/colored/ln_chaoyangbei.png",
+      "received_at": "2026-10-11T11:53:39.803Z",
+      "sourceSha256": "3d5da5755f4990db34113e43a91a14c3e2e327df82d5a6e371f9df699c6a60ab",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-0ceb372e-1e0c-4d4a-9db6-3fa8c4997190.png",
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T11:53:39.803Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "3d5da5755f4990db34113e43a91a14c3e2e327df82d5a6e371f9df699c6a60ab",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "56fb24a77d042e9884d9c229f0da3bd245a73b1a7a9e7253c94114dc45eebbde",
+    "avifSha256": "06cfff9285d65a8a0ee84f08fd6ade4866bfdec7608b210443df27ade01bff50"
+  }
+}

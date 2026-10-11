@@ -1,0 +1,102 @@
+{
+  "id": "jp_zuiganji_hondo",
+  "name": "瑞岩寺本堂",
+  "subject": "瑞岩寺 · 本堂正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_zuiganji_hondo.png",
+    "assets/references/jp_zuiganji_hondo-photo.jpg",
+    "assets/references/jp_zuiganji_hondo-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 瑞岩寺 · 本堂正面\nMATERIAL OBSERVATIONS: 素木灰褐色木构，门上白灰壁，灰色本瓦屋面；前庭白砂、绿树与石灯笼均去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "素木灰褐色木构，门上白灰壁，灰色本瓦屋面；前庭白砂、绿树与石灯笼均去除。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_zuiganji_hondo-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Zuigan-ji_Hondo_202506.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Zuigan-ji_Hondo_202506.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "掬茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2025-06-02 11:20:45",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jp_zuiganji_hondo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Main_Hall,_Zuiganji_201227.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Main_Hall%2C_Zuiganji_201227.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2020-12-27 14:26:47",
+      "role": "同一正面的冬季实拍，核对开间、欄间与石阶"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 瑞巖寺本堂（元方丈）",
+      "url": "https://online.bunka.go.jp/heritages/detail/173372"
+    },
+    {
+      "title": "文化厅 国指定文化财等数据库 · 瑞巖寺庫裏及び廊下（国宝，不在所绘范围）",
+      "url": "https://online.bunka.go.jp/heritages/detail/184286"
+    },
+    {
+      "title": "ja.wikipedia · 瑞巌寺",
+      "url": "https://ja.wikipedia.org/wiki/%E7%91%9E%E5%B7%8C%E5%AF%BA"
+    }
+  ],
+  "original_research": "assets/research/jp_zuiganji_hondo.json",
+  "output": "assets/colored/jp_zuiganji_hondo.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "50e1d6b171d4f20cc5828c6f61f02dbc1261538bcfbd39babb6b13657ff1db4b",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 瑞岩寺 · 本堂正面\nMATERIAL OBSERVATIONS: 素木灰褐色木构，门上白灰壁，灰色本瓦屋面；前庭白砂、绿树与石灯笼均去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/jp_zuiganji_hondo.png",
+        "assets/references/jp_zuiganji_hondo-photo.jpg",
+        "assets/references/jp_zuiganji_hondo-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-8ff1494b-6dc9-465b-a67a-81248df33c15.png",
+      "retained_file": "assets/colored/jp_zuiganji_hondo.png",
+      "received_at": "2026-10-11T12:27:26.806Z",
+      "sourceSha256": "50e1d6b171d4f20cc5828c6f61f02dbc1261538bcfbd39babb6b13657ff1db4b",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-8ff1494b-6dc9-465b-a67a-81248df33c15.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:27:26.806Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "50e1d6b171d4f20cc5828c6f61f02dbc1261538bcfbd39babb6b13657ff1db4b",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "5ad9d990221f67b1d9dbbc002afc7551344b41ac89c51fc3052fa8f7d9aa6b47",
+    "avifSha256": "a2282a64deb5be14e4bc6df559a96ccaec6566b55b551dc0e5f659dbcf033b56"
+  }
+}

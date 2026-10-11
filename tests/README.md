@@ -39,6 +39,7 @@
 | `japan-six.test.cjs`、`kansai-twelve.test.cjs`、`kyoto-nine.test.cjs`、`kyoto-thirteen.test.cjs`、`kyoto-nearby-ten.test.cjs`、`tokyo-eight.test.cjs` | 日本各批 |
 | `korea-20261002.test.cjs` | 朝鲜半岛 |
 | `southeast-asia-20261002.test.cjs` | 东南亚 |
+| `expansion-ready-20261011.test.cjs` | 东北、湘鄂、西藏、日本41处就绪候选，含阻塞排除、现存主体断代与82张原件绑定 |
 
 台湾、上海、安徽、北京天津、江浙早期批次等的断言并入 `catalog.test.cjs` 与 `facets.test.cjs`。
 
@@ -78,3 +79,5 @@
 | `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域；`isolate()` 供 `launchForTest` 复用，漏掉 `isolated()` 的实例也会得到作用域 |
 | `FangguUITests/UITestSupport.swift` | 辅助：`launchForTest` 关闭过渡动画并可直达详情或评价页、`relaunch` 真实重启、`dragPage`／`reveal` 沿左缘匀速滚动到目标可点 |
 | `Fanggu/UITestLaunch.swift`（App 内） | DEBUG 专用启动参数 `-uiTestDisableAnimations`、`-uiTestOpenSite <id>`、`-uiTestOpenReview`，Release 构建编译掉 |
+
+`color-proof.test.cjs` 验证默认接入、人眼通过和瞬时待默认通过三个状态的审图标签；浏览器实际图像加载与背景检查另行执行。原生 `ExpansionUITests` 查看新增条目和中英日详情，`LocalizationTests` 覆盖新增日本地区搜索。

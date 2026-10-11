@@ -1,0 +1,112 @@
+{
+  "id": "ln_shenyang_beita",
+  "name": "沈阳北塔",
+  "subject": "沈阳北塔（护国法轮寺塔）· 藏式覆钵式白塔正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/ln_shenyang_beita.png",
+    "assets/references/ln_shenyang_beita-photo.jpg",
+    "assets/references/ln_shenyang_beita-3-photo.jpg",
+    "assets/references/ln_shenyang_beita-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 沈阳北塔（护国法轮寺塔）· 藏式覆钵式白塔正面\nMATERIAL OBSERVATIONS: 覆钵、塔脖与基座白色灰浆粉刷，局部剥落露出灰砖；焰光门鎏金、门内红底；相轮、宝盖、日月火焰鎏金铜；基座浮雕为鎏金线条勾边的白色灰塑；周围松树深绿、院墙红色。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+  "material_observations": [
+    "覆钵、塔脖与基座白色灰浆粉刷，局部剥落露出灰砖；焰光门鎏金、门内红底；相轮、宝盖、日月火焰鎏金铜；基座浮雕为鎏金线条勾边的白色灰塑；周围松树深绿、院墙红色。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/ln_shenyang_beita-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:North_Pagoda.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/North_Pagoda.jpg",
+      "author": "Gary Todd",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "photo_date": "2014-05-09 16:48",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/ln_shenyang_beita-3-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:沈阳北塔_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%E6%B2%88%E9%98%B3%E5%8C%97%E5%A1%94_-_panoramio.jpg",
+      "author": "ruiraykwok（panoramio）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "role": "2009年自甬道远望的正面，核对基座全高、仰莲与红墙院落的关系；不作细部依据。"
+    },
+    {
+      "file": "assets/references/ln_shenyang_beita-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Chorten_in_Shenyang.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Chorten_in_Shenyang.jpg",
+      "author": "Ati（zh.wikipedia）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "role": "2006年低分辨率旧照，核对鎏金前旧貌，仅作参考。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：护国法轮寺（1643年崇德八年癸未仲春始建、1645年顺治二年告竣；藏式覆钵式砖塔由塔基、塔身、塔刹组成，塔刹铜铸悬十二枚风铎，顶置日、月、火焰宝珠，塔基四面雕雪狮与火焰宝盆；1962年市保、2003年辽宁省保“沈阳东、南、北塔（含法轮寺）”）",
+      "url": "https://zh.wikipedia.org/wiki/护国法轮寺"
+    },
+    {
+      "title": "维基百科：沈阳西塔／护国延寿寺（四塔1643年始建、1645年夏竣工；东塔、南塔、北塔1980年代修复存世，西塔1968年拆除、1998年复建，复建塔高26.33米；四塔原高统一为33米之说）",
+      "url": "https://zh.wikipedia.org/wiki/沈阳西塔"
+    },
+    {
+      "title": "搜狐：盛京四塔（四塔始建于1643年；全塔通高26米多；由基座、塔身、塔刹三部分组成；乾隆为北塔法轮寺题“金镜周圆”）—— 二手资料，仅作高度参考",
+      "url": "https://m.sohu.com/a/134127050_349299/"
+    }
+  ],
+  "original_research": "assets/research/ln_shenyang_beita.json",
+  "output": "assets/colored/ln_shenyang_beita.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "5767f8090a758d36271578301d60640f46520217f9a6cd7fed121c076ac4027e",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 沈阳北塔（护国法轮寺塔）· 藏式覆钵式白塔正面\nMATERIAL OBSERVATIONS: 覆钵、塔脖与基座白色灰浆粉刷，局部剥落露出灰砖；焰光门鎏金、门内红底；相轮、宝盖、日月火焰鎏金铜；基座浮雕为鎏金线条勾边的白色灰塑；周围松树深绿、院墙红色。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+      "input_images": [
+        "assets/generated/ln_shenyang_beita.png",
+        "assets/references/ln_shenyang_beita-photo.jpg",
+        "assets/references/ln_shenyang_beita-3-photo.jpg",
+        "assets/references/ln_shenyang_beita-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-11440fe2-f115-4be3-9883-0627d1555807.png",
+      "retained_file": "assets/colored/ln_shenyang_beita.png",
+      "received_at": "2026-10-11T11:48:10.819Z",
+      "sourceSha256": "5767f8090a758d36271578301d60640f46520217f9a6cd7fed121c076ac4027e",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-11440fe2-f115-4be3-9883-0627d1555807.png",
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T11:48:10.819Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "5767f8090a758d36271578301d60640f46520217f9a6cd7fed121c076ac4027e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "d6d00aa5e171a645429f408fe2bffd6b7ad608e5fed20e831fd6c0328d5add75",
+    "avifSha256": "e505ae9d2a019c8f96e7af39f61d88ee1e7a4400a0cc8a8eb53048a762b51719"
+  }
+}

@@ -69,6 +69,25 @@ final class LocalizationTests: XCTestCase {
         }
     }
 
+    @MainActor func testExpandedJapaneseRegionsAreSearchableInEveryLanguage() throws {
+        let expected = [("jp_zuiganji_hondo", "jp_tohoku"), ("jp_matsumoto_tenshu", "jp_chubu"),
+                        ("jp_izumo_honden", "jp_chugoku"), ("jp_fukiji_odo", "jp_kyushu"),
+                        ("jp_jodoji_jododo", "jp_kinki")]
+        for language in AppLanguage.allCases {
+            let store = LibraryStore(fileURL: temporaryFile(), language: language)
+            for (id, region) in expected {
+                let site = try XCTUnwrap(store.monuments.first { $0.id == id })
+                XCTAssertEqual(site.region, region)
+                XCTAssertFalse(site.regionName.isEmpty)
+                XCTAssertTrue(CatalogSearch.matches(site, terms: CatalogSearch.terms(site.regionName)))
+                XCTAssertTrue(CatalogSearch.matches(site, terms: CatalogSearch.terms(site.provinceName)))
+                XCTAssertFalse(site.lineImage.isEmpty)
+                XCTAssertFalse(site.colorImage.isEmpty)
+                XCTAssertNil(site.siteLatitude, "Candidate display points are not measured reminder coordinates")
+            }
+        }
+    }
+
     private func temporaryFile() -> URL {
         FileManager.default.temporaryDirectory.appendingPathComponent("fanggu-l10n-\(UUID().uuidString)")
             .appendingPathComponent("library.json")

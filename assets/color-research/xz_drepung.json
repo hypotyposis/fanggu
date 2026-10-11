@@ -1,0 +1,113 @@
+{
+  "id": "xz_drepung",
+  "name": "哲蚌寺",
+  "subject": "哲蚌寺 · 措钦大殿正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xz_drepung.png",
+    "assets/references/xz_drepung-photo.jpg",
+    "assets/references/xz_drepung-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 哲蚌寺 · 措钦大殿正面\nMATERIAL OBSERVATIONS: 墙体白色石砌抹灰，略见砌缝；边玛墙带赭红色，饰鎏金法轮与圆饰；明廊柱裹红布、柱头金色；横幅帘深褐色配白色图案；二层布幔白色、边缘蓝白相间；窗格与矮栏黄色；屋顶法轮、宝幢、宝瓶鎏金铜；台阶灰色石材。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "墙体白色石砌抹灰，略见砌缝；边玛墙带赭红色，饰鎏金法轮与圆饰；明廊柱裹红布、柱头金色；横幅帘深褐色配白色图案；二层布幔白色、边缘蓝白相间；窗格与矮栏黄色；屋顶法轮、宝幢、宝瓶鎏金铜；台阶灰色石材。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/xz_drepung-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Great_Assembly_Hall_Drepung_Monastery.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Great_Assembly_Hall_Drepung_Monastery.jpg",
+      "author": "Dennis G. Jarvis",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "photo_date": "2006-11-17 11:05",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/xz_drepung-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Drepung_monastery_view.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Drepung_monastery_view.jpg",
+      "author": "Maris Burbergs",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "role": "寺院屋顶全景，核对措钦大殿边玛墙带、鎏金饰件与周边建筑的关系（不作主体几何依据）"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "中国西藏网：哲蚌寺（明永乐十四年1416年绛央曲杰扎西班丹在贵族朗嘎桑资助下动工，名白登哲蚌寺；措钦大殿、洛色林扎仓、甘丹颇章等大都是明清两代陆续修建；1962年区保、1982年国保）",
+      "url": "http://media.tibet.cn/xzly/wzz/201005/t20100526_583658.htm"
+    },
+    {
+      "title": "中国西藏网：邱承彬浅谈西藏拉萨哲蚌寺奇观（措钦大殿占地近4500平方米；殿前17级石阶、8根列柱明廊；经堂有房221间、柱183根、面积约1800平方米；二楼甘珠尔拉康、三楼强巴通真拉康）",
+      "url": "http://m.tibet.cn/cn/religion/201804/t20180426_5798176.html"
+    },
+    {
+      "title": "维基百科：哲蚌寺（1416年永乐十四年由宗喀巴弟子绛央却杰主持修建；第二批国保）",
+      "url": "https://zh.wikipedia.org/wiki/哲蚌寺"
+    },
+    {
+      "title": "Wikipedia (en): Drepung Monastery（founded 1416 by Jamyang Choge Tashi Palden; the Tsokchen preserved after 1951）",
+      "url": "https://en.wikipedia.org/wiki/Drepung_Monastery"
+    },
+    {
+      "title": "中国天气网·西藏：哲蚌寺雪顿节页面（4500平方米的措钦大殿）",
+      "url": "https://www.weather.com.cn/xizang/lyqx/gyzl/08/1693771.shtml"
+    },
+    {
+      "title": "国务院公报1982年第7号：第二批全国重点文物保护单位名单（编号27 分类号12 哲蚌寺 明 西藏自治区拉萨市）",
+      "url": "https://www.gov.cn/gongbao/shuju/1982/gwyb198207.pdf"
+    }
+  ],
+  "original_research": "assets/research/xz_drepung.json",
+  "output": "assets/colored/xz_drepung.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "453e707dd9604dad57ddfe14bc42c9615544baacd5392ad627ccd1a1281e6b50",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 哲蚌寺 · 措钦大殿正面\nMATERIAL OBSERVATIONS: 墙体白色石砌抹灰，略见砌缝；边玛墙带赭红色，饰鎏金法轮与圆饰；明廊柱裹红布、柱头金色；横幅帘深褐色配白色图案；二层布幔白色、边缘蓝白相间；窗格与矮栏黄色；屋顶法轮、宝幢、宝瓶鎏金铜；台阶灰色石材。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/xz_drepung.png",
+        "assets/references/xz_drepung-photo.jpg",
+        "assets/references/xz_drepung-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e86a9ea2-c9d6-4ee7-92c9-29918b952e1d.png",
+      "retained_file": "assets/colored/xz_drepung.png",
+      "received_at": "2026-10-11T12:12:37.233Z",
+      "sourceSha256": "453e707dd9604dad57ddfe14bc42c9615544baacd5392ad627ccd1a1281e6b50",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e86a9ea2-c9d6-4ee7-92c9-29918b952e1d.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:12:37.233Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "453e707dd9604dad57ddfe14bc42c9615544baacd5392ad627ccd1a1281e6b50",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "a0bbcdc792152646b6b5bb792fae6bbde63d9192cbb5f3b8dbdab11deb87831e",
+    "avifSha256": "60d23d9b9a5bb4502c7007835f9dab73967f91eeeb8296a4ee22d1217f7fa855"
+  }
+}

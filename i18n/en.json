@@ -37,7 +37,10 @@
       "mm_central": "Central Myanmar",
       "la_north": "Northern Laos",
       "vn_central": "Central Vietnam",
-      "ph_luzon": "Luzon"
+      "ph_luzon": "Luzon",
+      "jp_tohoku": "Tōhoku",
+      "jp_chubu": "Chūbu",
+      "jp_kyushu": "Kyushu"
     },
     "types": {
       "hall": "Hall",
@@ -165,7 +168,18 @@
       "庆尚北道": "North Gyeongsang",
       "首尔特别市": "Seoul",
       "开城市": "Kaesong",
-      "平壤市": "Pyongyang"
+      "平壤市": "Pyongyang",
+      "岩手县": "Iwate",
+      "宫城县": "Miyagi",
+      "山形县": "Yamagata",
+      "长野县": "Nagano",
+      "山梨县": "Yamanashi",
+      "岐阜县": "Gifu",
+      "富山县": "Toyama",
+      "爱知县": "Aichi",
+      "岛根县": "Shimane",
+      "鸟取县": "Tottori",
+      "大分县": "Oita"
     },
     "places": {
       "zitong": "Zitong",
@@ -429,7 +443,37 @@
       "jp_tokyo_shiba": "Tokyo · Shiba Park",
       "jp_tokyo_otsuka": "Tokyo · Ōtsuka",
       "jp_tokyo_ikegami": "Tokyo · Ikegami",
-      "jp_higashimurayama": "Higashimurayama"
+      "jp_higashimurayama": "Higashimurayama",
+      "ln_xingcheng": "Xingcheng",
+      "ln_jinzhou": "Jinzhou",
+      "hb_jingzhou": "Jingzhou",
+      "hb_xiangyang": "Xiangyang",
+      "hb_wuhan": "Wuhan",
+      "hu_changsha": "Changsha",
+      "hu_liuyang": "Liuyang",
+      "xz_drepung": "Lhasa · Drepung Monastery",
+      "xz_tsaparang": "Zanda · Tsaparang",
+      "xz_gyantse": "Gyantse",
+      "xz_sakya": "Sakya",
+      "xz_samye": "Zhanang · Samye",
+      "xz_sera": "Lhasa · Sera Monastery",
+      "xz_shalu": "Shigatse · Shalu",
+      "xz_tholing": "Zanda · Tholing",
+      "xz_tradruk": "Nedong · Tradruk",
+      "jp_matsushima": "Matsushima",
+      "jp_sendai": "Sendai",
+      "jp_haguro": "Tsuruoka · Mount Haguro",
+      "jp_nagano_city": "Nagano",
+      "jp_ueda": "Ueda · Bessho Onsen",
+      "jp_koshu": "Kōshū · Katsunuma",
+      "jp_tajimi": "Tajimi",
+      "jp_takaoka": "Takaoka",
+      "jp_matsumoto": "Matsumoto",
+      "jp_inuyama": "Inuyama",
+      "jp_izumo": "Izumo",
+      "jp_misasa": "Misasa · Mount Mitoku",
+      "jp_bungotakada": "Bungotakada",
+      "jp_ono_hyogo": "Ono"
     },
     "protectionSources": {
       "国务院公布第1批全国重点文物保护单位名单": "State Council list of Major Historical and Cultural Sites Protected at the National Level, batch 1",
@@ -11442,6 +11486,937 @@
       "captions": [
         "Jizō Hall of Shōfuku-ji · Single-story Zen Buddhist hall with mokoshi",
         "Muromachi period · 1407"
+      ]
+    },
+    "ln_wanfotang": {
+      "name": "Wanfotang Grottoes, Yixian",
+      "short": "Wanfotang Grottoes",
+      "sub": "Western Cave 6 · Maitreya with crossed ankles",
+      "era": "Northern Wei · 499",
+      "yearNote": "The western caves were excavated in 499, supported by Yuan Jing's dedicatory inscription; the eastern group has a separate inscription dated 502. Cave 6 lost its front wall and the statue stands exposed. Its body has later repairs and the halo was repainted; a 1930s photograph already describes recent repairs. The date marks excavation, not every surviving surface.",
+      "lede": "On the cliff above the Daling River, governor Yuan Jing sponsored the western caves in 499; Han Zhen and others continued the eastern group in 502. This is the earliest and largest grotto complex in northeastern China. Cave 6 has lost its front wall, leaving a Maitreya more than three metres tall exposed beneath a painted halo of lotus petals and small Buddhas.",
+      "facts": [
+        "The western group's inscription dates it to 499, and the eastern group's to 502. Sixteen caves and nearly 500 sculptures survive. The complex entered the third national protection list in 1988.",
+        "The principal image in Cave 6 is a 3.05-metre Maitreya with crossed ankles, described as the largest Buddha-form Maitreya in northern and central Chinese grottoes. Its halo combines lotus petals, small Buddhas and scrolling ornament.",
+        "The collapsed front wall exposes the statue to the cliff face. Later repairs altered the body and repainted the halo. A 1930s photograph already records repairs, so the excavation date does not date all present surfaces."
+      ],
+      "yearLabel": "499",
+      "place": "Liaoning · Yi County",
+      "captions": [
+        "Wanfotang Grottoes, Yixian · Western Cave 6 · Maitreya with crossed ankles",
+        "Northern Wei · 499"
+      ],
+      "protection": [
+        {
+          "unitName": "Wanfotang Grottoes",
+          "scope": "Seated cross-legged Maitreya in western Cave 6, part of the grotto complex"
+        }
+      ]
+    },
+    "ln_xingcheng": {
+      "name": "Xingcheng Old City",
+      "short": "Xingcheng Old City",
+      "sub": "Chunhe Gate · East gate tower and barbican",
+      "era": "Ming · 1428",
+      "yearNote": "The wall was begun in 1428 and completed in 1430. The date marks the start of wall construction. No reliable date was found for repairs or rebuilding of the surviving timber gate towers; the illustration follows the photographed condition of 2011 without claiming their original fabric survives.",
+      "lede": "The Ningyuan garrison city was begun in 1428. More than 3,200 metres of brick-faced walls still enclose all four sides, making it one of China's best-preserved Ming cities. Each gate has a semicircular barbican and a two-storey tower. The east-facing Chunhe Gate shown here rises between the barbican's wings above a vaulted passage.",
+      "facts": [
+        "Liaodong commander Wu Kai and others petitioned to build the city in 1428; work finished in 1430. The walls entered the third national list in 1988 and were incorporated into the Xingcheng Old City designation in the sixth list in 2006.",
+        "The enclosure measures 821 metres north–south and 816 east–west, with a perimeter of 3,274 metres and walls 8.5–9.6 metres high. Each gate has a semicircular barbican and a five-bay, two-storey tower with a hip-and-gable roof and surrounding gallery.",
+        "The two-storey Chunhe Gate tower stands above the vaulted entrance, protected by the outer barbican's wings. The wall's founding date is documented, but the surviving timber tower's repair or rebuilding date remains unknown."
+      ],
+      "yearLabel": "1428",
+      "place": "Liaoning · Xingcheng",
+      "captions": [
+        "Xingcheng Old City · Chunhe Gate · East gate tower and barbican",
+        "Ming · 1428"
+      ],
+      "protection": [
+        {
+          "unitName": "Xingcheng City Wall",
+          "scope": "Chunhe Gate tower and barbican at the east gate, part of the city wall",
+          "note": "Item 38 of the sixth-batch mergers (2006) combined Xingcheng Ancient City, dating to Ming–Qing in Xingcheng, Liaoning, with the third-batch Xingcheng Ancient City Wall under the name Xingcheng Ancient City. The sixth-batch notice calls the earlier unit Xingcheng Ancient City Wall; the third-batch gazette originally calls it Xingcheng City Wall. The depicted tower and barbican retain their first designation in batch 3."
+        }
+      ]
+    },
+    "ln_guangjita": {
+      "name": "Guangji Temple Pagoda, Jinzhou",
+      "short": "Guangji Pagoda",
+      "sub": "Octagonal brick pagoda · Thirteen close-set eaves",
+      "era": "Liao · 1057",
+      "yearNote": "The pagoda was built in 1057. Its lost finial was reconstructed in 1996 using other Liao pagodas as references; the present 71.25-metre height includes that restoration. The year dates construction, while the finial is modern.",
+      "lede": "Built in 1057 to enshrine relics bestowed by the empress dowager, this pagoda stands before Guangji Temple and is the tallest historic building in western Liaoning. Each face of the solid octagonal brick body carries a seated Buddha with attendants. Thirteen close-set eaves taper upwards to a finial reconstructed in 1996, bringing the present height above 71 metres.",
+      "facts": [
+        "The pagoda dates to 1057, under Liao emperor Daozong. It was repeatedly repaired in the Ming and Qing periods; its lost finial was recreated in 1996. The Guangji Temple ensemble entered the fifth national list in 2001.",
+        "The solid octagonal brick pagoda has thirteen eave tiers and stands 71.25 metres high. A seated Buddha occupies an arched niche on each face, flanked by standing attendants; carved brick brackets carry the lowest eave.",
+        "Buddha niches, attendants and brick brackets translate grotto sculpture into a pagoda façade. The present finial follows other contemporary Liao towers but was reconstructed in 1996, rather than surviving from 1057."
+      ],
+      "yearLabel": "1057",
+      "place": "Liaoning · Jinzhou",
+      "captions": [
+        "Guangji Temple Pagoda, Jinzhou · Octagonal brick pagoda · Thirteen close-set eaves",
+        "Liao · 1057"
+      ],
+      "protection": [
+        {
+          "unitName": "Guangji Temple Historic Buildings",
+          "scope": "Guangji Temple Pagoda, part of the historic building complex"
+        }
+      ]
+    },
+    "ln_zhaoling": {
+      "name": "Qing Zhaoling Mausoleum, Shenyang",
+      "short": "Qing Zhaoling",
+      "sub": "Long'en Hall · Three bays and surrounding gallery",
+      "era": "Qing · 1643–1651",
+      "yearNote": "The mausoleum was begun in 1643 and its initial layout completed in 1651. Further additions and alterations followed under Kangxi, Qianlong, Jiaqing and later reigns. A specific construction or alteration date for the surviving Long'en Hall was not found. The timeline uses 1643 approximately; the illustration shows its present front.",
+      "lede": "The tomb of Hong Taiji and Empress Xiaoduanwen was begun in 1643 and initially completed in 1651, with later additions under Qing emperors. It joined the Imperial Tombs world heritage designation in 2004. Long'en Hall is the principal sacrificial hall within the square enclosure: a three-bay body surrounded by galleries, yellow glazed hip-and-gable roof and marble-railed terrace reached by three frontal stairways.",
+      "facts": [
+        "Construction began in 1643 and the initial mausoleum layout was ready in 1651. Kangxi, Qianlong and Jiaqing made further additions and alterations. It entered the second national list in 1982 and the world heritage list in 2004.",
+        "Long'en Hall has three bays, surrounding galleries and a single-eave yellow glazed hip-and-gable roof. Marble balustrades surround the raised platform; the terrace has three front stairways and one at either end, with dragon-head spouts beside the steps.",
+        "The sacrificial hall occupies the centre of the square enclosure. Galleries wrap its three-bay body and three stairways spread across the front terrace. The mausoleum began in 1643, but the surviving hall's specific construction or alteration date remains unknown."
+      ],
+      "yearLabel": "1643–1651",
+      "place": "Liaoning · Shenyang",
+      "captions": [
+        "Qing Zhaoling Mausoleum, Shenyang · Long'en Hall · Three bays and surrounding gallery",
+        "Qing · 1643–1651"
+      ],
+      "protection": [
+        {
+          "unitName": "Qing Zhaoling Mausoleum",
+          "scope": "Front of Longen Hall, part of the mausoleum"
+        }
+      ]
+    },
+    "ln_shenyang_beita": {
+      "name": "Shenyang North Pagoda",
+      "short": "Shenyang North Pagoda",
+      "sub": "Huguo Falun Temple · Tibetan white stupa",
+      "era": "Qing · 1643–1645",
+      "yearNote": "Started in 1643 and completed in 1645, according to the temple inscription cited in published accounts. The timeline uses completion. Repairs in the 1980s produced the present repainted and gilded appearance. Sources disagree on height, so no height is claimed here.",
+      "lede": "In 1643 Hong Taiji established a temple and pagoda on each of Shengjing's four sides; Falun Temple occupied the north. Its Tibetan white stupa has a square pedestal, rounded body and flame-shaped niche. Buddha eyes appear on the neck, above which thirteen gilded rings support a canopy, sun, moon and flaming jewel.",
+      "facts": [
+        "The north, east, south and west pagodas were begun together in 1643 and completed in 1645. The east, south and north retain Qing structures; the west was demolished in 1968 and rebuilt in 1998.",
+        "The Tibetan brick stupa comprises a square base, rounded body and finial. Snow lions and flaming vessels decorate the pedestal; the front has a flame-shaped niche. Gilded rings rise to a bronze canopy with twelve bells and a sun, moon and flaming jewel.",
+        "Repairs in the 1980s renewed the white coating and gilding seen today. The North Pagoda retains its Qing body; the western counterpart's demolition in 1968 and rebuilding in 1998 describe a different history."
+      ],
+      "yearLabel": "1643–1645",
+      "place": "Liaoning · Shenyang",
+      "captions": [
+        "Shenyang North Pagoda · Huguo Falun Temple · Tibetan white stupa",
+        "Qing · 1643–1645"
+      ]
+    },
+    "jl_haotaiwangbei": {
+      "name": "Gwanggaeto Stele, Ji'an",
+      "short": "Gwanggaeto Stele",
+      "sub": "Goguryeo royal stele · Four inscribed faces",
+      "era": "Goguryeo · 414",
+      "yearNote": "King Jangsu erected the stele for his father Gwanggaeto in 414. The stone is original. The reinforced-concrete and glass pavilion was built in 1982; the illustration depicts only the stele.",
+      "lede": "In 414 Goguryeo king Jangsu raised this stele for his father Gwanggaeto. A roughly dressed block of brecciated tuff, more than six metres tall, bears over 1,700 characters on four faces recounting the kingdom's origins, campaigns and tomb-guardian households. It stood for fifteen centuries before becoming widely known again around 1880; today a glass pavilion protects it.",
+      "facts": [
+        "The stele was erected in 414 and carries 44 lines, about 1,775 characters, of which 141 are illegible. It entered the first national list with the Donggou tombs in 1961 and the world heritage list in 2004.",
+        "The lightly dressed natural tuff pillar is 6.39 metres high and 1.34–1.97 metres wide at the bottom. All four sides are inscribed in a script between clerical and regular forms. It has no carved head or separate formal pedestal, resting on a natural stone base.",
+        "The stele remains the original stone of 414, without an ornamental head or regular carved pedestal. Its reinforced-concrete and glass enclosure dates to 1982 and is a protective structure rather than a Goguryeo remnant."
+      ],
+      "yearLabel": "414",
+      "place": "Jilin · Ji'an",
+      "captions": [
+        "Gwanggaeto Stele, Ji'an · Goguryeo royal stele · Four inscribed faces",
+        "Goguryeo · 414"
+      ],
+      "protection": [
+        {
+          "unitName": "Donggou Ancient Tombs",
+          "scope": "Gwanggaeto Stele, explicitly included in the first-batch list"
+        }
+      ]
+    },
+    "jl_wandu": {
+      "name": "Wandu Mountain City, Ji'an",
+      "short": "Wandu Mountain City",
+      "sub": "Stone lookout platform · Goguryeo fortress",
+      "era": "Goguryeo · 198",
+      "yearNote": "Wina Rock City was first built in AD 3, expanded and renamed Wandu in 198, and became the capital in 209. The timeline uses 198 approximately. The lookout platform's own construction date, dimensions and repairs were not found; its orderly lower masonry may include modern resetting. The image follows the surviving condition of 2023 without reconstructing the collapsed top.",
+      "lede": "In the hills west of Ji'an, Goguryeo's Wandu Mountain City follows the ridges with more than 6,300 metres of stone walls. King Sansang enlarged it in 198 and moved the capital here in 209; invasions in 244 and 342 broke it twice. This lookout platform stacks squared grey-red granite below a collapsed heap of rubble, one of the site's most striking surviving structures.",
+      "facts": [
+        "Wina Rock City was first built in AD 3, enlarged and renamed Wandu in 198, and became the capital in 209. It entered the second national list in 1982; the domestic capital site was merged in 2001, and world heritage listing followed in 2004.",
+        "The irregular quadrilateral enclosure measures 6,395 metres around, higher in the north with cliffs on three sides. Six gates and an eastern palace site are recorded. The lookout platform tapers through stone courses and has a collapsed upper portion; its dimensions remain unconfirmed.",
+        "Squared lower stones step inward beneath the collapsed upper rubble. No separate date, dimensions or repair history was found for the platform, so the city's expansion in 198 does not establish a precise construction year for this structure."
+      ],
+      "yearLabel": "198",
+      "place": "Jilin · Ji'an",
+      "captions": [
+        "Wandu Mountain City, Ji'an · Stone lookout platform · Goguryeo fortress",
+        "Goguryeo · 198"
+      ],
+      "protection": [
+        {
+          "unitName": "Wandu Mountain Ancient City",
+          "scope": "Lookout platform, part of the mountain fortress",
+          "note": "The fifth-batch merger list (2001, PDF p. 17) combined Guonei City with Wandu Mountain City as Wandu Mountain City and Guonei City. The depicted lookout platform retains its first designation in batch 2."
+        }
+      ]
+    },
+    "hlj_wenmiao": {
+      "name": "Dacheng Hall, Harbin Confucian Temple",
+      "short": "Harbin Confucian Temple",
+      "sub": "Eleven-bay Dacheng Hall · Double-eave hipped roof",
+      "era": "Republican period · 1926–1929",
+      "yearNote": "Construction began in October 1926 and finished in November 1929; the timeline uses completion. The Qing-style design substitutes reinforced concrete for the inner and outer principal columns, so it is classified as a modern building rather than Qing fabric.",
+      "lede": "Started in 1926 and completed in 1929, Harbin's Confucian temple was China's last built and the largest, highest-ranking one in the northeast. Dacheng Hall combines nine principal bays with two side rooms beneath a double-eave yellow glazed hipped roof. Marble stairways and railings follow Qing ceremonial forms, while reinforced-concrete columns introduce a new material.",
+      "facts": [
+        "Construction ran from October 1926 to November 1929, promoted by regional officials Zhang Huanxiang and Zhang Jinghui, with a commemorative inscription by Zhang Xueliang. It entered the fourth national list in 1996 and has housed the provincial ethnology museum since 1985.",
+        "The hall is eleven bays wide and six deep under a double-eave yellow glazed hipped roof. Ten-step stairways ascend the terrace on three sides; a marble ramp carved with five dragons occupies the centre front. Marble railings enclose the platforms, and principal columns are reinforced concrete.",
+        "Yellow tiles, double eaves and stone railings preserve Qing official forms, while principal columns use reinforced concrete. Completed in 1929, the building combines traditional Confucian ritual planning with modern materials and belongs to the modern period."
+      ],
+      "yearLabel": "1926–1929",
+      "place": "Heilongjiang · Harbin",
+      "captions": [
+        "Dacheng Hall, Harbin Confucian Temple · Eleven-bay Dacheng Hall · Double-eave hipped roof",
+        "Republican period · 1926–1929"
+      ],
+      "protection": [
+        {
+          "unitName": "Harbin Confucian Temple",
+          "scope": "Front of Dacheng Hall, part of the Confucian temple"
+        }
+      ]
+    },
+    "ln_chaoyangbei": {
+      "name": "Chaoyang North Pagoda",
+      "short": "Chaoyang North Pagoda",
+      "sub": "Square brick pagoda · Thirteen close-set eaves",
+      "era": "Liao · Repaired in 1044",
+      "yearNote": "Layers combine a Three Yan palace platform, Northern Wei Buddhist tower foundations, a Sui–Tang square tower core and Liao outer fabric. The exterior reflects early Liao work and repairs in 1044, used approximately for the timeline rather than as a foundation date. Repairs in 1984–1992 uncovered relic chambers; the glazed summit canopy is restored.",
+      "lede": "A Sui–Tang square tower enclosed within a Liao brick pagoda stands on the foundations of Northern Wei's Siyan Buddhist tower. Chaoyang's North Pagoda thus preserves successive layers in a single body. Its present exterior reflects repairs in 1044: seated Buddhas, attendants, miniature stupas and flying figures decorate four square faces, beneath thirteen tapering tiers of corbelled eaves rising above 42 metres.",
+      "facts": [
+        "Northern Wei foundations support a Sui–Tang tower enclosed by Liao work, repaired in early Liao and again in 1044 and renamed Yanchang Temple Pagoda. Repairs in 1984–1992 discovered three relic chambers. It entered the third national list in 1988.",
+        "The hollow square brick pagoda has thirteen corbelled eave tiers and stands 42.6 metres high. Four seated Buddhas with eight attendants, eight miniature stupas and twenty-four flying figures compose a Vajradhatu iconographic scheme on the tower body.",
+        "A Three Yan palace, Northern Wei foundations, Sui–Tang core and Liao exterior occupy one site. The green glazed summit canopy is another restored layer; different parts of this single pagoda preserve evidence from different periods."
+      ],
+      "yearLabel": "1044",
+      "place": "Liaoning · Chaoyang",
+      "captions": [
+        "Chaoyang North Pagoda · Square brick pagoda · Thirteen close-set eaves",
+        "Liao · Repaired in 1044"
+      ],
+      "protection": [
+        {
+          "unitName": "Chaoyang North Pagoda",
+          "scope": "Square brick pagoda with thirteen closely spaced eaves"
+        }
+      ]
+    },
+    "hb_jingzhou_wall": {
+      "name": "Jingzhou City Walls",
+      "short": "Jingzhou Old City",
+      "sub": "Yinbin Gate · Binyang Tower",
+      "era": "Qing · Walls rebuilt in 1646 · Tower rebuilt in 1987",
+      "yearNote": "The timeline dates the surviving walls to their rebuilding in 1646. Binyang Tower above the east Yinbin Gate was founded in the Ming period, rebuilt in 1861 and later destroyed. The present tower was designed in 1986 and completed in 1987 following Ming forms; it is a modern reconstruction.",
+      "lede": "Jingzhou preserves one of southern China's most complete city-wall circuits, tracing a history back to Western Han earthworks. The surviving brick enclosure was rebuilt in 1646 and runs for 11.8 kilometres. At its east Yinbin Gate, the Binyang Tower was reconstructed in 1987 following Ming forms: red columns and double eaves rise above a grey-brick platform.",
+      "facts": [
+        "The present wall circuit was rebuilt in 1646. It spans 3.75 kilometres east–west and 1.2 north–south, with a perimeter of 11.821 kilometres. Walls stand 8.83 metres high, with a 3–5-metre top, 4,567 crenellations and 26 artillery platforms.",
+        "The east Yinbin Gate has a vaulted passage and a platform 12.65 metres wide east–west and 34 metres long north–south. Binyang Tower was founded in the Ming period, rebuilt in 1861 and later destroyed; its present reconstruction was designed in 1986 and completed in 1987.",
+        "The timber tower has a double-eave hip-and-gable roof, stands 12.9 metres high and measures 18.9 by 11.6 metres. Thirty-six wooden columns support it, with an open upper gallery. The walls entered the fourth national protection list in 1996."
+      ],
+      "yearLabel": "1646",
+      "place": "Hubei · Jingzhou",
+      "captions": [
+        "Jingzhou City Walls · Yinbin Gate · Binyang Tower",
+        "Qing · Walls rebuilt in 1646 · Tower rebuilt in 1987"
+      ],
+      "protection": [
+        {
+          "unitName": "Jingzhou City Wall",
+          "scope": "Yinbin Gate platform and Binyang Tower above it; the tower was rebuilt in 1987"
+        }
+      ]
+    },
+    "hb_xiangyang_wall": {
+      "name": "Xiangyang City Walls",
+      "short": "Xiangyang City",
+      "sub": "Linhan Gate · Small North Gate tower",
+      "era": "Ming and Qing · Gate tower repaired in 1826",
+      "yearNote": "The walls are largely Ming work. Linhan Gate was inscribed in 1576; its tower was rebuilt in 1648 and reshaped by repairs in 1826, followed by restoration in 1952 and further work after 1988. The timeline uses 1826.",
+      "lede": "On the Han River's south bank, Xiangyang is surrounded by water on three sides and hills on the fourth. Its surviving walls are largely Ming brick-faced earthworks. Of six gates, the Small North Gate, Linhan Gate, alone retains a tower: a three-bay, double-eave hip-and-gable structure repaired in the Qing period, standing above a crenellated brick platform opposite the river crossing.",
+      "facts": [
+        "The city is traditionally dated to 201 BCE; earth walls were replaced with brick in the Song period. Surviving Ming walls run 7.3 kilometres, stand 8.5 metres high and range from 5 to 15 metres wide. The moat reaches 250 metres at its widest.",
+        "Linhan Gate, the Small North Gate, received its plaque in 1576 from prefect Wan Zhensun. The tower was rebuilt in 1648, repaired by prefect Zhou Kai in 1826, and restored to its former appearance in 1952.",
+        "The brick-and-timber tower has three bays defined by four columns, a double-eave hip-and-gable roof and a seven-purlin raised-beam frame. The platform measures 13.75 by 22.6 metres, with an outer crenellated wall and inner parapet. The walls entered the fifth national list in 2001."
+      ],
+      "yearLabel": "1826",
+      "place": "Hubei · Xiangyang",
+      "captions": [
+        "Xiangyang City Walls · Linhan Gate · Small North Gate tower",
+        "Ming and Qing · Gate tower repaired in 1826"
+      ],
+      "protection": [
+        {
+          "unitName": "Xiangyang City Wall",
+          "scope": "Linhan Gate (Small North Gate) platform and tower"
+        }
+      ]
+    },
+    "hb_taihui": {
+      "name": "Taihui Temple, Jingzhou",
+      "short": "Taihui Temple",
+      "sub": "Chaosheng Gate and Patriarch Hall · Raised golden roofs",
+      "era": "Ming · Rebuilt in 1393",
+      "yearNote": "The original foundation date is unknown. Prince Zhu Bai financed rebuilding in 1393. The surviving gate, flanking towers and Patriarch Hall reflect subsequent repairs; individual surviving elements have no confirmed dates. The timeline uses 1393.",
+      "lede": "Taihui Temple west of Jingzhou was rebuilt in 1393 with funds from the Ming prince Zhu Bai. A tall red-brick platform dominates its front: the three-arched Chaosheng Gate below, Patriarch Hall above, and flanking towers on either side. Three yellow glazed hip-and-gable roofs stack across the composition like a miniature palace city.",
+      "facts": [
+        "The original foundation date is unknown. Zhu Bai, Prince Xiangxian stationed in Jingzhou, rebuilt it in 1393. Surviving buildings include the bridge, entrance, flanking towers, Chaosheng Gate, Patriarch Hall and several subsidiary halls.",
+        "Chaosheng Gate has three arched openings beneath a yellow glazed hip-and-gable gatehouse. Two flights of steps reach the raised platform; Patriarch Hall occupies the centre and arched-window towers flank it beneath three aligned yellow roofs.",
+        "Taihui Temple was designated a Hubei provincial protected site in 1956. In 2006 it joined Xuanmiao and Kaiyuan temples as the Three Daoist Temples of Jingzhou in the sixth national protection list."
+      ],
+      "yearLabel": "1393",
+      "place": "Hubei · Jingzhou",
+      "captions": [
+        "Taihui Temple, Jingzhou · Chaosheng Gate and Patriarch Hall · Raised golden roofs",
+        "Ming · Rebuilt in 1393"
+      ],
+      "protection": [
+        {
+          "unitName": "Three Taoist Temples of Jingzhou",
+          "scope": "Chaosheng Gate, flanking towers and Patriarch Hall of Taihui Temple"
+        }
+      ]
+    },
+    "hb_zhongxiang_wenfeng": {
+      "name": "Wenfeng Pagoda, Zhongxiang",
+      "short": "Wenfeng Pagoda",
+      "sub": "Brick stupa · Twenty-one finial rings",
+      "era": "Ming · Rebuilt in 1389 (founded in 880)",
+      "yearNote": "An earth stupa was founded in 880 and later lost. Rebuilt in brick and renamed Wenfeng in 1389, it received finial repairs under Qianlong and further work under Daoguang. The timeline dates the rebuilding to 1389.",
+      "lede": "Within Bao'en Temple on Zhongxiang's Longshan, Wenfeng Pagoda was formerly named for a monk said to have bled white milk when killed by Huang Chao. An earth stupa was raised in 880 and rebuilt in brick in 1389, then renamed to celebrate literary flourishing. Its white rounded body and twenty-one finial rings form an uncommon southern example of a Tibetan-style stupa.",
+      "facts": [
+        "Founded as an earth stupa in 880, it was rebuilt and renamed Wenfeng in 1389. Its finial was repaired during Qianlong's reign and the tower again under Daoguang.",
+        "The solid brick-and-mixed-material stupa stands 26 metres high, comprising an underground chamber, octagonal base, rounded body, rings, canopy and finial. The base is 2.68 metres high and 10 metres wide at the bottom, tapering in three brick stages.",
+        "A south-facing niche contains a stone Buddha. Twenty-one rings with brick bracket-like details rise to a three-disc canopy hung with bronze bells. It entered the sixth national protection list in 2006."
+      ],
+      "yearLabel": "1389",
+      "place": "Hubei · Zhongxiang · Xianling",
+      "captions": [
+        "Wenfeng Pagoda, Zhongxiang · Brick stupa · Twenty-one finial rings",
+        "Ming · Rebuilt in 1389 (founded in 880)"
+      ],
+      "protection": [
+        {
+          "unitName": "Zhongxiang Wenfeng Pagoda",
+          "scope": "Full view of Wenfeng Pagoda"
+        }
+      ]
+    },
+    "hb_huanghelou": {
+      "name": "Yellow Crane Tower",
+      "short": "Yellow Crane Tower",
+      "sub": "Rebuilt in 1985 · Five-storey pyramidal roof",
+      "era": "Modern · Rebuilt in 1985 (founded in 223)",
+      "yearNote": "Founded in 223 and repeatedly rebuilt, the tower reconstructed in 1868 burned in 1884. The present reinforced-concrete historic-style tower was commissioned in 1981 and completed in June 1985 on Snake Hill, about one kilometre from the old site. The timeline uses 1985 and the image depicts this modern tower.",
+      "lede": "On Wuhan's Snake Hill, Yellow Crane Tower shares the fame of Yueyang Tower and the Pavilion of Prince Teng. Founded in 223 as a military lookout, it was repeatedly destroyed and rebuilt; the Tongzhi-period tower burned in 1884. The present five-storey reconstruction, completed in 1985 about a kilometre from the old site, rises 51.4 metres beneath sharply upturned eaves.",
+      "facts": [
+        "The tower was founded in 223, when Sun Quan built Xiakou city and a tower on the rocky promontory. Seven destructions are recorded in the Ming and Qing periods alone. The 1868 tower burned in 1884, leaving its bronze summit.",
+        "The Yangtze Bridge approach occupied the old site in 1957. Wuhan decided on reconstruction in October 1981; the reinforced-concrete tower opened in June 1985, with an elevator inside. Four summit plaques were recopied in 2003.",
+        "The new tower has five exterior storeys, nine internal levels and a height of 51.4 metres, with a five-metre gourd finial. Its ground floor is 30 metres square, compared with 15 metres for the former tower; four-sided eaves turn sharply upwards."
+      ],
+      "yearLabel": "1985",
+      "place": "Hubei · Wuhan",
+      "captions": [
+        "Yellow Crane Tower · Rebuilt in 1985 · Five-storey pyramidal roof",
+        "Modern · Rebuilt in 1985 (founded in 223)"
+      ]
+    },
+    "hu_yuelu": {
+      "name": "Yuelu Academy",
+      "short": "Yuelu Academy",
+      "sub": "Main gate · The celebrated Chu couplet",
+      "era": "Qing · Gate rebuilt in 1868 (academy founded in 976)",
+      "yearNote": "The academy was founded in 976. The main gate incorporates the legacy of 1494 construction and major rebuilding in 1868. Its original sign and couplet were destroyed by Japanese bombing during the war; the present copies were recreated from old photographs in 1984. The timeline uses 1868.",
+      "lede": "Yuelu Academy beneath Changsha's Yuelu Mountain was founded in 976 and sustained learning through the Song, Yuan, Ming and Qing periods. Its white-walled, grey-tiled five-bay main gate was rebuilt in 1868. Emperor Zhenzong's academy name and the celebrated couplet praising Chu's talent connect this modest entrance with the institution's long intellectual history.",
+      "facts": [
+        "Prefect Zhu Dong founded the academy in 976. Emperor Zhenzong bestowed its name in 1015. In 1167 Zhu Xi and Zhang Shi held their celebrated teaching discussions here, attended by more than a thousand students.",
+        "The present main gate was rebuilt in 1868. Its southern-style entrance stands above twelve steps, has five bays and a flush-gable roof, three screened gable walls and a pair of square stone columns. White walls contrast with grey tiles, glazed eave details and an openwork ridge.",
+        "Emperor Zhenzong bestowed the academy's sign; the couplet was composed by Yuan Mingyao and Zhang Zhongjie in the Jiaqing period. Both originals were destroyed during wartime bombing; the present versions were copied from old photographs in 1984."
+      ],
+      "yearLabel": "1868",
+      "place": "Hunan · Changsha",
+      "captions": [
+        "Yuelu Academy · Main gate · The celebrated Chu couplet",
+        "Qing · Gate rebuilt in 1868 (academy founded in 976)"
+      ],
+      "protection": [
+        {
+          "unitName": "Yuelu Academy",
+          "scope": "Front of the main outer gate"
+        }
+      ]
+    },
+    "hu_liuyang_wenmiao": {
+      "name": "Liuyang Confucian Temple",
+      "short": "Liuyang Confucian Temple",
+      "sub": "Dacheng Hall · Double-eave hip-and-gable roof",
+      "era": "Qing · Rebuilt in 1843",
+      "yearNote": "Founded under magistrate Yang Shi in the Northern Song, moved to the western city in 1505 and to its present site in 1818, the temple was rebuilt in 1843. Surviving buildings date from that rebuilding and later work. The timeline uses 1843.",
+      "lede": "Within Liuyang No. 1 High School, the Confucian temple preserves a palace-like plan modelled on Qufu. Founded in the Northern Song, it moved here in 1818 and was rebuilt in 1843. Dacheng Hall carries a yellow-and-green glazed double-eave hip-and-gable roof; dragon-carved braces on stone columns support the deep lower eaves, above a terrace with a central carved dragon ramp.",
+      "facts": [
+        "Magistrate Yang Shi founded the temple in the Northern Song. It moved in 1505, again in 1818, and was rebuilt in 1843. The south-facing complex occupies more than 6,000 square metres and follows the palace-like layout of Qufu's temple.",
+        "Dacheng Hall has a double-eave hip-and-gable roof with yellow and green glazed tiles, a central ridge finial and end ornaments. Six front stone columns define five bays, the central one widest; dragon-shaped braces and circular lattice motifs distinguish the façade.",
+        "Stone railings enclose the terrace, with a carved dragon ramp flanked by stairways. Qiu Zhiru revived Confucian ritual music in 1829; Liuyang's temple music became national intangible heritage in 2014. The temple entered the seventh national protection list in 2013."
+      ],
+      "yearLabel": "1843",
+      "place": "Hunan · Liuyang",
+      "captions": [
+        "Liuyang Confucian Temple · Dacheng Hall · Double-eave hip-and-gable roof",
+        "Qing · Rebuilt in 1843"
+      ],
+      "protection": [
+        {
+          "unitName": "Liuyang Confucian Temple",
+          "scope": "Front of Dacheng Hall and its raised terrace"
+        }
+      ]
+    },
+    "xz_drepung": {
+      "name": "Drepung Monastery",
+      "short": "Drepung Monastery",
+      "sub": "Tsokchen Hall front · Ming foundation and later expansion",
+      "era": "Construction from the 15th century · Ming–Qing enlargement",
+      "yearNote": "Research by Xiong Wenbin and Liao Yang in China Tibetology (2017, no. 3) identifies the Tsokchen as a principal building unit when work began at Drepung in 1416. Its inner circumambulatory passage was abandoned during alterations in the late 15th or early 16th century. Major buildings were also developed through Ming and Qing. The timeline uses 1416 approximately for the hall’s beginnings, not as a single completion date for every part of the present façade.",
+      "lede": "Founded in 1416 by Tsongkhapa's disciple Jamyang Chöjé below Mount Gambo Utse west of Lhasa, Drepung became the largest Gelug monastery. Its central Tsokchen Hall occupies nearly 4,500 square metres. Seventeen steps lead to an eight-column porch; cloth-framed galleries rise above it, and gilded Dharma wheels and victory banners crown the flat roof.",
+      "facts": [
+        "Jamyang Chöjé Tashi Palden began the monastery with noble patronage in 1416. Tsokchen Hall and other major buildings developed during the Ming and Qing periods; the present hall's exact alteration dates remain unknown. National protection followed in 1982.",
+        "Tsokchen Hall occupies nearly 4,500 square metres. Seventeen steps approach an eight-column porch. The roughly 1,800-square-metre assembly space has 183 columns, or 192 in another account, and the hall body rises through four levels.",
+        "Columns and curtains spread across the porch, while upper galleries continue the white fabric screens. Gilded wheels and victory banners crown the roof. White walls, red parapet bands and painted timber columns give the front its strong material contrasts."
+      ],
+      "yearLabel": "From the 15th century",
+      "place": "Tibet · Lhasa · Drepung Monastery",
+      "captions": [
+        "Drepung Monastery · Tsokchen Hall front · Ming foundation and later expansion",
+        "Construction from the 15th century · Ming–Qing enlargement"
+      ],
+      "protection": [
+        {
+          "unitName": "Drepung Monastery",
+          "scope": "Present Tsokchen façade; developed through Ming and Qing, precise alteration dates unknown"
+        }
+      ]
+    },
+    "xz_guge": {
+      "name": "Guge Kingdom Ruins",
+      "short": "Guge Ruins",
+      "sub": "Tsaparang royal city · Red Temple and summit fortress",
+      "era": "Kingdom founded in the 10th century · Abandoned in 1630",
+      "yearLabel": "c. 10th century",
+      "yearNote": "A branch descended from Tibetan royalty founded Guge in the 10th century; the national list dates the ruins approximately around that century. Ladakh annexed Guge in 1630 after besieging the palace, and the city was abandoned. Reliable construction years for the surviving Red and White temples were not found. The timeline approximately marks the kingdom's foundation.",
+      "lede": "On an earthen hill above the Sutlej, Guge's capital Tsaparang climbs from the foot to the summit: more than 300 buildings, over 300 caves, stupas, temples and two underground passages spread over 180,000 square metres and 175 metres of relief. Founded in the 10th century, Guge fell to Ladakh in 1630 after a prolonged siege; several temples still stand midway up the deserted city.",
+      "facts": [
+        "Guge arose in the 10th century from a branch of the Tibetan royal family descended from Kyide Nyima Gön. Ladakh besieged the palace for months and annexed the kingdom in 1630. The site entered the first national protection list in 1961.",
+        "The ruins contain more than 300 buildings and 300 caves, three stupas over ten metres tall, four temples, two halls and two underground passages. The area is about 180,000 square metres with 175 metres of vertical relief.",
+        "The White, Red, Tara, Vajrabhairava and mandala halls survive on the hillside below the summit palace zone. A heritage survey took place in 1985; protective repairs began in 2010 and mural conservation in 2012."
+      ],
+      "place": "Tibet · Zanda · Tsaparang",
+      "captions": [
+        "Guge Kingdom Ruins · Tsaparang royal city · Red Temple and summit fortress",
+        "Kingdom founded in the 10th century · Abandoned in 1630"
+      ],
+      "protection": [
+        {
+          "unitName": "Guge Kingdom Ruins",
+          "scope": "Tsaparang royal city ruins: Red Hall, walls, caves and hilltop palace-fortress"
+        }
+      ]
+    },
+    "xz_gyantse_dzong": {
+      "name": "Gyantse Dzong",
+      "short": "Gyantse Dzong",
+      "sub": "Present fortress · Site of resistance in 1904",
+      "era": "Founded in 967 · Palace in 1365 · Fortress in 1390",
+      "yearLabel": "14th century",
+      "yearNote": "A palace-fortress was founded in 967. Dorje dates walls to 1268 and a palace to 1365, subsequently enlarged; Vitali dates the fortress to 1390. British artillery damaged it in 1904 and walls were blown up again in 1967. Later restoration produced much of the present appearance. The timeline approximately uses 14th-century fortification.",
+      "lede": "Above the Nyangchu valley, Gyantse's hill fortress traces its foundation to the Tibetan royal descendant Pelkhor-tsen in 967. Fourteenth-century rulers built the palace and fortress, making it one of Tibet's major administrative strongholds. Defenders resisted the British invasion for about a hundred days in 1904 before the fortress fell on 7 July; today's stepped white walls and red parapets reflect later restoration.",
+      "facts": [
+        "The first palace-fortress is dated to 967; a palace was built in 1365 and the fortress developed in the late 14th century. It became one of Tibet's thirteen major districts in the Phagmodrupa period and entered the first national list in 1961.",
+        "The 1904 defence began in April and lasted about a hundred days. Seven attacks on 5–6 July were repelled; British artillery breached the walls, and the fortress was occupied on 7 July.",
+        "The fortress was severely damaged by the 1904 battle and demolition in 1967, then gradually restored. Buildings step up the ridge with white walls and red parapet bands, overlooking Gyantse and the Nyangchu plain."
+      ],
+      "place": "Tibet · Gyantse",
+      "captions": [
+        "Gyantse Dzong · Present fortress · Site of resistance in 1904",
+        "Founded in 967 · Palace in 1365 · Fortress in 1390"
+      ],
+      "protection": [
+        {
+          "unitName": "Gyantse Dzong Resistance Site",
+          "scope": "Present fortress, principal structure of the 1904 battle against British forces, subsequently repaired"
+        }
+      ]
+    },
+    "xz_gyantse_kumbum": {
+      "name": "Kumbum Stupa, Pelkor Chöde",
+      "short": "Gyantse Kumbum",
+      "sub": "Ten Thousand Buddha Stupa · Nine-level temple-stupa",
+      "era": "Ming · 1427–1436",
+      "yearNote": "The Han–Tibetan historical account dates foundation to 1427 and completion of sculpture, murals and ornament to 1436. Other sources give a 1414 foundation or a 1427–1437 building period. The monastery began in 1418, before the stupa. The timeline uses the 1427 foundation approximately.",
+      "lede": "In 1427 Gyantse's ruler Rabten Kunsang Phak laid the foundation of this many-doored stupa; its painted and sculpted decoration was ready about a decade later. The twenty-cornered, four-sided base tapers beneath a rounded vessel, square neck and gilded finial. Within are 108 doors, 77 chapels and thousands of images: a temple within a stupa, a stupa within a monastery.",
+      "facts": [
+        "The Han–Tibetan historical account gives a foundation in 1427 and completion of murals and sculpture in 1436, while another tradition dates the start to 1414. The Pelkor Chöde complex entered the fourth national list in 1996.",
+        "The stupa has nine levels and a reported height of 42.4 metres, or over 32 metres in another account. Its twenty-cornered base is about 40 metres across; the rounded vessel is 20 metres in diameter, below thirteen rings and a gilded canopy.",
+        "Its 108 doors lead to 77 chapels. The first four levels have sixteen or twenty rooms each and the vessel contains four. A reported 27,529 painted and sculpted images explain the conventional name Ten Thousand Buddha Stupa."
+      ],
+      "yearLabel": "1427",
+      "place": "Tibet · Gyantse",
+      "captions": [
+        "Kumbum Stupa, Pelkor Chöde · Ten Thousand Buddha Stupa · Nine-level temple-stupa",
+        "Ming · 1427–1436"
+      ],
+      "protection": [
+        {
+          "unitName": "Pelkor Chode Monastery",
+          "scope": "Full view of the Kumbum, also called the Stupa of One Hundred Thousand Buddhas"
+        }
+      ]
+    },
+    "xz_ramoche": {
+      "name": "Ramoche Temple",
+      "short": "Ramoche Temple",
+      "sub": "Main hall front · Tibetan foundation, rebuilt in 1986",
+      "era": "Founded 641 · 1474 layout · restored 1986",
+      "yearNote": "Tradition attributes the foundation to Princess Wencheng in 641. Fire destroyed the original hall; a three-storey hall was built in 1474 and became the Upper Tantric College’s assembly hall. After another fire in 1959, major restoration took place in 1986. The view depicts this restored façade, so the timeline uses 1986. The traditional foundation and national-protection date 641 does not date the surviving three-storey hall.",
+      "lede": "Lhasa's second great early temple is traditionally attributed to Princess Wencheng in 641 and houses the image of the eight-year-old Buddha associated with her journey. Fire led to a three-storey rebuilding in 1474; another fire in 1959 was followed by restoration completed in 1986. The present red façade layers timber-window galleries beneath a gilded roof and victory banners.",
+      "facts": [
+        "Tradition places foundation by Princess Wencheng in 641. The original hall burned and was rebuilt with three storeys in 1474, becoming an assembly hall for the Upper Tantric College. National listing followed in 2001.",
+        "The temple occupies about 4,000 square metres. Its three-storey main hall has a predominantly red front, timber-window galleries on the lower two levels and gilded rooftop ornaments including the Dharma wheel, paired deer and victory banners.",
+        "A fire in 1959 destroyed the temple; regional protection followed in 1962 and rebuilding was completed in 1986. The two parts of the eight-year-old Buddha image were reportedly recovered separately in Beijing and Lhasa in 1983."
+      ],
+      "yearLabel": "Restored 1986",
+      "place": "Tibet · Lhasa",
+      "captions": [
+        "Ramoche Temple · Main hall front · Tibetan foundation, rebuilt in 1986",
+        "Founded 641 · 1474 layout · restored 1986"
+      ],
+      "protection": [
+        {
+          "unitName": "Ramoche Temple",
+          "scope": "Present main-hall façade: layout rebuilt in 1474, restored in 1986"
+        }
+      ]
+    },
+    "xz_sakya_south": {
+      "name": "Sakya Monastery",
+      "short": "Sakya Monastery",
+      "sub": "Lhakhang Chenmo front, South Monastery · Yuan period",
+      "era": "North Monastery founded in 1073 · South Monastery in 1268",
+      "yearNote": "Khön Könchok Gyalpo founded the North Monastery in 1073; it is now largely ruined. In 1268, Shakya Sangpo, acting under Phagpa, founded the South Monastery and planned Lhakhang Chenmo. The timeline dates this hall's foundation; its present front includes later repairs.",
+      "lede": "Sakya became a major administrative centre in Yuan-period Tibet. The South Monastery's Lhakhang Chenmo, founded in 1268, measures roughly 80 by 85 metres and rises 24.3 metres, supported by 108 massive columns. Eight-metre walls, corner towers and a moat give the enclosure a fortress form, marked by the Sakya colours of red, white and grey.",
+      "facts": [
+        "Khön Könchok Gyalpo founded the North Monastery in 1073. Shakya Sangpo founded the South Monastery under Phagpa in 1268 and designed its great hall. National protection followed in 1961.",
+        "Lhakhang Chenmo measures 79.8 by 84.8 metres and rises 24.3 metres. Among its 108 columns, four carry legends associated with a tiger, a wild yak, Kublai Khan and blood-coloured ink.",
+        "The South Monastery enclosure measures about 214 by 210 metres. Its inner walls are three metres thick and eight metres high; corner towers rise three or four storeys, with an eight-metre-wide moat outside. Red, white and grey wall bands identify the Sakya tradition."
+      ],
+      "yearLabel": "1268",
+      "place": "Tibet · Sakya",
+      "captions": [
+        "Sakya Monastery · Lhakhang Chenmo front, South Monastery · Yuan period",
+        "North Monastery founded in 1073 · South Monastery in 1268"
+      ],
+      "protection": [
+        {
+          "unitName": "Sakya Monastery",
+          "scope": "Front of Lhakhang Chenmo in the southern monastery, built in 1268 and repeatedly repaired"
+        }
+      ]
+    },
+    "xz_samye_utse": {
+      "name": "Samye Monastery",
+      "short": "Samye Monastery",
+      "sub": "Utsé Hall front · Tibetan foundation, present rebuilding",
+      "era": "Founded in the 8th century · rebuilt after 1988",
+      "yearLabel": "Rebuilt after 1988",
+      "yearNote": "Samye was founded in the 8th century; accounts mention foundation in 762, completion in 775, and vows and ordination in 779, while the protection list gives 787–799. The Utse’s upper structure was dismantled during the Cultural Revolution. Restoration began in 1986 and rebuilding followed after 1988; the upper floors and golden roofs belong to that work. The timeline point 1990 approximately locates the modern reconstruction, rather than a documented completion or a surviving Tibetan Empire roof.",
+      "lede": "Samye hosted the first Tibetan monastic ordinations in 779 and became Tibet's first fully established Buddhist monastery. Its central Utsé Hall combines Tibetan forms below, Chinese forms in the middle and Indian forms above. From outside it appears five-storeyed, but has three principal floors; today's upper levels and gilded roofs date from reconstruction after the late 1980s.",
+      "facts": [
+        "The Ba She records construction beginning in 762 and ending in 775, with Shantarakshita planning the monastery and Padmasambhava leading the work. A stele records the Buddhist oath of 779. National protection followed in 1996.",
+        "Utsé Hall faces east. Although the exterior appears to have five levels, its three main floors each rise about 5.5–6 metres, with a total floor area of about 8,900 square metres.",
+        "The upper hall was demolished during the Cultural Revolution. Repairs sponsored by the tenth Panchen Lama began in 1986, followed by reconstruction of the upper storeys and gilded roof after 1988."
+      ],
+      "place": "Tibet · Zhanang · Samye",
+      "captions": [
+        "Samye Monastery · Utsé Hall front · Tibetan foundation, present rebuilding",
+        "Founded in the 8th century · rebuilt after 1988"
+      ],
+      "protection": [
+        {
+          "unitName": "Samye Monastery",
+          "scope": "Present Utse façade, with golden roofs and upper floors rebuilt after the Cultural Revolution"
+        }
+      ]
+    },
+    "xz_sera": {
+      "name": "Sera Monastery",
+      "short": "Sera Monastery",
+      "sub": "Tsokchen Hall front · Built in 1710",
+      "era": "Monastery founded in 1419 · Tsokchen Hall built in 1710",
+      "yearNote": "Jamchen Chöjé Shakya Yeshe founded Sera in 1419. The illustrated Tsokchen Hall was built in 1710 and later repaired. Its date refers to this surviving hall, rather than the monastery's foundation.",
+      "lede": "Sera was founded in 1419, but its largest building, Tsokchen Hall, dates to 1710. White masonry, rows of timber columns, black-and-white cloth screens and a raised clerestory form a layered front. A Chinese-style gilded hip-and-gable roof rises above the two principal levels.",
+      "facts": [
+        "Jamchen Chöjé Shakya Yeshe founded the monastery in 1419. Tsokchen Hall, built in 1710, became its administrative and assembly centre. National protection followed in 1982.",
+        "The assembly hall faces a broad plaza and connects to five chapels. Its floor area exceeds 2,000 square metres. Tall central columns support a clerestory above lower columns around the sides.",
+        "The Chinese-style hip-and-gable roof carries gilded copper tiles and rooftop ornaments. Three chapels stand behind the hall; the central one houses a six-metre gilded copper Maitreya image."
+      ],
+      "yearLabel": "1710",
+      "place": "Tibet · Lhasa · Sera Monastery",
+      "captions": [
+        "Sera Monastery · Tsokchen Hall front · Built in 1710",
+        "Monastery founded in 1419 · Tsokchen Hall built in 1710"
+      ],
+      "protection": [
+        {
+          "unitName": "Sera Monastery",
+          "scope": "Front of the Tsokchen, built in 1710 and subsequently repaired"
+        }
+      ]
+    },
+    "xz_shalu": {
+      "name": "Shalu Monastery",
+      "short": "Shalu Monastery",
+      "sub": "Tsokchen Hall front · Yuan-period Chinese–Tibetan forms",
+      "era": "Founded in 1087 · Rebuilt in 1333",
+      "yearNote": "Chetsun Sherab Jungné founded the monastery in 1087. After an earthquake in 1329, Kuzhang Drakpa Gyaltsen rebuilt it in 1333 with Yuan patronage and Chinese and Tibetan craftsmen. The illustrated main hall retains the layout of this rebuilding, with later repairs.",
+      "lede": "Shalu brings grey, tapering Tibetan walls together with green-glazed Chinese hip-and-gable roofs. Founded in 1087, the monastery was rebuilt in 1333 after an earthquake, using Chinese and Tibetan craftsmen under Yuan patronage. It also became the teaching centre of the scholar Buton Rinchen Drub.",
+      "facts": [
+        "Chetsun Sherab Jungné founded Shalu in 1087. An earthquake in 1329 damaged the buildings; Kuzhang Drakpa Gyaltsen rebuilt them in 1333 with Yuan support.",
+        "The main hall has 49 rooms and covers about 1,500 square metres. Tibetan assembly spaces and chapels occupy the lower level; four Chinese-style halls stand above, with green-glazed hip-and-gable roofs and bells at the corners.",
+        "Buton Rinchen Drub (1290–1364) became abbot in 1320, established the Shalu or Buton tradition and taught more than 3,000 students. National protection followed in 1988."
+      ],
+      "yearLabel": "1333",
+      "place": "Tibet · Shigatse · Shalu",
+      "captions": [
+        "Shalu Monastery · Tsokchen Hall front · Yuan-period Chinese–Tibetan forms",
+        "Founded in 1087 · Rebuilt in 1333"
+      ],
+      "protection": [
+        {
+          "unitName": "Shalu Monastery",
+          "scope": "Front courtyard of the Tsokchen (Shalu Lhakhang) and Chinese-style glazed roofs above the second level"
+        }
+      ]
+    },
+    "xz_tholing": {
+      "name": "Tholing Monastery",
+      "short": "Tholing Monastery",
+      "sub": "Red Hall front and stupas · Guge-period foundation",
+      "era": "Monastery founded 996 · Red Hall enlarged in 1028",
+      "yearNote": "King Yeshe Ö founded Tholing in 996. Restoration and enlargement in 1028 established the hall known as the Red Hall or Kangmar; the White Hall and other buildings were added in the 15th century. Surviving murals mainly date to the 15th–16th centuries. Severe Cultural Revolution damage was followed by repairs. The view depicts the Red Hall today; 1028 approximately locates its enlargement, while 996 is the monastery’s foundation, not the date of every surviving element.",
+      "lede": "Among the earthen cliffs of the Sutlej valley, Tholing was founded in 996 as the religious centre of Guge. The Fire Dragon ceremony of 1076 commemorated Atisha twenty-two years after his death. The Red and White Halls survive with nearby stupas; behind the Red Hall's plain walls are murals mainly from the 15th and 16th centuries.",
+      "facts": [
+        "Yeshe Ö founded Tholing in 996, and it expanded in 1028. The Fire Dragon ceremony was held in 1076. National protection followed in 1996.",
+        "The mandala-plan Yeshe Ö Hall is now ruined. The White Hall, built in the 15th century, has 42 columns and preserves important murals.",
+        "The Red and White Halls survived Cultural Revolution damage, having been used as grain stores. Tradition speaks of 108 stupas; earthen examples still stand beside the Sutlej."
+      ],
+      "yearLabel": "Enlarged around 1028",
+      "place": "Tibet · Zanda · Tholing",
+      "captions": [
+        "Tholing Monastery · Red Hall front and stupas · Guge-period foundation",
+        "Monastery founded 996 · Red Hall enlarged in 1028"
+      ],
+      "protection": [
+        {
+          "unitName": "Tholing Monastery",
+          "scope": "Present Red Hall front and stupas before it"
+        }
+      ]
+    },
+    "xz_tradruk": {
+      "name": "Tradruk Temple",
+      "short": "Tradruk Temple",
+      "sub": "Entrance front and gilded roofs · Tibetan foundation, repeated repairs",
+      "era": "Founded in the 7th century · 14th-century layout · 1980s repairs",
+      "yearLabel": "14th-century layout",
+      "yearNote": "Tradition attributes the foundation to Songtsen Gampo in the 7th century; the protection list likewise qualifies this as traditional. Restoration and enlargement in 1351 established the 14th-century scale. The Fifth Dalai Lama added a golden roof and the Seventh expanded it further. After Cultural Revolution damage, repairs in the 1980s led to reconsecration in 1988. The timeline uses 1351 approximately for the surviving layout, not a wholly surviving 7th-century façade.",
+      "lede": "Tradruk is one of the early Buddhist temples of the Yarlung valley, traditionally founded by Songtsen Gampo in the 7th century. The innermost shrine is associated with the original temple site. The entrance front brings white walls, red parapet bands and Chinese-style gilded roofs together, reflecting expansions in 1351 and under later Dalai Lamas.",
+      "facts": [
+        "Tradition dates foundation to Songtsen Gampo in the 7th century. Expansion followed in 1351 and under the fifth and seventh Dalai Lamas. National protection was granted in 1961.",
+        "The temple occupies about 4,667 square metres. Its main assembly hall has a three-by-three-bay plan and twelve chapels; the innermost shrine is traditionally identified as the earliest part.",
+        "Partial destruction during the Cultural Revolution was followed by repairs from 1980 and reconsecration in 1988. A pearl thangka, traditionally linked to Princess Wencheng, uses thousands of pearls."
+      ],
+      "place": "Tibet · Nedong · Tradruk",
+      "captions": [
+        "Tradruk Temple · Entrance front and gilded roofs · Tibetan foundation, repeated repairs",
+        "Founded in the 7th century · 14th-century layout · 1980s repairs"
+      ],
+      "protection": [
+        {
+          "unitName": "Tradruk Temple",
+          "scope": "Present entrance front and golden roof; layout established in the 14th century, repaired in the 1980s"
+        }
+      ]
+    },
+    "jp_zuiganji_hondo": {
+      "name": "Zuigan-ji Main Hall",
+      "short": "Zuigan-ji",
+      "sub": "Main hall (former abbot's quarters), front",
+      "era": "Roof frame raised in 1609",
+      "yearNote": "The Agency for Cultural Affairs dates the hall to Momoyama, 1609. Date Masamune began rebuilding in 1604, and the main hall, formerly the abbot's quarters, had its roof frame raised in March 1609. It became an Important Cultural Property in 1900 and a National Treasure on 31 March 1953. The kitchen and corridor, separately designated in 1959, are outside the illustrated scope.",
+      "lede": "Date Masamune revived Zuigan-ji at Matsushima. The main hall, with its roof frame raised in 1609, was originally a large abbot's residence: thirteen bays stretch beneath a broad grey-tiled roof, with continuous timber doors and transom panels facing the white-sand courtyard. Its Momoyama paintings and carvings are largely concealed inside; the front presents plain timber and long eaves.",
+      "facts": [
+        "The roof frame was raised in March 1609. The hall measures thirteen by eight bays, with a single-storey hip-and-gable tiled roof and an entrance porch. It became a National Treasure in 1953.",
+        "Originally the abbot's quarters in Masamune's rebuilding, it is an unusually large example of this building type. Painted details, transoms and carved doors display Momoyama forms; the image shows the exterior front.",
+        "The Agency for Cultural Affairs groups it with Ōsaki Hachimangū as a surviving work of Date culture in Tōhoku. The kitchen and corridor were separately designated National Treasures in 1959 and are outside this view."
+      ],
+      "yearLabel": "1609",
+      "place": "Japan · Miyagi · Matsushima",
+      "captions": [
+        "Zuigan-ji Main Hall · Main hall (former abbot's quarters), front",
+        "Roof frame raised in 1609"
+      ]
+    },
+    "jp_osaki_hachimangu": {
+      "name": "Ōsaki Hachimangū",
+      "short": "Ōsaki Hachimangū",
+      "sub": "Gongen-style shrine · Worship hall front",
+      "era": "Completed around 1607",
+      "yearLabel": "c. 1607",
+      "yearNote": "The Agency for Cultural Affairs dates the shrine to Momoyama, 1607. Date Masamune's construction was completed around that year. The main sanctuary, connecting chamber and worship hall form a single gongen-style building. It became an Important Cultural Property in 1903 and a National Treasure on 22 November 1952. Repairs to the nagatoko in 1969 do not date the shrine hall.",
+      "lede": "Built for Date Masamune around 1607, Ōsaki Hachimangū joins worship hall, connecting chamber and main sanctuary in the oldest surviving gongen-style shrine building. Gilding and coloured carvings cover the black-lacquered timber. A triangular gable rises above a curved entrance gable, carrying Momoyama splendour to Sendai.",
+      "facts": [
+        "Completed around 1607, the sanctuary measures five by three bays, with a one-bay connecting chamber and a seven-bay worship-hall front. Its hip-and-gable roof is wood-shingled. National Treasure designation followed in 1952.",
+        "Traditionally modelled on the Toyokuni mausoleum, the building is richly carved and painted. It is the oldest surviving shrine hall in the gongen style and a major example of Momoyama architecture in Sendai.",
+        "The front view shows the worship hall's central triangular gable, five-bay entrance porch with curved gable and three bell ropes. The connecting chamber and sanctuary behind it are outside the image."
+      ],
+      "place": "Japan · Miyagi · Sendai",
+      "captions": [
+        "Ōsaki Hachimangū · Gongen-style shrine · Worship hall front",
+        "Completed around 1607"
+      ]
+    },
+    "jp_haguro_pagoda": {
+      "name": "Mount Haguro Five-storey Pagoda",
+      "short": "Haguro Pagoda",
+      "sub": "Three-bay, five-storey timber pagoda",
+      "era": "Rebuilt around 1372",
+      "yearLabel": "c. 1372",
+      "yearNote": "The Agency for Cultural Affairs dates the pagoda to early Muromachi, 1372. A Haguro chronicle attributes rebuilding around 1372 to abbot Daihōji Masauji. A copied ridge inscription records columns erected in 1369 and the finial raised in 1377; Mogami Yoshiaki repaired it in 1608. Important Cultural Property designation came in 1908, and National Treasure designation on 11 June 1966.",
+      "lede": "An unpainted timber pagoda stands in the cedar forest on the Dewa Sanzan pilgrimage route. Rebuilt around 1372 under abbot Daihōji Masauji, it is a pure Japanese-style, wood-shingled five-storey tower about twenty-nine metres high. It is traditionally regarded as Tōhoku's oldest pagoda and is paired with Myōō-in's tower as a major Muromachi example.",
+      "facts": [
+        "A Haguro chronicle records rebuilding around 1372. A copied ridge inscription dates the columns to 1369 and the finial to 1377. Mogami Yoshiaki repaired the tower in 1608.",
+        "The three-bay, five-storey tower has wood-shingled roofs, a total height of about 29.2 metres and a tower-body height of 22.2 metres. Its unpainted timber represents pure Japanese-style architecture. It became a National Treasure in 1966.",
+        "The Agency for Cultural Affairs compares it with the five-storey pagoda of Myōō-in in Fukuyama as a representative Muromachi tower. It now belongs to Dewa Sanzan Shrine, encompassing Gassan, Dewa and Yudono shrines."
+      ],
+      "place": "Japan · Yamagata · Tsuruoka · Mount Haguro",
+      "captions": [
+        "Mount Haguro Five-storey Pagoda · Three-bay, five-storey timber pagoda",
+        "Rebuilt around 1372"
+      ]
+    },
+    "jp_zenkoji_hondo": {
+      "name": "Zenkō-ji Main Hall",
+      "short": "Zenkō-ji",
+      "sub": "Shumoku-style main hall front",
+      "era": "Rebuilt in 1707",
+      "yearNote": "The Agency for Cultural Affairs dates the hall to mid-Edo, 1707. After the fire of 1700, abbot Keiun raised funds for a design by master carpenter Kōra Sōga, completed in July 1707. It became an Important Cultural Property in 1908 and a National Treasure on 31 March 1953. The temple's traditional foundation in 602 does not date this surviving hall.",
+      "lede": "After the great fire of 1700, Zenkō-ji rebuilt its main hall in 1707 to a design by Kōra Sōga. Five bays wide but fourteen deep, its T-shaped shumoku roof joins the worship area and inner sanctuary beneath cypress bark. The gable-facing front layers a lower pent roof and curved entrance gable, a major work of mid-Edo Buddhist architecture.",
+      "facts": [
+        "Fourteen bays deep and five wide, the single-storey hall has a surrounding pent roof, a T-shaped shumoku roof and gable entrance. A three-bay front porch carries a curved gable, with one-bay side porches; all roofs use cypress bark.",
+        "The hall is about 24 metres wide, 54 metres deep and 26 metres high. Round columns and three-step bracket sets support the eaves. It became a National Treasure in 1953.",
+        "Tradition dates the temple to 602. Repeated rebuilding followed two Kamakura and four Muromachi fires; the present hall was funded by abbot Keiun after the fire of 1700."
+      ],
+      "yearLabel": "1707",
+      "place": "Japan · Nagano · Nagano",
+      "captions": [
+        "Zenkō-ji Main Hall · Shumoku-style main hall front",
+        "Rebuilt in 1707"
+      ]
+    },
+    "jp_anrakuji_pagoda": {
+      "name": "Anraku-ji Octagonal Three-storey Pagoda",
+      "short": "Anraku-ji Octagonal Pagoda",
+      "sub": "Octagonal three-storey tower with lower pent roof",
+      "era": "Late Kamakura · Around the 1290s",
+      "yearLabel": "c. 1290s",
+      "yearNote": "The Agency for Cultural Affairs dates the tower by style to late Kamakura, 1275–1332. Dendrochronology by the Nara National Research Institute for Cultural Properties in 2004 dated a first-floor curved beam's timber to felling in 1289, suggesting construction around the 1290s. It became an Important Cultural Property in 1898 and a National Treasure on 29 March 1952. The timeline point 1290 is approximate.",
+      "lede": "On the hillside behind Anraku-ji at Bessho Onsen stands Japan's only surviving octagonal-plan pagoda. A pent roof around the first storey creates four visible roof tiers. Radial rafters and dense three-step bracket sets with projecting tail rafters express full Zen-style construction. Timber felled in 1289 points to a late-13th-century date.",
+      "facts": [
+        "The octagonal three-storey pagoda appears to have four roof tiers because of its first-storey pent roof. Wood-shingled and 18.75 metres high, it is Japan's only surviving octagonal-plan pagoda. National Treasure designation followed in 1952.",
+        "The Agency dates it to late Kamakura. A 2004 tree-ring investigation dated timber in a first-storey curved beam to felling in 1289, indicating construction around the 1290s.",
+        "Rinzai monk Shōkoku Isen effectively established Anraku-ji in mid-Kamakura, with strong links to Kenchō-ji. After decline in Muromachi, this tower was its only surviving early building. The temple joined the Sōtō school in the Tenshō era."
+      ],
+      "place": "Japan · Nagano · Ueda · Bessho Onsen",
+      "captions": [
+        "Anraku-ji Octagonal Three-storey Pagoda · Octagonal three-storey tower with lower pent roof",
+        "Late Kamakura · Around the 1290s"
+      ]
+    },
+    "jp_daizenji_hondo": {
+      "name": "Daizen-ji Main Hall",
+      "short": "Daizen-ji",
+      "sub": "Main hall (Yakushi Hall), front",
+      "era": "Established in 1286",
+      "yearNote": "The Agency for Cultural Affairs records late Kamakura, Kōan 9 (1286), based on inscriptions on the two rear corner columns. Its explanatory text gives 1285, but the era conversion is 1286. Other studies place roof framing in 1291 and completion around 1306. It became an Important Cultural Property in 1907 and a National Treasure, including its shrine cabinet, on 22 June 1955. Dismantling repairs restored the hall in 1954.",
+      "lede": "Daizen-ji's Yakushi Hall at Katsunuma bears an inscription dated 16 March 1286 on its rear corner columns. A major Kamakura-period example of Japanese-style architecture in eastern Japan, the five-by-five-bay hall has a cypress-bark hipped roof. Its front two bays form the outer worship space and rear three the inner sanctuary, preserving the esoteric Buddhist hall plan.",
+      "facts": [
+        "The five-by-five-bay, single-storey hall has a hipped cypress-bark roof. Lattice doors and diamond-pattern transoms strictly divide the front two-bay worship area from the rear three-bay sanctuary. It became a National Treasure in 1955.",
+        "The rear corner-column inscriptions provide the date 1286. Other studies suggest roof framing in 1291 and completion around 1306. Dismantling repairs in 1954 restored the earlier form.",
+        "Tradition attributes foundation in 718 to Gyōki, making it Kōshū's oldest temple. The Kamakura government levied a household building tax in Kai and Shinano to support rebuilding. A shrine cabinet is included in the designation."
+      ],
+      "yearLabel": "1286",
+      "place": "Japan · Yamanashi · Kōshū · Katsunuma",
+      "captions": [
+        "Daizen-ji Main Hall · Main hall (Yakushi Hall), front",
+        "Established in 1286"
+      ]
+    },
+    "jp_eihoji_kannondo": {
+      "name": "Eihō-ji Kannon Hall",
+      "short": "Eihō-ji",
+      "sub": "Zen-style hall with pent roof · Kannon Hall front",
+      "era": "Early Muromachi (Nanbokuchō) construction",
+      "yearLabel": "Mid-14th century",
+      "yearNote": "The Agency for Cultural Affairs dates the surviving hall to early Muromachi, 1333–1392. Musō's chronicle records a Kannon pavilion built in 1314, but stylistic evidence places the present building in Nanbokuchō. The timeline point 1350 is an approximate midpoint, not a documented year. It became an Important Cultural Property in 1901 and a National Treasure on 29 March 1952.",
+      "lede": "Musō Soseki founded Eihō-ji in 1314 beside the Toki River and a rocky hillside, a celebrated example of a medieval Zen monastery's scenic setting. The present Kannon Hall dates to Nanbokuchō: a three-bay square body and lower pent roof, with a deeply curving cypress-bark hip-and-gable roof. Its open front and brackets only above columns adapt Zen forms to the garden.",
+      "facts": [
+        "Three by three bays, the single-storey hall has a pent roof and a cypress-bark hip-and-gable roof. The Agency dates it to 1333–1392. National Treasure designation followed in 1952.",
+        "Musō's chronicle records a Kannon pavilion in 1314; the present hall is stylistically later. A low floor, boarded eaves and the absence of closely spaced bracket sets illustrate a Japanese adaptation of Zen architecture.",
+        "A worship wall and Zen-style altar occupy the rear centre, housing a seated Kannon in a rock recess. A flat painted ceiling covers the main body, curved beams span the pent roof and decorative struts frame the open front."
+      ],
+      "place": "Japan · Gifu · Tajimi",
+      "captions": [
+        "Eihō-ji Kannon Hall · Zen-style hall with pent roof · Kannon Hall front",
+        "Early Muromachi (Nanbokuchō) construction"
+      ]
+    },
+    "jp_zuiryuji_butsuden": {
+      "name": "Zuiryū-ji Buddha Hall",
+      "short": "Zuiryū-ji",
+      "sub": "Lead-tiled Zen Buddha hall front",
+      "era": "Completed in 1659",
+      "yearNote": "The Agency for Cultural Affairs dates the hall to early Edo, 1659, supported by a ridge inscription. Domain carpenter Yamagami Zen'emon built it for the memorial temple of Maeda Toshinaga, second lord of Kaga. It became an Important Cultural Property in 1909 and a National Treasure together with the Dharma hall and main gate on 3 December 1997.",
+      "lede": "Zuiryū-ji in Takaoka is the memorial temple of Maeda Toshinaga, built by Kaga's master carpenter Yamagami Zen'emon. Its Buddha hall, completed in 1659, has a three-bay square body and a lower pent roof. Lead tiles give the hip-and-gable roof a silver-grey sheen above dark timber; corridors join the gate and Dharma hall in a notably complete Sōtō monastic layout.",
+      "facts": [
+        "Three by three bays, the single-storey hall has a pent roof and a hip-and-gable roof clad in lead tiles. A ridge inscription records completion in 1659. It became a National Treasure with the Dharma hall and gate in 1997.",
+        "The temple commemorates Maeda Toshinaga. Its Dharma hall dates to 1655. Fire in 1746 destroyed the gate and the front portions of the corridors, which were rebuilt to their earlier form in late Edo.",
+        "Zuiryū-ji became Toyama Prefecture's first National Treasure and remained its only one until Shōkō-ji's designation in 2022. This view covers the Buddha hall front and the ends of the adjoining corridors."
+      ],
+      "yearLabel": "1659",
+      "place": "Japan · Toyama · Takaoka",
+      "captions": [
+        "Zuiryū-ji Buddha Hall · Lead-tiled Zen Buddha hall front",
+        "Completed in 1659"
+      ]
+    },
+    "jp_matsumoto_tenshu": {
+      "name": "Matsumoto Castle Keep",
+      "short": "Matsumoto Castle",
+      "sub": "Great keep and connected keep complex",
+      "era": "c. 1615 (Agency dating) · Alternatively 1594–1599",
+      "yearLabel": "c. 1615",
+      "yearNote": "The Agency for Cultural Affairs classifies the keep as Edo and dates it to around 1615. Its commentary, citing the National Treasure Dictionary, attributes construction to Ishikawa Yasunaga in 1594–1599, with Tatsumi and Tsukimi turrets added in 1624–1644. Matsumoto City's 2025 tree-ring study dated some great-keep column timber to felling in 1596. This entry follows the Agency's Edo classification and approximate 1615 timeline point, retaining the alternative. Listed under the old law in 1936, five buildings became National Treasures on 29 March 1952.",
+      "lede": "Matsumoto's great keep rises five roof tiers over six internal floors, alternating black timber boarding with white plaster above the inner moat. A connecting turret joins the smaller Inui keep; Tatsumi and Tsukimi turrets were added in the Kan'ei era. The five-building complex became a National Treasure in 1952. Official dating is around 1615, while the traditional account places construction in 1594–1599.",
+      "facts": [
+        "The tiled great keep has five roof tiers and six floors. It shares the designation with the Inui small keep, connecting turret, Tatsumi turret and Tsukimi turret: old-law listing in 1936, designation under the new law in 1952.",
+        "The Agency records early Edo, around 1615. The National Treasure Dictionary attributes construction to Ishikawa Yasunaga in 1594–1599; tree-ring dating in 2025 found column timber felled in 1596.",
+        "Black-painted overlapping boarding appears from the first tier to the top. Curved and triangular gables punctuate the roofs. Among the largest surviving flatland-castle keeps, it underwent dismantling repairs in 1950–1955."
+      ],
+      "place": "Japan · Nagano · Matsumoto",
+      "captions": [
+        "Matsumoto Castle Keep · Great keep and connected keep complex",
+        "c. 1615 (Agency dating) · Alternatively 1594–1599"
+      ]
+    },
+    "jp_inuyama_tenshu": {
+      "name": "Inuyama Castle Keep",
+      "short": "Inuyama Castle",
+      "sub": "Watchtower-style keep · three roof tiers and four floors",
+      "era": "Turret built in 1601 · lookout added around 1620",
+      "yearNote": "The Agency for Cultural Affairs dates the keep to 1601, in the Momoyama period. Dismantling repairs in 1961–1965 indicated a two-storey turret built by Ogasawara Yoshitsugu in 1601, with a lookout added by Naruse Masanari around 1620. Naruse Masatora later added curved gables. The surviving structure combines these stages. National Treasure designation followed on 29 March 1952.",
+      "lede": "On a hill above the south bank of the Kiso River, Inuyama Castle looks across to Mino. Its keep has three roof tiers, four floors and two basement levels. The lower turret dates to 1601; a lookout was added around 1620. Together with Matsumoto, Himeji, Hikone and Matsue, it is one of five surviving castle keeps designated National Treasures.",
+      "facts": [
+        "The keep has three roof tiers, four floors and two basement levels, with tiled single-storey turrets to the south and west. An open balcony surrounds the top lookout; curved gables accent the roof below.",
+        "Dismantling repairs in 1961–1965 revealed successive building phases: Ogasawara Yoshitsugu's turret of 1601, Naruse Masanari's lookout around 1620, and curved gables added later by Naruse Masatora.",
+        "The timber keep rises about 19 metres above a roughly five-metre rubble-stone base. A peripheral passage surrounds four rooms on the first floor, with a raised shoin, alcove, staggered shelves and chōdaigamae doorway."
+      ],
+      "yearLabel": "1601",
+      "place": "Japan · Aichi · Inuyama",
+      "captions": [
+        "Inuyama Castle Keep · Watchtower-style keep · three roof tiers and four floors",
+        "Turret built in 1601 · lookout added around 1620"
+      ]
+    },
+    "jp_izumo_honden": {
+      "name": "Izumo Taisha Main Sanctuary",
+      "short": "Izumo Taisha",
+      "sub": "Taisha-style sanctuary viewed from outside the sacred fence",
+      "era": "Rebuilt in 1744",
+      "yearNote": "The Agency for Cultural Affairs dates the present main sanctuary to 1744, in mid-Edo. Cypress-bark roof repairs in 2008–2013 formed part of the Heisei renewal. Ancient traditions of a much taller sanctuary do not date the surviving building. It became an Important Cultural Property in 1900 and a National Treasure on 29 March 1952.",
+      "lede": "The square, gable-entry sanctuary exemplifies taisha-zukuri, with crossed chigi at both ridge ends and three cylindrical katsuogi above its cypress-bark roof. Rebuilt in 1744, it rises about 24 metres. Visitors outside the sacred fence see mainly the upper structure. Medieval accounts describe a sanctuary twice this height, rather than the building that stands today.",
+      "facts": [
+        "The present sanctuary was rebuilt in 1744. Its height of eight jō is about 24 metres. Roof restoration ran from 2008 to 2013; National Treasure designation dates to 1952.",
+        "The Nihon Shoki and Kojiki preserve accounts of the shrine's origins. Rebuilding recurred through history without the fixed interval used at Ise. Medieval tradition describes a height of sixteen jō, twice the present sanctuary's.",
+        "The view shows the upper main sanctuary behind a roofed timber fence, including its chigi and three katsuogi. The elevated floor, entrance stairs and tower gate are concealed from this position."
+      ],
+      "yearLabel": "1744",
+      "place": "Japan · Shimane · Izumo",
+      "captions": [
+        "Izumo Taisha Main Sanctuary · Taisha-style sanctuary viewed from outside the sacred fence",
+        "Rebuilt in 1744"
+      ]
+    },
+    "jp_sanbutsuji_nageiredo": {
+      "name": "Sanbutsu-ji Nageire Hall",
+      "short": "Nageire Hall",
+      "sub": "Cliff-supported inner sanctuary",
+      "era": "Late Heian · timber felled in 1165",
+      "yearLabel": "Around 1165",
+      "yearNote": "The Agency for Cultural Affairs dates the hall to late Heian, 1086–1184; a repair in 1375 is documented. Tree-ring research by the Nara National Research Institute for Cultural Properties dated timber with surviving bark to felling in 1165. The timeline uses this as an approximate construction date, not a foundation inscription. National Treasure designation on 29 March 1952 includes the adjacent Aizen Hall.",
+      "lede": "Nageire Hall rests in a cliff recess on slender, exceptionally long posts. Legend says En no Gyōja threw it into place, giving the hall its name. This late-Heian sanctuary, originally dedicated to Zaō Gongen, is among San'in's oldest surviving buildings. A flowing gabled roof and subsidiary side roofs form a delicate silhouette beside the smaller Aizen Hall.",
+      "facts": [
+        "The single-storey hall is two by one bays, with a cypress-bark nagare roof and subsidiary roofs at the sides. Long corner posts carry it against the cliff. The hall and adjacent Aizen Hall became National Treasures in 1952.",
+        "The Agency's late-Heian range is 1086–1184, with a repair recorded in 1375. Tree-ring analysis dates a timber's felling to 1165. The sanctuary stands at roughly 470 metres above sea level.",
+        "The composition includes the smaller Aizen Hall beside the main sanctuary, cliff recess and slender supporting posts. These elements reveal how both buildings occupy the same precipitous setting."
+      ],
+      "place": "Japan · Tottori · Misasa · Mount Mitoku",
+      "captions": [
+        "Sanbutsu-ji Nageire Hall · Cliff-supported inner sanctuary",
+        "Late Heian · timber felled in 1165"
+      ]
+    },
+    "jp_fukiji_odo": {
+      "name": "Fuki-ji Great Hall",
+      "short": "Fuki-ji",
+      "sub": "Pyramidal-roof Amida hall · front view",
+      "era": "Late Heian",
+      "yearLabel": "12th century",
+      "yearNote": "The Agency for Cultural Affairs dates the surviving hall to late Heian, 1086–1184. A tradition of foundation by Ninmon in 718 concerns the temple, not the present building. An inscription of 1353 on an old ridge member suggests an earlier hipped roof. The timeline point 1150 is approximate. It became an Important Cultural Property in 1907 and a National Treasure on 22 November 1952.",
+      "lede": "On the Kunisaki Peninsula, Fuki-ji Great Hall is Kyushu's oldest surviving timber building. This late-Heian Amida hall has a three-by-four-bay plan, chamfered square columns and simple boat-shaped brackets beneath a pyramidal tiled roof. Inside, four round columns frame an altar and coffered ceiling, while Buddhist figures and Pure Land imagery cover the walls.",
+      "facts": [
+        "Three by four bays and one storey, the hall has a pyramidal roof with gyōki-buki tiles, chamfered square columns and boat-shaped brackets. It became a National Treasure in 1952.",
+        "Tradition attributes the temple's foundation to Ninmon in 718, but the surviving hall dates to late Heian. A 1353 inscription on an old ridge member indicates a former hipped roof rather than today's pyramidal form.",
+        "Four round columns enclose the central altar beneath a coffered ceiling. Surviving paintings show Buddhas, bodhisattvas, jewel and arabesque motifs, and Pure Land scenes."
+      ],
+      "place": "Japan · Oita · Bungotakada",
+      "captions": [
+        "Fuki-ji Great Hall · Pyramidal-roof Amida hall · front view",
+        "Late Heian"
+      ]
+    },
+    "jp_jodoji_jododo": {
+      "name": "Jōdo-ji Jōdo Hall",
+      "short": "Jōdo Hall",
+      "sub": "Daibutsu-style Amida hall · east front",
+      "era": "Built in 1192",
+      "yearNote": "The Agency for Cultural Affairs dates the hall to 1192, early Kamakura. Temple accounts distinguish roofing in 1194 and dedication in 1197. Chōgen established it as Tōdai-ji's Harima branch using the Daibutsu architectural style. It became an Important Cultural Property in 1901 and a National Treasure on 29 March 1952.",
+      "lede": "Chōgen's Jōdo Hall is a three-bay square Amida hall, with bays roughly six metres wide. Inserted brackets, free-ended tail rafters, round tie beams and bottle-shaped struts express the Daibutsu style. Straight eaves and an interior without a ceiling expose the roof structure. Kaikei's monumental Amida triad is illuminated by sunset through shutters on the west side.",
+      "facts": [
+        "Three by three bays and one storey, the hall has a pyramidal tiled roof and exceptionally wide bays. Front doors flank columns, with panelled doors at the centre. It became a National Treasure in 1952.",
+        "The Agency dates construction to 1192; temple accounts record roofing in 1194 and dedication in 1197. Chōgen introduced the Daibutsu style here while rebuilding Tōdai-ji and organizing its regional estates.",
+        "Kaikei's Amida triad comprises a central figure about 5.3 metres high and attendants about 3.7 metres. Doors span the east front; west-side shutters admit sunset light but are concealed in this front view."
+      ],
+      "yearLabel": "1192",
+      "place": "Japan · Hyōgo Prefecture · Ono",
+      "captions": [
+        "Jōdo-ji Jōdo Hall · Daibutsu-style Amida hall · east front",
+        "Built in 1192"
       ]
     }
   },

@@ -1,0 +1,97 @@
+{
+  "id": "xz_shalu",
+  "name": "夏鲁寺",
+  "subject": "夏鲁寺 · 措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xz_shalu.png",
+    "assets/references/xz_shalu-photo.jpg",
+    "assets/references/xz_shalu-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 夏鲁寺 · 措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶\nMATERIAL OBSERVATIONS: 底层墙面青灰色抹灰（略带蓝灰），门帘黑棕条纹、布幔红白蓝黄流苏；二层殿墙明黄色，饰蓝绿铃铎璎珞纹；屋面墨绿色琉璃瓦，檐椽蓝色、斗栱蓝绿、额枋暗红；宝瓶刹与法轮鎏金；回廊柱红色；院地灰色石板。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "底层墙面青灰色抹灰（略带蓝灰），门帘黑棕条纹、布幔红白蓝黄流苏；二层殿墙明黄色，饰蓝绿铃铎璎珞纹；屋面墨绿色琉璃瓦，檐椽蓝色、斗栱蓝绿、额枋暗红；宝瓶刹与法轮鎏金；回廊柱红色；院地灰色石板。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/xz_shalu-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shalu-08-Kloster-Vorhof-2014-gje.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Shalu-08-Kloster-Vorhof-2014-gje.jpg",
+      "author": "Gerd Eichmann",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2014-05-25 07:24:16",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/xz_shalu-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Shalu-10-Kloster-Daecher_chinesisch-2014-gje.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Shalu-10-Kloster-Daecher_chinesisch-2014-gje.jpg",
+      "author": "Gerd Eichmann",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "role": "二层琉璃屋顶近景，核对瓦当、兽吻、斗栱与鎏金宝瓶刹"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：夏鲁寺（1087年创寺；1329年地震、1333年重建；主殿上下49间房、占地1500平方米、二层四座汉式殿堂、绿琉璃瓦重檐歇山顶；布顿1290—1364；1988年第三批国保 3-118）。条目转引中国西藏网《夏鲁寺》",
+      "url": "https://zh.wikipedia.org/wiki/夏鲁寺"
+    },
+    {
+      "title": "国务院公报1988年第4号：第三批全国重点文物保护单位名单（编号118 分类号66 夏鲁寺 元至清 西藏自治区日喀则市）",
+      "url": "https://www.gov.cn/gongbao/shuju/1988/gwyb198804.pdf"
+    }
+  ],
+  "original_research": "assets/research/xz_shalu.json",
+  "output": "assets/colored/xz_shalu.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "735ecf64ed73ef55776b60ceb601451e797e51dd640c9015c6c2fa771c5b4f4d",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 夏鲁寺 · 措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶\nMATERIAL OBSERVATIONS: 底层墙面青灰色抹灰（略带蓝灰），门帘黑棕条纹、布幔红白蓝黄流苏；二层殿墙明黄色，饰蓝绿铃铎璎珞纹；屋面墨绿色琉璃瓦，檐椽蓝色、斗栱蓝绿、额枋暗红；宝瓶刹与法轮鎏金；回廊柱红色；院地灰色石板。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/xz_shalu.png",
+        "assets/references/xz_shalu-photo.jpg",
+        "assets/references/xz_shalu-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4b03742e-9d80-4ba5-aa6f-175bc391811f.png",
+      "retained_file": "assets/colored/xz_shalu.png",
+      "received_at": "2026-10-11T12:20:29.811Z",
+      "sourceSha256": "735ecf64ed73ef55776b60ceb601451e797e51dd640c9015c6c2fa771c5b4f4d",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4b03742e-9d80-4ba5-aa6f-175bc391811f.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:20:29.811Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "735ecf64ed73ef55776b60ceb601451e797e51dd640c9015c6c2fa771c5b4f4d",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "bc8ece345ff7a8dedbbe2b57b612b4053e2e1fbeaa15a9d2c15f79a3068a4b99",
+    "avifSha256": "a50745d85d885e2aee9cf4955671c276a61f86df8d6ca9779ac6143e8c1a0879"
+  }
+}
