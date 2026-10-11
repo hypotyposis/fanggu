@@ -1,7 +1,7 @@
 {
   "id": "jp_nezu_romon",
   "subject": "三间一户楼门",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Nezu-jinja_Romon_3.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Nezu-jinja_Romon_3.jpg/1280px-Nezu-jinja_Romon_3.jpg",
   "author": "Zairon",
@@ -42,7 +42,7 @@
     }
   ],
   "structure_checkpoints": "Nezu Shrine Romon in Tokyo, built 1706. FRONT VIEW of the full two-storey gate with ONLY ONE main tiled roof, NO lower tier roof. Three bays across ground floor: central open passage and two enclosed guardian niches; upper balcony railing and painted brackets. Match the photo exactly.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -64,5 +64,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-2c5a81b5-98d0-4c37-a30c-30ecfccb7d96"
+  "generation_call_id": "exec-2c5a81b5-98d0-4c37-a30c-30ecfccb7d96",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "90d948a1f5736259ef72974e262167ae2632586dfc194f79d0d516bed0be1b34",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "3429963ace353bf8ed92ed83b23fd929c362395e8b508202d5f47f3f3dd9ad71"
+  }
 }

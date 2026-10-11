@@ -1,7 +1,7 @@
 {
   "id": "jp_asakusa_jinja",
   "subject": "拜殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Asakusa_shrine_2012.JPG",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Asakusa_shrine_2012.JPG/1280px-Asakusa_shrine_2012.JPG",
   "author": "Kakidai",
@@ -42,7 +42,7 @@
     }
   ],
   "structure_checkpoints": "Asakusa Jinja Haiden in Tokyo, built 1649. Draw ONLY the low broad central worship hall in the photo, NOT the taller modern building on the right or small shrine on the left. Straight front view, a single tiled gabled roof, five facade bays, three central door bays flanked by lattice windows, six front posts, restrained decorative frieze and shallow stone steps. Omit lions, noticeboards, people and movable offering boxes.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -64,5 +64,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-5f4cdaf7-1fbd-47d6-8006-44a450797c6e"
+  "generation_call_id": "exec-5f4cdaf7-1fbd-47d6-8006-44a450797c6e",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "22d85b14d4061a510520ae3ae180b7f8e43fa944ee375b5cd9df5141dd6d51d6",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1b753550b7c5aab2259bae62fc0c4dfd3b8f84ad2458e76e093ecd53fc32680e"
+  }
 }

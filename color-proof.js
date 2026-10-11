@@ -10,9 +10,10 @@
   let mode = ['color', 'line', 'pair'].includes(params.get('mode')) ? params.get('mode') : 'color', page = 0;
   const PAGE_SIZE = 12;
   const url = id => `color-proof.html?${new URLSearchParams({ ...(id ? { id } : {}), ...(scopeIds.size ? { ids: [...scopeIds].join(',') } : {}), mode, bg: background, ref: reference })}`;
-  const reviewLabel = plate => plate.visualReview === 'approved_user' ? '已通过人工审阅' : '待人工审阅';
-  const pending = sites.filter(site => COLORED_PLATES[site.id].visualReview !== 'approved_user').length;
-  $('#color-review-summary').textContent = pending ? `当前有 ${pending} 张待人工审阅。` : '当前全部透明图版已通过人工审阅，已用于图鉴与详情页。';
+  const reviewLabel = plate => ({ approved_user: '已通过人工审阅', approved_default: '按默认策略接入（未人工审阅）' })[plate.visualReview] || '待默认通过';
+  const pending = sites.filter(site => !['approved_user', 'approved_default'].includes(COLORED_PLATES[site.id].visualReview)).length;
+  const defaultApproved = sites.filter(site => COLORED_PLATES[site.id].visualReview === 'approved_default').length;
+  $('#color-review-summary').textContent = pending ? `当前有 ${pending} 张待默认通过。` : defaultApproved ? `全部已接入，其中 ${defaultApproved} 张按默认策略接入，未人工审阅。` : '当前全部透明图版已通过人工审阅，已用于图鉴与详情页。';
   for (const [key, dynasty] of Object.entries(DYN)) {
     if (!sites.some(site => site.dyn === key)) continue;
     const option = el('option', '', dynasty.name); option.value = key; $('#color-period').append(option);
@@ -21,7 +22,7 @@
     const query = $('#color-search').value.trim().toLowerCase(), period = $('#color-period').value;
     const selected = sites.filter(site => (period === 'all' || period === site.dyn) && (!query || [site.id, site.name, site.sub, site.place].join(' ').toLowerCase().includes(query)));
     const pages = Math.max(1, Math.ceil(selected.length / PAGE_SIZE)); page = Math.min(page, pages - 1);
-    $('#color-count').textContent = `${sites.length} / ${SITES.length} 处透明设色图版 · 当前 ${selected.length} 处 · ${pending ? pending + ' 张待审' : '全部已通过'}`;
+    $('#color-count').textContent = `${sites.length} / ${SITES.length} 处透明设色图版 · 当前 ${selected.length} 处 · ${pending ? pending + ' 张待默认通过' : '全部已通过'}`;
     $('#color-empty').hidden = !!selected.length;
     $('#color-page').textContent = `${page + 1} / ${pages}`;
     $('#color-prev').disabled = page === 0; $('#color-next').disabled = page === pages - 1;

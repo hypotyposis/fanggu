@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-c6571199-721d-4ca1-90c9-323345fe5c1f.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,22 @@
     "sourceSha256": "16c612d49075087c8d4d4d8c0b29ce89e8efca78843bf1c26eaff9abc14146e9",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "16c612d49075087c8d4d4d8c0b29ce89e8efca78843bf1c26eaff9abc14146e9",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "09a73da92601a4ef047a6397a4cac2797588c8bfd7ac03b5f13071bfdd3a7dfd"
+  },
+  "historical_sources": [
+    {
+      "title": "留园",
+      "url": "https://zh.wikipedia.org/wiki/%E7%95%99%E5%9B%AD",
+      "publisher": "维基百科（中文），二手来源",
+      "note": "1593年徐泰时东园、1798年刘恕寒碧庄、1873年盛康购园、1876年落成改名；冠云峰花石纲遗物高约6.5米江南最大湖石、留园三峰、浣云沼、冠云楼；曲廊700余米、碑刻300余方；1961年国保、1997年世界遗产",
+      "added": "content-rewrite-20261005"
+    }
+  ]
 }

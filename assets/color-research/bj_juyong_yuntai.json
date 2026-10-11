@@ -177,7 +177,19 @@
       "浅灰米石材与雕刻暗部保留实体；主通道与实际栏板镂空在暗底均呈透空。",
       "原件、暗底透明副本均目检，白底合格、主体完整无文字，内部RGB保持。"
     ],
-    "limitations": "浮雕与砌缝简化，非测绘或色彩校准；侧边留白较少但未裁切。"
+    "limitations": "浮雕与砌缝简化，非测绘或色彩校准；侧边留白较少但未裁切。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 11:34:52 UTC"
+  "completed_at": "2026-09-16 11:34:52 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "0f5c98b51165c9c01b782ce7a596e0d1566a82cac21b1f38cfb86d19b25db33e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "498b46f5f7239fc615e084e57a918a54b03fbd8b82a8243691e23a8bea535d8e",
+    "avifSha256": "afa42aacd14c9f2bb8517775ed1bb83f5983300ecc6d76d54b8fd1fba404e929"
+  }
 }

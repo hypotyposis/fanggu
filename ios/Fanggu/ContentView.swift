@@ -5,6 +5,7 @@ struct ContentView: View {
     @EnvironmentObject private var nearby: LocationCenter
     @StateObject private var undoPresentation = UndoPresentation()
     @State private var selectedTab = 0
+    @State private var launchTargetApplied = false
     @State private var keyboardVisible = false
     @State private var explorePath = NavigationPath()
 
@@ -20,6 +21,7 @@ struct ContentView: View {
         .fangguAppearance()
         .environmentObject(undoPresentation)
         .tint(Palette.gold)
+        .onAppear(perform: openLaunchTarget)
         .overlay(alignment: .top) {
             if let error = library.error {
                 Text(error)
@@ -81,6 +83,14 @@ struct ContentView: View {
         }
     }
 
+    /// UI tests may ask for a detail page directly; the catalog stays underneath, so 返回 still works.
+    private func openLaunchTarget() {
+        guard !launchTargetApplied else { return }
+        launchTargetApplied = true
+        guard let id = UITestLaunch.siteID, let site = library.monuments.first(where: { $0.id == id }) else { return }
+        explorePath = NavigationPath([site])
+    }
+
     @ViewBuilder private func tabRoot<Content: View>(_ content: Content) -> some View {
         let root = content.safeAreaInset(edge: .bottom, spacing: 0) { UndoFeedback() }
         if #available(iOS 26.0, *) {
@@ -104,10 +114,10 @@ private struct FrostedTabBar: View {
     @Environment(\.colorScheme) private var colorScheme
 
     private let items: [(title: String, icon: String)] = [
-        ("图鉴", "square.grid.2x2"),
-        ("足迹", "map"),
-        ("年表", "circle.grid.cross"),
-        ("我的", "seal")
+        (String(localized: "图鉴"), "square.grid.2x2"),
+        (String(localized: "足迹"), "map"),
+        (String(localized: "年表"), "circle.grid.cross"),
+        (String(localized: "我的"), "seal")
     ]
 
     var body: some View {
@@ -124,6 +134,7 @@ private struct FrostedTabBar: View {
                             .frame(height: 24)
                         Text(items[index].title)
                             .font(FangguFont.serif(11, weight: .medium))
+                            .lineLimit(1).minimumScaleFactor(0.7)
                     }
                     .foregroundStyle(selection == index ? Palette.gold : Palette.paper2)
                     .frame(maxWidth: .infinity)
@@ -144,8 +155,11 @@ private struct FrostedTabBar: View {
                 .buttonStyle(.plain)
                 .accessibilityLabel(items[index].title)
                 .accessibilityAddTraits(selection == index ? .isSelected : [])
+                // Like the system tab bar: labels stop growing, and a long press shows them enlarged.
+                .accessibilityShowsLargeContentViewer { Label(items[index].title, systemImage: items[index].icon) }
             }
         }
+        .dynamicTypeSize(...DynamicTypeSize.xxLarge)
         .animation(reduceMotion ? nil : .spring(response: 0.34, dampingFraction: 0.82), value: selection)
         .padding(6)
         .background {
@@ -186,28 +200,28 @@ struct ExploreView: View {
     @State private var showingFilters = false
     @State private var showingAbout = false
 
-    private let regionNames = CatalogSearch.regionNames
-    private let countryNames = CatalogSearch.countryNames
-
+    private var countryOptions: [String: String] {
+        library.monuments.reduce(into: ["all": String(localized: "全部国家")]) { result, site in result[site.country] = site.countryName }
+    }
     private var dynastyOptions: [String: String] {
         library.monuments.filter { country == "all" || $0.country == country }
-            .reduce(into: ["all": "全部时代"]) { result, site in result[site.dynasty] = site.dynastyName }
+            .reduce(into: ["all": String(localized: "全部时代")]) { result, site in result[site.dynasty] = site.dynastyName }
     }
     private var typeOptions: [String: String] {
-        library.monuments.reduce(into: ["all": "全部类型"]) { result, site in
+        library.monuments.reduce(into: ["all": String(localized: "全部类型")]) { result, site in
             for index in site.types.indices { result[site.types[index]] = site.typeNames[index] }
         }
     }
     private var regionOptions: [String: String] {
         library.monuments.filter { country == "all" || $0.country == country }
-            .reduce(into: ["all": "全部地区"]) { result, site in
-                let name = regionNames[site.region] ?? site.region
-                result[site.region] = country == "all" ? "\(countryNames[site.country] ?? site.country) · \(name)" : name
+            .reduce(into: ["all": String(localized: "全部地区")]) { result, site in
+                result[site.region] = country == "all" ? "\(site.countryName) · \(site.regionName)" : site.regionName
             }
     }
     private var provinceOptions: [String: String] {
-        library.monuments.filter { (country == "all" || $0.country == country) && (region == "all" || $0.region == region) }
-            .reduce(into: ["all": country == "JP" ? "全部都道府县" : country == "CN" ? "全部省份" : "全部行政区"]) { result, site in result[site.province] = site.province }
+        let all = country == "JP" ? String(localized: "全部都道府县") : country == "CN" ? String(localized: "全部省份") : String(localized: "全部行政区")
+        return library.monuments.filter { (country == "all" || $0.country == country) && (region == "all" || $0.region == region) }
+            .reduce(into: ["all": all]) { result, site in result[site.province] = site.provinceName }
     }
     private var statusCounts: [String: Int] {
         let records = library.monuments.map { library.record(for: $0).status }
@@ -225,11 +239,11 @@ struct ExploreView: View {
     }
     private var sortTitle: String {
         switch sortOrder {
-        case "newest": "新到旧"
-        case "name": "名称"
-        case "oldest": "旧到新"
-        case "distance": "按距离"
-        default: "心愿优先"
+        case "newest": String(localized: "新到旧")
+        case "name": String(localized: "名称")
+        case "oldest": String(localized: "旧到新")
+        case "distance": String(localized: "按距离")
+        default: String(localized: "心愿优先")
         }
     }
     private var results: [Monument] {
@@ -278,6 +292,7 @@ struct ExploreView: View {
                     }
                     .buttonStyle(.plain)
                     .accessibilityLabel("关于访古")
+                    .accessibilityIdentifier("about-fanggu")
                 }
                 .padding(.top, 28)
                 .padding(.bottom, 20)
@@ -366,7 +381,8 @@ struct ExploreView: View {
                 ScrollView { hero.padding(.horizontal, 24) }
                     .background(Palette.ink.ignoresSafeArea())
                     .navigationTitle("关于访古")
-                    .toolbar { Button("关闭") { showingAbout = false } }
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar { Button("关闭") { showingAbout = false }.accessibilityIdentifier("about-close") }
             }
             .fangguAppearance()
         }
@@ -396,13 +412,13 @@ struct ExploreView: View {
     }
 
     private var emptyTitle: String {
-        guard nearbyOnly else { return "暂无符合条件的古迹" }
-        return location.currentLocation == nil ? "还没有位置，无法筛选附近" : "30 公里内没有收录的古迹"
+        guard nearbyOnly else { return String(localized: "暂无符合条件的古迹") }
+        return location.currentLocation == nil ? String(localized: "还没有位置，无法筛选附近") : String(localized: "30 公里内没有收录的古迹")
     }
 
     private var emptySubtitle: String {
-        guard nearbyOnly else { return "试试其他时代、地区或搜索词。" }
-        return location.currentLocation == nil ? "原因见上方说明；关闭附近筛选可继续浏览全部。" : "换个地方再看，或者关闭附近筛选浏览全部。"
+        guard nearbyOnly else { return String(localized: "试试其他时代、地区或搜索词。") }
+        return location.currentLocation == nil ? String(localized: "原因见上方说明；关闭附近筛选可继续浏览全部。") : String(localized: "换个地方再看，或者关闭附近筛选浏览全部。")
     }
 
     private func distanceLabel(_ site: Monument) -> String? {
@@ -420,7 +436,7 @@ struct ExploreView: View {
                 VStack(alignment: .leading, spacing: 14) {
                     Text("按地域、时代和建筑类型缩小范围。")
                         .font(FangguFont.serif(14)).foregroundStyle(Palette.paper2)
-                    FilterMenu(title: "国家", value: $country, options: countryNames.merging(["all": "全部国家"]) { current, _ in current })
+                    FilterMenu(title: "国家", value: $country, options: countryOptions)
                     FilterMenu(title: "时代", value: $dynasty, options: dynastyOptions)
                     FilterMenu(title: "地区", value: $region, options: regionOptions)
                     FilterMenu(title: "省份", value: $province, options: provinceOptions)
@@ -432,7 +448,8 @@ struct ExploreView: View {
             }
             .background(Palette.ink.ignoresSafeArea())
             .navigationTitle("筛选古迹")
-            .toolbar { Button("完成") { showingFilters = false } }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { Button("完成") { showingFilters = false }.accessibilityIdentifier("filters-done") }
         }
         .fangguAppearance()
         .presentationDetents([.large])
@@ -474,6 +491,7 @@ struct ExploreView: View {
             Button("名称") { sortOrder = "name" }
         } label: { Label(sortTitle, systemImage: "arrow.up.arrow.down") }
             .buttonStyle(FangguOutlineButton())
+            .accessibilityIdentifier("catalog-sort")
     }
 
     /// Quick filter to the 30 km around the current position; the result count shows the hits.
@@ -492,9 +510,14 @@ struct ExploreView: View {
 
     private var filterButton: some View {
         Button { showingFilters = true } label: {
-            Label(activeFilterCount == 0 ? "筛选" : "筛选 \(activeFilterCount)", systemImage: "line.3.horizontal.decrease")
+            if activeFilterCount == 0 {
+                Label("筛选", systemImage: "line.3.horizontal.decrease")
+            } else {
+                Label("筛选 \(activeFilterCount)", systemImage: "line.3.horizontal.decrease")
+            }
         }
         .buttonStyle(FangguOutlineButton())
+        .accessibilityIdentifier("catalog-filter")
     }
 
     private var displayButton: some View {
@@ -502,6 +525,7 @@ struct ExploreView: View {
             Label(showCards ? "列表" : "大图", systemImage: showCards ? "list.bullet" : "rectangle.stack")
         }
         .buttonStyle(FangguOutlineButton())
+        .accessibilityIdentifier("catalog-display")
     }
 
     private var hero: some View {
@@ -517,7 +541,7 @@ struct ExploreView: View {
                 Spacer()
                 FangguSeal(size: 58)
             }
-            Text("访 古")
+            Text(verbatim: "访 古")
                 .font(FangguFont.brush(94))
                 .tracking(5)
                 .foregroundStyle(Palette.paper)
@@ -571,7 +595,8 @@ struct ExploreView: View {
     }
 
     private var statusOptions: [(String, String)] {
-        [("all", "全部"), ("wishlist", "心愿单"), ("visited", "已到访"), ("unvisited", "未标记")]
+        [("all", String(localized: "全部")), ("wishlist", VisitStatus.wishlist.title),
+         ("visited", VisitStatus.visited.title), ("unvisited", VisitStatus.unvisited.title)]
     }
 
     private func statusButton(_ key: String, _ title: String) -> some View {
@@ -586,7 +611,7 @@ struct ExploreView: View {
                     .font(FangguFont.serif(12))
                     .lineLimit(dynamicTypeSize.isAccessibilitySize ? 2 : 1)
                     .minimumScaleFactor(0.8)
-                Text("\(statusCounts[key] ?? 0)").font(FangguFont.mono(11))
+                Text(verbatim: "\(statusCounts[key] ?? 0)").font(FangguFont.mono(11))
                 Rectangle().fill(status == key ? Palette.gold : .clear).frame(height: 1)
             }
             .foregroundStyle(status == key ? Palette.gold : Palette.paper2)
@@ -604,7 +629,8 @@ struct ExploreView: View {
 }
 
 private struct FilterMenu: View {
-    let title: String
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    let title: LocalizedStringKey
     @Binding var value: String
     let options: [String: String]
 
@@ -621,8 +647,9 @@ private struct FilterMenu: View {
                     .font(FangguFont.mono(10))
                     .foregroundStyle(Palette.paper3)
                 HStack(spacing: 3) {
-                    Text(options[value] ?? "全部")
-                        .lineLimit(1)
+                    Text(options[value] ?? String(localized: "全部"))
+                        .lineLimit(dynamicTypeSize.isAccessibilitySize ? 3 : 1)
+                        .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.8)
                     Spacer(minLength: 2)
                     Image(systemName: "chevron.down").font(.system(size: 9))
@@ -679,7 +706,8 @@ struct ArtworkView: View {
                     .opacity(visited ? 1 : progress)
             }
             if visited {
-                Text("亲\n见")
+                // A seal impression, like the brand seal, keeps its Chinese characters.
+                Text(verbatim: "亲\n见")
                     .font(FangguFont.brush(19))
                     .lineSpacing(-3)
                     .foregroundStyle(Palette.red)
@@ -693,12 +721,13 @@ struct ArtworkView: View {
         }
         .animation(reduceMotion ? nil : .spring(response: 0.32, dampingFraction: 0.78), value: visited)
         .frame(height: height)
-        .accessibilityLabel("\(site.name)\(visited ? "设色图" : "线稿")")
+        .accessibilityLabel(visited ? Text("\(site.name)设色图") : Text("\(site.name)线稿"))
     }
 }
 
 struct MonumentCard: View {
     @EnvironmentObject private var library: LibraryStore
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     let site: Monument
     var distance: String? = nil
     var here = false
@@ -716,13 +745,23 @@ struct MonumentCard: View {
                     ArtworkView(site: site, visited: record.status == .visited,
                                 height: 240, reveal: reveal)
                     VStack(alignment: .leading, spacing: 9) {
-                        HStack(spacing: 8) {
-                            Text(record.status.title)
-                                .foregroundStyle(record.status.textColor)
-                            Text(site.dynastyName)
-                                .foregroundStyle(site.accent)
-                            if !site.displayYearLabel.isEmpty {
-                                Text(site.displayYearLabel).foregroundStyle(Palette.paper3)
+                        // Long translated dates move to their own line instead of squeezing the row.
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 8) {
+                                Text(record.status.title).foregroundStyle(record.status.textColor).fixedSize()
+                                Text(site.dynastyName).foregroundStyle(site.accent).fixedSize()
+                                if !site.displayYearLabel.isEmpty {
+                                    Text(site.displayYearLabel).foregroundStyle(Palette.paper3).fixedSize()
+                                }
+                            }
+                            VStack(alignment: .leading, spacing: 4) {
+                                HStack(spacing: 8) {
+                                    Text(record.status.title).foregroundStyle(record.status.textColor)
+                                    Text(site.dynastyName).foregroundStyle(site.accent)
+                                }
+                                if !site.displayYearLabel.isEmpty {
+                                    Text(site.displayYearLabel).foregroundStyle(Palette.paper3)
+                                }
                             }
                         }
                         .font(FangguFont.mono(11))
@@ -749,10 +788,10 @@ struct MonumentCard: View {
                                 ReviewScoreLabel(scores: library.review(for: site).dimensions, size: 20)
                             }
                         }
-                        Text("\(site.place)  ·  \(site.typeNames.joined(separator: " · "))")
+                        Text(verbatim: "\(site.place)  ·  \(site.typeNames.joined(separator: " · "))")
                             .font(FangguFont.serif(12))
                             .foregroundStyle(Palette.paper2)
-                            .lineLimit(2)
+                            .lineLimit(dynamicTypeSize.isAccessibilitySize ? 5 : 2)
                     }
                     .padding(17)
                 }
@@ -760,10 +799,10 @@ struct MonumentCard: View {
             .buttonStyle(.plain)
             .accessibilityIdentifier("catalog-site-\(site.id)")
             if !site.protection.isEmpty {
-                HStack(spacing: 8) {
+                FangguFittingRow {
                     ForEach(site.protection, id: \.self) { entry in
                         Text(entry.batchLabel)
-                            .font(FangguFont.mono(10))
+                            .font(FangguFont.mono(10)).fixedSize()
                             .foregroundStyle(Palette.gold)
                             .padding(.horizontal, 8)
                             .padding(.vertical, 4)
@@ -783,10 +822,12 @@ struct MonumentCard: View {
                 VisitActions(site: site, editingVisit: $editingVisit)
             }
             .padding(.horizontal, 17).padding(.bottom, 12)
-            HStack(spacing: 10) {
+            let footer = dynamicTypeSize.isAccessibilitySize
+                ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10)) : AnyLayout(HStackLayout(spacing: 10))
+            footer {
                 Button("写短评 / 打分") { editingReview = true }
                     .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                Spacer(minLength: 0)
+                if !dynamicTypeSize.isAccessibilitySize { Spacer(minLength: 0) }
                 NavigationLink(value: site) {
                     Text("细读 ↗")
                         .font(FangguFont.serif(12))

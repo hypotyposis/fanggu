@@ -66,7 +66,19 @@
       "无文字、外景或投影；白底原件与暗底透明副本均已目检。",
       "脚本验证近白边缘、真实透明与可见实体，内部RGB保持原样。"
     ],
-    "limitations": "对照照片的艺术设色，非色彩校准或严格像素配准；金属华盖的细小镂空作简化表达。"
+    "limitations": "对照照片的艺术设色，非色彩校准或严格像素配准；金属华盖的细小镂空作简化表达。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 10:50:28 UTC"
+  "completed_at": "2026-09-16 10:50:28 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "1124f9fac326a05c669704fe311aec497e1b290e6420573ddc2b7dfa868794a8",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "53e203be9fb490f5a269e0908f10fe5cda6fada115dca544dcb2638ef8d28548",
+    "avifSha256": "eba62cad916716720cc1f2dbbcd811621e43e75acc927d9eed3a80c636ee7e4c"
+  }
 }

@@ -1,6 +1,6 @@
 {
   "id": "hn_zzchenghuang",
-  "subject": "郑州城隍庙 · 三间大殿正面",
+  "subject": "郑州城隍庙 · 山门正面",
   "source_page": "https://commons.wikimedia.org/wiki/File%3A20240921_City_God_Temple_of_Zhengzhou_08.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/20240921_City_God_Temple_of_Zhengzhou_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
   "author": "Windmemories",
@@ -11,15 +11,15 @@
     "assets/references/hn_zzchenghuang-photo.jpg"
   ],
   "source_note": "已查看实拍；限定为所列主体，去除周边遮挡与现代杂物；图稿为艺术转译。",
-  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郑州城隍庙 · 三间大殿正面. Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
+  "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郑州城隍庙 · 山门正面. Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
   "generated_file": "assets/generated/hn_zzchenghuang.png",
   "generation_tool": "built-in image_gen",
   "caption": [
-    "郑州城隍庙 · 三间大殿正面",
+    "郑州城隍庙 · 山门正面",
     "明清 · 现存主体"
   ],
-  "status": "needs_review",
-  "visual_review_status": "pending_user",
+  "status": "complete",
+  "visual_review_status": "approved_default",
   "sources": [
     {
       "id": "hn_zzchenghuang",
@@ -55,7 +55,7 @@
       "tool": "built-in image_gen",
       "started_at": "2026-10-01T19:12:29.957Z",
       "received_at": "2026-10-01T19:21:41.883155+00:00",
-      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郑州城隍庙 · 三间大殿正面. Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
+      "prompt": "Use case: style-transfer. Asset type: one fine-line architectural plate for the heritage collection Fanggu. Image 1 is LINE STYLE ONLY, the Vairocana contour master. Image 2 is SUBJECT GEOMETRY ONLY. Create a refined sparse BLACK INK drawing on perfectly flat opaque PURE WHITE #FFFFFF. Delicate thin organic contours, selective internal detail, generous white surfaces. No fills, grey shading, crosshatching, grain, paper texture, gradient, halo, shadow or checkerboard. Doors and windows are outlines. Center the specified subject with 8% breathing margins, preserve actual geometry and minimal perspective. Remove trees, foliage, tourists, wires, modern signs and surrounding clutter. No letters, calligraphy, labels, border or watermark. Draw only the specified scope, never invent missing architecture. SUBJECT: 郑州城隍庙 · 山门正面. Three-bay SINGLE-eaved hip-and-gable hall, four pale stone front columns, central entrance and two red timber side panels. Landscape 1536x1024.",
       "input_images": [
         "assets/references/longmen-style-black.png",
         "assets/references/hn_zzchenghuang-photo.jpg"
@@ -77,6 +77,34 @@
       "url": "https://wwj.zhengzhou.gov.cn/country/3175328.jhtml",
       "publisher": "郑州市文物局",
       "accessed_at": "2026-10-02"
+    },
+    {
+      "title": "郑州城隍庙",
+      "url": "https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E5%9F%8E%E9%9A%8D%E5%BA%99",
+      "publisher": "维基百科（二手来源，转引民国《郑县志》与河南一百度等）",
+      "note": "山门、戏楼、大殿、寝宫形制与尺寸，历次重修知州名，1963年省保，国保全称“郑州城隍庙（含文庙大成殿）”",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郑州城隍庙",
+      "url": "https://web.archive.org/web/20150402192343/http://www.henan100.com/life/2011/46862.shtml",
+      "publisher": "河南一百度（互联网档案馆存档）2011-03-21",
+      "note": "原名城隍灵佑侯庙、建于明初、民国《郑县志》所记弘治至光绪重修、张大猷《福赞》碑尺寸、乐楼高15米",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郑州城隍庙的来历 郑州片断之城隍庙里论古今",
+      "url": "https://web.archive.org/web/20150402090517/http://www.ycmhz.com.cn/culture/1211109.shtml",
+      "publisher": "宜春门户网（互联网档案馆存档）2011-06-22",
+      "note": "所祀城隍为纪信（引《资治通鉴》），弘治十四年重修",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郑州城隍庙",
+      "url": "https://web.archive.org/web/2024id_/https://baike.baidu.com/item/%E9%83%91%E5%B7%9E%E5%9F%8E%E9%9A%8D%E5%BA%99",
+      "publisher": "百度百科（互联网档案馆存档；二手来源）",
+      "note": "大门（山门）面阔3间进深2间悬山绿琉璃、三昂七踩斗拱、明间四根石柱、实榻大门三合、六级扇面踏跺；大殿单檐歇山、溜金斗拱",
+      "added": "content-rewrite-20261005"
     }
   ],
   "site_recommendation": {
@@ -105,8 +133,16 @@
       "现存建筑历经明清营建修缮，单体确年未详；年表为约略定位。"
     ],
     "caption": [
-      "郑州城隍庙 · 三间大殿正面",
+      "郑州城隍庙 · 山门正面",
       "明清 · 现存主体"
     ]
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "ae610b10577c949b3f6a13818b7b6c40a48757bdb48b939e92053b7c54642a05",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "cbcab4a06387dbdb07cd06de10d71047fd6bcbd56c9fa224d4fa679af9b05f71"
   }
 }

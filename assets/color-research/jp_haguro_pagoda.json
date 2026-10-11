@@ -1,0 +1,98 @@
+{
+  "id": "jp_haguro_pagoda",
+  "name": "羽黑山五重塔",
+  "subject": "羽黑山五重塔 · 素木五重塔",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_haguro_pagoda.png",
+    "assets/references/jp_haguro_pagoda-photo.jpg",
+    "assets/references/jp_haguro_pagoda-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 羽黑山五重塔 · 素木五重塔\nMATERIAL OBSERVATIONS: 风化成银灰色的素木柱壁，灰褐色柿葺屋面，深灰铜色相轮；周围杉林、石灯笼、石板路去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+  "material_observations": [
+    "风化成银灰色的素木柱壁，灰褐色柿葺屋面，深灰铜色相轮；周围杉林、石灯笼、石板路去除。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_haguro_pagoda-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:2023.04.23_Five-storied_Pagoda,_Haguro-san_2.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/2023.04.23_Five-storied_Pagoda%2C_Haguro-san_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "YedidyaPopper",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "photo_date": "2023-04-23 09:14:07",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jp_haguro_pagoda-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%87%BA%E7%BE%BD%E4%B8%89%E5%B1%B1%E7%A5%9E%E7%A4%BE%E4%BA%94%E9%87%8D%E5%A1%9420221015-IMG_4041.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%E5%87%BA%E7%BE%BD%E4%B8%89%E5%B1%B1%E7%A5%9E%E7%A4%BE%E4%BA%94%E9%87%8D%E5%A1%9420221015-IMG_4041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "くろふね",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "photo_date": "15 October 2022, 16:38:13",
+      "role": "同塔另一实拍，核对五重层数与初重门窗"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 羽黒山五重塔",
+      "url": "https://online.bunka.go.jp/heritages/detail/199129"
+    },
+    {
+      "title": "ja.wikipedia · 羽黒山五重塔",
+      "url": "https://ja.wikipedia.org/wiki/%E7%BE%BD%E9%BB%92%E5%B1%B1%E4%BA%94%E9%87%8D%E5%A1%94"
+    }
+  ],
+  "original_research": "assets/research/jp_haguro_pagoda.json",
+  "output": "assets/colored/jp_haguro_pagoda.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "87f14ebf15b28f9a2b974742892338296d87a51c5d7b0b88cb45350b6e222f3e",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 羽黑山五重塔 · 素木五重塔\nMATERIAL OBSERVATIONS: 风化成银灰色的素木柱壁，灰褐色柿葺屋面，深灰铜色相轮；周围杉林、石灯笼、石板路去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. portrait 1024×1536.\n",
+      "input_images": [
+        "assets/generated/jp_haguro_pagoda.png",
+        "assets/references/jp_haguro_pagoda-photo.jpg",
+        "assets/references/jp_haguro_pagoda-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-1269012b-1b8b-4a3b-9be2-f664383fc35a.png",
+      "retained_file": "assets/colored/jp_haguro_pagoda.png",
+      "received_at": "2026-10-11T12:39:00.945Z",
+      "sourceSha256": "87f14ebf15b28f9a2b974742892338296d87a51c5d7b0b88cb45350b6e222f3e",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-1269012b-1b8b-4a3b-9be2-f664383fc35a.png",
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T12:39:00.945Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "87f14ebf15b28f9a2b974742892338296d87a51c5d7b0b88cb45350b6e222f3e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "c24008d149c433a3fd1598670b9ef102c12fda3f1386695b0f143a9d882ed93b",
+    "avifSha256": "8f971485676c55bc2535eb5baa289c3bb03cd8c2dec7cfecaaef4cdc730859f5"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "gd_zumiao",
   "subject": "佛山祖庙三门立面",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/佛山祖庙.JPG",
   "author": "Haier7917",
@@ -16,7 +16,7 @@
   "generated_file": "assets/generated/gd_zumiao.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "三座券门、长陶塑花脊和两端上层屋面；不画池岸栏杆、香炉和前方石狮。"
   ],
@@ -70,6 +70,20 @@
     {
       "title": "广东省文史研究馆：佛山祖庙的创建、明代重建与现存明清建筑",
       "url": "https://www.gdwsw.gov.cn/wsgdlnfw/content/post_22597.html"
+    },
+    {
+      "title": "佛山祖庙",
+      "url": "https://skills.gdep.edu.cn/skills/portal/blob?key=8133702",
+      "publisher": "gdep.edu.cn 技能教学资源平台",
+      "note": "实际核读PDF第1页，采用三个门洞、陶塑花脊及金漆木雕；不采用与其他资料不一致的确年及人物计数。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "佛山祖庙百年大修竣工",
+      "url": "https://news.sina.com.cn/o/2010-11-30/092518419177s.shtml",
+      "publisher": "南方日报／新浪新闻存档",
+      "note": "核读修缮项目现场报道和佛山文广部门、施工单位的说明，确认2007—2010修缮、三门陶塑屋脊整体保护及北帝祭仪。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "site_recommendation": {
@@ -130,5 +144,13 @@
       "source_page": "https://commons.wikimedia.org/wiki/File:佛山祖庙.JPG"
     }
   ],
-  "additional_sources": []
+  "additional_sources": [],
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "b53059b5ee8cdf7300bdef7a76670420f6d9ca9c4ac2dc6ea3def023452fe593",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ae15d8c3d884452c3cb760364f624ec13a75a02f0d0ceb1914c9a51ac52336d7"
+  }
 }

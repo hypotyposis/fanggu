@@ -1,0 +1,105 @@
+{
+  "id": "hlj_wenmiao",
+  "name": "哈尔滨文庙大成殿",
+  "subject": "哈尔滨文庙 · 大成殿正面（含月台与汉白玉栏杆）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hlj_wenmiao.png",
+    "assets/references/hlj_wenmiao-photo.jpg",
+    "assets/references/hlj_wenmiao-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 哈尔滨文庙 · 大成殿正面（含月台与汉白玉栏杆）\nMATERIAL OBSERVATIONS: 屋面黄色琉璃筒瓦，脊饰黄琉璃；斗栱、额枋青绿彩画加金线、朱红地；柱身与门窗深红近赭，格心金线；台基灰白花岗石，栏杆汉白玉；地面青灰石板。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "屋面黄色琉璃筒瓦，脊饰黄琉璃；斗栱、额枋青绿彩画加金线、朱红地；柱身与门窗深红近赭，格心金线；台基灰白花岗石，栏杆汉白玉；地面青灰石板。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hlj_wenmiao-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall._Harbin_Confucian_Temple.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Dacheng_Hall._Harbin_Confucian_Temple.jpg",
+      "author": "Huanokinhejo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2017-07-13 14:00",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/hlj_wenmiao-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall_of_the_Harbin_Confucian_Temple.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Dacheng_Hall_of_the_Harbin_Confucian_Temple.JPG",
+      "author": "Jason（picasaweb）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "role": "2008年正面低分辨率照片，核对屋脊、匾额位置与月台；不作计数依据。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "买购网·哈尔滨文庙条目（大成殿面阔十一间即堂九夹室二之最高规制、进深显六间、重檐庑殿黄琉璃瓦顶；月台三面出陛十级垂带踏垛、前正中一陛安汉白玉五龙戏珠御路；里外金柱改做钢筋混凝土；始建于民国十五年十月1926年、建成于民国十八年十一月1929年，张学良题碑记，张焕相、张景惠倡导实施；1996年11月第四批国保；1985年成立省民族博物馆）—— 二手资料",
+      "url": "https://www.maigoo.com/citiao/112347.html"
+    },
+    {
+      "title": "维基百科：哈尔滨文庙（民国十五年1926年始建、民国十八年建成；张焕相、张景惠倡导集资；三进院落，泮池、泮桥、棂星门、大成门、大成殿、崇圣祠；1996年第四批国保编号4-228）",
+      "url": "https://zh.wikipedia.org/wiki/哈尔滨文庙"
+    },
+    {
+      "title": "Wikipedia (en): Harbin Confucian Temple（built 1926–1929 at 730,000 Harbin dollars; largest Confucian temple in Northeast China; houses the Heilongjiang Museum of Nationalities; 4th batch Nov 1996）",
+      "url": "https://en.wikipedia.org/wiki/Harbin_Confucian_Temple"
+    },
+    {
+      "title": "国务院公报1996年第36号：第四批全国重点文物保护单位名单（近现代重要史迹及代表性建筑 编号228 序号30 哈尔滨文庙 1926~1929年）",
+      "url": "https://www.gov.cn/gongbao/shuju/1996/gwyb199636.pdf"
+    }
+  ],
+  "original_research": "assets/research/hlj_wenmiao.json",
+  "output": "assets/colored/hlj_wenmiao.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ecabb795db5c940c723c2037c5a35f470e6f8b80aeb5d693d603723cfb5aa23d",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 哈尔滨文庙 · 大成殿正面（含月台与汉白玉栏杆）\nMATERIAL OBSERVATIONS: 屋面黄色琉璃筒瓦，脊饰黄琉璃；斗栱、额枋青绿彩画加金线、朱红地；柱身与门窗深红近赭，格心金线；台基灰白花岗石，栏杆汉白玉；地面青灰石板。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/hlj_wenmiao.png",
+        "assets/references/hlj_wenmiao-photo.jpg",
+        "assets/references/hlj_wenmiao-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-b05bd684-6b53-4a38-a8c8-28a1bd8616fb.png",
+      "retained_file": "assets/colored/hlj_wenmiao.png",
+      "received_at": "2026-10-11T11:53:00.394Z",
+      "sourceSha256": "ecabb795db5c940c723c2037c5a35f470e6f8b80aeb5d693d603723cfb5aa23d",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-b05bd684-6b53-4a38-a8c8-28a1bd8616fb.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T11:53:00.394Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "ecabb795db5c940c723c2037c5a35f470e6f8b80aeb5d693d603723cfb5aa23d",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "b74c3aabd6dbfe358a1387719ecb79b131b33456e136ed2a321f611a283b8739",
+    "avifSha256": "bd65bb84c56f9dc871b3d3561e3c5385cd3c4bd77e3fa4a8555bf7afbd001292"
+  }
+}

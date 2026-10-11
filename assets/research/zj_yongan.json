@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-65c4fef8-f23d-4486-9608-4e5f135f5f3b.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,29 @@
     "sourceSha256": "e6d3f652a597fdd66a1affee2fee2c55a0c46ef6992eac6d6d564708056492f9",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "e6d3f652a597fdd66a1affee2fee2c55a0c46ef6992eac6d6d564708056492f9",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "363b7fa98e08ed5d9be535e3eb7bace3fa253e5e6ff42c13a205c4679a4c12d5"
+  },
+  "historical_sources": [
+    {
+      "title": "第八批全国重点文物保护单位名单",
+      "url": "https://www.gov.cn/gbgl/75e17ff291dd418f8f758d508087cd8b/files/6250670fc770465787b85d705d4b12f9.pdf",
+      "publisher": "国务院公报",
+      "note": "名单第272项五代至南宋。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "“国保”灵芝塔 见证千年风云",
+      "url": "https://ajnews.zjol.com.cn/ajnews/system/2019/11/12/032016296.shtml",
+      "publisher": "程永军（文物工作者）·安吉新闻网",
+      "note": "全文核读天宫调查、套筒铭文1047和1260及现代修缮。文中国保批次笔误不引用。",
+      "added": "content-rewrite-20261005"
+    }
+  ]
 }

@@ -42,7 +42,9 @@
       "灰瓦旧木、灰黄砖石和绿黄琉璃脊饰对应实拍；屋面轻微苔斑可见但未压过结构。",
       "照片中的牌匾、植被与围栏未加入。"
     ],
-    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。"
+    "limitations": "依据实拍的艺术转译；未做文保级色彩校准或逐像素几何对齐。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
   "worker": "worker_a",
   "background_preparation": {
@@ -67,5 +69,15 @@
       ]
     ],
     "note": "2026-10-02 检查发现旧暗底提取遗漏四处封闭透空：脊刹拉线左右两侧、外檐柱与墙面左右两侧。仅补这些种子，保留门洞与窗内暗部，原设色 PNG 不变。"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "1c6aaa3d7fc35b2f91453f26524b09bcd00b0be72da8d62669d17b9566e94676",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "7dbe3fccc11a58ef4fc7d3f36f23a63326721f4a6472db3c5bd2ba87b95cc888",
+    "avifSha256": "0a606f2674c79cb42c5929e747d5a01b5124322fb774d511bc8675a22c8459da"
   }
 }

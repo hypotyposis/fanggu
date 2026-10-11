@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-ed94c300-d97c-4005-8c01-6038c117f336.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,36 @@
     "sourceSha256": "c90f38bda1e7e3e37e92ea92515d912d58d93a935045f9d1d206064103b5c26d",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "c90f38bda1e7e3e37e92ea92515d912d58d93a935045f9d1d206064103b5c26d",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "d1240022fbdece96e06dd7a6284dbc68b0e4a894ea11e9edbd9e14c2549cd09b"
+  },
+  "historical_sources": [
+    {
+      "title": "何园",
+      "url": "https://zh.wikipedia.org/wiki/%E4%BD%95%E5%9B%AD",
+      "publisher": "维基百科（中文），二手来源（引潘谷西《江南理景艺术》、何园官网等）",
+      "note": "1862年始建、1875年建成、何芷舠、寄啸山庄名义、1883年并入片石山房、双层复道回廊、1988年国保",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "何园简介",
+      "url": "https://web.archive.org/web/20210502100500/http://www.he-garden.net/about/",
+      "publisher": "中国·扬州·何园官网（互联网档案馆存档）",
+      "note": "1500米复道回廊“天下第一廊”、片石山房石涛叠石、童寯刘敦桢潘谷西罗哲文陈从周评价、罗哲文题“晚清第一园”",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "何园介绍",
+      "url": "https://www.maigoo.com/citiao/113109.html",
+      "publisher": "买购网（maigoo），二手来源",
+      "note": "船厅位于东园、形似船形、面阔15.65米进深9.50米、单檐歇山带回廊、鹅卵石瓦片铺水波纹、玻璃花窗、楹联“月做主人梅做客，花为四壁船为家”",
+      "added": "content-rewrite-20261005"
+    }
+  ]
 }

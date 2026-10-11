@@ -6,7 +6,7 @@
     "assets/references/xian-small-full-photo.jpg",
     "assets/color-studies/v1/foguang-colored.png"
   ],
-  "status": "needs_review",
+  "status": "complete",
   "name": "西安小雁塔",
   "subject": "西安小雁塔",
   "generator": "built-in image_gen",
@@ -39,7 +39,18 @@
   "visual_review": {
     "inputs_viewed": true,
     "output_viewed": true,
-    "status": "pending_user",
-    "note": "实际查看单塔线稿、实拍、样本和设色输出；原型模式不作AI视觉通过/淘汰决定，待用户人审。"
+    "status": "approved_default",
+    "note": "实际查看单塔线稿、实拍、样本和设色输出；原型模式不作AI视觉通过/淘汰决定，待用户人审。",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "e8d373c41e15e7e9b591716d426d4409a22d1c3040f4b29d5299ac6741b99923",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "1f2018a7f7662be7e2f89b28e355cb954044fcbfd3385c222ff1bca1c87bccf3",
+    "avifSha256": "61012b8f87508e6965d8b488b7d8e33cc43cb70023ab5563eec85fc8361fb161"
   }
 }

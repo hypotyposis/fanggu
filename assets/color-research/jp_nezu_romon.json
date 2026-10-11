@@ -1,7 +1,7 @@
 {
   "id": "jp_nezu_romon",
   "name": "根津神社楼门",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_nezu_romon.png",
@@ -31,9 +31,10 @@
   ],
   "output": "assets/colored/jp_nezu_romon.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-14259209-c32a-4e62-b631-0204a18ea9ab.png",
   "background_preparation": {
@@ -59,5 +60,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-14259209-c32a-4e62-b631-0204a18ea9ab"
+  "generation_call_id": "exec-14259209-c32a-4e62-b631-0204a18ea9ab",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "091f84f2b041aaebd922db7bea6e2249038c5cc8fe167b4600ff3a4b857247ae",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "cfb75d2097e98c1aa162c5fccb4c4b909cc1251b9eccf503cb6ea7db20e8aa03",
+    "avifSha256": "97f4d2e0c9a6ef2a07fae368de8c5de927334ca335e779ddc7388f42ecc0af9b"
+  }
 }

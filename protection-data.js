@@ -4338,7 +4338,7 @@
         "batch": 6,
         "unitName": "平遥城隍庙",
         "relation": "part",
-        "scope": "平遥城隍庙 · 前殿正面",
+        "scope": "平遥城隍庙 · 戏楼昭格楼南面",
         "source": "batch6",
         "locator": "第6批附件 · 古建筑 · 山西省 · 平遥城隍庙",
         "checkedAt": "2026-10-02"
@@ -4655,7 +4655,7 @@
         "batch": 7,
         "unitName": "郑州城隍庙（含文庙大成殿）",
         "relation": "part",
-        "scope": "郑州城隍庙 · 三间大殿正面",
+        "scope": "郑州城隍庙 · 山门正面",
         "source": "batch7",
         "locator": "PDF 第67页 · 序号1192",
         "scopeSources": [
@@ -4754,6 +4754,264 @@
         "scope": "荐福寺小雁塔",
         "source": "batch1",
         "locator": "PDF 第10页 · 小雁塔"
+      }
+    ],
+    "ln_wanfotang": [
+      {
+        "batch": 3,
+        "unitName": "万佛堂石窟",
+        "relation": "part",
+        "scope": "西区第六窟交脚弥勒大佛（石窟群组成部分）",
+        "source": "batch3",
+        "locator": "第三批名单 ·（二）石窟寺 · 序号4 万佛堂石窟 · 北魏 · 辽宁省义县 · PDF第10页（公报第106页）"
+      }
+    ],
+    "ln_xingcheng": [
+      {
+        "batch": 3,
+        "unitName": "兴城城墙",
+        "relation": "part",
+        "scope": "东门春和门城楼与瓮城（城墙组成部分）",
+        "source": "batch3",
+        "locator": "第三批名单 ·（三）古建筑及历史纪念建筑物 · 兴城城墙 · 明 · 辽宁省兴城市 · PDF第11页（公报第107页）",
+        "note": "2006年第六批合并项目第38项：兴城古城（明至清，辽宁省兴城市）与第三批全国重点文物保护单位兴城古城墙合并，名称：兴城古城。第六批通知写作“兴城古城墙”，第三批公报原文为“兴城城墙”；所绘城楼与瓮城按首次公布的第三批记。"
+      }
+    ],
+    "ln_guangjita": [
+      {
+        "batch": 5,
+        "unitName": "广济寺古建筑群",
+        "relation": "part",
+        "scope": "广济寺塔（古建筑群组成部分）",
+        "source": "batch5",
+        "locator": "第五批名单 · 古建筑 · 广济寺古建筑群 · 辽至清 · 辽宁省锦州市 · PDF第12页"
+      }
+    ],
+    "ln_zhaoling": [
+      {
+        "batch": 2,
+        "unitName": "清昭陵",
+        "relation": "part",
+        "scope": "隆恩殿正面（陵寝组成部分）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（六）古墓葬 · 编号61 序号6 清昭陵 · 清 · 辽宁省沈阳市 · PDF第25页"
+      }
+    ],
+    "jl_haotaiwangbei": [
+      {
+        "batch": 1,
+        "unitName": "洞沟古墓群",
+        "relation": "part",
+        "scope": "好太王碑（第一批名单备注“包括好太王碑”）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（六）古墓葬 · 编号168 序号7 洞沟古墓群 · 高句丽 · 吉林省辑安县 · 备注“包括好太王碑” · PDF第15页"
+      }
+    ],
+    "jl_wandu": [
+      {
+        "batch": 2,
+        "unitName": "丸都山故城",
+        "relation": "part",
+        "scope": "瞭望台（山城组成部分）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（五）古遗址 · 编号52 序号7 丸都山故城 · 吉林省集安县 · PDF第24页（公报第280页）",
+        "note": "2001年第五批合并项目：国内城“与丸都山城合并，名称：丸都山城与国内城”（第五批名单 PDF第17页备注）；所绘瞭望台按首次公布的第二批记。"
+      }
+    ],
+    "hlj_wenmiao": [
+      {
+        "batch": 4,
+        "unitName": "哈尔滨文庙",
+        "relation": "part",
+        "scope": "大成殿正面（文庙组成部分）",
+        "source": "batch4",
+        "locator": "第四批名单 · 近现代重要史迹及代表性建筑 · 编号228 序号30 哈尔滨文庙 · 1926~1929年 · PDF第28页"
+      }
+    ],
+    "ln_chaoyangbei": [
+      {
+        "batch": 3,
+        "unitName": "朝阳北塔",
+        "relation": "unit",
+        "scope": "朝阳北塔 · 方形十三层密檐砖塔",
+        "source": "batch3",
+        "locator": "第三批名单 ·（三）古建筑及历史纪念建筑物 · 朝阳北塔 · 唐至辽 · 辽宁省朝阳市 · PDF第14页（公报第110页）"
+      }
+    ],
+    "hb_jingzhou_wall": [
+      {
+        "batch": 4,
+        "unitName": "荆州城墙",
+        "relation": "part",
+        "scope": "东门寅宾门城台与门上宾阳楼（楼为1987年重建）",
+        "source": "batch4",
+        "sourceKey": "batch4",
+        "locator": "第四批名单 · 古建筑及历史纪念建筑物 · 编号150 分类号72 荆州城墙 · 明、清 · 湖北省荆州市 · PDF第25页（公报第1464页）"
+      }
+    ],
+    "hb_xiangyang_wall": [
+      {
+        "batch": 5,
+        "unitName": "襄阳城墙",
+        "relation": "part",
+        "scope": "临汉门（小北门）城台与城楼",
+        "source": "batch5",
+        "sourceKey": "batch5",
+        "locator": "第五批名单 · 古建筑 · 编号361 分类号167 襄阳城墙 · 明 · 湖北省襄樊市 · PDF第13页（浙江政报第16页）"
+      }
+    ],
+    "hb_taihui": [
+      {
+        "batch": 6,
+        "unitName": "荆州三观",
+        "relation": "part",
+        "scope": "太晖观朝圣门、阙楼与祖师殿",
+        "source": "batch6",
+        "sourceKey": "batch6",
+        "locator": "第六批名单 · Ⅲ 古建筑 · 编号661 Ⅲ-364 荆州三观 · 明至清 · 湖北省荆州市（文化和旅游部转载国务院通知网页）"
+      }
+    ],
+    "hb_zhongxiang_wenfeng": [
+      {
+        "batch": 6,
+        "unitName": "钟祥文风塔",
+        "relation": "unit",
+        "scope": "文风塔全貌",
+        "source": "batch6",
+        "sourceKey": "batch6",
+        "locator": "第六批名单 · Ⅲ 古建筑 · 编号665 Ⅲ-368 钟祥文风塔 · 明 · 湖北省钟祥市（文化和旅游部转载国务院通知网页）"
+      }
+    ],
+    "hu_yuelu": [
+      {
+        "batch": 3,
+        "unitName": "岳麓书院",
+        "relation": "part",
+        "scope": "大门（头门）正面",
+        "source": "batch3",
+        "sourceKey": "batch3",
+        "locator": "第三批名单 · 古建筑及历史纪念建筑物 · 编号75 分类号23 岳麓书院 · 清 · 湖南省长沙市 · PDF第12页（公报第108页）"
+      }
+    ],
+    "hu_liuyang_wenmiao": [
+      {
+        "batch": 7,
+        "unitName": "浏阳文庙",
+        "relation": "part",
+        "scope": "大成殿正面与殿前月台",
+        "source": "batch7",
+        "sourceKey": "batch7",
+        "locator": "第七批名单 · 古建筑 · 编号1254 7-1254-3-552 浏阳文庙 · 清 · 湖南省长沙市浏阳市 · PDF第70页（名单第72页）"
+      }
+    ],
+    "xz_drepung": [
+      {
+        "batch": 2,
+        "unitName": "哲蚌寺",
+        "relation": "part",
+        "scope": "措钦大殿正面现状（明清陆续修建，改建年代未知）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（三）古建筑及历史纪念建筑物 · 编号27 分类号12 哲蚌寺 · 明 · 西藏自治区拉萨市 · PDF第23页（公报第279页）"
+      }
+    ],
+    "xz_guge": [
+      {
+        "batch": 1,
+        "unitName": "古格王国遗址",
+        "relation": "unit",
+        "scope": "札布让王城遗址现状（红殿、残墙、洞窟与山顶宫堡）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（五）古遗址 · 编号161 分类号26 古格王国遗址 · 西藏自治区普兰县（1961年时属普兰县，今札达县；备注：约为公元十世纪前后）· PDF第14页（公报第87页）"
+      }
+    ],
+    "xz_gyantse_dzong": [
+      {
+        "batch": 1,
+        "unitName": "江孜宗山抗英遗址",
+        "relation": "unit",
+        "scope": "宗山城堡现状（1904年抗英战场的主体建筑，后世修复）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（一）革命遗址及革命纪念建筑物 · 编号5 分类号5 江孜宗山抗英遗址 · 1904年 · 西藏自治区江孜县 · PDF第7页（公报第80页）"
+      }
+    ],
+    "xz_gyantse_kumbum": [
+      {
+        "batch": 4,
+        "unitName": "白居寺",
+        "relation": "part",
+        "scope": "吉祥多门塔（十万佛塔）全貌",
+        "source": "batch4",
+        "locator": "第四批名单 ·（三）古建筑 · 编号160 分类号82 白居寺 · 明 · 西藏自治区江孜县 · PDF第25页（公报第1464页）"
+      }
+    ],
+    "xz_ramoche": [
+      {
+        "batch": 5,
+        "unitName": "小昭寺",
+        "relation": "unit",
+        "scope": "主殿正立面现状（1474年重建格局、1986年重修）",
+        "source": "batch5",
+        "locator": "第五批名单 · 古建筑 · 编号411 分类号217 小昭寺 · 641年 · 西藏自治区拉萨市 · PDF第14页（浙江政报2002年第21期第17页）"
+      }
+    ],
+    "xz_sakya_south": [
+      {
+        "batch": 1,
+        "unitName": "萨迦寺",
+        "relation": "unit",
+        "scope": "南寺拉康钦莫大殿正面（1268年建，历代维修）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号95 分类号48 萨迦寺 · 元 · 西藏自治区萨迦县 · PDF第11页（公报第84页）"
+      }
+    ],
+    "xz_samye_utse": [
+      {
+        "batch": 4,
+        "unitName": "桑耶寺",
+        "relation": "unit",
+        "scope": "乌策大殿正面现状（文革后重建的金顶与上层）",
+        "source": "batch4",
+        "locator": "第四批名单 ·（三）古建筑 · 编号90 分类号12 桑耶寺 · 787～799年 · 西藏自治区扎囊县 · PDF第23页（公报第1462页）"
+      }
+    ],
+    "xz_sera": [
+      {
+        "batch": 2,
+        "unitName": "色拉寺",
+        "relation": "unit",
+        "scope": "措钦大殿正面（1710年建，历代维修）",
+        "source": "batch2",
+        "locator": "第二批名单 ·（三）古建筑及历史纪念建筑物 · 编号28 分类号13 色拉寺 · 明 · 西藏自治区拉萨市 · PDF第23页（公报第279页）"
+      }
+    ],
+    "xz_shalu": [
+      {
+        "batch": 3,
+        "unitName": "夏鲁寺",
+        "relation": "unit",
+        "scope": "措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶",
+        "source": "batch3",
+        "locator": "第三批名单 · 古建筑及历史纪念建筑物 · 编号118 分类号66 夏鲁寺 · 元至清 · 西藏自治区日喀则市 · PDF第13页（公报第109页）"
+      }
+    ],
+    "xz_tholing": [
+      {
+        "batch": 4,
+        "unitName": "托林寺",
+        "relation": "unit",
+        "scope": "红殿正面与殿前佛塔现状",
+        "source": "batch4",
+        "locator": "第四批名单 ·（三）古建筑 · 编号110 分类号32 托林寺 · 宋 · 西藏自治区札达县 · PDF第24页（公报第1463页）"
+      }
+    ],
+    "xz_tradruk": [
+      {
+        "batch": 1,
+        "unitName": "昌珠寺",
+        "relation": "unit",
+        "scope": "入口正面与金顶现状（14世纪定型、1980年代重修）",
+        "source": "batch1",
+        "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号82 分类号35 昌珠寺 · 西藏自治区乃东县（备注：传为七世纪建）· PDF第11页（公报第84页）"
       }
     ]
   },
@@ -5045,6 +5303,197 @@
     "jp_shofukuji_jizodo": {
       "status": "not_applicable",
       "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财来源见逐图研究记录，不映射为中国国保标签。"
+    },
+    "ln_shenyang_beita": {
+      "status": "unconfirmed",
+      "reason": "现有资料为辽宁省级文物保护单位（2003年省保“沈阳东、南、北塔（含法轮寺）”）。第一至五批公报 OCR、第六批与第八批通知网页及第七批名单 OCR 中均未见法轮寺或沈阳北塔；第七批辽宁省沈阳市皇姑区条目为无垢净光舍利塔，第七批的“法轮寺”（7-0917-3-215）在内蒙古。不贴国保标签，也不断言非国保。"
+    },
+    "hb_huanghelou": {
+      "status": "unconfirmed",
+      "reason": "现楼为1985年异址重建的钢筋混凝土仿古建筑，未见于维基百科湖北国保列表及本地第一至第八批名单；维基百科记2023年曾列入武汉市第六批市保推荐名录但最终未列入。不贴国保标签。"
+    },
+    "jp_zuiganji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1953-03-31",
+        "juyo_bunkazai_designated": "1900-04-07",
+        "database_detail_id": 173372
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/173372"
+      ]
+    },
+    "jp_osaki_hachimangu": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-11-22",
+        "juyo_bunkazai_designated": "1903-04-15",
+        "database_detail_id": 184266
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/184266"
+      ]
+    },
+    "jp_haguro_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1966-06-11",
+        "juyo_bunkazai_designated": "1908-04-23",
+        "database_detail_id": 199129
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/199129"
+      ]
+    },
+    "jp_zenkoji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1953-03-31",
+        "juyo_bunkazai_designated": "1908-04-23",
+        "database_detail_id": 121917
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/121917"
+      ]
+    },
+    "jp_anrakuji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1898-12-28",
+        "database_detail_id": 188773
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/188773"
+      ]
+    },
+    "jp_daizenji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1955-06-22",
+        "juyo_bunkazai_designated": "1907-08-28",
+        "database_detail_id": 174122
+      },
+      "evidence": [
+        "https://kunishitei.bunka.go.jp/heritage/detail/102/882",
+        "https://online.bunka.go.jp/heritages/detail/174122"
+      ]
+    },
+    "jp_eihoji_kannondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1901-03-27",
+        "database_detail_id": 121854
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/121854"
+      ]
+    },
+    "jp_zuiryuji_butsuden": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1997-12-03",
+        "juyo_bunkazai_designated": "1909-04-05",
+        "database_detail_id": 193370
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/193370"
+      ]
+    },
+    "jp_matsumoto_tenshu": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1936-04-20",
+        "database_detail_id": 193580
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/193580"
+      ]
+    },
+    "jp_inuyama_tenshu": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1935-05-13",
+        "database_detail_id": 200169
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/200169"
+      ]
+    },
+    "jp_izumo_honden": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1900-04-07",
+        "database_detail_id": 146668
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/146668"
+      ]
+    },
+    "jp_sanbutsuji_nageiredo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1904-02-18",
+        "database_detail_id": 123947
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/123947"
+      ]
+    },
+    "jp_fukiji_odo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-11-22",
+        "juyo_bunkazai_designated": "1907-05-27",
+        "database_detail_id": 124404
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/124404"
+      ]
+    },
+    "jp_jodoji_jododo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1901-03-27",
+        "database_detail_id": 147581
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/147581"
+      ]
     }
   }
 }));

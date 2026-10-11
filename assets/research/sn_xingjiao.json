@@ -1,11 +1,25 @@
 {
   "id": "sn_xingjiao",
   "subject": "兴教寺玄奘塔（中央高塔）整塔",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "徐怡涛：公元5至13世纪中国砖石佛塔塔壁装饰类型分期研究，故宫博物院院刊2016年第2期表一",
       "url": "https://img.dpm.org.cn/Uploads/File/2018/06/01/u5b1121d228227.pdf"
+    },
+    {
+      "title": "陕西省志·建设志",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923623109161543.pdf",
+      "publisher": "陕西省地方志编纂委员会",
+      "note": "全文下载核读大事记总章二年迁葬建塔；不采用书中个别年代误植。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "世界佛教美术辞典：兴教寺玄奘塔",
+      "url": "https://www.merit-times.com.tw/NewsPage.aspx?unid=618908",
+      "publisher": "人间福报／佛光山世界佛教美术辞典",
+      "note": "核读五层方形、仿木构砖塔及舍利塔用途。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "source_note": "669取玄奘塔营建年；兴教寺另两座弟子塔各有沿革，图版不把三塔作为同年主体。 实拍仅作形制和材质参考，不声称实测；图版由用户验收。",
@@ -19,7 +33,7 @@
   "generated_file": "assets/generated/sn_xingjiao.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_xingjiao",
     "name": "兴教寺玄奘塔",
@@ -132,5 +146,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5fd1bc47-b418-448f-a916-3d0eb0fc804a.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5fd1bc47-b418-448f-a916-3d0eb0fc804a.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5fd1bc47-b418-448f-a916-3d0eb0fc804a.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "6910176756bd014af60291bae13aa254a9602dc8b806f846cb4e7230079ee749",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "6a883e4ca055ce5be0fdb61054d8052659c83d5425e43f2015aa936ec2f2f094"
+  }
 }

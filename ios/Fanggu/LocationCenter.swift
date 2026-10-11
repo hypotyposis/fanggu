@@ -85,14 +85,14 @@ enum CatalogDistance {
     static func label(_ metres: CLLocationDistance) -> String {
         if metres < 1000 {
             let tens: Int = Int((metres / 10).rounded()) * 10
-            return "距此地约 \(max(10, tens)) m"
+            return String(localized: "距此地约 \(max(10, tens)) m")
         }
         if metres < 100_000 {
             let kilometres: String = String(format: "%.1f", metres / 1000)
-            return "距此地约 \(kilometres) km"
+            return String(localized: "距此地约 \(kilometres) km")
         }
         let whole: Int = Int((metres / 1000).rounded())
-        return "距此地约 \(whole.formatted()) km"
+        return String(localized: "距此地约 \(whole.formatted()) km")
     }
 
     /// Nearest first; equal distances keep the incoming order, which is the catalogue's year order.
@@ -130,13 +130,13 @@ enum CatalogDistance {
     static func note(authorization: CLAuthorizationStatus, hasLocation: Bool, failed: Bool,
                      approximate: Bool, precise: Bool) -> String? {
         switch authorization {
-        case .denied, .restricted: return "未授权定位，可在系统设置中开启；其他排序与筛选不受影响。"
-        case .notDetermined: return "正在请求定位权限…"
+        case .denied, .restricted: return String(localized: "未授权定位，可在系统设置中开启；其他排序与筛选不受影响。")
+        case .notDetermined: return String(localized: "正在请求定位权限…")
         default: break
         }
-        if !hasLocation { return failed ? "暂时无法获取位置，已按原顺序显示。" : "正在获取位置…" }
-        if !precise { return "系统已关闭精确位置，距离按大致位置计算。" }
-        return approximate ? "位置约略，距离仅供参考。" : nil
+        if !hasLocation { return failed ? String(localized: "暂时无法获取位置，已按原顺序显示。") : String(localized: "正在获取位置…") }
+        if !precise { return String(localized: "系统已关闭精确位置，距离按大致位置计算。") }
+        return approximate ? String(localized: "位置约略，距离仅供参考。") : nil
     }
 }
 
@@ -316,8 +316,8 @@ enum CatalogDistance {
         lastReminded[id] = .now
         defaults.set(lastReminded.mapValues(\.timeIntervalSince1970), forKey: Self.remindedKey)
         let content = UNMutableNotificationContent()
-        content.title = "附近有未打卡的古迹"
-        content.body = "\(target.name) 就在 3 公里内，去看看吧。"
+        content.title = String(localized: "附近有未打卡的古迹")
+        content.body = String(localized: "\(target.name) 就在 3 公里内，去看看吧。")
         content.sound = .default
         content.threadIdentifier = "fanggu.nearby"
         content.userInfo = ["monumentID": id]

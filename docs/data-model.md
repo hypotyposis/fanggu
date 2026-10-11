@@ -73,7 +73,7 @@
 | `matches(site, filters)` | 筛选 `status`、`dynasty`、`country`、`region`、`province`、`type`、`query`；搜索文本含名称、别名、地点、时代、类型及类型别名、国保文本 |
 | `provinces(sites, region, country)` | 当前范围内实际有条目的省份 |
 
-iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与类型别名表。新增地区、国家或类型别名时两处同步，否则 App 搜索不到。
+iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`regionName`、`provinceName` 读取地理显示名；新增地区或省份后补齐 `i18n/` 术语并重建目录即可。类型别名仍在该文件另行维护，新增类型别名时与 `catalog.js` 同步。
 
 ## 国保源数据 `assets/research/national-protection.json`
 
@@ -109,7 +109,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `historical_sources[]`、`factual_sources[]`、`additional_sources[]` | 形制与年代依据、补充来源 |
 | `background_preparation` | `{ method, sourceSha256, seeds[] }`；`method` 为 `white-matte-v1` 或 `adaptive-ink-v1`，哈希绑定 `generated_file` 的实际字节 |
 | `review` | 制作时的查看记录 |
-| `user_review` | 由 `record-plate-review.mjs line` 写入：`{ status: "approved_user", reviewer: "user", reviewed_at, sourceSha256 }` |
+| `visual_review_status` | `pending_user`（新建记录及图片改变后的瞬时状态）、`approved_default`、`approved_user`；由 `record-plate-review.mjs line` 与 `user_review.status` 同步写入 |
+| `user_review` | 由 `record-plate-review.mjs line` 写入。默认通过（2026-10-05 起的默认策略，无人眼审阅）：`{ status: "approved_default", reviewer: "default-policy", policy: "default-approve-2026-10-05", reviewed_at, sourceSha256, lineSha256 }`；用户明确通过：`{ status: "approved_user", reviewer: "user", reviewed_at, sourceSha256, lineSha256 }`。`lineSha256` 在交付线稿存在时写入 |
 | `site_recommendation` | 入库建议，含 `lat`、`lon`、`coordinate_source` 等，供维护者参考；其经纬度不导出，经核实的坐标应复制到 `coordinates` |
 | `coordinates` | `{ lat, lng 或 lon, source, url? }`：古迹本体坐标与来源说明（通常引用 Wikimedia Commons 或申遗文本的坐标，非测绘成果）。`source` 必填；有此字段的条目导出 `siteLatitude`、`siteLongitude`，参与附近提醒 |
 
@@ -130,10 +131,11 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `output` | `assets/colored/<id>.png` 原件 |
 | `generated_original` | 工具返回的原件绝对路径（仅溯源） |
 | `width`、`height` | 原件尺寸 |
-| `visual_review` | `{ inputs_viewed, output_viewed, checks[], limitations }` |
+| `visual_review` | `{ inputs_viewed, output_viewed, checks[], limitations, status?, decided_by? }`；`record-plate-review.mjs color` 记录状态时同步写入 `status`（`approved_default` / `approved_user`）与 `decided_by` |
 | `completed_at` | ISO 8601 |
 | `background_preparation` | `{ method, sourceSha256, seeds[] }`；`method` 为 `white-matte-v1`、`native-alpha`、`edge-connected-matte-v1`；旧暗底原件可无此字段 |
-| `user_review` | 由 `record-plate-review.mjs color` 写入：`{ status, reviewer, reviewed_at, sourceSha256, inputSha256, avifSha256 }` |
+| `visual_review_status` | `pending_user`（转码后、默认通过命令前的瞬时状态）、`approved_default`、`approved_user`；与 `user_review.status` 同步 |
+| `user_review` | 由 `record-plate-review.mjs color` 写入：`{ status, reviewer, policy?, reviewed_at, sourceSha256, inputSha256, avifSha256 }`。`status: "approved_default"` 时 `reviewer` 为 `default-policy`、`policy` 为 `default-approve-2026-10-05`，表示按默认策略接入、没有人眼审阅；`status: "approved_user"` 时 `reviewer` 为 `user`，只在用户明确说过通过时写入。命令同时把 `status` 置为 `complete` |
 
 ### `assets/color-research/queue.json`
 
@@ -145,15 +147,15 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 
 ### `assets/color-research/avif-manifest.json`
 
-由 `prepare-colored-avif.py` 写出。顶层：`format`（`AVIF`）、`settings`（质量 85、`4:4:4`、speed 6 等）、`encoder`（Pillow 与 libavif 版本）、`transparency`（旧抠图参数与处理器哈希）、`visualReview`（全部通过时为 `approved_user`，否则 `pending_user`）、`images`。
+由 `prepare-colored-avif.py` 写出。顶层：`format`（`AVIF`）、`settings`（质量 85、`4:4:4`、speed 6 等）、`encoder`（Pillow 与 libavif 版本）、`transparency`（旧抠图参数与处理器哈希）、`visualReview`（全部图为 `approved_user` 时为 `approved_user`；全部已通过但含默认通过时为 `approved_default`；仍有未记录状态的图时为 `pending_user`）、`images`。
 
-`images.<id>` 字段：原件 `source`、`sourceSha256`、`sourceBytes`；透明 PNG `input`、`inputSha256`、`inputBytes`；AVIF `src`、`sha256`、`bytes`、`width`、`height`；`alpha`（最小值、最大值、透明与不透明像素数、往返误差）；`extraction` 或 `backgroundPreparation`（去底方法、参数、处理器哈希）；`visualReview`；`processingSeconds`；用户验收时的 `review`。
+`images.<id>` 字段：原件 `source`、`sourceSha256`、`sourceBytes`；透明 PNG `input`、`inputSha256`、`inputBytes`；AVIF `src`、`sha256`、`bytes`、`width`、`height`；`alpha`（最小值、最大值、透明与不透明像素数、往返误差）；`extraction` 或 `backgroundPreparation`（去底方法、参数、处理器哈希）；`visualReview`（`approved_default`、`approved_user`，或哈希不再匹配时的 `pending_user`）；`processingSeconds`；记录状态时的 `review`（即逐图 `user_review`，含 `reviewer` 与 `policy`）。
 
 运行中的检查点写在同目录 `transparent-avif-progress.json`，成功结束后删除；该文件存在说明上次转码没有完成。
 
 ### `colored-plates.js`
 
-`globalThis.COLORED_PLATES = { <id>: { src, originalSrc, transparentSrc, transparent, visualReview, alt, width, height, tint: false, record, references[] } }`。`src` 是 AVIF 交付路径，`originalSrc` 是原件 PNG，`transparentSrc` 是透明 PNG 中间稿；`visualReview` 为 `approved_user` 或 `pending_user`。
+`globalThis.COLORED_PLATES = { <id>: { src, originalSrc, transparentSrc, transparent, visualReview, alt, width, height, tint: false, record, references[] } }`。`src` 是 AVIF 交付路径，`originalSrc` 是原件 PNG，`transparentSrc` 是透明 PNG 中间稿；`visualReview` 为 `approved_default` 或 `approved_user`，哈希不再匹配时回落为 `pending_user`。iOS 打包不区分这三种状态。
 
 ### `plates.js`
 
@@ -175,6 +177,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `placeName`、`country`、`province`、`region`、`latitude`、`longitude` | `PLACES` 与 `classify()`；经纬度是城镇级显示点 |
 | `siteLatitude`、`siteLongitude`、`siteCoordinateSource` | 研究 JSON 的 `coordinates` 本体坐标与其 `source`；没有登记时为 `null` 与 `""`。`site_recommendation` 的经纬度不导出，因为其中不少只是城镇点的复制。只用于附近提醒，不改变地图点；导出要求带 `source` 且距城镇点不超过 60 公里 |
 | `typeNames` | `catalog.js` 的类型名 |
+| `countryName`、`provinceName`、`regionName` | 国家、省份、地区的显示名；中文目录与 `country`、`province`、`regions[].name` 相同，`province` 仍是筛选键 |
+| `searchAliases` | 其他语言目录中的名称、短名、地点、地点名与省份名，供跨语言搜索 |
 | `lede`、`facts`、`quote` | 去除 HTML 标签后的文字 |
 | `captions` | `image.caption`，否则 `SITES.caption` |
 | `lineImage`、`colorImage` | 线稿 PNG 与设色 AVIF 的文件名，不含目录 |
@@ -182,6 +186,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 另有一份地区名、国家名与
 | `protection[]` | `{ batch, unitName, relation, scope, locator, note, sourceTitle, sourceURL }` |
 
 导出在重复 ID、缺地点、缺图版、缺时代色时失败。
+
+`catalog-en.json`、`catalog-ja.json` 与 `catalog.json` 条目一一对应、顺序相同；ID、年代、筛选键、坐标、图版、来源链接与国保批次不变，只替换展示文字：`name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 取 `i18n/<语言>.json` 的 `sites[id]`；`placeName`、`provinceName`、`countryName`、`regionName`、`dynastyName`、`typeNames` 与国保来源名取 `terms`；国保的 `unitName`、`scope`、`note` 逐项取译文。缺少译文的字段回退中文。专题名录同理导出为 `curations-en.json`、`curations-ja.json`，译文在 `i18n/<语言>.json` 的 `curations` 与 `terms.curationKinds`。字段约定见 [开发指南 · 多语言目录](development.md#多语言目录)。
 
 ## 个人记录 library.json
 

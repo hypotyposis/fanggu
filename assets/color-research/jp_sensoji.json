@@ -36,12 +36,13 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已查看原稿与实拍材料色；不等于用户视觉验收。现存本堂为1958年钢筋混凝土重建，图版只表现外观。"
-    }
+    },
+    "decided_by": "default-policy"
   },
   "preserved_inputs": [
     {
@@ -50,5 +51,15 @@
       "sha256": "4be3608450dabce7a5dfbe7ff690439dcc850f96f8f2668caf4b0c43a0054176",
       "reason": "Original line input preserved before the 2026-10-03 line-only door/window repair. Existing color output was not regenerated."
     }
-  ]
+  ],
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "dd1d86c8d26ec80e656d0153f7114aec774fd2ce4644b5947f26bd5b3b38c086",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "8b0f4f9cd16300ec54c0dfe1852de5dccf5d4c855ab74cc3006f80b69c661676",
+    "avifSha256": "fb5d06592ec85e501ff58a68e346ca519a74e91053835616847833aaa0064460"
+  }
 }

@@ -49,11 +49,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "线稿双层檐、两侧燕尾脊、中央御路石及前柱列可辨；设色对应橙红瓦与朱红木。 已查看实拍、风格样本、两张原件；仍待用户人眼验收。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "bc944822655b4735ad90e99dab9cff24cf6fbd5ca277b96e6f20e856e85a5091",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "4ca6e83f689bd514086a44a1574c0753bd3bca548eb21568e8f99c8e37f04678",
+    "avifSha256": "a149498109f152575379a0ad67cd178a8492cf6cd6ed35af7f4ed7e5d23983ab"
   }
 }

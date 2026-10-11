@@ -2,9 +2,9 @@
   "id": "kr_buseoksa_muryangsujeon",
   "name": "浮石寺无量寿殿",
   "subject": "单座无量寿殿与台阶",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
   "author": "Bernard Gagnon",
@@ -143,5 +143,14 @@
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
   },
-  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。"
+  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "64a684121453e1e7fe918227241259e9ce6a374b568103d4b3a017069b9f590e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "d70ecc7a2d5319280fb676dd6bd276e67311cef4ccbe74fb887a97981eb68c90",
+    "avifSha256": "2dcdecd246213b69e535fa4ab99611a85c6f2635c20271a342c7c0fc1e800f3e"
+  }
 }

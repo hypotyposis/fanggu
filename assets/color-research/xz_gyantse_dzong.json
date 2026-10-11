@@ -1,0 +1,101 @@
+{
+  "id": "xz_gyantse_dzong",
+  "name": "江孜宗山",
+  "subject": "江孜宗山 · 宗山城堡现状（自县城仰视）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xz_gyantse_dzong.png",
+    "assets/references/xz_gyantse_dzong-photo.jpg",
+    "assets/references/xz_gyantse_dzong-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 江孜宗山 · 宗山城堡现状（自县城仰视）\nMATERIAL OBSERVATIONS: 墙面白色（带土黄与红褐色水渍），檐带赭红，窗洞为深色小方窗，台阶与挡墙浅灰白，山体为土黄色裸岩与碎石。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "墙面白色（带土黄与红褐色水渍），檐带赭红，窗洞为深色小方窗，台阶与挡墙浅灰白，山体为土黄色裸岩与碎石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/xz_gyantse_dzong-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:FestungGyangze2015.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/FestungGyangze2015.jpg",
+      "author": "PenumbraLpz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2015-09-19 18:38:43",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/xz_gyantse_dzong-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gyantse-Dzong-08-2014-gje.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Gyantse-Dzong-08-2014-gje.jpg",
+      "author": "Gerd Eichmann",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "role": "另一侧仰视，核对主堡体量与窗排"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：江孜宗山（藏历火兔年967年白阔赞在宗山创建宫堡式建筑；帕竹时期为西藏十三大宗之一；1904年7月5—6日英军七次进攻被击退、7月7日占领；江孜保卫战约100天；1961年第一批国保）",
+      "url": "https://zh.wikipedia.org/wiki/江孜宗山"
+    },
+    {
+      "title": "Wikipedia (en): Gyantse Dzong（1268年筑今墙、1365年帕巴贝桑布建宫、其子贡嘎帕巴扩建，引 Dorje 2009 p.308；Vitali定1390年筑堡，引 Vitali 1990 p.30；1904年7月5—6日炮击破墙，引 Allen 2004；1967年城墙被炸毁、此后逐步修复，引 Dorje 2009）",
+      "url": "https://en.wikipedia.org/wiki/Gyantse_Dzong"
+    },
+    {
+      "title": "国务院公报1961年第4号：第一批全国重点文物保护单位名单（编号5 分类号5 江孜宗山抗英遗址 1904年 西藏自治区江孜县）",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "original_research": "assets/research/xz_gyantse_dzong.json",
+  "output": "assets/colored/xz_gyantse_dzong.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "688fdf92d64daf018c833a89ae309e9211fc71848b1bf9dd4c3758ea9e3c8591",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 江孜宗山 · 宗山城堡现状（自县城仰视）\nMATERIAL OBSERVATIONS: 墙面白色（带土黄与红褐色水渍），檐带赭红，窗洞为深色小方窗，台阶与挡墙浅灰白，山体为土黄色裸岩与碎石。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/xz_gyantse_dzong.png",
+        "assets/references/xz_gyantse_dzong-photo.jpg",
+        "assets/references/xz_gyantse_dzong-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-55b40a36-e798-4f2e-b2b4-ae957c4334c4.png",
+      "retained_file": "assets/colored/xz_gyantse_dzong.png",
+      "received_at": "2026-10-11T12:15:10.092Z",
+      "sourceSha256": "688fdf92d64daf018c833a89ae309e9211fc71848b1bf9dd4c3758ea9e3c8591",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-55b40a36-e798-4f2e-b2b4-ae957c4334c4.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:15:10.092Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "688fdf92d64daf018c833a89ae309e9211fc71848b1bf9dd4c3758ea9e3c8591",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "34a8873560927e3cd3bbaf1172d278187797e3f7c038c69a387c0be6db07502a",
+    "avifSha256": "45579e0e303e41af72c1e171d55c2f4e2ef4494db513c0b8f25a91b47bba6682"
+  }
+}

@@ -1,0 +1,513 @@
+{
+  "batch": "japan-kokuho-20261005",
+  "created": "2026-10-05T22:37:31+09:00",
+  "scope": "日本近畿以外的国宝建造物（净土寺净土堂为用户名单内的近畿补收）；本会话无 imagegen，只交付资料就绪状态。",
+  "ready": [
+    "jp_zuiganji_hondo",
+    "jp_osaki_hachimangu",
+    "jp_haguro_pagoda",
+    "jp_zenkoji_hondo",
+    "jp_anrakuji_pagoda",
+    "jp_daizenji_hondo",
+    "jp_eihoji_kannondo",
+    "jp_zuiryuji_butsuden",
+    "jp_matsumoto_tenshu",
+    "jp_inuyama_tenshu",
+    "jp_izumo_honden",
+    "jp_sanbutsuji_nageiredo",
+    "jp_fukiji_odo",
+    "jp_jodoji_jododo"
+  ],
+  "blocked": [
+    {
+      "id": "jp_chusonji_konjikido",
+      "reason": "缺少可用的自由许可本体照片：金色堂自镰仓时代起置于覆堂内，现藏1965年新覆堂（钢筋混凝土），堂内禁止摄影。Wikimedia Commons 的 Category:Konjikido (Chusonji) 及「中尊寺 金色堂」检索共21件，经逐一查看：全部外景均为新覆堂外观（663highland、Chuson-ji Konjiki-do 02/201806、Konjikido (Chusonji) 01–04 CC0、天台宗東北大本山…P1037618 等），公有领域旧照 NDL-DC 762376 为旧覆堂外观（448×353），「中尊寺金色堂模型」为工艺菓子模型，PD 的 Interior GoldenHall Chusonji 为堂内佛坛，另有堂内具与平面图。无一张呈现金色堂本体外观。恢复条件：找到公有领域的本体外观旧照（如1962–68年解体修理期间或战前出版物的扫描，须核实著作权状态），或由用户决定改绘新覆堂（非国宝主体，不建议）。资料、断代与条目文字已就绪。"
+    }
+  ],
+  "new_places": [
+    {
+      "key": "jp_hiraizumi",
+      "name": "平泉",
+      "prov": "岩手县",
+      "country": "JP",
+      "lat": 39.00153,
+      "lon": 141.10272,
+      "coordinate_note": "中尊寺金色堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_matsushima",
+      "name": "松岛",
+      "prov": "宫城县",
+      "country": "JP",
+      "lat": 38.37218,
+      "lon": 141.0596,
+      "coordinate_note": "瑞岩寺本堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_sendai",
+      "name": "仙台",
+      "prov": "宫城县",
+      "country": "JP",
+      "lat": 38.27219,
+      "lon": 140.845,
+      "coordinate_note": "大崎八幡宫附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_haguro",
+      "name": "鹤冈 · 羽黑山",
+      "prov": "山形县",
+      "country": "JP",
+      "lat": 38.70476,
+      "lon": 139.96761,
+      "coordinate_note": "羽黑山五重塔附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_nagano_city",
+      "name": "长野",
+      "prov": "长野县",
+      "country": "JP",
+      "lat": 36.6617,
+      "lon": 138.18771,
+      "coordinate_note": "善光寺本堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_ueda",
+      "name": "上田 · 别所温泉",
+      "prov": "长野县",
+      "country": "JP",
+      "lat": 36.35222,
+      "lon": 138.15333,
+      "coordinate_note": "安乐寺八角三重塔附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_koshu",
+      "name": "甲州 · 胜沼",
+      "prov": "山梨县",
+      "country": "JP",
+      "lat": 35.65594,
+      "lon": 138.74317,
+      "coordinate_note": "大善寺本堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_tajimi",
+      "name": "多治见",
+      "prov": "岐阜县",
+      "country": "JP",
+      "lat": 35.34667,
+      "lon": 137.13083,
+      "coordinate_note": "永保寺观音堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_takaoka",
+      "name": "高冈",
+      "prov": "富山县",
+      "country": "JP",
+      "lat": 36.7356,
+      "lon": 137.0105,
+      "coordinate_note": "瑞龙寺佛殿附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_matsumoto",
+      "name": "松本",
+      "prov": "长野县",
+      "country": "JP",
+      "lat": 36.2391,
+      "lon": 137.96912,
+      "coordinate_note": "松本城天守附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_inuyama",
+      "name": "犬山",
+      "prov": "爱知县",
+      "country": "JP",
+      "lat": 35.38832,
+      "lon": 136.93926,
+      "coordinate_note": "犬山城天守附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_izumo",
+      "name": "出云",
+      "prov": "岛根县",
+      "country": "JP",
+      "lat": 35.40194,
+      "lon": 132.68544,
+      "coordinate_note": "出云大社本殿附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_misasa",
+      "name": "三朝 · 三德山",
+      "prov": "鸟取县",
+      "country": "JP",
+      "lat": 35.39653,
+      "lon": 133.9594,
+      "coordinate_note": "三佛寺投入堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_bungotakada",
+      "name": "丰后高田",
+      "prov": "大分县",
+      "country": "JP",
+      "lat": 33.53772,
+      "lon": 131.52875,
+      "coordinate_note": "富贵寺大堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    },
+    {
+      "key": "jp_ono_hyogo",
+      "name": "小野",
+      "prov": "兵库县",
+      "country": "JP",
+      "lat": 34.86416,
+      "lon": 134.9611,
+      "coordinate_note": "净土寺净土堂附近地图示意点（ja.wikipedia GeoData），非建筑测绘坐标。"
+    }
+  ],
+  "new_regions_or_provinces": {
+    "jp_tohoku": {
+      "name": "东北",
+      "country": "JP",
+      "provinces": [
+        "岩手县",
+        "宫城县",
+        "山形县"
+      ],
+      "action": "新增",
+      "used_by": [
+        "jp_chusonji_konjikido",
+        "jp_zuiganji_hondo",
+        "jp_osaki_hachimangu",
+        "jp_haguro_pagoda"
+      ]
+    },
+    "jp_chubu": {
+      "name": "中部",
+      "country": "JP",
+      "provinces": [
+        "长野县",
+        "山梨县",
+        "岐阜县",
+        "富山县",
+        "爱知县"
+      ],
+      "action": "新增",
+      "used_by": [
+        "jp_zenkoji_hondo",
+        "jp_anrakuji_pagoda",
+        "jp_matsumoto_tenshu",
+        "jp_daizenji_hondo",
+        "jp_eihoji_kannondo",
+        "jp_zuiryuji_butsuden",
+        "jp_inuyama_tenshu"
+      ]
+    },
+    "jp_chugoku": {
+      "name": "中国地方",
+      "country": "JP",
+      "provinces": [
+        "广岛县",
+        "岛根县",
+        "鸟取县"
+      ],
+      "action": "在既有地区追加 岛根县、鸟取县",
+      "used_by": [
+        "jp_izumo_honden",
+        "jp_sanbutsuji_nageiredo"
+      ]
+    },
+    "jp_kyushu": {
+      "name": "九州",
+      "country": "JP",
+      "provinces": [
+        "大分县"
+      ],
+      "action": "新增",
+      "used_by": [
+        "jp_fukiji_odo"
+      ]
+    },
+    "jp_kinki": {
+      "name": "近畿",
+      "country": "JP",
+      "provinces": [
+        "京都府",
+        "滋贺县",
+        "奈良县",
+        "大阪府",
+        "兵库县"
+      ],
+      "action": "无需改动（兵库县已存在）",
+      "used_by": [
+        "jp_jodoji_jododo"
+      ]
+    }
+  },
+  "new_periods": [],
+  "new_period_note": "全部条目落在既有 jp_heian / jp_kamakura / jp_muromachi / jp_momoyama / jp_edo 时代键内，无需新增时代；永保寺观音堂（南北朝期）按文化厅「室町」分类归 jp_muromachi。",
+  "protection_entries": [],
+  "protection_untagged": {
+    "jp_chusonji_konjikido": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1951-06-09",
+        "juyo_bunkazai_designated": "1897-12-28",
+        "database_detail_id": 199039
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/199039"
+      ]
+    },
+    "jp_zuiganji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1953-03-31",
+        "juyo_bunkazai_designated": "1900-04-07",
+        "database_detail_id": 173372
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/173372"
+      ]
+    },
+    "jp_osaki_hachimangu": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-11-22",
+        "juyo_bunkazai_designated": "1903-04-15",
+        "database_detail_id": 184266
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/184266"
+      ]
+    },
+    "jp_haguro_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1966-06-11",
+        "juyo_bunkazai_designated": "1908-04-23",
+        "database_detail_id": 199129
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/199129"
+      ]
+    },
+    "jp_zenkoji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1953-03-31",
+        "juyo_bunkazai_designated": "1908-04-23",
+        "database_detail_id": 121917
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/121917"
+      ]
+    },
+    "jp_anrakuji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1898-12-28",
+        "database_detail_id": 188773
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/188773"
+      ]
+    },
+    "jp_daizenji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1955-06-22",
+        "juyo_bunkazai_designated": "1907-08-28",
+        "database_detail_id": 174122
+      },
+      "evidence": [
+        "https://kunishitei.bunka.go.jp/heritage/detail/102/882",
+        "https://online.bunka.go.jp/heritages/detail/174122"
+      ]
+    },
+    "jp_eihoji_kannondo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1901-03-27",
+        "database_detail_id": 121854
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/121854"
+      ]
+    },
+    "jp_zuiryuji_butsuden": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1997-12-03",
+        "juyo_bunkazai_designated": "1909-04-05",
+        "database_detail_id": 193370
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/193370"
+      ]
+    },
+    "jp_matsumoto_tenshu": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1936-04-20",
+        "database_detail_id": 193580
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/193580"
+      ]
+    },
+    "jp_inuyama_tenshu": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1935-05-13",
+        "database_detail_id": 200169
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/200169"
+      ]
+    },
+    "jp_izumo_honden": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1900-04-07",
+        "database_detail_id": 146668
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/146668"
+      ]
+    },
+    "jp_sanbutsuji_nageiredo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1904-02-18",
+        "database_detail_id": 123947
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/123947"
+      ]
+    },
+    "jp_fukiji_odo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-11-22",
+        "juyo_bunkazai_designated": "1907-05-27",
+        "database_detail_id": 124404
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/124404"
+      ]
+    },
+    "jp_jodoji_jododo": {
+      "status": "not_applicable",
+      "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+      "designation": {
+        "title": "国宝（建造物）",
+        "kokuho_designated": "1952-03-29",
+        "juyo_bunkazai_designated": "1901-03-27",
+        "database_detail_id": 147581
+      },
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/147581"
+      ]
+    }
+  },
+  "photo_licenses": {
+    "CC BY-SA 4.0": 16,
+    "CC BY-SA 3.0": 3,
+    "Public domain": 2,
+    "CC BY 4.0": 2,
+    "CC0": 4,
+    "CC BY-SA 2.0": 1
+  },
+  "reference_photos": {
+    "jp_chusonji_konjikido": [],
+    "jp_zuiganji_hondo": [
+      "assets/references/jp_zuiganji_hondo-photo.jpg",
+      "assets/references/jp_zuiganji_hondo-2-photo.jpg"
+    ],
+    "jp_osaki_hachimangu": [
+      "assets/references/jp_osaki_hachimangu-photo.jpg",
+      "assets/references/jp_osaki_hachimangu-2-photo.jpg"
+    ],
+    "jp_haguro_pagoda": [
+      "assets/references/jp_haguro_pagoda-photo.jpg",
+      "assets/references/jp_haguro_pagoda-2-photo.jpg"
+    ],
+    "jp_zenkoji_hondo": [
+      "assets/references/jp_zenkoji_hondo-photo.jpg",
+      "assets/references/jp_zenkoji_hondo-2-photo.jpg"
+    ],
+    "jp_anrakuji_pagoda": [
+      "assets/references/jp_anrakuji_pagoda-photo.jpg",
+      "assets/references/jp_anrakuji_pagoda-2-photo.jpg"
+    ],
+    "jp_daizenji_hondo": [
+      "assets/references/jp_daizenji_hondo-photo.jpg",
+      "assets/references/jp_daizenji_hondo-2-photo.jpg"
+    ],
+    "jp_eihoji_kannondo": [
+      "assets/references/jp_eihoji_kannondo-photo.jpg",
+      "assets/references/jp_eihoji_kannondo-2-photo.jpg"
+    ],
+    "jp_zuiryuji_butsuden": [
+      "assets/references/jp_zuiryuji_butsuden-photo.jpg",
+      "assets/references/jp_zuiryuji_butsuden-2-photo.jpg"
+    ],
+    "jp_matsumoto_tenshu": [
+      "assets/references/jp_matsumoto_tenshu-photo.jpg",
+      "assets/references/jp_matsumoto_tenshu-2-photo.jpg"
+    ],
+    "jp_inuyama_tenshu": [
+      "assets/references/jp_inuyama_tenshu-photo.jpg",
+      "assets/references/jp_inuyama_tenshu-2-photo.jpg"
+    ],
+    "jp_izumo_honden": [
+      "assets/references/jp_izumo_honden-photo.jpg",
+      "assets/references/jp_izumo_honden-2-photo.jpg"
+    ],
+    "jp_sanbutsuji_nageiredo": [
+      "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+      "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg"
+    ],
+    "jp_fukiji_odo": [
+      "assets/references/jp_fukiji_odo-photo.jpg",
+      "assets/references/jp_fukiji_odo-2-photo.jpg"
+    ],
+    "jp_jodoji_jododo": [
+      "assets/references/jp_jodoji_jododo-photo.jpg",
+      "assets/references/jp_jodoji_jododo-2-photo.jpg"
+    ]
+  },
+  "candidate_dir": "assets/research/candidates/japan-kokuho-20261005",
+  "plan": "assets/research/japan-kokuho-20261005-plan.md"
+}

@@ -7,22 +7,22 @@ enum ReviewDimension: String, CaseIterable, Identifiable, Codable {
     var index: Int { Self.allCases.firstIndex(of: self)! }
     var title: String {
         switch self {
-        case .eraRarity: return "年代稀缺"
-        case .authenticity: return "原真完整"
-        case .construction: return "结构营造"
-        case .art: return "艺术遗存"
-        case .scale: return "规制体量"
-        case .setting: return "环境格局"
+        case .eraRarity: return String(localized: "年代稀缺")
+        case .authenticity: return String(localized: "原真完整")
+        case .construction: return String(localized: "结构营造")
+        case .art: return String(localized: "艺术遗存")
+        case .scale: return String(localized: "规制体量")
+        case .setting: return String(localized: "环境格局")
         }
     }
     var hint: String {
         switch self {
-        case .eraRarity: return "在同类古迹中，年代与存世数量有多难得"
-        case .authenticity: return "原始构件、整体形制与历史痕迹保留了多少"
-        case .construction: return "结构、工艺与营造做法有多出色"
-        case .art: return "塑像、壁画、彩画与装饰有多打动你"
-        case .scale: return "建筑的等级、规模与气势有多突出"
-        case .setting: return "选址、群体布局与山水关系有多精彩"
+        case .eraRarity: return String(localized: "在同类古迹中，年代与存世数量有多难得")
+        case .authenticity: return String(localized: "原始构件、整体形制与历史痕迹保留了多少")
+        case .construction: return String(localized: "结构、工艺与营造做法有多出色")
+        case .art: return String(localized: "塑像、壁画、彩画与装饰有多打动你")
+        case .scale: return String(localized: "建筑的等级、规模与气势有多突出")
+        case .setting: return String(localized: "选址、群体布局与山水关系有多精彩")
         }
     }
 
@@ -31,8 +31,9 @@ enum ReviewDimension: String, CaseIterable, Identifiable, Codable {
         return ["E", "D", "C", "B", "A"][value - 1]
     }
     static func description(_ value: Int?) -> String {
-        guard let value, (1...5).contains(value) else { return "未评分" }
-        return ["较弱", "平常", "有看点", "突出", "卓越"][value - 1]
+        guard let value, (1...5).contains(value) else { return String(localized: "未评分") }
+        return [String(localized: "较弱"), String(localized: "平常"), String(localized: "有看点"),
+                String(localized: "突出"), String(localized: "卓越")][value - 1]
     }
 }
 

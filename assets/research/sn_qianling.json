@@ -1,7 +1,7 @@
 {
   "id": "sn_qianling",
   "subject": "乾陵无字碑正面及碑座",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "陕西师范大学陕西文化资源中心：无字碑（据乾县志）",
@@ -19,7 +19,7 @@
   "generated_file": "assets/generated/sn_qianling.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_qianling",
     "name": "乾陵无字碑",
@@ -134,5 +134,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a2945f59-0993-40f9-949b-135b16b020de.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a2945f59-0993-40f9-949b-135b16b020de.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-a2945f59-0993-40f9-949b-135b16b020de.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "59050316aeff9cef577f0f6b46cb8a6a8f39f9f392404b3f8d19b3711c8377ee",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1af84e60009e4bb465b7d45f96d13723378beaa728b0bfd00574b7a339ca987a"
+  }
 }

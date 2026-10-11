@@ -2,7 +2,7 @@
   "id": "hn_yanqing",
   "name": "延庆观",
   "subject": "延庆观 · 玉皇阁现存主体",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_yanqing.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_yanqing.json",
   "output": "assets/colored/hn_yanqing.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:22:14.277Z",
   "generated_at": "2026-10-01T19:27:48.721996+00:00",
@@ -98,5 +99,15 @@
       "延庆观 · 玉皇阁现存主体",
       "元 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "210e8f24b73ce4c913d508090c52a4c09765035a3be1bd2efcac81901e572496",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "fcc9cdbe2cb90ab6b3eba24a5c600e9507c76192791daaed70f3d9c46f0a8de9",
+    "avifSha256": "c17d590b88262b8f395971eb5bc4073956b936fbf965c680b81f8c40481dd97b"
   }
 }

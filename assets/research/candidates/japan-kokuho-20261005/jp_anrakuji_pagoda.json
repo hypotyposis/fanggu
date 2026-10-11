@@ -1,0 +1,106 @@
+{
+  "id": "jp_anrakuji_pagoda",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "安乐寺 · 八角三重塔",
+  "name": "安乐寺八角三重塔",
+  "short": "安乐寺八角塔",
+  "sub": "八角三重塔 · 初重附裳阶",
+  "dyn": "jp_kamakura",
+  "tag": "镰仓",
+  "era": "镰仓后期 · 约1290年代",
+  "year": 1290,
+  "yearLabel": "约1290年代",
+  "yearApprox": true,
+  "yearNote": "文化厅数据库记「镰仓后期／1275-1332」，依样式特征断代；2004年奈良文化财研究所年轮年代调查得初重虾虹梁用材伐于正应二年（1289），塔约建于13世纪末（1290年代）。1898年指定重要文化财，1952年3月29日指定国宝。年表点取1290为约略定位。",
+  "country": "JP",
+  "province": "长野县",
+  "placeKey": "jp_ueda",
+  "placeName": "上田 · 别所温泉",
+  "place": "日本 · 长野县 · 上田 · 别所温泉",
+  "lat": 36.35222,
+  "lon": 138.15333,
+  "coordinate_source": "ja.wikipedia GeoData（安楽寺 (上田市)）坐标 36.352222, 138.153333，为寺院公开点位，用作别所温泉显示点，非塔本体测绘坐标。",
+  "types": [
+    "pagoda",
+    "temple"
+  ],
+  "lede": "别所温泉安乐寺后山的八角三重塔，是日本现存唯一的八角平面塔。初重附裳阶，四层屋面层层收分，放射状垂木与詰组的尾垂木三手先斗栱都是本格禅宗样；年轮测定显示用材伐于1289年，塔当建于十三世纪末，是长野最古的禅寺遗构。",
+  "facts": [
+    "八角三重塔婆，初重附裳阶故外观呈四重屋顶，柿葺；全高18.75米；为现存唯一的八角平面塔。1952年指定国宝。",
+    "文化厅断为镰仓后期；2004年奈良文化财研究所年轮年代调查得初重虾虹梁用材伐于正应二年（1289），塔约建于1290年代。",
+    "安乐寺为临济僧樵谷惟仙于镰仓中期实质开创，与建长寺关系深；室町后衰落，古建筑仅存此塔，天正年间改属曹洞宗。"
+  ],
+  "caption": [
+    "安乐寺 · 八角三重塔",
+    "镰仓后期 · 约1290年代"
+  ],
+  "legacyNames": [
+    "安楽寺八角三重塔",
+    "崇福山安楽寺",
+    "Anraku-ji Hakkaku Sanjū-no-tō",
+    "Anrakuji Octagonal Pagoda"
+  ],
+  "orientation": "portrait 1024×1536",
+  "structure_checkpoints": [
+    "八角平面，共四层屋面：最下一层为裳阶，其上三层为塔身三重；屋面柿葺，坡度平缓。",
+    "初重裳阶下为板壁与门窗，裳阶以上各重檐下为密集的詰组斗栱、放射状垂木。",
+    "塔顶相轮带九轮，完整入画；塔基低，周围石栅栏与墓碑去除。",
+    "八角各面向两侧收退，线稿需表现八角转折。"
+  ],
+  "material_observations": "深褐色风化木构，灰褐色柿葺屋面、檐下裏板略带红褐，深色铜质相轮；林木、石栅与墓石去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:260828_Anraku-ji_Ueda_Nagano_pref_Japan26s3.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/260828_Anraku-ji_Ueda_Nagano_pref_Japan26s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "663highland",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_anrakuji_pagoda-photo.jpg",
+    "assets/references/jp_anrakuji_pagoda-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_anrakuji_pagoda-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anrakuji_Hakkakusanjyuunotou_BessyoOnsen.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Anrakuji_Hakkakusanjyuunotou_BessyoOnsen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Rsa",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "photo_date": "2009-04-19",
+      "role": "同塔另一实拍，核对八角转折与四层屋面"
+    }
+  ],
+  "source_note": "主图为663highland 2026年8月正面竖幅实拍（CC BY-SA 4.0，原图15 MB），第二图为Rsa 2009年同塔（CC BY-SA 3.0），用于核对八角转折与裳阶。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nAnrakuji Octagonal Three-storied Pagoda, Ueda, Nagano, late 13th century. Draw the whole pagoda straight on as in photo 2, portrait. OCTAGONAL plan: FOUR roof tiers in total, the lowest a skirt roof (mokoshi) over a board-walled ground storey, above it THREE storeys with dense Zen-style bracket clusters and radiating rafters under each roof; thin shingled roofs with gentle slopes; a tall bronze sorin finial with nine rings. Show the octagonal faces receding at both sides. Apex and base uncut. Remove the stone fence, gravestones, signs and foliage.\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 安楽寺八角三重塔",
+      "url": "https://online.bunka.go.jp/heritages/detail/188773"
+    },
+    {
+      "title": "ja.wikipedia · 安楽寺 (上田市)（含2004年年轮年代调查）",
+      "url": "https://ja.wikipedia.org/wiki/%E5%AE%89%E6%A5%BD%E5%AF%BA_(%E4%B8%8A%E7%94%B0%E5%B8%82)"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-03-29",
+      "juyo_bunkazai_designated": "1898-12-28",
+      "database_detail_id": 188773
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/188773"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "tall": true,
+  "photo_date": "2026-08-28",
+  "photo_pixels": [
+    3648,
+    5472
+  ]
+}

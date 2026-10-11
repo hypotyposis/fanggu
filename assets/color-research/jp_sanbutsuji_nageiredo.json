@@ -1,0 +1,98 @@
+{
+  "id": "jp_sanbutsuji_nageiredo",
+  "name": "三佛寺投入堂",
+  "subject": "三佛寺 · 投入堂",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_sanbutsuji_nageiredo.png",
+    "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+    "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 三佛寺 · 投入堂\nMATERIAL OBSERVATIONS: 极浅的银灰色素木，灰褐色桧皮葺屋面，灰色岩石；绿色植被去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "极浅的银灰色素木，灰褐色桧皮葺屋面，灰色岩石；绿色植被去除。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanbutsu-ji,_nageiredou-1-1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Sanbutsu-ji%2C_nageiredou-1-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "photo_date": "2020-07-12 13:00:27",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sanbutsu-ji,_nageiredou-2-1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Sanbutsu-ji%2C_nageiredou-2-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Saigen Jiro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "photo_date": "2020-07-12 13:00:37",
+      "role": "同日竖幅实拍，核对悬造长柱与爱染堂"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 三仏寺奥院(投入堂)",
+      "url": "https://online.bunka.go.jp/heritages/detail/123947"
+    },
+    {
+      "title": "ja.wikipedia · 三仏寺（含年轮年代测定1165年）",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%BB%8F%E5%AF%BA"
+    }
+  ],
+  "original_research": "assets/research/jp_sanbutsuji_nageiredo.json",
+  "output": "assets/colored/jp_sanbutsuji_nageiredo.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "f19bb060b16aa0246c2539a385ba51222390ae5f44595a0eca086d83f1b7ce8a",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 三佛寺 · 投入堂\nMATERIAL OBSERVATIONS: 极浅的银灰色素木，灰褐色桧皮葺屋面，灰色岩石；绿色植被去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/jp_sanbutsuji_nageiredo.png",
+        "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+        "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-5daee0a0-ff9b-4898-8042-f5b977200913.png",
+      "retained_file": "assets/colored/jp_sanbutsuji_nageiredo.png",
+      "received_at": "2026-10-11T13:01:38.462Z",
+      "sourceSha256": "f19bb060b16aa0246c2539a385ba51222390ae5f44595a0eca086d83f1b7ce8a",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-5daee0a0-ff9b-4898-8042-f5b977200913.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T13:01:38.462Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "f19bb060b16aa0246c2539a385ba51222390ae5f44595a0eca086d83f1b7ce8a",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "b87e0678b32edb6762020150403280d6703abdb139a77e2d7aafdf009b7dc057",
+    "avifSha256": "3daff6e0203ab7c87f5e70a5e8c929086d9ccc40b7ef4e276af2e8b496a44197"
+  }
+}

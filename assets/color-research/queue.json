@@ -1,6 +1,6 @@
 {
   "created": "2026-09-15",
-  "count": 473,
+  "count": 514,
   "excluded": [
     "longmenshiku",
     "foguang",
@@ -9445,8 +9445,8 @@
     {
       "id": "sx_pingyao_chenghuang",
       "name": "平遥城隍庙",
-      "subject": "平遥城隍庙 · 前殿正面",
-      "sub": "前殿正面",
+      "subject": "平遥城隍庙 · 戏楼昭格楼南面",
+      "sub": "戏楼昭格楼南面",
       "place": "山西平遥",
       "dyn": "ming",
       "types": [
@@ -9821,8 +9821,8 @@
     {
       "id": "hn_zzchenghuang",
       "name": "郑州城隍庙",
-      "subject": "郑州城隍庙 · 三间大殿正面",
-      "sub": "三间大殿正面",
+      "subject": "郑州城隍庙 · 山门正面",
+      "sub": "山门正面",
       "place": "河南 · 郑州",
       "dyn": "ming",
       "types": [
@@ -10775,6 +10775,1024 @@
       ],
       "output": "assets/colored/jp_shofukuji_jizodo.png",
       "record": "assets/color-research/jp_shofukuji_jizodo.json"
+    },
+    {
+      "id": "ln_wanfotang",
+      "name": "义县万佛堂石窟",
+      "subject": "义县万佛堂石窟 · 西区第六窟交脚弥勒大佛正面",
+      "sub": "西区第六窟 · 交脚弥勒大佛",
+      "place": "辽宁 · 义县",
+      "dyn": "bei",
+      "types": [
+        "grotto",
+        "sculpture"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/ln_wanfotang.png",
+      "displayLine": "assets/plates/ln_wanfotang.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ln_wanfotang.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_wanfotang-photo.jpg",
+        "assets/references/ln_wanfotang-2-photo.jpg"
+      ],
+      "output": "assets/colored/ln_wanfotang.png",
+      "record": "assets/color-research/ln_wanfotang.json"
+    },
+    {
+      "id": "ln_xingcheng",
+      "name": "兴城古城",
+      "subject": "兴城古城 · 东门春和门城楼与瓮城正面（城外视角）",
+      "sub": "春和门 · 东门城楼与瓮城",
+      "place": "辽宁 · 兴城",
+      "dyn": "ming",
+      "types": [
+        "wall",
+        "gate"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/ln_xingcheng.png",
+      "displayLine": "assets/plates/ln_xingcheng.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/ln_xingcheng.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_xingcheng-photo.jpg",
+        "assets/references/ln_xingcheng-2-photo.jpg"
+      ],
+      "output": "assets/colored/ln_xingcheng.png",
+      "record": "assets/color-research/ln_xingcheng.json"
+    },
+    {
+      "id": "ln_guangjita",
+      "name": "锦州广济寺塔",
+      "subject": "锦州广济寺塔 · 八角十三层密檐塔正面全貌",
+      "sub": "八角十三层密檐砖塔",
+      "place": "辽宁 · 锦州",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/ln_guangjita.png",
+      "displayLine": "assets/plates/ln_guangjita.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ln_guangjita.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_guangjita-photo.jpg",
+        "assets/references/ln_guangjita-2-photo.jpg"
+      ],
+      "output": "assets/colored/ln_guangjita.png",
+      "record": "assets/color-research/ln_guangjita.json"
+    },
+    {
+      "id": "ln_zhaoling",
+      "name": "沈阳清昭陵",
+      "subject": "沈阳清昭陵 · 隆恩殿正面（含须弥座台基与月台三出陛）",
+      "sub": "隆恩殿 · 三间周围廊歇山殿",
+      "place": "辽宁 · 沈阳",
+      "dyn": "ming",
+      "types": [
+        "tomb",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/ln_zhaoling.png",
+      "displayLine": "assets/plates/ln_zhaoling.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/ln_zhaoling.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_zhaoling-photo.jpg",
+        "assets/references/ln_zhaoling-2-photo.jpg"
+      ],
+      "output": "assets/colored/ln_zhaoling.png",
+      "record": "assets/color-research/ln_zhaoling.json"
+    },
+    {
+      "id": "ln_shenyang_beita",
+      "name": "沈阳北塔",
+      "subject": "沈阳北塔（护国法轮寺塔）· 藏式覆钵式白塔正面",
+      "sub": "护国法轮寺 · 藏式覆钵白塔",
+      "place": "辽宁 · 沈阳",
+      "dyn": "ming",
+      "types": [
+        "pagoda",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/ln_shenyang_beita.png",
+      "displayLine": "assets/plates/ln_shenyang_beita.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ln_shenyang_beita.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_shenyang_beita-photo.jpg",
+        "assets/references/ln_shenyang_beita-3-photo.jpg",
+        "assets/references/ln_shenyang_beita-2-photo.jpg"
+      ],
+      "output": "assets/colored/ln_shenyang_beita.png",
+      "record": "assets/color-research/ln_shenyang_beita.json"
+    },
+    {
+      "id": "jl_haotaiwangbei",
+      "name": "集安好太王碑",
+      "subject": "集安好太王碑 · 碑体正面（碑亭内）",
+      "sub": "高句丽好太王碑 · 四面刻石",
+      "place": "吉林 · 集安",
+      "dyn": "goguryeo",
+      "types": [
+        "stele"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jl_haotaiwangbei.png",
+      "displayLine": "assets/plates/jl_haotaiwangbei.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jl_haotaiwangbei.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jl_haotaiwangbei-photo.jpg",
+        "assets/references/jl_haotaiwangbei-2-photo.jpg",
+        "assets/references/jl_haotaiwangbei-3-photo.jpg"
+      ],
+      "output": "assets/colored/jl_haotaiwangbei.png",
+      "record": "assets/color-research/jl_haotaiwangbei.json"
+    },
+    {
+      "id": "jl_wandu",
+      "name": "集安丸都山城",
+      "subject": "集安丸都山城 · 石砌瞭望台正面",
+      "sub": "石砌瞭望台 · 高句丽山城",
+      "place": "吉林 · 集安",
+      "dyn": "goguryeo",
+      "types": [
+        "ruins",
+        "castle"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jl_wandu.png",
+      "displayLine": "assets/plates/jl_wandu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jl_wandu.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jl_wandu-photo.jpg",
+        "assets/references/jl_wandu-2-photo.jpg"
+      ],
+      "output": "assets/colored/jl_wandu.png",
+      "record": "assets/color-research/jl_wandu.json"
+    },
+    {
+      "id": "hlj_wenmiao",
+      "name": "哈尔滨文庙大成殿",
+      "subject": "哈尔滨文庙 · 大成殿正面（含月台与汉白玉栏杆）",
+      "sub": "十一开间重檐庑殿大成殿",
+      "place": "黑龙江 · 哈尔滨",
+      "dyn": "modern",
+      "types": [
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hlj_wenmiao.png",
+      "displayLine": "assets/plates/hlj_wenmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hlj_wenmiao.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hlj_wenmiao-photo.jpg",
+        "assets/references/hlj_wenmiao-2-photo.jpg"
+      ],
+      "output": "assets/colored/hlj_wenmiao.png",
+      "record": "assets/color-research/hlj_wenmiao.json"
+    },
+    {
+      "id": "ln_chaoyangbei",
+      "name": "朝阳北塔",
+      "subject": "朝阳北塔 · 方形十三层密檐塔南面全貌",
+      "sub": "方形十三层密檐砖塔",
+      "place": "辽宁 · 朝阳",
+      "dyn": "liao",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/ln_chaoyangbei.png",
+      "displayLine": "assets/plates/ln_chaoyangbei.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/ln_chaoyangbei.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_chaoyangbei-photo.jpg",
+        "assets/references/ln_chaoyangbei-eaves-crop.png"
+      ],
+      "output": "assets/colored/ln_chaoyangbei.png",
+      "record": "assets/color-research/ln_chaoyangbei.json"
+    },
+    {
+      "id": "hb_jingzhou_wall",
+      "name": "荆州城墙",
+      "subject": "荆州城墙 · 东门寅宾门城台与宾阳楼正面（自城外东侧）",
+      "sub": "寅宾门 · 宾阳楼",
+      "place": "湖北 · 荆州",
+      "dyn": "ming",
+      "types": [
+        "wall",
+        "gate",
+        "pavilion"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hb_jingzhou_wall.png",
+      "displayLine": "assets/plates/hb_jingzhou_wall.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_jingzhou_wall.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_jingzhou_wall-photo.jpg",
+        "assets/references/hb_jingzhou_wall-2-photo.jpg"
+      ],
+      "output": "assets/colored/hb_jingzhou_wall.png",
+      "record": "assets/color-research/hb_jingzhou_wall.json"
+    },
+    {
+      "id": "hb_xiangyang_wall",
+      "name": "襄阳城墙",
+      "subject": "襄阳城墙 · 临汉门（小北门）城台与城楼正面",
+      "sub": "临汉门 · 小北门城楼",
+      "place": "湖北 · 襄阳",
+      "dyn": "ming",
+      "types": [
+        "wall",
+        "gate"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hb_xiangyang_wall.png",
+      "displayLine": "assets/plates/hb_xiangyang_wall.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_xiangyang_wall.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_xiangyang_wall-photo.jpg",
+        "assets/references/hb_xiangyang_wall-2-photo.jpg"
+      ],
+      "output": "assets/colored/hb_xiangyang_wall.png",
+      "record": "assets/color-research/hb_xiangyang_wall.json"
+    },
+    {
+      "id": "hb_taihui",
+      "name": "荆州太晖观",
+      "subject": "荆州太晖观 · 朝圣门、阙楼与祖师殿正面（高台金顶）",
+      "sub": "朝圣门与祖师殿 · 高台金顶",
+      "place": "湖北 · 荆州",
+      "dyn": "ming",
+      "types": [
+        "temple",
+        "hall",
+        "gate"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hb_taihui.png",
+      "displayLine": "assets/plates/hb_taihui.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hb_taihui.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_taihui-photo.jpg"
+      ],
+      "output": "assets/colored/hb_taihui.png",
+      "record": "assets/color-research/hb_taihui.json"
+    },
+    {
+      "id": "hb_zhongxiang_wenfeng",
+      "name": "钟祥文风塔",
+      "subject": "钟祥文风塔 · 覆钵式砖塔全貌（正南面）",
+      "sub": "覆钵式砖塔 · 二十一层相轮",
+      "place": "湖北 · 钟祥",
+      "dyn": "ming",
+      "types": [
+        "pagoda"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hb_zhongxiang_wenfeng.png",
+      "displayLine": "assets/plates/hb_zhongxiang_wenfeng.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hb_zhongxiang_wenfeng.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_zhongxiang_wenfeng-photo.jpg"
+      ],
+      "output": "assets/colored/hb_zhongxiang_wenfeng.png",
+      "record": "assets/color-research/hb_zhongxiang_wenfeng.json"
+    },
+    {
+      "id": "hb_huanghelou",
+      "name": "黄鹤楼",
+      "subject": "黄鹤楼 · 1985年重建主楼正面（黄鹤楼匾一侧）",
+      "sub": "1985年重建 · 五层攒尖",
+      "place": "湖北 · 武汉",
+      "dyn": "modern",
+      "types": [
+        "pavilion"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hb_huanghelou.png",
+      "displayLine": "assets/plates/hb_huanghelou.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/hb_huanghelou.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_huanghelou-photo.jpg",
+        "assets/references/hb_huanghelou-2-photo.jpg"
+      ],
+      "output": "assets/colored/hb_huanghelou.png",
+      "record": "assets/color-research/hb_huanghelou.json"
+    },
+    {
+      "id": "hu_yuelu",
+      "name": "岳麓书院",
+      "subject": "岳麓书院 · 大门正面（白墙青瓦、惟楚有材联）",
+      "sub": "大门 · 惟楚有材",
+      "place": "湖南 · 长沙",
+      "dyn": "ming",
+      "types": [
+        "school",
+        "gate"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hu_yuelu.png",
+      "displayLine": "assets/plates/hu_yuelu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hu_yuelu.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hu_yuelu-photo.jpg",
+        "assets/references/hu_yuelu-2-photo.jpg",
+        "assets/references/hu_yuelu-3-photo.jpg"
+      ],
+      "output": "assets/colored/hu_yuelu.png",
+      "record": "assets/color-research/hu_yuelu.json"
+    },
+    {
+      "id": "hu_liuyang_wenmiao",
+      "name": "浏阳文庙",
+      "subject": "浏阳文庙 · 大成殿正面与月台",
+      "sub": "大成殿 · 重檐歇山",
+      "place": "湖南 · 浏阳",
+      "dyn": "ming",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/hu_liuyang_wenmiao.png",
+      "displayLine": "assets/plates/hu_liuyang_wenmiao.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/hu_liuyang_wenmiao.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hu_liuyang_wenmiao-photo.jpg",
+        "assets/references/hu_liuyang_wenmiao-2-photo.jpg"
+      ],
+      "output": "assets/colored/hu_liuyang_wenmiao.png",
+      "record": "assets/color-research/hu_liuyang_wenmiao.json"
+    },
+    {
+      "id": "xz_drepung",
+      "name": "哲蚌寺",
+      "subject": "哲蚌寺 · 措钦大殿正面",
+      "sub": "措钦大殿正面 · 明创建 · 明清扩建",
+      "place": "西藏 · 拉萨",
+      "dyn": "ming",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_drepung.png",
+      "displayLine": "assets/plates/xz_drepung.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_drepung.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_drepung-photo.jpg",
+        "assets/references/xz_drepung-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_drepung.png",
+      "record": "assets/color-research/xz_drepung.json"
+    },
+    {
+      "id": "xz_guge",
+      "name": "古格王国遗址",
+      "subject": "古格王国遗址 · 札布让王城遗址（红殿与山顶宫堡，自山下仰视）",
+      "sub": "札布让王城遗址 · 红殿与山顶宫堡",
+      "place": "西藏 · 阿里 · 札达 · 札布让",
+      "dyn": "song",
+      "types": [
+        "ruins",
+        "castle"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_guge.png",
+      "displayLine": "assets/plates/xz_guge.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_guge.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_guge-photo.jpg",
+        "assets/references/xz_guge-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_guge.png",
+      "record": "assets/color-research/xz_guge.json"
+    },
+    {
+      "id": "xz_gyantse_dzong",
+      "name": "江孜宗山",
+      "subject": "江孜宗山 · 宗山城堡现状（自县城仰视）",
+      "sub": "宗山城堡现状 · 1904年抗英遗址",
+      "place": "西藏 · 日喀则 · 江孜",
+      "dyn": "ming",
+      "types": [
+        "castle",
+        "wall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_gyantse_dzong.png",
+      "displayLine": "assets/plates/xz_gyantse_dzong.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_gyantse_dzong.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_gyantse_dzong-photo.jpg",
+        "assets/references/xz_gyantse_dzong-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_gyantse_dzong.png",
+      "record": "assets/color-research/xz_gyantse_dzong.json"
+    },
+    {
+      "id": "xz_gyantse_kumbum",
+      "name": "白居寺吉祥多门塔",
+      "subject": "白居寺 · 吉祥多门塔（十万佛塔）全貌",
+      "sub": "十万佛塔全貌 · 九层塔寺合一",
+      "place": "西藏 · 日喀则 · 江孜",
+      "dyn": "ming",
+      "types": [
+        "pagoda",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_gyantse_kumbum.png",
+      "displayLine": "assets/plates/xz_gyantse_kumbum.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/xz_gyantse_kumbum.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_gyantse_kumbum-photo.jpg",
+        "assets/references/xz_gyantse_kumbum-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_gyantse_kumbum.png",
+      "record": "assets/color-research/xz_gyantse_kumbum.json"
+    },
+    {
+      "id": "xz_ramoche",
+      "name": "小昭寺",
+      "subject": "小昭寺 · 主殿正立面（现状，三层红墙与金顶）",
+      "sub": "主殿正立面 · 吐蕃创建 · 1986年重修",
+      "place": "西藏 · 拉萨 · 小昭寺路",
+      "dyn": "modern",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_ramoche.png",
+      "displayLine": "assets/plates/xz_ramoche.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_ramoche.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_ramoche-photo.jpg",
+        "assets/references/xz_ramoche-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_ramoche.png",
+      "record": "assets/color-research/xz_ramoche.json"
+    },
+    {
+      "id": "xz_sakya_south",
+      "name": "萨迦寺",
+      "subject": "萨迦寺 · 南寺拉康钦莫大殿正面（1268年建，现状）",
+      "sub": "南寺拉康钦莫大殿正面 · 元代",
+      "place": "西藏 · 日喀则 · 萨迦",
+      "dyn": "yuan",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_sakya_south.png",
+      "displayLine": "assets/plates/xz_sakya_south.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_sakya_south.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_sakya_south-photo.jpg",
+        "assets/references/xz_sakya_south-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_sakya_south.png",
+      "record": "assets/color-research/xz_sakya_south.json"
+    },
+    {
+      "id": "xz_samye_utse",
+      "name": "桑耶寺",
+      "subject": "桑耶寺 · 乌策大殿正面（现状，三层金顶）",
+      "sub": "乌策大殿正面 · 吐蕃创建 · 现状重建",
+      "place": "西藏 · 山南 · 扎囊",
+      "dyn": "modern",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_samye_utse.png",
+      "displayLine": "assets/plates/xz_samye_utse.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_samye_utse.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_samye_utse-photo.jpg",
+        "assets/references/xz_samye_utse-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_samye_utse.png",
+      "record": "assets/color-research/xz_samye_utse.json"
+    },
+    {
+      "id": "xz_sera",
+      "name": "色拉寺",
+      "subject": "色拉寺 · 措钦大殿正面（1710年建，现状）",
+      "sub": "措钦大殿正面 · 1710年建",
+      "place": "西藏 · 拉萨 · 色拉乌孜山",
+      "dyn": "ming",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_sera.png",
+      "displayLine": "assets/plates/xz_sera.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_sera.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_sera-photo.jpg",
+        "assets/references/xz_sera-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_sera.png",
+      "record": "assets/color-research/xz_sera.json"
+    },
+    {
+      "id": "xz_shalu",
+      "name": "夏鲁寺",
+      "subject": "夏鲁寺 · 措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶",
+      "sub": "措钦大殿正面 · 元代汉藏合璧",
+      "place": "西藏 · 日喀则 · 甲措雄",
+      "dyn": "yuan",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_shalu.png",
+      "displayLine": "assets/plates/xz_shalu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_shalu.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_shalu-photo.jpg",
+        "assets/references/xz_shalu-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_shalu.png",
+      "record": "assets/color-research/xz_shalu.json"
+    },
+    {
+      "id": "xz_tholing",
+      "name": "托林寺",
+      "subject": "托林寺 · 红殿正面与殿前佛塔（现状）",
+      "sub": "红殿正面与佛塔 · 古格王朝创建",
+      "place": "西藏 · 阿里 · 札达 · 托林",
+      "dyn": "song",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_tholing.png",
+      "displayLine": "assets/plates/xz_tholing.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_tholing.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_tholing-photo.jpg",
+        "assets/references/xz_tholing-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_tholing.png",
+      "record": "assets/color-research/xz_tholing.json"
+    },
+    {
+      "id": "xz_tradruk",
+      "name": "昌珠寺",
+      "subject": "昌珠寺 · 入口正面与金顶（现状）",
+      "sub": "入口正面与金顶 · 吐蕃创建 · 多期重修",
+      "place": "西藏 · 山南 · 乃东 · 昌珠",
+      "dyn": "yuan",
+      "types": [
+        "temple",
+        "hall"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/xz_tradruk.png",
+      "displayLine": "assets/plates/xz_tradruk.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/xz_tradruk.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_tradruk-photo.jpg",
+        "assets/references/xz_tradruk-2-photo.jpg"
+      ],
+      "output": "assets/colored/xz_tradruk.png",
+      "record": "assets/color-research/xz_tradruk.json"
+    },
+    {
+      "id": "jp_zuiganji_hondo",
+      "name": "瑞岩寺本堂",
+      "subject": "瑞岩寺 · 本堂正面",
+      "sub": "本堂（元方丈）正面",
+      "place": "日本 · 宫城县 · 松岛",
+      "dyn": "jp_momoyama",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_zuiganji_hondo.png",
+      "displayLine": "assets/plates/jp_zuiganji_hondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_zuiganji_hondo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_zuiganji_hondo-photo.jpg",
+        "assets/references/jp_zuiganji_hondo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_zuiganji_hondo.png",
+      "record": "assets/color-research/jp_zuiganji_hondo.json"
+    },
+    {
+      "id": "jp_osaki_hachimangu",
+      "name": "大崎八幡宫",
+      "subject": "大崎八幡宫 · 拜殿正面",
+      "sub": "权现造社殿 · 拜殿正面",
+      "place": "日本 · 宫城县 · 仙台",
+      "dyn": "jp_momoyama",
+      "types": [
+        "shrine"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_osaki_hachimangu.png",
+      "displayLine": "assets/plates/jp_osaki_hachimangu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_osaki_hachimangu.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_osaki_hachimangu-photo.jpg",
+        "assets/references/jp_osaki_hachimangu-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_osaki_hachimangu.png",
+      "record": "assets/color-research/jp_osaki_hachimangu.json"
+    },
+    {
+      "id": "jp_haguro_pagoda",
+      "name": "羽黑山五重塔",
+      "subject": "羽黑山五重塔 · 素木五重塔",
+      "sub": "三间五重木塔",
+      "place": "日本 · 山形县 · 鹤冈 · 羽黑山",
+      "dyn": "jp_muromachi",
+      "types": [
+        "pagoda",
+        "shrine"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_haguro_pagoda.png",
+      "displayLine": "assets/plates/jp_haguro_pagoda.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_haguro_pagoda.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_haguro_pagoda-photo.jpg",
+        "assets/references/jp_haguro_pagoda-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_haguro_pagoda.png",
+      "record": "assets/color-research/jp_haguro_pagoda.json"
+    },
+    {
+      "id": "jp_zenkoji_hondo",
+      "name": "善光寺本堂",
+      "subject": "善光寺 · 本堂正面",
+      "sub": "撞木造本堂正面",
+      "place": "日本 · 长野县 · 长野",
+      "dyn": "jp_edo",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_zenkoji_hondo.png",
+      "displayLine": "assets/plates/jp_zenkoji_hondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_zenkoji_hondo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_zenkoji_hondo-photo.jpg",
+        "assets/references/jp_zenkoji_hondo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_zenkoji_hondo.png",
+      "record": "assets/color-research/jp_zenkoji_hondo.json"
+    },
+    {
+      "id": "jp_anrakuji_pagoda",
+      "name": "安乐寺八角三重塔",
+      "subject": "安乐寺 · 八角三重塔",
+      "sub": "八角三重塔 · 初重附裳阶",
+      "place": "日本 · 长野县 · 上田 · 别所温泉",
+      "dyn": "jp_kamakura",
+      "types": [
+        "pagoda",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_anrakuji_pagoda.png",
+      "displayLine": "assets/plates/jp_anrakuji_pagoda.png",
+      "width": 1024,
+      "height": 1536,
+      "originalResearch": "assets/research/jp_anrakuji_pagoda.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_anrakuji_pagoda-photo.jpg",
+        "assets/references/jp_anrakuji_pagoda-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_anrakuji_pagoda.png",
+      "record": "assets/color-research/jp_anrakuji_pagoda.json"
+    },
+    {
+      "id": "jp_daizenji_hondo",
+      "name": "大善寺本堂",
+      "subject": "大善寺 · 本堂正面",
+      "sub": "本堂（药师堂）正面",
+      "place": "日本 · 山梨县 · 甲州 · 胜沼",
+      "dyn": "jp_kamakura",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_daizenji_hondo.png",
+      "displayLine": "assets/plates/jp_daizenji_hondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_daizenji_hondo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_daizenji_hondo-photo.jpg",
+        "assets/references/jp_daizenji_hondo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_daizenji_hondo.png",
+      "record": "assets/color-research/jp_daizenji_hondo.json"
+    },
+    {
+      "id": "jp_eihoji_kannondo",
+      "name": "永保寺观音堂",
+      "subject": "永保寺 · 观音堂正面",
+      "sub": "附裳阶禅宗佛殿 · 观音堂正面",
+      "place": "日本 · 岐阜县 · 多治见",
+      "dyn": "jp_muromachi",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_eihoji_kannondo.png",
+      "displayLine": "assets/plates/jp_eihoji_kannondo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_eihoji_kannondo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_eihoji_kannondo-photo.jpg",
+        "assets/references/jp_eihoji_kannondo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_eihoji_kannondo.png",
+      "record": "assets/color-research/jp_eihoji_kannondo.json"
+    },
+    {
+      "id": "jp_zuiryuji_butsuden",
+      "name": "瑞龙寺佛殿",
+      "subject": "瑞龙寺 · 佛殿正面",
+      "sub": "铅瓦葺禅宗佛殿正面",
+      "place": "日本 · 富山县 · 高冈",
+      "dyn": "jp_edo",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_zuiryuji_butsuden.png",
+      "displayLine": "assets/plates/jp_zuiryuji_butsuden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_zuiryuji_butsuden.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_zuiryuji_butsuden-photo.jpg",
+        "assets/references/jp_zuiryuji_butsuden-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_zuiryuji_butsuden.png",
+      "record": "assets/color-research/jp_zuiryuji_butsuden.json"
+    },
+    {
+      "id": "jp_matsumoto_tenshu",
+      "name": "松本城天守",
+      "subject": "松本城 · 大天守与连结天守群",
+      "sub": "大天守与连结天守群",
+      "place": "日本 · 长野县 · 松本",
+      "dyn": "jp_edo",
+      "types": [
+        "castle"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_matsumoto_tenshu.png",
+      "displayLine": "assets/plates/jp_matsumoto_tenshu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_matsumoto_tenshu.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_matsumoto_tenshu-photo.jpg",
+        "assets/references/jp_matsumoto_tenshu-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_matsumoto_tenshu.png",
+      "record": "assets/color-research/jp_matsumoto_tenshu.json"
+    },
+    {
+      "id": "jp_inuyama_tenshu",
+      "name": "犬山城天守",
+      "subject": "犬山城 · 天守正面",
+      "sub": "三重四阶望楼型天守",
+      "place": "日本 · 爱知县 · 犬山",
+      "dyn": "jp_momoyama",
+      "types": [
+        "castle"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_inuyama_tenshu.png",
+      "displayLine": "assets/plates/jp_inuyama_tenshu.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_inuyama_tenshu.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_inuyama_tenshu-photo.jpg",
+        "assets/references/jp_inuyama_tenshu-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_inuyama_tenshu.png",
+      "record": "assets/color-research/jp_inuyama_tenshu.json"
+    },
+    {
+      "id": "jp_izumo_honden",
+      "name": "出云大社本殿",
+      "subject": "出云大社 · 本殿（瑞垣外所见）",
+      "sub": "大社造本殿（瑞垣外所见）",
+      "place": "日本 · 岛根县 · 出云",
+      "dyn": "jp_edo",
+      "types": [
+        "shrine"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_izumo_honden.png",
+      "displayLine": "assets/plates/jp_izumo_honden.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_izumo_honden.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_izumo_honden-photo.jpg",
+        "assets/references/jp_izumo_honden-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_izumo_honden.png",
+      "record": "assets/color-research/jp_izumo_honden.json"
+    },
+    {
+      "id": "jp_sanbutsuji_nageiredo",
+      "name": "三佛寺投入堂",
+      "subject": "三佛寺 · 投入堂",
+      "sub": "悬造奥院 · 崖上小堂",
+      "place": "日本 · 鸟取县 · 三朝 · 三德山",
+      "dyn": "jp_heian",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_sanbutsuji_nageiredo.png",
+      "displayLine": "assets/plates/jp_sanbutsuji_nageiredo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_sanbutsuji_nageiredo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+        "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_sanbutsuji_nageiredo.png",
+      "record": "assets/color-research/jp_sanbutsuji_nageiredo.json"
+    },
+    {
+      "id": "jp_fukiji_odo",
+      "name": "富贵寺大堂",
+      "subject": "富贵寺 · 大堂正面",
+      "sub": "宝形造阿弥陀堂正面",
+      "place": "日本 · 大分县 · 丰后高田",
+      "dyn": "jp_heian",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_fukiji_odo.png",
+      "displayLine": "assets/plates/jp_fukiji_odo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_fukiji_odo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_fukiji_odo-photo.jpg",
+        "assets/references/jp_fukiji_odo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_fukiji_odo.png",
+      "record": "assets/color-research/jp_fukiji_odo.json"
+    },
+    {
+      "id": "jp_jodoji_jododo",
+      "name": "净土寺净土堂",
+      "subject": "净土寺 · 净土堂东面",
+      "sub": "大佛样阿弥陀堂 · 东面正面",
+      "place": "日本 · 兵库县 · 小野",
+      "dyn": "jp_kamakura",
+      "types": [
+        "hall",
+        "temple"
+      ],
+      "owner": "expansion-ready-20261011",
+      "line": "assets/generated/jp_jodoji_jododo.png",
+      "displayLine": "assets/plates/jp_jodoji_jododo.png",
+      "width": 1536,
+      "height": 1024,
+      "originalResearch": "assets/research/jp_jodoji_jododo.json",
+      "candidateReferences": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_jodoji_jododo-photo.jpg",
+        "assets/references/jp_jodoji_jododo-2-photo.jpg"
+      ],
+      "output": "assets/colored/jp_jodoji_jododo.png",
+      "record": "assets/color-research/jp_jodoji_jododo.json"
     }
   ]
 }

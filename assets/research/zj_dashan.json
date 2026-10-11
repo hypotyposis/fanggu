@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-660185f3-78f2-4162-be58-dc53a8497f89.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,29 @@
     "sourceSha256": "0b97a507054c26f0d2ac4ce086dc1f77057e0bc3b16c5f4d2ac3e8544d9237fe",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "0b97a507054c26f0d2ac4ce086dc1f77057e0bc3b16c5f4d2ac3e8544d9237fe",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "c3aa31775317b272359bfed377262cc2ceae6d27b3897c8adc8f38cbc4f87652"
+  },
+  "historical_sources": [
+    {
+      "title": "两宋时期两浙路地区的建筑形制演变及区域互动关系研究",
+      "url": "https://img.dpm.org.cn/Uploads/File/2021/10/09/u61614f4cf0aec.pdf",
+      "publisher": "王书林、徐新云、徐怡涛·故宫博物院院刊",
+      "note": "实际下载，核读附注绍定戊子砖铭、南宋主体及明清修护、图版楼阁仿木。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "绍兴轨道交通工程文物概况：大善塔",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web1756/site/attach/-1/1808141950216007944.pdf",
+      "publisher": "浙江省政府公开工程报告",
+      "note": "检索原报告表第92项，六面七层及木构楼阁损毁、1957维修。",
+      "added": "content-rewrite-20261005"
+    }
+  ]
 }

@@ -57,5 +57,13 @@
     ],
     "limitations": "原型候选图版，建筑轮廓并非测绘；最终由用户人眼验收。"
   },
-  "visual_review_status": "pending_user"
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "813d0518a14ef0487cc4d9ab291b3d68d1c5dd25b28b01ecc12046a10215de94",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "59b427bb2d41556e9852e1311f7f5757fabeef78e6008944484e7ccbcd6b9024"
+  }
 }

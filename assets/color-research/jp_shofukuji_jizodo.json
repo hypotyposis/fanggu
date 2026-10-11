@@ -1,7 +1,7 @@
 {
   "id": "jp_shofukuji_jizodo",
   "name": "正福寺地藏堂",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_shofukuji_jizodo.png",
@@ -31,9 +31,10 @@
   ],
   "output": "assets/colored/jp_shofukuji_jizodo.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-4d38fcdc-af11-4be8-b46f-587737ee585e.png",
   "background_preparation": {
@@ -49,5 +50,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-4d38fcdc-af11-4be8-b46f-587737ee585e"
+  "generation_call_id": "exec-4d38fcdc-af11-4be8-b46f-587737ee585e",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "8401821872a842fcc6e25d6417194cbf5cb8757beb2c57817de6d32724efe644",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "f423158ae1926b9f2c27aff2db109a723ac8e1e6b3aecb3d20ca2d63cf42a371",
+    "avifSha256": "efde5e97e36d2dc43553eb38461e75688ae78a4e3aef906c14ed5fb7041e68dc"
+  }
 }

@@ -41,11 +41,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已目检现状主体、边缘留白与材料色；尚待用户逐图验收。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "4ec73b3a701f5c65050e89b23d3e53a1d2d5d512a2619d00703eaf2a871b78ff",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "312dd5d689a190de869f005134e3c06d8308282f3301283704cab143c1e2bb39",
+    "avifSha256": "825d9a347d2b8d95db499a19c0e76eba243a83854b3b421b81e16ce3e361e004"
   }
 }

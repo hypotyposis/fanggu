@@ -64,5 +64,15 @@
       "status": "accepted_white_source",
       "method": "white-background-then-script"
     }
-  ]
+  ],
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "5fd4e1eec2be1a4e694109ac372c7c55c930cc4ed15ae0ac3e5be23d521e6825",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "78de25125db664ed876846837123db5344fb72b64be8589e40f0321291fca030",
+    "avifSha256": "40053b0d19faa61828b9b97aea9dad92b94fbc700bc37d0b4ae31e5f014cb278"
+  }
 }

@@ -47,6 +47,20 @@
     {
       "title": "东福寺 · 三门解说",
       "url": "https://tofukuji.jp/guide/sanmon_gate/en/"
+    },
+    {
+      "title": "東福寺三門（国指定文化財等データベース）",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1753",
+      "publisher": "文化庁",
+      "note": "室町中期・応永12年（1405）；五間三戸二階二重門・入母屋造・本瓦葺・両山廊付；1236年創立、1319・1334・1336年火災；昭和44〜52年解体修理の墨書で応永12〜20年頃まで造作；1585年地震後秀吉修復、1792年修理；二階彩画・十六羅漢；禅宗様でなく大仏様；国宝1952年",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "東福寺",
+      "url": "https://ja.wikipedia.org/wiki/%E6%9D%B1%E7%A6%8F%E5%AF%BA",
+      "publisher": "ウィキペディア日本語版（维基百科，二手来源）",
+      "note": "現存最古の禅寺三門、1384年再建開始・1425年完成、五間三戸の意味、扁額「玅雲閣」足利義持筆、明兆と弟子の極彩画、上層釈迦如来・十六羅漢",
+      "added": "content-rewrite-20261005"
     }
   ],
   "review": {
@@ -58,7 +72,7 @@
     ],
     "limitations": "图版是实拍基础上的建筑示意，并非实测图；参考照片未显示的部分不作史实推定。"
   },
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "user_review_history": [
     {
       "status": "approved_user",
@@ -80,5 +94,13 @@
     },
     "previous_delivery": "assets/research/history/line-repairs-20261003/jp_tofukuji_sanmon-before.png",
     "review_status": "pending_user"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "52b313edfec1a63fec8231af90f0a259423066248894d790561bd2ea0dccbfb0",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "16d52904d6095fb7a856dd5918b2da52ffd526991ce8d276c7863cca9433992e"
   }
 }

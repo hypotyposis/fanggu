@@ -2,7 +2,7 @@
   "id": "hb_zixiao",
   "name": "紫霄宫",
   "subject": "紫霄宫紫霄大殿与正面台基",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nNAMED SUBJECT: 紫霄宫紫霄大殿与正面台基.\nPresent material observations: 青绿琉璃瓦、黄釉屋脊与宝顶、红墙红褐门柱、深色木梁及蓝绿檐下彩画，灰白风化石台；不借金殿的金色覆盖屋面。\nKeep EXACTLY the line drawing's selected subject and crop: 五间紫霄大殿、重檐歇山、三层正面石台与中央台阶；不画左右庑房与远山，移除石碑、香炉、游客。",
   "input_images": [
@@ -42,7 +42,7 @@
   "generated_original": "assets/color-studies/v1/hb_zixiao-colored.png",
   "original_file": "assets/color-studies/v1/hb_zixiao-colored.png",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "inputs_viewed": true,
   "historical_sources": [
     {
@@ -86,5 +86,14 @@
     "method": "white-matte-v1",
     "sourceSha256": "5ac764daf9b0bd513ce274aaeb25bf6b72509958b0247f59f51aa981e0c6268d",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "5ac764daf9b0bd513ce274aaeb25bf6b72509958b0247f59f51aa981e0c6268d",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "e785e3596cc9b6d9bc14d5a198ea512aa8c8c09e0a00c1729045001f517c42e9",
+    "avifSha256": "5b392dbb286bb7870ed787ebf3dcada5a1c977922b28b0da623938162fce3457"
   }
 }

@@ -1,0 +1,95 @@
+{
+  "id": "hb_zhongxiang_wenfeng",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "钟祥文风塔 · 覆钵式砖塔全貌（正南面）",
+  "name": "钟祥文风塔",
+  "short": "文风塔",
+  "sub": "覆钵式砖塔 · 二十一层相轮",
+  "dyn": "ming",
+  "tag": "明 · 清",
+  "era": "明 · 1389年重建（880年始建）",
+  "year": 1389,
+  "yearLabel": "1389",
+  "yearApprox": false,
+  "yearNote": "唐广明元年（880）始建土塔，后毁；明洪武二十二年（1389）重建为砖塔并更名文风塔，清乾隆年间修塔刹、道光年间再修。年表取1389年。",
+  "country": "CN",
+  "province": "湖北",
+  "placeKey": "hb_zhongxiang",
+  "placeName": "钟祥·显陵",
+  "place": "湖北 · 钟祥",
+  "lat": 31.16611111,
+  "lon": 112.59222222,
+  "coordinate_source": "Wikidata Q15951521（钟祥文风塔）P625 坐标 31.166111, 112.592222，塔本体近似坐标，非本项目测绘；地图显示点复用既有 hb_zhongxiang（显示点在显陵，与塔相距数公里，仅作钟祥的城镇级显示）。",
+  "types": [
+    "pagoda"
+  ],
+  "lede": "钟祥龙山报恩寺内的文风塔，原名白乳高僧塔，相传为纪念被黄巢杀害、体内流出白乳的高僧而建。唐广明元年（880）垒土成塔，明洪武二十二年（1389）重建为砖塔，取“文风鼎盛”之意改名。通体刷白的覆钵塔身上，二十一层相轮直指天际，是南方少见的喇嘛塔式样。",
+  "facts": [
+    "塔始建于唐广明元年（880），原为土塔；明洪武二十二年（1389）重建并更名文风塔，清乾隆年间修塔刹，道光年间再次维修。",
+    "砖混实心覆钵式塔，通高26米，自下而上为地宫、八角塔基、覆钵、相轮、宝盖与刹顶；塔基高2.68米、底宽10米，由青砖分三层收砌。",
+    "覆钵正南开眼光门，门内石雕佛像；塔刹由二十一层相轮组成，每层之间砖雕仿斗栱，上为三重轮盘宝盖，四周悬铜铃；2006年列第六批国保。"
+  ],
+  "caption": [
+    "钟祥文风塔",
+    "明 · 1389年重建"
+  ],
+  "legacyNames": [
+    "文峰塔",
+    "白乳高僧塔",
+    "钟祥文峰塔"
+  ],
+  "orientation": "portrait 1024×1536",
+  "structure_checkpoints": [
+    "自下而上：八角形塔基（照片下部被铁丝网与草木遮挡，资料记三层收砌，线稿可简化为一座八角台座）；其上为钟形覆钵塔身，正面开一尖拱形眼光门，门内佛像只留轮廓。",
+    "覆钵之上为一段方形束腰（塔脖子），再上是逐层收分的相轮锥体：照片裁图可数约二十道环，资料记二十一层相轮，每层之间有一圈小砖雕斗栱齿饰。",
+    "顶部：相轮顶端为圆柱短颈，上承三重轮盘宝盖（下大上小），宝盖边缘悬铃；最上为细长刹杆与镂空圆环的刹顶。",
+    "画面去除：前景铁丝网与立杆、右侧树木、地面杂草与挡墙，仅保留塔及两三条短地面线。"
+  ],
+  "material_observations": "塔身通体刷白（略泛黄），相轮环间砖雕呈浅赭；宝盖与刹杆为深褐色铁件，铜铃深色；塔基露出青砖处灰色。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E9%92%9F%E7%A5%A5%E6%96%87%E5%B3%B0%E5%A1%94.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/%E9%92%9F%E7%A5%A5%E6%96%87%E5%B3%B0%E5%A1%94.jpg",
+  "author": "三猎",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "photo_date": "2015-07-12 18:12:39",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hb_zhongxiang_wenfeng-photo.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "主图为三猎 2015年7月自塔前偏下仰拍，覆钵、相轮、宝盖与刹顶完整，塔基下部被铁丝网遮挡；裁图 wenfeng_rings 用于数相轮。无第二张授权照片。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: the Wenfeng Pagoda of Zhongxiang, a whitewashed Lamaist-style (stupa-type) brick pagoda, seen from the front (Image 2). From bottom to top draw: a low octagonal base; a bell-shaped stupa body with ONE pointed-arch niche at the front centre (leave the statue inside as a simple outline); a short square neck; then a tall tapering cone of closely spaced ring tiers—TWENTY-ONE rings as recorded, each ring edged with a tiny row of bracket-like teeth; above the rings a short cylindrical neck carrying a three-disc canopy (largest disc lowest) with small bells hanging from its rim; and finally a slender spire with openwork rings. Keep the taper smooth and the axis perfectly vertical. Omit the wire fence, posts, grass, retaining wall and trees.\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "维基百科：钟祥文风塔（唐广明元年880年始建土塔；明洪武二十二年1389年重建并更名；通高26米，塔基高2.68米、底宽10米，二十一层相轮、三重轮盘宝盖；1956年省保、2006年第六批国保）",
+      "url": "https://zh.wikipedia.org/wiki/钟祥文风塔"
+    }
+  ],
+  "protection": {
+    "status": "confirmed",
+    "entries": [
+      {
+        "batch": 6,
+        "unitName": "钟祥文风塔",
+        "relation": "unit",
+        "scope": "文风塔全貌",
+        "source": "batch6",
+        "sourceKey": "batch6",
+        "locator": "第六批名单 · Ⅲ 古建筑 · 编号665 Ⅲ-368 钟祥文风塔 · 明 · 湖北省钟祥市（文化和旅游部转载国务院通知网页）",
+        "scopeSources": [
+          {
+            "title": "维基百科：钟祥文风塔 · 2006年以“钟祥文风塔”列第六批",
+            "url": "https://zh.wikipedia.org/wiki/钟祥文风塔"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      "https://zwgk.mct.gov.cn/zfxxgkml/qt/202012/t20201206_918486.html",
+      "https://zh.wikipedia.org/wiki/湖北全国重点文物保护单位列表"
+    ],
+    "checkedAt": "2026-10-05",
+    "note": "本地 batch6.html SHA-256 与 national-protection.json 记录一致，已在文本中核对编号665 Ⅲ-368。维基百科列表写作“钟祥文风塔”，照片文件名用“文峰塔”，为同一塔。"
+  }
+}

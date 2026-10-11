@@ -34,10 +34,11 @@
   },
   "output": "assets/colored/fj_luoyang.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型阶段保留候选，待用户集中审图。"
+    "notes": "原型阶段保留候选，待用户集中审图。",
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-9b142b84-989c-41d4-9043-ce2c7fd6b7d8.png",
   "width": 1536,
@@ -46,5 +47,15 @@
     "method": "white-matte-v1",
     "sourceSha256": "e4146209af62a83524b2ed115e8547d77d9806e8946ee955bb9f37d6ff6724e5",
     "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "e4146209af62a83524b2ed115e8547d77d9806e8946ee955bb9f37d6ff6724e5",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "57d9b8ca1071356a420e9990dff480245a0928a362814c6ade66ad745391365d",
+    "avifSha256": "c704f3957e3cf4ecc17657447023d5953de3801d7af40da69ad80f7a938ba19d"
   }
 }

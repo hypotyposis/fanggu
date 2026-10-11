@@ -1,0 +1,105 @@
+{
+  "id": "jp_zenkoji_hondo",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "善光寺 · 本堂正面",
+  "name": "善光寺本堂",
+  "short": "善光寺",
+  "sub": "撞木造本堂正面",
+  "dyn": "jp_edo",
+  "tag": "江户",
+  "era": "1707年再建",
+  "year": 1707,
+  "yearLabel": "1707年",
+  "yearApprox": false,
+  "yearNote": "文化厅数据库记「江户中期／1707」：元禄十三年（1700）炎上后，别当庆运募资，由大工甲良丰前入道宗贺设计，宝永四年（1707）七月完成。1908年指定重要文化财，1953年3月31日指定国宝。寺传推古十年创立，为初创而非现存主体年代。",
+  "country": "JP",
+  "province": "长野县",
+  "placeKey": "jp_nagano_city",
+  "placeName": "长野",
+  "place": "日本 · 长野县 · 长野",
+  "lat": 36.6617,
+  "lon": 138.18771,
+  "coordinate_source": "ja.wikipedia GeoData（善光寺）坐标 36.6617, 138.187711，作为长野市城镇级显示点，非本堂测绘坐标。",
+  "types": [
+    "hall",
+    "temple"
+  ],
+  "lede": "元禄十三年（1700）大火之后，善光寺本堂于宝永四年（1707）重建，由大工甲良宗贺设计。面阔五间而进深十四间，T形屋脊的撞木造把礼堂与内阵连成一体，总桧皮葺；正面妻入，裳阶与轩唐破风层层挑出，是江户中期佛殿的杰作。",
+  "facts": [
+    "桁行（侧面）十四间、梁间（正面）五间，单层附裳阶，撞木造妻入，正面向拝三间带轩唐破风，两侧向拝各一间，总桧皮葺。",
+    "间口约24米、进深约54米、栋高约26米，进深远大于间口；柱皆圆柱，以三手先斗栱承檐。1953年指定国宝。",
+    "寺传推古十年创立，镰仓两次、室町四次火灾后屡建；现本堂为1700年炎上后由别当庆运募集净财重建。"
+  ],
+  "caption": [
+    "善光寺 · 本堂正面",
+    "江户宝永四年（1707）"
+  ],
+  "legacyNames": [
+    "善光寺本堂",
+    "信州善光寺",
+    "Zenkō-ji Hondō",
+    "Zenkoji Main Hall"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "正面为山面（妻入）：上层入母屋大屋顶的三角形山花朝前，山花内金色饰件；其下一圈裳阶屋顶环绕，比上层屋顶更宽。",
+    "裳阶前檐中央为三间向拝，向拝檐口一座轩唐破风（曲线形）；两侧面各有一间向拝（侧面不入画）。",
+    "正面梁间五间，圆柱；全部屋面为桧皮葺（不画瓦垄）；正面宽石阶居中。",
+    "挂灯笼、卍字白幕、香炉、人群、围栏与两侧小建筑去除。"
+  ],
+  "material_observations": "深褐色风化木构，灰褐色桧皮葺屋面，山花与破风饰件金色，白幕（去除），灰石阶。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Main_Hall,_Zenkoji_20201120.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Main_Hall%2C_Zenkoji_20201120.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Suicasmo",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_zenkoji_hondo-photo.jpg",
+    "assets/references/jp_zenkoji_hondo-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_zenkoji_hondo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Main_Hall_of_Zenk%C5%8D-ji_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Main_Hall_of_Zenk%C5%8D-ji_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2018-09-09 09:55:14",
+      "role": "斜侧实拍，核对撞木造妻入屋顶与侧面向拝"
+    }
+  ],
+  "source_note": "主图为Suicasmo 2020年11月正面实拍（CC BY-SA 4.0），第二图为Christophe95 2018年斜侧实拍（CC BY-SA 4.0），用于核对妻入屋顶与侧面向拝。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nZenkoji Main Hall, Nagano, rebuilt 1707. Draw the FRONT (gable-end, tsuma-iri) elevation as in photo 2 (photo 3 is an oblique view for the roof shape): a very large hall whose upper hip-and-gable roof presents its gable to the front, over a lower encircling mokoshi pent roof; at the centre of the lower roof a three-bay step canopy with an undulating karahafu curved gable; all roofs are cypress-bark shingles (no tile pattern); front width FIVE bays on round columns; the lower roof extends wider than the upper; broad stone steps at the centre; gilt gable ornaments outlined only. Remove hanging lanterns, curtains with crests, incense burner, people, fences and side buildings.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 善光寺本堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/121917"
+    },
+    {
+      "title": "ja.wikipedia · 善光寺",
+      "url": "https://ja.wikipedia.org/wiki/%E5%96%84%E5%85%89%E5%AF%BA"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1953-03-31",
+      "juyo_bunkazai_designated": "1908-04-23",
+      "database_detail_id": 121917
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/121917"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2020-11-20 12:09:33",
+  "photo_pixels": [
+    5184,
+    3456
+  ]
+}

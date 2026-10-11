@@ -2,9 +2,9 @@
   "id": "ph_manila_san_agustin",
   "name": "马尼拉圣奥古斯丁教堂",
   "subject": "现存教堂正立面与钟塔",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:San_Agustin_Church_Intramuros_2023-05-28.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Agustin_Church_Intramuros_2023-05-28.jpg/1920px-San_Agustin_Church_Intramuros_2023-05-28.jpg",
   "author": "LMP 2001",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "6937e7127f2741d87ff6a26ec0cf71275d7e9b53d1af0b917b572884c633312e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "5fb22fa25aad8fd0ebfd9577431273d55e84623257a70ddf57fae154b47961a7",
+    "avifSha256": "d924d4f4accd66d5dea572178e699ecff48f3da9a1cac70e4559c6696eeece07"
   }
 }

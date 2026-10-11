@@ -1,9 +1,9 @@
 {
   "id": "sd_jiuding",
   "subject": "济南九顶塔整塔",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Jiudingta_2008_07_15_1.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Jiudingta_2008_07_15_1.jpg",
   "author": "Rolfmueller",
@@ -88,6 +88,28 @@
       "title": "山东省文旅厅国保保护范围表",
       "url": "https://whhly.shandong.gov.cn/module/download/downfile.jsp?classid=0&filename=7dfd1c59d14947558ead43458d35e1cf.pdf",
       "note": "表序号15第三批千佛崖造像，列九顶塔范围；根据官方索引摘要核对。"
+    },
+    {
+      "title": "九顶塔｜山东省志·文物志",
+      "url": "https://shandong-chorography.org/database/a/section/70/article/299/",
+      "publisher": "山东省地方志编纂委员会；山东地情档案公开存档",
+      "note": "核读检索全文单层八角、八加一小塔、叠涩与唐代断代证据；镜像网页直接打开仅返回壳。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "济南南部山区规划环境影响报告",
+      "url": "https://jnepb.jinan.gov.cn/jnhbj/150/11615/%E6%B5%8E%E5%8D%97%E5%8D%97%E9%83%A8%E5%B1%B1%E5%8C%BA1-1.pdf",
+      "publisher": "济南市环境保护局公开报告",
+      "note": "检索PDF正文核对八角单层、环列八塔加中央塔的结构。",
+      "added": "content-rewrite-20261005"
     }
-  ]
+  ],
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "caccff6290f620e420427e158da304aae2ea6e1384db15c3e9cbc97c5b1662c8",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ef6a719dd564b4cf1190741ea0fc952bcd714ea298320f5fc08777f22863e0cc"
+  }
 }

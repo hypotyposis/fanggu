@@ -27,10 +27,10 @@ module.exports = function assertArchivedXian(previous) {
   const current = read('assets/color-research/avif-manifest.json');
   for (const id of ['xian', 'xian_small']) {
     const image = current.images[id];
-    assert(['pending_user', 'approved_user'].includes(image.visualReview));
-    if (image.visualReview === 'approved_user') {
+    assert(['pending_user', 'approved_user', 'approved_default'].includes(image.visualReview));
+    if (image.visualReview.startsWith('approved_')) {
       const review = read(`assets/color-research/${id}.json`).user_review;
-      assert.equal(review.reviewer, 'user');
+      assert.equal(review.reviewer, image.visualReview === 'approved_user' ? 'user' : 'default-policy');
       assert.equal(review.sourceSha256, image.sourceSha256);
       assert.equal(review.inputSha256, image.inputSha256);
       assert.equal(review.avifSha256, image.sha256);

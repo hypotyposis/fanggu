@@ -34,10 +34,11 @@
   },
   "output": "assets/colored/fj_hegui.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型阶段保留候选，待用户集中审图。"
+    "notes": "原型阶段保留候选，待用户集中审图。",
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-bcb1e3e2-f12c-4266-a47d-4c61f4293f1b.png",
   "width": 1536,
@@ -46,5 +47,15 @@
     "method": "white-matte-v1",
     "sourceSha256": "ae0d1134922cd8932ea3e11f5c7796e37b6bdf7c7e69c88aa7167a846971391f",
     "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "ae0d1134922cd8932ea3e11f5c7796e37b6bdf7c7e69c88aa7167a846971391f",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "ec2b831a2931a4982e6e6febc110c616a852b3056552a65dceb5610030c6647e",
+    "avifSha256": "b8b8c6ce233e45dfbc5d71cde0cad1a4d3995afa7436ff7c3b4ba44bcd1936c3"
   }
 }

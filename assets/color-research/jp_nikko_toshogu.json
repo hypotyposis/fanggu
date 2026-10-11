@@ -36,11 +36,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已查看原稿与实拍材料色；不等于用户视觉验收。复杂雕饰经过选择性概括，局部形制和色层需用户审图。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "7142bc8080fb55a347ee38ef6ccc8bf5c2bc60682d67abe3f4fa757ac4290548",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "ee62e01d56aac28e687ad19c96d95f5bf5c6e18cc87f909dac0cdc6286e2e433",
+    "avifSha256": "c15d8b36a8bff0876fe811cfaa84073ec37f3d81aeafd4eac1ed268e0c730498"
   }
 }

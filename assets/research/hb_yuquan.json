@@ -1,7 +1,7 @@
 {
   "id": "hb_yuquan",
   "subject": "当阳玉泉寺十三层铁塔",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:%E5%BD%93%E9%98%B3%E7%8E%89%E6%B3%89%E5%AF%BA%E9%93%81%E5%A1%94.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%E5%BD%93%E9%98%B3%E7%8E%89%E6%B3%89%E5%AF%BA%E9%93%81%E5%A1%94.jpg/1280px-%E5%BD%93%E9%98%B3%E7%8E%89%E6%B3%89%E5%AF%BA%E9%93%81%E5%A1%94.jpg",
   "author": "Fxqf",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hb_yuquan.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "八角十三层楼阁式铁塔、完整塔刹、逐级收分；只画铁塔和短基座，不画高大挡墙或周围树林。"
   ],
@@ -46,6 +46,27 @@
     {
       "title": "湖北省文化和旅游厅：第一至第八批全国重点文物保护单位名录",
       "url": "https://wlt.hubei.gov.cn/bsfw/bmcxfw/wwbhdwml/202309/t20230928_4871978.shtml"
+    },
+    {
+      "title": "玉泉寺及铁塔",
+      "url": "https://gd.huaxia.com/c/2006/06/20/663642.shtml",
+      "publisher": "湖北省人民政府台湾事务办公室／华夏经纬网",
+      "note": "核读1061、八角十三层仿木楼阁、铁身铜刹、铭文与装饰；尺寸重量多有异说不采。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "玉泉山风景名胜区",
+      "url": "https://www.hbdangyang.com/content/show?newsid=1195305",
+      "publisher": "湖北当阳网",
+      "note": "核读检索返回正文：1061铸造及清道光铜塔刹后配；全文直连超时，来源说明不冒充全文已载入。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "当阳市玉泉铁塔经过修缮将重新开放",
+      "url": "https://www.yichang.gov.cn/html/zhengwuyizhantong/zhengwuzixun/jinriyaowen/2025/1202/1073526.html",
+      "publisher": "宜昌市人民政府／三峡日报",
+      "note": "核读近年修缮对文字纹饰与腐蚀防护的说明，不把旧锈色当历史本色。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "site_recommendation": {
@@ -153,5 +174,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "854263484cc23211cb11e50c86474a9bc41ddd6908a0e517fd1bb6377afd11a3",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "854263484cc23211cb11e50c86474a9bc41ddd6908a0e517fd1bb6377afd11a3",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "804515b2130671acc9376cde0ba5a87f4573e56e6f4b8bcdc60db4423ee506f3"
   }
 }

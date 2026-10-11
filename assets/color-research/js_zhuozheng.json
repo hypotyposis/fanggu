@@ -40,11 +40,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "已逐张查看主体、白底与材质色；等待用户人眼验收。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "d6a60500fe5ad8b58f7abea2c596090393df44a848f2310a35cfe431825666e7",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "339bb0e517a950868736ac22e7a4d1efe4cfadd165e4288151cb09ae3252bcc7",
+    "avifSha256": "74c6e3773d97077f574a5f2bc2ed83854aab75bee669eb03d59ca5ed9266aad0"
   }
 }

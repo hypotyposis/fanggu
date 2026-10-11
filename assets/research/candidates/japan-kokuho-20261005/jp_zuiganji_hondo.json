@@ -1,0 +1,110 @@
+{
+  "id": "jp_zuiganji_hondo",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "瑞岩寺 · 本堂正面",
+  "name": "瑞岩寺本堂",
+  "short": "瑞岩寺",
+  "sub": "本堂（元方丈）正面",
+  "dyn": "jp_momoyama",
+  "tag": "桃山",
+  "era": "1609年上栋",
+  "year": 1609,
+  "yearLabel": "1609年",
+  "yearApprox": false,
+  "yearNote": "文化厅国指定文化财等数据库记「桃山／1609」：伊达政宗自庆长九年（1604）再兴，本堂（原方丈）于庆长十四年（1609）三月上栋。1900年指定重要文化财，1953年3月31日指定国宝。庫裏及廊下1959年另列国宝，不在所绘范围。",
+  "country": "JP",
+  "province": "宫城县",
+  "placeKey": "jp_matsushima",
+  "placeName": "松岛",
+  "place": "日本 · 宫城县 · 松岛",
+  "lat": 38.37218,
+  "lon": 141.0596,
+  "coordinate_source": "ja.wikipedia GeoData（瑞巌寺）坐标 38.372178, 141.059597，作为松岛城镇级显示点，非本堂测绘坐标。",
+  "types": [
+    "hall",
+    "temple"
+  ],
+  "lede": "伊达政宗重兴松岛瑞岩寺，庆长十四年（1609）上栋的本堂实为一座大型方丈：十三间长的正面在灰瓦大屋顶下一字铺开，板门与欄间连绵，前庭铺白砂。桃山式的绘样与雕刻都藏在室内，外观只见素木与长檐。",
+  "facts": [
+    "本堂于庆长十四年（1609）三月上栋，桁行十三间、梁间八间，单层入母屋造本瓦葺，附玄关；1953年指定国宝。",
+    "原为政宗再兴时的方丈，属大规模方丈建筑，细部绘样、欄间与门扉雕刻具桃山特色；图版只绘正面外观，不入室内。",
+    "文化厅称其与国宝大崎八幡宫同为东北伊达文化的遗存；庫裏及廊下于1959年另列国宝，不在本图范围。"
+  ],
+  "caption": [
+    "瑞岩寺 · 本堂正面",
+    "桃山庆长十四年（1609）"
+  ],
+  "legacyNames": [
+    "瑞巌寺本堂",
+    "瑞巖寺",
+    "松島瑞巌寺",
+    "Zuigan-ji Hondō",
+    "Zuiganji"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "单层，一座入母屋造本瓦葺大屋顶，正脊长直，山面在左右两端；屋面灰瓦，檐口平直。",
+    "正面桁行十三间（文化厅记录），照片中为成对板门/障子与细柱连续排列，门上一道连续的格子欄间带，再上为白灰壁。",
+    "正面中央三级石阶，阶前低矮的开敞木缘，无高栏；缘下为竖板裙板。",
+    "左端附属的玄关（唐破风屋顶）属指定范围，但图版可略，不绘前庭石灯笼与白砂纹。"
+  ],
+  "material_observations": "素木灰褐色木构，门上白灰壁，灰色本瓦屋面；前庭白砂、绿树与石灯笼均去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Zuigan-ji_Hondo_202506.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Zuigan-ji_Hondo_202506.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "掬茶",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_zuiganji_hondo-photo.jpg",
+    "assets/references/jp_zuiganji_hondo-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_zuiganji_hondo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Main_Hall,_Zuiganji_201227.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Main_Hall%2C_Zuiganji_201227.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2020-12-27 14:26:47",
+      "role": "同一正面的冬季实拍，核对开间、欄间与石阶"
+    }
+  ],
+  "source_note": "主图为揚茶2025年6月正面实拍（CC BY-SA 4.0），第二图为Suicasmo 2020年12月同一正面冬景（CC BY-SA 4.0），用于核对开间与屋面。文化厅数据库的本堂记录已核对，另五件瑞岩寺记录（中门、五大堂、庫裏、御成门等）为检索时的同寺其他建筑，不作为本堂依据。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nZuiganji Main Hall (former hojo), Matsushima, Miyagi, built 1609. Draw the FRONT elevation of the long single-storey hall as in photo 2 (photo 3 is a cleaner winter view of the same front). ONE hip-and-gable roof (irimoya) with grey tiles and a long straight ridge; gable ends at left and right. The front is THIRTEEN bays long per the official record: a continuous band of lattice transoms above pairs of plain board doors between slender posts; a low open wooden veranda without railing; a short central stone stair of three steps. Keep the full roof and both eave ends inside the frame. Omit the attached entrance porch at the far left, the stone lantern, trees, raked gravel pattern, banners and people.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 瑞巖寺本堂（元方丈）",
+      "url": "https://online.bunka.go.jp/heritages/detail/173372"
+    },
+    {
+      "title": "文化厅 国指定文化财等数据库 · 瑞巖寺庫裏及び廊下（国宝，不在所绘范围）",
+      "url": "https://online.bunka.go.jp/heritages/detail/184286"
+    },
+    {
+      "title": "ja.wikipedia · 瑞巌寺",
+      "url": "https://ja.wikipedia.org/wiki/%E7%91%9E%E5%B7%8C%E5%AF%BA"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1953-03-31",
+      "juyo_bunkazai_designated": "1900-04-07",
+      "database_detail_id": 173372
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/173372"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2025-06-02 11:20:45",
+  "photo_pixels": [
+    6000,
+    4000
+  ]
+}

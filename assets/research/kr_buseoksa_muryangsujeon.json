@@ -2,9 +2,9 @@
   "id": "kr_buseoksa_muryangsujeon",
   "name": "浮石寺无量寿殿",
   "subject": "单座无量寿殿与台阶",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Muryangsujeon_at_Buseoksa_02.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Muryangsujeon_at_Buseoksa_02.jpg/1920px-Muryangsujeon_at_Buseoksa_02.jpg",
   "author": "Bernard Gagnon",
@@ -64,6 +64,27 @@
       "url": "https://www.aks.ac.kr/ikorea/upload/intl/korean/UserFiles/UKS6_Korea_Religious_Places_eng.pdf",
       "title": "浮石寺无量寿殿形制与年代",
       "note": "现存无量寿殿于1376年重建；676年为寺院创建。"
+    },
+    {
+      "title": "부석사 무량수전",
+      "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_20&levelId=kc_r200327",
+      "publisher": "韩国国史编纂委员会・우리역사넷",
+      "note": "核读1376重修与年代讨论，保留早期形式和重修的区分。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "영주 부석사 무량수전",
+      "url": "https://encykorea.aks.ac.kr/Article/E0024299",
+      "publisher": "韩国学中央研究院・韩国民族文化大百科事典",
+      "note": "核读毁损、1376修复与后世修理史。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "부석사（수어편）",
+      "url": "https://contents.history.go.kr/play/view.do?levelId=tt_b96",
+      "publisher": "韩国国史编纂委员会",
+      "note": "核读阿弥陀佛、正面五间侧面三间、柱心包与팔작屋顶。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "reference_files": [
@@ -127,5 +148,13 @@
     "original_viewed": true,
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "a173d667c589d697f7b9ef0f8b94099420151da767a01b5844100ba979abba34",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "8f4f7026edcfc266759068a8291e79c8a4de444fa3655cfa8e7462958ea8003c"
   }
 }

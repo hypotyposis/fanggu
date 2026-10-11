@@ -2,9 +2,9 @@
   "id": "id_prambanan_shiva",
   "name": "普兰巴南湿婆主庙",
   "subject": "单座湿婆主庙与台阶",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Prambanan_Shiva_Temple.jpg",
   "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Prambanan_Shiva_Temple.jpg",
   "author": "Gunkarta",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "63aed63c3c1f8a3928050b6667dcc8082986281e6fc0afca24775cace578e49e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "9007d8c3480dbc348ba8bb24eef70abe53035e28e9bbc7299395c81478df81ea",
+    "avifSha256": "305fb67b1b07df04277016b7ccd35fdcfff1c48ed2ce1abd0c5614b3d8fc5e2a"
   }
 }

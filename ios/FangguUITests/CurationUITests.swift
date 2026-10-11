@@ -8,7 +8,7 @@ final class CurationUITests: XCTestCase {
 
     func testCatalogStripOpensCurationAndSharePreview() {
         let app = XCUIApplication.isolated()
-        app.launch()
+        app.launchForTest()
         let strip = app.descendants(matching: .any)["curation-strip"].firstMatch
         XCTAssertTrue(strip.waitForExistence(timeout: 10))
         let card = app.descendants(matching: .any)["curation-card-liao_eight"].firstMatch
@@ -36,7 +36,7 @@ final class CurationUITests: XCTestCase {
 
     func testSearchHidesStripAndLibraryShowsProgress() {
         let app = XCUIApplication.isolated()
-        app.launch()
+        app.launchForTest()
         let strip = app.descendants(matching: .any)["curation-strip"].firstMatch
         XCTAssertTrue(strip.waitForExistence(timeout: 10))
         // The floating tab bar collapses while the keyboard is up, so visit 我的 before typing.
@@ -45,7 +45,7 @@ final class CurationUITests: XCTestCase {
         XCTAssertTrue(row.waitForExistence(timeout: 5))
         XCTAssertTrue(row.label.contains("共 4 处"))
         let link = app.buttons["collection-progress-link"]
-        if !link.isHittable { app.swipeUp() }
+        app.reveal(link)
         link.tap()
         let summary = app.staticTexts["collection-summary"]
         XCTAssertTrue(summary.waitForExistence(timeout: 5))

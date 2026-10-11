@@ -28,7 +28,8 @@
 | `assets/` | 图版记录、研究 JSON、队列、清单；图片本身被 Git 忽略 | [图版说明](../assets/README.md) |
 | `assets/asset-lock.json` | 被忽略素材的逐文件 SHA-256 清单 | Git 跟踪 |
 | `ios/` | SwiftUI App、原生测试、XcodeGen 配置、导出脚本、图标源稿 | [iOS 说明](../ios/README.md) |
-| `ios/Fanggu/Resources/catalog.json` | App 读取的目录 | **生成**自 `build-catalog.cjs`，Git 跟踪 |
+| `i18n/en.json`、`i18n/ja.json` | 英文、日文译文：术语、逐个古迹正文、专题名录 | 手工维护；`tests/i18n.test.cjs` 核对完整与对齐 |
+| `ios/Fanggu/Resources/catalog.json` | App 读取的目录（中文） | **生成**自 `build-catalog.cjs`，Git 跟踪；另有 `catalog-en.json`、`catalog-ja.json` 与 `curations*.json` |
 | `ios/Fanggu/Resources/Artwork/` | App 打包的图版 | **同步**自 `assets/`，Git 忽略 |
 | `tests/` | Node 与 Python 回归测试 | [测试一览](../tests/README.md) |
 
@@ -44,9 +45,10 @@ sites.js → plates.js → colored-plates.js → protection-data.js → protecti
       │  + palette.css 的色值（DYN.acc 指向的 CSS 变量）
       │  + assets/research/<id>.json 的本体坐标（siteLatitude / siteLongitude）与来源链接
       ▼
-node ios/scripts/build-catalog.cjs
+node ios/scripts/build-catalog.cjs   （+ i18n/en.json、i18n/ja.json 的译文）
       ▼
-ios/Fanggu/Resources/catalog.json  →  LibraryStore 启动时解码为 [Monument]
+ios/Fanggu/Resources/catalog.json、catalog-en.json、catalog-ja.json
+      →  LibraryStore 按 App 当前语言解码其中一份为 [Monument]
 ```
 
 目录改动（`sites.js`、`catalog.js`、研究 JSON、国保 JSON、`palette.css`）都以重新运行导出结束。`catalog.json` 随 Git 提交，`tests/ios-catalog.test.cjs` 核对它与源数据逐项一致。导出时会去掉 `lede`、`facts`、`quote` 中的 HTML 标签。
@@ -87,7 +89,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `assets/colored-transparent/`、`assets/colored-transparent-avif/`、`assets/color-research/avif-manifest.json` | `scripts/prepare-colored-avif.py` | `queue.json`、`assets/colored/`、`assets/color-studies/v1/`、逐图设色记录 | 清单跟踪；图片忽略 |
 | `colored-plates.js`、`assets/color-research/progress.json`、`prompts.json` | `scripts/collect-colored-plates.mjs` | `queue.json`、逐图设色记录、`avif-manifest.json` | 跟踪 |
 | `protection-data.js` | `scripts/prepare-protection.mjs` | `assets/research/national-protection.json` | 跟踪 |
-| `ios/Fanggu/Resources/catalog.json` | `ios/scripts/build-catalog.cjs` | 上述全部 JS、`palette.css`、研究 JSON | 跟踪 |
+| `ios/Fanggu/Resources/catalog.json`、`catalog-en.json`、`catalog-ja.json`、`curations.json`、`curations-en.json`、`curations-ja.json` | `ios/scripts/build-catalog.cjs` | 上述全部 JS、`curations.js`、`palette.css`、研究 JSON、`i18n/*.json` | 跟踪 |
 | `ios/Fanggu/Resources/Artwork/` | `ios/scripts/sync-artwork.sh` | `assets/plates/`、`assets/colored-transparent-avif/`、`assets/longmen-vairocana.png` | 忽略 |
 | `ios/Fanggu.xcodeproj/` | `xcodegen generate` | `ios/project.yml` | 跟踪 |
 | `ios/Fanggu/Assets.xcassets/AppIcon.appiconset/` | `ios/scripts/build-icon.py` | `ios/icon-concepts/chiwen/AppIcon.appiconset/` | 跟踪 |
@@ -111,7 +113,8 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `LibraryStore.swift` | 个人记录的唯一读写入口：校验、原子保存、备份、导入合并、撤销、旧记录关联 |
 | `Models.swift` | `Monument`（`catalog.json` 的解码类型）、`VisitRecord`、`LibraryData`、`Palette`、`FangguFont` |
 | `Review.swift`、`ReviewRadar.swift` | 六维评价的维度、档位、投影与防抖；六维图的编辑与只读视图 |
-| `CatalogSearch.swift` | 多关键词搜索；自带地区名、国家名与类型别名表，须与 `catalog.js` 保持同步 |
+| `CatalogSearch.swift` | 多关键词搜索；国家、地区、省份名来自目录，类型别名表须与 `catalog.js` 保持同步；同时匹配其他语言的名称（`searchAliases`） |
+| `Localization.swift`、`Localizable.xcstrings`、`InfoPlist.xcstrings` | App 语言解析（跟随系统为 App 选定的语言）、各语言目录文件名与分隔符；界面与权限说明的英日译文 |
 | `LocationCenter.swift` | 位置中心：`CatalogDistance`（按距离排序、附近 30 公里筛选、就在附近 2 公里的纯函数）、`NearbyPlanner`（提醒规则：3 公里、最近 20 处围栏、每日一次）、`LocationCenter`（定位授权、当前位置、围栏与本地通知）；只读个人记录 |
 | `DesignSystem.swift` | 外观设置、印章、标题、分隔线、按钮、输入框等共用控件 |
 | `Haptics.swift` | 触觉反馈的集中实现 |

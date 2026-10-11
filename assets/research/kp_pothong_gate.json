@@ -2,9 +2,9 @@
   "id": "kp_pothong_gate",
   "name": "平壤普通门",
   "subject": "普通门城台与双层檐门楼",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Potongmun_1.jpg/1920px-Potongmun_1.jpg",
   "author": "Christophe95",
@@ -42,6 +42,13 @@
       "url": "https://www.ryongnamsan.edu.kp/univ/en/research/articles/3f9e3767ef3b10a0de4c256d7ef9805d?cp=24",
       "title": "平壤普通门形制与年代",
       "note": "现存普通门据金日成大学资料于1473年大修，后来仍有维修扩建；不把高句丽城址起源作为现存门楼年代。"
+    },
+    {
+      "title": "Pothong Gate in Pyongyang, Boasting of its Long History",
+      "url": "https://www.ryongnamsan.edu.kp/univ/en/research/articles/3f9e3767ef3b10a0de4c256d7ef9805d",
+      "publisher": "金日成综合大学历史学部・Hyon Il Bong",
+      "note": "核读2024研究文章：高句丽起源、1473大修、后续扩建、三间三间与石拱双层门楼、交通送别背景。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "reference_files": [
@@ -102,5 +109,13 @@
     "original_viewed": true,
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "fd425cf82b64eb8fcd2f25602f33c52057eb40df30a1e3006bdf8dc2ad602889",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ad82b664b109ef1b989f65148a7a8e939c5681f9781f0a920ab6b1c7e0ff923b"
   }
 }

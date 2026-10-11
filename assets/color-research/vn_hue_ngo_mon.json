@@ -2,9 +2,9 @@
   "id": "vn_hue_ngo_mon",
   "name": "顺化皇城午门",
   "subject": "午门完整城台与五凤楼",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Meridian_Gate,_Hue_(I).jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Meridian_Gate%2C_Hue_%28I%29.jpg/1920px-Meridian_Gate%2C_Hue_%28I%29.jpg",
   "author": "Supanut Arunoprayote",
@@ -123,7 +123,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "2b9681fa5359849f59b6c0ecc50694d11e493a079fb46c44e3563440f88c61a8",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "98cc8b0b9548295cc30c0dcdb68c1b72666ce16a421e7405f6241734966344f4",
+    "avifSha256": "965a8d9b0b9bc0404fb54554617696e43b8dc2e62ff1692b18f4b884460c7bb6"
   }
 }

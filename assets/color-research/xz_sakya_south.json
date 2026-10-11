@@ -1,0 +1,97 @@
+{
+  "id": "xz_sakya_south",
+  "name": "萨迦寺",
+  "subject": "萨迦寺 · 南寺拉康钦莫大殿正面（1268年建，现状）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/xz_sakya_south.png",
+    "assets/references/xz_sakya_south-photo.jpg",
+    "assets/references/xz_sakya_south-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 萨迦寺 · 南寺拉康钦莫大殿正面（1268年建，现状）\nMATERIAL OBSERVATIONS: 主殿墙面深赭红（石砌抹面），腰线与窗帘白色，窗套黑色，门帘深褐；石阶、石狮灰白色；边玛墙深红嵌鎏金饰；宝瓶刹鎏金；院地为土地与杂草。外城墙（补充图）为灰色墙面，纵向红、白条带，角楼同色。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "主殿墙面深赭红（石砌抹面），腰线与窗帘白色，窗套黑色，门帘深褐；石阶、石狮灰白色；边玛墙深红嵌鎏金饰；宝瓶刹鎏金；院地为土地与杂草。外城墙（补充图）为灰色墙面，纵向红、白条带，角楼同色。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/xz_sakya_south-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sakya,_Haupttempel_des_S%C3%BCdklosters.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Sakya%2C_Haupttempel_des_S%C3%BCdklosters.jpg",
+      "author": "Dieter Schuh at de.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "photo_date": "2009-09-05",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/xz_sakya_south-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sakya_Monastery,_Sakya,_Tibet.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Sakya_Monastery%2C_Sakya%2C_Tibet.jpg",
+      "author": "Moszczynski",
+      "license": "Public domain",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "role": "远景全貌，核对外城墙、角楼与大殿体量关系（不入正面图版）"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：萨迦寺（1073年创北寺；1268年本钦释迦桑布建拉康钦莫；东西79.8米、南北84.8米、通高24.3米、108柱、四大名柱；南寺214×210米、内城墙宽3米高8米、角楼、护城河宽8米；红白灰三色；1961年第一批国保）。条目转引中国西藏网《萨迦寺》、央视《长达七年维修 西藏萨迦寺光芒将再现》",
+      "url": "https://zh.wikipedia.org/wiki/萨迦寺"
+    },
+    {
+      "title": "国务院公报1961年第4号：第一批全国重点文物保护单位名单（编号95 分类号48 萨迦寺 元 西藏自治区萨迦县）",
+      "url": "https://www.gov.cn/gongbao/shuju/1961/gwyb196104.pdf"
+    }
+  ],
+  "original_research": "assets/research/xz_sakya_south.json",
+  "output": "assets/colored/xz_sakya_south.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b8fe9e3a82c1f80edf2ae78bd25b52ec8921303bf31fa9b9703052a0d5739470",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 萨迦寺 · 南寺拉康钦莫大殿正面（1268年建，现状）\nMATERIAL OBSERVATIONS: 主殿墙面深赭红（石砌抹面），腰线与窗帘白色，窗套黑色，门帘深褐；石阶、石狮灰白色；边玛墙深红嵌鎏金饰；宝瓶刹鎏金；院地为土地与杂草。外城墙（补充图）为灰色墙面，纵向红、白条带，角楼同色。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/xz_sakya_south.png",
+        "assets/references/xz_sakya_south-photo.jpg",
+        "assets/references/xz_sakya_south-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-110e2798-c014-4be6-8abe-478d62ebc010.png",
+      "retained_file": "assets/colored/xz_sakya_south.png",
+      "received_at": "2026-10-11T12:17:23.550Z",
+      "sourceSha256": "b8fe9e3a82c1f80edf2ae78bd25b52ec8921303bf31fa9b9703052a0d5739470",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-110e2798-c014-4be6-8abe-478d62ebc010.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:17:23.550Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "b8fe9e3a82c1f80edf2ae78bd25b52ec8921303bf31fa9b9703052a0d5739470",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "afc80388ed869712f2b3cab989bebddec40efeec74a70a90e7f772a6287f8041",
+    "avifSha256": "7767e30883ad283a4e83db62314dd176d9e3d08ad0a6f4d07f07d2347f2cfa47"
+  }
+}

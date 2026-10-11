@@ -15,8 +15,8 @@
 | `catalog.js` 地区、国家、类型 | `build-catalog.cjs` | `facets`、`protection`、`ios-catalog` 测试与全套；App 筛选、搜索 | 同步 `ios/Fanggu/CatalogSearch.swift` 的名称与别名表 |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs` → `build-catalog.cjs` → `sh ios/scripts/sync-artwork.sh assets` | `ios-catalog` 测试；审图页；App | 线稿 PNG 会按新色重建，需要完整素材与 `magick`；随后更新 `asset-lock` |
 | `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs` → `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check`；`protection` 测试与全套；App 标签与搜索 | 不跑图版脚本，不改验收记录 |
-| 新增或重绘古迹 | [手册第 5 节](monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App | 不只调数量断言；新图保持 `pending_user` |
-| 图版处理脚本：`white-matte.py`、`prototype-matte.py`、`line-plate.mjs`、`prepare-colored-avif.py` | 受影响图版重建，再重新人审 | `python3 -B tests/test_transparency.py`；`line-plate`、`prototype-pipeline` 测试 | 处理器哈希进入缓存键；改严格处理器会使旧图缓存失效 |
+| 新增或重绘古迹 | [手册第 5 节](monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App | 不只调数量断言；新图经默认通过命令记为 `approved_default`，不冒充 `approved_user` |
+| 图版处理脚本：`white-matte.py`、`prototype-matte.py`、`line-plate.mjs`、`prepare-colored-avif.py` | 受影响图版重建，再重跑默认通过命令、转码与汇总 | `python3 -B tests/test_transparency.py`；`line-plate`、`prototype-pipeline` 测试 | 处理器哈希进入缓存键；改严格处理器会使旧图缓存失效 |
 | `ios/Fanggu/*.swift` 界面与交互 | 无数据重建 | 相关 `FangguTests`、`FangguUITests`；独立模拟器实际操作 | 图版加载、切换、动效不得改写个人记录 |
 | `Models.swift`、`LibraryStore.swift` 个人记录格式 | 无 | `ReviewTests`、`UXRegressionTests`；新增迁移与失败恢复测试 | 兼容版本 1–4 导入；保存失败保留原文件 |
 | 审图工具：`proof.html`、`color-proof.*`、`color-studies.*` | 只改来源页导航或样式时 `node scripts/prepare-plates.mjs --sources-only` | `plate-tools` 测试；真实浏览器 | 页面互相链接，不指向已移除的网页首页 |
@@ -86,10 +86,10 @@
 1. 先落盘批次计划 `assets/research/<batch>-plan.md` 与本批 ID 列表 `<batch>-batch.json`。
 2. 每处准备照片、来源、白底原件与研究 JSON；线稿核验后立即准备设色记录并加入 `queue.json`。
 3. 更新 `SITES`、`PLACES`、必要分类；默认未到访；核实国保后更新国保 JSON。
-4. 集中重建：`prepare-plates.mjs` → `prepare-colored-avif.py` → `collect-colored-plates.mjs --require-complete` → `prepare-protection.mjs`（若改了国保）→ `build-catalog.cjs` → `sync-artwork.sh`。每条确认成功退出再执行下一条。
+4. 集中重建：`prepare-plates.mjs` → `prepare-colored-avif.py` → `record-plate-review.mjs color --default --all-pending` 与 `line --default --all-pending` → `prepare-colored-avif.py` → `collect-colored-plates.mjs --require-complete` → `prepare-protection.mjs`（若改了国保）→ `build-catalog.cjs` → `sync-artwork.sh`。每条确认成功退出再执行下一条。
 5. 新增批次测试文件（命名约定见 [测试与验证](testing.md#新增测试的约定)），并把新 ID 加入 `tests/catalog.test.cjs` 的覆盖列表；不能只调大数量断言。
 6. Node 全套、`python3 -B tests/test_transparency.py`、`git diff --check`、浏览器审图、App 检查。
-7. 新图保持 `pending_user`；只有用户明确说通过某些 ID，才运行 `node scripts/record-plate-review.mjs color <id> ...`，再转码与汇总。
+7. 新图经上一步记为 `approved_default`（2026-10-05 用户决定：默认通过，不等人眼验收），三种状态都交付。用户主动说某些 ID 通过时，才运行 `node scripts/record-plate-review.mjs color <id> ...` 或 `line <id> ...` 记为 `approved_user`，再转码与汇总；默认通过的图不得写成 `approved_user`。
 8. 素材变化后 `asset-bundle.py lock`，并在汇报中说明图片未随 Git 交付。
 
 ### 修改 iOS 界面或交互
@@ -109,9 +109,9 @@
 
 ### 修改图版处理脚本
 
-1. 严格处理器 `white-matte.py` 的哈希进入 `avif-manifest.json` 的缓存键，改动会让旧图缓存失效并要求重新人审；原型模式使用独立的 `prototype-matte.py`，正是为了不触发这一点。
+1. 严格处理器 `white-matte.py` 的哈希进入 `avif-manifest.json` 的缓存键，改动会让旧图缓存失效、状态回落为 `pending_user`，需重跑默认通过命令；原型模式使用独立的 `prototype-matte.py`，正是为了不触发这一点。
 2. 改完运行 `python3 -B tests/test_transparency.py` 与相关 Node 测试。
-3. 需要重建图版时按手册集中重建；受影响的图重新等待用户审阅，不继承旧验收。
+3. 需要重建图版时按手册集中重建；受影响的图不继承旧验收记录，重新转码后运行默认通过命令，已有 `approved_user` 的图改变后需用户再次确认。
 
 ### 素材文件变化后
 
@@ -133,8 +133,8 @@
 - **汇总器不查队列外的遗漏。** `collect-colored-plates.mjs --require-complete` 只遍历 `queue.json`；新增条目必须先入队列，并核对 `SITES` 与 `COLORED_PLATES` 的 ID 集合相等。
 - **数量断言。** `tests/catalog.test.cjs` 与批次测试含基线数量和手写 ID 列表；新增条目要进入覆盖列表，不能只调大数字。
 - **不要运行 `plan-colored-plates.mjs`。** 它是 2026-09-15 的历史规划器，要求恰好 197 张并重写队列，在当前目录规模下会直接报错。
-- **原型与严格两套模式。** 默认 `prototype`：质量阈值不阻塞交付，用户人眼验收为准。`--strict` 只在用户要求时使用；不要为了让检查通过而改配置。
-- **用户验收只能由用户给出。** `record-plate-review.mjs` 只在用户明确说出通过的具体 ID 后运行；AI 不判通过或淘汰。
+- **原型与严格两套模式。** 默认 `prototype`：质量阈值不阻塞交付，图版按默认通过策略接入（2026-10-05 用户决定）。`--strict` 只在用户要求时使用；不要为了让检查通过而改配置。
+- **验收标签必须诚实。** `approved_user` 只能在用户明确说出通过的具体 ID 后用 `record-plate-review.mjs color|line <id>` 记录；默认通过用 `--default --all-pending` 记为 `approved_default`，不冒充人眼验收。AI 不判通过或淘汰。
 - **不改真实个人数据。** 原生测试用独立模拟器与临时目录；不清空、不导入用户真机或默认模拟器的记录。
 - **iOS 侧有重复的名称表。** `CatalogSearch.swift` 的地区名、国家名、类型别名与 `catalog.js` 需要手工同步，没有自动生成。
 - **两套坐标。** `latitude`、`longitude` 是城镇级显示点，供足迹地图聚合；`siteLatitude`、`siteLongitude` 才是古迹本体坐标，供附近提醒。不要互相替代，也不要把本体坐标加进 `PLACES`。

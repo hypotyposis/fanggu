@@ -1,7 +1,7 @@
 {
   "id": "hb_jindian",
   "subject": "武当山天柱峰明代金殿",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Wudang_Mountain_(54131537640).jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Wudang_Mountain_%2854131537640%29.jpg/1280px-Wudang_Mountain_%2854131537640%29.jpg",
   "author": "xiquinhosilva",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hb_jindian.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "完整明金殿、两重檐、三间立面、铸铜仿木斗拱和门扇；不画左右铜鹤、香炉、蒲团、周边宫观；不是元代单檐古铜殿。"
   ],
@@ -50,6 +50,20 @@
     {
       "title": "湖北省文化和旅游厅：第一至第八批全国重点文物保护单位名录",
       "url": "https://wlt.hubei.gov.cn/bsfw/bmcxfw/wwbhdwml/202309/t20230928_4871978.shtml"
+    },
+    {
+      "title": "金殿前",
+      "url": "https://www.chinawudang.com/jindin/1164.html",
+      "publisher": "中国武当网／十堰市委宣传部、武当山旅游经济特区",
+      "note": "核读元铜殿迁移、北京铸件运输组装、三间三间与铜铸鎏金重檐庑殿。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "四川明初官式建筑的技术来源——以安岳道林寺大殿昂的形制为切入点",
+      "url": "https://www.dpm.org.cn/Uploads/File/2024/09/09/u66de65fec682e.pdf",
+      "publisher": "李林东／故宫博物院院刊2024年第8期",
+      "note": "实际核读PDF页15（印刷50）：1416金殿营建与北京制作、运输装配及其官式技术特点。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "site_recommendation": {
@@ -160,5 +174,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "2faa545adf928a993e42f4e179df16a58a6746b4e103799e2629dbdd9c12ba2c",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "2faa545adf928a993e42f4e179df16a58a6746b4e103799e2629dbdd9c12ba2c",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "f599c2d2cf4c44e0546a2ab416b356358eac7632261671ac8a7975f13219e0fe"
   }
 }

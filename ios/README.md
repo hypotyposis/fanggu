@@ -26,6 +26,16 @@ SwiftUI 原生 App，最低 iOS 18。古迹目录由维护源数据中的 `sites
 
 图鉴首页直接显示搜索、互斥的全部／心愿单／已到访／未标记状态与紧凑列表，默认心愿优先。可切换年代或名称排序、打开展示大图的卡片视图。排序菜单另有“按距离”，“附近”按钮只显示当前位置 30 公里内的条目；两者在第一次使用时才请求“使用期间”定位，拒绝后显示说明且不重复弹窗，其他排序与筛选不受影响。有位置时列表行与大图卡片显示“距此地约 x”，未到访且本体坐标在 2 公里内的条目标“就在附近”；详情页顶部在有位置时显示距离，2 公里内未到访时同样标“就在附近”；足迹、年表、我的页面不显示距离。规则见 [附近提醒与按距离](#附近提醒与按距离)。搜索以空白分隔多个关键词，逐词匹配名称、别名、地点、时代、类型或文保信息，词序不影响结果；搜索框内的清空只清文字，保留状态和其他筛选。未到访的大图卡片与详情页共用到访操作：“记录今日到访”立即保存今天，“补记到访”可用系统日期选择器填写过去的日期，或保持日期不详，并填写笔记。拖动条明确显示“滑动记录今日到访”，终点松手与按钮共用保存逻辑；图版加载或部分拖动不写入记录。国家、地区、时代和类型筛选收在筛选页。品牌长卷放在右上角印章打开的“关于访古”页。详情顶部提供到访和心愿操作，已到访可从“更改状态”直接改为未标记或心愿单，日期、笔记和评价保留。拖动条紧挨图版下方，拖动时可同时看到设色渐显。未有到访记录时，“足迹”显示引导入口；有记录时使用 280pt 高的离线地理概览，保留海岸线参照，邻近地点合并为地区名与地点数，点选后突出地点范围并按地点列出古迹。关闭弹出页后仍保留选中范围；弹出页内的撤销提示由当前页面展示，背后的页面不重复暴露入口。下方到访地点列表支持按地名、省份或古迹名搜索，地图与列表操作只读取个人记录。底图源文件与许可见 [MAP-SOURCES.md](Fanggu/Resources/MAP-SOURCES.md)。年表先选择地域，再选择时期；所有时期都可从菜单直接切换，跨地域时期会自动切换地域。时期标签独占一行、地域与当前年代摘要固定在图形外；150pt 图形使用等距时间轴（每 100 年 70pt），选择时期或节点会自动定位。所选区间有底色、节点有外圈，摘要显示年份范围与已到访数量。实心／半圆／空心分别表示全部／部分／尚未到访。从详情返回保留筛选与选点，“取消选点”回到当前时期列表，“显示更多”逐段加载。辅助字号下状态筛选改为两列，“我的”计数改为逐行展示。地图与“我的”的突出数字共用宋体数字样式；等宽字体用于次级统计、年代和坐标，手写体用于印章等装饰。图鉴、详情和个人列表共用状态名称与文字颜色，年代标签留空时不显示排序用的年份。
 
+## 多语言
+
+App 提供简体中文、English 与日本語，跟随 iOS 为访古解析的语言；可在系统“设置 → 访古 → 语言”单独指定，“我的 → 语言”直接打开该设置页。系统语言不是三者之一时显示中文。界面文字、App 名称、古迹名称、地点、年代、正文、图注、国保条目和筛选术语都已翻译；图版来源的作者与发布者署名保持原文，品牌印章「访古之印」、到访印「亲见」、打卡拖块「访」「印」、评价小印「私评」与访古卡落款「访古」各语言都保留中文。
+
+界面译文在 `Fanggu/Localizable.xcstrings`（源语言 zh-Hans），App 名称在 `Fanggu/InfoPlist.xcstrings`。需要翻译的界面文字用字符串字面量传给 `Text`、`Button` 等，或用 `String(localized:)` 生成；作为普通 `String` 传入的文字不会被翻译。古迹内容由 `build-catalog.cjs` 按 `i18n/en.json`、`i18n/ja.json` 导出 `catalog-en.json`、`catalog-ja.json`，`LibraryStore` 按当前语言读取对应目录。三份目录的古迹 ID、筛选键与图版相同，切换语言不改个人记录和备份。搜索同时匹配其他语言的名称与地点。日文界面使用系统明朝体（Hiragino Mincho），以显示日本字形；中文与英文继续使用 Noto Serif SC。
+
+专题名录的名称与说明由 `curations-en.json`、`curations-ja.json` 提供，定位与相册权限说明在 `InfoPlist.xcstrings`。较大的衬线字号按标题样式随动态字体缩放，避免英文单词在最大辅助字号下被拆开；日文明朝体在根视图统一加了行距；底栏与打卡滑块的文字在辅助字号下不再继续放大，长按底栏可看放大标签。
+
+既有 UI 测试按中文标签操作，`XCUIApplication.isolated()` 在生成独立记录作用域的同时固定为简体中文启动，不受模拟器语言影响，`launchForTest` 的关动画与深链参数追加在语言参数之后；Xcode 方案的测试动作也固定为简体中文，单元测试可直接断言中文文案，从 Xcode 运行 App 时仍跟随模拟器语言。`LocalizationUITests` 以 `isolated(language:locale:)` 分别用英文、日文启动，检查主要页面没有遗留中文或简体字。
+
 ## 专题名录与收集进度
 
 图鉴在未搜索、未筛选且状态为“全部”时，于结果上方显示“专题”横排卡片：名录（如三座半唐构、八大辽构）与线路（如浊漳河谷）各显示“已见 x／y”和进度条，点开进入专题页。专题页列出导语、收录说明、按编辑顺序排列的成员行与进度大数字；成员行与图鉴共用，点开进入详情，返回保留滚动位置。古迹详情在国保标签下方显示“所属名录／线路”入口。“我的”在统计下方列出全部专题进度，并提供“按时代、省份、类型看收集进度”页：总数来自目录，已到访数读取当前个人记录；各组按收录数从多到少排列，时代同数时按起始年代，日本等地的行政区带国名前缀。数据来源与维护约定见 [开发指南](../docs/development.md#模块与依赖)；进度只读个人记录，浏览专题不写入任何记录。
@@ -71,7 +81,7 @@ App 图标使用用户提供的[鸱吻图标素材包](icon-concepts/chiwen/READ
 
 `Fanggu/Review.swift` 定义维度、档位、投影及防抖逻辑，`Fanggu/ReviewRadar.swift` 共用编辑与只读图形。`reviews[id].dimensions` 为维度键到整数的对象，未评分项省略，键为 `eraRarity`、`authenticity`、`construction`、`art`、`scale`、`setting`。旧 `rating` 字段继续保留，不自动换算；`text`、`updatedAt` 和到访记录规则不变。首次保存时将原文件升级为版本 4；读取损坏文件或保存失败时保留原数据。
 
-构建与数据回归使用 `FangguTests/ReviewTests.swift`；交互回归使用 `FangguUITests` 中的 `testSixDimensionReleaseAutosavesAndResets`、`testSixDimensionLowGradesStayIndividuallyDraggable`、`testReviewShortTextAutosavesAndClearIsImmediate` 与 `testAggregateScoreUpdatesInCompactListAndCards`，覆盖松手后直接重启、即时重置、短评自动保存、关闭时补写、空白滚动、密集圆点及列表／卡片综合分更新。在仓库根目录运行以下命令。脚本为当前 worktree 创建并启动独立模拟器，使用 `ios/build/DerivedData`；UI 测试以独立记录作用域启动 App，不会改写模拟器中的真实个人记录，见[测试隔离与并行会话](#测试隔离与并行会话)：
+构建与数据回归使用 `FangguTests/ReviewTests.swift`；交互回归使用 `FangguUITests` 中的 `testSixDimensionReleaseAutosavesAndResets`、`testSixDimensionLowGradesStayIndividuallyDraggable`、`testReviewShortTextAutosavesAndClearIsImmediate` 与 `testAggregateScoreUpdatesInCompactListAndCards`，覆盖松手后直接重启、即时重置、短评自动保存、关闭时补写、空白滚动、密集圆点及列表／卡片综合分更新。评价页用例通过测试专用启动参数直达评价页，重启验证仍真实杀进程，见[测试与验证 · 原生测试](../docs/testing.md#原生测试)。在仓库根目录运行以下命令。脚本为当前 worktree 创建并启动独立模拟器，使用 `ios/build/DerivedData`；UI 测试以独立记录作用域启动 App，不会改写模拟器中的真实个人记录，见[测试隔离与并行会话](#测试隔离与并行会话)：
 
 ```bash
 sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets -only-testing:FangguUITests/FangguUITests/testSixDimensionLowGradesStayIndividuallyDraggable -only-testing:FangguUITests/FangguUITests/testReviewShortTextAutosavesAndClearIsImmediate -only-testing:FangguUITests/FangguUITests/testAggregateScoreUpdatesInCompactListAndCards
@@ -87,7 +97,7 @@ sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUI
 
 撤销按字段恢复：到访恢复原始记录（首次登记可恢复为没有个人覆盖记录），不改变评价；六项重置的撤销只恢复六维，保留重置后写入的短评；清除评价可恢复六维、短评和旧五星，再次编辑该评价则使这次清空的撤销失效。恢复评价时更新时间仍记录本次修改。导入和旧记录关联会结束先前的撤销，避免恢复旧快照覆盖新数据。撤销写入失败时保留当前记录、撤销入口与错误，可继续重试。
 
-`FangguTests/UXRegressionTests.swift` 覆盖关键词词序、空白、别名、状态纠错、首次记录撤销、未知日期、评价恢复与失败重试；`FangguUITests/UIUXFixTests.swift` 覆盖搜索独立清空、今日／补记到访、直接改为未标记、评价撤销及最大辅助字号逐项评分。在仓库根目录运行：
+`FangguTests/UXRegressionTests.swift` 覆盖关键词词序、空白、别名、状态纠错、首次记录撤销、未知日期、评价恢复与失败重试；`FangguUITests/UIUXFixTests.swift` 覆盖搜索独立清空、今日／补记到访、直接改为未标记、评价撤销及最大辅助字号逐项评分。在仓库根目录运行；两个 UI 测试类可加 `FANGGU_PARALLEL_TESTS=1` 在模拟器克隆上并行：
 
 ```bash
 sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUITests/UIUXFixTests -only-testing:FangguUITests/FangguUITests/testArrivalOnlySavesAfterReleasingAtTheEnd -only-testing:FangguUITests/FangguUITests/testSixDimensionReleaseAutosavesAndResets
@@ -95,7 +105,7 @@ sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests -only-testing:FangguUI
 
 ## 测试隔离与并行会话
 
-多个会话同时跑原生测试时，隔离单位是模拟器：同一台模拟器上的两次 `xcodebuild test` 会互相覆盖安装、打断启动，App 容器里的个人记录也会串。`ios/scripts/test-device.sh ensure|delete|list [NAME]` 按名称创建、启动或删除一次性模拟器，默认名称为 `Fanggu <检出目录名>`，可用 `FANGGU_SIM_NAME` 或参数指定，机型由 `FANGGU_SIM_DEVICE_TYPE` 决定；`ios/scripts/run-ios-tests.sh` 用该模拟器的 `id=` 与 `ios/build/DerivedData` 运行测试，不带参数时运行 scheme 内全部测试，其余 `xcodebuild` 参数原样透传，并在发现其他测试进程时提示耗时断言可能受负载影响。任务结束后运行 `sh ios/scripts/test-device.sh delete` 回收设备。
+多个会话同时跑原生测试时，隔离单位是模拟器：同一台模拟器上的两次 `xcodebuild test` 会互相覆盖安装、打断启动，App 容器里的个人记录也会串。`ios/scripts/test-device.sh ensure|delete|list [NAME]` 按名称创建、启动或删除一次性模拟器，默认名称为 `Fanggu <检出目录名>`，可用 `FANGGU_SIM_NAME` 或参数指定，机型由 `FANGGU_SIM_DEVICE_TYPE` 决定；`ios/scripts/run-ios-tests.sh` 用该模拟器的 `id=` 与 `ios/build/DerivedData` 运行测试，不带参数时运行 scheme 内全部测试，其余 `xcodebuild` 参数原样透传，并在发现其他测试进程时提示耗时断言可能受负载影响；`FANGGU_TEST_ACTION` 可把编译与运行分开，`FANGGU_PARALLEL_TESTS=1` 按测试类并行（`FANGGU_PARALLEL_WORKERS` 限制克隆数），见[测试与验证 · 原生测试](../docs/testing.md#原生测试)。任务结束后运行 `sh ios/scripts/test-device.sh delete` 回收设备。
 
 Debug 构建读取环境变量 `FANGGU_LIBRARY_SCOPE`：设置后个人记录写入 `Application Support/Fanggu/scopes/<scope>/library.json`，外观设置使用同名 `UserDefaults` 套件，真实 `library.json` 与标准设置不被触碰；未设置或 Release 构建行为不变。作用域名只保留字母、数字、`-` 和 `_`，最长 64 个字符。`FangguUITests` 中的 `XCUIApplication.isolated()` 为每个用例生成新的作用域，用例从目录默认状态开始，同一实例 `terminate()` 后再 `launch()` 仍沿用该作用域以验证持久化。`FangguTests/TestScopeTests.swift` 覆盖作用域命名、路径隔离与真实记录不受影响。
 

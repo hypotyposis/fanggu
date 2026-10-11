@@ -51,7 +51,8 @@ struct ShareCardOptions: Equatable {
 private struct CardArrivalSeal: View {
     var size: CGFloat = 19
     var body: some View {
-        Text("亲\n见")
+        // A seal impression, like the in-app stamp, keeps its Chinese characters.
+        Text(verbatim: "亲\n见")
             .font(FangguFont.brush(size))
             .lineSpacing(-3)
             .foregroundStyle(CardPalette.red)
@@ -89,7 +90,7 @@ private struct CardFooter: View {
             Text("以细线描的笔意，记下走过与向往的古迹。")
                 .font(FangguFont.mono(9)).foregroundStyle(CardPalette.ink3)
             Spacer()
-            Text("访古").font(FangguFont.brush(17)).foregroundStyle(CardPalette.ink2)
+            Text(verbatim: "访古").font(FangguFont.brush(17)).foregroundStyle(CardPalette.ink2)
         }
     }
 }
@@ -108,7 +109,7 @@ struct MonumentShareCard: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(visited ? "访古 · 亲见" : record.status == .wishlist ? "访古 · 心愿" : "访古 · 图鉴")
                         .font(FangguFont.mono(10)).tracking(2).foregroundStyle(CardPalette.gold)
-                    Text("\(site.dynastyName) · \(site.era)").font(FangguFont.mono(10)).foregroundStyle(CardPalette.ink2)
+                    Text(verbatim: "\(site.dynastyName) · \(site.era)").font(FangguFont.mono(10)).foregroundStyle(CardPalette.ink2)
                 }
                 Spacer()
                 FangguSeal(size: 34)
@@ -127,7 +128,7 @@ struct MonumentShareCard: View {
             }
             .frame(minHeight: 180, maxHeight: .infinity)
             .padding(.top, 14)
-            Text("\(site.place) · \(site.typeNames.joined(separator: " · "))")
+            Text(verbatim: "\(site.place) · \(site.typeNames.joined(separator: " · "))")
                 .font(FangguFont.serif(11)).foregroundStyle(CardPalette.ink2).lineLimit(1)
                 .padding(.top, 10)
             if visited {
@@ -141,6 +142,7 @@ struct MonumentShareCard: View {
                             Text(ReviewDimension.grade(review.dimensions[axis]))
                                 .font(FangguFont.mono(16)).foregroundStyle(review.dimensions[axis] == nil ? CardPalette.ink3 : CardPalette.gold)
                             Text(axis.title).font(FangguFont.serif(9)).foregroundStyle(CardPalette.ink2)
+                                .lineLimit(1).minimumScaleFactor(0.6)
                         }
                         .frame(maxWidth: .infinity)
                     }
@@ -180,15 +182,16 @@ struct CurationShareCard: View {
                 Spacer()
                 FangguSeal(size: 34)
             }
+            // The card image has a fixed height, so long translated names shrink on one line instead of wrapping.
             Text(curation.name)
                 .font(FangguFont.serif(30, weight: .medium)).foregroundStyle(CardPalette.ink)
-                .lineLimit(1).minimumScaleFactor(0.7)
+                .lineLimit(1).minimumScaleFactor(0.5)
                 .padding(.top, 14)
             Text(curation.lede)
                 .font(FangguFont.serif(12)).foregroundStyle(CardPalette.ink2).lineSpacing(4).lineLimit(3)
                 .padding(.top, 8)
             HStack(alignment: .lastTextBaseline, spacing: 6) {
-                Text("\(progress.visited)")
+                Text(verbatim: "\(progress.visited)")
                     .font(FangguFont.serif(40, weight: .medium)).monospacedDigit().foregroundStyle(CardPalette.gold)
                 Text("/ \(progress.total) 已见").font(FangguFont.serif(14)).foregroundStyle(CardPalette.ink2)
                 Spacer()
@@ -213,7 +216,8 @@ struct CurationShareCard: View {
                                 }
                                 .frame(height: 74)
                                 Text(site.short.isEmpty ? site.name : site.short)
-                                    .font(FangguFont.serif(10)).foregroundStyle(CardPalette.ink).lineLimit(1)
+                                    .font(FangguFont.serif(10)).foregroundStyle(CardPalette.ink)
+                                    .lineLimit(1).minimumScaleFactor(0.65)
                             }
                             .frame(maxWidth: .infinity)
                         }
@@ -292,17 +296,10 @@ struct ShareCardSheet: View {
                         }
                         .buttonStyle(FangguOutlineButton())
                         .accessibilityIdentifier("share-card-link")
-                        HStack(spacing: 10) {
-                            Button { save(image) } label: {
-                                Label("保存到相册", systemImage: "photo.on.rectangle").frame(maxWidth: .infinity)
-                            }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                            .accessibilityIdentifier("share-card-save")
-                            Button { copy(image) } label: {
-                                Label("复制图片", systemImage: "doc.on.doc").frame(maxWidth: .infinity)
-                            }
-                            .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
-                            .accessibilityIdentifier("share-card-copy")
+                        // Side by side while both labels fit on one line; stacked otherwise.
+                        ViewThatFits(in: .horizontal) {
+                            HStack(spacing: 10) { saveButton(image, singleLine: true); copyButton(image, singleLine: true) }
+                            VStack(spacing: 10) { saveButton(image); copyButton(image) }
                         }
                     }
                     Text(footnote).font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
@@ -323,17 +320,35 @@ struct ShareCardSheet: View {
         .task(id: options) { message = nil; render() }
     }
 
+    private func saveButton(_ image: UIImage, singleLine: Bool = false) -> some View {
+        Button { save(image) } label: {
+            Label("保存到相册", systemImage: "photo.on.rectangle")
+                .fixedSize(horizontal: singleLine, vertical: false).frame(maxWidth: .infinity)
+        }
+        .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+        .accessibilityIdentifier("share-card-save")
+    }
+
+    private func copyButton(_ image: UIImage, singleLine: Bool = false) -> some View {
+        Button { copy(image) } label: {
+            Label("复制图片", systemImage: "doc.on.doc")
+                .fixedSize(horizontal: singleLine, vertical: false).frame(maxWidth: .infinity)
+        }
+        .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+        .accessibilityIdentifier("share-card-copy")
+    }
+
     private var footnote: String {
         switch content {
-        case .monument: "卡片包含古迹资料、图版、到访日期和你选择附上的评价；私人笔记不会出现在卡片上。"
-        case .curation: "卡片包含专题说明、各处图版和你的到访进度；私人笔记与评价不会出现在卡片上。"
+        case .monument: String(localized: "卡片包含古迹资料、图版、到访日期和你选择附上的评价；私人笔记不会出现在卡片上。")
+        case .curation: String(localized: "卡片包含专题说明、各处图版和你的到访进度；私人笔记与评价不会出现在卡片上。")
         }
     }
 
     private func copy(_ image: UIImage) {
         UIPasteboard.general.image = image
         messageIsError = false
-        message = "已复制，可直接粘贴到聊天窗口"
+        message = String(localized: "已复制，可直接粘贴到聊天窗口")
         Haptics.soft()
     }
 
@@ -343,13 +358,13 @@ struct ShareCardSheet: View {
             DispatchQueue.main.async {
                 guard status == .authorized || status == .limited else {
                     messageIsError = true
-                    message = "未获得添加照片的权限，可在系统设置中开启"
+                    message = String(localized: "未获得添加照片的权限，可在系统设置中开启")
                     Haptics.error()
                     return
                 }
                 guard let data = image.pngData() else {
                     messageIsError = true
-                    message = "保存失败：无法编码图片"
+                    message = String(localized: "保存失败：无法编码图片")
                     Haptics.error()
                     return
                 }
@@ -359,7 +374,8 @@ struct ShareCardSheet: View {
                 }) { saved, error in
                     DispatchQueue.main.async {
                         messageIsError = !saved
-                        message = saved ? "已保存到相册" : "保存失败：\(error?.localizedDescription ?? "未知错误")"
+                        message = saved ? String(localized: "已保存到相册")
+                            : String(localized: "保存失败：\(error?.localizedDescription ?? String(localized: "未知错误"))")
                         if saved { Haptics.success() } else { Haptics.error() }
                     }
                 }

@@ -2,7 +2,7 @@
 
 本文件用于新增或修订线稿的长期制作规则。项目开发约定见 [AGENTS.md](../../AGENTS.md)，入库与验证步骤见 [开发指南](../../docs/development.md)。旧批次的代理分工与工具参数保存在 [历史任务快照](history/line-production-2026-09-15.md)，不适用于新任务。
 
-当前默认为 [原型模式](../../docs/monument-batch-workflow.md#当前原型模式)：以下提示词仍作为生成目标，但不再由 AI 目检或技术阈值判失败并自动重画。保存线稿后直接推进设色，最终以用户人眼验收为准；默认不增加前置人审等待。严格模式的去底预检规则暂不作为原型门槛。
+当前默认为 [原型模式](../../docs/monument-batch-workflow.md#当前原型模式)：以下提示词仍作为生成目标，但不再由 AI 目检或技术阈值判失败并自动重画。保存线稿后直接推进设色；用户于 2026-10-05 决定图版默认通过、不等人眼验收，线稿经 `node scripts/record-plate-review.mjs line --default --all-pending` 记为 `approved_default`，用户明确说通过的 ID 才记 `approved_user`。用户要求先看线稿时只暂停对应项。严格模式的去底预检规则暂不作为原型门槛。
 
 新增古迹同时执行 [增量制图操作手册](../../docs/monument-batch-workflow.md)。先固定照片、所绘范围和可数结构检查点；搜索收口、并发、返工与集中接入按手册执行，线稿形制和实际目检要求仍以本文件为准。
 

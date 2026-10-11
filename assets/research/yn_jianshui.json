@@ -1,7 +1,7 @@
 {
   "id": "yn_jianshui",
   "subject": "建水文庙先师殿",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "建水文庙先师殿形制与弘治营建资料",
@@ -10,6 +10,13 @@
     {
       "title": "云南省住房城乡建设厅：建水风景名胜区",
       "url": "https://zfcxjst.yn.gov.cn/fengjingmingsheng7546/guojiajifengjingmingshengqu7554/1049.html"
+    },
+    {
+      "title": "建水文庙",
+      "url": "https://ynscsp.cn/nd.jsp?_ngc=-1&fromColId=-1&id=28662",
+      "publisher": "云南省图书馆数字支撑平台",
+      "note": "核读官方图书馆文章的五间正面、青石承重柱、格扇雕刻、礼仪位置与1285初建。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "source_note": "1495仅为弘治年间1488—1505的约略排序，按所绘先师殿断代，不以文庙1285始建年代代替。 实拍为形制输入，照片中的遮挡与角度限制留待用户核对，不声称实测。",
@@ -35,7 +42,7 @@
     }
   ],
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "yn_jianshui",
     "name": "建水文庙",
@@ -119,5 +126,13 @@
   "width": 1536,
   "height": 1024,
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5d2c000a-fcc0-4c5a-a8b9-af727717b342.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5d2c000a-fcc0-4c5a-a8b9-af727717b342.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-5d2c000a-fcc0-4c5a-a8b9-af727717b342.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "a6f47a69fc8601e5ab8b8f2052a6aef341f1369f12a71864b1a1f0a98fa38b34",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "56332a11eafc21fcf16072b4ade7eb0bb3444a113221739c39663623249b24c1"
+  }
 }

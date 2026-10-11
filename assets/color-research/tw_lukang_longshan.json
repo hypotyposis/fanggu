@@ -41,11 +41,22 @@
     "seeds": []
   },
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "technical_review": {
       "status": "complete",
       "reviewer": "Codex",
       "note": "三段屋脊、五个正面开口与两根龙柱位置可辨。 已查看实拍、风格样本、两张原件；1960年代结构替换需在正文注明，仍待用户人眼验收。"
-    }
+    },
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "5c68f449c21f9c35629cf12656b6a6ab378d65ddfbaa515c651ca8ae93bd1884",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "e41ae3c3fbf3d1dff2b2cc2ccbb5bbc5e74e11c696c8fb83a7292e8912e52316",
+    "avifSha256": "b98c9cc69486b7a1d4e5f13adbacb024e80d8f675a1c4d06604882a3276fb644"
   }
 }

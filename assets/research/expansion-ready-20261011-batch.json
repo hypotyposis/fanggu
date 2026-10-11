@@ -1,0 +1,2812 @@
+{
+  "batch": "expansion-ready-20261011",
+  "started_at": "2026-10-11T19:41:11.307675+08:00",
+  "baseline_commit": "5bd04ab",
+  "baseline_count": 476,
+  "target_count": 41,
+  "concurrency_target": 8,
+  "mode": "prototype",
+  "jobs": [
+    {
+      "id": "ln_wanfotang",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/ln_wanfotang.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_wanfotang-photo.jpg",
+        "assets/references/ln_wanfotang-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/ln_wanfotang-photo.jpg",
+        "assets/references/ln_wanfotang-2-photo.jpg"
+      ],
+      "subject": "义县万佛堂石窟 · 西区第六窟交脚弥勒大佛正面",
+      "checkpoints": [
+        "龛形：浅弧形露天大龛，龛顶为天然岩面，左右岩壁向前略收；像座为近代砌筑的方形台座（2015年照片中被红布覆盖）。",
+        "主像：单尊交脚弥勒，正面端坐，双脚于踝部交叉下垂（1930年代旧照可见），头部略向前倾，面部为北魏修长脸型，肉髻低平，双手置于腿上。",
+        "背光：一轮大圆形头光加外圈莲瓣与火焰状缠枝纹，外圈嵌一圈圆形化佛小龛（正面可数约十一至十二个）；头光内有同心圆带纹。",
+        "两侧：右侧岩壁有一尊较小的立像与数个小龛（2015年照片右下可见一尊立姿残像），左侧为残损岩面；图版只画主像与背光，次要残龛保留轮廓即可。",
+        "身躯：2015年照片身躯被红色披袍遮住，须以1930年代旧照为准——衣褶简化，台座为素面方台；旧照龛前的砖房与护栏不入图。"
+      ],
+      "materials": "崖壁为灰褐色砂岩，表面多孔风化；主像石质灰色，面部经修补略光滑；背光保留后世彩绘（土红、靛蓝、白），莲瓣白地红线；台座为灰色水泥与石砌；红布披袍、黄色供香、黑色铜钵为现代物。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:42:44.606Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-614a41c8-d085-4dd6-907b-dd8ab5fe73be.png",
+          "retained": "assets/generated/ln_wanfotang.png",
+          "sourceSha256": "c88e82e08bccee8226314b4e30eb5d3dada41a59f4c21b7cb4e66b5459cd0d35",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:46:27.704549+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:47:23.094Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-871397bb-41bd-4c1c-81cd-98a072fd8ea2.png",
+          "retained": "assets/colored/ln_wanfotang.png",
+          "sourceSha256": "92ecea666f56cf8a090499f6b90c13f0f16cca16be760159982a5b1338755171",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/ln_wanfotang.png",
+        "colorPNG": "assets/colored-transparent/ln_wanfotang.png",
+        "colorAVIF": "assets/colored-transparent-avif/ln_wanfotang.avif",
+        "lineSha256": "0ce924c406628c7bed5411343606b542f75cc2a9a3f3d7db550c4dc4e14636bf",
+        "avifSha256": "53201d1df598fbe4d8abc6033187dedda79b36516fc90b2fd6e0d83194f54893",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "ln_xingcheng",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/ln_xingcheng.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_xingcheng-photo.jpg",
+        "assets/references/ln_xingcheng-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/ln_xingcheng-photo.jpg",
+        "assets/references/ln_xingcheng-2-photo.jpg"
+      ],
+      "subject": "兴城古城 · 东门春和门城楼与瓮城正面（城外视角）",
+      "checkpoints": [
+        "瓮城：画面左右各一段高大的灰砖城墙斜向前伸（瓮城两翼），墙顶有雉堞与收分；两翼之间露出主城门墙面。",
+        "券洞：主城门为单孔砖券门，洞口上方墙体平整，墙顶一道女墙；券洞内可见城内街道（图版留白）。",
+        "城楼：两层楼阁——下层为开敞回廊（一排方柱、中央一组槛窗），上层封闭殿身、正面一排槛窗；下层柱廊上出一道腰檐，上层顶为歇山顶，正脊两端有吻、垂脊有走兽。2011年照片各层正面约五间，与辽宁文旅“五开间两层楼阁，重檐回廊歇山顶”一致，按五开间绘。",
+        "屋面：灰色筒瓦，无琉璃；两道檐口平直、角部略翘，角端悬风铎。",
+        "地面：画面下缘只用几条短地线；瓮城内外的摊位、人车、灯柱、电线不画。北门威远门（2010年照片）下层另有一圈低檐，与东门不同，以东门照片为准。"
+      ],
+      "materials": "城墙与瓮城为青灰色大砖包砌、灰浆勾缝，墙面平整略有风化；城楼木构为深褐近黑色，槛窗为暗色木格；屋面灰色筒瓦、灰色脊饰；无彩画与琉璃。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:43:34.172Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-9c1a7c58-37ce-44ac-bce9-7ef46c953f31.png",
+          "retained": "assets/generated/ln_xingcheng.png",
+          "sourceSha256": "9ff6c82422948e0910d193f7d28340784f496dcc6e18bfdb9f0d3e3de7d5813b",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:46:27.704549+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:48:04.234Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-af2934e6-8103-4de8-bef8-4f79806ee984.png",
+          "retained": "assets/colored/ln_xingcheng.png",
+          "sourceSha256": "43aa4846f6e3070f219d2faea4a7e0dc4d67cec68fb9ab6d734d552ed71d6d54",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/ln_xingcheng.png",
+        "colorPNG": "assets/colored-transparent/ln_xingcheng.png",
+        "colorAVIF": "assets/colored-transparent-avif/ln_xingcheng.avif",
+        "lineSha256": "b09526cb49eb52727fb29310af0b19d79b63fdef387250dfa9d7f6303eb2580f",
+        "avifSha256": "d5f8a928d13dd7d143ac0b35eb0597cc2e14392214522ec7d221336a34397ea2",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "ln_guangjita",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/ln_guangjita.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_guangjita-photo.jpg",
+        "assets/references/ln_guangjita-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/ln_guangjita-photo.jpg",
+        "assets/references/ln_guangjita-2-photo.jpg"
+      ],
+      "subject": "锦州广济寺塔 · 八角十三层密檐塔正面全貌",
+      "checkpoints": [
+        "基座：须弥座式基座，上部有一圈仿木斗栱与栏板带（2010年照片可见），下部素面；2023年正面照片基座下部被寺前殿宇遮挡，按2010年照片补全。",
+        "塔身：八角形，正面一面为拱形佛龛内坐佛，龛两侧各一立姿胁侍，龛上方有宝盖与飞天浮雕；相邻两面亦各有龛像，正面可见三个面。",
+        "第一层檐：塔身顶部出一圈砖雕斗栱（每面多攒），承托最宽的第一层檐。",
+        "密檐：第一层檐以上再叠十二层逐层收窄的叠涩檐，合计十三重檐。2010年侧前方实拍（檐角对天）逐檐计数为13；2023年正面照片因对比度低，目视与灰度剖面计数在12—13之间，以侧前方实拍与文献“十三层”为准。各檐角悬风铎，檐面覆灰筒瓦。",
+        "塔刹：1996年复原件——须弥座式刹座上置仰莲、覆钵，上接刹杆串五颗宝珠，杆顶有圆形火焰/圆光饰；八角各有一条拉索（线稿不画拉索）。"
+      ],
+      "materials": "塔身青灰色砖砌，砖缝细密；檐口灰筒瓦、檐角风铎深灰；佛龛内造像与胁侍为灰色砖雕，局部泛黄白；塔刹为灰色砖石与深色金属刹杆；基座灰石。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:44:34.781Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-77c8eda9-94ad-4d9a-81f3-8817fbf97270.png",
+          "retained": "assets/generated/ln_guangjita.png",
+          "sourceSha256": "d868336ae12e61470a22f71ab4a8a7f6fe74f363990c3663824bf3688c2262ea",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:46:27.704549+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:48:41.188Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4c5451ae-ef88-4665-bbf1-b452d910b04c.png",
+          "retained": "assets/colored/ln_guangjita.png",
+          "sourceSha256": "a5aa005408b83a64c255e5d9e7bb3a5c9e7bb364815f2ecd62282f3d4961183c",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/ln_guangjita.png",
+        "colorPNG": "assets/colored-transparent/ln_guangjita.png",
+        "colorAVIF": "assets/colored-transparent-avif/ln_guangjita.avif",
+        "lineSha256": "d2ae3ff202023c671ac09153ca4f0bc07f3d25f93f2169fe6da921768fe9338b",
+        "avifSha256": "e829e2da1933cb01cbec7441dcc87bd512e836d7b193be9f97bcf36f0a39fbfe",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "ln_zhaoling",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/ln_zhaoling.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_zhaoling-photo.jpg",
+        "assets/references/ln_zhaoling-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/ln_zhaoling-photo.jpg",
+        "assets/references/ln_zhaoling-2-photo.jpg"
+      ],
+      "subject": "沈阳清昭陵 · 隆恩殿正面（含须弥座台基与月台三出陛）",
+      "checkpoints": [
+        "屋顶：单檐歇山，正脊两端大吻，垂脊与戗脊各有脊兽；檐口平直、角部起翘，檐下一圈斗栱与彩画额枋。",
+        "廊柱：正面可数六根红色圆柱（灰度“红度”剖面检出6根，间距约90/165/175/175/90）——最外两根为周围廊角柱，其内两根为殿身角柱（透过廊可见），中间两根夹明间；殿身三间等宽。",
+        "门窗：明间为格扇门，门前一道低矮红木栅栏（现代，去除）；次间为菱花槛窗，下为槛墙；门窗在廊柱之后一进处。",
+        "台基：须弥座台基，上缘一圈汉白玉望柱与栏板；正面中部突出月台，月台前沿并列三道踏跺（中为御路），月台左右两端各一道侧阶；踏跺下端立石螭首。",
+        "周边：殿后方城墙体与远处角楼、明楼在照片中可见，图版不画；两侧松树去除。"
+      ],
+      "materials": "屋面黄色琉璃筒瓦，檐口剪边略带绿色；斗栱与额枋青绿彩画加金线；柱身朱红；槛窗槛门朱红带金色菱花；台基与栏杆灰白色汉白玉与青石；月台地面青灰石板。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:45:10.512Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-80dfceb8-050d-4b3c-986e-ec912dd6d892.png",
+          "retained": "assets/generated/ln_zhaoling.png",
+          "sourceSha256": "3d839f55fd680d3c55df3ee14402c5472e741299eae74da2936c8b7b12d41cf5",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:46:27.704549+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:50:04.700Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-a217ae71-e362-4ea3-8380-0bcab7ac7aff.png",
+          "retained": "assets/colored/ln_zhaoling.png",
+          "sourceSha256": "322338cef33b54adefb3927ea3df6b4bb0f04f642b3d486daa8011db36064a46",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/ln_zhaoling.png",
+        "colorPNG": "assets/colored-transparent/ln_zhaoling.png",
+        "colorAVIF": "assets/colored-transparent-avif/ln_zhaoling.avif",
+        "lineSha256": "321ba64e1445f8ff83d743014eb2408a34a46b4a6dcc1ecfca536d46f27ee2ac",
+        "avifSha256": "ae18f0eb37d88bf857d7ce27d5cb796242336de52ca8f5fef947625826bd39ac",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "ln_shenyang_beita",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/ln_shenyang_beita.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_shenyang_beita-photo.jpg",
+        "assets/references/ln_shenyang_beita-3-photo.jpg",
+        "assets/references/ln_shenyang_beita-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/ln_shenyang_beita-photo.jpg",
+        "assets/references/ln_shenyang_beita-3-photo.jpg",
+        "assets/references/ln_shenyang_beita-2-photo.jpg"
+      ],
+      "subject": "沈阳北塔（护国法轮寺塔）· 藏式覆钵式白塔正面",
+      "checkpoints": [
+        "塔基：方形多层须弥座，自下而上为方形台座、束腰（四面有鎏金线条勾边的浮雕壸门，2014年照片下缘可见一角）、上枋，再上为一圈仰莲承覆钵；2014年照片基座中下部被松树遮挡，2009年远景可见基座全高立于红墙院内。",
+        "塔身：浑圆覆钵，正面开一座火焰券形“焰光门”（鎏金门框，内为红底图案），覆钵肩部略宽于底部。",
+        "塔脖：方形白色塔脖（十三天基座），正面绘一对佛眼与眉心点、鼻纹；四角出莲瓣与狮头装饰承相轮。",
+        "相轮：鎏金圆锥形相轮，2014年照片逐环目测约十三重（最上一重半掩于宝盖之下），与“十三天”形制相符。",
+        "宝盖与顶饰：鎏金镂空宝盖，边缘悬风铎（文献记十二枚，正面可见约六枚）；其上仰月、圆日、火焰宝珠。"
+      ],
+      "materials": "覆钵、塔脖与基座白色灰浆粉刷，局部剥落露出灰砖；焰光门鎏金、门内红底；相轮、宝盖、日月火焰鎏金铜；基座浮雕为鎏金线条勾边的白色灰塑；周围松树深绿、院墙红色。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:46:12.276Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-748522c6-0873-4911-8466-cd92a68c0959.png",
+          "retained": "assets/generated/ln_shenyang_beita.png",
+          "sourceSha256": "72ba7233a3448e964cecc67c966a5500043d9de6aef8cc0a61bd5b43a9739171",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:46:58.579446+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:48:10.819Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-11440fe2-f115-4be3-9883-0627d1555807.png",
+          "retained": "assets/colored/ln_shenyang_beita.png",
+          "sourceSha256": "5767f8090a758d36271578301d60640f46520217f9a6cd7fed121c076ac4027e",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/ln_shenyang_beita.png",
+        "colorPNG": "assets/colored-transparent/ln_shenyang_beita.png",
+        "colorAVIF": "assets/colored-transparent-avif/ln_shenyang_beita.avif",
+        "lineSha256": "1580675ab9e6e1a73c57532621220201832e8a77cc955f01d6e96fd27b26ab03",
+        "avifSha256": "e505ae9d2a019c8f96e7af39f61d88ee1e7a4400a0cc8a8eb53048a762b51719",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jl_haotaiwangbei",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/jl_haotaiwangbei.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jl_haotaiwangbei-photo.jpg",
+        "assets/references/jl_haotaiwangbei-2-photo.jpg",
+        "assets/references/jl_haotaiwangbei-3-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jl_haotaiwangbei-photo.jpg",
+        "assets/references/jl_haotaiwangbei-2-photo.jpg",
+        "assets/references/jl_haotaiwangbei-3-photo.jpg"
+      ],
+      "subject": "集安好太王碑 · 碑体正面（碑亭内）",
+      "checkpoints": [
+        "整体：一根不规则的四面方柱，自下而上略有收分并在中上部微向一侧倾斜，顶部略呈圆弧斜面，四角圆钝而非直棱。",
+        "表面：天然岩面凹凸起伏、多孔，正面可见自上而下的竖行刻文痕迹（线稿只以若干浅淡竖线示意行列，不画可读文字）。",
+        "基部：碑底直接坐在一块低矮的天然岩石上（碑亭内地坪略高于岩基），无雕饰碑座。",
+        "比例：1903年旧照中成年人身高约为碑高三分之一弱，核对碑高6.39米。",
+        "环境：现代碑亭的方柱、落地玻璃窗、红色护栏、说明牌与游人均为背景，去除。"
+      ],
+      "materials": "碑体为灰黑至灰褐色角砾凝灰岩，表面粗糙多孔、有浅色风化斑块与裂纹；刻字处略显白色；岩基灰黄色；碑亭地面灰白石板（不入图）。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:46:41.045Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-6a53a9a0-d835-4b02-9d28-e17d42664419.png",
+          "retained": "assets/generated/jl_haotaiwangbei.png",
+          "sourceSha256": "b480cc26b620d7f17134a680c4909e3a1ebf110788efaa1e3640724b9da23992",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:47:44.407752+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:55:24.626Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-431a7b1f-8dc2-4b56-a53d-f9b15e67baa2.png",
+          "retained": "assets/colored/jl_haotaiwangbei.png",
+          "sourceSha256": "6de7db867b900e8cda20c461a4d3a87d2d08e325ac09ace535cdc9a6d1b05e93",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/jl_haotaiwangbei.png",
+        "colorPNG": "assets/colored-transparent/jl_haotaiwangbei.png",
+        "colorAVIF": "assets/colored-transparent-avif/jl_haotaiwangbei.avif",
+        "lineSha256": "b929885b9a06d51adc1f4ecf67c9aef458de394807daa88dea7ec82a7c823c2c",
+        "avifSha256": "f12a9d791418261f0c0e270f08c2ba5f5556eb4917e8c0a558d5d5fc542dd3b2",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jl_wandu",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/jl_wandu.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jl_wandu-photo.jpg",
+        "assets/references/jl_wandu-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jl_wandu-photo.jpg",
+        "assets/references/jl_wandu-2-photo.jpg"
+      ],
+      "subject": "集安丸都山城 · 石砌瞭望台正面",
+      "checkpoints": [
+        "整体：一座近似梯形轮廓的石砌台体，底边最宽、向上逐层内收，左右两侧坡度不同（左侧坍塌较多、轮廓更缓，右侧较陡）。",
+        "砌石：下部三至四层为规整的长方形楔形石块顺砌，缝隙明显；中部右侧仍保留整齐的层砌面，中部左侧与顶部为塌落后的乱石堆。",
+        "台顶：无建筑残存，仅乱石；台体中部正面有一块现代“保护文物 禁止攀登”牌（去除）。",
+        "台前：草地与一块斜立的现代说明牌（去除）；台后为山坡与树木（去除）。2023年6月斜侧照片显示台体右侧角部砌石层数与正面一致。"
+      ],
+      "materials": "石块为灰色至淡红褐色花岗岩，表面粗糙、棱角分明；石缝间长有杂草与小灌木；台前草地黄绿；无灰浆。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:47:17.676Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-127ba56c-09d1-4fa2-b60f-8402982d2e67.png",
+          "retained": "assets/generated/jl_wandu.png",
+          "sourceSha256": "2210c7f3eaa6e2882a8bba0e011ba2d1c646a4ffb30e75c9ef05ba28afc081e7",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:48:08.959387+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:54:51.842Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-6c327b1c-47be-4e63-b653-74338017f852.png",
+          "retained": "assets/colored/jl_wandu.png",
+          "sourceSha256": "7daf2f8e816f267e6e7904c1994275231ee846b354626e30f03f05959a34ee0b",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/jl_wandu.png",
+        "colorPNG": "assets/colored-transparent/jl_wandu.png",
+        "colorAVIF": "assets/colored-transparent-avif/jl_wandu.avif",
+        "lineSha256": "f4ec38982d960165831c1e9990d7a434e00343d6b50a1b30230eedf697d17622",
+        "avifSha256": "cf7d4ba52c415f0aa7f0c7237786d468b2cc847f32ad2f7c3008f8c77623dba8",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hlj_wenmiao",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/hlj_wenmiao.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hlj_wenmiao-photo.jpg",
+        "assets/references/hlj_wenmiao-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hlj_wenmiao-photo.jpg",
+        "assets/references/hlj_wenmiao-2-photo.jpg"
+      ],
+      "subject": "哈尔滨文庙 · 大成殿正面（含月台与汉白玉栏杆）",
+      "checkpoints": [
+        "开间：前檐可数十二根红色圆柱（“红度”剖面检出12根，间距自左至右约362/352/347/417/457/520/477/427/378/378/462像素，明间最宽），分出十一开间；每间为格扇门（中部）或槛窗（两端），全部为深红木格带金线。",
+        "屋顶：重檐庑殿，上檐正脊两端大吻、四条垂脊，下檐绕殿一周；两道檐下各一圈斗栱与青绿彩画额枋，上檐下正中悬“大成殿”竖匾（匾留空不写字）。",
+        "台基与月台：高台基，正面突出月台；月台正面三出陛（中为御路浮雕），左右各一出陛，全部为汉白玉望柱栏杆围合，栏板有透雕纹样。",
+        "附属：殿前铜鼎香炉一座、花盆、说明牌、红色隔离绳均为现代物，去除；两侧配殿与树木不入图。"
+      ],
+      "materials": "屋面黄色琉璃筒瓦，脊饰黄琉璃；斗栱、额枋青绿彩画加金线、朱红地；柱身与门窗深红近赭，格心金线；台基灰白花岗石，栏杆汉白玉；地面青灰石板。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:41:57.891161+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:48:07.140Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-03f31c08-2ca8-4e0c-8aca-efa081567b0e.png",
+          "retained": "assets/generated/hlj_wenmiao.png",
+          "sourceSha256": "3c65f16830c41d92b3a5130520c5c9526b06f833f9f20b07bb2dc2cd71d4afc9",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:52:04.944291+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:53:00.394Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-b05bd684-6b53-4a38-a8c8-28a1bd8616fb.png",
+          "retained": "assets/colored/hlj_wenmiao.png",
+          "sourceSha256": "ecabb795db5c940c723c2037c5a35f470e6f8b80aeb5d693d603723cfb5aa23d",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:41:57.891161+08:00",
+      "delivery": {
+        "line": "assets/plates/hlj_wenmiao.png",
+        "colorPNG": "assets/colored-transparent/hlj_wenmiao.png",
+        "colorAVIF": "assets/colored-transparent-avif/hlj_wenmiao.avif",
+        "lineSha256": "361d55055db10676152b851c8ef7c3046df44625a5f8531edf60469bc43592d5",
+        "avifSha256": "bd65bb84c56f9dc871b3d3561e3c5385cd3c4bd77e3fa4a8555bf7afbd001292",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "ln_chaoyangbei",
+      "batch": "dongbei-20261005",
+      "candidate": "assets/research/candidates/dongbei-20261005/ln_chaoyangbei.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_chaoyangbei-photo.jpg",
+        "assets/references/ln_chaoyangbei-eaves-crop.png"
+      ],
+      "missing": [
+        "assets/references/ln_chaoyangbei-photo.jpg"
+      ],
+      "subject": "朝阳北塔 · 方形十三层密檐塔南面全貌",
+      "checkpoints": [
+        "台基：方形砖砌须弥座式基座，上有一圈仿木栏板（照片下缘），基座正面中央一道台阶；基座前的现代地面与围栏不画。",
+        "塔身：高大的方形第一层塔身，正面正中一尊结跏趺坐佛（圆形头光与背光），两侧各一胁侍菩萨，两外侧各一座小型灵塔浮雕，上部一排飞天与宝盖；塔身四角有角柱。",
+        "第一层檐：塔身顶部一圈砖雕斗栱（正面可数约九攒），承托最宽的第一层檐。",
+        "密檐：第一层檐以上十二层叠涩檐逐层收窄，合计十三重檐。2015年实拍（3264×4912）检查：上半段裁图（行1149—1965）目视数到7层，下半段裁图（行1891—2726）接续数到第13层（宽檐）；中轴灰度剖面在行1424—3095检出11道檐影，加上裁图起点以上的2道，同为13。上一轮三稿檐数分别为14、12、12，均未通过。",
+        "塔顶：十三层檐上为平顶，中央一座绿琉璃覆钵状宝盖（现状修复件），顶出细刹杆；四角有细拉索（不画）。"
+      ],
+      "materials": "塔身与檐为青灰色砖，檐面覆灰筒瓦、檐端有瓦当滴水；塔身浮雕砖雕灰色、局部泛土黄；塔顶宝盖为绿色琉璃；基座灰砖、栏板灰白。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:48:09.046348+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:51:49.261Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-0b3a3637-456f-4560-95dc-84690c8a556a.png",
+          "retained": "assets/generated/ln_chaoyangbei.png",
+          "sourceSha256": "920590e3bf09d4717a632bcc060a1b5469e6c5a66f5478444a1d8298171354c7",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:52:04.944291+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:53:39.803Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-0ceb372e-1e0c-4d4a-9db6-3fa8c4997190.png",
+          "retained": "assets/colored/ln_chaoyangbei.png",
+          "sourceSha256": "3d5da5755f4990db34113e43a91a14c3e2e327df82d5a6e371f9df699c6a60ab",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:48:09.046348+08:00",
+      "delivery": {
+        "line": "assets/plates/ln_chaoyangbei.png",
+        "colorPNG": "assets/colored-transparent/ln_chaoyangbei.png",
+        "colorAVIF": "assets/colored-transparent-avif/ln_chaoyangbei.avif",
+        "lineSha256": "c25c60df1b14f692022337108b68c1086f0c5fb90bff55e839177ec271a99063",
+        "avifSha256": "06cfff9285d65a8a0ee84f08fd6ade4866bfdec7608b210443df27ade01bff50",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hb_jingzhou_wall",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hb_jingzhou_wall.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_jingzhou_wall-photo.jpg",
+        "assets/references/hb_jingzhou_wall-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hb_jingzhou_wall-photo.jpg",
+        "assets/references/hb_jingzhou_wall-2-photo.jpg"
+      ],
+      "subject": "荆州城墙 · 东门寅宾门城台与宾阳楼正面（自城外东侧）",
+      "checkpoints": [
+        "城台：灰色条砖砌筑，略有收分，顶部一排雉堞（垛口）贯通全幅；正中一座半圆券门洞，券顶上方嵌一块横长石门额（线稿留空白牌位）；门洞内可见一扇钉饰木门；城台两侧城墙向左右延伸到画幅外。",
+        "城楼：两层、重檐歇山。下层为开敞柱廊，一排纤细红柱（主图可数约七至八个开间，以照片为准，不得减为三间或五间），柱间原悬红灯笼（去除）；柱上额枋绘青绿彩画，其上出下檐，檐角起翘。",
+        "上层：四周绕平座，深红木栏杆；殿身为红色格扇门窗，正中悬横匾（留白）；上檐歇山顶，正脊两端鸱吻、垂脊有走兽，灰筒瓦；上檐宽度略小于下檐。",
+        "画面去除：左侧蓝色座椅看台、右侧金色花车道具、门洞内行人与汽车、墙面上的三个大字、墙头藤蔓；只保留城台一段、门洞与城楼。"
+      ],
+      "materials": "城台与城墙为青灰色条砖，砖缝灰白；城楼木构朱红色（柱、栏杆、格扇），额枋青绿彩画间夹金色回纹带，屋面青灰色筒瓦，脊饰灰黑；石门额深灰；地面灰色石板与碎石。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:52:05.035832+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:55:29.041Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-d39a83d0-b8eb-43eb-aad0-21fe95bc0d10.png",
+          "retained": "assets/generated/hb_jingzhou_wall.png",
+          "sourceSha256": "63a606f3d58010e41a04df222623bd563481ead71f61aa2670f1b2452b5a309f",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.004190+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:00:47.816Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-24ce31d0-ca16-461f-a250-965852189e75.png",
+          "retained": "assets/colored/hb_jingzhou_wall.png",
+          "sourceSha256": "b80646b5b34c62d4b6d701ce29d70ef0a642a2e59292984ce4058856db281ef3",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:52:05.035832+08:00",
+      "delivery": {
+        "line": "assets/plates/hb_jingzhou_wall.png",
+        "colorPNG": "assets/colored-transparent/hb_jingzhou_wall.png",
+        "colorAVIF": "assets/colored-transparent-avif/hb_jingzhou_wall.avif",
+        "lineSha256": "d9bae5489d3885751b2ce9fc120e5a517869a8128badedc2c75ecb49206906d0",
+        "avifSha256": "577d014dec1e04c8a6d0b75b2824c6267413e95632303ae33fae6ea247b3b37b",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hb_xiangyang_wall",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hb_xiangyang_wall.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_xiangyang_wall-photo.jpg",
+        "assets/references/hb_xiangyang_wall-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hb_xiangyang_wall-photo.jpg",
+        "assets/references/hb_xiangyang_wall-2-photo.jpg"
+      ],
+      "subject": "襄阳城墙 · 临汉门（小北门）城台与城楼正面",
+      "checkpoints": [
+        "城台：砖砌（青灰与土黄砖混砌），正中一座半圆券门洞，券顶上方嵌一块横长石匾（留白）；台顶一排方形雉堞贯通，雉堞之间露出城楼下层。",
+        "城楼：单层殿身、重檐歇山。下檐由四根红柱分成三间（补充图可数清四柱），柱头有青绿彩绘的雀替与额枋；上层为红色格扇窗墙，正中悬横匾（留白）；上檐歇山顶，正脊两端鸱吻、垂脊走兽，灰瓦。",
+        "下檐与上檐均四角起翘，上檐明显短于下檐；门楼宽度约占城台顶面的三分之二，两侧露出雉堞；城台两侧城墙延伸出画幅。",
+        "画面去除：墙面上的文保碑牌与说明牌、灯光、游人、面包车与汽车、花箱、地面字母装置、城头人群。"
+      ],
+      "materials": "城砖以青灰色为主，夹杂土黄与赭红色旧砖，砖缝白灰；城楼柱、枋、格扇朱红，雀替与额枋青绿彩画点金，屋面灰筒瓦，脊饰灰黑；石匾深灰底白字；地面浅灰铺装。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:52:05.035832+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:56:10.773Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-05562965-a12e-4bf4-b785-1ccf671a1e90.png",
+          "retained": "assets/generated/hb_xiangyang_wall.png",
+          "sourceSha256": "0035ff687f6f26296b232ac034a641682bd339dc106d88661053568a35e4ade9",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.004190+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:01:33.325Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-2a743075-acc5-45bd-a94d-314ebfe521fc.png",
+          "retained": "assets/colored/hb_xiangyang_wall.png",
+          "sourceSha256": "0a604b8a7b1deceacdb4123de0c979540217c513183d4baaa51e28af13d3345f",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:52:05.035832+08:00",
+      "delivery": {
+        "line": "assets/plates/hb_xiangyang_wall.png",
+        "colorPNG": "assets/colored-transparent/hb_xiangyang_wall.png",
+        "colorAVIF": "assets/colored-transparent-avif/hb_xiangyang_wall.avif",
+        "lineSha256": "3d67702f2f1c3c2cd3a0cfc4b31b4ca8418747896136fe792bb72cdf71cfed9f",
+        "avifSha256": "a05cdeaf26e7f95460f619b944559283116fe4e43b42a3d3c72371d40f7574b7",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hb_taihui",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hb_taihui.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_taihui-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hb_taihui-photo.jpg"
+      ],
+      "subject": "荆州太晖观 · 朝圣门、阙楼与祖师殿正面（高台金顶）",
+      "checkpoints": [
+        "底部：高大的红褐色砖砌台基，正面分为左右两座塔楼状体量（阙楼）与中央略凹进的门段；两座阙楼上部各开一扇半圆拱窗，顶覆黄琉璃瓦歇山顶，山花朝前。",
+        "中央：朝圣门为三座并列的半圆券门（中间大、两侧小），中券上方横匾（留白），门楼覆黄琉璃瓦歇山顶，檐下有斗栱与青绿彩画；门前平台上的石香炉去除。",
+        "顶部：祖师殿在台顶正中，黄琉璃瓦歇山顶，正脊中央宝顶、两端鸱吻，略高于两侧阙楼；三座黄瓦屋顶自左至右为阙楼—祖师殿—阙楼，中间最高。",
+        "台前：一道石阶从院中直上，分两段、中有平台，两侧石栏板与望柱；院中铜香炉亭、焚香炉、两侧白山墙的配殿与树木均不画。"
+      ],
+      "materials": "台基与阙楼墙面为红褐色（砖砌抹灰，局部露青砖）；屋面黄色琉璃瓦，脊饰灰色；门楼檐下斗栱青绿，额枋暗红；石阶与栏板灰白色；院地水泥灰色。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:52:05.035832+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:56:40.395Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-ce47ef3e-a9a1-4030-ba49-73ddddc6ea4d.png",
+          "retained": "assets/generated/hb_taihui.png",
+          "sourceSha256": "e82e4af2712e91f86db77f6599431ae96207dca7e6619c22a58adc597fa04910",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.004190+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:03:57.251Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-ecae829a-6b97-4a80-9ef7-b6be7425c423.png",
+          "retained": "assets/colored/hb_taihui.png",
+          "sourceSha256": "b9c04562c122ee98a640f01e99802e1177fd2c43c96e4c9383be7daacd314fae",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:52:05.035832+08:00",
+      "delivery": {
+        "line": "assets/plates/hb_taihui.png",
+        "colorPNG": "assets/colored-transparent/hb_taihui.png",
+        "colorAVIF": "assets/colored-transparent-avif/hb_taihui.avif",
+        "lineSha256": "2925afb7e2a53a93686639487d3bc2172daa0a0455c61f6e9ca49d990f6c6424",
+        "avifSha256": "82b6343b106be22b43b1903bbafe75eec33bcd489a7a80f70a166ee4af565c3b",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hb_zhongxiang_wenfeng",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hb_zhongxiang_wenfeng.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_zhongxiang_wenfeng-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hb_zhongxiang_wenfeng-photo.jpg"
+      ],
+      "subject": "钟祥文风塔 · 覆钵式砖塔全貌（正南面）",
+      "checkpoints": [
+        "自下而上：八角形塔基（照片下部被铁丝网与草木遮挡，资料记三层收砌，线稿可简化为一座八角台座）；其上为钟形覆钵塔身，正面开一尖拱形眼光门，门内佛像只留轮廓。",
+        "覆钵之上为一段方形束腰（塔脖子），再上是逐层收分的相轮锥体：照片裁图可数约二十道环，资料记二十一层相轮，每层之间有一圈小砖雕斗栱齿饰。",
+        "顶部：相轮顶端为圆柱短颈，上承三重轮盘宝盖（下大上小），宝盖边缘悬铃；最上为细长刹杆与镂空圆环的刹顶。",
+        "画面去除：前景铁丝网与立杆、右侧树木、地面杂草与挡墙，仅保留塔及两三条短地面线。"
+      ],
+      "materials": "塔身通体刷白（略泛黄），相轮环间砖雕呈浅赭；宝盖与刹杆为深褐色铁件，铜铃深色；塔基露出青砖处灰色。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:52:05.035832+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:57:04.124Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-8013d071-e3c0-4088-ae67-249d5ce984ff.png",
+          "retained": "assets/generated/hb_zhongxiang_wenfeng.png",
+          "sourceSha256": "6a9be8fc65d16bf88ea262d9a8139b68398f6d1c0e880f57b09ee8c61705237a",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.004190+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:02:08.435Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-2c8f00e3-18b3-476f-89c6-32b88cf51d8a.png",
+          "retained": "assets/colored/hb_zhongxiang_wenfeng.png",
+          "sourceSha256": "d564cbe49deeea215d115e7f2d0847274c6f0044cc2ba7a6844cf81f28bc9f66",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:52:05.035832+08:00",
+      "delivery": {
+        "line": "assets/plates/hb_zhongxiang_wenfeng.png",
+        "colorPNG": "assets/colored-transparent/hb_zhongxiang_wenfeng.png",
+        "colorAVIF": "assets/colored-transparent-avif/hb_zhongxiang_wenfeng.avif",
+        "lineSha256": "7b5e921ba225b73664b258f3c13e244dbfef31404ac383222537f59972b04251",
+        "avifSha256": "39b81eb5fa1ed6cd08ecc8fd0e0517d4fdf951004ddd53fcbd6977a67a801119",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hb_huanghelou",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hb_huanghelou.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hb_huanghelou-photo.jpg",
+        "assets/references/hb_huanghelou-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hb_huanghelou-photo.jpg",
+        "assets/references/hb_huanghelou-2-photo.jpg"
+      ],
+      "subject": "黄鹤楼 · 1985年重建主楼正面（黄鹤楼匾一侧）",
+      "checkpoints": [
+        "主楼五层，每层四面出檐，各面中央凸出一座歇山山面朝前的抱厦顶，两侧各一个翘角，因此每层正面可见三个翘角；五层檐口自下而上逐层内收，整体呈塔状。",
+        "各层檐下为一圈回廊，深红木栏杆（回纹）；每层正面可见约五个开间的廊柱；顶层正面悬横匾（留白），顶为四角攒尖，顶上葫芦宝顶。",
+        "底层外围另有一圈宽大的单檐抱厦与廊庑，黄琉璃瓦，正面正中亦悬匾（留白）；底层立在带白石栏杆的台基上，两侧有石阶。",
+        "画面去除：台前铜鹤雕塑、灌木、游人、红灯笼、路灯与两侧坡道栏杆；保留台基轮廓与正面台阶。"
+      ],
+      "materials": "屋面黄色琉璃瓦，檐口翘角处带绿色琉璃剪边；木构、栏杆与柱均为深赭红色；檐下斗栱与彩画青绿；台基与栏杆白色石材；宝顶金黄。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:53:20.115463+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:54:03.201Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-ba95ebe8-ce61-4e3f-8655-3a4d73bd08c7.png",
+          "retained": "assets/generated/hb_huanghelou.png",
+          "sourceSha256": "0f7fcbf72730dc41c3f3b75f5cf2e82983d28c4d9d8510c7017910cd9ab07e33",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:54:54.381476+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:57:02.451Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-3ce7a02d-2eeb-4863-bb88-d922e4a48ab0.png",
+          "retained": "assets/colored/hb_huanghelou.png",
+          "sourceSha256": "a92bcad72827a63f0b662e0385b27dd356da371698a7f9a26a1b3a35fc4af244",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:53:20.115463+08:00",
+      "delivery": {
+        "line": "assets/plates/hb_huanghelou.png",
+        "colorPNG": "assets/colored-transparent/hb_huanghelou.png",
+        "colorAVIF": "assets/colored-transparent-avif/hb_huanghelou.avif",
+        "lineSha256": "d68610186490602f602967c7bad88ae67f1129ef6028660b4eb6498caa538f31",
+        "avifSha256": "76d742b3d3aeeb455ff6418f72219375632b92c1fa54c1445d525722ac4f0f97",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hu_yuelu",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hu_yuelu.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hu_yuelu-photo.jpg",
+        "assets/references/hu_yuelu-2-photo.jpg",
+        "assets/references/hu_yuelu-3-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hu_yuelu-photo.jpg",
+        "assets/references/hu_yuelu-2-photo.jpg",
+        "assets/references/hu_yuelu-3-photo.jpg"
+      ],
+      "subject": "岳麓书院 · 大门正面（白墙青瓦、惟楚有材联）",
+      "checkpoints": [
+        "单层、硬山灰瓦顶，屋脊为一道镂空的花脊（琉璃构件拼成的连续图案），檐口一排黄绿琉璃沟头滴水；屋面正面坡较长，檐下露出椽头与一道红色檐枋。",
+        "正面以白粉墙为主：正中一间为凹进的门洞，黑漆双扇大门（照片中敞开），门两侧各一座汉白玉抱鼓石；门楣上方悬横匾（留白），门柱上挂一对竖联（留白）；门洞外两根方形灰石柱撑起前檐。",
+        "门洞左右各一间白墙，墙上各悬一盏方形灯笼（去除）与一块竖长的字板（留白）；照片两端被截断，资料记五间并出三山屏墙，线稿按照片可见范围画到两侧白墙为止，不臆造屏墙。",
+        "台阶：门前一组灰色石阶（资料记十二级，照片下部可见数级），中间一道平台；透过门洞可见二门的灰瓦屋顶与匾额，线稿中门洞内留白或仅示意远处门廊轮廓。"
+      ],
+      "materials": "墙面白色粉刷；屋面青灰色筒瓦，花脊与滴水黄、绿、蓝琉璃；门扇与匾额黑色，匾文与边框金色；石柱与抱鼓石浅灰白色；台阶灰色石材；联板白底黑字；檐枋暗红。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:53:51.770040+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:54:40.835Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-1f4827d3-48c6-4efa-bf33-e15b4496350a.png",
+          "retained": "assets/generated/hu_yuelu.png",
+          "sourceSha256": "f57191416e488ec0b1a041e826f79e1862c45fc94acdab2c51a9da1016dd1296",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:54:54.381476+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:56:12.243Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-743522ac-e37e-4329-8905-c0a51a4be073.png",
+          "retained": "assets/colored/hu_yuelu.png",
+          "sourceSha256": "1c6a09662d1ec7194f835823bd0b4b3a8147a1c2127488eded7c0f95ae7a80ac",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:53:51.770040+08:00",
+      "delivery": {
+        "line": "assets/plates/hu_yuelu.png",
+        "colorPNG": "assets/colored-transparent/hu_yuelu.png",
+        "colorAVIF": "assets/colored-transparent-avif/hu_yuelu.avif",
+        "lineSha256": "7f33603f47fe2e84909ef788aab104b2a3b64caa70fbd1baca30bffcba388d34",
+        "avifSha256": "628e6f97b7b0e61b45e31b63da81b68980eca76db757803086a7015be95eacdc",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "hu_liuyang_wenmiao",
+      "batch": "hubei-hunan-20261005",
+      "candidate": "assets/research/candidates/hubei-hunan-20261005/hu_liuyang_wenmiao.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/hu_liuyang_wenmiao-photo.jpg",
+        "assets/references/hu_liuyang_wenmiao-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/hu_liuyang_wenmiao-photo.jpg",
+        "assets/references/hu_liuyang_wenmiao-2-photo.jpg"
+      ],
+      "subject": "浏阳文庙 · 大成殿正面与月台",
+      "checkpoints": [
+        "大成殿两重檐：上檐歇山，正脊中央一座葫芦形宝顶、两端鸱吻，垂脊端部有小兽；上层殿身为一排连续的木格栅板，正中嵌竖匾（留白）；下檐为宽大的单坡出檐，檐下一道深色额枋。",
+        "下檐由六根方形石柱分成五间（裁图 liuyang_cols 可数清六柱）：中间一间最宽（约为相邻间的一倍半以上），两端间最窄；柱头上部各有一对雕龙形的斜撑（雀替）；柱身有阴刻对联（留白）。",
+        "各间均为格扇门：中间一间四扇（照片中敞开），其余各间格扇密排，格心为圆形团花与万字纹，裙板有浮雕；格扇以线条勾勒，不作黑色填充。",
+        "殿前月台：三面围石栏杆（回纹栏板），正中一块盘龙御路石，御路两侧各一道石阶，月台前角各一只石狮（可保留为小剪影或去除）；两侧翘角的钟鼓亭与两庑不画，前景铁树盆与香炉去除。"
+      ],
+      "materials": "屋面黄绿色琉璃瓦（黄瓦为主、绿色剪边，瓦面带苔），脊饰灰黑；木构格扇与檐柱间板壁深褐近黑，上层格栅板嵌金色团花；石柱浅灰；月台与栏杆浅灰石材，御路石灰白。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:55:13.032287+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T11:58:00.952Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-385a2e31-6407-4a3f-a975-82057518fd10.png",
+          "retained": "assets/generated/hu_liuyang_wenmiao.png",
+          "sourceSha256": "315740b80fae8f92f4a5d736440eb05f19516511cc14941a483f792200db2b0e",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.004190+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:04:42.133Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-87e5ef3c-d5da-430c-aabc-5b5d6f996880.png",
+          "retained": "assets/colored/hu_liuyang_wenmiao.png",
+          "sourceSha256": "9b19ebf4f962725246494e75089d2516339c24383fae5ac1f1c191d785eaea90",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:55:13.032287+08:00",
+      "delivery": {
+        "line": "assets/plates/hu_liuyang_wenmiao.png",
+        "colorPNG": "assets/colored-transparent/hu_liuyang_wenmiao.png",
+        "colorAVIF": "assets/colored-transparent-avif/hu_liuyang_wenmiao.avif",
+        "lineSha256": "87fc1b7c746712001586fc90258eab0db609ee60477c15a60b8be5d188bc0a57",
+        "avifSha256": "e16483f542bd242cb7425f5b90437f7ba9a7644ef2272321fbad74e0f0972dfe",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_drepung",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_drepung.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_drepung-photo.jpg",
+        "assets/references/xz_drepung-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_drepung-photo.jpg",
+        "assets/references/xz_drepung-2-photo.jpg"
+      ],
+      "subject": "哲蚌寺 · 措钦大殿正面",
+      "checkpoints": [
+        "台基：全宽的灰色石砌大台阶（资料记17级）自广场升至一层明廊地坪；台阶中央立一根高大经幡柱（线稿去除）。",
+        "一层明廊：可数八根裹红布的圆柱，柱头金饰，柱间为深色门洞与黄色木矮栏；廊顶悬一幅深褐色横幅帘，帘上有六个白色图案（寿字、回纹、法轮等）。",
+        "二层：一圈木构回廊，外侧张满白色遮阳布幔，布幔沿主体正面展开、下缘为短流苏；布幔上缘为浅色短檐。",
+        "屋顶：平顶，顶部压赭红色边玛墙带，带上有鎏金法轮与圆形饰；屋面鎏金饰件自左至右为两座宝幢圆筒、一座带双鹿的法轮（主体中部偏左）、三座尖顶宝瓶（右翼上方）和右端一座大型鎏金宝幢圆筒。",
+        "右翼：一座稍低的附属体量，白墙上压赭红边玛带，带上有大法轮圆饰与一座鎏金宝幢，开两扇黑框梯形窗；其前为一层门廊，悬深褐色横幅帘（四个白色图案）、下为黄色木格栅窗与红柱。主体四层为资料所记，正面可见明廊、布幔回廊两个主要层次加屋顶饰件。"
+      ],
+      "materials": "墙体白色石砌抹灰，略见砌缝；边玛墙带赭红色，饰鎏金法轮与圆饰；明廊柱裹红布、柱头金色；横幅帘深褐色配白色图案；二层布幔白色、边缘蓝白相间；窗格与矮栏黄色；屋顶法轮、宝幢、宝瓶鎏金铜；台阶灰色石材。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.097932+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:06:42.191Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-b7dc8c3b-8023-48a1-958d-1950c3f3afd0.png",
+          "retained": "assets/generated/xz_drepung.png",
+          "sourceSha256": "0d1a1764621ad982fa333308f97788bb8e78031107721406952992311ec23af6",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.767288+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:12:37.233Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e86a9ea2-c9d6-4ee7-92c9-29918b952e1d.png",
+          "retained": "assets/colored/xz_drepung.png",
+          "sourceSha256": "453e707dd9604dad57ddfe14bc42c9615544baacd5392ad627ccd1a1281e6b50",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:59:43.097932+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_drepung.png",
+        "colorPNG": "assets/colored-transparent/xz_drepung.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_drepung.avif",
+        "lineSha256": "664b4f40b7f88120b7ec72b823519393272c22043bb708075ee3df51bd53be3d",
+        "avifSha256": "60d23d9b9a5bb4502c7007835f9dab73967f91eeeb8296a4ee22d1217f7fa855",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_guge",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_guge.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_guge-photo.jpg",
+        "assets/references/xz_guge-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_guge-photo.jpg",
+        "assets/references/xz_guge-2-photo.jpg"
+      ],
+      "subject": "古格王国遗址 · 札布让王城遗址（红殿与山顶宫堡，自山下仰视）",
+      "checkpoints": [
+        "土山自左下向右上升起，山顶最高处一座白墙红檐的小殿（王宫区），顶上挂经幡；山体各层布满洞窟口（数十个）与土坯残墙、残塔。",
+        "山腰左侧一座完整的赭红色平顶殿堂（红殿）：墙体收分，墙顶一道深色檐带，屋顶两端各一个小烟囱状饰；其左下方另露出一座红殿的一角与白墙；红殿前有土坯围墙与一段石阶上行。",
+        "山脊中段为一排多层土坯残墙（原建筑群），带数排窗洞，左端残存一段平台与出挑木梁；更高处为层叠的残墙与洞窟。",
+        "整幅以山体轮廓、残墙与洞窟口为主，按现状残破形态描绘，不复原成完整宫殿。"
+      ],
+      "materials": "土山与土坯残墙为土黄至灰白色，层理明显；红殿赭红色、檐带深褐；山顶小殿白墙红檐、经幡彩色；天空湛蓝（去除）。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.097932+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:07:14.666Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e1523581-9296-465a-838e-db680380c0e2.png",
+          "retained": "assets/generated/xz_guge.png",
+          "sourceSha256": "be4b5f45cd74f53ea6ff6b62c4c41779fa1c0784ff8e0ab4820a6b219286cc77",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.767288+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:13:23.522Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-9a263215-4d08-496c-80f5-e48b880e5233.png",
+          "retained": "assets/colored/xz_guge.png",
+          "sourceSha256": "59bc54517af5dbb8ab878998b99a2a4253df0c460163282b4a8705317482611d",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:59:43.097932+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_guge.png",
+        "colorPNG": "assets/colored-transparent/xz_guge.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_guge.avif",
+        "lineSha256": "dd39b49d6e8b155bf26f06e3b27787ef13d601c92a41b3b4dd735f40aa46871a",
+        "avifSha256": "438f110d60a4d5ac5567dd5c47c429c467d9022293c9a21d42c1a65f657456b5",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_gyantse_dzong",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_gyantse_dzong.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_gyantse_dzong-photo.jpg",
+        "assets/references/xz_gyantse_dzong-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_gyantse_dzong-photo.jpg",
+        "assets/references/xz_gyantse_dzong-2-photo.jpg"
+      ],
+      "subject": "江孜宗山 · 宗山城堡现状（自县城仰视）",
+      "checkpoints": [
+        "城堡沿山脊自左向右上方层层叠高：左侧与中部为数座白墙平顶的碉楼状建筑和连绵的白色围墙，墙顶一律为赭红色檐带；右下为一排两层白墙建筑，右侧有一条长长的阶梯状挡墙与台阶斜向上行至山顶。",
+        "山顶主堡为最高大的白墙体量，墙体收分明显，开多排小方窗，顶部赭红边玛墙带，最高处右侧立一座小型金顶/宝瓶；主堡左侧与下方有多个退台的白墙建筑。",
+        "全部为土石砌白墙平顶建筑，无坡屋顶；山体裸岩以少量轮廓线表示，近处民房、树木、电线去除。"
+      ],
+      "materials": "墙面白色（带土黄与红褐色水渍），檐带赭红，窗洞为深色小方窗，台阶与挡墙浅灰白，山体为土黄色裸岩与碎石。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T19:59:43.097932+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:08:05.958Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-09d4fd51-5db2-470f-a320-2432438c5640.png",
+          "retained": "assets/generated/xz_gyantse_dzong.png",
+          "sourceSha256": "96de1087ef221c828beff03cd6347582b02699bc2876823cbfb739c43f2bc327",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.767288+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:15:10.092Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-55b40a36-e798-4f2e-b2b4-ae957c4334c4.png",
+          "retained": "assets/colored/xz_gyantse_dzong.png",
+          "sourceSha256": "688fdf92d64daf018c833a89ae309e9211fc71848b1bf9dd4c3758ea9e3c8591",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T19:59:43.097932+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_gyantse_dzong.png",
+        "colorPNG": "assets/colored-transparent/xz_gyantse_dzong.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_gyantse_dzong.avif",
+        "lineSha256": "7b246f097117026495b3b4ce6d7d8ac47a7ba9c9fd8b9ecfc13079ab297184ce",
+        "avifSha256": "45579e0e303e41af72c1e171d55c2f4e2ef4494db513c0b8f25a91b47bba6682",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_gyantse_kumbum",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_gyantse_kumbum.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_gyantse_kumbum-photo.jpg",
+        "assets/references/xz_gyantse_kumbum-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_gyantse_kumbum-photo.jpg",
+        "assets/references/xz_gyantse_kumbum-2-photo.jpg"
+      ],
+      "subject": "白居寺 · 吉祥多门塔（十万佛塔）全貌",
+      "checkpoints": [
+        "塔瓶以下自下而上共五道赭红色檐带：最下为高大的白色塔基，檐下绕一圈蓝地彩绘宝相花带；其上四层佛殿塔座逐层收缩，每层檐口为短赭红檐，檐下饰彩绘菱形图案带与一排白点；各层转角呈台阶状内折（四面二十角），正面轮廓为阶梯金字塔，白墙上只开零星小方窗。",
+        "塔瓶：塔座之上为白色圆柱形塔瓶，正面有一座彩绘拱形龛门（门楣上绘慧眼）；瓶顶出一圈宽阔的深色圆形飞檐，檐下有斗栱。",
+        "塔颈（横斗）：方形，四面彩绘花纹，正面绘一双大慧眼；其上为鎏金锥形十三天，可数13道水平环。",
+        "塔顶：十三天之上为带镂空栏杆和垂帘的伞状鎏金宝盖，顶立鎏金宝瓶与尖顶；宝盖以四根斜拉索固定到塔瓶飞檐（线稿可省略拉索）。",
+        "主图自东南斜向拍摄、前景有经幡柱，补充图自南偏东仰拍、塔瓶有维修脚手架；塔体四面对称，绘正面时按对称补全，去除经幡柱、脚手架、转经筒廊、旁侧寺院建筑与山顶宗山城墙。"
+      ],
+      "materials": "塔身为石砌白色抹灰；各层檐口赭红色，檐下彩绘菱形纹与蓝、绿、金色图案带，白点饰；塔基彩绘带以蓝色为地；塔瓶白色，龛门彩绘蓝、红、金；塔瓶飞檐深褐色；十三天与宝盖鎏金铜，宝盖垂饰红蓝彩绘；塔前地面为灰色石板。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:02:48.177803+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:03:52.417Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-22d0e11a-4a41-4587-9e8c-ad5429d9dd68.png",
+          "retained": "assets/generated/xz_gyantse_kumbum.png",
+          "sourceSha256": "90595f77e6dc3921065aca917552b1f12e6ec98b6bf3a444d88335eba9b80122",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.767288+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:16:02.471Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-aecad3b3-86f6-4f55-a413-800b9e9e9e81.png",
+          "retained": "assets/colored/xz_gyantse_kumbum.png",
+          "sourceSha256": "5cd66ba9a69c12e67440152bc08357a3a8358200802be31436956c94de23c421",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:02:48.177803+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_gyantse_kumbum.png",
+        "colorPNG": "assets/colored-transparent/xz_gyantse_kumbum.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_gyantse_kumbum.avif",
+        "lineSha256": "40526ffc491a909f93e73065f447f40dbece33dc87df6bad0f17e6a4292fea36",
+        "avifSha256": "d5e27975c9bec6e959f19ee7b572b2fa7b2cb50b5307fc64265eadb386449482",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_ramoche",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_ramoche.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_ramoche-photo.jpg",
+        "assets/references/xz_ramoche-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_ramoche-photo.jpg",
+        "assets/references/xz_ramoche-2-photo.jpg"
+      ],
+      "subject": "小昭寺 · 主殿正立面（现状，三层红墙与金顶）",
+      "checkpoints": [
+        "正立面为深红色三层主殿：中段较宽，两侧各一座略凸的红色塔楼状体量，塔楼每层一窗（黑色窗套、金色格栅、白色短檐）。",
+        "中段自下而上四带：底层黑底金纹门帘覆盖柱廊入口（八宝、法轮双鹿纹样）；一层白色布幔与红蓝相间的帘带，木构格栅窗廊；二层黄色帘带与红帘带，木构窗廊；顶部深红边玛墙。",
+        "屋顶：女儿墙正中一座小型鎏金金顶立法轮双鹿；女儿墙两端各立两只鎏金宝幢圆筒与一个宝瓶形刹——合计四筒、两刹，另在两塔楼顶各有鎏金圆饰；整体平顶、墙体收分。",
+        "底层两侧红墙各开一方窗；立面左右为相邻的白墙民居与红墙侧殿，图版只取主殿本体。"
+      ],
+      "materials": "主殿墙面深红色抹灰；窗套黑色、窗格金色；门帘黑底金纹；幔帐白色、黄色与红蓝条纹；金顶、宝幢、法轮鎏金；台地与广场灰色石板。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:02:48.177803+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:04:37.984Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-d643495d-fc31-41d3-90db-b70729a75121.png",
+          "retained": "assets/generated/xz_ramoche.png",
+          "sourceSha256": "ee727add246825c8a6886aba93bc7162a3381244e5ddaf52fe859b1f916af945",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.767288+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:16:40.783Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-780dd872-623d-4f86-a947-46ca76ecb3aa.png",
+          "retained": "assets/colored/xz_ramoche.png",
+          "sourceSha256": "3b26b73ab7d173cc6b5eec1f1f2473a61442117d617c4a1b6e25946390cb04e7",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:02:48.177803+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_ramoche.png",
+        "colorPNG": "assets/colored-transparent/xz_ramoche.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_ramoche.avif",
+        "lineSha256": "b8e2a86cb3ff0291e723df82766e002e785b6de4c01268cedc9e9b0c4cea0de6",
+        "avifSha256": "1af5d0fbe2f1d4b8826afdeeb69ddc0e94a082fab21929224a845206ce271420",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_sakya_south",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_sakya_south.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_sakya_south-photo.jpg",
+        "assets/references/xz_sakya_south-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_sakya_south-photo.jpg",
+        "assets/references/xz_sakya_south-2-photo.jpg"
+      ],
+      "subject": "萨迦寺 · 南寺拉康钦莫大殿正面（1268年建，现状）",
+      "checkpoints": [
+        "主殿为深赭红色厚重砌体，墙面微收分，正面三段：左翼三层高、三排窗（上两排各三窗、底排两窗另一小窗），窗带黑色窗套与白色短檐帘；右翼较低，两排各两窗。",
+        "中央入口段略凸出：一道宽大石阶分两段直上门廊，阶旁立一对白色石狮与两方碑板；门廊悬深色门帘与白色流苏帘，门廊上方白色墙板开两排各五个小方窗，正中饰鎏金法轮双鹿。",
+        "墙顶：白色腰线之上为深红色边玛墙带，嵌鎏金圆形、盾形饰牌，白点饰；平顶之上立鎏金宝瓶形刹——正面可见三座大刹（左、中偏右、右）与若干小刹。",
+        "无汉式坡屋顶；补充图中灰色外城墙带红白竖条与角楼，只作全局参考，不画进正面图版。"
+      ],
+      "materials": "主殿墙面深赭红（石砌抹面），腰线与窗帘白色，窗套黑色，门帘深褐；石阶、石狮灰白色；边玛墙深红嵌鎏金饰；宝瓶刹鎏金；院地为土地与杂草。外城墙（补充图）为灰色墙面，纵向红、白条带，角楼同色。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:02:48.177803+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:05:11.883Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-251ebf13-a995-4d84-a9d8-1593b91e9241.png",
+          "retained": "assets/generated/xz_sakya_south.png",
+          "sourceSha256": "8801887964403075858ac336e62766e8a92ebbb9467b346c0889b60a49ca06a5",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.767288+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:17:23.550Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-110e2798-c014-4be6-8abe-478d62ebc010.png",
+          "retained": "assets/colored/xz_sakya_south.png",
+          "sourceSha256": "b8fe9e3a82c1f80edf2ae78bd25b52ec8921303bf31fa9b9703052a0d5739470",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:02:48.177803+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_sakya_south.png",
+        "colorPNG": "assets/colored-transparent/xz_sakya_south.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_sakya_south.avif",
+        "lineSha256": "02e1b6968ca53007d22f7bb4f256db98f0c7f14d023427b2bfdbb2c792cf46bc",
+        "avifSha256": "7767e30883ad283a4e83db62314dd176d9e3d08ad0a6f4d07f07d2347f2cfa47",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_samye_utse",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_samye_utse.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_samye_utse-photo.jpg",
+        "assets/references/xz_samye_utse-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_samye_utse-photo.jpg",
+        "assets/references/xz_samye_utse-2-photo.jpg"
+      ],
+      "subject": "桑耶寺 · 乌策大殿正面（现状，三层金顶）",
+      "checkpoints": [
+        "正面自下而上：白色石砌一层长墙，窗为黑色梯形窗套、金色格栅、橙红色短帘，正面可见左三右四共七窗（两端被画幅截断，墙体更长）；墙顶为赭红色边玛墙带（白点饰），再上一道白色压顶。",
+        "中央入口：一座两层木构门廊凸出墙面，上层为木格栅窗廊配白色流苏帘，下层悬黑底白纹门帘（吉祥结、法轮、吉祥结、海螺），帘下为深色木门洞；门廊顶上立一根彩条经幡柱。",
+        "一层之上退后升起金顶层：一座大型鎏金汉式屋面（四角起翘、角端兽头）覆盖带鎏金板与栏杆的回廊层；其上再升一座中央鎏金小殿顶配高大宝瓶刹，左右各一座方形小塔楼，塔身嵌绿色琉璃板饰十字金刚杵纹、顶上鎏金刹——正面共三个刹，中央最高。",
+        "白墙两端的屋顶各立一座黑白蓝条纹的宝幢圆筒（右端另有一根金色经幢）；全殿为平顶藏式殿身托汉式金顶，不要画成通体坡屋顶。"
+      ],
+      "materials": "下层墙面白色石砌抹灰、略见砌缝；边玛墙带赭红、白点；窗套黑色、格栅金黄、窗帘橙红；门帘黑底白纹；金顶与栏板鎏金铜，侧塔楼嵌墨绿琉璃板；宝幢黑白蓝条纹布；地面为灰色石板路与土地。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.900309+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:17:56.727Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-3b209871-cfcc-4d65-956d-aa42ce8e0d16.png",
+          "retained": "assets/generated/xz_samye_utse.png",
+          "sourceSha256": "627cdc925a635521a7afe263031edde3900354c178f2d5e9f2ceae36909c5258",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:21:04.629961+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:25:05.929Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e6dc57a4-177e-4a30-bf8b-77866c414880.png",
+          "retained": "assets/colored/xz_samye_utse.png",
+          "sourceSha256": "abb29210c3115d4fbd3056f0908a2dd2587a85c0b1ca7c19afee5d6116995894",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:11:05.900309+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_samye_utse.png",
+        "colorPNG": "assets/colored-transparent/xz_samye_utse.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_samye_utse.avif",
+        "lineSha256": "861645d81a299428acf5af011f9ca3e1a87fc5f70ab793f550faf804317053ed",
+        "avifSha256": "deb2be4f063d7953d438889a842b6210a6eab12f681cf63d46fa7623affca1f1",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_sera",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_sera.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_sera-photo.jpg",
+        "assets/references/xz_sera-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_sera-photo.jpg",
+        "assets/references/xz_sera-2-photo.jpg"
+      ],
+      "subject": "色拉寺 · 措钦大殿正面（1710年建，现状）",
+      "checkpoints": [
+        "正立面自下而上三段：灰白色石砌墙基与台阶；底层入口柱廊，红色木柱白色柱础、按正面照片约六根，柱廊外悬黑底白纹的大门帘；柱廊之上为白色布幔和一层出挑的红框窗廊。",
+        "墙顶为深赭红色边玛墙带，嵌圆形鎏金饰；中央经堂体量在后方再升起一层，女儿墙正中立鎏金法轮与双鹿，两端女儿墙上立鎏金宝幢圆筒与宝瓶形刹，右侧另有一座细高鎏金刹。",
+        "主殿右侧接一座低一层的白墙配殿，窗为黑色梯形窗框、白色短檐帘；整体平顶，墙体略向内收分，底层墙面只开少量小窗。",
+        "汉式歇山金顶在正面地面视角只露出顶部饰物，不得画成覆盖整殿的大屋顶。"
+      ],
+      "materials": "墙体为白色石砌（略泛灰、有砌缝），墙顶边玛草墙带深赭红，窗框黑色梯形，门帘黑底白色八宝纹，木柱红色、柱础白色，金顶饰物与宝幢鎏金，台阶与地面灰色石材。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:11:05.900309+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:18:41.777Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-c520ce67-ab97-48d8-877f-ee5f53bc1c2c.png",
+          "retained": "assets/generated/xz_sera.png",
+          "sourceSha256": "f89720e622bd7dc614902a00aed90ccb515ebc91ac440bc47aad1be34228cc29",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:21:04.629961+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:25:53.227Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4429e2cb-bb1b-4334-8c87-4d7b909abd4f.png",
+          "retained": "assets/colored/xz_sera.png",
+          "sourceSha256": "81d472e0b8dbebfb6d1be2c7db6ba72c2487492d19206ec75a6963f90e36823d",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:11:05.900309+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_sera.png",
+        "colorPNG": "assets/colored-transparent/xz_sera.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_sera.avif",
+        "lineSha256": "63b694d67394aa7fac67cc55ba39d2b543d4f7e857799a837baaa74ac1330932",
+        "avifSha256": "967e3151bfe28e71b24c96f791d7d13eb9e81506cf2fbd1dd4c48920a435f056",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_shalu",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_shalu.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_shalu-photo.jpg",
+        "assets/references/xz_shalu-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_shalu-photo.jpg",
+        "assets/references/xz_shalu-2-photo.jpg"
+      ],
+      "subject": "夏鲁寺 · 措钦大殿（夏鲁拉康）前院正面与二层汉式琉璃瓦顶",
+      "checkpoints": [
+        "前院正面：底层为青灰色抹面的收分厚墙，近乎无窗，仅中央一间入口；门上出挑一座两层木构门廊（阳台），挂黑棕条纹门帘，顶部与下沿各有一道多色流苏布幔，门廊两侧各有一个小方窗（右侧带栅）。",
+        "二层退后，为黄墙汉式殿堂：正中一座重檐歇山顶最高（两层绿琉璃瓦檐、正脊中央鎏金宝瓶刹、脊端兽吻、檐角起翘挂铃），左右各一座略低的单檐绿琉璃瓦歇山顶；中央檐下黄墙上有鎏金法轮与双鹿。正面只见三座琉璃顶，文献所记第四座在后部，不可凭空补入正面。",
+        "黄墙面绘铃铎、璎珞纹（设色参考），檐下为蓝绿彩绘的多层斗栱与红色额枋。",
+        "两侧为二层回廊：红柱、彩绘额枋与栏板，左侧回廊较长，右侧接一段橙红色墙与灰墙；线稿可简化为对称的低矮回廊。"
+      ],
+      "materials": "底层墙面青灰色抹灰（略带蓝灰），门帘黑棕条纹、布幔红白蓝黄流苏；二层殿墙明黄色，饰蓝绿铃铎璎珞纹；屋面墨绿色琉璃瓦，檐椽蓝色、斗栱蓝绿、额枋暗红；宝瓶刹与法轮鎏金；回廊柱红色；院地灰色石板。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:15:32.203531+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:17:00.420Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-72545a91-4e02-4423-a7d3-b3215723bb01.png",
+          "retained": "assets/generated/xz_shalu.png",
+          "sourceSha256": "101943cb43323c68034a47e8e4aff9f9f1e21c70233eb99d897c91a06443fcf5",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:17:35.069564+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:20:29.811Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4b03742e-9d80-4ba5-aa6f-175bc391811f.png",
+          "retained": "assets/colored/xz_shalu.png",
+          "sourceSha256": "735ecf64ed73ef55776b60ceb601451e797e51dd640c9015c6c2fa771c5b4f4d",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:15:32.203531+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_shalu.png",
+        "colorPNG": "assets/colored-transparent/xz_shalu.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_shalu.avif",
+        "lineSha256": "99cd836496941ee95fa381334a413cb9bef88c8cb44444a03b1adb0bb21efa22",
+        "avifSha256": "a50745d85d885e2aee9cf4955671c276a61f86df8d6ca9779ac6143e8c1a0879",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_tholing",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_tholing.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_tholing-photo.jpg",
+        "assets/references/xz_tholing-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_tholing-photo.jpg",
+        "assets/references/xz_tholing-2-photo.jpg"
+      ],
+      "subject": "托林寺 · 红殿正面与殿前佛塔（现状）",
+      "checkpoints": [
+        "红殿为低矮的平顶土坯殿堂：赭红色墙面，上部一道白色墙带，再压一道深红女儿墙带（檐口有黑色细线）；殿身前低后高，前部入口段较矮，后部主体略高、略宽。",
+        "入口位于正面中部偏左：门廊悬深褐色门帘，上方一道粉白两色的流苏布幔；门廊左侧墙面开一方窗，墙面其余部分近乎无窗。",
+        "殿前左右各一座佛塔：方形多层塔基、红色塔身与白色塔瓶上下相间、红色锥形塔刹饰白点，左塔在殿左前方稍远，右塔紧贴殿右端；殿后方另露出一座小塔的塔刹（右侧）。",
+        "殿后土林崖壁、殿前碎石堆与杂草、土坯残墙去除，只保留殿、两塔与少量地面线。"
+      ],
+      "materials": "墙面赭红色土坯抹灰，略有流淌痕迹；白色墙带与深红女儿墙；门帘深褐、幔帐粉白；佛塔红白相间；地面为黄土与碎石。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:15:32.203531+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:16:16.127Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-70c63a67-9fc0-4a4e-a782-12a55ebf7a41.png",
+          "retained": "assets/generated/xz_tholing.png",
+          "sourceSha256": "0915741239dd6a03bfd802c7353470e9a5f14f90d9c5b3722b76d87bf99389b9",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:17:35.069564+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:21:11.866Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-d61ed5f6-7449-49a9-a38c-281e3925c120.png",
+          "retained": "assets/colored/xz_tholing.png",
+          "sourceSha256": "5561e3aa9f2569ddd278c2dde48872d474ce2f791870cc1aca88ac02d1d7127a",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:15:32.203531+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_tholing.png",
+        "colorPNG": "assets/colored-transparent/xz_tholing.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_tholing.avif",
+        "lineSha256": "775a43cc18b48feaff6e319ad4f22b7ccc4644ddd2d681208e367fcf5091e49a",
+        "avifSha256": "3754a12dbe7a2c83c9a3f3de5bafa0901dc357fe6d87db5245f58dc7bd06cd9c",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "xz_tradruk",
+      "batch": "xizang-20261005",
+      "candidate": "assets/research/candidates/xizang-20261005/xz_tradruk.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xz_tradruk-photo.jpg",
+        "assets/references/xz_tradruk-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/xz_tradruk-photo.jpg",
+        "assets/references/xz_tradruk-2-photo.jpg"
+      ],
+      "subject": "昌珠寺 · 入口正面与金顶（现状）",
+      "checkpoints": [
+        "正面为一字排开的白色石砌殿墙，墙顶一律是平直的赭红色边玛墙带（白点饰）；中央入口门楼略高、略凸，门洞上悬白色流苏帘与黑底白纹门帘（吉祥结、法轮），门楼顶上立一根黄色宝幢。",
+        "门楼后方升起主殿上部：赭红边玛墙上一座鎏金汉式歇山式金顶，正中立法轮双鹿，两侧各一鎏金宝幢圆筒。",
+        "门楼左右各接一段低矮白墙殿身：左段有一入口（带帘与遮阳伞处）、顶上一根黄色宝幢；右段有一门洞挂白帘，顶上两根黄色宝幢；最左端为更高的二层白墙体量，开一黑框窗，屋顶有经幡杆与旗杆（旗帜去除）。",
+        "整体平顶藏式殿身，只有中央主殿顶上一座金顶；无坡屋顶、无汉式檐廊。"
+      ],
+      "materials": "墙面白色石砌、抹灰粗糙；边玛墙带赭红、白点饰；门帘黑底白纹、流苏帘白色；金顶与宝幢圆筒鎏金；布制宝幢明黄色；广场铺灰色石板。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:17:35.156371+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:22:03.196Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-18578d43-966c-4475-a09d-9b06a1bf3d5c.png",
+          "retained": "assets/generated/xz_tradruk.png",
+          "sourceSha256": "07eb681b8d7f1ac4d51c75d1f8272699c70960aa159f893a40508334c064caba",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:24:24.586476+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:25:37.660Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-acaa1972-7752-4228-a645-b6d395c5070f.png",
+          "retained": "assets/colored/xz_tradruk.png",
+          "sourceSha256": "d703329593fd3b8f2f332af41521c177af5dee2a3182805c32556bd4192630d5",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:17:35.156371+08:00",
+      "delivery": {
+        "line": "assets/plates/xz_tradruk.png",
+        "colorPNG": "assets/colored-transparent/xz_tradruk.png",
+        "colorAVIF": "assets/colored-transparent-avif/xz_tradruk.avif",
+        "lineSha256": "304d75ea42308e1923092ad4e8e6b5231c1a966800e440c2b05e764856043b92",
+        "avifSha256": "1dca73d900c73bdb1ef1bb50f50bc658fddac407582c9453882a869262f5d1fc",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_zuiganji_hondo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_zuiganji_hondo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_zuiganji_hondo-photo.jpg",
+        "assets/references/jp_zuiganji_hondo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_zuiganji_hondo-photo.jpg",
+        "assets/references/jp_zuiganji_hondo-2-photo.jpg"
+      ],
+      "subject": "瑞岩寺 · 本堂正面",
+      "checkpoints": [
+        "单层，一座入母屋造本瓦葺大屋顶，正脊长直，山面在左右两端；屋面灰瓦，檐口平直。",
+        "正面桁行十三间（文化厅记录），照片中为成对板门/障子与细柱连续排列，门上一道连续的格子欄间带，再上为白灰壁。",
+        "正面中央三级石阶，阶前低矮的开敞木缘，无高栏；缘下为竖板裙板。",
+        "左端附属的玄关（唐破风屋顶）属指定范围，但图版可略，不绘前庭石灯笼与白砂纹。"
+      ],
+      "materials": "素木灰褐色木构，门上白灰壁，灰色本瓦屋面；前庭白砂、绿树与石灯笼均去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:17:35.156371+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:22:55.986Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-52acd1d8-d87f-4669-9c30-55cf2ed80a19.png",
+          "retained": "assets/generated/jp_zuiganji_hondo.png",
+          "sourceSha256": "0c66f2cd6ef9fba27391ebbafa0e852968015aeb153da97db2de650e38fbdf4f",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:24:24.586476+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:27:26.806Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-8ff1494b-6dc9-465b-a67a-81248df33c15.png",
+          "retained": "assets/colored/jp_zuiganji_hondo.png",
+          "sourceSha256": "50e1d6b171d4f20cc5828c6f61f02dbc1261538bcfbd39babb6b13657ff1db4b",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:17:35.156371+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_zuiganji_hondo.png",
+        "colorPNG": "assets/colored-transparent/jp_zuiganji_hondo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_zuiganji_hondo.avif",
+        "lineSha256": "7b1d5ac8f70adca76b19a25c93b30a552a88028e7e9c9f66f30a40deb4127f73",
+        "avifSha256": "a2282a64deb5be14e4bc6df559a96ccaec6566b55b551dc0e5f659dbcf033b56",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_osaki_hachimangu",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_osaki_hachimangu.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_osaki_hachimangu-photo.jpg",
+        "assets/references/jp_osaki_hachimangu-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_osaki_hachimangu-photo.jpg",
+        "assets/references/jp_osaki_hachimangu-2-photo.jpg"
+      ],
+      "subject": "大崎八幡宫 · 拜殿正面",
+      "checkpoints": [
+        "拜殿单层入母屋造柿葺，正面屋坡中央一座大千鸟破风（三角形），破风内金色饰件；其下为五间向拝，向拝前檐中央一座轩唐破风（曲线形）。",
+        "拜殿正面七间（文化厅记录），前檐下为开敞柱列；檐下一道雕刻彩绘的饰带；中央垂三条铃绳；阶前短石阶。",
+        "社殿通体黑漆，金具、金色饰件与红蓝绿雕刻点缀；线稿只勾轮廓，不作黑色填充。",
+        "后方石之间与本殿自正面不可见，不补画；两侧木栅栏、绘马架、灯笼去除。"
+      ],
+      "materials": "黑漆壁柱，金箔饰件与金具，彩绘雕刻（红、蓝、绿）饰带，灰褐色柿葺屋面，白石阶。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:17:35.156371+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:23:28.517Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-2c1bd174-e365-4b5d-95ae-1156eed9b8ee.png",
+          "retained": "assets/generated/jp_osaki_hachimangu.png",
+          "sourceSha256": "7b8910056bb141ca852096ccaa7d76525827918a28ee1a481074944c449b5978",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:24:24.586476+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:26:18.284Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-fe987a7b-a5b6-4cde-befc-9b6381c49af7.png",
+          "retained": "assets/colored/jp_osaki_hachimangu.png",
+          "sourceSha256": "003cd7b820336d63317c6fce0e36508aaefcd8600474271be72f398606aefffa",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:17:35.156371+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_osaki_hachimangu.png",
+        "colorPNG": "assets/colored-transparent/jp_osaki_hachimangu.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_osaki_hachimangu.avif",
+        "lineSha256": "a512ae84e88497988e09248e4d1a15a51ce1aa67ecc413a5b63f6a76904d05ee",
+        "avifSha256": "58a1bede1cc1d54c93a2c8049e80d8d549387f2bb9f0cf6c435dfefb68077047",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_haguro_pagoda",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_haguro_pagoda.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_haguro_pagoda-photo.jpg",
+        "assets/references/jp_haguro_pagoda-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_haguro_pagoda-photo.jpg",
+        "assets/references/jp_haguro_pagoda-2-photo.jpg"
+      ],
+      "subject": "羽黑山五重塔 · 素木五重塔",
+      "checkpoints": [
+        "五层屋檐（五重），每层三间，自下而上逐层收分；屋面为薄柿葺，檐角微翘。",
+        "每层檐下为密集斗栱组，无回缘高栏；初重正面中央一扇格子门，两侧为板壁。",
+        "塔顶铜制相轮完整；塔基低矮，前有低木栅（去除）。",
+        "通体素木，无彩色、无白灰壁。"
+      ],
+      "materials": "风化成银灰色的素木柱壁，灰褐色柿葺屋面，深灰铜色相轮；周围杉林、石灯笼、石板路去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:21:04.724734+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:26:33.152Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e655be65-593a-4cf2-8a24-e3d962b96f01.png",
+          "retained": "assets/generated/jp_haguro_pagoda.png",
+          "sourceSha256": "3e4fb0ddd15ef45a50eca60236ae14c81a43f879a0c841b498f38d00c9a6c58c",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.253688+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:39:00.945Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-1269012b-1b8b-4a3b-9be2-f664383fc35a.png",
+          "retained": "assets/colored/jp_haguro_pagoda.png",
+          "sourceSha256": "87f14ebf15b28f9a2b974742892338296d87a51c5d7b0b88cb45350b6e222f3e",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:21:04.724734+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_haguro_pagoda.png",
+        "colorPNG": "assets/colored-transparent/jp_haguro_pagoda.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_haguro_pagoda.avif",
+        "lineSha256": "fe924139a2352be3eb8cdc10f5d11c1f4e0a65ebe77051f67a7b53794bc3a739",
+        "avifSha256": "8f971485676c55bc2535eb5baa289c3bb03cd8c2dec7cfecaaef4cdc730859f5",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_zenkoji_hondo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_zenkoji_hondo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_zenkoji_hondo-photo.jpg",
+        "assets/references/jp_zenkoji_hondo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_zenkoji_hondo-photo.jpg",
+        "assets/references/jp_zenkoji_hondo-2-photo.jpg"
+      ],
+      "subject": "善光寺 · 本堂正面",
+      "checkpoints": [
+        "正面为山面（妻入）：上层入母屋大屋顶的三角形山花朝前，山花内金色饰件；其下一圈裳阶屋顶环绕，比上层屋顶更宽。",
+        "裳阶前檐中央为三间向拝，向拝檐口一座轩唐破风（曲线形）；两侧面各有一间向拝（侧面不入画）。",
+        "正面梁间五间，圆柱；全部屋面为桧皮葺（不画瓦垄）；正面宽石阶居中。",
+        "挂灯笼、卍字白幕、香炉、人群、围栏与两侧小建筑去除。"
+      ],
+      "materials": "深褐色风化木构，灰褐色桧皮葺屋面，山花与破风饰件金色，白幕（去除），灰石阶。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:24:24.655092+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:28:21.575Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-fa15e599-3449-4636-8efc-b4f069cfb18b.png",
+          "retained": "assets/generated/jp_zenkoji_hondo.png",
+          "sourceSha256": "6fb705a45dc899d26adf945c9625f8d39255d92f75dfd3b62f14675bc99cdb96",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.253688+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:39:51.370Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-fbb4ed22-56a5-48b3-a1fd-7af15edfe6d3.png",
+          "retained": "assets/colored/jp_zenkoji_hondo.png",
+          "sourceSha256": "fdf04439fe8afeb17e627e57ea99f411956248f66e7675f3eca06430cbfc5f7a",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:24:24.655092+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_zenkoji_hondo.png",
+        "colorPNG": "assets/colored-transparent/jp_zenkoji_hondo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_zenkoji_hondo.avif",
+        "lineSha256": "f0a37906ac3ba8c65455b6028b9be1e9808bb0a0059d3ad86b670ed55d7ffeec",
+        "avifSha256": "b99f6ca7af01da0268787d08e82d133d2e0267a955a741c8e4c888a70db2f204",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_anrakuji_pagoda",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_anrakuji_pagoda.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_anrakuji_pagoda-photo.jpg",
+        "assets/references/jp_anrakuji_pagoda-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_anrakuji_pagoda-photo.jpg",
+        "assets/references/jp_anrakuji_pagoda-2-photo.jpg"
+      ],
+      "subject": "安乐寺 · 八角三重塔",
+      "checkpoints": [
+        "八角平面，共四层屋面：最下一层为裳阶，其上三层为塔身三重；屋面柿葺，坡度平缓。",
+        "初重裳阶下为板壁与门窗，裳阶以上各重檐下为密集的詰组斗栱、放射状垂木。",
+        "塔顶相轮带九轮，完整入画；塔基低，周围石栅栏与墓碑去除。",
+        "八角各面向两侧收退，线稿需表现八角转折。"
+      ],
+      "materials": "深褐色风化木构，灰褐色柿葺屋面、檐下裏板略带红褐，深色铜质相轮；林木、石栅与墓石去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:24:24.655092+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:29:55.060Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-e44843e7-1af4-4147-9292-bbd741be27ae.png",
+          "retained": "assets/generated/jp_anrakuji_pagoda.png",
+          "sourceSha256": "10b9216c7672e4791adafe49d60689e18747f0777e3eda5b42a085a64186241a",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.253688+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:40:49.739Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4d9eeecc-1cd3-44a4-9715-7379f6cf13f7.png",
+          "retained": "assets/colored/jp_anrakuji_pagoda.png",
+          "sourceSha256": "cc15e6fcfa2bed6517de19b8e262072d9d637e22a0ca31bb8ee9279145dc05e8",
+          "dimensions": [
+            1024,
+            1536
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:24:24.655092+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_anrakuji_pagoda.png",
+        "colorPNG": "assets/colored-transparent/jp_anrakuji_pagoda.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_anrakuji_pagoda.avif",
+        "lineSha256": "4746e495720734d59fc3f3a7c989f62e1a3c9ecc86873a6eb19768f07a616009",
+        "avifSha256": "4970e37e4eb9447a71a87f350eb41ace43b448380575170caf3ecc0ad1c6880a",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_daizenji_hondo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_daizenji_hondo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_daizenji_hondo-photo.jpg",
+        "assets/references/jp_daizenji_hondo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_daizenji_hondo-photo.jpg",
+        "assets/references/jp_daizenji_hondo-2-photo.jpg"
+      ],
+      "subject": "大善寺 · 本堂正面",
+      "checkpoints": [
+        "单层，一座寄栋造（四坡）桧皮葺大屋顶，屋脊短而中央有小箱棟；屋面红褐色，无瓦垄。",
+        "正面五间：中央三间为对开板门（照片中开启），两端两间为板壁上加格子窗；方柱，柱头舟肘木，无斗栱。",
+        "阶前开敞木缘无高栏，立于低台基；正面中央石阶约七级。",
+        "左上角钟楼檐角、石灯笼、植栽、白砂、扁额与灯笼均去除。"
+      ],
+      "materials": "深褐色风化木构，红褐色桧皮葺屋面，灰白石阶与台基；白砂地与绿植去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.345511+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:41:32.537Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-045bc513-2490-4229-b93d-00fc41b304fa.png",
+          "retained": "assets/generated/jp_daizenji_hondo.png",
+          "sourceSha256": "684a5a51805c295a26235f8221449f6c6d7e8b415035fb6e507e5ae225d3b92f",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.142716+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:53:25.050Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-645986f7-9894-4022-8b60-32ef14b95437.png",
+          "retained": "assets/colored/jp_daizenji_hondo.png",
+          "sourceSha256": "bb1af515c9bf52330b484b7d06b9cf6cede0ffe036373fedd49b02af06f48474",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:37:38.345511+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_daizenji_hondo.png",
+        "colorPNG": "assets/colored-transparent/jp_daizenji_hondo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_daizenji_hondo.avif",
+        "lineSha256": "35c44fe145275fed01b788a33fca7a5a56d22c456f6031ef5196ae098220ebdd",
+        "avifSha256": "9e7ab2f0bed0d25957966cbd24321f892bdba403ede1b201235554863a1dc450",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_eihoji_kannondo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_eihoji_kannondo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_eihoji_kannondo-photo.jpg",
+        "assets/references/jp_eihoji_kannondo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_eihoji_kannondo-photo.jpg",
+        "assets/references/jp_eihoji_kannondo-2-photo.jpg"
+      ],
+      "subject": "永保寺 · 观音堂正面",
+      "checkpoints": [
+        "方三间主屋外加一圈裳阶，故外观为上下两层屋面：上为入母屋造，下为裳阶披檐；均桧皮葺，上层檐角翘起明显。",
+        "正面吹放：外圈四根细柱之间无门，内侧可见栈唐户与弓欄间（格子透窗）；组物仅柱头出组，不作詰组。",
+        "低石台基，正面短阶；床低。",
+        "前方现代木栅栏、岩壁、卧龙池与无际桥、右侧建筑、人群去除。"
+      ],
+      "materials": "深褐色木构，灰褐色桧皮葺上下屋面，浅灰石台基；蓝天与树木去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.345511+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:43:25.963Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-8986f536-452e-4174-8134-bc4d64a2299c.png",
+          "retained": "assets/generated/jp_eihoji_kannondo.png",
+          "sourceSha256": "91e75bb2dff04aaf5a9e004b37d8f2b0437b71ecc44d9d60049cae28810232f8",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.142716+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:54:09.271Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-24ad7111-31a9-400d-8fc8-79f6e798cd05.png",
+          "retained": "assets/colored/jp_eihoji_kannondo.png",
+          "sourceSha256": "77a70338901c5f9b1299c4a6ba7a2ae80552e0efbbd43bfd311fa1d19ca1ebfa",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:37:38.345511+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_eihoji_kannondo.png",
+        "colorPNG": "assets/colored-transparent/jp_eihoji_kannondo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_eihoji_kannondo.avif",
+        "lineSha256": "fa396c05a507fb0fd2c4f19ce7f6e1a522626461965618babcf233e7a4fe5236",
+        "avifSha256": "876447ed6977d07e9bfd66f191dc00900913824aeea7e4e82f09f9636e95c610",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_zuiryuji_butsuden",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_zuiryuji_butsuden.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_zuiryuji_butsuden-photo.jpg",
+        "assets/references/jp_zuiryuji_butsuden-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_zuiryuji_butsuden-photo.jpg",
+        "assets/references/jp_zuiryuji_butsuden-2-photo.jpg"
+      ],
+      "subject": "瑞龙寺 · 佛殿正面",
+      "checkpoints": [
+        "方三间主屋加裳阶：上为入母屋造大屋顶，下为裳阶披檐，两层屋面均铺铅瓦（银灰色瓦垄，画法同普通瓦）；上层屋脊两端鬼瓦、檐角翘起。",
+        "上层檐下密集詰组斗栱；裳阶正面中央三间为栈唐户门，两端为板壁。",
+        "石砌台基，正面中央石阶；左右有回廊（白灰壁带窗）接于佛殿两侧，图版可截取端部。",
+        "前方四座石灯笼、草坪与石板路去除。"
+      ],
+      "materials": "深褐色木构，银灰色铅瓦屋面，回廊白灰壁、深色木骨，灰石台基；绿草坪与蓝天去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.345511+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:43:58.781Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-59cea934-682b-41e0-808a-b484eb10ba2a.png",
+          "retained": "assets/generated/jp_zuiryuji_butsuden.png",
+          "sourceSha256": "b4c8325e5b3d11d0de4a563f012f1bcebffdb335b9d85e201ba4932e3ea7ad78",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.142716+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:54:52.053Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-01e482a2-974d-47a5-ba57-dc7eec934aa2.png",
+          "retained": "assets/colored/jp_zuiryuji_butsuden.png",
+          "sourceSha256": "b579a6d2801961e4e8c717791476a5ea1886e03e83db72dcf466e5007752b678",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:37:38.345511+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_zuiryuji_butsuden.png",
+        "colorPNG": "assets/colored-transparent/jp_zuiryuji_butsuden.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_zuiryuji_butsuden.avif",
+        "lineSha256": "e124a83fb5150fad0eb366822f8c7eb89b434fd4617515959097469704db2af2",
+        "avifSha256": "93ea539fb6b34ee88ad53b9e6926a9f9bd2b780c4a9c74498162ed63903ddd03",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_matsumoto_tenshu",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_matsumoto_tenshu.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_matsumoto_tenshu-photo.jpg",
+        "assets/references/jp_matsumoto_tenshu-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_matsumoto_tenshu-photo.jpg",
+        "assets/references/jp_matsumoto_tenshu-2-photo.jpg"
+      ],
+      "subject": "松本城 · 大天守与连结天守群",
+      "checkpoints": [
+        "大天守自外观数恰五层屋檐（五重六阶）；每层下半为黑色下见板、上半为白灰壁，线稿只勾分界，不作黑色填充；本瓦葺灰瓦，顶层入母屋带鯱。",
+        "南面第三重设三角形千鸟破风，另有唐破风（照片2可见于西面第四重位置），按照片位置绘制。",
+        "左侧乾小天守三重，以渡橹与大天守相连；右侧辰巳附橹二重、月见橹一重带朱漆回缘高栏。",
+        "全群立于坡度平缓的石垣上，石垣下为内堀水面；照片2右侧月见橹处的修缮脚手架去除；只保留一条短水面线，不画倒影。"
+      ],
+      "materials": "黑漆下见板、白灰壁，灰色本瓦，青灰石垣，月见橹朱漆高栏，鯱为金铜色；水面、云、山与树去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.345511+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:44:28.027Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-d6a05f0e-28b4-4a09-adb5-07d08f7b7dad.png",
+          "retained": "assets/generated/jp_matsumoto_tenshu.png",
+          "sourceSha256": "f6bc456d6cd1840d355d5f423a6857bd8e8c6856da4caa7dd4801ec21f7de2bd",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.142716+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:55:35.176Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-cdc71948-5103-4ec0-9a2f-bffca8c49c00.png",
+          "retained": "assets/colored/jp_matsumoto_tenshu.png",
+          "sourceSha256": "e24695c5570f4d1532b981fd38a49980e8e76601154627a14174bf5fd9b2b9ea",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:37:38.345511+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_matsumoto_tenshu.png",
+        "colorPNG": "assets/colored-transparent/jp_matsumoto_tenshu.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_matsumoto_tenshu.avif",
+        "lineSha256": "f85f0cc1feea64fadad4042bbe22c8c9873421e81ddb9b086dd7e3224a8144c9",
+        "avifSha256": "7206f2561d162fdb60c6a49d9fb00ffba586372bd4baf92e0f380915e85d3df8",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_inuyama_tenshu",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_inuyama_tenshu.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_inuyama_tenshu-photo.jpg",
+        "assets/references/jp_inuyama_tenshu-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_inuyama_tenshu-photo.jpg",
+        "assets/references/jp_inuyama_tenshu-2-photo.jpg"
+      ],
+      "subject": "犬山城 · 天守正面",
+      "checkpoints": [
+        "三层屋檐、四层楼身：下两层共用一座入母屋大屋顶（第一重），其下墙面下段为深色板壁、上段白灰壁开小窗；第三层楼身正面带一座唐破风（第二重）；最上层望楼四周开敞回缘加高栏，入母屋顶带鯱。",
+        "南面附橹一重，深色板壁，接于天守右侧；天守立于野面积石垣（约5米）之上。",
+        "正面底部入口处的现代帐篷顶棚、售票小屋、枯树与人群去除；石垣完整入画。",
+        "本瓦葺灰瓦；望楼栏杆按照片样式，不加多余装饰。"
+      ],
+      "materials": "白灰壁、深褐色板壁，灰色本瓦，金黄褐色野面积石垣；天空与树木去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:37:38.345511+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:45:20.854Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-d69ccc25-53f5-4eb5-a45e-83bbf53fe7ca.png",
+          "retained": "assets/generated/jp_inuyama_tenshu.png",
+          "sourceSha256": "cf51c5b90fe7a5aedb2aed6a5864823ea8e1b703f269b7a7924e2b3e792da9a0",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.142716+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:56:40.135Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-ecbbf66e-c294-4269-adbe-7ccf163dfc9c.png",
+          "retained": "assets/colored/jp_inuyama_tenshu.png",
+          "sourceSha256": "729d52e49198ff8338d8f32fbcdc54b53d1bfbd9e11f437d67da42db7ad5dd7f",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:37:38.345511+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_inuyama_tenshu.png",
+        "colorPNG": "assets/colored-transparent/jp_inuyama_tenshu.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_inuyama_tenshu.avif",
+        "lineSha256": "6bbdf7cf17708ddd34e5c5bd43a2589ecb58cc1494537c870449922ec31706fa",
+        "avifSha256": "2c62e3282f45e08e7a1b6f9b90ac26966c9894d55bdb352dbcfbd231235d6c38",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_izumo_honden",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_izumo_honden.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_izumo_honden-photo.jpg",
+        "assets/references/jp_izumo_honden-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_izumo_honden-photo.jpg",
+        "assets/references/jp_izumo_honden-2-photo.jpg"
+      ],
+      "subject": "出云大社 · 本殿（瑞垣外所见）",
+      "checkpoints": [
+        "本殿为切妻妻入的大社造：山面朝向观者，桧皮葺屋面曲线内凹而陡，屋脊两端各一组交叉千木，脊上三根胜男木。",
+        "素木板壁，外圈有带高栏的缘（照片中仅见上部）；破风板与悬鱼有绿色金具点缀。",
+        "本殿下部被有顶的竖板瑞垣遮挡，图版以瑞垣檐口与板栅为底边，不补画高床、阶梯与楼门。",
+        "后方较小的摄社屋顶、树木、积雪与石砌地基去除。"
+      ],
+      "materials": "深灰褐色桧皮葺屋面，银灰色素木板壁，深色千木与胜男木，绿色金具点缀，深褐色瑞垣；天空与树木去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.233592+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:57:20.665Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-4ccfda28-51bb-49b4-a603-aa89db8b3254.png",
+          "retained": "assets/generated/jp_izumo_honden.png",
+          "sourceSha256": "c940af339d511842a9675c849597f8b0f07c27c17b984262452f73b689b43240",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:59:37.683795+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T13:02:42.526Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-5ecd51fd-7532-477a-9a18-57b2f7ee553c.png",
+          "retained": "assets/colored/jp_izumo_honden.png",
+          "sourceSha256": "bbba6a57998fef772ff11e291880a2ce636298b400b29edf7b4238078aa0f3db",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:51:23.233592+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_izumo_honden.png",
+        "colorPNG": "assets/colored-transparent/jp_izumo_honden.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_izumo_honden.avif",
+        "lineSha256": "8111e5fe4a9f57df5988b3fe9f089de5d251635b14ea98858b6e6d48c798ca0e",
+        "avifSha256": "1f9ba35497d0728716a51dede9039e1c4a2d715a61c3b4ef62ee89a6e27659eb",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_sanbutsuji_nageiredo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_sanbutsuji_nageiredo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+        "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_sanbutsuji_nageiredo-photo.jpg",
+        "assets/references/jp_sanbutsuji_nageiredo-2-photo.jpg"
+      ],
+      "subject": "三佛寺 · 投入堂",
+      "checkpoints": [
+        "小堂嵌于岩壁凹处，床下一排细长的悬造长柱与斜撑落在倾斜岩面上；柱极长，是识别特征。",
+        "流造屋顶（不对称两坡，前坡长），两侧加庇屋顶与隅庇，桧皮葺；正面一道带高栏的缘。",
+        "堂左端可见格子壁板；紧邻其左为更小的爱染堂（附指定），同入画。",
+        "岩面只用少量轮廓线示意柱下岩棱与上方岩檐，不画植被与大面积崖壁。"
+      ],
+      "materials": "极浅的银灰色素木，灰褐色桧皮葺屋面，灰色岩石；绿色植被去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.233592+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T12:59:09.991Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-28dcc8ad-15b5-4368-ba52-d3d4d2c3fad6.png",
+          "retained": "assets/generated/jp_sanbutsuji_nageiredo.png",
+          "sourceSha256": "622f4af3d2a34ebac0306cd477dcbf0e75f16f7852a90167a7314bbeca7b8e3d",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:59:37.683795+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T13:01:38.462Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-5daee0a0-ff9b-4898-8042-f5b977200913.png",
+          "retained": "assets/colored/jp_sanbutsuji_nageiredo.png",
+          "sourceSha256": "f19bb060b16aa0246c2539a385ba51222390ae5f44595a0eca086d83f1b7ce8a",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:51:23.233592+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_sanbutsuji_nageiredo.png",
+        "colorPNG": "assets/colored-transparent/jp_sanbutsuji_nageiredo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_sanbutsuji_nageiredo.avif",
+        "lineSha256": "6c9aef7609ce159db07c56bc2277a9c4e92100b71d443204b4ac44f7ba9e636e",
+        "avifSha256": "3daff6e0203ab7c87f5e70a5e8c929086d9ccc40b7ef4e276af2e8b496a44197",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_fukiji_odo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_fukiji_odo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_fukiji_odo-photo.jpg",
+        "assets/references/jp_fukiji_odo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_fukiji_odo-photo.jpg",
+        "assets/references/jp_fukiji_odo-2-photo.jpg"
+      ],
+      "subject": "富贵寺 · 大堂正面",
+      "checkpoints": [
+        "单层，一座宝形造（四坡攒尖）屋顶，顶上露盘宝珠；屋面为行基葺圆瓦，瓦列粗壮，线稿稀疏示意即可。",
+        "正面三间，每间一对板扉；方柱，柱头舟肘木，一道素枋，无斗栱。",
+        "开敞木缘无高栏，立于低石台基；正面中央三级石阶。",
+        "左侧石塔与小祠、鞋、告示牌、落叶与树木去除。"
+      ],
+      "materials": "银灰色风化木构与板扉，灰色瓦，灰石台基；林木与沙地去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:51:23.233592+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T13:00:14.994Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-583c5d73-18a3-4241-805f-1d84d60ac880.png",
+          "retained": "assets/generated/jp_fukiji_odo.png",
+          "sourceSha256": "b2e4a2b85e4d5a6cd0d2b994e9c69aee56531bd4f640e98ba6d92a8e9fe350f0",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T21:02:41.676497+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T13:04:02.749Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-72ae3e1b-b354-4fd7-92c3-f588e1511626.png",
+          "retained": "assets/colored/jp_fukiji_odo.png",
+          "sourceSha256": "8183012d4398de52e17c11b45305deb78e18c6db70390493a4198bf1b74ae781",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:51:23.233592+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_fukiji_odo.png",
+        "colorPNG": "assets/colored-transparent/jp_fukiji_odo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_fukiji_odo.avif",
+        "lineSha256": "51d8fa8d29540a726bffaaaa27529f4f673e2a8532563bbd760cda662849d61d",
+        "avifSha256": "5f78e1b4328e69757e09b98d463950164a7d6407091b5f4412e9fec55b479e55",
+        "visualReview": "approved_default"
+      }
+    },
+    {
+      "id": "jp_jodoji_jododo",
+      "batch": "japan-kokuho-20261005",
+      "candidate": "assets/research/candidates/japan-kokuho-20261005/jp_jodoji_jododo.json",
+      "references": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_jodoji_jododo-photo.jpg",
+        "assets/references/jp_jodoji_jododo-2-photo.jpg"
+      ],
+      "missing": [
+        "assets/references/jp_jodoji_jododo-photo.jpg",
+        "assets/references/jp_jodoji_jododo-2-photo.jpg"
+      ],
+      "subject": "净土寺 · 净土堂东面",
+      "checkpoints": [
+        "单层方三间，一座宝形造本瓦葺屋顶，顶上宝珠；檐口完全平直无反翘，垂木端钉鼻隐板。",
+        "东面（入口面，照片2右侧立面）三间各纳一对栈唐户，门两侧立小脇柱；圆柱，檐下插肘木层叠；南北面中央为连子窗（不作正面）。",
+        "开敞木缘无高栏，缘前木阶；柱、斗栱朱红，壁白灰——线稿只勾轮廓。",
+        "樱树、告示牌、围栏与院墙去除。"
+      ],
+      "materials": "朱红（丹涂）柱梁与斗栱，白灰壁，灰色本瓦，深色宝珠，灰石台基；樱花与天空去除。",
+      "stage": "delivery_ready",
+      "calls": [
+        {
+          "phase": "line",
+          "attempt": 1,
+          "started_at": "2026-10-11T20:59:37.771772+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T13:03:37.917Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-cd01c36a-4389-4d68-8e2a-2376eed436c1.png",
+          "retained": "assets/generated/jp_jodoji_jododo.png",
+          "sourceSha256": "7a87fb7a6b034019ffbf75722cfe42f7fe678e826ae3c8af0368fd3b57e0ed3a",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        },
+        {
+          "phase": "color",
+          "attempt": 1,
+          "started_at": "2026-10-11T21:04:58.239517+08:00",
+          "status": "received",
+          "received_at": "2026-10-11T13:06:55.597Z",
+          "original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-9ca288dd-1e98-4b14-9494-7344ca41e66f.png",
+          "retained": "assets/colored/jp_jodoji_jododo.png",
+          "sourceSha256": "32bf6a2c464786a27ce9616311b796614426c13ba90c194986577f461fab01b7",
+          "dimensions": [
+            1536,
+            1024
+          ]
+        }
+      ],
+      "inputs_viewed_at": "2026-10-11T20:59:37.771772+08:00",
+      "delivery": {
+        "line": "assets/plates/jp_jodoji_jododo.png",
+        "colorPNG": "assets/colored-transparent/jp_jodoji_jododo.png",
+        "colorAVIF": "assets/colored-transparent-avif/jp_jodoji_jododo.avif",
+        "lineSha256": "eb03b22cdbf878bc58bd1c43bf5fb3b511052737fc84ab802eb93fb9ca5d5663",
+        "avifSha256": "3be60f9c39777d895c26344123e56547184a12ef538b941c6fba7de498892c9a",
+        "visualReview": "approved_default"
+      }
+    }
+  ],
+  "adjustments": [],
+  "ids": [
+    "ln_wanfotang",
+    "ln_xingcheng",
+    "ln_guangjita",
+    "ln_zhaoling",
+    "ln_shenyang_beita",
+    "jl_haotaiwangbei",
+    "jl_wandu",
+    "hlj_wenmiao",
+    "ln_chaoyangbei",
+    "hb_jingzhou_wall",
+    "hb_xiangyang_wall",
+    "hb_taihui",
+    "hb_zhongxiang_wenfeng",
+    "hb_huanghelou",
+    "hu_yuelu",
+    "hu_liuyang_wenmiao",
+    "xz_drepung",
+    "xz_guge",
+    "xz_gyantse_dzong",
+    "xz_gyantse_kumbum",
+    "xz_ramoche",
+    "xz_sakya_south",
+    "xz_samye_utse",
+    "xz_sera",
+    "xz_shalu",
+    "xz_tholing",
+    "xz_tradruk",
+    "jp_zuiganji_hondo",
+    "jp_osaki_hachimangu",
+    "jp_haguro_pagoda",
+    "jp_zenkoji_hondo",
+    "jp_anrakuji_pagoda",
+    "jp_daizenji_hondo",
+    "jp_eihoji_kannondo",
+    "jp_zuiryuji_butsuden",
+    "jp_matsumoto_tenshu",
+    "jp_inuyama_tenshu",
+    "jp_izumo_honden",
+    "jp_sanbutsuji_nageiredo",
+    "jp_fukiji_odo",
+    "jp_jodoji_jododo"
+  ],
+  "count": 41,
+  "beforeCount": 476,
+  "afterCount": 517,
+  "groups": {
+    "dongbei-20261005": [
+      "ln_wanfotang",
+      "ln_xingcheng",
+      "ln_guangjita",
+      "ln_zhaoling",
+      "ln_shenyang_beita",
+      "jl_haotaiwangbei",
+      "jl_wandu",
+      "hlj_wenmiao",
+      "ln_chaoyangbei"
+    ],
+    "hubei-hunan-20261005": [
+      "hb_jingzhou_wall",
+      "hb_xiangyang_wall",
+      "hb_taihui",
+      "hb_zhongxiang_wenfeng",
+      "hb_huanghelou",
+      "hu_yuelu",
+      "hu_liuyang_wenmiao"
+    ],
+    "xizang-20261005": [
+      "xz_drepung",
+      "xz_guge",
+      "xz_gyantse_dzong",
+      "xz_gyantse_kumbum",
+      "xz_ramoche",
+      "xz_sakya_south",
+      "xz_samye_utse",
+      "xz_sera",
+      "xz_shalu",
+      "xz_tholing",
+      "xz_tradruk"
+    ],
+    "japan-kokuho-20261005": [
+      "jp_zuiganji_hondo",
+      "jp_osaki_hachimangu",
+      "jp_haguro_pagoda",
+      "jp_zenkoji_hondo",
+      "jp_anrakuji_pagoda",
+      "jp_daizenji_hondo",
+      "jp_eihoji_kannondo",
+      "jp_zuiryuji_butsuden",
+      "jp_matsumoto_tenshu",
+      "jp_inuyama_tenshu",
+      "jp_izumo_honden",
+      "jp_sanbutsuji_nageiredo",
+      "jp_fukiji_odo",
+      "jp_jodoji_jododo"
+    ]
+  },
+  "blocked": [
+    {
+      "id": "jl_lingguang",
+      "reason": "缺主体照片：Wikimedia Commons 文件搜索“灵光塔／영광탑／Lingguang Pagoda／長白 靈光塔”无结果，Category:Changbai Korean Autonomous County 为空，韩文维基“영광탑”条目无图；在本处首轮搜索预算内未取得 CC0/CC BY/CC BY-SA/公有领域的主体照片。年代、层数、高度与国保批次已核实，补到授权正面照片即可就绪。"
+    },
+    {
+      "id": "hlj_shangjing",
+      "reason": "缺主体照片：Wikimedia Commons 关于金上京会宁府遗址的文件只有1930年代 Tolmatscheff 平面图局部（Herrmann 地图集，公有领域）与出土文物（铜坐龙、官印、砖）照片，没有城垣、皇城或午门基址的实景照片；Category:Acheng District 为空。首轮搜索预算内未取得可作主体几何依据的授权照片。年代与国保批次已核实。"
+    },
+    {
+      "id": "hu_kaifu",
+      "reason": "缺主体正面照片：Commons 分类 Kaifu Temple 共58件，大雄宝殿（清光绪重建、重檐歇山、高20米、圆形石柱）仅有 Huangdan2060 2017年斜侧近景一张（Mahavira Hall, Kaifu Temple2.jpg，CC0，已存为 hu_kaifu-3-photo.jpg），正面被树木与角度遮挡；已下载的两张正面/俯视照片（Kai Fu Temple 5.jpg 黄丹 公有领域；开福寺 主殿.jpg 維基小霸王 CC BY-SA 4.0）为大悲殿，维基百科记其为近年新建殿宇，落成年份未查到。恢复条件：找到大雄宝殿正面授权照，或用户同意改绘大悲殿并按近现代标注。"
+    },
+    {
+      "id": "hb_yuquan_hall",
+      "reason": "缺主体照片与年代依据：Commons 分类 Yuquan Temple (Dangyang) 共20件（Fxqf 2017/2020、Chiangdm 2006），均为山门、三圆门、铁塔、银杏、碑刻与院景，Fxqf 2020 年照片说明“室内不开放”，没有大雄宝殿照片；大殿现存构件年代也未查到可靠来源。既有条目 hb_yuquan 已收铁塔。恢复条件：取得大雄宝殿正面授权照及年代依据。"
+    },
+    {
+      "id": "hb_wuzu",
+      "reason": "缺可用正面照片与现存殿宇年代：Commons 分类 Wuzu Temple 共30件（Rowingbohe 2019年2月，CC BY-SA 4.0），已下载 1600px 预览逐张查看：真身殿为斜向仰视且人群遮挡（A corner of Wuzu Temple-11.jpg），天王殿（真慧禅寺匾）正面被节日人群遮住下半部（-2.jpg），麻城殿只见台顶一角（-5.jpg），大雄宝殿仅门前人群（-4.jpg）；且寺院1854年毁于战乱、1927年火灾全毁，现存殿宇年代未取得来源。恢复条件：找到无遮挡的殿宇正面授权照并查明现存殿宇年代。"
+    },
+    {
+      "id": "hb_changchun",
+      "reason": "照片不足：Commons 分类 Changchun Temple (Wuhan) 60件（Vmenkov 2008/2011，CC BY-SA 3.0；Wangyou0720 2007 公有领域），山门正面照仅 682×487 像素（Changchun-Taoist-Temple.jpg），三皇殿为斜向仰视（Changchun-Temple-San-Huang-Dian-0337.jpg），其余为街对面远景、殿内与细部，没有清晰的殿宇正面全貌。非国保（1992年省保）。恢复条件：取得山门或三皇殿的高分辨率正面授权照。"
+    },
+    {
+      "id": "hu_shigu",
+      "reason": "照片过小且主体为2006年重建：Commons 相关照片中大观楼与正门（人間正道 2007/2013，CC BY-SA 3.0）仅 618×468、500×320 像素，Shigu-Academy.jpg（公有领域 1200×898）为江中远景，Shigu Academy59.jpg（FreeePedia 2025，CC BY-SA 4.0，4000×3000）为新建“石鼓江山”石牌坊。非国保。恢复条件：取得大观楼高分辨率正面授权照，并由用户确认收录近现代重建书院。"
+    },
+    {
+      "id": "hu_laosicheng",
+      "reason": "Commons 无照片：检索“老司城”“Laosicheng”“Tusi site Yongshun”仅得芙蓉镇全景与湖南地图，无祖师殿或遗址任何照片。国保：维基百科湖南列表记第五批“老司城遗址”（古遗址，五代—清），本会话未在公报渲染页定位编号。恢复条件：取得祖师殿正面授权照。"
+    },
+    {
+      "id": "hu_matian",
+      "reason": "Commons 无照片：检索“马田鼓楼”“Matian drum tower”“Tongdao drum tower”均无结果。国保：上一轮 OCR 的第四批公报页（r4/p-26）中见“马田鼓楼 · 清”，本会话未逐页核对编号。恢复条件：取得鼓楼正面授权照。"
+    },
+    {
+      "id": "hu_shanggantang",
+      "reason": "Commons 无照片：检索“上甘棠”“Shanggantang”“Jiangyong village ancient”均无结果。国保第六批 编号670 Ⅲ-373 上甘棠村古建筑群（明至清，湖南省江永县）已在 batch6.html 核对。恢复条件：取得村内主体建筑正面授权照。"
+    },
+    {
+      "id": "hu_huangsiqiao",
+      "reason": "Commons 无照片：检索“黄丝桥”“Huangsiqiao”“Huangsi Bridge ancient city Fenghuang”均无结果；维基百科湖南国保列表亦无黄丝桥古城条目（国保身份未确认）。恢复条件：取得城门正面授权照并核实保护身份。"
+    },
+    {
+      "id": "hu_chaling",
+      "reason": "照片过小：Commons 仅 Allervous 2020 年的 Gate of Chaling.jpg（592×353）与 The defensive walls, old Chaling town.jpg（591×354），CC BY-SA 4.0，分辨率不足以核对结构。国保：维基列表记第七批“茶陵古城墙”（古遗址），本会话未在公报页定位编号。恢复条件：取得高分辨率城门楼正面授权照。"
+    },
+    {
+      "id": "xz_tashilhunpo",
+      "reason": "缺主体照片：现有两张授权照片（Prof. Mortel 2018 CC BY 2.0；Bgabel 2010 CC BY-SA 3.0）及 Commons 分类 Tashilhunpo Monastery 中另 11 张候选（见 $S/expansion/tashi/info.json 与 montage.png）均自寺内屋顶或街巷仰视，强巴佛殿下部一至二层被前景屋顶遮挡，没有一张能完整看到主体底部的正面照；措钦大殿、班禅灵塔殿亦无正面全貌照。另需用户确认所绘主体取强巴佛殿还是措钦大殿。强巴佛殿“高约30米、主体五层”“1914年由九世班禅主持营造”来自检索摘要（携程、凤凰网、China Daily），未直接核读，一并待核。"
+    },
+    {
+      "id": "jp_chusonji_konjikido",
+      "reason": "缺少可用的自由许可本体照片：金色堂自镰仓时代起置于覆堂内，现藏1965年新覆堂（钢筋混凝土），堂内禁止摄影。Wikimedia Commons 的 Category:Konjikido (Chusonji) 及「中尊寺 金色堂」检索共21件，经逐一查看：全部外景均为新覆堂外观（663highland、Chuson-ji Konjiki-do 02/201806、Konjikido (Chusonji) 01–04 CC0、天台宗東北大本山…P1037618 等），公有领域旧照 NDL-DC 762376 为旧覆堂外观（448×353），「中尊寺金色堂模型」为工艺菓子模型，PD 的 Interior GoldenHall Chusonji 为堂内佛坛，另有堂内具与平面图。无一张呈现金色堂本体外观。恢复条件：找到公有领域的本体外观旧照（如1962–68年解体修理期间或战前出版物的扫描，须核实著作权状态），或由用户决定改绘新覆堂（非国宝主体，不建议）。资料、断代与条目文字已就绪。"
+    }
+  ],
+  "catalog_date_corrections": {
+    "xz_drepung": {
+      "year": 1416,
+      "yearLabel": "15世纪起营建",
+      "yearApprox": true,
+      "dyn": "ming",
+      "tag": "明",
+      "era": "15世纪起营建 · 明清扩建"
+    },
+    "xz_ramoche": {
+      "year": 1986,
+      "yearLabel": "1986年重修",
+      "yearApprox": false,
+      "dyn": "modern",
+      "tag": "今",
+      "era": "641年创建 · 1474年格局 · 1986年重修"
+    },
+    "xz_samye_utse": {
+      "year": 1990,
+      "yearLabel": "1988年后重建",
+      "yearApprox": true,
+      "dyn": "modern",
+      "tag": "今",
+      "era": "8世纪创建 · 1988年后重建"
+    },
+    "xz_tholing": {
+      "year": 1028,
+      "yearLabel": "约1028年扩建",
+      "yearApprox": true,
+      "dyn": "song",
+      "tag": "宋",
+      "era": "996年创寺 · 1028年扩建红殿"
+    },
+    "xz_tradruk": {
+      "year": 1351,
+      "yearLabel": "14世纪格局",
+      "yearApprox": true,
+      "dyn": "yuan",
+      "tag": "元",
+      "era": "7世纪创建 · 14世纪格局 · 1980年代重修"
+    }
+  },
+  "completed_at": "2026-10-11T21:57:27.621740+08:00",
+  "wall_clock_seconds": 8176.314,
+  "generation_calls": 82,
+  "generation_failures": 0,
+  "generation_retries": 0,
+  "peak_concurrency": 8,
+  "default_approved": {
+    "line": 41,
+    "color": 41
+  },
+  "user_approved": {
+    "line": 0,
+    "color": 0
+  },
+  "asset_set": "79c3bb538378d239ff4c",
+  "validation": {
+    "node": {
+      "passed": 135,
+      "failed": 0
+    },
+    "python": {
+      "passed": 25,
+      "failed": 0
+    },
+    "native_unit": {
+      "passed": 46,
+      "failed": 0
+    },
+    "native_ui": {
+      "passed": 4,
+      "failed": 0,
+      "rechecked_after_date_changes": 2
+    },
+    "browser": {
+      "sites": 41,
+      "images_decoded": 82,
+      "backgrounds": [
+        "dark",
+        "light"
+      ]
+    },
+    "old_artwork_unchanged": {
+      "line": 476,
+      "color": 476
+    },
+    "asset_bundle": {
+      "files": 4070,
+      "bytes": 5303742513,
+      "backup_verified": true
+    }
+  },
+  "report": "docs/reviews/expansion-ready-20261011.md"
+}

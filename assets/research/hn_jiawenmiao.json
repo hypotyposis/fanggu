@@ -18,8 +18,8 @@
     "郏县文庙 · 大成殿正面",
     "明清 · 现存主体"
   ],
-  "status": "needs_review",
-  "visual_review_status": "pending_user",
+  "status": "complete",
+  "visual_review_status": "approved_default",
   "sources": [
     {
       "id": "hn_jiawenmiao",
@@ -77,6 +77,27 @@
       "url": "https://wglj.pds.gov.cn/contents/12739/262641.html",
       "publisher": "平顶山市文化广电和旅游局",
       "accessed_at": "2026-10-02"
+    },
+    {
+      "title": "河南文物之窗 | 走进具有“皇家规格”的郏县文庙",
+      "url": "https://web.archive.org/web/20240910023345/https://wwj.henan.gov.cn/2024/06-14/3007918.html",
+      "publisher": "河南省文物局（转大象新闻）2024-06-14；互联网档案馆存档",
+      "note": "954年孔氏家庙、1206年张志行建官方文庙、1459年修复大成殿并雕龙陛石、前檐四根木檐柱透雕龙与虎首、柱础浮雕、现存22栋71间；原始网址 https://wwj.henan.gov.cn/2024/06-14/3007918.html",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郏县文庙",
+      "url": "https://zh.wikipedia.org/wiki/%E9%83%8F%E5%8E%BF%E6%96%87%E5%BA%99",
+      "publisher": "维基百科（二手来源，转引《河南省文物志》2009）",
+      "note": "修建十一次、左学右庙、大成殿单檐歇山绿琉璃、木柱透雕盘龙、第六批国保时代金至清",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郏县文庙",
+      "url": "https://web.archive.org/web/2024id_/https://baike.baidu.com/item/%E9%83%8F%E5%8E%BF%E6%96%87%E5%BA%99",
+      "publisher": "百度百科（互联网档案馆存档；二手来源）",
+      "note": "大成殿高15.5米、面阔19.7米；大成殿等为清代木构；木雕龙柱河南仅此一例、晚于晋祠圣母殿；原构彩画非殿式非苏式",
+      "added": "content-rewrite-20261005"
     }
   ],
   "site_recommendation": {
@@ -109,5 +130,13 @@
       "郏县文庙 · 大成殿正面",
       "明清 · 现存主体"
     ]
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "54da3c5662a8642659400dd6c891aa57dfa165affbf28b44d332289390404888",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "6129207aa58c26196791f5a7e24e80e63639f00b7733094800e82496e96906c8"
   }
 }

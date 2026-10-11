@@ -62,17 +62,18 @@
 | `native-alpha`、`existing-alpha-preserved` | 原件本身带透明通道，直接保留 alpha 只改 RGB |
 | `edge-connected-matte-v1` | 旧暗底原件的边缘连通抠图，仅限哈希白名单内的旧件 |
 | 透空种子（`seeds`） | 人工确认的封闭空隙像素坐标，让去底也移除这些区域 |
-| 处理器哈希 | 去底脚本文件的 SHA-256，进入缓存键；脚本变了相关图版就要重建并重新人审 |
+| 处理器哈希 | 去底脚本文件的 SHA-256，进入缓存键；脚本变了相关图版就要重建并重新记录验收状态 |
 | 研究 JSON、考据记录 | `assets/research/<id>.json`（线稿）与 `assets/color-research/<id>.json`（设色）：来源、提示词、输入、尺寸、验收 |
 | 队列（`queue.json`） | 设色生产的条目清单；`excluded` 是三张正式版的特殊接入 |
 | 三张正式版 | 卢舍那大佛、佛光寺东大殿、应县木塔的设色图，用户确认保持原样，文件在 `assets/color-studies/v1/` |
 | 清单（manifest） | 生成的汇总文件：`plates.js`、`colored-plates.js`、`avif-manifest.json` |
 | 汇总器 | `collect-colored-plates.mjs` |
-| 原型模式、严格模式 | `plate-policy.json` 的两种模式：前者不以技术指标阻塞交付，用户人眼验收为准；后者恢复全部校验 |
+| 原型模式、严格模式 | `plate-policy.json` 的两种模式：前者不以技术指标阻塞交付，图版按默认通过策略接入；后者恢复全部校验 |
 | `prepared`、`needs_review`、`complete` | 设色记录的制作状态 |
-| `pending_user`、`approved_user` | 图版的用户验收状态；只有用户明确通过的 ID 才记为后者 |
-| `user_review` | 记录用户验收的字段，绑定当时的文件哈希；文件改变即失效 |
-| 人审、目检 | 由人实际查看图片；文件存在、尺寸正确不等于通过 |
+| `pending_user`、`approved_default`、`approved_user` | 图版验收状态的三个值：转码后、默认通过命令前的瞬时状态；按默认通过策略接入、哈希绑定、没有人眼审阅；用户明确说过通过。三种都交付，iOS 打包不区分；默认通过的图不得记为 `approved_user` |
+| 默认通过、`default-approve-2026-10-05` | 用户 2026-10-05 决定的策略：审图时间不是瓶颈，图版生成、去底、转码后即视为通过并交付；由 `record-plate-review.mjs --default --all-pending` 记为 `approved_default`，`reviewer` 为 `default-policy` |
+| `user_review` | 记录验收状态的字段，`reviewer` 为 `user` 或 `default-policy`，绑定当时的文件哈希；文件改变即失效 |
+| 人审、目检 | 由人实际查看图片；原型阶段不是交付门槛，`approved_default` 即表示没有人审。文件存在、尺寸正确不等于看过 |
 | 审图工具、校对页 | 根目录的 `proof.html`、`color-proof.html`、`color-studies.html`、`sources.html` |
 | imagegen | 代理内置的图像生成工具；本项目用它生成白底 PNG，不需要 API Key |
 | 批次（batch） | 一次新增若干古迹的工作单元；有计划 `*-plan.md`、ID 列表 `*-batch.json`、报告 `*-report.md` 与对应测试 |

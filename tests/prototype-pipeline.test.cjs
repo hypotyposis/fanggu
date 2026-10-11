@@ -73,6 +73,24 @@ test('prototype collector bypasses quality/status gates without inventing user a
     fs.appendFileSync(path.join(directory, src), 'changed');
     assert.equal(collect(['--require-complete']).status, 0);
     assert.match(fs.readFileSync(path.join(directory, 'colored-plates.js'), 'utf8'), /"visualReview": "pending_user"/);
+    // The default policy accepts whatever is pending, binds the current files, and labels itself honestly.
+    delivery.images.demo.visualReview = 'pending_user';
+    delete delivery.images.demo.review;
+    put('assets/color-research/avif-manifest.json', delivery);
+    put(record, { id: 'demo', status: 'needs_review', output: source });
+    execFileSync(process.execPath, ['scripts/record-plate-review.mjs', 'color', '--default', '--all-pending'], { cwd: directory });
+    const byDefault = JSON.parse(fs.readFileSync(path.join(directory, record), 'utf8'));
+    assert.equal(byDefault.user_review.status, 'approved_default');
+    assert.equal(byDefault.user_review.reviewer, 'default-policy');
+    assert.equal(byDefault.visual_review_status, 'approved_default');
+    assert.equal(byDefault.status, 'complete');
+    assert.equal(byDefault.user_review.avifSha256, hash(src));
+    assert.notEqual(byDefault.user_review.avifSha256, accepted.avifSha256);
+    // An explicit user decision is never downgraded by the default policy.
+    execFileSync(process.execPath, ['scripts/record-plate-review.mjs', 'color', 'demo'], { cwd: directory });
+    execFileSync(process.execPath, ['scripts/record-plate-review.mjs', 'color', '--default', 'demo'], { cwd: directory });
+    assert.equal(JSON.parse(fs.readFileSync(path.join(directory, record), 'utf8')).user_review.status, 'approved_user');
+    assert.notEqual(spawnSync(process.execPath, ['scripts/record-plate-review.mjs', 'color', '--all-pending'], { cwd: directory }).status, 0);
   } finally {
     fs.rmSync(directory, { recursive: true, force: true });
   }

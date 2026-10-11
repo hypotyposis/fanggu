@@ -17,6 +17,8 @@ const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('pla
 const facets = require('../catalog.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
+const readyExpansion = json('assets/research/expansion-ready-20261011-batch.json');
+const readySites = catalog.filter(site => readyExpansion.ids.includes(site.id));
 
 test('Hunan and Hubei additions cover both new provinces with paired artwork and genuine saved inputs', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
@@ -30,7 +32,7 @@ test('Hunan and Hubei additions cover both new provinces with paired artwork and
   assert.equal(queue.count, SITES.length - queue.excluded.length);
   for (const province of ['湖南', '湖北']) {
     assert.equal(batch.groups[province].length, 4);
-    assert.equal(catalog.filter(s => s.province === province).length, province === '湖南' ? 5 : 4);
+    assert.equal(catalog.filter(s => s.province === province).length, (province === '湖南' ? 5 : 4) + readySites.filter(site => site.province === province).length);
     for (const id of batch.groups[province]) {
       const site = catalog.find(s => s.id === id);
       assert.equal(site.province, province);
@@ -41,7 +43,7 @@ test('Hunan and Hubei additions cover both new provinces with paired artwork and
       for (const folder of ['research', 'color-research']) {
         const record = json(`assets/${folder}/${id}.json`);
         assert.equal(record.quality_mode, 'prototype');
-        assert(['pending_user', 'approved_user'].includes(record.visual_review_status));
+        assert(['pending_user', 'approved_user', 'approved_default'].includes(record.visual_review_status));
         assert.equal(record.background_preparation.method, 'white-matte-v1');
         assert.equal(record.background_preparation.sourceSha256, hash(record.output || record.generated_file));
         assert.equal(record.generation_history.length, 1);
@@ -57,7 +59,7 @@ test('Hunan and Hubei additions cover both new provinces with paired artwork and
           assert(!ref.author.includes('<a'));
         }
         for (const file of record.reference_files || record.input_images) assert(fs.existsSync(path.join(root, file)), file);
-        if (record.visual_review_status === 'approved_user') assert.equal(record.user_review.sourceSha256, record.background_preparation.sourceSha256);
+        if (record.visual_review_status?.startsWith('approved_')) assert.equal(record.user_review.sourceSha256, record.background_preparation.sourceSha256);
       }
       const art = manifest.images[id];
       assert.equal(art.sourceSha256, hash(art.source));
@@ -107,10 +109,10 @@ test('Hunan and Hubei additions remain searchable and seed unvisited in the nati
   const find = filters => Array.from(catalog.filter(s => facets.matches(s, filters)), s => s.id).sort();
   for (const province of ['湖南', '湖北']) {
     const firstBatchStone = province === '湖南' ? ['hn_xizhou'] : [];
-    assert.deepEqual(find({ region: 'central', province }), [...batch.groups[province], ...firstBatchStone].sort());
+    assert.deepEqual(find({ region: 'central', province }), [...batch.groups[province], ...firstBatchStone, ...readySites.filter(site => site.province === province).map(site => site.id)].sort());
   }
-  assert.deepEqual(find({ province: '湖南', query: '第七批国保' }), ['hu_tianhou']);
-  assert.deepEqual(find({ province: '湖北', type: 'pagoda' }), ['hb_yuquan']);
+  assert.deepEqual(find({ province: '湖南', query: '第七批国保' }), ['hu_liuyang_wenmiao', 'hu_tianhou'].sort());
+  assert.deepEqual(find({ province: '湖北', type: 'pagoda' }), ['hb_yuquan', 'hb_zhongxiang_wenfeng'].sort());
 });
 
 test('Hunan and Hubei expansion preserves all previous originals, transparent deliveries and review states', requiresLocalAssets, () => {
@@ -121,6 +123,11 @@ test('Hunan and Hubei expansion preserves all previous originals, transparent de
     if (id === 'xian') { assertArchivedXian(old); continue; }
     if (id === 'tiantai') { assertArchivedTiantai(old); continue; }
     for (const key of ['source', 'input', 'src']) assert.equal(hash(old[key]), old[{ source: 'sourceSha256', input: 'inputSha256', src: 'sha256' }[key]], id);
-    assert.equal(current[id].visualReview, old.visualReview, id);
+    if (old.visualReview === 'pending_user' && current[id].visualReview === 'approved_default') {
+      // Accepted since this baseline by the default policy; the hashes above prove the files are unchanged.
+      assert.equal(current[id].review?.reviewer, 'default-policy', id);
+    } else {
+      assert.equal(current[id].visualReview, old.visualReview, id);
+    }
   }
 });

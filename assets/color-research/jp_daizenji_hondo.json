@@ -1,0 +1,106 @@
+{
+  "id": "jp_daizenji_hondo",
+  "name": "大善寺本堂",
+  "subject": "大善寺 · 本堂正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_daizenji_hondo.png",
+    "assets/references/jp_daizenji_hondo-photo.jpg",
+    "assets/references/jp_daizenji_hondo-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 大善寺 · 本堂正面\nMATERIAL OBSERVATIONS: 深褐色风化木构，红褐色桧皮葺屋面，灰白石阶与台基；白砂地与绿植去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "深褐色风化木构，红褐色桧皮葺屋面，灰白石阶与台基；白砂地与绿植去除。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_daizenji_hondo-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E5%96%84%E5%AF%BA_%E5%B1%B1%E6%A2%A8%E7%9C%8C.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/%E5%A4%A7%E5%96%84%E5%AF%BA_%E5%B1%B1%E6%A2%A8%E7%9C%8C.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "NMaia",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2019/09/12 (according to Exif data)",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jp_daizenji_hondo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Daizen-ji-4a.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Daizen-ji-4a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "江戸村のとくぞう",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2018-10-10 11:59:02",
+      "role": "自右前方实拍，核对五间门窗与屋面"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 大善寺本堂",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/882"
+    },
+    {
+      "title": "文化遗产在线 · 大善寺本堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/174122"
+    },
+    {
+      "title": "山梨县 · 县内の国宝（大善寺本堂）",
+      "url": "https://www.pref.yamanashi.jp/bunka/bunkazaihogo/kokuhou.html"
+    },
+    {
+      "title": "ja.wikipedia · 大善寺 (甲州市)",
+      "url": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%96%84%E5%AF%BA_(%E7%94%B2%E5%B7%9E%E5%B8%82)"
+    }
+  ],
+  "original_research": "assets/research/jp_daizenji_hondo.json",
+  "output": "assets/colored/jp_daizenji_hondo.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "bb1af515c9bf52330b484b7d06b9cf6cede0ffe036373fedd49b02af06f48474",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 大善寺 · 本堂正面\nMATERIAL OBSERVATIONS: 深褐色风化木构，红褐色桧皮葺屋面，灰白石阶与台基；白砂地与绿植去除。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/jp_daizenji_hondo.png",
+        "assets/references/jp_daizenji_hondo-photo.jpg",
+        "assets/references/jp_daizenji_hondo-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-645986f7-9894-4022-8b60-32ef14b95437.png",
+      "retained_file": "assets/colored/jp_daizenji_hondo.png",
+      "received_at": "2026-10-11T12:53:25.050Z",
+      "sourceSha256": "bb1af515c9bf52330b484b7d06b9cf6cede0ffe036373fedd49b02af06f48474",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-645986f7-9894-4022-8b60-32ef14b95437.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:53:25.050Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "bb1af515c9bf52330b484b7d06b9cf6cede0ffe036373fedd49b02af06f48474",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "faf4e4dd46cb9ee1ba4aa3fa5dceb8e008c83d928f316e026839926085759846",
+    "avifSha256": "9e7ab2f0bed0d25957966cbd24321f892bdba403ede1b201235554863a1dc450"
+  }
+}

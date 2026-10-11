@@ -43,7 +43,9 @@
     "limitations": [
       "用户视觉验收待确认，艺术图版非实测。",
       "顶部仍有少量现貌地衣／苔色，非新建构件。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
   "background_preparation": {
     "method": "white-matte-v1",
@@ -64,5 +66,15 @@
     "image_loads_passed": true,
     "subject_and_materials_preserved": true,
     "user_acceptance": "pending_user"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "58d48a3f47b2eba42f174b22c19d4a015f80408a8286a61a9f1fa3151ec50c8d",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "3ee297e5e537fc38fd68f8c2ae68d29a6e5237ba98e3dacb0810fdc49bbecb72",
+    "avifSha256": "ddca64b340a1258708e1edfa67356c2fc5eb46af32e1e3c5e3a6e5792b423f2e"
   }
 }

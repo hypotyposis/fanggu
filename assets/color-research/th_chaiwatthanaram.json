@@ -2,9 +2,9 @@
   "id": "th_chaiwatthanaram",
   "name": "柴瓦塔那兰寺",
   "subject": "中央主塔、四角小塔及共同台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Chai_Watthanaram_1.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Temple_Wat_Chai_Watthanaram_1.jpg/1920px-Temple_Wat_Chai_Watthanaram_1.jpg",
   "author": "Welcome to Thailand",
@@ -146,7 +146,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "bdf07140b7b1596b21ddc83ca60a03113eb1db68a939b9b681bb2417382ecd87",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "dea51ce5fa472172d0af7799eb826db59b3ba285c384f91f66fffbe47fd64245",
+    "avifSha256": "2132382073aff72a89c6036d61f57fb92d32f2960090405b35eaa17a0c4ebf23"
   }
 }

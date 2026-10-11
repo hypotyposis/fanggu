@@ -31,10 +31,10 @@ module.exports = function assertArchivedTiantai(previous) {
   assert.equal(image.extraction.rgbUnchanged, true);
   assert.deepEqual(image.extraction.backgroundSeeds, [[700, 185], [835, 185], [250, 650], [1280, 650]]);
   assert.equal(image.extraction.transparentPixels - archived.extraction.transparentPixels, 60934);
-  assert(['pending_user', 'approved_user'].includes(image.visualReview));
-  if (image.visualReview === 'approved_user') {
+  assert(['pending_user', 'approved_user', 'approved_default'].includes(image.visualReview));
+  if (image.visualReview.startsWith('approved_')) {
     const review = read('assets/color-research/tiantai.json').user_review;
-    assert.equal(review.reviewer, 'user');
+    assert.equal(review.reviewer, image.visualReview === 'approved_user' ? 'user' : 'default-policy');
     assert.equal(review.sourceSha256, image.sourceSha256);
     assert.equal(review.inputSha256, image.inputSha256);
     assert.equal(review.avifSha256, image.sha256);

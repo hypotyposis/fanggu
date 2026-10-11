@@ -2,9 +2,9 @@
   "id": "kh_angkor_wat",
   "name": "吴哥窟",
   "subject": "中央五塔及紧邻台基回廊",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:20191210_Angkor_Wat_towers-2.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/20191210_Angkor_Wat_towers-2.jpg/1920px-20191210_Angkor_Wat_towers-2.jpg",
   "author": "Balon Greyjoy",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "8d926b2411f4383200e78252e37b35ff797811f794845ca6ae001ea54b0ef47e",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "86e718d0af38fbb18de44e9d642a51f9412254ba1ff4b6b15764036591a536ff",
+    "avifSha256": "951a15c61af66a6c2405531fdc45421d5fc8ef568d6dde944f034eca07b54cc6"
   }
 }

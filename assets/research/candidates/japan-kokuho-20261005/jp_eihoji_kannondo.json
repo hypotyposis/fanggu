@@ -1,0 +1,105 @@
+{
+  "id": "jp_eihoji_kannondo",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "永保寺 · 观音堂正面",
+  "name": "永保寺观音堂",
+  "short": "永保寺",
+  "sub": "附裳阶禅宗佛殿 · 观音堂正面",
+  "dyn": "jp_muromachi",
+  "tag": "室町",
+  "era": "室町前期（南北朝期）建立",
+  "year": 1350,
+  "yearLabel": "14世纪中叶",
+  "yearApprox": true,
+  "yearNote": "文化厅数据库记「室町前期／1333-1392」：《梦窗年谱》记正和三年（1314）建观音阁，现堂依样式推定下至南北朝期建立。年表点取1350为区间约略定位，非文献纪年。1901年指定重要文化财，1952年3月29日指定国宝。",
+  "country": "JP",
+  "province": "岐阜县",
+  "placeKey": "jp_tajimi",
+  "placeName": "多治见",
+  "place": "日本 · 岐阜县 · 多治见",
+  "lat": 35.34667,
+  "lon": 137.13083,
+  "coordinate_source": "ja.wikipedia GeoData（永保寺）坐标 35.346667, 137.130833，作为多治见显示点，非观音堂测绘坐标。",
+  "types": [
+    "hall",
+    "temple"
+  ],
+  "lede": "虎溪山永保寺由梦窗疏石1314年开创，临土岐川、背岩山，是中世禅院「境致」的代表。现存观音堂为南北朝期所建：方三间主屋加裳阶，桧皮葺入母屋顶翘角深远，正面吹放，组物只在柱上出组，把禅宗样简化成与庭园相称的潇洒意匠。",
+  "facts": [
+    "桁行三间、梁间三间，单层附裳阶，入母屋造桧皮葺；文化厅定为室町前期（1333–1392）建立。1952年指定国宝。",
+    "《梦窗年谱》记正和三年（1314）建观音阁，现堂依样式推定下至南北朝；低床、板轩、不用詰组，是禅宗样日本化的实例。",
+    "堂内后面中央设来迎壁与禅宗样佛坛，安置岩窟内观音坐像；主屋上部张镜天井，裳阶见虾虹梁，正面吹放处以手挟装饰。"
+  ],
+  "caption": [
+    "永保寺 · 观音堂正面",
+    "室町前期 · 南北朝期（1333–1392）"
+  ],
+  "legacyNames": [
+    "永保寺観音堂",
+    "虎渓山永保寺",
+    "Eihō-ji Kannondō",
+    "Kokeizan Eihoji"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "方三间主屋外加一圈裳阶，故外观为上下两层屋面：上为入母屋造，下为裳阶披檐；均桧皮葺，上层檐角翘起明显。",
+    "正面吹放：外圈四根细柱之间无门，内侧可见栈唐户与弓欄间（格子透窗）；组物仅柱头出组，不作詰组。",
+    "低石台基，正面短阶；床低。",
+    "前方现代木栅栏、岩壁、卧龙池与无际桥、右侧建筑、人群去除。"
+  ],
+  "material_observations": "深褐色木构，灰褐色桧皮葺上下屋面，浅灰石台基；蓝天与树木去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Kokeizan_Eih%C5%8D-ji_Temple_20221127_13.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Kokeizan_Eih%C5%8D-ji_Temple_20221127_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "先従隗始",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_eihoji_kannondo-photo.jpg",
+    "assets/references/jp_eihoji_kannondo-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_eihoji_kannondo-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kokeizan-kannondo4.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Kokeizan-kannondo4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Y.Torayama",
+      "license": "Public domain",
+      "license_url": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "photo_date": "2010-02-10",
+      "role": "同一正面另一实拍，核对吹放柱列与裳阶"
+    }
+  ],
+  "source_note": "主图为先従隗始2022年11月正面实拍（CC0），第二图为Y.Torayama 2010年同一正面（公有领域自释），用于核对吹放柱列与裳阶。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nEihoji Kannondo, Tajimi, Gifu, 14th-century Zen hall. Draw the FRONT elevation as in photo 2 (photo 3 is the same front): a compact square hall of THREE bays with a lower encircling mokoshi pent roof and an upper hip-and-gable roof, both of cypress-bark shingles, the upper roof with strongly lifted eave corners; the front bay is open (no doors on the four slender outer posts), showing behind them panelled doors and cusped lattice transoms; brackets only above the columns; a low stone platform with a short stair. Keep both roof outlines and the full base. Remove the modern fence, rock cliff, pond, bridge, trees, people and the building at right.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 永保寺観音堂",
+      "url": "https://online.bunka.go.jp/heritages/detail/121854"
+    },
+    {
+      "title": "ja.wikipedia · 永保寺",
+      "url": "https://ja.wikipedia.org/wiki/%E6%B0%B8%E4%BF%9D%E5%AF%BA"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-03-29",
+      "juyo_bunkazai_designated": "1901-03-27",
+      "database_detail_id": 121854
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/121854"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "2022-11-27 13:11:18",
+  "photo_pixels": [
+    4608,
+    3072
+  ]
+}

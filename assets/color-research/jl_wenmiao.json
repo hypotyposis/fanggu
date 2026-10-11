@@ -40,7 +40,9 @@
     ],
     "limitations": [
       "用户视觉验收待确认，艺术图版非实测。"
-    ]
+    ],
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
   "background_preparation": {
     "method": "white-matte-v1",
@@ -78,5 +80,15 @@
     "image_loads_passed": true,
     "subject_and_materials_preserved": true,
     "user_acceptance": "pending_user"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "739ce424a31bf8360c7bc0b821000b95864940a7982a4766ed88343053189d7c",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "39990a3cbf8a315b25e4fe5fe13d75e78da88672c1287d1da341beba8c7872f0",
+    "avifSha256": "be339018b04748b158350b65c3d6ff4de95b9c7ddd43c01763f3ffd47b01e361"
   }
 }

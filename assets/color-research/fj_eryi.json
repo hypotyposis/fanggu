@@ -34,10 +34,11 @@
   },
   "output": "assets/colored/fj_eryi.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型阶段保留候选，待用户集中审图。"
+    "notes": "原型阶段保留候选，待用户集中审图。",
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-f87b65dd-e8df-434c-aae2-b12262b53fd9.png",
   "width": 1536,
@@ -46,5 +47,15 @@
     "method": "white-matte-v1",
     "sourceSha256": "7df200c0c78639f5af397dd284dc388f6bbd823a390653c42bc37e54ba838298",
     "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "7df200c0c78639f5af397dd284dc388f6bbd823a390653c42bc37e54ba838298",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "feef99f37b0f045af51c78345528a274a57b626d1a09316927ee3eec8cdd324d",
+    "avifSha256": "58ee3ec31e6e718c5adc22ef318ec81ee6218c06cdc7a6639fc4e44a49810261"
   }
 }

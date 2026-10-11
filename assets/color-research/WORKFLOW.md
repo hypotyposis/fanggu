@@ -1,10 +1,10 @@
 # 设色图版生产与维护
 
-本文件规定逐张设色、记录、验收与汇总的长期流程。开发入口见 [AGENTS.md](../../AGENTS.md) 和 [开发指南](../../docs/development.md)。2026-09-15 的 197 张批次分工、当时授权和恢复现场说明已保存在 [历史任务快照](history/color-production-2026-09-15.md)，不构成后续任务的授权或分工。
+本文件规定逐张设色、记录、状态与汇总的长期流程。开发入口见 [AGENTS.md](../../AGENTS.md) 和 [开发指南](../../docs/development.md)。2026-09-15 的 197 张批次分工、当时授权和恢复现场说明已保存在 [历史任务快照](history/color-production-2026-09-15.md)，不构成后续任务的授权或分工。
 
-当前默认为 [原型模式](../../docs/monument-batch-workflow.md#当前原型模式)：取消 AI 对生成稿的视觉通过/淘汰判断，关闭图版技术质量拦截和自动质量返工。原件保存后直接设色、尽力去底/转码，再给用户集中人审；用户明确通过即通过。以下逐张视觉/像素质量门槛仅在严格模式阻塞交付。`needs_review` 的已保存图可进入本地待审预览，不再为满足 AI 检查清单伪写 `visual_review`；用户通过由 `user_review` 记录并绑定真实图片，未审仍 `pending_user`。
+当前默认为 [原型模式](../../docs/monument-batch-workflow.md#当前原型模式)：取消 AI 对生成稿的视觉通过/淘汰判断，关闭图版技术质量拦截和自动质量返工。原件保存后直接设色、尽力去底/转码；用户于 2026-10-05 决定图版默认通过、不等人眼验收，每批转码后运行 `node scripts/record-plate-review.mjs color --default --all-pending`，把仍为 `pending_user` 的图记为 `approved_default`（`reviewer: default-policy`，没有人眼审阅），再转码、汇总即交付。用户明确说通过的 ID 用 `node scripts/record-plate-review.mjs color <id> ...` 记为 `approved_user`；默认通过的图不得写成 `approved_user`。以下逐张视觉/像素质量门槛仅在严格模式阻塞交付。`needs_review` 的已保存图可直接进入转码，不为满足 AI 检查清单伪写 `visual_review`；状态由 `user_review` 记录并绑定真实图片。
 
-新增古迹同时执行 [增量制图操作手册](../../docs/monument-batch-workflow.md)：复用已核验的实拍，线稿结构通过后立即将该项设色放入就绪队列，不等待整批线稿全部结束。工具并发、搜索及返工预算按手册执行，逐图记录和材质色验收要求不减少。
+新增古迹同时执行 [增量制图操作手册](../../docs/monument-batch-workflow.md)：复用已核验的实拍，线稿结构通过后立即将该项设色放入就绪队列，不等待整批线稿全部结束。工具并发、搜索及返工预算按手册执行，逐图记录和材质色观察要求不减少。
 
 ## 文件与输入
 
@@ -34,11 +34,11 @@
 
 ## 状态与逐张保存
 
-- `prepared`：生成前保存 `id`、`name`、`generator`、完整 `prompt`、`input_images`、`material_observations`、`references` 和预定 `output`。白底生成后增加 `background_preparation: { method: "white-matte-v1", sourceSha256, seeds }`；原件哈希必须匹配。脚本版本、处理参数、透明通道与副本哈希进入 AVIF 清单，用户验收另行记录。
-- `needs_review`：工具返回后立即保存 `generated_original`，复制原件到 `output`，记录真实 `width`、`height`。路径存在不等于验收通过。
-- `complete`：实际查看并核验后写入 `visual_review` 和状态。至少记录所绘主体、层数/开间、构图、材质颜色、文字、裁切和背景的实际检查，以及仍有的限制。
+- `prepared`：生成前保存 `id`、`name`、`generator`、完整 `prompt`、`input_images`、`material_observations`、`references` 和预定 `output`。白底生成后增加 `background_preparation: { method: "white-matte-v1", sourceSha256, seeds }`；原件哈希必须匹配。脚本版本、处理参数、透明通道与副本哈希进入 AVIF 清单，验收状态由 `record-plate-review.mjs` 另行记录。
+- `needs_review`：工具返回后立即保存 `generated_original`，复制原件到 `output`，记录真实 `width`、`height`。路径存在不等于已写入验收状态。
+- `complete`：严格模式下实际查看并核验后写入 `visual_review` 和状态，至少记录所绘主体、层数/开间、构图、材质颜色、文字、裁切和背景的实际检查，以及仍有的限制。原型模式下 `record-plate-review.mjs color` 在记录状态时同时置为 `complete`，并把已有 `visual_review` 对象的 `status` 同步为 `approved_default` 或 `approved_user`。
 - 输入、输出与研究记录中的 `id` 对齐；文件路径优先用仓库相对路径。工具原件的真实绝对路径保留用于追溯，独立保存原件及参考资料，不能假定该路径在新机器上可用。
-- 恢复时先确认工作目录、在途任务与资产是否齐备；只有本批输入已准备好且交付副本缺失或过期时，才运行 `python3 -B scripts/prepare-colored-avif.py`，成功退出后再运行 `node scripts/collect-colored-plates.mjs` 重建进度。这些命令会写转码或汇总文件；旧 `progress.json` 可能落后，不能据此重画已有成品。不得对仍在保存中的批次无条件运行转码。
+- 恢复时先确认工作目录、在途任务与资产是否齐备；只有本批输入已准备好且交付副本缺失或过期时，才运行 `python3 -B scripts/prepare-colored-avif.py`，成功退出后运行默认通过命令、再次转码，再运行 `node scripts/collect-colored-plates.mjs` 重建进度。这些命令会写转码或汇总文件；旧 `progress.json` 可能落后，不能据此重画已有成品。不得对仍在保存中的批次无条件运行转码。
 - 已生成但未入库的原件须用工具返回的 id/path，或明确记录的时间与视觉比对关联；不确定的留待核验，不猜测标为完成。
 - `references` 可包含已标注 `role: research_context_not_generation_input` 的研究背景。真实生成输入始终以 `input_images` 为准，不为补齐分类而伪造历史输入。
 
@@ -52,14 +52,16 @@
 
 ```bash
 python3 -B scripts/prepare-colored-avif.py
+node scripts/record-plate-review.mjs color --default --all-pending
+python3 -B scripts/prepare-colored-avif.py
 node scripts/collect-colored-plates.mjs --require-complete
 node --test tests/*.test.cjs
 ```
 
-汇总器检查队列项的状态、PNG 存在、部分研究字段与尺寸（允许 2 像素容差），校验素材 PNG 与 AVIF 是否匹配转码清单的哈希，再写出 `colored-plates.js`、`progress.json`、`prompts.json`。它不校验未进入队列的古迹，也不复核实物颜色或图像生成来源。需要另行比较整库 ID 覆盖、确认输入存在、逐图目检，并检查 `color-proof.html` 中的线稿/设色对照、来源与计数。
+汇总器检查队列项的状态、PNG 存在、部分研究字段与尺寸（允许 2 像素容差），校验素材 PNG 与 AVIF 是否匹配转码清单的哈希，再写出 `colored-plates.js`、`progress.json`、`prompts.json`。它不校验未进入队列的古迹，也不复核实物颜色或图像生成来源。需要另行比较整库 ID 覆盖、确认输入存在，并检查 `color-proof.html` 中的线稿/设色对照、来源与计数；逐图目检在原型模式只是可选的旁路标记，不拦截交付，也不改状态。
 
-新增设色 PNG 默认由内置 imagegen 生成白底，`prepare-colored-avif.py` 按绑定原件哈希的白底处理记录调用 `white-matte.py`，保留内部 RGB、清理轮廓混入的白色，再输出透明 PNG 和 AVIF。已有原生透明图直接保留 alpha。未登记方法或原件哈希改变时拒绝自动去底；图片内容改变不能继承已有用户验收。
+新增设色 PNG 默认由内置 imagegen 生成白底，`prepare-colored-avif.py` 按绑定原件哈希的白底处理记录调用 `white-matte.py`，保留内部 RGB、清理轮廓混入的白色，再输出透明 PNG 和 AVIF。已有原生透明图直接保留 alpha。未登记方法或原件哈希改变时拒绝自动去底；图片内容改变不能继承已有验收记录，重新转码后再次运行默认通过命令。
 
 2026-09-16 的既有 200 张暗底设色另有一次性兼容流程：用户要求批量脚本抠图并自行人工审阅，随后明确确认“都没问题 先替换上吧”。这批透明交付版已用于页面，标记 `approved_user`，验收绑定实际 PNG／AVIF 哈希；不改写原画历史提示词和生成记录。只有清单记录的原始文件哈希仍匹配时可复用旧抠图逻辑，新增或替换的不透明原件会报错。
 
-用户验收与技术校验分别记录：复用相同文件不能重置已通过状态，图版内容改变不能继承旧验收。`color-proof.html` 按清单显示实际状态，提供背景切换及原图对照。图片交付和浏览器检查见开发指南。原批次恢复过程见 [恢复摘要](history/recovery-2026-09-15.md)，历史材料仅用于溯源。
+验收状态与技术校验分别记录：复用相同文件不能重置已有状态，图版内容改变不能继承旧记录；`approved_default` 与 `approved_user` 分别表示默认通过与用户明确通过，不能混写。`color-proof.html` 按清单显示实际状态，提供背景切换及原图对照。图片交付和浏览器检查见开发指南。原批次恢复过程见 [恢复摘要](history/recovery-2026-09-15.md)，历史材料仅用于溯源。

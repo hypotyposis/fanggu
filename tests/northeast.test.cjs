@@ -14,6 +14,7 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const { SITES, PLACES, DYN, CHAPTERS, COLORED_PLATES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n' + read('colored-plates.js') + '\n({ SITES, PLACES, DYN, CHAPTERS, COLORED_PLATES })');
 const batch = json('assets/research/northeast-batch.json');
+const readyExpansion = json('assets/research/expansion-ready-20261011-batch.json');
 const catalog = facets.classify(SITES, PLACES);
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
 
@@ -24,10 +25,15 @@ test('northeast delivery distinguishes requested ten from structurally blocked o
   assert.deepEqual([...batch.ids, ...batch.pending.map(item => item.id)].sort(), [...batch.requested_ids].sort());
   assert.equal(new Set([...batch.ids, ...batch.pending.map(item => item.id)]).size, 10);
   for (const item of batch.pending) {
-    assert(!SITES.some(site => site.id === item.id));
-    assert(!COLORED_PLATES[item.id]);
+    if (readyExpansion.ids.includes(item.id)) {
+      assert.equal(json(`assets/research/${item.id}.json`).status, 'complete');
+      assert.equal(COLORED_PLATES[item.id].visualReview, 'approved_default');
+    } else {
+      assert(!SITES.some(site => site.id === item.id));
+      assert(!COLORED_PLATES[item.id]);
+    }
   }
-  const blocked = json('assets/research/ln_chaoyangbei.json');
+  const blocked = json('assets/research/history/ln_chaoyangbei-pre-expansion-20261011.json');
   assert.equal(blocked.status, 'blocked');
   assert.equal(blocked.generation_history.length, 3);
   assert(blocked.generation_history.every(attempt => !attempt.accepted && attempt.prompt && fs.existsSync(path.join(root, attempt.retained_file))));
@@ -51,10 +57,10 @@ test('northeast paired plates bind real originals, transparency and existing art
     }
     assert(COLORED_PLATES[id].src.endsWith(`${id}.avif`));
     const image = manifest.images[id];
-    assert(['pending_user', 'approved_user'].includes(image.visualReview));
-    if (image.visualReview === 'approved_user') {
+    assert(['pending_user', 'approved_user', 'approved_default'].includes(image.visualReview));
+    if (image.visualReview.startsWith('approved_')) {
       const userReview = json(`assets/color-research/${id}.json`).user_review;
-      assert.equal(userReview?.reviewer, 'user');
+      assert.equal(userReview?.reviewer, image.visualReview === 'approved_user' ? 'user' : 'default-policy');
       assert.equal(userReview?.sourceSha256, image.sourceSha256);
       assert.equal(userReview?.inputSha256, image.inputSha256);
       assert.equal(userReview?.avifSha256, image.sha256);
@@ -72,8 +78,8 @@ test('northeast paired plates bind real originals, transparency and existing art
     if (after.visualReview !== before.visualReview) {
       const userReview = json(`assets/color-research/${id}.json`).user_review;
       assert.equal(before.visualReview, 'pending_user', id);
-      assert.equal(after.visualReview, 'approved_user', id);
-      assert.equal(userReview?.reviewer, 'user', id);
+      assert(['approved_user', 'approved_default'].includes(after.visualReview), id);
+      assert.equal(userReview?.reviewer, after.visualReview === 'approved_user' ? 'user' : 'default-policy', id);
       assert.equal(userReview?.sourceSha256, after.sourceSha256, id);
       assert.equal(userReview?.inputSha256, after.inputSha256, id);
       assert.equal(userReview?.avifSha256, after.sha256, id);
@@ -84,7 +90,7 @@ test('northeast paired plates bind real originals, transparency and existing art
 test('northeast provinces, separate periods and church facets are actually reachable', () => {
   const find = filters => catalog.filter(site => facets.matches(site, filters));
   assert.deepEqual(facets.provinces(catalog, 'northeast'), ['辽宁', '吉林', '黑龙江']);
-  assert.equal(find({ region: 'northeast' }).length, batch.ids.length + 2);
+  assert.equal(find({ region: 'northeast' }).length, batch.ids.length + 2 + readyExpansion.groups['dongbei-20261005'].length);
   for (const [province, ids] of Object.entries(batch.groups)) for (const id of ids) assert(find({ province, status: 'unvisited' }).some(site => site.id === id));
   assert.deepEqual(Array.from(find({ type: 'church', region: 'northeast' }), site => site.id), ['hlj_sofia']);
   for (const [id, dyn] of [['jl_jiangjunfen', 'goguryeo'], ['hlj_shideng', 'balhae']]) {

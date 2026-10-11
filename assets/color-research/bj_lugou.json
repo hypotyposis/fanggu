@@ -114,7 +114,19 @@
       "原件和暗底透明副本均目检，两端完整无外景。",
       "近白边缘、真实透明与可见主体通过脚本检查；内部RGB保持原样。"
     ],
-    "limitations": "浅斜透视艺术转译；石狮雕刻和砌缝作简化，桥墩细部非测绘级复原。"
+    "limitations": "浅斜透视艺术转译；石狮雕刻和砌缝作简化，桥墩细部非测绘级复原。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 11:24:34 UTC"
+  "completed_at": "2026-09-16 11:24:34 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "cf834d1d0af10859ef79647fbc5c2e13dd5cc66777a5b793da60aceb0f3c406a",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "a61ddd5de222f43734d6e452722e9138ae6d66f2abc6db7395cd1ff2e68cba6a",
+    "avifSha256": "af985e1389d93961740910c27eeba90b2d0cd4877a7f802b9024e0b6fb30d84e"
+  }
 }

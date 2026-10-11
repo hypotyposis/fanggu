@@ -1,7 +1,7 @@
 {
   "id": "im_wuta",
   "subject": "呼和浩特五塔寺金刚座舍利宝塔",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "内蒙古新闻网：五塔寺，1727—1732营建",
@@ -35,7 +35,7 @@
     }
   ],
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "im_wuta",
     "name": "呼和浩特五塔寺",
@@ -118,5 +118,13 @@
   "width": 1024,
   "height": 1536,
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2463a423-dd33-4234-8ad8-cf05357a241f.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2463a423-dd33-4234-8ad8-cf05357a241f.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-2463a423-dd33-4234-8ad8-cf05357a241f.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "9e2b896463fd1815a130c78d59209d888f18c4eb87aa609118a2a0c10c72ab6e",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1fd01feb411090e6a14e7616c195192f84b14c886fbe00af8f76ff0a3e8c2224"
+  }
 }

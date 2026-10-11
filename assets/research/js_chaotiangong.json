@@ -38,7 +38,7 @@
       "accepted": true
     }
   ],
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "original_output": "/Users/fuxiangyu/.codex/generated_images/01a0ee13-2e65-7c12-9133-85f688827ab5/exec-c6409045-ed6b-4d26-9c17-312ae459ef4f.png",
   "dimensions": {
     "width": 1024,
@@ -49,5 +49,29 @@
     "sourceSha256": "23da046b2ae89ccf5cf6026cc8d6511da1c7d996c7d1dd4399929dde9414f1bd",
     "seeds": []
   },
-  "checked_on": "2026-09-30"
+  "checked_on": "2026-09-30",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "23da046b2ae89ccf5cf6026cc8d6511da1c7d996c7d1dd4399929dde9414f1bd",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "c48c05cfa32533410f4acc22d71d2fc88c508eb57d7c6be5d152bec46dfdb2cd"
+  },
+  "historical_sources": [
+    {
+      "title": "南京朝天宫",
+      "url": "https://zh.wikipedia.org/wiki/%E5%8D%97%E4%BA%AC%E6%9C%9D%E5%A4%A9%E5%AE%AB",
+      "publisher": "维基百科（中文），二手来源（引贺晏然《南京冶山道院与朝天宫关系考》、周学鹰等《南京江宁府学的古建技艺》）",
+      "note": "1384年重建赐名、设道录司、1395年建成、习仪场所；太平天国被毁；1865年府学文庙迁入、1866年九月完成大成殿等重建、木材海外琉璃瓦景德镇、1867—1869年曾国藩增建；江南最大最完好明清官式建筑群；1936年故宫南京分院；南京市博物馆",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "南京六百年朝天宫修旧如旧 匾额复制雍乾御笔",
+      "url": "https://www.chinanews.com.cn/cul/2010/09-16/2536913.shtml",
+      "publisher": "中国新闻网",
+      "note": "大成殿为同治年间重建、重檐、琉璃瓦屋面、2010年修缮",
+      "added": "content-rewrite-20261005"
+    }
+  ]
 }

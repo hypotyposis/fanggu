@@ -1,0 +1,104 @@
+{
+  "id": "jp_inuyama_tenshu",
+  "status": "ready",
+  "blocked_reason": null,
+  "subject": "犬山城 · 天守正面",
+  "name": "犬山城天守",
+  "short": "犬山城",
+  "sub": "三重四阶望楼型天守",
+  "dyn": "jp_momoyama",
+  "tag": "桃山",
+  "era": "1601年筑橹 · 约1620年加望楼",
+  "year": 1601,
+  "yearLabel": "1601年",
+  "yearApprox": false,
+  "yearNote": "文化厅数据库记「桃山／1601」：关原之战后庆长六年（1601）小笠原吉次于现址筑城，先建二层橹；元和六年（1620）前后成濑正成上望楼，其后成濑正虎增改唐破风等，成今日形态（1961–65年解体修理调查所明）。1935年列旧国宝，1952年3月29日依文化财保护法指定国宝。年表点取初建年1601，望楼增建另述。",
+  "country": "JP",
+  "province": "爱知县",
+  "placeKey": "jp_inuyama",
+  "placeName": "犬山",
+  "place": "日本 · 爱知县 · 犬山",
+  "lat": 35.38832,
+  "lon": 136.93926,
+  "coordinate_source": "ja.wikipedia GeoData（犬山城）坐标 35.388322, 136.939261，作为犬山显示点，非天守测绘坐标。",
+  "types": [
+    "castle"
+  ],
+  "lede": "犬山城天守立在木曾川南岸的小丘上，隔河望美浓。小笠原吉次1601年先筑二层橹，成濑正成约1620年加上望楼，再后又添唐破风，才成今日三重四阶、地下二阶的望楼型天守；1961至65年解体修理时查明了这段层累。它与松本、姬路、彦根、松江并称五座国宝天守。",
+  "facts": [
+    "三重四阶、地下二阶，本瓦葺，南面及西面各附一重橹；望楼有回缘高栏，正面二重设唐破风。1952年指定国宝。",
+    "文化厅记桃山1601年：关原战后小笠原吉次筑橹；元和六年（1620）前后成濑正成上望楼，其后成濑正虎增改唐破风等。",
+    "天守高约19米，野面积石垣高约5米；一层四周设二间宽的入侧，内分四室，上段之间备押板床、违棚与帐台构，为书院造座敷。"
+  ],
+  "caption": [
+    "犬山城 · 天守正面",
+    "桃山庆长六年（1601）· 约1620年加望楼"
+  ],
+  "legacyNames": [
+    "犬山城天守",
+    "白帝城",
+    "Inuyama-jō Tenshu",
+    "Inuyama Castle"
+  ],
+  "orientation": "landscape 1536×1024",
+  "structure_checkpoints": [
+    "三层屋檐、四层楼身：下两层共用一座入母屋大屋顶（第一重），其下墙面下段为深色板壁、上段白灰壁开小窗；第三层楼身正面带一座唐破风（第二重）；最上层望楼四周开敞回缘加高栏，入母屋顶带鯱。",
+    "南面附橹一重，深色板壁，接于天守右侧；天守立于野面积石垣（约5米）之上。",
+    "正面底部入口处的现代帐篷顶棚、售票小屋、枯树与人群去除；石垣完整入画。",
+    "本瓦葺灰瓦；望楼栏杆按照片样式，不加多余装饰。"
+  ],
+  "material_observations": "白灰壁、深褐色板壁，灰色本瓦，金黄褐色野面积石垣；天空与树木去除。",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Inuyama_Castle_Keep_Tower_2018.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Inuyama_Castle_Keep_Tower_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "author": "Suikotei",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_inuyama_tenshu-photo.jpg",
+    "assets/references/jp_inuyama_tenshu-2-photo.jpg"
+  ],
+  "additional_sources": [
+    {
+      "file": "assets/references/jp_inuyama_tenshu-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Inuyama_Castle_Keep_Tower_20170409.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Inuyama_Castle_Keep_Tower_20170409.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Suicasmo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2017-04-09 13:36:33",
+      "role": "斜侧实拍，核对望楼回缘与唐破风"
+    }
+  ],
+  "source_note": "主图为Suikotei 2018年12月自南面入口正对实拍（CC BY-SA 4.0），第二图为Suicasmo 2017年4月樱花季斜侧实拍（CC BY-SA 4.0），用于核对望楼与唐破风。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nInuyama Castle keep, Aichi, built 1601 with the lookout storey added c.1620. Draw the FRONT (south) elevation as in photo 2 (photo 3 is an oblique view for the lookout storey): a keep of THREE roof tiers and FOUR storeys above a sloping rough stone base; the lower two storeys share one broad hip-and-gable roof, with dark boarding below and plaster with small windows above (outlines only, no black fill); the third storey carries a curved karahafu gable on the front; the top lookout storey has an open balcony with railing all round and a hip-and-gable roof with finials; a one-tier boarded annex turret attached at the right. Remove the modern entrance canopy and ticket hut, bare trees, people and signs; keep the stone base complete.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "文化厅 国指定文化财等数据库 · 犬山城天守",
+      "url": "https://online.bunka.go.jp/heritages/detail/200169"
+    },
+    {
+      "title": "ja.wikipedia · 犬山城",
+      "url": "https://ja.wikipedia.org/wiki/%E7%8A%AC%E5%B1%B1%E5%9F%8E"
+    }
+  ],
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本国宝（文化财保护法指定的国宝建造物）不映射中国全国重点文物保护单位，不贴国保标签；指定身份与年月见 designation 与 evidence。",
+    "designation": {
+      "title": "国宝（建造物）",
+      "kokuho_designated": "1952-03-29",
+      "juyo_bunkazai_designated": "1935-05-13",
+      "database_detail_id": 200169
+    },
+    "evidence": [
+      "https://online.bunka.go.jp/heritages/detail/200169"
+    ],
+    "checkedAt": "2026-10-05"
+  },
+  "photo_date": "16 December 2018, 14:08:50",
+  "photo_pixels": [
+    4320,
+    3240
+  ]
+}

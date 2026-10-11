@@ -1,0 +1,105 @@
+{
+  "id": "jl_wandu",
+  "name": "集安丸都山城",
+  "subject": "集安丸都山城 · 石砌瞭望台正面",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jl_wandu.png",
+    "assets/references/jl_wandu-photo.jpg",
+    "assets/references/jl_wandu-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 集安丸都山城 · 石砌瞭望台正面\nMATERIAL OBSERVATIONS: 石块为灰色至淡红褐色花岗岩，表面粗糙、棱角分明；石缝间长有杂草与小灌木；台前草地黄绿；无灰浆。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "石块为灰色至淡红褐色花岗岩，表面粗糙、棱角分明；石缝间长有杂草与小灌木；台前草地黄绿；无灰浆。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/jl_wandu-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lookout_Tower,_Hwando_Mountain_Fortress_1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Lookout_Tower%2C_Hwando_Mountain_Fortress_1.jpg",
+      "author": "EditQ（호고호）",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2023-10-06",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/jl_wandu-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20230605_Watchtower_in_Hwando.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/20230605_Watchtower_in_Hwando.jpg",
+      "author": "Yumeto",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "role": "2023年6月斜侧视角，核对台角砌石层次与整体体量；不作正面几何依据。"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：丸都山城（公元3年建尉那岩城，198年山上王扩建更名丸都城，209年迁都；城垣周长6395米、平面不规则四边形、北高南低；城门6处；宫殿遗址南北96.5米、东西80米；第二批国保编号2-52、1982年；2001年国内城与丸都山城合并，名称丸都山城与国内城；2004年世界遗产1135）",
+      "url": "https://zh.wikipedia.org/wiki/丸都山城"
+    },
+    {
+      "title": "Wikipedia (en): Hwando（built AD 3 as Wina Rock fortress, renamed Hwando under King Sansang; sacked by Wei in 244 and by the Murong Xianbei in 341; fortress walls and guard tower remains; UNESCO 2004）",
+      "url": "https://en.wikipedia.org/wiki/Hwando"
+    },
+    {
+      "title": "国务院公报1982年第7号：第二批全国重点文物保护单位名单（（五）古遗址 编号52 序号7 丸都山故城 吉林省集安县）",
+      "url": "https://www.gov.cn/gongbao/shuju/1982/gwyb198207.pdf"
+    },
+    {
+      "title": "浙江政报转载第五批名单备注：国内城“与丸都山城合并，名称：丸都山城与国内城”（PDF第17页）",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3096/site/attach/zfgb/200221.pdf"
+    }
+  ],
+  "original_research": "assets/research/jl_wandu.json",
+  "output": "assets/colored/jl_wandu.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "7daf2f8e816f267e6e7904c1994275231ee846b354626e30f03f05959a34ee0b",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 集安丸都山城 · 石砌瞭望台正面\nMATERIAL OBSERVATIONS: 石块为灰色至淡红褐色花岗岩，表面粗糙、棱角分明；石缝间长有杂草与小灌木；台前草地黄绿；无灰浆。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/jl_wandu.png",
+        "assets/references/jl_wandu-photo.jpg",
+        "assets/references/jl_wandu-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-6c327b1c-47be-4e63-b653-74338017f852.png",
+      "retained_file": "assets/colored/jl_wandu.png",
+      "received_at": "2026-10-11T11:54:51.842Z",
+      "sourceSha256": "7daf2f8e816f267e6e7904c1994275231ee846b354626e30f03f05959a34ee0b",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-6c327b1c-47be-4e63-b653-74338017f852.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T11:54:51.842Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "7daf2f8e816f267e6e7904c1994275231ee846b354626e30f03f05959a34ee0b",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "bf19b3784c375140a1a420ab01a9e593fb348c395d50fa31eb5b3bf7d71a2f8a",
+    "avifSha256": "cf7d4ba52c415f0aa7f0c7237786d468b2cc847f32ad2f7c3008f8c77623dba8"
+  }
+}

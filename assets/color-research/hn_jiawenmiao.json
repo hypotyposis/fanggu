@@ -2,7 +2,7 @@
   "id": "hn_jiawenmiao",
   "name": "郏县文庙",
   "subject": "郏县文庙 · 大成殿正面",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/hn_jiawenmiao.png",
@@ -27,8 +27,9 @@
   "original_research": "assets/research/hn_jiawenmiao.json",
   "output": "assets/colored/hn_jiawenmiao.png",
   "visual_review": {
-    "status": "pending_user",
-    "note": "原型候选，待用户人眼验收。"
+    "status": "approved_default",
+    "note": "原型候选，待用户人眼验收。",
+    "decided_by": "default-policy"
   },
   "generation_started_at": "2026-10-01T19:22:14.278Z",
   "generated_at": "2026-10-01T19:26:54.141160+00:00",
@@ -99,5 +100,15 @@
       "郏县文庙 · 大成殿正面",
       "明清 · 现存主体"
     ]
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "4418967be3e39a86419a63846aa6ad3784a2310cdc4f209bd244d1b88f0cb103",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "a723b8a8bca62bb3060017bd043c82582b352644d1a718ea6283a7f67f140993",
+    "avifSha256": "7ca395032a07507c5e2420f453b736fc5615a504acc95f9df398cfea591617b2"
   }
 }

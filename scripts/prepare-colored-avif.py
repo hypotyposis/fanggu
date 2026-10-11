@@ -74,16 +74,25 @@ def prepare_source(original, id, source_hash, legacy_source_hash=None, preparati
         override.get("seeds", []), override.get("borderPolicy", MASK_SETTINGS["borderPolicy"]))
 
 
+APPROVED = ("approved_user", "approved_default")
+
+
 def review_status(images):
-    return "approved_user" if images and all(item.get("visualReview") == "approved_user" for item in images.values()) else "pending_user"
+    statuses = {item.get("visualReview") for item in images.values()}
+    if images and statuses <= {"approved_user"}:
+        return "approved_user"
+    if images and statuses <= set(APPROVED):
+        return "approved_default"
+    return "pending_user"
 
 
 def apply_user_review(record, review):
-    if (review and review.get("status") == "approved_user"
+    # approved_user is an explicit user decision; approved_default is the prototype policy (no human review).
+    if (review and review.get("status") in APPROVED
             and review.get("sourceSha256") == record.get("sourceSha256")
             and review.get("avifSha256") == record.get("sha256")
             and review.get("inputSha256") == record.get("inputSha256")):
-        return {**record, "visualReview": "approved_user", "review": review}
+        return {**record, "visualReview": review["status"], "review": review}
     return record
 
 
@@ -146,9 +155,9 @@ def convert(id, source, source_hash, old, published=None, preparation=None, prot
         if prototype:
             record["qualityMode"] = "prototype"
         review = (published or {}).get("review", {})
-        if ((published or {}).get("visualReview") == "approved_user"
+        if ((published or {}).get("visualReview") in APPROVED
                 and review.get("avifSha256") == record["sha256"] and review.get("inputSha256") == record["inputSha256"]):
-            record.update(visualReview="approved_user", review=review)
+            record.update(visualReview=published["visualReview"], review=review)
         record = apply_user_review(record, user_review)
         staged_png.replace(png_dst)
         staged.replace(dst)
@@ -163,7 +172,7 @@ def main():
     parser.add_argument("--prototype", action="store_true")
     args = parser.parse_args()
     prototype = prototype_matte.prototype_enabled(sys.argv[1:])
-    print(f"Plate mode: {'prototype (quality gates off; human review decides)' if prototype else 'strict'}", flush=True)
+    print(f"Plate mode: {'prototype (quality gates off; default approval, hash-bound)' if prototype else 'strict'}", flush=True)
     queue = json.loads((ROOT / "assets/color-research/queue.json").read_text())
     sources = [(item["id"], item["output"]) for item in queue["entries"]]
     sources += [(id, f"assets/color-studies/v1/{id}-colored.png") for id in queue["excluded"]]
@@ -238,7 +247,7 @@ def main():
         images = {**published["images"], **images}
     status = review_status(images)
     manifest = {**config, "visualReview": status, "images": {id: images[id] for id, _ in all_sources}}
-    if status == "approved_user" and set(images) == set(published.get("images", {})) and published.get("review"):
+    if status in APPROVED and set(images) == set(published.get("images", {})) and published.get("review"):
         manifest["review"] = published["review"]
     atomic_json(MANIFEST, manifest)
     CHECKPOINT.unlink(missing_ok=True)

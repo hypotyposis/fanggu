@@ -1,11 +1,25 @@
 {
   "id": "yn_jingzhen",
   "subject": "景真八角亭现存戒堂",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "景真八角亭沿革、戒堂形制与后世修缮",
       "url": "https://zh.wikipedia.org/wiki/景真八角亭"
+    },
+    {
+      "title": "亚洲原始佛教道场指南：景真八角亭",
+      "url": "https://www.dhammarain.org.tw/books/asia/old-ver/guideofasia0.pdf",
+      "publisher": "法雨道场／明法比丘",
+      "note": "核读检索收录的指南正文：1701、授戒布萨、砖身木顶；直接下载遇SSL握手超时。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "临摹贝叶文化之心经",
+      "url": "https://www.yncityplan.com/h-nd-197.html",
+      "publisher": "云南省城乡规划设计研究院",
+      "note": "核读当地宗教文化及景真八角亭作为保护核心的说明。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "source_note": "1701为八角亭创建年；1978、1993等后世修缮另记，已毁景真寺其余建筑不虚构入画。",
@@ -31,7 +45,7 @@
     }
   ],
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "yn_jingzhen",
     "name": "景真八角亭",
@@ -110,5 +124,13 @@
   "width": 1024,
   "height": 1536,
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0607c1d1-48e4-4cfa-af4d-c12b72024744.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0607c1d1-48e4-4cfa-af4d-c12b72024744.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0607c1d1-48e4-4cfa-af4d-c12b72024744.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "76e798ad87534fb0babb71f14a3cf7583d3666c67bba466fb5181d8f4c52d72a",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "f536e69d2d646a59a29b8db536519c951cdc92889a4a89d6692a1ba5af0b3ea2"
+  }
 }

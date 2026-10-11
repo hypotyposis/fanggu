@@ -4,7 +4,7 @@
 
 ## 模式
 
-`plate-policy.json` 为 `{"mode":"prototype"}`（默认）或 `strict`。读取它的脚本都接受 `--strict` 或 `--prototype` 临时覆盖，两者不能同时给。原型模式关闭白底、偏色、alpha、尺寸等技术拦截，由用户人眼验收；严格模式恢复全部校验。解析逻辑在 `plate-policy.mjs`（Node）与 `prototype-matte.py` 的 `prototype_enabled`（Python）。
+`plate-policy.json` 为 `{"mode":"prototype"}`（默认）或 `strict`。读取它的脚本都接受 `--strict` 或 `--prototype` 临时覆盖，两者不能同时给。原型模式关闭白底、偏色、alpha、尺寸等技术拦截，图版按默认通过策略接入（`approved_default`），用户明确说通过的 ID 才记 `approved_user`；严格模式恢复全部校验。解析逻辑在 `plate-policy.mjs`（Node）与 `prototype-matte.py` 的 `prototype_enabled`（Python）。
 
 ## 图版生产 `scripts/`
 
@@ -17,7 +17,7 @@
 | `extract-transparent-background.py` | 旧暗底设色原件的边缘连通抠图；只用于哈希匹配的旧件 | 原件 | 输出 PNG 与报告 | `<原件> <输出> [--tolerance N] [--seed x,y ...]` |
 | `prepare-colored-avif.py` | 设色去底、生成透明 PNG 与 AVIF（Q85、4:4:4、speed 6），写交付清单；按原件、参数、处理器哈希复用缓存 | `queue.json`、`assets/colored/<id>.png`、`assets/color-studies/v1/*.png`、逐图设色记录、已有清单 | `assets/colored-transparent/`、`assets/colored-transparent-avif/`、`assets/color-research/avif-manifest.json`；运行中写 `transparent-avif-progress.json`，成功后删除 | `python3 -B scripts/prepare-colored-avif.py [--ids a,b] [--strict|--prototype]`；NumPy、带 AVIF 的 Pillow；4 个进程；`--ids` 只重建指定条目，要求已有完整清单 |
 | `collect-colored-plates.mjs` | 汇总队列、逐图记录与交付清单，校验哈希与存在性 | `queue.json`、逐图设色记录、`avif-manifest.json`、`sites.js`、`plates.js` | `colored-plates.js`、`assets/color-research/progress.json`、`prompts.json` | `--require-complete` 有待完成项即报错；不检测队列外遗漏；不改图片 |
-| `record-plate-review.mjs` | 记录用户明确通过的图版：写 `user_review` 并绑定当前文件哈希；`color` 同时把记录置为 `complete` | 逐图记录、原件、透明 PNG、AVIF | 对应 `assets/research/<id>.json` 或 `assets/color-research/<id>.json` | `node scripts/record-plate-review.mjs line|color <id> [<id> ...]`；只在用户说出具体通过的 ID 后运行；之后重跑转码与汇总 |
+| `record-plate-review.mjs` | 记录图版验收决定：显式 ID 记为 `approved_user`；`--default [--all-pending]` 按默认通过策略记为 `approved_default`（reviewer 为 `default-policy`），不覆盖已有的用户通过；均写 `user_review` 并绑定当前文件哈希；`color` 把记录置为 `complete`，`line` 把 `needs_review` 置为 `complete` | 逐图记录、原件、透明 PNG、AVIF | 对应 `assets/research/<id>.json` 或 `assets/color-research/<id>.json` | `node scripts/record-plate-review.mjs line|color <id> [<id> ...]`；显式 ID 只在用户说出通过时使用；每批转码后运行 `node scripts/record-plate-review.mjs color --default --all-pending` 与 `line --default --all-pending`；之后重跑转码与汇总 |
 | `plan-colored-plates.mjs` | 2026-09-15 的批次规划器，要求恰好 197 张并重写 `queue.json` 与 `batches/` | `sites.js`、`plates.js`、研究 JSON | `queue.json`、`batches/*.json` | **历史脚本，不要运行**；当前目录规模下直接报错 |
 | `generate-transparent-plate.py` | 可选的 API 生成入口，强制透明背景参数并写收据 | 提示词文件、参考图 | 输出 PNG 与 JSON 收据 | 需要外部 imagegen CLI 与凭证；当前流程不使用；`--dry-run` 可查参数 |
 

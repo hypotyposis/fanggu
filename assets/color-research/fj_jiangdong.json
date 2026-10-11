@@ -34,10 +34,11 @@
   },
   "output": "assets/colored/fj_jiangdong.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "inputs_viewed": true,
     "output_viewed": true,
-    "notes": "原型阶段保留候选，待用户集中审图。"
+    "notes": "原型阶段保留候选，待用户集中审图。",
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0f1af-a1bb-7460-8680-4750d12372d5/exec-f1803c6e-236d-4dc9-9dba-c39f605710f7.png",
   "width": 1536,
@@ -46,5 +47,15 @@
     "method": "white-matte-v1",
     "sourceSha256": "bc3ced0f0d4e3e26f0033584ca846a786009ade67d9308cec99defe7b31ed2a3",
     "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "bc3ced0f0d4e3e26f0033584ca846a786009ade67d9308cec99defe7b31ed2a3",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "ef1b4de703e44b91eabba10ad8813ff99f432aa864ec5e017cda043e9865e61c",
+    "avifSha256": "ebcef30f29c7f9bacad4ea608be8d4ca8f97aebf2536cbe8409fdf2d20ac8326"
   }
 }

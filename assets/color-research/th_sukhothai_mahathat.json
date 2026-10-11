@@ -2,9 +2,9 @@
   "id": "th_sukhothai_mahathat",
   "name": "素可泰玛哈泰寺主塔",
   "subject": "莲苞形主塔及直接支承台基",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Temple_Wat_Mahathat_de_Sukhothai_6.jpg/1920px-Temple_Wat_Mahathat_de_Sukhothai_6.jpg",
   "author": "Welcome to Thailand",
@@ -121,7 +121,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "1c82ea0234b2ee8d310fe4904c71b50c4432a700c3ed35c161a2a9ee5c71ba42",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "ae926eee26a2f504b521e90f4f1879ffba7fd36fa8072273b3577d064e984eee",
+    "avifSha256": "edd86b68478bd5564abe39aad61a54cd3a257505474eaf326bf701178a32b9b9"
   }
 }

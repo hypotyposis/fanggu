@@ -7,7 +7,7 @@
     "assets/references/xian-big-clear-photo.jpg",
     "assets/color-studies/v1/foguang-colored.png"
   ],
-  "status": "needs_review",
+  "status": "complete",
   "name": "西安大雁塔",
   "subject": "西安大雁塔",
   "generator": "built-in image_gen",
@@ -49,7 +49,18 @@
   "visual_review": {
     "inputs_viewed": true,
     "output_viewed": true,
-    "status": "pending_user",
-    "note": "实际查看单塔线稿、实拍、样本和设色输出；原型模式不作AI视觉通过/淘汰决定，待用户人审。"
+    "status": "approved_default",
+    "note": "实际查看单塔线稿、实拍、样本和设色输出；原型模式不作AI视觉通过/淘汰决定，待用户人审。",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "7d5b7f25f8a4751a03c6468129b11330ae13ef5206c09a989f9ed93c0b0cfaf5",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "9962773dc6967f7d2a6d1f6de1e5f8935b422ed8b98efc1c023e3417a27a53c5",
+    "avifSha256": "93a47f3dea6f50634116e871458bbebffcb2181e23c26bae3746a93d7a1a98c6"
   }
 }

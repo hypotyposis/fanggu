@@ -2,9 +2,9 @@
   "id": "kp_pothong_gate",
   "name": "平壤普通门",
   "subject": "普通门城台与双层檐门楼",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:Potongmun_1.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Potongmun_1.jpg/1920px-Potongmun_1.jpg",
   "author": "Christophe95",
@@ -134,5 +134,14 @@
     "visual_verdict": "pending_user",
     "note": "已查看解码原件；原型模式不作视觉通过或淘汰判断，供用户集中审阅。"
   },
-  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。"
+  "composition_note": "工具设色返回的画布尺寸与线稿不同；保留真实尺寸与原件，原型待用户对照，不声明像素配准。",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "604f0225397627aa976f2642c66290c44e88216b6d6b46b93a216dd66359bb7b",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "b7a68ef2b7f6cfb645d56e48c4d33ba6797b635986469af49e432c36a66cdcb8",
+    "avifSha256": "63694e6b92c36f935e8b7b4557bc4fb64853bda53eca7d037003ea3ce99dc6ed"
+  }
 }

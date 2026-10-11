@@ -1,7 +1,7 @@
 {
   "id": "sn_hancheng",
   "subject": "韩城文庙大成殿整殿",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "陕西省地方志：建设志，韩城文庙重建及大成殿形制",
@@ -19,7 +19,7 @@
   "generated_file": "assets/generated/sn_hancheng.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_hancheng",
     "name": "韩城文庙大成殿",
@@ -132,5 +132,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-e9a4a8e0-8069-44ea-b4e7-14c9d258b745.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-e9a4a8e0-8069-44ea-b4e7-14c9d258b745.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-e9a4a8e0-8069-44ea-b4e7-14c9d258b745.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "436236931a6906dad7e48c6761de52096f8b1990192aac8e7127fb3ef466c043",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "e033ac54512e7846ae7dc935af74f800d5baad906b05f6b7ef27d03d0a5499ce"
+  }
 }

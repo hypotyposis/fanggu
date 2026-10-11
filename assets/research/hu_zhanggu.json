@@ -1,7 +1,7 @@
 {
   "id": "hu_zhanggu",
   "subject": "张谷英村明清民居屋面群局部",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg/1280px-%E5%BC%A0%E8%B0%B7%E8%8B%B1%E6%9D%91%E8%90%BD.jpg",
   "author": "SquirrelLee",
@@ -15,7 +15,7 @@
   "generated_file": "assets/generated/hu_zhanggu.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "structure_checkpoints": [
     "按现状照片保留相连民居屋面、硬山山墙和可见天井，采用高位斜视；明确局部，不编造全村鸟瞰布局或一座孤立宫殿。"
   ],
@@ -50,6 +50,20 @@
     {
       "title": "湖南省文物局：第一至第七批全国重点文物保护单位名录",
       "url": "https://wwj.hunan.gov.cn/wwj/c100314/201406/t20140613_10483053.html"
+    },
+    {
+      "title": "张谷英村",
+      "url": "https://wwj.hunan.gov.cn/wwj/c100314/201503/t20150309_10483030.html",
+      "publisher": "湖南省文物局文化遗产管理处",
+      "note": "核读明清分期、天井堂屋厢房与干枝式联系，删去卦象解释及绝对规模称谓。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "张谷英民俗文化村",
+      "url": "https://www.yyx.gov.cn/37582/37598/content_1164447.html",
+      "publisher": "岳阳县人民政府",
+      "note": "核读檐廊、屋脊与天井相接、聚族而居；只描述屋面局部。",
+      "added": "content-rewrite-20261005"
     }
   ],
   "site_recommendation": {
@@ -165,5 +179,13 @@
     "method": "white-matte-v1",
     "sourceSha256": "0d3da05c1fa4dbcffb687afd943446d3419548196661369bc47359650d371d3e",
     "seeds": []
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "0d3da05c1fa4dbcffb687afd943446d3419548196661369bc47359650d371d3e",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "1f3e6764508b6e37f1d3604387871a02cddb378015d2e4f54a0dd7fc449aa423"
   }
 }

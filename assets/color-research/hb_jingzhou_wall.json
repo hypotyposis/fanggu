@@ -1,0 +1,106 @@
+{
+  "id": "hb_jingzhou_wall",
+  "name": "荆州城墙",
+  "subject": "荆州城墙 · 东门寅宾门城台与宾阳楼正面（自城外东侧）",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/hb_jingzhou_wall.png",
+    "assets/references/hb_jingzhou_wall-photo.jpg",
+    "assets/references/hb_jingzhou_wall-2-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 荆州城墙 · 东门寅宾门城台与宾阳楼正面（自城外东侧）\nMATERIAL OBSERVATIONS: 城台与城墙为青灰色条砖，砖缝灰白；城楼木构朱红色（柱、栏杆、格扇），额枋青绿彩画间夹金色回纹带，屋面青灰色筒瓦，脊饰灰黑；石门额深灰；地面灰色石板与碎石。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+  "material_observations": [
+    "城台与城墙为青灰色条砖，砖缝灰白；城楼木构朱红色（柱、栏杆、格扇），额枋青绿彩画间夹金色回纹带，屋面青灰色筒瓦，脊饰灰黑；石门额深灰；地面灰色石板与碎石。"
+  ],
+  "references": [
+    {
+      "file": "assets/references/hb_jingzhou_wall-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E8%8D%86%E5%B7%9E%E5%8F%A4%E5%9F%8E%E5%AE%BE%E9%98%B3%E6%A5%BC.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/%E8%8D%86%E5%B7%9E%E5%8F%A4%E5%9F%8E%E5%AE%BE%E9%98%B3%E6%A5%BC.jpg",
+      "author": "Fxqf",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "photo_date": "2017-08-31 14:52:10",
+      "note": "本轮已实际查看，材质色沿实拍观察；非文保级复原。"
+    },
+    {
+      "file": "assets/references/hb_jingzhou_wall-2-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jingzhou.Batiment.Porte.Est.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Jingzhou.Batiment.Porte.Est.jpg",
+      "author": "Popolon",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "photo_date": "2010-09-05 09:44:42",
+      "role": "自城内侧斜视城楼，核对上檐歇山、平座栏杆与下层柱廊的层次"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "维基百科：荆州城墙（西汉土城；南宋1186年重修；现存城垣清顺治三年1646年重建；东门寅宾门；周长11.821公里、高8.83米、城垛4567个；1996年第四批国保）",
+      "url": "https://zh.wikipedia.org/wiki/荆州城墙"
+    },
+    {
+      "title": "荆州古城历史文化旅游区·古城墙景区（宾阳楼始建于明代、清咸丰十一年重建，1986年8月由国家文物保护科研所设计重建、1987年开放；重檐歇山、大木框架、上层露明回廊）",
+      "url": "https://jzgcly.com/tourismWeb/page/mobile/moblie_gcqjq.html"
+    },
+    {
+      "title": "百度百科：宾阳楼（通高12.9米、面阔18.9米、进深11.6米、36根木柱；1861年重建、1986–1987年修复）——经 DuckDuckGo 检索摘要取得，页面本身未能直接打开核读",
+      "url": "https://baike.baidu.com/item/宾阳楼/17537669"
+    },
+    {
+      "title": "百度百科：寅宾门（城台东西宽12.65米、南北长34米）——经检索摘要取得，未直接核读",
+      "url": "https://baike.baidu.com/item/寅宾门/17540226"
+    }
+  ],
+  "original_research": "assets/research/hb_jingzhou_wall.json",
+  "output": "assets/colored/hb_jingzhou_wall.png",
+  "production_batch": "expansion-ready-20261011",
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "limitations": "原型模式，不进行AI淘汰；默认通过由record-plate-review.mjs记录。",
+    "output_viewed_at": "2026-10-11T13:11:52.537310+00:00",
+    "decision_basis": "按原型默认策略接入；已查看实际输入与输出，目检不作通过或淘汰决定。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "b80646b5b34c62d4b6d701ce29d70ef0a642a2e59292984ce4058856db281ef3",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "phase": "color",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 荆州城墙 · 东门寅宾门城台与宾阳楼正面（自城外东侧）\nMATERIAL OBSERVATIONS: 城台与城墙为青灰色条砖，砖缝灰白；城楼木构朱红色（柱、栏杆、格扇），额枋青绿彩画间夹金色回纹带，屋面青灰色筒瓦，脊饰灰黑；石门额深灰；地面灰色石板与碎石。\nKeep the generated line drawing as the exact geometry master. Historic monochrome photos, if present, are geometry context only, not color samples. Use the contemporary color photograph for surviving material colors; exclude all removable cloth, visitors and modern fixtures omitted by the line drawing. landscape 1536×1024.\n",
+      "input_images": [
+        "assets/generated/hb_jingzhou_wall.png",
+        "assets/references/hb_jingzhou_wall-photo.jpg",
+        "assets/references/hb_jingzhou_wall-2-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-24ce31d0-ca16-461f-a250-965852189e75.png",
+      "retained_file": "assets/colored/hb_jingzhou_wall.png",
+      "received_at": "2026-10-11T12:00:47.816Z",
+      "sourceSha256": "b80646b5b34c62d4b6d701ce29d70ef0a642a2e59292984ce4058856db281ef3",
+      "tool": "built-in image_gen"
+    }
+  ],
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a129a1-fedf-7ff0-a1f5-1c1973c7218f/exec-24ce31d0-ca16-461f-a250-965852189e75.png",
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T12:00:47.816Z",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T13:17:50.305Z",
+    "sourceSha256": "b80646b5b34c62d4b6d701ce29d70ef0a642a2e59292984ce4058856db281ef3",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "e90385a13e28ca271b26b7197b20943e2c3ed7c7e3e497c0448790c82e7e8af0",
+    "avifSha256": "577d014dec1e04c8a6d0b75b2824c6267413e95632303ae33fae6ea247b3b37b"
+  }
+}

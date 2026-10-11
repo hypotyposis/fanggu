@@ -1,0 +1,84 @@
+{
+  "id": "ln_chaoyangbei",
+  "subject": "朝阳北塔",
+  "status": "blocked",
+  "file": "assets/references/ln_chaoyangbei-candidate1.jpg",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Northern_Chaoyang_Pagoda_04_2015-09.JPG",
+  "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Northern_Chaoyang_Pagoda_04_2015-09.JPG/1280px-Northern_Chaoyang_Pagoda_04_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+  "author": "猫猫的日记本",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "date": "2015-09-08 10:23:53",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ln_chaoyangbei-candidate1.jpg"
+  ],
+  "additional_sources": [],
+  "source_note": "实拍供现存形制参考，删除现代环境；非文保测绘。",
+  "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nSubject is NORTH pagoda in Chaoyang, NOT South pagoda or octagonal Liaoyang tower. Front view with only very shallow visible side. SQUARE-plan solid brick tower, broad tall rectangular lower body with central Buddhist relief and two attendants plus small pagoda-shaped relief motifs. EXACTLY THIRTEEN distinct densely spaced eaves above the body. Copy photograph's present low rounded cap / restored finial, not a long generic metal needle. Preserve wide splayed masonry terrace and short front stair approach, no modern poles or glass shed. Complete tower height84% of portrait1024x1536, strong width relationship between broad body and tapering13 eaves.",
+  "generated_file": "assets/generated/ln_chaoyangbei-draft3.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "朝阳北塔 · 辽代外形",
+    "方形十三层密檐 · 现存修复刹顶"
+  ],
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "checks": [
+      "三稿均已目检并逐檐计数。"
+    ],
+    "limitations": [
+      "关键檐数未通过，不交付。"
+    ]
+  },
+  "generation_history": [
+    {
+      "attempt": 1,
+      "prompt": "Use case: style-transfer. Make one heritage atlas plate. IMAGE 1 is ONLY the Longmen thin-black-line STYLE master; following photographs determine this subject's geometry, NOT their scene. Draw fine sparse BLACK contours, deliberately simplified joints, a few selected roof/stone detail lines. Every non-ink pixel inside and outside the object is perfectly flat opaque PURE WHITE #FFFFFF. No filled black shadows, grayscale, hatching, color, paper grain, gradient, glow, checkerboard, frame, caption, watermark or lettering. Plaques remain blank. Remove tourists, modern fences, cables, trees, sky, paving, other buildings and all ground shadows. Full uncut subject, apex and own base intact, centered with at least 8% clear margins. This is a faithful present-object illustration, not a speculative reconstruction.\n\nSubject is NORTH pagoda in Chaoyang, NOT South pagoda or octagonal Liaoyang tower. Front view with only very shallow visible side. SQUARE-plan solid brick tower, broad tall rectangular lower body with central Buddhist relief and two attendants plus small pagoda-shaped relief motifs. EXACTLY THIRTEEN distinct densely spaced eaves above the body. Copy photograph's present low rounded cap / restored finial, not a long generic metal needle. Preserve wide splayed masonry terrace and short front stair approach, no modern poles or glass shed. Complete tower height84% of portrait1024x1536, strong width relationship between broad body and tapering13 eaves.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_chaoyangbei-candidate1.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-0902bcbe-e9c8-486a-aef8-b082696ec601.png",
+      "retained_file": "assets/generated/ln_chaoyangbei-draft1.png",
+      "accepted": false,
+      "reason": "十四檐，应为十三檐。"
+    },
+    {
+      "attempt": 2,
+      "prompt": "Use case: precise-object-edit. Correct the attached fine BLACK line plate of North Pagoda, Chaoyang. Image1 current draft has FOURTEEN eaves. Required EXACTLY THIRTEEN major eave levels TOTAL INCLUDING the broad first eave directly above the Buddhist body: 1 broad bottom eave plus12 progressively narrower eaves. Remove one narrow middle eave and its intervening brick band, not the first broad eave or cap. Reference2 real tower has13 total. Keep the square-plan broad tall body, front Buddhist reliefs, restored low rounded cap, complete wide masonry plinth and front stairs, unchanged viewpoint/canvas1024x1536. Simplify roof/brick detail to finer fewer lines. No new motifs, no text, no shading, pure opaque white #FFFFFF throughout nonink areas, entire tower and base uncut.",
+      "reference_files": [
+        "assets/generated/ln_chaoyangbei-draft1.png",
+        "assets/references/ln_chaoyangbei-candidate1.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-3a9f9cf6-a74f-414f-b054-f54d8c8ed1c5.png",
+      "retained_file": "assets/generated/ln_chaoyangbei-draft2.png",
+      "accepted": false,
+      "reason": "十二檐，应为十三檐。"
+    },
+    {
+      "attempt": 3,
+      "prompt": "Use case: style-transfer. Draw the present NORTH PAGODA of Chaoyang from actual photograph IMAGE2 and eave-only crop IMAGE3. IMAGE1 only sparse thin black contour style. Fresh drawing, DO NOT use previous generated drafts. Critical photograph constraint: THIRTEEN major roof/eave ledges TOTAL above the tall decorated rectangular body: ONE very broad lowest eave with visible bracket arms, PLUS TWELVE separate smaller eaves ascending evenly toward cap. Counting from top: narrow eave1, eave2, eave3, eave4, eave5, eave6, eave7, eave8, eave9, eave10, eave11, eave12, then broad bottom eave13 directly on main body. Count13 actual eaves, not12 or14; cap and decorative base moldings are not eaves. SQUARE-plan tower, near-straight-on with shallow side depth, actual tall broad brick body with central Buddha relief and attendants plus two little pagoda reliefs, short arched door at bottom, present rounded dome-like restored cap. Own broad sloped masonry platform and center stairs, no speculative other buildings. Simplify to thin structural outlines and a few bracket/relief details, no dense brick texture or filled tones. Pure flat opaque WHITE #FFFFFF every non-ink area. Full tower apex to bottom uncut, centered on portrait1024x1536 with8% clear margins. No inscriptions, captions, words, numbers, pseudo-text, hatch, grayscale shading, paper grain, background, people, flags, trees, modern fencing, shadow, checkerboard or glow.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/ln_chaoyangbei-candidate1.jpg",
+        "assets/references/ln_chaoyangbei-eaves-crop.png"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-e8cabeea-a9f9-471c-80f1-304a238aae84.png",
+      "retained_file": "assets/generated/ln_chaoyangbei-draft3.png",
+      "accepted": false,
+      "reason": "仍为十二檐。已达本批最多两次纠错，不接入目录，不生成设色。"
+    }
+  ],
+  "factual_sources": [
+    {
+      "title": "辽宁文旅 · 朝阳北塔",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/8A68EB2D6A244A1F8C64DA4A1DB8E4FC/index.shtml"
+    }
+  ]
+}

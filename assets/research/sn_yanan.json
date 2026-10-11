@@ -1,7 +1,7 @@
 {
   "id": "sn_yanan",
   "subject": "延安宝塔（岭山寺塔）现存整塔",
-  "status": "needs_review",
+  "status": "complete",
   "historical_sources": [
     {
       "title": "湖南政报1996年第6期：第四批国保合并项目（岭山寺塔：宋）",
@@ -23,7 +23,7 @@
   "generated_file": "assets/generated/sn_yanan.png",
   "generation_tool": "built-in image_gen",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "site_recommendation": {
     "id": "sn_yanan",
     "name": "延安宝塔（岭山寺塔）",
@@ -141,5 +141,13 @@
     "seeds": []
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-85f0d9d4-0575-4c24-ad7a-66dc456c22be.png",
-  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-85f0d9d4-0575-4c24-ad7a-66dc456c22be.png"
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a0a845-c9c4-7283-b36a-d6083bd20837/exec-85f0d9d4-0575-4c24-ad7a-66dc456c22be.png",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "12832fdc1ed49a6aa10075e2025a459acd5c96c56157ca1cb8dbc637460d4183",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "51242b00ac1a4e847097b848d42581879c7bb1f5dba01eac29c66098eb8fdf4f"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "id": "jp_ikegami_pagoda",
   "subject": "现存五重木塔",
-  "status": "needs_review",
+  "status": "complete",
   "source_page": "https://commons.wikimedia.org/wiki/File:Five-storied_Pagoda,_Ikegami_Honmonji_01.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Five-storied_Pagoda%2C_Ikegami_Honmonji_01.jpg/1280px-Five-storied_Pagoda%2C_Ikegami_Honmonji_01.jpg",
   "author": "Higa4",
@@ -42,7 +42,7 @@
     }
   ],
   "structure_checkpoints": "Ikegami Honmonji five-storey pagoda, Tokyo, built 1608. Draw the entire freestanding square wooden pagoda, exactly FIVE distinct roof tiers and five wooden storeys, tapering upward, balcony rails, central tall bronze sorin finial. Near-front three-quarter view as photo; keep complete tip and base. Remove cemetery, monuments, trees, poles and outer security fence.",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "review": {
     "inputs_viewed": true,
     "note": "已查看照片、母版和生成原件；原型模式不作AI视觉通过/淘汰判断，状态保持待用户验收。",
@@ -64,5 +64,13 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-76093f42-7948-49c7-83cf-b3e0c0ed80fa"
+  "generation_call_id": "exec-76093f42-7948-49c7-83cf-b3e0c0ed80fa",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:28:32.049Z",
+    "sourceSha256": "48f954e9cfbac5e0592d0d0f7c56b3d0b5ad5e8f9af6d475b9dc465007f72de3",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "116f3c17330bfb5e2ecacdb0c558235ec8f8fe39c6f2c12e37e1c0ac22fa2613"
+  }
 }

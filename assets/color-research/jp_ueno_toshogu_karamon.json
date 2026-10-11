@@ -1,7 +1,7 @@
 {
   "id": "jp_ueno_toshogu_karamon",
   "name": "上野东照宫唐门",
-  "status": "needs_review",
+  "status": "complete",
   "generator": "built-in image_gen",
   "input_images": [
     "assets/generated/jp_ueno_toshogu_karamon.png",
@@ -31,9 +31,10 @@
   ],
   "output": "assets/colored/jp_ueno_toshogu_karamon.png",
   "visual_review": {
-    "status": "pending_user",
+    "status": "approved_default",
     "note": "已查看线稿、实拍、风格样本和生成原件；原型模式不作AI视觉通过/淘汰判断，等待用户验收。",
-    "original_viewed": true
+    "original_viewed": true,
+    "decided_by": "default-policy"
   },
   "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a101f1-b4d9-7fe2-84b4-f253eb8be83d/exec-ff017b86-5b7d-413a-9701-e777e5dbcd14.png",
   "background_preparation": {
@@ -49,5 +50,15 @@
     "completed_at": null,
     "note": "completed_at未由工具提供；received_at不作服务计算时长。"
   },
-  "generation_call_id": "exec-ff017b86-5b7d-413a-9701-e777e5dbcd14"
+  "generation_call_id": "exec-ff017b86-5b7d-413a-9701-e777e5dbcd14",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "c5120e912a3e84869ef8657e6457f9058d4bbea1dbfcc8912e212bd3b6e18db5",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "eb8279850a39f0153a3ffc473bf635a839be5563d188b360a560599b6d5ccc11",
+    "avifSha256": "185e41452d771e174745af46c4b5aa8d881e3e7cc856ae517ff24bb266fee0d4"
+  }
 }

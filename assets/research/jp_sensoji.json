@@ -59,7 +59,7 @@
     ],
     "limitations": "1958年重建的本堂，去除照片中的游客与两侧摊铺，不画雷门。"
   },
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "generation_history": [
     {
       "stage": "line_edit",
@@ -118,5 +118,13 @@
     "tool_output_file": "/Users/fuxiangyu/.codex/generated_images/01a101e9-8cc1-7850-b988-1870f34c732a/exec-5c013bbb-8a33-4b81-90f3-8f3535c229a0.png",
     "review_status": "pending_user",
     "sourceSha256": "04c67611e218cd4b7c3109fc3a2adaf152fde374dd9465741087a95287c62554"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:23:30.513Z",
+    "sourceSha256": "04c67611e218cd4b7c3109fc3a2adaf152fde374dd9465741087a95287c62554",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "98be5129b548b06cb06b935cad4b422aad5afe4a90315227e9b5498700431785"
   }
 }

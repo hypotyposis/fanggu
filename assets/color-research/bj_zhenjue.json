@@ -45,7 +45,19 @@
       "白底和暗底透明副本均目检，门洞暗部作为建筑内部保留，未误抠。",
       "近白边缘和可见实体通过脚本检查，内部RGB保持原样。"
     ],
-    "limitations": "照片色温与曝光有差异，石雕纹样作艺术简化；非文保级色彩校准或严格配准。"
+    "limitations": "照片色温与曝光有差异，石雕纹样作艺术简化；非文保级色彩校准或严格配准。",
+    "status": "approved_default",
+    "decided_by": "default-policy"
   },
-  "completed_at": "2026-09-16 10:59:39 UTC"
+  "completed_at": "2026-09-16 10:59:39 UTC",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "bd4c53926b8a13ad6387fe508324555f55fb41418508bb58bd3e479444da050b",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "bddede6c8e2097fd2175c9ef665aa081624eab39391e524d3ccf476515ee1dd8",
+    "avifSha256": "1ec724c5078fe51b83e53558db9a65fd5f04206a39a7c427c7fcbf0999a96692"
+  }
 }

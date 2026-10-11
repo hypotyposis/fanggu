@@ -2,9 +2,9 @@
   "id": "mm_ananda",
   "name": "蒲甘阿难陀寺",
   "subject": "完整寺身、中央塔冠及突出入口",
-  "status": "needs_review",
+  "status": "complete",
   "quality_mode": "prototype",
-  "visual_review_status": "pending_user",
+  "visual_review_status": "approved_default",
   "source_page": "https://commons.wikimedia.org/wiki/File:20160801_Ananda_Temple_Bagan_Myanmar_6682.jpg",
   "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/20160801_Ananda_Temple_Bagan_Myanmar_6682.jpg/1920px-20160801_Ananda_Temple_Bagan_Myanmar_6682.jpg",
   "author": "Jakub Hałun",
@@ -146,7 +146,17 @@
     "note": "原件已按两组联系表逐项实际查看；原型待用户审阅，不作AI视觉通过或淘汰决定。"
   },
   "visual_review": {
-    "status": "pending_user",
-    "note": "名单获同意，图版尚待用户人眼验收。"
+    "status": "approved_default",
+    "note": "名单获同意，图版尚待用户人眼验收。",
+    "decided_by": "default-policy"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-04T17:22:17.197Z",
+    "sourceSha256": "ea532f22b5671433ed81e9a6ed6cd536d241ee7c1b7476609135da694bc09ffc",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "94a2d0751277c078320d68c44421a56cd9d0aa5bcd0b54fa075b34c580780505",
+    "avifSha256": "687794b14cb4bd34f5d69651cd7e86a0dfb9535ca9192b7094a6fbf899ffe3f6"
   }
 }
