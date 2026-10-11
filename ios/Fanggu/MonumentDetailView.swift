@@ -200,12 +200,13 @@ struct MonumentDetailView: View {
 struct ArrivalSlider: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.scenePhase) private var scenePhase
     let site: Monument
     @Binding var progress: CGFloat
     let onComplete: () -> Void
     @State private var prepared = false
     @State private var finished = false
-    @State private var furthestStep = 0
+    @State private var arrivalHaptics = ArrivalDragHaptics()
     @GestureState private var dragging = false
 
     private var instruction: String {
@@ -261,17 +262,13 @@ struct ArrivalSlider: View {
                         .updating($dragging) { _, active, _ in active = true }
                         .onChanged {
                             guard !finished else { return }
-                            if !prepared { Haptics.beginArrival(); prepared = true }
+                            if !prepared { arrivalHaptics.begin(); prepared = true }
                             progress = min(1, max(0, $0.translation.width / travel))
-                            let step = Int(progress * 5)
-                            if step > furthestStep {
-                                furthestStep = step
-                                Haptics.arrivalResistance(step: step)
-                            }
+                            arrivalHaptics.update(progress: Double(progress))
                         }
                         .onEnded { value in
                             prepared = false
-                            furthestStep = 0
+                            arrivalHaptics.end()
                             if finished { return }
                             progress = min(1, max(0, value.translation.width / travel))
                             if progress >= 1 && checkIn() { return }
@@ -294,9 +291,21 @@ struct ArrivalSlider: View {
             // SwiftUI also resets GestureState when scrolling cancels the drag.
             if !active && prepared && !finished {
                 prepared = false
-                furthestStep = 0
+                arrivalHaptics.end()
                 resetProgress()
             }
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase != .active {
+                arrivalHaptics.end()
+                prepared = false
+                if !finished { resetProgress() }
+            }
+        }
+        .onDisappear {
+            arrivalHaptics.end()
+            prepared = false
+            if !finished { progress = 0 }
         }
     }
 

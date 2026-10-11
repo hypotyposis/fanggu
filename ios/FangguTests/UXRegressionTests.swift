@@ -2,6 +2,35 @@ import XCTest
 @testable import Fanggu
 
 final class UXRegressionTests: XCTestCase {
+    func testArrivalFrictionHasNoDetentAtTwentyPercentBoundaries() throws {
+        var motion = ArrivalHapticMotion()
+        for boundary in [0.2, 0.4, 0.6, 0.8] {
+            let before = try XCTUnwrap(motion.update(progress: boundary - 0.001))
+            let after = try XCTUnwrap(motion.update(progress: boundary + 0.001))
+            XCTAssertGreaterThan(after.intensity, before.intensity)
+            XCTAssertLessThan(after.intensity - before.intensity, 0.001)
+            XCTAssertLessThan(after.sharpness - before.sharpness, 0.001)
+        }
+    }
+
+    func testArrivalFrictionTracksReverseTravelAndSilencesRestAndEnds() throws {
+        var motion = ArrivalHapticMotion()
+        XCTAssertNil(motion.update(progress: 0))
+        let forward = try XCTUnwrap(motion.update(progress: 0.7))
+        XCTAssertNil(motion.update(progress: 0.7), "Holding still must not sustain vibration")
+        let backward = try XCTUnwrap(motion.update(progress: 0.3))
+        XCTAssertGreaterThan(backward.intensity, 0, "A zipper also moves smoothly backwards")
+        XCTAssertLessThan(backward.intensity, forward.intensity)
+        XCTAssertNil(motion.update(progress: 1))
+        XCTAssertNil(motion.update(progress: 1.2))
+        XCTAssertNotNil(motion.update(progress: 0.9), "Moving away from the end resumes friction")
+        XCTAssertNil(motion.update(progress: -0.1))
+        XCTAssertNil(motion.update(progress: .nan))
+        XCTAssertNil(motion.update(progress: .infinity))
+        motion = ArrivalHapticMotion()
+        XCTAssertNotNil(motion.update(progress: 0.3), "A new gesture has no remembered detents")
+    }
+
     @MainActor func testSearchMatchesEveryKeywordRegardlessOfOrderOrWhitespace() throws {
         let store = LibraryStore(fileURL: temporaryFile(), language: .simplifiedChinese)
         func matches(_ query: String) -> Set<String> {
