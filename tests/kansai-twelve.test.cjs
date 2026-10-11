@@ -45,7 +45,12 @@ test('Kansai batch keeps twelve distinct subjects, map regions and depicted date
   }
   assert(SITES.find(site => site.id === 'jp_kasuga_honden').facts.some(fact => fact.includes('四座')));
   assert(SITES.find(site => site.id === 'jp_sumiyoshi_honden').facts.some(fact => fact.includes('第四')));
-  assert(SITES.find(site => site.id === 'jp_osaka_sengan').facts.some(fact => fact.includes('1931')));
+  const sengan = SITES.find(site => site.id === 'jp_osaka_sengan');
+  assert.equal(sengan.sub, '现存橹与石垣');
+  assert.match(sengan.lede, /德川/);
+  const senganFacts = sengan.facts.join('\n');
+  assert.match(senganFacts, /(?:1620|一六二〇)/);
+  assert.match(senganFacts, /元和六年.*立柱墨书/);
   assert.equal(queue.count, SITES.length - queue.excluded.length);
 });
 
