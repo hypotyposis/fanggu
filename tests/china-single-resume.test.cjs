@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -45,7 +46,7 @@ test('the recovered Chongxing interior is an independent unvisited member of the
   }
 });
 
-test('recovered line and newly generated color retain real inputs, source attribution and bound delivery hashes', () => {
+test('recovered line and newly generated color retain real inputs, source attribution and bound delivery hashes', requiresLocalAssets, () => {
   const id = batch.ids[0];
   const line = json(`assets/research/${id}.json`);
   const color = json(`assets/color-research/${id}.json`);
