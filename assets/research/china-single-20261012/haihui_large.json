@@ -1,0 +1,40 @@
+{
+  "id": "haihui_large",
+  "parent": "sx_haihui",
+  "name": "海会寺琉璃大塔",
+  "subject": "海会寺琉璃大塔",
+  "photo": "assets/references/sx_haihui-photo.jpg",
+  "structure": "ONLY the TALL rear OCTAGONAL THIRTEEN-storey pagoda, omit small foreground pagoda; keep the turquoise projecting gallery at the tenth level and lower fortified platform",
+  "materials": "grey-brown brick, turquoise glazed gallery and glazed roof ornament, weathered grey base",
+  "dyn": "ming",
+  "year": 1565,
+  "era": "明嘉靖至隆庆间",
+  "yearLabel": "嘉靖—隆庆（约）",
+  "yearApprox": true,
+  "yearNote": "1565仅为营建时段排序点，资料有1561与1565—1568说法。",
+  "facts": [
+    "八角十三级，高约57米，第十层伸出琉璃平座悬阁。",
+    "大塔建于明嘉靖、隆庆间，具体纪年有不同记载。",
+    "悬阁柱、栏板和雀替用琉璃，不把小塔的五代年代用于本塔。"
+  ],
+  "phase": "delivery_ready",
+  "generation_count": 2,
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 海会寺琉璃大塔. ONLY the TALL rear OCTAGONAL THIRTEEN-storey pagoda, omit small foreground pagoda; keep the turquoise projecting gallery at the tenth level and lower fortified platform. ONE building only. Portrait canvas, complete finial and base with margins.",
+  "line_submitted_at": "2026-10-12T08:26:23.186473+00:00",
+  "line": "assets/generated/haihui_large.png",
+  "color_prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 海会寺琉璃大塔.\nPhotograph material observations: grey-brown brick, turquoise glazed gallery and glazed roof ornament, weathered grey base. Single building only, preserve the input line composition.",
+  "line_received_at": "2026-10-12T08:27:47.311219+00:00",
+  "line_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-3f0c58ef-2c71-4801-aaf4-0ea2c47a99f4.png",
+  "color_submitted_at": "2026-10-12T08:32:14.571435+00:00",
+  "color": "assets/colored/haihui_large.png",
+  "color_dimensions": [
+    1024,
+    1536
+  ],
+  "line_dimensions": [
+    1024,
+    1536
+  ],
+  "color_received_at": "2026-10-12T08:35:06.854925+00:00",
+  "color_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-f7320ac6-c28e-43dc-b127-9a2b8d2f3fa3.png"
+}

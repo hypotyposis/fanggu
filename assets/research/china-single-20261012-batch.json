@@ -1,0 +1,606 @@
+{
+  "started_at": "2026-10-12T16:07:09.656236+08:00",
+  "scope": "中国多单体条目全面排查；独立建筑拆分，连体结构保留；旧记录保留集合，单体未标记",
+  "groups": {
+    "shanhua": [
+      "大雄宝殿",
+      "三圣殿",
+      "普贤阁",
+      "山门"
+    ],
+    "huayan": [
+      "薄伽教藏殿",
+      "大雄宝殿"
+    ],
+    "longxing": [
+      "摩尼殿",
+      "转轮藏殿",
+      "大悲阁"
+    ],
+    "kaiyuan": [
+      "须弥塔",
+      "钟楼"
+    ],
+    "chongsheng": [
+      "千寻塔",
+      "南塔",
+      "北塔"
+    ],
+    "lingyin": [
+      "东石塔",
+      "西石塔",
+      "东经幢",
+      "西经幢"
+    ],
+    "luohanshuangta": [
+      "东塔",
+      "西塔",
+      "正殿遗址"
+    ],
+    "yuanqi": [
+      "大雄宝殿",
+      "青龙塔"
+    ],
+    "dule": [
+      "观音阁",
+      "山门"
+    ],
+    "zhuozhou": [
+      "云居寺塔",
+      "智度寺塔"
+    ],
+    "ln_chongxing": [
+      "东塔",
+      "西塔"
+    ],
+    "xianzhonggu": [
+      "钟楼",
+      "鼓楼"
+    ],
+    "sx_haihui": [
+      "舍利小塔",
+      "琉璃大塔"
+    ],
+    "sx_yongzuo": [
+      "文峰塔",
+      "宣文塔"
+    ],
+    "sx_jishan_jiwang": [
+      "献殿",
+      "钟楼",
+      "鼓楼",
+      "后稷楼"
+    ],
+    "xitai": [
+      "岙胡胡氏宗祠戏台",
+      "崇兴庙戏台",
+      "城隍庙戏台"
+    ],
+    "hn_jiahuiguan": [
+      "门楼兼戏楼",
+      "钟楼",
+      "鼓楼"
+    ]
+  },
+  "retain_connected": [
+    "sx_doudafu",
+    "bj_zhihua",
+    "sx_yuci_chenghuang",
+    "gx_dashi",
+    "sx_jiexiu_houtu",
+    "xianshen",
+    "hb_changping",
+    "hb_taihui",
+    "xz_potala",
+    "xuankong"
+  ],
+  "needs_scope_evidence": [
+    "xz_guge",
+    "xz_tholing",
+    "nx_108towers"
+  ],
+  "items": [
+    {
+      "id": "chongsheng_north",
+      "parent": "chongsheng",
+      "name": "崇圣寺北塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "chongsheng_qianxun",
+      "parent": "chongsheng",
+      "name": "崇圣寺千寻塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "chongsheng_south",
+      "parent": "chongsheng",
+      "name": "崇圣寺南塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "chongxing_east",
+      "parent": "ln_chongxing",
+      "name": "崇兴寺东塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "chongxing_west",
+      "parent": "ln_chongxing",
+      "name": "崇兴寺西塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "dule_gate",
+      "parent": "dule",
+      "name": "独乐寺山门",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "dule_guanyin",
+      "parent": "dule",
+      "name": "独乐寺观音阁",
+      "phase": "delivery_ready",
+      "generation_count": 0,
+      "reused_from": "dule"
+    },
+    {
+      "id": "haihui_large",
+      "parent": "sx_haihui",
+      "name": "海会寺琉璃大塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "haihui_small",
+      "parent": "sx_haihui",
+      "name": "海会寺舍利小塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "huayan_bojia",
+      "parent": "huayan",
+      "name": "华严寺薄伽教藏殿",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "huayan_daxiong",
+      "parent": "huayan",
+      "name": "华严寺大雄宝殿",
+      "phase": "delivery_ready",
+      "generation_count": 0,
+      "reused_from": "huayan"
+    },
+    {
+      "id": "jiahuiguan_east",
+      "parent": "hn_jiahuiguan",
+      "name": "郏县山陕会馆东楼",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "jiahuiguan_gate",
+      "parent": "hn_jiahuiguan",
+      "name": "郏县山陕会馆门楼戏楼",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "jiahuiguan_west",
+      "parent": "hn_jiahuiguan",
+      "name": "郏县山陕会馆西楼",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "kaiyuan_bell",
+      "parent": "kaiyuan",
+      "name": "正定开元寺钟楼",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "kaiyuan_xumi",
+      "parent": "kaiyuan",
+      "name": "正定开元寺须弥塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "lingyin_east_pillar",
+      "parent": "lingyin",
+      "name": "灵隐寺东经幢",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "lingyin_east_tower",
+      "parent": "lingyin",
+      "name": "灵隐寺东石塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "lingyin_west_pillar",
+      "parent": "lingyin",
+      "name": "灵隐寺西经幢",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "lingyin_west_tower",
+      "parent": "lingyin",
+      "name": "灵隐寺西石塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "longxing_mani",
+      "parent": "longxing",
+      "name": "隆兴寺摩尼殿",
+      "phase": "delivery_ready",
+      "generation_count": 0,
+      "reused_from": "longxing"
+    },
+    {
+      "id": "longxing_zhuanlun",
+      "parent": "longxing",
+      "name": "隆兴寺转轮藏阁",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "luohan_east",
+      "parent": "luohanshuangta",
+      "name": "罗汉院东塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "luohan_hall_ruins",
+      "parent": "luohanshuangta",
+      "name": "罗汉院正殿遗址",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "luohan_west",
+      "parent": "luohanshuangta",
+      "name": "罗汉院西塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "shanhua_daxiong",
+      "parent": "shanhua",
+      "name": "善化寺大雄宝殿",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "shanhua_gate",
+      "parent": "shanhua",
+      "name": "善化寺山门",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "shanhua_puxian",
+      "parent": "shanhua",
+      "name": "善化寺普贤阁",
+      "phase": "delivery_ready",
+      "generation_count": 0,
+      "reused_from": "shanhua"
+    },
+    {
+      "id": "shanhua_sansheng",
+      "parent": "shanhua",
+      "name": "善化寺三圣殿",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "xian_bell",
+      "parent": "xianzhonggu",
+      "name": "西安钟楼",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "xian_drum",
+      "parent": "xianzhonggu",
+      "name": "西安鼓楼",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "xitai_aohu",
+      "parent": "xitai",
+      "name": "岙胡胡氏宗祠戏台",
+      "phase": "delivery_ready",
+      "generation_count": 0,
+      "reused_from": "xitai"
+    },
+    {
+      "id": "xitai_chenghuang",
+      "parent": "xitai",
+      "name": "宁海城隍庙戏台",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "yongzuo_wenfeng",
+      "parent": "sx_yongzuo",
+      "name": "永祚寺文峰塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "yongzuo_xuanwen",
+      "parent": "sx_yongzuo",
+      "name": "永祚寺宣文塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "yuanqi_hall",
+      "parent": "yuanqi",
+      "name": "原起寺大雄宝殿",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "yuanqi_qinglong",
+      "parent": "yuanqi",
+      "name": "原起寺青龙塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "zhuozhou_yunju",
+      "parent": "zhuozhou",
+      "name": "涿州云居寺塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    },
+    {
+      "id": "zhuozhou_zhidu",
+      "parent": "zhuozhou",
+      "name": "涿州智度寺塔",
+      "phase": "delivery_ready",
+      "generation_count": 2,
+      "reused_from": null
+    }
+  ],
+  "initial_generation_concurrency": 8,
+  "baseline_catalog_count": 569,
+  "resumed_at": "2026-10-12T08:49:15.222372+00:00",
+  "resumed_from_thread": "01a12f22-9661-7241-a5e0-4eb9c30aa11d",
+  "research_errors": [
+    "灵隐寺官方网站照片403，Commons部分照片429，改用可用的独立Commons照片；重试仍缺则阻塞。"
+  ],
+  "retained_connected_evidence": {
+    "sx_jishan_jiwang": "前部献殿与钟鼓楼连体；后稷楼仅上檐入画，独立全楼缺少主体参考，暂保留现有组合。",
+    "nx_108towers": "所绘七座塔无可靠单塔编号与逐塔身份，不能凭行列臆建ID。",
+    "xz_guge": "遗址全景的多期房屋残迹与宫堡未对应可靠独立单体名称、范围及年代。",
+    "xz_tholing": "两座殿前佛塔缺单塔身份与主体范围证据，保留现有条目并列待核对。"
+  },
+  "ids": [
+    "chongsheng_north",
+    "chongsheng_qianxun",
+    "chongsheng_south",
+    "chongxing_east",
+    "chongxing_west",
+    "dule_gate",
+    "dule_guanyin",
+    "haihui_large",
+    "haihui_small",
+    "huayan_bojia",
+    "huayan_daxiong",
+    "jiahuiguan_east",
+    "jiahuiguan_gate",
+    "jiahuiguan_west",
+    "kaiyuan_bell",
+    "kaiyuan_xumi",
+    "lingyin_east_pillar",
+    "lingyin_east_tower",
+    "lingyin_west_pillar",
+    "lingyin_west_tower",
+    "longxing_mani",
+    "longxing_zhuanlun",
+    "luohan_east",
+    "luohan_hall_ruins",
+    "luohan_west",
+    "shanhua_daxiong",
+    "shanhua_gate",
+    "shanhua_puxian",
+    "shanhua_sansheng",
+    "xian_bell",
+    "xian_drum",
+    "xitai_aohu",
+    "xitai_chenghuang",
+    "yongzuo_wenfeng",
+    "yongzuo_xuanwen",
+    "yuanqi_hall",
+    "yuanqi_qinglong",
+    "zhuozhou_yunju",
+    "zhuozhou_zhidu"
+  ],
+  "delivered_groups": {
+    "chongsheng": [
+      "chongsheng_north",
+      "chongsheng_qianxun",
+      "chongsheng_south"
+    ],
+    "ln_chongxing": [
+      "chongxing_east",
+      "chongxing_west"
+    ],
+    "dule": [
+      "dule_gate",
+      "dule_guanyin"
+    ],
+    "sx_haihui": [
+      "haihui_large",
+      "haihui_small"
+    ],
+    "huayan": [
+      "huayan_bojia",
+      "huayan_daxiong"
+    ],
+    "hn_jiahuiguan": [
+      "jiahuiguan_east",
+      "jiahuiguan_gate",
+      "jiahuiguan_west"
+    ],
+    "kaiyuan": [
+      "kaiyuan_bell",
+      "kaiyuan_xumi"
+    ],
+    "lingyin": [
+      "lingyin_east_pillar",
+      "lingyin_east_tower",
+      "lingyin_west_pillar",
+      "lingyin_west_tower"
+    ],
+    "longxing": [
+      "longxing_mani",
+      "longxing_zhuanlun"
+    ],
+    "luohanshuangta": [
+      "luohan_east",
+      "luohan_hall_ruins",
+      "luohan_west"
+    ],
+    "shanhua": [
+      "shanhua_daxiong",
+      "shanhua_gate",
+      "shanhua_puxian",
+      "shanhua_sansheng"
+    ],
+    "xianzhonggu": [
+      "xian_bell",
+      "xian_drum"
+    ],
+    "xitai": [
+      "xitai_aohu",
+      "xitai_chenghuang"
+    ],
+    "sx_yongzuo": [
+      "yongzuo_wenfeng",
+      "yongzuo_xuanwen"
+    ],
+    "yuanqi": [
+      "yuanqi_hall",
+      "yuanqi_qinglong"
+    ],
+    "zhuozhou": [
+      "zhuozhou_yunju",
+      "zhuozhou_zhidu"
+    ]
+  },
+  "previous_runtime_hash_check": {
+    "checked": 1138,
+    "changed": []
+  },
+  "generation_count": 68,
+  "generation_count_resumed": 26,
+  "rework_count": 0,
+  "blocked_items": [
+    {
+      "id": "longxing_dabei",
+      "reason": "三张可用Commons照片均仅中央立面近景，最高屋顶及相连耳阁未完整入镜，不能按约定完整主体生成。"
+    },
+    {
+      "id": "xitai_chongxing",
+      "reason": "Commons 02、03、04均为庙门外立面或细部，无法核验内部戏台及勾连廊，不能把门楼画成戏台。"
+    },
+    {
+      "id": "sx_jishan_jiwang",
+      "reason": "前部献殿与钟鼓楼连体；后稷楼仅上檐入画，独立全楼缺少主体参考，暂保留现有组合。"
+    },
+    {
+      "id": "xz_guge",
+      "reason": "遗址全景的多期房屋残迹与宫堡未对应可靠独立单体名称、范围及年代。"
+    },
+    {
+      "id": "xz_tholing",
+      "reason": "两座殿前佛塔缺单塔身份与主体范围证据，保留现有条目并列待核对。"
+    },
+    {
+      "id": "nx_108towers",
+      "reason": "所绘七座塔无可靠单塔编号与逐塔身份，不能凭行列臆建ID。"
+    }
+  ],
+  "actual_peak_generation_concurrency": 8,
+  "generation_service_failures": 0,
+  "generation_service_time": "未知；仅保存工具领取时间，不将资料等待算入模型服务耗时",
+  "delivery_counts": {
+    "new_single_entries": 39,
+    "reused_plate_pairs": 5,
+    "collections": 16,
+    "raw_catalog": 608,
+    "visible_singles": 592,
+    "line_approved_default": 39,
+    "color_approved_default": 39
+  },
+  "finished_at": "2026-10-12T18:34:01.414291+08:00",
+  "wall_clock_seconds": 8811.758055,
+  "resumed_wall_clock_seconds": 6286.191919,
+  "checks": {
+    "node_full": "145 passed",
+    "python": "25 passed",
+    "native_unit": "52 passed; updated CurationTests 8 passed after route reordering",
+    "curation_ui": "3 passed",
+    "localization_ui": "3 passed after adding scrolling to language-settings and English/Japanese collection coverage",
+    "browser": "39 PNG/AVIF pairs decoded on all four pages; light/dark/checker, individual view, line/original switch and source credits checked",
+    "protection": "check passed",
+    "git_diff": "check passed",
+    "assets_full": "4610 files verified",
+    "source_final": "4 passed"
+  },
+  "source_checks_note": "首次全套Node检查发现浊漳河谷次序及历史数量基线过期，并缺3份被忽略的旧审图页；修复次序、补单体覆盖及恢复旧审图页后全套通过。首次英文本地化用例没有滚动到新增集合后的语言设置；修正测试滚动后通过。",
+  "pipeline_note": "首次线稿处理与设色转码曾重叠；两者均成功退出后重新按顺序执行转码、默认通过、再转码及汇总，正式交付使用后续成功结果。",
+  "local_asset_bundle": "asset-dist/china-single-20261012-full/"
+}

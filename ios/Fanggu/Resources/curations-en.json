@@ -12,7 +12,8 @@
       "guangren",
       "foguang",
       "tiantai"
-    ]
+    ],
+    "legacySiteID": null
   },
   {
     "id": "liao_eight",
@@ -21,16 +22,18 @@
     "name": "Eight Great Liao Timber Structures",
     "eyebrow": "Liao timber · North and Northeast China",
     "lede": "Few Liao-dynasty timber buildings survive, and enthusiasts call them the “Eight Great Liao Timber Structures”: the Guanyin Pavilion and Main Gate of Dule Temple, the Mahavira Hall of Fengguo Temple, the Mahavira Hall of Kaishan Temple, the Manjushri Hall of Geyuan Temple, the Bhagavat Sutra Repository Hall of Huayan Temple, the Mahavira Hall of Shanhua Temple and the Yingxian Wooden Pagoda.",
-    "note": "The Guanyin Pavilion and Main Gate of Dule Temple are one entry in this catalog, so seven entries stand for the eight structures. Another version of the list includes the lost Hall of the Three Great Bodhisattvas of Guangji Temple in Baodi; this list does not count it.",
+    "note": "Eight entries correspond to eight surviving timber buildings. The destroyed San Dashi Hall of Guangji Temple is excluded.",
     "items": [
       "geyuan",
-      "dule",
+      "dule_guanyin",
+      "dule_gate",
       "fengguo",
       "kaishan",
-      "huayan",
+      "huayan_bojia",
       "yingxian",
-      "shanhua"
-    ]
+      "shanhua_daxiong"
+    ],
+    "legacySiteID": null
   },
   {
     "id": "zhuozhang_valley",
@@ -44,12 +47,245 @@
       "longmen",
       "tiantai",
       "dayun",
-      "yuanqi",
+      "yuanqi_hall",
       "fotou",
+      "yuanqi_qinglong",
       "huilong",
       "chunhua",
       "jiutian",
       "xiayu"
-    ]
+    ],
+    "legacySiteID": null
+  },
+  {
+    "id": "chongsheng",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Chongsheng Temple Three Pagodas",
+    "eyebrow": "Yunnan · Dali",
+    "lede": "Explore the catalogued individual monuments of Chongsheng Temple Three Pagodas, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "chongsheng_north",
+      "chongsheng_qianxun",
+      "chongsheng_south"
+    ],
+    "legacySiteID": "chongsheng"
+  },
+  {
+    "id": "ln_chongxing",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Chongxing Temple Twin Pagodas",
+    "eyebrow": "Liaoning · Beizhen · Chongxing Temple",
+    "lede": "Explore the catalogued individual monuments of Chongxing Temple Twin Pagodas, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "chongxing_east",
+      "chongxing_west"
+    ],
+    "legacySiteID": "ln_chongxing"
+  },
+  {
+    "id": "dule",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Dule Temple",
+    "eyebrow": "Tianjin · Jizhou",
+    "lede": "Explore the catalogued individual monuments of Dule Temple, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "dule_gate",
+      "dule_guanyin"
+    ],
+    "legacySiteID": "dule"
+  },
+  {
+    "id": "sx_haihui",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Haihui Temple Twin Pagodas",
+    "eyebrow": "Shanxi · Yangcheng · Pagoda courtyard of Haihui Temple, Daqiao Village",
+    "lede": "Explore the catalogued individual monuments of Haihui Temple Twin Pagodas, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "haihui_large",
+      "haihui_small"
+    ],
+    "legacySiteID": "sx_haihui"
+  },
+  {
+    "id": "huayan",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Huayan Temple",
+    "eyebrow": "Shanxi · Datong · Old city",
+    "lede": "Explore the catalogued individual monuments of Huayan Temple, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "huayan_bojia",
+      "huayan_daxiong"
+    ],
+    "legacySiteID": "huayan"
+  },
+  {
+    "id": "hn_jiahuiguan",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Jiaxian Shan-Shan Guild Hall",
+    "eyebrow": "Henan · Jia County",
+    "lede": "Explore the catalogued individual monuments of Jiaxian Shan-Shan Guild Hall, each with its own date, artwork and visit record.",
+    "note": "The gate and upstairs stage remain one connected unit. The east and west pavilions are separate; their bell/drum assignment is unconfirmed.",
+    "items": [
+      "jiahuiguan_east",
+      "jiahuiguan_gate",
+      "jiahuiguan_west"
+    ],
+    "legacySiteID": "hn_jiahuiguan"
+  },
+  {
+    "id": "kaiyuan",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Zhengding Kaiyuan Temple",
+    "eyebrow": "Hebei · Zhengding · Old city",
+    "lede": "Explore the catalogued individual monuments of Zhengding Kaiyuan Temple, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "kaiyuan_bell",
+      "kaiyuan_xumi"
+    ],
+    "legacySiteID": "kaiyuan"
+  },
+  {
+    "id": "lingyin",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Lingyin Stone Pagodas and Dharani Pillars",
+    "eyebrow": "Zhejiang · Hangzhou · Lingyin Temple",
+    "lede": "Explore the catalogued individual monuments of Lingyin Stone Pagodas and Dharani Pillars, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "lingyin_east_pillar",
+      "lingyin_east_tower",
+      "lingyin_west_pillar",
+      "lingyin_west_tower"
+    ],
+    "legacySiteID": "lingyin"
+  },
+  {
+    "id": "longxing",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Longxing Temple",
+    "eyebrow": "Hebei · Zhengding · Old city",
+    "lede": "Explore the catalogued individual monuments of Longxing Temple, each with its own date, artwork and visit record.",
+    "note": "This list includes Mani Hall and the Revolving Sutra Hall. The 971 bronze Guanyin does not date the Dabei Pavilion rebuilt in 1997–1999.",
+    "items": [
+      "longxing_mani",
+      "longxing_zhuanlun"
+    ],
+    "legacySiteID": "longxing"
+  },
+  {
+    "id": "luohanshuangta",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Luohan Twin Pagodas and Hall Ruins",
+    "eyebrow": "Jiangsu · Suzhou · Dinghuisi Lane",
+    "lede": "Explore the catalogued individual monuments of Luohan Twin Pagodas and Hall Ruins, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "luohan_east",
+      "luohan_hall_ruins",
+      "luohan_west"
+    ],
+    "legacySiteID": "luohanshuangta"
+  },
+  {
+    "id": "shanhua",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Shanhua Temple",
+    "eyebrow": "Shanxi · Datong · South Gate",
+    "lede": "Explore the catalogued individual monuments of Shanhua Temple, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "shanhua_daxiong",
+      "shanhua_gate",
+      "shanhua_puxian",
+      "shanhua_sansheng"
+    ],
+    "legacySiteID": "shanhua"
+  },
+  {
+    "id": "xianzhonggu",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Xi’an Bell and Drum Towers",
+    "eyebrow": "Shaanxi · Xi'an · Center of the prefectural city",
+    "lede": "Explore the catalogued individual monuments of Xi’an Bell and Drum Towers, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "xian_bell",
+      "xian_drum"
+    ],
+    "legacySiteID": "xianzhonggu"
+  },
+  {
+    "id": "xitai",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Ninghai Historic Stages",
+    "eyebrow": "Zhejiang · Ninghai · Shrines and temples",
+    "lede": "Explore the catalogued individual monuments of Ninghai Historic Stages, each with its own date, artwork and visit record.",
+    "note": "This list includes the Aohu Hu ancestral hall and Town God Temple stages; it does not cover every historic stage in Ninghai.",
+    "items": [
+      "xitai_aohu",
+      "xitai_chenghuang"
+    ],
+    "legacySiteID": "xitai"
+  },
+  {
+    "id": "sx_yongzuo",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Yongzuo Temple Twin Pagodas",
+    "eyebrow": "Shanxi · Taiyuan",
+    "lede": "Explore the catalogued individual monuments of Yongzuo Temple Twin Pagodas, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "yongzuo_wenfeng",
+      "yongzuo_xuanwen"
+    ],
+    "legacySiteID": "sx_yongzuo"
+  },
+  {
+    "id": "yuanqi",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Yuanqi Temple",
+    "eyebrow": "Shanxi · Lucheng · Bank of the Zhuozhang River · Xin'an Village",
+    "lede": "Explore the catalogued individual monuments of Yuanqi Temple, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "yuanqi_hall",
+      "yuanqi_qinglong"
+    ],
+    "legacySiteID": "yuanqi"
+  },
+  {
+    "id": "zhuozhou",
+    "kind": "collection",
+    "kindName": "Building group",
+    "name": "Zhuozhou Twin Pagodas",
+    "eyebrow": "Hebei · Zhuozhou · Old city",
+    "lede": "Explore the catalogued individual monuments of Zhuozhou Twin Pagodas, each with its own date, artwork and visit record.",
+    "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited.",
+    "items": [
+      "zhuozhou_yunju",
+      "zhuozhou_zhidu"
+    ],
+    "legacySiteID": "zhuozhou"
   }
 ]

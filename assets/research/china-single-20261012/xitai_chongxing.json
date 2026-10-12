@@ -1,0 +1,48 @@
+{
+  "id": "xitai_chongxing",
+  "parent": "xitai",
+  "name": "宁海崇兴庙戏台",
+  "subject": "宁海崇兴庙戏台与勾连廊",
+  "photo": "assets/references/xitai_chongxing_stage-photo.jpg",
+  "sources": [
+    {
+      "id": "xitai_chongxing_stage",
+      "photo": "assets/references/xitai_chongxing_stage-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AChongxing%20Temple%2C%20Ninghai%2C%202017-05-29%2002.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Chongxing_Temple%2C_Ninghai%2C_2017-05-29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure": "the photographed CENTER theater stage and its directly attached covered passage with three linked caisson ceilings. Draw only this coupled timber stage-and-passage unit, its red timber columns, open square stage, carved beams and ceilings in the same interior view. No surrounding detached audience buildings, no neighboring hall reconstructions.",
+  "materials": "worn dark brown and red timber with restrained gold and painted carved ceiling details, grey stone base",
+  "dyn": "ming",
+  "year": 1700,
+  "era": "清代 · 现存单体确年未详",
+  "yearLabel": "清代（约）",
+  "yearApprox": true,
+  "yearNote": "1700仅作清代约略排序；创庙与戏台后世修缮分别理解，具体建年尚未确定。",
+  "facts": [
+    "戏台与勾连廊连设三座藻井，为宁海三连贯藻井戏台之一。",
+    "寺庙与宗祠沿革不等同于现存戏台确切建年，本条按清代约略定位。",
+    "戏台与勾连廊视为一个连体单元，不与岙胡及城隍庙戏台混为一条。"
+  ],
+  "phase": "blocked",
+  "generation_count": 0,
+  "historical_sources": [
+    {
+      "title": "宁海县传统剧场建筑研究",
+      "url": "https://www.whitr-ap.org/themes/69/userfiles/download/2012/11/28/upyduh5tllni33j.pdf",
+      "publisher": "联合国教科文组织亚太地区世界遗产培训与研究中心（上海）会议资料",
+      "note": "宁海现存三连贯藻井戏台分列崇兴庙、岙胡胡氏宗祠、樟树孙氏宗祠。"
+    },
+    {
+      "title": "崇兴庙",
+      "url": "https://zh.wikipedia.org/wiki/崇兴庙",
+      "note": "清代及后世修葺沿革参考，单体确年未断言。"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 宁海崇兴庙戏台与勾连廊. the photographed CENTER theater stage and its directly attached covered passage with three linked caisson ceilings. Draw only this coupled timber stage-and-passage unit, its red timber columns, open square stage, carved beams and ceilings in the same interior view. No surrounding detached audience buildings, no neighboring hall reconstructions.. Preserve actual interior composition as a standalone architectural cutaway-like plate, no spectators or text.",
+  "blocker": "Commons 02、03、04均为庙门外立面或细部，无法核验内部戏台及勾连廊，不能把门楼画成戏台。"
+}

@@ -89,8 +89,9 @@ test('northeast paired plates bind real originals, transparency and existing art
 test('northeast provinces, separate periods and church facets are actually reachable', () => {
   const find = filters => catalog.filter(site => facets.matches(site, filters));
   assert.deepEqual(facets.provinces(catalog, 'northeast'), ['辽宁', '吉林', '黑龙江']);
-  assert.equal(find({ region: 'northeast' }).length, batch.ids.length + 2 + readyExpansion.groups['dongbei-20261005'].length);
+  assert.equal(find({ region: 'northeast' }).length, batch.ids.length + 2 + readyExpansion.groups['dongbei-20261005'].length + 2);
   for (const [province, ids] of Object.entries(batch.groups)) for (const id of ids) assert(find({ province, status: 'unvisited' }).some(site => site.id === id));
+  assert.deepEqual(Array.from(find({ query: '崇兴寺', region: 'northeast' }), site => site.id).sort(), ['ln_chongxing', 'chongxing_east', 'chongxing_west'].sort());
   assert.deepEqual(Array.from(find({ type: 'church', region: 'northeast' }), site => site.id), ['hlj_sofia']);
   for (const [id, dyn] of [['jl_jiangjunfen', 'goguryeo'], ['hlj_shideng', 'balhae']]) {
     const site = SITES.find(site => site.id === id);

@@ -5013,6 +5013,401 @@
         "source": "batch1",
         "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号82 分类号35 昌珠寺 · 西藏自治区乃东县（备注：传为七世纪建）· PDF第11页（公报第84页）"
       }
+    ],
+    "chongsheng_north": [
+      {
+        "batch": 1,
+        "unitName": "崇圣寺三塔",
+        "relation": "part",
+        "scope": "崇圣寺北塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 崇圣寺三塔"
+      }
+    ],
+    "chongsheng_qianxun": [
+      {
+        "batch": 1,
+        "unitName": "崇圣寺三塔",
+        "relation": "part",
+        "scope": "崇圣寺千寻塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 崇圣寺三塔"
+      }
+    ],
+    "chongsheng_south": [
+      {
+        "batch": 1,
+        "unitName": "崇圣寺三塔",
+        "relation": "part",
+        "scope": "崇圣寺南塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 崇圣寺三塔"
+      }
+    ],
+    "chongxing_east": [
+      {
+        "batch": 3,
+        "unitName": "崇兴寺双塔",
+        "relation": "part",
+        "scope": "崇兴寺东塔",
+        "source": "batch3",
+        "locator": "PDF 第15页 · 崇兴寺双塔"
+      }
+    ],
+    "chongxing_west": [
+      {
+        "batch": 3,
+        "unitName": "崇兴寺双塔",
+        "relation": "part",
+        "scope": "崇兴寺西塔",
+        "source": "batch3",
+        "locator": "PDF 第15页 · 崇兴寺双塔"
+      }
+    ],
+    "dule_guanyin": [
+      {
+        "batch": 1,
+        "unitName": "独乐寺",
+        "relation": "part",
+        "scope": "独乐寺观音阁",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 独乐寺"
+      }
+    ],
+    "haihui_large": [
+      {
+        "batch": 6,
+        "unitName": "海会寺",
+        "relation": "part",
+        "scope": "海会寺琉璃大塔",
+        "source": "batch6",
+        "locator": "448 Ⅲ－151 海会寺 明至清 山西省阳城县"
+      }
+    ],
+    "haihui_small": [
+      {
+        "batch": 6,
+        "unitName": "海会寺",
+        "relation": "part",
+        "scope": "海会寺舍利小塔",
+        "source": "batch6",
+        "locator": "448 Ⅲ－151 海会寺 明至清 山西省阳城县"
+      }
+    ],
+    "huayan_bojia": [
+      {
+        "batch": 1,
+        "unitName": "华严寺",
+        "relation": "part",
+        "scope": "华严寺薄伽教藏殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 华严寺"
+      }
+    ],
+    "huayan_daxiong": [
+      {
+        "batch": 1,
+        "unitName": "华严寺",
+        "relation": "part",
+        "scope": "华严寺大雄宝殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 华严寺"
+      }
+    ],
+    "jiahuiguan_east": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆东楼",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "jiahuiguan_gate": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆门楼戏楼",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "jiahuiguan_west": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆西楼",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "kaiyuan_bell": [
+      {
+        "batch": 3,
+        "unitName": "开元寺钟楼",
+        "relation": "part",
+        "scope": "正定开元寺钟楼",
+        "source": "batch3",
+        "locator": "PDF 第13页 · 开元寺钟楼",
+        "badgeScope": "钟楼"
+      }
+    ],
+    "kaiyuan_xumi": [
+      {
+        "batch": 6,
+        "unitName": "开元寺须弥塔",
+        "relation": "merged",
+        "scope": "正定开元寺须弥塔",
+        "source": "batch6",
+        "locator": "合并项目第36项 · 开元寺须弥塔",
+        "badgeScope": "须弥塔",
+        "parent": {
+          "unitName": "开元寺钟楼",
+          "batch": 3
+        },
+        "note": "须弥塔在第六批与第三批开元寺钟楼合并，合并后名称为开元寺。"
+      }
+    ],
+    "lingyin_east_pillar": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺东经幢",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "lingyin_east_tower": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺东石塔",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "lingyin_west_pillar": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺西经幢",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "lingyin_west_tower": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺西石塔",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "longxing_mani": [
+      {
+        "batch": 1,
+        "unitName": "隆兴寺",
+        "relation": "part",
+        "scope": "隆兴寺摩尼殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 隆兴寺"
+      }
+    ],
+    "longxing_zhuanlun": [
+      {
+        "batch": 1,
+        "unitName": "隆兴寺",
+        "relation": "part",
+        "scope": "隆兴寺转轮藏阁",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 隆兴寺"
+      }
+    ],
+    "luohan_east": [
+      {
+        "batch": 4,
+        "unitName": "罗汉院双塔及正殿遗址",
+        "relation": "part",
+        "scope": "罗汉院东塔",
+        "source": "batch4",
+        "locator": "PDF 第23页 · 罗汉院双塔及正殿遗址"
+      }
+    ],
+    "luohan_hall_ruins": [
+      {
+        "batch": 4,
+        "unitName": "罗汉院双塔及正殿遗址",
+        "relation": "part",
+        "scope": "罗汉院正殿遗址",
+        "source": "batch4",
+        "locator": "PDF 第23页 · 罗汉院双塔及正殿遗址"
+      }
+    ],
+    "luohan_west": [
+      {
+        "batch": 4,
+        "unitName": "罗汉院双塔及正殿遗址",
+        "relation": "part",
+        "scope": "罗汉院西塔",
+        "source": "batch4",
+        "locator": "PDF 第23页 · 罗汉院双塔及正殿遗址"
+      }
+    ],
+    "shanhua_daxiong": [
+      {
+        "batch": 1,
+        "unitName": "善化寺",
+        "relation": "part",
+        "scope": "善化寺大雄宝殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 善化寺"
+      }
+    ],
+    "shanhua_puxian": [
+      {
+        "batch": 1,
+        "unitName": "善化寺",
+        "relation": "part",
+        "scope": "善化寺普贤阁",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 善化寺"
+      }
+    ],
+    "shanhua_sansheng": [
+      {
+        "batch": 1,
+        "unitName": "善化寺",
+        "relation": "part",
+        "scope": "善化寺三圣殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 善化寺"
+      }
+    ],
+    "xian_bell": [
+      {
+        "batch": 4,
+        "unitName": "西安钟楼、鼓楼",
+        "relation": "part",
+        "scope": "西安钟楼",
+        "source": "batch4",
+        "locator": "PDF 第25页 · 西安钟楼、鼓楼"
+      }
+    ],
+    "xian_drum": [
+      {
+        "batch": 4,
+        "unitName": "西安钟楼、鼓楼",
+        "relation": "part",
+        "scope": "西安鼓楼",
+        "source": "batch4",
+        "locator": "PDF 第25页 · 西安钟楼、鼓楼"
+      }
+    ],
+    "xitai_aohu": [
+      {
+        "batch": 6,
+        "unitName": "宁海古戏台",
+        "relation": "part",
+        "scope": "岙胡胡氏宗祠戏台",
+        "source": "batch6",
+        "locator": "557 Ⅲ－260 宁海古戏台 清至民国 浙江省宁海县"
+      }
+    ],
+    "xitai_chenghuang": [
+      {
+        "batch": 6,
+        "unitName": "宁海古戏台",
+        "relation": "part",
+        "scope": "宁海城隍庙戏台",
+        "source": "batch6",
+        "locator": "557 Ⅲ－260 宁海古戏台 清至民国 浙江省宁海县"
+      }
+    ],
+    "yongzuo_wenfeng": [
+      {
+        "batch": 6,
+        "unitName": "永祚寺",
+        "relation": "part",
+        "scope": "永祚寺文峰塔",
+        "source": "batch6",
+        "locator": "467 Ⅲ－170 永祚寺 明至清 山西省太原市"
+      }
+    ],
+    "yongzuo_xuanwen": [
+      {
+        "batch": 6,
+        "unitName": "永祚寺",
+        "relation": "part",
+        "scope": "永祚寺宣文塔",
+        "source": "batch6",
+        "locator": "467 Ⅲ－170 永祚寺 明至清 山西省太原市"
+      }
+    ],
+    "yuanqi_hall": [
+      {
+        "batch": 5,
+        "unitName": "原起寺",
+        "relation": "part",
+        "scope": "原起寺大雄宝殿",
+        "source": "batch5",
+        "locator": "PDF 第12页 · 原起寺"
+      }
+    ],
+    "yuanqi_qinglong": [
+      {
+        "batch": 5,
+        "unitName": "原起寺",
+        "relation": "part",
+        "scope": "原起寺青龙塔",
+        "source": "batch5",
+        "locator": "PDF 第12页 · 原起寺"
+      }
+    ],
+    "zhuozhou_yunju": [
+      {
+        "batch": 5,
+        "unitName": "涿州双塔",
+        "relation": "part",
+        "scope": "涿州云居寺塔",
+        "source": "batch5",
+        "locator": "PDF 第11页 · 涿州双塔"
+      }
+    ],
+    "zhuozhou_zhidu": [
+      {
+        "batch": 5,
+        "unitName": "涿州双塔",
+        "relation": "part",
+        "scope": "涿州智度寺塔",
+        "source": "batch5",
+        "locator": "PDF 第11页 · 涿州双塔"
+      }
     ]
   },
   "untagged": {
@@ -5913,6 +6308,14 @@
         "https://www.hasedera.or.jp/guide/"
       ],
       "checkedAt": "2026-10-12"
+    },
+    "dule_gate": {
+      "status": "unconfirmed",
+      "reason": "现存山门属于寺院但原登记范围未逐单体核对，暂不转授国保标签。"
+    },
+    "shanhua_gate": {
+      "status": "unconfirmed",
+      "reason": "现存山门属于寺院但原登记范围未逐单体核对，暂不转授国保标签。"
     }
   }
 }));

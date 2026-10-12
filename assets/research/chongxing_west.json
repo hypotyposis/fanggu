@@ -1,0 +1,66 @@
+{
+  "id": "chongxing_west",
+  "subject": "崇兴寺西塔",
+  "sources": [
+    {
+      "title": "File:The West Pagoda of Chongxing Temple 02 2015-09.JPG",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG/1280px-The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "page": "https://commons.wikimedia.org/wiki/File:The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG",
+      "width": 1200,
+      "height": 1806,
+      "author": "猫猫的日记本",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "date": "2015-09-07 10:43:47",
+      "id": "ln_chongxing",
+      "file": "assets/references/ln_chongxing-candidate4.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG/1280px-The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ln_chongxing-candidate4.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/ln_chongxing-candidate4.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 崇兴寺西塔. ONLY the western octagonal THIRTEEN-tier dense-eaves brick pagoda, preserve its exact brick sculpture and full finial. Complete subject only, full base and apex; portrait pagodas, landscape halls.",
+  "generated_file": "assets/generated/chongxing_west.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-ff319148-5616-448b-9878-0386cc433f4f.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "崇兴寺西塔 · 塔身现貌",
+    "辽代晚期"
+  ],
+  "historical_sources": [
+    {
+      "title": "崇兴寺双塔",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/C6DB74C77FCD45C2BAA94B7A924CCF78/index.shtml",
+      "publisher": "辽宁省文化和旅游厅文物管理处",
+      "note": "核读八角十三层、砖雕、辽晚期形制判断与元明清维修；不采用唐建等附会传说。",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "25366927209e4ef803af4f46e63a2e9be4739765001da36263d97038e8d51cf6",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "25366927209e4ef803af4f46e63a2e9be4739765001da36263d97038e8d51cf6",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "7abda3a15670a57d0214ac4b830dbd8dd5219a9756d37f5e87005b43e6446e9e"
+  }
+}

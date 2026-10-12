@@ -49,6 +49,7 @@ test('iOS curations exports match the source lists in every language', () => {
       const entry = translated[list.id] || {};
       assert.equal(native.id, list.id, language);
       assert.equal(native.kind, list.kind, `${language} ${list.id}`);
+      assert.equal(native.legacySiteID, list.legacySiteID || null, `${language} ${list.id}.legacySiteID`);
       assert.deepEqual(native.items, list.items, `${language} ${list.id} must keep the same members in order`);
       assert.equal(native.kindName, terms.curationKinds?.[list.kind] || kinds[list.kind], `${language} ${list.id}.kindName`);
       for (const field of ['name', 'eyebrow', 'lede', 'note']) {
@@ -59,4 +60,11 @@ test('iOS curations exports match the source lists in every language', () => {
   }
   const english = JSON.parse(read(exportFile('en')));
   assert.deepEqual(english.map(list => list.id), curations.map(list => list.id));
+});
+
+test('a building collection must identify its preserved original without including it as a member', () => {
+  const base = { id: 'x', kind: 'collection', name: 'n', lede: 'l', items: ['nanchan', 'foguang'] };
+  assert.throws(() => validate([base], siteIDs), /原集合/);
+  assert.throws(() => validate([{ ...base, legacySiteID: 'missing' }], siteIDs), /原集合/);
+  assert.throws(() => validate([{ ...base, legacySiteID: 'nanchan' }], siteIDs), /原集合/);
 });

@@ -12039,6 +12039,893 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "chongsheng_north": {
+    "src": "assets/colored-transparent-avif/chongsheng_north.avif",
+    "originalSrc": "assets/colored/chongsheng_north.png",
+    "transparentSrc": "assets/colored-transparent/chongsheng_north.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇圣寺北塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/chongsheng_north.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Three_Pagodas_Front_View.jpg",
+        "author": "Tdxiang",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-04-21（首次上传）"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Left_leaning_Pagoda.JPG",
+        "author": "Tdxiang",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-04-21（首次上传）"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+        "author": "wanghongliu",
+        "license": "CC BY-SA 3.0",
+        "date": "2002-05-16"
+      }
+    ]
+  },
+  "chongsheng_qianxun": {
+    "src": "assets/colored-transparent-avif/chongsheng_qianxun.avif",
+    "originalSrc": "assets/colored/chongsheng_qianxun.png",
+    "transparentSrc": "assets/colored-transparent/chongsheng_qianxun.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇圣寺千寻塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/chongsheng_qianxun.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Three_Pagodas_Front_View.jpg",
+        "author": "Tdxiang",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-04-21（首次上传）"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Left_leaning_Pagoda.JPG",
+        "author": "Tdxiang",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-04-21（首次上传）"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+        "author": "wanghongliu",
+        "license": "CC BY-SA 3.0",
+        "date": "2002-05-16"
+      }
+    ]
+  },
+  "chongsheng_south": {
+    "src": "assets/colored-transparent-avif/chongsheng_south.avif",
+    "originalSrc": "assets/colored/chongsheng_south.png",
+    "transparentSrc": "assets/colored-transparent/chongsheng_south.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇圣寺南塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/chongsheng_south.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Three_Pagodas_Front_View.jpg",
+        "author": "Tdxiang",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-04-21（首次上传）"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Left_leaning_Pagoda.JPG",
+        "author": "Tdxiang",
+        "license": "CC BY-SA 3.0",
+        "date": "2007-04-21（首次上传）"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+        "author": "wanghongliu",
+        "license": "CC BY-SA 3.0",
+        "date": "2002-05-16"
+      }
+    ]
+  },
+  "chongxing_east": {
+    "src": "assets/colored-transparent-avif/chongxing_east.avif",
+    "originalSrc": "assets/colored/chongxing_east.png",
+    "transparentSrc": "assets/colored-transparent/chongxing_east.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇兴寺东塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/chongxing_east.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_East_Pagoda_of_Chongxing_Temple_01_2015-09.JPG",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "date": "2015-09-07 10:56:23"
+      }
+    ]
+  },
+  "chongxing_west": {
+    "src": "assets/colored-transparent-avif/chongxing_west.avif",
+    "originalSrc": "assets/colored/chongxing_west.png",
+    "transparentSrc": "assets/colored-transparent/chongxing_west.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "崇兴寺西塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/chongxing_west.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_West_Pagoda_of_Chongxing_Temple_02_2015-09.JPG",
+        "author": "猫猫的日记本",
+        "license": "CC BY-SA 4.0",
+        "date": "2015-09-07 10:43:47"
+      }
+    ]
+  },
+  "dule_gate": {
+    "src": "assets/colored-transparent-avif/dule_gate.avif",
+    "originalSrc": "assets/colored/dule_gate.png",
+    "transparentSrc": "assets/colored-transparent/dule_gate.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "独乐寺山门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/dule_gate.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3AThe%20Shan%20Gate%20of%20Dule%20Temple.JPG",
+        "author": "Xin（Halazhang）",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "dule_guanyin": {
+    "src": "assets/colored-transparent-avif/dule_guanyin.avif",
+    "originalSrc": "assets/colored/dule_guanyin.png",
+    "transparentSrc": "assets/colored-transparent/dule_guanyin.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "独乐寺观音阁 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/dule_guanyin.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E7%8B%AC%E4%B9%90%E5%AF%BA%E8%BE%BD%E4%BB%A3%E8%A7%82%E9%9F%B3%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+        "author": "Patrick20242023",
+        "license": "CC BY-SA 4.0",
+        "date": "未知"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E7%8B%AC%E4%B9%90%E5%AF%BA%E8%A7%82%E9%9F%B3%E9%98%81%E6%AD%A3%E9%9D%A22018.jpg",
+        "author": "ScareCriterion12",
+        "license": "CC BY-SA 4.0",
+        "date": "未知"
+      }
+    ]
+  },
+  "haihui_large": {
+    "src": "assets/colored-transparent-avif/haihui_large.avif",
+    "originalSrc": "assets/colored/haihui_large.png",
+    "transparentSrc": "assets/colored-transparent/haihui_large.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "海会寺琉璃大塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/haihui_large.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Haihui_Temple_(Shanxi).JPG",
+        "author": "Underbar dk",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "haihui_small": {
+    "src": "assets/colored-transparent-avif/haihui_small.avif",
+    "originalSrc": "assets/colored/haihui_small.png",
+    "transparentSrc": "assets/colored-transparent/haihui_small.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "海会寺舍利小塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/haihui_small.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Haihui_Temple_(Shanxi).JPG",
+        "author": "Underbar dk",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "huayan_bojia": {
+    "src": "assets/colored-transparent-avif/huayan_bojia.avif",
+    "originalSrc": "assets/colored/huayan_bojia.png",
+    "transparentSrc": "assets/colored-transparent/huayan_bojia.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "华严寺薄伽教藏殿 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/huayan_bojia.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A%E5%8D%8E%E4%B8%A5%E5%AF%BA%E8%96%84%E4%BC%BD%E6%95%99%E8%97%8F%E6%AE%BF%E9%9B%A8%E5%90%8E%E6%AD%A3%E9%9D%A2.jpg",
+        "author": "Patrick20242023",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "huayan_daxiong": {
+    "src": "assets/colored-transparent-avif/huayan_daxiong.avif",
+    "originalSrc": "assets/colored/huayan_daxiong.png",
+    "transparentSrc": "assets/colored-transparent/huayan_daxiong.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "华严寺大雄宝殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/huayan_daxiong.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Datong_Huayan_Si_2013.08.29_08-27-51.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "未知"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:华严寺大雄宝殿月台上望向雨中的大雄宝殿.jpg",
+        "author": "Patrick20242023",
+        "license": "CC BY-SA 4.0",
+        "date": "未知"
+      }
+    ]
+  },
+  "jiahuiguan_east": {
+    "src": "assets/colored-transparent-avif/jiahuiguan_east.avif",
+    "originalSrc": "assets/colored/jiahuiguan_east.png",
+    "transparentSrc": "assets/colored-transparent/jiahuiguan_east.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "郏县山陕会馆东楼 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jiahuiguan_east.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jiahuiguan_gate": {
+    "src": "assets/colored-transparent-avif/jiahuiguan_gate.avif",
+    "originalSrc": "assets/colored/jiahuiguan_gate.png",
+    "transparentSrc": "assets/colored-transparent/jiahuiguan_gate.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "郏县山陕会馆门楼戏楼 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/jiahuiguan_gate.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "jiahuiguan_west": {
+    "src": "assets/colored-transparent-avif/jiahuiguan_west.avif",
+    "originalSrc": "assets/colored/jiahuiguan_west.png",
+    "transparentSrc": "assets/colored-transparent/jiahuiguan_west.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "郏县山陕会馆西楼 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/jiahuiguan_west.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "kaiyuan_bell": {
+    "src": "assets/colored-transparent-avif/kaiyuan_bell.avif",
+    "originalSrc": "assets/colored/kaiyuan_bell.png",
+    "transparentSrc": "assets/colored-transparent/kaiyuan_bell.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "正定开元寺钟楼 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/kaiyuan_bell.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "kaiyuan_xumi": {
+    "src": "assets/colored-transparent-avif/kaiyuan_xumi.avif",
+    "originalSrc": "assets/colored/kaiyuan_xumi.png",
+    "transparentSrc": "assets/colored-transparent/kaiyuan_xumi.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "正定开元寺须弥塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/kaiyuan_xumi.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "lingyin_east_pillar": {
+    "src": "assets/colored-transparent-avif/lingyin_east_pillar.avif",
+    "originalSrc": "assets/colored/lingyin_east_pillar.png",
+    "transparentSrc": "assets/colored-transparent/lingyin_east_pillar.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "灵隐寺东经幢 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/lingyin_east_pillar.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Dhvaja%20of%20Lingyin%20Temple%2002.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "lingyin_east_tower": {
+    "src": "assets/colored-transparent-avif/lingyin_east_tower.avif",
+    "originalSrc": "assets/colored/lingyin_east_tower.png",
+    "transparentSrc": "assets/colored-transparent/lingyin_east_tower.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "灵隐寺东石塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/lingyin_east_tower.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Pagodas%20of%20Lingyin%20Temple%2002.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "lingyin_west_pillar": {
+    "src": "assets/colored-transparent-avif/lingyin_west_pillar.avif",
+    "originalSrc": "assets/colored/lingyin_west_pillar.png",
+    "transparentSrc": "assets/colored-transparent/lingyin_west_pillar.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "灵隐寺西经幢 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/lingyin_west_pillar.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Dhvaja%20of%20Lingyin%20Temple%2001.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "lingyin_west_tower": {
+    "src": "assets/colored-transparent-avif/lingyin_west_tower.avif",
+    "originalSrc": "assets/colored/lingyin_west_tower.png",
+    "transparentSrc": "assets/colored-transparent/lingyin_west_tower.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "灵隐寺西石塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/lingyin_west_tower.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Pagodas%20of%20Lingyin%20Temple%2001.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "longxing_mani": {
+    "src": "assets/colored-transparent-avif/longxing_mani.avif",
+    "originalSrc": "assets/colored/longxing_mani.png",
+    "transparentSrc": "assets/colored-transparent/longxing_mani.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "隆兴寺摩尼殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/longxing_mani.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20250118_Longxing_Temple_-_Mani_Hall_01.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "date": "未单独注明；来源照片标示2025年"
+      }
+    ]
+  },
+  "longxing_zhuanlun": {
+    "src": "assets/colored-transparent-avif/longxing_zhuanlun.avif",
+    "originalSrc": "assets/colored/longxing_zhuanlun.png",
+    "transparentSrc": "assets/colored-transparent/longxing_zhuanlun.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "隆兴寺转轮藏阁 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/longxing_zhuanlun.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3A20250118%20Longxing%20Temple%20-%20Pavilion%20of%20Zhuanlunzang%2001.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "luohan_east": {
+    "src": "assets/colored-transparent-avif/luohan_east.avif",
+    "originalSrc": "assets/colored/luohan_east.png",
+    "transparentSrc": "assets/colored-transparent/luohan_east.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "罗汉院东塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/luohan_east.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:苏州罗汉院双塔及正殿遗址.jpg",
+        "author": "Acot一杯茶",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "luohan_hall_ruins": {
+    "src": "assets/colored-transparent-avif/luohan_hall_ruins.avif",
+    "originalSrc": "assets/colored/luohan_hall_ruins.png",
+    "transparentSrc": "assets/colored-transparent/luohan_hall_ruins.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "罗汉院正殿遗址 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/luohan_hall_ruins.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:苏州罗汉院双塔及正殿遗址.jpg",
+        "author": "Acot一杯茶",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "luohan_west": {
+    "src": "assets/colored-transparent-avif/luohan_west.avif",
+    "originalSrc": "assets/colored/luohan_west.png",
+    "transparentSrc": "assets/colored-transparent/luohan_west.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "罗汉院西塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/luohan_west.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:苏州罗汉院双塔及正殿遗址.jpg",
+        "author": "Acot一杯茶",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "shanhua_daxiong": {
+    "src": "assets/colored-transparent-avif/shanhua_daxiong.avif",
+    "originalSrc": "assets/colored/shanhua_daxiong.png",
+    "transparentSrc": "assets/colored-transparent/shanhua_daxiong.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "善化寺大雄宝殿 · 设色图",
+    "width": 1448,
+    "height": 1086,
+    "tint": false,
+    "record": "assets/color-research/shanhua_daxiong.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3AShanhua%20Temple%201.jpg",
+        "author": "Zeus1234",
+        "license": "CC BY-SA 3.0"
+      }
+    ]
+  },
+  "shanhua_gate": {
+    "src": "assets/colored-transparent-avif/shanhua_gate.avif",
+    "originalSrc": "assets/colored/shanhua_gate.png",
+    "transparentSrc": "assets/colored-transparent/shanhua_gate.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "善化寺山门 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/shanhua_gate.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3ADatong%20Shanhua%20Si%202013.08.29%2012-22-47.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "shanhua_puxian": {
+    "src": "assets/colored-transparent-avif/shanhua_puxian.avif",
+    "originalSrc": "assets/colored/shanhua_puxian.png",
+    "transparentSrc": "assets/colored-transparent/shanhua_puxian.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "善化寺普贤阁 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/shanhua_puxian.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+        "author": "Patrick20242023",
+        "license": "CC BY-SA 4.0",
+        "date": "未知"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Datong_Shanhua_Si_2013.08.29_12-39-50.jpg",
+        "author": "Zhangzhugang",
+        "license": "CC BY-SA 3.0",
+        "date": "未知"
+      }
+    ]
+  },
+  "shanhua_sansheng": {
+    "src": "assets/colored-transparent-avif/shanhua_sansheng.avif",
+    "originalSrc": "assets/colored/shanhua_sansheng.png",
+    "transparentSrc": "assets/colored-transparent/shanhua_sansheng.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "善化寺三圣殿 · 设色图",
+    "width": 1517,
+    "height": 1037,
+    "tint": false,
+    "record": "assets/color-research/shanhua_sansheng.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3ADatong%20307.jpg",
+        "author": "G41rn8",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "xian_bell": {
+    "src": "assets/colored-transparent-avif/xian_bell.avif",
+    "originalSrc": "assets/colored/xian_bell.png",
+    "transparentSrc": "assets/colored-transparent/xian_bell.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "西安钟楼 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/xian_bell.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+        "author": "Gary Todd",
+        "license": "CC0 1.0",
+        "date": "2011-03-13"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_Drum_Tower_of_Xi%27an.JPG",
+        "author": "Wang Zhongyin（Bt4wang）",
+        "license": "CC BY-SA 4.0",
+        "date": "2010-06-23"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+        "author": "源義信",
+        "license": "CC BY-SA 4.0",
+        "date": "2023-10-09"
+      }
+    ]
+  },
+  "xian_drum": {
+    "src": "assets/colored-transparent-avif/xian_drum.avif",
+    "originalSrc": "assets/colored/xian_drum.png",
+    "transparentSrc": "assets/colored-transparent/xian_drum.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "西安鼓楼 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/xian_drum.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+        "author": "Gary Todd",
+        "license": "CC0 1.0",
+        "date": "2011-03-13"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:The_Drum_Tower_of_Xi%27an.JPG",
+        "author": "Wang Zhongyin（Bt4wang）",
+        "license": "CC BY-SA 4.0",
+        "date": "2010-06-23"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+        "author": "源義信",
+        "license": "CC BY-SA 4.0",
+        "date": "2023-10-09"
+      }
+    ]
+  },
+  "xitai_aohu": {
+    "src": "assets/colored-transparent-avif/xitai_aohu.avif",
+    "originalSrc": "assets/colored/xitai_aohu.png",
+    "transparentSrc": "assets/colored-transparent/xitai_aohu.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "岙胡胡氏宗祠戏台 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/xitai_aohu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Hu%27s_Ancestral_Temple_in_Aohu,_2017-05-29_05.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "date": "未知"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Hu%27s_Ancestral_Temple_in_Aohu,_2017-05-29_04.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0",
+        "date": "未知"
+      }
+    ]
+  },
+  "xitai_chenghuang": {
+    "src": "assets/colored-transparent-avif/xitai_chenghuang.avif",
+    "originalSrc": "assets/colored/xitai_chenghuang.png",
+    "transparentSrc": "assets/colored-transparent/xitai_chenghuang.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "宁海城隍庙戏台 · 设色图",
+    "width": 1535,
+    "height": 1025,
+    "tint": false,
+    "record": "assets/color-research/xitai_chenghuang.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File%3ANinghai%20Town%20God%20Temple%2C%202017-05-29%2003.jpg",
+        "author": "Siyuwj",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "yongzuo_wenfeng": {
+    "src": "assets/colored-transparent-avif/yongzuo_wenfeng.avif",
+    "originalSrc": "assets/colored/yongzuo_wenfeng.png",
+    "transparentSrc": "assets/colored-transparent/yongzuo_wenfeng.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "永祚寺文峰塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/yongzuo_wenfeng.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Wenfeng_Pagoda,_Shuang_Ta_Si_Temple_(10111274265).jpg",
+        "author": "Gary Todd from Xinzheng, China",
+        "license": "CC0 1.0"
+      }
+    ]
+  },
+  "yongzuo_xuanwen": {
+    "src": "assets/colored-transparent-avif/yongzuo_xuanwen.avif",
+    "originalSrc": "assets/colored/yongzuo_xuanwen.png",
+    "transparentSrc": "assets/colored-transparent/yongzuo_xuanwen.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "永祚寺宣文塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/yongzuo_xuanwen.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:Wenfeng_Pagoda,_Shuang_Ta_Si_Temple_(10111274265).jpg",
+        "author": "Gary Todd from Xinzheng, China",
+        "license": "CC0 1.0"
+      }
+    ]
+  },
+  "yuanqi_hall": {
+    "src": "assets/colored-transparent-avif/yuanqi_hall.avif",
+    "originalSrc": "assets/colored/yuanqi_hall.png",
+    "transparentSrc": "assets/colored-transparent/yuanqi_hall.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "原起寺大雄宝殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/yuanqi_hall.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_04.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "yuanqi_qinglong": {
+    "src": "assets/colored-transparent-avif/yuanqi_qinglong.avif",
+    "originalSrc": "assets/colored/yuanqi_qinglong.png",
+    "transparentSrc": "assets/colored-transparent/yuanqi_qinglong.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "原起寺青龙塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/yuanqi_qinglong.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_02.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_04.jpg",
+        "author": "Windmemories",
+        "license": "CC BY-SA 4.0"
+      }
+    ]
+  },
+  "zhuozhou_yunju": {
+    "src": "assets/colored-transparent-avif/zhuozhou_yunju.avif",
+    "originalSrc": "assets/colored/zhuozhou_yunju.png",
+    "transparentSrc": "assets/colored-transparent/zhuozhou_yunju.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "涿州云居寺塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zhuozhou_yunju.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+        "author": "Redpipe",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg",
+        "author": "Redpipe",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+        "author": "熊华明 / 国际在线",
+        "license": "版权所有；原图未声明开放许可"
+      },
+      {
+        "page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+        "author": "熊华明 / 国际在线",
+        "license": "版权所有；原图未声明开放许可"
+      }
+    ]
+  },
+  "zhuozhou_zhidu": {
+    "src": "assets/colored-transparent-avif/zhuozhou_zhidu.avif",
+    "originalSrc": "assets/colored/zhuozhou_zhidu.png",
+    "transparentSrc": "assets/colored-transparent/zhuozhou_zhidu.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "涿州智度寺塔 · 设色图",
+    "width": 1024,
+    "height": 1536,
+    "tint": false,
+    "record": "assets/color-research/zhuozhou_zhidu.json",
+    "references": [
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+        "author": "Redpipe",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "page": "https://commons.wikimedia.org/wiki/File:%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg",
+        "author": "Redpipe",
+        "license": "CC BY-SA 3.0"
+      },
+      {
+        "page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+        "author": "熊华明 / 国际在线",
+        "license": "版权所有；原图未声明开放许可"
+      },
+      {
+        "page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+        "author": "熊华明 / 国际在线",
+        "license": "版权所有；原图未声明开放许可"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

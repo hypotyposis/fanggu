@@ -1,0 +1,58 @@
+{
+  "id": "lingyin_east_tower",
+  "parent": "lingyin",
+  "name": "灵隐寺东石塔",
+  "subject": "灵隐寺东石塔",
+  "photo": "assets/references/lingyin_tower02-photo.jpg",
+  "sources": [
+    {
+      "id": "lingyin_tower02",
+      "photo": "assets/references/lingyin_tower02-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Pagodas%20of%20Lingyin%20Temple%2002.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/20260423_Stone_Pagodas_of_Lingyin_Temple_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure": "octagonal NINE-storey stone pagoda, missing historical finial, stepped stone base, no invented spire",
+  "materials": "weathered grey stone with dark carving recesses and light-grey repaired patches",
+  "dyn": "zhou",
+  "year": 960,
+  "era": "吴越 · 960年",
+  "yearLabel": "960",
+  "yearApprox": false,
+  "yearNote": "营建年代不代表现有全部修缮构件均属同年；经幢1035年迁建另述。",
+  "facts": [
+    "钱弘俶于960年重建灵隐寺时所立，吴越治下遗存。",
+    "八角九层仿木楼阁式实心石塔，保留塔刹缺失的现貌。",
+    "位于大雄宝殿前露台东侧，保留残损塔刹，不复原缺失顶部。"
+  ],
+  "phase": "delivery_ready",
+  "generation_count": 2,
+  "historical_sources": [
+    {
+      "title": "灵隐寻觅 | 承宋韵之脉 铸时代之魂",
+      "publisher": "杭州灵隐寺",
+      "url": "https://lingyinsi.org/detail_1050_15763.html"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 灵隐寺东石塔. octagonal NINE-storey stone pagoda, missing historical finial, stepped stone base, no invented spire. One stone pagoda only, preserve the actual missing finial and damaged eaves, portrait canvas.",
+  "line_submitted_at": "2026-10-12T09:20:20.316806+00:00",
+  "line": "assets/generated/lingyin_east_tower.png",
+  "color_prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 灵隐寺东石塔.\nPhotograph material observations: weathered grey stone with dark carving recesses and light-grey repaired patches. Single building only, preserve the input line composition.",
+  "line_received_at": "2026-10-12T09:22:57.609439+00:00",
+  "line_original": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-25524f40-747d-4138-83d4-cf369ec8f091.png",
+  "color_submitted_at": "2026-10-12T09:33:20.245166+00:00",
+  "color": "assets/colored/lingyin_east_tower.png",
+  "color_dimensions": [
+    1024,
+    1536
+  ],
+  "line_dimensions": [
+    1024,
+    1536
+  ],
+  "color_received_at": "2026-10-12T09:33:55.834384+00:00",
+  "color_original": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-49a57d2e-c1b4-46e8-915d-d7389e5e8d44.png"
+}

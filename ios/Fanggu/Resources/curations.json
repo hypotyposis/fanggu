@@ -12,7 +12,8 @@
       "guangren",
       "foguang",
       "tiantai"
-    ]
+    ],
+    "legacySiteID": null
   },
   {
     "id": "liao_eight",
@@ -21,16 +22,18 @@
     "name": "八大辽构",
     "eyebrow": "辽代木构 · 华北与东北",
     "lede": "辽代木构存世稀少，爱好者习称“八大辽构”：独乐寺观音阁与山门、奉国寺大雄殿、开善寺大雄殿、阁院寺文殊殿、华严寺薄伽教藏殿、善化寺大雄宝殿与应县木塔。",
-    "note": "独乐寺观音阁与山门在本库合为一条，故以七条对应八构。另有说法将已毁的宝坻广济寺三大士殿列入，本名录不计。",
+    "note": "八条分别对应八座现存木构。另有说法将已毁的宝坻广济寺三大士殿列入，本名录不计。",
     "items": [
       "geyuan",
-      "dule",
+      "dule_guanyin",
+      "dule_gate",
       "fengguo",
       "kaishan",
-      "huayan",
+      "huayan_bojia",
       "yingxian",
-      "shanhua"
-    ]
+      "shanhua_daxiong"
+    ],
+    "legacySiteID": null
   },
   {
     "id": "zhuozhang_valley",
@@ -44,12 +47,245 @@
       "longmen",
       "tiantai",
       "dayun",
-      "yuanqi",
+      "yuanqi_hall",
       "fotou",
+      "yuanqi_qinglong",
       "huilong",
       "chunhua",
       "jiutian",
       "xiayu"
-    ]
+    ],
+    "legacySiteID": null
+  },
+  {
+    "id": "chongsheng",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "崇圣寺三塔",
+    "eyebrow": "云南 · 大理",
+    "lede": "将崇圣寺三塔的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "chongsheng_north",
+      "chongsheng_qianxun",
+      "chongsheng_south"
+    ],
+    "legacySiteID": "chongsheng"
+  },
+  {
+    "id": "ln_chongxing",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "崇兴寺双塔",
+    "eyebrow": "辽宁北镇 · 崇兴寺",
+    "lede": "将崇兴寺双塔的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "chongxing_east",
+      "chongxing_west"
+    ],
+    "legacySiteID": "ln_chongxing"
+  },
+  {
+    "id": "dule",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "独乐寺",
+    "eyebrow": "天津 · 蓟州",
+    "lede": "将独乐寺的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "dule_gate",
+      "dule_guanyin"
+    ],
+    "legacySiteID": "dule"
+  },
+  {
+    "id": "sx_haihui",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "海会寺双塔",
+    "eyebrow": "山西阳城 · 大桥村海会寺塔院",
+    "lede": "将海会寺双塔的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "haihui_large",
+      "haihui_small"
+    ],
+    "legacySiteID": "sx_haihui"
+  },
+  {
+    "id": "huayan",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "华严寺",
+    "eyebrow": "山西大同 · 古城",
+    "lede": "将华严寺的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "huayan_bojia",
+      "huayan_daxiong"
+    ],
+    "legacySiteID": "huayan"
+  },
+  {
+    "id": "hn_jiahuiguan",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "郏县山陕会馆",
+    "eyebrow": "河南 · 郏县",
+    "lede": "将郏县山陕会馆的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "门楼兼戏楼保留为同一连体单元，两侧楼分别登记。东、西楼的钟鼓对应未详。",
+    "items": [
+      "jiahuiguan_east",
+      "jiahuiguan_gate",
+      "jiahuiguan_west"
+    ],
+    "legacySiteID": "hn_jiahuiguan"
+  },
+  {
+    "id": "kaiyuan",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "正定开元寺",
+    "eyebrow": "河北正定 · 古城",
+    "lede": "将正定开元寺的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "kaiyuan_bell",
+      "kaiyuan_xumi"
+    ],
+    "legacySiteID": "kaiyuan"
+  },
+  {
+    "id": "lingyin",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "灵隐寺石塔与经幢",
+    "eyebrow": "浙江杭州 · 灵隐寺",
+    "lede": "将灵隐寺石塔与经幢的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "lingyin_east_pillar",
+      "lingyin_east_tower",
+      "lingyin_west_pillar",
+      "lingyin_west_tower"
+    ],
+    "legacySiteID": "lingyin"
+  },
+  {
+    "id": "longxing",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "隆兴寺",
+    "eyebrow": "河北正定 · 古城",
+    "lede": "将隆兴寺的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "当前收录摩尼殿与转轮藏殿，不以971年铜观音的年代替代1997—1999年复建大悲阁的年代。",
+    "items": [
+      "longxing_mani",
+      "longxing_zhuanlun"
+    ],
+    "legacySiteID": "longxing"
+  },
+  {
+    "id": "luohanshuangta",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "罗汉院双塔与正殿遗址",
+    "eyebrow": "江苏苏州 · 定慧寺巷",
+    "lede": "将罗汉院双塔与正殿遗址的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "luohan_east",
+      "luohan_hall_ruins",
+      "luohan_west"
+    ],
+    "legacySiteID": "luohanshuangta"
+  },
+  {
+    "id": "shanhua",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "善化寺",
+    "eyebrow": "山西大同 · 南门",
+    "lede": "将善化寺的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "shanhua_daxiong",
+      "shanhua_gate",
+      "shanhua_puxian",
+      "shanhua_sansheng"
+    ],
+    "legacySiteID": "shanhua"
+  },
+  {
+    "id": "xianzhonggu",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "西安钟楼与鼓楼",
+    "eyebrow": "陕西西安 · 府城中心",
+    "lede": "将西安钟楼与鼓楼的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "xian_bell",
+      "xian_drum"
+    ],
+    "legacySiteID": "xianzhonggu"
+  },
+  {
+    "id": "xitai",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "宁海古戏台",
+    "eyebrow": "浙江宁海 · 祠庙",
+    "lede": "将宁海古戏台的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "当前收录岙胡胡氏宗祠与城隍庙戏台，不代表宁海全部古戏台。",
+    "items": [
+      "xitai_aohu",
+      "xitai_chenghuang"
+    ],
+    "legacySiteID": "xitai"
+  },
+  {
+    "id": "sx_yongzuo",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "永祚寺双塔",
+    "eyebrow": "山西 · 太原",
+    "lede": "将永祚寺双塔的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "yongzuo_wenfeng",
+      "yongzuo_xuanwen"
+    ],
+    "legacySiteID": "sx_yongzuo"
+  },
+  {
+    "id": "yuanqi",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "原起寺",
+    "eyebrow": "山西潞城 · 浊漳河畔 · 辛安村",
+    "lede": "将原起寺的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "yuanqi_hall",
+      "yuanqi_qinglong"
+    ],
+    "legacySiteID": "yuanqi"
+  },
+  {
+    "id": "zhuozhou",
+    "kind": "collection",
+    "kindName": "建筑群",
+    "name": "涿州双塔",
+    "eyebrow": "河北涿州 · 古城",
+    "lede": "将涿州双塔的已收录单体分别列出，各自保留年代、图版与到访记录。",
+    "note": "只统计本名录列出的单体；拆分前的集合记录在本页独立保留，不计入单体进度。",
+    "items": [
+      "zhuozhou_yunju",
+      "zhuozhou_zhidu"
+    ],
+    "legacySiteID": "zhuozhou"
   }
 ]

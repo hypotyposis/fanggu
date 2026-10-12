@@ -1,0 +1,114 @@
+{
+  "id": "xian_bell",
+  "subject": "西安钟楼",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "author": "Gary Todd",
+      "date": "2011-03-13",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/xianzhonggu-bell-alt-photo.jpg",
+      "role": "钟楼日间近正面，攒尖顶、三重檐及台基台阶"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Drum_Tower_of_Xi%27an.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/The_Drum_Tower_of_Xi%27an.JPG",
+      "author": "Wang Zhongyin（Bt4wang）",
+      "date": "2010-06-23",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-south-photo.jpg",
+      "role": "鼓楼长边南立面近斜视，长台基、正中券洞与横向屋脊；此面无双侧正面台阶"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "author": "源義信",
+      "date": "2023-10-09",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-front-photo.jpg",
+      "role": "鼓楼山面照片，只用于核对歇山屋顶与三道檐线；初次生成参考"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xianzhonggu-bell-alt-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/xianzhonggu-bell-alt-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 西安钟楼. square bell tower on a massive masonry platform with an arched passage, THREE roof eaves and pyramidal hipped roof, full front stairs. One building only. Use a portrait canvas for pagodas and landscape for halls. Entire apex, eaves and base must be uncut.",
+  "generated_file": "assets/generated/xian_bell.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-82228fd0-1737-4279-8b2f-8d625735d68a.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "西安钟楼 · 楼阁单体",
+    "万历十年迁建"
+  ],
+  "historical_sources": [
+    {
+      "title": "西安市钟楼、鼓楼保护规划编制项目竞争性磋商文件，第30页",
+      "url": "https://www.ccgp-shaanxi.gov.cn/gpx-bid-file/610101/gpx-template/2022/9/16/8a69c63182a325380183445762b3798d.pdf?accessCode=6710df08da6a2a882c1fda758e34170b",
+      "publisher": "西安市钟鼓楼保管所／陕西省政府采购网",
+      "date": "2022-08",
+      "supports": "钟楼三重四面攒尖、35.5米方形台基与四面券洞；鼓楼洪武十三年1380，台基52.98×38.5米长方形、南北券洞、面阔七间进深三间有周廊，二层重檐歇山并一层腰檐。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "西安地铁6号线站名探究",
+      "url": "https://xadfz.xa.gov.cn/xadq/yxxa/2081926328441991170.html",
+      "publisher": "西安市地方志办公室",
+      "supports": "钟楼洪武十七年1384始建于广济街口，万历十年1582迁现址；三层重檐、二层楼身和四角攒尖。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "Bell Tower, Drum Tower",
+      "url": "https://en.xa.gov.cn/CultureTravel/Attractions/1691691501245550594.html",
+      "publisher": "西安市人民政府英文网",
+      "date": "2019-01-31",
+      "supports": "钟楼1384始建、1582迁建；鼓楼早四年、清代1699与1740修葺；两楼用于报时。英文文中的鼓楼square base与专业保护规划相矛盾，台基形状依保管所规划及实照取长方形。",
+      "accessed": "2026-09-14"
+    },
+    {
+      "title": "西安钟楼",
+      "url": "https://zh.wikipedia.org/wiki/西安钟楼",
+      "supports": "钟楼坐标34.26101,108.94238；1582迁建重新建基座，楼体迁移沿革；以《钟楼东迁歌》转述辅助说明。"
+    },
+    {
+      "title": "西安鼓楼",
+      "url": "https://zh.wikipedia.org/wiki/西安鼓楼",
+      "supports": "鼓楼近似坐标34.26167,108.93861；现代陈列鼓属于展示设施。"
+    },
+    {
+      "title": "城墙鼓楼钟楼",
+      "url": "https://www.xakpw.com/single/36990",
+      "publisher": "西安市科学技术馆",
+      "note": "核读可检索正文，两楼初建、1582迁建新台基、屋顶和七间鼓楼。",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0379fdb74afc57bc207fcf3d97f7c9fa1e843285253adfad8826314f9da6b4e0",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "0379fdb74afc57bc207fcf3d97f7c9fa1e843285253adfad8826314f9da6b4e0",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "b6dcf8debb830d7f05279a7672ddbe43153d227a6a6a45ff094d71ea825d322e"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "longxing_zhuanlun",
+  "name": "隆兴寺转轮藏阁",
+  "subject": "隆兴寺转轮藏阁",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "input_images": [
+    "assets/generated/longxing_zhuanlun.png",
+    "assets/references/longxing_zhuanlun-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 隆兴寺转轮藏阁.\nPhotograph material observations: grey tiles, red-brown timber and muted red walls, grey masonry platform. Single building only, preserve the input line composition.",
+  "material_observations": [
+    "grey tiles, red-brown timber and muted red walls, grey masonry platform"
+  ],
+  "references": [
+    {
+      "id": "longxing_zhuanlun",
+      "photo": "assets/references/longxing_zhuanlun-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250118%20Longxing%20Temple%20-%20Pavilion%20of%20Zhuanlunzang%2001.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/20250118_Longxing_Temple_-_Pavilion_of_Zhuanlunzang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "role": "source_context_and_subject_photograph",
+      "file": "assets/references/longxing_zhuanlun-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/longxing_zhuanlun.json",
+  "output": "assets/colored/longxing_zhuanlun.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-97a84bb8-f8ef-465f-b3be-13a6859a6b28.png",
+  "width": 1536,
+  "height": 1024,
+  "completed_at": "2026-10-12T08:33:57.095873+00:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d2f8cc5c10e58f7bab62a93110170d7781441caa781c7cdfb2b08278ac18128b",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.369Z",
+    "sourceSha256": "d2f8cc5c10e58f7bab62a93110170d7781441caa781c7cdfb2b08278ac18128b",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "8b253966ae52bae4ea15b7244c045c8646927d1f5322c664c249a37b6cba2fe5",
+    "avifSha256": "0b74c3bb89c1dee9660474f1dc4b0d9065ae2005f102f9f6a46929cca620b97d"
+  }
+}

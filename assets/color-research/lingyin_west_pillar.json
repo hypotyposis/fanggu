@@ -1,0 +1,50 @@
+{
+  "id": "lingyin_west_pillar",
+  "name": "灵隐寺西经幢",
+  "subject": "灵隐寺西经幢",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "input_images": [
+    "assets/generated/lingyin_west_pillar.png",
+    "assets/references/lingyin_pillar01-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 灵隐寺西经幢.\nPhotograph material observations: weathered grey stone with dark carving recesses and light-grey repaired patches. Single building only, preserve the input line composition.",
+  "material_observations": [
+    "weathered grey stone with dark carving recesses and light-grey repaired patches"
+  ],
+  "references": [
+    {
+      "id": "lingyin_pillar01",
+      "photo": "assets/references/lingyin_pillar01-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Dhvaja%20of%20Lingyin%20Temple%2001.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/20260423_Stone_Dhvaja_of_Lingyin_Temple_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "role": "source_context_and_subject_photograph",
+      "file": "assets/references/lingyin_pillar01-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/lingyin_west_pillar.json",
+  "output": "assets/colored/lingyin_west_pillar.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-782cffc3-64ac-4fb6-8f1a-5ad6388865fc.png",
+  "width": 1024,
+  "height": 1536,
+  "completed_at": "2026-10-12T09:35:11.216236+00:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "01885ab8ae753b79478f9b0da5f17d823a1f89a9874dc062b98086069c02eea8",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.369Z",
+    "sourceSha256": "01885ab8ae753b79478f9b0da5f17d823a1f89a9874dc062b98086069c02eea8",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "d605e76e2d8c1a657ed5a26173cc210dd2780dd1896af3816db3578908ff6696",
+    "avifSha256": "b88bf80be9764cbf39009473ff96ea1c578bc5432d7713c81a5fad5f870edb2b"
+  }
+}

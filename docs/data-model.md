@@ -38,6 +38,7 @@
 | `lede`、`facts`、`quote` | string、string[]、string | 可含 `<b>` 等标签，导出 iOS 时去除 |
 | `caption` | [string, string] | 两项图注；若研究 JSON 有 `caption`，`plates.js` 会用那一组覆盖 |
 | `initialStatus` | `unvisited`、`visited`、`wishlist` | 默认 `unvisited`；只有用户明确指定才预设其他值；已有个人记录优先 |
+| `collectionOnly` | 可选布尔值 | 拆分前的集合 ID 为 `true`，继续承接旧记录，但原生单体目录、地图、年表与统计不包含它 |
 | `legacyNames`、`legacyPlaces` | string[] | 搜索别名与旧记录迁移名；地点别名不能宽到误配同名古迹 |
 | `tall` | bool | 竖版图版 |
 | `timelineLane` | string | 年表轨道，沿用现有实现支持的值 |
@@ -190,6 +191,8 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`region
 `catalog-en.json`、`catalog-ja.json` 与 `catalog.json` 条目一一对应、顺序相同；ID、年代、筛选键、坐标、图版、来源链接与国保批次不变，只替换展示文字：`name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 取 `i18n/<语言>.json` 的 `sites[id]`；`placeName`、`provinceName`、`countryName`、`regionName`、`dynastyName`、`typeNames` 与国保来源名取 `terms`；国保的 `unitName`、`scope`、`note` 逐项取译文。缺少译文的字段回退中文。专题名录同理导出为 `curations-en.json`、`curations-ja.json`，译文在 `i18n/<语言>.json` 的 `curations` 与 `terms.curationKinds`。字段约定见 [开发指南 · 多语言目录](development.md#多语言目录)。
 
 ## 个人记录 library.json
+
+建筑群在 `curations.js` 使用 `kind: 'collection'`；`items` 是已收录单体 ID，`legacySiteID` 是保留旧记录的 `collectionOnly` 条目。集合仍是目录元数据，个人记录保持在 `records[legacySiteID]`、`reviews[legacySiteID]`，不向单体复制，也不另加备份版本。集合页的整组今日到访仅为未到访成员生成记录，一次原子保存；整组撤销恢复原始记录或不存在的覆盖值，不修改评价。
 
 App 在本机 Application Support 下 `Fanggu/library.json` 保存 `LibraryData`（当前版本 4），所有读写经 `LibraryStore` 校验后原子写入。备份文件就是这份 JSON 加 `exportedAt`，键按字母序、带缩进。
 

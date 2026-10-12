@@ -1,0 +1,72 @@
+{
+  "id": "xian_drum",
+  "name": "西安鼓楼",
+  "subject": "西安鼓楼",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "input_images": [
+    "assets/generated/xian_drum.png",
+    "assets/references/xianzhonggu-drum-south-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 西安鼓楼.\nPhotograph material observations: grey brick platform, grey roof tiles, dark brown and red timber, subtle green-blue painted brackets. Single building only, preserve the input line composition.",
+  "material_observations": [
+    "grey brick platform, grey roof tiles, dark brown and red timber, subtle green-blue painted brackets"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Xi%27an_Bell_Tower_%26_Museum_%289912372766%29.jpg",
+      "author": "Gary Todd",
+      "date": "2011-03-13",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "reference_file": "assets/references/xianzhonggu-bell-alt-photo.jpg",
+      "role": "钟楼日间近正面，攒尖顶、三重檐及台基台阶",
+      "file": "assets/references/xianzhonggu-drum-south-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Drum_Tower_of_Xi%27an.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/The_Drum_Tower_of_Xi%27an.JPG",
+      "author": "Wang Zhongyin（Bt4wang）",
+      "date": "2010-06-23",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-south-photo.jpg",
+      "role": "鼓楼长边南立面近斜视，长台基、正中券洞与横向屋脊；此面无双侧正面台阶",
+      "file": "assets/references/xianzhonggu-drum-south-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/2023-10-09_Drum_Tower_of_Xi%27an_%28%E8%A5%BF%E5%AE%89%E9%BC%93%E6%A8%93%29_01.jpg",
+      "author": "源義信",
+      "date": "2023-10-09",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "reference_file": "assets/references/xianzhonggu-drum-front-photo.jpg",
+      "role": "鼓楼山面照片，只用于核对歇山屋顶与三道檐线；初次生成参考",
+      "file": "assets/references/xianzhonggu-drum-south-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/xian_drum.json",
+  "output": "assets/colored/xian_drum.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-a5c78722-7825-4ca5-8632-a101da5003e0.png",
+  "width": 1536,
+  "height": 1024,
+  "completed_at": "2026-10-12T08:16:08.416791+00:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cc6bbc95542b1a7c12279bd5c37219ace3f0867cdcf09df5b3a45e4bded31a8c",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.369Z",
+    "sourceSha256": "cc6bbc95542b1a7c12279bd5c37219ace3f0867cdcf09df5b3a45e4bded31a8c",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "41ccd6532c9023a27cf2f5055b12fec19677db1360bb0ee8ba248c3bf615fbaf",
+    "avifSha256": "7cc065153ca80832c5bae7f04a835e0333fe62bc8e620da0b5e0d4c628afd381"
+  }
+}

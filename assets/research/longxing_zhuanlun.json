@@ -1,0 +1,81 @@
+{
+  "id": "longxing_zhuanlun",
+  "subject": "隆兴寺转轮藏阁",
+  "sources": [
+    {
+      "id": "longxing_zhuanlun",
+      "photo": "assets/references/longxing_zhuanlun-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20250118%20Longxing%20Temple%20-%20Pavilion%20of%20Zhuanlunzang%2001.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/20250118_Longxing_Temple_-_Pavilion_of_Zhuanlunzang_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/longxing_zhuanlun-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/longxing_zhuanlun-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 隆兴寺转轮藏阁. three-bay TWO-storey wooden pavilion, two hipped-gabled roofs, complete balcony and base. One building only, entire roof and base, landscape canvas.",
+  "generated_file": "assets/generated/longxing_zhuanlun.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-617b6008-c894-4bab-b90f-afc997a5db3d.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "隆兴寺转轮藏阁 · 楼阁单体",
+    "北宋木构"
+  ],
+  "historical_sources": [
+    {
+      "title": "隆興寺",
+      "url": "https://zh.wikipedia.org/wiki/隆兴寺",
+      "publisher": "维基百科（中文）",
+      "note": "维基百科，二手来源；586始建、971扩建、摩尼殿1052与形制、1710赐额、大悲阁1940年前后重建据此",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "正定隆兴寺（湃客）",
+      "url": "https://www.thepaper.cn/newsDetail_forward_4265794",
+      "publisher": "澎湃新闻",
+      "note": "2021-10-01；摩尼殿面阔进深七间、四面抱厦、梁思成“孤例”评价，观音通高21.3米、42臂、开宝四年铸，转轮藏直径约7米、五跳八铺作，龙藏寺碑",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "保护千年古刹 传承历史文脉（闫起磊、巩志宏）",
+      "url": "https://paper.people.com.cn/hwbwap/html/2024-07/02/content_26066703.htm",
+      "publisher": "人民日报海外版",
+      "note": "2024-07-02；梁思成“宋画里所常见，而在遗建中尚未曾得到者”引文",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "正定隆兴寺：六处全国之最",
+      "url": "https://news.ycwb.com/2025-01/05/content_53164800.htm",
+      "publisher": "羊城晚报·金羊网",
+      "note": "转轮藏为现存时代最早、体量较大的一座之说，据搜索摘要，页面未逐字核对",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "d51c2eb60664a2d3bdbeb53e46277ce001f0a2d41244fb063491651acafc5116",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "d51c2eb60664a2d3bdbeb53e46277ce001f0a2d41244fb063491651acafc5116",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "b5258625e9f2a5b15b701dbcdedf55af132cf0e6d5bcff536beb7cb1d98e1767"
+  }
+}

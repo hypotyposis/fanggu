@@ -1,0 +1,57 @@
+{
+  "id": "kaiyuan_xumi",
+  "name": "正定开元寺须弥塔",
+  "subject": "正定开元寺须弥塔",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "input_images": [
+    "assets/generated/kaiyuan_xumi.png",
+    "assets/references/kaiyuan-tower-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 正定开元寺须弥塔.\nPhotograph material observations: grey-brown brick, dark grey projecting brick eaves. Single building only, preserve the input line composition.",
+  "material_observations": [
+    "grey-brown brick, dark grey projecting brick eaves"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg/960px-20250118_Xumi_Pagoda_of_Kaiyuan_Temple_02.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "role": "source_context_and_subject_photograph",
+      "file": "assets/references/kaiyuan-tower-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg/960px-20250118_Bell_Tower_of_Kaiyuan_Temple_01.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "role": "source_context_and_subject_photograph",
+      "file": "assets/references/kaiyuan-tower-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/kaiyuan_xumi.json",
+  "output": "assets/colored/kaiyuan_xumi.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-3d134143-9128-4924-8e3c-8c96e496449a.png",
+  "width": 1024,
+  "height": 1536,
+  "completed_at": "2026-10-12T08:13:39.247834+00:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "ad0148f889c3e790eff22ce235ceccbd8049613f47bec59b9ed41836d6eb7d51",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.369Z",
+    "sourceSha256": "ad0148f889c3e790eff22ce235ceccbd8049613f47bec59b9ed41836d6eb7d51",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "180ba1b76d77b5e06a1350532201be5619c5d29b6b4de90b0894dfb9ff273aa8",
+    "avifSha256": "7948c2cffbbdeda8d82486b811ec40d2d8f50b7aab22c0c754bf7e6952363487"
+  }
+}

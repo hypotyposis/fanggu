@@ -1,0 +1,94 @@
+{
+  "id": "zhuozhou_zhidu",
+  "subject": "涿州智度寺塔",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg/960px-%E4%BA%91%E5%B1%85%E5%AF%BA%E5%A1%94.jpg",
+      "reference_file": "assets/references/zhuozhou-yunju-photo.jpg",
+      "author": "Redpipe",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg/960px-%E6%99%BA%E5%BA%A6%E5%AF%BA%E5%A1%94.jpg",
+      "reference_file": "assets/references/zhuozhou-zhidu-photo.jpg",
+      "author": "Redpipe",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "source_page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "image_url": "https://p2.cri.cn/M00/72/47/rBABCWQ2cOeAANv8AAAAAAAAAAA118.6240x4160.jpg",
+      "reference_file": "assets/references/zhuozhou-zhidu-full-photo.jpg",
+      "author": "熊华明 / 国际在线",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "caption": "智度寺塔完整立面与底层"
+    },
+    {
+      "source_page": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "image_url": "https://p2.cri.cn/M00/72/3E/rBABCmQ2cQmAEiEXAAAAAAAAAAA602.4652x2617.jpg",
+      "reference_file": "assets/references/zhuozhou-twins-full-photo.jpg",
+      "author": "熊华明 / 国际在线",
+      "license": "版权所有；原图未声明开放许可",
+      "license_url": "https://hebei.cri.cn/2023-04-12/8a14f521-bc83-8878-1a7a-499fc466a41e.html",
+      "caption": "双塔全景；用于塔刹和基座轮廓"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zhuozhou-zhidu-full-photo.jpg",
+    "assets/references/zhuozhou-twins-full-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/zhuozhou-zhidu-full-photo.jpg",
+    "assets/references/zhuozhou-twins-full-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 涿州智度寺塔. single OCTAGONAL FIVE-storey hollow brick pagoda, preserve five eaves, blind timber windows and finial. One building only. Use portrait canvas for pagodas, landscape for halls. Leave full uncut base and roof apex. Image 3 is supplemental full twin-tower photograph for the complete finial and base only. Draw only 涿州智度寺塔.",
+  "generated_file": "assets/generated/zhuozhou_zhidu.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-187d7519-d2aa-49b2-b3ad-7241ceed49fc.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "涿州智度寺塔 · 塔身现貌",
+    "辽太平十一年"
+  ],
+  "historical_sources": [
+    {
+      "title": "河北省第一至六批全国重点文物保护单位简介 · 涿州双塔",
+      "url": "https://wenwu.hebei.gov.cn/system/2023/10/16/030257948.shtml",
+      "publisher": "河北省文物局",
+      "note": "五層与六層、八角楼阁、门窗与套筒结构；该页北塔记1092，与重熙说并存；2026-10-11 实际抓取全文并核读对应条目。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "做好双塔保护 展现千年古韵",
+      "url": "https://paper.people.com.cn/rmrb/images/2023-03/27/07/rmrb2023032707.pdf",
+      "publisher": "人民日报",
+      "note": "核读检索文本：智度寺1031、云居寺1037、两塔层数；与省文物局1092说并列，未选定北塔确年。",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "49a5ab21be6396aab580764ef45e4333fed55d8c9a0a4badb3a3fb771e1b13b9",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "49a5ab21be6396aab580764ef45e4333fed55d8c9a0a4badb3a3fb771e1b13b9",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ed555f1c36c111217280a0b620cb698f983fbc8eccdf1b250cc96dc87f873ec0"
+  }
+}

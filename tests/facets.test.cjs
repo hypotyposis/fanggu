@@ -113,16 +113,16 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
 });
 
 test('Jiangsu and Zhejiang additions cover bridges, stone pillars and early regional periods', () => {
-  assert.equal(find({ province: '浙江' }).length, 28);
-  assert.equal(find({ province: '江苏' }).length, 26);
+  assert.equal(find({ province: '浙江' }).length, 34);
+  assert.equal(find({ province: '江苏' }).length, 29);
   assert.deepEqual(find({ type: 'bridge', province: '浙江', status: 'wishlist' }), ['baziqiao', 'rulong']);
-  assert.deepEqual(find({ type: 'pillar', province: '浙江' }), ['lingyin', 'longxingchuang']);
+  assert.deepEqual(find({ type: 'pillar', province: '浙江' }), ['lingyin', 'lingyin_east_pillar', 'lingyin_west_pillar', 'longxingchuang']);
   assert(find({ type: 'pagoda' }).includes('lingyin'));
   assert.deepEqual(find({ dynasty: 'nan' }).sort(), ['xinchangdafo', 'yn_cuanyan', 'js_nanchao_stone'].sort());
   assert.deepEqual(find({ dynasty: 'jin' }), ['yn_cuanbaozi']);
   assert.deepEqual(find({ dynasty: 'qiuci' }), ['xj_kizil', 'xj_kumtura']);
-  assert.deepEqual(find({ dynasty: 'nanzhao' }), ['yn_shizhong']);
-  assert.deepEqual(find({ dynasty: 'dali' }), ['yn_duanshi']);
+  assert.deepEqual(find({ dynasty: 'nanzhao' }), ['chongsheng_qianxun', 'yn_shizhong']);
+  assert.deepEqual(find({ dynasty: 'dali' }), ['chongsheng_north', 'chongsheng_south', 'yn_duanshi']);
 });
 
 test('82 northern additions remain unvisited in the native catalogue', () => {
@@ -141,7 +141,7 @@ test('82 northern additions remain unvisited in the native catalogue', () => {
 });
 
 test('Shanxi screens are distinct from fortifications and additions remain unvisited', () => {
-  assert.equal(find({ province: '山西' }).length, 82);
+  assert.equal(find({ province: '山西' }).length, 94);
   assert.deepEqual(find({ province: '山西', type: 'screen' }), ['sx_jiulongbi']);
   assert(!find({ type: 'wall' }).includes('sx_jiulongbi'));
   assert.deepEqual(find({ province: '山西', type: 'screen', query: '影壁' }), ['sx_jiulongbi']);
@@ -154,7 +154,7 @@ test('Beijing and Tianjin expansion is searchable and exports unvisited defaults
   const batch = JSON.parse(fs.readFileSync(require.resolve('../assets/research/beijing-tianjin-batch.json'), 'utf8'));
   assert.equal(find({ province: '北京' }).length, 12);
   assert.deepEqual(find({ province: '北京', query: '云居寺北塔' }), ['bj_yunju_north']);
-  assert.equal(find({ province: '天津' }).length, 5);
+  assert.equal(find({ province: '天津' }).length, 7);
   assert.deepEqual(find({ province: '北京', type: 'bridge', query: '盧溝橋' }), ['bj_lugou']);
   assert.deepEqual(find({ province: '天津', type: 'stage', query: '戏剧博物馆' }), ['tj_guangdonghuiguan']);
   assert.deepEqual(find({ province: '天津', type: 'residence', query: '尊美堂' }), ['tj_shijia']);

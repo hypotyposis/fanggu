@@ -23,6 +23,7 @@ final class LocalizationUITests: XCTestCase {
             assertNoCharacters(matching: "\\p{Han}", in: app, screen: screen)
             capture(app, "en-\(screen)")
         }
+        app.reveal(app.buttons["language-settings"], attempts: 40)
         XCTAssertTrue(app.buttons["language-settings"].exists)
 
         app.buttons["Catalog"].tap()
@@ -55,6 +56,28 @@ final class LocalizationUITests: XCTestCase {
             XCTAssertTrue(app.staticTexts[title].waitForExistence(timeout: 5), title)
             assertNoCharacters(matching: simplified, in: app, screen: screen)
             capture(app, "ja-\(screen)")
+        }
+    }
+
+    func testBuildingCollectionIsLocalizedInEnglishAndJapanese() {
+        for (language, locale, actionTitle) in [
+            ("en", "en_US", "Record today’s visit for the group"),
+            ("ja", "ja_JP", "建築群をまとめて今日の訪問に記録")
+        ] {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest(site: "kaiyuan_xumi")
+            let chip = app.descendants(matching: .any)["curation-chip-kaiyuan"].firstMatch
+            XCTAssertTrue(chip.waitForExistence(timeout: 10))
+            app.reveal(chip)
+            chip.tap()
+            let action = app.buttons["record-collection-today"]
+            XCTAssertTrue(action.waitForExistence(timeout: 5))
+            XCTAssertEqual(action.label, actionTitle)
+            if language == "en" { assertNoCharacters(matching: "\\p{Han}", in: app, screen: "collection") }
+            capture(app, "\(language)-building-collection")
+            action.tap()
+            XCTAssertFalse(action.isEnabled, "One tap completes the catalogued collection")
+            app.terminate()
         }
     }
 

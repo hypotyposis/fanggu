@@ -1,0 +1,58 @@
+{
+  "id": "lingyin_west_pillar",
+  "subject": "灵隐寺西经幢",
+  "sources": [
+    {
+      "id": "lingyin_pillar01",
+      "photo": "assets/references/lingyin_pillar01-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20260423%20Stone%20Dhvaja%20of%20Lingyin%20Temple%2001.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/20260423_Stone_Dhvaja_of_Lingyin_Temple_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/lingyin_pillar01-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/lingyin_pillar01-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 灵隐寺西经幢. single octagonal dharani stone pillar, carved stacked base, long inscription shaft and successive carved cap tiers, preserve actual damage without inventing a pagoda. ONE complete stone monument, preserve its surviving damaged cap and stepped bases; portrait white canvas.",
+  "generated_file": "assets/generated/lingyin_west_pillar.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-ba46eeff-c69e-4033-9c74-d2bb5c83d412.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "灵隐寺西经幢 · 石经幢",
+    "吴越 · 969年"
+  ],
+  "historical_sources": [
+    {
+      "title": "灵隐寻觅 | 承宋韵之脉 铸时代之魂",
+      "publisher": "杭州灵隐寺",
+      "url": "https://lingyinsi.org/detail_1050_15763.html"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2d6abd322387e3e901a9e6fd2d44250a3f40d7cd7ec20909ed4504ecf142943b",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "2d6abd322387e3e901a9e6fd2d44250a3f40d7cd7ec20909ed4504ecf142943b",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "b1c3106ba78d893a6c15def8d5593e657c10660cdf518fca5c5959197c9b0093"
+  }
+}

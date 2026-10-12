@@ -6719,6 +6719,474 @@ const PLATES = {
       "长谷寺1650年再建本堂及本体悬造舞台",
       "1650年再建"
     ]
+  },
+  "chongsheng_north": {
+    "src": "assets/plates/chongsheng_north.png",
+    "alt": "崇圣寺北塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7d9db8",
+    "tint": false,
+    "caption": [
+      "崇圣寺北塔 · 塔身现貌",
+      "大理国时期"
+    ]
+  },
+  "chongsheng_qianxun": {
+    "src": "assets/plates/chongsheng_qianxun.png",
+    "alt": "崇圣寺千寻塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#b47f71",
+    "tint": false,
+    "caption": [
+      "崇圣寺千寻塔 · 塔身现貌",
+      "南诏时期"
+    ]
+  },
+  "chongsheng_south": {
+    "src": "assets/plates/chongsheng_south.png",
+    "alt": "崇圣寺南塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7d9db8",
+    "tint": false,
+    "caption": [
+      "崇圣寺南塔 · 塔身现貌",
+      "大理国时期"
+    ]
+  },
+  "chongxing_east": {
+    "src": "assets/plates/chongxing_east.png",
+    "alt": "崇兴寺东塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "崇兴寺东塔 · 塔身现貌",
+      "辽代晚期"
+    ]
+  },
+  "chongxing_west": {
+    "src": "assets/plates/chongxing_west.png",
+    "alt": "崇兴寺西塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "崇兴寺西塔 · 塔身现貌",
+      "辽代晚期"
+    ]
+  },
+  "dule_gate": {
+    "src": "assets/plates/dule_gate.png",
+    "alt": "独乐寺山门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "独乐寺山门 · 门楼与相连构件",
+      "辽统和二年重建"
+    ]
+  },
+  "dule_guanyin": {
+    "src": "assets/plates/dule_guanyin.png",
+    "alt": "独乐寺观音阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "独乐寺观音阁 · 楼阁单体",
+      "辽统和二年重建"
+    ]
+  },
+  "haihui_large": {
+    "src": "assets/plates/haihui_large.png",
+    "alt": "海会寺琉璃大塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "海会寺琉璃大塔 · 塔身现貌",
+      "明嘉靖至隆庆间"
+    ]
+  },
+  "haihui_small": {
+    "src": "assets/plates/haihui_small.png",
+    "alt": "海会寺舍利小塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "海会寺舍利小塔 · 塔身现貌",
+      "后梁龙德二年始建 · 宋代改修"
+    ]
+  },
+  "huayan_bojia": {
+    "src": "assets/plates/huayan_bojia.png",
+    "alt": "华严寺薄伽教藏殿 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "华严寺薄伽教藏殿 · 木构殿堂",
+      "辽重熙七年"
+    ]
+  },
+  "huayan_daxiong": {
+    "src": "assets/plates/huayan_daxiong.png",
+    "alt": "华严寺大雄宝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "华严寺大雄宝殿 · 木构殿堂",
+      "金天眷三年重建"
+    ]
+  },
+  "jiahuiguan_east": {
+    "src": "assets/plates/jiahuiguan_east.png",
+    "alt": "郏县山陕会馆东楼 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "郏县山陕会馆东楼 · 楼阁单体",
+      "清代 · 单体确年未详"
+    ]
+  },
+  "jiahuiguan_gate": {
+    "src": "assets/plates/jiahuiguan_gate.png",
+    "alt": "郏县山陕会馆门楼戏楼 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "郏县山陕会馆门楼戏楼 · 门楼与相连构件",
+      "清代 · 单体确年未详"
+    ]
+  },
+  "jiahuiguan_west": {
+    "src": "assets/plates/jiahuiguan_west.png",
+    "alt": "郏县山陕会馆西楼 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "郏县山陕会馆西楼 · 楼阁单体",
+      "清代 · 单体确年未详"
+    ]
+  },
+  "kaiyuan_bell": {
+    "src": "assets/plates/kaiyuan_bell.png",
+    "alt": "正定开元寺钟楼 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "正定开元寺钟楼 · 楼阁单体",
+      "唐代遗构 · 后世修葺"
+    ]
+  },
+  "kaiyuan_xumi": {
+    "src": "assets/plates/kaiyuan_xumi.png",
+    "alt": "正定开元寺须弥塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#d6ab5c",
+    "tint": false,
+    "caption": [
+      "正定开元寺须弥塔 · 塔身现貌",
+      "贞观十年始建"
+    ]
+  },
+  "lingyin_east_pillar": {
+    "src": "assets/plates/lingyin_east_pillar.png",
+    "alt": "灵隐寺东经幢 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "灵隐寺东经幢 · 石经幢",
+      "吴越 · 969年"
+    ]
+  },
+  "lingyin_east_tower": {
+    "src": "assets/plates/lingyin_east_tower.png",
+    "alt": "灵隐寺东石塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "灵隐寺东石塔 · 塔身现貌",
+      "吴越 · 960年"
+    ]
+  },
+  "lingyin_west_pillar": {
+    "src": "assets/plates/lingyin_west_pillar.png",
+    "alt": "灵隐寺西经幢 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "灵隐寺西经幢 · 石经幢",
+      "吴越 · 969年"
+    ]
+  },
+  "lingyin_west_tower": {
+    "src": "assets/plates/lingyin_west_tower.png",
+    "alt": "灵隐寺西石塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#8f8caa",
+    "tint": false,
+    "caption": [
+      "灵隐寺西石塔 · 塔身现貌",
+      "吴越 · 960年"
+    ]
+  },
+  "longxing_mani": {
+    "src": "assets/plates/longxing_mani.png",
+    "alt": "隆兴寺摩尼殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "隆兴寺摩尼殿 · 木构殿堂",
+      "北宋皇祐四年"
+    ]
+  },
+  "longxing_zhuanlun": {
+    "src": "assets/plates/longxing_zhuanlun.png",
+    "alt": "隆兴寺转轮藏阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "隆兴寺转轮藏阁 · 楼阁单体",
+      "北宋木构"
+    ]
+  },
+  "luohan_east": {
+    "src": "assets/plates/luohan_east.png",
+    "alt": "罗汉院东塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "罗汉院东塔 · 塔身现貌",
+      "北宋太平兴国七年起建"
+    ]
+  },
+  "luohan_hall_ruins": {
+    "src": "assets/plates/luohan_hall_ruins.png",
+    "alt": "罗汉院正殿遗址 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "罗汉院正殿遗址 · 宋代石柱与柱础局部",
+      "宋代石柱与柱础 · 1860年殿毁"
+    ]
+  },
+  "luohan_west": {
+    "src": "assets/plates/luohan_west.png",
+    "alt": "罗汉院西塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "罗汉院西塔 · 塔身现貌",
+      "北宋太平兴国七年起建"
+    ]
+  },
+  "shanhua_daxiong": {
+    "src": "assets/plates/shanhua_daxiong.png",
+    "alt": "善化寺大雄宝殿 · 线稿",
+    "width": 1448,
+    "height": 1086,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "善化寺大雄宝殿 · 木构殿堂",
+      "辽代遗构"
+    ]
+  },
+  "shanhua_gate": {
+    "src": "assets/plates/shanhua_gate.png",
+    "alt": "善化寺山门 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "善化寺山门 · 门楼与相连构件",
+      "金天会至皇统间"
+    ]
+  },
+  "shanhua_puxian": {
+    "src": "assets/plates/shanhua_puxian.png",
+    "alt": "善化寺普贤阁 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "善化寺普贤阁 · 楼阁单体",
+      "金贞元二年"
+    ]
+  },
+  "shanhua_sansheng": {
+    "src": "assets/plates/shanhua_sansheng.png",
+    "alt": "善化寺三圣殿 · 线稿",
+    "width": 1517,
+    "height": 1037,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "善化寺三圣殿 · 木构殿堂",
+      "金天会至皇统间重建"
+    ]
+  },
+  "xian_bell": {
+    "src": "assets/plates/xian_bell.png",
+    "alt": "西安钟楼 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "西安钟楼 · 楼阁单体",
+      "万历十年迁建"
+    ]
+  },
+  "xian_drum": {
+    "src": "assets/plates/xian_drum.png",
+    "alt": "西安鼓楼 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "西安鼓楼 · 楼阁单体",
+      "洪武十三年始建"
+    ]
+  },
+  "xitai_aohu": {
+    "src": "assets/plates/xitai_aohu.png",
+    "alt": "岙胡胡氏宗祠戏台 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "岙胡胡氏宗祠戏台 · 戏台与相连构件",
+      "清咸丰四年"
+    ]
+  },
+  "xitai_chenghuang": {
+    "src": "assets/plates/xitai_chenghuang.png",
+    "alt": "宁海城隍庙戏台 · 线稿",
+    "width": 1535,
+    "height": 1025,
+    "color": "#a6b0b4",
+    "tint": false,
+    "caption": [
+      "宁海城隍庙戏台 · 戏台与相连构件",
+      "民国二十四年重建"
+    ]
+  },
+  "yongzuo_wenfeng": {
+    "src": "assets/plates/yongzuo_wenfeng.png",
+    "alt": "永祚寺文峰塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "永祚寺文峰塔 · 塔身现貌",
+      "万历二十七年"
+    ]
+  },
+  "yongzuo_xuanwen": {
+    "src": "assets/plates/yongzuo_xuanwen.png",
+    "alt": "永祚寺宣文塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "永祚寺宣文塔 · 塔身现貌",
+      "万历四十年"
+    ]
+  },
+  "yuanqi_hall": {
+    "src": "assets/plates/yuanqi_hall.png",
+    "alt": "原起寺大雄宝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "原起寺大雄宝殿 · 木构殿堂",
+      "宋代遗构"
+    ]
+  },
+  "yuanqi_qinglong": {
+    "src": "assets/plates/yuanqi_qinglong.png",
+    "alt": "原起寺青龙塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#7aa899",
+    "tint": false,
+    "caption": [
+      "原起寺青龙塔 · 塔身现貌",
+      "北宋元祐二年"
+    ]
+  },
+  "zhuozhou_yunju": {
+    "src": "assets/plates/zhuozhou_yunju.png",
+    "alt": "涿州云居寺塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "涿州云居寺塔 · 塔身现貌",
+      "辽代 · 建年有异说"
+    ]
+  },
+  "zhuozhou_zhidu": {
+    "src": "assets/plates/zhuozhou_zhidu.png",
+    "alt": "涿州智度寺塔 · 线稿",
+    "width": 1024,
+    "height": 1536,
+    "color": "#c8442b",
+    "tint": false,
+    "caption": [
+      "涿州智度寺塔 · 塔身现貌",
+      "辽太平十一年"
+    ]
   }
 };
 

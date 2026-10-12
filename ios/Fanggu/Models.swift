@@ -51,6 +51,8 @@ struct Monument: Decodable, Identifiable, Hashable {
     let protection: [ProtectionEntry]
     /// Names and places in the other catalog languages, so any spelling finds the monument.
     let searchAliases: [String]
+    /// Original group entries remain decodable for old records, but are excluded from the single-building catalogue.
+    let collectionOnly: Bool?
 
     var accent: Color { Palette.dynasty(dynastyColor) }
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
@@ -77,6 +79,9 @@ struct Curation: Decodable, Identifiable, Hashable {
     let lede: String
     let note: String
     let items: [String]
+    let legacySiteID: String?
+
+    var isBuildingCollection: Bool { kind == "collection" }
 
     static func == (lhs: Curation, rhs: Curation) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }

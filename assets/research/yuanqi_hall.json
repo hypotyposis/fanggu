@@ -1,0 +1,72 @@
+{
+  "id": "yuanqi_hall",
+  "subject": "原起寺大雄宝殿",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/20260405_Yuanqi_Temple_02.jpg/960px-20260405_Yuanqi_Temple_02.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260405_Yuanqi_Temple_04.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20260405_Yuanqi_Temple_04.jpg/960px-20260405_Yuanqi_Temple_04.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yuanqi-hall-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/yuanqi-hall-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 原起寺大雄宝殿. single-storey three-bay hall, single hipped-gabled roof; preserve the actual side perspective; remove the neighbouring pagoda and front detached pavilion. One building only. Use a portrait canvas for pagodas and landscape for halls. Entire apex, eaves and base must be uncut.",
+  "generated_file": "assets/generated/yuanqi_hall.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-a73f01c1-d499-419d-9e70-2283111e17f8.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "原起寺大雄宝殿 · 木构殿堂",
+    "宋代遗构"
+  ],
+  "historical_sources": [
+    {
+      "title": "原起寺",
+      "url": "https://zh.wikipedia.org/wiki/%E5%8E%9F%E8%B5%B7%E5%AF%BA",
+      "publisher": "维基百科（中文），引连达《寻访山西古庙》2017、《全国重点文物保护单位·第一至第五批》2004、《山西古建筑地图（上）》2018",
+      "note": "维基百科，二手来源：天宝六年（747）创建、占地22.3×32.7米共729平方米、大雄宝殿三间四椽歇山、青龙宝塔八角七层高17米、元祐二年（1087）之说、铁人牵铁索、2001年国保年代为宋",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "·浊漳河·",
+      "url": "https://www.changzhi.gov.cn/ztzl/cjwmwz/wmdt/202603/t20260313_3146599.shtml",
+      "publisher": "长治日报，2026-03-13（长治市人民政府网转载）",
+      "note": "潞城至平顺段浊漳河谷古建筑群：10处国保、五代至清的乡村寺观序列",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "28cc99882db9cbcf19613cc229fca9bbec0c6b6399469845ebcda0fac939e52c",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "28cc99882db9cbcf19613cc229fca9bbec0c6b6399469845ebcda0fac939e52c",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "8038284c7a5b6cf24d9f8cbec966066a3a0585ed91e7ec099e0e104f88167315"
+  }
+}

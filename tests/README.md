@@ -81,3 +81,5 @@
 | `Fanggu/UITestLaunch.swift`（App 内） | DEBUG 专用启动参数 `-uiTestDisableAnimations`、`-uiTestOpenSite <id>`、`-uiTestOpenReview`，Release 构建编译掉 |
 
 `color-proof.test.cjs` 验证默认接入、人眼通过和瞬时待默认通过三个状态的审图标签；浏览器实际图像加载与背景检查另行执行。原生 `ExpansionUITests` 查看新增条目和中英日详情，`LocalizationTests` 覆盖新增日本地区搜索。
+
+`china-single.test.cjs` 核对多单体拆分后的旧 ID、建筑群成员、三语导出、单体年代与国保批次，以及来源和交付哈希；原生 `CurationTests` 验证整组原子保存、整组撤销、失败重试与旧备份保留，`CurationUITests` 验证集合页一次打卡和重启后的进度。

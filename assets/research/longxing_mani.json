@@ -1,0 +1,71 @@
+{
+  "id": "longxing_mani",
+  "subject": "隆兴寺摩尼殿",
+  "source_page": "https://commons.wikimedia.org/wiki/File:20250118_Longxing_Temple_-_Mani_Hall_01.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/20250118_Longxing_Temple_-_Mani_Hall_01.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/longxing-photo.jpg"
+  ],
+  "source_note": "2025年实景正面照片；移除树木遮挡及院落设施，以建筑对称结构补全檐角。",
+  "author": "Windmemories",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nLandscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room.\nSubject: 隆兴寺摩尼殿, Mani Hall, Longxing Temple in Zhengding. Preserve the broad double-eaved hip-and-gable mass and the distinctive central projecting gabled porch with curved eave; strong axial frontal symmetry. Remove trees masking the outer tips and use symmetry to reveal them. The low side wall surfaces should be virtually empty white, windows only simple structural lattice indication. Sparse roof ribs only, at most a dozen per roof plane; do not draw tile grids. No incense burner, signs or landscaping.",
+  "generated_file": "assets/generated/longxing_mani.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "historical_sources": [
+    {
+      "title": "隆興寺",
+      "url": "https://zh.wikipedia.org/wiki/隆兴寺",
+      "publisher": "维基百科（中文）",
+      "note": "维基百科，二手来源；586始建、971扩建、摩尼殿1052与形制、1710赐额、大悲阁1940年前后重建据此",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "正定隆兴寺（湃客）",
+      "url": "https://www.thepaper.cn/newsDetail_forward_4265794",
+      "publisher": "澎湃新闻",
+      "note": "2021-10-01；摩尼殿面阔进深七间、四面抱厦、梁思成“孤例”评价，观音通高21.3米、42臂、开宝四年铸，转轮藏直径约7米、五跳八铺作，龙藏寺碑",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "保护千年古刹 传承历史文脉（闫起磊、巩志宏）",
+      "url": "https://paper.people.com.cn/hwbwap/html/2024-07/02/content_26066703.htm",
+      "publisher": "人民日报海外版",
+      "note": "2024-07-02；梁思成“宋画里所常见，而在遗建中尚未曾得到者”引文",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "正定隆兴寺：六处全国之最",
+      "url": "https://news.ycwb.com/2025-01/05/content_53164800.htm",
+      "publisher": "羊城晚报·金羊网",
+      "note": "转轮藏为现存时代最早、体量较大的一座之说，据搜索摘要，页面未逐字核对",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "reused_from": "longxing",
+  "caption": [
+    "隆兴寺摩尼殿 · 木构殿堂",
+    "北宋皇祐四年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2ae51db56db72e33760a3fa90be56be23d43b7d84abf42ea18d8ac4d403af977",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "status": "complete",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "2ae51db56db72e33760a3fa90be56be23d43b7d84abf42ea18d8ac4d403af977",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "f582f17cfb839ad1aa3cbad6a2b439c27a0e56b5bc745352e9beb144a364ca2c"
+  }
+}

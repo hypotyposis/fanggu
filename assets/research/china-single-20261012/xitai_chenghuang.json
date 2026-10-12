@@ -1,0 +1,59 @@
+{
+  "id": "xitai_chenghuang",
+  "parent": "xitai",
+  "name": "宁海城隍庙戏台",
+  "subject": "宁海城隍庙戏台",
+  "photo": "assets/references/xitai_chenghuang-photo.jpg",
+  "sources": [
+    {
+      "id": "xitai_chenghuang",
+      "photo": "assets/references/xitai_chenghuang-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ANinghai%20Town%20God%20Temple%2C%202017-05-29%2003.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ninghai_Town_God_Temple%2C_2017-05-29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "structure": "the CENTER raised square theater stage, its single hipped-gabled dramatically curved tiled roof, open stage front, carved railings and lower supports exactly as photographed. Keep the directly ATTACHED central gatehouse immediately behind the stage where visible, but omit both long distant flanking audience galleries and surrounding courtyard. Complete the photographed connected stage unit.",
+  "materials": "grey roof tiles, worn red-brown wood, grey masonry and concrete lower supports, modest painted ornament",
+  "dyn": "modern",
+  "year": 1935,
+  "era": "民国二十四年重建",
+  "yearLabel": "1935年重建",
+  "yearApprox": false,
+  "yearNote": "1935年重建仪门、戏台和两厢，现存单体不使用689年创庙年代。",
+  "facts": [
+    "1935年大修重建戏台与仪门，戏台前上层改用铁柱，下层为水泥柱。",
+    "台面约高1.66米，单檐歇山顶；圆形藻井以螺旋线叠涩。",
+    "图版只绘戏台及相连中央门楼可见部分，两侧看楼不在所绘范围。"
+  ],
+  "phase": "delivery_ready",
+  "generation_count": 2,
+  "historical_sources": [
+    {
+      "title": "宁海城隍庙",
+      "url": "https://zh.wikipedia.org/wiki/宁海城隍庙",
+      "publisher": "维基百科，引用宁海地方建筑调查资料",
+      "note": "1935年重建戏台及铁柱的纪年引《中国古戏台调查》。"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 宁海城隍庙戏台. the CENTER raised square theater stage, its single hipped-gabled dramatically curved tiled roof, open stage front, carved railings and lower supports exactly as photographed. Keep the directly ATTACHED central gatehouse immediately behind the stage where visible, but omit both long distant flanking audience galleries and surrounding courtyard. Complete the photographed connected stage unit.. Complete connected stage unit, landscape composition, no text or labels.",
+  "line_submitted_at": "2026-10-12T09:20:20.458142+00:00",
+  "line": "assets/generated/xitai_chenghuang.png",
+  "color_prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 宁海城隍庙戏台.\nPhotograph material observations: grey roof tiles, worn red-brown wood, grey masonry and concrete lower supports, modest painted ornament. Single building only, preserve the input line composition.",
+  "line_received_at": "2026-10-12T09:22:20.070563+00:00",
+  "line_original": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-dbcdb29e-aee4-44a0-aa43-5bf85e16ef72.png",
+  "color_submitted_at": "2026-10-12T09:33:20.387926+00:00",
+  "color": "assets/colored/xitai_chenghuang.png",
+  "color_dimensions": [
+    1535,
+    1025
+  ],
+  "line_dimensions": [
+    1535,
+    1025
+  ],
+  "color_received_at": "2026-10-12T09:34:36.346548+00:00",
+  "color_original": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-e4d29071-3ade-4926-9bf7-b60add0a1a4a.png"
+}

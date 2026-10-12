@@ -18859,3 +18859,1436 @@ SITES.push(...[
     "tall": false
   }
 ]);
+
+// 中国多单体拆分：旧 ID 仅承接集合历史记录，新单体不继承到访状态。
+for (const site of SITES) {
+  if (["chongsheng","ln_chongxing","dule","sx_haihui","huayan","hn_jiahuiguan","kaiyuan","lingyin","longxing","luohanshuangta","shanhua","xianzhonggu","xitai","sx_yongzuo","yuanqi","zhuozhou"].includes(site.id)) site.collectionOnly = true;
+}
+SITES.push(...[
+  {
+    "id": "chongsheng_north",
+    "name": "崇圣寺北塔",
+    "short": "崇圣寺北塔",
+    "sub": "塔身现貌",
+    "dyn": "dali",
+    "tag": "大理",
+    "era": "大理国时期",
+    "year": 1000,
+    "yearLabel": "大理国（约）",
+    "yearApprox": true,
+    "yearNote": "1000仅作大理国时期约略排序点，确年未详。",
+    "placeKey": "dali",
+    "place": "云南 · 大理",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角十层密檐式砖塔，位于千寻塔西北侧。现存主体属大理国时期，不使用中央千寻塔的南诏年代。",
+    "facts": [
+      "八角十层密檐式砖塔，位于千寻塔西北侧。",
+      "现存主体属大理国时期，不使用中央千寻塔的南诏年代。",
+      "与南塔分别保存照片与个人记录。"
+    ],
+    "caption": [
+      "崇圣寺北塔 · 塔身现貌",
+      "大理国时期"
+    ],
+    "legacyNames": [
+      "大理崇圣寺三塔",
+      "崇圣寺三塔",
+      "大理崇圣寺三塔",
+      "崇圣寺三塔",
+      "大理三塔"
+    ]
+  },
+  {
+    "id": "chongsheng_qianxun",
+    "name": "崇圣寺千寻塔",
+    "short": "崇圣寺千寻塔",
+    "sub": "塔身现貌",
+    "dyn": "nanzhao",
+    "tag": "南诏",
+    "era": "南诏时期",
+    "year": 840,
+    "yearLabel": "9世纪（约）",
+    "yearApprox": true,
+    "yearNote": "840仅为南诏劝丰佑时期约略排序点，确年有异说。",
+    "placeKey": "dali",
+    "place": "云南 · 大理",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "方形十六层密檐砖塔，高约69米。一般系于南诏劝丰佑时期，确切建年存在不同记载。",
+    "facts": [
+      "方形十六层密檐砖塔，高约69米。",
+      "一般系于南诏劝丰佑时期，确切建年存在不同记载。",
+      "两侧南北小塔属大理国时期，不沿用千寻塔年代。"
+    ],
+    "caption": [
+      "崇圣寺千寻塔 · 塔身现貌",
+      "南诏时期"
+    ],
+    "legacyNames": [
+      "大理崇圣寺三塔",
+      "崇圣寺三塔",
+      "大理崇圣寺三塔",
+      "崇圣寺三塔",
+      "大理三塔"
+    ]
+  },
+  {
+    "id": "chongsheng_south",
+    "name": "崇圣寺南塔",
+    "short": "崇圣寺南塔",
+    "sub": "塔身现貌",
+    "dyn": "dali",
+    "tag": "大理",
+    "era": "大理国时期",
+    "year": 1000,
+    "yearLabel": "大理国（约）",
+    "yearApprox": true,
+    "yearNote": "1000仅作大理国时期约略排序，不是确认建于此年。",
+    "placeKey": "dali",
+    "place": "云南 · 大理",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角十层密檐式砖塔，位于千寻塔西南侧。现存主体属大理国时期，确切建年未详。",
+    "facts": [
+      "八角十层密檐式砖塔，位于千寻塔西南侧。",
+      "现存主体属大理国时期，确切建年未详。",
+      "与北塔形制相近，分别维护照片、图版和个人记录。"
+    ],
+    "caption": [
+      "崇圣寺南塔 · 塔身现貌",
+      "大理国时期"
+    ],
+    "legacyNames": [
+      "大理崇圣寺三塔",
+      "崇圣寺三塔",
+      "大理崇圣寺三塔",
+      "崇圣寺三塔",
+      "大理三塔"
+    ]
+  },
+  {
+    "id": "chongxing_east",
+    "name": "崇兴寺东塔",
+    "short": "崇兴寺东塔",
+    "sub": "塔身现貌",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽代晚期",
+    "year": 1100,
+    "yearLabel": "辽晚期（约）",
+    "yearApprox": true,
+    "yearNote": "1100仅作辽晚期排序点，营建确年未详。",
+    "placeKey": "beizhen",
+    "place": "辽宁北镇 · 崇兴寺",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角十三层实心密檐式砖塔，塔身有佛龛与砖雕。文物部门根据形制判断为辽代晚期，确年未详。",
+    "facts": [
+      "八角十三层实心密檐式砖塔，塔身有佛龛与砖雕。",
+      "文物部门根据形制判断为辽代晚期，确年未详。",
+      "与西塔分别维护图版、修护层次和到访记录。"
+    ],
+    "caption": [
+      "崇兴寺东塔 · 塔身现貌",
+      "辽代晚期"
+    ],
+    "legacyNames": [
+      "崇兴寺双塔",
+      "崇兴寺双塔"
+    ]
+  },
+  {
+    "id": "chongxing_west",
+    "name": "崇兴寺西塔",
+    "short": "崇兴寺西塔",
+    "sub": "塔身现貌",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽代晚期",
+    "year": 1100,
+    "yearLabel": "辽晚期（约）",
+    "yearApprox": true,
+    "yearNote": "1100仅作辽晚期排序点，营建确年未详。",
+    "placeKey": "beizhen",
+    "place": "辽宁北镇 · 崇兴寺",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角十三层实心密檐式砖塔，首层设砖雕仿木斗栱。现存形制判断为辽代晚期，元明清修护另述。",
+    "facts": [
+      "八角十三层实心密檐式砖塔，首层设砖雕仿木斗栱。",
+      "现存形制判断为辽代晚期，元明清修护另述。",
+      "与东塔高度、砖雕和修补细节分别记录。"
+    ],
+    "caption": [
+      "崇兴寺西塔 · 塔身现貌",
+      "辽代晚期"
+    ],
+    "legacyNames": [
+      "崇兴寺双塔",
+      "崇兴寺双塔"
+    ]
+  },
+  {
+    "id": "dule_gate",
+    "name": "独乐寺山门",
+    "short": "独乐寺山门",
+    "sub": "门楼与相连构件",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽统和二年重建",
+    "year": 984,
+    "yearLabel": "984年重建",
+    "yearApprox": false,
+    "yearNote": "山门与观音阁分别登记；984为辽代重建纪年。",
+    "placeKey": "jizhou",
+    "place": "天津 · 蓟州",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "gate"
+    ],
+    "tall": false,
+    "lede": "面阔三间，单檐庑殿顶，中间通行，两侧设金刚像。与观音阁同于辽统和二年（984）重建。",
+    "facts": [
+      "面阔三间，单檐庑殿顶，中间通行，两侧设金刚像。",
+      "与观音阁同于辽统和二年（984）重建。",
+      "作为独立木构计入八大辽构，不再与观音阁合为一条。"
+    ],
+    "caption": [
+      "独乐寺山门 · 门楼与相连构件",
+      "辽统和二年重建"
+    ],
+    "legacyNames": [
+      "天津独乐寺",
+      "独乐寺",
+      "天津独乐寺",
+      "蓟州独乐寺",
+      "独乐寺",
+      "独乐寺观音阁"
+    ]
+  },
+  {
+    "id": "dule_guanyin",
+    "name": "独乐寺观音阁",
+    "short": "独乐寺观音阁",
+    "sub": "楼阁单体",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽统和二年重建",
+    "year": 984,
+    "yearLabel": "984年重建",
+    "yearApprox": false,
+    "yearNote": "按所绘单体断代，寺院初创与其他单体年代另述。",
+    "placeKey": "jizhou",
+    "place": "天津 · 蓟州",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "面阔五间、进深四间，外观二层，内含暗层共三层。现存阁体重建于984年，与山门各作为一个单体。",
+    "facts": [
+      "面阔五间、进深四间，外观二层，内含暗层共三层。",
+      "现存阁体重建于984年，与山门各作为一个单体。",
+      "内外柱圈围绕高大的十一面观音组织空间。"
+    ],
+    "caption": [
+      "独乐寺观音阁 · 楼阁单体",
+      "辽统和二年重建"
+    ],
+    "legacyNames": [
+      "天津独乐寺",
+      "独乐寺",
+      "天津独乐寺",
+      "蓟州独乐寺",
+      "独乐寺",
+      "独乐寺观音阁"
+    ]
+  },
+  {
+    "id": "haihui_large",
+    "name": "海会寺琉璃大塔",
+    "short": "海会寺琉璃大塔",
+    "sub": "塔身现貌",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "明嘉靖至隆庆间",
+    "year": 1565,
+    "yearLabel": "嘉靖—隆庆（约）",
+    "yearApprox": true,
+    "yearNote": "1565仅为营建时段排序点，资料有1561与1565—1568说法。",
+    "placeKey": "sx_yangcheng",
+    "place": "山西阳城 · 大桥村海会寺塔院",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角十三级，高约57米，第十层伸出琉璃平座悬阁。大塔建于明嘉靖、隆庆间，具体纪年有不同记载。",
+    "facts": [
+      "八角十三级，高约57米，第十层伸出琉璃平座悬阁。",
+      "大塔建于明嘉靖、隆庆间，具体纪年有不同记载。",
+      "悬阁柱、栏板和雀替用琉璃，不把小塔的五代年代用于本塔。"
+    ],
+    "caption": [
+      "海会寺琉璃大塔 · 塔身现貌",
+      "明嘉靖至隆庆间"
+    ],
+    "legacyNames": [
+      "阳城海会寺双塔",
+      "海会寺",
+      "阳城海会寺双塔",
+      "海会寺"
+    ]
+  },
+  {
+    "id": "haihui_small",
+    "name": "海会寺舍利小塔",
+    "short": "海会寺舍利小塔",
+    "sub": "塔身现貌",
+    "dyn": "zhou",
+    "tag": "后梁",
+    "era": "后梁龙德二年始建 · 宋代改修",
+    "year": 922,
+    "yearLabel": "922年始建",
+    "yearApprox": false,
+    "yearNote": "小塔五代创建、宋代改修，不以明代琉璃大塔年代定位。",
+    "placeKey": "sx_yangcheng",
+    "place": "山西阳城 · 大桥村海会寺塔院",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "六角十级砖塔，高约20米，外壁遍布佛龛。据寺碑记载始建于后梁龙德二年（922），宋代改修。",
+    "facts": [
+      "六角十级砖塔，高约20米，外壁遍布佛龛。",
+      "据寺碑记载始建于后梁龙德二年（922），宋代改修。",
+      "为顺敏禅师舍利塔，与明代大塔分别登记。"
+    ],
+    "caption": [
+      "海会寺舍利小塔 · 塔身现貌",
+      "后梁龙德二年始建 · 宋代改修"
+    ],
+    "legacyNames": [
+      "阳城海会寺双塔",
+      "海会寺",
+      "阳城海会寺双塔",
+      "海会寺"
+    ]
+  },
+  {
+    "id": "huayan_bojia",
+    "name": "华严寺薄伽教藏殿",
+    "short": "华严寺薄伽教藏殿",
+    "sub": "木构殿堂",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽重熙七年",
+    "year": 1038,
+    "yearLabel": "1038",
+    "yearApprox": false,
+    "yearNote": "按现存藏经殿椽底题记1038年定位，后世修缮另述。",
+    "placeKey": "datong",
+    "place": "山西大同 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall"
+    ],
+    "tall": false,
+    "lede": "单檐歇山，面阔五间、进深八椽，建于辽重熙七年。殿内保存楼阁式壁藏与天宫楼阁，是八大辽构中的藏经殿。",
+    "facts": [
+      "单檐歇山，面阔五间、进深八椽，建于辽重熙七年。",
+      "殿内保存楼阁式壁藏与天宫楼阁，是八大辽构中的藏经殿。",
+      "与1140年重建的金代大雄宝殿分开登记。"
+    ],
+    "caption": [
+      "华严寺薄伽教藏殿 · 木构殿堂",
+      "辽重熙七年"
+    ],
+    "legacyNames": [
+      "华严寺"
+    ]
+  },
+  {
+    "id": "huayan_daxiong",
+    "name": "华严寺大雄宝殿",
+    "short": "华严寺大雄宝殿",
+    "sub": "木构殿堂",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金天眷三年重建",
+    "year": 1140,
+    "yearLabel": "1140年重建",
+    "yearApprox": false,
+    "yearNote": "按所绘单体断代，寺院初创与其他单体年代另述。",
+    "placeKey": "datong",
+    "place": "山西大同 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall"
+    ],
+    "tall": false,
+    "lede": "面阔九间、进深十椽，单檐庑殿顶，立于高台基。1062年初建，1122年毁于兵火，1140年重建现存金代主体。",
+    "facts": [
+      "面阔九间、进深十椽，单檐庑殿顶，立于高台基。",
+      "1062年初建，1122年毁于兵火，1140年重建现存金代主体。",
+      "殿内减柱扩大礼佛空间，与1038年薄伽教藏殿分别计年。"
+    ],
+    "caption": [
+      "华严寺大雄宝殿 · 木构殿堂",
+      "金天眷三年重建"
+    ],
+    "legacyNames": [
+      "华严寺"
+    ]
+  },
+  {
+    "id": "jiahuiguan_east",
+    "name": "郏县山陕会馆东楼",
+    "short": "郏县山陕会馆东楼",
+    "sub": "楼阁单体",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代 · 单体确年未详",
+    "year": 1700,
+    "yearLabel": "清代（约）",
+    "yearApprox": true,
+    "yearNote": "约1700年仅供清代排序，不断言单体建于会馆创建之年。",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "钟鼓二楼位于门楼两侧，本条按东侧位置登记，钟鼓对应尚待核实。楼基约4米高，十二根圆木立柱托十字架梁，双层飞檐。",
+    "facts": [
+      "钟鼓二楼位于门楼两侧，本条按东侧位置登记，钟鼓对应尚待核实。",
+      "楼基约4米高，十二根圆木立柱托十字架梁，双层飞檐。",
+      "约1700年仅供清代排序，不断言单体建于会馆创建之年。"
+    ],
+    "caption": [
+      "郏县山陕会馆东楼 · 楼阁单体",
+      "清代 · 单体确年未详"
+    ],
+    "legacyNames": [
+      "郏县山陕会馆",
+      "郏县山陕会馆"
+    ]
+  },
+  {
+    "id": "jiahuiguan_gate",
+    "name": "郏县山陕会馆门楼戏楼",
+    "short": "郏县山陕会馆门楼戏楼",
+    "sub": "门楼与相连构件",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代 · 单体确年未详",
+    "year": 1700,
+    "yearLabel": "清代（约）",
+    "yearApprox": true,
+    "yearNote": "会馆1693年创建，现存本单体确年未详，不以创馆年替代营建年。",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "gate"
+    ],
+    "tall": false,
+    "lede": "门楼与二层戏楼叠建一体，作为一个连体建筑登记。下层三间，中门通行；二层戏楼朝北面向院落。",
+    "facts": [
+      "门楼与二层戏楼叠建一体，作为一个连体建筑登记。",
+      "下层三间，中门通行；二层戏楼朝北面向院落。",
+      "会馆1693年创建，现存本单体确年未详，不以创馆年替代营建年。"
+    ],
+    "caption": [
+      "郏县山陕会馆门楼戏楼 · 门楼与相连构件",
+      "清代 · 单体确年未详"
+    ],
+    "legacyNames": [
+      "郏县山陕会馆",
+      "郏县山陕会馆"
+    ]
+  },
+  {
+    "id": "jiahuiguan_west",
+    "name": "郏县山陕会馆西楼",
+    "short": "郏县山陕会馆西楼",
+    "sub": "楼阁单体",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清代 · 单体确年未详",
+    "year": 1700,
+    "yearLabel": "清代（约）",
+    "yearApprox": true,
+    "yearNote": "门楼与戏楼同体，本楼独立，不将两座楼合绘。",
+    "placeKey": "hn_jiaxian",
+    "place": "河南 · 郏县",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "本条按西侧位置登记钟鼓楼单体，不凭通例认定钟鼓对应。方形楼基承双层飞檐，柱梁做法与东楼相对。",
+    "facts": [
+      "本条按西侧位置登记钟鼓楼单体，不凭通例认定钟鼓对应。",
+      "方形楼基承双层飞檐，柱梁做法与东楼相对。",
+      "门楼与戏楼同体，本楼独立，不将两座楼合绘。"
+    ],
+    "caption": [
+      "郏县山陕会馆西楼 · 楼阁单体",
+      "清代 · 单体确年未详"
+    ],
+    "legacyNames": [
+      "郏县山陕会馆",
+      "郏县山陕会馆"
+    ]
+  },
+  {
+    "id": "kaiyuan_bell",
+    "name": "正定开元寺钟楼",
+    "short": "正定开元寺钟楼",
+    "sub": "楼阁单体",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "唐代遗构 · 后世修葺",
+    "year": 850,
+    "yearLabel": "唐代（约）",
+    "yearApprox": true,
+    "yearNote": "850仅为唐代钟楼的约略排序点；下层与外檐、上层修缮年代须分别理解。",
+    "placeKey": "zhengding",
+    "place": "河北正定 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "面阔、进深各三间，重檐歇山，上层设回廊。梁思成考察后认为钟楼下层保存唐代遗构，上层及外檐包含后世维修。",
+    "facts": [
+      "面阔、进深各三间，重檐歇山，上层设回廊。",
+      "梁思成考察后认为钟楼下层保存唐代遗构，上层及外檐包含后世维修。",
+      "位于法船殿遗址前东侧，楼内保存唐代铜钟。"
+    ],
+    "caption": [
+      "正定开元寺钟楼 · 楼阁单体",
+      "唐代遗构 · 后世修葺"
+    ],
+    "legacyNames": [
+      "正定开元寺",
+      "开元寺"
+    ]
+  },
+  {
+    "id": "kaiyuan_xumi",
+    "name": "正定开元寺须弥塔",
+    "short": "正定开元寺须弥塔",
+    "sub": "塔身现貌",
+    "dyn": "tang",
+    "tag": "唐",
+    "era": "贞观十年始建",
+    "year": 636,
+    "yearLabel": "636年始建",
+    "yearApprox": false,
+    "yearNote": "须弥塔始建纪年；后世修葺不等于所有构件均属636年。",
+    "placeKey": "zhengding",
+    "place": "河北正定 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "方形九级密檐砖塔，高约42.5米。位于开元寺法船殿遗址前西侧，与东侧钟楼相对。",
+    "facts": [
+      "方形九级密檐砖塔，高约42.5米。",
+      "位于开元寺法船殿遗址前西侧，与东侧钟楼相对。",
+      "始建纪年与现存修缮层次分别理解。"
+    ],
+    "caption": [
+      "正定开元寺须弥塔 · 塔身现貌",
+      "贞观十年始建"
+    ],
+    "legacyNames": [
+      "正定开元寺",
+      "开元寺"
+    ]
+  },
+  {
+    "id": "lingyin_east_pillar",
+    "name": "灵隐寺东经幢",
+    "short": "灵隐寺东经幢",
+    "sub": "石经幢",
+    "dyn": "zhou",
+    "tag": "吴越",
+    "era": "吴越 · 969年",
+    "year": 969,
+    "yearLabel": "969",
+    "yearApprox": false,
+    "yearNote": "营建年代不代表现有全部修缮构件均属同年；经幢1035年迁建另述。",
+    "placeKey": "hangzhou",
+    "place": "浙江杭州 · 灵隐寺",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pillar"
+    ],
+    "tall": true,
+    "lede": "969年钱弘俶建于奉先寺，1035年迁至灵隐寺今址。八面幢身刻陀罗尼经，台座与顶部多层石雕叠置。",
+    "facts": [
+      "969年钱弘俶建于奉先寺，1035年迁至灵隐寺今址。",
+      "八面幢身刻陀罗尼经，台座与顶部多层石雕叠置。",
+      "位于天王殿前东侧，不与西经幢共用图版或记录。"
+    ],
+    "caption": [
+      "灵隐寺东经幢 · 石经幢",
+      "吴越 · 969年"
+    ],
+    "legacyNames": [
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢",
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢"
+    ]
+  },
+  {
+    "id": "lingyin_east_tower",
+    "name": "灵隐寺东石塔",
+    "short": "灵隐寺东石塔",
+    "sub": "塔身现貌",
+    "dyn": "zhou",
+    "tag": "吴越",
+    "era": "吴越 · 960年",
+    "year": 960,
+    "yearLabel": "960",
+    "yearApprox": false,
+    "yearNote": "营建年代不代表现有全部修缮构件均属同年；经幢1035年迁建另述。",
+    "placeKey": "hangzhou",
+    "place": "浙江杭州 · 灵隐寺",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "钱弘俶于960年重建灵隐寺时所立，吴越治下遗存。八角九层仿木楼阁式实心石塔，保留塔刹缺失的现貌。",
+    "facts": [
+      "钱弘俶于960年重建灵隐寺时所立，吴越治下遗存。",
+      "八角九层仿木楼阁式实心石塔，保留塔刹缺失的现貌。",
+      "位于大雄宝殿前露台东侧，保留残损塔刹，不复原缺失顶部。"
+    ],
+    "caption": [
+      "灵隐寺东石塔 · 塔身现貌",
+      "吴越 · 960年"
+    ],
+    "legacyNames": [
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢",
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢"
+    ]
+  },
+  {
+    "id": "lingyin_west_pillar",
+    "name": "灵隐寺西经幢",
+    "short": "灵隐寺西经幢",
+    "sub": "石经幢",
+    "dyn": "zhou",
+    "tag": "吴越",
+    "era": "吴越 · 969年",
+    "year": 969,
+    "yearLabel": "969",
+    "yearApprox": false,
+    "yearNote": "营建年代不代表现有全部修缮构件均属同年；经幢1035年迁建另述。",
+    "placeKey": "hangzhou",
+    "place": "浙江杭州 · 灵隐寺",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pillar"
+    ],
+    "tall": true,
+    "lede": "969年钱弘俶建于奉先寺，1035年迁至灵隐寺今址。八面幢身刻陀罗尼经，台座与顶部多层石雕叠置。",
+    "facts": [
+      "969年钱弘俶建于奉先寺，1035年迁至灵隐寺今址。",
+      "八面幢身刻陀罗尼经，台座与顶部多层石雕叠置。",
+      "位于天王殿前西侧，保留石雕残损，不与东经幢合绘。"
+    ],
+    "caption": [
+      "灵隐寺西经幢 · 石经幢",
+      "吴越 · 969年"
+    ],
+    "legacyNames": [
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢",
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢"
+    ]
+  },
+  {
+    "id": "lingyin_west_tower",
+    "name": "灵隐寺西石塔",
+    "short": "灵隐寺西石塔",
+    "sub": "塔身现貌",
+    "dyn": "zhou",
+    "tag": "吴越",
+    "era": "吴越 · 960年",
+    "year": 960,
+    "yearLabel": "960",
+    "yearApprox": false,
+    "yearNote": "营建年代不代表现有全部修缮构件均属同年；经幢1035年迁建另述。",
+    "placeKey": "hangzhou",
+    "place": "浙江杭州 · 灵隐寺",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "钱弘俶于960年重建灵隐寺时所立，吴越治下遗存。八角九层仿木楼阁式实心石塔，保留塔刹缺失的现貌。",
+    "facts": [
+      "钱弘俶于960年重建灵隐寺时所立，吴越治下遗存。",
+      "八角九层仿木楼阁式实心石塔，保留塔刹缺失的现貌。",
+      "位于大雄宝殿前露台西侧，与东石塔分别登记。"
+    ],
+    "caption": [
+      "灵隐寺西石塔 · 塔身现貌",
+      "吴越 · 960年"
+    ],
+    "legacyNames": [
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢",
+      "杭州灵隐寺石塔与经幢",
+      "灵隐石塔经幢"
+    ]
+  },
+  {
+    "id": "longxing_mani",
+    "name": "隆兴寺摩尼殿",
+    "short": "隆兴寺摩尼殿",
+    "sub": "木构殿堂",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋皇祐四年",
+    "year": 1052,
+    "yearLabel": "1052",
+    "yearApprox": false,
+    "yearNote": "按所绘单体断代，寺院初创与其他单体年代另述。",
+    "placeKey": "zhengding",
+    "place": "河北正定 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall"
+    ],
+    "tall": false,
+    "lede": "面阔、进深各七间，四面正中出歇山抱厦，平面呈十字形。现存摩尼殿建于皇祐四年（1052），不以971年寺院扩建作本殿建年。",
+    "facts": [
+      "面阔、进深各七间，四面正中出歇山抱厦，平面呈十字形。",
+      "现存摩尼殿建于皇祐四年（1052），不以971年寺院扩建作本殿建年。",
+      "殿内倒坐观音与壁画的年代另述，寺院整体记录由集合保留。"
+    ],
+    "caption": [
+      "隆兴寺摩尼殿 · 木构殿堂",
+      "北宋皇祐四年"
+    ],
+    "legacyNames": [
+      "隆兴寺"
+    ]
+  },
+  {
+    "id": "longxing_zhuanlun",
+    "name": "隆兴寺转轮藏阁",
+    "short": "隆兴寺转轮藏阁",
+    "sub": "楼阁单体",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋木构",
+    "year": 1050,
+    "yearLabel": "北宋（约）",
+    "yearApprox": true,
+    "yearNote": "1050仅作北宋转轮藏阁的约略排序点，未将971年造铜观音纪年用于阁体。",
+    "placeKey": "zhengding",
+    "place": "河北正定 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "面阔、进深各三间，为两层楼阁，重檐歇山顶。阁内保存宋代转轮藏，藏体与阁体共同组织贯通的内部空间。",
+    "facts": [
+      "面阔、进深各三间，为两层楼阁，重檐歇山顶。",
+      "阁内保存宋代转轮藏，藏体与阁体共同组织贯通的内部空间。",
+      "现存阁体按北宋遗构登记，后世落架修缮另述。"
+    ],
+    "caption": [
+      "隆兴寺转轮藏阁 · 楼阁单体",
+      "北宋木构"
+    ],
+    "legacyNames": [
+      "隆兴寺"
+    ]
+  },
+  {
+    "id": "luohan_east",
+    "name": "罗汉院东塔",
+    "short": "罗汉院东塔",
+    "sub": "塔身现貌",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋太平兴国七年起建",
+    "year": 982,
+    "yearLabel": "982年起建",
+    "yearApprox": false,
+    "yearNote": "982为起建年，后续修缮另述。",
+    "placeKey": "suzhou",
+    "place": "江苏苏州 · 定慧寺巷",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "北宋982年起建，至雍熙年间完成；东塔与西塔分别登记。八角七层楼阁式砖塔，铁刹高约8米。",
+    "facts": [
+      "北宋982年起建，至雍熙年间完成；东塔与西塔分别登记。",
+      "八角七层楼阁式砖塔，铁刹高约8米。",
+      "位于正殿遗址南侧，图版只绘东塔，不复原殿堂。"
+    ],
+    "caption": [
+      "罗汉院东塔 · 塔身现貌",
+      "北宋太平兴国七年起建"
+    ],
+    "legacyNames": [
+      "苏州罗汉院双塔及正殿遗址",
+      "罗汉院双塔",
+      "苏州罗汉院双塔及正殿遗址",
+      "罗汉院双塔",
+      "苏州双塔",
+      "罗汉院双塔"
+    ]
+  },
+  {
+    "id": "luohan_hall_ruins",
+    "name": "罗汉院正殿遗址",
+    "short": "罗汉院正殿遗址",
+    "sub": "宋代石柱与柱础局部",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "宋代石柱与柱础 · 1860年殿毁",
+    "year": 1000,
+    "yearLabel": "宋代（约）",
+    "yearApprox": true,
+    "yearNote": "图版取照片中可见柱础遗构局部，不复原全殿或补齐全部石柱。",
+    "placeKey": "suzhou",
+    "place": "江苏苏州 · 定慧寺巷",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "ruins"
+    ],
+    "tall": false,
+    "lede": "正殿于1860年毁于战火，遗址保留宋代石柱与柱础。石柱有雕花圆柱、瓜棱柱及八角柱，柱础为覆盆形。",
+    "facts": [
+      "正殿于1860年毁于战火，遗址保留宋代石柱与柱础。",
+      "石柱有雕花圆柱、瓜棱柱及八角柱，柱础为覆盆形。",
+      "图版取照片中可见柱础遗构局部，不复原全殿或补齐全部石柱。"
+    ],
+    "caption": [
+      "罗汉院正殿遗址 · 宋代石柱与柱础局部",
+      "宋代石柱与柱础 · 1860年殿毁"
+    ],
+    "legacyNames": [
+      "苏州罗汉院双塔及正殿遗址",
+      "罗汉院双塔",
+      "苏州罗汉院双塔及正殿遗址",
+      "罗汉院双塔",
+      "苏州双塔",
+      "罗汉院双塔"
+    ]
+  },
+  {
+    "id": "luohan_west",
+    "name": "罗汉院西塔",
+    "short": "罗汉院西塔",
+    "sub": "塔身现貌",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋太平兴国七年起建",
+    "year": 982,
+    "yearLabel": "982年起建",
+    "yearApprox": false,
+    "yearNote": "982为起建年，后续修缮另述。",
+    "placeKey": "suzhou",
+    "place": "江苏苏州 · 定慧寺巷",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "北宋982年起建，至雍熙年间完成；不与正殿石雕共用一条记录。八角七层，砖壁作仿木柱枋与叠涩出檐。",
+    "facts": [
+      "北宋982年起建，至雍熙年间完成；不与正殿石雕共用一条记录。",
+      "八角七层，砖壁作仿木柱枋与叠涩出檐。",
+      "保留修缮后的现貌，不将现有涂装当作宋代原貌。"
+    ],
+    "caption": [
+      "罗汉院西塔 · 塔身现貌",
+      "北宋太平兴国七年起建"
+    ],
+    "legacyNames": [
+      "苏州罗汉院双塔及正殿遗址",
+      "罗汉院双塔",
+      "苏州罗汉院双塔及正殿遗址",
+      "罗汉院双塔",
+      "苏州双塔",
+      "罗汉院双塔"
+    ]
+  },
+  {
+    "id": "shanhua_daxiong",
+    "name": "善化寺大雄宝殿",
+    "short": "善化寺大雄宝殿",
+    "sub": "木构殿堂",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽代遗构",
+    "year": 1050,
+    "yearLabel": "辽（约）",
+    "yearApprox": true,
+    "yearNote": "1050仅作辽代大殿约略排序，不代表确切建造年。",
+    "placeKey": "datong",
+    "place": "山西大同 · 南门",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall"
+    ],
+    "tall": false,
+    "lede": "面阔七间、进深五间，单檐庑殿顶。现存主体为辽代木构，金代重修，殿内保留金代彩塑。",
+    "facts": [
+      "面阔七间、进深五间，单檐庑殿顶。",
+      "现存主体为辽代木构，金代重修，殿内保留金代彩塑。",
+      "与金代三圣殿、山门和普贤阁分开登记。"
+    ],
+    "caption": [
+      "善化寺大雄宝殿 · 木构殿堂",
+      "辽代遗构"
+    ],
+    "legacyNames": [
+      "善化寺"
+    ]
+  },
+  {
+    "id": "shanhua_gate",
+    "name": "善化寺山门",
+    "short": "善化寺山门",
+    "sub": "门楼与相连构件",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金天会至皇统间",
+    "year": 1135,
+    "yearLabel": "1128—1143（约）",
+    "yearApprox": true,
+    "yearNote": "1135只作金代重建时段的排序点，不作确切营建年。",
+    "placeKey": "datong",
+    "place": "山西大同 · 南门",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "gate"
+    ],
+    "tall": false,
+    "lede": "山门又称天王殿，面阔五间、进深二间，单檐庑殿顶。现存主体为金代重建，与辽代大雄宝殿区分。",
+    "facts": [
+      "山门又称天王殿，面阔五间、进深二间，单檐庑殿顶。",
+      "现存主体为金代重建，与辽代大雄宝殿区分。",
+      "山门兼具通行与供奉四大天王的空间用途。"
+    ],
+    "caption": [
+      "善化寺山门 · 门楼与相连构件",
+      "金天会至皇统间"
+    ],
+    "legacyNames": [
+      "善化寺"
+    ]
+  },
+  {
+    "id": "shanhua_puxian",
+    "name": "善化寺普贤阁",
+    "short": "善化寺普贤阁",
+    "sub": "楼阁单体",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金贞元二年",
+    "year": 1154,
+    "yearLabel": "1154",
+    "yearApprox": false,
+    "yearNote": "按所绘单体断代，寺院初创与其他单体年代另述。",
+    "placeKey": "datong",
+    "place": "山西大同 · 南门",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "面阔、进深各三间，重檐歇山顶，外观二层，中设平座暗层。现存普贤阁建于金贞元二年（1154），不归为辽代大雄宝殿。",
+    "facts": [
+      "面阔、进深各三间，重檐歇山顶，外观二层，中设平座暗层。",
+      "现存普贤阁建于金贞元二年（1154），不归为辽代大雄宝殿。",
+      "上檐次间铺作以瓜子栱连成一体，做法罕见。"
+    ],
+    "caption": [
+      "善化寺普贤阁 · 楼阁单体",
+      "金贞元二年"
+    ],
+    "legacyNames": [
+      "善化寺"
+    ]
+  },
+  {
+    "id": "shanhua_sansheng",
+    "name": "善化寺三圣殿",
+    "short": "善化寺三圣殿",
+    "sub": "木构殿堂",
+    "dyn": "liao",
+    "tag": "金",
+    "era": "金天会至皇统间重建",
+    "year": 1135,
+    "yearLabel": "1128—1143（约）",
+    "yearApprox": true,
+    "yearNote": "1135仅为金天会六年至皇统三年营建时段的排序点。",
+    "placeKey": "datong",
+    "place": "山西大同 · 南门",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall"
+    ],
+    "tall": false,
+    "lede": "面阔五间，单檐庑殿顶，檐下斜栱层叠。现存主体归金代，1128—1143年重建时期，不与辽代大雄宝殿同年。",
+    "facts": [
+      "面阔五间，单檐庑殿顶，檐下斜栱层叠。",
+      "现存主体归金代，1128—1143年重建时期，不与辽代大雄宝殿同年。",
+      "位于寺院中轴线，2007年曾大修。"
+    ],
+    "caption": [
+      "善化寺三圣殿 · 木构殿堂",
+      "金天会至皇统间重建"
+    ],
+    "legacyNames": [
+      "善化寺"
+    ]
+  },
+  {
+    "id": "xian_bell",
+    "name": "西安钟楼",
+    "short": "西安钟楼",
+    "sub": "楼阁单体",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "万历十年迁建",
+    "year": 1582,
+    "yearLabel": "1582年迁建",
+    "yearApprox": false,
+    "yearNote": "始建于1384年，1582年迁至现址；年表以现址迁建定位。",
+    "placeKey": "xian",
+    "place": "陕西西安 · 府城中心",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "方形砖台上建三重檐攒尖顶木楼，四面券洞相通。1384年始建，1582年迁至现址，迁建与后世维修分别说明。",
+    "facts": [
+      "方形砖台上建三重檐攒尖顶木楼，四面券洞相通。",
+      "1384年始建，1582年迁至现址，迁建与后世维修分别说明。",
+      "与鼓楼同属城市报时报警设施，两楼不相连。"
+    ],
+    "caption": [
+      "西安钟楼 · 楼阁单体",
+      "万历十年迁建"
+    ],
+    "legacyNames": [
+      "西安钟楼 · 鼓楼",
+      "钟鼓楼",
+      "西安钟鼓楼",
+      "西安钟楼",
+      "西安鼓楼",
+      "钟鼓楼",
+      "钟楼",
+      "鼓楼"
+    ]
+  },
+  {
+    "id": "xian_drum",
+    "name": "西安鼓楼",
+    "short": "西安鼓楼",
+    "sub": "楼阁单体",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "洪武十三年始建",
+    "year": 1380,
+    "yearLabel": "1380年始建",
+    "yearApprox": false,
+    "yearNote": "后世维修构件不全部等同于1380年。",
+    "placeKey": "xian",
+    "place": "陕西西安 · 府城中心",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pavilion"
+    ],
+    "tall": false,
+    "lede": "长方形砖台上建七间楼身，四周有廊，屋脊横向展开。始建于明洪武十三年（1380），后世屡有修葺。",
+    "facts": [
+      "长方形砖台上建七间楼身，四周有廊，屋脊横向展开。",
+      "始建于明洪武十三年（1380），后世屡有修葺。",
+      "与钟楼分处不同位置，原组合图为并置图。"
+    ],
+    "caption": [
+      "西安鼓楼 · 楼阁单体",
+      "洪武十三年始建"
+    ],
+    "legacyNames": [
+      "西安钟楼 · 鼓楼",
+      "钟鼓楼",
+      "西安钟鼓楼",
+      "西安钟楼",
+      "西安鼓楼",
+      "钟鼓楼",
+      "钟楼",
+      "鼓楼"
+    ]
+  },
+  {
+    "id": "xitai_aohu",
+    "name": "岙胡胡氏宗祠戏台",
+    "short": "岙胡胡氏宗祠戏台",
+    "sub": "戏台与相连构件",
+    "dyn": "ming",
+    "tag": "清",
+    "era": "清咸丰四年",
+    "year": 1854,
+    "yearLabel": "1854",
+    "yearApprox": false,
+    "yearNote": "按所绘单体断代，寺院初创与其他单体年代另述。",
+    "placeKey": "ninghai",
+    "place": "浙江宁海 · 祠庙",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "stage"
+    ],
+    "tall": false,
+    "lede": "戏台与勾连廊连设三座藻井，组成三连贯藻井。胡氏宗祠建于清咸丰四年（1854），与两侧看楼相连。",
+    "facts": [
+      "戏台与勾连廊连设三座藻井，组成三连贯藻井。",
+      "胡氏宗祠建于清咸丰四年（1854），与两侧看楼相连。",
+      "宁海其他古戏台由集合组织，不把全县多处戏台合为同一个单体。"
+    ],
+    "caption": [
+      "岙胡胡氏宗祠戏台 · 戏台与相连构件",
+      "清咸丰四年"
+    ],
+    "legacyNames": [
+      "宁海古戏台",
+      "戏台"
+    ]
+  },
+  {
+    "id": "xitai_chenghuang",
+    "name": "宁海城隍庙戏台",
+    "short": "宁海城隍庙戏台",
+    "sub": "戏台与相连构件",
+    "dyn": "modern",
+    "tag": "近现代",
+    "era": "民国二十四年重建",
+    "year": 1935,
+    "yearLabel": "1935年重建",
+    "yearApprox": false,
+    "yearNote": "1935年重建仪门、戏台和两厢，现存单体不使用689年创庙年代。",
+    "placeKey": "ninghai",
+    "place": "浙江宁海 · 祠庙",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "stage"
+    ],
+    "tall": false,
+    "lede": "1935年大修重建戏台与仪门，戏台前上层改用铁柱，下层为水泥柱。台面约高1.66米，单檐歇山顶；圆形藻井以螺旋线叠涩。",
+    "facts": [
+      "1935年大修重建戏台与仪门，戏台前上层改用铁柱，下层为水泥柱。",
+      "台面约高1.66米，单檐歇山顶；圆形藻井以螺旋线叠涩。",
+      "图版只绘戏台及相连中央门楼可见部分，两侧看楼不在所绘范围。"
+    ],
+    "caption": [
+      "宁海城隍庙戏台 · 戏台与相连构件",
+      "民国二十四年重建"
+    ],
+    "legacyNames": [
+      "宁海古戏台",
+      "戏台"
+    ]
+  },
+  {
+    "id": "yongzuo_wenfeng",
+    "name": "永祚寺文峰塔",
+    "short": "永祚寺文峰塔",
+    "sub": "塔身现貌",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "万历二十七年",
+    "year": 1599,
+    "yearLabel": "1599",
+    "yearApprox": false,
+    "yearNote": "东塔1599年营建，后经1995—1996年纠偏加固。",
+    "placeKey": "taiyuan",
+    "place": "山西 · 太原",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "文峰塔为永祚寺东塔，八角十三层楼阁式砖塔。1599年由傅霖、傅之谟父子主持建成，为文运风水塔。",
+    "facts": [
+      "文峰塔为永祚寺东塔，八角十三层楼阁式砖塔。",
+      "1599年由傅霖、傅之谟父子主持建成，为文运风水塔。",
+      "与1612年建成的西塔宣文塔分开计年。"
+    ],
+    "caption": [
+      "永祚寺文峰塔 · 塔身现貌",
+      "万历二十七年"
+    ],
+    "legacyNames": [
+      "太原永祚寺双塔",
+      "永祚寺双塔",
+      "太原永祚寺双塔",
+      "永祚寺双塔",
+      "双塔寺",
+      "永祚寺",
+      "文峰塔",
+      "宣文塔"
+    ]
+  },
+  {
+    "id": "yongzuo_xuanwen",
+    "name": "永祚寺宣文塔",
+    "short": "永祚寺宣文塔",
+    "sub": "塔身现貌",
+    "dyn": "ming",
+    "tag": "明",
+    "era": "万历四十年",
+    "year": 1612,
+    "yearLabel": "1612",
+    "yearApprox": false,
+    "yearNote": "西塔1612年落成，近现代加固不作初建年代。",
+    "placeKey": "taiyuan",
+    "place": "山西 · 太原",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "宣文塔为永祚寺西塔，八角十三层，高约54.78米。1612年由妙峰主持建成，塔檐使用孔雀蓝琉璃。",
+    "facts": [
+      "宣文塔为永祚寺西塔，八角十三层，高约54.78米。",
+      "1612年由妙峰主持建成，塔檐使用孔雀蓝琉璃。",
+      "塔名取万历帝生母尊号，东塔与西塔并非同年建成。"
+    ],
+    "caption": [
+      "永祚寺宣文塔 · 塔身现貌",
+      "万历四十年"
+    ],
+    "legacyNames": [
+      "太原永祚寺双塔",
+      "永祚寺双塔",
+      "太原永祚寺双塔",
+      "永祚寺双塔",
+      "双塔寺",
+      "永祚寺",
+      "文峰塔",
+      "宣文塔"
+    ]
+  },
+  {
+    "id": "yuanqi_hall",
+    "name": "原起寺大雄宝殿",
+    "short": "原起寺大雄宝殿",
+    "sub": "木构殿堂",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "宋代遗构",
+    "year": 1000,
+    "yearLabel": "宋（约）",
+    "yearApprox": true,
+    "yearNote": "1000仅为宋代大殿约略排序点，非确认建造年。",
+    "placeKey": "pingshun",
+    "place": "山西潞城 · 浊漳河畔 · 辛安村",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "hall"
+    ],
+    "tall": false,
+    "lede": "面阔三间、进深四椽，单檐歇山顶。现存大殿按宋代遗构登记，寺院747年创建不能作为现存木构建年。",
+    "facts": [
+      "面阔三间、进深四椽，单檐歇山顶。",
+      "现存大殿按宋代遗构登记，寺院747年创建不能作为现存木构建年。",
+      "青龙塔立于殿西，集合保留一殿一塔的寺院格局说明。"
+    ],
+    "caption": [
+      "原起寺大雄宝殿 · 木构殿堂",
+      "宋代遗构"
+    ],
+    "legacyNames": [
+      "潞城原起寺",
+      "原起寺"
+    ]
+  },
+  {
+    "id": "yuanqi_qinglong",
+    "name": "原起寺青龙塔",
+    "short": "原起寺青龙塔",
+    "sub": "塔身现貌",
+    "dyn": "song",
+    "tag": "宋",
+    "era": "北宋元祐二年",
+    "year": 1087,
+    "yearLabel": "1087",
+    "yearApprox": false,
+    "yearNote": "青龙塔按北宋元祐二年营建记载；后世修护另述。",
+    "placeKey": "pingshun",
+    "place": "山西潞城 · 浊漳河畔 · 辛安村",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角七层砖塔，高约17米。檐下以砖雕仿木构斗栱，顶立宝瓶式塔刹。",
+    "facts": [
+      "八角七层砖塔，高约17米。",
+      "檐下以砖雕仿木构斗栱，顶立宝瓶式塔刹。",
+      "八角铁人与牵索是塔刹的加固构件，不能省作另一座建筑。"
+    ],
+    "caption": [
+      "原起寺青龙塔 · 塔身现貌",
+      "北宋元祐二年"
+    ],
+    "legacyNames": [
+      "潞城原起寺",
+      "原起寺"
+    ]
+  },
+  {
+    "id": "zhuozhou_yunju",
+    "name": "涿州云居寺塔",
+    "short": "涿州云居寺塔",
+    "sub": "塔身现貌",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽代 · 建年有异说",
+    "year": 1070,
+    "yearLabel": "11世纪（约）",
+    "yearApprox": true,
+    "yearNote": "1070仅作十一世纪约略排序；重熙与大安年间等纪年存在不同记载。",
+    "placeKey": "zhuozhou",
+    "place": "河北涿州 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "云居寺塔为涿州北塔，八角六层楼阁式砖塔。建年有重熙与大安年间等不同记载，不把争议年份定为确年。",
+    "facts": [
+      "云居寺塔为涿州北塔，八角六层楼阁式砖塔。",
+      "建年有重熙与大安年间等不同记载，不把争议年份定为确年。",
+      "塔内外墙间有走廊，塔心设踏垛，可登临。"
+    ],
+    "caption": [
+      "涿州云居寺塔 · 塔身现貌",
+      "辽代 · 建年有异说"
+    ],
+    "legacyNames": [
+      "涿州辽代双塔",
+      "涿州双塔",
+      "涿州双塔",
+      "涿州辽代双塔"
+    ]
+  },
+  {
+    "id": "zhuozhou_zhidu",
+    "name": "涿州智度寺塔",
+    "short": "涿州智度寺塔",
+    "sub": "塔身现貌",
+    "dyn": "liao",
+    "tag": "辽",
+    "era": "辽太平十一年",
+    "year": 1031,
+    "yearLabel": "1031",
+    "yearApprox": false,
+    "yearNote": "智度寺南塔按1031营建纪年；北塔年代另述。",
+    "placeKey": "zhuozhou",
+    "place": "河北涿州 · 古城",
+    "country": "CN",
+    "initialStatus": "unvisited",
+    "types": [
+      "pagoda"
+    ],
+    "tall": true,
+    "lede": "八角五层楼阁式砖塔，为涿州南塔。建于辽太平十一年（1031），寺院已不存，塔独存。",
+    "facts": [
+      "八角五层楼阁式砖塔，为涿州南塔。",
+      "建于辽太平十一年（1031），寺院已不存，塔独存。",
+      "砖作以券门、直棂盲窗和斗栱仿木楼阁。"
+    ],
+    "caption": [
+      "涿州智度寺塔 · 塔身现貌",
+      "辽太平十一年"
+    ],
+    "legacyNames": [
+      "涿州辽代双塔",
+      "涿州双塔",
+      "涿州双塔",
+      "涿州辽代双塔"
+    ]
+  }
+]);

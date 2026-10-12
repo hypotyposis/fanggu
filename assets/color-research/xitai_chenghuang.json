@@ -1,0 +1,50 @@
+{
+  "id": "xitai_chenghuang",
+  "name": "宁海城隍庙戏台",
+  "subject": "宁海城隍庙戏台",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "input_images": [
+    "assets/generated/xitai_chenghuang.png",
+    "assets/references/xitai_chenghuang-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 宁海城隍庙戏台.\nPhotograph material observations: grey roof tiles, worn red-brown wood, grey masonry and concrete lower supports, modest painted ornament. Single building only, preserve the input line composition.",
+  "material_observations": [
+    "grey roof tiles, worn red-brown wood, grey masonry and concrete lower supports, modest painted ornament"
+  ],
+  "references": [
+    {
+      "id": "xitai_chenghuang",
+      "photo": "assets/references/xitai_chenghuang-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ANinghai%20Town%20God%20Temple%2C%202017-05-29%2003.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Ninghai_Town_God_Temple%2C_2017-05-29_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Siyuwj",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "role": "source_context_and_subject_photograph",
+      "file": "assets/references/xitai_chenghuang-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/xitai_chenghuang.json",
+  "output": "assets/colored/xitai_chenghuang.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-e4d29071-3ade-4926-9bf7-b60add0a1a4a.png",
+  "width": 1535,
+  "height": 1025,
+  "completed_at": "2026-10-12T09:34:36.346548+00:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "76bde98b2e4c785c8428150391e736a8956c0cf748291f41550c7260ed65df2b",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.369Z",
+    "sourceSha256": "76bde98b2e4c785c8428150391e736a8956c0cf748291f41550c7260ed65df2b",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "15fac8b9d3f8699374cc7b01f0865eabc3704c03cf0be984ca2150263d02d1c8",
+    "avifSha256": "6fcc5efb4009041c89b71535e89dbdb99d19334295a88dbed74a9c582218f6a1"
+  }
+}

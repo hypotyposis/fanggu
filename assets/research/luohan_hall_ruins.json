@@ -1,0 +1,78 @@
+{
+  "id": "luohan_hall_ruins",
+  "subject": "罗汉院正殿遗址",
+  "sources": [
+    {
+      "file": "assets/references/luohan-final-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:苏州罗汉院双塔及正殿遗址.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/%E8%8B%8F%E5%B7%9E%E7%BD%97%E6%B1%89%E9%99%A2%E5%8F%8C%E5%A1%94%E5%8F%8A%E6%AD%A3%E6%AE%BF%E9%81%97%E5%9D%80.jpg",
+      "author": "Acot一杯茶",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/luohan-final-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/luohan-final-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 罗汉院正殿遗址. ONLY the surviving stone columns and round carved column bases in the FOREGROUND and MIDDLE of the photograph, without BOTH PAGODAS, no buildings, no reconstruction. Capture the visible surviving remains as an explicitly SELECTED PARTIAL VIEW of the former hall ruins, not all sixteen columns. Complete subject with 10% white margins; portrait pagodas, landscape halls or ruins.",
+  "generated_file": "assets/generated/luohan_hall_ruins.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-ef6c4f9c-218c-45fa-a6a7-5f44ded76283.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "罗汉院正殿遗址 · 宋代石柱与柱础局部",
+    "宋代石柱与柱础 · 1860年殿毁"
+  ],
+  "historical_sources": [
+    {
+      "title": "Twin Pagodas",
+      "publisher": "苏州市政府英文网",
+      "url": "https://english.suzhou.gov.cn/szsenglish/szgt/201611/6686f2c8ad96475f8a1c59db89a72b78.shtml"
+    },
+    {
+      "title": "罗汉院双塔及正殿遗址（全国重点文物保护单位介绍，署国家文物局）",
+      "url": "https://web.archive.org/web/20200922014336/http://www.china.com.cn/aboutchina/data/wwbhdw/txt/2006-12/13/content_7499556.htm",
+      "publisher": "中国网，互联网档案馆存档",
+      "note": "982年始建、八角七层、通高33.3米、底层每边5.5米、四面辟门四面隐窗、塔室方形逐层转45度、铁刹约占塔高1/4、正殿遗址在北21米、石柱16根高约4米、柱础30个、前檐六柱浮雕",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "罗汉院双塔",
+      "url": "https://zh.wikipedia.org/wiki/%E7%BD%97%E6%B1%89%E9%99%A2%E5%8F%8C%E5%A1%94",
+      "publisher": "维基百科（中文），二手来源（引王福谆《古代大型铁塔和古塔的大型铁塔刹》等）",
+      "note": "王文罕三兄弟建塔、般若院与罗汉院沿革、1860年正殿毁、塔刹高达8米为已知最早大型铁塔刹",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "Twin Pagodas (Suzhou)",
+      "url": "https://en.wikipedia.org/wiki/Twin_Pagodas_(Suzhou)",
+      "publisher": "维基百科（英文），二手来源（引 Architectura Sinica、苏州市政府英文网）",
+      "note": "两塔名舍利塔与功德舍利塔、王文罕兄弟捐建、寺名沿革",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "0b158066a465b6604ae87620ee4bdc112cd70c92bb46efc97983baa3769ba8db",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "0b158066a465b6604ae87620ee4bdc112cd70c92bb46efc97983baa3769ba8db",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "999b9c06cae8a3b8ba409117796cde6493a42c1f453774558c0e19d5c0cf305f"
+  }
+}

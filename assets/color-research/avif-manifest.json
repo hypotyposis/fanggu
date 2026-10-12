@@ -28573,6 +28573,1960 @@
         "avifSha256": "0cdf8835e5844cfe4d70778f3bb8b2ba60b66b2762d2e463831ed615b3746568"
       }
     },
+    "chongsheng_north": {
+      "source": "assets/colored/chongsheng_north.png",
+      "sourceSha256": "c39c4053b0f712479b0b70b84d61366904d101bfcd424582164f5ee507a40d00",
+      "sourceBytes": 1531201,
+      "input": "assets/colored-transparent/chongsheng_north.png",
+      "inputSha256": "3e10935a727c7e8b0af2e930555f24f0c1b677833baefc304d1d2b6cfde35bd0",
+      "inputBytes": 1452910,
+      "src": "assets/colored-transparent-avif/chongsheng_north.avif",
+      "sha256": "db6875e465b6b4f3c65c4bebf1e75aa761711ed32940e9fcdccce84580c6e913",
+      "bytes": 141555,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1286569,
+        "opaquePixels": 275771,
+        "meanError": 0.008356730143229166,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.496,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "c39c4053b0f712479b0b70b84d61366904d101bfcd424582164f5ee507a40d00",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "c39c4053b0f712479b0b70b84d61366904d101bfcd424582164f5ee507a40d00",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "3e10935a727c7e8b0af2e930555f24f0c1b677833baefc304d1d2b6cfde35bd0",
+        "avifSha256": "db6875e465b6b4f3c65c4bebf1e75aa761711ed32940e9fcdccce84580c6e913"
+      }
+    },
+    "chongsheng_qianxun": {
+      "source": "assets/colored/chongsheng_qianxun.png",
+      "sourceSha256": "08098dd1c8ccdf87e610725707763cf3cc3340cceb66273f8c568ec9d88c928d",
+      "sourceBytes": 1438196,
+      "input": "assets/colored-transparent/chongsheng_qianxun.png",
+      "inputSha256": "b7b60427b0b0c903850d63f5332c2e7a4330610fba976f6213c5a874a92f521a",
+      "inputBytes": 1414591,
+      "src": "assets/colored-transparent-avif/chongsheng_qianxun.avif",
+      "sha256": "0fec58e7af1054476724599488f5597b5fe04ffd9fa22a3b39a5c7ad3329bfee",
+      "bytes": 121460,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1248961,
+        "opaquePixels": 313115,
+        "meanError": 0.008656819661458334,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.467,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "08098dd1c8ccdf87e610725707763cf3cc3340cceb66273f8c568ec9d88c928d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "08098dd1c8ccdf87e610725707763cf3cc3340cceb66273f8c568ec9d88c928d",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "b7b60427b0b0c903850d63f5332c2e7a4330610fba976f6213c5a874a92f521a",
+        "avifSha256": "0fec58e7af1054476724599488f5597b5fe04ffd9fa22a3b39a5c7ad3329bfee"
+      }
+    },
+    "chongsheng_south": {
+      "source": "assets/colored/chongsheng_south.png",
+      "sourceSha256": "d9342d06515bf6081f85b7c9853d61bbd96e0fc1e1ae83b1fe59431b2b94b23e",
+      "sourceBytes": 1760516,
+      "input": "assets/colored-transparent/chongsheng_south.png",
+      "inputSha256": "7bb9f47d78d682adfa8c1e4628a832c0c9f47628638632a89d1df5563d4d5b61",
+      "inputBytes": 1651012,
+      "src": "assets/colored-transparent-avif/chongsheng_south.avif",
+      "sha256": "bc831035fdc888aaa3b39555863fbf1916783128e48524ed98f15fd9ba9b5de2",
+      "bytes": 171168,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1188662,
+        "opaquePixels": 373366,
+        "meanError": 0.008687973022460938,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.466,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d9342d06515bf6081f85b7c9853d61bbd96e0fc1e1ae83b1fe59431b2b94b23e",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "d9342d06515bf6081f85b7c9853d61bbd96e0fc1e1ae83b1fe59431b2b94b23e",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "7bb9f47d78d682adfa8c1e4628a832c0c9f47628638632a89d1df5563d4d5b61",
+        "avifSha256": "bc831035fdc888aaa3b39555863fbf1916783128e48524ed98f15fd9ba9b5de2"
+      }
+    },
+    "chongxing_east": {
+      "source": "assets/colored/chongxing_east.png",
+      "sourceSha256": "b00d074aae37915c852413fab8a71411f8dce20b31eeec45ed83b2a5d0097333",
+      "sourceBytes": 2017699,
+      "input": "assets/colored-transparent/chongxing_east.png",
+      "inputSha256": "d202b9ef8ffe0bcb337fcd5803fb4137b6b6d2ebc5578c33b6d272622c094c4a",
+      "inputBytes": 1919965,
+      "src": "assets/colored-transparent-avif/chongxing_east.avif",
+      "sha256": "84672aa23583dbd7105525667bf61917485c87c0ced9902eb71fe253c77a3b11",
+      "bytes": 227530,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1044658,
+        "opaquePixels": 515174,
+        "meanError": 0.010436375935872396,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.529,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "b00d074aae37915c852413fab8a71411f8dce20b31eeec45ed83b2a5d0097333",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "b00d074aae37915c852413fab8a71411f8dce20b31eeec45ed83b2a5d0097333",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "d202b9ef8ffe0bcb337fcd5803fb4137b6b6d2ebc5578c33b6d272622c094c4a",
+        "avifSha256": "84672aa23583dbd7105525667bf61917485c87c0ced9902eb71fe253c77a3b11"
+      }
+    },
+    "chongxing_west": {
+      "source": "assets/colored/chongxing_west.png",
+      "sourceSha256": "6473486e84eccd7599dec9d73bce2364fc7945f428aecbcc61470d7c5e7080ae",
+      "sourceBytes": 1948208,
+      "input": "assets/colored-transparent/chongxing_west.png",
+      "inputSha256": "a6b3681fd9878a26240a45d594e290fc2397296726ce058a2508b3a69ba4a433",
+      "inputBytes": 1887126,
+      "src": "assets/colored-transparent-avif/chongxing_west.avif",
+      "sha256": "a12681227b26dd7b15ad223f12da54de57e5bcb313d125af3365107d1edd545a",
+      "bytes": 216732,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1065234,
+        "opaquePixels": 494826,
+        "meanError": 0.010079701741536459,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.31,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "6473486e84eccd7599dec9d73bce2364fc7945f428aecbcc61470d7c5e7080ae",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "6473486e84eccd7599dec9d73bce2364fc7945f428aecbcc61470d7c5e7080ae",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "a6b3681fd9878a26240a45d594e290fc2397296726ce058a2508b3a69ba4a433",
+        "avifSha256": "a12681227b26dd7b15ad223f12da54de57e5bcb313d125af3365107d1edd545a"
+      }
+    },
+    "dule_gate": {
+      "source": "assets/colored/dule_gate.png",
+      "sourceSha256": "d34965bc4481b44c8fbbb405ad1a9112814fb5cfbd73052a20e0fbbe98b64f37",
+      "sourceBytes": 2084823,
+      "input": "assets/colored-transparent/dule_gate.png",
+      "inputSha256": "76698d4453f70d68a16c148c9da1141f42abee5413a8cbbe057c964958d1c139",
+      "inputBytes": 1980730,
+      "src": "assets/colored-transparent-avif/dule_gate.avif",
+      "sha256": "85a27a777c4b2e791f4b9dc9c33525924973270e4d8969534cdbba22443f4fb3",
+      "bytes": 235130,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 861535,
+        "opaquePixels": 698619,
+        "meanError": 0.009785970052083334,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.157,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d34965bc4481b44c8fbbb405ad1a9112814fb5cfbd73052a20e0fbbe98b64f37",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "d34965bc4481b44c8fbbb405ad1a9112814fb5cfbd73052a20e0fbbe98b64f37",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "76698d4453f70d68a16c148c9da1141f42abee5413a8cbbe057c964958d1c139",
+        "avifSha256": "85a27a777c4b2e791f4b9dc9c33525924973270e4d8969534cdbba22443f4fb3"
+      }
+    },
+    "dule_guanyin": {
+      "source": "assets/colored/dule_guanyin.png",
+      "sourceSha256": "190c1d57ae84df828fef00c093b49cca8d4f8e89b8ee4c324089cd53c5f180d5",
+      "sourceBytes": 2389105,
+      "input": "assets/colored-transparent/dule_guanyin.png",
+      "inputSha256": "190c1d57ae84df828fef00c093b49cca8d4f8e89b8ee4c324089cd53c5f180d5",
+      "inputBytes": 2389105,
+      "src": "assets/colored-transparent-avif/dule_guanyin.avif",
+      "sha256": "21bec0934d88a76979293058cac56b68f730d8c540685c071c201c0fb0cb858c",
+      "bytes": 275565,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 670292,
+        "opaquePixels": 896732,
+        "meanError": 0.004347483317057292,
+        "maxError": 5
+      },
+      "extraction": {
+        "method": "existing-alpha-preserved",
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.315,
+      "backgroundPreparation": {
+        "method": "native-alpha",
+        "sourceSha256": "190c1d57ae84df828fef00c093b49cca8d4f8e89b8ee4c324089cd53c5f180d5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "190c1d57ae84df828fef00c093b49cca8d4f8e89b8ee4c324089cd53c5f180d5",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "190c1d57ae84df828fef00c093b49cca8d4f8e89b8ee4c324089cd53c5f180d5",
+        "avifSha256": "21bec0934d88a76979293058cac56b68f730d8c540685c071c201c0fb0cb858c"
+      }
+    },
+    "haihui_large": {
+      "source": "assets/colored/haihui_large.png",
+      "sourceSha256": "f7d2dc616d7e2353bd8f57f6023357e268479a2b6e8d846287b5f478ee168808",
+      "sourceBytes": 1659716,
+      "input": "assets/colored-transparent/haihui_large.png",
+      "inputSha256": "e6a43f7f41a41f0bcc807cd62fc359dee3296bc20298e15a13075876e96e5c92",
+      "inputBytes": 1595653,
+      "src": "assets/colored-transparent-avif/haihui_large.avif",
+      "sha256": "e4d2fcc0359c4e69f82af82aced81868221a3a6a4adce66d1c9d906a7c952605",
+      "bytes": 167452,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1228809,
+        "opaquePixels": 334077,
+        "meanError": 0.008021672566731771,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.356,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "f7d2dc616d7e2353bd8f57f6023357e268479a2b6e8d846287b5f478ee168808",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "f7d2dc616d7e2353bd8f57f6023357e268479a2b6e8d846287b5f478ee168808",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "e6a43f7f41a41f0bcc807cd62fc359dee3296bc20298e15a13075876e96e5c92",
+        "avifSha256": "e4d2fcc0359c4e69f82af82aced81868221a3a6a4adce66d1c9d906a7c952605"
+      }
+    },
+    "haihui_small": {
+      "source": "assets/colored/haihui_small.png",
+      "sourceSha256": "7592203d5c1fbc99b431a9b0b033aa6d2424b1000e7468e019e8babb93138f30",
+      "sourceBytes": 1716878,
+      "input": "assets/colored-transparent/haihui_small.png",
+      "inputSha256": "fc07ca151ecc72b2f75371db2d3a994f9b212a8b6dff1baef83c12cce7123f41",
+      "inputBytes": 1634325,
+      "src": "assets/colored-transparent-avif/haihui_small.avif",
+      "sha256": "ac803a6f92e91321c9a667ebfb6237df3e35440cfef87528f96bd65773f0f323",
+      "bytes": 164911,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1198405,
+        "opaquePixels": 363986,
+        "meanError": 0.0081634521484375,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.374,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "7592203d5c1fbc99b431a9b0b033aa6d2424b1000e7468e019e8babb93138f30",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "7592203d5c1fbc99b431a9b0b033aa6d2424b1000e7468e019e8babb93138f30",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "fc07ca151ecc72b2f75371db2d3a994f9b212a8b6dff1baef83c12cce7123f41",
+        "avifSha256": "ac803a6f92e91321c9a667ebfb6237df3e35440cfef87528f96bd65773f0f323"
+      }
+    },
+    "huayan_bojia": {
+      "source": "assets/colored/huayan_bojia.png",
+      "sourceSha256": "65ee9f9b639537f1bc232bea6874832859bee6ad7848a713b664d05ef31fa51e",
+      "sourceBytes": 2002093,
+      "input": "assets/colored-transparent/huayan_bojia.png",
+      "inputSha256": "4d2b49f72213e331fb38882236366738986f772487138193201a4126f980c0d8",
+      "inputBytes": 1832630,
+      "src": "assets/colored-transparent-avif/huayan_bojia.avif",
+      "sha256": "54815bd20fd26bb8c307db0b9ec4b1dedd15b99fdda631b7d33dce82e6139fd2",
+      "bytes": 212157,
+      "width": 1448,
+      "height": 1086,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 936188,
+        "opaquePixels": 625691,
+        "meanError": 0.008221157270331594,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.116,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "65ee9f9b639537f1bc232bea6874832859bee6ad7848a713b664d05ef31fa51e",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "65ee9f9b639537f1bc232bea6874832859bee6ad7848a713b664d05ef31fa51e",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "4d2b49f72213e331fb38882236366738986f772487138193201a4126f980c0d8",
+        "avifSha256": "54815bd20fd26bb8c307db0b9ec4b1dedd15b99fdda631b7d33dce82e6139fd2"
+      }
+    },
+    "huayan_daxiong": {
+      "source": "assets/colored/huayan_daxiong.png",
+      "sourceSha256": "607fa1c833cf2490f3bde1d555f57b76edfd0bf3d2939c0642a87421c42318a9",
+      "sourceBytes": 2203610,
+      "input": "assets/colored-transparent/huayan_daxiong.png",
+      "inputSha256": "607fa1c833cf2490f3bde1d555f57b76edfd0bf3d2939c0642a87421c42318a9",
+      "inputBytes": 2203610,
+      "src": "assets/colored-transparent-avif/huayan_daxiong.avif",
+      "sha256": "e3d497434dbbdaaf3218368bddaea42f84984413409bf113d9eacf0e13e0c7c8",
+      "bytes": 249561,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 815516,
+        "opaquePixels": 752046,
+        "meanError": 0.00374603271484375,
+        "maxError": 5
+      },
+      "extraction": {
+        "method": "existing-alpha-preserved",
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.13,
+      "backgroundPreparation": {
+        "method": "native-alpha",
+        "sourceSha256": "607fa1c833cf2490f3bde1d555f57b76edfd0bf3d2939c0642a87421c42318a9",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "607fa1c833cf2490f3bde1d555f57b76edfd0bf3d2939c0642a87421c42318a9",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "607fa1c833cf2490f3bde1d555f57b76edfd0bf3d2939c0642a87421c42318a9",
+        "avifSha256": "e3d497434dbbdaaf3218368bddaea42f84984413409bf113d9eacf0e13e0c7c8"
+      }
+    },
+    "jiahuiguan_east": {
+      "source": "assets/colored/jiahuiguan_east.png",
+      "sourceSha256": "cfa0a7e584409b832111b3a178261fed73f87e13dd62394a82c7b2fb3c4ae5f2",
+      "sourceBytes": 2183176,
+      "input": "assets/colored-transparent/jiahuiguan_east.png",
+      "inputSha256": "0357ea0a7455be453b5f0d71ed3ae91de4c4f3ee681a923eddc164e9c085f111",
+      "inputBytes": 2031279,
+      "src": "assets/colored-transparent-avif/jiahuiguan_east.avif",
+      "sha256": "44ccb191e29a47e1926430426f09740f9b0beaeb19176b0ee86cce7a3d8fd46a",
+      "bytes": 264823,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 964347,
+        "opaquePixels": 595310,
+        "meanError": 0.010476430257161459,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.346,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "cfa0a7e584409b832111b3a178261fed73f87e13dd62394a82c7b2fb3c4ae5f2",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "cfa0a7e584409b832111b3a178261fed73f87e13dd62394a82c7b2fb3c4ae5f2",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "0357ea0a7455be453b5f0d71ed3ae91de4c4f3ee681a923eddc164e9c085f111",
+        "avifSha256": "44ccb191e29a47e1926430426f09740f9b0beaeb19176b0ee86cce7a3d8fd46a"
+      }
+    },
+    "jiahuiguan_gate": {
+      "source": "assets/colored/jiahuiguan_gate.png",
+      "sourceSha256": "e97e1b631c4ed80ec06c4ba1f7e180617b33a1cc9ef8d05bd939697c7a626ee5",
+      "sourceBytes": 2414521,
+      "input": "assets/colored-transparent/jiahuiguan_gate.png",
+      "inputSha256": "3c875b8a265f5810bdc227aed086d3881b1dfa85053eb9f0a4accfd7dcc576fa",
+      "inputBytes": 2263770,
+      "src": "assets/colored-transparent-avif/jiahuiguan_gate.avif",
+      "sha256": "e528463fb61fe3bb0ab5da30b5d306c52ddf508e3ebebfa0ffa4090f4f4b45d3",
+      "bytes": 309874,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 802324,
+        "opaquePixels": 757016,
+        "meanError": 0.0105133056640625,
+        "maxError": 8
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.208,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e97e1b631c4ed80ec06c4ba1f7e180617b33a1cc9ef8d05bd939697c7a626ee5",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "e97e1b631c4ed80ec06c4ba1f7e180617b33a1cc9ef8d05bd939697c7a626ee5",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "3c875b8a265f5810bdc227aed086d3881b1dfa85053eb9f0a4accfd7dcc576fa",
+        "avifSha256": "e528463fb61fe3bb0ab5da30b5d306c52ddf508e3ebebfa0ffa4090f4f4b45d3"
+      }
+    },
+    "jiahuiguan_west": {
+      "source": "assets/colored/jiahuiguan_west.png",
+      "sourceSha256": "d141f43e8d6ce889f9fdb2882ea06debe8f2547a6d0b6623dfca3456124d53a4",
+      "sourceBytes": 2326771,
+      "input": "assets/colored-transparent/jiahuiguan_west.png",
+      "inputSha256": "446bc4076a956c117a0ec8f48866f984b36a509f42cb9eaefdfc527cdb247ce8",
+      "inputBytes": 2164166,
+      "src": "assets/colored-transparent-avif/jiahuiguan_west.avif",
+      "sha256": "fe23657d605390abbc431af93a3df31e0d8793e4f5948cf4774d0e096264338b",
+      "bytes": 291603,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 881622,
+        "opaquePixels": 675768,
+        "meanError": 0.012202580769856771,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.315,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d141f43e8d6ce889f9fdb2882ea06debe8f2547a6d0b6623dfca3456124d53a4",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "d141f43e8d6ce889f9fdb2882ea06debe8f2547a6d0b6623dfca3456124d53a4",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "446bc4076a956c117a0ec8f48866f984b36a509f42cb9eaefdfc527cdb247ce8",
+        "avifSha256": "fe23657d605390abbc431af93a3df31e0d8793e4f5948cf4774d0e096264338b"
+      }
+    },
+    "kaiyuan_bell": {
+      "source": "assets/colored/kaiyuan_bell.png",
+      "sourceSha256": "111cd48206c651bb5858161790d086eb8845b99df4cb4f806d61a6b7de2c2256",
+      "sourceBytes": 2016512,
+      "input": "assets/colored-transparent/kaiyuan_bell.png",
+      "inputSha256": "2fb1d4c437622871c16648d4e795eaa5b775a55c2b005d73a7aa46eab4215539",
+      "inputBytes": 1849588,
+      "src": "assets/colored-transparent-avif/kaiyuan_bell.avif",
+      "sha256": "dfea6f3ceddf4f19324107a7d95991803f395bbea096e07551403f45e70f3550",
+      "bytes": 233941,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 893035,
+        "opaquePixels": 669748,
+        "meanError": 0.007991790771484375,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.131,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "111cd48206c651bb5858161790d086eb8845b99df4cb4f806d61a6b7de2c2256",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "111cd48206c651bb5858161790d086eb8845b99df4cb4f806d61a6b7de2c2256",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "2fb1d4c437622871c16648d4e795eaa5b775a55c2b005d73a7aa46eab4215539",
+        "avifSha256": "dfea6f3ceddf4f19324107a7d95991803f395bbea096e07551403f45e70f3550"
+      }
+    },
+    "kaiyuan_xumi": {
+      "source": "assets/colored/kaiyuan_xumi.png",
+      "sourceSha256": "ad0148f889c3e790eff22ce235ceccbd8049613f47bec59b9ed41836d6eb7d51",
+      "sourceBytes": 1982623,
+      "input": "assets/colored-transparent/kaiyuan_xumi.png",
+      "inputSha256": "180ba1b76d77b5e06a1350532201be5619c5d29b6b4de90b0894dfb9ff273aa8",
+      "inputBytes": 1811440,
+      "src": "assets/colored-transparent-avif/kaiyuan_xumi.avif",
+      "sha256": "7948c2cffbbdeda8d82486b811ec40d2d8f50b7aab22c0c754bf7e6952363487",
+      "bytes": 207954,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1082887,
+        "opaquePixels": 476810,
+        "meanError": 0.010351181030273438,
+        "maxError": 16
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.193,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ad0148f889c3e790eff22ce235ceccbd8049613f47bec59b9ed41836d6eb7d51",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "ad0148f889c3e790eff22ce235ceccbd8049613f47bec59b9ed41836d6eb7d51",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "180ba1b76d77b5e06a1350532201be5619c5d29b6b4de90b0894dfb9ff273aa8",
+        "avifSha256": "7948c2cffbbdeda8d82486b811ec40d2d8f50b7aab22c0c754bf7e6952363487"
+      }
+    },
+    "lingyin_east_pillar": {
+      "source": "assets/colored/lingyin_east_pillar.png",
+      "sourceSha256": "75063e53017eb4c282352fb6569d388664427d5458e20551a7d7309a197077a0",
+      "sourceBytes": 1692540,
+      "input": "assets/colored-transparent/lingyin_east_pillar.png",
+      "inputSha256": "8dcacbece385c2f4dc05761c0aab8dce198daca6d2e0a8fde483812202271cb0",
+      "inputBytes": 1583729,
+      "src": "assets/colored-transparent-avif/lingyin_east_pillar.avif",
+      "sha256": "915509c00c12999b98efd29705d4f3f98ef1a5c665727eabe327421d89f52f51",
+      "bytes": 151530,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1224741,
+        "opaquePixels": 339089,
+        "meanError": 0.0071868896484375,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.146,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "75063e53017eb4c282352fb6569d388664427d5458e20551a7d7309a197077a0",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "75063e53017eb4c282352fb6569d388664427d5458e20551a7d7309a197077a0",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "8dcacbece385c2f4dc05761c0aab8dce198daca6d2e0a8fde483812202271cb0",
+        "avifSha256": "915509c00c12999b98efd29705d4f3f98ef1a5c665727eabe327421d89f52f51"
+      }
+    },
+    "lingyin_east_tower": {
+      "source": "assets/colored/lingyin_east_tower.png",
+      "sourceSha256": "815f01bc7d4fda39081cf75aad0eaa8518a8e7c6955a3c991255508c77144043",
+      "sourceBytes": 1777078,
+      "input": "assets/colored-transparent/lingyin_east_tower.png",
+      "inputSha256": "60f245f0097652706f3a5e48aff20bfac325a4f896817eaccab4cbdae214d12c",
+      "inputBytes": 1705428,
+      "src": "assets/colored-transparent-avif/lingyin_east_tower.avif",
+      "sha256": "def7e26e58a868f4944ed21ba31f408667135fbefb726a8055daf53ac70f8990",
+      "bytes": 177355,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1168308,
+        "opaquePixels": 393519,
+        "meanError": 0.008818944295247396,
+        "maxError": 12
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.347,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "815f01bc7d4fda39081cf75aad0eaa8518a8e7c6955a3c991255508c77144043",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "815f01bc7d4fda39081cf75aad0eaa8518a8e7c6955a3c991255508c77144043",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "60f245f0097652706f3a5e48aff20bfac325a4f896817eaccab4cbdae214d12c",
+        "avifSha256": "def7e26e58a868f4944ed21ba31f408667135fbefb726a8055daf53ac70f8990"
+      }
+    },
+    "lingyin_west_pillar": {
+      "source": "assets/colored/lingyin_west_pillar.png",
+      "sourceSha256": "01885ab8ae753b79478f9b0da5f17d823a1f89a9874dc062b98086069c02eea8",
+      "sourceBytes": 1594758,
+      "input": "assets/colored-transparent/lingyin_west_pillar.png",
+      "inputSha256": "d605e76e2d8c1a657ed5a26173cc210dd2780dd1896af3816db3578908ff6696",
+      "inputBytes": 1477858,
+      "src": "assets/colored-transparent-avif/lingyin_west_pillar.avif",
+      "sha256": "b88bf80be9764cbf39009473ff96ea1c578bc5432d7713c81a5fad5f870edb2b",
+      "bytes": 136774,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1275665,
+        "opaquePixels": 287699,
+        "meanError": 0.007718404134114583,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.273,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "01885ab8ae753b79478f9b0da5f17d823a1f89a9874dc062b98086069c02eea8",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "01885ab8ae753b79478f9b0da5f17d823a1f89a9874dc062b98086069c02eea8",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "d605e76e2d8c1a657ed5a26173cc210dd2780dd1896af3816db3578908ff6696",
+        "avifSha256": "b88bf80be9764cbf39009473ff96ea1c578bc5432d7713c81a5fad5f870edb2b"
+      }
+    },
+    "lingyin_west_tower": {
+      "source": "assets/colored/lingyin_west_tower.png",
+      "sourceSha256": "50498816f3a5ddb57fb249854c727c8ae0232d6705fe53a63cf57d2d268d0b80",
+      "sourceBytes": 1772524,
+      "input": "assets/colored-transparent/lingyin_west_tower.png",
+      "inputSha256": "ea3e87c52cc10e0fcf9c0215fdf6c27098ba8e3998ae364dfcabea2e5ffb60f5",
+      "inputBytes": 1680422,
+      "src": "assets/colored-transparent-avif/lingyin_west_tower.avif",
+      "sha256": "10aea7a0a5564875cb3df462b14efee6054784d9cee7b0ed1b707310c01c453e",
+      "bytes": 172737,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1173556,
+        "opaquePixels": 388145,
+        "meanError": 0.008831659952799479,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.332,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "50498816f3a5ddb57fb249854c727c8ae0232d6705fe53a63cf57d2d268d0b80",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "50498816f3a5ddb57fb249854c727c8ae0232d6705fe53a63cf57d2d268d0b80",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "ea3e87c52cc10e0fcf9c0215fdf6c27098ba8e3998ae364dfcabea2e5ffb60f5",
+        "avifSha256": "10aea7a0a5564875cb3df462b14efee6054784d9cee7b0ed1b707310c01c453e"
+      }
+    },
+    "longxing_mani": {
+      "source": "assets/colored/longxing_mani.png",
+      "sourceSha256": "2f8e85e10d7caee9571012ea8f0bf5a32bfc9a0ceb99036e10eeae4f6542f3a0",
+      "sourceBytes": 2281931,
+      "input": "assets/colored-transparent/longxing_mani.png",
+      "inputSha256": "2f8e85e10d7caee9571012ea8f0bf5a32bfc9a0ceb99036e10eeae4f6542f3a0",
+      "inputBytes": 2281931,
+      "src": "assets/colored-transparent-avif/longxing_mani.avif",
+      "sha256": "62989311026e0c30553f6cbf00abe4975a8d2f5f7d6409285de81c8dca19b304",
+      "bytes": 271244,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 820068,
+        "opaquePixels": 747506,
+        "meanError": 0.0038967132568359375,
+        "maxError": 5
+      },
+      "extraction": {
+        "method": "existing-alpha-preserved",
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.295,
+      "backgroundPreparation": {
+        "method": "native-alpha",
+        "sourceSha256": "2f8e85e10d7caee9571012ea8f0bf5a32bfc9a0ceb99036e10eeae4f6542f3a0",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "2f8e85e10d7caee9571012ea8f0bf5a32bfc9a0ceb99036e10eeae4f6542f3a0",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "2f8e85e10d7caee9571012ea8f0bf5a32bfc9a0ceb99036e10eeae4f6542f3a0",
+        "avifSha256": "62989311026e0c30553f6cbf00abe4975a8d2f5f7d6409285de81c8dca19b304"
+      }
+    },
+    "longxing_zhuanlun": {
+      "source": "assets/colored/longxing_zhuanlun.png",
+      "sourceSha256": "d2f8cc5c10e58f7bab62a93110170d7781441caa781c7cdfb2b08278ac18128b",
+      "sourceBytes": 2342481,
+      "input": "assets/colored-transparent/longxing_zhuanlun.png",
+      "inputSha256": "8b253966ae52bae4ea15b7244c045c8646927d1f5322c664c249a37b6cba2fe5",
+      "inputBytes": 2216738,
+      "src": "assets/colored-transparent-avif/longxing_zhuanlun.avif",
+      "sha256": "0b74c3bb89c1dee9660474f1dc4b0d9065ae2005f102f9f6a46929cca620b97d",
+      "bytes": 295304,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 767306,
+        "opaquePixels": 791608,
+        "meanError": 0.010843276977539062,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.257,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "d2f8cc5c10e58f7bab62a93110170d7781441caa781c7cdfb2b08278ac18128b",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "d2f8cc5c10e58f7bab62a93110170d7781441caa781c7cdfb2b08278ac18128b",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "8b253966ae52bae4ea15b7244c045c8646927d1f5322c664c249a37b6cba2fe5",
+        "avifSha256": "0b74c3bb89c1dee9660474f1dc4b0d9065ae2005f102f9f6a46929cca620b97d"
+      }
+    },
+    "luohan_east": {
+      "source": "assets/colored/luohan_east.png",
+      "sourceSha256": "599ca1493073276f318437beb95ac36492e1cd196c4e538cbed12720eb18ff36",
+      "sourceBytes": 1499654,
+      "input": "assets/colored-transparent/luohan_east.png",
+      "inputSha256": "ad84259a3f3b090c5b23f15e027993f4af0769392825508f2514f10e262ac616",
+      "inputBytes": 1424823,
+      "src": "assets/colored-transparent-avif/luohan_east.avif",
+      "sha256": "d57af38c85b95d8ca9526f88038a94d08d615833dc12dbfdcc4f5121e30e21db",
+      "bytes": 138454,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1261709,
+        "opaquePixels": 297453,
+        "meanError": 0.010859171549479166,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.345,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "599ca1493073276f318437beb95ac36492e1cd196c4e538cbed12720eb18ff36",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "599ca1493073276f318437beb95ac36492e1cd196c4e538cbed12720eb18ff36",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "ad84259a3f3b090c5b23f15e027993f4af0769392825508f2514f10e262ac616",
+        "avifSha256": "d57af38c85b95d8ca9526f88038a94d08d615833dc12dbfdcc4f5121e30e21db"
+      }
+    },
+    "luohan_hall_ruins": {
+      "source": "assets/colored/luohan_hall_ruins.png",
+      "sourceSha256": "cd6bc61edbf78693827529b062e82ddb9e5089c72848e59fc4dcd3dfa321b629",
+      "sourceBytes": 1438189,
+      "input": "assets/colored-transparent/luohan_hall_ruins.png",
+      "inputSha256": "7967c8bbd8a0e8bb44557e29a888247a0c1c7de5c8ede056f4b24f7db1774401",
+      "inputBytes": 1306729,
+      "src": "assets/colored-transparent-avif/luohan_hall_ruins.avif",
+      "sha256": "9527defab504bacf3906c03b7b02c3e3c651f6cda5c5d5ce7170bc54630ca432",
+      "bytes": 130527,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1227891,
+        "opaquePixels": 332846,
+        "meanError": 0.008879979451497396,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.154,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "cd6bc61edbf78693827529b062e82ddb9e5089c72848e59fc4dcd3dfa321b629",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "cd6bc61edbf78693827529b062e82ddb9e5089c72848e59fc4dcd3dfa321b629",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "7967c8bbd8a0e8bb44557e29a888247a0c1c7de5c8ede056f4b24f7db1774401",
+        "avifSha256": "9527defab504bacf3906c03b7b02c3e3c651f6cda5c5d5ce7170bc54630ca432"
+      }
+    },
+    "luohan_west": {
+      "source": "assets/colored/luohan_west.png",
+      "sourceSha256": "b4afac61351cdcf65c312877763d35b886688711655b17cb92c7e85426db7322",
+      "sourceBytes": 1475505,
+      "input": "assets/colored-transparent/luohan_west.png",
+      "inputSha256": "cc83718aa5a5512cfab7cb464ddf50099819be91bb16a6dd1d7e8e29e5581ec0",
+      "inputBytes": 1417176,
+      "src": "assets/colored-transparent-avif/luohan_west.avif",
+      "sha256": "a16274f2d99ffc25d41080107de6d85abaae0f60d65d648e87c70435e748956a",
+      "bytes": 133347,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1276985,
+        "opaquePixels": 283224,
+        "meanError": 0.0101470947265625,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.281,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "b4afac61351cdcf65c312877763d35b886688711655b17cb92c7e85426db7322",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "b4afac61351cdcf65c312877763d35b886688711655b17cb92c7e85426db7322",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "cc83718aa5a5512cfab7cb464ddf50099819be91bb16a6dd1d7e8e29e5581ec0",
+        "avifSha256": "a16274f2d99ffc25d41080107de6d85abaae0f60d65d648e87c70435e748956a"
+      }
+    },
+    "shanhua_daxiong": {
+      "source": "assets/colored/shanhua_daxiong.png",
+      "sourceSha256": "eba3e2d0e2839a1c098c5429a36a7e82d61b63b427a2da0219932643de0a2a9e",
+      "sourceBytes": 2038253,
+      "input": "assets/colored-transparent/shanhua_daxiong.png",
+      "inputSha256": "482af511c1b08863fdc5c404a2da8fdeb3cbeb89221470c6f33e3d9afb916f1b",
+      "inputBytes": 1851568,
+      "src": "assets/colored-transparent-avif/shanhua_daxiong.avif",
+      "sha256": "737353d281adc925ceab9cade9f39eee6b52fae5acbef736fe984ef926a126a5",
+      "bytes": 209785,
+      "width": 1448,
+      "height": 1086,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 928123,
+        "opaquePixels": 633567,
+        "meanError": 0.008219249514158094,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.973,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "eba3e2d0e2839a1c098c5429a36a7e82d61b63b427a2da0219932643de0a2a9e",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "eba3e2d0e2839a1c098c5429a36a7e82d61b63b427a2da0219932643de0a2a9e",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "482af511c1b08863fdc5c404a2da8fdeb3cbeb89221470c6f33e3d9afb916f1b",
+        "avifSha256": "737353d281adc925ceab9cade9f39eee6b52fae5acbef736fe984ef926a126a5"
+      }
+    },
+    "shanhua_gate": {
+      "source": "assets/colored/shanhua_gate.png",
+      "sourceSha256": "ce11ebc69fa8dd09cdcd5698267a4cbd7898f53a65d81d9bec92e23a94996217",
+      "sourceBytes": 2026779,
+      "input": "assets/colored-transparent/shanhua_gate.png",
+      "inputSha256": "a47eb1ae0e24c676fe8d5cfb373d1def7e493a31ad3e48923add17fd7a0967c6",
+      "inputBytes": 1840878,
+      "src": "assets/colored-transparent-avif/shanhua_gate.avif",
+      "sha256": "1895f7023a8af6ed9ae05ba7cc58fb0619f9eca03afb79cb0f8f64156cdbecd1",
+      "bytes": 215816,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 902390,
+        "opaquePixels": 660657,
+        "meanError": 0.007504781087239583,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.304,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "ce11ebc69fa8dd09cdcd5698267a4cbd7898f53a65d81d9bec92e23a94996217",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "ce11ebc69fa8dd09cdcd5698267a4cbd7898f53a65d81d9bec92e23a94996217",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "a47eb1ae0e24c676fe8d5cfb373d1def7e493a31ad3e48923add17fd7a0967c6",
+        "avifSha256": "1895f7023a8af6ed9ae05ba7cc58fb0619f9eca03afb79cb0f8f64156cdbecd1"
+      }
+    },
+    "shanhua_puxian": {
+      "source": "assets/colored/shanhua_puxian.png",
+      "sourceSha256": "96dba152ab70de22944b7530f1503a8b436523370cd03c1ba549622d84db4fc2",
+      "sourceBytes": 2296755,
+      "input": "assets/colored-transparent/shanhua_puxian.png",
+      "inputSha256": "96dba152ab70de22944b7530f1503a8b436523370cd03c1ba549622d84db4fc2",
+      "inputBytes": 2296755,
+      "src": "assets/colored-transparent-avif/shanhua_puxian.avif",
+      "sha256": "89f93dfdb6739bcae8afdb56d4e5a704b1e572c8126b2847cdb08cd6c04b8d43",
+      "bytes": 249978,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 790659,
+        "opaquePixels": 776252,
+        "meanError": 0.004255930582682292,
+        "maxError": 5
+      },
+      "extraction": {
+        "method": "existing-alpha-preserved",
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.095,
+      "backgroundPreparation": {
+        "method": "native-alpha",
+        "sourceSha256": "96dba152ab70de22944b7530f1503a8b436523370cd03c1ba549622d84db4fc2",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "96dba152ab70de22944b7530f1503a8b436523370cd03c1ba549622d84db4fc2",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "96dba152ab70de22944b7530f1503a8b436523370cd03c1ba549622d84db4fc2",
+        "avifSha256": "89f93dfdb6739bcae8afdb56d4e5a704b1e572c8126b2847cdb08cd6c04b8d43"
+      }
+    },
+    "shanhua_sansheng": {
+      "source": "assets/colored/shanhua_sansheng.png",
+      "sourceSha256": "68e95669deea1ec1c8234dce329c9f06cee92c7b3afd5e75240b0f4e193a8e88",
+      "sourceBytes": 2293534,
+      "input": "assets/colored-transparent/shanhua_sansheng.png",
+      "inputSha256": "ce2e86dd08e571e5cd3d12cc921b5591c0c1d938d4e069208d9edd220e038298",
+      "inputBytes": 2208952,
+      "src": "assets/colored-transparent-avif/shanhua_sansheng.avif",
+      "sha256": "0ab9fd0e678117c71941a753f12f679bf1e64ab2013812965afcc2ae34fbab67",
+      "bytes": 255917,
+      "width": 1517,
+      "height": 1037,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 738988,
+        "opaquePixels": 821684,
+        "meanError": 0.009160087952100559,
+        "maxError": 15
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.448,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "68e95669deea1ec1c8234dce329c9f06cee92c7b3afd5e75240b0f4e193a8e88",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "68e95669deea1ec1c8234dce329c9f06cee92c7b3afd5e75240b0f4e193a8e88",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "ce2e86dd08e571e5cd3d12cc921b5591c0c1d938d4e069208d9edd220e038298",
+        "avifSha256": "0ab9fd0e678117c71941a753f12f679bf1e64ab2013812965afcc2ae34fbab67"
+      }
+    },
+    "xian_bell": {
+      "source": "assets/colored/xian_bell.png",
+      "sourceSha256": "91f29f6dffb2bbc79343446cf434539f6df7a82f16938dd0431dff9649c37fc0",
+      "sourceBytes": 2023233,
+      "input": "assets/colored-transparent/xian_bell.png",
+      "inputSha256": "39fe42fb61937149e8b02cf15c969be0144e2b3d492fcefab0d612eae5b6106a",
+      "inputBytes": 1883685,
+      "src": "assets/colored-transparent-avif/xian_bell.avif",
+      "sha256": "7f53b172fefbf0608df6004e920699dffa3084aa387e9b0d66fd8df119d7b7e8",
+      "bytes": 232407,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 974248,
+        "opaquePixels": 587367,
+        "meanError": 0.008880615234375,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.61,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "91f29f6dffb2bbc79343446cf434539f6df7a82f16938dd0431dff9649c37fc0",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "91f29f6dffb2bbc79343446cf434539f6df7a82f16938dd0431dff9649c37fc0",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "39fe42fb61937149e8b02cf15c969be0144e2b3d492fcefab0d612eae5b6106a",
+        "avifSha256": "7f53b172fefbf0608df6004e920699dffa3084aa387e9b0d66fd8df119d7b7e8"
+      }
+    },
+    "xian_drum": {
+      "source": "assets/colored/xian_drum.png",
+      "sourceSha256": "cc6bbc95542b1a7c12279bd5c37219ace3f0867cdcf09df5b3a45e4bded31a8c",
+      "sourceBytes": 2606423,
+      "input": "assets/colored-transparent/xian_drum.png",
+      "inputSha256": "41ccd6532c9023a27cf2f5055b12fec19677db1360bb0ee8ba248c3bf615fbaf",
+      "inputBytes": 2419130,
+      "src": "assets/colored-transparent-avif/xian_drum.avif",
+      "sha256": "7cc065153ca80832c5bae7f04a835e0333fe62bc8e620da0b5e0d4c628afd381",
+      "bytes": 331327,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 787665,
+        "opaquePixels": 772454,
+        "meanError": 0.009990056355794271,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.669,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "cc6bbc95542b1a7c12279bd5c37219ace3f0867cdcf09df5b3a45e4bded31a8c",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "cc6bbc95542b1a7c12279bd5c37219ace3f0867cdcf09df5b3a45e4bded31a8c",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "41ccd6532c9023a27cf2f5055b12fec19677db1360bb0ee8ba248c3bf615fbaf",
+        "avifSha256": "7cc065153ca80832c5bae7f04a835e0333fe62bc8e620da0b5e0d4c628afd381"
+      }
+    },
+    "xitai_aohu": {
+      "source": "assets/colored/xitai_aohu.png",
+      "sourceSha256": "44a78a48eb84718d0b2b8725206faefdf2553b911500b94e8ae3d65303346f5f",
+      "sourceBytes": 3430060,
+      "input": "assets/colored-transparent/xitai_aohu.png",
+      "inputSha256": "44a78a48eb84718d0b2b8725206faefdf2553b911500b94e8ae3d65303346f5f",
+      "inputBytes": 3430060,
+      "src": "assets/colored-transparent-avif/xitai_aohu.avif",
+      "sha256": "50f4f84b87cba85b8ec0f08cf2eb191be4c0fc00f5bafdfdf5674961b6b6d799",
+      "bytes": 477620,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 64361,
+        "opaquePixels": 1504445,
+        "meanError": 0.0030994415283203125,
+        "maxError": 5
+      },
+      "extraction": {
+        "method": "existing-alpha-preserved",
+        "rgbUnchanged": true
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 1.131,
+      "backgroundPreparation": {
+        "method": "native-alpha",
+        "sourceSha256": "44a78a48eb84718d0b2b8725206faefdf2553b911500b94e8ae3d65303346f5f",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "44a78a48eb84718d0b2b8725206faefdf2553b911500b94e8ae3d65303346f5f",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "44a78a48eb84718d0b2b8725206faefdf2553b911500b94e8ae3d65303346f5f",
+        "avifSha256": "50f4f84b87cba85b8ec0f08cf2eb191be4c0fc00f5bafdfdf5674961b6b6d799"
+      }
+    },
+    "xitai_chenghuang": {
+      "source": "assets/colored/xitai_chenghuang.png",
+      "sourceSha256": "76bde98b2e4c785c8428150391e736a8956c0cf748291f41550c7260ed65df2b",
+      "sourceBytes": 2145541,
+      "input": "assets/colored-transparent/xitai_chenghuang.png",
+      "inputSha256": "15fac8b9d3f8699374cc7b01f0865eabc3704c03cf0be984ca2150263d02d1c8",
+      "inputBytes": 2091750,
+      "src": "assets/colored-transparent-avif/xitai_chenghuang.avif",
+      "sha256": "6fcc5efb4009041c89b71535e89dbdb99d19334295a88dbed74a9c582218f6a1",
+      "bytes": 242457,
+      "width": 1535,
+      "height": 1025,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 830455,
+        "opaquePixels": 727427,
+        "meanError": 0.012048621593707794,
+        "maxError": 14
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.135,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "76bde98b2e4c785c8428150391e736a8956c0cf748291f41550c7260ed65df2b",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "76bde98b2e4c785c8428150391e736a8956c0cf748291f41550c7260ed65df2b",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "15fac8b9d3f8699374cc7b01f0865eabc3704c03cf0be984ca2150263d02d1c8",
+        "avifSha256": "6fcc5efb4009041c89b71535e89dbdb99d19334295a88dbed74a9c582218f6a1"
+      }
+    },
+    "yongzuo_wenfeng": {
+      "source": "assets/colored/yongzuo_wenfeng.png",
+      "sourceSha256": "bc507cb8d3bae17d479f02f33e46af0b784ebc2a7eba979df1b6068e2fd0bc2e",
+      "sourceBytes": 1662718,
+      "input": "assets/colored-transparent/yongzuo_wenfeng.png",
+      "inputSha256": "e64f7216b5f25eda2d95a554db9d9b2ceece56ab035aee2c5610f742de146631",
+      "inputBytes": 1586936,
+      "src": "assets/colored-transparent-avif/yongzuo_wenfeng.avif",
+      "sha256": "bbc0f84a933f0142893f5dfcc2153e600b2beeee0bc2c4790cfa576be13eb76c",
+      "bytes": 162870,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1212177,
+        "opaquePixels": 346502,
+        "meanError": 0.011267344156901041,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.305,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "bc507cb8d3bae17d479f02f33e46af0b784ebc2a7eba979df1b6068e2fd0bc2e",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "bc507cb8d3bae17d479f02f33e46af0b784ebc2a7eba979df1b6068e2fd0bc2e",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "e64f7216b5f25eda2d95a554db9d9b2ceece56ab035aee2c5610f742de146631",
+        "avifSha256": "bbc0f84a933f0142893f5dfcc2153e600b2beeee0bc2c4790cfa576be13eb76c"
+      }
+    },
+    "yongzuo_xuanwen": {
+      "source": "assets/colored/yongzuo_xuanwen.png",
+      "sourceSha256": "b6d234fff4d4e657809cffd14b95a49672a53918315e99740844d308d8f0b674",
+      "sourceBytes": 1995360,
+      "input": "assets/colored-transparent/yongzuo_xuanwen.png",
+      "inputSha256": "6b9f71ed4d4532d31e27f6ad77b83782be34fd65e4caa453a082119093cf5693",
+      "inputBytes": 1902298,
+      "src": "assets/colored-transparent-avif/yongzuo_xuanwen.avif",
+      "sha256": "9d0a90991d16616bdc23ed11279fbc383f575113f8352f6b8bc445ff04a8a33c",
+      "bytes": 217383,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1087397,
+        "opaquePixels": 473803,
+        "meanError": 0.009389877319335938,
+        "maxError": 11
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.249,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "b6d234fff4d4e657809cffd14b95a49672a53918315e99740844d308d8f0b674",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "b6d234fff4d4e657809cffd14b95a49672a53918315e99740844d308d8f0b674",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "6b9f71ed4d4532d31e27f6ad77b83782be34fd65e4caa453a082119093cf5693",
+        "avifSha256": "9d0a90991d16616bdc23ed11279fbc383f575113f8352f6b8bc445ff04a8a33c"
+      }
+    },
+    "yuanqi_hall": {
+      "source": "assets/colored/yuanqi_hall.png",
+      "sourceSha256": "72add603585fbadb16377a60046d13489375192844b9710b6477159608786818",
+      "sourceBytes": 2228991,
+      "input": "assets/colored-transparent/yuanqi_hall.png",
+      "inputSha256": "610b40d951df57982d1971b3550bd16296aa3d40ad57b2ea38d9a50fff183dc3",
+      "inputBytes": 2086389,
+      "src": "assets/colored-transparent-avif/yuanqi_hall.avif",
+      "sha256": "c385b59394c8145644c9055fbe1c7b2f1eab2a35dbdd4218ae4666a8a501f17d",
+      "bytes": 279526,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 894993,
+        "opaquePixels": 667092,
+        "meanError": 0.008776346842447916,
+        "maxError": 18
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.274,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "72add603585fbadb16377a60046d13489375192844b9710b6477159608786818",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "72add603585fbadb16377a60046d13489375192844b9710b6477159608786818",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "610b40d951df57982d1971b3550bd16296aa3d40ad57b2ea38d9a50fff183dc3",
+        "avifSha256": "c385b59394c8145644c9055fbe1c7b2f1eab2a35dbdd4218ae4666a8a501f17d"
+      }
+    },
+    "yuanqi_qinglong": {
+      "source": "assets/colored/yuanqi_qinglong.png",
+      "sourceSha256": "4fe2a35cd46cfad08d753dafc34695a9a1caface3ba8c1da815c0c03d6f0501d",
+      "sourceBytes": 1805705,
+      "input": "assets/colored-transparent/yuanqi_qinglong.png",
+      "inputSha256": "4c114b97c1cfb65ed525cd20747ab9fc241ae01980377b2cf64a13b1a8f090ba",
+      "inputBytes": 1756995,
+      "src": "assets/colored-transparent-avif/yuanqi_qinglong.avif",
+      "sha256": "20386dd7805e60705d6ad3c8ada50852336bcd0f17bdff6e41710016f5416dfe",
+      "bytes": 202183,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 1159103,
+        "opaquePixels": 401562,
+        "meanError": 0.009763081868489584,
+        "maxError": 17
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.365,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "4fe2a35cd46cfad08d753dafc34695a9a1caface3ba8c1da815c0c03d6f0501d",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "4fe2a35cd46cfad08d753dafc34695a9a1caface3ba8c1da815c0c03d6f0501d",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "4c114b97c1cfb65ed525cd20747ab9fc241ae01980377b2cf64a13b1a8f090ba",
+        "avifSha256": "20386dd7805e60705d6ad3c8ada50852336bcd0f17bdff6e41710016f5416dfe"
+      }
+    },
+    "zhuozhou_yunju": {
+      "source": "assets/colored/zhuozhou_yunju.png",
+      "sourceSha256": "43bb4362a5fd0e358b9f03a4702f29c50e8fb205a9283be3ad52dd26ee2433d0",
+      "sourceBytes": 2064625,
+      "input": "assets/colored-transparent/zhuozhou_yunju.png",
+      "inputSha256": "0e9676d6c4705d71ae51985f605ffa5e66ef9eb940ac0c7f521878965e64a7d8",
+      "inputBytes": 1948113,
+      "src": "assets/colored-transparent-avif/zhuozhou_yunju.avif",
+      "sha256": "cd1a66516d7b79934677ad973c46088f15fe9cb99ecc6d18572751fa40e40d60",
+      "bytes": 246628,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 942399,
+        "opaquePixels": 618546,
+        "meanError": 0.009478886922200521,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.062,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "43bb4362a5fd0e358b9f03a4702f29c50e8fb205a9283be3ad52dd26ee2433d0",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "43bb4362a5fd0e358b9f03a4702f29c50e8fb205a9283be3ad52dd26ee2433d0",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "0e9676d6c4705d71ae51985f605ffa5e66ef9eb940ac0c7f521878965e64a7d8",
+        "avifSha256": "cd1a66516d7b79934677ad973c46088f15fe9cb99ecc6d18572751fa40e40d60"
+      }
+    },
+    "zhuozhou_zhidu": {
+      "source": "assets/colored/zhuozhou_zhidu.png",
+      "sourceSha256": "0be4bb0d3c91e1215e91b98ac712c233e1d46ce663bd2091c94cc9b4ed495ac8",
+      "sourceBytes": 2110501,
+      "input": "assets/colored-transparent/zhuozhou_zhidu.png",
+      "inputSha256": "a1e4f68fb8c59e3f54eae92cf01b6c3d663a6942ac4cddfdbcc54ad3161f3c72",
+      "inputBytes": 2035583,
+      "src": "assets/colored-transparent-avif/zhuozhou_zhidu.avif",
+      "sha256": "f9bfeba4501a3b74ef982a7b71f077fedea70680b933dbc5c9f573d5c27d019d",
+      "bytes": 253538,
+      "width": 1024,
+      "height": 1536,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 957959,
+        "opaquePixels": 603289,
+        "meanError": 0.009113947550455729,
+        "maxError": 13
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.125,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "0be4bb0d3c91e1215e91b98ac712c233e1d46ce663bd2091c94cc9b4ed495ac8",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T09:48:33.369Z",
+        "sourceSha256": "0be4bb0d3c91e1215e91b98ac712c233e1d46ce663bd2091c94cc9b4ed495ac8",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "a1e4f68fb8c59e3f54eae92cf01b6c3d663a6942ac4cddfdbcc54ad3161f3c72",
+        "avifSha256": "f9bfeba4501a3b74ef982a7b71f077fedea70680b933dbc5c9f573d5c27d019d"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

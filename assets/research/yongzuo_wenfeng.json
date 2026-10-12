@@ -1,0 +1,83 @@
+{
+  "id": "yongzuo_wenfeng",
+  "subject": "永祚寺文峰塔",
+  "sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wenfeng_Pagoda,_Shuang_Ta_Si_Temple_(10111274265).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Wenfeng_Pagoda%2C_Shuang_Ta_Si_Temple_%2810111274265%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Gary Todd from Xinzheng, China",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_yongzuo_wenfeng2-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_yongzuo_wenfeng2-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 永祚寺文峰塔. single OCTAGONAL THIRTEEN-storey brick pagoda, complete finial and base; eastern Wenfeng pagoda only. One building only. Use portrait canvas for pagodas, landscape for halls. Leave full uncut base and roof apex.",
+  "generated_file": "assets/generated/yongzuo_wenfeng.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-771059de-c20e-46f0-96ce-0cec8c6c6623.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "永祚寺文峰塔 · 塔身现貌",
+    "万历二十七年"
+  ],
+  "historical_sources": [
+    {
+      "title": "浙江在线 · 双塔寺题记与沿革",
+      "url": "https://china.zjol.com.cn/05china/system/2008/10/14/010026326_01.shtml"
+    },
+    {
+      "title": "永祚寺",
+      "url": "https://zh.wikipedia.org/wiki/永祚寺",
+      "publisher": "维基百科（中文）",
+      "note": "维基百科，二手来源；1597年创建永明寺、1599年东塔、傅霖父子、1608年妙峰扩建、1612年西塔与无梁殿、相距46米、双筒结构、孔雀蓝琉璃檐、1981—84与1995—96年维修、市徽、碑碣260余通，其注引《山西古建筑地图（下）》与连达《寻访山西古庙》。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "Twin Pagoda Temple",
+      "url": "https://en.wikipedia.org/wiki/Twin_Pagoda_Temple",
+      "publisher": "Wikipedia (English)",
+      "note": "维基百科，二手来源；西塔54.78米、东塔53.3米、东塔曾倾斜2.87米并于1995年纠偏，其注引徐晓英编《中国古塔造型》（2007）。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "文物古迹",
+      "url": "https://web.archive.org/web/2019id_/https://www.yingze.gov.cn/lswh/20150423/427282.html",
+      "publisher": "太原市迎泽区人民政府办公室，2015-04-23（互联网档案馆存档）",
+      "note": "据塔顶铭文和碑文始建于万历三十六年、双塔八角十三层通高54米、无梁殿形制、碑碣260余通、2006年国保；原页已失效。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "国务院关于核定并公布第六批全国重点文物保护单位的通知（国发〔2006〕19号）",
+      "url": "http://www.gov.cn/zhengce/content/2008-03/28/content_5910.htm",
+      "publisher": "中国政府网",
+      "note": "永祚寺2006年列入第六批全国重点文物保护单位。",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "40fcfb4ff95e5160985bfcebc5bf0b8cc98eeaa0d0a2e9dc5a8b30771d0a6c97",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "40fcfb4ff95e5160985bfcebc5bf0b8cc98eeaa0d0a2e9dc5a8b30771d0a6c97",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "97a9d0177463d5feac1ca9a789ab43ff36065b11e33c05fb1f41b2668ed1a04d"
+  }
+}
