@@ -1,0 +1,69 @@
+{
+  "id": "xitai_chongxing",
+  "name": "宁海崇兴庙戏台",
+  "subject": "宁海崇兴庙戏台与勾连廊",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 宁海崇兴庙戏台与勾连廊.\nPhotograph material observations: weathered dark red-brown timber, red lacquered pillars and railings, faded restrained blue-green, ochre and cream decorative paint on caisson brackets, pale grey stone floor. Preserve the exact interior cutaway framing, railing and three connected caissons of the line drawing. No exterior roof reconstruction.",
+  "input_images": [
+    "assets/generated/xitai_chongxing.png",
+    "assets/references/xitai_chongxing_a3-photo.jpg",
+    "assets/references/xitai_chongxing_a2-photo.jpg",
+    "assets/references/xitai_chongxing_a6-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "material_observations": [
+    "weathered dark red-brown timber, red lacquered pillars and railings, faded restrained blue-green, ochre and cream decorative paint on caisson brackets, pale grey stone floor"
+  ],
+  "references": [
+    {
+      "photo": "assets/references/xitai_chongxing_a3-photo.jpg",
+      "source_page": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+      "image_url": "https://pimg.1px.tw/confusingstone/1407826284-3259500919.jpg",
+      "author": "confusingstone",
+      "license": "未声明，摄影者博客原作；仅作实物研究参考，照片不公开分发",
+      "license_url": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+      "original_alt": "Ninghai a3.JPG"
+    },
+    {
+      "photo": "assets/references/xitai_chongxing_a2-photo.jpg",
+      "source_page": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+      "image_url": "https://pimg.1px.tw/confusingstone/1407826282-3910295720.jpg",
+      "author": "confusingstone",
+      "license": "未声明，摄影者博客原作；仅作实物研究参考，照片不公开分发",
+      "license_url": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+      "original_alt": "Ninghai a2.JPG"
+    },
+    {
+      "photo": "assets/references/xitai_chongxing_a6-photo.jpg",
+      "source_page": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+      "image_url": "https://pimg.1px.tw/confusingstone/1407826289-2073142664.jpg",
+      "author": "confusingstone",
+      "license": "未声明，摄影者博客原作；仅作实物研究参考，照片不公开分发",
+      "license_url": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+      "original_alt": "Ninghai a6.JPG"
+    }
+  ],
+  "original_research": "assets/research/xitai_chongxing.json",
+  "output": "assets/colored/xitai_chongxing.png",
+  "submitted_at": "2026-10-12T21:00:59.934938+08:00",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a13031-0ea3-7693-8216-9383d974f396/exec-cb4a2943-25cc-4224-bed6-0c02704ff7a0.png",
+  "width": 1536,
+  "height": 1024,
+  "completed_at": "2026-10-12T21:02:46.169653+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e53a5daeb05ae9d71451e18797d7ba61759c3a30d940af8438658b869eb0f6a9",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T13:10:22.715Z",
+    "sourceSha256": "e53a5daeb05ae9d71451e18797d7ba61759c3a30d940af8438658b869eb0f6a9",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "19078313f211e7a1fa5bd289f8f6436b54c02dadfb0b11e3b7e94fb8be929186",
+    "avifSha256": "d8bf1a1388e853b493d0819cba208150138444e87591635af830d6283dbd049c"
+  }
+}

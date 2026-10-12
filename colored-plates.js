@@ -12926,6 +12926,35 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "xitai_chongxing": {
+    "src": "assets/colored-transparent-avif/xitai_chongxing.avif",
+    "originalSrc": "assets/colored/xitai_chongxing.png",
+    "transparentSrc": "assets/colored-transparent/xitai_chongxing.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "宁海崇兴庙戏台与勾连廊 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/xitai_chongxing.json",
+    "references": [
+      {
+        "page": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+        "author": "confusingstone",
+        "license": "未声明，摄影者博客原作；仅作实物研究参考，照片不公开分发"
+      },
+      {
+        "page": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+        "author": "confusingstone",
+        "license": "未声明，摄影者博客原作；仅作实物研究参考，照片不公开分发"
+      },
+      {
+        "page": "https://confusingstone.pixnet.net/blog/posts/8185251242",
+        "author": "confusingstone",
+        "license": "未声明，摄影者博客原作；仅作实物研究参考，照片不公开分发"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

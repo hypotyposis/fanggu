@@ -113,7 +113,9 @@ test('Japanese country, prefecture and era facets stay separate from Chinese reg
 });
 
 test('Jiangsu and Zhejiang additions cover bridges, stone pillars and early regional periods', () => {
-  assert.equal(find({ province: '浙江' }).length, 34);
+  assert.equal(find({ province: '浙江' }).length, 34 + JSON.parse(fs.readFileSync(require.resolve('../assets/research/china-single-resume-20261012-batch.json'), 'utf8')).ids.length);
+  assert(find({ province: '浙江', type: 'stage', status: 'unvisited' }).includes('xitai_chongxing'));
+  assert(find({ query: '崇兴庙' }).includes('xitai_chongxing'));
   assert.equal(find({ province: '江苏' }).length, 29);
   assert.deepEqual(find({ type: 'bridge', province: '浙江', status: 'wishlist' }), ['baziqiao', 'rulong']);
   assert.deepEqual(find({ type: 'pillar', province: '浙江' }), ['lingyin', 'lingyin_east_pillar', 'lingyin_west_pillar', 'longxingchuang']);

@@ -22,7 +22,7 @@ const manifest = json('assets/color-research/avif-manifest.json');
 test('ready expansion covers all eligible candidates and excludes unresolved subjects', () => {
   assert.deepEqual([...batch.ids].sort(), intakes.flatMap(item => item.ready).sort());
   assert.equal(batch.ids.length, 41);
-  assert.equal(SITES.length, batch.beforeCount + batch.ids.length + laterResolved.ids.length + json('assets/research/china-single-20261012-batch.json').ids.length);
+  assert.equal(SITES.length, batch.beforeCount + batch.ids.length + laterResolved.ids.length + json('assets/research/china-single-20261012-batch.json').ids.length + json('assets/research/china-single-resume-20261012-batch.json').ids.length);
   assert.equal(new Set(SITES.map(site => site.id)).size, SITES.length);
   for (const candidate of intakes.flatMap(item => item.blocked)) {
     if (laterResolved.ids.includes(candidate.id)) {

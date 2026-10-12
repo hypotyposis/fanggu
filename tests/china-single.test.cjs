@@ -11,11 +11,12 @@ const json = file => JSON.parse(read(file));
 const hash = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
 const { SITES, PLATES, COLORED_PLATES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n' + read('colored-plates.js') + '\n({SITES,PLATES,COLORED_PLATES})');
 const batch = json('assets/research/china-single-20261012-batch.json');
+const followup = json('assets/research/china-single-resume-20261012-batch.json');
 const byID = Object.fromEntries(SITES.map(site => [site.id, site]));
 const { curations } = require('../curations.js');
 
 test('building splits preserve old IDs exclusively as collection records and ship every new member', () => {
-  assert.equal(SITES.length, batch.baseline_catalog_count + batch.ids.length);
+  assert.equal(SITES.length, batch.baseline_catalog_count + batch.ids.length + followup.ids.length);
   assert.equal(new Set(batch.ids).size, batch.ids.length);
   assert.deepEqual(Object.values(batch.delivered_groups).flat().sort(), [...batch.ids].sort());
   for (const [parent, ids] of Object.entries(batch.delivered_groups)) {
@@ -23,7 +24,8 @@ test('building splits preserve old IDs exclusively as collection records and shi
     const list = curations.find(list => list.id === parent);
     assert.equal(list.kind, 'collection');
     assert.equal(list.legacySiteID, parent);
-    assert.deepEqual(list.items, ids);
+    assert.deepEqual(list.items.filter(id => batch.ids.includes(id)), ids);
+    assert.deepEqual(list.items.filter(id => !batch.ids.includes(id)), followup.delivered_groups[parent] || []);
     assert.ok(!list.items.includes(parent));
     for (const id of ids) {
       assert.equal(byID[id].initialStatus, 'unvisited', id);
@@ -75,5 +77,5 @@ test('single-building dates, the Eight Liao list and separate protection batches
   const protection = json('assets/research/national-protection.json');
   assert.deepEqual(protection.entries.kaiyuan_bell.map(e => e.batch), [3]);
   assert.deepEqual(protection.entries.kaiyuan_xumi.map(e => e.batch), [6]);
-  assert.ok(!byID.longxing_dabei && !byID.xitai_chongxing, 'subjects lacking full reference evidence are not silently substituted');
+  assert.ok(!byID.longxing_dabei, 'the complete Dabei assembly still requires unobstructed reference evidence');
 });

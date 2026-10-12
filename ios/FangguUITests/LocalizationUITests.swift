@@ -81,6 +81,27 @@ final class LocalizationUITests: XCTestCase {
         }
     }
 
+    func testBackToTopIsLocalized() {
+        for (language, locale, title, actionTitle) in [
+            ("en", "en_US", "Monument Catalog", "Back to top"),
+            ("ja", "ja_JP", "古跡図鑑", "先頭に戻る")
+        ] {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest()
+            let heading = app.staticTexts[title]
+            XCTAssertTrue(heading.waitForExistence(timeout: 10))
+            let backToTop = app.buttons["catalog-back-to-top"]
+            for _ in 0..<8 where !backToTop.exists { app.dragPage() }
+            XCTAssertTrue(backToTop.isHittable)
+            XCTAssertEqual(backToTop.label, actionTitle)
+            capture(app, "\(language)-back-to-top")
+            backToTop.tap()
+            XCTAssertTrue(backToTop.waitForNonExistence(timeout: 5))
+            XCTAssertTrue(heading.isHittable)
+            app.terminate()
+        }
+    }
+
     private func assertNoCharacters(matching pattern: String, in app: XCUIApplication, screen: String,
                                     file: StaticString = #filePath, line: UInt = #line) {
         var tree = app.debugDescription

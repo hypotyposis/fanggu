@@ -1,0 +1,163 @@
+{
+  "batch": "china-single-resume-20261012",
+  "started_at": "2026-10-12T21:00:59.934938+08:00",
+  "baseline_catalog_count": 608,
+  "scope": "补齐前批资料阻塞项，独立建筑拆分；相连构件保留整体，不改变旧记录",
+  "candidates": [
+    {
+      "id": "longxing_dabei",
+      "parent": "longxing",
+      "subject": "现存大悲阁及相连御书楼、集庆阁和空中连廊",
+      "phase": "blocked",
+      "blocker": "近景补齐中央阁体，航拍/全景可确认两耳阁与空中连廊，但耳阁下部仍被树木和其他殿堂遮挡，缺完整主体；不按遮挡轮廓臆补。"
+    },
+    {
+      "id": "xitai_chongxing",
+      "parent": "xitai",
+      "subject": "崇兴庙戏台及相连勾连廊，三连贯藻井",
+      "phase": "delivery_ready",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xitai_chongxing_a3-photo.jpg",
+        "assets/references/xitai_chongxing_a2-photo.jpg",
+        "assets/references/xitai_chongxing_a6-photo.jpg"
+      ],
+      "structure": "An interior cutaway view of the actual CONNECTED stage and covered passage, viewed from outside the red front balustrade at a low upward angle as photograph a3. THREE consecutive caisson bays extending into depth: a full round coffer over the stage, an octagonal connecting coffer, and the third square-to-round coffer. Preserve the visible front railing, stage deck, columns, transverse beams and elaborately bracketed ceiling. Use a2 to confirm the columns, deck and spatial connections; use a6 only for the main round caisson detail. Do NOT invent an exterior roof or an entire temple, and do not include the shrine hall seen through the courtyard.",
+      "historical_sources": [
+        {
+          "title": "崇兴庙戏台英气逼人",
+          "url": "https://news.cnnb.com.cn/system/2009/01/25/005970480.shtml",
+          "publisher": "中国宁波网",
+          "note": "2009年1月25日现场介绍，道光二十一年（1841）开始重建戏台，历数年形成三连贯藻井。"
+        },
+        {
+          "title": "宁海县传统剧场建筑研究",
+          "url": "https://www.whitr-ap.org/themes/69/userfiles/download/2012/11/28/upyduh5tllni33j.pdf",
+          "publisher": "联合国教科文组织亚太地区世界遗产培训与研究中心（上海）会议资料",
+          "note": "宁海现存三连贯藻井戏台分列崇兴庙、岙胡胡氏宗祠、樟树孙氏宗祠。"
+        }
+      ]
+    },
+    {
+      "id": "sx_jishan_jiwang",
+      "phase": "blocked",
+      "question": "后稷楼全貌及与献殿钟鼓楼的连接关系",
+      "blocker": "献殿与钟鼓楼連体保留；后稷楼仅见上檐，未获得独立全楼和连接关系的完整实拍。"
+    },
+    {
+      "id": "xz_guge",
+      "phase": "blocked",
+      "question": "可靠单体身份、完整现存主体、单体年代",
+      "blocker": "新论文有红殿15世纪70—80年代依据，但既有全景的其余宫堡和房屋残迹未建立可靠单体身份与范围对应，不能将王城整体拆为推测条目。"
+    },
+    {
+      "id": "xz_tholing",
+      "phase": "blocked",
+      "question": "红殿现存年代及殿前塔身份",
+      "blocker": "红殿年代新研究定位1436或1449，既有照片殿前塔与围墙接合，尚未核清塔的独立身份、年代及完整范围；保留现有组合。"
+    },
+    {
+      "id": "nx_108towers",
+      "phase": "blocked",
+      "question": "既有所绘七塔的可靠单塔编号",
+      "blocker": "二手资料转引1991年清理维修简报有自上而下、自南而北001—108编号规则；未读取原报告编号图及对应现存实拍，未核实七塔逐塔身份，不凭行列推建ID。"
+    }
+  ],
+  "generation_calls": [
+    {
+      "id": "xitai_chongxing",
+      "phase": "color",
+      "tool_call_id": "exec-cb4a2943-25cc-4224-bed6-0c02704ff7a0",
+      "submitted_at": "2026-10-12T21:00:59.934938+08:00",
+      "received_at": "2026-10-12T21:02:46.169653+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a13031-0ea3-7693-8216-9383d974f396/exec-cb4a2943-25cc-4224-bed6-0c02704ff7a0.png",
+      "prompt_record": "assets/color-research/xitai_chongxing.json"
+    }
+  ],
+  "concurrency_target": 8,
+  "service_errors": [],
+  "checks": {
+    "node_full": "148/148 passed",
+    "metadata_final_subset": "24/24 passed after verified official PDF URL and source hash were added",
+    "python": "25/25 passed",
+    "native_build": "build-for-testing succeeded",
+    "native_tests": "CurationTests 8/8; CurationUITests new three-language detail/collection test 1/1",
+    "browser": "color-proof grid and single, checker/light/dark backgrounds, original/line reference switching, sources and proof single page; decoded PNG and AVIF 1536x1024",
+    "protection_check": "passed",
+    "diff_check": "passed",
+    "old_runtime_hashes": {
+      "checked": 1216,
+      "changed": 0
+    },
+    "asset_full_verify": "4626 files passed"
+  },
+  "delivered_ids": [
+    "xitai_chongxing"
+  ],
+  "source_batch": "china-single-followup-20261012",
+  "recovered_generation_calls": [
+    {
+      "id": "xitai_chongxing",
+      "phase": "line",
+      "tool_call_id": "exec-3898adfd-e7ef-4d98-8f40-efde03d933b1",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-3898adfd-e7ef-4d98-8f40-efde03d933b1.png"
+    }
+  ],
+  "research_budget_note": "首轮两轮查询后仍缺完整主体；大悲阁转用官方旅游图文及全景照片作定向补证，不从近景补造被遮挡耳阁。",
+  "ids": [
+    "xitai_chongxing"
+  ],
+  "delivered_groups": {
+    "xitai": [
+      "xitai_chongxing"
+    ]
+  },
+  "reused_ids": [],
+  "blocked_ids": [
+    "longxing_dabei",
+    "sx_jishan_jiwang",
+    "xz_guge",
+    "xz_tholing",
+    "nx_108towers"
+  ],
+  "research_sources": [
+    {
+      "url": "https://www.visitbeijing.com.cn/article/47QqSlGc3AH",
+      "note": "大悲阁两侧配殿和1999年重建"
+    },
+    {
+      "url": "https://www.visitbeijing.com.cn/article/4FPOWHjjQbV",
+      "note": "两翼空中连廊"
+    },
+    {
+      "url": "https://www.dpm.org.cn/Uploads/File/2023/04/20/u6440f256d05e4.pdf",
+      "note": "红殿单体断代发现，未当作既有全景所有遗构的年代"
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/一百零八塔",
+      "note": "编号规则转引雷润泽、于存海《宁夏青铜峡市一百零八塔清理维修简报》，未读原报告"
+    },
+    {
+      "url": "https://www.thepaper.cn/newsDetail_forward_8619148",
+      "note": "稷山已有组合范围与建筑组成"
+    }
+  ],
+  "source_preparation_record": "assets/research/history/china-single-followup-20261012/china-single-followup-20261012-batch.json",
+  "turn_started_at": "2026-10-12T20:58:06+08:00",
+  "finished_at": "2026-10-12T21:20:09.454930+08:00",
+  "wall_clock_minutes": 22.06,
+  "current_turn_generation_count": 1,
+  "recovered_generation_count": 1,
+  "rework_count": 0,
+  "peak_in_flight": 1,
+  "concurrency_note": "目标8，本轮只有1个就绪设色任务；其他项资料未齐，没有人为限流或新增代理。",
+  "service_duration": "unknown",
+  "delivery_status": {
+    "line_approved_default": 1,
+    "color_approved_default": 1,
+    "approved_user": 0,
+    "pending_delivery": 0
+  },
+  "asset_bundle": "asset-dist/china-single-resume-20261012-full",
+  "code_committed": false
+}

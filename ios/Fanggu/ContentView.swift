@@ -186,6 +186,9 @@ struct ExploreView: View {
     @EnvironmentObject private var location: LocationCenter
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var scrollPosition = ScrollPosition(edge: .top)
+    @State private var showsBackToTop = false
     @State private var query = ""
     @State private var nearbyOnly = false
     @State private var fallbackSort = "wishlist"
@@ -371,6 +374,35 @@ struct ExploreView: View {
                 }
             }
             .padding(.horizontal, 24)
+            .padding(.bottom, 76)
+        }
+        .scrollPosition($scrollPosition)
+        .onScrollGeometryChange(for: Bool.self) { geometry in
+            geometry.contentOffset.y + geometry.contentInsets.top > geometry.containerSize.height
+        } action: { _, isBelowFirstScreen in
+            showsBackToTop = isBelowFirstScreen
+        }
+        .overlay(alignment: .bottomTrailing) {
+            if showsBackToTop {
+                Button {
+                    withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.3)) {
+                        scrollPosition.scrollTo(edge: .top)
+                    }
+                } label: {
+                    Label("回到顶部", systemImage: "arrow.up.to.line")
+                        .font(FangguFont.serif(14, weight: .medium))
+                        .padding(.horizontal, 16)
+                        .frame(minHeight: 44)
+                        .foregroundStyle(Palette.gold)
+                        .background(Palette.ink3, in: Capsule())
+                        .overlay(Capsule().strokeBorder(Palette.gold.opacity(0.4), lineWidth: 1))
+                        .contentShape(Capsule())
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("catalog-back-to-top")
+                .padding(.trailing, 24)
+                .padding(.bottom, 16)
+            }
         }
         .background(Palette.ink.ignoresSafeArea())
         .scrollDismissesKeyboard(.interactively)

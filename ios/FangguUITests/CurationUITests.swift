@@ -6,6 +6,37 @@ final class CurationUITests: XCTestCase {
         continueAfterFailure = false
     }
 
+    func testChongxingDetailJoinsTheThreeMemberNinghaiCollectionInEveryLanguage() {
+        for (language, locale, name) in [
+            ("zh-Hans", "zh_CN", "宁海崇兴庙戏台"),
+            ("en", "en_US", "Ninghai Chongxing Temple Stage"),
+            ("ja", "ja_JP", "寧海崇興廟戯台")
+        ] {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest(site: "xitai_chongxing")
+            XCTAssertTrue(app.staticTexts[name].firstMatch.waitForExistence(timeout: 10))
+            let detail = XCTAttachment(screenshot: app.screenshot())
+            detail.name = "\(language)-chongxing-detail"
+            detail.lifetime = .keepAlways
+            add(detail)
+            let chip = app.descendants(matching: .any)["curation-chip-xitai"].firstMatch
+            app.reveal(chip)
+            XCTAssertTrue(chip.exists)
+            chip.tap()
+            let progress = app.descendants(matching: .any)["curation-progress"].firstMatch
+            XCTAssertTrue(progress.waitForExistence(timeout: 5))
+            for id in ["xitai_aohu", "xitai_chongxing", "xitai_chenghuang"] {
+                XCTAssertTrue(app.descendants(matching: .any)["curation-member-\(id)"].firstMatch.exists)
+            }
+            XCTAssertTrue(app.descendants(matching: .any)["collection-legacy-record"].firstMatch.exists)
+            let group = XCTAttachment(screenshot: app.screenshot())
+            group.name = "\(language)-ninghai-three-members"
+            group.lifetime = .keepAlways
+            add(group)
+            app.terminate()
+        }
+    }
+
     func testCatalogStripOpensCurationAndSharePreview() {
         let app = XCUIApplication.isolated()
         app.launchForTest()

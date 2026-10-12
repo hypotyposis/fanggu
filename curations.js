@@ -196,9 +196,10 @@
     "name": "宁海古戏台",
     "eyebrow": "浙江宁海 · 祠庙",
     "lede": "将宁海古戏台的已收录单体分别列出，各自保留年代、图版与到访记录。",
-    "note": "当前收录岙胡胡氏宗祠与城隍庙戏台，不代表宁海全部古戏台。",
+    "note": "当前收录岙胡胡氏宗祠、崇兴庙与城隍庙戏台，不代表宁海全部古戏台。",
     "items": [
       "xitai_aohu",
+      "xitai_chongxing",
       "xitai_chenghuang"
     ],
     "legacySiteID": "xitai"

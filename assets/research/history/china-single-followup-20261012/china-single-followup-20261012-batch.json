@@ -1,0 +1,73 @@
+{
+  "batch": "china-single-followup-20261012",
+  "started_at": "2026-10-12T20:41:55.523466+08:00",
+  "baseline_catalog_count": 608,
+  "scope": "补齐前批资料阻塞项，独立建筑拆分；相连构件保留整体，不改变旧记录",
+  "candidates": [
+    {
+      "id": "longxing_dabei",
+      "parent": "longxing",
+      "subject": "现存大悲阁及相连御书楼、集庆阁和空中连廊",
+      "phase": "research"
+    },
+    {
+      "id": "xitai_chongxing",
+      "parent": "xitai",
+      "subject": "崇兴庙戏台及相连勾连廊，三连贯藻井",
+      "phase": "line_running",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/xitai_chongxing_a3-photo.jpg",
+        "assets/references/xitai_chongxing_a2-photo.jpg",
+        "assets/references/xitai_chongxing_a6-photo.jpg"
+      ],
+      "structure": "An interior cutaway view of the actual CONNECTED stage and covered passage, viewed from outside the red front balustrade at a low upward angle as photograph a3. THREE consecutive caisson bays extending into depth: a full round coffer over the stage, an octagonal connecting coffer, and the third square-to-round coffer. Preserve the visible front railing, stage deck, columns, transverse beams and elaborately bracketed ceiling. Use a2 to confirm the columns, deck and spatial connections; use a6 only for the main round caisson detail. Do NOT invent an exterior roof or an entire temple, and do not include the shrine hall seen through the courtyard.",
+      "historical_sources": [
+        {
+          "title": "崇兴庙戏台英气逼人",
+          "url": "https://news.cnnb.com.cn/system/2009/01/25/005970480.shtml",
+          "publisher": "中国宁波网",
+          "note": "2009年1月25日现场介绍，道光二十一年（1841）开始重建戏台，历数年形成三连贯藻井。"
+        },
+        {
+          "title": "宁海县传统剧场建筑研究",
+          "url": "https://www.whitr-ap.org/themes/69/userfiles/download/2012/11/28/upyduh5tllni33j.pdf",
+          "publisher": "联合国教科文组织亚太地区世界遗产培训与研究中心（上海）会议资料",
+          "note": "宁海现存三连贯藻井戏台分列崇兴庙、岙胡胡氏宗祠、樟树孙氏宗祠。"
+        }
+      ]
+    },
+    {
+      "id": "sx_jishan_jiwang",
+      "phase": "research",
+      "question": "后稷楼全貌及与献殿钟鼓楼的连接关系"
+    },
+    {
+      "id": "xz_guge",
+      "phase": "research",
+      "question": "可靠单体身份、完整现存主体、单体年代"
+    },
+    {
+      "id": "xz_tholing",
+      "phase": "research",
+      "question": "红殿现存年代及殿前塔身份"
+    },
+    {
+      "id": "nx_108towers",
+      "phase": "research",
+      "question": "既有所绘七塔的可靠单塔编号"
+    }
+  ],
+  "generation_calls": [
+    {
+      "id": "xitai_chongxing",
+      "phase": "line",
+      "submitted_at": "2026-10-12T20:45:02.904232+08:00",
+      "prompt_record": "assets/research/china-single-followup-20261012/xitai_chongxing.json"
+    }
+  ],
+  "concurrency_target": 8,
+  "service_errors": [],
+  "checks": {},
+  "delivered_ids": []
+}

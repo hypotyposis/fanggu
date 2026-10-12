@@ -17,7 +17,7 @@ test('second Japan batch covers all agreed subjects with unvisited records and d
   assert.equal(batch.ids.length, 26);
   assert.equal(new Set(batch.ids).size, 26);
   assert.deepEqual([...batch.ids].sort(), batch.jobs.map(job => job.id).sort());
-  assert.equal(SITES.length, batch.beforeCount + batch.ids.length + json('assets/research/china-single-20261012-batch.json').ids.length);
+  assert.equal(SITES.length, batch.beforeCount + batch.ids.length + json('assets/research/china-single-20261012-batch.json').ids.length + json('assets/research/china-single-resume-20261012-batch.json').ids.length);
   assert.equal(sites.filter(site => site.country === 'JP').length, batch.beforeJapanCount + batch.ids.length);
   for (const job of batch.jobs) {
     const site = sites.find(site => site.id === job.id);
