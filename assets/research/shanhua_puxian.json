@@ -1,0 +1,67 @@
+{
+  "id": "shanhua_puxian",
+  "source_page": "https://commons.wikimedia.org/wiki/File:%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg/1280px-%E5%96%84%E5%8C%96%E5%AF%BA%E9%9B%A8%E5%A4%A9%E4%B8%8B%E7%9A%84%E9%87%91%E4%BB%A3%E6%99%AE%E8%B4%A4%E9%98%81%E6%AD%A3%E9%9D%A2.jpg",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/shanhua-photo.jpg",
+    "assets/references/shanhua-front-photo.jpg"
+  ],
+  "subject": "善化寺普贤阁",
+  "source_note": "以2024年雨中正面照和2013年正面照交叉补足树木遮挡，保留双层屋檐、楼层间平座、三间立面和顶部三枚宝塔式装饰。",
+  "author": "Patrick20242023",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "additional_sources": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Datong_Shanhua_Si_2013.08.29_12-39-50.jpg",
+      "author": "Zhangzhugang",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Datong_Shanhua_Si_2013.08.29_12-39-50.jpg/1280px-Datong_Shanhua_Si_2013.08.29_12-39-50.jpg"
+    }
+  ],
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Images 2 and 3 are complementary current photos as SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK ON PURE WHITE line drawing. Use confident fine contours with a few finer internal structural lines. All surfaces remain WHITE; use outlines for doors and windows rather than dark fills. No solid shadows, no broad grey shading, no crosshatching, no pencil grain, no texture, no gradient. No color, no gold, no black background. The white will become transparent and the ink uniformly gold in the website.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nLandscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room.\nSubject: 善化寺普贤阁, Puxian Pavilion at Shanhua Temple, Datong. Use the two photographs of the SAME pavilion to recover geometry hidden by trees. Tall three-bay pavilion with two tiled roof tiers, an intermediate open wooden balcony, and a central ground-floor tall door framed by blank walls; a smaller central upper-floor door flanked by blank wall bays. Distinctive three small finials at center of top ridge, with chiwen at ridge ends. Exactly two eaved roof levels; the balcony projects as a flat timber deck between, it is NOT a third tiled roof. Keep bay number and proportions. All openings white. Remove trees and statues inside door. Full frontal symmetry, show simple base and central stair. Landscape 1536×1024, pavilion centered at about 75% canvas height, generous blank side margins.",
+  "generated_file": "assets/generated/shanhua_puxian.png",
+  "generation_tool": "built-in image_gen",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "historical_sources": [
+    {
+      "title": "善化寺",
+      "url": "https://zh.wikipedia.org/wiki/%E5%96%84%E5%8C%96%E5%AF%BA",
+      "publisher": "维基百科（中文），引光绪《大同府志》、《全国重点文物保护单位（第一至第五批）》2004、《山西古建筑地图（下）》2021等",
+      "note": "维基百科，二手来源：唐开元年间创建、1122年兵火、1128—1143年圆满重建、1445年敕名、普贤阁贞元二年（1154）重檐歇山三间平座暗层、上檐次间铺作连为一体、大雄宝殿七间41.8×26.18米、三圣殿五间32.5米六铺作斜栱、三十四尊金塑、朱弁碑、梁思成评语、2007年大修",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "八大辽构",
+      "url": "https://zh.wikipedia.org/wiki/%E5%85%AB%E5%A4%A7%E8%BE%BD%E6%A7%8B",
+      "publisher": "维基百科（中文）",
+      "note": "维基百科，二手来源：善化寺大雄宝殿列入现存八座辽代木构",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "reused_from": "shanhua",
+  "caption": [
+    "善化寺普贤阁 · 楼阁单体",
+    "金贞元二年"
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "215cce38fc47c4d67d893b43662066f6605aeac1c3abeaac177186f87e17aea2",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "status": "complete",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "215cce38fc47c4d67d893b43662066f6605aeac1c3abeaac177186f87e17aea2",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "a5ba46201e2637ea3c2b454b1c363db720fedd32afbe95e06a7ed7c02e627231"
+  }
+}

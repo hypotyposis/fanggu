@@ -1,0 +1,99 @@
+{
+  "id": "jp_konrenji_midado",
+  "name": "金莲寺弥陀堂",
+  "subject": "金莲寺现存弥陀堂单体",
+  "status": "complete",
+  "generator": "built-in image_gen",
+  "input_images": [
+    "assets/generated/jp_konrenji_midado.png",
+    "assets/references/jp_konrenji_midado-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 金莲寺现存弥陀堂单体\nMATERIAL OBSERVATIONS: Muted silver-brown aged timber, warm light brown wood-shingle roof, subdued pale plaster portions.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+  "material_observations": [
+    "Muted silver-brown aged timber, warm light brown wood-shingle roof, subdued pale plaster portions."
+  ],
+  "references": [
+    {
+      "file": "assets/references/jp_konrenji_midado-photo.jpg",
+      "source_page": "https://www.city.nishio.aichi.jp/sportskanko/bunkazai/1001485/1001608/1001659/1002705.html",
+      "image_url": "https://www.city.nishio.aichi.jp/_res/projects/default_project/_page_/001/002/705/20160303-182020.jpg",
+      "author": "官方文化财资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "page": "https://www.city.nishio.aichi.jp/sportskanko/bunkazai/1001485/1001608/1001659/1002705.html"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "官方现存建筑与年代资料",
+      "url": "https://www.city.nishio.aichi.jp/sportskanko/bunkazai/1001485/1001608/1001659/1002705.html"
+    },
+    {
+      "title": "文化厅国指定文化财：金蓮寺弥陀堂",
+      "url": "https://kunishitei.bunka.go.jp/heritage/detail/102/1277"
+    }
+  ],
+  "original_research": "assets/research/jp_konrenji_midado.json",
+  "output": "assets/colored/jp_konrenji_midado.png",
+  "production_batch": "japan-second-20261012",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:42:21.921702+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "c95a68e9b55e46902d351e3e4400ceb3e77b4ce752bf0028cdf7ea50d88475ab",
+    "seeds": []
+  },
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-7a40cd05-9e28-4f2b-b328-bb227e35d1bb.png",
+  "generation_history": [
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:41:25.719558+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 金莲寺现存弥陀堂单体\nMATERIAL OBSERVATIONS: Muted silver-brown aged timber, warm light brown wood-shingle roof, subdued pale plaster portions.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_konrenji_midado.png",
+        "assets/references/jp_konrenji_midado-photo.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:42:21.922136+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-7a40cd05-9e28-4f2b-b328-bb227e35d1bb.png",
+      "retained_file": "assets/colored/jp_konrenji_midado.png",
+      "sourceSha256": "c95a68e9b55e46902d351e3e4400ceb3e77b4ce752bf0028cdf7ea50d88475ab"
+    }
+  ],
+  "visual_review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.140743+08:00",
+    "status": "approved_default",
+    "decided_by": "default-policy"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.401Z",
+    "sourceSha256": "c95a68e9b55e46902d351e3e4400ceb3e77b4ce752bf0028cdf7ea50d88475ab",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "952d1a968adb61184bf5e188ea087a78d41080b950caefebbf6eee50c3255374",
+    "avifSha256": "79c462369539c1d6e18621cd98b6d5f8da6ccfa323a47653a0cbc2a3e0eb1147"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

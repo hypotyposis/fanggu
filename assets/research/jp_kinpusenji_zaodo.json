@@ -1,0 +1,136 @@
+{
+  "id": "jp_kinpusenji_zaodo",
+  "name": "金峰山寺藏王堂",
+  "subject": "金峰山寺现存藏王堂单体",
+  "source_page": "https://www.kinpusen.or.jp/guide/",
+  "image_url": "https://www.kinpusen.or.jp/guide/images/index_img01.jpg",
+  "author": "官方文化财或寺院资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kinpusenji_zaodo-photo-final.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kinpusenji_zaodo-photo-final.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kinpusenji Zaodo hall, Yoshino, current hall completed around 1592\nSTRUCTURAL CHECKPOINTS: Monumental SINGLE-story hall with a surrounding mokoshi, TWO roof levels; Upper hip-and-gable cypress-bark roof and broad lower skirt roof, massive timber columns; Deep dark bracket work, small raised veranda and stone base; omit other gates and surrounding mountains\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.kinpusen.or.jp/guide/"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.kinpusen.or.jp/guide/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Monumental SINGLE-story hall with a surrounding mokoshi, TWO roof levels",
+    "Upper hip-and-gable cypress-bark roof and broad lower skirt roof, massive timber columns",
+    "Deep dark bracket work, small raised veranda and stone base; omit other gates and surrounding mountains"
+  ],
+  "material_observations": "Warm dark brown bark roofing, deep brown weathered timber, restrained pale stone foundation; no bright painted modern restoration.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "金峰山寺现存藏王堂单体",
+    "约1592年再建"
+  ],
+  "generated_file": "assets/generated/jp_kinpusenji_zaodo.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.890421+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.kinpusen.or.jp/guide/",
+      "https://www.kinpusen.or.jp/guide/"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:49:21.427414+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "88155771424fc86e11cdcc4e13438b6bd24ac9773677a4af121a184e2bf91fea",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-77a7585a-4846-4e32-8d85-a69e5840ddba.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:48:32.468976+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kinpusenji Zaodo hall, Yoshino, current hall completed around 1592\nSTRUCTURAL CHECKPOINTS: Monumental SINGLE-story hall with a surrounding mokoshi, TWO roof levels; Upper hip-and-gable cypress-bark roof and broad lower skirt roof, massive timber columns; Deep dark bracket work, small raised veranda and stone base; omit other gates and surrounding mountains\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_kinpusenji_zaodo-photo-final.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:49:21.427707+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-77a7585a-4846-4e32-8d85-a69e5840ddba.png",
+      "retained_file": "assets/generated/jp_kinpusenji_zaodo.png",
+      "sourceSha256": "88155771424fc86e11cdcc4e13438b6bd24ac9773677a4af121a184e2bf91fea"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_kinpusenji_zaodo-photo-final.jpg",
+      "source_page": "https://www.kinpusen.or.jp/guide/",
+      "image_url": "https://www.kinpusen.or.jp/guide/images/index_img01.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "金峰山寺现存藏王堂单体"
+    },
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://www.kinpusen.or.jp/guide/"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.kinpusen.or.jp/guide/"
+    }
+  ],
+  "site_recommendation": {
+    "name": "金峰山寺藏王堂",
+    "year": 1592,
+    "yearApprox": true,
+    "yearLabel": "约1592年再建",
+    "yearNote": "寺院官方资料称现存藏王堂约1592年完成，文化财资料采用1592年；沿用“约”的限定，区别更早的信仰与创立传承。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_yoshino"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "88155771424fc86e11cdcc4e13438b6bd24ac9773677a4af121a184e2bf91fea",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "d759f58c04ecc4ab876c50b2ccb3455c5ecc88dc35f1b5e0aabb345c1a97dc60"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

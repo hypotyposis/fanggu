@@ -1,0 +1,137 @@
+{
+  "id": "jp_kamosu_honden",
+  "name": "神魂神社本殿",
+  "subject": "神魂神社 · 本殿",
+  "source_page": "https://www.kankou-shimane.com/destination/20261",
+  "image_url": "https://www.kankou-shimane.com/jp/wp-content/uploads/2020/03/1049-kamosujinja-001.jpg",
+  "author": "岛根县观光联盟官方资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kamosu_honden-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kamosu_honden-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kamosu Shrine Honden, rebuilt 1583: the elevated large main shrine on LEFT in the reference; omit the lower worship hall on RIGHT.\nSTRUCTURAL CHECKPOINTS: ONE raised taisha-zukuri main shrine, two-bay by two-bay body, thick posts and steep gabled wood-shingle roof.; Preserve projecting crossed chigi at both gable peaks, horizontal katsuogi ridge logs and high veranda. Gable-side doorway is off-center and stairs approach from right.; Only the high LEFT honden and its entry stairs/small entry cover; no lower right worship hall, trees or outer fence.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "岛根县观光联盟 · 神魂神社 · 本殿",
+      "url": "https://www.kankou-shimane.com/destination/20261"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://online.bunka.go.jp/heritages/detail/146648"
+    }
+  ],
+  "structure_checkpoints": [
+    "ONE raised taisha-zukuri main shrine, two-bay by two-bay body, thick posts and steep gabled wood-shingle roof.",
+    "Preserve projecting crossed chigi at both gable peaks, horizontal katsuogi ridge logs and high veranda. Gable-side doorway is off-center and stairs approach from right.",
+    "Only the high LEFT honden and its entry stairs/small entry cover; no lower right worship hall, trees or outer fence."
+  ],
+  "material_observations": "灰褐栩葺屋面，暗褐粗木柱、板壁及栏杆，千木和胜男木原木色，石阶灰色。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "神魂神社 · 本殿",
+    "桃山天正十一年（1583）"
+  ],
+  "generated_file": "assets/generated/jp_kamosu_honden.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.705270+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.kankou-shimane.com/destination/20261",
+      "https://online.bunka.go.jp/heritages/detail/146648"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:19:47.674125+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cb4d2cfb2ac1e61f7b4fd211568ce1366e703cb246c312b23853b6f41f7154a1",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-5d38739b-fdd8-4cec-a8b7-7530db68012f.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:16:44.266227+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kamosu Shrine Honden, rebuilt 1583: the elevated large main shrine on LEFT in the reference; omit the lower worship hall on RIGHT.\nSTRUCTURAL CHECKPOINTS: ONE raised taisha-zukuri main shrine, two-bay by two-bay body, thick posts and steep gabled wood-shingle roof.; Preserve projecting crossed chigi at both gable peaks, horizontal katsuogi ridge logs and high veranda. Gable-side doorway is off-center and stairs approach from right.; Only the high LEFT honden and its entry stairs/small entry cover; no lower right worship hall, trees or outer fence.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_kamosu_honden-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:19:47.674442+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-5d38739b-fdd8-4cec-a8b7-7530db68012f.png",
+      "retained_file": "assets/generated/jp_kamosu_honden.png",
+      "sourceSha256": "cb4d2cfb2ac1e61f7b4fd211568ce1366e703cb246c312b23853b6f41f7154a1"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_kamosu_honden-photo.jpg",
+      "source_page": "https://www.kankou-shimane.com/destination/20261",
+      "image_url": "https://www.kankou-shimane.com/jp/wp-content/uploads/2020/03/1049-kamosujinja-001.jpg",
+      "author": "岛根县观光联盟官方资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "神魂神社 · 本殿"
+    },
+    {
+      "title": "岛根县观光联盟 · 神魂神社 · 本殿",
+      "url": "https://www.kankou-shimane.com/destination/20261"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://online.bunka.go.jp/heritages/detail/146648"
+    }
+  ],
+  "site_recommendation": {
+    "name": "神魂神社本殿",
+    "year": 1583,
+    "yearApprox": false,
+    "yearLabel": "1583年",
+    "yearNote": "文化财资料将现存本殿定位在天正十一年（1583）；1346年铭涉及旧构材料，不将本殿整体归为14世纪。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_matsue"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "cb4d2cfb2ac1e61f7b4fd211568ce1366e703cb246c312b23853b6f41f7154a1",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "924e988964bd9308220c14c377bdd595b42ae45e9b547caeec430b9877ef7350"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

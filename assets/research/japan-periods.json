@@ -35,12 +35,17 @@
     "jp_showa": [
       1926,
       1989
+    ],
+    "jp_ryukyu": [
+      1429,
+      1879
     ]
   },
   "additional_period_sources": {
     "jp_momoyama": "https://www.metmuseum.org/toah/hd/momo/hd_momo.htm",
     "jp_muromachi": "https://www.japan.travel/en/guide/tea-ceremony/",
-    "jp_showa": "https://id.ndl.go.jp/auth/ndlna/00568302"
+    "jp_showa": "https://id.ndl.go.jp/auth/ndlna/00568302",
+    "jp_ryukyu": "https://bunka.nii.ac.jp/suisensyo/okinawa/okinawa_3.pdf"
   },
   "note": "原有时代沿用奈良县来源；室町用日本国家旅游局的1336—1573，桃山艺术时期用大都会艺术博物馆的1573—1615，昭和用国立国会图书馆的1926—1989。桃山作为艺术史时期与政治史上的江户初期有交叠，归类按具体建筑资料说明。日本时代在年表单列，与中国朝代分别命名；只绘当前收录主体所涉时代，并非完整日本通史年表。江户终点按原来源1867，部分艺术史文献以1868作为结束。",
   "map_note": "地图按城市或町归并；同城多处取本批主体公开点位的均值，仅作为城市分组的位置示意，建筑坐标与出处分别保存在各图版元数据。",
@@ -149,5 +154,7 @@
       "lat": 34.9699,
       "lon": 135.9035
     }
-  ]
+  ],
+  "ryukyu_note": "琉球文化史时期采用UNESCO申报资料的1429—1879范围；1872改置琉球藩、1879设冲绳县的行政变化参见冲绳县公文书馆。国别字段按今日所在地JP，与历史政权分开。",
+  "ryukyu_administrative_source": "https://www3.archives.pref.okinawa.jp/GRI/what-is-the-age/age2/"
 }

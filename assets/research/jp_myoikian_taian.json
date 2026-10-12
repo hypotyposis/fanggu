@@ -1,0 +1,128 @@
+{
+  "id": "jp_myoikian_taian",
+  "name": "妙喜庵待庵",
+  "subject": "妙喜庵 · 待庵外观",
+  "source_page": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html",
+  "image_url": "https://www.town.oyamazaki.kyoto.jp/material/images/group/1/myokian.JPG",
+  "author": "大山崎町官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_myoikian_taian-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_myoikian_taian-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Taian tearoom at Myokian, the small ochre earthen-walled structure beyond the veranda in the reference, traditionally dated around 1582.\nSTRUCTURAL CHECKPOINTS: Small single-storey tearoom under a plain gabled kokera wood-shingle roof, with narrow attached bamboo-supported lean-to eave.; Two-tatami tea chamber scale: low nijiriguchi entry and lattice windows, ochre mud walls and exposed dark timber. Preserve visible actual openings; do not add a temple porch.; Only the tearoom body; omit foreground viewing veranda posts/roof, plants, surrounding garden and neighboring building.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "大山崎町 · 妙喜庵 · 待庵外观",
+      "url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "Small single-storey tearoom under a plain gabled kokera wood-shingle roof, with narrow attached bamboo-supported lean-to eave.",
+    "Two-tatami tea chamber scale: low nijiriguchi entry and lattice windows, ochre mud walls and exposed dark timber. Preserve visible actual openings; do not add a temple porch.",
+    "Only the tearoom body; omit foreground viewing veranda posts/roof, plants, surrounding garden and neighboring building."
+  ],
+  "material_observations": "灰褐柿葺屋面，土黄抹壁与暗褐细木框，竹檐柱淡黄，窗格旧褐。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "妙喜庵 · 待庵外观",
+    "桃山天正年间；传1582年前后"
+  ],
+  "generated_file": "assets/generated/jp_myoikian_taian.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:36.058062+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:25:58.715504+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dc423456341d5b5f5948526a8ccdc895f605f58d6b41b4040cd3feb3e2191be4",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-0936edfd-bbc4-46bd-8284-59606b3dfde6.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:25:25.068689+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Taian tearoom at Myokian, the small ochre earthen-walled structure beyond the veranda in the reference, traditionally dated around 1582.\nSTRUCTURAL CHECKPOINTS: Small single-storey tearoom under a plain gabled kokera wood-shingle roof, with narrow attached bamboo-supported lean-to eave.; Two-tatami tea chamber scale: low nijiriguchi entry and lattice windows, ochre mud walls and exposed dark timber. Preserve visible actual openings; do not add a temple porch.; Only the tearoom body; omit foreground viewing veranda posts/roof, plants, surrounding garden and neighboring building.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_myoikian_taian-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:25:58.715748+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-0936edfd-bbc4-46bd-8284-59606b3dfde6.png",
+      "retained_file": "assets/generated/jp_myoikian_taian.png",
+      "sourceSha256": "dc423456341d5b5f5948526a8ccdc895f605f58d6b41b4040cd3feb3e2191be4"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_myoikian_taian-photo.jpg",
+      "source_page": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html",
+      "image_url": "https://www.town.oyamazaki.kyoto.jp/material/images/group/1/myokian.JPG",
+      "author": "大山崎町官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "妙喜庵 · 待庵外观"
+    },
+    {
+      "title": "大山崎町 · 妙喜庵 · 待庵外观",
+      "url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "妙喜庵待庵",
+    "year": 1582,
+    "yearApprox": true,
+    "yearLabel": "传约1582年",
+    "yearNote": "文化财数据库定天正期（1573—1592）；传统说法为约1582年、千利休作，不作确切竣工年承诺。图版不收入现代参观廊架。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_oyamazaki"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "dc423456341d5b5f5948526a8ccdc895f605f58d6b41b4040cd3feb3e2191be4",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "a0813d8a4b4a50c97d7c6d6e180b2decb67859c129ba86a25a7278675854c4cb"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

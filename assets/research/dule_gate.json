@@ -1,0 +1,77 @@
+{
+  "id": "dule_gate",
+  "subject": "独乐寺山门",
+  "sources": [
+    {
+      "id": "dule_gate_full",
+      "photo": "assets/references/dule_gate_full-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AThe%20Shan%20Gate%20of%20Dule%20Temple.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/The_Shan_Gate_of_Dule_Temple.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Xin（Halazhang）",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/dule_gate_full-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/dule_gate_full-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 独乐寺山门. single-storey three-bay gate hall, single hipped roof with owl-tail ridge ends, central entrance opening. One building only. Use portrait canvas for pagodas, landscape for halls. Leave full uncut base and roof apex.",
+  "generated_file": "assets/generated/dule_gate.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-d4c947c6-7408-4ffb-abfa-ac4f893c45d8.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "独乐寺山门 · 门楼与相连构件",
+    "辽统和二年重建"
+  ],
+  "historical_sources": [
+    {
+      "source_page": "https://xn--fjqy64ap1r.cn/page102",
+      "publisher": "天津市蓟州区独乐寺景区",
+      "supports": "984山门与观音阁重修；观音阁高23米，五间四间、外两层内三层、内部暗层；上层平座回廊。"
+    },
+    {
+      "source_page": "https://www.tj.gov.cn/sq/yztj/jqjs/202005/t20200520_2467995.html",
+      "publisher": "天津市人民政府，来源市文化和旅游局",
+      "supports": "蓟州区武定街地址，984重建与1961第一批国保；观音像、元代壁画。始建隋说仅为寺史不用于现存断代。"
+    },
+    {
+      "title": "独乐寺",
+      "url": "https://www.tj.gov.cn/sq/yztj/jqjs/202005/t20200520_2467995.html",
+      "publisher": "天津市文化和旅游局、天津政务网",
+      "note": "核读984重建、观音阁及辽代十一面观音；2026-10-11核读。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "中国名刹 · 天津蓟县独乐寺",
+      "url": "https://chiculture.org.hk/sites/mainsite/files/2019-05/20208_zhongguomingsha_pdf_cn_5.pdf",
+      "publisher": "中国文化研究院",
+      "note": "核读观音阁五间四间、暗层、内外柱列与辽塑；不采用该文不同壁画断代；2026-10-11核读。",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "48de8a4bb3b2aa1842fb41782188859a410415ab8e7f3b582ab6e1a4d2535352",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "48de8a4bb3b2aa1842fb41782188859a410415ab8e7f3b582ab6e1a4d2535352",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "4342079b6e88ba2cf727a0cae9c2474922e50fe175ede5e1a11fc8f3d67fb2ea"
+  }
+}

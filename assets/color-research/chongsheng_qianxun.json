@@ -1,0 +1,72 @@
+{
+  "id": "chongsheng_qianxun",
+  "name": "崇圣寺千寻塔",
+  "subject": "崇圣寺千寻塔",
+  "status": "complete",
+  "generator": "image_gen.imagegen",
+  "input_images": [
+    "assets/generated/chongsheng_qianxun.png",
+    "assets/references/chongsheng-front-photo.jpg",
+    "assets/color-studies/v1/foguang-colored.png"
+  ],
+  "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 崇圣寺千寻塔.\nPhotograph material observations: pale cream plaster and brick, restrained warm-grey aged edges and dark metal finial. Single building only, preserve the input line composition.",
+  "material_observations": [
+    "pale cream plaster and brick, restrained warm-grey aged edges and dark metal finial"
+  ],
+  "references": [
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Three_Pagodas_Front_View.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Three_Pagodas_Front_View.jpg",
+      "author": "Tdxiang",
+      "date": "2007-04-21（首次上传）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/chongsheng-front-photo.jpg",
+      "role": "千寻塔东面和三塔方位关系，远景小塔下部受树遮挡",
+      "file": "assets/references/chongsheng-front-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:Left_leaning_Pagoda.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Left_leaning_Pagoda.JPG",
+      "author": "Tdxiang",
+      "date": "2007-04-21（首次上传）",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/chongsheng-side-photo.jpg",
+      "role": "南侧小塔全高十层近照、八角轮廓和塔基",
+      "file": "assets/references/chongsheng-front-photo.jpg"
+    },
+    {
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/%E5%A4%A7%E7%90%86_%E5%B4%87%E5%9C%A3%E5%AF%BA_%E5%8C%97%E5%A1%94_the_north_pagoda_-_panoramio.jpg",
+      "author": "wanghongliu",
+      "date": "2002-05-16",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "reference_file": "assets/references/chongsheng-north-photo.jpg",
+      "role": "明确标注北塔的实景，核对独立北塔轮廓，基部部分受树遮挡",
+      "file": "assets/references/chongsheng-front-photo.jpg"
+    }
+  ],
+  "original_research": "assets/research/chongsheng_qianxun.json",
+  "output": "assets/colored/chongsheng_qianxun.png",
+  "generated_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-09760422-e4bf-4f0a-8ae1-e994c7887b62.png",
+  "width": 1024,
+  "height": 1536,
+  "completed_at": "2026-10-12T08:13:02.933748+00:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "08098dd1c8ccdf87e610725707763cf3cc3340cceb66273f8c568ec9d88c928d",
+    "seeds": []
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.369Z",
+    "sourceSha256": "08098dd1c8ccdf87e610725707763cf3cc3340cceb66273f8c568ec9d88c928d",
+    "policy": "default-approve-2026-10-05",
+    "inputSha256": "b7b60427b0b0c903850d63f5332c2e7a4330610fba976f6213c5a874a92f521a",
+    "avifSha256": "0fec58e7af1054476724599488f5597b5fe04ffd9fa22a3b39a5c7ad3329bfee"
+  }
+}

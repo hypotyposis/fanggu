@@ -1,0 +1,128 @@
+{
+  "id": "jp_negoroji_daito",
+  "name": "根来寺大塔",
+  "subject": "根来寺 · 大塔本体",
+  "source_page": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-487/",
+  "image_url": "https://ibmuseum.mapps.ne.jp/files/1422/media_files/large/510.jpg",
+  "author": "和歌山县文化财门户（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_negoroji_daito-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_negoroji_daito-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Negoroji Daito, the large tahoto completed in 1547, complete tower only.\nSTRUCTURAL CHECKPOINTS: TWO roofs: five-bay square lower skirt, white plaster rounded dome above, cylindrical upper timber body and square pyramidal tiled upper roof.; Preserve the exceptionally broad lower storey, tall central finial, veranda railings and central stone staircase; show all of the actual tower.; No other buildings, trees, visitors or surrounding wires.\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "文化厅 · 根来寺多宝塔（大塔）",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/176102"
+    }
+  ],
+  "structure_checkpoints": [
+    "TWO roofs: five-bay square lower skirt, white plaster rounded dome above, cylindrical upper timber body and square pyramidal tiled upper roof.",
+    "Preserve the exceptionally broad lower storey, tall central finial, veranda railings and central stone staircase; show all of the actual tower.",
+    "No other buildings, trees, visitors or surrounding wires."
+  ],
+  "material_observations": "褐色木构和残余朱色，白色灰泥圆腹、灰瓦双层屋面，石阶灰白；保持现状，非新刷朱红。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "根来寺 · 大塔",
+    "室町天文十六年（1547）"
+  ],
+  "generated_file": "assets/generated/jp_negoroji_daito.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.805444+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://online.bunka.go.jp/db/heritages/detail/176102"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T23:13:55.513447+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "6761130d2f429ff55f560d2e97af1b1b58d340c568e61d8c016619d9cb61f37f",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e4493401-a5a8-4d96-8704-b6288c5c32ff.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:11:49.663753+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Negoroji Daito, the large tahoto completed in 1547, complete tower only.\nSTRUCTURAL CHECKPOINTS: TWO roofs: five-bay square lower skirt, white plaster rounded dome above, cylindrical upper timber body and square pyramidal tiled upper roof.; Preserve the exceptionally broad lower storey, tall central finial, veranda railings and central stone staircase; show all of the actual tower.; No other buildings, trees, visitors or surrounding wires.\nOrientation: portrait 1024×1536.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_negoroji_daito-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:13:55.513698+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e4493401-a5a8-4d96-8704-b6288c5c32ff.png",
+      "retained_file": "assets/generated/jp_negoroji_daito.png",
+      "sourceSha256": "6761130d2f429ff55f560d2e97af1b1b58d340c568e61d8c016619d9cb61f37f"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_negoroji_daito-photo.jpg",
+      "source_page": "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-487/",
+      "image_url": "https://ibmuseum.mapps.ne.jp/files/1422/media_files/large/510.jpg",
+      "author": "和歌山县文化财门户（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "根来寺 · 大塔本体"
+    },
+    {
+      "title": "文化厅 · 根来寺多宝塔（大塔）",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/176102"
+    }
+  ],
+  "site_recommendation": {
+    "name": "根来寺大塔",
+    "year": 1547,
+    "yearApprox": false,
+    "yearLabel": "1547年",
+    "yearNote": "文化财资料记天文十六年（1547）完成；较早的开工与寺院创立不替代塔的完成年代。",
+    "dyn": "jp_muromachi",
+    "country": "JP",
+    "placeKey": "jp_iwade"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "6761130d2f429ff55f560d2e97af1b1b58d340c568e61d8c016619d9cb61f37f",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "81a3acca403274d5ebd8c04b18efec99ce491c0d73f5a3d6f96a970b0bc81f21"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

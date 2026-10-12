@@ -68,7 +68,7 @@
 | 文件 | 用例要点 |
 | --- | --- |
 | `FangguTests/ReviewTests.swift` | 年表索引完整、旧评价不臆造六维、档位往返与非法值、径向投影与防抖、持久化与备份、版本 3 导入保留六维、首次保存才升级、独立自动保存、失败保留原数据、旧记录与新增条目的备份 |
-| `FangguTests/UXRegressionTests.swift` | 多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存 |
+| `FangguTests/UXRegressionTests.swift` | 打卡触觉跨原刻度连续、后退与静止／端点静音、多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存 |
 | `FangguTests/AtlasTimelineTests.swift` | 每个地域时期的节点间距与完整覆盖、等距时间轴、离线底图打包与多边形有效 |
 | `FangguTests/NearbyReminderTests.swift` | 附近提醒规则：3 公里内外与排序、最近 20 处围栏及只报进入、每日一次、目录目标排除已到访与城镇级点 |
 | `FangguTests/CatalogDistanceTests.swift` | 距离标签格式、约略位置判断、各种授权与定位状态下的说明文案、最近在前且同距离保持年代顺序、“就在附近”只认本体坐标 |
@@ -82,3 +82,5 @@
 | `Fanggu/UITestLaunch.swift`（App 内） | DEBUG 专用启动参数 `-uiTestDisableAnimations`、`-uiTestOpenSite <id>`、`-uiTestOpenReview`，Release 构建编译掉 |
 
 `color-proof.test.cjs` 验证默认接入、人眼通过和瞬时待默认通过三个状态的审图标签；浏览器实际图像加载与背景检查另行执行。原生 `ExpansionUITests` 查看新增条目和中英日详情，`LocalizationTests` 覆盖新增日本地区搜索。
+
+`china-single.test.cjs` 核对多单体拆分后的旧 ID、建筑群成员、三语导出、单体年代与国保批次，以及来源和交付哈希；原生 `CurationTests` 验证整组原子保存、整组撤销、失败重试与旧备份保留，`CurationUITests` 验证集合页一次打卡和重启后的进度。

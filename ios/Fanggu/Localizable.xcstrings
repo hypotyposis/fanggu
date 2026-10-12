@@ -1637,18 +1637,18 @@
         }
       }
     },
-    "名录与线路 · 看看集齐了多少" : {
+    "名录、线路与建筑群 · 看看集齐了多少" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Canons and routes · See how many you've collected"
+            "value" : "Lists, routes and building groups · See your progress"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "名録とルート · どれだけ制覇したか"
+            "value" : "名録・ルート・建築群の収集状況"
           }
         }
       }
@@ -4949,6 +4949,118 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未訪問の古跡に近づいたら通知"
+          }
+        }
+      }
+    },
+    "整组记录今日到访" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record today’s visit for the group"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "建築群をまとめて今日の訪問に記録"
+          }
+        }
+      }
+    },
+    "仅记录尚未到访的单体；已到访的日期、各项笔记和评价保留。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only unvisited members are marked. Existing visited dates, all notes and reviews are preserved."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "未訪問の単体のみ記録。既訪問の日付、すべてのメモと評価を保持します。"
+          }
+        }
+      }
+    },
+    "原集合记录" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Original group record"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分割前の建築群の記録"
+          }
+        }
+      }
+    },
+    "拆分前的记录保留在此，不计入单体到访进度。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The record from before the split stays here and does not count toward individual building progress."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分割前の記録はここに保持され、個々の建物の訪問進捗には含まれません。"
+          }
+        }
+      }
+    },
+    "编辑原到访记录" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit original visit record"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分割前の訪問記録を編集"
+          }
+        }
+      }
+    },
+    "查看原评价" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View original review"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "分割前の評価を見る"
+          }
+        }
+      }
+    },
+    "%@ · 已记录整组今日到访" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Group visit recorded for today"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · 建築群の今日の訪問を記録しました"
           }
         }
       }

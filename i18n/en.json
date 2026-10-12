@@ -40,7 +40,9 @@
       "ph_luzon": "Luzon",
       "jp_tohoku": "Tōhoku",
       "jp_chubu": "Chūbu",
-      "jp_kyushu": "Kyushu"
+      "jp_kyushu": "Kyushu",
+      "jp_shikoku": "Shikoku",
+      "jp_okinawa": "Okinawa"
     },
     "types": {
       "hall": "Hall",
@@ -112,7 +114,8 @@
       "la_lan_xang": "Laos · Lan Xang",
       "vn_champa": "Vietnam · Champa",
       "vn_nguyen": "Vietnam · Nguyễn Dynasty",
-      "ph_spanish": "Philippines · Spanish Colonial Era"
+      "ph_spanish": "Philippines · Spanish Colonial Era",
+      "jp_ryukyu": "Japan · Ryūkyū"
     },
     "provinces": {
       "四川": "Sichuan",
@@ -179,7 +182,19 @@
       "爱知县": "Aichi",
       "岛根县": "Shimane",
       "鸟取县": "Tottori",
-      "大分县": "Oita"
+      "大分县": "Oita",
+      "福岛县": "Fukushima Prefecture",
+      "神奈川县": "Kanagawa Prefecture",
+      "山口县": "Yamaguchi Prefecture",
+      "高知县": "Kōchi Prefecture",
+      "香川县": "Kagawa Prefecture",
+      "冈山县": "Okayama Prefecture",
+      "和歌山县": "Wakayama Prefecture",
+      "长崎县": "Nagasaki Prefecture",
+      "熊本县": "Kumamoto Prefecture",
+      "冲绳县": "Okinawa Prefecture",
+      "福井县": "Fukui Prefecture",
+      "三重县": "Mie Prefecture"
     },
     "places": {
       "zitong": "Zitong",
@@ -473,7 +488,38 @@
       "jp_izumo": "Izumo",
       "jp_misasa": "Misasa · Mount Mitoku",
       "jp_bungotakada": "Bungotakada",
-      "jp_ono_hyogo": "Ono"
+      "jp_ono_hyogo": "Ono",
+      "jp_hiraizumi": "Hiraizumi",
+      "jp_iwaki": "Iwaki",
+      "jp_uda": "Uda",
+      "jp_kamakura_city": "Kamakura",
+      "jp_shimonoseki": "Shimonoseki",
+      "jp_hikone": "Hikone",
+      "jp_matsue": "Matsue",
+      "jp_otoyo": "Ōtoyo",
+      "jp_sakaide": "Sakaide",
+      "jp_yamaguchi": "Yamaguchi",
+      "jp_okayama": "Okayama",
+      "jp_koya": "Kōya",
+      "jp_iwade": "Iwade",
+      "jp_nagasaki": "Nagasaki",
+      "jp_hitoyoshi": "Hitoyoshi",
+      "jp_naha": "Naha",
+      "jp_oyamazaki": "Ōyamazaki",
+      "jp_kobe": "Kobe · Yamada",
+      "jp_ashikaga": "Ashikaga",
+      "jp_obama": "Obama",
+      "jp_yamanashi_city": "Yamanashi",
+      "jp_aoki": "Aoki",
+      "jp_takayama": "Takayama",
+      "jp_nishio": "Nishio",
+      "jp_tsu": "Tsu",
+      "jp_aisho": "Aishō",
+      "jp_kora": "Kōra",
+      "jp_konan": "Konan",
+      "jp_nagahama": "Nagahama",
+      "jp_yoshino": "Yoshino",
+      "jp_sakurai": "Sakurai"
     },
     "protectionSources": {
       "国务院公布第1批全国重点文物保护单位名单": "State Council list of Major Historical and Cultural Sites Protected at the National Level, batch 1",
@@ -490,7 +536,8 @@
     "curationKinds": {
       "canon": "Canon",
       "route": "Route",
-      "theme": "Theme"
+      "theme": "Theme",
+      "collection": "Building group"
     }
   },
   "sites": {
@@ -12418,6 +12465,1908 @@
         "Jōdo-ji Jōdo Hall · Daibutsu-style Amida hall · east front",
         "Built in 1192"
       ]
+    },
+    "jp_chusonji_konjikido": {
+      "name": "Chūsonji Konjikidō",
+      "short": "Chūsonji Konjikidō",
+      "sub": "Chūsonji Konjikidō",
+      "era": "1124",
+      "yearLabel": "1124",
+      "yearNote": "The surviving hall dates to Tenji 1 (1124). Its modern protective enclosure is excluded from the dating and depicted scope.",
+      "place": "Japan · Iwate · Hiraizumi",
+      "lede": "This compact golden hall was built in 1124 for the Ōshū Fujiwara. Gold leaf unifies its roof, columns and interior decoration. The plate depicts Konjikidō itself, omitting its modern protective enclosure.",
+      "facts": [
+        "A three-bay square, single-storey hall with a pyramidal roof and low surrounding veranda; the timber structure is covered with gold leaf.",
+        "The surviving hall dates to Tenji 1 (1124). Its modern protective enclosure is excluded from the dating and depicted scope."
+      ],
+      "captions": [
+        "Chūsonji Konjikidō",
+        "1124"
+      ]
+    },
+    "jp_shiramizu_amidado": {
+      "name": "Shiramizu Amidado",
+      "short": "Shiramizu Amidado",
+      "sub": "Shiramizu Amidado",
+      "era": "1160",
+      "yearLabel": "1160",
+      "yearNote": "The existing Amida Hall was built in Eiryaku 1 (1160); earlier foundation traditions do not determine this entry’s date.",
+      "place": "Japan · Fukushima Prefecture · Iwaki",
+      "lede": "The three-bay Shiramizu Amida Hall, built in 1160, shelters Pure Land worship beneath a gently curved pyramidal roof. The plate includes the hall and veranda, with the surrounding pond garden omitted.",
+      "facts": [
+        "Three bays square, with a single pyramidal wood-shingle roof, timber doors and board walls, and a surrounding veranda.",
+        "The existing Amida Hall was built in Eiryaku 1 (1160); earlier foundation traditions do not determine this entry’s date."
+      ],
+      "captions": [
+        "Shiramizu Amidado",
+        "1160"
+      ]
+    },
+    "jp_hokiji_pagoda": {
+      "name": "Hōkiji Three-storey Pagoda",
+      "short": "Hōkiji Three-storey Pagoda",
+      "sub": "Hōkiji Three-storey Pagoda",
+      "era": "706",
+      "yearLabel": "706",
+      "yearNote": "The temple’s official account dates completion of the pagoda to Keiun 3 (706), separately from the foundation of the temple.",
+      "place": "Japan · Nara Prefecture · Ikaruga",
+      "lede": "Hōkiji’s three-storey pagoda was completed in 706. Its gradually narrowing roofs preserve the substantial proportions of Asuka-period Buddhist towers. The plate depicts the tower, finial and base.",
+      "facts": [
+        "A square, three-storey timber pagoda with tiled roofs, deep layered eaves and a metal finial.",
+        "The temple’s official account dates completion of the pagoda to Keiun 3 (706), separately from the foundation of the temple."
+      ],
+      "captions": [
+        "Hōkiji Three-storey Pagoda",
+        "706"
+      ]
+    },
+    "jp_shosoin_shoso": {
+      "name": "Shōsōin Storehouse",
+      "short": "Shōsōin Storehouse",
+      "sub": "Shōsōin Storehouse",
+      "era": "Mid-eighth century",
+      "yearLabel": "Mid-eighth century",
+      "yearNote": "Dated approximately to the mid-eighth century. The donation of Emperor Shōmu’s possessions in 756 provides historical context, not a confirmed construction-completion date.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Raised on tall posts, Shōsōin’s storehouse combines north, middle and south vaults. Log walls at the ends and board walls in the middle reveal different construction systems in a Nara-period treasury.",
+      "facts": [
+        "Nine bays long and three deep under a single hipped roof; tall supports carry log-built north and south vaults and a board-built middle vault.",
+        "Dated approximately to the mid-eighth century. The donation of Emperor Shōmu’s possessions in 756 provides historical context, not a confirmed construction-completion date."
+      ],
+      "captions": [
+        "Shōsōin Storehouse",
+        "Mid-eighth century"
+      ]
+    },
+    "jp_shinyakushiji_hondo": {
+      "name": "Shinyakushiji Main Hall",
+      "short": "Shinyakushiji Main Hall",
+      "sub": "Shinyakushiji Main Hall",
+      "era": "Eighth century",
+      "yearLabel": "Eighth century",
+      "yearNote": "The surviving hall is placed in the eighth-century Nara period; 750 is an approximate sorting value. 747 refers to the temple’s foundation.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "The broad, seven-bay main hall of Shinyakushiji survives from the Nara period. Its restrained exterior shelters the Yakushi and Twelve Divine Generals. The temple foundation in 747 is not treated as the hall’s exact construction date.",
+      "facts": [
+        "Seven bays wide and five deep, single-storey, with a tiled hip-and-gable roof and a broad horizontal arrangement of doors and windows.",
+        "The surviving hall is placed in the eighth-century Nara period; 750 is an approximate sorting value. 747 refers to the temple’s foundation."
+      ],
+      "captions": [
+        "Shinyakushiji Main Hall",
+        "Eighth century"
+      ]
+    },
+    "jp_murouji_kondo": {
+      "name": "Murōji Golden Hall",
+      "short": "Murōji Golden Hall",
+      "sub": "Murōji Golden Hall",
+      "era": "Ninth century",
+      "yearLabel": "Ninth century",
+      "yearNote": "The main fabric is approximately ninth century; 850 is a sorting estimate. A front extension was added in 1672 and is retained in the present-day outline.",
+      "place": "Japan · Nara Prefecture · Uda",
+      "lede": "Murōji’s Golden Hall stands on a slope with tall posts beneath its front veranda. The early-Heian core is combined with a forward extension added in the Edo period.",
+      "facts": [
+        "The present five-by-five-bay hall has a wood-shingle hip-and-gable roof and a raised front supported above the slope.",
+        "The main fabric is approximately ninth century; 850 is a sorting estimate. A front extension was added in 1672 and is retained in the present-day outline."
+      ],
+      "captions": [
+        "Murōji Golden Hall",
+        "Ninth century"
+      ]
+    },
+    "jp_murouji_pagoda": {
+      "name": "Murōji Five-storey Pagoda",
+      "short": "Murōji Five-storey Pagoda",
+      "sub": "Murōji Five-storey Pagoda",
+      "era": "Early Heian period",
+      "yearLabel": "Early Heian period",
+      "yearNote": "Classified as early Heian, with no exact construction year; 800 is an approximate timeline value. The plate follows the present form after repairs to 1998 typhoon damage.",
+      "place": "Japan · Nara Prefecture · Uda",
+      "lede": "Murōji’s compact five-storey pagoda combines closely layered shingle roofs with an unusual finial canopy and bowl. The plate preserves the small tower’s scale and depicts it alone.",
+      "facts": [
+        "A three-bay square five-storey pagoda, approximately 16.22 metres high, with wood-shingle roofs, vermilion timber and white panels.",
+        "Classified as early Heian, with no exact construction year; 800 is an approximate timeline value. The plate follows the present form after repairs to 1998 typhoon damage."
+      ],
+      "captions": [
+        "Murōji Five-storey Pagoda",
+        "Early Heian period"
+      ]
+    },
+    "jp_engakuji_shariden": {
+      "name": "Engakuji Shariden",
+      "short": "Engakuji Shariden",
+      "sub": "Engakuji Shariden",
+      "era": "First half of the fifteenth century",
+      "yearLabel": "First half of the fifteenth century",
+      "yearNote": "Culture Agency material places it in the first half of the fifteenth century; 1425 is approximate. The former Taiheiji hall was moved here after the 1563 fire.",
+      "place": "Japan · Kanagawa Prefecture · Kamakura",
+      "lede": "A low surrounding pent roof and dense brackets give Engakuji’s Shariden its Zen architectural profile. The surviving building was moved from Taiheiji and is distinct from Engakuji’s foundation in 1282.",
+      "facts": [
+        "A three-bay square core with a surrounding pent roof and cypress-bark hip-and-gable roof; its two eave bands do not indicate two occupied storeys.",
+        "Culture Agency material places it in the first half of the fifteenth century; 1425 is approximate. The former Taiheiji hall was moved here after the 1563 fire."
+      ],
+      "captions": [
+        "Engakuji Shariden",
+        "First half of the fifteenth century"
+      ]
+    },
+    "jp_kozanji_butsuden": {
+      "name": "Kōzanji Buddha Hall",
+      "short": "Kōzanji Buddha Hall",
+      "sub": "Kōzanji Buddha Hall",
+      "era": "1320",
+      "yearLabel": "1320",
+      "yearNote": "A column inscription gives Gen’ō 2 (1320). This dates the hall, while the temple’s 1327 foundation is separate historical context.",
+      "place": "Japan · Yamaguchi Prefecture · Shimonoseki",
+      "lede": "Round columns, cusped windows and a surrounding pent roof preserve late-Kamakura Zen architecture at Kōzanji. An inscription dates the hall to 1320, earlier than the temple’s 1327 foundation account.",
+      "facts": [
+        "Three bays square with a pent roof, a cypress-bark hip-and-gable main roof, dense brackets and cusped windows.",
+        "A column inscription gives Gen’ō 2 (1320). This dates the hall, while the temple’s 1327 foundation is separate historical context."
+      ],
+      "captions": [
+        "Kōzanji Buddha Hall",
+        "1320"
+      ]
+    },
+    "jp_hikone_tenshu": {
+      "name": "Hikone Castle Keep",
+      "short": "Hikone Castle Keep",
+      "sub": "Hikone Castle Keep",
+      "era": "1606–1607",
+      "yearLabel": "1606–1607",
+      "yearNote": "The cultural-property database gives 1606, while Hikone City records completion in 1607. The entry uses the 1606–1607 range and Momoyama artistic classification.",
+      "place": "Japan · Shiga Prefecture · Hikone",
+      "lede": "Hikone Castle’s compact three-storey keep combines several gable forms in a late-Momoyama castle silhouette. The plate includes the keep and its stone base, omitting gates and surrounding turrets.",
+      "facts": [
+        "Three roof tiers and three floors, with white plaster, dark timber, grey roof tiles, cusped upper windows and a railing.",
+        "The cultural-property database gives 1606, while Hikone City records completion in 1607. The entry uses the 1606–1607 range and Momoyama artistic classification."
+      ],
+      "captions": [
+        "Hikone Castle Keep",
+        "1606–1607"
+      ]
+    },
+    "jp_matsue_tenshu": {
+      "name": "Matsue Castle Keep",
+      "short": "Matsue Castle Keep",
+      "sub": "Matsue Castle Keep",
+      "era": "1611",
+      "yearLabel": "1611",
+      "yearNote": "Prayer tablets and related evidence confirm Keichō 16 (1611) for the keep, distinguished from the castle-building process in 1610.",
+      "place": "Japan · Shimane · Matsue",
+      "lede": "Dark weatherboards wrap Matsue Castle’s lower floors beneath the white upper lookout. Prayer tablets confirm its construction in 1611. Four visible roof tiers contain five floors and a basement.",
+      "facts": [
+        "Four external roof tiers, five internal floors and one basement; the plate retains the small entrance projection directly attached to the keep.",
+        "Prayer tablets and related evidence confirm Keichō 16 (1611) for the keep, distinguished from the castle-building process in 1610."
+      ],
+      "captions": [
+        "Matsue Castle Keep",
+        "1611"
+      ]
+    },
+    "jp_burakuji_yakushido": {
+      "name": "Burakuji Yakushidō",
+      "short": "Burakuji Yakushidō",
+      "sub": "Burakuji Yakushidō",
+      "era": "Twelfth century",
+      "yearLabel": "Twelfth century",
+      "yearNote": "Dated to the late-Heian twelfth century. 1151 comes from a statue inscription and is used approximately, not asserted as the entire hall’s exact completion year.",
+      "place": "Japan · Kōchi Prefecture · Ōtoyo",
+      "lede": "Burakuji’s five-bay Yakushi Hall spreads beneath a broad shingle roof with restrained doors, windows and veranda. A statue inscription dated 1151 provides context for this late-Heian timber building.",
+      "facts": [
+        "Five bays square, single-storey, with a shingled hip-and-gable roof, timber panels and surrounding veranda; the small foreground offering shelter is omitted.",
+        "Dated to the late-Heian twelfth century. 1151 comes from a statue inscription and is used approximately, not asserted as the entire hall’s exact completion year."
+      ],
+      "captions": [
+        "Burakuji Yakushidō",
+        "Twelfth century"
+      ]
+    },
+    "jp_kamitani_honden": {
+      "name": "Kandani Shrine Main Sanctuary",
+      "short": "Kandani Shrine Main Sanctuary",
+      "sub": "Kandani Shrine Main Sanctuary",
+      "era": "1219",
+      "yearLabel": "1219",
+      "yearNote": "An inscription dates the sanctuary to Jōkyū 1 (1219). The reference photograph predates the 2022 lightning fire; repair history is separate from the original date.",
+      "place": "Japan · Kagawa Prefecture · Sakaide",
+      "lede": "Kandani Shrine’s three-bay nagare-style sanctuary extends a long front eave over its steps. Plain timber and a restrained porch preserve early-Kamakura shrine architecture, dated by an inscription to 1219.",
+      "facts": [
+        "A three-bay nagare-style sanctuary with a cypress-bark roof, raised floor and front stair, distinguishing the main columns from the porch supports.",
+        "An inscription dates the sanctuary to Jōkyū 1 (1219). The reference photograph predates the 2022 lightning fire; repair history is separate from the original date."
+      ],
+      "captions": [
+        "Kandani Shrine Main Sanctuary",
+        "1219"
+      ]
+    },
+    "jp_rurikoji_pagoda": {
+      "name": "Rurikōji Five-storey Pagoda",
+      "short": "Rurikōji Five-storey Pagoda",
+      "sub": "Rurikōji Five-storey Pagoda",
+      "era": "1442",
+      "yearLabel": "1442",
+      "yearNote": "Completed in Kakitsu 2 (1442). Conservation and roof renewal are recorded separately and do not replace the original construction date.",
+      "place": "Japan · Yamaguchi Prefecture · Yamaguchi",
+      "lede": "Rurikōji’s cypress-bark roofs narrow gently upward, with a railing only at the second tier. Built in 1442, the pagoda is depicted from an official photograph after recent conservation work.",
+      "facts": [
+        "Three bays square, five storeys and about 31.2 metres high, with cypress-bark roofs, a second-tier railing and a tall finial.",
+        "Completed in Kakitsu 2 (1442). Conservation and roof renewal are recorded separately and do not replace the original construction date."
+      ],
+      "captions": [
+        "Rurikōji Five-storey Pagoda",
+        "1442"
+      ]
+    },
+    "jp_kibitsu_honden": {
+      "name": "Kibitsu Shrine Main and Worship Halls",
+      "short": "Kibitsu Shrine Main and Worship Halls",
+      "sub": "Kibitsu Shrine Main and Worship Halls",
+      "era": "1425",
+      "yearLabel": "1425",
+      "yearNote": "The existing main and worship halls were rebuilt in Ōei 32 (1425); earlier worship traditions are not used to date their surviving timber fabric.",
+      "place": "Japan · Okayama Prefecture · Okayama",
+      "lede": "Two parallel roof forms rise over Kibitsu Shrine’s main hall, joined to the projecting worship hall. The plate retains both buildings as the designated pair and their distinctive linked hip-and-gable composition.",
+      "facts": [
+        "The main hall has a paired hip-and-gable cypress-bark roof and adjoining worship hall, with repeated gables, chigi and layered rooflines.",
+        "The existing main and worship halls were rebuilt in Ōei 32 (1425); earlier worship traditions are not used to date their surviving timber fabric."
+      ],
+      "captions": [
+        "Kibitsu Shrine Main and Worship Halls",
+        "1425"
+      ]
+    },
+    "jp_kamosu_honden": {
+      "name": "Kamosu Shrine Main Sanctuary",
+      "short": "Kamosu Shrine Main Sanctuary",
+      "sub": "Kamosu Shrine Main Sanctuary",
+      "era": "1583",
+      "yearLabel": "1583",
+      "yearNote": "Cultural-property records date the surviving sanctuary to Tenshō 11 (1583). A 1346 inscription concerns earlier fabric and does not date the whole present building.",
+      "place": "Japan · Shimane · Matsue",
+      "lede": "Massive timber posts raise Kamosu Shrine’s two-bay sanctuary beneath a steep roof with chigi and katsuogi. The plate depicts the elevated taisha-style main sanctuary alone, omitting the lower worship hall.",
+      "facts": [
+        "A two-by-two-bay raised taisha-style sanctuary with wood shingles, chigi, katsuogi and an off-centre gable-side entrance and stair.",
+        "Cultural-property records date the surviving sanctuary to Tenshō 11 (1583). A 1346 inscription concerns earlier fabric and does not date the whole present building."
+      ],
+      "captions": [
+        "Kamosu Shrine Main Sanctuary",
+        "1583"
+      ]
+    },
+    "jp_kongosanmaiin_tahoto": {
+      "name": "Kongōsanmaiin Tahōtō",
+      "short": "Kongōsanmaiin Tahōtō",
+      "sub": "Kongōsanmaiin Tahōtō",
+      "era": "1223",
+      "yearLabel": "1223",
+      "yearNote": "Built in Jōō 2 (1223). The plate depicts this tahōtō itself, without substituting the larger five-bay proportions of Negoroji’s Daitō.",
+      "place": "Japan · Wakayama Prefecture · Kōya",
+      "lede": "A white rounded body sits between two dark bark roofs at Kongōsanmaiin. Built in 1223, this compact tahōtō joins a square lower storey to a circular upper body, retaining its three-bay scale.",
+      "facts": [
+        "A three-bay square lower storey, circular upper body, two cypress-bark roofs, central vermilion doors, lattice windows and finial.",
+        "Built in Jōō 2 (1223). The plate depicts this tahōtō itself, without substituting the larger five-bay proportions of Negoroji’s Daitō."
+      ],
+      "captions": [
+        "Kongōsanmaiin Tahōtō",
+        "1223"
+      ]
+    },
+    "jp_negoroji_daito": {
+      "name": "Negoroji Daitō",
+      "short": "Negoroji Daitō",
+      "sub": "Negoroji Daitō",
+      "era": "1547",
+      "yearLabel": "1547",
+      "yearNote": "Cultural-property records give completion in Tenbun 16 (1547); earlier construction beginnings and temple foundation are recorded separately.",
+      "place": "Japan · Wakayama Prefecture · Iwade",
+      "lede": "Negoroji’s Daitō enlarges the tahōtō form into a substantial interior: a five-bay square lower body supports a white dome and circular upper body. Completed in 1547, it is depicted without the neighbouring hall.",
+      "facts": [
+        "A five-bay lower storey and circular upper body, two large tiled roofs, a white rounded body, tall finial and surrounding veranda.",
+        "Cultural-property records give completion in Tenbun 16 (1547); earlier construction beginnings and temple foundation are recorded separately."
+      ],
+      "captions": [
+        "Negoroji Daitō",
+        "1547"
+      ]
+    },
+    "jp_sofukuji_daiou": {
+      "name": "Sōfukuji Daiōhōden",
+      "short": "Sōfukuji Daiōhōden",
+      "sub": "Sōfukuji Daiōhōden",
+      "era": "1646; upper addition c. 1681",
+      "yearLabel": "1646; upper addition c. 1681",
+      "yearNote": "The lower structure was completed in Shōhō 3 (1646), with an upper addition around 1681. The present two-roof form is not attributed wholly to 1646.",
+      "place": "Japan · Nagasaki Prefecture · Nagasaki",
+      "lede": "Sōfukuji’s Daiōhōden combines vermilion columns and white walls with timber prepared in Fujian and assembled in Nagasaki. The 1646 lower structure received an upper roof around 1681.",
+      "facts": [
+        "Vermilion posts, lattice doors and white panels beneath two tiled roof bands, with southern Chinese construction characteristics.",
+        "The lower structure was completed in Shōhō 3 (1646), with an upper addition around 1681. The present two-roof form is not attributed wholly to 1646."
+      ],
+      "captions": [
+        "Sōfukuji Daiōhōden",
+        "1646; upper addition c. 1681"
+      ]
+    },
+    "jp_sofukuji_daiippomon": {
+      "name": "Sōfukuji Daiippōmon",
+      "short": "Sōfukuji Daiippōmon",
+      "sub": "Sōfukuji Daiippōmon",
+      "era": "Rebuilt in 1695",
+      "yearLabel": "Rebuilt in 1695",
+      "yearNote": "Nagasaki City’s current account dates rebuilding to Genroku 8 (1695), using parts prepared in Ningbo. Earlier foundation history, including 1629, does not date the surviving gate.",
+      "place": "Japan · Nagasaki Prefecture · Nagasaki",
+      "lede": "Trefoil brackets and fan-shaped rafters distinguish Sōfukuji’s Daiippōmon, a gate reflecting Ningbo craftsmanship. The plate depicts this inner gate, separately from the temple’s outer Sanmon.",
+      "facts": [
+        "A single gateway under a broad tiled eave, with vermilion posts, polychrome brackets, trefoil bracket arms and fan rafters.",
+        "Nagasaki City’s current account dates rebuilding to Genroku 8 (1695), using parts prepared in Ningbo. Earlier foundation history, including 1629, does not date the surviving gate."
+      ],
+      "captions": [
+        "Sōfukuji Daiippōmon",
+        "Rebuilt in 1695"
+      ]
+    },
+    "jp_aoi_aso": {
+      "name": "Aoi Aso Shrine Gate",
+      "short": "Aoi Aso Shrine Gate",
+      "sub": "Aoi Aso Shrine Gate",
+      "era": "Gate of 1613",
+      "yearLabel": "Gate of 1613",
+      "yearNote": "The depicted gate dates to Keichō 18 (1613), within the shrine’s 1610–1613 building campaign. It is classified in the Momoyama artistic period.",
+      "place": "Japan · Kumamoto Prefecture · Hitoyoshi",
+      "lede": "A thick thatched hipped roof crowns Aoi Aso Shrine’s two-level gate. Carved corner faces and surviving colour details distinguish the 1613 gate; other shrine buildings are outside this plate’s scope.",
+      "facts": [
+        "A three-bay, one-opening, two-level timber gate with a single thatched hipped roof and carved corner faces.",
+        "The depicted gate dates to Keichō 18 (1613), within the shrine’s 1610–1613 building campaign. It is classified in the Momoyama artistic period."
+      ],
+      "captions": [
+        "Aoi Aso Shrine Gate",
+        "Gate of 1613"
+      ]
+    },
+    "jp_tamaudun": {
+      "name": "Tamaudun Royal Mausoleum",
+      "short": "Tamaudun Royal Mausoleum",
+      "sub": "Tamaudun Royal Mausoleum",
+      "era": "1501; repaired after the war",
+      "yearLabel": "1501; repaired after the war",
+      "yearNote": "Founded by King Shō Shin in 1501, damaged in 1945 and repaired after the war. The original foundation date and subsequent repairs are both retained under the Ryūkyū period.",
+      "place": "Japan · Okinawa Prefecture · Naha",
+      "lede": "Tamaudun’s three adjacent stone chambers imitate timber architecture in their roofs and framing. Built by King Shō Shin in 1501, the royal Ryūkyū mausoleum survives with repairs after wartime destruction.",
+      "facts": [
+        "Three connected stone chambers with stone imitations of timber roofs, front platforms, doorways and shisa figures.",
+        "Founded by King Shō Shin in 1501, damaged in 1945 and repaired after the war. The original foundation date and subsequent repairs are both retained under the Ryūkyū period."
+      ],
+      "captions": [
+        "Tamaudun Royal Mausoleum",
+        "1501; repaired after the war"
+      ]
+    },
+    "jp_myoikian_taian": {
+      "name": "Myōkian Tai-an",
+      "short": "Myōkian Tai-an",
+      "sub": "Myōkian Tai-an",
+      "era": "Traditionally c. 1582",
+      "yearLabel": "Traditionally c. 1582",
+      "yearNote": "The cultural-property database gives the Tenshō era (1573–1592). Attribution to Rikyū around 1582 remains traditional, not a confirmed completion date. Modern viewing structures are omitted.",
+      "place": "Japan · Kyoto Prefecture · Ōyamazaki",
+      "lede": "Tai-an’s two-mat tea room uses earthen walls, bamboo, timber and a low entrance to create a compact space for tea. Its traditional association with Sen no Rikyū and the 1582 Yamazaki campaign is recorded as approximate.",
+      "facts": [
+        "A two-mat tea house with earthen walls, lattice windows, low entrance, a bamboo-and-timber eave and wood-shingle roof.",
+        "The cultural-property database gives the Tenshō era (1573–1592). Attribution to Rikyū around 1582 remains traditional, not a confirmed completion date. Modern viewing structures are omitted."
+      ],
+      "captions": [
+        "Myōkian Tai-an",
+        "Traditionally c. 1582"
+      ]
+    },
+    "jp_urakuen_joan": {
+      "name": "Urakuen Jo-an",
+      "short": "Urakuen Jo-an",
+      "sub": "Urakuen Jo-an",
+      "era": "c. 1618; relocated in 1972",
+      "yearLabel": "c. 1618; relocated in 1972",
+      "yearNote": "The Culture Agency dates it approximately to Genna 4 (c. 1618) and relocated to Inuyama in 1972. The plate depicts Jo-an alone, excluding the neighbouring former Shōden-in Shoin; relocation does not replace the original date.",
+      "place": "Japan · Aichi · Inuyama",
+      "lede": "Natural timber, ochre earthen walls, bamboo lattice windows and a recessed left-hand porch define Jo-an. Built at Kenninji in Kyoto around 1618, the tea house now stands in Inuyama’s Urakuen.",
+      "facts": [
+        "A tea room of two and a half mats plus a daime mat, with a front-facing shingled hip-and-gable roof, recessed earthen porch and bamboo lattice windows.",
+        "The Culture Agency dates it approximately to Genna 4 (c. 1618) and relocated to Inuyama in 1972. The plate depicts Jo-an alone, excluding the neighbouring former Shōden-in Shoin; relocation does not replace the original date."
+      ],
+      "captions": [
+        "Urakuen Jo-an",
+        "c. 1618"
+      ]
+    },
+    "jp_hakogi_house": {
+      "name": "Hakogi House Main Building",
+      "short": "Hakogi House Main Building",
+      "sub": "Hakogi House Main Building",
+      "era": "Fourteenth century",
+      "yearLabel": "Fourteenth century",
+      "yearNote": "The main building is dated approximately to the fourteenth century, with 1350 as a sorting estimate. It was relocated about 70 metres in the 1970s; the later detached room is omitted.",
+      "place": "Japan · Hyōgo Prefecture · Kobe · Yamada",
+      "lede": "The Hakogi main house encloses its rooms beneath thick thatch and broad earthen walls with small openings. Material studies place it in the fourteenth century; reservoir construction prompted relocation.",
+      "facts": [
+        "The main house is about 11.4 by 8.4 metres, with a thatched hip-and-gable roof, earthen walls, aged timber and small windows. Its map point is a Kobe-area approximation.",
+        "The main building is dated approximately to the fourteenth century, with 1350 as a sorting estimate. It was relocated about 70 metres in the 1970s; the later detached room is omitted."
+      ],
+      "captions": [
+        "Hakogi House Main Building",
+        "Fourteenth century"
+      ]
+    },
+    "jp_furui_house": {
+      "name": "Former Furui House",
+      "short": "Former Furui House",
+      "sub": "Former Furui House",
+      "era": "Fifteenth century",
+      "yearLabel": "Fifteenth century",
+      "yearNote": "Himeji City places the surviving main house in the fifteenth-century Muromachi period. 1450 is an approximate timeline value, not an exact construction date.",
+      "place": "Japan · Hyōgo Prefecture · Himeji",
+      "lede": "A broad thatched roof shelters the earthen walls and timber doors of the former Furui House. The plate depicts the fifteenth-century main house alone, omitting neighbouring modern facilities.",
+      "facts": [
+        "A single-storey house with a thatched hip-and-gable roof, thick earthen walls, timber posts and lattice windows.",
+        "Himeji City places the surviving main house in the fifteenth-century Muromachi period. 1450 is an approximate timeline value, not an exact construction date."
+      ],
+      "captions": [
+        "Former Furui House",
+        "Fifteenth century"
+      ]
+    },
+    "jp_bannaji_hondo": {
+      "name": "Bannaji Main Hall",
+      "short": "Bannaji Main Hall",
+      "sub": "Bannaji Main Hall",
+      "era": "1299; later alterations",
+      "yearLabel": "1299; later alterations",
+      "yearNote": "The surviving hall dates to 1299. Columns and roofing were altered in 1407–1432; the temple’s foundation is a separate event.",
+      "place": "Japan · Tochigi Prefecture · Ashikaga",
+      "lede": "On the former Ashikaga residence site, the hall combines late Kamakura Zen-style framing with a broad tiled roof.",
+      "facts": [
+        "Five bays wide and deep, with a single-story hip-and-gable tiled roof. The plate depicts the hall alone.",
+        "The surviving hall dates to 1299. Columns and roofing were altered in 1407–1432; the temple’s foundation is a separate event."
+      ],
+      "captions": [
+        "Bannaji Main Hall",
+        "1299; later alterations"
+      ]
+    },
+    "jp_myotsuji_hondo": {
+      "name": "Myōtsūji Main Hall",
+      "short": "Myōtsūji Main Hall",
+      "sub": "Myōtsūji Main Hall",
+      "era": "1258; dedication in 1265",
+      "yearLabel": "1258; dedication in 1265",
+      "yearNote": "A ridge inscription records 1258; the dedication followed in 1265. These are construction and ceremony dates respectively.",
+      "place": "Japan · Fukui Prefecture · Obama",
+      "lede": "Myōtsūji’s main hall preserves substantial Kamakura proportions in the hills of Obama; its pagoda has a separate entry.",
+      "facts": [
+        "Five bays across and six deep, with a cypress-bark hip-and-gable roof and a front porch.",
+        "A ridge inscription records 1258; the dedication followed in 1265. These are construction and ceremony dates respectively."
+      ],
+      "captions": [
+        "Myōtsūji Main Hall",
+        "1258; dedication in 1265"
+      ]
+    },
+    "jp_myotsuji_pagoda": {
+      "name": "Myōtsūji Three-Story Pagoda",
+      "short": "Myōtsūji Three-Story Pagoda",
+      "sub": "Myōtsūji Three-Story Pagoda",
+      "era": "1270",
+      "yearLabel": "1270",
+      "yearNote": "The surviving pagoda was built in 1270. The hall’s 1258 ridge inscription does not date the tower.",
+      "place": "Japan · Fukui Prefecture · Obama",
+      "lede": "Standing beside the hall, three tapering cypress-bark roofs define Myōtsūji’s pagoda.",
+      "facts": [
+        "Three stories, each three bays wide, with cypress-bark roofing; approximately 22.12 m including the finial.",
+        "The surviving pagoda was built in 1270. The hall’s 1258 ridge inscription does not date the tower."
+      ],
+      "captions": [
+        "Myōtsūji Three-Story Pagoda",
+        "1270"
+      ]
+    },
+    "jp_seihakuji_butsuden": {
+      "name": "Seihakuji Buddha Hall",
+      "short": "Seihakuji Buddha Hall",
+      "sub": "Seihakuji Buddha Hall",
+      "era": "1415",
+      "yearLabel": "1415",
+      "yearNote": "An ink inscription dates the surviving hall to 1415; the temple’s traditional 1333 foundation is separate.",
+      "place": "Japan · Yamanashi · Yamanashi",
+      "lede": "Compact Seihakuji Buddha Hall expresses Zen-style detail through its lower pent roof, bracket clusters and steep bark roof.",
+      "facts": [
+        "A three-bay-square core is single-story with a surrounding mokoshi pent roof, rather than two floors.",
+        "An ink inscription dates the surviving hall to 1415; the temple’s traditional 1333 foundation is separate."
+      ],
+      "captions": [
+        "Seihakuji Buddha Hall",
+        "1415"
+      ]
+    },
+    "jp_daihoji_pagoda": {
+      "name": "Daihōji Three-Story Pagoda",
+      "short": "Daihōji Three-Story Pagoda",
+      "sub": "Daihōji Three-Story Pagoda",
+      "era": "1333",
+      "yearLabel": "1333",
+      "yearNote": "Built in 1333, the surviving pagoda belongs to the end of the Kamakura period; this dates the tower, not the temple’s foundation.",
+      "place": "Japan · Nagano · Aoki",
+      "lede": "Daihōji’s pagoda in Aoki is known as the “look-back pagoda,” with an expansive first story and tapering upper stories.",
+      "facts": [
+        "Three cypress-bark-roofed stories with a broad lower tier; the plate includes the brackets and finial, without adjacent halls.",
+        "Built in 1333, the surviving pagoda belongs to the end of the Kamakura period; this dates the tower, not the temple’s foundation."
+      ],
+      "captions": [
+        "Daihōji Three-Story Pagoda",
+        "1333"
+      ]
+    },
+    "jp_ankokuji_kyozo": {
+      "name": "Ankokuji Sutra Repository",
+      "short": "Ankokuji Sutra Repository",
+      "sub": "Ankokuji Sutra Repository",
+      "era": "1408",
+      "yearLabel": "1408",
+      "yearNote": "The repository dates to 1408. The plate shows its exterior; the revolving sutra cabinet is an interior feature.",
+      "place": "Japan · Gifu · Takayama",
+      "lede": "Ankokuji’s compact repository in Hida combines a small core with a surrounding mokoshi in Zen style.",
+      "facts": [
+        "A one-bay-square core, single-story with a mokoshi, appears three bays across; hip-and-gable shingle roofs do not imply two floors.",
+        "The repository dates to 1408. The plate shows its exterior; the revolving sutra cabinet is an interior feature."
+      ],
+      "captions": [
+        "Ankokuji Sutra Repository",
+        "1408"
+      ]
+    },
+    "jp_konrenji_midado": {
+      "name": "Konrenji Amida Hall",
+      "short": "Konrenji Amida Hall",
+      "sub": "Konrenji Amida Hall",
+      "era": "Kamakura period; placed c. 1300",
+      "yearLabel": "Kamakura period; placed c. 1300",
+      "yearNote": "Local and cultural-property sources place the surviving hall in the Kamakura period. c. 1300 is a timeline placement; the traditional 1186 date is not treated as proven.",
+      "place": "Japan · Aichi · Nishio",
+      "lede": "Konrenji’s small timber hall preserves a modest medieval devotional space beneath a low shingle roof and deep eaves.",
+      "facts": [
+        "The three-bay-square hall has a hipped shingle roof; the lower front eaves follow its present appearance.",
+        "Local and cultural-property sources place the surviving hall in the Kamakura period. c. 1300 is a timeline placement; the traditional 1186 date is not treated as proven."
+      ],
+      "captions": [
+        "Konrenji Amida Hall",
+        "Kamakura period; placed c. 1300"
+      ]
+    },
+    "jp_senshuji_mieido": {
+      "name": "Senjuji Mieidō",
+      "short": "Senjuji Mieidō",
+      "sub": "Senjuji Mieidō",
+      "era": "1666; dedication in 1679",
+      "yearLabel": "1666; dedication in 1679",
+      "yearNote": "The ridge record dates construction to 1666; dedication took place in 1679. The timeline uses the construction record.",
+      "place": "Japan · Mie Prefecture · Tsu",
+      "lede": "Senjuji’s Mieidō is a principal worship hall at Takada Honzan, with an expansive tiled roof and vast timber interior.",
+      "facts": [
+        "Nine bays across and deep, single-story with a tiled hip-and-gable roof and a three-bay front porch.",
+        "The ridge record dates construction to 1666; dedication took place in 1679. The timeline uses the construction record."
+      ],
+      "captions": [
+        "Senjuji Mieidō",
+        "1666; dedication in 1679"
+      ]
+    },
+    "jp_senshuji_nyoraido": {
+      "name": "Senjuji Nyoraidō",
+      "short": "Senjuji Nyoraidō",
+      "sub": "Senjuji Nyoraidō",
+      "era": "1748",
+      "yearLabel": "1748",
+      "yearNote": "The present Nyoraidō was completed in 1748. It is catalogued separately from the Mieidō, with its own date and scope.",
+      "place": "Japan · Mie Prefecture · Tsu",
+      "lede": "A tall main roof, encircling mokoshi and ornate porch give the Nyoraidō its elaborate Edo-period silhouette.",
+      "facts": [
+        "A five-by-four-bay core is single-story with a tiled mokoshi and a three-bay porch featuring a curved gable.",
+        "The present Nyoraidō was completed in 1748. It is catalogued separately from the Mieidō, with its own date and scope."
+      ],
+      "captions": [
+        "Senjuji Nyoraidō",
+        "1748"
+      ]
+    },
+    "jp_onjoji_kondo": {
+      "name": "Onjōji Kondō",
+      "short": "Onjōji Kondō",
+      "sub": "Onjōji Kondō",
+      "era": "Rebuilt in 1599",
+      "yearLabel": "Rebuilt in 1599",
+      "yearNote": "The surviving Kondō was rebuilt in 1599 under Kita-no-Mandokoro’s patronage, distinct from the temple’s much earlier origins.",
+      "place": "Japan · Shiga Prefecture · Ōtsu",
+      "lede": "Miidera’s Kondō sets a seven-bay-square hall beneath a broad cypress-bark hip-and-gable roof.",
+      "facts": [
+        "Single-story with cypress-bark roofing and a one-bay front porch; the plate depicts only the Kondō.",
+        "The surviving Kondō was rebuilt in 1599 under Kita-no-Mandokoro’s patronage, distinct from the temple’s much earlier origins."
+      ],
+      "captions": [
+        "Onjōji Kondō",
+        "Rebuilt in 1599"
+      ]
+    },
+    "jp_kongorinji_hondo": {
+      "name": "Kongōrinji Main Hall",
+      "short": "Kongōrinji Main Hall",
+      "sub": "Kongōrinji Main Hall",
+      "era": "Fourteenth century; placed c. 1350",
+      "yearLabel": "Fourteenth century; placed c. 1350",
+      "yearNote": "The database dates the surviving hall to 1333–1392. 1288 is an inscription on altar fittings, not proof of the hall’s construction year; c. 1350 is a timeline placement.",
+      "place": "Japan · Shiga Prefecture · Aishō",
+      "lede": "Kongōrinji, one of the three Kotō temples, presents medieval wayō architecture through broad eaves and cypress-bark roofing.",
+      "facts": [
+        "A seven-bay-square, single-story hall with a cypress-bark hip-and-gable roof, front colonnade and porch.",
+        "The database dates the surviving hall to 1333–1392. 1288 is an inscription on altar fittings, not proof of the hall’s construction year; c. 1350 is a timeline placement."
+      ],
+      "captions": [
+        "Kongōrinji Main Hall",
+        "Fourteenth century; placed c. 1350"
+      ]
+    },
+    "jp_saimyoji_hondo": {
+      "name": "Saimyōji Main Hall",
+      "short": "Saimyōji Main Hall",
+      "sub": "Saimyōji Main Hall",
+      "era": "Early Kamakura; later enlarged",
+      "yearLabel": "Early Kamakura; later enlarged",
+      "yearNote": "The core dates to early Kamakura, within the database’s 1185–1274 range. Later enlargements and a porch shaped the present hall; c. 1225 locates the early fabric.",
+      "place": "Japan · Shiga Prefecture · Kōra",
+      "lede": "Saimyōji’s broad bark roof covers spaces formed by successive enlargements, recording the hall’s medieval development.",
+      "facts": [
+        "The original five-bay core was enlarged to seven bays square; the three-bay porch was added in the mid-Muromachi period.",
+        "The core dates to early Kamakura, within the database’s 1185–1274 range. Later enlargements and a porch shaped the present hall; c. 1225 locates the early fabric."
+      ],
+      "captions": [
+        "Saimyōji Main Hall",
+        "Early Kamakura; later enlarged"
+      ]
+    },
+    "jp_saimyoji_pagoda": {
+      "name": "Saimyōji Three-Story Pagoda",
+      "short": "Saimyōji Three-Story Pagoda",
+      "sub": "Saimyōji Three-Story Pagoda",
+      "era": "Late Kamakura; placed c. 1300",
+      "yearLabel": "Late Kamakura; placed c. 1300",
+      "yearNote": "Official sources assign the pagoda to late Kamakura, within 1275–1332. c. 1300 is not a documented single construction year.",
+      "place": "Japan · Shiga Prefecture · Kōra",
+      "lede": "Saimyōji’s pagoda complements the medieval halls of Kotō with tapering bark roofs and intricate timber brackets.",
+      "facts": [
+        "Three square, three-bay stories with bark roofing; interior paintings are not transferred to the exterior.",
+        "Official sources assign the pagoda to late Kamakura, within 1275–1332. c. 1300 is not a documented single construction year."
+      ],
+      "captions": [
+        "Saimyōji Three-Story Pagoda",
+        "Late Kamakura; placed c. 1300"
+      ]
+    },
+    "jp_jorakuji_hondo": {
+      "name": "Jōrakuji Main Hall",
+      "short": "Jōrakuji Main Hall",
+      "sub": "Jōrakuji Main Hall",
+      "era": "Rebuilt after the 1360 fire",
+      "yearLabel": "Rebuilt after the 1360 fire",
+      "yearNote": "Rebuilt after the 1360 fire, the hall has no confirmed completion year and received later Muromachi alterations; c. 1360 is used for placement.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "Jōrakuji’s main hall, one of the Konan Sanzan landmarks, has a broad bark roof and deep front eaves.",
+      "facts": [
+        "Seven bays wide and six deep, with a bark hip-and-gable roof and a three-bay porch; the present hall alone is depicted.",
+        "Rebuilt after the 1360 fire, the hall has no confirmed completion year and received later Muromachi alterations; c. 1360 is used for placement."
+      ],
+      "captions": [
+        "Jōrakuji Main Hall",
+        "Rebuilt after the 1360 fire"
+      ]
+    },
+    "jp_jorakuji_pagoda": {
+      "name": "Jōrakuji Three-Story Pagoda",
+      "short": "Jōrakuji Three-Story Pagoda",
+      "sub": "Jōrakuji Three-Story Pagoda",
+      "era": "1400",
+      "yearLabel": "1400",
+      "yearNote": "A fundraising record dates to 1398, while a tile inscription supports the pagoda’s 1400 construction date.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "On Jōrakuji’s hillside, three tiled roofs and a long finial create a slender outline.",
+      "facts": [
+        "Three stories, each three bays wide, tiled roofs and approximately 22.8 m overall; the finial accounts for about one-third of the height.",
+        "A fundraising record dates to 1398, while a tile inscription supports the pagoda’s 1400 construction date."
+      ],
+      "captions": [
+        "Jōrakuji Three-Story Pagoda",
+        "1400"
+      ]
+    },
+    "jp_zensuiji_hondo": {
+      "name": "Zensuiji Main Hall",
+      "short": "Zensuiji Main Hall",
+      "sub": "Zensuiji Main Hall",
+      "era": "Traditionally rebuilt in 1366",
+      "yearLabel": "Traditionally rebuilt in 1366",
+      "yearNote": "Cultural-property sources assign the hall to the Nanbokuchō period. Its traditional 1366 rebuilding date agrees with the style but remains qualified.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "Zensuiji’s seven-bay-wide main hall preserves a substantial medieval form beneath an expansive bark roof.",
+      "facts": [
+        "Seven bays wide and five deep, single-story with a bark hip-and-gable roof; doors, lattices and raised floor follow the surviving hall.",
+        "Cultural-property sources assign the hall to the Nanbokuchō period. Its traditional 1366 rebuilding date agrees with the style but remains qualified."
+      ],
+      "captions": [
+        "Zensuiji Main Hall",
+        "Traditionally rebuilt in 1366"
+      ]
+    },
+    "jp_chojuji_hondo": {
+      "name": "Chōjuji Main Hall",
+      "short": "Chōjuji Main Hall",
+      "sub": "Chōjuji Main Hall",
+      "era": "Early Kamakura; placed c. 1200",
+      "yearLabel": "Early Kamakura; placed c. 1200",
+      "yearNote": "The database dates the surviving hall to 1185–1274. A Heian attribution occurs in temple accounts; this entry follows the building classification, with c. 1200 for placement.",
+      "place": "Japan · Shiga Prefecture · Konan",
+      "lede": "Chōjuji’s hipped bark roof and restrained facade preserve a modest early medieval Buddhist hall.",
+      "facts": [
+        "Five bays square, with a hipped bark roof and a three-bay porch; later ancillary buildings are excluded.",
+        "The database dates the surviving hall to 1185–1274. A Heian attribution occurs in temple accounts; this entry follows the building classification, with c. 1200 for placement."
+      ],
+      "captions": [
+        "Chōjuji Main Hall",
+        "Early Kamakura; placed c. 1200"
+      ]
+    },
+    "jp_hogonji_karamon": {
+      "name": "Hōgonji Karamon",
+      "short": "Hōgonji Karamon",
+      "sub": "Hōgonji Karamon",
+      "era": "Relocation recorded in 1603",
+      "yearLabel": "Relocation recorded in 1603",
+      "yearNote": "A ridge record documents relocation in 1603. Its association with Toyotomi-period architecture does not make that relocation date the initial date of every member.",
+      "place": "Japan · Shiga Prefecture · Nagahama",
+      "lede": "Hōgonji’s compact Karamon on Chikubushima combines black lacquer, gilded fittings and dense polychrome carving.",
+      "facts": [
+        "The curved-gable gate and bark roofing are depicted; the adjoining hall and island panorama are outside the plate’s scope.",
+        "A ridge record documents relocation in 1603. Its association with Toyotomi-period architecture does not make that relocation date the initial date of every member."
+      ],
+      "captions": [
+        "Hōgonji Karamon",
+        "Relocation recorded in 1603"
+      ]
+    },
+    "jp_kaijusenji_pagoda": {
+      "name": "Kaijūsenji Five-Story Pagoda",
+      "short": "Kaijūsenji Five-Story Pagoda",
+      "sub": "Kaijūsenji Five-Story Pagoda",
+      "era": "1214; mokoshi restored in 1963",
+      "yearLabel": "1214; mokoshi restored in 1963",
+      "yearNote": "The pagoda dates to 1214; its first-story mokoshi was restored during repairs in 1963. The plate depicts that present form.",
+      "place": "Japan · Kyoto Prefecture · Kizugawa",
+      "lede": "Kaijūsenji’s slender small pagoda is distinguished by the mokoshi around its first story.",
+      "facts": [
+        "Five stories plus a first-story mokoshi give six visible roof lines; the pagoda remains five-story.",
+        "The pagoda dates to 1214; its first-story mokoshi was restored during repairs in 1963. The plate depicts that present form."
+      ],
+      "captions": [
+        "Kaijūsenji Five-Story Pagoda",
+        "1214; mokoshi restored in 1963"
+      ]
+    },
+    "jp_daihoonji_hondo": {
+      "name": "Daihōonji Main Hall",
+      "short": "Daihōonji Main Hall",
+      "sub": "Daihōonji Main Hall",
+      "era": "1227",
+      "yearLabel": "1227",
+      "yearNote": "A ridge inscription dates the present hall to 1227. The temple’s 1220 foundation is distinct.",
+      "place": "Japan · Kyoto Prefecture · Kyoto",
+      "lede": "Known as Senbon Shakadō, Daihōonji’s main hall is a major Kamakura timber building in Kyoto, with a restrained facade and broad roof.",
+      "facts": [
+        "Five bays square, single-story, with a cypress-bark hip-and-gable roof and the present front porch.",
+        "A ridge inscription dates the present hall to 1227. The temple’s 1220 foundation is distinct."
+      ],
+      "captions": [
+        "Daihōonji Main Hall",
+        "1227"
+      ]
+    },
+    "jp_kinpusenji_zaodo": {
+      "name": "Kinpusenji Zaōdō",
+      "short": "Kinpusenji Zaōdō",
+      "sub": "Kinpusenji Zaōdō",
+      "era": "Rebuilt c. 1592",
+      "yearLabel": "Rebuilt c. 1592",
+      "yearNote": "The temple describes completion around 1592; cultural-property records use 1592. The approximate qualifier is retained, separate from earlier foundation traditions.",
+      "place": "Japan · Nara Prefecture · Yoshino",
+      "lede": "On Mount Yoshino, the immense Zaōdō combines a timber core, mokoshi and deep eaves in a Momoyama mountain sanctuary.",
+      "facts": [
+        "The present hall and encircling mokoshi are shown; the two roof levels are not interpreted as two floors.",
+        "The temple describes completion around 1592; cultural-property records use 1592. The approximate qualifier is retained, separate from earlier foundation traditions."
+      ],
+      "captions": [
+        "Kinpusenji Zaōdō",
+        "Rebuilt c. 1592"
+      ]
+    },
+    "jp_todaiji_daibutsuden": {
+      "name": "Tōdaiji Great Buddha Hall",
+      "short": "Tōdaiji Great Buddha Hall",
+      "sub": "Tōdaiji Great Buddha Hall",
+      "era": "Dedication in 1709",
+      "yearLabel": "Dedication in 1709",
+      "yearNote": "The surviving Great Buddha Hall was dedicated in 1709, distinct from its eighth-century predecessor and the temple’s gates. 1705 is not its completion date.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Tōdaiji’s Edo-period Great Buddha Hall is defined by immense roof tiers, golden ridge ornaments and white infill between timber members.",
+      "facts": [
+        "The plate depicts the current Great Buddha Hall exterior; the existing South Gate entry retains its ID and scope.",
+        "The surviving Great Buddha Hall was dedicated in 1709, distinct from its eighth-century predecessor and the temple’s gates. 1705 is not its completion date."
+      ],
+      "captions": [
+        "Tōdaiji Great Buddha Hall",
+        "Dedication in 1709"
+      ]
+    },
+    "jp_todaiji_nigatsudo": {
+      "name": "Tōdaiji Nigatsudō",
+      "short": "Tōdaiji Nigatsudō",
+      "sub": "Tōdaiji Nigatsudō",
+      "era": "Rebuilt in 1669",
+      "yearLabel": "Rebuilt in 1669",
+      "yearNote": "The present Nigatsudō was rebuilt in 1669 after the 1667 fire. The older Shuni-e ritual does not date the surviving building.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Nigatsudō projects a raised stage toward the Nara basin beneath a broad tiled roof on the hillside.",
+      "facts": [
+        "Seven bays across and ten deep, single-story with a hipped tiled roof; stage supports are not a separate floor.",
+        "The present Nigatsudō was rebuilt in 1669 after the 1667 fire. The older Shuni-e ritual does not date the surviving building."
+      ],
+      "captions": [
+        "Tōdaiji Nigatsudō",
+        "Rebuilt in 1669"
+      ]
+    },
+    "jp_horyuji_yumedono": {
+      "name": "Hōryūji Yumedono",
+      "short": "Hōryūji Yumedono",
+      "sub": "Hōryūji Yumedono",
+      "era": "c. 739; major repair in 1230",
+      "yearLabel": "c. 739; major repair in 1230",
+      "yearNote": "The Yumedono originated around 739, with a dedication recorded in 748. Major repairs in 1230 altered roof pitch and eave depth; the plate shows the surviving form.",
+      "place": "Japan · Nara Prefecture · Ikaruga",
+      "lede": "The octagonal Yumedono in Hōryūji’s east precinct has a distinct form from the west precinct’s hall and pagoda.",
+      "facts": [
+        "An octagonal single-story hall, tiled pyramidal roof and top jewel; surrounding cloisters are excluded.",
+        "The Yumedono originated around 739, with a dedication recorded in 748. Major repairs in 1230 altered roof pitch and eave depth; the plate shows the surviving form."
+      ],
+      "captions": [
+        "Hōryūji Yumedono",
+        "c. 739; major repair in 1230"
+      ]
+    },
+    "jp_yakushiji_toindo": {
+      "name": "Yakushiji Tōindō",
+      "short": "Yakushiji Tōindō",
+      "sub": "Yakushiji Tōindō",
+      "era": "Rebuilt in 1285; reoriented in 1733",
+      "yearLabel": "Rebuilt in 1285; reoriented in 1733",
+      "yearNote": "The surviving Tōindō was rebuilt in 1285 and reoriented from south to west in 1733, distinct from the earlier east precinct.",
+      "place": "Japan · Nara Prefecture · Nara",
+      "lede": "Yakushiji’s Tōindō preserves a restrained Kamakura colonnade and broad tiled eaves, separately from the East Pagoda.",
+      "facts": [
+        "Seven bays across and four deep, single-story with a tiled hip-and-gable roof; the present west-facing front is shown.",
+        "The surviving Tōindō was rebuilt in 1285 and reoriented from south to west in 1733, distinct from the earlier east precinct."
+      ],
+      "captions": [
+        "Yakushiji Tōindō",
+        "Rebuilt in 1285; reoriented in 1733"
+      ]
+    },
+    "jp_hasedera_hondo": {
+      "name": "Hasedera Main Hall",
+      "short": "Hasedera Main Hall",
+      "sub": "Hasedera Main Hall",
+      "era": "Rebuilt in 1650",
+      "yearLabel": "Rebuilt in 1650",
+      "yearNote": "The present hall was rebuilt in 1650; the temple’s foundation and earlier halls do not date this surviving building.",
+      "place": "Japan · Nara Prefecture · Sakurai",
+      "lede": "Hasedera’s main hall in Sakurai spreads across the hillside, joining front and rear spaces above a tall projecting stage.",
+      "facts": [
+        "The rear sanctuary is nine bays across and five deep, with a four-bay-deep front worship hall; joined roofs and stage supports are shown, excluding the covered approach.",
+        "The present hall was rebuilt in 1650; the temple’s foundation and earlier halls do not date this surviving building."
+      ],
+      "captions": [
+        "Hasedera Main Hall",
+        "Rebuilt in 1650"
+      ]
+    },
+    "xitai_aohu": {
+      "name": "Aohu Hu Clan Ancestral Hall Stage",
+      "short": "Aohu Hu Clan Ancestral Hall Stage",
+      "sub": "Stage and attached elements",
+      "era": "Qing, 1854",
+      "yearLabel": "1854",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Qing, 1854",
+      "place": "Zhejiang · Ninghai · Shrines and temples",
+      "lede": "The stage and its attached covered passage contain three linked caisson ceilings. The Hu ancestral hall was built in 1854 and connects to audience galleries.",
+      "facts": [
+        "The stage and its attached covered passage contain three linked caisson ceilings.",
+        "The Hu ancestral hall was built in 1854 and connects to audience galleries.",
+        "Other Ninghai stages belong to the collection and do not share this individual record."
+      ],
+      "captions": [
+        "Aohu Hu Clan Ancestral Hall Stage · Stage and attached elements",
+        "Qing, 1854"
+      ],
+      "protection": [
+        {
+          "unitName": "Ancient Opera Stages of Ninghai",
+          "scope": "Aohu Hu Clan Ancestral Hall Stage"
+        }
+      ]
+    },
+    "dule_gate": {
+      "name": "Dule Temple Gate Hall",
+      "short": "Dule Temple Gate Hall",
+      "sub": "Individual building",
+      "era": "Liao rebuilding, 984",
+      "yearLabel": "984",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Liao rebuilding, 984",
+      "place": "Tianjin · Jizhou",
+      "lede": "A three-bay single hipped-roof gate, with passage in the centre. It was rebuilt in 984, in the same Liao campaign as Guanyin Pavilion.",
+      "facts": [
+        "A three-bay single hipped-roof gate, with passage in the centre.",
+        "It was rebuilt in 984, in the same Liao campaign as Guanyin Pavilion.",
+        "It counts as a separate building in the Eight Liao Timber Buildings list."
+      ],
+      "captions": [
+        "Dule Temple Gate Hall · Individual building",
+        "Liao rebuilding, 984"
+      ],
+      "protection": []
+    },
+    "huayan_bojia": {
+      "name": "Huayan Temple Bojia Sutra Hall",
+      "short": "Huayan Temple Bojia Sutra Hall",
+      "sub": "Individual building",
+      "era": "Liao, 1038",
+      "yearLabel": "1038",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Liao, 1038",
+      "place": "Shanxi · Datong · Old city",
+      "lede": "A five-bay hall with a single hipped-gabled roof, dated by a 1038 rafter inscription. Its miniature architectural sutra cabinets survive from the Liao period.",
+      "facts": [
+        "A five-bay hall with a single hipped-gabled roof, dated by a 1038 rafter inscription.",
+        "Its miniature architectural sutra cabinets survive from the Liao period.",
+        "It is separate from the Daxiong Hall rebuilt in 1140."
+      ],
+      "captions": [
+        "Huayan Temple Bojia Sutra Hall · Individual building",
+        "Liao, 1038"
+      ],
+      "protection": [
+        {
+          "unitName": "Huayan Temple",
+          "scope": "Huayan Temple Bojia Sutra Hall"
+        }
+      ]
+    },
+    "jiahuiguan_west": {
+      "name": "Jiaxian Shan-Shan Guild Hall West Pavilion",
+      "short": "Jiaxian Shan-Shan Guild Hall West Pavilion",
+      "sub": "Individual building",
+      "era": "Qing; exact year unknown",
+      "yearLabel": "c. 1700 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Qing; exact year unknown",
+      "place": "Henan · Jia County",
+      "lede": "The western flanking pavilion is identified by location, without assuming the bell/drum assignment. Its square platform and double eaves face the eastern pavilion.",
+      "facts": [
+        "The western flanking pavilion is identified by location, without assuming the bell/drum assignment.",
+        "Its square platform and double eaves face the eastern pavilion.",
+        "The gate and stage remain one unit, while this pavilion has a separate record."
+      ],
+      "captions": [
+        "Jiaxian Shan-Shan Guild Hall West Pavilion · Individual building",
+        "Qing; exact year unknown"
+      ],
+      "protection": [
+        {
+          "unitName": "Shanxi-Shaanxi Guild Hall, Jia County",
+          "scope": "Jiaxian Shan-Shan Guild Hall West Pavilion"
+        }
+      ]
+    },
+    "chongsheng_south": {
+      "name": "Chongsheng Temple South Pagoda",
+      "short": "Chongsheng Temple South Pagoda",
+      "sub": "Individual building",
+      "era": "Dali Kingdom period",
+      "yearLabel": "c. 1000 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Dali Kingdom period",
+      "place": "Yunnan · Dali",
+      "lede": "An octagonal ten-tier brick pagoda southwest of Qianxun Pagoda. The surviving main structure belongs to the Dali Kingdom; the exact year is unknown.",
+      "facts": [
+        "An octagonal ten-tier brick pagoda southwest of Qianxun Pagoda.",
+        "The surviving main structure belongs to the Dali Kingdom; the exact year is unknown.",
+        "Its photographs and records remain separate from the north pagoda."
+      ],
+      "captions": [
+        "Chongsheng Temple South Pagoda · Individual building",
+        "Dali Kingdom period"
+      ],
+      "protection": [
+        {
+          "unitName": "Three Pagodas of Chongsheng Temple",
+          "scope": "Chongsheng Temple South Pagoda"
+        }
+      ]
+    },
+    "lingyin_east_pillar": {
+      "name": "Lingyin Temple East Dharani Pillar",
+      "short": "Lingyin Temple East Dharani Pillar",
+      "sub": "Individual building",
+      "era": "Wuyue, 969",
+      "yearLabel": "969",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Wuyue, 969",
+      "place": "Zhejiang · Hangzhou · Lingyin Temple",
+      "lede": "Built in 969 for Fengxian Temple and moved here in 1035. An octagonal inscription shaft with carved stacked base and cap.",
+      "facts": [
+        "Built in 969 for Fengxian Temple and moved here in 1035.",
+        "An octagonal inscription shaft with carved stacked base and cap.",
+        "The east monument is recorded separately; the plate retains surviving damage without reconstructing lost parts."
+      ],
+      "captions": [
+        "Lingyin Temple East Dharani Pillar · Individual building",
+        "Wuyue, 969"
+      ],
+      "protection": [
+        {
+          "unitName": "Stone Pagodas and Dharani Pillars of Lingyin Temple",
+          "scope": "Lingyin Temple East Dharani Pillar"
+        }
+      ]
+    },
+    "huayan_daxiong": {
+      "name": "Huayan Temple Daxiong Hall",
+      "short": "Huayan Temple Daxiong Hall",
+      "sub": "Individual building",
+      "era": "Jin rebuilding, 1140",
+      "yearLabel": "1140",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Jin rebuilding, 1140",
+      "place": "Shanxi · Datong · Old city",
+      "lede": "A nine-bay single hipped-roof hall on a high platform. First built in 1062, destroyed in 1122 and rebuilt in 1140 under the Jin dynasty.",
+      "facts": [
+        "A nine-bay single hipped-roof hall on a high platform.",
+        "First built in 1062, destroyed in 1122 and rebuilt in 1140 under the Jin dynasty.",
+        "Its reduced column arrangement differs from the 1038 sutra hall."
+      ],
+      "captions": [
+        "Huayan Temple Daxiong Hall · Individual building",
+        "Jin rebuilding, 1140"
+      ],
+      "protection": [
+        {
+          "unitName": "Huayan Temple",
+          "scope": "Huayan Temple Daxiong Hall"
+        }
+      ]
+    },
+    "chongxing_west": {
+      "name": "Chongxing Temple West Pagoda",
+      "short": "Chongxing Temple West Pagoda",
+      "sub": "Individual building",
+      "era": "Late Liao; exact year unknown",
+      "yearLabel": "c. 1100 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Late Liao; exact year unknown",
+      "place": "Liaoning · Beizhen · Chongxing Temple",
+      "lede": "The western octagonal thirteen-tier solid brick pagoda has niches and brick sculpture. Its form is attributed to the late Liao period; the exact construction year is unknown.",
+      "facts": [
+        "The western octagonal thirteen-tier solid brick pagoda has niches and brick sculpture.",
+        "Its form is attributed to the late Liao period; the exact construction year is unknown.",
+        "Later repairs and its personal record are kept separate from its twin."
+      ],
+      "captions": [
+        "Chongxing Temple West Pagoda · Individual building",
+        "Late Liao; exact year unknown"
+      ],
+      "protection": [
+        {
+          "unitName": "Twin Pagodas of Chongxing Temple",
+          "scope": "Chongxing Temple West Pagoda"
+        }
+      ]
+    },
+    "luohan_west": {
+      "name": "Luohan Monastery West Pagoda",
+      "short": "Luohan Monastery West Pagoda",
+      "sub": "Individual building",
+      "era": "Northern Song, begun 982",
+      "yearLabel": "982",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Northern Song, begun 982",
+      "place": "Jiangsu · Suzhou · Dinghuisi Lane",
+      "lede": "Construction began in 982 and finished during the Yongxi era. An octagonal seven-storey brick pagoda with an iron finial about eight metres high.",
+      "facts": [
+        "Construction began in 982 and finished during the Yongxi era.",
+        "An octagonal seven-storey brick pagoda with an iron finial about eight metres high.",
+        "Its record is separate from the other pagoda and former main hall ruins."
+      ],
+      "captions": [
+        "Luohan Monastery West Pagoda · Individual building",
+        "Northern Song, begun 982"
+      ],
+      "protection": [
+        {
+          "unitName": "Twin Pagodas and Main Hall Ruins of Luohan Monastery",
+          "scope": "Luohan Monastery West Pagoda"
+        }
+      ]
+    },
+    "longxing_zhuanlun": {
+      "name": "Longxing Temple Revolving Sutra Hall",
+      "short": "Longxing Temple Revolving Sutra Hall",
+      "sub": "Individual building",
+      "era": "Song surviving structure",
+      "yearLabel": "c. 1050 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Song surviving structure",
+      "place": "Hebei · Zhengding · Old city",
+      "lede": "A two-level pavilion with a large revolving sutra cabinet inside. The surviving structure is Song; 1050 is only an approximate chronological marker.",
+      "facts": [
+        "A two-level pavilion with a large revolving sutra cabinet inside.",
+        "The surviving structure is Song; 1050 is only an approximate chronological marker.",
+        "It is listed separately from Mani Hall and the rebuilt Dabei Pavilion."
+      ],
+      "captions": [
+        "Longxing Temple Revolving Sutra Hall · Individual building",
+        "Song surviving structure"
+      ],
+      "protection": [
+        {
+          "unitName": "Longxing Temple",
+          "scope": "Longxing Temple Revolving Sutra Hall"
+        }
+      ]
+    },
+    "xitai_chenghuang": {
+      "name": "Ninghai Town God Temple Stage",
+      "short": "Ninghai Town God Temple Stage",
+      "sub": "Stage and attached elements",
+      "era": "Rebuilt in 1935",
+      "yearLabel": "Rebuilt in 1935",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Rebuilt in 1935",
+      "place": "Zhejiang · Ninghai · Shrines and temples",
+      "lede": "The stage and gate were rebuilt in 1935; its front upper supports are iron and lower supports concrete. The stage stands about 1.66 metres above ground under a single hipped-gabled roof.",
+      "facts": [
+        "The stage and gate were rebuilt in 1935; its front upper supports are iron and lower supports concrete.",
+        "The stage stands about 1.66 metres above ground under a single hipped-gabled roof.",
+        "The plate includes the stage and visible attached central gate; the lateral audience galleries are excluded."
+      ],
+      "captions": [
+        "Ninghai Town God Temple Stage · Stage and attached elements",
+        "Rebuilt in 1935"
+      ],
+      "protection": [
+        {
+          "unitName": "Ancient Opera Stages of Ninghai",
+          "scope": "Ninghai Town God Temple Stage"
+        }
+      ]
+    },
+    "haihui_small": {
+      "name": "Haihui Temple Small Relic Pagoda",
+      "short": "Haihui Temple Small Relic Pagoda",
+      "sub": "Individual building",
+      "era": "Founded in 922; Song alterations",
+      "yearLabel": "922",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Founded in 922; Song alterations",
+      "place": "Shanxi · Yangcheng · Pagoda courtyard of Haihui Temple, Daqiao Village",
+      "lede": "A hexagonal ten-tier brick pagoda, about 20 metres high, with many niches. Founded in 922 under Later Liang and altered during the Song period.",
+      "facts": [
+        "A hexagonal ten-tier brick pagoda, about 20 metres high, with many niches.",
+        "Founded in 922 under Later Liang and altered during the Song period.",
+        "It is the relic pagoda of Chan master Shunmin, separate from the Ming glazed tower."
+      ],
+      "captions": [
+        "Haihui Temple Small Relic Pagoda · Individual building",
+        "Founded in 922; Song alterations"
+      ],
+      "protection": [
+        {
+          "unitName": "Haihui Temple",
+          "scope": "Haihui Temple Small Relic Pagoda"
+        }
+      ]
+    },
+    "lingyin_east_tower": {
+      "name": "Lingyin Temple East Stone Pagoda",
+      "short": "Lingyin Temple East Stone Pagoda",
+      "sub": "Individual building",
+      "era": "Wuyue, 960",
+      "yearLabel": "960",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Wuyue, 960",
+      "place": "Zhejiang · Hangzhou · Lingyin Temple",
+      "lede": "Erected in 960 during Qian Hongchu’s Wuyue rebuilding of Lingyin Temple. An octagonal nine-storey stone pagoda imitating timber architecture.",
+      "facts": [
+        "Erected in 960 during Qian Hongchu’s Wuyue rebuilding of Lingyin Temple.",
+        "An octagonal nine-storey stone pagoda imitating timber architecture.",
+        "The east monument is recorded separately; the plate retains surviving damage without reconstructing lost parts."
+      ],
+      "captions": [
+        "Lingyin Temple East Stone Pagoda · Individual building",
+        "Wuyue, 960"
+      ],
+      "protection": [
+        {
+          "unitName": "Stone Pagodas and Dharani Pillars of Lingyin Temple",
+          "scope": "Lingyin Temple East Stone Pagoda"
+        }
+      ]
+    },
+    "yuanqi_qinglong": {
+      "name": "Yuanqi Temple Qinglong Pagoda",
+      "short": "Yuanqi Temple Qinglong Pagoda",
+      "sub": "Individual building",
+      "era": "Northern Song, 1087",
+      "yearLabel": "1087",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Northern Song, 1087",
+      "place": "Shanxi · Lucheng · Bank of the Zhuozhang River · Xin'an Village",
+      "lede": "An octagonal seven-tier brick pagoda, about 17 metres high. Brick brackets imitate timber construction; a vase finial crowns the tower.",
+      "facts": [
+        "An octagonal seven-tier brick pagoda, about 17 metres high.",
+        "Brick brackets imitate timber construction; a vase finial crowns the tower.",
+        "Iron figures and chains secure the finial and belong to the same monument."
+      ],
+      "captions": [
+        "Yuanqi Temple Qinglong Pagoda · Individual building",
+        "Northern Song, 1087"
+      ],
+      "protection": [
+        {
+          "unitName": "Yuanqi Temple",
+          "scope": "Yuanqi Temple Qinglong Pagoda"
+        }
+      ]
+    },
+    "zhuozhou_yunju": {
+      "name": "Zhuozhou Yunju Temple Pagoda",
+      "short": "Zhuozhou Yunju Temple Pagoda",
+      "sub": "Individual building",
+      "era": "Liao, eleventh century; disputed exact year",
+      "yearLabel": "c. 1070 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Liao, eleventh century; disputed exact year",
+      "place": "Hebei · Zhuozhou · Old city",
+      "lede": "The northern Zhuozhou pagoda is octagonal, hollow and six storeys high. Its eleventh-century date is approximate; historical year attributions differ.",
+      "facts": [
+        "The northern Zhuozhou pagoda is octagonal, hollow and six storeys high.",
+        "Its eleventh-century date is approximate; historical year attributions differ.",
+        "Passages and stairs lie between the inner and outer brick walls."
+      ],
+      "captions": [
+        "Zhuozhou Yunju Temple Pagoda · Individual building",
+        "Liao, eleventh century; disputed exact year"
+      ],
+      "protection": [
+        {
+          "unitName": "Zhuozhou Twin Pagodas",
+          "scope": "Zhuozhou Yunju Temple Pagoda"
+        }
+      ]
+    },
+    "jiahuiguan_gate": {
+      "name": "Jiaxian Shan-Shan Guild Hall Gate and Stage",
+      "short": "Jiaxian Shan-Shan Guild Hall Gate and Stage",
+      "sub": "Individual building",
+      "era": "Qing; exact year unknown",
+      "yearLabel": "c. 1700 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Qing; exact year unknown",
+      "place": "Henan · Jia County",
+      "lede": "The gate and upstairs stage form one connected architectural unit. The ground floor has three bays; the upstairs stage faces north into the courtyard.",
+      "facts": [
+        "The gate and upstairs stage form one connected architectural unit.",
+        "The ground floor has three bays; the upstairs stage faces north into the courtyard.",
+        "The guild hall was founded in 1693, but this structure’s exact year is unknown."
+      ],
+      "captions": [
+        "Jiaxian Shan-Shan Guild Hall Gate and Stage · Individual building",
+        "Qing; exact year unknown"
+      ],
+      "protection": [
+        {
+          "unitName": "Shanxi-Shaanxi Guild Hall, Jia County",
+          "scope": "Jiaxian Shan-Shan Guild Hall Gate and Stage"
+        }
+      ]
+    },
+    "chongsheng_north": {
+      "name": "Chongsheng Temple North Pagoda",
+      "short": "Chongsheng Temple North Pagoda",
+      "sub": "Individual building",
+      "era": "Dali Kingdom period",
+      "yearLabel": "c. 1000 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Dali Kingdom period",
+      "place": "Yunnan · Dali",
+      "lede": "An octagonal ten-tier pagoda northwest of Qianxun Pagoda. It belongs to the Dali Kingdom, rather than the central pagoda’s Nanzhao date.",
+      "facts": [
+        "An octagonal ten-tier pagoda northwest of Qianxun Pagoda.",
+        "It belongs to the Dali Kingdom, rather than the central pagoda’s Nanzhao date.",
+        "Its image and personal record are distinct from the south pagoda."
+      ],
+      "captions": [
+        "Chongsheng Temple North Pagoda · Individual building",
+        "Dali Kingdom period"
+      ],
+      "protection": [
+        {
+          "unitName": "Three Pagodas of Chongsheng Temple",
+          "scope": "Chongsheng Temple North Pagoda"
+        }
+      ]
+    },
+    "chongsheng_qianxun": {
+      "name": "Chongsheng Temple Qianxun Pagoda",
+      "short": "Chongsheng Temple Qianxun Pagoda",
+      "sub": "Individual building",
+      "era": "Nanzhao period, c. ninth century",
+      "yearLabel": "c. 840 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Nanzhao period, c. ninth century",
+      "place": "Yunnan · Dali",
+      "lede": "A square sixteen-tier dense-eaves brick pagoda, about 69 metres high. Usually dated to the ninth-century Nanzhao reign of Quan Fengyou; the exact year is disputed.",
+      "facts": [
+        "A square sixteen-tier dense-eaves brick pagoda, about 69 metres high.",
+        "Usually dated to the ninth-century Nanzhao reign of Quan Fengyou; the exact year is disputed.",
+        "The two smaller side pagodas belong to the Dali period."
+      ],
+      "captions": [
+        "Chongsheng Temple Qianxun Pagoda · Individual building",
+        "Nanzhao period, c. ninth century"
+      ],
+      "protection": [
+        {
+          "unitName": "Three Pagodas of Chongsheng Temple",
+          "scope": "Chongsheng Temple Qianxun Pagoda"
+        }
+      ]
+    },
+    "shanhua_gate": {
+      "name": "Shanhua Temple Gate Hall",
+      "short": "Shanhua Temple Gate Hall",
+      "sub": "Individual building",
+      "era": "Jin rebuilding, c. 1128–1143",
+      "yearLabel": "c. 1135 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Jin rebuilding, c. 1128–1143",
+      "place": "Shanxi · Datong · South Gate",
+      "lede": "The five-bay gate hall also serves as the Hall of Heavenly Kings. The surviving single hipped-roof hall belongs to the Jin rebuilding period.",
+      "facts": [
+        "The five-bay gate hall also serves as the Hall of Heavenly Kings.",
+        "The surviving single hipped-roof hall belongs to the Jin rebuilding period.",
+        "It combines passage and spaces for the Four Heavenly Kings."
+      ],
+      "captions": [
+        "Shanhua Temple Gate Hall · Individual building",
+        "Jin rebuilding, c. 1128–1143"
+      ],
+      "protection": []
+    },
+    "haihui_large": {
+      "name": "Haihui Temple Large Glazed Pagoda",
+      "short": "Haihui Temple Large Glazed Pagoda",
+      "sub": "Individual building",
+      "era": "Ming Jiajing–Longqing period",
+      "yearLabel": "c. 1565 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Ming Jiajing–Longqing period",
+      "place": "Shanxi · Yangcheng · Pagoda courtyard of Haihui Temple, Daqiao Village",
+      "lede": "An octagonal thirteen-storey tower, about 57 metres high. Built in the Ming Jiajing–Longqing period; exact dates differ between sources.",
+      "facts": [
+        "An octagonal thirteen-storey tower, about 57 metres high.",
+        "Built in the Ming Jiajing–Longqing period; exact dates differ between sources.",
+        "Its projecting tenth-level gallery uses glazed columns and railings."
+      ],
+      "captions": [
+        "Haihui Temple Large Glazed Pagoda · Individual building",
+        "Ming Jiajing–Longqing period"
+      ],
+      "protection": [
+        {
+          "unitName": "Haihui Temple",
+          "scope": "Haihui Temple Large Glazed Pagoda"
+        }
+      ]
+    },
+    "shanhua_sansheng": {
+      "name": "Shanhua Temple Sansheng Hall",
+      "short": "Shanhua Temple Sansheng Hall",
+      "sub": "Individual building",
+      "era": "Jin rebuilding, c. 1128–1143",
+      "yearLabel": "c. 1135 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Jin rebuilding, c. 1128–1143",
+      "place": "Shanxi · Datong · South Gate",
+      "lede": "A five-bay hall with a single hipped roof and layered diagonal bracket arms. The surviving hall was rebuilt in the Jin period, approximately 1128–1143.",
+      "facts": [
+        "A five-bay hall with a single hipped roof and layered diagonal bracket arms.",
+        "The surviving hall was rebuilt in the Jin period, approximately 1128–1143.",
+        "It stands on the temple axis and underwent major repairs in 2007."
+      ],
+      "captions": [
+        "Shanhua Temple Sansheng Hall · Individual building",
+        "Jin rebuilding, c. 1128–1143"
+      ],
+      "protection": [
+        {
+          "unitName": "Shanhua Temple",
+          "scope": "Shanhua Temple Sansheng Hall"
+        }
+      ]
+    },
+    "dule_guanyin": {
+      "name": "Dule Temple Guanyin Pavilion",
+      "short": "Dule Temple Guanyin Pavilion",
+      "sub": "Individual building",
+      "era": "Liao rebuilding, 984",
+      "yearLabel": "984",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Liao rebuilding, 984",
+      "place": "Tianjin · Jizhou",
+      "lede": "A five-bay timber pavilion with two exterior levels and an internal mezzanine. The surviving Liao structure was rebuilt in 984.",
+      "facts": [
+        "A five-bay timber pavilion with two exterior levels and an internal mezzanine.",
+        "The surviving Liao structure was rebuilt in 984.",
+        "The pavilion and gate hall each have their own entry and record."
+      ],
+      "captions": [
+        "Dule Temple Guanyin Pavilion · Individual building",
+        "Liao rebuilding, 984"
+      ],
+      "protection": [
+        {
+          "unitName": "Dule Temple",
+          "scope": "Dule Temple Guanyin Pavilion"
+        }
+      ]
+    },
+    "luohan_hall_ruins": {
+      "name": "Luohan Monastery Main Hall Ruins",
+      "short": "Luohan Monastery Main Hall Ruins",
+      "sub": "Selected stone column and base remains",
+      "era": "Song stone remains; hall destroyed in 1860",
+      "yearLabel": "c. 1000 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Song stone remains; hall destroyed in 1860",
+      "place": "Jiangsu · Suzhou · Dinghuisi Lane",
+      "lede": "The hall was destroyed in 1860; Song stone columns and column bases survive. Carved columns and inverted-bowl bases retain the former hall’s traces.",
+      "facts": [
+        "The hall was destroyed in 1860; Song stone columns and column bases survive.",
+        "Carved columns and inverted-bowl bases retain the former hall’s traces.",
+        "The plate selects visible surviving remains from the photo; it does not reconstruct the hall or all sixteen columns."
+      ],
+      "captions": [
+        "Luohan Monastery Main Hall Ruins · Selected stone column and base remains",
+        "Song stone remains; hall destroyed in 1860"
+      ],
+      "protection": [
+        {
+          "unitName": "Twin Pagodas and Main Hall Ruins of Luohan Monastery",
+          "scope": "Luohan Monastery Main Hall Ruins"
+        }
+      ]
+    },
+    "lingyin_west_tower": {
+      "name": "Lingyin Temple West Stone Pagoda",
+      "short": "Lingyin Temple West Stone Pagoda",
+      "sub": "Individual building",
+      "era": "Wuyue, 960",
+      "yearLabel": "960",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Wuyue, 960",
+      "place": "Zhejiang · Hangzhou · Lingyin Temple",
+      "lede": "Erected in 960 during Qian Hongchu’s Wuyue rebuilding of Lingyin Temple. An octagonal nine-storey stone pagoda imitating timber architecture.",
+      "facts": [
+        "Erected in 960 during Qian Hongchu’s Wuyue rebuilding of Lingyin Temple.",
+        "An octagonal nine-storey stone pagoda imitating timber architecture.",
+        "The west monument is recorded separately; the plate retains surviving damage without reconstructing lost parts."
+      ],
+      "captions": [
+        "Lingyin Temple West Stone Pagoda · Individual building",
+        "Wuyue, 960"
+      ],
+      "protection": [
+        {
+          "unitName": "Stone Pagodas and Dharani Pillars of Lingyin Temple",
+          "scope": "Lingyin Temple West Stone Pagoda"
+        }
+      ]
+    },
+    "shanhua_puxian": {
+      "name": "Shanhua Temple Puxian Pavilion",
+      "short": "Shanhua Temple Puxian Pavilion",
+      "sub": "Individual building",
+      "era": "Jin, 1154",
+      "yearLabel": "1154",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Jin, 1154",
+      "place": "Shanxi · Datong · South Gate",
+      "lede": "Three bays in both directions, with two visible levels and an internal mezzanine. Built in 1154 under the Jin dynasty; it is distinct from the Liao Daxiong Hall.",
+      "facts": [
+        "Three bays in both directions, with two visible levels and an internal mezzanine.",
+        "Built in 1154 under the Jin dynasty; it is distinct from the Liao Daxiong Hall.",
+        "Its upper brackets connect across bays through small bracket arms."
+      ],
+      "captions": [
+        "Shanhua Temple Puxian Pavilion · Individual building",
+        "Jin, 1154"
+      ],
+      "protection": [
+        {
+          "unitName": "Shanhua Temple",
+          "scope": "Shanhua Temple Puxian Pavilion"
+        }
+      ]
+    },
+    "luohan_east": {
+      "name": "Luohan Monastery East Pagoda",
+      "short": "Luohan Monastery East Pagoda",
+      "sub": "Individual building",
+      "era": "Northern Song, begun 982",
+      "yearLabel": "982",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Northern Song, begun 982",
+      "place": "Jiangsu · Suzhou · Dinghuisi Lane",
+      "lede": "Construction began in 982 and finished during the Yongxi era. An octagonal seven-storey brick pagoda with an iron finial about eight metres high.",
+      "facts": [
+        "Construction began in 982 and finished during the Yongxi era.",
+        "An octagonal seven-storey brick pagoda with an iron finial about eight metres high.",
+        "Its record is separate from the other pagoda and former main hall ruins."
+      ],
+      "captions": [
+        "Luohan Monastery East Pagoda · Individual building",
+        "Northern Song, begun 982"
+      ],
+      "protection": [
+        {
+          "unitName": "Twin Pagodas and Main Hall Ruins of Luohan Monastery",
+          "scope": "Luohan Monastery East Pagoda"
+        }
+      ]
+    },
+    "kaiyuan_xumi": {
+      "name": "Zhengding Kaiyuan Temple Xumi Pagoda",
+      "short": "Zhengding Kaiyuan Temple Xumi Pagoda",
+      "sub": "Individual building",
+      "era": "Founded in 636",
+      "yearLabel": "636",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Founded in 636",
+      "place": "Hebei · Zhengding · Old city",
+      "lede": "A square nine-tier dense-eaves brick pagoda, about 42.5 metres high. It stands west of the former Fachuan Hall, opposite the bell tower.",
+      "facts": [
+        "A square nine-tier dense-eaves brick pagoda, about 42.5 metres high.",
+        "It stands west of the former Fachuan Hall, opposite the bell tower.",
+        "The 636 founding date is distinguished from later repairs."
+      ],
+      "captions": [
+        "Zhengding Kaiyuan Temple Xumi Pagoda · Individual building",
+        "Founded in 636"
+      ],
+      "protection": [
+        {
+          "unitName": "Xumi Pagoda of Kaiyuan Temple",
+          "scope": "Zhengding Kaiyuan Temple Xumi Pagoda",
+          "note": "In the 6th batch, the Xumi Pagoda was merged with the Bell Tower of Kaiyuan Temple from the 3rd batch; the merged listing is named Kaiyuan Temple."
+        }
+      ]
+    },
+    "yongzuo_xuanwen": {
+      "name": "Yongzuo Temple Xuanwen Pagoda",
+      "short": "Yongzuo Temple Xuanwen Pagoda",
+      "sub": "Individual building",
+      "era": "Ming, 1612",
+      "yearLabel": "1612",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Ming, 1612",
+      "place": "Shanxi · Taiyuan",
+      "lede": "The western Xuanwen Pagoda is octagonal and thirteen storeys high. Completed in 1612 under monk Miaofeng; its eaves use peacock-blue glaze.",
+      "facts": [
+        "The western Xuanwen Pagoda is octagonal and thirteen storeys high.",
+        "Completed in 1612 under monk Miaofeng; its eaves use peacock-blue glaze.",
+        "It was named for the Wanli emperor’s mother and is distinct from the eastern tower."
+      ],
+      "captions": [
+        "Yongzuo Temple Xuanwen Pagoda · Individual building",
+        "Ming, 1612"
+      ],
+      "protection": [
+        {
+          "unitName": "Yongzuo Temple",
+          "scope": "Yongzuo Temple Xuanwen Pagoda"
+        }
+      ]
+    },
+    "chongxing_east": {
+      "name": "Chongxing Temple East Pagoda",
+      "short": "Chongxing Temple East Pagoda",
+      "sub": "Individual building",
+      "era": "Late Liao; exact year unknown",
+      "yearLabel": "c. 1100 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Late Liao; exact year unknown",
+      "place": "Liaoning · Beizhen · Chongxing Temple",
+      "lede": "The eastern octagonal thirteen-tier solid brick pagoda has niches and brick sculpture. Its form is attributed to the late Liao period; the exact construction year is unknown.",
+      "facts": [
+        "The eastern octagonal thirteen-tier solid brick pagoda has niches and brick sculpture.",
+        "Its form is attributed to the late Liao period; the exact construction year is unknown.",
+        "Later repairs and its personal record are kept separate from its twin."
+      ],
+      "captions": [
+        "Chongxing Temple East Pagoda · Individual building",
+        "Late Liao; exact year unknown"
+      ],
+      "protection": [
+        {
+          "unitName": "Twin Pagodas of Chongxing Temple",
+          "scope": "Chongxing Temple East Pagoda"
+        }
+      ]
+    },
+    "zhuozhou_zhidu": {
+      "name": "Zhuozhou Zhidu Temple Pagoda",
+      "short": "Zhuozhou Zhidu Temple Pagoda",
+      "sub": "Individual building",
+      "era": "Liao, 1031",
+      "yearLabel": "1031",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Liao, 1031",
+      "place": "Hebei · Zhuozhou · Old city",
+      "lede": "An octagonal five-storey pagoda, the southern tower of Zhuozhou. Built in 1031; the monastery is gone and the tower survives.",
+      "facts": [
+        "An octagonal five-storey pagoda, the southern tower of Zhuozhou.",
+        "Built in 1031; the monastery is gone and the tower survives.",
+        "Brick doors, blind windows and brackets imitate timber architecture."
+      ],
+      "captions": [
+        "Zhuozhou Zhidu Temple Pagoda · Individual building",
+        "Liao, 1031"
+      ],
+      "protection": [
+        {
+          "unitName": "Zhuozhou Twin Pagodas",
+          "scope": "Zhuozhou Zhidu Temple Pagoda"
+        }
+      ]
+    },
+    "yuanqi_hall": {
+      "name": "Yuanqi Temple Daxiong Hall",
+      "short": "Yuanqi Temple Daxiong Hall",
+      "sub": "Individual building",
+      "era": "Song surviving structure",
+      "yearLabel": "c. 1000 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Song surviving structure",
+      "place": "Shanxi · Lucheng · Bank of the Zhuozhang River · Xin'an Village",
+      "lede": "A three-bay hall with a single hipped-gabled roof. The surviving structure is Song; the temple’s 747 founding is not the hall’s construction date.",
+      "facts": [
+        "A three-bay hall with a single hipped-gabled roof.",
+        "The surviving structure is Song; the temple’s 747 founding is not the hall’s construction date.",
+        "Qinglong Pagoda stands west of the hall and is recorded separately."
+      ],
+      "captions": [
+        "Yuanqi Temple Daxiong Hall · Individual building",
+        "Song surviving structure"
+      ],
+      "protection": [
+        {
+          "unitName": "Yuanqi Temple",
+          "scope": "Yuanqi Temple Daxiong Hall"
+        }
+      ]
+    },
+    "xian_drum": {
+      "name": "Xi’an Drum Tower",
+      "short": "Xi’an Drum Tower",
+      "sub": "Individual building",
+      "era": "Founded in 1380",
+      "yearLabel": "1380",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Founded in 1380",
+      "place": "Shaanxi · Xi'an · Center of the prefectural city",
+      "lede": "A broad seven-bay tower stands on a rectangular brick platform. Founded in 1380 and repaired many times afterwards.",
+      "facts": [
+        "A broad seven-bay tower stands on a rectangular brick platform.",
+        "Founded in 1380 and repaired many times afterwards.",
+        "It occupies a different location from the bell tower."
+      ],
+      "captions": [
+        "Xi’an Drum Tower · Individual building",
+        "Founded in 1380"
+      ],
+      "protection": [
+        {
+          "unitName": "Bell Tower and Drum Tower of Xi'an",
+          "scope": "Xi’an Drum Tower"
+        }
+      ]
+    },
+    "longxing_mani": {
+      "name": "Longxing Temple Mani Hall",
+      "short": "Longxing Temple Mani Hall",
+      "sub": "Individual building",
+      "era": "Northern Song, 1052",
+      "yearLabel": "1052",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Northern Song, 1052",
+      "place": "Hebei · Zhengding · Old city",
+      "lede": "A seven-bay Song hall with projecting roofed porches on all four sides. The surviving main structure dates to 1052; later repairs are distinguished.",
+      "facts": [
+        "A seven-bay Song hall with projecting roofed porches on all four sides.",
+        "The surviving main structure dates to 1052; later repairs are distinguished.",
+        "This plate depicts Mani Hall alone, not the whole monastery."
+      ],
+      "captions": [
+        "Longxing Temple Mani Hall · Individual building",
+        "Northern Song, 1052"
+      ],
+      "protection": [
+        {
+          "unitName": "Longxing Temple",
+          "scope": "Longxing Temple Mani Hall"
+        }
+      ]
+    },
+    "jiahuiguan_east": {
+      "name": "Jiaxian Shan-Shan Guild Hall East Pavilion",
+      "short": "Jiaxian Shan-Shan Guild Hall East Pavilion",
+      "sub": "Individual building",
+      "era": "Qing; exact year unknown",
+      "yearLabel": "c. 1700 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Qing; exact year unknown",
+      "place": "Henan · Jia County",
+      "lede": "The eastern member of the two flanking pavilions; the bell-versus-drum attribution remains unconfirmed. A high square base supports twelve columns and double eaves.",
+      "facts": [
+        "The eastern member of the two flanking pavilions; the bell-versus-drum attribution remains unconfirmed.",
+        "A high square base supports twelve columns and double eaves.",
+        "1700 is only an approximate Qing-period sorting point."
+      ],
+      "captions": [
+        "Jiaxian Shan-Shan Guild Hall East Pavilion · Individual building",
+        "Qing; exact year unknown"
+      ],
+      "protection": [
+        {
+          "unitName": "Shanxi-Shaanxi Guild Hall, Jia County",
+          "scope": "Jiaxian Shan-Shan Guild Hall East Pavilion"
+        }
+      ]
+    },
+    "kaiyuan_bell": {
+      "name": "Zhengding Kaiyuan Temple Bell Tower",
+      "short": "Zhengding Kaiyuan Temple Bell Tower",
+      "sub": "Individual building",
+      "era": "Tang fabric with later repairs",
+      "yearLabel": "c. 850 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Tang fabric with later repairs",
+      "place": "Hebei · Zhengding · Old city",
+      "lede": "A three-bay two-level bell tower with double hipped-gabled roofs. The lower structure retains Tang fabric; the upper level and outer eaves include later repairs.",
+      "facts": [
+        "A three-bay two-level bell tower with double hipped-gabled roofs.",
+        "The lower structure retains Tang fabric; the upper level and outer eaves include later repairs.",
+        "It stands east of the former hall and holds a Tang bronze bell."
+      ],
+      "captions": [
+        "Zhengding Kaiyuan Temple Bell Tower · Individual building",
+        "Tang fabric with later repairs"
+      ],
+      "protection": [
+        {
+          "unitName": "Bell Tower of Kaiyuan Temple",
+          "scope": "Zhengding Kaiyuan Temple Bell Tower"
+        }
+      ]
+    },
+    "shanhua_daxiong": {
+      "name": "Shanhua Temple Daxiong Hall",
+      "short": "Shanhua Temple Daxiong Hall",
+      "sub": "Individual building",
+      "era": "Liao surviving structure",
+      "yearLabel": "c. 1050 (sorting point)",
+      "yearNote": "The year is an approximate ordering point, not a confirmed construction date. Construction, relocation and later repairs are distinguished. Liao surviving structure",
+      "place": "Shanxi · Datong · South Gate",
+      "lede": "A seven-bay Liao timber hall with a single hipped roof. The surviving structure is Liao, with Jin repairs and Jin painted sculptures.",
+      "facts": [
+        "A seven-bay Liao timber hall with a single hipped roof.",
+        "The surviving structure is Liao, with Jin repairs and Jin painted sculptures.",
+        "It is recorded separately from the Jin Sansheng Hall, gate and Puxian Pavilion."
+      ],
+      "captions": [
+        "Shanhua Temple Daxiong Hall · Individual building",
+        "Liao surviving structure"
+      ],
+      "protection": [
+        {
+          "unitName": "Shanhua Temple",
+          "scope": "Shanhua Temple Daxiong Hall"
+        }
+      ]
+    },
+    "yongzuo_wenfeng": {
+      "name": "Yongzuo Temple Wenfeng Pagoda",
+      "short": "Yongzuo Temple Wenfeng Pagoda",
+      "sub": "Individual building",
+      "era": "Ming, 1599",
+      "yearLabel": "1599",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Ming, 1599",
+      "place": "Shanxi · Taiyuan",
+      "lede": "The eastern Wenfeng Pagoda is octagonal and thirteen storeys high. Completed in 1599 under the Fu family’s patronage; stabilised in 1995–1996.",
+      "facts": [
+        "The eastern Wenfeng Pagoda is octagonal and thirteen storeys high.",
+        "Completed in 1599 under the Fu family’s patronage; stabilised in 1995–1996.",
+        "Its date differs from the western Xuanwen Pagoda, completed in 1612."
+      ],
+      "captions": [
+        "Yongzuo Temple Wenfeng Pagoda · Individual building",
+        "Ming, 1599"
+      ],
+      "protection": [
+        {
+          "unitName": "Yongzuo Temple",
+          "scope": "Yongzuo Temple Wenfeng Pagoda"
+        }
+      ]
+    },
+    "lingyin_west_pillar": {
+      "name": "Lingyin Temple West Dharani Pillar",
+      "short": "Lingyin Temple West Dharani Pillar",
+      "sub": "Individual building",
+      "era": "Wuyue, 969",
+      "yearLabel": "969",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Wuyue, 969",
+      "place": "Zhejiang · Hangzhou · Lingyin Temple",
+      "lede": "Built in 969 for Fengxian Temple and moved here in 1035. An octagonal inscription shaft with carved stacked base and cap.",
+      "facts": [
+        "Built in 969 for Fengxian Temple and moved here in 1035.",
+        "An octagonal inscription shaft with carved stacked base and cap.",
+        "The west monument is recorded separately; the plate retains surviving damage without reconstructing lost parts."
+      ],
+      "captions": [
+        "Lingyin Temple West Dharani Pillar · Individual building",
+        "Wuyue, 969"
+      ],
+      "protection": [
+        {
+          "unitName": "Stone Pagodas and Dharani Pillars of Lingyin Temple",
+          "scope": "Lingyin Temple West Dharani Pillar"
+        }
+      ]
+    },
+    "xian_bell": {
+      "name": "Xi’an Bell Tower",
+      "short": "Xi’an Bell Tower",
+      "sub": "Individual building",
+      "era": "Moved here in 1582",
+      "yearLabel": "Moved in 1582",
+      "yearNote": "Construction, relocation and later repairs are distinguished. Moved here in 1582",
+      "place": "Shaanxi · Xi'an · Center of the prefectural city",
+      "lede": "A square timber tower with three roof eaves stands on a brick platform. First built in 1384 and moved to this location in 1582.",
+      "facts": [
+        "A square timber tower with three roof eaves stands on a brick platform.",
+        "First built in 1384 and moved to this location in 1582.",
+        "It is physically separate from the drum tower; the former plate juxtaposed them."
+      ],
+      "captions": [
+        "Xi’an Bell Tower · Individual building",
+        "Moved here in 1582"
+      ],
+      "protection": [
+        {
+          "unitName": "Bell Tower and Drum Tower of Xi'an",
+          "scope": "Xi’an Bell Tower"
+        }
+      ]
     }
   },
   "curations": {
@@ -12431,13 +14380,109 @@
       "name": "Eight Great Liao Timber Structures",
       "eyebrow": "Liao timber · North and Northeast China",
       "lede": "Few Liao-dynasty timber buildings survive, and enthusiasts call them the “Eight Great Liao Timber Structures”: the Guanyin Pavilion and Main Gate of Dule Temple, the Mahavira Hall of Fengguo Temple, the Mahavira Hall of Kaishan Temple, the Manjushri Hall of Geyuan Temple, the Bhagavat Sutra Repository Hall of Huayan Temple, the Mahavira Hall of Shanhua Temple and the Yingxian Wooden Pagoda.",
-      "note": "The Guanyin Pavilion and Main Gate of Dule Temple are one entry in this catalog, so seven entries stand for the eight structures. Another version of the list includes the lost Hall of the Three Great Bodhisattvas of Guangji Temple in Baodi; this list does not count it."
+      "note": "Eight entries correspond to eight surviving timber buildings. The destroyed San Dashi Hall of Guangji Temple is excluded."
     },
     "zhuozhang_valley": {
       "name": "Zhuozhang River Valley",
       "eyebrow": "Southeast Shanxi · Pingshun and Lucheng",
       "lede": "The Zhuozhang River runs through the valleys around Pingshun and Lucheng. Villages along its banks preserve a dense cluster of small temples and shrines from the Five Dynasties to the Yuan, making it the classic heritage route of southeast Shanxi.",
       "note": "Only valley monuments already in this catalog are listed, in chronological order; a trip can follow the valley from west to east or the reverse."
+    },
+    "chongsheng": {
+      "name": "Chongsheng Temple Three Pagodas",
+      "eyebrow": "Yunnan · Dali",
+      "lede": "Explore the catalogued individual monuments of Chongsheng Temple Three Pagodas, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "ln_chongxing": {
+      "name": "Chongxing Temple Twin Pagodas",
+      "eyebrow": "Liaoning · Beizhen · Chongxing Temple",
+      "lede": "Explore the catalogued individual monuments of Chongxing Temple Twin Pagodas, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "dule": {
+      "name": "Dule Temple",
+      "eyebrow": "Tianjin · Jizhou",
+      "lede": "Explore the catalogued individual monuments of Dule Temple, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "sx_haihui": {
+      "name": "Haihui Temple Twin Pagodas",
+      "eyebrow": "Shanxi · Yangcheng · Pagoda courtyard of Haihui Temple, Daqiao Village",
+      "lede": "Explore the catalogued individual monuments of Haihui Temple Twin Pagodas, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "huayan": {
+      "name": "Huayan Temple",
+      "eyebrow": "Shanxi · Datong · Old city",
+      "lede": "Explore the catalogued individual monuments of Huayan Temple, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "hn_jiahuiguan": {
+      "name": "Jiaxian Shan-Shan Guild Hall",
+      "eyebrow": "Henan · Jia County",
+      "lede": "Explore the catalogued individual monuments of Jiaxian Shan-Shan Guild Hall, each with its own date, artwork and visit record.",
+      "note": "The gate and upstairs stage remain one connected unit. The east and west pavilions are separate; their bell/drum assignment is unconfirmed."
+    },
+    "kaiyuan": {
+      "name": "Zhengding Kaiyuan Temple",
+      "eyebrow": "Hebei · Zhengding · Old city",
+      "lede": "Explore the catalogued individual monuments of Zhengding Kaiyuan Temple, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "lingyin": {
+      "name": "Lingyin Stone Pagodas and Dharani Pillars",
+      "eyebrow": "Zhejiang · Hangzhou · Lingyin Temple",
+      "lede": "Explore the catalogued individual monuments of Lingyin Stone Pagodas and Dharani Pillars, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "longxing": {
+      "name": "Longxing Temple",
+      "eyebrow": "Hebei · Zhengding · Old city",
+      "lede": "Explore the catalogued individual monuments of Longxing Temple, each with its own date, artwork and visit record.",
+      "note": "This list includes Mani Hall and the Revolving Sutra Hall. The 971 bronze Guanyin does not date the Dabei Pavilion rebuilt in 1997–1999."
+    },
+    "luohanshuangta": {
+      "name": "Luohan Twin Pagodas and Hall Ruins",
+      "eyebrow": "Jiangsu · Suzhou · Dinghuisi Lane",
+      "lede": "Explore the catalogued individual monuments of Luohan Twin Pagodas and Hall Ruins, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "shanhua": {
+      "name": "Shanhua Temple",
+      "eyebrow": "Shanxi · Datong · South Gate",
+      "lede": "Explore the catalogued individual monuments of Shanhua Temple, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "xianzhonggu": {
+      "name": "Xi’an Bell and Drum Towers",
+      "eyebrow": "Shaanxi · Xi'an · Center of the prefectural city",
+      "lede": "Explore the catalogued individual monuments of Xi’an Bell and Drum Towers, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "xitai": {
+      "name": "Ninghai Historic Stages",
+      "eyebrow": "Zhejiang · Ninghai · Shrines and temples",
+      "lede": "Explore the catalogued individual monuments of Ninghai Historic Stages, each with its own date, artwork and visit record.",
+      "note": "This list includes the Aohu Hu ancestral hall and Town God Temple stages; it does not cover every historic stage in Ninghai."
+    },
+    "sx_yongzuo": {
+      "name": "Yongzuo Temple Twin Pagodas",
+      "eyebrow": "Shanxi · Taiyuan",
+      "lede": "Explore the catalogued individual monuments of Yongzuo Temple Twin Pagodas, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "yuanqi": {
+      "name": "Yuanqi Temple",
+      "eyebrow": "Shanxi · Lucheng · Bank of the Zhuozhang River · Xin'an Village",
+      "lede": "Explore the catalogued individual monuments of Yuanqi Temple, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
+    },
+    "zhuozhou": {
+      "name": "Zhuozhou Twin Pagodas",
+      "eyebrow": "Hebei · Zhuozhou · Old city",
+      "lede": "Explore the catalogued individual monuments of Zhuozhou Twin Pagodas, each with its own date, artwork and visit record.",
+      "note": "Progress counts only the individual monuments listed here. The original group record is preserved separately and does not mark the members visited."
     }
   }
 }

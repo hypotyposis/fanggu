@@ -1,0 +1,137 @@
+{
+  "id": "jp_burakuji_yakushido",
+  "name": "丰乐寺药师堂",
+  "subject": "丰乐寺 · 药师堂",
+  "source_page": "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440",
+  "image_url": "https://www.town.otoyo.kochi.jp/data/440/2352.jpg",
+  "author": "大丰町（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_burakuji_yakushido-front-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_burakuji_yakushido-front-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Burakuji Yakushido, surviving late-Heian timber hall, complete main hall only, not the small foreground altar shelter.\nSTRUCTURAL CHECKPOINTS: FIVE front bays and five bays deep, one hip-and-gable kokera wood-shingle roof, broad gentle curved eaves.; Central THREE paired timber door bays flanked by slatted window bays, timber board walls and encircling veranda with railing.; The hall is the large rear building; remove the small modern offering shelter, fences, signs, vegetation and shadows.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "大丰町 · 丰乐寺 · 药师堂",
+      "url": "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440"
+    },
+    {
+      "title": "主体断代与形制依据",
+      "url": "https://online.bunka.go.jp/heritages/detail/157985"
+    }
+  ],
+  "structure_checkpoints": [
+    "FIVE front bays and five bays deep, one hip-and-gable kokera wood-shingle roof, broad gentle curved eaves.",
+    "Central THREE paired timber door bays flanked by slatted window bays, timber board walls and encircling veranda with railing.",
+    "The hall is the large rear building; remove the small modern offering shelter, fences, signs, vegetation and shadows."
+  ],
+  "material_observations": "灰褐柿葺屋面，旧褐木板壁与圆柱，木缘侧和栏杆淡褐，石基灰色。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "丰乐寺 · 药师堂",
+    "平安后期，12世纪"
+  ],
+  "generated_file": "assets/generated/jp_burakuji_yakushido.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.499919+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440",
+      "https://online.bunka.go.jp/heritages/detail/157985"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:26:31.617623+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "995dcf8c33828d98d17424326d1af3e6723e625108193f981a2ae46d5a8e65c5",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-c0aa22c4-0bff-42ea-b41c-d549a1f1000e.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:25:25.272564+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Burakuji Yakushido, surviving late-Heian timber hall, complete main hall only, not the small foreground altar shelter.\nSTRUCTURAL CHECKPOINTS: FIVE front bays and five bays deep, one hip-and-gable kokera wood-shingle roof, broad gentle curved eaves.; Central THREE paired timber door bays flanked by slatted window bays, timber board walls and encircling veranda with railing.; The hall is the large rear building; remove the small modern offering shelter, fences, signs, vegetation and shadows.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_burakuji_yakushido-front-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:26:31.617888+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-c0aa22c4-0bff-42ea-b41c-d549a1f1000e.png",
+      "retained_file": "assets/generated/jp_burakuji_yakushido.png",
+      "sourceSha256": "995dcf8c33828d98d17424326d1af3e6723e625108193f981a2ae46d5a8e65c5"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_burakuji_yakushido-front-photo.jpg",
+      "source_page": "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440",
+      "image_url": "https://www.town.otoyo.kochi.jp/data/440/2352.jpg",
+      "author": "大丰町（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "丰乐寺 · 药师堂"
+    },
+    {
+      "title": "大丰町 · 丰乐寺 · 药师堂",
+      "url": "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440"
+    },
+    {
+      "title": "主体断代与形制依据",
+      "url": "https://online.bunka.go.jp/heritages/detail/157985"
+    }
+  ],
+  "site_recommendation": {
+    "name": "丰乐寺药师堂",
+    "year": 1151,
+    "yearApprox": true,
+    "yearLabel": "12世纪",
+    "yearNote": "现存堂按平安后期、12世纪定位；1151是堂内造像铭年，本条仅作约值，不称整座药师堂当年确切竣工。",
+    "dyn": "jp_heian",
+    "country": "JP",
+    "placeKey": "jp_otoyo"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "995dcf8c33828d98d17424326d1af3e6723e625108193f981a2ae46d5a8e65c5",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "96bec87e4678f33755d5a2234c1465da75291c7b51248cf3f02268880e32fd8f"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "jiahuiguan_gate",
+  "subject": "郏县山陕会馆门楼戏楼",
+  "sources": [
+    {
+      "id": "hn_jiahuiguan",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3A20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/20240710_Jiaxian_Shan-Shan_Guild_Hall_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "reference_file": "assets/references/hn_jiahuiguan-photo.jpg",
+      "author": "Windmemories",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_jiahuiguan-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/hn_jiahuiguan-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 郏县山陕会馆门楼戏楼. ONLY the CENTRAL gatehouse with theater upstairs, single main gabled roof, three bays and round window openings seen in photo. Remove BOTH detached flanking bell/drum towers, foreground wall obstruction and neighboring buildings. Preserve the coupled gate-and-stage unit. Complete subject with 10% white margins; portrait pagodas, landscape halls or ruins.",
+  "generated_file": "assets/generated/jiahuiguan_gate.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f49-ef6f-79f3-b853-0d35d57cb805/exec-54351678-aa81-4638-ad72-db3ebf430120.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "caption": [
+    "郏县山陕会馆门楼戏楼 · 门楼与相连构件",
+    "清代 · 单体确年未详"
+  ],
+  "historical_sources": [
+    {
+      "title": "郏县山陕会馆",
+      "url": "https://wglj.pds.gov.cn/contents/12739/241479.html",
+      "publisher": "平顶山市文化广电和旅游局",
+      "accessed_at": "2026-10-02"
+    },
+    {
+      "title": "文化遗产耀中原|清代“万里茶道”上的活化石 郏县山陕会馆",
+      "url": "http://henan.sina.com.cn/city/csgz/2024-07-09/city-inccpaqm8844364.shtml",
+      "publisher": "新浪河南转《河南文物之窗》（河南省文物局栏目）2024-07-09",
+      "note": "宛洛、许洛古道交汇与茶路分支、镇河大将军照壁、戏楼建在山门之上、万里茶道；称可容3000多人看戏",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郏县",
+      "url": "https://zh.wikipedia.org/wiki/%E9%83%8F%E5%8E%BF",
+      "publisher": "维基百科（二手来源）",
+      "note": "郏县山陕会馆创建于清康熙三十二年（1693年），现存照壁、戏楼、钟楼、鼓楼、东西廊房、正殿、后殿",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "郏县山陕会馆",
+      "url": "https://web.archive.org/web/2024id_/https://baike.baidu.com/item/%E9%83%8F%E5%8E%BF%E5%B1%B1%E9%99%95%E4%BC%9A%E9%A6%86/6150946",
+      "publisher": "百度百科（互联网档案馆存档；二手来源）",
+      "note": "康熙三十二年（1693年）创建；门楼、钟鼓楼描述与文广旅局页一致",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "97d65c94c5c52549573e211e2f953e0b5ad0808e6b4d9cfb4c05be0ba0e2c319",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "97d65c94c5c52549573e211e2f953e0b5ad0808e6b4d9cfb4c05be0ba0e2c319",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "c14be0d5c012a5eec5052e854758fb6a5e47a3d68eec04162ad54d8475ea2cfa"
+  }
+}

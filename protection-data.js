@@ -5013,6 +5013,401 @@
         "source": "batch1",
         "locator": "第一批名单 ·（三）古建筑及历史纪念建筑物 · 编号82 分类号35 昌珠寺 · 西藏自治区乃东县（备注：传为七世纪建）· PDF第11页（公报第84页）"
       }
+    ],
+    "chongsheng_north": [
+      {
+        "batch": 1,
+        "unitName": "崇圣寺三塔",
+        "relation": "part",
+        "scope": "崇圣寺北塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 崇圣寺三塔"
+      }
+    ],
+    "chongsheng_qianxun": [
+      {
+        "batch": 1,
+        "unitName": "崇圣寺三塔",
+        "relation": "part",
+        "scope": "崇圣寺千寻塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 崇圣寺三塔"
+      }
+    ],
+    "chongsheng_south": [
+      {
+        "batch": 1,
+        "unitName": "崇圣寺三塔",
+        "relation": "part",
+        "scope": "崇圣寺南塔",
+        "source": "batch1",
+        "locator": "PDF 第10页 · 崇圣寺三塔"
+      }
+    ],
+    "chongxing_east": [
+      {
+        "batch": 3,
+        "unitName": "崇兴寺双塔",
+        "relation": "part",
+        "scope": "崇兴寺东塔",
+        "source": "batch3",
+        "locator": "PDF 第15页 · 崇兴寺双塔"
+      }
+    ],
+    "chongxing_west": [
+      {
+        "batch": 3,
+        "unitName": "崇兴寺双塔",
+        "relation": "part",
+        "scope": "崇兴寺西塔",
+        "source": "batch3",
+        "locator": "PDF 第15页 · 崇兴寺双塔"
+      }
+    ],
+    "dule_guanyin": [
+      {
+        "batch": 1,
+        "unitName": "独乐寺",
+        "relation": "part",
+        "scope": "独乐寺观音阁",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 独乐寺"
+      }
+    ],
+    "haihui_large": [
+      {
+        "batch": 6,
+        "unitName": "海会寺",
+        "relation": "part",
+        "scope": "海会寺琉璃大塔",
+        "source": "batch6",
+        "locator": "448 Ⅲ－151 海会寺 明至清 山西省阳城县"
+      }
+    ],
+    "haihui_small": [
+      {
+        "batch": 6,
+        "unitName": "海会寺",
+        "relation": "part",
+        "scope": "海会寺舍利小塔",
+        "source": "batch6",
+        "locator": "448 Ⅲ－151 海会寺 明至清 山西省阳城县"
+      }
+    ],
+    "huayan_bojia": [
+      {
+        "batch": 1,
+        "unitName": "华严寺",
+        "relation": "part",
+        "scope": "华严寺薄伽教藏殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 华严寺"
+      }
+    ],
+    "huayan_daxiong": [
+      {
+        "batch": 1,
+        "unitName": "华严寺",
+        "relation": "part",
+        "scope": "华严寺大雄宝殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 华严寺"
+      }
+    ],
+    "jiahuiguan_east": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆东楼",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "jiahuiguan_gate": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆门楼戏楼",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "jiahuiguan_west": [
+      {
+        "batch": 7,
+        "unitName": "郏县山陕会馆",
+        "relation": "part",
+        "scope": "郏县山陕会馆西楼",
+        "source": "batch7",
+        "locator": "PDF 第68页 · 序号1209",
+        "scopeSources": [
+          {
+            "title": "郏县山陕会馆",
+            "url": "https://wglj.pds.gov.cn/contents/12739/241479.html"
+          }
+        ]
+      }
+    ],
+    "kaiyuan_bell": [
+      {
+        "batch": 3,
+        "unitName": "开元寺钟楼",
+        "relation": "part",
+        "scope": "正定开元寺钟楼",
+        "source": "batch3",
+        "locator": "PDF 第13页 · 开元寺钟楼",
+        "badgeScope": "钟楼"
+      }
+    ],
+    "kaiyuan_xumi": [
+      {
+        "batch": 6,
+        "unitName": "开元寺须弥塔",
+        "relation": "merged",
+        "scope": "正定开元寺须弥塔",
+        "source": "batch6",
+        "locator": "合并项目第36项 · 开元寺须弥塔",
+        "badgeScope": "须弥塔",
+        "parent": {
+          "unitName": "开元寺钟楼",
+          "batch": 3
+        },
+        "note": "须弥塔在第六批与第三批开元寺钟楼合并，合并后名称为开元寺。"
+      }
+    ],
+    "lingyin_east_pillar": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺东经幢",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "lingyin_east_tower": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺东石塔",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "lingyin_west_pillar": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺西经幢",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "lingyin_west_tower": [
+      {
+        "batch": 7,
+        "unitName": "灵隐寺石塔和经幢",
+        "relation": "part",
+        "scope": "灵隐寺西石塔",
+        "source": "batch7",
+        "locator": "PDF 第57页 · 灵隐寺石塔和经幢"
+      }
+    ],
+    "longxing_mani": [
+      {
+        "batch": 1,
+        "unitName": "隆兴寺",
+        "relation": "part",
+        "scope": "隆兴寺摩尼殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 隆兴寺"
+      }
+    ],
+    "longxing_zhuanlun": [
+      {
+        "batch": 1,
+        "unitName": "隆兴寺",
+        "relation": "part",
+        "scope": "隆兴寺转轮藏阁",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 隆兴寺"
+      }
+    ],
+    "luohan_east": [
+      {
+        "batch": 4,
+        "unitName": "罗汉院双塔及正殿遗址",
+        "relation": "part",
+        "scope": "罗汉院东塔",
+        "source": "batch4",
+        "locator": "PDF 第23页 · 罗汉院双塔及正殿遗址"
+      }
+    ],
+    "luohan_hall_ruins": [
+      {
+        "batch": 4,
+        "unitName": "罗汉院双塔及正殿遗址",
+        "relation": "part",
+        "scope": "罗汉院正殿遗址",
+        "source": "batch4",
+        "locator": "PDF 第23页 · 罗汉院双塔及正殿遗址"
+      }
+    ],
+    "luohan_west": [
+      {
+        "batch": 4,
+        "unitName": "罗汉院双塔及正殿遗址",
+        "relation": "part",
+        "scope": "罗汉院西塔",
+        "source": "batch4",
+        "locator": "PDF 第23页 · 罗汉院双塔及正殿遗址"
+      }
+    ],
+    "shanhua_daxiong": [
+      {
+        "batch": 1,
+        "unitName": "善化寺",
+        "relation": "part",
+        "scope": "善化寺大雄宝殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 善化寺"
+      }
+    ],
+    "shanhua_puxian": [
+      {
+        "batch": 1,
+        "unitName": "善化寺",
+        "relation": "part",
+        "scope": "善化寺普贤阁",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 善化寺"
+      }
+    ],
+    "shanhua_sansheng": [
+      {
+        "batch": 1,
+        "unitName": "善化寺",
+        "relation": "part",
+        "scope": "善化寺三圣殿",
+        "source": "batch1",
+        "locator": "PDF 第11页 · 善化寺"
+      }
+    ],
+    "xian_bell": [
+      {
+        "batch": 4,
+        "unitName": "西安钟楼、鼓楼",
+        "relation": "part",
+        "scope": "西安钟楼",
+        "source": "batch4",
+        "locator": "PDF 第25页 · 西安钟楼、鼓楼"
+      }
+    ],
+    "xian_drum": [
+      {
+        "batch": 4,
+        "unitName": "西安钟楼、鼓楼",
+        "relation": "part",
+        "scope": "西安鼓楼",
+        "source": "batch4",
+        "locator": "PDF 第25页 · 西安钟楼、鼓楼"
+      }
+    ],
+    "xitai_aohu": [
+      {
+        "batch": 6,
+        "unitName": "宁海古戏台",
+        "relation": "part",
+        "scope": "岙胡胡氏宗祠戏台",
+        "source": "batch6",
+        "locator": "557 Ⅲ－260 宁海古戏台 清至民国 浙江省宁海县"
+      }
+    ],
+    "xitai_chenghuang": [
+      {
+        "batch": 6,
+        "unitName": "宁海古戏台",
+        "relation": "part",
+        "scope": "宁海城隍庙戏台",
+        "source": "batch6",
+        "locator": "557 Ⅲ－260 宁海古戏台 清至民国 浙江省宁海县"
+      }
+    ],
+    "yongzuo_wenfeng": [
+      {
+        "batch": 6,
+        "unitName": "永祚寺",
+        "relation": "part",
+        "scope": "永祚寺文峰塔",
+        "source": "batch6",
+        "locator": "467 Ⅲ－170 永祚寺 明至清 山西省太原市"
+      }
+    ],
+    "yongzuo_xuanwen": [
+      {
+        "batch": 6,
+        "unitName": "永祚寺",
+        "relation": "part",
+        "scope": "永祚寺宣文塔",
+        "source": "batch6",
+        "locator": "467 Ⅲ－170 永祚寺 明至清 山西省太原市"
+      }
+    ],
+    "yuanqi_hall": [
+      {
+        "batch": 5,
+        "unitName": "原起寺",
+        "relation": "part",
+        "scope": "原起寺大雄宝殿",
+        "source": "batch5",
+        "locator": "PDF 第12页 · 原起寺"
+      }
+    ],
+    "yuanqi_qinglong": [
+      {
+        "batch": 5,
+        "unitName": "原起寺",
+        "relation": "part",
+        "scope": "原起寺青龙塔",
+        "source": "batch5",
+        "locator": "PDF 第12页 · 原起寺"
+      }
+    ],
+    "zhuozhou_yunju": [
+      {
+        "batch": 5,
+        "unitName": "涿州双塔",
+        "relation": "part",
+        "scope": "涿州云居寺塔",
+        "source": "batch5",
+        "locator": "PDF 第11页 · 涿州双塔"
+      }
+    ],
+    "zhuozhou_zhidu": [
+      {
+        "batch": 5,
+        "unitName": "涿州双塔",
+        "relation": "part",
+        "scope": "涿州智度寺塔",
+        "source": "batch5",
+        "locator": "PDF 第11页 · 涿州双塔"
+      }
     ]
   },
   "untagged": {
@@ -5494,6 +5889,433 @@
       "evidence": [
         "https://online.bunka.go.jp/heritages/detail/147581"
       ]
+    },
+    "jp_chusonji_konjikido": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.chusonji.or.jp/know/konjikido.html",
+        "https://online.bunka.go.jp/heritages/detail/199039"
+      ]
+    },
+    "jp_shiramizu_amidado": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://iwaki-museum.com/gallery/detail/25/"
+      ]
+    },
+    "jp_hokiji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.horyuji.or.jp/hokiji/"
+      ]
+    },
+    "jp_shosoin_shoso": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.kunaicho.go.jp/visit/shosoin/index.html"
+      ]
+    },
+    "jp_shinyakushiji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.shinyakushiji.or.jp/guide/"
+      ]
+    },
+    "jp_murouji_kondo": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+      ]
+    },
+    "jp_murouji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+      ]
+    },
+    "jp_engakuji_shariden": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.engakuji.or.jp/grounds/"
+      ]
+    },
+    "jp_kozanji_butsuden": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://bunkazai.pref.yamaguchi.lg.jp/sp/bunkazai/summary.asp?mid=20002"
+      ]
+    },
+    "jp_hikone_tenshu": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.hikone.lg.jp/kakuka/kanko_bunka/8/2_1/3/4581.html"
+      ]
+    },
+    "jp_matsue_tenshu": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.matsue-castle.jp/",
+        "https://online.bunka.go.jp/db/heritages/detail/195610"
+      ]
+    },
+    "jp_burakuji_yakushido": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.town.otoyo.kochi.jp/life/detail.php?hdnKey=440",
+        "https://online.bunka.go.jp/heritages/detail/157985"
+      ]
+    },
+    "jp_kamitani_honden": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.sakaide.lg.jp/soshiki/bunkashinkou/kandanijinjya.html",
+        "https://www.city.sakaide.lg.jp/uploaded/attachment/39593.pdf"
+      ]
+    },
+    "jp_rurikoji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.yamaguchi.lg.jp/soshiki/110/192674.html",
+        "https://kunishitei.bunka.go.jp/heritage/detail/102/3203"
+      ]
+    },
+    "jp_kibitsu_honden": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.kibitujinja.com/about/honden.php",
+        "https://kibitujinja.com/faq/"
+      ]
+    },
+    "jp_kamosu_honden": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.kankou-shimane.com/destination/20261",
+        "https://online.bunka.go.jp/heritages/detail/146648"
+      ]
+    },
+    "jp_kongosanmaiin_tahoto": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://wakayama-bunkazai.jp/bunkazai/bunkazai-spot-466/",
+        "https://www.town.koya.wakayama.jp/img_data/2019/09/fa90a2311932eae815212f09b5d67dd4.pdf"
+      ]
+    },
+    "jp_negoroji_daito": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://online.bunka.go.jp/db/heritages/detail/176102"
+      ]
+    },
+    "jp_sofukuji_daiou": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.nagasaki.lg.jp/page/1196.html"
+      ]
+    },
+    "jp_sofukuji_daiippomon": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.nagasaki.lg.jp/page/1197.html"
+      ]
+    },
+    "jp_aoi_aso": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.hitoyoshi.lg.jp/kanko/kankojyoho/21341",
+        "https://www.city.hitoyoshi.lg.jp/kosodate_kyoiku/kyoiku_bunka/rekishi_bunka/2421063"
+      ]
+    },
+    "jp_tamaudun": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.naha.okinawa.jp/kankou-bunka/kankou/1003485/1003489.html",
+        "https://www.city.naha.okinawa.jp/kankou-bunka/kankou/1003485/1003489.html"
+      ]
+    },
+    "jp_myoikian_taian": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2511.html"
+      ]
+    },
+    "jp_urakuen_joan": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.meitetsu.co.jp/urakuen/joan/index.html",
+        "https://www.aichinow.pref.aichi.jp/spots/detail/179/",
+        "https://online.bunka.go.jp/heritages/detail/193900"
+      ]
+    },
+    "jp_hakogi_house": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.kobe.lg.jp/a21651/556604195933.html"
+      ]
+    },
+    "jp_furui_house": {
+      "status": "not_applicable",
+      "reason": "日本古迹不适用中国全国重点文物保护单位制度；日本文化财资料作为主体与年代依据，不混贴中国国保标签。",
+      "evidence": [
+        "https://www.city.himeji.lg.jp/kanko/0000001774.html"
+      ]
+    },
+    "jp_bannaji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.city.ashikaga.tochigi.jp/education/000029/000169/000627/p001299.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_myotsuji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www1.city.obama.fukui.jp/kanko-bunka/jisha-shiseki/96.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_myotsuji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www1.city.obama.fukui.jp/obm/rekisi/sekai_isan/Japanese/data/126.htm"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_seihakuji_butsuden": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_daihoji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.vill.aoki.nagano.jp/assoc/see/tera/daihouji.html",
+        "https://www.vill.aoki.nagano.jp/assoc/see/tera/daihouji.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_ankokuji_kyozo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://japan-heritage.bunka.go.jp/ja/culturalproperties/result/2047/",
+        "https://www.pref.gifu.lg.jp/page/348793.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_konrenji_midado": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.city.nishio.aichi.jp/sportskanko/bunkazai/1001485/1001608/1001659/1002705.html",
+        "https://kunishitei.bunka.go.jp/heritage/detail/102/1277"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_senshuji_mieido": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://senjuji-guide.jp/contents/content01/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_senshuji_nyoraido": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://senjuji-guide.jp/contents/content02/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_onjoji_kondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.shiga-miidera.or.jp/treasure/building/01.htm",
+        "http://www.shiga-miidera.or.jp/treasure/building/01.htm"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_kongorinji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://online.bunka.go.jp/db/heritages/detail/122314"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_saimyoji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://saimyouji.com/walk/",
+        "https://online.bunka.go.jp/db/heritages/detail/200439"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_saimyoji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://saimyouji.com/walk/",
+        "https://online.bunka.go.jp/db/heritages/search?page=2130"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_jorakuji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.pref.shiga.lg.jp/file/attachment/5491007.pdf",
+        "https://www.eonet.ne.jp/~jo-rakuji/engi.html",
+        "https://online.bunka.go.jp/db/heritages/detail/185606"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_jorakuji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://online.bunka.go.jp/db/heritages/detail/122467",
+        "https://www.eonet.ne.jp/~jo-rakuji/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_zensuiji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.pref.shiga.lg.jp/file/attachment/5491007.pdf",
+        "https://zensuiji.jp/",
+        "https://online.bunka.go.jp/db/heritages/detail/194120"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_chojuji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://online.bunka.go.jp/db/heritages/detail/122264",
+        "https://chojyuji.jp/cultural/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_hogonji_karamon": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://chikubushima.jp/construction/",
+        "https://www.chikubushima.jp/precincts/precincts1.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_kaijusenji_pagoda": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.city.kizugawa.lg.jp/0000001912.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_daihoonji_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.city.kyoto.lg.jp/kamigyo/page/0000012874.html",
+        "https://daihoonji.jp/cultural-heritage/architectural"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_kinpusenji_zaodo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.kinpusen.or.jp/guide/",
+        "https://www.kinpusen.or.jp/guide/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_todaiji_daibutsuden": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.todaiji.or.jp/information/daibutsuden/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_todaiji_nigatsudo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://online.bunka.go.jp/heritages/detail/123264"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_horyuji_yumedono": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.horyuji.or.jp/garan/",
+        "https://www.horyuji.or.jp/sp/garan/yumedono/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_yakushiji_toindo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://www.yakushiji.or.jp/guide/garan_toindo.html"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "jp_hasedera_hondo": {
+      "status": "not_applicable",
+      "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+      "evidence": [
+        "https://kunishitei.bunka.go.jp/bsys/maindetails/102/2644",
+        "https://www.hasedera.or.jp/guide/"
+      ],
+      "checkedAt": "2026-10-12"
+    },
+    "dule_gate": {
+      "status": "unconfirmed",
+      "reason": "现存山门属于寺院但原登记范围未逐单体核对，暂不转授国保标签。"
+    },
+    "shanhua_gate": {
+      "status": "unconfirmed",
+      "reason": "现存山门属于寺院但原登记范围未逐单体核对，暂不转授国保标签。"
     }
   }
 }));

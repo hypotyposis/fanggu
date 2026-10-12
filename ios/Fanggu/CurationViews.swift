@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Editorial lists (名录／线路／专题) and derived collection progress. These views only read personal records.
+/// Editorial lists and building collections; progress is derived from the member records.
 struct CurationProgressBar: View {
     let progress: CurationProgress
     var height: CGFloat = 3
@@ -27,12 +27,12 @@ struct CurationStrip: View {
             ViewThatFits(in: .horizontal) {
                 HStack(alignment: .firstTextBaseline) {
                     Text("专题").font(FangguFont.serif(14)).foregroundStyle(Palette.paper).fixedSize()
-                    Text("名录与线路 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).fixedSize()
+                    Text("名录、线路与建筑群 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).fixedSize()
                     Spacer()
                 }
                 VStack(alignment: .leading, spacing: 4) {
                     Text("专题").font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
-                    Text("名录与线路 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                    Text("名录、线路与建筑群 · 看看集齐了多少").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                 }
             }
             ScrollView(.horizontal, showsIndicators: false) {
@@ -185,6 +185,8 @@ struct CurationView: View {
     @Environment(\.dismiss) private var dismiss
     let curation: Curation
     @State private var sharing = false
+    @State private var editingLegacyVisit = false
+    @State private var editingLegacyReview = false
 
     var body: some View {
         let members = library.members(of: curation)
@@ -209,6 +211,24 @@ struct CurationView: View {
                         : Text("已到访 \(progress.visited) 处，共 \(progress.total) 处"))
                     .accessibilityIdentifier("curation-progress")
                     CurationProgressBar(progress: progress, height: 4)
+                }
+                if curation.isBuildingCollection {
+                    Button("整组记录今日到访") {
+                        if library.recordToday(for: curation) { Haptics.success() }
+                        else { Haptics.error() }
+                    }
+                    .buttonStyle(FangguOutlineButton())
+                    .disabled(progress.isComplete)
+                    .accessibilityIdentifier("record-collection-today")
+                    Text("仅记录尚未到访的单体；已到访的日期、各项笔记和评价保留。")
+                        .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+                    if let error = library.error {
+                        Text(error).font(FangguFont.serif(12)).foregroundStyle(Palette.redText)
+                            .accessibilityIdentifier("collection-save-error")
+                    }
+                    if let original = library.legacySite(for: curation) {
+                        legacyRecord(original)
+                    }
                 }
                 if !curation.note.isEmpty {
                     Text("收录说明 · \(curation.note)").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
@@ -251,6 +271,38 @@ struct CurationView: View {
         .toolbarBackground(Palette.ink, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
         .sheet(isPresented: $sharing) { ShareCardSheet(content: .curation(curation)) }
+        .sheet(isPresented: $editingLegacyVisit) {
+            if let original = library.legacySite(for: curation) { VisitEditor(site: original) }
+        }
+        .sheet(isPresented: $editingLegacyReview) {
+            if let original = library.legacySite(for: curation) { ReviewEditor(site: original) }
+        }
+    }
+
+    private func legacyRecord(_ original: Monument) -> some View {
+        let record = library.record(for: original)
+        let review = library.review(for: original)
+        return VStack(alignment: .leading, spacing: 10) {
+            Text("原集合记录").font(FangguFont.serif(15, weight: .medium)).foregroundStyle(Palette.paper)
+            Text(record.status.title).font(FangguFont.serif(13)).foregroundStyle(Palette.gold)
+            if !record.visitedOn.isEmpty { Text(verbatim: record.visitedOn).font(FangguFont.mono(12)) }
+            if !record.note.isEmpty { Text(verbatim: record.note).font(FangguFont.serif(13)) }
+            if !review.text.isEmpty { Text(verbatim: review.text).font(FangguFont.serif(13)) }
+            Text("拆分前的记录保留在此，不计入单体到访进度。")
+                .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
+            ViewThatFits(in: .horizontal) {
+                HStack { legacyButtons }
+                VStack(alignment: .leading) { legacyButtons }
+            }
+        }
+        .foregroundStyle(Palette.paper2)
+        .padding(14).background(Palette.ink2)
+        .accessibilityIdentifier("collection-legacy-record")
+    }
+
+    @ViewBuilder private var legacyButtons: some View {
+        Button("编辑原到访记录") { editingLegacyVisit = true }.buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+        Button("查看原评价") { editingLegacyReview = true }.buttonStyle(FangguOutlineButton(accent: Palette.paper2))
     }
 }
 

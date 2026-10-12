@@ -1,0 +1,128 @@
+{
+  "id": "jp_sofukuji_daiou",
+  "name": "崇福寺大雄宝殿",
+  "subject": "崇福寺 · 大雄宝殿",
+  "source_page": "https://www.city.nagasaki.lg.jp/page/1196.html",
+  "image_url": "https://www.city.nagasaki.lg.jp/uploaded/image/1227.jpg",
+  "author": "长崎市官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sofukuji_daiou-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_sofukuji_daiou-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Sofukuji Daiyu Hoden, 1646 main hall with later added upper roof level, hall only.\nSTRUCTURAL CHECKPOINTS: Exactly TWO roof levels: broad lower Chinese-style hall and smaller upper Japanese-style roof, no pagoda storeys.; Preserve photographed red pillars, white side walls, grey tiled hip-and-gable roofs, open front gallery and stone staircase.; Exclude attached neighboring halls, offering boxes, people and signage; plaques remain blank.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "长崎市 · 崇福寺 · 大雄宝殿",
+      "url": "https://www.city.nagasaki.lg.jp/page/1196.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "Exactly TWO roof levels: broad lower Chinese-style hall and smaller upper Japanese-style roof, no pagoda storeys.",
+    "Preserve photographed red pillars, white side walls, grey tiled hip-and-gable roofs, open front gallery and stone staircase.",
+    "Exclude attached neighboring halls, offering boxes, people and signage; plaques remain blank."
+  ],
+  "material_observations": "朱红木柱，白壁和灰瓦，斗栱有少量蓝绿彩绘，石阶灰白；上层外观按现存形制。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "崇福寺 · 大雄宝殿",
+    "江户正保三年（1646）；上层约1681年"
+  ],
+  "generated_file": "assets/generated/jp_sofukuji_daiou.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.857939+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.nagasaki.lg.jp/page/1196.html"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:13:43.968062+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "2442c22eafdc83506752cca6cdbdc7fd2861293f83e73829c8da70a85d6b0dac",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-c2ef6e44-c72f-4e5d-b727-df227acba198.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:13:00.766342+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Sofukuji Daiyu Hoden, 1646 main hall with later added upper roof level, hall only.\nSTRUCTURAL CHECKPOINTS: Exactly TWO roof levels: broad lower Chinese-style hall and smaller upper Japanese-style roof, no pagoda storeys.; Preserve photographed red pillars, white side walls, grey tiled hip-and-gable roofs, open front gallery and stone staircase.; Exclude attached neighboring halls, offering boxes, people and signage; plaques remain blank.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_sofukuji_daiou-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:13:43.968286+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-c2ef6e44-c72f-4e5d-b727-df227acba198.png",
+      "retained_file": "assets/generated/jp_sofukuji_daiou.png",
+      "sourceSha256": "2442c22eafdc83506752cca6cdbdc7fd2861293f83e73829c8da70a85d6b0dac"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_sofukuji_daiou-photo.jpg",
+      "source_page": "https://www.city.nagasaki.lg.jp/page/1196.html",
+      "image_url": "https://www.city.nagasaki.lg.jp/uploaded/image/1227.jpg",
+      "author": "长崎市官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "崇福寺 · 大雄宝殿"
+    },
+    {
+      "title": "长崎市 · 崇福寺 · 大雄宝殿",
+      "url": "https://www.city.nagasaki.lg.jp/page/1196.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "崇福寺大雄宝殿",
+    "year": 1646,
+    "yearApprox": false,
+    "yearLabel": "1646年；约1681年加上层",
+    "yearNote": "初层正保三年（1646）完成，上层约天和元年（1681）增建；图版描现存两层屋面，不称现状全部建于1646年。",
+    "dyn": "jp_edo",
+    "country": "JP",
+    "placeKey": "jp_nagasaki"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "2442c22eafdc83506752cca6cdbdc7fd2861293f83e73829c8da70a85d6b0dac",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "cba8962b6accbe3ecd9f178f33510da2700b8d19be8df65c3c8eed203ecb362e"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

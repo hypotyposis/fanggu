@@ -1,0 +1,88 @@
+{
+  "id": "haihui_small",
+  "subject": "海会寺舍利小塔",
+  "sources": [
+    {
+      "file": "assets/references/sx_haihui-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Haihui_Temple_(Shanxi).JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Haihui_Temple_%28Shanxi%29.JPG/960px-Haihui_Temple_%28Shanxi%29.JPG",
+      "author": "Underbar dk",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "dimensions": {
+        "width": 960,
+        "height": 1280
+      }
+    }
+  ],
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_haihui-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sx_haihui-photo.jpg"
+  ],
+  "source_note": "依据所列实拍与来源，仅绘指定单体及明确相连构件；所绘局部在图注和正文注明。图版为原型艺术转译，不是测绘或文保复原。",
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 海会寺舍利小塔. ONLY the SMALLER foreground hexagonal TEN-tier brick pagoda; omit the tall rear pagoda entirely, preserve the full small pagoda apex and base. ONE building only. Portrait canvas, complete finial and base with margins.",
+  "generated_file": "assets/generated/haihui_small.png",
+  "generation_tool": "image_gen.imagegen",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-5c6f042f-0942-4208-897d-85545c24b65f.png",
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "caption": [
+    "海会寺舍利小塔 · 塔身现貌",
+    "后梁龙德二年始建 · 宋代改修"
+  ],
+  "historical_sources": [
+    {
+      "title": "“江南水乡”——海会寺",
+      "publisher": "阳城县人民政府",
+      "url": "https://yczf.gov.cn/yryc/yxyc/201409/t20140908_1102831.shtml",
+      "evidence": "小塔为五代建、宋代改修，六角十级；大塔明嘉靖四十年1561，八角十三级。"
+    },
+    {
+      "title": "海会寺",
+      "publisher": "阳城县人民政府润城镇",
+      "url": "https://yczf.gov.cn/mobile/yryc_mobile/ycmp_mobile/202308/t20230801_1831659.shtml",
+      "evidence": "琉璃悬阁宝塔由李思孝于明嘉靖、隆庆年间捐建，十三层。该文地址写润城沟西村，与旧文北留大桥村不同，地图采用塔院本体坐标而非按乡镇中心定位。"
+    },
+    {
+      "title": "海会寺（阳城）",
+      "publisher": "维基百科，引用文物与地方史资料",
+      "url": "https://zh.wikipedia.org/wiki/海会寺_(阳城)",
+      "evidence": "大塔下三层包筑八角城垛，第十层出琉璃平座；记录1561及1565—1568两种营建纪年，因此用时代范围不冒认单一年竣工。"
+    },
+    {
+      "title": "寻访晋城国宝之【海会双塔】",
+      "url": "https://www.sohu.com/a/203316126_395870",
+      "publisher": "山西省旅游局（搜狐号），2017-11-09",
+      "note": "小塔龙德二年、六角十级、高约20米、佛龛与倾斜，显德三年碑与王国光碑，大塔1565—1568、李思孝捐银、高约57米、底部三层城垛式、第十层琉璃平座每面三间共24间、张驭寰评语均据此。",
+      "added": "content-rewrite-20261005"
+    },
+    {
+      "title": "山西阳城举行“海会双塔历史挖掘暨海会书院文旅发展座谈会”",
+      "url": "http://www.sx.chinanews.com.cn/news/2022/0429/207656.html",
+      "publisher": "中国新闻网山西，2022-04-29",
+      "note": "明塔嘉靖四十四年（1565）修建、第十级琉璃擎檐柱悬空阁、下三层砖石围筑；“北方楼阁式塔中的唯一佳例”为该文所引专家评语。",
+      "added": "content-rewrite-20261005"
+    }
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "63326361af2a043e3ec133448dbd0f61c1f61120c76f8404257926fba1198071",
+    "seeds": []
+  },
+  "status": "complete",
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-12T09:48:33.681Z",
+    "sourceSha256": "63326361af2a043e3ec133448dbd0f61c1f61120c76f8404257926fba1198071",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ab9e993883fc82520301d96e6b0fe2f15f2faf24307912d20f240f07e504d29b"
+  }
+}

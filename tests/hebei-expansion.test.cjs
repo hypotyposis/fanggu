@@ -75,7 +75,7 @@ test('Hebei dates and national protection refer to the selected surviving subjec
 
 test('Hebei additions are searchable, unvisited, and do not admit blocked candidates', () => {
   const find = filters => catalog.filter(s => facets.matches(s, filters));
-  assert.deepEqual(Array.from(find({ province: '河北' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids, ...laterBatch.ids].sort());
+  assert.deepEqual(Array.from(find({ province: '河北' }), s => s.id).sort(), [...batch.previousProvinceIds, ...batch.ids, ...laterBatch.ids, 'kaiyuan_xumi', 'kaiyuan_bell', 'longxing_mani', 'longxing_zhuanlun', 'zhuozhou_yunju', 'zhuozhou_zhidu'].sort());
   for (const id of batch.ids) assert(find({ province: '河北', status: 'unvisited' }).some(s => s.id === id));
   for (const [query, id] of [['天下第一关', 'hb_shanhaiguan'], ['伊犁庙', 'hb_anyuan'], ['赵县小石桥', 'hb_yongtong'], ['丰润', 'hb_tiangong']]) {
     assert(find({ query, province: '河北' }).some(s => s.id === id));

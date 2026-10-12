@@ -69,6 +69,7 @@ const base = sites.map(site => {
     .filter((source, index, all) => all.findIndex(item => item.url === source.url) === index);
   return {
     id: site.id, name: site.name, short: site.short || '', sub: site.sub || '',
+    collectionOnly: !!site.collectionOnly,
     dynasty: site.dyn, dynastyName: dynasties[site.dyn].name, dynastyGlyph: dynasties[site.dyn].glyph,
     dynastyStart: dynasties[site.dyn].start ?? timelineSpans[site.dyn]?.[0],
     dynastyEnd: dynasties[site.dyn].end ?? timelineSpans[site.dyn]?.[1],
@@ -163,7 +164,8 @@ const { kinds, curations, validate } = vm.runInContext('FangguCurations', contex
 const siteIDs = new Set(base.map(site => site.id));
 const lists = validate(curations, siteIDs).map(list => ({
   id: list.id, kind: list.kind, kindName: kinds[list.kind], name: list.name,
-  eyebrow: text(list.eyebrow), lede: text(list.lede), note: text(list.note), items: list.items
+  eyebrow: text(list.eyebrow), lede: text(list.lede), note: text(list.note), items: list.items,
+  legacySiteID: list.legacySiteID || null
 }));
 for (const language of ['zh-Hans', ...languages]) {
   const localized = language === 'zh-Hans' ? lists : lists.map(list => {

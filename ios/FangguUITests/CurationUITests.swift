@@ -17,7 +17,7 @@ final class CurationUITests: XCTestCase {
         card.tap()
         let progress = app.descendants(matching: .any)["curation-progress"].firstMatch
         XCTAssertTrue(progress.waitForExistence(timeout: 5))
-        XCTAssertTrue(progress.label.contains("共 7 处"))
+        XCTAssertTrue(progress.label.contains("共 8 处"))
         XCTAssertTrue(app.descendants(matching: .any)["curation-member-yingxian"].firstMatch.exists)
         app.buttons["share-curation-card"].tap()
         XCTAssertTrue(app.images["share-card-preview"].waitForExistence(timeout: 10), "The card renders before any share action")
@@ -60,5 +60,44 @@ final class CurationUITests: XCTestCase {
         XCTAssertFalse(strip.exists, "Results replace the strip while searching")
         app.buttons["clear-catalog-search"].tap()
         XCTAssertTrue(strip.waitForExistence(timeout: 5), "Clearing the search brings the lists back")
+    }
+
+    func testCollectionVisitIsImmediatePersistsAndUndoRestoresAllMembers() {
+        let app = XCUIApplication.isolated()
+        func openCollection() {
+            app.launchForTest(site: "kaiyuan_xumi")
+            let chip = app.descendants(matching: .any)["curation-chip-kaiyuan"].firstMatch
+            XCTAssertTrue(chip.waitForExistence(timeout: 10))
+            app.reveal(chip)
+            chip.tap()
+        }
+        openCollection()
+        let progress = app.descendants(matching: .any)["curation-progress"].firstMatch
+        XCTAssertTrue(progress.waitForExistence(timeout: 5))
+        XCTAssertTrue(progress.label.contains("已到访 0 处"))
+        let action = app.buttons["record-collection-today"]
+        XCTAssertTrue(action.exists)
+        action.tap()
+        XCTAssertTrue(progress.label.contains("已到访 2 处"))
+        XCTAssertFalse(action.isEnabled)
+        let visitedScreenshot = XCTAttachment(screenshot: app.screenshot())
+        visitedScreenshot.name = "collection-visited"
+        visitedScreenshot.lifetime = .keepAlways
+        add(visitedScreenshot)
+        let undo = app.buttons["undo-change"]
+        XCTAssertTrue(undo.waitForExistence(timeout: 5))
+        undo.tap()
+        XCTAssertTrue(progress.label.contains("已到访 0 处"))
+        XCTAssertTrue(action.isEnabled)
+        let undoneScreenshot = XCTAttachment(screenshot: app.screenshot())
+        undoneScreenshot.name = "collection-undone"
+        undoneScreenshot.lifetime = .keepAlways
+        add(undoneScreenshot)
+        action.tap()
+        app.terminate()
+        openCollection()
+        XCTAssertTrue(progress.waitForExistence(timeout: 5))
+        XCTAssertTrue(progress.label.contains("已到访 2 处"))
+        XCTAssertTrue(app.descendants(matching: .any)["collection-legacy-record"].firstMatch.exists)
     }
 }

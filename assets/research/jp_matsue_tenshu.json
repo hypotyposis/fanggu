@@ -1,0 +1,137 @@
+{
+  "id": "jp_matsue_tenshu",
+  "name": "松江城天守",
+  "subject": "松江城 · 天守本体",
+  "source_page": "https://www.matsue-castle.jp/",
+  "image_url": "https://www.matsue-castle.jp/theme/matsue-castle/img/top/top_highlight_ph_01.jpg",
+  "author": "松江城官网官方资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_matsue_tenshu-full-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_matsue_tenshu-full-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Matsue Castle main tenshu, completed 1611, FOUR exterior roof levels and FIVE internal floors, main tower and its small entrance projection only.\nSTRUCTURAL CHECKPOINTS: Exactly FOUR exterior principal roof levels, five internal floors; black timber rainboards on lower levels, small white plaster bands on upper levels.; Large triangular gables, top lookout balcony with dark wood railing, shachi ridge ornaments, central stone foundation.; Draw main tower and directly connected entrance projection; remove cherry tree, neighboring outbuildings and modern signs. Preserve the actual black-and-white wall distribution.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "松江城官网 · 松江城 · 天守本体",
+      "url": "https://www.matsue-castle.jp/"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/195610"
+    }
+  ],
+  "structure_checkpoints": [
+    "Exactly FOUR exterior principal roof levels, five internal floors; black timber rainboards on lower levels, small white plaster bands on upper levels.",
+    "Large triangular gables, top lookout balcony with dark wood railing, shachi ridge ornaments, central stone foundation.",
+    "Draw main tower and directly connected entrance projection; remove cherry tree, neighboring outbuildings and modern signs. Preserve the actual black-and-white wall distribution."
+  ],
+  "material_observations": "下部黑色雨淋板，上部白壁与深木窗，灰瓦、青灰金属鯱，石基灰褐。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "松江城 · 天守本体",
+    "桃山庆长十六年（1611）"
+  ],
+  "generated_file": "assets/generated/jp_matsue_tenshu.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.449617+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.matsue-castle.jp/",
+      "https://online.bunka.go.jp/db/heritages/detail/195610"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:19:09.890212+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8dcb50c477966b1f0cb08b4f94532e6208c64cb1285c9fd92d6f48e76bcf2fa1",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e8bfa936-e982-4262-9299-70d6b3323418.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:16:44.129304+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Matsue Castle main tenshu, completed 1611, FOUR exterior roof levels and FIVE internal floors, main tower and its small entrance projection only.\nSTRUCTURAL CHECKPOINTS: Exactly FOUR exterior principal roof levels, five internal floors; black timber rainboards on lower levels, small white plaster bands on upper levels.; Large triangular gables, top lookout balcony with dark wood railing, shachi ridge ornaments, central stone foundation.; Draw main tower and directly connected entrance projection; remove cherry tree, neighboring outbuildings and modern signs. Preserve the actual black-and-white wall distribution.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_matsue_tenshu-full-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:19:09.890468+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e8bfa936-e982-4262-9299-70d6b3323418.png",
+      "retained_file": "assets/generated/jp_matsue_tenshu.png",
+      "sourceSha256": "8dcb50c477966b1f0cb08b4f94532e6208c64cb1285c9fd92d6f48e76bcf2fa1"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_matsue_tenshu-full-photo.jpg",
+      "source_page": "https://www.matsue-castle.jp/",
+      "image_url": "https://www.matsue-castle.jp/theme/matsue-castle/img/top/top_highlight_ph_01.jpg",
+      "author": "松江城官网官方资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "松江城 · 天守本体"
+    },
+    {
+      "title": "松江城官网 · 松江城 · 天守本体",
+      "url": "https://www.matsue-castle.jp/"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/195610"
+    }
+  ],
+  "site_recommendation": {
+    "name": "松江城天守",
+    "year": 1611,
+    "yearApprox": false,
+    "yearLabel": "1611年",
+    "yearNote": "庆长十六年（1611）营建由祈祷札等史料确认；与1610年的城郭营建过程区分。",
+    "dyn": "jp_momoyama",
+    "country": "JP",
+    "placeKey": "jp_matsue"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "8dcb50c477966b1f0cb08b4f94532e6208c64cb1285c9fd92d6f48e76bcf2fa1",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "ba6d04cd2bbd3f254712db1935024617fb7a748b68b613c01ac40f83b8250625"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

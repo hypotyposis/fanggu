@@ -1,0 +1,128 @@
+{
+  "id": "jp_engakuji_shariden",
+  "name": "圆觉寺舍利殿",
+  "subject": "圆觉寺舍利殿本体",
+  "source_page": "https://www.engakuji.or.jp/grounds/",
+  "image_url": "https://www.engakuji.or.jp/wp-content/themes/engakuji/assets/img/grounds/photo_07_modal_01.jpg",
+  "author": "圆觉寺官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_engakuji_shariden-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_engakuji_shariden-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Engakuji Shariden, surviving medieval Zen-style reliquary hall; draw this hall only.\nSTRUCTURAL CHECKPOINTS: A THREE-bay core with a surrounding mokoshi skirt roof: TWO visible roof bands but only ONE principal storey.; Hip-and-gable main roof and lower skirt, delicate curved eaves, central doorway flanked by cusped katomado windows.; Use the photographed brown timber and façade; remove foreground fence and modern barriers.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "圆觉寺官方网站 · 圆觉寺舍利殿",
+      "url": "https://www.engakuji.or.jp/grounds/"
+    }
+  ],
+  "structure_checkpoints": [
+    "A THREE-bay core with a surrounding mokoshi skirt roof: TWO visible roof bands but only ONE principal storey.",
+    "Hip-and-gable main roof and lower skirt, delicate curved eaves, central doorway flanked by cusped katomado windows.",
+    "Use the photographed brown timber and façade; remove foreground fence and modern barriers."
+  ],
+  "material_observations": "木构深褐色，柿葺屋面灰褐，石基灰色；内阵暗部克制。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "圆觉寺舍利殿",
+    "室町时代，约15世纪"
+  ],
+  "generated_file": "assets/generated/jp_engakuji_shariden.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.299024+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.engakuji.or.jp/grounds/"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:13:25.220870+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "8ba5d36f3ba273005125da57925ea68047da4c59e3d4f7d28b184ef770fc4c3a",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-0979336a-c27a-423d-b6a0-0365b8477163.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:08:19.410716+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Engakuji Shariden, surviving medieval Zen-style reliquary hall; draw this hall only.\nSTRUCTURAL CHECKPOINTS: A THREE-bay core with a surrounding mokoshi skirt roof: TWO visible roof bands but only ONE principal storey.; Hip-and-gable main roof and lower skirt, delicate curved eaves, central doorway flanked by cusped katomado windows.; Use the photographed brown timber and façade; remove foreground fence and modern barriers.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_engakuji_shariden-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:13:25.221101+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-0979336a-c27a-423d-b6a0-0365b8477163.png",
+      "retained_file": "assets/generated/jp_engakuji_shariden.png",
+      "sourceSha256": "8ba5d36f3ba273005125da57925ea68047da4c59e3d4f7d28b184ef770fc4c3a"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_engakuji_shariden-photo.jpg",
+      "source_page": "https://www.engakuji.or.jp/grounds/",
+      "image_url": "https://www.engakuji.or.jp/wp-content/themes/engakuji/assets/img/grounds/photo_07_modal_01.jpg",
+      "author": "圆觉寺官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "圆觉寺舍利殿本体"
+    },
+    {
+      "title": "圆觉寺官方网站 · 圆觉寺舍利殿",
+      "url": "https://www.engakuji.or.jp/grounds/"
+    }
+  ],
+  "site_recommendation": {
+    "name": "圆觉寺舍利殿",
+    "year": 1425,
+    "yearApprox": true,
+    "yearLabel": "15世纪前半",
+    "yearNote": "文化厅相关资料归15世纪前半，1425为约值；1563年火灾后移入原太平寺佛殿，不将移建年写成主体建造年。",
+    "dyn": "jp_muromachi",
+    "country": "JP",
+    "placeKey": "jp_kamakura_city"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "8ba5d36f3ba273005125da57925ea68047da4c59e3d4f7d28b184ef770fc4c3a",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "9bf644734ab3b50e3c5dc28de932aea87119748f402f1177f58610a82067274e"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

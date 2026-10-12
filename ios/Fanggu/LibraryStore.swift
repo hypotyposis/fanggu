@@ -16,11 +16,12 @@ import Foundation
     init(fileURL suppliedURL: URL? = nil, language: AppLanguage = .current, scope: String? = TestScope.current) {
         let url = Bundle.main.url(forResource: language.catalogResource, withExtension: "json")
             ?? Bundle.main.url(forResource: "catalog", withExtension: "json")!
-        monuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
+        let allMonuments = (try? JSONDecoder().decode([Monument].self, from: Data(contentsOf: url))) ?? []
+        monuments = allMonuments.filter { $0.collectionOnly != true }
         timeline = TimelineCatalog(monuments: monuments)
-        let catalogIDs = Set(monuments.map(\.id))
+        let catalogIDs = Set(allMonuments.map(\.id))
         ids = catalogIDs
-        monumentsByID = Dictionary(monuments.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+        monumentsByID = Dictionary(allMonuments.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
         // Lists ship with the catalogue; members that are missing from this build are dropped rather than shown empty.
         let lists = (Bundle.main.url(forResource: language.curationResource, withExtension: "json")
             ?? Bundle.main.url(forResource: "curations", withExtension: "json"))
@@ -53,6 +54,12 @@ import Foundation
 
     /// Members in editorial order; IDs absent from this catalogue build are skipped.
     func members(of list: Curation) -> [Monument] { list.items.compactMap { monumentsByID[$0] } }
+
+    /// The original ID keeps its date, note, review and backup links. It never marks a child visited.
+    func legacySite(for list: Curation) -> Monument? {
+        guard let id = list.legacySiteID, let site = monumentsByID[id], site.collectionOnly == true else { return nil }
+        return site
+    }
 
     func progress(of list: Curation) -> CurationProgress {
         let members = members(of: list)
@@ -112,6 +119,26 @@ import Foundation
         return setRecord(next, for: site)
     }
 
+    /// One explicit action, one atomic save and one undo for the whole building collection.
+    @discardableResult func recordToday(for list: Curation) -> Bool {
+        guard !loadFailed, let savedList = curations.first(where: { $0.id == list.id }),
+              savedList.isBuildingCollection, savedList.items == list.items else { return false }
+        let changed = members(of: savedList).filter { record(for: $0).status != .visited }
+        guard !changed.isEmpty else { return true }
+        let previous = Dictionary(uniqueKeysWithValues: changed.map { ($0.id, data.records[$0.id]) })
+        let today = Self.today()
+        guard commit({ next in
+            for site in changed {
+                var record = self.record(for: site)
+                record.status = .visited
+                record.visitedOn = today
+                next.records[site.id] = record
+            }
+        }) else { return false }
+        undoAction = LibraryUndo(message: String(localized: "\(list.name) · 已记录整组今日到访"), change: .records(previous))
+        return true
+    }
+
     @discardableResult func setReview(dimensions: DimensionScores, text: String, for site: Monument, clearLegacyRating: Bool = false) -> Bool {
         guard ids.contains(site.id) else { return false }
         let previous = review(for: site)
@@ -152,6 +179,8 @@ import Foundation
         let saved = commit { next in
             switch action.change {
             case .record(let id, let previous): next.records[id] = previous
+            case .records(let previous):
+                for (id, record) in previous { next.records[id] = record }
             case .dimensions(let id, let previous):
                 var review = next.reviews[id] ?? Review()
                 review.dimensions = previous
@@ -339,6 +368,7 @@ struct LibraryUndo: Identifiable {
 
     enum Change {
         case record(String, VisitRecord?)
+        case records([String: VisitRecord?])
         case dimensions(String, DimensionScores)
         case review(String, Review)
     }

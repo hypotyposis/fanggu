@@ -1,0 +1,128 @@
+{
+  "id": "jp_shiramizu_amidado",
+  "name": "白水阿弥陀堂",
+  "subject": "白水阿弥陀堂本体",
+  "source_page": "https://iwaki-museum.com/gallery/detail/25/",
+  "image_url": "https://das-iwaki.s3.ap-northeast-1.amazonaws.com/das-iwaki_geoa_tech/picture/100/25_55/sd.jpg",
+  "author": "磐城市文化财数字博物馆（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_shiramizu_amidado-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_shiramizu_amidado-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Shiramizu Amidado, dated 1160, complete three-bay square hall.\nSTRUCTURAL CHECKPOINTS: THREE front bays and three bays deep, one pyramidal hogyo roof with a small jewel at the apex.; Wood-shingle roof, open timber veranda and short central stairs; aged wooden lattice doors on the front, board walls on other sides.; Remove the modern outer enclosure, stone lantern, trees and signs.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "磐城市文化财数字博物馆 · 白水阿弥陀堂",
+      "url": "https://iwaki-museum.com/gallery/detail/25/"
+    }
+  ],
+  "structure_checkpoints": [
+    "THREE front bays and three bays deep, one pyramidal hogyo roof with a small jewel at the apex.",
+    "Wood-shingle roof, open timber veranda and short central stairs; aged wooden lattice doors on the front, board walls on other sides.",
+    "Remove the modern outer enclosure, stone lantern, trees and signs."
+  ],
+  "material_observations": "旧褐木构与格子门，深灰褐栩葺屋面，木缘侧淡褐；不得仿成茅草或瓦屋面。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "白水阿弥陀堂",
+    "平安永历元年（1160）"
+  ],
+  "generated_file": "assets/generated/jp_shiramizu_amidado.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.008605+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://iwaki-museum.com/gallery/detail/25/"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:11:49.075040+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "021c1b14c8ebc6028fc9501a1b99a1486162cd2c942d646be29e66340031b061",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-40b6f738-a30d-4015-83be-c15ae4f6b932.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:09:49.481694+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Shiramizu Amidado, dated 1160, complete three-bay square hall.\nSTRUCTURAL CHECKPOINTS: THREE front bays and three bays deep, one pyramidal hogyo roof with a small jewel at the apex.; Wood-shingle roof, open timber veranda and short central stairs; aged wooden lattice doors on the front, board walls on other sides.; Remove the modern outer enclosure, stone lantern, trees and signs.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_shiramizu_amidado-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:11:49.075306+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-40b6f738-a30d-4015-83be-c15ae4f6b932.png",
+      "retained_file": "assets/generated/jp_shiramizu_amidado.png",
+      "sourceSha256": "021c1b14c8ebc6028fc9501a1b99a1486162cd2c942d646be29e66340031b061"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_shiramizu_amidado-photo.jpg",
+      "source_page": "https://iwaki-museum.com/gallery/detail/25/",
+      "image_url": "https://das-iwaki.s3.ap-northeast-1.amazonaws.com/das-iwaki_geoa_tech/picture/100/25_55/sd.jpg",
+      "author": "磐城市文化财数字博物馆（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "白水阿弥陀堂本体"
+    },
+    {
+      "title": "磐城市文化财数字博物馆 · 白水阿弥陀堂",
+      "url": "https://iwaki-museum.com/gallery/detail/25/"
+    }
+  ],
+  "site_recommendation": {
+    "name": "白水阿弥陀堂",
+    "year": 1160,
+    "yearApprox": false,
+    "yearLabel": "1160年",
+    "yearNote": "现存堂为永历元年（1160）建立，纪年对应阿弥陀堂，不以更早的寺院传说定位。",
+    "dyn": "jp_heian",
+    "country": "JP",
+    "placeKey": "jp_iwaki"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "021c1b14c8ebc6028fc9501a1b99a1486162cd2c942d646be29e66340031b061",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "a8e880ac83103686d7c40f1a2f8b1d0c8ff6b0d73b46d26fcaee0e3d689893bc"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

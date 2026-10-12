@@ -12,7 +12,8 @@
       "guangren",
       "foguang",
       "tiantai"
-    ]
+    ],
+    "legacySiteID": null
   },
   {
     "id": "liao_eight",
@@ -21,16 +22,18 @@
     "name": "遼代八大木構",
     "eyebrow": "遼代の木構 · 華北と東北",
     "lede": "遼代の木造建築は現存するものが少なく、愛好家は「遼代八大木構」と呼ぶ。独楽寺観音閣と山門、奉国寺大雄殿、開善寺大雄殿、閣院寺文殊殿、華厳寺薄伽教蔵殿、善化寺大雄宝殿、応県木塔である。",
-    "note": "独楽寺観音閣と山門は本図鑑では1件にまとめているため、7件で八つの建物に当てる。失われた宝坻広済寺三大士殿を加える説もあるが、この名録には含めない。",
+    "note": "八項目が現存する八棟に対応する。失われた広済寺三大士殿は含めない。",
     "items": [
       "geyuan",
-      "dule",
+      "dule_guanyin",
+      "dule_gate",
       "fengguo",
       "kaishan",
-      "huayan",
+      "huayan_bojia",
       "yingxian",
-      "shanhua"
-    ]
+      "shanhua_daxiong"
+    ],
+    "legacySiteID": null
   },
   {
     "id": "zhuozhang_valley",
@@ -44,12 +47,245 @@
       "longmen",
       "tiantai",
       "dayun",
-      "yuanqi",
+      "yuanqi_hall",
       "fotou",
+      "yuanqi_qinglong",
       "huilong",
       "chunhua",
       "jiutian",
       "xiayu"
-    ]
+    ],
+    "legacySiteID": null
+  },
+  {
+    "id": "chongsheng",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "崇聖寺三塔",
+    "eyebrow": "雲南 · 大理",
+    "lede": "崇聖寺三塔の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "chongsheng_north",
+      "chongsheng_qianxun",
+      "chongsheng_south"
+    ],
+    "legacySiteID": "chongsheng"
+  },
+  {
+    "id": "ln_chongxing",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "崇興寺双塔",
+    "eyebrow": "遼寧北鎮 · 崇興寺",
+    "lede": "崇興寺双塔の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "chongxing_east",
+      "chongxing_west"
+    ],
+    "legacySiteID": "ln_chongxing"
+  },
+  {
+    "id": "dule",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "独楽寺",
+    "eyebrow": "天津 · 薊州",
+    "lede": "独楽寺の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "dule_gate",
+      "dule_guanyin"
+    ],
+    "legacySiteID": "dule"
+  },
+  {
+    "id": "sx_haihui",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "海会寺双塔",
+    "eyebrow": "山西陽城 · 大橋村海会寺塔院",
+    "lede": "海会寺双塔の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "haihui_large",
+      "haihui_small"
+    ],
+    "legacySiteID": "sx_haihui"
+  },
+  {
+    "id": "huayan",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "華厳寺",
+    "eyebrow": "山西大同 · 古城",
+    "lede": "華厳寺の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "huayan_bojia",
+      "huayan_daxiong"
+    ],
+    "legacySiteID": "huayan"
+  },
+  {
+    "id": "hn_jiahuiguan",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "郏県山陝会館",
+    "eyebrow": "河南 · 郟県",
+    "lede": "郏県山陝会館の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "門楼と二階戯楼は一体のまま。東西楼は別に登録し、鐘鼓の対応は未確認。",
+    "items": [
+      "jiahuiguan_east",
+      "jiahuiguan_gate",
+      "jiahuiguan_west"
+    ],
+    "legacySiteID": "hn_jiahuiguan"
+  },
+  {
+    "id": "kaiyuan",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "正定開元寺",
+    "eyebrow": "河北正定 · 古城",
+    "lede": "正定開元寺の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "kaiyuan_bell",
+      "kaiyuan_xumi"
+    ],
+    "legacySiteID": "kaiyuan"
+  },
+  {
+    "id": "lingyin",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "霊隠寺石塔と経幢",
+    "eyebrow": "浙江杭州 · 霊隠寺",
+    "lede": "霊隠寺石塔と経幢の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "lingyin_east_pillar",
+      "lingyin_east_tower",
+      "lingyin_west_pillar",
+      "lingyin_west_tower"
+    ],
+    "legacySiteID": "lingyin"
+  },
+  {
+    "id": "longxing",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "隆興寺",
+    "eyebrow": "河北正定 · 古城",
+    "lede": "隆興寺の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "摩尼殿と転輪蔵殿を収録。971年の銅観音と1997〜1999年再建の大悲閣の年代を区別する。",
+    "items": [
+      "longxing_mani",
+      "longxing_zhuanlun"
+    ],
+    "legacySiteID": "longxing"
+  },
+  {
+    "id": "luohanshuangta",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "羅漢院双塔と正殿遺跡",
+    "eyebrow": "江蘇蘇州 · 定慧寺巷",
+    "lede": "羅漢院双塔と正殿遺跡の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "luohan_east",
+      "luohan_hall_ruins",
+      "luohan_west"
+    ],
+    "legacySiteID": "luohanshuangta"
+  },
+  {
+    "id": "shanhua",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "善化寺",
+    "eyebrow": "山西大同 · 南門",
+    "lede": "善化寺の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "shanhua_daxiong",
+      "shanhua_gate",
+      "shanhua_puxian",
+      "shanhua_sansheng"
+    ],
+    "legacySiteID": "shanhua"
+  },
+  {
+    "id": "xianzhonggu",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "西安鐘楼・鼓楼",
+    "eyebrow": "陝西西安 · 府城の中心",
+    "lede": "西安鐘楼・鼓楼の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "xian_bell",
+      "xian_drum"
+    ],
+    "legacySiteID": "xianzhonggu"
+  },
+  {
+    "id": "xitai",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "寧海古戯台",
+    "eyebrow": "浙江寧海 · 祠廟",
+    "lede": "寧海古戯台の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "岙胡胡氏宗祠と城隍廟の戯台を収録。寧海の全古戯台を網羅するものではない。",
+    "items": [
+      "xitai_aohu",
+      "xitai_chenghuang"
+    ],
+    "legacySiteID": "xitai"
+  },
+  {
+    "id": "sx_yongzuo",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "永祚寺双塔",
+    "eyebrow": "山西 · 太原",
+    "lede": "永祚寺双塔の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "yongzuo_wenfeng",
+      "yongzuo_xuanwen"
+    ],
+    "legacySiteID": "sx_yongzuo"
+  },
+  {
+    "id": "yuanqi",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "原起寺",
+    "eyebrow": "山西潞城 · 濁漳河畔 · 辛安村",
+    "lede": "原起寺の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "yuanqi_hall",
+      "yuanqi_qinglong"
+    ],
+    "legacySiteID": "yuanqi"
+  },
+  {
+    "id": "zhuozhou",
+    "kind": "collection",
+    "kindName": "建築群",
+    "name": "涿州双塔",
+    "eyebrow": "河北涿州 · 古城",
+    "lede": "涿州双塔の収録単体を、個別の年代・図版・訪問記録でたどる。",
+    "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。",
+    "items": [
+      "zhuozhou_yunju",
+      "zhuozhou_zhidu"
+    ],
+    "legacySiteID": "zhuozhou"
   }
 ]

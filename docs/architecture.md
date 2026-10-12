@@ -77,6 +77,10 @@ sh ios/scripts/sync-artwork.sh assets
 
 App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访后显示设色图 `colorImage`；设色图缺失或解码失败时保留线稿。三张正式版设色图（卢舍那、佛光寺东大殿、应县木塔）不在队列中，由 `queue.excluded` 单独接入。
 
+### 建筑群与旧记录
+
+多单体拆分以 `sites.js` 的 `collectionOnly` 保存旧目录 ID，并以 `curations.js` 的建筑群集合（`kind: collection`、`legacySiteID`、`items`）列出新单体。导出保留全部 ID；原生 `LibraryStore` 的可浏览目录只含单体，旧记录仍按原 ID 在集合页访问。集合快捷打卡经过 `LibraryStore` 一次原子写入，进度仍来自成员记录。
+
 ### 国保：官方名单到标签
 
 `assets/research/national-protection.json` 是唯一源数据。`node scripts/prepare-protection.mjs` 生成 `protection-data.js`；`protection.js` 提供 `forSite`、`badges`、`searchText`；`catalog.js` 分类时附带登记；导出进入 `catalog.json` 的 `protection[]`。规则与来源见 [国保标签与选目规则](national-protection.md)。

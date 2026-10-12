@@ -7,6 +7,92 @@ final class CurationTests: XCTestCase {
         FileManager.default.temporaryDirectory.appendingPathComponent("curations-\(UUID().uuidString)/library.json")
     }
 
+    @MainActor func testGroupVisitPersistsAtomicallyAndUndoRestoresAbsentRecords() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let list = try XCTUnwrap(store.curations.first { $0.id == "kaiyuan" })
+        let members = store.members(of: list)
+        XCTAssertEqual(members.count, 2)
+        XCTAssertTrue(members.allSatisfy { store.record(for: $0).status == .unvisited })
+        let original = try XCTUnwrap(store.legacySite(for: list))
+        let oldVisit = VisitRecord(status: .visited, visitedOn: "2020-01-02", note: "当时只记了开元寺")
+        XCTAssertTrue(store.setRecord(oldVisit, for: original))
+        XCTAssertTrue(store.recordToday(for: list))
+        let reloaded = LibraryStore(fileURL: url)
+        XCTAssertEqual(reloaded.progress(of: list).visited, 2)
+        XCTAssertEqual(reloaded.record(for: original), oldVisit)
+        XCTAssertTrue(members.allSatisfy { reloaded.record(for: $0).visitedOn == LibraryStore.today() })
+        XCTAssertTrue(store.undoLastChange())
+        XCTAssertTrue(members.allSatisfy { store.data.records[$0.id] == nil })
+        XCTAssertEqual(store.record(for: original), oldVisit)
+        XCTAssertEqual(LibraryStore(fileURL: url).progress(of: list).visited, 0)
+    }
+
+    @MainActor func testGroupVisitPreservesVisitedDatesNotesReviewsAndOtherGroups() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let list = try XCTUnwrap(store.curations.first { $0.id == "kaiyuan" })
+        let members = store.members(of: list)
+        let prior = VisitRecord(status: .visited, visitedOn: "2020-01-02", note: "旧单体笔记")
+        let wish = VisitRecord(status: .wishlist, note: "想再仔细看钟楼")
+        XCTAssertTrue(store.setRecord(prior, for: members[0]))
+        XCTAssertTrue(store.setRecord(wish, for: members[1]))
+        XCTAssertTrue(store.setReviewText("原评价", for: members[1]))
+        let review = store.review(for: members[1])
+        let before = store.data.records
+        XCTAssertTrue(store.recordToday(for: list))
+        XCTAssertEqual(store.record(for: members[0]), prior)
+        XCTAssertEqual(store.record(for: members[1]).note, wish.note)
+        XCTAssertEqual(store.review(for: members[1]), review)
+        XCTAssertEqual(Set(store.data.records.keys), Set(before.keys))
+        XCTAssertTrue(store.recordToday(for: list), "Repeated action is a no-op and preserves the first undo")
+        XCTAssertTrue(store.undoLastChange())
+        XCTAssertEqual(store.data.records, before)
+        XCTAssertEqual(store.review(for: members[1]), review)
+    }
+
+    @MainActor func testGroupSaveFailureDoesNotPartiallyPublishAndCanRetry() throws {
+        let directory = temporaryFile().deletingLastPathComponent()
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let blocker = directory.appendingPathComponent("blocker")
+        let url = blocker.appendingPathComponent("library.json")
+        try Data("not a directory".utf8).write(to: blocker)
+        let store = LibraryStore(fileURL: url)
+        let list = try XCTUnwrap(store.curations.first { $0.id == "kaiyuan" })
+        XCTAssertFalse(store.recordToday(for: list))
+        XCTAssertEqual(store.progress(of: list).visited, 0)
+        XCTAssertTrue(store.data.records.isEmpty)
+        XCTAssertNil(store.undoAction)
+        XCTAssertNotNil(store.error)
+        try FileManager.default.removeItem(at: blocker)
+        XCTAssertTrue(store.recordToday(for: list))
+        XCTAssertEqual(LibraryStore(fileURL: url).progress(of: list).visited, 2)
+    }
+
+    @MainActor func testOldGroupBackupStaysInCollectionWithoutCopyingToChildren() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        var old = LibraryData()
+        old.records["kaiyuan"] = VisitRecord(status: .visited, visitedOn: "2020-01-02", note: "旧寺院记录")
+        old.reviews["kaiyuan"] = Review(text: "旧寺院评价", updatedAt: "2020-01-02T12:00:00.000Z")
+        let store = LibraryStore(fileURL: url)
+        try store.importBackup(JSONEncoder().encode(old))
+        let reloaded = LibraryStore(fileURL: url)
+        let list = try XCTUnwrap(reloaded.curations.first { $0.id == "kaiyuan" })
+        let original = try XCTUnwrap(reloaded.legacySite(for: list))
+        XCTAssertFalse(reloaded.monuments.contains(original))
+        XCTAssertEqual(reloaded.record(for: original), old.records["kaiyuan"])
+        XCTAssertEqual(reloaded.review(for: original), old.reviews["kaiyuan"])
+        XCTAssertEqual(reloaded.progress(of: list).visited, 0)
+        XCTAssertTrue(reloaded.members(of: list).allSatisfy { reloaded.data.records[$0.id] == nil })
+        let exported = try JSONDecoder().decode(LibraryData.self, from: reloaded.backup().data)
+        XCTAssertEqual(exported.records, old.records)
+        XCTAssertEqual(exported.reviews, old.reviews)
+    }
+
     @MainActor func testCurationsShipWithResolvedMembersAndStayReadOnly() throws {
         let url = temporaryFile()
         let store = LibraryStore(fileURL: url)
@@ -15,6 +101,9 @@ final class CurationTests: XCTestCase {
         for list in store.curations {
             let members = store.members(of: list)
             XCTAssertEqual(members.map(\.id), list.items, "Every shipped member must resolve, in editorial order")
+            if list.kind == "route" {
+                XCTAssertEqual(members.map(\.year), members.map(\.year).sorted(), "Route members stay chronological after a split")
+            }
             XCTAssertFalse(list.kindName.isEmpty); XCTAssertFalse(list.lede.isEmpty)
             for site in members { XCTAssertTrue(store.curations(for: site).contains(list)) }
             let progress = store.progress(of: list)

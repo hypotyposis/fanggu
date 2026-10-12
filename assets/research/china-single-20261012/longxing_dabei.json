@@ -1,0 +1,43 @@
+{
+  "id": "longxing_dabei",
+  "parent": "longxing",
+  "name": "隆兴寺大悲阁",
+  "subject": "隆兴寺大悲阁",
+  "photo": "assets/references/longxing_dabei-photo.jpg",
+  "structure": "the complete central three-storey five-eave Dabei pavilion including its ATTACHED side wings exactly as in the photograph; one connected architectural assembly, not detached imaginary pavilions",
+  "materials": "grey tiled roofs, red-brown timber and railings, grey stone platform",
+  "dyn": "modern",
+  "year": 1999,
+  "era": "1997—1999年复建",
+  "yearLabel": "1999年复建",
+  "yearApprox": false,
+  "yearNote": "现存阁体按1997—1999年复建定位；1944年缩建与阁内971年铜观音另述。",
+  "facts": [
+    "现存大悲阁于1997—1999年复建，恢复楼阁及相连耳阁的形制。",
+    "阁内铜铸千手观音始铸于北宋开宝四年（971），佛像年代不等于现存阁体年代。",
+    "1944年抢修缩小过建筑规模；后世修缮与现存复建分别说明。"
+  ],
+  "phase": "blocked",
+  "generation_count": 0,
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 隆兴寺大悲阁. the complete central three-storey five-eave Dabei pavilion including its ATTACHED side wings exactly as in the photograph; one connected architectural assembly, not detached imaginary pavilions. Complete subject only, full base and apex; portrait pagodas, landscape halls.",
+  "sources": [
+    {
+      "id": "longxing_dabei",
+      "photo": "assets/references/longxing_dabei-photo.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ALongxing%20Temple%208.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/Longxing_Temple_8.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "author": "Zeus1234",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "historical_sources": [
+    {
+      "title": "燕赵文武随想",
+      "url": "https://www.bjwmb.gov.cn/zxfw/wmwx/wskt/t20191213_958939.htm",
+      "publisher": "首都文明网（转载北京晚报）",
+      "note": "明确现存大悲阁1997—1999年复建与1944年缩建。"
+    }
+  ],
+  "blocker": "三张可用Commons照片均仅中央立面近景，最高屋顶及相连耳阁未完整入镜，不能按约定完整主体生成。"
+}

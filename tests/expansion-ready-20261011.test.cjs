@@ -10,6 +10,8 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const json = file => JSON.parse(read(file));
 const hash = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
 const batch = json('assets/research/expansion-ready-20261011-batch.json');
+const laterBatches = ['japan-first-20261011', 'japan-second-20261012'].map(name => json(`assets/research/${name}-batch.json`));
+const laterResolved = { ids: laterBatches.flatMap(batch => batch.ids), jobs: laterBatches.flatMap(batch => batch.jobs) };
 const intakes = ['dongbei', 'hubei-hunan', 'xizang', 'japan-kokuho'].map(group => json(`assets/research/content-rewrites/20261005/expansion-intake/${group}-20261005-intake.json`));
 const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({SITES,PLACES})');
 const catalog = require('../catalog.js');
@@ -20,10 +22,13 @@ const manifest = json('assets/color-research/avif-manifest.json');
 test('ready expansion covers all eligible candidates and excludes unresolved subjects', () => {
   assert.deepEqual([...batch.ids].sort(), intakes.flatMap(item => item.ready).sort());
   assert.equal(batch.ids.length, 41);
-  assert.equal(SITES.length, batch.beforeCount + batch.ids.length);
+  assert.equal(SITES.length, batch.beforeCount + batch.ids.length + laterResolved.ids.length + json('assets/research/china-single-20261012-batch.json').ids.length);
   assert.equal(new Set(SITES.map(site => site.id)).size, SITES.length);
   for (const candidate of intakes.flatMap(item => item.blocked)) {
-    assert(!SITES.some(site => site.id === candidate.id), candidate.id);
+    if (laterResolved.ids.includes(candidate.id)) {
+      const resolved = laterResolved.jobs.find(job => job.id === candidate.id);
+      assert(resolved?.historical_sources.length && resolved.calls.length === 2, candidate.id);
+    } else assert(!SITES.some(site => site.id === candidate.id), candidate.id);
   }
   for (const id of ['hb_ezhou_guanyin', 'hb_wanshou_pagoda', 'hu_yueyang_cishi']) assert(!SITES.some(site => site.id === id));
   for (const id of batch.ids) {

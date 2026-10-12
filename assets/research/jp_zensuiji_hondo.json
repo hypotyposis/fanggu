@@ -1,0 +1,145 @@
+{
+  "id": "jp_zensuiji_hondo",
+  "name": "善水寺本堂",
+  "subject": "善水寺现存本堂单体",
+  "source_page": "https://ja.biwako-visitors.jp/spot/detail/127",
+  "image_url": "https://ja.biwako-visitors.jp/uploads/images/spots/cdb9eb2858f69fb246f6fb2d7b274451.jpg",
+  "author": "官方寺院或滋贺县观光资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp-zensuiji-tour0.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp-zensuiji-tour0.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Zensuiji main hall, Konan, Shiga, surviving fourteenth-century hall\nSTRUCTURAL CHECKPOINTS: Seven-bay front and five-bay depth, ONE hip-and-gable cypress-bark roof; Broad palace-like timber hall and raised veranda without a large central entrance-gable addition; Retain dark wood facade and pale plaster at roof gables; remove trees, pond, railings and signs\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "滋贺县文保目录：善水寺本堂室町前期",
+      "url": "https://www.pref.shiga.lg.jp/file/attachment/5491007.pdf"
+    },
+    {
+      "title": "善水寺官方历史：南北朝时代再建",
+      "url": "https://zensuiji.jp/"
+    },
+    {
+      "title": "文化财数据库：善水寺本堂",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/194120"
+    }
+  ],
+  "structure_checkpoints": [
+    "Seven-bay front and five-bay depth, ONE hip-and-gable cypress-bark roof",
+    "Broad palace-like timber hall and raised veranda without a large central entrance-gable addition",
+    "Retain dark wood facade and pale plaster at roof gables; remove trees, pond, railings and signs"
+  ],
+  "material_observations": "Muted warm brown cypress-bark roof, aged dark brown timber, restrained off-white plaster and pale stone footing.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "善水寺现存本堂单体",
+    "传1366年再建"
+  ],
+  "generated_file": "assets/generated/jp_zensuiji_hondo.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:19.590492+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.pref.shiga.lg.jp/file/attachment/5491007.pdf",
+      "https://zensuiji.jp/",
+      "https://online.bunka.go.jp/db/heritages/detail/194120"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:59:39.493347+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "3ebc76e66b9f40b0e3dec0cc0e8e40bfd81dc9c0332f08598945d2e308eabb5b",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-3b4eb16b-dcfa-42e9-9d8c-f8606c1ef3eb.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:54:15.332002+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Zensuiji main hall, Konan, Shiga, surviving fourteenth-century hall\nSTRUCTURAL CHECKPOINTS: Seven-bay front and five-bay depth, ONE hip-and-gable cypress-bark roof; Broad palace-like timber hall and raised veranda without a large central entrance-gable addition; Retain dark wood facade and pale plaster at roof gables; remove trees, pond, railings and signs\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp-zensuiji-tour0.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:59:39.493640+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-3b4eb16b-dcfa-42e9-9d8c-f8606c1ef3eb.png",
+      "retained_file": "assets/generated/jp_zensuiji_hondo.png",
+      "sourceSha256": "3ebc76e66b9f40b0e3dec0cc0e8e40bfd81dc9c0332f08598945d2e308eabb5b"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp-zensuiji-tour0.jpg",
+      "source_page": "https://ja.biwako-visitors.jp/spot/detail/127",
+      "image_url": "https://ja.biwako-visitors.jp/uploads/images/spots/cdb9eb2858f69fb246f6fb2d7b274451.jpg",
+      "author": "官方寺院或滋贺县观光资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "善水寺现存本堂单体"
+    },
+    {
+      "title": "滋贺县文保目录：善水寺本堂室町前期",
+      "url": "https://www.pref.shiga.lg.jp/file/attachment/5491007.pdf"
+    },
+    {
+      "title": "善水寺官方历史：南北朝时代再建",
+      "url": "https://zensuiji.jp/"
+    },
+    {
+      "title": "文化财数据库：善水寺本堂",
+      "url": "https://online.bunka.go.jp/db/heritages/detail/194120"
+    }
+  ],
+  "site_recommendation": {
+    "name": "善水寺本堂",
+    "year": 1366,
+    "yearApprox": true,
+    "yearLabel": "传1366年再建",
+    "yearNote": "文化财资料将本堂定为南北朝建筑，传1366年再建且与样式相合；保留传承限定，不将落成年写成完全确证。",
+    "dyn": "jp_muromachi",
+    "country": "JP",
+    "placeKey": "jp_konan"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "3ebc76e66b9f40b0e3dec0cc0e8e40bfd81dc9c0332f08598945d2e308eabb5b",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "bb85661869c863f5b5c51bfaf4a72aee85a1388af2c34b91244516a5e88e05e0"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "jp_seihakuji_butsuden",
+  "name": "清白寺佛殿",
+  "subject": "清白寺1415年佛殿单体",
+  "source_page": "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html",
+  "image_url": "https://www.city.yamanashi.yamanashi.jp/uploaded/image/3574.JPG",
+  "author": "官方文化财资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_seihakuji_butsuden-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_seihakuji_butsuden-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Seihakuji Buddha hall, Yamanashi, 1415, compact Zen-style single story with a surrounding mokoshi\nSTRUCTURAL CHECKPOINTS: Three-by-three-bay core, ONE story with surrounding lower skirt roof; Exactly two visible roof levels: hip-and-gable main roof and skirt roof; Fine close-set Zen brackets, curving eaves, small raised veranda; no cherry blossom or lanterns\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "官方现存建筑与年代资料",
+      "url": "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "Three-by-three-bay core, ONE story with surrounding lower skirt roof",
+    "Exactly two visible roof levels: hip-and-gable main roof and skirt roof",
+    "Fine close-set Zen brackets, curving eaves, small raised veranda; no cherry blossom or lanterns"
+  ],
+  "material_observations": "Dark weathered brown wood; warm dark brown cypress-bark roof; subtle pale wall infill.",
+  "production_batch": "japan-second-20261012",
+  "caption": [
+    "清白寺1415年佛殿单体",
+    "1415年"
+  ],
+  "generated_file": "assets/generated/jp_seihakuji_butsuden.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-12T01:06:18.958028+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html"
+    ],
+    "checkedAt": "2026-10-12"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-12T00:40:13.974884+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "e93ee0850d3e55ceb68363704160f2f78294144c2cc48888212f24c14e96ea9d",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-9be63ad5-588b-437c-89d1-00c8fc3393b3.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:37:26.226317+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Seihakuji Buddha hall, Yamanashi, 1415, compact Zen-style single story with a surrounding mokoshi\nSTRUCTURAL CHECKPOINTS: Three-by-three-bay core, ONE story with surrounding lower skirt roof; Exactly two visible roof levels: hip-and-gable main roof and skirt roof; Fine close-set Zen brackets, curving eaves, small raised veranda; no cherry blossom or lanterns\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_seihakuji_butsuden-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:40:13.975154+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-9be63ad5-588b-437c-89d1-00c8fc3393b3.png",
+      "retained_file": "assets/generated/jp_seihakuji_butsuden.png",
+      "sourceSha256": "e93ee0850d3e55ceb68363704160f2f78294144c2cc48888212f24c14e96ea9d"
+    }
+  ],
+  "visual_review_status": "approved_default",
+  "sources": [
+    {
+      "file": "assets/references/jp_seihakuji_butsuden-photo.jpg",
+      "source_page": "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html",
+      "image_url": "https://www.city.yamanashi.yamanashi.jp/uploaded/image/3574.JPG",
+      "author": "官方文化财资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "清白寺1415年佛殿单体"
+    },
+    {
+      "title": "官方现存建筑与年代资料",
+      "url": "https://www.city.yamanashi.yamanashi.jp/site/cultural-assets/7835.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "清白寺佛殿",
+    "year": 1415,
+    "yearApprox": false,
+    "yearLabel": "1415年",
+    "yearNote": "现存佛殿以1415年墨书为年代依据；寺院相传1333年创立，不混同为佛殿营建年。",
+    "dyn": "jp_muromachi",
+    "country": "JP",
+    "placeKey": "jp_yamanashi_city"
+  },
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T17:08:14.676Z",
+    "sourceSha256": "e93ee0850d3e55ceb68363704160f2f78294144c2cc48888212f24c14e96ea9d",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "002d9c51c22b6267a00ad113686f2ba2b1a12d57a2d1ae80af731c7d67f2292a"
+  },
+  "delivery_inspection": {
+    "backgrounds": [
+      "dark",
+      "light"
+    ],
+    "line_png_viewed": true,
+    "color_avif_viewed": true,
+    "method": "逐图查看真实透明交付图；本地审图页核对PNG/AVIF浏览器解码与分页；默认策略不代表用户验收。"
+  }
+}

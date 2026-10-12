@@ -1,0 +1,137 @@
+{
+  "id": "jp_kibitsu_honden",
+  "name": "吉备津神社本殿及拜殿",
+  "subject": "吉备津神社 · 本殿及拜殿",
+  "source_page": "https://www.kibitujinja.com/about/honden.php",
+  "image_url": "https://www.kibitujinja.com/about/images/about_honden_img01.png",
+  "author": "吉备津神社官方资料（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kibitsu_honden-actual-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_kibitsu_honden-actual-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kibitsu Shrine Honden AND attached Haiden, both rebuilt in 1425. Use the supplied side/front oblique view to keep both connected buildings visible.\nSTRUCTURAL CHECKPOINTS: Keep BOTH connected historic structures: large left honden with characteristic TWO adjacent hip-and-gable gables, and smaller projecting right haiden.; Honden has twin hiyoku irimoya bark roofs; haiden has steep bark gabled main roof and low surrounding tiled mokoshi eave. Their roof types must stay different.; Photographed aged reddish-brown timber, white gable infill, verandas, haiden columns and front stairs. Remove modern fences, lamps and signs; preserve oblique composition, NOT a symmetrical invented frontage.\nOrientation: landscape 1536×1024.",
+  "historical_sources": [
+    {
+      "title": "吉备津神社 · 吉备津神社 · 本殿及拜殿",
+      "url": "https://www.kibitujinja.com/about/honden.php"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://kibitujinja.com/faq/"
+    }
+  ],
+  "structure_checkpoints": [
+    "Keep BOTH connected historic structures: large left honden with characteristic TWO adjacent hip-and-gable gables, and smaller projecting right haiden.",
+    "Honden has twin hiyoku irimoya bark roofs; haiden has steep bark gabled main roof and low surrounding tiled mokoshi eave. Their roof types must stay different.",
+    "Photographed aged reddish-brown timber, white gable infill, verandas, haiden columns and front stairs. Remove modern fences, lamps and signs; preserve oblique composition, NOT a symmetrical invented frontage."
+  ],
+  "material_observations": "本殿与拜殿旧木为红褐至深褐，桧皮屋面深褐，拜殿裳阶灰瓦，破风白壁局部残朱，石基灰色。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "吉备津神社 · 本殿及拜殿",
+    "室町应永三十二年（1425）"
+  ],
+  "generated_file": "assets/generated/jp_kibitsu_honden.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.653721+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.kibitujinja.com/about/honden.php",
+      "https://kibitujinja.com/faq/"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "width": 1536,
+  "height": 1024,
+  "received_at": "2026-10-11T23:18:34.893591+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "cb9c9957a26f9ee1ad8c787823ae824c26ced2dc09336bea2c3cccddd7f8f115",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-51d8a663-60ee-4473-97f2-1dd6ba1646bb.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:16:43.984846+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Kibitsu Shrine Honden AND attached Haiden, both rebuilt in 1425. Use the supplied side/front oblique view to keep both connected buildings visible.\nSTRUCTURAL CHECKPOINTS: Keep BOTH connected historic structures: large left honden with characteristic TWO adjacent hip-and-gable gables, and smaller projecting right haiden.; Honden has twin hiyoku irimoya bark roofs; haiden has steep bark gabled main roof and low surrounding tiled mokoshi eave. Their roof types must stay different.; Photographed aged reddish-brown timber, white gable infill, verandas, haiden columns and front stairs. Remove modern fences, lamps and signs; preserve oblique composition, NOT a symmetrical invented frontage.\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_kibitsu_honden-actual-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:18:34.893828+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-51d8a663-60ee-4473-97f2-1dd6ba1646bb.png",
+      "retained_file": "assets/generated/jp_kibitsu_honden.png",
+      "sourceSha256": "cb9c9957a26f9ee1ad8c787823ae824c26ced2dc09336bea2c3cccddd7f8f115"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_kibitsu_honden-actual-photo.jpg",
+      "source_page": "https://www.kibitujinja.com/about/honden.php",
+      "image_url": "https://www.kibitujinja.com/about/images/about_honden_img01.png",
+      "author": "吉备津神社官方资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "吉备津神社 · 本殿及拜殿"
+    },
+    {
+      "title": "吉备津神社 · 吉备津神社 · 本殿及拜殿",
+      "url": "https://www.kibitujinja.com/about/honden.php"
+    },
+    {
+      "title": "主体断代与沿革依据",
+      "url": "https://kibitujinja.com/faq/"
+    }
+  ],
+  "site_recommendation": {
+    "name": "吉备津神社本殿及拜殿",
+    "year": 1425,
+    "yearApprox": false,
+    "yearLabel": "1425年",
+    "yearNote": "现存本殿及拜殿于应永三十二年（1425）再建；早期祭祀传说不作为现存木构年代。",
+    "dyn": "jp_muromachi",
+    "country": "JP",
+    "placeKey": "jp_okayama"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "cb9c9957a26f9ee1ad8c787823ae824c26ced2dc09336bea2c3cccddd7f8f115",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "401b2b815e988319b1929805f0cb8e53cab875562f8f5b03a1624a60b40ebaa2"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}

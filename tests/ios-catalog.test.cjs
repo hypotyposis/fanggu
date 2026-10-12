@@ -20,6 +20,7 @@ test('iOS catalog stays aligned with site IDs, artwork and original status', () 
   for (const [index, site] of source.sites.entries()) {
     const native = exported[index];
     assert.equal(native.id, site.id);
+    assert.equal(native.collectionOnly, !!site.collectionOnly);
     assert.equal(native.name, site.name);
     assert.equal(native.initialStatus, site.initialStatus || 'unvisited');
     assert.equal(native.lineImage, path.basename(site.image.src));

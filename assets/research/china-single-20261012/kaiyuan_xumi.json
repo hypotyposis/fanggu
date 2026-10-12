@@ -1,0 +1,38 @@
+{
+  "id": "kaiyuan_xumi",
+  "parent": "kaiyuan",
+  "name": "正定开元寺须弥塔",
+  "subject": "正定开元寺须弥塔",
+  "photo": "assets/references/kaiyuan-tower-photo.jpg",
+  "structure": "nine-tier SQUARE dense-eaves brick pagoda, keep the tall first storey and full finial, remove the unrelated red gatehouse in front",
+  "materials": "grey-brown brick, dark grey projecting brick eaves",
+  "dyn": "tang",
+  "year": 636,
+  "era": "贞观十年始建",
+  "yearLabel": "636年始建",
+  "yearApprox": false,
+  "yearNote": "须弥塔始建纪年；后世修葺不等于所有构件均属636年。",
+  "facts": [
+    "方形九级密檐砖塔，高约42.5米。",
+    "位于开元寺法船殿遗址前西侧，与东侧钟楼相对。",
+    "始建纪年与现存修缮层次分别理解。"
+  ],
+  "phase": "delivery_ready",
+  "generation_count": 2,
+  "prompt": "Use case: style-transfer. Asset type: ONE fine-line architectural atlas illustration for 访古. Image 1 is STYLE ONLY: match its refined sparse delicate black contours and generous blank space. Image 2 is SUBJECT GEOMETRY ONLY. Draw the actual named building from it, preserving silhouette, visible bays, eaves, tiers, openings, roof type and proportions. Create sparse BLACK ink contours on flat opaque PURE WHITE #FFFFFF. Interior surfaces stay pure white too. No shading, grey fill, hatching, texture, colour, cast shadows, gradients, halo, checkerboard, text, labels, watermark or borders. Remove people, foliage, modern equipment, signage and neighbouring buildings. Complete whole building and base with 10% margins, verticals vertical, minimal perspective. Subject: 正定开元寺须弥塔. nine-tier SQUARE dense-eaves brick pagoda, keep the tall first storey and full finial, remove the unrelated red gatehouse in front. One building only. Use a portrait canvas for pagodas and landscape for halls. Entire apex, eaves and base must be uncut.",
+  "line": "assets/generated/kaiyuan_xumi.png",
+  "color_prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\nSUBJECT: 正定开元寺须弥塔.\nPhotograph material observations: grey-brown brick, dark grey projecting brick eaves. Single building only, preserve the input line composition.",
+  "line_received_at": "2026-10-12T08:11:15.950451+00:00",
+  "line_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-40bd8a6e-736d-47c5-b926-653e800c8132.png",
+  "color": "assets/colored/kaiyuan_xumi.png",
+  "color_dimensions": [
+    1024,
+    1536
+  ],
+  "line_dimensions": [
+    1024,
+    1536
+  ],
+  "color_received_at": "2026-10-12T08:13:39.247834+00:00",
+  "color_original": "/Users/fuxiangyu/.codex/generated_images/01a12f22-9661-7241-a5e0-4eb9c30aa11d/exec-3d134143-9128-4924-8e3c-8c96e496449a.png"
+}

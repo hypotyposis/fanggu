@@ -1,0 +1,83 @@
+{
+  "id": "jp_hogonji_karamon",
+  "name": "宝严寺唐门",
+  "province": "滋贺县",
+  "city": "长滨",
+  "kind": "gate",
+  "stage": "delivery_ready",
+  "calls": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:49:38.480122+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Hogonji Karamon gateway, Chikubushima, Nagahama, moved and erected here in 1603: foreground small ornate gate ONLY\nSTRUCTURAL CHECKPOINTS: One-bay one-door mukai-karamon with a curved karahafu roof gable facing front; Cypress-bark curved roof, black lacquer framing, detailed carved floral door panels and metal fittings; Isolate the SMALL FOREGROUND GATE ONLY, exclude larger Kannon hall attached behind it, stairs and lake\nOrientation: landscape 1536×1024.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_hogonji_karamon-photo-final.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:50:24.858960+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-40052895-7515-4a89-b576-cab877a73f04.png",
+      "retained_file": "assets/generated/jp_hogonji_karamon.png",
+      "sourceSha256": "78a8523abca2b6ed24010e02ee588a446a79c60fc37eccd7a4c8353b511f1dfb"
+    },
+    {
+      "phase": "color",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-12T00:52:10.734548+08:00",
+      "prompt": "Use case: precise-object-edit / architectural atlas plate coloring.\nMake ONE standalone colored companion plate for the existing Chinese/Japanese heritage atlas drawing.\n\nINPUT ROLES: Image 1 is the LINE DRAWING TO COLOR and is the exact composition/geometry master. It may have a transparent background; any white or dark backdrop in a legacy reference is not part of the subject. Following photo(s) show the actual monument or sculpture TODAY, and determine material colors only. The LAST image is a COLORED STYLE SAMPLE: borrow its refined thin contour drawing, matte mineral-pigment color areas, modest shading and subtle grain, NEVER its palette, architecture, background, or golden cast.\n\nLOCK THE DRAWING: preserve Image 1's silhouette, position, scale, canvas aspect ratio, all storeys/eaves/bays, openings, proportions, perspective, broken parts and selected details. Color the existing drawing; do not substitute another building from the photo, change viewpoints, zoom, reconstruct missing parts, or add a backdrop scene. All original margins remain. Preserve the exact set of depicted structures or figures.\n\nCOLOR THE PRESENT REAL OBJECT: use the photographed material colors and their actual distribution under ordinary daylight or neutral indoor light. Separate aged wood, paint remnants, masonry, stone, roof tiles, present glazed tiles and present sculpture pigments. Keep actual existing polychromy or gold only where the photographed object has it. No automatic dynasty color overlay, sepia filter, gold highlights, shiny model surface, invented historical restoration, or uniformly freshly painted finish. A restrained illustrated translation of the present object, not photorealism.\n\nSTYLE: elegant fine engraved contours with gently filled semi-flat color planes, matte mineral-gouache feel, small amounts of pigment grain, at most two or three soft shadow values. The linework stays legible. Thin dark material-related contour lines, not heavy cartoon outlines. Enough substance to reward a check-in, without extravagant saturation or illumination. No dense uniform fake damage, oil-paint texture, sky, trees, people, fixtures outside the source drawing, ground shadow, labels, watermark, calligraphy, UI, border, or before/after layout. Keep blank plaques blank and do not copy text from photos.\n\nBACKGROUND: use a perfectly flat, opaque PURE WHITE (#FFFFFF) background. The entire exterior canvas and real open-air gaps between chains, ornaments or structures are pure white. Preserve the actual material colors of the subject, including pale stone and dark door recesses; define the silhouette with clear thin contours. No paper texture, grey backdrop, gradient, checkerboard, halo, vignette, glow or ground shadow. Ignore reference backgrounds. Retain the original canvas and complete composition. A local script will remove the white background after generation.\n\n\nSUBJECT: 宝严寺1603年移建唐门单体\nMATERIAL OBSERVATIONS: Black lacquer framework, dark brown cypress-bark roof, restrained gold fittings and red/green/blue painted carved panels, stone sill.\nKeep the supplied line drawing as the exact geometry master. landscape 1536×1024.",
+      "input_images": [
+        "assets/generated/jp_hogonji_karamon.png",
+        "assets/references/jp_hogonji_karamon-photo-final.jpg",
+        "assets/color-studies/v1/foguang-colored.png"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-12T00:53:42.893665+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-115194c5-db8c-4e15-8bd1-2f7b562c0103.png",
+      "retained_file": "assets/colored/jp_hogonji_karamon.png",
+      "sourceSha256": "102a582f373aff9fc91ebe72ca57163748b48978d9b88e333edbb34dd747e7cf"
+    }
+  ],
+  "subject": "宝严寺1603年移建唐门单体",
+  "english_subject": "Hogonji Karamon gateway, Chikubushima, Nagahama, moved and erected here in 1603: foreground small ornate gate ONLY",
+  "dyn": "jp_momoyama",
+  "photo": {
+    "file": "assets/references/jp_hogonji_karamon-photo-final.jpg",
+    "source_page": "https://www.chikubushima.jp/precincts/precincts1.html",
+    "image_url": "https://www.chikubushima.jp/precincts/images/karamon.jpg",
+    "author": "官方文化财或寺院资料（摄影者未署名）",
+    "license": "未注明开放许可；仅作研究参考，不分发原照"
+  },
+  "historical_sources": [
+    {
+      "title": "官方现存主体断代及形制资料",
+      "url": "https://chikubushima.jp/construction/"
+    },
+    {
+      "title": "官方主体图照",
+      "url": "https://www.chikubushima.jp/precincts/precincts1.html"
+    }
+  ],
+  "checkpoints": [
+    "One-bay one-door mukai-karamon with a curved karahafu roof gable facing front",
+    "Cypress-bark curved roof, black lacquer framing, detailed carved floral door panels and metal fittings",
+    "Isolate the SMALL FOREGROUND GATE ONLY, exclude larger Kannon hall attached behind it, stairs and lake"
+  ],
+  "materials": "Black lacquer framework, dark brown cypress-bark roof, restrained gold fittings and red/green/blue painted carved panels, stone sill.",
+  "caption": [
+    "唐门棟札记1603年于岛内营建，既有建筑移建沿革另作说明。",
+    "绘一间一户的向唐门，包含黑漆、饰金与彩色雕刻，不含后接观音堂。"
+  ],
+  "tall": false,
+  "references": [
+    {
+      "file": "assets/references/jp_hogonji_karamon-photo-final.jpg",
+      "source_page": "https://www.chikubushima.jp/precincts/precincts1.html",
+      "image_url": "https://www.chikubushima.jp/precincts/images/karamon.jpg",
+      "author": "官方文化财或寺院资料（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照"
+    }
+  ]
+}

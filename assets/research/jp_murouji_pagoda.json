@@ -1,0 +1,128 @@
+{
+  "id": "jp_murouji_pagoda",
+  "name": "室生寺五重塔",
+  "subject": "室生寺五重塔本体",
+  "source_page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+  "image_url": "https://www.city.uda.lg.jp/uploaded/image/1102.jpg",
+  "author": "宇陀市官方网站（摄影者未署名）",
+  "license": "未注明开放许可；仅作研究参考，不分发原照",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_murouji_pagoda-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/jp_murouji_pagoda-photo.jpg"
+  ],
+  "source_note": "本轮实际查看官方主体实拍；仅用于形制与材料研究，不将参考摄影作为交付图。摄影署名与开放许可按来源实际说明记录。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Muroji five-storey pagoda, 16.22 metres high, front elevation of the complete small pagoda.\nSTRUCTURAL CHECKPOINTS: Exactly FIVE diminishing roof levels, square three-bay lower storey, red columns and white infill.; Fine kokera wood-shingle roof layers, upper finial with nine rings and distinctive canopy and vase ornament; do not replace it with a standard flame-shaped pagoda finial.; Include the small platform and only short base lines, remove forest and the long foreground stone stairway.\nOrientation: portrait 1024×1536.",
+  "historical_sources": [
+    {
+      "title": "宇陀市官方网站 · 室生寺五重塔",
+      "url": "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    }
+  ],
+  "structure_checkpoints": [
+    "Exactly FIVE diminishing roof levels, square three-bay lower storey, red columns and white infill.",
+    "Fine kokera wood-shingle roof layers, upper finial with nine rings and distinctive canopy and vase ornament; do not replace it with a standard flame-shaped pagoda finial.",
+    "Include the small platform and only short base lines, remove forest and the long foreground stone stairway."
+  ],
+  "material_observations": "朱红木构、白粉壁与灰褐柿葺屋面，淡色金属相轮，不涂成灰瓦。",
+  "production_batch": "japan-first-20261011",
+  "caption": [
+    "室生寺五重塔",
+    "平安前期，约800年"
+  ],
+  "generated_file": "assets/generated/jp_murouji_pagoda.png",
+  "generation_tool": "built-in image_gen",
+  "status": "complete",
+  "review": {
+    "inputs_viewed": true,
+    "output_viewed": true,
+    "policy": "prototype",
+    "limitations": "已查看实际输入与生成结果。按原型默认通过策略交付；艺术示意，不作实测或修缮依据，不作AI质量淘汰决定。",
+    "checked_at": "2026-10-11T23:44:35.250607+08:00"
+  },
+  "protection": {
+    "status": "not_applicable",
+    "reason": "日本文化财身份不映射中国全国重点文物保护单位。",
+    "evidence": [
+      "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    ],
+    "checkedAt": "2026-10-11"
+  },
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "width": 1024,
+  "height": 1536,
+  "received_at": "2026-10-11T23:13:25.876985+08:00",
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "038a3ee2defd93b0fe5b2e7e2efb797aff1be632139c1c29049ef6eb4d084838",
+    "seeds": []
+  },
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e253c6b2-704f-4622-b0db-e346d756caf2.png",
+  "generation_history": [
+    {
+      "phase": "line",
+      "attempt": 1,
+      "status": "received",
+      "started_at": "2026-10-11T23:08:19.600608+08:00",
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is the STYLE MASTER, an existing Vairocana Buddha contour drawing. Match its elegant, delicate, slightly organic thin lines, restrained detail, generous blank areas, and consistent visual density. Image 2 (and subsequent photos if applicable) is SUBJECT GEOMETRY ONLY: draw the actual named monument in that reference, preserving its identifying silhouette, roof type, visible storey count, bay count, openings, and proportions.\nCreate a refined, sparse BLACK INK line drawing on a perfectly flat opaque PURE WHITE (#FFFFFF) background. Use confident fine contours and a few finer internal structural lines. All unmarked surfaces inside and outside the drawing remain pure white; use outlines for doors and windows rather than dark fills. No solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, gold, halo, cast shadow or checkerboard. The white canvas will be removed later by a script; draw only the ink strokes and keep all other regions uniformly white.\nShow the complete monument, centered, approximately straight-on at facade level, with verticals vertical and minimal perspective. Use only a few short ground lines. Remove tourists, foliage, vehicles, wires, modern signage, fences obstructing the structure, neighboring distractions and sky. Preserve architectural ornament selectively, without filling every roof tile or brick. No invented features. No labels, letters, calligraphy, dimension lines, captions, watermark, frame or border.\nWide compositions: landscape 1536×1024, entire building occupies about 82% of canvas width, roof/apex and base uncut, balanced breathing room. Tall pagodas: portrait 1024×1536, entire pagoda occupies about 82% of height, centred with equal side margins, apex and base uncut.\n\nSUBJECT: Muroji five-storey pagoda, 16.22 metres high, front elevation of the complete small pagoda.\nSTRUCTURAL CHECKPOINTS: Exactly FIVE diminishing roof levels, square three-bay lower storey, red columns and white infill.; Fine kokera wood-shingle roof layers, upper finial with nine rings and distinctive canopy and vase ornament; do not replace it with a standard flame-shaped pagoda finial.; Include the small platform and only short base lines, remove forest and the long foreground stone stairway.\nOrientation: portrait 1024×1536.",
+      "input_images": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/jp_murouji_pagoda-photo.jpg"
+      ],
+      "tool": "built-in image_gen",
+      "received_at": "2026-10-11T23:13:25.877223+08:00",
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a12b74-93d1-79f0-b817-6482a5278a6b/exec-e253c6b2-704f-4622-b0db-e346d756caf2.png",
+      "retained_file": "assets/generated/jp_murouji_pagoda.png",
+      "sourceSha256": "038a3ee2defd93b0fe5b2e7e2efb797aff1be632139c1c29049ef6eb4d084838"
+    }
+  ],
+  "sources": [
+    {
+      "file": "assets/references/jp_murouji_pagoda-photo.jpg",
+      "source_page": "https://www.city.uda.lg.jp/soshiki/41/1075.html",
+      "image_url": "https://www.city.uda.lg.jp/uploaded/image/1102.jpg",
+      "author": "宇陀市官方网站（摄影者未署名）",
+      "license": "未注明开放许可；仅作研究参考，不分发原照",
+      "title": "室生寺五重塔本体"
+    },
+    {
+      "title": "宇陀市官方网站 · 室生寺五重塔",
+      "url": "https://www.city.uda.lg.jp/soshiki/41/1075.html"
+    }
+  ],
+  "site_recommendation": {
+    "name": "室生寺五重塔",
+    "year": 800,
+    "yearApprox": true,
+    "yearLabel": "平安初期",
+    "yearNote": "文化财资料归平安初期，具体建造年未详；800为年表约值。1998年台风损伤后修理，按现存形态描绘。",
+    "dyn": "jp_heian",
+    "country": "JP",
+    "placeKey": "jp_uda"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-11T15:55:47.320Z",
+    "sourceSha256": "038a3ee2defd93b0fe5b2e7e2efb797aff1be632139c1c29049ef6eb4d084838",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "318a2c66aeec8ed0ad6e766b1b1498b19dffe20f3e89c3c852fd844694b16454"
+  },
+  "delivery_checks": {
+    "checked_at": "2026-10-12T00:21:04.951914+08:00",
+    "original_viewed": true,
+    "transparent_color_viewed_on": [
+      "light",
+      "dark"
+    ],
+    "browser_images_loaded": true,
+    "policy": "prototype; 默认通过，不表示用户审阅"
+  }
+}
