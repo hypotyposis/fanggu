@@ -420,6 +420,49 @@ final class FangguUITests: XCTestCase {
         capture(app, "detail")
     }
 
+    func testCatalogReturnsToTopInListAndCards() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest()
+        let heading = app.staticTexts["古迹图鉴"]
+        let search = app.textFields["搜索古迹、地点或时代"]
+        let backToTop = app.buttons["catalog-back-to-top"]
+        XCTAssertTrue(heading.waitForExistence(timeout: 10))
+        let originalTop = heading.frame.minY
+        let count = app.staticTexts["catalog-result-count"].label
+
+        for mode in ["列表", "大图"] {
+            if mode == "大图" { app.buttons[mode].tap() }
+            XCTAssertFalse(backToTop.exists, "The first screen has no floating button")
+            for _ in 0..<8 where !backToTop.exists { app.dragPage() }
+            XCTAssertTrue(backToTop.isHittable, "Return is available after scrolling in \(mode)")
+            // Move well beyond the threshold so this exercises jumping across lazy rows.
+            for _ in 0..<4 { app.dragPage() }
+            capture(app, "catalog-back-to-top-\(mode)")
+            backToTop.tap()
+            XCTAssertTrue(backToTop.waitForNonExistence(timeout: 5))
+            XCTAssertTrue(heading.isHittable)
+            XCTAssertTrue(search.isHittable)
+            XCTAssertEqual(heading.frame.minY, originalTop, accuracy: 2)
+            XCTAssertEqual(app.staticTexts["catalog-result-count"].label, count)
+            XCTAssertTrue(app.buttons[mode == "大图" ? "列表" : "大图"].isHittable,
+                          "Returning keeps the selected display mode")
+        }
+
+        app.buttons["列表"].tap()
+        let status = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "未标记")).firstMatch
+        status.tap()
+        search.tap(); search.typeText("寺")
+        let filteredCount = app.staticTexts["catalog-result-count"].label
+        for _ in 0..<8 where !backToTop.exists { app.dragPage() }
+        XCTAssertTrue(backToTop.isHittable)
+        backToTop.tap()
+        XCTAssertTrue(backToTop.waitForNonExistence(timeout: 5))
+        XCTAssertEqual(search.value as? String, "寺", "Returning preserves the search")
+        XCTAssertTrue(status.isSelected, "Returning preserves filters")
+        XCTAssertEqual(app.staticTexts["catalog-result-count"].label, filteredCount)
+        capture(app, "catalog-back-to-top-filtered")
+    }
+
     func testLargeCardShowsArrivalSlider() {
         let app = XCUIApplication.isolated()
         app.launchForTest()
