@@ -30527,6 +30527,57 @@
         "avifSha256": "f9bfeba4501a3b74ef982a7b71f077fedea70680b933dbc5c9f573d5c27d019d"
       }
     },
+    "xitai_chongxing": {
+      "source": "assets/colored/xitai_chongxing.png",
+      "sourceSha256": "e53a5daeb05ae9d71451e18797d7ba61759c3a30d940af8438658b869eb0f6a9",
+      "sourceBytes": 2979281,
+      "input": "assets/colored-transparent/xitai_chongxing.png",
+      "inputSha256": "19078313f211e7a1fa5bd289f8f6436b54c02dadfb0b11e3b7e94fb8be929186",
+      "inputBytes": 2957021,
+      "src": "assets/colored-transparent-avif/xitai_chongxing.avif",
+      "sha256": "d8bf1a1388e853b493d0819cba208150138444e87591635af830d6283dbd049c",
+      "bytes": 435328,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "min": 0,
+        "max": 255,
+        "transparentPixels": 257153,
+        "opaquePixels": 1304684,
+        "meanError": 0.008546829223632812,
+        "maxError": 12
+      },
+      "extraction": {
+        "method": "white-matte-prototype-v1",
+        "matteRgb": [
+          255,
+          255,
+          255
+        ],
+        "interiorRgbUnchanged": true,
+        "backgroundSeeds": [],
+        "skippedSeeds": []
+      },
+      "visualReview": "approved_default",
+      "processingSeconds": 2.658,
+      "backgroundPreparation": {
+        "method": "white-matte-v1",
+        "sourceSha256": "e53a5daeb05ae9d71451e18797d7ba61759c3a30d940af8438658b869eb0f6a9",
+        "seeds": [],
+        "processorSha256": "5c9b01a80f929133aa70cf8e53342e711b7a49948e8cea379a04b95429103bb7",
+        "qualityMode": "prototype"
+      },
+      "qualityMode": "prototype",
+      "review": {
+        "status": "approved_default",
+        "reviewer": "default-policy",
+        "reviewed_at": "2026-10-12T13:10:22.715Z",
+        "sourceSha256": "e53a5daeb05ae9d71451e18797d7ba61759c3a30d940af8438658b869eb0f6a9",
+        "policy": "default-approve-2026-10-05",
+        "inputSha256": "19078313f211e7a1fa5bd289f8f6436b54c02dadfb0b11e3b7e94fb8be929186",
+        "avifSha256": "d8bf1a1388e853b493d0819cba208150138444e87591635af830d6283dbd049c"
+      }
+    },
     "longmenshiku": {
       "source": "assets/color-studies/v1/longmenshiku-colored.png",
       "sourceSha256": "af707eed6f1f01617fbdef96e1e1c8e235df9e0f3dc336f91e4a8070034490a7",

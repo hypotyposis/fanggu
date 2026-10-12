@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "assetSet": "460c51b0740852c98b9c",
+  "assetSet": "ad7c168245964812e19e",
   "files": [
     {
       "path": "assets/color-references/guanque-20241007-travel.jpg",
@@ -4737,6 +4737,12 @@
       "tier": "runtime"
     },
     {
+      "path": "assets/colored-transparent-avif/xitai_chongxing.avif",
+      "bytes": 435328,
+      "sha256": "d8bf1a1388e853b493d0819cba208150138444e87591635af830d6283dbd049c",
+      "tier": "runtime"
+    },
+    {
       "path": "assets/colored-transparent-avif/xiuding.avif",
       "bytes": 258247,
       "sha256": "0d5cc39f9b6305f2f50eefa10dbddc824112031b951eebc6aeea9f7a048880e0",
@@ -8382,6 +8388,12 @@
       "path": "assets/colored-transparent/xitai_chenghuang.png",
       "bytes": 2091750,
       "sha256": "15fac8b9d3f8699374cc7b01f0865eabc3704c03cf0be984ca2150263d02d1c8",
+      "tier": "source"
+    },
+    {
+      "path": "assets/colored-transparent/xitai_chongxing.png",
+      "bytes": 2957021,
+      "sha256": "19078313f211e7a1fa5bd289f8f6436b54c02dadfb0b11e3b7e94fb8be929186",
       "tier": "source"
     },
     {
@@ -12060,6 +12072,12 @@
       "path": "assets/colored/xitai_chenghuang.png",
       "bytes": 2145541,
       "sha256": "76bde98b2e4c785c8428150391e736a8956c0cf748291f41550c7260ed65df2b",
+      "tier": "source"
+    },
+    {
+      "path": "assets/colored/xitai_chongxing.png",
+      "bytes": 2979281,
+      "sha256": "e53a5daeb05ae9d71451e18797d7ba61759c3a30d940af8438658b869eb0f6a9",
       "tier": "source"
     },
     {
@@ -15963,6 +15981,12 @@
       "tier": "source"
     },
     {
+      "path": "assets/generated/xitai_chongxing.png",
+      "bytes": 2391668,
+      "sha256": "7cb18a30182a9e1437b259db4b27a51a8dabb8eafc33850d19176279588d75b3",
+      "tier": "source"
+    },
+    {
       "path": "assets/generated/xiuding.png",
       "bytes": 2010170,
       "sha256": "0cf23f19f4a5b978222e007b07fa0b567ab7fb3cbca472f59fba6a538007c29f",
@@ -19644,6 +19668,12 @@
       "path": "assets/plates/xitai_chenghuang.png",
       "bytes": 554446,
       "sha256": "330b6399e8c176c7ea436a06e7d588c2c1f4d49d0c95a55aa9f52e41d2439984",
+      "tier": "runtime"
+    },
+    {
+      "path": "assets/plates/xitai_chongxing.png",
+      "bytes": 816985,
+      "sha256": "8093a0ca71fc84d97c18cd1c930a6c842c0c6843a2d1c8344afcc965b835b9a2",
       "tier": "runtime"
     },
     {
@@ -24759,15 +24789,57 @@
       "tier": "source"
     },
     {
+      "path": "assets/references/longxing_dabei_2013a-photo.jpg",
+      "bytes": 10253230,
+      "sha256": "1d200b9ef803ed1a1b2e8be6affac635c73c5b6157cc1949b5ecbe1059062cce",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/longxing_dabei_2013b-photo.jpg",
+      "bytes": 8014818,
+      "sha256": "6cb2af3fee8d66e50f46b7b22de33967b2b71b09e7181c5471e4a85207cba0a4",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/longxing_dabei_2024-photo.jpg",
+      "bytes": 3225479,
+      "sha256": "10e622a770941f26665dad1f5937bd1c750318e457c5f7d85e265150db9b2a97",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/longxing_dabei_aerial-photo.jpg",
+      "bytes": 159719,
+      "sha256": "20fe3af92af664fb327e55ba06fc2116d60a1c65883c2f09ff317f768b71b185",
+      "tier": "source"
+    },
+    {
       "path": "assets/references/longxing_dabei_full-photo.jpg",
-      "bytes": 8539576,
-      "sha256": "a683fe786caf9921866802b3a63515eda591187f3f78d56530e92ceca58aac4e",
+      "bytes": 3569364,
+      "sha256": "720a14b07d9b8a52fbe1c00cdf2bc828550120ed009082776c91b21e1af759a9",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/longxing_dabei_panorama-photo.jpg",
+      "bytes": 164184,
+      "sha256": "9bbade2572e5694cc8acc4d2502ce202eb599082f3316f6afd5d77fee4df1634",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/longxing_dabei_reopen4-photo.jpg",
+      "bytes": 1909643,
+      "sha256": "bec83b16dc338ce2d0f3acf43cd3eab3c869145c6c342ae1292ced7f49a1fa81",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/longxing_dabei_reopen5-photo.jpg",
+      "bytes": 2193253,
+      "sha256": "148551b980ae43195b10493260d0f595f456da6a5f672027afab5dcf7a4cb62b",
       "tier": "source"
     },
     {
       "path": "assets/references/longxing_dabei_wide-photo.jpg",
-      "bytes": 3569364,
-      "sha256": "720a14b07d9b8a52fbe1c00cdf2bc828550120ed009082776c91b21e1af759a9",
+      "bytes": 8539576,
+      "sha256": "a683fe786caf9921866802b3a63515eda591187f3f78d56530e92ceca58aac4e",
       "tier": "source"
     },
     {
@@ -26721,6 +26793,24 @@
       "tier": "source"
     },
     {
+      "path": "assets/references/xitai_chongxing_a2-photo.jpg",
+      "bytes": 192490,
+      "sha256": "fe82953a66bca5c334a7eeaac2c80eb9a034b594928dc567283eb13834e7fdf8",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/xitai_chongxing_a3-photo.jpg",
+      "bytes": 182955,
+      "sha256": "3154d388b97d91c96b0521036c361adb8bcb17370aad18604c2e8604a99fb147",
+      "tier": "source"
+    },
+    {
+      "path": "assets/references/xitai_chongxing_a6-photo.jpg",
+      "bytes": 253049,
+      "sha256": "1624f633b87ac12d734e5f7def10206b0372dec84f6692691a09e89a81cf2bc0",
+      "tier": "source"
+    },
+    {
       "path": "assets/references/xitai_chongxing_alt-photo.jpg",
       "bytes": 1950816,
       "sha256": "09325e33e90f3c280c59ce0fae9a7d35b1d0302778ea0d938ff5076fb53f362a",
@@ -27282,6 +27372,12 @@
       "path": "assets/references/zj_yuyaotongji-photo.jpg",
       "bytes": 315255,
       "sha256": "2c108dba02311018b24a2b57e4c26bb3777096aa66bfd2e4548dfc57ce734d64",
+      "tier": "source"
+    },
+    {
+      "path": "assets/research/china-single-followup-20261012/ninghai-plan-source.pdf",
+      "bytes": 2224606,
+      "sha256": "1694249cf629615d34de7743e826a2f629d4a5e088b6f3ee6cda53b30bdf1a2c",
       "tier": "source"
     },
     {

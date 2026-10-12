@@ -7104,6 +7104,18 @@ const PLATES = {
       "清咸丰四年"
     ]
   },
+  "xitai_chongxing": {
+    "src": "assets/plates/xitai_chongxing.png",
+    "alt": "宁海崇兴庙戏台与勾连廊 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "宁海崇兴庙戏台与勾连廊 · 台栏外仰视内部",
+      "清道光二十一年（1841）起重建"
+    ]
+  },
   "xitai_chenghuang": {
     "src": "assets/plates/xitai_chenghuang.png",
     "alt": "宁海城隍庙戏台 · 线稿",
