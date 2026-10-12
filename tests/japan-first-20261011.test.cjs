@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -13,7 +14,7 @@ const second = json('assets/research/japan-second-20261012-batch.json');
 const { SITES, PLACES, DYN, CHAPTERS } = vm.runInNewContext(read('sites.js') + '\n' + read('plates.js') + '\n({SITES,PLACES,DYN,CHAPTERS})');
 const sites = require('../catalog.js').classify(SITES, PLACES);
 
-test('first Japan batch covers all agreed subjects with unvisited records and display-only points', () => {
+test('first Japan batch covers all agreed subjects with unvisited records and display-only points', requiresLocalAssets, () => {
   assert.equal(batch.ids.length, 26);
   assert.equal(new Set(batch.ids).size, 26);
   assert.deepEqual([...batch.ids].sort(), batch.jobs.map(job => job.id).sort());
@@ -67,7 +68,7 @@ test('dates distinguish foundation, surviving fabric, additions and relocation i
   }
 });
 
-test('all 52 real originals bind actual prompts and default-approved transparent deliveries', () => {
+test('all 52 real originals bind actual prompts and default-approved transparent deliveries', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(queue.count, queue.entries.length);

@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -38,7 +39,7 @@ test('building splits preserve old IDs exclusively as collection records and shi
   }
 });
 
-test('new plates retain real generation or reuse provenance and independently bound delivery hashes', () => {
+test('new plates retain real generation or reuse provenance and independently bound delivery hashes', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   for (const id of batch.ids) {
