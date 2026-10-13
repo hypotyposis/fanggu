@@ -198,6 +198,15 @@ struct CurationView: View {
                 Text(curation.name)
                     .font(FangguFont.serif(35, weight: .medium)).foregroundStyle(Palette.paper)
                 Text(curation.lede).font(FangguFont.serif(16)).foregroundStyle(Palette.paper).lineSpacing(7)
+                if let reason = curation.selectionReason?.trimmingCharacters(in: .whitespacesAndNewlines), !reason.isEmpty {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("为什么选这些").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                            .accessibilityAddTraits(.isHeader)
+                        Text(verbatim: reason).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).lineSpacing(6)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("curation-selection-reason")
+                    }
+                }
                 VStack(alignment: .leading, spacing: 10) {
                     HStack(alignment: .lastTextBaseline, spacing: 8) {
                         FangguMetricNumber(value: progress.visited, size: 44)
@@ -236,11 +245,17 @@ struct CurationView: View {
                 FangguRule()
                 ForEach(Array(members.enumerated()), id: \.element.id) { index, site in
                     NavigationLink(value: site) {
-                        HStack(alignment: .center, spacing: 10) {
+                        HStack(alignment: .top, spacing: 10) {
                             Text(String(format: "%02d", index + 1))
                                 .font(FangguFont.mono(11)).foregroundStyle(Palette.paper3).frame(width: 22, alignment: .leading)
-                            TimelineSiteRow(site: site)
+                                .padding(.top, 12)
+                            if let reason = curation.reason(for: site) {
+                                EditorialSiteRow(site: site, reason: reason, reasonID: "curation-reason-\(site.id)")
+                            } else {
+                                TimelineSiteRow(site: site)
+                            }
                         }
+                        .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .accessibilityIdentifier("curation-member-\(site.id)")
@@ -303,6 +318,53 @@ struct CurationView: View {
     @ViewBuilder private var legacyButtons: some View {
         Button("编辑原到访记录") { editingLegacyVisit = true }.buttonStyle(FangguOutlineButton(accent: Palette.paper2))
         Button("查看原评价") { editingLegacyReview = true }.buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+    }
+}
+
+/// A single navigation label keeps the explanation and destination together at every text size.
+struct EditorialSiteRow: View {
+    @EnvironmentObject private var library: LibraryStore
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    let site: Monument
+    let reason: String
+    let reasonID: String
+    var relationship: SiteRecommendation.Kind? = nil
+
+    var body: some View {
+        let layout = dynamicTypeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10))
+            : AnyLayout(HStackLayout(alignment: .center, spacing: 12))
+        VStack(alignment: .leading, spacing: 12) {
+            layout {
+                ArtworkView(site: site, visited: library.record(for: site).status == .visited, height: 92)
+                    .frame(width: dynamicTypeSize.isAccessibilitySize ? nil : 85)
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: 5) {
+                    if let relationship {
+                        Text(verbatim: relationship.title).font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
+                    Text(verbatim: site.name).font(FangguFont.serif(17, weight: .medium)).foregroundStyle(Palette.paper)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(verbatim: site.periodLabel).font(FangguFont.serif(11)).foregroundStyle(site.accent)
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(verbatim: site.place).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                if !dynamicTypeSize.isAccessibilitySize {
+                    Image(systemName: "chevron.right").font(.system(size: 11)).foregroundStyle(Palette.paper3)
+                        .accessibilityHidden(true)
+                }
+            }
+            Text(verbatim: reason).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).lineSpacing(5)
+                .fixedSize(horizontal: false, vertical: true)
+                .accessibilityIdentifier(reasonID)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(12).background(Palette.ink2)
+        .overlay(Rectangle().stroke(Palette.paper.opacity(0.14), lineWidth: 1))
+        .contentShape(Rectangle())
     }
 }
 

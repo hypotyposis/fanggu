@@ -32,7 +32,8 @@
 
 | 脚本 | 作用 | 读取 | 写入 | 依赖与失败条件 |
 | --- | --- | --- | --- | --- |
-| `build-catalog.cjs` | 导出 App 目录 | 根目录六个 JS、`palette.css`、`assets/research/<id>.json` | `ios/Fanggu/Resources/catalog.json` | 重复 ID、缺地点、缺线稿或设色清单、缺时代色时报错 |
+| `build-catalog.cjs` | 导出 App 目录与专题 | 根目录目录 JS（含 `curations.js`）、`palette.css`、`assets/research/<id>.json`、`i18n/*.json` | `ios/Fanggu/Resources/catalog*.json`、`curations*.json`，各中英日三份 | 重复 ID、缺地点、缺图版清单或时代色时报错；写文件前校验专题与推荐引用 |
+| `catalog-editorial.cjs` | 模块：专题选目与人工推荐的校验、逐项翻译回退 | 专题、推荐、古迹及译文对象 | 无文件写入 | 由 `build-catalog.cjs` 调用；校验规则见 [专题选目与详情推荐](../docs/data-model.md#专题选目与详情推荐) |
 | `sync-artwork.sh <assets 目录>` | 同步运行图版到 App 资源目录并核对 | `assets/plates/`、`assets/colored-transparent-avif/`、`assets/longmen-vairocana.png`、`catalog.json` | `ios/Fanggu/Resources/Artwork/`（被忽略） | `rsync`；缺目录或缺文件时非零退出并列出缺少项 |
 | `build-icon.py` | 把用户提供的鸱吻图标原样复制到资产目录 | `ios/icon-concepts/chiwen/AppIcon.appiconset/` | `ios/Fanggu/Assets.xcassets/AppIcon.appiconset/` | 只复制，不重绘 |
 

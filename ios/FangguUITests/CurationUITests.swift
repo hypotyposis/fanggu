@@ -6,6 +6,73 @@ final class CurationUITests: XCTestCase {
         continueAfterFailure = false
     }
 
+    func testEditorialReasonsLeadToRelatedDetailAndPreserveReturnPosition() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest()
+        let card = app.descendants(matching: .any)["curation-card-tang_timber"].firstMatch
+        XCTAssertTrue(card.waitForExistence(timeout: 10))
+        card.tap()
+        let selection = app.descendants(matching: .any)["curation-selection-reason"].firstMatch
+        XCTAssertTrue(selection.waitForExistence(timeout: 5))
+        XCTAssertFalse(selection.label.isEmpty)
+        editorialCapture(app, "zh-editorial-selection")
+
+        let member = app.descendants(matching: .any)["curation-member-nanchan"].firstMatch
+        XCTAssertTrue(app.reveal(member))
+        XCTAssertTrue(app.descendants(matching: .any)["curation-reason-nanchan"].firstMatch.exists)
+        editorialCapture(app, "zh-editorial-member")
+        member.tap()
+        XCTAssertTrue(app.buttons["detail-back"].waitForExistence(timeout: 5))
+        let next = app.descendants(matching: .any)["related-site-foguang"].firstMatch
+        XCTAssertTrue(app.reveal(next, attempts: 14), app.debugDescription)
+        let before = next.frame.midY
+        editorialCapture(app, "zh-editorial-next")
+        next.tap()
+        XCTAssertTrue(app.navigationBars["佛光寺"].waitForExistence(timeout: 5))
+        app.buttons["detail-back"].tap()
+        XCTAssertTrue(next.waitForExistence(timeout: 5))
+        XCTAssertTrue(next.isHittable, "Returning from a recommendation keeps the source's reading position")
+        XCTAssertEqual(next.frame.midY, before, accuracy: 40)
+        app.buttons["detail-back"].tap()
+        XCTAssertTrue(member.waitForExistence(timeout: 5))
+        XCTAssertTrue(member.isHittable, "Returning to the topic keeps the selected member visible")
+        XCTAssertFalse(app.buttons["undo-change"].exists, "Browsing never changes a visit record")
+    }
+
+    func testEditorialCopyIsLocalizedAndReadableWithLargeText() {
+        for (language, locale) in [("en", "en_US"), ("ja", "ja_JP")] {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest(site: "nanchan", arguments: ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"])
+            let next = app.descendants(matching: .any)["related-site-foguang"].firstMatch
+            XCTAssertTrue(app.reveal(next, attempts: 30), app.debugDescription)
+            XCTAssertFalse(next.label.isEmpty)
+            if language == "en" {
+                XCTAssertNil(next.label.range(of: "\\p{Han}", options: .regularExpression))
+            }
+            XCTAssertFalse(next.label.contains("对照着看"))
+            editorialCapture(app, "\(language)-editorial-next-large-text")
+            let chip = app.descendants(matching: .any)["curation-chip-tang_timber"].firstMatch
+            XCTAssertTrue(app.reveal(chip, up: false, attempts: 30))
+            chip.tap()
+            let selection = app.descendants(matching: .any)["curation-selection-reason"].firstMatch
+            XCTAssertTrue(selection.waitForExistence(timeout: 5))
+            XCTAssertFalse(selection.label.isEmpty)
+            if language == "en" {
+                XCTAssertNil(selection.label.range(of: "\\p{Han}", options: .regularExpression))
+            }
+            XCTAssertTrue(app.reveal(selection, attempts: 12))
+            editorialCapture(app, "\(language)-editorial-selection-large-text")
+            app.terminate()
+        }
+    }
+
+    private func editorialCapture(_ app: XCUIApplication, _ name: String) {
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = name
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+
     func testChongxingDetailJoinsTheThreeMemberNinghaiCollectionInEveryLanguage() {
         for (language, locale, name) in [
             ("zh-Hans", "zh_CN", "宁海崇兴庙戏台"),

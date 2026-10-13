@@ -164,6 +164,7 @@ struct AtlasMapView: View {
                 .navigationTitle(markerTitle(selected.placeIDs))
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
+                .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
                 .toolbar { Button("关闭") { selection = nil }.accessibilityIdentifier("map-sheet-close") }
             }
             .fangguAppearance()

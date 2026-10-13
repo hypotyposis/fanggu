@@ -85,6 +85,7 @@ struct MonumentDetailView: View {
                 if !site.yearNote.isEmpty {
                     Text("年代说明 · \(site.yearNote)").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                 }
+                RelatedSitesSection(site: site)
                 if !site.protection.isEmpty {
                     Text("文物保护").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     ForEach(site.protection, id: \.self) { entry in
@@ -194,6 +195,30 @@ struct MonumentDetailView: View {
 
     private func finishArrival() {
         reveal = 0
+    }
+}
+
+private struct RelatedSitesSection: View {
+    @EnvironmentObject private var library: LibraryStore
+    let site: Monument
+
+    var body: some View {
+        let recommendations = library.recommendations(for: site)
+        if !recommendations.isEmpty {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("接下来可以看").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                    .accessibilityAddTraits(.isHeader)
+                    .accessibilityIdentifier("related-sites")
+                ForEach(recommendations) { recommendation in
+                    NavigationLink(value: recommendation.site) {
+                        EditorialSiteRow(site: recommendation.site, reason: recommendation.reason,
+                                          reasonID: "related-reason-\(recommendation.id)", relationship: recommendation.kind)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("related-site-\(recommendation.id)")
+                }
+            }
+        }
     }
 }
 

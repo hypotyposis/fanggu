@@ -55,6 +55,17 @@ import Foundation
     /// Members in editorial order; IDs absent from this catalogue build are skipped.
     func members(of list: Curation) -> [Monument] { list.items.compactMap { monumentsByID[$0] } }
 
+    /// Only catalogue metadata is read; order and membership never depend on personal records.
+    func recommendations(for site: Monument) -> [ResolvedSiteRecommendation] {
+        var seen: Set<String> = [site.id]
+        return (site.relatedSites ?? []).compactMap { link in
+            let reason = link.reason.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard let target = monumentsByID[link.siteID], target.collectionOnly != true,
+                  !reason.isEmpty, seen.insert(target.id).inserted else { return nil }
+            return ResolvedSiteRecommendation(site: target, kind: link.kind, reason: reason)
+        }
+    }
+
     /// The original ID keeps its date, note, review and backup links. It never marks a child visited.
     func legacySite(for list: Curation) -> Monument? {
         guard let id = list.legacySiteID, let site = monumentsByID[id], site.collectionOnly == true else { return nil }

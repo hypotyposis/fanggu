@@ -53,6 +53,8 @@ struct Monument: Decodable, Identifiable, Hashable {
     let searchAliases: [String]
     /// Original group entries remain decodable for old records, but are excluded from the single-building catalogue.
     let collectionOnly: Bool?
+    /// Editorial links are optional so catalogues and fixtures predating recommendations still decode.
+    var relatedSites: [SiteRecommendation]? = nil
 
     var accent: Color { Palette.dynasty(dynastyColor) }
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
@@ -80,11 +82,44 @@ struct Curation: Decodable, Identifiable, Hashable {
     let note: String
     let items: [String]
     let legacySiteID: String?
+    var selectionReason: String? = nil
+    var itemReasons: [String: String]? = nil
 
     var isBuildingCollection: Bool { kind == "collection" }
 
+    func reason(for site: Monument) -> String? {
+        guard items.contains(site.id),
+              let reason = itemReasons?[site.id]?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !reason.isEmpty else { return nil }
+        return reason
+    }
+
     static func == (lhs: Curation, rhs: Curation) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
+}
+
+struct SiteRecommendation: Decodable, Hashable {
+    enum Kind: String, Decodable {
+        case comparison, nearby
+
+        var title: String {
+            switch self {
+            case .comparison: String(localized: "对照着看")
+            case .nearby: String(localized: "同一带看看")
+            }
+        }
+    }
+
+    let siteID: String
+    let kind: Kind
+    let reason: String
+}
+
+struct ResolvedSiteRecommendation: Identifiable {
+    let site: Monument
+    let kind: SiteRecommendation.Kind
+    let reason: String
+    var id: String { site.id }
 }
 
 struct CurationProgress: Equatable {

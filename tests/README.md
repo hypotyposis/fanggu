@@ -12,7 +12,7 @@
 | `facets.test.cjs` | `catalog.js` 的国家、地区、省份、类型、状态组合筛选与别名搜索；原生导出默认未到访 | 否 | |
 | `protection.test.cjs` | 国保源数据与生成数据一致、批次公布日期、合并关系、未确认条目不贴标签、搜索组合、CommonJS 与全局一致 | 否 | 调用 `prepare-protection.mjs --check` |
 | `ios-catalog.test.cjs` | `catalog.json` 与源数据逐项一致：ID、名称、状态、图版文件名、城镇点坐标、本体坐标与研究记录一致且在城镇点附近、时代色、年代范围、国保、来源链接 | 否 | |
-| `curations.test.cjs` | `curations.js` 的专题只引用已收录古迹、结构合法；中、英、日三份 `curations*.json` 导出的 ID、类型、成员一致，译文缺失时回退中文 | 否 | |
+| `curations.test.cjs` | 专题成员与选目理由、详情人工推荐的合法性；拒绝未收录、自荐、重复、旧集合目标与空理由；三语导出一致、逐项译文回退及首批内容覆盖 | 否 | |
 | `i18n.test.cjs` | 英日术语表（含专题类型）全覆盖；逐古迹与专题译文“有则必须对齐”，缺译只打印覆盖率；三语目录固定字段一致、缺译回退中文；界面字符串与权限说明英日齐全且占位符一致 | 否 | |
 | `ios-map-layout.test.cjs` | 用真实 Swift 源编译 `SketchMapLayout.swift`，检查多种手机宽度下的投影、覆盖与触控间距 | 否 | `xcrun swiftc`；没有则跳过 |
 | `line-plate.test.cjs` | 线稿着色保留原生 alpha、拒绝未登记的白底原件、旧哈希白名单 | 否 | `magick` |
@@ -76,7 +76,7 @@
 | `FangguUITests/FangguUITests.swift` | 图鉴列表与大图回到顶部（保留搜索和筛选）、tab 与外观切换耗时、东京筛选与别名、外观持久化、原生各栏可用、六维松手自动保存与重置、低档位可拖、短评自动保存、详情导航、大图拖动条、终点松手才保存、足迹标记与搜索 |
 | `FangguUITests/LocalizationUITests.swift` | 英日主要页面、建筑群操作与回到顶部按钮的文案 |
 | `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口 |
-| `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口 |
+| `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口；足迹地点 → 详情 → 专题可达并逐层返回 |
 | `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域；`isolate()` 供 `launchForTest` 复用，漏掉 `isolated()` 的实例也会得到作用域 |
 | `FangguUITests/UITestSupport.swift` | 辅助：`launchForTest` 关闭过渡动画并可直达详情或评价页、`relaunch` 真实重启、`dragPage`／`reveal` 沿左缘匀速滚动到目标可点 |
 | `Fanggu/UITestLaunch.swift`（App 内） | DEBUG 专用启动参数 `-uiTestDisableAnimations`、`-uiTestOpenSite <id>`、`-uiTestOpenReview`，Release 构建编译掉 |
@@ -86,3 +86,5 @@
 `china-single.test.cjs` 核对多单体拆分后的旧 ID、建筑群成员、三语导出、单体年代与国保批次，以及来源和交付哈希；原生 `CurationTests` 验证整组原子保存、整组撤销、失败重试与旧备份保留，`CurationUITests` 验证集合页一次打卡和重启后的进度。
 
 `china-single-resume.test.cjs` 核对崇兴庙戏台续作的内部主体范围、1841年起重建、宁海集合三成员、三语导出、恢复线稿和新设色的真实来源及哈希绑定，并保留未补齐资料的条目边界；`CurationUITests` 同时检查中英日新单体详情与集合页。
+
+`CurationTests` 同时覆盖旧目录缺少选目/推荐字段时的兼容解码、推荐目标过滤与只读解析；`CurationUITests` 的 `testEditorialReasonsLeadToRelatedDetailAndPreserveReturnPosition` 走图鉴专题 → 成员 → 推荐详情 → 返回流程，`testEditorialCopyIsLocalizedAndReadableWithLargeText` 检查英日理由及辅助大字号，并保留模拟器截图。

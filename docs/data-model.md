@@ -190,6 +190,16 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`region
 
 `catalog-en.json`、`catalog-ja.json` 与 `catalog.json` 条目一一对应、顺序相同；ID、年代、筛选键、坐标、图版、来源链接与国保批次不变，只替换展示文字：`name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 取 `i18n/<语言>.json` 的 `sites[id]`；`placeName`、`provinceName`、`countryName`、`regionName`、`dynastyName`、`typeNames` 与国保来源名取 `terms`；国保的 `unitName`、`scope`、`note` 逐项取译文。缺少译文的字段回退中文。专题名录同理导出为 `curations-en.json`、`curations-ja.json`，译文在 `i18n/<语言>.json` 的 `curations` 与 `terms.curationKinds`。字段约定见 [开发指南 · 多语言目录](development.md#多语言目录)。
 
+## 专题选目与详情推荐
+
+`curations.js` 的专题保留 `items` 的稳定 ID 与编辑顺序，可增加 `selectionReason`（为什么把这些古迹放在一起）和 `itemReasons`（成员 ID 到独有入选理由）。有选目说明时必须同时覆盖全部成员，不允许空理由或列表外的 ID；未编写的建筑群可以省略这两个字段，导出为空字符串与空对象。
+
+同一模块独立维护 `recommendations`：源古迹 ID 到有序数组 `[{ siteID, kind, reason }]`。`siteID` 是目标古迹，`kind` 为 `comparison`（知识上的对照）或 `nearby`（地理上的关联），`reason` 解释两处之间具体的联系。有推荐的源保留 2–3 项，不自动补齐未编写条目；源和目标都必须是可浏览的单体，不能自荐、重复或引用旧集合 ID。地理关联不代表已计算路线、实时距离或开放情况。
+
+导出前由 `ios/scripts/catalog-editorial.cjs` 校验；专题字段写入 `curations*.json`，推荐写入各语言 `catalog*.json` 的 `relatedSites`，未编写的古迹为 `[]`。英文、日文专题译文仍位于 `curations[id]`，推荐译文使用顶层 `recommendations[sourceID][targetID]` 的理由字符串。逐个理由按 ID 对应，缺译回退中文，不能靠数组位置匹配。
+
+以上均为离线目录内容，不进入个人记录或备份；浏览、跳转和返回不改变到访、心愿或评价。
+
 ## 个人记录 library.json
 
 建筑群在 `curations.js` 使用 `kind: 'collection'`；`items` 是已收录单体 ID，`legacySiteID` 是保留旧记录的 `collectionOnly` 条目。集合仍是目录元数据，个人记录保持在 `records[legacySiteID]`、`reviews[legacySiteID]`，不向单体复制，也不另加备份版本。集合页的整组今日到访仅为未到访成员生成记录，一次原子保存；整组撤销恢复原始记录或不存在的覆盖值，不修改评价。

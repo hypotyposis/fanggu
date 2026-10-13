@@ -13,6 +13,7 @@
 | `sites.js` 的年代、时代、地点、类型、`initialStatus` | `build-catalog.cjs` | 全套 Node；批次测试中涉及的断言；App 筛选与年表 | 新时代、新地区、新类型见下文对应步骤 |
 | 研究 JSON 的 `coordinates` 本体坐标 | `build-catalog.cjs` | `ios-catalog` 测试；`FangguTests/NearbyReminderTests` | 坐标须距城镇点 60 公里内，否则导出报错；只影响附近提醒，不改地图点 |
 | `catalog.js` 地区、国家、类型 | `build-catalog.cjs` | `facets`、`protection`、`ios-catalog` 测试与全套；App 筛选、搜索 | 同步 `ios/Fanggu/CatalogSearch.swift` 的名称与别名表 |
+| `curations.js` 专题选目理由、人工推荐 | `build-catalog.cjs` | Node 测试；`CurationTests`、`CurationUITests`；模拟器三语显示与返回位置 | 同步 `i18n/` 对应理由；不重建图片；字段见 [数据模型](data-model.md#专题选目与详情推荐) |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs` → `build-catalog.cjs` → `sh ios/scripts/sync-artwork.sh assets` | `ios-catalog` 测试；审图页；App | 线稿 PNG 会按新色重建，需要完整素材与 `magick`；随后更新 `asset-lock` |
 | `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs` → `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check`；`protection` 测试与全套；App 标签与搜索 | 不跑图版脚本，不改验收记录 |
 | 新增或重绘古迹 | [手册第 5 节](monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App | 不只调数量断言；新图经默认通过命令记为 `approved_default`，不冒充 `approved_user` |

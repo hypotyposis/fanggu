@@ -16,7 +16,7 @@ const translations = Object.fromEntries(languages.map(language => [language, rea
 const textFields = ['name', 'short', 'sub', 'era', 'yearLabel', 'yearNote', 'place', 'lede', 'quote'];
 const listFields = ['facts', 'captions'];
 const protectionFields = ['unitName', 'scope', 'note'];
-const curationFields = ['name', 'eyebrow', 'lede', 'note'];
+const curationFields = ['name', 'eyebrow', 'lede', 'note', 'selectionReason'];
 const han = /\p{Script=Han}/u;
 // High-confidence simplified-only forms; Japanese text uses the shinjitai or traditional form instead.
 const simplifiedOnly = /[这们为东门马长书车说贝见风鸟龙广实层庙图齐汉经阁乐县开关观觉记论设证译读贵资过还进远连选铁铜银钟镇间问阙陕顶须顺题飞驿鸡鹤龟访迹录评维愿]/u;
@@ -124,6 +124,12 @@ test('language catalogs keep every fixed field and fall back to Chinese where a 
         assert.equal(exported.sourceTitle, terms.protectionSources[item.sourceTitle] || item.sourceTitle);
       });
       assert.deepEqual(site.sourceLinks.map(link => link.url), source.sourceLinks.map(link => link.url));
+      assert.deepEqual(site.relatedSites.map(({ siteID, kind }) => [siteID, kind]),
+        source.relatedSites.map(({ siteID, kind }) => [siteID, kind]), `${language} ${source.id} recommendation order and kinds`);
+      source.relatedSites.forEach((related, position) => {
+        assert.equal(site.relatedSites[position].reason, translations[language].recommendations?.[source.id]?.[related.siteID] || related.reason,
+          `${language} ${source.id} → ${related.siteID} reason`);
+      });
       assert.ok(site.searchAliases.includes(source.name) || site.name === source.name, `${language} ${source.id} keeps the Chinese name searchable`);
     });
   }
@@ -160,16 +166,36 @@ test('curation translations that exist align with the source', () => {
     for (const list of lists) {
       const entry = curations[list.id];
       if (!entry) continue;
-      for (const key of Object.keys(entry)) assert.ok(curationFields.includes(key), `${language} curations.${list.id}.${key} is not a translatable field`);
+      for (const key of Object.keys(entry)) assert.ok(curationFields.includes(key) || key === 'itemReasons', `${language} curations.${list.id}.${key} is not a translatable field`);
       for (const field of curationFields) {
         if (entry[field] === undefined) continue;
         assert.ok(list[field], `${language} curations.${list.id}.${field} translates an empty source field`);
         assert.ok(typeof entry[field] === 'string' && entry[field].trim(), `${language} curations.${list.id}.${field} is empty`);
         script[language](entry[field]);
       }
-      if (curationFields.every(field => !list[field] || entry[field])) complete++;
+      for (const [id, reason] of Object.entries(entry.itemReasons || {})) {
+        assert.ok(list.itemReasons[id], `${language} curations.${list.id}.itemReasons.${id} has no source reason`);
+        assert.ok(typeof reason === 'string' && reason.trim(), `${language} curations.${list.id}.itemReasons.${id} is empty`);
+        script[language](reason);
+      }
+      if (curationFields.every(field => !list[field] || entry[field]) && Object.keys(list.itemReasons || {}).every(id => entry.itemReasons?.[id])) complete++;
     }
     coverage.push(`${language}: ${complete}/${lists.length} curations fully translated`);
+  }
+});
+
+test('recommendation translations only explain existing relationships', () => {
+  const byID = new Map(base.map(site => [site.id, site]));
+  for (const language of languages) {
+    for (const [sourceID, related] of Object.entries(translations[language].recommendations || {})) {
+      const source = byID.get(sourceID);
+      assert.ok(source?.relatedSites.length, `${language} recommendation source ${sourceID}`);
+      for (const [targetID, reason] of Object.entries(related)) {
+        assert.ok(source.relatedSites.some(item => item.siteID === targetID), `${language} ${sourceID} → ${targetID} has no source relationship`);
+        assert.ok(typeof reason === 'string' && reason.trim(), `${language} ${sourceID} → ${targetID} is empty`);
+        script[language](reason);
+      }
+    }
   }
 });
 
