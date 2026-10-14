@@ -202,13 +202,14 @@ struct LegacySite: Codable, Identifiable {
 }
 
 struct LibraryData: Codable {
-    var version = 4
+    var version = 5
     var customSites: [LegacySite] = []
     var records: [String: VisitRecord] = [:]
     var links: [String: String] = [:]
     var reviews: [String: Review] = [:]
+    var personalLists: [PersonalList] = []
 
-    enum CodingKeys: String, CodingKey { case version, customSites, records, links, reviews }
+    enum CodingKeys: String, CodingKey { case version, customSites, records, links, reviews, personalLists }
     init() {}
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -217,6 +218,7 @@ struct LibraryData: Codable {
         records = try values.decode([String: VisitRecord].self, forKey: .records)
         links = version >= 2 ? (try values.decodeIfPresent([String: String].self, forKey: .links) ?? [:]) : [:]
         reviews = version >= 3 ? (try values.decodeIfPresent([String: Review].self, forKey: .reviews) ?? [:]) : [:]
+        personalLists = version >= 5 ? (try values.decodeIfPresent([PersonalList].self, forKey: .personalLists) ?? []) : []
     }
 }
 

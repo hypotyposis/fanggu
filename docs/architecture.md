@@ -4,7 +4,7 @@
 
 ## 一句话
 
-访古是一款可离线使用的 iOS 原生 App：浏览古迹图鉴（线稿与设色图版）、搜索筛选、足迹地图与年表、拖动打卡、心愿单、笔记和六维评价。仓库同时保存古迹目录的源数据、图版生产脚本与本地审图工具。网页产品已移除，根目录的 HTML 只是本地工具，不对外发布。
+访古是一款可离线使用的 iOS 原生 App：浏览古迹图鉴（线稿与设色图版）、搜索筛选、足迹地图与年表、拖动打卡、心愿单、笔记、六维评价和个人名单。仓库同时保存古迹目录的源数据、图版生产脚本与本地审图工具。网页产品已移除，根目录的 HTML 只是本地工具，不对外发布。
 
 ## 仓库地图
 
@@ -114,6 +114,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `OfflineLand.swift` | 读取随 App 打包的 Natural Earth 陆地 GeoJSON |
 | `TimelineView.swift` | 年表页：地域与时期选择、等距时间轴、节点与列表 |
 | `MyLibraryView.swift` | 我的：统计、到访与心愿列表、外观、备份导出导入、旧记录关联 |
+| `PersonalList.swift`、`PersonalListViews.swift` | 个人名单模型与创建、编辑、按语、排序、加入古迹及文本分享 |
 | `LibraryStore.swift` | 个人记录的唯一读写入口：校验、原子保存、备份、导入合并、撤销、旧记录关联 |
 | `Models.swift` | `Monument`（`catalog.json` 的解码类型）、`VisitRecord`、`LibraryData`、`Palette`、`FangguFont` |
 | `Review.swift`、`ReviewRadar.swift` | 六维评价的维度、档位、投影与防抖；六维图的编辑与只读视图 |
@@ -123,7 +124,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `DesignSystem.swift` | 外观设置、印章、标题、分隔线、按钮、输入框等共用控件 |
 | `Haptics.swift` | 触觉反馈的集中实现 |
 
-个人记录保存在本机 Application Support 下 `Fanggu/library.json`（版本 4）；外观选项与附近提醒开关保存在 `UserDefaults`（`fanggu.appearance`、`fanggu.nearbyReminder.*`）；撤销只在内存中保留最近一次，不进备份。格式与约束见 [数据模型 · 个人记录](data-model.md#个人记录-libraryjson)。
+个人记录保存在本机 Application Support 下 `Fanggu/library.json`（版本 5）；外观选项与附近提醒开关保存在 `UserDefaults`（`fanggu.appearance`、`fanggu.nearbyReminder.*`）；撤销只在内存中保留最近一次，不进备份。格式与约束见 [数据模型 · 个人记录](data-model.md#个人记录-libraryjson)。
 
 ## 本地素材分层
 

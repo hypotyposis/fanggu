@@ -135,7 +135,7 @@ final class ReviewTests: XCTestCase {
         XCTAssertEqual(restored.review(for: site).dimensions.aggregateScoreLabel, "3.50")
         XCTAssertEqual(restored.record(for: site).note, "独立笔记")
         let backup = try restored.backup().data
-        XCTAssertEqual(try JSONDecoder().decode(LibraryData.self, from: backup).version, 4)
+        XCTAssertEqual(try JSONDecoder().decode(LibraryData.self, from: backup).version, 5)
 
         XCTAssertTrue(store.setReview(dimensions: DimensionScores(), text: "", for: site, clearLegacyRating: true))
         let cleared = store.review(for: site)
@@ -186,7 +186,7 @@ final class ReviewTests: XCTestCase {
         var scores = DimensionScores(); scores[.eraRarity] = 4
         XCTAssertTrue(loaded.setReview(dimensions: scores, text: loaded.review(for: site).text, for: site))
         let restored = LibraryStore(fileURL: url)
-        XCTAssertEqual(restored.data.version, 4)
+        XCTAssertEqual(restored.data.version, 5)
         XCTAssertEqual(restored.review(for: site).rating, 5)
         XCTAssertEqual(restored.review(for: site).dimensions, scores)
         XCTAssertEqual(restored.review(for: site).text, "原来的文字")

@@ -66,6 +66,8 @@
 
 | 文件 | 用例要点 |
 | --- | --- |
+| `FangguTests/PersonalListTests.swift` | 个人名单顺序与按语持久化、备份合并与旧版兼容、非法内容和损坏文件保护、写入失败与重试 |
+| `FangguUITests/PersonalListUITests.swift` | 详情创建名单、添加与移出、自动保存按语、排序和重启、我的入口与删除、英日辅助大字号 |
 | `FangguTests/ReviewTests.swift` | 年表索引完整、旧评价不臆造六维、档位往返与非法值、径向投影与防抖、持久化与备份、版本 3 导入保留六维、首次保存才升级、独立自动保存、失败保留原数据、旧记录与新增条目的备份 |
 | `FangguTests/UXRegressionTests.swift` | 打卡触觉跨原刻度连续、后退与静止／端点静音、多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存 |
 | `FangguTests/AtlasTimelineTests.swift` | 每个地域时期的节点间距与完整覆盖、等距时间轴、离线底图打包与多边形有效 |

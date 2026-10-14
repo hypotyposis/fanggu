@@ -9,6 +9,7 @@ struct MonumentDetailView: View {
     @State private var editingVisit = false
     @State private var editingReview = false
     @State private var sharing = false
+    @State private var addingToList = false
     @State private var reveal: CGFloat = 0
 
     private var record: VisitRecord { library.record(for: site) }
@@ -56,6 +57,14 @@ struct MonumentDetailView: View {
                     }
                 }
                 CurationChips(site: site)
+                Button { addingToList = true } label: { Label("加入名单", systemImage: "text.badge.plus") }
+                    .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                    .accessibilityIdentifier("add-site-to-list")
+                ForEach(library.data.personalLists.filter { $0.items.contains { $0.siteID == site.id } }) { list in
+                    NavigationLink(value: PersonalListRoute(id: list.id)) {
+                        Label { Text(verbatim: list.title) } icon: { Image(systemName: "list.bullet.rectangle") }
+                    }.accessibilityIdentifier("personal-list-chip-\(list.id)")
+                }
                 VisitActions(site: site, editingVisit: $editingVisit)
                 VStack(spacing: 8) {
                     ArtworkView(site: site, visited: record.status == .visited,
@@ -182,6 +191,7 @@ struct MonumentDetailView: View {
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
+        .sheet(isPresented: $addingToList) { AddToPersonalListSheet(site: site) }
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
         .sheet(isPresented: $sharing) { ShareCardSheet(content: .monument(site)) }

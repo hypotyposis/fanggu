@@ -36,6 +36,15 @@ struct MyLibraryView: View {
                     }
                 }
                 FangguRule()
+                NavigationLink(value: PersonalListsRoute()) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Label("我的名单", systemImage: "list.bullet.rectangle").font(FangguFont.serif(22))
+                        Text("发现古迹之间的联系，创建自己的名单。")
+                            .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
+                    }.frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .buttonStyle(FangguOutlineButton())
+                .accessibilityIdentifier("personal-lists-link")
                 if !library.curations.isEmpty {
                     sectionTitle("专题进度")
                     ForEach(library.curations) { list in
@@ -91,7 +100,7 @@ struct MyLibraryView: View {
                     .buttonStyle(FangguOutlineButton())
                 Text("从 JSON 备份恢复记录；同一古迹以导入值覆盖，其余保留。")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
-                Text("支持旧版备份；新版备份包含六维评价，可用于换机迁移。")
+                Text("支持旧版备份；新版备份包含六维评价和个人名单，可用于换机迁移。")
                     .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineSpacing(5)
                 if let message { Text(message).font(FangguFont.serif(12)).foregroundStyle(Palette.redText) }
             }
