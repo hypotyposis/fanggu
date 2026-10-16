@@ -1,0 +1,78 @@
+{
+  "id": "sc_ganquan",
+  "subject": "仁寿甘泉寺 · 现存大雄宝殿",
+  "source_page": "https://meishan.scol.com.cn/msly/202206/58550186.html",
+  "image_url": "https://imgcdn.scol.com.cn/NEWS_8D46EEE57DED7552031481A43B0A474C.JPG",
+  "author": "图据眉山市文广旅局；摄影者未署名",
+  "license": "来源未注明许可，仅作研究与生成参考",
+  "reference_files": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_ganquan-photo.jpg"
+  ],
+  "input_images": [
+    "assets/references/longmen-style-black.png",
+    "assets/references/sc_ganquan-photo.jpg"
+  ],
+  "source_note": "已查看四川在线所刊日间正面照片：仅画现存大雄宝殿，单檐歇山顶、三间四前檐柱，中央格扇门、两侧灰白墙。排除树木、石碑与附房；右前檐局部被树干遮挡。",
+  "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is STYLE ONLY: match the Vairocana master's elegant, delicate, slightly organic thin contours, sparse details and generous blank surfaces. Image 2 is SUBJECT GEOMETRY ONLY: the existing Ming main hall (Daxiong Hall) of Ganquan Temple, Renshou County, Sichuan. Draw only this hall, not the adjacent low buildings. Preserve its actual complete single-eave hip-and-gable roof, steep upturned slender roof corners and ridge ornaments, deep eaves, exposed dougong, exactly THREE front bays defined by FOUR front columns, wide central bay with six timber lattice-panel door leaves, narrower pale wall side bays, and low stone base with broad shallow steps. Remove the tree obstructing the right facade; continue only the evidenced matching structure. The hall is one storey with ONE roof, not a tower. Use the photograph's facade-level view with near-frontal minimal perspective and verticals vertical.\nCreate sparse BLACK INK fine contours on perfectly flat opaque PURE WHITE #FFFFFF. No filled dark doors, no solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, halo or checkerboard. All unmarked surfaces inside and outside the drawing remain white. Select roof tile and bracket contours without dense repetitive hatching. Remove tourists, foliage, stone monument sign, flowers, modern labels, wires, fences, adjacent wings and sky. No invented features, letters, calligraphy, watermark, border or caption. Show the complete hall centered, landscape 1536x1024, occupying about 82% of canvas width; roof corners, ridge apex and base uncut with generous margins. Only a few short ground lines.",
+  "generated_file": "assets/generated/sc_ganquan.png",
+  "generation_tool": "built-in image_gen",
+  "caption": [
+    "仁寿甘泉寺 · 大雄宝殿",
+    "明代遗构 · 后世修缮"
+  ],
+  "historical_sources": [
+    {
+      "title": "邓由甫与甘泉寺的20年",
+      "publisher": "光明日报",
+      "url": "https://epaper.neamco.com/gmrb/html/2022-08/04/nw.D110000gmrb_20220804_2-09.htm",
+      "note": "寺始建明宣德九年1434；现存明代大雄宝殿，2010大修，2013列第七批国保。"
+    },
+    {
+      "title": "走进仁寿，打卡五处国家级重点文物",
+      "publisher": "四川在线",
+      "url": "https://meishan.scol.com.cn/msly/202206/58550186.html",
+      "note": "明代斗拱古建、明清壁画、禾加镇。"
+    }
+  ],
+  "status": "complete",
+  "generation_original_file": "/Users/fuxiangyu/.codex/generated_images/01a14332-50f5-7ea2-8c94-7d86498b89e6/exec-374d60a5-65fe-49c5-aec9-e3020846f0b7.png",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "background_preparation": {
+    "method": "white-matte-v1",
+    "sourceSha256": "dd67364e0f4df3003f48b427d5463bc184057e6b594f3a16415c8a6bd2aaece4",
+    "seeds": []
+  },
+  "generation_history": [
+    {
+      "prompt": "Use case: style-transfer. Asset type: a single fine-line architectural illustration for the Chinese heritage collection 访古.\nImage 1 is STYLE ONLY: match the Vairocana master's elegant, delicate, slightly organic thin contours, sparse details and generous blank surfaces. Image 2 is SUBJECT GEOMETRY ONLY: the existing Ming main hall (Daxiong Hall) of Ganquan Temple, Renshou County, Sichuan. Draw only this hall, not the adjacent low buildings. Preserve its actual complete single-eave hip-and-gable roof, steep upturned slender roof corners and ridge ornaments, deep eaves, exposed dougong, exactly THREE front bays defined by FOUR front columns, wide central bay with six timber lattice-panel door leaves, narrower pale wall side bays, and low stone base with broad shallow steps. Remove the tree obstructing the right facade; continue only the evidenced matching structure. The hall is one storey with ONE roof, not a tower. Use the photograph's facade-level view with near-frontal minimal perspective and verticals vertical.\nCreate sparse BLACK INK fine contours on perfectly flat opaque PURE WHITE #FFFFFF. No filled dark doors, no solid shadows, broad grey shading, crosshatching, pencil grain, paper texture, gradient, color, halo or checkerboard. All unmarked surfaces inside and outside the drawing remain white. Select roof tile and bracket contours without dense repetitive hatching. Remove tourists, foliage, stone monument sign, flowers, modern labels, wires, fences, adjacent wings and sky. No invented features, letters, calligraphy, watermark, border or caption. Show the complete hall centered, landscape 1536x1024, occupying about 82% of canvas width; roof corners, ridge apex and base uncut with generous margins. Only a few short ground lines.",
+      "reference_files": [
+        "assets/references/longmen-style-black.png",
+        "assets/references/sc_ganquan-photo.jpg"
+      ],
+      "original_file": "/Users/fuxiangyu/.codex/generated_images/01a14332-50f5-7ea2-8c94-7d86498b89e6/exec-374d60a5-65fe-49c5-aec9-e3020846f0b7.png",
+      "received_at": "2026-10-16T13:43:02.740408+08:00"
+    }
+  ],
+  "national_protection_verification": {
+    "source": "batch7",
+    "local_file": "assets/references/ganquan-batch7.pdf",
+    "sha256": "da4ad81621a0c39fbf4c68616b6d9a06c44f339a6c086295ce0968b6748fcf83",
+    "pdf_page": 73,
+    "printed_page": 75,
+    "viewed_page": "assets/references/ganquan-batch7-page.png",
+    "checkedOn": "2026-10-16"
+  },
+  "visual_review_status": "approved_default",
+  "user_review": {
+    "status": "approved_default",
+    "reviewer": "default-policy",
+    "reviewed_at": "2026-10-16T05:48:42.323Z",
+    "sourceSha256": "dd67364e0f4df3003f48b427d5463bc184057e6b594f3a16415c8a6bd2aaece4",
+    "policy": "default-approve-2026-10-05",
+    "lineSha256": "00f85315034a5336f9d182cc2014a46365340eac0ba306679b197f18076dc709"
+  }
+}

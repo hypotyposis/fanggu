@@ -5424,6 +5424,17 @@
           }
         ]
       }
+    ],
+    "sc_ganquan": [
+      {
+        "batch": 7,
+        "unitName": "甘泉寺",
+        "relation": "part",
+        "scope": "甘泉寺现存大雄宝殿",
+        "source": "batch7",
+        "locator": "PDF第73页（印刷页75），古建筑第1315项，编号7-1315-3-613，四川省眉山市仁寿县，明至清",
+        "checkedOn": "2026-10-16"
+      }
     ]
   },
   "untagged": {

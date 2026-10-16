@@ -16,7 +16,7 @@ const { SITES, PLATES, COLORED_PLATES } = vm.runInNewContext(
 
 test('the recovered Chongxing interior is an independent unvisited member of the preserved Ninghai collection', () => {
   assert.deepEqual(batch.ids, ['xitai_chongxing']);
-  assert.equal(SITES.length, batch.baseline_catalog_count + batch.ids.length);
+  assert.equal(SITES.length, batch.baseline_catalog_count + batch.ids.length + JSON.parse(read('assets/research/ganquan-20261016-batch.json')).ids.length);
   assert.deepEqual(Object.values(batch.delivered_groups).flat(), batch.ids);
   const site = SITES.find(s => s.id === 'xitai_chongxing');
   assert.equal(site.year, 1841);

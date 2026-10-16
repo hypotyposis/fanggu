@@ -12955,6 +12955,25 @@ globalThis.COLORED_PLATES = {
       }
     ]
   },
+  "sc_ganquan": {
+    "src": "assets/colored-transparent-avif/sc_ganquan.avif",
+    "originalSrc": "assets/colored/sc_ganquan.png",
+    "transparentSrc": "assets/colored-transparent/sc_ganquan.png",
+    "transparent": true,
+    "visualReview": "approved_default",
+    "alt": "仁寿甘泉寺 · 现存大雄宝殿 · 设色图",
+    "width": 1536,
+    "height": 1024,
+    "tint": false,
+    "record": "assets/color-research/sc_ganquan.json",
+    "references": [
+      {
+        "page": "https://meishan.scol.com.cn/msly/202206/58550186.html",
+        "author": "图据眉山市文广旅局；摄影者未署名",
+        "license": "来源未注明许可，仅作研究与生成参考"
+      }
+    ]
+  },
   "longmenshiku": {
     "src": "assets/colored-transparent-avif/longmenshiku.avif",
     "originalSrc": "assets/color-studies/v1/longmenshiku-colored.png",

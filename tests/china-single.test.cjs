@@ -15,7 +15,7 @@ const byID = Object.fromEntries(SITES.map(site => [site.id, site]));
 const { curations } = require('../curations.js');
 
 test('building splits preserve old IDs exclusively as collection records and ship every new member', () => {
-  assert.equal(SITES.length, batch.baseline_catalog_count + batch.ids.length + followup.ids.length);
+  assert.equal(SITES.length, batch.baseline_catalog_count + batch.ids.length + followup.ids.length + JSON.parse(read('assets/research/ganquan-20261016-batch.json')).ids.length);
   assert.equal(new Set(batch.ids).size, batch.ids.length);
   assert.deepEqual(Object.values(batch.delivered_groups).flat().sort(), [...batch.ids].sort());
   for (const [parent, ids] of Object.entries(batch.delivered_groups)) {

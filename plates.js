@@ -7199,6 +7199,18 @@ const PLATES = {
       "涿州智度寺塔 · 塔身现貌",
       "辽太平十一年"
     ]
+  },
+  "sc_ganquan": {
+    "src": "assets/plates/sc_ganquan.png",
+    "alt": "仁寿甘泉寺 · 现存大雄宝殿 · 线稿",
+    "width": 1536,
+    "height": 1024,
+    "color": "#7290bd",
+    "tint": false,
+    "caption": [
+      "仁寿甘泉寺 · 大雄宝殿",
+      "明代遗构 · 后世修缮"
+    ]
   }
 };
 
