@@ -2,7 +2,7 @@
 """Add explicitly labelled sample accounts to a separate, disposable prototype database."""
 import argparse
 from pathlib import Path
-from server import Community, DIMENSIONS, now
+from server import Community, DIMENSIONS
 
 SAMPLES = [
     ('yanbei', '雁北行', '沿着木构，慢慢读山西。', 0),
@@ -24,23 +24,26 @@ TEXTS = {
 
 def seed(database):
     app = Community(database)
-    with app.lock, app.db:
-        for i, (handle, name, bio, avatar) in enumerate(SAMPLES):
-            existing = app.one('SELECT * FROM users WHERE handle=?', (handle,))
-            if existing and not existing['demo']:
-                raise RuntimeError(f'Refusing to overwrite real account: {handle}')
-            if not existing:
-                result = app.dispatch('POST', '/v1/auth/register', {}, {'handle': handle, 'password': 'fanggu-demo-2026', 'nickname': name, 'acceptPublicReviews': True}, '', 'seed-' + handle)
+    for i, (handle, name, bio, avatar) in enumerate(SAMPLES):
+        existing = app.one('SELECT * FROM users WHERE handle=?', (handle,))
+        if existing and not existing['demo']:
+            raise RuntimeError(f'Refusing to overwrite real account: {handle}')
+        credentials = {'handle': handle, 'password': 'fanggu-demo-2026', 'nickname': name, 'acceptPublicReviews': True}
+        if existing:
+            token = app.handle('POST', '/v1/auth/login', {}, credentials, '', 'seed-' + handle)['token']
+        else:
+            result = app.handle('POST', '/v1/auth/register', {}, credentials, '', 'seed-' + handle)
+            token = result['token']
+            with app.db:
                 app.db.execute('UPDATE users SET demo=1,bio=?,avatar=? WHERE id=?', (bio, avatar, result['user']['id']))
-            current = app.one('SELECT * FROM users WHERE handle=?', (handle,))
-            token = app.session(current)['token']
-            for j, (site_id, texts) in enumerate(TEXTS.items()):
-                if j > 0 and i >= len(texts):
-                    continue
-                if app.one('SELECT 1 FROM reviews WHERE user_id=? AND site_id=?', (current['id'], site_id)):
-                    continue
-                values = [5, 4, 5, 4, 3, 4] if i % 2 == 0 else [4, 4, 4, 5, 4, 5]
-                app.dispatch('PUT', '/v1/me/reviews/' + site_id, {}, {'dimensions': dict(zip(DIMENSIONS, values)), 'text': texts[i % len(texts)], 'baseRevision': 0, 'mutationID': f'seed-{handle}-{site_id}'.replace('_', '-')}, token, 'seed')
+        current = app.one('SELECT * FROM users WHERE handle=?', (handle,))
+        for j, (site_id, texts) in enumerate(TEXTS.items()):
+            if j > 0 and i >= len(texts):
+                continue
+            if app.one('SELECT 1 FROM reviews WHERE user_id=? AND site_id=?', (current['id'], site_id)):
+                continue
+            values = [5, 4, 5, 4, 3, 4] if i % 2 == 0 else [4, 4, 4, 5, 4, 5]
+            app.handle('PUT', '/v1/me/reviews/' + site_id, {}, {'dimensions': dict(zip(DIMENSIONS, values)), 'text': texts[i % len(texts)], 'baseRevision': 0, 'mutationID': f'seed-{handle}-{site_id}'.replace('_', '-')}, token, 'seed')
     app.close()
     print('Labelled sample content ready. Sample account: yanbei / fanggu-demo-2026')
 

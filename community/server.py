@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fanggu community JSON service. Persistent SQLite; no third-party runtime dependencies."""
 import argparse
+from contextlib import contextmanager
 import hashlib
 import hmac
 import json
@@ -34,13 +35,21 @@ class APIError(Exception):
 
 
 class Community:
+    """Database work runs one request at a time, so each request's checks and writes stay atomic.
+    Password hashing happens outside that lock and releases the GIL, so logins no longer stall
+    everyone else. Reads stay serialized on purpose: threads reading in parallel hand the GIL back
+    and forth on every SQLite row and cut throughput several times over in measurement."""
+
     def __init__(self, database, catalog=None):
         Path(database).parent.mkdir(parents=True, exist_ok=True)
-        self.db = sqlite3.connect(database, check_same_thread=False)
-        self.db.row_factory = sqlite3.Row
-        self.db.execute('PRAGMA foreign_keys=ON')
-        self.db.execute('PRAGMA journal_mode=WAL')
-        self.lock = threading.RLock()
+        self.database = database
+        # Scripts and tests use `main` directly on their own thread; requests use `requests` under the lock.
+        self.main = self.connect()
+        self.main.execute('PRAGMA journal_mode=WAL')
+        self.requests = self.connect(autocommit=True)
+        self.local = threading.local()
+        self.lock = threading.Lock()
+        self.limits_lock = threading.Lock()
         self.limits = {}
         self.sites = {s['id']: s for s in (catalog if catalog is not None else json.loads((ROOT / 'ios/Fanggu/Resources/catalog.json').read_text()))}
         self.blocked_terms = [t.strip().casefold() for t in os.environ.get('FANGGU_BLOCKED_TERMS', '').split(',') if t.strip()]
@@ -76,20 +85,49 @@ class Community:
         CREATE INDEX IF NOT EXISTS follows_target ON follows(target);
         ''')
 
+    def connect(self, autocommit=False):
+        db = sqlite3.connect(self.database, check_same_thread=False, timeout=10,
+                             isolation_level=None if autocommit else '')
+        db.row_factory = sqlite3.Row
+        db.execute('PRAGMA foreign_keys=ON')
+        return db
+
+    @property
+    def db(self):
+        return getattr(self.local, 'db', None) or self.main
+
+    @contextmanager
+    def transaction(self, write):
+        with self.lock:
+            db = self.local.db = self.requests
+            try:
+                # IMMEDIATE takes SQLite's write lock up front, so a concurrent moderate.py waits instead of failing.
+                db.execute('BEGIN IMMEDIATE' if write else 'BEGIN')
+                try:
+                    yield db
+                except BaseException:
+                    db.execute('ROLLBACK')
+                    raise
+                db.execute('COMMIT')
+            finally:
+                self.local.db = None
+
     def close(self):
-        self.db.close()
+        self.requests.close()
+        self.main.close()
 
     def one(self, sql, args=()):
         return self.db.execute(sql, args).fetchone()
 
     def limit(self, key, count, seconds):
-        stamp = time.monotonic()
-        recent = [t for t in self.limits.get(key, []) if t > stamp - seconds]
-        if len(recent) >= count:
-            raise APIError(429, '操作太频繁，请稍后再试。')
-        self.limits[key] = recent + [stamp]
-        if len(self.limits) > 10000:
-            self.limits = {k: v for k, v in self.limits.items() if v[-1] > stamp - 3600}
+        with self.limits_lock:
+            stamp = time.monotonic()
+            recent = [t for t in self.limits.get(key, []) if t > stamp - seconds]
+            if len(recent) >= count:
+                raise APIError(429, '操作太频繁，请稍后再试。')
+            self.limits[key] = recent + [stamp]
+            if len(self.limits) > 10000:
+                self.limits = {k: v for k, v in self.limits.items() if v[-1] > stamp - 3600}
 
     def text(self, value, maximum, label, minimum=0):
         if not isinstance(value, str) or not minimum <= utf16_length(value) <= maximum or '\x00' in value:
@@ -145,8 +183,59 @@ class Community:
                 'dimensions': averages if len(full) >= MIN_RATINGS else {}}
 
     def handle(self, method, path, query, body, token='', address='local'):
-        with self.lock, self.db:
+        parts = [unquote(p) for p in path.strip('/').split('/')]
+        if method == 'POST' and parts in (['v1', 'auth', 'register'], ['v1', 'auth', 'login']):
+            return self.sign_in(parts[-1], body, address)
+        if method == 'DELETE' and parts == ['v1', 'me']:
+            return self.delete_account(body, token)
+        with self.transaction(write=method != 'GET'):
             return self.dispatch(method, path, query, body, token, address)
+
+    def sign_in(self, action, body, address):
+        self.limit(('auth', address), 30, 300)
+        handle = body.get('handle', '').strip().lower() if isinstance(body.get('handle'), str) else ''
+        if not re.fullmatch(r'[a-z0-9_]{3,24}', handle):
+            raise APIError(422, '账号请使用 3–24 位字母、数字或下划线。')
+        password = self.text(body.get('password'), 128, '密码', 8)
+        if action == 'register':
+            if body.get('acceptPublicReviews') is not True:
+                raise APIError(422, '请先确认评分与短评的公开同步规则。')
+            nickname = self.text(body.get('nickname', ''), 24, '昵称', 1).strip()
+            if not nickname:
+                raise APIError(422, '昵称不能为空。')
+            salt = secrets.token_hex(16)
+            digest = self.password_hash(password, salt)
+            with self.transaction(write=True):
+                try:
+                    self.db.execute('INSERT INTO users(id,handle,nickname,password,salt,created_at) VALUES(?,?,?,?,?,?)',
+                                    (secrets.token_hex(16), handle, nickname, digest, salt, now()))
+                except sqlite3.IntegrityError:
+                    raise APIError(409, '这个账号已被使用，请换一个。')
+                return self.session(self.one('SELECT * FROM users WHERE handle=?', (handle,)))
+        with self.transaction(write=False):
+            row = self.one('SELECT * FROM users WHERE handle=?', (handle,))
+        valid = self.password_hash(password, row['salt'] if row else '00' * 16)
+        if row is None or not hmac.compare_digest(valid, row['password']):
+            raise APIError(401, '账号或密码不正确。')
+        with self.transaction(write=True):
+            # The account may have been deleted while the password was being checked.
+            row = self.one('SELECT * FROM users WHERE id=? AND password=?', (row['id'], row['password']))
+            if row is None:
+                raise APIError(401, '账号或密码不正确。')
+            return self.session(row)
+
+    def delete_account(self, body, token):
+        with self.transaction(write=False):
+            current = self.auth(token)
+        self.limit(('write', current['id']), 120, 60)
+        password = self.text(body.get('password'), 128, '密码', 8)
+        if not hmac.compare_digest(self.password_hash(password, current['salt']), current['password']):
+            raise APIError(403, '密码不正确，账号尚未删除。')
+        with self.transaction(write=True):
+            if self.auth(token)['id'] != current['id']:
+                raise APIError(401, '登录已失效，请重新登录。')
+            self.db.execute('DELETE FROM users WHERE id=?', (current['id'],))
+            return {'ok': True}
 
     def dispatch(self, method, path, query, body, token, address):
         parts = [unquote(p) for p in path.strip('/').split('/')]
@@ -155,29 +244,6 @@ class Community:
         if parts[:1] != ['v1']:
             raise APIError(404, '接口不存在。')
         parts = parts[1:]
-        if parts in (['auth', 'register'], ['auth', 'login']) and method == 'POST':
-            self.limit(('auth', address), 30, 300)
-            handle = body.get('handle', '').strip().lower() if isinstance(body.get('handle'), str) else ''
-            if not re.fullmatch(r'[a-z0-9_]{3,24}', handle):
-                raise APIError(422, '账号请使用 3–24 位字母、数字或下划线。')
-            password = self.text(body.get('password'), 128, '密码', 8)
-            if parts[-1] == 'register':
-                if body.get('acceptPublicReviews') is not True:
-                    raise APIError(422, '请先确认评分与短评的公开同步规则。')
-                nickname = self.text(body.get('nickname', ''), 24, '昵称', 1).strip()
-                if not nickname:
-                    raise APIError(422, '昵称不能为空。')
-                salt = secrets.token_hex(16)
-                try:
-                    self.db.execute('INSERT INTO users(id,handle,nickname,password,salt,created_at) VALUES(?,?,?,?,?,?)',
-                                    (secrets.token_hex(16), handle, nickname, self.password_hash(password, salt), salt, now()))
-                except sqlite3.IntegrityError:
-                    raise APIError(409, '这个账号已被使用，请换一个。')
-            row = self.one('SELECT * FROM users WHERE handle=?', (handle,))
-            valid = self.password_hash(password, row['salt'] if row else '00' * 16)
-            if row is None or not hmac.compare_digest(valid, row['password']):
-                raise APIError(401, '账号或密码不正确。')
-            return self.session(row)
         current = self.auth(token, required=bool(token) or method != 'GET' or parts[:1] == ['me'])
         uid = current['id'] if current else None
         if method != 'GET':
@@ -196,12 +262,6 @@ class Community:
                     raise APIError(422, '个人资料无效。')
                 self.db.execute('UPDATE users SET nickname=?,bio=?,avatar=? WHERE id=?', (nickname, bio, avatar, uid))
                 return self.user(self.one('SELECT * FROM users WHERE id=?', (uid,)), uid)
-            if method == 'DELETE':
-                password = self.text(body.get('password'), 128, '密码', 8)
-                if not hmac.compare_digest(self.password_hash(password, current['salt']), current['password']):
-                    raise APIError(403, '密码不正确，账号尚未删除。')
-                self.db.execute('DELETE FROM users WHERE id=?', (uid,))
-                return {'ok': True}
         if parts == ['me', 'reviews'] and method == 'GET':
             return {'items': [self.review(r, uid) for r in self.db.execute('SELECT * FROM reviews WHERE user_id=? ORDER BY sequence', (uid,))]}
         if len(parts) == 3 and parts[:2] == ['me', 'reviews'] and method == 'PUT':
