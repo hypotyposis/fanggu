@@ -7,7 +7,7 @@
 | 层 | 命令 | 覆盖 | 前置条件 |
 | --- | --- | --- | --- |
 | Node 回归 | `node --test tests/*.test.cjs` | 目录一致性、分类与搜索、国保、各批次交付记录与哈希、生成脚本行为、iOS 导出、地图几何 | Node.js；大多数文件需要完整本地素材；`line-plate`、`prototype-pipeline` 需要 `magick`；`ios-map-layout` 需要 Swift 工具链，没有则自动跳过 |
-| 国保核对 | `node scripts/prepare-protection.mjs --check` | `protection-data.js` 是否过期 | 无 |
+| 中日保护资料核对 | `node scripts/prepare-protection.mjs --check` | `protection-data.js` 是否过期 | 无 |
 | Python 单元 | `python3 -B -m unittest discover -s tests -p 'test_*.py'` | 去底与转码规则、API 入口参数、素材包往返 | NumPy、带 AVIF 的 Pillow、Git；全部用合成数据，不需要图版 |
 | 差异检查 | `git diff --check` | 空白问题 | 无 |
 | 原生单元 | `sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests` | 个人记录、备份兼容、撤销、搜索、年表索引、底图、测试作用域 | Xcode、XcodeGen；脚本自建本会话模拟器 |
@@ -39,7 +39,7 @@
 目录数据改动的最小集合：
 
 ```bash
-node --test tests/facets.test.cjs tests/ios-catalog.test.cjs tests/protection.test.cjs
+node --test tests/facets.test.cjs tests/ios-catalog.test.cjs tests/protection.test.cjs tests/japanese-protection.test.cjs
 ```
 
 按名称过滤某个文件里的用例：

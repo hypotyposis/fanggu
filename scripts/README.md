@@ -25,7 +25,7 @@
 
 | 脚本 | 作用 | 读取 | 写入 | 依赖与标志 |
 | --- | --- | --- | --- | --- |
-| `prepare-protection.mjs` | 校验国保源数据并生成登记模块 | `assets/research/national-protection.json`、`sites.js` | `protection-data.js` | `--check` 只读核对是否过期，不写文件；不碰图片与个人记录 |
+| `prepare-protection.mjs` | 校验中国国保与日本保护源数据并生成登记模块 | `assets/research/national-protection.json`、`assets/research/japanese-protection.json`、`sites.js` | `protection-data.js` | `--check` 只读核对是否过期，不写文件；不碰图片与个人记录 |
 | `asset-bundle.py` | 被忽略素材的锁定、校验、打包、恢复 | `assets/asset-lock.json`、`ios/Fanggu/Resources/catalog.json`、`assets/**` | `lock` 写清单；`pack` 写 `asset-dist/<assetSet>/`（`index.json` 与分卷 TAR）；`restore` 写 `assets/**` | 子命令 `lock`、`verify`、`pack`、`restore`；`--profile runtime|full`（默认 `full`）；`--bundle DIR`；`--force` 覆盖内容不同的本地文件；`--root`。`lock` 要求 `runtime` 文件齐备并被 Git 忽略；`pack` 要求目标目录为空 |
 
 ## iOS 导出 `ios/scripts/`
@@ -39,6 +39,6 @@
 
 ## 典型顺序
 
-目录数据改动：`prepare-protection.mjs`（若改国保）→ `build-catalog.cjs` → 测试。
+目录数据改动：`prepare-protection.mjs`（若改中日保护资料）→ `build-catalog.cjs` → 测试。
 
 新增图版：`prepare-plates.mjs` → `prepare-colored-avif.py` → `collect-colored-plates.mjs --require-complete` → `build-catalog.cjs` → `sync-artwork.sh assets` → 测试与浏览器检查。每一步确认成功退出后再进行下一步；返回会话 ID 的工具调用要等到完成。

@@ -16,8 +16,8 @@
 | `docs/reviews/` | 带日期的设计评审与修复记录 | 历史资料，不是新任务的授权 |
 | `sites.js` | 目录源数据：`DYN` 时代、`SITES` 古迹、`CHAPTERS` 章节、`PLACES` 地点 | 手工维护 |
 | `catalog.js` | 国家、地区、省份、类型定义与分类、筛选、搜索逻辑 | 手工维护；浏览器全局与 CommonJS 双入口 |
-| `protection.js` | 国保查询接口：标签、批次名、搜索文本 | 手工维护 |
-| `protection-data.js` | 国保登记数据 | **生成**自 `assets/research/national-protection.json` |
+| `protection.js` | 中日保护身份查询接口：标签、批次名、搜索文本 | 手工维护 |
+| `protection-data.js` | 中国国保与日本指定登记数据 | **生成**自 `assets/research/national-protection.json`、`assets/research/japanese-protection.json` |
 | `plates.js` | 线稿图版清单 `PLATES`，加载时把 `image` 写回 `SITES` | **生成** |
 | `colored-plates.js` | 设色图版清单 `COLORED_PLATES` | **生成** |
 | `sources.html` | 图版来源与署名页 | **生成** |
@@ -81,9 +81,9 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 
 多单体拆分以 `sites.js` 的 `collectionOnly` 保存旧目录 ID，并以 `curations.js` 的建筑群集合（`kind: collection`、`legacySiteID`、`items`）列出新单体。导出保留全部 ID；原生 `LibraryStore` 的可浏览目录只含单体，旧记录仍按原 ID 在集合页访问。集合快捷打卡经过 `LibraryStore` 一次原子写入，进度仍来自成员记录。
 
-### 国保：官方名单到标签
+### 保护身份：官方名单到标签
 
-`assets/research/national-protection.json` 是唯一源数据。`node scripts/prepare-protection.mjs` 生成 `protection-data.js`；`protection.js` 提供 `forSite`、`badges`、`searchText`；`catalog.js` 分类时附带登记；导出进入 `catalog.json` 的 `protection[]`。规则与来源见 [国保标签与选目规则](national-protection.md)。
+中国国保源数据为 `assets/research/national-protection.json`；日本国宝、重要文化财独立保存在 `assets/research/japanese-protection.json`。`node scripts/prepare-protection.mjs` 生成 `protection-data.js`（日本资料在 `japan`）；`protection.js` 提供共用的 `forSite`、`badges`、`searchText`；`catalog.js` 分类时附带登记；导出进入三语目录的 `protection[]`。规则与来源见 [国保标签与选目规则](national-protection.md)及[日本保护身份](japanese-protection.md)。
 
 ## 源文件与生成文件
 
@@ -92,7 +92,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `plates.js`、`sources.html`、`assets/plates/*.png` | `scripts/prepare-plates.mjs` | `sites.js`、`palette.css`、`assets/generated/`、`assets/research/*.json` | JS 与 HTML 跟踪；PNG 忽略 |
 | `assets/colored-transparent/`、`assets/colored-transparent-avif/`、`assets/color-research/avif-manifest.json` | `scripts/prepare-colored-avif.py` | `queue.json`、`assets/colored/`、`assets/color-studies/v1/`、逐图设色记录 | 清单跟踪；图片忽略 |
 | `colored-plates.js`、`assets/color-research/progress.json`、`prompts.json` | `scripts/collect-colored-plates.mjs` | `queue.json`、逐图设色记录、`avif-manifest.json` | 跟踪 |
-| `protection-data.js` | `scripts/prepare-protection.mjs` | `assets/research/national-protection.json` | 跟踪 |
+| `protection-data.js` | `scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`assets/research/japanese-protection.json` | 跟踪 |
 | `ios/Fanggu/Resources/catalog.json`、`catalog-en.json`、`catalog-ja.json`、`curations.json`、`curations-en.json`、`curations-ja.json` | `ios/scripts/build-catalog.cjs` | 上述全部 JS、`curations.js`、`palette.css`、研究 JSON、`i18n/*.json` | 跟踪 |
 | `ios/Fanggu/Resources/Artwork/` | `ios/scripts/sync-artwork.sh` | `assets/plates/`、`assets/colored-transparent-avif/`、`assets/longmen-vairocana.png` | 忽略 |
 | `ios/Fanggu.xcodeproj/` | `xcodegen generate` | `ios/project.yml` | 跟踪 |

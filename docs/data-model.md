@@ -92,6 +92,10 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`region
 
 同一 ID 不能同时出现在 `entries` 与 `untagged`；两处的 ID 都必须存在于 `SITES`。目录里尚无登记的新 ID 允许存在，不阻塞原型制图。
 
+## 日本保护源数据 `assets/research/japanese-protection.json`
+
+与中国国保资料分开维护，生成到 `protection-data.js` 的 `japan`。字段、官方核对范围、三语译文与维护命令见[日本保护身份](japanese-protection.md)。每条指定使用 `system: "JP"`、`designation: "national_treasure" | "important_cultural_property"`、`batch: null` 与 `designatedOn: "YYYY-MM-DD"`；其余单位、范围、来源字段沿用共用保护接口。未贴标签项保留原因与证据，不自动映射中国批次。
+
 ## 线稿记录 `assets/research/<id>.json`
 
 每张线稿一份，`prepare-plates.mjs` 读取它生成清单与来源页。核心字段：
@@ -184,7 +188,7 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`region
 | `captions` | `image.caption`，否则 `SITES.caption` |
 | `lineImage`、`colorImage` | 线稿 PNG 与设色 AVIF 的文件名，不含目录 |
 | `sourceURL`、`sourceLinks[]` | 设色记录中首个带页面的参考；研究与设色记录中去重后的 `{ title, url }` |
-| `protection[]` | `{ batch, unitName, relation, scope, locator, note, sourceTitle, sourceURL }` |
+| `protection[]` | `{ batch, unitName, relation, scope, locator, note, sourceTitle, sourceURL }`；日本条目另含 `system: "JP"`、`designation`、`designatedOn`，`batch` 为 `null` |
 
 导出在重复 ID、缺地点、缺图版、缺时代色时失败。
 

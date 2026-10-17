@@ -24,7 +24,7 @@
 | --- | --- | --- |
 | 只有 `*.md` | 无 | 链接、路径、命令描述；`git diff --check` |
 | `sites.js`、`catalog.js` 或 `assets/research/<id>.json` 的文字、分类与坐标 | `node ios/scripts/build-catalog.cjs` | `node --test tests/*.test.cjs` |
-| `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs`，再 `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check` 与 Node 测试 |
+| `assets/research/national-protection.json`、`assets/research/japanese-protection.json` | `node scripts/prepare-protection.mjs`，再 `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check` 与 Node 测试 |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs`，再 `build-catalog.cjs`、`sh ios/scripts/sync-artwork.sh assets` | Node 测试、审图页、App |
 | 新增古迹或图版 | [手册第 5 节](docs/monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App |
 | `ios/Fanggu/*.swift` | 无数据重建 | 相关 `FangguTests`、`FangguUITests`，独立模拟器 |

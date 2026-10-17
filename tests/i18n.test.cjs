@@ -113,8 +113,8 @@ test('language catalogs keep every fixed field and fall back to Chinese where a 
       assert.equal(site.regionName, terms.regions[source.region]);
       assert.equal(site.dynastyName, terms.dynasties[source.dynasty]);
       assert.deepEqual(site.typeNames, source.types.map(type => terms.types[type]));
-      assert.deepEqual(site.protection.map(item => [item.batch, item.relation, item.locator, item.sourceURL]),
-        source.protection.map(item => [item.batch, item.relation, item.locator, item.sourceURL]));
+      assert.deepEqual(site.protection.map(item => [item.system, item.designation, item.designatedOn, item.batch, item.relation, item.locator, item.sourceURL]),
+        source.protection.map(item => [item.system, item.designation, item.designatedOn, item.batch, item.relation, item.locator, item.sourceURL]));
       source.protection.forEach((item, position) => {
         const translated = Array.isArray(entry.protection) && entry.protection.length === source.protection.length ? entry.protection[position] : {};
         const exported = site.protection[position];

@@ -63,7 +63,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js → curations.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
 
-国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
+中国国保的唯一源数据为 `assets/research/national-protection.json`，日本指定资料为 `assets/research/japanese-protection.json`（[维护规则](japanese-protection.md)），身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
 
 ## 数据和个人记录
 
@@ -155,7 +155,7 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 
 | 操作 | 输入 | 写入 / 注意事项 |
 | --- | --- | --- |
-| `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
+| `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`assets/research/japanese-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
 | `node scripts/prepare-plates.mjs` | `sites.js`、`palette.css`、线稿原稿、线稿考据 JSON 与白底处理记录 | `assets/plates/`、`plates.js`、`sources.html`；需要 `magick`，按单张原稿、考据记录、处理器时间和图版配色增量重建 |
 | `python3 -B scripts/prepare-colored-avif.py` | `queue.json`、批量设色 PNG、三张已确认 PNG | 白底去底或保留原生 alpha（旧暗底原件按哈希兼容），生成 `assets/colored-transparent/` 透明 PNG，再写 `assets/colored-transparent-avif/` 与 `assets/color-research/avif-manifest.json`；AVIF Q85、4:4:4、speed=6，原 PNG 不变，按来源、抠图参数和编码器哈希复用 |
 | `node scripts/record-plate-review.mjs color --default --all-pending`（`line` 同理） | 逐图记录、原件、透明 PNG、AVIF 与转码清单 | 把仍为 `pending_user` 的图写成 `approved_default`（`reviewer: default-policy`、`policy: default-approve-2026-10-05`），绑定当前文件哈希并同步 `visual_review_status`；不改图片，不覆盖已有 `approved_user`。不带 `--default` 而列 ID 时记 `approved_user`，只在用户明确说通过后使用；之后重跑转码与汇总 |

@@ -95,6 +95,7 @@ const base = sites.map(site => {
     sourceURL: color.references?.find(ref => ref.page)?.page || '', sourceLinks,
     relatedSites: localizeRelatedSites(recommendations[site.id]),
     protection: site.protection.map(entry => ({
+      ...(entry.system === 'JP' ? { system: entry.system, designation: entry.designation, designatedOn: entry.designatedOn } : {}),
       batch: entry.batch, unitName: entry.unitName, relation: entry.relation,
       scope: entry.scope, locator: entry.locator, note: entry.note || '',
       sourceTitle: protectionSources[entry.source]?.title || '',

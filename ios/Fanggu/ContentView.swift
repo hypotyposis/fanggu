@@ -840,8 +840,9 @@ struct MonumentCard: View {
             .accessibilityIdentifier("catalog-site-\(site.id)")
             if !site.protection.isEmpty {
                 FangguFittingRow {
-                    ForEach(site.protection, id: \.self) { entry in
-                        Text(entry.batchLabel)
+                    ForEach(site.protectionBadgeLabels, id: \.self) { label in
+                        Text(verbatim: label)
+                            .accessibilityIdentifier("catalog-protection-\(site.id)")
                             .font(FangguFont.mono(10)).fixedSize()
                             .foregroundStyle(Palette.gold)
                             .padding(.horizontal, 8)

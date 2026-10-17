@@ -31,6 +31,9 @@ final class LocalizationTests: XCTestCase {
                 XCTAssertEqual(site.initialStatus, source.initialStatus)
                 XCTAssertEqual(site.facts.count, source.facts.count)
                 XCTAssertEqual(site.protection.map(\.batch), source.protection.map(\.batch))
+                XCTAssertEqual(site.protection.map(\.system), source.protection.map(\.system))
+                XCTAssertEqual(site.protection.map(\.designation), source.protection.map(\.designation))
+                XCTAssertEqual(site.protection.map(\.designatedOn), source.protection.map(\.designatedOn))
             }
             XCTAssertEqual(store.timeline.sorted.map(\.id), stores[0].timeline.sorted.map(\.id))
         }
@@ -64,9 +67,37 @@ final class LocalizationTests: XCTestCase {
         XCTAssertEqual(Set(ReviewDimension.allCases.map(\.title)).count, ReviewDimension.allCases.count)
         let entry = ProtectionEntry(batch: 6, unitName: "", relation: "unit", scope: "", locator: "", note: "", sourceTitle: "", sourceURL: "")
         switch AppLanguage.current {
-        case .simplifiedChinese: XCTAssertEqual(entry.batchLabel, "第六批国保")
-        case .english, .japanese: XCTAssertTrue(entry.batchLabel.contains("6"), entry.batchLabel)
+        case .simplifiedChinese: XCTAssertEqual(entry.badgeLabel, "第六批国保")
+        case .english, .japanese: XCTAssertTrue(entry.badgeLabel.contains("6"), entry.badgeLabel)
         }
+    }
+
+    @MainActor func testJapaneseProtectionLabelsAndSearchStaySeparateFromChineseBatches() throws {
+        for language in AppLanguage.allCases {
+            let store = LibraryStore(fileURL: temporaryFile(), language: language)
+            let treasure = try XCTUnwrap(store.monuments.first { $0.id == "horyuji" })
+            let important = try XCTUnwrap(store.monuments.first { $0.id == "jp_osaka_sengan" })
+            XCTAssertEqual(treasure.protection.first?.designation, "national_treasure")
+            XCTAssertEqual(important.protection.first?.designation, "important_cultural_property")
+            XCTAssertNil(treasure.protection.first?.batch)
+            for (site, query) in [(treasure, "国宝"), (important, "重要文化財"),
+                                  (treasure, "National Treasure"), (important, "Important Cultural Property")] {
+                XCTAssertTrue(CatalogSearch.matches(site, terms: CatalogSearch.terms(query)), "\(language) \(query)")
+                XCTAssertFalse(CatalogSearch.matches(site, terms: ["国保"]), site.id)
+                XCTAssertFalse(site.protection.first?.sourceURL.isEmpty ?? true)
+            }
+            XCTAssertEqual(treasure.protectionBadgeLabels.count, 1)
+            let compound = try XCTUnwrap(store.monuments.first { $0.id == "jp_sumiyoshi_honden" })
+            XCTAssertEqual(compound.protection.count, 4, "All four depicted sanctuaries are sourced")
+            XCTAssertEqual(compound.protectionBadgeLabels.count, 1, "A compound shares one level badge")
+            let rebuilt = try XCTUnwrap(store.monuments.first { $0.id == "jp_kinkaku" })
+            XCTAssertTrue(rebuilt.protection.isEmpty)
+        }
+        let old = Data(#"{"batch":6,"unitName":"x","relation":"unit","scope":"","locator":"","note":"","sourceTitle":"","sourceURL":""}"#.utf8)
+        let chinese = try JSONDecoder().decode(ProtectionEntry.self, from: old)
+        XCTAssertNil(chinese.system)
+        XCTAssertEqual(chinese.batch, 6, "Older Chinese catalogues continue to decode")
+        XCTAssertTrue(chinese.searchTerms.contains("第6批国保"))
     }
 
     @MainActor func testExpandedJapaneseRegionsAreSearchableInEveryLanguage() throws {

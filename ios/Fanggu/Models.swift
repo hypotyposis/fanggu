@@ -57,6 +57,10 @@ struct Monument: Decodable, Identifiable, Hashable {
     var relatedSites: [SiteRecommendation]? = nil
 
     var accent: Color { Palette.dynasty(dynastyColor) }
+    var protectionBadgeLabels: [String] {
+        var seen = Set<String>()
+        return protection.map(\.badgeLabel).filter { seen.insert($0).inserted }
+    }
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
     var periodLabel: String {
         displayYearLabel.isEmpty ? dynastyName : "\(dynastyName) · \(displayYearLabel)"
@@ -135,7 +139,7 @@ struct SourceLink: Decodable, Hashable {
 }
 
 struct ProtectionEntry: Decodable, Hashable {
-    let batch: Int
+    let batch: Int?
     let unitName: String
     let relation: String
     let scope: String
@@ -143,12 +147,33 @@ struct ProtectionEntry: Decodable, Hashable {
     let note: String
     let sourceTitle: String
     let sourceURL: String
+    /// Absent in older catalogues and Chinese entries; Japan has designations rather than batches.
+    var system: String? = nil
+    var designation: String? = nil
+    var designatedOn: String? = nil
 
-    var batchLabel: String {
+    var badgeLabel: String {
+        if system == "JP" {
+            return designation == "national_treasure"
+                ? String(localized: "日本国宝") : String(localized: "日本重要文化财")
+        }
+        guard let batch else { return "" }
         guard AppLanguage.current == .simplifiedChinese else { return String(localized: "第\(batch)批国保") }
         let numerals = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"]
         let number = batch < 10 ? numerals[batch] : "\(numerals[batch / 10])十\(batch % 10 == 0 ? "" : numerals[batch % 10])"
         return "第\(number)批国保"
+    }
+
+    var searchTerms: [String] {
+        if system == "JP" {
+            let names = designation == "national_treasure"
+                ? ["日本国宝", "国宝", "National Treasure"]
+                : ["日本重要文化财", "重要文化财", "重要文化財", "Important Cultural Property"]
+            return [unitName, scope, badgeLabel] + names
+        }
+        guard let batch else { return [unitName, scope] }
+        return [unitName, scope, badgeLabel, "第\(batch)批国保", "国保", "全国重点文物保护单位",
+                String(localized: "全国重点文物保护单位")]
     }
 }
 

@@ -49,8 +49,9 @@ struct MonumentDetailView: View {
                 }
                 if !site.protection.isEmpty {
                     FangguFittingRow {
-                        ForEach(site.protection, id: \.self) { entry in
-                            Text(entry.batchLabel).font(FangguFont.mono(10)).fixedSize()
+                        ForEach(site.protectionBadgeLabels, id: \.self) { label in
+                            Text(verbatim: label).font(FangguFont.mono(10)).fixedSize()
+                                .accessibilityIdentifier("detail-protection-\(site.id)")
                                 .foregroundStyle(Palette.gold).padding(6)
                                 .overlay(Rectangle().stroke(Palette.goldDim, lineWidth: 1))
                         }
@@ -99,15 +100,19 @@ struct MonumentDetailView: View {
                     Text("文物保护").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     ForEach(site.protection, id: \.self) { entry in
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(verbatim: "\(entry.batchLabel) · \(entry.unitName)")
+                            Text(verbatim: "\(entry.badgeLabel) · \(entry.unitName)")
                                 .font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
                             if !entry.scope.isEmpty { Text(entry.scope).foregroundStyle(Palette.paper2) }
                             if !entry.note.isEmpty { Text(entry.note).foregroundStyle(Palette.paper3) }
+                            if let date = entry.designatedOn {
+                                Text("指定日期 · \(date)").foregroundStyle(Palette.paper3)
+                            }
                             if let url = URL(string: entry.sourceURL), !entry.sourceURL.isEmpty {
                                 Link(destination: url) {
                                     Text(verbatim: "\(entry.sourceTitle.isEmpty ? String(localized: "保护信息来源") : entry.sourceTitle) ↗")
                                         .multilineTextAlignment(.leading)
                                 }
+                                    .accessibilityIdentifier("protection-source-\(site.id)")
                                     .foregroundStyle(Palette.gold)
                             }
                         }

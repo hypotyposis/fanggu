@@ -34,7 +34,9 @@ test('Tokyo additions retain subject dates, Japanese geography and independent u
     assert.equal(site.region, 'jp_kanto', id);
     assert.equal(site.province, '东京都', id);
     assert.equal(site.initialStatus, 'unvisited', id);
-    assert.equal(site.protection.length, 0, id);
+    assert.equal(site.protection.length, 1, id);
+    assert.equal(site.protection[0].system, 'JP', id);
+    assert.equal(site.protection[0].batch, null, id);
     assert(catalog.matches(site, { country: 'JP', province: '东京都', query: alias }), id);
     const exported = native.find(item => item.id === id);
     assert.equal(exported.year, year, id);

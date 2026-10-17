@@ -15,7 +15,7 @@
 | `catalog.js` 地区、国家、类型 | `build-catalog.cjs` | `facets`、`protection`、`ios-catalog` 测试与全套；App 筛选、搜索 | 同步 `ios/Fanggu/CatalogSearch.swift` 的名称与别名表 |
 | `curations.js` 专题选目理由、人工推荐 | `build-catalog.cjs` | Node 测试；`CurationTests`、`CurationUITests`；模拟器三语显示与返回位置 | 同步 `i18n/` 对应理由；不重建图片；字段见 [数据模型](data-model.md#专题选目与详情推荐) |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs` → `build-catalog.cjs` → `sh ios/scripts/sync-artwork.sh assets` | `ios-catalog` 测试；审图页；App | 线稿 PNG 会按新色重建，需要完整素材与 `magick`；随后更新 `asset-lock` |
-| `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs` → `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check`；`protection` 测试与全套；App 标签与搜索 | 不跑图版脚本，不改验收记录 |
+| `assets/research/national-protection.json`、`assets/research/japanese-protection.json` | `node scripts/prepare-protection.mjs` → `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check`；`protection` 测试与全套；App 标签与搜索 | 不跑图版脚本，不改验收记录 |
 | 新增或重绘古迹 | [手册第 5 节](monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App | 不只调数量断言；新图经默认通过命令记为 `approved_default`，不冒充 `approved_user` |
 | 图版处理脚本：`white-matte.py`、`prototype-matte.py`、`line-plate.mjs`、`prepare-colored-avif.py` | 受影响图版重建，再重跑默认通过命令、转码与汇总 | `python3 -B tests/test_transparency.py`；`line-plate`、`prototype-pipeline` 测试 | 处理器哈希进入缓存键；改严格处理器会使旧图缓存失效 |
 | `ios/Fanggu/*.swift` 界面与交互 | 无数据重建 | 相关 `FangguTests`、`FangguUITests`；独立模拟器实际操作 | 图版加载、切换、动效不得改写个人记录 |
@@ -78,7 +78,7 @@
 
 ### 更新国保资料
 
-见 [国保标签与选目规则 · 数据维护与命令](national-protection.md#数据维护与命令)。要点：只改 `assets/research/national-protection.json`；`node scripts/prepare-protection.mjs` 生成，`--check` 核对；再 `build-catalog.cjs`；不运行图版脚本。
+见 [国保标签与选目规则 · 数据维护与命令](national-protection.md#数据维护与命令)。日本指定见[日本保护身份](japanese-protection.md)。要点：分别维护 `assets/research/national-protection.json` 与 `assets/research/japanese-protection.json`；`node scripts/prepare-protection.mjs` 生成，`--check` 核对；再 `build-catalog.cjs`；不运行图版脚本。
 
 ### 新增或重绘古迹
 
