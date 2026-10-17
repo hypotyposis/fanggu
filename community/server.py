@@ -19,6 +19,11 @@ from urllib.parse import parse_qs, unquote, urlsplit
 DIMENSIONS = ('eraRarity', 'authenticity', 'construction', 'art', 'scale', 'setting')
 MIN_RATINGS = 5
 ROOT = Path(__file__).resolve().parents[1]
+# A deployed copy keeps catalog.json beside this file; a checkout reads the app's exported catalog.
+CATALOG = Path(__file__).with_name('catalog.json')
+if not CATALOG.exists():
+    CATALOG = ROOT / 'ios/Fanggu/Resources/catalog.json'
+LOOPBACK = ('127.0.0.1', '::1', '::ffff:127.0.0.1')
 
 
 def now():
@@ -51,7 +56,7 @@ class Community:
         self.lock = threading.Lock()
         self.limits_lock = threading.Lock()
         self.limits = {}
-        self.sites = {s['id']: s for s in (catalog if catalog is not None else json.loads((ROOT / 'ios/Fanggu/Resources/catalog.json').read_text()))}
+        self.sites = {s['id']: s for s in (catalog if catalog is not None else json.loads(CATALOG.read_text()))}
         self.blocked_terms = [t.strip().casefold() for t in os.environ.get('FANGGU_BLOCKED_TERMS', '').split(',') if t.strip()]
         self.db.executescript('''
         CREATE TABLE IF NOT EXISTS users (
@@ -415,7 +420,7 @@ class Handler(BaseHTTPRequestHandler):
                 raise APIError(400, '请求必须为 JSON 对象。')
             target = urlsplit(self.path)
             token = self.headers.get('Authorization', '').removeprefix('Bearer ')
-            result = self.server.community.handle(self.command, target.path, parse_qs(target.query), body, token, self.client_address[0])
+            result = self.server.community.handle(self.command, target.path, parse_qs(target.query), body, token, self.client_ip())
             self.respond(200, result)
         except APIError as exc:
             self.respond(exc.status, exc.payload)
@@ -428,6 +433,16 @@ class Handler(BaseHTTPRequestHandler):
             traceback.print_exc()
             self.respond(500, {'error': '服务暂时不可用，请稍后重试。'})
 
+    def client_ip(self):
+        """Rate limits key on this. Behind a local reverse proxy every peer is loopback, so the proxy's
+        X-Forwarded-For is used instead; it is trusted only from loopback and only when enabled."""
+        peer = self.client_address[0]
+        forwarded = self.headers.get('X-Forwarded-For', '')
+        if self.server.trust_proxy and peer in LOOPBACK and forwarded.strip():
+            # The proxy appends the address it saw, so the last entry is the one a client cannot forge.
+            return forwarded.split(',')[-1].strip()[:64] or peer
+        return peer
+
     do_GET = do_POST = do_PUT = do_PATCH = do_DELETE = run
 
     def log_message(self, fmt, *args):
@@ -435,9 +450,10 @@ class Handler(BaseHTTPRequestHandler):
         print(f'{self.log_date_time_string()} {self.command} {urlsplit(self.path).path}', flush=True)
 
 
-def serve(database, host='127.0.0.1', port=8787):
+def serve(database, host='127.0.0.1', port=8787, catalog=None, trust_proxy=False):
     server = ThreadingHTTPServer((host, port), Handler)
-    server.community = Community(database)
+    server.community = Community(database, catalog)
+    server.trust_proxy = trust_proxy
     return server
 
 
@@ -446,8 +462,11 @@ if __name__ == '__main__':
     parser.add_argument('--host', default='127.0.0.1')
     parser.add_argument('--port', default=8787, type=int)
     parser.add_argument('--database', default=str(Path(__file__).parent / 'data/community.sqlite'))
+    parser.add_argument('--catalog', type=Path, default=CATALOG, help='catalog.json exported for the iOS app')
+    parser.add_argument('--trust-proxy', action='store_true',
+                        help='behind a reverse proxy on this machine: rate-limit by its X-Forwarded-For')
     args = parser.parse_args()
-    server = serve(args.database, args.host, args.port)
+    server = serve(args.database, args.host, args.port, json.loads(args.catalog.read_text()), args.trust_proxy)
     print(f'Fanggu community listening on http://{args.host}:{args.port}', flush=True)
     try:
         server.serve_forever()

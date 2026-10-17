@@ -1,0 +1,15 @@
+# install.sh fills in the domain below and writes this to /etc/caddy/Caddyfile.
+# Caddy obtains and renews the HTTPS certificate once the domain's A record points here.
+# No access log: the service promises not to record request contents, and query strings carry searches.
+__DOMAIN__ {
+	encode gzip
+	request_body {
+		max_size 64KB
+	}
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+	# Caddy discards X-Forwarded-For sent by clients and sets the address it saw.
+	reverse_proxy 127.0.0.1:8787
+}

@@ -1,0 +1,16 @@
+# Daily consistent snapshot of the community database; started by fanggu-community-backup.timer.
+[Unit]
+Description=Back up the Fanggu community database
+
+[Service]
+Type=oneshot
+User=fanggu
+Group=fanggu
+ExecStart=/usr/bin/python3 /opt/fanggu-community/backup.py /var/lib/fanggu-community/community.sqlite /var/backups/fanggu-community --keep 14
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+# The backup API opens the live database, which in WAL mode also writes its shared-memory index.
+ReadWritePaths=/var/lib/fanggu-community /var/backups/fanggu-community

@@ -1,0 +1,35 @@
+# Community service behind Caddy on the same host. Installed by install.sh; see community/README.md.
+[Unit]
+Description=Fanggu community service
+After=network.target
+
+[Service]
+User=fanggu
+Group=fanggu
+WorkingDirectory=/opt/fanggu-community
+# Listens on loopback only; Caddy terminates HTTPS and forwards the client address.
+ExecStart=/usr/bin/python3 /opt/fanggu-community/server.py --host 127.0.0.1 --port 8787 --trust-proxy --database /var/lib/fanggu-community/community.sqlite
+# Optional settings such as FANGGU_BLOCKED_TERMS=word1,word2
+EnvironmentFile=-/etc/fanggu-community.env
+Environment=PYTHONUNBUFFERED=1
+# SIGINT runs the server's own shutdown path, which closes the database cleanly.
+KillSignal=SIGINT
+Restart=on-failure
+RestartSec=2
+StateDirectory=fanggu-community
+StateDirectoryMode=0750
+MemoryMax=512M
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LockPersonality=yes
+
+[Install]
+WantedBy=multi-user.target

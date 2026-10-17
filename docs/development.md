@@ -60,6 +60,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 | `ios/Fanggu/LibraryStore.swift` | 个人记录校验、保存、备份迁移与失败恢复 |
 | `ios/Fanggu/CommunityStore.swift` / `CommunityAPI.swift` | 社区账号、公开评价同步、冲突处理及 HTTP / Keychain |
 | `community/server.py` | 本机或局域网原型的账号、评价、关注、评分汇总和举报服务 |
+| `community/deploy/` | 社区服务部署到 Debian 服务器：Caddy、systemd、每日备份与 `deploy.sh` |
 | `ios/Fanggu/ContentView.swift` / `MonumentDetailView.swift` / `MapTimelineView.swift` / `TimelineView.swift` / `MyLibraryView.swift` | 原生图鉴、详情、地图年表和个人资料 |
 | `ios/Fanggu/Localizable.xcstrings` / `InfoPlist.xcstrings` / `Localization.swift` | 界面文字与 App 名称的英日译文；按系统为 App 解析的语言选择目录与字体 |
 

@@ -27,7 +27,39 @@ python3 community/server.py --host 0.0.0.0 --database community/data/prototype.s
 
 在 App 账号页的「原型连接设置」填写电脑的局域网地址（如 `http://192.168.1.20:8787`，换成实际地址）。设备需能访问该地址，首次连接允许 iOS 本地网络权限。Debug 原型可使用本地 HTTP；正式环境使用 HTTPS，Release 界面拒绝配置 HTTP 服务。可用 `FANGGU_COMMUNITY_URL` 启动环境变量指定服务，适合独立测试实例。
 
-账号密码登录已可实际注册、登录、退出和删除。短信、Apple 登录、国内公网域名和部署凭据属于后续环境接入，当前原型不伪造验证码、Apple 身份或公网连接。Python HTTP 服务用于本机和受控测试网络；公网部署应在 HTTPS 反向代理后运行，并补充运营配置、短信/Apple 账号绑定及生产级流量控制。
+账号密码登录已可实际注册、登录、退出和删除。短信、Apple 登录、国内公网域名和部署凭据属于后续环境接入，当前原型不伪造验证码、Apple 身份或公网连接。Python HTTP 服务用于本机和受控测试网络；公网部署按下文「部署到服务器」放在 Caddy 的 HTTPS 反向代理后运行，短信/Apple 账号绑定与生产级流量控制仍待补充。
+
+## 部署到服务器
+
+面向 Debian 12（Python 3.11 及以上）的单机部署：Caddy 终止 HTTPS 并自动申请证书，服务只监听 `127.0.0.1:8787`，由 systemd 托管。文件在 `community/deploy/`。
+
+前提：`~/.ssh/config` 中有能以 root 或 sudo 登录的 Host 别名；域名 A 记录指向服务器；服务器防火墙只放行 22、80、443。在仓库根目录：
+
+```sh
+sh community/deploy/deploy.sh fanggu-hk api.example.com
+```
+
+脚本先运行社区服务测试，失败即停止；然后上传 `server.py`、`moderate.py`、`catalog.json` 与部署文件，在服务器上执行 `install.sh`：首次安装 Caddy 与 Debian 自动安全更新（`unattended-upgrades`），没有 swap 时建 1 GiB 的 `/swapfile`。重复执行只更新代码、目录和配置，不动数据库。新增古迹后重新部署，服务端才接受新古迹 ID 的评价。
+
+| 服务器上的位置 | 内容 |
+| --- | --- |
+| `/opt/fanggu-community/` | 服务代码、运营工具、备份脚本与 `catalog.json` |
+| `/var/lib/fanggu-community/community.sqlite` | 数据库，属系统用户 `fanggu` |
+| `/var/backups/fanggu-community/` | 每日 04:00（香港时间）的压缩快照，保留 14 份 |
+| `/etc/fanggu-community.env` | 可选，如 `FANGGU_BLOCKED_TERMS=词1,词2` |
+
+服务带 `--trust-proxy` 运行：只在请求来自本机回环地址时，按 Caddy 写入的 `X-Forwarded-For` 最后一项识别客户端地址做限流；否则所有用户都会显示为 `127.0.0.1`，共用一份登录限额。Caddy 不写访问日志，服务日志只有方法与路径。
+
+常用操作：
+
+```sh
+ssh fanggu-hk systemctl status fanggu-community
+ssh fanggu-hk journalctl -u fanggu-community -n 100
+ssh fanggu-hk sudo -u fanggu python3 /opt/fanggu-community/moderate.py --database /var/lib/fanggu-community/community.sqlite
+ssh fanggu-hk systemctl start fanggu-community-backup   # 立即备份一次
+```
+
+快照只在同一台服务器上，防误删和损坏，不防服务器丢失；需要异地副本时把 `/var/backups/fanggu-community/` 定期拉回本机或对象存储。恢复：停服务，把选定快照解压为 `community.sqlite` 并删除旁边的 `-wal`、`-shm` 文件，`chown fanggu:fanggu` 后启动。
 
 ## 已实现的产品规则
 
@@ -72,7 +104,7 @@ sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests \
 git diff --check
 ```
 
-Python 测试使用临时数据库及随机端口，覆盖真实 HTTP、持久化、身份、五分制、完整评分门槛、更新/删除/重试/冲突、关注、屏蔽和账号删除。Swift 测试覆盖五分制与旧五星隔离、同步请求持久化、切换中断恢复以及个人记录保护。`CommunitySyncTests` 还连接实际服务验证断网队列、冲突、账号隔离和删除；未启动服务时该项明确跳过，其他单元测试仍可离线运行；UI 测试通过真实网络验证账号、社区、关注、单机模式与公开同步。
+Python 测试使用临时数据库及随机端口，覆盖真实 HTTP、持久化、身份、五分制、完整评分门槛、更新/删除/重试/冲突、关注、屏蔽和账号删除；`test_concurrency.py` 覆盖登录哈希不阻塞其他请求与并发编辑，`test_deploy.py` 覆盖代理地址、备份快照与部署后的目录布局。Swift 测试覆盖五分制与旧五星隔离、同步请求持久化、切换中断恢复以及个人记录保护。`CommunitySyncTests` 还连接实际服务验证断网队列、冲突、账号隔离和删除；未启动服务时该项明确跳过，其他单元测试仍可离线运行；UI 测试通过真实网络验证账号、社区、关注、单机模式与公开同步。
 
 ## 主要接口
 
