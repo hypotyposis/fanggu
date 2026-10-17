@@ -24,7 +24,7 @@
 | --- | --- | --- |
 | 只有 `*.md` | 无 | 链接、路径、命令描述；`git diff --check` |
 | `sites.js`、`catalog.js` 或 `assets/research/<id>.json` 的文字、分类与坐标 | `node ios/scripts/build-catalog.cjs` | `node --test tests/*.test.cjs` |
-| `assets/research/national-protection.json` | `node scripts/prepare-protection.mjs`，再 `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check` 与 Node 测试 |
+| `assets/research/national-protection.json`、`assets/research/japanese-protection.json` | `node scripts/prepare-protection.mjs`，再 `build-catalog.cjs` | `node scripts/prepare-protection.mjs --check` 与 Node 测试 |
 | `palette.css` 时代色 | `node scripts/prepare-plates.mjs`，再 `build-catalog.cjs`、`sh ios/scripts/sync-artwork.sh assets` | Node 测试、审图页、App |
 | 新增古迹或图版 | [手册第 5 节](docs/monument-batch-workflow.md) 全链路 | 手册第 5 节全部命令、浏览器审图、App |
 | `ios/Fanggu/*.swift` | 无数据重建 | 相关 `FangguTests`、`FangguUITests`，独立模拟器 |
@@ -71,7 +71,7 @@
 ## 必须保持的行为
 
 - 古迹 `id` 关联原生个人记录、备份和图版。更名优先改显示名称；变更或删除既有 ID 时同时设计迁移，不能使旧记录失联。
-- App 个人记录保存在本机 Application Support，当前格式为版本 4，兼容版本 1–4 导入；旧版 JSON 兼容不依赖已移除的网页代码。修改格式时保留迁移和失败恢复能力。
+- App 个人记录保存在本机 Application Support，当前格式为版本 5，兼容版本 1–5 导入；旧版 JSON 兼容不依赖已移除的网页代码。修改格式时保留迁移和失败恢复能力。
 - 新条目默认未到访。只有用户明确指定时才预设已到访或心愿；已有个人记录优先于 `initialStatus`。不臆填到访日期。
 - 记录修改通过 `ios/Fanggu/LibraryStore.swift` 校验和保存。失败时保留原始数据并显示错误；图版加载、切换和动效不能自行改写个人记录。
 - 拖动打卡在到达终点并松手时保存；取消手势不保存。键盘和辅助输入可完成相同操作，保存成功后才呈现完成状态。

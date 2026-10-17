@@ -1,6 +1,6 @@
 # 访古
 
-以细线描的笔意，记下走过与向往的古迹。访古是一款可离线浏览的 iOS 原生 App，提供古迹图鉴、搜索筛选、专题名录与收集进度、地图年表、拖动打卡、心愿单、笔记、六维评价与访古卡分享，以及按距离浏览和可选的附近未打卡古迹提醒；界面与古迹内容支持简体中文、英文和日文。图版随 App 打包，个人记录保存在本机，可通过 JSON 备份迁移。
+以细线描的笔意，记下走过与向往的古迹。访古是一款可离线浏览的 iOS 原生 App，提供古迹图鉴、搜索筛选、专题名录与收集进度、地图年表、拖动打卡、心愿单、笔记、个人名单、六维评价与访古卡分享，以及按距离浏览和可选的附近未打卡古迹提醒；界面与古迹内容支持简体中文、英文和日文。图版随 App 打包，个人记录保存在本机，可通过 JSON 备份迁移。
 
 开发入口：[iOS App](ios/README.md) · [AGENTS.md](AGENTS.md) · [架构与数据流](docs/architecture.md) · [开发指南](docs/development.md) · [图版维护](assets/README.md)
 
@@ -29,7 +29,7 @@ xcodegen generate
 xcodebuild -project Fanggu.xcodeproj -scheme Fanggu -destination 'platform=iOS Simulator,name=iPhone 16 Pro' build
 ```
 
-使用、备份和原生验证见 [iOS 开发说明](ios/README.md)。App 可读取版本 1–4 备份，旧版 JSON 仍可导入。新增古迹默认未到访；已有记录优先，不臆填到访日期。
+使用、备份和原生验证见 [iOS 开发说明](ios/README.md)。App 可读取版本 1–5 备份，旧版 JSON 仍可导入。新增古迹默认未到访；已有记录优先，不臆填到访日期。
 
 ## 本地制图与审图
 

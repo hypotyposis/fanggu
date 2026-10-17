@@ -63,7 +63,7 @@ python3 scripts/asset-bundle.py restore --bundle /path/to/<assetSet> --profile f
 
 目录导出按 `sites.js → plates.js → colored-plates.js → protection-data.js → protection.js → catalog.js → curations.js` 加载。普通浏览器脚本仍依赖全局对象和顺序；修改共享接口时检查导出和相关审图页，Node 测试所用模块保留 CommonJS 入口。
 
-国保的唯一源数据为 `assets/research/national-protection.json`，身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
+中国国保的唯一源数据为 `assets/research/national-protection.json`，日本指定资料为 `assets/research/japanese-protection.json`（[维护规则](japanese-protection.md)），身份标签不写入个人备份。专题名录的唯一源数据为 `curations.js`：每条列表有 `id`、`kind`（`canon` 名录／`route` 线路／`theme` 专题）、`name`、`eyebrow`、`lede`、`note` 与按编辑顺序排列的古迹 `items`；成员至少两条、不得重复、必须是已收录 ID，导出时校验，`tests/curations.test.cjs` 核对源与导出一致。专题只是目录元数据，不进入个人记录或备份；“已见 x／y”在 App 内按当前到访记录计算。修改审图链接或缓存参数时检查 `proof.html`、`color-proof.html`、`color-studies.html`；`sources.html` 从生成器更新。仅改来源页的导航或样式时运行 `node scripts/prepare-plates.mjs --sources-only`，只重建来源 HTML，保持图版和线稿清单不变。
 
 ## 数据和个人记录
 
@@ -117,9 +117,11 @@ App 支持简体中文、英文和日文，跟随 iOS 为访古解析的语言�
 
 译文保留原文的约年、传说、后配与重建等限定，不增删史实；英文用汉语拼音与通行英文名，日本古迹用日本正式名称，日文用新字体与日本建筑术语。改动中文正文、图注、地点或国保范围时同步修改两份译文，再导出目录；来不及补译时照常导出，缺译字段回退中文。印章「访古之印」、到访印「亲见」与打卡拖块「访」是品牌印记，各语言都保留中文。
 
+专题的 `selectionReason` 与 `itemReasons` 分别说明整体选目与成员入选理由；详情人工推荐独立维护在 `curations.js` 导出的 `recommendations`，通过导出脚本写入每个古迹的 `relatedSites`。字段、合法性约束与逐项翻译回退见 [数据模型 · 专题选目与详情推荐](data-model.md#专题选目与详情推荐)。维护时同步三语理由，再运行 `node ios/scripts/build-catalog.cjs`；不需要重建或同步图片。推荐保持编辑顺序，不根据私人评分、到访状态或定位自动改写。
+
 ### 存储与兼容
 
-App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 Application Support。当前备份版本为 4，兼容版本 1–4 导入；保留版本 3 的旧五星，不推算六维分数。版本 1、2 不覆盖评价，版本 3 不清除六维分数；版本 4 可明确清空。完整格式、逐字段合并和失败恢复见 [iOS 备份与评价说明](../ios/README.md#六维评价)。
+App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 Application Support。当前备份版本为 5，兼容版本 1–5 导入；保留版本 3 的旧五星，不推算六维分数。版本 1、2 不覆盖评价，版本 3 不清除六维分数；版本 4、5 可明确清空。个人名单独立保存在 `personalLists`，标题／说明、成员顺序与逐项按语一起备份；版本 1–4 导入不覆盖已有名单，版本 5 按名单 ID 整体合并。交互与保存规则见 [个人名单](../ios/README.md#个人名单)。完整格式、逐字段合并和失败恢复见 [iOS 备份与评价说明](../ios/README.md#六维评价)。
 
 古迹 ID 必须稳定，新条目默认未到访；已有个人记录优先于目录默认值。个人笔记、短评、备份和搜索输入按文本处理。保存失败保留原文件与输入，并展示可重试的错误。图版读取和动效不得改写个人记录；打卡仅在终点松手并保存成功后呈现完成，取消手势不写入。今日到访明确写入当天日期，补记可以保留日期不详；状态更正保留原日期和笔记。记录更正、评价重置与清空提供按字段撤销，机制与回归命令见 [状态更正与撤销](../ios/README.md#状态更正与撤销)。
 
@@ -153,7 +155,7 @@ App 的个人记录通过 `ios/Fanggu/LibraryStore.swift` 校验并写入本机 
 
 | 操作 | 输入 | 写入 / 注意事项 |
 | --- | --- | --- |
-| `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
+| `node scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`assets/research/japanese-protection.json`、`sites.js` ID | 仅生成 `protection-data.js`；加 `--check` 只读核对是否过期。不生成图片，不改个人记录或图版验收 |
 | `node scripts/prepare-plates.mjs` | `sites.js`、`palette.css`、线稿原稿、线稿考据 JSON 与白底处理记录 | `assets/plates/`、`plates.js`、`sources.html`；需要 `magick`，按单张原稿、考据记录、处理器时间和图版配色增量重建 |
 | `python3 -B scripts/prepare-colored-avif.py` | `queue.json`、批量设色 PNG、三张已确认 PNG | 白底去底或保留原生 alpha（旧暗底原件按哈希兼容），生成 `assets/colored-transparent/` 透明 PNG，再写 `assets/colored-transparent-avif/` 与 `assets/color-research/avif-manifest.json`；AVIF Q85、4:4:4、speed=6，原 PNG 不变，按来源、抠图参数和编码器哈希复用 |
 | `node scripts/record-plate-review.mjs color --default --all-pending`（`line` 同理） | 逐图记录、原件、透明 PNG、AVIF 与转码清单 | 把仍为 `pending_user` 的图写成 `approved_default`（`reviewer: default-policy`、`policy: default-approve-2026-10-05`），绑定当前文件哈希并同步 `visual_review_status`；不改图片，不覆盖已有 `approved_user`。不带 `--default` 而列 ID 时记 `approved_user`，只在用户明确说通过后使用；之后重跑转码与汇总 |

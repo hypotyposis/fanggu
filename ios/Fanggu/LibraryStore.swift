@@ -55,6 +55,17 @@ import Foundation
     /// Members in editorial order; IDs absent from this catalogue build are skipped.
     func members(of list: Curation) -> [Monument] { list.items.compactMap { monumentsByID[$0] } }
 
+    /// Only catalogue metadata is read; order and membership never depend on personal records.
+    func recommendations(for site: Monument) -> [ResolvedSiteRecommendation] {
+        var seen: Set<String> = [site.id]
+        return (site.relatedSites ?? []).compactMap { link in
+            let reason = link.reason.trimmingCharacters(in: .whitespacesAndNewlines)
+            guard let target = monumentsByID[link.siteID], target.collectionOnly != true,
+                  !reason.isEmpty, seen.insert(target.id).inserted else { return nil }
+            return ResolvedSiteRecommendation(site: target, kind: link.kind, reason: reason)
+        }
+    }
+
     /// The original ID keeps its date, note, review and backup links. It never marks a child visited.
     func legacySite(for list: Curation) -> Monument? {
         guard let id = list.legacySiteID, let site = monumentsByID[id], site.collectionOnly == true else { return nil }
@@ -242,7 +253,11 @@ import Foundation
                 return result
             }
         }
-        merged.version = 4
+        for list in imported.personalLists {
+            if let index = merged.personalLists.firstIndex(where: { $0.id == list.id }) { merged.personalLists[index] = list }
+            else { merged.personalLists.append(list) }
+        }
+        merged.version = 5
         try validate(merged)
         try save(merged)
         loadFailed = false
@@ -272,7 +287,7 @@ import Foundation
         guard !loadFailed else { return false }
         var next = data
         change(&next)
-        next.version = 4
+        next.version = 5
         do { try validate(next); try save(next); data = next; error = nil; return true }
         catch { self.error = String(localized: "保存失败：\(error.localizedDescription)"); return false }
     }
@@ -286,7 +301,7 @@ import Foundation
     }
 
     private func validate(_ value: LibraryData) throws {
-        guard [1, 2, 3, 4].contains(value.version), value.customSites.count <= 2000,
+        guard [1, 2, 3, 4, 5].contains(value.version), value.customSites.count <= 2000,
               value.records.count <= 5000, value.reviews.count <= 5000 else { throw StoreError.invalid(String(localized: "备份格式不正确")) }
         let customIDs = Set(value.customSites.map(\.id))
         guard customIDs.count == value.customSites.count, customIDs.isDisjoint(with: ids),
@@ -305,6 +320,18 @@ import Foundation
                   review.text.utf16.count <= 500,
                   Self.validTimestamp(review.updatedAt) else {
                 throw StoreError.invalid(String(localized: "评价无效"))
+            }
+        }
+        guard value.personalLists.count <= 200,
+              Set(value.personalLists.map(\.id)).count == value.personalLists.count else {
+            throw StoreError.invalid(String(localized: "名单资料无效"))
+        }
+        for list in value.personalLists {
+            guard list.id.hasPrefix("list-"), UUID(uuidString: String(list.id.dropFirst(5))) != nil,
+                  list.validationError == nil, Self.validTimestamp(list.updatedAt),
+                  list.items.count <= 1000, Set(list.items.map(\.siteID)).count == list.items.count,
+                  list.items.allSatisfy({ $0.siteID.range(of: "^[a-zA-Z0-9_-]{1,100}$", options: .regularExpression) != nil && $0.note.utf16.count <= 2000 }) else {
+                throw StoreError.invalid(String(localized: "名单资料无效"))
             }
         }
     }
@@ -333,7 +360,7 @@ import Foundation
         return formatter
     }
 
-    private static func timestamp() -> String {
+    nonisolated static func timestamp() -> String {
         let formatter = ISO8601DateFormatter()
         formatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
         return formatter.string(from: .now)
@@ -377,4 +404,58 @@ struct LibraryUndo: Identifiable {
 enum StoreError: LocalizedError {
     case invalid(String)
     var errorDescription: String? { if case .invalid(let message) = self { message } else { nil } }
+}
+
+extension LibraryStore {
+    func personalList(_ id: String) -> PersonalList? { data.personalLists.first { $0.id == id } }
+    func monument(_ id: String) -> Monument? { monumentsByID[id] }
+
+    @discardableResult func createPersonalList(title: String, description: String = "", site: Monument? = nil) -> PersonalList? {
+        if let site, monumentsByID[site.id] == nil || monumentsByID[site.id]?.collectionOnly == true { return nil }
+        let list = PersonalList(title: title.trimmingCharacters(in: .whitespacesAndNewlines), description: description,
+                                items: site.map { [PersonalListItem(siteID: $0.id)] } ?? [])
+        return commit { $0.personalLists.insert(list, at: 0) } ? list : nil
+    }
+
+    @discardableResult func updatePersonalList(_ id: String, title: String, description: String) -> Bool {
+        mutatePersonalList(id) { $0.title = title; $0.description = description }
+    }
+
+    @discardableResult func setPersonalListNote(_ note: String, siteID: String, listID: String) -> Bool {
+        guard personalList(listID)?.items.contains(where: { $0.siteID == siteID }) == true else { return false }
+        return mutatePersonalList(listID) { list in
+            if let index = list.items.firstIndex(where: { $0.siteID == siteID }) { list.items[index].note = note }
+        }
+    }
+
+    @discardableResult func addToPersonalList(_ id: String, site: Monument) -> Bool {
+        guard let target = monumentsByID[site.id], target.collectionOnly != true else { return false }
+        return mutatePersonalList(id) { list in
+            if !list.items.contains(where: { $0.siteID == site.id }) { list.items.append(PersonalListItem(siteID: site.id)) }
+        }
+    }
+
+    @discardableResult func removeFromPersonalList(_ id: String, siteID: String) -> Bool {
+        mutatePersonalList(id) { $0.items.removeAll { $0.siteID == siteID } }
+    }
+
+    @discardableResult func movePersonalListItem(_ siteID: String, in id: String, by offset: Int) -> Bool {
+        guard let list = personalList(id), let index = list.items.firstIndex(where: { $0.siteID == siteID }),
+              list.items.indices.contains(index + offset) else { return false }
+        return mutatePersonalList(id) { $0.items.swapAt(index, index + offset) }
+    }
+
+    @discardableResult func deletePersonalList(_ id: String) -> Bool {
+        guard personalList(id) != nil else { return false }
+        return commit { $0.personalLists.removeAll { $0.id == id } }
+    }
+
+    private func mutatePersonalList(_ id: String, change: (inout PersonalList) -> Void) -> Bool {
+        guard !loadFailed, let index = data.personalLists.firstIndex(where: { $0.id == id }) else { return false }
+        var list = data.personalLists[index]
+        change(&list)
+        guard list != data.personalLists[index] else { return true }
+        list.updatedAt = Self.timestamp()
+        return commit { $0.personalLists[index] = list }
+    }
 }

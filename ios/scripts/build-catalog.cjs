@@ -3,6 +3,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const { validateEditorial, localizeRelatedSites, localizeCurationReasons } = require('./catalog-editorial.cjs');
 const root = path.resolve(__dirname, '../..');
 const context = vm.createContext({});
 for (const filename of ['sites.js', 'plates.js', 'colored-plates.js', 'protection-data.js', 'protection.js', 'catalog.js', 'curations.js']) {
@@ -12,6 +13,9 @@ for (const filename of ['sites.js', 'plates.js', 'colored-plates.js', 'protectio
 const { sites, places, dynasties, colors, types, countries, regions } = vm.runInContext(
   '({sites:FangguCatalog.classify(SITES,PLACES),places:PLACES,dynasties:DYN,colors:COLORED_PLATES,types:FangguCatalog.types,countries:FangguCatalog.countries,regions:FangguCatalog.regions})', context
 );
+const { kinds, curations, recommendations = {}, validate } = vm.runInContext('FangguCurations', context);
+validate(curations, new Set(sites.map(site => site.id)));
+validateEditorial(curations, recommendations, sites);
 const placeByKey = new Map(places.map(place => [place.key, place]));
 const css = fs.readFileSync(path.join(root, 'palette.css'), 'utf8');
 const palette = Object.fromEntries([...css.matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(match => [match[1], match[2]]));
@@ -29,7 +33,7 @@ const referenceTitle = { 'zh-Hans': n => `参考图 ${n}`, en: n => `Reference i
 const translations = Object.fromEntries(languages.map(language => {
   const file = path.join(root, 'i18n', `${language}.json`);
   const data = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
-  return [language, { terms: data.terms || {}, sites: data.sites || {}, curations: data.curations || {} }];
+  return [language, { terms: data.terms || {}, sites: data.sites || {}, curations: data.curations || {}, recommendations: data.recommendations || {} }];
 }));
 
 // Monument-level coordinates come only from a research record's sourced `coordinates`; the
@@ -89,7 +93,9 @@ const base = sites.map(site => {
     initialStatus: site.initialStatus || 'unvisited',
     legacyNames: site.legacyNames || [], legacyPlaces: site.legacyPlaces || [],
     sourceURL: color.references?.find(ref => ref.page)?.page || '', sourceLinks,
+    relatedSites: localizeRelatedSites(recommendations[site.id]),
     protection: site.protection.map(entry => ({
+      ...(entry.system === 'JP' ? { system: entry.system, designation: entry.designation, designatedOn: entry.designatedOn } : {}),
       batch: entry.batch, unitName: entry.unitName, relation: entry.relation,
       scope: entry.scope, locator: entry.locator, note: entry.note || '',
       sourceTitle: protectionSources[entry.source]?.title || '',
@@ -107,6 +113,7 @@ function localize(site, language) {
   const entry = entries[site.id] || {};
   const term = (group, key, fallback) => terms[group]?.[key] || fallback;
   const localized = { ...site };
+  localized.relatedSites = localizeRelatedSites(site.relatedSites, translations[language].recommendations[site.id]);
   for (const field of textFields) if (site[field] && entry[field]) localized[field] = entry[field];
   for (const field of listFields) {
     // Each fact or caption must keep its position; a partial list would mislabel the plate.
@@ -160,19 +167,18 @@ const located = base.filter(site => site.siteLatitude !== null).length;
 process.stdout.write(`Exported ${base.length} monuments (${located} with monument-level coordinates) to ${path.relative(root, destination)} (translated: ${coverage.join(', ')})\n`);
 
 // Editorial lists reference catalogue IDs only; the App resolves members and personal progress at runtime.
-const { kinds, curations, validate } = vm.runInContext('FangguCurations', context);
-const siteIDs = new Set(base.map(site => site.id));
-const lists = validate(curations, siteIDs).map(list => ({
+const lists = curations.map(list => ({
   id: list.id, kind: list.kind, kindName: kinds[list.kind], name: list.name,
   eyebrow: text(list.eyebrow), lede: text(list.lede), note: text(list.note), items: list.items,
-  legacySiteID: list.legacySiteID || null
+  legacySiteID: list.legacySiteID || null,
+  ...localizeCurationReasons(list)
 }));
 for (const language of ['zh-Hans', ...languages]) {
   const localized = language === 'zh-Hans' ? lists : lists.map(list => {
     const entry = translations[language].curations[list.id] || {};
     const kindName = translations[language].terms.curationKinds?.[list.kind] || list.kindName;
     const pick = field => list[field] && entry[field] || list[field];
-    return { ...list, kindName, name: pick('name'), eyebrow: pick('eyebrow'), lede: pick('lede'), note: pick('note') };
+    return { ...list, kindName, name: pick('name'), eyebrow: pick('eyebrow'), lede: pick('lede'), note: pick('note'), ...localizeCurationReasons(list, entry) };
   });
   const filename = language === 'zh-Hans' ? 'curations.json' : `curations-${language}.json`;
   fs.writeFileSync(path.join(destination, filename), JSON.stringify(localized, null, 2) + '\n');

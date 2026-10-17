@@ -9,6 +9,7 @@ struct MonumentDetailView: View {
     @State private var editingVisit = false
     @State private var editingReview = false
     @State private var sharing = false
+    @State private var addingToList = false
     @State private var reveal: CGFloat = 0
 
     private var record: VisitRecord { library.record(for: site) }
@@ -48,14 +49,23 @@ struct MonumentDetailView: View {
                 }
                 if !site.protection.isEmpty {
                     FangguFittingRow {
-                        ForEach(site.protection, id: \.self) { entry in
-                            Text(entry.batchLabel).font(FangguFont.mono(10)).fixedSize()
+                        ForEach(site.protectionBadgeLabels, id: \.self) { label in
+                            Text(verbatim: label).font(FangguFont.mono(10)).fixedSize()
+                                .accessibilityIdentifier("detail-protection-\(site.id)")
                                 .foregroundStyle(Palette.gold).padding(6)
                                 .overlay(Rectangle().stroke(Palette.goldDim, lineWidth: 1))
                         }
                     }
                 }
                 CurationChips(site: site)
+                Button { addingToList = true } label: { Label("加入名单", systemImage: "text.badge.plus") }
+                    .buttonStyle(FangguOutlineButton(accent: Palette.paper2))
+                    .accessibilityIdentifier("add-site-to-list")
+                ForEach(library.data.personalLists.filter { $0.items.contains { $0.siteID == site.id } }) { list in
+                    NavigationLink(value: PersonalListRoute(id: list.id)) {
+                        Label { Text(verbatim: list.title) } icon: { Image(systemName: "list.bullet.rectangle") }
+                    }.accessibilityIdentifier("personal-list-chip-\(list.id)")
+                }
                 VisitActions(site: site, editingVisit: $editingVisit)
                 VStack(spacing: 8) {
                     ArtworkView(site: site, visited: record.status == .visited,
@@ -85,19 +95,24 @@ struct MonumentDetailView: View {
                 if !site.yearNote.isEmpty {
                     Text("年代说明 · \(site.yearNote)").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                 }
+                RelatedSitesSection(site: site)
                 if !site.protection.isEmpty {
                     Text("文物保护").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
                     ForEach(site.protection, id: \.self) { entry in
                         VStack(alignment: .leading, spacing: 6) {
-                            Text(verbatim: "\(entry.batchLabel) · \(entry.unitName)")
+                            Text(verbatim: "\(entry.badgeLabel) · \(entry.unitName)")
                                 .font(FangguFont.serif(14)).foregroundStyle(Palette.paper)
                             if !entry.scope.isEmpty { Text(entry.scope).foregroundStyle(Palette.paper2) }
                             if !entry.note.isEmpty { Text(entry.note).foregroundStyle(Palette.paper3) }
+                            if let date = entry.designatedOn {
+                                Text("指定日期 · \(date)").foregroundStyle(Palette.paper3)
+                            }
                             if let url = URL(string: entry.sourceURL), !entry.sourceURL.isEmpty {
                                 Link(destination: url) {
                                     Text(verbatim: "\(entry.sourceTitle.isEmpty ? String(localized: "保护信息来源") : entry.sourceTitle) ↗")
                                         .multilineTextAlignment(.leading)
                                 }
+                                    .accessibilityIdentifier("protection-source-\(site.id)")
                                     .foregroundStyle(Palette.gold)
                             }
                         }
@@ -181,6 +196,7 @@ struct MonumentDetailView: View {
         }
         .toolbarBackground(Palette.ink, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
+        .sheet(isPresented: $addingToList) { AddToPersonalListSheet(site: site) }
         .sheet(isPresented: $editingVisit) { VisitEditor(site: site) }
         .sheet(isPresented: $editingReview) { ReviewEditor(site: site) }
         .sheet(isPresented: $sharing) { ShareCardSheet(content: .monument(site)) }
@@ -194,6 +210,30 @@ struct MonumentDetailView: View {
 
     private func finishArrival() {
         reveal = 0
+    }
+}
+
+private struct RelatedSitesSection: View {
+    @EnvironmentObject private var library: LibraryStore
+    let site: Monument
+
+    var body: some View {
+        let recommendations = library.recommendations(for: site)
+        if !recommendations.isEmpty {
+            VStack(alignment: .leading, spacing: 12) {
+                Text("接下来可以看").font(FangguFont.serif(21)).foregroundStyle(Palette.paper)
+                    .accessibilityAddTraits(.isHeader)
+                    .accessibilityIdentifier("related-sites")
+                ForEach(recommendations) { recommendation in
+                    NavigationLink(value: recommendation.site) {
+                        EditorialSiteRow(site: recommendation.site, reason: recommendation.reason,
+                                          reasonID: "related-reason-\(recommendation.id)", relationship: recommendation.kind)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("related-site-\(recommendation.id)")
+                }
+            }
+        }
     }
 }
 

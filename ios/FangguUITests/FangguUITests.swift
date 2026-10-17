@@ -591,6 +591,52 @@ final class FangguUITests: XCTestCase {
 
 /// New catalogue regions and artwork must work in the bundled native product.
 final class ExpansionUITests: XCTestCase {
+    func testJapaneseProtectionAppearsOnCardsAndDetailsWithOfficialSources() {
+        for (query, id, label) in [("清水寺", "kiyomizu", "日本国宝"),
+                                   ("大阪城", "jp_osaka_sengan", "日本重要文化财")] {
+            let app = XCUIApplication.isolated()
+            app.launchForTest()
+            let search = app.textFields.firstMatch
+            XCTAssertTrue(search.waitForExistence(timeout: 10))
+            search.tap(); search.typeText(query)
+            app.buttons["catalog-display"].tap()
+            let badge = app.staticTexts["catalog-protection-\(id)"]
+            app.reveal(badge)
+            XCTAssertEqual(badge.label, label)
+            let card = XCTAttachment(screenshot: app.screenshot())
+            card.name = "protection-card-" + id; card.lifetime = .keepAlways; add(card)
+            app.buttons["catalog-site-\(id)"].tap()
+            XCTAssertTrue(app.staticTexts["detail-protection-\(id)"].waitForExistence(timeout: 5))
+            XCTAssertEqual(app.staticTexts["detail-protection-\(id)"].label, label)
+            let source = app.descendants(matching: .any)["protection-source-\(id)"].firstMatch
+            app.reveal(source, attempts: 30)
+            XCTAssertTrue(source.exists)
+            let detail = XCTAttachment(screenshot: app.screenshot())
+            detail.name = "protection-detail-" + id; detail.lifetime = .keepAlways; add(detail)
+            app.terminate()
+        }
+    }
+
+    func testJapaneseProtectionLabelsAreLocalizedAndFitLargeText() {
+        for (language, locale, id, label) in [
+            ("en", "en_US", "horyuji", "Japan · National Treasure"),
+            ("en", "en_US", "jp_osaka_sengan", "Japan · Important Cultural Property"),
+            ("ja", "ja_JP", "horyuji", "日本・国宝"),
+            ("ja", "ja_JP", "jp_osaka_sengan", "日本・重要文化財")
+        ] {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest(site: id, arguments: ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"])
+            let badge = app.staticTexts["detail-protection-\(id)"]
+            XCTAssertTrue(badge.waitForExistence(timeout: 10))
+            XCTAssertEqual(badge.label, label)
+            XCTAssertGreaterThanOrEqual(badge.frame.minX, 0)
+            XCTAssertLessThanOrEqual(badge.frame.maxX, app.frame.maxX)
+            let screenshot = XCTAttachment(screenshot: app.screenshot())
+            screenshot.name = "protection-\(language)-\(id)-large"; screenshot.lifetime = .keepAlways; add(screenshot)
+            app.terminate()
+        }
+    }
+
     func testNewChineseEntriesOpenWithArtworkAndRemainUnvisited() {
         for id in ["ln_wanfotang", "hb_huanghelou", "xz_shalu", "jp_matsumoto_tenshu", "jp_izumo_honden", "jp_fukiji_odo"] {
             let app = XCUIApplication.isolated()

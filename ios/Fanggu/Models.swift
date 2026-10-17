@@ -53,8 +53,14 @@ struct Monument: Decodable, Identifiable, Hashable {
     let searchAliases: [String]
     /// Original group entries remain decodable for old records, but are excluded from the single-building catalogue.
     let collectionOnly: Bool?
+    /// Editorial links are optional so catalogues and fixtures predating recommendations still decode.
+    var relatedSites: [SiteRecommendation]? = nil
 
     var accent: Color { Palette.dynasty(dynastyColor) }
+    var protectionBadgeLabels: [String] {
+        var seen = Set<String>()
+        return protection.map(\.badgeLabel).filter { seen.insert($0).inserted }
+    }
     var displayYearLabel: String { yearLabel.trimmingCharacters(in: .whitespacesAndNewlines) }
     var periodLabel: String {
         displayYearLabel.isEmpty ? dynastyName : "\(dynastyName) · \(displayYearLabel)"
@@ -80,11 +86,44 @@ struct Curation: Decodable, Identifiable, Hashable {
     let note: String
     let items: [String]
     let legacySiteID: String?
+    var selectionReason: String? = nil
+    var itemReasons: [String: String]? = nil
 
     var isBuildingCollection: Bool { kind == "collection" }
 
+    func reason(for site: Monument) -> String? {
+        guard items.contains(site.id),
+              let reason = itemReasons?[site.id]?.trimmingCharacters(in: .whitespacesAndNewlines),
+              !reason.isEmpty else { return nil }
+        return reason
+    }
+
     static func == (lhs: Curation, rhs: Curation) -> Bool { lhs.id == rhs.id }
     func hash(into hasher: inout Hasher) { hasher.combine(id) }
+}
+
+struct SiteRecommendation: Decodable, Hashable {
+    enum Kind: String, Decodable {
+        case comparison, nearby
+
+        var title: String {
+            switch self {
+            case .comparison: String(localized: "对照着看")
+            case .nearby: String(localized: "同一带看看")
+            }
+        }
+    }
+
+    let siteID: String
+    let kind: Kind
+    let reason: String
+}
+
+struct ResolvedSiteRecommendation: Identifiable {
+    let site: Monument
+    let kind: SiteRecommendation.Kind
+    let reason: String
+    var id: String { site.id }
 }
 
 struct CurationProgress: Equatable {
@@ -100,7 +139,7 @@ struct SourceLink: Decodable, Hashable {
 }
 
 struct ProtectionEntry: Decodable, Hashable {
-    let batch: Int
+    let batch: Int?
     let unitName: String
     let relation: String
     let scope: String
@@ -108,12 +147,33 @@ struct ProtectionEntry: Decodable, Hashable {
     let note: String
     let sourceTitle: String
     let sourceURL: String
+    /// Absent in older catalogues and Chinese entries; Japan has designations rather than batches.
+    var system: String? = nil
+    var designation: String? = nil
+    var designatedOn: String? = nil
 
-    var batchLabel: String {
+    var badgeLabel: String {
+        if system == "JP" {
+            return designation == "national_treasure"
+                ? String(localized: "日本国宝") : String(localized: "日本重要文化财")
+        }
+        guard let batch else { return "" }
         guard AppLanguage.current == .simplifiedChinese else { return String(localized: "第\(batch)批国保") }
         let numerals = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"]
         let number = batch < 10 ? numerals[batch] : "\(numerals[batch / 10])十\(batch % 10 == 0 ? "" : numerals[batch % 10])"
         return "第\(number)批国保"
+    }
+
+    var searchTerms: [String] {
+        if system == "JP" {
+            let names = designation == "national_treasure"
+                ? ["日本国宝", "国宝", "National Treasure"]
+                : ["日本重要文化财", "重要文化财", "重要文化財", "Important Cultural Property"]
+            return [unitName, scope, badgeLabel] + names
+        }
+        guard let batch else { return [unitName, scope] }
+        return [unitName, scope, badgeLabel, "第\(batch)批国保", "国保", "全国重点文物保护单位",
+                String(localized: "全国重点文物保护单位")]
     }
 }
 
@@ -167,13 +227,14 @@ struct LegacySite: Codable, Identifiable {
 }
 
 struct LibraryData: Codable {
-    var version = 4
+    var version = 5
     var customSites: [LegacySite] = []
     var records: [String: VisitRecord] = [:]
     var links: [String: String] = [:]
     var reviews: [String: Review] = [:]
+    var personalLists: [PersonalList] = []
 
-    enum CodingKeys: String, CodingKey { case version, customSites, records, links, reviews }
+    enum CodingKeys: String, CodingKey { case version, customSites, records, links, reviews, personalLists }
     init() {}
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -182,6 +243,7 @@ struct LibraryData: Codable {
         records = try values.decode([String: VisitRecord].self, forKey: .records)
         links = version >= 2 ? (try values.decodeIfPresent([String: String].self, forKey: .links) ?? [:]) : [:]
         reviews = version >= 3 ? (try values.decodeIfPresent([String: Review].self, forKey: .reviews) ?? [:]) : [:]
+        personalLists = version >= 5 ? (try values.decodeIfPresent([PersonalList].self, forKey: .personalLists) ?? []) : []
     }
 }
 

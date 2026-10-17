@@ -531,7 +531,8 @@
       "国务院公布第7批全国重点文物保护单位名单": "国務院公布 第7次全国重点文物保護単位リスト",
       "国务院公布第8批全国重点文物保护单位名单": "国務院公布 第8次全国重点文物保護単位リスト",
       "乐山大佛第二批身份复核（国务院第六批合并名单）": "楽山大仏の第2次指定の確認（国務院第6次合併リスト）",
-      "嵩阳书院第五批国保身份与现存建筑范围复核": "嵩陽書院の第5次全国重点文物保護単位指定と現存建築範囲の確認"
+      "嵩阳书院第五批国保身份与现存建筑范围复核": "嵩陽書院の第5次全国重点文物保護単位指定と現存建築範囲の確認",
+      "日本文化厅国指定文化财数据库": "文化庁 国指定文化財等データベース"
     },
     "curationKinds": {
       "canon": "名録",
@@ -6904,6 +6905,13 @@
       "captions": [
         "法隆寺 · 金堂正面",
         "飛鳥時代 · 二重の入母屋造と裳階"
+      ],
+      "protection": [
+        {
+          "unitName": "法隆寺金堂",
+          "scope": "金堂",
+          "note": ""
+        }
       ]
     },
     "toshodaiji": {
@@ -6922,6 +6930,13 @@
       "captions": [
         "唐招提寺 · 金堂正面",
         "奈良時代 · 七間の寄棟造"
+      ],
+      "protection": [
+        {
+          "unitName": "唐招提寺金堂",
+          "scope": "金堂",
+          "note": ""
+        }
       ]
     },
     "byodoin": {
@@ -6940,6 +6955,28 @@
       "captions": [
         "平等院 · 鳳凰堂の正面と両翼",
         "平安時代 · 1053年"
+      ],
+      "protection": [
+        {
+          "unitName": "平等院鳳凰堂 中堂",
+          "scope": "鳳凰堂の中堂",
+          "note": ""
+        },
+        {
+          "unitName": "平等院鳳凰堂 両翼廊（北）",
+          "scope": "鳳凰堂の北翼廊",
+          "note": ""
+        },
+        {
+          "unitName": "平等院鳳凰堂 両翼廊（南）",
+          "scope": "鳳凰堂の南翼廊",
+          "note": ""
+        },
+        {
+          "unitName": "平等院鳳凰堂 尾廊",
+          "scope": "鳳凰堂の尾廊",
+          "note": ""
+        }
       ]
     },
     "todaiji": {
@@ -6958,6 +6995,13 @@
       "captions": [
         "東大寺 · 南大門正面",
         "鎌倉時代 · 1199—1203年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "東大寺南大門",
+          "scope": "南大門",
+          "note": ""
+        }
       ]
     },
     "kiyomizu": {
@@ -6976,6 +7020,13 @@
       "captions": [
         "清水寺 · 本堂と清水の舞台",
         "南面のほぼ正面 · 江戸の寛永10年（1633）"
+      ],
+      "protection": [
+        {
+          "unitName": "清水寺本堂",
+          "scope": "本堂 · 清水の舞台",
+          "note": ""
+        }
       ]
     },
     "toji": {
@@ -6994,6 +7045,13 @@
       "captions": [
         "東寺 · 五重塔",
         "ほぼ正面 · 江戸の寛永21年（1644）"
+      ],
+      "protection": [
+        {
+          "unitName": "教王護国寺五重塔",
+          "scope": "五重塔",
+          "note": ""
+        }
       ]
     },
     "sd_guangyue": {
@@ -8370,6 +8428,13 @@
       "captions": [
         "慈照寺観音殿 現状の二層の楼閣 · 線画",
         "現存の主体に基づいて描く"
+      ],
+      "protection": [
+        {
+          "unitName": "慈照寺銀閣",
+          "scope": "慈照寺観音殿",
+          "note": ""
+        }
       ]
     },
     "jp_sensoji": {
@@ -8405,6 +8470,13 @@
       "captions": [
         "姫路城大天守と高石垣 · 線画",
         "現存の主体に基づいて描く"
+      ],
+      "protection": [
+        {
+          "unitName": "姫路城大天守",
+          "scope": "大天守本体。周辺の石垣はこの国宝指定の対象に含めない。",
+          "note": ""
+        }
       ]
     },
     "jp_itsukushima": {
@@ -8424,6 +8496,28 @@
       "captions": [
         "厳島神社 本社の海上社殿群と回廊 · 線画",
         "現存の主体に基づいて描く"
+      ],
+      "protection": [
+        {
+          "unitName": "厳島神社 本社本殿、幣殿、拝殿",
+          "scope": "本社の本殿・幣殿・拝殿",
+          "note": ""
+        },
+        {
+          "unitName": "厳島神社 本社祓殿",
+          "scope": "本社の祓殿",
+          "note": ""
+        },
+        {
+          "unitName": "厳島神社 廻廊 （東廻廊）",
+          "scope": "東廻廊",
+          "note": ""
+        },
+        {
+          "unitName": "厳島神社 廻廊 （西廻廊）",
+          "scope": "西廻廊",
+          "note": ""
+        }
       ]
     },
     "jp_nikko_toshogu": {
@@ -8441,6 +8535,13 @@
       "captions": [
         "日光東照宮陽明門 現状の正面 · 線画",
         "現存の主体に基づいて描く"
+      ],
+      "protection": [
+        {
+          "unitName": "東照宮 陽明門",
+          "scope": "陽明門",
+          "note": ""
+        }
       ]
     },
     "jp_daigoji_tower": {
@@ -8458,6 +8559,13 @@
       "captions": [
         "醍醐寺 · 五重塔",
         "平安時代 · 951年"
+      ],
+      "protection": [
+        {
+          "unitName": "醍醐寺五重塔",
+          "scope": "五重塔",
+          "note": ""
+        }
       ]
     },
     "jp_sanjusangendo": {
@@ -8475,6 +8583,13 @@
       "captions": [
         "三十三間堂 · 本堂",
         "鎌倉時代 · 1266年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "蓮華王院本堂（三十三間堂）",
+          "scope": "蓮華王院本堂",
+          "note": ""
+        }
       ]
     },
     "jp_nijo_ninomaru": {
@@ -8493,6 +8608,13 @@
       "captions": [
         "二条城 · 二の丸御殿車寄",
         "江戸時代 · 1626年前後"
+      ],
+      "protection": [
+        {
+          "unitName": "二条城 二の丸御殿遠侍及び車寄",
+          "scope": "車寄と遠侍の外観",
+          "note": "指定は図版の遠侍及び車寄に対応し、二条城内のすべての建物を対象としない。"
+        }
       ]
     },
     "jp_yasaka_honden": {
@@ -8510,6 +8632,13 @@
       "captions": [
         "八坂神社 · 本殿",
         "江戸時代 · 1654年"
+      ],
+      "protection": [
+        {
+          "unitName": "八坂神社本殿",
+          "scope": "祇園造の本殿",
+          "note": ""
+        }
       ]
     },
     "jp_yakushiji_east": {
@@ -8529,6 +8658,13 @@
       "captions": [
         "薬師寺 · 東塔",
         "奈良時代 · 730年頃"
+      ],
+      "protection": [
+        {
+          "unitName": "薬師寺東塔",
+          "scope": "東塔 · 三重塔（屋根六重）",
+          "note": ""
+        }
       ]
     },
     "jp_gangoji_gokuraku": {
@@ -8548,6 +8684,13 @@
       "captions": [
         "元興寺 · 極楽坊本堂",
         "鎌倉時代 · 13世紀中葉頃"
+      ],
+      "protection": [
+        {
+          "unitName": "元興寺極楽坊本堂",
+          "scope": "極楽坊本堂",
+          "note": ""
+        }
       ]
     },
     "jp_kofukuji_hokuen": {
@@ -8566,6 +8709,13 @@
       "captions": [
         "興福寺 · 北円堂",
         "鎌倉時代 · 1210年頃"
+      ],
+      "protection": [
+        {
+          "unitName": "興福寺北円堂",
+          "scope": "八角円堂",
+          "note": ""
+        }
       ]
     },
     "jp_kasuga_honden": {
@@ -8583,6 +8733,28 @@
       "captions": [
         "春日大社 · 本殿四棟の模式図",
         "江戸時代 · 1863年造替"
+      ],
+      "protection": [
+        {
+          "unitName": "春日大社本社 本殿 （第一殿）",
+          "scope": "本殿四棟のうち第一殿",
+          "note": ""
+        },
+        {
+          "unitName": "春日大社本社 本殿 （第二殿）",
+          "scope": "本殿四棟のうち第二殿",
+          "note": ""
+        },
+        {
+          "unitName": "春日大社本社 本殿 （第三殿）",
+          "scope": "本殿四棟のうち第三殿",
+          "note": ""
+        },
+        {
+          "unitName": "春日大社本社 本殿 （第四殿）",
+          "scope": "本殿四棟のうち第四殿",
+          "note": ""
+        }
       ]
     },
     "jp_sumiyoshi_honden": {
@@ -8600,6 +8772,28 @@
       "captions": [
         "住吉大社 · 本殿四棟の模式図",
         "江戸時代 · 1810年"
+      ],
+      "protection": [
+        {
+          "unitName": "住吉大社本殿 第一殿",
+          "scope": "本殿四棟のうち第一殿",
+          "note": ""
+        },
+        {
+          "unitName": "住吉大社本殿 第二殿",
+          "scope": "本殿四棟のうち第二殿",
+          "note": ""
+        },
+        {
+          "unitName": "住吉大社本殿 第三殿",
+          "scope": "本殿四棟のうち第三殿",
+          "note": ""
+        },
+        {
+          "unitName": "住吉大社本殿 第四殿",
+          "scope": "本殿四棟のうち第四殿",
+          "note": ""
+        }
       ]
     },
     "jp_osaka_sengan": {
@@ -8617,6 +8811,13 @@
       "captions": [
         "大阪城 · 千貫櫓と石垣",
         "江戸時代 · 1620年"
+      ],
+      "protection": [
+        {
+          "unitName": "大阪城 千貫櫓",
+          "scope": "千貫櫓本体。周辺の石垣はこの重要文化財指定の対象に含めない。",
+          "note": ""
+        }
       ]
     },
     "jp_jigenin_tahoto": {
@@ -8634,6 +8835,13 @@
       "captions": [
         "慈眼院 · 多宝塔",
         "鎌倉時代 · 1271年"
+      ],
+      "protection": [
+        {
+          "unitName": "慈眼院多宝塔",
+          "scope": "多宝塔",
+          "note": ""
+        }
       ]
     },
     "jp_kanshinji_kondo": {
@@ -8653,6 +8861,13 @@
       "captions": [
         "観心寺 · 金堂",
         "室町初期 · 14世紀中葉"
+      ],
+      "protection": [
+        {
+          "unitName": "観心寺金堂",
+          "scope": "金堂",
+          "note": ""
+        }
       ]
     },
     "jp_tofukuji_sanmon": {
@@ -8670,6 +8885,13 @@
       "captions": [
         "東福寺 · 三門",
         "室町時代 · 1425年"
+      ],
+      "protection": [
+        {
+          "unitName": "東福寺三門",
+          "scope": "現存の三門",
+          "note": ""
+        }
       ]
     },
     "jp_fushimi_inari_honden": {
@@ -8687,6 +8909,13 @@
       "captions": [
         "伏見稲荷大社 · 本殿",
         "室町時代 · 1499年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "伏見稲荷大社 本殿",
+          "scope": "稲荷造の本殿",
+          "note": ""
+        }
       ]
     },
     "jp_kitano_honden": {
@@ -8704,6 +8933,13 @@
       "captions": [
         "北野天満宮 · 本殿建築群",
         "江戸初期 · 1607年"
+      ],
+      "protection": [
+        {
+          "unitName": "北野天満宮 本殿、石の間、拝殿及び楽の間",
+          "scope": "本殿、石の間と拝殿",
+          "note": ""
+        }
       ]
     },
     "jp_ninnaji_kondo": {
@@ -8722,6 +8958,13 @@
       "captions": [
         "仁和寺 · 金堂",
         "桃山期の原構 · 江戸初期の移築"
+      ],
+      "protection": [
+        {
+          "unitName": "仁和寺金堂",
+          "scope": "旧内裏紫宸殿の移築",
+          "note": ""
+        }
       ]
     },
     "jp_hongwanji_hiunkaku": {
@@ -8741,6 +8984,13 @@
       "captions": [
         "西本願寺 · 飛雲閣",
         "桃山時代 · 年代不詳"
+      ],
+      "protection": [
+        {
+          "unitName": "本願寺飛雲閣",
+          "scope": "滴翠園の三層の楼閣",
+          "note": ""
+        }
       ]
     },
     "jp_manpukuji_daiou": {
@@ -8758,6 +9008,13 @@
       "captions": [
         "萬福寺 · 大雄宝殿",
         "江戸時代 · 1668年"
+      ],
+      "protection": [
+        {
+          "unitName": "萬福寺 大雄宝殿",
+          "scope": "黄檗宗の大雄宝殿",
+          "note": ""
+        }
       ]
     },
     "jp_iwashimizu_honden": {
@@ -8775,6 +9032,23 @@
       "captions": [
         "石清水八幡宮 · 本社正面の部分",
         "江戸時代 · 1634年"
+      ],
+      "protection": [
+        {
+          "unitName": "石清水八幡宮本社 楼門",
+          "scope": "本社の楼門",
+          "note": "図版は楼門と正面廻廊のみを描き、本殿など他の建物の指定範囲を含めない。"
+        },
+        {
+          "unitName": "石清水八幡宮本社 廻廊 （楼門東門間）",
+          "scope": "楼門と東門の間の正面廻廊",
+          "note": "図版は楼門と正面廻廊のみを描き、本殿など他の建物の指定範囲を含めない。"
+        },
+        {
+          "unitName": "石清水八幡宮本社 廻廊 （楼門西門間）",
+          "scope": "楼門と西門の間の正面廻廊",
+          "note": "図版は楼門と正面廻廊のみを描き、本殿など他の建物の指定範囲を含めない。"
+        }
       ]
     },
     "jp_ishiyamadera_tahoto": {
@@ -8792,6 +9066,13 @@
       "captions": [
         "石山寺 · 多宝塔",
         "鎌倉時代 · 1194年"
+      ],
+      "protection": [
+        {
+          "unitName": "石山寺多宝塔",
+          "scope": "多宝塔",
+          "note": ""
+        }
       ]
     },
     "jp_ishiyamadera_hondo": {
@@ -8810,6 +9091,13 @@
       "captions": [
         "石山寺 · 本堂",
         "平安の正堂 · 江戸初期の礼堂"
+      ],
+      "protection": [
+        {
+          "unitName": "石山寺本堂",
+          "scope": "正堂と礼堂",
+          "note": ""
+        }
       ]
     },
     "jp_chionin_sanmon": {
@@ -8827,6 +9115,13 @@
       "captions": [
         "知恩院 · 三門",
         "江戸時代 · 1621年"
+      ],
+      "protection": [
+        {
+          "unitName": "知恩院三門",
+          "scope": "現存の三門",
+          "note": ""
+        }
       ]
     },
     "jp_nanzenji_sanmon": {
@@ -8844,6 +9139,13 @@
       "captions": [
         "南禅寺 · 三門",
         "江戸時代 · 1628年"
+      ],
+      "protection": [
+        {
+          "unitName": "南禅寺三門",
+          "scope": "現存の三門",
+          "note": ""
+        }
       ]
     },
     "jp_ujigami_honden": {
@@ -8863,6 +9165,13 @@
       "captions": [
         "宇治上神社 · 本殿",
         "平安後期 · 11世紀末頃"
+      ],
+      "protection": [
+        {
+          "unitName": "宇治上神社本殿",
+          "scope": "本殿の覆屋",
+          "note": ""
+        }
       ]
     },
     "jp_ujigami_haiden": {
@@ -8882,6 +9191,13 @@
       "captions": [
         "宇治上神社 · 拝殿",
         "鎌倉初期 · 13世紀初頭頃"
+      ],
+      "protection": [
+        {
+          "unitName": "宇治上神社拝殿",
+          "scope": "拝殿",
+          "note": ""
+        }
       ]
     },
     "jp_kozanji_sekisuiin": {
@@ -8901,6 +9217,13 @@
       "captions": [
         "高山寺 · 石水院の開放された廊",
         "鎌倉前期 · 明治の移築"
+      ],
+      "protection": [
+        {
+          "unitName": "高山寺石水院（五所堂）",
+          "scope": "石水院の開放された廊の内観",
+          "note": ""
+        }
       ]
     },
     "jp_kamigamo_honden": {
@@ -8918,6 +9241,18 @@
       "captions": [
         "上賀茂神社 · 本殿と権殿",
         "江戸時代 · 1863年"
+      ],
+      "protection": [
+        {
+          "unitName": "賀茂別雷神社 本殿",
+          "scope": "本殿",
+          "note": ""
+        },
+        {
+          "unitName": "賀茂別雷神社 権殿",
+          "scope": "権殿",
+          "note": ""
+        }
       ]
     },
     "jp_shimogamo_honden": {
@@ -8935,6 +9270,18 @@
       "captions": [
         "下鴨神社 · 東西本殿の前部",
         "江戸時代 · 1863年"
+      ],
+      "protection": [
+        {
+          "unitName": "賀茂御祖神社 東本殿",
+          "scope": "東本殿",
+          "note": ""
+        },
+        {
+          "unitName": "賀茂御祖神社 西本殿",
+          "scope": "西本殿",
+          "note": ""
+        }
       ]
     },
     "jp_enryakuji_komponchudo": {
@@ -8952,6 +9299,13 @@
       "captions": [
         "延暦寺 · 根本中堂",
         "江戸時代 · 1640年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "延暦寺根本中堂",
+          "scope": "現存する根本中堂の外観",
+          "note": ""
+        }
       ]
     },
     "jp_katsura_koshoin": {
@@ -8990,6 +9344,13 @@
       "captions": [
         "浄瑠璃寺 · 本堂",
         "平安後期 · 12世紀頃"
+      ],
+      "protection": [
+        {
+          "unitName": "浄瑠璃寺本堂（九体寺本堂）",
+          "scope": "九体阿弥陀堂",
+          "note": ""
+        }
       ]
     },
     "jp_joruriji_tower": {
@@ -9009,6 +9370,13 @@
       "captions": [
         "浄瑠璃寺 · 三重塔",
         "平安後期の原構 · 1178年移築"
+      ],
+      "protection": [
+        {
+          "unitName": "浄瑠璃寺三重塔（九体寺三重塔）",
+          "scope": "三重塔",
+          "note": ""
+        }
       ]
     },
     "jp_ryoanji_garden": {
@@ -9083,6 +9451,13 @@
       "captions": [
         "法観寺 · 八坂の塔",
         "室町時代 · 1440年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "法観寺五重塔（八坂塔）",
+          "scope": "現存の五重塔",
+          "note": ""
+        }
       ]
     },
     "jp_gosho_shishinden": {
@@ -9119,6 +9494,13 @@
       "captions": [
         "大徳寺 · 唐門",
         "桃山時代 · 年代不詳"
+      ],
+      "protection": [
+        {
+          "unitName": "大徳寺唐門",
+          "scope": "本坊の唐門",
+          "note": ""
+        }
       ]
     },
     "jp_daitokuji_hojo": {
@@ -9138,6 +9520,13 @@
       "captions": [
         "大徳寺 · 本坊方丈",
         "江戸初期 · 1635—1636年頃"
+      ],
+      "protection": [
+        {
+          "unitName": "大徳寺 方丈及び玄関（方丈）",
+          "scope": "本坊方丈",
+          "note": ""
+        }
       ]
     },
     "jp_jishoji_togudo": {
@@ -9157,6 +9546,13 @@
       "captions": [
         "慈照寺 · 東求堂",
         "室町時代 · 1485—1486年頃"
+      ],
+      "protection": [
+        {
+          "unitName": "慈照寺東求堂",
+          "scope": "現存の東求堂",
+          "note": ""
+        }
       ]
     },
     "jp_toji_kondo": {
@@ -9174,6 +9570,13 @@
       "captions": [
         "東寺 · 金堂",
         "桃山時代 · 1603年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "教王護国寺金堂",
+          "scope": "現存の金堂",
+          "note": ""
+        }
       ]
     },
     "jp_daigoji_sanboin": {
@@ -9191,6 +9594,13 @@
       "captions": [
         "醍醐寺 · 三宝院表書院",
         "桃山時代 · 1598年"
+      ],
+      "protection": [
+        {
+          "unitName": "三宝院殿堂 表書院",
+          "scope": "表書院",
+          "note": ""
+        }
       ]
     },
     "jp_hongwanji_goeido": {
@@ -9208,6 +9618,13 @@
       "captions": [
         "西本願寺 · 御影堂",
         "江戸時代 · 1636年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "本願寺御影堂",
+          "scope": "現存の御影堂",
+          "note": ""
+        }
       ]
     },
     "jp_chionin_mieido": {
@@ -9225,6 +9642,13 @@
       "captions": [
         "知恩院 · 御影堂",
         "江戸時代 · 1639年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "知恩院本堂（御影堂）",
+          "scope": "現存の御影堂",
+          "note": ""
+        }
       ]
     },
     "zj_tianyige": {
@@ -11407,6 +11831,13 @@
       "captions": [
         "上野東照宮唐門 · 唐門単体",
         "江戸時代 · 1651年"
+      ],
+      "protection": [
+        {
+          "unitName": "東照宮社殿 唐門",
+          "scope": "唐門単体",
+          "note": ""
+        }
       ]
     },
     "jp_nezu_romon": {
@@ -11425,6 +11856,13 @@
       "captions": [
         "根津神社楼門 · 三間一戸楼門",
         "江戸時代 · 1706年"
+      ],
+      "protection": [
+        {
+          "unitName": "根津神社 楼門",
+          "scope": "三間一戸楼門",
+          "note": ""
+        }
       ]
     },
     "jp_asakusa_jinja": {
@@ -11443,6 +11881,13 @@
       "captions": [
         "浅草神社 · 拝殿の正面",
         "江戸時代 · 1649年"
+      ],
+      "protection": [
+        {
+          "unitName": "浅草神社 拝殿",
+          "scope": "拝殿の正面",
+          "note": ""
+        }
       ]
     },
     "jp_zojoji_sangedatsumon": {
@@ -11461,6 +11906,13 @@
       "captions": [
         "増上寺三解脱門 · 五間三戸二重門",
         "江戸時代 · 1622年"
+      ],
+      "protection": [
+        {
+          "unitName": "増上寺三解脱門",
+          "scope": "五間三戸二重門",
+          "note": ""
+        }
       ]
     },
     "jp_kaneiji_kiyomizu": {
@@ -11479,6 +11931,13 @@
       "captions": [
         "寛永寺清水観音堂 · 観音堂と前方の舞台",
         "江戸時代 · 1631年"
+      ],
+      "protection": [
+        {
+          "unitName": "寛永寺清水堂",
+          "scope": "観音堂と前方の舞台",
+          "note": ""
+        }
       ]
     },
     "jp_gokokuji_hondo": {
@@ -11497,6 +11956,13 @@
       "captions": [
         "護国寺本堂 · 本堂 · 観音堂",
         "江戸時代 · 1697年"
+      ],
+      "protection": [
+        {
+          "unitName": "護国寺本堂",
+          "scope": "本堂 · 観音堂",
+          "note": ""
+        }
       ]
     },
     "jp_ikegami_pagoda": {
@@ -11515,6 +11981,13 @@
       "captions": [
         "池上本門寺五重塔 · 現存する木造五重塔",
         "江戸時代 · 1608年"
+      ],
+      "protection": [
+        {
+          "unitName": "本門寺五重塔",
+          "scope": "現存する木造五重塔",
+          "note": ""
+        }
       ]
     },
     "jp_shofukuji_jizodo": {
@@ -11533,6 +12006,13 @@
       "captions": [
         "正福寺地蔵堂 · 一重裳階付の禅宗仏殿",
         "室町時代 · 1407年"
+      ],
+      "protection": [
+        {
+          "unitName": "正福寺地蔵堂",
+          "scope": "一重裳階付の禅宗仏殿",
+          "note": ""
+        }
       ]
     },
     "ln_wanfotang": {
@@ -12217,6 +12697,13 @@
       "captions": [
         "瑞巌寺本堂 · 本堂（元方丈）正面",
         "1609年上棟"
+      ],
+      "protection": [
+        {
+          "unitName": "瑞巖寺本堂（元方丈）",
+          "scope": "本堂（元方丈）正面",
+          "note": ""
+        }
       ]
     },
     "jp_osaki_hachimangu": {
@@ -12236,6 +12723,13 @@
       "captions": [
         "大崎八幡宮 · 権現造社殿 · 拝殿正面",
         "1607年頃完成"
+      ],
+      "protection": [
+        {
+          "unitName": "大崎八幡宮",
+          "scope": "権現造社殿 · 拝殿正面",
+          "note": ""
+        }
       ]
     },
     "jp_haguro_pagoda": {
@@ -12255,6 +12749,13 @@
       "captions": [
         "羽黒山五重塔 · 三間五重木塔",
         "1372年頃再建"
+      ],
+      "protection": [
+        {
+          "unitName": "羽黒山五重塔",
+          "scope": "三間五重木塔",
+          "note": ""
+        }
       ]
     },
     "jp_zenkoji_hondo": {
@@ -12274,6 +12775,13 @@
       "captions": [
         "善光寺本堂 · 撞木造本堂正面",
         "1707年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "善光寺本堂",
+          "scope": "撞木造本堂正面",
+          "note": ""
+        }
       ]
     },
     "jp_anrakuji_pagoda": {
@@ -12293,6 +12801,13 @@
       "captions": [
         "安楽寺八角三重塔 · 八角三重塔 · 初重裳階付き",
         "鎌倉後期 · 1290年代頃"
+      ],
+      "protection": [
+        {
+          "unitName": "安楽寺八角三重塔",
+          "scope": "八角三重塔 · 初重裳階付き",
+          "note": ""
+        }
       ]
     },
     "jp_daizenji_hondo": {
@@ -12312,6 +12827,13 @@
       "captions": [
         "大善寺本堂 · 本堂（薬師堂）正面",
         "1286年建立"
+      ],
+      "protection": [
+        {
+          "unitName": "大善寺本堂",
+          "scope": "本堂（薬師堂）正面",
+          "note": ""
+        }
       ]
     },
     "jp_eihoji_kannondo": {
@@ -12331,6 +12853,13 @@
       "captions": [
         "永保寺観音堂 · 裳階付き禅宗仏殿 · 観音堂正面",
         "室町前期（南北朝期）建立"
+      ],
+      "protection": [
+        {
+          "unitName": "永保寺観音堂",
+          "scope": "裳階付き禅宗仏殿 · 観音堂正面",
+          "note": ""
+        }
       ]
     },
     "jp_zuiryuji_butsuden": {
@@ -12350,6 +12879,13 @@
       "captions": [
         "瑞龍寺仏殿 · 鉛瓦葺禅宗仏殿正面",
         "1659年竣工"
+      ],
+      "protection": [
+        {
+          "unitName": "瑞龍寺 仏殿",
+          "scope": "鉛瓦葺禅宗仏殿正面",
+          "note": ""
+        }
       ]
     },
     "jp_matsumoto_tenshu": {
@@ -12369,6 +12905,33 @@
       "captions": [
         "松本城天守 · 大天守と連結天守群",
         "1615年頃（文化庁）· 別説1594～1599年"
+      ],
+      "protection": [
+        {
+          "unitName": "松本城天守 天守",
+          "scope": "大天守",
+          "note": ""
+        },
+        {
+          "unitName": "松本城天守 乾小天守",
+          "scope": "乾小天守",
+          "note": ""
+        },
+        {
+          "unitName": "松本城天守 渡櫓",
+          "scope": "渡櫓",
+          "note": ""
+        },
+        {
+          "unitName": "松本城天守 辰巳附櫓",
+          "scope": "辰巳附櫓",
+          "note": ""
+        },
+        {
+          "unitName": "松本城天守 月見櫓",
+          "scope": "月見櫓",
+          "note": ""
+        }
       ]
     },
     "jp_inuyama_tenshu": {
@@ -12388,6 +12951,13 @@
       "captions": [
         "犬山城天守 · 三重四階の望楼型天守",
         "1601年築櫓 · 1620年頃望楼増築"
+      ],
+      "protection": [
+        {
+          "unitName": "犬山城天守",
+          "scope": "三重四階の望楼型天守",
+          "note": ""
+        }
       ]
     },
     "jp_izumo_honden": {
@@ -12407,6 +12977,13 @@
       "captions": [
         "出雲大社本殿 · 大社造本殿 · 瑞垣外からの姿",
         "1744年造営"
+      ],
+      "protection": [
+        {
+          "unitName": "出雲大社本殿",
+          "scope": "大社造本殿 · 瑞垣外からの姿",
+          "note": ""
+        }
       ]
     },
     "jp_sanbutsuji_nageiredo": {
@@ -12426,6 +13003,13 @@
       "captions": [
         "三仏寺投入堂 · 懸造の奥院 · 崖上の小堂",
         "平安後期 · 用材は1165年伐採"
+      ],
+      "protection": [
+        {
+          "unitName": "三仏寺奥院(投入堂)",
+          "scope": "懸造の奥院 · 崖上の小堂",
+          "note": ""
+        }
       ]
     },
     "jp_fukiji_odo": {
@@ -12445,6 +13029,13 @@
       "captions": [
         "富貴寺大堂 · 宝形造阿弥陀堂正面",
         "平安後期"
+      ],
+      "protection": [
+        {
+          "unitName": "富貴寺大堂",
+          "scope": "宝形造阿弥陀堂正面",
+          "note": ""
+        }
       ]
     },
     "jp_jodoji_jododo": {
@@ -12464,6 +13055,13 @@
       "captions": [
         "浄土寺浄土堂 · 大仏様阿弥陀堂 · 東面正面",
         "1192年建立"
+      ],
+      "protection": [
+        {
+          "unitName": "浄土寺浄土堂(阿弥陀堂)",
+          "scope": "大仏様阿弥陀堂 · 東面正面",
+          "note": ""
+        }
       ]
     },
     "jp_chusonji_konjikido": {
@@ -12482,6 +13080,13 @@
       "captions": [
         "中尊寺金色堂",
         "1124年"
+      ],
+      "protection": [
+        {
+          "unitName": "中尊寺金色堂",
+          "scope": "中尊寺金色堂",
+          "note": ""
+        }
       ]
     },
     "jp_shiramizu_amidado": {
@@ -12500,6 +13105,13 @@
       "captions": [
         "白水阿弥陀堂",
         "1160年"
+      ],
+      "protection": [
+        {
+          "unitName": "阿弥陀堂（白水阿弥陀堂）",
+          "scope": "白水阿弥陀堂",
+          "note": ""
+        }
       ]
     },
     "jp_hokiji_pagoda": {
@@ -12518,6 +13130,13 @@
       "captions": [
         "法起寺三重塔",
         "706年"
+      ],
+      "protection": [
+        {
+          "unitName": "法起寺三重塔",
+          "scope": "法起寺三重塔",
+          "note": ""
+        }
       ]
     },
     "jp_shosoin_shoso": {
@@ -12536,6 +13155,13 @@
       "captions": [
         "正倉院正倉",
         "8世紀中叶"
+      ],
+      "protection": [
+        {
+          "unitName": "正倉院正倉",
+          "scope": "正倉院正倉",
+          "note": ""
+        }
       ]
     },
     "jp_shinyakushiji_hondo": {
@@ -12554,6 +13180,13 @@
       "captions": [
         "新薬師寺本堂",
         "8世紀"
+      ],
+      "protection": [
+        {
+          "unitName": "新薬師寺本堂",
+          "scope": "新薬師寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_murouji_kondo": {
@@ -12572,6 +13205,13 @@
       "captions": [
         "室生寺金堂",
         "9世紀"
+      ],
+      "protection": [
+        {
+          "unitName": "室生寺金堂",
+          "scope": "室生寺金堂",
+          "note": ""
+        }
       ]
     },
     "jp_murouji_pagoda": {
@@ -12590,6 +13230,13 @@
       "captions": [
         "室生寺五重塔",
         "平安初期"
+      ],
+      "protection": [
+        {
+          "unitName": "室生寺五重塔",
+          "scope": "室生寺五重塔",
+          "note": ""
+        }
       ]
     },
     "jp_engakuji_shariden": {
@@ -12608,6 +13255,13 @@
       "captions": [
         "円覚寺舎利殿",
         "15世紀前半"
+      ],
+      "protection": [
+        {
+          "unitName": "円覚寺舎利殿",
+          "scope": "円覚寺舎利殿",
+          "note": ""
+        }
       ]
     },
     "jp_kozanji_butsuden": {
@@ -12626,6 +13280,13 @@
       "captions": [
         "功山寺仏殿",
         "1320年"
+      ],
+      "protection": [
+        {
+          "unitName": "功山寺仏殿",
+          "scope": "功山寺仏殿",
+          "note": ""
+        }
       ]
     },
     "jp_hikone_tenshu": {
@@ -12644,6 +13305,13 @@
       "captions": [
         "彦根城天守",
         "1606—1607年"
+      ],
+      "protection": [
+        {
+          "unitName": "彦根城天守、附櫓及び多聞櫓 天守",
+          "scope": "彦根城天守",
+          "note": ""
+        }
       ]
     },
     "jp_matsue_tenshu": {
@@ -12662,6 +13330,13 @@
       "captions": [
         "松江城天守",
         "1611年"
+      ],
+      "protection": [
+        {
+          "unitName": "松江城天守",
+          "scope": "松江城天守",
+          "note": ""
+        }
       ]
     },
     "jp_burakuji_yakushido": {
@@ -12680,6 +13355,13 @@
       "captions": [
         "豊楽寺薬師堂",
         "12世紀"
+      ],
+      "protection": [
+        {
+          "unitName": "豊楽寺薬師堂",
+          "scope": "豊楽寺薬師堂",
+          "note": ""
+        }
       ]
     },
     "jp_kamitani_honden": {
@@ -12698,6 +13380,13 @@
       "captions": [
         "神谷神社本殿",
         "1219年"
+      ],
+      "protection": [
+        {
+          "unitName": "神谷神社本殿",
+          "scope": "神谷神社本殿",
+          "note": ""
+        }
       ]
     },
     "jp_rurikoji_pagoda": {
@@ -12716,6 +13405,13 @@
       "captions": [
         "瑠璃光寺五重塔",
         "1442年"
+      ],
+      "protection": [
+        {
+          "unitName": "瑠璃光寺五重塔",
+          "scope": "瑠璃光寺五重塔",
+          "note": ""
+        }
       ]
     },
     "jp_kibitsu_honden": {
@@ -12734,6 +13430,13 @@
       "captions": [
         "吉備津神社本殿及び拝殿",
         "1425年"
+      ],
+      "protection": [
+        {
+          "unitName": "吉備津神社本殿及び拝殿",
+          "scope": "吉備津神社本殿及び拝殿",
+          "note": ""
+        }
       ]
     },
     "jp_kamosu_honden": {
@@ -12752,6 +13455,13 @@
       "captions": [
         "神魂神社本殿",
         "1583年"
+      ],
+      "protection": [
+        {
+          "unitName": "神魂神社本殿",
+          "scope": "神魂神社本殿",
+          "note": ""
+        }
       ]
     },
     "jp_kongosanmaiin_tahoto": {
@@ -12770,6 +13480,13 @@
       "captions": [
         "金剛三昧院多宝塔",
         "1223年"
+      ],
+      "protection": [
+        {
+          "unitName": "金剛三昧院多宝塔",
+          "scope": "金剛三昧院多宝塔",
+          "note": ""
+        }
       ]
     },
     "jp_negoroji_daito": {
@@ -12788,6 +13505,13 @@
       "captions": [
         "根来寺大塔",
         "1547年"
+      ],
+      "protection": [
+        {
+          "unitName": "根来寺多宝塔(大塔)",
+          "scope": "根来寺大塔",
+          "note": ""
+        }
       ]
     },
     "jp_sofukuji_daiou": {
@@ -12806,6 +13530,13 @@
       "captions": [
         "崇福寺大雄宝殿",
         "1646年、上層は1681年頃増築"
+      ],
+      "protection": [
+        {
+          "unitName": "崇福寺大雄宝殿",
+          "scope": "崇福寺大雄宝殿",
+          "note": ""
+        }
       ]
     },
     "jp_sofukuji_daiippomon": {
@@ -12824,6 +13555,13 @@
       "captions": [
         "崇福寺第一峰門",
         "1695年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "崇福寺第一峰門",
+          "scope": "崇福寺第一峰門",
+          "note": ""
+        }
       ]
     },
     "jp_aoi_aso": {
@@ -12842,6 +13580,13 @@
       "captions": [
         "青井阿蘇神社楼門",
         "1613年楼門"
+      ],
+      "protection": [
+        {
+          "unitName": "青井阿蘇神社 楼門",
+          "scope": "青井阿蘇神社楼門",
+          "note": ""
+        }
       ]
     },
     "jp_tamaudun": {
@@ -12860,6 +13605,23 @@
       "captions": [
         "玉陵",
         "1501年；戦後修復"
+      ],
+      "protection": [
+        {
+          "unitName": "玉陵 墓室 （東室）",
+          "scope": "玉陵の東室",
+          "note": ""
+        },
+        {
+          "unitName": "玉陵 墓室 （中室）",
+          "scope": "玉陵の中室",
+          "note": ""
+        },
+        {
+          "unitName": "玉陵 墓室 （西室）",
+          "scope": "玉陵の西室",
+          "note": ""
+        }
       ]
     },
     "jp_myoikian_taian": {
@@ -12878,6 +13640,13 @@
       "captions": [
         "妙喜庵待庵",
         "伝承では約1582年"
+      ],
+      "protection": [
+        {
+          "unitName": "妙喜庵書院及び茶室（待庵） 茶室（待庵）",
+          "scope": "妙喜庵待庵",
+          "note": ""
+        }
       ]
     },
     "jp_urakuen_joan": {
@@ -12896,6 +13665,13 @@
       "captions": [
         "有楽苑如庵",
         "約1618年"
+      ],
+      "protection": [
+        {
+          "unitName": "如庵",
+          "scope": "有楽苑如庵",
+          "note": ""
+        }
       ]
     },
     "jp_hakogi_house": {
@@ -12914,6 +13690,13 @@
       "captions": [
         "箱木家住宅主屋",
         "14世紀"
+      ],
+      "protection": [
+        {
+          "unitName": "箱木家住宅(兵庫県神戸市北区山田町) 主屋",
+          "scope": "箱木家住宅主屋",
+          "note": ""
+        }
       ]
     },
     "jp_furui_house": {
@@ -12932,6 +13715,13 @@
       "captions": [
         "旧古井家住宅",
         "15世紀"
+      ],
+      "protection": [
+        {
+          "unitName": "旧古井家住宅(兵庫県姫路市安富町)",
+          "scope": "旧古井家住宅",
+          "note": ""
+        }
       ]
     },
     "jp_bannaji_hondo": {
@@ -12950,6 +13740,13 @@
       "captions": [
         "鑁阿寺本堂",
         "1299年、後世に修理"
+      ],
+      "protection": [
+        {
+          "unitName": "鑁阿寺本堂",
+          "scope": "鑁阿寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_myotsuji_hondo": {
@@ -12968,6 +13765,13 @@
       "captions": [
         "明通寺本堂",
         "1258年、1265年に供養"
+      ],
+      "protection": [
+        {
+          "unitName": "明通寺本堂",
+          "scope": "明通寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_myotsuji_pagoda": {
@@ -12986,6 +13790,13 @@
       "captions": [
         "明通寺三重塔",
         "1270年"
+      ],
+      "protection": [
+        {
+          "unitName": "明通寺三重塔",
+          "scope": "明通寺三重塔",
+          "note": ""
+        }
       ]
     },
     "jp_seihakuji_butsuden": {
@@ -13004,6 +13815,13 @@
       "captions": [
         "清白寺仏殿",
         "1415年"
+      ],
+      "protection": [
+        {
+          "unitName": "清白寺仏殿",
+          "scope": "清白寺仏殿",
+          "note": ""
+        }
       ]
     },
     "jp_daihoji_pagoda": {
@@ -13022,6 +13840,13 @@
       "captions": [
         "大法寺三重塔",
         "1333年"
+      ],
+      "protection": [
+        {
+          "unitName": "大法寺三重塔",
+          "scope": "大法寺三重塔",
+          "note": ""
+        }
       ]
     },
     "jp_ankokuji_kyozo": {
@@ -13040,6 +13865,13 @@
       "captions": [
         "安国寺経蔵",
         "1408年"
+      ],
+      "protection": [
+        {
+          "unitName": "安国寺経蔵",
+          "scope": "安国寺経蔵",
+          "note": ""
+        }
       ]
     },
     "jp_konrenji_midado": {
@@ -13058,6 +13890,13 @@
       "captions": [
         "金蓮寺弥陀堂",
         "鎌倉時代、約1300年に配置"
+      ],
+      "protection": [
+        {
+          "unitName": "金蓮寺弥陀堂",
+          "scope": "金蓮寺弥陀堂",
+          "note": ""
+        }
       ]
     },
     "jp_senshuji_mieido": {
@@ -13076,6 +13915,13 @@
       "captions": [
         "専修寺御影堂",
         "1666年、1679年落成供養"
+      ],
+      "protection": [
+        {
+          "unitName": "専修寺御影堂",
+          "scope": "専修寺御影堂",
+          "note": ""
+        }
       ]
     },
     "jp_senshuji_nyoraido": {
@@ -13094,6 +13940,13 @@
       "captions": [
         "専修寺如来堂",
         "1748年"
+      ],
+      "protection": [
+        {
+          "unitName": "専修寺如来堂",
+          "scope": "専修寺如来堂",
+          "note": ""
+        }
       ]
     },
     "jp_onjoji_kondo": {
@@ -13112,6 +13965,13 @@
       "captions": [
         "園城寺金堂",
         "1599年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "園城寺金堂",
+          "scope": "園城寺金堂",
+          "note": ""
+        }
       ]
     },
     "jp_kongorinji_hondo": {
@@ -13130,6 +13990,13 @@
       "captions": [
         "金剛輪寺本堂",
         "14世紀、約1350年に配置"
+      ],
+      "protection": [
+        {
+          "unitName": "金剛輪寺本堂",
+          "scope": "金剛輪寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_saimyoji_hondo": {
@@ -13148,6 +14015,13 @@
       "captions": [
         "西明寺本堂",
         "鎌倉前期、後世に拡張"
+      ],
+      "protection": [
+        {
+          "unitName": "西明寺本堂",
+          "scope": "西明寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_saimyoji_pagoda": {
@@ -13166,6 +14040,13 @@
       "captions": [
         "西明寺三重塔",
         "鎌倉後期、約1300年に配置"
+      ],
+      "protection": [
+        {
+          "unitName": "西明寺三重塔",
+          "scope": "西明寺三重塔",
+          "note": ""
+        }
       ]
     },
     "jp_jorakuji_hondo": {
@@ -13184,6 +14065,13 @@
       "captions": [
         "常楽寺本堂",
         "1360年火災後の再建"
+      ],
+      "protection": [
+        {
+          "unitName": "常楽寺本堂",
+          "scope": "常楽寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_jorakuji_pagoda": {
@@ -13202,6 +14090,13 @@
       "captions": [
         "常楽寺三重塔",
         "1400年"
+      ],
+      "protection": [
+        {
+          "unitName": "常楽寺三重塔",
+          "scope": "常楽寺三重塔",
+          "note": ""
+        }
       ]
     },
     "jp_zensuiji_hondo": {
@@ -13220,6 +14115,13 @@
       "captions": [
         "善水寺本堂",
         "伝1366年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "善水寺本堂",
+          "scope": "善水寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_chojuji_hondo": {
@@ -13238,6 +14140,13 @@
       "captions": [
         "長寿寺本堂",
         "鎌倉前期、約1200年に配置"
+      ],
+      "protection": [
+        {
+          "unitName": "長寿寺本堂",
+          "scope": "長寿寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_hogonji_karamon": {
@@ -13256,6 +14165,13 @@
       "captions": [
         "宝厳寺唐門",
         "1603年の移築記録"
+      ],
+      "protection": [
+        {
+          "unitName": "宝厳寺 唐門",
+          "scope": "宝厳寺唐門",
+          "note": ""
+        }
       ]
     },
     "jp_kaijusenji_pagoda": {
@@ -13274,6 +14190,13 @@
       "captions": [
         "海住山寺五重塔",
         "1214年、1963年に裳階復原"
+      ],
+      "protection": [
+        {
+          "unitName": "海住山寺五重塔",
+          "scope": "海住山寺五重塔",
+          "note": ""
+        }
       ]
     },
     "jp_daihoonji_hondo": {
@@ -13292,6 +14215,13 @@
       "captions": [
         "大報恩寺本堂",
         "1227年"
+      ],
+      "protection": [
+        {
+          "unitName": "大報恩寺本堂（千本釈迦堂）",
+          "scope": "大報恩寺本堂",
+          "note": ""
+        }
       ]
     },
     "jp_kinpusenji_zaodo": {
@@ -13310,6 +14240,13 @@
       "captions": [
         "金峯山寺蔵王堂",
         "1592年頃再建"
+      ],
+      "protection": [
+        {
+          "unitName": "金峯山寺本堂",
+          "scope": "金峯山寺蔵王堂",
+          "note": ""
+        }
       ]
     },
     "jp_todaiji_daibutsuden": {
@@ -13328,6 +14265,13 @@
       "captions": [
         "東大寺大仏殿",
         "1709年落成供養"
+      ],
+      "protection": [
+        {
+          "unitName": "東大寺金堂（大仏殿）",
+          "scope": "東大寺大仏殿",
+          "note": ""
+        }
       ]
     },
     "jp_todaiji_nigatsudo": {
@@ -13346,6 +14290,13 @@
       "captions": [
         "東大寺二月堂",
         "1669年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "東大寺二月堂",
+          "scope": "東大寺二月堂",
+          "note": ""
+        }
       ]
     },
     "jp_horyuji_yumedono": {
@@ -13364,6 +14315,13 @@
       "captions": [
         "法隆寺夢殿",
         "739年頃、1230年に大修理"
+      ],
+      "protection": [
+        {
+          "unitName": "法隆寺東院夢殿",
+          "scope": "法隆寺夢殿",
+          "note": ""
+        }
       ]
     },
     "jp_yakushiji_toindo": {
@@ -13382,6 +14340,13 @@
       "captions": [
         "薬師寺東院堂",
         "1285年再建、1733年に向きを変更"
+      ],
+      "protection": [
+        {
+          "unitName": "薬師寺東院堂",
+          "scope": "薬師寺東院堂",
+          "note": ""
+        }
       ]
     },
     "jp_hasedera_hondo": {
@@ -13400,6 +14365,13 @@
       "captions": [
         "長谷寺本堂",
         "1650年再建"
+      ],
+      "protection": [
+        {
+          "unitName": "長谷寺 本堂",
+          "scope": "長谷寺本堂",
+          "note": ""
+        }
       ]
     },
     "xitai_aohu": {
@@ -14399,19 +15371,50 @@
       "name": "三棟半の唐代木構",
       "eyebrow": "唐代の木構 · 山西",
       "lede": "中国で唐代のものと確認できる木造建築は、山西の三棟の大殿だけが残る。平順の天台庵弥陀殿は長く唐の建築とされてきたが、近年の研究では五代とする見方が多く、愛好家はこれを合わせて「三棟半」と呼ぶ。",
-      "note": "4件が「三棟半」に当たる。天台庵は本図鑑では現在の研究に従い五代に分類するが、旧説を残すためこの名録に含める。"
+      "note": "4件が「三棟半」に当たる。天台庵は本図鑑では現在の研究に従い五代に分類するが、旧説を残すためこの名録に含める。",
+      "selectionReason": "唐代の三つの殿堂と年代に議論のある天台庵を、三間の小堂から七間の大殿まで見比べます。柱の配置や屋根の広がりとともに、墨書が年代の見方をどう変えるかをたどります。",
+      "itemReasons": {
+        "nanchan": "三間で内部に柱のない小堂から、簡潔な架構が礼拝の空間を生み出す仕組みを見ます。",
+        "guangren": "仏寺から竜王を祀る廟へ。同じ唐代の木造でも、間口五間で奥行きの浅い正殿には異なる規模と用途があります。",
+        "foguang": "七間の寄棟屋根と内外二列の柱から、唐代大殿の規模と空間の重なりがわかります。南禅寺の小堂との対照に適しています。",
+        "tiantai": "かつて唐代建築に数えられた小堂です。後唐の年号を記す墨書による年代の再検討をたどり、本目録では五代としつつ異論も残します。"
+      }
     },
     "liao_eight": {
       "name": "遼代八大木構",
       "eyebrow": "遼代の木構 · 華北と東北",
       "lede": "遼代の木造建築は現存するものが少なく、愛好家は「遼代八大木構」と呼ぶ。独楽寺観音閣と山門、奉国寺大雄殿、開善寺大雄殿、閣院寺文殊殿、華厳寺薄伽教蔵殿、善化寺大雄宝殿、応県木塔である。",
-      "note": "八項目が現存する八棟に対応する。失われた広済寺三大士殿は含めない。"
+      "note": "八項目が現存する八棟に対応する。失われた広済寺三大士殿は含めない。",
+      "selectionReason": "山門、仏殿、蔵経殿、楼閣、木塔が並ぶ遼代の名録です。用途と規模の異なる八棟から、木造架構が通行、礼拝、経典の収納、多層の空間にどう応じるかを見ます。",
+      "itemReasons": {
+        "geyuan": "ほぼ正方形の三間堂と深い軒から、小規模な遼代建築を見始められます。建具には複数の時代の部材も残っています。",
+        "dule_guanyin": "高い観音像を囲む多層の空間。外観の二層と内部の中間層の違いに注目すると、楼閣の構造が見えてきます。",
+        "dule_gate": "独楽寺の三間の山門を、像を安置する高い楼閣と見比べます。同じ遼代の再建でも、空間の役割は大きく異なります。",
+        "fengguo": "九間の大殿に並ぶ七仏。外の広い屋根と内部の像の配列を結びつけると、遼代大殿の大きさを実感できます。",
+        "kaishan": "五間の大殿を支える内部の柱は四本。外観だけでなく柱の配置を見ると、減柱と移柱によって礼拝空間を広げる工夫がわかります。",
+        "huayan_bojia": "経典を納める壁蔵と天宮楼閣から、大きな架構だけでなく、室内の精緻な木工にも目を向けられます。",
+        "yingxian": "横に広がる殿堂から八角の木塔へ。外から見える層と中間層を交互に重ね、空間を上へ積み上げる構成を見ます。",
+        "shanhua_daxiong": "七間の大殿には遼代の主体と金代の修理・塑像が共存します。一棟の遼代建築に、後世の営繕と美術も重なっていることがわかります。"
+      }
     },
     "zhuozhang_valley": {
       "name": "濁漳河谷",
       "eyebrow": "晋東南 · 平順と潞城",
       "lede": "濁漳河は平順・潞城一帯の谷を流れ、両岸の村々には五代から元までの小さな寺廟や祠廟が密集して残る。晋東南の古跡めぐりで最も定番のルートである。",
-      "note": "本図鑑に収録済みの河谷の古跡だけを年代順に並べる。実際の行程は河谷に沿って西から東へ、またはその逆にたどれる。"
+      "note": "本図鑑に収録済みの河谷の古跡だけを年代順に並べる。実際の行程は河谷に沿って西から東へ、またはその逆にたどれる。",
+      "selectionReason": "一つの河谷に沿って、五代の小堂、宋・金の寺院、元代の祠廟をたどります。似た三間の間口でも、屋根、柱、境内の用途はさまざま。一つの問いを持って見比べられる名録です。",
+      "itemReasons": {
+        "longmen": "五代の西配殿の三間・切妻屋根を出発点に、異なる時代の建物が残る寺院を見て、一度に完成したわけではないことを知ります。",
+        "tiantai": "ほぼ正方形の平面と簡潔な軒の支えを持つ五代の小堂。龍門寺・大雲院と比較しやすい一棟です。",
+        "dayun": "五代の殿堂に五代の壁画が残ります。梁組から壁面へ視線を移し、建築と絵画がつくる礼拝空間を見ます。",
+        "yuanqi_hall": "宋代の小堂と同じ寺の青龍塔を合わせて、一棟の木造から、殿堂と塔がつくる寺院の構成へ目を広げます。",
+        "fotou": "三間の堂に木造架構と後世の壁画が重なります。寺全体を一つの時代でくくらず、建築と絵画を分けて見られます。",
+        "yuanqi_qinglong": "八角七層の煉瓦塔は、木造の組物を煉瓦で表します。木の殿堂が多い名録で、素材の置き換えに注目できる一棟です。",
+        "huilong": "三間の切妻屋根と前面の八角石柱が特徴です。同じ村の夏禹神祠と合わせ、小さな廟の入口空間の違いを見られます。",
+        "chunhua": "三間の金代殿堂では、一本の長い梁が前後の軒をつなぎます。奥行きのある堂を少ない内部支柱で支える工夫に注目できます。",
+        "jiutian": "描かれた元代の献殿は四方が開き、舞台と正殿の間にあります。閉じた仏殿から、祭祀と演劇をつなぐ空間へ視点を移せます。",
+        "xiayu": "元代正殿の深い前廊に、明代の山門兼舞台と清代の脇殿が加わります。建物の年代と境内での役割を合わせて見る結びの一棟です。"
+      }
     },
     "chongsheng": {
       "name": "崇聖寺三塔",
@@ -14508,6 +15511,92 @@
       "eyebrow": "河北涿州 · 古城",
       "lede": "涿州双塔の収録単体を、個別の年代・図版・訪問記録でたどる。",
       "note": "進捗はここに挙げる単体のみを数える。旧集合の記録は別に保存し、単体の訪問状態には引き継がない。"
+    }
+  },
+  "recommendations": {
+    "nanchan": {
+      "foguang": "内部に柱のない三間堂から七間の大殿へ。仏光寺の内外二列の柱が、より大きな礼拝空間をどう構成するか見比べます。",
+      "guangren": "ともに内部に柱のない唐代の小堂ですが、広仁王廟は間口五間で奥行きが浅く、平面の比率と用途の違いを比較できます。"
+    },
+    "guangren": {
+      "nanchan": "奥行きの浅い五間堂と、ほぼ正方形の三間堂。どちらも内部に柱を置かず、異なる空間の比率を生み出しています。",
+      "foguang": "竜王を祀る小堂から仏光寺の七間大殿へ。用途と規模の違いに応じて、柱の配置と屋根がどう変わるかを見ます。"
+    },
+    "foguang": {
+      "nanchan": "七間大殿の後は、内部に柱のない南禅寺の三間堂へ。同じ唐代でも、屋根の支え方と礼拝空間の構成は異なります。",
+      "fengguo": "唐代七間の寄棟の大殿から、遼代九間の大殿へ。幅の広い堂と七仏の配列を比べ、建築と像の関係を見ます。"
+    },
+    "tiantai": {
+      "nanchan": "ほぼ正方形の三間堂どうしを見比べます。外形が似ていても、年代判断には墨書も必要で、古風な姿だけで唐代とは決められません。",
+      "dayun": "同じ河谷の五代小堂でも、大雲院には柱間の組物と壁画が残ります。軒下のリズムと室内装飾の違いを続けて見られます。"
+    },
+    "geyuan": {
+      "kaishan": "ほぼ正方形の三間堂から五間の大殿へ。ともに内部の柱を減らしたり移したりしており、支柱と空間の配置を比較できます。",
+      "huayan_bojia": "閣院寺の古い部材が残る建具から、薄伽教蔵殿の楼閣を模した壁蔵へ。遼代建築の見方を室内木工にまで広げます。"
+    },
+    "dule_guanyin": {
+      "dule_gate": "同じ寺の遼代山門へ。大きな観音像を囲む楼閣と三間の入口を、規模と用途の両面から直接比較できます。",
+      "yingxian": "観音閣も応県木塔も、外からはわかりにくい中間層を持ちます。八角の木塔が層間の構造を上へ重ねる方法を見ます。"
+    },
+    "dule_gate": {
+      "dule_guanyin": "同じ寺の山門から観音閣へ。ともに984年の再建ですが、通路と多層の安像空間では柱の配置が異なります。",
+      "foguang": "ともに寄棟屋根ですが、独楽寺の三間山門と仏光寺の七間仏殿では規模が大きく異なります。同じ屋根形式の使い分けを見ます。"
+    },
+    "fengguo": {
+      "foguang": "九間の遼代大殿と七間の唐代大殿は、ともに広い寄棟屋根で仏壇を覆います。規模、柱、像の配置から空間構成を比較できます。",
+      "shanhua_daxiong": "遼代の主体を残す善化寺大殿へ。金代の修理と塑像を通じて、架構と像が同じ時代かどうかを分けて見られます。"
+    },
+    "kaishan": {
+      "geyuan": "五間堂の四本の内柱と、閣院寺三間堂の二本の内柱を比較し、支柱を減らした架構が屋根をどう支えるかを見ます。",
+      "fengguo": "五間から九間の寄棟大殿へ。奉国寺の広い正面と内部の七仏の並びを結びつけると、単なる大小以上の比較ができます。"
+    },
+    "huayan_bojia": {
+      "shanhua_daxiong": "同じ大同古城にある善化寺へ。蔵経殿の精緻な壁蔵と七間大殿・金代塑像を合わせ、用途と後世の重なりを見比べます。",
+      "geyuan": "楼閣を模した蔵経木工から閣院寺の建具へ。用途の異なる造作に残る細部の技法と、後世の取り替えの痕跡を見ます。"
+    },
+    "yingxian": {
+      "dule_guanyin": "五つの外観層と四つの中間層を持つ木塔を、外観二層・内部三層の観音閣と比べ、見える階数と構造の層を区別します。",
+      "yuanqi_qinglong": "ともに八角の塔ですが、一方は木造の層を重ね、他方は木の組物を煉瓦で表します。似た輪郭の下にある構法の違いを見ます。"
+    },
+    "shanhua_daxiong": {
+      "huayan_bojia": "同じ大同古城で、七間の仏殿から五間の蔵経殿へ。壁蔵と天宮楼閣が、大きな架構から室内木工へ視線を導きます。",
+      "fengguo": "善化寺の遼代主体には金代塑像が残り、奉国寺では遼代の大殿と七仏塑像を合わせて見られます。建築と像の年代を別々に読みます。"
+    },
+    "longmen": {
+      "tiantai": "ともに河谷の五代三間堂ですが、西配殿は切妻、天台庵は入母屋。まず屋根の両端の輪郭を見比べます。",
+      "dayun": "西配殿の簡潔な軒の支えから、大雲院の柱間の組物と壁画へ。同じ五代の堂でも、軒下と室内の構成は異なります。"
+    },
+    "dayun": {
+      "tiantai": "柱間にも組物を置く弥陀殿から、より簡潔な天台庵の軒下へ。五代の小堂二棟の支えと柱間のリズムを比べます。",
+      "fotou": "五代の堂と壁画が残る大雲院に対し、仏頭寺では架構に後世の壁画が重なります。建築と絵画の年代を分けて見る比較です。"
+    },
+    "yuanqi_hall": {
+      "yuanqi_qinglong": "同寺の殿の西に青龍塔があります。木の殿堂と八角の煉瓦塔を合わせ、実際の木造組物と煉瓦による表現を比べます。",
+      "fotou": "ともに宋代の小堂として収録され、間口三間・奥行き四椽です。近い規模のもとで、仏頭寺の組物と後世の壁画へ目を向けます。"
+    },
+    "fotou": {
+      "dayun": "仏頭寺の壁画は架構より後の時代ですが、大雲院には五代の堂と五代の壁画が残ります。室内の時間の重なりを比較できます。",
+      "chunhua": "同じ三間堂でも、淳化寺は一本の長い梁で前後の軒をつなぎます。宋・金という分類に加え、屋根の下の架構を比較できます。"
+    },
+    "yuanqi_qinglong": {
+      "yuanqi_hall": "同寺の大殿が塔の隣にあります。木の殿堂の組物を見てから、塔の煉瓦彫刻がその形をどう表すかを確かめられます。",
+      "yingxian": "八角の煉瓦塔から八角の木塔へ。木造を模した細部と、実際に階層を積み上げる木の架構の違いを見ます。"
+    },
+    "huilong": {
+      "xiayu": "同じ侯壁村の三間・切妻の殿堂を合わせて見ます。回龍寺の前面石柱と夏禹神祠の深い前廊から、入口空間を比較できます。",
+      "chunhua": "ともに金代の遺構とされますが、回龍寺は切妻、淳化寺は入母屋です。屋根形式と梁の配置の違いを見比べます。"
+    },
+    "chunhua": {
+      "fotou": "一本の長い梁で前後をつなぐ架構と、仏頭寺の梁を組み合わせる架構を比べます。三間堂でも屋根の支え方は異なります。",
+      "huilong": "河谷の金代小堂である回龍寺は、八角石柱と切妻屋根が特徴です。梁組から入口と軒へと比較の視点を移せます。"
+    },
+    "jiutian": {
+      "xiayu": "献殿が舞台と正殿をつなぐ構成に対し、夏禹神祠は山門上の舞台が正殿に向き合います。祭祀と演劇の配置を比較できます。",
+      "huilong": "四方の開いた献殿から閉じた仏殿へ。ともに石柱を使いながら、用途の違いが内外の関係を大きく変えています。"
+    },
+    "xiayu": {
+      "huilong": "同じ侯壁村の回龍寺へ。三間・切妻の正殿どうしで、夏禹神祠の深い前廊と回龍寺の前面石柱を比べます。",
+      "jiutian": "山門上の舞台と正殿が向き合う境内から、開放的な献殿を中央に置く九天聖母廟へ。祭祀と演劇の空間構成を比較します。"
     }
   }
 }

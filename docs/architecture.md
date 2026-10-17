@@ -4,7 +4,7 @@
 
 ## 一句话
 
-访古是一款可离线使用的 iOS 原生 App：浏览古迹图鉴（线稿与设色图版）、搜索筛选、足迹地图与年表、拖动打卡、心愿单、笔记和六维评价。仓库同时保存古迹目录的源数据、图版生产脚本与本地审图工具。网页产品已移除，根目录的 HTML 只是本地工具，不对外发布。
+访古是一款可离线使用的 iOS 原生 App：浏览古迹图鉴（线稿与设色图版）、搜索筛选、足迹地图与年表、拖动打卡、心愿单、笔记、六维评价和个人名单。仓库同时保存古迹目录的源数据、图版生产脚本与本地审图工具。网页产品已移除，根目录的 HTML 只是本地工具，不对外发布。
 
 ## 仓库地图
 
@@ -16,8 +16,8 @@
 | `docs/reviews/` | 带日期的设计评审与修复记录 | 历史资料，不是新任务的授权 |
 | `sites.js` | 目录源数据：`DYN` 时代、`SITES` 古迹、`CHAPTERS` 章节、`PLACES` 地点 | 手工维护 |
 | `catalog.js` | 国家、地区、省份、类型定义与分类、筛选、搜索逻辑 | 手工维护；浏览器全局与 CommonJS 双入口 |
-| `protection.js` | 国保查询接口：标签、批次名、搜索文本 | 手工维护 |
-| `protection-data.js` | 国保登记数据 | **生成**自 `assets/research/national-protection.json` |
+| `protection.js` | 中日保护身份查询接口：标签、批次名、搜索文本 | 手工维护 |
+| `protection-data.js` | 中国国保与日本指定登记数据 | **生成**自 `assets/research/national-protection.json`、`assets/research/japanese-protection.json` |
 | `plates.js` | 线稿图版清单 `PLATES`，加载时把 `image` 写回 `SITES` | **生成** |
 | `colored-plates.js` | 设色图版清单 `COLORED_PLATES` | **生成** |
 | `sources.html` | 图版来源与署名页 | **生成** |
@@ -81,9 +81,9 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 
 多单体拆分以 `sites.js` 的 `collectionOnly` 保存旧目录 ID，并以 `curations.js` 的建筑群集合（`kind: collection`、`legacySiteID`、`items`）列出新单体。导出保留全部 ID；原生 `LibraryStore` 的可浏览目录只含单体，旧记录仍按原 ID 在集合页访问。集合快捷打卡经过 `LibraryStore` 一次原子写入，进度仍来自成员记录。
 
-### 国保：官方名单到标签
+### 保护身份：官方名单到标签
 
-`assets/research/national-protection.json` 是唯一源数据。`node scripts/prepare-protection.mjs` 生成 `protection-data.js`；`protection.js` 提供 `forSite`、`badges`、`searchText`；`catalog.js` 分类时附带登记；导出进入 `catalog.json` 的 `protection[]`。规则与来源见 [国保标签与选目规则](national-protection.md)。
+中国国保源数据为 `assets/research/national-protection.json`；日本国宝、重要文化财独立保存在 `assets/research/japanese-protection.json`。`node scripts/prepare-protection.mjs` 生成 `protection-data.js`（日本资料在 `japan`）；`protection.js` 提供共用的 `forSite`、`badges`、`searchText`；`catalog.js` 分类时附带登记；导出进入三语目录的 `protection[]`。规则与来源见 [国保标签与选目规则](national-protection.md)及[日本保护身份](japanese-protection.md)。
 
 ## 源文件与生成文件
 
@@ -92,7 +92,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `plates.js`、`sources.html`、`assets/plates/*.png` | `scripts/prepare-plates.mjs` | `sites.js`、`palette.css`、`assets/generated/`、`assets/research/*.json` | JS 与 HTML 跟踪；PNG 忽略 |
 | `assets/colored-transparent/`、`assets/colored-transparent-avif/`、`assets/color-research/avif-manifest.json` | `scripts/prepare-colored-avif.py` | `queue.json`、`assets/colored/`、`assets/color-studies/v1/`、逐图设色记录 | 清单跟踪；图片忽略 |
 | `colored-plates.js`、`assets/color-research/progress.json`、`prompts.json` | `scripts/collect-colored-plates.mjs` | `queue.json`、逐图设色记录、`avif-manifest.json` | 跟踪 |
-| `protection-data.js` | `scripts/prepare-protection.mjs` | `assets/research/national-protection.json` | 跟踪 |
+| `protection-data.js` | `scripts/prepare-protection.mjs` | `assets/research/national-protection.json`、`assets/research/japanese-protection.json` | 跟踪 |
 | `ios/Fanggu/Resources/catalog.json`、`catalog-en.json`、`catalog-ja.json`、`curations.json`、`curations-en.json`、`curations-ja.json` | `ios/scripts/build-catalog.cjs` | 上述全部 JS、`curations.js`、`palette.css`、研究 JSON、`i18n/*.json` | 跟踪 |
 | `ios/Fanggu/Resources/Artwork/` | `ios/scripts/sync-artwork.sh` | `assets/plates/`、`assets/colored-transparent-avif/`、`assets/longmen-vairocana.png` | 忽略 |
 | `ios/Fanggu.xcodeproj/` | `xcodegen generate` | `ios/project.yml` | 跟踪 |
@@ -114,6 +114,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `OfflineLand.swift` | 读取随 App 打包的 Natural Earth 陆地 GeoJSON |
 | `TimelineView.swift` | 年表页：地域与时期选择、等距时间轴、节点与列表 |
 | `MyLibraryView.swift` | 我的：统计、到访与心愿列表、外观、备份导出导入、旧记录关联 |
+| `PersonalList.swift`、`PersonalListViews.swift` | 个人名单模型与创建、编辑、按语、排序、加入古迹及文本分享 |
 | `LibraryStore.swift` | 个人记录的唯一读写入口：校验、原子保存、备份、导入合并、撤销、旧记录关联 |
 | `Models.swift` | `Monument`（`catalog.json` 的解码类型）、`VisitRecord`、`LibraryData`、`Palette`、`FangguFont` |
 | `Review.swift`、`ReviewRadar.swift` | 六维评价的维度、档位、投影与防抖；六维图的编辑与只读视图 |
@@ -123,7 +124,7 @@ App 按到访状态选图：未到访显示时代色线稿 `lineImage`，到访�
 | `DesignSystem.swift` | 外观设置、印章、标题、分隔线、按钮、输入框等共用控件 |
 | `Haptics.swift` | 触觉反馈的集中实现 |
 
-个人记录保存在本机 Application Support 下 `Fanggu/library.json`（版本 4）；外观选项与附近提醒开关保存在 `UserDefaults`（`fanggu.appearance`、`fanggu.nearbyReminder.*`）；撤销只在内存中保留最近一次，不进备份。格式与约束见 [数据模型 · 个人记录](data-model.md#个人记录-libraryjson)。
+个人记录保存在本机 Application Support 下 `Fanggu/library.json`（版本 5）；外观选项与附近提醒开关保存在 `UserDefaults`（`fanggu.appearance`、`fanggu.nearbyReminder.*`）；撤销只在内存中保留最近一次，不进备份。格式与约束见 [数据模型 · 个人记录](data-model.md#个人记录-libraryjson)。
 
 ## 本地素材分层
 

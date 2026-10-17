@@ -11,8 +11,9 @@
 | `catalog.test.cjs` | 全库条目有真实 PNG、尺寸一致、地图地点；维护全库 ID 覆盖列表与多批次的来源哈希绑定 | 是 | |
 | `facets.test.cjs` | `catalog.js` 的国家、地区、省份、类型、状态组合筛选与别名搜索；原生导出默认未到访 | 否 | |
 | `protection.test.cjs` | 国保源数据与生成数据一致、批次公布日期、合并关系、未确认条目不贴标签、搜索组合、CommonJS 与全局一致 | 否 | 调用 `prepare-protection.mjs --check` |
+| `japanese-protection.test.cjs` | 日本指定的官方来源与哈希、所绘主体覆盖、现行等级、同名建筑区分、庭园与复建对象不借用建筑标签、中国批次不混入 | 否 | 调用同一生成器的 `--check`；原生回归为 `LocalizationTests`、`ExpansionUITests` |
 | `ios-catalog.test.cjs` | `catalog.json` 与源数据逐项一致：ID、名称、状态、图版文件名、城镇点坐标、本体坐标与研究记录一致且在城镇点附近、时代色、年代范围、国保、来源链接 | 否 | |
-| `curations.test.cjs` | `curations.js` 的专题只引用已收录古迹、结构合法；中、英、日三份 `curations*.json` 导出的 ID、类型、成员一致，译文缺失时回退中文 | 否 | |
+| `curations.test.cjs` | 专题成员与选目理由、详情人工推荐的合法性；拒绝未收录、自荐、重复、旧集合目标与空理由；三语导出一致、逐项译文回退及首批内容覆盖 | 否 | |
 | `i18n.test.cjs` | 英日术语表（含专题类型）全覆盖；逐古迹与专题译文“有则必须对齐”，缺译只打印覆盖率；三语目录固定字段一致、缺译回退中文；界面字符串与权限说明英日齐全且占位符一致 | 否 | |
 | `ios-map-layout.test.cjs` | 用真实 Swift 源编译 `SketchMapLayout.swift`，检查多种手机宽度下的投影、覆盖与触控间距 | 否 | `xcrun swiftc`；没有则跳过 |
 | `line-plate.test.cjs` | 线稿着色保留原生 alpha、拒绝未登记的白底原件、旧哈希白名单 | 否 | `magick` |
@@ -67,6 +68,8 @@
 
 | 文件 | 用例要点 |
 | --- | --- |
+| `FangguTests/PersonalListTests.swift` | 个人名单顺序与按语持久化、备份合并与旧版兼容、非法内容和损坏文件保护、写入失败与重试 |
+| `FangguUITests/PersonalListUITests.swift` | 详情创建名单、添加与移出、自动保存按语、排序和重启、我的入口与删除、英日辅助大字号 |
 | `FangguTests/ReviewTests.swift` | 年表索引完整、旧评价不臆造六维、档位往返与非法值、径向投影与防抖、持久化与备份、版本 3 导入保留六维、首次保存才升级、独立自动保存、失败保留原数据、旧记录与新增条目的备份 |
 | `FangguTests/UXRegressionTests.swift` | 打卡触觉跨原刻度连续、后退与静止／端点静音、多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存 |
 | `FangguTests/AtlasTimelineTests.swift` | 每个地域时期的节点间距与完整覆盖、等距时间轴、离线底图打包与多边形有效 |
@@ -77,7 +80,7 @@
 | `FangguUITests/FangguUITests.swift` | 图鉴列表与大图回到顶部（保留搜索和筛选）、tab 与外观切换耗时、东京筛选与别名、外观持久化、原生各栏可用、六维松手自动保存与重置、低档位可拖、短评自动保存、详情导航、大图拖动条、终点松手才保存、足迹标记与搜索 |
 | `FangguUITests/LocalizationUITests.swift` | 英日主要页面、建筑群操作与回到顶部按钮的文案 |
 | `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口 |
-| `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口 |
+| `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口；足迹地点 → 详情 → 专题可达并逐层返回 |
 | `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域；`isolate()` 供 `launchForTest` 复用，漏掉 `isolated()` 的实例也会得到作用域 |
 | `FangguUITests/UITestSupport.swift` | 辅助：`launchForTest` 关闭过渡动画并可直达详情或评价页、`relaunch` 真实重启、`dragPage`／`reveal` 沿左缘匀速滚动到目标可点 |
 | `Fanggu/UITestLaunch.swift`（App 内） | DEBUG 专用启动参数 `-uiTestDisableAnimations`、`-uiTestOpenSite <id>`、`-uiTestOpenReview`，Release 构建编译掉 |
@@ -87,3 +90,5 @@
 `china-single.test.cjs` 核对多单体拆分后的旧 ID、建筑群成员、三语导出、单体年代与国保批次，以及来源和交付哈希；原生 `CurationTests` 验证整组原子保存、整组撤销、失败重试与旧备份保留，`CurationUITests` 验证集合页一次打卡和重启后的进度。
 
 `china-single-resume.test.cjs` 核对崇兴庙戏台续作的内部主体范围、1841年起重建、宁海集合三成员、三语导出、恢复线稿和新设色的真实来源及哈希绑定，并保留未补齐资料的条目边界；`CurationUITests` 同时检查中英日新单体详情与集合页。
+
+`CurationTests` 同时覆盖旧目录缺少选目/推荐字段时的兼容解码、推荐目标过滤与只读解析；`CurationUITests` 的 `testEditorialReasonsLeadToRelatedDetailAndPreserveReturnPosition` 走图鉴专题 → 成员 → 推荐详情 → 返回流程，`testEditorialCopyIsLocalizedAndReadableWithLargeText` 检查英日理由及辅助大字号，并保留模拟器截图。

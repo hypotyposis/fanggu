@@ -74,6 +74,39 @@ final class AtlasTimelineUITests: XCTestCase {
         capture(app, "map-selected-range")
     }
 
+    func testMapPlaceDetailOpensCurationAndReturnsThroughSheet() {
+        let app = XCUIApplication.isolated(); app.launchForTest(); app.buttons["足迹"].tap()
+        // Use the real place list: both Wutai halls are visited in the initial catalogue.
+        let search = app.textFields["搜索地点、省份或古迹"]
+        XCTAssertTrue(app.reveal(search, attempts: 4))
+        search.tap(); search.typeText("五台")
+        let place = app.buttons["map-place-wutai"]
+        XCTAssertTrue(place.waitForExistence(timeout: 5))
+        app.dragPage()
+        XCTAssertTrue(app.reveal(place, attempts: 4)); place.tap()
+
+        let hall = app.buttons.matching(NSPredicate(format: "label CONTAINS %@ AND label CONTAINS %@", "南禅寺大殿", "细读")).firstMatch
+        XCTAssertTrue(hall.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.reveal(hall, attempts: 3)); hall.tap()
+        let chip = app.descendants(matching: .any)["curation-chip-tang_timber"].firstMatch
+        XCTAssertTrue(chip.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.reveal(chip, attempts: 3)); chip.tap()
+
+        let progress = app.descendants(matching: .any)["curation-progress"].firstMatch
+        XCTAssertTrue(progress.waitForExistence(timeout: 5), "The map sheet's own navigation stack must resolve a curation destination")
+        XCTAssertTrue(app.buttons["share-curation-card"].exists)
+        capture(app, "map-detail-curation")
+        app.buttons["返回"].tap()
+        XCTAssertTrue(app.buttons["share-card"].waitForExistence(timeout: 5))
+        XCTAssertTrue(chip.isHittable, "Returning from the curation keeps the source detail at its chip")
+        app.buttons["detail-back"].tap()
+        XCTAssertTrue(hall.waitForExistence(timeout: 5), "Returning again restores the visited place's member list")
+        app.buttons["map-sheet-close"].tap()
+        let selected = app.staticTexts["map-selected-places"]
+        XCTAssertTrue(selected.waitForExistence(timeout: 5))
+        XCTAssertTrue(selected.label.contains("五台"), "Closing the sheet preserves the selected place")
+    }
+
     private func waitForMenuToClose(_ app: XCUIApplication) {
         let gone = XCTNSPredicateExpectation(predicate: NSPredicate(format: "exists == false"), object: app.buttons["Dismiss context menu"])
         XCTAssertEqual(XCTWaiter.wait(for: [gone], timeout: 5), .completed)

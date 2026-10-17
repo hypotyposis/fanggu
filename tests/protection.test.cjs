@@ -13,11 +13,14 @@ const { SITES, PLACES } = JSON.parse(JSON.stringify(vm.runInNewContext(read('sit
 const catalog = facets.classify(SITES, PLACES);
 
 test('national protection source and generated metadata agree, with traceable catalogue subjects', () => {
-  assert.deepEqual(require('../protection-data.js'), data);
+  const { japan, ...chinese } = require('../protection-data.js');
+  assert.deepEqual(chinese, data);
+  assert.deepEqual(japan, JSON.parse(read('assets/research/japanese-protection.json')));
   execFileSync(process.execPath, [path.join(root, 'scripts/prepare-protection.mjs'), '--check']);
   for (const site of SITES) {
     // Newly added unverified IDs are valid: a title is not an intake gate.
     for (const entry of protection.forSite(site.id)) {
+      if (entry.system === 'JP') continue;
       assert.equal(data.sources[entry.source].batch, entry.batch);
       assert(entry.unitName && entry.scope && entry.locator);
       assert(['unit', 'part', 'merged'].includes(entry.relation));
@@ -66,7 +69,7 @@ test('merged components do not inherit a parent earlier batch and compound tags 
 });
 
 test('unverified, reconstructed, foreign and unknown subjects receive no inferred national title', () => {
-  for (const id of ['fuzhoubaita', 'tj_wenmiao', 'baoen', 'guanque', 'zhaoling', 'horyuji', 'toji', 'future-site']) {
+  for (const id of ['fuzhoubaita', 'tj_wenmiao', 'baoen', 'guanque', 'zhaoling', 'jp_kinkaku', 'future-site']) {
     assert.deepEqual(protection.forSite(id), []);
     assert.deepEqual(protection.badges(id), []);
     assert.equal(protection.searchText(id), '');

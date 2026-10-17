@@ -57,6 +57,8 @@ struct ContentView: View {
                 tabRoot(ExploreView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                     .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
+                    .navigationDestination(for: PersonalListRoute.self) { PersonalListView(id: $0.id) }
+                    .navigationDestination(for: PersonalListsRoute.self) { _ in PersonalListsView() }
             }
             .tabItem { Label("图鉴", systemImage: "square.grid.2x2") }.tag(0)
 
@@ -64,6 +66,8 @@ struct ContentView: View {
                 tabRoot(AtlasMapView(onBrowse: { selectedTab = 0 }))
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                     .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
+                    .navigationDestination(for: PersonalListRoute.self) { PersonalListView(id: $0.id) }
+                    .navigationDestination(for: PersonalListsRoute.self) { _ in PersonalListsView() }
             }
             .tabItem { Label("足迹", systemImage: "map") }.tag(1)
 
@@ -71,6 +75,8 @@ struct ContentView: View {
                 tabRoot(TimelineView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                     .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
+                    .navigationDestination(for: PersonalListRoute.self) { PersonalListView(id: $0.id) }
+                    .navigationDestination(for: PersonalListsRoute.self) { _ in PersonalListsView() }
             }
             .tabItem { Label("年表", systemImage: "circle.grid.cross") }.tag(2)
 
@@ -78,6 +84,8 @@ struct ContentView: View {
                 tabRoot(MyLibraryView())
                     .navigationDestination(for: Monument.self) { MonumentDetailView(site: $0) }
                     .navigationDestination(for: Curation.self) { CurationView(curation: $0) }
+                    .navigationDestination(for: PersonalListRoute.self) { PersonalListView(id: $0.id) }
+                    .navigationDestination(for: PersonalListsRoute.self) { _ in PersonalListsView() }
             }
             .tabItem { Label("我的", systemImage: "seal") }.tag(3)
         }
@@ -832,8 +840,9 @@ struct MonumentCard: View {
             .accessibilityIdentifier("catalog-site-\(site.id)")
             if !site.protection.isEmpty {
                 FangguFittingRow {
-                    ForEach(site.protection, id: \.self) { entry in
-                        Text(entry.batchLabel)
+                    ForEach(site.protectionBadgeLabels, id: \.self) { label in
+                        Text(verbatim: label)
+                            .accessibilityIdentifier("catalog-protection-\(site.id)")
                             .font(FangguFont.mono(10)).fixedSize()
                             .foregroundStyle(Palette.gold)
                             .padding(.horizontal, 8)

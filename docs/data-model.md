@@ -92,6 +92,10 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`region
 
 同一 ID 不能同时出现在 `entries` 与 `untagged`；两处的 ID 都必须存在于 `SITES`。目录里尚无登记的新 ID 允许存在，不阻塞原型制图。
 
+## 日本保护源数据 `assets/research/japanese-protection.json`
+
+与中国国保资料分开维护，生成到 `protection-data.js` 的 `japan`。字段、官方核对范围、三语译文与维护命令见[日本保护身份](japanese-protection.md)。每条指定使用 `system: "JP"`、`designation: "national_treasure" | "important_cultural_property"`、`batch: null` 与 `designatedOn: "YYYY-MM-DD"`；其余单位、范围、来源字段沿用共用保护接口。未贴标签项保留原因与证据，不自动映射中国批次。
+
 ## 线稿记录 `assets/research/<id>.json`
 
 每张线稿一份，`prepare-plates.mjs` 读取它生成清单与来源页。核心字段：
@@ -184,21 +188,31 @@ iOS 端的 `ios/Fanggu/CatalogSearch.swift` 从导出的 `countryName`、`region
 | `captions` | `image.caption`，否则 `SITES.caption` |
 | `lineImage`、`colorImage` | 线稿 PNG 与设色 AVIF 的文件名，不含目录 |
 | `sourceURL`、`sourceLinks[]` | 设色记录中首个带页面的参考；研究与设色记录中去重后的 `{ title, url }` |
-| `protection[]` | `{ batch, unitName, relation, scope, locator, note, sourceTitle, sourceURL }` |
+| `protection[]` | `{ batch, unitName, relation, scope, locator, note, sourceTitle, sourceURL }`；日本条目另含 `system: "JP"`、`designation`、`designatedOn`，`batch` 为 `null` |
 
 导出在重复 ID、缺地点、缺图版、缺时代色时失败。
 
 `catalog-en.json`、`catalog-ja.json` 与 `catalog.json` 条目一一对应、顺序相同；ID、年代、筛选键、坐标、图版、来源链接与国保批次不变，只替换展示文字：`name`、`short`、`sub`、`era`、`yearLabel`、`yearNote`、`place`、`lede`、`facts`、`quote`、`captions` 取 `i18n/<语言>.json` 的 `sites[id]`；`placeName`、`provinceName`、`countryName`、`regionName`、`dynastyName`、`typeNames` 与国保来源名取 `terms`；国保的 `unitName`、`scope`、`note` 逐项取译文。缺少译文的字段回退中文。专题名录同理导出为 `curations-en.json`、`curations-ja.json`，译文在 `i18n/<语言>.json` 的 `curations` 与 `terms.curationKinds`。字段约定见 [开发指南 · 多语言目录](development.md#多语言目录)。
 
+## 专题选目与详情推荐
+
+`curations.js` 的专题保留 `items` 的稳定 ID 与编辑顺序，可增加 `selectionReason`（为什么把这些古迹放在一起）和 `itemReasons`（成员 ID 到独有入选理由）。有选目说明时必须同时覆盖全部成员，不允许空理由或列表外的 ID；未编写的建筑群可以省略这两个字段，导出为空字符串与空对象。
+
+同一模块独立维护 `recommendations`：源古迹 ID 到有序数组 `[{ siteID, kind, reason }]`。`siteID` 是目标古迹，`kind` 为 `comparison`（知识上的对照）或 `nearby`（地理上的关联），`reason` 解释两处之间具体的联系。有推荐的源保留 2–3 项，不自动补齐未编写条目；源和目标都必须是可浏览的单体，不能自荐、重复或引用旧集合 ID。地理关联不代表已计算路线、实时距离或开放情况。
+
+导出前由 `ios/scripts/catalog-editorial.cjs` 校验；专题字段写入 `curations*.json`，推荐写入各语言 `catalog*.json` 的 `relatedSites`，未编写的古迹为 `[]`。英文、日文专题译文仍位于 `curations[id]`，推荐译文使用顶层 `recommendations[sourceID][targetID]` 的理由字符串。逐个理由按 ID 对应，缺译回退中文，不能靠数组位置匹配。
+
+以上均为离线目录内容，不进入个人记录或备份；浏览、跳转和返回不改变到访、心愿或评价。
+
 ## 个人记录 library.json
 
 建筑群在 `curations.js` 使用 `kind: 'collection'`；`items` 是已收录单体 ID，`legacySiteID` 是保留旧记录的 `collectionOnly` 条目。集合仍是目录元数据，个人记录保持在 `records[legacySiteID]`、`reviews[legacySiteID]`，不向单体复制，也不另加备份版本。集合页的整组今日到访仅为未到访成员生成记录，一次原子保存；整组撤销恢复原始记录或不存在的覆盖值，不修改评价。
 
-App 在本机 Application Support 下 `Fanggu/library.json` 保存 `LibraryData`（当前版本 4），所有读写经 `LibraryStore` 校验后原子写入。备份文件就是这份 JSON 加 `exportedAt`，键按字母序、带缩进。
+App 在本机 Application Support 下 `Fanggu/library.json` 保存 `LibraryData`（当前版本 5），所有读写经 `LibraryStore` 校验后原子写入。备份文件就是这份 JSON 加 `exportedAt`，键按字母序、带缩进。
 
 ```json
 {
-  "version": 4,
+  "version": 5,
   "customSites": [
     { "id": "personal-xxxxxx", "name": "…", "place": "…", "dyn": "…", "description": "", "custom": true }
   ],
@@ -213,19 +227,24 @@ App 在本机 Application Support 下 `Fanggu/library.json` 保存 `LibraryData`
       "text": "",
       "updatedAt": "2026-10-05T12:34:56.789Z"
     }
-  }
+  },
+  "personalLists": [
+    { "id": "list-a62c0bb3-a40d-4321-a93e-545315d53217", "title": "建筑的回声", "description": "形制上的联系", "items": [{ "siteID": "foguang", "note": "入选理由" }], "updatedAt": "2026-10-13T12:34:56.789Z" }
+  ]
 }
 ```
 
 | 约束 | 值 |
 | --- | --- |
-| `version` | 读取接受 1–4；保存与导入后统一写 4 |
+| `version` | 读取接受 1–5；保存与导入后统一写 5 |
 | `customSites` | 旧版网页的自建古迹；不超过 2000 条；`id` 匹配 `^personal-[a-z0-9-]{6,80}$` 且不与目录 ID 重合；`name`、`place` 非空 |
 | `records` | 不超过 5000 条；键必须是目录 ID 或自建 ID；`note` 不超过 12000 个 UTF-16 单元；`visitedOn` 为空或严格 `yyyy-MM-dd` 且不晚于今天 |
 | `links` | 自建 ID 到目录 ID；目标必须已有记录 |
 | `reviews` | 不超过 5000 条；键必须是目录 ID；`rating` 为 1–5 或缺省（旧五星，不换算）；`dimensions` 键只允许六个维度，值 1–5，未评分的键省略；`text` 不超过 500 个 UTF-16 单元；`updatedAt` 为带毫秒的 ISO 8601，须能原样往返 |
 
-导入规则：文件不超过 2 MB；版本 1、2 不带 `reviews`；版本 3 的评价合并时保留本机已有的六维分数；版本 4 可明确清空。`customSites` 按 ID 覆盖或追加，`records` 与 `links` 以导入值为准。导入成功后 `version` 变为 4，并清除当前撤销。读取失败时保留原文件、拒绝所有写入，直到导入有效备份。
+个人名单字段 `personalLists` 为数组，每项包含 `id`（`list-` + UUID）、`title`、`description`、有序 `items`（`siteID` 与 `note`）和带毫秒的 `updatedAt`。最多 200 份，每份最多 1000 个不重复成员；标题非空、最多 120，说明最多 4000，按语最多 2000 个 UTF-16 单元。名单 ID 唯一，目录暂缺的成员 ID 仍保留；新增成员只能从当前单体目录选择。版本 1–4 解码为空数组，读取不改写文件，首次写入才升级。
+
+导入规则：文件不超过 2 MB；版本 1、2 不带 `reviews`；版本 3 的评价合并时保留本机已有的六维分数；版本 4、5 可明确清空。`customSites` 按 ID 覆盖或追加，`records` 与 `links` 以导入值为准。版本 5 的 `personalLists` 按名单 ID 整体覆盖或追加，本机其余名单保留；旧版导入不覆盖名单。导入成功后 `version` 变为 5，并清除当前撤销。读取失败时保留原文件、拒绝所有写入，直到导入有效备份。
 
 旧记录关联 `linkLegacy` 把自建条目并入目录条目：状态取两者中更高者（已到访、心愿、未标记依次降低），笔记去重拼接，日期优先保留目录记录已有的值。
 

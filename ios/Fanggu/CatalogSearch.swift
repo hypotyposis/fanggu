@@ -8,14 +8,15 @@ enum CatalogSearch {
 
     static func matches(_ site: Monument, terms: [String]) -> Bool {
         guard !terms.isEmpty else { return true }
-        let protection = site.protection.flatMap {
-            [$0.unitName, $0.scope, $0.batchLabel, "第\($0.batch)批国保", "国保", "全国重点文物保护单位",
-             String(localized: "全国重点文物保护单位")]
-        }
-        let fields = [site.name, site.short, site.sub, site.place, site.provinceName, site.province, site.dynastyName,
-                      site.countryName, site.regionName]
-            + site.typeNames + site.types.compactMap { typeAliases[$0] }
-            + site.legacyNames + site.legacyPlaces + site.searchAliases + protection
+        let protection = site.protection.flatMap(\.searchTerms)
+        var fields: [String] = [site.name, site.short, site.sub, site.place, site.provinceName, site.province,
+                                site.dynastyName, site.countryName, site.regionName]
+        fields.append(contentsOf: site.typeNames)
+        fields.append(contentsOf: site.types.compactMap { typeAliases[$0] })
+        fields.append(contentsOf: site.legacyNames)
+        fields.append(contentsOf: site.legacyPlaces)
+        fields.append(contentsOf: site.searchAliases)
+        fields.append(contentsOf: protection)
         return terms.allSatisfy { term in fields.contains { $0.localizedCaseInsensitiveContains(term) } }
     }
 }

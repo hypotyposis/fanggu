@@ -7,6 +7,64 @@ final class CurationTests: XCTestCase {
         FileManager.default.temporaryDirectory.appendingPathComponent("curations-\(UUID().uuidString)/library.json")
     }
 
+    @MainActor func testEditorialRecommendationsResolveInOrderWithoutWritingRecords() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        var source = try XCTUnwrap(store.monuments.first { $0.id == "foguang" })
+        let first = try XCTUnwrap(store.monuments.first { $0.id == "nanchan" })
+        let second = try XCTUnwrap(store.monuments.first { $0.id == "guangren" })
+        source.relatedSites = [
+            SiteRecommendation(siteID: "missing-site", kind: .comparison, reason: "Missing"),
+            SiteRecommendation(siteID: "kaiyuan", kind: .nearby, reason: "Old collection"),
+            SiteRecommendation(siteID: source.id, kind: .comparison, reason: "Self"),
+            SiteRecommendation(siteID: first.id, kind: .comparison, reason: "  First comparison  "),
+            SiteRecommendation(siteID: first.id, kind: .nearby, reason: "Duplicate"),
+            SiteRecommendation(siteID: second.id, kind: .nearby, reason: "\n "),
+            SiteRecommendation(siteID: second.id, kind: .nearby, reason: "Second comparison")
+        ]
+        let resolved = store.recommendations(for: source)
+        XCTAssertEqual(resolved.map(\.id), [first.id, second.id])
+        XCTAssertEqual(resolved.map(\.kind), [.comparison, .nearby])
+        XCTAssertEqual(resolved.map(\.reason), ["First comparison", "Second comparison"])
+        XCTAssertFalse(FileManager.default.fileExists(atPath: url.path))
+        XCTAssertTrue(store.data.records.isEmpty)
+        XCTAssertTrue(store.setStatus(.visited, for: second))
+        let saved = try Data(contentsOf: url)
+        XCTAssertEqual(store.recommendations(for: source).map(\.id), [first.id, second.id], "Personal status never reorders editorial recommendations")
+        XCTAssertEqual(try Data(contentsOf: url), saved, "Browsing recommendations never writes records")
+    }
+
+    @MainActor func testEditorialMetadataDecodesAndOlderCataloguesRemainCompatible() throws {
+        let catalogURL = try XCTUnwrap(Bundle.main.url(forResource: "catalog", withExtension: "json"))
+        let rows = try XCTUnwrap(JSONSerialization.jsonObject(with: Data(contentsOf: catalogURL)) as? [[String: Any]])
+        var row = try XCTUnwrap(rows.first)
+        row.removeValue(forKey: "relatedSites")
+        let olderSite = try JSONDecoder().decode(Monument.self, from: JSONSerialization.data(withJSONObject: row))
+        XCTAssertNil(olderSite.relatedSites)
+        row["relatedSites"] = [["siteID": "nanchan", "kind": "comparison", "reason": "Compare the halls"]]
+        let site = try JSONDecoder().decode(Monument.self, from: JSONSerialization.data(withJSONObject: row))
+        XCTAssertEqual(site.relatedSites?.first?.reason, "Compare the halls")
+        XCTAssertEqual(site.relatedSites?.first?.kind, .comparison)
+
+        let oldList = Data("""
+        {"id":"test","kind":"theme","kindName":"专题","name":"Test","eyebrow":"Test","lede":"Introduction","note":"","items":["\(site.id)"]}
+        """.utf8)
+        var list = try JSONDecoder().decode(Curation.self, from: oldList)
+        XCTAssertNil(list.selectionReason)
+        XCTAssertNil(list.reason(for: site))
+        list.itemReasons = [site.id: "  A member's role  "]
+        XCTAssertEqual(list.reason(for: site), "A member's role")
+        list.itemReasons = [site.id: "\n "]
+        XCTAssertNil(list.reason(for: site))
+        var listJSON = try XCTUnwrap(JSONSerialization.jsonObject(with: oldList) as? [String: Any])
+        listJSON["selectionReason"] = "A shared theme"
+        listJSON["itemReasons"] = [site.id: "This member's role"]
+        let decoded = try JSONDecoder().decode(Curation.self, from: JSONSerialization.data(withJSONObject: listJSON))
+        XCTAssertEqual(decoded.selectionReason, "A shared theme")
+        XCTAssertEqual(decoded.reason(for: site), "This member's role")
+    }
+
     @MainActor func testGroupVisitPersistsAtomicallyAndUndoRestoresAbsentRecords() throws {
         let url = temporaryFile()
         defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }

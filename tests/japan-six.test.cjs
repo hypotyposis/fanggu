@@ -30,7 +30,7 @@ test('six Japanese additions have unique IDs, subject dates and independent geog
     assert.equal(DYN[site.dyn].country, 'JP', id);
     assert.deepEqual(Array.from(periods.periods[site.dyn]), [DYN[site.dyn].start, DYN[site.dyn].end]);
     assert(site.image.src.endsWith('/' + id + '.png'), id);
-    assert.equal(site.protection.length, 0, id);
+    assert(site.protection.every(entry => entry.system === 'JP' && entry.batch === null), id);
   }
   assert.equal(classified.find(site => site.id === 'jp_kinkaku').year, 1955);
   assert.equal(classified.find(site => site.id === 'jp_sensoji').year, 1958);
