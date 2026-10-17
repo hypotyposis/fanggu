@@ -67,6 +67,17 @@ struct CommunityFailure: Error, LocalizedError {
     let message: String
     var current: CommunityReview? = nil
     var errorDescription: String? { message }
+
+    /// The service writes its errors in Chinese. Each message it can send has a catalog entry; an
+    /// unknown one is shown as is in Chinese and as a general failure in English and Japanese.
+    static func localized(_ serverMessage: String?) -> String {
+        let fallback = String(localized: "社区暂时不可用，请稍后重试。")
+        guard let serverMessage else { return fallback }
+        let missing = "\u{1}"
+        let translated = Bundle.main.localizedString(forKey: serverMessage, value: missing, table: nil)
+        if translated != missing { return translated }
+        return AppLanguage.current == .simplifiedChinese ? serverMessage : fallback
+    }
 }
 
 struct ReviewSyncPayload: Codable, Equatable {
@@ -106,7 +117,14 @@ struct CommunityActivation: Codable {
     let target: [String: Review]
 }
 
+extension ReviewDimension {
+    /// Two characters fit the six-column strips in Chinese and Japanese; the English titles are single words.
+    var shortTitle: String { AppLanguage.current == .english ? title : String(title.prefix(2)) }
+}
+
 extension Review {
+    /// The community score's input: only a complete six-axis review counts there, unlike the
+    /// personal overall score, which averages whichever axes are rated.
     var completeScore: Double? {
         guard dimensions.count == ReviewDimension.allCases.count else { return nil }
         return Double(ReviewDimension.allCases.reduce(0) { $0 + (dimensions[$1] ?? 0) }) / 6

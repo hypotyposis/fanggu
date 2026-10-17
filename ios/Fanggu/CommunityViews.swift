@@ -3,15 +3,20 @@ import SwiftUI
 struct CommunityAvatar: View {
     let user: CommunityUser
     var size: CGFloat = 44
-    private let glyphs = ["山", "木", "石", "瓦", "云", "泉", "松", "月"]
+    static let glyphs = ["山", "木", "石", "瓦", "云", "泉", "松", "月"]
+    /// The seal glyphs stay in Han script like the app's other seals; VoiceOver reads their meaning.
+    static let names: [LocalizedStringKey] = ["山字头像", "木字头像", "石字头像", "瓦字头像", "云字头像", "泉字头像", "松字头像", "月字头像"]
     var body: some View {
-        Text(glyphs[min(7, max(0, user.avatar))])
+        let index = min(7, max(0, user.avatar))
+        Text(verbatim: Self.glyphs[index])
             .font(FangguFont.brush(size * 0.55))
             .foregroundStyle(user.avatar.isMultiple(of: 2) ? Palette.redText : Palette.gold)
             .frame(width: size, height: size)
             .background((user.avatar.isMultiple(of: 2) ? Palette.red : Palette.gold).opacity(0.09))
             .clipShape(RoundedRectangle(cornerRadius: size * 0.24))
             .overlay(RoundedRectangle(cornerRadius: size * 0.24).strokeBorder(Palette.gold.opacity(0.2), lineWidth: 0.7))
+            // Inside a link that also names the person the seal can still surface; it then reads its meaning.
+            .accessibilityLabel(Self.names[index])
             .accessibilityHidden(true)
     }
 }
@@ -64,7 +69,7 @@ struct CommunityView: View {
                     FangguSectionTitle(eyebrow: "同看山河 · 各有所见", title: "同好之间", subtitle: "让每一份亲见，成为下一次出发的线索。")
                     Button { findingPeople = true } label: {
                         Image(systemName: "person.crop.circle.badge.plus").font(.system(size: 23)).frame(width: 44, height: 44)
-                    }.foregroundStyle(Palette.gold).accessibilityLabel("发现同好")
+                    }.foregroundStyle(Palette.gold).accessibilityLabel("发现同好").accessibilityIdentifier("community-find-people")
                 }
                 if let discovery = community.discovery {
                     if !discovery.sites.isEmpty {
@@ -96,7 +101,7 @@ struct CommunityView: View {
                     scopeButton("关注", value: "following")
                     Spacer()
                     Button { showingRules = true } label: { Image(systemName: "info.circle").frame(width: 44, height: 44) }
-                        .foregroundStyle(Palette.paper3).accessibilityLabel("社区与评分说明")
+                        .foregroundStyle(Palette.paper3).accessibilityLabel("社区与评分说明").accessibilityIdentifier("community-rules")
                 }
                 if let error = community.error {
                     CommunityError(message: error) { Task { await community.refresh(scope: scope) } }
@@ -137,7 +142,7 @@ struct CommunityView: View {
         .sheet(isPresented: $findingPeople) { NavigationStack { CommunityPeopleView() } }
         .sheet(isPresented: $showingRules) { NavigationStack { CommunityRulesView() } }
     }
-    private func scopeButton(_ title: String, value: String) -> some View {
+    private func scopeButton(_ title: LocalizedStringKey, value: String) -> some View {
         Button { scope = value; Haptics.selection() } label: {
             VStack(spacing: 10) {
                 Text(title).font(FangguFont.serif(20, weight: scope == value ? .semibold : .regular))
@@ -183,7 +188,7 @@ struct CommunityReviewCard: View {
                         CommunityAvatar(user: review.author, size: 38)
                         VStack(alignment: .leading, spacing: 3) {
                             HStack(spacing: 6) {
-                                Text(review.author.nickname).font(FangguFont.serif(14, weight: .medium)).foregroundStyle(Palette.paper)
+                                Text(verbatim: review.author.nickname).font(FangguFont.serif(14, weight: .medium)).foregroundStyle(Palette.paper)
                                 if review.author.isDemo { Text("示例").font(FangguFont.mono(9)).foregroundStyle(Palette.paper3) }
                             }
                             Text(communityDate(review.createdAt)).font(FangguFont.mono(10)).foregroundStyle(Palette.paper3)
@@ -205,7 +210,7 @@ struct CommunityReviewCard: View {
                         }
                     } label: {
                         Image(systemName: "ellipsis").frame(width: 32, height: 44).foregroundStyle(Palette.paper3)
-                    }.accessibilityLabel("评价操作")
+                    }.accessibilityLabel("评价操作").accessibilityIdentifier("community-review-actions")
                 }
             }
             if showMonument, let site = library.monuments.first(where: { $0.id == review.siteID }) {
@@ -214,7 +219,7 @@ struct CommunityReviewCard: View {
                         ArtworkView(site: site, visited: false, height: 66).frame(width: 80)
                         VStack(alignment: .leading, spacing: 5) {
                             Text(site.name).font(FangguFont.serif(16, weight: .medium)).foregroundStyle(Palette.paper)
-                            Text("\(site.dynastyName) · \(site.place)").font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+                            Text(verbatim: "\(site.dynastyName) · \(site.place)").font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
                         }
                         Spacer()
                         Image(systemName: "arrow.up.right").font(.system(size: 12)).foregroundStyle(Palette.gold)
@@ -222,7 +227,7 @@ struct CommunityReviewCard: View {
                 }.buttonStyle(.plain)
             }
             if !review.text.isEmpty {
-                Text(review.text).font(FangguFont.serif(15)).lineSpacing(6).foregroundStyle(Palette.paper2).textSelection(.enabled)
+                Text(verbatim: review.text).font(FangguFont.serif(15)).lineSpacing(6).foregroundStyle(Palette.paper2).textSelection(.enabled)
             }
             if !review.dimensions.isEmpty {
                 ViewThatFits(in: .horizontal) {
@@ -241,7 +246,7 @@ struct CommunityReviewCard: View {
         HStack(spacing: 12) {
             ForEach(ReviewDimension.allCases) { dimension in
                 VStack(spacing: 4) {
-                    Text(String(dimension.title.prefix(2))).font(FangguFont.serif(10)).foregroundStyle(Palette.paper3)
+                    Text(dimension.shortTitle).font(FangguFont.serif(10)).foregroundStyle(Palette.paper3).lineLimit(1).minimumScaleFactor(0.6)
                     Text(ReviewDimension.grade(review.dimensions[dimension])).font(FangguFont.mono(11)).foregroundStyle(review.dimensions[dimension] == nil ? Palette.paper3 : Palette.gold)
                 }.frame(maxWidth: .infinity)
             }
@@ -288,10 +293,11 @@ struct CommunitySiteSection: View {
                 NavigationLink { CommunitySiteReviewsView(site: site) } label: {
                     HStack { Text(summary.reviewCount == 0 ? "看看大家的评价" : "全部 \(summary.reviewCount) 份评价"); Spacer(); Image(systemName: "arrow.right") }
                         .font(FangguFont.serif(14)).foregroundStyle(Palette.gold).frame(minHeight: 44)
-                }
+                }.accessibilityIdentifier("community-all-reviews")
             } else if loading { CommunityLoading() }
             if let error { CommunityError(message: error) { Task { await load() } } }
         }
+        .accessibilityElement(children: .contain)
         .accessibilityIdentifier("community-site-section")
         .task(id: community.revision) { await load() }
         .sheet(isPresented: $rules) { NavigationStack { CommunityRulesView() } }
@@ -332,7 +338,7 @@ struct CommunityRadar: View {
                     let p = point(index, value: value, center: center, radius: radius)
                     if index == 0 { polygon.move(to: p) } else { polygon.addLine(to: p) }
                     let labelPoint = point(index, value: 6.4, center: center, radius: radius)
-                    context.draw(Text(String(dimension.title.prefix(2))).font(FangguFont.serif(11)).foregroundColor(Palette.paper2), at: labelPoint)
+                    context.draw(Text(dimension.shortTitle).font(FangguFont.serif(11)).foregroundColor(Palette.paper2), at: labelPoint)
                 }
                 polygon.closeSubpath()
                 context.fill(polygon, with: .color(Palette.gold.opacity(0.14)))
@@ -345,7 +351,7 @@ struct CommunityRadar: View {
             HStack {
                 ForEach(ReviewDimension.allCases) { dimension in
                     VStack(spacing: 5) {
-                        Text(String(dimension.title.prefix(2))).font(FangguFont.serif(10)).foregroundStyle(Palette.paper3)
+                        Text(dimension.shortTitle).font(FangguFont.serif(10)).foregroundStyle(Palette.paper3).lineLimit(1).minimumScaleFactor(0.6)
                         Text(communityScoreText(dimensions[dimension.rawValue] ?? 0)).font(FangguFont.mono(12)).foregroundStyle(Palette.gold)
                     }.frame(maxWidth: .infinity)
                 }
@@ -366,8 +372,8 @@ struct CommunityLoading: View {
 }
 struct CommunityEmpty: View {
     let symbol: String
-    let title: String
-    let message: String
+    let title: LocalizedStringKey
+    let message: LocalizedStringKey
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             Image(systemName: symbol).font(.system(size: 28, weight: .light)).foregroundStyle(Palette.gold).padding(.bottom, 6)

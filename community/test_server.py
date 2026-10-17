@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 import tempfile
 import threading
@@ -162,6 +163,22 @@ class CommunityTests(unittest.TestCase):
             err.exception.close()
         finally:
             server.shutdown(); server.server_close(); server.community.close(); thread.join()
+
+
+class ErrorTranslationTests(unittest.TestCase):
+    def test_every_error_message_has_english_and_japanese_text_in_the_app(self):
+        # The app looks up the service's Chinese messages in its string catalog (CommunityFailure.localized).
+        root = Path(__file__).resolve().parent
+        source = (root / 'server.py').read_text(encoding='utf-8')
+        messages = set(re.findall(r"APIError\(\d+, '([^'{]+)'", source)) | set(re.findall(r"'error': '([^']+)'", source))
+        for maximum, label, minimum in re.findall(r"self\.text\([^\n]*?, (\d+), '([^']+)'(?:, (\d+))?\)", source):
+            messages |= {f'{label}需为 {minimum or 0}–{maximum} 字。', f'{label}包含不适合公开的内容，请修改。'}
+        self.assertGreater(len(messages), 30)
+        catalog = json.loads((root.parent / 'ios/Fanggu/Localizable.xcstrings').read_text(encoding='utf-8'))['strings']
+        for message in sorted(messages):
+            with self.subTest(message=message):
+                self.assertIn(message, catalog)
+                self.assertEqual({'en', 'ja'} - set(catalog[message]['localizations']), set())
 
 
 if __name__ == '__main__':

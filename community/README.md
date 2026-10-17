@@ -33,7 +33,7 @@ python3 community/server.py --host 0.0.0.0 --database community/data/prototype.s
 
 - 未开通账号可完整单机使用。首次开通会公开当前本机评分与短评；笔记、心愿、到访状态与日期不发送至社区。
 - 单机开关只改变界面。已登录账号的评分与短评继续公开同步；真正断网时本机保存、待网络恢复重试。iOS 后台运行由系统调度，不能保证应用被系统挂起时持续联网；回到前台即补同步。
-- 六维等权，个人综合分和社区总分都是 **5 分制**。填全六项才计入总分与社区六维图；至少五人完整评分后展示聚合值。计算使用未舍入均值，仅显示保留一位小数。缺项、纯短评仍公开；旧五星不推算、不混入总分。
+- 六维等权，个人综合分和社区总分都是 **5 分制**。个人综合分按已评维度取平均，在 App 本机计算；填全六项才计入社区总分与社区六维图；至少五人完整评分后展示聚合值。社区总分用未舍入均值计算，显示时保留一位小数。缺项、纯短评仍公开；旧五星不推算、不混入总分。
 - 每个账号、每处古迹只维护一份评价。编辑更新原动态，清除以带版本的空评价表示，不会因重试复活旧内容。
 - 关注为单向关系，双向时显示互相关注。最新和关注动态、古迹评价和公开主页均有分页。屏蔽解除双方关注并隐藏双方内容，可从屏蔽列表恢复。
 - 删除账号需要输入密码确认；服务端删除资料、评价、会话、关注和屏蔽关系，评分随之重算。本机个人资料保留。
@@ -67,7 +67,8 @@ node --test tests/*.test.cjs
 xcodegen generate --spec ios/project.yml
 # 先启动上述示例服务；脚本使用本会话独立模拟器，UI 测试在隔离的记录作用域中运行
 sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests \
-  -only-testing:FangguUITests/CommunityUITests
+  -only-testing:FangguUITests/CommunityUITests \
+  -only-testing:FangguUITests/LocalizationUITests/testCommunityPagesAreLocalized
 git diff --check
 ```
 
@@ -75,7 +76,7 @@ Python 测试使用临时数据库及随机端口，覆盖真实 HTTP、持久�
 
 ## 主要接口
 
-所有写入要求 `Authorization: Bearer <token>`（注册和登录除外）；错误返回 `{ "error": "可读说明" }`。
+所有写入要求 `Authorization: Bearer <token>`（注册和登录除外）；错误返回 `{ "error": "可读说明" }`。说明为中文，App 用同一句作为字串目录的键显示英日文；新增或修改说明时同步 `ios/Fanggu/Localizable.xcstrings`，否则英日界面只显示通用错误。
 
 | 接口 | 用途 |
 | --- | --- |

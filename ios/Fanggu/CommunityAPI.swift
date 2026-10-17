@@ -19,16 +19,16 @@ struct CommunityAPI {
         if let body { request.httpBody = body; request.setValue("application/json", forHTTPHeaderField: "Content-Type") }
         do {
             let (data, response) = try await session.data(for: request)
-            guard let http = response as? HTTPURLResponse else { throw CommunityFailure(status: 0, message: "社区服务返回了无效响应。") }
+            guard let http = response as? HTTPURLResponse else { throw CommunityFailure(status: 0, message: String(localized: "社区服务返回了无效响应。")) }
             guard (200..<300).contains(http.statusCode) else {
                 let failure = try? JSONDecoder().decode(FailureBody.self, from: data)
-                throw CommunityFailure(status: http.statusCode, message: failure?.error ?? "社区暂时不可用，请稍后重试。", current: failure?.current)
+                throw CommunityFailure(status: http.statusCode, message: CommunityFailure.localized(failure?.error), current: failure?.current)
             }
             return try JSONDecoder().decode(T.self, from: data)
         } catch let failure as CommunityFailure { throw failure }
         catch is CancellationError { throw CancellationError() }
         catch let error as URLError where error.code == .cancelled { throw CancellationError() }
-        catch { throw CommunityFailure(status: 0, message: "暂时连接不上社区，请检查网络或服务地址后重试。") }
+        catch { throw CommunityFailure(status: 0, message: String(localized: "暂时连接不上社区，请检查网络或服务地址后重试。")) }
     }
 
     static func encode<T: Encodable>(_ value: T) throws -> Data { try JSONEncoder().encode(value) }
@@ -53,10 +53,10 @@ enum CommunityCredential {
         let update = SecItemUpdate(query as CFDictionary, values as CFDictionary)
         if update == errSecItemNotFound {
             guard SecItemAdd(query.merging(values) { _, new in new } as CFDictionary, nil) == errSecSuccess else {
-                throw CommunityFailure(status: 0, message: "无法安全保存登录状态，请重试。")
+                throw CommunityFailure(status: 0, message: String(localized: "无法安全保存登录状态，请重试。"))
             }
         } else if update != errSecSuccess {
-            throw CommunityFailure(status: 0, message: "无法安全保存登录状态，请重试。")
+            throw CommunityFailure(status: 0, message: String(localized: "无法安全保存登录状态，请重试。"))
         }
     }
 }

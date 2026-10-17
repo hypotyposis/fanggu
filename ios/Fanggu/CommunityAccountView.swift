@@ -72,6 +72,7 @@ struct CommunityAccountView: View {
                     .frame(minHeight: 52).background(Palette.red.opacity(canAuthenticate ? 1 : 0.4), in: RoundedRectangle(cornerRadius: 8))
             }.buttonStyle(.plain).disabled(!canAuthenticate || busy).accessibilityIdentifier("community-auth-submit")
             NavigationLink { CommunityRulesView() } label: { Text("公开范围、数据与社区规则").font(FangguFont.serif(12)).foregroundStyle(Palette.gold) }
+                .accessibilityIdentifier("community-sign-in-rules")
             DisclosureGroup("原型连接设置") {
                 VStack(alignment: .leading, spacing: 12) {
                     Text("连接同一服务的设备可以互看评价、关注彼此。模拟器可使用本机服务；真机请填写可访问的服务地址。")
@@ -88,7 +89,7 @@ struct CommunityAccountView: View {
     private var canAuthenticate: Bool {
         handle.range(of: "^[a-zA-Z0-9_]{3,24}$", options: .regularExpression) != nil && password.count >= 8 && password.count <= 128 && agreed && (!registering || !nickname.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
     }
-    private func labeledField(_ title: String, placeholder: String, text: Binding<String>, id: String) -> some View {
+    private func labeledField(_ title: LocalizedStringKey, placeholder: LocalizedStringKey, text: Binding<String>, id: String) -> some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(title).font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
             TextField(placeholder, text: text).textInputAutocapitalization(.never).autocorrectionDisabled()
@@ -106,7 +107,7 @@ struct CommunityAccountView: View {
                 HStack(spacing: 15) {
                     CommunityAvatar(user: user, size: 58)
                     VStack(alignment: .leading, spacing: 5) {
-                        Text(user.nickname).font(FangguFont.serif(24, weight: .medium)).foregroundStyle(Palette.paper)
+                        Text(verbatim: user.nickname).font(FangguFont.serif(24, weight: .medium)).foregroundStyle(Palette.paper)
                         Text("查看我的公开主页").font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                     }
                     Spacer(); Image(systemName: "chevron.right").foregroundStyle(Palette.gold)
@@ -116,8 +117,8 @@ struct CommunityAccountView: View {
                 HStack(spacing: 15) {
                     CommunityAvatar(user: user, size: 58)
                     VStack(alignment: .leading, spacing: 5) {
-                        Text(user.nickname).font(FangguFont.serif(24, weight: .medium))
-                        Text("@\(user.handle)").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                        Text(verbatim: user.nickname).font(FangguFont.serif(24, weight: .medium))
+                        Text(verbatim: "@\(user.handle)").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                     }
                     Spacer()
                     Button("编辑资料") { editingProfile = true }.font(FangguFont.serif(12)).foregroundStyle(Palette.gold)
@@ -156,6 +157,7 @@ struct CommunityAccountView: View {
             }
             FangguRule()
             NavigationLink { CommunityPeopleView(kind: "blocks") } label: { accountLink("屏蔽列表", icon: "person.crop.circle.badge.minus") }
+                .accessibilityIdentifier("community-block-list")
             NavigationLink { CommunityRulesView() } label: { accountLink("社区与数据说明", icon: "text.book.closed") }
             Button { busy = true; Task { await community.logout(); busy = false } } label: { accountLink("退出账号", icon: "rectangle.portrait.and.arrow.right") }.disabled(busy)
             Text("退出后停止账号同步，本机到访记录与评价保留。登录其他账号时会切换为该账号的评价。")
@@ -163,16 +165,22 @@ struct CommunityAccountView: View {
             Button("删除账号与公开内容", role: .destructive) { deleting = true }.font(FangguFont.serif(12)).foregroundStyle(Palette.redText).frame(minHeight: 44)
         }
     }
-    private func conflictVersion(_ title: String, review: Review) -> some View {
+    /// The personal score averages the rated axes, as everywhere else in the app; the community
+    /// score only takes complete six-axis reviews, so a partial version says it will not count there.
+    private func conflictVersion(_ title: LocalizedStringKey, review: Review) -> some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("\(title) · \(review.completeScore.map { String(format: "%.1f / 5", $0) } ?? "未完整评分")")
+            (Text(title) + Text(verbatim: " · ")
+                + (review.dimensions.aggregateScoreLabel.map { Text("个人综合 \($0) / 5") } ?? Text("未评分")))
                 .font(FangguFont.serif(13, weight: .medium))
-            Text(review.text.isEmpty ? "（没有短评）" : review.text).font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
-            Text(ReviewDimension.allCases.map { "\($0.title.prefix(2)) \(ReviewDimension.grade(review.dimensions[$0]))" }.joined(separator: " · "))
+            if !review.dimensions.isEmpty && review.completeScore == nil {
+                Text("已评 \(review.dimensions.count)/6 项，不计入社区总分").font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
+            }
+            (review.text.isEmpty ? Text("（没有短评）") : Text(verbatim: review.text)).font(FangguFont.serif(12)).foregroundStyle(Palette.paper2)
+            Text(verbatim: ReviewDimension.allCases.map { "\($0.shortTitle) \(ReviewDimension.grade(review.dimensions[$0]))" }.joined(separator: " · "))
                 .font(FangguFont.mono(10)).foregroundStyle(Palette.paper3)
         }
     }
-    private func accountLink(_ label: String, icon: String) -> some View {
+    private func accountLink(_ label: LocalizedStringKey, icon: String) -> some View {
         HStack { Image(systemName: icon).frame(width: 24); Text(label); Spacer(); Image(systemName: "chevron.right").font(.system(size: 11)) }
             .font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).frame(minHeight: 44)
     }
@@ -221,10 +229,10 @@ struct CommunityProfileEditor: View {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 4), spacing: 18) {
                         ForEach(0..<8) { index in
                             Button { avatar = index } label: {
-                                Text(["山", "木", "石", "瓦", "云", "泉", "松", "月"][index])
+                                Text(verbatim: CommunityAvatar.glyphs[index])
                                     .font(FangguFont.brush(28)).foregroundStyle(avatar == index ? Palette.sealPaper : Palette.gold)
                                     .frame(width: 56, height: 56).background(avatar == index ? Palette.red : Palette.ink2, in: RoundedRectangle(cornerRadius: 12))
-                            }.buttonStyle(.plain).accessibilityLabel("\(["山", "木", "石", "瓦", "云", "泉", "松", "月"][index])字头像")
+                            }.buttonStyle(.plain).accessibilityLabel(CommunityAvatar.names[index])
                         }
                     }
                     VStack(alignment: .leading, spacing: 8) {
@@ -234,7 +242,7 @@ struct CommunityProfileEditor: View {
                     VStack(alignment: .leading, spacing: 8) {
                         Text("简介").font(FangguFont.serif(14))
                         TextEditor(text: $bio).frame(height: 100).scrollContentBackground(.hidden).padding(10).background(Palette.ink2)
-                        Text("\(bio.utf16.count) / 160").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                        Text(verbatim: "\(bio.utf16.count) / 160").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                     }
                     if let error {
                         Text(error).font(FangguFont.serif(12)).foregroundStyle(Palette.redText)

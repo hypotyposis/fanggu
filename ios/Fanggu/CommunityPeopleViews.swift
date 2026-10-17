@@ -10,7 +10,7 @@ struct CommunityPeopleView: View {
     @State private var people: [CommunityUser] = []
     @State private var loading = true
     @State private var error: String?
-    private var title: String { kind == "followers" ? "粉丝" : kind == "following" ? "关注的人" : kind == "blocks" ? "已屏蔽" : "发现同好" }
+    private var title: LocalizedStringKey { kind == "followers" ? "粉丝" : kind == "following" ? "关注的人" : kind == "blocks" ? "已屏蔽" : "发现同好" }
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 20) {
@@ -24,7 +24,7 @@ struct CommunityPeopleView: View {
                     if kind == "blocks" {
                         HStack {
                             CommunityAvatar(user: person)
-                            Text(person.nickname).font(FangguFont.serif(16))
+                            Text(verbatim: person.nickname).font(FangguFont.serif(16))
                             Spacer()
                             Button("解除屏蔽") {
                                 Task { do { try await community.block(person, enabled: false); await load() } catch { self.error = error.localizedDescription } }
@@ -69,8 +69,8 @@ struct CommunityPersonRow: View {
                 HStack(spacing: 12) {
                     CommunityAvatar(user: person)
                     VStack(alignment: .leading, spacing: 5) {
-                        Text(person.nickname).font(FangguFont.serif(16, weight: .medium)).foregroundStyle(Palette.paper)
-                        Text(person.bio.isEmpty ? "\(person.reviewCount) 份古迹评价" : person.bio)
+                        Text(verbatim: person.nickname).font(FangguFont.serif(16, weight: .medium)).foregroundStyle(Palette.paper)
+                        (person.bio.isEmpty ? Text("\(person.reviewCount) 份古迹评价") : Text(verbatim: person.bio))
                             .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3).lineLimit(2)
                     }
                     Spacer(minLength: 0)
@@ -99,7 +99,8 @@ struct CommunityFollowButton: View {
                 } label: {
                     HStack(spacing: 4) {
                         if busy { ProgressView().controlSize(.small) }
-                        Text(person.isFollowing ? (person.followsYou ? "互相关注" : "已关注") : "关注")
+                        // "关注" also names the following feed and count; the action has its own key so English can say "Follow".
+                        Text(person.isFollowing ? (person.followsYou ? "互相关注" : "已关注") : "community.follow.action")
                     }
                     .font(FangguFont.serif(12, weight: .medium))
                     .foregroundStyle(person.isFollowing ? Palette.paper2 : Palette.sealPaper)
@@ -131,12 +132,12 @@ struct CommunityProfileView: View {
                     HStack(alignment: .top, spacing: 17) {
                         CommunityAvatar(user: person, size: 68)
                         VStack(alignment: .leading, spacing: 7) {
-                            Text(person.nickname).font(FangguFont.serif(27, weight: .medium))
-                            Text("@\(person.handle)\(person.isDemo ? " · 示例账号" : "")").font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
+                            Text(verbatim: person.nickname).font(FangguFont.serif(27, weight: .medium))
+                            (Text(verbatim: "@\(person.handle)") + (person.isDemo ? Text(verbatim: " · ") + Text("示例账号") : Text(verbatim: ""))).font(FangguFont.mono(11)).foregroundStyle(Palette.paper3)
                         }
                         Spacer(minLength: 0)
                     }
-                    if !person.bio.isEmpty { Text(person.bio).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).lineSpacing(6) }
+                    if !person.bio.isEmpty { Text(verbatim: person.bio).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).lineSpacing(6) }
                     HStack(spacing: 26) {
                         metric(person.reviewCount, "评价")
                         Button { connections = "following" } label: { metric(person.followingCount, "关注") }.buttonStyle(.plain)
@@ -182,9 +183,9 @@ struct CommunityProfileView: View {
             NavigationStack { CommunityPeopleView(userID: userID, kind: connections) }
         }
     }
-    private func metric(_ value: Int, _ label: String) -> some View {
+    private func metric(_ value: Int, _ label: LocalizedStringKey) -> some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text("\(value)").font(FangguFont.serif(23, weight: .medium)).foregroundStyle(Palette.gold)
+            Text(value, format: .number).font(FangguFont.serif(23, weight: .medium)).foregroundStyle(Palette.gold)
             Text(label).font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
         }
     }
@@ -258,6 +259,10 @@ struct CommunityReportView: View {
     @Environment(\.dismiss) private var dismiss
     let review: CommunityReview
     let onReported: () -> Void
+    /// The Chinese reason is what moderators read; only its label follows the app language.
+    private static let reasons: [(key: String, label: LocalizedStringKey)] = [
+        ("广告或垃圾内容", "广告或垃圾内容"), ("侮辱或骚扰", "侮辱或骚扰"), ("不实或无关内容", "不实或无关内容"), ("其他问题", "其他问题")
+    ]
     @State private var reason = "广告或垃圾内容"
     @State private var detail = ""
     @State private var busy = false
@@ -267,7 +272,7 @@ struct CommunityReportView: View {
             Form {
                 Section("举报原因") {
                     Picker("原因", selection: $reason) {
-                        ForEach(["广告或垃圾内容", "侮辱或骚扰", "不实或无关内容", "其他问题"], id: \.self) { Text($0) }
+                        ForEach(Self.reasons, id: \.key) { Text($0.label).tag($0.key) }
                     }.pickerStyle(.inline).labelsHidden()
                 }
                 Section("补充说明（选填）") { TextEditor(text: $detail).frame(minHeight: 100) }
@@ -296,7 +301,7 @@ struct CommunityRulesView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 26) {
                 FangguSectionTitle(eyebrow: "访古社区", title: "认真看，各有所见", subtitle: "评分帮助理解古迹，也留下不同的观看角度。")
-                rule("五分制，六项等权", "六个维度各为 1–5 分。六项填全后取平均，形成个人综合分；社区总分为完整评价的平均值，保留一位小数。至少 5 人完整评分后展示社区总分与六维图。缺项评价仍然公开，但不参与总分。")
+                rule("五分制，六项等权", "六个维度各为 1–5 分，等权计算。个人综合分按你已评的维度取平均，只评几项也会显示；社区总分只收六项填全的完整评价，取平均后保留一位小数。至少 5 人完整评分后展示社区总分与六维图。缺项评价仍然公开，但不计入社区总分。")
                 rule("评分与短评公开，笔记私密", "开通联机后，现有与今后的评分、短评会自动公开同步。单机模式只隐藏社区界面，仍继续同步。到访状态、日期、心愿和个人笔记保留在本机，不上传至社区。")
                 rule("每人一份评价，可以随时修改", "修改会更新原评价，不产生重复动态。清除评价后会从社区移除并重新计算评分。断网时先保存在本机，连接恢复后继续同步。多设备发生冲突时，由你选择保留的版本。")
                 rule("尊重古迹，也尊重彼此", "欢迎具体、有依据的观察。请勿发布广告、骚扰、侮辱或与古迹无关的内容。评价菜单提供举报和屏蔽；账号页可查看屏蔽列表和删除账号。原型的举报由服务运行者通过审核工具处理。")
@@ -307,7 +312,7 @@ struct CommunityRulesView: View {
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("完成") { dismiss() } } }
             .fangguAppearance()
     }
-    private func rule(_ title: String, _ body: String) -> some View {
+    private func rule(_ title: LocalizedStringKey, _ body: LocalizedStringKey) -> some View {
         VStack(alignment: .leading, spacing: 9) {
             Text(title).font(FangguFont.serif(18, weight: .medium))
             Text(body).font(FangguFont.serif(14)).foregroundStyle(Palette.paper2).lineSpacing(6)

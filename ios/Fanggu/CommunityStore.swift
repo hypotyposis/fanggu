@@ -79,7 +79,7 @@ import Foundation
             updateSyncState()
         } catch {
             storageFailed = true
-            syncError = "同步记录无法读取，原文件已保留；本机访古记录仍可使用。"
+            syncError = String(localized: "同步记录无法读取，原文件已保留；本机访古记录仍可使用。")
         }
     }
 
@@ -91,7 +91,7 @@ import Foundation
             updateSyncState()
             return true
         } catch {
-            syncError = "同步记录保存失败，本机评价仍保留，请重试。"
+            syncError = String(localized: "同步记录保存失败，本机评价仍保留，请重试。")
             return false
         }
     }
@@ -173,7 +173,7 @@ import Foundation
             let session: CommunitySession = try await api.request("auth/\(registering ? "register" : "login")", method: "POST",
                 body: CommunityAPI.encode(Credentials(handle: handle, password: password, nickname: nickname)))
             let own: CommunityOwnReviews = try await api.request("me/reviews", token: session.token)
-            guard let library else { throw CommunityFailure(status: 0, message: "本机资料尚未就绪，请重试。") }
+            guard let library else { throw CommunityFailure(status: 0, message: String(localized: "本机资料尚未就绪，请重试。")) }
             let previous = disk
             if let owner = disk.owner { disk.accounts[owner, default: CommunityJournal()].reviews = library.data.reviews }
             let firstAccount = disk.owner == nil && disk.accounts.keys.allSatisfy { $0 == "__local__" }
@@ -204,7 +204,7 @@ import Foundation
             applyingLibraryChange = true
             let saved = library.replaceCommunityReviews(next.reviews)
             applyingLibraryChange = false
-            guard saved else { disk = previous; _ = persist(); throw CommunityFailure(status: 0, message: library.error ?? "本机资料保存失败。") }
+            guard saved else { disk = previous; _ = persist(); throw CommunityFailure(status: 0, message: library.error ?? String(localized: "本机资料保存失败。")) }
             disk.activation = nil
             guard persist() else { storageFailed = true; return false }
             accountGeneration += 1
@@ -280,7 +280,7 @@ import Foundation
                 applyingLibraryChange = true
                 let saved = library.replaceCommunityReviews(reviews)
                 applyingLibraryChange = false
-                guard saved else { throw CommunityFailure(status: 0, message: library.error ?? "远端评价尚未保存到本机。") }
+                guard saved else { throw CommunityFailure(status: 0, message: library.error ?? String(localized: "远端评价尚未保存到本机。")) }
             }
             next.reviews = reviews; journal = next
             guard persist() else { return }
@@ -291,7 +291,7 @@ import Foundation
             syncError = error.localizedDescription
             if let failure = error as? CommunityFailure, failure.status == 401 {
                 requiresLogin = true
-                self.error = "登录已过期，请在账号页重新登录。"
+                self.error = String(localized: "登录已过期，请在账号页重新登录。")
             }
         }
     }
@@ -429,18 +429,18 @@ import Foundation
         let input = value.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "/"))
         guard let url = URL(string: input), let host = url.host, !host.isEmpty, url.user == nil, url.password == nil,
               url.query == nil, url.fragment == nil, ["https", "http"].contains(url.scheme ?? "") else {
-            throw CommunityFailure(status: 0, message: "请输入完整的社区服务地址。")
+            throw CommunityFailure(status: 0, message: String(localized: "请输入完整的社区服务地址。"))
         }
         #if !DEBUG
-        guard url.scheme == "https" else { throw CommunityFailure(status: 0, message: "正式服务必须使用 HTTPS。") }
+        guard url.scheme == "https" else { throw CommunityFailure(status: 0, message: String(localized: "正式服务必须使用 HTTPS。")) }
         #endif
-        guard !isAuthenticated else { throw CommunityFailure(status: 0, message: "请先退出当前账号，再切换社区服务。") }
+        guard !isAuthenticated else { throw CommunityFailure(status: 0, message: String(localized: "请先退出当前账号，再切换社区服务。")) }
         guard input != server else { return }
         let previousDisk = disk
         let previousServer = server
         if let library {
             var next = journal; next.reviews = library.data.reviews; journal = next
-            guard persist() else { throw CommunityFailure(status: 0, message: "请先保存当前账号的评价，再切换服务。") }
+            guard persist() else { throw CommunityFailure(status: 0, message: String(localized: "请先保存当前账号的评价，再切换服务。")) }
         }
         server = input
         disk = CommunityDisk(); storageFailed = false; loadDisk()
@@ -448,7 +448,7 @@ import Foundation
             disk.activation = CommunityActivation(previous: library.data.reviews, target: journal.reviews)
             guard persist() else {
                 server = previousServer; disk = previousDisk
-                throw CommunityFailure(status: 0, message: "新服务的本机记录无法保存，仍保留原服务。")
+                throw CommunityFailure(status: 0, message: String(localized: "新服务的本机记录无法保存，仍保留原服务。"))
             }
             defaults.set(input, forKey: "fanggu.community.server")
             applyingLibraryChange = true
@@ -457,7 +457,7 @@ import Foundation
             if !saved {
                 server = previousServer; disk = previousDisk
                 defaults.set(previousServer, forKey: "fanggu.community.server")
-                throw CommunityFailure(status: 0, message: library.error ?? "无法切换本机评价。")
+                throw CommunityFailure(status: 0, message: library.error ?? String(localized: "无法切换本机评价。"))
             }
             disk.activation = nil
             _ = persist()
