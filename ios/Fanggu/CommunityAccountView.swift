@@ -75,12 +75,18 @@ struct CommunityAccountView: View {
                 .accessibilityIdentifier("community-sign-in-rules")
             DisclosureGroup("原型连接设置") {
                 VStack(alignment: .leading, spacing: 12) {
-                    Text("连接同一服务的设备可以互看评价、关注彼此。模拟器可使用本机服务；真机请填写可访问的服务地址。")
+                    Text("默认连接访古社区服务。调试时可改为本机或局域网服务地址；连接同一服务的设备才能互看评价、关注彼此。")
                         .font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)
                     TextField("社区服务地址", text: $server).textInputAutocapitalization(.never).autocorrectionDisabled().keyboardType(.URL)
                         .padding(12).background(Palette.ink2).accessibilityIdentifier("community-server-url")
                         .onSubmit { configureServer() }
-                    Button("使用此地址") { configureServer() }.font(FangguFont.serif(13)).foregroundStyle(Palette.gold).frame(minHeight: 44)
+                    HStack(spacing: 20) {
+                        Button("使用此地址") { configureServer() }
+                        if community.server != CommunityStore.productionServer {
+                            Button("恢复默认服务") { server = CommunityStore.productionServer; configureServer() }
+                                .accessibilityIdentifier("community-server-default")
+                        }
+                    }.font(FangguFont.serif(13)).foregroundStyle(Palette.gold).frame(minHeight: 44)
                     if let connectionError { Text(connectionError).font(FangguFont.serif(12)).foregroundStyle(Palette.redText) }
                 }.padding(.top, 12)
             }.font(FangguFont.serif(12)).foregroundStyle(Palette.paper3)

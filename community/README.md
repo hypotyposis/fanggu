@@ -17,6 +17,8 @@ python3 community/server.py --database community/data/prototype.sqlite
 
 默认监听 `127.0.0.1:8787`。原型示例账号为 `yanbei`，密码 `fanggu-demo-2026`，以及 `seed.py` 中列出的其余示例账号。它们只用于可丢弃的测试数据库；示例身份会显示在 App 内。重复执行 seed 不覆盖已有真实账号、不修改已有评价。
 
+App 默认连接正式服务 `https://fanggu-api.hypotyposis.xyz`。用本机服务调试时，在账号页「原型连接设置」填 `http://127.0.0.1:8787`，或在 Xcode 的 Run 设置里加启动环境变量 `FANGGU_COMMUNITY_URL=http://127.0.0.1:8787`；「恢复默认服务」回到正式服务。自动测试已固定使用本机服务：单元测试由测试方案的环境变量指定，UI 测试由 `isolate()` 指定，不会连到正式服务。
+
 在模拟器中构建运行 App，顶部点「单机」打开账号入口。创建新账号或使用示例账号，阅读并启用公开同步规则，然后登录。联机模式增加「社区」栏，古迹详情显示社区评分和评价。账号页在「我的」中。
 
 真机和多设备局域网测试：
@@ -25,7 +27,7 @@ python3 community/server.py --database community/data/prototype.sqlite
 python3 community/server.py --host 0.0.0.0 --database community/data/prototype.sqlite
 ```
 
-在 App 账号页的「原型连接设置」填写电脑的局域网地址（如 `http://192.168.1.20:8787`，换成实际地址）。设备需能访问该地址，首次连接允许 iOS 本地网络权限。Debug 原型可使用本地 HTTP；正式环境使用 HTTPS，Release 界面拒绝配置 HTTP 服务。可用 `FANGGU_COMMUNITY_URL` 启动环境变量指定服务，适合独立测试实例。
+在 App 账号页的「原型连接设置」填写电脑的局域网地址（如 `http://192.168.1.20:8787`，换成实际地址）。设备需能访问该地址，首次连接允许 iOS 本地网络权限。Debug 构建可使用本地 HTTP；Release 构建只接受 HTTPS，连已保存的 HTTP 地址（例如同一台设备上先装过的 Debug 版留下的）也会忽略并回到正式服务。地址优先级：测试显式传入、`FANGGU_COMMUNITY_URL`、连接设置中保存的地址、正式服务。
 
 账号密码登录已可实际注册、登录、退出和删除。短信、Apple 登录、国内公网域名和部署凭据属于后续环境接入，当前原型不伪造验证码、Apple 身份或公网连接。Python HTTP 服务用于本机和受控测试网络；公网部署按下文「部署到服务器」放在 Caddy 的 HTTPS 反向代理后运行，短信/Apple 账号绑定与生产级流量控制仍待补充。
 

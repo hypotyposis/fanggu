@@ -75,6 +75,9 @@ schemes:
       # Unit tests assert the Chinese copy; UI tests choose their own language when launching the app.
       language: zh-Hans
       region: CN
+      # The unit-test host app must never reach the production community service.
+      environmentVariables:
+        FANGGU_COMMUNITY_URL: http://127.0.0.1:8787
       targets:
         - FangguTests
         - name: FangguUITests

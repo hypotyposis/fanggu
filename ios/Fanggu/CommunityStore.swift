@@ -46,7 +46,8 @@ import Foundation
         self.transport = transport
         self.defaults = defaults
         self.directory = directory ?? FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0].appendingPathComponent("Fanggu")
-        server = serverURL?.absoluteString ?? ProcessInfo.processInfo.environment["FANGGU_COMMUNITY_URL"] ?? defaults.string(forKey: "fanggu.community.server") ?? "http://127.0.0.1:8787"
+        server = Self.initialServer(explicit: serverURL, environment: ProcessInfo.processInfo.environment,
+                                    saved: defaults.string(forKey: "fanggu.community.server"))
         online = defaults.bool(forKey: "fanggu.community.online")
         loadDisk()
         token = disk.user.flatMap { CommunityCredential.read(server: credentialKey($0.id)) }
@@ -54,6 +55,25 @@ import Foundation
     }
 
     deinit { syncTask?.cancel(); periodicTask?.cancel() }
+
+    /// The deployed service every build uses unless a test or the connection settings choose another.
+    nonisolated static let productionServer = "https://fanggu-api.hypotyposis.xyz"
+    #if DEBUG
+    nonisolated static let allowsHTTP = true
+    #else
+    nonisolated static let allowsHTTP = false
+    #endif
+
+    /// A test's explicit address, then FANGGU_COMMUNITY_URL, then the address saved in the connection
+    /// settings, then production. Release builds skip plain-HTTP addresses, such as one saved by a
+    /// debug build of the same app, rather than connecting to them.
+    nonisolated static func initialServer(explicit: URL?, environment: [String: String], saved: String?, allowsHTTP: Bool = allowsHTTP) -> String {
+        for candidate in [explicit?.absoluteString, environment["FANGGU_COMMUNITY_URL"], saved] {
+            guard let candidate, let url = URL(string: candidate), url.host?.isEmpty == false else { continue }
+            if url.scheme == "https" || (allowsHTTP && url.scheme == "http") { return candidate }
+        }
+        return productionServer
+    }
 
     var isAuthenticated: Bool { user != nil && token != nil && !requiresLogin }
     var syncLabel: String {
@@ -431,9 +451,9 @@ import Foundation
               url.query == nil, url.fragment == nil, ["https", "http"].contains(url.scheme ?? "") else {
             throw CommunityFailure(status: 0, message: String(localized: "请输入完整的社区服务地址。"))
         }
-        #if !DEBUG
-        guard url.scheme == "https" else { throw CommunityFailure(status: 0, message: String(localized: "正式服务必须使用 HTTPS。")) }
-        #endif
+        guard Self.allowsHTTP || url.scheme == "https" else {
+            throw CommunityFailure(status: 0, message: String(localized: "正式服务必须使用 HTTPS。"))
+        }
         guard !isAuthenticated else { throw CommunityFailure(status: 0, message: String(localized: "请先退出当前账号，再切换社区服务。")) }
         guard input != server else { return }
         let previousDisk = disk

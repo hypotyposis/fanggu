@@ -22,6 +22,10 @@ extension XCUIApplication {
         if launchEnvironment[Self.libraryScopeKey] == nil {
             launchEnvironment[Self.libraryScopeKey] = "uitest-\(UUID().uuidString)"
         }
+        // The app defaults to the production community service; UI tests use the local sample service.
+        if launchEnvironment["FANGGU_COMMUNITY_URL"] == nil {
+            launchEnvironment["FANGGU_COMMUNITY_URL"] = "http://127.0.0.1:8787"
+        }
         if !launchArguments.contains("-AppleLanguages") {
             launchArguments += ["-AppleLanguages", "(\(language))", "-AppleLocale", locale]
         }

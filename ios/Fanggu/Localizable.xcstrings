@@ -8001,22 +8001,6 @@
         }
       }
     },
-    "连接同一服务的设备可以互看评价、关注彼此。模拟器可使用本机服务；真机请填写可访问的服务地址。" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Devices connected to the same service can see each other’s reviews and follow each other. The Simulator can use a service on this Mac; on a real device, enter an address it can reach."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "同じサービスに接続した端末同士で、評価を見たりフォローし合ったりできます。シミュレータはこのMacのサービスを使えます。実機では到達できるサーバーのアドレスを入力してください。"
-          }
-        }
-      }
-    },
     "社区服务地址" : {
       "localizations" : {
         "en" : {
@@ -9395,6 +9379,38 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关注"
+          }
+        }
+      }
+    },
+    "默认连接访古社区服务。调试时可改为本机或局域网服务地址；连接同一服务的设备才能互看评价、关注彼此。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Connects to the Fanggu community service by default. For debugging, enter a local or LAN service address; only devices on the same service can see each other’s reviews and follow each other."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既定では訪古コミュニティサービスに接続します。デバッグ時はローカルまたは LAN のサービスアドレスを入力できます。同じサービスに接続した端末同士でのみ、評価の閲覧やフォローができます。"
+          }
+        }
+      }
+    },
+    "恢复默认服务" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the default service"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既定のサービスに戻す"
           }
         }
       }

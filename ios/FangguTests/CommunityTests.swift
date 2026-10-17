@@ -65,6 +65,43 @@ final class CommunityTests: XCTestCase {
         }
     }
 
+    func testServerDefaultsToProductionAndHonoursOverridesInOrder() {
+        let production = CommunityStore.productionServer
+        XCTAssertEqual(production, "https://fanggu-api.hypotyposis.xyz")
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: [:], saved: nil), production)
+        // Debug builds may keep a local or LAN service chosen in the connection settings.
+        let lan = "http://192.168.1.20:8787"
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: [:], saved: lan, allowsHTTP: true), lan)
+        let env = ["FANGGU_COMMUNITY_URL": "http://127.0.0.1:8787"]
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: env, saved: lan, allowsHTTP: true), "http://127.0.0.1:8787")
+        XCTAssertEqual(CommunityStore.initialServer(explicit: URL(string: "https://test.invalid"), environment: env, saved: lan), "https://test.invalid")
+        // Unusable values fall through instead of leaving the app without a service.
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: ["FANGGU_COMMUNITY_URL": "not a url"], saved: "ftp://x.invalid"), production)
+    }
+
+    func testReleaseBuildNeverConnectsOverPlainHTTP() {
+        // A TestFlight install keeps the defaults of an earlier debug build of the same app.
+        let saved = "http://127.0.0.1:8787"
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: [:], saved: saved, allowsHTTP: false), CommunityStore.productionServer)
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: ["FANGGU_COMMUNITY_URL": saved], saved: "https://staging.invalid", allowsHTTP: false),
+                       "https://staging.invalid")
+    }
+
+    @MainActor func testConnectionSettingsSaveALocalServerAndCanReturnToProduction() throws {
+        let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: root) }
+        let defaults = UserDefaults(suiteName: UUID().uuidString)!
+        let store = CommunityStore(directory: root, defaults: defaults, serverURL: URL(string: CommunityStore.productionServer))
+        try store.configureServer("http://127.0.0.1:8787/")
+        XCTAssertEqual(store.server, "http://127.0.0.1:8787")
+        let saved = defaults.string(forKey: "fanggu.community.server")
+        XCTAssertEqual(CommunityStore.initialServer(explicit: nil, environment: [:], saved: saved, allowsHTTP: true), "http://127.0.0.1:8787")
+        // The "restore default service" button configures the production address.
+        try store.configureServer(CommunityStore.productionServer)
+        XCTAssertEqual(store.server, CommunityStore.productionServer)
+        XCTAssertEqual(defaults.string(forKey: "fanggu.community.server"), CommunityStore.productionServer)
+    }
+
     @MainActor func testChangingServiceKeepsAnonymousAndAccountReviewsSeparate() throws {
         let root = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         defer { try? FileManager.default.removeItem(at: root) }
