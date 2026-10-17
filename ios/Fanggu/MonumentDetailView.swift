@@ -383,6 +383,7 @@ struct VisitEditor: View {
     @EnvironmentObject private var library: LibraryStore
     @Environment(\.dismiss) private var dismiss
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
+    @Environment(\.scenePhase) private var scenePhase
     let site: Monument
     @State private var date = Date()
     @State private var dateKnown = false
@@ -390,6 +391,15 @@ struct VisitEditor: View {
     @State private var wasVisited = false
     @State private var note = ""
     @State private var error: String?
+    @State private var originalRecord = VisitRecord()
+    @State private var closing = false
+    @State private var draftSaveFailed = false
+    @State private var draftLoadFailed = false
+
+    private var hasChanges: Bool {
+        note != originalRecord.note || dateKnown != !originalRecord.visitedOn.isEmpty
+            || (dateKnown && LibraryStore.dateFormatter().string(from: date) != originalRecord.visitedOn)
+    }
 
     var body: some View {
         NavigationStack {
@@ -423,7 +433,18 @@ struct VisitEditor: View {
                     Text(verbatim: "\(note.utf16.count) / 12000").font(FangguFont.mono(11)).foregroundStyle(.secondary)
                 }
                 .listRowBackground(Palette.ink2)
-                if let error { Text(error).foregroundStyle(Palette.redText) }
+                if hasChanges && !draftSaveFailed {
+                    Text("草稿已保留在本机，尚未更新到访记录。")
+                        .font(FangguFont.serif(13)).foregroundStyle(Palette.paper2)
+                        .accessibilityIdentifier("visit-draft-status")
+                }
+                if let error {
+                    Text(error).foregroundStyle(Palette.redText)
+                        .accessibilityIdentifier("visit-save-error")
+                    if draftSaveFailed && !draftLoadFailed {
+                        Button("重试保存草稿") { persistDraft() }
+                    }
+                }
             }
             .foregroundStyle(Palette.paper)
             .scrollContentBackground(.hidden)
@@ -431,7 +452,15 @@ struct VisitEditor: View {
             .navigationTitle(wasVisited ? "编辑到访记录" : "补记到访")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .cancellationAction) { Button("取消") { dismiss() }.accessibilityIdentifier("cancel-visit") }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("取消") {
+                        guard library.discardVisitDraft(for: site) else { error = library.error; return }
+                        closing = true
+                        dismiss()
+                    }
+                    .accessibilityHint("丢弃本次到访草稿，不修改已保存的记录")
+                    .accessibilityIdentifier("cancel-visit")
+                }
                 ToolbarItem(placement: .confirmationAction) {
                     Button(wasVisited ? "保存修改" : "记录到访") { save() }
                         .accessibilityIdentifier("save-visit")
@@ -440,12 +469,30 @@ struct VisitEditor: View {
             .onAppear {
                 guard !loaded else { return }
                 let record = library.record(for: site)
+                originalRecord = record
                 wasVisited = record.status == .visited
                 dateKnown = !record.visitedOn.isEmpty
                 date = LibraryStore.dateFormatter().date(from: record.visitedOn) ?? .now
                 note = record.note
+                do {
+                    if let draft = try library.visitDraft(for: site) {
+                        dateKnown = draft.dateKnown
+                        date = draft.date
+                        note = draft.note
+                    }
+                } catch {
+                    self.error = String(localized: "到访草稿无法读取，原文件已保留。")
+                    draftLoadFailed = true
+                    draftSaveFailed = true
+                }
                 loaded = true
             }
+            .onChange(of: note) { _, _ in persistDraft() }
+            .onChange(of: dateKnown) { _, _ in persistDraft() }
+            .onChange(of: date) { _, _ in persistDraft() }
+            .onChange(of: scenePhase) { _, phase in if phase != .active { persistDraft() } }
+            .onDisappear { persistDraft() }
+            .interactiveDismissDisabled(draftSaveFailed)
         }
         .fangguAppearance()
     }
@@ -456,9 +503,24 @@ struct VisitEditor: View {
         guard note.utf16.count <= 12000 else { error = String(localized: "笔记不能超过 12000 字"); Haptics.error(); return }
         let wasVisited = library.record(for: site).status == .visited
         if library.setRecord(VisitRecord(status: .visited, visitedOn: dateText, note: note), for: site) {
+            closing = true
+            _ = library.discardVisitDraft(for: site)
             if wasVisited { Haptics.soft() } else { Haptics.success() }
             dismiss()
         } else { error = library.error; Haptics.error() }
+    }
+
+    private func persistDraft() {
+        guard loaded, !closing, !draftLoadFailed else { return }
+        let saved: Bool
+        if hasChanges {
+            let draft = VisitDraft(originalRecord: originalRecord, dateKnown: dateKnown, date: date, note: note)
+            saved = library.setVisitDraft(draft, for: site)
+        } else {
+            saved = library.discardVisitDraft(for: site)
+        }
+        draftSaveFailed = !saved
+        error = saved ? nil : library.error
     }
 }
 

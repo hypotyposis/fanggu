@@ -9,6 +9,91 @@ final class UIUXFixTests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
+
+    func testVisitDraftSurvivesRestartWithoutRecordingAVisit() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest(site: site)
+        let edit = app.buttons["edit-visit"]
+        XCTAssertTrue(edit.waitForExistence(timeout: 10))
+        edit.tap()
+        let note = app.textViews["visit-note"]
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        note.tap(); note.typeText("visit-draft-after-restart")
+        let expected = note.value as? String
+        XCTAssertTrue(expected?.contains("visit-draft-after-restart") == true)
+
+        app.relaunch()
+        XCTAssertTrue(app.buttons["record-today"].waitForExistence(timeout: 10), "A draft must not record a visit")
+        edit.tap()
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        XCTAssertEqual(note.value as? String, expected, "An interrupted edit must recover its draft")
+        XCTAssertEqual(app.switches["visit-date-known"].value as? String, "0")
+        capture(app, "visit-draft-restored")
+    }
+
+    func testVisitDraftSurvivesSheetDismissAndExplicitCancelDiscardsIt() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest(site: site)
+        let edit = app.buttons["edit-visit"]
+        XCTAssertTrue(edit.waitForExistence(timeout: 10)); edit.tap()
+        let note = app.textViews["visit-note"]
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        note.tap(); note.typeText("dismissed-visit-draft")
+        let expected = note.value as? String
+        let header = app.navigationBars["补记到访"].coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5))
+        header.press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.9)))
+        XCTAssertTrue(app.buttons["cancel-visit"].waitForNonExistence(timeout: 5))
+        edit.tap()
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        XCTAssertEqual(note.value as? String, expected)
+        app.buttons["cancel-visit"].tap()
+        app.relaunch()
+        XCTAssertTrue(edit.waitForExistence(timeout: 10)); edit.tap()
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        XCTAssertEqual(note.value as? String, "")
+    }
+
+    func testSavingVisitDraftClearsItAndPreservesTheSavedNote() {
+        let app = XCUIApplication.isolated()
+        app.launchForTest(site: site)
+        let edit = app.buttons["edit-visit"]
+        XCTAssertTrue(edit.waitForExistence(timeout: 10)); edit.tap()
+        let note = app.textViews["visit-note"]
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        note.tap(); note.typeText("saved-visit-note")
+        let expected = note.value as? String
+        app.buttons["save-visit"].tap()
+        XCTAssertTrue(app.buttons["visit-status-menu"].waitForExistence(timeout: 5))
+        app.relaunch()
+        XCTAssertTrue(edit.waitForExistence(timeout: 10)); edit.tap()
+        XCTAssertTrue(note.waitForExistence(timeout: 5))
+        XCTAssertEqual(note.value as? String, expected)
+        let hint = app.staticTexts["visit-draft-status"]
+        XCTAssertFalse(hint.exists, "Saved text must not appear as an unfinished draft")
+        capture(app, "visit-draft-saved")
+    }
+
+    func testVisitDraftHintIsLocalizedInEnglishAndJapanese() {
+        let languages = [
+            ("en", "en_US", "Draft kept on this device. The visit record has not been updated."),
+            ("ja", "ja_JP", "下書きはこの端末に保存されています。訪問記録はまだ更新されていません。")
+        ]
+        for (language, locale, expected) in languages {
+            let app = XCUIApplication.isolated(language: language, locale: locale)
+            app.launchForTest(site: site)
+            let edit = app.buttons["edit-visit"]
+            XCTAssertTrue(edit.waitForExistence(timeout: 10)); edit.tap()
+            let note = app.textViews["visit-note"]
+            XCTAssertTrue(note.waitForExistence(timeout: 5))
+            note.tap(); note.typeText("localized-draft")
+            let hint = app.staticTexts["visit-draft-status"]
+            XCTAssertTrue(app.reveal(hint))
+            XCTAssertEqual(hint.label, expected)
+            capture(app, "\(language)-visit-draft")
+            app.terminate()
+        }
+    }
+
     func testMultiwordSearchAndIndependentClear() {
         let app = XCUIApplication.isolated()
         app.launchForTest()

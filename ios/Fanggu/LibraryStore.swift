@@ -48,6 +48,53 @@ import Foundation
         data.records[site.id] ?? VisitRecord(status: site.initialStatus)
     }
 
+    /// Bind drafts to the saved note/date; status-only changes keep the unfinished edit.
+    func visitDraft(for site: Monument) throws -> VisitDraft? {
+        guard ids.contains(site.id) else { return nil }
+        let url = visitDraftURL(for: site)
+        guard FileManager.default.fileExists(atPath: url.path) else { return nil }
+        let draft = try JSONDecoder().decode(VisitDraft.self, from: Data(contentsOf: url))
+        return draft.matchesSavedFields(of: record(for: site)) ? draft : nil
+    }
+
+    @discardableResult func setVisitDraft(_ draft: VisitDraft, for site: Monument) -> Bool {
+        guard ids.contains(site.id), !loadFailed else { return false }
+        do {
+            guard draft.matchesSavedFields(of: record(for: site)) else {
+                throw StoreError.invalid(String(localized: "到访记录已更新，请重新打开编辑页。"))
+            }
+            // Decode before replacing an existing file, preserving unreadable drafts.
+            if try visitDraft(for: site) != draft {
+                let url = visitDraftURL(for: site)
+                try FileManager.default.createDirectory(at: url.deletingLastPathComponent(), withIntermediateDirectories: true)
+                try JSONEncoder().encode(draft).write(to: url, options: .atomic)
+            }
+            if error != nil { error = nil }
+            return true
+        } catch {
+            self.error = String(localized: "草稿保存失败：\(error.localizedDescription)")
+            return false
+        }
+    }
+
+    @discardableResult func discardVisitDraft(for site: Monument) -> Bool {
+        guard ids.contains(site.id) else { return false }
+        do {
+            let url = visitDraftURL(for: site)
+            if FileManager.default.fileExists(atPath: url.path) { try FileManager.default.removeItem(at: url) }
+            if !loadFailed && error != nil { error = nil }
+            return true
+        } catch {
+            self.error = String(localized: "草稿清理失败：\(error.localizedDescription)")
+            return false
+        }
+    }
+
+    private func visitDraftURL(for site: Monument) -> URL {
+        fileURL.deletingPathExtension().appendingPathExtension("visit-drafts")
+            .appendingPathComponent(site.id).appendingPathExtension("json")
+    }
+
     func review(for site: Monument) -> Review { data.reviews[site.id] ?? Review() }
 
     func curations(for site: Monument) -> [Curation] { curationsBySite[site.id] ?? [] }

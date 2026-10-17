@@ -70,15 +70,15 @@
 | `FangguTests/PersonalListTests.swift` | 个人名单顺序与按语持久化、备份合并与旧版兼容、非法内容和损坏文件保护、写入失败与重试 |
 | `FangguUITests/PersonalListUITests.swift` | 详情创建名单、添加与移出、自动保存按语、排序和重启、我的入口与删除、英日辅助大字号 |
 | `FangguTests/ReviewTests.swift` | 年表索引完整、旧评价不臆造六维、档位往返与非法值、径向投影与防抖、持久化与备份、版本 3 导入保留六维、首次保存才升级、独立自动保存、失败保留原数据、旧记录与新增条目的备份 |
-| `FangguTests/UXRegressionTests.swift` | 打卡触觉跨原刻度连续、后退与静止／端点静音、多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存 |
+| `FangguTests/UXRegressionTests.swift` | 打卡触觉跨原刻度连续、后退与静止／端点静音、多关键词搜索、今日到访与状态更正的撤销、首次记录撤销与未知日期、评价重置与清空的撤销、撤销失效规则、撤销失败可重试、不可读存储不报已保存；到访草稿的日期笔记恢复、正式记录与备份隔离、过期草稿、损坏与写入失败保护、超长输入保留 |
 | `FangguTests/AtlasTimelineTests.swift` | 每个地域时期的节点间距与完整覆盖、等距时间轴、离线底图打包与多边形有效 |
 | `FangguTests/NearbyReminderTests.swift` | 附近提醒规则：3 公里内外与排序、最近 20 处围栏及只报进入、每日一次、目录目标排除已到访与城镇级点 |
 | `FangguTests/CatalogDistanceTests.swift` | 距离标签格式、约略位置判断、各种授权与定位状态下的说明文案、最近在前且同距离保持年代顺序、“就在附近”只认本体坐标 |
 | `FangguUITests/NearbyUITests.swift` | 注入模拟位置：按距离排序后首行是最近古迹并带距离与“就在附近”；远离收录地点时“附近”空态与一键关闭 |
-| `FangguTests/TestScopeTests.swift` | `FANGGU_LIBRARY_SCOPE` 作用域名清洗与长度、作用域路径与默认库分离、作用域内保存不触碰真实记录 |
+| `FangguTests/TestScopeTests.swift` | `FANGGU_LIBRARY_SCOPE` 作用域名清洗与长度、作用域路径与默认库分离、作用域内保存不触碰真实记录；草稿随记录作用域隔离 |
 | `FangguUITests/FangguUITests.swift` | 图鉴列表与大图回到顶部（保留搜索和筛选）、tab 与外观切换耗时、东京筛选与别名、外观持久化、原生各栏可用、六维松手自动保存与重置、低档位可拖、短评自动保存、详情导航、大图拖动条、终点松手才保存、足迹标记与搜索 |
 | `FangguUITests/LocalizationUITests.swift` | 英日主要页面、建筑群操作与回到顶部按钮的文案 |
-| `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口 |
+| `FangguUITests/UIUXFixTests.swift` | 多词搜索与独立清空、今日到访与补记与直接更正、评价重置与清空可撤销、最大辅助字号评分、大图评价只有一个撤销入口；到访草稿重启与下滑恢复、明确取消丢弃、正式保存后清理 |
 | `FangguUITests/AtlasTimelineUITests.swift` | 时期选择定位与返回保留、所有地域与跨地域时期可达、足迹弹出详情只有一个撤销入口；足迹地点 → 详情 → 专题可达并逐层返回 |
 | `FangguUITests/IsolatedApp.swift` | 辅助：`XCUIApplication.isolated()` 为每个 UI 用例生成新的记录与外观作用域；`isolate()` 供 `launchForTest` 复用，漏掉 `isolated()` 的实例也会得到作用域 |
 | `FangguUITests/UITestSupport.swift` | 辅助：`launchForTest` 关闭过渡动画并可直达详情或评价页、`relaunch` 真实重启、`dragPage`／`reveal` 沿左缘匀速滚动到目标可点 |

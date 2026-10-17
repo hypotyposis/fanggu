@@ -32,4 +32,17 @@ final class TestScopeTests: XCTestCase {
         XCTAssertEqual(LibraryStore(scope: "unit-\(UUID().uuidString)").record(for: site).status, .unvisited, "Another scope starts from the catalogue defaults")
         XCTAssertEqual(try? Data(contentsOf: TestScope.libraryFileURL(for: nil)), realBefore, "The real library must stay untouched")
     }
+
+    @MainActor func testVisitDraftsStayInsideTheirLibraryScope() throws {
+        let scope = "unit-\(UUID().uuidString)"
+        let url = TestScope.libraryFileURL(for: scope)
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(scope: scope)
+        let site = try XCTUnwrap(store.monuments.first)
+        let draft = VisitDraft(originalRecord: store.record(for: site), dateKnown: false, date: .now, note: "隔离草稿")
+        XCTAssertTrue(store.setVisitDraft(draft, for: site))
+        XCTAssertEqual(try LibraryStore(scope: scope).visitDraft(for: site), draft)
+        XCTAssertNil(try LibraryStore(scope: "unit-\(UUID().uuidString)").visitDraft(for: site))
+        XCTAssertFalse(FileManager.default.fileExists(atPath: url.path), "A draft does not create a saved library")
+    }
 }

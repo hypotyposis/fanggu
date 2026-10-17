@@ -248,6 +248,12 @@ App 在本机 Application Support 下 `Fanggu/library.json` 保存 `LibraryData`
 
 旧记录关联 `linkLegacy` 把自建条目并入目录条目：状态取两者中更高者（已到访、心愿、未标记依次降低），笔记去重拼接，日期优先保留目录记录已有的值。
 
+### 到访编辑草稿
+
+草稿不属于 `LibraryData`，不改变版本 5 的记录和备份格式。每个古迹单独写入 `library.visit-drafts/<id>.json`，目录与 `library.json` 同层；传入自定义记录文件名时按该文件名派生草稿目录，测试作用域随记录路径隔离。
+
+`VisitDraft` 包含 `originalRecord`（打开编辑页时的 `VisitRecord`）、`dateKnown`、`date`（JSONEncoder 默认 Date 编码）与 `note`。只有 `originalRecord` 的笔记和到访日期与当前正式记录一致时恢复草稿，避免用旧草稿覆盖后续记录；仅状态变化不使草稿失效。笔记超出正式记录的 12000 个 UTF-16 单元上限时，草稿仍保留输入；正式记录保存继续执行原有校验。写入前解码已有草稿，损坏文件不自动覆盖；写入采用原子替换，失败保留旧文件。明确取消或正式保存成功后清理对应草稿。
+
 附近提醒的开关与每处最近一次提醒时间保存在 `UserDefaults` 键 `fanggu.nearbyReminder.enabled`、`fanggu.nearbyReminder.reminded`，不进入 `library.json` 与备份；位置从不持久化。
 
 六维键与显示名：`eraRarity` 年代稀缺、`authenticity` 原真完整、`construction` 结构营造、`art` 艺术遗存、`scale` 规制体量、`setting` 环境格局；档位 1–5 对应 E–A。

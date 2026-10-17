@@ -5914,6 +5914,118 @@
           }
         }
       }
+    },
+    "到访记录已更新，请重新打开编辑页。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This visit record has changed. Reopen the editor."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "訪問記録が更新されました。編集画面を開き直してください。"
+          }
+        }
+      }
+    },
+    "草稿保存失败：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not save draft: %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下書きを保存できません：%@"
+          }
+        }
+      }
+    },
+    "草稿清理失败：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Could not clear draft: %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下書きを削除できません：%@"
+          }
+        }
+      }
+    },
+    "草稿已保留在本机，尚未更新到访记录。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Draft kept on this device. The visit record has not been updated."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下書きはこの端末に保存されています。訪問記録はまだ更新されていません。"
+          }
+        }
+      }
+    },
+    "重试保存草稿" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry saving draft"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下書きの保存を再試行"
+          }
+        }
+      }
+    },
+    "丢弃本次到访草稿，不修改已保存的记录" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discard this visit draft without changing saved records"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "今回の訪問記録の下書きを破棄します。保存済みの記録は変更しません"
+          }
+        }
+      }
+    },
+    "到访草稿无法读取，原文件已保留。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The visit draft could not be read. The original file has been kept."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "訪問記録の下書きを読み込めません。元のファイルは保持されています。"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

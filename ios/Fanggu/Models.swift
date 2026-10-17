@@ -206,6 +206,18 @@ struct VisitRecord: Codable, Equatable {
     }
 }
 
+/// Local editing state, kept outside the saved library and its backups.
+struct VisitDraft: Codable, Equatable {
+    let originalRecord: VisitRecord
+    var dateKnown: Bool
+    var date: Date
+    var note: String
+
+    func matchesSavedFields(of record: VisitRecord) -> Bool {
+        originalRecord.note == record.note && originalRecord.visitedOn == record.visitedOn
+    }
+}
+
 struct LegacySite: Codable, Identifiable {
     var id: String
     var name: String

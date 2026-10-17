@@ -201,6 +201,133 @@ final class UXRegressionTests: XCTestCase {
         }
     }
 
+    @MainActor func testVisitDraftRestoresDateAndNoteWithoutChangingRecordsReviewsOrBackup() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let site = try XCTUnwrap(store.monuments.first { $0.initialStatus == .unvisited })
+        XCTAssertTrue(store.setReviewText("独立评价", for: site))
+        let saved = try Data(contentsOf: url)
+        let review = store.review(for: site)
+        let draft = VisitDraft(originalRecord: store.record(for: site), dateKnown: true,
+                               date: Date(timeIntervalSince1970: 1_600_000_000), note: "尚未保存的到访笔记")
+        XCTAssertTrue(store.setVisitDraft(draft, for: site))
+        let restored = LibraryStore(fileURL: url)
+        XCTAssertEqual(try restored.visitDraft(for: site), draft)
+        XCTAssertNil(restored.data.records[site.id])
+        XCTAssertEqual(restored.review(for: site), review)
+        XCTAssertEqual(try Data(contentsOf: url), saved)
+        let backup = try JSONDecoder().decode(LibraryData.self, from: restored.backup().data)
+        XCTAssertNil(backup.records[site.id])
+        XCTAssertEqual(backup.version, 5)
+        XCTAssertNil(store.undoAction)
+    }
+
+    @MainActor func testVisitDraftsStayIndependentAndDiscardPreservesSavedRecords() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let sites = Array(store.monuments.prefix(2))
+        let record = VisitRecord(status: .visited, visitedOn: "2020-03-04", note: "正式笔记")
+        XCTAssertTrue(store.setRecord(record, for: sites[0]))
+        let actionID = store.undoAction?.id
+        let first = VisitDraft(originalRecord: record, dateKnown: false, date: .now, note: "第一处草稿")
+        let second = VisitDraft(originalRecord: store.record(for: sites[1]), dateKnown: false,
+                                date: Date(timeIntervalSince1970: 1_600_000_000), note: "第二处草稿")
+        XCTAssertTrue(store.setVisitDraft(first, for: sites[0]))
+        XCTAssertTrue(store.setVisitDraft(second, for: sites[1]))
+        XCTAssertEqual(try LibraryStore(fileURL: url).visitDraft(for: sites[0]), first)
+        XCTAssertTrue(store.discardVisitDraft(for: sites[0]))
+        let restored = LibraryStore(fileURL: url)
+        XCTAssertNil(try restored.visitDraft(for: sites[0]))
+        XCTAssertEqual(try restored.visitDraft(for: sites[1]), second)
+        XCTAssertEqual(restored.record(for: sites[0]), record)
+        XCTAssertEqual(store.undoAction?.id, actionID)
+    }
+
+    @MainActor func testVisitDraftCannotReplaceAnUpdatedRecord() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let site = try XCTUnwrap(store.monuments.first { $0.initialStatus == .unvisited })
+        let draft = VisitDraft(originalRecord: store.record(for: site), dateKnown: false, date: .now, note: "旧草稿")
+        XCTAssertTrue(store.setVisitDraft(draft, for: site))
+        XCTAssertTrue(store.recordToday(for: site))
+        XCTAssertNil(try store.visitDraft(for: site), "A changed saved record takes precedence over an old draft")
+        XCTAssertFalse(store.setVisitDraft(draft, for: site), "A stale editor cannot rewrite a newer draft")
+        XCTAssertEqual(store.record(for: site).status, .visited)
+    }
+
+    @MainActor func testVisitDraftSurvivesWishlistChangesWithoutRevertingTheStatus() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let site = try XCTUnwrap(store.monuments.first { $0.initialStatus == .unvisited })
+        let draft = VisitDraft(originalRecord: store.record(for: site), dateKnown: false, date: .now, note: "尚未写完")
+        XCTAssertTrue(store.setVisitDraft(draft, for: site))
+        XCTAssertTrue(store.setStatus(.wishlist, for: site))
+        let restored = LibraryStore(fileURL: url)
+        XCTAssertEqual(try restored.visitDraft(for: site), draft, "A status-only change must not discard note or date edits")
+        XCTAssertEqual(restored.record(for: site).status, .wishlist)
+    }
+
+    @MainActor func testVisitDraftFailurePreservesPreviousFileAndCanRetry() throws {
+        let url = temporaryFile()
+        let parent = url.deletingLastPathComponent()
+        let moved = parent.appendingPathExtension("saved")
+        defer {
+            try? FileManager.default.removeItem(at: parent)
+            try? FileManager.default.removeItem(at: moved)
+        }
+        let store = LibraryStore(fileURL: url)
+        let site = try XCTUnwrap(store.monuments.first)
+        let original = VisitDraft(originalRecord: store.record(for: site), dateKnown: false, date: .now, note: "原草稿")
+        XCTAssertTrue(store.setVisitDraft(original, for: site))
+        try FileManager.default.moveItem(at: parent, to: moved)
+        try Data("block writes".utf8).write(to: parent)
+        var edited = original; edited.note = "修改保留在编辑器中"
+        XCTAssertFalse(store.setVisitDraft(edited, for: site))
+        XCTAssertNotNil(store.error)
+        XCTAssertNil(store.data.records[site.id])
+        try FileManager.default.removeItem(at: parent)
+        try FileManager.default.moveItem(at: moved, to: parent)
+        XCTAssertEqual(try LibraryStore(fileURL: url).visitDraft(for: site), original)
+        XCTAssertTrue(store.setVisitDraft(edited, for: site))
+        XCTAssertEqual(try LibraryStore(fileURL: url).visitDraft(for: site), edited)
+        XCTAssertNil(store.error)
+    }
+
+    @MainActor func testCorruptVisitDraftIsNotOverwrittenByAnotherEdit() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let site = try XCTUnwrap(store.monuments.first)
+        let draft = VisitDraft(originalRecord: store.record(for: site), dateKnown: false, date: .now, note: "草稿")
+        XCTAssertTrue(store.setVisitDraft(draft, for: site))
+        let draftURL = url.deletingPathExtension().appendingPathExtension("visit-drafts")
+            .appendingPathComponent(site.id).appendingPathExtension("json")
+        let damaged = Data("unreadable draft".utf8)
+        try damaged.write(to: draftURL)
+        XCTAssertThrowsError(try LibraryStore(fileURL: url).visitDraft(for: site))
+        XCTAssertFalse(store.setVisitDraft(draft, for: site))
+        XCTAssertEqual(try Data(contentsOf: draftURL), damaged)
+        XCTAssertTrue(store.discardVisitDraft(for: site), "An explicit cancel may discard the draft")
+        XCTAssertNil(try store.visitDraft(for: site))
+    }
+
+    @MainActor func testInvalidVisitNoteStillSurvivesAsADraft() throws {
+        let url = temporaryFile()
+        defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+        let store = LibraryStore(fileURL: url)
+        let site = try XCTUnwrap(store.monuments.first { $0.initialStatus == .unvisited })
+        let draft = VisitDraft(originalRecord: store.record(for: site), dateKnown: false, date: .now,
+                               note: String(repeating: "古", count: 12001))
+        XCTAssertTrue(store.setVisitDraft(draft, for: site))
+        XCTAssertFalse(store.setRecord(VisitRecord(status: .visited, note: draft.note), for: site))
+        XCTAssertEqual(try LibraryStore(fileURL: url).visitDraft(for: site), draft)
+        XCTAssertNil(store.data.records[site.id])
+    }
+
     private func temporaryFile() -> URL {
         FileManager.default.temporaryDirectory.appendingPathComponent("fanggu-ux-\(UUID().uuidString)")
             .appendingPathComponent("library.json")
