@@ -42,7 +42,7 @@ struct MyLibraryView: View {
                         if let user = community.user { CommunityAvatar(user: user, size: 40) }
                         else { Image(systemName: "person.crop.circle").font(.system(size: 27)).foregroundStyle(Palette.gold) }
                         VStack(alignment: .leading, spacing: 5) {
-                            Text(community.user?.nickname ?? "开启联机，遇见同好").font(FangguFont.serif(15, weight: .medium)).foregroundStyle(Palette.paper)
+                            (community.user.map { Text(verbatim: $0.nickname) } ?? Text("开启联机，遇见同好")).font(FangguFont.serif(15, weight: .medium)).foregroundStyle(Palette.paper)
                             Text(community.syncLabel).font(FangguFont.serif(11)).foregroundStyle(Palette.paper3)
                         }
                         Spacer()

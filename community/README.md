@@ -40,7 +40,7 @@ python3 community/server.py --host 0.0.0.0 --database community/data/prototype.s
 
 ## 同步与数据边界
 
-`LibraryStore` 继续校验并原子保存版本 4 的个人 JSON，兼容 1–4 备份。社区状态保存在独立 `community-<服务地址哈希>.json`，包含按账号隔离的本机评价快照、远端版本、已确认内容、待发送请求及冲突版本。凭证只进入 Keychain，并按服务地址与账号分别保存。账号切换使用持久过渡记录，在写入个人文件前后退出 App 都能恢复，且不覆盖切换后的新编辑。
+`LibraryStore` 继续校验并原子保存版本 5 的个人 JSON，兼容 1–5 备份。社区状态保存在独立 `community-<服务地址哈希>.json`，包含按账号隔离的本机评价快照、远端版本、已确认内容、待发送请求及冲突版本。凭证只进入 Keychain，并按服务地址与账号分别保存。账号切换使用持久过渡记录，在写入个人文件前后退出 App 都能恢复，且不覆盖切换后的新编辑。
 
 本机修改成功后形成持久待发请求，每个请求带唯一 mutation ID 与 base revision。相同请求重放返回原结果；版本不一致返回 409 与远端内容，账号页显示双方版本并提供「保留本机／采用云端」。清除评价保留 tombstone。账号切换前保存当前账号快照，再通过 `LibraryStore` 切换评价，不改私人到访记录。切换服务也隔离评价，避免把另一社区的账号资料上传到新服务。
 
@@ -65,11 +65,9 @@ python3 community/moderate.py --database community/data/prototype.sqlite --resol
 python3 -m unittest discover -s community -p 'test_*.py'
 node --test tests/*.test.cjs
 xcodegen generate --spec ios/project.yml
-# 先启动上述示例服务，并使用独立模拟器；不要在个人设备数据上运行 UI 测试
-xcodebuild -project ios/Fanggu.xcodeproj -scheme Fanggu \
-  -destination 'platform=iOS Simulator,name=Fanggu Community Prototype' \
-  -parallel-testing-enabled NO -collect-test-diagnostics never -only-testing:FangguTests \
-  -only-testing:FangguUITests/CommunityUITests test
+# 先启动上述示例服务；脚本使用本会话独立模拟器，UI 测试在隔离的记录作用域中运行
+sh ios/scripts/run-ios-tests.sh -only-testing:FangguTests \
+  -only-testing:FangguUITests/CommunityUITests
 git diff --check
 ```
 

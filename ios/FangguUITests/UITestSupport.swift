@@ -32,14 +32,15 @@ extension XCUIApplication {
                       "The review editor must open from the launch argument", file: file, line: line)
     }
 
-    /// One steady drag along the left margin. It moves about 60% of the screen and never starts
+    /// One steady drag along the left margin. It moves about 55% of the screen and never starts
     /// on a radar handle, slider thumb or text editor. The default gesture speed releases without
     /// momentum, so the runner's idle wait returns at once; `swipeUp()` and fast drags fling the
-    /// page and then wait about two seconds for it to stop.
+    /// page and then wait about two seconds for it to stop. The top end stays below the community
+    /// mode bar and the navigation bar under it, where a drag would not reach the page.
     func dragPage(up: Bool = true) {
         let bottom = dragBottom
-        let start = coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: up ? bottom : 0.14))
-        let end = coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: up ? 0.14 : bottom))
+        let start = coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: up ? bottom : 0.2))
+        let end = coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: up ? 0.2 : bottom))
         start.press(forDuration: 0.02, thenDragTo: end)
     }
 
@@ -77,8 +78,8 @@ extension XCUIApplication {
         guard frame.height > 0 else { return }
         let bottom = dragBottom
         let target = frame.minY + frame.height * 0.3
-        let travel = max(-(bottom - 0.14), min(bottom - 0.14, (element.frame.midY - target) / frame.height))
-        let from: CGFloat = travel > 0 ? bottom : 0.14
+        let travel = max(-(bottom - 0.2), min(bottom - 0.2, (element.frame.midY - target) / frame.height))
+        let from: CGFloat = travel > 0 ? bottom : 0.2
         let start = coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: from))
         let end = coordinate(withNormalizedOffset: CGVector(dx: 0.025, dy: from - travel))
         start.press(forDuration: 0.05, thenDragTo: end, withVelocity: XCUIGestureVelocity(rawValue: 300),

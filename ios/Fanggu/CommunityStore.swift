@@ -57,11 +57,11 @@ import Foundation
 
     var isAuthenticated: Bool { user != nil && token != nil && !requiresLogin }
     var syncLabel: String {
-        if !conflicts.isEmpty { return "\(conflicts.count) 份评价需要合并" }
-        if syncing { return "正在同步评价" }
-        if syncError != nil { return "已保存到本机 · 同步待重试" }
-        if pendingCount > 0 { return "\(pendingCount) 份评价待同步" }
-        return isAuthenticated ? "评分与短评已公开同步" : "评分与短评仅保存在本机"
+        if !conflicts.isEmpty { return String(localized: "\(conflicts.count) 份评价需要合并") }
+        if syncing { return String(localized: "正在同步评价") }
+        if syncError != nil { return String(localized: "已保存到本机 · 同步待重试") }
+        if pendingCount > 0 { return String(localized: "\(pendingCount) 份评价待同步") }
+        return isAuthenticated ? String(localized: "评分与短评已公开同步") : String(localized: "评分与短评仅保存在本机")
     }
     var ownerKey: String? { user.map { $0.id } }
     private func credentialKey(_ id: String) -> String { server + "|" + id }

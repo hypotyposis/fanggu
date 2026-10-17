@@ -26,7 +26,7 @@ final class AtlasTimelineUITests: XCTestCase {
         XCTAssertTrue(title.contains("年")); XCTAssertFalse(title.contains("全部时期"))
         capture(app, "timeline-ming-selected")
         let rows = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "timeline-site-"))
-        for _ in 0..<5 where !rows.firstMatch.isHittable { app.swipeUp() }
+        XCTAssertTrue(app.reveal(rows.firstMatch))
         rows.firstMatch.tap()
         XCTAssertTrue(app.staticTexts["我的访古记"].waitForExistence(timeout: 5))
         app.buttons["返回"].tap()

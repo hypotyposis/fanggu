@@ -80,7 +80,9 @@ final class FangguUITests: XCTestCase {
             switchTab("足迹", expected: "我的足迹")
             switchTab("年表", expected: "东汉至今 · 东亚与东南亚")
             switchTab("我的", expected: "亲见 · 所愿 · 私人记录")
+            // The community account entry sits above the picker, so the lazy page may need a drag.
             let appearance = app.segmentedControls["appearance-picker"]
+            XCTAssertTrue(app.reveal(appearance))
             for mode in ["亮色", "深色", "跟随系统"] {
                 let start = ProcessInfo.processInfo.systemUptime
                 appearance.buttons[mode].tap()
@@ -89,6 +91,8 @@ final class FangguUITests: XCTestCase {
                 print("SWITCH_LATENCY appearance=\(mode) seconds=\(elapsed)")
                 XCTAssertLessThan(elapsed, 5, "Appearance changes must not stall the main thread")
             }
+            // Back to the top, so the next visit finds the header the lazy page dropped while scrolled.
+            app.reveal(app.staticTexts["亲见 · 所愿 · 私人记录"], up: false)
             switchTab("图鉴", expected: "古迹图鉴")
         }
     }
@@ -212,14 +216,14 @@ final class FangguUITests: XCTestCase {
         app.launchForTest()
         app.buttons["我的"].tap()
         let appearance = app.segmentedControls["appearance-picker"]
-        XCTAssertTrue(appearance.waitForExistence(timeout: 10))
+        XCTAssertTrue(app.reveal(appearance))
         appearance.buttons["亮色"].tap()
         XCTAssertTrue(appearance.buttons["亮色"].isSelected)
         capture(app, "light-library")
 
         app.relaunch()
         app.buttons["我的"].tap()
-        XCTAssertTrue(appearance.waitForExistence(timeout: 10))
+        XCTAssertTrue(app.reveal(appearance))
         XCTAssertTrue(appearance.buttons["亮色"].isSelected, "Appearance must survive relaunch")
 
         app.buttons["足迹"].tap()
@@ -254,6 +258,7 @@ final class FangguUITests: XCTestCase {
         app.buttons["完成"].tap()
         app.buttons["返回"].tap()
         app.buttons["我的"].tap()
+        XCTAssertTrue(app.reveal(appearance))
         appearance.buttons["深色"].tap()
         XCTAssertTrue(appearance.buttons["深色"].isSelected)
         capture(app, "dark-library")

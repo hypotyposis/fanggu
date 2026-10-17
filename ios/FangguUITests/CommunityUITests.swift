@@ -4,7 +4,7 @@ import XCTest
 /// Start `python3 community/seed.py` and `python3 community/server.py --database community/data/prototype.sqlite` first.
 final class CommunityUITests: XCTestCase {
     private func login(_ app: XCUIApplication, handle: String = "yanbei", password: String = "fanggu-demo-2026") {
-        app.launch()
+        app.launchForTest()
         app.buttons["我的"].tap()
         app.buttons["community-account-entry"].tap()
         let logout = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "退出账号")).firstMatch
@@ -28,7 +28,7 @@ final class CommunityUITests: XCTestCase {
     }
 
     func testCommunityFeedProfilesFollowAndModeSwitch() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         login(app)
         app.buttons["社区"].tap()
         XCTAssertTrue(app.staticTexts["同好之间"].waitForExistence(timeout: 10))
@@ -68,7 +68,7 @@ final class CommunityUITests: XCTestCase {
         XCTAssertFalse(app.buttons["社区"].exists)
         XCTAssertTrue(app.buttons["切换到联机模式"].exists)
         capture(app, "community-solo-mode")
-        app.terminate(); app.launch()
+        app.relaunch()
         XCTAssertTrue(app.buttons["切换到联机模式"].waitForExistence(timeout: 10))
         app.buttons["community-mode-toggle"].tap()
         XCTAssertTrue(app.buttons["社区"].waitForExistence(timeout: 10))
@@ -78,7 +78,7 @@ final class CommunityUITests: XCTestCase {
     }
 
     func testRealRegistrationAndPublicReviewPersistsInSoloMode() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         login(app)
         app.buttons["我的"].tap()
         app.buttons["community-account-entry"].tap()
@@ -117,16 +117,17 @@ final class CommunityUITests: XCTestCase {
         app.swipeDown()
         XCTAssertTrue(app.staticTexts["Test public review " + handle].waitForExistence(timeout: 25))
         capture(app, "community-new-public-review")
-        app.terminate(); app.launch()
+        app.relaunch()
         app.buttons["社区"].tap()
         XCTAssertTrue(app.staticTexts["Test public review " + handle].waitForExistence(timeout: 15))
     }
 
     func testCommunityDetailDarkModeAndReportFlow() {
-        let app = XCUIApplication()
+        let app = XCUIApplication.isolated()
         login(app)
         app.buttons["我的"].tap()
         let appearance = app.segmentedControls["appearance-picker"]
+        XCTAssertTrue(app.reveal(appearance))
         appearance.buttons["深色"].tap()
         app.buttons["社区"].tap()
         XCTAssertTrue(app.staticTexts["此刻，大家在看"].waitForExistence(timeout: 10))

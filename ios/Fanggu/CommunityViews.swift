@@ -44,6 +44,9 @@ struct CommunityModeBar: View {
         }
         .padding(.horizontal, 24).padding(.vertical, 5)
         .background(Palette.ink)
+        // Like the tab bar: a persistent chrome strip stops growing so pages keep their height.
+        .dynamicTypeSize(...DynamicTypeSize.xxLarge)
+        .accessibilityShowsLargeContentViewer()
     }
 }
 
