@@ -1,5 +1,6 @@
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -82,7 +83,7 @@ const chinaSingle = JSON.parse(read('assets/research/china-single-20261012-batch
 additions.push(...chinaSingle.ids);
 const chinaSingleResume = JSON.parse(read('assets/research/china-single-resume-20261012-batch.json'));
 additions.push(...chinaSingleResume.ids);
-test('all catalogue entries have a real PNG, matching dimensions and a map location', () => {
+test('all catalogue entries have a real PNG, matching dimensions and a map location', requiresLocalAssets, () => {
   assert.equal(firstBatchStone.units.filter(unit => unit.added).length, 19);
   assert.equal(firstBatchNewIds.length, 18); // Bingling was already in the Gansu batch.
   assert.equal(SITES.length, hebeiExpansion.beforeCount + hebeiExpansion.ids.length + 2 + shanghaiExpansion.ids.length + anhuiExpansion.ids.length + henanAdditions.ids.length + 3 + firstBatchNewIds.length + firstBatchFive.length + firstBatchEight.length + japanSix.length + kansaiTwelve.length + kyotoNearbyTen.length + kyotoThirteen.length + kyotoNine.length + jiangzheTwenty.length + fujianNationalTen.length + taiwanThree.length + sichuanChongqingTen.length + shanxiNationalTen.length + hebeiNationalTen.length + henanNationalTen.length + southeastAsiaTwelve.length + koreaEight.length + tokyoEight.length + 1 + readyExpansion.ids.length + japanFirst.ids.length + japanSecond.ids.length + chinaSingle.ids.length + chinaSingleResume.ids.length); assert.equal(new Set(SITES.map(s => s.id )).size, SITES.length);
@@ -118,7 +119,7 @@ test('first-batch five have distinct subjects, sourced scope and unvisited recor
   assert.equal(SITES.find(site => site.id === 'fj_qingjing_gate').types[0], 'mosque');
   assert(CHAPTERS.some(chapter => chapter.key === 'tubo'));
 });
-test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', () => {
+test('Shanghai additions cover every delivered plate with recorded, source-bound white originals', requiresLocalAssets, () => {
   const { createHash } = require('node:crypto');
   const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
   const queue = JSON.parse(read('assets/color-research/queue.json'));
@@ -144,7 +145,7 @@ test('Shanghai additions cover every delivered plate with recorded, source-bound
   assert.equal(SITES.find(site => site.id === 'sh_fangta').yearApprox, true);
   assert.equal(SITES.find(site => site.id === 'sh_zhenru').year, 1320);
 });
-test('Taiwan additions retain distinct subjects, sourced originals and unvisited defaults', () => {
+test('Taiwan additions retain distinct subjects, sourced originals and unvisited defaults', requiresLocalAssets, () => {
   const { createHash } = require('node:crypto');
   const hash = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
   const queue = JSON.parse(read('assets/color-research/queue.json'));
@@ -191,7 +192,7 @@ test('early monuments have distinct dynasty colours and dates covered by the exp
   assert.equal(new Set(Object.values(DYN).map(dynasty => dynasty.acc)).size, Object.keys(DYN).length);
   for (const site of SITES) assert(site.year >= 0 && site.year <= 2026);
 });
-test('all researched additions have source-backed imagegen plates in their original dynasty colour', () => {
+test('all researched additions have source-backed imagegen plates in their original dynasty colour', requiresLocalAssets, () => {
   const colours = Object.fromEntries([...read('palette.css').matchAll(/(--[\w-]+):\s*(#[\da-f]{6})\s*;/gi)].map(m => [m[1],m[2]]));
   for (const id of additions) {
     const site = SITES.find(s => s.id === id), meta = JSON.parse(read(`assets/research/${id}.json`));
@@ -218,7 +219,7 @@ test('Pizhi addition is unvisited, mapped to Shandong and uses recorded white or
   }
 });
 
-test('Shanxi additions have hash-bound white originals and complete transparent deliveries', () => {
+test('Shanxi additions have hash-bound white originals and complete transparent deliveries', requiresLocalAssets, () => {
   const { createHash } = require('node:crypto');
   const hash = file => createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex');
   const queue = JSON.parse(read('assets/color-research/queue.json'));
@@ -257,7 +258,7 @@ test('Shanxi additions have hash-bound white originals and complete transparent 
   }
 });
 
-test('Beijing and Tianjin additions have paired artwork, real inputs and recorded white-matte hashes', () => {
+test('Beijing and Tianjin additions have paired artwork, real inputs and recorded white-matte hashes', requiresLocalAssets, () => {
   const batch = beijingTianjinExpansion;
   assert.equal(batch.ids.length, 10);
   assert.equal(new Set(batch.ids).size, 10);
@@ -348,7 +349,7 @@ test('Anhui subjects have dated research and complete queued line/color deliveri
   assert.equal(SITES.find(site => site.id === 'ah_zhenfeng').yearApprox, true);
 });
 
-test('Henan additions preserve subject dates, registration and source-bound white originals', () => {
+test('Henan additions preserve subject dates, registration and source-bound white originals', requiresLocalAssets, () => {
   const { createHash } = require('node:crypto');
   const queue = JSON.parse(read('assets/color-research/queue.json'));
   const { COLORED_PLATES } = vm.runInNewContext(read('colored-plates.js') + '\n({COLORED_PLATES})');
@@ -385,7 +386,7 @@ test('Henan additions preserve subject dates, registration and source-bound whit
 });
 
 
-test('Xi’an pagodas have independent subjects, dates, artwork and queue coverage', () => {
+test('Xi’an pagodas have independent subjects, dates, artwork and queue coverage', requiresLocalAssets, () => {
   const facets = require('../catalog.js');
   const sites = facets.classify(SITES, PLACES);
   const queue = JSON.parse(read('assets/color-research/queue.json'));

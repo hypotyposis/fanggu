@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -17,7 +18,7 @@ const facets = require('../catalog.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('two Guang additions cover both new provinces with paired artwork and genuine saved inputs', () => {
+test('two Guang additions cover both new provinces with paired artwork and genuine saved inputs', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.beforeCount, 241);
@@ -104,7 +105,7 @@ test('two Guang additions remain searchable and seed unvisited in the native cat
   assert.deepEqual(find({ province: '广西', type: 'bridge' }), ['gx_chengyang']);
 });
 
-test('two Guang expansion preserves all previous originals, transparent deliveries and review states', () => {
+test('two Guang expansion preserves all previous originals, transparent deliveries and review states', requiresLocalAssets, () => {
   const current = json('assets/color-research/avif-manifest.json').images;
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   for (const id of batch.previousIds) assert(SITES.some(s => s.id === id), id);

@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -20,7 +21,7 @@ const expected = [
   ['cq_diaoyu', '重庆', 4, '钓鱼城遗址', '护国门'],
   ['cq_tongnan', '重庆', 6, '潼南大佛寺摩崖造像', '饰金坐像'],
 ];
-test('Sichuan/Chongqing additions register the actual protected subjects and complete user-approved deliveries', () => {
+test('Sichuan/Chongqing additions register the actual protected subjects and complete user-approved deliveries', requiresLocalAssets, () => {
   const queue = JSON.parse(read('assets/color-research/queue.json'));
   assert.equal(queue.count, queue.entries.length);
   for (const [id, province, batch, unit, subject] of expected) {

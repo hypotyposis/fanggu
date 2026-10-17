@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -50,7 +51,7 @@ test('nine Kyoto building subjects have distinct IDs, extant dates and cross-pla
   assert.equal(SITES.length, queue.entries.length + queue.excluded.length);
 });
 
-test('nine new plates bind local sources, hashes, pending review and iOS artwork', () => {
+test('nine new plates bind local sources, hashes, pending review and iOS artwork', requiresLocalAssets, () => {
   for (const id of Object.keys(expected)) {
     const site = SITES.find(x => x.id === id);
     const line = json(`assets/research/${id}.json`);

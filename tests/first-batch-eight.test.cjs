@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -37,7 +38,7 @@ test('eight first-batch additions have stable IDs, scope and geography', () => {
   assert(classified.find(site => site.id === 'bj_guozijian').types.includes('school'));
 });
 
-test('each new artwork has a source, hash binding, queue entry and pending review', () => {
+test('each new artwork has a source, hash binding, queue entry and pending review', requiresLocalAssets, () => {
   assert.equal(queue.count, queue.entries.length);
   assert.equal(queue.count, SITES.length - queue.excluded.length);
   for (const id of ids) {

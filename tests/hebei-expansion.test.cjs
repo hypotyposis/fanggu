@@ -1,6 +1,7 @@
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -17,7 +18,7 @@ const facets = require('../catalog.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('Hebei intake has complete sourced pairs and preserves real generation inputs', () => {
+test('Hebei intake has complete sourced pairs and preserves real generation inputs', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.beforeCount, 269);
@@ -84,7 +85,7 @@ test('Hebei additions are searchable, unvisited, and do not admit blocked candid
   for (const id of Object.keys(batch.researchBlocked)) assert(!SITES.some(s => s.id === id));
 });
 
-test('Hebei intake preserves all previous colored deliverables and human approvals', () => {
+test('Hebei intake preserves all previous colored deliverables and human approvals', requiresLocalAssets, () => {
   const manifest = json('assets/color-research/avif-manifest.json');
   for (const [id, previous] of Object.entries(batch.previousDeliveries)) {
     if (id === 'xian') { assertArchivedXian(previous); continue; }

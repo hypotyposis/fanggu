@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -68,7 +69,7 @@ test('new Japanese regions and dated building scopes survive classification and 
   }
 });
 
-test('all 82 originals bind prompts, viewed references and default-approved deliveries', () => {
+test('all 82 originals bind prompts, viewed references and default-approved deliveries', requiresLocalAssets, () => {
   assert.equal(queue.count, SITES.length - queue.excluded.length);
   for (const job of batch.jobs) {
     const id = job.id;

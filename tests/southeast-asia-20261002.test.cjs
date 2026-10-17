@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -16,7 +17,7 @@ const { SITES, PLACES, DYN, CHAPTERS, COLORED_PLATES } = vm.runInNewContext(read
 const facets = require('../catalog.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('approved Southeast Asia selection has twelve source-bound local line/color pairs', () => {
+test('approved Southeast Asia selection has twelve source-bound local line/color pairs', requiresLocalAssets, () => {
   assert.deepEqual(batch.ids, batch.plannedIds);
   assert.equal(batch.ids.length, 12);
   assert.equal(new Set(batch.ids).size, 12);

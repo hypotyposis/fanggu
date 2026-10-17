@@ -1,5 +1,6 @@
 const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -20,7 +21,7 @@ const expected = [
   ['sx_rishengchang', 6, '日昇昌旧址', '临街门面'],
   ['sx_pujiu', 8, '普救寺塔', '莺莺塔'],
 ];
-test('Shanxi additions preserve protected names, drawn scope and unvisited defaults', () => {
+test('Shanxi additions preserve protected names, drawn scope and unvisited defaults', requiresLocalAssets, () => {
   const batch = JSON.parse(read('assets/research/shanxi-national-20261002-batch.json'));
   const protection = JSON.parse(read('assets/research/national-protection.json'));
   const queue = JSON.parse(read('assets/color-research/queue.json'));

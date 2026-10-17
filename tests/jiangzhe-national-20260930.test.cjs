@@ -1,4 +1,5 @@
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -22,7 +23,7 @@ const expected = [
   ['js_geyuan', 3], ['js_heyuan', 3], ['js_nanchao_stone', 3],
 ];
 
-test('Jiangsu and Zhejiang twenty have scoped national titles and complete source-bound artwork', () => {
+test('Jiangsu and Zhejiang twenty have scoped national titles and complete source-bound artwork', requiresLocalAssets, () => {
   assert.equal(expected.length, 20);
   assert.equal(expected.filter(([id]) => id.startsWith('zj_')).length, 10);
   assert.equal(expected.filter(([id]) => id.startsWith('js_')).length, 10);

@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -16,7 +17,7 @@ const { SITES, PLACES } = vm.runInNewContext(read('sites.js') + '\n' + read('pla
 const { classify } = require('../catalog.js');
 const catalog = classify(SITES, PLACES);
 
-test('Shaanxi additions have paired originals, real input references and genuine generation records', () => {
+test('Shaanxi additions have paired originals, real input references and genuine generation records', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.ids.length, 7);
@@ -92,7 +93,7 @@ test('insufficient Puzhao photographs cause a documented hold rather than fabric
   assert(!json('assets/color-research/avif-manifest.json').images.sn_puzhao);
 });
 
-test('Shaanxi expansion preserves every previous color original, delivery and review state', () => {
+test('Shaanxi expansion preserves every previous color original, delivery and review state', requiresLocalAssets, () => {
   const current = json('assets/color-research/avif-manifest.json').images;
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   for (const id of batch.previousIds) assert(SITES.some(s => s.id === id), id);

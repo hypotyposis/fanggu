@@ -2,6 +2,7 @@ const { assertUnvisited } = require('./helpers/native-catalog.cjs');
 const assertArchivedTiantai = require('./helpers/archived-tiantai.cjs');
 const assertArchivedXian = require('./helpers/archived-xian.cjs');
 const test = require('node:test');
+const { requiresLocalAssets } = require('./helpers/local-assets.cjs');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -17,7 +18,7 @@ const facets = require('../catalog.js');
 const protection = require('../protection.js');
 const catalog = facets.classify(SITES, PLACES);
 
-test('Gansu intake adds four genuine paired plates with saved prompts, references and pending human review', () => {
+test('Gansu intake adds four genuine paired plates with saved prompts, references and pending human review', requiresLocalAssets, () => {
   const queue = json('assets/color-research/queue.json');
   const manifest = json('assets/color-research/avif-manifest.json');
   assert.equal(batch.beforeCount, 257);
@@ -88,7 +89,7 @@ test('Gansu additions are discoverable by region, national batch and type with n
   assert.deepEqual(find({ province: '甘肃', type: 'pagoda' }), ['gs_dafo_tuta']);
 });
 
-test('Gansu expansion preserves previous original, delivery hashes and visual-review records', () => {
+test('Gansu expansion preserves previous original, delivery hashes and visual-review records', requiresLocalAssets, () => {
   const current = json('assets/color-research/avif-manifest.json').images;
   assert.equal(Object.keys(batch.previousDeliveries).length, batch.beforeCount);
   for (const id of batch.previousIds) assert(SITES.some(s => s.id === id), id);
